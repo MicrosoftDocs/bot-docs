@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FirstScorable`2&lt;Item, Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingFoldScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FirstScorable`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FirstScorable(Of Item, Score)&#xA;Inherits DelegatingFoldScorable(Of Item, Score)" />
+  <TypeSignature Language="F#" Value="type FirstScorable&lt;'Item, 'Score&gt; = class&#xA;    inherit DelegatingFoldScorable&lt;'Item, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FirstScorable`2.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scorables As IEnumerable(Of IScorable(Of Item, Score)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.FirstScorable&lt;'Item, 'Score&gt; : seq&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt;&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.FirstScorable&lt;'Item, 'Score&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.FirstScorable&lt;'Item, 'Score&gt; scorables" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="C#" Value="public override bool OnStageHandler (Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable, Item item, object state, Score score);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool OnStageHandler(valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; scorable, !Item item, object state, !Score score) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FirstScorable`2.OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)" />
+      <MemberSignature Language="F#" Value="override this.OnStageHandler : Microsoft.Bot.Builder.Scorables.Internals.FoldStage * Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt; * 'Item * obj * 'Score -&gt; bool" Usage="firstScorable.OnStageHandler (stage, scorable, item, state, score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

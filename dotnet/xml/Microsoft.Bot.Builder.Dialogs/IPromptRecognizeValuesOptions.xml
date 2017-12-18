@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPromptRecognizeValuesOptions" />
+  <TypeSignature Language="F#" Value="type IPromptRecognizeValuesOptions = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AllowPartialMatches" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.AllowPartialMatches" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPartialMatches As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AllowPartialMatches : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.AllowPartialMatches" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -37,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxTokenDistance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.MaxTokenDistance" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTokenDistance As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxTokenDistance : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.MaxTokenDistance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

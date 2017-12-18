@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChoiceStyleOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChoiceStyleOptions" />
+  <TypeSignature Language="F#" Value="type ChoiceStyleOptions = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Auto = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 1" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions AutoText = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.AutoText" />
       <MemberSignature Language="VB.NET" Value="AutoText" />
+      <MemberSignature Language="F#" Value="AutoText = 2" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.AutoText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Buttons = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Buttons" />
       <MemberSignature Language="VB.NET" Value="Buttons" />
+      <MemberSignature Language="F#" Value="Buttons = 6" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Buttons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Carousel = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Carousel" />
       <MemberSignature Language="VB.NET" Value="Carousel" />
+      <MemberSignature Language="F#" Value="Carousel = 7" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Carousel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions Inline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Inline" />
       <MemberSignature Language="VB.NET" Value="Inline" />
+      <MemberSignature Language="F#" Value="Inline = 3" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -142,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions InlineNoParen = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.InlineNoParen" />
       <MemberSignature Language="VB.NET" Value="InlineNoParen" />
+      <MemberSignature Language="F#" Value="InlineNoParen = 5" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.InlineNoParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions PerLine = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.PerLine" />
       <MemberSignature Language="VB.NET" Value="PerLine" />
+      <MemberSignature Language="F#" Value="PerLine = 4" Usage="Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions.PerLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

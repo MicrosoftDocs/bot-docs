@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkitem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkitem" />
+  <TypeSignature Language="F#" Value="type IWorkitem = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Process() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem.Process" />
       <MemberSignature Language="VB.NET" Value="Public Sub Process ()" />
+      <MemberSignature Language="F#" Value="abstract member Process : unit -&gt; unit" Usage="iWorkitem.Process " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

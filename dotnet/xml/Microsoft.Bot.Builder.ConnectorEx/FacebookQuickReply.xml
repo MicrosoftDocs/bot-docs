@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FacebookQuickReply extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FacebookQuickReply" />
+  <TypeSignature Language="F#" Value="type FacebookQuickReply = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string title, string payload, string image) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contentType As String, title As String, payload As String, Optional image As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply : string * string * string * string -&gt; Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply" Usage="new Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply (contentType, title, payload, image)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Image" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image" />
       <MemberSignature Language="VB.NET" Value="Public Property Image As String" />
+      <MemberSignature Language="F#" Value="member this.Image : string with get, set" Usage="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Payload" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload" />
       <MemberSignature Language="VB.NET" Value="Public Property Payload As String" />
+      <MemberSignature Language="F#" Value="member this.Payload : string with get, set" Usage="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeleteProfileScorable extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;class Microsoft.Bot.Connector.IActivity, string, float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeleteProfileScorable&#xA;Inherits ScorableBase(Of IActivity, String, Double)" />
+  <TypeSignature Language="F#" Value="type DeleteProfileScorable = class&#xA;    inherit ScorableBase&lt;IActivity, string, double&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="C#" Value="public DeleteProfileScorable (Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, Microsoft.Bot.Builder.Dialogs.Internals.IBotData botData, Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, System.Text.RegularExpressions.Regex regex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData botData, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, class System.Text.RegularExpressions.Regex regex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Text.RegularExpressions.Regex)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable : Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack * Microsoft.Bot.Builder.Dialogs.Internals.IBotData * Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * System.Text.RegularExpressions.Regex -&gt; Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable" Usage="new Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable (stack, botData, botToUser, regex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(class Microsoft.Bot.Connector.IActivity item, string state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.DoneAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoneAsync (item As IActivity, state As String, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.DoneAsync : Microsoft.Bot.Connector.IActivity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="deleteProfileScorable.DoneAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 GetScore(class Microsoft.Bot.Connector.IActivity item, string state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.GetScore(Microsoft.Bot.Connector.IActivity,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScore (item As IActivity, state As String) As Double" />
+      <MemberSignature Language="F#" Value="override this.GetScore : Microsoft.Bot.Connector.IActivity * string -&gt; double" Usage="deleteProfileScorable.GetScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasScore(class Microsoft.Bot.Connector.IActivity item, string state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.HasScore(Microsoft.Bot.Connector.IActivity,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasScore (item As IActivity, state As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HasScore : Microsoft.Bot.Connector.IActivity * string -&gt; bool" Usage="deleteProfileScorable.HasScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task PostAsync(class Microsoft.Bot.Connector.IActivity item, string state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.PostAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PostAsync (item As IActivity, state As String, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.PostAsync : Microsoft.Bot.Connector.IActivity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="deleteProfileScorable.PostAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; PrepareAsync(class Microsoft.Bot.Connector.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable.PrepareAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareAsync (activity As IActivity, token As CancellationToken) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="override this.PrepareAsync : Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="deleteProfileScorable.PrepareAsync (activity, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

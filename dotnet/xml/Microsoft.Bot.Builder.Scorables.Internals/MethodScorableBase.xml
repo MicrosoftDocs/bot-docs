@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodScorableBase extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodScorableBase&#xA;Inherits ScorableBase(Of IResolver, IBinding, IBinding)" />
+  <TypeSignature Language="F#" Value="type MethodScorableBase = class&#xA;    inherit ScorableBase&lt;IResolver, IBinding, IBinding&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, class Microsoft.Bot.Builder.Scorables.Internals.IBinding state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.DoneAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoneAsync (item As IResolver, state As IBinding, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.DoneAsync : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.IBinding * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="methodScorableBase.DoneAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Scorables.Internals.IBinding GetScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScore (resolver As IResolver, state As IBinding) As IBinding" />
+      <MemberSignature Language="F#" Value="override this.GetScore : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.IBinding -&gt; Microsoft.Bot.Builder.Scorables.Internals.IBinding" Usage="methodScorableBase.GetScore (resolver, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.HasScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasScore (resolver As IResolver, state As IBinding) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HasScore : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.IBinding -&gt; bool" Usage="methodScorableBase.HasScore (resolver, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase Method" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.Method" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Method As MethodBase" />
+      <MemberSignature Language="F#" Value="member this.Method : System.Reflection.MethodBase" Usage="Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task PostAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, class Microsoft.Bot.Builder.Scorables.Internals.IBinding state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.PostAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PostAsync (item As IResolver, state As IBinding, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.PostAsync : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.IBinding * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="methodScorableBase.PostAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="methodScorableBase.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

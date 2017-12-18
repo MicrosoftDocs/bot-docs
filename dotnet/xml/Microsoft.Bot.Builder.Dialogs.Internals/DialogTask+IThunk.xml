@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract DialogTask/IThunk" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk" />
   <TypeSignature Language="VB.NET" Value="Public Interface DialogTask.IThunk" />
+  <TypeSignature Language="F#" Value="type DialogTask.IThunk = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Delegate Method" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As Delegate" />
+      <MemberSignature Language="F#" Value="member this.Method : Delegate" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

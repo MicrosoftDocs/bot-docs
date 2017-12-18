@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDialogStack" />
+  <TypeSignature Language="F#" Value="type IDialogStack = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Call&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Call(Of R) (child As IDialog(Of R), resume As ResumeAfter(Of R))" />
+      <MemberSignature Language="F#" Value="abstract member Call : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; -&gt; unit" Usage="iDialogStack.Call (child, resume)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Done&lt;R&gt;(!!R value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Done(Of R) (value As R)" />
+      <MemberSignature Language="F#" Value="abstract member Done : 'R -&gt; unit" Usage="iDialogStack.Done value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Fail(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Fail (error As Exception)" />
+      <MemberSignature Language="F#" Value="abstract member Fail : Exception -&gt; unit" Usage="iDialogStack.Fail error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Forward&lt;R, T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume, !!T item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Forward(Of R, T) (child As IDialog(Of R), resume As ResumeAfter(Of R), item As T, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member Forward : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; * 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iDialogStack.Forward (child, resume, item, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frames As IReadOnlyList(Of Delegate)" />
+      <MemberSignature Language="F#" Value="member this.Frames : System.Collections.Generic.IReadOnlyList&lt;Delegate&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Post&lt;E&gt;(!!E event, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!E&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Post(Of E) (event As E, resume As ResumeAfter(Of E))" />
+      <MemberSignature Language="F#" Value="abstract member Post : 'E * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'E&gt; -&gt; unit" Usage="iDialogStack.Post (event, resume)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iDialogStack.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Wait&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Wait(Of R) (resume As ResumeAfter(Of R))" />
+      <MemberSignature Language="F#" Value="abstract member Wait : Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; -&gt; unit" Usage="iDialogStack.Wait resume" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

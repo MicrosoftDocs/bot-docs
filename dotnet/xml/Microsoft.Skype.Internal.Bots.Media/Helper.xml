@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Helper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.Helper" />
   <TypeSignature Language="VB.NET" Value="Public Module Helper" />
+  <TypeSignature Language="F#" Value="type Helper = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager CreateConfigurationManager(class System.Action`1&lt;class Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs&gt; configChangedHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.CreateConfigurationManager(System.Action{Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateConfigurationManager (configChangedHandler As Action(Of ConfigurationChangedEventArgs)) As IConfigurationManager" />
+      <MemberSignature Language="F#" Value="static member CreateConfigurationManager : Action&lt;Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs&gt; -&gt; Microsoft.Skype.Internal.Bots.Media.IConfigurationManager" Usage="Microsoft.Skype.Internal.Bots.Media.Helper.CreateConfigurationManager configChangedHandler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 GetBitsPerPixel(valuetype Microsoft.Skype.Bots.Media.VideoColorFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetBitsPerPixel(Microsoft.Skype.Bots.Media.VideoColorFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBitsPerPixel (format As VideoColorFormat) As UInteger" />
+      <MemberSignature Language="F#" Value="static member GetBitsPerPixel : Microsoft.Skype.Bots.Media.VideoColorFormat -&gt; uint32" Usage="Microsoft.Skype.Internal.Bots.Media.Helper.GetBitsPerPixel format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager GetConfigurationManager() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetConfigurationManager" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationManager () As IConfigurationManager" />
+      <MemberSignature Language="F#" Value="static member GetConfigurationManager : unit -&gt; Microsoft.Skype.Internal.Bots.Media.IConfigurationManager" Usage="Microsoft.Skype.Internal.Bots.Media.Helper.GetConfigurationManager " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetStride(class Microsoft.Skype.Bots.Media.VideoFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.GetStride(Microsoft.Skype.Bots.Media.VideoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStride (format As VideoFormat) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetStride : Microsoft.Skype.Bots.Media.VideoFormat -&gt; int" Usage="Microsoft.Skype.Internal.Bots.Media.Helper.GetStride format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string MediaApiComponentName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.Helper.MediaApiComponentName" />
       <MemberSignature Language="VB.NET" Value="Public Const MediaApiComponentName As String " />
+      <MemberSignature Language="F#" Value="val mutable MediaApiComponentName : string" Usage="Microsoft.Skype.Internal.Bots.Media.Helper.MediaApiComponentName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetConfigurationManager(class Microsoft.Skype.Internal.Bots.Media.IConfigurationManager configManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.Helper.SetConfigurationManager(Microsoft.Skype.Internal.Bots.Media.IConfigurationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetConfigurationManager (configManager As IConfigurationManager)" />
+      <MemberSignature Language="F#" Value="static member SetConfigurationManager : Microsoft.Skype.Internal.Bots.Media.IConfigurationManager -&gt; unit" Usage="Microsoft.Skype.Internal.Bots.Media.Helper.SetConfigurationManager configManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

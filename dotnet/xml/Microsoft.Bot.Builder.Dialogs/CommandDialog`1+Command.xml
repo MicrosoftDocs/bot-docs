@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit CommandDialog`1/Command&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandDialog(Of T).Command" />
+  <TypeSignature Language="F#" Value="type CommandDialog&lt;'T&gt;.Command = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; CommandHandler" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandHandler As ResumeAfter(Of IMessageActivity)" />
+      <MemberSignature Language="F#" Value="member this.CommandHandler : Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;.Command.CommandHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CommandId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandId As String" />
+      <MemberSignature Language="F#" Value="member this.CommandId : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;.Command.CommandId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Regex Expression" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As Regex" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Text.RegularExpressions.Regex with get, set" Usage="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;.Command.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

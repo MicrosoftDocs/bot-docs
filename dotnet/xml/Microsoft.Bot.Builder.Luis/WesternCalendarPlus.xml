@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WesternCalendarPlus extends System.Object implements class Microsoft.Bot.Builder.Luis.ICalendarPlus" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.WesternCalendarPlus" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WesternCalendarPlus&#xA;Implements ICalendarPlus" />
+  <TypeSignature Language="F#" Value="type WesternCalendarPlus = class&#xA;    interface ICalendarPlus" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -44,6 +45,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#Calendar" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Calendar As Calendar Implements ICalendarPlus.Calendar" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -63,6 +67,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#FirstDayOfWeek" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FirstDayOfWeek As DayOfWeek Implements ICalendarPlus.FirstDayOfWeek" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -81,6 +88,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor(valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart dayPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#HourFor(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -104,6 +114,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#WeekRule" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property WeekRule As CalendarWeekRule Implements ICalendarPlus.WeekRule" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

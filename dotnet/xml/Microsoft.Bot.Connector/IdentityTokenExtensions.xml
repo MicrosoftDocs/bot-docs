@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IdentityTokenExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IdentityTokenExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module IdentityTokenExtensions" />
+  <TypeSignature Language="F#" Value="type IdentityTokenExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateServiceUrlClaim(class Microsoft.Bot.Connector.IdentityToken token, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; activities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim(Microsoft.Bot.Connector.IdentityToken,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ValidateServiceUrlClaim (token As IdentityToken, activities As IEnumerable(Of IActivity))" />
+      <MemberSignature Language="F#" Value="static member ValidateServiceUrlClaim : Microsoft.Bot.Connector.IdentityToken * seq&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; unit" Usage="Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim (token, activities)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

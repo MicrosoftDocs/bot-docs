@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResumptionContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResumptionContext" />
+  <TypeSignature Language="F#" Value="type ResumptionContext = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IBotDataBag&gt; makeBotDataBag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.#ctor(System.Func{Microsoft.Bot.Builder.Dialogs.IBotDataBag})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (makeBotDataBag As Func(Of IBotDataBag))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ConnectorEx.ResumptionContext : Func&lt;Microsoft.Bot.Builder.Dialogs.IBotDataBag&gt; -&gt; Microsoft.Bot.Builder.ConnectorEx.ResumptionContext" Usage="new Microsoft.Bot.Builder.ConnectorEx.ResumptionContext makeBotDataBag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.ConnectorEx.ResumptionData&gt; LoadDataAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.LoadDataAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadDataAsync (token As CancellationToken) As Task(Of ResumptionData)" />
+      <MemberSignature Language="F#" Value="member this.LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.ConnectorEx.ResumptionData&gt;" Usage="resumptionContext.LoadDataAsync token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string RESUMPTION_CONTEXT_KEY" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.RESUMPTION_CONTEXT_KEY" />
       <MemberSignature Language="VB.NET" Value="Public Const RESUMPTION_CONTEXT_KEY As String " />
+      <MemberSignature Language="F#" Value="val mutable RESUMPTION_CONTEXT_KEY : string" Usage="Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.RESUMPTION_CONTEXT_KEY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveDataAsync(class Microsoft.Bot.Builder.ConnectorEx.ResumptionData data, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionContext.SaveDataAsync(Microsoft.Bot.Builder.ConnectorEx.ResumptionData,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function SaveDataAsync (data As ResumptionData, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.SaveDataAsync : Microsoft.Bot.Builder.ConnectorEx.ResumptionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="resumptionContext.SaveDataAsync (data, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataMediaBuffer extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.DataMediaBuffer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataMediaBuffer&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type DataMediaBuffer = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataMediaBuffer.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Data : byte[] with get, set" Usage="Microsoft.Skype.Bots.Media.DataMediaBuffer.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -64,7 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.DataMediaBuffer.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dataMediaBuffer.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -85,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.DataMediaBuffer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit" Usage="dataMediaBuffer.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -109,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MediaSourceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataMediaBuffer.MediaSourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaSourceId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MediaSourceId : uint32 with get, set" Usage="Microsoft.Skype.Bots.Media.DataMediaBuffer.MediaSourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

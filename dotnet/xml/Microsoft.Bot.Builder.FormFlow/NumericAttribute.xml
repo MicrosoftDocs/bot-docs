@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NumericAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class NumericAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type NumericAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 min, float64 max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.NumericAttribute.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (min As Double, max As Double)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.NumericAttribute : double * double -&gt; Microsoft.Bot.Builder.FormFlow.NumericAttribute" Usage="new Microsoft.Bot.Builder.FormFlow.NumericAttribute (min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly float64 Max" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.NumericAttribute.Max" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Max As Double " />
+      <MemberSignature Language="F#" Value="val mutable Max : double" Usage="Microsoft.Bot.Builder.FormFlow.NumericAttribute.Max" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly float64 Min" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.NumericAttribute.Min" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Min As Double " />
+      <MemberSignature Language="F#" Value="val mutable Min : double" Usage="Microsoft.Bot.Builder.FormFlow.NumericAttribute.Min" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

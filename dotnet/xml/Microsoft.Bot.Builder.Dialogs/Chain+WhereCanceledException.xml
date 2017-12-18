@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Chain/WhereCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Chain.WhereCanceledException&#xA;Inherits OperationCanceledException" />
+  <TypeSignature Language="F#" Value="type Chain.WhereCanceledException = class&#xA;    inherit OperationCanceledException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

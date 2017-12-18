@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class NotificationResponse" />
+  <TypeSignature Language="F#" Value="type NotificationResponse = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AppState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.AppState" />
       <MemberSignature Language="VB.NET" Value="Public Property AppState As String" />
+      <MemberSignature Language="F#" Value="member this.AppState : string with get, set" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.AppState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink Links" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Links" />
       <MemberSignature Language="VB.NET" Value="Public Property Links As CallbackLink" />
+      <MemberSignature Language="F#" Value="member this.Links : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink with get, set" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Links" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationResponse.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="notificationResponse.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

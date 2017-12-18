@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit LuisIntentScorable`2/Scope&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1&lt;!InnerScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LuisIntentScorable(Of InnerState, InnerScore).Scope&#xA;Inherits ResolverScope(Of InnerScore)" />
+  <TypeSignature Language="F#" Value="type LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope = class&#xA;    inherit ResolverScope&lt;'InnerScore&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisModel model, class Microsoft.Bot.Builder.Luis.Models.LuisResult result, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (model As ILuisModel, result As LuisResult, intent As IntentRecommendation, inner As IResolver)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope : Microsoft.Bot.Builder.Luis.ILuisModel * Microsoft.Bot.Builder.Luis.Models.LuisResult * Microsoft.Bot.Builder.Luis.Models.IntentRecommendation * Microsoft.Bot.Builder.Scorables.Internals.IResolver -&gt; Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope" Usage="new Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope (model, result, intent, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation Intent" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Intent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Intent As IntentRecommendation " />
+      <MemberSignature Language="F#" Value="val mutable Intent : Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" Usage="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope.Intent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Luis.ILuisModel Model" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Model" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Model As ILuisModel " />
+      <MemberSignature Language="F#" Value="val mutable Model : Microsoft.Bot.Builder.Luis.ILuisModel" Usage="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope.Model" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Luis.Models.LuisResult Result" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Result As LuisResult " />
+      <MemberSignature Language="F#" Value="val mutable Result : Microsoft.Bot.Builder.Luis.Models.LuisResult" Usage="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope.Result" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj *  -&gt; bool" Usage="scope.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

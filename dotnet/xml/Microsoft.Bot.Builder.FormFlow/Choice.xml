@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Choice extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Choice" />
   <TypeSignature Language="VB.NET" Value="Public Class Choice" />
+  <TypeSignature Language="F#" Value="type Choice = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.DescribeAttribute Description" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Choice.Description" />
       <MemberSignature Language="VB.NET" Value="Public Description As DescribeAttribute " />
+      <MemberSignature Language="F#" Value="val mutable Description : Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="Microsoft.Bot.Builder.FormFlow.Choice.Description" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.TermsAttribute Terms" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Choice.Terms" />
       <MemberSignature Language="VB.NET" Value="Public Terms As TermsAttribute " />
+      <MemberSignature Language="F#" Value="val mutable Terms : Microsoft.Bot.Builder.FormFlow.TermsAttribute" Usage="Microsoft.Bot.Builder.FormFlow.Choice.Terms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".field public object Value" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Choice.Value" />
       <MemberSignature Language="VB.NET" Value="Public Value As Object " />
+      <MemberSignature Language="F#" Value="val mutable Value : obj" Usage="Microsoft.Bot.Builder.FormFlow.Choice.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

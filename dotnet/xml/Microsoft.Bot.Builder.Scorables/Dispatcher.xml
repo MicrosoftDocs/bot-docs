@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Dispatcher extends System.Object implements class Microsoft.Bot.Builder.Scorables.IDispatcher" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Dispatcher" />
   <TypeSignature Language="VB.NET" Value="Public Class Dispatcher&#xA;Implements IDispatcher" />
+  <TypeSignature Language="F#" Value="type Dispatcher = class&#xA;    interface IDispatcher" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ContinueWithNextGroup() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.ContinueWithNextGroup" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ContinueWithNextGroup ()" />
+      <MemberSignature Language="F#" Value="member this.ContinueWithNextGroup : unit -&gt; unit" Usage="dispatcher.ContinueWithNextGroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Reflection.BindingFlags MakeBindingFlags() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeBindingFlags" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeBindingFlags () As BindingFlags" />
+      <MemberSignature Language="F#" Value="abstract member MakeBindingFlags : unit -&gt; System.Reflection.BindingFlags&#xA;override this.MakeBindingFlags : unit -&gt; System.Reflection.BindingFlags" Usage="dispatcher.MakeBindingFlags " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IComparer`1&lt;object&gt; MakeComparer() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeComparer" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeComparer () As IComparer(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member MakeComparer : unit -&gt; System.Collections.Generic.IComparer&lt;obj&gt;&#xA;override this.MakeComparer : unit -&gt; System.Collections.Generic.IComparer&lt;obj&gt;" Usage="dispatcher.MakeComparer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, object&gt; MakeFactory() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeFactory" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeFactory () As IScorableFactory(Of IResolver, Object)" />
+      <MemberSignature Language="F#" Value="abstract member MakeFactory : unit -&gt; Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, obj&gt;&#xA;override this.MakeFactory : unit -&gt; Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, obj&gt;" Usage="dispatcher.MakeFactory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MethodInfo&gt; MakeMethods() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeMethods" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeMethods () As IEnumerable(Of MethodInfo)" />
+      <MemberSignature Language="F#" Value="abstract member MakeMethods : unit -&gt; seq&lt;System.Reflection.MethodInfo&gt;&#xA;override this.MakeMethods : unit -&gt; seq&lt;System.Reflection.MethodInfo&gt;" Usage="dispatcher.MakeMethods " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Text.RegularExpressions.Regex MakeRegex(string pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeRegex(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeRegex (pattern As String) As Regex" />
+      <MemberSignature Language="F#" Value="abstract member MakeRegex : string -&gt; System.Text.RegularExpressions.Regex&#xA;override this.MakeRegex : string -&gt; System.Text.RegularExpressions.Regex" Usage="dispatcher.MakeRegex pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Scorables.Internals.IResolver MakeResolver() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeResolver" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeResolver () As IResolver" />
+      <MemberSignature Language="F#" Value="abstract member MakeResolver : unit -&gt; Microsoft.Bot.Builder.Scorables.Internals.IResolver&#xA;override this.MakeResolver : unit -&gt; Microsoft.Bot.Builder.Scorables.Internals.IResolver" Usage="dispatcher.MakeResolver " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -183,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, object&gt; MakeScorable() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeScorable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeScorable () As IScorable(Of IResolver, Object)" />
+      <MemberSignature Language="F#" Value="abstract member MakeScorable : unit -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, obj&gt;&#xA;override this.MakeScorable : unit -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, obj&gt;" Usage="dispatcher.MakeScorable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -203,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.ILuisService MakeService(class Microsoft.Bot.Builder.Luis.ILuisModel model) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeService(Microsoft.Bot.Builder.Luis.ILuisModel)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeService (model As ILuisModel) As ILuisService" />
+      <MemberSignature Language="F#" Value="abstract member MakeService : Microsoft.Bot.Builder.Luis.ILuisModel -&gt; Microsoft.Bot.Builder.Luis.ILuisService&#xA;override this.MakeService : Microsoft.Bot.Builder.Luis.ILuisModel -&gt; Microsoft.Bot.Builder.Luis.ILuisService" Usage="dispatcher.MakeService model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -226,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; MakeServices() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeServices" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeServices () As IReadOnlyList(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member MakeServices : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;obj&gt;&#xA;override this.MakeServices : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;obj&gt;" Usage="dispatcher.MakeServices " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -246,6 +257,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type MakeType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.MakeType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member MakeType : unit -&gt; Type&#xA;override this.MakeType : unit -&gt; Type" Usage="dispatcher.MakeType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -267,6 +279,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.Microsoft#Bot#Builder#Scorables#IDispatcher#TryPostAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function TryPostAsync (token As CancellationToken) As Task(Of Boolean) Implements IDispatcher.TryPostAsync" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IDispatcher.TryPostAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -294,6 +309,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnFailAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnFailAsync" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnFailAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnFailAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.OnFailAsync : unit -&gt; System.Threading.Tasks.Task" Usage="dispatcher.OnFailAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -319,6 +335,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnPostAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnPostAsync" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnPostAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnPostAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.OnPostAsync : unit -&gt; System.Threading.Tasks.Task" Usage="dispatcher.OnPostAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -344,6 +361,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnStage(valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, object&gt; scorable, class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, object state, object score) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Dispatcher.OnStage(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object},Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnStage (stage As FoldStage, scorable As IScorable(Of IResolver, Object), item As IResolver, state As Object, score As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnStage : Microsoft.Bot.Builder.Scorables.Internals.FoldStage * Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, obj&gt; * Microsoft.Bot.Builder.Scorables.Internals.IResolver * obj * obj -&gt; bool&#xA;override this.OnStage : Microsoft.Bot.Builder.Scorables.Internals.FoldStage * Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, obj&gt; * Microsoft.Bot.Builder.Scorables.Internals.IResolver * obj * obj -&gt; bool" Usage="dispatcher.OnStage (stage, scorable, item, state, score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

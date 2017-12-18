@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException" />
   <TypeSignature Language="VB.NET" Value="Public Class FormCanceledException&#xA;Inherits OperationCanceledException" />
+  <TypeSignature Language="F#" Value="type FormCanceledException = class&#xA;    inherit OperationCanceledException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormCanceledException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.FormCanceledException : string * Exception -&gt; Microsoft.Bot.Builder.FormFlow.FormCanceledException" Usage="new Microsoft.Bot.Builder.FormFlow.FormCanceledException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Completed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException.Completed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completed As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Completed : seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.FormCanceledException.Completed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Last" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As String" />
+      <MemberSignature Language="F#" Value="member this.Last : string" Usage="Microsoft.Bot.Builder.FormFlow.FormCanceledException.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

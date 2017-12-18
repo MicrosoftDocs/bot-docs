@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaPlatformInstanceSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaPlatformInstanceSettings" />
+  <TypeSignature Language="F#" Value="type MediaPlatformInstanceSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CertificateThumbprint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.CertificateThumbprint" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateThumbprint As String" />
+      <MemberSignature Language="F#" Value="member this.CertificateThumbprint : string with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.CertificateThumbprint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 InstanceInternalPort" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstanceInternalPort" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceInternalPort As Integer" />
+      <MemberSignature Language="F#" Value="member this.InstanceInternalPort : int with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstanceInternalPort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress InstancePublicIPAddress" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstancePublicIPAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property InstancePublicIPAddress As IPAddress" />
+      <MemberSignature Language="F#" Value="member this.InstancePublicIPAddress : System.Net.IPAddress with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstancePublicIPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 InstancePublicPort" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstancePublicPort" />
       <MemberSignature Language="VB.NET" Value="Public Property InstancePublicPort As Integer" />
+      <MemberSignature Language="F#" Value="member this.InstancePublicPort : int with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.InstancePublicPort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceFqdn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.ServiceFqdn" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceFqdn As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceFqdn : string with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings.ServiceFqdn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

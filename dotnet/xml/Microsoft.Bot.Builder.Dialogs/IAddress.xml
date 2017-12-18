@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAddress" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IAddress" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAddress" />
+  <TypeSignature Language="F#" Value="type IAddress = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string BotId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.BotId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BotId As String" />
+      <MemberSignature Language="F#" Value="member this.BotId : string" Usage="Microsoft.Bot.Builder.Dialogs.IAddress.BotId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string" Usage="Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -58,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ConversationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversationId As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationId : string" Usage="Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -77,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string" Usage="Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -96,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IAddress.UserId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserId As String" />
+      <MemberSignature Language="F#" Value="member this.UserId : string" Usage="Microsoft.Bot.Builder.Dialogs.IAddress.UserId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

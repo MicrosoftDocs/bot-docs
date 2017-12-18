@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentLayoutTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentLayoutTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class AttachmentLayoutTypes" />
+  <TypeSignature Language="F#" Value="type AttachmentLayoutTypes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +25,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -37,10 +38,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Carousel" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.AttachmentLayoutTypes.Carousel" />
       <MemberSignature Language="VB.NET" Value="Public Const Carousel As String " />
+      <MemberSignature Language="F#" Value="val mutable Carousel : string" Usage="Microsoft.Bot.Connector.AttachmentLayoutTypes.Carousel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -55,10 +57,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string List" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.AttachmentLayoutTypes.List" />
       <MemberSignature Language="VB.NET" Value="Public Const List As String " />
+      <MemberSignature Language="F#" Value="val mutable List : string" Usage="Microsoft.Bot.Connector.AttachmentLayoutTypes.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

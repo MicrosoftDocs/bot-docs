@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullResolver" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullResolver&#xA;Implements IResolver" />
+  <TypeSignature Language="F#" Value="type NullResolver = class&#xA;    interface IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Scorables.Internals.IResolver Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NullResolver.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IResolver " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : Microsoft.Bot.Builder.Scorables.Internals.IResolver" Usage="Microsoft.Bot.Builder.Scorables.Internals.NullResolver.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullResolver.Microsoft#Bot#Builder#Scorables#Internals#IResolver#TryResolve(System.Type,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

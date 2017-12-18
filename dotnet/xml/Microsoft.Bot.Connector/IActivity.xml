@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="VB.NET" Value="Public Interface IActivity" />
+  <TypeSignature Language="F#" Value="type IActivity = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -20,10 +21,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IContactRelationUpdateActivity AsContactRelationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsContactRelationUpdateActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsContactRelationUpdateActivity () As IContactRelationUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsContactRelationUpdateActivity : unit -&gt; Microsoft.Bot.Connector.IContactRelationUpdateActivity" Usage="iActivity.AsContactRelationUpdateActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -42,10 +44,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IConversationUpdateActivity AsConversationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsConversationUpdateActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsConversationUpdateActivity () As IConversationUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsConversationUpdateActivity : unit -&gt; Microsoft.Bot.Connector.IConversationUpdateActivity" Usage="iActivity.AsConversationUpdateActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -64,10 +67,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IEndOfConversationActivity AsEndOfConversationActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsEndOfConversationActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsEndOfConversationActivity () As IEndOfConversationActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsEndOfConversationActivity : unit -&gt; Microsoft.Bot.Connector.IEndOfConversationActivity" Usage="iActivity.AsEndOfConversationActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -86,10 +90,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IEventActivity AsEventActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsEventActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsEventActivity () As IEventActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsEventActivity : unit -&gt; Microsoft.Bot.Connector.IEventActivity" Usage="iActivity.AsEventActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -108,10 +113,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInstallationUpdateActivity AsInstallationUpdateActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsInstallationUpdateActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsInstallationUpdateActivity () As IInstallationUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsInstallationUpdateActivity : unit -&gt; Microsoft.Bot.Connector.IInstallationUpdateActivity" Usage="iActivity.AsInstallationUpdateActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInstallationUpdateActivity</ReturnType>
@@ -130,10 +136,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IInvokeActivity AsInvokeActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsInvokeActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsInvokeActivity () As IInvokeActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsInvokeActivity : unit -&gt; Microsoft.Bot.Connector.IInvokeActivity" Usage="iActivity.AsInvokeActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -152,10 +159,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity AsMessageActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsMessageActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsMessageActivity () As IMessageActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsMessageActivity : unit -&gt; Microsoft.Bot.Connector.IMessageActivity" Usage="iActivity.AsMessageActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -174,10 +182,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.ITypingActivity AsTypingActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.AsTypingActivity" />
       <MemberSignature Language="VB.NET" Value="Public Function AsTypingActivity () As ITypingActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsTypingActivity : unit -&gt; Microsoft.Bot.Connector.ITypingActivity" Usage="iActivity.AsTypingActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -196,10 +205,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ChannelData" />
       <MemberSignature Language="VB.NET" Value="Public Property ChannelData As Object" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj with get, set" Usage="Microsoft.Bot.Connector.IActivity.ChannelData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -229,10 +239,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ChannelId" />
       <MemberSignature Language="VB.NET" Value="Public Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string with get, set" Usage="Microsoft.Bot.Connector.IActivity.ChannelId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -250,10 +261,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ConversationAccount Conversation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Conversation" />
       <MemberSignature Language="VB.NET" Value="Public Property Conversation As ConversationAccount" />
+      <MemberSignature Language="F#" Value="member this.Conversation : Microsoft.Bot.Connector.ConversationAccount with get, set" Usage="Microsoft.Bot.Connector.IActivity.Conversation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConversationAccount</ReturnType>
@@ -271,10 +283,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount From" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.From : Microsoft.Bot.Connector.ChannelAccount with get, set" Usage="Microsoft.Bot.Connector.IActivity.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
@@ -292,10 +305,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Connector.IActivity.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -313,10 +327,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LocalTimestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.LocalTimestamp" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalTimestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LocalTimestamp : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Bot.Connector.IActivity.LocalTimestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -334,10 +349,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount Recipient" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Recipient" />
       <MemberSignature Language="VB.NET" Value="Public Property Recipient As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.Recipient : Microsoft.Bot.Connector.ChannelAccount with get, set" Usage="Microsoft.Bot.Connector.IActivity.Recipient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
@@ -355,10 +371,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ReplyToId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ReplyToId" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplyToId As String" />
+      <MemberSignature Language="F#" Value="member this.ReplyToId : string with get, set" Usage="Microsoft.Bot.Connector.IActivity.ReplyToId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -376,10 +393,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.ServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string with get, set" Usage="Microsoft.Bot.Connector.IActivity.ServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -397,10 +415,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Timestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public Property Timestamp As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Bot.Connector.IActivity.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
@@ -418,10 +437,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Connector.IActivity.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

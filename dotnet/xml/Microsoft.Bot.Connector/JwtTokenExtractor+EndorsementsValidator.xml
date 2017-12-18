@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed JwtTokenExtractor/EndorsementsValidator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function JwtTokenExtractor.EndorsementsValidator(endorsements As String()) As Boolean " />
+  <TypeSignature Language="F#" Value="type JwtTokenExtractor.EndorsementsValidator = delegate of string[] -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

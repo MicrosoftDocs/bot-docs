@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelCapability" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChannelCapability" />
+  <TypeSignature Language="F#" Value="type IChannelCapability = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NeedsInputHint() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.NeedsInputHint" />
       <MemberSignature Language="VB.NET" Value="Public Function NeedsInputHint () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member NeedsInputHint : unit -&gt; bool" Usage="iChannelCapability.NeedsInputHint " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsKeyboards(int32 buttonCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportsKeyboards(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SupportsKeyboards (buttonCount As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SupportsKeyboards : int -&gt; bool" Usage="iChannelCapability.SupportsKeyboards buttonCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsSpeak() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IChannelCapability.SupportsSpeak" />
       <MemberSignature Language="VB.NET" Value="Public Function SupportsSpeak () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SupportsSpeak : unit -&gt; bool" Usage="iChannelCapability.SupportsSpeak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

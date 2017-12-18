@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConversationReferenceHelpers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConversationReferenceHelpers" />
+  <TypeSignature Language="F#" Value="type ConversationReferenceHelpers = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationReference GZipDeserialize(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GZipDeserialize (str As String) As ConversationReference" />
+      <MemberSignature Language="F#" Value="static member GZipDeserialize : string -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers.GZipDeserialize str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

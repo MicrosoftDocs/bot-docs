@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BuiltIn/DateTime/DayPart extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuiltIn.DateTime.DayPart" />
+  <TypeSignature Language="F#" Value="type BuiltIn.DateTime.DayPart = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart AF = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.AF" />
       <MemberSignature Language="VB.NET" Value="AF" />
+      <MemberSignature Language="F#" Value="AF = 2" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.AF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart EV = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.EV" />
       <MemberSignature Language="VB.NET" Value="EV" />
+      <MemberSignature Language="F#" Value="EV = 3" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.EV" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart MI = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MI" />
       <MemberSignature Language="VB.NET" Value="MI" />
+      <MemberSignature Language="F#" Value="MI = 1" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart MO = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MO" />
       <MemberSignature Language="VB.NET" Value="MO" />
+      <MemberSignature Language="F#" Value="MO = 0" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart NI = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.NI" />
       <MemberSignature Language="VB.NET" Value="NI" />
+      <MemberSignature Language="F#" Value="NI = 4" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.NI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

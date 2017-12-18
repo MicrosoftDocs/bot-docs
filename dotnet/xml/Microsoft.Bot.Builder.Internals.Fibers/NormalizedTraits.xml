@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NormalizedTraits extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.ITraits`1&lt;float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NormalizedTraits&#xA;Implements ITraits(Of Double)" />
+  <TypeSignature Language="F#" Value="type NormalizedTraits = class&#xA;    interface ITraits&lt;double&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Internals.Fibers.ITraits`1&lt;float64&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As ITraits(Of Double) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;double&gt;" Usage="Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,6 +46,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Microsoft#Bot#Builder#Internals#Fibers#ITraits&lt;System#Double&gt;#Maximum" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Maximum As Double Implements ITraits(Of Double).Maximum" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -63,6 +68,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Microsoft#Bot#Builder#Internals#Fibers#ITraits&lt;System#Double&gt;#Minimum" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Minimum As Double Implements ITraits(Of Double).Minimum" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

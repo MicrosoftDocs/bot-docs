@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldReflector`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1" />
   <TypeSignature Language="VB.NET" Value="Public Class FieldReflector(Of T)&#xA;Inherits Field(Of T)" />
+  <TypeSignature Language="F#" Value="type FieldReflector&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit Field&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, bool ignoreAnnotations) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional ignoreAnnotations As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;'T (requires 'T : null)&gt; : string * bool -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;'T (requires 'T : null)&gt; (name, ignoreAnnotations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".field family bool _ignoreAnnotations" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._ignoreAnnotations" />
       <MemberSignature Language="VB.NET" Value="Protected _ignoreAnnotations As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable _ignoreAnnotations : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;'T (requires 'T : null)&gt;._ignoreAnnotations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Generic.List`1&lt;object&gt; _path" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1._path" />
       <MemberSignature Language="VB.NET" Value="Protected _path As List(Of Object) " />
+      <MemberSignature Language="F#" Value="val mutable _path : System.Collections.Generic.List&lt;obj&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;'T (requires 'T : null)&gt;._path" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="C#" Value="protected void AddField (Type type, string[] path, int ipath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddField(class System.Type type, string[] path, int32 ipath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField(System.Type,System.String[],System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.AddField : Type * string[] * int -&gt; unit" Usage="fieldReflector.AddField (type, path, ipath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.GetValue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (state As T) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetValue : 'T -&gt; obj" Usage="fieldReflector.GetValue state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.IsUnknown(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsUnknown (state As T) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsUnknown : 'T -&gt; bool" Usage="fieldReflector.IsUnknown state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="C#" Value="protected void ProcessEnumAttributes (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessEnumAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes(System.Type)" />
+      <MemberSignature Language="F#" Value="member this.ProcessEnumAttributes : Type -&gt; unit" Usage="fieldReflector.ProcessEnumAttributes type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessFieldAttributes(object step) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessFieldAttributes(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProcessFieldAttributes (step As Object)" />
+      <MemberSignature Language="F#" Value="member this.ProcessFieldAttributes : obj -&gt; unit" Usage="fieldReflector.ProcessFieldAttributes step" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -202,6 +211,7 @@
       <MemberSignature Language="C#" Value="protected void ProcessTemplates (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessTemplates(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates(System.Type)" />
+      <MemberSignature Language="F#" Value="member this.ProcessTemplates : Type -&gt; unit" Usage="fieldReflector.ProcessTemplates type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -224,6 +234,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetUnknown(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetUnknown (state As T)" />
+      <MemberSignature Language="F#" Value="override this.SetUnknown : 'T -&gt; unit" Usage="fieldReflector.SetUnknown state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -246,6 +257,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(!T state, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.SetValue(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (state As T, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : 'T * obj -&gt; unit" Usage="fieldReflector.SetValue (state, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -270,6 +282,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Type StepType(object step) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.StepType(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function StepType (step As Object) As Type" />
+      <MemberSignature Language="F#" Value="member this.StepType : obj -&gt; Type" Usage="fieldReflector.StepType step" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

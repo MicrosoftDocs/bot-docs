@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefineAsyncDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.DefineAsyncDelegate`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function DefineAsyncDelegate(Of T)(state As T, field As Field(Of T)) As Task(Of Boolean) " />
+  <TypeSignature Language="F#" Value="type DefineAsyncDelegate&lt;'T (requires 'T : null)&gt; = delegate of 'T * Field&lt;'T (requires 'T : null)&gt; -&gt; Task&lt;bool&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

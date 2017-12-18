@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotContext implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotData, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IBotContext" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBotContext&#xA;Implements IBotData, IBotToUser" />
+  <TypeSignature Language="F#" Value="type IBotContext = interface&#xA;    interface IBotData&#xA;    interface IBotToUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IActivity Activity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As IActivity" />
+      <MemberSignature Language="F#" Value="member this.Activity : Microsoft.Bot.Connector.IActivity" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken CancellationToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancellationToken As CancellationToken" />
+      <MemberSignature Language="F#" Value="member this.CancellationToken : System.Threading.CancellationToken" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentDetailsModifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentDetailsModifier" />
+  <TypeSignature Language="F#" Value="type PaymentDetailsModifier = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,10 +43,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; supportedMethods, class Microsoft.Bot.Connector.Payments.PaymentItem total, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentItem&gt; additionalDisplayItems, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.#ctor(System.Collections.Generic.IList{System.String},Microsoft.Bot.Connector.Payments.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentItem},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional supportedMethods As IList(Of String) = null, Optional total As PaymentItem = null, Optional additionalDisplayItems As IList(Of PaymentItem) = null, Optional data As Object = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentDetailsModifier : System.Collections.Generic.IList&lt;string&gt; * Microsoft.Bot.Connector.Payments.PaymentItem * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentItem&gt; * obj -&gt; Microsoft.Bot.Connector.Payments.PaymentDetailsModifier" Usage="new Microsoft.Bot.Connector.Payments.PaymentDetailsModifier (supportedMethods, total, additionalDisplayItems, data)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="supportedMethods" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -69,10 +71,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentItem&gt; AdditionalDisplayItems" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.AdditionalDisplayItems" />
       <MemberSignature Language="VB.NET" Value="Public Property AdditionalDisplayItems As IList(Of PaymentItem)" />
+      <MemberSignature Language="F#" Value="member this.AdditionalDisplayItems : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentItem&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.AdditionalDisplayItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,10 +100,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Data" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As Object" />
+      <MemberSignature Language="F#" Value="member this.Data : obj with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,10 +128,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; SupportedMethods" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.SupportedMethods" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportedMethods As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SupportedMethods : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.SupportedMethods" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -150,10 +155,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentItem Total" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Total" />
       <MemberSignature Language="VB.NET" Value="Public Property Total As PaymentItem" />
+      <MemberSignature Language="F#" Value="member this.Total : Microsoft.Bot.Connector.Payments.PaymentItem with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentDetailsModifier.Total" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

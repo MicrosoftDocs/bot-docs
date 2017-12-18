@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThumbnailUrl extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ThumbnailUrl" />
   <TypeSignature Language="VB.NET" Value="Public Class ThumbnailUrl" />
+  <TypeSignature Language="F#" Value="type ThumbnailUrl = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string alt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ThumbnailUrl.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional alt As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ThumbnailUrl : string * string -&gt; Microsoft.Bot.Connector.ThumbnailUrl" Usage="new Microsoft.Bot.Connector.ThumbnailUrl (url, alt)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
@@ -64,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ThumbnailUrl.Alt" />
       <MemberSignature Language="VB.NET" Value="Public Property Alt As String" />
+      <MemberSignature Language="F#" Value="member this.Alt : string with get, set" Usage="Microsoft.Bot.Connector.ThumbnailUrl.Alt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -90,10 +93,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ThumbnailUrl.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Bot.Connector.ThumbnailUrl.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelIds extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChannelIds" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelIds" />
+  <TypeSignature Language="F#" Value="type ChannelIds = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Console" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Console" />
       <MemberSignature Language="VB.NET" Value="Public Const Console As String " />
+      <MemberSignature Language="F#" Value="val mutable Console : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Console" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Cortana" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Cortana" />
       <MemberSignature Language="VB.NET" Value="Public Const Cortana As String " />
+      <MemberSignature Language="F#" Value="val mutable Cortana : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Cortana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Directline" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Directline" />
       <MemberSignature Language="VB.NET" Value="Public Const Directline As String " />
+      <MemberSignature Language="F#" Value="val mutable Directline : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Directline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Email" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Email" />
       <MemberSignature Language="VB.NET" Value="Public Const Email As String " />
+      <MemberSignature Language="F#" Value="val mutable Email : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Email" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Emulator" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Emulator" />
       <MemberSignature Language="VB.NET" Value="Public Const Emulator As String " />
+      <MemberSignature Language="F#" Value="val mutable Emulator : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Emulator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Facebook" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Facebook" />
       <MemberSignature Language="VB.NET" Value="Public Const Facebook As String " />
+      <MemberSignature Language="F#" Value="val mutable Facebook : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Facebook" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Groupme" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Groupme" />
       <MemberSignature Language="VB.NET" Value="Public Const Groupme As String " />
+      <MemberSignature Language="F#" Value="val mutable Groupme : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Groupme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Kik" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Kik" />
       <MemberSignature Language="VB.NET" Value="Public Const Kik As String " />
+      <MemberSignature Language="F#" Value="val mutable Kik : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Kik" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Msteams" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Msteams" />
       <MemberSignature Language="VB.NET" Value="Public Const Msteams As String " />
+      <MemberSignature Language="F#" Value="val mutable Msteams : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Msteams" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -199,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Skype" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Skype" />
       <MemberSignature Language="VB.NET" Value="Public Const Skype As String " />
+      <MemberSignature Language="F#" Value="val mutable Skype : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Skype" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -217,6 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Slack" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Slack" />
       <MemberSignature Language="VB.NET" Value="Public Const Slack As String " />
+      <MemberSignature Language="F#" Value="val mutable Slack : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Slack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -235,6 +247,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Sms" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Sms" />
       <MemberSignature Language="VB.NET" Value="Public Const Sms As String " />
+      <MemberSignature Language="F#" Value="val mutable Sms : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Sms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -253,6 +266,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Telegram" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Telegram" />
       <MemberSignature Language="VB.NET" Value="Public Const Telegram As String " />
+      <MemberSignature Language="F#" Value="val mutable Telegram : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Telegram" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -271,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Webchat" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ChannelIds.Webchat" />
       <MemberSignature Language="VB.NET" Value="Public Const Webchat As String " />
+      <MemberSignature Language="F#" Value="val mutable Webchat : string" Usage="Microsoft.Bot.Builder.Dialogs.ChannelIds.Webchat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

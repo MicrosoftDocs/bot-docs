@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Actions/WhereScorable`1/Token&lt;Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.Token`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Actions.WhereScorable(Of Score).Token&#xA;Inherits Token(Of IResolver, Score)" />
+  <TypeSignature Language="F#" Value="type Actions.WhereScorable&lt;'Score&gt;.Token = class&#xA;    inherit Token&lt;IResolver, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool HasScore" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.HasScore" />
       <MemberSignature Language="VB.NET" Value="Public Property HasScore As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasScore : bool with get, set" Usage="Microsoft.Bot.Builder.Scorables.Actions.WhereScorable&lt;'Score&gt;.Token.HasScore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Address extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IAddress, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Address" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Address&#xA;Implements IAddress, IEquatable(Of IAddress)" />
+  <TypeSignature Language="F#" Value="type Address = class&#xA;    interface IAddress&#xA;    interface IEquatable&lt;IAddress&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string botId, string channelId, string userId, string conversationId, string serviceUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Address.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (botId As String, channelId As String, userId As String, conversationId As String, serviceUrl As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Address : string * string * string * string * string -&gt; Microsoft.Bot.Builder.Dialogs.Address" Usage="new Microsoft.Bot.Builder.Dialogs.Address (botId, channelId, userId, conversationId, serviceUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,7 +64,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string BotId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Address.BotId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BotId As String" />
+      <MemberSignature Language="F#" Value="member this.BotId : string" Usage="Microsoft.Bot.Builder.Dialogs.Address.BotId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IAddress.BotId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -81,7 +87,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Address.ChannelId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string" Usage="Microsoft.Bot.Builder.Dialogs.Address.ChannelId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IAddress.ChannelId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -100,7 +110,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ConversationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Address.ConversationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversationId As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationId : string" Usage="Microsoft.Bot.Builder.Dialogs.Address.ConversationId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IAddress.ConversationId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -119,7 +133,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Builder.Dialogs.IAddress other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Address.Equals(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As IAddress) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Bot.Builder.Dialogs.IAddress -&gt; bool" Usage="address.Equals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -142,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Address.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="address.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -165,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Address FromActivity(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Address.FromActivity(Microsoft.Bot.Connector.IActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromActivity (activity As IActivity) As Address" />
+      <MemberSignature Language="F#" Value="static member FromActivity : Microsoft.Bot.Connector.IActivity -&gt; Microsoft.Bot.Builder.Dialogs.Address" Usage="Microsoft.Bot.Builder.Dialogs.Address.FromActivity activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -188,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Address.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="address.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -208,7 +229,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Address.ServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string" Usage="Microsoft.Bot.Builder.Dialogs.Address.ServiceUrl" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IAddress.ServiceUrl</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -227,7 +252,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Address.UserId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserId As String" />
+      <MemberSignature Language="F#" Value="member this.UserId : string" Usage="Microsoft.Bot.Builder.Dialogs.Address.UserId" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IAddress.UserId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToneId extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.ToneId" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToneId" />
+  <TypeSignature Language="F#" Value="type ToneId = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId A = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.A" />
       <MemberSignature Language="VB.NET" Value="A" />
+      <MemberSignature Language="F#" Value="A = 12" Usage="Microsoft.Skype.Bots.Media.ToneId.A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId B = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.B" />
       <MemberSignature Language="VB.NET" Value="B" />
+      <MemberSignature Language="F#" Value="B = 13" Usage="Microsoft.Skype.Bots.Media.ToneId.B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId C = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.C" />
       <MemberSignature Language="VB.NET" Value="C" />
+      <MemberSignature Language="F#" Value="C = 14" Usage="Microsoft.Skype.Bots.Media.ToneId.C" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId D = int32(15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.D" />
       <MemberSignature Language="VB.NET" Value="D" />
+      <MemberSignature Language="F#" Value="D = 15" Usage="Microsoft.Skype.Bots.Media.ToneId.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Flash = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Flash" />
       <MemberSignature Language="VB.NET" Value="Flash" />
+      <MemberSignature Language="F#" Value="Flash = 16" Usage="Microsoft.Skype.Bots.Media.ToneId.Flash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Pound = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Pound" />
       <MemberSignature Language="VB.NET" Value="Pound" />
+      <MemberSignature Language="F#" Value="Pound = 11" Usage="Microsoft.Skype.Bots.Media.ToneId.Pound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -142,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Star = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Star" />
       <MemberSignature Language="VB.NET" Value="Star" />
+      <MemberSignature Language="F#" Value="Star = 10" Usage="Microsoft.Skype.Bots.Media.ToneId.Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone0 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone0" />
       <MemberSignature Language="VB.NET" Value="Tone0" />
+      <MemberSignature Language="F#" Value="Tone0 = 0" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -182,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone1 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone1" />
       <MemberSignature Language="VB.NET" Value="Tone1" />
+      <MemberSignature Language="F#" Value="Tone1 = 1" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -202,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone2 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone2" />
       <MemberSignature Language="VB.NET" Value="Tone2" />
+      <MemberSignature Language="F#" Value="Tone2 = 2" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -222,6 +233,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone3 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone3" />
       <MemberSignature Language="VB.NET" Value="Tone3" />
+      <MemberSignature Language="F#" Value="Tone3 = 3" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -242,6 +254,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone4 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone4" />
       <MemberSignature Language="VB.NET" Value="Tone4" />
+      <MemberSignature Language="F#" Value="Tone4 = 4" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -262,6 +275,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone5 = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone5" />
       <MemberSignature Language="VB.NET" Value="Tone5" />
+      <MemberSignature Language="F#" Value="Tone5 = 5" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -282,6 +296,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone6 = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone6" />
       <MemberSignature Language="VB.NET" Value="Tone6" />
+      <MemberSignature Language="F#" Value="Tone6 = 6" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -302,6 +317,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone7 = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone7" />
       <MemberSignature Language="VB.NET" Value="Tone7" />
+      <MemberSignature Language="F#" Value="Tone7 = 7" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -322,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone8 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone8" />
       <MemberSignature Language="VB.NET" Value="Tone8" />
+      <MemberSignature Language="F#" Value="Tone8 = 8" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -342,6 +359,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.ToneId Tone9 = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.ToneId.Tone9" />
       <MemberSignature Language="VB.NET" Value="Tone9" />
+      <MemberSignature Language="F#" Value="Tone9 = 9" Usage="Microsoft.Skype.Bots.Media.ToneId.Tone9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Serialization/SurrogateLogDecorator extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider, class System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Serialization.SurrogateLogDecorator&#xA;Implements ISerializationSurrogate, Serialization.ISurrogateProvider" />
+  <TypeSignature Language="F#" Value="type Serialization.SurrogateLogDecorator = class&#xA;    interface Serialization.ISurrogateProvider&#xA;    interface ISerializationSurrogate" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider inner, class System.Diagnostics.TraceListener trace) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.#ctor(Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider,System.Diagnostics.TraceListener)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inner As Serialization.ISurrogateProvider, trace As TraceListener)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator : Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider * System.Diagnostics.TraceListener -&gt; Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator" Usage="new Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator (inner, trace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,12 +46,44 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+ISurrogateProvider.Handles">
+      <MemberSignature Language="C#" Value="bool Serialization.ISurrogateProvider.Handles (Type type, System.Runtime.Serialization.StreamingContext context, out int priority);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] int32&amp; priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="priority" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="priority">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializationSurrogate.GetObjectData">
       <MemberSignature Language="C#" Value="void ISerializationSurrogate.GetObjectData (object obj, System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(object obj, class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext) Implements ISerializationSurrogate.GetObjectData" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -76,6 +110,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberSignature Language="VB.NET" Value="Function SetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext, selector As ISurrogateSelector) As Object Implements ISerializationSurrogate.SetObjectData" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -104,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="surrogateLogDecorator.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

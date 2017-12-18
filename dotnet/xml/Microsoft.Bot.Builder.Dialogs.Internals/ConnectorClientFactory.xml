@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectorClientFactory extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectorClientFactory&#xA;Implements IConnectorClientFactory" />
+  <TypeSignature Language="F#" Value="type ConnectorClientFactory = class&#xA;    interface IConnectorClientFactory" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IAddress address, class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Connector.MicrosoftAppCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As IAddress, credentials As MicrosoftAppCredentials)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Connector.MicrosoftAppCredentials -&gt; Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory" Usage="new Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory (address, credentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEmulator(class Microsoft.Bot.Builder.Dialogs.IAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.IsEmulator(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsEmulator (address As IAddress) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsEmulator : Microsoft.Bot.Builder.Dialogs.IAddress -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.IsEmulator address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -70,6 +73,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeConnectorClient" />
       <MemberSignature Language="VB.NET" Value="Function MakeConnectorClient () As IConnectorClient Implements IConnectorClientFactory.MakeConnectorClient" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -90,6 +96,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeStateClient" />
       <MemberSignature Language="VB.NET" Value="Function MakeStateClient () As IStateClient Implements IConnectorClientFactory.MakeStateClient" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

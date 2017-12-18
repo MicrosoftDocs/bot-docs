@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimsIdentityEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ClaimsIdentityEx" />
   <TypeSignature Language="VB.NET" Value="Public Module ClaimsIdentityEx" />
+  <TypeSignature Language="F#" Value="type ClaimsIdentityEx = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string AppPasswordClaim" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ClaimsIdentityEx.AppPasswordClaim" />
       <MemberSignature Language="VB.NET" Value="Public Const AppPasswordClaim As String " />
+      <MemberSignature Language="F#" Value="val mutable AppPasswordClaim : string" Usage="Microsoft.Bot.Connector.ClaimsIdentityEx.AppPasswordClaim" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -39,10 +41,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppIdFromClaims(class System.Security.Claims.ClaimsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppIdFromClaims(System.Security.Claims.ClaimsIdentity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppIdFromClaims (identity As ClaimsIdentity) As String" />
+      <MemberSignature Language="F#" Value="static member GetAppIdFromClaims : System.Security.Claims.ClaimsIdentity -&gt; string" Usage="Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppIdFromClaims identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -64,10 +67,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppPasswordFromClaims(class System.Security.Claims.ClaimsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppPasswordFromClaims(System.Security.Claims.ClaimsIdentity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppPasswordFromClaims (identity As ClaimsIdentity) As String" />
+      <MemberSignature Language="F#" Value="static member GetAppPasswordFromClaims : System.Security.Claims.ClaimsIdentity -&gt; string" Usage="Microsoft.Bot.Connector.ClaimsIdentityEx.GetAppPasswordFromClaims identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -88,10 +92,11 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.MicrosoftAppCredentials GetCredentialsFromClaims (this System.Security.Claims.ClaimsIdentity claimsIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.MicrosoftAppCredentials GetCredentialsFromClaims(class System.Security.Claims.ClaimsIdentity claimsIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ClaimsIdentityEx.GetCredentialsFromClaims(System.Security.Claims.ClaimsIdentity)" />
+      <MemberSignature Language="F#" Value="static member GetCredentialsFromClaims : System.Security.Claims.ClaimsIdentity -&gt; Microsoft.Bot.Connector.MicrosoftAppCredentials" Usage="Microsoft.Bot.Connector.ClaimsIdentityEx.GetCredentialsFromClaims claimsIdentity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.MicrosoftAppCredentials</ReturnType>

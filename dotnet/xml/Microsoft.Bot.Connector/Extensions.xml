@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.AnimationCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AnimationCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As AnimationCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.AnimationCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -46,10 +48,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.AudioCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AudioCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As AudioCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.AudioCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -71,10 +74,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.HeroCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As HeroCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.HeroCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -96,10 +100,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.ReceiptCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ReceiptCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As ReceiptCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.ReceiptCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -121,10 +126,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.SigninCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As SigninCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.SigninCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -146,10 +152,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.ThumbnailCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As ThumbnailCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.ThumbnailCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
@@ -171,10 +178,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.VideoCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.VideoCard)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As VideoCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.VideoCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>

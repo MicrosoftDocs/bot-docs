@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeyboardCardMapper extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeyboardCardMapper&#xA;Implements IMessageActivityMapper" />
+  <TypeSignature Language="F#" Value="type KeyboardCardMapper = class&#xA;    interface IMessageActivityMapper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,7 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity Map(class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.KeyboardCardMapper.Map(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Function Map (message As IMessageActivity) As IMessageActivity" />
+      <MemberSignature Language="F#" Value="abstract member Map : Microsoft.Bot.Connector.IMessageActivity -&gt; Microsoft.Bot.Connector.IMessageActivity&#xA;override this.Map : Microsoft.Bot.Connector.IMessageActivity -&gt; Microsoft.Bot.Connector.IMessageActivity" Usage="keyboardCardMapper.Map message" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper.Map(Microsoft.Bot.Connector.IMessageActivity)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

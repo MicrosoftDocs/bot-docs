@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PaymentShippingTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentShippingTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentShippingTypes" />
+  <TypeSignature Language="F#" Value="type PaymentShippingTypes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Delivery" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Delivery" />
       <MemberSignature Language="VB.NET" Value="Public Const Delivery As String " />
+      <MemberSignature Language="F#" Value="val mutable Delivery : string" Usage="Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Delivery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -43,10 +45,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string PickUp" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.PickUp" />
       <MemberSignature Language="VB.NET" Value="Public Const PickUp As String " />
+      <MemberSignature Language="F#" Value="val mutable PickUp : string" Usage="Microsoft.Bot.Connector.Payments.PaymentShippingTypes.PickUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -63,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Shipping" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Shipping" />
       <MemberSignature Language="VB.NET" Value="Public Const Shipping As String " />
+      <MemberSignature Language="F#" Value="val mutable Shipping : string" Usage="Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Shipping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

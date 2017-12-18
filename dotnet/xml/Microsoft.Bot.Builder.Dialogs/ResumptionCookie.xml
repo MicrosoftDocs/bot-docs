@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ResumptionCookie extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Dialogs.ResumptionCookie&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ResumptionCookie" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResumptionCookie&#xA;Implements IEquatable(Of ResumptionCookie)" />
+  <TypeSignature Language="F#" Value="type ResumptionCookie = class&#xA;    interface IEquatable&lt;ResumptionCookie&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.IMessageActivity msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As IMessageActivity)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.ResumptionCookie : Microsoft.Bot.Connector.IMessageActivity -&gt; Microsoft.Bot.Builder.Dialogs.ResumptionCookie" Usage="new Microsoft.Bot.Builder.Dialogs.ResumptionCookie msg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="C#" Value="public ResumptionCookie (Microsoft.Bot.Builder.Dialogs.Address address, string userName, bool isGroup, string locale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Address address, string userName, bool isGroup, string locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.ResumptionCookie : Microsoft.Bot.Builder.Dialogs.Address * string * bool * string -&gt; Microsoft.Bot.Builder.Dialogs.ResumptionCookie" Usage="new Microsoft.Bot.Builder.Dialogs.ResumptionCookie (address, userName, isGroup, locale)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IAddress Address" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As IAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : Microsoft.Bot.Builder.Dialogs.IAddress with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -104,7 +108,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ResumptionCookie) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Bot.Builder.Dialogs.ResumptionCookie -&gt; bool" Usage="resumptionCookie.Equals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -127,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="resumptionCookie.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -150,6 +159,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="resumptionCookie.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -170,6 +180,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.Activity GetMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GetMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMessage () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetMessage : unit -&gt; Microsoft.Bot.Connector.Activity" Usage="resumptionCookie.GetMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -192,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ResumptionCookie GZipDeserialize(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GZipDeserialize (str As String) As ResumptionCookie" />
+      <MemberSignature Language="F#" Value="static member GZipDeserialize : string -&gt; Microsoft.Bot.Builder.Dialogs.ResumptionCookie" Usage="Microsoft.Bot.Builder.Dialogs.ResumptionCookie.GZipDeserialize str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -217,6 +229,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property IsGroup As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGroup : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -238,6 +251,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrustedServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTrustedServiceUrl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTrustedServiceUrl : bool" Usage="Microsoft.Bot.Builder.Dialogs.ResumptionCookie.IsTrustedServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -261,6 +275,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale" />
       <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ResumptionCookie.Locale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -282,6 +297,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
+      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ResumptionCookie.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

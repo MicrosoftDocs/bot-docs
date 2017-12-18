@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Token`2&lt;InnerItem, InnerScore&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Token`2" />
   <TypeSignature Language="VB.NET" Value="Public Class Token(Of InnerItem, InnerScore)" />
+  <TypeSignature Language="F#" Value="type Token&lt;'InnerItem, 'InnerScore&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".field public !InnerItem Item" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Token`2.Item" />
       <MemberSignature Language="VB.NET" Value="Public Item As InnerItem " />
+      <MemberSignature Language="F#" Value="val mutable Item : 'InnerItem" Usage="Microsoft.Bot.Builder.Scorables.Internals.Token&lt;'InnerItem, 'InnerScore&gt;.Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!InnerItem, !InnerScore&gt; Scorable" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Token`2.Scorable" />
       <MemberSignature Language="VB.NET" Value="Public Scorable As IScorable(Of InnerItem, InnerScore) " />
+      <MemberSignature Language="F#" Value="val mutable Scorable : Microsoft.Bot.Builder.Scorables.IScorable&lt;'InnerItem, 'InnerScore&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.Token&lt;'InnerItem, 'InnerScore&gt;.Scorable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".field public object State" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.Token`2.State" />
       <MemberSignature Language="VB.NET" Value="Public State As Object " />
+      <MemberSignature Language="F#" Value="val mutable State : obj" Usage="Microsoft.Bot.Builder.Scorables.Internals.Token&lt;'InnerItem, 'InnerScore&gt;.State" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

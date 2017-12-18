@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextualSelector`2&lt;- T, R&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ContextualSelector(Of In T, R)(context As IBotContext, item As T) As R " />
+  <TypeSignature Language="F#" Value="type ContextualSelector&lt;'T, 'R&gt; = delegate of IBotContext * 'T -&gt; 'R" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

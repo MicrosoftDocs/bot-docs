@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestCompleteResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentRequestCompleteResult" />
+  <TypeSignature Language="F#" Value="type PaymentRequestCompleteResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,10 +43,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional result As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult : string -&gt; Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult" Usage="new Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult result" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="result" Type="System.String" />
@@ -64,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequestCompleteResult.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

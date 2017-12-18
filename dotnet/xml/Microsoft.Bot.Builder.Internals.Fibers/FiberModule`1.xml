@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FiberModule`1&lt;C&gt; extends Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FiberModule(Of C)&#xA;Inherits FiberModule" />
+  <TypeSignature Language="F#" Value="type FiberModule&lt;'C&gt; = class&#xA;    inherit FiberModule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1.Load(Autofac.ContainerBuilder)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="fiberModule.Load builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SettingsUtils extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.SettingsUtils" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsUtils" />
+  <TypeSignature Language="F#" Value="type SettingsUtils = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppSettings(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SettingsUtils.GetAppSettings(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAppSettings (key As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetAppSettings : string -&gt; string" Usage="Microsoft.Bot.Connector.SettingsUtils.GetAppSettings key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

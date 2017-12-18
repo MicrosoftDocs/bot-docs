@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TemplateUsage extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TemplateUsage" />
   <TypeSignature Language="VB.NET" Value="Public Enum TemplateUsage" />
+  <TypeSignature Language="F#" Value="type TemplateUsage = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Bool = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Bool" />
       <MemberSignature Language="VB.NET" Value="Bool" />
+      <MemberSignature Language="F#" Value="Bool = 1" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Bool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage BoolHelp = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.BoolHelp" />
       <MemberSignature Language="VB.NET" Value="BoolHelp" />
+      <MemberSignature Language="F#" Value="BoolHelp = 2" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.BoolHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Clarify = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Clarify" />
       <MemberSignature Language="VB.NET" Value="Clarify" />
+      <MemberSignature Language="F#" Value="Clarify = 3" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Clarify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Confirmation = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Confirmation" />
       <MemberSignature Language="VB.NET" Value="Confirmation" />
+      <MemberSignature Language="F#" Value="Confirmation = 4" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Confirmation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage CurrentChoice = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.CurrentChoice" />
       <MemberSignature Language="VB.NET" Value="CurrentChoice" />
+      <MemberSignature Language="F#" Value="CurrentChoice = 5" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.CurrentChoice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage DateTime = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 6" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage DateTimeHelp = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTimeHelp" />
       <MemberSignature Language="VB.NET" Value="DateTimeHelp" />
+      <MemberSignature Language="F#" Value="DateTimeHelp = 7" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTimeHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Double = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 8" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -202,6 +211,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage DoubleHelp = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DoubleHelp" />
       <MemberSignature Language="VB.NET" Value="DoubleHelp" />
+      <MemberSignature Language="F#" Value="DoubleHelp = 9" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.DoubleHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -230,6 +240,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumManyNumberHelp = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyNumberHelp" />
       <MemberSignature Language="VB.NET" Value="EnumManyNumberHelp" />
+      <MemberSignature Language="F#" Value="EnumManyNumberHelp = 11" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyNumberHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -253,6 +264,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumManyWordHelp = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyWordHelp" />
       <MemberSignature Language="VB.NET" Value="EnumManyWordHelp" />
+      <MemberSignature Language="F#" Value="EnumManyWordHelp = 13" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyWordHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -276,6 +288,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumOneNumberHelp = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneNumberHelp" />
       <MemberSignature Language="VB.NET" Value="EnumOneNumberHelp" />
+      <MemberSignature Language="F#" Value="EnumOneNumberHelp = 10" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneNumberHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -299,6 +312,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumOneWordHelp = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneWordHelp" />
       <MemberSignature Language="VB.NET" Value="EnumOneWordHelp" />
+      <MemberSignature Language="F#" Value="EnumOneWordHelp = 12" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneWordHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -322,6 +336,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumSelectMany = int32(15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectMany" />
       <MemberSignature Language="VB.NET" Value="EnumSelectMany" />
+      <MemberSignature Language="F#" Value="EnumSelectMany = 15" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectMany" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -342,6 +357,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumSelectOne = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectOne" />
       <MemberSignature Language="VB.NET" Value="EnumSelectOne" />
+      <MemberSignature Language="F#" Value="EnumSelectOne = 14" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -362,6 +378,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Feedback = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback" />
       <MemberSignature Language="VB.NET" Value="Feedback" />
+      <MemberSignature Language="F#" Value="Feedback = 16" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -385,6 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Help = int32(17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Help" />
       <MemberSignature Language="VB.NET" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 17" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -408,6 +426,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage HelpClarify = int32(18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpClarify" />
       <MemberSignature Language="VB.NET" Value="HelpClarify" />
+      <MemberSignature Language="F#" Value="HelpClarify = 18" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpClarify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -431,6 +450,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage HelpConfirm = int32(19)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpConfirm" />
       <MemberSignature Language="VB.NET" Value="HelpConfirm" />
+      <MemberSignature Language="F#" Value="HelpConfirm = 19" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpConfirm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -454,6 +474,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage HelpNavigation = int32(20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpNavigation" />
       <MemberSignature Language="VB.NET" Value="HelpNavigation" />
+      <MemberSignature Language="F#" Value="HelpNavigation = 20" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpNavigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -477,6 +498,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Integer = int32(21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 21" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -501,6 +523,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage IntegerHelp = int32(22)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.IntegerHelp" />
       <MemberSignature Language="VB.NET" Value="IntegerHelp" />
+      <MemberSignature Language="F#" Value="IntegerHelp = 22" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.IntegerHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -524,6 +547,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Navigation = int32(23)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Navigation" />
       <MemberSignature Language="VB.NET" Value="Navigation" />
+      <MemberSignature Language="F#" Value="Navigation = 23" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Navigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -544,6 +568,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NavigationCommandHelp = int32(24)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationCommandHelp" />
       <MemberSignature Language="VB.NET" Value="NavigationCommandHelp" />
+      <MemberSignature Language="F#" Value="NavigationCommandHelp = 24" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationCommandHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -567,6 +592,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NavigationFormat = int32(25)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationFormat" />
       <MemberSignature Language="VB.NET" Value="NavigationFormat" />
+      <MemberSignature Language="F#" Value="NavigationFormat = 25" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -587,6 +613,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NavigationHelp = int32(26)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationHelp" />
       <MemberSignature Language="VB.NET" Value="NavigationHelp" />
+      <MemberSignature Language="F#" Value="NavigationHelp = 26" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -611,6 +638,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.None" />
       <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -629,6 +657,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NoPreference = int32(27)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NoPreference" />
       <MemberSignature Language="VB.NET" Value="NoPreference" />
+      <MemberSignature Language="F#" Value="NoPreference = 27" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NoPreference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -649,6 +678,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NotUnderstood = int32(28)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NotUnderstood" />
       <MemberSignature Language="VB.NET" Value="NotUnderstood" />
+      <MemberSignature Language="F#" Value="NotUnderstood = 28" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NotUnderstood" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -672,6 +702,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage StatusFormat = int32(29)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.StatusFormat" />
       <MemberSignature Language="VB.NET" Value="StatusFormat" />
+      <MemberSignature Language="F#" Value="StatusFormat = 29" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.StatusFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -692,6 +723,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage String = int32(30)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.String" />
       <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="F#" Value="String = 30" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -712,6 +744,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage StringHelp = int32(31)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.StringHelp" />
       <MemberSignature Language="VB.NET" Value="StringHelp" />
+      <MemberSignature Language="F#" Value="StringHelp = 31" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.StringHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -735,6 +768,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Unspecified = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 32" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

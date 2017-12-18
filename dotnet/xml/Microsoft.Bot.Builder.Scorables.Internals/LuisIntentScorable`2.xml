@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit LuisIntentScorable`2&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4&lt;class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt;, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation, !InnerState, !InnerScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LuisIntentScorable(Of InnerState, InnerScore)&#xA;Inherits ResolverScorable(Of LuisIntentScorable(Of InnerState, InnerScore).Scope, IntentRecommendation, InnerState, InnerScore)" />
+  <TypeSignature Language="F#" Value="type LuisIntentScorable&lt;'InnerState, 'InnerScore&gt; = class&#xA;    inherit ResolverScorable&lt;LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope, IntentRecommendation, 'InnerState, 'InnerScore&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.Luis.ILuisModel model, class Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute intent, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.#ctor(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (service As ILuisService, model As ILuisModel, intent As LuisIntentAttribute, inner As IScorable(Of IResolver, InnerScore))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt; : Microsoft.Bot.Builder.Luis.ILuisService * Microsoft.Bot.Builder.Luis.ILuisModel * Microsoft.Bot.Builder.Dialogs.LuisIntentAttribute * Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'InnerScore&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt; (service, model, intent, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver item, class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt; state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.DoneAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope{`0,`1},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoneAsync (item As IResolver, state As LuisIntentScorable(Of InnerState, InnerScore).Scope, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.DoneAsync : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="luisIntentScorable.DoneAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation GetScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScore (resolver As IResolver, state As LuisIntentScorable(Of InnerState, InnerScore).Scope) As IntentRecommendation" />
+      <MemberSignature Language="F#" Value="override this.GetScore : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope -&gt; Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" Usage="luisIntentScorable.GetScore (resolver, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope&lt;!InnerState, !InnerScore&gt;&gt; PrepareAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareAsync (resolver As IResolver, token As CancellationToken) As Task(Of LuisIntentScorable(Of InnerState, InnerScore).Scope)" />
+      <MemberSignature Language="F#" Value="override this.PrepareAsync : Microsoft.Bot.Builder.Scorables.Internals.IResolver * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable&lt;'InnerState, 'InnerScore&gt;.Scope&gt;" Usage="luisIntentScorable.PrepareAsync (resolver, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="luisIntentScorable.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

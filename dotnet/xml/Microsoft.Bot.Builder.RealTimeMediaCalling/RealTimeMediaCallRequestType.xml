@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RealTimeMediaCallRequestType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType" />
   <TypeSignature Language="VB.NET" Value="Public Enum RealTimeMediaCallRequestType" />
+  <TypeSignature Language="F#" Value="type RealTimeMediaCallRequestType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType CallingEvent = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.CallingEvent" />
       <MemberSignature Language="VB.NET" Value="CallingEvent" />
+      <MemberSignature Language="F#" Value="CallingEvent = 1" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.CallingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType IncomingCall = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.IncomingCall" />
       <MemberSignature Language="VB.NET" Value="IncomingCall" />
+      <MemberSignature Language="F#" Value="IncomingCall = 0" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.IncomingCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType NotificationEvent = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.NotificationEvent" />
       <MemberSignature Language="VB.NET" Value="NotificationEvent" />
+      <MemberSignature Language="F#" Value="NotificationEvent = 2" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeMediaCallRequestType.NotificationEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

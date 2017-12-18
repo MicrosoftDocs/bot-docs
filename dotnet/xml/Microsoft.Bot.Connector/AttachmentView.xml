@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentView extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentView" />
   <TypeSignature Language="VB.NET" Value="Public Class AttachmentView" />
+  <TypeSignature Language="F#" Value="type AttachmentView = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string viewId, valuetype System.Nullable`1&lt;int32&gt; size) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AttachmentView.#ctor(System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional viewId As String = null, Optional size As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.AttachmentView : string * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Connector.AttachmentView" Usage="new Microsoft.Bot.Connector.AttachmentView (viewId, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="viewId" Type="System.String" />
@@ -64,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Size" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentView.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Size : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Connector.AttachmentView.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -90,10 +93,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ViewId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentView.ViewId" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewId As String" />
+      <MemberSignature Language="F#" Value="member this.ViewId : string with get, set" Usage="Microsoft.Bot.Connector.AttachmentView.ViewId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioVideoFramePlayer extends System.Object implements class Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioVideoFramePlayer&#xA;Implements IAudioVideoFramePlayer" />
+  <TypeSignature Language="F#" Value="type AudioVideoFramePlayer = class&#xA;    interface IAudioVideoFramePlayer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="C#" Value="public AudioVideoFramePlayer (Microsoft.Skype.Bots.Media.AudioSocket audioSocket, Microsoft.Skype.Bots.Media.VideoSocket videoSocket, Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings audioVideoFramePlayerSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Skype.Bots.Media.AudioSocket audioSocket, class Microsoft.Skype.Bots.Media.VideoSocket videoSocket, class Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings audioVideoFramePlayerSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.#ctor(Microsoft.Skype.Bots.Media.AudioSocket,Microsoft.Skype.Bots.Media.VideoSocket,Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Skype.Bots.Media.AudioVideoFramePlayer : Microsoft.Skype.Bots.Media.AudioSocket * Microsoft.Skype.Bots.Media.VideoSocket * Microsoft.Skype.Bots.Media.AudioVideoFramePlayerSettings -&gt; Microsoft.Skype.Bots.Media.AudioVideoFramePlayer" Usage="new Microsoft.Skype.Bots.Media.AudioVideoFramePlayer (audioSocket, videoSocket, audioVideoFramePlayerSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -53,7 +55,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ClearAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.ClearAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ClearAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member ClearAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.ClearAsync : unit -&gt; System.Threading.Tasks.Task" Usage="audioVideoFramePlayer.ClearAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.ClearAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -81,7 +87,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task EnqueueBuffersAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.AudioMediaBuffer&gt; audioMediaBuffers, class System.Collections.Generic.IList`1&lt;class Microsoft.Skype.Bots.Media.VideoMediaBuffer&gt; videoMediaBuffers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.EnqueueBuffersAsync(System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.AudioMediaBuffer},System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.VideoMediaBuffer})" />
       <MemberSignature Language="VB.NET" Value="Public Function EnqueueBuffersAsync (audioMediaBuffers As IList(Of AudioMediaBuffer), videoMediaBuffers As IList(Of VideoMediaBuffer)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member EnqueueBuffersAsync : System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.AudioMediaBuffer&gt; * System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoMediaBuffer&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.EnqueueBuffersAsync : System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.AudioMediaBuffer&gt; * System.Collections.Generic.IList&lt;Microsoft.Skype.Bots.Media.VideoMediaBuffer&gt; -&gt; System.Threading.Tasks.Task" Usage="audioVideoFramePlayer.EnqueueBuffersAsync (audioMediaBuffers, videoMediaBuffers)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.EnqueueBuffersAsync(System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.AudioMediaBuffer},System.Collections.Generic.IList{Microsoft.Skype.Bots.Media.VideoMediaBuffer})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -115,7 +125,11 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.LowOnFramesEventArgs&gt; LowOnFrames" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.LowOnFrames" />
       <MemberSignature Language="VB.NET" Value="Public Event LowOnFrames As EventHandler(Of LowOnFramesEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.LowOnFrames : EventHandler&lt;Microsoft.Skype.Bots.Media.LowOnFramesEventArgs&gt; " Usage="member this.LowOnFrames : System.EventHandler&lt;Microsoft.Skype.Bots.Media.LowOnFramesEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.LowOnFrames</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -135,7 +149,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ShutdownAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioVideoFramePlayer.ShutdownAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ShutdownAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member ShutdownAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.ShutdownAsync : unit -&gt; System.Threading.Tasks.Task" Usage="audioVideoFramePlayer.ShutdownAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Bots.Media.IAudioVideoFramePlayer.ShutdownAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>

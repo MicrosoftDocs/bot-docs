@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LuisIntentScorableFactory extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LuisIntentScorableFactory&#xA;Implements IScorableFactory(Of IResolver, IntentRecommendation)" />
+  <TypeSignature Language="F#" Value="type LuisIntentScorableFactory = class&#xA;    interface IScorableFactory&lt;IResolver, IntentRecommendation&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;class Microsoft.Bot.Builder.Luis.ILuisModel, class Microsoft.Bot.Builder.Luis.ILuisService&gt; make) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory.#ctor(System.Func{Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.ILuisService})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (make As Func(Of ILuisModel, ILuisService))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory : Func&lt;Microsoft.Bot.Builder.Luis.ILuisModel, Microsoft.Bot.Builder.Luis.ILuisService&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory" Usage="new Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory make" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory.Microsoft#Bot#Builder#Scorables#Internals#IScorableFactory&lt;Microsoft#Bot#Builder#Scorables#Internals#IResolver,Microsoft#Bot#Builder#Luis#Models#IntentRecommendation&gt;#ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberSignature Language="VB.NET" Value="Function ScorableFor (methods As IEnumerable(Of MethodInfo)) As IScorable(Of IResolver, IntentRecommendation) Implements IScorableFactory(Of IResolver, IntentRecommendation).ScorableFor" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

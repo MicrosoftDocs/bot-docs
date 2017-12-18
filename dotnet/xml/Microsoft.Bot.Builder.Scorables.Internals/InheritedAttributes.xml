@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InheritedAttributes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Class InheritedAttributes" />
+  <TypeSignature Language="F#" Value="type InheritedAttributes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Concurrent.ConcurrentDictionary`2&lt;class System.Reflection.MethodInfo, class System.Collections.Generic.IReadOnlyList`1&lt;class System.Attribute&gt;&gt; AttributesByMethod" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes.AttributesByMethod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AttributesByMethod As ConcurrentDictionary(Of MethodInfo, IReadOnlyList(Of Attribute)) " />
+      <MemberSignature Language="F#" Value=" staticval mutable AttributesByMethod : System.Collections.Concurrent.ConcurrentDictionary&lt;System.Reflection.MethodInfo, System.Collections.Generic.IReadOnlyList&lt;Attribute&gt;&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes.AttributesByMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!A&gt; For&lt;(class System.Attribute) A&gt;(class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes.For``1(System.Reflection.MethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For(Of A As Attribute) (method As MethodInfo) As IEnumerable(Of A)" />
+      <MemberSignature Language="F#" Value="static member For : System.Reflection.MethodInfo -&gt; seq&lt;'A (requires 'A :&gt; Attribute)&gt; (requires 'A :&gt; Attribute)" Usage="Microsoft.Bot.Builder.Scorables.Internals.InheritedAttributes.For method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventProducer`1&lt;- Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.IEventProducer`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEventProducer(Of In Event)" />
+  <TypeSignature Language="F#" Value="type IEventProducer&lt;'Event&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="C#" Value="public void Post (Event event, Action onPull = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Post(!Event event, class System.Action onPull) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.IEventProducer`1.Post(`0,System.Action)" />
+      <MemberSignature Language="F#" Value="abstract member Post : 'Event * Action -&gt; unit" Usage="iEventProducer.Post (event, onPull)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

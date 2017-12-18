@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Need extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Need" />
   <TypeSignature Language="VB.NET" Value="Public Enum Need" />
+  <TypeSignature Language="F#" Value="type Need = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Internals.Fibers.Need Call = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Need.Call" />
       <MemberSignature Language="VB.NET" Value="Call" />
+      <MemberSignature Language="F#" Value="Call = 3" Usage="Microsoft.Bot.Builder.Internals.Fibers.Need.Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Internals.Fibers.Need Done = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Need.Done" />
       <MemberSignature Language="VB.NET" Value="Done" />
+      <MemberSignature Language="F#" Value="Done = 4" Usage="Microsoft.Bot.Builder.Internals.Fibers.Need.Done" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Internals.Fibers.Need None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Need.None" />
       <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Bot.Builder.Internals.Fibers.Need.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Internals.Fibers.Need Poll = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Need.Poll" />
       <MemberSignature Language="VB.NET" Value="Poll" />
+      <MemberSignature Language="F#" Value="Poll = 2" Usage="Microsoft.Bot.Builder.Internals.Fibers.Need.Poll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Internals.Fibers.Need Wait = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Internals.Fibers.Need.Wait" />
       <MemberSignature Language="VB.NET" Value="Wait" />
+      <MemberSignature Language="F#" Value="Wait = 1" Usage="Microsoft.Bot.Builder.Internals.Fibers.Need.Wait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.ActionParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class ActionParameter" />
+  <TypeSignature Language="F#" Value="type ActionParameter = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;bool&gt; required, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional required As Nullable(Of Boolean) = null, Optional value As IList(Of EntityRecommendation) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.Models.ActionParameter : string * Nullable&lt;bool&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; -&gt; Microsoft.Bot.Builder.Luis.Models.ActionParameter" Usage="new Microsoft.Bot.Builder.Luis.Models.ActionParameter (name, required, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.ActionParameter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Required" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required" />
       <MemberSignature Language="VB.NET" Value="Public Property Required As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Required : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As IList(Of EntityRecommendation)" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.ActionParameter.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

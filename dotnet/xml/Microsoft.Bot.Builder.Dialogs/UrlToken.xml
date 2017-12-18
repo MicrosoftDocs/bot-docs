@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UrlToken extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.UrlToken" />
   <TypeSignature Language="VB.NET" Value="Public Class UrlToken" />
+  <TypeSignature Language="F#" Value="type UrlToken = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Decode&lt;T&gt;(string token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.UrlToken.Decode``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decode(Of T) (token As String) As T" />
+      <MemberSignature Language="F#" Value="static member Decode : string -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.UrlToken.Decode token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encode&lt;T&gt;(!!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.UrlToken.Encode``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Encode(Of T) (item As T) As String" />
+      <MemberSignature Language="F#" Value="static member Encode : 'T -&gt; string" Usage="Microsoft.Bot.Builder.Dialogs.UrlToken.Encode item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

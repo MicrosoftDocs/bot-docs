@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Resources extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Resource.Resources" />
   <TypeSignature Language="VB.NET" Value="Public Class Resources" />
+  <TypeSignature Language="F#" Value="type Resources = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".property string BooleanChoices" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.BooleanChoices" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BooleanChoices As String" />
+      <MemberSignature Language="F#" Value="member this.BooleanChoices : string" Usage="Microsoft.Bot.Builder.Resource.Resources.BooleanChoices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandBack" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBack As String" />
+      <MemberSignature Language="F#" Value="member this.CommandBack : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandBackHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBackHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandBackHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandBackHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandBackTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackTerms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBackTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandBackTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandBackTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandHelpHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelpHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelpHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandHelpHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandHelpHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandHelpTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelpTerms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelpTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandHelpTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandHelpTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandQuit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuit" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuit As String" />
+      <MemberSignature Language="F#" Value="member this.CommandQuit : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandQuit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -199,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandQuitHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuitHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuitHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandQuitHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandQuitHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -220,6 +230,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandQuitTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuitTerms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuitTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandQuitTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandQuitTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -241,6 +252,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandReset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandReset" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandReset As String" />
+      <MemberSignature Language="F#" Value="member this.CommandReset : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandReset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -262,6 +274,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandResetHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandResetHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandResetHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandResetHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandResetHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -283,6 +296,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandResetTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandResetTerms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandResetTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandResetTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandResetTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -304,6 +318,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatus" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatus As String" />
+      <MemberSignature Language="F#" Value="member this.CommandStatus : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -325,6 +340,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandStatusHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatusHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatusHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandStatusHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandStatusHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -346,6 +362,7 @@
       <MemberSignature Language="ILAsm" Value=".property string CommandStatusTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatusTerms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatusTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandStatusTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandStatusTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -367,6 +384,7 @@
       <MemberSignature Language="ILAsm" Value=".property string Confirmation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Confirmation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Confirmation As String" />
+      <MemberSignature Language="F#" Value="member this.Confirmation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.Confirmation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -388,6 +406,7 @@
       <MemberSignature Language="ILAsm" Value=".property string ConfirmChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.ConfirmChoiceFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConfirmChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.ConfirmChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.ConfirmChoiceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -409,6 +428,7 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Bot.Builder.Resource.Resources.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -436,6 +456,7 @@
       <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -457,6 +478,7 @@
       <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceLastSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceLastSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceLastSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultChoiceLastSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceLastSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -478,6 +500,7 @@
       <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultChoiceSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -499,6 +522,7 @@
       <MemberSignature Language="ILAsm" Value=".property string DefaultLastSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultLastSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultLastSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultLastSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultLastSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -520,6 +544,7 @@
       <MemberSignature Language="ILAsm" Value=".property string DefaultSeparator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -541,6 +566,7 @@
       <MemberSignature Language="ILAsm" Value=".property string LanguageArticles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.LanguageArticles" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LanguageArticles As String" />
+      <MemberSignature Language="F#" Value="member this.LanguageArticles : string" Usage="Microsoft.Bot.Builder.Resource.Resources.LanguageArticles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -562,6 +588,7 @@
       <MemberSignature Language="ILAsm" Value=".property string LanguageStopWords" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.LanguageStopWords" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LanguageStopWords As String" />
+      <MemberSignature Language="F#" Value="member this.LanguageStopWords : string" Usage="Microsoft.Bot.Builder.Resource.Resources.LanguageStopWords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -583,6 +610,7 @@
       <MemberSignature Language="ILAsm" Value=".property string MatchCurrentChoice" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchCurrentChoice" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchCurrentChoice As String" />
+      <MemberSignature Language="F#" Value="member this.MatchCurrentChoice : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchCurrentChoice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -604,6 +632,7 @@
       <MemberSignature Language="ILAsm" Value=".property string MatchNo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchNo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchNo As String" />
+      <MemberSignature Language="F#" Value="member this.MatchNo : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchNo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -625,6 +654,7 @@
       <MemberSignature Language="ILAsm" Value=".property string MatchNoPreference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchNoPreference" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchNoPreference As String" />
+      <MemberSignature Language="F#" Value="member this.MatchNoPreference : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchNoPreference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -646,6 +676,7 @@
       <MemberSignature Language="ILAsm" Value=".property string MatchYes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchYes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchYes As String" />
+      <MemberSignature Language="F#" Value="member this.MatchYes : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchYes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -667,6 +698,7 @@
       <MemberSignature Language="ILAsm" Value=".property string Navigation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Navigation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Navigation As String" />
+      <MemberSignature Language="F#" Value="member this.Navigation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.Navigation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -688,6 +720,7 @@
       <MemberSignature Language="ILAsm" Value=".property string NumberExpression" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberExpression" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberExpression As String" />
+      <MemberSignature Language="F#" Value="member this.NumberExpression : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -709,6 +742,7 @@
       <MemberSignature Language="ILAsm" Value=".property string NumberOrdinals" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberOrdinals" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberOrdinals As String" />
+      <MemberSignature Language="F#" Value="member this.NumberOrdinals : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberOrdinals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -730,6 +764,7 @@
       <MemberSignature Language="ILAsm" Value=".property string NumberReverseOrdinals" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberReverseOrdinals" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberReverseOrdinals As String" />
+      <MemberSignature Language="F#" Value="member this.NumberReverseOrdinals : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberReverseOrdinals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -751,6 +786,7 @@
       <MemberSignature Language="ILAsm" Value=".property string NumberTerms" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberTerms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberTerms As String" />
+      <MemberSignature Language="F#" Value="member this.NumberTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberTerms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -772,6 +808,7 @@
       <MemberSignature Language="ILAsm" Value=".property string PromptRetry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.PromptRetry" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PromptRetry As String" />
+      <MemberSignature Language="F#" Value="member this.PromptRetry : string" Usage="Microsoft.Bot.Builder.Resource.Resources.PromptRetry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -793,6 +830,7 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Resources.ResourceManager ResourceManager" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.ResourceManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResourceManager As ResourceManager" />
+      <MemberSignature Language="F#" Value="member this.ResourceManager : System.Resources.ResourceManager" Usage="Microsoft.Bot.Builder.Resource.Resources.ResourceManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -819,6 +857,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateBool" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBool" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBool As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateBool : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateBool" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -840,6 +879,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateBoolHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBoolHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBoolHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateBoolHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateBoolHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -861,6 +901,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateClarify" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateClarify" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateClarify As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateClarify : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateClarify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -882,6 +923,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateConfirmation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateConfirmation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateConfirmation As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateConfirmation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateConfirmation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -904,6 +946,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateCurrentChoice" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateCurrentChoice" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateCurrentChoice As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateCurrentChoice : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateCurrentChoice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -925,6 +968,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateDateTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDateTime As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDateTime : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -946,6 +990,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateDateTimeHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDateTimeHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDateTimeHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDateTimeHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDateTimeHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -967,6 +1012,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateDouble" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDouble" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDouble As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDouble : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDouble" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -988,6 +1034,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateDoubleChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleChoiceFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDoubleChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDoubleChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleChoiceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1009,6 +1056,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateDoubleHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDoubleHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDoubleHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1030,6 +1078,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumManyNumberHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyNumberHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumManyNumberHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumManyNumberHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyNumberHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1051,6 +1100,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumManyWordHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyWordHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumManyWordHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumManyWordHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyWordHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1072,6 +1122,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumOneNumberHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneNumberHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumOneNumberHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumOneNumberHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneNumberHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1093,6 +1144,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumOneWordHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneWordHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumOneWordHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumOneWordHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneWordHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1114,6 +1166,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumSelectMany" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectMany" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumSelectMany As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumSelectMany : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectMany" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1135,6 +1188,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateEnumSelectOne" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectOne" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumSelectOne As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumSelectOne : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectOne" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1156,6 +1210,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateFeedback" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateFeedback" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateFeedback As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateFeedback : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateFeedback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1177,6 +1232,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1200,6 +1256,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelpClarify" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpClarify" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpClarify As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelpClarify : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelpClarify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1223,6 +1280,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelpConfirm" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpConfirm" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpConfirm As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelpConfirm : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelpConfirm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1246,6 +1304,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateHelpNavigation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpNavigation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpNavigation As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelpNavigation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelpNavigation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1269,6 +1328,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateInteger" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateInteger As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateInteger : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateInteger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1290,6 +1350,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateIntegerChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerChoiceFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateIntegerChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateIntegerChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerChoiceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1311,6 +1372,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateIntegerHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateIntegerHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateIntegerHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1332,6 +1394,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigation As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1353,6 +1416,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationCommandHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationCommandHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationCommandHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigationCommandHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationCommandHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1374,6 +1438,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigationFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1395,6 +1460,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigationHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1416,6 +1482,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateNoPreference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNoPreference" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNoPreference As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNoPreference : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNoPreference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1437,6 +1504,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateNotUnderstood" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNotUnderstood" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNotUnderstood As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNotUnderstood : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNotUnderstood" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1458,6 +1526,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateStatusFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStatusFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStatusFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateStatusFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateStatusFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1479,6 +1548,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateString" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateString As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateString : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1500,6 +1570,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateStringChoiceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStringChoiceFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStringChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateStringChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateStringChoiceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1521,6 +1592,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateStringHelp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStringHelp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStringHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateStringHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateStringHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1542,6 +1614,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TemplateUnspecified" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateUnspecified" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateUnspecified As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateUnspecified : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateUnspecified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1563,6 +1636,7 @@
       <MemberSignature Language="ILAsm" Value=".property string TooManyAttempts" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TooManyAttempts" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TooManyAttempts As String" />
+      <MemberSignature Language="F#" Value="member this.TooManyAttempts : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TooManyAttempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1584,6 +1658,7 @@
       <MemberSignature Language="ILAsm" Value=".property string UnhandledExceptionToUser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.UnhandledExceptionToUser" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnhandledExceptionToUser As String" />
+      <MemberSignature Language="F#" Value="member this.UnhandledExceptionToUser : string" Usage="Microsoft.Bot.Builder.Resource.Resources.UnhandledExceptionToUser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -1605,6 +1680,7 @@
       <MemberSignature Language="ILAsm" Value=".property string UserProfileDeleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.UserProfileDeleted" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserProfileDeleted As String" />
+      <MemberSignature Language="F#" Value="member this.UserProfileDeleted : string" Usage="Microsoft.Bot.Builder.Resource.Resources.UserProfileDeleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

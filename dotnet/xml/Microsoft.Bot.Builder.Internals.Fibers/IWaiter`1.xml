@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWaiter`1&lt;C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWaiter(Of C)" />
+  <TypeSignature Language="F#" Value="type IWaiter&lt;'C&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Mark" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Mark" />
       <MemberSignature Language="VB.NET" Value="Public Property Mark As IWait(Of C)" />
+      <MemberSignature Language="F#" Value="member this.Mark : Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt; with get, set" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;'C&gt;.Mark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Wait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Wait" />
       <MemberSignature Language="VB.NET" Value="Public Property Wait As IWait(Of C)" />
+      <MemberSignature Language="F#" Value="member this.Wait : Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt; with get, set" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;'C&gt;.Wait" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

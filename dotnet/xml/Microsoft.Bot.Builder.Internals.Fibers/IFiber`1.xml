@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFiber`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFiber(Of C)&#xA;Implements IWaiter(Of C)" />
+  <TypeSignature Language="F#" Value="type IFiber&lt;'C&gt; = interface&#xA;    interface IWaiter&lt;'C&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Done() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Done" />
       <MemberSignature Language="VB.NET" Value="Public Sub Done ()" />
+      <MemberSignature Language="F#" Value="abstract member Done : unit -&gt; unit" Usage="iFiber.Done " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt;&gt; Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Frames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frames As IReadOnlyList(Of IFrame(Of C))" />
+      <MemberSignature Language="F#" Value="member this.Frames : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;'C&gt;&gt;" Usage="Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;'C&gt;.Frames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Push() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Push" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push ()" />
+      <MemberSignature Language="F#" Value="abstract member Push : unit -&gt; unit" Usage="iFiber.Push " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1&lt;!C&gt; Waits" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Waits" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Waits As IWaitFactory(Of C)" />
+      <MemberSignature Language="F#" Value="member this.Waits : Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;'C&gt;" Usage="Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;'C&gt;.Waits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
