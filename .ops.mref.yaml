@@ -10,16 +10,16 @@ steps:
     KeyVaultName: "APIDrop-DotNet-KeyVault"
 
 - task: PowerShell@1
-  inputs: |
+  inputs: 
     scriptType: "inlineScript"
     arguments: "-ToolingToken $(ToolingToken)"
-    inlineScript: "param (
-    [string]$ToolingToken = "NOT_VALID_TOKEN"
-)
+    inlineScript: | 
+      "param (
+      [string]$ToolingToken = "NOT_VALID_TOKEN"
+      )
 
-$fullUrl = ("https://" + $ToolingToken + "@apidrop.visualstudio.com/binaries/_git/mrefconfig")
-git clone $fullUrl -b tooling _buildtools -q"
-
+      $fullUrl = ("https://" + $ToolingToken + "@apidrop.visualstudio.com/binaries/_git/mrefconfig")
+      git clone $fullUrl -b tooling _buildtools -q"
 - task: PowerShell@1
   inputs:
     scriptName: "./_buildtools/scripts/mref-provision.ps1"
