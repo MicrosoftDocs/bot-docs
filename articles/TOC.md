@@ -14,6 +14,7 @@
 ## [How Bot Service works](bot-service-overview-readme.md)
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Develop with Bot Builder](bot-builder-overview-getstarted.md)
+## [Make bots smarter](bot-service-concept-intelligence.md)
 ## [Key scenarios for bots](bot-service-scenario-overview.md)
 ### [Commerce bot](bot-service-scenario-commerce.md)
 ### [Cortana Skill bot](bot-service-scenario-cortana-skill.md)
