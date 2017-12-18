@@ -69,7 +69,7 @@ The logic for using regular expressions and inspecting message contents can beco
 
 [node-js-bot-how-to]: bot-builder-nodejs-recognize-intent-luis.md
 
-[LUISAzureDocs]: https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home
+[LUISAzureDocs]: /azure/cognitive-services/LUIS/Home
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 

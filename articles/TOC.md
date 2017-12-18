@@ -18,7 +18,7 @@
 ### [Commerce bot](bot-service-scenario-commerce.md)
 ### [Cortana Skill bot](bot-service-scenario-cortana-skill.md)
 ### [Enterprise Productivity bot](bot-service-scenario-enterprise-productivity.md)
-### [Informational bot](bot-service-scenario-informational.md)
+### [Information bot](bot-service-scenario-informational.md)
 ### [Internet of Things bot](bot-service-scenario-internet-things.md)
 # How-To guides
 ## [Design](design/TOC.md)

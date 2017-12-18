@@ -119,7 +119,7 @@ This code example uses the `CreateConversation` method to create a group convers
 
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 - <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
 - <a href="/dotnet/api/microsoft.bot.connector.connectorclient" target="_blank">ConnectorClient class</a>
 

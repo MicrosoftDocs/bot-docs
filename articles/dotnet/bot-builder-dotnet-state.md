@@ -147,6 +147,6 @@ You can design your bot to account for this scenario, as shown in the following 
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](../bot-service-troubleshoot-general-problems.md)
-- <a href="https://docs.microsoft.com/en-us/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
 [Activity]: /dotnet/api/microsoft.bot.connector.activity
