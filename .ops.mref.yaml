@@ -6,7 +6,7 @@ queue:
 steps:
 - task: AzureKeyVault@1
   inputs:
-    ConnectedServiceName: "Azure"
+    ConnectedServiceName:  'APIDrop-Azure'
     KeyVaultName: "APIDrop-DotNet-KeyVault"
 
 - task: PowerShell@1
