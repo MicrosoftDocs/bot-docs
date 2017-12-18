@@ -14,12 +14,12 @@ steps:
     scriptType: "inlineScript"
     arguments: "-ToolingToken $(ToolingToken)"
     inlineScript: | 
-      "param (
+      'param (
       [string]$ToolingToken = "NOT_VALID_TOKEN"
       )
 
       $fullUrl = ("https://" + $ToolingToken + "@apidrop.visualstudio.com/binaries/_git/mrefconfig")
-      git clone $fullUrl -b tooling _buildtools -q"
+      git clone $fullUrl -b tooling _buildtools -q'
 - task: PowerShell@1
   inputs:
     scriptName: "./_buildtools/scripts/mref-provision.ps1"
