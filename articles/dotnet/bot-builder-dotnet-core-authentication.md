@@ -11,7 +11,7 @@ ms.date: 12/13/17
 
 # Authenticating activities using .NET Core
 
-If you choose to develop your bot using [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/index), you can use the [Bot Framework Connector](bot-builder-dotnet-connector.md) to send and receive [activity](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.activity) messages from your bot. To use the Connector service, you need to set up the proper authentication model for the framework version you are targeting.
+If you choose to develop your bot using [.NET Core](/dotnet/core/index), you can use the [Bot Framework Connector](bot-builder-dotnet-connector.md) to send and receive [activity](/dotnet/api/microsoft.bot.connector.activity) messages from your bot. To use the Connector service, you need to set up the proper authentication model for the framework version you are targeting.
 
 The Bot Framework Connector.AspNetCore supports the following versions of ASP.NET:
 * For .NET Core v1.1/AspNetCore1.x use **Microsoft.Bot.Connector.AspNetCore 1.x**
@@ -214,6 +214,7 @@ public MessagesController(IConfiguration configuration)
 {
     this.configuration = configuration;
 }
+
 
 [Authorize(Roles = "Bot")]
 [HttpPost]

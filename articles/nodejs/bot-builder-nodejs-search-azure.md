@@ -152,4 +152,4 @@ For two complete samples that show how to support Azure Search with bots using t
 * [Dialogs](bot-builder-nodejs-dialog-manage-conversation.md)
 
 [NodeUtil]: https://nodejs.org/api/util.html
-[search]: https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search
+[search]: /azure/search/search-what-is-azure-search

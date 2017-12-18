@@ -12,7 +12,7 @@ ms.date: 12/13/2017
 The Bot Framework includes comprehensive reference documentation for the Bot Builder SDK for .NET, the Bot Builder SDK for Node.js, and the Bot Framework REST APIs.
 
 ## Bot Builder SDK for .NET
-To learn about the structure of the Bot Builder SDK for .NET, see the [Bot Builder SDK for .NET reference documentation](https://docs.microsoft.com/en-us/dotnet/api/).
+To learn about the structure of the Bot Builder SDK for .NET, see the [Bot Builder SDK for .NET reference documentation](/dotnet/api/).
 
 You can also explore the Bot Builder SDK for .NET [source code](https://github.com/Microsoft/BotBuilder/tree/master/CSharp) on GitHub. 
 

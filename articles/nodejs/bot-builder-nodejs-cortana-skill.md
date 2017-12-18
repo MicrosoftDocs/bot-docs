@@ -416,7 +416,7 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 * [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
 
 
-[CortanaGetStarted]: https://docs.microsoft.com/en-us/cortana/getstarted
+[CortanaGetStarted]: /cortana/getstarted
 [BFPortal]: https://dev.botframework.com/
 
 

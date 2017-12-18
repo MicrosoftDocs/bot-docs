@@ -26,15 +26,15 @@ The [Enterprise Productivity bot](bot-service-scenario-enterprise-productivity.m
 
 The bot integrates with Office 365 to make it quicker and easier to create a meeting request with another person. In the process of doing so you could access additional services like Dynamics CRM. This sample provides the code necessary to integrate with Office 365 with authentication via Azure Active Directory. It provides mock entry points for external services as an exercise for the reader.
 
-## Informational bot scenario
-This [Informational bot](bot-service-scenario-informational.md) can answer questions defined in a knowledge set or FAQ using Cognitive Services QnA Maker and answer more open-ended questions Azure Search.
+## Information bot scenario
+This [Information bot](bot-service-scenario-informational.md) can answer questions defined in a knowledge set or FAQ using Cognitive Services QnA Maker and answer more open-ended questions Azure Search.
 
 Often information is buried in structured data stores like SQL Server that can be easily surfaced via search. Imagine looking up a customer's order status by simple conversational commands. Using Cognitive Services QnA Maker, the user is presented with a set of valid search options like, lookup a customer, review customer's most recent order, etc. With the QnA format defined the user can easily ask questions that are backed by Azure Search which can look up data stored in a SQL Database.
 
 ## IoT bot scenario
 This [Internet of Things (IoT) bot](bot-service-scenario-internet-things.md) bot makes it easy for you to control devices around your home, such as a Philips Hue light using interactive chat commands.
 
-Using this simple bot, you can control your Philips Hue lights in conjunction with the free If This Than That (IFTTT) service. As an IoT device, the Philips Hue can be controlled locally via their exposed API. However, this API is not exposed for general access from outside the local network. However, IFTTT is a "[Friend of Hue](http://www2.meethue.com/en-us/friends-of-hue/ifttt/)" and thus has exposed a number of control commands that you can issue such as turning lights on and off, changing the color, or the light intensity.
+Using this simple bot, you can control your Philips Hue lights in conjunction with the free If This Then That (IFTTT) service. As an IoT device, the Philips Hue can be controlled locally via their exposed API. However, this API is not exposed for general access from outside the local network. However, IFTTT is a "[Friend of Hue](http://www2.meethue.com/en-us/friends-of-hue/ifttt/)" and thus has exposed a number of control commands that you can issue such as turning lights on and off, changing the light color, or the light intensity.
 
 ## Next steps
 Now that you have an overview of the scenarios, dive deeper into each scenario.

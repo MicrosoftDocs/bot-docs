@@ -1,6 +1,6 @@
 ---
-title: Informational bot scenario | Microsoft Docs
-description: Explore the Informational bot scenario with the Bot Framework.
+title: Information bot scenario | Microsoft Docs
+description: Explore the Information bot scenario with the Bot Framework.
 author: BrianRandell
 ms.author: v-brra
 manager: kamrani
@@ -8,16 +8,16 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
-# Informational Bot Scenario
-This Informational Bot could answer questions defined in a knowledge set or FAQ using Cognitive Services QnA Maker and answer more open-ended questions by using Azure Search.
+# Information Bot Scenario
+This Information Bot could answer questions defined in a knowledge set or FAQ using Cognitive Services QnA Maker and answer more open-ended questions by using Azure Search.
 
 Often information is buried in structured data stores like SQL Server that can be easily surfaced via search. Imagine looking up a customer's order status by simple conversational commands. Using Cognitive Services QnA Maker, the user is presented with a set of valid search options like, lookup a customer, review a customer's most recent order, etc. With the QnA format defined the user can easily ask questions that are backed by Azure Search which can look up data stored in a SQL Database.
 
-![The Informational bot diagram](~/media/scenarios/bot-service-scenario-informational.png)
+![The Information bot diagram](~/media/scenarios/bot-service-scenario-informational-bot.png)
 
-Here is the logic flow of an Informational bot:
+Here is the logic flow of an Information bot:
 
-1. The employee starts the Informational bot.
+1. The employee starts the Information bot.
 2. Azure Active Directory validates the employee's identity.
 3. The employee can ask the bot what type of queries are supported.
 4. Cognitive Services returns a FAQ bot built with the QnA Maker.
@@ -31,7 +31,7 @@ The sample Bot, written in C#, runs in Microsoft Azure working with data indexed
 You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/bot/scenarios).
 
 ## Components you'll use
-The Informational Bot uses the following components:
+The Information Bot uses the following components:
 -   Azure AD for Authentication
 -   Cognitive Services: QnA Maker
 -   Azure Search
