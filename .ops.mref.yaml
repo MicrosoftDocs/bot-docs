@@ -13,7 +13,7 @@ steps:
   inputs: 
     scriptType: "inlineScript"
     arguments: "-ToolingToken $(ToolingToken)"
-    inlineScript: | 
+    inlineScript: >
       param (
       [string]$ToolingToken = "NOT_VALID_TOKEN"
       )
