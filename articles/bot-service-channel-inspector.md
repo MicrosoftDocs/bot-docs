@@ -128,7 +128,7 @@ The Channel Inspector currently allows you to preview the following features.
 * Media attachments in [Node.js][nodemedia] and [.NET][netmedia]
 * Suggested actions in [Node.js][nodebutton] and [.NET][netbutton]
 
-[inspector]: https://docs.botframework.com/en-us/bot-service-channel-inspector/channels/Skype/
+[inspector]: https://docs.botframework.com/en-us/channel-inspector/channels/Skype/
 
 [syntax]: https://daringfireball.net/projects/markdown/syntax
 
