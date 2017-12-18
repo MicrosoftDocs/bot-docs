@@ -10,7 +10,7 @@ steps:
     KeyVaultName: "APIDrop-DotNet-KeyVault"
 
 - task: PowerShell@1
-  inputs:
+  inputs: |
     scriptType: "inlineScript"
     arguments: "-ToolingToken $(ToolingToken)"
     inlineScript: "param (
