@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JObjectBotData extends Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1&lt;class Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JObjectBotData&#xA;Inherits BotDataBase(Of JObject)" />
+  <TypeSignature Language="F#" Value="type JObjectBotData = class&#xA;    inherit BotDataBase&lt;JObject&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IAddress botDataKey, class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt; botDataStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (botDataKey As IAddress, botDataStore As IBotDataStore(Of BotData))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData" Usage="new Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData (botDataKey, botDataStore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Newtonsoft.Json.Linq.JObject MakeData() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData.MakeData" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MakeData () As JObject" />
+      <MemberSignature Language="F#" Value="override this.MakeData : unit -&gt; Newtonsoft.Json.Linq.JObject" Usage="jObjectBotData.MakeData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag WrapData(class Newtonsoft.Json.Linq.JObject data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData.WrapData(Newtonsoft.Json.Linq.JObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function WrapData (data As JObject) As IBotDataBag" />
+      <MemberSignature Language="F#" Value="override this.WrapData : Newtonsoft.Json.Linq.JObject -&gt; Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="jObjectBotData.WrapData data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

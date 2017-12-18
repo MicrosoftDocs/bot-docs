@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ResourceResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceResponse" />
+  <TypeSignature Language="F#" Value="type ResourceResponse = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ResourceResponse.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ResourceResponse : string -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="new Microsoft.Bot.Connector.ResourceResponse id" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -62,10 +64,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ResourceResponse.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Connector.ResourceResponse.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

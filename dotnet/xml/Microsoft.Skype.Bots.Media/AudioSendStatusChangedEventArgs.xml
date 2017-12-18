@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioSendStatusChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioSendStatusChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type AudioSendStatusChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs.MediaSendStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaSendStatus As MediaSendStatus" />
+      <MemberSignature Language="F#" Value="member this.MediaSendStatus : Microsoft.Skype.Bots.Media.MediaSendStatus with get, set" Usage="Microsoft.Skype.Bots.Media.AudioSendStatusChangedEventArgs.MediaSendStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

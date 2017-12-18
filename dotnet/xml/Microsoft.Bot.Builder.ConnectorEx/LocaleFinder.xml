@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocaleFinder extends System.Object implements class Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocaleFinder&#xA;Implements ILocaleFinder" />
+  <TypeSignature Language="F#" Value="type LocaleFinder = class&#xA;    interface ILocaleFinder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="C#" Value="public LocaleFinder (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Builder.ConnectorEx.ResumptionContext resumptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ConversationReference conversationReference, class Microsoft.Bot.Builder.ConnectorEx.ResumptionContext resumptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder.#ctor(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Builder.ConnectorEx.ResumptionContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ConnectorEx.LocaleFinder : Microsoft.Bot.Connector.ConversationReference * Microsoft.Bot.Builder.ConnectorEx.ResumptionContext -&gt; Microsoft.Bot.Builder.ConnectorEx.LocaleFinder" Usage="new Microsoft.Bot.Builder.ConnectorEx.LocaleFinder (conversationReference, resumptionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -47,7 +49,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; FindLocale(class Microsoft.Bot.Connector.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLocale (activity As IActivity, token As CancellationToken) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member FindLocale : Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.FindLocale : Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="localeFinder.FindLocale (activity, token)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

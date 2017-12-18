@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CommandDialog`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandDialog(Of T)&#xA;Implements IDialog(Of T)" />
+  <TypeSignature Language="F#" Value="type CommandDialog&lt;'T&gt; = class&#xA;    interface IDialog&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task MessageReceived(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.MessageReceived(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MessageReceived (context As IDialogContext, message As IAwaitable(Of IMessageActivity)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member MessageReceived : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.MessageReceived : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="commandDialog.MessageReceived (context, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -76,6 +78,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Microsoft#Bot#Builder#Dialogs#IDialog&lt;T&gt;#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberSignature Language="VB.NET" Value="Function StartAsync (context As IDialogContext) As Task Implements IDialog(Of T).StartAsync" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -103,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.CommandDialog`1&lt;!T&gt; On&lt;U&gt;(class System.Text.RegularExpressions.Regex expression, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; handler, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!U&gt; resultHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.On``1(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function On(Of U) (expression As Regex, handler As ResumeAfter(Of IMessageActivity), Optional resultHandler As ResumeAfter(Of U) = null) As CommandDialog(Of T)" />
+      <MemberSignature Language="F#" Value="member this.On : System.Text.RegularExpressions.Regex * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'U&gt; -&gt; Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;" Usage="commandDialog.On (expression, handler, resultHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.CommandDialog`1&lt;!T&gt; OnDefault&lt;U&gt;(class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; handler, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!U&gt; resultHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.OnDefault``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function OnDefault(Of U) (handler As ResumeAfter(Of IMessageActivity), Optional resultHandler As ResumeAfter(Of U) = null) As CommandDialog(Of T)" />
+      <MemberSignature Language="F#" Value="member this.OnDefault : Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'U&gt; -&gt; Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;" Usage="commandDialog.OnDefault (handler, resultHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ResultHandler&lt;U&gt;(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!U&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.ResultHandler``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResultHandler(Of U) (context As IDialogContext, result As IAwaitable(Of U)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ResultHandler : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;'U&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.ResultHandler : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;'U&gt; -&gt; System.Threading.Tasks.Task" Usage="commandDialog.ResultHandler (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptRecognizeChoicesOptions extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptRecognizeChoicesOptions&#xA;Implements IPromptRecognizeChoicesOptions" />
+  <TypeSignature Language="F#" Value="type PromptRecognizeChoicesOptions = class&#xA;    interface IPromptRecognizeChoicesOptions&#xA;    interface IPromptRecognizeValuesOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,7 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AllowPartialMatches" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.AllowPartialMatches" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPartialMatches As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AllowPartialMatches : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.AllowPartialMatches" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.AllowPartialMatches</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -62,7 +67,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeAction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.ExcludeAction" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeAction As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeAction : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.ExcludeAction" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -83,7 +92,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.ExcludeValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeValue As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeValue : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.ExcludeValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -104,7 +117,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxTokenDistance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.MaxTokenDistance" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTokenDistance As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxTokenDistance : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions.MaxTokenDistance" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.MaxTokenDistance</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RealTimeMediaIncomingCallEvent extends Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class RealTimeMediaIncomingCallEvent&#xA;Inherits IncomingCallEvent" />
+  <TypeSignature Language="F#" Value="type RealTimeMediaIncomingCallEvent = class&#xA;    inherit IncomingCallEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="C#" Value="public RealTimeMediaIncomingCallEvent (Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation conversation, Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow resultingWorkflow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation conversation, class Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow resultingWorkflow) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation,Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation * Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow -&gt; Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent" Usage="new Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent (conversation, resultingWorkflow)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow RealTimeMediaWorkflow" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.RealTimeMediaWorkflow" />
       <MemberSignature Language="VB.NET" Value="Public Property RealTimeMediaWorkflow As RealTimeMediaWorkflow" />
+      <MemberSignature Language="F#" Value="member this.RealTimeMediaWorkflow : Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RealTimeMediaWorkflow with get, set" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.Events.RealTimeMediaIncomingCallEvent.RealTimeMediaWorkflow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

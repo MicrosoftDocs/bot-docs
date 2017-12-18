@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Fact extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Fact" />
   <TypeSignature Language="VB.NET" Value="Public Class Fact" />
+  <TypeSignature Language="F#" Value="type Fact = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,10 +46,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string key, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Fact.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional key As String = null, Optional value As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Fact : string * string -&gt; Microsoft.Bot.Connector.Fact" Usage="new Microsoft.Bot.Connector.Fact (key, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
@@ -68,10 +70,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Key" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Fact.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As String" />
+      <MemberSignature Language="F#" Value="member this.Key : string with get, set" Usage="Microsoft.Bot.Connector.Fact.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -94,10 +97,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Fact.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Connector.Fact.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

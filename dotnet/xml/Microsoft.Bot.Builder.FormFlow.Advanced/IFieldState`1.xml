@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldState`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldState(Of T)" />
+  <TypeSignature Language="F#" Value="type IFieldState&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Dependencies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Dependencies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dependencies As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;'T&gt;.Dependencies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.GetValue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (state As T) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : 'T -&gt; obj" Usage="iFieldState.GetValue state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;'T&gt;.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.IsUnknown(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnknown (state As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUnknown : 'T -&gt; bool" Usage="iFieldState.IsUnknown state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Limits([out] float64&amp; min, [out] float64&amp; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Limits (ByRef min As Double, ByRef max As Double) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Limits :  *  -&gt; bool" Usage="iFieldState.Limits (min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Optional" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Optional" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Optional As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Optional : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;'T&gt;.Optional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pattern As String" />
+      <MemberSignature Language="F#" Value="member this.Pattern : string" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;'T&gt;.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -190,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUnknown(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetUnknown(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUnknown (state As T)" />
+      <MemberSignature Language="F#" Value="abstract member SetUnknown : 'T -&gt; unit" Usage="iFieldState.SetUnknown state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -218,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(!T state, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.SetValue(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (state As T, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : 'T * obj -&gt; unit" Usage="iFieldState.SetValue (state, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -244,6 +254,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;'T&gt;.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

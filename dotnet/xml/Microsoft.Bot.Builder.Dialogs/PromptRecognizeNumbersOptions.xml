@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptRecognizeNumbersOptions extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptRecognizeNumbersOptions&#xA;Implements IPromptRecognizeNumbersOptions" />
+  <TypeSignature Language="F#" Value="type PromptRecognizeNumbersOptions = class&#xA;    interface IPromptRecognizeNumbersOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,7 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IntegerOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.IntegerOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IntegerOnly As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IntegerOnly : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.IntegerOnly" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.IntegerOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -62,7 +67,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxValue As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MaxValue : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MaxValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MaxValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -83,7 +92,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MinValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MinValue As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MinValue : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MinValue" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MinValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

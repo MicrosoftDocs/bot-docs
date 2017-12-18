@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioPlaybackSpeed extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudioPlaybackSpeed" />
+  <TypeSignature Language="F#" Value="type AudioPlaybackSpeed = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed Half = int32(50)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.Half" />
       <MemberSignature Language="VB.NET" Value="Half" />
+      <MemberSignature Language="F#" Value="Half = 50" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.Half" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed Normal = int32(100)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 100" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -56,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed OneAndAHalf = int32(150)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndAHalf" />
       <MemberSignature Language="VB.NET" Value="OneAndAHalf" />
+      <MemberSignature Language="F#" Value="OneAndAHalf = 150" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndAHalf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -74,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed OneAndAQuarter = int32(125)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndAQuarter" />
       <MemberSignature Language="VB.NET" Value="OneAndAQuarter" />
+      <MemberSignature Language="F#" Value="OneAndAQuarter = 125" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndAQuarter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -92,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed OneAndThreeQuarters = int32(175)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndThreeQuarters" />
       <MemberSignature Language="VB.NET" Value="OneAndThreeQuarters" />
+      <MemberSignature Language="F#" Value="OneAndThreeQuarters = 175" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.OneAndThreeQuarters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -110,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed ThreeQuarters = int32(75)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.ThreeQuarters" />
       <MemberSignature Language="VB.NET" Value="ThreeQuarters" />
+      <MemberSignature Language="F#" Value="ThreeQuarters = 75" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.ThreeQuarters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -128,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed TwoTimes = int32(200)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.TwoTimes" />
       <MemberSignature Language="VB.NET" Value="TwoTimes" />
+      <MemberSignature Language="F#" Value="TwoTimes = 200" Usage="Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed.TwoTimes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

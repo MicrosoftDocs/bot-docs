@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ChannelCapabilityEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx" />
   <TypeSignature Language="VB.NET" Value="Public Module ChannelCapabilityEx" />
+  <TypeSignature Language="F#" Value="type ChannelCapabilityEx = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSetInputHint(class Microsoft.Bot.Builder.Dialogs.IChannelCapability channelCapability, class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx.ShouldSetInputHint(Microsoft.Bot.Builder.Dialogs.IChannelCapability,Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ShouldSetInputHint (channelCapability As IChannelCapability, activity As IMessageActivity) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ShouldSetInputHint : Microsoft.Bot.Builder.Dialogs.IChannelCapability * Microsoft.Bot.Connector.IMessageActivity -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.ChannelCapabilityEx.ShouldSetInputHint (channelCapability, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

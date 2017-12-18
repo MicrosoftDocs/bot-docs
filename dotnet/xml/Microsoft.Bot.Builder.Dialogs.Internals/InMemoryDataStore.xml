@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InMemoryDataStore extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore" />
   <TypeSignature Language="VB.NET" Value="Public Class InMemoryDataStore&#xA;Implements IBotDataStore(Of BotData)" />
+  <TypeSignature Language="F#" Value="type InMemoryDataStore = class&#xA;    interface IBotDataStore&lt;BotData&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -42,6 +43,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.FlushAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -66,6 +70,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.LoadAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -97,6 +104,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.SaveAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.InMemoryDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

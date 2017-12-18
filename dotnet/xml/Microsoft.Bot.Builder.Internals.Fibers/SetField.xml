@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SetField extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.SetField" />
   <TypeSignature Language="VB.NET" Value="Public Class SetField" />
+  <TypeSignature Language="F#" Value="type SetField = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CheckNull&lt;class T&gt;(string name, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckNull(Of T As Class) (name As String, value As T)" />
+      <MemberSignature Language="F#" Value="static member CheckNull : string * 'T -&gt; unit (requires 'T : null)" Usage="Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void From&lt;T&gt;([out] !!T&amp; field, string name, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub From(Of T) (ByRef field As T, name As String, info As SerializationInfo)" />
+      <MemberSignature Language="F#" Value="static member From :  * string * System.Runtime.Serialization.SerializationInfo -&gt; unit" Usage="Microsoft.Bot.Builder.Internals.Fibers.SetField.From (field, name, info)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotNull&lt;class T&gt;([out] !!T&amp; field, string name, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull``1(``0@,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub NotNull(Of T As Class) (ByRef field As T, name As String, value As T)" />
+      <MemberSignature Language="F#" Value="static member NotNull :  * string * 'T -&gt; unit (requires 'T : null)" Usage="Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNull (field, name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotNullFrom&lt;class T&gt;([out] !!T&amp; field, string name, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub NotNullFrom(Of T As Class) (ByRef field As T, name As String, info As SerializationInfo)" />
+      <MemberSignature Language="F#" Value="static member NotNullFrom :  * string * System.Runtime.Serialization.SerializationInfo -&gt; unit (requires 'T : null)" Usage="Microsoft.Bot.Builder.Internals.Fibers.SetField.NotNullFrom (field, name, info)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

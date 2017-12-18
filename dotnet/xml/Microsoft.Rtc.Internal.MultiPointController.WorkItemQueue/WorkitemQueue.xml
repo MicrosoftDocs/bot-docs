@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkitemQueue extends Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.SerializationQueue`1&lt;class Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.IWorkitem&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkitemQueue&#xA;Inherits SerializationQueue(Of IWorkitem)" />
+  <TypeSignature Language="F#" Value="type WorkitemQueue = class&#xA;    inherit SerializationQueue&lt;IWorkitem&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool processAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (processAsync As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue : bool -&gt; Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue" Usage="new Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue processAsync" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Rtc.Internal.MultiPointController.WorkItemQueue.WorkitemQueue.ProcessItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function ProcessItems () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ProcessItems : unit -&gt; bool" Usage="workitemQueue.ProcessItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

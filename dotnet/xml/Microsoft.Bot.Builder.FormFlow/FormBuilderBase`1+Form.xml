@@ -47,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1&lt;!T&gt; Fields" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Fields" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Fields As IFields(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Fields : Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;'T (requires 'T : null)&gt;.Form.Fields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Localize(class System.Collections.IDictionaryEnumerator reader, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; missing, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; extra) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Localize (reader As IDictionaryEnumerator, ByRef missing As IEnumerable(Of String), ByRef extra As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="override this.Localize : System.Collections.IDictionaryEnumerator *  *  -&gt; unit" Usage="form.Localize (reader, missing, extra)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveResources(class System.Resources.IResourceWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.SaveResources(System.Resources.IResourceWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SaveResources (writer As IResourceWriter)" />
+      <MemberSignature Language="F#" Value="override this.SaveResources : System.Resources.IResourceWriter -&gt; unit" Usage="form.SaveResources writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

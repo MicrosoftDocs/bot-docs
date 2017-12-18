@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotAuthentication extends System.Web.Http.Filters.ActionFilterAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthentication" />
   <TypeSignature Language="VB.NET" Value="Public Class BotAuthentication&#xA;Inherits ActionFilterAttribute" />
+  <TypeSignature Language="F#" Value="type BotAuthentication = class&#xA;    inherit ActionFilterAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Web.Http.Filters.ActionFilterAttribute</BaseTypeName>
@@ -29,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,10 +43,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CredentialProviderType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType" />
       <MemberSignature Language="VB.NET" Value="Public Property CredentialProviderType As Type" />
+      <MemberSignature Language="F#" Value="member this.CredentialProviderType : Type with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.CredentialProviderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -63,10 +65,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableEmulatorTokens" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens" />
       <MemberSignature Language="VB.NET" Value="Public Property DisableEmulatorTokens As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisableEmulatorTokens : bool with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.DisableEmulatorTokens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -82,10 +85,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId" />
       <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppId As String" />
+      <MemberSignature Language="F#" Value="member this.MicrosoftAppId : string with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -105,10 +109,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppIdSettingName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName" />
       <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppIdSettingName As String" />
+      <MemberSignature Language="F#" Value="member this.MicrosoftAppIdSettingName : string with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppIdSettingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -128,10 +133,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppPassword" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppPassword As String" />
+      <MemberSignature Language="F#" Value="member this.MicrosoftAppPassword : string with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -151,10 +157,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MicrosoftAppPasswordSettingName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName" />
       <MemberSignature Language="VB.NET" Value="Public Property MicrosoftAppPasswordSettingName As String" />
+      <MemberSignature Language="F#" Value="member this.MicrosoftAppPasswordSettingName : string with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.MicrosoftAppPasswordSettingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -173,10 +180,11 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task OnActionExecutingAsync (System.Web.Http.Controllers.HttpActionContext actionContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task OnActionExecutingAsync(class System.Web.Http.Controllers.HttpActionContext actionContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthentication.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnActionExecutingAsync : System.Web.Http.Controllers.HttpActionContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botAuthentication.OnActionExecutingAsync (actionContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -203,10 +211,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string OpenIdConfigurationUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property OpenIdConfigurationUrl As String" />
+      <MemberSignature Language="F#" Value="member this.OpenIdConfigurationUrl : string with get, set" Usage="Microsoft.Bot.Connector.BotAuthentication.OpenIdConfigurationUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

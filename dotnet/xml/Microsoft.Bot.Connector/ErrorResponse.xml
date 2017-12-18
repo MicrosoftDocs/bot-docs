@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ErrorResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorResponse" />
+  <TypeSignature Language="F#" Value="type ErrorResponse = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,10 +41,11 @@
       <MemberSignature Language="C#" Value="public ErrorResponse (Microsoft.Bot.Connector.Error error = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Error error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorResponse.#ctor(Microsoft.Bot.Connector.Error)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ErrorResponse : Microsoft.Bot.Connector.Error -&gt; Microsoft.Bot.Connector.ErrorResponse" Usage="new Microsoft.Bot.Connector.ErrorResponse error" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="error" Type="Microsoft.Bot.Connector.Error" />
@@ -61,10 +63,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Error Error" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ErrorResponse.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As Error" />
+      <MemberSignature Language="F#" Value="member this.Error : Microsoft.Bot.Connector.Error with get, set" Usage="Microsoft.Bot.Connector.ErrorResponse.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Attachments extends System.Object implements class Microsoft.Bot.Connector.IAttachments, class Microsoft.Rest.IServiceOperations`1&lt;class Microsoft.Bot.Connector.ConnectorClient&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Attachments" />
   <TypeSignature Language="VB.NET" Value="Public Class Attachments&#xA;Implements IAttachments, IServiceOperations(Of ConnectorClient)" />
+  <TypeSignature Language="F#" Value="type Attachments = class&#xA;    interface IServiceOperations&lt;ConnectorClient&gt;&#xA;    interface IAttachments" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,10 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ConnectorClient client) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachments.#ctor(Microsoft.Bot.Connector.ConnectorClient)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (client As ConnectorClient)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Attachments : Microsoft.Bot.Connector.ConnectorClient -&gt; Microsoft.Bot.Connector.Attachments" Usage="new Microsoft.Bot.Connector.Attachments client" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
@@ -53,10 +55,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ConnectorClient Client" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Attachments.Client" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Client As ConnectorClient" />
+      <MemberSignature Language="F#" Value="member this.Client : Microsoft.Bot.Connector.ConnectorClient" Usage="Microsoft.Bot.Connector.Attachments.Client" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConnectorClient</ReturnType>
@@ -73,10 +76,14 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetAttachmentInfoWithHttpMessagesAsync (string attachmentId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt;&gt; GetAttachmentInfoWithHttpMessagesAsync(string attachmentId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachments.GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetAttachmentInfoWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;&#xA;override this.GetAttachmentInfoWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;" Usage="attachments.GetAttachmentInfoWithHttpMessagesAsync (attachmentId, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IAttachments.GetAttachmentInfoWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,10 +123,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetAttachmentStreamAsync(string attachmentId, string viewId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachments.GetAttachmentStreamAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttachmentStreamAsync (attachmentId As String, Optional viewId As String = &quot;original&quot;) As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="member this.GetAttachmentStreamAsync : string * string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="attachments.GetAttachmentStreamAsync (attachmentId, viewId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
@@ -143,10 +151,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAttachmentUri(string attachmentId, string viewId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachments.GetAttachmentUri(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttachmentUri (attachmentId As String, Optional viewId As String = &quot;original&quot;) As String" />
+      <MemberSignature Language="F#" Value="member this.GetAttachmentUri : string * string -&gt; string" Usage="attachments.GetAttachmentUri (attachmentId, viewId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -169,10 +178,14 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetAttachmentWithHttpMessagesAsync (string attachmentId, string viewId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt;&gt; GetAttachmentWithHttpMessagesAsync(string attachmentId, string viewId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachments.GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetAttachmentWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;&#xA;override this.GetAttachmentWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;" Usage="attachments.GetAttachmentWithHttpMessagesAsync (attachmentId, viewId, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IAttachments.GetAttachmentWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

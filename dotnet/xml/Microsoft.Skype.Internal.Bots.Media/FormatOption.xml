@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormatOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FormatOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormatOption" />
+  <TypeSignature Language="F#" Value="type FormatOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.FormatOption Plaintext = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.FormatOption.Plaintext" />
       <MemberSignature Language="VB.NET" Value="Plaintext" />
+      <MemberSignature Language="F#" Value="Plaintext = 0" Usage="Microsoft.Skype.Internal.Bots.Media.FormatOption.Plaintext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.FormatOption SimpleScrub = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.FormatOption.SimpleScrub" />
       <MemberSignature Language="VB.NET" Value="SimpleScrub" />
+      <MemberSignature Language="F#" Value="SimpleScrub = 1" Usage="Microsoft.Skype.Internal.Bots.Media.FormatOption.SimpleScrub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

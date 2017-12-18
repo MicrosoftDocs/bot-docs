@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FormDialog`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;, class Microsoft.Bot.Builder.FormFlow.IFormDialog`1&lt;!T&gt;, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormDialog`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormDialog(Of T)&#xA;Implements IDialog(Of T), IFormDialog(Of T), ISerializable" />
+  <TypeSignature Language="F#" Value="type FormDialog&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IFormDialog&lt;'T (requires 'T : null)&gt;&#xA;    interface IDialog&lt;'T (requires 'T : null)&gt;&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="C#" Value="public FormDialog (T state, Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;T&gt; buildForm = null, Microsoft.Bot.Builder.FormFlow.FormOptions options = Microsoft.Bot.Builder.FormFlow.FormOptions.None, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities = null, System.Globalization.CultureInfo cultureInfo = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T state, class Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1&lt;!T&gt; buildForm, valuetype Microsoft.Bot.Builder.FormFlow.FormOptions options, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog`1.#ctor(`0,Microsoft.Bot.Builder.FormFlow.BuildFormDelegate{`0},Microsoft.Bot.Builder.FormFlow.FormOptions,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Globalization.CultureInfo)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt; : 'T * Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.FormOptions * seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; * System.Globalization.CultureInfo -&gt; Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt; (state, buildForm, options, entities, cultureInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task MessageReceived(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; toBot) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog`1.MessageReceived(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
       <MemberSignature Language="VB.NET" Value="Public Function MessageReceived (context As IDialogContext, toBot As IAwaitable(Of IMessageActivity)) As Task" />
+      <MemberSignature Language="F#" Value="member this.MessageReceived : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="formDialog.MessageReceived (context, toBot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -102,6 +105,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog`1.Microsoft#Bot#Builder#Dialogs#IDialog&lt;T&gt;#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberSignature Language="VB.NET" Value="Function StartAsync (context As IDialogContext) As Task Implements IDialog(Of T).StartAsync" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -130,6 +136,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormDialog`1.Microsoft#Bot#Builder#FormFlow#IFormDialog&lt;T&gt;#Form" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Form As IForm(Of T) Implements IFormDialog(Of T).Form" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.FormFlow.IFormDialog`1.Form</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -149,6 +158,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog`1.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

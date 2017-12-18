@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Awaitable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Awaitable" />
   <TypeSignature Language="VB.NET" Value="Public Class Awaitable" />
+  <TypeSignature Language="F#" Value="type Awaitable = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!T&gt; FromItem&lt;T&gt;(!!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Awaitable.FromItem``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromItem(Of T) (item As T) As IAwaitable(Of T)" />
+      <MemberSignature Language="F#" Value="static member FromItem : 'T -&gt; Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Awaitable.FromItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; GenerateHeroCard(class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GenerateHeroCard (prompt As FormPrompt) As IList(Of Attachment)" />
+      <MemberSignature Language="F#" Value="static member GenerateHeroCard : Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt -&gt; System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCard prompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; GenerateHeroCards(class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GenerateHeroCards (prompt As FormPrompt) As IList(Of Attachment)" />
+      <MemberSignature Language="F#" Value="static member GenerateHeroCards : Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt -&gt; System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateHeroCards prompt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateMessages(class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt prompt, class Microsoft.Bot.Connector.IMessageActivity preamble, class Microsoft.Bot.Connector.IMessageActivity promptMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages(Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GenerateMessages (prompt As FormPrompt, preamble As IMessageActivity, promptMessage As IMessageActivity) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GenerateMessages : Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt * Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Connector.IMessageActivity -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GenerateMessages (prompt, preamble, promptMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="C#" Value="public static Type GetGenericElementType (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetGenericElementType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetGenericElementType : Type -&gt; Type" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.GetGenericElementType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="C#" Value="public static bool IsDouble (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDouble(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsDouble : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsDouble type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="C#" Value="public static bool IsGenericCollectionType (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGenericCollectionType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsGenericCollectionType : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericCollectionType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="C#" Value="public static bool IsGenericEnumerableType (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGenericEnumerableType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsGenericEnumerableType : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsGenericEnumerableType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="C#" Value="public static bool IsICollection (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsICollection(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsICollection : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsICollection type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="C#" Value="public static bool IsIEnumerable (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsIEnumerable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsIEnumerable : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIEnumerable type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -243,6 +253,7 @@
       <MemberSignature Language="C#" Value="public static bool IsIList (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsIList(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsIList : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIList type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -267,6 +278,7 @@
       <MemberSignature Language="C#" Value="public static bool IsIntegral (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsIntegral(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsIntegral : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsIntegral type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -291,6 +303,7 @@
       <MemberSignature Language="C#" Value="public static bool IsListCollectionType (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsListCollectionType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsListCollectionType : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsListCollectionType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -315,6 +328,7 @@
       <MemberSignature Language="C#" Value="public static bool IsNullable (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNullable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsNullable : Type -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Extensions.IsNullable type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RecognizePrimitive`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RecognizePrimitive(Of T)&#xA;Implements IRecognize(Of T)" />
+  <TypeSignature Language="F#" Value="type RecognizePrimitive&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IRecognize&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (field As IField(Of T))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;'T (requires 'T : null)&gt; field" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; _field" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1._field" />
       <MemberSignature Language="VB.NET" Value="Protected _field As IField(Of T) " />
+      <MemberSignature Language="F#" Value="val mutable _field : Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;'T (requires 'T : null)&gt;._field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -76,7 +79,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Help(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Help(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Help (state As T, defaultValue As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member Help : 'T * obj -&gt; string" Usage="recognizePrimitive.Help (state, defaultValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Help(`0,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -101,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.Generic.List`1&lt;object&gt; HelpArgs(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.HelpArgs(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function HelpArgs (state As T, defaultValue As Object) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.HelpArgs : 'T * obj -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="recognizePrimitive.HelpArgs (state, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -128,7 +136,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable Function Matches (input As IMessageActivity, Optional defaultValue As Object = null) As IEnumerable(Of TermMatch)" />
+      <MemberSignature Language="F#" Value="abstract member Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;&#xA;override this.Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;" Usage="recognizePrimitive.Matches (input, defaultValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -158,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Parse (input As String) As TermMatch" />
+      <MemberSignature Language="F#" Value="abstract member Parse : string -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch" Usage="recognizePrimitive.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -183,7 +196,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] PromptArgs() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.PromptArgs" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function PromptArgs () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member PromptArgs : unit -&gt; obj[]&#xA;override this.PromptArgs : unit -&gt; obj[]" Usage="recognizePrimitive.PromptArgs " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.PromptArgs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -203,7 +220,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ValidInputs(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValidInputs(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ValidInputs (value As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member ValidInputs : obj -&gt; seq&lt;string&gt;" Usage="recognizePrimitive.ValidInputs value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValidInputs(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -226,7 +247,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescription(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ValueDescription (value As Object) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="recognizePrimitive.ValueDescription value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValueDescription(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -249,7 +274,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.ValueDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ValueDescriptions () As IEnumerable(Of DescribeAttribute)" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescriptions : unit -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;&#xA;override this.ValueDescriptions : unit -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" Usage="recognizePrimitive.ValueDescriptions " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.ValueDescriptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -269,7 +298,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Values() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Values () As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member Values : unit -&gt; seq&lt;obj&gt;&#xA;override this.Values : unit -&gt; seq&lt;obj&gt;" Usage="recognizePrimitive.Values " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

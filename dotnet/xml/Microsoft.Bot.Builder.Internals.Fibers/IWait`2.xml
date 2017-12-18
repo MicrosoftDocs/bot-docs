@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWait`2&lt;C, + T&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IWait, class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWait`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWait(Of C, Out T)&#xA;Implements ICloneable, IWait(Of C)" />
+  <TypeSignature Language="F#" Value="type IWait&lt;'C, 'T&gt; = interface&#xA;    interface IWait&lt;'C&gt;&#xA;    interface IWait&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Wait(class Microsoft.Bot.Builder.Internals.Fibers.Rest`2&lt;!C, !T&gt; rest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IWait`2.Wait(Microsoft.Bot.Builder.Internals.Fibers.Rest{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Wait (rest As Rest(Of C, Out T))" />
+      <MemberSignature Language="F#" Value="abstract member Wait : Microsoft.Bot.Builder.Internals.Fibers.Rest&lt;'C, 'T&gt; -&gt; unit" Usage="iWait.Wait rest" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

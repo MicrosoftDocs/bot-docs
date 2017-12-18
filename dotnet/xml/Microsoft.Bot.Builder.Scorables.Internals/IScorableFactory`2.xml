@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScorableFactory`2&lt;- Item, + Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IScorableFactory(Of In Item, Out Score)" />
+  <TypeSignature Language="F#" Value="type IScorableFactory&lt;'Item, 'Score&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; ScorableFor(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MethodInfo&gt; methods) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2.ScorableFor(System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ScorableFor (methods As IEnumerable(Of MethodInfo)) As IScorable(Of In Item, Out Score)" />
+      <MemberSignature Language="F#" Value="abstract member ScorableFor : seq&lt;System.Reflection.MethodInfo&gt; -&gt; Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt;" Usage="iScorableFactory.ScorableFor methods" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

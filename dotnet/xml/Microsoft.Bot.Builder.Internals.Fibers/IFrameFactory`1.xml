@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFrameFactory`1&lt;C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFrameFactory(Of C)" />
+  <TypeSignature Language="F#" Value="type IFrameFactory&lt;'C&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt; Make() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make" />
       <MemberSignature Language="VB.NET" Value="Public Function Make () As IFrame(Of C)" />
+      <MemberSignature Language="F#" Value="abstract member Make : unit -&gt; Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;'C&gt;" Usage="iFrameFactory.Make " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

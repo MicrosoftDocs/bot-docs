@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotStateExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotStateExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module BotStateExtensions" />
+  <TypeSignature Language="F#" Value="type BotStateExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,11 +24,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] DeleteStateForUser(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser(Microsoft.Bot.Connector.IBotState,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteStateForUser (operations As IBotState, channelId As String, userId As String) As String()" />
+      <MemberSignature Language="F#" Value="static member DeleteStateForUser : Microsoft.Bot.Connector.IBotState * string * string -&gt; string[]" Usage="Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUser (operations, channelId, userId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -57,12 +64,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string[]&gt; DeleteStateForUserAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string[]&gt; DeleteStateForUserAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member DeleteStateForUserAsync : Microsoft.Bot.Connector.IBotState * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string[]&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync (operations, channelId, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;DeleteStateForUserAsync&gt;d__5))</AttributeName>
         </Attribute>
@@ -101,11 +112,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConversationData (operations As IBotState, channelId As String, conversationId As String) As BotData" />
+      <MemberSignature Language="F#" Value="static member GetConversationData : Microsoft.Bot.Connector.IBotState * string * string -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetConversationData (operations, channelId, conversationId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
       </ReturnValue>
@@ -135,12 +152,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync (operations, channelId, conversationId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;GetConversationDataAsync&gt;d__7))</AttributeName>
         </Attribute>
@@ -179,11 +200,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetPrivateConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateConversationData (operations As IBotState, channelId As String, conversationId As String, userId As String) As BotData" />
+      <MemberSignature Language="F#" Value="static member GetPrivateConversationData : Microsoft.Bot.Connector.IBotState * string * string * string -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationData (operations, channelId, conversationId, userId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
       </ReturnValue>
@@ -217,12 +244,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetPrivateConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetPrivateConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync (operations, channelId, conversationId, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;GetPrivateConversationDataAsync&gt;d__11))</AttributeName>
         </Attribute>
@@ -265,11 +296,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData GetUserData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserData (operations As IBotState, channelId As String, userId As String) As BotData" />
+      <MemberSignature Language="F#" Value="static member GetUserData : Microsoft.Bot.Connector.IBotState * string * string -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetUserData (operations, channelId, userId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
       </ReturnValue>
@@ -299,12 +336,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetUserDataAsync : Microsoft.Bot.Connector.IBotState * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync (operations, channelId, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;GetUserDataAsync&gt;d__1))</AttributeName>
         </Attribute>
@@ -342,11 +383,17 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberSignature Language="F#" Value="static member SetConversationData : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetConversationData (operations, channelId, conversationId, botData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
       </ReturnValue>
@@ -380,12 +427,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SetConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync (operations, channelId, conversationId, botData, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;SetConversationDataAsync&gt;d__9))</AttributeName>
         </Attribute>
@@ -427,11 +478,17 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetPrivateConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetPrivateConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberSignature Language="F#" Value="static member SetPrivateConversationData : Microsoft.Bot.Connector.IBotState * string * string * string * Microsoft.Bot.Connector.BotData -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData (operations, channelId, conversationId, userId, botData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
       </ReturnValue>
@@ -469,12 +526,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetPrivateConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SetPrivateConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * string * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync (operations, channelId, conversationId, userId, botData, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;SetPrivateConversationDataAsync&gt;d__13))</AttributeName>
         </Attribute>
@@ -520,11 +581,17 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetUserData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetUserData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberSignature Language="F#" Value="static member SetUserData : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetUserData (operations, channelId, userId, botData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.BotData</ReturnType>
       </ReturnValue>
@@ -558,12 +625,16 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SetUserDataAsync : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync (operations, channelId, userId, botData, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Bot State API is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.BotStateExtensions/&lt;SetUserDataAsync&gt;d__3))</AttributeName>
         </Attribute>

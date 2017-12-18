@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResumptionData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ResumptionData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResumptionData" />
+  <TypeSignature Language="F#" Value="type ResumptionData = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrustedServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.ResumptionData.IsTrustedServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTrustedServiceUrl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTrustedServiceUrl : bool with get, set" Usage="Microsoft.Bot.Builder.ConnectorEx.ResumptionData.IsTrustedServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ConnectorEx.ResumptionData.Locale" />
       <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.ConnectorEx.ResumptionData.Locale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

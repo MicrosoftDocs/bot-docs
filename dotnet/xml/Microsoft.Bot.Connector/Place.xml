@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Place extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Place" />
   <TypeSignature Language="VB.NET" Value="Public Class Place" />
+  <TypeSignature Language="F#" Value="type Place = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object address, object geo, object hasMap, string type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Place.#ctor(System.Object,System.Object,System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional address As Object = null, Optional geo As Object = null, Optional hasMap As Object = null, Optional type As String = null, Optional name As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Place : obj * obj * obj * string * string -&gt; Microsoft.Bot.Connector.Place" Usage="new Microsoft.Bot.Connector.Place (address, geo, hasMap, type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="address" Type="System.Object" />
@@ -70,10 +72,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Address" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As Object" />
+      <MemberSignature Language="F#" Value="member this.Address : obj with get, set" Usage="Microsoft.Bot.Connector.Place.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,10 +100,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Geo" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Geo" />
       <MemberSignature Language="VB.NET" Value="Public Property Geo As Object" />
+      <MemberSignature Language="F#" Value="member this.Geo : obj with get, set" Usage="Microsoft.Bot.Connector.Place.Geo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,10 +128,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance object HasMap" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.HasMap" />
       <MemberSignature Language="VB.NET" Value="Public Property HasMap As Object" />
+      <MemberSignature Language="F#" Value="member this.HasMap : obj with get, set" Usage="Microsoft.Bot.Connector.Place.HasMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,10 +156,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Connector.Place.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -177,10 +183,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Place.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Connector.Place.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

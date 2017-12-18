@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JwtTokenExtractor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtTokenExtractor" />
   <TypeSignature Language="VB.NET" Value="Public Class JwtTokenExtractor" />
+  <TypeSignature Language="F#" Value="type JwtTokenExtractor = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,16 +18,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JwtTokenExtractor (System.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, string[] allowedSigningAlgorithms, Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator validator);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, string[] allowedSigningAlgorithms, class Microsoft.Bot.Connector.JwtTokenExtractor/EndorsementsValidator validator) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.#ctor(System.IdentityModel.Tokens.TokenValidationParameters,System.String,System.String[],Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator)" />
+      <MemberSignature Language="C#" Value="public JwtTokenExtractor (Microsoft.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, string[] allowedSigningAlgorithms, Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator validator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, string[] allowedSigningAlgorithms, class Microsoft.Bot.Connector.JwtTokenExtractor/EndorsementsValidator validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.#ctor(Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String,System.String[],Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.JwtTokenExtractor : Microsoft.IdentityModel.Tokens.TokenValidationParameters * string * string[] * Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator -&gt; Microsoft.Bot.Connector.JwtTokenExtractor" Usage="new Microsoft.Bot.Connector.JwtTokenExtractor (tokenValidationParameters, metadataUrl, allowedSigningAlgorithms, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="tokenValidationParameters" Type="System.IdentityModel.Tokens.TokenValidationParameters" />
+        <Parameter Name="tokenValidationParameters" Type="Microsoft.IdentityModel.Tokens.TokenValidationParameters" />
         <Parameter Name="metadataUrl" Type="System.String" />
         <Parameter Name="allowedSigningAlgorithms" Type="System.String[]" />
         <Parameter Name="validator" Type="Microsoft.Bot.Connector.JwtTokenExtractor+EndorsementsValidator" />
@@ -45,10 +47,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAppIdFromClaimsIdentity(class System.Security.Claims.ClaimsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetAppIdFromClaimsIdentity(System.Security.Claims.ClaimsIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAppIdFromClaimsIdentity (identity As ClaimsIdentity) As String" />
+      <MemberSignature Language="F#" Value="member this.GetAppIdFromClaimsIdentity : System.Security.Claims.ClaimsIdentity -&gt; string" Usage="jwtTokenExtractor.GetAppIdFromClaimsIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -68,10 +71,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAppIdFromEmulatorClaimsIdentity(class System.Security.Claims.ClaimsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetAppIdFromEmulatorClaimsIdentity(System.Security.Claims.ClaimsIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAppIdFromEmulatorClaimsIdentity (identity As ClaimsIdentity) As String" />
+      <MemberSignature Language="F#" Value="member this.GetAppIdFromEmulatorClaimsIdentity : System.Security.Claims.ClaimsIdentity -&gt; string" Usage="jwtTokenExtractor.GetAppIdFromEmulatorClaimsIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -91,10 +95,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync(class System.Net.Http.HttpRequestMessage request) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.Net.Http.HttpRequestMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIdentityAsync (request As HttpRequestMessage) As Task(Of ClaimsIdentity)" />
+      <MemberSignature Language="F#" Value="member this.GetIdentityAsync : System.Net.Http.HttpRequestMessage -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="jwtTokenExtractor.GetIdentityAsync request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,10 +124,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync(string authorizationHeader) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIdentityAsync (authorizationHeader As String) As Task(Of ClaimsIdentity)" />
+      <MemberSignature Language="F#" Value="member this.GetIdentityAsync : string -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="jwtTokenExtractor.GetIdentityAsync authorizationHeader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,10 +153,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync(string scheme, string parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.JwtTokenExtractor.GetIdentityAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIdentityAsync (scheme As String, parameter As String) As Task(Of ClaimsIdentity)" />
+      <MemberSignature Language="F#" Value="member this.GetIdentityAsync : string * string -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="jwtTokenExtractor.GetIdentityAsync (scheme, parameter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

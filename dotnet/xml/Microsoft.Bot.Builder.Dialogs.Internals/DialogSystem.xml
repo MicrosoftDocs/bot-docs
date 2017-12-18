@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogSystem extends System.Object implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogSystem&#xA;Implements IDialogSystem, IEventProducer(Of IActivity)" />
+  <TypeSignature Language="F#" Value="type DialogSystem = class&#xA;    interface IDialogSystem&#xA;    interface IDialogTasks&#xA;    interface IEventLoop&#xA;    interface IEventProducer&lt;IActivity&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks tasks, class Microsoft.Bot.Builder.Base.IEventLoop loop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt; queue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks,Microsoft.Bot.Builder.Base.IEventLoop,Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tasks As IDialogTasks, loop As IEventLoop, queue As IEventProducer(Of IActivity))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem : Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks * Microsoft.Bot.Builder.Base.IEventLoop * Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem" Usage="new Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem (tasks, loop, queue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -52,6 +54,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem.Microsoft#Bot#Builder#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function PollAsync (token As CancellationToken) As Task Implements IEventLoop.PollAsync" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Base.IEventLoop.PollAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -80,6 +85,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem.Microsoft#Bot#Builder#Base#IEventProducer&lt;Microsoft#Bot#Connector#IActivity&gt;#Post(Microsoft.Bot.Connector.IActivity,System.Action)" />
       <MemberSignature Language="VB.NET" Value="Sub Post (activity As IActivity, onPull As Action) Implements IEventProducer(Of IActivity).Post" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Base.IEventProducer`1.Post(`0,System.Action)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -104,6 +112,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#CreateDialogTask" />
       <MemberSignature Language="VB.NET" Value="Function CreateDialogTask () As IDialogTask Implements IDialogTasks.CreateDialogTask" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.CreateDialogTask</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -124,6 +135,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#DialogTasks" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DialogTasks As IReadOnlyList(Of IDialogTask) Implements IDialogTasks.DialogTasks" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

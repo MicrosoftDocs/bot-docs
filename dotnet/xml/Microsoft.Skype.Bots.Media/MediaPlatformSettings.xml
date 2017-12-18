@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaPlatformSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaPlatformSettings" />
+  <TypeSignature Language="F#" Value="type MediaPlatformSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.ApplicationId" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationId As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationId : string with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformSettings.ApplicationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings MediaPlatformInstanceSettings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.MediaPlatformInstanceSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaPlatformInstanceSettings As MediaPlatformInstanceSettings" />
+      <MemberSignature Language="F#" Value="member this.MediaPlatformInstanceSettings : Microsoft.Skype.Bots.Media.MediaPlatformInstanceSettings with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformSettings.MediaPlatformInstanceSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string RegionAffinity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.MediaPlatformSettings.RegionAffinity" />
       <MemberSignature Language="VB.NET" Value="Public Property RegionAffinity As String" />
+      <MemberSignature Language="F#" Value="member this.RegionAffinity : string with get, set" Usage="Microsoft.Skype.Bots.Media.MediaPlatformSettings.RegionAffinity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

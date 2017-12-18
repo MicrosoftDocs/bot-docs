@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module ActivityExtensions" />
+  <TypeSignature Language="F#" Value="type ActivityExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetActivityType(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetActivityType(Microsoft.Bot.Connector.IActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityType (activity As IActivity) As String" />
+      <MemberSignature Language="F#" Value="static member GetActivityType : Microsoft.Bot.Connector.IActivity -&gt; string" Usage="Microsoft.Bot.Connector.ActivityExtensions.GetActivityType activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -46,10 +48,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TypeT GetChannelData&lt;TypeT&gt;(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetChannelData``1(Microsoft.Bot.Connector.IActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetChannelData(Of TypeT) (activity As IActivity) As TypeT" />
+      <MemberSignature Language="F#" Value="static member GetChannelData : Microsoft.Bot.Connector.IActivity -&gt; 'ypeT" Usage="Microsoft.Bot.Connector.ActivityExtensions.GetChannelData activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -75,11 +78,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.IActivity activity, class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStateClient (activity As IActivity, credentials As MicrosoftAppCredentials, Optional serviceUrl As String = null, ParamArray handlers As DelegatingHandler()) As StateClient" />
+      <MemberSignature Language="F#" Value="static member GetStateClient : Microsoft.Bot.Connector.IActivity * Microsoft.Bot.Connector.MicrosoftAppCredentials * string * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Bot.Connector.StateClient" Usage="Microsoft.Bot.Connector.ActivityExtensions.GetStateClient (activity, credentials, serviceUrl, handlers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated: This method will only get the default state client, if you have implemented a custom state client it will not retrieve it")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.StateClient</ReturnType>
       </ReturnValue>
@@ -112,10 +121,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.IActivity activity, string microsoftAppId, string microsoftAppPassword, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStateClient (activity As IActivity, Optional microsoftAppId As String = null, Optional microsoftAppPassword As String = null, Optional serviceUrl As String = null, ParamArray handlers As DelegatingHandler()) As StateClient" />
+      <MemberSignature Language="F#" Value="static member GetStateClient : Microsoft.Bot.Connector.IActivity * string * string * string * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Bot.Connector.StateClient" Usage="Microsoft.Bot.Connector.ActivityExtensions.GetStateClient (activity, microsoftAppId, microsoftAppPassword, serviceUrl, handlers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.StateClient</ReturnType>
@@ -151,10 +161,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MentionsId(class Microsoft.Bot.Connector.IMessageActivity activity, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsId(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MentionsId (activity As IMessageActivity, id As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member MentionsId : Microsoft.Bot.Connector.IMessageActivity * string -&gt; bool" Usage="Microsoft.Bot.Connector.ActivityExtensions.MentionsId (activity, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -178,10 +189,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MentionsRecipient(class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.MentionsRecipient(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MentionsRecipient (activity As IMessageActivity) As Boolean" />
+      <MemberSignature Language="F#" Value="static member MentionsRecipient : Microsoft.Bot.Connector.IMessageActivity -&gt; bool" Usage="Microsoft.Bot.Connector.ActivityExtensions.MentionsRecipient activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -203,10 +215,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string RemoveMentionText(class Microsoft.Bot.Connector.IMessageActivity activity, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveMentionText(Microsoft.Bot.Connector.IMessageActivity,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RemoveMentionText (activity As IMessageActivity, id As String) As String" />
+      <MemberSignature Language="F#" Value="static member RemoveMentionText : Microsoft.Bot.Connector.IMessageActivity * string -&gt; string" Usage="Microsoft.Bot.Connector.ActivityExtensions.RemoveMentionText (activity, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -230,10 +243,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string RemoveRecipientMention(class Microsoft.Bot.Connector.IMessageActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.RemoveRecipientMention(Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RemoveRecipientMention (activity As IMessageActivity) As String" />
+      <MemberSignature Language="F#" Value="static member RemoveRecipientMention : Microsoft.Bot.Connector.IMessageActivity -&gt; string" Usage="Microsoft.Bot.Connector.ActivityExtensions.RemoveRecipientMention activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -255,10 +269,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetChannelData&lt;TypeT&gt;(class Microsoft.Bot.Connector.IActivity activity, [out] !!TypeT&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData``1(Microsoft.Bot.Connector.IActivity,``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryGetChannelData(Of TypeT) (activity As IActivity, ByRef instance As TypeT) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGetChannelData : Microsoft.Bot.Connector.IActivity *  -&gt; bool" Usage="Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData (activity, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

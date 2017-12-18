@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBinding" />
+  <TypeSignature Language="F#" Value="type IBinding = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task InvokeAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IBinding.InvokeAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeAsync (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member InvokeAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iBinding.InvokeAsync token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase Method" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As MethodBase" />
+      <MemberSignature Language="F#" Value="member this.Method : System.Reflection.MethodBase" Usage="Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

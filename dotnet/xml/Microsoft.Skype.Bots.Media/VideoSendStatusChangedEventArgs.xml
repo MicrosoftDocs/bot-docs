@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoSendStatusChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class VideoSendStatusChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type VideoSendStatusChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.MediaSendStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaSendStatus As MediaSendStatus" />
+      <MemberSignature Language="F#" Value="member this.MediaSendStatus : Microsoft.Skype.Bots.Media.MediaSendStatus with get, set" Usage="Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.MediaSendStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat[] PreferredEncodedVideoSourceFormats" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredEncodedVideoSourceFormats" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredEncodedVideoSourceFormats As VideoFormat()" />
+      <MemberSignature Language="F#" Value="member this.PreferredEncodedVideoSourceFormats : Microsoft.Skype.Bots.Media.VideoFormat[] with get, set" Usage="Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredEncodedVideoSourceFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat PreferredVideoSourceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredVideoSourceFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredVideoSourceFormat As VideoFormat" />
+      <MemberSignature Language="F#" Value="member this.PreferredVideoSourceFormat : Microsoft.Skype.Bots.Media.VideoFormat with get, set" Usage="Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.PreferredVideoSourceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 SocketId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.SocketId" />
       <MemberSignature Language="VB.NET" Value="Public Property SocketId As Integer" />
+      <MemberSignature Language="F#" Value="member this.SocketId : int with get, set" Usage="Microsoft.Skype.Bots.Media.VideoSendStatusChangedEventArgs.SocketId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

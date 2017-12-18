@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentRequest" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentRequest" />
+  <TypeSignature Language="F#" Value="type PaymentRequest = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentMethodData&gt; methodData, class Microsoft.Bot.Connector.Payments.PaymentDetails details, class Microsoft.Bot.Connector.Payments.PaymentOptions options, string expires) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentRequest.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.Payments.PaymentMethodData},Microsoft.Bot.Connector.Payments.PaymentDetails,Microsoft.Bot.Connector.Payments.PaymentOptions,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional methodData As IList(Of PaymentMethodData) = null, Optional details As PaymentDetails = null, Optional options As PaymentOptions = null, Optional expires As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentRequest : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentMethodData&gt; * Microsoft.Bot.Connector.Payments.PaymentDetails * Microsoft.Bot.Connector.Payments.PaymentOptions * string -&gt; Microsoft.Bot.Connector.Payments.PaymentRequest" Usage="new Microsoft.Bot.Connector.Payments.PaymentRequest (id, methodData, details, options, expires)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -70,10 +72,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentDetails Details" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Details" />
       <MemberSignature Language="VB.NET" Value="Public Property Details As PaymentDetails" />
+      <MemberSignature Language="F#" Value="member this.Details : Microsoft.Bot.Connector.Payments.PaymentDetails with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.Details" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -96,10 +99,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Expires" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Expires" />
       <MemberSignature Language="VB.NET" Value="Public Property Expires As String" />
+      <MemberSignature Language="F#" Value="member this.Expires : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.Expires" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,10 +127,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -149,10 +154,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Payments.PaymentMethodData&gt; MethodData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequest.MethodData" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodData As IList(Of PaymentMethodData)" />
+      <MemberSignature Language="F#" Value="member this.MethodData : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Payments.PaymentMethodData&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.MethodData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,10 +181,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Payments.PaymentOptions Options" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentRequest.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As PaymentOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : Microsoft.Bot.Connector.Payments.PaymentOptions with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,10 +209,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string PaymentActionType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentRequest.PaymentActionType" />
       <MemberSignature Language="VB.NET" Value="Public Const PaymentActionType As String " />
+      <MemberSignature Language="F#" Value="val mutable PaymentActionType : string" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.PaymentActionType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -222,10 +230,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string PaymentContentType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentRequest.PaymentContentType" />
       <MemberSignature Language="VB.NET" Value="Public Const PaymentContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable PaymentContentType : string" Usage="Microsoft.Bot.Connector.Payments.PaymentRequest.PaymentContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

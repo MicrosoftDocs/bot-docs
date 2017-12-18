@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPrompt`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPrompt(Of T)" />
+  <TypeSignature Language="F#" Value="type IPrompt&lt;'T (requires 'T : null)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute Annotation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Annotation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotation As TemplateBaseAttribute" />
+      <MemberSignature Language="F#" Value="member this.Annotation : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;'T (requires 'T : null)&gt;.Annotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt(!T state, class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Prompt(`0,Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0},System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Prompt (state As T, field As IField(Of T), ParamArray args As Object()) As FormPrompt" />
+      <MemberSignature Language="F#" Value="abstract member Prompt : 'T * Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; * obj[] -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" Usage="iPrompt.Prompt (state, field, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; Recognizer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Recognizer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recognizer As IRecognize(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Recognizer : Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;'T (requires 'T : null)&gt;.Recognizer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

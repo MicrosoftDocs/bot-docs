@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Language extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Language" />
   <TypeSignature Language="VB.NET" Value="Public Class Language" />
+  <TypeSignature Language="F#" Value="type Language = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ANormalization(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ANormalization (input As String) As String" />
+      <MemberSignature Language="F#" Value="static member ANormalization : string -&gt; string" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.ANormalization input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ArticleOrNone(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ArticleOrNone (word As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ArticleOrNone : string -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.ArticleOrNone word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.HashSet`1&lt;string&gt; Articles" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles" />
       <MemberSignature Language="VB.NET" Value="Public Shared Articles As HashSet(Of String) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Articles : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildList(class System.Collections.Generic.IEnumerable`1&lt;string&gt; values, string separator, string lastSeparator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BuildList (values As IEnumerable(Of String), separator As String, lastSeparator As String) As String" />
+      <MemberSignature Language="F#" Value="static member BuildList : seq&lt;string&gt; * string * string -&gt; string" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.BuildList (values, separator, lastSeparator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CamelCase(string original) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CamelCase (original As String) As String" />
+      <MemberSignature Language="F#" Value="static member CamelCase : string -&gt; string" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.CamelCase original" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GenerateTerms(string phrase, int32 maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateTerms (phrase As String, maxLength As Integer) As String()" />
+      <MemberSignature Language="F#" Value="static member GenerateTerms : string * int -&gt; string[]" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms (phrase, maxLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NoiseResponse(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NoiseResponse (word As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member NoiseResponse : string -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseResponse word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NoiseWord(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NoiseWord (word As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member NoiseWord : string -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NoiseWord word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; NonNoiseWords(class System.Collections.Generic.IEnumerable`1&lt;string&gt; words) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NonNoiseWords (words As IEnumerable(Of String)) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="static member NonNoiseWords : seq&lt;string&gt; -&gt; seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonNoiseWords words" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -271,6 +281,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NonWord(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NonWord (word As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member NonWord : string -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Normalize(string value, valuetype Microsoft.Bot.Builder.FormFlow.CaseNormalization normalization) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize(System.String,Microsoft.Bot.Builder.FormFlow.CaseNormalization)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Normalize (value As String, normalization As CaseNormalization) As String" />
+      <MemberSignature Language="F#" Value="static member Normalize : string * Microsoft.Bot.Builder.FormFlow.CaseNormalization -&gt; string" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.Normalize (value, normalization)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -321,6 +333,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; OptionalPlurals(class System.Collections.Generic.IEnumerable`1&lt;string&gt; words) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function OptionalPlurals (words As IEnumerable(Of String)) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="static member OptionalPlurals : seq&lt;string&gt; -&gt; seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.OptionalPlurals words" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -351,6 +364,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.HashSet`1&lt;string&gt; StopWords" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />
       <MemberSignature Language="VB.NET" Value="Public Shared StopWords As HashSet(Of String) " />
+      <MemberSignature Language="F#" Value=" staticval mutable StopWords : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -371,6 +385,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; WordBreak(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function WordBreak (input As String) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="static member WordBreak : string -&gt; seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreak input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -401,6 +416,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static class System.Text.RegularExpressions.Regex WordBreaker" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker" />
       <MemberSignature Language="VB.NET" Value="Public Shared WordBreaker As Regex " />
+      <MemberSignature Language="F#" Value=" staticval mutable WordBreaker : System.Text.RegularExpressions.Regex" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.WordBreaker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

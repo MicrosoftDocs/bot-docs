@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContactRelationUpdateActionTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ContactRelationUpdateActionTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class ContactRelationUpdateActionTypes" />
+  <TypeSignature Language="F#" Value="type ContactRelationUpdateActionTypes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Add" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Add" />
       <MemberSignature Language="VB.NET" Value="Public Const Add As String " />
+      <MemberSignature Language="F#" Value="val mutable Add : string" Usage="Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -41,10 +43,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Remove" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Const Remove As String " />
+      <MemberSignature Language="F#" Value="val mutable Remove : string" Usage="Microsoft.Bot.Connector.ContactRelationUpdateActionTypes.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

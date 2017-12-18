@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotAuthenticator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BotAuthenticator" />
+  <TypeSignature Language="F#" Value="type BotAuthenticator = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, Optional validator As BotAuthenticator.EndorsementsValidator = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotAuthenticator : Microsoft.Bot.Connector.ICredentialProvider * Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator -&gt; Microsoft.Bot.Connector.BotAuthenticator" Usage="new Microsoft.Bot.Connector.BotAuthenticator (credentialProvider, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.ICredentialProvider" />
@@ -42,10 +44,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string microsoftAppId, string microsoftAppPassword, class Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (microsoftAppId As String, microsoftAppPassword As String, Optional validator As BotAuthenticator.EndorsementsValidator = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotAuthenticator : string * string * Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator -&gt; Microsoft.Bot.Connector.BotAuthenticator" Usage="new Microsoft.Bot.Connector.BotAuthenticator (microsoftAppId, microsoftAppPassword, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="microsoftAppId" Type="System.String" />
@@ -70,10 +73,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ICredentialProvider credentialProvider, string openIdConfigurationUrl, bool disableEmulatorTokens, class Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, openIdConfigurationUrl As String, disableEmulatorTokens As Boolean, Optional validator As BotAuthenticator.EndorsementsValidator = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotAuthenticator : Microsoft.Bot.Connector.ICredentialProvider * string * bool * Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator -&gt; Microsoft.Bot.Connector.BotAuthenticator" Usage="new Microsoft.Bot.Connector.BotAuthenticator (credentialProvider, openIdConfigurationUrl, disableEmulatorTokens, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.ICredentialProvider" />
@@ -95,10 +99,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.IdentityToken&gt; AuthenticateAsync(class System.Net.Http.HttpRequestMessage request, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; activities, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.AuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function AuthenticateAsync (request As HttpRequestMessage, activities As IEnumerable(Of IActivity), token As CancellationToken) As Task(Of IdentityToken)" />
+      <MemberSignature Language="F#" Value="member this.AuthenticateAsync : System.Net.Http.HttpRequestMessage * seq&lt;Microsoft.Bot.Connector.IActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IdentityToken&gt;" Usage="botAuthenticator.AuthenticateAsync (request, activities, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -129,10 +134,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpResponseMessage GenerateUnauthorizedResponse(class System.Net.Http.HttpRequestMessage request, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse(System.Net.Http.HttpRequestMessage,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateUnauthorizedResponse (request As HttpRequestMessage, Optional reason As String = &quot;&quot;) As HttpResponseMessage" />
+      <MemberSignature Language="F#" Value="static member GenerateUnauthorizedResponse : System.Net.Http.HttpRequestMessage * string -&gt; System.Net.Http.HttpResponseMessage" Usage="Microsoft.Bot.Connector.BotAuthenticator.GenerateUnauthorizedResponse (request, reason)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpResponseMessage</ReturnType>
@@ -156,10 +162,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryAuthenticateAsync(class System.Net.Http.HttpRequestMessage request, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; activities, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAuthenticateAsync (request As HttpRequestMessage, activities As IEnumerable(Of IActivity), token As CancellationToken) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.TryAuthenticateAsync : System.Net.Http.HttpRequestMessage * seq&lt;Microsoft.Bot.Connector.IActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="botAuthenticator.TryAuthenticateAsync (request, activities, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -190,10 +197,11 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IdentityToken&gt; TryAuthenticateAsync (string scheme, string token, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.IdentityToken&gt; TryAuthenticateAsync(string scheme, string token, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.TryAuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.TryAuthenticateAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IdentityToken&gt;" Usage="botAuthenticator.TryAuthenticateAsync (scheme, token, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

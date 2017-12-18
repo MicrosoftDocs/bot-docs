@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.LuisResult" />
   <TypeSignature Language="VB.NET" Value="Public Class LuisResult" />
+  <TypeSignature Language="F#" Value="type LuisResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation topScoringIntent, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; intents, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; compositeEntities, class Microsoft.Bot.Builder.Luis.Models.DialogResponse dialog, string alteredQuery) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.LuisResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.IntentRecommendation},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.CompositeEntity},Microsoft.Bot.Builder.Luis.Models.DialogResponse,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As String, entities As IList(Of EntityRecommendation), Optional topScoringIntent As IntentRecommendation = null, Optional intents As IList(Of IntentRecommendation) = null, Optional compositeEntities As IList(Of CompositeEntity) = null, Optional dialog As DialogResponse = null, Optional alteredQuery As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.Models.LuisResult : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; * Microsoft.Bot.Builder.Luis.Models.IntentRecommendation * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; * Microsoft.Bot.Builder.Luis.Models.DialogResponse * string -&gt; Microsoft.Bot.Builder.Luis.Models.LuisResult" Usage="new Microsoft.Bot.Builder.Luis.Models.LuisResult (query, entities, topScoringIntent, intents, compositeEntities, dialog, alteredQuery)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AlteredQuery" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.AlteredQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property AlteredQuery As String" />
+      <MemberSignature Language="F#" Value="member this.AlteredQuery : string with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.AlteredQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; CompositeEntities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.CompositeEntities" />
       <MemberSignature Language="VB.NET" Value="Public Property CompositeEntities As IList(Of CompositeEntity)" />
+      <MemberSignature Language="F#" Value="member this.CompositeEntities : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.CompositeEntities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.DialogResponse Dialog" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Dialog" />
       <MemberSignature Language="VB.NET" Value="Public Property Dialog As DialogResponse" />
+      <MemberSignature Language="F#" Value="member this.Dialog : Microsoft.Bot.Builder.Luis.Models.DialogResponse with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.Dialog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; Entities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Entities" />
       <MemberSignature Language="VB.NET" Value="Public Property Entities As IList(Of EntityRecommendation)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.Entities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; Intents" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Intents" />
       <MemberSignature Language="VB.NET" Value="Public Property Intents As IList(Of IntentRecommendation)" />
+      <MemberSignature Language="F#" Value="member this.Intents : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.Intents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Query" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As String" />
+      <MemberSignature Language="F#" Value="member this.Query : string with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation TopScoringIntent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.TopScoringIntent" />
       <MemberSignature Language="VB.NET" Value="Public Property TopScoringIntent As IntentRecommendation" />
+      <MemberSignature Language="F#" Value="member this.TopScoringIntent : Microsoft.Bot.Builder.Luis.Models.IntentRecommendation with get, set" Usage="Microsoft.Bot.Builder.Luis.Models.LuisResult.TopScoringIntent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.LuisResult.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="luisResult.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

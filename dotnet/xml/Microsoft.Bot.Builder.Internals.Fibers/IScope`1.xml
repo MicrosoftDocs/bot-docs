@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScope`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IScope`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IScope(Of T)" />
+  <TypeSignature Language="F#" Value="type IScope&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IDisposable&gt; WithScopeAsync(!T item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync(`0,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithScopeAsync (item As T, token As CancellationToken) As Task(Of IDisposable)" />
+      <MemberSignature Language="F#" Value="abstract member WithScopeAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;IDisposable&gt;" Usage="iScope.WithScopeAsync (item, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

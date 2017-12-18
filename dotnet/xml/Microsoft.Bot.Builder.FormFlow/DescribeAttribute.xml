@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DescribeAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.DescribeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DescribeAttribute&#xA;Inherits FormFlowAttribute" />
+  <TypeSignature Language="F#" Value="type DescribeAttribute = class&#xA;    inherit FormFlowAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, string image, string message, string title, string subTitle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = null, Optional image As String = null, Optional message As String = null, Optional title As String = null, Optional subTitle As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.DescribeAttribute : string * string * string * string * string -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="new Microsoft.Bot.Builder.FormFlow.DescribeAttribute (description, image, message, title, subTitle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Description" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Description As String " />
+      <MemberSignature Language="F#" Value="val mutable Description : string" Usage="Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Description" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Image" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Image" />
       <MemberSignature Language="VB.NET" Value="Public Image As String " />
+      <MemberSignature Language="F#" Value="val mutable Image : string" Usage="Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Message" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Message" />
       <MemberSignature Language="VB.NET" Value="Public Message As String " />
+      <MemberSignature Language="F#" Value="val mutable Message : string" Usage="Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string SubTitle" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.SubTitle" />
       <MemberSignature Language="VB.NET" Value="Public SubTitle As String " />
+      <MemberSignature Language="F#" Value="val mutable SubTitle : string" Usage="Microsoft.Bot.Builder.FormFlow.DescribeAttribute.SubTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Title" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Title" />
       <MemberSignature Language="VB.NET" Value="Public Title As String " />
+      <MemberSignature Language="F#" Value="val mutable Title : string" Usage="Microsoft.Bot.Builder.FormFlow.DescribeAttribute.Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

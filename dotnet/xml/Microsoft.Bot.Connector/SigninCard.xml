@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SigninCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.SigninCard" />
   <TypeSignature Language="VB.NET" Value="Public Class SigninCard" />
+  <TypeSignature Language="F#" Value="type SigninCard = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SigninCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.SigninCard : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.SigninCard" Usage="new Microsoft.Bot.Connector.SigninCard (text, buttons)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
@@ -64,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; Buttons" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.SigninCard.Buttons" />
       <MemberSignature Language="VB.NET" Value="Public Property Buttons As IList(Of CardAction)" />
+      <MemberSignature Language="F#" Value="member this.Buttons : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; with get, set" Usage="Microsoft.Bot.Connector.SigninCard.Buttons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -90,10 +93,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.SigninCard.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Connector.SigninCard.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,10 +112,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.SigninCard Create(string text, string buttonLabel, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SigninCard.Create(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (text As String, buttonLabel As String, url As String) As SigninCard" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * string -&gt; Microsoft.Bot.Connector.SigninCard" Usage="Microsoft.Bot.Connector.SigninCard.Create (text, buttonLabel, url)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.SigninCard</ReturnType>
@@ -136,10 +141,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.SigninCard.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Connector.SigninCard.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

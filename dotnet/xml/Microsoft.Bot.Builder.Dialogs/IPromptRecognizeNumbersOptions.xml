@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPromptRecognizeNumbersOptions" />
+  <TypeSignature Language="F#" Value="type IPromptRecognizeNumbersOptions = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IntegerOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.IntegerOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IntegerOnly As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IntegerOnly : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.IntegerOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxValue As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MaxValue : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MaxValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MinValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MinValue As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.MinValue : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions.MinValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

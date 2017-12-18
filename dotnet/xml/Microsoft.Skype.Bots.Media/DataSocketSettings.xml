@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataSocketSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.DataSocketSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class DataSocketSettings" />
+  <TypeSignature Language="F#" Value="type DataSocketSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CallId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataSocketSettings.CallId" />
       <MemberSignature Language="VB.NET" Value="Public Property CallId As String" />
+      <MemberSignature Language="F#" Value="member this.CallId : string with get, set" Usage="Microsoft.Skype.Bots.Media.DataSocketSettings.CallId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.DataType ReceiveDataType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataSocketSettings.ReceiveDataType" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveDataType As DataType" />
+      <MemberSignature Language="F#" Value="member this.ReceiveDataType : Microsoft.Skype.Bots.Media.DataType with get, set" Usage="Microsoft.Skype.Bots.Media.DataSocketSettings.ReceiveDataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.DataType SendDataType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataSocketSettings.SendDataType" />
       <MemberSignature Language="VB.NET" Value="Public Property SendDataType As DataType" />
+      <MemberSignature Language="F#" Value="member this.SendDataType : Microsoft.Skype.Bots.Media.DataType with get, set" Usage="Microsoft.Skype.Bots.Media.DataSocketSettings.SendDataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.StreamDirection StreamDirections" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataSocketSettings.StreamDirections" />
       <MemberSignature Language="VB.NET" Value="Public Property StreamDirections As StreamDirection" />
+      <MemberSignature Language="F#" Value="member this.StreamDirections : Microsoft.Skype.Bots.Media.StreamDirection with get, set" Usage="Microsoft.Skype.Bots.Media.DataSocketSettings.StreamDirections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

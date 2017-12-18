@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationReference extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Connector.ConversationReference&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ConversationReference&#xA;Implements IEquatable(Of ConversationReference)" />
+  <TypeSignature Language="F#" Value="type ConversationReference = class&#xA;    interface IEquatable&lt;ConversationReference&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,10 +46,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string activityId, class Microsoft.Bot.Connector.ChannelAccount user, class Microsoft.Bot.Connector.ChannelAccount bot, class Microsoft.Bot.Connector.ConversationAccount conversation, string channelId, string serviceUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activityId As String = null, Optional user As ChannelAccount = null, Optional bot As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional channelId As String = null, Optional serviceUrl As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationReference : string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * string * string -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="new Microsoft.Bot.Connector.ConversationReference (activityId, user, bot, conversation, channelId, serviceUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="activityId" Type="System.String" />
@@ -76,10 +78,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ActivityId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationReference.ActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityId As String" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : string with get, set" Usage="Microsoft.Bot.Connector.ConversationReference.ActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,10 +105,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount Bot" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationReference.Bot" />
       <MemberSignature Language="VB.NET" Value="Public Property Bot As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.Bot : Microsoft.Bot.Connector.ChannelAccount with get, set" Usage="Microsoft.Bot.Connector.ConversationReference.Bot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -128,10 +132,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationReference.ChannelId" />
       <MemberSignature Language="VB.NET" Value="Public Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string with get, set" Usage="Microsoft.Bot.Connector.ConversationReference.ChannelId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,10 +159,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ConversationAccount Conversation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationReference.Conversation" />
       <MemberSignature Language="VB.NET" Value="Public Property Conversation As ConversationAccount" />
+      <MemberSignature Language="F#" Value="member this.Conversation : Microsoft.Bot.Connector.ConversationAccount with get, set" Usage="Microsoft.Bot.Connector.ConversationReference.Conversation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,10 +186,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Connector.ConversationReference other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.Equals(Microsoft.Bot.Connector.ConversationReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ConversationReference) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Bot.Connector.ConversationReference -&gt; bool" Usage="conversationReference.Equals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -203,10 +213,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="conversationReference.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -226,10 +237,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="conversationReference.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -246,10 +258,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.Activity GetPostToBotMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.GetPostToBotMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPostToBotMessage () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetPostToBotMessage : unit -&gt; Microsoft.Bot.Connector.Activity" Usage="conversationReference.GetPostToBotMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Activity</ReturnType>
@@ -268,10 +281,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.Activity GetPostToUserMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.GetPostToUserMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPostToUserMessage () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetPostToUserMessage : unit -&gt; Microsoft.Bot.Connector.Activity" Usage="conversationReference.GetPostToUserMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Activity</ReturnType>
@@ -290,10 +304,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationReference.ServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string with get, set" Usage="Microsoft.Bot.Connector.ConversationReference.ServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -317,10 +332,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount User" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationReference.User" />
       <MemberSignature Language="VB.NET" Value="Public Property User As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Bot.Connector.ChannelAccount with get, set" Usage="Microsoft.Bot.Connector.ConversationReference.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

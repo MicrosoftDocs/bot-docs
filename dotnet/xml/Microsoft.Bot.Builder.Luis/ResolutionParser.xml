@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResolutionParser extends System.Object implements class Microsoft.Bot.Builder.Luis.IResolutionParser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ResolutionParser" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResolutionParser&#xA;Implements IResolutionParser" />
+  <TypeSignature Language="F#" Value="type ResolutionParser = class&#xA;    interface IResolutionParser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -42,6 +43,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ResolutionParser.Microsoft#Bot#Builder#Luis#IResolutionParser#TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
       <MemberSignature Language="VB.NET" Value="Function TryParse (properties As IDictionary(Of String, Object), ByRef resolution As Resolution) As Boolean Implements IResolutionParser.TryParse" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

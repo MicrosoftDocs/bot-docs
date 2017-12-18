@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DictionaryBotData extends Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, object&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DictionaryBotData&#xA;Inherits BotDataBase(Of Dictionary(Of String, Object))" />
+  <TypeSignature Language="F#" Value="type DictionaryBotData = class&#xA;    inherit BotDataBase&lt;Dictionary&lt;string, obj&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IAddress botDataKey, class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt; botDataStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (botDataKey As IAddress, botDataStore As IBotDataStore(Of BotData))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData" Usage="new Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData (botDataKey, botDataStore)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; MakeData() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.MakeData" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MakeData () As Dictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="override this.MakeData : unit -&gt; System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="dictionaryBotData.MakeData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag WrapData(class System.Collections.Generic.Dictionary`2&lt;string, object&gt; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData.WrapData(System.Collections.Generic.Dictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function WrapData (data As Dictionary(Of String, Object)) As IBotDataBag" />
+      <MemberSignature Language="F#" Value="override this.WrapData : System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="dictionaryBotData.WrapData data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

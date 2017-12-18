@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentCurrencyAmount extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentCurrencyAmount" />
+  <TypeSignature Language="F#" Value="type PaymentCurrencyAmount = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string currency, string value, string currencySystem) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional currency As String = null, Optional value As String = null, Optional currencySystem As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount : string * string * string -&gt; Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount" Usage="new Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount (currency, value, currencySystem)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="currency" Type="System.String" />
@@ -66,10 +68,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Currency" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.Currency" />
       <MemberSignature Language="VB.NET" Value="Public Property Currency As String" />
+      <MemberSignature Language="F#" Value="member this.Currency : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.Currency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -92,10 +95,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CurrencySystem" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.CurrencySystem" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrencySystem As String" />
+      <MemberSignature Language="F#" Value="member this.CurrencySystem : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.CurrencySystem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,10 +122,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentCurrencyAmount.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

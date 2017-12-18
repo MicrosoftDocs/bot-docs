@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog`1&lt;+ TResult&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDialog(Of Out TResult)" />
+  <TypeSignature Language="F#" Value="type IDialog&lt;'Result&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartAsync (context As IDialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task" Usage="iDialog.StartAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

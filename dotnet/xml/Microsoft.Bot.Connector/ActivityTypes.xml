@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityTypes" />
+  <TypeSignature Language="F#" Value="type ActivityTypes = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContactRelationUpdate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Const ContactRelationUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable ContactRelationUpdate : string" Usage="Microsoft.Bot.Connector.ActivityTypes.ContactRelationUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -43,10 +45,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ConversationUpdate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Const ConversationUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable ConversationUpdate : string" Usage="Microsoft.Bot.Connector.ActivityTypes.ConversationUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -63,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteUserData" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.DeleteUserData" />
       <MemberSignature Language="VB.NET" Value="Public Const DeleteUserData As String " />
+      <MemberSignature Language="F#" Value="val mutable DeleteUserData : string" Usage="Microsoft.Bot.Connector.ActivityTypes.DeleteUserData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -83,10 +87,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string EndOfConversation" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.EndOfConversation" />
       <MemberSignature Language="VB.NET" Value="Public Const EndOfConversation As String " />
+      <MemberSignature Language="F#" Value="val mutable EndOfConversation : string" Usage="Microsoft.Bot.Connector.ActivityTypes.EndOfConversation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -103,10 +108,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Event" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Event" />
       <MemberSignature Language="VB.NET" Value="Public Const Event As String " />
+      <MemberSignature Language="F#" Value="val mutable Event : string" Usage="Microsoft.Bot.Connector.ActivityTypes.Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -123,10 +129,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string InstallationUpdate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.InstallationUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Const InstallationUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable InstallationUpdate : string" Usage="Microsoft.Bot.Connector.ActivityTypes.InstallationUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -143,10 +150,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Invoke" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Const Invoke As String " />
+      <MemberSignature Language="F#" Value="val mutable Invoke : string" Usage="Microsoft.Bot.Connector.ActivityTypes.Invoke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -163,10 +171,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Message" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Message" />
       <MemberSignature Language="VB.NET" Value="Public Const Message As String " />
+      <MemberSignature Language="F#" Value="val mutable Message : string" Usage="Microsoft.Bot.Connector.ActivityTypes.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -183,10 +192,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string MessageReaction" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.MessageReaction" />
       <MemberSignature Language="VB.NET" Value="Public Const MessageReaction As String " />
+      <MemberSignature Language="F#" Value="val mutable MessageReaction : string" Usage="Microsoft.Bot.Connector.ActivityTypes.MessageReaction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -203,10 +213,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Ping" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Ping" />
       <MemberSignature Language="VB.NET" Value="Public Const Ping As String " />
+      <MemberSignature Language="F#" Value="val mutable Ping : string" Usage="Microsoft.Bot.Connector.ActivityTypes.Ping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -223,10 +234,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Trigger" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Trigger" />
       <MemberSignature Language="VB.NET" Value="Public Const Trigger As String " />
+      <MemberSignature Language="F#" Value="val mutable Trigger : string" Usage="Microsoft.Bot.Connector.ActivityTypes.Trigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -248,10 +260,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string Typing" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityTypes.Typing" />
       <MemberSignature Language="VB.NET" Value="Public Const Typing As String " />
+      <MemberSignature Language="F#" Value="val mutable Typing : string" Usage="Microsoft.Bot.Connector.ActivityTypes.Typing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

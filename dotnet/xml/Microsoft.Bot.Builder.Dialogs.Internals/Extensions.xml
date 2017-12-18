@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InterruptAsync&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask task, Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; dialog, R item, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InterruptAsync&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask task, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; dialog, !!R item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Extensions.InterruptAsync``2(Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask,Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member InterruptAsync : Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask * Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * 'R * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Internals.Extensions.InterruptAsync (task, dialog, item, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T MaxBy&lt;T, R&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; items, class System.Func`2&lt;!!T, !!R&gt; selectRank, class System.Collections.Generic.IComparer`1&lt;!!R&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Extensions.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MaxBy(Of T, R) (items As IEnumerable(Of T), selectRank As Func(Of T, R), Optional comparer As IComparer(Of R) = null) As T" />
+      <MemberSignature Language="F#" Value="static member MaxBy : seq&lt;'T&gt; * Func&lt;'T, 'R&gt; * System.Collections.Generic.IComparer&lt;'R&gt; -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.Internals.Extensions.MaxBy (items, selectRank, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

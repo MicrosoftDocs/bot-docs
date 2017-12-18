@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VideoSinkEncodingFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum VideoSinkEncodingFormat" />
+  <TypeSignature Language="F#" Value="type VideoSinkEncodingFormat = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat H264 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.H264" />
       <MemberSignature Language="VB.NET" Value="H264" />
+      <MemberSignature Language="F#" Value="H264 = 1" Usage="Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.H264" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat Yuv = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.Yuv" />
       <MemberSignature Language="VB.NET" Value="Yuv" />
+      <MemberSignature Language="F#" Value="Yuv = 0" Usage="Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.Yuv" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

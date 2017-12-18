@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChronoDurationResolution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution" />
   <TypeSignature Language="VB.NET" Value="Public Class ChronoDurationResolution" />
+  <TypeSignature Language="F#" Value="type ChronoDurationResolution = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; End" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.End" />
       <MemberSignature Language="VB.NET" Value="Public Property End As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.End : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ResolutionType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.ResolutionType" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolutionType As String" />
+      <MemberSignature Language="F#" Value="member this.ResolutionType : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.ResolutionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Start" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.Start : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

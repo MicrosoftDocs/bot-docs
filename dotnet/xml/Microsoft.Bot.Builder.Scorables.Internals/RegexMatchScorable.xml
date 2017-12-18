@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RegexMatchScorable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable" />
   <TypeSignature Language="VB.NET" Value="Public Class RegexMatchScorable" />
+  <TypeSignature Language="F#" Value="type RegexMatchScorable = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Func`2&lt;class System.Text.RegularExpressions.Capture, string&gt; GetOriginalString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.GetOriginalString" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GetOriginalString As Func(Of Capture, String) " />
+      <MemberSignature Language="F#" Value=" staticval mutable GetOriginalString : Func&lt;System.Text.RegularExpressions.Capture, string&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.GetOriginalString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public static double ScoreFor (System.Text.RegularExpressions.Match match);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ScoreFor(class System.Text.RegularExpressions.Match match) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.ScoreFor(System.Text.RegularExpressions.Match)" />
+      <MemberSignature Language="F#" Value="static member ScoreFor : System.Text.RegularExpressions.Match -&gt; double" Usage="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.ScoreFor match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

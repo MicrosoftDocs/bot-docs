@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FrameFactory`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FrameFactory(Of C)&#xA;Implements IFrameFactory(Of C)" />
+  <TypeSignature Language="F#" Value="type FrameFactory&lt;'C&gt; = class&#xA;    interface IFrameFactory&lt;'C&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -46,6 +47,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FrameFactory`1.Microsoft#Bot#Builder#Internals#Fibers#IFrameFactory&lt;C&gt;#Make" />
       <MemberSignature Language="VB.NET" Value="Function Make () As IFrame(Of C) Implements IFrameFactory(Of C).Make" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IFrameFactory`1.Make</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

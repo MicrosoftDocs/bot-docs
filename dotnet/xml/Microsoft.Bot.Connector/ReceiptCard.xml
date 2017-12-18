@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReceiptCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ReceiptCard" />
   <TypeSignature Language="VB.NET" Value="Public Class ReceiptCard" />
+  <TypeSignature Language="F#" Value="type ReceiptCard = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ReceiptItem&gt; items, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Fact&gt; facts, class Microsoft.Bot.Connector.CardAction tap, string total, string tax, string vat, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ReceiptCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ReceiptItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.Fact},Microsoft.Bot.Connector.CardAction,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional items As IList(Of ReceiptItem) = null, Optional facts As IList(Of Fact) = null, Optional tap As CardAction = null, Optional total As String = null, Optional tax As String = null, Optional vat As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ReceiptCard : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; * Microsoft.Bot.Connector.CardAction * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.ReceiptCard" Usage="new Microsoft.Bot.Connector.ReceiptCard (title, items, facts, tap, total, tax, vat, buttons)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -76,10 +78,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; Buttons" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Buttons" />
       <MemberSignature Language="VB.NET" Value="Public Property Buttons As IList(Of CardAction)" />
+      <MemberSignature Language="F#" Value="member this.Buttons : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Buttons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,10 +105,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ReceiptCard.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Connector.ReceiptCard.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -120,10 +124,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Fact&gt; Facts" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Facts" />
       <MemberSignature Language="VB.NET" Value="Public Property Facts As IList(Of Fact)" />
+      <MemberSignature Language="F#" Value="member this.Facts : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Facts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -146,10 +151,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ReceiptItem&gt; Items" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Items" />
       <MemberSignature Language="VB.NET" Value="Public Property Items As IList(Of ReceiptItem)" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,10 +178,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.CardAction Tap" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Tap" />
       <MemberSignature Language="VB.NET" Value="Public Property Tap As CardAction" />
+      <MemberSignature Language="F#" Value="member this.Tap : Microsoft.Bot.Connector.CardAction with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Tap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -198,10 +205,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Tax" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Tax" />
       <MemberSignature Language="VB.NET" Value="Public Property Tax As String" />
+      <MemberSignature Language="F#" Value="member this.Tax : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Tax" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,10 +232,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -250,10 +259,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Total" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Total" />
       <MemberSignature Language="VB.NET" Value="Public Property Total As String" />
+      <MemberSignature Language="F#" Value="member this.Total : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Total" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -276,10 +286,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Vat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Vat" />
       <MemberSignature Language="VB.NET" Value="Public Property Vat As String" />
+      <MemberSignature Language="F#" Value="member this.Vat : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Vat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
