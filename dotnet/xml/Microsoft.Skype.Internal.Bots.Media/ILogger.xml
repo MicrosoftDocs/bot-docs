@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ILogger" />
   <TypeSignature Language="VB.NET" Value="Public Interface ILogger" />
+  <TypeSignature Language="F#" Value="type ILogger = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -17,6 +18,7 @@
       <MemberSignature Language="C#" Value="public void AddListener (System.Diagnostics.TraceListener traceListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddListener(class System.Diagnostics.TraceListener traceListener) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListener(System.Diagnostics.TraceListener)" />
+      <MemberSignature Language="F#" Value="abstract member AddListener : System.Diagnostics.TraceListener -&gt; unit" Usage="iLogger.AddListener traceListener" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddListeners(class System.Collections.Generic.IList`1&lt;class System.Diagnostics.TraceListener&gt; traceListeners) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.AddListeners(System.Collections.Generic.IList{System.Diagnostics.TraceListener})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddListeners (traceListeners As IList(Of TraceListener))" />
+      <MemberSignature Language="F#" Value="abstract member AddListeners : System.Collections.Generic.IList&lt;System.Diagnostics.TraceListener&gt; -&gt; unit" Usage="iLogger.AddListeners traceListeners" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="iLogger.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="C#" Value="public void RemoveListener (System.Diagnostics.TraceListener traceListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveListener(class System.Diagnostics.TraceListener traceListener) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.RemoveListener(System.Diagnostics.TraceListener)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveListener : System.Diagnostics.TraceListener -&gt; unit" Usage="iLogger.RemoveListener traceListener" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -101,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLoggingLevel(string component, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.SetLoggingLevel(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLoggingLevel (component As String, level As LogLevel)" />
+      <MemberSignature Language="F#" Value="abstract member SetLoggingLevel : string * Microsoft.Skype.Internal.Bots.Media.LogLevel -&gt; unit" Usage="iLogger.SetLoggingLevel (component, level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string component, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (component As String, level As LogLevel, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="abstract member Write : string * Microsoft.Skype.Internal.Bots.Media.LogLevel * string * obj[] -&gt; unit" Usage="iLogger.Write (component, level, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string component, string correlationId, valuetype Microsoft.Skype.Internal.Bots.Media.LogLevel level, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ILogger.Write(System.String,System.String,Microsoft.Skype.Internal.Bots.Media.LogLevel,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (component As String, correlationId As String, level As LogLevel, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="abstract member Write : string * string * Microsoft.Skype.Internal.Bots.Media.LogLevel * string * obj[] -&gt; unit" Usage="iLogger.Write (component, correlationId, level, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

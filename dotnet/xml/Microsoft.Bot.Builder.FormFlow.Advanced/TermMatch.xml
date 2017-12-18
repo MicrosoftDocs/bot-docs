@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TermMatch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch" />
   <TypeSignature Language="VB.NET" Value="Public Class TermMatch" />
+  <TypeSignature Language="F#" Value="type TermMatch = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 start, int32 length, float64 confidence, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.#ctor(System.Int32,System.Int32,System.Double,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As Integer, length As Integer, confidence As Double, value As Object)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch : int * int * double * obj -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch (start, length, confidence, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly float64 Confidence" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Confidence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Confidence As Double " />
+      <MemberSignature Language="F#" Value="val mutable Confidence : double" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Confidence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Covers(class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Covers(Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Function Covers (match As TermMatch) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Covers : Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch -&gt; bool" Usage="termMatch.Covers match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 End" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.End" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As Integer" />
+      <MemberSignature Language="F#" Value="member this.End : int" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="termMatch.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="termMatch.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly int32 Length" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Length As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Length : int" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Length" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch m1, class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch m2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.op_Equality(Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch,Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (m1 As TermMatch, m2 As TermMatch) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch * Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch -&gt; bool" Usage="m1 = m2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch m1, class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch m2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.op_Inequality(Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch,Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (m1 As TermMatch, m2 As TermMatch) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch * Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.op_Inequality (m1, m2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -229,6 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Overlaps(class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Overlaps(Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Function Overlaps (match As TermMatch) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Overlaps : Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch -&gt; bool" Usage="termMatch.Overlaps match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -254,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Same(class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Same(Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch)" />
       <MemberSignature Language="VB.NET" Value="Public Function Same (match As TermMatch) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Same : Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch -&gt; bool" Usage="termMatch.Same match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -279,6 +291,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly int32 Start" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Start" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Start As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Start : int" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -299,6 +312,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="termMatch.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -319,6 +333,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly object Value" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Value As Object " />
+      <MemberSignature Language="F#" Value="val mutable Value : obj" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

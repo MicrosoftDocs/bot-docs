@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MediaPlatformFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaPlatformFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaPlatformFactory" />
+  <TypeSignature Language="F#" Value="type MediaPlatformFactory = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Skype.Bots.Media.IMediaPlatform CreateMediaPlatform() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.MediaPlatformFactory.CreateMediaPlatform" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMediaPlatform () As IMediaPlatform" />
+      <MemberSignature Language="F#" Value="static member CreateMediaPlatform : unit -&gt; Microsoft.Skype.Bots.Media.IMediaPlatform" Usage="Microsoft.Skype.Bots.Media.MediaPlatformFactory.CreateMediaPlatform " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

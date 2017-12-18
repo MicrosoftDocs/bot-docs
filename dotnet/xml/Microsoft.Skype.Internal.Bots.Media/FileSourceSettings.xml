@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileSourceSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class FileSourceSettings" />
+  <TypeSignature Language="F#" Value="type FileSourceSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Internal.Bots.Media.FileSourceExtension FileSourceExtension" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceExtension" />
       <MemberSignature Language="VB.NET" Value="Public Property FileSourceExtension As FileSourceExtension" />
+      <MemberSignature Language="F#" Value="member this.FileSourceExtension : Microsoft.Skype.Internal.Bots.Media.FileSourceExtension with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Internal.Bots.Media.FileSourceType FileSourceType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceType" />
       <MemberSignature Language="VB.NET" Value="Public Property FileSourceType As FileSourceType" />
+      <MemberSignature Language="F#" Value="member this.FileSourceType : Microsoft.Skype.Internal.Bots.Media.FileSourceType with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings.FileSourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

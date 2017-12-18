@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScorableGroupAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ScorableGroupAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ScorableGroupAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 order) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (order As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute : int -&gt; Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute" Usage="new Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute order" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Order As Integer" />
+      <MemberSignature Language="F#" Value="member this.Order : int" Usage="Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

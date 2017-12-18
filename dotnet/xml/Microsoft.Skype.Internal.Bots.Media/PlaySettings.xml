@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlaySettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.PlaySettings" />
   <TypeSignature Language="VB.NET" Value="Public Class PlaySettings" />
+  <TypeSignature Language="F#" Value="type PlaySettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed AudioPlaybackSpeed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.PlaySettings.AudioPlaybackSpeed" />
       <MemberSignature Language="VB.NET" Value="Public Property AudioPlaybackSpeed As AudioPlaybackSpeed" />
+      <MemberSignature Language="F#" Value="member this.AudioPlaybackSpeed : Microsoft.Skype.Internal.Bots.Media.AudioPlaybackSpeed with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.PlaySettings.AudioPlaybackSpeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Loop" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.PlaySettings.Loop" />
       <MemberSignature Language="VB.NET" Value="Public Property Loop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Loop : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.PlaySettings.Loop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.PlaySettings.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="playSettings.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

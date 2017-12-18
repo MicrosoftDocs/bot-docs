@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogTaskManager extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogTaskManager&#xA;Implements IDialogTaskManager" />
+  <TypeSignature Language="F#" Value="type DialogTaskManager = class&#xA;    interface IDialogTaskManager&#xA;    interface IDialogTasks" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string blobKeyPrefix, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData botData, class Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1&lt;class Microsoft.Bot.Builder.Dialogs.Internals.DialogTask&gt; stackStoreFactory, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack, valuetype System.Threading.CancellationToken, class Microsoft.Bot.Builder.Dialogs.IDialogContext&gt; contextFactory, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt; queue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory{Microsoft.Bot.Builder.Dialogs.Internals.DialogTask},System.Func{Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Threading.CancellationToken,Microsoft.Bot.Builder.Dialogs.IDialogContext},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobKeyPrefix As String, botData As IBotData, stackStoreFactory As IStackStoreFactory(Of DialogTask), contextFactory As Func(Of IDialogStack, CancellationToken, IDialogContext), queue As IEventProducer(Of IActivity))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager : string * Microsoft.Bot.Builder.Dialogs.Internals.IBotData * Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory&lt;Microsoft.Bot.Builder.Dialogs.Internals.DialogTask&gt; * Func&lt;Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack, System.Threading.CancellationToken, Microsoft.Bot.Builder.Dialogs.IDialogContext&gt; * Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager" Usage="new Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager (blobKeyPrefix, botData, stackStoreFactory, contextFactory, queue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -55,6 +57,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTaskManager#FlushDialogTasks(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function FlushDialogTasks (token As CancellationToken) As Task Implements IDialogTaskManager.FlushDialogTasks" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager.FlushDialogTasks(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -83,6 +88,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTaskManager#LoadDialogTasks(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function LoadDialogTasks (token As CancellationToken) As Task Implements IDialogTaskManager.LoadDialogTasks" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager.LoadDialogTasks(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -111,6 +119,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#CreateDialogTask" />
       <MemberSignature Language="VB.NET" Value="Function CreateDialogTask () As IDialogTask Implements IDialogTasks.CreateDialogTask" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.CreateDialogTask</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -131,6 +142,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#DialogTasks" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DialogTasks As IReadOnlyList(Of IDialogTask) Implements IDialogTasks.DialogTasks" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

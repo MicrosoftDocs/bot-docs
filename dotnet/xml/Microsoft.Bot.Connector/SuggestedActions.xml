@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SuggestedActions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.SuggestedActions" />
   <TypeSignature Language="VB.NET" Value="Public Class SuggestedActions" />
+  <TypeSignature Language="F#" Value="type SuggestedActions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; to, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SuggestedActions.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional to As IList(Of String) = null, Optional actions As IList(Of CardAction) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.SuggestedActions : System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.SuggestedActions" Usage="new Microsoft.Bot.Connector.SuggestedActions (to, actions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="to" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -64,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; Actions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.SuggestedActions.Actions" />
       <MemberSignature Language="VB.NET" Value="Public Property Actions As IList(Of CardAction)" />
+      <MemberSignature Language="F#" Value="member this.Actions : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; with get, set" Usage="Microsoft.Bot.Connector.SuggestedActions.Actions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -90,10 +93,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; To" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.SuggestedActions.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.To : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Connector.SuggestedActions.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

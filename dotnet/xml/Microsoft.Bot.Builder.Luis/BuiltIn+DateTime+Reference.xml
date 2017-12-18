@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BuiltIn/DateTime/Reference extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuiltIn.DateTime.Reference" />
+  <TypeSignature Language="F#" Value="type BuiltIn.DateTime.Reference = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference FUTURE_REF = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.FUTURE_REF" />
       <MemberSignature Language="VB.NET" Value="FUTURE_REF" />
+      <MemberSignature Language="F#" Value="FUTURE_REF = 2" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.FUTURE_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference PAST_REF = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PAST_REF" />
       <MemberSignature Language="VB.NET" Value="PAST_REF" />
+      <MemberSignature Language="F#" Value="PAST_REF = 0" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PAST_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference PRESENT_REF = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PRESENT_REF" />
       <MemberSignature Language="VB.NET" Value="PRESENT_REF" />
+      <MemberSignature Language="F#" Value="PRESENT_REF = 1" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PRESENT_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

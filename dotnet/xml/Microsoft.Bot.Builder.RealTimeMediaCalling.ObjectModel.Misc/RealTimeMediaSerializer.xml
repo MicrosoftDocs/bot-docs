@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RealTimeMediaSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class RealTimeMediaSerializer" />
+  <TypeSignature Language="F#" Value="type RealTimeMediaSerializer = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DeserializeFromJson&lt;T&gt;(string json) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.DeserializeFromJson``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeserializeFromJson(Of T) (json As String) As T" />
+      <MemberSignature Language="F#" Value="static member DeserializeFromJson : string -&gt; 'T" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.DeserializeFromJson json" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="C#" Value="public static T DeserializeFromJToken&lt;T&gt; (Newtonsoft.Json.Linq.JToken jToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DeserializeFromJToken&lt;T&gt;(class Newtonsoft.Json.Linq.JToken jToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.DeserializeFromJToken``1(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="F#" Value="static member DeserializeFromJToken : Newtonsoft.Json.Linq.JToken -&gt; 'T" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.DeserializeFromJToken jToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="C#" Value="public static Newtonsoft.Json.JsonSerializerSettings GetSerializerSettings (Newtonsoft.Json.Formatting formatting = Newtonsoft.Json.Formatting.None);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.JsonSerializerSettings GetSerializerSettings(valuetype Newtonsoft.Json.Formatting formatting) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.GetSerializerSettings(Newtonsoft.Json.Formatting)" />
+      <MemberSignature Language="F#" Value="static member GetSerializerSettings : Newtonsoft.Json.Formatting -&gt; Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.GetSerializerSettings formatting" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SerializeToJson(object obj, bool forLogging) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.SerializeToJson(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SerializeToJson (obj As Object, Optional forLogging As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="static member SerializeToJson : obj * bool -&gt; string" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.SerializeToJson (obj, forLogging)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken SerializeToJToken(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.SerializeToJToken(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SerializeToJToken (obj As Object) As JToken" />
+      <MemberSignature Language="F#" Value="static member SerializeToJToken : obj -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Misc.RealTimeMediaSerializer.SerializeToJToken obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

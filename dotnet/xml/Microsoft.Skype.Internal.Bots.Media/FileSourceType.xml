@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FileSourceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSourceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileSourceType" />
+  <TypeSignature Language="F#" Value="type FileSourceType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Internal.Bots.Media.FileSourceType Audio = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Internal.Bots.Media.FileSourceType.Audio" />
       <MemberSignature Language="VB.NET" Value="Audio" />
+      <MemberSignature Language="F#" Value="Audio = 0" Usage="Microsoft.Skype.Internal.Bots.Media.FileSourceType.Audio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

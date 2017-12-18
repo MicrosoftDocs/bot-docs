@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisServiceResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisServiceResult" />
   <TypeSignature Language="VB.NET" Value="Public Class LuisServiceResult" />
+  <TypeSignature Language="F#" Value="type LuisServiceResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.Models.LuisResult result, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, class Microsoft.Bot.Builder.Luis.ILuisService service) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.#ctor(Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.ILuisService)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As LuisResult, intent As IntentRecommendation, service As ILuisService)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.LuisServiceResult : Microsoft.Bot.Builder.Luis.Models.LuisResult * Microsoft.Bot.Builder.Luis.Models.IntentRecommendation * Microsoft.Bot.Builder.Luis.ILuisService -&gt; Microsoft.Bot.Builder.Dialogs.LuisServiceResult" Usage="new Microsoft.Bot.Builder.Dialogs.LuisServiceResult (result, intent, service)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation BestIntent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.BestIntent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BestIntent As IntentRecommendation" />
+      <MemberSignature Language="F#" Value="member this.BestIntent : Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" Usage="Microsoft.Bot.Builder.Dialogs.LuisServiceResult.BestIntent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.ILuisService LuisService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.LuisService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LuisService As ILuisService" />
+      <MemberSignature Language="F#" Value="member this.LuisService : Microsoft.Bot.Builder.Luis.ILuisService" Usage="Microsoft.Bot.Builder.Dialogs.LuisServiceResult.LuisService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.LuisResult Result" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As LuisResult" />
+      <MemberSignature Language="F#" Value="member this.Result : Microsoft.Bot.Builder.Luis.Models.LuisResult" Usage="Microsoft.Bot.Builder.Dialogs.LuisServiceResult.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

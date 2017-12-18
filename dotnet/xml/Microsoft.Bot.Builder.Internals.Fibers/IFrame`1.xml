@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFrame`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFrame`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFrame(Of C)&#xA;Implements IFrameLoop(Of C), IWaiter(Of C)" />
+  <TypeSignature Language="F#" Value="type IFrame&lt;'C&gt; = interface&#xA;    interface IWaiter&lt;'C&gt;&#xA;    interface IFrameLoop&lt;'C&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

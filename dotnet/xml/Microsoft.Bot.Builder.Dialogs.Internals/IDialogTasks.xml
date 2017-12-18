@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDialogTasks" />
+  <TypeSignature Language="F#" Value="type IDialogTasks = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask CreateDialogTask() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.CreateDialogTask" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDialogTask () As IDialogTask" />
+      <MemberSignature Language="F#" Value="abstract member CreateDialogTask : unit -&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask" Usage="iDialogTasks.CreateDialogTask " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask&gt; DialogTasks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DialogTasks As IReadOnlyList(Of IDialogTask)" />
+      <MemberSignature Language="F#" Value="member this.DialogTasks : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

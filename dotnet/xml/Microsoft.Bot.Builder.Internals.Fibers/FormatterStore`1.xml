@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormatterStore`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IStore`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormatterStore(Of T)&#xA;Implements IStore(Of T)" />
+  <TypeSignature Language="F#" Value="type FormatterStore&lt;'T&gt; = class&#xA;    interface IStore&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="C#" Value="public FormatterStore (System.IO.Stream stream, System.Runtime.Serialization.IFormatter formatter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Runtime.Serialization.IFormatter formatter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.#ctor(System.IO.Stream,System.Runtime.Serialization.IFormatter)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.FormatterStore&lt;'T&gt; : System.IO.Stream * System.Runtime.Serialization.IFormatter -&gt; Microsoft.Bot.Builder.Internals.Fibers.FormatterStore&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Internals.Fibers.FormatterStore&lt;'T&gt; (stream, formatter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#Flush" />
       <MemberSignature Language="VB.NET" Value="Sub Flush () Implements IStore(Of T).Flush" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Flush</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -69,6 +74,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#Reset" />
       <MemberSignature Language="VB.NET" Value="Sub Reset () Implements IStore(Of T).Reset" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -88,6 +96,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#Save(`0)" />
       <MemberSignature Language="VB.NET" Value="Sub Save (item As T) Implements IStore(Of T).Save" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.Save(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -110,6 +121,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.FormatterStore`1.Microsoft#Bot#Builder#Internals#Fibers#IStore&lt;T&gt;#TryLoad(`0@)" />
       <MemberSignature Language="VB.NET" Value="Function TryLoad (ByRef item As T) As Boolean Implements IStore(Of T).TryLoad" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad(`0@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

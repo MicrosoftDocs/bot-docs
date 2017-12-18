@@ -1,0 +1,47 @@
+queue:
+  name: Default
+  demands: DotNetFramework
+
+
+steps:
+- task: AzureKeyVault@1
+  inputs:
+    ConnectedServiceName:  'APIDrop-Azure'
+    KeyVaultName: "APIDrop-DotNet-KeyVault"
+
+- task: PowerShell@1
+  inputs: 
+    scriptType: "inlineScript"
+    arguments: "-ToolingToken $(ToolingToken)"
+    inlineScript: 'param ([string]$ToolingToken = "NOT_VALID_TOKEN"); $fullUrl = ("https://" + $ToolingToken + "@apidrop.visualstudio.com/binaries/_git/mrefconfig");     git clone $fullUrl -b tooling _buildtools -q'
+- task: PowerShell@1
+  inputs:
+    scriptName: "./_buildtools/scripts/mref-provision.ps1"
+    arguments: "-ToolingToken $(ToolingToken)"
+
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: 'dl\*.zip'
+    destinationFolder: "$(Build.Repository.LocalPath)\_bin"
+
+- task: PowerShell@1
+  inputs:
+    scriptName: "./_buildtools/scripts/mref-mdoc-exec.ps1"
+    arguments: "-CredentialToken $(GitHubToken)"
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.Repository.LocalPath)\mdoc-fw-out'
+    ArtifactName: "$(Build.BuildNumber)-artifacts"
+    ArtifactType: "Container"
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.Repository.LocalPath)\nue-out'
+    ArtifactName: "$(Build.BuildNumber)-artifacts"
+    ArtifactType: "Container"
+
+- task: PowerShell@1
+  inputs:
+    scriptName: "scripts/trigger-release.ps1"
+    arguments: "-GitToken $(GitHubToken) -GitUsername $(GitHubUsername) -GitRepoId $(GitHubLocation) -GitBranch $(GitHubBranch) -GitInRepoLocation $(InRepoLocation) -ArtifactPath $(Build.Repository.LocalPath) -ArtifactName $(ArtifactName) -GitEmail $(GitHubCustomEmail)"

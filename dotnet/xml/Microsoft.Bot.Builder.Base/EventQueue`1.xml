@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventQueue`1&lt;Event&gt; extends System.Object implements class Microsoft.Bot.Builder.Base.IEventConsumer`1&lt;!Event&gt;, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;!Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.EventQueue`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventQueue(Of Event)&#xA;Implements IEventConsumer(Of Event), IEventProducer(Of Event)" />
+  <TypeSignature Language="F#" Value="type EventQueue&lt;'Event&gt; = class&#xA;    interface IEventProducer&lt;'Event&gt;&#xA;    interface IEventConsumer&lt;'Event&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -49,6 +50,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.EventQueue`1.Microsoft#Bot#Builder#Base#IEventConsumer&lt;Event&gt;#TryPull(`0@)" />
       <MemberSignature Language="VB.NET" Value="Function TryPull (ByRef event As Event) As Boolean Implements IEventConsumer(Of Event).TryPull" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Base.IEventConsumer`1.TryPull(`0@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -71,6 +75,9 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;.Post(!Event event, class System.Action onPull) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.EventQueue`1.Microsoft#Bot#Builder#Base#IEventProducer&lt;Event&gt;#Post(`0,System.Action)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Base.IEventProducer`1.Post(`0,System.Action)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

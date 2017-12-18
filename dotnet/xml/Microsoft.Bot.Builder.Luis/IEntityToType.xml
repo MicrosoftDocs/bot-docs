@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEntityToType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.IEntityToType" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEntityToType" />
+  <TypeSignature Language="F#" Value="type IEntityToType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMapToDateRanges(valuetype System.DateTime now, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, [out] class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;valuetype System.DateTime&gt;&gt;&amp; ranges) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryMapToDateRanges (now As DateTime, entities As IEnumerable(Of EntityRecommendation), ByRef ranges As IEnumerable(Of Range(Of DateTime))) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryMapToDateRanges : DateTime * seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; *  -&gt; bool" Usage="iEntityToType.TryMapToDateRanges (now, entities, ranges)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMapToTimeSpan(valuetype System.DateTime now, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, [out] valuetype System.TimeSpan&amp; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryMapToTimeSpan (now As DateTime, entities As IEnumerable(Of EntityRecommendation), ByRef span As TimeSpan) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryMapToTimeSpan : DateTime * seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; *  -&gt; bool" Usage="iEntityToType.TryMapToTimeSpan (now, entities, span)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

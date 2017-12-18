@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptConfirm extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;bool, string&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptDialog.PromptConfirm&#xA;Inherits Prompt(Of Boolean, String)" />
+  <TypeSignature Language="F#" Value="type PromptDialog.PromptConfirm = class&#xA;    inherit Prompt&lt;bool, string&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;string&gt; promptOptions, string[][] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As IPromptOptions(Of String), Optional patterns As String()() = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm : Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;string&gt; * string[][] -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm (promptOptions, patterns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="C#" Value="public PromptConfirm (string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, string[] options = null, string[][] patterns = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, string[] options, string[][] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm : string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * string[] * string[][] -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm (prompt, retry, attempts, promptStyle, options, patterns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultRetry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultRetry As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultRetry : string" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 No = (1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
       <MemberSignature Language="VB.NET" Value="Public Const No As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable No : int" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".property string[] Options" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Options As String()" />
+      <MemberSignature Language="F#" Value="member this.Options : string[]" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".property string[][] Patterns" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Patterns As String()()" />
+      <MemberSignature Language="F#" Value="member this.Patterns : string[][]" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] bool&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptConfirm.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -183,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Yes = (0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Const Yes As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable Yes : int" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

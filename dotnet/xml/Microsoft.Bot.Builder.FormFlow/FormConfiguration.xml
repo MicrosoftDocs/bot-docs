@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class FormConfiguration" />
+  <TypeSignature Language="F#" Value="type FormConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.Dictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.FormCommand, class Microsoft.Bot.Builder.FormFlow.CommandDescription&gt; Commands" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Commands" />
       <MemberSignature Language="VB.NET" Value="Public Commands As Dictionary(Of FormCommand, CommandDescription) " />
+      <MemberSignature Language="F#" Value="val mutable Commands : System.Collections.Generic.Dictionary&lt;Microsoft.Bot.Builder.FormFlow.FormCommand, Microsoft.Bot.Builder.FormFlow.CommandDescription&gt;" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.Commands" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Confirmation" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Confirmation" />
       <MemberSignature Language="VB.NET" Value="Public Confirmation As String " />
+      <MemberSignature Language="F#" Value="val mutable Confirmation : string" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.Confirmation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string[] CurrentChoice" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.CurrentChoice" />
       <MemberSignature Language="VB.NET" Value="Public CurrentChoice As String() " />
+      <MemberSignature Language="F#" Value="val mutable CurrentChoice : string[]" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.CurrentChoice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.PromptAttribute DefaultPrompt" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt" />
       <MemberSignature Language="VB.NET" Value="Public DefaultPrompt As PromptAttribute " />
+      <MemberSignature Language="F#" Value="val mutable DefaultPrompt : Microsoft.Bot.Builder.FormFlow.PromptAttribute" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.DefaultPrompt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string Navigation" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Navigation" />
       <MemberSignature Language="VB.NET" Value="Public Navigation As String " />
+      <MemberSignature Language="F#" Value="val mutable Navigation : string" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.Navigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string[] No" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.No" />
       <MemberSignature Language="VB.NET" Value="Public No As String() " />
+      <MemberSignature Language="F#" Value="val mutable No : string[]" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string[] NoPreference" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.NoPreference" />
       <MemberSignature Language="VB.NET" Value="Public NoPreference As String() " />
+      <MemberSignature Language="F#" Value="val mutable NoPreference : string[]" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.NoPreference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -190,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template(valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage usage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)" />
       <MemberSignature Language="VB.NET" Value="Public Function Template (usage As TemplateUsage) As TemplateAttribute" />
+      <MemberSignature Language="F#" Value="member this.Template : Microsoft.Bot.Builder.FormFlow.TemplateUsage -&gt; Microsoft.Bot.Builder.FormFlow.TemplateAttribute" Usage="formConfiguration.Template usage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; Templates" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Templates" />
       <MemberSignature Language="VB.NET" Value="Public Templates As List(Of TemplateAttribute) " />
+      <MemberSignature Language="F#" Value="val mutable Templates : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt;" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.Templates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -235,6 +245,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string[] Yes" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Yes As String() " />
+      <MemberSignature Language="F#" Value="val mutable Yes : string[]" Usage="Microsoft.Bot.Builder.FormFlow.FormConfiguration.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldPrompt`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldPrompt(Of T)" />
+  <TypeSignature Language="F#" Value="type IFieldPrompt&lt;'T (requires 'T : null)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Active(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Active(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Active (state As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Active : 'T -&gt; bool" Usage="iFieldPrompt.Active state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; DefineAsync(!T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.DefineAsync(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineAsync (state As T) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member DefineAsync : 'T -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iFieldPrompt.DefineAsync state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; Help" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Help" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Help As IPrompt(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Help : Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;'T (requires 'T : null)&gt;.Help" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.NextStep Next(object value, !T state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Next(System.Object,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Next (value As Object, state As T) As NextStep" />
+      <MemberSignature Language="F#" Value="abstract member Next : obj * 'T -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" Usage="iFieldPrompt.Next (value, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt; Prompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Prompt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prompt As IPrompt(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Prompt : Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;'T (requires 'T : null)&gt;.Prompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.TemplateAttribute Template(valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage usage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.Template(Microsoft.Bot.Builder.FormFlow.TemplateUsage)" />
       <MemberSignature Language="VB.NET" Value="Public Function Template (usage As TemplateUsage) As TemplateAttribute" />
+      <MemberSignature Language="F#" Value="abstract member Template : Microsoft.Bot.Builder.FormFlow.TemplateUsage -&gt; Microsoft.Bot.Builder.FormFlow.TemplateAttribute" Usage="iFieldPrompt.Template usage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.FormFlow.ValidateResult&gt; ValidateAsync(!T state, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1.ValidateAsync(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateAsync (state As T, value As Object) As Task(Of ValidateResult)" />
+      <MemberSignature Language="F#" Value="abstract member ValidateAsync : 'T * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.FormFlow.ValidateResult&gt;" Usage="iFieldPrompt.ValidateAsync (state, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

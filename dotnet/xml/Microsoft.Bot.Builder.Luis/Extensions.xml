@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Apply(class Microsoft.Bot.Builder.Luis.ILuisOptions source, class Microsoft.Bot.Builder.Luis.ILuisOptions target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.Apply(Microsoft.Bot.Builder.Luis.ILuisOptions,Microsoft.Bot.Builder.Luis.ILuisOptions)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Apply (source As ILuisOptions, target As ILuisOptions)" />
+      <MemberSignature Language="F#" Value="static member Apply : Microsoft.Bot.Builder.Luis.ILuisOptions * Microsoft.Bot.Builder.Luis.ILuisOptions -&gt; unit" Usage="Microsoft.Bot.Builder.Luis.Extensions.Apply (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri BuildUri(class Microsoft.Bot.Builder.Luis.ILuisService service, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BuildUri (service As ILuisService, text As String) As Uri" />
+      <MemberSignature Language="F#" Value="static member BuildUri : Microsoft.Bot.Builder.Luis.ILuisService * string -&gt; Uri" Usage="Microsoft.Bot.Builder.Luis.Extensions.BuildUri (service, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart Next(valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart part) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.Next(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Next (part As BuiltIn.DateTime.DayPart) As BuiltIn.DateTime.DayPart" />
+      <MemberSignature Language="F#" Value="static member Next : Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart -&gt; Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart" Usage="Microsoft.Bot.Builder.Luis.Extensions.Next part" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Resolution&gt; ParseResolutions(class Microsoft.Bot.Builder.Luis.IResolutionParser parser, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions(Microsoft.Bot.Builder.Luis.IResolutionParser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Iterator Function ParseResolutions (parser As IResolutionParser, entities As IEnumerable(Of EntityRecommendation)) As IEnumerable(Of Resolution)" />
+      <MemberSignature Language="F#" Value="static member ParseResolutions : Microsoft.Bot.Builder.Luis.IResolutionParser * seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; -&gt; seq&lt;Microsoft.Bot.Builder.Luis.Resolution&gt;" Usage="Microsoft.Bot.Builder.Luis.Extensions.ParseResolutions (parser, entities)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.Luis.LuisRequest request, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.LuisRequest,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function QueryAsync (service As ILuisService, request As LuisRequest, token As CancellationToken) As Task(Of LuisResult)" />
+      <MemberSignature Language="F#" Value="static member QueryAsync : Microsoft.Bot.Builder.Luis.ILuisService * Microsoft.Bot.Builder.Luis.LuisRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;" Usage="Microsoft.Bot.Builder.Luis.Extensions.QueryAsync (service, request, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; QueryAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, string text, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.QueryAsync(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function QueryAsync (service As ILuisService, text As String, token As CancellationToken) As Task(Of LuisResult)" />
+      <MemberSignature Language="F#" Value="static member QueryAsync : Microsoft.Bot.Builder.Luis.ILuisService * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;" Usage="Microsoft.Bot.Builder.Luis.Extensions.QueryAsync (service, text, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFindEntity(class Microsoft.Bot.Builder.Luis.Models.LuisResult result, string type, [out] class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&amp; entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryFindEntity (result As LuisResult, type As String, ByRef entity As EntityRecommendation) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryFindEntity : Microsoft.Bot.Builder.Luis.Models.LuisResult * string *  -&gt; bool" Usage="Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity (result, type, entity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

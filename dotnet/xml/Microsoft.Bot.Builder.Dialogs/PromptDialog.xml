@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptDialog extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptDialog" />
+  <TypeSignature Language="F#" Value="type PromptDialog = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Attachment(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;&gt; resume, string prompt, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contentTypes, string retry, int32 attempts) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}},System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Attachment (context As IDialogContext, resume As ResumeAfter(Of IEnumerable(Of Attachment)), prompt As String, Optional contentTypes As IEnumerable(Of String) = null, Optional retry As String = null, Optional attempts As Integer = 3)" />
+      <MemberSignature Language="F#" Value="static member Attachment : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;seq&lt;Microsoft.Bot.Connector.Attachment&gt;&gt; * string * seq&lt;string&gt; * string * int -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Attachment (context, resume, prompt, contentTypes, retry, attempts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Choice&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!T&gt; resume, class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!!T&gt; promptOptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Builder.Dialogs.IPromptOptions{``0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Choice(Of T) (context As IDialogContext, resume As ResumeAfter(Of T), promptOptions As IPromptOptions(Of T), Optional recognizeChoices As Boolean = true, Optional recognizeNumbers As Boolean = true, Optional recognizeOrdinals As Boolean = true, Optional minScore As Double = 0.4)" />
+      <MemberSignature Language="F#" Value="static member Choice : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'T&gt; * Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;'T&gt; * bool * bool * bool * double -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice (context, resume, promptOptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="C#" Value="public static void Choice&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;T&gt; resume, System.Collections.Generic.IEnumerable&lt;T&gt; options, string prompt, string retry = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable&lt;string&gt; descriptions = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Choice&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!T&gt; resume, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; options, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="F#" Value="static member Choice : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'T&gt; * seq&lt;'T&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * seq&lt;string&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice (context, resume, options, prompt, retry, attempts, promptStyle, descriptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="C#" Value="public static void Choice&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;T&gt; resume, System.Collections.Generic.IDictionary&lt;T,System.Collections.Generic.IEnumerable&lt;T&gt;&gt; choices, string prompt, string retry = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable&lt;string&gt; descriptions = null, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Choice&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!T&gt; resume, class System.Collections.Generic.IDictionary`2&lt;!!T, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt;&gt; choices, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IDictionary{``0,System.Collections.Generic.IEnumerable{``0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="F#" Value="static member Choice : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'T&gt; * System.Collections.Generic.IDictionary&lt;'T, seq&lt;'T&gt;&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * seq&lt;string&gt; * bool * bool * bool * double -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice (context, resume, choices, prompt, retry, attempts, promptStyle, descriptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Confirm(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;bool&gt; resume, class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;string&gt; promptOptions, string[][] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Confirm (context As IDialogContext, resume As ResumeAfter(Of Boolean), promptOptions As IPromptOptions(Of String), Optional patterns As String()() = null)" />
+      <MemberSignature Language="F#" Value="static member Confirm : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;bool&gt; * Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;string&gt; * string[][] -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm (context, resume, promptOptions, patterns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="C#" Value="public static void Confirm (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;bool&gt; resume, string prompt, string retry = null, int attempts = 3, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, string[] options = null, string[][] patterns = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Confirm(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;bool&gt; resume, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, string[] options, string[][] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Boolean},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
+      <MemberSignature Language="F#" Value="static member Confirm : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;bool&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * string[] * string[][] -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Confirm (context, resume, prompt, retry, attempts, promptStyle, options, patterns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -263,6 +270,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Number(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;float64&gt; resume, string prompt, string retry, int32 attempts, string speak, valuetype System.Nullable`1&lt;float64&gt; min, valuetype System.Nullable`1&lt;float64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Number (context As IDialogContext, resume As ResumeAfter(Of Double), prompt As String, Optional retry As String = null, Optional attempts As Integer = 3, Optional speak As String = null, Optional min As Nullable(Of Double) = null, Optional max As Nullable(Of Double) = null)" />
+      <MemberSignature Language="F#" Value="static member Number : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;double&gt; * string * string * int * string * Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Number (context, resume, prompt, retry, attempts, speak, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Number(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;int64&gt; resume, string prompt, string retry, int32 attempts, string speak, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Number (context As IDialogContext, resume As ResumeAfter(Of Long), prompt As String, Optional retry As String = null, Optional attempts As Integer = 3, Optional speak As String = null, Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
+      <MemberSignature Language="F#" Value="static member Number : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;int64&gt; * string * string * int * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Number (context, resume, prompt, retry, attempts, speak, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -335,6 +344,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Text(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;string&gt; resume, string prompt, string retry, int32 attempts) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Text (context As IDialogContext, resume As ResumeAfter(Of String), prompt As String, Optional retry As String = null, Optional attempts As Integer = 3)" />
+      <MemberSignature Language="F#" Value="static member Text : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;string&gt; * string * string * int -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.Text (context, resume, prompt, retry, attempts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

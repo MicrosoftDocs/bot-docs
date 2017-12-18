@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Conversation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Conversation" />
   <TypeSignature Language="VB.NET" Value="Public Class Conversation" />
+  <TypeSignature Language="F#" Value="type Conversation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Autofac.IContainer Container" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Conversation.Container" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Container As IContainer" />
+      <MemberSignature Language="F#" Value="member this.Container : Autofac.IContainer" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Container" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public static void Disable (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.Disable(System.Type)" />
+      <MemberSignature Language="F#" Value="static member Disable : Type -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Disable type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="C#" Value="public static void Disable (Type type, Autofac.ContainerBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type, class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.Disable(System.Type,Autofac.ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="static member Disable : Type * Autofac.ContainerBuilder -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Disable (type, builder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, class Microsoft.Bot.Connector.IActivity toBot, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Builder.Dialogs.ResumptionCookie * Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync (resumptionCookie, toBot, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Connector.ConversationReference conversationReference, class Microsoft.Bot.Connector.IActivity toBot, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Connector.ConversationReference * Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync (conversationReference, toBot, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendAsync(class Microsoft.Bot.Connector.IMessageActivity toBot, class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;&gt; MakeRoot, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SendAsync (toBot As IMessageActivity, MakeRoot As Func(Of IDialog(Of Object)), Optional token As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="static member SendAsync : Microsoft.Bot.Connector.IMessageActivity * Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;obj&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync (toBot, MakeRoot, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateContainer(class System.Action`1&lt;class Autofac.ContainerBuilder&gt; update) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.UpdateContainer(System.Action{Autofac.ContainerBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateContainer (update As Action(Of ContainerBuilder))" />
+      <MemberSignature Language="F#" Value="static member UpdateContainer : Action&lt;Autofac.ContainerBuilder&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.UpdateContainer update" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

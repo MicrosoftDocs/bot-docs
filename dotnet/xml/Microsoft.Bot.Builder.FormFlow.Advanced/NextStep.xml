@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NextStep extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" />
   <TypeSignature Language="VB.NET" Value="Public Class NextStep" />
+  <TypeSignature Language="F#" Value="type NextStep = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (direction As StepDirection)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.NextStep : Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.NextStep direction" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;string&gt; names) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep.#ctor(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (names As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.NextStep : seq&lt;string&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.NextStep names" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Direction" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Direction As StepDirection " />
+      <MemberSignature Language="F#" Value="val mutable Direction : Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.NextStep.Direction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".field public string[] Names" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep.Names" />
       <MemberSignature Language="VB.NET" Value="Public Names As String() " />
+      <MemberSignature Language="F#" Value="val mutable Names : string[]" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.NextStep.Names" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

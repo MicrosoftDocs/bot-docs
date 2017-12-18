@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullComparer`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IComparer`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullComparer(Of T)&#xA;Implements IComparer(Of T)" />
+  <TypeSignature Language="F#" Value="type NullComparer&lt;'T&gt; = class&#xA;    interface IComparer&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;!T&gt; Instance" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of T) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Collections.Generic.IComparer&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.NullComparer&lt;'T&gt;.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1.System#Collections#Generic#IComparer&lt;T&gt;#Compare(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Function Compare (x As T, y As T) As Integer Implements IComparer(Of T).Compare" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

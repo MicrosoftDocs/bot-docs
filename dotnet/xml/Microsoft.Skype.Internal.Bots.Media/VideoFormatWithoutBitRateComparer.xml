@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoFormatWithoutBitRateComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.Skype.Bots.Media.VideoFormat&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer" />
   <TypeSignature Language="VB.NET" Value="Public Class VideoFormatWithoutBitRateComparer&#xA;Implements IEqualityComparer(Of VideoFormat)" />
+  <TypeSignature Language="F#" Value="type VideoFormatWithoutBitRateComparer = class&#xA;    interface IEqualityComparer&lt;VideoFormat&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -43,7 +44,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Skype.Bots.Media.VideoFormat x, class Microsoft.Skype.Bots.Media.VideoFormat y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer.Equals(Microsoft.Skype.Bots.Media.VideoFormat,Microsoft.Skype.Bots.Media.VideoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As VideoFormat, y As VideoFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Skype.Bots.Media.VideoFormat * Microsoft.Skype.Bots.Media.VideoFormat -&gt; bool" Usage="videoFormatWithoutBitRateComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -70,7 +75,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(class Microsoft.Skype.Bots.Media.VideoFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.VideoFormatWithoutBitRateComparer.GetHashCode(Microsoft.Skype.Bots.Media.VideoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (format As VideoFormat) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : Microsoft.Skype.Bots.Media.VideoFormat -&gt; int" Usage="videoFormatWithoutBitRateComparer.GetHashCode format" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSocket implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.IDataSocket" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSocket&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type IDataSocket = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs&gt; DataMediaReceived" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IDataSocket.DataMediaReceived" />
       <MemberSignature Language="VB.NET" Value="Event DataMediaReceived As EventHandler(Of DataMediaReceivedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.DataMediaReceived : EventHandler&lt;Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs&gt; " Usage="member this.DataMediaReceived : System.EventHandler&lt;Microsoft.Skype.Bots.Media.DataMediaReceivedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs&gt; DataSendStatusChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Bots.Media.IDataSocket.DataSendStatusChanged" />
       <MemberSignature Language="VB.NET" Value="Event DataSendStatusChanged As EventHandler(Of DataSendStatusChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.DataSendStatusChanged : EventHandler&lt;Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs&gt; " Usage="member this.DataSendStatusChanged : System.EventHandler&lt;Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class Microsoft.Skype.Bots.Media.DataMediaBuffer buffer, unsigned int32[] recipientIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.IDataSocket.Send(Microsoft.Skype.Bots.Media.DataMediaBuffer,System.UInt32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (buffer As DataMediaBuffer, recipientIds As UInteger())" />
+      <MemberSignature Language="F#" Value="abstract member Send : Microsoft.Skype.Bots.Media.DataMediaBuffer * uint32[] -&gt; unit" Usage="iDataSocket.Send (buffer, recipientIds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationChangedEventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type ConfigurationChangedEventArgs = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDataConfigurationChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.EnableDataConfigurationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDataConfigurationChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableDataConfigurationChanged : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.EnableDataConfigurationChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool LoggingConfigurationChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.LoggingConfigurationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property LoggingConfigurationChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LoggingConfigurationChanged : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.LoggingConfigurationChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool MinimumVersionChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.MinimumVersionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumVersionChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MinimumVersionChanged : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.MinimumVersionChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool PerfCounterConfigurationChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.PerfCounterConfigurationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property PerfCounterConfigurationChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PerfCounterConfigurationChanged : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.PerfCounterConfigurationChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool TelemetryConfigurationChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.TelemetryConfigurationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property TelemetryConfigurationChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TelemetryConfigurationChanged : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.TelemetryConfigurationChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool WhitelistChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.WhitelistChanged" />
       <MemberSignature Language="VB.NET" Value="Public Property WhitelistChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WhitelistChanged : bool with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ConfigurationChangedEventArgs.WhitelistChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

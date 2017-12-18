@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardImage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CardImage" />
   <TypeSignature Language="VB.NET" Value="Public Class CardImage" />
+  <TypeSignature Language="F#" Value="type CardImage = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string alt, class Microsoft.Bot.Connector.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional alt As String = null, Optional tap As CardAction = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.CardImage : string * string * Microsoft.Bot.Connector.CardAction -&gt; Microsoft.Bot.Connector.CardImage" Usage="new Microsoft.Bot.Connector.CardImage (url, alt, tap)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
@@ -66,10 +68,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Alt" />
       <MemberSignature Language="VB.NET" Value="Public Property Alt As String" />
+      <MemberSignature Language="F#" Value="member this.Alt : string with get, set" Usage="Microsoft.Bot.Connector.CardImage.Alt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -92,10 +95,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.CardAction Tap" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Tap" />
       <MemberSignature Language="VB.NET" Value="Public Property Tap As CardAction" />
+      <MemberSignature Language="F#" Value="member this.Tap : Microsoft.Bot.Connector.CardAction with get, set" Usage="Microsoft.Bot.Connector.CardImage.Tap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,10 +123,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Bot.Connector.CardImage.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

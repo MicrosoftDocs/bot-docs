@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeChoicesOptions implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPromptRecognizeChoicesOptions&#xA;Implements IPromptRecognizeValuesOptions" />
+  <TypeSignature Language="F#" Value="type IPromptRecognizeChoicesOptions = interface&#xA;    interface IPromptRecognizeValuesOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeAction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeAction As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeAction : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeValue As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeValue : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

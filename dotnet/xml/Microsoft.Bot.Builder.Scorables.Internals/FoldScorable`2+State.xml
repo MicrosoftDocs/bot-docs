@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit FoldScorable`2/State&lt;Item, Score&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State" />
   <TypeSignature Language="VB.NET" Value="Public Structure FoldScorable(Of Item, Score).State" />
+  <TypeSignature Language="F#" Value="type FoldScorable&lt;'Item, 'Score&gt;.State = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 ordinal, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; scorable, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ordinal As Integer, scorable As IScorable(Of Item, Score), state As Object)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State : int * Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt; * obj -&gt; Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State" Usage="new Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State (ordinal, scorable, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly int32 ordinal" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly ordinal As Integer " />
+      <MemberSignature Language="F#" Value="val mutable ordinal : int" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State.ordinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; scorable" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly scorable As IScorable(Of Item, Score) " />
+      <MemberSignature Language="F#" Value="val mutable scorable : Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State.scorable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="C#" Value="public readonly object state;" />
       <MemberSignature Language="ILAsm" Value=".field public initonly object state" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state" />
+      <MemberSignature Language="F#" Value="val mutable state : obj" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State.state" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

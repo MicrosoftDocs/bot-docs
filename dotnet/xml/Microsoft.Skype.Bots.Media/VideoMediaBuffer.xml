@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VideoMediaBuffer extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoMediaBuffer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class VideoMediaBuffer&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type VideoMediaBuffer = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int Data" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Data : nativeint with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -64,7 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="videoMediaBuffer.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -85,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit" Usage="videoMediaBuffer.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -113,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Long" />
+      <MemberSignature Language="F#" Value="member this.Length : int64 with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -134,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MediaSourceId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.MediaSourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaSourceId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.MediaSourceId : uint32 with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.MediaSourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -158,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat OriginalVideoFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.OriginalVideoFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginalVideoFormat As VideoFormat" />
+      <MemberSignature Language="F#" Value="member this.OriginalVideoFormat : Microsoft.Skype.Bots.Media.VideoFormat with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.OriginalVideoFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -187,6 +197,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Stride" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Stride" />
       <MemberSignature Language="VB.NET" Value="Public Property Stride As Integer" />
+      <MemberSignature Language="F#" Value="member this.Stride : int with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.Stride" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -211,6 +222,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 Timestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public Property Timestamp As Long" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : int64 with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -232,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Bots.Media.VideoFormat VideoFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.VideoMediaBuffer.VideoFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property VideoFormat As VideoFormat" />
+      <MemberSignature Language="F#" Value="member this.VideoFormat : Microsoft.Skype.Bots.Media.VideoFormat with get, set" Usage="Microsoft.Skype.Bots.Media.VideoMediaBuffer.VideoFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

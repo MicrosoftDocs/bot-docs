@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.AudioSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioSettings" />
+  <TypeSignature Language="F#" Value="type AudioSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 buffersizeInMs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.AudioSettings.#ctor(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffersizeInMs As UInteger)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Skype.Bots.Media.AudioSettings : uint32 -&gt; Microsoft.Skype.Bots.Media.AudioSettings" Usage="new Microsoft.Skype.Bots.Media.AudioSettings buffersizeInMs" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BufferSizeInMs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.AudioSettings.BufferSizeInMs" />
       <MemberSignature Language="VB.NET" Value="Public Property BufferSizeInMs As UInteger" />
+      <MemberSignature Language="F#" Value="member this.BufferSizeInMs : uint32 with get, set" Usage="Microsoft.Skype.Bots.Media.AudioSettings.BufferSizeInMs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

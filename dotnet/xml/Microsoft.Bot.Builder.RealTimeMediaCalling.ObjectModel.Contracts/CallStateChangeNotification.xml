@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallStateChangeNotification extends Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification" />
   <TypeSignature Language="VB.NET" Value="Public Class CallStateChangeNotification&#xA;Inherits NotificationBase" />
+  <TypeSignature Language="F#" Value="type CallStateChangeNotification = class&#xA;    inherit NotificationBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState CurrentState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.CurrentState" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentState As CallState" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState with get, set" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.CurrentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string StateChangeCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.StateChangeCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StateChangeCode As String" />
+      <MemberSignature Language="F#" Value="member this.StateChangeCode : string with get, set" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.CallStateChangeNotification.StateChangeCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

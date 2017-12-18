@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AwaitableFromItem`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!T&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1&lt;!T&gt;, class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AwaitableFromItem(Of T)&#xA;Implements IAwaitable(Of T), IAwaiter(Of T), INotifyCompletion" />
+  <TypeSignature Language="F#" Value="type AwaitableFromItem&lt;'T&gt; = class&#xA;    interface IAwaitable&lt;'T&gt;&#xA;    interface IAwaiter&lt;'T&gt;&#xA;    interface INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As T)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.AwaitableFromItem&lt;'T&gt; : 'T -&gt; Microsoft.Bot.Builder.Dialogs.AwaitableFromItem&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.AwaitableFromItem&lt;'T&gt; item" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -57,6 +59,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable&lt;T&gt;#GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Function GetAwaiter () As IAwaiter(Of T) Implements IAwaitable(Of T).GetAwaiter" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IAwaitable`1.GetAwaiter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -77,6 +82,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#GetResult" />
       <MemberSignature Language="VB.NET" Value="Function GetResult () As T Implements IAwaiter(Of T).GetResult" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.GetResult</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -97,6 +105,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#IsCompleted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAwaiter(Of T).IsCompleted" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.IsCompleted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -116,6 +127,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Sub OnCompleted (continuation As Action) Implements INotifyCompletion.OnCompleted" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

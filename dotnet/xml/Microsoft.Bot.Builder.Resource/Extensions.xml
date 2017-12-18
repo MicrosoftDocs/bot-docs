@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Resource.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ESCAPED_SEPARATOR" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR" />
       <MemberSignature Language="VB.NET" Value="Public Const ESCAPED_SEPARATOR As String " />
+      <MemberSignature Language="F#" Value="val mutable ESCAPED_SEPARATOR : string" Usage="Microsoft.Bot.Builder.Resource.Extensions.ESCAPED_SEPARATOR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeList(string[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function MakeList (ParamArray elements As String()) As String" />
+      <MemberSignature Language="F#" Value="static member MakeList : string[] -&gt; string" Usage="Microsoft.Bot.Builder.Resource.Extensions.MakeList elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeList(class System.Collections.Generic.IEnumerable`1&lt;string&gt; elements, string separator, string escape) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.MakeList(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MakeList (elements As IEnumerable(Of String), Optional separator As String = &quot;;&quot;, Optional escape As String = &quot;__semi&quot;) As String" />
+      <MemberSignature Language="F#" Value="static member MakeList : seq&lt;string&gt; * string * string -&gt; string" Usage="Microsoft.Bot.Builder.Resource.Extensions.MakeList (elements, separator, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string SEPARATOR" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR" />
       <MemberSignature Language="VB.NET" Value="Public Const SEPARATOR As String " />
+      <MemberSignature Language="F#" Value="val mutable SEPARATOR : string" Usage="Microsoft.Bot.Builder.Resource.Extensions.SEPARATOR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] SplitList(string str, string separator, string escape) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Resource.Extensions.SplitList(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SplitList (str As String, Optional separator As String = &quot;;&quot;, Optional escape As String = &quot;__semi&quot;) As String()" />
+      <MemberSignature Language="F#" Value="static member SplitList : string * string * string -&gt; string[]" Usage="Microsoft.Bot.Builder.Resource.Extensions.SplitList (str, separator, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

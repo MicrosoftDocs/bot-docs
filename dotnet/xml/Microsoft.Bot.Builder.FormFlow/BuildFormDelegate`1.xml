@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildFormDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function BuildFormDelegate(Of T)() As IForm(Of T) " />
+  <TypeSignature Language="F#" Value="type BuildFormDelegate&lt;'T (requires 'T : null)&gt; = delegate of unit -&gt; IForm&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

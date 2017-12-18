@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ErrorHandling extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ErrorHandling" />
   <TypeSignature Language="VB.NET" Value="Public Module ErrorHandling" />
+  <TypeSignature Language="F#" Value="type ErrorHandling = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,10 +22,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; HandleErrorAsync(class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync(Microsoft.Rest.HttpOperationResponse{Microsoft.Bot.Connector.ErrorResponse})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleErrorAsync (result As HttpOperationResponse(Of ErrorResponse)) As Task(Of ErrorResponse)" />
+      <MemberSignature Language="F#" Value="static member HandleErrorAsync : Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ErrorResponse&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ErrorResponse&gt;" Usage="Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -49,10 +51,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task HandleErrorAsync(class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync(Microsoft.Rest.HttpOperationResponse{System.Object})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleErrorAsync (result As HttpOperationResponse(Of Object)) As Task" />
+      <MemberSignature Language="F#" Value="static member HandleErrorAsync : Microsoft.Rest.HttpOperationResponse&lt;obj&gt; -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -77,10 +80,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!ObjectT&gt; HandleErrorAsync&lt;ObjectT&gt;(class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync``1(Microsoft.Rest.HttpOperationResponse{System.Object})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleErrorAsync(Of ObjectT) (result As HttpOperationResponse(Of Object)) As Task(Of ObjectT)" />
+      <MemberSignature Language="F#" Value="static member HandleErrorAsync : Microsoft.Rest.HttpOperationResponse&lt;obj&gt; -&gt; System.Threading.Tasks.Task&lt;'ObjectT&gt;" Usage="Microsoft.Bot.Connector.ErrorHandling.HandleErrorAsync result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

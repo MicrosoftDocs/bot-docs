@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogTaskManagerBotDataLoader extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogTaskManagerBotDataLoader&#xA;Implements IBotData" />
+  <TypeSignature Language="F#" Value="type DialogTaskManagerBotDataLoader = class&#xA;    interface IBotData" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotData inner, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager dialogTaskManager, class Microsoft.Bot.Connector.IActivity activity, class Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder localeFinder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager,Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IBotData, dialogTaskManager As IDialogTaskManager, activity As IActivity, localeFinder As ILocaleFinder)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader : Microsoft.Bot.Builder.Dialogs.Internals.IBotData * Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager * Microsoft.Bot.Connector.IActivity * Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder -&gt; Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader" Usage="new Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader (inner, dialogTaskManager, activity, localeFinder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,7 +52,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag ConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversationData As IBotDataBag" />
+      <MemberSignature Language="F#" Value="member this.ConversationData : Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.ConversationData" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -69,7 +75,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.FlushAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function FlushAsync (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogTaskManagerBotDataLoader.FlushAsync token" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -97,7 +107,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LoadAsync(valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.LoadAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadAsync (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LoadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.LoadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogTaskManagerBotDataLoader.LoadAsync token" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -125,7 +139,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag PrivateConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateConversationData As IBotDataBag" />
+      <MemberSignature Language="F#" Value="member this.PrivateConversationData : Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.PrivateConversationData" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -144,7 +162,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag UserData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IBotDataBag" />
+      <MemberSignature Language="F#" Value="member this.UserData : Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader.UserData" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

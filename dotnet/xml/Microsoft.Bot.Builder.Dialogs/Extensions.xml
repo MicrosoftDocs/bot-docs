@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHeroCard&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity message, string text, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; options, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.AddHeroCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub AddHeroCard(Of T) (message As IMessageActivity, text As String, options As IEnumerable(Of T), Optional descriptions As IEnumerable(Of String) = null)" />
+      <MemberSignature Language="F#" Value="static member AddHeroCard : Microsoft.Bot.Connector.IMessageActivity * string * seq&lt;'T&gt; * seq&lt;string&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.AddHeroCard (message, text, options, descriptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddKeyboardCard&lt;T&gt;(class Microsoft.Bot.Connector.IMessageActivity message, string text, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; options, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.AddKeyboardCard``1(Microsoft.Bot.Connector.IMessageActivity,System.String,System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub AddKeyboardCard(Of T) (message As IMessageActivity, text As String, options As IEnumerable(Of T), Optional descriptions As IEnumerable(Of String) = null)" />
+      <MemberSignature Language="F#" Value="static member AddKeyboardCard : Microsoft.Bot.Connector.IMessageActivity * string * seq&lt;'T&gt; * seq&lt;string&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.AddKeyboardCard (message, text, options, descriptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndConversation(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, string code) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.EndConversation(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub EndConversation (context As IDialogContext, code As String)" />
+      <MemberSignature Language="F#" Value="static member EndConversation : Microsoft.Bot.Builder.Dialogs.IDialogContext * string -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.EndConversation (context, code)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task Forward&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.Forward``1(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Forward(Of R) (stack As IDialogStack, child As IDialog(Of R), resume As ResumeAfter(Of R), message As IMessageActivity, Optional token As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="static member Forward : Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack * Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; * Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.Forward (stack, child, resume, message, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Get&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.Get``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Get(Of T) (bag As IBotDataBag, key As String) As T" />
+      <MemberSignature Language="F#" Value="static member Get : Microsoft.Bot.Builder.Dialogs.IBotDataBag * string -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.Get (bag, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetValue&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValue``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValue(Of T) (bag As IBotDataBag, key As String) As T" />
+      <MemberSignature Language="F#" Value="static member GetValue : Microsoft.Bot.Builder.Dialogs.IBotDataBag * string -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.GetValue (bag, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetValueOrDefault&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IBotDataBag bag, string key, !!T defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.GetValueOrDefault``1(Microsoft.Bot.Builder.Dialogs.IBotDataBag,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValueOrDefault(Of T) (bag As IBotDataBag, key As String, Optional defaultValue As T = null) As T" />
+      <MemberSignature Language="F#" Value="static member GetValueOrDefault : Microsoft.Bot.Builder.Dialogs.IBotDataBag * string * 'T -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.GetValueOrDefault (bag, key, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -265,6 +273,7 @@
       <MemberSignature Language="C#" Value="public static string GZipSerialize (this Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GZipSerialize(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.GZipSerialize(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)" />
+      <MemberSignature Language="F#" Value="static member GZipSerialize : Microsoft.Bot.Builder.Dialogs.ResumptionCookie -&gt; string" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.GZipSerialize resumptionCookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -294,6 +303,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task PostAsync (this Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, string text, string locale = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task PostAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, string text, string locale, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member PostAsync : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.PostAsync (botToUser, text, locale, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -332,6 +342,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeDouble(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDouble(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RecognizeDouble (recognizer As IPromptRecognizer, message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of Double))" />
+      <MemberSignature Language="F#" Value="static member RecognizeDouble : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer * Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDouble (recognizer, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -359,6 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;float64&gt;&gt; RecognizeDoubleInRange(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Nullable`1&lt;float64&gt; min, valuetype System.Nullable`1&lt;float64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDoubleInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Double},System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RecognizeDoubleInRange (recognizer As IPromptRecognizer, message As IMessageActivity, min As Nullable(Of Double), max As Nullable(Of Double)) As IEnumerable(Of RecognizeEntity(Of Double))" />
+      <MemberSignature Language="F#" Value="static member RecognizeDoubleInRange : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer * Microsoft.Bot.Connector.IMessageActivity * Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;double&gt;&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeDoubleInRange (recognizer, message, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -390,6 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeInteger(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeInteger(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RecognizeInteger (recognizer As IPromptRecognizer, message As IMessageActivity) As IEnumerable(Of RecognizeEntity(Of Long))" />
+      <MemberSignature Language="F#" Value="static member RecognizeInteger : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer * Microsoft.Bot.Connector.IMessageActivity -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;int64&gt;&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeInteger (recognizer, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -417,6 +430,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1&lt;int64&gt;&gt; RecognizeIntegerInRange(class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer recognizer, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeIntegerInRange(Microsoft.Bot.Builder.Dialogs.IPromptRecognizer,Microsoft.Bot.Connector.IMessageActivity,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RecognizeIntegerInRange (recognizer As IPromptRecognizer, message As IMessageActivity, min As Nullable(Of Long), max As Nullable(Of Long)) As IEnumerable(Of RecognizeEntity(Of Long))" />
+      <MemberSignature Language="F#" Value="static member RecognizeIntegerInRange : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer * Microsoft.Bot.Connector.IMessageActivity * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;int64&gt;&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.RecognizeIntegerInRange (recognizer, message, min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -447,6 +461,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SayAsync (this Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, string text, string speak = null, Microsoft.Bot.Builder.Dialogs.MessageOptions options = null, string locale = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SayAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, string text, string speak, class Microsoft.Bot.Builder.Dialogs.MessageOptions options, string locale, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.SayAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.String,System.String,Microsoft.Bot.Builder.Dialogs.MessageOptions,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SayAsync : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * string * string * Microsoft.Bot.Builder.Dialogs.MessageOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.SayAsync (botToUser, text, speak, options, locale, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -489,6 +504,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Wait(class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Extensions.Wait(Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Wait (stack As IDialogStack, resume As ResumeAfter(Of IMessageActivity))" />
+      <MemberSignature Language="F#" Value="static member Wait : Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Extensions.Wait (stack, resume)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

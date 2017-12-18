@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormDialog`1&lt;class T&gt; implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IFormDialog`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFormDialog(Of T)&#xA;Implements IDialog(Of T)" />
+  <TypeSignature Language="F#" Value="type IFormDialog&lt;'T (requires 'T : null)&gt; = interface&#xA;    interface IDialog&lt;'T (requires 'T : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Form" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.IFormDialog`1.Form" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Form As IForm(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Form : Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;'T (requires 'T : null)&gt;.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StartAsync extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.StartAsync" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function StartAsync(context As IDialogContext) As Task " />
+  <TypeSignature Language="F#" Value="type StartAsync = delegate of IDialogContext -&gt; Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>

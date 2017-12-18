@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RealTimeCallProcessor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor" />
   <TypeSignature Language="VB.NET" Value="Public Class RealTimeCallProcessor" />
+  <TypeSignature Language="F#" Value="type RealTimeCallProcessor = class&#xA;    interface IRealTimeCallProcessor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings settings, class System.Func`2&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService, class Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall&gt; makeBot) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.#ctor(Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings,System.Func{Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService,Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (settings As IRealTimeMediaCallServiceSettings, makeBot As Func(Of IRealTimeMediaCallService, IRealTimeMediaCall))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor : Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallServiceSettings * Func&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCallService, Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeMediaCall&gt; -&gt; Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor" Usage="new Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor (settings, makeBot)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -46,7 +48,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt; ProcessCallbackAsync(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessCallbackAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProcessCallbackAsync (content As String) As Task(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCallbackAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt;&#xA;override this.ProcessCallbackAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt;" Usage="realTimeCallProcessor.ProcessCallbackAsync content" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeCallProcessor.ProcessCallbackAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -76,7 +82,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt; ProcessIncomingCallAsync(string content, string skypeChainId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessIncomingCallAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProcessIncomingCallAsync (content As String, skypeChainId As String) As Task(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessIncomingCallAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt;&#xA;override this.ProcessIncomingCallAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt;" Usage="realTimeCallProcessor.ProcessIncomingCallAsync (content, skypeChainId)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeCallProcessor.ProcessIncomingCallAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -108,7 +118,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt; ProcessNotificationAsync(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.RealTimeCallProcessor.ProcessNotificationAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProcessNotificationAsync (content As String) As Task(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessNotificationAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt;&#xA;override this.ProcessNotificationAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ResponseResult&gt;" Usage="realTimeCallProcessor.ProcessNotificationAsync content" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.RealTimeMediaCalling.IRealTimeCallProcessor.ProcessNotificationAsync(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
         <AssemblyVersion>1.0.2.0</AssemblyVersion>

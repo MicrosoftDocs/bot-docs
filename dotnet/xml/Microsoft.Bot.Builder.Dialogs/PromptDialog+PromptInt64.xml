@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptInt64 extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;int64, int64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptDialog.PromptInt64&#xA;Inherits Prompt(Of Long, Long)" />
+  <TypeSignature Language="F#" Value="type PromptDialog.PromptInt64 = class&#xA;    inherit Prompt&lt;int64, int64&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.PromptOptions`1&lt;int64&gt; promptOptions, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As PromptOptions(Of Long), Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 : Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 (promptOptions, min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, string speak, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional speak As String = null, Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 : string * string * int * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 (prompt, retry, attempts, speak, min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Max" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Max As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.Max : Nullable&lt;int64&gt;" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Min" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Min As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.Min : Nullable&lt;int64&gt;" Usage="Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As Long) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptInt64.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

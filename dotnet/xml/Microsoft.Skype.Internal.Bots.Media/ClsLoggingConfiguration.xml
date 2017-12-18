@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClsLoggingConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class ClsLoggingConfiguration" />
+  <TypeSignature Language="F#" Value="type ClsLoggingConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Skype.Internal.Bots.Media.FormatOption&gt; ClsLoggerFormatOptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ClsLoggerFormatOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property ClsLoggerFormatOptions As Nullable(Of FormatOption)" />
+      <MemberSignature Language="F#" Value="member this.ClsLoggerFormatOptions : Nullable&lt;Microsoft.Skype.Internal.Bots.Media.FormatOption&gt; with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ClsLoggerFormatOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; ClsLoggerScenarioStrings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ClsLoggerScenarioStrings" />
       <MemberSignature Language="VB.NET" Value="Public Property ClsLoggerScenarioStrings As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ClsLoggerScenarioStrings : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ClsLoggerScenarioStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ClsLoggingConfiguration.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="clsLoggingConfiguration.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

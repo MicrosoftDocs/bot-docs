@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScorable`2&lt;- Item, + Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.IScorable`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IScorable(Of In Item, Out Score)" />
+  <TypeSignature Language="F#" Value="type IScorable&lt;'Item, 'Score&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DoneAsync (Item item, object state, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DoneAsync(!Item item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.IScorable`2.DoneAsync(`0,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DoneAsync : 'Item * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iScorable.DoneAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="C#" Value="public Score GetScore (Item item, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Score GetScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.IScorable`2.GetScore(`0,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetScore : 'Item * obj -&gt; 'Score" Usage="iScorable.GetScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="C#" Value="public bool HasScore (Item item, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.IScorable`2.HasScore(`0,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member HasScore : 'Item * obj -&gt; bool" Usage="iScorable.HasScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PostAsync (Item item, object state, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PostAsync(!Item item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.IScorable`2.PostAsync(`0,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member PostAsync : 'Item * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iScorable.PostAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;object&gt; PrepareAsync (Item item, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; PrepareAsync(!Item item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.IScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member PrepareAsync : 'Item * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="iScorable.PrepareAsync (item, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

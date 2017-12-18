@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PaymentOptions" />
+  <TypeSignature Language="F#" Value="type PaymentOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,10 +42,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; requestPayerName, valuetype System.Nullable`1&lt;bool&gt; requestPayerEmail, valuetype System.Nullable`1&lt;bool&gt; requestPayerPhone, valuetype System.Nullable`1&lt;bool&gt; requestShipping, string shippingType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Payments.PaymentOptions.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional requestPayerName As Nullable(Of Boolean) = null, Optional requestPayerEmail As Nullable(Of Boolean) = null, Optional requestPayerPhone As Nullable(Of Boolean) = null, Optional requestShipping As Nullable(Of Boolean) = null, Optional shippingType As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Payments.PaymentOptions : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Bot.Connector.Payments.PaymentOptions" Usage="new Microsoft.Bot.Connector.Payments.PaymentOptions (requestPayerName, requestPayerEmail, requestPayerPhone, requestShipping, shippingType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="requestPayerName" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -70,10 +72,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestPayerEmail" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerEmail" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestPayerEmail As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.RequestPayerEmail : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerEmail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,10 +100,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestPayerName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerName" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestPayerName As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.RequestPayerName : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,10 +128,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestPayerPhone" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerPhone" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestPayerPhone As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.RequestPayerPhone : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentOptions.RequestPayerPhone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,10 +156,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestShipping" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.RequestShipping" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestShipping As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.RequestShipping : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentOptions.RequestShipping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -178,10 +184,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ShippingType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Payments.PaymentOptions.ShippingType" />
       <MemberSignature Language="VB.NET" Value="Public Property ShippingType As String" />
+      <MemberSignature Language="F#" Value="member this.ShippingType : string with get, set" Usage="Microsoft.Bot.Connector.Payments.PaymentOptions.ShippingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

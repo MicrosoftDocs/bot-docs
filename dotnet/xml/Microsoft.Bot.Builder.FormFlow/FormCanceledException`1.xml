@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormCanceledException`1&lt;T&gt; extends Microsoft.Bot.Builder.FormFlow.FormCanceledException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1" />
   <TypeSignature Language="VB.NET" Value="Public Class FormCanceledException(Of T)&#xA;Inherits FormCanceledException" />
+  <TypeSignature Language="F#" Value="type FormCanceledException&lt;'T&gt; = class&#xA;    inherit FormCanceledException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, Optional inner As Exception = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.FormCanceledException&lt;'T&gt; : string * Exception -&gt; Microsoft.Bot.Builder.FormFlow.FormCanceledException&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.FormCanceledException&lt;'T&gt; (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T LastForm" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormCanceledException`1.LastForm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastForm As T" />
+      <MemberSignature Language="F#" Value="member this.LastForm : 'T" Usage="Microsoft.Bot.Builder.FormFlow.FormCanceledException&lt;'T&gt;.LastForm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

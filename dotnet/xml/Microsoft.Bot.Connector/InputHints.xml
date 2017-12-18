@@ -3,9 +3,10 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InputHints extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.InputHints" />
   <TypeSignature Language="VB.NET" Value="Public Class InputHints" />
+  <TypeSignature Language="F#" Value="type InputHints = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.11.1.0</AssemblyVersion>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +24,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string AcceptingInput" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.InputHints.AcceptingInput" />
       <MemberSignature Language="VB.NET" Value="Public Const AcceptingInput As String " />
+      <MemberSignature Language="F#" Value="val mutable AcceptingInput : string" Usage="Microsoft.Bot.Connector.InputHints.AcceptingInput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -43,10 +45,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string ExpectingInput" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.InputHints.ExpectingInput" />
       <MemberSignature Language="VB.NET" Value="Public Const ExpectingInput As String " />
+      <MemberSignature Language="F#" Value="val mutable ExpectingInput : string" Usage="Microsoft.Bot.Connector.InputHints.ExpectingInput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -63,10 +66,11 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string IgnoringInput" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.InputHints.IgnoringInput" />
       <MemberSignature Language="VB.NET" Value="Public Const IgnoringInput As String " />
+      <MemberSignature Language="F#" Value="val mutable IgnoringInput : string" Usage="Microsoft.Bot.Connector.InputHints.IgnoringInput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.11.1.0</AssemblyVersion>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

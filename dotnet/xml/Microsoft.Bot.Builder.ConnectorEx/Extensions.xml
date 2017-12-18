@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="C#" Value="public static string GZipSerialize (this Microsoft.Bot.Connector.ConversationReference conversationReference);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GZipSerialize(class Microsoft.Bot.Connector.ConversationReference conversationReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize(Microsoft.Bot.Connector.ConversationReference)" />
+      <MemberSignature Language="F#" Value="static member GZipSerialize : Microsoft.Bot.Connector.ConversationReference -&gt; string" Usage="Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize conversationReference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationReference ToConversationReference(class Microsoft.Bot.Builder.Dialogs.IAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToConversationReference (address As IAddress) As ConversationReference" />
+      <MemberSignature Language="F#" Value="static member ToConversationReference : Microsoft.Bot.Builder.Dialogs.IAddress -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationReference ToConversationReference (this Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationReference ToConversationReference(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)" />
+      <MemberSignature Language="F#" Value="static member ToConversationReference : Microsoft.Bot.Builder.Dialogs.ResumptionCookie -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference resumptionCookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationReference ToConversationReference(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Connector.IActivity)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToConversationReference (activity As IActivity) As ConversationReference" />
+      <MemberSignature Language="F#" Value="static member ToConversationReference : Microsoft.Bot.Connector.IActivity -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

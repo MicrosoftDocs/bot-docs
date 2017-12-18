@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConversationAddressComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConversationAddressComparer&#xA;Implements IEqualityComparer(Of IAddress)" />
+  <TypeSignature Language="F#" Value="type ConversationAddressComparer = class&#xA;    interface IEqualityComparer&lt;IAddress&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -50,6 +51,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer&lt;Microsoft#Bot#Builder#Dialogs#IAddress&gt;#Equals(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberSignature Language="VB.NET" Value="Function Equals (one As IAddress, two As IAddress) As Boolean Implements IEqualityComparer(Of IAddress).Equals" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -75,6 +79,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer.System#Collections#Generic#IEqualityComparer&lt;Microsoft#Bot#Builder#Dialogs#IAddress&gt;#GetHashCode(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <MemberSignature Language="VB.NET" Value="Function GetHashCode (address As IAddress) As Integer Implements IEqualityComparer(Of IAddress).GetHashCode" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

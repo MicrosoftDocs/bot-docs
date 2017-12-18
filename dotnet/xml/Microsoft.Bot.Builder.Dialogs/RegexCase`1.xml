@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegexCase`1&lt;R&gt; extends Microsoft.Bot.Builder.Dialogs.Case`2&lt;string, !R&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.RegexCase`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegexCase(Of R)&#xA;Inherits Case(Of String, R)" />
+  <TypeSignature Language="F#" Value="type RegexCase&lt;'R&gt; = class&#xA;    inherit Case&lt;string, 'R&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="C#" Value="public RegexCase (System.Text.RegularExpressions.Regex regex, Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.RegularExpressions.Regex regex, class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;string, !R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.RegexCase`1.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,`0})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.RegexCase&lt;'R&gt; : System.Text.RegularExpressions.Regex * Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.RegexCase&lt;'R&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.RegexCase&lt;'R&gt; (regex, selector)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

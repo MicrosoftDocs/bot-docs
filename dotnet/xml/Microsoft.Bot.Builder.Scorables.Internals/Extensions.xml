@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class System.Reflection.ParameterInfo&gt; CachedParameters(class System.Reflection.MethodBase method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.CachedParameters(System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CachedParameters (method As MethodBase) As IReadOnlyList(Of ParameterInfo)" />
+      <MemberSignature Language="F#" Value="static member CachedParameters : System.Reflection.MethodBase -&gt; System.Collections.Generic.IReadOnlyList&lt;System.Reflection.ParameterInfo&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.CachedParameters method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class System.Type&gt; CachedParameterTypes(class System.Reflection.MethodBase method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.CachedParameterTypes(System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CachedParameterTypes (method As MethodBase) As IReadOnlyList(Of Type)" />
+      <MemberSignature Language="F#" Value="static member CachedParameterTypes : System.Reflection.MethodBase -&gt; System.Collections.Generic.IReadOnlyList&lt;Type&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.CachedParameterTypes method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="C#" Value="public static bool CanResolve (this Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, Type type, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanResolve(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Type type, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="static member CanResolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Type * obj -&gt; bool" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve (resolver, type, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="C#" Value="public static object Resolve (this Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, Type type, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Resolve(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Type type, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Resolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Type * obj -&gt; obj" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve (resolver, type, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolve&lt;T&gt;(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, object tag, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryResolve(Of T) (resolver As IResolver, tag As Object, ByRef value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryResolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * obj *  -&gt; bool" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve (resolver, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

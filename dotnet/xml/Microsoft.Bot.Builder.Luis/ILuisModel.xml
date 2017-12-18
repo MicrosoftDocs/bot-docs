@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisModel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisModel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ILuisModel" />
+  <TypeSignature Language="F#" Value="type ILuisModel = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion ApiVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.ApiVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As LuisApiVersion" />
+      <MemberSignature Language="F#" Value="member this.ApiVersion : Microsoft.Bot.Builder.Luis.LuisApiVersion" Usage="Microsoft.Bot.Builder.Luis.ILuisModel.ApiVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ModelID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.ModelID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelID As String" />
+      <MemberSignature Language="F#" Value="member this.ModelID : string" Usage="Microsoft.Bot.Builder.Luis.ILuisModel.ModelID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ILuisModel.ModifyRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function ModifyRequest (request As LuisRequest) As LuisRequest" />
+      <MemberSignature Language="F#" Value="abstract member ModifyRequest : Microsoft.Bot.Builder.Luis.LuisRequest -&gt; Microsoft.Bot.Builder.Luis.LuisRequest" Usage="iLuisModel.ModifyRequest request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.SubscriptionKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscriptionKey As String" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionKey : string" Usage="Microsoft.Bot.Builder.Luis.ILuisModel.SubscriptionKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UriBase" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisModel.UriBase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UriBase As Uri" />
+      <MemberSignature Language="F#" Value="member this.UriBase : Uri" Usage="Microsoft.Bot.Builder.Luis.ILuisModel.UriBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

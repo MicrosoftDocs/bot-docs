@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FoldScorable`2&lt;Item, Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;!Item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt;, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FoldScorable(Of Item, Score)&#xA;Inherits ScorableBase(Of Item, IReadOnlyList(Of FoldScorable(Of Item, Score).State), Score)" />
+  <TypeSignature Language="F#" Value="type FoldScorable&lt;'Item, 'Score&gt; = class&#xA;    inherit ScorableBase&lt;'Item, IReadOnlyList&lt;FoldScorable&lt;'Item, 'Score&gt;.State&gt;, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.#ctor(System.Collections.Generic.IComparer{`1},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Scorables.IScorable{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer(Of Score), scorables As IEnumerable(Of IScorable(Of Item, Score)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt; : System.Collections.Generic.IComparer&lt;'Score&gt; * seq&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt;&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt; (comparer, scorables)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IComparer`1&lt;!Score&gt; comparer" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.comparer" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly comparer As IComparer(Of Score) " />
+      <MemberSignature Language="F#" Value="val mutable comparer : System.Collections.Generic.IComparer&lt;'Score&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.comparer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task DoneAsync (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task DoneAsync(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.DoneAsync(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.DoneAsync : 'Item * System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="foldScorable.DoneAsync (item, states, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="C#" Value="protected override Score GetScore (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !Score GetScore(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.GetScore(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}})" />
+      <MemberSignature Language="F#" Value="override this.GetScore : 'Item * System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State&gt; -&gt; 'Score" Usage="foldScorable.GetScore (item, states)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="C#" Value="protected override bool HasScore (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasScore(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.HasScore(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}})" />
+      <MemberSignature Language="F#" Value="override this.HasScore : 'Item * System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State&gt; -&gt; bool" Usage="foldScorable.HasScore (item, states)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate&lt;!Item, !Score&gt; OnStage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStage" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property OnStage As FoldScorable(Of Item, Score).OnStageDelegate" />
+      <MemberSignature Language="F#" Value="member this.OnStage : Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.OnStageDelegate" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.OnStage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task PostAsync (Item item, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt; states, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task PostAsync(!Item item, class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt; states, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PostAsync(`0,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State{`0,`1}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.PostAsync : 'Item * System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="foldScorable.PostAsync (item, states, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;.State&gt;&gt; PrepareAsync (Item item, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State&lt;!Item, !Score&gt;&gt;&gt; PrepareAsync(!Item item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.PrepareAsync : 'Item * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.State&gt;&gt;" Usage="foldScorable.PrepareAsync (item, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;&gt; scorables" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.scorables" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly scorables As IEnumerable(Of IScorable(Of Item, Score)) " />
+      <MemberSignature Language="F#" Value="val mutable scorables : seq&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt;&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;'Item, 'Score&gt;.scorables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

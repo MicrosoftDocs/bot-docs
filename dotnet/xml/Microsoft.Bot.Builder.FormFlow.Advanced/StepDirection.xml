@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StepDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum StepDirection" />
+  <TypeSignature Language="F#" Value="type StepDirection = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Complete = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Complete" />
       <MemberSignature Language="VB.NET" Value="Complete" />
+      <MemberSignature Language="F#" Value="Complete = 0" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Named = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Named" />
       <MemberSignature Language="VB.NET" Value="Named" />
+      <MemberSignature Language="F#" Value="Named = 1" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Named" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Next = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Next" />
       <MemberSignature Language="VB.NET" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 2" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Previous = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Previous" />
       <MemberSignature Language="VB.NET" Value="Previous" />
+      <MemberSignature Language="F#" Value="Previous = 3" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Quit = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Quit" />
       <MemberSignature Language="VB.NET" Value="Quit" />
+      <MemberSignature Language="F#" Value="Quit = 4" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Quit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection Reset = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Reset" />
       <MemberSignature Language="VB.NET" Value="Reset" />
+      <MemberSignature Language="F#" Value="Reset = 5" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection.Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

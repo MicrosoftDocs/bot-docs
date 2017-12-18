@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogModule_MakeRoot extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogModule_MakeRoot&#xA;Inherits Module" />
+  <TypeSignature Language="F#" Value="type DialogModule_MakeRoot = class&#xA;    inherit Module" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot.Load(Autofac.ContainerBuilder)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="dialogModule_MakeRoot.Load builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(class Autofac.ILifetimeScope scope, class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;&gt; MakeRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot.Register(Autofac.ILifetimeScope,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Register (scope As ILifetimeScope, MakeRoot As Func(Of IDialog(Of Object)))" />
+      <MemberSignature Language="F#" Value="static member Register : Autofac.ILifetimeScope * Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;obj&gt;&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot.Register (scope, MakeRoot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>

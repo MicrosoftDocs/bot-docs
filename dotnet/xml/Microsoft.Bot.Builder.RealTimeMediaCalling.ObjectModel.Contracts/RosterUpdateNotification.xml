@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RosterUpdateNotification extends Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.NotificationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification" />
   <TypeSignature Language="VB.NET" Value="Public Class RosterUpdateNotification&#xA;Inherits NotificationBase" />
+  <TypeSignature Language="F#" Value="type RosterUpdateNotification = class&#xA;    inherit NotificationBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant&gt; Participants" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Participants" />
       <MemberSignature Language="VB.NET" Value="Public Property Participants As IEnumerable(Of RosterParticipant)" />
+      <MemberSignature Language="F#" Value="member this.Participants : seq&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterParticipant&gt; with get, set" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Participants" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.RosterUpdateNotification.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="rosterUpdateNotification.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>

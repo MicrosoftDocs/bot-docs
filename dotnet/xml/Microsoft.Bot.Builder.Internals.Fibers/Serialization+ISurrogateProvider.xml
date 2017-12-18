@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract Serialization/ISurrogateProvider implements class System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface Serialization.ISurrogateProvider&#xA;Implements ISerializationSurrogate" />
+  <TypeSignature Language="F#" Value="type Serialization.ISurrogateProvider = interface&#xA;    interface ISerializationSurrogate" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="C#" Value="public bool Handles (Type type, System.Runtime.Serialization.StreamingContext context, out int priority);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Handles(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] int32&amp; priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <MemberSignature Language="F#" Value="abstract member Handles : Type * System.Runtime.Serialization.StreamingContext *  -&gt; bool" Usage="iSurrogateProvider.Handles (type, context, priority)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

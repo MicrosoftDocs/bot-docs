@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITelemetryWriter implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITelemetryWriter&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ITelemetryWriter = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(string applicationId, class Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration configuration, bool isTest, string mediaStackVersion, string mediaBotsVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.Initialize(System.String,Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration,System.Boolean,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (applicationId As String, configuration As TelemetryConfiguration, isTest As Boolean, mediaStackVersion As String, mediaBotsVersion As String)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration * bool * string * string -&gt; unit" Usage="iTelemetryWriter.Initialize (applicationId, configuration, isTest, mediaStackVersion, mediaBotsVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTelemetryConfiguration(class Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration configuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.SetTelemetryConfiguration(Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetTelemetryConfiguration (configuration As TelemetryConfiguration)" />
+      <MemberSignature Language="F#" Value="abstract member SetTelemetryConfiguration : Microsoft.Skype.Internal.Bots.Media.TelemetryConfiguration -&gt; unit" Usage="iTelemetryWriter.SetTelemetryConfiguration configuration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLogFilePlayerMetrics(class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; metricsData, bool isTest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogFilePlayerMetrics(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLogFilePlayerMetrics (metricsData As IList(Of KeyValuePair(Of String, String)), isTest As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLogFilePlayerMetrics : System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * bool -&gt; bool" Usage="iTelemetryWriter.TryLogFilePlayerMetrics (metricsData, isTest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLogSocketMetrics(class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; metricsData, bool isTest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogSocketMetrics(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLogSocketMetrics (metricsData As IList(Of KeyValuePair(Of String, String)), isTest As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLogSocketMetrics : System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * bool -&gt; bool" Usage="iTelemetryWriter.TryLogSocketMetrics (metricsData, isTest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLogWavValidationFailure(class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; metricsData, bool isTest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.ITelemetryWriter.TryLogWavValidationFailure(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLogWavValidationFailure (metricsData As IList(Of KeyValuePair(Of String, String)), isTest As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLogWavValidationFailure : System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * bool -&gt; bool" Usage="iTelemetryWriter.TryLogWavValidationFailure (metricsData, isTest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

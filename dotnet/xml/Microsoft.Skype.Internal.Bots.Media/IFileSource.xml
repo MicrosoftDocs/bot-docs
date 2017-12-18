@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.IFileSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFileSource" />
+  <TypeSignature Language="F#" Value="type IFileSource = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -18,6 +19,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Internal.Bots.Media.FileSourceFormat FileSourceFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.IFileSource.FileSourceFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSourceFormat As FileSourceFormat" />
+      <MemberSignature Language="F#" Value="member this.FileSourceFormat : Microsoft.Skype.Internal.Bots.Media.FileSourceFormat" Usage="Microsoft.Skype.Internal.Bots.Media.IFileSource.FileSourceFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -37,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Internal.Bots.Media.FileSourceSettings FileSourceSettings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.IFileSource.FileSourceSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSourceSettings As FileSourceSettings" />
+      <MemberSignature Language="F#" Value="member this.FileSourceSettings : Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" Usage="Microsoft.Skype.Internal.Bots.Media.IFileSource.FileSourceSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -56,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 RawFileSizeInBytes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.IFileSource.RawFileSizeInBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawFileSizeInBytes As Integer" />
+      <MemberSignature Language="F#" Value="member this.RawFileSizeInBytes : int" Usage="Microsoft.Skype.Internal.Bots.Media.IFileSource.RawFileSizeInBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -75,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadNextBlock(unsigned int8[] readBytes, int32 currentPosition, int32 bytesToRead) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.IFileSource.ReadNextBlock(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadNextBlock (readBytes As Byte(), currentPosition As Integer, bytesToRead As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member ReadNextBlock : byte[] * int * int -&gt; int" Usage="iFileSource.ReadNextBlock (readBytes, currentPosition, bytesToRead)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

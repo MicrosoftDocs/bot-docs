@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DelegatingResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DelegatingResolver&#xA;Implements IResolver" />
+  <TypeSignature Language="F#" Value="type DelegatingResolver = class&#xA;    interface IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.#ctor(Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (inner As IResolver)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver -&gt; Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" Usage="new Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver inner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.inner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly inner As IResolver " />
+      <MemberSignature Language="F#" Value="val mutable inner : Microsoft.Bot.Builder.Scorables.Internals.IResolver" Usage="Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.inner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -61,7 +64,11 @@
       <MemberSignature Language="C#" Value="public virtual bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver.TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberSignature Language="F#" Value="abstract member TryResolve : Type * obj *  -&gt; bool&#xA;override this.TryResolve : Type * obj *  -&gt; bool" Usage="delegatingResolver.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.12.2.4</AssemblyVersion>

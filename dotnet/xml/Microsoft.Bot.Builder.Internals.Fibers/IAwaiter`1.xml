@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAwaiter`1&lt;+ T&gt; implements class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAwaiter(Of Out T)&#xA;Implements INotifyCompletion" />
+  <TypeSignature Language="F#" Value="type IAwaiter&lt;'T&gt; = interface&#xA;    interface INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T GetResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.GetResult" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResult () As T" />
+      <MemberSignature Language="F#" Value="abstract member GetResult : unit -&gt; 'T" Usage="iAwaiter.GetResult " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;'T&gt;.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

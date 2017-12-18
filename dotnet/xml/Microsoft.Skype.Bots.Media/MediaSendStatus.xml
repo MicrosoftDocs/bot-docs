@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaSendStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.MediaSendStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum MediaSendStatus" />
+  <TypeSignature Language="F#" Value="type MediaSendStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaSendStatus Active = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaSendStatus.Active" />
       <MemberSignature Language="VB.NET" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 1" Usage="Microsoft.Skype.Bots.Media.MediaSendStatus.Active" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.MediaSendStatus Inactive = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.MediaSendStatus.Inactive" />
       <MemberSignature Language="VB.NET" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 0" Usage="Microsoft.Skype.Bots.Media.MediaSendStatus.Inactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

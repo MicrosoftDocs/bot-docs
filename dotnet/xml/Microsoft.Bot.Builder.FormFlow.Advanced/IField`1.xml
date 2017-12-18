@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IField`1&lt;class T&gt; implements class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1&lt;!T&gt;, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources, class Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IField(Of T)&#xA;Implements IFieldDescription, IFieldPrompt(Of T), IFieldResources, IFieldState(Of T)" />
+  <TypeSignature Language="F#" Value="type IField&lt;'T (requires 'T : null)&gt; = interface&#xA;    interface IFieldState&lt;'T (requires 'T : null)&gt;&#xA;    interface IFieldDescription&#xA;    interface IFieldPrompt&lt;'T (requires 'T : null)&gt;&#xA;    interface IFieldResources" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Form" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Form" />
       <MemberSignature Language="VB.NET" Value="Public Property Form As IForm(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Form : Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt; with get, set" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt;.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt;.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

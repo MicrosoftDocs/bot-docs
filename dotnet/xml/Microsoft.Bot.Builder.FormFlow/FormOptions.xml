@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormOptions" />
+  <TypeSignature Language="F#" Value="type FormOptions = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Bot.Builder.FormFlow.FormOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormOptions PromptFieldsWithValues = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormOptions.PromptFieldsWithValues" />
       <MemberSignature Language="VB.NET" Value="PromptFieldsWithValues" />
+      <MemberSignature Language="F#" Value="PromptFieldsWithValues = 2" Usage="Microsoft.Bot.Builder.FormFlow.FormOptions.PromptFieldsWithValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.FormOptions PromptInStart = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.FormOptions.PromptInStart" />
       <MemberSignature Language="VB.NET" Value="PromptInStart" />
+      <MemberSignature Language="F#" Value="PromptInStart = 1" Usage="Microsoft.Bot.Builder.FormFlow.FormOptions.PromptInStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

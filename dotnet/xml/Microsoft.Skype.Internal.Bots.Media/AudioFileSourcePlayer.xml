@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFileSourcePlayer extends System.Object implements class Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer" />
   <TypeSignature Language="VB.NET" Value="Public Class AudioFileSourcePlayer&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type AudioFileSourcePlayer = class&#xA;    interface IInternalFileSourcePlayer&#xA;    interface IFileSourcePlayer&#xA;    interface IDisposable&#xA;    interface IMediaPlayer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
     <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="C#" Value="public AudioFileSourcePlayer (Microsoft.Skype.Bots.Media.AudioSocket audioSocket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Skype.Bots.Media.AudioSocket audioSocket) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.#ctor(Microsoft.Skype.Bots.Media.AudioSocket)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer : Microsoft.Skype.Bots.Media.AudioSocket -&gt; Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer" Usage="new Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer audioSocket" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -43,7 +45,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="audioFileSourcePlayer.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -64,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="audioFileSourcePlayer.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -86,7 +93,11 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; FileSourcePlayerEndOfFile" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.FileSourcePlayerEndOfFile" />
       <MemberSignature Language="VB.NET" Value="Public Event FileSourcePlayerEndOfFile As EventHandler(Of FileSourcePlayerEndOfFileEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.FileSourcePlayerEndOfFile : EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; " Usage="member this.FileSourcePlayerEndOfFile : System.EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.FileSourcePlayerEndOfFile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -104,7 +115,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFileSource(class Microsoft.Skype.Internal.Bots.Media.IFileSource fileSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.LoadFileSource(Microsoft.Skype.Internal.Bots.Media.IFileSource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadFileSource (fileSource As IFileSource)" />
+      <MemberSignature Language="F#" Value="abstract member LoadFileSource : Microsoft.Skype.Internal.Bots.Media.IFileSource -&gt; unit&#xA;override this.LoadFileSource : Microsoft.Skype.Internal.Bots.Media.IFileSource -&gt; unit" Usage="audioFileSourcePlayer.LoadFileSource fileSource" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.LoadFileSource(Microsoft.Skype.Internal.Bots.Media.IFileSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -125,7 +140,11 @@
       <MemberSignature Language="C#" Value="public void Play (Microsoft.Skype.Internal.Bots.Media.PlaySettings playSettings = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Play(class Microsoft.Skype.Internal.Bots.Media.PlaySettings playSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Play(Microsoft.Skype.Internal.Bots.Media.PlaySettings)" />
+      <MemberSignature Language="F#" Value="abstract member Play : Microsoft.Skype.Internal.Bots.Media.PlaySettings -&gt; unit&#xA;override this.Play : Microsoft.Skype.Internal.Bots.Media.PlaySettings -&gt; unit" Usage="audioFileSourcePlayer.Play playSettings" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Play(Microsoft.Skype.Internal.Bots.Media.PlaySettings)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -147,7 +166,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit&#xA;override this.Stop : unit -&gt; unit" Usage="audioFileSourcePlayer.Stop " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Stop</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
         <AssemblyVersion>1.7.0.26</AssemblyVersion>
@@ -166,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 TotalBytesProvided" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalBytesProvided" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalBytesProvided As ULong" />
+      <MemberSignature Language="F#" Value="member this.TotalBytesProvided : uint64" Usage="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalBytesProvided" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
@@ -185,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TotalSamplesProvided" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalSamplesProvided" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalSamplesProvided As UInteger" />
+      <MemberSignature Language="F#" Value="member this.TotalSamplesProvided : uint32" Usage="Microsoft.Skype.Internal.Bots.Media.AudioFileSourcePlayer.TotalSamplesProvided" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>

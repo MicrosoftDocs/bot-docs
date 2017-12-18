@@ -9,14 +9,14 @@ ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
 # Bot Service templates
-Bot Service includes five templates to help you get started with building bots. These templates provide a fully functional bot out of the box to help you get started quickly. When you [create a bot](bot-service-quickstart.md), you can choose a template based on C# code or Node.js code.
+Bot Service includes five templates to help you get started with building bots. These templates provide a fully functional bot out of the box to help you get started quickly. When you [create a bot](bot-service-quickstart.md), you choose a template and the SDK language for your bot.
 
-![Bot templates](~/media/bot-service-concept-templates/sdk-bot-cs-templates.png)
+Each template provides a starting point that is based on a core capability for a bot. 
 
 ## Basic bot
-To create a bot that uses dialogs to respond to user input, choose the Basic template. The **Basic bot** template creates a bot that has the minimum set of files and code to get started. The bot echoes back to the user whatever they type in. You can use this template to get started building conversation flow in your bot.
+To create a bot that uses dialogs to respond to user input, choose the Basic template. The **Basic** template creates a bot that has the minimum set of files and code to get started. The bot echoes back to the user whatever they type in. You can use this template to get started building conversation flow in your bot.
 
-## Forms bot
+## Form bot
 To create a bot that collects input from a user via a guided conversation, choose the **Form** template. A form bot is designed to collect a specific set of information from the user. For example, a bot that is designed to obtain a user's sandwich order would need to collect information such as type of bread, choice of toppings, size of sandwich, and so on.
 
 Bots created with the Form template in the C# language use [FormFlow](dotnet/bot-builder-dotnet-formflow.md) to manage forms, and bots created with the Form template in the Node.js language use [waterfalls](nodejs/bot-builder-nodejs-dialog-waterfall.md) to manage forms.
