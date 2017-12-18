@@ -37,13 +37,13 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: "$(Build.Repository.LocalPath)\mdoc-fw-out"
+    PathtoPublish: '$(Build.Repository.LocalPath)\mdoc-fw-out'
     ArtifactName: "$(Build.BuildNumber)-artifacts"
     ArtifactType: "Container"
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: "$(Build.Repository.LocalPath)\nue-out"
+    PathtoPublish: '$(Build.Repository.LocalPath)\nue-out'
     ArtifactName: "$(Build.BuildNumber)-artifacts"
     ArtifactType: "Container"
 
