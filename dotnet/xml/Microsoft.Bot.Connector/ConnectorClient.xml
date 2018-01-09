@@ -45,7 +45,7 @@
             
             # Client Libraries for the Bot Connector REST API
             
-            * [Bot Builder for C#](/en-us/csharp/builder/sdkreference/)
+            * [Bot Builder for C#](/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart)
             * [Bot Builder for Node.js](/en-us/node/builder/overview/)
             * Generate your own from the [Connector API Swagger
             file](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json)
