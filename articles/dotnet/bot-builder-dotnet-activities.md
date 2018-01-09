@@ -20,7 +20,7 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 
 | Activity.Type | Interface | Description |
 |------|------|------|
-| [message](#messag) | IMessageActivity | Represents a communication between bot and user. |
+| [message](#message) | IMessageActivity | Represents a communication between bot and user. |
 | [conversationUpdate](#conversationupdate) | IConversationUpdateActivity | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
 | [contactRelationUpdate](#contactrelationupdate) | IContactRelationUpdateActivity | Indicates that the bot was added or removed from a user's contact list. |
 | [typing](#typing) | ITypingActivity | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
