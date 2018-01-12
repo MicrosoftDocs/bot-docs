@@ -1,3 +1,3 @@
 ---
-redirect_url: /bot-framework/bot-service-manage-channels
+redirect_url: /bot-framework/bot-service-channel-connect-bing
 ---
