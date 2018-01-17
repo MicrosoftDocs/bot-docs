@@ -35,11 +35,9 @@ Learn more about [language understanding][language] with Microsoft Cognitive Ser
 
 ## Knowledge extraction
 
-Cognitive Services provides five knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
+Cognitive Services provides four knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
-
-- The <a href="https://azure.microsoft.com/en-us/services/cognitive-services/recommendations/" target="_blank">Recommendations API</a> provides "frequently bought together" recommendations to a product, as well as personalized recommendations based on a user's history. Use this service to build and train a model based on data that you provide, and then use this model to add recommendations to your application.
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.    
 
