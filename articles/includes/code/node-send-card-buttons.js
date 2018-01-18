@@ -47,19 +47,19 @@ var msg = new builder.Message(session)
                 ],
                 "actions": [
                     {
-                        "type": "Action.Http",
+                        "type": "Action.OpenUrl",
                         "method": "POST",
                         "url": "http://foo.com",
                         "title": "Snooze"
                     },
                     {
-                        "type": "Action.Http",
+                        "type": "Action.OpenUrl",
                         "method": "POST",
                         "url": "http://foo.com",
                         "title": "I'll be late"
                     },
                     {
-                        "type": "Action.Http",
+                        "type": "Action.OpenUrl",
                         "method": "POST",
                         "url": "http://foo.com",
                         "title": "Dismiss"
