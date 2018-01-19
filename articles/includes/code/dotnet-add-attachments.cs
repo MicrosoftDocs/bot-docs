@@ -223,19 +223,19 @@ card.Body.Add(new ChoiceSet()
 });
 
 // Add buttons to the card.
-card.Actions.Add(new HttpAction()
+card.Actions.Add(new OpenUrlAction()
 {
     Url = "http://foo.com",
     Title = "Snooze"
 });
 
-card.Actions.Add(new HttpAction()
+card.Actions.Add(new OpenUrlAction()
 {
     Url = "http://foo.com",
     Title = "I'll be late"
 });
 
-card.Actions.Add(new HttpAction()
+card.Actions.Add(new OpenUrlAction()
 {
     Url = "http://foo.com",
     Title = "Dismiss"
