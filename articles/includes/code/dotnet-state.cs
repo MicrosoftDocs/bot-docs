@@ -36,19 +36,11 @@ await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id
 
 
 // <handleException>
-try
-{
-    // get user data
-    BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
-
-    // modify a property within user data 
-    userData.SetProperty<bool>("SentGreeting", true);
-
-    // save updated user data
-    await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
-}
-catch (HttpOperationException err)
-{
-    // handle error with HTTP status code 412 Precondition Failed
-}
+var builder = new ContainerBuilder();
+builder
+    .Register(c => new CachingBotDataStore(c.Resolve<ConnectorStore>(), CachingBotDataStoreConsistencyPolicy.LastWriteWins))
+    .As<IBotDataStore<BotData>>()
+    .AsSelf()
+    .InstancePerLifetimeScope();
+builder.Update(Conversation.Container);
 // </handleException>
