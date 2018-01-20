@@ -131,6 +131,9 @@ POST /api/conversations/{conversationId}/upload?userId={userId}
 | **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the [Message](#message-object) object that should serve as the container for the specified attachment(s). For more information, see [Send a message to the bot](bot-framework-rest-direct-line-1-1-send-message.md). |
 | **Returns** | No data is returned in body of the response. The service responds with an HTTP 204 status code if the message was sent successfully. The client may obtain its sent message (along with any messages that the bot has sent to the client) by using the [Get Messages](#get-messages) operation. | 
 
+> [!NOTE]
+> Uploaded files are deleted after 24 hours.
+
 ## Schema
 
 Direct Line 1.1 schema is a simplified copy of the Bot Framework v1 schema that includes the following objects.
