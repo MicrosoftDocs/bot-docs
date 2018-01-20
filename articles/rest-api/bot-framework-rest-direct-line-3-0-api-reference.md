@@ -169,6 +169,9 @@ POST /v3/directline/conversations/{conversationId}/upload?userId={userId}
 | **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object that should serve as the container for the specified attachment(s). For more information, see [Send an activity to the bot](bot-framework-rest-direct-line-3-0-send-activity.md). |
 | **Returns** | A [ResourceResponse](bot-framework-rest-connector-api-reference.md#resourceresponse-object) that contains an `id` property which specifies the ID of the Activity that was sent to the bot. | 
 
+> [!NOTE]
+> Uploaded files are deleted after 24 hours.
+
 ## Schema
 
 Direct Line 3.0 schema includes all of the objects that are defined by the [Bot Framework v3 schema](bot-framework-rest-connector-api-reference.md#objects) as well as the `ActivitySet` object and the `Conversation` object.
