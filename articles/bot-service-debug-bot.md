@@ -155,6 +155,7 @@ Additionally, you can view log details the console window.
 
 ![Console window](~/media/csharp-azureservice-debug-debughostlogging.png)
 
+::: moniker range="azure-bot-service-4.0"
 ### Debug a Consumption plan C# bot using breakpoints in Visual Studio
 
 To debug your bot using breakpoints in Visual Studio 2017, stop the **DebugHost.cmd** script, and load the solution for your project (included as part of the repository) in Visual Studio. Then, click **Task Runner Explorer** at the bottom of the Visual Studio window.
@@ -173,5 +174,7 @@ You can also set breakpoints for your bot. The breakpoints are hit only after cl
 > If you cannot successfully set a breakpoint, a syntax error likely exists in your code. To troubleshoot, look for compile errors in the **Task Runner Explorer** window after you try to send messages to your bot.
 
 ![Debug in Visual Studio](~/media/csharp-azureservice-debug-breakpoint.png)
+
+::: moniker-end
 
 ## Next steps
