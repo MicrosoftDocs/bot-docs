@@ -1,26 +1,28 @@
 {
     "build": {
-        "content": [{
-            "files": [
-                "**/**.md",
-                "**/**.yml",
-                "dotnet/**.md",
-                "node/**.md"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "**/includes/**",
-                "**/_themes/**",
-                "**/_themes.pdf/**",
-                "bot-framework/**",
-                "README.md",
-                "LICENSE",
-                "LICENSE-CODE",
-                "ThirdPartyNotices",
-                "**/_deprecated/**"
-            ]
-        }],
-        "resource": [{
+        "content": [            
+        {
+        "group": "bot-service",
+        "src": ".",
+        "dest": ".",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],        
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+        
+        
+        ],
+        "resource": [
+            {
             "files": [
                 "**/*.png",
                 "**/*.jpg"
@@ -30,7 +32,23 @@
                 "bot-framework/**",
                 "~/includes/**"
             ]
-        }],
+        },
+        {
+        "group": "bot-service",
+        "src": ".",
+        "dest": ".",
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]        
+      }
+        
+        ],
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
@@ -57,6 +75,13 @@
             }
         },
         "template": [],
-        "dest": "bot-framework"
+        "dest": "bot-framework",
+        "groups": {
+          "bot-service": {
+           "dest": "bot-service",
+           "moniker_range": ">= azure-bot-service-3.0"
+      }
+    }
+        
     }
 }
