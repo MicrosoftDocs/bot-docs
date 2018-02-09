@@ -89,9 +89,44 @@ or some redirection directive such as `context.Forward()` or `context.Call()`.
 A dialog method that does not end with one of these will result in an error 
 (because the framework does not know what action to take the next time the user sends a message).
 
+## Passing state between dialogs
+
+Whilst you can store state in bot state, you can pass data between different dialogs by overloading your dialog class constructor.
+
+```cs
+[Serializable]
+public class AgeDialog : IDialog<int>
+{
+    private string name;
+
+    public AgeDialog(string name)
+    {
+        this.name = name;
+    }
+}
+ ```
+
+Calling dialog code, passing in name value from the user.
+
+```cs
+private async Task NameDialogResumeAfter(IDialogContext context, IAwaitable<string> result)
+{
+    try
+    {
+        this.name = await result;
+        context.Call(new AgeDialog(this.name), this.AgeDialogResumeAfter);
+    }
+    catch (TooManyAttemptsException)
+    {
+        await context.PostAsync("I'm sorry, I'm having issues understanding you. Let's try again.");
+        await this.SendWelcomeMessageAsync(context);
+    }
+}
+```
+
 ## Sample code 
 
-For a complete sample that shows how to manage a conversation by using dialogs in the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub. 
+For a complete sample that shows how to manage a conversation by using dialogs in the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub.
 
 ## Additional resources
 
