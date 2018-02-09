@@ -20,7 +20,11 @@ To add the Cortana channel, open the bot in the [Azure Portal](https://portal.az
 ## General bot information
 All fields marked with an asterisk (*) are required. Bots must be published on the Bot Framework before they can be connected to Cortana.
 
-![Provide general information](~/media/channels/cortana_generalInfo.png)
+> [!NOTE]
+> Currently, general bot information is only available as **READONLY** on the Azure portal. 
+> These fields can now be managed from the **Store Workspace** - see [documentation](https://help.knowledge.store/ux_overview/workspace/index.html) for details
+
+![Provide general information](~/media/channels/cortana_generalInfo-readonly.png)
 
 ### Skill Icon 
 Select a custom icon to represent this bot.
@@ -34,48 +38,34 @@ The name that Cortana will recognize and use to invoke this skill when spoken al
 See the [Invocation Name Guidelines][invocation] for more information on how to choose this phrase.
 
 ### Skill description 
-Describe the skill. This is used where bots are discoverable, like the Microsoft store.
+Description of the skill. This is used where skills are discoverable, like the Microsoft [Store](https://help.knowledge.store/ux_overview/store/index.html?highlight=store).
 
 ### Short description 
 This summary will be used to describe the skill in Cortana’s Notebook.
 
+
+## Register a bot to the Knowledge Store
+
+Scroll down to **Discovery and Management** 
+
+![Register the Bot](~/media/channels/discovery_and_management_register_1.png)
+
 > [!NOTE]
-> For basic skills, this is all that is required. Click **Connect to Cortana** to complete the connection.
-> For more advanced skills, add a connected account or configure access to user profile and contextual information.
+> After you click **Register**, you will be redirected to the Store portal. 
 
-## Manage user identity 
-The default value is *Disabled*. If *Enabled*, the user will be required to log in before using this skill.
-Cortana can manage this skill's user identity and tokens across devices if an OAuth2 identity provider is added as a [connected service][connected].
+Click **Yes** to allow the Store to access your account information
 
-> [!NOTE]
-> Only **Auth Code Grant** authentication is supported. **Implicit Grant** is currently not supported. 
+![App Access Info](~/media/channels/app_access_info.png)
 
-![Define user profile request](~/media/channels/cortana-connectedAccount.png)
+Check the box to agree to the Store’s Terms of Use, and then click **Accept**.
 
-|Field|Description|
-|-----|-----|
-| Icon | The icon to display when the sign-in form is displayed. |
-| Account Name | The name to be shown when the sign-in form is displayed. |
-| Client ID for third-party services | The client id that Cortana needs as part of the OAuth flow. |
-| Client secret/password for third party services | The client secret Cortana needs as part of the OAuth flow. |
-| List of scopes | A list of scopes Cortana needs as part of the skill execution flow. |
-| Authorization URL | The URI Cortana will call to authorize the user. |
-| Token URL | The URI Cortana will call to fetch tokens. |
-| Client authentication scheme | The mechanism by which Cortana will pass a bearer token. |
-| Token option | How Cortana should obtain tokens. If unsure, select POST. |
-| Intranet toggle | Select if this skill’s connected service requires *intranet* access to authenticate users. If unsure, leave this blank.)
+![Terms of Use Accept](~/media/channels/terms_of_use_accept.png)
 
-## Request user profile data
-Cortana provides access to several different types of user profile information, which is useful in customizing the bot for different users. 
+Upon acceptance, you'll have the option of going through the **First Time User Experience** tutorial. At this point, your bot will be connected to the cortana channel. 
 
-![Define user profile request](~/media/channels/cortana-AddUserProfile.png)
+![First Time User Tutorial](~/media/channels/cortana_skills-slide-01.png)
 
-1. Click **Add a user profile request**.
-2. Click **Select Data** and then select the user profile information from the drop-down list. 
-3. Add a **Friendly name** to identify this information in the `UserInfo` [entity][CortanaEntity].
-4. Click **Remove** to remove this request for data or click **Add a user profile request** again to define another request.
-
-Click **Save**. The bot will be deployed automatically as a Cortana skill.
+The Store workspace allows you to create and publish new skills for Cortana, explore existing skills created by other developers, access free samples and tutorials to build botlets, skills and more. See the [Store Overview](https://help.knowledge.store/ux_overview/store/index.html) for more details. 
 
 ## Enable speech recognition priming
 If your bot uses a Language Understanding (LUIS) app, register the LUIS application ID. 
@@ -83,10 +73,16 @@ If your bot uses a Language Understanding (LUIS) app, register the LUIS applicat
 Click the **Settings** tab and then under **Configuration**, enter the LUIS application ID in the **Speech recognition priming with LUIS** text box. This helps your bot recognize spoken utterances that are defined in your LUIS model.
 ![Enable speech recognition priming](~/media/channels/cortana-speech-luis-priming.png)
 
+For more information on how to configure speech priming, [click here](https://docs.microsoft.com/en-us/bot-framework/bot-service-manage-speech-priming).
+
 ## Next steps
+* [Getting Started with Skills](https://help.knowledge.store/getting_started/index.html)
 * [Cortana Skills Kit](https://aka.ms/CortanaSkillsDocs)
 * [Enable debugging](https://aka.ms/cortana-enable-debug)
 * [Publish a Cortana skill][publish]
+* [Making BotFramework Bots Chainable and Semantic](https://help.knowledge.store/tutorials_code_samples/bf_chainable_skills/index.html)
+* [Speech Support in Bot Framework](https://blog.botframework.com/2017/06/26/speech-to-text/)
+
 
 [invocation]: https://aka.ms/cortana-invocation-guidelines
 [publish]: https://aka.ms/cortana-publish
