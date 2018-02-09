@@ -9,10 +9,10 @@
 ## [Configure channels](../bot-service-manage-channels.md)
 ## [Cortana](../bot-service-channel-connect-cortana.md) 
 ## [Bing](../bot-service-channel-connect-bing.md) 
+## [Skype](../bot-service-channel-connect-skype.md)
 ## [Skype for Business](../bot-service-channel-connect-skypeforbusiness.md)
 ## [Direct Line](../bot-service-channel-connect-directline.md)
 ## [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
-## [Skype](https://dev.skype.com/bots)
 ## Web Chat
 ### [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md)
 ### [Enable speech in Web Chat](../bot-service-channel-connect-webchat-speech.md)
