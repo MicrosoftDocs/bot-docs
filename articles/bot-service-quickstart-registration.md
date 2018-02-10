@@ -41,7 +41,8 @@ To create a **Bot Channels Registration**, do the following:
  | **Pricing tier** | F0 | Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/en-us/pricing/details/bot-service/). |
  | **Messaging endpoint** | URL | Enter the URL for your bot's messaging endpoint. |
  | **Application Insights** | On | Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
-
+ | **Microsoft App ID and password** | Auto create App ID and password | Use this option if you need to manually enter a Microsoft App ID and password. Otherwise, a new Microsoft App ID and password will be created for you in the bot creation process. |
+ 
 4. Click **Create** to create the service and register your bot's messaging end point.
 
 Confirm that the registration has been created by checking the **Notifications**. The notifications will change from **Deployment in progress...** to **Deployment succeeded**. Click **Go to resource** button to open the bot's resources blade. 

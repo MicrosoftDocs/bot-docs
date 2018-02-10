@@ -14,8 +14,7 @@ ms.date: 12/13/2017
 All **Azure Bot Service (Preview)** bots created in the [Bot Framework Portal](http://dev.botframework.com) must migrate to the new Bot Service in Azure by 3/31/2018.
 
 > [!NOTE]
-> Migration is currently enabled for registration bot types only.
-> Migration for other types of **Azure Bot Service (Preview)** bots will be coming soon.
+> Migration is enabled for all bot types.
 
 To migrate your bot, do the following:
 
@@ -52,6 +51,9 @@ In the event something went wrong with the bot during migration or after it is m
 1. Sign into the [Bot Framework Portal](http://dev.botframework.com) and click **My bots**.
 2. Click **Roll back migration** button for the bot you want to roll back. A prompt will appear.
 3. Click **Yes, roll back** to proceed or **Cancel** to cancel the roll back action.
+
+> [!NOTE]
+> Roll back functionality is not available for **Registration** bots.
 
 ## Next steps
 
