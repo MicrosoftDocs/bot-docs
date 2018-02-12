@@ -29,11 +29,11 @@ Using the SDK, you can build bots that take advantage of the following SDK featu
 conversation, providing help, navigation, clarification, and confirmation as needed
 
 > [!IMPORTANT]
-> On July 31, 2017 breaking changes will be implemented in the Bot Framework security protocol. 
+> On July 31, 2017 breaking changes have been implemented in the Bot Framework security protocol. 
 > To prevent these changes from adversely impacting your bot, you must ensure that your application is 
 > using Bot Builder SDK v3.5 or greater. If you've built a bot using an 
 > SDK that you obtained prior to January 5, 2017 (the release date for Bot Builder SDK v3.5), 
-> be sure to upgrade to Bot Builder SDK v3.5 or later before July 31, 2017.
+> be sure to upgrade to Bot Builder SDK v3.5 or later.
 
 ## Get the SDK
 
