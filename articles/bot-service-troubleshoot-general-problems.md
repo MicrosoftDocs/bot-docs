@@ -102,7 +102,7 @@ Bots in development on Kik are allowed 50 subscribers. After 50 unique users hav
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, consider using the [AuthBot NuGet](https://www.nuget.org/packages/AuthBot) library. For Facebook authentication examples, see the [Bot Builder SDK for .NET samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples) on GitHub. 
+For Azure Active Directory authentication, consider using the [BotAuth NuGet](https://www.nuget.org/packages/BotAuth) library. For Facebook authentication examples, see the [Bot Builder SDK for .NET samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples) on GitHub. 
 
 > [!NOTE] 
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
@@ -241,7 +241,7 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 
 ## What are some community-authored dialogs?
 
-* [AuthBot](https://www.nuget.org/packages/AuthBot) - Azure Active Directory authentication
+* [BotAuth](https://www.nuget.org/packages/BotAuth) - Azure Active Directory authentication
 * [BestMatchDialog](http://www.garypretty.co.uk/2016/08/01/bestmatchdialog-for-microsoft-bot-framework-now-available-via-nuget/) - Regular expression-based dispatch of user text to dialog methods
 
 ## What are some community-authored templates?
@@ -252,7 +252,17 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 
 Permission to create Azure Bot Service bots are managed through the Azure Active Directory (AAD) portal. If permissions are not properly configured in the [AAD portal](http://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
 
-To ensure users within an active directory can create bot service, the directory administrator needs to configure the following settings:
+First check whether you are a "Guest" of the directory:
+
+1. Sign-in to [Azure portal](http://portal.azure.com).
+2. Click **All services** and search for *active*.
+3. Select **Azure Active Directory**.
+4. Click **Users**.
+5. Find the user from the list and ensure that the **User Type** is not a **Guest**.
+
+![Azure Active Directory User-type](~/media/azure-active-directory/user_type.png)
+
+Once you verified that you are not a **Guest**, then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
 
 1. Sign-in to [AAD portal](http://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
 2. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
