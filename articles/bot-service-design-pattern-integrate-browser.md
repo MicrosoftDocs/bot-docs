@@ -75,8 +75,7 @@ The bot validates that 'magic number' provided by the user matches the expected 
 
 ###<a id="verify-identity"></a> Verifying user identity using the 'magic number'
 
-The generation of a 'magic number' during the bot-to-website flow ([step 5](#generate-magic-number) above) 
-enables the bot to subsequently verify that the user who initiated the website flow is indeed the user 
+The generation of a 'magic number' during the bot-to-website flow ([step 5](#generate-magic-number) above) enables the bot to subsequently verify that the user who initiated the website flow is indeed the user 
 for whom it was intended. 
 For example, if a bot is conducting a group chat with multiple users, any one of them 
 could have clicked the hyperlink to initiate the website flow. Without the 'magic number' validation process, 
@@ -88,12 +87,12 @@ One user could authenticate and inject access tokens in another user's session.
 
 The magic number should be a random number generated using a strong cryptography library. 
 For an example of the generation process in C#, see 
-<a href="https://github.com/MicrosoftDX/AuthBot/blob/master/AuthBot/Controllers/OAuthCallbackController.cs#L138" target="_blank">this code</a>
-within the <a href="https://github.com/MicrosoftDX/AuthBot" target="_blank">AuthBot</a> library. 
-AuthBot enables bots that are built in Microsoft Bot Framework to implement 
+<a href="https://github.com/MicrosoftDX/botauth/tree/master/CSharp" target="_blank">this code</a>
+within the <a href="https://www.nuget.org/packages/BotAuth" target="_blank">BotAuth</a> library. 
+BotAuth enables bots that are built in Microsoft Bot Framework to implement 
 the bot-to-website flow to authenticate a user in a website and then to subsequently use the access token 
 that was generated from the authentication process. 
-Since AuthBot does not make any assumptions about the channel's capabilities, such flows should function well with most channels. 
+Since BotAuth does not make any assumptions about the channel's capabilities, such flows should function well with most channels. 
 
 > [!NOTE]
 > The need for the 'magic number' validation process should be deprecated as channels build their own embedded web views.
@@ -105,7 +104,7 @@ it includes information via querystring parameters in the target URL about the c
 
 ## Sample code
 
-As described in this article, the <a href="https://github.com/microsoftdx/authbot" target="_blank">AuthBot</a> library enables OAuth flows to be bound to bots that are built using .NET in the Microsoft Bot Framework. The <a href="https://github.com/MicrosoftDX/botauth" target="_blank">BotAuth</a> library enables OAuth flows to be bound to bots that are built using Node.js in the Microsoft Bot Framework.
+As described in this article, the <a href="https://github.com/MicrosoftDX/botauth" target="_blank">BotAuth</a> library enables OAuth flows to be bound to bots that are built using .NET and Node in the Microsoft Bot Framework.
 
 ## Additional resources
 
