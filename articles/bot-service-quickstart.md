@@ -38,6 +38,7 @@ Log in to the [Azure portal](http://portal.azure.com).
  | **App service plan/Location** | Your app service plan  | Select an [app service plan](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/) location. Your location choice can be any location listed, though it's often best to choose a location closest to your customer. (Not available for Functions Bot.) |
  | **Azure Storage** | Your Azure storage account | You can create a new data storage account or use an existing one. By default, the bot will use [Table Storage](/azure/storage/common/storage-introduction#table-storage). |
  | **Application Insights** | On | Decide if you want to turn [Application Insights](/bot-framework/bot-service-manage-analytics) **On** or **Off**. If you select **On**, you must also specify a regional location. Your location choice can be any location listed, though it's often best to choose a location closest to your customer. |
+ | **Microsoft App ID and password** | Auto create App ID and password | Use this option if you need to manually enter a Microsoft App ID and password. Otherwise, a new Microsoft App ID and password will be created for you in the bot creation process. |
 
  > [!NOTE]
  > 

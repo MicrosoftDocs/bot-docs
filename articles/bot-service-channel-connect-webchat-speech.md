@@ -32,7 +32,7 @@ To enable the speech functionality in Web Chat, you need to customize the JavaSc
     * To install `http-server` globally so it can be run from the command line, run this command:
 
     ```
-    npm install http-server- -g
+    npm install http-server -g
     ```
 
     * To start a web server using port 8000, from the directory that contains `index.html`, run this command:

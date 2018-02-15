@@ -40,6 +40,7 @@ Copy and securely store the key that is shown. Then use the key to [authenticate
 Finally, configure settings for the site.
 
 - Select the Direct Line protocol version that your client application will use to communicate with your bot.
+
 > [!TIP]
 > If you are creating a new connection between your client application and bot, use Direct Line API 3.0.
 
