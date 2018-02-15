@@ -7,7 +7,6 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Connect a bot to Kik
