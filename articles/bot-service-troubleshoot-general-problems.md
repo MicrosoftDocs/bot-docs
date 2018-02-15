@@ -252,7 +252,7 @@ Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support ca
 
 Permission to create Azure Bot Service bots are managed through the Azure Active Directory (AAD) portal. If permissions are not properly configured in the [AAD portal](http://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
 
-First check if you are a "Guest" of the directory:
+First check whether you are a "Guest" of the directory:
 
 1. Sign-in to [Azure portal](http://portal.azure.com).
 2. Click **All services** and search for *active*.
@@ -262,7 +262,7 @@ First check if you are a "Guest" of the directory:
 
 ![Azure Active Directory User-type](~/media/azure-active-directory/user_type.png)
 
-Once you verified that you are an "owner", then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
+Once you verified that you are not a **Guest**, then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
 
 1. Sign-in to [AAD portal](http://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
 2. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
