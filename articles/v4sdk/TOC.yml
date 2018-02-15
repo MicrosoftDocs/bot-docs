@@ -1,1 +1,18 @@
-[SDK v4 TOC]
+- name: Azure Bot Service documentation
+- name: Overview
+  items:
+  - name: About Azure Bot Service
+    href: bot-service-overview-introduction
+  - name: Bot Architecutre
+    href: bot-builder-architecture.md 
+- name: Quickstarts
+- name: Tutorials
+- name: Samples
+- name: Concepts 
+  items:
+  - name: Bot concepts 
+    href: bot-builder-concept.md 
+- name: How-to
+- name: Reference
+- name: Resources
+
