@@ -2,16 +2,16 @@
 - name: Overview
   items:
   - name: About Azure Bot Service
-    href: bot-service-overview-introduction
+    href: 
   - name: Bot Architecutre
-    href: bot-builder-architecture.md 
+    href: 
 - name: Quickstarts
 - name: Tutorials
 - name: Samples
 - name: Concepts 
   items:
   - name: Bot concepts 
-    href: bot-builder-concept.md 
+    href: 
 - name: How-to
 - name: Reference
 - name: Resources
