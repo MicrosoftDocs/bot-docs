@@ -8,7 +8,7 @@ ms.date: 02/14/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# About AZure Bot Service
+# About Azure Bot Service
 
 Azure Bot Service (ABS) provides what you need to build, connect, test, deploy, monitor, and manage bots. Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the Bot Framework for connecting bots to channels.
 
