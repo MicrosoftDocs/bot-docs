@@ -64,4 +64,3 @@ See[ authentication](#) and [user identification](#).
 
 ## Next steps
 
-tbd.

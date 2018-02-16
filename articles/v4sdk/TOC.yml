@@ -1,10 +1,8 @@
 - name: Azure Bot Service documentation
 - name: Overview
   items:
-  - name: About Azure Bot Service
+  - name: Azure Bot Service
     href: bot-service-overview.md
-  - name: Bot Architecutre
-    href: bot-builder-architecture.md
 - name: Quickstarts
   items: 
   - name: Create a bot with Azure Bot Service
@@ -24,8 +22,10 @@
   - name: Java
 - name: Concepts 
   items:
+  - name: Bot architecture
+    href: bot-architecture.md
   - name: Bot concepts 
-    href: bot-builder-concept.md
+    href: bot-concepts.md
   - name: Activities
   - name: Middleware
   - name: How Azure Bot Service works
@@ -39,18 +39,29 @@
   - name: Design
     items:
     - name: Principles of bot design
+      href: ~/bot-service-design-principles.md
     - name: First user interaction
+      href: ~/bot-service-design-first-interaction.md
     - name: Conversation flow
+      href: ~/bot-service-design-conversation-flow.md
     - name: Navigation
+      href: ~/bot-service-design-navigation.md
     - name: UX elements
+      href: ~/bot-service-design-user-experience.md
     - name: Patterns
       items:
       - name: Task automation
+        href: ~/bot-service-design-pattern-task-automation.md
       - name: Knowledge base
+        href: ~/bot-service-design-pattern-knowledge-base.md
       - name: Bot to web
+        href: ~/bot-service-design-pattern-integrate-browser.md
       - name: Handoff to human
+        href: ~/bot-service-design-pattern-handoff-human.md
       - name: Bots in apps
+        href: ~/bot-service-design-pattern-embed-app.md
       - name: Bots in websites
+        href: ~/bot-service-design-pattern-embed-web-site.md
   - name: Create messages
   - name: Prompt users
   - name: Send cards and attachments
