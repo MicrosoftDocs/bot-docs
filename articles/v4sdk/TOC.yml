@@ -2,6 +2,7 @@
 - name: Overview
   items:
   - name: About Azure Bot Service
+    href: bot-service-overview.md
   - name: Bot Architecutre
     href: bot-builder-architecture.md
 - name: Quickstarts
