@@ -2,17 +2,107 @@
 - name: Overview
   items:
   - name: About Azure Bot Service
-    href: 
   - name: Bot Architecutre
-    href: 
+    href: bot-builder-architecture.md
 - name: Quickstarts
+  items: 
+  - name: Create a bot with Azure Bot Service
+  - name: .NET
+  - name: JavaScript
+  - name: Python
+  - name: Java
 - name: Tutorials
+  items:
+  - name: LUIS bot
+  - name: QnA bot
 - name: Samples
+  items: 
+  - name: .NET
+  - name: JavaScript
+  - name: Python
+  - name: Java
 - name: Concepts 
   items:
   - name: Bot concepts 
-    href: 
+    href: bot-builder-concept.md
+  - name: Activities
+  - name: Middleware
+  - name: How Azure Bot Service works
+  - name: Azure Bot Service templates
+  - name: Develop with Bot Builder
+  - name: Make bots smarter
+  - name: Conversations
 - name: How-to
+  items:
+  - name: Design
+    items:
+    - name: Principles of bot design
+    - name: First user interaction
+    - name: Conversation flow
+    - name: Navigation
+    - name: UX elements
+    - name: Patterns
+      items:
+      - name: Task automation
+      - name: Knowledge base
+      - name: Bot to web
+      - name: Handoff to human
+      - name: Bots in apps
+      - name: Bots in websites
+  - name: Create messages
+  - name: Prompt users
+  - name: Send cards and attachments
+  - name: Send and receive activities
+  - name: Implement channel specific functionality
+  - name: Use context
+  - name: Proactive message
+  - name: Create middleware
+  - name: Manage state data
+    items:
+    - name: Azure Table storage
+    - name: File storage
+    - name: Memory storage
+  - name: Handle mutiple messages (409/412 errors)
+  - name: Manage a bot
+  - name: Use the online code editor to build bot
+  - name: Download bot source code
+  - name: Set up continous deployment
+  - name: Test bot in Web Chat
+  - name: View analytics
+  - name: Preview bot features
+  - name: Configure bot settings
+  - name: Set up speech priming
+  - name: Build a Cortana skill
+  - name: Conduct Skype call
+  - name: Configure channels
+    items: 
+    - name: Cortana
+    - name: Bing
+    - name: Skype for Business
+    - name: Microsoft Teams
+    - name: Email
+    - name: GroupMe
+    - name: Facebook
+    - name: KiK
+    - name: Slack
+    - name: Telegram
+    - name: Twilio
+    - name: Web Chat
+    - name: Kazala
+      items:
+      - name: Connect a bot to Web Chat
+      - name: Enable speech in Web Chat
+    - name: DirectLine 
 - name: Reference
+  items:
+  - name: .NET API
+  - name: JavaScript API
+  - name: Python API
+  - name: Java API
+  - name: REST API
 - name: Resources
-
+  items: 
+  - name: Bot Builder SDK v4 .NET GitHub repo
+  - name: Bot Builder SDK v4 JavaScript GitHub repo
+  - name: Bot Builder SDK v4 Python GitHub repo
+  - name: Bot Builder SDK v4 Java GitHub repo
