@@ -33,6 +33,7 @@
   - name: Develop with Bot Builder
   - name: Make bots smarter
   - name: Conversations
+    href: bot-builder-conversations.md
 - name: How-to
   items:
   - name: Design
