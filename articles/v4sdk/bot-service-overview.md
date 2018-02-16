@@ -17,7 +17,7 @@ ABS provides an integrated environment purpose-built for bot development. You ca
 - With the App Service plan, a bot is a standard Azure web app you can set to allocate a predefined capacity with predictable costs and scaling. 
 - With a Consumption plan, a bot is a serverless bot that runs on Azure Functions and uses the pay-per-run Azure Functions pricing.
 
-ABS accelerates bot development with [Five bot templates](bot-service-concept-templates.md) you can choose from when you create a bot. You can further modify your bot directly in the browser using the Azure editor or in an Integrated Development Environment (IDE), such as Visual Studio and Visual Studio Code.
+ABS accelerates bot development with [five bot templates](bot-service-templates.md) you can choose from when you create a bot. You can further modify your bot directly in the browser using the Azure editor or in an Integrated Development Environment (IDE), such as Visual Studio and Visual Studio Code.
 
 ## What is a bot?
 Think of a bot as an app that users interact with in a conversational way. Bots can communicate conversationally with text, cards, or speech. A bot may be as simple as basic pattern matching with a response, or it may be a sophisticated weaving of artificial intelligence techniques with complex conversational state tracking and integration to existing business services.
