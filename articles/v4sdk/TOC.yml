@@ -27,7 +27,8 @@
   - name: Bot concepts 
     href: bot-concepts.md
   - name: Activities
-  - name: Middleware
+  - name: Middleware and pipelines
+    href: bot-builder-pipelines.md
   - name: How Azure Bot Service works
   - name: Azure Bot Service templates
   - name: Develop with Bot Builder
