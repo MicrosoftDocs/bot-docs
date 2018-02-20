@@ -91,7 +91,7 @@ A dialog method that does not end with one of these will result in an error
 
 ## Passing state between dialogs
 
-Whilst you can store state in bot state, you can pass data between different dialogs by overloading your dialog class constructor.
+While you can store state in bot state, you can also pass data between different dialogs by overloading your dialog class constructor.
 
 ```cs
 [Serializable]
