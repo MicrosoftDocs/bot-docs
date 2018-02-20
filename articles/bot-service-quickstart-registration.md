@@ -61,10 +61,14 @@ To generate a MicrosoftAppPassword, do the following:
 ## Update the bot
 
 If you're using the Bot Builder SDK for Node.js, set the following environment variables:
-<ul><li>MICROSOFT_APP_ID</li><li>MICROSOFT_APP_PASSWORD</li></ul>
+
+* MICROSOFT_APP_ID
+* MICROSOFT_APP_PASSWORD
 
 If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
-<ul><li>MicrosoftAppId</li><li>MicrosoftAppPassword</li></ul>
+
+* MicrosoftAppId
+* MicrosoftAppPassword
 
 ## Test the bot
 
