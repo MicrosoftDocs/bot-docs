@@ -6,7 +6,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/14/2018
+ms.date: 02/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 ## Bot architecture
@@ -32,7 +32,7 @@ You add middleware to the bot object at initialization time, and the order in wh
 The bot is stateless. However, when the bot receives an activity, it generates a _context_ object that captures various parameters of the conversation. Each received activity is processed independently of other incoming activities. Your bot can use a state manager to persist state between activities.
 
 The bot object invokes middleware via the following pipelines:
-1. Context created – establishes and enriches a context object that represents the request and conversation state.
+1. Context created – enriches a context object that represents the request and conversation state.
 1. Receive activity – operates on the request.
 1. Send activity – persists context and updates conversation state.
 
