@@ -28,7 +28,7 @@ Here are some key features of Azure Bot Service:
 
 - **Multiple language support**. Azure Bot Service leverages Bot Builder with support for .NET, JavaScript, Python, and Java. 
 - **Bot templates**. Templates allow you to quickly create a bot with the code and features you need. Choose from a Basic bot, a Forms bot for collecting user input, a Language understanding bot that leverages LUIS to understand user intent, a QnA bot to handle FAQs, or a Proactive bot that alerts users of events.
-- **Bring your own dependencies**. Bots support NuGet, NPM, PyPM, and JPM so you can use your favorite packages in your bot.
+- **Bring your own dependencies**. Bots support NuGet, NPM, PyPI, and JPM so you can use your favorite packages in your bot.
 - **Flexible development**. Code your bot right in the Azure portal or set up continuous integration and deploy your bot through GitHub, Visual Studio Team Services, and other supported development tools. You can also publish from Visual Studio.
 - **Connect to channels**. Azure Bot Service supports several popular channels for connecting your bots and the people that use them. Users can start conversations with your bot on any channel that you've configured your bot to work with, including Skype, Facebook, Teams, Slack, SMS, and several others.
 - **Tools and services**. Test your bot with the Bot Framework Emulator and preview your bot on different channels with the Channel Inspector.

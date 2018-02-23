@@ -8,7 +8,6 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 02/22/2018
 monikerRange: 'azure-bot-service-4.0'
-
 ---
 
 # Middleware and pipelines

@@ -6,33 +6,34 @@
 - name: Quickstarts
   items: 
   - name: Create a bot with Azure Bot Service
-  - name: .NET
-  - name: JavaScript
-  - name: Python
-  - name: Java
-- name: Tutorials
-  items:
-  - name: LUIS bot
-  - name: QnA bot
-- name: Samples
-  items: 
-  - name: .NET
-  - name: JavaScript
-  - name: Python
-  - name: Java
+ # - name: .NET 
+ # - name: JavaScript
+ # - name: Python
+ # - name: Java
+#- name: Tutorials
+#  items:
+#  - name: LUIS bot
+#  - name: QnA bot
+#- name: Samples
+ # items: 
+ # - name: .NET
+ # - name: JavaScript
+ # - name: Python
+ # - name: Java
 - name: Concepts 
   items:
   - name: Bot architecture
     href: bot-architecture.md
   - name: Bot concepts 
     href: bot-concepts.md
-  - name: Activities
-  - name: Middleware and pipelines
-    href: bot-builder-pipelines.md
-  - name: How Azure Bot Service works
-  - name: Azure Bot Service templates
-  - name: Develop with Bot Builder
-  - name: Make bots smarter
+  - name: Context object
+    href: bot-builder-context.md
+  #- name: Activities
+  #- name: Middleware
+  #- name: How Azure Bot Service works
+  #- name: Azure Bot Service templates
+  #- name: Develop with Bot Builder
+  #- name: Make bots smarter 
   - name: Conversations
     href: bot-builder-conversations.md
 - name: How-to
@@ -63,14 +64,14 @@
         href: ~/bot-service-design-pattern-embed-app.md
       - name: Bots in websites
         href: ~/bot-service-design-pattern-embed-web-site.md
-  - name: Create messages
-  - name: Prompt users
-  - name: Send cards and attachments
-  - name: Send and receive activities
-  - name: Implement channel specific functionality
-  - name: Use context
-  - name: Proactive message
-  - name: Create middleware
+ # - name: Create messages
+ # - name: Prompt users
+ # - name: Send cards and attachments
+ # - name: Send and receive activities
+ # - name: Implement channel specific functionality
+ # - name: Use context
+ # - name: Proactive message
+ # - name: Create middleware
   - name: Manage state data
     items:
     - name: Azure Table storage
@@ -78,45 +79,75 @@
     - name: Memory storage
   - name: Handle mutiple messages (409/412 errors)
   - name: Manage a bot
-  - name: Use the online code editor to build bot
-  - name: Download bot source code
-  - name: Set up continous deployment
-  - name: Test bot in Web Chat
-  - name: View analytics
-  - name: Preview bot features
-  - name: Configure bot settings
-  - name: Set up speech priming
-  - name: Build a Cortana skill
-  - name: Conduct Skype call
-  - name: Configure channels
-    items: 
+    href: ~/bot-service-manage-overview.md
+#  - name: Use the online code editor to build bot
+#  - name: Download bot source code
+#  - name: Set up continous deployment
+#  - name: Test bot in Web Chat
+#  - name: View analytics
+#  - name: Preview bot features
+#  - name: Configure bot settings
+#  - name: Set up speech priming
+#  - name: Build a Cortana skill
+  - name: Conduct audio calls with Skype
+    href: ~/dotnet/bot-builder-dotnet-cortana-skill.md
+  - name: Conduct real-time media calls with Skype
+    items:
+      - name: Real-time media calling concepts
+        href: ~/dotnet/bot-builder-dotnet-real-time-media-concepts.md
+      - name: Requirements for real-time media bots
+        href: ~/dotnet/bot-builder-dotnet-real-time-media-requirements.md
+      - name: Build a real-time media bot
+        href: ~/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md
+      - name: Deploy a real-time media bot
+        href: ~/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md
+  - name: Channels
+    items:
+    - name: Configure channels
+      href: ~/bot-service-manage-channels.md
     - name: Cortana
+      href: ~/bot-service-channel-connect-cortana.md
     - name: Bing
+      href: ~/bot-service-channel-connect-bing.md
+    - name: Skype
+      href: ~/bot-service-channel-connect-skype.md
     - name: Skype for Business
+      href: ~/bot-service-channel-connect-skypeforbusiness.md
+    - name: DirectLine 
+      href: ~/bot-service-channel-connect-directline.md 
     - name: Microsoft Teams
-    - name: Email
-    - name: GroupMe
-    - name: Facebook
-    - name: KiK
-    - name: Slack
-    - name: Telegram
-    - name: Twilio
+      href: https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview
     - name: Web Chat
-    - name: Kazala
       items:
       - name: Connect a bot to Web Chat
-      - name: Enable speech in Web Chat
-    - name: DirectLine 
+        href: ~/bot-service-channel-connect-webchat.md
+      - name: Enable speech in Web Chatname
+        href: ~/bot-service-channel-connect-webchat-speech.md
+    - name: Email
+      href: ~/bot-service-channel-connect-email.md
+    - name: GroupMe
+      href: ~/bot-service-channel-connect-groupme.md
+    - name: Facebook
+      href: ~/bot-service-channel-connect-facebook.md
+    - name: KiK
+      href: ~/bot-service-channel-connect-kik.md
+    - name: Slack
+      href: ~/bot-service-channel-connect-slack.md
+    - name: Telegram
+      href: ~/bot-service-channel-connect-telegram.md
+    - name: Twilio
+      href: ~/bot-service-channel-connect-twilio.md
+   # - name: Kazala
 - name: Reference
-  items:
-  - name: .NET API
-  - name: JavaScript API
-  - name: Python API
-  - name: Java API
-  - name: REST API
+#  items:
+#  - name: .NET API
+#  - name: JavaScript API
+#  - name: Python API
+#  - name: Java API
+#  - name: REST API
 - name: Resources
-  items: 
-  - name: Bot Builder SDK v4 .NET GitHub repo
-  - name: Bot Builder SDK v4 JavaScript GitHub repo
-  - name: Bot Builder SDK v4 Python GitHub repo
-  - name: Bot Builder SDK v4 Java GitHub repo
+#  items: 
+#  - name: Bot Builder SDK v4 .NET GitHub repo
+#  - name: Bot Builder SDK v4 JavaScript GitHub repo
+#  - name: Bot Builder SDK v4 Python GitHub repo
+#  - name: Bot Builder SDK v4 Java GitHub repo
