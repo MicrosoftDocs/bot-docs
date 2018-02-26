@@ -29,8 +29,8 @@
   </Attributes>
   <Docs>
     <summary>
-            The LUIS model information.
-            </summary>
+      The LUIS model information.
+    </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -81,8 +81,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Version of query API to call.
-            </summary>
+          Gets the version of query API to call.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,8 +103,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Domain where LUIS application is located.
-            </summary>
+          Gets the domain where LUIS application is located.
+        </summary>
         <value>To be added.</value>
         <remarks>Null means default which is api.projectoxford.ai for V1 API and westus.api.cognitive.microsoft.com for V2 api.</remarks>
       </Docs>
@@ -197,8 +197,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates if logging of queries to LUIS is allowed.
-            </summary>
+          Gets or sets a value indicating if logging of queries to LUIS is allowed.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,8 +332,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The GUID for the LUIS model.
-            </summary>
+          Gets the GUID for the LUIS model.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -381,8 +381,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Turn on spell checking.
-            </summary>
+          Gets or sets a value indicating if to turn on spell checking.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,8 +403,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Use the staging endpoint.
-            </summary>
+          Gets or sets a value indicating if to use the staging endpoint.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,8 +428,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The subscription key for LUIS.
-            </summary>
+          Gets the subscription key for LUIS.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -450,8 +450,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The time zone offset.
-            </summary>
+          Gets or sets the time zone offset.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,8 +475,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Base URI for LUIS calls.
-            </summary>
+          Gets the base URI for LUIS calls.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -523,8 +523,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The verbose flag.
-            </summary>
+          Gets or sets a value indicating if to set the verbose flag.
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
