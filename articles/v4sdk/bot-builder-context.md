@@ -57,15 +57,21 @@ Quantities saved in state are dynamically typed.
 
 The State property contains two subfields: Conversation (a **ConversationState** object) and User (a **UserState** object). Each of these, as well as the State property itself, can be treated as an indexed container, where the index is a string constituting the name of a name/value pair:
 
-```cs
-contextObject.State.Conversation["desiredLocation"] = "Hawaii";
-contextObject.State.Conversation["desiredYear"] = 2019;
-contextObject.State.Conversation["payInAdvance"] = true;
+# [C#](#tab/csharp)
+```csharp
+context.State.ConversationProperties["desiredLocation"] = "Hawaii";
+context.State.ConversationProperties["desiredYear"] = 2019;
+context.State.ConversationProperties["payInAdvance"] = true;
 
-contextObject.State.User["name"] = "Bethany";
-contextObject.State.User["age"] = 23;
-contextObject.State.User["GPA"] = 3.76;
+context.State.UserProperties["name"] = "Bethany";
+context.State.UserProperties["age"] = 23;
+context.State.UserProperties["GPA"] = 3.76;
 ```
+# [JavaScript](#tab/javascript)
+```javascript
+context.State.ConversationProperties["desiredLocation"] = "Hawaii";
+```
+---
 #### Context.State.Conversation vs. Context.State.User
 TBD
 

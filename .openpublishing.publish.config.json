@@ -39,6 +39,7 @@
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
+        "ContextObject": "Toc",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
