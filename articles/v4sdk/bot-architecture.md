@@ -9,35 +9,49 @@ ms.prod: bot-framework
 ms.date: 02/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-## Bot architecture
-The Microsoft Bot Builder SDK is one component of the [Azure Bot Service](bot-service-overview.md), which allows you to create a _bot_, an application that users can interact with in a conversational way. Bots can communicate conversationally with text, cards, or speech. A bot may be as simple as basic pattern matching with a response, or it may be a sophisticated weaving of artificial intelligence techniques with complex conversational state tracking and integration to existing business services. 
+# Bot architecture
+The Microsoft Bot Builder SDK is one component of the [Azure Bot Service](bot-service-overview.md) and is a modular and extensible framework for developing and debugging bots. A bot is an application than can communicate conversationally with a user. A bot may be as simple as a basic pattern matching algorithm that returns a response, or it may include artificial intelligence, complex conversational state, and integration with existing business services.
 
-The following diagram illustrates elements of a bot application, and the following sections describe these in more detail.
+The SDK defines a bot framework adapter object that can communicate with a user over various channels. The adapter also defines a middleware collection for adding reusable components to your application in a modular way.
 
-<!-- ![Overview of bot architecture](./media/concept-bot-architecture/bot-overview.png) -->
+The Bot Builder SDK is available in [C#](https://github.com/Microsoft/botbuilder-dotnet), [JavaScript](https://github.com/Microsoft/botbuilder-js), [Python](https://github.com/Microsoft/botbuilder-python), and [Java](https://github.com/Microsoft/botbuilder-java).
 
-<img src="./media/concept-bot-architecture/bot-overview.png" width="400" height="400">
+## The BotFrameworkAdapter
 
-The SDK defines a _bot object_, which provides a way to add your application logic. The bot uses an _adapter_ to facilitate conversation between the bot and users and handles _authentication_. The bot uses _middleware_ and _pipelines_ to divide your application logic into a sequence of smaller tasks.
+Your application should pass an incoming request as an activity, with associated authentication information, to the adapter. The adapter handles authentication, processes the activity, and sends any outbound activities through a connector object back to a channel.
+
+You can connect your bot to your business logic using a receive callback method. Your bot can optionally send activities back to the caller. The adapter sends this information to a callback URL provided by the channel.
+
+> ![NOTE] Your application and the adapter will handle requests asynchronously; however, your business logic does not need to be request-response driven.
 
 A _conversation_ contains a series of _activities_ that represents an interaction between a bot and a user. The incoming request from the user is converted to an _activity_ that the bot can use. Your bot can send activities back to the user.
 
 Your bot communicates with a user over a _channel_, the application the user interacts with when accessing your bot, such as text/sms, Skype, Slack, and others.
 
-#### Middleware and pipelines
-You use middleware to add reusable, components to your application in a modular way. The bot processes activities through its middleware layers. The middleware can establish and persist context and react to incoming requests.
- 
-You add middleware to the bot object at initialization time, and the order in which you add middleware to the bot determines the order in which the bot calls the middleware. The SDK provides some predefined middleware, but you can define your own.
+## Middleware
+Use middleware to add reusable, application-independent components to your application in a modular way.
 
-The bot is stateless. However, when the bot receives an activity, it generates a _context_ object that captures various parameters of the conversation. Each received activity is processed independently of other incoming activities. Your bot can use a state manager to persist state between activities.
+- The adapter processes activities through its middleware layers.
+- Middleware can establish and persist state and react to incoming requests.
+- Middleware can short circuit a pipeline, so that subsequent middleware is not called.
+- You add middleware to the adapter at initialization time.
+- The order in which you add middleware to the adapter determines the order in which the adapter calls the middleware.
+- The SDK provides some predefined middleware, but you can define your own.
 
-The bot object invokes middleware via the following pipelines:
-1. Context created – enriches a context object that represents the request and conversation state.
-1. Receive activity – operates on the request.
-1. Send activity – persists context and updates conversation state.
+The SDK is designed around middleware that represents application-independent components, such as:
 
-> ![NOTE] You use the _on receive_ method of the _bot object_ to add application logic between the receive and send activity pipeline. 
-The bot handles requests asynchronously; however, your underlying application logic does not need to be request-response driven.
+- State managers that persist and restore state information on the context object. The SDK includes conversation and user state managers.
+- Intent recognizers that analyze user messages to extrapolate the user's intent. The SDK includes LUIS, QnA Maker, and RegEx recognizers.
+- Translation middleware that can recognize the input language and translate to another language, such as one that your application understands.
 
-## Bot Builder SDK
-The Bot Builder SDK is available in [C#](https://github.com/Microsoft/botbuilder-dotnet), [JavaScript](https://github.com/Microsoft/botbuilder-js), [Python](https://github.com/Microsoft/botbuilder-python), and [Java](https://github.com/Microsoft/botbuilder-java).
+## Pipelines
+
+When the adapter receives an activity, it creates a context object and calls middleware via the following pipelines:
+
+1. Context created – adds information to the context object and performs other pre-processing.
+1. Receive activity – processes the request and can create responses.
+1. Send activity – persists information from the context object and performs other post-processing.
+
+Each middleware component in a pipeline is responsible for invoking the next component in the pipeline, or short-circuiting the chain if appropriate.
+
+If the receive activity pipeline is not short circuited, the adapter calls your receive callback. If the middleware or your callback created responses to the activity, the adapter sends them after the post activity pipeline.
