@@ -36,6 +36,8 @@
   #- name: Make bots smarter 
   - name: Conversations
     href: bot-builder-conversations.md
+  - name: Manage state and save data
+    href: bot-builder-v4-concept-storage.md
 - name: How-to
   items:
   - name: Design
@@ -73,10 +75,12 @@
  # - name: Proactive message
  # - name: Create middleware
   - name: Manage state data
-    items:
-    - name: Azure Table storage
-    - name: File storage
-    - name: Memory storage
+    href: bot-builder-how-to-v4-state.md
+  - name: Write directly to storage
+    href: bot-builder-how-to-v4-storage.md
+ #    - name: Azure Table storage
+ #    - name: File storage
+ #    - name: Memory storage
   - name: Handle mutiple messages (409/412 errors)
   - name: Manage a bot
     href: ~/bot-service-manage-overview.md
