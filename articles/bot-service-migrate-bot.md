@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 
 # Migrate your bot to Azure
 
-All **Azure Bot Service (Preview)** bots created in the [Bot Framework Portal](http://dev.botframework.com) must migrate to the new Bot Service in Azure by 3/31/2018.
+All **Azure Bot Service (Preview)** bots created in the [Bot Framework Portal](http://dev.botframework.com) must migrate to the new Bot Service in Azure by 3/31/2018. However, registration bots connected only to these channels are not required to migrate: Teams, Skype, or Cortana. For example, a registration bot connected to Facebook and Skype is required to migrate but a registration bot connected to Skype and Cortana is not required to migrate.
 
 > [!NOTE]
 > Migration is enabled for all bot types.
