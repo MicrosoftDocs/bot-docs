@@ -8,68 +8,87 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 02/14/2018
 monikerRange: 'azure-bot-service-4.0'
-
 ---
+<!--
+    Organization: An attempted narrative flow, skirting [most] language-specific implementation details.
+    Try to keep each section to one to three paragraphs of "reasonable" length.
+-->
 
 # Key concepts in the Bot Builder SDK
-This article introduces key concepts in the Bot Builder SDK, one component of the [Azure Bot Service](bot-service-overview.md). For a description of the basic architecture of a bot, see [Bot architecture](bot-architecture.md). 
+This article introduces key concepts in the Bot Builder SDK, a component of the [Azure Bot Service](bot-service-overview.md).
 
-<!--TODO: Organization of this topic alphabetical? Try to keep each section to one to three paragraphs of "reasonable" length.-->
+<!--For a description of the basic architecture of a bot, see [Bot architecture](bot-architecture.md). -->
 
-## Activity
-The bot schema defines a JSON `Activity` object to exchange information between the bot and the user. The Bot Builder SDK wraps this information in a language-specific _activity_ object. The most common type of activity is a message, but there are other activity types that indicate when a participant has been added or removed from a conversation, when the bot has been added or removed from a user's contact list, and so on. When your bot receives an activity, it uses the adapter to process the activity.
-<!--TODO: Link to Activities overview.-->
+## The Bot Connector Service and channels
 
-## Adapter
-The bot adapter is a core component that you use to create a bot application. The _bot adapter_ object uses the authentication and connector functionality in the SDK to send activites to the Bot Connector Service and receive activities from it. When your bot receives an activity, call the adapter's _process activity_ method, which creates a context object that includes the activity in the context's request property. To provide application-specific logic to process incoming activities, you implement a _receive callback_ method, and pass it to the adapter's _process activity_ method. 
-<!-- TODO: Link to adapter topic if we have it -->
+The Bot Connector Service allows communication between your bot application and channels such as Skype, Email, Slack, and others. The connector service is also a component of the Azure Bot Service.
 
-## Authentication
-You use the bot adapter's _process activity_ method to authenticate the incoming activities that the application receives. This method takes the activity and the `Authentication` header from the REST request as parameters. When the adapter finishes processing the activity, it creates _connector_ objects and provides credentials to these objects, so that they can authenticate the outbound activities to the user. 
-
-Bot Connector Service authentication uses the JWT (JSON Web Token) `Bearer` tokens and the **MicrosoftAppID** and **MicrosoftAppPassword** that Azure creates for you when you create a bot service or register your bot. Pass the app ID and password to the adapter at initialization.
-
-> ![NOTE] If you are running or testing your bot locally, you can do so without configuring the adapter to authenticate traffic to and from your bot.
-
-## Middleware
-Middleware is a reusable components that you can add to the adapter at initialization. Middleware allows you to do additional processing on activities either before or after your _recieve callback_ method. The middleware can participate in the pipeline by implementing one or more of the _context created_, _receive activity_, and _send activity_ methods. The adapter adds to the context object's responses property any outgoing activities from the bot, and the adapter sends these activities back to the user. 
-
-<!-- TODO: Link to Middleware topic -->
-
-## Connector
-A _connector_ object provides access to the Bot Connector Service and enables a bot to communicate with users across specfic channels, such as Skype, Email, Slack, and more.
-
-The Bot Connector Service normalizes messages that the bot sends to a channel, and you can develop your bot in a channel-agnostic way. Normalizing a message involves converting it from the bot framework's schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the connector may render the card as an image and include the actions as links in the message’s text.
+The connector service normalizes messages that the bot sends to a channel, allowing you to develop your bot in a channel-agnostic way. Normalizing a message involves converting it from the bot builder schema into the channel’s schema. In cases where the channel does not support all aspects of the bot builder schema, the service will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the connector may send the card as an image and include the actions as links in the message’s text.
 
 The [Channel Inspector](https://docs.botframework.com/en-us/channel-inspector/channels/Skype/) is a web tool that shows you how the connector renders messages on various channels.
 
+<!--Q:Do we need to discuss Direct Line at all?-->
 
-## Context
-A _context object_ captures information about the incoming activity, any outgoing activities, the sender and receiver, the channel, the conversation, state, and other data needed to process the activity. When an adapter receives an activity, it generates a context object.  
+### Activities and conversations
+The Bot Connector Service uses JSON to exchange information between the bot and the user. The Bot Builder SDK wraps this information in a language-specific _activity_ object. The most common type of activity is a message, but there are other activity types that indicate when a participant has been added or removed from a conversation, when the bot has been added or removed from a user's contact list, and so on.
+
+When your bot application receives an activity, your application converts the activity to a language-appropriate object. Depending on the elements of the SDK and the language you are using, this conversion may be automated for you.
+<!--Link to Activities overview.-->
+
+Every activity belongs to a logical _conversation_. A conversation is specific to a channel and has an ID that is unique to that channel. A conversation represents an interaction between one or more bots and a specific user or group of users.
+<!--Link to Conversations overview.-->
+
+## The Bot Builder SDK
+The SDK provides a variety of ways to build a bot application. There will be some variation in how your application code is built into your bot, based on the language-specific library you use and the particular elements of the SDK you use.
+
+The following elements of the SDK are important to understand, whether they are called implicity or explicity by your code.
+
+### Your bot application
+Aside from the components used to communicate with the Bot Connector Service, your bot application contatins your application-specific logic and a collection of more application-independent middleware components. Incoming and outgoing activities are managed in the SDK by a bot adapter.
+
+<!--
+### Connectors
+Do we need to discuss connectors for the connector-only version of a bot?
+-->
+
+### The bot adapter
+The _bot adapter_ encapsulates authentication processes and sends activites to the Bot Connector Service and receives activities from it. When your bot receives an activity, the adapter creates a [context object](#context), passes it to your bot's middleware and application logic, and sends responses back to the user's channel.
+
+The context object includes the activity in the context's request property. To provide application-specific logic to process incoming activities, you implement a callback method.
+<!--Link to adapter topic if we have it -->
+
+### Authentication
+<!--[In the non-connector-only case,-->The adapter authenticates each incoming activity the application receives, using information from the activity and the `Authentication` header from the REST request.
+
+The adapter uses a _connector_ object and your application's credentials to authenticate the outbound activities to the user.
+<!--
+The SDK provides connectors for known channels. What about Direct Line clients? Is this all automated for us by the Bot Connector Service?
+-->
+
+Bot Connector Service authentication uses JWT (JSON Web Token) `Bearer` tokens and the **MicrosoftAppID** and **MicrosoftAppPassword** that Azure creates for you when you create a bot service or register your bot. Your application will need these credantials at initialization time, so that the adapter can authenticate traffic.
+
+> ![NOTE] If you are running or testing your bot locally, you can do so without configuring the adapter to authenticate traffic to and from your bot.
+
+### Context
+A _context object_ captures information about the incoming activity, any outgoing activities, the sender and receiver, the channel, the conversation, and other data needed to process the activity. When an adapter receives an activity, it generates a context object.  
 
 The adapter passes the context object to its middleware and to the application's receive callback method. Any middleware you use or design will implement a method that takes a context object. Similarly, any receive callback method you define for your application will also take a context object. 
 <!-- Add specific method name that middleware must implement + Context Object Topic link -->
 
-You use the context object to retrieve information about the activity, the user, the conversation, and so on. Each received activity is processed independently of other incoming activities. Use one or more _state managers_ to persist state between activities.   
-
-## Conversation object
-A conversation identifies a series of activities sent between a bot and a user and represents an interaction between one or more bots and either a _direct_ conversation with a specific user or a _group_ conversation with multiple users.
-
-The Bot Connector Service defines what constitutes a conversation and how a conversation begins and ends.
-When the bot generates the context object for an incoming activity, it includes the conversation information.
+You use the context object to retrieve information about the activity, the user, the conversation, and so on. Each received activity is processed independently of other incoming activities. Use _state middleware_ to implement state persistence between activities.
 
 To start or resume a conversation, use the adapter's _create conversation_ or _continue conversation_ methods, respectively. To create a response activity, use the context's _reply_ method.
 
-<!--TODO: Add information about authentication.
-## Security
-See [authentication](#) and [user identification](#). PLUS Link to Conversation topic?
--->
+### Middleware
+Middleware are reusable components that you can add to the adapter at initialization. Middleware allows you to do additional processing on activities before or after your _recieve callback_ method. The middleware can participate in the pipeline by implementing one or more of the _context created_, _receive activity_, and _send activity_ methods. The adapter adds to the context object's responses property any outgoing activities from the bot, and the adapter sends these activities back to the user. 
+
+<!-- TODO: Link to Middleware topic -->
 
 ## State
 State represents information that your bot saves in order to respond appropriately to incoming messages. You can use state to store information about the progress of a multi-step interaction, or a user's preferences, status updates, and so on.
 
 Bot adapters are designed to be stateless so that they can easily be scaled to run across multiple compute nodes.
-The SDK provides bot state manager middleware to persist data, and includes Azure Table Storage, file storage, and memory storage that you can use for data storage. You can also create your own storage components for your bot.
+The SDK provides state middleware to persist data, and includes Azure Table Storage, file storage, and memory storage that you can use for data storage. You can also create your own storage components for your bot.
 
 <!-- TODO: Add link to state content + PR 193, if accepted will impact content -->
 
@@ -77,3 +96,4 @@ The SDK provides bot state manager middleware to persist data, and includes Azur
 
 ## Next steps
 <!-- TODO: Add next steps -->
+If you haven't already, follow a quickstart and use the emulator to get a basic bot running in a local environment.
