@@ -64,7 +64,7 @@ Return to the [Bot Framework Portal](https://dev.botframework.com/). Open the bo
 ![Copy values](~/media/channels/fb-callbackVerify.png)
 
 1. Return to Facebook Messenger and paste the **Callback URL** and **Verify Token** values.
-2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_options*, and *messaging_postbacks*.
+2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_optins*, and *messaging_postbacks*.
 3. Click **Verify and Save**. 
 
 ![Configure webhook](~/media/channels/FB-webhookConfig.png)
