@@ -48,7 +48,7 @@ Add the following entries into the Web.config file:
 You'll replace the value with your URI and Primary Key found in your Azure Cosmos DB. Save the Web.config file.
 
 ## Modify your bot code
-To use **Azure Cosmos DB** storage, add the following lines of code to your bot's **Global.asax.cs** file.
+To use **Azure Cosmos DB** storage, add the following lines of code to your bot's **Global.asax.cs** file inside the **Application_Start()** method.
 
 ```cs
 using System;
@@ -60,25 +60,34 @@ using Microsoft.Bot.Builder.Azure;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Internals;
 
-var uri = new Uri(ConfigurationManager.AppSettings["DocumentDbUrl"]);
-var key = ConfigurationManager.AppSettings["DocumentDbKey"];
-var store = new DocumentDbBotDataStore(uri, key);
+namespace SampleApp
+{
+    public class WebApiApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            var uri = new Uri(ConfigurationManager.AppSettings["DocumentDbUrl"]);
+            var key = ConfigurationManager.AppSettings["DocumentDbKey"];
+            var store = new DocumentDbBotDataStore(uri, key);
 
-    Conversation.UpdateContainer(
-                builder =>
-                {
-                    builder.Register(c => store)
-                        .Keyed<IBotDataStore<BotData>>(AzureModule.Key_DataStore)
-                        .AsSelf()
-                        .SingleInstance();
+            Conversation.UpdateContainer(
+                        builder =>
+                        {
+                            builder.Register(c => store)
+                                .Keyed<IBotDataStore<BotData>>(AzureModule.Key_DataStore)
+                                .AsSelf()
+                                .SingleInstance();
 
-                    builder.Register(c => new CachingBotDataStore(store, CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency))
-                        .As<IBotDataStore<BotData>>()
-                        .AsSelf()
-                        .InstancePerLifetimeScope();
-                        
-                });
+                            builder.Register(c => new CachingBotDataStore(store, CachingBotDataStoreConsistencyPolicy.ETagBasedConsistency))
+                                .As<IBotDataStore<BotData>>()
+                                .AsSelf()
+                                .InstancePerLifetimeScope();
 
+                        });
+
+        }
+    }
+}
 ```
 
 Save the global.asax.cs file. Now you are ready to test the bot with the emulator.
