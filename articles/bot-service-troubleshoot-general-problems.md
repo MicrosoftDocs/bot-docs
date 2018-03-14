@@ -280,9 +280,6 @@ If you are having issues migrating your bot, it might be because the bot belongs
 
 3. Sign in to [Dev Portal](https://dev.botframework.com) as the new user and proceed to migrate the bot.
 
-## Why can't I see my bot on apps.dev.microsoft.com?
-This happens when the directory you are part of in the Azure portal (where you created the bot) is different than the directory you are part of in the apps.dev.microsoft.com site. To view the bot on apps.dev.microsoft.com, create a user in the Azure portal in the same directory which was used to create the bot; sign-in as the new user on apps.dev.microsoft.com. 
-
 ## Where can I get more help?
 
 * Leverage the information in previously answered questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework), or post your own questions using the `botframework` tag. Please note that Stack Overflow has guidelines such as requiring a descriptive title, a complete and concise problem statement, and sufficient details to reproduce your issue. Feature requests or overly broad questions are off-topic; new users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) for more details.

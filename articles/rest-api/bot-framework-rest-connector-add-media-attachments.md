@@ -60,7 +60,34 @@ Content-Type: application/json
 }
 ```
 
-For channels that support inline binaries of an image, you can set the `content` property of the `Attachment` to a base64 binary of the image (for example, **data:image/png;base64,iVBORw0KGgo…**). The channel will display the image or the image's URL next to the message's text string.
+For channels that support inline binaries of an image, you can set the `contentUrl` property of the `Attachment` to a base64 binary of the image (for example, **data:image/png;base64,iVBORw0KGgo…**). The channel will display the image or the image's URL next to the message's text string.
+
+```json
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "sender's name"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+   },
+   "recipient": {
+        "id": "1234abcd",
+        "name": "recipient's name"
+    },
+    "text": "Here's a picture of the duck I was telling you about.",
+    "attachments": [
+        {
+            "contentType": "image/png",
+            "contentUrl": "data:image/png;base64,iVBORw0KGgo…",
+            "name": "duck-on-a-rock.jpg"
+        }
+    ],
+    "replyToId": "5d5cdc723"
+}
+```
 
 You can attach a video file or audio file to a message by using the same process as described above for an image file. Depending on the channel, the video and audio may be played inline or it may be displayed as a link.
 

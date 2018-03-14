@@ -145,7 +145,7 @@ To create a Facebook notification, set the [Activity][Activity] object's `channe
 
 > [!NOTE]
 > For details about format and contents of the `notification_type` property and `attachment` property, see the 
-> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines"target="_blank">Facebook API documentation</a>. 
+> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>. 
 
 This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
 
