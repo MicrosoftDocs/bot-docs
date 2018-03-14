@@ -257,7 +257,7 @@ bot.dialog('orderDinner', [
 // Confirm before triggering the action.
 // Once triggered, will end the dialog. 
 .cancelAction('cancelAction', 'Ok, cancel order.', {
-    matches: /^nevermind$|^cancel$|^cancel.*order/i
+    matches: /^nevermind$|^cancel$|^cancel.*order/i,
     confirmPrompt: "Are you sure?"
 });
 ```
