@@ -28,17 +28,34 @@ A bot may have to save state information, which is information it remembers in o
 
 For your bot to save conversation and user state, first initialize state manager middleware, and then use the conversation and user state properties.
 
+> [!NOTE]
+> For background on why you use conversation and user properties, see [Concept: Saving state](./bot-builder-v4-concept-storage.md).
 <!--or a specific user within the context of a specific conversation.--> 
 
 
 ## Initialize state manager middleware
-In the V4 SDK, you need to initialize the bot adapter to use a state manager as middleware before you can use the Conversation and User property stores.  `ConversationStateManagerMiddleware` is used for conversation properties, and `UserStateManagerMiddleware` is used for user properties. The state manager middleware provides an abstraction that lets you access properties using a simple key-value store, independent of the type of underlying storage. The state manager takes care of writing data to storage and managing concurrency, whether the underlying storage type is in-memory, file storage, or Azure table storage.
+In the V4 SDK, you need to initialize the bot adapter to use a state manager as middleware before you can use the Conversation and User property stores.  `ConversationState` is used for conversation properties, and `UserState` is used for user properties. The state manager middleware provides an abstraction that lets you access properties using a simple key-value store, independent of the type of underlying storage. The state manager takes care of writing data to storage and managing concurrency, whether the underlying storage type is in-memory, file storage, or Azure table storage.
+
 
 # [C#](#tab/csharp)
+To see how `ConversationState` is initialized, see `Startup.cs` in the Microsoft.Bot.Samples.EchoBot-AspNetCore sample.
+
 ```csharp
-// initialize a bot adapter to save conversation state to memory storage
-var botadapter = new Bot.Builder.Adapters.BotFrameworkAdapter("", "") // blank AppID and password
-      .Use(new Bot.Builder.Middleware.ConversationStateManagerMiddleware(new MemoryStorage()));
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddBot<EchoBot>(options =>
+            {
+                options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+
+                // initialize a conversation state manager to save conversation state to memory storage
+                options.Middleware.Add(new ConversationState<EchoState>(new MemoryStorage()));                
+                options.EnableProactiveMessages = true;
+            });
+
+            services.AddTransient<IMyService, MyService>();
+        }
 ```
 # [JavaScript](#tab/jsmemorymiddleware)
 ```javascript
@@ -68,9 +85,21 @@ File storage is also intended for testing. This stores data in a file on the mac
 
 # [C#](#tab/csfileMiddleware)
 ```csharp
-// initialize a bot adapter to save conversation state to file storage
-var botadapter = new Bot.Builder.Adapters.BotFrameworkAdapter("", "") // blank AppID and password
-        .Use(new ConversationStateManagerMiddleware(new FileStorage(System.IO.Path.GetTempPath())));
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddBot<EchoBot>(options =>
+            {
+                options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+                
+                // initialize a conversation state manager to save conversation state to file storage
+                options.Middleware.Add(new ConversationState<EchoState>(new FileStorage(System.IO.Path.GetTempPath())));                
+                options.EnableProactiveMessages = true;
+            });
+
+            services.AddTransient<IMyService, MyService>();
+        }
+
 ```        
 # [JavaScript](#tab/jsfilemiddleware)
 ```javascript
@@ -83,86 +112,113 @@ const bot = new Bot(adapter)
 You can use also use Azure Table storage.
 
 # [C#](#tab/csharpazuremiddleware)
+
+
+Go to `Startup.cs` in the Microsoft.Bot.Samples.EchoBot-AspNetCore sample, and edit the code in the `ConfigureServices` method.
 ```csharp
-// initialize a bot adapter to save conversation state to Azure Table storage
-var botadapter = new Bot.Builder.Adapters.BotFrameworkAdapter("", "") // blank AppID and password
-        .Use(new ConversationStateManagerMiddleware(new Bot.Builder.Azure.AzureTableStorage(
-            ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString, ConfigurationManager.TableName))));
+    services.AddBot<EchoBot>(options =>
+    {
+                options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+                // "UseDevelopmentStorage=true" is the connection string and "conversationstatetable" is the table name.
+                options.Middleware.Add(new ConversationState<EchoState>(new AzureTableStorage("UseDevelopmentStorage=true","conversationstatetable")));
+                // you could also specify the cloud storage account instead of the connection string
+                /* options.Middleware.Add(new ConversationState<EchoState>(
+                    new AzureTableStorage(WindowsAzure.Storage.CloudStorageAccount.DevelopmentStorageAccount, "demo96b83"))); */
+                options.EnableProactiveMessages = true;
+    });
 ```
+If the table doesn't exist, it is created.
+
+<!-- 
+TODO: step-by-step inspection of the stored table
+-->
+
 # [JavaScript](#tab/jsazuremiddleware)
 ```javascript
 const bot = new Bot(adapter)
-    .use(new AzureTableStorage("connection string", "table name"))
+    // "UseDevelopmentStorage=true" is the connection string and "conversationstatetable" is the table name.
+    .use(new AzureTableStorage("UseDevelopmentStorage=true","conversationstatetable"))
     .use(new ConversationStateManager())
 ```
 ---
 
 ### Configuring state manager middleware
-When initializing the middleware, an optional `StateManagerMiddlewareSettings` parameter allows you to change the default behavior of how properties are saved. The default settings are:
+When initializing the `ConversationState` and `UserState` middleware, an optional `StateSettings` parameter allows you to change the default behavior of how properties are saved. The default settings are:
 
 * persistUserState/persistConversationState: Properties are persisted beyond the lifetime of the context object.
 * lastWriterWins: If more than one instance of the bot writes to a property, allow the last instance of the bot to overwrite the previous one.
 * writeBeforeSend: Write data to storage before the SendActivity step in the message pipeline.
 
+> [!NOTE] 
+> These are default values only for ConversationState and UserState. If you're creating your own middleware to write state information to `MemoryStorage`, `FileStorage`, or `AzureTableStorage`, your implementation should specify those values.
+
 ## Use conversation and user state properties 
 <!-- middleware and message context -->
 
-Once the state manager middleware has been configured, you can access properties using the context object: `context.State.UserProperties` or `context.State.ConversationProperties`.
+Once the state manager middleware has been configured, you can get the conversation state and user state properties from the context object.
 <!-- Changes are written to storage before the `SendActivity()` pipeline completes. -->
 
 # [C#](#tab/csharppropertysnippet)
-You can try out this out using the `Microsoft.Bot.Samples.EchoBot_AspNet461` sample in the Bot Builder SDK. In `WebApiConfig.cs` in the sample, the following line initializes the `ConversationStateManagerMiddleWare`:
+You can try out this out using the `Microsoft.Bot.Samples.EchoBot` sample in the Bot Builder SDK. In `WebApiConfig.cs` in the sample, the following line initializes the `ConversationStateManagerMiddleWare`:
 
 
 `.Use(new ConversationStateManagerMiddleware(new MemoryStorage()));`
 
-In `MessagesController.cs`, replace the `OnReceiveActivity` method with the following code: 
+In `EchoBot.cs`, the following class defines the data type to store in the conversation state: 
 
 ```csharp
 
-protected async override Task OnReceiveActivity(IBotContext context)
-{
-    var msgActivity = context.Request.AsMessageActivity();
-    if (msgActivity != null)
+    public class EchoState : StoreItem
     {
 
-        // State.ConversationProperties["promptedForName"] is a flag for indicating that the bot just prompted the user for their name.
-        // If the flag is null, the user hasn't been prompted before, so ask them for their name.
-        if (context.State.ConversationProperties["promptedForName"] == null)
-        {
-            // Prompt user for name
-            context.Reply("Hi. What's your name?");
-            // Set flag to show that the bot has prompted for the user's name
-            context.State.ConversationProperties["promptedForName"] = true;
-        }
-        else if (context.State.ConversationProperties["promptedForName"] == true)
-        {
-            // If the "promptedForName" property is true, the bot interprets the current message text 
-            // as a response to the name prompt            
-            var name = context.Request.AsMessageActivity().Text;
-            context.State.UserProperties["name"] = name;
-
-            // Greet user by name
-            context.Reply("Nice to meet you, ${name}.");
-
-            // set the "promptedForName" property to false, so the next message that arrives won't be treated as a name response.
-            context.State.ConversationProperties["promptedForName"] = false;
-        }
-
+        public int TurnNumber { get; set; }
     }
-
-}
-            
 ```
+
+In the `OnReceiveActivity` handler, `context.GetConversationState` gets the conversation state to access the data you defined:
+
+```csharp
+
+public async Task OnReceiveActivity(IBotContext context)
+        {
+            var msgActivity = context.Request.AsMessageActivity();
+            
+            if (msgActivity != null)
+            {
+                var conversationState = context.GetConversationState<EchoState>() ?? new EchoState();
+
+                conversationState.TurnNumber++;
+
+                // calculate something for us to return
+                int length = (msgActivity.Text ?? string.Empty).Length;
+
+                // simulate calling a dependent service that was injected
+                await _myService.DoSomethingAsync();
+
+                // return our reply to the user
+                context.Reply($"[{conversationState.TurnNumber}] You sent {msgActivity.Text} which was {length} characters");
+            }
+            
+            var convUpdateActivity = context.Request.AsConversationUpdateActivity();
+            if (convUpdateActivity != null)
+            {
+                foreach (var newMember in convUpdateActivity.MembersAdded)
+                {
+                    if (newMember.Id != convUpdateActivity.Recipient.Id)
+                    {
+                        context.Reply("Hello and welcome to the echo bot.");
+                    }
+                }
+            }
+        }
+```   
+
 # [JavaScript](#tab/jspropertysnippet)
 
 Paste the code below into a file called app.js:
 
 ```javascript
-// Node.js snippet updates are TBD
-
-const { Bot } = require('botbuilder');
-const { BotFrameworkAdapter } = require('botbuilder-services');
+const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
 const restify = require('restify');
 
 // Create server
@@ -171,32 +227,30 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log(`${server.name} listening to ${server.url}`);
 });
 
-// Create adapter and listen to servers '/api/messages' route.
+// Create adapter
 const adapter = new BotFrameworkAdapter({ 
     appId: process.env.MICROSOFT_APP_ID, 
     appPassword: process.env.MICROSOFT_APP_PASSWORD 
 });
-server.post('/api/messages', adapter.listen());
 
-// Initialize bot and define the bots onReceive message handler
-const bot = new Bot(adapter)
-    .use(new MemoryStorage())
-    .use(new BotStateManager())
-    .onReceive((context) => {
+// Add conversation state middleware
+const conversationState = new ConversationState(new MemoryStorage());
+
+adapter.use(conversationState);
+
+// Listen for incoming requests 
+server.post('/api/messages', (req, res) => {
+    // Route received request to adapter for processing
+    adapter.processRequest(req, res, (context) => {
         if (context.request.type === 'message') {
-            if (context.state.conversation.promptedForName === undefined) {
-                // Prompt user for their name
-                context.state.conversation.promptedForName = true;
-                context.reply(`Hi. What's your name?`);
-            } else {
-                // Save their answer
-                const name = context.request.text;
-                context.state.user.name = name;
-                context.state.conversation.promptForName = undefined;
-                context.reply(`Nice to meet you ${name}`);
-            }
+            const state = conversationState.get(context);
+            const count = state.count === undefined ? state.count = 0 : ++state.count;
+            return context.sendActivity(`${count}: You said "${context.request.text}"`);
+        } else {
+            return context.sendActivity(`[${context.request.type} event detected]`);
         }
     });
+});
 ```
 ---
 In the example, the `promptedForName` property is set when the bot asks the user for their name. Then when the next message is received, the bot checks the property. If the property is set to true, the bot knows the user was just asked for their name, and interprets the incoming message as a name, to save in `context.State.UserProperties`.
