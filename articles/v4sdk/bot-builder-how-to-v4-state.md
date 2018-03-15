@@ -1,5 +1,5 @@
 ---
-title: Store data | Microsoft Docs
+title: Save state using conversation and user properties | Microsoft Docs
 description: Learn how to save and retrieve data with V4 of the Bot Builder SDK for .NET.
 author: RobStand
 ms.author: v-demak
