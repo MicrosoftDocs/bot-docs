@@ -38,7 +38,8 @@
             "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
             "author": "RobStand",
             "ms.prod": "bot-framework",
-            "searchScope": ["BotService"],
+            "brand": "azure",
+            "searchScope": ["Azure","BotService"],
             "ms.date": "12/13/2017",
             "titleSuffix": "Bot Service"
         },
