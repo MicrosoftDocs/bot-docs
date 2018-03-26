@@ -49,15 +49,13 @@ sections:
     style: unordered
     className: spaced noBullet
     items:
-    - html: <a href="/bot-framework/dotnet/bot-builder-dotnet-quickstart">.NET</a>
-    - html: <a href="/bot-framework/nodejs/bot-builder-nodejs-quickstart">Node.js</a>
-- title: Reference
+    - html: <a href="/bot-framework/dotnet/bot-builder-dotnet-samples">.NET</a>
+    - html: <a href="/bot-framework/nodejs/bot-builder-nodejs-samples">Node.js</a>
+- title: Resources
   items:
   - type: list
     style: cards
     className: cardsD
     items:
-    - title: Languages
-      html: <p><a href="/dotnet/api/?view=botbuilder-3.12.2.4">.NET</a></p><p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">JavaScript</a></p>
-    - title: REST
-      html: <p><a href="/Bot-Framework/rest-api/bot-framework-rest-connector-api-reference/">REST API Reference</a></p>
+    - html: <p><a href="https://dev.botframework.com/bots">My bots</a></p><p><a href="https://bots.botframework.com">Bot directory</a></p><p><a href="http://blog.botframework.com/">Blog</a></p>
+    - html: <p><a href="/dotnet/api/?view=botbuilder-3.12.2.4">.NET API</a></p><p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">Node.js API</a></p><p><a href="/Bot-Framework/rest-api/bot-framework-rest-connector-api-reference/">REST API</a></p>
