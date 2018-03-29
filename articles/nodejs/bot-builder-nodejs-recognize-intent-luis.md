@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 03/28/2018
 ---
 
 # Recognize intents and entities with LUIS 
@@ -73,10 +73,11 @@ The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents
    * Greeting
    * Cancel 
 
+
     ![intents shown in LUIS app](../media/bot-builder-nodejs-use-luis/luis-intent-list.png)
 
 3.	Click the **Train** button in the upper right to train your app.
-4.	Click **PUBLISH** in the top navigation bar to open the **Publish** page. Click the **Publish to production slot** button. After successful publish, copy the URL displayed in the **Endpoint** column the **Publish App** page, in the row that starts with the Resource Name Starter_Key. Save this URL to use later in your bot’s code. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?subscription-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&timezoneOffset=0&verbose=true&q=`
+4.	Click **PUBLISH** in the top navigation bar to open the **Publish** page. Click the **Publish to production slot** button. After successful publish, a LUIS app is deployed to the URL displayed in the **Endpoint** column in the **Publish App** page, in the row that starts with the Resource Name Starter_Key. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?subscription-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&timezoneOffset=0&verbose=true&q=`. The app ID and subscription key in this URL are the same as LuisAppId and LuisAPIKey in ** App Service Settings > ApplicationSettings > App settings **
 
 ## Modify the bot code
 
@@ -107,12 +108,23 @@ var connector = new builder.ChatConnector({
 // Listen for messages from users 
 server.post('/api/messages', connector.listen());
 
+/*----------------------------------------------------------------------------------------
+* Bot Storage: This is a great spot to register the private state storage for your bot. 
+* We provide adapters for Azure Table, CosmosDb, SQL Azure, or you can implement your own!
+* For samples and documentation, see: https://github.com/Microsoft/BotBuilder-Azure
+* ---------------------------------------------------------------------------------------- */
+
 var tableName = 'botdata';
 var azureTableClient = new botbuilder_azure.AzureTableClient(tableName, process.env['AzureWebJobsStorage']);
 var tableStorage = new botbuilder_azure.AzureBotStorage({ gzipData: false }, azureTableClient);
 
 // Create your bot with a function to receive messages from the user
-var bot = new builder.UniversalBot(connector);
+// This default message handler is invoked if the user's utterance doesn't
+// match any intents handled by other dialogs.
+var bot = new builder.UniversalBot(connector, function (session, args) {
+    session.send('You reached the default message handler. You said \'%s\'.', session.message.text);
+});
+
 bot.set('storage', tableStorage);
 
 // Make sure you add code to validate these fields
@@ -120,25 +132,41 @@ var luisAppId = process.env.LuisAppId;
 var luisAPIKey = process.env.LuisAPIKey;
 var luisAPIHostName = process.env.LuisAPIHostName || 'westus.api.cognitive.microsoft.com';
 
-const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=' + luisAppId + '&subscription-key=' + luisAPIKey;
+const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v2.0/apps/' + luisAppId + '?subscription-key=' + luisAPIKey;
 
-// Main dialog with LUIS
+// Create a recognizer that gets intents from LUIS, and add it to the bot
 var recognizer = new builder.LuisRecognizer(LuisModelUrl);
-var intents = new builder.IntentDialog({ recognizers: [recognizer] })
-.matches('Greeting', (session) => {
-    session.send('You reached Greeting intent, you said \'%s\'.', session.message.text);
-})
-.matches('Help', (session) => {
-    session.send('You reached Help intent, you said \'%s\'.', session.message.text);
-})
-.matches('Cancel', (session) => {
-    session.send('You reached Cancel intent, you said \'%s\'.', session.message.text);
-})
-.onDefault((session) => {
-    session.send('Sorry, I did not understand \'%s\'.', session.message.text);
-});
+bot.recognizer(recognizer);
 
-bot.dialog('/', intents);  
+// Add a dialog for each intent that the LUIS app recognizes.
+// See https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis 
+bot.dialog('GreetingDialog',
+    (session) => {
+        session.send('You reached the Greeting intent. You said \'%s\'.', session.message.text);
+        session.endDialog();
+    }
+).triggerAction({
+    matches: 'Greeting'
+})
+
+bot.dialog('HelpDialog',
+    (session) => {
+        session.send('You reached the Help intent. You said \'%s\'.', session.message.text);
+        session.endDialog();
+    }
+).triggerAction({
+    matches: 'Help'
+})
+
+bot.dialog('CancelDialog',
+    (session) => {
+        session.send('You reached the Cancel intent. You said \'%s\'.', session.message.text);
+        session.endDialog();
+    }
+).triggerAction({
+    matches: 'Cancel'
+})
+
 ```
 
 
@@ -147,10 +175,13 @@ bot.dialog('/', intents);
 
 
 
-## Handle the None intent
-The [matches][intentDialog_matches] methods on the [IntentDialog][intentDialog] invokes a handler when the specified intent is detected in the user utterance. To add a handler for the `None` intent, copy the following code and paste it after the `.matches` handler for the Cancel intent, before `onDefault`.
+## Edit the default message handler
+The bot has a default message handler. Edit it to match the following: 
 ```javascript
-.matches('None', (session) => {
+// Create your bot with a function to receive messages from the user.
+// This default message handler is invoked if the user's utterance doesn't
+// match any intents handled by other dialogs.
+var bot = new builder.UniversalBot(connector, function (session, args) {
     session.send("Hi... I'm the note bot sample. I can create new notes, read saved notes to you and delete notes.");
 
    // If the object for storing notes in session.userData doesn't exist yet, initialize it
@@ -158,14 +189,17 @@ The [matches][intentDialog_matches] methods on the [IntentDialog][intentDialog] 
        session.userData.notes = {};
        console.log("initializing userData.notes in default message handler");
    }
-})
+});
 ```
 
 ## Handle the Note.Create intent
 
-Copy the following code and paste it after the handler for None that you just pasted, before `onDefault`:
+Copy the following code and paste it at the end of app.js:
+
 ```javascript
-.matches('Note.Create', [(session, args, next) => {
+// CreateNote dialog
+bot.dialog('CreateNote', [
+    function (session, args, next) {
         // Resolve and store any Note.Title entity passed from LUIS.
         var intent = args.intent;
         var title = builder.EntityRecognizer.findEntity(intent.entities, 'Note.Title');
@@ -181,7 +215,7 @@ Copy the following code and paste it after the handler for None that you just pa
             next();
         }
     },
-    (session, results, next) => {
+    function (session, results, next) {
         var note = session.dialogData.note;
         if (results.response) {
             note.title = results.response;
@@ -194,7 +228,7 @@ Copy the following code and paste it after the handler for None that you just pa
             next();
         }
     },
-    (session, results) => {
+    function (session, results) {
         var note = session.dialogData.note;
         if (results.response) {
             note.text = results.response;
@@ -211,7 +245,14 @@ Copy the following code and paste it after the handler for None that you just pa
         // Send confirmation to user
         session.endDialog('Creating note named "%s" with text "%s"',
             note.title, note.text);
-    }])
+    }
+]).triggerAction({ 
+    matches: 'Note.Create',
+    confirmPrompt: "This will cancel the creation of the note you started. Are you sure?" 
+}).cancelAction('cancelCreateNote', "Note canceled.", {
+    matches: /^(cancel|nevermind)/i,
+    confirmPrompt: "Are you sure?"
+});
 ```
 
 Any entities in the utterance are passed to the dialog using the `args` parameter. The first step of the [waterfall][waterfall] calls [EntityRecognizer.findEntity][EntityRecognizer_findEntity] to get the title of the note from any `Note.Title` entities in the LUIS response. If the LUIS app didn't detect a `Note.Title` entity, the bot prompts the user for the name of the note. The second step of the waterfall prompts for the text to include in the note. Once the bot has the text of the note, the third step uses [session.userData][session_userData] to save the note in a `notes` object, using the title as the key. For more information on `session.UserData` see [Manage state data](./bot-builder-nodejs-state.md). 
@@ -223,9 +264,11 @@ Just as for the `Note.Create` intent, the bot examines the `args` parameter for 
 
 
 
-Copy the following code and paste it after the handler for `Note.Create` that you just pasted, before `onDefault`:
+Copy the following code and paste it at the end of app.js:
 ```javascript
-.matches('Note.Delete', [(session, args, next) => {
+// Delete note dialog
+bot.dialog('DeleteNote', [
+    function (session, args, next) {
         if (noteCount(session.userData.notes) > 0) {
             // Resolve and store any Note.Title entity passed from LUIS.
             var title;
@@ -246,10 +289,15 @@ Copy the following code and paste it after the handler for `Note.Create` that yo
             session.endDialog("No notes to delete.");
         }
     },
-    (session, results) => {
+    function (session, results) {
         delete session.userData.notes[results.response.entity];        
         session.endDialog("Deleted the '%s' note.", results.response.entity);
-    }])
+    }
+]).triggerAction({
+    matches: 'Note.Delete'
+}).cancelAction('cancelDeleteNote', "Ok - canceled note deletion.", {
+    matches: /^(cancel|nevermind)/i
+});
 ```
 
 The code that handles `Note.Delete` uses the `noteCount` function to determine whether the `notes` object contains notes. 
@@ -260,10 +308,12 @@ Paste the `noteCount` helper function at the end of `app.js`.
 
 ## Handle the Note.ReadAloud intent
 
-Copy the following code and paste it after the handler for `Note.Create` that you just pasted, before `onDefault`:
+Copy the following code and paste it in `app.js` after the handler for `Note.Delete`:
 
 ```javascript
-.matches('Note.ReadAloud', [(session, args, next) => {
+// Read note dialog
+bot.dialog('ReadNote', [
+    function (session, args, next) {
         if (noteCount(session.userData.notes) > 0) {
            
             // Resolve and store any Note.Title entity passed from LUIS.
@@ -285,9 +335,15 @@ Copy the following code and paste it after the handler for `Note.Create` that yo
             session.endDialog("No notes to read.");
         }
     },
-    (session, results) => {        
+    function (session, results) {        
         session.endDialog("Here's the '%s' note: '%s'.", results.response.entity, session.userData.notes[results.response.entity].text);
-    }])
+    }
+]).triggerAction({
+    matches: 'Note.ReadAloud'
+}).cancelAction('cancelReadNote', "Ok.", {
+    matches: /^(cancel|nevermind)/i
+});
+
 ```
 
 The `session.userData.notes` object is passed as the third argument to `builder.Prompts.choice`, so that the prompt displays a list of notes to the user.
@@ -325,8 +381,19 @@ var tableName = 'botdata';
 var azureTableClient = new botbuilder_azure.AzureTableClient(tableName, process.env['AzureWebJobsStorage']);
 var tableStorage = new botbuilder_azure.AzureBotStorage({ gzipData: false }, azureTableClient);
 
-// Create your bot with a function to receive messages from the user
-var bot = new builder.UniversalBot(connector);
+// Create your bot with a function to receive messages from the user.
+// This default message handler is invoked if the user's utterance doesn't
+// match any intents handled by other dialogs.
+var bot = new builder.UniversalBot(connector, function (session, args) {
+    session.send("Hi... I'm the note bot sample. I can create new notes, read saved notes to you and delete notes.");
+
+   // If the object for storing notes in session.userData doesn't exist yet, initialize it
+   if (!session.userData.notes) {
+       session.userData.notes = {};
+       console.log("initializing userData.notes in default message handler");
+   }
+});
+
 bot.set('storage', tableStorage);
 
 // Make sure you add code to validate these fields
@@ -334,37 +401,15 @@ var luisAppId = process.env.LuisAppId;
 var luisAPIKey = process.env.LuisAPIKey;
 var luisAPIHostName = process.env.LuisAPIHostName || 'westus.api.cognitive.microsoft.com';
 
-const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=' + luisAppId + '&subscription-key=' + luisAPIKey;
+const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v2.0/apps/' + luisAppId + '?subscription-key=' + luisAPIKey;
 
-// Main dialog with LUIS
+// Create a recognizer that gets intents from LUIS, and add it to the bot
 var recognizer = new builder.LuisRecognizer(LuisModelUrl);
-var intents = new builder.IntentDialog({ recognizers: [recognizer] })
-.matches('Greeting', (session) => {
-    session.send('You reached Greeting intent, you said \'%s\'.', session.message.text);
-})
-.matches('Help', [(session) => {
-    session.send('You reached Help intent, you said \'%s\'.', session.message.text);
-    session.send("Hi... I'm the note bot sample. I can create new notes, read saved notes to you and delete notes.");
+bot.recognizer(recognizer);
 
-   // If the object for storing notes in session.userData doesn't exist yet, initialize it
-   if (!session.userData.notes) {
-       session.userData.notes = {};
-       console.log("initializing userData.notes in default message handler");
-   }
-}])
-.matches('Cancel', (session) => {
-    session.send('You reached Cancel intent, you said \'%s\'.', session.message.text);
-})
-.matches('None', (session) => {
-    session.send("Hi... I'm the note bot sample. I can create new notes, read saved notes to you and delete notes.");
-
-   // If the object for storing notes in session.userData doesn't exist yet, initialize it
-   if (!session.userData.notes) {
-       session.userData.notes = {};
-       console.log("initializing userData.notes in default message handler");
-   }
-})
-.matches('Note.Create', [(session, args, next) => {
+// CreateNote dialog
+bot.dialog('CreateNote', [
+    function (session, args, next) {
         // Resolve and store any Note.Title entity passed from LUIS.
         var intent = args.intent;
         var title = builder.EntityRecognizer.findEntity(intent.entities, 'Note.Title');
@@ -380,7 +425,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
             next();
         }
     },
-    (session, results, next) => {
+    function (session, results, next) {
         var note = session.dialogData.note;
         if (results.response) {
             note.title = results.response;
@@ -393,7 +438,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
             next();
         }
     },
-    (session, results) => {
+    function (session, results) {
         var note = session.dialogData.note;
         if (results.response) {
             note.text = results.response;
@@ -410,8 +455,18 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
         // Send confirmation to user
         session.endDialog('Creating note named "%s" with text "%s"',
             note.title, note.text);
-    }])
-.matches('Note.Delete', [(session, args, next) => {
+    }
+]).triggerAction({ 
+    matches: 'Note.Create',
+    confirmPrompt: "This will cancel the creation of the note you started. Are you sure?" 
+}).cancelAction('cancelCreateNote', "Note canceled.", {
+    matches: /^(cancel|nevermind)/i,
+    confirmPrompt: "Are you sure?"
+});
+
+// Delete note dialog
+bot.dialog('DeleteNote', [
+    function (session, args, next) {
         if (noteCount(session.userData.notes) > 0) {
             // Resolve and store any Note.Title entity passed from LUIS.
             var title;
@@ -432,11 +487,20 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
             session.endDialog("No notes to delete.");
         }
     },
-    (session, results) => {
+    function (session, results) {
         delete session.userData.notes[results.response.entity];        
         session.endDialog("Deleted the '%s' note.", results.response.entity);
-    }])
-.matches('Note.ReadAloud', [(session, args, next) => {
+    }
+]).triggerAction({
+    matches: 'Note.Delete'
+}).cancelAction('cancelDeleteNote', "Ok - canceled note deletion.", {
+    matches: /^(cancel|nevermind)/i
+});
+
+
+// Read note dialog
+bot.dialog('ReadNote', [
+    function (session, args, next) {
         if (noteCount(session.userData.notes) > 0) {
            
             // Resolve and store any Note.Title entity passed from LUIS.
@@ -458,16 +522,17 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
             session.endDialog("No notes to read.");
         }
     },
-    (session, results) => {        
+    function (session, results) {        
         session.endDialog("Here's the '%s' note: '%s'.", results.response.entity, session.userData.notes[results.response.entity].text);
-    }])
-
-.onDefault((session) => {
-    session.send('Sorry, I did not understand \'%s\'.', session.message.text);
+    }
+]).triggerAction({
+    matches: 'Note.ReadAloud'
+}).cancelAction('cancelReadNote', "Ok.", {
+    matches: /^(cancel|nevermind)/i
 });
 
-bot.dialog('/', intents);    
 
+// Helper function to count the number of notes stored in session.userData.notes
 function noteCount(notes) {
 
     var i = 0;
