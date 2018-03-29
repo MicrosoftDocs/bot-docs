@@ -73,6 +73,7 @@ The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents
    * Greeting
    * Cancel
 
+
     ![intents shown in LUIS app](../media/bot-builder-nodejs-use-luis/luis-intent-list.png)
 
 3.	Click the **Train** button in the upper right to train your app.
