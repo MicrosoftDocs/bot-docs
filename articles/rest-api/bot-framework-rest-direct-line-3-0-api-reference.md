@@ -92,6 +92,7 @@ Generates a token that is valid for one conversation.
 ```http 
 POST /v3/directline/tokens/generate
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -102,6 +103,7 @@ Refreshes the token.
 ```http 
 POST /v3/directline/tokens/refresh
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -123,6 +125,7 @@ Opens a new conversation with the bot.
 ```http 
 POST /v3/directline/conversations
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -133,6 +136,7 @@ Gets information about an existing conversation and also generates a new WebSock
 ```http 
 GET /v3/directline/conversations/{conversationId}?watermark={watermark_value}
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -144,6 +148,7 @@ Retrieves activities from the bot for the specified conversation. You may option
 ```http 
 GET /v3/directline/conversations/{conversationId}/activities?watermark={watermark_value}
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -154,16 +159,18 @@ Sends an activity to the bot.
 ```http 
 POST /v3/directline/conversations/{conversationId}/activities
 ```
+
 | | |
 |----|----|
 | **Request body** | An [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object |
 | **Returns** | A [ResourceResponse](bot-framework-rest-connector-api-reference.md#resourceresponse-object) that contains an `id` property which specifies the ID of the Activity that was sent to the bot. | 
 
-###<a id="upload-send-files"></a> Upload and Send File(s)
+### <a id="upload-send-files"></a> Upload and Send File(s)
 Uploads and sends file(s) as attachment(s). Set the `userId` parameter in the request URI to specify the ID of the user that is sending the attachment(s).
 ```http 
 POST /v3/directline/conversations/{conversationId}/upload?userId={userId}
 ```
+
 | | |
 |----|----|
 | **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object that should serve as the container for the specified attachment(s). For more information, see [Send an activity to the bot](bot-framework-rest-direct-line-3-0-send-activity.md). |

@@ -42,7 +42,7 @@ Four authentication technologies are used to establish trust between a bot and t
 
 This article describes how to use these technologies via standard HTTPS and JSON. No special SDKs are required, although you may find that helpers for OpenID etc. are useful.
 
-##<a id="bot-to-connector"></a> Authenticate requests from your bot to the Bot Connector service
+## <a id="bot-to-connector"></a> Authenticate requests from your bot to the Bot Connector service
 
 To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format: 
 
@@ -141,7 +141,7 @@ payload:
 > [!NOTE]
 > Actual fields may vary in practice. Create and validate all JWT tokens as specified above.
 
-##<a id="connector-to-bot"></a> Authenticate requests from the Bot Connector service to your bot
+## <a id="connector-to-bot"></a> Authenticate requests from the Bot Connector service to your bot
 
 When the Bot Connector service sends a request to your bot, it specifies a signed JWT token in the `Authorization` header of the request. Your bot can authenticate calls from the Bot Connector service by verifying the authenticity of the signed JWT token. 
 
@@ -149,7 +149,7 @@ This diagram shows the steps for connector-to-bot authentication:
 
 ![Authenticate calls from the Bot Connector to your bot](../media/connector/auth_bot_connector_to_bot.png)
 
-###<a id="openid-metadata-document"></a> Step 2: Get the OpenID metadata document
+### <a id="openid-metadata-document"></a> Step 2: Get the OpenID metadata document
 
 The OpenID metadata document specifies the location of a second document that lists the Bot Connector service's valid signing keys. To get the OpenID metadata document, issue this request via HTTPS:
 
@@ -176,7 +176,7 @@ The following example shows an OpenID metadata document that is returned in resp
 }
 ```
 
-###<a id="connector-to-bot-step-3"></a> Step 3: Get the list of valid signing keys
+### <a id="connector-to-bot-step-3"></a> Step 3: Get the list of valid signing keys
 
 To get the list of valid signing keys, issue a `GET` request via HTTPS to the URL specified by the `jwks_uri` property in the OpenID metadata document. For example:
 
@@ -238,7 +238,7 @@ payload:
 > [!NOTE]
 > Actual fields may vary in practice. Create and validate all JWT tokens as specified above.
 
-##<a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
+## <a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
 
 > [!WARNING]
 > In late fall of 2017, v3.2 of the Bot Framework security protocol will be introduced. This new version includes a new "issuer" value within tokens
@@ -276,7 +276,7 @@ The following example shows an OpenID metadata document that is returned in resp
 }
 ```
 
-###<a id="emulator-to-bot-step-3"></a> Step 3: Get the list of valid signing keys
+### <a id="emulator-to-bot-step-3"></a> Step 3: Get the list of valid signing keys
 
 To get the list of valid signing keys, issue a `GET` request via HTTPS to the URL specified by the `jwks_uri` property in the OpenID metadata document. For example:
 

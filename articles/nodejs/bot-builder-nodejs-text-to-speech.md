@@ -22,13 +22,13 @@ If you are building a bot for a speech-enabled channel such as Cortana, you can 
 
 Using the Bot Builder SDK for Node.js, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `IMessage.speak` property and send the message using the `session.send()` method, send the message using the `session.say()` method (passing parameters that specify display text, speech text, and options), or send the message using a built-in prompt (specifying options `speak` and `retrySpeak`).
 
-###<a id="message-speak"></a> IMessage.speak 
+### <a id="message-speak"></a> IMessage.speak 
 
 If you are creating a message that will be sent using the `session.send()` method, set the `speak` property to specify the text to be spoken by your bot. The following code example creates a message that specifies text to be spoken and indicates that the bot is [accepting user input](bot-builder-nodejs-send-input-hints.md).
 
 [!code-javascript[IMessage.speak](../includes/code/node-text-to-speech.js#IMessageSpeak)]
 
-###<a id="session-say"></a> session.say()
+### <a id="session-say"></a> session.say()
 
 As an alternative to using `session.send()`, you can call the `session.say()` method to create and send a message that specifies the text to be spoken, in addition to the text to be displayed and other options. The method is defined as follows:
 
@@ -44,13 +44,13 @@ The following code example sends a message that specifies text to be displayed a
 
 [!code-javascript[Session.say()](../includes/code/node-text-to-speech.js#SessionSay)]
 
-###<a id="prompt-options"></a> Prompt options
+### <a id="prompt-options"></a> Prompt options
 
 Using any of the built-in prompts, you can set the options `speak` and `retrySpeak` to specify the text to be spoken by your bot. The following code example creates a prompt that specifies text to be displayed, text to be spoken initially, and text to be spoken after waiting a while for user input. It indicates that the bot is [expecting user input](bot-builder-nodejs-send-input-hints.md) and uses [SSML](#ssml) formatting to specify that the word "sure" should be spoken with a moderate amount of emphasis.
 
 [!code-javascript[Prompt](../includes/code/node-text-to-speech.js#Prompt)]
 
-##<a id="ssml"></a> Speech Synthesis Markup Language (SSML)
+## <a id="ssml"></a> Speech Synthesis Markup Language (SSML)
 
 To specify text to be spoken by your bot, you can use either a plain text string or a string that is formatted as Speech Synthesis Markup Language (SSML), an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. For details about SSML, see <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language Reference</a>.
 

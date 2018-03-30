@@ -66,8 +66,6 @@ bot.dialog('showShirts', function (session) {
     ]);
     session.send(msg).endDialog();
 }).triggerAction({ matches: /^(show|list)/i });
-
-
 ```
 This example uses the [Message][Message] class to build a carousel.  
 The carousel is comprised of a list of [HeroCard][heroCard] classes that contain an image, text, and a single button that triggers buying the item.  
@@ -126,7 +124,6 @@ bot.dialog('buyButtonClick', [
         session.send("A '%(size)s %(product)s' has been added to your cart.", item).endDialog();
     }
 ]).triggerAction({ matches: /(buy|add)\s.*shirt/i });
-
 ```
 
 <!-- 

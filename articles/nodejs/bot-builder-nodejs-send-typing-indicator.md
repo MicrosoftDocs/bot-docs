@@ -31,8 +31,6 @@ var bot = new builder.UniversalBot(connector, function (session) {
         session.send("Hello there...");
     }, 3000);
 });
-
-
 ```
 
 Typing indicators are also useful when inserting a message delay to prevent messages that contain images from being sent out of order.

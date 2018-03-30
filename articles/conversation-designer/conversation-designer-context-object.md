@@ -25,7 +25,6 @@ module.exports.NewConditionalResponse_onRun = function(context) {
     // Business logic here
     return true; // Returns a boolean
 }
-
 ```
 
 Through the `context` object, you can access information regarding the conversation between the user and the bot.
@@ -66,6 +65,7 @@ The `context` object exposes the following properties.
 
 ## Context methods
 The `context` object exposes the following methods.
+
 | Name | Return type | Code | Description |
 | ---- | ---- | ---- | ---- |
 | `getCurrentTurn` | **number** | `context.getCurrentTurn();` | Get the turn from the Frame on top of the stack if you are executing a reprompt. |

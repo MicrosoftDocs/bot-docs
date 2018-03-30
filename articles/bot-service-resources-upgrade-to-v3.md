@@ -39,23 +39,23 @@ If the **App ID** field is already populated, complete these steps:
 If the **App ID** field is empty, complete these steps:
 
 1. Click **Create Microsoft App ID and password**.  
-![Create App ID and password](~/media/upgrade/generate-appid-and-password.png)
-> [!IMPORTANT]
-> Do not select the **Version 3.0** radio button yet. You will do this later, after you have [updated your bot code](#update-code).</div>
+   ![Create App ID and password](~/media/upgrade/generate-appid-and-password.png)
+   > [!IMPORTANT]
+   > Do not select the **Version 3.0** radio button yet. You will do this later, after you have [updated your bot code](#update-code).</div>
 
 2. Click **Generate a password to continue**.  
-![Generate app password](~/media/upgrade/generate-a-password-to-continue.png)
+   ![Generate app password](~/media/upgrade/generate-a-password-to-continue.png)
 
 3. Copy and save the new password along with the MSA App Id; you will need these values in the future.  
-![New password](~/media/upgrade/new-password-generated.png)
+   ![New password](~/media/upgrade/new-password-generated.png)
 
 4. Click **Finish and go back to Bot Framework**.  
-![Finish and go back to Portal](~/media/upgrade/finish-and-go-back-to-bot-framework.png)
+   ![Finish and go back to Portal](~/media/upgrade/finish-and-go-back-to-bot-framework.png)
 
 5. Back on the bot settings page in the Bot Framework Portal, scroll to the bottom of the page and click **Save changes**.  
-![Save changes](~/media/upgrade/save-changes.png)
+   ![Save changes](~/media/upgrade/save-changes.png)
 
-##<a id="update-code"></a> Step 2: Update your bot code to version 3.0
+## <a id="update-code"></a> Step 2: Update your bot code to version 3.0
 
 To update your bot code to version 3.0, complete these steps:
 
@@ -137,7 +137,7 @@ Bot Framework API v3 stores the authentication properties with these keys in **W
 - `MicrosoftAppID`
 - `MicrosoftAppPassword`
 
-##<a id="step-3"></a> Step 3: Update your bot settings in the Bot Framework Portal
+## <a id="step-3"></a> Step 3: Update your bot settings in the Bot Framework Portal
 
 After you have upgraded your bot code to API v3 and deployed it to the cloud, finish the upgrade process by completing these steps: 
 

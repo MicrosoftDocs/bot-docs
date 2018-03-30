@@ -16,7 +16,7 @@ The Bot State service enables your bot to store and retrieve state data that is 
 > [!IMPORTANT]
 > The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
 
-##<a id="concurrency"></a> Data concurrency
+## <a id="concurrency"></a> Data concurrency
 
 To control concurrency of data that is stored using the Bot State service, the framework uses the entity tag (ETag) for `POST` requests. The framework does not use the standard headers for ETags. Instead, the body of the request and response specifies the ETag using the `eTag` property. 
 
@@ -31,7 +31,7 @@ For example, if you issue a `GET` request to retrieve user data from the store, 
 > Specifying the `eTag` property in `POST` requests is optional. 
 > If concurrency is not an issue for your bot, do not include the `eTag` property in `POST` requests. 
 
-##<a id="save-user-data"></a> Save user data
+## <a id="save-user-data"></a> Save user data
 
 To save state data for a user on a specific channel, issue this request:
 

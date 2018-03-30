@@ -33,6 +33,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "bot-framework-rest-api"
+    "dest": "bot-framework-rest-api",
+    "markdownEngineName": "markdig"
   }
 }

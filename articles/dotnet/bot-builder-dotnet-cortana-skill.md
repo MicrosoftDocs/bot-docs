@@ -72,6 +72,7 @@ reply.InputHint = InputHints.ExpectingInput;
 ## Display cards in Cortana
 
 In addition to spoken responses, Cortana can also display card attachments. Cortana supports the following rich cards:
+
 | Card type | Description |
 |----|----|
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |

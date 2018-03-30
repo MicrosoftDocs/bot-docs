@@ -13,7 +13,7 @@ ms.date: 12/13/2017
 
 You can configure your bot to communicate with people using the Kik messaging app.
 
-[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Install Kik on your phone
 

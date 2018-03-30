@@ -67,7 +67,6 @@ module.exports.fnTimeOfDayTemplate = function(context) {
         return "morning!";
     }
 }
-
 ```
 
 ## Send a response to user

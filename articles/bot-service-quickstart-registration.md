@@ -30,19 +30,21 @@ To create a **Bot Channels Registration**, do the following:
 2. A new blade will open with information about the **Bot Channels Registration**. Click the **Create** button to start the creation process. 
 
 3. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  <br/>
- ![Create registration bot blade](~/media/azure-bot-quickstarts/registration-create-bot-service-blade.png)
+   ![Create registration bot blade](~/media/azure-bot-quickstarts/registration-create-bot-service-blade.png)
 
- | Setting | Suggested value | Description |
- | ---- | ---- | ---- |
- | **Bot name** | Your bot's display name | The display name for the bot that appears in channels and directories. This name can be changed at anytime. |
- | **Subscription** | Your subscription | Select the Azure subscription you want to use. |
- | **Resource Group** | myResourceGroup | You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or choose from an existing one. |
- | Location | West US | Choose a location near where your bot is deployed or near other services your bot will access. |
- | **Pricing tier** | F0 | Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/en-us/pricing/details/bot-service/). |
- | **Messaging endpoint** | URL | Enter the URL for your bot's messaging endpoint. |
- | **Application Insights** | On | Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
- | **Microsoft App ID and password** | Auto create App ID and password | Use this option if you need to manually enter a Microsoft App ID and password. Otherwise, a new Microsoft App ID and password will be created for you in the bot creation process. |
- 
+
+   |                    Setting                     |         Suggested value         |                                                                                                  Description                                                                                                  |
+   |------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |           <strong>Bot name</strong>            |     Your bot's display name     |                                                  The display name for the bot that appears in channels and directories. This name can be changed at anytime.                                                  |
+   |         <strong>Subscription</strong>          |        Your subscription        |                                                                                Select the Azure subscription you want to use.                                                                                 |
+   |        <strong>Resource Group</strong>         |         myResourceGroup         |                                 You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or choose from an existing one.                                  |
+   |                    Location                    |             West US             |                                                        Choose a location near where your bot is deployed or near other services your bot will access.                                                         |
+   |         <strong>Pricing tier</strong>          |               F0                |             Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/en-us/pricing/details/bot-service/).              |
+   |      <strong>Messaging endpoint</strong>       |               URL               |                                                                               Enter the URL for your bot's messaging endpoint.                                                                                |
+   |     <strong>Application Insights</strong>      |               On                | Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) <strong>On</strong> or <strong>Off</strong>. If you select <strong>On</strong>, you must also specify a regional location. |
+   | <strong>Microsoft App ID and password</strong> | Auto create App ID and password |              Use this option if you need to manually enter a Microsoft App ID and password. Otherwise, a new Microsoft App ID and password will be created for you in the bot creation process.               |
+
+
 4. Click **Create** to create the service and register your bot's messaging end point.
 
 Confirm that the registration has been created by checking the **Notifications**. The notifications will change from **Deployment in progress...** to **Deployment succeeded**. Click **Go to resource** button to open the bot's resources blade. 
