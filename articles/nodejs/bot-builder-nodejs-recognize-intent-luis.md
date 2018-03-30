@@ -71,8 +71,7 @@ The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents
    * None
    * Help
    * Greeting
-   * Cancel 
-
+   * Cancel
 
     ![intents shown in LUIS app](../media/bot-builder-nodejs-use-luis/luis-intent-list.png)
 
