@@ -23,7 +23,7 @@ Dialogs may or may not have graphical interfaces. They may contain buttons, text
 
 ## Using dialogs to manage conversation flow
 
-[!include[Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
+[!INCLUDE [Dialog flow example](~/includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
 For a detailed walkthrough of managing conversation flow using dialogs and the Bot Builder SDK, see:
 

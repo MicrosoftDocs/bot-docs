@@ -85,7 +85,7 @@ You will need to make some changes to your **app.js** file.
 
    [!code-javascript[echobot code sample Node.js](../includes/code/node-getstarted.js#echobot)]
 
-3. Save the file. Now you are ready to run and test out your bot in the emulator.
+5. Save the file. Now you are ready to run and test out your bot in the emulator.
 
 > [!NOTE] 
 > You do not need a **Microsoft App ID** or **Microsoft App Password** to run your bot in the Bot Framework Emulator.

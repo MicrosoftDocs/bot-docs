@@ -14,7 +14,7 @@ ms.date: 12/13/2017
 > - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
 
-[!include[Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
+[!INCLUDE [Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
 This article describes how to model this conversation flow by using [dialogs](bot-builder-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
 
@@ -77,7 +77,7 @@ public class RootDialog : IDialog<object>
 }
 ```
 
-##<a id="dialog-lifecycle"></a> Dialog lifecycle
+## <a id="dialog-lifecycle"></a> Dialog lifecycle
 
 When a dialog is invoked, it takes control of the conversation flow. 
 Every new message will be subject to processing by that dialog until it either closes or redirects to another dialog. 

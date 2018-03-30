@@ -15,7 +15,7 @@ ms.date: 12/13/2017
 > - [Node.js](../nodejs/bot-builder-nodejs-send-suggested-actions.md)
 > - [REST](../rest-api/bot-framework-rest-connector-add-suggested-actions.md)
 
-[!include[Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)] 
+[!INCLUDE [Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)]
 
 > [!TIP]
 > To learn how various channels render suggested actions, see the [Channel Inspector][channelInspector].

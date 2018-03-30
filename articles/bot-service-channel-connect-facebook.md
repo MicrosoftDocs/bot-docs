@@ -14,7 +14,7 @@ To learn more about developing for Facebook Messenger, see the [Messenger platfo
 
 To configure a bot to communicate using Facebook Messenger, enable Facebook Messenger on a Facebook page and then connect the bot to the app.
 
-[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 > [!NOTE]
 > The Facebook UI may appear slightly different depending on which version you are using. 

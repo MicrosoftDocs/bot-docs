@@ -220,10 +220,10 @@ The following dialog sets up a custom game for the bot to play.  It
 asks the user how many sides they want the dice to have and then
 how many should be rolled. Once it has built the game structure
 it will pass it to a separate 'PlayGameDialog'.
- 
+
 To start the dialog, the **triggerAction()** handler on this dialog allows a user to say
 something like "I'd like to roll some dice". It uses a regular expression to match the user's input but you could just as easily use a [LUIS intent](./bot-builder-nodejs-recognize-intent-luis.md). 
- 
+
 
 ```javascript
 
@@ -339,7 +339,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
             card.title(results);
         }
         var msg = new builder.Message(session).addAttachment(card);
-        
+
         // Determine bots reaction for speech purposes
         var reaction = 'normal';
         var min = game.count;
@@ -354,7 +354,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
         } else if (score >= 0.8) {
             reaction = 'good';
         }
-        
+
         // Check for special craps rolls
         if (game.type == 'craps') {
             switch (total) {
@@ -399,7 +399,6 @@ bot.dialog('PlayGameDialog', function (session, args) {
         session.replaceDialog('CreateGameDialog');
     }
 }).triggerAction({ matches: /(roll|role|throw|shoot) again/i });
-
 ```
 
 ## Next steps

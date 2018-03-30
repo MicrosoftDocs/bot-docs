@@ -93,7 +93,7 @@ In this example, the form executes these steps:
 
 ## Sample code
 
-[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
+[!INCLUDE [Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

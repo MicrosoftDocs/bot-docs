@@ -71,20 +71,20 @@ For example, this schema snippet defines a template that overrides the `Template
 
 ### Additional properties as peers of the type property
 
-| Property | Contents | Description |
-|----|----|----|
-| DateTime | bool | Indicates whether field is a `DateTime` field. |
-| Describe | string or object | Description of a field as described in [DescribeAttribute][describeAttribute]. |
-| Terms | `[string,...]` | Regular expressions for matching a field value as described in TermsAttribute. |
-| MaxPhrase | int | Runs your terms through `Language.GenerateTerms(string, int)` to expand them. |
-| Values | `{ string: {Describe:string|object, Terms:[string, ...], MaxPhrase}, ...}` | The string must be found in the type's enumeration. This allows you to override the automatically generated descriptions and terms. If `MaxPhrase` is specified, the terms are passed through `Language.GenerateTerms(string, int)`. |
-| Active | script | C# script with arguments `(JObject state)->bool` to test whether the field, message, or confirmation is active. |
-| Validate | script | C# script with arguments `(JObject state, object value)->ValidateResult` for validating a field value. |
-| Define | script | C# script with arguments `(JObject state, Field<JObject> field)` for dynamically defining a field. |
-| Next | script | C# script with arguments `(object value, JObject state)` for determining the next step after filling in a field. |
-| Before | `[confirm|message, ...]` | Messages or confirmations before the containing field. (See below for details.) |
-| After| `[confirm|message, ...]` | Messages or confirmations after the containing field. (See below for details.) |
-| Dependencies | [string, ...] | Fields that this field, message, or confirmation depends on. |
+|   Property   |          Contents           |                                                   Description                                                    |
+|--------------|-----------------------------|------------------------------------------------------------------------------------------------------------------|
+|   DateTime   |            bool             |                                  Indicates whether field is a `DateTime` field.                                  |
+|   Describe   |      string or object       |                  Description of a field as described in [DescribeAttribute][describeAttribute].                  |
+|    Terms     |       `[string,...]`        |                  Regular expressions for matching a field value as described in TermsAttribute.                  |
+|  MaxPhrase   |             int             |                  Runs your terms through `Language.GenerateTerms(string, int)` to expand them.                   |
+|    Values    | `{ string: {Describe:string |                                  object, Terms:[string, ...], MaxPhrase}, ...}`                                  |
+|    Active    |           script            | C# script with arguments `(JObject state)->bool` to test whether the field, message, or confirmation is active.  |
+|   Validate   |           script            |      C# script with arguments `(JObject state, object value)->ValidateResult` for validating a field value.      |
+|    Define    |           script            |        C# script with arguments `(JObject state, Field<JObject> field)` for dynamically defining a field.        |
+|     Next     |           script            | C# script with arguments `(object value, JObject state)` for determining the next step after filling in a field. |
+|    Before    |          `[confirm          |                                                  message, ...]`                                                  |
+|    After     |          `[confirm          |                                                  message, ...]`                                                  |
+| Dependencies |        [string, ...]        |                           Fields that this field, message, or confirmation depends on.                           |
 
 Use `{Confirm:script|[string, ...], ...templateArgs}` within the value of the **Before** property or 
 the **After** property to define a confirmation by using either a C# script with argument `(JObject state)` 
@@ -326,7 +326,7 @@ that is described in [Customize a form using FormBuilder](bot-builder-dotnet-for
 
 ## Sample code
 
-[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
+[!INCLUDE [Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

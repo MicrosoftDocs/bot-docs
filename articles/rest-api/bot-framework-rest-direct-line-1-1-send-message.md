@@ -60,15 +60,15 @@ The total time to POST a message to a Direct Line conversation is the sum of the
 
 In some situations, a client may need to send attachments to the bot such as images or documents. A client may send attachments to the bot either by [specifying the URL(s)](#send-by-url) of the attachment(s) within the [Message](bot-framework-rest-direct-line-1-1-api-reference.md#message-object) object that it sends using `POST /api/conversations/{conversationId}/messages` or by [uploading attachment(s)](#upload-attachments) using `POST /api/conversations/{conversationId}/upload`.
 
-##<a id="send-by-url"></a> Send attachment(s) by URL
+## <a id="send-by-url"></a> Send attachment(s) by URL
 
 To send one or more attachments as part of the [Message](bot-framework-rest-direct-line-1-1-api-reference.md#message-object) object using `POST /api/conversations/{conversationId}/messages`, specify the attachment URL(s) within the message's `images` array and/or `attachments` array.
 
-##<a id="upload-attachments"></a> Send attachment(s) by upload
+## <a id="upload-attachments"></a> Send attachment(s) by upload
 
 Often, a client may have image(s) or document(s) on a device that it wants to send to the bot, but no URLs corresponding to those files. In this situation, a client can can issue a `POST /api/conversations/{conversationId}/upload` request to send attachments to the bot by upload. The format and contents of the request will depend upon whether the client is [sending a single attachment](#upload-one-attachment) or [sending multiple attachments](#upload-multiple-attachments).
 
-###<a id="upload-one-attachment"></a> Send a single attachment by upload
+### <a id="upload-one-attachment"></a> Send a single attachment by upload
 
 To send a single attachment by upload, issue this request: 
 
@@ -107,7 +107,7 @@ HTTP/1.1 204 No Content
 [other headers]
 ```
 
-###<a id="upload-multiple-attachments"></a> Send multiple attachments by upload
+### <a id="upload-multiple-attachments"></a> Send multiple attachments by upload
 
 To send multiple attachments by upload, `POST` a multipart request to the `/api/conversations/{conversationId}/upload` endpoint. Set the `Content-Type` header of the request to `multipart/form-data` and include the `Content-Type` header and `Content-Disposition` header for each part to specify each attachment's type and filename. In the request URI, set the `userId` parameter to the ID of the user that is sending the message. 
 

@@ -16,9 +16,9 @@ When you [create a bot](bot-service-quickstart.md) with Bot Service, the Web Cha
 
 The Web Chat channel in the Bot Framework Portal contains everything you need to embed the web chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
 
-[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
-##<a id="step-1"></a> Get your bot secret key
+## <a id="step-1"></a> Get your bot secret key
 
 1. Open your bot in the [Azure Portal](http://portal.azure.com) and click **Channels** blade.
 
@@ -73,7 +73,7 @@ Authorization: BotConnector YOUR_SECRET_HERE
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 ```
 
-###<a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
+### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
 Use this option if you want to allow other developers to easily embed your bot into their websites. 
 

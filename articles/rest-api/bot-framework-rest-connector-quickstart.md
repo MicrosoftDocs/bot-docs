@@ -18,7 +18,7 @@ ms.date: 12/13/2017
 
 The Bot Connector service enables your bot to exchange messages with channels that are configured in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>, by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
 
-##<a id="get-token"></a> Get an access token
+## <a id="get-token"></a> Get an access token
 
 > [!IMPORTANT]
 > If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.

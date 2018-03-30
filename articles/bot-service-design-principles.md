@@ -16,7 +16,7 @@ The Bot Framework enables developers to create compelling bot experiences that s
 By learning the concepts described in this section, you'll become equipped to design a bot that 
 aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
 
-##Designing a bot
+## Designing a bot
 
 If you are building a bot, it is safe to assume that you are expecting users to use it. 
 It is also safe to assume that you are hoping that users will prefer the bot experience over alternative experiences like apps, websites, phone calls, and other means of addressing their particular needs. 

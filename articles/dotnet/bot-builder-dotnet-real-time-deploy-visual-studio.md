@@ -46,15 +46,15 @@ The Fully-Qualified Domain Name (FQDN) of the bot is not available through the A
 > [!TIP]
 > If you are deploying a sample from BotBuilder-RealTimeMediaCalling git repository,
 > - Substitute the $DnsName$ with either the cloud service name or the CNAME if one is used in the service configuration.
-> ```xml
+>   ```xml
 >      <Setting name="ServiceDnsName" value="$DnsName$" />
-> ```
->
+>   ```
+> 
 > - Substitute $CertThumbprint$ with the thumbprint of the certificate uploaded to the bot in the following lines from the configuration.
-> ```xml
+>   ```xml
 >      <Setting name="DefaultCertificate" value="$CertThumbprint$" />
 >      <Certificate name="Default" thumbprint="$CertThumbprint$" thumbprintAlgorithm="sha1" />
-> ```
+>   ```
 
 ## Publish the bot from Visual Studio
 ### Step 1: Launch the Microsoft Azure Publishing Wizard in Visual Studio

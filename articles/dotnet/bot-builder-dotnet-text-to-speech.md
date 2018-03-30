@@ -22,25 +22,25 @@ If you are building a bot for a speech-enabled channel such as Cortana, you can 
 
 Using the Bot Builder SDK for .NET, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `Speak` property of the [message][IMessageActivity], call the `IDialogContext.SayAsync()` method, or specify prompt options `speak` and `retrySpeak` when sending a message using a built-in prompt.
 
-###<a id="message-speak"></a> IMessageActivity.Speak
+### <a id="message-speak"></a> IMessageActivity.Speak
 
 If you are creating a [message][IMessageActivity] and setting its individual properties, you can set the `Speak` property of the message to specify the text to be spoken by your bot. The following code example creates a message that specifies text to be displayed and text to be spoken and indicates that the bot is [accepting user input](bot-builder-dotnet-add-input-hints.md).
 
 [!code-csharp[Set speak property](../includes/code/dotnet-text-to-speech.cs#Speak1)]
 
-###<a id="say-async"></a> IDialogContext.SayAsync()
+### <a id="say-async"></a> IDialogContext.SayAsync()
 
 If you are using [dialogs](bot-builder-dotnet-dialogs.md), you can call the `SayAsync()` method to create and send a message that specifies the text to be spoken, in addition to the text to be displayed and other options. The following code example creates a message that specifies text to be displayed and text to be spoken.
 
 [!code-csharp[Call SayAsync()](../includes/code/dotnet-text-to-speech.cs#Speak2)]
 
-###<a id="prompt-options"></a> Prompt options
+### <a id="prompt-options"></a> Prompt options
 
 Using any of the built-in prompts, you can set the options `speak` and `retrySpeak` to specify the text to be spoken by your bot. The following code example creates a prompt that specifies text to be displayed, text to be spoken initially, and text to be spoken after waiting a while for user input. It uses [SSML](#ssml) formatting to indicate that the word "sure" should be spoken with a moderate amount of emphasis.
 
 [!code-csharp[Set Prompt options](../includes/code/dotnet-text-to-speech.cs#Speak3)]
 
-##<a id="ssml"></a> Speech Synthesis Markup Language (SSML)
+## <a id="ssml"></a> Speech Synthesis Markup Language (SSML)
 
 To specify text to be spoken by your bot, you can use either a plain text string or a string that is formatted as Speech Synthesis Markup Language (SSML), an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. For details about SSML, see <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language Reference</a>.
 

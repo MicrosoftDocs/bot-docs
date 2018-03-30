@@ -62,7 +62,7 @@ or using [Advanced.Field][field] and populating the dictionaries within it.
 
 Consider this example of a simple sandwich bot that is designed to obtain a user's sandwich order. 
 
-###<a id="create-class"></a> Create the form
+### <a id="create-class"></a> Create the form
 
 The `SandwichOrder` class defines the form and the enumerations define the options for building a sandwich. 
 The class also includes the static `BuildForm` method that uses [FormBuilder][formBuilder] 
@@ -349,7 +349,7 @@ For more information, see [Advanced features of FormFlow](bot-builder-dotnet-for
 
 ## Sample code
 
-[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
+[!INCLUDE [Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Next steps
 

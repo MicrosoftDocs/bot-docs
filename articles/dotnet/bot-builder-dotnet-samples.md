@@ -71,6 +71,8 @@ Sample | Description
 ## Reference implementation
 This sample is designed to showcase an end-to-end scenario. It's a great source of code fragments if you're looking to implement more complex features in your bot.
 
-Sample | Description
------------- | -------------
-[Contoso Flowers](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-ContosoFlowers) | A sample bot that uses many features of the Bot Framework.
+
+|                                                  Sample                                                   |                        Description                         |
+|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| [Contoso Flowers](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-ContosoFlowers) | A sample bot that uses many features of the Bot Framework. |
+

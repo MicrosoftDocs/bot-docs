@@ -65,6 +65,7 @@ Generates a token that is valid for one conversation.
 ```http 
 POST /api/tokens/conversation
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -75,6 +76,7 @@ Refreshes the token.
 ```http 
 GET /api/tokens/{conversationId}/renew
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -95,6 +97,7 @@ Opens a new conversation with the bot.
 ```http 
 POST /api/conversations
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -106,6 +109,7 @@ Retrieves messages from the bot for the specified conversation. Set the `waterma
 ```http
 GET /api/conversations/{conversationId}/messages?watermark={watermark_value}
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -116,16 +120,18 @@ Sends a message to the bot.
 ```http 
 POST /api/conversations/{conversationId}/messages
 ```
+
 | | |
 |----|----|
 | **Request body** | A [Message](#message-object) object |
 | **Returns** | No data is returned in body of the response. The service responds with an HTTP 204 status code if the message was sent successfully. The client may obtain its sent message (along with any messages that the bot has sent to the client) by using the [Get Messages](#get-messages) operation. |
 
-###<a id="upload-send-files"></a> Upload and Send File(s)
+### <a id="upload-send-files"></a> Upload and Send File(s)
 Uploads and sends file(s) as attachment(s). Set the `userId` parameter in the request URI to specify the ID of the user that is sending the attachments.
 ```http 
 POST /api/conversations/{conversationId}/upload?userId={userId}
 ```
+
 | | |
 |----|----|
 | **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the [Message](#message-object) object that should serve as the container for the specified attachment(s). For more information, see [Send a message to the bot](bot-framework-rest-direct-line-1-1-send-message.md). |
@@ -218,6 +224,8 @@ Defines an error.<br/><br/>
 ### ErrorMessage object
 A standardized message error payload.<br/><br/> 
 
-| Property | Type | Description |
-|----|----|----|
-| **error** | [Error](#error-object) | An **Error** object that contains information about the error. |
+
+|        Property        |          Type          |                                 Description                                 |
+|------------------------|------------------------|-----------------------------------------------------------------------------|
+| <strong>error</strong> | [Error](#error-object) | An <strong>Error</strong> object that contains information about the error. |
+

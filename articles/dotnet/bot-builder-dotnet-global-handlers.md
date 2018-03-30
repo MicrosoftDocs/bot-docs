@@ -12,7 +12,7 @@ ms.date: 12/13/2017
 
 # Implement global message handlers
 
-[!include[Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
+[!INCLUDE [Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
 
 ## Listen for keywords in user input
 
