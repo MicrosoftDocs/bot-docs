@@ -14,7 +14,7 @@ ms.date: 12/13/17
 > - [.NET](../dotnet/bot-builder-dotnet-state.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-state.md)
 
-[!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
+[!INCLUDE [State concept overview](../includes/snippet-dotnet-concept-state.md)]
 
 ## In-memory data storage
 
@@ -84,7 +84,7 @@ Each [Activity][Activity] object contains properties that you will use to manage
 > [!NOTE]
 > You may use these property values as keys even if you opt to store state data in your own database, rather than using the Bot Framework state data store.
 
-##<a id="state-client"></a> Create a state client
+## <a id="state-client"></a> Create a state client
 
 The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
 If you have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by calling the `GetStateClient` method on the `Activity` object.

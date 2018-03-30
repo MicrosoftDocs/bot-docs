@@ -12,7 +12,7 @@ ms.date: 12/13/2017
 
 # Conduct audio calls with Skype
 
-[!include[Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
+[!INCLUDE [Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
 The following code samples show how to enable support for audio calls via Skype with the Bot Builder SDK for .NET. 

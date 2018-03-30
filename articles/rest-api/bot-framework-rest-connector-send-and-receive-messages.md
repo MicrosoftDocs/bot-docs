@@ -13,7 +13,7 @@ ms.date: 12/13/2017
 
 The Bot Connector service enables a bot to communicate across multiple channels such as Skype, Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](bot-framework-rest-connector-activities.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
 
-##<a id="create-reply"></a> Reply to a message
+## <a id="create-reply"></a> Reply to a message
 
 ### Create a reply 
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-##<a id="send-message"></a> Send a (non-reply) message
+## <a id="send-message"></a> Send a (non-reply) message
 
 A majority of the messages that your bot sends will be in reply to messages that it receives from the user. However, there may be times when your bot needs to send a message to the conversation that is not a direct reply to any message from the user. For example, your bot may need to start a new topic of conversation or send a goodbye message at the end of the conversation. 
 

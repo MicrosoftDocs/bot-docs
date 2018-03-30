@@ -12,7 +12,7 @@ ms.date: 12/13/2017
 
 # Activities overview
 
-[!include[Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
+[!INCLUDE [Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
 
 ## Activity types in the Bot Builder SDK for .NET
 

@@ -25,7 +25,8 @@ In the Bot Builder SDK for .NET, the [Connector][connectorLibrary] library enabl
 
 ## Activity
 
-[!include[Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
+[!INCLUDE [Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
+
 For details about Activities in the Bot Builder SDK for .NET, 
 see [Activities overview](bot-builder-dotnet-activities.md).
 
@@ -45,7 +46,8 @@ For example, a bot that takes sandwich orders must collect several pieces of inf
 
 ## State
 
-[!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]
+[!INCLUDE [State concept overview](../includes/snippet-dotnet-concept-state.md)]
+
 For details about managing state using the Bot Builder SDK for .NET, 
 see [Manage state data](bot-builder-dotnet-state.md).
 

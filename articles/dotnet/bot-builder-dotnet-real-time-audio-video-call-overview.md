@@ -27,35 +27,35 @@ In order to use the Real-Time Media Platform, the following service configuratio
 * Bot Service must be have a certificate issued by a recognized Certificate Authority. The thumbprint of the certificate must be stored in the bot's Cloud Service configuration and read during service startup.
 
 * A public <a href="/azure/cloud-services/cloud-services-enable-communication-role-instances#instance-input-endpoint">instance input endpoint</a> must be provisioned. This assigns a unique public port to each virtual machine (VM) instance in the bot's service. This port is used by the Real-Time Media Platform to communicate with the Skype Calling Cloud.
- ```xml
-<InstanceInputEndpoint name="InstanceMediaControlEndpoint" protocol="tcp" localPort="20100">
+  ```xml
+  <InstanceInputEndpoint name="InstanceMediaControlEndpoint" protocol="tcp" localPort="20100">
     <AllocatePublicPortFrom>
     <FixedPortRange max="20200" min="20101" />
     </AllocatePublicPortFrom>
-</InstanceInputEndpoint>
- ```
+  </InstanceInputEndpoint>
+  ```
 
- It is also useful to create another instance input endpoint for call related callbacks and notifications. Using an instance input endpoint ensures the callbacks and notifications are delivered to the same VM instance in the service deployment that is hosting the real-time media session for the call.
- ```xml
-<InstanceInputEndpoint name="InstanceCallControlEndpoint" protocol="tcp" localPort="10100">
+  It is also useful to create another instance input endpoint for call related callbacks and notifications. Using an instance input endpoint ensures the callbacks and notifications are delivered to the same VM instance in the service deployment that is hosting the real-time media session for the call.
+  ```xml
+  <InstanceInputEndpoint name="InstanceCallControlEndpoint" protocol="tcp" localPort="10100">
     <AllocatePublicPortFrom>
     <FixedPortRange max="10200" min="10101" />
     </AllocatePublicPortFrom>
-</InstanceInputEndpoint>
- ```
+  </InstanceInputEndpoint>
+  ```
 
 * Each VM instance must have an instance-level public IP address (ILPIP). During startup, the bot must discover the ILPIP address assigned to each service instance. See <a href="/azure/virtual-network/virtual-networks-instance-level-public-ip">ILPIP</a> for more information about obtaining and configuring an ILPIP.
-```xml
-<NetworkConfiguration>
-<AddressAssignments>
+  ```xml
+  <NetworkConfiguration>
+  <AddressAssignments>
     <InstanceAddress roleName="WorkerRole">
     <PublicIPs>
         <PublicIP name="InstancePublicIP" domainNameLabel="InstancePublicIP" />
     </PublicIPs>
     </InstanceAddress>
-</AddressAssignments>
-</NetworkConfiguration>
-```
+  </AddressAssignments>
+  </NetworkConfiguration>
+  ```
 
 * During service instance startup, the script `MediaPlatformStartupScript.bat` (provided as a part of Nuget package) needs to be run as a Startup task under elevated privileges. The script execution must complete before the platform’s initialization method is called. 
 

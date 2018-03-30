@@ -1,63 +1,71 @@
 {
-    "build": {
-        "content": [{
-            "files": [
-                "**/**.md",
-                "**/**.yml",
-                "dotnet/**.md",
-                "node/**.md"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "**/includes/**",
-                "**/_themes/**",
-                "**/_themes.pdf/**",
-                "bot-framework/**",
-                "README.md",
-                "LICENSE",
-                "LICENSE-CODE",
-                "ThirdPartyNotices",
-                "**/_deprecated/**"
-            ]
-        }],
-        "resource": [{
-            "files": [
-                "**/*.png",
-                "**/*.jpg"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "bot-framework/**",
-                "~/includes/**"
-            ]
-        }],
-        "overwrite": [],
-        "externalReference": [],
-        "globalMetadata": {
-            "uhfHeaderId": "MSDocsHeader-BotFramework",
-            "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
-            "author": "RobStand",
-            "ms.prod": "bot-framework",
-            "brand": "azure",
-            "searchScope": ["Azure","BotService"],
-            "ms.date": "12/13/2017",
-            "titleSuffix": "Bot Service"
-        },
-        "fileMetadata": {
-            "ms.author": {
-                "**/**.md": "rstand"
-            },
-            "manager": {
-                "**/**.md": "rstand"
-            },
-            "ms.technology": {
-                "**/**.md": "bf-bot-builder"
-            },
-            "ms.date": {
-                "**/**.md": "12/13/2017"
-            }
-        },
-        "template": [],
-        "dest": "bot-framework"
-    }
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml",
+          "dotnet/**.md",
+          "node/**.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "**/_themes/**",
+          "**/_themes.pdf/**",
+          "bot-framework/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices",
+          "**/_deprecated/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "bot-framework/**",
+          "~/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-BotFramework",
+      "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
+      "author": "RobStand",
+      "ms.prod": "bot-framework",
+      "brand": "azure",
+      "searchScope": [
+        "Azure",
+        "BotService"
+      ],
+      "ms.date": "12/13/2017",
+      "titleSuffix": "Bot Service"
+    },
+    "fileMetadata": {
+      "ms.author": {
+        "**/**.md": "rstand"
+      },
+      "manager": {
+        "**/**.md": "rstand"
+      },
+      "ms.technology": {
+        "**/**.md": "bf-bot-builder"
+      },
+      "ms.date": {
+        "**/**.md": "12/13/2017"
+      }
+    },
+    "template": [],
+    "dest": "bot-framework",
+    "markdownEngineName": "markdig"
+  }
 }

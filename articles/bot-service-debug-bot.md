@@ -104,7 +104,7 @@ Follow these steps to download your C# bot source.
 
 You are now debugging locally. You can simulate user activity in the emulator, and set breakpoints on your code in Visual Studio. You can then [re-publish your bot to Azure](bot-service-continuous-deployment.md).
 
-##<a id="debug-csharp-serverless"></a> Debug a Consumption plan C\# script bot
+## <a id="debug-csharp-serverless"></a> Debug a Consumption plan C\# script bot
 
 The Consumption plan serverless C\# environment in Bot Service has more in common with Node.js than a typical C\# application because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment in the cloud, but you must replicate that environment locally on your desktop. 
 

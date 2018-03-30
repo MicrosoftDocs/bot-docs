@@ -52,7 +52,7 @@ This capability enables a number of useful scenarios:
 
 ## Using the backchannel mechanism
 
-[!include[Introduction to backchannel mechanism](~/includes/snippet-backchannel.md)]
+[!INCLUDE [Introduction to backchannel mechanism](~/includes/snippet-backchannel.md)]
 
 ## Sample code
 

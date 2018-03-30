@@ -14,7 +14,7 @@ ms.date: 12/13/2017
 > - [.NET](../dotnet/bot-builder-dotnet-middleware.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-intercept-messages.md)
 
-[!include[Introducton to message logging](../includes/snippet-message-logging-intro.md)]
+[!INCLUDE [Introducton to message logging](../includes/snippet-message-logging-intro.md)]
 
 ## Intercept and log messages
 

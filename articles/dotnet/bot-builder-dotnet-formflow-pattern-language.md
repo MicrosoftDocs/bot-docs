@@ -132,7 +132,7 @@ What kind of sandwich would you like?
 
 ## Sample code
 
-[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
+[!INCLUDE [Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

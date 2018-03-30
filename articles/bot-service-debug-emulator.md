@@ -26,7 +26,7 @@ The Bot Framework Emulator is a desktop application that allows bot developers t
 
 Download packages for Mac, Windows, and Linux are available via the <a href="https://github.com/Microsoft/BotFramework-Emulator/releases" target="_blank">GitHub releases page</a>.
 
-###<a id="ngrok"></a> Install and configure ngrok
+### <a id="ngrok"></a> Install and configure ngrok
 
 If you are using Windows and you are running the Bot Framework Emulator behind a firewall or other network boundary and want to connect to a bot that is hosted remotely, you must install and configure **ngrok** tunneling software. The Bot Framework Emulator integrates tightly with [ngrok][ngrokDownload] tunnelling software (developed by [inconshreveable][inconshreveable]), and can launch it automatically when it is needed.
 

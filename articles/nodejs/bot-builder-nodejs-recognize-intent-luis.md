@@ -24,13 +24,13 @@ This article uses the example of a bot for taking notes, to demonstrate how Lang
     ![Create new resource](../media/bot-builder-nodejs-use-luis/bot-service-selection.png)
 
 3. In the **Bot Service** blade, provide the required information, and click **Create**. This creates and deploys the bot service and LUIS app to Azure. 
-    * Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, mynotesbot.azurewebsites.net). This name is also used as the name of the LUIS app associated with your bot. Copy it to use later, to find the LUIS app associated with the bot.
-    * Select the subscription, [resource group](/azure/azure-resource-manager/resource-group-overview), App service plan, and [location](https://azure.microsoft.com/en-us/regions/).
-    * Select the **Language understanding (Node.js)** template for the **Bot template** field.
+   * Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, mynotesbot.azurewebsites.net). This name is also used as the name of the LUIS app associated with your bot. Copy it to use later, to find the LUIS app associated with the bot.
+   * Select the subscription, [resource group](/azure/azure-resource-manager/resource-group-overview), App service plan, and [location](https://azure.microsoft.com/en-us/regions/).
+   * Select the **Language understanding (Node.js)** template for the **Bot template** field.
 
-    ![Bot Service blade](../media/bot-builder-nodejs-use-luis/bot-service-setting-callout-template.png)
+     ![Bot Service blade](../media/bot-builder-nodejs-use-luis/bot-service-setting-callout-template.png)
 
-    * Check the box to confirm to the terms of service.
+   * Check the box to confirm to the terms of service.
 
 4. Confirm that the bot service has been deployed.
     * Click Notifications (the bell icon that is located along the top edge of the Azure portal). The notification will change from **Deployment started** to **Deployment succeeded**.
@@ -73,10 +73,12 @@ The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents
    * Greeting
    * Cancel
 
-    ![intents shown in LUIS app](../media/bot-builder-nodejs-use-luis/luis-intent-list.png)
+     ![intents shown in LUIS app](../media/bot-builder-nodejs-use-luis/luis-intent-list.png)
+
 
 3.	Click the **Train** button in the upper right to train your app.
 4.	Click **PUBLISH** in the top navigation bar to open the **Publish** page. Click the **Publish to production slot** button. After successful publish, a LUIS app is deployed to the URL displayed in the **Endpoint** column in the **Publish App** page, in the row that starts with the Resource Name Starter_Key. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?subscription-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&timezoneOffset=0&verbose=true&q=`. The app ID and subscription key in this URL are the same as LuisAppId and LuisAPIKey in ** App Service Settings > ApplicationSettings > App settings **
+
 
 ## Modify the bot code
 

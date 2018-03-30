@@ -29,29 +29,29 @@ To enable the speech functionality in Web Chat, you need to customize the JavaSc
 2. Edit the code in `index.html` according to the type of speech support you want to add. The types of speech implementations are described in [Enable speech services](#enable-speech-services). 
 3. Start a web server. One way to do so is to use `npm http-server` at a Node.js command prompt.
 
-    * To install `http-server` globally so it can be run from the command line, run this command:
+   * To install `http-server` globally so it can be run from the command line, run this command:
 
-    ```
-    npm install http-server -g
-    ```
+     ```
+     npm install http-server -g
+     ```
 
-    * To start a web server using port 8000, from the directory that contains `index.html`, run this command:
+   * To start a web server using port 8000, from the directory that contains `index.html`, run this command:
 
-    ```
-    http-server -p 8000
-    ```
+     ```
+     http-server -p 8000
+     ```
 4. Aim your browser at `http://localhost:8000/samples?parameters`. For example, `http://localhost:8000/samples?s=YOURDIRECTLINESECRET` invokes the bot using a Direct Line secret. The parameters that can be set in the query string are described in the following table:
 
-  | Parameter | Description |
-  |-----------|-------------|
-  | s | Direct Line secret. See [Connect a bot to Direct Line](bot-service-channel-connect-directline.md) for information on getting a Direct Line secret. |
-  | t | Direct Line token. See [Generate a Direct Line token](rest-api/bot-framework-rest-direct-line-3-0-authentication.md) for info on how to generate this token. |
-  | domain | Optional. The URL of an alternate Direct Line endpoint.  |
-  | webSocket | Optional. Set to 'true' to use WebSocket to receive messages. Default is `false`. |
-  | userid | Optional. The ID of the bot user.  |
-  | username | Optional. The user name of the bot's user.  |
-  | botid | Optional. ID of the bot. |
-  | botname | Optional. Name of the bot. |
+   | Parameter | Description |
+   |-----------|-------------|
+   | s | Direct Line secret. See [Connect a bot to Direct Line](bot-service-channel-connect-directline.md) for information on getting a Direct Line secret. |
+   | t | Direct Line token. See [Generate a Direct Line token](rest-api/bot-framework-rest-direct-line-3-0-authentication.md) for info on how to generate this token. |
+   | domain | Optional. The URL of an alternate Direct Line endpoint.  |
+   | webSocket | Optional. Set to 'true' to use WebSocket to receive messages. Default is `false`. |
+   | userid | Optional. The ID of the bot user.  |
+   | username | Optional. The user name of the bot's user.  |
+   | botid | Optional. ID of the bot. |
+   | botname | Optional. Name of the bot. |
 
 
 ## Enable speech services

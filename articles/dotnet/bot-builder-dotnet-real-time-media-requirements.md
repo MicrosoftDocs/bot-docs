@@ -1,4 +1,4 @@
-﻿---
+---
 title: Requirements and considerations for real-time media bots | Microsoft Docs
 description: Understand important requirements and considerations related to creating real-time media bots for Skype, using the Bot Builder SDK for .NET.
 author: ssulzer
@@ -40,7 +40,7 @@ Not all guidance that applies to developing messaging and IVR calling bots appli
 - Real-time media bots require more compute and network (bandwidth) capacity than messaging bots and may incur significantly higher operational costs. A real-time media bot developer must carefully measure the bot's scalability, and ensure the bot does not accept more simultaneous calls than it can manage. A video-enabled bot may be able to sustain only one or two concurrent real-time media calls per CPU core.
 
 - The current Preview release of Real-Time Media Platform for Bots has certain scalability limitations the bot developer must be aware of (these may be improved in future releases): 
- 1.	A single VM instance may not have more than 10 video sockets created at any single time.
- 2.	The Real-Time Media Platform does not currently take advantage of any Graphics Processing Unit (GPU) available on the VM to off-load H.264 video encoding/decoding. Instead, video encode and decode are done in software on the CPU. If a GPU is available, the bot may take advantage of it for its own graphics rendering (e.g., if the bot is using a 3D graphics engine).
+  1. A single VM instance may not have more than 10 video sockets created at any single time.
+  2. The Real-Time Media Platform does not currently take advantage of any Graphics Processing Unit (GPU) available on the VM to off-load H.264 video encoding/decoding. Instead, video encode and decode are done in software on the CPU. If a GPU is available, the bot may take advantage of it for its own graphics rendering (e.g., if the bot is using a 3D graphics engine).
 
 - The VM instance hosting the real-time media bot must have at least 2 CPU cores. For Azure, a Dv2-series virtual machine is recommended. Detailed information about Azure VM types is available in the <a href="/azure/virtual-machines/windows/sizes-general" target="_blank">Azure documentation</a>. 
