@@ -13,7 +13,7 @@ ms.date: 12/13/2017
 
 You can configure a bot to communicate with people using the GroupMe group messaging app.
 
-[!include[Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Sign up for a GroupMe account
 

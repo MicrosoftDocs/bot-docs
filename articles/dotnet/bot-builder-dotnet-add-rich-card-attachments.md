@@ -108,7 +108,7 @@ This code example shows how to create a reply message that contains a Sign-in ca
 
 [!code-csharp[Add SignInCard attachment](../includes/code/dotnet-add-attachments.cs#addSignInCardAttachment)]
 
-##<a id="adaptive-card"></a> Add an Adaptive card to a message
+## <a id="adaptive-card"></a> Add an Adaptive card to a message
 
 The Adaptive Card can contain any combination of text, speech, images, buttons, and input fields. 
 Adaptive Cards are created using the JSON format specified in <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 

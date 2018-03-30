@@ -75,7 +75,7 @@ The root dialog processes the message and generates a response. The `MessageRece
 
 ## Test your bot
 
-[!include[Get started test your bot](../includes/snippet-getstarted-test-bot.md)]
+[!INCLUDE [Get started test your bot](../includes/snippet-getstarted-test-bot.md)]
 
 ### Start your bot
 

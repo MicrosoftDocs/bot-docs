@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 
 # Use the backchannel mechanism
 
-[!include[Introduction to backchannel mechanism](../includes/snippet-backchannel.md)]
+[!INCLUDE [Introduction to backchannel mechanism](../includes/snippet-backchannel.md)]
 
 ## Walk through
 

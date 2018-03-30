@@ -40,14 +40,13 @@ module.exports.NewTask_do_onRun = function(context) {
             "BODY": VALUE
         }
     };
-    
+
     return http.request(options).then(function(response) {
       // parse response payload
       // Send a message to user
       context.responses.push({text: "Done", type: "message"});
     });
 } 
-
 ```
 
 ## Next step

@@ -22,7 +22,7 @@ To develop your bot locally, do the following:
 2. Under the **BOT MANAGEMENT** section, Click **Build**.
 3. Click **Download zip file**. 
 
- ![Download source code](~/media/azure-bot-build/download-zip-file.png)
+   ![Download source code](~/media/azure-bot-build/download-zip-file.png)
 
 4. Extract the .zip file to a local directory.
 5. Navigate to the extracted folder and open the source files in your favorite IDE.

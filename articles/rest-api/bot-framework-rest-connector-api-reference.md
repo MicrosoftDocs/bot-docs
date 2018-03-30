@@ -131,6 +131,7 @@ Creates a new conversation.
 ```http 
 POST /v3/conversations
 ```
+
 | | |
 |----|----|
 | **Request body** | A [Conversation](#conversation-object) object |
@@ -141,6 +142,7 @@ Sends an activity (message) to the specified conversation. The activity will be 
 ```http
 POST /v3/conversations/{conversationId}/activities
 ```
+
 | | |
 |----|----|
 | **Request body** | An [Activity](#activity-object) object |
@@ -151,6 +153,7 @@ Sends an activity (message) to the specified conversation, as a reply to the spe
 ```http
 POST /v3/conversations/{conversationId}/activities/{activityId}
 ```
+
 | | |
 |----|----|
 | **Request body** | An [Activity](#activity-object) object |
@@ -161,6 +164,7 @@ Gets the members of the specified conversation.
 ```http
 GET /v3/conversations/{conversationId}/members
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -171,6 +175,7 @@ Gets the members of the specified activity within the specified conversation.
 ```http
 GET /v3/conversations/{conversationId}/activities/{activityId}/members
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -181,6 +186,7 @@ Some channels allow you to edit an existing activity to reflect the new state of
 ```http
 PUT /v3/conversations/{conversationId}/activities/{activityId}
 ```
+
 | | |
 |----|----|
 | **Request body** | An [Activity](#activity-object) object |
@@ -191,6 +197,7 @@ Some channels allow you to delete an existing activity. If successful, this oper
 ```http
 DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -201,6 +208,7 @@ Uploads an attachment for the specified conversation directly into a channel's b
 ```http 
 POST /v3/conversations/{conversationId}/attachments
 ```
+
 | | |
 |----|----|
 | **Request body** | An [AttachmentUpload](#attachmentupload-object) object. |
@@ -219,6 +227,7 @@ Gets information about the specified attachment, including file name, type, and 
 ```http
 GET /v3/attachments/{attachmentId}
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -229,6 +238,7 @@ Gets the specified view of the specified attachment as binary content.
 ```http
 GET /v3/attachments/{attachmentId}/views/{viewId}
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -252,6 +262,7 @@ Stores state data for the specified user on the specified channel.
 ```http
 POST /v3/botstate/{channelId}/users/{userId} 
 ```
+
 | | |
 |----|----|
 | **Request body** | A [BotData](#botdata-object) object |
@@ -262,6 +273,7 @@ Stores state data for the specified conversation on the specified channel.
 ```http
 POST /v3/botstate/{channelId}/conversations/{conversationId}
 ```
+
 | | |
 |----|----|
 | **Request body** | A [BotData](#botdata-object) object |
@@ -272,6 +284,7 @@ Stores state data for the specified user within the context of the specified con
 ```http
 POST /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId} 
 ```
+
 | | |
 |----|----|
 | **Request body** | A [BotData](#botdata-object) object |
@@ -282,6 +295,7 @@ Retrieves state data that has previously been stored for the specified user acro
 ```http
 GET /v3/botstate/{channelId}/users/{userId} 
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -292,6 +306,7 @@ Retrieves state data that has previously been stored for the specified conversat
 ```http
 GET /v3/botstate/{channelId}/conversations/{conversationId} 
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -302,6 +317,7 @@ Retrieves state data that has previously been stored for the specified user with
 ```http
 GET /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId} 
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
@@ -312,12 +328,13 @@ Deletes state data that has previously been stored for the specified user on the
 ```http
 DELETE /v3/botstate/{channelId}/users/{userId} 
 ```
+
 | | |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An array of strings (IDs) | 
 
-##<a id="objects"></a> Schema
+## <a id="objects"></a> Schema
 
 Schema defines the object and its properties that your bot can use to communicate with a user. 
 
@@ -695,11 +712,12 @@ Defines the URL to a media file's source.<br/><br/>
 ### Mention object
 Defines a user or bot that was mentioned in the conversation.<br/><br/> 
 
-| Property | Type | Description |
-|----|----|----|
-| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Note that some channels such as Slack assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
-| **text** | string | The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to **@ColorBot**. Not all channels set this property. |
-| **type** | string | This object's type. Always set to **Mention**. |
+
+|          Property          |                   Type                   |                                                                                                                                                                                                                           Description                                                                                                                                                                                                                            |
+|----------------------------|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>mentioned</strong> | [ChannelAccount](#channelaccount-object) | A <strong>ChannelAccount</strong> object that specifies the user or the bot that was mentioned. Note that some channels such as Slack assign names per conversation, so it is possible that your bot's mentioned name (in the message's <strong>recipient</strong> property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
+|   <strong>text</strong>    |                  string                  |                                                                                                                         The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to <strong>@ColorBot</strong>. Not all channels set this property.                                                                                                                          |
+|   <strong>type</strong>    |                  string                  |                                                                                                                                                                                                   This object's type. Always set to <strong>Mention</strong>.                                                                                                                                                                                                    |
 
 <a href="#objects">Back to Schema table</a>
 
@@ -757,9 +775,11 @@ Defines a line item within a receipt.<br/><br/>
 ### ResourceResponse object
 Defines a response that contains a resource ID.<br/><br/>
 
-| Property | Type | Description |
-|----|----|----|
-| **id** | string | ID that uniquely identifies the resource. | 
+
+|      Property       |  Type  |                Description                |
+|---------------------|--------|-------------------------------------------|
+| <strong>id</strong> | string | ID that uniquely identifies the resource. |
+
 <a href="#objects">Back to Schema table</a>
 
 ### SignInCard object

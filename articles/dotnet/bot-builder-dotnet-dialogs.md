@@ -154,28 +154,29 @@ Builder library includes a reflection-based serialization surrogate that you can
 
 [!code-csharp[Serialization](../includes/code/dotnet-dialogs.cs#serialization)]
 
-##<a id="dialog-chains"></a> Dialog chains
+## <a id="dialog-chains"></a> Dialog chains
 
 While you can explicitly manage the stack of active dialogs by using `IDialogStack.Call<R>` and `IDialogStack.Done<R>`, you can also implicitly manage the stack of 
 active dialogs by using these fluent [Chain][chain] methods.
 
-| Method | Type | Notes |
-|----|----|----|
-|Chain.Select<T, R>| LINQ | Supports "select" and "let" in LINQ query syntax.|
-|Chain.SelectMany<T, C, R>   | LINQ    | Supports successive "from" in LINQ query syntax.|
-|Chain.Where<T>              | LINQ    | Supports "where" in LINQ query syntax.|
-|Chain.From<T>               | Chains  | Instantiates a new instance of a dialog.|
-|Chain.Return<T>             | Chains  | Returns a constant value into the chain.|
-|Chain.Do<T>                 | Chains  | Allows for side-effects within the chain.|
-|Chain.ContinueWith<T, R>    | Chains  | Simple chaining of dialogs.|
-|Chain.Unwrap<T>             | Chains  | Unwrap a dialog nested in a dialog.|
-|Chain.DefaultIfException<T> | Chains  | Swallows an exception from the previous result and returns default(T).|
-|Chain.Loop<T>               | Branch  | Loops the entire chain of dialogs.|
-|Chain.Fold<T>               | Branch  | Folds results from an enumeration of dialogs into a single result.|
-|Chain.Switch<T, R>          | Branch  | Supports branching into different dialog chains.|
-|Chain.PostToUser<T>         | Message | Posts a message to the user.|
-|Chain.WaitToBot<T>          | Message | Waits for a message to the bot.|
-|Chain.PostToChain<T>        | Message | Starts a chain with a message from the user.|
+
+|           Method            |  Type   |                                 Notes                                  |
+|-----------------------------|---------|------------------------------------------------------------------------|
+|     Chain.Select<T, R>      |  LINQ   |           Supports "select" and "let" in LINQ query syntax.            |
+|  Chain.SelectMany<T, C, R>  |  LINQ   |            Supports successive "from" in LINQ query syntax.            |
+|       Chain.Where<T>        |  LINQ   |                 Supports "where" in LINQ query syntax.                 |
+|        Chain.From<T>        | Chains  |                Instantiates a new instance of a dialog.                |
+|       Chain.Return<T>       | Chains  |                Returns a constant value into the chain.                |
+|         Chain.Do<T>         | Chains  |               Allows for side-effects within the chain.                |
+|  Chain.ContinueWith<T, R>   | Chains  |                      Simple chaining of dialogs.                       |
+|       Chain.Unwrap<T>       | Chains  |                  Unwrap a dialog nested in a dialog.                   |
+| Chain.DefaultIfException<T> | Chains  | Swallows an exception from the previous result and returns default(T). |
+|        Chain.Loop<T>        | Branch  |                   Loops the entire chain of dialogs.                   |
+|        Chain.Fold<T>        | Branch  |   Folds results from an enumeration of dialogs into a single result.   |
+|     Chain.Switch<T, R>      | Branch  |            Supports branching into different dialog chains.            |
+|     Chain.PostToUser<T>     | Message |                      Posts a message to the user.                      |
+|     Chain.WaitToBot<T>      | Message |                    Waits for a message to the bot.                     |
+|    Chain.PostToChain<T>     | Message |              Starts a chain with a message from the user.              |
 
 ### Examples 
 

@@ -129,7 +129,7 @@ bot.dialog('createAlarm', [
         if (results.response) {
             session.dialogData.time = builder.EntityRecognizer.resolveTime([results.response]);
         }
-        
+
         // Return alarm to caller  
         if (session.dialogData.name && session.dialogData.time) {
             session.endDialogWithResult({ 
@@ -152,6 +152,7 @@ To specify the style of the list that is presented to the user, set the [IPrompt
 
 
 The `ListStyle` enum values are as follows:
+
 | Index | Name | Description |
 | ---- | ---- | ---- |
 | 0 | none | No list is rendered. This is used when the list is included as part of the prompt. |

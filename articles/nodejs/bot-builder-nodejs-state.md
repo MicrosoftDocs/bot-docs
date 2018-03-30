@@ -14,7 +14,7 @@ ms.date: 12/13/2017
 > - [.NET](../dotnet/bot-builder-dotnet-state.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-state.md)
 
-[!include[State concept overview](../includes/snippet-dotnet-concept-state.md)]  
+[!INCLUDE [State concept overview](../includes/snippet-dotnet-concept-state.md)]
 
 ## In-memory data storage
 

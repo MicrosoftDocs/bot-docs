@@ -198,9 +198,9 @@ For details about these Telegram methods and their parameters, see the
 <a href="https://core.telegram.org/bots/api#available-methods" target="_blank">Telegram Bot API documentation</a>.
 
 > [!NOTE]
-> <ul><li>The `chat_id` parameter is common to all Telegram methods. If you do not specify `chat_id` as a parameter, the framework will provide the ID for you.</li>
-<li>Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.</li>
-<li>Within each message that your bot receives from the Telegram channel, the `channelData` property will include the message that your bot sent previously.</li></ul>
+> <ul><li>The <code>chat_id</code> parameter is common to all Telegram methods. If you do not specify <code>chat_id</code> as a parameter, the framework will provide the ID for you.</li>
+> <li>Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.</li>
+> <li>Within each message that your bot receives from the Telegram channel, the <code>channelData</code> property will include the message that your bot sent previously.</li></ul>
 
 This snippet shows an example of a `channelData` property that specifies a single Telegram method.
 

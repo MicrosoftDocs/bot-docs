@@ -97,7 +97,7 @@ Run your bot in Visual Studio, the code you added will create the custom **botda
 
 ## Connect your bot to the emulator
 At this point, your bot is running locally. Next, start the emulator and then connect to your bot in the emulator:
-1. Type http://localhost:port-number/api/messages into the address bar, where port-number matches the port number shown in the browser where your application is running. You can leave **Microsoft App ID** and **Microsoft App Password** fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
+1. Type http://localhost:port-number/api/messages into the address bar, where port-number matches the port number shown in the browser where your application is running. You can leave <strong>Microsoft App ID</strong> and <strong>Microsoft App Password</strong> fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
 2. Click **Connect**. 
 3. Test your bot by typing a few messages in the emulator. 
 

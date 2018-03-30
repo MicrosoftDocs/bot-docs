@@ -322,7 +322,7 @@ see [Customize a form using FormBuilder](bot-builder-dotnet-formflow-formbuilder
 
 ## Sample code
 
-[!include[Sample code](../includes/snippet-dotnet-formflow-samples.md)]
+[!INCLUDE [Sample code](../includes/snippet-dotnet-formflow-samples.md)]
 
 ## Additional resources
 

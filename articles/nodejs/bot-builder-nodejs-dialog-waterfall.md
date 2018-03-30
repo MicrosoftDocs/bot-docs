@@ -158,11 +158,11 @@ A dialog that is created using a waterfall must be explicitly ended, otherwise t
 * `session.endDialog`: Use this method to end the waterfall if there is no data to return to the calling dialog.
 
 * `session.endDialogWithResult`: Use this method to end the waterfall if there is data to return to the calling dialog. The `response` argument that is returned can be a JSON object or any JavaScript primitive data type. For example:
-```javascript
-session.endDialogWithResult({
+  ```javascript
+  session.endDialogWithResult({
     response: { name: session.dialogData.name, company: session.dialogData.company }
-});
-```
+  });
+  ```
 
 * `session.endConversation`: Use this method to end the waterfall if the end of the waterfall represents the end of the conversation.
 

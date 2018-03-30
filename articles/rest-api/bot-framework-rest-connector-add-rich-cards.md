@@ -21,7 +21,7 @@ Bots and channels typically exchange text strings but some channels also support
 > For information about how to add media attachments to messages, see 
 > [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md).
 
-##<a id="types-of-cards"></a> Types of rich cards
+## <a id="types-of-cards"></a> Types of rich cards
 
 A rich card comprises a title, description, link, and images. 
 A message can contain multiple rich cards, displayed in either list format or carousel format.
@@ -149,7 +149,7 @@ Content-Type: application/json
 }
 ```
 
-##<a id="adaptive-card"></a> Add an Adaptive card to a message
+## <a id="adaptive-card"></a> Add an Adaptive card to a message
 
 The Adaptive Card can contain any combination of text, speech, images, buttons, and input fields. 
 Adaptive Cards are created using the JSON format specified in <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>, which gives you full control over card content and format. 

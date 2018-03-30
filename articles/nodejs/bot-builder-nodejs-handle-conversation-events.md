@@ -20,13 +20,13 @@ The Bot Framework provides the [conversationUpdate][conversationUpdate] event fo
 
 The following code snippet allows the bot to greet new member(s) to a conversation or say **Goodbye** if it is being removed from the conversation.
 
-[!include[conversationUpdate sample Node.js](../includes/snippet-code-node-conversationupdate-1.md)]
+[!INCLUDE [conversationUpdate sample Node.js](../includes/snippet-code-node-conversationupdate-1.md)]
 
 ## Acknowledge add to contacts list
 
 The [contactRelationUpdate][contactRelationUpdate] event notifies your bot that a user has added you to their contacts list.
 
-[!include[contactRelationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
+[!INCLUDE [contactRelationUpdate sample Node.js](../includes/snippet-code-node-contactrelationupdate-1.md)]
 
 ## Add a first-run dialog
 
@@ -34,8 +34,7 @@ Since the **conversationUpdate** and the **contactRelationUpdate** event are not
 
 In the following example we’ve added a function that triggers the dialog any time we’ve never seen a user before. You can customize the way an action is triggered by providing an [onFindAction][onFindAction] handler for your action. 
 
-[!include[first-run sample Node.js](../includes/snippet-code-node-first-run-dialog-1.md)]
-
+[!INCLUDE [first-run sample Node.js](../includes/snippet-code-node-first-run-dialog-1.md)]
 
 You can also customize what an action does after its been triggered by providing an [onSelectAction][onSelectAction] handler. For trigger actions you can provide an [onInterrupted][onInterrupted] handler to intercept an interruption before it occurs. For more information, see [Handle user actions](bot-builder-nodejs-dialog-actions.md)
 

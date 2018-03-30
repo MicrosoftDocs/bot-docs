@@ -78,7 +78,6 @@ module.exports.fnDecisionState = function(context) {
         return 'no';
     }
 }
-
 ```
 
 ### Process state
@@ -103,13 +102,12 @@ module.exports.fnGetWeather = function(context) {
     return http.request(options).then(function(response) {
         context.contextEntities['x'].value= response.statusCode;
         var jsonBody = JSON.parse(response.body);
-		  // understand response
+          // understand response
         if (response.statusCode != "200") {
             // error
         }
     });
 }
-
 ```
 
 ### Prompt state
@@ -151,7 +149,7 @@ module.exports.fnBeforeExecuting = function(context) {
     if(context.responses[0].text === "C") {
         return false;
     }
-	return true;
+    return true;
 }
 ```
 
@@ -179,7 +177,6 @@ module.exports.fnOnPrompting = function(context) {
         }
     });
 }
-
 ```
 
 This code snippet shows an example for **Before reprompting** callback.
@@ -189,7 +186,7 @@ module.exports.fnBeforeReprompting = function(context) {
     if(context.responses[0].text === "C") {
         return false;
     }
-	return true;
+    return true;
 }
 ```
 

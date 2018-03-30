@@ -14,11 +14,11 @@ ms.date: 12/13/2017
 > - [.NET](../dotnet/bot-builder-dotnet-proactive-messages.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-proactive-messages.md)
 
-[!include[Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)] 
+[!INCLUDE [Introduction to proactive messages - part 1](../includes/snippet-proactive-messages-intro-1.md)]
 
 ## Types of proactive messages
 
-[!include[Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)] 
+[!INCLUDE [Introduction to proactive messages - part 2](../includes/snippet-proactive-messages-intro-2.md)]
 
 ## Send an ad hoc proactive message
 

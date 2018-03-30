@@ -153,7 +153,6 @@ Once the channel receives this attachment, it will start playing the audio file.
         }
     }
 }
-
 ```
 
 The media event name **media/pause** will appear in the `activity.name` field. Reference the below table for a list of all media event names.

@@ -28,7 +28,7 @@ Not all [activity types](bot-framework-rest-connector-activities.md) are availab
 | endOfConversation | HTTP GET and WebSocket |
 | all other activity types | HTTP GET and WebSocket |
 
-##<a id="connect-via-websocket"></a> Receive activities via WebSocket stream
+## <a id="connect-via-websocket"></a> Receive activities via WebSocket stream
 
 When a client sends a [Start Conversation](bot-framework-rest-direct-line-3-0-start-conversation.md) request to open a conversation with a bot, the service's response includes a `streamUrl` property that the client can subsequently use to connect via WebSocket. The stream URL is preauthorized and therefore the client's request to connect via WebSocket does NOT require an `Authorization` header.
 
@@ -91,7 +91,7 @@ The Direct Line service may forcibly close the WebSocket connection under certai
 
 The WebSocket stream contains live updates and very recent messages (since the call to connect via WebSocket was issued) but it does not include messages that were sent prior to the most recent `POST` to `/v3/directline/conversations/{id}`. To retrieve messages that were sent earlier in the conversation, use `HTTP GET` as described below.
 
-##<a id="http-get"></a> Retrieve activities with HTTP GET
+## <a id="http-get"></a> Retrieve activities with HTTP GET
 
 Clients that are unable to use WebSockets or clients that want to get conversation history can retrieve activities by using `HTTP GET`.
 

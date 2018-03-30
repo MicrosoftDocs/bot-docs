@@ -35,7 +35,7 @@ A bot that uses a Consumption plan is a serverless bot that runs on <a href="htt
 
 Bot Service enables you to quickly and easily create a bot in either C# or Node.js by using one of five templates.
 
-[!include[Bot Service templates](~/includes/snippet-abs-templates.md)] 
+[!INCLUDE [Bot Service templates](~/includes/snippet-abs-templates.md)]
 
 [Learn more](bot-service-concept-templates.md) about the different templates and how they can help you build bots.
 
