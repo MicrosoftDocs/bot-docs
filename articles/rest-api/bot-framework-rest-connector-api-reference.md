@@ -577,8 +577,9 @@ Defines a conversation in a channel.<br/><br/>
 | Property | Type | Description |
 |----|----|----|
 | **id** | string | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversion, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see Starting a conversation). |
-| **isGroup** | boolean | Flag to indicate whether or not this is a group conversation. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
+| **isGroup** | boolean | Flag to indicate whether the conversation contains more than two participants at the time the activity was generated. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
 | **name** | string | A display name that can be used to identify the conversation. |
+| **conversationType** | string | Indicates the type of the conversation in channels that distingish between conversation types (e.g.: group, personal). |
 
 <a href="#objects">Back to Schema table</a>
 
