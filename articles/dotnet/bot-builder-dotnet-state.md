@@ -18,29 +18,38 @@ ms.date: 12/13/17
 
 ## In-memory data storage
 
-In-memory data storage is intended for testing only. This storage is volatile and temporary. The data is cleared each time the bot is restarted. To use the in-memory storage for testing purposes, you will need to do two things. First, within the **Conversation.UpdateContainer** method, create a new instance of the in-memory storage:
+In-memory data storage is intended for testing only. This storage is volatile and temporary. The data is cleared each time the bot is restarted. To use the in-memory storage for testing purposes, you will need to: 
+
+Install the following NuGet packages: 
+- Microsoft.Bot.Builder.Azure
+- Autofac.WebApi2
+
+In the **Application_Start** method, create a new instance of the in-memory storage, and register the new data store:
 
 ```cs
-Conversation.UpdateContainer(
-            builder =>
-            {
-                var store = new InMemoryDataStore();
-                ...
-            });
-```
+// Global.asax file
 
-Then, register the new data store:
+var store = new InMemoryDataStore();
 
-```cs
 Conversation.UpdateContainer(
-            builder =>
-            {
-                var store = new InMemoryDataStore();
-                builder.Register(c => store)
-                          .Keyed<IBotDataStore<BotData>>(AzureModule.Key_DataStore)
+           builder =>
+           {
+               builder.Register(c => store)
+                         .Keyed<IBotDataStore<BotData>>(AzureModule.Key_DataStore)
+                         .AsSelf()
+                         .SingleInstance();
+
+               builder.Register(c => new CachingBotDataStore(store,
+                          CachingBotDataStoreConsistencyPolicy
+                          .ETagBasedConsistency))
+                          .As<IBotDataStore<BotData>>()
                           .AsSelf()
-                          .SingleInstance();
-            });
+                          .InstancePerLifetimeScope();
+
+
+           });
+GlobalConfiguration.Configure(WebApiConfig.Register);
+
 ```
 
 You can use this method to set your own custom data storage or use any of the *Azure Extensions*.
