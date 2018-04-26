@@ -90,7 +90,10 @@
             "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
             "author": "RobStand",
             "ms.prod": "bot-framework",
-            "searchScope": ["BotService"],
+            "searchScope": [
+              "Azure",
+              "BotService"
+            ],
             "ms.date": "12/13/2017",
             "titleSuffix": "Bot Service"
         },
@@ -113,6 +116,7 @@
         },
         "template": [],
         "dest": "bot-framework",
+        "markdownEngineName": "markdig",
         "groups": {
           "bot-service": {
            "dest": "bot-service",
