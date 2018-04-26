@@ -22,7 +22,9 @@ You can write directly to storage without using the context object or middleware
 This code example shows you how to read and write data to storage. In this example the storage is a file, but you can easily change the code to initialze the storage object to use `MemoryStorage` or `AzureTableStorage` instead. 
 
 # [C#](#tab/csharpechorproperty)
-To store data that you access using `Storage.Write` and `Storage.Read`, you can use the `StoreItems` and `StoreItem` classes.
+To store data that you access using `Storage.Write` and `Storage.Read`, you can use the `StoreItems` and `StoreItem` classes. 
+
+The following sample adds every message from the the user to a list. The data structure containing the list is saved to a file within the directory you provide to the `FileStorage` constructor.
 
 ```csharp
 // Start with the EchoBot sample in the BotBuilder V4 SDK and edit the code to match the following
@@ -122,7 +124,9 @@ To store data that you access using `Storage.Write` and `Storage.Read`, you can 
         }
     }
 ```
-# [JavaScript](#tab/jsweatherproperty)
+# [JavaScript](#tab/jsechoproperty)
+
+The following sample adds every message from the the user to a list. The data structure containing the list is saved to a file within the directory you provide to the `FileStorage` constructor.
 
 ``` javascript
 // paste the following into app.js
@@ -142,57 +146,58 @@ const adapter = new BotFrameworkAdapter({
 });
 
 // Add conversation state middleware
-// const conversationState = new ConversationState(new MemoryStorage());
-var fs = new FileStorage({ path: "C:/Users/v-demak/Documents/a-temp" });
+var fs = new FileStorage("C:/temp");
 // note - constructor doesn't throw if path DNE or no permissions
 
 const conversationState = new ConversationState(fs);
 adapter.use(conversationState);
 
-// Listen for incoming requests 
+// Listen for incoming activity 
 server.post('/api/messages', (req, res) => {
-    // Route received request to adapter for processing
-    adapter.processRequest(req, res, (context) => {
-        if (context.request.type === 'message') {
+    // Route received activity to adapter for processing
+    adapter.processActivity(req, res, async (context) => {
+        if (context.activity.type === 'message') {
             const state = conversationState.get(context);
             const count = state.count === undefined ? state.count = 0 : ++state.count;
 
+            let utterance = context.activity.text;
+            let storeItems = await fs.read(["UtteranceLog2"])
+            try {
+                // check result
+                console.log(`Just read StoreItems[UtteranceLog] from file: ${JSON.stringify(storeItems)}`);
+                var utteranceLog = storeItems["UtteranceLog2"];
+                console.log(`utteranceLog: ${JSON.stringify(utteranceLog)}`);
 
-            let utterance = context.request.text;
-            let logItems = fs.read(["UtteranceLog2"])
-                .then((storeItems) => {
-                    // check result
-                    console.log(`Just read StoreItems[UtteranceLog] from file: ${JSON.stringify(storeItems)}`);
-                    var utteranceLog = storeItems["UtteranceLog2"];
-                    console.log(`utteranceLog: ${JSON.stringify(utteranceLog)}`);
+                if (typeof (utteranceLog) != 'undefined') {
+                    // log exists so we can write to it
+                    storeItems["UtteranceLog2"].UtteranceList.push(utterance);
+                    console.log(`Updated StoreItems[UtteranceLog] with additional utterance: ${JSON.stringify(storeItems)}`);
 
-                    if (typeof (utteranceLog) != 'undefined') {
-                        // log exists so we can write to it
-
-                        storeItems["UtteranceLog2"].UtteranceList.push(utterance);
-                        console.log(`Updated StoreItems[UtteranceLog] with additional utterance: ${JSON.stringify(storeItems)}`);
-
-                        fs.write(storeItems) 
-                            .then(() => { console.log('successful write.') },
-                                (err) => { console.log(`write failed of UtteranceLog: ${err.message}`) }
-                            );
-
-                    } else {
-                        console.log(`need to create new utterance log`);
-                        storeItems["UtteranceLog2"] = { UtteranceList: [`${utterance}`], "eTag": "*" }
-                        fs.write(storeItems)
-                            .then(() => { console.log('successful write.') },
-                                (err) => { console.log(`write failed: ${err.errno}`) }
-                            );
+                    await fs.write(storeItems)
+                    try {
+                        console.log('successful write.');
+                    } catch (err) {
+                        console.log(`write failed of UtteranceLog: ${err.message}`);
                     }
-                }, (reason) => {
-                    console.log("Read rejected.")
-                    // rejected
-                });
 
-            return context.sendActivity(`${count}: You said "${context.request.text}"`);
+                } else {
+                    console.log(`need to create new utterance log`);
+                    storeItems["UtteranceLog2"] = { UtteranceList: [`${utterance}`], "eTag": "*" }
+                    await fs.write(storeItems)
+                    try {
+                        console.log('successful write.');
+                    } catch (err) {
+                        console.log(`write failed: ${err.errno}`);
+                    }
+                }
+            } catch (reason) {
+                console.log("Read rejected.")
+                // rejected
+            };
+
+            await context.sendActivity(`${count}: You said "${context.activity.text}"`);
         } else {
-            return context.sendActivity(`[${context.request.type} event detected]`);
+            await context.sendActivity(`[${context.activity.type} event detected]`);
         }
     });
 });
@@ -298,7 +303,7 @@ namespace Microsoft.Bot.Samples.EchoBot_AspNet461
 ---
 -->
 
-## Manage concurrency using entity tags (eTags)
+## Manage concurrency using eTags
 
 In the previous example, you set the `eTag` property to `*`. The `eTag` (entity tag) member of the `StoreItem` class is for managing concurrency. The `eTag` indicates what to do if another instance of the bot has changed the `StoreItem` that your bot is writing to. 
 
@@ -434,21 +439,29 @@ You can use IStorage to save BotBuilder SDK objects as well as user-defined data
 const { MemoryStorage } = require('botbuilder');
 
 const storage = new MemoryStorage();
-const bot = new Bot(adapter)
-    .onReceive((context) => {
-        const utterance = (context.request.text || '').trim().toLowerCase();
-        if (utterances === 'subscribe') {
-            const reference = context.conversationReference;
-            const userId = reference.user.id;
-            const changes = {};
-            changes['reference/' + userId] = reference;
-            return storage.write(changes)
-                .then(( => subscribeUser(userId)))
-                .then(() => {
-                    context.reply(`Thank You! We will message you shortly.`);
-                });
+
+// Listen for incoming activity 
+server.post('/api/messages', (req, res) => {
+    // Route received activity to adapter for processing
+    adapter.processActivity(req, res, async (context) => {
+        if (context.activity.type === 'message') {
+            const utterances = (context.activity.text || '').trim().toLowerCase()
+            if (utterances === 'subscribe') {
+                const reference = context.activity;
+                const userId = reference.id;
+                const changes = {};
+                changes['reference/' + userId] = reference;
+                await storage.write(changes)
+                await subscribeUser(userId)
+                await context.sendActivity(`Thank You! We will message you shortly.`);
+               
+            } else{
+                await context.sendActivity("Say 'subscribe'");
+            }
+    
         }
     });
+});
 ```
 ---
 
@@ -476,19 +489,20 @@ To read the saved object from storage, call `Storage.Read()`.
 ```
 # [JavaScript](#tab/jsread)
 ```javascript
-function subscribeUser(userId) {
+async function subscribeUser(userId) {
     setTimeout(() => {
         createContextForUser(userId, (context) => {
-            context.reply(`You've been notified!`);
-        });
+            context.sendActivity("You have been notified");
+        })
     }, 2000);
 }
 
-function createContextForUser(userId, onReady) {
+async function createContextForUser(userId, callback) {
     const referenceKey = 'reference/' + userId;
-    return storage.read([referenceKey])
-        .then((rows) => rows[referenceKey])
-        .then((reference) => bot.createContext(reference, onReady));
+    var rows = await storage.read([referenceKey])
+    var reference = await rows[referenceKey]
+    await callback(adapter.createContext(reference))
+          
 }
 ```
 ---
@@ -498,6 +512,6 @@ function createContextForUser(userId, onReady) {
 
 ## Additional resources
 
-- [Concept: Storage in the Bot Builder SDK](./bot-builder-v4-concept-storage.md)
+- [Concept: Storage in the Bot Builder SDK](./bot-builder-storage-concept.md)
 
 

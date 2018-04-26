@@ -6,8 +6,9 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 03/08/2018
 ---
+
 # Download Bot Service source code
 
 Bot Service allows you to download the entire source project for your bot. This allows you to work on your bot locally using an IDE of your choice. Once you are done making changes, you can publish your changes back to Azure. 

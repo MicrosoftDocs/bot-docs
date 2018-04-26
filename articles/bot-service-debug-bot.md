@@ -174,5 +174,4 @@ You can also set breakpoints for your bot. The breakpoints are hit only after cl
 
 ![Debug in Visual Studio](~/media/csharp-azureservice-debug-breakpoint.png)
 
-
 ## Next steps

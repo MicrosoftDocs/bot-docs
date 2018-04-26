@@ -101,7 +101,6 @@ The following code passes the speech options to the Web Chat control:
 
 [!code-js[Pass speech options to Web Chat (JavaScript)](./includes/code/bot-service-channel-connect-webchat-speech.js#PassSpeechOptionsToWebChat)]
 
-
 ## Next steps
 Now that you can enable voice interaction with Web Chat, learn how your bot constructs spoken messages and adjusts the state of the microphone:
 * [Add speech to messages (C#)](dotnet/bot-builder-dotnet-text-to-speech.md)

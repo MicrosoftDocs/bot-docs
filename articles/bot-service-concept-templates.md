@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
+
 # Bot Service templates
 Bot Service includes five templates to help you get started with building bots. These templates provide a fully functional bot out of the box to help you get started quickly. When you [create a bot](bot-service-quickstart.md), you choose a template and the SDK language for your bot.
 
@@ -51,7 +52,7 @@ The following diagram shows how triggered events work when you create a bot usin
 The process begins when the user sends a message to your bot via Bot Framework servers (step 1).
 
 ## Next steps
-Now that you know about the different templates, learn about developing bots with Bot Builder.
+Now that you know about the different templates, learn about Cognitive Services for use within bots.
 
 > [!div class="nextstepaction"]
-> [Bot Builder overview](bot-builder-overview-getstarted.md)
+> [Cognitive Services for bots](bot-service-concept-intelligence.md)

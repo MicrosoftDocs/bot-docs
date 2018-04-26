@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Cortana Skills Bot Scenario
 The Cortana Skills Bot extends Cortana to make it easy to book a mobile auto maintenance appointment using voice with context from your calendar.

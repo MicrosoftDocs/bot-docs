@@ -6,8 +6,9 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 03/08/2018
 ---
+
 # Edit a bot with online code editor
 
 You can use the online code editor to build your bot without needing an IDE. This topic will show you how to open your bot code in the online code editor. 

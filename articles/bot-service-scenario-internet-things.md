@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Internet of Things (IoT) Bot Scenario
 This Internet of Things (IoT) Bot makes it easy for you to control devices around your home, such as a Philips Hue light using voice or interactive chat commands.

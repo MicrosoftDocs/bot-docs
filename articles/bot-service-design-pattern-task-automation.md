@@ -18,9 +18,8 @@ It may have natural language understanding capabilities to enrich conversations 
 ## Example use case: password-reset
 
 To better understand the nature of a task bot, consider an example use case: password-reset. 
-The Contoso company receives several help desk calls each day from employees who need to reset their passwords. 
-Contoso wants to automate the simple, repeatable task of resetting a employee's password so that help desk agents 
-can devote their time to addressing more complex issues. 
+
+The Contoso company receives several help desk calls each day from employees who need to reset their passwords. Contoso wants to automate the simple, repeatable task of resetting a employee's password so that help desk agents can devote their time to addressing more complex issues. 
 
 John, an experienced developer from Contoso, decides to create a bot to automate the password-reset task. 
 He begins by writing a design specification for the bot, just as he would do if he were creating a new app or website. 

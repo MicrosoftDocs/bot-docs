@@ -15,9 +15,26 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "v4sdk/**"
         ]
-      }
+      },
+      {
+      "group": "bot-service",
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "src": "v4sdk",
+      "exclude": [
+        "**/obj/**",
+        "**/includes/**",
+        "README.md",
+        "LICENSE",
+        "LICENSE-CODE",
+        "ThirdPartyNotices"
+      ]
+    }
         
         
         ],
@@ -25,7 +42,8 @@
             {
             "files": [
                 "**/*.png",
-                "**/*.jpg"
+                "**/*.jpg",
+                "**/*.svg"
             ],
             "exclude": [
                 "**/obj/**",
@@ -40,13 +58,29 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "v4sdk"
         ]        
-      }
+      },
+      {
+      "group": "bot-service",
+      "src": "v4sdk",
+      "files": [
+        "**/*.png",
+        "**/*.jpg",
+        "**/*.gif",
+        "**/*.svg"
+      ],
+      "exclude": [
+        "**/obj/**",
+        "**/includes/**"
+      ]
+    }
         
         ],
         "overwrite": [],
@@ -62,16 +96,19 @@
         },
         "fileMetadata": {
             "ms.author": {
-                "**/**.md": "rstand"
+                "**/**.md": "kaiqb"
             },
             "manager": {
-                "**/**.md": "rstand"
+                "**/**.md": "kaiqb"
             },
             "ms.technology": {
                 "**/**.md": "bf-bot-builder"
             },
             "ms.date": {
                 "**/**.md": "12/13/2017"
+            },
+            "monikerRange": {
+                "v4sdk/**.md": "azure-bot-service-4.0"
             }
         },
         "template": [],

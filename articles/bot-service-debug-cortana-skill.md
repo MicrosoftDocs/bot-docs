@@ -6,7 +6,6 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/17
-
 ---
 
 # Test a Cortana skill

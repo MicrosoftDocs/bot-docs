@@ -140,3 +140,4 @@ The Channel Inspector currently allows you to preview the following features.
 
 [netbutton]: ~\dotnet\bot-builder-dotnet-add-suggested-actions.md
 [nodebutton]: ~\nodejs\bot-builder-nodejs-send-suggested-actions.md
+

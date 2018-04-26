@@ -21,7 +21,7 @@ The interaction between users and bots is mostly free-form, so bots need to unde
 
 Cognitive Services provides five APIs for language understanding:
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models. More details can be found on [Language understanding for bots](v4sdk/bot-builder-concept-luis.md)
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="_blank">Text Analytics API</a> detects sentiment, key phrases, topics, and language from text.
 
@@ -108,7 +108,6 @@ Learn more about [image and video understanding][vision] with Microsoft Cognitiv
 ## Additional resources
 
 You can find comprehensive documentation of each product and their corresponding API references in the <a href="https://docs.microsoft.com/azure/cognitive-services" target="_blank">Cognitive Services documentation</a>.
-
 
 [language]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
 [search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/search-the-web

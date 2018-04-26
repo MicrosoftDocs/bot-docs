@@ -6,8 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
-
+ms.date: 03/03/2018
 ---
 # Connect a bot to Cortana
 

@@ -12,13 +12,11 @@ ms.date: 12/13/2017
 
 # Principles of bot design
 
-The Bot Framework enables developers to create compelling bot experiences that solve a variety of business problems. 
-By learning the concepts described in this section, you'll become equipped to design a bot that 
-aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
+The Bot Framework enables developers to create compelling bot experiences that solve a variety of business problems. By learning the concepts described in this section, you'll become equipped to design a bot that aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
 
-##Designing a bot
+## Designing a bot
 
-If you are building a bot, it is safe to assume that you are expecting users to use it. 
+If you are building a bot, it's safe to assume that you are expecting users to use it. 
 It is also safe to assume that you are hoping that users will prefer the bot experience over alternative experiences like apps, websites, phone calls, and other means of addressing their particular needs. 
 In other words, your bot is competing for users' time against things like apps and websites. 
 So, how can you maximize the odds that your bot will achieve its ultimate goal of attracting and keeping users? 
@@ -29,10 +27,7 @@ It's simply a matter of prioritizing the right factors when designing your bot.
 When designing your bot, be aware that none of the following factors necessarily guarantee a bot's success: 
 
 - **How “smart” the bot is**: 
-In most cases, it is unlikely that making your bot smarter will guarantee happy users and adoption of your platform. 
-In reality, many bots have little advanced machine learning or natural language capabilities. 
-Of course, a bot may include those capabilities if they're necessary to solve the problems that it's designed to address. 
-However, you should not assume any correlation between a bot's intelligence and user adoption of the bot.
+In most cases, it is unlikely that making your bot smarter will guarantee happy users or adoption of your platform. In reality, many bots have little advanced machine learning or natural language capabilities. A bot may include those capabilities if they're necessary to solve the problems that it's designed to address, however you should not assume any correlation between a bot's intelligence and user adoption of the bot.
 
 - **How much natural language the bot supports**: 
 Your bot can be great at conversations. 
@@ -62,22 +57,16 @@ Some key considerations include:
 
 - Is the bot discoverable? Do the users naturally know what to do when using it?
 
-Note that none of these questions directly relates to factors such as 
-how smart the bot is, how much natural language capability it has, whether it uses machine learning, 
-or which programming language was used to create it. Users are unlikely to care about any of these things if the bot solves the problem that they need to address and 
-delivers a great user experience. A great bot user experience does not require users to type too much, talk too much, 
-repeat themselves several times, or explain things that the bot should automatically know.
+None of these questions directly relates to factors such as how smart the bot is, how much natural language capability it has, whether it uses machine learning, or which programming language was used to create it. Users are unlikely to care about any of these things if the bot solves the problem that they need to address and delivers a great user experience. A great bot user experience does not require users to type too much, talk too much, repeat themselves several times, or explain things that the bot should automatically know.
 
 > [!TIP]
 > Regardless of the type of application you're creating (bot, website, or app), make user experience a top priority.
 
 The process of designing a bot is like the process of designing an app or website, so
-the lessons learned from decades of building UI and delivering UX for apps and websites still apply 
-when it comes to designing bots. Whenever you are unsure about the right design approach for your bot, 
-step back and ask yourself the following question: how would you solve that problem in an app or a website? 
-Chances are, the same answer can be applied to bot design. 
+the lessons learned from decades of building UI and delivering UX for apps and websites still apply when it comes to designing bots. 
+
+Whenever you are unsure about the right design approach for your bot, step back and ask yourself the following question: how would you solve that problem in an app or a website? Chances are, the same answer can be applied to bot design. 
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, 
-and common patterns in the remainder of this section.
+Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, and common patterns in the remainder of this section.

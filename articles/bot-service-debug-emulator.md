@@ -7,8 +7,9 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
 ---
+
+::: moniker range="azure-bot-service-3.0"
 
 # Debug bots with the Bot Framework Emulator
 
@@ -112,4 +113,8 @@ You can use the [Channel Inspector](bot-service-channel-inspector.md) to preview
 [NodeGetStarted]: ~/nodejs/bot-builder-nodejs-quickstart.md
 [CSGetStarted]: ~/dotnet/bot-builder-dotnet-quickstart.md
 
+::: moniker-end
 
+::: moniker range="azure-bot-service-4.0"
+
+::: moniker-end

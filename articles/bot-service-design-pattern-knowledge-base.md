@@ -25,10 +25,8 @@ JSON data in a non-relational store, or PDFs in a document store.
 
 Search functionality can be a valuable tool within a bot. 
 
-First, "fuzzy search" enables a bot to return information that's likely to be relevant to the user's question, 
-without requiring that the user provide precise input. 
-For example, if the user asks a music knowledge bot for information about "impala" (instead of "Tame Impala"), 
-the bot can respond with information that's most likely to be relevant to that input.
+First, "fuzzy search" enables a bot to return information that's likely to be relevant to the user's question, without requiring that the user provide precise input. 
+For example, if the user asks a music knowledge bot for information about "impala" (instead of "Tame Impala"), the bot can respond with information that's most likely to be relevant to that input.
 
 ![Dialog Structure](~/media/bot-service-design-pattern-knowledge-base/fuzzySearch2.png)
 
@@ -99,9 +97,8 @@ For example, you could filter the result set above to contain only items where *
 Some knowledge bots may simply aim to answer frequently asked questions (FAQs). 
 <a href="https://www.microsoft.com/cognitive-services/en-us/qnamaker" target="_blank">QnA Maker</a> 
 is a powerful tool that's designed specifically for this use case. 
-QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site. It also allows you to manually configure your own custom list of questions and answers. 
-QnA Maker has natural language processing (NLP) abilities, enabling it to even provide answers to questions that are worded 
-slightly differently than expected. 
+QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site, plus it also allows you to manually configure your own custom list of questions and answers. 
+QnA Maker has natural language processing abilities, enabling it to even provide answers to questions that are worded slightly differently than expected. 
 However, it does not have semantic language understanding abilities. 
 It cannot determine that a puppy is a type of dog, for example. 
 
@@ -128,7 +125,7 @@ because QnA Maker does not inherently understand the meaning of words, i.e., it 
 Some knowledge bots require natural language processing (NLP) capabilities so that they can 
 analyze a user's messages to determine the user's intent. 
 Language Understanding (LUIS) provides a fast and effective means of adding NLP capabilities to bots. 
-LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs. It also allows you to create specialized models of your own. 
+LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs, as well as allowing you to create specialized models of your own. 
 
 When working with huge datasets, it's not necessarily feasible to train an NLP model with every variation of an entity. 
 In a music playing bot, for example, a user might message "Play Reggae", "Play Bob Marley", or "Play One Love". 
@@ -148,13 +145,9 @@ also be combined to build knowledge bots that possess more than one of those cap
 In the music festival bot example [covered earlier](#search), 
 the bot guides the conversation by showing buttons that represent the lineup. 
 However, this bot could also incorporate natural language understanding by using LUIS 
-to determine intent and entities within questions such as "what kind of music does Romit Girdhar play?". 
-Then the bot could search against an Azure Search index using musician name. 
+to determine intent and entities within questions such as "what kind of music does Romit Girdhar play?". The bot could then search against an Azure Search index using musician name. 
  
-It would not be feasible to train the model with every possible musician name since there are so many 
-potential values, but you could provide enough representative examples for 
-LUIS to properly identify the entity at hand.  For example, consider that you 
-train your model by providing examples of musicians: 
+It wouldn't be feasible to train the model with every possible musician name since there are so many potential values, but you could provide enough representative examples for LUIS to properly identify the entity at hand.  For example, consider that you train your model by providing examples of musicians: 
 
 ![Dialog Structure](~/media/bot-service-design-pattern-knowledge-base/answerGenre.png)
 ![Dialog Structure](~/media/bot-service-design-pattern-knowledge-base/answerGenreOneWord.png)
@@ -176,25 +169,13 @@ can increase the accuracy of your bot's language understanding.
 
 ### LUIS and QnA Maker
 
-Some knowledge bots might use QnA Maker to answer basic questions in combination with 
-LUIS to determine intents, extract entities and invoke more elaborate dialogs. 
-For example, consider a simple IT Help Desk bot. 
-This bot may use QnA Maker to answer basic questions about Windows or Outlook, 
-but it might also need to facilitate scenarios like password reset, 
-which require intent recognition and back-and-forth communication between user and bot. 
-There are a few ways that a bot may implement a hybrid of LUIS and QnA Maker:
+Some knowledge bots might use QnA Maker to answer basic questions in combination with LUIS to determine intents, extract entities and invoke more elaborate dialogs. For example, consider a simple IT Help Desk bot. This bot may use QnA Maker to answer basic questions about Windows or Outlook, but it might also need to facilitate scenarios like password reset, which require intent recognition and back-and-forth communication between user and bot. There are a few ways that a bot may implement a hybrid of LUIS and QnA Maker:
 
 1. Call both QnA Maker and LUIS at the same time, and respond to the user by using information from the first one that returns a score of a specific threshold. 
-2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, 
-then call QnA Maker. 
-Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent." 
+2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, then call QnA Maker. Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent." 
 3. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS. 
 
-The Bot Builder SDK for Node.js and the Bot Builder SDK for C# provide built-in support for LUIS and QnA Maker. 
-This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to 
-implement custom calls to either tool. 
-For example, if LUIS has enabled you to determine intent, 
-you could trigger a [BasicQnAMakerDialog][qnamakerTemplate] to initiate the process of answering the user's question. 
+The Bot Builder SDK provide built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See the [bot service templates](bot-service-concept-templates.md) for more information.
 
 > [!TIP]
 > When implementing a combination of LUIS, QnA Maker, and/or Azure Search, 

@@ -7,8 +7,8 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
 ---
+
 # Connect a bot to Office 365 email
 
 Bots can communicate with users via Office 365 email in addition to other [channels](~/bot-service-manage-channels.md). When a bot is configured to access an email account, it receives a message when a new email arrives. The bot can then respond as indicated by its business logic. For example, the bot could send an email reply acknowledging an email was received with the message, "Hi! Thanks for your order! We will begin processing it immediately." 

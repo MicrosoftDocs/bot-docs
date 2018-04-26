@@ -61,7 +61,7 @@ The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
-- [Activity types](~/dotnet/bot-builder-dotnet-activities.md)
+- [TODO](~/dotnet/bot-builder-dotnet-activities.md)
 - [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

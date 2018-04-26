@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Enterprise Productivity Bot Scenario
 The Enterprise Bot shows how you can increase your productivity by integrating a bot with your Office 365 calendar and other services.

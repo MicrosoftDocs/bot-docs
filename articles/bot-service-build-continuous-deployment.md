@@ -6,8 +6,9 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 03/08/2018
 ---
+
 # Set up continuous deployment
 
 Continuous deployment allows you to develop your bot locally. Continuous deployment is useful if your bot is checked into a source control like **GitHub** or **Visual Studio Team Services**. As you check your changes back into your source repository, your changes will automatically be deployed to Azure.

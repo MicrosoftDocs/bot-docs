@@ -6,12 +6,20 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/20/2018
+ms.date: 04/11/2018
 monikerRange: 'azure-bot-service-4.0'
 
 ---
-A bot can be thought of as a conversational user interface. A conversation between bot and a user consists of a series of requests sent from the user, and replies from the bot. 
 
+# Conversation flow
+
+Since a bot can be thought of as a conversational user interface, the flow of conversation is how we interact with the user and can take different forms. Having the right conversation flow helps improve the user's interaction and the performance of your bot.
+
+Designing a bot's conversation flow involves deciding how a bot responds when the user says something to it. A bot first recognizes the task or conversation topic based on a message from the user. To determine the task or topic (known as the *intent*) associated with a user's message, the bot can look for words or patterns in the text of the user's message, or it can take advantage of services like [Language Understanding (LUIS)](bot-builder-concept-luis.md) and QnA Maker. 
+
+Once the bot has recognized the user's intent, depending on the scenario, the bot could fulfill the user's request with a single reply, completing the conversation in one turn, or it might require a series of turns. For multi-turn conversation flows, the Bot Builder SDK provides [state management](./bot-builder-how-to-v4-state.md) for keeping track of a conversation, [prompts](../javascript/bot-builder-javascript-prompts.md) for asking for information, and [dialogs](../javascript/bot-builder-javascript-dialog-manage-conversation-flow.md) for encapsulating conversation flows. 
+
+In a complex bot with multiple subsystems, it can be the case that you use multiple services to recognize intent, one for each subcomponent of the bot. The [Dispatch tool]() gets the results of multiple services in one place when you combine conversational subsystems into one bot. 
 <!-- 
 A conversation identifies a series of activities sent between a bot and a user on a specific channel and represents an interaction between one or more bots and either a _direct_ conversation with a specific user or a _group_ conversation with multiple users.
 A bot communicates with a user on a channel by receiving activities from, and sending activities to the user.
@@ -23,12 +31,8 @@ A bot communicates with a user on a channel by receiving activities from, and se
 - Not all channels support group conversations.
 -->
 
+## Single turn conversation
 
-
-
-## Conversation flow
-
-The conversational UI of a bot can be designed in many ways. 
 The simplest conversational flow is single-turn. In a single-turn flow, the bot finishes its task in one turn, consisting of one message from the user and one reply from the bot. 
 
 
@@ -53,7 +57,7 @@ A weather bot has a single-turn flow, if it just gives the user a weather report
             if (String.Equals(msgActivity.Text, "get weather"))
             {                
                 // GetWeatherReport returns a string describing the weather
-                context.Reply(GetWeatherReport());
+                context.SendActivity(GetWeatherReport());
             }
         }
     // ...
@@ -62,39 +66,19 @@ A weather bot has a single-turn flow, if it just gives the user a weather report
 
 # [JavaScript](#tab/javascript)
 ```javascript
-const bot = new Bot(adapter)
-    .use(model)
-    .onReceive((context) => {
-        if (context.request.text == "get weather") {
-            context.reply(GetWeatherForecast());
-        }
-    });
-    
-    // ...
-}
+adapter.processActivity(req, res, async (context) => {
+    if (context.activity.type === 'get weather') {
+        await context.sendActivities(GetWeatherForecast())
+    }
+});
 ```
 ---
 
+In each turn of a conversation, the bot receives a turn context, which your bot can use to determine what to do next and how the conversation flows. 
 
-### Conversation and context
+## Multiple turns
 
-In each turn of a conversation, the bot receives a context object. Your bot can use the context properties to determine what to do next and how the conversation flows:
-
-| Property       | Description          | 
-| ------------- |-------------| 
-| context.ConversationReference     | Identifies the conversation, and includes information about the bot and the user participating in the conversation. | 
-| context.Request.Activity     | The requests and replies in a conversation are all types of [activities](./bot-concepts.md#activity). This property describes the incoming activity, including routing information, along with information about the channel, the conversation, the sender, and the receiver.   |
-| context.TopIntent | Represents what the bot thinks the user wants to do. The bot can use it to change conversation topics. Intent is determined by an [intent recognizer](#recognize-intent).| 
-| context.State.Conversation| Contains conversation properties. Your bot can use these to keep track of where the bot is in a conversation or its [_state_](bot-builder-v4-concept-storage.md). These properties are cleared when the conversation ends.     | 
-| context.State.User| Contains user properties, that the bot uses to save information about the user, that isn't specific to the current conversation. [_state_](bot-builder-v4-concept-storage.md).     | 
-
-<!--
-> [!TIP]
-> The context object in your bot's receive handler has a lifetime of a single turn.  -->
-
-### Multiple turns
-
-A bot can also have a multi-turn conversation flow.<!--can also take multiple turns to get the information it needs, or to execute steps in a process. A multi-turn bot keeps track of what happened earlier in a conversation. The Alarm bot sample in the BotBuilder SDK is a multi-turn bot.--> Some scenarios that require multiple conversational turns include:
+Most types of conversation can't be completed in a single turn, so a bot can also have a multi-turn conversation flow. Some scenarios that require multiple conversational turns include:
 
  * A bot that prompts the user for additional information that it needs to complete a task. The bot needs to track whether it has all the parameters for fulfilling the task.
  * A bot that guides the user through steps in a process, such as placing an order. The bot needs to track where the user is in the sequence of steps.
@@ -105,17 +89,21 @@ For example, a weather bot has a multi-turn flow, if the bot responds to "what's
 
 When the user replies to the bot's prompt for the city, the receive handler for the bot gets the utterance "Seattle", the bot needs to have some context saved, to understand that the current message is the response to a previous prompt and part of a request to get weather. Multi-turn bots keep track of state to respond appropriately to new messages.
 
+<!--
 ```
 // TBD: snippet showing receiving message and using ConversationProperties
 ```
+-->
 
-See [Managing state](bot-builder-v4-concept-storage.md) for an overview of managing state, and see [How to use user and conversation properties](bot-builder-how-to-v4-state.md) for an example.
+See [Managing state](bot-builder-storage-concept.md) for an overview of managing state, and see [How to use user and conversation properties](bot-builder-how-to-v4-state.md) for an example.
 
 ## Conversation topics
-You might design your bot to handle more than one type of task. For example, you might have a bot that provides different conversation flows for greeting the user, placing an order, canceling, and getting help. One way to switch between conversation flows for different tasks or conversation topics, is to recognize the intent (what the user wants to do) from the current message. 
 
-## Recognize intent
-The BotBuilder SDK supplies _recognizers_ that process each incoming message to determine intent, so your bot can initiate the appropriate conversational flow. Before the _receive callback_, recognizers look at the message content from the user to determine intent, and then return the intent to the bot using the context object within the receive callback. In the following example, the bot starts different conversation flows based on the value of `context.TopIntent.Name`.
+You might design your bot to handle more than one type of task. For example, you might have a bot that provides different conversation flows for greeting the user, placing an order, canceling, and getting help. One way to handle this switch between conversation for different tasks or conversation topics is to recognize the intent (what the user wants to do) from the current message. 
+
+### Recognize intent
+
+The Bot Builder SDK supplies _recognizers_ that process each incoming message to determine intent, so your bot can initiate the appropriate conversational flow. Before the _receive callback_, recognizers look at the message content from the user to determine intent, and then return the intent to the bot using the context object within the receive callback. In the following example, the bot starts different conversation flows based on the value of `context.TopIntent.Name`.
 
 # [C#](#tab/csharp)
 ```csharp
@@ -148,12 +136,12 @@ The BotBuilder SDK supplies _recognizers_ that process each incoming message to 
     public Task<bool> StartWeatherTopic(IBotContext context)
     {
         // Reply with a forecast based on what the user said
-        context.Reply(GetForecast(context.Request.Text));
+        context.SendActivity(GetForecast(context.Request.Text));
     }
 
     public Task<bool> StartHelpTopic(IBotContext context)
     {
-        context.Reply("This is the weather bot. Type `get weather` to get a weather forecast");
+        context.SendActivity("This is the weather bot. Type `get weather` to get a weather forecast");
     }
 ```
 
@@ -196,9 +184,10 @@ The recognizer that determines `context.topIntent` can simply use regular expres
 * You use Language Understanding (LUIS) to train a service with examples of ways user might ask for help, and map that to the "Help" intent.
 * You create your own recognizer middleware that inspects incoming activities and returns the "translate" intent every time it detects a message in another language.
 
-For more info on setting up a recognizer see [Recognizers] and [Language Understanding]. <!-- TODO: ADD THIS TOPIC OR SNIPPET-->
+For more info on setting up a recognizer see [Recognizers] and [Language Understanding](bot-builder-concept-luis.md). <!-- TODO: ADD THIS TOPIC OR SNIPPET-->
 
 ### Consider how to interrupt conversation flow or change topics
+
 One way to keep track of where you are in a conversation is to use `context.State.ConversationProperties` to save information about the currently active topic or what steps in a sequence have been completed.
 
 # [C#](#tab/csharp2)
@@ -243,9 +232,9 @@ One way to keep track of where you are in a conversation is to use `context.Stat
 ---
 
 
-When a bot becomes more complex, you might also imagine a sequence of conversations flows occurring in a stack -- for instance, the bot invokes the new order flow, and then invokes the product search flow. Then the user will select a product and confirm, completing the product search flow, and then complete the order.
+When a bot becomes more complex, you can also imagine a sequence of conversation flows occurring in a stack; for instance, the bot will invoke the new order flow, and then invoke the product search flow. Then the user will select a product and confirm, completing the product search flow, and then complete the order.
 
-Although it would be great if users always traveled such a linear, logical path, it seldom occurs. Users do not communicate in "stacks." They tend to frequently change their minds. Consider the following example:
+However, conversation rarely follows such a linear, logical path. Users do not communicate in "stacks", instead they tend to frequently change their minds. Consider the following example:
 
 ![User says something unexpected](./media/concept-conversation/interruption.png)
 
@@ -262,6 +251,7 @@ There is no right answer to this question, as the best solution will depend upon
 
 ## Conversation lifetime
 
+<!-- Note: these activities are dependent on whether the channel actually sends them. Also, we should add links -->
 A bot receives a _conversation update_ activity whenever it has been added to a conversation, other members have been added to or removed from a conversation, or conversation metadata has changed.
 You may want to have your bot react to conversation update activities by greeting users or introducing itself.
 
@@ -278,6 +268,7 @@ The Bot Builder SDK has some built-in support for Language Understatnding (LUIS)
 [Using recognizers] [Using state and storage] and other how tos.
 -->
 ## Conversations, channels, and users
+
 Conversations can either a _direct_ conversation with a specific user or a _group_ conversation with multiple users.
 A bot communicates with a user on a channel by receiving activities from, and sending activities to the user.
 
@@ -287,10 +278,17 @@ A bot communicates with a user on a channel by receiving activities from, and se
 - The bot cannot start a conversation; however, once it has a conversation ID, it can resume that conversation.
 - Not all channels support group conversations.
 
+## Next steps
+
+For complex conversations, such as some of those highlighted above, we need to be able to persist information for longer than a turn. Lets look at state and storage next.
+
+> [!div class="nextstepaction"]
+> [State and Storage](bot-builder-storage-concept.md)
 
 <!-- In addition, your bot can send activities back to the user, either _proactively_, in response to internal logic, or _reactively_, in response to an activity from the user or channel.-->
 <!--TODO: Link to messaging how tos.-->
 
+<!--  TODO: Change to next steps, one for each of LUIS and State
 ## See also
 
 - Activities
@@ -298,3 +296,9 @@ A bot communicates with a user on a channel by receiving activities from, and se
 - Context
 - Proactive messaging
 - State
+-->
+
+[QnAMaker]:(bot-builder-luis-and-qna.md#using-qna-maker)
+
+<!-- TODO: Update when the Dispatch concept is pushed -->
+[Dispatch]:(bot-builder-concept-luis.md)

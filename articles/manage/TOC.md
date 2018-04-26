@@ -26,4 +26,5 @@
 ## [Preview bot features](../bot-service-channel-inspector.md)
 # [Configure settings](../bot-service-manage-settings.md)
 # [Set up speech priming](../bot-service-manage-speech-priming.md)
+# [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md)
 # [Migrate your bot](../bot-service-migrate-bot.md)

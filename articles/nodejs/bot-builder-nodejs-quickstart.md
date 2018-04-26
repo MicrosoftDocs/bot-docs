@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Create a bot with the Bot Builder SDK for Node.js

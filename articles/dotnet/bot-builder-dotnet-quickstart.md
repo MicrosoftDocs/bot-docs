@@ -8,6 +8,8 @@ ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
+::: moniker range="azure-bot-service-3.0"
+
 # Create a bot with the Bot Builder SDK for .NET
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
@@ -126,3 +128,128 @@ Next, learn about the key concepts of the Bot Builder SDK for .NET.
 
 > [!div class="nextstepaction"]
 > [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)
+
+::: moniker-end
+
+::: moniker range="azure-bot-service-4.0"
+# Create a bot with the Bot Builder SDK for .NET
+
+The Bot Builder SDK for .NET is an easy-to-use framework for developing bots using Visual Studio and Windows. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots. 
+
+This quickstart walks you through building a bot by using the Bot Application template and the Bot Builder SDK for .NET, and then testing it with the Bot Framework Emulator. This is based off the [Microsoft Bot Builder SDK](https://github.com/Microsoft/botbuilder-dotnet).
+
+### Pre-requisites
+- [Visual Studio](https://www.visualstudio.com/downloads)
+- Basic knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/)
+- [Bot Emulator](https://docs.microsoft.com/en-us/bot-framework/bot-service-debug-emulator)
+
+### Create a bot
+
+In Visual Studio, create a new ASP.NET Core Web Application:
+- Target **.NET Core ASP.NET Core 2.0**.
+- Pick the **Empty** project template.
+- Select **No Authentication**.
+
+[Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to the `Microsoft.Bot.Builder.Integration.AspNet.Core` package, version `4.0.0-alpha2018031101`. This is a prerelease package and includes references to other Botbuilder packages that you will need:
+
+```
+Microsoft.Bot.Builder
+Microsoft.Bot.Builder.Core
+Microsoft.Bot.Connector
+Microsoft.Bot.Schema
+```
+Add a `default.html` file under the `wwwroot` folder.
+
+In the `Program.cs` file, change the namespace to `Microsoft.Bot.Samples`.
+
+Update the `Startup.cs` file to this:
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Bot.Builder.BotFramework;
+using Microsoft.Bot.Builder.Integration.AspNet.Core;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+namespace Microsoft.Bot.Samples
+{
+    public class Startup
+    {
+        public Startup(IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
+
+        public IConfigurationRoot Configuration { get; }
+
+        // This method gets called by the runtime.
+        // Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddSingleton(_ => Configuration);
+            services.AddBot<HelloBot>(options =>
+            {
+                options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+            });
+        }
+
+        // This method gets called by the runtime.
+        // Use this method to configure the HTTP request pipeline.
+        public void Configure(
+            IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseBotFramework();
+        }
+    }
+}
+```
+
+Create a `HelloBot.cs` class file, and update the file to this:
+
+```csharp
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Schema;
+using System.Threading.Tasks;
+
+namespace Microsoft.Bot.Samples
+{
+    public class HelloBot : IBot
+    {
+        public Task OnTurn(ITurnContext context)
+        {
+            if (context.Activity.Type is ActivityTypes.Message)
+            {
+                context.SendActivity($"Hello world.");
+            }
+
+            return Task.CompletedTask;
+        }
+    }
+}
+```
+
+### Start your bot (with or without debugging)
+
+- Your `default.html` page will be displayed in a browser.
+- Note the localhost port number for the page. You will need this information to interact with your bot.
+
+### How to interact with your bot
+
+Start your bot, either with or without debugging. You'll see your `default.html` page will be displayed in a browser.
+
+Start the emulator and connect it to your bot by entering the URL from the previous step. Your URL will look something like `http://localhost:portNumber/api/messages`. Send something to your bot, and the bot will respond with "Hello World" to every message.
+
+::: moniker-end
