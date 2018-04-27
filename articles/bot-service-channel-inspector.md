@@ -50,19 +50,20 @@ These styles may be supported when `textFormat` is set to **markdown**:
 ### XML text format
 These styles may be supported when `textFormat` is set to **xml**: 
 
-| Style | XML | Example | 
-|----|----|----|----|
-| bold | \<b\>text\</b\> | **text** | 
-| italic | \<i\>text\</i\> | *text* |
-| underline | \<u\>text\</u\> | <u>text</u> |
-| strikethrough | \<s\>text\</s\> | <s>text</s> |
-| hyperlink | \<a href="http://www.bing.com"\>bing\</a\> | <a href="http://www.bing.com">bing</a> |
-| paragraph | \<p\>text\</p\> | <p>text</p> |
-| line break | \<br/\> | line 1 <br/>line 2 |
-| horizontal rule | \<hr/\> | <hr/> |
-| header (1-4) | \<h1\>text\</h1\> | <h1>Heading 1</h1> |
-| code | \<code\>code block\</code\> | <code>code block</code> |
-| image | \<img src="http://aka.ms/Fo983c" alt="Duck"\> | <img src="http://aka.ms/Fo983c" alt="Duck"> 
+
+|      Style      |                       XML                       |                   Example                   |
+|-----------------|-------------------------------------------------|---------------------------------------------|
+|      bold       |                 \<b\>text\</b\>                 |            <strong>text</strong>            |
+|     italic      |                 \<i\>text\</i\>                 |                <em>text</em>                |
+|    underline    |                 \<u\>text\</u\>                 |                 <u>text</u>                 |
+|  strikethrough  |                 \<s\>text\</s\>                 |                 <s>text</s>                 |
+|    hyperlink    |   \<a href="http://www.bing.com"\>bing\</a\>    |   <a href="http://www.bing.com">bing</a>    |
+|    paragraph    |                 \<p\>text\</p\>                 |                 <p>text</p>                 |
+|   line break    |                     \<br/\>                     |             line 1 <br/>line 2              |
+| horizontal rule |                     \<hr/\>                     |                    <hr/>                    |
+|  header (1-4)   |                \<h1\>text\</h1\>                |             <h1>Heading 1</h1>              |
+|      code       |           \<code\>code block\</code\>           |           <code>code block</code>           |
+|      image      | \<img src="<http://aka.ms/Fo983c>" alt="Duck"\> | <img src="http://aka.ms/Fo983c" alt="Duck"> |
 
 > [!NOTE]
 > The `textFormat` **xml** is supported only by the Skype channel. 
@@ -132,12 +133,11 @@ The Channel Inspector currently allows you to preview the following features.
 
 [syntax]: https://daringfireball.net/projects/markdown/syntax
 
-[netcard]: ~\dotnet\bot-builder-dotnet-add-rich-card-attachments.md
-[nodecard]: ~\nodejs\bot-builder-nodejs-send-rich-cards.md
+[netcard]: ~/dotnet/bot-builder-dotnet-add-rich-card-attachments.md
+[nodecard]: ~/nodejs/bot-builder-nodejs-send-rich-cards.md
 
-[netmedia]: ~\dotnet\bot-builder-dotnet-add-media-attachments.md
-[nodemedia]: ~\nodejs\bot-builder-nodejs-send-receive-attachments.md
+[netmedia]: ~/dotnet/bot-builder-dotnet-add-media-attachments.md
+[nodemedia]: ~/nodejs/bot-builder-nodejs-send-receive-attachments.md
 
-[netbutton]: ~\dotnet\bot-builder-dotnet-add-suggested-actions.md
-[nodebutton]: ~\nodejs\bot-builder-nodejs-send-suggested-actions.md
-
+[netbutton]: ~/dotnet/bot-builder-dotnet-add-suggested-actions.md
+[nodebutton]: ~/nodejs/bot-builder-nodejs-send-suggested-actions.md
