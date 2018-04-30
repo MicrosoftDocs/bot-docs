@@ -2,10 +2,7 @@
     "build": {
         "content": [            
         {
-        "group": "bot-service",
-        "src": ".",
-        "dest": ".",
-        "files": [
+          "files": [
           "**/*.md",
           "**/*.yml",
           "dotnet/**.md",
