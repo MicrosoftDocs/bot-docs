@@ -7,11 +7,15 @@
         "dest": ".",
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "dotnet/**.md",
+          "node/**.md" 
         ],        
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "**/_themes/**",
+          "**/_themes.pdf/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
