@@ -16,6 +16,7 @@
           "**/includes/**",
           "**/_themes/**",
           "**/_themes.pdf/**",
+            "bot-framework/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
