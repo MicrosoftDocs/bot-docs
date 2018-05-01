@@ -2,16 +2,14 @@
     "build": {
         "content": [            
         {
-          "files": [
+        "group": "bot-service",
+        "src": ".",
+        "dest": ".",
+        "files": [
           "**/*.md",
-          "**/*.yml",
-          "dotnet/**.md",
-          "node/**.md" 
-         ],  
-         "group": "bot-service",
-         "src": ".",
-         "dest": ".",
-        "exclude": [
+          "**/*.yml"
+          ],  
+         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
