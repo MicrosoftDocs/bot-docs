@@ -10,6 +10,7 @@ ms.date: 4/8/2018
 ---
 
 ::: moniker range="azure-bot-service-3.0"
+
 # Design and control conversation flow
 
 In a traditional application, the user interface (UI) is a series of screens. 
@@ -71,6 +72,7 @@ There is no *right* answer to this question, as the best solution will depend up
 Managing the user's navigation across dialogs and designing conversation flow in a manner that enables 
 users to achieve their goals (even in a non-linear fashion) is a fundamental challenge of bot design. 
 The [next article](~/bot-service-design-navigation.md) reviews some common pitfalls of poorly designed navigation and discusses strategies for avoiding those traps. 
+
 ::: moniker-end
 
 ::: moniker range="azure-bot-service-4.0"
@@ -83,15 +85,15 @@ Like apps and websites, bots have a UI, but it is made up of **messages** rather
 
 While a traditional application or website can request multiple pieces of information on a screen all at once, a bot will gather the same amount of information using multiple messages. In this way, the process of gathering information from the user is an active experience; one where the user is having an active conversation with the bot. 
 
-A well designed bot will have a conversation flow that feels natural. The bot should be able to handle core conversation flow seemlessly, and be able to handle interruptions or switching topic of conversations gracefully. 
+A well designed bot will have a conversation flow that feels natural. The bot should be able to handle the core conversation seemlessly, and be able to handle interruptions or switching topic of conversations gracefully. 
 
 ## Procedural conversation flow
 
 Conversation with a bot is generally focused around the task a bot is trying to achieve, which is called a procedural flow. This is where the bot asks the user a series of questions to gather all the information it needs before processing the task.
 
-In a precedural conversaton flow, you define the order of the questions and the bot will ask the questions in the order you defined. You can organize the questions into logical *modules* to keep the code centralize while staying focused on guiding the conversational. For example, you may design one module to contain the logic that helps the user browse for products and a separate module to contain the logic that helps the user create a new order. 
+In a precedural conversaton flow, you define the order of the questions and the bot will ask the questions in the order you defined. You can organize the questions into logical *modules* to keep the code centralized while staying focused on guiding the conversational. For example, you may design one module to contain the logic that helps the user browse for products and a separate module to contain the logic that helps the user create a new order. 
 
-You can structure these modules to flow in any way you like; ranging from free form to sequential. The Bot Builder SDK provides many libraries that allows you to construct any conversational flow your bot needs. For example, the `prompts` library allows you to ask users for input, the `waterfall` library allows you to define a sequence of question/answer pair, the `compositControl` library allows you to modularized your conversational flow logic, etc. All of these libraries are tied together through the `dialogs` object. Let's take a closer look at how modules are implemented as `dialogs` to design and manage conversation flows and see how that flow is similar to the traditonal application flow.
+You can structure these modules to flow in any way you like, ranging from free form to sequential. The Bot Builder SDK provides several libraries that allows you to construct any conversational flow your bot needs. For example, the `prompts` library allows you to ask users for input, the `waterfall` library allows you to define a sequence of question/answer pair, the `dialog control` library allows you to modularized your conversational flow logic, etc. All of these libraries are tied together through a `dialogs` object. Let's take a closer look at how modules are implemented as `dialogs` to design and manage conversation flows and see how that flow is similar to the traditonal application flow.
 
 ![bot](~/media/designing-bots/core/dialogs-screens.png)
 
@@ -105,7 +107,7 @@ The **root dialog** invokes the **new order dialog**.
 At that point, the **new order dialog** takes control of the conversation and remains in control until it either closes or invokes other dialogs, such as the **product search dialog**. 
 If the **new order dialog** closes, control of the conversation is returned back to the **root dialog**.
 
-Check out the conceptual topic on [Conversation flow](v4sdk/bot-builder-conversations.md)
+Check out the conceptual topic on [Conversation flow](v4sdk/bot-builder-conversations.md) for more on types of conversation.
 
 ## Handle interruptions
 
@@ -126,11 +128,12 @@ How should your bot respond?
 - Disregard everything that the user had done previously, reset the whole dialog stack, and start from the beginning by attempting to answer the user's question. 
 - Attempt to answer the user's question and then return to that yes/no question and try to resume from there. 
 
-There is no *right* answer to this question, as the best solution will depend upon the specifics of your scenario and how the user would reasonably expect the bot to respond. For more information see [Handle user interruption](v4sdk/bot-builder-how-to-handle-user-interrupt.md).
+There is no *right* answer to this question, as the best solution will depend upon the specifics of your scenario and how the user would reasonably expect the bot to respond. For more information see [Handle user interruption](v4sdk/bot-builder-howto-handle-user-interrupt.md).
 
 ## Next steps
 
 Managing the user's navigation across dialogs and designing conversation flow in a manner that enables 
 users to achieve their goals (even in a non-linear fashion) is a fundamental challenge of bot design. 
 The [next article](~/bot-service-design-navigation.md) reviews some common pitfalls of poorly designed navigation and discusses strategies for avoiding those traps. 
+
 ::: moniker-end
