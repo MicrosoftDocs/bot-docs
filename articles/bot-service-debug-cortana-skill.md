@@ -5,7 +5,7 @@ author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/17
+ms.date: 05/01/18
 ---
 
 # Test a Cortana skill
@@ -33,51 +33,7 @@ Enter this endpoint URL in the **Configuration** section of your bot's [Settings
 If your bot uses a Language Understanding (LUIS) app, make sure you associate the LUIS application ID with your registered bot service. This helps your bot recognize spoken utterances that are defined in your LUIS model. For more information, see [Speech priming](~/bot-service-manage-speech-priming.md).
 
 ## Add the Cortana channel
-Open the blade for your bot and click **Channels**. From the list of channels, click the **Cortana** icon.
-
-![Add the Cortana channel ](~/media/cortana/cortana-add.png)
-
-> [!NOTE]
-> [Secure your bot](dotnet/bot-builder-dotnet-security.md) by configuring the **AppID** and **AppPassword** in your **Web.config** file. 
-> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
-
-### Configure Cortana
-When connecting your bot with the Cortana channel, some basic information about your bot will be pre-filled into the registration form. Review this information carefully. This form consists of the following fields.
-
-| Field | Description |
-|------|------|
-| **Skill icon** | An icon that is displayed in the Cortana canvas when your skill is invoked. This is also used where skills are discoverable (like the Microsoft store). (32KB max, PNG only).|
-| **Display name** | The name of your Cortana skill is displayed to the user at the top of the visual UI. (30 character limit) |
-| **Invocation name** | This is the name users say when invoking a skill. It should be no more than three words and easy to pronounce. See the [Invocation Name Guidelines][InvocationNameGuidelines] for more information on how to choose this name.|
-| **Description** | A description of your Cortana skill. This is used where skills are discoverable (like the Microsoft store). |
-| **Short description** | A short description of your skill’s functionality, used to describe the skill in Cortana’s notebook. |
-
-<!-- TODO: Update screenshot when new UI is available -->
-![Fill out channel information](~/media/cortana/cortana-register.png)
-
-### Request user profile data (Optional)
-Cortana provides access to several different types of user profile information, that you can use to customize the bot for the user. 
-
-> [!NOTE] 
-> You can skip this step if you don't need to use user profile data in your bot.
-
-To add user profile information, click the **Add a user profile request** link, then select the user profile information you want from the drop-down list. Add a friendly name to use to access this information from your bot's code. See [Cortana-specific entities][CortanaSpecificEntities] for more information on using these fields.
-
-![Fill out user profile data](~/media/cortana/add-user-profile-data.png) 
-
-### Manage user identity through connected services (Optional)
-If your skill requires authentication, you can connect an account so that Cortana will require users to log in into your skill before they can use it. Currently, only **Auth Code Grant** authentication is supported, and **Implicit Grant** is not supported. See [Secure your skill with authentication][CortanaAuth] for more information. 
-
-> [!NOTE] 
-> You can skip this step if your bot doesn't require authentication.
-
-### Connect to Cortana
-When you are done filling out the registration form for your Cortana skill, click **Save** to complete the connection. This brings you back to your bot's **Channels** blade and you should see that it is now connected to Cortana.
-
-<!-- update image --> 
-![Cortana is listed as a connected channel in the Bot Framework dashboard](~/media/cortana/cortana-edit.png)
-
-At this point your bot has already been automatically deployed as a Cortana skill to your account. 
+To add Cortana as a channel, follow steps listed in [Connect a bot to Cortana](bot-service-channel-connect-cortana.md).
 
 ## Test using Web Chat control
 
@@ -112,7 +68,7 @@ If your Cortana skill fails to launch, check the following:
 * Check if your invocation name meets the [guidelines][InvocationNameGuidelines]. If your invocation name is longer than three words, hard to pronounce, or sounds like other words, Cortana might have difficulty recognizing it.
 * If your skill uses a LUIS model, make sure you [enable speech recognition priming](~/bot-service-manage-speech-priming.md).
 
-See the [Enable Debugging of Cortana skills][Cortana-Debug] for additional troubleshooting tips and information on how to enable debugging of your skill in the Cortana dashboard. 
+See the [Enable Debugging of Cortana skills][Cortana-TestBestPractice] for additional troubleshooting tips and information on how to enable debugging of your skill in the Cortana dashboard. 
 
 
 ## Next steps
@@ -121,8 +77,6 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 
 ## Additional resources
 * [The Cortana Skills Kit][CortanaGetStarted]
-* [Cortana Dev Center][CortanaDevCenter]
-* [Testing and debugging best practices][Cortana-TestBestPractice]
 * [Preview features with the Channel Inspector](bot-service-channel-inspector.md)
 
 [CortanaGetStarted]: /cortana/getstarted
@@ -139,11 +93,3 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 [Cortana-Debug]: https://aka.ms/cortana-enable-debug
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice
 [Cortana-Publish]: /cortana/skills/publish-skill
-
-
-
-
-
-
-
-
