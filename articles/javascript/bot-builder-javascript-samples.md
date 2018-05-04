@@ -6,7 +6,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/03/2018
+ms.date: 05/04/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -24,5 +24,4 @@ To get the samples, clone the [botbuilder-js](https://github.com/Microsoft/botbu
 git clone https://github.com/Microsoft/botbuilder-js.git
 cd samples
 ```
-
 The sample bots built with the Bot Builder SDK for JavaScript are organized in the **samples** directory.
