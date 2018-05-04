@@ -1,12 +1,11 @@
 # [Principles of bot design](../bot-service-design-principles.md)
 # [First interaction](../bot-service-design-first-interaction.md)
-# [Conversation flow](../bot-service-design-conversation-flow.md)
+# [Design and control flow](../bot-service-design-conversation-flow.md)
 # [Navigation](../bot-service-design-navigation.md)
 # [UX elements](../bot-service-design-user-experience.md)
 # Patterns
 ## [Task automation](../bot-service-design-pattern-task-automation.md)
 ## [Knowledge base](../bot-service-design-pattern-knowledge-base.md)
-## [Bot to web](../bot-service-design-pattern-integrate-browser.md)
 ## [Handoff to human](../bot-service-design-pattern-handoff-human.md)
 ## [Bots in apps](../bot-service-design-pattern-embed-app.md)
 ## [Bots in websites](../bot-service-design-pattern-embed-web-site.md)

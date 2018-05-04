@@ -2,11 +2,12 @@
   "build": {
     "content": [
       {
+        "group": "bot-service",
+        "src": ".",
+        "dest": ".",
         "files": [
-          "**/**.md",
-          "**/**.yml",
-          "dotnet/**.md",
-          "node/**.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -18,22 +19,72 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "**/_deprecated/**"
+          "v4sdk/**"
+        ]
+      },
+      {
+        "group": "bot-service",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "v4sdk",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       }
+
+
     ],
     "resource": [
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
           "bot-framework/**",
           "~/includes/**"
         ]
+      },
+      {
+        "group": "bot-service",
+        "src": ".",
+        "dest": ".",
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "v4sdk"
+        ]
+      },
+      {
+        "group": "bot-service",
+        "src": "v4sdk",
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
       }
+
     ],
     "overwrite": [],
     "externalReference": [],
@@ -42,7 +93,6 @@
       "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
       "author": "RobStand",
       "ms.prod": "bot-framework",
-      "brand": "azure",
       "searchScope": [
         "Azure",
         "BotService"
@@ -52,20 +102,30 @@
     },
     "fileMetadata": {
       "ms.author": {
-        "**/**.md": "rstand"
+        "**/**.md": "kaiqb"
       },
       "manager": {
-        "**/**.md": "rstand"
+        "**/**.md": "kaiqb"
       },
       "ms.technology": {
         "**/**.md": "bf-bot-builder"
       },
       "ms.date": {
         "**/**.md": "12/13/2017"
+      },
+      "monikerRange": {
+        "v4sdk/**.md": "azure-bot-service-4.0"
       }
     },
     "template": [],
     "dest": "bot-framework",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "groups": {
+      "bot-service": {
+        "dest": "bot-service",
+        "moniker_range": ">= azure-bot-service-3.0"
+      }
+    }
+
   }
 }

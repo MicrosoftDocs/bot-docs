@@ -52,5 +52,3 @@ Paste the token you copied previously into the **Access Token** field and click 
 Check **Enable this bot on Telegram**. Then click **I'm done configuring Telegram**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Telegram.
-
-

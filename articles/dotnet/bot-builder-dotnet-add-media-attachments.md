@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0' 
 ---
 
 # Add media attachments to messages
@@ -19,7 +20,6 @@ A message exchange between user and bot can contain media attachments (e.g., ima
 The `Attachments` property of the <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity</a> object contains an array of <a href="/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment</a> objects that represent the media attachments and rich cards within to the message. 
 
 > [!NOTE]
-> For information about how to add rich cards to messages, see 
 > [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md).
 
 ## Add a media attachment  
@@ -41,4 +41,5 @@ If an attachment is an image, audio, or video, the Connector service will commun
 - <a href="/dotnet/api/microsoft.bot.connector.attachment" target="_blank">Attachment class</a>
 
 [inspector]: ../bot-service-channel-inspector.md
+
 

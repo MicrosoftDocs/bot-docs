@@ -7,8 +7,8 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
 ---
+
 # Connect a bot to Skype for Business
 
 Skype for Business Online keeps you connected with co-workers and business partners through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype for Business interface.

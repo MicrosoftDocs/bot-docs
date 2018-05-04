@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Develop bots with Bot Builder
 The Bot Builder provides an SDK, libraries, samples, and tools to help you build and debug bots. When you build a bot with Bot Service, your bot is backed by the Bot Builder SDK. You can also use the Bot Builder SDK to create a bot from scratch using C# or Node.js. Bot Builder includes the Bot Framework Emulator for testing your bots and the Channel Inspector for previewing your bot's user experience on different channels.
