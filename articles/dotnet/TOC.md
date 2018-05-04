@@ -38,8 +38,6 @@
 ## [Manage state data using Cosmos DB](bot-builder-dotnet-state-azure-cosmosdb.md)
 ## [Manage state data using Table storage](bot-builder-dotnet-state-azure-table-storage.md)
 # [Recognize intent with LUIS](bot-builder-dotnet-luis-dialogs.md)
-# [Create middleware using Cosmos DB](../v4sdk/bot-builder-howto-cosmos-middleware.md)
 # [Request payment](bot-builder-dotnet-request-payment.md)
 # [Add Azure Search](bot-builder-dotnet-search-azure.md)
 # [Secure your bot](bot-builder-dotnet-security.md)
-# [SDK reference](/dotnet/api/?view=botbuilder-3.12.2.4)
