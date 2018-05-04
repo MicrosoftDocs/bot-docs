@@ -24,5 +24,4 @@ To get the samples, clone the [botbuilder-python](https://github.com/Microsoft/b
 git clone https://github.com/Microsoft/botbuilder-python.git
 cd samples
 ```
-
 The sample bots built with the Bot Builder SDK for Python are organized in the **samples** directory.
