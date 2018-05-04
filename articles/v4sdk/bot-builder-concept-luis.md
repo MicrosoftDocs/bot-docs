@@ -56,7 +56,7 @@ See [How to recognize dates and times] for info on using LUIS to extract this in
 
 
 ## How your bot gets messages from LUIS
-Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware][bot-service-concept-message-processing.md#middleware]) that automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _receive handler_ to route the conversation flow based on the intent in the LUIS response. 
+Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware][bot-builder-concept-activity-processing.md#middleware]) that automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _receive handler_ to route the conversation flow based on the intent in the LUIS response. 
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
@@ -109,7 +109,7 @@ For a bot that users will speak to, integrating it with LUIS can help your bot i
 
 
 <!-- TODO: Point to actual quickstart in bot-docs-pr -->
-[luis-v4-howto]: bot-builder-how-to-v4-luis.md
+[luis-v4-how-to]: bot-builder-howto-v4-luis.md
 [luis-v4-cs-quickstart]: https://github.com/Microsoft/botbuilder-dotnet/wiki/Using-LUIS-and-QnA-Maker
 [luis-v4-js-quickstart]: https://github.com/Microsoft/botbuilder-js/wiki/Using-LUIS-and-QnA-Maker
 
