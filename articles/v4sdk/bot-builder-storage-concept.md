@@ -11,7 +11,6 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Save state and access data
-
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 A key to good bot design is to track the context of a conversation, so that your bot remembers things like the answers to previous questions.
