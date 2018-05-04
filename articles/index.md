@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: landing-page
 layout: LandingPage
 ms.prod: bot-framework
-ms.date: 02/21/2018
+ms.date: 05/03/2018
 ---
 ::: moniker range="azure-bot-service-3.0"
 
@@ -39,12 +39,16 @@ ms.date: 02/21/2018
 </div>
  
 <h2 style="margin-top: 36px">Samples</h2>
-<p>Use samples to help you quickly get started with building great bots with rich capabilities.</p>
+<p>Quickly get started with building great bots with rich capabilities.</p>
 <ul>
     <li><a href="/bot-framework/dotnet/bot-builder-dotnet-samples">.NET</a></li>
     <li><a href="/bot-framework/nodejs/bot-builder-nodejs-samples">Node.js</a></li>
 </ul>
-
+<h2 style="margin-top: 36px">Step-by-Step Tutorials</h2>
+<p>Develop bots using Azure Bot Service:</p>
+<ol>
+    <li><a href="/bot-framework/bot-builder-tutorial-authentication">Add authentication to your bot</a></li>
+</ol>
 <h2 style="margin-top: 36px">Reference</h2>
 <ul class="panelContent cardsD">
     <li>
@@ -83,6 +87,7 @@ ms.date: 02/21/2018
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
     <div class="intro" style="min-width: 200px">
+        <p><b> [This topic is pre-release documentation and is subject to change.] </b></p>
         <p>Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Builder SDK with support for C#, JavaScript, Python, and Java. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
 </p>
 </div>
@@ -119,9 +124,10 @@ ms.date: 02/21/2018
 <h2 style="margin-top: 36px">Step-by-Step Tutorials</h2>
 <p>Develop bots using Azure Bot Service:</p>
 <ol>
-    <li><a href="/azure/cognitive-services/Face/Tutorials/FaceAPIinCSharpTutorial">C&#35; Tutorial</a></li>
-    <li><a href="/azure/cognitive-services/Face/Tutorials/FaceAPIinJavaForAndroidTutorial">JavaScript Tutorial</a></li>
-    <li><a href="/azure/cognitive-services/Face/Tutorials/FaceAPIinPythonTutorial">Python Tutorial</a></li>
+    <li><a href="/bot-framework/bot-builder-tutorial-waterfall">Ask the user questions</a></li>
+    <li><a href="/bot-framework/bot-builder-tutorial-persist-user-inputs">Persist user data from a conversation</a></li>
+    <li><a href="/bot-framework/bot-builder-howto-translation">Make your bot multilingual</a></li>
+    <li><a href="/bot-framework/bot-builder-tutorial-dispatch">Integrate multiple LUIS apps and QnA services with the Dispatch tool</a></li>
 </ol>
 
 <h2 style="margin-top: 36px">Reference</h2>
@@ -132,7 +138,8 @@ ms.date: 02/21/2018
                 <div class="card">
                     <div class="cardText">
                         <h3>APIs</h3>
-                        <p><a href="/azure/cognitive-services/Face/APIReference">API Reference</a></p>
+                        <p><a href="https://aka.ms/dotnetsdk4">.NET</a></p>
+                        <p><a href="https://aka.ms/jssdk4">JavaScript</a></p>
                     </div>
                 </div>
             </div>
@@ -144,7 +151,10 @@ ms.date: 02/21/2018
                 <div class="card">
                     <div class="cardText">
                         <h3>SDKs</h3>
-                        <p><a href="https://github.com/Microsoft/Cognitive-Face-Python">Python</a></p>
+                        <p><a href="https://github.com/Microsoft/botbuilder-dotnet">.NET</a></p>
+                        <p><a href="https://github.com/Microsoft/botbuilder-js">JavaScript</a></p>
+                        <p><a href="https://github.com/Microsoft/botbuilder-python">Python</a></p>
+                        <p><a href="https://github.com/Microsoft/botbuilder-java">Java</a></p>
                     </div>
                 </div>
             </div>
@@ -152,4 +162,5 @@ ms.date: 02/21/2018
     </li>
 </ul>
 </div>
+
 ::: moniker-end
