@@ -10,7 +10,6 @@ ms.date: 02/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Create a bot with the Bot Builder SDK for Python
-
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 The Bot Builder SDK for Python is an easy-to-use framework for developing bots. This quickstart walks you through building a bot, and then testing it with the Bot Framework Emulator. The SDK v4 is being actively developed and should therefore be used for experimentation only. Visit Python [GitHub repo](https://github.com/Microsoft/botbuilder-python) for more information. 
