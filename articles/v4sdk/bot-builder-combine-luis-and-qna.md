@@ -23,8 +23,8 @@ First, make sure you have the packages necessary for LUIS and QnA Maker.
 [Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to v4 prerelease version of the following NuGet packages:
 
 * `Microsoft.Bot.Builder.Integration.AspNet.Core`
-* `Microsoft.Bot.Builder.Ai` (required for QnA Maker)
-* `Microsoft.Bot.Builder.Luis` (required for LUIS)
+* `Microsoft.Bot.Builder.Ai.QnA` (required for QnA Maker)
+* `Microsoft.Bot.Builder.Ai.Luis` (required for LUIS)
 
 # [JavaScript](#tab/jsref)
 
@@ -426,26 +426,5 @@ server.post('/api/messages', (req, res) => {
 If you have multiple LUIS apps, or a combination of LUIS apps and QnA services, you can use the Dispatch tool to combine them into one LUIS app, using the pattern in [Using LUIS with QnA Maker as fallback](#using-luis-with-qna-maker-as-fallback).
 
 
-For info on the Dispatch tool, see [Combine multiple conversation models using Dispatch]. 
+For info on the Dispatch tool, see [Combine multiple conversation models using Dispatch](./bot-builder-tutorial-dispatch.md). 
 
-### Choose a hierarchical or flat design
-
-Dispatch creates one intent for each QnA maker service that you pass to it. If you set the `-hierarchical` flag to true, Dispatch creates one intent for each LUIS app. Otherwise Dispatch creates one intent for each intent in the LUIS app or apps. Keep in mind that a large number of intents may reduce the ability of the generated LUIS app from Dispatch to distinguish between them.
-
-### Edit intents for overlaps
-
-If there are user messages that are provided as examples in both the LUIS apps and the QnA maker services, the combined LUIS app that Dispatch generates won't perform well for those inputs. Remove similar or overlapping examples, and check your apps performance using the `-eval` option. 
-
-For example, let's say you have a QnA maker service for a knowledge base for operating an IoT device, and you have a LUIS app for operating the device. Let's say you started developing the LUIS app and QnA separately, so that in the LUIS app, requests like "turn my lights on" map to a "TurnOnLights" intent, but requests like "Why won't my lights turn on?" map to a "QnAFallback" intent so that they can be passed on to QnA maker. When you combine the LUIS app and the QnA maker service using dispatch, you need to do one of the following: 
-
-* Remove the "QnAFallback" intent from the original LUIS app
-* If you don't remove the "QnAFallback" intent from the original LUIS app, you need to either remove that intent from the Dispatch-generated LUIS app, or add logic in your bot to pass those messages that match that intent on to the QnA maker service.
-
-<!-- 
-todo: Check your apps performance using the eval option 
--->
-
-
-
-> [!NOTE] 
-> This is just a stub. The content is coming soon. 
