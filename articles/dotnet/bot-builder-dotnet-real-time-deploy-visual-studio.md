@@ -7,6 +7,7 @@ manager: ssulzer
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/17
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Deploy a real-time media bot from Visual Studio to Azure

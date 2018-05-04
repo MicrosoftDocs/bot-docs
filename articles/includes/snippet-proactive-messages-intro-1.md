@@ -5,7 +5,7 @@ Proactive messages can be useful in a variety of scenarios.
 If a bot sets a timer or reminder, it will need to notify the user when the time arrives. 
 Or, if a bot receives a notification from an external system, it may need to communicate that information to the user immediately. 
 For example, if the user has previously asked the bot to monitor the price of a product, 
-the bot will alert the user if it receives notification that the price of the product has dropped by 20%. 
+the bot can alert the user if the price of the product has dropped by 20%. 
 Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. 
 When the bot finishes compiling the response to the question, it will share 
 that information with the user. 
@@ -19,15 +19,15 @@ When implementing proactive messages in your bot:
 > *Don't* send proactive messages to users who have not previously interacted with the bot or
 > solicited contact with the bot through another means such as e-mail or SMS.
 
-Consider the following scenario:
+Proactive messages can create unexpected behavior. Consider the following scenario.
 
 ![how users talk](~/media/designing-bots/capabilities/proactive1.png)
 
 In this example, the user has previously asked the bot to monitor prices of a hotel in Las Vegas. 
 The bot launched a background monitoring task, which has been running continuously for the past several days. 
-In the current conversation, the user is booking a trip to London when  
+In the conversation, the user is currently booking a trip to London when  
 the background task triggers a notification message about a discount for the Las Vegas hotel.
-The bot interjects this information into the current conversation, making for a confusing user experience. 
+The bot interjects this information into the conversation, making for a confusing user experience. 
 
 How should the bot have handled this situation? 
 

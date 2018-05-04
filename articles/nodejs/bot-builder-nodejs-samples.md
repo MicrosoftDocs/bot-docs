@@ -1,7 +1,7 @@
 ---
 title: Sample bots for Bot Builder SDK for Node.js | Microsoft Docs
 description: Explore a large selection of sample bots that can help kickstart your bot development with the Bot Builder SDK for Node.js.
-author: RobStand
+author: v-ducvo
 ms.author: kamrani
 manager: kamrani
 ms.topic: article

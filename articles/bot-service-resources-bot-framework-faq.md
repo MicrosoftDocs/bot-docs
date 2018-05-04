@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 05/03/2018
 ---
 
 # Bot Framework Frequently Asked Questions
@@ -17,6 +17,10 @@ This article contains answers to some frequently asked questions about the Bot F
 ### Why did Microsoft develop the Bot Framework?
 
 While the Conversation User Interface (CUI) is upon us, at this point few developers have the expertise and tools needed to create new conversational experiences or enable existing applications and services with a conversational interface their users can enjoy. We have created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.
+
+### What is the v4 SDK?
+Bot Builder v4 SDK builds on the feedback and learnings from the prior Bot Builder SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
+
 
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?

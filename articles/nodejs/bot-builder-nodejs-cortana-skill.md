@@ -6,7 +6,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Build a speech-enabled bot with Cortana skills
 > [!div class="op_single_selector"]

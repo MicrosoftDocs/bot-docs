@@ -1,12 +1,13 @@
 ---
 title: Add rich card attachments to messages | Microsoft Docs
 description: Learn how to send interactive, engaging rich cards using the Bot Builder SDK for Node.js.
-author: DeniseMak
-ms.author: v-demak
+author: v-ducvo
+ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Add rich card attachments to messages
