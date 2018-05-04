@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 2/16/17
+ms.date: 05/03/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
