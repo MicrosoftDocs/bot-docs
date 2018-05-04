@@ -1,14 +1,16 @@
 ---
 title: Store data | Microsoft Docs
 description: Learn how to write directly to storage with V4 of the Bot Builder SDK for .NET.
-author: RobStand
+author: DeniseMak
 ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/16/18
+ms.date: 05/2/18
 monikerRange: 'azure-bot-service-4.0'
 ---
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 # Save data directly to storage
 
@@ -17,112 +19,125 @@ monikerRange: 'azure-bot-service-4.0'
  ## Manage state data by writing directly to storage
 -->
 
-You can write directly to storage without using the context object or middleware, by using `IStorage.Write` and `IStorage.Read`.
+You can write directly to storage without using the context object or middleware, by reading and writing directly to your storage object.
 
-This code example shows you how to read and write data to storage. In this example the storage is a file, but you can easily change the code to initialze the storage object to use `MemoryStorage` or `AzureTableStorage` instead. 
+This code example shows you how to read and write data to storage. In this example the storage is a file, but you can easily change the code to initialze the storage object to use memory storage of Azure Table Storage instead. 
 
 # [C#](#tab/csharpechorproperty)
-To store data that you access using `Storage.Write` and `Storage.Read`, you can use the `StoreItems` and `StoreItem` classes. 
+We'll define an object and use `IStorage.Write` and `IStorage.Read` to save and retreive state. 
 
 The following sample adds every message from the the user to a list. The data structure containing the list is saved to a file within the directory you provide to the `FileStorage` constructor.
 
+Start with the EchoBot Visual Studio template in the BotBuilder V4 SDK.
+Edit the `EchoBot.cs` file. Add the following using statements, and
+replace the `EchoBot` class definition.
+
 ```csharp
-// Start with the EchoBot sample in the BotBuilder V4 SDK and edit the code to match the following
+using System.Collections.Generic;
+using System.Linq;
+```
 
+```csharp
 // In the constructor initialize file storage
-    public class EchoBot : IBot
+public class EchoBot : IBot
+{
+    private readonly FileStorage _myStorage;
+
+    public EchoBot()
     {
-        private readonly FileStorage _myStorage;
+        _myStorage = new FileStorage(System.IO.Path.GetTempPath());
+    }
 
-        public EchoBot()
+    // Add a class for storing a log of utterances (text of messages) as a list
+    public class UtteranceLog : IStoreItem
+    {
+        // A list of things that users have said to the bot
+        public List<string> UtteranceList { get; private set; } = new List<string>();
+
+        // The number of conversational turns that have occurred        
+        public int TurnNumber { get; set; } = 0;
+
+        public string eTag { get; set; } = "*";
+    }
+
+    // Replace the OnTurn in EchoBot.cs with the following:
+    public async Task OnTurn(ITurnContext context)
+    {
+        var activityType = context.Activity.Type;
+
+        await context.SendActivity($"Activity type: {context.Activity.Type}.");
+
+        if (activityType == ActivityTypes.Message)
         {
-            _myStorage = new FileStorage(System.IO.Path.GetTempPath());
-        }
+            // *********** begin (create or add to log of messages)
+            var utterance = context.Activity.Text;
+            bool restartList = false;
 
-// Add a class for storing a log of utterances (text of messages) as a list
-        public class UtteranceLog : StoreItem
-        {
-            // A list of things that users have said to the bot
-            public List<string> UtteranceList { get; private set; } = new List<string>();    
-            // The number of conversational turns that have occurred        
-            public int TurnNumber { get; set; } = 0;
-        }
-
-// Replace the OnReceiveActivity in EchoBot.cs with the following:
-        // added 'async'
-        public async Task OnReceiveActivity(IBotContext context)
-        {
-            var activityType = context.Request.Type;
-
-            context.Reply($"Activity type: {context.Request.Type}.");
-
-            if (activityType == ActivityTypes.Message)
+            if (utterance.Equals("restart"))
             {
-                // *********** begin (create or add to log of messages)
-                var utterance = context.Request.Text;
-                bool restartList = false;
+                restartList = true;
+            }
 
-                if (utterance.Equals("restart"))
-                {
-                    restartList = true;
-                }
+            // Attempt to read the existing property bag
+            UtteranceLog logItems = null;
+            try
+            {
+                logItems = _myStorage.Read<UtteranceLog>("UtteranceLog").Result?.FirstOrDefault().Value;
+            }
+            catch (System.Exception ex)
+            {
+                await context.SendActivity(ex.Message);
+            }
 
-                // Attempt to read the existing property bag
-                StoreItems<Bot.UtteranceLog> logItems = null;
+            // If the property bag wasn't found, create a new one
+            if (logItems is null)
+            {
                 try
                 {
-                    logItems = await _myStorage.Read<Bot.UtteranceLog>("UtteranceLog");
-                    // returns a new StoreItems if no log found.
+                    // add the current utterance to a new object.
+                    logItems = new UtteranceLog();
+                    logItems.UtteranceList.Add(utterance);
+
+                    await context.SendActivity($"The list is now: {string.Join(", ",logItems.UtteranceList)}");
+
+                    var changes = new KeyValuePair<string, object>[]
+                    {
+                        new KeyValuePair<string, object>("UtteranceLog", logItems)
+                    };
+                    await _myStorage.Write(changes);
                 }
                 catch (System.Exception ex)
                 {
-                    context.Reply(ex.Message);
-                   
-                }
-                
-                // If the property bag wasn't found, create a new one
-                if (!logItems.ContainsKey("UtteranceLog"))
-                {
-                    try
-                    {
-                        logItems = new StoreItems<Bot.UtteranceLog>();
-                        var newLog = new UtteranceLog();
-                        // add the current utterance to the new list.
-                        newLog.UtteranceList.Add(utterance);
-                        logItems.Add("UtteranceLog", newLog);
-                        context.Reply($"creating log with \"{utterance}\"");
-                        await _myStorage.Write(logItems);
-                    }
-                    catch (System.Exception ex)
-                    {
-                        context.Reply(ex.Message);
-                    }
-
-
-                }
-                // logItems.ContainsKey("UtteranceLog") == true, we were able to read a log from storage
-                else 
-                {
-                    // Modify its property
-                    if (restartList)
-                    {
-                        logItems["UtteranceLog"].UtteranceList = new List<String>();
-                    } else
-                    {
-                        logItems["UtteranceLog"].UtteranceList.Add(utterance);
-                        logItems["UtteranceLog"].TurnNumber++;
-                    }
-
-                    context.Reply($"logging \"{utterance}\"");
-                    await _myStorage.Write(logItems);
-
-
+                    await context.SendActivity(ex.Message);
                 }
             }
+            // logItems.ContainsKey("UtteranceLog") == true, we were able to read a log from storage
+            else
+            {
+                // Modify its property
+                if (restartList)
+                {
+                    logItems.UtteranceList.Clear();
+                }
+                else
+                {
+                    logItems.UtteranceList.Add(utterance);
+                    logItems.TurnNumber++;
+                }
 
-            return;
+                await context.SendActivity($"The list is now: {string.Join(", ", logItems.UtteranceList)}");
+
+                var changes = new KeyValuePair<string, object>[]
+                {
+                        new KeyValuePair<string, object>("UtteranceLog", logItems)
+                };
+                await _myStorage.Write(changes);
+            }
         }
+
+        return;
     }
+}
 ```
 # [JavaScript](#tab/jsechoproperty)
 
@@ -130,7 +145,7 @@ The following sample adds every message from the the user to a list. The data st
 
 ``` javascript
 // paste the following into app.js
-const { BotFrameworkAdapter, FileStorage, MemoryStorage, ConversationState } = require('botbuilder');
+const { BotFrameworkAdapter, FileStorage, MemoryStorage, ConversationState, BotStateSet } = require('botbuilder');
 const restify = require('restify');
 
 // Create server
@@ -145,12 +160,10 @@ const adapter = new BotFrameworkAdapter({
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
-// Add conversation state middleware
-var fs = new FileStorage("C:/temp");
-// note - constructor doesn't throw if path DNE or no permissions
-
-const conversationState = new ConversationState(fs);
-adapter.use(conversationState);
+// Add storage
+var storage = new FileStorage("C:/temp");
+const conversationState = new ConversationState(storage);
+adapter.use(new BotStateSet(conversationState));
 
 // Listen for incoming activity 
 server.post('/api/messages', (req, res) => {
@@ -161,38 +174,34 @@ server.post('/api/messages', (req, res) => {
             const count = state.count === undefined ? state.count = 0 : ++state.count;
 
             let utterance = context.activity.text;
-            let storeItems = await fs.read(["UtteranceLog2"])
+            let storeItems = await storage.read(["UtteranceLog"])
             try {
                 // check result
-                console.log(`Just read StoreItems[UtteranceLog] from file: ${JSON.stringify(storeItems)}`);
-                var utteranceLog = storeItems["UtteranceLog2"];
-                console.log(`utteranceLog: ${JSON.stringify(utteranceLog)}`);
-
+                var utteranceLog = storeItems["UtteranceLog"];
+                
                 if (typeof (utteranceLog) != 'undefined') {
                     // log exists so we can write to it
-                    storeItems["UtteranceLog2"].UtteranceList.push(utterance);
-                    console.log(`Updated StoreItems[UtteranceLog] with additional utterance: ${JSON.stringify(storeItems)}`);
-
-                    await fs.write(storeItems)
+                    storeItems["UtteranceLog"].UtteranceList.push(utterance);
+                    
+                    await storage.write(storeItems)
                     try {
-                        console.log('successful write.');
+                        context.sendActivity('Successful write.');
                     } catch (err) {
-                        console.log(`write failed of UtteranceLog: ${err.message}`);
+                        context.sendActivity(`Srite failed of UtteranceLog: ${err}`);
                     }
 
                 } else {
-                    console.log(`need to create new utterance log`);
-                    storeItems["UtteranceLog2"] = { UtteranceList: [`${utterance}`], "eTag": "*" }
-                    await fs.write(storeItems)
+                    context.sendActivity(`need to create new utterance log`);
+                    storeItems["UtteranceLog"] = { UtteranceList: [`${utterance}`], "eTag": "*" }
+                    await storage.write(storeItems)
                     try {
-                        console.log('successful write.');
+                        context.sendActivity('Successful write.');
                     } catch (err) {
-                        console.log(`write failed: ${err.errno}`);
+                        context.sendActivity(`Write failed: ${err}`);
                     }
                 }
-            } catch (reason) {
-                console.log("Read rejected.")
-                // rejected
+            } catch (err) {
+                context.sendActivity(`Read rejected. ${err}`);
             };
 
             await context.sendActivity(`${count}: You said "${context.activity.text}"`);
@@ -203,109 +212,10 @@ server.post('/api/messages', (req, res) => {
 });
 ```
 ---
-<!-- 
-# [C#](#tab/csharpweatherproperty)
-To store data that you access using `Storage.Write` and `Storage.Read`, you use the `StoreItems` and `StoreItem` classes.
-
-```csharp
-// Start with the EchoBot_AspNet461 sample in the BotBuilder V4 SDK,
-// and replace the code in MessagesController.cs with the following:
-namespace Microsoft.Bot.Samples.EchoBot_AspNet461
-{
-    public class MessagesController : BotController
-    {
-        IStorage storage;
-
-        public MessagesController(BotFrameworkAdapter adapter) : base(adapter)
-        {
-            // initialize the storage
-            storage = new FileStorage(System.IO.Path.GetTempPath());
-        }
-
-        protected async override Task OnReceiveActivity(IBotContext context)
-        {
-            var msgActivity = context.Request.AsMessageActivity();
-            if (msgActivity != null)
-            {
-
-                // get the text of the message 
-                var utterance = context.Request.AsMessageActivity().Text.Trim().ToLower();
-
-
-
-                if (string.Equals("get weather", utterance))
-                {
-                    // read weather report out of storage
-                    StoreItems weatherProperties = await storage.Read("WeatherReports");
-                    
-                    if  (weatherProperties.ContainsKey("WeatherReports"))
-                    {
-                        var todaysWeather = weatherProperties["WeatherReports"]["today"];
-                        context.Reply($"{todaysWeather}");
-                    }
-                    else
-                    { // Create key-value store weatherReports[WeatherReports][today], storing today's weather
-                        StoreItem weatherReports = new StoreItem
-                        {
-                            eTag = "*"
-                        };
-                        weatherReports.Add("today", "No weather report yet."); // hard code placeholder string for weather report                        
-                        weatherProperties.Add("WeatherReports", weatherReports);
-
-                        await storage.Write(weatherProperties);
-                        context.Reply("We don't have data for today's weather yet. Can you look out the window and tell me, what the weather looks like now?");
-                        context.State.ConversationProperties["promptedForWeather"] = true;
-                    }
-                }
-                else if (string.Equals("set weather", utterance))
-                {
-                    // read weather report out of storage
-                    StoreItems weatherProperties = await storage.Read("WeatherReports");
-                    context.State.ConversationProperties["promptedForWeather"] = true;
-                    context.Reply("ok, what's the weather look like?");
-                }
-
-                else
-                {
-                    if (context.State.ConversationProperties["promptedForWeather"]??false)
-                    {
-                        context.State.ConversationProperties["promptedForWeather"] = false;
-                        // read weather report out of storage
-                        StoreItems weatherProperties = await storage.Read("WeatherReports");
-                        weatherProperties["WeatherReports"]["today"] = utterance;
-                        await storage.Write(weatherProperties);
-                    }
-                }
-
-            }
-
-            var convUpdateActivity = context.Request.AsConversationUpdateActivity();
-            if (convUpdateActivity != null)
-            {
-                foreach (var newMember in convUpdateActivity.MembersAdded)
-                {
-                    if (newMember.Id != convUpdateActivity.Recipient.Id)
-                    {
-                        context.Reply("Hello and welcome to the weather bot. Say 'get weather' to get the weather report.");
-                    }
-                }
-
-            }
-
-        }
-    }
-}
-```
-# [JavaScript](#tab/jsweatherproperty)
-```
-// Node.js snippet TBD
-```
----
--->
 
 ## Manage concurrency using eTags
 
-In the previous example, you set the `eTag` property to `*`. The `eTag` (entity tag) member of the `StoreItem` class is for managing concurrency. The `eTag` indicates what to do if another instance of the bot has changed the `StoreItem` that your bot is writing to. 
+In the previous example, you set the `eTag` property to `*`. The `eTag` (entity tag) member of your store object is for managing concurrency. The `eTag` indicates what to do if another instance of the bot has changed the object in storage that your bot is writing to. 
 
 <!-- define optimistic concurrency -->
 
@@ -316,123 +226,162 @@ Set the eTag to `*` to allow other instances of the bot to overwrite previously 
 This is shown in the following code example.
 
 # [C#](#tab/csetagoverwrite)
+Using the `UtteranceLog` class that we defined earlier.
 ```csharp
-StoreItems dataStore = new StoreItems();
+// add the current utterance to a new object and save it to storage.
+logItems = new UtteranceLog();
+logItems.UtteranceList.Add(utterance);
+logItems.eTag = "*";
 
-// create a set of properties for the first time
-StoreItem note = new StoreItem();
-// Set the eTag of the property to *
-note.eTag("*");
-note.Add("NoteName", "Shopping List");
-note.Add("NoteContents", "eggs");
-dataStore["Note1"] = note;
-await storage.Write(dataStore).ConfigureAwait(false);
+var changes = new KeyValuePair<string, object>[]
+{
+    new KeyValuePair<string, object>("UtteranceLog", logItems)
+};
+await _myStorage.Write(changes);
 
 ```
 # [JavaScript](#tab/jstagoverwrite)
-```csharp
-// Node.js snippet TBD
-// In Node.js, etag=* by default
+Adding a new utterance to the log and allow overwrite.
 
+```javascript
+storeItems["UtteranceLog"] = { UtteranceList: [`${utterance}`], "eTag": "*" }
+await storage.write(storeItems)
 ```
 ---
 
 ### Maintain concurrency and prevent overwrites
-If you want to prevent concurrent access to a property, so that if another instance of the bot has changed the data, your bot doesn't overwrite the changes. Instead the bot receives an error response with the message `etag conflict key=` when it attempts to save state data. <!-- To control concurrency of data that is stored using `IStorage`, the BotBuilder SDK checks the entity tag (ETag) for `Storage.Write()` requests. -->
+Use a value other than `*` for the `eTag` if you want to prevent concurrent access to a property, to avoid overwriting changes from another instance of the bot. The bot receives an error response with the message `etag conflict key=` when it attempts to save state data and the `eTag` is not the same as what is in storage. <!-- To control concurrency of data that is stored using `IStorage`, the BotBuilder SDK checks the entity tag (ETag) for `Storage.Write()` requests. -->
 
-
-By default, the `eTag` property of a `StoreItem` is checked it for equality every time a bot writes to that item, and then updates it to a new unique value it after each write. If the `eTag` property on `Write` doesn't match the `eTag` in the dataStore, it means another bot changed the data. 
+By default, the store checks the `eTag` property of a storage object for equality every time a bot writes to that item, and then updates it to a new unique value after each write. If the `eTag` property on write doesn't match the `eTag` in storage, it means another bot or thread changed the data. 
 
 For example, let's say you want your bot to edit a saved note, but you don't want your bot to overwrite changes that another instance of the bot has done. If another instance of the bot has made edits, you want the user to edit the version with the latest updates.
 
-You can first create the note by creating a `StoreItems` object that represents a data store, and add items for the properties of the note.
-
 # [C#](#tab/csetag)
-
+First, create a class that implements `IStoreItem`.
 ```csharp
-StoreItems dataStore = new StoreItems();
-
-// create a note for the first time
-StoreItem note = new StoreItem();
-note.Add("NoteName", "Shopping List");
-note.Add("NoteContents", "eggs");
-dataStore["Note1"] = note;
-await storage.Write(dataStore).ConfigureAwait(false);
-```
-
-Then to access the note later you can use `Read()`:
-```csharp
-String noteName = "";
-String noteContents = "";
-StoreItems noteStore = await storage.Read("Note");
-
-// if there were more than one note you can iterate through each of the items in the store
-foreach (var item in noteStore)
+public class Note : IStoreItem
 {
-    StoreItem value = item.Value as StoreItem;
-    noteName = value["NoteName"];
-    noteContents = value["NoteContents"];
-
-
+    public string Name { get; set; }
+    public string Contents { get; set; }
+    public string eTag { get; set; }
 }
-
-    // To make a change to the item, use the item you read from storage and modify it.
-noteStore["Note1"]["NoteContents"]= "bread";
-await storage.Write(noteStore).ConfigureAwait(false);
 ```
+Next, create an initial note by creating a storage object, and add the object to your store.
+```csharp
+// create a note for the first time, with a non-null, non-* eTag.
+var note = new Note { Name = "Shopping List", Contents = "eggs", eTag = "x" };
+
+var changes = new KeyValuePair<string, object>[]
+{
+    new KeyValuePair<string, object>("Note", note)
+};
+await NoteStore.Write(changes);
+```
+Then, access and update the note later, keeping its `eTag` that you read from the store.
+```csharp
+var note = NoteStore.Read<Note>("Note").Result.FirstOrDefault().Value;
+
+if (note != null)
+{
+    note.Contents += ", bread";
+    var changes = new KeyValuePair<string, object>[]
+    {
+        new KeyValuePair<string, object>("Note1", note)
+    };
+    await NoteStore.Write(changes);
+}
+```
+If the note was updated in the store before you write your changes, the call to `Write` will throw an exception.
 
 # [JavaScript](#tab/jsetag)
+
+First, create `myNote` object.
+```javascript
+var myNote = {
+    name: "Shopping List",
+    contents: "eggs",
+    eTag: "*"
+}
 ```
-// Node.js snippet TBD
+Next, initialize a `changes` object and add your *notes* to it then write it to storage.
+
+```javascript
+// Write a note
+var changes = {};
+changes["Note"] = myNote;
+await storage.write(changes);
 ```
+Then, access and update the note later, keeping its `eTag` that you read from the store.
+```javascript
+// Read in a note
+var note = await storage.read(["Note"]);
+try {
+    // Someone has updated the note. Need to update our local instance to match
+    if(myNote.eTag != note.eTag){
+        myNote = note;
+    }
+
+    // Add any updates to the note and write back out
+    myNote.contents += ", bread";   // Add to the note
+    changes["Note"] = note;
+    await storage.write(changes); // Write the changes back to storage
+    try {
+        context.sendActivity('Successful write.');
+    } catch (err) {
+        context.sendActivity(`Write failed: ${err}`);
+    }
+}
+catch (err) {
+    context.sendActivity(`Unable to read the Note: ${err}`);
+}
+```
+If the note was updated in the store before you write your changes, the call to `Write` will throw an exception.
+
 ---
 
-
-
-To maintain concurrency, always read a property from storage, then modify the property you read, so that the `eTag` is maintained. If you issue a `Storage.Read()` request to retrieve user data from the store, the response will contain the eTag property. If you change the data and issue a `Storage.Write()` request to save the updated data to the store, your request may include the eTag property that specifies the same value as you received earlier in the `Storage.Read()` response, so that they will match. 
+To maintain concurrency, always read a property from storage, then modify the property you read, so that the `eTag` is maintained. If you read user data from the store, the response will contain the eTag property. If you change the data and write updated data to the store, your request should include the eTag property that specifies the same value as you read earlier. However, writing an object with its `eTag` set to `*` will allow the write to clobber any other changes.
 
 <!-- If the ETag specified in your `Storage.Write()` request matches the current value in the store, the server will save the data and specify a new eTag value in the body of the response, that indicates that the data has been updated. If the ETag specified in your Storage.Write() request does not match the current value in the store, the bot responds with an error indicating an eTag conflict, to indicate that the user's data in the store has changed since you last saved or retrieved it. -->
 
 <!-- TODO: new snippet -->
 
+<!-- jf: I think this section can be cut entirely.
+
 ## Save a conversation reference using storage
 
-You can use IStorage to save BotBuilder SDK objects as well as user-defined data. This code snippet uses `Storage.Write()` to save a ConversationReference object for use in sending a proactive message.
+You can use IStorage to save BotBuilder SDK objects as well as user-defined data. This code snippet uses `Storage.Write()` to save a ConversationReference object for use in sending a proactive message later.
 
 # [C#](#tab/csharpwriteconvref)
 ```csharp
-                // If the user says "subscribe"
-                if (utterance.CompareTo("subscribe") == 0)
-                {
-                    var reference = context.ConversationReference;
-                    var userId = reference.User.Id;
+            var reference = context.ConversationReference;
+            var userId = reference.User.Id;
 
-                    // save the ConversationReference to a global variable of this class
-                    conversationReference = reference;
+            // save the ConversationReference to a global variable of this class
+            conversationReference = reference;
 
-                    StoreItems storeItems = new StoreItems();
-                    StoreItem conversationReferenceToStore = new StoreItem();
-                    // set the eTag to "*" to indicate you're overwriting previous data
-                    conversationReferenceToStore.eTag = "*";
-                    conversationReferenceToStore.Add("ref", reference);
-                    storeItems[$"ConversationReference/{userId}"] = conversationReferenceToStore;
+            StoreItems storeItems = new StoreItems();
+            StoreItem conversationReferenceToStore = new StoreItem();
+            // set the eTag to "*" to indicate you're overwriting previous data
+            conversationReferenceToStore.eTag = "*";
+            conversationReferenceToStore.Add("ref", reference);
+            storeItems[$"ConversationReference/{userId}"] = conversationReferenceToStore;
 
-                    await storage.Write(storeItems).ConfigureAwait(false);
+            await storage.Write(storeItems).ConfigureAwait(false);
 
-                    SubscribeUser(userId);
+            SubscribeUser(userId);
 
-                    context.Reply("Thank You! We will message you shortly.");
-                }
-
-        public void SubscribeUser(string userId)
-        {
-            CreateContextForUserAsync(userId, async (IBotContext context) =>
-            {
-                context.Reply("You've been notified.");
-                await Task.Delay(2000);
-            });
-                        
+            await context.SendActivity("Thank You! We will message you shortly.");
         }
+
+public void SubscribeUser(string userId)
+{
+    CreateContextForUserAsync(userId, async (ITurnContext context) =>
+    {
+        await context.SendActivity("You've been notified.");
+        await Task.Delay(2000);
+    });
+                
+}
 ```
 # [JavaScript](#tab/jswriteconvref)
 ```javascript
@@ -471,7 +420,7 @@ To read the saved object from storage, call `Storage.Read()`.
 ```csharp
 
 
-        private async void CreateContextForUserAsync(String userId,Func<IBotContext, Task> onReady)
+        private async void CreateContextForUserAsync(String userId,Func<ITurnContext, Task> onReady)
         {
             var referenceKey = $"ConversationReference/{userId}";
             
@@ -507,11 +456,17 @@ async function createContextForUser(userId, callback) {
 ```
 ---
 
+-->
 
+## Next steps
 
+Now that you know how to read read and write directly from storage, lets take a look at how you can use the state manager to do that for you.
+
+> [!div class="nextstepaction"]
+> [Save state using conversation and user properties](bot-builder-howto-v4-state.md)
 
 ## Additional resources
 
-- [Concept: Storage in the Bot Builder SDK](./bot-builder-storage-concept.md)
+- [Concept: Storage in the Bot Builder SDK](bot-builder-storage-concept.md)
 
 
