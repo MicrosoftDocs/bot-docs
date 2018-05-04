@@ -11,7 +11,6 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Create a bot with the Bot Builder SDK for Java
-
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 The Bot Builder SDK for Java provides a familiar way for Java developers to write bots. The SDK v4 is being actively developed and should therefore be used for experimentation only. Visit Java [GitHub repo](https://github.com/Microsoft/botbuilder-java) for more information.
