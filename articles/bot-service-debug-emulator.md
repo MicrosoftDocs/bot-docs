@@ -182,7 +182,6 @@ Next, if your bot is running with Microsoft Account (MSA) credentials, enter tho
 Finally, click **Connect** to connect the emulator to your bot. After the emulator has connected to your bot, you can send and receive messages using the embedded chat control.
 
 ![Connecting to emulator using localhost](~/media/emulator/emulator-connect_localhost_credentials.png)
-
 ## <a id="remotehost"></a> Connect to a bot that is hosted remotely
 
 Launch the Bot Framework Emulator and enter your bot's endpoint into the emulator's address bar. 
