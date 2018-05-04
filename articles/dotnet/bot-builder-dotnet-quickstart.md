@@ -134,7 +134,6 @@ Next, learn about the key concepts of the Bot Builder SDK for .NET.
 ::: moniker range="azure-bot-service-4.0"
 
 # Create a bot with the Bot Builder SDK v4 for .NET
-
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 This quickstart walks you through building a bot by using the Bot Application template and the Bot Builder SDK for .NET, and then testing it with the Bot Framework Emulator. This is based off the [Microsoft Bot Builder SDK v4](https://github.com/Microsoft/botbuilder-dotnet).
