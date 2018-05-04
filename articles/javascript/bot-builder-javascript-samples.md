@@ -6,15 +6,18 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 05/03/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
 # JavaScript samples for Bot Builder SDK
-These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for JavaScript. 
-You can use the samples to help you quickly get started with building great bots with rich capabilities.
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-## Get the samples
+These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for JavaScript. 
+You can use the samples to help you quickly get started with building great bots with rich capabilities. 
+
+Note: The SDK v4 is being actively developed and should therefore be used for experimentation only.
+
 To get the samples, clone the [botbuilder-js](https://github.com/Microsoft/botbuilder-js) GitHub repository using Git.
 
 ```cmd
