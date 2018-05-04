@@ -6,7 +6,6 @@
 # Patterns
 ## [Task automation](../bot-service-design-pattern-task-automation.md)
 ## [Knowledge base](../bot-service-design-pattern-knowledge-base.md)
-## [Bot to web](../bot-service-design-pattern-integrate-browser.md)
 ## [Handoff to human](../bot-service-design-pattern-handoff-human.md)
 ## [Bots in apps](../bot-service-design-pattern-embed-app.md)
 ## [Bots in websites](../bot-service-design-pattern-embed-web-site.md)
