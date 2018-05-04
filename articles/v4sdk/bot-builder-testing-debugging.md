@@ -68,17 +68,17 @@ Bots follow an event driven programming paradigm, which can be hard to rationali
 
 **Understanding bot activities with the emulator**
 
-Your bot deals with different types of [activities](bot-service-concept-message-processing.md) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
+Your bot deals with different types of [activities](bot-builder-concept-activity-processing.md) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
 
 **How middleware works**
 
-[Middleware](bot-service-concept-message-processing.md#middleware) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 
+[Middleware](bot-builder-concept-activity-processing.md#middleware) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 
 
-If you are using multiple pieces of middleware the delegate may pass execution to a different piece of middleware if that is how your pipeline is oriented. Details on [the bot middleware pipeline](bot-service-concept-message-processing.md#the-bot-middleware-pipeline) can help make that idea clearer.
+If you are using multiple pieces of middleware the delegate may pass execution to a different piece of middleware if that is how your pipeline is oriented. Details on [the bot middleware pipeline](bot-builder-concept-activity-processing.md#the-bot-middleware-pipeline) can help make that idea clearer.
 
-If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-service-concept-message-processing.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
+If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-activity-processing.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
 
-Understanding when, and why, middleware short-circuits, indicates which piece of middleware should come first in your pipeline. Understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try [creating your own middleware](bot-service-create-middleware.md) first to experiment a bit before diving into the build-in middleware.
+Understanding when, and why, middleware short-circuits, indicates which piece of middleware should come first in your pipeline. Understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try [creating your own middleware](bot-builder-create-middleware.md) first to experiment a bit before diving into the build-in middleware.
 
 For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain interactions and short-circuit the pipeline when it does, which can be confusing when first learning how to use it.
 
