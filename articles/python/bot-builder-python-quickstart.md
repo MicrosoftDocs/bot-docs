@@ -10,17 +10,14 @@ ms.date: 02/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Create a bot with the Bot Builder SDK for Python
-The Bot Builder SDK for Python is an easy-to-use framework for developing bots. This quickstart walks you through building a bot, and then testing it with the Bot Framework Emulator. The Python SDK consists of a series of [libraries](https://github.com/Microsoft/botbuilder-python/tree/master/libraries). To build them locally, see [Building the SDK](https://github.com/Microsoft/botbuilder-python/wiki/building-the-sdk).
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
+The Bot Builder SDK for Python is an easy-to-use framework for developing bots. This quickstart walks you through building a bot, and then testing it with the Bot Framework Emulator. The SDK v4 is being actively developed and should therefore be used for experimentation only. Visit Python [GitHub repo](https://github.com/Microsoft/botbuilder-python) for more information. 
 
 ## Pre-requisite
-[Python 3.6.4](https://www.python.org/downloads/) 
-
-You will need to install the following 3 packages:
-- [botframework-connector](https://pypi.org/project/botframework-connector/)
-- [botbuilder-core](https://pypi.org/project/botbuilder-core/)
-- [botbuilder-schema](https://pypi.org/project/botbuilder-schema/)
-
-[Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator)
+- [Python 3.6.4](https://www.python.org/downloads/) 
+- [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
 # Create a bot
 In the main.py file, import the following standard modules:
@@ -29,24 +26,20 @@ In the main.py file, import the following standard modules:
 import http.server
 import json
 import asyncio
-from botbuilder.schema import (Activity, ActivityTypes, ChannelAccount)
-from botbuilder.core import BotFrameworkAdapter
 ```
 
 And the following SDK modules:
-
 ```python
-from botbuilder.schema import (Activity, ActivityTypes, ChannelAccount)
+from botbuilder.schema import (Activity, ActivityTypes)
 from botframework.connector import ConnectorClient
 from botframework.connector.auth import (MicrosoftAppCredentials,
                                          JwtTokenValidation, SimpleCredentialProvider)
 ```
-
 Next, add the following code to create the bot using the ConnectorClient:
-
 ```python
 APP_ID = ''
 APP_PASSWORD = ''
+
 
 class BotRequestHandler(http.server.BaseHTTPRequestHandler):
 
@@ -61,36 +54,55 @@ class BotRequestHandler(http.server.BaseHTTPRequestHandler):
             text=text,
             service_url=request_activity.service_url)
 
-    def __handle_conversation_update_activity(self, activity: Activity):
+    def __handle_conversation_update_activity(self, activity):
         self.send_response(202)
         self.end_headers()
         if activity.members_added[0].id != activity.recipient.id:
-            self._adapter.send([BotRequestHandler.__create_reply_activity(activity, 'Hello and welcome to the echo bot!')])
+            credentials = MicrosoftAppCredentials(APP_ID, APP_PASSWORD)
+            reply = BotRequestHandler.__create_reply_activity(activity, 'Hello and welcome to the echo bot!')
+            connector = ConnectorClient(credentials, base_url=reply.service_url)
+            connector.conversations.send_to_conversation(reply.conversation.id, reply)
 
-    def __handle_message_activity(self, activity: Activity):
+    def __handle_message_activity(self, activity):
         self.send_response(200)
         self.end_headers()
-        self._adapter.send([BotRequestHandler.__create_reply_activity(activity, 'You said: %s' % activity.text)])
+        credentials = MicrosoftAppCredentials(APP_ID, APP_PASSWORD)
+        connector = ConnectorClient(credentials, base_url=activity.service_url)
+        reply = BotRequestHandler.__create_reply_activity(activity, 'You said: %s' % activity.text)
+        connector.conversations.send_to_conversation(reply.conversation.id, reply)
+
+    def __handle_authentication(self, activity):
+        credential_provider = SimpleCredentialProvider(APP_ID, APP_PASSWORD)
+        loop = asyncio.new_event_loop()
+        try:
+            loop.run_until_complete(JwtTokenValidation.assert_valid_activity(
+                activity, self.headers.get("Authorization"), credential_provider))
+            return True
+        except Exception as ex:
+            self.send_response(401, ex)
+            self.end_headers()
+            return False
+        finally:
+            loop.close()
 
     def __unhandled_activity(self):
         self.send_response(404)
         self.end_headers()
 
-    def on_receive(self, activity: Activity):
+    def do_POST(self):
+        body = self.rfile.read(int(self.headers['Content-Length']))
+        data = json.loads(str(body, 'utf-8'))
+        activity = Activity.deserialize(data)
+
+        if not self.__handle_authentication(activity):
+            return
+
         if activity.type == ActivityTypes.conversation_update.value:
             self.__handle_conversation_update_activity(activity)
         elif activity.type == ActivityTypes.message.value:
             self.__handle_message_activity(activity)
         else:
             self.__unhandled_activity()
-
-    def do_POST(self):
-        body = self.rfile.read(int(self.headers['Content-Length']))
-        data = json.loads(str(body, 'utf-8'))
-        activity = Activity.deserialize(data)
-        self._adapter = BotFrameworkAdapter(APP_ID, APP_PASSWORD)
-        self._adapter.on_receive = self.on_receive
-        self._adapter.receive(self.headers.get("Authorization"), activity)
 
 
 try:
@@ -102,12 +114,19 @@ except KeyboardInterrupt:
     SERVER.socket.close()
 ```
 
+
 Save main.py. To run the sample on Windows, enter the following into your command line window:
 ```
 python main.py
 ```
 In your local terminal you should see the message 'Started http server on localhost:9000'
 
-- Start the Bot Framework Emulator, connect to your bot by using `http://localhost:9000/api/messages`. 
-- The bot says 'Hello and welcome to the echo bot!' to welcome you.
-- Type **Hello** in the emulator, and the bot will echo back **You said "Hello"**.
+### Start the emulator and connect your bot
+
+Next, start the emulator and then connect to your bot in the emulator:
+
+1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
+
+2. Click **Save and connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. 
+
+Type **Hello** in the emulator, and the bot will echo back **You said "Hello"**.
