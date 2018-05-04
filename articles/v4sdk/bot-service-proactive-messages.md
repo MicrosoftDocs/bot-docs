@@ -10,6 +10,8 @@ ms.date: 03/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 # Proactive messaging
 <!--
 When you think about the exchange of messages between your bot and the user, you're probably thinking about the scenario where the user sends a message to your bot and your bot then replies to the user with a message of its own. We call this _reactive messaging_ and it's by far the most common flow that you should optimize your bot's code for.
