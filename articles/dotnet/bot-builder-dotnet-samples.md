@@ -1,12 +1,12 @@
 ---
 title: Sample bots for Bot Builder SDK for .NET | Microsoft Docs
-description: Explore a large selection of sample bots that can help kickstart your bot development with the Bot Builder SDK for .NET.
+description: Explore sample bots that can help kickstart your bot development with the Bot Builder SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 05/03/2018
 ---
 ::: moniker range="azure-bot-service-3.0"
 
@@ -80,13 +80,14 @@ Sample | Description
 ::: moniker-end
 
 ::: moniker range="azure-bot-service-4.0"
-# Bot Builder SDK for .NET samples
+# Bot Builder SDK v4 .NET samples
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities.
+These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities. 
 
-## Get the samples
+Note: The SDK v4 is being actively developed and should therefore be used for experimentation only. 
+
 To get the samples, clone the [botbuilder-dotnet](https://github.com/Microsoft/botbuilder-dotnet) GitHub repository using Git.
-
 ```cmd
 git clone https://github.com/Microsoft/botbuilder-dotnet.git
 cd samples
