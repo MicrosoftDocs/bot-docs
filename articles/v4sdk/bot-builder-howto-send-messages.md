@@ -40,7 +40,7 @@ Certain channels support a speech enabled bot, allowing it to speak to the user.
 
 # [C#](#tab/csharp)
 
-For .NET, you can specify text to be spoken either in an individual activity message, or through a prompt when using the built in [prompts](../javascript/bot-builder-javascript-prompts.md).
+For .NET, you can specify text to be spoken either in an individual activity message, or through a prompt when using the built in [prompts](bot-builder-prompts.md).
 
 To add speech to a single activity message, specify the `Activity.Speak` property.
 
