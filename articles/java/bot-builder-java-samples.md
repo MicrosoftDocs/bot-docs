@@ -24,5 +24,4 @@ To get the samples, clone the [botbuilder-java](https://github.com/Microsoft/bot
 git clone https://github.com/Microsoft/botbuilder-java.git
 cd samples
 ```
-
 The sample bots built with the Bot Builder SDK for Java are organized in the **samples** directory.
