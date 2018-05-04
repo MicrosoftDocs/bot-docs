@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create Middleware that logs in Cosmos DB
 
-While useful middleware is provided with the SDK, there are situations where you will need to implement your own to achieve the desired goal.
+While useful middleware is provided with the SDK, there are situations where you will need to implement your own middleware to achieve the desired goal.
 
 In this sample, we'll create a middleware layer connecting to Cosmos DB to log all the received messages, and the replies we sent back. The code you'll see here is available as full source code, provided with our [samples](../dotnet/bot-builder-dotnet-samples.md).
 
@@ -26,7 +26,7 @@ First, we need to have somewhere to store our database.  This can be done throug
 
 The sample, and the code provided here, is using the emulator. The endpoint and key are those provided for the Cosmos DB test account, which are common values provided with the emulator documentation and cannot be used for production.
 
-If you would like to use a real Azure Cosmos DB, follow step 1 of the [Cosmos DB get started](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-get-started) topic. Once that's done, both your endpoint URI and key are available in the **Keys** tab in your database settings. These values will be needed for our configuration file below.
+If you would like to use a real Azure Cosmos DB, follow step 1 of the [Cosmos DB getting started](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-get-started) topic. Once that's done, both your endpoint URI and key are available in the **Keys** tab in your database settings. These values will be needed for our configuration file below.
 
 ### Build a basic bot
 
@@ -66,7 +66,7 @@ If you do add two additional keys and want to use the actual database, be sure t
 
 ## Creating your middleware
 
-Before we get writing the actual middleware logic, create a new class in your bot project for the middleware. Once you have that class, change the namespace to what we use for the rest of our bot, `Microsoft.Bot.Samples`. Here you'll see we added references to a few new libraries:
+Before we start writing the actual middleware logic, create a new class in your bot project for the middleware. Once you have that class, change the namespace to what we use for the rest of our bot, `Microsoft.Bot.Samples`. Here you'll see we added references to a few new libraries:
 
 * `Newtonsoft.Json;`
 * `Microsoft.Azure.Documents;`
@@ -98,7 +98,7 @@ namespace Microsoft.Bot.Samples
 
 #### Defining local variables
 
-Next, we need local variables for manipulating our database and a class to store the information we want to log. That information class, which we call `Log`, defines what the JSON properties associated with each member will be named. We'll get back to that futher on.
+Next, we need local variables for manipulating our database and a class to store the information we want to log. That information class, which we call `Log`, defines what the JSON properties associated with each member will be named. We'll get back to that further on.
 
 ```cs
     private string Endpoint;
@@ -193,7 +193,7 @@ The definition of `Key`, `Endpoint`, and `docClient` were included in a snippet 
 
 #### Read from database logic
 
-The last helper function we have here is to read from our database, and return the most recent specified number of records. It's worth noting that there are better database practices for retrieving data than we use here, particularly when your data store is significantly larger.
+The last helper function reads from our database and returns the most recent specified number of records. It's worth noting that there are better database practices for retrieving data than we use here, particularly when your data store is significantly larger.
 
 ```cs
     public async Task<string> ReadFromDatabase(int numberOfRecords)
@@ -222,27 +222,27 @@ The last helper function we have here is to read from our database, and return t
     }
 ```
 
-#### Define OnProcessRequest()
+#### Define OnTurn()
 
-The standard middleware method `OnProcessRequest()` then handles the rest of the work. We only want to log when the current activity is a message, which we check for both before and after calling `next()`.
+The standard middleware method `OnTurn()` then handles the rest of the work. We only want to log when the current activity is a message, which we check for both before and after calling `next()`.
 
 The first thing we check is if this is our special case message, where the user is asking for the most recent history. If so, we call `ReadFromDatabase(3)` to get the three most recent records, and send that to the conversation. Since that completely handles the current activity, we short circuit the pipeline instead of passing on execution.
 
 To get the response that bot sends, we create a handler every time we recieve a message to grab those responses, which can be seen in the lambda we give to `OnSendActivity()`. It builds a string to collect all the messages sent through `SendActivity()` for this context object.
 
-Once execution returns up the pipeline from `next()`, we simply assemble our log data and write it out to the database. 
+Once execution returns up the pipeline from `next()`, we assemble our log data and write it out to the database. 
 
-Look in the Cosmos DB data exlorer after a few messages are sent to this bot, and you should see your data in individual records. When examining one of these records, you should see that the first three items are the three values of our log data, named as the string we specified for their respective `JsonProperty`.
+Look in the Cosmos DB data explorer after a few messages are sent to this bot, and you should see your data in individual records. When examining one of these records, you should see that the first three items are the three values of our log data, named as the string we specified for their respective `JsonProperty`.
 
 ```cs
-    public async Task OnProcessRequest
-        (IBotContext context, MiddlewareSet.NextDelegate next)
+    public async Task OnTurn
+        (ITurnContext context, MiddlewareSet.NextDelegate next)
     {
         string botReply = "";
 
-        if (context.Request.Type == ActivityTypes.Message)
+        if (context.Activity.Type == ActivityTypes.Message)
         {
-            if (context.Request.Text == "history")
+            if (context.Activity.Text == "history")
             {
                 // Read last 3 responses from the database, and short circuit future execution.
                 await context.SendActivity(await ReadFromDatabase(3));
@@ -265,13 +265,13 @@ Look in the Cosmos DB data exlorer after a few messages are sent to this bot, an
         await next();
 
         // Save logs for each conversational exchange only.
-        if (context.Request.Type == ActivityTypes.Message)
+        if (context.Activity.Type == ActivityTypes.Message)
         {
             // Build a log object to write to the database.
             var logData = new Log
             {
                 Time = DateTime.Now.ToString(),
-                Message = context.Request.Text,
+                Message = context.Activity.Text,
                 Reply = botReply
             };
 
@@ -292,7 +292,7 @@ Look in the Cosmos DB data exlorer after a few messages are sent to this bot, an
 
 ## Sample output
 
-In the full sample, the bot uses the prompt library to ask for the user's name and favorite number. Details on the prompt library can be found on the [prompting users](~/javascript/bot-builder-javascript-prompts.md) topic.
+In the full sample, the bot uses the prompt library to ask for the user's name and favorite number. Details on the prompt library can be found on the [prompting users](~/v4sdk/bot-builder-prompts.md) topic.
 
 Here is an example conversation with our sample bot that is running the code outlined above.
 
