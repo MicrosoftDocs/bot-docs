@@ -1,7 +1,7 @@
 ---
 title: Save state using conversation and user properties | Microsoft Docs
 description: Learn how to save and retrieve data with V4 of the Bot Builder SDK for .NET.
-author: RobStand
+author: ivorb
 ms.author: v-demak
 manager: kamrani
 ms.topic: article
