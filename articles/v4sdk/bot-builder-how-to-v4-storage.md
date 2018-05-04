@@ -10,14 +10,13 @@ ms.date: 05/2/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
-
 # Save data directly to storage
 
 <!--
  Note for V4: You can write directly to storage without using the state manager. Therefore, this topic isn't called "managing state". State is in a separate topic.
  ## Manage state data by writing directly to storage
 -->
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 You can write directly to storage without using the context object or middleware, by reading and writing directly to your storage object.
 
