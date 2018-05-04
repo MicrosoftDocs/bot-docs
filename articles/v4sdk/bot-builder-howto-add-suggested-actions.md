@@ -42,9 +42,6 @@ await context.SendActivity(activity);
 
 # [JavaScript](#tab/javascript)
 
-> [!NOTE]
-> Using `suggestedActions()` in a dialog will exit the dialog. However, if that is not desired, a `choicePrompt` acts in a similar way but will continue the dialog.
-
 ```javascript
 // Require MessageFactory from botbuilder.
 const {MessageFactory} = require('botbuilder');
