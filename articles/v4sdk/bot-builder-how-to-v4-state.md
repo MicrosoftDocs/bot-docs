@@ -10,17 +10,9 @@ ms.date: 05/03/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
-
 # Save state using conversation and user properties
 
-<!-- 
-A bot may have to save state information, which is information it remembers in order to respond appropriately to incoming messages. The Bot Builder SDK provides classes for storing and retrieving state data as a set of properties associated with a user or a conversation. These properties are saved as key-value pairs. 
-
-* Conversation properties help your bot keep track of the current conversation the bot is having with the user. If your bot completes a sequence of steps or switches between conversation topics, you can use conversation properties to manage steps in a sequence or track the current topic. Since conversation properties reflect the state of the current conversation, you typically clear them at the end of a session, when the bot receives an `endConversation` activity.
-* User properties can be used for many purposes, such as determining where the user's prior conversation left off or simply greeting a returning user by name. If you store a user's preferences, you can use that information to customize the conversation the next time you chat. For example, you might alert the user to a news article about a topic that interests her, or alert a user when an appointment becomes available.  
--->
-
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 For your bot to save conversation and user state, first initialize state manager middleware, and then use the conversation and user state properties.
 For more information about you might do this, see [State and storage](./bot-builder-storage-concept.md).
