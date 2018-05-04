@@ -12,7 +12,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 
 # Create a bot with the Bot Builder SDK v4 (preview) for JavaScript
-
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 This quickstart walks you through building a bot by using the Yeoman Bot Builder generator and the Bot Builder SDK for JavaScript, and then testing it with the Bot Framework Emulator. This is based off the [Microsoft Bot Builder SDK v4](https://github.com/Microsoft/botbuilder-js).
