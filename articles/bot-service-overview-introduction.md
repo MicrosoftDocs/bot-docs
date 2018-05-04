@@ -91,7 +91,7 @@ Use the data collected in Azure portal to identify opportunities to improve the 
 ::: moniker range="azure-bot-service-4.0"
 
 # Azure Bot Service
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
 Azure Bot Service provides tools to build, test, deploy, and manage intelligent bots all in one place. Through the modular and extensible framework provided by the SDK, developers can leverage templates to create bots that provide speech, language understanding, question and answer, and more.  
 
