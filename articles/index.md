@@ -96,7 +96,7 @@ ms.date: 05/03/2018
 <p style="margin-top: 6px; margin-bottom: 6px;"></p>
 <div class="ico48Case">
     <div class="ico48Link">
-        <a href="/bot-framework/dotnet/bot-builder-dotnet-quickstart">
+        <a href="/bot-framework/dotnet/bot-builder-dotnet-sdk-quickstart">
             <img src="v4sdk/media/logo_csharp.svg" alt="">
             <span>C&#35;</span>
         </a>

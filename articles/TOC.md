@@ -5,6 +5,7 @@
 ## [Create a bot with Bot Service](~/bot-service-quickstart.md)
 ## Create a bot with Bot Builder SDK
 ### [.NET](dotnet/bot-builder-dotnet-quickstart.md)
+### [.NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ### [Node.js](nodejs/bot-builder-nodejs-quickstart.md)
 ### [JavaScript](javascript/bot-builder-javascript-quickstart.md)
 ### [Python](python/bot-builder-python-quickstart.md)
