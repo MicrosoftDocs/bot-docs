@@ -17,9 +17,9 @@ Since a bot can be thought of as a conversational user interface, the flow of co
 
 Designing a bot's conversation flow involves deciding how a bot responds when the user says something to it. A bot first recognizes the task or conversation topic based on a message from the user. To determine the task or topic (known as the *intent*) associated with a user's message, the bot can look for words or patterns in the text of the user's message, or it can take advantage of services like [Language Understanding (LUIS)](bot-builder-concept-luis.md) and QnA Maker. 
 
-Once the bot has recognized the user's intent, depending on the scenario, the bot could fulfill the user's request with a single reply, completing the conversation in one turn, or it might require a series of turns. For multi-turn conversation flows, the Bot Builder SDK provides [state management](./bot-builder-how-to-v4-state.md) for keeping track of a conversation, [prompts](../javascript/bot-builder-javascript-prompts.md) for asking for information, and [dialogs](../javascript/bot-builder-javascript-dialog-manage-conversation-flow.md) for encapsulating conversation flows. 
+Once the bot has recognized the user's intent, depending on the scenario, the bot could fulfill the user's request with a single reply, completing the conversation in one turn, or it might require a series of turns. For multi-turn conversation flows, the Bot Builder SDK provides [state management](./bot-builder-howto-v4-state.md) for keeping track of a conversation, [prompts](bot-builder-prompts.md) for asking for information, and [dialogs](bot-builder-dialog-manage-conversation-flow.md) for encapsulating conversation flows. 
 
-In a complex bot with multiple subsystems, it can be the case that you use multiple services to recognize intent, one for each subcomponent of the bot. The [Dispatch tool]() gets the results of multiple services in one place when you combine conversational subsystems into one bot. 
+In a complex bot with multiple subsystems, it can be the case that you use multiple services to recognize intent, one for each subcomponent of the bot. The [Dispatch tool](bot-builder-tutorial-dispatch.md) gets the results of multiple services in one place when you combine conversational subsystems into one bot. 
 <!-- 
 A conversation identifies a series of activities sent between a bot and a user on a specific channel and represents an interaction between one or more bots and either a _direct_ conversation with a specific user or a _group_ conversation with multiple users.
 A bot communicates with a user on a channel by receiving activities from, and sending activities to the user.
@@ -47,34 +47,7 @@ The simplest kind of single-turn bot doesn't need to keep track of conversation 
 
 ![Single-turn weather bot](./media/concept-conversation/weather-single-turn.png)
 
-A weather bot has a single-turn flow, if it just gives the user a weather report, without going back and forth asking for the city or the date. All the logic for displaying the weather report is based on the message the bot just received.
-
-# [C#](#tab/csharp)
-```csharp
-        protected async override Task OnReceiveActivity(IBotContext context)
-        {
-            var msgActivity = context.Request.AsMessageActivity();
-            if (String.Equals(msgActivity.Text, "get weather"))
-            {                
-                // GetWeatherReport returns a string describing the weather
-                context.SendActivity(GetWeatherReport());
-            }
-        }
-    // ...
-
-```
-
-# [JavaScript](#tab/javascript)
-```javascript
-adapter.processActivity(req, res, async (context) => {
-    if (context.activity.type === 'get weather') {
-        await context.sendActivities(GetWeatherForecast())
-    }
-});
-```
----
-
-In each turn of a conversation, the bot receives a turn context, which your bot can use to determine what to do next and how the conversation flows. 
+A weather bot has a single-turn flow, if it just gives the user a weather report, without going back and forth asking for the city or the date. All the logic for displaying the weather report is based on the message the bot just received. In each turn of a conversation, the bot receives a turn context, which your bot can use to determine what to do next and how the conversation flows. 
 
 ## Multiple turns
 
@@ -95,7 +68,7 @@ When the user replies to the bot's prompt for the city, the receive handler for 
 ```
 -->
 
-See [Managing state](bot-builder-storage-concept.md) for an overview of managing state, and see [How to use user and conversation properties](bot-builder-how-to-v4-state.md) for an example.
+See [Managing state](bot-builder-storage-concept.md) for an overview of managing state, and see [How to use user and conversation properties](bot-builder-howto-v4-state.md) for an example.
 
 ## Conversation topics
 
@@ -103,134 +76,19 @@ You might design your bot to handle more than one type of task. For example, you
 
 ### Recognize intent
 
-The Bot Builder SDK supplies _recognizers_ that process each incoming message to determine intent, so your bot can initiate the appropriate conversational flow. Before the _receive callback_, recognizers look at the message content from the user to determine intent, and then return the intent to the bot using the context object within the receive callback. In the following example, the bot starts different conversation flows based on the value of `context.TopIntent.Name`.
+The Bot Builder SDK supplies _recognizers_ that process each incoming message to determine intent, so your bot can initiate the appropriate conversational flow. Before the _receive callback_, recognizers look at the message content from the user to determine intent, and then return the intent to the bot using the turn context object within the receive callback, stored as the **Top Intent** on the turn context object. 
 
-# [C#](#tab/csharp)
-```csharp
-        protected async override Task OnReceiveActivity(IBotContext context)
-        {
-            var msgActivity = context.Request.AsMessageActivity();
-            if (msgActivity != null)
-            {
-                    switch (context.TopIntent.Name)
-                    {
-                        case "Weather":
-                            StartWeatherTopic(context);
-                            return;
-
-                        case "Help":
-                            StartHelpTopic(context);
-                            return;
-
-                        default:
-                            // use help flow if we don't recognize the intent
-                            StartHelpTopic(context);
-                            return;
-                    }
-
-
-            }
-        }
-    // ...
-
-    public Task<bool> StartWeatherTopic(IBotContext context)
-    {
-        // Reply with a forecast based on what the user said
-        context.SendActivity(GetForecast(context.Request.Text));
-    }
-
-    public Task<bool> StartHelpTopic(IBotContext context)
-    {
-        context.SendActivity("This is the weather bot. Type `get weather` to get a weather forecast");
-    }
-```
-
-# [JavaScript](#tab/javascript)
-```javascript
-const bot = new Bot(adapter)
-    .use(model)
-    .onReceive((context) => {
-        const intentName = context.topIntent ? context.topIntent.name : 'None';
-        switch (intentName) {
-            case 'Weather':
-                return startWeatherTopic(context);
-            case 'Help':
-                return startHelpTopic(context);
-            // default to help topic if we don't recognize the intent
-            default:
-                return startHelpTopic(context);
-        }
-    });
-    
-    // ...
-    function startWeatherTopic(context) {
-        // Reply with a forecast based on what the user said
-        context.reply(GetWeatherForecast(context.request.text));
-    }
-    return Promise.resolve();
-
-    function startHelpTopic(context) {
-        context.reply("This is the weather bot. Type `get weather` to get a weather forecast");
-    }
-    return Promise.resolve();
-}
-```
----
-
-
-The recognizer that determines `context.topIntent` can simply use regular expressions, Language Understanding (LUIS), or other logic that you develop as middleware. The following could be examples of recognizers:
+The recognizer that determines **Top Intent** can simply use regular expressions, Language Understanding (LUIS), or other logic that you develop as middleware. The following could be examples of recognizers:
    
 * You set up a recognizer using regular expressions to detect every time a user says the word help.
 * You use Language Understanding (LUIS) to train a service with examples of ways user might ask for help, and map that to the "Help" intent.
 * You create your own recognizer middleware that inspects incoming activities and returns the "translate" intent every time it detects a message in another language.
 
-For more info on setting up a recognizer see [Recognizers] and [Language Understanding](bot-builder-concept-luis.md). <!-- TODO: ADD THIS TOPIC OR SNIPPET-->
+For more info [Language Understanding with LUIS](bot-builder-concept-luis.md). <!-- TODO: ADD THIS TOPIC OR SNIPPET-->
 
 ### Consider how to interrupt conversation flow or change topics
 
-One way to keep track of where you are in a conversation is to use `context.State.ConversationProperties` to save information about the currently active topic or what steps in a sequence have been completed.
-
-# [C#](#tab/csharp2)
-```csharp
-    public class OrderState : StoreItem
-    {
-        public string eTag { get; set; }
-
-        public string OrderStatus { get; set; }
-        
-        public bool OrderComplete { get; set; }
-    }
-
-    // Update state information on placing an order
-    public Task<bool> StartPlaceOrderTopic(IBotContext context)
-    {
-        var conversationState = context.GetConversationState<OrderState>() ?? new OrderState();
-        conversationState.OrderStatus = "started"
-        conversationState.OrderComplete = false;
-        // Execute order logic based on what the user said
-        await PlaceOrderLogic(context.Request.Text);
-    }
-
-    // TBD demonstrate persistence
-```
-
-# [JavaScript](#tab/javascript2)
-```javascript
-    
-    // Update state information on placing an order
-    function startPlaceOrderTopic(context) {
-        context.state.conversationProperties["activeTopic"] = "PlaceOrder"
-        context.state.conversationProperties["orderStatus"] = "started"
-        context.state.conversationProperties["orderComplete"] = false;
-        // Execute order logic based on what the user said
-        PlaceOrderLogic(context.Request.Text);
-    }
-    return Promise.resolve();
-
-}
-```
----
-
+One way to keep track of where you are in a conversation is to use [conversation state](bot-builder-howto-v4-state.md) to save information about the currently active topic or what steps in a sequence have been completed.
 
 When a bot becomes more complex, you can also imagine a sequence of conversation flows occurring in a stack; for instance, the bot will invoke the new order flow, and then invoke the product search flow. Then the user will select a product and confirm, completing the product search flow, and then complete the order.
 
