@@ -13,10 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Python samples for Bot Builder SDK
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Python. 
-You can use the samples to help you quickly get started with building great bots with rich capabilities. 
-
-Note: The SDK v4 is being actively developed and should therefore be used for experimentation only.
+These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Python. The SDK v4 is in preview, visit Python [GitHub repo](https://github.com/Microsoft/botbuilder-python) for more information. 
 
 To get the samples, clone the [botbuilder-python](https://github.com/Microsoft/botbuilder-python) GitHub repository using Git.
 

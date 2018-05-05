@@ -109,8 +109,8 @@ Before writing code, review the bot [design guidelines](bot-service-design-pri
 > [!TIP] 
 >
 > Install the template you need:
->  - Bot builder .NET SDK v4 preview [VSIX template](https://marketplace.visualstudio.com/)
->  - Bot builder Node.js SDK v4 preview [Yeoman template](https://www.npmjs.com/search?q=botbuilder-v4)
+>  - Bot builder .NET SDK v4 preview [VSIX template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
+>  - Bot builder Node.js SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder). Use @preview to get v4 template.
 >  - Bot builder Java SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder-java)
 >  - Bot builder Python SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder-python)
 >
