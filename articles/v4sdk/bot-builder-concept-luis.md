@@ -88,7 +88,7 @@ When building a multi-purpose bot that understands multiple conversational topic
 * A bot for a business has LUIS apps for creating customer accounts and placing orders, and also has a QnAMaker service for its FAQ.  
 
 ### The Dispatch tool
-The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services with your bot, by creating a *dispatch app*, which is a new LUIS app that routes messages to the appropriate LUIS and QnAMaker services. See the [tutorial] for a step-by-step tutorial that combines multiple LUIS apps and QnA Maker in one bot.
+The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services with your bot, by creating a *dispatch app*, which is a new LUIS app that routes messages to the appropriate LUIS and QnAMaker services. See the [Dispatch tutorial](./bot-builder-tutorial-dispatch.md) for a step-by-step tutorial that combines multiple LUIS apps and QnA Maker in one bot.
 
 ## Use LUIS to improve speech recognition
 
