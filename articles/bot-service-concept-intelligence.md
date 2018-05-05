@@ -19,17 +19,15 @@ Intelligent bots respond as if they can see the world as people see it. They dis
 
 The interaction between users and bots is mostly free-form, so bots need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text. 
 
-Cognitive Services provides five APIs for language understanding:
+Cognitive Services provides these APIs for language understanding:
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models.
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis" target="_blank">Language Understanding Intelligent Service (LUIS)</a> is able to process natural language using pre-built or custom-trained language models. More details can be found on [Language understanding for bots](v4sdk/bot-builder-concept-luis.md)
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="_blank">Text Analytics API</a> detects sentiment, key phrases, topics, and language from text.
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api" target="_blank">Bing Spell Check API</a> provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/linguistic-analysis-api" target="_blank">Linguistic Analysis API</a> uses advanced linguistic analysis algorithms to process text, and perform operations such as breaking down the structure of the text, or performing part-of-speech tagging and parsing.
-
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/web-language-model-api" target="_blank">Web Language Model (WebLM) API</a> can be used to automate a variety of natural language processing tasks, such as word frequency or next-word prediction, using advanced language modeling algorithms.
+- The <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/text-analytics-module-tutorial" target ="_blank">Text Analytics Models in Azure Machine Learning Studio</a> allows you to build and operationalize text analytics models such as lemmatization and text-preprocessing. These models can help you address issues such as document classification or sentiment analysis problems.
 
 Learn more about [language understanding][language] with Microsoft Cognitive Services.
 
@@ -108,7 +106,6 @@ Learn more about [image and video understanding][vision] with Microsoft Cognitiv
 ## Additional resources
 
 You can find comprehensive documentation of each product and their corresponding API references in the <a href="https://docs.microsoft.com/azure/cognitive-services" target="_blank">Cognitive Services documentation</a>.
-
 
 [language]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
 [search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/search-the-web

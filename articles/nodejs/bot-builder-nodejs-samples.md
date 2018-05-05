@@ -1,12 +1,13 @@
 ---
 title: Sample bots for Bot Builder SDK for Node.js | Microsoft Docs
 description: Explore a large selection of sample bots that can help kickstart your bot development with the Bot Builder SDK for Node.js.
-author: RobStand
+author: v-ducvo
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0' 
 ---
 # Bot Builder SDK for Node.js samples
 
@@ -72,7 +73,7 @@ Sample | Description
 This sample is designed to showcase an end-to-end scenario. It's a great source of code fragments if you're looking to implement more complex features in your bot.
 
 
-|                                                 Sample                                                  |                        Description                         |
-|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [Contoso Flowers](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-ContosoFlowers) | A sample bot that uses many features of the Bot Framework. |
+Sample | Description
+------------ | -------------
+[Contoso Flowers](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-ContosoFlowers) | A sample bot that uses many features of the Bot Framework.
 

@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Implement channel-specific functionality
@@ -292,7 +292,7 @@ This snippet shows an example of the `channelData` property for a native Kik mes
     ]
 }
 ```
-
+ 
 ## Additional resources
 
 - [Activities overview](bot-builder-dotnet-activities.md)

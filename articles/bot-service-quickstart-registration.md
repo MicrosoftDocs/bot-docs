@@ -7,7 +7,9 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
+
 # Register a bot with Bot Service
 If you already have a bot hosted elsewhere and you would like to use the Bot Service to connect it to other channels, you will need to register your bot with the Bot Service. In this topic, learn how to register your bot with the Bot Service by creating a **Bot Channels Registration** bot service.
 

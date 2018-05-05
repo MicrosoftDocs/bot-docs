@@ -7,7 +7,9 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
+
 # Real-time media calling with Skype
 
 The Real-Time Media Platform for Bots adds a new dimension to how bots can interact with users by enabling real-time voice, video and screen sharing modalities. This provides the capability to build compelling and interactive entertainment, educational, and assistance bots. Users communicate with real-time media bots using Skype.

@@ -1,13 +1,13 @@
 ---
 title: Send proactive messages | Microsoft Docs
 description:  Learn how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for Node.js
-author: RobStand
-ms.author: kamrani
+author: v-ducvo
+ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Send proactive messages
 > [!div class="op_single_selector"]

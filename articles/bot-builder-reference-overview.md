@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Bot Framework reference
 The Bot Framework includes comprehensive reference documentation for the Bot Builder SDK for .NET, the Bot Builder SDK for Node.js, and the Bot Framework REST APIs.

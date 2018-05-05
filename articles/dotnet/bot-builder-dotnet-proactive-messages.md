@@ -7,8 +7,9 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
-
+monikerRange: 'azure-bot-service-3.0'
 ---
+
 # Send proactive messages
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-proactive-messages.md)
@@ -173,3 +174,4 @@ Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotB
 - [Design and control conversation flow](../bot-service-design-conversation-flow.md)
 - <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample (GitHub)</a>
+

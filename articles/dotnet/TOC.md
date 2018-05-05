@@ -5,10 +5,10 @@
 ## [Create messages](bot-builder-dotnet-create-messages.md)
 ## [Add media attachments to messages](bot-builder-dotnet-add-media-attachments.md)
 ## [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
+<!-- ## [Send carousel of cards](bot-builder-dotnet-add-carousel-card.md) -->
 ## [Add speech to messages](bot-builder-dotnet-text-to-speech.md)
 ## [Add input hints to messages](bot-builder-dotnet-add-input-hints.md)
 ## [Add suggested actions to messages](bot-builder-dotnet-add-suggested-actions.md)
-## [Implement channel-specific functionality](bot-builder-dotnet-channeldata.md)
 ## [Send and receive activities](bot-builder-dotnet-connector.md)
 ## [Implement global message handlers](bot-builder-dotnet-global-handlers.md)
 ## [Intercept messages](bot-builder-dotnet-middleware.md)
@@ -25,6 +25,7 @@
 ## [Localization](bot-builder-dotnet-formflow-localize.md)
 ## [JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 # Channels
+## [Implement channel-specific functionality](bot-builder-dotnet-channeldata.md)
 ## [Build a Cortana skill](bot-builder-dotnet-cortana-skill.md)
 ## [Conduct audio calls with Skype](bot-builder-dotnet-audio-calls.md)
 ## Conduct real-time media calls with Skype
@@ -40,4 +41,3 @@
 # [Request payment](bot-builder-dotnet-request-payment.md)
 # [Add Azure Search](bot-builder-dotnet-search-azure.md)
 # [Secure your bot](bot-builder-dotnet-security.md)
-# [SDK reference](/dotnet/api/?view=botbuilder-3.12.2.4)
