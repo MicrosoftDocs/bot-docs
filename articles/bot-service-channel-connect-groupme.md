@@ -2,7 +2,7 @@
 title: Connect a bot to GroupMe | Microsoft Docs
 description: Learn how to configure a bot's connection to GroupMe.
 author: RobStand
-ms.author: kamrani
+ms.author: RobStand
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework

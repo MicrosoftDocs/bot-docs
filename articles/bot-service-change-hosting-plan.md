@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
+
 # Change the hosting plan for your bot service
 
 This topic explains how you can migrate a C# script bot with a Consumption plan into a C# bot with an App Service plan. 

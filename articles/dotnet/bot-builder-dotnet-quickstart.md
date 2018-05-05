@@ -6,8 +6,10 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 04/27/2018
+monikerRange: 'azure-bot-service-3.0'
 ---
+
 # Create a bot with the Bot Builder SDK for .NET
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
@@ -99,9 +101,9 @@ For example, here's the application's **default.htm** page shown in Microsoft Ed
 At this point, your bot is running locally.
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Type `http://localhost:port-number/api/messages` into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
+1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
 
-2. Click **Connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
+2. Click **Save and connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
 
 > [!TIP]
 > In the example shown above, the application is running on port number **3979**, so the emulator address would be set to: `http://localhost:3979/api/messages`.

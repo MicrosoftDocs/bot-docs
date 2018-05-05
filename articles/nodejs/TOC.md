@@ -31,4 +31,3 @@
 # [Use backchannel mechanism](bot-builder-nodejs-backchannel.md)
 # [Request payment](bot-builder-nodejs-request-payment.md)
 # [Add Azure Search](bot-builder-nodejs-search-azure.md)
-# [SDK reference](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)

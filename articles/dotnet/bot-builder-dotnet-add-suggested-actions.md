@@ -6,9 +6,9 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 03/13/2018
+monikerRange: 'azure-bot-service-3.0'
 ---
-
 # Add suggested actions to messages
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-suggested-actions.md)
@@ -45,3 +45,5 @@ When the user taps one of the suggested actions, the bot will receive a message 
 [inspector]: ../bot-service-channel-inspector.md
 
 [channelInspector]: ../bot-service-channel-inspector.md
+
+

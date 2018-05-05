@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Information Bot Scenario
 This Information Bot could answer questions defined in a knowledge set or FAQ using Cognitive Services QnA Maker and answer more open-ended questions by using Azure Search.

@@ -1,13 +1,13 @@
 ---
 title: Request payment | Microsoft Docs
 description: Learn how to send a payment request using the Bot Builder SDK for Node.js.
-author: RobStand
-ms.author: kamrani
+author: v-ducvo
+ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
- 
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Request payment

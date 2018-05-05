@@ -2,13 +2,13 @@
 title: Connect a bot to Skype | Microsoft Docs
 description: Learn how to configure a bot for access through the Skpye interface.
 author: v-ducvo
-ms.author: kamrani
+ms.author: RobStand
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 2/1/2018
-
 ---
+
 # Connect a bot to Skype
 
 Skype keeps you connected with users through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype interface.

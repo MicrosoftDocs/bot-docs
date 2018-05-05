@@ -53,7 +53,7 @@ for building cross-platform mobile applications.
 
 First, create a simple web view component and use it to host a 
 <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">web chat control</a>. 
-Then, using the Bot Framework Portal, [connect the bot](~/bot-service-manage-channels.md) to the Web Chat channel. 
+Then, using the Bot Framework Portal, [TODO](~/bot-service-manage-channels.md) to the Web Chat channel. 
 
 ![Bot configuration settings](~/media/bot-service-design-pattern-embed-app/webchat-channel.png)
 

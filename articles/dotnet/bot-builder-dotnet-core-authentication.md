@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/17
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Authenticating activities using .NET Core
