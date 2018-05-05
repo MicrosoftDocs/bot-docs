@@ -28,8 +28,8 @@ Before writing code, review the bot [design guidelines](bot-service-design-pri
 > [!TIP] 
 >
 > Install the template you need:
->  - [Bot builder VSIX](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3) for SDK v3
->  - [botbuilder-v3](https://www.npmjs.com/search?q=botbuilder-v3) for Node.js SDK v3
+>  - Bot builder .NET SDK v3 [VSIX template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3) 
+>  - Bot builder Node.js SDK v3 [Yeoman template](https://www.npmjs.com/package/generator-botbuilder) 
 >
 > Install tools:
 > - Download [CLI tools](https://github.com/Microsoft/botbuilder-tools) to create and manage bot assests. These tools help you manage bot  configuration file, LUIS app, QnA knowledge base, and more from the command-line. You can find more details in the [readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
@@ -109,10 +109,10 @@ Before writing code, review the bot [design guidelines](bot-service-design-pri
 > [!TIP] 
 >
 > Install the template you need:
->  - [Bot builder VSIX](https://marketplace.visualstudio.com/) for .NET SDK v4
->  - [botbuilder-v4](https://www.npmjs.com/search?q=botbuilder-v4) for JavaScript SDK v4 
->  - [botbuilder-java](https://www.npmjs.com/search?q=botbuilder-java) (Java SDK v4 only)
->  - [botbuilder-python](https://www.npmjs.com/search?q=botbuilder-python) (Python SDK v4 only)
+>  - Bot builder .NET SDK v4 preview [VSIX template](https://marketplace.visualstudio.com/)
+>  - Bot builder Node.js SDK v4 preview [Yeoman template](https://www.npmjs.com/search?q=botbuilder-v4)
+>  - Bot builder Java SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder-java)
+>  - Bot builder Python SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder-python)
 >
 > Install tools:
 > - Download [CLI tools](https://github.com/Microsoft/botbuilder-tools) to create and manage bot assests. These tools help you manage bot  configuration file, LUIS app, QnA knowledge base, and more from the command-line. You can find more details in the [readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
