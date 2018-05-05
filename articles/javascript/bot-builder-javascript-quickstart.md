@@ -80,14 +80,14 @@ npm install --save restify
 Next, install Yeoman and the generator for JavaScript.
 
 ```bash
-npm install yo
-npm install generator-botbuilder-js
+npm i -g yeoman
+npm i -g generator-botbuilder@preview
 ```
 
 Then, use the generator to create an echo bot.
 
 ```bash
-yo botbuilder-js
+yo botbuilder
 ```
 
 Yeoman prompts you for some information with which to create your bot.
@@ -162,6 +162,8 @@ cd <bot directory>
 node app.js
 ```
 
-## How to interact with your bot
-
-Start the emulator and connect it to your bot by entering the URL from the previous step. Your URL will look something like `http://localhost:portNumber/api/messages`. Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+## Start the emulator and connect your bot
+At this point, your bot is running locally. Next, start the emulator and then connect to your bot in the emulator:
+1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where port-number matches the port number shown in the browser where your application is running.
+2. Click Save and connect. You won't need to specify Microsoft App ID and Microsoft App Password. You can leave these fields blank for now.
+3. Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.

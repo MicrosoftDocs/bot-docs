@@ -13,9 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Bot Builder SDK v4 Java samples
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-You can use the samples to help you quickly get started with building great bots with rich capabilities. 
-
-Note: The SDK v4 is being actively developed and should therefore be used for experimentation only. 
+You can use the samples to help you build bots using Java SDK v4, which is currently in preview.
 
 ## Get the samples
 To get the samples, clone the [botbuilder-java](https://github.com/Microsoft/botbuilder-java) GitHub repository using Git.

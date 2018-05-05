@@ -17,7 +17,7 @@ This quickstart walks you through building a bot by using the Bot Application te
 
 ## Pre-requisites
 - [Visual Studio 2015 or 2017](https://www.visualstudio.com/downloads)
-- Bot builder SDK v4 [template for C#](https://marketplace.visualstudio.com/)
+- Bot builder SDK v4 template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
 - [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
