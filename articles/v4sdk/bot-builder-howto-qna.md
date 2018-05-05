@@ -275,4 +275,3 @@ QnA Maker can be combined with other Cognitive Services, to make your bot even m
 
 > [!div class="nextstepaction"]
 > [Combine LUIS apps and QnA services using the Dispatch tool](./bot-builder-tutorial-dispatch.md)
-
