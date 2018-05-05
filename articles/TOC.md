@@ -55,7 +55,6 @@
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 ### [Use LUIS for language understanding](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Build with QnA Maker](v4sdk/bot-builder-howto-qna.md)
-### [Combining LUIS with QnA maker](v4sdk/bot-builder-combine-luis-and-qna.md)
 ### [Create your own middleware](v4sdk/bot-builder-create-middleware.md)
 ### [Create middleware using Cosmos DB in .NET](v4sdk/bot-builder-howto-cosmos-middleware.md)
 ### [Create modular bot logic](v4sdk/bot-builder-compositcontrol.md)

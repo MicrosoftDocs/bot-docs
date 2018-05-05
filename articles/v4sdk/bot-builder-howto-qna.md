@@ -12,24 +12,22 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How to use QnA Maker
 
-Microsoft provides a couple of rich services which you can use to make your bot richer.
-You can easily add rich Language Understanding to your bot using the [LUIS](https://www.luis.ai/home), detailed in it's own topic on [how to use LUIS](bot-builder-howto-v4-LUIS.md) service or add simple question and answer support to your bot using the [QnA Maker](https://qnamaker.ai/) service.
+To add simple question and answer support to your bot, you can use the [QnA Maker](https://qnamaker.ai/) service.
 
-## QnA Maker Starting Off
+One of the basic requirements in writing your own QnA Maker service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQs or other documentation. Other times you would like to customize your answers to questions in a more natural, conversational way. 
 
-One of the basic requirements in writing your own Bot service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQs, URLs/documentation, etc. Other times you would like to customize your answers to questions in a more natural, conversational way. 
-
-Here we will create a simple QnA example that gives you all the necessary steps to create one of your own. Click the link to get started. [QnA Maker](https://qnamaker.ai/)
-
-First create an account or sign in then navigate to Create new service. Here you can fill out the Service Name, the URL that contains the FAQ file, Upload a File or manually enter questions and answers. Click create to continue.
+## Create a QnA Maker service
+First create an account and sign in at [QnA Maker](https://qnamaker.ai/). Then navigate to **Create a knowledge base**. Click **Create a QnA service** and follow the instructions for creating an Azure QnA service.
  
 ![Image 1 for qna](media/QnA_1.png)
 
-Here you will be able to add new QnA pairs. Enter your own question and answers or copy the sample below. 
+After you connect your Azure QnA service, then you can add new QnA pairs. Click **Create your KB**. Enter your own question and answers or copy the following examples. 
 
 ![Image 2 for qna](media/QnA_2.png)
 
-After adding new QnA pairs, click **Save and train**. Once you are completed, in the **PUBLISH** tab, click **Publish**.
+Alternatively, you can choose **Populate your KB** and provide a file or URL. A sample source file for generating a simple QnA Maker service is [here](https://aka.ms/qna-tsv)
+
+After adding new QnA pairs or populating your KB, click **Save and train**. Once you are completed, in the **PUBLISH** tab, click **Publish**.
 
 To connect your QnA service to your bot, you will need the HTTP request string containing the knowledge base ID and QnA Maker subscription key. Copy the example HTTP request from the publishing result. 
 
@@ -57,21 +55,13 @@ Either of these services can be added to your bot using the botbuilder-ai packag
 
 ## Using QnA Maker
 
-QnA Maker is first added as middleware, then we can use the results within our bot logic.
+QnA Maker is first added as middleware. Then we can use the results within our bot logic.
 
 # [C#](#tab/csqna)
 
 Update the `ConfigureServices` method in your `Startup.cs` file to add a `QnAMakerMiddleware` object. You can configure your bot to check your knowledge base for every message received from a user, by simply adding it to your bot's middleware stack.
 
-<!--  TODO: Should we still document this?
-Setting the `EndActivityRoutingOnAnswer` option to true will short circuit the middleware pipeline if an answer is found in the knowledge base and sent to the user.
-```
-        var qnaOptions = new QnAMakerMiddlewareOptions
-                {
-                    EndActivityRoutingOnAnswer = true
-                };
-```
--->
+
 ```csharp
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -137,7 +127,7 @@ namespace Bot_Builder_Echo_Bot_QnA
 ```
 
 
-A [full sample of QnA Maker](https://github.com/Microsoft/botbuilder-dotnet/tree/master/samples/Microsoft.Bot.Samples.Ai.QnA) and it's source code can be found in the sample folder of our repo.
+See the [QnA Maker sample](https://aka.ms/qna-cs-bot-sample) for a sample bot.
 
 # [JavaScript](#tab/jsluis)
 
@@ -149,8 +139,11 @@ const { QnAMaker } = require('botbuilder-ai');
 
 Create a `QnAMaker` by initializing it with a string based on the HTTP request for your QnA service. You can copy an example request for your service from the [QnA Maker portal](https://qnamaker.ai) under Settings > Deployment details.
 
-The format of the string varies depending on whether your QnA Maker service is using the GA or the Preview version of QnA Maker.
 
+The format of the string varies depending on whether your QnA Maker service is using the GA or the Preview version of QnA Maker. 
+Copy the example HTTP request, and get the knowledge base ID, subscription key, and host to use when you initialize the `QnAMaker`.
+
+<!--
 **Preview**
 ```js
 const qnaEndpointString = 
@@ -173,13 +166,65 @@ const qnaEndpointString =
     "Authorization: EndpointKey xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r\n"
 const qna = new QnAMaker(qnaEndpointString);
 ```
-You can configure your bot to automatically call QNA maker as your bot's fallback request processing logic by simply adding it to your bot's middleware stack:
+-->
+**Preview**
+```
+const qna = new QnAMaker(
+    {
+        knowledgeBaseId: '<KNOWLEDGE-BASE-ID>',
+        endpointKey: '<QNA-SUBSCRIPTION-KEY>',
+        host: 'https://westus.api.cognitive.microsoft.com/qnamaker/v2.0'
+    },
+    {
+        // set this to true to send answers from QnA Maker
+        answerBeforeNext: true
+    }
+);
+```
+**GA**
+```
+const qna = new QnAMaker(
+    {
+        knowledgeBaseId: '<KNOWLEDGE-BASE-ID>',
+        endpointKey: '<QNA-SUBSCRIPTION-KEY>',
+        host: 'https://<Service-Name>.azurewebsites.net/qnamaker'
+    },
+    {
+        answerBeforeNext: true
+    }
+);
+```
+You can configure your bot to automatically call QNA maker by simply adding it to your bot's middleware stack:
 
 ```js
+// Add QnA Maker as middleware
 adapter.use(qna);
+
+// Listen for incoming requests 
+server.post('/api/messages', (req, res) => {
+    // Route received request to adapter for processing
+    adapter.processActivity(req, res, async (context) => {
+        // If `!context.responded`, that means an answer wasn't found for the user's utterance.
+        // In this case, we send the user a fallback message.
+        if (context.activity.type === 'message' && !context.responded) {
+            await context.sendActivity('No QnA Maker answers were found.');
+        } else if (context.activity.type !== 'message') {
+            await context.sendActivity(`[${context.activity.type} event detected]`);
+        }
+    });
+});
 ```
 
-This will only call QnA Maker after all of your bot's main logic runs and only if nothing else in your bot has replied to the user. For even more control over how and when QnA Maker is called, you can call `qna.answer()` directly from within your bot's logic instead of installing it as a piece of middleware:
+Initializing  `answerBeforeNext` to `true` when initializing `QnAMaker` means that the QnA Maker middleware automatically responds if it finds an answer, 
+before getting to your bot's main logic in `processActivity`. If instead, you set `answerBeforeNext` to `false`, the bot will only call QnA Maker after all of your bot's main logic in `processActivity` runs, and only if your bot hasn't replied to the user. 
+
+## Calling QnA Maker without using middleware
+
+In the previous example, the `adapter.use(qna);` statement means that QnA is running as middleware, and therefore 
+responds to every message the bot receives. 
+For more control over how and when QnA Maker is called, you can call `qna.answer()` directly from within your bot's logic instead of installing it as a piece of middleware.
+
+Remove the `adapter.use(qna);` statement and use the following code to call QnA Maker directly.
 
 ```js
 // Listen for incoming activity 
@@ -195,7 +240,8 @@ server.post('/api/messages', (req, res) => {
     });
 });
 ```
-Another way to customize the QnA Maker is with `qna.generateAnswer()`. This method allows you to choose how to respond with an answer as well as what to do when there is no suitable answer to the question.
+
+Another way to customize the QnA Maker is with `qna.generateAnswer()`. This method allows you to get more detail on the answers from QnA Maker.
 
 
 ```js
@@ -204,7 +250,7 @@ server.post('/api/messages', (req, res) => {
     // Route received activity to adapter for processing
     adapter.processActivity(req, res, async (context) => {
         if (context.activity.type === 'message') {
-            // FOR MORE CUSTOMIZATION
+            // Get all the answers QnA Maker finds
             var results = await qna.generateAnswer(context.activity.text);
                 if (results && results.length > 0) {
                     await context.sendActivity(results[0].answer);
@@ -218,11 +264,14 @@ server.post('/api/messages', (req, res) => {
 ```
 ---
 
-You can now ask your bot questions and it will reply with your answers.
+Ask your bot questions to see the replies from your QnA Maker service.
 ![Image 4 for qna](media/QnA_4.png)
 
 
 
 ## Next steps
 
-QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. For an example of this, check out [Combining LUIS and QnA Maker](bot-builder-combine-luis-and-qna.md).
+QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. The Dispatch tool provides a way to combine QnA with Language Understanding (LUIS) in your bot.
+
+> [!div class="nextstepaction"]
+> [Combine LUIS apps and QnA services using the Dispatch tool](./bot-builder-tutorial-dispatch.md)
