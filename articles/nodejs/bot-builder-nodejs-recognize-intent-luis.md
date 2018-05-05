@@ -7,6 +7,8 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 03/28/2018
+monikerRange: 'azure-bot-service-3.0'
+
 ---
 
 # Recognize intents and entities with LUIS 

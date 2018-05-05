@@ -6,9 +6,8 @@ author: DeniseMak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-
 ms.date: 12/13/2017
-
+monikerRange: 'azure-bot-service-3.0'
 #ROBOTS: Index
 ---
 

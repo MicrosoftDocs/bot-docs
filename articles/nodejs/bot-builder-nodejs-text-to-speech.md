@@ -1,13 +1,13 @@
 ---
 title: Add speech to messages | Microsoft Docs
 description: Learn how to add speech to messages using the Bot Builder SDK for Node.js.
-author: RobStand
+author: v-ducvo
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
- 
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Add speech to messages

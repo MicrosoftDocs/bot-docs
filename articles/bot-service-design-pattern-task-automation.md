@@ -6,8 +6,7 @@ ms.author: mateusv
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
- 
+ms.date: 2/13/2018
 ---
 
 # Create task automation bots
@@ -19,12 +18,13 @@ It may have natural language understanding capabilities to enrich conversations 
 ## Example use case: password-reset
 
 To better understand the nature of a task bot, consider an example use case: password-reset. 
-The Contoso company receives several help desk calls each day from employees who need to reset their passwords. 
-Contoso wants to automate the simple, repeatable task of resetting a employee's password so that help desk agents 
-can devote their time to addressing more complex issues. 
+
+The Contoso company receives several help desk calls each day from employees who need to reset their passwords. Contoso wants to automate the simple, repeatable task of resetting a employee's password so that help desk agents can devote their time to addressing more complex issues. 
 
 John, an experienced developer from Contoso, decides to create a bot to automate the password-reset task. 
 He begins by writing a design specification for the bot, just as he would do if he were creating a new app or website. 
+
+::: moniker range="azure-bot-service-3.0"
 
 ### Navigation model
 
@@ -90,6 +90,8 @@ Finally, the spec provides an example of a user communicating with the bot to su
 
 ![Dialog Structure](~/media/bot-service-design-pattern-task-automation/simple-task5.png)
 
+::: moniker-end 
+
 ## Bot, app, or website?
 
 You may be wondering, if a task automation bot closely resembles an app or website, why not just build an app or website instead? 
@@ -108,6 +110,7 @@ For example, a developer may choose to add natural language and speech capabilit
 or she may add support for text messages. 
 The company may setup kiosks throughout the building and embed the password-reset bot into that experience.
 
+::: moniker range="azure-bot-service-3.0"
 ## Sample code
 
 For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
@@ -119,5 +122,7 @@ For a complete sample that shows how to implement simple task automation using t
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
 - [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+
+::: moniker-end
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

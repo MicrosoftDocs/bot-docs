@@ -111,4 +111,3 @@ As described in this article, the <a href="https://github.com/MicrosoftDX/botaut
 - [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
 - [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
-

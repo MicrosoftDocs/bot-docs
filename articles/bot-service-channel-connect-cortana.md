@@ -6,8 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
-
+ms.date: 04/30/2018
 ---
 # Connect a bot to Cortana
 
@@ -17,74 +16,80 @@ To add the Cortana channel, open the bot in the [Azure Portal](https://portal.az
 
 ![Add Cortana channel](~/media/channels/cortana-addchannel.png)
 
+## Configure Cortana
+When connecting your bot with the Cortana channel, some basic information about your bot will be pre-filled into the registration form. Review this information carefully. This form consists of the following fields.
+
+| Field | Description |
+|------|------|
+| **Skill icon** | An icon that is displayed in the Cortana canvas when your skill is invoked. This is also used where skills are discoverable (like the Microsoft store). (32KB max, PNG only).|
+| **Display name** | The name of your Cortana skill is displayed to the user at the top of the visual UI. (30 character limit) |
+| **Invocation name** | This is the name users say when invoking a skill. It should be no more than three words and easy to pronounce. See the [Invocation Name Guidelines][InvocationNameGuidelines] for more information on how to choose this name.|
+| **Description** | A description of your Cortana skill. This is used where skills are discoverable (like the Microsoft store). |
+| **Short description** | A short description of your skill’s functionality, used to describe the skill in Cortana’s notebook. |
+
+
 ## General bot information
+
+Under the **Manage user identity through connected services section** press the option to enable it. Fill in the form. 
+
 All fields marked with an asterisk (*) are required. Bots must be published on the Bot Framework before they can be connected to Cortana.
 
-> [!NOTE]
-> Currently, general bot information is only available as **READONLY** on the Azure portal. 
-> These fields can now be managed from the **Store Workspace** - see [documentation](https://help.knowledge.store/ux_overview/workspace/index.html) for details
+![Provide general information](~/media/channels/cortana-details.png)
 
-![Provide general information](~/media/channels/cortana_generalInfo-readonly.png)
+### Sign in at invocation
+Select this option if you want Cortana to sign in the user at the time they invoke your skill.
 
-### Skill Icon 
-Select a custom icon to represent this bot.
-This icon is displayed in the Cortana canvas when this skill is invoked and anywhere skills are discoverable, such as the Microsoft store. The image must be a PNG, 60 x 60 pixels, and no larger than 30kb.
+### Sign in when required
+Select this option if you use a Bot Framework's SignIn card to sign in the user. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings.
 
-### Display Name
-The name of this skill as displayed to the user at the top of Cortana's visual UI.
+### Connected service icon
+The icon that you want displayed when the user signs in to your skill.
 
-### Invocation Name 
-The name that Cortana will recognize and use to invoke this skill when spoken aloud by the user.
-See the [Invocation Name Guidelines][invocation] for more information on how to choose this phrase.
+### Account name
+The name of your skill that you want displayed when the user signs in to your skill. 
 
-### Skill description 
-Description of the skill. This is used where skills are discoverable, like the Microsoft [Store](https://help.knowledge.store/ux_overview/store/index.html?highlight=store).
+### Client ID for third-party services
+Your bot's application ID. You received the ID when you registered your bot.
 
-### Short description 
-This summary will be used to describe the skill in Cortana’s Notebook.
+### Space-separated list of scopes
+Specify the scopes that the service requires (see the service's documentation).
 
+### Authorization URL
+Set to `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`.
 
-## Register a bot to the Knowledge Store
+### Grant type
+Select Authorization code to use code grant flow. Select Implicit to use implicit flow.
 
-Scroll down to **Discovery and Management** 
+### Token URL
+If you select Authorization code, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`.
 
-![Register the Bot](~/media/channels/discovery_and_management_register_1.png)
+### Client secret/password for third party services
+The bot's password. You received the password when you registered your bot.
 
-> [!NOTE]
-> After you click **Register**, you will be redirected to the Store portal. 
+### Client authentication scheme
+Select HTTP Basic.
 
-Click **Yes** to allow the Store to access your account information
+### Token options
+Set to POST.
 
-![App Access Info](~/media/channels/app_access_info.png)
+### Request user profile data (optional)
+Cortana provides access to several different types of user profile information, that you can use to customize the bot for the user. For example, if a skill has access to the user’s name and location then the skill can have custom response such as “Hello Kamran, I hope you are having a pleasant day in Bellevue, Washington.”
 
-Check the box to agree to the Store’s Terms of Use, and then click **Accept**.
+Click the **Add a user profile request** link, then select the user profile information you want from the drop-down list. Add a friendly name to use to access this information from your bot's code. 
 
-![Terms of Use Accept](~/media/channels/terms_of_use_accept.png)
+### Save skill
+When you are done filling out the registration form for your Cortana skill, click Save to complete the connection. This brings you back to your bot's Channels blade and you should see that it is now connected to Cortana.
 
-Upon acceptance, you'll have the option of going through the **First Time User Experience** tutorial. At this point, your bot will be connected to the cortana channel. 
-
-![First Time User Tutorial](~/media/channels/cortana_skills-slide-01.png)
-
-The Store workspace allows you to create and publish new skills for Cortana, explore existing skills created by other developers, access free samples and tutorials to build botlets, skills and more. See the [Store Overview](https://help.knowledge.store/ux_overview/store/index.html) for more details. 
-
-## Enable speech recognition priming
-If your bot uses a Language Understanding (LUIS) app, register the LUIS application ID. 
-
-Click the **Settings** tab and then under **Configuration**, enter the LUIS application ID in the **Speech recognition priming with LUIS** text box. This helps your bot recognize spoken utterances that are defined in your LUIS model.
-![Enable speech recognition priming](~/media/channels/cortana-speech-luis-priming.png)
-
-For more information on how to configure speech priming, [click here](https://docs.microsoft.com/en-us/bot-framework/bot-service-manage-speech-priming).
+At this point your bot has already been automatically deployed as a Cortana skill to your account. 
 
 ## Next steps
-* [Getting Started with Skills](https://help.knowledge.store/getting_started/index.html)
 * [Cortana Skills Kit](https://aka.ms/CortanaSkillsDocs)
-* [Enable debugging](https://aka.ms/cortana-enable-debug)
+* [Enable debugging](bot-service-debug-cortana-skill.md)
 * [Publish a Cortana skill][publish]
-* [Making BotFramework Bots Chainable and Semantic](https://help.knowledge.store/tutorials_code_samples/bf_chainable_skills/index.html)
-* [Speech Support in Bot Framework](https://blog.botframework.com/2017/06/26/speech-to-text/)
+
 
 
 [invocation]: https://aka.ms/cortana-invocation-guidelines
-[publish]: https://aka.ms/cortana-publish
+[publish]: https://docs.microsoft.com/en-us/cortana/skills/publish-skill
 [connected]: https://aka.ms/CortanaSkillsBotConnectedAccount
 [CortanaEntity]: https://aka.ms/lgvcto

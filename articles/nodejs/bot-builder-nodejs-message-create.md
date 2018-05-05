@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 09/7/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 # Create messages
 Communication between the bot and the user is through messages. Your bot will send message activities to communicate information to users, and likewise, will also receive message activities from users. Some messages may simply consist of plain text, while others may contain richer content such as text to be spoken, suggested actions, media attachments, rich cards, and channel-specific data.

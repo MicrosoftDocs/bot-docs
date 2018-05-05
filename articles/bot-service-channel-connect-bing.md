@@ -6,8 +6,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 1/8/2018
-ms.reviewer:
+ms.date: 03/08/2018
 ---
 # Connect a bot to Bing 
 Connecting your bot to the Bing channel allows people to discover and chat with your bot directly in the Bing search results page. You can build Bing bots using the Bot Sevice and connect them to the Bing channel. The Bing bot development experience allows you to publish your bots to Bing. People will also be able to chat with the bot directly on Bing.com.
