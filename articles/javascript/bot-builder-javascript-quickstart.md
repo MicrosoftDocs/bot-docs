@@ -6,7 +6,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/21/2018
+ms.date: 05/05/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,7 +18,7 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 
 ## Pre-requisites
 - [Visual Studio Code](https://www.visualstudio.com/downloads)
-- [Node.js and npm](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [Yeoman](http://yeoman.io/), which can use a generator to create a bot for you
 - [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator)
 - Knowledge of [restify](https://http://restify.com/) and asynchronous programming in JavaScript
@@ -26,39 +26,9 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 The Bot Builder SDK for JavaScript consists of a series of [packages](https://github.com/Microsoft/botbuilder-js/tree/master/libraries) which can be installed from NPM using a special `@preview` tag.
 
 # Create a bot
-<!--
-Paste the code below into a file called `app.js`:
-
-```JavaScript
-const botbuilder = require('botbuilder');
-const restify = require('restify');
-
-// Create server
-let server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
-    console.log(`${server.name} listening to ${server.url}`);
-});
-
-// Create adapter (it's ok for MICROSOFT_APP_ID and MICROSOFT_APP_PASSWORD to be blank for now)  
-const adapter = new botbuilder.BotFrameworkAdapter({ 
-    appId: process.env.MICROSOFT_APP_ID, 
-    appPassword: process.env.MICROSOFT_APP_PASSWORD 
-});
 
 
-// Listen for incoming activity 
-server.post('/api/messages', (req, res) => {
-    // Route received activity from adapter for processing
-    adapter.processActivity(req, res, async (context) => {
-        if (context.activity.type === 'message') {
-            await context.sendActivity(`Hello World!`);
-        }
-    });
-});
-```
--->
-
-First, open a terminal or command prompt and create a directory and initialize the package for your v4 bots.
+Open an elevated PowerShell prompt, create a directory, and initialize the package for your bot.
 
 ```bash
 md myJsBots
@@ -80,7 +50,7 @@ npm install --save restify
 Next, install Yeoman and the generator for JavaScript.
 
 ```bash
-npm i -g yeoman
+npm install -g yo
 npm i -g generator-botbuilder@preview
 ```
 
