@@ -20,7 +20,7 @@ Imagine you've developed the following services, and you want to create a bot th
 |------|------|------|
 | LUIS app | HomeAutomation | Recognizes the HomeAutomation.TurnOn, HomeAutomation.TurnOff, and HomeAutomation.None intents.|
 | LUIS app | Weather | Recognizes the Weather.GetForecast and Weather.GetCondition intents.|
-| QnAMaker service | SmartLightFAQ  | Provides answers to questions about a home automation lighting system |
+| QnAMaker service | FAQ  | Provides answers to questions about a home automation lighting system |
 
 Let's first create the apps and services, then integrate them together.
 
@@ -30,7 +30,7 @@ The fastest way to create the HomeAutomation and Weather LUIS apps is to downloa
 
 ## Create the QnA Maker service
 
-Go to the [QnA Maker website](https://qnamaker.ai) and sign in. Select **Create new service** and create a new service named "SmartLightFAQ". Click the **Select file** button and upload the [sample TSV file][FAQ_TSV]. Click **Create**, and once the service is created, click **Publish**.
+Go to the [QnA Maker website](https://qnamaker.ai) and sign in. Select **Create new service** and create a new service named "FAQ". Click the **Select file** button and upload the [sample TSV file][FAQ_TSV]. Click **Create**, and once the service is created, click **Publish**.
 
 ## Use the Dispatch tool to create the dispatcher LUIS app
 
@@ -55,7 +55,7 @@ Then run the `dispatch add` command for each of the LUIS apps and the QnA Maker 
 ```
 dispatch add -type luis -id "HOMEAUTOMATION-APP-ID" -name homeautomation -version 0.1 -key "YOUR-LUIS-AUTHORING-KEY"
 dispatch add -type luis -id "WEATHER-APP-ID" -name weather -version 0.1 -key "YOUR-LUIS-AUTHORING-KEY"
-dispatch add -type qna -id "QNA-KB-ID" -name smartlightfaq -key "YOUR-QNA-SUBSCRIPTION-KEY"
+dispatch add -type qna -id "QNA-KB-ID" -name faq -key "YOUR-QNA-SUBSCRIPTION-KEY"
 ```
 
 Run `dispatch create`:
@@ -68,23 +68,22 @@ This creates the dispatcher LUIS app named **CombineWeatherAndLights**. You can 
 
 ![The dispatcher app in LUIS.ai](media/tutorial-dispatch/dispatch-app-in-luis.png)
 
-Click on the new app. Under **Intents** you can see it has the `l_homeautomation`, `l_weather`, and `q_smartlightfaq` intents.
+Click on the new app. Under **Intents** you can see it has the `l_homeautomation`, `l_weather`, and `q_faq` intents.
 
 ![The dispatcher intents in LUIS.ai](media/tutorial-dispatch/dispatch-intents-in-luis.png)
 
-Click on **Settings** to copy the ID of the new app to use in your bot.
+Click the **Train** button to train the LUIS app, and use the **PUBLISH** tab to [publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) it. Click on **Settings** to copy the ID of the new app to use in your bot.
 
-## Create a bot using the LUIS model
+## Create the bot
 
-Now you can hook up the dispatcher app's intents to logic in your bot, which routes messages to the original LUIS apps and QnAMaker service. Keep in mind, the intent names used in the bot must match the intents in the dispatcher app.
+Now you can hook up the dispatcher app's intents to logic in your bot, which routes messages to the original LUIS apps and QnAMaker service.
 
-### Create the bot
-
-First, make sure you have the packages necessary for LUIS and QnA Maker.
+You can use the sample included with the Bot Builder SDK as a starting point.
 
 # [C#](#tab/csaddref)
 
-[Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to v4 prerelease version of the following NuGet packages:
+Start with the code in the [LUIS Dispatch sample][DispatchBotCS]. In Visual Studio,
+[update Nuget packages](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#updating-a-package) to the latest prerelease versions of the following:
 
 * `Microsoft.Bot.Builder.Integration.AspNet.Core`
 * `Microsoft.Bot.Builder.Ai.QnA` (required for QnA Maker)
@@ -92,7 +91,7 @@ First, make sure you have the packages necessary for LUIS and QnA Maker.
 
 # [JavaScript](#tab/jsaddref)
 
-Either of these services can be added to your bot using the botbuilder-ai package. You can add this package to your project via npm:
+Download the [LUIS Dispatch sample][DispatchBotJs].  Install the required packages, including the `botbuilder-ai` package for LUIS and QnA Maker, using npm:
 
 * `npm install --save botbuilder@preview`
 * `npm install --save botbuilder-ai@preview`
@@ -100,31 +99,40 @@ Either of these services can be added to your bot using the botbuilder-ai packag
 ---
 
 
-## Create the bot
-
-Set up the bot code to use the dispatcher app.
+Set up the sample to use the dispatcher app.
 
 # [C#](#tab/csbotconfig)
 
-Start with the code in the [LUIS Dispatch sample][DispatchBotCS]. 
+In **appsettings.json** in the [LUIS Dispatch sample][DispatchBotCS], edit the following fields.
+
+| Name | Description |
+|------|------|
+| `Luis-SubscriptionKey` |  Your LUIS subscription key. This can be an endpoint key or an authoring key, described [here](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-keys). | 
+| `Luis-ModelId-Dispatcher` | App ID for the LUIS app that the Dispatch tool generates. | 
+| `Luis-ModelId-HomeAutomation` | App ID of the app you created from homeautomation.json  | 
+| `Luis-ModelId-Weather` | App ID of the app you created from weather.json | 
+| `QnAMaker-Endpoint-Url` | This should be set to https://westus.api.cognitive.microsoft.com/qnamaker/v2.0 for Preview QnA Maker services. <br/>Set this to https://YOUR-QNA-SERVICE-NAME.azurewebsites.net/qnamaker for new (GA) QnA Maker services.|
+| `QnAMaker-SubscriptionKey` | Your QnA Maker subscription key. | 
+| `QnAMaker-KnowledgeBaseId` | The ID of the knowledge base you create at the [QnAMaker portal](https://qnamaker.ai).| 
 
 
-In `Startup.cs`, edit the code to use the app ID of the LUIS app you just generated and your LUIS subscription key.
+
+In **Startup.cs**, take a look at the `ConfigureServices` method. It contains code to initialize `LuisRecognizerMiddleware` using the app ID of the LUIS app you just generated.
 
 ```csharp
+// This method gets called by the runtime. Use this method to add services to the container.
 public void ConfigureServices(IServiceCollection services)
 {
+    services.AddSingleton(this.Configuration);
     services.AddBot<LuisDispatchBot>(options =>
     {
         options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
 
-        string luisModelId = "<Your LUIS app ID from Dispatch here>";
-        string luisSubscriptionKey = "<Your LUIS Subscription Key here>";
-        Uri luisUri = new Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/");
+        var (luisModelId, luisSubscriptionKey, luisUri) = GetLuisConfiguration(this.Configuration, "Dispatcher");
 
         var luisModel = new LuisModel(luisModelId, luisSubscriptionKey, luisUri);
 
-        // If you want to get all intents scorings, add verbose in luisOptions
+        // If you want to get all the intents and scores that LUIS recognized, set Verbose = true in luisOptions
         var luisOptions = new LuisRequest { Verbose = true };
 
         var middleware = options.Middleware;
@@ -132,184 +140,139 @@ public void ConfigureServices(IServiceCollection services)
     });
 }
 ```
+The `GetLuisConfiguration` and `GetQnAMakerConfiguration` methods get your LUIS and QnA configuration from appsettings.json.
+```csharp
+public static (string modelId, string subscriptionId, Uri uri) GetLuisConfiguration(IConfiguration configuration, string serviceName)
+{
+    var modelId = configuration.GetSection($"Luis-ModelId-{serviceName}")?.Value;
+    var subscriptionId = configuration.GetSection("Luis-SubscriptionKey")?.Value;
+    var uri = new Uri(configuration.GetSection("Luis-Url")?.Value);
+    return (modelId, subscriptionId, uri);
+}
 
-<!--
-#### Handle the intents from the dispatcher app
--->
+public static (string knowledgeBaseId, string subscriptionKey, string uri) GetQnAMakerConfiguration(IConfiguration configuration)
+{
+    var knowledgeBaseId = configuration.GetSection("QnAMaker-KnowledgeBaseId")?.Value;
+    var subscriptionKey = configuration.GetSection("QnAMaker-SubscriptionKey")?.Value;
+    var uri = configuration.GetSection("QnAMaker-Endpoint-Url")?.Value;
+    return (knowledgeBaseId, subscriptionKey, uri);
+}
+```
 
-In the following code in LuisDispatchBot.cs, if your dispatcher app detects the `l_homeautomation` or `l_weather` intent, it creates a `LuisRecognizer` to call the original `homeautomation` and `weather` apps. If the bot detects the `q_smartlightfaq` intent, or the `none` intent that is used as a fallback case, it queries QnAMaker.
+### Dispatch the message
+
+Take a look at **LuisDispatchBot.cs**, where the bot dispatches the message to the LUIS app or QnA Maker for a subcomponent. 
+
+In `DispatchToTopIntent`, if your dispatcher app detects the `l_homeautomation` or `l_weather` intent, it calls a `DispatchToTopIntent` method that creates a `LuisRecognizer` to call the original `homeautomation` and `weather` apps. If the bot detects the `q_faq` intent, or the `none` intent that is used as a fallback case, it calls a method that queries QnAMaker.
+
+> [!NOTE] 
+> If the intent names `l_homeautomation`, `l_weather` or `q_faq` don't match the LUIS app you created using Dispatch, edit them to match the lower case version of the intent names you see in the [LUIS portal](https://www.luis.ai).
 
 ```csharp
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Ai.LUIS;
-using Microsoft.Bot.Builder.Ai.QnA;
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Schema;
-
-
-namespace Microsoft.Bot.Samples.Ai.Luis.Dispatch
+private async Task DispatchToTopIntent(ITurnContext context, (string intent, double score)? topIntent)
 {
-    public class LuisDispatchBot : IBot
+    switch (topIntent.Value.intent.ToLowerInvariant())
     {
-        public LuisDispatchBot() { }
-        private static QnAMakerOptions qnaOptions = new QnAMakerOptions
+        case "l_homeautomation":
+            await DispatchToLuisModel(context, this.luisModelHomeAutomation, "home automation");
+            break;
+        case "l_weather":
+            await DispatchToLuisModel(context, this.luisModelWeather, "weather");
+            break;
+        case "none":
+        // You can provide logic here to handle the known None intent (none of the above).
+        // In this example we fall through to the QnA intent.
+        case "q_faq":
+            await DispatchToQnAMaker(context, this.qnaEndpoint, "FAQ");
+            break;
+        default:
+            // The intent didn't match any case, so just display the recognition results.
+            await context.SendActivity($"Dispatch intent: {topIntent.Value.intent} ({topIntent.Value.score}).");
+
+            break;
+    }
+}
+```
+
+The `DispatchToQnAMaker` method sends the user's message to the QnA Maker service. Make sure you have published that service in the [QnA Maker portal](https://qnamaker.ai) before you run the bot.
+
+```csharp
+private static async Task DispatchToQnAMaker(ITurnContext context, QnAMakerEndpoint qnaOptions, string appName)
+{
+    QnAMaker qnaMaker = new QnAMaker(qnaOptions);
+    if (!string.IsNullOrEmpty(context.Activity.Text))
+    {
+        var results = await qnaMaker.GetAnswers(context.Activity.Text.Trim()).ConfigureAwait(false);
+        if (results.Any())
         {
-            // add subscription key for QnA and knowledge base ID
-            SubscriptionKey = "<YOUR-QNAMAKER-SUBSCRIPTION-KEY>",
-            KnowledgeBaseId = "<QNAMAKER-KB-ID>"
-        };
-
-        // App ID for a LUIS model named "homeautomation"
-        private static LuisModel luisModel1 =
-            new LuisModel("<YOUR-LUIS-APP-ID>", "<YOUR-LUIS-SUBSCRIPTION-KEY>", new System.Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/"));
-
-        // App ID for a LUIS model named "weather"
-        private static LuisModel luisModel2 =
-            new LuisModel("YOUR-LUIS-APP-ID", "<YOUR-LUIS-SUBSCRIPTION-KEY>", new System.Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/"));
-
-        public async Task OnTurn(ITurnContext context)
+            await context.SendActivity(results.First().Answer);
+        }
+        else
         {
-            if (context.Activity.Type is ActivityTypes.Message)
-            {
-                var message = context.Activity.AsMessageActivity();
-                // Get the intent recognition result from the context object.
-                var dispatchResult = context.Services.Get<RecognizerResult>(LuisRecognizerMiddleware.LuisRecognizerResultKey) as RecognizerResult;
-                var topIntent = dispatchResult?.GetTopScoringIntent();
-                LuisRecognizer luisRecognizer1, luisRecognizer2;
-                RecognizerResult recognizerResult;
-
-                var intentsList = new List<string>();
-                var entitiesList = new List<string>();
-
-                if (topIntent == null)
-                {
-                    await context.SendActivity("Unable to get the top intent.");
-                }
-                else 
-                {
-                    if (topIntent.Value.score < 0.3)
-                    {
-                        await context.SendActivity("I'm not very sure what you want but will try to send your request.");
-                    }
-                    switch (topIntent.Value.intent.ToLowerInvariant())
-                    {
-                        case "l_homeautomation":
-                            await context.SendActivity("Sending your request to the home automation system ...");
-
-                            luisRecognizer1 = new LuisRecognizer(luisModel1);
-                            recognizerResult = await luisRecognizer1.Recognize(message.Text, System.Threading.CancellationToken.None);                            
-                            
-                            // list the intents
-                            foreach (var intent in recognizerResult.Intents)
-                            {
-                                intentsList.Add($"'{intent.Key}', score {intent.Value}");
-                            }
-                            await context.SendActivity($"Intents detected by the home automation app:\n\n{string.Join("\n\n", intentsList)}");
-
-                            // list the entities
-                            entitiesList = new List<string>();
-                            foreach (var entity in recognizerResult.Entities)
-                            {
-                                if (!entity.Key.ToString().Equals("$instance"))
-                                {
-                                    entitiesList.Add($"{entity.Key}: {entity.Value.First}");
-                                }
-                            }
-
-                            if (entitiesList.Count > 0)
-                            {
-                                await context.SendActivity($"The following entities were found in the message:\n\n{string.Join("\n\n", entitiesList)}");
-                            }
-
-                            // Here, you can add code for calling the hypothetical home automation service, passing in any entity information that you need
-
-                            break;
-                        case "l_weather":
-                            await context.SendActivity("Sending your request to the weather system ...");
-                            luisRecognizer2 = new LuisRecognizer(luisModel2);
-                            recognizerResult = await luisRecognizer2.Recognize(message.Text, System.Threading.CancellationToken.None);
-
-                            // list the intents
-                            var intentsResult2 = new List<string>();
-                            foreach (var intent in recognizerResult.Intents)
-                            {
-                                intentsResult2.Add($"'{intent.Key}', score {intent.Value}");
-                            }
-                            await context.SendActivity($"Intents detected by the weather app: \n\n{string.Join("\n\n", intentsResult2)}");
-
-                            // list the entities
-                            entitiesList = new List<string>();
-                            foreach (var entity in recognizerResult.Entities)
-                            {
-                                if (!entity.Key.ToString().Equals("$instance"))
-                                {
-                                    entitiesList.Add($"{entity.Key}: {entity.Value.First}");
-                                }
-                            }
-
-                            if (entitiesList.Count > 0)
-                            {
-                                await context.SendActivity($"The following entities were found in the message:\n\n{string.Join("\n\n", entitiesList)}");
-                            }
-
-                            // Here, you can add code for calling the hypothetical weather service, passing in any entity information that you need
-
-                            break;
-                        case "none":
-                        // You can provide logic here to handle the known None intent (none of the above).
-                        // In this example we fall through to the QnA intent.
-                        case "q_smartlightfaq":
-                            QnAMaker qnaMaker = new QnAMaker(qnaOptions);
-                            var messageActivity = context.Activity.AsMessageActivity();
-                            if (!string.IsNullOrEmpty(messageActivity.Text))
-                            {
-                                var results = await qnaMaker.GetAnswers(messageActivity.Text.Trim()).ConfigureAwait(false);
-                                if (results.Any())
-                                {
-                                    await context.SendActivity(results.First().Answer);
-                                }
-                                else
-                                {
-                                    await context.SendActivity("Couldn't find an answer in the FAQ.");
-                                }
-                            }
-                            break;
-                        default:
-                            // The intent didn't match any case, so just display the recognition results.
-                            await context.SendActivity($"Dispatch intent: {topIntent.Value.intent} ({topIntent.Value.score}).");
-
-                            break;
-                    }
-                }                
-
-            }
-            else if (context.Activity.Type is ActivityTypes.ConversationUpdate)
-            {
-                foreach (var newMember in context.Activity.MembersAdded)
-                {
-                    if (newMember.Id != context.Activity.Recipient.Id)
-                    {
-                        await context.SendActivity("Hello and welcome to the LUIS Dispatch sample bot. This bot dispatches messages to LUIS apps and QnA, using a LUIS model generated by the Dispatch tool.");
-                    }
-                }
-            }
+            await context.SendActivity($"Couldn't find an answer in the {appName}.");
         }
     }
 }
 ```
 
+The `DispatchToLuisModel` method sends the user's message to the original `homeautomation` and `weather` LUIS apps. Make sure you have published those LUIS apps in the [LUIS portal](https://www.luis.ai) before you run the bot.
+
+```csharp
+private static async Task DispatchToLuisModel(ITurnContext context, LuisModel luisModel, string appName)
+{
+    await context.SendActivity($"Sending your request to the {appName} system ...");
+    var (intents, entities) = await RecognizeAsync(luisModel, context.Activity.Text);
+
+    await context.SendActivity($"Intents detected by the {appName} app:\n\n{string.Join("\n\n", intents)}");
+
+    if (entities.Count() > 0)
+    {
+        await context.SendActivity($"The following entities were found in the message:\n\n{string.Join("\n\n", entities)}");
+    }
+    
+    // Here, you can add code for calling the hypothetical home automation or weather service, 
+    // passing in the appName and any intent or entity information that you need 
+}
+```
+
+The `RecognizeAsync` method calls a `LuisRecognizer` to get results from a LUIS app.
+
+```cs
+private static async Task<(IEnumerable<string> intents, IEnumerable<string> entities)> RecognizeAsync(LuisModel luisModel, string text)
+{
+    var luisRecognizer = new LuisRecognizer(luisModel);
+    var recognizerResult = await luisRecognizer.Recognize(text, System.Threading.CancellationToken.None);
+
+    // list the intents
+    var intents = new List<string>();
+    foreach (var intent in recognizerResult.Intents)
+    {
+        intents.Add($"'{intent.Key}', score {intent.Value}");
+    }
+
+    // list the entities
+    var entities = new List<string>();
+    foreach (var entity in recognizerResult.Entities)
+    {
+        if (!entity.Key.ToString().Equals("$instance"))
+        {
+            entities.Add($"{entity.Key}: {entity.Value.First}");
+        }
+    }
+
+    return (intents, entities);
+}
+```
+
 # [JavaScript](#tab/jsbotconfig)
 
-Start with the code in the [Dispatch bot sample][DispatchBotJs]. Open `app.js` and optionally replace the `appId` fields with the IDs of the LUIS apps you created. If you leave the `appId` fields as they originally are, you'll be using public LUIS apps created for demonstration purposes.
+Start with the code in the [Dispatch bot sample][DispatchBotJs]. Open **app.js** and optionally replace the `appId` fields with the IDs of the LUIS apps you created. If you leave the `appId` fields as they originally are, you'll be using public LUIS apps created for demonstration purposes.
 
 ```javascript
 // Create LuisRecognizers and QnAMaker
 // The LUIS applications are public, meaning you can use your own subscription key to test the applications.
 // For QnAMaker, users are required to create their own knowledge base.
-// The exported LUIS applications and QnAMaker knowledge base can be found adjacent to this sample bot.
+// The exported LUIS applications and QnAMaker knowledge base can be found with the sample bot.
 
 // The corresponding LUIS application JSON is `dispatchSample.json`
 const dispatcher = new LuisRecognizer({
@@ -336,20 +299,26 @@ const weather = new LuisRecognizer({
 });
 ```
 
-In the following code, replace the `subscriptionKey` and `knowledgeBaseID` with your key and knowledge base ID from QnAMaker:
+In the following code, replace the `endpointKey` and `knowledgeBaseID` with your key and knowledge base ID from QnAMaker. The `host` should be set to `https://westus.api.cognitive.microsoft.com/qnamaker/v2.0` for Preview QnA Maker services, and `https://YOUR-QNA-SERVICE-NAME.azurewebsites.net/qnamaker` for new (GA) QnA Maker services.
 
 ```javascript
-// The QnAMaker knowledge base used in this sample is `sampleKnowledgeBase.tsv`
-const faq = new QnAMaker({
-    knowledgeBaseId: 'YOUR-QNA-KB-ID',
-    subscriptionKey: process.env.QNA_SUBSCRIPTION_KEY,
-    serviceEndpoint: 'https://westus.api.cognitive.microsoft.com/'
-});
+const faq = new QnAMaker(
+    {
+        knowledgeBaseId: '',
+        endpointKey: '',
+        host: ''
+    },
+    {
+        answerBeforeNext: true
+    }
+);
 
 ```
 
-The rest of the code in `app.js` handles the `l_homeautomation`, `l_weather`, and `None` intents by launching appropriate dialogs. In the case of the `q_smartlightfaq` intent, it replies with the answer from the QnAMaker service.
+The rest of the code in **app.js** handles the `l_homeautomation`, `l_weather`, and `None` intents by launching appropriate dialogs. In the case of the `q_faq` intent, it replies with the answer from the QnAMaker service.
 
+> [!NOTE] 
+> If the intent names `l_homeautomation`, `l_weather` or `q_faq` don't match the LUIS app you created using Dispatch, edit them to match the intent names you see in the [LUIS portal](https://www.luis.ai).
 
 ```javascript
 // create conversation state
@@ -470,7 +439,7 @@ server.post('/api/messages', (req, res) => {
                         const topWeatherIntent = LuisRecognizer.topIntent(weatherResults);
                         await dc.begin(topWeatherIntent, weatherResults);
                         break;
-                    case 'q_smartlightfaq':
+                    case 'q_faq':
                         await faq.answer(context);
                         break;
                     default:
@@ -491,6 +460,14 @@ server.post('/api/messages', (req, res) => {
 ```
 
 ---
+## Run the bot
+
+Test out the bot using the [Bot Framework Emulator](../bot-service-debug-emulator.md). Send it messages like "turn on the lights" to dispatch the message to the home automation LUIS app, and send it messages like "get the weather in Seattle" to dispatch to the weather LUIS app.
+
+> [!NOTE] 
+> Before you run the bot, make sure you have published all the LUIS apps that you created in the [LUIS portal](https://www.luis.ai), and check that you've published the QnA Maker service in the [QnA Maker portal](https://qnamaker.ai).
+
+![Send messages to the dispatch bot](media/tutorial-dispatch/run-dispatch-bot.png)
 
 ## Evaluate the dispatcher's performance
 
