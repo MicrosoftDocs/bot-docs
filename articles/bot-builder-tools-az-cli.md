@@ -35,12 +35,13 @@ To enable these tools from the command line, you will need Node.js installed to 
 You can now manage bots using [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) like any other Azure resource. To enable Azure CLI, complete the following steps:
 
 1. [Download](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) Azure CLI if you don't already have it. 
-2. Install the package to a directory, and navigate to it using your command line
-3. Enter the following command to download the Azure Bot Extension dist package
+
+2. Enter the following command to download the Azure Bot Extension dist package
   ```
   az extension add --source https://icscratch.blob.core.windows.net/bot-packages/azurebotextension-0.0.1-py2.py3-none-any.whl 
   ```
-4. [Login](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) to Azure CLI by running the following:
+  
+3. [Login](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) to Azure CLI by running the following:
 
 ```shell
 az login
