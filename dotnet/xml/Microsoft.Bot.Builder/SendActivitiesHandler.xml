@@ -1,0 +1,41 @@
+﻿<Type Name="SendActivitiesHandler" FullName="Microsoft.Bot.Builder.SendActivitiesHandler">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesHandler(ITurnContext context, List&lt;Activity&gt; activities, Func&lt;Task&lt;ResourceResponse[]&gt;&gt; next);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SendActivitiesHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.SendActivitiesHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function SendActivitiesHandler(context As ITurnContext, activities As List(Of Activity), next As Func(Of Task(Of ResourceResponse()))) As Task(Of ResourceResponse()) " />
+  <TypeSignature Language="F#" Value="type SendActivitiesHandler = delegate of ITurnContext * List&lt;Activity&gt; * Func&lt;Task&lt;ResourceResponse[]&gt;&gt; -&gt; Task&lt;ResourceResponse[]&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.11</AssemblyVersion>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="Microsoft.Bot.Builder.IBotContext" />
+    <Parameter Name="activities" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;" />
+    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">The context object for the turn.</param>
+    <param name="activities">The activities to send.</param>
+    <param name="next">The delegate to call to continue event processing.</param>
+    <summary>
+            A method that can participate in send activity events for the current turn.
+            </summary>
+    <returns>A task that represents the work queued to execute.</returns>
+    <remarks>A handler calls the <paramref name="next" /> delegate to pass control to 
+            the next registered handler. If a handler doesn’t call the next delegate,
+            the adapter does not call any of the subsequent handlers and does not send the
+            <paramref name="activities" />.
+            </remarks>
+    <altmember cref="T:Microsoft.Bot.Builder.BotAdapter" />
+    <altmember cref="T:Microsoft.Bot.Builder.UpdateActivityHandler" />
+    <altmember cref="T:Microsoft.Bot.Builder.DeleteActivityHandler" />
+  </Docs>
+</Type>

@@ -1,0 +1,220 @@
+﻿<Type Name="GeoCoordinates" FullName="Microsoft.Bot.Schema.GeoCoordinates">
+  <TypeSignature Language="C#" Value="public class GeoCoordinates : Microsoft.Bot.Schema.Entity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoCoordinates extends Microsoft.Bot.Schema.Entity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.GeoCoordinates" />
+  <TypeSignature Language="VB.NET" Value="Public Class GeoCoordinates&#xA;Inherits Entity" />
+  <TypeSignature Language="F#" Value="type GeoCoordinates = class&#xA;    inherit Entity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Schema.Entity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            GeoCoordinates (entity type: "https://schema.org/GeoCoordinates")
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeoCoordinates ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.GeoCoordinates.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the GeoCoordinates class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeoCoordinates (Nullable&lt;double&gt; elevation = null, Nullable&lt;double&gt; latitude = null, Nullable&lt;double&gt; longitude = null, string type = null, string name = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;float64&gt; elevation, valuetype System.Nullable`1&lt;float64&gt; latitude, valuetype System.Nullable`1&lt;float64&gt; longitude, string type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.GeoCoordinates.#ctor(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional elevation As Nullable(Of Double) = null, Optional latitude As Nullable(Of Double) = null, Optional longitude As Nullable(Of Double) = null, Optional type As String = null, Optional name As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.GeoCoordinates : Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * string * string -&gt; Microsoft.Bot.Schema.GeoCoordinates" Usage="new Microsoft.Bot.Schema.GeoCoordinates (elevation, latitude, longitude, type, name)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="elevation" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="latitude" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="longitude" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elevation">Elevation of the location [WGS
+            84](https://en.wikipedia.org/wiki/World_Geodetic_System)</param>
+        <param name="latitude">Latitude of the location [WGS
+            84](https://en.wikipedia.org/wiki/World_Geodetic_System)</param>
+        <param name="longitude">Longitude of the location [WGS
+            84](https://en.wikipedia.org/wiki/World_Geodetic_System)</param>
+        <param name="type">The type of the thing</param>
+        <param name="name">The name of the thing</param>
+        <summary>
+            Initializes a new instance of the GeoCoordinates class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Elevation">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Elevation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Elevation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.GeoCoordinates.Elevation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Elevation As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Elevation : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Schema.GeoCoordinates.Elevation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="elevation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets elevation of the location [WGS
+            84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Latitude">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Latitude { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Latitude" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.GeoCoordinates.Latitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Latitude As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Latitude : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Schema.GeoCoordinates.Latitude" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="latitude")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets latitude of the location [WGS
+            84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Longitude">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Longitude { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Longitude" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.GeoCoordinates.Longitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Longitude As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Longitude : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Schema.GeoCoordinates.Longitude" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="longitude")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets longitude of the location [WGS
+            84](https://en.wikipedia.org/wiki/World_Geodetic_System)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.GeoCoordinates.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Schema.GeoCoordinates.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the thing
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.GeoCoordinates.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Schema.GeoCoordinates.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of the thing
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,24 @@
+﻿<Type Name="IMessageUpdateActivity" FullName="Microsoft.Bot.Schema.IMessageUpdateActivity">
+  <TypeSignature Language="C#" Value="public interface IMessageUpdateActivity : Microsoft.Bot.Schema.IMessageActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageUpdateActivity implements class Microsoft.Bot.Schema.IActivity, class Microsoft.Bot.Schema.IMessageActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IMessageUpdateActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageUpdateActivity&#xA;Implements IMessageActivity" />
+  <TypeSignature Language="F#" Value="type IMessageUpdateActivity = interface&#xA;    interface IMessageActivity&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IMessageActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            An update to an existing Message Activity
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

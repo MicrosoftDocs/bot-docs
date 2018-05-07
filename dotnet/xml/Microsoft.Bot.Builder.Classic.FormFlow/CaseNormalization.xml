@@ -1,0 +1,115 @@
+﻿<Type Name="CaseNormalization" FullName="Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization">
+  <TypeSignature Language="C#" Value="public enum CaseNormalization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CaseNormalization extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CaseNormalization" />
+  <TypeSignature Language="F#" Value="type CaseNormalization = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialUpper">
+      <MemberSignature Language="C#" Value="InitialUpper" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization InitialUpper = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.InitialUpper" />
+      <MemberSignature Language="VB.NET" Value="InitialUpper" />
+      <MemberSignature Language="F#" Value="InitialUpper = 1" Usage="Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.InitialUpper" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lower">
+      <MemberSignature Language="C#" Value="Lower" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization Lower = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.Lower" />
+      <MemberSignature Language="VB.NET" Value="Lower" />
+      <MemberSignature Language="F#" Value="Lower = 2" Usage="Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.Lower" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization None = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 4" Usage="Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Upper">
+      <MemberSignature Language="C#" Value="Upper" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization Upper = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.Upper" />
+      <MemberSignature Language="VB.NET" Value="Upper" />
+      <MemberSignature Language="F#" Value="Upper = 3" Usage="Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization.Upper" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.CaseNormalization</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,160 @@
+﻿<Type Name="TranslationMiddleware" FullName="Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware">
+  <TypeSignature Language="C#" Value="public class TranslationMiddleware : Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TranslationMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" />
+  <TypeSignature Language="VB.NET" Value="Public Class TranslationMiddleware&#xA;Implements IMiddleware" />
+  <TypeSignature Language="F#" Value="type TranslationMiddleware = class&#xA;    interface IMiddleware" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IMiddleware</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Middleware for translating text between the user and bot.
+            Uses the Microsoft Translator Text API.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranslationMiddleware (string[] nativeLanguages, string translatorKey, bool toUserLanguage = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] nativeLanguages, string translatorKey, bool toUserLanguage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware.#ctor(System.String[],System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nativeLanguages As String(), translatorKey As String, Optional toUserLanguage As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware : string[] * string * bool -&gt; Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" Usage="new Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware (nativeLanguages, translatorKey, toUserLanguage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nativeLanguages" Type="System.String[]" />
+        <Parameter Name="translatorKey" Type="System.String" />
+        <Parameter Name="toUserLanguage" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="nativeLanguages">The languages supported by your app.</param>
+        <param name="translatorKey">Your subscription key for the Microsoft Translator Text API.</param>
+        <param name="toUserLanguage">Indicates whether to transalte messages sent from the bot into the user's language.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" /> object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranslationMiddleware (string[] nativeLanguages, string translatorKey, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; patterns, bool toUserLanguage = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] nativeLanguages, string translatorKey, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; patterns, bool toUserLanguage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware.#ctor(System.String[],System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nativeLanguages As String(), translatorKey As String, patterns As Dictionary(Of String, List(Of String)), Optional toUserLanguage As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware : string[] * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * bool -&gt; Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" Usage="new Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware (nativeLanguages, translatorKey, patterns, toUserLanguage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nativeLanguages" Type="System.String[]" />
+        <Parameter Name="translatorKey" Type="System.String" />
+        <Parameter Name="patterns" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="toUserLanguage" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="nativeLanguages">The languages supported by your app.</param>
+        <param name="translatorKey">Your subscription key for the Microsoft Translator Text API.</param>
+        <param name="patterns">List of regex patterns, indexed by language identifier, 
+            that can be used to flag text that should not be translated.</param>
+        <param name="toUserLanguage">Indicates whether to transalte messages sent from the bot into the user's language.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" /> object.
+            </summary>
+        <remarks>Each pattern the <paramref name="patterns" /> describes an entity that should not be translated.
+            For example, in French <c>je m’appelle ([a-z]+)</c>, which will avoid translation of anything coming after je m’appelle.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranslationMiddleware (string[] nativeLanguages, string translatorKey, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; patterns, Func&lt;Microsoft.Bot.Builder.ITurnContext,string&gt; getUserLanguage, Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&lt;bool&gt;&gt; isUserLanguageChanged, bool toUserLanguage = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] nativeLanguages, string translatorKey, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; patterns, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, string&gt; getUserLanguage, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, class System.Threading.Tasks.Task`1&lt;bool&gt;&gt; isUserLanguageChanged, bool toUserLanguage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware.#ctor(System.String[],System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Func{Microsoft.Bot.Builder.ITurnContext,System.String},System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task{System.Boolean}},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nativeLanguages As String(), translatorKey As String, patterns As Dictionary(Of String, List(Of String)), getUserLanguage As Func(Of ITurnContext, String), isUserLanguageChanged As Func(Of ITurnContext, Task(Of Boolean)), Optional toUserLanguage As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware : string[] * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * Func&lt;Microsoft.Bot.Builder.ITurnContext, string&gt; * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&lt;bool&gt;&gt; * bool -&gt; Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" Usage="new Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware (nativeLanguages, translatorKey, patterns, getUserLanguage, isUserLanguageChanged, toUserLanguage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nativeLanguages" Type="System.String[]" />
+        <Parameter Name="translatorKey" Type="System.String" />
+        <Parameter Name="patterns" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="getUserLanguage" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.String&gt;" />
+        <Parameter Name="isUserLanguageChanged" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&lt;System.Boolean&gt;&gt;" />
+        <Parameter Name="toUserLanguage" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="nativeLanguages">List of languages supported by your app</param>
+        <param name="translatorKey">Your subscription key for the Microsoft Translator Text API.</param>
+        <param name="patterns">List of regex patterns, indexed by language identifier, 
+            that can be used to flag text that should not be translated.</param>
+        <param name="getUserLanguage">A delegate for getting the user language, 
+            to use in place of the Detect method of the Microsoft Translator Text API.</param>
+        <param name="isUserLanguageChanged">A delegate for checking whether the user requested to change their language.</param>
+        <param name="toUserLanguage">Indicates whether to transalte messages sent from the bot into the user's language.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware" /> object.
+            </summary>
+        <remarks>Each pattern the <paramref name="patterns" /> describes an entity that should not be translated.
+            For example, in French <c>je m’appelle ([a-z]+)</c>, which will avoid translation of anything coming after je m’appelle.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurn">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurn (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.MiddlewareSet.NextDelegate next);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurn(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Builder.MiddlewareSet/NextDelegate next) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnTurn (context As ITurnContext, next As MiddlewareSet.NextDelegate) As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnTurn : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.MiddlewareSet.NextDelegate -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurn : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.MiddlewareSet.NextDelegate -&gt; System.Threading.Tasks.Task" Usage="translationMiddleware.OnTurn (context, next)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Ai.Translation.TranslationMiddleware/&lt;OnTurn&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="next" Type="Microsoft.Bot.Builder.MiddlewareSet+NextDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context object for this turn.</param>
+        <param name="next">The delegate to call to continue the bot middleware pipeline.</param>
+        <summary>
+            Processess an incoming activity.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

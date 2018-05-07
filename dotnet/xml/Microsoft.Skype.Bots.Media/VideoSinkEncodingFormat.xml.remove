@@ -1,0 +1,82 @@
+<Type Name="VideoSinkEncodingFormat" FullName="Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat">
+  <TypeSignature Language="C#" Value="public enum VideoSinkEncodingFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VideoSinkEncodingFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VideoSinkEncodingFormat" />
+  <TypeSignature Language="F#" Value="type VideoSinkEncodingFormat = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            VideoSinkEncodingFormats
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="H264">
+      <MemberSignature Language="C#" Value="H264" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat H264 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.H264" />
+      <MemberSignature Language="VB.NET" Value="H264" />
+      <MemberSignature Language="F#" Value="H264 = 1" Usage="Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.H264" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="H264")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            H264
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yuv">
+      <MemberSignature Language="C#" Value="Yuv" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat Yuv = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.Yuv" />
+      <MemberSignature Language="VB.NET" Value="Yuv" />
+      <MemberSignature Language="F#" Value="Yuv = 0" Usage="Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat.Yuv" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Yuv")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.VideoSinkEncodingFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Yuv
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,67 @@
+<Type Name="MessageReactionTypes" FullName="Microsoft.Bot.Connector.MessageReactionTypes">
+  <TypeSignature Language="C#" Value="public static class MessageReactionTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MessageReactionTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.MessageReactionTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageReactionTypes" />
+  <TypeSignature Language="F#" Value="type MessageReactionTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Message reaction types
+            </summary>
+    <remarks>
+            Message reactions are an open set. This class contains some common values.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Like">
+      <MemberSignature Language="C#" Value="public const string Like;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Like" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.MessageReactionTypes.Like" />
+      <MemberSignature Language="VB.NET" Value="Public Const Like As String " />
+      <MemberSignature Language="F#" Value="val mutable Like : string" Usage="Microsoft.Bot.Connector.MessageReactionTypes.Like" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Like
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlusOne">
+      <MemberSignature Language="C#" Value="public const string PlusOne;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlusOne" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.MessageReactionTypes.PlusOne" />
+      <MemberSignature Language="VB.NET" Value="Public Const PlusOne As String " />
+      <MemberSignature Language="F#" Value="val mutable PlusOne : string" Usage="Microsoft.Bot.Connector.MessageReactionTypes.PlusOne" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            +1
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

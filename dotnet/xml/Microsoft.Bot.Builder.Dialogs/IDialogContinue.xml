@@ -1,0 +1,53 @@
+﻿<Type Name="IDialogContinue" FullName="Microsoft.Bot.Builder.Dialogs.IDialogContinue">
+  <TypeSignature Language="C#" Value="public interface IDialogContinue : Microsoft.Bot.Builder.Dialogs.IDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogContinue implements class Microsoft.Bot.Builder.Dialogs.IDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialogContinue" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialogContinue&#xA;Implements IDialog" />
+  <TypeSignature Language="F#" Value="type IDialogContinue = interface&#xA;    interface IDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialog</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Interface Dialog objects that can be continued.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DialogContinue">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DialogContinue (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DialogContinue(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IDialogContinue.DialogContinue(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DialogContinue (dc As DialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DialogContinue : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task" Usage="iDialogContinue.DialogContinue dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">The dialog context for the current turn of conversation.</param>
+        <summary>
+            Method called when an instance of the dialog is the "current" dialog and the 
+            user replies with a new activity. The dialog will generally continue to receive the users 
+            replies until it calls either `DialogSet.end()` or `DialogSet.begin()`.
+            If this method is NOT implemented then the dialog will automatically be ended when the user replies.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,104 @@
+﻿<Type Name="MapToChannelData_BotToUser" FullName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser">
+  <TypeSignature Language="C#" Value="public sealed class MapToChannelData_BotToUser : Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MapToChannelData_BotToUser extends System.Object implements class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MapToChannelData_BotToUser&#xA;Implements IBotToUser" />
+  <TypeSignature Language="F#" Value="type MapToChannelData_BotToUser = class&#xA;    interface IBotToUser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MapToChannelData_BotToUser (Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser inner, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Classic.Dialogs.Internals.IMessageActivityMapper&gt; mappers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser inner, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IMessageActivityMapper&gt; mappers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser.#ctor(Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Dialogs.Internals.IMessageActivityMapper})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IBotToUser, mappers As IEnumerable(Of IMessageActivityMapper))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser : Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser * seq&lt;Microsoft.Bot.Builder.Classic.Dialogs.Internals.IMessageActivityMapper&gt; -&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser (inner, mappers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser" />
+        <Parameter Name="mappers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Classic.Dialogs.Internals.IMessageActivityMapper&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <param name="mappers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeMessage">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IMessageActivity MakeMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageActivity MakeMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser.MakeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeMessage () As IMessageActivity" />
+      <MemberSignature Language="F#" Value="abstract member MakeMessage : unit -&gt; Microsoft.Bot.Schema.IMessageActivity&#xA;override this.MakeMessage : unit -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="mapToChannelData_BotToUser.MakeMessage " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PostAsync (Microsoft.Bot.Schema.IMessageActivity message, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PostAsync(class Microsoft.Bot.Schema.IMessageActivity message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser.PostAsync(Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member PostAsync : Microsoft.Bot.Schema.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.PostAsync : Microsoft.Bot.Schema.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="mapToChannelData_BotToUser.PostAsync (message, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync(Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.MapToChannelData_BotToUser/&lt;PostAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Schema.IMessageActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

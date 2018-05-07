@@ -1,0 +1,296 @@
+﻿<Type Name="ConversationReference" FullName="Microsoft.Bot.Schema.ConversationReference">
+  <TypeSignature Language="C#" Value="public class ConversationReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationReference extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ConversationReference" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConversationReference" />
+  <TypeSignature Language="F#" Value="type ConversationReference = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An object relating to a particular point in a conversation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the ConversationReference class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationReference (string activityId = null, Microsoft.Bot.Schema.ChannelAccount user = null, Microsoft.Bot.Schema.ChannelAccount bot = null, Microsoft.Bot.Schema.ConversationAccount conversation = null, string channelId = null, string serviceUrl = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string activityId, class Microsoft.Bot.Schema.ChannelAccount user, class Microsoft.Bot.Schema.ChannelAccount bot, class Microsoft.Bot.Schema.ConversationAccount conversation, string channelId, string serviceUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.#ctor(System.String,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ConversationAccount,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activityId As String = null, Optional user As ChannelAccount = null, Optional bot As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional channelId As String = null, Optional serviceUrl As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ConversationReference : string * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ConversationAccount * string * string -&gt; Microsoft.Bot.Schema.ConversationReference" Usage="new Microsoft.Bot.Schema.ConversationReference (activityId, user, bot, conversation, channelId, serviceUrl)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="conversation" Type="Microsoft.Bot.Schema.ConversationAccount" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="serviceUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activityId">(Optional) ID of the activity to refer
+            to</param>
+        <param name="user">(Optional) User participating in this
+            conversation</param>
+        <param name="bot">Bot participating in this conversation</param>
+        <param name="conversation">Conversation reference</param>
+        <param name="channelId">Channel ID</param>
+        <param name="serviceUrl">Service endpoint where operations
+            concerning the referenced conversation may be performed</param>
+        <summary>
+            Initializes a new instance of the ConversationReference class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityId">
+      <MemberSignature Language="C#" Value="public string ActivityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActivityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationReference.ActivityId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivityId As String" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : string with get, set" Usage="Microsoft.Bot.Schema.ConversationReference.ActivityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activityId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Optional) ID of the activity to refer to
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bot">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ChannelAccount Bot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ChannelAccount Bot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationReference.Bot" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bot As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.Bot : Microsoft.Bot.Schema.ChannelAccount with get, set" Usage="Microsoft.Bot.Schema.ConversationReference.Bot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bot")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ChannelAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets bot participating in this conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelId">
+      <MemberSignature Language="C#" Value="public string ChannelId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationReference.ChannelId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string with get, set" Usage="Microsoft.Bot.Schema.ConversationReference.ChannelId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets channel ID
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conversation">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ConversationAccount Conversation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ConversationAccount Conversation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationReference.Conversation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Conversation As ConversationAccount" />
+      <MemberSignature Language="F#" Value="member this.Conversation : Microsoft.Bot.Schema.ConversationAccount with get, set" Usage="Microsoft.Bot.Schema.ConversationReference.Conversation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ConversationAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets conversation reference
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostToBotMessage">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity GetPostToBotMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity GetPostToBotMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.GetPostToBotMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostToBotMessage () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetPostToBotMessage : unit -&gt; Microsoft.Bot.Schema.Activity" Usage="conversationReference.GetPostToBotMessage " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates <see cref="T:Microsoft.Bot.Schema.Activity" /> from conversation reference as it is posted to bot.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostToUserMessage">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity GetPostToUserMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity GetPostToUserMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.GetPostToUserMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostToUserMessage () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetPostToUserMessage : unit -&gt; Microsoft.Bot.Schema.Activity" Usage="conversationReference.GetPostToUserMessage " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates <see cref="T:Microsoft.Bot.Schema.Activity" /> from conversation reference that can be posted to user as reply.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceUrl">
+      <MemberSignature Language="C#" Value="public string ServiceUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationReference.ServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string with get, set" Usage="Microsoft.Bot.Schema.ConversationReference.ServiceUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets service endpoint where operations concerning the
+            referenced conversation may be performed
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ChannelAccount User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ChannelAccount User" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationReference.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Bot.Schema.ChannelAccount with get, set" Usage="Microsoft.Bot.Schema.ConversationReference.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="user")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ChannelAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Optional) User participating in this conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

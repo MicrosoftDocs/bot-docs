@@ -1,0 +1,44 @@
+﻿<Type Name="ILuisRecognizerOptions" FullName="Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions">
+  <TypeSignature Language="C#" Value="public interface ILuisRecognizerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisRecognizerOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILuisRecognizerOptions" />
+  <TypeSignature Language="F#" Value="type ILuisRecognizerOptions = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Options for the Luis Recognizer
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Verbose">
+      <MemberSignature Language="C#" Value="public bool Verbose { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Verbose" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbose As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Verbose : bool" Usage="Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions.Verbose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If set to true, metadata is added to the recognizer's results
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

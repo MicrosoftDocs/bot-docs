@@ -1,0 +1,165 @@
+<Type Name="FileSource" FullName="Microsoft.Skype.Internal.Bots.Media.FileSource">
+  <TypeSignature Language="C#" Value="public sealed class FileSource : Microsoft.Skype.Internal.Bots.Media.IFileSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileSource extends System.Object implements class Microsoft.Skype.Internal.Bots.Media.IFileSource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.FileSource" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileSource&#xA;Implements IFileSource" />
+  <TypeSignature Language="F#" Value="type FileSource = class&#xA;    interface IFileSource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Skype.Internal.Bots.Media.IFileSource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileSource (Microsoft.Skype.Internal.Bots.Media.FileSourceSettings fileSourceSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Skype.Internal.Bots.Media.FileSourceSettings fileSourceSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSource.#ctor(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Skype.Internal.Bots.Media.FileSource : Microsoft.Skype.Internal.Bots.Media.FileSourceSettings -&gt; Microsoft.Skype.Internal.Bots.Media.FileSource" Usage="new Microsoft.Skype.Internal.Bots.Media.FileSource fileSourceSettings" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileSourceSettings" Type="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" />
+      </Parameters>
+      <Docs>
+        <param name="fileSourceSettings">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileSource (Microsoft.Skype.Internal.Bots.Media.FileSourceSettings fileSourceSettings, System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Skype.Internal.Bots.Media.FileSourceSettings fileSourceSettings, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSource.#ctor(Microsoft.Skype.Internal.Bots.Media.FileSourceSettings,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Skype.Internal.Bots.Media.FileSource : Microsoft.Skype.Internal.Bots.Media.FileSourceSettings * System.IO.Stream -&gt; Microsoft.Skype.Internal.Bots.Media.FileSource" Usage="new Microsoft.Skype.Internal.Bots.Media.FileSource (fileSourceSettings, stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileSourceSettings" Type="Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="fileSourceSettings">
+        </param>
+        <param name="stream">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSourceFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Internal.Bots.Media.FileSourceFormat FileSourceFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Internal.Bots.Media.FileSourceFormat FileSourceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSourceFormat As FileSourceFormat" />
+      <MemberSignature Language="F#" Value="member this.FileSourceFormat : Microsoft.Skype.Internal.Bots.Media.FileSourceFormat" Usage="Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Internal.Bots.Media.FileSourceFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSourceSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Internal.Bots.Media.FileSourceSettings FileSourceSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Skype.Internal.Bots.Media.FileSourceSettings FileSourceSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSourceSettings As FileSourceSettings" />
+      <MemberSignature Language="F#" Value="member this.FileSourceSettings : Microsoft.Skype.Internal.Bots.Media.FileSourceSettings" Usage="Microsoft.Skype.Internal.Bots.Media.FileSource.FileSourceSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Internal.Bots.Media.FileSourceSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawFileSizeInBytes">
+      <MemberSignature Language="C#" Value="public int RawFileSizeInBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RawFileSizeInBytes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Internal.Bots.Media.FileSource.RawFileSizeInBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawFileSizeInBytes As Integer" />
+      <MemberSignature Language="F#" Value="member this.RawFileSizeInBytes : int" Usage="Microsoft.Skype.Internal.Bots.Media.FileSource.RawFileSizeInBytes" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Skype.Internal.Bots.Media.IFileSource.RawFileSizeInBytes</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadNextBlock">
+      <MemberSignature Language="C#" Value="public int ReadNextBlock (byte[] readBytes, int currentPosition, int bytesToRead);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadNextBlock(unsigned int8[] readBytes, int32 currentPosition, int32 bytesToRead) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.FileSource.ReadNextBlock(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadNextBlock (readBytes As Byte(), currentPosition As Integer, bytesToRead As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member ReadNextBlock : byte[] * int * int -&gt; int&#xA;override this.ReadNextBlock : byte[] * int * int -&gt; int" Usage="fileSource.ReadNextBlock (readBytes, currentPosition, bytesToRead)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Skype.Internal.Bots.Media.IFileSource.ReadNextBlock(System.Byte[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="readBytes" Type="System.Byte[]" />
+        <Parameter Name="currentPosition" Type="System.Int32" />
+        <Parameter Name="bytesToRead" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="readBytes">
+        </param>
+        <param name="currentPosition">
+        </param>
+        <param name="bytesToRead">
+        </param>
+        <summary />
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

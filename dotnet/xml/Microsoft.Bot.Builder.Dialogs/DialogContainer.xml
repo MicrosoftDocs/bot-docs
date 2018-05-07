@@ -1,0 +1,153 @@
+﻿<Type Name="DialogContainer" FullName="Microsoft.Bot.Builder.Dialogs.DialogContainer">
+  <TypeSignature Language="C#" Value="public class DialogContainer : Microsoft.Bot.Builder.Dialogs.IDialogContinue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogContainer extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog, class Microsoft.Bot.Builder.Dialogs.IDialogContinue" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogContainer&#xA;Implements IDialogContinue" />
+  <TypeSignature Language="F#" Value="type DialogContainer = class&#xA;    interface IDialogContinue&#xA;    interface IDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialogContinue</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogContainer (string dialogId, Microsoft.Bot.Builder.Dialogs.DialogSet dialogs = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class Microsoft.Bot.Builder.Dialogs.DialogSet dialogs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContainer.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.DialogSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, Optional dialogs As DialogSet = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.DialogContainer : string * Microsoft.Bot.Builder.Dialogs.DialogSet -&gt; Microsoft.Bot.Builder.Dialogs.DialogContainer" Usage="new Microsoft.Bot.Builder.Dialogs.DialogContainer (dialogId, dialogs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+        <Parameter Name="dialogs" Type="Microsoft.Bot.Builder.Dialogs.DialogSet" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">To be added.</param>
+        <param name="dialogs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogBegin">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DialogBegin (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Collections.Generic.IDictionary&lt;string,object&gt; dialogArgs = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DialogBegin(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dialogArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContainer.DialogBegin(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DialogBegin (dc As DialogContext, Optional dialogArgs As IDictionary(Of String, Object) = null) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DialogBegin : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.DialogBegin : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="dialogContainer.DialogBegin (dc, dialogArgs)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog.DialogBegin(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.DialogContainer/&lt;DialogBegin&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="dialogArgs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="dialogArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogContinue">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DialogContinue (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DialogContinue(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContainer.DialogContinue(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DialogContinue (dc As DialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DialogContinue : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&#xA;override this.DialogContinue : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task" Usage="dialogContainer.DialogContinue dc" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialogContinue.DialogContinue(Microsoft.Bot.Builder.Dialogs.DialogContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.DialogContainer/&lt;DialogContinue&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogId">
+      <MemberSignature Language="C#" Value="protected string DialogId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DialogId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContainer.DialogId" />
+      <MemberSignature Language="VB.NET" Value="Protected Property DialogId As String" />
+      <MemberSignature Language="F#" Value="member this.DialogId : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogContainer.DialogId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dialogs">
+      <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContainer.Dialogs" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Dialogs As DialogSet" />
+      <MemberSignature Language="F#" Value="member this.Dialogs : Microsoft.Bot.Builder.Dialogs.DialogSet with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogContainer.Dialogs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

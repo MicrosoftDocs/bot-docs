@@ -1,0 +1,88 @@
+﻿<Type Name="IRecognizer" FullName="Microsoft.Bot.Builder.Core.Extensions.IRecognizer">
+  <TypeSignature Language="C#" Value="public interface IRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRecognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Core.Extensions.IRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRecognizer" />
+  <TypeSignature Language="F#" Value="type IRecognizer = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Interface for Recognizers.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Recognize">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt; Recognize (string utterance, System.Threading.CancellationToken ct);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt; Recognize(string utterance, valuetype System.Threading.CancellationToken ct) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.IRecognizer.Recognize(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Recognize (utterance As String, ct As CancellationToken) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="abstract member Recognize : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt;" Usage="iRecognizer.Recognize (utterance, ct)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utterance" Type="System.String" />
+        <Parameter Name="ct" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="utterance">Utterance to analyze.</param>
+        <param name="ct">Cancellation token.</param>
+        <summary>
+            Runs an utterance through a recognizer and returns a generic recognizer result.
+            </summary>
+        <returns>Analysis of utterance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recognize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; Recognize&lt;T&gt; (string utterance, System.Threading.CancellationToken ct) where T : Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; Recognize&lt;.ctor (class Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert) T&gt;(string utterance, valuetype System.Threading.CancellationToken ct) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.IRecognizer.Recognize``1(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Recognize(Of T As {IRecognizerConvertNew}) (utterance As String, ct As CancellationToken) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member Recognize : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="iRecognizer.Recognize (utterance, ct)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="utterance" Type="System.String" />
+        <Parameter Name="ct" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="utterance">Utterance to analyze.</param>
+        <param name="ct">Cancellation token.</param>
+        <summary>
+            Runs an utterance through a recognizer and returns a strongly typed recognizer result.
+            </summary>
+        <returns>Analysis of utterance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

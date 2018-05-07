@@ -1,0 +1,214 @@
+﻿<Type Name="BotAssert" FullName="Microsoft.Bot.Builder.BotAssert">
+  <TypeSignature Language="C#" Value="public class BotAssert" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotAssert extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.BotAssert" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotAssert" />
+  <TypeSignature Language="F#" Value="type BotAssert = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.11</AssemblyVersion>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides methods for debugging Bot Builder code.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotAssert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityListNotNull">
+      <MemberSignature Language="C#" Value="public static void ActivityListNotNull (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Activity&gt; activities);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ActivityListNotNull(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Activity&gt; activities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.ActivityListNotNull(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Activity})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ActivityListNotNull (activities As IEnumerable(Of Activity))" />
+      <MemberSignature Language="F#" Value="static member ActivityListNotNull : seq&lt;Microsoft.Bot.Schema.Activity&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.ActivityListNotNull activities" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activities">The activities.</param>
+        <summary>
+            Checks that an activity collection is not <c>null</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activities" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityNotNull">
+      <MemberSignature Language="C#" Value="public static void ActivityNotNull (Microsoft.Bot.Schema.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ActivityNotNull(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.ActivityNotNull(Microsoft.Bot.Schema.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ActivityNotNull (activity As IActivity)" />
+      <MemberSignature Language="F#" Value="static member ActivityNotNull : Microsoft.Bot.Schema.IActivity -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.ActivityNotNull activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity object.</param>
+        <summary>
+            Checks that an activity object is not <c>null</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextNotNull">
+      <MemberSignature Language="C#" Value="public static void ContextNotNull (Microsoft.Bot.Builder.ITurnContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ContextNotNull(class Microsoft.Bot.Builder.ITurnContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.ContextNotNull(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ContextNotNull (context As ITurnContext)" />
+      <MemberSignature Language="F#" Value="static member ContextNotNull : Microsoft.Bot.Builder.ITurnContext -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.ContextNotNull context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context object.</param>
+        <summary>
+            Checks that a context object is not <c>null</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationReferenceNotNull">
+      <MemberSignature Language="C#" Value="public static void ConversationReferenceNotNull (Microsoft.Bot.Schema.ConversationReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConversationReferenceNotNull(class Microsoft.Bot.Schema.ConversationReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.ConversationReferenceNotNull(Microsoft.Bot.Schema.ConversationReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ConversationReferenceNotNull (reference As ConversationReference)" />
+      <MemberSignature Language="F#" Value="static member ConversationReferenceNotNull : Microsoft.Bot.Schema.ConversationReference -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.ConversationReferenceNotNull reference" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The conversation reference object.</param>
+        <summary>
+            Checks that a conversation reference object is not <c>null</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reference" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddlewareNotNull">
+      <MemberSignature Language="C#" Value="public static void MiddlewareNotNull (Microsoft.Bot.Builder.IMiddleware middleware);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MiddlewareNotNull(class Microsoft.Bot.Builder.IMiddleware middleware) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.MiddlewareNotNull(Microsoft.Bot.Builder.IMiddleware)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MiddlewareNotNull (middleware As IMiddleware)" />
+      <MemberSignature Language="F#" Value="static member MiddlewareNotNull : Microsoft.Bot.Builder.IMiddleware -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.MiddlewareNotNull middleware" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="middleware" Type="Microsoft.Bot.Builder.IMiddleware" />
+      </Parameters>
+      <Docs>
+        <param name="middleware">The middleware object.</param>
+        <summary>
+            Checks that a middleware object is not <c>null</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="middleware" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddlewareNotNull">
+      <MemberSignature Language="C#" Value="public static void MiddlewareNotNull (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.IMiddleware&gt; middleware);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MiddlewareNotNull(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.IMiddleware&gt; middleware) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.MiddlewareNotNull(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.IMiddleware})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MiddlewareNotNull (middleware As IEnumerable(Of IMiddleware))" />
+      <MemberSignature Language="F#" Value="static member MiddlewareNotNull : seq&lt;Microsoft.Bot.Builder.IMiddleware&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.MiddlewareNotNull middleware" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="middleware" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.IMiddleware&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="middleware">The middleware.</param>
+        <summary>
+            Checks that a middleware collection is not <c>null</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="middleware" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

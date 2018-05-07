@@ -1,0 +1,115 @@
+﻿<Type Name="IForm&lt;T&gt;" FullName="Microsoft.Bot.Builder.Classic.FormFlow.IForm&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class IForm&lt;T&gt; where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IForm`1&lt;class T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.FormFlow.IForm`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IForm(Of T)" />
+  <TypeSignature Language="F#" Value="type IForm&lt;'T (requires 'T : null)&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected IForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.FormFlow.IForm`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fields">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IFields&lt;T&gt; Fields { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IFields`1&lt;!T&gt; Fields" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.FormFlow.IForm`1.Fields" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Fields As IFields(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Fields : Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IFields&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.Classic.FormFlow.IForm&lt;'T (requires 'T : null)&gt;.Fields" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IFields&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Localize">
+      <MemberSignature Language="C#" Value="public abstract void Localize (System.Collections.IDictionaryEnumerator reader, out System.Collections.Generic.IEnumerable&lt;string&gt; missing, out System.Collections.Generic.IEnumerable&lt;string&gt; extra);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Localize(class System.Collections.IDictionaryEnumerator reader, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; missing, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; extra) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.FormFlow.IForm`1.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Localize (reader As IDictionaryEnumerator, ByRef missing As IEnumerable(Of String), ByRef extra As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member Localize : System.Collections.IDictionaryEnumerator *  *  -&gt; unit" Usage="iForm.Localize (reader, missing, extra)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Collections.IDictionaryEnumerator" />
+        <Parameter Name="missing" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;&amp;" RefType="out" />
+        <Parameter Name="extra" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="missing">To be added.</param>
+        <param name="extra">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveResources">
+      <MemberSignature Language="C#" Value="public abstract void SaveResources (System.Resources.IResourceWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveResources(class System.Resources.IResourceWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.FormFlow.IForm`1.SaveResources(System.Resources.IResourceWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SaveResources (writer As IResourceWriter)" />
+      <MemberSignature Language="F#" Value="abstract member SaveResources : System.Resources.IResourceWriter -&gt; unit" Usage="iForm.SaveResources writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Resources.IResourceWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

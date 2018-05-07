@@ -1,0 +1,72 @@
+﻿<Type Name="IntentComparer" FullName="Microsoft.Bot.Builder.Classic.Scorables.Internals.IntentComparer">
+  <TypeSignature Language="C#" Value="public sealed class IntentComparer : System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IntentComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Scorables.Internals.IntentComparer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IntentComparer&#xA;Implements IComparer(Of IntentRecommendation)" />
+  <TypeSignature Language="F#" Value="type IntentComparer = class&#xA;    interface IComparer&lt;IntentRecommendation&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt; Instance;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;class Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt; Instance" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.Scorables.Internals.IntentComparer.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IComparer(Of IntentRecommendation) " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;" Usage="Microsoft.Bot.Builder.Classic.Scorables.Internals.IntentComparer.Instance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;.Compare">
+      <MemberSignature Language="C#" Value="int IComparer&lt;IntentRecommendation&gt;.Compare (Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation one, Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation two);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;.Compare(class Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation one, class Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation two) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IntentComparer.System#Collections#Generic#IComparer&lt;Microsoft#Bot#Builder#Classic#Luis#Models#IntentRecommendation&gt;#Compare(Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (one As IntentRecommendation, two As IntentRecommendation) As Integer Implements IComparer(Of IntentRecommendation).Compare" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="one" Type="Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation" />
+        <Parameter Name="two" Type="Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation" />
+      </Parameters>
+      <Docs>
+        <param name="one">To be added.</param>
+        <param name="two">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

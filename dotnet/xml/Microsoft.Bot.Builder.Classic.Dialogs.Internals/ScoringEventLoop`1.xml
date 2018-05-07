@@ -1,0 +1,86 @@
+﻿<Type Name="ScoringEventLoop&lt;Score&gt;" FullName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop&lt;Score&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ScoringEventLoop&lt;Score&gt; : Microsoft.Bot.Builder.Classic.Base.IEventLoop" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScoringEventLoop`1&lt;Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Classic.Base.IEventLoop" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScoringEventLoop(Of Score)&#xA;Implements IEventLoop" />
+  <TypeSignature Language="F#" Value="type ScoringEventLoop&lt;'Score&gt; = class&#xA;    interface IEventLoop" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Score" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Base.IEventLoop</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="Score">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScoringEventLoop (Microsoft.Bot.Builder.Classic.Base.IEventLoop innerLoop, Microsoft.Bot.Builder.Classic.Base.IEventProducer&lt;Microsoft.Bot.Schema.IActivity&gt; innerProducer, Microsoft.Bot.Builder.Classic.Base.IEventConsumer&lt;Microsoft.Bot.Schema.IActivity&gt; consumer, Microsoft.Bot.Builder.Classic.Scorables.IScorable&lt;Microsoft.Bot.Schema.IActivity,Score&gt; scorable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Classic.Base.IEventLoop innerLoop, class Microsoft.Bot.Builder.Classic.Base.IEventProducer`1&lt;class Microsoft.Bot.Schema.IActivity&gt; innerProducer, class Microsoft.Bot.Builder.Classic.Base.IEventConsumer`1&lt;class Microsoft.Bot.Schema.IActivity&gt; consumer, class Microsoft.Bot.Builder.Classic.Scorables.IScorable`2&lt;class Microsoft.Bot.Schema.IActivity, !Score&gt; scorable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop`1.#ctor(Microsoft.Bot.Builder.Classic.Base.IEventLoop,Microsoft.Bot.Builder.Classic.Base.IEventProducer{Microsoft.Bot.Schema.IActivity},Microsoft.Bot.Builder.Classic.Base.IEventConsumer{Microsoft.Bot.Schema.IActivity},Microsoft.Bot.Builder.Classic.Scorables.IScorable{Microsoft.Bot.Schema.IActivity,`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (innerLoop As IEventLoop, innerProducer As IEventProducer(Of IActivity), consumer As IEventConsumer(Of IActivity), scorable As IScorable(Of IActivity, Score))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop&lt;'Score&gt; : Microsoft.Bot.Builder.Classic.Base.IEventLoop * Microsoft.Bot.Builder.Classic.Base.IEventProducer&lt;Microsoft.Bot.Schema.IActivity&gt; * Microsoft.Bot.Builder.Classic.Base.IEventConsumer&lt;Microsoft.Bot.Schema.IActivity&gt; * Microsoft.Bot.Builder.Classic.Scorables.IScorable&lt;Microsoft.Bot.Schema.IActivity, 'Score&gt; -&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop&lt;'Score&gt;" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop&lt;'Score&gt; (innerLoop, innerProducer, consumer, scorable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="innerLoop" Type="Microsoft.Bot.Builder.Classic.Base.IEventLoop" />
+        <Parameter Name="innerProducer" Type="Microsoft.Bot.Builder.Classic.Base.IEventProducer&lt;Microsoft.Bot.Schema.IActivity&gt;" />
+        <Parameter Name="consumer" Type="Microsoft.Bot.Builder.Classic.Base.IEventConsumer&lt;Microsoft.Bot.Schema.IActivity&gt;" />
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Classic.Scorables.IScorable&lt;Microsoft.Bot.Schema.IActivity,Score&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="innerLoop">To be added.</param>
+        <param name="innerProducer">To be added.</param>
+        <param name="consumer">To be added.</param>
+        <param name="scorable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Base.IEventLoop.PollAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IEventLoop.PollAsync (System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Base.IEventLoop.PollAsync(valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop`1.Microsoft#Bot#Builder#Classic#Base#IEventLoop#PollAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PollAsync (token As CancellationToken) As Task Implements IEventLoop.PollAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Base.IEventLoop.PollAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.ScoringEventLoop`1/&lt;Microsoft-Bot-Builder-Classic-Base-IEventLoop-PollAsync&gt;d__5))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

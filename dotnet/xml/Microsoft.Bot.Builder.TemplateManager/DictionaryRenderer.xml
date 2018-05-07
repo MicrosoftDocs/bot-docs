@@ -1,0 +1,89 @@
+﻿<Type Name="DictionaryRenderer" FullName="Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer">
+  <TypeSignature Language="C#" Value="public class DictionaryRenderer : Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DictionaryRenderer extends System.Object implements class Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DictionaryRenderer&#xA;Implements ITemplateRenderer" />
+  <TypeSignature Language="F#" Value="type DictionaryRenderer = class&#xA;    interface ITemplateRenderer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+              This is a simple template engine which has a resource map of template functions
+             let myTemplates  = {
+                  "en" : {
+                    "templateId": (context, data) =&gt; $"your name  is {data.name}",
+                    "templateId": (context, data) =&gt; { return new Activity(); }
+                }`  
+             }
+             }
+              To use, simply register with templateManager
+              templateManager.Register(new DictionaryRenderer(myTemplates))
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DictionaryRenderer (Microsoft.Bot.Builder.TemplateManager.LanguageTemplateDictionary templates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.TemplateManager.LanguageTemplateDictionary templates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer.#ctor(Microsoft.Bot.Builder.TemplateManager.LanguageTemplateDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (templates As LanguageTemplateDictionary)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer : Microsoft.Bot.Builder.TemplateManager.LanguageTemplateDictionary -&gt; Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer" Usage="new Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer templates" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="templates" Type="Microsoft.Bot.Builder.TemplateManager.LanguageTemplateDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="templates">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTemplate">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;object&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (context As ITurnContext, language As String, templateId As String, data As Object) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="dictionaryRenderer.RenderTemplate (context, language, templateId, data)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="templateId" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="language">To be added.</param>
+        <param name="templateId">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,23 +1,54 @@
 ﻿<Type Name="IDialog" FullName="Microsoft.Bot.Builder.Dialogs.IDialog">
-  <TypeSignature Language="C#" Value="public interface IDialog : Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;" />
+  <TypeSignature Language="C#" Value="public interface IDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialog" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IDialog&#xA;Implements IDialog(Of Object)" />
-  <TypeSignature Language="F#" Value="type IDialog = interface&#xA;    interface IDialog&lt;obj&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialog" />
+  <TypeSignature Language="F#" Value="type IDialog = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.12.2.4</AssemblyVersion>
   </AssemblyInfo>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Object&gt;</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>
-            A <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog" /> is a suspendable conversational process that produces an ignored result.
+            Interface for all Dialog objects that can be added to a `DialogSet`. The dialog should generally
+            be a singleton and added to a dialog set using `DialogSet.add()` at which point it will be 
+            assigned a unique ID.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="DialogBegin">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DialogBegin (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Collections.Generic.IDictionary&lt;string,object&gt; dialogArgs = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DialogBegin(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dialogArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IDialog.DialogBegin(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DialogBegin (dc As DialogContext, Optional dialogArgs As IDictionary(Of String, Object) = null) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DialogBegin : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="iDialog.DialogBegin (dc, dialogArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="dialogArgs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dc">The dialog context for the current turn of conversation.</param>
+        <param name="dialogArgs">(Optional) arguments that were passed to the dialog during `begin()` call that started the instance.</param>
+        <summary>
+            Method called when a new dialog has been pushed onto the stack and is being activated.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>
