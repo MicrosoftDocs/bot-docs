@@ -261,7 +261,7 @@ As you can see, the modular classes are added to the master `dialogs` object in 
 
 ## Next steps
 
-Now that you know how to modularize your bot logic and add features to your bot, lets take a look at how to use *entities* to enhance user experience.
+Now that you know how to modularize your bot logic by using dialogs, let's take a look at how to use Language Understanding (LUIS) to help your bot decide when to begin the dialogs.
 
 > [!div class="nextstepaction"]
-> [Entities and activity types](../bot-service-activities-entities.md)
+> [Use LUIS for Language Understanding](./bot-builder-howto-v4-luis.md)
