@@ -37,12 +37,12 @@ You can now manage bots using [Azure CLI](https://docs.microsoft.com/en-us/cli/a
 1. [Download](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) Azure CLI if you don't already have it. 
 
 2. Enter the following command to download the Azure Bot Extension dist package
-  ```
-  az extension add --source https://icscratch.blob.core.windows.net/bot-packages/azurebotextension-0.0.1-py2.py3-none-any.whl 
-  ```
+
+```
+az extension add -n botservice
+```
   
 3. [Login](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) to Azure CLI by running the following:
-
 
 ```shell
 az login
