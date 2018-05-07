@@ -25,7 +25,7 @@ If you are running the bot locally, you can get an endpoint to use for testing b
  ngrok.exe http 3979 -host-header="localhost:3979"
 ``` 
 
-This configures and displays an ngrok forwarding link that forward requests to your bot, which is running on port 3978. The URL to the forwarding link should look something like this: `https://0d6c4024.ngrok.io`.  Append `/api/messages` to the link, to form a messaging endpoint URL in this format: `https://0d6c4024.ngrok.io/api/messages`. 
+This configures and displays an ngrok forwarding link that forwards requests to your bot, which is running on port 3978. The URL to the forwarding link should look something like this: `https://0d6c4024.ngrok.io`.  Append `/api/messages` to the link, to form a messaging endpoint URL in this format: `https://0d6c4024.ngrok.io/api/messages`. 
 
 Enter this endpoint URL in the **Configuration** section of your bot's [Settings](~/bot-service-manage-settings.md) blade.
 

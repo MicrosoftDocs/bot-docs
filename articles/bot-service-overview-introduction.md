@@ -108,17 +108,17 @@ Before writing code, review the bot [design guidelines](bot-service-design-pri
 
 > [!TIP] 
 >
-> Install the template you need:
+> Install one of the templates:
 >  - Bot builder .NET SDK v4 preview [VSIX template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
 >  - Bot builder Node.js SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder). Use @preview to get v4 template.
 >  - Bot builder Java SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder-java)
 >  - Bot builder Python SDK v4 preview [Yeoman template](https://www.npmjs.com/package/generator-botbuilder-python)
 >
-> Install tools:
+> Install the tools if you need them:
 > - Download [CLI tools](https://github.com/Microsoft/botbuilder-tools) to create and manage bot assests. These tools help you manage bot  configuration file, LUIS app, QnA knowledge base, and more from the command-line. You can find more details in the [readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
 > - [Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases) to test your bot
 >
-> If needed, use bot components, such as:  
+> If needed, you can use bot components, such as:  
 > - [LUIS](https://www.luis.ai/) to add natural language to bots
 > - [QnA Maker](https://qnamaker.ai/) to respond to user's questions in a more natural, conversational way
 > - [Speech](https://azure.microsoft.com/services/cognitive-services/speech/) to convert audio to text, understand intent, and convert text back to speech  
@@ -130,12 +130,12 @@ Your bot is a web service that implements a conversational interface and communi
 
 > [!TIP]
 >
-> Create a bot using [SDK](~/dotnet/bot-builder-dotnet-quickstart.md), [Azure portal](bot-service-quickstart.md), or use [CLI tools](~/bot-builder-create-templates.md)
+> Create a bot using the [SDK](~/dotnet/bot-builder-dotnet-quickstart.md), [Azure portal](bot-service-quickstart.md), or use [CLI tools](~/bot-builder-create-templates.md)
 >
 > Add components: 
 > - Add language understanding model [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home) 
 > - Add [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home) knowledge base to answer questions users ask  
-> - If you are using more than model, for example QnA with LUIS or multiple LUIS models, your bot will need to know which one to use when. See how to use the [dispatch tool to manage multiple models](~/v4sdk/bot-builder-tutorial-dispatch.md).  
+> - If you are using more than one model, such as QnA with LUIS or multiple LUIS models, your bot will need to know which one to use when. See how to use the [dispatch tool to manage multiple models](~/v4sdk/bot-builder-tutorial-dispatch.md).  
 > - Enhace user experience with cards, speech, or translation 
 > - Add logic to your bot using the Bot Builder SDK   
 
@@ -167,6 +167,6 @@ Use the data collected in Azure portal to identify opportunities to improve the 
 
 > [!Tip]
 >
-> [Gather analytics](bot-service-manage-analytics.md) 
+> - [Gather analytics](bot-service-manage-analytics.md) 
 
 ::: moniker-end
