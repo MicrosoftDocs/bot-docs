@@ -61,14 +61,14 @@ After a generator is installed, you can simply run the **yo** command in your CL
 
 ![Yeoman Interface](media/botbuilder-templates/yeoman-generator-botbuilder.png)
 
-Switch to a working directory of your choice, and select the generator to use. You will be promopted for various options to create your bot, such as name and description. When all prompts are completed, your echo bot template will be created in the same working folder.
+Switch to a working directory of your choice, and select the generator to use. You will be prompted for various options to create your bot, such as name and description. When all prompts are completed, your echo bot template will be created in the same working folder.
 
 ![Node.js Yeoman Template](media/botbuilder-templates/new-template-node.png)
 
 
 ## .NET
 
-Two templates are available for .NET, targetting targetting the **v3** and **v4** versions of the SDK respectively. Both are available as [VSIX](https://docs.microsoft.com/en-us/visualstudio/extensibility/anatomy-of-a-vsix-package) packages,  to download click one of the following links on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/): 
+Two templates are available for .NET, targetting the **v3** and **v4** versions of the SDK respectively. Both are available as [VSIX](https://docs.microsoft.com/en-us/visualstudio/extensibility/anatomy-of-a-vsix-package) packages,  to download click one of the following links on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/): 
 
 - [BotBuilder V3 Template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3)
 - [BotBuilder V4 Template](https://aka.ms/Ylcwxk)
@@ -123,7 +123,7 @@ With the MSBot tool installed, you can easily connect your bot to an existing re
 az bot show -n <botname> -g <resourcegroup> --msbot | msbot connect azure --stdin
 ```
 
-This will take current endpoint, MSA appID and password from the target resource group and update the information accordingly in your .bot file. 
+This will take the current endpoint, MSA appID and password from the target resource group, and update the information accordingly in your .bot file. 
 
 
 ## 5. Manage, Update or Create LUIS and QnA services with  new botbuilder-tools
@@ -146,9 +146,9 @@ The LUDown tool can be used to create new .json models for both LUIS and QnA.
 
 You can define [intents](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-intents) and [entities](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-entities) for a LUIS application just like you would from the LUIS portal. 
 
-'#\<intent-name\>' describes a new intent definition section. Each line subsequent line afterwards are [utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-example-utterances) which describe that intent.
+'#\<intent-name\>' describes a new intent definition section. Each line afterwards lists the [utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-example-utterances) which describe that intent.
 
-For example, you can creatue multiple LUIS intents in a single .lu file as follows: 
+For example, you can create multiple LUIS intents in a single .lu file as follows: 
 
 ```
 # Greeting
