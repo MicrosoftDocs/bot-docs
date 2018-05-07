@@ -50,6 +50,10 @@ az extension add -n botservice
 ```shell
 az login
 ```
+You will be prompted with a unique temporary auth code. To signin, use a web browser and visit Microsoft [device login](https://microsoft.com/devicelogin), and paste the code provided by the CLI to continue. 
+
+![MS device login](media/bot-builder-tools/ms-device-login.png)
+
 Upon successful login, you will see the Azure CLI welcome screen, along with a list of available options to manage your account and resources.
 
 ![Azure Bot CLI](media/bot-builder-tools/az-cli-bot.png)
@@ -93,7 +97,7 @@ By default, a new .NET bot will be created. You can specify which platform SDK b
 az bot create --resource-group "resource group", --name "name",
 --kind "kind" --description "description" --lang Node 
 ```
-Your new echo bot will be provisioned to your resource group on Azure,to test it out simply select **Test in Webchat** under the bot management tab of your bot resource. 
+Your new echo bot will be provisioned to your resource group on Azure, to test it out simply select **Test in Webchat** under the bot management header of the Web App Bot view. 
 
 ![Azure Echo bot](media/bot-builder-tools/az-echo-bot.png) 
 
@@ -110,7 +114,7 @@ To download your bot source code from the portal, simply select your bot resourc
 To download your bot source using the CLI, you need to specify the target directory to save your bot's source code, enter the following to download the bot source code locally:
 
 ```
-az bot download --file-save-path "file-path" --name "resource name of bot" --resource-group "name of resource group"
+az bot download --name "resource name of bot" --resource-group "name of resource group"
 ```
 For example - 
 ![CLI download command](media/bot-builder-tools/cli-bot-download-command.png)
