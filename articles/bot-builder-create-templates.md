@@ -37,24 +37,24 @@ From the command line, cd into a new folder of your choosing. There are two avai
 To install the **Node.js v3 Botbuilder** template generator:
 
 ```
-> npm install generator-botbuilder-v3
+npm install generator-botbuilder
 ```
 
 To install the **Node.js v4 Botbuilder** template generator:
 ```
-> npm install generator-botbuilder-js
+npm install generator-botbuilder@preview
 ```
 
 The Python and Java templates are **only available in v4**. 
 
 For **Python**:
 ```
-> npm install generator-botbuilder-python
+npm install generator-botbuilder-python
 ```
 
 For **Java**:
 ```
-> npm install generator-botbuilder-java
+npm install generator-botbuilder-java
 ```
 
 After a generator is installed, you can simply run the **yo** command in your CLI to view a list of generators available in Yeoman.
