@@ -28,9 +28,9 @@ Ensuring that each small piece of your app, or in this case our bot, works exact
 
 **Use mock elements to test individual sections**
 
-Mocking as many elements as you can allows for better isolation of the piece you’re testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else you can that is not directly part of your bot. This could also be removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
+Mocking as many elements as you can allows for better isolation of the piece you’re testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also be removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
 
-Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it’s not necessary, or simply force it do nothing. 
+Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it’s not necessary, or simply force it to do nothing. 
 
 This level should exercise individual methods and functions within your bot. Testing individual methods could be through built in unit tests, which are recommended, with your own testing app or test suite, or manually doing so within your IDE. 
 
@@ -38,13 +38,12 @@ This level should exercise individual methods and functions within your bot. Tes
 
 Once you are happy with how each method behaves, use these mock elements to test more complete features in your bot. This demonstrates how a few layers work together to converse with your user. 
 
-A handful of tools are provided to help with this:
-* Add links to tools to help mock this up, azure team response to Jonathan
-* [Azure Bot Framework Emulator]( https://github.com/Microsoft/BotFramework-Emulator) provides an emulated channel to communicate with your bot. Using the emulator gets into a more complex situation than just unit and integration testing, and therefore also spills over into the next level of testing.
+A handful of tools are provided to help with this. For example,
+the [Azure Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator) provides an emulated channel to communicate with your bot. Using the emulator gets into a more complex situation than just unit and integration testing, and therefore also spills over into the next level of testing.
 
 ### Level 2: Use a Direct Line client
 
-After verifying your bot appears to work how you’d like it to, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server and create your own Direct Line client (link to direct line info) for your bot to connect to.
+After verifying your bot appears to work how you’d like it to, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server and create your own [Direct Line client](bot-builder-howto-direct-line.md) for your bot to connect to.
 
 Creating your own client allows you to define the inner workings of the channel, as well as specifically test how your bot responds to certain activity exchanges. Once connected to your client, run your tests to set up your bot state and verify your features. If your bot utilizes a feature like speech, using these channels can offer a way to verify that functionality.
 
@@ -64,7 +63,7 @@ Different types of testing can be done in conjunction with the above levels or f
 
 Debugging your bot works similarly to other multi-threaded apps, with the ability to set breakpoints or use features like the immediate window. 
 
-Bots follow an event driven programming paradigm, which can be hard to rationalize if you’re not familiar with it. The idea of your bot being stateless, multi-threaded, and dealing with async/await calls can result in unsuspecting bugs. While debugging your bot works similarly to other mutli-threaded apps, we’ll cover some suggestions, tools, and resources to help.
+Bots follow an event driven programming paradigm, which can be hard to rationalize if you’re not familiar with it. The idea of your bot being stateless, multi-threaded, and dealing with async/await calls can result in unexpected bugs. While debugging your bot works similarly to other multi-threaded apps, we’ll cover some suggestions, tools, and resources to help.
 
 **Understanding bot activities with the emulator**
 
@@ -78,7 +77,7 @@ If you are using multiple pieces of middleware the delegate may pass execution t
 
 If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-activity-processing.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
 
-Understanding when, and why, middleware short-circuits, indicates which piece of middleware should come first in your pipeline. Understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try [creating your own middleware](bot-builder-create-middleware.md) first to experiment a bit before diving into the build-in middleware.
+Understanding when, and why, middleware short-circuits, indicates which piece of middleware should come first in your pipeline. Understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try [creating your own middleware](bot-builder-create-middleware.md) first to experiment a bit before diving into the built-in middleware.
 
 For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain interactions and short-circuit the pipeline when it does, which can be confusing when first learning how to use it.
 
