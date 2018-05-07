@@ -12,6 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Language Understanding for bots
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Bots can use a variety of conversational styles, from the structured and guided to the free-form and open-ended. A bot needs to decide what to do next in its conversation flow, based on what the user said, and in an open-ended conversation, there is a wider range of user replies.
 
