@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 04/25/2018
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Create bots with Azure CLI
