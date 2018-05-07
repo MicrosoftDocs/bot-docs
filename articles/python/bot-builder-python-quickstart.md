@@ -129,3 +129,10 @@ Next, start the emulator and then connect to your bot in the emulator:
 2. Click **Save and connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. 
 
 Type **Hello** in the emulator, and the bot will echo back **You said "Hello"**.
+
+## Next steps
+
+Next, jump into the concepts that explain a bot and how it works.
+
+> [!div class="nextstepaction"]
+> [Basic Bot concepts](../v4sdk/bot-builder-basics.md)
