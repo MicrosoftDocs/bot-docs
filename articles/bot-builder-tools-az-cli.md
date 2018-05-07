@@ -41,6 +41,9 @@ You can now manage bots using [Azure CLI](https://docs.microsoft.com/en-us/cli/a
 ```
 az extension add -n botservice
 ```
+
+>[!TIP]
+> The Azure Bot Extension currently only supports v3 bots
   
 3. [Login](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) to Azure CLI by running the following:
 
@@ -227,25 +230,44 @@ You can also add multiple questions to the same answer by simply adding new line
 
 After you've defined LUIS or QnA language components in the .lu format, you can publish out to a LUIS .json, QnA .json, or QnA .tsv file. When run, the LUDown tool will look for any .lu files within the same working directory to parse. Since the LUDown tool can target both LUIS or QnA with .lu files, we simply need to specify which language service to generate for, using the general command **ludown parse <Service> -- in <luFile>**. 
 
-In our sample working directory, we have two .lu files to parse, '1.lu' to create LUIS model, and 'qna1.lu' to create a QnA knowledge base.
+In our sample working directory, we have two .lu files to parse, 'luis-sample.lu' to create LUIS model, and 'qna-sample.lu' to create a QnA knowledge base.
+
 
 #### Generate LUIS .json models
+
+**luis-sample.lu** 
+```markdown
+# Greeting
+- Hi
+- Hello
+- Good morning
+- Good evening
+```
 
 To generate a LUIS model using LUDown, in your current working directory simply enter the following:
 
 ```shell
 ludown parse ToLuis --in <luFile> 
 ```
-![LUDown LUIS create](media/bot-builder-tools/ludown-luis-create.png)
 
 #### Generate QnA Knowledge Base .json
+
+**qna-sample.lu**
+```
+> # QnA Definitions
+> This is a QnA definition. Follows # ? Question: \<list of questions\> \```markdown \<Answer> ``` format
+
+### ? How do I change the default message
+```markdown
+You can change the default message if you use the QnAMakerDialog. 
+See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details. 
+```
 
 Similarly, to create a QnA knowledge base, you only need to change the parse target. 
 
 ```shell
 ludown parse ToQna --in <luFile> 
 ```
-![LUDown QnA create](media/bot-builder-tools/ludown-qna-create.png)
 
 The resulting JSON files can be consumed by LUIS and QnA either through their respective portals, or via the new CLI tools. 
 
@@ -263,10 +285,10 @@ The basic command usage for the LUIS tool from the CLI is:
 ```shell
 luis <action> <resource> <args...>
 ```
-To connect your bot to LUIS, you will need to create a **.luisrc** file. This is a configuration file which provisions your LUIS appID and password to the service endpoint when your application makes outbound calls. You can create this file by running **luis --init** as follows:
+To connect your bot to LUIS, you will need to create a **.luisrc** file. This is a configuration file which provisions your LUIS appID and password to the service endpoint when your application makes outbound calls. You can create this file by running **luis init** as follows:
 
 ```shell
-> luis --init
+> luis init
 ```
 You will be prompted in the terminal to enter your LUIS authoring key, region, and appID before the tool will generate the file.  
 
@@ -286,10 +308,10 @@ Included in the new tool set is a [QnA extension](https://github.com/Microsoft/b
 ```
 npm install -g qnamaker
 ```
-With the QnA maker tool, you can create, update, publish, delete, and train your knowledge base. To get started, you need to create a **.qnamakerrc** file is required to enable the endpoint to your service. You can easily create this file by running **qnamaker --init** and following the prompts. 
+With the QnA maker tool, you can create, update, publish, delete, and train your knowledge base. To get started, you need to create a **.qnamakerrc** file is required to enable the endpoint to your service. You can easily create this file by running **qnamaker init** and following the prompts along with your QnA Maker knowledge base ID. 
 
 ```
-qnamaker --init 
+qnamaker init 
 ```
 ![QnaMaker init](media/bot-builder-tools/qnamaker-init.png)
 

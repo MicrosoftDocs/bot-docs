@@ -182,7 +182,6 @@ The LUDown tool will automatically separate question and answers into a qnamaker
   See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details. 
   ```
 
-
 You can also add multiple questions to the same answer by simply adding new lines of variations of questions for a single answer. 
 
 ```markdown
@@ -191,8 +190,6 @@ You can also add multiple questions to the same answer by simply adding new line
   ```markdown
     I'm the echoBot! Nice to meet you.
   ```
-
-
 
 ### Generating .json models with LUDown
 
@@ -207,7 +204,6 @@ To generate a LUIS model using LUDown, in your current working directory simply 
 ```shell
 ludown parse ToLuis --in <luFile> 
 ```
-![LUDown LUIS create](media/bot-builder-tools/ludown-luis-create.png)
 
 #### Generate QnA Knowledge Base .json
 
@@ -216,7 +212,6 @@ Similarly, to create a QnA knowledge base, you only need to change the parse tar
 ```shell
 ludown parse ToQna --in <luFile> 
 ```
-![LUDown QnA create](media/bot-builder-tools/ludown-qna-create.png)
 
 The resulting JSON files can be consumed by LUIS and QnA either through their respective portals, or via the new CLI tools. 
 
@@ -234,10 +229,10 @@ The basic command usage for the LUIS tool from the CLI is:
 ```shell
 luis <action> <resource> <args...>
 ```
-To connect your bot to LUIS, you will need to create a **.luisrc** file. This is a configuration file which provisions your LUIS appID and password to the service endpoint when your application makes outbound calls. You can create this file by running **luis --init** as follows:
+To connect your bot to LUIS, you will need to create a **.luisrc** file. This is a configuration file which provisions your LUIS appID and password to the service endpoint when your application makes outbound calls. You can create this file by running **luis init** as follows:
 
 ```shell
-> luis --init
+> luis init
 ```
 You will be prompted in the terminal to enter your LUIS authoring key, region, and appID before the tool will generate the file.  
 
@@ -257,10 +252,10 @@ Included in the new tool set is a [QnA extension](https://github.com/Microsoft/b
 ```
 npm install -g qnamaker
 ```
-With the QnA maker tool, you can create, update, publish, delete, and train your knowledge base. To get started, you need to create a **.qnamakerrc** file is required to enable the endpoint to your service. You can easily create this file by running **qnamaker --init** and following the prompts. 
+With the QnA maker tool, you can create, update, publish, delete, and train your knowledge base. To get started, you need to create a **.qnamakerrc** file is required to enable the endpoint to your service. You can easily create this file by running **qnamaker init** and following the prompts and provision your QnA Maker knowledge base ID. 
 
 ```
-qnamaker --init 
+qnamaker init 
 ```
 ![QnaMaker init](media/bot-builder-tools/qnamaker-init.png)
 
@@ -269,15 +264,6 @@ Once your .qnamakerrc file is generated, you can now connect to your QnA knowled
 ```
 qnamaker create --in qnaKB.json --msbot | msbot connect qna --stdin
 ```
-
-## Publish to Azure from the CLI
-
-After making changes to your bot's source code, you can seamlessly publish your changes by running the following:
-
-```
-az bot publish --name "bot name" --resource-group "resource group name"
-```
-
 
 ## References
 - [BotBuilder Tools Source Code](https://github.com/Microsoft/botbuilder-tools)
