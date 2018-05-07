@@ -1,0 +1,77 @@
+﻿<Type Name="BoolDefault" FullName="Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault">
+  <TypeSignature Language="C#" Value="public enum BoolDefault" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BoolDefault extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BoolDefault" />
+  <TypeSignature Language="F#" Value="type BoolDefault = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault False = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="F#" Value="False = 2" Usage="Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault True = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.BoolDefault</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

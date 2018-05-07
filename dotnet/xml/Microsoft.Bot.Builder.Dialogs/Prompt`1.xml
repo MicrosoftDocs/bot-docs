@@ -1,0 +1,171 @@
+﻿<Type Name="Prompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Prompt&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class Prompt&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Dialog, Microsoft.Bot.Builder.Dialogs.IDialogContinue where T : PromptResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Prompt`1&lt;(class Microsoft.Bot.Builder.Prompts.PromptResult) T&gt; extends Microsoft.Bot.Builder.Dialogs.Dialog implements class Microsoft.Bot.Builder.Dialogs.IDialog, class Microsoft.Bot.Builder.Dialogs.IDialogContinue" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Prompt`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Prompt(Of T)&#xA;Inherits Dialog&#xA;Implements IDialogContinue" />
+  <TypeSignature Language="F#" Value="type Prompt&lt;'T (requires 'T :&gt; PromptResult)&gt; = class&#xA;    inherit Dialog&#xA;    interface IDialogContinue&#xA;    interface IDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>Microsoft.Bot.Builder.Prompts.PromptResult</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialogContinue</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>
+            Basic configuration options supported by all prompts.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Prompt ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompt`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogBegin">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DialogBegin (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Collections.Generic.IDictionary&lt;string,object&gt; dialogArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DialogBegin(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dialogArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompt`1.DialogBegin(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DialogBegin (dc As DialogContext, dialogArgs As IDictionary(Of String, Object)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DialogBegin : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.DialogBegin : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="prompt.DialogBegin (dc, dialogArgs)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog.DialogBegin(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Prompt`1/&lt;DialogBegin&gt;d__2))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="dialogArgs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="dialogArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogContinue">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DialogContinue (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DialogContinue(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompt`1.DialogContinue(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DialogContinue (dc As DialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DialogContinue : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&#xA;override this.DialogContinue : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task" Usage="prompt.DialogContinue dc" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialogContinue.DialogContinue(Microsoft.Bot.Builder.Dialogs.DialogContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Prompt`1/&lt;DialogContinue&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrompt">
+      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task OnPrompt (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnPrompt(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompt`1.OnPrompt(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnPrompt (dc As DialogContext, options As PromptOptions, isRetry As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnPrompt : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.PromptOptions * bool -&gt; System.Threading.Tasks.Task" Usage="prompt.OnPrompt (dc, options, isRetry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
+        <Parameter Name="isRetry" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="isRetry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecognize">
+      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task&lt;T&gt; OnRecognize (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; OnRecognize(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompt`1.OnRecognize(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.PromptOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnRecognize (dc As DialogContext, options As PromptOptions) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member OnRecognize : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.PromptOptions -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.Prompts.PromptResult)&gt;" Usage="prompt.OnRecognize (dc, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

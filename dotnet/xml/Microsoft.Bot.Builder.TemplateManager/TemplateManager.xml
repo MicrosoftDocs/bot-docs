@@ -1,0 +1,206 @@
+﻿<Type Name="TemplateManager" FullName="Microsoft.Bot.Builder.TemplateManager.TemplateManager">
+  <TypeSignature Language="C#" Value="public class TemplateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TemplateManager.TemplateManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateManager" />
+  <TypeSignature Language="F#" Value="type TemplateManager = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            TemplateManager manages set of ITemplateRenderer implementations
+            </summary>
+    <remarks>
+            ITemplateRenderer implements 
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLanguagePolicy">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; GetLanguagePolicy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetLanguagePolicy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.GetLanguagePolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLanguagePolicy () As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.GetLanguagePolicy : unit -&gt; seq&lt;string&gt;" Usage="templateManager.GetLanguagePolicy " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt; List ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt; List() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.List" />
+      <MemberSignature Language="VB.NET" Value="Public Function List () As IList(Of ITemplateRenderer)" />
+      <MemberSignature Language="F#" Value="member this.List : unit -&gt; System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;" Usage="templateManager.List " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            List registered template engines
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.TemplateManager.TemplateManager Register (Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer renderer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.TemplateManager.TemplateManager Register(class Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer renderer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.Register(Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Register (renderer As ITemplateRenderer) As TemplateManager" />
+      <MemberSignature Language="F#" Value="member this.Register : Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer -&gt; Microsoft.Bot.Builder.TemplateManager.TemplateManager" Usage="templateManager.Register renderer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.TemplateManager.TemplateManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="renderer" Type="Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer" />
+      </Parameters>
+      <Docs>
+        <param name="renderer"></param>
+        <summary>
+            Add a template engine for binding templates
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTemplate">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Activity&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (context As ITurnContext, language As String, templateId As String, Optional data As Object = null) As Task(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;" Usage="templateManager.RenderTemplate (context, language, templateId, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.TemplateManager.TemplateManager/&lt;RenderTemplate&gt;d__8))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="templateId" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context"></param>
+        <param name="language"></param>
+        <param name="templateId"></param>
+        <param name="data"></param>
+        <summary>
+            Render the template
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyWith">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReplyWith (Microsoft.Bot.Builder.ITurnContext context, string templateId, object data = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReplyWith(class Microsoft.Bot.Builder.ITurnContext context, string templateId, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.ReplyWith(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReplyWith (context As ITurnContext, templateId As String, Optional data As Object = null) As Task" />
+      <MemberSignature Language="F#" Value="member this.ReplyWith : Microsoft.Bot.Builder.ITurnContext * string * obj -&gt; System.Threading.Tasks.Task" Usage="templateManager.ReplyWith (context, templateId, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.TemplateManager.TemplateManager/&lt;ReplyWith&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="templateId" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context"></param>
+        <param name="templateId"></param>
+        <param name="data"></param>
+        <summary>
+            Send a reply with the template
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLanguagePolicy">
+      <MemberSignature Language="C#" Value="public void SetLanguagePolicy (System.Collections.Generic.IEnumerable&lt;string&gt; languageFallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLanguagePolicy(class System.Collections.Generic.IEnumerable`1&lt;string&gt; languageFallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.SetLanguagePolicy(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLanguagePolicy (languageFallback As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="member this.SetLanguagePolicy : seq&lt;string&gt; -&gt; unit" Usage="templateManager.SetLanguagePolicy languageFallback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="languageFallback" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="languageFallback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

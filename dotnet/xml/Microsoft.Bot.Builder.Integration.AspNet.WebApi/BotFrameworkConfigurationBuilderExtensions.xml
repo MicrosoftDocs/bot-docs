@@ -1,0 +1,55 @@
+﻿<Type Name="BotFrameworkConfigurationBuilderExtensions" FullName="Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilderExtensions">
+  <TypeSignature Language="C#" Value="public static class BotFrameworkConfigurationBuilderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotFrameworkConfigurationBuilderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilderExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module BotFrameworkConfigurationBuilderExtensions" />
+  <TypeSignature Language="F#" Value="type BotFrameworkConfigurationBuilderExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseMicrosoftApplicationIdentity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder UseMicrosoftApplicationIdentity (this Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder builder, string applicationId, string applicationPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder UseMicrosoftApplicationIdentity(class Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder builder, string applicationId, string applicationPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilderExtensions.UseMicrosoftApplicationIdentity(Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseMicrosoftApplicationIdentity (builder As BotFrameworkConfigurationBuilder, applicationId As String, applicationPassword As String) As BotFrameworkConfigurationBuilder" />
+      <MemberSignature Language="F#" Value="static member UseMicrosoftApplicationIdentity : Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder * string * string -&gt; Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder" Usage="Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilderExtensions.UseMicrosoftApplicationIdentity (builder, applicationId, applicationPassword)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder" RefType="this" />
+        <Parameter Name="applicationId" Type="System.String" />
+        <Parameter Name="applicationPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder" /></param>
+        <param name="applicationId">The application id that should be used to authenticate requests made to the Bot Framework.</param>
+        <param name="applicationPassword">The application password that should be used to authenticate requests made to the Bot Framework.</param>
+        <summary>
+            Configures the bot with the a single identity that will be used to authenticate requests made to the Bot Framework.
+            </summary>
+        <returns>A reference to this instance after the operation has completed.</returns>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <altmember cref="T:Microsoft.Bot.Connector.Authentication.SimpleCredentialProvider" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

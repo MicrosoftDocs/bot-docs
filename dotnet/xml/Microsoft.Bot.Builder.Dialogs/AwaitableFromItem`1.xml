@@ -104,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#IsCompleted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAwaiter(Of T).IsCompleted" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.AwaitableFromItem&lt;'T&gt;.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.IsCompleted</InterfaceMember>

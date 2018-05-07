@@ -1,0 +1,20 @@
+<Type Name="ConnectorClientExtensions" FullName="Microsoft.Bot.Connector.ConnectorClientExtensions">
+  <TypeSignature Language="C#" Value="public static class ConnectorClientExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConnectorClientExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConnectorClientExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConnectorClientExtensions" />
+  <TypeSignature Language="F#" Value="type ConnectorClientExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

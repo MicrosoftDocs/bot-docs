@@ -1,0 +1,297 @@
+﻿<Type Name="ResumptionCookie" FullName="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie">
+  <TypeSignature Language="C#" Value="public sealed class ResumptionCookie : IEquatable&lt;Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ResumptionCookie extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResumptionCookie&#xA;Implements IEquatable(Of ResumptionCookie)" />
+  <TypeSignature Language="F#" Value="type ResumptionCookie = class&#xA;    interface IEquatable&lt;ResumptionCookie&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use ConversationReference.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResumptionCookie (Microsoft.Bot.Schema.IMessageActivity msg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.IMessageActivity msg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Schema.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As IMessageActivity)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie : Microsoft.Bot.Schema.IMessageActivity -&gt; Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie msg" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="msg" Type="Microsoft.Bot.Schema.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="msg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResumptionCookie (Microsoft.Bot.Builder.Classic.Dialogs.Address address, string userName, bool isGroup, string locale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Classic.Dialogs.Address address, string userName, bool isGroup, string locale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Classic.Dialogs.Address,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie : Microsoft.Bot.Builder.Classic.Dialogs.Address * string * bool * string -&gt; Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie (address, userName, isGroup, locale)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="address" Type="Microsoft.Bot.Builder.Classic.Dialogs.Address" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="isGroup" Type="System.Boolean" />
+        <Parameter Name="locale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="userName">To be added.</param>
+        <param name="isGroup">To be added.</param>
+        <param name="locale">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Classic.Dialogs.IAddress Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Classic.Dialogs.IAddress Address" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As IAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : Microsoft.Bot.Builder.Classic.Dialogs.IAddress with get, set" Usage="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Dialogs.IAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.Equals(Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ResumptionCookie) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie -&gt; bool" Usage="resumptionCookie.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="resumptionCookie.Equals other" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="resumptionCookie.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessage">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity GetMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity GetMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.GetMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMessage () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetMessage : unit -&gt; Microsoft.Bot.Schema.Activity" Usage="resumptionCookie.GetMessage " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GZipDeserialize">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie GZipDeserialize (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie GZipDeserialize(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.GZipDeserialize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GZipDeserialize (str As String) As ResumptionCookie" />
+      <MemberSignature Language="F#" Value="static member GZipDeserialize : string -&gt; Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie" Usage="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.GZipDeserialize str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGroup">
+      <MemberSignature Language="C#" Value="public bool IsGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.IsGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsGroup As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGroup : bool with get, set" Usage="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.IsGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrustedServiceUrl">
+      <MemberSignature Language="C#" Value="public bool IsTrustedServiceUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTrustedServiceUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.IsTrustedServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTrustedServiceUrl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTrustedServiceUrl : bool" Usage="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.IsTrustedServiceUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public string UserName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
+      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

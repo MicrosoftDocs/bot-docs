@@ -1,0 +1,63 @@
+﻿<Type Name="Pair" FullName="Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair">
+  <TypeSignature Language="C#" Value="public static class Pair" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Pair extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair" />
+  <TypeSignature Language="VB.NET" Value="Public Class Pair" />
+  <TypeSignature Language="F#" Value="type Pair = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair&lt;T1,T2&gt; Create&lt;T1,T2&gt; (T1 one, T2 two) where T1 : IEquatable&lt;T1&gt;, IComparable&lt;T1&gt; where T2 : IEquatable&lt;T2&gt;, IComparable&lt;T2&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair`2&lt;!!T1, !!T2&gt; Create&lt;(class System.IEquatable`1&lt;!!T1&gt;, class System.IComparable`1&lt;!!T1&gt;) T1, (class System.IEquatable`1&lt;!!T2&gt;, class System.IComparable`1&lt;!!T2&gt;) T2&gt;(!!T1 one, !!T2 two) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair.Create``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1 As {IEquatable(Of T1), IComparable(Of T1)}, T2 As {IEquatable(Of T1), IComparable(Of T1)}) (one As T1, two As T2) As Pair(Of T1, T2)" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 -&gt; Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair&lt;'T1, 'T2 (requires 'T1 :&gt; IEquatable&lt;'T1&gt; and 'T1 :&gt; IComparable&lt;'T1&gt; and 'T2 :&gt; IEquatable&lt;'T2&gt; and 'T2 :&gt; IComparable&lt;'T2&gt;)&gt; (requires 'T1 :&gt; IEquatable&lt;'T1&gt; and 'T1 :&gt; IComparable&lt;'T1&gt; and 'T2 :&gt; IEquatable&lt;'T2&gt; and 'T2 :&gt; IComparable&lt;'T2&gt;)" Usage="Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair.Create (one, two)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Internals.Fibers.Pair&lt;T1,T2&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T1&gt;</InterfaceName>
+            <InterfaceName>System.IComparable&lt;T1&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T2&gt;</InterfaceName>
+            <InterfaceName>System.IComparable&lt;T2&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="one" Type="T1" />
+        <Parameter Name="two" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="one">To be added.</param>
+        <param name="two">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

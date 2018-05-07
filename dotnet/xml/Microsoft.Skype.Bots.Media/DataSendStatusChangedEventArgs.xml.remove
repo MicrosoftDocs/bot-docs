@@ -1,0 +1,61 @@
+<Type Name="DataSendStatusChangedEventArgs" FullName="Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class DataSendStatusChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataSendStatusChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataSendStatusChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DataSendStatusChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Reserved for the internal use.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataSendStatusChangedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaSendStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Skype.Bots.Media.MediaSendStatus MediaSendStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs.MediaSendStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaSendStatus As MediaSendStatus" />
+      <MemberSignature Language="F#" Value="member this.MediaSendStatus : Microsoft.Skype.Bots.Media.MediaSendStatus with get, set" Usage="Microsoft.Skype.Bots.Media.DataSendStatusChangedEventArgs.MediaSendStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Skype.Bots.Media.MediaSendStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reserved for the internal use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

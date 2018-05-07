@@ -1,0 +1,48 @@
+﻿<Type Name="ITranscriptLogger" FullName="Microsoft.Bot.Builder.Core.Extensions.ITranscriptLogger">
+  <TypeSignature Language="C#" Value="public interface ITranscriptLogger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITranscriptLogger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Core.Extensions.ITranscriptLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITranscriptLogger" />
+  <TypeSignature Language="F#" Value="type ITranscriptLogger = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Transcript logger stores activities for conversations for recall
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LogActivity">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LogActivity (Microsoft.Bot.Schema.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LogActivity(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.ITranscriptLogger.LogActivity(Microsoft.Bot.Schema.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogActivity (activity As IActivity) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LogActivity : Microsoft.Bot.Schema.IActivity -&gt; System.Threading.Tasks.Task" Usage="iTranscriptLogger.LogActivity activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+      </Parameters>
+      <Docs>
+        <param name="activity"></param>
+        <summary>
+            Log an activity to the transcript
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

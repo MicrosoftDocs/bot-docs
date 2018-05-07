@@ -1,0 +1,263 @@
+﻿<Type Name="PaymentRequest" FullName="Microsoft.Bot.Schema.PaymentRequest">
+  <TypeSignature Language="C#" Value="public class PaymentRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.PaymentRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentRequest" />
+  <TypeSignature Language="F#" Value="type PaymentRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A request to make a payment
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.PaymentRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentRequest class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequest (string id = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentMethodData&gt; methodData = null, Microsoft.Bot.Schema.PaymentDetails details = null, Microsoft.Bot.Schema.PaymentOptions options = null, string expires = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.PaymentMethodData&gt; methodData, class Microsoft.Bot.Schema.PaymentDetails details, class Microsoft.Bot.Schema.PaymentOptions options, string expires) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.PaymentRequest.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.PaymentMethodData},Microsoft.Bot.Schema.PaymentDetails,Microsoft.Bot.Schema.PaymentOptions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional methodData As IList(Of PaymentMethodData) = null, Optional details As PaymentDetails = null, Optional options As PaymentOptions = null, Optional expires As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.PaymentRequest : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentMethodData&gt; * Microsoft.Bot.Schema.PaymentDetails * Microsoft.Bot.Schema.PaymentOptions * string -&gt; Microsoft.Bot.Schema.PaymentRequest" Usage="new Microsoft.Bot.Schema.PaymentRequest (id, methodData, details, options, expires)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="methodData" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentMethodData&gt;" />
+        <Parameter Name="details" Type="Microsoft.Bot.Schema.PaymentDetails" />
+        <Parameter Name="options" Type="Microsoft.Bot.Schema.PaymentOptions" />
+        <Parameter Name="expires" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">ID of this payment request</param>
+        <param name="methodData">Allowed payment methods for this
+            request</param>
+        <param name="details">Details for this request</param>
+        <param name="options">Provides information about the options
+            desired for the payment request</param>
+        <param name="expires">Expiration for this request, in ISO 8601
+            duration format (e.g., 'P1D')</param>
+        <summary>
+            Initializes a new instance of the PaymentRequest class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Details">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.PaymentDetails Details { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.PaymentDetails Details" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.PaymentRequest.Details" />
+      <MemberSignature Language="VB.NET" Value="Public Property Details As PaymentDetails" />
+      <MemberSignature Language="F#" Value="member this.Details : Microsoft.Bot.Schema.PaymentDetails with get, set" Usage="Microsoft.Bot.Schema.PaymentRequest.Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.PaymentDetails</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets details for this request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expires">
+      <MemberSignature Language="C#" Value="public string Expires { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Expires" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.PaymentRequest.Expires" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expires As String" />
+      <MemberSignature Language="F#" Value="member this.Expires : string with get, set" Usage="Microsoft.Bot.Schema.PaymentRequest.Expires" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expires")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets expiration for this request, in ISO 8601 duration
+            format (e.g., 'P1D')
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.PaymentRequest.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Schema.PaymentRequest.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets ID of this payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodData">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentMethodData&gt; MethodData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.PaymentMethodData&gt; MethodData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.PaymentRequest.MethodData" />
+      <MemberSignature Language="VB.NET" Value="Public Property MethodData As IList(Of PaymentMethodData)" />
+      <MemberSignature Language="F#" Value="member this.MethodData : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentMethodData&gt; with get, set" Usage="Microsoft.Bot.Schema.PaymentRequest.MethodData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="methodData")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentMethodData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets allowed payment methods for this request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.PaymentOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.PaymentOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.PaymentRequest.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As PaymentOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : Microsoft.Bot.Schema.PaymentOptions with get, set" Usage="Microsoft.Bot.Schema.PaymentRequest.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="options")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.PaymentOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets provides information about the options desired for the
+            payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaymentActionType">
+      <MemberSignature Language="C#" Value="public const string PaymentActionType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PaymentActionType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.PaymentRequest.PaymentActionType" />
+      <MemberSignature Language="VB.NET" Value="Public Const PaymentActionType As String " />
+      <MemberSignature Language="F#" Value="val mutable PaymentActionType : string" Usage="Microsoft.Bot.Schema.PaymentRequest.PaymentActionType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Action type for Payment action
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaymentContentType">
+      <MemberSignature Language="C#" Value="public const string PaymentContentType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PaymentContentType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.PaymentRequest.PaymentContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const PaymentContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable PaymentContentType : string" Usage="Microsoft.Bot.Schema.PaymentRequest.PaymentContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content-type for Payment card
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

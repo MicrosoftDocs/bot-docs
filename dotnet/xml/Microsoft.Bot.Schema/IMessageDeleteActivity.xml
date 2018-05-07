@@ -1,0 +1,24 @@
+﻿<Type Name="IMessageDeleteActivity" FullName="Microsoft.Bot.Schema.IMessageDeleteActivity">
+  <TypeSignature Language="C#" Value="public interface IMessageDeleteActivity : Microsoft.Bot.Schema.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageDeleteActivity implements class Microsoft.Bot.Schema.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IMessageDeleteActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageDeleteActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IMessageDeleteActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Indicates a delete of an existing Message Activity
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

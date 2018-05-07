@@ -166,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#IsCompleted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAwaiter(Of T).IsCompleted" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt;'C, 'T&gt;.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.IsCompleted</InterfaceMember>
@@ -238,6 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemType As Type Implements IWait.ItemType" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt;'C, 'T&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType</InterfaceMember>
@@ -260,6 +262,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Internals.Fibers.Need Microsoft.Bot.Builder.Internals.Fibers.IWait.Need" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Need As Need Implements IWait.Need" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt;'C, 'T&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.Need" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.Need</InterfaceMember>
@@ -282,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property NeedType As Type Implements IWait.NeedType" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt;'C, 'T&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType</InterfaceMember>
@@ -333,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Delegate Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Wait`2.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Rest As Delegate Implements IWait.Rest" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Wait&lt;'C, 'T&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest</InterfaceMember>

@@ -1,0 +1,203 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Connector.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.AnimationCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.AnimationCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AnimationCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As AnimationCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.AnimationCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.AnimationCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.AnimationCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.AnimationCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.AudioCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.AudioCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.AudioCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As AudioCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.AudioCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.AudioCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.AudioCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.AudioCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.HeroCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.HeroCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.HeroCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As HeroCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.HeroCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.HeroCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.HeroCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.HeroCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.ReceiptCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.ReceiptCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ReceiptCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As ReceiptCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.ReceiptCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.ReceiptCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.ReceiptCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.ReceiptCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.SigninCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.SigninCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.SigninCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As SigninCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.SigninCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.SigninCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.SigninCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.SigninCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.ThumbnailCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.ThumbnailCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.ThumbnailCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As ThumbnailCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.ThumbnailCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.ThumbnailCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.ThumbnailCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.ThumbnailCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Attachment ToAttachment (this Microsoft.Bot.Connector.VideoCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Attachment ToAttachment(class Microsoft.Bot.Connector.VideoCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Extensions.ToAttachment(Microsoft.Bot.Connector.VideoCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As VideoCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Connector.VideoCard -&gt; Microsoft.Bot.Connector.Attachment" Usage="Microsoft.Bot.Connector.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Connector.VideoCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Connector.VideoCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Connector.VideoCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

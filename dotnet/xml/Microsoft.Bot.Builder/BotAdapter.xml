@@ -1,0 +1,329 @@
+﻿<Type Name="BotAdapter" FullName="Microsoft.Bot.Builder.BotAdapter">
+  <TypeSignature Language="C#" Value="public abstract class BotAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BotAdapter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.BotAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BotAdapter" />
+  <TypeSignature Language="F#" Value="type BotAdapter = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.11</AssemblyVersion>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a bot adapter that can connect a bot to a service endpoint. 
+            This class is abstract.
+            </summary>
+    <remarks>The bot adapter encapsulates authentication processes and sends 
+            activities to and receives activities from the Bot Connector Service. When your 
+            bot receives an activity, the adapter creates a context object, passes it to your 
+            bot's application logic, and sends responses back to the user's channel.
+            <para>Use <see cref="M:Microsoft.Bot.Builder.BotAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" /> to add <see cref="T:Microsoft.Bot.Builder.IMiddleware" /> objects 
+            to your adapter’s middleware collection. The adapter processes and directs 
+            incoming activities in through the bot middleware pipeline to your bot’s logic 
+            and then back out again. As each activity flows in and out of the bot, each piece 
+            of middleware can inspect or act upon the activity, both before and after the bot 
+            logic runs.</para></remarks>
+    <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
+    <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
+    <altmember cref="T:Microsoft.Bot.IBot" />
+    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a default adapter.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_middlewareSet">
+      <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.MiddlewareSet _middlewareSet;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.MiddlewareSet _middlewareSet" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.BotAdapter._middlewareSet" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly _middlewareSet As MiddlewareSet " />
+      <MemberSignature Language="F#" Value="val mutable _middlewareSet : Microsoft.Bot.Builder.MiddlewareSet" Usage="Microsoft.Bot.Builder.BotAdapter._middlewareSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.MiddlewareSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The collection of middleware in the adapter's pipeline.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueConversation">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task ContinueConversation (string botId, Microsoft.Bot.Schema.ConversationReference reference, Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ContinueConversation(string botId, class Microsoft.Bot.Schema.ConversationReference reference, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, class System.Threading.Tasks.Task&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.ContinueConversation(System.String,Microsoft.Bot.Schema.ConversationReference,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContinueConversation (botId As String, reference As ConversationReference, callback As Func(Of ITurnContext, Task)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ContinueConversation : string * Microsoft.Bot.Schema.ConversationReference * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.ContinueConversation : string * Microsoft.Bot.Schema.ConversationReference * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="botAdapter.ContinueConversation (botId, reference, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="callback" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="botId">To be added.</param>
+        <param name="reference">A reference to the conversation to continue.</param>
+        <param name="callback">The method to call for the resulting bot turn.</param>
+        <summary>
+            Sends a proactive message to a conversation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>Call this method to proactively send a message to a conversation.
+            Most channels require a user to initaiate a conversation with a bot
+            before the bot can send activities to the user.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.BotAdapter.RunPipeline(Microsoft.Bot.Builder.ITurnContext,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task},System.Threading.CancellationTokenSource)" />
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConversation">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CreateConversation (string channelId, Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CreateConversation(string channelId, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, class System.Threading.Tasks.Task&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.CreateConversation(System.String,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConversation (channelId As String, callback As Func(Of ITurnContext, Task)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member CreateConversation : string * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.CreateConversation : string * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="botAdapter.CreateConversation (channelId, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.BotAdapter/&lt;CreateConversation&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="callback" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The ID of the channel.</param>
+        <param name="callback">A method to call when the new conversation is available.</param>
+        <summary>
+            Creates a conversation on the specified channel.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>No base implementation is provided.</remarks>
+        <exception cref="T:System.NotImplementedException" />
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteActivity">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task DeleteActivity (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Schema.ConversationReference reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivity(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Schema.ConversationReference reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.DeleteActivity(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteActivity (context As ITurnContext, reference As ConversationReference) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteActivity : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.ConversationReference -&gt; System.Threading.Tasks.Task" Usage="botAdapter.DeleteActivity (context, reference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context object for the turn.</param>
+        <param name="reference">Conversation reference for the activity to delete.</param>
+        <summary>
+            When overridden in a derived class, deletes an existing activity in the 
+            conversation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>The <see cref="P:Microsoft.Bot.Schema.ConversationReference.ActivityId" /> of the conversation
+            reference identifies the activity to delete.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.ITurnContext.OnDeleteActivity(Microsoft.Bot.Builder.DeleteActivityHandler)" />
+      </Docs>
+    </Member>
+    <Member MemberName="RunPipeline">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task RunPipeline (Microsoft.Bot.Builder.ITurnContext context, Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt; callback = null, System.Threading.CancellationTokenSource cancelToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task RunPipeline(class Microsoft.Bot.Builder.ITurnContext context, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, class System.Threading.Tasks.Task&gt; callback, class System.Threading.CancellationTokenSource cancelToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.RunPipeline(Microsoft.Bot.Builder.ITurnContext,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task},System.Threading.CancellationTokenSource)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function RunPipeline (context As ITurnContext, Optional callback As Func(Of ITurnContext, Task) = null, Optional cancelToken As CancellationTokenSource = null) As Task" />
+      <MemberSignature Language="F#" Value="member this.RunPipeline : Microsoft.Bot.Builder.ITurnContext * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; * System.Threading.CancellationTokenSource -&gt; System.Threading.Tasks.Task" Usage="botAdapter.RunPipeline (context, callback, cancelToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.BotAdapter/&lt;RunPipeline&gt;d__6))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="callback" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="cancelToken" Type="System.Threading.CancellationTokenSource" />
+      </Parameters>
+      <Docs>
+        <param name="context">The turn's context object.</param>
+        <param name="callback">A callback method to run at the end of the pipeline.</param>
+        <param name="cancelToken">A cancellation token for the task.</param>
+        <summary>
+            Starts activity processing for the current bot turn.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>The adapter calls middleware in the order in which you added it. 
+            The adapter passes in the context object for the turn and a next delegate, 
+            and the middleware calls the delegate to pass control to the next middleware 
+            in the pipeline. Once control reaches the end of the pipeline, the adapter calls 
+            the <paramref name="callback" /> method. If a middleware component doesn’t call 
+            the next delegate, the adapter does not call  any of the subsequent middleware’s 
+            <see cref="M:Microsoft.Bot.Builder.IMiddleware.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)" /> 
+            methods or the callback method, and the pipeline short circuits.
+            <para>When the turn is initiated by a user activity (reactive messaging), the
+            callback method will be a reference to the bot's 
+            <see cref="M:Microsoft.Bot.IBot.OnTurn(Microsoft.Bot.Builder.ITurnContext)" /> method. When the turn is
+            initiated by a call to <see cref="!:ContinueConversation(ConversationReference, Func&lt;ITurnContext, Task&gt;)" />
+            (proactive messaging), the callback method is the callback method that was provided in the call.</para></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivities">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivities (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Schema.Activity[] activities);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivities(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Schema.Activity[] activities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.SendActivities(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function SendActivities (context As ITurnContext, activities As Activity()) As Task(Of ResourceResponse())" />
+      <MemberSignature Language="F#" Value="abstract member SendActivities : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity[] -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;" Usage="botAdapter.SendActivities (context, activities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activities" Type="Microsoft.Bot.Schema.Activity[]" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context object for the turn.</param>
+        <param name="activities">The activities to send.</param>
+        <summary>
+            When overridden in a derived class, sends activities to the conversation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the activities are successfully sent, the task result contains
+            an array of <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> objects containing the IDs that 
+            the receiving channel assigned to the activities.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.ITurnContext.OnSendActivities(Microsoft.Bot.Builder.SendActivitiesHandler)" />
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateActivity">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivity (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivity(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.UpdateActivity(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateActivity : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="botAdapter.UpdateActivity (context, activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context object for the turn.</param>
+        <param name="activity">New replacement activity.</param>
+        <summary>
+            When overridden in a derived class, replaces an existing activity in the 
+            conversation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the activity is successfully sent, the task result contains
+            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving 
+            channel assigned to the activity.
+            <para>Before calling this, set the ID of the replacement activity to the ID
+            of the activity to replace.</para></remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.ITurnContext.OnUpdateActivity(Microsoft.Bot.Builder.UpdateActivityHandler)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.BotAdapter Use (Microsoft.Bot.Builder.IMiddleware middleware);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.BotAdapter Use(class Microsoft.Bot.Builder.IMiddleware middleware) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Use (middleware As IMiddleware) As BotAdapter" />
+      <MemberSignature Language="F#" Value="member this.Use : Microsoft.Bot.Builder.IMiddleware -&gt; Microsoft.Bot.Builder.BotAdapter" Usage="botAdapter.Use middleware" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.11</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="middleware" Type="Microsoft.Bot.Builder.IMiddleware" />
+      </Parameters>
+      <Docs>
+        <param name="middleware">The middleware to add.</param>
+        <summary>
+            Adds middleware to the adapter's pipeline.
+            </summary>
+        <returns>The updated adapter object.</returns>
+        <remarks>Middleware is added to the adapter at initialization time.
+            For each turn, the adapter calls middleware in the order in which you added it.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

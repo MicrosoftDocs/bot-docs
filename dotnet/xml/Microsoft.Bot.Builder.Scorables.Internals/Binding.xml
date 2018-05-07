@@ -209,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Scorables.Internals.Binding.Microsoft#Bot#Builder#Scorables#Internals#IBinding#Method" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Method As MethodBase Implements IBinding.Method" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Scorables.Internals.Binding.Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Scorables.Internals.IBinding.Method</InterfaceMember>

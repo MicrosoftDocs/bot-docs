@@ -1,0 +1,21 @@
+﻿<Type Name="IDialog" FullName="Microsoft.Bot.Builder.Classic.Dialogs.IDialog">
+  <TypeSignature Language="C#" Value="public interface IDialog : Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;object&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog implements class Microsoft.Bot.Builder.Classic.Dialogs.IDialog`1&lt;object&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.IDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialog&#xA;Implements IDialog(Of Object)" />
+  <TypeSignature Language="F#" Value="type IDialog = interface&#xA;    interface IDialog&lt;obj&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;System.Object&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

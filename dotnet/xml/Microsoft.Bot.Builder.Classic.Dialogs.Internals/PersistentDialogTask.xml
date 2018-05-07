@@ -1,0 +1,80 @@
+﻿<Type Name="PersistentDialogTask" FullName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask">
+  <TypeSignature Language="C#" Value="public sealed class PersistentDialogTask : Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersistentDialogTask extends System.Object implements class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersistentDialogTask&#xA;Implements IPostToBot" />
+  <TypeSignature Language="F#" Value="type PersistentDialogTask = class&#xA;    interface IPostToBot" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentDialogTask (Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot inner, Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData botData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot inner, class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData botData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask.#ctor(Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot,Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IPostToBot, botData As IBotData)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask : Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot * Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData -&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask (inner, botData)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <param name="botData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot.PostAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IPostToBot.PostAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot.PostAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IPostToBot#PostAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PostAsync (activity As IActivity, token As CancellationToken) As Task Implements IPostToBot.PostAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IPostToBot.PostAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.PersistentDialogTask/&lt;Microsoft-Bot-Builder-Classic-Dialogs-Internals-IPostToBot-PostAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

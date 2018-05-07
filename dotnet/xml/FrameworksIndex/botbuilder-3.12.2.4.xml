@@ -52,6 +52,11 @@
       <Member Id="P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Payload" />
       <Member Id="P:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.Title" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply/ContentTypes" Id="T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes">
+      <Member Id="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Location" />
+      <Member Id="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Text" />
+      <Member Id="M:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.#ctor" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" Id="T:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder">
       <Member Id="M:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
     </Type>
@@ -80,194 +85,6 @@
       <Member Id="M:Microsoft.Bot.Builder.ConnectorEx.ResumptionData.#ctor" />
       <Member Id="P:Microsoft.Bot.Builder.ConnectorEx.ResumptionData.IsTrustedServiceUrl" />
       <Member Id="P:Microsoft.Bot.Builder.ConnectorEx.ResumptionData.Locale" />
-    </Type>
-  </Namespace>
-  <Namespace Name="">
-    <Type Name="Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply/ContentTypes" Id="T:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes">
-      <Member Id="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Location" />
-      <Member Id="F:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.Text" />
-      <Member Id="M:Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply.ContentTypes.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Chain/Continuation`2" Id="T:Microsoft.Bot.Builder.Dialogs.Chain.Continuation`2" />
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Chain/WhereCanceledException" Id="T:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.CommandDialog`1/Command" Id="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask/IThunk" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk">
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptAttachment" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.#ctor(System.String,System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.ContentTypes" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptChoice`1" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IDictionary{`0,System.Collections.Generic.IEnumerable{`0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptConfirm" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptDouble" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Double@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Max" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Min" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptInt64" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Int64@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptString" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.String@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.DefaultRetry" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1/DescriptionDelegate" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.DescriptionDelegate" />
-    <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1/TermsDelegate" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.TermsDelegate" />
-    <Type Name="Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1/Form" Id="T:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form">
-      <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
-      <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.SaveResources(System.Resources.IResourceWriter)" />
-      <Member Id="P:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Fields" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/ClosureCaptureErrorSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate">
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.#ctor(System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider">
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/JObjectSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate">
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.#ctor(System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/StoreInstanceByFieldsSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate">
-      <Member Id="F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.Flags" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.#ctor(System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/StoreInstanceByTypeSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate">
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.#ctor(System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/StoreInstanceByTypeSurrogate/ObjectReference" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference">
-      <Member Id="F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/SurrogateLogDecorator" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator">
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.#ctor(Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider,System.Diagnostics.TraceListener)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.ToString" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/SurrogateSelector" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector">
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.#ctor(System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider})" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#ChainSelector(System.Runtime.Serialization.ISurrogateSelector)" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetNextSelector" />
-      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime" />
-    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution">
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Options" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Pattern" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternDate" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternTime" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Regex" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.DateTime)" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DayOfWeek},System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution)" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.GetHashCode" />
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse(System.String,Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Day" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayPart" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Hour" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Minute" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Month" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Reference" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Second" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Week" />
-      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Year" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart">
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.AF" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.EV" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MI" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MO" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.NI" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DurationResolution" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution">
-      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference">
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.FUTURE_REF" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PAST_REF" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PRESENT_REF" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Luis.Models.DialogResponse/DialogStatus" Id="T:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus">
-      <Member Id="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Finished" />
-      <Member Id="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Question" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1" Id="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1">
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`0},System.Delegate)" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.HasScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token" Id="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token">
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.HasScore" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate" Id="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate" />
-    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State" Id="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State">
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal" />
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable" />
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope" Id="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope">
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Intent" />
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Model" />
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Result" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2/Scope" Id="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope">
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.Match" />
-      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.Regex" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.#ctor(System.Text.RegularExpressions.Regex,System.Text.RegularExpressions.Match,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
-      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Dialogs">
@@ -329,6 +146,10 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Chain.While``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{System.Boolean}},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Chain.WithScorable``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Scorables.IScorable{``1,``2})" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Chain/Continuation`2" Id="T:Microsoft.Bot.Builder.Dialogs.Chain.Continuation`2" />
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Chain/WhereCanceledException" Id="T:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Chain.WhereCanceledException.#ctor" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ChannelCapability" Id="T:Microsoft.Bot.Builder.Dialogs.ChannelCapability">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.#ctor(Microsoft.Bot.Builder.Dialogs.IAddress)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChannelCapability.NeedsInputHint" />
@@ -373,6 +194,12 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.On``1(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.OnDefault``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.ResultHandler``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.CommandDialog`1/Command" Id="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" Id="T:Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" />
     <Type Name="Microsoft.Bot.Builder.Dialogs.Conversation" Id="T:Microsoft.Bot.Builder.Dialogs.Conversation">
@@ -571,6 +398,47 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Double},System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Text(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.String},System.String,System.String,System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptAttachment" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.#ctor(System.String,System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.ContentTypes" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptChoice`1" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IDictionary{`0,System.Collections.Generic.IEnumerable{`0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptConfirm" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.No" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Yes" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.DefaultRetry" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Options" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.Patterns" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptDouble" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Double@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Max" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.Min" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptInt64" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Int64@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.PromptDialog/PromptString" Id="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.#ctor(System.String,System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.String@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptString.DefaultRetry" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PromptException" Id="T:Microsoft.Bot.Builder.Dialogs.PromptException">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PromptException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -803,6 +671,9 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Reset" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Frames" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask/IThunk" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk">
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk.Method" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager" Id="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory{Microsoft.Bot.Builder.Dialogs.Internals.DialogTask},System.Func{Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack,System.Threading.CancellationToken,Microsoft.Bot.Builder.Dialogs.IDialogContext},Microsoft.Bot.Builder.Base.IEventProducer{Microsoft.Bot.Connector.IActivity})" />
@@ -1058,6 +929,12 @@
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.OnCompletion(Microsoft.Bot.Builder.FormFlow.OnCompletionAsyncDelegate{`0})" />
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Prompter(Microsoft.Bot.Builder.FormFlow.Advanced.PromptAsyncDelegate{`0})" />
       <Member Id="P:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Configuration" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1/Form" Id="T:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form">
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Localize(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.SaveResources(System.Resources.IResourceWriter)" />
+      <Member Id="P:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1.Form.Fields" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.FormFlow.FormCanceledException" Id="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException">
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.FormCanceledException.#ctor(System.String,System.Exception)" />
@@ -1534,6 +1411,8 @@
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.ValueDescriptions" />
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.Values" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1/DescriptionDelegate" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.DescriptionDelegate" />
+    <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1/TermsDelegate" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.TermsDelegate" />
     <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeNumber`1" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeNumber`1">
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeNumber`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0})" />
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeNumber`1.Help(`0,System.Object)" />
@@ -1855,6 +1734,52 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Rest`2" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Rest`2" />
     <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization" />
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/ClosureCaptureErrorSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate">
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider">
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/JObjectSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate">
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/StoreInstanceByFieldsSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate">
+      <Member Id="F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.Flags" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByFieldsSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/StoreInstanceByTypeSurrogate" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate">
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/StoreInstanceByTypeSurrogate/ObjectReference" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference">
+      <Member Id="F:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.Type" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/SurrogateLogDecorator" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator">
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.#ctor(Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider,System.Diagnostics.TraceListener)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateLogDecorator.ToString" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Internals.Fibers.Serialization/SurrogateSelector" Id="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector">
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.#ctor(System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider})" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#ChainSelector(System.Runtime.Serialization.ISurrogateSelector)" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetNextSelector" />
+      <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Internals.Fibers.SetField" Id="T:Microsoft.Bot.Builder.Internals.Fibers.SetField">
       <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.CheckNull``1(System.String,``0)" />
       <Member Id="M:Microsoft.Bot.Builder.Internals.Fibers.SetField.From``1(``0@,System.String,System.Runtime.Serialization.SerializationInfo)" />
@@ -1898,6 +1823,45 @@
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Luis">
     <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn" />
+    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime" />
+    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution">
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Options" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Pattern" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternDate" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.PatternTime" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Regex" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.DateTime)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DayOfWeek},System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.GetHashCode" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse(System.String,Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution@)" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Day" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayPart" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Hour" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Minute" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Month" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Reference" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Second" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Week" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Year" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart">
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.AF" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.EV" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MI" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.MO" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart.NI" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DurationResolution" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution">
+      <Member Id="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference" Id="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference">
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.FUTURE_REF" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PAST_REF" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference.PRESENT_REF" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.Extensions" Id="T:Microsoft.Bot.Builder.Luis.Extensions">
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.Apply(Microsoft.Bot.Builder.Luis.ILuisOptions,Microsoft.Bot.Builder.Luis.ILuisOptions)" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Extensions.BuildUri(Microsoft.Bot.Builder.Luis.ILuisService,System.String)" />
@@ -2047,6 +2011,10 @@
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.Prompt" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.DialogResponse.Status" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Luis.Models.DialogResponse/DialogStatus" Id="T:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus">
+      <Member Id="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Finished" />
+      <Member Id="F:Microsoft.Bot.Builder.Luis.Models.DialogResponse.DialogStatus.Question" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" Id="T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation">
       <Member Id="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.Object})" />
@@ -2186,6 +2154,16 @@
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.Where``3(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,System.Threading.Tasks.Task{System.Boolean}})" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Boolean})" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.Where``4(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,``0},System.Func{``1,``2,``3,System.Threading.Tasks.Task{System.Boolean}})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1" Id="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1">
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`0},System.Delegate)" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.HasScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token{`0})" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Scorables.Actions/WhereScorable`1/Token" Id="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token">
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token.HasScore" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Scorables.Dispatcher" Id="T:Microsoft.Bot.Builder.Scorables.Dispatcher">
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Dispatcher.#ctor" />
@@ -2355,6 +2333,13 @@
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStage" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/OnStageDelegate" Id="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate" />
+    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2/State" Id="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State">
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.ordinal" />
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.scorable" />
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.state" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.State.#ctor(System.Int32,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},System.Object)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Scorables.Internals.FoldStage" Id="T:Microsoft.Bot.Builder.Scorables.Internals.FoldStage">
       <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldStage.AfterFold" />
       <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.FoldStage.AfterPost" />
@@ -2397,6 +2382,13 @@
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope{`0,`1})" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.ToString" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2/Scope" Id="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope">
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Intent" />
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Model" />
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.Result" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.#ctor(Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory" Id="T:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory">
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.LuisIntentScorableFactory.#ctor(System.Func{Microsoft.Bot.Builder.Luis.ILuisModel,Microsoft.Bot.Builder.Luis.ILuisService})" />
@@ -2467,6 +2459,12 @@
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope{`0,`1})" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.ToString" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2/Scope" Id="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope">
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.Match" />
+      <Member Id="F:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.Regex" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.#ctor(System.Text.RegularExpressions.Regex,System.Text.RegularExpressions.Match,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory" Id="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory">
       <Member Id="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory.#ctor(System.Func{System.String,System.Text.RegularExpressions.Regex})" />

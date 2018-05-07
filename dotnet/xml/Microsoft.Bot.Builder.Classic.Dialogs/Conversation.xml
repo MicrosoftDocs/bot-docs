@@ -1,0 +1,243 @@
+﻿<Type Name="Conversation" FullName="Microsoft.Bot.Builder.Classic.Dialogs.Conversation">
+  <TypeSignature Language="C#" Value="public static class Conversation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Conversation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.Conversation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Conversation" />
+  <TypeSignature Language="F#" Value="type Conversation = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Container">
+      <MemberSignature Language="C#" Value="public static Autofac.IContainer Container { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Autofac.IContainer Container" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.Container" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Container As IContainer" />
+      <MemberSignature Language="F#" Value="member this.Container : Autofac.IContainer" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.Container" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Autofac.IContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="public static void Disable (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.Disable(System.Type)" />
+      <MemberSignature Language="F#" Value="static member Disable : Type -&gt; unit" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.Disable type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="public static void Disable (Type type, Autofac.ContainerBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type, class Autofac.ContainerBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.Disable(System.Type,Autofac.ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="static member Disable : Type * Autofac.ContainerBuilder -&gt; unit" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.Disable (type, builder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie resumptionCookie, Microsoft.Bot.Builder.ITurnContext v4Context, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie resumptionCookie, class Microsoft.Bot.Builder.ITurnContext v4Context, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie,Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie * Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.ResumeAsync (resumptionCookie, v4Context, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the overload that uses ConversationReference instead of ResumptionCookie")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Conversation/&lt;ResumeAsync&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resumptionCookie" Type="Microsoft.Bot.Builder.Classic.Dialogs.ResumptionCookie" />
+        <Parameter Name="v4Context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resumptionCookie">To be added.</param>
+        <param name="v4Context">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Schema.ConversationReference conversationReference, Microsoft.Bot.Builder.ITurnContext v4Context, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Schema.ConversationReference conversationReference, class Microsoft.Bot.Builder.ITurnContext v4Context, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Schema.ConversationReference * Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.ResumeAsync (conversationReference, v4Context, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Conversation/&lt;ResumeAsync&gt;d__8))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationReference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="v4Context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="conversationReference">To be added.</param>
+        <param name="v4Context">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendAsync (Autofac.ILifetimeScope scope, Microsoft.Bot.Builder.ITurnContext v4Context, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendAsync(class Autofac.ILifetimeScope scope, class Microsoft.Bot.Builder.ITurnContext v4Context, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.SendAsync(Autofac.ILifetimeScope,Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendAsync (scope As ILifetimeScope, v4Context As ITurnContext, Optional token As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="static member SendAsync : Autofac.ILifetimeScope * Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.SendAsync (scope, v4Context, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Conversation/&lt;SendAsync&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Autofac.ILifetimeScope" />
+        <Parameter Name="v4Context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="scope">To be added.</param>
+        <param name="v4Context">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendAsync (Microsoft.Bot.Builder.ITurnContext v4Context, Func&lt;Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;object&gt;&gt; MakeRoot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendAsync(class Microsoft.Bot.Builder.ITurnContext v4Context, class System.Func`1&lt;class Microsoft.Bot.Builder.Classic.Dialogs.IDialog`1&lt;object&gt;&gt; MakeRoot, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.SendAsync(Microsoft.Bot.Builder.ITurnContext,System.Func{Microsoft.Bot.Builder.Classic.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendAsync (v4Context As ITurnContext, MakeRoot As Func(Of IDialog(Of Object)), Optional token As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="static member SendAsync : Microsoft.Bot.Builder.ITurnContext * Func&lt;Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;obj&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.SendAsync (v4Context, MakeRoot, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Conversation/&lt;SendAsync&gt;d__6))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v4Context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="MakeRoot" Type="System.Func&lt;Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;System.Object&gt;&gt;" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="v4Context">To be added.</param>
+        <param name="MakeRoot">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateContainer">
+      <MemberSignature Language="C#" Value="public static void UpdateContainer (Action&lt;Autofac.ContainerBuilder&gt; update);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateContainer(class System.Action`1&lt;class Autofac.ContainerBuilder&gt; update) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Conversation.UpdateContainer(System.Action{Autofac.ContainerBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateContainer (update As Action(Of ContainerBuilder))" />
+      <MemberSignature Language="F#" Value="static member UpdateContainer : Action&lt;Autofac.ContainerBuilder&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Conversation.UpdateContainer update" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="update" Type="System.Action&lt;Autofac.ContainerBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="update">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
