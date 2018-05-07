@@ -43,6 +43,7 @@ You can now manage bots using [Azure CLI](https://docs.microsoft.com/en-us/cli/a
   
 3. [Login](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) to Azure CLI by running the following:
 
+
 ```shell
 az login
 ```
