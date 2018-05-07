@@ -128,6 +128,22 @@ When either service is connected, you can go back to a live chat window and veri
 
 ![QnA connected](media/emulator-v4/emulator-view-message-activity.png)
 
+## Inspect Language Services
+
+With the new v4 emulator you can also inspect the JSON responses from LUIS and QnA. Using a bot with a connected language service, you can select **trace** in the LOG window to the bottom right. This new tool also provides features to update your language services directly from the emulator. 
+
+![LUIS Inspector](media/emulator-v4/emulator-luis-inspector.png)
+
+With a connected LUIS service, you'll notice that the trace link specifies **Luis Trace**. When selected, you'll see the raw response from your LUIS service, which includes intents, entities along with their specified scores. You also have the option to re-assign intents for your user utterances. 
+
+![QnA Inspector](media/emulator-v4/emulator-qna-inspector.png)
+
+With a connected QnA service, the log will display **QnA Trace**, and when selected you can preview the question and answer pair associated with that activity, along with a confidence score. From here, you can add alternative question phrasing for an answer.
+
+[!TIP]
+> These features are only available to v4 SDK bots 
+
+
 ## Speech Recognition
 The Bot Framework Emulator supports speech recognition via the [Cognitive Services Speech API](/azure/cognitive-services/Speech/home). This allows you to exercise your speech-enabled bot, or Cortana skill, via speech in the emulator during development. The Bot Framework Emulator provides speech recognition free of charge for up to three hours per bot per day. 
 
