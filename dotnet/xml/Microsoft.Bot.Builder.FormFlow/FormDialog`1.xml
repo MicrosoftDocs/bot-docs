@@ -135,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt;.Form" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.FormDialog`1.Microsoft#Bot#Builder#FormFlow#IFormDialog&lt;T&gt;#Form" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Form As IForm(Of T) Implements IFormDialog(Of T).Form" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt;.Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt;.Form" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.FormFlow.IFormDialog`1.Form</InterfaceMember>

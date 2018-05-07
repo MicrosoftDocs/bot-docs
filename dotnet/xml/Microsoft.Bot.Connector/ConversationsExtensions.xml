@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type ConversationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,101 +15,95 @@
   <Interfaces />
   <Docs>
     <summary>
-            Extension methods for Conversations.
+            ConversationsExtensions Conversation extensions
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="CreateConversation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationResourceResponse CreateConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ConversationParameters parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationResourceResponse CreateConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.ConversationParameters parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateConversation (operations As IConversations, parameters As ConversationParameters) As ConversationResourceResponse" />
-      <MemberSignature Language="F#" Value="static member CreateConversation : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.ConversationParameters -&gt; Microsoft.Bot.Connector.ConversationResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateConversation (operations, parameters)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ConversationResourceResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="parameters">
-            Parameters to create the conversation from
-            </param>
-        <summary>
-            CreateConversation
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CreateConversationAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt; CreateConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ConversationParameters parameters, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ConversationResourceResponse&gt; CreateConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.ConversationParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ConversationParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member CreateConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.ConversationParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync (operations, parameters, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt; CreateConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.ConversationParameters parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationResourceResponse&gt; CreateConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.ConversationParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.ConversationParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member CreateConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.ConversationParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateConversationAsync (operations, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateConversationAsync&gt;d__1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateConversationAsync&gt;d__13))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" />
+        <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="parameters">
-            Parameters to create the conversation from
-            </param>
+             Parameters to create the conversation from
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            CreateConversation
-            </summary>
+             CreateConversation
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Create a new Conversation.
+            
+             POST to this method with a
+             * Bot being the bot creating the conversation
+             * IsGroup set to true if this is not a direct message (default is false)
+             * Members array contining the members you want to have be in the
+             conversation.
+            
+             The return value is a ResourceResponse which contains a conversation id
+             which is suitable for use
+             in the message payload and REST API uris.
+            
+             Most channels only support the semantics of bots initiating a direct
+             message conversation.  An example of how to do that would be:
+            
+             ```
+             var resource = await connector.conversations.CreateConversation(new
+             ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new
+             ChannelAccount("user1") } );
+             await connect.Conversations.SendToConversationAsync(resource.Id, new
+             Activity() ... ) ;
+            
+             ```
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDirectConversation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationResourceResponse CreateDirectConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ChannelAccount bot, Microsoft.Bot.Connector.ChannelAccount user, Microsoft.Bot.Connector.Activity activity = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationResourceResponse CreateDirectConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.ChannelAccount bot, class Microsoft.Bot.Connector.ChannelAccount user, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member CreateDirectConversation : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ConversationResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation (operations, bot, user, activity)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ConversationResourceResponse CreateDirectConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.ChannelAccount bot, Microsoft.Bot.Schema.ChannelAccount user, Microsoft.Bot.Schema.Activity activity = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ConversationResourceResponse CreateDirectConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.ChannelAccount bot, class Microsoft.Bot.Schema.ChannelAccount user, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="static member CreateDirectConversation : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.ConversationResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation (operations, bot, user, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ConversationResourceResponse</ReturnType>
+        <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="user" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
         <param name="operations">The operations group for this extension method.</param>
@@ -123,23 +118,24 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDirectConversation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationResourceResponse CreateDirectConversation (this Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, Microsoft.Bot.Connector.Activity activity = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationResourceResponse CreateDirectConversation(class Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member CreateDirectConversation : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ConversationResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation (operations, botAddress, userAddress, activity)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ConversationResourceResponse CreateDirectConversation (this Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, Microsoft.Bot.Schema.Activity activity = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ConversationResourceResponse CreateDirectConversation(class Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="static member CreateDirectConversation : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.ConversationResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversation (operations, botAddress, userAddress, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ConversationResourceResponse</ReturnType>
+        <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
         <Parameter Name="botAddress" Type="System.String" />
         <Parameter Name="userAddress" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
         <param name="operations">The operations group for this extension method.</param>
@@ -154,28 +150,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDirectConversationAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt; CreateDirectConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.ChannelAccount bot, Microsoft.Bot.Connector.ChannelAccount user, Microsoft.Bot.Connector.Activity activity = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ConversationResourceResponse&gt; CreateDirectConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.ChannelAccount bot, class Microsoft.Bot.Connector.ChannelAccount user, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member CreateDirectConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync (operations, bot, user, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt; CreateDirectConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.ChannelAccount bot, Microsoft.Bot.Schema.ChannelAccount user, Microsoft.Bot.Schema.Activity activity = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationResourceResponse&gt; CreateDirectConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.ChannelAccount bot, class Microsoft.Bot.Schema.ChannelAccount user, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member CreateDirectConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync (operations, bot, user, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateDirectConversationAsync&gt;d__17))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateDirectConversationAsync&gt;d__1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="user" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -192,28 +189,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDirectConversationAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt; CreateDirectConversationAsync (this Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, Microsoft.Bot.Connector.Activity activity = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ConversationResourceResponse&gt; CreateDirectConversationAsync(class Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member CreateDirectConversationAsync : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync (operations, botAddress, userAddress, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt; CreateDirectConversationAsync (this Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, Microsoft.Bot.Schema.Activity activity = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationResourceResponse&gt; CreateDirectConversationAsync(class Microsoft.Bot.Connector.IConversations operations, string botAddress, string userAddress, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member CreateDirectConversationAsync : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.CreateDirectConversationAsync (operations, botAddress, userAddress, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateDirectConversationAsync&gt;d__19))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateDirectConversationAsync&gt;d__3))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
         <Parameter Name="botAddress" Type="System.String" />
         <Parameter Name="userAddress" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -229,59 +227,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DeleteActivity">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ErrorResponse DeleteActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ErrorResponse DeleteActivity(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteActivity (operations As IConversations, conversationId As String, activityId As String) As ErrorResponse" />
-      <MemberSignature Language="F#" Value="static member DeleteActivity : Microsoft.Bot.Connector.IConversations * string * string -&gt; Microsoft.Bot.Connector.ErrorResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivity (operations, conversationId, activityId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ErrorResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="conversationId">
-            Conversation ID
-            </param>
-        <param name="activityId">
-            activityId to delete
-            </param>
-        <summary>
-            DeleteActivity
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="DeleteActivityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ErrorResponse&gt; DeleteActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ErrorResponse&gt; DeleteActivityAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteActivityAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member DeleteActivityAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ErrorResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync (operations, conversationId, activityId, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member DeleteActivityAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync (operations, conversationId, activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;DeleteActivityAsync&gt;d__9))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;DeleteActivityAsync&gt;d__17))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ErrorResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
@@ -291,77 +254,99 @@
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
         <param name="activityId">
-            activityId to delete
-            </param>
+             activityId to delete
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            DeleteActivity
-            </summary>
+             DeleteActivity
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Delete an existing activity.
+            
+             Some channels allow you to delete an existing activity, and if successful
+             this method will remove the specified activity.
+             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetActivityMembers">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ChannelAccount[] GetActivityMembers (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ChannelAccount[] GetActivityMembers(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers(Microsoft.Bot.Connector.IConversations,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityMembers (operations As IConversations, conversationId As String, activityId As String) As ChannelAccount()" />
-      <MemberSignature Language="F#" Value="static member GetActivityMembers : Microsoft.Bot.Connector.IConversations * string * string -&gt; Microsoft.Bot.Connector.ChannelAccount[]" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembers (operations, conversationId, activityId)" />
+    <Member MemberName="DeleteConversationMemberAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteConversationMemberAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string memberId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteConversationMemberAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string memberId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteConversationMemberAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member DeleteConversationMemberAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Connector.ConversationsExtensions.DeleteConversationMemberAsync (operations, conversationId, memberId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;DeleteConversationMemberAsync&gt;d__19))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ChannelAccount[]</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
         <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="memberId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
-        <param name="activityId">
-            Activity ID
-            </param>
+             Conversation ID
+             </param>
+        <param name="memberId">
+             ID of the member to delete from this conversation
+             </param>
+        <param name="cancellationToken">
+             The cancellation token.
+             </param>
         <summary>
-            GetActivityMembers
-            </summary>
+             DeleteConversationMember
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Deletes a member from a converstion.
+            
+             This REST API takes a ConversationId and a memberId (of type string) and
+             removes that member from the conversation. If that member was the last
+             member
+             of the conversation, the conversation will also be deleted.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActivityMembersAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ChannelAccount[]&gt; GetActivityMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ChannelAccount[]&gt; GetActivityMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetActivityMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetActivityMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetActivityMembersAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ChannelAccount[]&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync (operations, conversationId, activityId, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetActivityMembersAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync (operations, conversationId, activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetActivityMembersAsync&gt;d__13))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetActivityMembersAsync&gt;d__20))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ChannelAccount[]&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
@@ -371,73 +356,48 @@
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
         <param name="activityId">
-            Activity ID
-            </param>
+             Activity ID
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            GetActivityMembers
-            </summary>
+             GetActivityMembers
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetConversationMembers">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ChannelAccount[] GetConversationMembers (this Microsoft.Bot.Connector.IConversations operations, string conversationId);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ChannelAccount[] GetConversationMembers(class Microsoft.Bot.Connector.IConversations operations, string conversationId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers(Microsoft.Bot.Connector.IConversations,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConversationMembers (operations As IConversations, conversationId As String) As ChannelAccount()" />
-      <MemberSignature Language="F#" Value="static member GetConversationMembers : Microsoft.Bot.Connector.IConversations * string -&gt; Microsoft.Bot.Connector.ChannelAccount[]" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembers (operations, conversationId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ChannelAccount[]</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="conversationId">
-            Conversation ID
-            </param>
-        <summary>
-            GetConversationMembers
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Enumerate the members of an activity.
+            
+             This REST API takes a ConversationId and a ActivityId, returning an array
+             of ChannelAccount objects representing the members of the particular
+             activity in the conversation.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConversationMembersAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ChannelAccount[]&gt; GetConversationMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ChannelAccount[]&gt; GetConversationMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetConversationMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetConversationMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetConversationMembersAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ChannelAccount[]&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync (operations, conversationId, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetConversationMembersAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync (operations, conversationId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetConversationMembersAsync&gt;d__11))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetConversationMembersAsync&gt;d__18))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ChannelAccount[]&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
@@ -446,37 +406,96 @@
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            GetConversationMembers
-            </summary>
+             GetConversationMembers
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Enumerate the members of a converstion.
+            
+             This REST API takes a ConversationId and returns an array of ChannelAccount
+             objects representing the members of the conversation.
+             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="ReplyToActivity">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse ReplyToActivity (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse ReplyToActivity(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member ReplyToActivity : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity (operations, activity)" />
+    <Member MemberName="GetConversationsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt; GetConversationsAsync (this Microsoft.Bot.Connector.IConversations operations, string continuationToken = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationsResult&gt; GetConversationsAsync(class Microsoft.Bot.Connector.IConversations operations, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetConversationsAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync (operations, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetConversationsAsync&gt;d__12))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+             The operations group for this extension method.
+             </param>
+        <param name="continuationToken">
+             skip or continuation token
+             </param>
+        <param name="cancellationToken">
+             The cancellation token.
+             </param>
+        <summary>
+             GetConversations
+             </summary>
+        <returns>To be added.</returns>
+        <remarks>
+             List the Conversations in which this bot has participated.
+            
+             GET from this method with a skip token
+            
+             The return value is a ConversationsResult, which contains an array of
+             ConversationMembers and a skip token.  If the skip token is not empty, then
+             there are further values to be returned. Call this method again with the
+             returned token to get more values.
+            
+             Each ConversationMembers object contains the ID of the conversation and an
+             array of ChannelAccounts that describe the members of the conversation.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyToActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ResourceResponse ReplyToActivity (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ResourceResponse ReplyToActivity(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="static member ReplyToActivity : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity (operations, activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -492,61 +511,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ReplyToActivity">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse ReplyToActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse ReplyToActivity(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member ReplyToActivity : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivity (operations, conversationId, activityId, activity)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="conversationId">
-            Conversation ID
-            </param>
-        <param name="activityId">
-            activityId the reply is to (OPTIONAL)
-            </param>
-        <param name="activity">
-            Activity to send
-            </param>
-        <summary>
-            ReplyToActivity
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ReplyToActivityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; ReplyToActivityAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; ReplyToActivityAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member ReplyToActivityAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync (operations, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; ReplyToActivityAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; ReplyToActivityAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReplyToActivityAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync (operations, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -567,69 +548,85 @@
       </Docs>
     </Member>
     <Member MemberName="ReplyToActivityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; ReplyToActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; ReplyToActivityAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member ReplyToActivityAsync : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync (operations, conversationId, activityId, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; ReplyToActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; ReplyToActivityAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReplyToActivityAsync : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.ReplyToActivityAsync (operations, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;ReplyToActivityAsync&gt;d__7))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;ReplyToActivityAsync&gt;d__16))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
         <Parameter Name="conversationId" Type="System.String" />
         <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
         <param name="activityId">
-            activityId the reply is to (OPTIONAL)
-            </param>
+             activityId the reply is to (OPTIONAL)
+             </param>
         <param name="activity">
-            Activity to send
-            </param>
+             Activity to send
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            ReplyToActivity
-            </summary>
+             ReplyToActivity
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             This method allows you to reply to an activity.
+            
+             This is slightly different from SendToConversation().
+             * SendToConverstion(conversationId) - will append the activity to the end
+             of the conversation according to the timestamp or semantics of the channel.
+             * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+             to another activity, if the channel supports it. If the channel does not
+             support nested replies, ReplyToActivity falls back to SendToConversation.
+            
+             Use ReplyToActivity when replying to a specific activity in the
+             conversation.
+            
+             Use SendToConversation in all other cases.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendToConversation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse SendToConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse SendToConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member SendToConversation : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation (operations, activity)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ResourceResponse SendToConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ResourceResponse SendToConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="static member SendToConversation : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation (operations, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
+        <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -645,57 +642,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SendToConversation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse SendToConversation (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, string conversationId);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse SendToConversation(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity, string conversationId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String)" />
-      <MemberSignature Language="F#" Value="static member SendToConversation : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity * string -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversation (operations, activity, conversationId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="conversationId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="activity">
-            Activity to send
-            </param>
-        <param name="conversationId">
-            Conversation ID
-            </param>
-        <summary>
-            SendToConversation
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SendToConversationAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; SendToConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; SendToConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member SendToConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync (operations, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendToConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendToConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SendToConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync (operations, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -716,65 +679,81 @@
       </Docs>
     </Member>
     <Member MemberName="SendToConversationAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; SendToConversationAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; SendToConversationAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member SendToConversationAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync (operations, activity, conversationId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendToConversationAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendToConversationAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SendToConversationAsync : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendToConversationAsync (operations, conversationId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;SendToConversationAsync&gt;d__3))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;SendToConversationAsync&gt;d__14))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
         <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="activity">
-            Activity to send
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
+        <param name="activity">
+             Activity to send
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            SendToConversation
-            </summary>
+             SendToConversation
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             This method allows you to send an activity to the end of a conversation.
+            
+             This is slightly different from ReplyToActivity().
+             * SendToConverstion(conversationId) - will append the activity to the end
+             of the conversation according to the timestamp or semantics of the channel.
+             * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+             to another activity, if the channel supports it. If the channel does not
+             support nested replies, ReplyToActivity falls back to SendToConversation.
+            
+             Use ReplyToActivity when replying to a specific activity in the
+             conversation.
+            
+             Use SendToConversation in all other cases.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateActivity">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse UpdateActivity (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse UpdateActivity(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member UpdateActivity : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity (operations, activity)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ResourceResponse UpdateActivity (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ResourceResponse UpdateActivity(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="static member UpdateActivity : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity (operations, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
+        <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -790,61 +769,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UpdateActivity">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse UpdateActivity (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse UpdateActivity(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, class Microsoft.Bot.Connector.Activity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity)" />
-      <MemberSignature Language="F#" Value="static member UpdateActivity : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Connector.Activity -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivity (operations, conversationId, activityId, activity)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="conversationId">
-            Conversation ID
-            </param>
-        <param name="activityId">
-            activityId to update
-            </param>
-        <param name="activity">
-            replacement Activity
-            </param>
-        <summary>
-            UpdateActivity
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="UpdateActivityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; UpdateActivityAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member UpdateActivityAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync (operations, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (this Microsoft.Bot.Connector.IConversations operations, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Connector.IConversations operations, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member UpdateActivityAsync : Microsoft.Bot.Connector.IConversations * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync (operations, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -865,131 +806,113 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateActivityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; UpdateActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, class Microsoft.Bot.Connector.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Connector.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member UpdateActivityAsync : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Connector.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync (operations, conversationId, activityId, activity, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member UpdateActivityAsync : Microsoft.Bot.Connector.IConversations * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UpdateActivityAsync (operations, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;UpdateActivityAsync&gt;d__5))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;UpdateActivityAsync&gt;d__15))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
         <Parameter Name="conversationId" Type="System.String" />
         <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
         <param name="activityId">
-            activityId to update
-            </param>
+             activityId to update
+             </param>
         <param name="activity">
-            replacement Activity
-            </param>
+             replacement Activity
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            UpdateActivity
-            </summary>
+             UpdateActivity
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UploadAttachment">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse UploadAttachment (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse UploadAttachment(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.AttachmentData attachmentUpload) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UploadAttachment (operations As IConversations, conversationId As String, attachmentUpload As AttachmentData) As ResourceResponse" />
-      <MemberSignature Language="F#" Value="static member UploadAttachment : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.AttachmentData -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachment (operations, conversationId, attachmentUpload)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="conversationId">
-            Conversation ID
-            </param>
-        <param name="attachmentUpload">
-            Attachment data
-            </param>
-        <summary>
-            UploadAttachment
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Edit an existing activity.
+            
+             Some channels allow you to edit an existing activity to reflect the new
+             state of a bot conversation.
+            
+             For example, you can remove buttons after someone has clicked "Approve"
+             button.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="UploadAttachmentAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; UploadAttachmentAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; UploadAttachmentAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.AttachmentData attachmentUpload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.AttachmentData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member UploadAttachmentAsync : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.AttachmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync (operations, conversationId, attachmentUpload, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UploadAttachmentAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Schema.AttachmentData attachmentUpload, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UploadAttachmentAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Schema.AttachmentData attachmentUpload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Schema.AttachmentData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member UploadAttachmentAsync : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Schema.AttachmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.UploadAttachmentAsync (operations, conversationId, attachmentUpload, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;UploadAttachmentAsync&gt;d__15))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;UploadAttachmentAsync&gt;d__21))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
         <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">
-            The operations group for this extension method.
-            </param>
+             The operations group for this extension method.
+             </param>
         <param name="conversationId">
-            Conversation ID
-            </param>
+             Conversation ID
+             </param>
         <param name="attachmentUpload">
-            Attachment data
-            </param>
+             Attachment data
+             </param>
         <param name="cancellationToken">
-            The cancellation token.
-            </param>
+             The cancellation token.
+             </param>
         <summary>
-            UploadAttachment
-            </summary>
+             UploadAttachment
+             </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Upload an attachment directly into a channel's blob storage.
+            
+             This is useful because it allows you to store data in a compliant store
+             when dealing with enterprises.
+            
+             The response is a ResourceResponse which contains an AttachmentId which is
+             suitable for using with the attachments API.
+             </remarks>
       </Docs>
     </Member>
   </Members>

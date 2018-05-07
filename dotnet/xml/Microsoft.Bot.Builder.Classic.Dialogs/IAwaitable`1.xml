@@ -1,0 +1,47 @@
+﻿<Type Name="IAwaitable&lt;T&gt;" FullName="Microsoft.Bot.Builder.Classic.Dialogs.IAwaitable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IAwaitable&lt;out T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAwaitable`1&lt;+ T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.IAwaitable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAwaitable(Of Out T)" />
+  <TypeSignature Language="F#" Value="type IAwaitable&lt;'T&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAwaiter">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;out T&gt; GetAwaiter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter`1&lt;!T&gt; GetAwaiter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.IAwaitable`1.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As IAwaiter(Of Out T)" />
+      <MemberSignature Language="F#" Value="abstract member GetAwaiter : unit -&gt; Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;'T&gt;" Usage="iAwaitable.GetAwaiter " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

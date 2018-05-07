@@ -1,0 +1,86 @@
+<Type Name="PaymentShippingTypes" FullName="Microsoft.Bot.Connector.Payments.PaymentShippingTypes">
+  <TypeSignature Language="C#" Value="public static class PaymentShippingTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PaymentShippingTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Payments.PaymentShippingTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentShippingTypes" />
+  <TypeSignature Language="F#" Value="type PaymentShippingTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Different shipping types. See http://www.w3.org/TR/payment-request/#dom-paymentoptions-shippingtype for more information.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delivery">
+      <MemberSignature Language="C#" Value="public const string Delivery;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Delivery" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Delivery" />
+      <MemberSignature Language="VB.NET" Value="Public Const Delivery As String " />
+      <MemberSignature Language="F#" Value="val mutable Delivery : string" Usage="Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Delivery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This refers to the address being collected as being used for delivery. This is commonly faster than shipping. For example, it might be used for food delivery.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickUp">
+      <MemberSignature Language="C#" Value="public const string PickUp;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PickUp" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.PickUp" />
+      <MemberSignature Language="VB.NET" Value="Public Const PickUp As String " />
+      <MemberSignature Language="F#" Value="val mutable PickUp : string" Usage="Microsoft.Bot.Connector.Payments.PaymentShippingTypes.PickUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This refers to the address being collected as part of a service pickup. For example, this could be the address for laundry pickup.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shipping">
+      <MemberSignature Language="C#" Value="public const string Shipping;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Shipping" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Shipping" />
+      <MemberSignature Language="VB.NET" Value="Public Const Shipping As String " />
+      <MemberSignature Language="F#" Value="val mutable Shipping : string" Usage="Microsoft.Bot.Connector.Payments.PaymentShippingTypes.Shipping" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This is the default and refers to the address being collected as the destination for shipping.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

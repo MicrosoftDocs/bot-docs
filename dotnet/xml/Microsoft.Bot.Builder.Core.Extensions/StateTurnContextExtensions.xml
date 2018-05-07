@@ -1,0 +1,96 @@
+﻿<Type Name="StateTurnContextExtensions" FullName="Microsoft.Bot.Builder.Core.Extensions.StateTurnContextExtensions">
+  <TypeSignature Language="C#" Value="public static class StateTurnContextExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StateTurnContextExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Core.Extensions.StateTurnContextExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StateTurnContextExtensions" />
+  <TypeSignature Language="F#" Value="type StateTurnContextExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides helper methods for getting state objects from the turn context.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetConversationState&lt;TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState GetConversationState&lt;TState&gt; (this Microsoft.Bot.Builder.ITurnContext context) where TState : class, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TState GetConversationState&lt;class .ctor TState&gt;(class Microsoft.Bot.Builder.ITurnContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.StateTurnContextExtensions.GetConversationState``1(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConversationState(Of TState As {Class, New}) (context As ITurnContext) As TState" />
+      <MemberSignature Language="F#" Value="static member GetConversationState : Microsoft.Bot.Builder.ITurnContext -&gt; 'State (requires 'State : null and 'State : (new : unit -&gt; 'State))" Usage="Microsoft.Bot.Builder.Core.Extensions.StateTurnContextExtensions.GetConversationState context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TState">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TState">The type of the state object to get.</typeparam>
+        <param name="context">The context object for this turn.</param>
+        <summary>
+            Gets a conversation state object from the turn context.
+            </summary>
+        <returns>The state object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserState&lt;TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState GetUserState&lt;TState&gt; (this Microsoft.Bot.Builder.ITurnContext context) where TState : class, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TState GetUserState&lt;class .ctor TState&gt;(class Microsoft.Bot.Builder.ITurnContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.StateTurnContextExtensions.GetUserState``1(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserState(Of TState As {Class, New}) (context As ITurnContext) As TState" />
+      <MemberSignature Language="F#" Value="static member GetUserState : Microsoft.Bot.Builder.ITurnContext -&gt; 'State (requires 'State : null and 'State : (new : unit -&gt; 'State))" Usage="Microsoft.Bot.Builder.Core.Extensions.StateTurnContextExtensions.GetUserState context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TState">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TState">The type of the state object to get.</typeparam>
+        <param name="context">The context object for this turn.</param>
+        <summary>
+            Gets a user state object from the turn context.
+            </summary>
+        <returns>The state object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

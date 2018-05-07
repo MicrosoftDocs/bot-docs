@@ -1,0 +1,87 @@
+﻿<Type Name="Binding&lt;R&gt;" FullName="Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&lt;R&gt;">
+  <TypeSignature Language="C#" Value="public sealed class Binding&lt;R&gt; : Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding, IEquatable&lt;Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&gt;, Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Binding`1&lt;R&gt; extends Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding implements class Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding, class Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding`1&lt;!R&gt;, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Binding(Of R)&#xA;Inherits Binding&#xA;Implements IBinding(Of R), IEquatable(Of Binding)" />
+  <TypeSignature Language="F#" Value="type Binding&lt;'R&gt; = class&#xA;    inherit Binding&#xA;    interface IBinding&lt;'R&gt;&#xA;    interface IBinding&#xA;    interface IEquatable&lt;Binding&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="R" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="R">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Binding (System.Reflection.MethodBase method, object instance, object[] arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodBase method, object instance, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding`1.#ctor(System.Reflection.MethodBase,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As MethodBase, instance As Object, arguments As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&lt;'R&gt; : System.Reflection.MethodBase * obj * obj[] -&gt; Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&lt;'R&gt;" Usage="new Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding&lt;'R&gt; (method, instance, arguments)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.MethodBase" />
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="arguments" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <param name="instance">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;.InvokeAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;R&gt; IBinding&lt;R&gt;.InvokeAsync (System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!R&gt; Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;.InvokeAsync(valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding`1.Microsoft#Bot#Builder#Classic#Scorables#Internals#IBinding&lt;R&gt;#InvokeAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function InvokeAsync (token As CancellationToken) As Task(Of R) Implements IBinding(Of R).InvokeAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding`1.InvokeAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding`1/&lt;Microsoft-Bot-Builder-Classic-Scorables-Internals-IBinding&lt;R&gt;-InvokeAsync&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

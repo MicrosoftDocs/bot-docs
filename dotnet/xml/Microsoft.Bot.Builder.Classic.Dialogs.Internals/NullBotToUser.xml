@@ -1,0 +1,95 @@
+﻿<Type Name="NullBotToUser" FullName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser">
+  <TypeSignature Language="C#" Value="public sealed class NullBotToUser : Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullBotToUser extends System.Object implements class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NullBotToUser&#xA;Implements IBotToUser" />
+  <TypeSignature Language="F#" Value="type NullBotToUser = class&#xA;    interface IBotToUser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NullBotToUser (Microsoft.Bot.Schema.IMessageActivity toBot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.IMessageActivity toBot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser.#ctor(Microsoft.Bot.Schema.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (toBot As IMessageActivity)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser : Microsoft.Bot.Schema.IMessageActivity -&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser toBot" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toBot" Type="Microsoft.Bot.Schema.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="toBot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Schema.IMessageActivity IBotToUser.MakeMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageActivity Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotToUser#MakeMessage" />
+      <MemberSignature Language="VB.NET" Value="Function MakeMessage () As IMessageActivity Implements IBotToUser.MakeMessage" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotToUser.PostAsync (Microsoft.Bot.Schema.IMessageActivity message, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync(class Microsoft.Bot.Schema.IMessageActivity message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync(Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Schema.IMessageActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,96 @@
+﻿<Type Name="PaymentOperations" FullName="Microsoft.Bot.Schema.PaymentOperations">
+  <TypeSignature Language="C#" Value="public static class PaymentOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PaymentOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.PaymentOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentOperations" />
+  <TypeSignature Language="F#" Value="type PaymentOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Names for invocable operations in the payment callback protocol
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PaymentCompleteOperationName">
+      <MemberSignature Language="C#" Value="public const string PaymentCompleteOperationName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PaymentCompleteOperationName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.PaymentOperations.PaymentCompleteOperationName" />
+      <MemberSignature Language="VB.NET" Value="Public Const PaymentCompleteOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable PaymentCompleteOperationName : string" Usage="Microsoft.Bot.Schema.PaymentOperations.PaymentCompleteOperationName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name for the payment completion operation invocation
+            </summary>
+        <remarks>
+            This operation accepts a PaymentRequestComplete object and returns a PaymentRequestResult object or an error
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateShippingAddressOperationName">
+      <MemberSignature Language="C#" Value="public const string UpdateShippingAddressOperationName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateShippingAddressOperationName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.PaymentOperations.UpdateShippingAddressOperationName" />
+      <MemberSignature Language="VB.NET" Value="Public Const UpdateShippingAddressOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable UpdateShippingAddressOperationName : string" Usage="Microsoft.Bot.Schema.PaymentOperations.UpdateShippingAddressOperationName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name for the Update Shipping Address operation invocation
+            </summary>
+        <remarks>
+            This operation accepts a PaymentRequestUpdate object and returns a PaymentDetails object or an error
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateShippingOptionOperationName">
+      <MemberSignature Language="C#" Value="public const string UpdateShippingOptionOperationName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateShippingOptionOperationName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.PaymentOperations.UpdateShippingOptionOperationName" />
+      <MemberSignature Language="VB.NET" Value="Public Const UpdateShippingOptionOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable UpdateShippingOptionOperationName : string" Usage="Microsoft.Bot.Schema.PaymentOperations.UpdateShippingOptionOperationName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name for the Update Shipping Option operation invocation
+            </summary>
+        <remarks>
+            This operation accepts a PaymentRequestUpdate object and returns a PaymentDetails object or an error
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

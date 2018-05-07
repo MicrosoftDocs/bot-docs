@@ -87,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Mark" />
       <MemberSignature Language="VB.NET" Value=" Property Mark As IWait(Of C) Implements IWaiter(Of C).Mark" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Frame&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Mark</InterfaceMember>
@@ -109,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Wait" />
       <MemberSignature Language="VB.NET" Value=" Property Wait As IWait(Of C) Implements IWaiter(Of C).Wait" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Frame&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Wait</InterfaceMember>

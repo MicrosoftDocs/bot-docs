@@ -1,0 +1,90 @@
+<Type Name="ContentSharingRole" FullName="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole">
+  <TypeSignature Language="C#" Value="public enum ContentSharingRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContentSharingRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContentSharingRole" />
+  <TypeSignature Language="F#" Value="type ContentSharingRole = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole&gt;))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the Role the participant might be playing in a Content Sharing session
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attendee">
+      <MemberSignature Language="C#" Value="Attendee" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole Attendee = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Attendee" />
+      <MemberSignature Language="VB.NET" Value="Attendee" />
+      <MemberSignature Language="F#" Value="Attendee = 2" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Attendee" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The participant is an attendee in a content sharing session
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The participant is not in any content sharing session
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Presenter">
+      <MemberSignature Language="C#" Value="Presenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole Presenter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Presenter" />
+      <MemberSignature Language="VB.NET" Value="Presenter" />
+      <MemberSignature Language="F#" Value="Presenter = 1" Usage="Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole.Presenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.RealTimeMediaCalling</AssemblyName>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.RealTimeMediaCalling.ObjectModel.Contracts.ContentSharingRole</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The participant is the presenter in a content sharing session
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

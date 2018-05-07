@@ -1,0 +1,115 @@
+<Type Name="IFileSourcePlayer" FullName="Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer">
+  <TypeSignature Language="C#" Value="public interface IFileSourcePlayer : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileSourcePlayer implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFileSourcePlayer&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type IFileSourcePlayer = interface&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FileSourcePlayerEndOfFile">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; FileSourcePlayerEndOfFile;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; FileSourcePlayerEndOfFile" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.FileSourcePlayerEndOfFile" />
+      <MemberSignature Language="VB.NET" Value="Event FileSourcePlayerEndOfFile As EventHandler(Of FileSourcePlayerEndOfFileEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.FileSourcePlayerEndOfFile : EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; " Usage="member this.FileSourcePlayerEndOfFile : System.EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Skype.Internal.Bots.Media.FileSourcePlayerEndOfFileEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event to signal end of file reached
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFileSource">
+      <MemberSignature Language="C#" Value="public void LoadFileSource (Microsoft.Skype.Internal.Bots.Media.IFileSource fileSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFileSource(class Microsoft.Skype.Internal.Bots.Media.IFileSource fileSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.LoadFileSource(Microsoft.Skype.Internal.Bots.Media.IFileSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadFileSource (fileSource As IFileSource)" />
+      <MemberSignature Language="F#" Value="abstract member LoadFileSource : Microsoft.Skype.Internal.Bots.Media.IFileSource -&gt; unit" Usage="iFileSourcePlayer.LoadFileSource fileSource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileSource" Type="Microsoft.Skype.Internal.Bots.Media.IFileSource" />
+      </Parameters>
+      <Docs>
+        <param name="fileSource">
+        </param>
+        <summary>
+            Load a file source
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public void Play (Microsoft.Skype.Internal.Bots.Media.PlaySettings playSettings = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Play(class Microsoft.Skype.Internal.Bots.Media.PlaySettings playSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Play(Microsoft.Skype.Internal.Bots.Media.PlaySettings)" />
+      <MemberSignature Language="F#" Value="abstract member Play : Microsoft.Skype.Internal.Bots.Media.PlaySettings -&gt; unit" Usage="iFileSourcePlayer.Play playSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="playSettings" Type="Microsoft.Skype.Internal.Bots.Media.PlaySettings" />
+      </Parameters>
+      <Docs>
+        <param name="playSettings">To be added.</param>
+        <summary>
+             Start Playing
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Internal.Bots.Media.IFileSourcePlayer.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit" Usage="iFileSourcePlayer.Stop " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stops the player
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

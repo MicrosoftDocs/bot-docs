@@ -1,0 +1,220 @@
+﻿<Type Name="Place" FullName="Microsoft.Bot.Schema.Place">
+  <TypeSignature Language="C#" Value="public class Place : Microsoft.Bot.Schema.Entity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Place extends Microsoft.Bot.Schema.Entity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Place" />
+  <TypeSignature Language="VB.NET" Value="Public Class Place&#xA;Inherits Entity" />
+  <TypeSignature Language="F#" Value="type Place = class&#xA;    inherit Entity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Schema.Entity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Place (entity type: "https://schema.org/Place")
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Place ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Place.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the Place class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Place (object address = null, object geo = null, object hasMap = null, string type = null, string name = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object address, object geo, object hasMap, string type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Place.#ctor(System.Object,System.Object,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional address As Object = null, Optional geo As Object = null, Optional hasMap As Object = null, Optional type As String = null, Optional name As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Place : obj * obj * obj * string * string -&gt; Microsoft.Bot.Schema.Place" Usage="new Microsoft.Bot.Schema.Place (address, geo, hasMap, type, name)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="System.Object" />
+        <Parameter Name="geo" Type="System.Object" />
+        <Parameter Name="hasMap" Type="System.Object" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Address of the place (may be `string` or
+            complex object of type `PostalAddress`)</param>
+        <param name="geo">Geo coordinates of the place (may be complex
+            object of type `GeoCoordinates` or `GeoShape`)</param>
+        <param name="hasMap">Map to the place (may be `string` (URL) or
+            complex object of type `Map`)</param>
+        <param name="type">The type of the thing</param>
+        <param name="name">The name of the thing</param>
+        <summary>
+            Initializes a new instance of the Place class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public object Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Address" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Place.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As Object" />
+      <MemberSignature Language="F#" Value="member this.Address : obj with get, set" Usage="Microsoft.Bot.Schema.Place.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="address")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets address of the place (may be `string` or complex
+            object of type `PostalAddress`)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geo">
+      <MemberSignature Language="C#" Value="public object Geo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Geo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Place.Geo" />
+      <MemberSignature Language="VB.NET" Value="Public Property Geo As Object" />
+      <MemberSignature Language="F#" Value="member this.Geo : obj with get, set" Usage="Microsoft.Bot.Schema.Place.Geo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="geo")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets geo coordinates of the place (may be complex object of
+            type `GeoCoordinates` or `GeoShape`)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMap">
+      <MemberSignature Language="C#" Value="public object HasMap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object HasMap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Place.HasMap" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasMap As Object" />
+      <MemberSignature Language="F#" Value="member this.HasMap : obj with get, set" Usage="Microsoft.Bot.Schema.Place.HasMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="hasMap")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets map to the place (may be `string` (URL) or complex
+            object of type `Map`)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Place.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Schema.Place.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the thing
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Place.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Schema.Place.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of the thing
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

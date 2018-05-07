@@ -1,0 +1,90 @@
+﻿<Type Name="ShowTypingMiddleware" FullName="Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware">
+  <TypeSignature Language="C#" Value="public class ShowTypingMiddleware : Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ShowTypingMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware" />
+  <TypeSignature Language="VB.NET" Value="Public Class ShowTypingMiddleware&#xA;Implements IMiddleware" />
+  <TypeSignature Language="F#" Value="type ShowTypingMiddleware = class&#xA;    interface IMiddleware" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IMiddleware</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            When added, this middleware will send typing activities back to the user when a Message activity
+            is receieved to let them know that the bot has receieved the message and is working on the response.
+            You can specify a delay in milliseconds before the first typing activity is sent and then a frequency, 
+            also in milliseconds which determines how often another typing activity is sent. Typing activities 
+            will continue to be sent until your bot sends another message back to the user.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ShowTypingMiddleware (int delay = 500, int frequency = 2000);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 delay, int32 frequency) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional delay As Integer = 500, Optional frequency As Integer = 2000)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware : int * int -&gt; Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware" Usage="new Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware (delay, frequency)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="delay" Type="System.Int32" />
+        <Parameter Name="frequency" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="delay">To be added.</param>
+        <param name="frequency">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurn">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurn (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.MiddlewareSet.NextDelegate next);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurn(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Builder.MiddlewareSet/NextDelegate next) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnTurn (context As ITurnContext, next As MiddlewareSet.NextDelegate) As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnTurn : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.MiddlewareSet.NextDelegate -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurn : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.MiddlewareSet.NextDelegate -&gt; System.Threading.Tasks.Task" Usage="showTypingMiddleware.OnTurn (context, next)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Core.Extensions.ShowTypingMiddleware/&lt;OnTurn&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="next" Type="Microsoft.Bot.Builder.MiddlewareSet+NextDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="next">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

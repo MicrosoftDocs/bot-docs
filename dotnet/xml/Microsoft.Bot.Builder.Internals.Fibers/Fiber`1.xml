@@ -80,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt;&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber&lt;C&gt;#Frames" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of IFrame(Of C)) Implements IFiber(Of C).Frames" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Fiber&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Frames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Frames</InterfaceMember>
@@ -124,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Waits" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IFiber&lt;C&gt;#Waits" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Waits As IWaitFactory(Of C) Implements IFiber(Of C).Waits" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Fiber&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;.Waits" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IFiber`1.Waits</InterfaceMember>
@@ -179,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Mark" />
       <MemberSignature Language="VB.NET" Value=" Property Mark As IWait(Of C) Implements IWaiter(Of C).Mark" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Fiber&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Mark</InterfaceMember>
@@ -201,6 +204,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Wait" />
       <MemberSignature Language="VB.NET" Value=" Property Wait As IWait(Of C) Implements IWaiter(Of C).Wait" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Fiber&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Wait</InterfaceMember>

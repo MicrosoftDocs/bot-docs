@@ -208,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Log" />
       <MemberSignature Language="VB.NET" Value=" Property Log As Nullable(Of Boolean) Implements ILuisOptions.Log" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.Log</InterfaceMember>
@@ -230,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#SpellCheck" />
       <MemberSignature Language="VB.NET" Value=" Property SpellCheck As Nullable(Of Boolean) Implements ILuisOptions.SpellCheck" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck</InterfaceMember>
@@ -252,6 +254,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Staging" />
       <MemberSignature Language="VB.NET" Value=" Property Staging As Nullable(Of Boolean) Implements ILuisOptions.Staging" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.Staging</InterfaceMember>
@@ -274,6 +277,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#TimezoneOffset" />
       <MemberSignature Language="VB.NET" Value=" Property TimezoneOffset As Nullable(Of Double) Implements ILuisOptions.TimezoneOffset" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset</InterfaceMember>
@@ -296,6 +300,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Verbose" />
       <MemberSignature Language="VB.NET" Value=" Property Verbose As Nullable(Of Boolean) Implements ILuisOptions.Verbose" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose</InterfaceMember>

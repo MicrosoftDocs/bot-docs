@@ -1,0 +1,95 @@
+﻿<Type Name="ILocaleConverter" FullName="Microsoft.Bot.Builder.Ai.Translation.ILocaleConverter">
+  <TypeSignature Language="C#" Value="public interface ILocaleConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILocaleConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.Translation.ILocaleConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILocaleConverter" />
+  <TypeSignature Language="F#" Value="type ILocaleConverter = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public string Convert (string message, string fromLocale, string toLocale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Convert(string message, string fromLocale, string toLocale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.ILocaleConverter.Convert(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Convert (message As String, fromLocale As String, toLocale As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member Convert : string * string * string -&gt; string" Usage="iLocaleConverter.Convert (message, fromLocale, toLocale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="fromLocale" Type="System.String" />
+        <Parameter Name="toLocale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="fromLocale">To be added.</param>
+        <param name="toLocale">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAvailableLocales">
+      <MemberSignature Language="C#" Value="public string[] GetAvailableLocales ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetAvailableLocales() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.ILocaleConverter.GetAvailableLocales" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAvailableLocales () As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocales : unit -&gt; string[]" Usage="iLocaleConverter.GetAvailableLocales " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLocaleAvailable">
+      <MemberSignature Language="C#" Value="public bool IsLocaleAvailable (string locale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLocaleAvailable(string locale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.Translation.ILocaleConverter.IsLocaleAvailable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsLocaleAvailable (locale As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsLocaleAvailable : string -&gt; bool" Usage="iLocaleConverter.IsLocaleAvailable locale" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="locale">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

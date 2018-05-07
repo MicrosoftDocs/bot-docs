@@ -54,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IActivity Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#IBotContext#Activity" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Activity As IActivity Implements IBotContext.Activity" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IBotContext.Activity</InterfaceMember>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#IBotContext#CancellationToken" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CancellationToken As CancellationToken Implements IBotContext.CancellationToken" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken</InterfaceMember>
@@ -98,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ConversationData As IBotDataBag Implements IBotData.ConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData</InterfaceMember>
@@ -180,6 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property PrivateConversationData As IBotDataBag Implements IBotData.PrivateConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData</InterfaceMember>
@@ -202,6 +206,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property UserData As IBotDataBag Implements IBotData.UserData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData</InterfaceMember>
@@ -407,6 +412,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Frames" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of Delegate) Implements IDialogStack.Frames" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames</InterfaceMember>

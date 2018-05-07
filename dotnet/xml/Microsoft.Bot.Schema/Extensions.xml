@@ -1,0 +1,213 @@
+﻿<Type Name="Extensions" FullName="Microsoft.Bot.Schema.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for converting strongly typed Card objects to Attachement
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.AnimationCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.AnimationCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.AnimationCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As AnimationCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.AnimationCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.AnimationCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.AnimationCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.AnimationCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.AudioCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.AudioCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.AudioCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As AudioCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.AudioCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.AudioCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.AudioCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.AudioCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.HeroCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.HeroCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.HeroCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As HeroCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.HeroCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.HeroCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.HeroCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.HeroCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.ReceiptCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.ReceiptCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.ReceiptCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As ReceiptCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.ReceiptCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.ReceiptCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.ReceiptCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.ReceiptCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.SigninCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.SigninCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.SigninCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As SigninCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.SigninCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.SigninCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.SigninCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.SigninCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.ThumbnailCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.ThumbnailCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.ThumbnailCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As ThumbnailCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.ThumbnailCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.ThumbnailCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.ThumbnailCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.ThumbnailCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.VideoCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.VideoCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.VideoCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As VideoCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.VideoCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.VideoCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.VideoCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.VideoCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

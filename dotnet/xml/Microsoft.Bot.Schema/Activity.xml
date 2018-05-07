@@ -1,0 +1,2277 @@
+﻿<Type Name="Activity" FullName="Microsoft.Bot.Schema.Activity">
+  <TypeSignature Language="C#" Value="public class Activity : Microsoft.Bot.Schema.IContactRelationUpdateActivity, Microsoft.Bot.Schema.IConversationUpdateActivity, Microsoft.Bot.Schema.IEndOfConversationActivity, Microsoft.Bot.Schema.IEventActivity, Microsoft.Bot.Schema.IInstallationUpdateActivity, Microsoft.Bot.Schema.IInvokeActivity, Microsoft.Bot.Schema.IMessageDeleteActivity, Microsoft.Bot.Schema.IMessageReactionActivity, Microsoft.Bot.Schema.IMessageUpdateActivity, Microsoft.Bot.Schema.ISuggestionActivity, Microsoft.Bot.Schema.ITraceActivity, Microsoft.Bot.Schema.ITypingActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object implements class Microsoft.Bot.Schema.IActivity, class Microsoft.Bot.Schema.IContactRelationUpdateActivity, class Microsoft.Bot.Schema.IConversationUpdateActivity, class Microsoft.Bot.Schema.IEndOfConversationActivity, class Microsoft.Bot.Schema.IEventActivity, class Microsoft.Bot.Schema.IInstallationUpdateActivity, class Microsoft.Bot.Schema.IInvokeActivity, class Microsoft.Bot.Schema.IMessageActivity, class Microsoft.Bot.Schema.IMessageDeleteActivity, class Microsoft.Bot.Schema.IMessageReactionActivity, class Microsoft.Bot.Schema.IMessageUpdateActivity, class Microsoft.Bot.Schema.ISuggestionActivity, class Microsoft.Bot.Schema.ITraceActivity, class Microsoft.Bot.Schema.ITypingActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Activity" />
+  <TypeSignature Language="VB.NET" Value="Public Class Activity&#xA;Implements IContactRelationUpdateActivity, IConversationUpdateActivity, IEndOfConversationActivity, IEventActivity, IInstallationUpdateActivity, IInvokeActivity, IMessageDeleteActivity, IMessageReactionActivity, IMessageUpdateActivity, ISuggestionActivity, ITraceActivity, ITypingActivity" />
+  <TypeSignature Language="F#" Value="type Activity = class&#xA;    interface IActivity&#xA;    interface IConversationUpdateActivity&#xA;    interface IContactRelationUpdateActivity&#xA;    interface IInstallationUpdateActivity&#xA;    interface IMessageActivity&#xA;    interface IMessageUpdateActivity&#xA;    interface IMessageDeleteActivity&#xA;    interface IMessageReactionActivity&#xA;    interface ISuggestionActivity&#xA;    interface ITypingActivity&#xA;    interface IEndOfConversationActivity&#xA;    interface IEventActivity&#xA;    interface IInvokeActivity&#xA;    interface ITraceActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IContactRelationUpdateActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IConversationUpdateActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IEndOfConversationActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IEventActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IInstallationUpdateActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IInvokeActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IMessageDeleteActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IMessageReactionActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IMessageUpdateActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.ISuggestionActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.ITraceActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.ITypingActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            An Activity is the basic communication type for the Bot Framework 3.0
+            protocol
+            </summary>
+    <remarks>
+            The Activity class contains all properties that individual, more specific activities
+            could contain. It is a superset type.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Activity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the Activity class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTimeOffset&gt; timestamp = null, Nullable&lt;DateTimeOffset&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Schema.ChannelAccount from = null, Microsoft.Bot.Schema.ConversationAccount conversation = null, Microsoft.Bot.Schema.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Schema.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, string label = null, string valueType = null, object value = null, string name = null, Microsoft.Bot.Schema.ConversationReference relatesTo = null, string code = null, Nullable&lt;DateTimeOffset&gt; expiration = null, string importance = null, string deliveryMode = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; textHighlights = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Schema.ChannelAccount from, class Microsoft.Bot.Schema.ConversationAccount conversation, class Microsoft.Bot.Schema.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Schema.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Schema.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TextHighlight&gt; textHighlights) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ConversationAccount,Microsoft.Bot.Schema.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Schema.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Schema.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.TextHighlight})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ConversationAccount * Microsoft.Bot.Schema.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Schema.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Schema.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; -&gt; Microsoft.Bot.Schema.Activity" Usage="new Microsoft.Bot.Schema.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, textHighlights)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="timestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="localTimestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="serviceUrl" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="from" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="conversation" Type="Microsoft.Bot.Schema.ConversationAccount" />
+        <Parameter Name="recipient" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="textFormat" Type="System.String" />
+        <Parameter Name="attachmentLayout" Type="System.String" />
+        <Parameter Name="membersAdded" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;" />
+        <Parameter Name="membersRemoved" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;" />
+        <Parameter Name="reactionsAdded" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;" />
+        <Parameter Name="reactionsRemoved" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;" />
+        <Parameter Name="topicName" Type="System.String" />
+        <Parameter Name="historyDisclosed" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="inputHint" Type="System.String" />
+        <Parameter Name="summary" Type="System.String" />
+        <Parameter Name="suggestedActions" Type="Microsoft.Bot.Schema.SuggestedActions" />
+        <Parameter Name="attachments" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;" />
+        <Parameter Name="channelData" Type="System.Object" />
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="replyToId" Type="System.String" />
+        <Parameter Name="label" Type="System.String" />
+        <Parameter Name="valueType" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="relatesTo" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="expiration" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="importance" Type="System.String" />
+        <Parameter Name="deliveryMode" Type="System.String" />
+        <Parameter Name="textHighlights" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the activity. Possible values
+            include: 'message', 'contactRelationUpdate', 'conversationUpdate',
+            'typing', 'ping', 'endOfConversation', 'event', 'invoke',
+            'deleteUserData', 'messageUpdate', 'messageDelete',
+            'installationUpdate', 'messageReaction', 'suggestion',
+            'trace'</param>
+        <param name="id">ID of this activity</param>
+        <param name="timestamp">UTC Time when message was sent (set by
+            service)</param>
+        <param name="localTimestamp">Local time when message was sent (set
+            by client, Ex: 2016-09-23T13:07:49.4714686-07:00)</param>
+        <param name="serviceUrl">Service endpoint where operations
+            concerning the activity may be performed</param>
+        <param name="channelId">ID of the channel where the activity was
+            sent</param>
+        <param name="from">Sender address</param>
+        <param name="conversation">Conversation</param>
+        <param name="recipient">(Outbound to bot only) Bot's address that
+            received the message</param>
+        <param name="textFormat">Format of text fields Default:markdown.
+            Possible values include: 'markdown', 'plain', 'xml'</param>
+        <param name="attachmentLayout">Hint for how to deal with multiple
+            attachments. Default:list. Possible values include: 'list',
+            'carousel'</param>
+        <param name="membersAdded">Members added to the
+            conversation</param>
+        <param name="membersRemoved">Members removed from the
+            conversation</param>
+        <param name="reactionsAdded">Reactions added to the
+            activity</param>
+        <param name="reactionsRemoved">Reactions removed from the
+            activity</param>
+        <param name="topicName">The conversation's updated topic
+            name</param>
+        <param name="historyDisclosed">True if prior history of the channel
+            is disclosed</param>
+        <param name="locale">The language code of the Text field</param>
+        <param name="text">Content for the message</param>
+        <param name="speak">SSML Speak for TTS audio response</param>
+        <param name="inputHint">Input hint to the channel on what the bot
+            is expecting. Possible values include: 'acceptingInput',
+            'ignoringInput', 'expectingInput'</param>
+        <param name="summary">Text to display if the channel cannot render
+            cards</param>
+        <param name="suggestedActions">SuggestedActions are used to provide
+            keyboard/quickreply like behavior in many clients</param>
+        <param name="attachments">Attachments</param>
+        <param name="entities">Collection of Entity objects, each of which
+            contains metadata about this activity. Each Entity object is
+            typed.</param>
+        <param name="channelData">Channel-specific payload</param>
+        <param name="action">ContactAdded/Removed action</param>
+        <param name="replyToId">The original ID this message is a response
+            to</param>
+        <param name="label">Descriptive label</param>
+        <param name="valueType">Unique string which identifies the shape of
+            the value object</param>
+        <param name="value">Open-ended value</param>
+        <param name="name">Name of the operation to invoke or the name of
+            the event</param>
+        <param name="relatesTo">Reference to another conversation or
+            activity</param>
+        <param name="code">Code indicating why the conversation has ended.
+            Possible values include: 'unknown', 'completedSuccessfully',
+            'userCancelled', 'botTimedOut', 'botIssuedInvalidMessage',
+            'channelFailed'</param>
+        <param name="expiration">DateTime to expire the activity as ISO
+            8601 encoded datetime</param>
+        <param name="importance">Importance of this activity
+            {Low|Normal|High}, null value indicates Normal importance see
+            ActivityImportance)</param>
+        <param name="deliveryMode">Hint to describe how this activity
+            should be delivered.
+            Currently: null or "Default" = default delivery
+            "Notification" = notification semantics</param>
+        <param name="textHighlights">TextHighlight in the activity
+            represented in the ReplyToId property</param>
+        <summary>
+            Initializes a new instance of the Activity class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Action" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IContactRelationUpdateActivity.Action</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IInstallationUpdateActivity.Action</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="action")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets contactAdded/Removed action
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsContactRelationUpdateActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IContactRelationUpdateActivity AsContactRelationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IContactRelationUpdateActivity AsContactRelationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsContactRelationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsContactRelationUpdateActivity () As IContactRelationUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsContactRelationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IContactRelationUpdateActivity&#xA;override this.AsContactRelationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IContactRelationUpdateActivity" Usage="activity.AsContactRelationUpdateActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsContactRelationUpdateActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IContactRelationUpdateActivity mask if this is a contact relation update activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsConversationUpdateActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IConversationUpdateActivity AsConversationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IConversationUpdateActivity AsConversationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsConversationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsConversationUpdateActivity () As IConversationUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsConversationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IConversationUpdateActivity&#xA;override this.AsConversationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IConversationUpdateActivity" Usage="activity.AsConversationUpdateActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsConversationUpdateActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IConversationUpdateActivity mask if this is a conversation update activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsEndOfConversationActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IEndOfConversationActivity AsEndOfConversationActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IEndOfConversationActivity AsEndOfConversationActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsEndOfConversationActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsEndOfConversationActivity () As IEndOfConversationActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsEndOfConversationActivity : unit -&gt; Microsoft.Bot.Schema.IEndOfConversationActivity&#xA;override this.AsEndOfConversationActivity : unit -&gt; Microsoft.Bot.Schema.IEndOfConversationActivity" Usage="activity.AsEndOfConversationActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsEndOfConversationActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IEndOfConversationActivity mask if this is an end of conversation activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsEventActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IEventActivity AsEventActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IEventActivity AsEventActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsEventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsEventActivity () As IEventActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsEventActivity : unit -&gt; Microsoft.Bot.Schema.IEventActivity&#xA;override this.AsEventActivity : unit -&gt; Microsoft.Bot.Schema.IEventActivity" Usage="activity.AsEventActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsEventActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IEventActivity mask if this is an event activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsInstallationUpdateActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IInstallationUpdateActivity AsInstallationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IInstallationUpdateActivity AsInstallationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsInstallationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInstallationUpdateActivity () As IInstallationUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsInstallationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IInstallationUpdateActivity&#xA;override this.AsInstallationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IInstallationUpdateActivity" Usage="activity.AsInstallationUpdateActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsInstallationUpdateActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IInstallationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IInstallationUpdateActivity mask if this is a installation update activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsInvokeActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IInvokeActivity AsInvokeActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IInvokeActivity AsInvokeActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsInvokeActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInvokeActivity () As IInvokeActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsInvokeActivity : unit -&gt; Microsoft.Bot.Schema.IInvokeActivity&#xA;override this.AsInvokeActivity : unit -&gt; Microsoft.Bot.Schema.IInvokeActivity" Usage="activity.AsInvokeActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsInvokeActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IInvokeActivity mask if this is an invoke activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMessageActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IMessageActivity AsMessageActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageActivity AsMessageActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMessageActivity () As IMessageActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsMessageActivity : unit -&gt; Microsoft.Bot.Schema.IMessageActivity&#xA;override this.AsMessageActivity : unit -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="activity.AsMessageActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsMessageActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IMessageActivity mask if this is a message activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMessageDeleteActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IMessageDeleteActivity AsMessageDeleteActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageDeleteActivity AsMessageDeleteActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsMessageDeleteActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMessageDeleteActivity () As IMessageDeleteActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsMessageDeleteActivity : unit -&gt; Microsoft.Bot.Schema.IMessageDeleteActivity&#xA;override this.AsMessageDeleteActivity : unit -&gt; Microsoft.Bot.Schema.IMessageDeleteActivity" Usage="activity.AsMessageDeleteActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsMessageDeleteActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageDeleteActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IMessageDeleteActivity if this is a MessageDelete activity
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMessageReactionActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IMessageReactionActivity AsMessageReactionActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageReactionActivity AsMessageReactionActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsMessageReactionActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMessageReactionActivity () As IMessageReactionActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsMessageReactionActivity : unit -&gt; Microsoft.Bot.Schema.IMessageReactionActivity&#xA;override this.AsMessageReactionActivity : unit -&gt; Microsoft.Bot.Schema.IMessageReactionActivity" Usage="activity.AsMessageReactionActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsMessageReactionActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageReactionActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IMessageReactionActivity if this is a MessageReaction activity
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMessageUpdateActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IMessageUpdateActivity AsMessageUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageUpdateActivity AsMessageUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsMessageUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMessageUpdateActivity () As IMessageUpdateActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsMessageUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IMessageUpdateActivity&#xA;override this.AsMessageUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IMessageUpdateActivity" Usage="activity.AsMessageUpdateActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsMessageUpdateActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an IMessageUpdateAcitvity if this is a MessageUpdate activity
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsSuggestionActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ISuggestionActivity AsSuggestionActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.ISuggestionActivity AsSuggestionActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsSuggestionActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsSuggestionActivity () As ISuggestionActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsSuggestionActivity : unit -&gt; Microsoft.Bot.Schema.ISuggestionActivity&#xA;override this.AsSuggestionActivity : unit -&gt; Microsoft.Bot.Schema.ISuggestionActivity" Usage="activity.AsSuggestionActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsSuggestionActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ISuggestionActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an ISuggestionActivity if this is a Suggestion activity
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsTraceActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ITraceActivity AsTraceActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.ITraceActivity AsTraceActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsTraceActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsTraceActivity () As ITraceActivity" />
+      <MemberSignature Language="F#" Value="member this.AsTraceActivity : unit -&gt; Microsoft.Bot.Schema.ITraceActivity" Usage="activity.AsTraceActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an ITraceActivity if this is a Trace activity
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsTypingActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ITypingActivity AsTypingActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.ITypingActivity AsTypingActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsTypingActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsTypingActivity () As ITypingActivity" />
+      <MemberSignature Language="F#" Value="abstract member AsTypingActivity : unit -&gt; Microsoft.Bot.Schema.ITypingActivity&#xA;override this.AsTypingActivity : unit -&gt; Microsoft.Bot.Schema.ITypingActivity" Usage="activity.AsTypingActivity " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.AsTypingActivity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return an ITypingActivity mask if this is a typing activity
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentLayout">
+      <MemberSignature Language="C#" Value="public string AttachmentLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.AttachmentLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentLayout : string with get, set" Usage="Microsoft.Bot.Schema.Activity.AttachmentLayout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.AttachmentLayout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets hint for how to deal with multiple attachments.
+            Default:list. Possible values include: 'list', 'carousel'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; Attachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt; Attachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of Attachment)" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.Attachments" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Attachments</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets attachments
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelData">
+      <MemberSignature Language="C#" Value="public object ChannelData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ChannelData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelData As Object" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj with get, set" Usage="Microsoft.Bot.Schema.Activity.ChannelData" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.ChannelData</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelData")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets channel-specific payload
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelId">
+      <MemberSignature Language="C#" Value="public string ChannelId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ChannelId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string with get, set" Usage="Microsoft.Bot.Schema.Activity.ChannelId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.ChannelId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets ID of the channel where the activity was sent
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="public string Code { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Code" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Code" />
+      <MemberSignature Language="VB.NET" Value="Public Property Code As String" />
+      <MemberSignature Language="F#" Value="member this.Code : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Code" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IEndOfConversationActivity.Code</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets code indicating why the conversation has ended.
+            Possible values include: 'unknown', 'completedSuccessfully',
+            'userCancelled', 'botTimedOut', 'botIssuedInvalidMessage',
+            'channelFailed'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public const string ContentType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.Activity.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Schema.Activity.ContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content-type for an Activity
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conversation">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ConversationAccount Conversation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ConversationAccount Conversation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Conversation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Conversation As ConversationAccount" />
+      <MemberSignature Language="F#" Value="member this.Conversation : Microsoft.Bot.Schema.ConversationAccount with get, set" Usage="Microsoft.Bot.Schema.Activity.Conversation" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.Conversation</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ConversationAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContactRelationUpdateActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IContactRelationUpdateActivity CreateContactRelationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IContactRelationUpdateActivity CreateContactRelationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateContactRelationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateContactRelationUpdateActivity () As IContactRelationUpdateActivity" />
+      <MemberSignature Language="F#" Value="static member CreateContactRelationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IContactRelationUpdateActivity" Usage="Microsoft.Bot.Schema.Activity.CreateContactRelationUpdateActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with IContactRelationUpdateActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConversationUpdateActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IConversationUpdateActivity CreateConversationUpdateActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IConversationUpdateActivity CreateConversationUpdateActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateConversationUpdateActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateConversationUpdateActivity () As IConversationUpdateActivity" />
+      <MemberSignature Language="F#" Value="static member CreateConversationUpdateActivity : unit -&gt; Microsoft.Bot.Schema.IConversationUpdateActivity" Usage="Microsoft.Bot.Schema.Activity.CreateConversationUpdateActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with IConversationUpdateActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEndOfConversationActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IEndOfConversationActivity CreateEndOfConversationActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IEndOfConversationActivity CreateEndOfConversationActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateEndOfConversationActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEndOfConversationActivity () As IEndOfConversationActivity" />
+      <MemberSignature Language="F#" Value="static member CreateEndOfConversationActivity : unit -&gt; Microsoft.Bot.Schema.IEndOfConversationActivity" Usage="Microsoft.Bot.Schema.Activity.CreateEndOfConversationActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with IEndOfConversationActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEventActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IEventActivity CreateEventActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IEventActivity CreateEventActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateEventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEventActivity () As IEventActivity" />
+      <MemberSignature Language="F#" Value="static member CreateEventActivity : unit -&gt; Microsoft.Bot.Schema.IEventActivity" Usage="Microsoft.Bot.Schema.Activity.CreateEventActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with an IEventActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInvokeActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IInvokeActivity CreateInvokeActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IInvokeActivity CreateInvokeActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateInvokeActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInvokeActivity () As IInvokeActivity" />
+      <MemberSignature Language="F#" Value="static member CreateInvokeActivity : unit -&gt; Microsoft.Bot.Schema.IInvokeActivity" Usage="Microsoft.Bot.Schema.Activity.CreateInvokeActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with IInvokeActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessageActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity CreateMessageActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity CreateMessageActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessageActivity () As IMessageActivity" />
+      <MemberSignature Language="F#" Value="static member CreateMessageActivity : unit -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Schema.Activity.CreateMessageActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with IMessageActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePingActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IActivity CreatePingActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IActivity CreatePingActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreatePingActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePingActivity () As IActivity" />
+      <MemberSignature Language="F#" Value="static member CreatePingActivity : unit -&gt; Microsoft.Bot.Schema.IActivity" Usage="Microsoft.Bot.Schema.Activity.CreatePingActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with IActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReply">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity CreateReply (string text = null, string locale = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity CreateReply(string text, string locale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateReply(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReply (Optional text As String = null, Optional locale As String = null) As Activity" />
+      <MemberSignature Language="F#" Value="member this.CreateReply : string * string -&gt; Microsoft.Bot.Schema.Activity" Usage="activity.CreateReply (text, locale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="locale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">text you want to reply with</param>
+        <param name="locale">language of your reply</param>
+        <summary>
+            Take a message and create a reply message for it with the routing information 
+            set up to correctly route a reply to the source message
+            </summary>
+        <returns>message set up to route back to the sender</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTrace">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ITraceActivity CreateTrace (string name, object value = null, string valueType = null, string label = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.ITraceActivity CreateTrace(string name, object value, string valueType, string label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateTrace(System.String,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateTrace (name As String, Optional value As Object = null, Optional valueType As String = null, Optional label As String = null) As ITraceActivity" />
+      <MemberSignature Language="F#" Value="member this.CreateTrace : string * obj * string * string -&gt; Microsoft.Bot.Schema.ITraceActivity" Usage="activity.CreateTrace (name, value, valueType, label)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="valueType" Type="System.String" />
+        <Parameter Name="label" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the operation</param>
+        <param name="value">value of the operation</param>
+        <param name="valueType">valueType if helpful to identify the value schema (default is value.GetType().Name)</param>
+        <param name="label">descritive label of context. (Default is calling function name)</param>
+        <summary>
+            Create a trace activity based of this activity
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTraceActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ITraceActivity CreateTraceActivity (string name, string valueType = null, object value = null, string label = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ITraceActivity CreateTraceActivity(string name, string valueType, object value, string label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateTraceActivity(System.String,System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTraceActivity (name As String, Optional valueType As String = null, Optional value As Object = null, Optional label As String = null) As ITraceActivity" />
+      <MemberSignature Language="F#" Value="static member CreateTraceActivity : string * string * obj * string -&gt; Microsoft.Bot.Schema.ITraceActivity" Usage="Microsoft.Bot.Schema.Activity.CreateTraceActivity (name, valueType, value, label)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="valueType" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="label" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the operation</param>
+        <param name="valueType">valueType if helpful to identify the value schema (default is value.GetType().Name)</param>
+        <param name="value">value of the operation</param>
+        <param name="label">descritive label of context. (Default is calling function name)</param>
+        <summary>
+            Create an instance of the TraceActivity 
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTypingActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.ITypingActivity CreateTypingActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.ITypingActivity CreateTypingActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateTypingActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTypingActivity () As ITypingActivity" />
+      <MemberSignature Language="F#" Value="static member CreateTypingActivity : unit -&gt; Microsoft.Bot.Schema.ITypingActivity" Usage="Microsoft.Bot.Schema.Activity.CreateTypingActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create an instance of the Activity class with ITypingActivity masking
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeliveryMode">
+      <MemberSignature Language="C#" Value="public string DeliveryMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeliveryMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.DeliveryMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeliveryMode As String" />
+      <MemberSignature Language="F#" Value="member this.DeliveryMode : string with get, set" Usage="Microsoft.Bot.Schema.Activity.DeliveryMode" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.DeliveryMode</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="deliveryMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets hint to describe how this activity should be
+            delivered.
+            Currently: null or "Default" = default delivery
+            "Notification" = notification semantics
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; Entities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt; Entities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As IList(Of Entity)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.Entities" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.Entities</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entities")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets collection of Entity objects, each of which contains
+            metadata about this activity. Each Entity object is typed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expiration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Expiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Expiration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Expiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expiration As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.Expiration : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.Expiration" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Expiration</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expiration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets dateTime to expire the activity as ISO 8601 encoded
+            datetime
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ChannelAccount From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ChannelAccount From" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.From : Microsoft.Bot.Schema.ChannelAccount with get, set" Usage="Microsoft.Bot.Schema.Activity.From" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.From</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="from")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ChannelAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets sender address
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChannelData&lt;TypeT&gt;">
+      <MemberSignature Language="C#" Value="public TypeT GetChannelData&lt;TypeT&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TypeT GetChannelData&lt;TypeT&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.GetChannelData``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChannelData(Of TypeT) () As TypeT" />
+      <MemberSignature Language="F#" Value="abstract member GetChannelData : unit -&gt; 'ypeT&#xA;override this.GetChannelData : unit -&gt; 'ypeT" Usage="activity.GetChannelData " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.GetChannelData``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TypeT</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TypeT" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TypeT">type to use</typeparam>
+        <summary>
+            Get channeldata as typed structure
+            </summary>
+        <returns>typed object or default(TypeT)</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMentions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Mention[] GetMentions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.Mention[] GetMentions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.GetMentions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMentions () As Mention()" />
+      <MemberSignature Language="F#" Value="abstract member GetMentions : unit -&gt; Microsoft.Bot.Schema.Mention[]&#xA;override this.GetMentions : unit -&gt; Microsoft.Bot.Schema.Mention[]" Usage="activity.GetMentions " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IMessageActivity.GetMentions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Mention[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Resolves the mentions from the entities of this (message) activity.
+            </summary>
+        <returns>The array of mentions or an empty array, if none found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasContent">
+      <MemberSignature Language="C#" Value="public bool HasContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.HasContent" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasContent () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HasContent : unit -&gt; bool&#xA;override this.HasContent : unit -&gt; bool" Usage="activity.HasContent " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IMessageActivity.HasContent</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Checks if this (message) activity has content.
+            </summary>
+        <returns>Returns true, if this message has any content to send. False otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HistoryDisclosed">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HistoryDisclosed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HistoryDisclosed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.HistoryDisclosed" />
+      <MemberSignature Language="VB.NET" Value="Public Property HistoryDisclosed As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.HistoryDisclosed : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.HistoryDisclosed" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IConversationUpdateActivity.HistoryDisclosed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="historyDisclosed")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets true if prior history of the channel is disclosed
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Id" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.Id</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets ID of this activity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Importance">
+      <MemberSignature Language="C#" Value="public string Importance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Importance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Importance As String" />
+      <MemberSignature Language="F#" Value="member this.Importance : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Importance" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Importance</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="importance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets importance of this activity
+            {Low|Normal|High}, null value indicates Normal importance see
+            ActivityImportance)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputHint">
+      <MemberSignature Language="C#" Value="public string InputHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputHint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.InputHint" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputHint As String" />
+      <MemberSignature Language="F#" Value="member this.InputHint : string with get, set" Usage="Microsoft.Bot.Schema.Activity.InputHint" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.InputHint</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="inputHint")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets input hint to the channel on what the bot is
+            expecting. Possible values include: 'acceptingInput',
+            'ignoringInput', 'expectingInput'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActivity">
+      <MemberSignature Language="C#" Value="protected bool IsActivity (string activity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsActivity(string activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.IsActivity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsActivity (activity As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsActivity : string -&gt; bool" Usage="activity.IsActivity activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <summary>
+            True if the Activity is of the specified activity type
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Label" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.ITraceActivity.Label</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="label")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets descriptive label
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Locale" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Locale</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="locale")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the language code of the Text field
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalTimestamp">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; LocalTimestamp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LocalTimestamp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.LocalTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalTimestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LocalTimestamp : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.LocalTimestamp" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.LocalTimestamp</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="localTimestamp")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets local time when message was sent (set by client, Ex:
+            2016-09-23T13:07:49.4714686-07:00)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MembersAdded">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; MembersAdded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; MembersAdded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.MembersAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Property MembersAdded As IList(Of ChannelAccount)" />
+      <MemberSignature Language="F#" Value="member this.MembersAdded : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.MembersAdded" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IConversationUpdateActivity.MembersAdded</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="membersAdded")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets members added to the conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MembersRemoved">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; MembersRemoved { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; MembersRemoved" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.MembersRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Property MembersRemoved As IList(Of ChannelAccount)" />
+      <MemberSignature Language="F#" Value="member this.MembersRemoved : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.MembersRemoved" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IConversationUpdateActivity.MembersRemoved</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="membersRemoved")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets members removed from the conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Name" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IEventActivity.Name</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IInvokeActivity.Name</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.ITraceActivity.Name</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets name of the operation to invoke or the name of the
+            event
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As JObject" />
+      <MemberSignature Language="F#" Value="member this.Properties : Newtonsoft.Json.Linq.JObject with get, set" Usage="Microsoft.Bot.Schema.Activity.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Extension data for overflow of properties
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReactionsAdded">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; ReactionsAdded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; ReactionsAdded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ReactionsAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionsAdded As IList(Of MessageReaction)" />
+      <MemberSignature Language="F#" Value="member this.ReactionsAdded : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.ReactionsAdded" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageReactionActivity.ReactionsAdded</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionsAdded")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets reactions added to the activity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReactionsRemoved">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; ReactionsRemoved { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; ReactionsRemoved" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ReactionsRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionsRemoved As IList(Of MessageReaction)" />
+      <MemberSignature Language="F#" Value="member this.ReactionsRemoved : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.ReactionsRemoved" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageReactionActivity.ReactionsRemoved</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionsRemoved")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets reactions removed from the activity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recipient">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ChannelAccount Recipient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ChannelAccount Recipient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Recipient" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recipient As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.Recipient : Microsoft.Bot.Schema.ChannelAccount with get, set" Usage="Microsoft.Bot.Schema.Activity.Recipient" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.Recipient</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ChannelAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Outbound to bot only) Bot's address that received the
+            message
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ConversationReference RelatesTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ConversationReference RelatesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.RelatesTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatesTo As ConversationReference" />
+      <MemberSignature Language="F#" Value="member this.RelatesTo : Microsoft.Bot.Schema.ConversationReference with get, set" Usage="Microsoft.Bot.Schema.Activity.RelatesTo" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IEventActivity.RelatesTo</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IInvokeActivity.RelatesTo</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.ITraceActivity.RelatesTo</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="relatesTo")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets reference to another conversation or activity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyToId">
+      <MemberSignature Language="C#" Value="public string ReplyToId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReplyToId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ReplyToId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplyToId As String" />
+      <MemberSignature Language="F#" Value="member this.ReplyToId : string with get, set" Usage="Microsoft.Bot.Schema.Activity.ReplyToId" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.ReplyToId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="replyToId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the original ID this message is a response to
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceUrl">
+      <MemberSignature Language="C#" Value="public string ServiceUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string with get, set" Usage="Microsoft.Bot.Schema.Activity.ServiceUrl" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.ServiceUrl</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets service endpoint where operations concerning the
+            activity may be performed
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public string Speak { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Speak" />
+      <MemberSignature Language="VB.NET" Value="Public Property Speak As String" />
+      <MemberSignature Language="F#" Value="member this.Speak : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Speak" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Speak</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="speak")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets SSML Speak for TTS audio response
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.SuggestedActions SuggestedActions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.SuggestedActions SuggestedActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.SuggestedActions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedActions As SuggestedActions" />
+      <MemberSignature Language="F#" Value="member this.SuggestedActions : Microsoft.Bot.Schema.SuggestedActions with get, set" Usage="Microsoft.Bot.Schema.Activity.SuggestedActions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.SuggestedActions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.SuggestedActions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets suggestedActions are used to provide
+            keyboard/quickreply like behavior in many clients
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Summary">
+      <MemberSignature Language="C#" Value="public string Summary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Summary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Summary" />
+      <MemberSignature Language="VB.NET" Value="Public Property Summary As String" />
+      <MemberSignature Language="F#" Value="member this.Summary : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Summary" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Summary</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="summary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets text to display if the channel cannot render cards
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Text" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Text</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IEndOfConversationActivity.Text</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets content for the message
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFormat">
+      <MemberSignature Language="C#" Value="public string TextFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.TextFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TextFormat : string with get, set" Usage="Microsoft.Bot.Schema.Activity.TextFormat" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.TextFormat</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="textFormat")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets format of text fields Default:markdown. Possible
+            values include: 'markdown', 'plain', 'xml'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextHighlights">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; TextHighlights { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TextHighlight&gt; TextHighlights" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.TextHighlights" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextHighlights As IList(Of TextHighlight)" />
+      <MemberSignature Language="F#" Value="member this.TextHighlights : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.TextHighlights" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.ISuggestionActivity.TextHighlights</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="textHighlights")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets textHighlight in the activity represented in the
+            ReplyToId property
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Timestamp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Timestamp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.Timestamp" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.Timestamp</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timestamp")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets UTC Time when message was sent (set by service)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopicName">
+      <MemberSignature Language="C#" Value="public string TopicName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TopicName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.TopicName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopicName As String" />
+      <MemberSignature Language="F#" Value="member this.TopicName : string with get, set" Usage="Microsoft.Bot.Schema.Activity.TopicName" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IConversationUpdateActivity.TopicName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="topicName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the conversation's updated topic name
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetChannelData&lt;TypeT&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetChannelData&lt;TypeT&gt; (out TypeT instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetChannelData&lt;TypeT&gt;([out] !!TypeT&amp; instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.TryGetChannelData``1(``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetChannelData(Of TypeT) (ByRef instance As TypeT) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryGetChannelData :  -&gt; bool&#xA;override this.TryGetChannelData :  -&gt; bool" Usage="activity.TryGetChannelData instance" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.TryGetChannelData``1(``0@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TypeT" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="instance" Type="TypeT&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TypeT">type to use</typeparam>
+        <param name="instance">The resulting instance, if possible</param>
+        <summary>
+            Get channeldata as typed structure
+            </summary>
+        <returns>
+          <c>true</c> if value of <seealso cref="P:Microsoft.Bot.Schema.IActivity.ChannelData" /> was coerceable to <typeparamref name="TypeT" />, <c>false</c> otherwise.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Schema.Activity.Type" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IActivity.Type</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of the activity. Possible values include:
+            'message', 'contactRelationUpdate', 'conversationUpdate', 'typing',
+            'ping', 'endOfConversation', 'event', 'invoke', 'deleteUserData',
+            'messageUpdate', 'messageDelete', 'installationUpdate',
+            'messageReaction', 'suggestion', 'trace'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="Microsoft.Bot.Schema.Activity.Value" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IMessageActivity.Value</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IEventActivity.Value</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.IInvokeActivity.Value</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Bot.Schema.ITraceActivity.Value</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets open-ended value
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueType">
+      <MemberSignature Language="C#" Value="public string ValueType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValueType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ValueType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueType As String" />
+      <MemberSignature Language="F#" Value="member this.ValueType : string with get, set" Usage="Microsoft.Bot.Schema.Activity.ValueType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Schema.ITraceActivity.ValueType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="valueType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets unique string which identifies the shape of the value
+            object
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

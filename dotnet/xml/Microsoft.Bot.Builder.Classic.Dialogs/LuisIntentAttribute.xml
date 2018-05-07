@@ -1,0 +1,85 @@
+﻿<Type Name="LuisIntentAttribute" FullName="Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute">
+  <TypeSignature Language="C#" Value="public class LuisIntentAttribute : Microsoft.Bot.Builder.Classic.Scorables.Internals.AttributeString" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisIntentAttribute extends Microsoft.Bot.Builder.Classic.Scorables.Internals.AttributeString" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisIntentAttribute&#xA;Inherits AttributeString" />
+  <TypeSignature Language="F#" Value="type LuisIntentAttribute = class&#xA;    inherit AttributeString" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Classic.Scorables.Internals.AttributeString</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=true, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisIntentAttribute (string intentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string intentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (intentName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute : string -&gt; Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute intentName" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="intentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="intentName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntentName">
+      <MemberSignature Language="C#" Value="public readonly string IntentName;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string IntentName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute.IntentName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly IntentName As String " />
+      <MemberSignature Language="F#" Value="val mutable IntentName : string" Usage="Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute.IntentName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="protected override string Text { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute.Text" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="Microsoft.Bot.Builder.Classic.Dialogs.LuisIntentAttribute.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,65 @@
+﻿<Type Name="PatternAttribute" FullName="Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute">
+  <TypeSignature Language="C#" Value="public class PatternAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PatternAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class PatternAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type PatternAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PatternAttribute (string pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pattern As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute : string -&gt; Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute" Usage="new Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute pattern" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public readonly string Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string Pattern" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Pattern As String " />
+      <MemberSignature Language="F#" Value="val mutable Pattern : string" Usage="Microsoft.Bot.Builder.Classic.FormFlow.PatternAttribute.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

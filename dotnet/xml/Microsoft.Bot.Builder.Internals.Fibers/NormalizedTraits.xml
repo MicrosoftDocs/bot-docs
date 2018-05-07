@@ -45,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;System.Double&gt;.Maximum" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Microsoft#Bot#Builder#Internals#Fibers#ITraits&lt;System#Double&gt;#Maximum" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Maximum As Double Implements ITraits(Of Double).Maximum" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;System.Double&gt;.Maximum" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Maximum</InterfaceMember>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;System.Double&gt;.Minimum" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Microsoft#Bot#Builder#Internals#Fibers#ITraits&lt;System#Double&gt;#Minimum" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Minimum As Double Implements ITraits(Of Double).Minimum" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.NormalizedTraits.Microsoft.Bot.Builder.Internals.Fibers.ITraits&lt;System.Double&gt;.Minimum" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.ITraits`1.Minimum</InterfaceMember>
