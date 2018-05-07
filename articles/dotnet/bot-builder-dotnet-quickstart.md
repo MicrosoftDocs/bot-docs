@@ -24,15 +24,12 @@ This tutorial walks you through building a bot by using
 the Bot Application template and the Bot Builder SDK for .NET,
 and then testing it with the Bot Framework Emulator.
 
-> [!IMPORTANT]
-> The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
-
 ## Prerequisites
-1. Visual Studio [2015 or 2017](https://www.visualstudio.com/)
+1. Visual Studio [2017](https://www.visualstudio.com/).
 
 2. In Visual Studio, update all [extensions](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension) to their latest versions.
 
-3. Bot [template for C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3)
+3. Bot template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3).
 
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\` and the item templates directory is at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates\Visual C#\`
