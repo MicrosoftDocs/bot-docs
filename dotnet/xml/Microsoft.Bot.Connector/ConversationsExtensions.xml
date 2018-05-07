@@ -519,7 +519,7 @@
             Conversation ID
             </param>
         <param name="activityId">
-            activityId the reply is to (OPTIONAL)
+            activityId the reply is to
             </param>
         <param name="activity">
             Activity to send
@@ -599,7 +599,7 @@
             Conversation ID
             </param>
         <param name="activityId">
-            activityId the reply is to (OPTIONAL)
+            activityId the reply is to
             </param>
         <param name="activity">
             Activity to send
