@@ -18,7 +18,7 @@ From the ground up, let's explore the basic structure of a bot.
 
 ## Creation of your bot
 
-A bot can be created in a variety of ways, such as within the [Azure portal](https://portal.azure.com), in Visual Studio, or through [command line tools](bot-builder-tools-az-cli.md). Once created, bots can be run on a local machine, on Azure, or on another cloud service. They all function very similarly, regardless of where it's run and how it's built.
+A bot can be created in a variety of ways, such as within the [Azure portal](https://portal.azure.com), in Visual Studio, or through [command line tools](../bot-builder-tools-az-cli.md). Once created, bots can be run on a local machine, on Azure, or on another cloud service. They all function very similarly, regardless of where it's run and how it's built.
 
 ## Interaction with your bot
 
