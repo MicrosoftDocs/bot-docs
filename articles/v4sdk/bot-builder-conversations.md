@@ -12,6 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Conversation flow
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Since a bot can be thought of as a conversational user interface, the flow of conversation is how we interact with the user and can take different forms. Having the right conversation flow helps improve the user's interaction and the performance of your bot.
 
