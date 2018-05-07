@@ -87,3 +87,10 @@ Next, start the emulator and then connect to your bot in the emulator:
 ## Interact with your bot
 
 Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+
+## Next steps
+
+Next, jump into the concepts that explain a bot and how it works.
+
+> [!div class="nextstepaction"]
+> [Basic Bot concepts](../v4sdk/bot-builder-basics.md)

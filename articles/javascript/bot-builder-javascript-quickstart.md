@@ -137,3 +137,10 @@ At this point, your bot is running locally. Next, start the emulator and then co
 1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where port-number matches the port number shown in the browser where your application is running.
 2. Click Save and connect. You won't need to specify Microsoft App ID and Microsoft App Password. You can leave these fields blank for now.
 3. Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+
+## Next steps
+
+Next, jump into the concepts that explain a bot and how it works.
+
+> [!div class="nextstepaction"]
+> [Basic Bot concepts](../v4sdk/bot-builder-basics.md)
