@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type IConnectorClient = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -15,34 +16,33 @@
   </Interfaces>
   <Docs>
     <summary>
-            The Bot Connector REST API allows your bot to send and receive
-            messages to channels configured in the
-            [Bot Framework Developer Portal](https://dev.botframework.com). The
-            Connector service uses industry-standard REST
-            and JSON over HTTPS.
+             The Bot Connector REST API allows your bot to send and receive messages
+             to channels configured in the
+             [Bot Framework Developer Portal](https://dev.botframework.com). The
+             Connector service uses industry-standard REST
+             and JSON over HTTPS.
             
-            Client libraries for this REST API are available. See below for a
-            list.
+             Client libraries for this REST API are available. See below for a list.
             
-            Many bots will use both the Bot Connector REST API and the associated
-            [Bot State REST API](/en-us/restapi/state). The
-            Bot State REST API allows a bot to store and retrieve state associated
-            with users and conversations.
+             Many bots will use both the Bot Connector REST API and the associated
+             [Bot State REST API](/en-us/restapi/state). The
+             Bot State REST API allows a bot to store and retrieve state associated
+             with users and conversations.
             
-            Authentication for both the Bot Connector and Bot State REST APIs is
-            accomplished with JWT Bearer tokens, and is
-            described in detail in the [Connector
-            Authentication](/en-us/restapi/authentication) document.
+             Authentication for both the Bot Connector and Bot State REST APIs is
+             accomplished with JWT Bearer tokens, and is
+             described in detail in the [Connector
+             Authentication](/en-us/restapi/authentication) document.
             
-            # Client Libraries for the Bot Connector REST API
+             # Client Libraries for the Bot Connector REST API
             
-            * [Bot Builder for C#](/en-us/csharp/builder/sdkreference/)
-            * [Bot Builder for Node.js](/en-us/node/builder/overview/)
-            * Generate your own from the [Connector API Swagger
-            file](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json)
+             * [Bot Builder for C#](/en-us/csharp/builder/sdkreference/)
+             * [Bot Builder for Node.js](/en-us/node/builder/overview/)
+             * Generate your own from the [Connector API Swagger
+             file](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json)
             
-            © 2016 Microsoft
-            </summary>
+             © 2016 Microsoft
+             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,7 +55,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IAttachments</ReturnType>
@@ -77,7 +78,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -99,7 +101,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversations</ReturnType>
@@ -121,7 +124,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -144,7 +148,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -166,7 +171,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>

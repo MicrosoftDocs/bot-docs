@@ -1,0 +1,252 @@
+﻿<Type Name="ConversationAccount" FullName="Microsoft.Bot.Schema.ConversationAccount">
+  <TypeSignature Language="C#" Value="public class ConversationAccount" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationAccount extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ConversationAccount" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConversationAccount" />
+  <TypeSignature Language="F#" Value="type ConversationAccount = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Channel account information for a conversation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationAccount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationAccount.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the ConversationAccount class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationAccount (Nullable&lt;bool&gt; isGroup = null, string conversationType = null, string id = null, string name = null, string role = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string conversationType, string id, string name, string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional conversationType As String = null, Optional id As String = null, Optional name As String = null, Optional role As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ConversationAccount : Nullable&lt;bool&gt; * string * string * string * string -&gt; Microsoft.Bot.Schema.ConversationAccount" Usage="new Microsoft.Bot.Schema.ConversationAccount (isGroup, conversationType, id, name, role)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isGroup" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="conversationType" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="isGroup">Indicates whether the conversation contains
+            more than two participants at the time the activity was
+            generated</param>
+        <param name="conversationType">Indicates the type of the
+            conversation in channels that distinguish between conversation
+            types</param>
+        <param name="id">Channel id for the user or bot on this channel
+            (Example: joe@smith.com, or @joesmith or 123456)</param>
+        <param name="name">Display friendly name</param>
+        <param name="role">Role of the entity behind the account (Example:
+            User, Bot, etc.). Possible values include: 'user', 'bot'</param>
+        <summary>
+            Initializes a new instance of the ConversationAccount class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationType">
+      <MemberSignature Language="C#" Value="public string ConversationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConversationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.ConversationType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationType As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationType : string with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.ConversationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversationType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets indicates the type of the conversation in channels
+            that distinguish between conversation types
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets channel id for the user or bot on this channel
+            (Example: joe@smith.com, or @joesmith or 123456)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGroup">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.IsGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsGroup As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsGroup : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.IsGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isGroup")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets indicates whether the conversation contains more than
+            two participants at the time the activity was generated
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets display friendly name
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As JObject" />
+      <MemberSignature Language="F#" Value="member this.Properties : Newtonsoft.Json.Linq.JObject with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Extension data for overflow of properties
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public string Role { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
+      <MemberSignature Language="F#" Value="member this.Role : string with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="role")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets role of the entity behind the account (Example: User,
+            Bot, etc.). Possible values include: 'user', 'bot'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

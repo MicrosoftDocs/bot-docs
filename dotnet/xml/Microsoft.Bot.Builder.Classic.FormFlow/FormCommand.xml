@@ -1,0 +1,115 @@
+﻿<Type Name="FormCommand" FullName="Microsoft.Bot.Builder.Classic.FormFlow.FormCommand">
+  <TypeSignature Language="C#" Value="public enum FormCommand" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormCommand extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.FormFlow.FormCommand" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormCommand" />
+  <TypeSignature Language="F#" Value="type FormCommand = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Backup">
+      <MemberSignature Language="C#" Value="Backup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.FormCommand Backup = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Backup" />
+      <MemberSignature Language="VB.NET" Value="Backup" />
+      <MemberSignature Language="F#" Value="Backup = 0" Usage="Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Backup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.FormCommand</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="Help" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.FormCommand Help = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Help" />
+      <MemberSignature Language="VB.NET" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 1" Usage="Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Help" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.FormCommand</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quit">
+      <MemberSignature Language="C#" Value="Quit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.FormCommand Quit = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Quit" />
+      <MemberSignature Language="VB.NET" Value="Quit" />
+      <MemberSignature Language="F#" Value="Quit = 2" Usage="Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Quit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.FormCommand</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="Reset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.FormCommand Reset = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Reset" />
+      <MemberSignature Language="VB.NET" Value="Reset" />
+      <MemberSignature Language="F#" Value="Reset = 3" Usage="Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Reset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.FormCommand</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="Status" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Classic.FormFlow.FormCommand Status = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Status" />
+      <MemberSignature Language="VB.NET" Value="Status" />
+      <MemberSignature Language="F#" Value="Status = 4" Usage="Microsoft.Bot.Builder.Classic.FormFlow.FormCommand.Status" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.FormCommand</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

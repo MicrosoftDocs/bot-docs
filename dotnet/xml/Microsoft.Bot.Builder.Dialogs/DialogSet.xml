@@ -1,0 +1,147 @@
+﻿<Type Name="DialogSet" FullName="Microsoft.Bot.Builder.Dialogs.DialogSet">
+  <TypeSignature Language="C#" Value="public class DialogSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogSet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogSet" />
+  <TypeSignature Language="F#" Value="type DialogSet = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A related set of dialogs that can all call each other.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.IDialog Add (string dialogId, Microsoft.Bot.Builder.Dialogs.IDialog dialog);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.IDialog Add(string dialogId, class Microsoft.Bot.Builder.Dialogs.IDialog dialog) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogSet.Add(System.String,Microsoft.Bot.Builder.Dialogs.IDialog)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (dialogId As String, dialog As IDialog) As IDialog" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Microsoft.Bot.Builder.Dialogs.IDialog -&gt; Microsoft.Bot.Builder.Dialogs.IDialog" Usage="dialogSet.Add (dialogId, dialog)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+        <Parameter Name="dialog" Type="Microsoft.Bot.Builder.Dialogs.IDialog" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">To be added.</param>
+        <param name="dialog">To be added.</param>
+        <summary>
+            Adds a new dialog to the set and returns the added dialog.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Waterfall Add (string dialogId, Microsoft.Bot.Builder.Dialogs.WaterfallStep[] steps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Waterfall Add(string dialogId, class Microsoft.Bot.Builder.Dialogs.WaterfallStep[] steps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogSet.Add(System.String,Microsoft.Bot.Builder.Dialogs.WaterfallStep[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (dialogId As String, steps As WaterfallStep()) As Waterfall" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Microsoft.Bot.Builder.Dialogs.WaterfallStep[] -&gt; Microsoft.Bot.Builder.Dialogs.Waterfall" Usage="dialogSet.Add (dialogId, steps)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Waterfall</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+        <Parameter Name="steps" Type="Microsoft.Bot.Builder.Dialogs.WaterfallStep[]" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">To be added.</param>
+        <param name="steps">To be added.</param>
+        <summary>
+            Adds a new waterfall to the set and returns the added waterfall.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContext">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogContext CreateContext (Microsoft.Bot.Builder.ITurnContext context, System.Collections.Generic.IDictionary&lt;string,object&gt; state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.DialogContext CreateContext(class Microsoft.Bot.Builder.ITurnContext context, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogSet.CreateContext(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateContext (context As ITurnContext, state As IDictionary(Of String, Object)) As DialogContext" />
+      <MemberSignature Language="F#" Value="member this.CreateContext : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; Microsoft.Bot.Builder.Dialogs.DialogContext" Usage="dialogSet.CreateContext (context, state)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="state" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.IDialog Find (string dialogId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.IDialog Find(string dialogId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogSet.Find(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (dialogId As String) As IDialog" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; Microsoft.Bot.Builder.Dialogs.IDialog" Usage="dialogSet.Find dialogId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">ID of the dialog/prompt to lookup.</param>
+        <summary>
+            Finds a dialog that was previously added to the set using [add()](#add).
+            </summary>
+        <returns>dialog if found otherwise null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

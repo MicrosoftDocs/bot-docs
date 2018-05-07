@@ -244,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Frames" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of Delegate) Implements IDialogStack.Frames" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames</InterfaceMember>

@@ -1,0 +1,39 @@
+<Type Name="VideoSettings" FullName="Microsoft.Skype.Bots.Media.VideoSettings">
+  <TypeSignature Language="C#" Value="public class VideoSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Skype.Bots.Media.VideoSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class VideoSettings" />
+  <TypeSignature Language="F#" Value="type VideoSettings = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+    <AssemblyVersion>1.7.0.26</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Video Frame player settings
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VideoSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Skype.Bots.Media.VideoSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Skype.Bots.Media</AssemblyName>
+        <AssemblyVersion>1.7.0.26</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

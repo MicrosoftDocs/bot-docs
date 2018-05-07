@@ -1,0 +1,62 @@
+﻿<Type Name="IPromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeChoicesOptions">
+  <TypeSignature Language="C#" Value="public interface IPromptRecognizeChoicesOptions : Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeValuesOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeChoicesOptions implements class Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeValuesOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeChoicesOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPromptRecognizeChoicesOptions&#xA;Implements IPromptRecognizeValuesOptions" />
+  <TypeSignature Language="F#" Value="type IPromptRecognizeChoicesOptions = interface&#xA;    interface IPromptRecognizeValuesOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeValuesOptions</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExcludeAction">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExcludeAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExcludeAction As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeAction : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludeValue">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExcludeValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExcludeValue As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExcludeValue : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Classic.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

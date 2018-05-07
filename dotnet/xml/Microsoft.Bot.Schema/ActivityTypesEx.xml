@@ -1,0 +1,44 @@
+﻿<Type Name="ActivityTypesEx" FullName="Microsoft.Bot.Schema.ActivityTypesEx">
+  <TypeSignature Language="C#" Value="public static class ActivityTypesEx" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityTypesEx extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ActivityTypesEx" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTypesEx" />
+  <TypeSignature Language="F#" Value="type ActivityTypesEx = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Additional values for ActivityTypes beyond the auto-generated ActivityTypes class.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delay">
+      <MemberSignature Language="C#" Value="public const string Delay;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Delay" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.ActivityTypesEx.Delay" />
+      <MemberSignature Language="VB.NET" Value="Public Const Delay As String " />
+      <MemberSignature Language="F#" Value="val mutable Delay : string" Usage="Microsoft.Bot.Schema.ActivityTypesEx.Delay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

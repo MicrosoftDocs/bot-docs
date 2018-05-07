@@ -1,0 +1,46 @@
+<Type Name="IContactRelationUpdateActivity" FullName="Microsoft.Bot.Connector.IContactRelationUpdateActivity">
+  <TypeSignature Language="C#" Value="public interface IContactRelationUpdateActivity : Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContactRelationUpdateActivity implements class Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IContactRelationUpdateActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContactRelationUpdateActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IContactRelationUpdateActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A user has added a bot to their contact list, removed the bot from their contact list, or otherwise changed the relationship between user and bot
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IContactRelationUpdateActivity.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="Microsoft.Bot.Connector.IContactRelationUpdateActivity.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            add|remove
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

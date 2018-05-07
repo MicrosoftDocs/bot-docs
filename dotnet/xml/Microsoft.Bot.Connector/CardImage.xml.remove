@@ -1,0 +1,149 @@
+<Type Name="CardImage" FullName="Microsoft.Bot.Connector.CardImage">
+  <TypeSignature Language="C#" Value="public class CardImage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardImage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CardImage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CardImage" />
+  <TypeSignature Language="F#" Value="type CardImage = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An image on a card
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CardImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardImage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the CardImage class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CardImage (string url = null, string alt = null, Microsoft.Bot.Connector.CardAction tap = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string alt, class Microsoft.Bot.Connector.CardAction tap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional alt As String = null, Optional tap As CardAction = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.CardImage : string * string * Microsoft.Bot.Connector.CardAction -&gt; Microsoft.Bot.Connector.CardImage" Usage="new Microsoft.Bot.Connector.CardImage (url, alt, tap)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="alt" Type="System.String" />
+        <Parameter Name="tap" Type="Microsoft.Bot.Connector.CardAction" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="alt">To be added.</param>
+        <param name="tap">To be added.</param>
+        <summary>
+            Initializes a new instance of the CardImage class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="public string Alt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Alt" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alt As String" />
+      <MemberSignature Language="F#" Value="member this.Alt : string with get, set" Usage="Microsoft.Bot.Connector.CardImage.Alt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="alt")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Image description intended for screen readers
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tap">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.CardAction Tap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.CardAction Tap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Tap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tap As CardAction" />
+      <MemberSignature Language="F#" Value="member this.Tap : Microsoft.Bot.Connector.CardAction with get, set" Usage="Microsoft.Bot.Connector.CardImage.Tap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.CardAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Action assigned to specific Attachment.E.g.navigate to specific
+            URL or play/open media content
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.CardImage.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Bot.Connector.CardImage.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            URL Thumbnail image for major content property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

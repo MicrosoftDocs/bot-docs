@@ -1,0 +1,48 @@
+﻿<Type Name="IInstallationUpdateActivity" FullName="Microsoft.Bot.Schema.IInstallationUpdateActivity">
+  <TypeSignature Language="C#" Value="public interface IInstallationUpdateActivity : Microsoft.Bot.Schema.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstallationUpdateActivity implements class Microsoft.Bot.Schema.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IInstallationUpdateActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInstallationUpdateActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IInstallationUpdateActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A bot was installed or removed from a channel
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.IInstallationUpdateActivity.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="Microsoft.Bot.Schema.IInstallationUpdateActivity.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            add|remove
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

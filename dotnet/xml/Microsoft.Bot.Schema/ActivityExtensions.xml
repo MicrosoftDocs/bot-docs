@@ -1,0 +1,136 @@
+﻿<Type Name="ActivityExtensions" FullName="Microsoft.Bot.Schema.ActivityExtensions">
+  <TypeSignature Language="C#" Value="public static class ActivityExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ActivityExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ActivityExtensions" />
+  <TypeSignature Language="F#" Value="type ActivityExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper functions for Message Activities
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MentionsId">
+      <MemberSignature Language="C#" Value="public static bool MentionsId (this Microsoft.Bot.Schema.IMessageActivity activity, string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MentionsId(class Microsoft.Bot.Schema.IMessageActivity activity, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ActivityExtensions.MentionsId(Microsoft.Bot.Schema.IMessageActivity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MentionsId (activity As IMessageActivity, id As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member MentionsId : Microsoft.Bot.Schema.IMessageActivity * string -&gt; bool" Usage="Microsoft.Bot.Schema.ActivityExtensions.MentionsId (activity, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IMessageActivity" RefType="this" />
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity"></param>
+        <param name="id">ChannelAccount.Id</param>
+        <summary>
+            Is there a mention of Id in the Text Property 
+            </summary>
+        <returns>true if this id is mentioned in the text</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MentionsRecipient">
+      <MemberSignature Language="C#" Value="public static bool MentionsRecipient (this Microsoft.Bot.Schema.IMessageActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MentionsRecipient(class Microsoft.Bot.Schema.IMessageActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ActivityExtensions.MentionsRecipient(Microsoft.Bot.Schema.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MentionsRecipient (activity As IMessageActivity) As Boolean" />
+      <MemberSignature Language="F#" Value="static member MentionsRecipient : Microsoft.Bot.Schema.IMessageActivity -&gt; bool" Usage="Microsoft.Bot.Schema.ActivityExtensions.MentionsRecipient activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IMessageActivity" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="activity"></param>
+        <summary>
+            Is there a mention of Recipient.Id in the Text Property 
+            </summary>
+        <returns>true if this id is mentioned in the text</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveMentionText">
+      <MemberSignature Language="C#" Value="public static string RemoveMentionText (this Microsoft.Bot.Schema.IMessageActivity activity, string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string RemoveMentionText(class Microsoft.Bot.Schema.IMessageActivity activity, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ActivityExtensions.RemoveMentionText(Microsoft.Bot.Schema.IMessageActivity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RemoveMentionText (activity As IMessageActivity, id As String) As String" />
+      <MemberSignature Language="F#" Value="static member RemoveMentionText : Microsoft.Bot.Schema.IMessageActivity * string -&gt; string" Usage="Microsoft.Bot.Schema.ActivityExtensions.RemoveMentionText (activity, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IMessageActivity" RefType="this" />
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity"></param>
+        <param name="id">id to match</param>
+        <summary>
+            Replace any mention text for given id from Text property
+            </summary>
+        <returns>new .Text property value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveRecipientMention">
+      <MemberSignature Language="C#" Value="public static string RemoveRecipientMention (this Microsoft.Bot.Schema.IMessageActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string RemoveRecipientMention(class Microsoft.Bot.Schema.IMessageActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ActivityExtensions.RemoveRecipientMention(Microsoft.Bot.Schema.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RemoveRecipientMention (activity As IMessageActivity) As String" />
+      <MemberSignature Language="F#" Value="static member RemoveRecipientMention : Microsoft.Bot.Schema.IMessageActivity -&gt; string" Usage="Microsoft.Bot.Schema.ActivityExtensions.RemoveRecipientMention activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IMessageActivity" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="activity"></param>
+        <summary>
+            Remove recipient mention text from Text property
+            </summary>
+        <returns>new .Text property value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

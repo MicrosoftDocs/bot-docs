@@ -141,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#DialogTasks" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DialogTasks As IReadOnlyList(Of IDialogTask) Implements IDialogTasks.DialogTasks" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks</InterfaceMember>

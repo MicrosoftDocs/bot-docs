@@ -1,0 +1,516 @@
+﻿<Type Name="DialogContext" FullName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext">
+  <TypeSignature Language="C#" Value="public sealed class DialogContext : Microsoft.Bot.Builder.Classic.Dialogs.IDialogContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogContext extends System.Object implements class Microsoft.Bot.Builder.Classic.Dialogs.IBotContext, class Microsoft.Bot.Builder.Classic.Dialogs.IDialogContext, class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData, class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser, class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DialogContext&#xA;Implements IDialogContext" />
+  <TypeSignature Language="F#" Value="type DialogContext = class&#xA;    interface IDialogContext&#xA;    interface IDialogStack&#xA;    interface IBotContext&#xA;    interface IBotData&#xA;    interface IBotToUser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.IDialogContext</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogContext (Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser botToUser, Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData botData, Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack stack, Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser botToUser, class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData botData, class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack stack, class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.#ctor(Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser,Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData,Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack,Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (botToUser As IBotToUser, botData As IBotData, stack As IDialogStack, activity As IActivity, token As CancellationToken)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext : Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser * Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData * Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack * Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext" Usage="new Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext (botToUser, botData, stack, activity, token)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData" />
+        <Parameter Name="stack" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="botToUser">To be added.</param>
+        <param name="botData">To be added.</param>
+        <param name="stack">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.Activity">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Schema.IActivity Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.Activity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.IActivity Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.Activity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#IBotContext#Activity" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Activity As IActivity Implements IBotContext.Activity" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.Activity" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.Activity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IActivity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.CancellationToken">
+      <MemberSignature Language="C#" Value="System.Threading.CancellationToken Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.CancellationToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.CancellationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#IBotContext#CancellationToken" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CancellationToken As CancellationToken Implements IBotContext.CancellationToken" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.CancellationToken" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.IBotContext.CancellationToken</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.CancellationToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.ConversationData">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.ConversationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.ConversationData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotData#ConversationData" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ConversationData As IBotDataBag Implements IBotData.ConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.ConversationData" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.ConversationData</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.FlushAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotData.FlushAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotData#FlushAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Classic-Dialogs-Internals-IBotData-FlushAsync&gt;d__24))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.LoadAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotData.LoadAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.LoadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotData#LoadAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Classic-Dialogs-Internals-IBotData-LoadAsync&gt;d__23))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.PrivateConversationData">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.PrivateConversationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.PrivateConversationData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotData#PrivateConversationData" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property PrivateConversationData As IBotDataBag Implements IBotData.PrivateConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.PrivateConversationData" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.PrivateConversationData</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.UserData">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.UserData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.UserData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotData#UserData" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property UserData As IBotDataBag Implements IBotData.UserData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.UserData" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotData.UserData</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Classic.Dialogs.IBotDataBag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage">
+      <MemberSignature Language="C#" Value="Microsoft.Bot.Schema.IMessageActivity IBotToUser.MakeMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Schema.IMessageActivity Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotToUser#MakeMessage" />
+      <MemberSignature Language="VB.NET" Value="Function MakeMessage () As IMessageActivity Implements IBotToUser.MakeMessage" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.MakeMessage</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotToUser.PostAsync (Microsoft.Bot.Schema.IMessageActivity message, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync(class Microsoft.Bot.Schema.IMessageActivity message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IBotToUser.PostAsync(Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Classic-Dialogs-Internals-IBotToUser-PostAsync&gt;d__12))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Schema.IMessageActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Call&lt;R&gt;">
+      <MemberSignature Language="C#" Value="void IDialogStack.Call&lt;R&gt; (Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;R&gt; child, Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;R&gt; resume);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Call&lt;R&gt;(class Microsoft.Bot.Builder.Classic.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Call``1(Microsoft.Bot.Builder.Classic.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0})" />
+      <MemberSignature Language="VB.NET" Value="Sub Call(Of R) (child As IDialog(Of R), resume As ResumeAfter(Of R)) Implements IDialogStack.Call" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Classic.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="child" Type="Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;R&gt;" />
+        <Parameter Name="resume" Type="Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R">To be added.</typeparam>
+        <param name="child">To be added.</param>
+        <param name="resume">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Done&lt;R&gt;">
+      <MemberSignature Language="C#" Value="void IDialogStack.Done&lt;R&gt; (R value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Done&lt;R&gt;(!!R value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Done``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Done(Of R) (value As R) Implements IDialogStack.Done" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Done``1(``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="R" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Fail">
+      <MemberSignature Language="C#" Value="void IDialogStack.Fail (Exception error);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Fail(class System.Exception error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Fail(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Sub Fail (error As Exception) Implements IDialogStack.Fail" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Fail(System.Exception)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Forward&lt;R,T&gt;">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IDialogStack.Forward&lt;R,T&gt; (Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;R&gt; child, Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;R&gt; resume, T item, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Forward&lt;R, T&gt;(class Microsoft.Bot.Builder.Classic.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter`1&lt;!!R&gt; resume, !!T item, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Forward``2(Microsoft.Bot.Builder.Classic.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function Forward(Of R, T) (child As IDialog(Of R), resume As ResumeAfter(Of R), item As T, token As CancellationToken) As Task Implements IDialogStack.Forward" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Classic.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Classic-Dialogs-Internals-IDialogStack-Forward&gt;d__18`2))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="child" Type="Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;R&gt;" />
+        <Parameter Name="resume" Type="Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;R&gt;" />
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="child">To be added.</param>
+        <param name="resume">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Frames">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Delegate&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Frames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Frames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Frames" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of Delegate) Implements IDialogStack.Frames" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Frames" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Frames</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Delegate&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Post&lt;E&gt;">
+      <MemberSignature Language="C#" Value="void IDialogStack.Post&lt;E&gt; (E event, Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;E&gt; resume);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Post&lt;E&gt;(!!E event, class Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter`1&lt;!!E&gt; resume) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Post``1(``0,Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0})" />
+      <MemberSignature Language="VB.NET" Value="Sub Post(Of E) (event As E, resume As ResumeAfter(Of E)) Implements IDialogStack.Post" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="E" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="event" Type="E" />
+        <Parameter Name="resume" Type="Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;E&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="E">To be added.</typeparam>
+        <param name="event">To be added.</param>
+        <param name="resume">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Reset">
+      <MemberSignature Language="C#" Value="void IDialogStack.Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Reset" />
+      <MemberSignature Language="VB.NET" Value="Sub Reset () Implements IDialogStack.Reset" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Reset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Wait&lt;R&gt;">
+      <MemberSignature Language="C#" Value="void IDialogStack.Wait&lt;R&gt; (Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;R&gt; resume);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Wait&lt;R&gt;(class Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogStack#Wait``1(Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0})" />
+      <MemberSignature Language="VB.NET" Value="Sub Wait(Of R) (resume As ResumeAfter(Of R)) Implements IDialogStack.Wait" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter{``0})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resume" Type="Microsoft.Bot.Builder.Classic.Dialogs.ResumeAfter&lt;R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R">To be added.</typeparam>
+        <param name="resume">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

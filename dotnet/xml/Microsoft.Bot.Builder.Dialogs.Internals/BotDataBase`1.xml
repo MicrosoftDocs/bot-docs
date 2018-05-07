@@ -173,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ConversationData As IBotDataBag Implements IBotData.ConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;'T&gt;.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData</InterfaceMember>
@@ -195,6 +196,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property PrivateConversationData As IBotDataBag Implements IBotData.PrivateConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;'T&gt;.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData</InterfaceMember>
@@ -217,6 +219,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property UserData As IBotDataBag Implements IBotData.UserData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;'T&gt;.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData</InterfaceMember>

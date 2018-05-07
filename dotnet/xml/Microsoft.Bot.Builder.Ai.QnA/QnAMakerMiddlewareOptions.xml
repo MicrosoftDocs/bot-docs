@@ -1,0 +1,95 @@
+﻿<Type Name="QnAMakerMiddlewareOptions" FullName="Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions">
+  <TypeSignature Language="C#" Value="public class QnAMakerMiddlewareOptions : Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerMiddlewareOptions extends Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerMiddlewareOptions&#xA;Inherits QnAMakerOptions" />
+  <TypeSignature Language="F#" Value="type QnAMakerMiddlewareOptions = class&#xA;    inherit QnAMakerOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Contains options to control the behaviour of the QnA Maker middleware.
+            Extends the options used on the <see cref="T:Microsoft.Bot.Builder.Ai.QnA.QnAMaker" /> client.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerMiddlewareOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions" /> object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultAnswerPrefixMessage">
+      <MemberSignature Language="C#" Value="public string DefaultAnswerPrefixMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultAnswerPrefixMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions.DefaultAnswerPrefixMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultAnswerPrefixMessage As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultAnswerPrefixMessage : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions.DefaultAnswerPrefixMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If set, this message is sent before sending the top answer.
+            For example, "I think this answer might help you..."
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndActivityRoutingOnAnswer">
+      <MemberSignature Language="C#" Value="public bool EndActivityRoutingOnAnswer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndActivityRoutingOnAnswer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions.EndActivityRoutingOnAnswer" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndActivityRoutingOnAnswer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EndActivityRoutingOnAnswer : bool with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerMiddlewareOptions.EndActivityRoutingOnAnswer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether the middleware pipeline short circuits 
+            when an answer is successfully returned from the QnA Maker 
+            knowledge base.
+            
+            The default value is false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

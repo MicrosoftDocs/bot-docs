@@ -1,0 +1,166 @@
+﻿<Type Name="EndorsementsRetriever" FullName="Microsoft.Bot.Connector.Authentication.EndorsementsRetriever">
+  <TypeSignature Language="C#" Value="public sealed class EndorsementsRetriever : Microsoft.IdentityModel.Protocols.IConfigurationRetriever&lt;System.Collections.Generic.IDictionary&lt;string,string[]&gt;&gt;, Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndorsementsRetriever extends System.Object implements class Microsoft.IdentityModel.Protocols.IConfigurationRetriever`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string[]&gt;&gt;, class Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EndorsementsRetriever&#xA;Implements IConfigurationRetriever(Of IDictionary(Of String, String())), IDocumentRetriever" />
+  <TypeSignature Language="F#" Value="type EndorsementsRetriever = class&#xA;    interface IDocumentRetriever&#xA;    interface IConfigurationRetriever&lt;IDictionary&lt;string, string[]&gt;&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.0.0.43</AssemblyVersion>
+    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.IdentityModel.Protocols.IConfigurationRetriever&lt;System.Collections.Generic.IDictionary&lt;System.String,System.String[]&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.IdentityModel.Protocols.IDocumentRetriever</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            The endorsements property within each key contains one or more endorsement 
+            strings which you can use to verify that the channel ID specified in the channelId 
+            property within the Activity object of the incoming request is authentic.
+            More details at:
+                https://docs.microsoft.com/en-us/bot-framework/rest-api/bot-framework-rest-connector-authentication
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndorsementsRetriever (System.Net.Http.HttpClient httpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever.#ctor(System.Net.Http.HttpClient)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.EndorsementsRetriever : System.Net.Http.HttpClient -&gt; Microsoft.Bot.Connector.Authentication.EndorsementsRetriever" Usage="new Microsoft.Bot.Connector.Authentication.EndorsementsRetriever httpClient" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">Allow the calling layer to manage the lifetime of the HttpClient, complete with
+            timeouts, pooling, instancing and so on. This is to avoid having to Use/Dispose a new instance
+            of the client on each call, which may be very expensive in terms of latency, TLS connections
+            and related issues.</param>
+        <summary>
+            Creates an instance of the Endorsements Retriever class. 
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigurationAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,string[]&gt;&gt; GetConfigurationAsync (string address, Microsoft.IdentityModel.Protocols.IDocumentRetriever retriever, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string[]&gt;&gt; GetConfigurationAsync(string address, class Microsoft.IdentityModel.Protocols.IDocumentRetriever retriever, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever.GetConfigurationAsync(System.String,Microsoft.IdentityModel.Protocols.IDocumentRetriever,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationAsync (address As String, retriever As IDocumentRetriever, cancel As CancellationToken) As Task(Of IDictionary(Of String, String()))" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigurationAsync : string * Microsoft.IdentityModel.Protocols.IDocumentRetriever * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, string[]&gt;&gt;&#xA;override this.GetConfigurationAsync : string * Microsoft.IdentityModel.Protocols.IDocumentRetriever * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, string[]&gt;&gt;" Usage="endorsementsRetriever.GetConfigurationAsync (address, retriever, cancel)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IdentityModel.Protocols.IConfigurationRetriever`1.GetConfigurationAsync(System.String,Microsoft.IdentityModel.Protocols.IDocumentRetriever,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.Authentication.EndorsementsRetriever/&lt;GetConfigurationAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.String[]&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="retriever" Type="Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="retriever">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDocumentAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetDocumentAsync (string address, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetDocumentAsync(string address, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever.GetDocumentAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDocumentAsync (address As String, cancel As CancellationToken) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetDocumentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="endorsementsRetriever.GetDocumentAsync (address, cancel)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.IdentityModel.Protocols.IDocumentRetriever.GetDocumentAsync(System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.Authentication.EndorsementsRetriever/&lt;GetDocumentAsync&gt;d__4))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonWebKeySetUri">
+      <MemberSignature Language="C#" Value="public const string JsonWebKeySetUri;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string JsonWebKeySetUri" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever.JsonWebKeySetUri" />
+      <MemberSignature Language="VB.NET" Value="Public Const JsonWebKeySetUri As String " />
+      <MemberSignature Language="F#" Value="val mutable JsonWebKeySetUri : string" Usage="Microsoft.Bot.Connector.Authentication.EndorsementsRetriever.JsonWebKeySetUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.0.43</AssemblyVersion>
+        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            JSON Web Key Set Metadata value
+            From the OpenID Spec at 
+                https://openid.net/specs/openid-connect-discovery-1_0.html
+                URL of the OP's JSON Web Key Set [JWK] document. This contains the signing key(s) 
+                the RP uses to validate signatures from the OP. The JWK Set MAY also contain the 
+                Server's encryption key(s), which are used by RPs to encrypt requests to the 
+                Server. When both signing and encryption keys are made available, a use (Key Use) 
+                parameter value is REQUIRED for all keys in the referenced JWK Set to indicate 
+                each key's intended usage. Although some algorithms allow the same key to be 
+                used for both signatures and encryption, doing so is NOT RECOMMENDED, as it 
+                is less secure. The JWK x5c parameter MAY be used to provide X.509 representations 
+                of keys provided. When used, the bare key values MUST still be present and MUST 
+                match those in the certificate.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
