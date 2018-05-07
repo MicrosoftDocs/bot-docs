@@ -25,13 +25,17 @@ Download packages for Mac, Windows, and Linux are available via the [GitHub rele
 
 ## Connect to a bot running on local host
 
-![Emulator local host settings](media/emulator-v4/emulator-localhost-settings.png)
+![Emulator Endpoints](media/emulator-v4/emulator-endpoint.png)
 
-To connect to a bot running locally, select the uppermost left (pages) tab. On the upper, click on the wheel icon on the edge of the blade to open the **Bot Settings** page of the emulator. Here you can specify your endpoint to the same port your bot is running on locally in order to connect to it. Click **Save & Connect**, and you will redirected to a live chat window where you can interact with your bot.
+To connect to a bot running locally, select the Bot Explorer tab on the upper left. Click on the **+** icon under the  **Endpoint** tab. Here you can specify your endpoint to the same port your bot is running on locally in order to connect to it. Click **Submit**, and you will redirected to a live chat window where you can interact with your bot.
+
+## View detailed Message Activity with the Inspector
 
 ![Emulator Message Activity](media/emulator-v4/emulator-view-message-activity-02.png)
 
-You can click on any message bubble within the conversation window and inspect the raw JSON message activity using the **INSPECTOR - JSON** feature to the right of the window. 
+You can click on any message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. This JSON information includes key metadata including channelID, activity type, conversation id, the text message, endpoint URL, etc. You can view inspect activities sent from the user, as well as activities the bot responds with. 
+
+You can also use the [Channel Inspector](bot-service-channel-inspector.md) to preview supported features on specific channels.
 
 
 ## Save and load conversations with bot transcripts
@@ -143,7 +147,6 @@ To install **ngrok** on Windows and configure the emulator to use it, complete t
 
 The Bot Framework Emulator is open source. You can [contribute][EmulatorGithubContribute] to the development and [submit bugs and suggestions][EmulatorGithubBugs].
 
-You can use the [Channel Inspector](bot-service-channel-inspector.md) to preview supported features on specific channels.
 
 [EmulatorGithub]: https://github.com/Microsoft/BotFramework-Emulator
 [EmulatorGithubContribute]: https://github.com/Microsoft/BotFramework-Emulator/wiki/How-to-Contribute
