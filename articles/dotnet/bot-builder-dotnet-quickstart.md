@@ -28,52 +28,77 @@ and then testing it with the Bot Framework Emulator.
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
 ## Prerequisites
+1. Visual Studio [2015 or 2017](https://www.visualstudio.com/)
 
-Get started by completing the following prerequisite tasks:
+2. In Visual Studio, update all [extensions](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension) to their latest versions.
 
-1. Install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> for Windows. 
-
-2. In Visual Studio, <a href="/visualstudio/extensibility/how-to-update-a-visual-studio-extension" target="_blank">update all extensions</a> to their latest versions.
-
-4. Download the [Bot Application](http://aka.ms/bf-bc-vstemplate), [Bot Controller](http://aka.ms/bf-bc-vscontrollertemplate), and [Bot Dialog](http://aka.ms/bf-bc-vsdialogtemplate) .zip files. Install the project template by copying `Bot Application.zip` to your Visual Studio 2017 project templates directory. Install the item templates by copying `Bot Controller.zip` and `Bot Dialog.zip` to your Visual Studio 2017 item templates directory.
+3. Bot [template for C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3)
 
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\` and the item templates directory is at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates\Visual C#\`
 
 ## Create your bot
 
-Next, open Visual Studio and create a new C# project. Choose the Bot Application template for your new project.
+Open Visual Studio and create a new C# project. Choose the **Simple Echo Bot Application** template for your new project.
 
 ![Visual Studio create project](../media/connector-getstarted-create-project.png)
 
 > [!NOTE]
-> Visual Studio might say you need to [download and install IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264). 
+> Visual Studio might say you need to download and install [IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264). 
 
-
-By using the Bot Application template, you're creating a project that already contains all of the
-components that are required to build a simple bot, including a reference to
-the Bot Builder SDK for .NET, `Microsoft.Bot.Builder`. Verify that your project
-references the latest version of the SDK:
-
-1. Right-click on the project and select **Manage NuGet Packages**.
-2. In the **Browse** tab, type "Microsoft.Bot.Builder".
-3. Locate the `Microsoft.Bot.Builder` package in the list of search results, and click the **Update** button for that package.
-4. Follow the prompts to accept the changes and update the package.
-
-Thanks to the Bot Application template,
-your project contains all of the code that's necessary to create the bot in this tutorial. You won't actually need to write any additional code.
-However, before we move on to testing your bot,
+Thanks to the Bot Application template, your project contains all of the code that's necessary to create the bot in this tutorial. You won't actually need to write any additional code. However, before we move on to testing your bot,
 take a quick look at some of the code that the Bot Application template provided.
+
+> [!TIP] 
+> If needed, update [NuGet packages](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 ## Explore the code
 
 First, the `Post` method within **Controllers\MessagesController.cs** receives the message from the user and invokes the root dialog.
 
-[!code-csharp[MessagesController code sample C#](../includes/code/dotnet-getstarted.cs#MessagesController)]
+```csharp
+public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
+{
+    if (activity.GetActivityType() == ActivityTypes.Message)
+    {
+        await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
+    }
+    else
+    {
+        HandleSystemMessage(activity);
+    }
+    var response = Request.CreateResponse(HttpStatusCode.OK);
+    return response;
+}
+
+```
 
 The root dialog processes the message and generates a response. The `MessageReceivedAsync` method within **Dialogs\RootDialog.cs** sends a reply that echos back the user's message, prefixed with the text 'You sent' and ending in the text 'which was *##* characters', where *##* represents the number of characters in the user's message.
 
-[!code-csharp[RootDialog code sample C#](../includes/code/dotnet-getstarted.cs#RootDialog)]
+```csharp
+public class RootDialog : IDialog<object>
+{
+    public Task StartAsync(IDialogContext context)
+    {
+        context.Wait(MessageReceivedAsync);
+
+        return Task.CompletedTask;
+    }
+
+    private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
+    {
+        var activity = await result as Activity;
+
+        // Calculate something for us to return
+        int length = (activity.Text ?? string.Empty).Length;
+
+        // Return our reply to the user
+        await context.PostAsync($"You sent {activity.Text} which was {length} characters");
+
+        context.Wait(MessageReceivedAsync);
+    }
+}
+```
 
 ## Test your bot
 
@@ -104,9 +129,6 @@ Next, start the emulator and then connect to your bot in the emulator:
 1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where **port-number** matches the port number shown in the browser where your application is running.
 
 2. Click **Save and connect**. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you [register your bot](~/bot-service-quickstart-registration.md).
-
-> [!TIP]
-> In the example shown above, the application is running on port number **3979**, so the emulator address would be set to: `http://localhost:3979/api/messages`.
 
 ### Test your bot
 
