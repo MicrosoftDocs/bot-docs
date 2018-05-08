@@ -32,7 +32,7 @@ First, you'll need a key for using the Microsoft Translator service. You can get
 
 Make sure you have the packages necessary to add translation to your bot.
 
-# [C#](#tab/csrefs)
+# [C#](#tab/cs)
 
 [Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to the prerelease version of the following NuGet packages:
 
@@ -43,7 +43,7 @@ If you're going to combine translation with Language Understanding (LUIS), also 
 
 * `Microsoft.Bot.Builder.Ai.Luis` (required for LUIS)
 
-# [JavaScript](#tab/jsrefs)
+# [JavaScript](#tab/js)
 
 Either of these services can be added to your bot using the botbuilder-ai package. You can add this package to your project via npm:
 * `npm install --save botbuilder@preview`
@@ -56,13 +56,13 @@ Either of these services can be added to your bot using the botbuilder-ai packag
 Next you can configure your bot to call the translator for every message received from a user, simply by adding it to your bot's middleware stack. The middleware uses the translation result to modify the user's message using the context object.
 
 
-# [C#](#tab/cssetuptranslate)
+# [C#](#tab/cs)
 
-Start with the EchoBot sample in the SDK, and update the `ConfigureServices` method in your `Startup.cs` file to add `TranslationMiddleware` to the bot. This configures your bot to translate every message received from a user. <!--, by simply adding it to your bot's middleware set. The middleware stores the translation results on the context object. -->
+Start with the EchoBot sample in the v4 SDK, and update the `ConfigureServices` method in your `Startup.cs` file to add `TranslationMiddleware` to the bot. This configures your bot to translate every message received from a user. <!--, by simply adding it to your bot's middleware set. The middleware stores the translation results on the context object. -->
 -   Update your using statements.
 -   Update your `ConfigureServices` method to include the translation middleware.
-    -  The snippet here has been simplified by removing most of the comments and removing the exception handling middleware.
-    -   The bot has also been renamed to `TranslatorBot`.
+
+    The snippet here has been simplified by removing most of the comments and removing the exception handling middleware.
 
 **Startup.cs**
 ```csharp
@@ -82,7 +82,7 @@ using Microsoft.Extensions.Logging;
 // This method gets called by the runtime. Use this method to add services to the container.
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddBot<TranslatorBot>(options =>
+    services.AddBot<EchoBot>(options =>
     {
         options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
         var middleware = options.Middleware;
@@ -149,7 +149,7 @@ When you add translation middleware, an optional parameter specifies whether to 
 middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR API KEY>", false));
 ```
 
-# [JavaScript](#tab/jssetuptranslate)
+# [JavaScript](#tab/js)
 
 To set up translation middleware with an echo bot, paste the following into app.js.
 
@@ -213,7 +213,8 @@ Run the bot, and type in a few messages in other languages. You'll see that the 
 
 Now, add logic that checks for English words. If the user says "help" or "cancel" in another language, the bot translates it into English and the logic that checks for the english words "help" or "cancel" is invoked.
 
-# [C#](#tab/cshelp)
+# [C#](#tab/cs)
+In `EchoBot.cs`, update the `case` statement for message activities in your bot's `OnTurn` method.
 ```cs
 case ActivityTypes.Message:
     // check the message text before calling context.SendActivity
@@ -224,7 +225,7 @@ case ActivityTypes.Message:
     }
 ```
 
-# [JavaScript](#tab/jshelp)
+# [JavaScript](#tab/js)
 ```javascript
 if (context.activity.type === 'message') {
     // check the message text before calling context.sendActivity
@@ -245,14 +246,15 @@ if (context.activity.type === 'message') {
 
 You can also translate replies back to the user's language, by setting the last constructor parameter to `true`.
 
-# [C#](#tab/cstranslateback)
+# [C#](#tab/cs)
+In `Startup.cs`, update the following line of the `ConfigureServices` method.
 ```cs
 // Use language recognition to detect the user's language from their message, instead of providing helper callbacks.
 // Last parameter indicates that we'll translate replies back to the user's language
 middleware.Add(new TranslationMiddleware(new string[] { "en" }, "TRANSLATION-SUBSCRIPTION-KEY", true));
 ```
 
-# [JavaScript](#tab/jstranslateback)
+# [JavaScript](#tab/js)
 ```javascript
 // Use language recognition to detect the user's language from their message, instead of providing helper callbacks.
 // Last parameter indicates that we'll translate replies back to the user's language
@@ -283,10 +285,13 @@ Instead of letting the Botbuilder SDK automatically detect the user's language, 
 
 In the following example, the `CheckUserChangedLanguage` callback checks for a specific user message to change the language. 
 
-# [C#](#tab/cschangelanguage)
+# [C#](#tab/cs)
 In `Startup.cs`, add a callback to the translation middleware.
 ```csharp
-middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR API KEY>", null, TranslatorLocaleHelper.GetActiveLanguage, TranslatorLocaleHelper.CheckUserChangedLanguage));
+middleware.Add(new TranslationMiddleware(new string[] { "en" },
+     "<YOUR MICROSOFT TRANSLATOR API KEY>", null,
+     TranslatorLocaleHelper.GetActiveLanguage,
+     TranslatorLocaleHelper.CheckUserChangedLanguage));
 ```
 Add a `TranslatorLocalHelper.cs` file and add the following to the TranslatorLocalHelper class definition.
 ```csharp
@@ -295,9 +300,11 @@ Add a `TranslatorLocalHelper.cs` file and add the following to the TranslatorLoc
         public string Language { get; set; }
     }
 
-    public static void SetLanguage(ITurnContext context, string language) => context.GetConversationState<CurrentUserState>().Language = language;
+    public static void SetLanguage(ITurnContext context, string language) =>
+        context.GetConversationState<CurrentUserState>().Language = language;
 
-    public static bool IsSupportedLanguage(string language) => _supportedLanguages.Contains(language);
+    public static bool IsSupportedLanguage(string language) =>
+        _supportedLanguages.Contains(language);
 
     public static async Task<bool> CheckUserChangedLanguage(ITurnContext context)
     {
@@ -336,7 +343,8 @@ Add a `TranslatorLocalHelper.cs` file and add the following to the TranslatorLoc
     {
 
         if (context.Activity.Type == ActivityTypes.Message
-            && context.GetConversationState<CurrentUserState>() != null && context.GetConversationState<CurrentUserState>().Language != null)
+            && context.GetConversationState<CurrentUserState>() != null
+            && context.GetConversationState<CurrentUserState>().Language != null)
         {
             return context.GetConversationState<CurrentUserState>().Language;
         }
@@ -346,7 +354,7 @@ Add a `TranslatorLocalHelper.cs` file and add the following to the TranslatorLoc
 
 ```
 
-# [JavaScript](#tab/jschangelanguage)
+# [JavaScript](#tab/js)
 ```javascript
 // When the user inputs 'set my language to fr'
 // The bot will automatically change all text to French
@@ -391,7 +399,7 @@ server.post('/api/messages', (req, res) => {
 
 If you're combining translation with other services in your bot, like LUIS or QnA maker, add the translation middleware first, so that the messages are translated before passing them to other middleware that expects the bot's native language.
 
-# [C#](#tab/cslanguageluis)
+# [C#](#tab/cs)
 ```cs
 public void ConfigureServices(IServiceCollection services)
 {
@@ -413,7 +421,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-# [JavaScript](#tab/jslanguageluis)
+# [JavaScript](#tab/js)
 ```javascript
 // Add language translator middleware
 const languageTranslator = new LanguageTranslator({
@@ -483,7 +491,7 @@ public async Task OnTurn(ITurnContext context)
 ## Bypass translation for specified patterns
 There may be certain words you don't want your bot to translate, such as proper names. You can provide regular expressions to indicate patterns that shouldn't be translated. For example, if the user says "My name is ..." in a non-native language for your bot, and you want to avoid translating their name, you can use a pattern to specify that.
 
-# [C#](#tab/csbypass)
+# [C#](#tab/cs)
 In Startup.cs
 ```cs
 // Pattern representing input to not translate
@@ -491,12 +499,15 @@ Dictionary<string, List<string>> patterns = new Dictionary<string, List<string>>
 // single pattern for fr language, to avoid translating what follows "my name is"
 patterns.Add("fr", new List<string> { "mon nom est (.+)" });
 
-middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR API KEY>", patterns, TranslatorLocaleHelper.GetActiveLanguage, TranslatorLocaleHelper.CheckUserChangedLanguage));
+middleware.Add(new TranslationMiddleware(new string[] { "en" },
+    "<YOUR API KEY>", patterns,
+    TranslatorLocaleHelper.GetActiveLanguage,
+    TranslatorLocaleHelper.CheckUserChangedLanguage));
 
 ```
 <!-- TODO: ADD more explanation (both of these callbacks are run every time), fix image by debugging regex for l'etat -->
 
-# [JavaScript](#tab/jsbypass)
+# [JavaScript](#tab/js)
 ```javascript
 // Add language translator middleware
 const languageTranslator = new LanguageTranslator({
@@ -533,11 +544,14 @@ The following shows the same bot if the `LocaleConverterMiddleware` is added.
 
 Locale converters can support English, French, German, and Chinese locales. <!-- TODO: ADD DETAIL ABOUT SUPPORTED LOCALES -->
 
-# [C#](#tab/cstranslation)
+# [C#](#tab/cs)
 In Startup.cs
 ```cs
 // Add locale converter middleware
-middleware.Add(new LocaleConverterMiddleware(TranslatorLocaleHelper.GetActiveLocale, TranslatorLocaleHelper.CheckUserChangedLocale, "en-us", LocaleConverter.Converter));
+middleware.Add(new LocaleConverterMiddleware(
+    TranslatorLocaleHelper.GetActiveLocale,
+    TranslatorLocaleHelper.CheckUserChangedLocale,
+     "en-us", LocaleConverter.Converter));
 ```
 In TranslatorLocaleHelper.cs
 ```cs
@@ -594,7 +608,7 @@ public static string GetActiveLocale(ITurnContext context)
 }
 ```
 
-# [JavaScript](#tab/jstranslation)
+# [JavaScript](#tab/js)
 
 <!-- this snippet only works if the user doesn't actually try to change their locale.  Emailed Mostafa about the issue 
 It should change the locale after you type in 'set my locale to....' -->
