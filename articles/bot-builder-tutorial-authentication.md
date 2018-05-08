@@ -1,5 +1,5 @@
 ---
-title: Add authenticaion to your bot via Azure Bot Service | Microsoft Docs
+title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
 author: JonathanFingold
 ms.author: JonathanFingold
@@ -10,7 +10,7 @@ ms.date: 4/26/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Add authenticaion to your bot via Azure Bot Service
+# Add authentication to your bot via Azure Bot Service
 
 This tutorial uses new bot authentication capabilities in Azure Bot Service, providing features to make it easier to develop a bot that authenticates users to various identity providers such as AAD (Azure Active Directory), GitHub, Uber, and so on. These updates also take steps towards an improved user experience by eliminating the _magic code verification_ for some clients.
 
