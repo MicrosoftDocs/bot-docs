@@ -44,7 +44,7 @@ First, set up a _LUIS app_, which is a service you create at [www.luis.ai](https
 For this example, you'll just use a demo LUIS app that can recognize Help, Cancel, and Weather intents; the app ID is already in the sample code. You will need to have a Cognitive Services key that you can get by logging in to [www.luis.ai](https://www.luis.ai) and copying the key from **User settings** > **Authoring Key**.
 
 > [!NOTE] 
-> To create your own copy of the public LUIS app used in this example, go to [steps for creating a simple app](https://aka.ms/luis-bot-simple-example). 
+> To create your own copy of the public LUIS app used in this example, copy the [FirstSimpleBotExample.json](https://github.com/Microsoft/LUIS-Samples/blob/master/examples/simple-bot-example/FirstSimpleBotExample.json) LUIS file. Then [import the LUIS app](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/create-new-app#import-new-app), [train](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-train), and [publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) it. Replace the public app ID in the sample code with the app ID of your new LUIS app.
 
 Configure your bot to call your LUIS app for every message received from a user by simply adding it to your bot's middleware stack. The middleware stores the recognition results on the context object, and can then be accessed by your bot logic.
 
@@ -427,7 +427,7 @@ Try running the bot in the Bot Framework Emulator, and notice that "get weather"
 If you're using the intent from LUIS to trigger a multi-turn conversation flow, it can be helpful to use dialogs to encapsulate this flow. This example bot works with a LUIS app that detects intents used to trigger either a home automation dialog or a weather dialog.
 
 > [!NOTE] 
-> To create your own copy of the public LUIS app used in this example, go to [these steps](https://aka.ms/luis-bot-examples). 
+> To create your own copy of the public LUIS app used in this example, copy the [WeatherOrHomeAutomation.json](https://github.com/Microsoft/LUIS-Samples/blob/master/examples/simple-bot-example/WeatherOrHomeAutomation.json) LUIS file. Then [import the LUIS app](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/create-new-app#import-new-app), [train](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-train), and [publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) it. Replace the public app ID in the sample code with the app ID of your new LUIS app.
 
 # [C#](#tab/csludialog)
 
