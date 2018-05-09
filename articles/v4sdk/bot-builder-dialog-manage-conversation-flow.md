@@ -97,7 +97,7 @@ Values are passed into and returned from dialogs as `IDictionary<string,object>`
 
 To create a simple dialog within a dialog set, use the `Add` method. The following adds a one-step waterfall named `addTwoNumbers`.
 
-This step assumes that the dialog arguments getting passed in contain `first` and `second` properties representing number to be added.
+This step assumes that the dialog arguments getting passed in contain `first` and `second` properties that represent the numbers to be added.
 
 Start with the EchoBot template. Then add code in your bot class to add the dialog in the constructor.
 ```csharp
@@ -417,12 +417,15 @@ dialogs.add('greetings',[
 dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 ```
 
-The function signature for a **waterfall** step is as follows:
+The signature for a **waterfall** step is as follows:
 
-| Type | Value | Description |
-| ---- | ----- | ----- |
-| Parameters | *context*, <br/>*args* (optional), <br/>*next* (optional) | The *args* parameter contains argument(s) passed into the function. The *next* parameter is a method that allows you to proceed to the next step of the waterfall. The *next* method can optionally accept an *args* argument that allows you to pass argument(s) to the next function. |
-| Return | *next()*, <br/>*dialogs.prompt()*, <br/>*dialogs.end()*, <br/>*dialogs.begin()*, <br/>*Promise.resolve()* | Each function must return one of these methods otherwise the bot will be stuck in that function. That is, if a function does not return one of these methods then all user input will cause this function to be re-executed each time the user sent the bot a message. |
+| Parameter | Description |
+| ---- | ----- |
+| `context` | The dialog context. |
+| `args` | Optional, contains argument(s) passed into the step. |
+| `next` | Optional, a method that allows you to proceed to the next step of the waterfall. You can provide an *args* argument when you call this mehtod, allowing you to pass argument(s) to the next step in the waterfall. |
+
+Each step must call one of the following methods before returning: *next()*, *dialogs.prompt()*, *dialogs.end()*, *dialogs.begin()*, or *Promise.resolve()*; otherwise, the bot will be stuck in that step. That is, if a function does not return one of these methods then all user input will cause this step to be re-executed each time the user sent the bot a message.
 
 When you reached the end of the waterfall, it is best practice to return with the `end()` method so that the dialog can be popped off the stack. See [End a dialog](#end-a-dialog) section for more information. Likewise, to proceed from one step to the next, the waterfall step must end with either a prompt or explicitly call the `next()` function to advance the waterfall. 
 
@@ -437,7 +440,7 @@ To start a dialog without arguments:
 await dc.begin('greetings');
 ```
 
-To start a dialog dialog with arguments:
+To start a dialog with arguments:
 
 ```javascript
 // Start the 'greetings' dialog with the 'userName' passed in. 
@@ -451,7 +454,7 @@ To start a **prompt** dialog:
 await dc.prompt('choicePrompt', `choice: select a color`, ['red', 'green', 'blue']);
 ```
 
-Depending on the type of prompt you are starting, the prompt's argument signature may be different. The **DialogSet.prompt** method is a helper method. This method takes in arguments and construct the appropriate options for the prompt; then, it calls the **begin** method to start the prompt dialog.
+Depending on the type of prompt you are starting, the prompt's argument signature may be different. The **DialogSet.prompt** method is a helper method. This method takes in arguments and constructs the appropriate options for the prompt; then, it calls the **begin** method to start the prompt dialog.
 
 To replace a dialog on the stack:
 
@@ -466,7 +469,7 @@ More details on how to use the **replace()** method in the [Repeat a dialog](#re
 
 End a dialog by popping it off the stack and returns an optional result to the parent dialog. The parent dialog will have its **Dialog.resume()** method invoked with any returned result.
 
-It is best practice to explicitly call the `end()` method at the end of the dialog; however, it is not required because the dialog will automatically be popped off the stack for you when you reached the end of the waterfall.
+It is best practice to explicitly call the `end()` method at the end of the dialog; however, it is not required because the dialog will automatically be popped off the stack for you when you reach the end of the waterfall.
 
 To end a dialog:
 
@@ -488,7 +491,7 @@ Alternatively, you may also end the dialog by returning a resolved promise:
 await Promise.resolve();
 ```
 
-The call to `Promise.resolve()` will result in the dialog ending and popping off the stack. However, this method does not call the parent dialog to resume execution. After the call to `Promise.resolve()`, execution stops. The bot will resume where the parent dialog left off when the user send the bot a message. This may not be the ideal user experience to end a dialog. Consider ending a dialog with either `end()` or `replace()` so your bot can continue interacting with the user.
+The call to `Promise.resolve()` will result in the dialog ending and popping off the stack. However, this method does not call the parent dialog to resume execution. After the call to `Promise.resolve()`, execution stops, and the bot will resume where the parent dialog left off when the user sends the bot a message. This may not be the ideal user experience to end a dialog. Consider ending a dialog with either `end()` or `replace()` so your bot can continue interacting with the user.
 
 ### Clear the dialog stack
 
@@ -538,11 +541,11 @@ dialogs.add('mainMenu', [
 dialogs.add('choicePrompt', new botbuilder_dialogs.ChoicePrompt());
 ```
 
-This dialog uses a `ChoicePrompt` to display the menu and waits for the user to choose an option. When the user choose either `Order Dinner` or `Reserve a table`, it starts the dialog for the appropriate choice and when that task is done, instead of just ending the dialog in the last step, this dialog repeat itself.
+This dialog uses a `ChoicePrompt` to display the menu and waits for the user to choose an option. When the user chooses either `Order Dinner` or `Reserve a table`, it starts the dialog for the appropriate choice and when that task is done, instead of just ending the dialog in the last step, this dialog repeats itself.
 
 ### Dialog loops
 
-Another way to use the `replace()` method is by emulating loops. Take this scenario for example. If you want to allow the user to add multiple menu item to a cart, you can loop the menu choices until the user is done ordering.
+Another way to use the `replace()` method is by emulating loops. Take this scenario for example. If you want to allow the user to add multiple menu items to a cart, you can loop the menu choices until the user is done ordering.
 
 ```javascript
 // Order dinner:
@@ -670,13 +673,13 @@ dialogs.add('choicePrompt', new botbuilder_dialogs.ChoicePrompt());
 
 ```
 
-The sample code above shows that the main `orderDinner` dialog uses a helper dialog named `orderPrompt` to handle user choices. The `orderPrompt` dialog displays the menu, ask the user to choose an item, add the item to cart and prompt again. This allows the user to add multiple items to their order. The dialog loops until the user chooses `Process order` or `Cancel`. At which point, execution is handed back to the parent dialog (e.g.: `orderDinner`). The `orderDinner` dialog does some last minute house keeping if the user wants to process the order otherwise it ends and return execution back to its parent dialog (e.g.: `mainMenu`). The `mainMenu` dialog in turn continue executing the last step which is to simply redisplay the main menu choices.
+The sample code above shows that the main `orderDinner` dialog uses a helper dialog named `orderPrompt` to handle user choices. The `orderPrompt` dialog displays the menu, asks the user to choose an item, add the item to cart and prompts again. This allows the user to add multiple items to their order. The dialog loops until the user chooses `Process order` or `Cancel`. At which point, execution is handed back to the parent dialog (e.g.: `orderDinner`). The `orderDinner` dialog does some last minute house keeping if the user wants to process the order; otherwise, it ends and returns execution back to its parent dialog (e.g.: `mainMenu`). The `mainMenu` dialog in turn continues executing the last step which is to simply redisplay the main menu choices.
 
 ---
 
 ## Next steps
 
-Now that you learn how to use **dialogs**, **prompts**, and **waterfall** to manage conversation flow, let's take a look at how we can break our dialogs into modular tasks instead of lumping them all together in the main bot logic's `dialogs` object.
+Now that you learn how to use **dialogs**, **prompts**, and **waterfalls** to manage conversation flow, let's take a look at how we can break our dialogs into modular tasks instead of lumping them all together in the main bot logic's `dialogs` object.
 
 > [!div class="nextstepaction"]
 > [Create modular bot logic with Composite Control](bot-builder-compositcontrol.md)
