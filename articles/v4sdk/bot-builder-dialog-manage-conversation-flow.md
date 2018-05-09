@@ -6,18 +6,13 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 3/1/2018
+ms.date: 5/8/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Manage conversation flow with dialogs
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-<!----
-> > [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
----->
 
 Managing conversation flow is an essential task in building bots. With the Bot Builder SDK, you can manage conversation flow using **dialogs**.
 
@@ -88,7 +83,7 @@ const dialogs = new botbuilder_dialogs.DialogSet("myStack");
 ```
 ---
 
-## Create a dialog
+## Create a single-step dialog
 
 The dialog library defines the following dialogs:
 -   A **prompt** dialog where the dialog uses at least two functions, one to prompt the user for input and the other to process the input.
@@ -104,20 +99,138 @@ To create a simple dialog within a dialog set, use the `Add` method. The followi
 
 This step assumes that the dialog arguments getting passed in contain `first` and `second` properties representing number to be added.
 
+Start with the EchoBot template. Then add code in your bot class to add the dialog in the constructor.
 ```csharp
-dialogs.Add("addTwoNumbers", new WaterfallStep[]
+public class EchoBot : IBot
 {
-    async (dc, args, next) =>
-    {
-        var first = (double)args["first"];
-        var second = (double)args["second"];
+    private DialogSet _dialogs;
 
-        var sum =  first + second;
-        await dc.Context.SendActivity($"{first} + {second} = {sum}");
-        await dc.End();
+    public EchoBot()
+    {
+        _dialogs = new DialogSet();
+        _dialogs.Add("addTwoNumbers", new WaterfallStep[]
+        {              
+            async (dc, args, next) =>
+            {
+                double sum = (double)args["first"] + (double)args["second"];
+                await dc.Context.SendActivity($"{args["first"]} + {args["second"]} = {sum}");
+                await dc.End();
+            }
+        });
     }
-});
+
+    // The rest of the class definition is omitted here but would include OnTurn()
+}
+
 ```
+
+### Pass arguments to the dialog
+
+To call the dialog from within your bot's `OnTurn` method, modify `OnTurn` to contain the following:
+```cs
+public async Task OnTurn(ITurnContext context)
+{
+    // This bot is only handling Messages
+    if (context.Activity.Type == ActivityTypes.Message)
+    {
+        // Get the conversation state from the turn context
+        var state = context.GetConversationState<EchoState>();
+
+        // create a dialog context
+        var dialogCtx = _dialogs.CreateContext(context, state);
+
+        // Bump the turn count. 
+        state.TurnCount++;
+
+        await dialogCtx.Continue();
+        if (!context.Responded)
+        {
+            // Call a helper function that identifies if the user says something 
+            // like "2 + 3" or "1.25 + 3.28" and extract the numbers to add            
+            if (TryParseAddingTwoNumbers(context.Activity.Text, out double first, out double second))
+            { 
+                var dialogArgs = new Dictionary<string, object>
+                {
+                    ["first"] = first,
+                    ["second"] = second
+                };                        
+                await dialogCtx.Begin("addTwoNumbers", dialogArgs);
+            }
+            else
+            {
+                // Echo back to the user whatever they typed.
+                await context.SendActivity($"Turn: {state.TurnCount}. You said '{context.Activity.Text}'");
+            }
+        }
+    }
+}
+```
+
+Add the helper function to the bot class. The helper function just uses a simple regex to detect if the user's message is a request to add 2 numbers.
+
+```cs
+// Recognizes if the message is a request to add 2 numbers, in the form: number + number, 
+// where number may have optionally have a decimal point.: 1 + 1, 123.99 + 45, 0.4+7. 
+// For the sake of simplicity it doesn't handle negative numbers or numbers like 1,000 that contain a comma.
+// If you need more robust number recognition, try System.Recognizers.Text
+public bool TryParseAddingTwoNumbers(string message, out double first, out double second)
+{
+    // captures a number with optional -/+ and optional decimal portion
+    const string NUMBER_REGEXP = "([-+]?(?:[0-9]+(?:\\.[0-9]+)?|\\.[0-9]+))";
+    // matches the plus sign with optional spaces before and after it
+    const string PLUSSIGN_REGEXP = "(?:\\s*)\\+(?:\\s*)";
+    const string ADD_TWO_NUMBERS_REGEXP = NUMBER_REGEXP + PLUSSIGN_REGEXP + NUMBER_REGEXP;
+    var regex = new Regex(ADD_TWO_NUMBERS_REGEXP);
+    var matches = regex.Matches(message);
+    var succeeded = false;
+    first = 0;
+    second = 0;
+    if (matches.Count == 0)
+    {
+        succeeded = false;
+    }
+    else
+    {
+        var matched = matches[0];
+        if ( System.Double.TryParse(matched.Groups[1].Value, out first) 
+            && System.Double.TryParse(matched.Groups[2].Value, out second))
+        {
+            succeeded = true;
+        } 
+    }
+    return succeeded;
+}
+```
+
+If you're using the EchoBot template, modify the `EchoState` class in **EchoState.cs** as follows:
+
+```cs
+/// <summary>
+/// Class for storing conversation state.
+/// This bot only stores the turn count in order to echo it to the user
+/// </summary>
+public class EchoState: Dictionary<string, object>
+{
+    private const string TurnCountKey = "TurnCount";
+    public EchoState()
+    {
+        this[TurnCountKey] = 0;            
+    }
+
+    public int TurnCount
+    {
+        get { return (int)this[TurnCountKey]; }
+        set { this[TurnCountKey] = value; }
+    }
+}
+```
+
+### Run the bot
+
+Try running the bot in the Bot Framework Emulator, and say things like "what's 1+1?" to it.
+
+![run the bot](./media/how-to-dialogs/bot-output-add-numbers.png)
+
 
 # [JavaScript](#tab/js)
 
@@ -134,11 +247,11 @@ dialogs.add('addTwoNumbers', async function (dc, numbers){
 ```
 ---
 
-Creating a dialog only adds the dialog definition to the set, the dialog is not run until it is pushed onto the stack by calling a _begin_ or _replace_ method.
+Creating a dialog only adds the dialog definition to the set. The dialog is not run until it is pushed onto the stack by calling a _begin_ or _replace_ method.
 
-The dialog name (for example, `addTwoNumers`) must be unique within each dialog set. You can define as many dialogs as necessary within each set.
+The dialog name (for example, `addTwoNumbers`) must be unique within each dialog set. You can define as many dialogs as necessary within each set.
 
-## Using dialogs
+## Using dialogs to guide the user through steps
 
 # [C#](#tab/csharp)
 
