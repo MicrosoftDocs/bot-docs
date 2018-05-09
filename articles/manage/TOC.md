@@ -8,7 +8,6 @@
 # Channels
 ## [Configure channels](../bot-service-manage-channels.md)
 ## [Cortana](../bot-service-channel-connect-cortana.md) 
-## [Bing](../bot-service-channel-connect-bing.md) 
 ## [Skype](../bot-service-channel-connect-skype.md)
 ## [Skype for Business](../bot-service-channel-connect-skypeforbusiness.md)
 ## [Direct Line](../bot-service-channel-connect-directline.md)
