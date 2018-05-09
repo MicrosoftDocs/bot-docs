@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Handling user interrupt is an important aspect of a robust bot. While you may think that your users will follow your defined conversation flow step by step, chances are good that they will change their minds or ask a question in the middle of the process instead of answering the question. In these situations, how would your bot handle the user's input? What would the user experience be like? How would you maintain user state data?
 
-There is no right answer to these questions as each situation is unique to the scenario your bot is designed to do. In this topic, we will explore some common ways to handle user interruptions and suggest some ways to implement them in your bot.
+There is no right answer to these questions as each situation is unique to the scenario your bot is designed to handle. In this topic, we will explore some common ways to handle user interruptions and suggest some ways to implement them in your bot.
 
 > [!NOTE]
 > The full code sample used in this article can be found at [Dialog flow](#)
@@ -42,7 +42,7 @@ In an order dinner bot, the core steps would be to provide a list of menu items 
 
 You could provide these to the user as a list of **suggested actions** or as a hint so the user is at least aware of what commands they can send that the bot would understand.
 
-For example, in the order dinner flow, you can provide expected interruptions along with the menu items. In this case, the menu items are send as an array of `choices`.
+For example, in the order dinner flow, you can provide expected interruptions along with the menu items. In this case, the menu items are sent as an array of `choices`.
 
 ```javascript
 var dinnerMenu = {
@@ -133,22 +133,24 @@ dialogs.add('orderPrompt', [
 
 ## Handle unexpected interruptions
 
-There are interruptions that are out of scope of what your bot is designed to do. While you cannot anticipate all interruptions, there are pattern of interruptions in which you can program your bot to handle.
+There are interruptions that are out of scope of what your bot is designed to do.
+While you cannot anticipate all interruptions, there are patterns of interruptions that you can program your bot to handle.
 
 ### Switching topic of conversations
-What if the user is in the middle of one conversation and wants to switch to another conversation? Assuming your bot supports both conversations. For example, your bot can reserve a table and order dinner. While the user is in the reserve a table flow, instead of answering the question for "How many people is in your party?", the user sends the message "order dinner". The user, in this case, changed their mind and wants to engage in a dinner ordering conversation instead. How should you handle this interruption? 
+What if the user is in the middle of one conversation and wants to switch to another conversation? For example, your bot can reserve a table and order dinner.
+While the user is in the _reserve a table_ flow, instead of answering the question for "How many people are in your party?", the user sends the message "order dinner". The user, in this case, changed their mind and wants to engage in a dinner ordering conversation instead. How should you handle this interruption? 
 
-The choice is up to you. You can switch topic to the order dinner flow or you can make it a sticky issue by telling the user that you are expecting a number and reprompt them. If you do allow them to switch topic, you then have to decide if you will save the progress so that the user can pick up from where they left off or you could delete all the information you have collected so that they will have to start that process all over next time they want to reserve a table. For more information about managing user state data, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
+The choice is up to you. You can switch topics to the order dinner flow or you can make it a sticky issue by telling the user that you are expecting a number and reprompt them. If you do allow them to switch topics, you then have to decide if you will save the progress so that the user can pick up from where they left off or you could delete all the information you have collected so that they will have to start that process all over next time they want to reserve a table. For more information about managing user state data, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
 
-### Apply artificial intellgence
-For interruptions that are not in scope, you can try to guess what the user intent is. You can do this using AI services such as QnAMaker, LUIS, or your custom logic. Then offer up suggestions for what the bot thinks the user wants. For example, while in the middle of the reserve table flow, the user say, "I want to order a burger". This is not something the bot knows how to handle from this conversation flow. Since the current flow has nothing to do with ordering, and the bot's other conversation command is "order dinner", so the bot does not know what to do with this input. If you apply LUIS, for example, you could train the model to recognize that they want to order food (e.g.: LUIS can return an "orderFood" intent). Thus, the bot could response with, "It seems you want to order food. Would you like to switch to our order dinner process instead?" For more information on training LUIS and detecting user intents, see [User LUIS for language understanding](bot-builder-howto-v4-luis.md).
+### Apply artificial intelligence
+For interruptions that are not in scope, you can try to guess what the user intent is. You can do this using AI services such as QnAMaker, LUIS, or your custom logic. Then offer up suggestions for what the bot thinks the user wants. For example, while in the middle of the reserve table flow, the user says, "I want to order a burger". This is not something the bot knows how to handle from this conversation flow. Since the current flow has nothing to do with ordering, and the bot's other conversation command is "order dinner", the bot does not know what to do with this input. If you apply LUIS, for example, you could train the model to recognize that they want to order food (e.g.: LUIS can return an "orderFood" intent). Thus, the bot could response with, "It seems you want to order food. Would you like to switch to our order dinner process instead?" For more information on training LUIS and detecting user intents, see [User LUIS for language understanding](bot-builder-howto-v4-luis.md).
 
 ### Default response
-If all else fails, you can send a generic default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understand so the user can get back on track.
+If all else fails, you can send a generic default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
-You can check against the `context.responded` object at the end of the `adapter.processActivity` call to see if the bot had send anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
+You can check against the `context.responded` object at the end of the `adapter.processActivity` call to see if the bot sent anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
 
-The default for this bot is to give the user the `mainMenu` again. It's up to you to decide what experience that user will have in this situation for your bot.
+The default for this bot is to give the user the `mainMenu` again. It's up to you to decide what experience your user will have in this situation for your bot.
 
 ```javascript
 // Check to see if anyone replied. If not then clear all the stack and present the main menu
