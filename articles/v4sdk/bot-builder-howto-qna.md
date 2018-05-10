@@ -25,7 +25,7 @@ After you connect your Azure QnA service, then you can add new QnA pairs. Click 
 
 ![Image 2 for qna](media/QnA_2.png)
 
-Alternatively, you can choose **Populate your KB** and provide a file or URL. A sample source file for generating a simple QnA Maker service is [here](https://aka.ms/qna-tsv)
+Alternatively, you can choose **Populate your KB** and provide a file or URL. A sample source file for generating a simple QnA Maker service is [here](https://aka.ms/qna-tsv).
 
 After adding new QnA pairs or populating your KB, click **Save and train**. Once you are completed, in the **PUBLISH** tab, click **Publish**.
 
@@ -37,13 +37,13 @@ To connect your QnA service to your bot, you will need the HTTP request string c
 
 Before we get coding, make sure you have the packages necessary for QnA Maker.
 
-# [C#](#tab/csref)
+# [C#](#tab/cs)
 
 [Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to v4 prerelease version of the following NuGet packages:
 
 * `Microsoft.Bot.Builder.Ai.QnA`
 
-# [JavaScript](#tab/jsref)
+# [JavaScript](#tab/js)
 
 Either of these services can be added to your bot using the botbuilder-ai package. You can add this package to your project via npm:
 
@@ -57,7 +57,7 @@ Either of these services can be added to your bot using the botbuilder-ai packag
 
 QnA Maker is first added as middleware. Then we can use the results within our bot logic.
 
-# [C#](#tab/csqna)
+# [C#](#tab/cs)
 
 Update the `ConfigureServices` method in your `Startup.cs` file to add a `QnAMakerMiddleware` object. You can configure your bot to check your knowledge base for every message received from a user, by simply adding it to your bot's middleware stack.
 
@@ -129,7 +129,7 @@ namespace Bot_Builder_Echo_Bot_QnA
 
 See the [QnA Maker sample](https://aka.ms/qna-cs-bot-sample) for a sample bot.
 
-# [JavaScript](#tab/jsluis)
+# [JavaScript](#tab/js)
 
 First require/import in the [QnAMaker](https://github.com/Microsoft/botbuilder-js/tree/master/doc/botbuilder-ai/classes/botbuilder_ai.qnamaker.md) class:
 
@@ -168,7 +168,7 @@ const qna = new QnAMaker(qnaEndpointString);
 ```
 -->
 **Preview**
-```
+```js
 const qna = new QnAMaker(
     {
         knowledgeBaseId: '<KNOWLEDGE-BASE-ID>',
@@ -182,7 +182,7 @@ const qna = new QnAMaker(
 );
 ```
 **GA**
-```
+```js
 const qna = new QnAMaker(
     {
         knowledgeBaseId: '<KNOWLEDGE-BASE-ID>',
@@ -265,6 +265,7 @@ server.post('/api/messages', (req, res) => {
 ---
 
 Ask your bot questions to see the replies from your QnA Maker service.
+
 ![Image 4 for qna](media/QnA_4.png)
 
 
