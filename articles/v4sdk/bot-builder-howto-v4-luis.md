@@ -20,14 +20,14 @@ This topic walks you through setting up simple bots that uses LUIS to recognize 
 
 First, make sure you have the packages necessary for LUIS.
 
-# [C#](#tab/csref)
+# [C#](#tab/cs)
 
 [Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to v4 prerelease version of the following NuGet packages:
 
 
 * `Microsoft.Bot.Builder.Ai.LUIS`
 
-# [JavaScript](#tab/jsref)
+# [JavaScript](#tab/js)
 
 You can add reference to botbuilder and botbuilder-ai package in your project via npm:
 
@@ -48,7 +48,7 @@ For this example, you'll just use a demo LUIS app that can recognize Help, Cance
 
 Configure your bot to call your LUIS app for every message received from a user by simply adding it to your bot's middleware stack. The middleware stores the recognition results on the context object, and can then be accessed by your bot logic.
 
-# [C#](#tab/csharp)
+# [C#](#tab/cs)
 Start with the Echo bot template, and open **Startup.cs**. 
 
 Add a `using` statement for `Microsoft.Bot.Builder.Ai.LUIS`
@@ -111,7 +111,7 @@ Paste in your subscription key from [https://www.luis.ai](https://www.luis.ai) i
 >
 >You can find the base URL to use in your `LuisModel` by logging into the [LUIS site](https://www.luis.ai), going to the **Publish** tab, and looking at the **Endpoint** column under **Resources and Keys**. The base URL is the portion of the **Endpoint URL** before the subscription ID and other parameters.
 
-# [JavaScript](#tab/jsmiddleware)
+# [JavaScript](#tab/js)
 
 First require/import in the [LuisRecognizer](https://github.com/Microsoft/botbuilder-js/tree/master/doc/botbuilder-ai/classes/botbuilder_ai.luisrecognizer.md) class and create an instance for your LUIS model:
 
@@ -151,7 +151,7 @@ LUIS language understanding is now plugged into your bot. Next, let's look at ho
 
 The results from LUIS are then accessible from your bot using the context on every conversational turn.
 
-# [C#](#tab/csluisbot)
+# [C#](#tab/cs)
 
 To have your bot simply send a reply based on the intent that the LUIS app detected, replace the code in `OnTurn` with the following:
 
@@ -213,7 +213,7 @@ namespace Bot_Builder_Echo_Bot1
 
 ```
 
-# [JavaScript](#tab/jsluis)
+# [JavaScript](#tab/js)
 
 ```javascript
 // Listen for incoming activity 
@@ -266,7 +266,7 @@ If your reply to the user has more than a single turn, you might decide to track
 
 The LUIS recognizer middleware runs for every turn of your bot, so that you can get an intent for each message received by your user. If you want to start a multi-turn conversation flow based on an intent, one way to do it is to skip the logic for changing topics until you're done with the current topic.
 
-# [C#](#tab/csFlag)
+# [C#](#tab/cs)
 
 In EchoState.cs, change EchoState to the following:
 
@@ -341,7 +341,7 @@ public async Task OnTurn(ITurnContext context)
 }
 ```
 
-# [JavaScript](#tab/jsFlag)
+# [JavaScript](#tab/js)
 
 Add conversation state middleware after you add the `LuisRecognizer`.
 
@@ -429,7 +429,7 @@ If you're using the intent from LUIS to trigger a multi-turn conversation flow, 
 > [!NOTE] 
 > To create your own copy of the public LUIS app used in this example, copy the [WeatherOrHomeAutomation.json](https://github.com/Microsoft/LUIS-Samples/blob/master/examples/simple-bot-example/WeatherOrHomeAutomation.json) LUIS file. Then [import the LUIS app](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/create-new-app#import-new-app), [train](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-train), and [publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) it. Replace the public app ID in the sample code with the app ID of your new LUIS app.
 
-# [C#](#tab/csludialog)
+# [C#](#tab/cs)
 
 First, modify `ConfigureServices` in Startup.cs to add middleware for your LUIS app. Rename `EchoBot` to `LuisDialogBot`.
 In this example, the LUIS app added as `LuisRecognizerMiddleware` detects the `homeautomation` or `weather` intents, to trigger dialogs with those names. 
@@ -702,7 +702,7 @@ private T GetEntity<T>(RecognizerResult luisResult, string entityKey)
 }
 ```
 
-# [JavaScript](#tab/jsludialog)
+# [JavaScript](#tab/js)
 
 
 First, create a LUIS app and add it to your bot using `adapter.use`:
@@ -843,7 +843,7 @@ Besides recognizing intent, a LUIS app can also extract entities, which are impo
 
 A common way to use dialogs is to identify any entities in the user's message, and prompt for any of the required entities that are not found, handling the response to the prompt in subsequent waterfall steps.
 
-# [C#](#tab/csentitydialog)
+# [C#](#tab/cs)
 The following helper function that you added to your `LuisDialogBot` class got entities out of the `RecognizerResult` from LUIS.
 
 ```cs
@@ -921,7 +921,7 @@ private async Task SendWeatherReport(DialogContext dc, IDictionary<string, objec
 }
 ```
 
-# [JavaScript](#tab/jsentitydialog)
+# [JavaScript](#tab/js)
 
 The `findEntities` method looks for any `Weather_Location` entities recognized by the LUIS app.
 
@@ -969,7 +969,7 @@ await dc.begin("Weather_GetForecast", luisResults);
 
 ## Additional resources
 
-For more background on LUIS, see [Language Understanding](./bot-builder-concept-luis.md)
+For more background on LUIS, see [Language Understanding](./bot-builder-concept-luis.md).
 
 For info on how to build the LUIS apps used in these examples, see [LUIS apps for Bot Builder](https://aka.ms/luis-bot-examples).
 
