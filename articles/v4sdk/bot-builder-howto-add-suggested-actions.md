@@ -11,8 +11,6 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Add suggested actions to messages
-> [!div class="op_single_selector"]
-> - [REST](../rest-api/bot-framework-rest-connector-add-suggested-actions.md)
 
 [!include[Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)] 
 
@@ -47,7 +45,7 @@ await context.SendActivity(activity);
 const {MessageFactory} = require('botbuilder');
 
 //  Initialize the message object.
-const basicMessage = MessageFactory.suggestedActions(['Option one', 'Option two', 'Option 3'], 'Please choose one option');
+const basicMessage = MessageFactory.suggestedActions(['red', 'green', 'blue'], 'Choose a color');
 
 await context.sendActivity(basicMessage);
 ```
@@ -55,4 +53,5 @@ await context.sendActivity(basicMessage);
 ---
 
 ## Additional resources
-Preview features with the [Channel Inspector](../bot-service-channel-inspector.md)
+
+To preview features, you can use the [Channel Inspector](../bot-service-channel-inspector.md)
