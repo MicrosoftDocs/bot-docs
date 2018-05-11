@@ -83,13 +83,19 @@ const dialogs = new botbuilder_dialogs.DialogSet("myStack");
 ```
 ---
 
-## Create a single-step dialog
+Creating a dialog only adds the dialog definition to the set. The dialog is not run until it is pushed onto the dialog stack by calling a _begin_ or _replace_ method. 
+
+The dialog name (for example, `addTwoNumbers`) must be unique within each dialog set. You can define as many dialogs as necessary within each set.
 
 The dialog library defines the following dialogs:
 -   A **prompt** dialog where the dialog uses at least two functions, one to prompt the user for input and the other to process the input.
     You can string these together using the **waterfall** model.
 -   A **waterfall** dialog defines a sequence of _waterfall steps_, which run in order.
     A waterfall dialog can have a single step, in which case it can be thought of as a simple, one-step dialog.
+
+## Create a single-step dialog
+
+Single-step dialogs can be useful for capturing single-turn conversational flows. This example creates a bot that can detect if the user says something like "1 + 2", and starts an `addTwoNumbers` dialog to reply with "1 + 2 = 3". 
 
 # [C#](#tab/csharp)
 
@@ -225,6 +231,86 @@ public class EchoState: Dictionary<string, object>
 }
 ```
 
+# [JavaScript](#tab/js)
+
+Start with the JS template described in [Create a bot with the Bot Builder SDK v4](../javascript/bot-builder-javascript-quickstart.md). In **app.js**, add a statement to require `botbuilder-dialogs`.
+```js
+const {DialogSet} = require('botbuilder-dialogs');
+```
+
+In **app.js**, add the following code that defines a simple dialog named `addTwoNumbers` that belongs to the `dialogs` set:
+
+```javascript
+const dialogs = new DialogSet("myDialogStack");
+
+// Show the sum of two numbers.
+dialogs.add('addTwoNumbers', [async function (dc, numbers){
+        var sum = Number.parseFloat(numbers[0]) + Number.parseFloat(numbers[1]);
+        await dc.context.sendActivity(`${numbers[0]} + ${numbers[1]} = ${sum}`);
+        await dc.end();
+    }]
+);
+```
+
+Replace the code in **app.js** for processing the incoming activity with the following. The bot calls a helper function to check if the incoming message looks like a request for adding two numbers. If it does, it passes the numbers in the argument to `DialogContext.begin`.
+
+```js
+// Listen for incoming activity 
+server.post('/api/messages', (req, res) => {
+    // Route received activity to adapter for processing
+    adapter.processActivity(req, res, async (context) => {
+        const isMessage = context.activity.type === 'message';
+        if (isMessage) {
+            const state = conversationState.get(context);
+            const count = state.count === undefined ? state.count = 0 : ++state.count;
+
+            // create a dialog context
+            const dc = dialogs.createContext(context, state);
+
+            // MatchesAdd2Numbers checks if the message matches a regular expression
+            // and if it does, returns an array of the numbers to add
+            var numbers = await MatchesAdd2Numbers(context.activity.text); 
+            if (numbers != null && numbers.length >=2 )
+            {    
+                await dc.begin('addTwoNumbers', numbers);
+            }
+            else {
+                // Just echo back the user's message if they're not adding numbers
+                return context.sendActivity(`Turn ${count}: You said "${context.activity.text}"`); 
+            }           
+        } else {
+            return context.sendActivity(`[${context.activity.type} event detected]`);
+        }
+        if (!context.responded) {
+            await dc.continue();
+            // if the dialog didn't send a response
+            if (!context.responded && isMessage) {
+                await dc.context.sendActivity(`Hi! I'm the add 2 numbers bot. Say something like "what's 1+2?"`);
+            }
+        }
+    });
+});
+```
+
+Add the helper function to **app.js**. The helper function just uses a simple regular expression to detect if the user's message is a request to add 2 numbers. If the regular expression matches, it returns an array that contains the numbers to add.
+
+```javascript
+async function MatchesAdd2Numbers(message) {
+    const ADD_NUMBERS_REGEXP = /([-+]?(?:[0-9]+(?:\.[0-9]+)?|\.[0-9]+))(?:\s*)\+(?:\s*)([-+]?(?:[0-9]+(?:\.[0-9]+)?|\.[0-9]+))/i;
+    let matched = ADD_NUMBERS_REGEXP.exec(message);
+    if (!matched) {
+        // message wasn't a request to add 2 numbers
+        return null;
+    }
+    else {
+        var numbers = [matched[1], matched[2]];
+        return numbers;
+    }
+}
+```
+
+---
+
 ### Run the bot
 
 Try running the bot in the Bot Framework Emulator, and say things like "what's 1+1?" to it.
@@ -232,24 +318,6 @@ Try running the bot in the Bot Framework Emulator, and say things like "what's 1
 ![run the bot](./media/how-to-dialogs/bot-output-add-numbers.png)
 
 
-# [JavaScript](#tab/js)
-
-To create a dialog, use the **add** method. For example, the following code snippet defines a simple dialog named `addTwoNumbers` that belongs to the `dialogs` set:
-
-```javascript
-// Show the sum of two numbers.
-dialogs.add('addTwoNumbers', async function (dc, numbers){
-        var sum = numbers[0] + numbers[1];
-        await dc.context.sendActivity(`${numbers[0]} + ${numbers[1]} = ${sum}`);
-        await dc.end();
-    }
-);
-```
----
-
-Creating a dialog only adds the dialog definition to the set. The dialog is not run until it is pushed onto the stack by calling a _begin_ or _replace_ method.
-
-The dialog name (for example, `addTwoNumbers`) must be unique within each dialog set. You can define as many dialogs as necessary within each set.
 
 ## Using dialogs to guide the user through steps
 
