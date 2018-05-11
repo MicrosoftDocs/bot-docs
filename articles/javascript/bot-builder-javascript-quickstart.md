@@ -134,9 +134,15 @@ node app.js
 
 ## Start the emulator and connect your bot
 At this point, your bot is running locally. Next, start the emulator and then connect to your bot in the emulator:
-1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where port-number matches the port number shown in the browser where your application is running.
-2. Click Save and connect. You won't need to specify Microsoft App ID and Microsoft App Password. You can leave these fields blank for now.
-3. Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+1. Click **create a new bot configuration** link in the emulator "Welcome" tab. 
+
+2. Enter a **Bot name** and enter the directory path to your bot code. The bot configuration file will be saved to this path.
+
+3. Type `http://localhost:port-number/api/messages` into the **Endpoint URL** field, where *port-number* matches the port number shown in the browser where your application is running.
+
+4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
+
+Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
 
 ## Next steps
 
