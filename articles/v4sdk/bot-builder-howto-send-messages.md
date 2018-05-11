@@ -51,7 +51,7 @@ reply.Speak = "This will be spoken.";
 await context.SendActivity(reply);
 ```
 
-When including it in a prompt, specify it as an optional parameter when sending the prompt.
+When including it in a prompt, specify it as an optional parameter when sending the prompt. For more on prompts, see how to [prompt users for input](bot-builder-prompts.md)
 
 ```cs
 TextPrompt textPrompt = new TextPrompt();
