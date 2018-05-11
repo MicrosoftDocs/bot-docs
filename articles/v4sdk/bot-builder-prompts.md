@@ -14,16 +14,10 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-<!----
-> > [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
----->
-
 Often times bots gather their information through questions posed to the user. You can simply send the user a standard message by using _send activity_ to ask for a string input, however the Bot Builder SDK provides a **prompts** library that you can use to ask for different types for information. This topic details how to use **prompts** library to ask user for input.
 
 > [!NOTE]
-> This article uses and refers to **dialogs**, but doesn't cover anything about them or how they work. For details on that, check out [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md)
+> This article uses and refers to **dialogs**, but doesn't cover anything about them or how they work. For details on that, check out [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 ## Prompt types
 
@@ -96,7 +90,7 @@ dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 
 ---
 
-Once a prompt dialog is added, you can use it in a simple two step **waterfall** or string the prompts in multiple steps of a **waterfall**. A **waterfall** is simply a way to put multiple steps together that happen sequentially. For more on that, take a look at the [dialogs page](bot-builder-dialog-manage-conversation-flow.md#create-a-dialog-with-waterfall-steps)
+Once a prompt dialog is added, you can use it in a simple two step **waterfall** or string the prompts in multiple steps of a **waterfall**. A **waterfall** is simply a way to put multiple steps together that happen sequentially. For more on that, take a look at the [dialogs page](bot-builder-dialog-manage-conversation-flow.md#create-a-dialog-with-waterfall-steps).
 
 For example, the following dialogs prompt the user for their name and then greet them by name:
 
@@ -105,6 +99,7 @@ For example, the following dialogs prompt the user for their name and then greet
 ```csharp
 dialogs.Add("greetings", new WaterfallStep[]
 {
+    // Each step takes in a dialog context, arguments, and the next delegate
     async (dc, args, next) =>
     {
         // Prompt for the guest's name.
