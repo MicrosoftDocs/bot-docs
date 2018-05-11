@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 For your bot to save conversation and user state, first initialize state manager middleware, and then use the conversation and user state properties.
-For more information about you might do this, see [State and storage](./bot-builder-storage-concept.md).
+For more information about how to do this, see [State and storage](./bot-builder-storage-concept.md).
 
 ## Initialize state manager middleware
 
@@ -45,7 +45,7 @@ public class EchoState
 }
 ``` 
 
-# [JavaScript](#tab/jsmemorymiddleware)
+# [JavaScript](#tab/js)
 
 Define the storage provider and assign it to the state manager you want to use.
 You could use the same storage provider for `ConversationState` and `UserState` management middleware.
@@ -89,7 +89,7 @@ When initializing the state middleware, an optional _state settings_ parameter a
 Once the state manager middleware has been configured, you can get the conversation state and user state properties from the context object.
 <!-- Changes are written to storage before the `SendActivity()` pipeline completes. -->
 
-# [C#](#tab/csharppropertysnippet)
+# [C#](#tab/csharp)
 
 You can see how this works using the `Microsoft.Bot.Samples.EchoBot` sample in the Bot Builder SDK. 
 
@@ -113,7 +113,7 @@ public async Task OnTurn(ITurnContext context)
 }
 ```   
 
-# [JavaScript](#tab/jspropertysnippet)
+# [JavaScript](#tab/js)
 
 You can see how this works using the generated EchoBot from the Yeoman generator sample.
 
@@ -157,12 +157,12 @@ server.post('/api/messages', (req, res) => {
 
 ## Using conversation state to direct conversation flow
 
-In designing a conversation flow, it is useful to define a state flag to direct the conversation flow. The flag can be a simple **Boolean** type or a type that includes the name of the current topic. The flag can help you track where in a conversation you are. For example, a **Boolean** type flag can tell you whether you are in a conversation or not. While a topic name property can tell you which converversation you are currently in.
+In designing a conversation flow, it is useful to define a state flag to direct the conversation flow. The flag can be a simple **Boolean** type or a type that includes the name of the current topic. The flag can help you track where in a conversation you are. For example, a **Boolean** type flag can tell you whether you are in a conversation or not. While a topic name property can tell you which conversation you are currently in.
 
 The following example uses a Boolean _have asked name_ property to flag when the bot has asked the user for their name. When the next message is received, the bot checks the property. If the property is set to `true`, the bot knows the user was just asked for their name, and interprets the incoming message as a name to save as a user property.
 
 
-# [C#](#tab/csFlag)
+# [C#](#tab/csharp)
 ```csharp
 public class ConversationInfo
 {
@@ -234,7 +234,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-# [JavaScript](#tab/jsflag)
+# [JavaScript](#tab/js)
 
 **app.js**
 
@@ -304,7 +304,7 @@ An alternative is to use the _waterfall_ model of a dialog. The dialog keeps tra
 
 The memory storage provider uses in-memory storage that gets disposed when the bot is restarted. It is good for testing purposes only. If you want to persist data but do not want to hook your bot up to a database, you can use the file storage provider. While this provider is also intented for testing purposes, it persists state data to a file so that you can inspect it. The data is written out to file using JSON format.
 
-# [C#](#tab/csfileMiddleware)
+# [C#](#tab/csharp)
 
 Go to `Startup.cs` in the Microsoft.Bot.Samples.EchoBot-AspNetCore sample, and edit the code in the `ConfigureServices` method.
 ```csharp
@@ -324,7 +324,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Run the code, and let the echobot echo back your input a few times.
 
-Then go to the directory specified by `System.IO.Path.GetTempPath()`. You should see a file with a name starting with "conversation". Open it and look at the JSON it contains something like the following.
+Then go to the directory specified by `System.IO.Path.GetTempPath()`. You should see a file with a name starting with "conversation". Open it and look at the JSON. The file contains something like the following:
 ```json
 {
   "$type": "Microsoft.Bot.Samples.Echo.EchoState, Microsoft.Bot.Samples.EchoBot",
@@ -333,9 +333,9 @@ Then go to the directory specified by `System.IO.Path.GetTempPath()`. You should
 }
 ```
 
-The `$type` specifies the type of the data structure you're using in your bot to store conversation state. The `TurnNumber` field corresponds to the `TurnNumber` property in the `EchoState` class. The `eTag` field is inherited from `IStoreItem`, is a unique value that automatically gets updated each time your bot updates conversation state.  The eTag field enables your bot to enable optimistic concurrency.
+The `$type` specifies the type of the data structure you're using in your bot to store conversation state. The `TurnNumber` field corresponds to the `TurnNumber` property in the `EchoState` class. The `eTag` field is inherited from `IStoreItem` and is a unique value that automatically gets updated each time your bot updates conversation state.  The eTag field enables your bot to enable optimistic concurrency.
 
-# [JavaScript](#tab/jsfilemiddleware)
+# [JavaScript](#tab/js)
 
 To use `FileStorage`, update your echo bot sample described in section: [Use conversation and user state properties](#use-conversation-and-user-state-properties) earlier. Make sure `storage` is set to `FileStorage` instead of `MemoryStorage`. That is the only change needed. 
 
@@ -347,7 +347,7 @@ const userState  = new UserState(storage);
 adapter.use(new BotStateSet(convoState, userState));
 ```
 
-The `FileStorage` provider takes a "path" as parameter. Specifying a path allows you to easily find the file with the persisted information from your bot. Each *conversation* will have a new file created for it. So, in the *path*, you may find multiple file names starting with **conversation!**. You can sort by date to find the lastest conversation easier. On the other hand, you will only find one file for the *user* state. The filename will start with **user!**. Anytime the state of either of these object changes, the state manager will update the file to reflect what's changed.
+The `FileStorage` provider takes a "path" as a parameter. Specifying a path allows you to easily find the file with the persisted information from your bot. Each *conversation* will have a new file created for it. So, in the *path*, you may find multiple file names starting with `conversation!`. You can sort by date to find the lastest conversation easier. On the other hand, you will only find one file for the *user* state. The filename will start with `user!`. Anytime the state of either of these object changes, the state manager will update the file to reflect what's changed.
 
 Run the bot and send it a few messages. Then, find the storage file and open it. Here is what the JSON content might look like for the echo bot that keeps track of the turn counter.
 
@@ -363,7 +363,7 @@ Run the bot and send it a few messages. Then, find the storage file and open it.
 
 You can also use Azure Table storage as your storage medium.
 
-# [C#](#tab/csharpazuremiddleware)
+# [C#](#tab/csharp)
 
 In the Microsoft.Bot.Samples.EchoBot-AspNetCore sample, add a reference to the `Microsoft.Bot.Builder.Azure` NuGet package.
 
@@ -390,7 +390,7 @@ If the table with the name you specify in the constructor to `AzureTableStorage`
 TODO: step-by-step inspection of the stored table
 -->
 
-# [JavaScript](#tab/jsazuremiddleware)
+# [JavaScript](#tab/js)
 
 In `app.js` of the echobot sample, you can create ConversationState using `AzureTableStorage`
 
