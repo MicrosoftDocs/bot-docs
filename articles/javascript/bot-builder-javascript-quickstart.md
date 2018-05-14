@@ -70,7 +70,7 @@ Yeoman creates your bot in a new folder.
 
 ## Explore code
 
-When you open your newly created bot folder, you will see `app.js` file. This file contains an Echo bot code, npm packages that were installed for you, a server which is created using restify that will listen on port 3978, an adapter that can be left blank for this example and conversation state middleware. 
+When you open your newly created bot folder, you will see an `app.js` file. This `app.js` file will contain all the code needed to run a bot app. This file contains an echo bot that will echo back whatever you input as well as increment a counter. 
 
 In the following code, conversation state middleware uses in-memory storage. It reads and writes the state object to storage. The count variable keeps track of the number of messages sent to the bot. You can use a similar technique to maintain state in between turns. 
 
@@ -134,9 +134,15 @@ node app.js
 
 ## Start the emulator and connect your bot
 At this point, your bot is running locally. Next, start the emulator and then connect to your bot in the emulator:
-1. Create a new bot configuration. Type `http://localhost:port-number/api/messages` into the address bar, where port-number matches the port number shown in the browser where your application is running.
-2. Click Save and connect. You won't need to specify Microsoft App ID and Microsoft App Password. You can leave these fields blank for now.
-3. Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+1. Click **create a new bot configuration** link in the emulator "Welcome" tab. 
+
+2. Enter a **Bot name** and enter the directory path to your bot code. The bot configuration file will be saved to this path.
+
+3. Type `http://localhost:port-number/api/messages` into the **Endpoint URL** field, where *port-number* matches the port number shown in the browser where your application is running.
+
+4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
+
+Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
 
 ## Next steps
 

@@ -189,7 +189,7 @@ server.post('/api/messages', (req, res) => {
     adapter.processActivity(req, res, async (context) => {
         if (context.activity.type === 'message') {
             const convoState = conversationState.get(context);
-            const count = convState.count === undefined ? convoState.count = 0 : ++convoState.count;
+            const count = convoState.count === undefined ? convoState.count = 0 : ++convoState.count;
             await context.sendActivity(`${count}: You said "${context.activity.text}"`);
         } else {
             await context.sendActivity(`[${context.activity.type} event detected]`);

@@ -32,7 +32,7 @@ Install the **Microsoft.Bot.Builder.Dialogs** package from Nuget packet manager.
 Navigate to your bot's project folder and install the `botbuilder-dialogs` package from NPM:
 
 ```cmd
-npm install --save botbuilder-dialogs
+npm install --save botbuilder-dialogs@preview
 ```
 
 ---
@@ -90,7 +90,7 @@ const dialogs = new botbuilder_dialogs.DialogSet();
 
 ## Define a waterfall dialog
 
-To ask a question, you will need at least a two step **waterfall** dialog. For this example, you will construction a two step **waterfall** dialog where the first step asks the user for their name and the second step greets the user by name. 
+To ask a question, you will need at least a two step **waterfall** dialog. For this example, you will construct a two step **waterfall** dialog where the first step asks the user for their name and the second step greets the user by name. 
 
 # [C#](#tab/cstab)
 
@@ -236,7 +236,7 @@ server.post('/api/messages', (req, res) => {
 });
 ```
 
-Bot logic goes within the `processActivity()` method. Once the user says "Hi" then the bot will start the `greeting` dialog. The first step of the `greeting` dialog prompts the user for their name. The user will send a reply with their name as the activity's `text` message. Since the message didn't match any expected intents and the bot has not sent any reply to the user, the result is sent to step two of the waterfall through the `dc.continue()` method. The second step of the waterfall, as you have defined it, will greet the user by their name and ends the dialog. If, for example, step two did not send the user the greeting message, then `processActivity` method will end with the *default message* sent to the user.
+Bot logic goes within the `processActivity()` method. Once the user says "Hi" then the bot will start the `greetings` dialog. The first step of the `greetings` dialog prompts the user for their name. The user will send a reply with their name as the activity's `text` message. Since the message didn't match any expected intents and the bot has not sent any reply to the user, the result is sent to step two of the waterfall through the `dc.continue()` method. The second step of the waterfall, as you have defined it, will greet the user by their name and ends the dialog. If, for example, step two did not send the user the greeting message, then `processActivity` method will end with the *default message* sent to the user.
 
 ---
 
@@ -459,7 +459,7 @@ server.post('/api/messages', (req, res) => {
         if (isMessage) {
             // Check for valid intents
             if(context.activity.text.match(/hi/ig)){
-                await dc.begin('greeting');
+                await dc.begin('greetings');
             }
             else if(context.activity.text.match(/reserve table/ig)){
                 await dc.begin('reserveTable');
