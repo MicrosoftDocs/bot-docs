@@ -110,7 +110,7 @@ After you start your bot, start the emulator and then connect your bot:
 
 1. Click **create a new bot configuration** link in the emulator window. 
 
-2. Type `http://localhost:port-number/api/messages` into the address bar, where port-number matches the port number shown in the browser where your application is running.
+2. Type `http://localhost:port-number/api/messages` into the address bar, where *port-number* matches the port number shown in the browser where your application is running.
 
 3. Click Save and connect. You won't need to specify Microsoft App ID and Microsoft App Password. You can leave these fields blank for now. You'll get this information later when you register your bot.
 
