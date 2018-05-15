@@ -1,5 +1,5 @@
 ---
-title: Add authenticaion to your bot via Azure Bot Service | Microsoft Docs
+title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
 author: JonathanFingold
 ms.author: JonathanFingold
