@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How to use proactive messaging
 
-Most commonly bots send _reactive messages_, but there are times when we need to be able to send a [proactive message](bot-builder-proactive-messages.md) as well. 
+Most often bots send _reactive messages_, but there are times when we need to be able to send a [proactive message](bot-builder-proactive-messages.md) as well. 
 
 A common case of proactive messaging comes when our bot is performing a task that can take an indeterminate amount of time. In this case, you can store information about the task, tell the user that the bot will get back to them when the task finishes, and let the conversation proceed. When the task completes, the bot can resume the conversation by sending the confirmation message proactively.
 
@@ -31,7 +31,7 @@ We're modifying the basic EchoBot sample.
 
 ## Define task data
 
-In this scenario, we're tracking arbirary tasks that can be created by various users in different conversations. So, we're using general bot state middleware, instead of user or conversation state middleware.
+In this scenario, we're tracking arbitrary tasks that can be created by various users in different conversations. So, we're using general bot state middleware, instead of user or conversation state middleware.
 
 The following class defines the data structure we'll use for individual jobs.
 
@@ -278,7 +278,7 @@ namespace Microsoft.Samples.Proactive
 
 Before you can send a proactive message to a user, the user will have to send at least one reactive style message to your bot. 
 
-You need to send one message to the bot since it needs to get the a reference to the activity object and save it somewhere for future use. You can think of the activity object as the users address as it contains information about the channel they came in on, their user ID, the conversation ID, and even the server that should receive any future messages. This object is simple JSON and should be saved whole without tampering.
+You need to send one message to the bot since it needs to get a reference to the activity object and save it somewhere for future use. You can think of the activity object as the users address as it contains information about the channel they came in on, their user ID, the conversation ID, and even the server that should receive any future messages. This object is simple JSON and should be saved whole without tampering.
 
 Let's start with a short code snippet that shows how to save the conversation reference anytime the user says subscribe:
 ```javascript
@@ -307,7 +307,7 @@ server.post('/api/messages', (req, res) => {
 ```
 The snippets above calls the `saveReference()` function that will save the user's reference with `MemoryStorage` and returns `userId`. Once the reference is successfully saved we then call `subscribeUser()` which will notify the user that they have been subscribed. 
 
-The `subscribeUser()` function is what sets up the actual subscription so lets take a look at a very simple implementation that starts a 2 second timer and proactively messages the user once the timer elapses:
+The `subscribeUser()` function is what sets up the actual subscription. Let's take a look at a simple implementation that starts a 2 second timer and proactively messages the user once the timer elapses:
 
 ```javascript
 // Persist info to storage
@@ -342,7 +342,7 @@ async function findReference(userId){
 }
 ```
 
-The `subscribeUser()` function sets up a timer that will locate the reference object by reading it from storage. If the reference object was found we can continue the conversation with the user. Continue Conversation lets the bot proactively send messages to a conversation or user that its already communicated with.
+The `subscribeUser()` function sets up a timer that will locate the reference object by reading it from storage. If the reference object was found we can continue the conversation with the user. Continue Conversation lets the bot proactively send messages to a conversation or user that it has already communicated with.
 
 ---
 
