@@ -19,13 +19,12 @@
   </Attributes>
   <Docs>
     <summary>
-            Define the prompt used when asking about a field.
-            </summary>
-    <remarks>
-            Prompts by default will come from \ref Templates.  
-            This attribute allows you to override this with one more \ref patterns strings. 
+       Define the prompt used when asking about a field.
+    </summary>
+    <remarks>Prompts by default will come from <see cref="T:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Templates" />.
+            This attribute allows you to override this with one more <paramref name="patterns" /> strings. 
             The actual prompt will be randomly selected from the alternatives you provide.
-            </remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,7 +72,7 @@
       <Docs>
         <param name="patterns">Patterns to select from.</param>
         <summary>
-            Define a prompt with one or more \ref patterns patterns to choose from randomly.
+            Define a prompt with one or more <paramref name="patterns" /> patterns to choose from randomly.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
