@@ -20,7 +20,7 @@ Below is the list of fields on the **Settings** blade:
 | :---  | :---        |
 | Icon | A custom icon to visually identify your bot in channels and as the icon for Skype, Cortana, and other services. This icon must be in PNG format, and no larger than 30K in size. This value can be changed at any time. |
 | Display name | The name of your bot in channels and directories. This value can be changed at any time. 35 character limit. |
-| Bot handle | Unique idenifier for your bot. This value cannot be changed after creating your bot with the Bot Service. |
+| Bot handle | Unique identifier for your bot. This value cannot be changed after creating your bot with the Bot Service. |
 | Messaging endpoint | The endpoint to communicate with your bot. |
 | Microsoft App ID | Unique identifier for your bot. This value cannot be changed. You can generate a new password by clicking on the **Manage** link. |
 | Application Insights Instrumentation key | Unique key for bot telemetry. Copy your Azure Application Insights Key to this field if you want to receive bot telemetry for this bot. This value is optional. Bots created in the Azure Portal will have this key generated for them. For more details on this field, see [Application Insights keys](~/bot-service-resources-app-insights-keys.md). |

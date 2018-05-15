@@ -29,7 +29,7 @@ const {InputHints} = require('botbuilder');
 
 ## Accepting input
 
-To indicate that your bot is passively ready for input but is not awaiting a response from the user, set the message's input hint to _accepting input_. On many channels, this will cause the client's input box to be enabled and microphone to be closed, but still accessible to the user. For example, Cortana will open the microphone to accept input from the user if the user holds down the microphone button. The following code creates a message that indicates the bot is accepting user input.
+To indicate that your bot is passively ready for input but is not awaiting a response from the user, set the message's input hint to _accepting input_. On many channels, this will cause the client's input box to be enabled, and microphone to be closed but still accessible to the user. For example, Cortana will open the microphone to accept input from the user if the user holds down the microphone button. The following code creates a message that indicates the bot is accepting user input.
 
 # [C#](#tab/csacceptinginput)
 [!code-csharp[Accepting input](../includes/code/dotnet-input-hints.cs#InputHintAcceptingInput)]
@@ -57,7 +57,7 @@ await context.sendActivity(basicMessage);
 
 ## Ignoring input
  
-To indicate that your bot is not ready to receive input from the user, set the message's input hint to _ignorning input_. On many channels, this will cause the client's input box to be disabled and microphone to be closed. The following code example creates a message that indicates the bot is ignoring user input.
+To indicate that your bot is not ready to receive input from the user, set the message's input hint to _ignoring input_. On many channels, this will cause the client's input box to be disabled and microphone to be closed. The following code example creates a message that indicates the bot is ignoring user input.
 
 # [C#](#tab/csignoringinput)
 [!code-csharp[Ignoring input](../includes/code/dotnet-input-hints.cs#InputHintIgnoringInput)]
@@ -74,5 +74,5 @@ await context.sendActivity(basicMessage);
 If you do not set the input hint for a message, the Bot Builder SDK will automatically set it for you by using this logic: 
 
 - If your bot sends a prompt, the input hint for the message will specify that your bot is **expecting input**.</li>
-- If your bot sends single message, the input hint for the message will specify that your bot is **accepting input**.</li>
+- If your bot sends a single message, the input hint for the message will specify that your bot is **accepting input**.</li>
 - If your bot sends a series of consecutive messages, the input hint for all but the final message in the series will specify that your bot is **ignoring input**, and the input hint for the final message in the series will specify that your bot is **accepting input**.

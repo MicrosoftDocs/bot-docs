@@ -19,9 +19,9 @@ A message exchange between user and bot can contain media attachments, such as i
 To send the user content like an image or a video, you can add an attachment or list of attachments to a message.
 
 # [C#](#tab/csharp)
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards within to the message.
 
-To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
+
 
 ```csharp
 using Microsoft.Bot.Builder;

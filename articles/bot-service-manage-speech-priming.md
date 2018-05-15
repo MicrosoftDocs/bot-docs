@@ -38,6 +38,6 @@ To change the list of LUIS apps used by Bing Speech with your bot, do the follow
 
 ## Additional Resources
 
-- To learn more enabling speech in Web Chat see [Enable speech in the Web Chat channel](~/bot-service-channel-connect-webchat-speech.md).
+- To learn more about enabling speech in Web Chat see [Enable speech in the Web Chat channel](~/bot-service-channel-connect-webchat-speech.md).
 - To learn more about speech priming, see [Speech Support in Bot Framework – Web Chat to Directline, to Cortana](https://blog.botframework.com/2017/06/26/Speech-To-Text/).
 - To learn more about LUIS apps, see [Language Understanding Intelligent Service](https://www.luis.ai).

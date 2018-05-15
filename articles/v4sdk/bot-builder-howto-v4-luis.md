@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can give your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. If you need more background on how LUIS integrates with a bot, see [language understanding for bots](./bot-builder-concept-LUIS.md). 
 
-This topic walks you through setting up simple bots that uses LUIS to recognize a few different intents and respond appropriately.
+This topic walks you through setting up simple bots that use LUIS to recognize a few different intents.
 
 ## Installing Packages
 
@@ -841,10 +841,31 @@ Try running the bot in the Bot Framework Emulator, and say things like "turn on 
 
 Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, in the example of the weather dialog, the LUIS app might be able to extract the location for the weather report from the user's message. 
 
-A common way to use dialogs is to identify any entities in the user's message, and prompt for any of the required entities that are not found, handling the response to the prompt in subsequent waterfall steps.
+A common way to use dialogs is to identify any entities in the user's message, and prompt for any of the required entities that are not found. Then, the subsequent dialog step handles the response to the prompt.
 
 # [C#](#tab/cs)
-The following helper function that you added to your `LuisDialogBot` class got entities out of the `RecognizerResult` from LUIS.
+
+Let's say the message from the user was "What's the weather in Seattle"? For the bot in this example, the the [LuisRecognizer](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.luisrecognizer) gives you a [RecognizerResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.core.extensions.recognizerresult) with an [`Entities` property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.core.extensions.recognizerresult#properties-) that has this structure:
+
+```json
+{
+"$instance": {
+    "Weather_Location": [
+        {
+            "startIndex": 22,
+            "endIndex": 29,
+            "text": "seattle",
+            "score": 0.8073087
+        }
+    ]
+},
+"Weather_Location": [
+        "seattle"
+    ]
+}
+```
+
+The following helper function that you added to your `LuisDialogBot` class gets entities out of the `RecognizerResult` from LUIS.
 
 ```cs
 // Get entities from LUIS result
@@ -923,7 +944,27 @@ private async Task SendWeatherReport(DialogContext dc, IDictionary<string, objec
 
 # [JavaScript](#tab/js)
 
-The `findEntities` method looks for any `Weather_Location` entities recognized by the LUIS app.
+For example, let's say the message from the user was "What's the weather in Seattle"? For the bot in this example, the the [LuisRecognizer](https://docs.microsoft.com/en-us/javascript/api/botbuilder-ai/luisrecognizer) gives you a [RecognizerResult](https://docs.microsoft.com/en-us/javascript/api/botbuilder-core-extensions/recognizerresult) with an `entities` property that has this structure:
+
+```json
+{
+"$instance": {
+    "Weather_Location": [
+        {
+            "startIndex": 22,
+            "endIndex": 29,
+            "text": "seattle",
+            "score": 0.8073087
+        }
+    ]
+},
+"Weather_Location": [
+        "seattle"
+    ]
+}
+```
+
+This `findEntities` function looks for any `Weather_Location` entities recognized by the LUIS app.
 
 <!-- TODO: Turn into a waterfall -->
 

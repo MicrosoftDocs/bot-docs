@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments.
 
-This article describes simple text and speech messages, but for sending that richer content, see how to [add rich media attachments](bot-builder-howto-add-media-attachments.md).
+This article describes how to send simple text and speech messages, for sending richer content, see how to [add rich media attachments](bot-builder-howto-add-media-attachments.md).
 
 ## Send a simple text message
 
