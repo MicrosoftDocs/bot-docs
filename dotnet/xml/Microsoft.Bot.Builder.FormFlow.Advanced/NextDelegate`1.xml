@@ -30,9 +30,9 @@
     <param name="value">Value just entered for field.</param>
     <param name="state">Current state object.</param>
     <summary>
-            A delegate for deciding on the next step in the form to execute.
-            </summary>
-    <returns />
+      A delegate for deciding on the next step in the form to execute.
+    </summary>
+    <returns>A <see cref="T:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" /> indicating the next step in the dialog.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
