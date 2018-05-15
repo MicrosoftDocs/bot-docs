@@ -73,15 +73,23 @@ To use your **Azure Table** storage, add the following lines of code to your bot
    var tableStorage = new azure.AzureBotStorage({gzipData: false}, azureTableClient);
    ```
 
-4. Specify that you want to use your custom database instead of the in-memory storage. For example:
+4. Specify that you want to use your custom database instead of the in-memory storage and add session information to database. For example:
 
    ```javascript
    var bot = new builder.UniversalBot(connector, function (session) {
         // ... Bot code ...
+
+        // capture session user information
+        session.userData = {"userId": session.message.user.id, "jobTitle": "Senior Developer"};
+
+        // capture conversation information  
+        session.conversationData[timestamp.toISOString().replace(/:/g,"-")] = session.message.text;
+
+        // save data
+        session.save();
    })
    .set('storage', tableStorage);
    ```
-
 Now you are ready to test the bot with the emulator.
 
 ## Run your bot app
@@ -103,6 +111,18 @@ At this point, your bot is running locally. Start the emulator and then connect 
 ## View data in Storage Explorer
 
 To view the state data, open **Storage Explorer** and connect to Azure using your Azure Portal credential or connect directly to the Table using the `storageName` and `storageKey` and navigate to your `tableName`. 
+
+![Screenshot of Storage Explorer with botdata table rows](~/media/bot-builder-nodejs-state-azure-table-storage/bot-builder-nodejs-state-azure-table-storage-query.png)
+
+One record of the conversation in the **data** column looks like:
+
+```JSON
+{
+    "2018-05-15T18-23-48.780Z": "I'm the second user",
+    "2018-05-15T18-23-55.120Z": "Do you know what time it is?",
+    "2018-05-15T18-24-12.214Z": "I'm looking for information about the new process."
+}
+```
 
 ## Next step
 
