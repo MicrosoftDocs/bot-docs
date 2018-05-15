@@ -27,3 +27,5 @@
 # [Set up speech priming](../bot-service-manage-speech-priming.md)
 # [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md)
 # [Migrate your bot](../bot-service-migrate-bot.md)
+# [Deploy your bot to Azure](../bot-builder-howto-deploy-azure.md)
+
