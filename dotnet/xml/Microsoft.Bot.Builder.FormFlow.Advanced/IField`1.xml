@@ -32,8 +32,8 @@
   <Docs>
     <typeparam name="T">Form state interface applies to.</typeparam>
     <summary>
-            Interface for all the information about a specific field.
-            </summary>
+      Interface for all the information about a specific field.
+    </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,7 +54,7 @@
       <Docs>
         <summary>
             Form that owns this field
-            </summary>
+        </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,10 +78,9 @@
             Name of this field.
             </summary>
         <value>Name of this field.</value>
-        <remarks>
-            For a value field this is the path in the form state that leads to the value being filled in.
+        <remarks>For a value field this is the path in the form state that leads to the value being filled in.
             For a confirm field this is a randomly generated name.
-            </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>
