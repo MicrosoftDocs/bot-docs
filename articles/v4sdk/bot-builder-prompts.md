@@ -14,6 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
+
 Often times bots gather their information through questions posed to the user. You can simply send the user a standard message by using _send activity_ to ask for a string input, however the Bot Builder SDK provides a **prompts** library that you can use to ask for different types for information. This topic details how to use **prompts** library to ask user for input.
 
 > [!NOTE]
@@ -90,7 +91,9 @@ dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 
 ---
 
-Once a prompt dialog is added, you can use it in a simple two step **waterfall** or string the prompts in multiple steps of a **waterfall**. A **waterfall** is simply a way to put multiple steps together that happen sequentially. For more on that, take a look at the [dialogs page](bot-builder-dialog-manage-conversation-flow.md#create-a-dialog-with-waterfall-steps).
+
+Once a prompt dialog is added, you can use it in a simple two step **waterfall** or string the prompts in multiple steps of a **waterfall**. A **waterfall** is simply a way to put multiple steps together that happen sequentially. For more information, take a look at the [dialogs page](bot-builder-dialog-manage-conversation-flow.md#create-a-dialog-with-waterfall-steps).
+
 
 For example, the following dialogs prompt the user for their name and then greet them by name:
 
@@ -198,7 +201,7 @@ dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 
 ---
 
-However, if you wish to pair the prompt to the expected value that prompt is asking, you could give each prompt a unique *dialogId*. A dialog is added with a unique **dialogId**, you can create multiple **prompt** dialogs of the same type with different **dialogId**. For example, you could create two **TextPrompt** dialogs for the example above:
+However, if you wish to pair the prompt to the expected value that prompt is asking, you could give each prompt a unique *dialogId*. A dialog is added with a unique **dialogId**. Using different **dialogId's**, you can also create multiple **prompt** dialogs of the same type. For example, you could create two **TextPrompt** dialogs for the example above:
 
 # [C#](#tab/csharptab)
 
@@ -216,7 +219,7 @@ dialogs.add('workPlacePrompt', new botbuilder_dialogs.TextPrompt());
 
 ---
 
-For the sake of code reuse, defining a single `textPrompt` would work for all these three prompts because they ask for a text string as response. However, where the ability to name dialogs come in handy is when you need to validate the input of the prompt. In which case, the prompts may be using **TextPrompt** but each is looking for a different set of values. Lets take a look at how you can validate prompt responses using a `NumberPrompt`.
+For the sake of code reusability, defining a single `textPrompt` would work for all these three prompts because they ask for a text string as a response. However, where the ability to name dialogs come in handy is when you need to validate the input of the prompt. In which case, the prompts may be using **TextPrompt** but each is looking for a different set of values. Lets take a look at how you can validate prompt responses using a `NumberPrompt`.
 
 ## Validate prompt response
 
@@ -310,7 +313,7 @@ dialogs.Add("datetimePrompt", new Builder.Dialogs.DateTimePrompt(Culture.English
 }));
 ```
 
-Further examples can be found in our [samples repo](https://github.com/Microsoft/botbuilder-dotnet)
+Further examples can be found in our [samples repo](https://github.com/Microsoft/botbuilder-dotnet).
 
 # [JavaScript](#tab/jstab)
 
@@ -329,7 +332,7 @@ dialogs.add('dateTimePrompt', new botbuilder_dialogs.DatetimePrompt( async (cont
     }
 }));
 ```
-
+Further examples can be found in our [samples repo](https://github.com/Microsoft/botbuilder-js).
 ---
 
 > [!TIP] 
@@ -340,11 +343,11 @@ You can use the same technique to validate prompt responses for any of the promp
 
 ## Save user data
 
-When you prompt for user input, you have several options on how to handle that input. For instance, you can consume and discard the input, you can save it to a global variable, you can save it to a volatile or in-memory storage container, you can save it to a file, or you can save it to an external database. For more information on how to save user data, see [Manage user data](bot-builder-howto-v4-state.md)
+When you prompt for user input, you have several options on how to handle that input. For instance, you can consume and discard the input, you can save it to a global variable, you can save it to a volatile or in-memory storage container, you can save it to a file, or you can save it to an external database. For more information on how to save user data, see [Manage user data].(bot-builder-howto-v4-state.md)
 
 ## Next steps
 
-Now that you know how to prompt user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
+Now that you know how to prompt a user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
 
 > [!div class="nextstepaction"]
 > [Manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md)
