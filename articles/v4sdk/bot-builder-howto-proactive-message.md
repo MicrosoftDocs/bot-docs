@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How to use proactive messaging
 
-Most often bots send _reactive messages_, but there are times when we need to be able to send a [proactive message](bot-builder-proactive-messages.md) as well. 
+Often bots send _reactive messages_, but there are times when we need to be able to send a [proactive message](bot-builder-proactive-messages.md) as well. 
 
 A common case of proactive messaging comes when our bot is performing a task that can take an indeterminate amount of time. In this case, you can store information about the task, tell the user that the bot will get back to them when the task finishes, and let the conversation proceed. When the task completes, the bot can resume the conversation by sending the confirmation message proactively.
 
@@ -342,7 +342,7 @@ async function findReference(userId){
 }
 ```
 
-The `subscribeUser()` function sets up a timer that will locate the reference object by reading it from storage. If the reference object was found we can continue the conversation with the user. Continue Conversation lets the bot proactively send messages to a conversation or user that it has already communicated with.
+The `subscribeUser()` function sets up a timer that will locate the reference object by reading it from storage. If the reference object was found we can continue the conversation with the user. The `continueConversation` method lets the bot proactively send messages to a conversation or user that it has already communicated with.
 
 ---
 
