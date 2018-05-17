@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 
-Often times bots gather their information through questions posed to the user. You can simply send the user a standard message by using _send activity_ to ask for a string input, however the Bot Builder SDK provides a **prompts** library that you can use to ask for different types for information. This topic details how to use **prompts** library to ask user for input.
+Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using _send activity_ to ask for a string input; however, the Bot Builder SDK provides a **prompts** library that you can use to ask for different types for information. This topic details how to use **prompts** library to ask user for input.
 
 > [!NOTE]
 > This article uses and refers to **dialogs**, but doesn't cover anything about them or how they work. For details on that, check out [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
@@ -201,7 +201,7 @@ dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 
 ---
 
-However, if you wish to pair the prompt to the expected value that prompt is asking, you could give each prompt a unique *dialogId*. A dialog is added with a unique **dialogId**. Using different **dialogId's**, you can also create multiple **prompt** dialogs of the same type. For example, you could create two **TextPrompt** dialogs for the example above:
+However, if you wish to pair the prompt to the expected value that prompt is asking, you could give each prompt a unique *dialogId*. A dialog is added with a unique ID. Using different IDs, you can also create multiple **prompt** dialogs of the same type. For example, you could create two **TextPrompt** dialogs for the example above:
 
 # [C#](#tab/csharptab)
 
@@ -343,7 +343,7 @@ You can use the same technique to validate prompt responses for any of the promp
 
 ## Save user data
 
-When you prompt for user input, you have several options on how to handle that input. For instance, you can consume and discard the input, you can save it to a global variable, you can save it to a volatile or in-memory storage container, you can save it to a file, or you can save it to an external database. For more information on how to save user data, see [Manage user data].(bot-builder-howto-v4-state.md)
+When you prompt for user input, you have several options on how to handle that input. For instance, you can consume and discard the input, you can save it to a global variable, you can save it to a volatile or in-memory storage container, you can save it to a file, or you can save it to an external database. For more information on how to save user data, see [Manage user data].(bot-builder-howto-v4-state.md).
 
 ## Next steps
 
