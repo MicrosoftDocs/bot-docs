@@ -86,7 +86,9 @@ dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
 # [JavaScript](#tab/jstab)
 
 ```javascript
-dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
+const {TextPrompt} = require("botbuilder-dialogs");
+
+dialogs.add('textPrompt', new TextPrompt());
 ```
 
 ---
@@ -124,19 +126,22 @@ dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
 // Greet user:
 // Ask for the user name and then greet them by name.
 dialogs.add('greetings', [
-    function (context){
-        return dialogs.prompt(context, 'textPrompt', 'What is your name?');
+    async function (dc){
+        await dc.prompt('textPrompt', 'What is your name?');
     },
-    function(context, userName){
-        context.reply(`Hello ${userName}!`);
-        dialogs.end(context);
+    async function(dc, userName){
+        await dc.context.sendActivity(`Hi ${userName}!`);
+        await dc.end();
     }
 ]);
 
-dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
+dialogs.add('textPrompt', new TextPrompt());
 ```
 
 ---
+
+> [!NOTE]
+> For more information on how to run a dialog from your bot follow this link. [Start a Dialog](./bot-builder-dialog-manage-conversation-flow.md#start-a-dialog)
 
 ## Reusable prompts
 
@@ -213,8 +218,8 @@ dialogs.Add("workplacePrompt", new Builder.Dialogs.TextPrompt());
 # [JavaScript](#tab/jstab)
 
 ```javascript
-dialogs.add('namePrompt', new botbuilder_dialogs.TextPrompt());
-dialogs.add('workPlacePrompt', new botbuilder_dialogs.TextPrompt());
+dialogs.add('namePrompt', new TextPrompt());
+dialogs.add('workPlacePrompt', new TextPrompt());
 ```
 
 ---
