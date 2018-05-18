@@ -1,5 +1,5 @@
 ---
-title: Download the source code for a Bot Service | Microsoft Docs
+title: Download and redeploy the source code for a Bot Service | Microsoft Docs
 description: Learn how to download and publish a Bot Service.
 author: v-ducvo
 ms.author: v-ducvo
@@ -9,7 +9,7 @@ ms.prod: bot-framework
 ms.date: 03/08/2018
 ---
 
-# Download Bot Service source code
+# Download and redeploy Bot Service source code
 
 Bot Service allows you to download the entire source project for your bot. This allows you to work on your bot locally using an IDE of your choice. Once you are done making changes, you can publish your changes back to Azure. 
 
@@ -33,11 +33,9 @@ When you are ready, you can publish the sources back to Azure.
 
 ## Publish Node bot source code to Azure
 
-First you must prepare your project to publish the sources back to Azure. To do this, you must add the following NPM packages to your project directory. 
+To install these packages, browse to your project directory from a command prompt and run the following NPM commands.
 
 **Note:** These packages only need to be added once.
-
-Run the **Node.js command prompt** and enter the following commands.
 
 ```console
 npm install --save fs
@@ -46,15 +44,14 @@ npm install --save request
 npm install --save zip-folder
 ```
 
-Now you are ready to publish your project to Microsoft Azure. To publish your project to Microsoft Azure, perform the following steps:
-
-1. Run the **Node.js command prompt** as an administrator.
-2. Change the directory to your project directory.
-3. Enter the following NPM command to publish your project to Microsoft Azure:
+Now you are ready to publish your project to Microsoft Azure. To publish your project to Microsoft Azure, run the following NPM command in the cmd prompt:
 
 ```console
 npm run azure-publish
 ```
+
+> [!NOTE]
+> If you run into an error after this NPM command you may need to add `"scripts": {"azure-publish": "node publish.js"}` to your `package.json` file and run it again.
 
 ## Publish C# bot source code to Azure
 
