@@ -18,12 +18,20 @@ One of the basic requirements in writing your own QnA Maker service is to seed i
 
 ## Create a QnA Maker service
 First create an account and sign in at [QnA Maker](https://qnamaker.ai/). Then navigate to **Create a knowledge base**. Click **Create a QnA service** and follow the instructions for creating an Azure QnA service.
- 
+
 ![Image 1 for qna](media/QnA_1.png)
 
-After you connect your Azure QnA service, then you can add new QnA pairs. Click **Create your KB**. Enter your own question and answers or copy the following examples. 
+You will be redirected to [Create QnA Maker](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker). Complete the form and click **Create**.
 
 ![Image 2 for qna](media/QnA_2.png)
+ 
+After you create your QnA service in the Azure Portal you will be given keys under the Resource Management heading that you may disregard. Proceed to step 2 to connect your Azure QnA service. Refresh the page to select the Azure service you just created and enter the name of your knowledge base.
+
+![Image 3 for qna](media/QnA_3.png)
+
+Click **Create your KB**. Enter your own question and answers or copy the following examples. 
+
+![Image 4 for qna](media/QnA_4.png)
 
 Alternatively, you can choose **Populate your KB** and provide a file or URL. A sample source file for generating a simple QnA Maker service is [here](https://aka.ms/qna-tsv).
 
@@ -31,7 +39,7 @@ After adding new QnA pairs or populating your KB, click **Save and train**. Once
 
 To connect your QnA service to your bot, you will need the HTTP request string containing the knowledge base ID and QnA Maker subscription key. Copy the example HTTP request from the publishing result. 
 
-![Image 3 for qna](media/QnA_3.png)
+![Image 5 for qna](media/QnA_5.png)
 
 ## Installing Packages
 
@@ -266,7 +274,7 @@ server.post('/api/messages', (req, res) => {
 
 Ask your bot questions to see the replies from your QnA Maker service.
 
-![Image 4 for qna](media/QnA_4.png)
+![Image 6 for qna](media/QnA_6.png)
 
 
 
