@@ -19,12 +19,9 @@ Handling user interrupt is an important aspect of a robust bot. While you may th
 
 There is no right answer to these questions as each situation is unique to the scenario your bot is designed to handle. In this topic, we will explore some common ways to handle user interruptions and suggest some ways to implement them in your bot.
 
-> [!NOTE]
-> The full code sample used in this article can be found at [Dialog flow](#)
-
 ## Handle expected interruptions
 
-Procedural conversation flows have a core set of steps that you want to lead the user through. Any user actions that break this flow are potential interruptions. In a normal flow, there are interruptions that you can anticipate. Take the following situations for example.
+A procedural conversation flow has a core set of steps that you want to lead the user through, and any user actions that vary from those steps are potential interruptions. In a normal flow, there are interruptions that you can anticipate.
 
 **Table reservation**
 In a table reservation bot, the core steps may be to ask the user for a date and time, the size of the party, and the reservation name. In that process, some expected interruptions you could anticipate may include: 
@@ -43,6 +40,30 @@ In an order dinner bot, the core steps would be to provide a list of menu items 
 You could provide these to the user as a list of **suggested actions** or as a hint so the user is at least aware of what commands they can send that the bot would understand.
 
 For example, in the order dinner flow, you can provide expected interruptions along with the menu items. In this case, the menu items are sent as an array of `choices`.
+
+# [C#](#tab/csharptab)
+
+```cs
+public class dinnerItem
+{
+    public string Description;
+    public double Price;
+}
+
+public class dinnerMenu
+{
+    static public Dictionary<string, dinnerItem> dinnerChoices = new Dictionary<string, dinnerItem>
+    {
+        { "potato salad", new dinnerItem { Description="Potato Salad", Price=5.99 } },
+        { "tuna sandwich", new dinnerItem { Description="Tuna Sandwich", Price=6.89 } },
+        { "clam chowder", new dinnerItem { Description="Clam Chowder", Price=4.50 } }
+    };
+
+    static public string[] choices = new string[] {"Potato Salad", "Tuna Sandwich", "Clam Chowder", "more info", "Process order", "help", "Cancel"};
+}
+```
+
+# [JavaScript](#tab/jstab)
 
 ```javascript
 var dinnerMenu = {
@@ -63,7 +84,154 @@ var dinnerMenu = {
 }
 ```
 
-Then, in your ordering logic, you can check for them using string matching or regular expressions.
+---
+
+In your ordering logic, you can check for them using string matching or regular expressions.
+
+# [C#](#tab/csharptab)
+
+First, we need to define a helper to keep track of our orders
+
+```cs
+// Helper class for storing the order in the dictionary
+public class Orders
+{
+    public double total;
+    public string order;
+    public bool processOrder;
+
+    // Initialize order values
+    public Orders()
+    {
+        total = 0;
+        order = "";
+        processOrder = false;
+    }
+}
+```
+
+Then, add the dialog to your bot.
+
+```cs
+dialogs.Add("orderPrompt", new WaterfallStep[]
+{
+    async (dc, args, next) =>
+    {
+        // Prompt the user
+        await dc.Prompt("choicePrompt",
+            "What would you like for dinner?",
+            new ChoicePromptOptions
+            {
+                Choices = dinnerMenu.choices.Select( s => new Choice { Value = s }).ToList(),
+                RetryPromptString = "I'm sorry, I didn't understand that. What would you " +
+                    "like for dinner?"
+            });
+    },
+    async(dc, args, next) =>
+    {
+        var convo = ConversationState<Dictionary<string,object>>.Get(dc.Context);
+
+        // Get the user's choice from the previous prompt
+        var response = (args["Value"] as FoundChoice).Value.ToLower();
+
+        if(response == "process order")
+        {
+            try 
+            {
+                var order = convo["order"];
+
+                await dc.Context.SendActivity("Order is on it's way!");
+                
+                // In production, you may want to store something more helpful, 
+                // such as send order off to be made
+                (order as Orders).processOrder = true;
+
+                // Once it's submitted, clear the current order
+                convo.Remove("order");
+                await dc.End();
+            }
+            catch
+            {
+                await dc.Context.SendActivity("Your order is empty, please add your order choice");
+                // Ask again
+                await dc.Replace("orderPrompt");
+            }
+        }
+        else if(response == "cancel" )
+        {
+            // Get rid of current order
+            convo.Remove("order");
+            await dc.Context.SendActivity("Your order has been canceled");
+            await dc.End();
+        }
+        else if(response == "more info")
+        {
+            // Send more information about the options
+            var msg = "More info: <br/>" +
+                "Potato Salad: contains 330 calaries per serving. Cost: 5.99 <br/>"
+                + "Tuna Sandwich: contains 700 calaries per serving. Cost: 6.89 <br/>"
+                + "Clam Chowder: contains 650 calaries per serving. Cost: 4.50";
+            await dc.Context.SendActivity(msg);
+
+            // Ask again
+            await dc.Replace("orderPrompt");
+        }
+        else if(response == "help")
+        {
+            // Provide help information
+            await dc.Context.SendActivity("To make an order, add as many items to your cart as " +
+                "you like then choose the \"Process order\" option to check out.");
+
+            // Ask again
+            await dc.Replace("orderPrompt");
+        }
+        else
+        {
+            // Unlikely to get past the prompt verification, but this will catch 
+            // anything that isn't a valid menu choice
+            if(!dinnerMenu.dinnerChoices.ContainsKey(response))
+            {
+                await dc.Context.SendActivity("Sorry, that is not a valid item. " +
+                    "Please pick one from the menu.");
+    
+                // Ask again
+                await dc.Replace("orderPrompt");
+            }
+            else {
+                // Add the item to cart
+                Orders currentOrder;
+
+                // If there is a current order going, add to it. If not, start a new one
+                try
+                {
+                    currentOrder = convo["order"] as Orders;
+                }
+                catch
+                {
+                    convo["order"] = new Orders();
+                    currentOrder = convo["order"] as Orders;
+                }
+
+                // Add to the current order
+                currentOrder.order += (dinnerMenu.dinnerChoices[$"{response}"].Description) + ", ";
+                currentOrder.total += (double)dinnerMenu.dinnerChoices[$"{response}"].Price;
+
+                // Save back to the conversation state
+                convo["order"] = currentOrder;
+
+                await dc.Context.SendActivity($"Added to cart. Current order: " +
+                    $"{currentOrder.order} " +
+                    $"<br/>Current total: ${currentOrder.total}");
+
+                // Ask again to allow user to add more items or process order
+                await dc.Replace("orderPrompt");
+            }
+        }
+    }
+});
+```
+
+# [JavaScript](#tab/jstab)
 
 ```javascript
 // Helper dialog to repeatedly prompt user for orders
@@ -131,6 +299,8 @@ dialogs.add('orderPrompt', [
 ]);
 ```
 
+---
+
 ## Handle unexpected interruptions
 
 There are interruptions that are out of scope of what your bot is designed to do.
@@ -138,19 +308,32 @@ While you cannot anticipate all interruptions, there are patterns of interruptio
 
 ### Switching topic of conversations
 What if the user is in the middle of one conversation and wants to switch to another conversation? For example, your bot can reserve a table and order dinner.
-While the user is in the _reserve a table_ flow, instead of answering the question for "How many people are in your party?", the user sends the message "order dinner". The user, in this case, changed their mind and wants to engage in a dinner ordering conversation instead. How should you handle this interruption? 
+While the user is in the _reserve a table_ flow, instead of answering the question for "How many people are in your party?", the user sends the message "order dinner". In this case, the user changed their mind and wants to engage in a dinner ordering conversation instead. How should you handle this interruption? 
 
-The choice is up to you. You can switch topics to the order dinner flow or you can make it a sticky issue by telling the user that you are expecting a number and reprompt them. If you do allow them to switch topics, you then have to decide if you will save the progress so that the user can pick up from where they left off or you could delete all the information you have collected so that they will have to start that process all over next time they want to reserve a table. For more information about managing user state data, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
+You can switch topics to the order dinner flow or you can make it a sticky issue by telling the user that you are expecting a number and reprompt them. If you do allow them to switch topics, you then have to decide if you will save the progress so that the user can pick up from where they left off or you could delete all the information you have collected so that they will have to start that process all over next time they want to reserve a table. For more information about managing user state data, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
 
 ### Apply artificial intelligence
-For interruptions that are not in scope, you can try to guess what the user intent is. You can do this using AI services such as QnAMaker, LUIS, or your custom logic. Then offer up suggestions for what the bot thinks the user wants. For example, while in the middle of the reserve table flow, the user says, "I want to order a burger". This is not something the bot knows how to handle from this conversation flow. Since the current flow has nothing to do with ordering, and the bot's other conversation command is "order dinner", the bot does not know what to do with this input. If you apply LUIS, for example, you could train the model to recognize that they want to order food (e.g.: LUIS can return an "orderFood" intent). Thus, the bot could response with, "It seems you want to order food. Would you like to switch to our order dinner process instead?" For more information on training LUIS and detecting user intents, see [User LUIS for language understanding](bot-builder-howto-v4-luis.md).
+For interruptions that are not in scope, you can try to guess what the user intent is. You can do this using AI services such as QnAMaker, LUIS, or your custom logic, then offer up suggestions for what the bot thinks the user wants. 
+
+For example, while in the middle of the reserve table flow, the user says, "I want to order a burger". This is not something the bot knows how to handle from this conversation flow. Since the current flow has nothing to do with ordering, and the bot's other conversation command is "order dinner", the bot does not know what to do with this input. If you apply LUIS, for example, you could train the model to recognize that they want to order food (e.g.: LUIS can return an "orderFood" intent). Thus, the bot could response with, "It seems you want to order food. Would you like to switch to our order dinner process instead?" For more information on training LUIS and detecting user intents, see [User LUIS for language understanding](bot-builder-howto-v4-luis.md).
 
 ### Default response
 If all else fails, you can send a generic default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
-You can check against the `context.responded` object at the end of the `adapter.processActivity` call to see if the bot sent anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
+You can check against the context **responded** flag at the end of the bot logic to see if the bot sent anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
 
-The default for this bot is to give the user the `mainMenu` again. It's up to you to decide what experience your user will have in this situation for your bot.
+The default for this bot is to give the user the `mainMenu` dialog. It's up to you to decide what experience your user will have in this situation for your bot.
+
+# [C#](#tab/csharptab)
+
+```cs
+if(!context.Responded)
+{
+    await dc.EndAll().Begin("mainMenu");
+}
+```
+
+# [JavaScript](#tab/jstab)
 
 ```javascript
 // Check to see if anyone replied. If not then clear all the stack and present the main menu
@@ -159,4 +342,5 @@ if (!context.responded) {
 }
 ```
 
-## Next step
+---
+
