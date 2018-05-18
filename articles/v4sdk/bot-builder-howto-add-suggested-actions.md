@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 ## Send suggested actions
 
-You can a list of suggested actions (also known as "quick replies") that will be shown to the user for a single turn of the conversation:
+You can create a list of suggested actions (also known as "quick replies") that will be shown to the user for a single turn of the conversation:
 
 # [C#](#tab/csharp)
 
