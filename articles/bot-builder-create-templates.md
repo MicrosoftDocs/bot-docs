@@ -25,9 +25,9 @@ The Node.js, Java and Python templates all create a simple echo bot, and are all
 - [Node.js](https://nodejs.org/en/) v 8.5 or greater
 - [Yeoman](http://yeoman.io/)
 
-If you haven't already installed Yeoman, it needs to be installed globally:
+If you haven't already installed Yeoman, it needs to be installed globally.
 
-```
+```shell
 npm install -g yo
 ```
 
@@ -36,24 +36,24 @@ From the command line, cd into a new folder of your choosing. There are two avai
 
 To install the **Node.js v3 Botbuilder** template generator:
 
-```
+```shell
 npm install generator-botbuilder
 ```
 
 To install the **Node.js v4 Botbuilder** template generator:
-```
+```shell
 npm install generator-botbuilder@preview
 ```
 
 The Python and Java templates are **only available in v4**. 
 
 For **Python**:
-```
+```shell
 npm install generator-botbuilder-python
 ```
 
 For **Java**:
-```
+```shell
 npm install generator-botbuilder-java
 ```
 
@@ -68,7 +68,7 @@ Switch to a working directory of your choice, and select the generator to use. Y
 
 ## .NET
 
-Two templates are available for .NET, targetting the **v3** and **v4** versions of the SDK respectively. Both are available as [VSIX](https://docs.microsoft.com/en-us/visualstudio/extensibility/anatomy-of-a-vsix-package) packages,  to download click one of the following links on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/): 
+Two templates are available for .NET, targetting the **v3** and **v4** versions of the SDK respectively. Both are available as [VSIX](https://docs.microsoft.com/en-us/visualstudio/extensibility/anatomy-of-a-vsix-package) packages,  to download click one of the following links on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 - [BotBuilder V3 Template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3)
 - [BotBuilder V4 Template](https://aka.ms/Ylcwxk)
@@ -119,14 +119,14 @@ msbot connect [Service]
 
 With the MSBot tool installed, you can easily connect your bot to an existing resource group in the Azure Bot Service by running the az bot **show** command. 
 
-```shell
+```azurecli
 az bot show -n <botname> -g <resourcegroup> --msbot | msbot connect azure --stdin
 ```
 
 This will take the current endpoint, MSA appID and password from the target resource group, and update the information accordingly in your .bot file. 
 
 
-## 5. Manage, Update or Create LUIS and QnA services with  new botbuilder-tools
+## Manage, Update or Create LUIS and QnA services with  new botbuilder-tools
 
 [Bot builder tools](https://github.com/microsoft/botbuilder-tools) is a new toolset which allows you to manage and interact with your bot resources directly from the command line. 
 
@@ -150,7 +150,7 @@ You can define [intents](https://docs.microsoft.com/en-us/azure/cognitive-servic
 
 For example, you can create multiple LUIS intents in a single .lu file as follows: 
 
-```
+```LUDown
 # Greeting
 Hi
 Hello
@@ -167,16 +167,17 @@ please help
 
 The .lu file format supports also QnA pairs using the following notation: 
 
-```markdown
-> ### ? question ?
+```LUDown
+> comment
+### ? question ?
   ```markdown
     answer
   ```
 
 The LUDown tool will automatically separate question and answers into a qnamaker JSON file that you can then use to create your new [QnaMaker.ai](http://qnamaker.ai) knowledge base.
 
-```markdown
-> ### ? How do I change the default message for QnA Maker?
+```LUDown
+### ? How do I change the default message for QnA Maker?
   ```markdown
   You can change the default message if you use the QnAMakerDialog. 
   See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details. 
@@ -184,7 +185,7 @@ The LUDown tool will automatically separate question and answers into a qnamaker
 
 You can also add multiple questions to the same answer by simply adding new lines of variations of questions for a single answer. 
 
-```markdown
+```LUDown
 ### ? What is your name?
 - What should I call you?
   ```markdown
@@ -232,14 +233,14 @@ luis <action> <resource> <args...>
 To connect your bot to LUIS, you will need to create a **.luisrc** file. This is a configuration file which provisions your LUIS appID and password to the service endpoint when your application makes outbound calls. You can create this file by running **luis init** as follows:
 
 ```shell
-> luis init
+luis init
 ```
 You will be prompted in the terminal to enter your LUIS authoring key, region, and appID before the tool will generate the file.  
 
 ![LUIS init](media/bot-builder-tools/luis-init.png) 
 
 
-Once this file is generated, your application will be able to consume the LUIS .json file (generated from LUDown) using the following command from the CLI: 
+Once this file is generated, your application will be able to consume the LUIS .json file (generated from LUDown) using the following command from the CLI.
 
 ```shell
 luis import application --in luis-app.json | msbot connect luis --stdin
@@ -247,21 +248,21 @@ luis import application --in luis-app.json | msbot connect luis --stdin
 
 ### Connect to QnA from the CLI
 
-Included in the new tool set is a [QnA extension](https://github.com/Microsoft/botbuilder-tools/tree/master/QnAMaker) which allows you to independently manage your LUIS resources. It is available as an npm module which you can download:
+Included in the new tool set is a [QnA extension](https://github.com/Microsoft/botbuilder-tools/tree/master/QnAMaker) which allows you to independently manage your LUIS resources. It is available as an npm module which you can download.
 
-```
+```shell
 npm install -g qnamaker
 ```
 With the QnA maker tool, you can create, update, publish, delete, and train your knowledge base. To get started, you need to create a **.qnamakerrc** file is required to enable the endpoint to your service. You can easily create this file by running **qnamaker init** and following the prompts and provision your QnA Maker knowledge base ID. 
 
-```
+```shell
 qnamaker init 
 ```
 ![QnaMaker init](media/bot-builder-tools/qnamaker-init.png)
 
-Once your .qnamakerrc file is generated, you can now connect to your QnA knowledge base to consume the knowledge base .json/.tsv file (generated from LUDown) using the following command:
+Once your .qnamakerrc file is generated, you can now connect to your QnA knowledge base to consume the knowledge base .json/.tsv file (generated from LUDown) using the following command.
 
-```
+```shell
 qnamaker create --in qnaKB.json --msbot | msbot connect qna --stdin
 ```
 

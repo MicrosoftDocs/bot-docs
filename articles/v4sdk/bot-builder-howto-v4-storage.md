@@ -20,7 +20,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 You can write directly to storage without using the context object or middleware, by reading and writing directly to your storage object.
 
-This code example shows you how to read and write data to storage. In this example the storage is a file, but you can easily change the code to initialze the storage object to use memory storage of Azure Table Storage instead. 
+This code example shows you how to read and write data to storage. In this example the storage is a file, but you can easily change the code to initialize the storage object to use memory storage of Azure Table Storage instead. 
 
 # [C#](#tab/csharpechorproperty)
 We'll define an object and use `IStorage.Write` and `IStorage.Read` to save and retreive state. 
@@ -142,31 +142,31 @@ public class EchoBot : IBot
 
 The following sample adds every message from the the user to a list. The data structure containing the list is saved to a file within the directory you provide to the `FileStorage` constructor.
 
+Paste the following into `app.js`.
 ``` javascript
-// paste the following into app.js
 const { BotFrameworkAdapter, FileStorage, MemoryStorage, ConversationState, BotStateSet } = require('botbuilder');
 const restify = require('restify');
 
-// Create server
+// Create server.
 let server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log(`${server.name} listening to ${server.url}`);
 });
 
-// Create adapter
+// Create adapter.
 const adapter = new BotFrameworkAdapter({
     appId: process.env.MICROSOFT_APP_ID,
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
-// Add storage
+// Add storage.
 var storage = new FileStorage("C:/temp");
 const conversationState = new ConversationState(storage);
 adapter.use(new BotStateSet(conversationState));
 
-// Listen for incoming activity 
+// Listen for incoming activities.
 server.post('/api/messages', (req, res) => {
-    // Route received activity to adapter for processing
+    // Route received activity to adapter for processing.
     adapter.processActivity(req, res, async (context) => {
         if (context.activity.type === 'message') {
             const state = conversationState.get(context);
@@ -225,9 +225,9 @@ Set the eTag to `*` to allow other instances of the bot to overwrite previously 
 This is shown in the following code example.
 
 # [C#](#tab/csetagoverwrite)
-Using the `UtteranceLog` class that we defined earlier.
+Use the `UtteranceLog` class that we defined earlier.
 ```csharp
-// add the current utterance to a new object and save it to storage.
+// Add the current utterance to a new object and save it to storage.
 logItems = new UtteranceLog();
 logItems.UtteranceList.Add(utterance);
 logItems.eTag = "*";
@@ -240,7 +240,7 @@ await _myStorage.Write(changes);
 
 ```
 # [JavaScript](#tab/jstagoverwrite)
-Adding a new utterance to the log and allow overwrite.
+Add a new utterance to the log and allow overwrite.
 
 ```javascript
 storeItems["UtteranceLog"] = { UtteranceList: [`${utterance}`], "eTag": "*" }
@@ -302,7 +302,7 @@ var myNote = {
     eTag: "*"
 }
 ```
-Next, initialize a `changes` object and add your *notes* to it then write it to storage.
+Next, initialize a `changes` object and add your *notes* to it, then write it to storage.
 
 ```javascript
 // Write a note
@@ -338,7 +338,7 @@ If the note was updated in the store before you write your changes, the call to 
 
 ---
 
-To maintain concurrency, always read a property from storage, then modify the property you read, so that the `eTag` is maintained. If you read user data from the store, the response will contain the eTag property. If you change the data and write updated data to the store, your request should include the eTag property that specifies the same value as you read earlier. However, writing an object with its `eTag` set to `*` will allow the write to clobber any other changes.
+To maintain concurrency, always read a property from storage, then modify the property you read, so that the `eTag` is maintained. If you read user data from the store, the response will contain the eTag property. If you change the data and write updated data to the store, your request should include the eTag property that specifies the same value as you read earlier. However, writing an object with its `eTag` set to `*` will allow the write to overwrite any other changes.
 
 <!-- If the ETag specified in your `Storage.Write()` request matches the current value in the store, the server will save the data and specify a new eTag value in the body of the response, that indicates that the data has been updated. If the ETag specified in your Storage.Write() request does not match the current value in the store, the bot responds with an error indicating an eTag conflict, to indicate that the user's data in the store has changed since you last saved or retrieved it. -->
 
