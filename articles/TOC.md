@@ -13,7 +13,7 @@
 # Tutorials
 ## [Ask the user questions](v4sdk/bot-builder-tutorial-waterfall.md)
 ## [Persist user data from a conversation](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
-## [Add authenticaion to your bot via Azure Bot Service](bot-builder-tutorial-authentication.md)
+## [Add authentication to your bot via Azure Bot Service](bot-builder-tutorial-authentication.md)
 ## [Add translation to make your bot multilingual](v4sdk/bot-builder-howto-translation.md)
 ## [Use the Dispatch tool for LUIS and QnA Maker](v4sdk/bot-builder-tutorial-dispatch.md)
 ## [Create bots with Azure CLI](bot-builder-tools-az-cli.md)
