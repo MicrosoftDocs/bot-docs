@@ -124,7 +124,7 @@ because QnA Maker does not inherently understand the meaning of words, i.e., it 
 
 Some knowledge bots require natural language processing (NLP) capabilities so that they can 
 analyze a user's messages to determine the user's intent. 
-Language Understanding (LUIS) provides a fast and effective means of adding NLP capabilities to bots. 
+[Language Understanding (LUIS)](https://www.luis.ai) provides a fast and effective means of adding NLP capabilities to bots. 
 LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs, as well as allowing you to create specialized models of your own. 
 
 When working with huge datasets, it's not necessarily feasible to train an NLP model with every variation of an entity. 
