@@ -13,7 +13,6 @@
 ## [Add suggested actions to messages](bot-framework-rest-connector-add-suggested-actions.md)
 ## [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md)
 ## [Manage state data](bot-framework-rest-state.md)
-## [API reference](bot-framework-rest-connector-api-reference.md)
 # Direct Line API 3.0
 ## [Key concepts](bot-framework-rest-direct-line-3-0-concepts.md)
 ## [Authentication](bot-framework-rest-direct-line-3-0-authentication.md)

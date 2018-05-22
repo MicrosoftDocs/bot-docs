@@ -84,7 +84,7 @@ When initializing the state middleware, an optional _state settings_ parameter a
 * If more than one instance of the bot writes to a property, allow the last instance of the bot to overwrite the previous one.
 
 ## Use conversation and user state properties 
-<!-- middleware and message context -->
+<!-- middleware and message context properties -->
 
 Once the state manager middleware has been configured, you can get the conversation state and user state properties from the context object.
 <!-- Changes are written to storage before the `SendActivity()` pipeline completes. -->

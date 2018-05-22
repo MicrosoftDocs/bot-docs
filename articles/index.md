@@ -140,6 +140,7 @@ ms.date: 05/03/2018
                         <h3>APIs</h3>
                         <p><a href="https://aka.ms/dotnetsdk4">.NET</a></p>
                         <p><a href="https://aka.ms/jssdk4">JavaScript</a></p>
+                        <p><a href="/bot-framework/rest-api/bot-framework-rest-connector-api-reference">REST</a></p>
                     </div>
                 </div>
             </div>

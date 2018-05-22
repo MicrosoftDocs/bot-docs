@@ -94,7 +94,7 @@ Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to th
 
 ## Next steps
 
-Next, jump into the concepts that explain a bot and how it works.
+Next, [deploy your bot to azure](../bot-builder-howto-deploy-azure.md) or jump into the concepts that explain a bot and how it works.
 
 > [!div class="nextstepaction"]
 > [Basic Bot concepts](../v4sdk/bot-builder-basics.md)

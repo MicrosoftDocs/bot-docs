@@ -71,6 +71,9 @@ When the user replies to the bot's prompt for the city, the receive handler for 
 
 See [Managing state](bot-builder-storage-concept.md) for an overview of managing state, and see [How to use user and conversation properties](bot-builder-howto-v4-state.md) for an example.
 
+> [!NOTE]
+> Multi-turn conversations with REST API clients will need to keep track of their own state, for example in a database or table storage. 
+
 ## Conversation topics
 
 You might design your bot to handle more than one type of task. For example, you might have a bot that provides different conversation flows for greeting the user, placing an order, canceling, and getting help. One way to handle this switch between conversation for different tasks or conversation topics is to recognize the intent (what the user wants to do) from the current message. 
