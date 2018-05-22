@@ -40,6 +40,7 @@ Before writing code, review the bot [design guidelines](bot-service-design-pri
 > - [QnA Maker](https://qnamaker.ai/) to respond to user's questions in a more natural, conversational way
 > - [Speech](https://azure.microsoft.com/services/cognitive-services/speech/) to convert audio to text, understand intent, and convert text back to speech  
 > - [Spelling](https://azure.microsoft.com/services/cognitive-services/spell-check/) to correct spelling errors, recognize the difference among names, brand names, and slang 
+> - [Cognitive Services](bot-service-concept-intelligence.md) for various other intelligent components 
 
 
 ## Build your bot 

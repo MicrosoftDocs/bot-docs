@@ -83,7 +83,19 @@ For a complete sample that shows how to hand off conversations from bot to human
 
 ## Additional resources
 
-- [TODO](~/dotnet/bot-builder-dotnet-dialogs.md)
+::: moniker range="azure-bot-service-4.0"
+
+- [Dialogs](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
+- <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="blank">Text Analytics API</a>
+
+::: moniker-end
+
+::: moniker range="azure-bot-service-3.0"
+
 - [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="blank">Text Analytics API</a>
+
+
+::: moniker-end
 

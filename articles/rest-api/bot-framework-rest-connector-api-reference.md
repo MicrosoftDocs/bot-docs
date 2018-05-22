@@ -11,6 +11,9 @@ ms.date: 12/13/2017
 
 # API reference
 
+> [!NOTE]
+> The REST API is not equivalent to the SDK. The REST API is provided to allow standard REST communication, however the preferred method of interacting with the Bot Framkework is the SDK. 
+
 Within the Bot Framework, the Bot Connector service enables your bot to exchange messages with users on channels that are configured in the Bot Framework Portal and the Bot State service enables your bot to store and retrieve state data that is related to the conversations that your bot conducts using the Bot Connector service. Both services use industry-standard REST and JSON over HTTPS.
 
 > [!IMPORTANT]
