@@ -9,52 +9,46 @@ ms.prod: bot-framework
 ms.date: 4/10/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-
 # Prompt users for input
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
+Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using the turn context object's _send activity_ method to ask for a string input; however, the Bot Builder SDK provides a **dialogs** library that you can use to ask for different types for information. This topic details how to use **prompts** to ask a user for input.
 
-Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using _send activity_ to ask for a string input; however, the Bot Builder SDK provides a **prompts** library that you can use to ask for different types for information. This topic details how to use **prompts** library to ask user for input.
-
-> [!NOTE]
-> This article uses and refers to **dialogs**, but doesn't cover anything about them or how they work. For details on that, check out [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
+This article describes how to use prompts within a dialog. For information on using dialogs in general, see [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 ## Prompt types
 
-The prompt library offers a number of different types of prompts, each requesting a different type of response.
+The dialogs library offers a number of different types of prompts, each requesting a different type of response.
 
 | Prompt | Description |
-| ----- | ----- |
-| **AttachmentPrompt** | Prompt the user to send an attachment such as a document or image. |
-| **ChoicePrompt** | Prompt the user with a predefined list of choices. |
-| **ConfirmPrompt** | Prompt the user to confirm their action with a yes/no response. |
-| **DatetimePrompt** | Prompt the user for a date and time. Users can respond using natural language such as "Tomorrow at 8pm" or "Friday at 10am". For more information about date and time, see [builtin.datetimev2](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2). |
-| **NumberPrompt** | Prompt the user for a number. The user can respond with either "10" or "ten". If the response is "ten", for example, the prompt will convert the response into a number and return "10" as a result. |
+|:----|:----|
+| **AttachmentPrompt** | Prompt the user for an attachment such as a document or image. |
+| **ChoicePrompt** | Prompt the user to choose from a set of options. |
+| **ConfirmPrompt** | Prompt the user to confirm their action. |
+| **DatetimePrompt** | Prompt the user for a date-time. Users can respond using natural language such as "Tomorrow at 8pm" or "Friday at 10am". The Bot Framework SDK uses the LUIS `builtin.datetimeV2` prebuilt entity. For more information, see [builtin.datetimev2](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2). |
+| **NumberPrompt** | Prompt the user for a number. The user can respond with either "10" or "ten". If the response is "ten", for example, the prompt will convert the response into a number and return `10` as a result. |
 | **TextPrompt** | Prompt user for a string of text. |
 
 ## Add references to prompt library
 
-You can get the **prompts** library by adding the **dialogs** package to your bot. We cover dialogs in [another topic](bot-builder-dialog-manage-conversation-flow.md), but we'll use dialogs for our prompts.
+You can get the **dialogs** library by adding the **dialogs** package to your bot. We cover dialogs in [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md), but we'll use dialogs for our prompts.
 
-# [C#](#tab/csharptab)
+# [C#](#tab/csharp)
 
-Install the **Microsoft.Bot.Builder.Dialogs** package from Nuget, then include it within your bot logic definition.
+Install the **Microsoft.Bot.Builder.Dialogs** package from Nuget.
+
+Then, include reference the library from your bot code.
 
 ```cs
-// ...
 using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Bot.Builder.Prompts;
-// ...
 ```
-
-Then, use dialogs in your bot code. For example:
 
 ```cs
 DialogSet dialogs = new DialogSet();
 ```
 
-# [JavaScript](#tab/jstab)
+# [JavaScript](#tab/javascript)
 
 Install the dialogs package from NPM:
 
@@ -62,9 +56,9 @@ Install the dialogs package from NPM:
 npm install --save botbuilder-dialogs
 ```
 
-To use **dialogs** in your bot, include it in the bot code. For example:
+To use **dialogs** in your bot, include it in the bot code.
 
-**app.js**
+In the app.js file, add the following.
 
 ```javascript
 const {DialogSet} = require("botbuilder-dialogs");
@@ -75,36 +69,19 @@ const dialogs = new DialogSet();
 
 ## Prompt the user
 
-To prompt user for input, you can add a dialog that takes a prompt instead of a function or array of functions. For example, you can define a prompt dialog of type **TextPrompt** and give it a *dialogId* of `textPrompt`:
+To prompt a user for input, you can add a prompt to your dialog. For example, you can define a prompt of type **TextPrompt** and give it a dialog ID of **textPrompt**:
 
-# [C#](#tab/csharptab)
+Once a prompt dialog is added, you can use it in a simple two step waterfall dialog or use multiple prompts together in a multi-step waterfall. A *waterfall* dialog is simply a way to define a sequence of steps. For more information, see the [using dialogs](bot-builder-dialog-manage-conversation-flow.md#using-dialogs-to-guide-the-user-through-steps) section of [manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
+
+For example, the following dialog prompts the user for their name and then greets them by name:
+
+# [C#](#tab/csharp)
 
 ```csharp
 dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
-```
-
-# [JavaScript](#tab/jstab)
-
-```javascript
-const {TextPrompt} = require("botbuilder-dialogs");
-
-dialogs.add('textPrompt', new TextPrompt());
-```
-
----
-
-
-Once a prompt dialog is added, you can use it in a simple two step **waterfall** or string the prompts in multiple steps of a **waterfall**. A **waterfall** is simply a way to put multiple steps together that happen sequentially. For more information, take a look at the [dialogs page](bot-builder-dialog-manage-conversation-flow.md#create-a-dialog-with-waterfall-steps).
-
-
-For example, the following dialogs prompt the user for their name and then greet them by name:
-
-# [C#](#tab/csharptab)
-
-```csharp
 dialogs.Add("greetings", new WaterfallStep[]
 {
-    // Each step takes in a dialog context, arguments, and the next delegate
+    // Each step takes in a dialog context, arguments, and the next delegate.
     async (dc, args, next) =>
     {
         // Prompt for the guest's name.
@@ -116,15 +93,18 @@ dialogs.Add("greetings", new WaterfallStep[]
         await dc.End();
     }
 });
-
-dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
 ```
 
-# [JavaScript](#tab/jstab)
+# [JavaScript](#tab/javascript)
+
+```javascript
+const {TextPrompt} = require("botbuilder-dialogs");
+```
 
 ```javascript
 // Greet user:
 // Ask for the user name and then greet them by name.
+dialogs.add('textPrompt', new TextPrompt());
 dialogs.add('greetings', [
     async function (dc){
         await dc.prompt('textPrompt', 'What is your name?');
@@ -134,23 +114,21 @@ dialogs.add('greetings', [
         await dc.end();
     }
 ]);
-
-dialogs.add('textPrompt', new TextPrompt());
 ```
 
 ---
 
 > [!NOTE]
-> For more information on how to run a dialog from your bot follow this link. [Start a Dialog](./bot-builder-dialog-manage-conversation-flow.md#start-a-dialog)
+> To start a dialog, get a dialog context, and use its _begin_ method. For more information, see [use dialogs to managed conversation flow](./bot-builder-dialog-manage-conversation-flow.md).
 
 ## Reusable prompts
 
-A **prompt** dialog can be reused to ask for different information using the same type of prompt. For example, the sample code above defines a `TextPrompt` that is used to ask the user for their name. If you wanted to, for example, you can also use that same prompt to ask the user for another text string; such as, "Where do you work?".
+A prompt can be reused to ask for different information using the same type of prompt. For example, the sample code above defines a `TextPrompt` that is used to ask the user for their name. If you wanted to, for example, you can also use that same prompt to ask the user for another text string; such as, "Where do you work?".
 
-# [C#](#tab/csharptab)
+# [C#](#tab/csharp)
 
 ```cs
-
+dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
 dialogs.Add("greetings", new WaterfallStep[]
 {
     async (dc, args, next) =>
@@ -163,7 +141,7 @@ dialogs.Add("greetings", new WaterfallStep[]
         // The args input can be named whatever you'd like. Since we know
         // it will be a name here, let's call in name
         await dc.Context.SendActivity($"Hi {name["Text"]}!");
-        
+
         // Ask them where they work
         await dc.Prompt("textPrompt", "Where do you work?");
     },
@@ -174,16 +152,15 @@ dialogs.Add("greetings", new WaterfallStep[]
         await dc.End();
     }
 });
-
-dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
 ```
 
-# [JavaScript](#tab/jstab)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 // Greet user:
 // Ask for the user name and then greet them by name.
 // Ask them where they work.
+dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 dialogs.add('greetings',[
     async function (dc){
         await dc.prompt('textPrompt', 'What is your name?');
@@ -200,22 +177,20 @@ dialogs.add('greetings',[
         await dc.end();
     }
 ]);
-
-dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
 ```
 
 ---
 
 However, if you wish to pair the prompt to the expected value that prompt is asking, you could give each prompt a unique *dialogId*. A dialog is added with a unique ID. Using different IDs, you can also create multiple **prompt** dialogs of the same type. For example, you could create two **TextPrompt** dialogs for the example above:
 
-# [C#](#tab/csharptab)
+# [C#](#tab/csharp)
 
 ```cs
 dialogs.Add("namePrompt", new Builder.Dialogs.TextPrompt());
 dialogs.Add("workplacePrompt", new Builder.Dialogs.TextPrompt());
 ```
 
-# [JavaScript](#tab/jstab)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 dialogs.add('namePrompt', new TextPrompt());
@@ -226,11 +201,90 @@ dialogs.add('workPlacePrompt', new TextPrompt());
 
 For the sake of code reusability, defining a single `textPrompt` would work for all these three prompts because they ask for a text string as a response. However, where the ability to name dialogs come in handy is when you need to validate the input of the prompt. In which case, the prompts may be using **TextPrompt** but each is looking for a different set of values. Lets take a look at how you can validate prompt responses using a `NumberPrompt`.
 
-## Validate prompt response
+## Specify prompt options
+
+When you use a prompt within a dialog step, you can also provide prompt options, such as a reprompt string.
+
+Specifying a reprompt string is useful when user input can fail to satisfy a prompt, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria.
+
+# [C#](#tab/csharp)
+
+```csharp
+dialogs.Add("numberPrompt", new NumberPrompt<int>(Culture.English));
+```
+
+```csharp
+await dc.Prompt("numberPrompt","How many people are in your party?", new PromptOptions()
+{
+    RetryPromptString = "Sorry, please specify the number of people in your party."
+});
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+const {NumberPrompt} = require("botbuilder-dialogs");
+```
+
+```javascript
+await dc.prompt('numberPrompt', 'How many people in your party?', { retryPrompt: `Sorry, please specify the number of people in your party.` })
+```
+
+```javascript
+dialogs.add('numberPrompt', new NumberPrompt());
+```
+
+---
+
+In particular, the choice prompt requires some additional information, the list of choices available to the user.
+
+# [C#](#tab/csharp)
+
+The **ChoicePromptOptions** class derives from the **PromptOptions** class.
+The **ChoiceFactory** helps create a **Choice** list for the **Choices** property.
+
+```csharp
+using ChoiceFactory = Microsoft.Bot.Builder.Prompts.Choices.ChoiceFactory;
+```
+
+```csharp
+dialogs.Add("choicePrompt", new NumberPrompt<int>(Culture.English));
+```
+
+```csharp
+// A choice prompt requires that you specify choice options.
+var list = new List<string> { "green", "blue" };
+var choices = ChoiceFactory.ToChoices(list);
+await dc.Prompt("choicePrompt","Please make a choice.", new ChoicePromptOptions()
+{
+    Choices = ChoiceFactory.ToChoices(list),
+    RetryPromptActivity = MessageFactory.SuggestedActions(list, "Please choose a color.") as Activity
+});
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+const {ChoicePrompt} = require("botbuilder-dialogs");
+```
+
+```javascript
+dialogs.add('choicePrompt', new ChoicePrompt());
+```
+
+```javascript
+// A choice prompt requires that you specify choice options.
+const list = ['green', 'blue'];
+await dc.prompt('choicePrompt', 'Please make a choice', list, {retryPrompt: 'Please choose a color.'});
+```
+
+---
+
+## Validate a prompt response
 
 You can validate a prompt response before returning the valid value to the next step of the **waterfall**. For example, to validate a **NumberPrompt** within a range of numbers between **6** and **20**, you can have validation logic similar to this:
 
-# [C#](#tab/csharptab)
+# [C#](#tab/csharp)
 
 ```cs
 // As second argument when creating number prompt, specify the validation
@@ -268,7 +322,7 @@ Within your bot logic, add:
 dialogs.Add("number", new Builder.Dialogs.NumberPrompt<int>(Culture.English, NumberValidator));
 ```
 
-# [JavaScript](#tab/jstab)
+# [JavaScript](#tab/javascript)
 
 ```javascript
 // Customized prompts with validations
@@ -295,7 +349,7 @@ dialogs.add('partySizePrompt', new botbuilder_dialogs.NumberPrompt( async (conte
 
 Likewise, if you want to validate a **DatetimePrompt** response for a date and time in the future, you can have validation logic similar to this:
 
-# [C#](#tab/csharptab)
+# [C#](#tab/csharp)
 
 ```cs
 dialogs.Add("datetimePrompt", new Builder.Dialogs.DateTimePrompt(Culture.English, async (context, result) =>
@@ -320,7 +374,7 @@ dialogs.Add("datetimePrompt", new Builder.Dialogs.DateTimePrompt(Culture.English
 
 Further examples can be found in our [samples repo](https://github.com/Microsoft/botbuilder-dotnet).
 
-# [JavaScript](#tab/jstab)
+# [JavaScript](#tab/javascript)
 
 ```JavaScript
 // A date and time prompt with validation for date/time in the future.
@@ -337,11 +391,12 @@ dialogs.add('dateTimePrompt', new botbuilder_dialogs.DatetimePrompt( async (cont
     }
 }));
 ```
+
 Further examples can be found in our [samples repo](https://github.com/Microsoft/botbuilder-js).
+
 ---
 
-> [!TIP] 
->
+> [!TIP]
 > Date time prompts can resolve to a few different dates if the user gives an ambigious answer. Depending on what you're using it for, you may want to check all the resolutions provided by the prompt result, instead of just the first.
 
 You can use the same technique to validate prompt responses for any of the prompt types.
