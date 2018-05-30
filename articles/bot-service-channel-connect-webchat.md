@@ -72,6 +72,32 @@ Authorization: BotConnector YOUR_SECRET_HERE
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 ```
 
+##### Example html code
+```html
+<!DOCTYPE html>
+<html>
+<body>
+  <iframe id="chat" style="width: 400px; height: 400px;" src=''></iframe>
+</body>
+<script>
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
+    xhr.setRequestHeader('Authorization', 'BotConnector ' + 'YOUR SECRET HERE');
+    xhr.send();
+    xhr.onreadystatechange = processRequest;
+
+    function processRequest(e) {
+      if (xhr.readyState == 4  && xhr.status == 200) {
+        var response = JSON.parse(xhr.responseText);
+        document.getElementById("chat").src="https://webchat.botframework.com/embed/lucas-direct-line?t="+response
+      }
+    }
+
+  </script>
+</html>
+```
+
 ### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
 Use this option if you want to allow other developers to easily embed your bot into their websites. 
