@@ -21,7 +21,7 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 - [Node.js](https://nodejs.org/en/)
 - [Yeoman](http://yeoman.io/), which can use a generator to create a bot for you
 - [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator)
-- Knowledge of [restify](https://http://restify.com/) and asynchronous programming in JavaScript
+- Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
 
 The Bot Builder SDK for JavaScript consists of a series of [packages](https://github.com/Microsoft/botbuilder-js/tree/master/libraries) which can be installed from NPM using a special `@preview` tag.
 
