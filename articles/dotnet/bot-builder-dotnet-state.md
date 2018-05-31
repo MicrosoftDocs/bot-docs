@@ -63,7 +63,7 @@ For performance and security reasons in the production environment, you may impl
 
 2. [Manage state data with Table storage](bot-builder-dotnet-state-azure-table-storage.md)
 
-With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as the in-memory data storage.
+With either of these [Azure Extensions](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure/) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as the in-memory data storage.
 
 ## Bot state methods
 
