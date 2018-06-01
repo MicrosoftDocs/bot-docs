@@ -172,7 +172,7 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 "channelData": {
     "notification_type": "NO_PUSH",
     "attachment": {
-        "type": "template"
+        "type": "template",
         "payload": {
             "template_type": "receipt",
             . . .
