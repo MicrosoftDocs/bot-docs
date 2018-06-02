@@ -22,7 +22,7 @@ Log in to the [Azure portal](http://portal.azure.com).
 
 ## Create a new bot service
 
-1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Cognitive Services > Web App bot**. 
+1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**. 
 
 2. A new blade will open with information about the **Web App Bot**.  
 
@@ -72,7 +72,7 @@ In this topic, you learned how to create a **Basic** Web App Bot/Functions Bot b
 # Create a bot with Bot Service
 [!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
-Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the **Bot Builder SDK v4 (preview)**.
+Azure Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the preview version of the Bot Builder SDK v4.
 
 ## Log in to Azure
 Log in to the [Azure portal](http://portal.azure.com).
@@ -82,7 +82,7 @@ Log in to the [Azure portal](http://portal.azure.com).
 
 ## Create a new bot service
 
-1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Cognitive Services > Web App bot**. 
+1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**. 
 
 2. A new blade will open with information about the **Web App Bot**.  
 
