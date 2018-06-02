@@ -43,6 +43,7 @@ These libraries are used for communication with the database, and enable use of 
 
 Use of a configuration file is good practice for several reasons, so we'll use one here. Our configuration data is short and simple, however you can add other configuration settings to this as your bot gets more complex.
 
+# [C#](#tab/cs)
 1. Add a file to your project named `app.config`.
 2. Save the following information to it. The endpoint and key are defined for the local emulator, but can be updated for your Cosmos DB instance.
     ```
@@ -54,18 +55,50 @@ Use of a configuration file is good practice for several reasons, so we'll use o
         </appSettings>
     </configuration>
     ```
+# [JavaScript](#tab/js)
+1. Add a file to your project named `config.js`.
+2. Save the following information to it. The endpoint and key are defined for the local emulator, but can be updated for your Cosmos DB instance.
+    ```javascript
+        var config = {}
+
+        config.EmulatorServiceEndpoint = "https://localhost:8081";
+        config.EmulatorAuthKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWE+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
+        config.database = {
+            "id": "Tasks"
+        };
+        config.collection = {
+            "id": "Items"
+        };
+
+        module.exports = config;
+    ```
+
+---
 
 If you are using an actual Cosmos DB, you can replace the values of the two keys above with the values you have in your Cosmos DB settings. Alternatively, you can add two more keys to your configuration, allowing you to switch between the emulator for testing and your actual Cosmos DB, such as:
 
+# [C#](#tab/cs)
 ```
     <add key="ActualDbUrl" value="<your database URI>"/>
     <add key="ActualDbKey" value="<your database key>"/>
 ```
+ If you do add two additional keys and want to use the actual database, be sure to specify the correct key in the constructor below instead of `EmulatorDbUrl` and `EmulatorDbKey`.
 
-If you do add two additional keys and want to use the actual database, be sure to specify the correct key in the constructor below instead of `EmulatorDbUrl` and `EmulatorDbKey`.
+# [JavaScript](#tab/js)
+```
+    config.ActualServiceEndpoint = "your database URI;
+    config.ActualAuthKey = "your database key";
+```
+
+If you do add two additional keys and want to use the actual database, be sure to specify the correct key in the constructor below instead of `EmulatorServiceEndpoint` and `EmulatorAuthKey`.
+
+---
+
+
 
 ## Creating your middleware
 
+# [C#](#tab/cs)
 Before we start writing the actual middleware logic, create a new class in your bot project for the middleware. Once you have that class, change the namespace to what we use for the rest of our bot, `Microsoft.Bot.Samples`. Here you'll see we added references to a few new libraries:
 
 * `Newtonsoft.Json;`
@@ -96,8 +129,21 @@ namespace Microsoft.Bot.Samples
         ...
 ```
 
+# [JavaScript](#tab/js)
+Before we start writing the actual middleware logic, we need to create our custom Middleware that will start with `onTurn()`. 
+
+```javascript
+adapter.use({onTurn: async (context, next) =>{
+    // Middleware logic here...
+}})
+    
+```
+
+---
+
 #### Defining local variables
 
+# [C#](#tab/cs)
 Next, we need local variables for manipulating our database and a class to store the information we want to log. That information class, which we call `Log`, defines what the JSON properties associated with each member will be named. We'll get back to that further on.
 
 ```cs
@@ -120,8 +166,27 @@ Next, we need local variables for manipulating our database and a class to store
     }
 ```
 
+# [JavaScript](#tab/js)
+Next, we need a local variable to store our information that we want to log. In the middleware we must access conversationState which has Cosmos DB as the storage provider. The variable `info` will be the state's object that we will read and write to. 
+
+```javascript
+// Add conversation state middleware
+const conversationState = new ConversationState(storage);
+adapter.use(conversationState);
+
+adapter.use({onTurn: async (context, next) =>{
+
+    const info = conversationState.get(context);
+    // More middleware logic 
+}})
+```
+
+--- 
+
+
 #### Initialize database connection
 
+# [C#](#tab/cs)
 Our constructor of this middleware takes care of pulling the necessary information out of our configuration file defined above and creating the `DocumentClient`, which allows us to read and write from our database. We also make sure our database and collection are set up.
 
 Proper use of a new `DocumentClient` requires it to be disposed of, so our destructor does just that.
@@ -191,10 +256,28 @@ The definition of `Key`, `Endpoint`, and `docClient` were included in a snippet 
     }
 ```
 
+# [JavaScript](#tab/js)
+Creation of our database depends on attempting to do a basic read of first our database, then the collection within that database. If we hit `undefined`, we catch that and create an object called `log` that will be set to an empty array. In most cases `log` will already be created, but for the sake of this sample this allows us to not worry about the creation of that database before first run. In the sample code, we check to see if `info.log` is undefined. If so set it to an empty array.
+
+```javascript
+adapter.use({onTurn: async (context, next) =>{
+
+    const info = conversationState.get(context);
+
+    if(info.log == undefined){
+        info.log = [];
+    }
+
+    // More bot logic below
+}})
+```
+---
+
 #### Read from database logic
 
 The last helper function reads from our database and returns the most recent specified number of records. It's worth noting that there are better database practices for retrieving data than we use here, particularly when your data store is significantly larger.
 
+# [C#](#tab/cs)
 ```cs
     public async Task<string> ReadFromDatabase(int numberOfRecords)
     {
@@ -222,11 +305,43 @@ The last helper function reads from our database and returns the most recent spe
     }
 ```
 
+# [JavaScript](#tab/js)
+
+The code below is still within the `onTurn()` function and will be called if the user inputs the string "history".
+
+```javascript
+adapter.use({onTurn: async (context, next) =>{
+
+    const utterance = (context.activity.text || '').trim().toLowerCase();
+    const isMessage = context.activity.type === 'message';
+    const info = conversationState.get(context);
+
+    if(info.log == undefined){
+        info.log = [];
+    }
+
+    if(isMessage && utterance == 'history'){
+        // Loop through the info.log array
+        var logHistory = "";
+        for(var i = 0; i < info.log.length; i++){
+            logHistory += info.log[i] + " ";
+        }
+        await context.sendActivity(logHistory);
+        // Short circuit the middleware
+        return
+    }
+    //...
+}})
+
+```
+
+---
+
 #### Define OnTurn()
 
 The standard middleware method `OnTurn()` then handles the rest of the work. We only want to log when the current activity is a message, which we check for both before and after calling `next()`.
 
-The first thing we check is if this is our special case message, where the user is asking for the most recent history. If so, we call `ReadFromDatabase(3)` to get the three most recent records, and send that to the conversation. Since that completely handles the current activity, we short circuit the pipeline instead of passing on execution.
+The first thing we check is if this is our special case message, where the user is asking for the most recent history. If so, we call read from our database to get the most recent records, and send that to the conversation. Since that completely handles the current activity, we short circuit the pipeline instead of passing on execution.
 
 To get the response that bot sends, we create a handler every time we recieve a message to grab those responses, which can be seen in the lambda we give to `OnSendActivity()`. It builds a string to collect all the messages sent through `SendActivity()` for this context object.
 
@@ -234,6 +349,7 @@ Once execution returns up the pipeline from `next()`, we assemble our log data a
 
 Look in the Cosmos DB data explorer after a few messages are sent to this bot, and you should see your data in individual records. When examining one of these records, you should see that the first three items are the three values of our log data, named as the string we specified for their respective `JsonProperty`.
 
+# [C#](#tab/cs)
 ```cs
     public async Task OnTurn
         (ITurnContext context, MiddlewareSet.NextDelegate next)
@@ -289,6 +405,49 @@ Look in the Cosmos DB data explorer after a few messages are sent to this bot, a
         }
     }
 ```
+
+# [JavaScript](#tab/js)
+
+Building off from our `onTurn` function described above.
+
+```javascript
+adapter.use({onTurn: async (context, next) =>{
+
+    const utterance = (context.activity.text || '').trim().toLowerCase();
+    const isMessage = context.activity.type === 'message';
+    const info = conversationState.get(context);
+
+    if(info.log == undefined){
+        info.log = [];
+    }
+
+    if(isMessage && utterance == 'history'){
+        // Loop through info.log 
+        var logHistory = "";
+        for(var i = 0; i < info.log.length; i++){
+            logHistory += info.log[i] + " ";
+        }
+        await context.sendActivity(logHistory);
+        // Short circuit the middleware
+        return
+    } else if(isMessage){
+        // Store the users response
+        info.log.push(`Message was: ${context.activity.text}`); 
+
+        await context.onSendActivities(async (handlerContext, activities, handlerNext) => 
+        {
+            // Store the bot's reply
+            info.log.push(`Reply was: ${activities[0].text}`);
+            
+            await handlerNext(); 
+        });
+        await next();
+    }
+}})
+
+```
+
+---
 
 ## Sample output
 
