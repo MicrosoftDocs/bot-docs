@@ -63,6 +63,18 @@ To generate a MicrosoftAppPassword, do the following:
 2. Click **Generate New Password**. This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later. <br/>
   ![Generate Microsoft App Password](~/media/azure-bot-quickstarts/registration-generate-app-password.png)
 
+## Update the bot
+
+If you're using the Bot Builder SDK for Node.js, set the following environment variables:
+
+* MICROSOFT_APP_ID
+* MICROSOFT_APP_PASSWORD
+
+If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
+
+* MicrosoftAppId
+* MicrosoftAppPassword
+
 ## Test the bot
 
 Now that your bot service is created, [test it in Web Chat](bot-service-manage-test-webchat.md). Enter a message and your bot should respond.
