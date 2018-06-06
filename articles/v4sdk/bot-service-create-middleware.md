@@ -59,7 +59,7 @@ adapter.use(MyOtherMiddleware());
 
 ## Implementing your Middleware
 
-Each piece of middleware inherits from a middlware interface, and always implements it's processing handler, which is run on every activity that gets sent to your bot. For each piece of middleware added, the processing handler gets a chance to modify the context object or perform a task, such as logging, before allowing other middleware or bot logic to interact with the context object as it continues down the pipeline.
+All middleware implements the `IMiddleware` interface, whose `OnProcessRequest` is run for every activity sent to your bot. Within `OnProcessRequest` your logic can modify the context object or perform some task, such as logging or state management, before continuing to other middleware or bot logic.
 
 # [C#](#tab/csetagoverwrite)
 
