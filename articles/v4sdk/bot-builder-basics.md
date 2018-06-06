@@ -23,7 +23,7 @@ A bot can be created in a variety of ways, such as within the [Azure portal](htt
 
 ## Interaction with your bot
 
-A bot inherintly doesn't have any visible UI in the way a website or app does, and instead is interacted with through a [coversation](bot-concepts.md#activities-and-conversations) with the user. Depending on where the user is connected from (which we call a [channel](bot-concepts.md), but we won't get into that here), certain information is sent back and forth between the user and your bot.
+A bot inherintly doesn't have any visible UI in the way a website or app does, and instead is interacted with through a [conversation](bot-concepts.md#activities-and-conversations) with the user. Depending on where the user is connected from (which we call a [channel](bot-concepts.md), but we won't get into that here), certain information is sent back and forth between the user and your bot.
 
 Each unit of information is called an **activity** within our bot, and an activity can come in various forms. Activities include both communication from the user, which is referred to as a **message**, or additional information wrapped up in a handful of other [activity types](../bot-service-activities-entities.md). This additional information can include when a new party joins or leaves the conversation, when a conversation ends, etc. Those types of communication from the user's connection are sent by the underlying system, without the user needing to do anything.
 
