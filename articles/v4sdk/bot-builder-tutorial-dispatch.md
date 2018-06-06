@@ -24,6 +24,9 @@ Imagine you've developed the following services, and you want to create a bot th
 
 Let's first create the apps and services, then integrate them together.
 
+> [!NOTE]
+> All three apps need to be created within the same Azure location for Dispatch to access them successfully. Our example Dispatch code below uses the example location West US.
+
 ## Create the LUIS apps
 
 The fastest way to create the HomeAutomation and Weather LUIS apps is to download the [homeautomation.json][HomeAutomationJSON] and [weather.json][WeatherJSON] files. Then go to the [LUIS website](https://www.luis.ai/home) and sign in. Click on **My Apps** > **Import new app** and choose the homeautomation.json file. Name the new app `homeautomation`. Click on **My Apps** > **Import new app** and choose the weather.json file. Name this other new app `weather`.
