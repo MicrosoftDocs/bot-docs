@@ -86,7 +86,7 @@ The `GeoCoordinates` object contains these properties:
 | Type | type of the entity ("GeoCoordinates") |
 | Name | name of the place |
 | Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
-| Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
+| Latitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 | Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 
 This code example shows how to add a `Place` entity to the `Entities` collection:
