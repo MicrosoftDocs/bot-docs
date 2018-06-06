@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Conversation flow
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Since a bot can be thought of as a conversational user interface, the flow of conversation is how we interact with the user and can take different forms. Having the right conversation flow helps improve the user's interaction and the performance of your bot.
+Since a bot can be thought of as a conversational user interface, the conversation flow is how we interact with the user and can take different forms. Having the right conversation flow helps improve the user's interaction and the performance of your bot.
 
 Designing a bot's conversation flow involves deciding how a bot responds when the user says something to it. A bot first recognizes the task or conversation topic based on a message from the user. To determine the task or topic (known as the *intent*) associated with a user's message, the bot can look for words or patterns in the text of the user's message, or it can take advantage of services like [Language Understanding (LUIS)](bot-builder-concept-luis.md) and QnA Maker. 
 
@@ -27,7 +27,7 @@ A bot communicates with a user on a channel by receiving activities from, and se
 
 - Each user has an ID that is unique per channel.
 - Each conversation has an ID that is unique per channel.
-- The channel sets the conversation ID when it starts the conversion.
+- The channel sets the conversation ID when it starts the conversation.
 - The bot cannot start a conversation; however, once it has a conversation ID, it can resume that conversation.
 - Not all channels support group conversations.
 -->
@@ -131,12 +131,12 @@ The Bot Builder SDK has some built-in support for Language Understatnding (LUIS)
 -->
 ## Conversations, channels, and users
 
-Conversations can either a _direct_ conversation with a specific user or a _group_ conversation with multiple users.
+Conversations can be either a _direct_ conversation with a specific user or a _group_ conversation with multiple users.
 A bot communicates with a user on a channel by receiving activities from, and sending activities to the user.
 
 - Each user has an ID that is unique per channel.
 - Each conversation has an ID that is unique per channel.
-- The channel sets the conversation ID when it starts the conversion.
+- The channel sets the conversation ID when it starts the conversation.
 - The bot cannot start a conversation; however, once it has a conversation ID, it can resume that conversation.
 - Not all channels support group conversations.
 
