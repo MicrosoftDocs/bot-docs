@@ -152,15 +152,15 @@ For example, you can create multiple LUIS intents in a single .lu file as follow
 
 ```LUDown
 # Greeting
-Hi
-Hello
-Good morning
-Good evening
+- Hi
+- Hello
+- Good morning
+- Good evening
 
 # Help
-help
-I need help
-please help
+- help
+- I need help
+- please help
 ```
 
 ### QnA pairs with LUDown
