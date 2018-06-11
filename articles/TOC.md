@@ -62,6 +62,7 @@
 ### [Create modular bot logic](v4sdk/bot-builder-compositcontrol.md)
 ### [Use SDK v3 bot](v4sdk/bot-builder-howto-classic.md)
 ### [Using direct line](v4sdk/bot-builder-howto-direct-line.md)
+### [Implement channel-specific functionality](v4sdk/bot-builder-channeldata.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
 ### [REST](rest-api/TOC.md)

@@ -8,27 +8,26 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 03/01/2018
 ---
-
 # Entities and activity types
 
 Entities are a part of an activity, and provide additional information about the activity or conversation.
 
-[!include[Entity boilerplate](includes/snippet-entity-boilerplate.md)] 
+[!include[Entity boilerplate](includes/snippet-entity-boilerplate.md)]
 
 ## Entities
 
-The *Entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a> 
+The *Entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a>
 objects which allows the exchange of common contextual metadata between the channel and bot.
 
 ### Mention entities
 
-Many channels support the ability for a bot or user to "mention" someone within the context of a conversation. 
-To mention a user in a message, populate the message's entities property with a *mention* object. 
-The mention object contains these properties: 
+Many channels support the ability for a bot or user to "mention" someone within the context of a conversation.
+To mention a user in a message, populate the message's entities property with a *mention* object.
+The mention object contains these properties:
 
-| Property | Description | 
+| Property | Description |
 |----|----|
-| Type | type of the entity ("mention") | 
+| Type | type of the entity ("mention") |
 | Mentioned | channel account object that indicates which user was mentioned | 
 | Text | text within the *activity.text* property that represents the mention itself (may be empty or null) |
 
@@ -62,29 +61,29 @@ entity = [mention];
 
 ### Place objects
 
-<a href="https://schema.org/Place" target="_blank">Location-related information</a> can be conveyed 
-within a message by populating the message's entities property with either 
-a *Place* object or a *GeoCoordinates* object. 
+<a href="https://schema.org/Place" target="_blank">Location-related information</a> can be conveyed
+within a message by populating the message's entities property with either
+a *Place* object or a *GeoCoordinates* object.
 
 The place object contains these properties:
 
-| Property | Description | 
+| Property | Description |
 |----|----|
 | Type | type of the entity ("Place") |
-| Address | description or postal address object (future) | 
-| Geo | GeoCoordinates | 
+| Address | description or postal address object (future) |
+| Geo | GeoCoordinates |
 | HasMap | URL to a map or map object (future) |
 | Name | name of the place |
 
 The geoCoordinates object contains these properties:
 
-| Property | Description | 
+| Property | Description |
 |----|----|
 | Type | type of the entity ("GeoCoordinates") |
 | Name | name of the place |
-| Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
-| Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
-| Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
+| Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
+| Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
+| Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
 
 This code example shows how to add a place entity to the entities collection:
 
@@ -112,6 +111,7 @@ entity = [place];
 ### Consume entities
 
 # [C#](#tab/cs)
+
 To consume entities, use either the `dynamic` keyword or strongly-typed classes.
 
 This code example shows how to use the `dynamic` keyword to process an entity within the `Entities` property of a message:
@@ -123,7 +123,9 @@ This code example shows how to use a strongly-typed class to process an entity w
 [!code-csharp[examine entity using typed class](includes/code/dotnet-create-messages.cs#examineEntity2)]
 
 # [JavaScript](#tab/js)
+
 This code example shows how to process an entity within the `entity` property of a message:
+
 ```javascript
 if (entity[0].type === "GeoCoordinates" && entity[0].latitude > 34) {
     // do something
@@ -137,6 +139,7 @@ if (entity[0].type === "GeoCoordinates" && entity[0].latitude > 34) {
 This code example show how to process an activity of type **message**:
 
 # [C#](#tab/cs)
+
 ```cs
 if (context.Activity.Type == ActivityTypes.Message){
     // do something
@@ -144,6 +147,7 @@ if (context.Activity.Type == ActivityTypes.Message){
 ```
 
 # [JavaScript](#tab/js)
+
 ```js
 if(context.activity.type === 'message'){
     // do something
@@ -169,8 +173,17 @@ Activities can be of several different types past the most common **message**. T
 
 ## message
 
-Your bot will send message activities to communicate information to and receive message activities from users. 
-Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](v4sdk/bot-builder-howto-send-messages.md#send-a-spoken-message), [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card), and [channel-specific data](dotnet/bot-builder-dotnet-channeldata.md).
+<!-- Only the last link is different. -->
+::: moniker range="azure-bot-service-3.0"
+Your bot will send message activities to communicate information to and receive message activities from users.
+Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](v4sdk/bot-builder-howto-send-messages.md#send-a-spoken-message), [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card),
+and [channel-specific data](~/dotnet/bot-builder-dotnet-channeldata.md).
+::: moniker-end
+::: moniker range="azure-bot-service-4.0"
+Your bot will send message activities to communicate information to and receive message activities from users.
+Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](v4sdk/bot-builder-howto-send-messages.md#send-a-spoken-message), [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card),
+and [channel-specific data](~/v4sdk/bot-builder-channeldata.md).
+::: moniker-end
 
 ## contactRelationUpdate
 
@@ -178,21 +191,21 @@ A bot receives a contact relation update activity whenever it is added to or rem
 
 ## conversationUpdate
 
-A bot receives a conversation update activity whenever it has been added to a conversation, 
-other members have been added to or removed from a conversation, 
-or conversation metadata has changed. 
+A bot receives a conversation update activity whenever it has been added to a conversation,
+other members have been added to or removed from a conversation,
+or conversation metadata has changed.
 
-If members have been added to the conversation, the activity's members added property will contain an array of 
-channel account objects to identify the new members. 
+If members have been added to the conversation, the activity's members added property will contain an array of
+channel account objects to identify the new members.
 
-To determine whether your bot has been added to the conversation (i.e., is one of the new members), evaluate whether the recipient Id value for the activity (i.e., your bot's id) 
+To determine whether your bot has been added to the conversation (i.e., is one of the new members), evaluate whether the recipient Id value for the activity (i.e., your bot's id)
 matches the Id property for any of the accounts in the members added array.
 
-If members have been removed from the conversation, the members removed property will contain an array of channel account objects to identify the removed members. 
+If members have been removed from the conversation, the members removed property will contain an array of channel account objects to identify the removed members.
 
 > [!TIP]
-> If your bot receives a conversation update activity indicating that a user has joined the conversation, 
-> you may choose to have it respond by sending a welcome message to that user. 
+> If your bot receives a conversation update activity indicating that a user has joined the conversation,
+> you may choose to have it respond by sending a welcome message to that user.
 
 ## deleteUserData
 
