@@ -21,13 +21,13 @@ To add the Skype channel, open the bot in the [Azure Portal](https://portal.azur
 
 To embed the bot into your website, you can get the code by click the **Get embed code** button from the **Web control** section.
 
-## Messaging 
+## Messaging
 
-This section configures how your bot sends and received messages in Skype.
+This section configures how your bot sends and receives messages in Skype.
 
 ## Calling
 
-This section configures the calling feature of Skype in your bot. You can specify whether **Calling** is enabled fo your bot and if enabled, whether IVR functionality or Real Time Media functionality is to be used.
+This section configures the calling feature of Skype in your bot. You can specify whether **Calling** is enabled for your bot and if enabled, whether IVR functionality or Real Time Media functionality is to be used.
 
 ## Groups
 
@@ -37,7 +37,7 @@ This section configures whether your bot can be added to a group and how it beha
 
 This section configures the publish settings of your bot. All fields labeled with a * are required fields.
 
-Bots in **Preview** are limited to 100 contacts. If you need more than 100 contacts, submit your bot for review. Clicking **Submit for Review** will automatically make your bot searchable in Skype if accepted. If your request cannot be approved, you will be notified as to what you need to change before it can be approved. 
+Bots in **Preview** are limited to 100 contacts. If you need more than 100 contacts, submit your bot for review. Clicking **Submit for Review** will automatically make your bot searchable in Skype if accepted. If your request cannot be approved, you will be notified as to what you need to change before it can be approved.
 
 ## Next steps
 
