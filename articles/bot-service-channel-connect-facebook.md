@@ -40,7 +40,7 @@ Set the "Allow API Access to App Settings" slider to "Yes".
 ## Enable messenger
 
 Enable Facebook Messenger in the new Facebook App. 
-* On the **Product Setup** page of the app, click **Get Started** and then click **Get Started** again. 
+* On the **Dashboard** page of the app, under the **Add a Product** section, click Messenger’s **Set Up**. 
 
 ![Enable messenger](~/media/channels/FB-AddMessaging1.png)
 
@@ -64,10 +64,15 @@ Return to the [Bot Framework Portal](https://dev.botframework.com/). Open the bo
 ![Copy values](~/media/channels/fb-callbackVerify.png)
 
 1. Return to Facebook Messenger and paste the **Callback URL** and **Verify Token** values.
-2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_optins*, and *messaging_postbacks*.
-3. Click **Verify and Save**. 
+2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_options*, and *messaging_postbacks*.
+3. Click **Verify and Save**.
 
 ![Configure webhook](~/media/channels/FB-webhookConfig.png)
+
+4. Subscribe the webhook to the Facebook page.
+
+![Subscribe webhook](~/media/bot-service-channel-connect-facebook/subscribe-webhook.png)
+
 
 ## Provide Facebook credentials
 On the Bot Framework Portal, paste the **Page ID**, **App ID**, **App Secret**, and **Page Access Token** values copied from Facebook Messenger previously.

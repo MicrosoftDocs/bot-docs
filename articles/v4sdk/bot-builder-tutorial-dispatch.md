@@ -33,7 +33,7 @@ The fastest way to create the HomeAutomation and Weather LUIS apps is to downloa
 
 ## Create the QnA Maker service
 
-Go to the [QnA Maker website](https://qnamaker.ai) and sign in. Select **Create new service** and create a new service named "FAQ". Click the **Select file** button and upload the [sample TSV file][FAQ_TSV]. Click **Create**, and once the service is created, click **Publish**.
+Go to the [QnA Maker website](https://qnamaker.ai) and sign in. Select **Create a knowledge base** and create a new knowledge base named "FAQ". Click the **Select file** button and upload the [sample TSV file][FAQ_TSV]. Click **Create**, and once the service is created, click **Publish**.
 
 ## Use the Dispatch tool to create the dispatcher LUIS app
 
