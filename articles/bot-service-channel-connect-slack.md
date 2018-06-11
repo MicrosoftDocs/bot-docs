@@ -31,9 +31,9 @@ Click **Create App**. Slack will create your app and generate a Client ID and Cl
 
 Next you will add a new Redirect URL.
 
-1. Select the **OAuth & Permissions** tab. 
+1. Select the **OAuth & Permissions** tab.
 2. Click **Add a new Redirect URL**.
-3. Enter https://slack.botframework.com. 
+3. Enter https://slack.botframework.com.
 4. Click **Add**.
 5. Click **Save URLs**.
 
@@ -54,12 +54,12 @@ Click **Add Bot User** to validate your settings, click **Always Show My Bot as 
 
 ## Subscribe to Bot Events
 
-Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify. 
+Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify.
 
-> [!TIP] 
-> Your bot handle is a property of your bot. To find a bot's handle, 
+> [!TIP]
+> Your bot handle is a property of your bot. To find a bot's handle,
 > visit [https://dev.botframework.com/bots](https://dev.botframework.com/bots),
-> choose a bot, and click **SETTINGS**. 
+> choose a bot, and click **SETTINGS**.
 
 1. Select the **Event Subscriptions** tab.
 2. Click **Enable Events** to **On**.
@@ -89,7 +89,7 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 
 ## Gather credentials
 
-Select the **Basic Information** tab and scroll to the **App Credentials** section. 
+Select the **Basic Information** tab and scroll to the **App Credentials** section.
 The Client ID, Client Secret, and Verification Token required for configuration of your Slack bot are displayed.
 
 ![Gather credentials](~/media/channels/slack-AppCredentials.png)
@@ -100,28 +100,28 @@ In a separate browser window, return to the Bot Framework site at `https://dev.b
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
 2. In the **Add a channel** section, click the Slack icon.
-3. In the **Enter your Slack credentials** section, paste the App Credentials from the Slack website into the appropriate fields. 
+3. In the **Enter your Slack credentials** section, paste the App Credentials from the Slack website into the appropriate fields.
 4. The **Landing Page URL** is optional. You may omit or change it.
 5. Click **Save**.
 
 ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
 
-Follow the instructions to authorize your Slack app's access to your Development Slack Team. 
+Follow the instructions to authorize your Slack app's access to your Development Slack Team.
 
 ## Enable the bot
-On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**. 
+
+On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**.
 Your bot is configured to communicate with users in Slack.
 
 ## Create an Add to Slack button
 
-Slack provides HTML you can use to help Slack users find your bot in the 
+Slack provides HTML you can use to help Slack users find your bot in the
 *Add the Slack button* section of [this page](https://api.slack.com/docs/slack-button).
-To use this HTML with your bot, replace the href value (begins with `https://`) with the URL found your bot's Slack channel settings.
+To use this HTML with your bot, replace the href value (begins with `https://`) with the URL found in your bot's Slack channel settings.
 Follow these steps to get the replacement URL.
 
-1. On [https://dev.botframework.com/bots](https://dev.botframework.com/bots), click your bot. 
-2. Click **CHANNELS**, right-click the entry named **Slack**, and click **Copy link**. This URL is now in your clipboard. 
+1. On [https://dev.botframework.com/bots](https://dev.botframework.com/bots), click your bot.
+2. Click **CHANNELS**, right-click the entry named **Slack**, and click **Copy link**. This URL is now in your clipboard.
 3. Paste this URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
- 
