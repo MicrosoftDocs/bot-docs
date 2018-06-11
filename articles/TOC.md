@@ -30,6 +30,7 @@
 ## [Conversation forms](v4sdk/bot-builder-conversations.md)
 ## [State and storage](v4sdk/bot-builder-storage-concept.md)
 ## [Activity processing](v4sdk/bot-builder-concept-activity-processing.md)
+## [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## [Proactive messages](v4sdk/bot-builder-proactive-messages.md)
 ## [Language understanding](v4sdk/bot-builder-concept-luis.md)
 ## [Bot Service templates](bot-service-concept-templates.md)

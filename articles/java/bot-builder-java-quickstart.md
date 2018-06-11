@@ -15,6 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 The Bot Builder SDK for Java provides a familiar way for Java developers to write bots. The SDK v4 is in preview, for more information visit Java [GitHub repo](https://github.com/Microsoft/botbuilder-java).
 
+> [!NOTE]
+> Our code samples and docs are currently targeting Java version 1.8.
+
 ## Getting Started
 
 The v4 SDK consists of a series of [libraries](https://github.com/Microsoft/botbuilder-java/tree/master/libraries). To build them locally, see [Building the SDK](https://github.com/Microsoft/botbuilder-java/wiki/building-the-sdk).
