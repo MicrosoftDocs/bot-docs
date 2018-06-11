@@ -87,7 +87,7 @@ await context.sendActivity(messageWithCarouselOfCards);
 
 ---
 
-If an attachment is an image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](../dotnet/bot-builder-dotnet-channeldata.md) to render that attachment within the conversation. If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
+If an attachment is an image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](~/v4sdk/bot-builder-channeldata.md) to render that attachment within the conversation. If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
 
 ## Send a hero card
 

@@ -57,7 +57,7 @@ See [How to recognize dates and times] for info on using LUIS to extract this in
 
 
 ## How your bot gets messages from LUIS
-Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware][bot-builder-concept-activity-processing.md#middleware]) that automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _receive handler_ to route the conversation flow based on the intent in the LUIS response. 
+Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware][bot-builder-concept-middleware.md]) to automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _receive handler_ to route the conversation flow based on the intent in the LUIS response. 
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
@@ -103,7 +103,7 @@ For a bot that users will speak to, integrating it with LUIS can help your bot i
 
 <!-- Links -->
 [luis_home]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
-[middleware]: bot-builder-concept-process-messages.md#middleware
+[middleware]: bot-builder-concept-middleware.md
 <!-- TODO: this link is a placeholder, need to find existing speech priming article -->
 [speechrecognitionpriming]: ../bot-service-channel-connect-webchat-speech.md
 

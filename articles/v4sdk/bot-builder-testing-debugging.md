@@ -71,11 +71,11 @@ Your bot deals with different types of [activities](bot-builder-concept-activity
 
 **How middleware works**
 
-[Middleware](bot-builder-concept-activity-processing.md#middleware) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 
+[Middleware](bot-builder-concept-middleware.md) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 
 
-If you are using multiple pieces of middleware the delegate may pass execution to a different piece of middleware if that is how your pipeline is oriented. Details on [the bot middleware pipeline](bot-builder-concept-activity-processing.md#the-bot-middleware-pipeline) can help make that idea clearer.
+If you are using multiple pieces of middleware the delegate may pass execution to a different piece of middleware if that is how your pipeline is oriented. Details on [the bot middleware pipeline](bot-builder-concept-middleware.md#the-bot-middleware-pipeline) can help make that idea clearer.
 
-If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-activity-processing.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
+If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-middleware.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
 
 Understanding when, and why, middleware short-circuits helps indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try [creating your own middleware](bot-builder-create-middleware.md) first to experiment a bit before diving into the built-in middleware.
 
