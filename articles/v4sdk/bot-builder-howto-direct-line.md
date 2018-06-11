@@ -18,23 +18,23 @@ Direct Line clients can be written to be whatever you want them to be. You can w
 
 In this topic you will learn how to create and deploy a Direct Line bot, and how to create and run a console-based Direct Line client app.
 
-## Create the solution in Visual Studio
+## Create your bot
 
-To create the solution for the Direct Line bot and the console-baesd Direct Line client:
+Each language follows a different path to create the bot. Javascript creates the bot in Azure, then modifies the code while C# creates the bot locally, then publishes it to Azure, but both are valid methods and can be used with either language. If you want details on publishing your bot to Azure, take a look at [deploying your bot in Azure](../bot-builder-howto-deploy-azure.md).
 
-1. In Visual Studio 2015 or later, **File** > **New** > **Project**.
+# [C#](#tab/cscreatebot)
 
-1. In **Visual C#** > **.NET Core**, choose **ASP.NET Core Web Application**.
+### Create the solution in Visual Studio
 
-1. Create an **ASP.NET Core Web Application**.
+To create the solution for the Direct Line bot, in Visual Studio 2015 or later:
 
-1. For the name, enter **DirectLineBotSample**.
+1. Create a new **ASP.NET Core Web Application**, in **Visual C#** > **.NET Core**.
 
-1. Click **OK**.
+1. For the name, enter **DirectLineBotSample**, and click **OK**.
 
 1. Make sure **.NET Core** and **ASP.NET Core 2.0** are selected, choose the **Empty** project template, then click **OK**.
 
-### Add dependencies
+#### Add dependencies
 
 1. In **Solution Explorer**, right click **Dependencies**, then choose **Manage NuGet Packages**.
 
@@ -46,21 +46,17 @@ To create the solution for the Direct Line bot and the console-baesd Direct Line
     - Microsoft.Bot.Builder.Integration.AspNet.Core
     - Newtonsoft.Json
 
-## Create the appsettings.json file
+### Create the appsettings.json file
 
 The appsettings.json file will contain the Microsoft App ID, App Password, and Data Connection string. Since this bot will not store state information, the Data Connection string remain empty. And if you're only using the Bot Framework Emulator, all of them can remain empty.
 
 To create an **appsettings.json** file:
 
-1. Right-click the **DirectLineBotSample** Project.
-
-1. Choose **Add** > **New Item**.
+1. Right-click the **DirectLineBotSample** Project, choose **Add** > **New Item**.
 
 1. In **ASP.NET Core**, click **ASP.NET Configuration File**.
 
-1. Type **appsettings.json** for the name.
-
-1. Click **Add**.
+1. Type **appsettings.json** for the name, and click **Add**.
 
 Replace the contents of the appsettings.json file with the following:
 
@@ -86,7 +82,7 @@ Replace the contents of the appsettings.json file with the following:
 }
 ```
 
-## Edit the Startup.cs file
+### Edit Startup.cs
 
 Replace the contents of the Startup.cs file with the following:
 
@@ -147,21 +143,15 @@ namespace DirectLineBotSample
 }
 ```
 
-## Create the DirectBot class
+### Create the DirectBot class
 
 The DirectBot class contains most of the logic for this bot.
 
-To create the DirectBot class:
-
-1. Right-click the **DirectLineBotSample** Project in **Solution Explorer**.
-
-1. Choose **Add** > **New Item**.
+1. Right-click the **DirectLineBotSample** > **Add** > **New Item**.
 
 1. In **ASP.NET Core**, click **Class**.
 
-1. Type **DirectBot.cs** for the name.
-
-1. Click **Add**.
+1. Type **DirectBot.cs** for the name, and click **Add**.
 
 Replace the contents of the DirectBot.cs file with the following:
 
@@ -261,7 +251,250 @@ namespace DirectLineBotSample
 
 To verify things are in order, press **F6** to build the project. There should be no warnings or errors.
 
+### Publish the bot from Visual Studio
+
+1. In Visual Studio, on the Solutions Explorer, right click on the **DirectLineBotSample** project and click **Set as StartUp Project**.
+
+    ![The visual studio publish page](media/bot-builder-howto-direct-line/visual-studio-publish-page.png)
+
+1. Right click **DirectLineBotSample** again and click **Publish**. The Visual Studio **Publish** page appears.
+
+1. If you already have a publishing profile for this bot, select it and click the **Publish** button, then go on to the next section.
+
+1. To create a new publishing profile, select the **Microsoft Azure App Service** icon.
+
+1. Select **Create new**.
+
+1. Click the **Publish** button. The **Create App Service** dialog appears.
+
+    ![The create app service dialog box](media/bot-builder-howto-direct-line/create-app-service-dialog.png)
+
+    - For App Name, give it a name you can find later. For example, you can add your email name to the beginning of the App Name.
+
+    - Verify you are using the correct subscription.
+
+    - For Resource Group, verify you are using the correct resource group. The resource group can be found on the **Overview** blade of your bot. **Note:** An incorrect resource group is difficult to correct.
+
+    - Verify you are using the correct App Service Plan.
+    
+1. Click the **Create** button. Visual Studio will begin deploying your bot.
+
+After your bot is published, a browser will appear with the URL endpoint of your bot.
+
+### Create Bot Channels Registration bot on Microsoft Azure
+
+The Direct Line bot can be hosted on any platform. In this example, the bot will be hosted on Microsoft Azure. 
+
+To create the bot on Microsoft Azure:
+
+1. On the Microsoft Azure Portal, click **Create a resource**, then search for "Bot Channels Registration".
+
+1. Click **Create**. The Bot Channels Registration blade appears.
+
+    ![The bot channels registration blade, with fields for bot name, subscription, resource group, location, pricing tier, messaging endpoint, and other fields.](media/bot-builder-howto-direct-line/bot-service-registration-blade.png)
+
+1. On the Bot Channels Registration blade, enter the **Bot name**, **Subscription**, **Resource group**, **Location**, and **Pricing tier**.
+
+1. Leave the **Messaging endpoint** blank. This value will be filled in later.
+
+1. Click the **Microsoft App ID and password**, then click **Auto create App ID and password**.
+
+1. Check the **Pin to dashboard** check box.
+
+1. Click the **Create** button.
+
+Deployment will take a few minutes, but once that's done it should appear in your dashboard.
+
+### Update the appsettings.json file
+
+1. Click the bot on your dashboard, or go to your new resource by clicking **All resources** and searching for the name of your Bot Channels Registration.
+
+1. Click on **Overview**.
+
+1. Copy the name of the Resource group into the **botId** string in the **Program.cs** of the **DirectLineClientSample** project.
+
+1. Click **Settings**, then click **Manage** near the **Microsoft App ID** field.
+
+1. Copy the Application ID and paste it into the **"MicrosoftAppId"** field of the **appsettings.json** file.
+
+1. Click the **Generate New Password** button.
+
+1. Copy the new password and paste it into the **"MicrosoftAppPassword"** field of the **appsettings.json** file.
+
+### Set the Messaging endpoint
+
+To add the endpoint to your bot:
+
+1. Copy the URL address from the browser that popped up after publishing your bot.
+
+    ![The settings blade of the bot channels registration, highlighting the messaging endpoint](media/bot-builder-howto-direct-line/bot-channels-registration-settings.png)
+
+1. Bring up the **Settings** blade of your bot.
+
+1. Paste the address into the **Messaging endpoint**.
+
+1. Edit the address to start with "https://" and end with "/api/messages". For example, if the address copied from the browser is "http://v-royhar-dlbot-directlinebotsample20180329044602.azurewebsites.net", edit it to "https://v-royhar-dlbot-directlinebotsample20180329044602.azurewebsites.net/api/messages".
+
+1. Click the **Save** button on the Settings blade.
+
+**NOTE:** If publishing fails, you may need to stop your bot on Azure before you can publish changes to your bot.
+
+1. Find your App Service name (it's between the "https://" and ".azurewebsites.net".
+
+1. Search for that resource in the Azure Portal "All resources".
+
+1. Click on the App Service resource. The App Serivce blade appears.
+
+1. Click the **Stop** button on the App Service blade.
+
+1. In Visual Studio, Publish your bot again.
+
+1. Click the **Start** button on the App Service blade.
+
+### Test your bot in webchat
+
+To verify that your bot is working, check your bot in webchat:
+
+1. In the Bot Channels Registration blade for your bot, click **Settings**, then **Test in Web Chat**.
+
+1. Type "Hi". The bot should respond with a welcome message.
+
+1. Type "show me a hero card". The bot should display a hero card.
+
+1. Type "send me a botframework image". The bot should display an image from the Bot Framework documentation.
+
+1. Type anything else and the bot should reply with, "You said" and your message in quotes.
+
+### Troubleshooting
+
+If your bot is not working, verify or reenter your Microsoft App ID and password. Even if you copied it before, check the Microsoft App ID on the settings blade of your Bot Channels Registration against the value in the **"MicrosoftAppId"** field in the appsettings.json file.
+
+Verify your password or create and use a new password: 
+
+1. Click **Manage** next to the **Microsoft App ID** field on your Bot Channels Registration blade.
+
+1. Log into the Application Registration Portal.
+
+1. Verify the first three letters of your password match the **"MicrosoftAppPassword"** field in the **appsettings.json** file. 
+
+1. If the values do not match, generate a new password and store that value in the **"MicrosoftAppPassword"** field in the **appsettings.json** file.
+
+# [JavaScript](#tab/jscreatebot)
+
+### Create Web App Bot on Microsoft Azure
+
+To create the bot on Microsoft Azure: 
+
+1. On the Microsoft Azure Portal, click **Create a resource**, then search for "Web App Bot".
+
+1. Click **Create**. The Web App Bot blade appears.
+
+![Web App Bot Registration](media/bot-builder-howto-direct-line/web-app-bot-registration.png)
+
+1. On the Web App Bot blade, enter the **Bot name**, **Subscription**, **Resource group**, **Location**, **Pricing tier**, **App name**.
+
+1. Select the bot template you would like to use. **SDK version: SDK v4** and **SDK language: Node.js** 
+
+1. Select the basic v4 preview template. 
+
+1. Choose your **App service plan/Location**, **Azure Storage** and **Application Insights Location**.
+
+1. Check the Pin to dashboard check box.
+
+1. Click the Create button.
+
+1. Wait for your bot to be deployed. Because you checked the Pin to dashboard check box, your bot will appear on your dashboard.
+
+### Edit your Direct Line Bot
+
+Now lets add some more features to the echo bot.
+
+1. On the Web App Bot blade, click Build. 
+
+1. Click Download zip file. 
+
+1. Extract the .zip file to a local directory.
+
+1. Navigate to the extracted folder and open the source files in your favorite IDE.
+
+1. In the app.js file copy and paste the code below.
+
+```javascript
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
+const { BotFrameworkAdapter, MessageFactory, CardFactory } = require('botbuilder');
+const restify = require('restify');
+
+// Create server
+let server = restify.createServer();
+server.listen(process.env.port || process.env.PORT || 3978, function () {
+    console.log(`${server.name} listening to ${server.url}`);
+});
+
+// Create adapter
+const adapter = new BotFrameworkAdapter({
+    appId: process.env.MicrosoftAppId,
+    appPassword: process.env.MicrosoftAppPassword
+});
+
+// Responds to the incoming message by either sending a hero card, an image, 
+// or echoing the user's message.
+
+// Listen for incoming requests 
+server.post('/api/messages', (req, res) => {
+    // Route received request to adapter for processing
+    adapter.processActivity(req, res, (context) => {
+        if (context.activity.type === 'message') {
+            const text = (context.activity.text || '').trim().toLowerCase()
+
+            switch(text){
+                case 'hi':
+                case "hello":
+                case "help":
+                    // Send the user an instruction message.
+                    return context.sendActivity("Welcome to the Bot to showcase the DirectLine API. " +
+                    "Send \"Show me a hero card\" or \"Send me a BotFramework image\" to see how the " +
+                    "DirectLine client supports custom channel data. Any other message will be echoed.");
+                    break;
+
+                case 'show me a hero card':
+                    // Create the hero card.
+                    const message = MessageFactory.attachment(
+                        CardFactory.heroCard(   
+                        'Sample Hero Card', //cards title
+                        'Displayed in the DirectLine client' //cards text
+                        )
+                    );
+                    return context.sendActivity(message);
+                    break;
+                    
+                case 'send me a botframework image':
+                    // Create the image attachment.
+                    const imageOrVideoMessage = MessageFactory.contentUrl('https://docs.microsoft.com/en-us/azure/bot-service/media/how-it-works/architecture-resize.png', 'image/png')
+                    return context.sendActivity(imageOrVideoMessage);
+                    break;
+                
+                default:
+                    // No command was encountered. Echo the user's message.
+                    return context.sendActivity(`You said ${context.activity.text}`);
+                    break;
+                    
+            }
+        }
+    });
+});
+
+```
+
+When you are ready, you can publish the sources back to Azure. [Follow these steps to learn how to publish your bot back to Azure](../bot-service-build-download-source-code.md#publish-node-bot-source-code-to-azure)
+
+---
+
+
 ## Create the console client app
+
+# [C#](#tab/csclientapp)
 
 The console client application operates in two threads. The primary thread accepts user input and sends messages to the bot. The secondary thread polls the bot once per second to retrieve any messages from the bot, then displays the messages received.
 
@@ -279,7 +512,7 @@ To create the console project:
 
 1. Click **OK**.
 
-## Add the NuGet packages to the console app
+### Add the NuGet packages to the console app
 
 1. Right-click **References**.
 
@@ -291,7 +524,7 @@ To create the console project:
     - Microsoft.Bot.Connector.DirectLine (v3.0.2)
     - Newtonsoft.Json
 
-## Edit the Program.cs file
+### Edit the Program.cs file
 
 Replace the contents of the DirectLineClientSample **Program.cs** file with the following:
 
@@ -461,45 +694,178 @@ namespace DirectLineClientSample
 
 To verify things are in order, press **F6** to build the project. There should be no warnings or errors.
 
-## Create Bot Channels Registration bot on Microsoft Azure
+# [JavaScript](#tab/jsclientapp)
 
-The Direct Line bot can be hosted on any platform. In this example, the bot will be hosted on Microsoft Azure. 
+### Create a Direct Line Client 
 
-To create the bot on Microsoft Azure:
+Now that you have deployed your web app bot we can create a Direct Line Client.
 
-1. On the Microsoft Azure Portal, click **Create a resource**, then search for "Bot Channels Registration".
+```
+    md DirectLineClient
+    cd DirectLineClient
+    npm init
+```
 
-1. Click **Create**. The Bot Channels Registration blade appears.
+Next, install these packages from npm
 
-    ![The bot channels registration blade, with fields for bot name, subscription, resource group, location, pricing tier, messaging endpoint, and other fields.](media/bot-builder-howto-direct-line/bot-service-registration-blade.png)
+```
+    npm install --save open
+    npm install --save request
+    npm install --save request-promise
+    npm install --save swagger-client
+```
 
-1. On the Bot Channels Registration blade, enter the **Bot name**, **Subscription**, **Resource group**, **Location**, and **Pricing tier**.
+Create an **app.js** file. Copy and paste the code below into this file.
 
-1. Leave the **Messaging endpoint** blank. This value will be filled in later.
+We will get the directLineSecret in the next step.
+```javascript
+var Swagger = require('swagger-client');
+var open = require('open');
+var rp = require('request-promise');
 
-1. Click the **Microsoft App ID and password**, then click **Auto create App ID and password**.
+// config items
+var pollInterval = 1000;
+// Change the Direct Line Secret to your own 
+var directLineSecret = 'your secret here';
+var directLineClientName = 'DirectLineClient';
+var directLineSpecUrl = 'https://docs.botframework.com/en-us/restapi/directline3/swagger.json';
 
-1. Check the **Pin to dashboard** check box.
+var directLineClient = rp(directLineSpecUrl)
+    .then(function (spec) {
+        // client
+        return new Swagger({
+            spec: JSON.parse(spec.trim()),
+            usePromise: true
+        });
+    })
+    .then(function (client) {
+        // add authorization header to client
+        client.clientAuthorizations.add('AuthorizationBotConnector', new Swagger.ApiKeyAuthorization('Authorization', 'Bearer ' + directLineSecret, 'header'));
+        return client;
+    })
+    .catch(function (err) {
+        console.error('Error initializing DirectLine client', err);
+    });
 
-1. Click the **Create** button.
+// once the client is ready, create a new conversation
+directLineClient.then(function (client) {
+    client.Conversations.Conversations_StartConversation()                          // create conversation
+        .then(function (response) {
+            return response.obj.conversationId;
+        })                            // obtain id
+        .then(function (conversationId) {
+            sendMessagesFromConsole(client, conversationId);                        // start watching console input for sending new messages to bot
+            pollMessages(client, conversationId);                                   // start polling messages from bot
+        })
+        .catch(function (err) {
+            console.error('Error starting conversation', err);
+        });
+});
 
-1. Wait for your bot to be deployed. Because you checked the **Pin to dashboard** check box, your bot will appear on your dashboard.
+// Read from console (stdin) and send input to conversation using DirectLine client
+function sendMessagesFromConsole(client, conversationId) {
+    var stdin = process.openStdin();
+    process.stdout.write('Command> ');
+    stdin.addListener('data', function (e) {
+        var input = e.toString().trim();
+        if (input) {
+            // exit
+            if (input.toLowerCase() === 'exit') {
+                return process.exit();
+            }
 
-## Update the appsettings.json file
+            // send message
+            client.Conversations.Conversations_PostActivity(
+                {
+                    conversationId: conversationId,
+                    activity: {
+                        textFormat: 'plain',
+                        text: input,
+                        type: 'message',
+                        from: {
+                            id: directLineClientName,
+                            name: directLineClientName
+                        }
+                    }
+                }).catch(function (err) {
+                    console.error('Error sending message:', err);
+                });
 
-1. Click the bot on your dashboard, or go to your new resource by clicking **All resources** and searching for the name of your Bot Channels Registration.
+            process.stdout.write('Command> ');
+        }
+    });
+}
 
-1. Click on **Overview**.
+// Poll Messages from conversation using DirectLine client
+function pollMessages(client, conversationId) {
+    console.log('Starting polling message for conversationId: ' + conversationId);
+    var watermark = null;
+    setInterval(function () {
+        client.Conversations.Conversations_GetActivities({ conversationId: conversationId, watermark: watermark })
+            .then(function (response) {
+                watermark = response.obj.watermark;                                 // use watermark so subsequent requests skip old messages
+                return response.obj.activities;
+            })
+            .then(printMessages);
+    }, pollInterval);
+}
 
-1. Copy the name of the Resource group into the **botId** string in the **Program.cs** of the **DirectLineClientSample** project.
+// Helpers methods
+function printMessages(activities) {
+    if (activities && activities.length) {
+        // ignore own messages
+        activities = activities.filter(function (m) { return m.from.id !== directLineClientName });
 
-1. Click **Settings**, then click **Manage** near the **Microsoft App ID** field.
+        if (activities.length) {
+            process.stdout.clearLine();
+            process.stdout.cursorTo(0);
 
-1. Copy the Application ID and paste it into the **"MicrosoftAppId"** field of the **appsettings.json** file.
+            // print other messages
+            activities.forEach(printMessage);
 
-1. Click the **Generate New Password** button.
+            process.stdout.write('Command> ');
+        }
+    }
+}
 
-1. Copy the new password and paste it into the **"MicrosoftAppPassword"** field of the **appsettings.json** file.
+function printMessage(activity) {
+    if (activity.text) {
+        console.log(activity.text);
+    }
+
+    if (activity.attachments) {
+        activity.attachments.forEach(function (attachment) {
+            switch (attachment.contentType) {
+                case "application/vnd.microsoft.card.hero":
+                    renderHeroCard(attachment);
+                    break;
+
+                case "image/png":
+                    console.log('Opening the requested image ' + attachment.contentUrl);
+                    open(attachment.contentUrl);
+                    break;
+            }
+        });
+    }
+}
+
+function renderHeroCard(attachment) {
+    var width = 70;
+    var contentLine = function (content) {
+        return ' '.repeat((width - content.length) / 2) +
+            content +
+            ' '.repeat((width - content.length) / 2);
+    }
+
+    console.log('/' + '*'.repeat(width + 1));
+    console.log('*' + contentLine(attachment.content.title) + '*');
+    console.log('*' + ' '.repeat(width) + '*');
+    console.log('*' + contentLine(attachment.content.text) + '*');
+    console.log('*'.repeat(width + 1) + '/');
+}
+```
+
+---
 
 ## Configure the Direct Line channel
 
@@ -519,103 +885,13 @@ To configure the Direct Line channel:
 
 1. Click **Show** for at least one secret key.
 
-1. Copy one of the secret keys and paste it into the **Program.cs** of the console app, in the **directLineSecret** string.
+1. Copy one of the secret keys and paste it into your client app, into the **directLineSecret** string.
 
 1. Click Done.
 
-## Publish the bot from Visual Studio
+## Run the client app
 
-1. In Visual Studio, on the Solutions Explorer, right click on the **DirectLineBotSample** project and click **Set as StartUp Project**.
-
-    ![The visual studio publish page](media/bot-builder-howto-direct-line/visual-studio-publish-page.png)
-
-1. Right click **DirectLineBotSample** again and click **Publish**. The Visual Studio **Publish** page appears.
-
-1. If you already have a publishing profile for this bot, select it and click the **Publish** button, then go on to the next section.
-
-1. To create a new publishing profile, select the **Microsoft Azure App Service** icon.
-
-1. Select **Create new**.
-
-1. Click the **Publish** button. The **Create App Service** dialog appears.
-
-    ![The create app service dialog box](media/bot-builder-howto-direct-line/create-app-service-dialog.png)
-
-    - For App Name, give it a name you can find later. For example, you can add your email name to the beginning of the App Name.
-
-    - Verify you are using the correct subscription.
-
-    - For Resource Group, verify you are using the correct resource group. The resource group can be found on the **Overview** blade of your bot. **Note:** An incorrect resource group is difficult to correct.
-
-    - Verify you are using the correct App Service Plan.
-    
-1. Click the **Create** button. Visual Studio will begin deploying your bot.
-
-After your bot is published, a browser will appear with the URL endpoint of your bot.
-
-## Set the Messaging endpoint
-
-The URL in the browser contains most of the Messaging endpoint for your bot. To add the endpoint to your bot:
-
-1. Copy the URL address from the browser.
-
-    ![The settings blade of the bot channels registration, highlighting the messaging endpoint](media/bot-builder-howto-direct-line/bot-channels-registration-settings.png)
-
-1. Bring up the **Settings** blade of your bot.
-
-1. Paste the address into the **Messaging endpoint**.
-
-1. Edit the address to start with "https://" and end with "/api/messages". For example, if the address copied from the browser is "http://v-royhar-dlbot-directlinebotsample20180329044602.azurewebsites.net", edit it to "https://v-royhar-dlbot-directlinebotsample20180329044602.azurewebsites.net/api/messages".
-
-1. Click the **Save** button on the Settings blade.
-
-**NOTE:** If publishing fails, you may need to stop your bot on Azure before you can publish changes to your bot.
-
-1. Find your App Service name (it's between the "https://" and ".azurewebsites.net".
-
-1. Search for that resource in the Azure Portal "All resources".
-
-1. Click on the App Service resource. The App Serivce blade appears.
-
-1. Click the **Stop** button on the App Service blade.
-
-1. In Visual Studio, Publish your bot again.
-
-1. Click the **Start** button on the App Service blade.
-
-## Test your bot in webchat
-
-To verify that your bot is working, check your bot in webchat:
-
-1. In the Bot Channels Registration blade for your bot, click **Settings**, then **Test in Web Chat**.
-
-1. Type "Hi". The bot should respond with a welcome message.
-
-1. Type "show me a hero card". The bot should display a hero card.
-
-1. Type "send me a botframework image". The bot should display an image from the Bot Framework documentation.
-
-1. Type anything else and the bot should reply with, "You said" and your message in quotes.
-
-**Note:**
-
-If your bot fails to respond to "Test in web chat":
-
-Verify or reenter your Microsoft App ID:
-
-- Even if you copied it before, check the Microsoft App ID on the settings blade of your Bot Channels Registration against the value in the **"MicrosoftAppId"** field in the appsettings.json file.
-
-Verify your password or create and use a new password: 
-
-1. Click **Manage** next to the **Microsoft App ID** field on your Bot Channels Registration blade.
-
-1. Log into the Application Registration Portal.
-
-1. Verify the first three letters of your password match the **"MicrosoftAppPassword"** field in the **appsettings.json** file. 
-
-1. If the values do not match, generate a new password and store that value in the **"MicrosoftAppPassword"** field in the **appsettings.json** file.
-
-## Run the console DirectLineClientSample
+# [C#](#tab/csrunclient)
 
 Your bot is now ready to communicate with the Direct Line console client application. To run the console app, do the following:
 
@@ -643,4 +919,19 @@ The console client app will start. To test out the app:
 
 1. Enter anything else and the bot should reply with, "You said" and your message in quotes.
 
-## Next steps
+# [JavaScript](#tab/jsrunclient)
+
+To run the sample you will need to run your DirectLineClient app.
+
+1. Open a CMD console and CD to the DirectLineClient directory
+
+1. Run `node app.js`
+
+To test the custom messages type in the Client's console show me a hero card or send me a botframework image and you should see the following outcome.
+
+![outcome](media/bot-builder-howto-direct-line/outcome.png)
+
+---
+
+
+### Next steps
