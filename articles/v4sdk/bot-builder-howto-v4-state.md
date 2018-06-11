@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 For your bot to save conversation and user state, first initialize state manager middleware, and then use the conversation and user state properties.
-For more information about how to do this, see [State and storage](./bot-builder-storage-concept.md).
+For more information on how that state is used, see [State and storage](./bot-builder-storage-concept.md).
 
 ## Initialize state manager middleware
 

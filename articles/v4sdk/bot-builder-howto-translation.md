@@ -170,15 +170,11 @@ const adapter = new BotFrameworkAdapter({
     appPassword: process.env.MICROSOFT_APP_PASSWORD 
 });
 
-// Add conversation state middleware
-const conversationState = new ConversationState(new MemoryStorage());
-adapter.use(conversationState);
-
 // Add language translator middleware
 const languageTranslator = new LanguageTranslator({
     translatorKey: "xxxxxx",
     noTranslatePatterns: new Set(),
-    nativeLanguages: ['fr', 'de'] 
+    nativeLanguages: ['en'] 
 });
 adapter.use(languageTranslator);
 
@@ -188,9 +184,7 @@ server.post('/api/messages', (req, res) => {
     // Route received request to adapter for processing
     adapter.processActivity(req, res, async (context) => {
         if (context.activity.type === 'message') {
-            const convoState = conversationState.get(context);
-            const count = convoState.count === undefined ? convoState.count = 0 : ++convoState.count;
-            await context.sendActivity(`${count}: You said "${context.activity.text}"`);
+            await context.sendActivity(`You said "${context.activity.text}"`);
         } else {
             await context.sendActivity(`[${context.activity.type} event detected]`);
         }
@@ -421,6 +415,35 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
+In your bot code, the LUIS results are based on input that has already been translated to the bot's native language. Try modifying the bot code to check the results of a LUIS app:
+
+```cs
+public async Task OnTurn(ITurnContext context)
+{
+    switch (context.Activity.Type)
+    {
+        case ActivityTypes.Message:
+            // check LUIS results
+            var luisResult = context.Services.Get<RecognizerResult>(LuisRecognizerMiddleware.LuisRecognizerResultKey);
+            (string key, double score) topItem = luisResult.GetTopScoringIntent();
+            await context.SendActivity($"The top intent was: '{topItem.key}', with score {topItem.score}");
+
+            await context.SendActivity($"You sent '{context.Activity.Text}'");
+
+        case ActivityTypes.ConversationUpdate:
+            foreach (var newMember in context.Activity.MembersAdded)
+            {
+                if (newMember.Id != context.Activity.Recipient.Id)
+                {
+                    await context.SendActivity("Hello and welcome to the echo bot.");
+                }
+            }
+            break;
+        }
+    }  
+}          
+```
+
 # [JavaScript](#tab/js)
 ```javascript
 // Add language translator middleware
@@ -454,39 +477,9 @@ server.post('/api/messages', (req, res) => {
         }
     });
 });
-
 ```
 
 ---
-
-In your bot code, the LUIS results are based on input that has already been translated to the bot's native language. Try modifying the bot code to check the results of a LUIS app:
-
-```cs
-public async Task OnTurn(ITurnContext context)
-{
-    switch (context.Activity.Type)
-    {
-        case ActivityTypes.Message:
-            // check LUIS results
-            var luisResult = context.Services.Get<RecognizerResult>(LuisRecognizerMiddleware.LuisRecognizerResultKey);
-            (string key, double score) topItem = luisResult.GetTopScoringIntent();
-            await context.SendActivity($"The top intent was: '{topItem.key}', with score {topItem.score}");
-
-            await context.SendActivity($"You sent '{context.Activity.Text}'");
-
-        case ActivityTypes.ConversationUpdate:
-            foreach (var newMember in context.Activity.MembersAdded)
-            {
-                if (newMember.Id != context.Activity.Recipient.Id)
-                {
-                    await context.SendActivity("Hello and welcome to the echo bot.");
-                }
-            }
-            break;
-        }
-    }  
-}          
-```
 
 ## Bypass translation for specified patterns
 There may be certain words you don't want your bot to translate, such as proper names. You can provide regular expressions to indicate patterns that shouldn't be translated. For example, if the user says "My name is ..." in a non-native language for your bot, and you want to avoid translating their name, you can use a pattern to specify that.
