@@ -17,7 +17,7 @@ You can configure your bot to communicate with people using the Kik messaging ap
 
 ## Install Kik on your phone
 
-If you don't have Kik installed on your phone, you can install it via your phone's app store or at <a href="https://www.kik.com/" target="_blank">the Kik website</a>
+If you don't have Kik installed on your phone, you can install it via your phone's app store or at <a href="https://www.kik.com/" target="_blank">the Kik website</a>.
 
 ## Log into the dev portal with your mobile phone
 
@@ -31,7 +31,7 @@ Give the bot a name.
 
 ## Gather credentials
 
-On the Configuration tab, copy the **Name** and **API key**. 
+On the Configuration tab, copy the **Name** and **API key**.
 
 ![Copy bot information](~/media/channels/kik-configure.png)
 
@@ -42,6 +42,7 @@ On the Configuration tab, copy the **Name** and **API key**.
 Click **Submit Kik Credentials**.
 
 ## Enable the bot
-Check **Enable this bot on Kik**. Then click **I'm done configuring Kik**. 
+
+Check **Enable this bot on Kik**. Then click **I'm done configuring Kik**.
 
 When you have completed these steps, your bot will be successfully configured to communicate with users in Kik.
