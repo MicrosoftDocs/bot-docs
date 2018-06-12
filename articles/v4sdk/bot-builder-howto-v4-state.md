@@ -194,7 +194,7 @@ public async Task OnTurn(ITurnContext context)
             // context object for the next turn of the conversation can check haveAskedName
             convo.haveAskedNameFlag = true;
         }
-        else if (convo.haveAskedNumberFlag)
+        else if (!convo.haveAskedNumberFlag)
         {
             // Save the name.
             var name = context.Activity.AsMessageActivity().Text;
@@ -218,7 +218,7 @@ public async Task OnTurn(ITurnContext context)
 }
 ```
 
-To set up user state so that it can be returned by `ConversationState<ConversationInfo>.Get(context)`, 
+To set up user state so that it can be returned by `UserState<UserInfo>.Get(context)`, 
 you add user state middleware. For example, in `Startup.cs` of the ASP .NET Core EchoBot, changing the code in ConfigureServices.cs:
 
 ```csharp
@@ -230,6 +230,7 @@ public void ConfigureServices(IServiceCollection services)
         
         IStorage dataStore = new MemoryStorage();
         options.Middleware.Add(new ConversationState<ConversationInfo>(dataStore));
+        options.Middleware.Add(new UserState<UserInfo>(dataStore));
     });
 }
 ```
