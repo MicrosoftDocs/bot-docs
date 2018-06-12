@@ -396,7 +396,7 @@ In `app.js` of the echobot sample, you can create ConversationState using `Azure
 
 ```javascript
 const { BotFrameworkAdapter, FileStorage, MemoryStorage, ConversationState } = require('botbuilder');
-const { TableStorage } = require{'botbuilder-azure'};
+const { TableStorage } = require('botbuilder-azure');
 
 // ...
 
@@ -413,8 +413,7 @@ const adapter = new BotFrameworkAdapter({
 var azureStorage = new TableStorage({ tableName: "TestAzureTable1", storageAccountOrConnectionString: "UseDevelopmentStorage=true"})
 
 // You can alternatively use your account name and table name
-// ar azureStorage = new TableStorage({tableName: "TestAzureTable2", storageAccessKey: "V3ah0go4DLkMtQKUPC6EbgFeXnE6GeA+veCwDNFNcdE6rqSVE/EQO/kjfemJaitPwtAkmR9lMKLtcvgPhzuxZg==", storageAccountOrConnectionString: "storageaccount"});
-
+// var azureStorage = new TableStorage({tableName: "TestAzureTable2", storageAccessKey: "V3ah0go4DLkMtQKUPC6EbgFeXnE6GeA+veCwDNFNcdE6rqSVE/EQO/kjfemJaitPwtAkmR9lMKLtcvgPhzuxZg==", storageAccountOrConnectionString: "storageaccount"});
 
 const conversationState = new ConversationState(azureStorage);
 adapter.use(conversationState);
