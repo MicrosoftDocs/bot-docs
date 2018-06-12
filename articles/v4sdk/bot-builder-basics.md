@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Basic bot structure
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Azure Bot Service and the Bot Builder SDK provides libraries, samples, and tools to help you build and debug bots. However, before we get into too much detail on any of those, it's important to understand the basic structure of a bot and how they all work together. These concepts apply regardless of of which programming language you choose. Links to more in depth content are provided throughout; this article will provide an initial mental framework for how a bot operates.
+Azure Bot Service and the Bot Builder SDK provides libraries, samples, and tools to help you build and debug bots. However, before we get into too much detail on any of those, it's important to understand the basic structure of a bot and how they all work together. These concepts apply regardless of which programming language you choose. Links to more in depth content are provided throughout; this article will provide an initial mental framework for how a bot operates.
 
 From the ground up, let's explore the basic structure of a bot.
 
@@ -31,7 +31,7 @@ The bot receives the communication and wraps it up in an activity object, with t
 
 ## Receiving user input
 
-When we receive an message activity from the user, we need to understand what they're sending us. The most straighforward way is when we receive a message, simply match it to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](bot-builder-storage-concept.md), and so on.
+When we receive a message activity from the user, we need to understand what they're sending us. The most straighforward way is when we receive a message, simply match it to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](bot-builder-storage-concept.md), and so on.
 
 There are more complex ways to recognize user input, such as [LUIS](bot-builder-concept-luis.md) or [QnA Maker](bot-builder-howto-qna.md), but string matching is the simplest.
 
