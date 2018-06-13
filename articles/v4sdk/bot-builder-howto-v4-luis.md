@@ -1014,10 +1014,12 @@ For more background on LUIS, see [Language Understanding](./bot-builder-concept-
 
 For info on how to build the LUIS apps used in these examples, see [LUIS apps for Bot Builder](https://aka.ms/luis-bot-examples).
 
+LUIS can be combined with other Cognitive Services, to make your bot even more powerful. See [Combine LUIS apps and QnA services using the Dispatch tool](./bot-builder-tutorial-dispatch.md) to learn how to combine QnA with Language Understanding (LUIS) in your bot.
+
 ## Next steps
-LUIS can be combined with other Cognitive Services, to make your bot even more powerful. The Dispatch tool provides a way to combine QnA with Language Understanding (LUIS) in your bot.
+
 
 > [!div class="nextstepaction"]
-> [Combine LUIS apps and QnA services using the Dispatch tool](./bot-builder-tutorial-dispatch.md)
+> [Generate strongly-typed LUIS results](./bot-builder-howto-v4-luisgen.md)
 
 
