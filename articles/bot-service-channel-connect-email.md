@@ -33,29 +33,26 @@ The Email channel currently works with Office 365 only. Other email services are
 
 The Email channel supports sending custom properties to create more advanced, customized emails using the `channelData` property.
 
-| Property | Description |
-|---------|  -----|
-| HtmlBody   | The HTML to use for the body of the message. |
-| Subject    | The subject to use for the message.|
-| Importance | The importance flag to use for the message.(Low/Normal/High) |
+[!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
 
-The following example message shows a JSON file that includes the `channelData` properties.
+The following example message shows a JSON file that includes these `channelData` properties.
 
 ```json
+{
+    "type": "message",
+    "locale": "en-Us",
+    "channelID": "email",
+    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
+    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
+    "conversation": { "id": "123123123123", "topic": "awesome chat" },
+    "channelData":
     {
-        "type": "message",
-        "locale": "en-Us",
-        "channelID":"email",
-        "from": { "id":"mybot@mydomain.com", "name":"My bot"},
-        "recipient": { "id":"joe@otherdomain.com", "name":"Joe Doe"},
-        "conversation": { "id":"123123123123", "topic":"awesome chat" },
-        "channelData":
-        {
-            "htmlBody" : "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome</body></html>",
-            "subject":"Super awesome message subject",
-            "importance":"high"
-        }
+        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
+        "subject": "Super awesome message subject",
+        "importance": "high",
+        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
     }
+}
 ```
 
 ::: moniker range="azure-bot-service-3.0"
