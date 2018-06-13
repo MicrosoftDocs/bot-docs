@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add media to messages
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 A message exchange between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Builder SDK includes a new `Microsoft.Bot.Builder.MessageFactory` class, designed to ease the task of sending rich messages to the user.
 
 ## Send attachments
@@ -21,7 +23,6 @@ To send the user content like an image or a video, you can add an attachment or 
 # [C#](#tab/csharp)
 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
-
 
 ```csharp
 using Microsoft.Bot.Builder;
@@ -94,6 +95,7 @@ If an attachment is an image, audio, or video, the Connector service will commun
 Besides simple image or video attachments, you can attach a **hero card**, which allows you to combine images and buttons in one object, and send them to the user.
 
 # [C#](#tab/csharp)
+
 To compose a message with a hero card and button, you can attach a `HeroCard` to a message:
 
 ```csharp
@@ -138,6 +140,57 @@ await context.sendActivity(message);
 
 ---
 
+<!--Lifted from the RESP API documentation-->
+
+A rich card comprises a title, description, link, and images. A message can contain multiple rich cards, displayed in either list format or carousel format. The Bot Framework currently supports these types of rich cards:
+
+> [!TIP]
+> To determine the type of rich cards that a channel supports and see how the channel renders rich cards, see the [Channel Inspector](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-inspector?view=azure-bot-service-4.0). Consult the channel's documentation for information about limitations on the contents of cards (for example, the maximum number of buttons or maximum length of title).
+
+# [C#](#tab/csharp)
+
+| Card type | Description |
+| :---- | :---- |
+| AnimationCard | A card that can play animated GIFs or short videos. |
+| AudioCard | A card that can play an audio file. |
+| HeroCard | A card that typically contains a single large image, one or more buttons, and text. |
+| ThumbnailCard | A card that typically contains a single thumbnail image, one or more buttons, and text. |
+| ReceiptCard | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| SignInCard | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| VideoCard | A card that can play videos.
+
+# [JavaScript](#tab/javascript)
+
+| Card type | Description |
+| :---- | :---- |
+| animationCard | A card that can play animated GIFs or short videos. |
+| audioCard | A card that can play an audio file. |
+| heroCard | A card that typically contains a single large image, one or more buttons, and text. |
+| thumbnailCard | A card that typically contains a single thumbnail image, one or more buttons, and text. |
+| receiptCard | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| signInCard | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| videoCard | A card that can play videos.
+
+---
+
+### Process events within rich cards
+
+To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card.
+
+To function correctly, assign an action type to each clickable item on the card. This table lists the valid values for the type property of a card action object and describes the expected contents of the value property for each type.
+
+| Type | Value |
+| :---- | :---- |
+| openUrl | URL to be opened in the built-in browser |
+| imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
+| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). Some client applications may display this text in the message feed, where it will be visible to all conversation participants. |
+| call | Destination for a phone call in this format: `tel:123123123123` |
+| playAudio | URL of audio to be played |
+| playVideo | URL of video to be played |
+| showImage | URL of image to be displayed |
+| downloadFile | URL of file to be downloaded |
+| signin | URL of OAuth flow to be initiated |
+
 ## Send an Adaptive Card
 
 You can also send an Adaptive Card as an attachment; however, only a few channels currently support adaptive cards.
@@ -176,6 +229,7 @@ card.Body.Add(new TextInput()
 });
 card.Actions.Add(new SubmitAction() { Title = "Submit", DataJson = "{ Action:'Submit' }" });
 card.Actions.Add(new SubmitAction() { Title = "Cancel", DataJson = "{ Action:'Cancel'}" });
+
 var activity = MessageFactory.Attachment(new Attachment(AdaptiveCard.ContentType, content: card));
 
 // Send the activity as a reply to the user.
@@ -276,7 +330,6 @@ const message = CardFactory.adaptiveCard({
                 }
             ]
         },
-        
         {
             "type": "ColumnSet",
             "spacing": "medium",
@@ -314,6 +367,7 @@ const message = CardFactory.adaptiveCard({
 // send adaptive card as attachment 
 await context.sendActivity({ attachments: [message] })
 ```
+
 ---
 
 ## Send a carousel of cards

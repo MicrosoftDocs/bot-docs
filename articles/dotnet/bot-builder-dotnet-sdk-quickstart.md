@@ -15,14 +15,14 @@ monikerRange: 'azure-bot-service-4.0'
 
 This quickstart walks you through building a bot by using the Bot Application template and the Bot Builder SDK for .NET, and then testing it with the Bot Framework Emulator. This is based off the [Microsoft Bot Builder SDK v4](https://github.com/Microsoft/botbuilder-dotnet).
 
-## Pre-requisites
+## Prerequisites
 - Visual Studio [2017](https://www.visualstudio.com/downloads)
 - Bot Builder SDK v4 template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
 ## Create a bot
-Install BotBuilderVSIX.vsix template that you downloaded in the pre-requisite section. 
+Install BotBuilderVSIX.vsix template that you downloaded in the prerequisite section. 
 
 In Visual Studio, create a new bot project.
 

@@ -12,50 +12,47 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Sending messages
 
-The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments.
+The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. For more information about activity processing in general, see [Activity processing](bot-builder-concept-activity-processing.md).
 
-This article describes how to send simple text and speech messages, for sending richer content, see how to [add rich media attachments](bot-builder-howto-add-media-attachments.md).
+This article describes how to send simple text and speech messages. For sending richer content, see how to [add rich media attachments](bot-builder-howto-add-media-attachments.md). For information on how to use prompt objects, see how to [prompt users for input](bot-builder-prompts.md).
 
 ## Send a simple text message
 
 To send a simple text message, specify the string you want to send as the activity:
 
 # [C#](#tab/csharp)
+
+In the bot's **OnTurn** method, use the turn context object's **SendActivity** method to send a single message response. You can also use the object's **SendActivities** method to send multiple responses at once.
+
 ```cs
-await context.SendActivity("Greetings from sample message");
+await context.SendActivity("Greetings from sample message.");
 ```
 
 # [JavaScript](#tab/javascript)
+
+In the bot's turn handler, use the turn context object's **sendActivity** method to send a single message response. You can also use the object's **sendActivities** method to send multiple responses at once.
+
 ```javascript
-await context.sendActivity("Greetings from sample message");
+await context.sendActivity("Greetings from sample message.");
 ```
+
 ---
 
 ## Send a spoken message
 
-Certain channels support a speech enabled bot, allowing it to speak to the user. A message has the ability to have both written text to be displayed, and text to be spoken.
+Certain channels support speech-enabled bots, allowing them to speak to the user. A message can have both written and spoken content.
 
-> [!NOTE] 
-> For those channels that don't support speech, the speech argument will be ignored.
+> [!NOTE]
+> For those channels that don't support speech, the speech content is ignored.
 
 # [C#](#tab/csharp)
 
-For .NET, you can specify text to be spoken either in an individual activity message, or through a prompt when using the built in [prompts](bot-builder-prompts.md).
-
-To add speech to a single activity message, specify the `Activity.Speak` property.
+Use the optional **speak** parameter to provide text to be spoken as part of the response.
 
 ```cs
-Activity reply = new Activity();
-reply.Text = "This is text that will be displayed.";
-reply.Speak = "This will be spoken.";
-await context.SendActivity(reply);
-```
-
-When including it in a prompt, specify it as an optional parameter when sending the prompt. For more on prompts, see how to [prompt users for input](bot-builder-prompts.md)
-
-```cs
-TextPrompt textPrompt = new TextPrompt();
-await textPrompt.Prompt(context, "Text to be displayed.", "Text to be spoken.");
+await context.SendActivity(
+    "This is the text to be displayed.",
+    "This is the text to be spoken.");
 ```
 
 # [JavaScript](#tab/javascript)
@@ -69,4 +66,5 @@ const {MessageFactory} = require('botbuilder');
 const basicMessage = MessageFactory.text('This is the text that will be displayed.', 'This is the text that will be spoken.');
 await context.sendActivity(basicMessage);
 ```
+
 ---

@@ -29,21 +29,19 @@ This article describes how to use a message activity's `channelData` property to
 
 ## Create a custom Email message
 
-To create an email message, set the [Activity][Activity] object's `channelData` property to a JSON object that contains these properties: 
+To create an email message, set the [Activity][Activity] object's `channelData` property to a JSON object that contains these properties:
 
-| Property | Description |
-|----|----|
-| htmlBody | An HTML document that specifies the body of the email message. See the channel's documentation for information about supported HTML elements and attributes. |
-| importance | The email's importance level. Valid values are **high**, **normal**, and **low**. The default value is **normal**. |
-| subject | The email's subject. See the channel's documentation for information about field requirements. |
+[!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
 
 This snippet shows an example of the `channelData` property for a custom email message.
 
 ```json
-"channelData": {
-    "htmlBody" : "<html><body style=\"font-family: Calibri; font-size: 11pt;\">This is the email body!</body></html>",
-    "subject":"This is the email subject",
-    "importance":"high"
+"channelData":
+{
+    "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
+    "subject": "Super awesome message subject",
+    "importance": "high",
+    "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
 }
 ```
 
