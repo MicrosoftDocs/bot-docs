@@ -39,7 +39,7 @@ There are more complex ways to recognize user input, such as [LUIS](bot-builder-
 
 Receiving an activity, and subsequently processing it through your bot, is called a **turn**; this represents one complete cycle of your bot. A turn ends when all execution is done, the activity is fully processed and all the layers of the bot have completed.
 
-Remember the activity object that is created with the activity information? That object is called the **turn context**, and it simply gives context to the current turn we are processing. That turn context exists for the duration of the turn, and then is disposed of, marking the end of the turn.
+When the activity is received, the bot creates a **turn context** to provide information about the activity and give context to the current turn we are processing. That turn context exists for the duration of the turn, and then is disposed of, marking the end of the turn.
 
 The [turn context](bot-builder-concept-activity-processing.md#turn-context) contains a handful of information, and the same object is used through all the layers of your bot. This is helpful because this turn context object can be, and should be, used to store information needed later in that turn if needed.
 
