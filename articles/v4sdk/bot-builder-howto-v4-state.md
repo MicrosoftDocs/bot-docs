@@ -1,6 +1,7 @@
 ---
 title: Save state using conversation and user properties | Microsoft Docs
 description: Learn how to save and retrieve data with V4 of the Bot Builder SDK for .NET.
+keywords: conversation state, user state, state middleware, conversation flow, file storage, azure table storage
 author: ivorb
 ms.author: v-demak
 manager: kamrani

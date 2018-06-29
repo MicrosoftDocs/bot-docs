@@ -1,6 +1,7 @@
 ---
 title: Channels and the Bot Connector Service | Microsoft Docs
 description: Bot Builder SDK key concepts.
+keywords: activities, conversation
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani

@@ -1,6 +1,7 @@
 ---
 title: Manage a conversation flow with dialogs | Microsoft Docs
 description: Learn how to manage a conversation flow with dialogs in the Bot Builder SDK for Node.js.
+keywords: conversation flow, dialogs, prompts, waterfalls, dialog set
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

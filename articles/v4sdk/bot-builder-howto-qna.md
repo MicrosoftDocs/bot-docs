@@ -1,6 +1,7 @@
 ---
 title: Using QnA Maker | Microsoft Docs
 description: Learn how to use QnA maker in your bot.
+keywords: question and answer, QnA, FAQs, middleware 
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

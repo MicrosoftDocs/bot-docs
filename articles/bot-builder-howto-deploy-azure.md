@@ -1,6 +1,7 @@
 ---
 title: Deploy your bot to Azure | Microsoft Docs
 description: Deploy your bot to the Azure cloud.
+keywords: deploy bot, azure deploy, bot channel registration, publish visual studio
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

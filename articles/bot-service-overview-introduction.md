@@ -1,6 +1,7 @@
 ---
 title: About Bot Service | Microsoft Docs
 description: Learn about Bot Service, a service for building, connecting, testing, deploying, monitoring, and managing bots.
+keywords: overview, introduction, SDK, outline
 author: Kaiqb
 ms.author: kamrani
 manager: kamrani

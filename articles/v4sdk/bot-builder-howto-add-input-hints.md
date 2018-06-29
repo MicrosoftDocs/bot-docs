@@ -1,6 +1,7 @@
 ---
 title: Add input hints to messages | Microsoft Docs
 description: Learn how to add input hints to messages using the Bot Builder SDK.
+keywords: Inputhints, accepting input, expecting input, ignoring input, speach 
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

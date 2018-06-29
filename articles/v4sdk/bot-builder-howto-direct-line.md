@@ -1,6 +1,7 @@
 ---
 title: How to create a Direct Line bot and client | Microsoft Docs
 description: Learn how to create a Direct Line bot and client with V4 of the Bot Builder SDK for .NET.
+keywords: direct line bot, direct line client, custom channel, console-based, publish
 author: v-royhar
 ms.author: v-royhar
 manager: kamrani

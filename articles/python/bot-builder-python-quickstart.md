@@ -1,6 +1,7 @@
 ---
 title: Create a bot using Bot Builder SDK for Python | Microsoft Docs
 description: Quickly create a bot using the Bot Builder SDK for Python.
+keywords: Bot Builder SDK, create a bot, quickstart, python, getting started
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani

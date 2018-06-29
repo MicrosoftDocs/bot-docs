@@ -1,6 +1,7 @@
 ---
 title: Principles of bot design | Microsoft Docs
 description: Learn what makes a good conversational bot and how to plan and design bots to fit your needs and delight your users.
+keywords: best practices, bot design 
 author: matvelloso
 ms.author: mateusv
 manager: kamrani

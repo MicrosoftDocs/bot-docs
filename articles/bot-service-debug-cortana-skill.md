@@ -1,6 +1,7 @@
 ---
 title: Test a Cortana skill | Microsoft Docs
 description: Learn how to test a Cortana bot by invoking a Cortana skill.
+keywords: Bot Builder SDK, register your bot, cortana
 author: v-ducvo
 manager: kamrani
 ms.topic: article

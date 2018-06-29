@@ -1,6 +1,7 @@
 ---
 title: Conversations within the Bot Builder SDK | Microsoft Docs
 description: Describes what a conversation is within the Bot Builder SDK.
+keywords: conversation flow, recognize intent, single turn, multiple turn
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
