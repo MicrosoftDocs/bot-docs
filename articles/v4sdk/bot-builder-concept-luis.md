@@ -47,7 +47,7 @@ Your bot uses the intent recognized by LUIS to determine the conversation topic,
 
 To save development time, LUIS provides pre-trained language models that recognize common utterances for common categories of bots. <!-- Consider if you'll use prebuilt or custom intents and entities: -->
 
-* **Prebuilt domains** are pretrained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. See [the Notes sample] for an example of using a prebuilt domain in your bot, and see (https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains) for more information on the prebuilt domains LUIS offers.
+* **Prebuilt domains** are pretrained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. See the Reminders sample for [C#]( https://github.com/Microsoft/botbuilder-dotnet/tree/master/samples-final/8.AspNetCore-LUIS-Bot) or [JavaScript](https://github.com/Microsoft/botbuilder-js/tree/master/samples/luis-bot-es6) for an example of using a prebuilt domain in your bot, and tale a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains)  that LUIS offers.
 * **Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age.
 See [How to recognize dates and times] for info on using LUIS to extract this info for your bot. See [Use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize. 
 
@@ -57,7 +57,7 @@ See [How to recognize dates and times] for info on using LUIS to extract this in
 
 
 ## How your bot gets messages from LUIS
-Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware][bot-builder-concept-middleware.md]) to automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _receive handler_ to route the conversation flow based on the intent in the LUIS response. 
+Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality that automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _receive handler_ to route the conversation flow based on the intent in the LUIS response. 
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
