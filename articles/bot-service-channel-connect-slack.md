@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Slack | Microsoft Docs
 description: Learn how to configure a bot's connection to Slack.
+keywords: connect a bot, bot channel, Slack bot, Slack messaging app
 author: RobStand
 ms.author: kamrani
 manager: kamrani

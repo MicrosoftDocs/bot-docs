@@ -1,6 +1,7 @@
 ---
 title: Extract typed LUIS results | Microsoft Docs
 description: Learn how to use LUIS to extract entities with the Bot Builder SDK.
+keywords: intents, entities, LUISGen, extract 
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani

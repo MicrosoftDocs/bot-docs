@@ -1,6 +1,7 @@
 ---
 title: Write your own middleware | Microsoft Docs
 description: Understand how to write your own middleware.
+keywords: middleware, custom middleware, short circuit, fallback, activity handlers
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

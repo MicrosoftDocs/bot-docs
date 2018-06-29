@@ -1,6 +1,7 @@
 ---
 title: Bot Builder basics | Microsoft Docs
 description: Bot Builder SDK basic structure.
+keywords: turn context, bot structure, receiving input
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
