@@ -1,6 +1,7 @@
 ---
 title: Add media to messages | Microsoft Docs
 description: Learn how to add media to messages using the Bot Builder SDK.
+keywords: media, messages, images, audio, video, files, MessageFactory, rich messages
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Cortana | Microsoft Docs
 description: Learn how to configure a bot for access through the Cortana interface.
+keywords: cortana, bot channel, configure cortana
 author: RobStand
 ms.author: kamrani
 manager: kamrani

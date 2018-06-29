@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Skype | Microsoft Docs
 description: Learn how to configure a bot for access through the Skpye interface.
+keywords: skype, bot channels, configure skype, publish, connect to channels
 author: v-ducvo
 ms.author: RobStand
 manager: kamrani

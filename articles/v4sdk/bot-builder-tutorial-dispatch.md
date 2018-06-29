@@ -1,6 +1,7 @@
 ---
 title: Use the Dispatch tool for LUIS and QnA Maker | Microsoft Docs
 description: Learn how to use LUIS and QnA maker in your bot.
+keywords: Luis, QnA, Dispatch tool, multiple services
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani

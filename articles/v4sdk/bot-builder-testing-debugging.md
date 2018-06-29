@@ -1,6 +1,7 @@
 ---
 title: Testing and debugging your bot | Microsoft Docs
 description: Understand how to test and debug your bot.
+keywords: testing principles, mock elements, faq, testing levels
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

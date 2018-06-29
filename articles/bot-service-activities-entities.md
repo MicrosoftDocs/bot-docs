@@ -1,6 +1,7 @@
 ---
 title: Entities and activity types | Microsoft Docs
 description: Entities and activity types.
+keywords: mention entities, activity types, consume entities
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

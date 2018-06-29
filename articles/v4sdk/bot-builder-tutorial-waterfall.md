@@ -1,6 +1,7 @@
 ---
 title: Ask the user questions | Microsoft Docs
 description: Learn how to use the waterfall model to ask user for multiple inputs in the Bot Builder SDK.
+keywords: waterfalls, dialogs, asking a question, prompts
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

@@ -1,6 +1,7 @@
 ---
 title: Debug a bot built using Bot Service | Microsoft Docs
 description: Learn how to debug a bot built using Bot Service.
+keywords: Bot Builder SDK, continuous deployment, app service, emulator
 author: kaiqb
 ms.author: kamrani
 manager: kamrani

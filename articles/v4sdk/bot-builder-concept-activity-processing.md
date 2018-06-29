@@ -1,6 +1,7 @@
 ---
 title: Activity processing | Microsoft Docs
 description: Understand activity processing in the bot SDK.
+keywords: bot adapter, custom middleware, short circuit, fallback, event handlers
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
@@ -70,7 +71,7 @@ This also means the order of your responses is not guaranteed, particularly when
 
 ## Response event handlers
 
-In addition to the bot and middleware logic, response handlers (also sometimes referred to as activity handlers) can be added to the context object. These handlers are called when the associated response happens on the current context object, before executing the actual response. These handlers are useful when you know you'll want to do something, either before or after the actual event, for every activity of that type for the rest of the current response.
+In addition to the bot and middleware logic, response handlers (also sometimes referred to as event handlers, or activity event handlers) can be added to the context object. These handlers are called when the associated response happens on the current context object, before executing the actual response. These handlers are useful when you know you'll want to do something, either before or after the actual event, for every activity of that type for the rest of the current response.
 
 > [!WARNING]
 > Be careful to not call an activity response method from within it's respective response event handler, for example, calling the send activity method from within an _on send activity_ handler. Doing so can generate an infinite loop.

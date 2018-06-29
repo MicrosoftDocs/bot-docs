@@ -1,6 +1,7 @@
 ---
 title: Download and redeploy the source code for a Bot Service | Microsoft Docs
 description: Learn how to download and publish a Bot Service.
+keywords: download source code, redeploy, deploy, zip file, publish
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
