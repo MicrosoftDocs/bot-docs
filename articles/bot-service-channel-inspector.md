@@ -1,7 +1,7 @@
 ---
 title: Preview bot features with the Channel Inspector | Microsoft Docs
 description: Learn how various Bot Framework features look and work on different channels by using the Channel Inspector.
-keyword: bot, features, channel, display
+keyword: bot, preview features, channel, display, Channel Inspector, Text formatting, markdown, XML
 author: RobStand
 ms.author: kamrani
 manager: kamrani

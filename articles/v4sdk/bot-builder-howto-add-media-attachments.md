@@ -1,6 +1,7 @@
 ---
 title: Add media to messages | Microsoft Docs
 description: Learn how to add media to messages using the Bot Builder SDK.
+keywords: media, messages, images, audio, video, files, MessageFactory, rich messages
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
@@ -142,38 +143,12 @@ await context.sendActivity(message);
 
 <!--Lifted from the RESP API documentation-->
 
-A rich card comprises a title, description, link, and images. A message can contain multiple rich cards, displayed in either list format or carousel format. The Bot Framework currently supports these types of rich cards:
+A rich card comprises a title, description, link, and images. A message can contain multiple rich cards, displayed in either list format or carousel format. The Bot Builder SDK currently supports a wide range of rich cards. To see a listing of rich cards and channels in which they are supported, see [Design UX elements](../bot-service-design-user-experience.md).
 
 > [!TIP]
 > To determine the type of rich cards that a channel supports and see how the channel renders rich cards, see the [Channel Inspector](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-inspector?view=azure-bot-service-4.0). Consult the channel's documentation for information about limitations on the contents of cards (for example, the maximum number of buttons or maximum length of title).
 
-# [C#](#tab/csharp)
-
-| Card type | Description |
-| :---- | :---- |
-| AnimationCard | A card that can play animated GIFs or short videos. |
-| AudioCard | A card that can play an audio file. |
-| HeroCard | A card that typically contains a single large image, one or more buttons, and text. |
-| ThumbnailCard | A card that typically contains a single thumbnail image, one or more buttons, and text. |
-| ReceiptCard | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-| SignInCard | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-| VideoCard | A card that can play videos.
-
-# [JavaScript](#tab/javascript)
-
-| Card type | Description |
-| :---- | :---- |
-| animationCard | A card that can play animated GIFs or short videos. |
-| audioCard | A card that can play an audio file. |
-| heroCard | A card that typically contains a single large image, one or more buttons, and text. |
-| thumbnailCard | A card that typically contains a single thumbnail image, one or more buttons, and text. |
-| receiptCard | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-| signInCard | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-| videoCard | A card that can play videos.
-
----
-
-### Process events within rich cards
+## Process events within rich cards
 
 To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card.
 
@@ -181,19 +156,78 @@ To function correctly, assign an action type to each clickable item on the card.
 
 | Type | Value |
 | :---- | :---- |
-| openUrl | URL to be opened in the built-in browser |
+| openUrl | URL to be opened in the built-in browser. Responds to Tap or Click by opening the URL. |
 | imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
 | postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). Some client applications may display this text in the message feed, where it will be visible to all conversation participants. |
-| call | Destination for a phone call in this format: `tel:123123123123` |
-| playAudio | URL of audio to be played |
-| playVideo | URL of video to be played |
-| showImage | URL of image to be displayed |
-| downloadFile | URL of file to be downloaded |
-| signin | URL of OAuth flow to be initiated |
+| call | Destination for a phone call in this format: `tel:123123123123` Responds to Tap or Click by initiating a call.|
+| playAudio | URL of audio to be played. Responds to Tap or Click by playing the audio. |
+| playVideo | URL of video to be played. Responds to Tap or Click by playing the video. |
+| showImage | URL of image to be displayed. Responds to Tap or Click by displaying the image. |
+| downloadFile | URL of file to be downloaded.  Responds to Tap or Click by downloading the file. |
+| signin | URL of OAuth flow to be initiated. Responds to Tap or Click by initiating signin. |
+
+## Hero card using various event types
+
+The following code shows examples using various rich card events.
+
+# [C#](#tab/csharp)
+
+```csharp
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Core.Extensions;
+using Microsoft.Bot.Schema;
+
+// Create the activity and attach a Hero card.
+var activity = MessageFactory.Attachment(
+    new HeroCard(
+        title: "Holler Back Buttons",
+        images: new CardImage[] { new CardImage(url: "imageUrl.png") },
+        buttons: new CardAction[]
+        {
+            new CardAction(title: "Shout Out Loud", type: ActionTypes.imBack, value: "You can ALL hear me!"),
+            new CardAction(title: "Much Quieter", type: ActionTypes.postBack, value: "Shh! My Bot friend hears me."),
+            new CardAction(title: "Show me how to Holler", type: ActionTypes.openURL, value: $"https://en.wikipedia.org/wiki/{cardContent.Key}")
+        })
+    .ToAttachment());
+
+// Send the activity as a reply to the user.
+await context.SendActivity(activity);
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+const hero = MessageFactory.attachment(
+                CardFactory.heroCard(
+                    'Holler Back Buttons',
+                    ['https://example.com/whiteShirt.jpg'],
+                    [{
+                        type: ActionTypes.ImBack,
+                        title: 'ImBack',
+                        value: 'You can ALL hear me! Shout Out Loud'
+                    },
+                    {
+                        type: ActionTypes.PostBack,
+                        title: 'PostBack',
+                        value: 'Shh! My Bot friend hears me. Much Quieter'
+                    },
+                    {
+                        type: ActionTypes.OpenUrl,
+                        title: 'OpenUrl',
+                        value: 'https://en.wikipedia.org/wiki/{cardContent.Key}'
+                    }]
+                )
+            );
+
+            await context.sendActivity(hero);
+
+```
+
+---
 
 ## Send an Adaptive Card
 
-You can also send an Adaptive Card as an attachment; however, only a few channels currently support adaptive cards.
+You can also send an Adaptive Card as an attachment. Currently not all channels support adaptive cards. To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
 
 # [C#](#tab/csharp)
 To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package.
@@ -434,43 +468,8 @@ await context.sendActivity(messageWithCarouselOfCards);
 
 ---
 
-## Send suggested actions
-
-You can also create a message that contains a list of suggested actions (also known as "quick replies") that will be shown to the user for a single turn of the conversation.
-
-# [C#](#tab/csharp)
-
-```csharp
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Schema;
-
-// Create the activity and add suggested actions and summary text.
-var activity = MessageFactory.SuggestedActions(
-    new CardAction[]
-    {
-        new CardAction(title: "red", type: ActionTypes.ImBack, value: "red"),
-        new CardAction( title: "green", type: ActionTypes.ImBack, value: "green"),
-        new CardAction(title: "blue", type: ActionTypes.ImBack, value: "blue")
-    }, text: "Choose a color");
-activity.Summary = "This message contains a set of suggested actions";
-
-// Send the activity as a reply to the user.
-await context.SendActivity(activity);
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-//  init message object
-const basicMessage = MessageFactory.suggestedActions(
-    ['Option one', 'Option two', 'Option 3'], 'Please choose one option');
-
-await context.sendActivity(basicMessage) // send the message
-```
-
----
-
 ## Additional resources
+
 [Preview features with the Channel Inspector](../bot-service-channel-inspector.md)
 
+---

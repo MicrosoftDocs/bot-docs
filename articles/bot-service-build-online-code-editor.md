@@ -1,6 +1,7 @@
 ---
 title: Build a bot with the Azure online code editor | Microsoft Docs
 description: Learn how to build your bot using the Online code editor in Bot Service. 
+keywords: online code editor, azure portal, functions bot
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

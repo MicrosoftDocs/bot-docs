@@ -1,6 +1,7 @@
 ---
 title: Language Understanding for bots | Microsoft Docs
 description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
+keywords: LUIS, intent, recognizer, dispatch tool, qna, qna maker
 author: DeniseMak
 ms.author: v-demak
 manager: rstand

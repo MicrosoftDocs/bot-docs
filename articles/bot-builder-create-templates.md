@@ -1,6 +1,7 @@
 ---
 title: Create bots with Botbuilder Templates
 description: Botbuilder tools allowas you to manage your bot resources directly from the command line
+keywords: botbuilder templates, node.js, python, java, .net, ludown, yeoman
 author: matthewshim-ms
 ms.author: v-shimma
 manager: kamrani

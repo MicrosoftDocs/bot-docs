@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Skype for Business  | Microsoft Docs
 description: Learn how to connect a bot with the Skype for Business tenant.
+keywords: skype for business, bot channels
 author: RobStand
 ms.author: kamrani
 manager: kamrani

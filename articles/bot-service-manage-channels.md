@@ -1,6 +1,7 @@
 ---
 title: Configure a bot to run on one or more channels | Microsoft Docs
 description: Learn how to configure a bot to run on one or more channels using the Bot Framework Portal.
+keywords: bot channels, configure, cortana, facebook messenger, kik, slack, skype, azure portal
 author: RobStand
 ms.author: kamrani
 manager: kamrani
