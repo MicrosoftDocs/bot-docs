@@ -50,7 +50,7 @@ To save development time, LUIS provides pre-trained language models that recogni
 
 * **Prebuilt domains** are pretrained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. See the Reminders sample for [C#]( https://github.com/Microsoft/botbuilder-dotnet/tree/master/samples-final/8.AspNetCore-LUIS-Bot) or [JavaScript](https://github.com/Microsoft/botbuilder-js/tree/master/samples/luis-bot-es6) for an example of using a prebuilt domain in your bot, and take a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains)  that LUIS offers.
 * **Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age.
-See [How to recognize dates and times] for info on using LUIS to extract this info for your bot. See [Use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize. 
+See [Extract typed LUIS results][luis-v4-typed-entities] for an example that uses LUIS to extract dates. See [Use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize. 
 
 
 
@@ -110,7 +110,7 @@ For a bot that users will speak to, integrating it with LUIS can help your bot i
 
 
 
-<!-- TODO: Point to actual quickstart in bot-docs-pr -->
+[luis-v4-typed-entities]: bot-builder-howto-v4-luisgen.md
 [luis-v4-how-to]: bot-builder-howto-v4-luis.md
 [luis-v4-cs-quickstart]: https://github.com/Microsoft/botbuilder-dotnet/wiki/Using-LUIS-and-QnA-Maker
 [luis-v4-js-quickstart]: https://github.com/Microsoft/botbuilder-js/wiki/Using-LUIS-and-QnA-Maker
