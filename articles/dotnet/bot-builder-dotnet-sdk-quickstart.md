@@ -33,7 +33,7 @@ In Visual Studio, create a new bot project.
 > If needed, update [NuGet packages](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 ## Explore code
-Open Startup.cs file to review code in the `ConfigureServices(IServiceCollection services)` method. The `CatchExceptonMiddleware` middleware is added to the messaging pipeline. It handles any exceptions thrown by other middleware, or by OnTurn method. 
+Open Startup.cs file to review code in the `ConfigureServices(IServiceCollection services)` method. The `CatchExceptionMiddleware` middleware is added to the messaging pipeline. It handles any exceptions thrown by other middleware, or by OnTurn method. 
 
 ```cs
 options.Middleware.Add(new CatchExceptionMiddleware<Exception>(async (context, exception) =>
