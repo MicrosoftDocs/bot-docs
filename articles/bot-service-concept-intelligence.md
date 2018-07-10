@@ -1,6 +1,7 @@
 ---
 title: Add intelligence to bots with Cognitive Services | Microsoft Docs
 description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
+keywords: language understanding, knowledge extraction, speech recognition, web search
 author: RobStand
 ms.author: rstand
 manager: rstand

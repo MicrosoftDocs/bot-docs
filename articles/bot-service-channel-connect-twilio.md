@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Twilio | Microsoft Docs
 description: Learn how to configure a bot's connection to Twilio.
+keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
 author: RobStand
 ms.author: kamrani
 manager: kamrani

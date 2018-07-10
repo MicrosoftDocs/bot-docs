@@ -1,6 +1,7 @@
 ---
 title: Entities and activity types | Microsoft Docs
 description: Entities and activity types.
+keywords: mention entities, activity types, consume entities
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
@@ -244,4 +245,4 @@ A bot may send a typing activity to indicate to the user that it is working to f
 
 ## Additional resources
 
-- <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>

@@ -111,6 +111,7 @@ public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitabl
 When it is time to send the message, the bot creates a new dialog and adds it to the top of the dialog stack. The new dialog takes control of the conversation, delivers the proactive message, closes, and then returns control to the previous dialog in the stack. 
 
 ```cs
+// This will interrupt the conversation and send the user to SurveyDialog, then wait until that's done 
 public static async Task Resume() 
 {
     // Recreate the message from the conversation reference that was saved previously.
@@ -123,13 +124,16 @@ public static async Task Resume()
         var botData = scope.Resolve<IBotData>();
         await botData.LoadAsync(CancellationToken.None);
 
-        // This is the dialog stack.
-        var stack = scope.Resolve<IDialogStack>();
+        // This is our dialog stack.
+        var task = scope.Resolve<IDialogTask>();
 
         // Create the new dialog and add it to the stack.
-        var dialog =new SurveyDialog();
-        stack.Call(dialog.Void<object, IMessageActivity>(), null);
-        await stack.PollAsync(CancellationToken.None);
+        var dialog = new SurveyDialog();
+        // interrupt the stack. This means that we're stopping whatever conversation that is currently happening with the user
+        // Then adding this stack to run and once it's finished, we will be back to the original conversation
+        task.Call(dialog.Void<object, IMessageActivity>(), null);
+        
+        await task.PollAsync(CancellationToken.None);
 
         // Flush the dialog stack back to its state store.
         await botData.FlushAsync(CancellationToken.None);        

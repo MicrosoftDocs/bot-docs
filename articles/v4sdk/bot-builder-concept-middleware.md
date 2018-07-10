@@ -1,6 +1,7 @@
 ---
 title: Middleware | Microsoft Docs
 description: Understand middleware and it's uses within the bot SDK.
+keywords: middleware, middleware pipeline, short circuit, middleware uses
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

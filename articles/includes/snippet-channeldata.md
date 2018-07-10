@@ -285,4 +285,4 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 - [Activities overview](../dotnet/bot-builder-dotnet-activities.md)
 - [Create messages](../dotnet/bot-builder-dotnet-create-messages.md)
-- <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>

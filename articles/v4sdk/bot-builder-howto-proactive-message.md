@@ -1,6 +1,7 @@
 ---
 title: How to use proactive messaging | Microsoft Docs
 description: Understand how to proactively message with your bot.
+keywords: proactive message
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani

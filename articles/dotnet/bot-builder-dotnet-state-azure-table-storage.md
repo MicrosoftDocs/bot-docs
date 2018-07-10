@@ -61,8 +61,7 @@ using Microsoft.Bot.Builder.Azure;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Internals;
 ```
-Create an instance of the `TableBotDataStore` class
-The `TableBotDataStore` class implements the `IBotDataStore<BotData>` interface. The `IBotDataStore` interface allows you to override the default Connector State Service connection. 
+In the `Application_Start()` method, create an instance of the `TableBotDataStore` class. The `TableBotDataStore` class implements the `IBotDataStore<BotData>` interface. The `IBotDataStore` interface allows you to override the default Connector State Service connection.
  ```cs
  var store = new TableBotDataStore(ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString);
  ```
@@ -86,7 +85,7 @@ Register the service as shown below:
                 
             });
  ```
-Save the global.asax.cs file.
+Save the Global.asax.cs file.
 
 ## Run your bot app
 Run your bot in Visual Studio, the code you added will create the custom **botdata** table in Azure.

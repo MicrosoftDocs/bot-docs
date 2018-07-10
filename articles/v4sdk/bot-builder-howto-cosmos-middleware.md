@@ -1,6 +1,7 @@
 ---
 title: Create middleware using Cosmos DB | Microsoft Docs
 description: Learn how to create custom middleware that logs to Cosmos DB.
+keywords: middleware, cosmos db, database, azure, onTurn
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

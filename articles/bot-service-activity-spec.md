@@ -1003,7 +1003,7 @@ Activity [entities](#entity) communicate extra metadata about the activity, such
 
 | Type           | URI equivalent                          | Description               |
 | -------------- | --------------------------------------- | ------------------------- |
-| GeoCoordinates | https://schema.org/GeoCoordinates/      | Schema.org GeoCoordinates |
+| GeoCoordinates | https://schema.org/GeoCoordinates       | Schema.org GeoCoordinates |
 | Mention        | https://botframework.com/schema/mention | @-mention                 |
 | Place          | https://schema.org/Place                | Schema.org place          |
 | Thing          | https://schema.org/Thing                | Schema.org thing          |

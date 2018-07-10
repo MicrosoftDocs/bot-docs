@@ -1,6 +1,7 @@
 ---
 title: Create bots with Botbuilder Templates
 description: Botbuilder tools allowas you to manage your bot resources directly from the command line
+keywords: botbuilder templates, node.js, python, java, .net, ludown, yeoman
 author: matthewshim-ms
 ms.author: v-shimma
 manager: kamrani
@@ -134,7 +135,7 @@ This will take the current endpoint, MSA appID and password from the target reso
 > Every bot builder tool includes a global help command, accessible from the command line by entering **-h** or **--help**. This command is available at any time from any action, which will provide a helpful display of the options available to you along with their descriptions 
 
 ### LUDown
-[LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/ludown) allows you to describe and create powerful language components for bots using **.lu** files. The new .lu file is a type of markdown format which the LUDown tool consumes and outputs .json files specific to the target service. Currently, you can use .lu files to create a new [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app) application or [QnA](https://qnamaker.ai/Documentation/CreateKb) knowledge base, using different formats for each. LUDown is available as an npm module, and can be used by installing globally to your machine:
+[LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown) allows you to describe and create powerful language components for bots using **.lu** files. The new .lu file is a type of markdown format which the LUDown tool consumes and outputs .json files specific to the target service. Currently, you can use .lu files to create a new [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app) application or [QnA](https://qnamaker.ai/Documentation/CreateKb) knowledge base, using different formats for each. LUDown is available as an npm module, and can be used by installing globally to your machine:
 
 ```shell
 npm install -g ludown
@@ -152,15 +153,15 @@ For example, you can create multiple LUIS intents in a single .lu file as follow
 
 ```LUDown
 # Greeting
-Hi
-Hello
-Good morning
-Good evening
+- Hi
+- Hello
+- Good morning
+- Good evening
 
 # Help
-help
-I need help
-please help
+- help
+- I need help
+- please help
 ```
 
 ### QnA pairs with LUDown
@@ -270,5 +271,5 @@ qnamaker create --in qnaKB.json --msbot | msbot connect qna --stdin
 - [BotBuilder Tools Source Code](https://github.com/Microsoft/botbuilder-tools)
 - [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/MSBot)
 - [ChatDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Chatdown)
-- [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/ludown)
+- [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
