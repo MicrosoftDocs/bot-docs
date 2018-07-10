@@ -143,7 +143,7 @@ At this point, your bot is running locally. Next, start the emulator and then co
 
 4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
 
-Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+Send "Hi" to your bot, and the bot will respond with '0: You said "Hi"' to the message.
 
 ## Next steps
 
