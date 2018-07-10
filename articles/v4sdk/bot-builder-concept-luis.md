@@ -26,7 +26,7 @@ The interaction between users and bots is often free-form, and bots need to unde
 
 ## Recognize intent
 
-[LUIS](https://www.luis.ai) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be are endless variations on *utterances*, which are the spoken or textual input from the user.
+[LUIS](https://www.luis.ai) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
 
 For example, consider the many ways a user of a travel bot can ask to book a flight. 
 
@@ -36,7 +36,7 @@ For example, consider the many ways a user of a travel bot can ask to book a fli
 
 These utterances can have different structures and contain various synonyms for “flight” that you haven't thought of. In your bot, it can be challening to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
 
-When you design your bot your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In <a href="https://www.luis.ai" target="_blank">LUIS</a>, you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
+When you design your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In <a href="https://www.luis.ai" target="_blank">LUIS</a>, you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
 
 Your bot uses the intent recognized by LUIS to determine the conversation topic, or begin a conversation flow. For example, when a user says "I'd like to book a flight", your bot detects the BookFlight intent and invokes the conversation flow for starting a search for flights. LUIS detects entities like the destination city and the departure date, both in the original utterance that triggers the intent and later in the conversation flow. Once the bot has all the information it needs, it can fulfill the user's intent.
 
@@ -48,9 +48,9 @@ Your bot uses the intent recognized by LUIS to determine the conversation topic,
 
 To save development time, LUIS provides pre-trained language models that recognize common utterances for common categories of bots. <!-- Consider if you'll use prebuilt or custom intents and entities: -->
 
-* **Prebuilt domains** are pretrained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. See the Reminders sample for [C#]( https://github.com/Microsoft/botbuilder-dotnet/tree/master/samples-final/8.AspNetCore-LUIS-Bot) or [JavaScript](https://github.com/Microsoft/botbuilder-js/tree/master/samples/luis-bot-es6) for an example of using a prebuilt domain in your bot, and tale a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains)  that LUIS offers.
+* **Prebuilt domains** are pretrained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. See the Reminders sample for [C#]( https://github.com/Microsoft/botbuilder-dotnet/tree/master/samples-final/8.AspNetCore-LUIS-Bot) or [JavaScript](https://github.com/Microsoft/botbuilder-js/tree/master/samples/luis-bot-es6) for an example of using a prebuilt domain in your bot, and take a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains)  that LUIS offers.
 * **Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age.
-See [How to recognize dates and times] for info on using LUIS to extract this info for your bot. See [Use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize. 
+See [Extract typed LUIS results][luis-v4-typed-entities] for an example that uses LUIS to extract dates. See [Use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize. 
 
 
 
@@ -72,10 +72,10 @@ Consider the following practices when designing a language model for your bot.
 ### Consider the number of intents
 LUIS apps recognize intent by classifying an utterance into one of multiple categories. A natural result is that determining the correct category from among a large number of intents can reduce a LUIS app's ability to distinguish between them. 
 
-One way of reducing the number of intents is to use a hierarchical design. Consider the case of a personal assistant bot that has three intents related to weather, three intents related to home automation, and three other utility intents which are Help, Cancel and Greeting. If you put all the intents in the same LUIS app, you already have 9, and as you add features to the bot, you could end up with dozens. Instead, you can use a dispatcher LUIS app to determine whether the user's request is for weather, home automation, or utility, then call the LUIS app for category that the dispatcher determines. In this case each of the LUIS apps only starts with 3 intents. 
+One way of reducing the number of intents is to use a hierarchical design. Consider the case of a personal assistant bot that has three intents related to weather, three intents related to home automation, and three other utility intents which are Help, Cancel and Greeting. If you put all the intents in the same LUIS app, you already have 9, and as you add features to the bot, you could end up with dozens. Instead, you can use a dispatcher LUIS app to determine whether the user's request is for weather, home automation, or utility, then call the LUIS app for the category that the dispatcher determines. In this case each of the LUIS apps only starts with 3 intents. 
 
 ### Use a None intent 
-It's often the case that users of your bot will say something expected or unrelated to the current conversation flow. The None intent is provided for handling those messages. If you don't train an intent for handling the fallback, default or "none of the above" cases, your LUIS app can only classify messages into the into intents it has defined. So for example, let's say you have a LUIS app with two intents: `HomeAutomation.TurnOn` and `HomeAutomation.TurnOff`. If those are the only intents, and the input is something unrelated like "schedule an appointment on Friday", your LUIS app has no choice but to classify that message as either HomeAutomation.TurnOn or HomeAutomation.TurnOff. If your LUIS app has a `None` intent with a few examples, you can provide some fallback logic in your bot to handle unexpected utterances.  
+It's often the case that users of your bot will say something expected or unrelated to the current conversation flow. The None intent is provided for handling those messages. If you don't train an intent for handling the fallback, default or "none of the above" cases, your LUIS app can only classify messages into the intents it has defined. So for example, let's say you have a LUIS app with two intents: `HomeAutomation.TurnOn` and `HomeAutomation.TurnOff`. If those are the only intents, and the input is something unrelated like "schedule an appointment on Friday", your LUIS app has no choice but to classify that message as either HomeAutomation.TurnOn or HomeAutomation.TurnOff. If your LUIS app has a `None` intent with a few examples, you can provide some fallback logic in your bot to handle unexpected utterances.  
 
 ### Review the utterances that LUIS app receives
 LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [Review suggested utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walkthrough.
@@ -110,7 +110,7 @@ For a bot that users will speak to, integrating it with LUIS can help your bot i
 
 
 
-<!-- TODO: Point to actual quickstart in bot-docs-pr -->
+[luis-v4-typed-entities]: bot-builder-howto-v4-luisgen.md
 [luis-v4-how-to]: bot-builder-howto-v4-luis.md
 [luis-v4-cs-quickstart]: https://github.com/Microsoft/botbuilder-dotnet/wiki/Using-LUIS-and-QnA-Maker
 [luis-v4-js-quickstart]: https://github.com/Microsoft/botbuilder-js/wiki/Using-LUIS-and-QnA-Maker
