@@ -135,7 +135,7 @@ This will take the current endpoint, MSA appID and password from the target reso
 > Every bot builder tool includes a global help command, accessible from the command line by entering **-h** or **--help**. This command is available at any time from any action, which will provide a helpful display of the options available to you along with their descriptions 
 
 ### LUDown
-[LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/ludown) allows you to describe and create powerful language components for bots using **.lu** files. The new .lu file is a type of markdown format which the LUDown tool consumes and outputs .json files specific to the target service. Currently, you can use .lu files to create a new [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app) application or [QnA](https://qnamaker.ai/Documentation/CreateKb) knowledge base, using different formats for each. LUDown is available as an npm module, and can be used by installing globally to your machine:
+[LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown) allows you to describe and create powerful language components for bots using **.lu** files. The new .lu file is a type of markdown format which the LUDown tool consumes and outputs .json files specific to the target service. Currently, you can use .lu files to create a new [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app) application or [QnA](https://qnamaker.ai/Documentation/CreateKb) knowledge base, using different formats for each. LUDown is available as an npm module, and can be used by installing globally to your machine:
 
 ```shell
 npm install -g ludown
@@ -271,5 +271,5 @@ qnamaker create --in qnaKB.json --msbot | msbot connect qna --stdin
 - [BotBuilder Tools Source Code](https://github.com/Microsoft/botbuilder-tools)
 - [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/MSBot)
 - [ChatDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Chatdown)
-- [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/ludown)
+- [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
