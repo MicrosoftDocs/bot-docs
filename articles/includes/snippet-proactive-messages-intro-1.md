@@ -25,9 +25,7 @@ Proactive messages can create unexpected behavior. Consider the following scenar
 
 In this example, the user has previously asked the bot to monitor prices of a hotel in Las Vegas. 
 The bot launched a background monitoring task, which has been running continuously for the past several days. 
-In the conversation, the user is currently booking a trip to London when  
-the background task triggers a notification message about a discount for the Las Vegas hotel.
-The bot interjects this information into the conversation, making for a confusing user experience. 
+In the conversation, the user is currently booking a trip to London when the background task triggers a notification message about a discount for the Las Vegas hotel. The bot interjects this information into the conversation, making for a confusing user experience. 
 
 How should the bot have handled this situation? 
 
