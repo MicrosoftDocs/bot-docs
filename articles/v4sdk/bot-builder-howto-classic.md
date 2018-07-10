@@ -1,6 +1,7 @@
 ---
 title: How to run .NET SDK V3 bot in SDK V4 | Microsoft Docs
 description: Learn how to convert a bot from 3.x to 4.0 by using the classic NuGet package.
+keywords: migration, classic bot, convert v3, v3 to v4
 author: v-royhar
 ms.author: v-royhar
 manager: kamrani

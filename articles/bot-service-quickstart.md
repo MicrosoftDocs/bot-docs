@@ -1,6 +1,7 @@
 ---
 title: Create a bot with Bot Service | Microsoft Docs
 description: Learn how to create a bot with Bot Service, an integrated, dedicated bot development environment.
+keywords: Quickstart, create bot, bot service, web app bot
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

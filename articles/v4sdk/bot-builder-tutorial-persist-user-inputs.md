@@ -1,6 +1,7 @@
 ---
 title: Persist user data | Microsoft Docs
 description: Learn how to save user state data to storage in the Bot Builder SDK.
+keywords: persist user data, storage, conversation data 
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

@@ -30,7 +30,7 @@ exchange information between bot and user on a channel.
 ## Create a connector client
 
 The [ConnectorClient][ConnectorClient] class contains the methods that a bot uses to communicate with a user on a channel. 
-When your bot receives an <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity</a> object from the Connector, 
+When your bot receives an <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity</a> object from the Connector, 
 it should use the `ServiceUrl` specified for that activity to create the connector client that it'll 
 subsequently use to generate a response. 
 
@@ -120,7 +120,7 @@ This code example uses the `CreateConversation` method to create a group convers
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
-- <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
 - <a href="/dotnet/api/microsoft.bot.connector.connectorclient" target="_blank">ConnectorClient class</a>
 
 [ConnectorClient]: /dotnet/api/microsoft.bot.connector.connectorclient

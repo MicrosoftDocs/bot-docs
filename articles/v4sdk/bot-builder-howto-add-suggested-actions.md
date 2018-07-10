@@ -1,6 +1,7 @@
 ---
 title: Add suggested actions to messages | Microsoft Docs
 description: Learn how to send suggested actions within messages using the Bot Builder SDK for JavaScript.
+keywords: suggested actions, buttons, extra input
 author: Kaiqb
 ms.author: kamrani
 manager: kamrani

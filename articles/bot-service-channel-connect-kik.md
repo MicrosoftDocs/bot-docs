@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Kik | Microsoft Docs
 description:  Learn how to configure a bot's connection to Kik.
+keywords: connect a bot, bot channel, Kik bot, credentials, configure, phone
 author: RobStand
 ms.author: RobStand
 manager: kamrani

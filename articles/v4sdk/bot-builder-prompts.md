@@ -1,6 +1,7 @@
 ---
 title: Prompt users for input | Microsoft Docs
 description: Learn how to prompt users for input in the Bot Builder SDK for Node.js.
+keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
