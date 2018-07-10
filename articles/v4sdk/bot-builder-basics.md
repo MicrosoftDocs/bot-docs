@@ -28,7 +28,7 @@ A bot inherintly doesn't have any visible UI in the way a website or app does, a
 
 Each unit of information is called an **activity** within our bot, and an activity can come in various forms. Activities include both communication from the user, which is referred to as a **message**, or additional information wrapped up in a handful of other [activity types](../bot-service-activities-entities.md). This additional information can include when a new party joins or leaves the conversation, when a conversation ends, etc. Those types of communication from the user's connection are sent by the underlying system, without the user needing to do anything.
 
-The bot receives the communication and wraps it up in an activity object, with the correct type, to give it to your bot code. All of the other activity types provide useful information, however the most interesting and most common activty is the **message** activity from the user.
+The bot receives the communication and wraps it up in an activity object, with the correct type, to give it to your bot code. All of the other activity types provide useful information, however the most interesting and most common activity is the **message** activity from the user.
 
 ## Receiving user input
 
