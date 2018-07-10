@@ -20,7 +20,7 @@ This article describes some of the commonly-used message properties.
 
 ## Customizing a message
 
-To have more control over the text formatting of your messages, you can create a custom message using the [Activity](/dotnet/api/microsoft.bot.connector.activity) object and set the properties necessary before sending it to the user.
+To have more control over the text formatting of your messages, you can create a custom message using the [Activity](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html) object and set the properties necessary before sending it to the user.
 
 This sample shows how to create a custom `message` object and set the `Text`, `TextFormat`, and `Local` properties.
 
@@ -86,7 +86,7 @@ The `GeoCoordinates` object contains these properties:
 | Type | type of the entity ("GeoCoordinates") |
 | Name | name of the place |
 | Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
-| Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
+| Latitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 | Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) | 
 
 This code example shows how to add a `Place` entity to the `Entities` collection:
@@ -134,6 +134,6 @@ A bot and a user can send messages to each other. When the message is more compl
 - [Add speech to messages](bot-builder-dotnet-text-to-speech.md)
 - [Add suggested actions to messages](bot-builder-dotnet-add-suggested-actions.md)
 - [Implement channel-specific functionality](bot-builder-dotnet-channeldata.md)
-- <a href="/dotnet/api/microsoft.bot.connector.activity" target="_blank">Activity class</a>
+- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
 - <a href="/dotnet/api/microsoft.bot.connector.imessageactivity" target="_blank">IMessageActivity interface</a>
 

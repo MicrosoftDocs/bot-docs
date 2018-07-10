@@ -1,6 +1,7 @@
 ---
 title: Proactive messaging | Microsoft Docs
 description: Understand how to proactively message.
+keywords: welcome user, initiate conversation
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani

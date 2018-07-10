@@ -1,6 +1,7 @@
 ---
 title: Create modular bot logic using dialog container | Microsoft Docs
 description: Learn how to modularize your bot logic using dialog container in the Bot Builder SDK for Node.js and C#.
+keywords: composite control, modular bot logic
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

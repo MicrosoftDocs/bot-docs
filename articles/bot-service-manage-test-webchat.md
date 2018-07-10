@@ -1,6 +1,7 @@
 ---
 title: Test a Bot Service in Web Chat | Microsoft Docs
 description: Learn how to test a Bot Service with the webchat control in the Azure portal. 
+keywords: test in web chat, azure portal
 author: RobStand
 ms.author: kamrani
 manager: kamrani

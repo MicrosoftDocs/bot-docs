@@ -1,6 +1,7 @@
 ---
 title: Save state and access data | Microsoft Docs
 description: Describes what the state manager, conversation state and user state is within the Bot Builder SDK.
+keywords: LUIS, conversation state, user state, storage, manage state
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani

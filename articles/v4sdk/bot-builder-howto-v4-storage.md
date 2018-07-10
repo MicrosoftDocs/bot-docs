@@ -1,6 +1,7 @@
 ---
 title: Store data | Microsoft Docs
 description: Learn how to write directly to storage with V4 of the Bot Builder SDK for .NET.
+keywords: storage, read and write, memory storage, eTag
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani
@@ -23,7 +24,7 @@ You can write directly to storage without using the context object or middleware
 This code example shows you how to read and write data to storage. In this example the storage is a file, but you can easily change the code to initialize the storage object to use memory storage of Azure Table Storage instead. 
 
 # [C#](#tab/csharpechorproperty)
-We'll define an object and use `IStorage.Write` and `IStorage.Read` to save and retreive state. 
+We'll define an object and use `IStorage.Write` and `IStorage.Read` to save and retrieve state. 
 
 The following sample adds every message from the the user to a list. The data structure containing the list is saved to a file within the directory you provide to the `FileStorage` constructor.
 

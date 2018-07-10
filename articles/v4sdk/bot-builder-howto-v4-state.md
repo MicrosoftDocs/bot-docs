@@ -1,6 +1,7 @@
 ---
 title: Save state using conversation and user properties | Microsoft Docs
 description: Learn how to save and retrieve data with V4 of the Bot Builder SDK for .NET.
+keywords: conversation state, user state, state middleware, conversation flow, file storage, azure table storage
 author: ivorb
 ms.author: v-demak
 manager: kamrani
@@ -15,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 For your bot to save conversation and user state, first initialize state manager middleware, and then use the conversation and user state properties.
-For more information about how to do this, see [State and storage](./bot-builder-storage-concept.md).
+For more information on how that state is used, see [State and storage](./bot-builder-storage-concept.md).
 
 ## Initialize state manager middleware
 
