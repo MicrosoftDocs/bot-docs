@@ -24,7 +24,7 @@ A bot can be created in a variety of ways, such as within the [Azure portal](htt
 
 ## Interaction with your bot
 
-A bot inherintly doesn't have any visible UI in the way a website or app does, and instead is interacted with through a [conversation](bot-concepts.md#activities-and-conversations) with the user. Depending on where the user is connected from (which we call a [channel](bot-concepts.md), but we won't get into that here), certain information is sent back and forth between the user and your bot.
+A bot inherently doesn't have any visible UI in the way a website or app does, and instead is interacted with through a [conversation](bot-concepts.md#activities-and-conversations) with the user. Depending on where the user is connected from (which we call a [channel](bot-concepts.md), but we won't get into that here), certain information is sent back and forth between the user and your bot.
 
 Each unit of information is called an **activity** within our bot, and an activity can come in various forms. Activities include both communication from the user, which is referred to as a **message**, or additional information wrapped up in a handful of other [activity types](../bot-service-activities-entities.md). This additional information can include when a new party joins or leaves the conversation, when a conversation ends, etc. Those types of communication from the user's connection are sent by the underlying system, without the user needing to do anything.
 
@@ -32,7 +32,7 @@ The bot receives the communication and wraps it up in an activity object, with t
 
 ## Receiving user input
 
-When we receive an message activity from the user, we need to understand what they're sending us. The most straighforward way is when we receive a message, simply match it to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](bot-builder-storage-concept.md), and so on.
+When we receive a message activity from the user, we need to understand what they're sending us. The most straighforward way is when we receive a message, simply match it to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](bot-builder-storage-concept.md), and so on.
 
 There are more complex ways to recognize user input, such as [LUIS](bot-builder-concept-luis.md) or [QnA Maker](bot-builder-howto-qna.md), but string matching is the simplest.
 
