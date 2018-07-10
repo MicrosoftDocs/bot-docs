@@ -29,7 +29,7 @@ The Bot Builder SDK for JavaScript consists of a series of [packages](https://gi
 # Create a bot
 
 
-Open an elevated PowerShell prompt, create a directory, and initialize the package for your bot.
+Open an elevated command prompt, create a directory, and initialize the package for your bot.
 
 ```bash
 md myJsBots
