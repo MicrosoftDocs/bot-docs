@@ -1,6 +1,7 @@
 ---
 title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
 description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
+keywords: Bot Builder SDK, create a bot, quickstart, .NET, getting started
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -32,7 +33,7 @@ In Visual Studio, create a new bot project.
 > If needed, update [NuGet packages](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 ## Explore code
-Open Startup.cs file to review code in the `ConfigureServices(IServiceCollection services)` method. The `CatchExceptonMiddleware` middleware is added to the messaging pipeline. It handles any exceptions thrown by other middleware, or by OnTurn method. 
+Open Startup.cs file to review code in the `ConfigureServices(IServiceCollection services)` method. The `CatchExceptionMiddleware` middleware is added to the messaging pipeline. It handles any exceptions thrown by other middleware, or by OnTurn method. 
 
 ```cs
 options.Middleware.Add(new CatchExceptionMiddleware<Exception>(async (context, exception) =>

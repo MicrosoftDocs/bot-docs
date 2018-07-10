@@ -63,7 +63,7 @@ For performance and security reasons in the production environment, you may impl
 
 2. [Manage state data with Table storage](bot-builder-dotnet-state-azure-table-storage.md)
 
-With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder-azure) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as the in-memory data storage.
+With either of these [Azure Extensions](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure/) options, the mechanism for setting and persisting data via the Bot Framework SDK for .NET remains the same as the in-memory data storage.
 
 ## Bot state methods
 
@@ -159,4 +159,4 @@ You can design your bot to account for this scenario, as shown in the following 
 - [Bot Framework troubleshooting guide](../bot-service-troubleshoot-general-problems.md)
 - <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
 
-[Activity]: /dotnet/api/microsoft.bot.connector.activity
+[Activity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html

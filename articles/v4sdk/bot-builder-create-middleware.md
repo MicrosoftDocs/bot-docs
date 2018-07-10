@@ -1,6 +1,7 @@
 ---
 title: Write your own middleware | Microsoft Docs
 description: Understand how to write your own middleware.
+keywords: middleware, custom middleware, short circuit, fallback, activity handlers
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
@@ -204,65 +205,4 @@ adapter.use({onTurn: async (context, next) =>{
 > [!NOTE] 
 > This might not work in all cases, such as when other middleware might be able to respond to the user or when the bot receives a message correctly but does not reply. Responding with, "I don't understand" would be misleading to our user.
 
-## Adding activity handlers
 
-Handlers are useful when you need to do something on every future activity for the current context object. 
-
-# [C#](#tab/csactivityhandler)
-
-The three types of activity handlers provided are `OnSendActivity()`, `OnUpdateActivity()`, and `OnDeleteActivity()`. Here, we're adding an `OnSendActivity()` handler within our middleware code, however handlers can be added in bot code as well.
-
-Handlers are often added as lambda expressions, which you'll see in this example. This example will listen to the user's input activity when **help** is written.
-
-```cs
-public Task OnTurn(ITurnContext context, MiddlewareSet.NextDelegate next)
-{
-    if (context.Activity.Type == ActivityTypes.Message)
-    {
-        context.OnSendActivity(async (handlerContext, activities, handlerNext) => 
-        {
-            if(handlerContext.Activity.Text == 'help'){
-                console.log('help!')
-            }
-
-            // Add handler logic here
-            await handlerNext(); 
-        });
-
-        // Continue middleware code here
-        // ...
-    }
-}
-```
-# [JavaScript](#tab/jsactivityhandler)
-
-The three types of activity handlers provided are `onSendActivities()`, `onUpdateActivity()`, and `onDeleteActivity()`. Here, we're adding an `onSendActivities()` handler within our middleware code, however handlers can be added in bot code as well.
-
-This example will listen to the user's input activity when **help** is written.
-
-```js
-adapter.use({onTurn: async (context, next) =>{
-    
-    if (context.activity.type == 'message')
-    {
-        await context.onSendActivities(async (handlerContext, activities, handlerNext) => 
-        { 
-            if(handlerContext.activity.text === 'help'){
-                console.log('help!')
-            }
-            // Add handler logic here
-            
-            await handlerNext(); 
-        });
-
-        // Continue middleware code here
-        // ...
-        await next()
-        
-    }
-}})
-```
-
----
-
-Unless otherwise intended, it is important to call `next()` within your handler, otherwise you will short-circuit the activity.

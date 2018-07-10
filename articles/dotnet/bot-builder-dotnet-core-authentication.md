@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Authenticating activities using .NET Core
 
-If you choose to develop your bot using [.NET Core](/dotnet/core/index), you can use the [Bot Framework Connector](bot-builder-dotnet-connector.md) to send and receive [activity](/dotnet/api/microsoft.bot.connector.activity) messages from your bot. To use the Connector service, you need to set up the proper authentication model for the framework version you are targeting.
+If you choose to develop your bot using [.NET Core](/dotnet/core/index), you can use the [Bot Framework Connector](bot-builder-dotnet-connector.md) to send and receive [activity](https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html) messages from your bot. To use the Connector service, you need to set up the proper authentication model for the framework version you are targeting.
 
 The Bot Framework Connector.AspNetCore supports the following versions of ASP.NET:
 * For .NET Core v1.1/AspNetCore1.x use **Microsoft.Bot.Connector.AspNetCore 1.x**

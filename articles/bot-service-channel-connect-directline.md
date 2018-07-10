@@ -1,6 +1,7 @@
 ---
 title: Connect a bot to Direct Line | Microsoft Docs
 description: Learn how to configure a bot's connection to Direct Line.
+keywords: direct line, bot channels, custom client, connect to channels, configure
 author: RobStand
 ms.author: kamrani
 manager: kamrani

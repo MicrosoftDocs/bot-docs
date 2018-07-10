@@ -1,6 +1,7 @@
 ---
 title: Conversations within the Bot Builder SDK | Microsoft Docs
 description: Describes what a conversation is within the Bot Builder SDK.
+keywords: conversation flow, recognize intent, single turn, multiple turn
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
@@ -48,7 +49,7 @@ The simplest kind of single-turn bot doesn't need to keep track of conversation 
 
 ![Single-turn weather bot](./media/concept-conversation/weather-single-turn.png)
 
-A weather bot has a single-turn flow, if it just gives the user a weather report, without going back and forth asking for the city or the date. All the logic for displaying the weather report is based on the message the bot just received. In each turn of a conversation, the bot receives a turn context, which your bot can use to determine what to do next and how the conversation flows. 
+A weather bot has a single-turn flow, it just gives the user a weather report, without going back and forth asking for the city or the date. All the logic for displaying the weather report is based on the message the bot just received. In each turn of a conversation, the bot receives a turn context, which your bot can use to determine what to do next and how the conversation flows. 
 
 ## Multiple turns
 
@@ -106,10 +107,10 @@ While your bot may have logically constructed a stack of flows, the user may dec
 * Disregard everything that the user had done previously, reset the whole flow stack, and start from the beginning by attempting to answer the user's question.
 * Attempt to answer the user's question and then return to that yes/no question and try to resume from there.
 
-There is no right answer to this question, as the best solution will depend upon the specifics of your scenario and how the user would reasonably expect the bot to respond. 
+There is no right answer to this question, as the best solution will depend upon the specifics of your scenario and how the user would reasonably expect the bot to respond. For more information, see [Handle user interrupt](bot-builder-howto-handle-user-interrupt.md).
 
 > [!TIP]
-> If you're using the Bot Builder SDK for Node.Js, you can use [Dialogs] to manage conversation flow.
+> If you're using the Bot Builder SDK for Node.Js, you can use [Dialogs](bot-builder-dialog-manage-conversation-flow.md) to manage conversation flow.
 
 ## Conversation lifetime
 

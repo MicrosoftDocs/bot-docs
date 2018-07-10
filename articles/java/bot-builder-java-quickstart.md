@@ -1,6 +1,7 @@
 ---
 title: Create a bot using Bot Builder SDK for Java | Microsoft Docs
 description: Quickly create a bot using the Bot Builder SDK for Java.
+keywords: Bot Builder SDK, create a bot, quickstart, java, getting started
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
@@ -14,6 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 The Bot Builder SDK for Java provides a familiar way for Java developers to write bots. The SDK v4 is in preview, for more information visit Java [GitHub repo](https://github.com/Microsoft/botbuilder-java).
+
+> [!NOTE]
+> Our code samples and docs are currently targeting Java version 1.8.
 
 ## Getting Started
 

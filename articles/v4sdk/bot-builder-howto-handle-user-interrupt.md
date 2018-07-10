@@ -1,6 +1,7 @@
 ---
 title: Handle user interrupt | Microsoft Docs
 description: Learn how to handle user interrupt and direct conversation flow.
+keywords: interrupt, interruptions, switching topic, break
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani

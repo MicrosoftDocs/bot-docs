@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Add authentication to your bot via Azure Bot Service
 
-This tutorial uses new bot authentication capabilities in Azure Bot Service, providing features to make it easier to develop a bot that authenticates users to various identity providers such as AAD (Azure Active Directory), GitHub, Uber, and so on. These updates also take steps towards an improved user experience by eliminating the _magic code verification_ for some clients.
+This tutorial uses new bot authentication capabilities in Azure Bot Service, providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, and so on. These updates also take steps towards an improved user experience by eliminating the _magic code verification_ for some clients.
 
 Prior to this, your bot needed to include OAuth controllers and login links, store the target client IDs and secrets, and perform user token management.
 <!--
@@ -24,17 +24,17 @@ Now, bot developers no longer need to host OAuth controllers or manage the token
 The features include:
 - Improvements to the channels to support new authentication features.
 - Improvements to the Azure Portal to  add, delete, and configure connection settings to various OAuth identity providers.
-- Support for a variety of out-of-the-box identity providers including AAD v1, AAD v2, GitHub, and others.
+- Support for a variety of out-of-the-box identity providers including Azure AD (both v1 and v2 endpoints), GitHub, and others.
 - Updates to the C# and Node.js Bot Builder SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
 - New Webchat and DirectLineJS libraries to eliminate the need for the 6-digit magic code verification.
-- Samples for how to make a bot that authenticates to AAD (v1 and v2) and to GitHub.
+- Samples for how to make a bot that authenticates to Azure AD (v1 and v2 endpoints) and to GitHub.
 
 You can extrapolate from the steps in this article to add such features to an existing bot. The following are sample bots that demonstrate the new authentication features
 
 | Sample | BotBuilder version | Description |
 |:---|:---:|:---|
-| [AadV1Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV1Bot) | v3 | Demonstrates OAuthCard support in the v3 C# SDK, using AAD v1 |
-| [AadV2Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV2Bot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using AAD v2 |
+| [AadV1Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV1Bot) | v3 | Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v1 endpoint |
+| [AadV2Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV2Bot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v2 endpoint |
 | [GitHubBot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/GitHubBot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using GitHub |
 | [BasicOAuth](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/Microsoft.Bot.Sample.BasicOAuth) | v3 |  Demonstrates OAuth support in the v3 C# SDK |
 
@@ -46,15 +46,15 @@ For additional information and support, refer to [Bot Framework additional resou
 
 ## Overview
 
-This tutorial creates a sample bot that connects to the Microsoft Graph using an AAD v1 or v2 token. <!--verify this info and fix wording--> As part of this process, you'll use code from a GitHub repo, and the tutorial describes how to set that up, including the bot application.
+This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. <!--verify this info and fix wording--> As part of this process, you'll use code from a GitHub repo, and the tutorial describes how to set that up, including the bot application.
 
 - [Create your bot and an authentication application](#create-your-bot-and-an-authentication-application)
 - [Prepare the bot sample code](#prepare-the-bot-sample-code)
 - [Use the Emulator to test your bot](#use-the-emulator-to-test-your-bot)
 
-To complete these steps, you will need Visual Studio 2017, npm, node, and git installed. You should also have some familiarity with Azure, OAuth, and bot development.
+To complete these steps, you will need Visual Studio 2017, npm, node, and git installed. You should also have some familiarity with Azure, OAuth 2.0, and bot development.
 
-Once you finish, you will have a bot that can respond to a few simple tasks against an AAD application, such as checking and sending an email, or displaying who you are and who your manager is. To do this, your bot will use a token from an AAD application against the Microsoft.Graph library.
+Once you finish, you will have a bot that can respond to a few simple tasks against an Azure AD application, such as checking and sending an email, or displaying who you are and who your manager is. To do this, your bot will use a token from an Azure AD application against the Microsoft.Graph library.
 
 The final section breaks down some of the bot code
 
@@ -62,21 +62,21 @@ The final section breaks down some of the bot code
 
 ## Create your bot and an authentication application
 
-You need to create a registration bot to which you'll publish your bot code, and you need to create an AAD (either v1 or v2) application to allow your bot to access Office 365.
+You need to create a registration bot to which you'll publish your bot code, and you need to create an Azure AD (either v1 or v2) application to allow your bot to access Office 365.
 
 > [!NOTE]
 > These authentication features work with other types of bots. However this tutorial uses a registration only bot.
 
-### Create an AAD application
+### Register an application in Azure AD
 
-You need an AAD application that your bot can use to connect to the O365 Graph API, your own AAD resources, and so on.
+You need an Azure AD application that your bot can use to connect to the Microsoft Graph API, your own Azure AD-protected resources, and so on.
 
-For this bot you can use AAD v1 or v2.
-For information about the differences between v1 and v2, see the [v1-v2 comparison](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare) and the [AAD v2.0 endpoint overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+For this bot you can use Azure AD v1 or v2 endpoints.
+For information about the differences between the v1 and v2 endpoints, see the [v1-v2 comparison](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare) and the [Azure AD v2.0 endpoint overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
-#### To create an AAD v1 application
+#### To create an Azure AD v1 application
 
-1.  Go to [Azure AD for Office 365](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1.  Go to [Azure AD in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 1.  Click **App registrations**.
 1.  In the **App registrations** panel, click **New application registration**.
 1.  Fill in the required fields and create the app registration.
@@ -88,15 +88,15 @@ For information about the differences between v1 and v2, see the [v1-v2 comparis
 
     Once it is created, it is displayed in the application list.
 
-1.  Click the appliction to open the blade.
+1.  Click the application to open the blade.
 
-    Record the **Application ID** GUID. You will provide this later as the _Client ID_.
+    Record the **Application ID** value. You will provide this later as the _Client ID_.
 
 1.  Click **Settings** to configure your application.
 1.  Click **Keys** to open the **Keys** panel.
 
     1.  Under **Passwords**, create a `BotLogin` key.
-    1.  Set its **Durration** to **Never expires**.
+    1.  Set its **Duration** to **Never expires**.
     1.  Click **Save** and record the key value. You provide this later for the _application secret_.
     1.  Close the **Keys** panel.
 
@@ -120,13 +120,13 @@ For information about the differences between v1 and v2, see the [v1-v2 comparis
     1.  Click **Save**.
     1.  Close the **Required permissions** panel.
 
-You now have an AAD v1 application configured. 
+You now have an Azure AD v1 application configured. 
 
-#### To create an AAD v2 application
+#### To create an Azure AD v2 application
 
 1.	Go to the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com).
 1.	Click **Add an app**
-1.	Give your AAD app a name, and click **Create**.
+1.	Give your Azure AD app a name, and click **Create**.
 
     Record the **Application Id** GUID. You will provide this later as your client ID for your connection setting.
 
@@ -149,13 +149,13 @@ You now have an AAD v1 application configured.
 
 ### Create your bot on Azure
 
-Create a **Bot Channels Registration** using the [Azure Portal](https://ms.portal.azure.com/).
+Create a **Bot Channels Registration** using the [Azure Portal](https://portal.azure.com/).
 
-### Register your AAD application with your bot
+### Register your Azure AD application with your bot
 
-The next step is to register with your bot the AAD application that you just created.
+The next step is to register with your bot the Azure AD application that you just created.
 
-#### To register an AAD v1 application
+#### To register an Azure AD v1 application
 
 1.	Navigate to your bot's resource page on the [Azure Portal](http://portal.azure.com/).
 1.	Click **Settings**.
@@ -163,8 +163,8 @@ The next step is to register with your bot the AAD application that you just cre
 1.	Fill in the form as follows:
 
     1.	For **Name**, enter a name for your connection. You'll use in your bot code.
-    1.	For **Service Provider**, select **Azure Active Directory**. Once you select this, the AAD-specific fields will be displayed.
-    1.	For **Client id**, enter the name that you gave to your AAD v1 application.
+    1.	For **Service Provider**, select **Azure Active Directory**. Once you select this, the Azure AD-specific fields will be displayed.
+    1.	For **Client id**, enter the name that you gave to your Azure AD v1 application.
     1.	For **Client secret**, enter the key that your recorded for your application's `BotLogin` key.
     1.	For **Grant Type**, enter `authorization_code`.
     1.	For **Login URL**, enter `https://login.microsoftonline.com`.
@@ -175,31 +175,31 @@ The next step is to register with your bot the AAD application that you just cre
 1.	Click **Save**.
     
 > [!NOTE]
-> These values enable your application to use the Graph API in O365.
+> These values enable your application to access Office 365 data via the Microsoft Graph API.
 
 You can now use this connection name in your bot code to retrieve user tokens.
 
-#### To register an AAD v2 application
+#### To register an Azure AD v2 application
 
-1.	Navigate to your bot's resource page on the [Azure Portal](http://portal.azure.com/).
+1.	Navigate to your bot's resource page on the [Azure portal](http://portal.azure.com/).
 1.	Click **Settings**.
 1.	Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1.	Fill in the form as follows:
 
     1.	For **Name**, enter a name for your connection. You'll use in your bot code.
-    1.	For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the AAD-specific fields will be displayed.
-    1.	For **Client id**, enter your AAD v2 application ID from application registration.
-    1.	For **Client secret**, enter your AAD v2 application password from application registration.
+    1.	For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
+    1.	For **Client ID**, enter your Azure AD v2 application ID from application registration.
+    1.	For **Client secret**, enter your Azure AD v2 application password from application registration.
     1.	For **Tenant ID**, enter the tenant ID for your Azure Active Directory, for example `microsoft.com` or `common`.
     1.	For **Scopes**, enter the names of the permission you chose from application registration, for example `email Mail.Read profile User.Read`.
 
         >   [!NOTE]
-        >   Scopes is a space-separated list of values for AAD v2.
+        >   Scopes is a space-separated list of values for Azure AD v2.
 
 1.	Click **Save**.
     
 > [!NOTE]
-> These values enable your application to use the Graph API in O365.
+> These values enable your application to access Office 365 data via the Microsoft Graph API.
 
 You can now use this connection name in your bot code to retrieve user tokens.
 
@@ -209,12 +209,12 @@ You can now use this connection name in your bot code to retrieve user tokens.
 1.	In this directory, open the solution file, `BotBuilder\CSharp\Samples\Microsoft.Bot.Builder.Samples.sln`.
 1.	Set the start up project.
 
-    -   For a bot that uses the v1 AAD application, use the `Microsoft.Bot.Sample.AadV1Bot` project.
-    -   For a bot that uses the v2 AAD application, use the `Microsoft.Bot.Sample.AadV2Bot` project.
+    -   For a bot that uses the Azure AD v1 application, use the `Microsoft.Bot.Sample.AadV1Bot` project.
+    -   For a bot that uses the Azure AD v2 application, use the `Microsoft.Bot.Sample.AadV2Bot` project.
 
 1.	Open the `Web.config` file, and modify the app settings as follows:
 
-    1.	Set the `ConnectionName` to the value you used when you configured your bot's OAuth connection setting.
+    1.	Set the `ConnectionName` to the value you used when you configured your bot's OAuth 2.0 connection setting.
     1.	Set the `MicrosoftAppId` value to your bot's app ID.
     1.	Set the `MicosoftAppPassword` value to your bot's secret.
 
@@ -289,9 +289,9 @@ private async Task SendOAuthCardAsync(IDialogContext context, Activity activity)
 
 ### Wait for a TokenResponseEvent
 
-In this code the Bot's dialog class is waiting for a `TokenResponseEvent` (more about how this is routed to the Dialog stack is below). The WaitForToken method first determines if this event was sent. If it was sent, it can be used by the bot. If it was not, the WaitForToken method takes whatever text was sent to the bot and passes it to GetUserTokenAsync. The reason for this is that some clients (like WebChat) do not need the Magic Code verification code and can directly send the Token in the TokenResponseEvent. Other clients still require the magic code (like Facebook or Slack). The Azure Bot Service will present these clients with a six digit magic code and ask the user to type this into the chat window. While not ideal, this is the ‘fall back' behavior and so if WaitForToken receives a code, the bot can send this code to the Azure Bot Service and get a token back. If this call also fails, then you can decide to report an error, or do something else. In most cases though, the bot will now have a user token.
+In this code the Bot's dialog class is waiting for a `TokenResponseEvent` (more about how this is routed to the Dialog stack is below). The `WaitForToken` method first determines if this event was sent. If it was sent, it can be used by the bot. If it was not, the `WaitForToken` method takes whatever text was sent to the bot and passes it to `GetUserTokenAsync`. The reason for this is that some clients (like WebChat) do not need the Magic Code verification code and can directly send the Token in the `TokenResponseEvent`. Other clients still require the magic code (like Facebook or Slack). The Azure Bot Service will present these clients with a six digit magic code and ask the user to type this into the chat window. While not ideal, this is the 'fall back' behavior and so if `WaitForToke`n receives a code, the bot can send this code to the Azure Bot Service and get a token back. If this call also fails, then you can decide to report an error, or do something else. In most cases though, the bot will now have a user token.
 
-If you look in the MessageController.cs file, you'll see that Event activities of this type are also routed to the dialog stack.
+If you look in the MessageController.cs file, you'll see that `Event` activities of this type are also routed to the dialog stack.
 
 ```csharp
 private async Task WaitForToken(IDialogContext context, IAwaitable<object> result)

@@ -1,6 +1,7 @@
 ---
 title: Create a bot using Bot Builder SDK for JavaScript | Microsoft Docs
 description: Quickly create a bot using the Bot Builder SDK for JavaScript.
+keywords: quickstart, bot builder sdk, getting started
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
@@ -21,14 +22,14 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 - [Node.js](https://nodejs.org/en/)
 - [Yeoman](http://yeoman.io/), which can use a generator to create a bot for you
 - [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator)
-- Knowledge of [restify](https://http://restify.com/) and asynchronous programming in JavaScript
+- Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
 
 The Bot Builder SDK for JavaScript consists of a series of [packages](https://github.com/Microsoft/botbuilder-js/tree/master/libraries) which can be installed from NPM using a special `@preview` tag.
 
 # Create a bot
 
 
-Open an elevated PowerShell prompt, create a directory, and initialize the package for your bot.
+Open an elevated command prompt, create a directory, and initialize the package for your bot.
 
 ```bash
 md myJsBots
@@ -142,7 +143,7 @@ At this point, your bot is running locally. Next, start the emulator and then co
 
 4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
 
-Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+Send "Hi" to your bot, and the bot will respond with '0: You said "Hi"' to the message.
 
 ## Next steps
 

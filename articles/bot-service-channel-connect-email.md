@@ -1,6 +1,7 @@
 ---
 title:  Connect a bot to Office 365 email | Microsoft Docs
 description: Learn how to configure a bot to send and receive email with Office 365.
+keywords: Office 365, bot channels, email, email credentials, azure portal, custom email
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -8,10 +9,9 @@ ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
-
 # Connect a bot to Office 365 email
 
-Bots can communicate with users via Office 365 email in addition to other [channels](~/bot-service-manage-channels.md). When a bot is configured to access an email account, it receives a message when a new email arrives. The bot can then respond as indicated by its business logic. For example, the bot could send an email reply acknowledging an email was received with the message, "Hi! Thanks for your order! We will begin processing it immediately." 
+Bots can communicate with users via Office 365 email in addition to other [channels](~/bot-service-manage-channels.md). When a bot is configured to access an email account, it receives a message when a new email arrives. The bot can then respond as indicated by its business logic. For example, the bot could send an email reply acknowledging an email was received with the message, "Hi! Thanks for your order! We will begin processing it immediately."
 
 > [!WARNING]
 > It is a violation of the Bot Framework [Code of Conduct](https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm) to create "spambots", including bots that send unwanted or unsolicited bulk email.
@@ -19,6 +19,10 @@ Bots can communicate with users via Office 365 email in addition to other [chann
 ## Configure email credentials
 
 You can connect a bot to the Email channel by entering Office 365 credentials in the Email channel configuration.
+Federated authentication using any vendor that replaces AAD is not supported.
+
+> [!NOTE]
+> You should not use your own personal email accounts for bots, as every message sent to that email account will be forwarded to the bot. This can result in the bot inappropriately sending a response to a sender. For this reason, bots should only use dedicated O365 email accounts.
 
 To add the Email channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Email**. Enter your valid email credentials and click **Save**.
 
@@ -30,34 +34,46 @@ The Email channel currently works with Office 365 only. Other email services are
 
 The Email channel supports sending custom properties to create more advanced, customized emails using the `channelData` property.
 
-| Property | Description |
-|---------|  -----|
-| HtmlBody   | The HTML to use for the body of the message. |
-| Subject    | The subject to use for the message.|
-| Importance | The importance flag to use for the message.(Low/Normal/High) |
+[!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
 
-The following example message shows a JSON file that includes the `channelData` properties.
+The following example message shows a JSON file that includes these `channelData` properties.
 
 ```json
+{
+    "type": "message",
+    "locale": "en-Us",
+    "channelID": "email",
+    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
+    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
+    "conversation": { "id": "123123123123", "topic": "awesome chat" },
+    "channelData":
     {
-        "type": "message",
-        "locale": "en-Us",
-        "channelID":"email",
-        "from": { "id":"mybot@mydomain.com", "name":"My bot"},
-        "recipient": { "id":"joe@otherdomain.com", "name":"Joe Doe"},
-        "conversation": { "id":"123123123123", "topic":"awesome chat" },
-        "channelData":
-        {
-            "htmlBody" : "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome</body></html>",
-            "subject":"Super awesome message subject",
-            "importance":"high"
-        }
+        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
+        "subject": "Super awesome message subject",
+        "importance": "high",
+        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
     }
+}
 ```
+
+::: moniker range="azure-bot-service-3.0"
 For more information about using `channelData`, see the [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ChannelData) sample or [.NET](~/dotnet/bot-builder-dotnet-channeldata.md) documentation.
+::: moniker-end
+
+::: moniker range="azure-bot-service-4.0"
+For more information about using `channelData`, see the [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ChannelData) sample or [.NET](~/v4sdk/bot-builder-channeldata.md) documentation.
+::: moniker-end
 
 ## Additional resources
 
+<!-- Put whole list in monikers, even though it's just the second item that needs to be different. -->
+::: moniker range="azure-bot-service-3.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
 * [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Builder SDK for .NET
 * Use the [Channel Inspector](bot-service-channel-inspector.md) to see how a channel renders a particular feature of your bot application
+::: moniker-end
+::: moniker range="azure-bot-service-4.0"
+* Connect a bot to [channels](~/bot-service-manage-channels.md)
+* [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Builder SDK for .NET
+* Use the [Channel Inspector](bot-service-channel-inspector.md) to see how a channel renders a particular feature of your bot application
+::: moniker-end

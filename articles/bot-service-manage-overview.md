@@ -1,6 +1,7 @@
 ---
 title: Manage a bot | Microsoft Docs
 description: Learn how to manage a bot through the bot service portal. 
+keywords: azure portal, bot management, test in web chat, MicrosoftAppID, MicrosoftAppPassword, application settings
 author: v-ducvo
 ms.author: rstand
 manager: kamrani

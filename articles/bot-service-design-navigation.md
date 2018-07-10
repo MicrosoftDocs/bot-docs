@@ -1,6 +1,7 @@
 ---
 title: Design bot navigation | Microsoft Docs
 description: Learn how to design a good navigation structure for your bot and how to avoid the most common navigation design errors.
+keywords: navigation, overview, stubborn bot, clueless bot, mysterious bot, captain obvious bot, bot that can't forget
 author: matvelloso
 ms.author: mateusv
 manager: kamrani

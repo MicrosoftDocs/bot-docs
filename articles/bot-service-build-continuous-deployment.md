@@ -1,6 +1,7 @@
 ---
 title: Configure continuous deployment for Bot Service | Microsoft Docs
 description: Learn how to setup continuous deployment from source control for a Bot Service. 
+keywords: continuous deployment, publish, deploy, azure portal
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -48,7 +49,16 @@ Your continuous deployment with GitHub setup is complete. Whenever you commit, y
    ![Choose Visual Studio Team Services](~/media/azure-bot-build/continuous-deployment-setup-vs.png)
 
 4. Click **Choose your account** and choose an account.
+
+> [!NOTE]
+> If you do not see your account, make sure it is linked to your Azure subscription.
+> For more information, see [Linking your VSTS account to your Azure subscription](https://github.com/projectkudu/kudu/wiki/Setting-up-a-VSTS-account-so-it-can-deploy-to-a-Web-App#linking-your-vsts-account-to-your-azure-subscription).
+
 5. Click **Choose a project** and choose a project.
+
+> [!NOTE]
+> Only VSTS Git projects are supported.
+
 6. click **Choose Branch** and choose a branch to branch.
 7. Click **OK** to complete the setup process.
 
@@ -60,10 +70,10 @@ Your continuous deployment with Visual Studio Team Services setup is complete. W
 
 While your bot is configured for continuous deployment, you may not use the online code editor to make changes to your bot. If you want to use the online code editor, you can temporarily disable continuous deployment.
 
-To disable (or re-enable) continuous deployment, do the following:
+To disable continuous deployment, do the following:
 
 1. From your bot's **Build** blade, click **Configure continuous deployment**. 
-2. Click **Disconnect** to disable continuous deployment. To re-enable continuous deployment, repeat these steps.
+2. Click **Disconnect** to disable continuous deployment. To re-enable continuous deployment, repeat the steps from the appropriate sections above.
 
 ## Next steps
 Now that your bot is set up for continuous deployment, test your code using the online Web Chat.
