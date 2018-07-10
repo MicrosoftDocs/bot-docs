@@ -23,7 +23,7 @@ This article describes how to model this conversation flow by using [dialogs](bo
 ## Invoke the root dialog
 
 First, the bot controller invokes the "root dialog". 
-The following example shows how to wire the basic HTTP GET call to a controller and then invoke the root dialog. 
+The following example shows how to wire the basic HTTP POST call to a controller and then invoke the root dialog. 
 
 ```cs
 public class MessagesController : ApiController
