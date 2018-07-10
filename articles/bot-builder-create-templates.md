@@ -16,12 +16,11 @@ Templates are now available to create bots in each of the Botbuilder SDK platfor
 
 - Node.js
 - Python
-- Java
 - .NET
 
 ## Prerequisites
 
-The Node.js, Java and Python templates all create a simple echo bot, and are all made available through [Yeoman](http://yeoman.io/).
+The Node.js and Python templates all create a simple echo bot, and are all made available through [Yeoman](http://yeoman.io/).
 
 - [Node.js](https://nodejs.org/en/) v 8.5 or greater
 - [Yeoman](http://yeoman.io/)
@@ -32,7 +31,7 @@ If you haven't already installed Yeoman, it needs to be installed globally.
 npm install -g yo
 ```
 
-## Node.js, Python, Java templates
+## Node.js, Python templates
 From the command line, cd into a new folder of your choosing. There are two available versions of the Botbuilder Node.js templates, targetting the **v3** and **v4** versions of the SDK respectively. The Python and Java templates are only available in v4. 
 
 To install the **Node.js v3 Botbuilder** template generator:
@@ -51,11 +50,6 @@ The Python and Java templates are **only available in v4**.
 For **Python**:
 ```shell
 npm install generator-botbuilder-python
-```
-
-For **Java**:
-```shell
-npm install generator-botbuilder-java
 ```
 
 After a generator is installed, you can simply run the **yo** command in your CLI to view a list of generators available in Yeoman.
