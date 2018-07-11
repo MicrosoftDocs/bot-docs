@@ -92,7 +92,7 @@ public void ConfigureServices(IServiceCollection services)
 
         var endpoint = new QnAMakerEndpoint
             {
-                knowledgebaseId = "YOUR-KB-ID",
+                KnowledgebaseId = "YOUR-KB-ID",
                 // Get the Host from the HTTP request example at https://www.qnamaker.ai
                 // For GA services: https://<Service-Name>.azurewebsites.net/qnamaker
                 // For Preview services: https://westus.api.cognitive.microsoft.com/qnamaker/v2.0
