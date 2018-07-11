@@ -197,29 +197,33 @@ await context.SendActivity(activity);
 # [JavaScript](#tab/javascript)
 
 ```javascript
-const hero = MessageFactory.attachment(
-                CardFactory.heroCard(
-                    'Holler Back Buttons',
-                    ['https://example.com/whiteShirt.jpg'],
-                    [{
-                        type: ActionTypes.ImBack,
-                        title: 'ImBack',
-                        value: 'You can ALL hear me! Shout Out Loud'
-                    },
-                    {
-                        type: ActionTypes.PostBack,
-                        title: 'PostBack',
-                        value: 'Shh! My Bot friend hears me. Much Quieter'
-                    },
-                    {
-                        type: ActionTypes.OpenUrl,
-                        title: 'OpenUrl',
-                        value: 'https://en.wikipedia.org/wiki/{cardContent.Key}'
-                    }]
-                )
-            );
+const {ActionTypes} = require("botbuilder");
+```
 
-            await context.sendActivity(hero);
+```javascript
+const hero = MessageFactory.attachment(
+    CardFactory.heroCard(
+        'Holler Back Buttons',
+        ['https://example.com/whiteShirt.jpg'],
+        [{
+            type: ActionTypes.ImBack,
+            title: 'ImBack',
+            value: 'You can ALL hear me! Shout Out Loud'
+        },
+        {
+            type: ActionTypes.PostBack,
+            title: 'PostBack',
+            value: 'Shh! My Bot friend hears me. Much Quieter'
+        },
+        {
+            type: ActionTypes.OpenUrl,
+            title: 'OpenUrl',
+            value: 'https://en.wikipedia.org/wiki/{cardContent.Key}'
+        }]
+    )
+);
+
+await context.sendActivity(hero);
 
 ```
 

@@ -44,7 +44,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Add `adapter.use(MyMiddleware());` to your adapter for each piece of middleware you want to add.
 
-```csharp
+```javascript
 // Create adapter
 const adapter = new botbuilder.BotFrameworkAdapter({
     appId: process.env.MICROSOFT_APP_ID, 
