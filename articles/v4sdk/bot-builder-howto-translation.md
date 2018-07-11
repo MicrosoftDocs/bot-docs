@@ -27,7 +27,7 @@ In this tutorial we'll be using Microsoft Translator service for the translation
 
 ## Get a Text Services key
 
-First, you'll need a key for using the Microsoft Translator service. You can get a [free trial key](https://www.microsoft.com/en-us/translator/trial.aspx#get-started) in the Azure portal.
+First, you'll need a key for using the Translator Text service. You can get a [free trial key](https://www.microsoft.com/en-us/translator/trial.aspx#get-started) in the Azure portal.
 
 ## Installing Packages
 
@@ -89,7 +89,7 @@ public void ConfigureServices(IServiceCollection services)
         var middleware = options.Middleware;
         // Add translation middleware
         // The first parameter is a list of languages the bot recognizes
-        middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR API KEY>", false));
+        middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR TEXT API KEY>", false));
 
     });
 }
@@ -147,7 +147,7 @@ When you add translation middleware, an optional parameter specifies whether to 
 // The first parameter is a list of languages the bot recognizes
 // The second parameter is your API key
 // The third parameter specifies whether to translate the bot's replies back to the user's language
-middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR API KEY>", false));
+middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR TEXT API KEY>", false));
 ```
 
 # [JavaScript](#tab/js)
@@ -284,7 +284,7 @@ In the following example, the `CheckUserChangedLanguage` callback checks for a s
 In `Startup.cs`, add a callback to the translation middleware.
 ```csharp
 middleware.Add(new TranslationMiddleware(new string[] { "en" },
-     "<YOUR MICROSOFT TRANSLATOR API KEY>", null,
+     "<YOUR MICROSOFT TRANSLATOR TEXT API KEY>", null,
      TranslatorLocaleHelper.GetActiveLanguage,
      TranslatorLocaleHelper.CheckUserChangedLanguage));
 ```
@@ -366,7 +366,7 @@ async function setUserLanguage(context) {
 
 // Add language translator middleware
 const languageTranslator = new LanguageTranslator({
-    translatorKey: "<YOUR MICROSOFT TRANSLATOR API KEY>",
+    translatorKey: "<YOUR MICROSOFT TRANSLATOR TEXT API KEY>",
     noTranslatePatterns: new Set(),
     nativeLanguages: ['en'],
     setUserLanguage: setUserLanguage,
@@ -406,7 +406,7 @@ public void ConfigureServices(IServiceCollection services)
 
         // Add translation middleware
         // The first parameter is a list of languages the bot recognizes. Input in these language won't be translated.
-        middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR API KEY>", false));
+        middleware.Add(new TranslationMiddleware(new string[] { "en" }, "<YOUR MICROSOFT TRANSLATOR TEXT API KEY>", false));
 
         // Add LUIS middleware after translation middleware to pass translated messages to LUIS
         middleware.Add(
