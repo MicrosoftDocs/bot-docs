@@ -99,7 +99,7 @@ public void ConfigureServices(IServiceCollection services)
                 Host = "YOUR-HTTP-REQUEST-HOST",
                 EndpointKey = "YOUR-QNA-MAKER-SUBSCRIPTION-KEY"
             };
-        options.Middleware.Add(new QnAMakerMiddleware(new QnAMakerEndpoint(endpoint)));
+        options.Middleware.Add(new QnAMakerMiddleware(endpoint));
     });
 }
 ```
