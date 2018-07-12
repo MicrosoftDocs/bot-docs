@@ -29,11 +29,9 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 > If this is the case try running `npm install -g windows-build-tools`.
 
 
-
 The Bot Builder SDK for JavaScript consists of a series of [packages](https://github.com/Microsoft/botbuilder-js/tree/master/libraries) which can be installed from NPM using a special `@preview` tag.
 
 # Create a bot
-
 
 Open an elevated command prompt, create a directory, and initialize the package for your bot.
 
