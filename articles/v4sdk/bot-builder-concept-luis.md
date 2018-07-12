@@ -117,7 +117,7 @@ For a bot that users will speak to, integrating it with LUIS can help your bot i
 
 ## Next steps
 
-The Bot Service templates provide a starting point for your bot, depending on what your bot is designed to accomplish.
+Cognitive Services provides ways to add intelligence to your bot.
 
 > [!div class="nextstepaction"]
-> [Bot Service templates](../bot-service-concept-templates.md)
+> [Cognitive Services for bots](../bot-service-concept-intelligence.md)

@@ -31,7 +31,7 @@ The adapter authenticates each incoming activity the application receives, using
 
 The adapter uses a connector object and your application's credentials to authenticate the outbound activities to the user.
 
-Bot Connector Service authentication uses JWT (JSON Web Token) `Bearer` tokens and the **MicrosoftAppID** and **MicrosoftAppPassword** that Azure creates for you when you create a bot service or register your bot. Your application will need these credentials at initialization time, to allow the adapter to authenticate traffic.
+Bot Connector Service authentication uses JWT (JSON Web Token) `Bearer` tokens, the **Microsoft app ID** and the **Microsoft app password** that Azure creates for you when you create a bot service or register your bot. Your application will need these credentials at initialization time, to allow the adapter to authenticate traffic.
 
 > [!NOTE]
 > If you are running or testing your bot locally, for example, using the Bot Framework Emulator, you can do so without configuring the adapter to authenticate traffic to and from your bot.
@@ -41,9 +41,9 @@ Bot Connector Service authentication uses JWT (JSON Web Token) `Bearer` tokens a
 When an adapter receives an activity, it generates a **turn context** object, which provides information about the incoming activity, the sender and receiver, the channel, the conversation, and other data needed to process the activity. The adapter then passes this context object to the bot. The context object persists for the length of a turn, and provides information on the following:
 
 * Conversation - Identifies the conversation and includes information about the bot and the user participating in the conversation. 
-* Activity - The requests and replies in a conversation are all types of activities. This context provides information about the incoming activity, including routing information, information about the channel, the conversation, the sender, and the receiver. 
-* Intent - Represents what the bot thinks the user wants to do, if your bot is set up to provide this. Intent is determined by an intent recognizer, such as [LUIS](bot-builder-concept-luis.md), and can be used it to change conversation topics. 
-* State - Your bot can use conversation properties to keep track of where the bot is in a conversation or its [state](bot-builder-storage-concept.md) and user properties to save information about a user.  
+* Activity - The requests and replies in a conversation are all types of activities. This context provides information about the incoming activity, including routing information, information about the channel, the conversation, the sender, and the receiver. 
+* Intent - Represents what the bot thinks the user wants to do, if your bot is set up to provide this. Intent is determined by an intent recognizer, such as [LUIS](bot-builder-concept-luis.md), and can be used it to change conversation topics. 
+* State - Your bot can use [state](bot-builder-storage-concept.md) to save information about a user and to keep track of where the bot is in a conversation, using user state and conversation state respectively.  
 * Custom information – If you extend your bot either by implementing middleware or within your bot logic, you can make additional information available in each turn.
 
 You can add middleware, which are layers of plug-ins added to your bot and your core bot logic. For details on middleware, see the independent [middleware article](bot-builder-concept-middleware.md).
@@ -78,9 +78,9 @@ In addition to the bot and middleware logic, response handlers (also sometimes r
 
 Each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
 
-The adapter manages the handlers registered on a context object very similarly to how it manages the middleware pipeline.
+The adapter manages the handlers registered on a context object very similarly to how it manages the [middleware pipeline](bot-builder-concept-middleware.md#the-bot-middleware-pipeline).
 
-For each response event, the adapter calls handlers in the order in which they were added. The adapter passes in the context object for the turn and a _next_ delegate and the handler calls the delegate to pass control to the next registered event handler. If a handler doesn’t call the next delegate, the adapter does not call any of the subsequent event handlers; the event [short circuits](bot-builder-concept-middleware.md#short-circuiting), and the adapter does not send the response to the channel.
+Namely, handlers get called in the order they're added, and calling the _next_ delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, the adapter does not call any of the subsequent event handlers; the event [short circuits](bot-builder-concept-middleware.md#short-circuiting), and the adapter does not send the response to the channel.
 
 ## Next steps
 
