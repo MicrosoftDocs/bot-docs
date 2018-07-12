@@ -24,6 +24,11 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 - [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator)
 - Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
 
+> [!NOTE]
+> For some installations the install step for restify is giving an error related to node-gyp.
+> If this is the case try running `npm install -g windows-build-tools`.
+
+
 The Bot Builder SDK for JavaScript consists of a series of [packages](https://github.com/Microsoft/botbuilder-js/tree/master/libraries) which can be installed from NPM using a special `@preview` tag.
 
 # Create a bot
@@ -34,25 +39,13 @@ Open an elevated command prompt, create a directory, and initialize the package 
 ```bash
 md myJsBots
 cd myJsBots
-npm init
 ```
-
-Next, install the preview bits of the SDK and restify from npm.
-
-```bash
-npm install --save botbuilder@preview
-npm install --save restify
-```
-
-> [!NOTE]
-> For some installations the install step for restify is giving an error related to gyp.
-> If this is the case try running `npm install -g windows-build-tools`.
 
 Next, install Yeoman and the generator for JavaScript.
 
 ```bash
 npm install -g yo
-npm i -g generator-botbuilder@preview
+npm install -g generator-botbuilder@preview
 ```
 
 Then, use the generator to create an echo bot.
