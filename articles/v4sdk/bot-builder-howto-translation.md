@@ -273,10 +273,8 @@ Run the bot, and type in a few messages in other languages. You'll see that it d
 
 ## Adding logic for detecting or changing the user language
 
-Instead of letting the Botbuilder SDK automatically detect the user's language, you can provide callbacks to add your own logic for determining the user's language, or determining when the user's language has changed.
+Instead of letting the Botbuilder SDK automatically detect the user's language, you can provide a callback to add your own logic to determining the user's language, or to determine when the user's language has changed.
 
-> [!TIP] 
-> See the Translation sample in the SDK for a sample bot that implements callbacks for detecting and changing the user language. 
 
 In the following example, the `CheckUserChangedLanguage` callback checks for a specific user message to change the language. 
 
