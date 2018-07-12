@@ -32,7 +32,41 @@ Let's first create the apps and services, then integrate them together.
 
 The fastest way to create the HomeAutomation and Weather LUIS apps is to download the [homeautomation.json][HomeAutomationJSON] and [weather.json][WeatherJSON] files. Then go to the [LUIS website](https://www.luis.ai/home) and sign in. Click on **My Apps** > **Import new app** and choose the homeautomation.json file. Name the new app `homeautomation`. Click on **My Apps** > **Import new app** and choose the weather.json file. Name this other new app `weather`.
 
-## Create the QnA Maker service
+## Create the QnA Cognitive Service in Azure
+
+A QnA Maker service involves two parts, which are the Cognitive Service in Azure, and the knowledge base of Q&A pairs that you publish using the Cognitive Service.
+
+To create the Cognitive Service in Azure, log in to the Azure portal at https://portal.azure.com, and do the following:
+
+1. Click **All services**.
+1. Search on `Cognitive` and select **Cognitive Services**.
+1. Click **Add**.
+1. Search on `QnA` and select **QnA Maker**.
+1. On the QnA Maker blade, click **Create**.
+1. Fill in the information and create the QnA Maker service.
+
+    <!-- TODO: Add screenshot.-->
+
+    * Enter a name for the service. For this tutorial we'll use `SmartLightQnA`.
+    * Select the subscription to use.
+    * Select the management pricing tier to use; we'll use the F0 (free) tier.
+    * Create one, or select a new, resource group to use. For this tutorial we'll create a new `SmartLightQnA` resource group.
+    * Select a search pricing tier; we'll use the B (basic) tier.
+    * Select a search location; we'll use `West US`.
+    * Enter an application name to use; we'll keep the default `SmartLightQnA`.
+    * Select the website location; we'll use `West US`.
+    * Keep the default of enabling app insights.
+    * Select an app insights location; we'll use `West US 2`.
+    * Click **Create** to create your QnA Maker service.
+    * Azure creates and begins to deploy your service.
+
+1. Once the service is deployed, view the notification and click **Go to resource** to navigate to the blade for the service.
+1. Click **Keys** to grab your keys.
+
+    * Copy the name of the service and your first key. You will need these in following steps.
+    * You get two keys so that you can regenerate one of them at a time without having to interrupt your service.
+
+## Create and publish the QnA Maker knowledge base
 
 Go to the [QnA Maker website](https://qnamaker.ai) and sign in. Select **Create a knowledge base** and create a new knowledge base named "FAQ". Click the **Select file** button and upload the [sample TSV file][FAQ_TSV]. Click **Create**, and once the service is created, click **Publish**.
 
@@ -54,11 +88,17 @@ dispatch init -name CombineWeatherAndLights -luisAuthoringKey "YOUR-LUIS-AUTHORI
 
 For each of the LUIS apps that you created, get the LUIS app ID. Those can be found for each app under **My Apps** on the [LUIS site](https://www.luis.ai/home); click on the app name, and then click on **Settings** to see the Application ID. 
 
-Then run the `dispatch add` command for each of the LUIS apps and the QnA Maker service you created:
+Then run the `dispatch add` command for each of the LUIS apps you created.
 
 ```
 dispatch add -type luis -id "HOMEAUTOMATION-APP-ID" -name homeautomation -version 0.1 -key "YOUR-LUIS-AUTHORING-KEY"
 dispatch add -type luis -id "WEATHER-APP-ID" -name weather -version 0.1 -key "YOUR-LUIS-AUTHORING-KEY"
+
+```
+
+Run the `dispatch add` command for the QnA Maker service you created. The `-key` parameter should be the key from the Azure Portal, that you saved when you completed the steps to [Create the QnA Cognitive Service in Azure](./bot-builder-tutorial-dispatch.md#create-the-qna-cognitive-service-in-azure).
+
+```
 dispatch add -type qna -id "QNA-KB-ID" -name faq -key "YOUR-QNA-SUBSCRIPTION-KEY"
 ```
 
