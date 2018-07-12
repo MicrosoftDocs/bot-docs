@@ -7,7 +7,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/05/2018
+ms.date: 07/12/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,11 +22,12 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 - [Node.js](https://nodejs.org/en/)
 - [Yeoman](http://yeoman.io/), which can use a generator to create a bot for you
 - [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator)
-- Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
+- Knowledge of [restify](http://restify.com/) and asynchronous programming in Java
 
 > [!NOTE]
 > For some installations the install step for restify is giving an error related to node-gyp.
 > If this is the case try running `npm install -g windows-build-tools`.
+
 
 
 The Bot Builder SDK for JavaScript consists of a series of [packages](https://github.com/Microsoft/botbuilder-js/tree/master/libraries) which can be installed from NPM using a special `@preview` tag.
