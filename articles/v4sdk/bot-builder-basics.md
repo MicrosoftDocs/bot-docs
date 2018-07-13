@@ -12,6 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Basic bot structure
+
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Azure Bot Service and the Bot Builder SDK provides libraries, samples, and tools to help you build and debug bots. However, before we get into too much detail on any of those, it's important to understand the basic structure of a bot and how they all work together. These concepts apply regardless of which programming language you choose. Links to more in depth content are provided throughout; this article will provide an initial mental framework for how a bot operates.
@@ -32,7 +33,7 @@ The bot receives the communication and wraps it up in an activity object, with t
 
 ## Receiving user input
 
-When we receive a message activity from the user, we need to understand what they're sending us. The most straighforward way is when we receive a message, simply match it to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](bot-builder-storage-concept.md), and so on.
+When we receive a message activity from the user, we need to understand what they're sending us. The most straightforward way is when we receive a message, simply match it to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](bot-builder-storage-concept.md), and so on.
 
 There are more complex ways to recognize user input, such as [LUIS](bot-builder-concept-luis.md) or [QnA Maker](bot-builder-howto-qna.md), but string matching is the simplest.
 
@@ -40,16 +41,18 @@ There are more complex ways to recognize user input, such as [LUIS](bot-builder-
 
 Receiving an activity, and subsequently processing it through your bot, is called a **turn**; this represents one complete cycle of your bot. A turn ends when all execution is done, the activity is fully processed and all the layers of the bot have completed.
 
-When the activity is received, the bot creates a **turn context** to provide information about the activity and give context to the current turn we are processing. That turn context exists for the duration of the turn, and then is disposed of, marking the end of the turn.
+Activity processing is managed by the **adapter** as described in more detail in [activity processing](~/v4sdk/bot-builder-concept-activity-processing.md). When the adapter receives an activity, it creates a **turn context** to provide information about the activity and give context to the current turn we are processing. That turn context exists for the duration of the turn, and then is disposed of, marking the end of the turn.
 
 The [turn context](bot-builder-concept-activity-processing.md#turn-context) contains a handful of information, and the same object is used through all the layers of your bot. This is helpful because this turn context object can be, and should be, used to store information needed later in that turn if needed.
 
 > [!IMPORTANT]
-> Each **turn** is independent of each other, executing on their own, and have the potential to overlap. Each turn will have it's own turn context, but it's worth considering the complexity that introduces in some situations.
+> Each **turn** is independent of each other, executing on their own, and have the potential to overlap. Each turn will have it's own turn context, but it's worth considering the complexity that introduces in some situations. If two turns are being processed concurrently, state collected in the one that finishes first may be lost.
+>
+> For more information, see [activity processing](~/v4sdk/bot-builder-concept-activity-processing.md) and [state and storage](~/v4sdk/bot-builder-storage-concept.md).
 
 ## Where to go from here
 
-This article avoided a lot of details, such as how [activites are processed](bot-builder-concept-activity-processing.md), different [conversation types](bot-builder-conversations.md), keeping track of the [state of your conversation](bot-builder-storage-concept.md) for more intelligent conversations, and so on. The rest of the conceptual topics build on this foundation, and cover the rest of the ideas needed to understand both bots and the Azure Bot Service. You can follow the next steps sections to build up your knowledge, or you can jump around to what intruiges you, try out the [quickstart](../bot-service-quickstart.md) to build your first bot, or dive into the [develop](bot-builder-howto-send-messages.md) docs. 
+This article avoided a lot of details, such as how [activities are processed](bot-builder-concept-activity-processing.md), different [conversation types](bot-builder-conversations.md), keeping track of the [state of your conversation](bot-builder-storage-concept.md) for more intelligent conversations, and so on. The rest of the conceptual topics build on this foundation, and cover the rest of the ideas needed to understand both bots and the Azure Bot Service. You can follow the next steps sections to build up your knowledge, or you can jump around to what intrigues you, try out the [quickstart](../bot-service-quickstart.md) to build your first bot, or dive into the [develop](bot-builder-howto-send-messages.md) docs.
 
 ## Next steps
 
@@ -57,4 +60,3 @@ Next, the Bot Connector Service allows your bot to communicate with users on dif
 
 > [!div class="nextstepaction"]
 > [Channels and the Bot Connector Service](bot-concepts.md)
-
