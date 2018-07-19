@@ -13,9 +13,13 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Middleware
 
+[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+
 Middleware is simply a class that sits between the adapter and your bot logic, added to your adapter's middleware collection during initialization. The SDK allows you to write your own middleware or add reusable components of middleware created by others. What can you do in middleware? Just about anything... Every activity coming into or out of your bot flows through middleware.
 
 The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. As each activity flows in and out of the bot, each piece of middleware can inspect or act upon the activity, both before and after the bot logic runs.
+
+Before jumping into middleware, it is important to understand [bots in general](~/v4sdk/bot-builder-basics.md) and [how they process activities](~/v4sdk/bot-builder-concept-activity-processing.md).
 
 ## Uses for middleware
 
@@ -53,7 +57,7 @@ For example:
 
 - 1st middleware object’s turn handler executes code before calling _next_.
   - 2nd middleware object’s turn handler executes code before calling _next_.
-    - The bot’s turn handler executes and returns
+    - The bot’s turn handler executes and returns.
   - 2nd middleware object’s turn handler executes any remaining code before returning.
 - 1st middleware object’s turn handler executes any remaining code before returning.
 
@@ -70,39 +74,13 @@ Since the order in which middleware is added determines the order in which the m
 > [!NOTE]
 > This is meant to give you a common pattern that works for most bots, but be sure to consider how each piece of middleware will interact with the others for your situation.
 
-<!--snip
-### Group one: Process every message
--->
-
 The first things in your middleware pipeline should likely be those that take care of the lowest-level tasks that are used every time. Examples include logging, exception handling, state management, and translation. Ordering these can vary depending on your needs, such as whether you want the incoming message to be translated first, before any exceptions can be handled, or if exception handling should be first, which can mean exception messages wouldn't be translated.
 
 The last things in your middleware pipeline should be bot-specific middleware, which is middleware you implement to do some processing on every message sent to your bot. If your middleware uses state information or other information set in the bot context, add it to the middleware pipeline after the middleware that modifies state or context.
 
-<!--Snip: The dev team seems to think that these other classes are no longer advisable...
-
-### Group two: Middleware that affects conversation flow
-
-Next can be services like LUIS, QnA, or other middleware that you use to determine the conversation flow of your bot. These services may enrich the turn context or may send responses. Keep in mind how these pieces of middleware interact with the activity, depending on which middleware your bot is using.
-
-- LUIS middleware adds the top intent that LUIS recognizes to the turn context, which your bot can use to make decisions on appropriate responses. Once the top intent is in the turn context, all processing that happens after that has access to that intent.
-- QnA Maker middleware sends a response to the user if it finds a match to the user's message in a QnA Maker knowledge base.
-
-If you're using either LUIS or QnA Maker middleware, add any translation middleware first if you want to be able to translate messages to the language that the LUIS or QnA Maker service understands.
-
-### Group three: Fallback processing and bot-specific logic
-
-Lastly are things like responding if no other response has been generated, or some bot-specific middleware.
-
-* Fallback processing checks whether any other middleware component has responded to the user, before sending a response or taking some other action.
-* Bot-specific middleware is middleware you implement to do some processing on every message sent to your bot. If your middleware uses state information or other information set in the bot context, add it to the middleware pipeline after the middleware that modifies state or context.
-
-Some middleware, such as QnA, may handle responding or short-circuit the processing pipeline. It's important to consider if and when middleware may do so and how that affects the other pieces of middleware.
-
-/Snip-->
-
 ## Short circuiting
 
-An important idea around middleware (and [event handlers](bot-builder-concept-activity-processing.md#response-event-handlers)) is _short circuiting_. If execution is to continue through the layers that follow it, middleware (or a handler) is required to pass execution on by calling it's _next_ delegate. If the next delegate is not called within that middleware (or handler), the current pipeline will short circuit and subsequent layers are not executed. This means all bot logic, and any middleware later down the pipeline, are skipped.
+An important idea around middleware (and [event handlers](~/v4sdk/bot-builder-concept-activity-processing.md#response-event-handlers)) is _short circuiting_. If execution is to continue through the layers that follow it, middleware (or a handler) is required to pass execution on by calling it's _next_ delegate.  If the next delegate is not called within that middleware (or handler), the current pipeline will short circuit and subsequent layers are not executed. This means all bot logic, and any middleware later down the pipeline, are skipped.
 
 For event handlers, not calling _next_ means that the event is cancelled, which is a significantly different result than middleware skipping logic. By not processing the rest of the event, the adapter never sends it.
 
@@ -114,4 +92,4 @@ For event handlers, not calling _next_ means that the event is cancelled, which 
 Now that you're familiar with some key concepts of a bot, let's dive into the details of how a bot can send proactive messages.
 
 > [!div class="nextstepaction"]
-> [Proactive Messaging](bot-builder-proactive-messages.md)
+> [Proactive Messaging](~/v4sdk/bot-builder-proactive-messages.md)
