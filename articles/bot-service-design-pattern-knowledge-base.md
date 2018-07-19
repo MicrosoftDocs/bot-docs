@@ -110,14 +110,11 @@ Then, you can test it by asking a series of questions:
 
 ![Dialog Structure](~/media/bot-service-design-pattern-knowledge-base/exampleQnAConvo.png)
 
-The bot correctly answers the questions that directly map to the ones that were configured in the knowledge base. 
-However, it incorrectly responds to the question "can I bring my rum?". 
-Because this question is most similar in structure to the question "can I bring my dog?" and 
-because QnA Maker does not inherently understand the meaning of words, i.e., it does not know that "rum" is a type of liquor, it answers "Dogs are not allowed." 
+The bot correctly answers the questions that directly map to the ones that were configured in the knowledge base. However, it incorrectly responds to the question "can I bring my tea?", because this question is most similar in structure to the question "can I bring my vodka?." The reason QnA Maker gives an incorrect answer is that it does not inherently understand the meaning of words. It does not know that "tea" is a type of nonalcoholic drink. Therefore, it answers "Alcohol is not allowed."
 
 > [!TIP]
 > Create your QnA pairs and then test and re-train your bot by using 
-> the menu on the left side of the conversation to select an alternative answer for each 
+> the "Inspect" button under the conversation to select an alternative answer for each 
 > incorrect answer that is given. 
 
 ## LUIS

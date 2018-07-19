@@ -1,0 +1,1 @@
+Receiving an activity, and subsequently processing it through your bot, is called a **turn**; this represents one complete cycle of your bot. A turn ends when all execution is done, the activity is fully processed and all the layers of the bot have completed.

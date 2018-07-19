@@ -259,7 +259,7 @@ const adapter = new BotFrameworkAdapter({
 const storage = new MemoryStorage();
 const conversationState = new ConversationState(storage);
 const userState  = new UserState(storage);
-adapter.use(new BotStateSet(convoState, userState));
+adapter.use(new BotStateSet(conversationState, userState));
 
 // Listen for incoming requests 
 server.post('/api/messages', (req, res) => {
@@ -281,7 +281,7 @@ server.post('/api/messages', (req, res) => {
                 user.name = context.activity.text;
                 convo.haveAskedNameFlag = false; // Reset flag
 
-                await context.sendActivity(`Hello, ${convo.name}. What's your telephone number?`);
+                await context.sendActivity(`Hello, ${user.name}. What's your telephone number?`);
                 convo.haveAskedNumberFlag = true; // Set flag
             } else if(convo.haveAskedNumberFlag){
                 // save the phone number
@@ -338,14 +338,14 @@ The `$type` specifies the type of the data structure you're using in your bot to
 
 # [JavaScript](#tab/js)
 
-To use `FileStorage`, update your echo bot sample described in section: [Use conversation and user state properties](#use-conversation-and-user-state-properties) earlier. Make sure `storage` is set to `FileStorage` instead of `MemoryStorage`. That is the only change needed. 
+To use `FileStorage`, update your echo bot sample described in section: [Use conversation and user state properties](#use-conversation-and-user-state-properties) earlier. Make sure `storage` is set to `FileStorage` instead of `MemoryStorage` and require `FileStorage` from botbuilder. These are the only changes needed. 
 
 ```javascript
 // Storage
 const storage = new FileStorage("c:/temp");
 const conversationState = new ConversationState(storage);
 const userState  = new UserState(storage);
-adapter.use(new BotStateSet(convoState, userState));
+adapter.use(new BotStateSet(conversationState, userState));
 ```
 
 The `FileStorage` provider takes a "path" as a parameter. Specifying a path allows you to easily find the file with the persisted information from your bot. Each *conversation* will have a new file created for it. So, in the *path*, you may find multiple file names starting with `conversation!`. You can sort by date to find the lastest conversation easier. On the other hand, you will only find one file for the *user* state. The filename will start with `user!`. Anytime the state of either of these object changes, the state manager will update the file to reflect what's changed.
@@ -393,7 +393,11 @@ TODO: step-by-step inspection of the stored table
 
 # [JavaScript](#tab/js)
 
-In `app.js` of the echobot sample, you can create ConversationState using `AzureTableStorage`
+In `app.js` of the echobot sample, you can create ConversationState using `AzureTableStorage`. 
+
+```bash
+npm install --save botbuilder-azure@preview
+```
 
 ```javascript
 const { BotFrameworkAdapter, FileStorage, MemoryStorage, ConversationState } = require('botbuilder');
