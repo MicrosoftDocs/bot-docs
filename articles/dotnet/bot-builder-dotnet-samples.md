@@ -91,9 +91,9 @@ Note: The SDK v4 is being actively developed and should therefore be used for ex
 To get the samples, clone the [botbuilder-dotnet](https://github.com/Microsoft/botbuilder-dotnet) GitHub repository using Git.
 ```cmd
 git clone https://github.com/Microsoft/botbuilder-dotnet.git
-cd samples
+cd botbuilder-dotnet\samples-final
 ```
-The sample bots built with the Bot Builder SDK for .NET are organized in the **samples** directory.
+The sample bots built with the Bot Builder SDK for .NET are organized in the **samples-final** directory.
 
 
 ::: moniker-end
