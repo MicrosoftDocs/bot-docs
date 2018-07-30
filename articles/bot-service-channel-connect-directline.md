@@ -28,11 +28,12 @@ Next, add a new site that represents the client application that you want to con
 
 ## Manage secret keys
 
-When your site is created, the Bot Framework generates secret keys that your client application can use to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that it issues to communicate with your bot. To view a key in plain text, click **Show** for the corresponding key. 
+When your site is created, the Bot Framework generates secret keys that your client application can use to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that it issues to communicate with your bot. To view a key in plain text, click **Show** for the corresponding key.
 
 ![Show Direct Line key](~/media/bot-service-channel-connect-directline/directline-showkey.png)
 
-Copy and securely store the key that is shown. Then use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client issues to communicate with your bot, or alternatively, use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token) that your client can use to authenticate its subsequent requests within the scope of a single conversation.
+Copy and securely store the key that is shown. Then use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client issues to communicate with your bot.
+Alternatively, use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token) that your client can use to authenticate its subsequent requests within the scope of a single conversation.
 
 ![Copy Direct Line key](~/media/bot-service-channel-connect-directline/directline-copykey.png)
 
@@ -46,4 +47,3 @@ Finally, configure settings for the site.
 > If you are creating a new connection between your client application and bot, use Direct Line API 3.0.
 
 When finished, click **Done** to save the site configuration. You can repeat this process, beginning with [Add new site](#add-new-site), for each client application that you want to connect to your bot.
-

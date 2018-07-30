@@ -13,7 +13,7 @@ ms.date: 12/13/2017
 
 # Connect a bot to channels
 
-A channel is the connection between the Bot Framework and communication apps. You configure a bot to connect to the channels you want it to be available on. For example, a bot connected to the Skype channel can be added to a contact list and people can interact with it in Skype. 
+A channel is a connection between the Bot Framework and communication apps. You configure a bot to connect to the channels you want it to be available on. For example, a bot connected to the Skype channel can be added to a contact list and people can interact with it in Skype. 
 
 The channels include many popular services, such as [Cortana](bot-service-channel-connect-cortana.md), [Facebook Messenger](bot-service-channel-connect-facebook.md), [Kik](bot-service-channel-connect-kik.md), and [Slack](bot-service-channel-connect-slack.md), as well as several others. [Skype](https://dev.skype.com/bots) and Web Chat are pre-configured for you. 
 

@@ -705,12 +705,17 @@ private T GetEntity<T>(RecognizerResult luisResult, string entityKey)
 
 # [JavaScript](#tab/js)
 
+You may need to install the dialogs library if you have not already done so. 
+
+```cmd
+npm install --save botbuilder-dialogs
+```
 
 First, create a LUIS app and add it to your bot using `adapter.use`:
 
 ```javascript
 const { BotFrameworkAdapter, ConversationState, MemoryStorage, TurnContext } = require('botbuilder');
-const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const { LuisRecognizer } = require('botbuilder-ai');
 const { DialogSet } = require('botbuilder-dialogs');
 const restify = require('restify');
 

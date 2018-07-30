@@ -62,7 +62,7 @@ For example, a weather bot has a multi-turn flow, if the bot responds to "what's
 
 ![multi-turn weather bot](./media/concept-conversation/weather-multi-turn.png)
 
-When the user replies to the bot's prompt for the city, the receive handler for the bot gets the utterance "Seattle", the bot needs to have some context saved, to understand that the current message is the response to a previous prompt and part of a request to get weather. Multi-turn bots keep track of state to respond appropriately to new messages.
+When the user replies to the bot's prompt for the city and the bot receives "Seattle", the bot needs to have some context saved to understand that the current message is the response to a previous prompt and part of a request to get weather. Multi-turn bots keep track of state to respond appropriately to new messages.
 
 <!--
 ```

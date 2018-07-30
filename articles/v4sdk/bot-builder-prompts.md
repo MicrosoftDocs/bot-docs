@@ -249,7 +249,7 @@ using ChoiceFactory = Microsoft.Bot.Builder.Prompts.Choices.ChoiceFactory;
 ```
 
 ```csharp
-dialogs.Add("choicePrompt", new NumberPrompt<int>(Culture.English));
+dialogs.Add("choicePrompt", new ChoicePrompt(Culture.English));
 ```
 
 ```csharp

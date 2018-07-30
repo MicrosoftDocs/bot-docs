@@ -22,31 +22,31 @@ namespace InputHintsPublic
             if (context.Activity.Type == ActivityTypes.Message)
             {
                 {
-                    // <Accepting>
+                    // <Accepting input>
                     var reply = MessageFactory.Text(
                         "This is the text that will be displayed.",
                         "This is the text that will be spoken.",
                         InputHints.AcceptingInput);
                     await context.SendActivity(reply).ConfigureAwait(false);
-                    // </Accepting>
+                    // </Accepting input>
                 }
                 {
-                    // <Expecting>
+                    // <Expecting input>
                     var reply = MessageFactory.Text(
                         "This is the text that will be displayed.",
                         "This is the text that will be spoken.",
                         InputHints.ExpectingInput);
                     await context.SendActivity(reply).ConfigureAwait(false);
-                    // </Expecting>
+                    // </Expecting input>
                 }
                 {
-                    // <Ignoring>
+                    // <Ignoring input>
                     var reply = MessageFactory.Text(
                         "This is the text that will be displayed.",
                         "This is the text that will be spoken.",
                         InputHints.IgnoringInput);
                     await context.SendActivity(reply).ConfigureAwait(false);
-                    // </Ignoring>
+                    // </Ignoring input>
                 }
             }
         }
