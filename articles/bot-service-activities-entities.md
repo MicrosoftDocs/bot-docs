@@ -161,16 +161,16 @@ Activities can be of several different types past the most common **message**. T
 
 | Activity.Type | Interface | Description |
 |-----|-----|-----|
-| [message](#message) | IMessageActivity(C#) <br> Activity(JS) | Represents a communication between bot and user. |
-| [contactRelationUpdate](#contactRelationUpdate) | IContactRelationUpdateActivity(C#) <br> Activity(JS) | Indicates that the bot was added or removed from a user's contact list. |
-| [conversationUpdate](#conversationUpdate) | IConversationUpdateActivity(C#) <br> Activity(JS) | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
-| [deleteUserData](#deleteUserData) | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
-| [endOfConversation](#endOfConversation) | IEndOfConversationActivity(C#) <br> Activity(JS) | Indicates the end of a conversation. |
-| [event](#event) | IEventActivity(C#) <br> Activity(JS) | Represents a communication sent to a bot that is not visible to the user. |
-| [invoke](#invoke) | IInvokeActivity(C#) <br> Activity(JS) | Represents a communication sent to a bot to request that it perform a specific operation. This activity type is reserved for internal use by the Microsoft Bot Framework. |
-| [messageReaction](#messageReaction) | IMessageReactionActivity(C#) <br> Activity(JS) | Indicates that a user has reacted to an existing activity. For example, a user clicks the "Like" button on a message. |
-| [ping](#ping) | n/a | Represents an attempt to determine whether a bot's endpoint is accessible. |
-| [typing](#typing) | ITypingActivity(C#) <br> Activity(JS) | Indicates that the user or bot on the other end of the conversation is compiling a response. |
+| [message](#message) | IMessageActivity (C#) <br> Activity (JS) | Represents a communication between bot and user. |
+| [contactRelationUpdate](#contactrelationupdate) | IContactRelationUpdateActivity (C#) <br> Activity (JS) | Indicates that the bot was added or removed from a user's contact list. |
+| [conversationUpdate](#conversationupdate) | IConversationUpdateActivity (C#) <br> Activity (JS) | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
+| [deleteUserData](#deleteuserdata) | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
+| [endOfConversation](#endofconversation) | IEndOfConversationActivity (C#) <br> Activity (JS) | Indicates the end of a conversation. |
+| [event](#event) | IEventActivity (C#) <br> Activity (JS) | Represents a communication sent to a bot that is not visible to the user. |
+| [installationUpdate](#installationupdate) | IInstallationUpdateActivity (C#) <br> Activity (JS) | Represents an installation or uninstallation of a bot within an organizational unit (such as a customer tenant or "team") of a channel. |
+| [invoke](#invoke) | IInvokeActivity (C#) <br> Activity (JS) | Represents a communication sent to a bot to request that it perform a specific operation. This activity type is reserved for internal use by the Microsoft Bot Framework. |
+| [messageReaction](#messagereaction) | IMessageReactionActivity (C#) <br> Activity (JS) | Indicates that a user has reacted to an existing activity. For example, a user clicks the "Like" button on a message. |
+| [typing](#typing) | ITypingActivity (C#) <br> Activity (JS) | Indicates that the user or bot on the other end of the conversation is compiling a response. |
 
 ## message
 
@@ -199,7 +199,7 @@ or conversation metadata has changed.
 If members have been added to the conversation, the activity's members added property will contain an array of
 channel account objects to identify the new members.
 
-To determine whether your bot has been added to the conversation (i.e., is one of the new members), evaluate whether the recipient Id value for the activity (i.e., your bot's id)
+To determine whether your bot has been added to the conversation (i.e., is one of the new members), evaluate whether the recipient Id value for the activity (i.e., your bot's ID)
 matches the Id property for any of the accounts in the members added array.
 
 If members have been removed from the conversation, the members removed property will contain an array of channel account objects to identify the removed members.
@@ -212,37 +212,39 @@ If members have been removed from the conversation, the members removed property
 
 A bot receives a delete user data activity when a user requests deletion of any data that the bot has previously persisted for him or her. If your bot receives this type of activity, it should delete any personally identifiable information (PII) that it has previously stored for the user that made the request.
 
-## endOfConversation 
+## endOfConversation
 
-A bot receives an end of conversation activity to indicate that the user has ended the conversation. A bot may send an end of Conversation activity to indicate to the user that the conversation is ending. 
+A bot receives an end of conversation activity to indicate that the user has ended the conversation. A bot may send an end of Conversation activity to indicate to the user that the conversation is ending.
 
 ## event
 
-Your bot may receive an event activity from an external process or service that wants to 
-communicate information to your bot without that information being visible to users. The 
+Your bot may receive an event activity from an external process or service that wants to
+communicate information to your bot without that information being visible to users. The
 sender of an event activity typically does not expect the bot to acknowledge receipt in any way.
+
+## installationUpdate
+
+Installation update activities represent an installation or uninstallation of a bot within an organizational unit (such as a customer tenant or "team") of a channel. Installation update activities generally do not represent adding or removing a channel. Channels may send installation activities when a bot is added to or removed from a tenant, team, or other organization unit within the channel. Channels should not send installation activities when the bot is installed into or removed from a channel.
 
 ## invoke
 
-Your bot may receive an invoke activity that represents a request for it to perform a specific operation. 
-The sender of an invoke activity typically expects the bot to acknowledge receipt via HTTP response. 
+Your bot may receive an invoke activity that represents a request for it to perform a specific operation.
+The sender of an invoke activity typically expects the bot to acknowledge receipt via HTTP response.
 This activity type is reserved for internal use by the Microsoft Bot Framework.
 
 ## messageReaction
 
 Some channels will send message reaction activities to your bot when a user reacted to an existing activity. For example, a user clicks the "Like" button on a message. The reply toId property will indicate which activity the user reacted to.
 
-The message reaction activity may correspond to any number of message reaction types that the channel defined. For example, "Like" or "PlusOne" as reaction types that a channel may send. 
-
-## ping
-
-A bot receives a ping activity to determine whether its endpoint is accessible. The bot should respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized).
+The message reaction activity may correspond to any number of message reaction types that the channel defined. For example, "Like" or "PlusOne" as reaction types that a channel may send.
 
 ## typing
 
-A bot receives a typing activity to indicate that the user is typing a response. 
-A bot may send a typing activity to indicate to the user that it is working to fulfill a request or compile a response. 
+A bot receives a typing activity to indicate that the user is typing a response.
+A bot may send a typing activity to indicate to the user that it is working to fulfill a request or compile a response.
 
+::: moniker range="azure-bot-service-3.0"
 ## Additional resources
 
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
+::: moniker-end
