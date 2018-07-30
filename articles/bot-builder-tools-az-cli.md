@@ -154,7 +154,7 @@ msbot connect service-type
 | Service type | Description |
 | ------ | ----------- |
 | azure  |connect your bot to an Azure Bot Service registration|
-|localhost| connect your bot to a localhost endpoint|
+|endpoint| connect your bot to an endpoint such as localhost|
 |luis     | connect your bot to a LUIS application |
 | qna     |connect your bot to a QnA Knowledgebase|
 |help [cmd]  |display help for [cmd]|
