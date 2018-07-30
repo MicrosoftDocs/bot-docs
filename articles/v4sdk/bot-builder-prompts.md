@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 # Prompt users for input
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 
 Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using the turn context object's _send activity_ method to ask for a string input; however, the Bot Builder SDK provides a **dialogs** library that you can use to ask for different types for information. This topic details how to use **prompts** to ask a user for input.
 
@@ -37,7 +37,7 @@ You can get the **dialogs** library by adding the **dialogs** package to your bo
 
 # [C#](#tab/csharp)
 
-Install the **Microsoft.Bot.Builder.Dialogs** package from Nuget.
+Install the **Microsoft.Bot.Builder.Dialogs** package from NuGet.
 
 Then, include reference the library from your bot code.
 
@@ -45,8 +45,23 @@ Then, include reference the library from your bot code.
 using Microsoft.Bot.Builder.Dialogs;
 ```
 
+You can define a dialog as a class or in-line as a property in your bot code file.
+
+The code in this article is written for a dialog defined as a class.
+The following examples assume you are adding code to the dialog's constructor.
+
+The main flow of your dialog is its collection of steps and needs to be given an ID. Your bot uses this ID to retrieve the dialog, so it is a good practice to expose this as a constant.
+
 ```cs
-DialogSet dialogs = new DialogSet();
+public class MyDialog : DialogSet
+{
+    public const string Name = "mainDialog";
+
+    public MyDialog()
+    {
+        // Define your dialog's prompts and steps here.
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
@@ -74,26 +89,51 @@ To prompt a user for input, you can add a prompt to your dialog. For example, yo
 
 Once a prompt dialog is added, you can use it in a simple two step waterfall dialog or use multiple prompts together in a multi-step waterfall. A *waterfall* dialog is simply a way to define a sequence of steps. For more information, see the [using dialogs](bot-builder-dialog-manage-conversation-flow.md#using-dialogs-to-guide-the-user-through-steps) section of [manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
 
+On the first turn, the dialog prompts the user for their name, and on the second turn, the dialog processes the user input as an answer to the prompt.
+
 For example, the following dialog prompts the user for their name and then greets them by name:
 
 # [C#](#tab/csharp)
 
+Each prompt you use in your dialog is also given a name, used by the dialog or your bot to access the prompt. In all of these samples, we are exposing the prompt IDs as constants.
+
+A call to the dialog context's **Prompt** or **End** method signals the end of the step to the dialog. Without these statements, the dialog will not run properly.
+
 ```csharp
-dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
-dialogs.Add("greetings", new WaterfallStep[]
+/// <summary>Defines a simple greeting dialog that asks for the user's name.</summary>
+public class MyDialog : DialogSet
 {
-    // Each step takes in a dialog context, arguments, and the next delegate.
-    async (dc, args, next) =>
+    /// <summary>The ID of the main dialog in the set.</summary>
+    public const string Name = "mainDialog";
+
+    /// <summary>Defines the IDs of the prompts in the set.</summary>
+    public struct Inputs
     {
-        // Prompt for the guest's name.
-        await dc.Prompt("textPrompt","What is your name?");
-    },
-    async(dc, args, next) =>
-    {
-        await dc.Context.SendActivity($"Hi {args["Text"]}!");
-        await dc.End();
+        /// <summary>The ID of the text prompt.</summary>
+        public const string Text = "textPrompt";
     }
-});
+
+    /// <summary>Defines the prompts and steps of the dialog.</summary>
+    public MyDialog()
+    {
+        Add(Inputs.Text, new TextPrompt());
+        Add(Name, new WaterfallStep[]
+        {
+            // Each step takes in a dialog context, arguments, and the next delegate.
+            async (dc, args, next) =>
+            {
+                // Prompt for the user's name.
+                await dc.Prompt(Inputs.Text, "What is your name?").ConfigureAwait(false);
+            },
+            async(dc, args, next) =>
+            {
+                var user = (string)args["Text"];
+                await dc.Context.SendActivity($"Hi {user}!").ConfigureAwait(false);
+                await dc.End().ConfigureAwait(false);
+            }
+        });
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
@@ -124,35 +164,52 @@ dialogs.add('greetings', [
 
 ## Reusable prompts
 
-A prompt can be reused to ask for different information using the same type of prompt. For example, the sample code above defines a `TextPrompt` that is used to ask the user for their name. If you wanted to, for example, you can also use that same prompt to ask the user for another text string; such as, "Where do you work?".
+A prompt can be reused to ask for different information using the same type of prompt. For example, the sample code above defined a text prompt and used it to ask the user for their name. If you wanted to, for example, you can also use that same prompt to ask the user for another text string; such as, "Where do you work?".
 
 # [C#](#tab/csharp)
 
 ```cs
-dialogs.Add("textPrompt", new Builder.Dialogs.TextPrompt());
-dialogs.Add("greetings", new WaterfallStep[]
+/// <summary>Defines a simple greeting dialog that asks for the user's name and place of work.</summary>
+public class MyDialog : DialogSet
 {
-    async (dc, args, next) =>
-    {
-        // Prompt for the guest's name.
-        await dc.Prompt("textPrompt","What is your name?");
-    },
-    async (dc, name, next) =>
-    {
-        // The args input can be named whatever you'd like. Since we know
-        // it will be a name here, let's call in name
-        await dc.Context.SendActivity($"Hi {name["Text"]}!");
+    /// <summary>The ID of the main dialog in the set.</summary>
+    public const string Name = "mainDialog";
 
-        // Ask them where they work
-        await dc.Prompt("textPrompt", "Where do you work?");
-    },
-    async (dc, workplace, next) =>
+    /// <summary>Defines the IDs of the prompts in the set.</summary>
+    public struct Inputs
     {
-        // Here lets call args 'workplace'
-        await dc.Context.SendActivity($"{workplace["Text"]} is a cool place!");
-        await dc.End();
+        /// <summary>The ID of the text prompt.</summary>
+        public const string Text = "textPrompt";
     }
-});
+
+    /// <summary>Defines the prompts and steps of the dialog.</summary>
+    public MyDialog()
+    {
+        Add(Inputs.Text, new TextPrompt());
+        Add(Name, new WaterfallStep[]
+        {
+            async (dc, args, next) =>
+            {
+                // Prompt for the user's name.
+                await dc.Prompt(Inputs.Text, "What is your name?").ConfigureAwait(false);
+            },
+            async(dc, args, next) =>
+            {
+                var user = (string)args["Text"];
+
+                // Ask them where they work.
+                await dc.Prompt(Inputs.Text, $"Hi {user}! Where do you work?").ConfigureAwait(false);
+            },
+            async(dc, args, next) =>
+            {
+                var workplace = (string)args["Text"];
+
+                await dc.Context.SendActivity($"{workplace} is a cool place!").ConfigureAwait(false);
+                await dc.End().ConfigureAwait(false);
+            }
+        });
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
@@ -169,7 +226,7 @@ dialogs.add('greetings',[
     async function(dc, userName){
         await dc.context.sendActivity(`Hi ${userName}!`);
 
-        // Ask them where they work
+        // Ask them where they work.
         await dc.prompt('textPrompt', 'Where do you work?');
     },
     async function(dc, workPlace){
@@ -187,8 +244,47 @@ However, if you wish to pair the prompt to the expected value that prompt is ask
 # [C#](#tab/csharp)
 
 ```cs
-dialogs.Add("namePrompt", new Builder.Dialogs.TextPrompt());
-dialogs.Add("workplacePrompt", new Builder.Dialogs.TextPrompt());
+/// <summary>The ID of the main dialog in the set.</summary>
+public const string Name = "mainDialog";
+
+/// <summary>Defines the IDs of the prompts in the set.</summary>
+public struct Inputs
+{
+    /// <summary>The ID of the name prompt.</summary>
+    public const string Name = "namePrompt";
+
+    /// <summary>The ID of the work prompt.</summary>
+    public const string Work = "workPrompt";
+}
+
+/// <summary>Defines the prompts and steps of the dialog.</summary>
+public MyDialog()
+{
+    Add(Inputs.Name, new TextPrompt());
+    Add(Inputs.Work, new TextPrompt());
+    Add(Name, new WaterfallStep[]
+    {
+        async (dc, args, next) =>
+        {
+            // Prompt for the user's name.
+            await dc.Prompt(Inputs.Name, "What is your name?").ConfigureAwait(false);
+        },
+        async(dc, args, next) =>
+        {
+            var user = (string)args["Text"];
+
+            // Ask them where they work.
+            await dc.Prompt(Inputs.Work, $"Hi {user}! Where do you work?").ConfigureAwait(false);
+        },
+        async(dc, args, next) =>
+        {
+            var workplace = (string)args["Text"];
+
+            await dc.Context.SendActivity($"{workplace} is a cool place!").ConfigureAwait(false);
+            await dc.End().ConfigureAwait(false);
+        }
+    });
+}
 ```
 
 # [JavaScript](#tab/javascript)
@@ -200,7 +296,7 @@ dialogs.add('workPlacePrompt', new TextPrompt());
 
 ---
 
-For the sake of code reusability, defining a single `textPrompt` would work for all these three prompts because they ask for a text string as a response. However, where the ability to name dialogs come in handy is when you need to validate the input of the prompt. In which case, the prompts may be using **TextPrompt** but each is looking for a different set of values. Lets take a look at how you can validate prompt responses using a `NumberPrompt`.
+For the sake of code reusability, defining a single `textPrompt` would work for all these prompts because they ask for a text string as a response. However, where the ability to name dialogs comes in handy is when you need to validate the input of the prompt. In which case, the prompts may be using **TextPrompt** but each is looking for a different set of values. Lets take a look at how you can validate prompt responses using a `NumberPrompt`.
 
 ## Specify prompt options
 
@@ -208,17 +304,31 @@ When you use a prompt within a dialog step, you can also provide prompt options,
 
 Specifying a reprompt string is useful when user input can fail to satisfy a prompt, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria.
 
+> [!TIP]
+> When you create a number prompt, you need to specify the input culture it will use. The number prompt can interpret a wide variety of input, such as "twelve" or "one quarter", as well as "12" and "0.25". The input culture helps the prompt more correctly interpret the user's input.
+
 # [C#](#tab/csharp)
+
+Input cultures are defined in an additional library.
+
+```csharp
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Recognizers.Text;
+```
+
+The following code would add a number prompt to an existing dialog set, **dialogs**.
 
 ```csharp
 dialogs.Add("numberPrompt", new NumberPrompt<int>(Culture.English));
 ```
 
+Within a dialog step, the following code would prompt the user for input and provide a reprompt string to use if their input cannot be interpreted as a number.
+
 ```csharp
-await dc.Prompt("numberPrompt","How many people are in your party?", new PromptOptions()
+await dc.Prompt("numberPrompt", "How many people are in your party?", new PromptOptions()
 {
     RetryPromptString = "Sorry, please specify the number of people in your party."
-});
+}).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -241,26 +351,64 @@ In particular, the choice prompt requires some additional information, the list 
 
 # [C#](#tab/csharp)
 
-The **ChoicePromptOptions** class derives from the **PromptOptions** class.
-The **ChoiceFactory** helps create a **Choice** list for the **Choices** property.
+This example uses types from the following namespaces.
 
 ```csharp
-using ChoiceFactory = Microsoft.Bot.Builder.Prompts.Choices.ChoiceFactory;
+using Microsoft.Bot.Builder.Core.Extensions;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.Prompts.Choices;
+using Microsoft.Bot.Schema;
+using Microsoft.Recognizers.Text;
+using System.Collections.Generic;
 ```
 
-```csharp
-dialogs.Add("choicePrompt", new NumberPrompt<int>(Culture.English));
-```
+When we use the **ChoicePrompt** to ask the user to choose between a set of options, we have to provide the prompt with that set of options, provided within a **ChoicePromptOptions** object. Here, we use the **ChoiceFactory** to convert a list of options into an appropriate format.
+
+We are also using a **SuggestedActions** activity as the reprompt, as a way of providing the input options to the user again.
 
 ```csharp
-// A choice prompt requires that you specify choice options.
-var list = new List<string> { "green", "blue" };
-var choices = ChoiceFactory.ToChoices(list);
-await dc.Prompt("choicePrompt","Please make a choice.", new ChoicePromptOptions()
+/// <summary>Defines a dialog that asks for a choice of color.</summary>
+public class MyDialog : DialogSet
 {
-    Choices = ChoiceFactory.ToChoices(list),
-    RetryPromptActivity = MessageFactory.SuggestedActions(list, "Please choose a color.") as Activity
-});
+    /// <summary>The ID of the main dialog in the set.</summary>
+    public const string Name = "mainDialog";
+
+    /// <summary>Defines the IDs of the prompts in the set.</summary>
+    public struct Inputs
+    {
+        /// <summary>The ID of the color prompt.</summary>
+        public const string Color = "colorPrompt";
+    }
+
+    /// <summary>The available colors to choose from.</summary>
+    public List<string> Colors = new List<string> { "Green", "Blue" };
+
+    /// <summary>Defines the prompts and steps of the dialog.</summary>
+    public MyDialog()
+    {
+        Add(Inputs.Color, new ChoicePrompt(Culture.English));
+        Add(Name, new WaterfallStep[]
+        {
+            async (dc, args, next) =>
+            {
+                // Prompt for a color. A choice prompt requires that you specify choice options.
+                await dc.Prompt(Inputs.Color, "Please make a choice.", new ChoicePromptOptions()
+                {
+                    Choices = ChoiceFactory.ToChoices(Colors),
+                    RetryPromptActivity =
+                        MessageFactory.SuggestedActions(Colors, "Please choose a color.") as Activity
+                }).ConfigureAwait(false);
+            },
+            async(dc, args, next) =>
+            {
+                var color = (FoundChoice)args["Value"];
+
+                await dc.Context.SendActivity($"You chose {color.Value}.").ConfigureAwait(false);
+                await dc.End().ConfigureAwait(false);
+            }
+        });
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
@@ -288,39 +436,79 @@ You can validate a prompt response before returning the valid value to the next 
 # [C#](#tab/csharp)
 
 ```cs
-// As second argument when creating number prompt, specify the validation
-dialogs.Add("partySize", new Builder.Dialogs.NumberPrompt<int>(Culture.English, async (context, result) =>
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Recognizers.Text;
+using PromptStatus = Microsoft.Bot.Builder.Prompts.PromptStatus;
+```
+
+```cs
+/// <summary>Defines a dialog that asks for the number of people in a party.</summary>
+public class MyDialog : DialogSet
 {
-    if (result.Value < 6 || result.Value > 20)
+    /// <summary>The ID of the main dialog in the set.</summary>
+    public const string Name = "mainDialog";
+
+    /// <summary>Defines the IDs of the prompts in the set.</summary>
+    public struct Inputs
     {
-        await context.SendActivity("Please specify party size between 6 and 20.");
-        result.Status = PromptStatus.NotRecognized;
+        /// <summary>The ID of the party size prompt.</summary>
+        public const string Size = "parytySize";
     }
-}));
+
+    /// <summary>Defines the prompts and steps of the dialog.</summary>
+    public MyDialog()
+    {
+        // Include a validation function for the party size prompt.
+        Add(Inputs.Size, new NumberPrompt<int>(Culture.English, async (context, result) =>
+        {
+            if (result.Value < 6 || result.Value > 20)
+            {
+                result.Status = PromptStatus.OutOfRange;
+            }
+        }));
+        Add(Name, new WaterfallStep[]
+        {
+            async (dc, args, next) =>
+            {
+                // Prompt for the party size.
+                await dc.Prompt(Inputs.Size, "How many people are in your party?", new PromptOptions()
+                {
+                    RetryPromptString = "Please specify party size between 6 and 20."
+                }).ConfigureAwait(false);
+            },
+            async(dc, args, next) =>
+            {
+                var size = (int)args["Value"];
+
+                await dc.Context.SendActivity($"Okay, {size} people!").ConfigureAwait(false);
+                await dc.End().ConfigureAwait(false);
+            }
+        });
+    }
+}
 ```
 
 Validation can also be encapsulated within it's own private method, and added that way.
 
 ```cs
-private Task NumberValidator(ITurnContext context, NumberResult<int> result)
+/// <summary>Validates input for the partySize prompt.</summary>
+/// <param name="context">The context object for the current turn of the bot.</param>
+/// <param name="result">The recognition result from the prompt.</param>
+/// <returns>An updated recognition result.</returns>
+private static async Task PartySizeValidator(ITurnContext context, Int32Result result)
 {
-    if (result.Value < 1)
+    if (result.Value < 6 || result.Value > 20)
     {
-        result.Status = PromptStatus.TooSmall;
+        result.Status = PromptStatus.OutOfRange;
     }
-    else if (result.Value > 10)
-    {
-        result.Status = PromptStatus.TooBig;
-    }
-
-    return Task.CompletedTask;
 }
 ```
 
-Within your bot logic, add:
+Within your dialog, specify the method to use to validate input.
 
 ```cs
-dialogs.Add("number", new Builder.Dialogs.NumberPrompt<int>(Culture.English, NumberValidator));
+// Include a validation function for the party size prompt.
+Add(Inputs.Size, new NumberPrompt<int>(Culture.English, PartySizeValidator));
 ```
 
 # [JavaScript](#tab/javascript)
@@ -353,24 +541,53 @@ Likewise, if you want to validate a **DatetimePrompt** response for a date and t
 # [C#](#tab/csharp)
 
 ```cs
-dialogs.Add("datetimePrompt", new Builder.Dialogs.DateTimePrompt(Culture.English, async (context, result) =>
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Recognizers.Text;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using DateTimeResult = Microsoft.Bot.Builder.Prompts.DateTimeResult;
+using PromptStatus = Microsoft.Bot.Builder.Prompts.PromptStatus;
+```
+
+```cs
+/// <summary>Validates input for the reservationTime prompt.</summary>
+/// <param name="context">The context object for the current turn of the bot.</param>
+/// <param name="result">The recognition result from the prompt.</param>
+/// <returns>An updated recognition result.</returns>
+private static async Task TimeValidator(ITurnContext context, DateTimeResult result)
 {
     if (result.Resolution.Count == 0)
     {
-        await context.SendActivity("Missing the time");
+        await context.SendActivity("Sorry, I did not recognize the time that you entered.").ConfigureAwait(false);
         result.Status = PromptStatus.NotRecognized;
     }
 
-    var resolution = result.Resolution.First();
+    // Find any recognized time that is not in the past.
+    var now = DateTime.Now;
+    DateTime time = default(DateTime);
+    var resolution = result.Resolution.FirstOrDefault(
+        res => DateTime.TryParse(res.Value, out time) && time > now);
 
-    var date = Convert.ToDateTime(resolution.Value);
-
-    if (DateTime.Today < date)
+    if (resolution != null)
     {
-        await context.SendActivity("Please enter a valid time in the future, such as \"tomorrow at 9am\"");
-        result.Status = PromptStatus.NotRecognized;
+        // If found, keep only that result.
+        result.Resolution.Clear();
+        result.Resolution.Add(resolution);
     }
-}));
+    else
+    {
+        // Otherwise, flag the input as out of range.
+        await context.SendActivity("Please enter a time in the future, such as \"tomorrow at 9am\"").ConfigureAwait(false);
+        result.Status = PromptStatus.OutOfRange;
+    }
+}
+```
+
+```csharp
+Add(Inputs.Time, new DateTimePrompt(Culture.English, TimeValidator));
 ```
 
 Further examples can be found in our [samples repo](https://github.com/Microsoft/botbuilder-dotnet).
@@ -400,11 +617,11 @@ Further examples can be found in our [samples repo](https://github.com/Microsoft
 > [!TIP]
 > Date time prompts can resolve to a few different dates if the user gives an ambigious answer. Depending on what you're using it for, you may want to check all the resolutions provided by the prompt result, instead of just the first.
 
-You can use the same technique to validate prompt responses for any of the prompt types.
+You can use the similar techniques to validate prompt responses for any of the prompt types.
 
 ## Save user data
 
-When you prompt for user input, you have several options on how to handle that input. For instance, you can consume and discard the input, you can save it to a global variable, you can save it to a volatile or in-memory storage container, you can save it to a file, or you can save it to an external database. For more information on how to save user data, see [Manage user data].(bot-builder-howto-v4-state.md).
+When you prompt for user input, you have several options on how to handle that input. For instance, you can consume and discard the input, you can save it to a global variable, you can save it to a volatile or in-memory storage container, you can save it to a file, or you can save it to an external database. For more information on how to save user data, see [Manage user data](bot-builder-howto-v4-state.md).
 
 ## Next steps
 
