@@ -362,7 +362,6 @@ using Microsoft.Recognizers.Text;
 using System.Collections.Generic;
 ```
 
-
 When we use the **ChoicePrompt** to ask the user to choose between a set of options, we have to provide the prompt with that set of options, provided within a **ChoicePromptOptions** object. Here, we use the **ChoiceFactory** to convert a list of options into an appropriate format.
 
 We are also using a **SuggestedActions** activity as the reprompt, as a way of providing the input options to the user again.
