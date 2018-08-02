@@ -47,8 +47,13 @@ To indicate that your bot is passively ready for input but is not awaiting a res
 
 # [C#](#tab/cs)
 
-<!--[!code-csharp[Accepting input](~/includes/code/dotnet-input-hints.cs?name=Accepting&highlight=4)]-->
-[!code-csharp[Accepting input](../includes/code/dotnet-input-hints.cs?name=Accepting&highlight=4)]
+```csharp
+var reply = MessageFactory.Text(
+    "This is the text that will be displayed.",
+    "This is the text that will be spoken.",
+    InputHints.AcceptingInput);
+await context.SendActivity(reply).ConfigureAwait(false);
+```
 
 # [JavaScript](#tab/js)
 
@@ -65,8 +70,13 @@ To indicate that your bot is awaiting a response from the user, set the message'
 
 # [C#](#tab/cs)
 
-<!--[!code-csharp[Expecting input](~/includes/code/dotnet-input-hints.cs?name=Expecting&highlight=4)]-->
-[!code-csharp[Expecting input](../includes/code/dotnet-input-hints.cs?name=Expecting&highlight=4)]
+```csharp
+var reply = MessageFactory.Text(
+    "This is the text that will be displayed.",
+    "This is the text that will be spoken.",
+    InputHints.ExpectingInput);
+await context.SendActivity(reply).ConfigureAwait(false);
+```
 
 # [JavaScript](#tab/js)
 
@@ -83,8 +93,13 @@ To indicate that your bot is not ready to receive input from the user, set the m
 
 # [C#](#tab/cs)
 
-<!--[!code-csharp[Ignoring input](~/includes/code/dotnet-input-hints.cs?name=Ignoring&highlight=4)]-->
-[!code-csharp[Ignoring input](../includes/code/dotnet-input-hints.cs?name=Ignoring&highlight=4)]
+```csharp
+var reply = MessageFactory.Text(
+    "This is the text that will be displayed.",
+    "This is the text that will be spoken.",
+    InputHints.IgnoringInput);
+await context.SendActivity(reply).ConfigureAwait(false);
+```
 
 # [JavaScript](#tab/js)
 
