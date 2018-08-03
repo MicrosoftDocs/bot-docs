@@ -1,25 +1,16 @@
 {
-  "need_generate_pdf_url_template": true,
-  "need_generate_intellisense": false,
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
   "docsets_to_publish": [
     {
       "docset_name": "bot-framework",
       "build_source_folder": "articles",
       "build_output_subfolder": "bot-framework",
       "locale": "en-us",
-      "monikers": [        
-      ],
+      "monikers": [],
       "moniker_ranges": [
         ">= azure-bot-service-3.0",
         ">= botbuilder-3.12.2.4",
         ">= skypebotsmedia-1.5.0.1177-alpha",
         ">= botconnector-3.11.1"
-        
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -80,11 +71,13 @@
     "3b0e6dd6.microsoft.com@amer.teams.ms",
     "botframeworkcontentteam@service.microsoft.com"
   ],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/bot-framework-docs",
+  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/bot-docs",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -95,7 +88,8 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
@@ -108,6 +102,9 @@
       "Pdf"
     ]
   },
+  "need_generate_pdf_url_template": true,
+  "targets": {},
+  "need_generate_intellisense": false,
   "template_folder": "_themes",
   "dependent_packages": [
     {
