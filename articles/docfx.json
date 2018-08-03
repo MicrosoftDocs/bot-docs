@@ -99,7 +99,9 @@
         "BotService"
       ],
       "ms.date": "12/13/2017",
-      "titleSuffix": "Bot Service"
+      "titleSuffix": "Bot Service",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/bot-docs"
     },
     "fileMetadata": {
       "ms.author": {
