@@ -11,6 +11,9 @@ ms.date: 05/03/2018
 ---
 ::: moniker range="azure-bot-service-3.0"
 
+> [!NOTE]
+> This topic applies to SDK v3 (stable) release. You can find the documentation for the pre-release verion of the SDK v4 [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0)
+
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
     <div class="intro" style="min-width: 200px">
@@ -84,10 +87,12 @@ ms.date: 05/03/2018
 
 ::: moniker range="azure-bot-service-4.0"
 
+> [!NOTE] 
+> This topic is pre-release documentation for V4 SDK content and is subject to change. You can find V3 SDK (stable) content [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-3.0)
+
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
     <div class="intro" style="min-width: 200px">
-        <p><b> [This topic is pre-release documentation and is subject to change.] </b></p>
         <p>Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Builder SDK with support for C#, JavaScript, Python, and Java. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
 </p>
 </div>
