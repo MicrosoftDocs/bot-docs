@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Ask the user questions
 
+[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+
 At its core, a bot is built around the conversation with a user. Conversation can take [many forms](bot-builder-conversations.md); they may be short or may be more complex, may be asking questions or may be answering questions. What shape the conversation takes depends on several factors, but they all involve a conversation.
 
 This tutorial guides you through building up a conversation, from asking a simple question through a multi-turn bot. Our example will be around reserving a table, but you can imagine a bot that does a variety of things through a multi-turn conversation, such as placing an order, answering FAQs, making reservations, and so on.
