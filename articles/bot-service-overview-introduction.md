@@ -12,8 +12,6 @@ ms.date: 05/03/2018
 
 ::: moniker range="azure-bot-service-3.0"
 
-
-
 # Azure Bot Service
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
