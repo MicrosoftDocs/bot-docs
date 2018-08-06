@@ -10,6 +10,9 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Commerce bot scenario
+
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+
 The [Commerce bot](bot-service-scenario-commerce.md) scenario describes a bot that replaces the traditional e-mail and phone call interactions that people typically have with a hotel's concierge service. The bot takes advantage of Cognitive Services to better process customer requests via text and voice with context gathered from integration with backend services.
 
 ![The application bot diagram](~/media/scenarios/bot-service-scenario-commerce-bot.png)

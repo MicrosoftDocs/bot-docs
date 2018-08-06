@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Create messages
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 Your bot will send **message** [activities](bot-builder-dotnet-activities.md) to communicate information to users, and likewise, will also receive **message** activities from users. 
 Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](bot-builder-dotnet-text-to-speech.md), [suggested actions](bot-builder-dotnet-add-suggested-actions.md), 
 [media attachments](bot-builder-dotnet-add-media-attachments.md), [rich cards](bot-builder-dotnet-add-rich-card-attachments.md), and [channel-specific data](bot-builder-dotnet-channeldata.md). 
