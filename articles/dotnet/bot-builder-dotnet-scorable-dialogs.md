@@ -11,6 +11,8 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 # Global message handlers using scorables
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 Users attempt to access certain functionality within a bot by using words like "help," "cancel," or "start over" in the middle of a conversation when the bot is expecting a different response. You can design your bot to gracefully handle such requests using scorable dialogs.
 
 Scorable dialogs monitor all incoming messages and determine whether a message is actionable in some way. Messages that are scorable are assigned a score between [0 – 1] by each scorable dialog. The scorable dialog that determines the highest score is added to the top of the dialog stack and then hands the response to the user. After the scorable dialog completes execution, the conversation continues from where it left off.

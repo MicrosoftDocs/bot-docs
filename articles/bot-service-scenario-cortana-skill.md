@@ -10,6 +10,9 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Cortana Skills Bot Scenario
+
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+
 The Cortana Skills Bot extends Cortana to make it easy to book a mobile auto maintenance appointment using voice with context from your calendar.
 
 Cortana is your personal assistant. Using the natural interface of your voice and a custom Cortana Skill Bot, you can ask Cortana to speak to an organization, such as an auto shop, to help you make an appointment. The service can provide a list of services, times available, and duration. Cortana can look at your calendar to see if you have something at a conflicting time and if not, create the appointment and add it to your calendar.
