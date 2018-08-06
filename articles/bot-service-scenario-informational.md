@@ -10,6 +10,9 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Information Bot Scenario
+
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+
 This Information Bot could answer questions defined in a knowledge set or FAQ using Cognitive Services QnA Maker and answer more open-ended questions by using Azure Search.
 
 Often information is buried in structured data stores like SQL Server that can be easily surfaced via search. Imagine looking up a customer's order status by simple conversational commands. Using Cognitive Services QnA Maker, the user is presented with a set of valid search options like, lookup a customer, review a customer's most recent order, etc. With the QnA format defined the user can easily ask questions that are backed by Azure Search which can look up data stored in a SQL Database.

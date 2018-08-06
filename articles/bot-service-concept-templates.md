@@ -11,6 +11,9 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Bot Service templates
+
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+
 Bot Service includes five templates to help you get started with building bots. These templates provide a fully functional bot out of the box to help you get started quickly. When you [create a bot](bot-service-quickstart.md), you choose a template and the SDK language for your bot.
 
 Each template provides a starting point that is based on a core capability for a bot. 

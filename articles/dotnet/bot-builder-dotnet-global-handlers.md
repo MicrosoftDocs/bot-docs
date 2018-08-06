@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Implement global message handlers
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 [!INCLUDE [Introduction to global message handlers](../includes/snippet-global-handlers-intro.md)]
 
 ## Listen for keywords in user input

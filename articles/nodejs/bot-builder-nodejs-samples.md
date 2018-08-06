@@ -11,6 +11,8 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 # Bot Builder SDK for Node.js samples
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Node.js. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
 ## Get the samples
