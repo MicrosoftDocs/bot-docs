@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Save user state data
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 When the bot is asking users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Builder SDK allows you to store user inputs using *in-memory storage*, *file storage*, database storage such as *CosmosDB* or *SQL*. 
 
 This tutorial will show you how to define your storage object in the middleware layer and how to save user into to the storage object so that it can be persisted.
