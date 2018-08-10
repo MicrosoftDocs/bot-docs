@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How to use QnA Maker
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 To add simple question and answer support to your bot, you can use the [QnA Maker](https://qnamaker.ai/) service.
 
 One of the basic requirements in writing your own QnA Maker service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQs or other documentation. Other times you would like to customize your answers to questions in a more natural, conversational way. 
