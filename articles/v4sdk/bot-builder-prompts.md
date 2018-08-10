@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 # Prompt users for input
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using the turn context object's _send activity_ method to ask for a string input; however, the Bot Builder SDK provides a **dialogs** library that you can use to ask for different types for information. This topic details how to use **prompts** to ask a user for input.
 
