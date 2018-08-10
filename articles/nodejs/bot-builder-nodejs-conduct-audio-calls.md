@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Support audio calls with Skype
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 Skype supports a rich feature called Calling Bots.  When enabled, users can place a voice call to your bot and interact with it using Interactive Voice Response (IVR).  The Bot Builder for Node.js SDK includes a special [Calling SDK][calling_sdk] which developers can use to add calling features to their chat bot.   
 
 The Calling SDK is very similar to the [Chat SDK][chat_sdk]. They have similar classes, share common constructs and you can even use the Chat SDK to send a message to the user you’re on a call with.  The two SDKs are designed to run side-by-side but while they are similar, there are some significant differences and you should generally avoid mixing classes from the two libraries.  
