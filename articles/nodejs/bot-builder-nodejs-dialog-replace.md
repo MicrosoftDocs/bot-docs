@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Replace dialogs
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 The ability to replace a dialog can be useful when you need to validate user input or repeat an action during the course of a conversation. With the Bot Builder SDK for Node.js, you can replace a dialog by using the [`session.replaceDialog`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#replacedialog) method. This method enables you to end the current dialog and replace it with a new dialog without returning to the caller. 
 
 ## Create custom prompts to validate input
