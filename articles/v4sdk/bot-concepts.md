@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Channels and the Bot Connector Service
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Channels are the endpoint that a user is connecting to our bot from, such as Facebook, Skype, Email, Slack, etc. The Bot Connector Service, configured through the [Azure portal](https://portal.azure.com), connects your bot to these channels and facilitates communication between your bot and the user. 
 
 In addition to standard channels provided with the Bot Connector Service, you can also connect your bot to your own client application using [Direct Line](bot-builder-howto-direct-line.md) as your channel.
