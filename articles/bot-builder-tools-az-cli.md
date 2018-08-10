@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Create bots with Azure CLI
 
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 [Bot builder tools](https://github.com/microsoft/botbuilder-tools) is a new toolset which allows you to manage and interact with your bot resources directly from the command line. 
 
 In this tutorial we'll show you how to:
