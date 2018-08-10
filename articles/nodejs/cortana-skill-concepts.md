@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Key concepts for building a bot for Cortana skills using Node.js
  
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 > [!NOTE]
 > This article is preliminary content and will be updated.
 
