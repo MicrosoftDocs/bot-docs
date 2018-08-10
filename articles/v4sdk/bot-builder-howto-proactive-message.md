@@ -13,6 +13,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How to use proactive messaging
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
+
 Often bots send _reactive messages_, but there are times when we need to be able to send a [proactive message](bot-builder-proactive-messages.md) as well. 
 
 A common case of proactive messaging comes when our bot is performing a task that can take an indeterminate amount of time. In this case, you can store information about the task, tell the user that the bot will get back to them when the task finishes, and let the conversation proceed. When the task completes, the bot can resume the conversation by sending the confirmation message proactively.
