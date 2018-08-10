@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Middleware
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Middleware is simply a class that sits between the adapter and your bot logic, added to your adapter's middleware collection during initialization. The SDK allows you to write your own middleware or add reusable components of middleware created by others. What can you do in middleware? Just about anything... Every activity coming into or out of your bot flows through middleware.
 
