@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 # Extract intents and entities using LUISGen
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, in the example of a restaurant reservation, the LUIS app might be able to extract the party size, reservation date or restaurant location from the user's message. 
 
 
