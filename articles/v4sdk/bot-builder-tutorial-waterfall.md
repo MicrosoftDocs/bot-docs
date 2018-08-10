@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Ask the user questions
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 At its core, a bot is built around the conversation with a user. Conversation can take [many forms](bot-builder-conversations.md); they may be short or may be more complex, may be asking questions or may be answering questions. What shape the conversation takes depends on several factors, but they all involve a conversation.
 
