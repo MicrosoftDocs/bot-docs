@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Using LUIS for Language Understanding
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can give your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. If you need more background on how LUIS integrates with a bot, see [language understanding for bots](./bot-builder-concept-LUIS.md). 
 
 This topic walks you through setting up simple bots that use LUIS to recognize a few different intents.
