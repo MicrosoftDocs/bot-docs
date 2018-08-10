@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Handle user actions
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-global-handlers.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-dialog-actions.md)
