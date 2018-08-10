@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add suggested actions to messages
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 [!include[Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)] 
 
 ## Send suggested actions
