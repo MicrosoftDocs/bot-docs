@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Use the backchannel mechanism
 
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 [!INCLUDE [Introduction to backchannel mechanism](../includes/snippet-backchannel.md)]
 
 ## Walk through
