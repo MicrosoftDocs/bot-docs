@@ -12,6 +12,8 @@ ms.date: 05/03/2018
 
 # Bot Builder SDK for .NET samples
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
 ## Get the samples
