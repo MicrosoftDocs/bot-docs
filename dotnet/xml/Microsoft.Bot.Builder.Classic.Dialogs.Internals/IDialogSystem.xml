@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type IDialogSystem = interface&#xA;    interface IDialogTasks&#xA;    interface IEventLoop&#xA;    interface IEventProducer&lt;IActivity&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>

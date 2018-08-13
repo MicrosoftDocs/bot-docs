@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class CompositeEntity" />
   <TypeSignature Language="F#" Value="type CompositeEntity = class" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,13 +27,8 @@
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,13 +46,8 @@
       <MemberSignature Language="F#" Value="new Microsoft.Cognitive.LUIS.Models.CompositeEntity : string * string * System.Collections.Generic.IList&lt;Microsoft.Cognitive.LUIS.Models.CompositeChild&gt; -&gt; Microsoft.Cognitive.LUIS.Models.CompositeEntity" Usage="new Microsoft.Cognitive.LUIS.Models.CompositeEntity (parentType, value, children)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentType" Type="System.String" />
@@ -87,16 +72,11 @@
       <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IList&lt;Microsoft.Cognitive.LUIS.Models.CompositeChild&gt; with get, set" Usage="Microsoft.Cognitive.LUIS.Models.CompositeEntity.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="children")</AttributeName>
         </Attribute>
       </Attributes>
@@ -117,16 +97,11 @@
       <MemberSignature Language="F#" Value="member this.ParentType : string with get, set" Usage="Microsoft.Cognitive.LUIS.Models.CompositeEntity.ParentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parentType")</AttributeName>
         </Attribute>
       </Attributes>
@@ -149,13 +124,8 @@
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="compositeEntity.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -176,16 +146,11 @@
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Cognitive.LUIS.Models.CompositeEntity.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
         </Attribute>
       </Attributes>

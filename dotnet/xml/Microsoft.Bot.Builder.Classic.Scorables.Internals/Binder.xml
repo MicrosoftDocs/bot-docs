@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Binder = class&#xA;    interface IBinder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +30,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder</ReturnType>
@@ -47,11 +47,11 @@
       <MemberSignature Language="VB.NET" Value="Function TryBind (lambda As Delegate, resolver As IResolver, ByRef binding As IBinding) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -59,7 +59,7 @@
       <Parameters>
         <Parameter Name="lambda" Type="System.Delegate" />
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
-        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&amp;" RefType="out" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding" RefType="out" />
       </Parameters>
       <Docs>
         <param name="lambda">To be added.</param>
@@ -77,11 +77,11 @@
       <MemberSignature Language="VB.NET" Value="Function TryBind (method As MethodBase, resolver As IResolver, ByRef binding As IBinding) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -89,7 +89,7 @@
       <Parameters>
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
-        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&amp;" RefType="out" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding" RefType="out" />
       </Parameters>
       <Docs>
         <param name="method">To be added.</param>
@@ -107,11 +107,11 @@
       <MemberSignature Language="VB.NET" Value="Function TryBind(Of R) (lambda As Delegate, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding{``0}@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding{``0})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,7 +122,7 @@
       <Parameters>
         <Parameter Name="lambda" Type="System.Delegate" />
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
-        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;&amp;" RefType="out" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="R">To be added.</typeparam>
@@ -141,11 +141,11 @@
       <MemberSignature Language="VB.NET" Value="Function TryBind(Of R) (method As MethodInfo, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean Implements IBinder.TryBind" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding{``0}@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding{``0})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -156,7 +156,7 @@
       <Parameters>
         <Parameter Name="method" Type="System.Reflection.MethodInfo" />
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
-        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;&amp;" RefType="out" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="R">To be added.</typeparam>
@@ -177,7 +177,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -186,7 +186,7 @@
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
         <Parameter Name="target" Type="System.Object" />
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
-        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&amp;" RefType="out" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding" RefType="out" />
       </Parameters>
       <Docs>
         <param name="method">To be added.</param>
@@ -207,7 +207,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -219,7 +219,7 @@
         <Parameter Name="method" Type="System.Reflection.MethodInfo" />
         <Parameter Name="target" Type="System.Object" />
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
-        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;&amp;" RefType="out" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IBinding&lt;R&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="R">To be added.</typeparam>
@@ -241,7 +241,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -249,7 +249,7 @@
       <Parameters>
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
         <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
-        <Parameter Name="argument" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="argument" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resolver">To be added.</param>
@@ -269,7 +269,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -277,7 +277,7 @@
       <Parameters>
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
-        <Parameter Name="arguments" Type="System.Object[]&amp;" RefType="out" />
+        <Parameter Name="arguments" Type="System.Object[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resolver">To be added.</param>
@@ -297,7 +297,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -306,7 +306,7 @@
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
         <Parameter Name="target" Type="System.Object" />
-        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="instance" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resolver">To be added.</param>
@@ -327,7 +327,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

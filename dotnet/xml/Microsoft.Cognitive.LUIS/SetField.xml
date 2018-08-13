@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class SetField" />
   <TypeSignature Language="F#" Value="type SetField = class" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,13 +25,8 @@
       <MemberSignature Language="F#" Value="static member CheckNull : string * 'T -&gt; unit (requires 'T : null)" Usage="Microsoft.Cognitive.LUIS.SetField.CheckNull (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -68,13 +58,8 @@
       <MemberSignature Language="F#" Value="static member From :  * string * System.Runtime.Serialization.SerializationInfo -&gt; unit" Usage="Microsoft.Cognitive.LUIS.SetField.From (field, name, info)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -83,7 +68,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="field" Type="T&amp;" RefType="out" />
+        <Parameter Name="field" Type="T" RefType="out" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
       </Parameters>
@@ -104,13 +89,8 @@
       <MemberSignature Language="F#" Value="static member NotNull :  * string * 'T -&gt; unit (requires 'T : null)" Usage="Microsoft.Cognitive.LUIS.SetField.NotNull (field, name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -123,7 +103,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="field" Type="T&amp;" RefType="out" />
+        <Parameter Name="field" Type="T" RefType="out" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="value" Type="T" />
       </Parameters>
@@ -144,13 +124,8 @@
       <MemberSignature Language="F#" Value="static member NotNullFrom :  * string * System.Runtime.Serialization.SerializationInfo -&gt; unit (requires 'T : null)" Usage="Microsoft.Cognitive.LUIS.SetField.NotNullFrom (field, name, info)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -163,7 +138,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="field" Type="T&amp;" RefType="out" />
+        <Parameter Name="field" Type="T" RefType="out" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
       </Parameters>

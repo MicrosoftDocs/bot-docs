@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type AwaitableFromItem&lt;'T&gt; = class&#xA;    interface IAwaitable&lt;'T&gt;&#xA;    interface IAwaiter&lt;'T&gt;&#xA;    interface INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -40,7 +40,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="item" Type="T" />
@@ -62,7 +62,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;T&gt;</ReturnType>
@@ -85,7 +85,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -102,14 +102,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Classic#Internals#Fibers#IAwaiter&lt;T&gt;#IsCompleted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAwaiter(Of T).IsCompleted" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.AwaitableFromItem&lt;'T&gt;.Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Internals.Fibers.IAwaiter`1.IsCompleted</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -131,7 +131,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

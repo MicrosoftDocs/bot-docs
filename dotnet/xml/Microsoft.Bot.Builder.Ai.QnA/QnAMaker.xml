@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type QnAMaker = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,36 +27,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions" />
-        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
-      </Parameters>
-      <Docs>
-        <param name="endpoint">The endpoint of the knowledge base to query.</param>
-        <param name="options">The options for the QnA Maker knowledge base.</param>
-        <param name="httpClient">A client with which to talk to QnAMaker.
-            If null, a default client is used for this instance.</param>
-        <summary>
-            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.QnA.QnAMaker" /> instance.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public QnAMaker (string endpoint, Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions options = null, System.Net.Http.HttpClient httpClient = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpoint, class Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions options, class System.Net.Http.HttpClient httpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMaker.#ctor(System.String,Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.QnA.QnAMaker : string * Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions * System.Net.Http.HttpClient -&gt; Microsoft.Bot.Builder.Ai.QnA.QnAMaker" Usage="new Microsoft.Bot.Builder.Ai.QnA.QnAMaker (endpoint, options, httpClient)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="endpoint" Type="System.String" />
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions" />
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
       </Parameters>
@@ -81,14 +54,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Ai.QnA.QnAMaker/&lt;GetAnswers&gt;d__6))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Ai.QnA.QueryResult[]&gt;</ReturnType>
       </ReturnValue>

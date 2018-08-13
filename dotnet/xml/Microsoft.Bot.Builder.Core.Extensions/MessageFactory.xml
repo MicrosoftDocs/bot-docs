@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type MessageFactory = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -46,8 +45,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -87,8 +85,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -128,8 +125,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -156,7 +152,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attachments" /> is <c>null</c>.</exception>
-        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.Attachment(System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
         <example>This code creates and sends a carousel of HeroCards.
             <code>
             // Create the activity and attach a set of Hero cards.
@@ -192,6 +187,7 @@
             // Send the activity as a reply to the user.
             await context.SendActivity(activity);
             </code></example>
+        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.Attachment(System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ContentUrl">
@@ -203,8 +199,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -252,8 +247,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -280,9 +274,6 @@
             </summary>
         <returns>A message activity that contains the suggested actions.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="cardActions" /> is <c>null</c>.</exception>
-        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{System.String},System.String,System.String,System.String)" />
         <example>
           <code>    
             // Create the activity and add suggested actions.
@@ -298,6 +289,9 @@
             await context.SendActivity(activity);
             </code>
         </example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cardActions" /> is <c>null</c>.</exception>
+        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{System.String},System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SuggestedActions">
@@ -309,8 +303,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -341,9 +334,6 @@
             <see cref="P:Microsoft.Bot.Schema.CardAction.Title" /> and sets the <see cref="P:Microsoft.Bot.Schema.CardAction.Type" /> to
             <see cref="F:Microsoft.Bot.Schema.ActionTypes.ImBack" />.
             </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="actions" /> is <c>null</c>.</exception>
-        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
         <example>
           <code>
             // Create the activity and add suggested actions.
@@ -355,6 +345,9 @@
             await context.SendActivity(activity);
             </code>
         </example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="actions" /> is <c>null</c>.</exception>
+        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -366,8 +359,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>

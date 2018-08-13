@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type WaterfallStep = delegate of DialogContext * IDictionary&lt;string, obj&gt; * SkipStepFunction -&gt; Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

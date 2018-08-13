@@ -1,0 +1,48 @@
+﻿<Type Name="IgnoreFieldAttribute" FullName="Microsoft.Bot.Builder.FormFlow.IgnoreFieldAttribute">
+  <TypeSignature Language="C#" Value="public class IgnoreFieldAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IgnoreFieldAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IgnoreFieldAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class IgnoreFieldAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type IgnoreFieldAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Define a field or property as excluded.
+            </summary>
+    <remarks>
+            The ignored field is a field that is excluded from the list of fields.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IgnoreFieldAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IgnoreFieldAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Mark a field or property as excluded.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

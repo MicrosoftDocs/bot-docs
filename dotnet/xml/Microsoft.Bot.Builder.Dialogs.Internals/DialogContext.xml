@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DialogContext = class&#xA;    interface IDialogContext&#xA;    interface IDialogStack&#xA;    interface IBotContext&#xA;    interface IBotData&#xA;    interface IBotToUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
@@ -54,14 +54,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IActivity Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#IBotContext#Activity" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Activity As IActivity Implements IBotContext.Activity" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IBotContext.Activity</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IActivity</ReturnType>
@@ -77,14 +77,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#IBotContext#CancellationToken" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CancellationToken As CancellationToken Implements IBotContext.CancellationToken" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>
@@ -100,14 +100,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ConversationData As IBotDataBag Implements IBotData.ConversationData" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IBotDataBag</ReturnType>
@@ -128,13 +128,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Dialogs-Internals-IBotData-FlushAsync&gt;d__24))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -158,13 +153,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Dialogs-Internals-IBotData-LoadAsync&gt;d__23))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -183,14 +173,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property PrivateConversationData As IBotDataBag Implements IBotData.PrivateConversationData" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IBotDataBag</ReturnType>
@@ -206,14 +196,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property UserData As IBotDataBag Implements IBotData.UserData" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IBotDataBag</ReturnType>
@@ -235,7 +225,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -257,13 +247,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Dialogs-Internals-IBotToUser-PostAsync&gt;d__12))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -290,7 +275,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -321,7 +306,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -350,7 +335,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -375,13 +360,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogContext/&lt;Microsoft-Bot-Builder-Dialogs-Internals-IDialogStack-Forward&gt;d__18`2))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -412,14 +392,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Frames" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of Delegate) Implements IDialogStack.Frames" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Delegate&gt;</ReturnType>
@@ -441,7 +421,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -472,7 +452,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -494,7 +474,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

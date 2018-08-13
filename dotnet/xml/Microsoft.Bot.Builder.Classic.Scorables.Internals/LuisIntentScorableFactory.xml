@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type LuisIntentScorableFactory = class&#xA;    interface IScorableFactory&lt;IResolver, IntentRecommendation&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="make" Type="System.Func&lt;Microsoft.Bot.Builder.Classic.Luis.ILuisModel,Microsoft.Bot.Builder.Classic.Luis.ILuisService&gt;" />
@@ -52,7 +52,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Scorables.IScorable&lt;Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Classic.Luis.Models.IntentRecommendation&gt;</ReturnType>

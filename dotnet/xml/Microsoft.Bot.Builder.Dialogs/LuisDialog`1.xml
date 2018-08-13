@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type LuisDialog&lt;'Result&gt; = class&#xA;    interface IDialog&lt;'Result&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -36,12 +36,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="services" Type="Microsoft.Bot.Builder.Luis.ILuisService[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -64,7 +64,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
@@ -90,7 +90,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.LuisServiceResult</ReturnType>
@@ -118,13 +118,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;DispatchToIntentHandler&gt;d__9))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -153,7 +148,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;</ReturnType>
@@ -174,7 +169,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -200,7 +195,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;</ReturnType>
@@ -219,13 +214,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;LuisActionDialogFinished&gt;d__13))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -241,6 +231,63 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="LuisTraceLabel">
+      <MemberSignature Language="C#" Value="public const string LuisTraceLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceLabel" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisTraceLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceLabel As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceLabel : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.LuisTraceLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceName">
+      <MemberSignature Language="C#" Value="public const string LuisTraceName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisTraceName" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceName As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceName : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.LuisTraceName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceType">
+      <MemberSignature Language="C#" Value="public const string LuisTraceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisTraceType" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceType As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceType : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.LuisTraceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MakeLuisActionDialog">
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt; MakeLuisActionDialog (Microsoft.Bot.Builder.Luis.ILuisService luisService, string contextId, string prompt);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt; MakeLuisActionDialog(class Microsoft.Bot.Builder.Luis.ILuisService luisService, string contextId, string prompt) cil managed" />
@@ -250,14 +297,11 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;MakeLuisActionDialog&gt;d__12))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -286,7 +330,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.ILuisService[]</ReturnType>
@@ -307,13 +351,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;MessageReceived&gt;d__8))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -338,7 +377,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
@@ -355,6 +394,49 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Obfuscated">
+      <MemberSignature Language="C#" Value="public const string Obfuscated;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Obfuscated" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.Obfuscated" />
+      <MemberSignature Language="VB.NET" Value="Public Const Obfuscated As String " />
+      <MemberSignature Language="F#" Value="val mutable Obfuscated : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.Obfuscated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSensitiveData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Luis.ILuisModel RemoveSensitiveData (Microsoft.Bot.Builder.Luis.ILuisModel luisModel);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Luis.ILuisModel RemoveSensitiveData(class Microsoft.Bot.Builder.Luis.ILuisModel luisModel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.RemoveSensitiveData(Microsoft.Bot.Builder.Luis.ILuisModel)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveSensitiveData (luisModel As ILuisModel) As ILuisModel" />
+      <MemberSignature Language="F#" Value="static member RemoveSensitiveData : Microsoft.Bot.Builder.Luis.ILuisModel -&gt; Microsoft.Bot.Builder.Luis.ILuisModel" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.RemoveSensitiveData luisModel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.ILuisModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="luisModel" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
+      </Parameters>
+      <Docs>
+        <param name="luisModel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="services">
       <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt; services;" />
       <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Luis.ILuisService&gt; services" />
@@ -364,7 +446,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt;</ReturnType>
@@ -386,13 +468,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.LuisDialog`1/&lt;StartAsync&gt;d__4))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>

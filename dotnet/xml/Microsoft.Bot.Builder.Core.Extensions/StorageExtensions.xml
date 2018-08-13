@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type StorageExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,14 +26,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Core.Extensions.StorageExtensions/&lt;Read&gt;d__0`1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,StoreItemT&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -49,7 +42,7 @@
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.Core.Extensions.IStorage" RefType="this" />
         <Parameter Name="keys" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

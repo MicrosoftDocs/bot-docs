@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +26,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Autofac.Builder.IRegistrationBuilder&lt;TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle&gt;</ReturnType>
@@ -38,7 +38,7 @@
         <Parameter Name="builder" Type="Autofac.ContainerBuilder" RefType="this" />
         <Parameter Name="types" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -67,7 +67,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Autofac.Builder.IRegistrationBuilder&lt;TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle&gt;</ReturnType>
