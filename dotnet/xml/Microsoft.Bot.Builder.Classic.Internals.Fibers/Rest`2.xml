@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Rest&lt;'C, 'T&gt; = delegate of IFiber&lt;'C&gt; * 'C * IItem&lt;'T&gt; * CancellationToken -&gt; Task&lt;IWait&lt;'C&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />

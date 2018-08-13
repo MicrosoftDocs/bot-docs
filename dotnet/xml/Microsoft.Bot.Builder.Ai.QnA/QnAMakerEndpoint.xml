@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type QnAMakerEndpoint = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,30 +27,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public QnAMakerEndpoint (string endpoint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpoint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint : string -&gt; Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint" Usage="new Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint endpoint" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="endpoint" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="endpoint">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,7 +44,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -86,7 +66,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,7 +88,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

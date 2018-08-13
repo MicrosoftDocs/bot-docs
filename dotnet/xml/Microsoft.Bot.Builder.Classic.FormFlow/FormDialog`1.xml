@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type FormDialog&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IFormDialog&lt;'T (requires 'T : null)&gt;&#xA;    interface IDialog&lt;'T (requires 'T : null)&gt;&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -43,7 +43,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="T" />
@@ -71,13 +71,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.FormFlow.FormDialog`1/&lt;MessageReceived&gt;d__16))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -104,13 +99,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.FormFlow.FormDialog`1/&lt;Microsoft-Bot-Builder-Classic-Dialogs-IDialog&lt;T&gt;-StartAsync&gt;d__15))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -129,14 +119,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Classic.FormFlow.IForm`1&lt;!T&gt; Microsoft.Bot.Builder.Classic.FormFlow.IFormDialog&lt;T&gt;.Form" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.FormFlow.FormDialog`1.Microsoft#Bot#Builder#Classic#FormFlow#IFormDialog&lt;T&gt;#Form" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Form As IForm(Of T) Implements IFormDialog(Of T).Form" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt;.Microsoft.Bot.Builder.Classic.FormFlow.IFormDialog&lt;T&gt;.Form" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.FormFlow.IFormDialog&lt;T&gt;.Form" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.FormFlow.IFormDialog`1.Form</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.FormFlow.IForm&lt;T&gt;</ReturnType>
@@ -156,7 +146,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -178,7 +168,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

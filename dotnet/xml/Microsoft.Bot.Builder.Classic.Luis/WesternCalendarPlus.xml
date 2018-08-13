@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type WesternCalendarPlus = class&#xA;    interface ICalendarPlus" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,14 +42,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.Calendar" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Classic#Luis#ICalendarPlus#Calendar" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Calendar As Calendar Implements ICalendarPlus.Calendar" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.WesternCalendarPlus.Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.Calendar" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.Calendar" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.Calendar</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.Calendar</ReturnType>
@@ -65,14 +65,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DayOfWeek Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.FirstDayOfWeek" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Classic#Luis#ICalendarPlus#FirstDayOfWeek" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FirstDayOfWeek As DayOfWeek Implements ICalendarPlus.FirstDayOfWeek" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.WesternCalendarPlus.Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.FirstDayOfWeek" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.FirstDayOfWeek" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.FirstDayOfWeek</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
@@ -93,7 +93,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -113,14 +113,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarWeekRule Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.WeekRule" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Classic#Luis#ICalendarPlus#WeekRule" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property WeekRule As CalendarWeekRule Implements ICalendarPlus.WeekRule" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.WesternCalendarPlus.Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.WeekRule" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.WeekRule" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ICalendarPlus.WeekRule</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CalendarWeekRule</ReturnType>

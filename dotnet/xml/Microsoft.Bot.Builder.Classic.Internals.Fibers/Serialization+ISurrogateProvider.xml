@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Serialization.ISurrogateProvider = interface&#xA;    interface ISerializationSurrogate" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -26,7 +26,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -34,7 +34,7 @@
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
-        <Parameter Name="priority" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="priority" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>

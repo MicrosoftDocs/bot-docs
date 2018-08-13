@@ -6,17 +6,15 @@
   <TypeSignature Language="F#" Value="type SendActivitiesHandler = delegate of ITurnContext * List&lt;Activity&gt; * Func&lt;Task&lt;ResourceResponse[]&gt;&gt; -&gt; Task&lt;ResourceResponse[]&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="context" Type="Microsoft.Bot.Builder.IBotContext" />
+    <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
     <Parameter Name="activities" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;" />
-    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;&gt;" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>

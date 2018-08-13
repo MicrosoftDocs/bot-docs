@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ResolverScope&lt;'InnerScore&gt; = class&#xA;    inherit Token&lt;IResolver, 'InnerScore&gt;&#xA;    interface IResolver" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="InnerScore" />
@@ -38,7 +38,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
@@ -58,7 +58,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver</ReturnType>
@@ -75,11 +75,11 @@
       <MemberSignature Language="F#" Value="abstract member TryResolve : Type * obj *  -&gt; bool&#xA;override this.TryResolve : Type * obj *  -&gt; bool" Usage="resolverScope.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -87,7 +87,7 @@
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="tag" Type="System.Object" />
-        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>

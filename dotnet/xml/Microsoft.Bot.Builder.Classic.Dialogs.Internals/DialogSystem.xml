@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DialogSystem = class&#xA;    interface IDialogSystem&#xA;    interface IDialogTasks&#xA;    interface IEventLoop&#xA;    interface IEventProducer&lt;IActivity&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,7 +33,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tasks" Type="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTasks" />
@@ -59,13 +59,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogSystem/&lt;Microsoft-Bot-Builder-Classic-Base-IEventLoop-PollAsync&gt;d__7))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -90,7 +85,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -117,7 +112,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTask</ReturnType>
@@ -134,14 +129,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTask&gt; Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogSystem.Microsoft#Bot#Builder#Classic#Dialogs#Internals#IDialogTasks#DialogTasks" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DialogTasks As IReadOnlyList(Of IDialogTask) Implements IDialogTasks.DialogTasks" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.DialogSystem.Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTasks.DialogTasks" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTasks.DialogTasks</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Classic.Dialogs.Internals.IDialogTask&gt;</ReturnType>

@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PromptAsyncDelegate&lt;'T (requires 'T : null)&gt; = delegate of IDialogContext * FormPrompt * 'T * IField&lt;'T (requires 'T : null)&gt; -&gt; Task&lt;FormPrompt&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

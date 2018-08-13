@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type LuisModelAttribute = class&#xA;    inherit Attribute&#xA;    interface ILuisModel&#xA;    interface ILuisOptions&#xA;    interface IEquatable&lt;ILuisModel&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,7 +41,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="modelID" Type="System.String" />
@@ -72,7 +72,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Luis.LuisApiVersion</ReturnType>
@@ -95,7 +95,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -115,7 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -138,7 +138,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -162,7 +162,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -186,7 +186,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -207,7 +207,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -223,14 +223,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Classic#Luis#ILuisOptions#BingSpellCheckSubscriptionKey" />
       <MemberSignature Language="VB.NET" Value=" Property BingSpellCheckSubscriptionKey As String Implements ILuisOptions.BingSpellCheckSubscriptionKey" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.BingSpellCheckSubscriptionKey</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -246,14 +246,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Classic#Luis#ILuisOptions#Log" />
       <MemberSignature Language="VB.NET" Value=" Property Log As Nullable(Of Boolean) Implements ILuisOptions.Log" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Log" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Log" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Log</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -269,14 +269,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Classic#Luis#ILuisOptions#SpellCheck" />
       <MemberSignature Language="VB.NET" Value=" Property SpellCheck As Nullable(Of Boolean) Implements ILuisOptions.SpellCheck" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.SpellCheck" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.SpellCheck" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.SpellCheck</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -292,14 +292,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Classic#Luis#ILuisOptions#Staging" />
       <MemberSignature Language="VB.NET" Value=" Property Staging As Nullable(Of Boolean) Implements ILuisOptions.Staging" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Staging" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Staging" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Staging</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -315,14 +315,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Classic#Luis#ILuisOptions#TimezoneOffset" />
       <MemberSignature Language="VB.NET" Value=" Property TimezoneOffset As Nullable(Of Double) Implements ILuisOptions.TimezoneOffset" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.TimezoneOffset" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.TimezoneOffset</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -338,14 +338,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Classic#Luis#ILuisOptions#Verbose" />
       <MemberSignature Language="VB.NET" Value=" Property Verbose As Nullable(Of Boolean) Implements ILuisOptions.Verbose" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.LuisModelAttribute.Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Verbose" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Verbose" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Classic.Luis.ILuisOptions.Verbose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -368,7 +368,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -391,7 +391,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Luis.LuisRequest</ReturnType>
@@ -415,7 +415,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -435,7 +435,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -458,7 +458,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -481,7 +481,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -501,7 +501,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -524,7 +524,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -544,7 +544,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -570,7 +570,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
