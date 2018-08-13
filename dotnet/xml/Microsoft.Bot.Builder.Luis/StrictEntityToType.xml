@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type StrictEntityToType = class&#xA;    interface IEntityToType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parser" Type="Microsoft.Bot.Builder.Luis.IResolutionParser" />
@@ -51,10 +51,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Luis.StrictEntityToType/&lt;Interpret&gt;d__5))</AttributeName>
         </Attribute>
       </Attributes>
@@ -90,11 +90,11 @@
       <MemberSignature Language="VB.NET" Value="Function TryMapToDateRanges (now As DateTime, entities As IEnumerable(Of EntityRecommendation), ByRef ranges As IEnumerable(Of Range(Of DateTime))) As Boolean Implements IEntityToType.TryMapToDateRanges" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}}@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Internals.Fibers.Range{System.DateTime}})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -102,7 +102,7 @@
       <Parameters>
         <Parameter Name="now" Type="System.DateTime" />
         <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;" />
-        <Parameter Name="ranges" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;System.DateTime&gt;&gt;&amp;" RefType="out" />
+        <Parameter Name="ranges" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;System.DateTime&gt;&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="now">To be added.</param>
@@ -120,11 +120,11 @@
       <MemberSignature Language="VB.NET" Value="Function TryMapToTimeSpan (now As DateTime, entities As IEnumerable(Of EntityRecommendation), ByRef span As TimeSpan) As Boolean Implements IEntityToType.TryMapToTimeSpan" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.TimeSpan)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -132,7 +132,7 @@
       <Parameters>
         <Parameter Name="now" Type="System.DateTime" />
         <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;" />
-        <Parameter Name="span" Type="System.TimeSpan&amp;" RefType="out" />
+        <Parameter Name="span" Type="System.TimeSpan" RefType="out" />
       </Parameters>
       <Docs>
         <param name="now">To be added.</param>

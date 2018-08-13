@@ -42,9 +42,6 @@
         "api/overwrites/**/*.md"
       ]
     },
-    "xref": [
-      "msdn.4.5.2.zip"
-    ],
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "dotnet",

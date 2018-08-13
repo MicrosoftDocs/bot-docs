@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Language = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,7 +44,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -72,7 +72,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -85,28 +85,7 @@
         <summary>
             Test a word for articles or noise.
             </summary>
-        <returns>True if word is <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" /> or <see cref="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Articles">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.HashSet&lt;string&gt; Articles;" />
-      <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.HashSet`1&lt;string&gt; Articles" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Articles As HashSet(Of String) " />
-      <MemberSignature Language="F#" Value=" staticval mutable Articles : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.Articles" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Language articles.
-            </summary>
+        <returns>True if word is <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" /> or an article.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +98,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -149,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -175,7 +154,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -207,7 +186,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -220,7 +199,7 @@
         <summary>
             Test to see if a word can be ignored in a resposne.
             </summary>
-        <returns>True if word is a <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" /> or a <see cref="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />.</returns>
+        <returns>True if word is a <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" /> or stop words.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,7 +212,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -246,7 +225,7 @@
         <summary>
             Test to see if a word is all noise.
             </summary>
-        <returns>True if word is a number, a <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" /> or a <see cref="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />.</returns>
+        <returns>True if word is a number, a <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.NonWord(System.String)" /> or a stop word."/&gt;.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +238,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -285,7 +264,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -311,7 +290,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -337,10 +316,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;OptionalPlurals&gt;d__10))</AttributeName>
         </Attribute>
       </Attributes>
@@ -359,24 +338,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="StopWords">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.HashSet&lt;string&gt; StopWords;" />
-      <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.Generic.HashSet`1&lt;string&gt; StopWords" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />
-      <MemberSignature Language="VB.NET" Value="Public Shared StopWords As HashSet(Of String) " />
-      <MemberSignature Language="F#" Value=" staticval mutable StopWords : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.StopWords" />
-      <MemberType>Field</MemberType>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources Resources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources Resources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Resources () As LanguageResources" />
+      <MemberSignature Language="F#" Value="static member Resources : unit -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Language.Resources " />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>
-            Language stop words.
+            Return language specific resources for the current culture.
             </summary>
+        <returns>Language resources.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,10 +370,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;WordBreak&gt;d__8))</AttributeName>
         </Attribute>
       </Attributes>
@@ -420,7 +401,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>

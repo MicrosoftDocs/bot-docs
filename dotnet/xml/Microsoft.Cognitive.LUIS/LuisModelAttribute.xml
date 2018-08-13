@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class LuisModelAttribute&#xA;Inherits Attribute&#xA;Implements IEquatable(Of ILuisModel), ILuisModel, ILuisOptions" />
   <TypeSignature Language="F#" Value="type LuisModelAttribute = class&#xA;    inherit Attribute&#xA;    interface ILuisModel&#xA;    interface ILuisOptions&#xA;    interface IEquatable&lt;ILuisModel&gt;" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -28,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -47,13 +42,8 @@
       <MemberSignature Language="F#" Value="new Microsoft.Cognitive.LUIS.LuisModelAttribute : string * string * Microsoft.Cognitive.LUIS.LuisApiVersion * string * double -&gt; Microsoft.Cognitive.LUIS.LuisModelAttribute" Usage="new Microsoft.Cognitive.LUIS.LuisModelAttribute (modelID, subscriptionKey, apiVersion, domain, threshold)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="modelID" Type="System.String" />
@@ -85,13 +75,8 @@
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisModel.ApiVersion</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Cognitive.LUIS.LuisApiVersion</ReturnType>
@@ -115,13 +100,8 @@
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.BingSpellCheckSubscriptionKey</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -142,13 +122,8 @@
       <MemberSignature Language="F#" Value="member this.Domain : string" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -172,13 +147,8 @@
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -201,13 +171,8 @@
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="luisModelAttribute.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -230,13 +195,8 @@
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="luisModelAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -256,13 +216,8 @@
       <MemberSignature Language="F#" Value="member this.Log : bool with get, set" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -280,19 +235,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Cognitive.LUIS.ILuisOptions.BingSpellCheckSubscriptionKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft#Cognitive#LUIS#ILuisOptions#BingSpellCheckSubscriptionKey" />
       <MemberSignature Language="VB.NET" Value=" Property BingSpellCheckSubscriptionKey As String Implements ILuisOptions.BingSpellCheckSubscriptionKey" />
-      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft.Cognitive.LUIS.ILuisOptions.BingSpellCheckSubscriptionKey" />
+      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.ILuisOptions.BingSpellCheckSubscriptionKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.BingSpellCheckSubscriptionKey</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -308,19 +258,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Cognitive.LUIS.ILuisOptions.Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft#Cognitive#LUIS#ILuisOptions#Log" />
       <MemberSignature Language="VB.NET" Value=" Property Log As Nullable(Of Boolean) Implements ILuisOptions.Log" />
-      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft.Cognitive.LUIS.ILuisOptions.Log" />
+      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.ILuisOptions.Log" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.Log</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -336,19 +281,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Cognitive.LUIS.ILuisOptions.SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft#Cognitive#LUIS#ILuisOptions#SpellCheck" />
       <MemberSignature Language="VB.NET" Value=" Property SpellCheck As Nullable(Of Boolean) Implements ILuisOptions.SpellCheck" />
-      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft.Cognitive.LUIS.ILuisOptions.SpellCheck" />
+      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.ILuisOptions.SpellCheck" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.SpellCheck</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -364,19 +304,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Cognitive.LUIS.ILuisOptions.Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft#Cognitive#LUIS#ILuisOptions#Staging" />
       <MemberSignature Language="VB.NET" Value=" Property Staging As Nullable(Of Boolean) Implements ILuisOptions.Staging" />
-      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft.Cognitive.LUIS.ILuisOptions.Staging" />
+      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.ILuisOptions.Staging" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.Staging</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -392,19 +327,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Microsoft.Cognitive.LUIS.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft#Cognitive#LUIS#ILuisOptions#TimezoneOffset" />
       <MemberSignature Language="VB.NET" Value=" Property TimezoneOffset As Nullable(Of Double) Implements ILuisOptions.TimezoneOffset" />
-      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft.Cognitive.LUIS.ILuisOptions.TimezoneOffset" />
+      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.ILuisOptions.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.TimezoneOffset</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -420,19 +350,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Cognitive.LUIS.ILuisOptions.Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft#Cognitive#LUIS#ILuisOptions#Verbose" />
       <MemberSignature Language="VB.NET" Value=" Property Verbose As Nullable(Of Boolean) Implements ILuisOptions.Verbose" />
-      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Microsoft.Cognitive.LUIS.ILuisOptions.Verbose" />
+      <MemberSignature Language="F#" Usage="Microsoft.Cognitive.LUIS.ILuisOptions.Verbose" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisOptions.Verbose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -454,13 +379,8 @@
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisModel.ModelID</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -484,13 +404,8 @@
         <InterfaceMember>M:Microsoft.Cognitive.LUIS.ILuisModel.ModifyRequest(Microsoft.Cognitive.LUIS.LuisRequest)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Cognitive.LUIS.LuisRequest</ReturnType>
@@ -513,13 +428,8 @@
       <MemberSignature Language="F#" Value="member this.SpellCheck : bool with get, set" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.SpellCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -540,13 +450,8 @@
       <MemberSignature Language="F#" Value="member this.Staging : bool with get, set" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Staging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -570,13 +475,8 @@
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisModel.SubscriptionKey</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -600,13 +500,8 @@
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisModel.Threshold</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -627,13 +522,8 @@
       <MemberSignature Language="F#" Value="member this.TimezoneOffset : double with get, set" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -657,13 +547,8 @@
         <InterfaceMember>P:Microsoft.Cognitive.LUIS.ILuisModel.UriBase</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -684,13 +569,8 @@
       <MemberSignature Language="F#" Value="static member UriFor : Microsoft.Cognitive.LUIS.LuisApiVersion * string -&gt; Uri" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.UriFor (apiVersion, domain)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -715,13 +595,8 @@
       <MemberSignature Language="F#" Value="member this.Verbose : bool with get, set" Usage="Microsoft.Cognitive.LUIS.LuisModelAttribute.Verbose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type OrderScorableFactory&lt;'Item, 'Score&gt; = class&#xA;    interface IScorableFactory&lt;'Item, 'Score&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item" />
@@ -36,14 +36,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="onStage" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate" />
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;Score&gt;" />
         <Parameter Name="factories" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IScorableFactory&lt;Item,Score&gt;[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -66,7 +66,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="onStage" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate" />
@@ -92,7 +92,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Classic.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>

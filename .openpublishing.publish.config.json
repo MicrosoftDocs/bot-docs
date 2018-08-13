@@ -43,10 +43,6 @@
       "build_source_folder": "dotnet",
       "build_output_subfolder": "bot-framework-dotnet-api",
       "locale": "en-us",
-      "monikers": [
-        "botbuilder-3.11.0",
-        "skypebotsmedia-1.5.0.1177-alpha"
-      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -56,15 +52,19 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "customized_tasks": {
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+        ],
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
           "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
           "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ],
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
-      }
+      },
+      "customized_template_paths": [
+        "_dependentPackages/memberpage.plugins/content"
+      ]
     }
   ],
   "notification_subscribers": [
@@ -108,6 +108,13 @@
   "template_folder": "_themes",
   "dependent_packages": [
     {
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest",
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2"
+    },
+    {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",
       "path_to_root": "_dependentPackages/ECMA2Yaml",
@@ -115,25 +122,11 @@
       "version": "latest"
     },
     {
-      "id": "memberpage.plugins",
-      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
       "path_to_root": "_dependentPackages/memberpage.plugins",
       "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "opbuild.initializecrrtool",
-      "nuget_feed": "https://www.myget.org/F/op/api/v2",
-      "path_to_root": "_dependentPackages/initializecrrtool",
-      "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "Microsoft.OpenPublishing.CommonPlugins",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
-      "path_to_root": "_dependentPackages/CommonPlugins",
-      "target_framework": "net45",
-      "version": "latest-prerelease"
+      "version": "latest",
+      "id": "memberpage.plugins",
+      "nuget_feed": "https://www.myget.org/F/docfx/api/v2"
     }
   ],
   "ECMA2Yaml": {

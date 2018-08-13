@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Interface IResolutionParser" />
   <TypeSignature Language="F#" Value="type IResolutionParser = interface" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -27,20 +22,15 @@
       <MemberSignature Language="F#" Value="abstract member TryParse : System.Collections.Generic.IDictionary&lt;string, obj&gt; *  -&gt; bool" Usage="iResolutionParser.TryParse (properties, resolution)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
-        <Parameter Name="resolution" Type="Microsoft.Cognitive.LUIS.Resolution&amp;" RefType="out" />
+        <Parameter Name="resolution" Type="Microsoft.Cognitive.LUIS.Resolution" RefType="out" />
       </Parameters>
       <Docs>
         <param name="properties">To be added.</param>

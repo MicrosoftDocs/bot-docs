@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Chain.Continuation&lt;'T, 'R&gt; = delegate of IBotContext * IAwaitable&lt;'T&gt; -&gt; Task&lt;IDialog&lt;'R&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">

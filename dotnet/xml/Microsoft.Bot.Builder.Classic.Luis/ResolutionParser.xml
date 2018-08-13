@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ResolutionParser = class&#xA;    interface IResolutionParser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,18 +44,18 @@
       <MemberSignature Language="VB.NET" Value="Function TryParse (properties As IDictionary(Of String, Object), ByRef resolution As Resolution) As Boolean Implements IResolutionParser.TryParse" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Classic.Luis.Resolution@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Classic.Luis.Resolution)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
-        <Parameter Name="resolution" Type="Microsoft.Bot.Builder.Classic.Luis.Resolution&amp;" RefType="out" />
+        <Parameter Name="resolution" Type="Microsoft.Bot.Builder.Classic.Luis.Resolution" RefType="out" />
       </Parameters>
       <Docs>
         <param name="properties">To be added.</param>
