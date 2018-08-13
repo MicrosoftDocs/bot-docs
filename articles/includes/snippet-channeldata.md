@@ -1,7 +1,5 @@
 # Implement channel-specific functionality
 
-[!INCLUDE [pre-release-label](./pre-release-label.md)]
-
 Some channels provide features that cannot be implemented by using only [message text and attachments](../dotnet/bot-builder-dotnet-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the `Activity` object's `ChannelData` property. For example, your bot can use the `ChannelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
 This article describes how to use a message activity's `ChannelData` property to implement this channel-specific functionality:
