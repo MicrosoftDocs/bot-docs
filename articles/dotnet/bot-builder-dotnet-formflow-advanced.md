@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Advanced features of FormFlow
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 [Basic features of FormFlow](bot-builder-dotnet-formflow.md) describes a basic FormFlow 
 implementation that delivers a fairly generic user experience. 
 To deliver a more customized user experience using FormFlow, you can specify initial form state, 
