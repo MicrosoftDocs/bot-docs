@@ -10,6 +10,9 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Manage custom state data with Azure Cosmos DB for .NET
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 In this article, you’ll implement Azure Cosmos DB to store and manage your bot’s state data. The default Connector State Service used by bots is not intended for the production environment. You should either use [Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) available on GitHub or implement a custom state client using data storage platform of your choice. Here are some of the reasons to use custom state storage:
  - Higher state API throughput (more control over performance)
  - Lower-latency for geo-distribution
