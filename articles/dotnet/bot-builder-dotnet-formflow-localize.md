@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Localize form content
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 A form's localization language is determined by the current thread's [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.threading.thread.currentuiculture(v=vs.110).aspx) and [CurrentCulture](https://msdn.microsoft.com/en-us/library/system.threading.thread.currentculture(v=vs.110).aspx). 
 By default, the culture derives from the **Locale** field of the current message, but you can 
 override that default behavior. 
