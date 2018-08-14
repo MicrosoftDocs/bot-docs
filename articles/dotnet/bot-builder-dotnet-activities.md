@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Activities overview
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 [!INCLUDE [Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
 
 ## Activity types in the Bot Builder SDK for .NET
