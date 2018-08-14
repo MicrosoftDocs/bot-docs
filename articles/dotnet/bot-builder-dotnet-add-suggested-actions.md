@@ -10,6 +10,9 @@ ms.date: 03/13/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Add suggested actions to messages
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-suggested-actions.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-send-suggested-actions.md)
