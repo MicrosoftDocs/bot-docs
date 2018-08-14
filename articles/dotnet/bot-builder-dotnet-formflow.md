@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Basic features of FormFlow
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 [Dialogs](bot-builder-dotnet-dialogs.md) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the conversation, there are many possibilities of what will happen next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. 
 By using **FormFlow** within the Bot Builder SDK for .NET, you can greatly simplify the process of managing 
 a guided conversation like this. 
