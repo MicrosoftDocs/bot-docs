@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Migrate your bot to Azure
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+[!INCLUDE [pre-release-label](/includes/pre-release-label-v3.md)]
 
 All **Azure Bot Service (Preview)** bots created in the [Bot Framework Portal](http://dev.botframework.com) must migrate to the new Bot Service in Azure. The service was made generally available (GA) in December 2017. 
 
