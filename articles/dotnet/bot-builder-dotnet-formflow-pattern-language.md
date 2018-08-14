@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Customize user experience with pattern language
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 When you customize a prompt or override a default template, you can 
 use pattern language to specify the contents and/or format of the prompt. 
 
