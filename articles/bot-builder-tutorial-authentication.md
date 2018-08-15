@@ -85,7 +85,7 @@ For information about the differences between the v1 and v2 endpoints, see the [
    1. Set the **Application type** to **Web app / API**.
    1. Set the **Sign-on URL** to `https://token.botframework.com/.auth/web/redirect`.
    1. Click **Create**.
-      - Once it is created, it is displayed in a **Registered app** blade.
+      - Once it is created, it is displayed in a **Registered app** pane.
       - Record the **Application ID** value. You will provide this later as the _Client ID_.
 1. Click **Settings** to configure your application.
 1. Click **Keys** to open the **Keys** panel.
@@ -174,7 +174,7 @@ You can now use this connection name in your bot code to retrieve user tokens.
 
 #### To register an Azure AD v2 application
 
-1. Navigate to your bot's Bot Channels Registration blade on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](http://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -202,7 +202,7 @@ You can now use this connection name in your bot code to retrieve user tokens.
 #### To test your connection
 
 1. Open the connection you just created.
-1. Click **Test Connection** at the top of the **Service Provider Connection Setting** blade.
+1. Click **Test Connection** at the top of the **Service Provider Connection Setting** pane.
 1. The first time, this should open a new browser tab listing the permissions your app is requesting and prompt you to accept.
 1. Click **Accept**.
 1. This should then redirect you to a **Test Connection to `<your-connection-name>' Succeeded** page.
