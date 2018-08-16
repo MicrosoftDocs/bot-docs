@@ -6,7 +6,7 @@ ms.author: mateusv
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 08/15/2018
  
 ---
 
@@ -53,9 +53,7 @@ for building cross-platform mobile applications.
 
 First, create a simple web view component and use it to host a 
 <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">web chat control</a>. 
-Then, using the Bot Framework Portal, [TODO](~/bot-service-manage-channels.md) to the Web Chat channel. 
-
-![Bot configuration settings](~/media/bot-service-design-pattern-embed-app/webchat-channel.png)
+Then, using Azure portal, add the Web Chat channel. 
 
 Next, specify the registered web chat URL as the source for the web view control in the Xamarin app:
 
