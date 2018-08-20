@@ -32,7 +32,7 @@ To enable these tools from the command line, you will need Node.js installed to 
 
 ## 1. Enable Azure CLI
 
-You can now manage bots using [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) like any other Azure resource. To enable Azure CLI, complete the following steps:
+You can now manage bots using [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) like any other Azure resource. To enable Azure CLI, complete the following steps:
 
 1. [Download](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) Azure CLI if you don't already have it. 
 
@@ -59,7 +59,7 @@ Upon successful login, you will see the Azure CLI welcome screen, along with a l
 ![Azure Bot CLI](media/bot-builder-tools/az-cli-bot.png)
 
 
- For a full list of Azure CLI commands, [click here](https://docs.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest).
+ For a full list of Azure CLI commands, [click here](https://docs.microsoft.com/cli/azure/reference-index?view=azure-cli-latest).
 
 
 ## 2. Create a new bot from Azure CLI
@@ -78,7 +78,7 @@ az bot [command]
 | show |show existing bot resources.|
 | update| Update an existing bot Service|
 
-To create a new bot from the CLI, you need to select an existing [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), or create a new one. 
+To create a new bot from the CLI, you need to select an existing [resource group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview), or create a new one. 
 
 ```azurecli
 az bot create --resource-group "my-resource-group" --name "my-bot-name" --kind "my-resource-type" --description "description-of-my-bot"
@@ -178,7 +178,7 @@ This will take current endpoint, MSA appID and password from the target resource
 > Every bot builder tool includes a global help command, accessible from the command line by entering **-h** or **--help**. This command is available at any time from any action, which will provide a helpful display of the options available to you along with their descriptions.
 
 ### LUDown
-[LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown) allows you to describe and create powerful language components for bots using **.lu** files. The new .lu file is a type of markdown format which the LUDown tool consumes and outputs .json files specific to the target service. Currently, you can use .lu files to create a new [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app) application or [QnA](https://qnamaker.ai/Documentation/CreateKb) knowledge base, using different formats for each. LUDown is available as an npm module, and can be used by installing globally to your machine:
+[LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown) allows you to describe and create powerful language components for bots using **.lu** files. The new .lu file is a type of markdown format which the LUDown tool consumes and outputs .json files specific to the target service. Currently, you can use .lu files to create a new [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-get-started-create-app) application or [QnA](https://qnamaker.ai/Documentation/CreateKb) knowledge base, using different formats for each. LUDown is available as an npm module, and can be used by installing globally to your machine:
 
 ```shell
 npm install -g ludown
@@ -188,9 +188,9 @@ The LUDown tool can be used to create new .json models for both LUIS and QnA.
 
 ### Creating a LUIS application with LUDown
 
-You can define [intents](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-intents) and [entities](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-entities) for a LUIS application just like you would from the LUIS portal. 
+You can define [intents](https://docs.microsoft.com/azure/cognitive-services/luis/add-intents) and [entities](https://docs.microsoft.com/azure/cognitive-services/luis/add-entities) for a LUIS application just like you would from the LUIS portal. 
 
-`# \<intent-name\>` describes a new intent definition section. Subsequent lines contain [utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-example-utterances) that describe that intent.
+`# \<intent-name\>` describes a new intent definition section. Subsequent lines contain [utterances](https://docs.microsoft.com/azure/cognitive-services/luis/add-example-utterances) that describe that intent.
 
 For example, you can create multiple LUIS intents in a single .lu file as follows: 
 

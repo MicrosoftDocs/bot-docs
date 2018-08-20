@@ -1,5 +1,5 @@
 ---
-title: How to create a Direct Line bot and client | Microsoft Docs
+title: Create a Direct Line bot and client | Microsoft Docs
 description: Learn how to create a Direct Line bot and client with V4 of the Bot Builder SDK for .NET.
 keywords: direct line bot, direct line client, custom channel, console-based, publish
 author: v-royhar
@@ -11,7 +11,7 @@ ms.date: 4/16/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to create a Direct Line bot and client
+# Create a Direct Line bot and client
 
 Microsoft Bot Framework Direct Line bots are bots that can function with a custom client of your own design. Direct Line bots are remarkably similar to normal bots. They just don't need to use the provided channels.
 

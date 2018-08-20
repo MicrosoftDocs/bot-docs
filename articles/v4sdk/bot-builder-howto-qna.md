@@ -1,5 +1,5 @@
 ---
-title: Using QnA Maker | Microsoft Docs
+title: Use QnA Maker to answer questions | Microsoft Docs
 description: Learn how to use QnA maker in your bot.
 keywords: question and answer, QnA, FAQs, middleware 
 author: ivorb
@@ -11,7 +11,7 @@ ms.date: 03/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to use QnA Maker
+# Use QnA Maker to answer questions
 
 To add simple question and answer support to your bot, you can use the [QnA Maker](https://qnamaker.ai/) service.
 

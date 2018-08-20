@@ -1,5 +1,5 @@
 ---
-title: Enable speech in the Web Chat channel | Microsoft Docs
+title: Enable speech in Web Chat | Microsoft Docs
 description: Learn how to enable speech in the web chat control for a bot connected to the Web Chat channel.
 keywords: speech, web chat, voice, microphone, audio
 author: DeniseMak
@@ -10,7 +10,7 @@ ms.prod: bot-framework
 ms.date: 12/13/2017
 ---
 
-# How to enable speech in Web Chat
+# Enable speech in Web Chat
 You can enable a voice interface in the Web Chat control. Users interact with the voice interface by using the microphone in the Web Chat control.
 
 ![Web chat speech sample](~/media/bot-service-channel-webchat/webchat-sample-speech.png)
