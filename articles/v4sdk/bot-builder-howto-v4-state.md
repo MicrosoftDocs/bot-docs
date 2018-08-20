@@ -300,7 +300,7 @@ server.post('/api/messages', (req, res) => {
 
 ---
 
-An alternative is to use the _waterfall_ model of a dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [Manage conversation with Dialogs](bot-builder-dialog-manage-conversation-flow.md).
+An alternative is to use the _waterfall_ model of a dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [Manage simple conversation with Dialogs](bot-builder-dialog-manage-conversation-flow.md).
 
 ## File storage
 

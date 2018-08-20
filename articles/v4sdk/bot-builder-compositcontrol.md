@@ -99,7 +99,7 @@ First, we start with a simple check-in dialog that will ask the user for their n
 1. Ask for the room they'd like to stay in.
 1. Send a confirmation message and complete the dialog.
 
-For more information about dialogs and waterfalls, see [Use dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
+For more information about dialogs and waterfalls, see [Use dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 # [C#](#tab/csharp)
 
