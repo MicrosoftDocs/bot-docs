@@ -186,9 +186,6 @@ namespace DirectLineBotSample
                 case ActivityTypes.Typing:
                     break;
 
-                case ActivityTypes.Ping:
-                    break;
-
                 case ActivityTypes.DeleteUserData:
                     break;
             }

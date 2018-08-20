@@ -1,6 +1,6 @@
 ---
-title: Prompt users for input | Microsoft Docs
-description: Learn how to prompt users for input in the Bot Builder SDK for Node.js.
+title: Prompt users for input using the Dailogs library | Microsoft Docs
+description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK for Node.js.
 keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: v-ducvo
 ms.author: v-ducvo
@@ -10,7 +10,7 @@ ms.prod: bot-framework
 ms.date: 4/10/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Prompt users for input
+# Prompt users for input using the Dialogs library
 
 [!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 
@@ -69,7 +69,7 @@ public class MyDialog : DialogSet
 Install the dialogs package from NPM:
 
 ```cmd
-npm install --save botbuilder-dialogs
+npm install --save botbuilder-dialogs@preview
 ```
 
 To use **dialogs** in your bot, include it in the bot code.

@@ -7,7 +7,7 @@ ms.author: RobStand
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 08/16/2018
 ---
 
 # Connect a bot to Facebook Messenger
@@ -15,8 +15,6 @@ ms.date: 12/13/2017
 To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). You may wish to review Facebook's [pre-launch guidelines](https://developers.facebook.com/docs/messenger-platform/product-overview/launch#app_public), [quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start), and [setup guide](https://developers.facebook.com/docs/messenger-platform/guides/setup).
 
 To configure a bot to communicate using Facebook Messenger, enable Facebook Messenger on a Facebook page and then connect the bot to the app.
-
-[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 > [!NOTE]
 > The Facebook UI may appear slightly different depending on which version you are using.
@@ -67,7 +65,7 @@ Click **Set up Webhooks** to forward messaging events from Facebook Messenger to
 
 ## Provide webhook callback URL and verify token
 
-Return to the [Bot Framework Portal](https://dev.botframework.com/). Open the bot, click the **Channels** tab, and then click **Facebook Messenger**.
+In the [Azure portal](https://portal.azure.com/), open the bot, click the **Channels** tab, and then click **Facebook Messenger**.
 
 * Copy the **Callback URL** and **Verify Token** values from the portal.
 
@@ -88,7 +86,7 @@ Return to the [Bot Framework Portal](https://dev.botframework.com/). Open the bo
 
 ## Provide Facebook credentials
 
-On the Bot Framework Portal, paste the **Page ID**, **App ID**, **App Secret**, and **Page Access Token** values copied from Facebook Messenger previously.
+In Azure portal, paste the **Facebook App ID**, **Facebook App Secret**, **Page ID**,and **Page Access Token** values copied from Facebook Messenger previously. You can use the same bot on multiple facebook pages by adding additional page ids and access tokens.
 
 ![Enter credentials](~/media/channels/fb-credentials2.png)
 
@@ -105,3 +103,6 @@ After the bot is finished, Facebook has its own [review process](https://develop
 
 After the review is successful, in the App Dashboard under App Review, set the app to Public.
 Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
+
+> [!NOTE]
+> You can also use Facebook Workplace. To enable it, create a [custom integration](https://developers.facebook.com/docs/workplace/custom-integrations-new) for your Workplace and use its App ID, App Secret, and Access Token. Instead of a traditional pageID, use the numbers following the integrations name on its About page. The webhooks can be connected with the credentials shown in Azure.
