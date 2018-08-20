@@ -415,7 +415,7 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **textFormat** | string | Format of the message's **text**. One of these values: **markdown**, **plain**, **xml**. For details about text format, see [Create messages](bot-framework-rest-connector-create-messages.md). |
 | **timestamp** | string | Date and time that the message was sent in the UTC time zone, expressed in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO-8601</a> format. |
 | **topicName** | string | Topic of the conversation to which the activity belongs. |
-| **type** | string | Type of activity. One of these values: **contactRelationUpdate**, **conversationUpdate**, **deleteUserData**, **message**, **ping**, **typing**, **endOfConversation**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
+| **type** | string | Type of activity. One of these values: **contactRelationUpdate**, **conversationUpdate**, **deleteUserData**, **message**, **typing**, **endOfConversation**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
 | **value** | object | Open-ended value. |
 
 <a href="#objects">Back to Schema table</a>
