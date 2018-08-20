@@ -1,5 +1,5 @@
 ---
-title: Handle user interrupt | Microsoft Docs
+title: Handle user interruptions | Microsoft Docs
 description: Learn how to handle user interrupt and direct conversation flow.
 keywords: interrupt, interruptions, switching topic, break
 author: v-ducvo
@@ -12,7 +12,7 @@ ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Handle user interrupt
+# Handle user interruptions
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

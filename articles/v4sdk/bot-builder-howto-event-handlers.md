@@ -1,5 +1,5 @@
 ---
-title: Event handlers | Microsoft Docs
+title: Using event handlers | Microsoft Docs
 description: Understand how to use event handlers.
 author: ivorb
 ms.author: v-ivorb
@@ -10,7 +10,7 @@ ms.date: 06/14/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Event handlers
+# Using event handlers
 
 Event handlers are functions we can add to future activity events within a [turn](bot-builder-basics.md#defining-a-turn). Those activities are `SendActivity`, `UpdateActivity`, and `DeleteActivity`, and each has it's own handler. These handlers are useful when you need to do something on every future activity of that type for the current context object.
 

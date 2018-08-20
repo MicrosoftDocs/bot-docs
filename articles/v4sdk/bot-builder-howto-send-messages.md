@@ -1,5 +1,5 @@
 ---
-title: Sending messages with the Bot Builder SDK | Microsoft Docs
+title: Send messages | Microsoft Docs
 description: Learn about how to send messages within the Bot Builder SDK.
 keywords: sending messages, message activities, simple text message, speech, spoken message  
 author: ivorb
@@ -11,7 +11,7 @@ ms.date: 04/04/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Sending messages
+# Send messages
 
 The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. For more information about activity processing in general, see [Activity processing](bot-builder-concept-activity-processing.md).
 

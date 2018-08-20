@@ -43,7 +43,7 @@ You can extrapolate from the steps in this article to add such features to an ex
 > [!NOTE]
 > The authentication features also work with Node.js with BotBuilder v3. However, this article covers just sample C# code.
 
-For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-links-help).
+For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help).
 
 ## Overview
 

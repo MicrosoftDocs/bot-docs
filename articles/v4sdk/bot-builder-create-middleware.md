@@ -1,5 +1,5 @@
 ---
-title: Write your own middleware | Microsoft Docs
+title: Create your own middleware | Microsoft Docs
 description: Understand how to write your own middleware.
 keywords: middleware, custom middleware, short circuit, fallback, activity handlers
 author: ivorb
@@ -11,13 +11,13 @@ ms.date: 03/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Write your own middleware
+# Create your own middleware
 
 Middleware allows you to write rich plugins for your bots, that can then be used by others as well. Here we'll show how to add and implement basic middleware, and show how it works. The v4 SDK provides some middleware for you, for things such as state management, LUIS, QnAMaker, and translation. Take a look at the bot builder SDK for [.NET](https://github.com/Microsoft/botbuilder-dotnet) or [JavaScript](https://github.com/Microsoft/botbuilder-js) for more information.
 
 ## Adding middleware
 
-In the example below, based on our basic HelloBot sample, two different pieces of middleware are added to our services with a new instance of each of those classes.
+In the example below, based on our basic bot sample created through the [Get Started](~/bot-service-quickstart.md) experience, two different pieces of middleware are added to our services with a new instance of each of those classes.
 
 > [!IMPORTANT]
 > Remember, the order in which they are added to the options determines the order in which they are executed. Be sure to consider how that will work if using more than one piece of middleware.

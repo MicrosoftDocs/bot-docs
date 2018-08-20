@@ -1,5 +1,5 @@
 ---
-title: Proactive messaging | Microsoft Docs
+title: Proactive messages | Microsoft Docs
 description: Understand how to proactively message.
 keywords: welcome user, initiate conversation
 author: ivorb
@@ -11,7 +11,7 @@ ms.date: 03/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Proactive messaging
+# Proactive messages
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 <!--
 When you think about the exchange of messages between your bot and the user, you're probably thinking about the scenario where the user sends a message to your bot and your bot then replies to the user with a message of its own. We call this _reactive messaging_ and it's by far the most common flow that you should optimize your bot's code for.

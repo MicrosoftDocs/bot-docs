@@ -1,5 +1,5 @@
 ---
-title: How to use proactive messaging | Microsoft Docs
+title: Send proactive messages | Microsoft Docs
 description: Understand how to proactively message with your bot.
 keywords: proactive message
 author: jonathanfingold
@@ -11,7 +11,7 @@ ms.date: 05/01/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to use proactive messaging
+# Send proactive messages 
 
 Often bots send _reactive messages_, but there are times when we need to be able to send a [proactive message](bot-builder-proactive-messages.md) as well. 
 

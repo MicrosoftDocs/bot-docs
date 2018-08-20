@@ -10,7 +10,7 @@ ms.prod: bot-framework
 ms.date: 04/30/2018
 ---
 
-# Debug bots with the Bot Framework Emulator
+# Debug with the Bot Framework Emulator
 
 The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots, either locally or remotely. Using the emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. 
 
