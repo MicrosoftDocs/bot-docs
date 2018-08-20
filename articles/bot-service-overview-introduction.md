@@ -1,5 +1,5 @@
 ---
-title: About Bot Service | Microsoft Docs
+title: Azure Bot Service Introduction | Microsoft Docs
 description: Learn about Bot Service, a service for building, connecting, testing, deploying, monitoring, and managing bots.
 keywords: overview, introduction, SDK, outline
 author: Kaiqb
@@ -12,7 +12,7 @@ ms.date: 05/03/2018
 
 ::: moniker range="azure-bot-service-3.0"
 
-# Azure Bot Service
+# Azure Bot Service Introduction
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 

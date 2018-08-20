@@ -1,5 +1,5 @@
 ---
-title: Download and redeploy the source code for a Bot Service | Microsoft Docs
+title: Download and redeploy bot source code | Microsoft Docs
 description: Learn how to download and publish a Bot Service.
 keywords: download source code, redeploy, deploy, zip file, publish
 author: v-ducvo
@@ -10,7 +10,7 @@ ms.prod: bot-framework
 ms.date: 03/08/2018
 ---
 
-# Download and redeploy Bot Service source code
+# Download and redeploy bot source code
 
 Bot Service allows you to download the entire source project for your bot. This allows you to work on your bot locally using an IDE of your choice. Once you are done making changes, you can publish your changes back to Azure. 
 

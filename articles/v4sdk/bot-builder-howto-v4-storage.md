@@ -1,5 +1,5 @@
 ---
-title: Store data | Microsoft Docs
+title: Write directly to storage | Microsoft Docs
 description: Learn how to write directly to storage with V4 of the Bot Builder SDK for .NET.
 keywords: storage, read and write, memory storage, eTag
 author: DeniseMak
@@ -11,7 +11,7 @@ ms.date: 05/2/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Save data directly to storage
+# Write directly to storage
 
 <!--
  Note for V4: You can write directly to storage without using the state manager. Therefore, this topic isn't called "managing state". State is in a separate topic.

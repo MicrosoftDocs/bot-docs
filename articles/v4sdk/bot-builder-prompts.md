@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using the turn context object's _send activity_ method to ask for a string input; however, the Bot Builder SDK provides a **dialogs** library that you can use to ask for different types for information. This topic details how to use **prompts** to ask a user for input.
 
-This article describes how to use prompts within a dialog. For information on using dialogs in general, see [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
+This article describes how to use prompts within a dialog. For information on using dialogs in general, see [using dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 ## Prompt types
 
@@ -27,13 +27,13 @@ The dialogs library offers a number of different types of prompts, each requesti
 | **AttachmentPrompt** | Prompt the user for an attachment such as a document or image. |
 | **ChoicePrompt** | Prompt the user to choose from a set of options. |
 | **ConfirmPrompt** | Prompt the user to confirm their action. |
-| **DatetimePrompt** | Prompt the user for a date-time. Users can respond using natural language such as "Tomorrow at 8pm" or "Friday at 10am". The Bot Framework SDK uses the LUIS `builtin.datetimeV2` prebuilt entity. For more information, see [builtin.datetimev2](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2). |
+| **DatetimePrompt** | Prompt the user for a date-time. Users can respond using natural language such as "Tomorrow at 8pm" or "Friday at 10am". The Bot Framework SDK uses the LUIS `builtin.datetimeV2` prebuilt entity. For more information, see [builtin.datetimev2](https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2). |
 | **NumberPrompt** | Prompt the user for a number. The user can respond with either "10" or "ten". If the response is "ten", for example, the prompt will convert the response into a number and return `10` as a result. |
 | **TextPrompt** | Prompt user for a string of text. |
 
 ## Add references to prompt library
 
-You can get the **dialogs** library by adding the **dialogs** package to your bot. We cover dialogs in [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md), but we'll use dialogs for our prompts.
+You can get the **dialogs** library by adding the **dialogs** package to your bot. We cover dialogs in [using dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md), but we'll use dialogs for our prompts.
 
 # [C#](#tab/csharp)
 
@@ -87,7 +87,7 @@ const dialogs = new DialogSet();
 
 To prompt a user for input, you can add a prompt to your dialog. For example, you can define a prompt of type **TextPrompt** and give it a dialog ID of **textPrompt**:
 
-Once a prompt dialog is added, you can use it in a simple two step waterfall dialog or use multiple prompts together in a multi-step waterfall. A *waterfall* dialog is simply a way to define a sequence of steps. For more information, see the [using dialogs](bot-builder-dialog-manage-conversation-flow.md#using-dialogs-to-guide-the-user-through-steps) section of [manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
+Once a prompt dialog is added, you can use it in a simple two step waterfall dialog or use multiple prompts together in a multi-step waterfall. A *waterfall* dialog is simply a way to define a sequence of steps. For more information, see the [using dialogs](bot-builder-dialog-manage-conversation-flow.md#using-dialogs-to-guide-the-user-through-steps) section of [manage simple conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
 
 On the first turn, the dialog prompts the user for their name, and on the second turn, the dialog processes the user input as an answer to the prompt.
 
@@ -160,7 +160,7 @@ dialogs.add('greetings', [
 ---
 
 > [!NOTE]
-> To start a dialog, get a dialog context, and use its _begin_ method. For more information, see [use dialogs to managed conversation flow](./bot-builder-dialog-manage-conversation-flow.md).
+> To start a dialog, get a dialog context, and use its _begin_ method. For more information, see [use dialogs to manage simple conversation flow](./bot-builder-dialog-manage-conversation-flow.md).
 
 ## Reusable prompts
 
@@ -630,4 +630,5 @@ When you prompt for user input, you have several options on how to handle that i
 Now that you know how to prompt a user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
 
 > [!div class="nextstepaction"]
-> [Manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md)
+> [Manage simple conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md)
+

@@ -1,5 +1,5 @@
 ---
-title: Language Understanding for bots | Microsoft Docs
+title: Language Understanding | Microsoft Docs
 description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
 keywords: LUIS, intent, recognizer, dispatch tool, qna, qna maker
 author: DeniseMak
@@ -12,7 +12,8 @@ ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Language Understanding for bots
+
+# Language Understanding
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
@@ -82,7 +83,8 @@ The `None` intent is very useful for improving recognition results. In this home
 
 ### Review the utterances that LUIS app receives
 
-LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [Review suggested utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walkthrough.
+LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [Review suggested utterances](https://docs.microsoft.com/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walkthrough.
+
 
 ## Integrate multiple LUIS apps and QnA services with the Dispatch tool
 

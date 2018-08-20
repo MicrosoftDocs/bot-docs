@@ -1,5 +1,5 @@
 ---
-title: Save state using conversation and user properties | Microsoft Docs
+title: Manage conversation and user state | Microsoft Docs
 description: Learn how to save and retrieve data with V4 of the Bot Builder SDK for .NET.
 keywords: conversation state, user state, state middleware, conversation flow, file storage, azure table storage
 author: ivorb
@@ -11,7 +11,7 @@ ms.date: 05/03/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Save state using conversation and user properties
+# Manage conversation and user state
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
@@ -300,7 +300,7 @@ server.post('/api/messages', (req, res) => {
 
 ---
 
-An alternative is to use the _waterfall_ model of a dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [Manage conversation with Dialogs](bot-builder-dialog-manage-conversation-flow.md).
+An alternative is to use the _waterfall_ model of a dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [Manage simple conversation with Dialogs](bot-builder-dialog-manage-conversation-flow.md).
 
 ## File storage
 
@@ -461,5 +461,5 @@ Now that you know how to use state to help you read and write bot data to storag
 For more background on storage, see [Storage in the Bot Builder SDK](bot-builder-storage-concept.md)
 
 <!-- Links -->
-[AzureStorageEmulator]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator
-[AzureStorageExplorer]: https://azure.microsoft.com/en-us/features/storage-explorer/
+[AzureStorageEmulator]: https://docs.microsoft.com/azure/storage/common/storage-use-emulator
+[AzureStorageExplorer]: https://azure.microsoft.com/features/storage-explorer/
