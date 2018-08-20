@@ -41,7 +41,8 @@ Dialogs help you organize the conversational logic in your bot and are fundament
 
 ## Actions
 You'll want to design your bot to be able to handle interruptions like requests for cancellation or help at any time during the conversation flow. The Bot Builder SDK for Node.js provides global message handlers that trigger actions like cancellation or invoking other dialogs. 
- See <!--[Handling cancel](bot-builder-nodejs-manage-conversation-flow.md#handling-cancel), [Confirming interruptions](bot-builder-nodejs-manage-conversation-flow.md#confirming-interruptions) and-->[Handle user actions](bot-builder-nodejs-dialog-actions.md) for examples of how to use [triggerAction][triggerAction] handlers.
+ See [Handle user actions](bot-builder-nodejs-dialog-actions.md) for examples of how to use [triggerAction][triggerAction] handlers.
+<!--[Handling cancel](bot-builder-nodejs-manage-conversation-flow.md#handling-cancel), [Confirming interruptions](bot-builder-nodejs-manage-conversation-flow.md#confirming-interruptions) and-->
 
 
 ## Recognizers

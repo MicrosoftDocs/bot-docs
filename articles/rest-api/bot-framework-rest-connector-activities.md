@@ -23,7 +23,6 @@ The following activity types are supported by the Bot Connector service.
 | conversationUpdate | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
 | contactRelationUpdate | Indicates that the bot was added or removed from a user's contact list. |
 | typing | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
-| ping | Represents an attempt to determine whether a bot's endpoint is accessible. | 
 | deleteUserData | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
 | endOfConversation | Indicates the end of a conversation. |
 
@@ -54,10 +53,6 @@ A bot receives a **contactRelationUpdate** activity whenever it is added to or r
 ## typing
 
 A bot receives a **typing** activity to indicate that the user is typing a response. A bot may send a **typing** activity to indicate to the user that it is working to fulfill a request or compile a response. 
-
-## ping
-
-A bot receives a **ping** activity to determine whether its endpoint is accessible. The bot should respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized).
 
 ## deleteUserData
 

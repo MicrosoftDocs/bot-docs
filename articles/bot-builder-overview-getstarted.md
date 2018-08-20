@@ -51,7 +51,7 @@ The Bot Builder SDK for Node.js provides a familiar way for Node.js developers t
 The [Node.js Quickstart](~/nodejs/bot-builder-nodejs-quickstart.md) will guide you through creating a bot with the Bot Builder SDK for Node.js. 
 
 The Bot Builder SDK for Node.js is available as an npm package. 
-To install the Bot Builder for Node.js SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
+To install the Bot Builder SDK for Node.js and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```nodejs
 npm init
