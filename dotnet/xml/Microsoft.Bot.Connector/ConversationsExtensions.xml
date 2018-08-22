@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type ConversationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,14 +27,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateConversationAsync&gt;d__13))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
@@ -93,8 +86,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
@@ -125,8 +117,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
@@ -157,14 +148,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateDirectConversationAsync&gt;d__1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
@@ -196,14 +181,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;CreateDirectConversationAsync&gt;d__3))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
@@ -235,14 +214,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;DeleteActivityAsync&gt;d__17))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -285,14 +258,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;DeleteConversationMemberAsync&gt;d__19))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -337,14 +304,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetActivityMembersAsync&gt;d__20))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -388,14 +349,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetConversationMembersAsync&gt;d__18))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -434,14 +389,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;GetConversationsAsync&gt;d__12))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
       </ReturnValue>
@@ -487,8 +436,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
@@ -519,8 +467,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -555,14 +502,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;ReplyToActivityAsync&gt;d__16))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
@@ -618,8 +559,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
@@ -650,8 +590,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -686,14 +625,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;SendToConversationAsync&gt;d__14))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
@@ -745,8 +678,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
@@ -777,8 +709,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -813,14 +744,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;UpdateActivityAsync&gt;d__15))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
@@ -870,14 +795,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Connector.ConversationsExtensions/&lt;UploadAttachmentAsync&gt;d__21))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>

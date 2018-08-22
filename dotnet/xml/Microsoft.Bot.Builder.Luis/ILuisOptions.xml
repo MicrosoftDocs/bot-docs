@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ILuisOptions = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -16,6 +16,28 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="BingSpellCheckSubscriptionKey">
+      <MemberSignature Language="C#" Value="public string BingSpellCheckSubscriptionKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BingSpellCheckSubscriptionKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property BingSpellCheckSubscriptionKey As String" />
+      <MemberSignature Language="F#" Value="member this.BingSpellCheckSubscriptionKey : string with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Bing Spell Check subscription key.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Log">
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
@@ -25,7 +47,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -47,7 +69,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -69,7 +91,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -91,7 +113,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -113,7 +135,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>

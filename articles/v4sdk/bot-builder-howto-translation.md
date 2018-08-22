@@ -1,5 +1,5 @@
 ---
-title: Translate user input to make your bot multilingual | Microsoft Docs
+title: Translate user input | Microsoft Docs
 description: How to automatically translate user input to your bot's native language and translate back to the user's language.
 keywords: translation, translate, multilingual, microsoft translator
 author: DeniseMak
@@ -11,7 +11,7 @@ ms.date: 04/06/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Translate user input to make your bot multilingual
+# Translate user input 
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

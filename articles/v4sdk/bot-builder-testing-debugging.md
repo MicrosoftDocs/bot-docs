@@ -1,5 +1,5 @@
 ---
-title: Testing and debugging your bot | Microsoft Docs
+title: Testing and debugging guidelines | Microsoft Docs
 description: Understand how to test and debug your bot.
 keywords: testing principles, mock elements, faq, testing levels
 author: ivorb
@@ -11,7 +11,7 @@ ms.date: 04/09/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Testing and debugging your bot
+# Testing and debugging guidelines
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

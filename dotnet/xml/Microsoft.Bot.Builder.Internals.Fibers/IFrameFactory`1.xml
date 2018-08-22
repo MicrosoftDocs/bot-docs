@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type IFrameFactory&lt;'C&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -27,7 +27,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;</ReturnType>

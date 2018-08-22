@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type EventActivityValueResolver = class&#xA;    inherit PropertyResolver&lt;IEventActivity&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Classic.Scorables.Internals.PropertyResolver&lt;Microsoft.Bot.Schema.IEventActivity&gt;</BaseTypeName>
@@ -29,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
@@ -49,7 +49,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

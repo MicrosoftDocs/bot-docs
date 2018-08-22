@@ -1,6 +1,6 @@
 ---
-title: Prompt users for input | Microsoft Docs
-description: Learn how to prompt users for input in the Bot Builder SDK for Node.js.
+title: Prompt users for input using the Dailogs library | Microsoft Docs
+description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK for Node.js.
 keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: v-ducvo
 ms.author: v-ducvo
@@ -10,13 +10,13 @@ ms.prod: bot-framework
 ms.date: 4/10/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Prompt users for input
+# Prompt users for input using the Dialogs library
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using the turn context object's _send activity_ method to ask for a string input; however, the Bot Builder SDK provides a **dialogs** library that you can use to ask for different types for information. This topic details how to use **prompts** to ask a user for input.
 
-This article describes how to use prompts within a dialog. For information on using dialogs in general, see [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
+This article describes how to use prompts within a dialog. For information on using dialogs in general, see [using dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 ## Prompt types
 
@@ -27,13 +27,13 @@ The dialogs library offers a number of different types of prompts, each requesti
 | **AttachmentPrompt** | Prompt the user for an attachment such as a document or image. |
 | **ChoicePrompt** | Prompt the user to choose from a set of options. |
 | **ConfirmPrompt** | Prompt the user to confirm their action. |
-| **DatetimePrompt** | Prompt the user for a date-time. Users can respond using natural language such as "Tomorrow at 8pm" or "Friday at 10am". The Bot Framework SDK uses the LUIS `builtin.datetimeV2` prebuilt entity. For more information, see [builtin.datetimev2](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2). |
+| **DatetimePrompt** | Prompt the user for a date-time. Users can respond using natural language such as "Tomorrow at 8pm" or "Friday at 10am". The Bot Framework SDK uses the LUIS `builtin.datetimeV2` prebuilt entity. For more information, see [builtin.datetimev2](https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2). |
 | **NumberPrompt** | Prompt the user for a number. The user can respond with either "10" or "ten". If the response is "ten", for example, the prompt will convert the response into a number and return `10` as a result. |
 | **TextPrompt** | Prompt user for a string of text. |
 
 ## Add references to prompt library
 
-You can get the **dialogs** library by adding the **dialogs** package to your bot. We cover dialogs in [using dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md), but we'll use dialogs for our prompts.
+You can get the **dialogs** library by adding the **dialogs** package to your bot. We cover dialogs in [using dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md), but we'll use dialogs for our prompts.
 
 # [C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ public class MyDialog : DialogSet
 Install the dialogs package from NPM:
 
 ```cmd
-npm install --save botbuilder-dialogs
+npm install --save botbuilder-dialogs@preview
 ```
 
 To use **dialogs** in your bot, include it in the bot code.
@@ -87,7 +87,7 @@ const dialogs = new DialogSet();
 
 To prompt a user for input, you can add a prompt to your dialog. For example, you can define a prompt of type **TextPrompt** and give it a dialog ID of **textPrompt**:
 
-Once a prompt dialog is added, you can use it in a simple two step waterfall dialog or use multiple prompts together in a multi-step waterfall. A *waterfall* dialog is simply a way to define a sequence of steps. For more information, see the [using dialogs](bot-builder-dialog-manage-conversation-flow.md#using-dialogs-to-guide-the-user-through-steps) section of [manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
+Once a prompt dialog is added, you can use it in a simple two step waterfall dialog or use multiple prompts together in a multi-step waterfall. A *waterfall* dialog is simply a way to define a sequence of steps. For more information, see the [using dialogs](bot-builder-dialog-manage-conversation-flow.md#using-dialogs-to-guide-the-user-through-steps) section of [manage simple conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
 
 On the first turn, the dialog prompts the user for their name, and on the second turn, the dialog processes the user input as an answer to the prompt.
 
@@ -123,13 +123,13 @@ public class MyDialog : DialogSet
             async (dc, args, next) =>
             {
                 // Prompt for the user's name.
-                await dc.Prompt(Inputs.Text, "What is your name?").ConfigureAwait(false);
+                await dc.Prompt(Inputs.Text, "What is your name?");
             },
             async(dc, args, next) =>
             {
                 var user = (string)args["Text"];
-                await dc.Context.SendActivity($"Hi {user}!").ConfigureAwait(false);
-                await dc.End().ConfigureAwait(false);
+                await dc.Context.SendActivity($"Hi {user}!");
+                await dc.End();
             }
         });
     }
@@ -160,7 +160,7 @@ dialogs.add('greetings', [
 ---
 
 > [!NOTE]
-> To start a dialog, get a dialog context, and use its _begin_ method. For more information, see [use dialogs to managed conversation flow](./bot-builder-dialog-manage-conversation-flow.md).
+> To start a dialog, get a dialog context, and use its _begin_ method. For more information, see [use dialogs to manage simple conversation flow](./bot-builder-dialog-manage-conversation-flow.md).
 
 ## Reusable prompts
 
@@ -191,21 +191,21 @@ public class MyDialog : DialogSet
             async (dc, args, next) =>
             {
                 // Prompt for the user's name.
-                await dc.Prompt(Inputs.Text, "What is your name?").ConfigureAwait(false);
+                await dc.Prompt(Inputs.Text, "What is your name?");
             },
             async(dc, args, next) =>
             {
                 var user = (string)args["Text"];
 
                 // Ask them where they work.
-                await dc.Prompt(Inputs.Text, $"Hi {user}! Where do you work?").ConfigureAwait(false);
+                await dc.Prompt(Inputs.Text, $"Hi {user}! Where do you work?");
             },
             async(dc, args, next) =>
             {
                 var workplace = (string)args["Text"];
 
-                await dc.Context.SendActivity($"{workplace} is a cool place!").ConfigureAwait(false);
-                await dc.End().ConfigureAwait(false);
+                await dc.Context.SendActivity($"{workplace} is a cool place!");
+                await dc.End();
             }
         });
     }
@@ -267,21 +267,21 @@ public MyDialog()
         async (dc, args, next) =>
         {
             // Prompt for the user's name.
-            await dc.Prompt(Inputs.Name, "What is your name?").ConfigureAwait(false);
+            await dc.Prompt(Inputs.Name, "What is your name?");
         },
         async(dc, args, next) =>
         {
             var user = (string)args["Text"];
 
             // Ask them where they work.
-            await dc.Prompt(Inputs.Work, $"Hi {user}! Where do you work?").ConfigureAwait(false);
+            await dc.Prompt(Inputs.Work, $"Hi {user}! Where do you work?");
         },
         async(dc, args, next) =>
         {
             var workplace = (string)args["Text"];
 
-            await dc.Context.SendActivity($"{workplace} is a cool place!").ConfigureAwait(false);
-            await dc.End().ConfigureAwait(false);
+            await dc.Context.SendActivity($"{workplace} is a cool place!");
+            await dc.End();
         }
     });
 }
@@ -328,7 +328,7 @@ Within a dialog step, the following code would prompt the user for input and pro
 await dc.Prompt("numberPrompt", "How many people are in your party?", new PromptOptions()
 {
     RetryPromptString = "Sorry, please specify the number of people in your party."
-}).ConfigureAwait(false);
+});
 ```
 
 # [JavaScript](#tab/javascript)
@@ -399,14 +399,14 @@ public class MyDialog : DialogSet
                     Choices = ChoiceFactory.ToChoices(Colors),
                     RetryPromptActivity =
                         MessageFactory.SuggestedActions(Colors, "Please choose a color.") as Activity
-                }).ConfigureAwait(false);
+                });
             },
             async(dc, args, next) =>
             {
                 var color = (FoundChoice)args["Value"];
 
-                await dc.Context.SendActivity($"You chose {color.Value}.").ConfigureAwait(false);
-                await dc.End().ConfigureAwait(false);
+                await dc.Context.SendActivity($"You chose {color.Value}.");
+                await dc.End();
             }
         });
     }
@@ -476,14 +476,14 @@ public class MyDialog : DialogSet
                 await dc.Prompt(Inputs.Size, "How many people are in your party?", new PromptOptions()
                 {
                     RetryPromptString = "Please specify party size between 6 and 20."
-                }).ConfigureAwait(false);
+                });
             },
             async(dc, args, next) =>
             {
                 var size = (int)args["Value"];
 
-                await dc.Context.SendActivity($"Okay, {size} people!").ConfigureAwait(false);
-                await dc.End().ConfigureAwait(false);
+                await dc.Context.SendActivity($"Okay, {size} people!");
+                await dc.End();
             }
         });
     }
@@ -563,7 +563,7 @@ private static async Task TimeValidator(ITurnContext context, DateTimeResult res
 {
     if (result.Resolution.Count == 0)
     {
-        await context.SendActivity("Sorry, I did not recognize the time that you entered.").ConfigureAwait(false);
+        await context.SendActivity("Sorry, I did not recognize the time that you entered.");
         result.Status = PromptStatus.NotRecognized;
     }
 
@@ -582,7 +582,7 @@ private static async Task TimeValidator(ITurnContext context, DateTimeResult res
     else
     {
         // Otherwise, flag the input as out of range.
-        await context.SendActivity("Please enter a time in the future, such as \"tomorrow at 9am\"").ConfigureAwait(false);
+        await context.SendActivity("Please enter a time in the future, such as \"tomorrow at 9am\"");
         result.Status = PromptStatus.OutOfRange;
     }
 }
@@ -629,5 +629,4 @@ When you prompt for user input, you have several options on how to handle that i
 
 Now that you know how to prompt a user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
 
-> [!div class="nextstepaction"]
-> [Manage conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md)
+

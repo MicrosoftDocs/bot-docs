@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +26,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Reflection.ParameterInfo&gt;</ReturnType>
@@ -50,7 +50,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Type&gt;</ReturnType>
@@ -73,7 +73,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -100,7 +100,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -128,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -139,7 +139,7 @@
       <Parameters>
         <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" RefType="this" />
         <Parameter Name="tag" Type="System.Object" />
-        <Parameter Name="value" Type="T&amp;" RefType="out" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>

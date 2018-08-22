@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SetField = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +26,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -59,7 +59,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -68,7 +68,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="field" Type="T&amp;" RefType="out" />
+        <Parameter Name="field" Type="T" RefType="out" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
       </Parameters>
@@ -90,7 +90,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -103,7 +103,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="field" Type="T&amp;" RefType="out" />
+        <Parameter Name="field" Type="T" RefType="out" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="value" Type="T" />
       </Parameters>
@@ -125,7 +125,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -138,7 +138,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="field" Type="T&amp;" RefType="out" />
+        <Parameter Name="field" Type="T" RefType="out" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
       </Parameters>

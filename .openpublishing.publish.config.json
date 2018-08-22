@@ -1,25 +1,16 @@
 {
-  "need_generate_pdf_url_template": true,
-  "need_generate_intellisense": false,
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
   "docsets_to_publish": [
     {
       "docset_name": "bot-framework",
       "build_source_folder": "articles",
       "build_output_subfolder": "bot-framework",
       "locale": "en-us",
-      "monikers": [        
-      ],
+      "monikers": [],
       "moniker_ranges": [
         ">= azure-bot-service-3.0",
         ">= botbuilder-3.12.2.4",
         ">= skypebotsmedia-1.5.0.1177-alpha",
         ">= botconnector-3.11.1"
-        
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -52,10 +43,6 @@
       "build_source_folder": "dotnet",
       "build_output_subfolder": "bot-framework-dotnet-api",
       "locale": "en-us",
-      "monikers": [
-        "botbuilder-3.11.0",
-        "skypebotsmedia-1.5.0.1177-alpha"
-      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -65,26 +52,32 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "customized_tasks": {
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+        ],
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
           "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
           "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ],
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
-      }
+      },
+      "customized_template_paths": [
+        "_dependentPackages/memberpage.plugins/content"
+      ]
     }
   ],
   "notification_subscribers": [
     "3b0e6dd6.microsoft.com@amer.teams.ms",
     "botframeworkcontentteam@service.microsoft.com"
   ],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/bot-framework-docs",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/bot-docs",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -95,7 +88,8 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
@@ -108,8 +102,18 @@
       "Pdf"
     ]
   },
+  "need_generate_pdf_url_template": true,
+  "targets": {},
+  "need_generate_intellisense": false,
   "template_folder": "_themes",
   "dependent_packages": [
+    {
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest",
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2"
+    },
     {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",
@@ -118,25 +122,11 @@
       "version": "latest"
     },
     {
-      "id": "memberpage.plugins",
-      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
       "path_to_root": "_dependentPackages/memberpage.plugins",
       "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "opbuild.initializecrrtool",
-      "nuget_feed": "https://www.myget.org/F/op/api/v2",
-      "path_to_root": "_dependentPackages/initializecrrtool",
-      "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "Microsoft.OpenPublishing.CommonPlugins",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
-      "path_to_root": "_dependentPackages/CommonPlugins",
-      "target_framework": "net45",
-      "version": "latest-prerelease"
+      "version": "latest",
+      "id": "memberpage.plugins",
+      "nuget_feed": "https://www.myget.org/F/docfx/api/v2"
     }
   ],
   "ECMA2Yaml": {

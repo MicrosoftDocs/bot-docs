@@ -10,9 +10,6 @@ ms.date: 7/2/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Add authentication to your bot via Azure Bot Service
-
-[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
 
 This tutorial uses new bot authentication capabilities in Azure Bot Service, providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, and so on. These updates also take steps towards an improved user experience by eliminating the _magic code verification_ for some clients.
 
@@ -43,7 +40,7 @@ You can extrapolate from the steps in this article to add such features to an ex
 > [!NOTE]
 > The authentication features also work with Node.js with BotBuilder v3. However, this article covers just sample C# code.
 
-For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-links-help).
+For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help).
 
 ## Overview
 
@@ -85,7 +82,7 @@ For information about the differences between the v1 and v2 endpoints, see the [
    1. Set the **Application type** to **Web app / API**.
    1. Set the **Sign-on URL** to `https://token.botframework.com/.auth/web/redirect`.
    1. Click **Create**.
-      - Once it is created, it is displayed in a **Registered app** blade.
+      - Once it is created, it is displayed in a **Registered app** pane.
       - Record the **Application ID** value. You will provide this later as the _Client ID_.
 1. Click **Settings** to configure your application.
 1. Click **Keys** to open the **Keys** panel.
@@ -174,7 +171,7 @@ You can now use this connection name in your bot code to retrieve user tokens.
 
 #### To register an Azure AD v2 application
 
-1. Navigate to your bot's Bot Channels Registration blade on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](http://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -202,7 +199,7 @@ You can now use this connection name in your bot code to retrieve user tokens.
 #### To test your connection
 
 1. Open the connection you just created.
-1. Click **Test Connection** at the top of the **Service Provider Connection Setting** blade.
+1. Click **Test Connection** at the top of the **Service Provider Connection Setting** pane.
 1. The first time, this should open a new browser tab listing the permissions your app is requesting and prompt you to accept.
 1. Click **Accept**.
 1. This should then redirect you to a **Test Connection to `<your-connection-name>' Succeeded** page.

@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type FormCanceledException = class&#xA;    inherit OperationCanceledException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.OperationCanceledException</BaseTypeName>
@@ -26,7 +26,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -48,7 +48,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -68,7 +68,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

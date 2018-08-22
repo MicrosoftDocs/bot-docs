@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type NullWait&lt;'C&gt; = class&#xA;    interface IWait&lt;'C&gt;&#xA;    interface IWait&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -39,7 +39,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;</ReturnType>
@@ -60,7 +60,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -79,14 +79,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#ItemType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemType As Type Implements IWait.ItemType" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.ItemType</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -102,14 +102,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Internals.Fibers.Need Microsoft.Bot.Builder.Internals.Fibers.IWait.Need" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#Need" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Need As Need Implements IWait.Need" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.Need" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWait.Need" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.Need</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.Need</ReturnType>
@@ -125,14 +125,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#NeedType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property NeedType As Type Implements IWait.NeedType" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.NeedType</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -154,7 +154,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -177,14 +177,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Delegate Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1.Microsoft#Bot#Builder#Internals#Fibers#IWait#Rest" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Rest As Delegate Implements IWait.Rest" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWait.Rest</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Delegate</ReturnType>
@@ -206,7 +206,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;&gt;</ReturnType>
@@ -236,7 +236,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

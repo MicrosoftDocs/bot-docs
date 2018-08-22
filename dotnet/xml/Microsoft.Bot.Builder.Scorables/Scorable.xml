@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Scorable = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +26,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
@@ -58,7 +58,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>
@@ -94,7 +94,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -126,7 +126,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;SourceItem,Score&gt;</ReturnType>
@@ -162,7 +162,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;</ReturnType>
@@ -197,13 +197,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Scorables.Scorable/&lt;TryPostAsync&gt;d__0`2))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -238,7 +233,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -248,8 +243,8 @@
         <TypeParameter Name="Score" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="scorables" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;&amp;" RefType="ref" />
-        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&amp;" RefType="out" />
+        <Parameter Name="scorables" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;&gt;" RefType="ref" />
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="Item">To be added.</typeparam>
@@ -272,7 +267,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;</ReturnType>

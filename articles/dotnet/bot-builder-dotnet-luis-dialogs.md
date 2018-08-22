@@ -19,7 +19,9 @@ This article uses the example of a bot for taking notes, to demonstrate how Lang
 
 ## Create a Language Understanding bot with Bot Service
 
-1. In the [Azure portal](https://portal.azure.com), select **Create new resource** in the menu blade and click **See all**.<!-- Start with the steps in [Create a bot with Bot Service](../bot-service-quickstart.md) to start creating a new bot service.  -->
+1. In the [Azure portal](https://portal.azure.com), select **Create new resource** in the menu blade and click **See all**.
+
+<!-- Start with the steps in [Create a bot with Bot Service](../bot-service-quickstart.md) to start creating a new bot service.  -->
 
     ![Create new resource](../media/bot-builder-dotnet-use-luis/bot-service-creation.png)
 

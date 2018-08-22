@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type ConnectorClient = class&#xA;    inherit ServiceClient&lt;ConnectorClient&gt;&#xA;    interface IConnectorClient&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.ConnectorClient&gt;</BaseTypeName>
@@ -64,13 +63,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -95,14 +93,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -133,14 +130,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -168,14 +164,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -206,15 +201,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -248,15 +242,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -290,15 +283,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -332,8 +324,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -341,7 +332,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -378,8 +369,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -387,7 +377,7 @@
         <Parameter Name="microsoftAppPassword" Type="System.String" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -413,8 +403,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IAttachments</ReturnType>
@@ -439,8 +428,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -462,8 +450,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversations</ReturnType>
@@ -485,8 +472,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -508,8 +494,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -531,8 +516,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -555,8 +539,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Lazy&lt;System.Net.Http.HttpClient&gt;</ReturnType>
@@ -575,8 +558,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -598,8 +580,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

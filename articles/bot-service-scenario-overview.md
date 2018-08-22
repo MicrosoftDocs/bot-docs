@@ -10,6 +10,9 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Bot scenarios
+
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+
 This topic explores key scenarios for powerful and successful bots built using Bot Service.
 
 You can download or clone the source code for all the scenarios bot samples from [Samples for Common Bot Framework Scenarios](https://aka.ms/bot/scenarios).

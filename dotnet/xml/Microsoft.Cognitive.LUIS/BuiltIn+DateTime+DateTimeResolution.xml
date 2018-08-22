@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuiltIn.DateTime.DateTimeResolution&#xA;Inherits Resolution&#xA;Implements IEquatable(Of BuiltIn.DateTime.DateTimeResolution)" />
   <TypeSignature Language="F#" Value="type BuiltIn.DateTime.DateTimeResolution = class&#xA;    inherit Resolution&#xA;    interface IEquatable&lt;BuiltIn.DateTime.DateTimeResolution&gt;" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Cognitive.LUIS.Resolution</BaseTypeName>
@@ -33,13 +28,8 @@
       <MemberSignature Language="F#" Value="new Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution : DateTime -&gt; Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution" Usage="new Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution dateTime" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dateTime" Type="System.DateTime" />
@@ -58,13 +48,8 @@
       <MemberSignature Language="F#" Value="new Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution : Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn.DateTime.Reference&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;DayOfWeek&gt; * Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DayPart&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution" Usage="new Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution (reference, year, month, day, week, dayOfWeek, dayPart, hour, minute, second)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="reference" Type="System.Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn+DateTime+Reference&gt;" />
@@ -101,13 +86,8 @@
       <MemberSignature Language="F#" Value="member this.Day : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Day" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -126,13 +106,8 @@
       <MemberSignature Language="F#" Value="member this.DayOfWeek : Nullable&lt;DayOfWeek&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DayOfWeek&gt;</ReturnType>
@@ -151,13 +126,8 @@
       <MemberSignature Language="F#" Value="member this.DayPart : Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DayPart&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.DayPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn+DateTime+DayPart&gt;</ReturnType>
@@ -179,13 +149,8 @@
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -208,13 +173,8 @@
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dateTimeResolution.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -237,13 +197,8 @@
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dateTimeResolution.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -263,13 +218,8 @@
       <MemberSignature Language="F#" Value="member this.Hour : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Hour" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -288,13 +238,8 @@
       <MemberSignature Language="F#" Value="member this.Minute : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Minute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -313,13 +258,8 @@
       <MemberSignature Language="F#" Value="member this.Month : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Month" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -338,13 +278,8 @@
       <MemberSignature Language="F#" Value="val mutable Options : System.Text.RegularExpressions.RegexOptions" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Options" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
@@ -363,13 +298,8 @@
       <MemberSignature Language="F#" Value=" staticval mutable Pattern : string" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -387,13 +317,8 @@
       <MemberSignature Language="F#" Value="val mutable PatternDate : string" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.PatternDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -411,13 +336,8 @@
       <MemberSignature Language="F#" Value="val mutable PatternTime : string" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.PatternTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -435,13 +355,8 @@
       <MemberSignature Language="F#" Value="member this.Reference : Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn.DateTime.Reference&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Reference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Cognitive.LUIS.BuiltIn+DateTime+Reference&gt;</ReturnType>
@@ -460,13 +375,8 @@
       <MemberSignature Language="F#" Value=" staticval mutable Regex : System.Text.RegularExpressions.Regex" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Regex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
@@ -484,13 +394,8 @@
       <MemberSignature Language="F#" Value="member this.Second : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Second" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -509,20 +414,15 @@
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.TryParse (text, resolution)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
-        <Parameter Name="resolution" Type="Microsoft.Cognitive.LUIS.BuiltIn+DateTime+DateTimeResolution&amp;" RefType="out" />
+        <Parameter Name="resolution" Type="Microsoft.Cognitive.LUIS.BuiltIn+DateTime+DateTimeResolution" RefType="out" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -540,13 +440,8 @@
       <MemberSignature Language="F#" Value="member this.Week : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Week" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -565,13 +460,8 @@
       <MemberSignature Language="F#" Value="member this.Year : Nullable&lt;int&gt;" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.DateTimeResolution.Year" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>

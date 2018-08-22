@@ -35,7 +35,7 @@ Click the drop-down menu and then click the amount of time the graphs should dis
 Note that changing the overall time frame will cause the time increment (X-axis) on the graphs to change accordingly.
 
 ### Grand totals
-The total number of active users and messages sent and received during the specified time frame.
+The total number of active users and activities sent and received during the specified time frame.
 Dashes `--` indicate no activity.
 
 ### Retention
@@ -55,14 +55,14 @@ The Users graph tracks how many users accessed the bot using each channel during
 * The line graph indicates how many users were accessing the bot at a certain time.
 * The legend for the line graph indicates which color represents which channel and the includes the total number of users during the specified time period.
 
-### Messages
-The Message graph tracks how many messages were sent and received using which channel during the specified time frame.
+### Activities
+The Activities graph tracks how many activities were sent and received using which channel during the specified time frame.
 
-![Messages graph](~/media/analytics-messages.png)
+![activities graph](~/media/analytics-activities.png)
 
-* The percentage chart shows what percentage of messages were communicated over each channel.
-* The line graph indicates how many messages were sent and received over the specified time frame.
-* The legend for the line graph indicates which line color represents each channel and the total number of messages sent and received on that channel during the specified time period. 
+* The percentage chart shows what percentage of activities were communicated over each channel.
+* The line graph indicates how many activities were sent and received over the specified time frame.
+* The legend for the line graph indicates which line color represents each channel and the total number of activities sent and received on that channel during the specified time period. 
 
 ## Enable analytics
 Analytics are not available until Application Insights has been enabled and configured. Application Insights will begin collecting data as soon as it is enabled. For example, if Application Insights was enabled a week ago for a six-month-old bot, it will have collected one week of data.

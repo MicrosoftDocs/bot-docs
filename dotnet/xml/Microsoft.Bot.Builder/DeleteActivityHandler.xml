@@ -6,15 +6,13 @@
   <TypeSignature Language="F#" Value="type DeleteActivityHandler = delegate of ITurnContext * ConversationReference * Func&lt;Task&gt; -&gt; Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="context" Type="Microsoft.Bot.Builder.IBotContext" />
+    <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
     <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
     <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
   </Parameters>

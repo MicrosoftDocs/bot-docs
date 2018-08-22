@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Frame&lt;'C&gt; = class&#xA;    interface IFrame&lt;'C&gt;&#xA;    interface IWaiter&lt;'C&gt;&#xA;    interface IFrameLoop&lt;'C&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -39,7 +39,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -58,13 +58,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Frame`1/&lt;Microsoft-Bot-Builder-Internals-Fibers-IFrameLoop&lt;C&gt;-PollAsync&gt;d__9))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -87,14 +82,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Mark" />
       <MemberSignature Language="VB.NET" Value=" Property Mark As IWait(Of C) Implements IWaiter(Of C).Mark" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Frame&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Mark</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;</ReturnType>
@@ -110,14 +105,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Wait" />
       <MemberSignature Language="VB.NET" Value=" Property Wait As IWait(Of C) Implements IWaiter(Of C).Wait" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.Frame&lt;'C&gt;.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Wait</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;</ReturnType>
@@ -137,7 +132,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

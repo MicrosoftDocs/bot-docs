@@ -1,5 +1,5 @@
 ---
-title: Create modular bot logic using dialog container | Microsoft Docs
+title: Create an integrated set of dialogs | Microsoft Docs
 description: Learn how to modularize your bot logic using dialog container in the Bot Builder SDK for Node.js and C#.
 keywords: composite control, modular bot logic
 author: v-ducvo
@@ -11,7 +11,7 @@ ms.date: 4/27/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create modular bot logic with a dialog container
+# Create an integrated set of dialogs
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
@@ -99,7 +99,7 @@ First, we start with a simple check-in dialog that will ask the user for their n
 1. Ask for the room they'd like to stay in.
 1. Send a confirmation message and complete the dialog.
 
-For more information about dialogs and waterfalls, see [Use dialogs to manage conversation flow](bot-builder-dialog-manage-conversation-flow.md).
+For more information about dialogs and waterfalls, see [Use dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 # [C#](#tab/csharp)
 

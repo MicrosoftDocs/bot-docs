@@ -1,5 +1,5 @@
 ---
-title: Handle user interrupt | Microsoft Docs
+title: Handle user interruptions | Microsoft Docs
 description: Learn how to handle user interrupt and direct conversation flow.
 keywords: interrupt, interruptions, switching topic, break
 author: v-ducvo
@@ -12,7 +12,7 @@ ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Handle user interrupt
+# Handle user interruptions
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
@@ -25,18 +25,20 @@ There is no right answer to these questions as each situation is unique to the s
 A procedural conversation flow has a core set of steps that you want to lead the user through, and any user actions that vary from those steps are potential interruptions. In a normal flow, there are interruptions that you can anticipate.
 
 **Table reservation**
-In a table reservation bot, the core steps may be to ask the user for a date and time, the size of the party, and the reservation name. In that process, some expected interruptions you could anticipate may include: 
- * `cancel`: To exit the process.
- * `help`: To provide additional guidance about this process.
- * `more info`: To give hints and suggestions or provide alternative ways of reserving a table (e.g.: an email address or phone number to contact).
- * `show list of available tables`: If that is an option; show a list of tables available for the date and time the user wanted.
+In a table reservation bot, the core steps may be to ask the user for a date and time, the size of the party, and the reservation name. In that process, some expected interruptions you could anticipate may include:
+
+* `cancel`: To exit the process.
+* `help`: To provide additional guidance about this process.
+* `more info`: To give hints and suggestions or provide alternative ways of reserving a table (e.g.: an email address or phone number to contact).
+* `show list of available tables`: If that is an option; show a list of tables available for the date and time the user wanted.
 
 **Order dinner**
-In an order dinner bot, the core steps would be to provide a list of menu items and allow the user to add items to their cart. In this process, some expected interruptions you could anticipate may include: 
- * `cancel`: To exit the ordering process.
- * `more info`: To provide dietary detail about each menu item.
- * `help`: To provide help on how to use the system.
- * `process order`: To process the order.
+In an order dinner bot, the core steps would be to provide a list of menu items and allow the user to add items to their cart. In this process, some expected interruptions you could anticipate may include:
+
+* `cancel`: To exit the ordering process.
+* `more info`: To provide dietary detail about each menu item.
+* `help`: To provide help on how to use the system.
+* `process order`: To process the order.
 
 You could provide these to the user as a list of **suggested actions** or as a hint so the user is at least aware of what commands they can send that the bot would understand.
 
@@ -68,7 +70,7 @@ public class dinnerMenu
 
 ```javascript
 var dinnerMenu = {
-    choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50", 
+    choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50",
             "more info", "Process order", "Cancel"],
     "Potato Salad - $5.99": {
         Description: "Potato Salad",
@@ -137,13 +139,13 @@ dialogs.Add("orderPrompt", new WaterfallStep[]
 
         if(response == "process order")
         {
-            try 
+            try
             {
                 var order = convo["order"];
 
                 await dc.Context.SendActivity("Order is on it's way!");
-                
-                // In production, you may want to store something more helpful, 
+
+                // In production, you may want to store something more helpful,
                 // such as send order off to be made
                 (order as Orders).processOrder = true;
 
@@ -188,13 +190,13 @@ dialogs.Add("orderPrompt", new WaterfallStep[]
         }
         else
         {
-            // Unlikely to get past the prompt verification, but this will catch 
+            // Unlikely to get past the prompt verification, but this will catch
             // anything that isn't a valid menu choice
             if(!dinnerMenu.dinnerChoices.ContainsKey(response))
             {
                 await dc.Context.SendActivity("Sorry, that is not a valid item. " +
                     "Please pick one from the menu.");
-    
+
                 // Ask again
                 await dc.Replace("orderPrompt");
             }
@@ -264,14 +266,14 @@ dialogs.add('orderPrompt', [
                 + "Tuna Sandwich: contains 700 calaries per serving. <br/>" 
                 + "Clam Chowder: contains 650 calaries per serving."
             await dc.context.sendActivity(msg);
-            
+
             // Ask again
             await dc.replace('orderPrompt');
         }
         else if(choice.value.match(/help/ig)){
             var msg = `Help: <br/>To make an order, add as many items to your cart as you like then choose the "Process order" option to check out.`
             await dc.context.sendActivity(msg);
-            
+
             // Ask again
             await dc.replace('orderPrompt');
         }
@@ -281,7 +283,7 @@ dialogs.add('orderPrompt', [
             // Only proceed if user chooses an item from the menu
             if(!choice){
                 await dc.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
-                
+
                 // Ask again
                 await dc.replace('orderPrompt');
             }
@@ -308,17 +310,20 @@ There are interruptions that are out of scope of what your bot is designed to do
 While you cannot anticipate all interruptions, there are patterns of interruptions that you can program your bot to handle.
 
 ### Switching topic of conversations
+
 What if the user is in the middle of one conversation and wants to switch to another conversation? For example, your bot can reserve a table and order dinner.
-While the user is in the _reserve a table_ flow, instead of answering the question for "How many people are in your party?", the user sends the message "order dinner". In this case, the user changed their mind and wants to engage in a dinner ordering conversation instead. How should you handle this interruption? 
+While the user is in the _reserve a table_ flow, instead of answering the question for "How many people are in your party?", the user sends the message "order dinner". In this case, the user changed their mind and wants to engage in a dinner ordering conversation instead. How should you handle this interruption?
 
 You can switch topics to the order dinner flow or you can make it a sticky issue by telling the user that you are expecting a number and reprompt them. If you do allow them to switch topics, you then have to decide if you will save the progress so that the user can pick up from where they left off or you could delete all the information you have collected so that they will have to start that process all over next time they want to reserve a table. For more information about managing user state data, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
 
 ### Apply artificial intelligence
-For interruptions that are not in scope, you can try to guess what the user intent is. You can do this using AI services such as QnAMaker, LUIS, or your custom logic, then offer up suggestions for what the bot thinks the user wants. 
 
-For example, while in the middle of the reserve table flow, the user says, "I want to order a burger". This is not something the bot knows how to handle from this conversation flow. Since the current flow has nothing to do with ordering, and the bot's other conversation command is "order dinner", the bot does not know what to do with this input. If you apply LUIS, for example, you could train the model to recognize that they want to order food (e.g.: LUIS can return an "orderFood" intent). Thus, the bot could response with, "It seems you want to order food. Would you like to switch to our order dinner process instead?" For more information on training LUIS and detecting user intents, see [User LUIS for language understanding](bot-builder-howto-v4-luis.md).
+For interruptions that are not in scope, you can try to guess what the user intent is. You can do this using AI services such as QnAMaker, LUIS, or your custom logic, then offer up suggestions for what the bot thinks the user wants.
+
+For example, while in the middle of the reserve table flow, the user says, "I want to order a burger". This is not something the bot knows how to handle from this conversation flow. Since the current flow has nothing to do with ordering, and the bot's other conversation command is "order dinner", the bot does not know what to do with this input. If you apply LUIS, for example, you could train the model to recognize that they want to order food (e.g.: LUIS can return an "orderFood" intent). Thus, the bot could respond with, "It seems you want to order food. Would you like to switch to our order dinner process instead?" For more information on training LUIS and detecting user intents, see [Use LUIS for language understanding](bot-builder-howto-v4-luis.md).
 
 ### Default response
+
 If all else fails, you can send a generic default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
 You can check against the context **responded** flag at the end of the bot logic to see if the bot sent anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
@@ -344,4 +349,3 @@ if (!context.responded) {
 ```
 
 ---
-

@@ -26,7 +26,6 @@ The following activity types are supported by the Bot Builder SDK for .NET.
 | [conversationUpdate](#conversationupdate) | IConversationUpdateActivity | Indicates that the bot was added to a conversation, other members were added to or removed from the conversation, or conversation metadata has changed. |
 | [contactRelationUpdate](#contactrelationupdate) | IContactRelationUpdateActivity | Indicates that the bot was added or removed from a user's contact list. |
 | [typing](#typing) | ITypingActivity | Indicates that the user or bot on the other end of the conversation is compiling a response. | 
-| [ping](#ping) | n/a | Represents an attempt to determine whether a bot's endpoint is accessible. | 
 | [deleteUserData](#deleteuserdata) | n/a | Indicates to a bot that a user has requested that the bot delete any user data it may have stored. |
 | [endOfConversation](#endofconversation) | IEndOfConversationActivity | Indicates the end of a conversation. |
 | [event](#event) | IEventActivity | Represents a communication sent to a bot that is not visible to the user. |
@@ -65,10 +64,6 @@ A bot receives a **contactRelationUpdate** activity whenever it is added to or r
 
 A bot receives a **typing** activity to indicate that the user is typing a response. 
 A bot may send a **typing** activity to indicate to the user that it is working to fulfill a request or compile a response. 
-
-## ping
-
-A bot receives a **ping** activity to determine whether its endpoint is accessible. The bot should respond with HTTP status code 200 (OK), 403 (Forbidden), or 401 (Unauthorized).
 
 ## deleteUserData
 

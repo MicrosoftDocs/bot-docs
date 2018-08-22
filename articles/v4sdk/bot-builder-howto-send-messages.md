@@ -1,5 +1,5 @@
 ---
-title: Sending messages with the Bot Builder SDK | Microsoft Docs
+title: Send messages | Microsoft Docs
 description: Learn about how to send messages within the Bot Builder SDK.
 keywords: sending messages, message activities, simple text message, speech, spoken message  
 author: ivorb
@@ -11,7 +11,7 @@ ms.date: 04/04/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Sending messages
+# Send messages
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

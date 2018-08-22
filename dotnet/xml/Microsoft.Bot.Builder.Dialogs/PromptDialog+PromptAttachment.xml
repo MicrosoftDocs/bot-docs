@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PromptDialog.PromptAttachment = class&#xA;    inherit Prompt&lt;seq&lt;Attachment&gt;, Attachment&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Attachment&gt;,Microsoft.Bot.Connector.Attachment&gt;</BaseTypeName>
@@ -30,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -56,7 +56,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -76,14 +76,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
-        <Parameter Name="result" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Attachment&gt;&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Attachment&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">To be added.</param>

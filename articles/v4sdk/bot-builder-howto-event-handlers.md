@@ -1,5 +1,5 @@
 ---
-title: Event handlers | Microsoft Docs
+title: Using event handlers | Microsoft Docs
 description: Understand how to use event handlers.
 author: ivorb
 ms.author: v-ivorb
@@ -10,7 +10,7 @@ ms.date: 06/14/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Event handlers
+# Using event handlers
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

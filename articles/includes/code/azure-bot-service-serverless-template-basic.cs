@@ -22,7 +22,6 @@ switch (activity.GetActivityType())
     case ActivityTypes.ContactRelationUpdate:
     case ActivityTypes.Typing:
     case ActivityTypes.DeleteUserData:
-    case ActivityTypes.Ping:
     default:
         log.Error($"Unknown activity type ignored: {activity.GetActivityType()}");
         break;

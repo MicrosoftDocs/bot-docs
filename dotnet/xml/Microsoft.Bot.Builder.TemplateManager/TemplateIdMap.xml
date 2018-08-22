@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type TemplateIdMap = class&#xA;    inherit Dictionary&lt;string, Func&lt;ITurnContext, obj, obj&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Object,System.Object&gt;&gt;</BaseTypeName>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

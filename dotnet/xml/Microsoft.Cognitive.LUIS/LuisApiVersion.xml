@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Enum LuisApiVersion" />
   <TypeSignature Language="F#" Value="type LuisApiVersion = " />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -31,16 +26,11 @@
       <MemberSignature Language="F#" Value="V1 = 0" Usage="Microsoft.Cognitive.LUIS.LuisApiVersion.V1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>System.Obsolete</AttributeName>
         </Attribute>
       </Attributes>
@@ -60,13 +50,8 @@
       <MemberSignature Language="F#" Value="V2 = 1" Usage="Microsoft.Cognitive.LUIS.LuisApiVersion.V2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Cognitive.LUIS.LuisApiVersion</ReturnType>

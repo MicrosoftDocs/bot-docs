@@ -13,7 +13,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Persist user data
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 When the bot ask users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Builder SDK allows you to store user inputs using *in-memory storage*, *file storage*, or database storage such as *CosmosDB* or *SQL*, where local storage types are mainly used for testing or prototyping and the later storage types are best for production bots.
 

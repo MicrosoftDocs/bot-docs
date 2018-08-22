@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Serialization.JObjectSurrogate = class&#xA;    interface Serialization.ISurrogateProvider&#xA;    interface ISerializationSurrogate" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,7 +33,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="priority" Type="System.Int32" />
@@ -44,17 +44,17 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization+ISurrogateProvider.Handles">
+    <Member MemberName="Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization+ISurrogateProvider.Handles" ExplicitInterfaceMemberName="Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.ISurrogateProvider.Handles">
       <MemberSignature Language="C#" Value="bool Serialization.ISurrogateProvider.Handles (Type type, System.Runtime.Serialization.StreamingContext context, out int priority);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.ISurrogateProvider.Handles(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] int32&amp; priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.JObjectSurrogate.Microsoft#Bot#Builder#Classic#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -62,7 +62,7 @@
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
-        <Parameter Name="priority" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="priority" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -84,7 +84,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -113,7 +113,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

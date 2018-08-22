@@ -6,12 +6,10 @@
   <TypeSignature Language="F#" Value="type Age = class&#xA;    inherit NumberWithUnits" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnit</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="botbuilder-4.0.0-alpha">Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits</BaseTypeName>
+    <BaseTypeName>Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -30,8 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="number" Type="System.Double" />
@@ -53,8 +50,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

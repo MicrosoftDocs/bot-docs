@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type IFrame&lt;'C&gt; = interface&#xA;    interface IWaiter&lt;'C&gt;&#xA;    interface IFrameLoop&lt;'C&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />

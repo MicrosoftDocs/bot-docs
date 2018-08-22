@@ -25,23 +25,38 @@ By specifying an input hint for a message, you can indicate whether your bot is 
 
 To indicate that your bot is passively ready for input but is not awaiting a response from the user, set the message's input hint to `InputHints.AcceptingInput`. On many channels, this will cause the client's input box to be enabled and microphone to be closed, but still accessible to the user. For example, Cortana will open the microphone to accept input from the user if the user holds down the microphone button. The following code example creates a message that indicates the bot is accepting user input.
 
-[!code-csharp[Accepting input](../includes/code/dotnet-input-hints.cs#InputHintAcceptingInput)]
+```cs
+Activity reply = activity.CreateReply("This is the text that will be displayed.");
+reply.Speak = "This is the text that will be spoken.";
+reply.InputHint = InputHints.AcceptingInput;
+await connector.Conversations.ReplyToActivityAsync(reply);
+```
 
 ## Expecting input
 
 To indicate that your bot is awaiting a response from the user, set the message's input hint to `InputHints.ExpectingInput`. On many channels, this will cause the client's input box to be enabled and microphone to be open. The following code example creates a message that indicates the bot is expecting user input.
 
-[!code-csharp[Expecting input](../includes/code/dotnet-input-hints.cs#InputHintExpectingInput)]
+```cs
+Activity reply = activity.CreateReply("This is the text that will be displayed.");
+reply.Speak = "This is the text that will be spoken.";
+reply.InputHint = InputHints.ExpectingInput;
+await connector.Conversations.ReplyToActivityAsync(reply);
+```
 
 ## Ignoring input
- 
+
 To indicate that your bot is not ready to receive input from the user, set the message's input hint to `InputHints.IgnorningInput`. On many channels, this will cause the client's input box to be disabled and microphone to be closed. The following code example creates a message that indicates the bot is ignoring user input.
 
-[!code-csharp[Ignoring input](../includes/code/dotnet-input-hints.cs#InputHintIgnoringInput)]
+```cs
+Activity reply = activity.CreateReply("This is the text that will be displayed.");
+reply.Speak = "This is the text that will be spoken.";
+reply.InputHint = InputHints.IgnoringInput;
+await connector.Conversations.ReplyToActivityAsync(reply);
+```
 
 ## Default values for input hint
 
-If you do not set the input hint for a message, the Bot Builder SDK will automatically set it for you by using this logic: 
+If you do not set the input hint for a message, the Bot Builder SDK will automatically set it for you by using this logic:
 
 - If your bot sends a prompt, the input hint for the message will specify that your bot is **expecting input**.</li>
 - If your bot sends single message, the input hint for the message will specify that your bot is **accepting input**.</li>

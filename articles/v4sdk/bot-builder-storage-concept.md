@@ -1,5 +1,5 @@
 ---
-title: Save state and access data | Microsoft Docs
+title: State and storage | Microsoft Docs
 description: Describes what the state manager, conversation state and user state is within the Bot Builder SDK.
 keywords: LUIS, conversation state, user state, storage, manage state
 author: DeniseMak
@@ -11,14 +11,14 @@ ms.date: 02/15/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Save state and access data
+# State and storage
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 A key to good bot design is to track the context of a conversation, so that your bot remembers things like the answers to previous questions.
 Depending on what your bot is used for, you may even need to keep track of state or store information for longer than the lifetime of the conversation.
 A bot's *state* is information it remembers in order to respond appropriately to incoming messages. The Bot Builder SDK provides classes for storing and retrieving state data as an object associated with a user or a conversation.
 
-* **Conversation properties** help your bot keep track of the current conversation the bot is having with the user. If your bot needs to complete a sequence of steps or switch between conversation topics, you can use conversation properties to manage steps in a sequence or track the current topic. Since conversation properties reflect the state of the current conversation, you typically clear them at the end of a session, when the bot receives an _end of conversation_ activity.
+* **Conversation properties** help your bot keep track of the current conversation the bot is having with the user. If your bot needs to complete a sequence of steps or switch between conversation topics, you can use conversation properties to manage steps in a sequence or track the current topic. Since conversation properties reflect the state of the current conversation, you typically clear them at the end of a conversation, when the bot receives an _end of conversation_ activity.
 * **User properties** can be used for many purposes, such as determining where the user's prior conversation left off or simply greeting a returning user by name. If you store a user's preferences, you can use that information to customize the conversation the next time you chat. For example, you might alert the user to a news article about a topic that interests her, or alert a user when an appointment becomes available. You should clear them if the bot receives a _delete user data_ activity.
 
 You can use [Storage](bot-builder-howto-v4-storage.md) to read from and write to persistent storage. This enables your bot to do things such as update shared resources, record RSVPs or votes, or read historical weather data. In the same way an app uses storage to achieve its objectives, your bot can do so within the conversation with your user.

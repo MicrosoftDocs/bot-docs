@@ -12,6 +12,8 @@ ms.date: 04/13/2018
 
 ::: moniker range="azure-bot-service-3.0"
 
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+
 # Create a bot with Bot Service
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]

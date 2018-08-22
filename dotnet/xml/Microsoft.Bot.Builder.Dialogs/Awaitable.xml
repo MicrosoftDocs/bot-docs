@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Awaitable = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +25,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +42,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;</ReturnType>
@@ -58,6 +58,40 @@
         <param name="item">The item that will be wrapped.</param>
         <summary>
             Wraps item in a <see cref="T:Microsoft.Bot.Builder.Dialogs.IAwaitable`1" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromSource&lt;TSource,TItem&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;TItem&gt; FromSource&lt;TSource,TItem&gt; (TSource source, Func&lt;TSource,System.Threading.Tasks.Task&lt;TItem&gt;&gt; resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!TItem&gt; FromSource&lt;TSource, TItem&gt;(!!TSource source, class System.Func`2&lt;!!TSource, class System.Threading.Tasks.Task`1&lt;!!TItem&gt;&gt; resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Awaitable.FromSource``2(``0,System.Func{``0,System.Threading.Tasks.Task{``1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromSource(Of TSource, TItem) (source As TSource, resolver As Func(Of TSource, Task(Of TItem))) As IAwaitable(Of TItem)" />
+      <MemberSignature Language="F#" Value="static member FromSource : 'Source * Func&lt;'Source, System.Threading.Tasks.Task&lt;'Item&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;'Item&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Awaitable.FromSource (source, resolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;TItem&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TItem" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="TSource" />
+        <Parameter Name="resolver" Type="System.Func&lt;TSource,System.Threading.Tasks.Task&lt;TItem&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource"> The type of the source for build the item.</typeparam>
+        <typeparam name="TItem">The type if the item.</typeparam>
+        <param name="source">The source item that will be wrapped.</param>
+        <param name="resolver">The resolution function from source to item.</param>
+        <summary>
+            Wraps source to build item as a <see cref="T:Microsoft.Bot.Builder.Dialogs.IAwaitable`1" />.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

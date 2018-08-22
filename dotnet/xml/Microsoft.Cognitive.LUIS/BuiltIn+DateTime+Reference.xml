@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Enum BuiltIn.DateTime.Reference" />
   <TypeSignature Language="F#" Value="type BuiltIn.DateTime.Reference = " />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -29,16 +24,11 @@
       <MemberSignature Language="F#" Value="FUTURE_REF = 2" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.Reference.FUTURE_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>System.ComponentModel.Description("future")</AttributeName>
         </Attribute>
       </Attributes>
@@ -58,16 +48,11 @@
       <MemberSignature Language="F#" Value="PAST_REF = 0" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.Reference.PAST_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>System.ComponentModel.Description("past")</AttributeName>
         </Attribute>
       </Attributes>
@@ -87,16 +72,11 @@
       <MemberSignature Language="F#" Value="PRESENT_REF = 1" Usage="Microsoft.Cognitive.LUIS.BuiltIn.DateTime.Reference.PRESENT_REF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
           <AttributeName>System.ComponentModel.Description("present")</AttributeName>
         </Attribute>
       </Attributes>

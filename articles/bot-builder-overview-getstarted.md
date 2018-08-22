@@ -11,7 +11,7 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 # Develop bots with Bot Builder
 
-[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 
 The Bot Builder provides an SDK, libraries, samples, and tools to help you build and debug bots. When you build a bot with Bot Service, your bot is backed by the Bot Builder SDK. You can also use the Bot Builder SDK to create a bot from scratch using C# or Node.js. Bot Builder includes the Bot Framework Emulator for testing your bots and the Channel Inspector for previewing your bot's user experience on different channels.
 
@@ -51,7 +51,7 @@ The Bot Builder SDK for Node.js provides a familiar way for Node.js developers t
 The [Node.js Quickstart](~/nodejs/bot-builder-nodejs-quickstart.md) will guide you through creating a bot with the Bot Builder SDK for Node.js. 
 
 The Bot Builder SDK for Node.js is available as an npm package. 
-To install the Bot Builder for Node.js SDK and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
+To install the Bot Builder SDK for Node.js and its dependencies, first create a folder for your bot, navigate to it, and run the following **npm** command:
 
 ```nodejs
 npm init

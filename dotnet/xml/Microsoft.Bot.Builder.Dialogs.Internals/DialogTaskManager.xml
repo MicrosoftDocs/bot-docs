@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DialogTaskManager = class&#xA;    interface IDialogTaskManager&#xA;    interface IDialogTasks" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.12.2.4</AssemblyVersion>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobKeyPrefix" Type="System.String" />
@@ -62,13 +62,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager/&lt;Microsoft-Bot-Builder-Dialogs-Internals-IDialogTaskManager-FlushDialogTasks&gt;d__8))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -93,13 +88,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager/&lt;Microsoft-Bot-Builder-Dialogs-Internals-IDialogTaskManager-LoadDialogTasks&gt;d__7))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -124,7 +114,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask</ReturnType>
@@ -141,14 +131,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft#Bot#Builder#Dialogs#Internals#IDialogTasks#DialogTasks" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DialogTasks As IReadOnlyList(Of IDialogTask) Implements IDialogTasks.DialogTasks" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager.Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
+      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks.DialogTasks</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.12.2.4</AssemblyVersion>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask&gt;</ReturnType>

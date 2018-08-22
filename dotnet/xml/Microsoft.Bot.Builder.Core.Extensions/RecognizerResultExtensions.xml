@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type RecognizerResultExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,13 +26,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.String,System.Double&gt;</ReturnType>
         <Attributes>
-          <Attribute>
+          <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
             <AttributeName>System.Runtime.CompilerServices.TupleElementNames(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
           </Attribute>
         </Attributes>

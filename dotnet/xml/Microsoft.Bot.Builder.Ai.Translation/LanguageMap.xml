@@ -5,13 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class LanguageMap" />
   <TypeSignature Language="F#" Value="type LanguageMap = class" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-    <AssemblyVersion>4.0.0.11</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-    <AssemblyVersion>4.0.0.43</AssemblyVersion>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,13 +24,8 @@
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,13 +41,8 @@
       <MemberSignature Language="F#" Value="member this.CodesToNames : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="Microsoft.Bot.Builder.Ai.Translation.LanguageMap.CodesToNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -76,13 +61,8 @@
       <MemberSignature Language="F#" Value="member this.GetCodeForInput : seq&lt;string&gt; -&gt; string" Usage="languageMap.GetCodeForInput values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -105,13 +85,8 @@
       <MemberSignature Language="F#" Value="member this.GetCodeOrFallback : string -&gt; string" Usage="languageMap.GetCodeOrFallback code" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -134,13 +109,8 @@
       <MemberSignature Language="F#" Value=" staticval mutable Global : Microsoft.Bot.Builder.Ai.Translation.LanguageMap" Usage="Microsoft.Bot.Builder.Ai.Translation.LanguageMap.Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Ai.Translation.LanguageMap</ReturnType>
@@ -158,13 +128,8 @@
       <MemberSignature Language="F#" Value=" staticval mutable Names : string[]" Usage="Microsoft.Bot.Builder.Ai.Translation.LanguageMap.Names" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -184,13 +149,8 @@
       <MemberSignature Language="F#" Value="member this.NamesToCodes : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="Microsoft.Bot.Builder.Ai.Translation.LanguageMap.NamesToCodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -209,13 +169,8 @@
       <MemberSignature Language="F#" Value="member this.NamesToNames : System.Collections.Generic.Dictionary&lt;string, string[]&gt;" Usage="Microsoft.Bot.Builder.Ai.Translation.LanguageMap.NamesToNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai</AssemblyName>
-        <AssemblyVersion>4.0.0.11</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.Translation</AssemblyName>
-        <AssemblyVersion>4.0.0.43</AssemblyVersion>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String[]&gt;</ReturnType>

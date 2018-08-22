@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Binding&lt;'R&gt; = class&#xA;    inherit Binding&#xA;    interface IBinding&lt;'R&gt;&#xA;    interface IBinding&#xA;    interface IEquatable&lt;Binding&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-    <AssemblyVersion>4.0.0.44</AssemblyVersion>
+    <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="R" />
@@ -37,7 +37,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
@@ -63,13 +63,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
-        <AssemblyVersion>4.0.0.44</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Bot.Builder.Classic.Scorables.Internals.Binding`1/&lt;Microsoft-Bot-Builder-Classic-Scorables-Internals-IBinding&lt;R&gt;-InvokeAsync&gt;d__1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;R&gt;</ReturnType>
       </ReturnValue>
