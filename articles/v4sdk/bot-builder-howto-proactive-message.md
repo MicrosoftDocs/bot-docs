@@ -115,7 +115,7 @@ In response, our bot will take the following steps within that turn:
 
 The job we're starting is a simple 5 second timer that then completes by sending the proactive message.
 - The call to the adapter's continue conversation method creates a new turn initiated by the bot.
-- This turn has its own turn context from which we retrieve the state information.
+- This turn has its own [turn context](bot-builder-concept-activity-processing.md#turn-context) from which we retrieve the state information.
 - We use this context to send the proactive message to the user.
 
 

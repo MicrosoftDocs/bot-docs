@@ -49,7 +49,7 @@ The simplest kind of single-turn bot doesn't need to keep track of conversation 
 
 ![Single-turn weather bot](./media/concept-conversation/weather-single-turn.png)
 
-A weather bot has a single-turn flow, it just gives the user a weather report, without going back and forth asking for the city or the date. All the logic for displaying the weather report is based on the message the bot just received. In each turn of a conversation, the bot receives a turn context, which your bot can use to determine what to do next and how the conversation flows. 
+A weather bot has a single-turn flow, it just gives the user a weather report, without going back and forth asking for the city or the date. All the logic for displaying the weather report is based on the message the bot just received. In each turn of a conversation, the bot receives a [turn context](bot-builder-concept-activity-processing.md#turn-context), which your bot can use to determine what to do next and how the conversation flows. 
 
 ## Multiple turns
 
@@ -81,7 +81,7 @@ You might design your bot to handle more than one type of task. For example, you
 
 ### Recognize intent
 
-The Bot Builder SDK supplies _recognizers_ that process each incoming message to determine intent, so your bot can initiate the appropriate conversational flow. Before the _receive callback_, recognizers look at the message content from the user to determine intent, and then return the intent to the bot using the turn context object within the receive callback, stored as the **Top Intent** on the turn context object. 
+The Bot Builder SDK supplies _recognizers_ that process each incoming message to determine intent, so your bot can initiate the appropriate conversational flow. Before the _receive callback_, recognizers look at the message content from the user to determine intent, and then return the intent to the bot using the turn context object within the receive callback, stored as the **Top Intent** on the [turn context](bot-builder-concept-activity-processing.md#turn-context) object. 
 
 The recognizer that determines **Top Intent** can simply use regular expressions, Language Understanding (LUIS), or other logic that you develop as middleware. The following could be examples of recognizers:
    
