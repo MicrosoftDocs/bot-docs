@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create Middleware that logs in Cosmos DB
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 While useful middleware is provided with the SDK, there are situations where you will need to implement your own middleware to achieve the desired goal.
 
 In this sample, we'll create a middleware layer connecting to Cosmos DB to log all the received messages, and the replies we sent back. The code you'll see here is available as full source code, provided with our [samples](../dotnet/bot-builder-dotnet-samples.md).

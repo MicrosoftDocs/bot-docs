@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Basic bot structure
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 The Azure Bot Service and Bot Builder SDK provide libraries, samples, and tools to help you build and debug bots. However, before we get into too much detail on any of those, it's important to understand the basic structure of a bot and how everything works together. These concepts apply regardless of which programming language you choose. Links to more in depth content are provided throughout; this article will provide an initial mental framework for how a bot operates.
 

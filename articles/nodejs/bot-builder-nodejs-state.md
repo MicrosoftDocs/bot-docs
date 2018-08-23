@@ -11,6 +11,9 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Manage state data
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-state.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-state.md)

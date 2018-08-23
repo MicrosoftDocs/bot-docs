@@ -11,6 +11,8 @@ ms.date: 2/13/2018
 
 # Create task automation bots
 
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 A task automation bot enables the user to complete a specific task or set of tasks without any assistance from a human. 
 This type of bot often closely resembles a typical app or website, communicating with the user primarily via rich user controls and text. 
 It may have natural language understanding capabilities to enrich conversations with users. 

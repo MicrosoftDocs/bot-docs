@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create your own middleware
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Middleware allows you to write rich plugins for your bots, that can then be used by others as well. Here we'll show how to add and implement basic middleware, and show how it works. The v4 SDK provides some middleware for you, for things such as state management, LUIS, QnAMaker, and translation. Take a look at the bot builder SDK for [.NET](https://github.com/Microsoft/botbuilder-dotnet) or [JavaScript](https://github.com/Microsoft/botbuilder-js) for more information.
 
 ## Adding middleware

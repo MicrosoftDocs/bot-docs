@@ -11,6 +11,9 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Bot Service Compliance
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Azure Bot service is compliant with ISO 27001:2013, ISO 27019:2014, SOC 1 and 2, Payment Card Industry Data Security Standard (PCI DSS), and Health Insurance Portability and Accountability Act Business Associate Agreement (HIPAA BAA)
 
 ## Azure Bot Service is compliant with ISO 27001:2013 and ISO 27018:2014 

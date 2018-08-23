@@ -12,6 +12,8 @@ ms.date: 04/25/2018
 
 # Create bots with Botbuilder Templates
 
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 Templates are now available to create bots in each of the Botbuilder SDK platforms: 
 
 - Node.js

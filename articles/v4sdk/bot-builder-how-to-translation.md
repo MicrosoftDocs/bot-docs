@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Translate from the user's language to make your bot multilingual
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Your bot can use [Microsoft Translator](https://www.microsoft.com/en-us/translator/) to automatically translate messages to the language your bot understands, and optionally translate the bot's replies back to the user's language.
 <!-- 
 - [Get a Text Services key](#get-a-text-services-key)
