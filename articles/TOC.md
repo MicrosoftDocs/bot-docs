@@ -25,7 +25,8 @@
 ## [Python](~/python/bot-builder-python-samples.md)
 ## [Java](~/java/bot-builder-java-samples.md)
 # Concepts
-## [Basic bot structure](v4sdk/bot-builder-basics.md)
+## [Anatomy of an Echo Bot](v4sdk/bot-builder-anatomy.md)
+## [Bot basics](v4sdk/bot-builder-basics.md)
 ## [Channels and the Bot Connector Service](v4sdk/bot-concepts.md) 
 ## [Conversation flow](v4sdk/bot-builder-conversations.md)
 ## [State and storage](v4sdk/bot-builder-storage-concept.md)
