@@ -69,7 +69,7 @@ public class UserInfo
 ```
 
 Within a bot turn, the dialog set's `CreateContext` method establishes dialog state.
-The method takes the turn context and a state object as parameters.
+The method takes the [turn context](bot-builder-concept-activity-processing.md#turn-context) and a state object as parameters.
 
 For dialogs, this state object must implement the `IDictionary<string, object>` interface. Since this bot is only using conversation state to house the dialog state, our conversation state class can be a simple dictionary.
 

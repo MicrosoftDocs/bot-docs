@@ -1,0 +1,16 @@
+log/
+obj/
+_site/
+.optemp/
+_themes.MSDN.Modern/
+_themes.VS.Modern/
+_themes/
+_samples/
+
+.openpublishing.buildcore.ps1
+
+.migrationtemp
+articles/directories.txt
+_themes*/
+
+.openpublishing.buildcore.ps1

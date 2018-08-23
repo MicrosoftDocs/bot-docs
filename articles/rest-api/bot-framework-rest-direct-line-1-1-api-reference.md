@@ -50,7 +50,8 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 | 401 | The client is not authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
 | 403 | The client is not allowed to perform the requested operation. Often this status code occurs because the `Authorization` header specifies an invalid token or secret. |
 | 404 | The requested resource was not found. Typically this status code indicates an invalid request URI. |
-| 500 | Either an internal server error occurred within the Direct Line service or a failure occurred within the bot. If you receive a 500 error when POSTing a message to a bot, it is possible that the error was triggered by a failure in the bot. **This is a common error code.** |
+| 500 | An internal server error occurred within the Direct Line service |
+| 502 | A failure occurred within the bot; the bot is unavailable or returned an error.  **This is a common error code.** |
 
 ## Token operations 
 Use these operations to create or refresh a token that a client can use to access a single conversation.
