@@ -31,7 +31,7 @@ There are plenty of situations that require our bot to do something on every act
 
 ### Modifying or enhancing the turn context
 
-Certain conversations can be much more fruitful if the bot has more information than what is provided in the activity. Middleware in this case could look at the conversation state information it has so far, query an external data source, and append that to the context object before passing execution on to the bot logic.
+Certain conversations can be much more fruitful if the bot has more information than what is provided in the activity. Middleware in this case could look at the conversation state information it has so far, query an external data source, and append that to the [turn context](bot-builder-concept-activity-processing.md#turn-context) object before passing execution on to the bot logic.
 For example, middleware could identify the conversation details, such as the conversation ID and state, and then query a directory service for information. The middleware could add the user object received from that external query to the context object and pass it on, providing more data about the user and allowing the bot to better handle the request.
 
 Middleware may fall into both of the uses above, or into another use completely;

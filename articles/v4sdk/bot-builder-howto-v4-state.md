@@ -26,6 +26,16 @@ In the SDK, you need to initialize the bot adapter to use state manager middlewa
 # [C#](#tab/csharp)
 To see how `ConversationState` is initialized, see `Startup.cs` in the Microsoft.Bot.Samples.EchoBot-AspNetCore sample.
 
+The libraries required for this code:
+
+```csharp
+using Microsoft.Bot.Builder.BotFramework;
+using Microsoft.Bot.Builder.Core.Extensions;
+using Microsoft.Bot.Builder.Integration.AspNet.Core;
+```
+
+Initializing `ConversationState`:
+
 ```csharp
 services.AddBot<EchoBot>(options =>
 {

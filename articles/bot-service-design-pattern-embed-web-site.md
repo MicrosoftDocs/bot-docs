@@ -25,7 +25,7 @@ the Skype web control and an open source web control.
 
 ## Skype web control
 
-The Skype web control is essentially a Skype client in a web-enabled control. Built-in Skype authentication enables the bot to authenticate and recogize users, without requiring the 
+The Skype web control is essentially a Skype client in a web-enabled control. Built-in Skype authentication enables the bot to authenticate and recognize users, without requiring the 
 developer to write any custom code. Skype will automatically recognize Microsoft Accounts used in its web client. 
 
 Because the Skype web control simply acts as a front-end for Skype, 
@@ -61,7 +61,7 @@ The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
-- [TODO](~/dotnet/bot-builder-dotnet-activities.md)
+- [Open source web chat control](https://github.com/Microsoft/BotFramework-WebChat)
 - [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 
 [directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle

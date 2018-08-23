@@ -28,7 +28,7 @@ The interaction between users and bots is often free-form, and bots need to unde
 
 ## Recognize intent
 
-[LUIS](https://www.luis.ai) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
+[LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
 
 For example, consider the many ways a user of a travel bot can ask to book a flight.
 
@@ -54,8 +54,7 @@ See [Extract typed LUIS results][luis-v4-typed-entities] for an example that use
 <!-- TODO: Link to Bot Framework design guidance about LUIS apps, when this is ready -->
 
 ## How your bot gets messages from LUIS
-
-Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware](bot-builder-concept-middleware.md)) to automatically process the responses from LUIS and pass them to your bot. You can use the _turn context_ in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response.
+Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware](bot-builder-concept-middleware.md)) to automatically process the responses from LUIS and pass them to your bot. You can use the [turn context](bot-builder-concept-activity-processing.md#turn-context) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response. 
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
