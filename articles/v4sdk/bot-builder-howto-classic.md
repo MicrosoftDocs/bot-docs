@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How to run .NET SDK V3 bots in SDK 4.0
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 The **Microsoft.Bot.Builder.Classic** NuGet package eases migration of your bots from version 3.x to version 4.0 of the Microsoft Bot Framework.
 
 **NOTE:** This process only works for **ASP.NET Web Application (.NET Framework)** bots. This does not work on **ASP.NET Core Web Application** bots.

@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Recognize user intent from message content
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 When your bot receives a message from a user, your bot can use a **recognizer** to examine the message and determine intent. The intent provides a mapping from messages to dialogs to invoke. This article explains how to recognize intent using regular expressions or by inspecting the content of a message. For example, a bot can use regular expressions to check if a message contains the word "help" and invoke a help dialog. A bot can also check the properties of the user message, for example, to see if the user sent an image instead of text and invoke an image processing dialog. 
 
 > [!NOTE]

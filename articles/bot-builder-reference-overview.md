@@ -10,6 +10,9 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Bot Framework reference
+
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 The Bot Framework includes comprehensive reference documentation for the Bot Builder SDK for .NET, the Bot Builder SDK for Node.js, and the Bot Framework REST APIs.
 
 ## Bot Builder SDK for .NET

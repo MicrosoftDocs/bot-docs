@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Build a real-time media bot for Skype
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 The Real-Time Media Platform for Bots is an advanced capability which allows the bot to send and receive voice and video content frame by frame. The bot has "raw" access to the voice, video and screen-sharing real-time modalities. This article provides an overview of building an audio/video calling bot and accessing the real-time modalities.
 
 In this article, the bot is running in an Azure Cloud Service, as either a Web Role or a Worker Role self-hosting the ASP.NET Web API framework.

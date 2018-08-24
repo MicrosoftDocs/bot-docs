@@ -11,6 +11,9 @@ monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Deploy a real-time media bot from Visual Studio to Azure
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 Real-time media bots can be hosted in either an "IaaS" Azure Virtual Machine or a "classic" Azure Cloud Service. This article shows how to deploy a bot, hosted in an Azure Cloud Service Worker Role, from Visual Studio using its built-in publish capability.
 
 ## Prerequisites

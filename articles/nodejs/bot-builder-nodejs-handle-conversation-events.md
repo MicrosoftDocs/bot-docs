@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Handle user and conversation events
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 This article demonstrates how your bot can handle events such as a user joining a conversation, adding a bot to a contacts list, or saying **Goodbye** when a bot is being removed from a conversation.
 
 

@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Define conversation steps with waterfalls
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 A conversation is a series of messages exchanged between user and bot. When the bot's objective is to lead the user through a series of steps, you can use a waterfall to define the steps of the conversation.
 
 A waterfall is a specific implementation of a [dialog](bot-builder-nodejs-dialog-overview.md) that is most commonly used to collect information from the user or guide the user through a series of tasks. The tasks are implemented as an array of functions where the results of the first function are passed as input into the next function, and so on. Each function typically represents one step in the overall process. At each step, the bot prompts the user for input, waits for a response, and then passes the result to the next step.

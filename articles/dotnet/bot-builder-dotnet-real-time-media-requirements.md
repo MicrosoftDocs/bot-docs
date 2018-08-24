@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Requirements and considerations for real-time media bots
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 Not all guidance that applies to developing messaging and IVR calling bots applies equally to building real-time media bots. This article describes some of the important requirements and considerations for developing real-time media bots. 
 
 > [!NOTE]

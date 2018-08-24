@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Conduct audio calls with Skype
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 [!INCLUDE [Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 

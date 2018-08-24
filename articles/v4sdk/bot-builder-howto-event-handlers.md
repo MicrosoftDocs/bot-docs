@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Using event handlers
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Event handlers are functions we can add to future activity events within a [turn](bot-builder-basics.md#defining-a-turn). Those activities are `SendActivity`, `UpdateActivity`, and `DeleteActivity`, and each has it's own handler. These handlers are useful when you need to do something on every future activity of that type for the current context object.
 
 You can add multiple event handlers to each activity event, and they will process for every event **after** they are added, so where in the code you add them matters.

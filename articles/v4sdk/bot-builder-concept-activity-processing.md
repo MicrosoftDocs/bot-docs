@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Activity processing
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 The bot and user exchange information via activities. Each activity received by your bot application is passed to a bot adapter, which passes activity information to your bot logic and ultimately sends any responses to the user.
 
