@@ -25,14 +25,6 @@ Be sure the necessary libraries are included for input hints.
 using Microsoft.Bot.Schema;
 ```
 
-<!--TODO: Remove the following remark after the next release of the NuGet packages.-->
-
-The **MessageFactory** class, used in these examples, is defined in the following namespace.
-
-```cs
-using Microsoft.Bot.Builder.Core.Extensions;
-```
-
 # [JavaScript](#tab/js)
 
 ```javascript
@@ -48,11 +40,11 @@ To indicate that your bot is passively ready for input but is not awaiting a res
 # [C#](#tab/cs)
 
 ```csharp
-var reply = MessageFactory.Text(
-    "This is the text that will be displayed.",
-    "This is the text that will be spoken.",
-    InputHints.AcceptingInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(
+    textReplyToSend: "This is the text that will be displayed.",
+    speak: "This is the text that will be spoken.",
+    inputHint: InputHints.AcceptingInput,
+    cancellationToken: token);
 ```
 
 # [JavaScript](#tab/js)
@@ -71,11 +63,11 @@ To indicate that your bot is awaiting a response from the user, set the message'
 # [C#](#tab/cs)
 
 ```csharp
-var reply = MessageFactory.Text(
-    "This is the text that will be displayed.",
-    "This is the text that will be spoken.",
-    InputHints.ExpectingInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(
+    textReplyToSend: "This is the text that will be displayed.",
+    speak: "This is the text that will be spoken.",
+    inputHint: InputHints.ExpectingInput,
+    cancellationToken: token);
 ```
 
 # [JavaScript](#tab/js)
@@ -94,11 +86,11 @@ To indicate that your bot is not ready to receive input from the user, set the m
 # [C#](#tab/cs)
 
 ```csharp
-var reply = MessageFactory.Text(
-    "This is the text that will be displayed.",
-    "This is the text that will be spoken.",
-    InputHints.IgnoringInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(
+    textReplyToSend: "This is the text that will be displayed.",
+    speak: "This is the text that will be spoken.",
+    inputHint: InputHints.IgnoringInput,
+    cancellationToken: token);
 ```
 
 # [JavaScript](#tab/js)

@@ -25,20 +25,17 @@ You can create a list of suggested actions (also known as "quick replies") that 
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and add suggested actions.
-var activity = MessageFactory.SuggestedActions(
-    new CardAction[]
-    {
-        new CardAction(title: "red", type: ActionTypes.ImBack, value: "red"),
-        new CardAction( title: "green", type: ActionTypes.ImBack, value: "green"),
-        new CardAction(title: "blue", type: ActionTypes.ImBack, value: "blue")
-    }, text: "Choose a color");
+IMessageActivity activity = MessageFactory.SuggestedActions(
+    actions: new string[] { "red", "green", "blue" },
+    text: "Choose a color");
 
 // Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await context.SendActivityAsync(activity, token);
 ```
 
 # [JavaScript](#tab/javascript)
