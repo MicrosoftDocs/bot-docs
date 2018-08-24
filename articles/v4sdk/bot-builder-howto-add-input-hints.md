@@ -7,13 +7,13 @@ ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/04/2018
+ms.date: 08/24/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Add input hints to messages
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 
 By specifying an input hint for a message, you can indicate whether your bot is accepting, expecting, or ignoring user input after the message is delivered to the client. For many channels, this enables clients to set the state of user input controls accordingly. For example, if a message's input hint indicates that the bot is ignoring user input, the client may close the microphone and disable the input box to prevent the user from providing input.
 
@@ -23,6 +23,14 @@ Be sure the necessary libraries are included for input hints.
 
 ```cs
 using Microsoft.Bot.Schema;
+```
+
+<!--TODO: Remove the following remark after the next release of the NuGet packages.-->
+
+The **MessageFactory** class, used in these examples, is defined in the following namespace.
+
+```cs
+using Microsoft.Bot.Builder.Core.Extensions;
 ```
 
 # [JavaScript](#tab/js)
@@ -40,11 +48,11 @@ To indicate that your bot is passively ready for input but is not awaiting a res
 # [C#](#tab/cs)
 
 ```csharp
-await context.SendActivityAsync(
-    textReplyToSend: "This is the text that will be displayed.",
-    speak: "This is the text that will be spoken.",
-    inputHint: InputHints.AcceptingInput,
-    cancellationToken: token);
+var reply = MessageFactory.Text(
+    "This is the text that will be displayed.",
+    "This is the text that will be spoken.",
+    InputHints.AcceptingInput);
+await context.SendActivity(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -63,11 +71,11 @@ To indicate that your bot is awaiting a response from the user, set the message'
 # [C#](#tab/cs)
 
 ```csharp
-await context.SendActivityAsync(
-    textReplyToSend: "This is the text that will be displayed.",
-    speak: "This is the text that will be spoken.",
-    inputHint: InputHints.ExpectingInput,
-    cancellationToken: token);
+var reply = MessageFactory.Text(
+    "This is the text that will be displayed.",
+    "This is the text that will be spoken.",
+    InputHints.ExpectingInput);
+await context.SendActivity(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -86,11 +94,11 @@ To indicate that your bot is not ready to receive input from the user, set the m
 # [C#](#tab/cs)
 
 ```csharp
-await context.SendActivityAsync(
-    textReplyToSend: "This is the text that will be displayed.",
-    speak: "This is the text that will be spoken.",
-    inputHint: InputHints.IgnoringInput,
-    cancellationToken: token);
+var reply = MessageFactory.Text(
+    "This is the text that will be displayed.",
+    "This is the text that will be spoken.",
+    InputHints.IgnoringInput);
+await context.SendActivity(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
