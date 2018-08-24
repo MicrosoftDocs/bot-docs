@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Real-time media calling with Skype
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 The Real-Time Media Platform for Bots adds a new dimension to how bots can interact with users by enabling real-time voice, video and screen sharing modalities. This provides the capability to build compelling and interactive entertainment, educational, and assistance bots. Users communicate with real-time media bots using Skype.
 
 This is an advanced capability which allows the bot to send and receive voice and video content *frame by frame*. The bot has "raw" access to the voice, video and screen-sharing real-time modalities. For example, as the user speaks, the bot will receive 50 audio frames per second, with each frame containing 20 milliseconds (ms) of audio. The bot can perform real-time speech recognition as the audio frames are received, rather than having to wait for a recording after the user has stopped speaking. The bot can also send high-definition-resolution video to the user at 30 frames per second, along with audio.

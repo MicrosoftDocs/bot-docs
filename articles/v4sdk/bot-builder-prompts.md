@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 # Prompt users for input using the Dialogs library
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Often bots gather their information through questions posed to the user. You can simply send the user a standard message by using the [turn context](bot-builder-concept-activity-processing.md#turn-context) object's _send activity_ method to ask for a string input; however, the Bot Builder SDK provides a **dialogs** library that you can use to ask for different types for information. This topic details how to use **prompts** to ask a user for input.
 
@@ -629,6 +629,4 @@ When you prompt for user input, you have several options on how to handle that i
 
 Now that you know how to prompt a user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
 
-> [!div class="nextstepaction"]
-> [Manage simple conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md)
 

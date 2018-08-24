@@ -12,6 +12,8 @@ ms.date: 05/14/2018
 
 # Deploy your bot to Azure
 
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. To do so, you will first deploy the bot to Azure in an App Service then you’ll configure your bot with the Azure Bot Service using the Bot Channels Registration item.
 
 ## Publish from Visual Studio

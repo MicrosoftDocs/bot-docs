@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a Direct Line bot and client
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Microsoft Bot Framework Direct Line bots are bots that can function with a custom client of your own design. Direct Line bots are remarkably similar to normal bots. They just don't need to use the provided channels.
 
 Direct Line clients can be written to be whatever you want them to be. You can write an Android client, an iOS client, or even a console-based client application.

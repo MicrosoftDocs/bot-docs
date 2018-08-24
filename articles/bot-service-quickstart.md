@@ -15,6 +15,9 @@ ms.date: 04/13/2018
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 
 # Create a bot with Bot Service
+
+[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+
 Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the Bot Builder SDK.
 
 ## Log in to Azure

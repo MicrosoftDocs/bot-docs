@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Define a form using JSON schema
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 If you use a [C# class](bot-builder-dotnet-formflow.md#create-class) to define the form 
 when you create a bot with FormFlow, 
 the form derives from the static definition of your type in C#. 

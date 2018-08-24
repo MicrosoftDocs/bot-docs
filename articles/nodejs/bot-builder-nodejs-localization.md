@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Support localization
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 Bot Builder includes a rich localization system for building bots that can communicate with the user in multiple languages. All of your bot's prompts can be localized using JSON files stored in your bot's directory structure. If you’re using a system like LUIS to perform natural language processing, you can configure your [LuisRecognizer][LUISRecognizer] with a separate model for each language your bot supports and the SDK will automatically select the model that matches the user's preferred locale.
 
 ## Determine the locale by prompting the user

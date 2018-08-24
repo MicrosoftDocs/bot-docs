@@ -12,6 +12,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Send a typing indicator 
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
 Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken.
 Many channels support the sending of a typing indication to show the user that the message was received and is being processed.

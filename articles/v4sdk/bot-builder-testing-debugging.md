@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Testing and debugging guidelines
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected.
 
 Testing, and subsequently debugging, your bot can sometimes be a difficult task. Every developer has their own preferred way to accomplish that task; guidelines we present below are suggestions for you to use that apply to a large majority of bots.

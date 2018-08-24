@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Recognize intents and entities with LUIS 
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 This article uses the example of a bot for taking notes, to demonstrate how Language Understanding ([LUIS][LUIS]) helps your bot respond appropriately to natural language input. A bot detects what a user wants to do by identifying their **intent**. This intent is determined from spoken or textual input, or **utterances**. The intent maps utterances to actions that the bot takes, such as invoking a dialog. A bot may also need to extract **entities**, which are important words in utterances. Sometimes entities are required to fulfill an intent. In the example of a note-taking bot, the `Notes.Title` entity identifies the title of each note.
 
 ## Create a Language Understanding bot with Bot Service
