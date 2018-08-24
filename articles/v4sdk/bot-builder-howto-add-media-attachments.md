@@ -23,29 +23,44 @@ To send the user content like an image or a video, you can add an attachment or 
 
 # [C#](#tab/csharp)
 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
+The `Attachments` <!--<xref:Microsoft.Bot.Schema.Activity.Attachments*>-->
+property of the `Activity` <!--<xref:Microsoft.Bot.Schema.Activity>-->
+object contains an array of `Attachment` <!--<xref:Microsoft.Bot.Schema.Attachment>-->
+objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, use the `MessageFactory` <!--<xref:Microsoft.Bot.Builder.MessageFactory>-->
+class `Attachment` <!--<xref:Microsoft.Bot.Builder.MessageFactory>-->
+method to create an `Attachment` object for the `message` activity and set the
+`ContentType` <!--<xref:Microsoft.Bot.Schema.Attachment.ContentType*>-->,
+`ContentUrl` <!--<xref:Microsoft.Bot.Schema.Attachment.Content*>-->,
+and `Name` <!--<xref:Microsoft.Bot.Schema.Attachment.Name*>--> properties.
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and add an attachment.
 var activity = MessageFactory.Attachment(
-    new Attachment { ContentUrl = "imageUrl.png", ContentType = "image/png" }
+    new Attachment
+    {
+        ContentUrl = "imageUrl.png",
+        ContentType = "image/png",
+        Name = "imageName",
+    }
 );
 
 // Send the activity to the user.
-await context.SendActivity(activity);
+await context.SendActivityAsync(activity, token);
 ```
 
-The message factory's `Attachment` method can also send a list of attachments, stacked on on top of another.
+The message factory's `Attachment` method can also send a list of attachments, stacked on top of each other.
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and add an attachment.
 var activity = MessageFactory.Attachment(new Attachment[]
 {
@@ -64,7 +79,7 @@ To send the user a single piece of content like an image or a video, you can sen
 
 ```javascript
 const {MessageFactory} = require('botbuilder');
-let imageOrVideoMessage = MessageFactory.contentUrl('imageUrl.png', 'image/jpeg')
+let imageOrVideoMessage = MessageFactory.contentUrl('imageUrl.png', 'image/png')
 
 // Send the activity to the user.
 await context.sendActivity(imageOrVideoMessage);
@@ -78,9 +93,9 @@ To send a list of attachments, stacked one on top of another:
 const {MessageFactory, CardFactory} = require('botbuilder');
 
 let messageWithCarouselOfCards = MessageFactory.list([
-    CardFactory.heroCard('title1', ['imageUrl1'], ['button1']),
-    CardFactory.heroCard('title2', ['imageUrl2'], ['button2']),
-    CardFactory.heroCard('title3', ['imageUrl3'], ['button3'])
+    CardFactory.heroCard('title1', ['imageUrl1.png'], ['button1']),
+    CardFactory.heroCard('title2', ['imageUrl2.png'], ['button2']),
+    CardFactory.heroCard('title3', ['imageUrl3.png'], ['button3'])
 ]);
 
 await context.sendActivity(messageWithCarouselOfCards);
@@ -96,31 +111,40 @@ Besides simple image or video attachments, you can attach a **hero card**, which
 
 # [C#](#tab/csharp)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message:
+To compose a message with a hero card and button, you can attach a
+`HeroCard` <!--<xref:Microsoft.Bot.Schema.HeroCard>-->
+to a message:
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and attach a Hero card.
 var activity = MessageFactory.Attachment(
     new HeroCard(
-        title: "White T-Shirt",
-        images: new CardImage[] { new CardImage(url: "imageUrl.png") },
+        title: "heroCardTitle",
+        images: new CardImage[] { new CardImage { Url = "imageUrl.png" } },
         buttons: new CardAction[]
         {
-            new CardAction(title: "buy", type: ActionTypes.ImBack, value: "buy")
+            new CardAction
+            {
+                Type = ActionTypes.OpenUrl,
+                Title = "Azure Bot Service Documentation",
+                Value = "https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0",
+            },
         })
     .ToAttachment());
 
 // Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await context.SendActivityAsync(activity, token);
 ```
 
 # [JavaScript](#tab/javascript)
 
-To send the user a card and button, you can attach a `heroCard` to the message:
+To compose a message with a hero card and button, you can attach a
+`HeroCard` to a message:
 
 ```javascript
 // require MessageFactory and CardFactory from botbuilder.
@@ -128,12 +152,18 @@ const {MessageFactory} = require('botbuilder');
 const {CardFactory} = require('botbuilder');
 
 const message = MessageFactory.attachment(
-     CardFactory.heroCard(
-        'White T-Shirt',
-        ['https://example.com/whiteShirt.jpg'],
-        ['buy']
+    CardFactory.heroCard(
+        'heroCardTitle',
+        CardFactory.images(['imageUrl.png']),
+        CardFactory.actions([
+            {
+                type: 'ActionTypes.OpenUrl',
+                title: 'Azure Bot Service Documentation',
+                value: 'https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0'
+            }
+        ])
     )
- );
+);
 
 await context.sendActivity(message);
 ```
@@ -173,9 +203,10 @@ The following code shows examples using various rich card events.
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and attach a Hero card.
 var activity = MessageFactory.Attachment(
     new HeroCard(
@@ -183,14 +214,19 @@ var activity = MessageFactory.Attachment(
         images: new CardImage[] { new CardImage(url: "imageUrl.png") },
         buttons: new CardAction[]
         {
-            new CardAction(title: "Shout Out Loud", type: ActionTypes.imBack, value: "You can ALL hear me!"),
-            new CardAction(title: "Much Quieter", type: ActionTypes.postBack, value: "Shh! My Bot friend hears me."),
-            new CardAction(title: "Show me how to Holler", type: ActionTypes.openURL, value: $"https://en.wikipedia.org/wiki/{cardContent.Key}")
+            new CardAction(title: "Shout Out Loud", type: ActionTypes.ImBack, value: "You can ALL hear me!"),
+            new CardAction(title: "Much Quieter", type: ActionTypes.PostBack, value: "Shh! My Bot friend hears me."),
+            new CardAction
+            {
+                Type = ActionTypes.OpenUrl,
+                Title = "Azure Bot Service Documentation",
+                Value = "https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0",
+            },
         })
     .ToAttachment());
 
 // Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await context.SendActivityAsync(activity, token);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -220,6 +256,11 @@ const hero = MessageFactory.attachment(
             value: 'https://en.wikipedia.org/wiki/{cardContent.Key}'
         }]
     )
+    CardFactory.actions([{
+        type: 'ActionTypes.OpenUrl',
+        title: 'Azure Bot Service Documentation',
+        value: 'https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0'
+    }])
 );
 
 await context.sendActivity(hero);
@@ -230,11 +271,13 @@ await context.sendActivity(hero);
 
 ## Send an Adaptive Card
 
-You can also send an Adaptive Card as an attachment. Currently not all channels support adaptive cards. To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
+You can also send an Adaptive Card as an attachment. Currently not all channels support adaptive cards.
+To find the latest information on Adaptive Card channel support,
+see the [Adaptive Cards Visualizer](http://adaptivecards.io/visualizer/).
 
 # [C#](#tab/csharp)
-To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package.
 
+To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package.
 
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
@@ -242,35 +285,36 @@ To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet packag
 ```csharp
 using AdaptiveCards;
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and attach an Adaptive Card.
 var card = new AdaptiveCard();
 card.Body.Add(new TextBlock()
-{
-    Text = "<title>",
-    Size = TextSize.Large,
-    Wrap = true,
-    Weight = TextWeight.Bolder
-});
+    {
+        Text = "<title>",
+        Size = TextSize.Large,
+        Wrap = true,
+        Weight = TextWeight.Bolder
+    });
 card.Body.Add(new TextBlock() { Text = "<message text>", Wrap = true });
 card.Body.Add(new TextInput()
-{
-    Id = "Title",
-    Value = string.Empty,
-    Style = TextInputStyle.Text,
-    Placeholder = "Title",
-    IsRequired = true,
-    MaxLength = 50
-});
+    {
+        Id = "Title",
+        Value = string.Empty,
+        Style = TextInputStyle.Text,
+        Placeholder = "Title",
+        IsRequired = true,
+        MaxLength = 50
+    });
 card.Actions.Add(new SubmitAction() { Title = "Submit", DataJson = "{ Action:'Submit' }" });
 card.Actions.Add(new SubmitAction() { Title = "Cancel", DataJson = "{ Action:'Cancel'}" });
 
 var activity = MessageFactory.Attachment(new Attachment(AdaptiveCard.ContentType, content: card));
 
 // Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await context.SendActivityAsync(activity, token);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -401,7 +445,7 @@ const message = CardFactory.adaptiveCard({
     ]
 });
 
-// send adaptive card as attachment 
+// send adaptive card as attachment
 await context.sendActivity({ attachments: [message] })
 ```
 
@@ -415,41 +459,42 @@ Messages can also include multiple attachments in a carousel layout, which place
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+```
 
+```csharp
 // Create the activity and attach a set of Hero cards.
 var activity = MessageFactory.Carousel(
     new Attachment[]
     {
         new HeroCard(
-            title: "title1",
+            title: "cardTitle1",
             images: new CardImage[] { new CardImage(url: "imageUrl1.png") },
             buttons: new CardAction[]
             {
-                new CardAction(title: "button1", type: ActionTypes.ImBack, value: "item1")
+                new CardAction(title: "buttonTitle1", type: ActionTypes.ImBack, value: "buttonValue1"),
             })
         .ToAttachment(),
         new HeroCard(
-            title: "title2",
+            title: "cardTitle2",
             images: new CardImage[] { new CardImage(url: "imageUrl2.png") },
             buttons: new CardAction[]
             {
-                new CardAction(title: "button2", type: ActionTypes.ImBack, value: "item2")
+                new CardAction(title: "buttonTitle2", type: ActionTypes.ImBack, value: "buttonValue2")
             })
         .ToAttachment(),
         new HeroCard(
-            title: "title3",
+            title: "cardTitle3",
             images: new CardImage[] { new CardImage(url: "imageUrl3.png") },
             buttons: new CardAction[]
             {
-                new CardAction(title: "button3", type: ActionTypes.ImBack, value: "item3")
+                new CardAction(title: "buttonTitle3", type: ActionTypes.ImBack, value: "buttonValue3")
             })
         .ToAttachment()
     });
 
 // Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await context.SendActivityAsync(activity, token);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -460,9 +505,42 @@ const {MessageFactory, CardFactory} = require('botbuilder');
 
 //  init message object
 let messageWithCarouselOfCards = MessageFactory.carousel([
-    CardFactory.heroCard('title1', ['imageUrl1'], ['button1']),
-    CardFactory.heroCard('title2', ['imageUrl2'], ['button2']),
-    CardFactory.heroCard('title3', ['imageUrl3'], ['button3'])
+    CardFactory.heroCard(
+        'cardTitle1',
+        CardFactory.images(['imageUrl1.png']),
+        CardFactory.actions([
+            {
+                type: 'openUrl',
+                title: 'buttonTitle1',
+                value: 'buttonValue1',
+                type: ActionTypes.ImBack
+            }
+        ])
+    ),
+    CardFactory.heroCard(
+        'cardTitle2',
+        CardFactory.images(['imageUrl2.png']),
+        CardFactory.actions([
+            {
+                type: 'openUrl',
+                title: 'buttonTitle2',
+                value: 'buttonValue2',
+                type: ActionTypes.ImBack
+            }
+        ])
+    ),
+    CardFactory.heroCard(
+        'cardTitle3',
+        CardFactory.images(['imageUrl3.png']),
+        CardFactory.actions([
+            {
+                type: 'openUrl',
+                title: 'buttonTitle3',
+                value: 'buttonValue3',
+                type: ActionTypes.ImBack
+            }
+        ])
+    )
 ]);
 
 await context.sendActivity(messageWithCarouselOfCards);
