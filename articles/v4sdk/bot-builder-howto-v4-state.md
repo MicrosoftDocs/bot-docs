@@ -218,12 +218,14 @@ public async Task OnTurn(ITurnContext context)
         }
         else if (convo.haveAskedNumberFlag)
         {
+            // get saved user name
+                    var userName = user.name;
             // save the telephone number
             var telephonenumber = context.Activity.AsMessageActivity().Text;
 
             user.telephoneNumber = telephonenumber;
             convo.haveAskedNumberFlag = false; // Reset flag
-            await context.SendActivity($"Got it. I'll call you later.");
+            await context.SendActivity($"Got it {userName}. I'll call you later.");
         }
     }
 }
