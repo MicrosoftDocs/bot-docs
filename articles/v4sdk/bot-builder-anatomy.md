@@ -11,7 +11,11 @@ ms.date: 06/25/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
+
+
 # Anatomy of a bot
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 A bot, in the most [basic sense](bot-builder-basics.md), is a conversational app that users communicate with using messages. It follows the basic structure of a web app in it's respective language, and builds on top of that with the Bot Framework SDK.
 

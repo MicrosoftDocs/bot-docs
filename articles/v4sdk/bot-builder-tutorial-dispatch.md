@@ -11,9 +11,7 @@ ms.date: 04/25/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-## Integrate multiple LUIS and QnA services with the Dispatch tool
-
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+# Integrate multiple LUIS and QnA services with the Dispatch tool
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
