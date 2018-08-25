@@ -21,19 +21,17 @@ Conversation Designer provides a deeply integrated authoring environment to auth
 
 Adaptive cards can be defined in several different key places.
 
-- A simple response to [action](conversation-designer-tasks.md) for a task.
+- A simple response to action for a task.
 - In feedback state in a dialogue.
 - In prompt states in a dialogue. Note that prompts can have separate cards: one for the response and another for re-prompting.
 
 To define an adaptive card, navigate to the relevant editor. Browse and choose from one of the existing Adaptive Card 
 Templates or build your own in the JSON code editor. 
 
-<!--TODO: Insert screenshot -->
-
 As you are building a card, a rich preview of the card is rendered in the authoring portal.
 
 > [!NOTE]
-> Features of adaptive cards remain under ongoing development. All channels do not support all adaptive card features at this time. To see which features each channel supports, see the [Channel status](/adaptive-cards/get-started/bots#channel-status) section.
+> Features of adaptive cards remain under ongoing development. All channels do not support all adaptive card features at this time. To see which features each channel supports, see the Channel status section.
 
 ## Input form
 
@@ -71,12 +69,6 @@ Adaptive cards support full language generation resolution.
 
 * `entityName` uses entities inside the card.
 * `responseTemplateName` uses simple or conditional response templates inside the card.
-
-<!--
-# Binding form flow input fields to bot entities
-TODO: fill this out based on design/ implementation -->
-
-<!-- ## Adaptive Card schema
 
 You can learn more about adaptive cards here  TODO: Insert link to adaptive cards schema documentation -->
 
@@ -147,6 +139,3 @@ The following JSON shows the payload of an adaptive card.
 }
 ```
 
-## Next step
-> [!div class="nextstepaction"]
-> [Connect to channels](conversation-designer-deploy.md)
