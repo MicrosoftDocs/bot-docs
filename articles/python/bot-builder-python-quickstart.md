@@ -138,7 +138,5 @@ Type **Hello** in the emulator, and the bot will echo back **You said "Hello"**.
 
 ## Next steps
 
-Next, [deploy your bot to azure](../bot-builder-howto-deploy-azure.md) or jump into the concepts that explain a bot and how it works.
-
 > [!div class="nextstepaction"]
 > [Basic Bot concepts](../v4sdk/bot-builder-basics.md)
