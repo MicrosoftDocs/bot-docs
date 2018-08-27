@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/03/2018
+ms.date: 08/27/2018
 ---
 
 ::: moniker range="azure-bot-service-3.0"
@@ -109,21 +109,22 @@ Bots enable systems to gather information or provide an experience to users that
 
 ## Building a bot 
 
-You can choose to use your favorite development environment or command line tools to create your bot in [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript](~/javascript/bot-builder-javascript-quickstart.md), [Java](~/java/bot-builder-java-quickstart.md), and [Python](~/python/bot-builder-python-quickstart.md). We provide tools for various stages of bot development that you can use to build your bot to get you started.    
+You can choose to use your favorite development environment or command line tools to create your bot in C#, JavaScript, Java, and Python. We provide tools for various stages of bot development that you can use to build your bot to get you started.    
 
 ### Design
 
-Before writing code, review the bot [design guidelines](bot-service-design-principles.md) for best practices and identify the needs for your bot. You can create a simple bot or include more sophisticated capabilities, such as speech, natural language understanding, or answer questions users ask. You can start your bot development either in the [Azure portal](bot-service-quickstart.md) or use templates provided for local development in the language of your choice.
+Before writing code, review the bot [design guidelines](bot-service-design-principles.md) for best practices and identify the needs for your bot. You can create a simple bot or include more sophisticated capabilities, such as speech, natural language understanding, or answer questions users ask. 
+
+### Build
+
+Your bot is a web service that implements a conversational interface and communicates with the Bot Service. You can create this solution in any number of environments and languages, and we offer easy getting started templates above. You can start your bot development either in the [Azure portal](bot-service-quickstart.md) or use templates listed below for local development in the language of your choice.
 
 | .NET Template | JavaScript Template | 
 | --- | --- | 
 | [VSIX template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4) | [Yeoman template](https://www.npmjs.com/package/generator-botbuilder). Use @preview to get v4 template. |
 
-### Build
 
-Your bot is a web service that implements a conversational interface and communicates with the Bot Service. You can create this solution in any number of environments and languages, and we offer easy getting started templates above. 
-
-Here are a few features you can use; none of these components are required for your bot, but may be helpful. 
+Here are additional components you can use to enhance your bot's functionality. 
 
 | Feature | Description | Link |
 | --- | --- | --- |
@@ -135,7 +136,7 @@ Here are a few features you can use; none of these components are required for y
 > [!NOTE]
 > The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally we provide [CLI tools](https://github.com/Microsoft/botbuilder-tools) help you to create, manage, and test bot assests. These tools can manage a bot configuration file, LUIS app, QnA knowledge base, mock a conversation, and more from the command-line. You can find more details in the [readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
+Additionally we provide CLI tools to help you to create, manage, and test bot assests. These tools can manage a bot configuration file, LUIS app, QnA knowledge base, mock a conversation, and more from the command-line. You can find more details in the [readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
 
 ### Test 
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot. 
