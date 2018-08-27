@@ -25,8 +25,8 @@ If you are using the [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-ove
 
 > [!WARNING]
 > In December 2016, v3.1 of the Bot Framework security protocol introduced changes to several values that are 
-> used during token generation and validation. In late fall of 2017, v3.2 of the Bot Framework security protocol will be introduced 
-> which will again include changes to values that are used during token generation and validation.
+> used during token generation and validation. In late fall of 2017, v3.2 of the Bot Framework security protocol was introduced 
+> which included changes to values that are used during token generation and validation.
 > For more information, see [Security protocol changes](#security-protocol-changes).
 
 ## Authentication technologies
@@ -241,9 +241,7 @@ payload:
 ## <a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
 
 > [!WARNING]
-> In late fall of 2017, v3.2 of the Bot Framework security protocol will be introduced. This new version includes a new "issuer" value within tokens
-> that are exchanged between the Bot Framework Eumaltor and your bot. To prepare for this change, the below steps outline how to check for both the 
-> v3.1 and v3.2 issuer values. 
+> In late fall of 2017, v3.2 of the Bot Framework security protocol was introduced. This new version includes a new "issuer" value within tokens that are exchanged between the Bot Framework Eumaltor and your bot. To prepare for this change, the below steps outline how to check for both the v3.1 and v3.2 issuer values. 
 
 The [Bot Framework Emulator](../bot-service-debug-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service. 
 Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the emulator to your bot to create tokens that are identical to those that the bot creates. 
