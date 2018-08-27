@@ -48,7 +48,7 @@
 ## [Manage](manage/TOC.md)
 ## Develop
 ### [Send messages](v4sdk/bot-builder-howto-send-messages.md)
-### [Add media attachments](v4sdk/bot-builder-howto-add-media-attachments.md)
+### [Add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md)
 ### [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md)
 ### [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md)
 ### [Create your own prompts to gather user input](v4sdk/bot-builder-primitive-prompts.md)
