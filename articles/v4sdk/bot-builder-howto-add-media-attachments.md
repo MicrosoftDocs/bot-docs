@@ -229,8 +229,13 @@ await context.sendActivity(hero);
 ---
 
 ## Send an Adaptive Card
+Adaptive Card and MessageFactory are used to send rich messages including texts, images, video, audio and files to communicate with users. However, there are some differences between them. 
 
-You can also send an Adaptive Card as an attachment. Currently not all channels support adaptive cards. To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
+First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Builder SDK to automate creation steps for you, and supported by most channels. 
+
+Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment. 
+
+To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
 
 # [C#](#tab/csharp)
 To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package.
