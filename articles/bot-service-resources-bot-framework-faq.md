@@ -45,6 +45,9 @@ Each bot is its own service, and developers of these services are required to pr
 
 to provide the I/O service, the Bot Framework transmits your message and message content (including your ID), from the chat service you used to the bot.
 
+### Can I host my bot on my own servers?
+Yes. Your bot can be hosted anywhere on the Internet. On your own servers, in Azure, or in any other datacenter. The only requirement is that the bot must expose a publicly-accessible HTTPS endpoint.
+
 ### How do you ban or remove bots from the service?
 
 Users have a way to report a misbehaving bot via the bot’s contact card in the directory. Developers must abide by Microsoft terms of service to participate in the service.
