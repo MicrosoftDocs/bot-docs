@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/03/2018
+ms.date: 08/28/2018
 ---
 
 # Bot Framework Frequently Asked Questions
@@ -45,20 +45,34 @@ Each bot is its own service, and developers of these services are required to pr
 
 to provide the I/O service, the Bot Framework transmits your message and message content (including your ID), from the chat service you used to the bot.
 
+### Can I host my bot on my own servers?
+Yes. Your bot can be hosted anywhere on the Internet. On your own servers, in Azure, or in any other datacenter. The only requirement is that the bot must expose a publicly-accessible HTTPS endpoint.
+
 ### How do you ban or remove bots from the service?
 
 Users have a way to report a misbehaving bot via the bot’s contact card in the directory. Developers must abide by Microsoft terms of service to participate in the service.
 
-### Which specific URLs do I need to whitelist in my corporate firewall to access bot services?
-
-You'll need to whitelist the following URLs in your corporate firewall:
+### Which specific URLs do I need to whitelist in my corporate firewall to access Bot Framework services?
+If you have an outbound firewall blocking traffic from your bot to the Internet, you'll need to whitelist the following URLs in that firewall:
 - login.botframework.com (Bot authentication)
 - login.microsoftonline.com (Bot authentication)
 - westus.api.cognitive.microsoft.com (for Luis.ai NLP integration)
 - state.botframework.com (Bot state storage for prototyping)
 - cortanabfchanneleastus.azurewebsites.net (Cortana channel)
 - cortanabfchannelwestus.azurewebsites.net (Cortana Channel)
-- *.botFramework.com (channels)
+- *.botframework.com (channels)
+
+### Can I block all traffic to my bot except traffic from the Bot Connector Service?
+No. This sort of IP Address or DNS whitelisting is impractical. The Bot Framework Connector Service is hosted in Azure datacenters world-wide and the list of Azure IPs is constantly changing. Whitelisting certain IP addresses may work one day and break the next as the Azure IP Addresses change.
+ 
+### What keeps my bot secure from clients impersonating the Bot Framework Connector Service?
+1. The security token accompanying every request to your bot has the ServiceUrl encoded within it, which means that even if an attacker gains access to the token, they cannot redirect the conversation to a new ServiceUrl. This is enforced by all implementations of the SDK and documented in our authentication [reference](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#bot-to-connector) materials.
+
+2. If the incoming token is missing or malformed, the Bot Framework SDK will not generate a token in response. This limits how much damage can be done if the bot is incorrectly configured.
+3. Inside the bot, you can manually check the ServiceUrl provided in the token. This makes the bot more fragile in the event of service topology changes so this is possible but not recommended.
+
+
+Note that these are outbound connections from the bot to the Internet. There is not a list of IP Addresses or DNS names that the Bot Framework Connector Service will use to talk to the bot. Inbound IP Address whitelisting is not supported.
 
 ## Rate limiting
 ### What is rate limiting?
