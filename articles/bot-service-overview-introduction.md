@@ -12,7 +12,7 @@ ms.date: 08/27/2018
 
 ::: moniker range="azure-bot-service-3.0"
 
-# Azure Bot Service Introduction
+# About Azure Bot Service
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 
@@ -95,7 +95,7 @@ Use the data collected in Azure portal to identify opportunities to improve the 
 
 ::: moniker range="azure-bot-service-4.0"
 
-# Azure Bot Service
+# About Azure Bot Service
 
 [!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
