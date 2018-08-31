@@ -7,7 +7,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/21/2018
+ms.date: 08/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Create a bot with the Bot Builder SDK for Python
@@ -75,7 +75,7 @@ class BotRequestHandler(http.server.BaseHTTPRequestHandler):
         credential_provider = SimpleCredentialProvider(APP_ID, APP_PASSWORD)
         loop = asyncio.new_event_loop()
         try:
-            loop.run_until_complete(JwtTokenValidation.assert_valid_activity(
+            loop.run_until_complete(JwtTokenValidation.authenticate_request(
                 activity, self.headers.get("Authorization"), credential_provider))
             return True
         except Exception as ex:
