@@ -348,7 +348,7 @@ az bot publish --name "my-bot-name" --resource-group "my-resource-group"
 ## References
 - [BotBuilder Tools Source Code](https://github.com/Microsoft/botbuilder-tools)
 - [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/MSBot)
-- [ChatDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Chatdown)
+- [ChatDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Chatdown)
 - [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/ludown)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
