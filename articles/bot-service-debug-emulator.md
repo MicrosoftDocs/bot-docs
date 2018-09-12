@@ -22,7 +22,7 @@ The Bot Framework Emulator is a desktop application that allows bot developers t
 
 ## Download the Bot Framework Emulator
 
-Download packages for Mac, Windows, and Linux are available via the [GitHub releases page](https://github.com/Microsoft/BotFramework-Emulator/releases).
+Download packages for Mac, Windows, and Linux are available via the [GitHub releases page](https://aka.ms/bot-framework-emulator-download).
 
 ## Connect to a bot running on local host
 
