@@ -12,6 +12,11 @@
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Thrown to indicate a service is already registered in a <see cref="T:Microsoft.Bot.Builder.ITurnContextServiceCollection" /> under the specified key.

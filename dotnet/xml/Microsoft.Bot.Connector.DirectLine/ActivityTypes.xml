@@ -1,0 +1,265 @@
+﻿<Type Name="ActivityTypes" FullName="Microsoft.Bot.Connector.DirectLine.ActivityTypes">
+  <TypeSignature Language="C#" Value="public class ActivityTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.ActivityTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTypes" />
+  <TypeSignature Language="F#" Value="type ActivityTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ActivityTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactRelationUpdate">
+      <MemberSignature Language="C#" Value="public const string ContactRelationUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContactRelationUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.ContactRelationUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContactRelationUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable ContactRelationUpdate : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.ContactRelationUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationUpdate">
+      <MemberSignature Language="C#" Value="public const string ConversationUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ConversationUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.ConversationUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const ConversationUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable ConversationUpdate : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.ConversationUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteUserData">
+      <MemberSignature Language="C#" Value="public const string DeleteUserData;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteUserData" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.DeleteUserData" />
+      <MemberSignature Language="VB.NET" Value="Public Const DeleteUserData As String " />
+      <MemberSignature Language="F#" Value="val mutable DeleteUserData : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.DeleteUserData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfConversation">
+      <MemberSignature Language="C#" Value="public const string EndOfConversation;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EndOfConversation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.EndOfConversation" />
+      <MemberSignature Language="VB.NET" Value="Public Const EndOfConversation As String " />
+      <MemberSignature Language="F#" Value="val mutable EndOfConversation : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.EndOfConversation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public const string Event;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Event" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Const Event As String " />
+      <MemberSignature Language="F#" Value="val mutable Event : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.Event" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallationUpdate">
+      <MemberSignature Language="C#" Value="public const string InstallationUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string InstallationUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.InstallationUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const InstallationUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable InstallationUpdate : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.InstallationUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public const string Invoke;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Invoke" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.Invoke" />
+      <MemberSignature Language="VB.NET" Value="Public Const Invoke As String " />
+      <MemberSignature Language="F#" Value="val mutable Invoke : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.Invoke" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public const string Message;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Message" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Const Message As String " />
+      <MemberSignature Language="F#" Value="val mutable Message : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.Message" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageDelete">
+      <MemberSignature Language="C#" Value="public const string MessageDelete;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MessageDelete" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.MessageDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Const MessageDelete As String " />
+      <MemberSignature Language="F#" Value="val mutable MessageDelete : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.MessageDelete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageUpdate">
+      <MemberSignature Language="C#" Value="public const string MessageUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MessageUpdate" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.MessageUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Const MessageUpdate As String " />
+      <MemberSignature Language="F#" Value="val mutable MessageUpdate : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.MessageUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ping">
+      <MemberSignature Language="C#" Value="public const string Ping;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Ping" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.Ping" />
+      <MemberSignature Language="VB.NET" Value="Public Const Ping As String " />
+      <MemberSignature Language="F#" Value="val mutable Ping : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.Ping" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Typing">
+      <MemberSignature Language="C#" Value="public const string Typing;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Typing" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.DirectLine.ActivityTypes.Typing" />
+      <MemberSignature Language="VB.NET" Value="Public Const Typing As String " />
+      <MemberSignature Language="F#" Value="val mutable Typing : string" Usage="Microsoft.Bot.Connector.DirectLine.ActivityTypes.Typing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,122 @@
+﻿<Type Name="TokensExtensions" FullName="Microsoft.Bot.Connector.DirectLine.TokensExtensions">
+  <TypeSignature Language="C#" Value="public static class TokensExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TokensExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.TokensExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TokensExtensions" />
+  <TypeSignature Language="F#" Value="type TokensExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenerateTokenForNewConversation">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.Conversation GenerateTokenForNewConversation (this Microsoft.Bot.Connector.DirectLine.ITokens operations, Microsoft.Bot.Connector.DirectLine.TokenParameters tokenParameters = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.Conversation GenerateTokenForNewConversation(class Microsoft.Bot.Connector.DirectLine.ITokens operations, class Microsoft.Bot.Connector.DirectLine.TokenParameters tokenParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.TokensExtensions.GenerateTokenForNewConversation(Microsoft.Bot.Connector.DirectLine.ITokens,Microsoft.Bot.Connector.DirectLine.TokenParameters)" />
+      <MemberSignature Language="F#" Value="static member GenerateTokenForNewConversation : Microsoft.Bot.Connector.DirectLine.ITokens * Microsoft.Bot.Connector.DirectLine.TokenParameters -&gt; Microsoft.Bot.Connector.DirectLine.Conversation" Usage="Microsoft.Bot.Connector.DirectLine.TokensExtensions.GenerateTokenForNewConversation (operations, tokenParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.Conversation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.ITokens" RefType="this" />
+        <Parameter Name="tokenParameters" Type="Microsoft.Bot.Connector.DirectLine.TokenParameters" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="tokenParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateTokenForNewConversationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt; GenerateTokenForNewConversationAsync (this Microsoft.Bot.Connector.DirectLine.ITokens operations, Microsoft.Bot.Connector.DirectLine.TokenParameters tokenParameters = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.Conversation&gt; GenerateTokenForNewConversationAsync(class Microsoft.Bot.Connector.DirectLine.ITokens operations, class Microsoft.Bot.Connector.DirectLine.TokenParameters tokenParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.TokensExtensions.GenerateTokenForNewConversationAsync(Microsoft.Bot.Connector.DirectLine.ITokens,Microsoft.Bot.Connector.DirectLine.TokenParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GenerateTokenForNewConversationAsync : Microsoft.Bot.Connector.DirectLine.ITokens * Microsoft.Bot.Connector.DirectLine.TokenParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;" Usage="Microsoft.Bot.Connector.DirectLine.TokensExtensions.GenerateTokenForNewConversationAsync (operations, tokenParameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.ITokens" RefType="this" />
+        <Parameter Name="tokenParameters" Type="Microsoft.Bot.Connector.DirectLine.TokenParameters" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="tokenParameters">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshToken">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.Conversation RefreshToken (this Microsoft.Bot.Connector.DirectLine.ITokens operations);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.Conversation RefreshToken(class Microsoft.Bot.Connector.DirectLine.ITokens operations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.TokensExtensions.RefreshToken(Microsoft.Bot.Connector.DirectLine.ITokens)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RefreshToken (operations As ITokens) As Conversation" />
+      <MemberSignature Language="F#" Value="static member RefreshToken : Microsoft.Bot.Connector.DirectLine.ITokens -&gt; Microsoft.Bot.Connector.DirectLine.Conversation" Usage="Microsoft.Bot.Connector.DirectLine.TokensExtensions.RefreshToken operations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.Conversation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.ITokens" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshTokenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt; RefreshTokenAsync (this Microsoft.Bot.Connector.DirectLine.ITokens operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.Conversation&gt; RefreshTokenAsync(class Microsoft.Bot.Connector.DirectLine.ITokens operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.TokensExtensions.RefreshTokenAsync(Microsoft.Bot.Connector.DirectLine.ITokens,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member RefreshTokenAsync : Microsoft.Bot.Connector.DirectLine.ITokens * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;" Usage="Microsoft.Bot.Connector.DirectLine.TokensExtensions.RefreshTokenAsync (operations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.ITokens" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

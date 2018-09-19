@@ -1,0 +1,21 @@
+﻿<Type Name="IEndOfConversationActivity" FullName="Microsoft.Bot.Connector.DirectLine.IEndOfConversationActivity">
+  <TypeSignature Language="C#" Value="public interface IEndOfConversationActivity : Microsoft.Bot.Connector.DirectLine.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEndOfConversationActivity implements class Microsoft.Bot.Connector.DirectLine.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.IEndOfConversationActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEndOfConversationActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IEndOfConversationActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.DirectLine.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

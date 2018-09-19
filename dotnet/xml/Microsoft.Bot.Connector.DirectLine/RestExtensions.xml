@@ -1,0 +1,73 @@
+﻿<Type Name="RestExtensions" FullName="Microsoft.Bot.Connector.DirectLine.RestExtensions">
+  <TypeSignature Language="C#" Value="public static class RestExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RestExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.RestExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module RestExtensions" />
+  <TypeSignature Language="F#" Value="type RestExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ForException">
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.HttpRequestMessageWrapper ForException (this System.Net.Http.HttpRequestMessage request, string content = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.HttpRequestMessageWrapper ForException(class System.Net.Http.HttpRequestMessage request, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.RestExtensions.ForException(System.Net.Http.HttpRequestMessage,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ForException (request As HttpRequestMessage, Optional content As String = &quot;&quot;) As HttpRequestMessageWrapper" />
+      <MemberSignature Language="F#" Value="static member ForException : System.Net.Http.HttpRequestMessage * string -&gt; Microsoft.Rest.HttpRequestMessageWrapper" Usage="Microsoft.Bot.Connector.DirectLine.RestExtensions.ForException (request, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rest.HttpRequestMessageWrapper</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForException">
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.HttpResponseMessageWrapper ForException (this System.Net.Http.HttpResponseMessage response, string content = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.HttpResponseMessageWrapper ForException(class System.Net.Http.HttpResponseMessage response, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.RestExtensions.ForException(System.Net.Http.HttpResponseMessage,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ForException (response As HttpResponseMessage, Optional content As String = &quot;&quot;) As HttpResponseMessageWrapper" />
+      <MemberSignature Language="F#" Value="static member ForException : System.Net.Http.HttpResponseMessage * string -&gt; Microsoft.Rest.HttpResponseMessageWrapper" Usage="Microsoft.Bot.Connector.DirectLine.RestExtensions.ForException (response, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Rest.HttpResponseMessageWrapper</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Net.Http.HttpResponseMessage" RefType="this" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

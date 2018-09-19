@@ -1,0 +1,386 @@
+﻿<Type Name="AgentContactNotification" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification">
+  <TypeSignature Language="C#" Value="public class AgentContactNotification : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AgentContactNotification extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification" />
+  <TypeSignature Language="VB.NET" Value="Public Class AgentContactNotification&#xA;Inherits BaseMessage" />
+  <TypeSignature Language="F#" Value="type AgentContactNotification = class&#xA;    inherit BaseMessage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Message type for notifying agents that a user has added or removed
+            them.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AgentContactNotification ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="action", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionKey">
+      <MemberSignature Language="C#" Value="public const string ActionKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ActionKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ActionKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ActionKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ActionKey : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ActionKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCountry">
+      <MemberSignature Language="C#" Value="public string ClientCountry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientCountry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientCountry" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCountry As String" />
+      <MemberSignature Language="F#" Value="member this.ClientCountry : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientCountry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientCountry", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCountryKey">
+      <MemberSignature Language="C#" Value="public const string ClientCountryKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ClientCountryKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientCountryKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ClientCountryKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ClientCountryKey : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientCountryKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientUiLanguage">
+      <MemberSignature Language="C#" Value="public string ClientUiLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientUiLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientUiLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientUiLanguage As String" />
+      <MemberSignature Language="F#" Value="member this.ClientUiLanguage : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientUiLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientUiLanguage", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientUiLanguageKey">
+      <MemberSignature Language="C#" Value="public const string ClientUiLanguageKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ClientUiLanguageKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientUiLanguageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ClientUiLanguageKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ClientUiLanguageKey : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientUiLanguageKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientVersion">
+      <MemberSignature Language="C#" Value="public string ClientVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientVersion As String" />
+      <MemberSignature Language="F#" Value="member this.ClientVersion : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientVersion", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientVersionKey">
+      <MemberSignature Language="C#" Value="public const string ClientVersionKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ClientVersionKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientVersionKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ClientVersionKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ClientVersionKey : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientVersionKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactAddAction">
+      <MemberSignature Language="C#" Value="public const string ContactAddAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContactAddAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ContactAddAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContactAddAction As String " />
+      <MemberSignature Language="F#" Value="val mutable ContactAddAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ContactAddAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactRemoveAction">
+      <MemberSignature Language="C#" Value="public const string ContactRemoveAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContactRemoveAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ContactRemoveAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContactRemoveAction As String " />
+      <MemberSignature Language="F#" Value="val mutable ContactRemoveAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ContactRemoveAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fromUserDisplayName", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lcid">
+      <MemberSignature Language="C#" Value="public int Lcid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Lcid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.Lcid" />
+      <MemberSignature Language="VB.NET" Value="Public Property Lcid As Integer" />
+      <MemberSignature Language="F#" Value="member this.Lcid : int with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.Lcid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fromUserLcid", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LcidKey">
+      <MemberSignature Language="C#" Value="public const string LcidKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LcidKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.LcidKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const LcidKey As String " />
+      <MemberSignature Language="F#" Value="val mutable LcidKey : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.LcidKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public const string TypeName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TypeName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Const TypeName As String " />
+      <MemberSignature Language="F#" Value="val mutable TypeName : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.TypeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDisplayNameKey">
+      <MemberSignature Language="C#" Value="public const string UserDisplayNameKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UserDisplayNameKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.UserDisplayNameKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const UserDisplayNameKey As String " />
+      <MemberSignature Language="F#" Value="val mutable UserDisplayNameKey : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.UserDisplayNameKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateInternal">
+      <MemberSignature Language="C#" Value="protected override void ValidateInternal ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateInternal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ValidateInternal" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateInternal ()" />
+      <MemberSignature Language="F#" Value="override this.ValidateInternal : unit -&gt; unit" Usage="agentContactNotification.ValidateInternal " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

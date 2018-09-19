@@ -16,6 +16,11 @@
       <InterfaceName>System.IEquatable&lt;Microsoft.Bot.Builder.Classic.Scorables.Internals.AttributeString&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>

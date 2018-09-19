@@ -65,7 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Scorables.Internals.NoneResolver.Microsoft#Bot#Builder#Classic#Scorables#Internals#IResolver#TryResolve(System.Type,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

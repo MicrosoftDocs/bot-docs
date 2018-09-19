@@ -22,6 +22,7 @@
             and out of the bot, each piece of middleware can inspect or act upon the activity, 
             both before and after the bot logic runs.</para><para>For each activity, the adapter calls middleware in the order in which you 
             added it.</para></remarks>
+    <altmember cref="T:Microsoft.Bot.IBot" />
     <example>
             This defines middleware that sends "before" and "after" messages
             before and after the adapter calls the bot's 
@@ -37,7 +38,6 @@
                 }
             }
             </code></example>
-    <altmember cref="T:Microsoft.Bot.IBot" />
   </Docs>
   <Members>
     <Member MemberName="OnTurn">

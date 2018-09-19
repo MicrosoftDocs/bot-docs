@@ -1,0 +1,264 @@
+﻿<Type Name="Recognize" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize">
+  <TypeSignature Language="C#" Value="public class Recognize : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Recognize extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize" />
+  <TypeSignature Language="VB.NET" Value="Public Class Recognize&#xA;Inherits ActionBase" />
+  <TypeSignature Language="F#" Value="type Recognize = class&#xA;    inherit ActionBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is the action which customers can specify to indicate that the server call agent should perform speech or dtmf recognition.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Recognize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BargeInAllowed">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; BargeInAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; BargeInAllowed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.BargeInAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Property BargeInAllowed As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.BargeInAllowed : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.BargeInAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Are customers allowed to enter choice before prompt finishes. Default : true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt; Choices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt; Choices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Choices" />
+      <MemberSignature Language="VB.NET" Value="Public Property Choices As IEnumerable(Of RecognitionOption)" />
+      <MemberSignature Language="F#" Value="member this.Choices : seq&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Choices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of choices to recognize against. Choices can be speech or dtmf based.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectDigits">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits CollectDigits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits CollectDigits" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.CollectDigits" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollectDigits As CollectDigits" />
+      <MemberSignature Language="F#" Value="member this.CollectDigits : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.CollectDigits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            There is no choice based recognition. Rather collect all digits entered by user.
+            
+            Either CollectDigits or Choices must be specified. Both can not be specified.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; Culture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As Nullable(Of Culture)" />
+      <MemberSignature Language="F#" Value="member this.Culture : Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Culture of Speech Recognizer to use. Default : en-US.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialSilenceTimeoutInSeconds">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; InitialSilenceTimeoutInSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; InitialSilenceTimeoutInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InitialSilenceTimeoutInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialSilenceTimeoutInSeconds As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.InitialSilenceTimeoutInSeconds : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InitialSilenceTimeoutInSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum initial silence allowed from the time we start the recognition operation 
+            before we timeout and fail the operation. 
+            
+            if we are playing a prompt, then this timer starts after prompt finishes.
+            
+            Default : 5 secs
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterdigitTimeoutInSeconds">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; InterdigitTimeoutInSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; InterdigitTimeoutInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InterdigitTimeoutInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterdigitTimeoutInSeconds As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.InterdigitTimeoutInSeconds : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InterdigitTimeoutInSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Mamimum allowed time between digits if we are doing dtmf based choice recognition or CollectDigits recognition
+            
+            Default : 1 sec
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayPrompt">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt PlayPrompt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt PlayPrompt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.PlayPrompt" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlayPrompt As PlayPrompt" />
+      <MemberSignature Language="F#" Value="member this.PlayPrompt : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.PlayPrompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Promt to played out (if any) before recognition starts. 
+            Customers can choose to specify "playPrompt" action separately or 
+            specify as part of "recognize" - mostly all recognitions are preceeded by a prompt
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="recognize.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

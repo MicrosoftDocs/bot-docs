@@ -51,7 +51,7 @@
       <MemberSignature Language="VB.NET" Value="Function TryPull (ByRef event As Event) As Boolean Implements IEventConsumer(Of Event).TryPull" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Base.IEventConsumer`1.TryPull(`0)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Base.IEventConsumer`1.TryPull(`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

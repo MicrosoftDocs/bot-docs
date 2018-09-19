@@ -1,0 +1,213 @@
+﻿<Type Name="PaymentDetails" FullName="Microsoft.Bot.Connector.PaymentDetails">
+  <TypeSignature Language="C#" Value="public class PaymentDetails" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentDetails extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentDetails" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentDetails" />
+  <TypeSignature Language="F#" Value="type PaymentDetails = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides information about the requested transaction
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentDetails ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentDetails.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentDetails class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentDetails (Microsoft.Bot.Connector.PaymentItem total = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt; displayItems = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt; shippingOptions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt; modifiers = null, string error = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.PaymentItem total, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentItem&gt; displayItems, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentShippingOption&gt; shippingOptions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentDetailsModifier&gt; modifiers, string error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentDetails.#ctor(Microsoft.Bot.Connector.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentShippingOption},System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentDetailsModifier},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional total As PaymentItem = null, Optional displayItems As IList(Of PaymentItem) = null, Optional shippingOptions As IList(Of PaymentShippingOption) = null, Optional modifiers As IList(Of PaymentDetailsModifier) = null, Optional error As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentDetails : Microsoft.Bot.Connector.PaymentItem * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt; * string -&gt; Microsoft.Bot.Connector.PaymentDetails" Usage="new Microsoft.Bot.Connector.PaymentDetails (total, displayItems, shippingOptions, modifiers, error)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="total" Type="Microsoft.Bot.Connector.PaymentItem" />
+        <Parameter Name="displayItems" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt;" />
+        <Parameter Name="shippingOptions" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt;" />
+        <Parameter Name="modifiers" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt;" />
+        <Parameter Name="error" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="total">Contains the total amount of the payment
+            request</param>
+        <param name="displayItems">Contains line items for the payment
+            request that the user agent may display</param>
+        <param name="shippingOptions">A sequence containing the different
+            shipping options for the user to choose from</param>
+        <param name="modifiers">Contains modifiers for particular payment
+            method identifiers</param>
+        <param name="error">Error description</param>
+        <summary>
+            Initializes a new instance of the PaymentDetails class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt; DisplayItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentItem&gt; DisplayItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentDetails.DisplayItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayItems As IList(Of PaymentItem)" />
+      <MemberSignature Language="F#" Value="member this.DisplayItems : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt; with get, set" Usage="Microsoft.Bot.Connector.PaymentDetails.DisplayItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="displayItems")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets contains line items for the payment request that the
+            user agent may display
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public string Error { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Error" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentDetails.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Property Error As String" />
+      <MemberSignature Language="F#" Value="member this.Error : string with get, set" Usage="Microsoft.Bot.Connector.PaymentDetails.Error" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="error")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets error description
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modifiers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt; Modifiers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentDetailsModifier&gt; Modifiers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentDetails.Modifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Modifiers As IList(Of PaymentDetailsModifier)" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt; with get, set" Usage="Microsoft.Bot.Connector.PaymentDetails.Modifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="modifiers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets contains modifiers for particular payment method
+            identifiers
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShippingOptions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt; ShippingOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentShippingOption&gt; ShippingOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentDetails.ShippingOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShippingOptions As IList(Of PaymentShippingOption)" />
+      <MemberSignature Language="F#" Value="member this.ShippingOptions : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt; with get, set" Usage="Microsoft.Bot.Connector.PaymentDetails.ShippingOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a sequence containing the different shipping options
+            for the user to choose from
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Total">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.PaymentItem Total { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.PaymentItem Total" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentDetails.Total" />
+      <MemberSignature Language="VB.NET" Value="Public Property Total As PaymentItem" />
+      <MemberSignature Language="F#" Value="member this.Total : Microsoft.Bot.Connector.PaymentItem with get, set" Usage="Microsoft.Bot.Connector.PaymentDetails.Total" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="total")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.PaymentItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets contains the total amount of the payment request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

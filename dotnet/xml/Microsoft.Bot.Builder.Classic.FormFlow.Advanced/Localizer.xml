@@ -319,7 +319,7 @@
       <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionaryEnumerator *  *  -&gt; Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer&#xA;override this.Load : System.Collections.IDictionaryEnumerator *  *  -&gt; Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer" Usage="localizer.Load (reader, missing, extra)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
@@ -350,7 +350,7 @@
       <MemberSignature Language="F#" Value="abstract member Lookup : string *  -&gt; bool&#xA;override this.Lookup : string *  -&gt; bool" Usage="localizer.Lookup (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer.Lookup(System.String,System.String)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer.Lookup(System.String,System.String@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
@@ -463,7 +463,7 @@
       <MemberSignature Language="F#" Value="abstract member LookupValues : string *  -&gt; bool&#xA;override this.LookupValues : string *  -&gt; bool" Usage="localizer.LookupValues (key, values)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer.LookupValues(System.String,System.String[])</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.ILocalizer.LookupValues(System.String,System.String[]@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

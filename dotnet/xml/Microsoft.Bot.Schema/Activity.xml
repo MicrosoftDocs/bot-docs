@@ -2076,7 +2076,7 @@
       <MemberSignature Language="F#" Value="abstract member TryGetChannelData :  -&gt; bool&#xA;override this.TryGetChannelData :  -&gt; bool" Usage="activity.TryGetChannelData instance" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.TryGetChannelData``1(``0)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.TryGetChannelData``1(``0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
