@@ -1089,7 +1089,7 @@
       <MemberSignature Language="F#" Value="abstract member Limits :  *  -&gt; bool&#xA;override this.Limits :  *  -&gt; bool" Usage="field.Limits (min, max)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IFieldState`1.Limits(System.Double,System.Double)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

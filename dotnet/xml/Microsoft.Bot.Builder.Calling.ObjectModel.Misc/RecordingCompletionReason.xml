@@ -1,0 +1,184 @@
+﻿<Type Name="RecordingCompletionReason" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason">
+  <TypeSignature Language="C#" Value="public enum RecordingCompletionReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecordingCompletionReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecordingCompletionReason" />
+  <TypeSignature Language="F#" Value="type RecordingCompletionReason = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason&gt;))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Reason for completion of Recording Operation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CallTerminated">
+      <MemberSignature Language="C#" Value="CallTerminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason CallTerminated = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CallTerminated" />
+      <MemberSignature Language="VB.NET" Value="CallTerminated" />
+      <MemberSignature Language="F#" Value="CallTerminated = 5" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CallTerminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            The underlying call was terminated
+            
+            This results in a "successful" Recording Attempt if there were any bytes recorded
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedSilenceDetected">
+      <MemberSignature Language="C#" Value="CompletedSilenceDetected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason CompletedSilenceDetected = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CompletedSilenceDetected" />
+      <MemberSignature Language="VB.NET" Value="CompletedSilenceDetected" />
+      <MemberSignature Language="F#" Value="CompletedSilenceDetected = 3" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CompletedSilenceDetected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Recording was completed as detected by silence after a talk spurt
+            
+            This results in a "successful" Recording Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedStopToneDetected">
+      <MemberSignature Language="C#" Value="CompletedStopToneDetected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason CompletedStopToneDetected = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CompletedStopToneDetected" />
+      <MemberSignature Language="VB.NET" Value="CompletedStopToneDetected" />
+      <MemberSignature Language="F#" Value="CompletedStopToneDetected = 4" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CompletedStopToneDetected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            Recording was completed by user punching in a stop tone
+            
+            This results in a "successful" Recording Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialSilenceTimeout">
+      <MemberSignature Language="C#" Value="InitialSilenceTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason InitialSilenceTimeout = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.InitialSilenceTimeout" />
+      <MemberSignature Language="VB.NET" Value="InitialSilenceTimeout" />
+      <MemberSignature Language="F#" Value="InitialSilenceTimeout = 1" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.InitialSilenceTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The maximum initial silence that can be tolerated had been reached
+            
+            This results in a "failed" Recording Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxRecordingTimeout">
+      <MemberSignature Language="C#" Value="MaxRecordingTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason MaxRecordingTimeout = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.MaxRecordingTimeout" />
+      <MemberSignature Language="VB.NET" Value="MaxRecordingTimeout" />
+      <MemberSignature Language="F#" Value="MaxRecordingTimeout = 2" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.MaxRecordingTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The maximum duration that can be allowed for recording had been reached
+            
+            This results in a "successful" Recording Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemporarySystemFailure">
+      <MemberSignature Language="C#" Value="TemporarySystemFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason TemporarySystemFailure = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.TemporarySystemFailure" />
+      <MemberSignature Language="VB.NET" Value="TemporarySystemFailure" />
+      <MemberSignature Language="F#" Value="TemporarySystemFailure = 6" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.TemporarySystemFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            Misc System Failure
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Unknown not recognized.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

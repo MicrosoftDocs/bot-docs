@@ -1,0 +1,20 @@
+﻿<Type Name="ErrorHandling" FullName="Microsoft.Bot.Connector.ErrorHandling">
+  <TypeSignature Language="C#" Value="public static class ErrorHandling" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ErrorHandling extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ErrorHandling" />
+  <TypeSignature Language="VB.NET" Value="Public Class ErrorHandling" />
+  <TypeSignature Language="F#" Value="type ErrorHandling = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

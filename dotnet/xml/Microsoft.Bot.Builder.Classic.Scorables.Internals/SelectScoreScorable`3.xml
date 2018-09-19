@@ -25,6 +25,11 @@
       <InterfaceName>Microsoft.Bot.Builder.Classic.Scorables.IScorable&lt;Item,TargetScore&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="Item">To be added.</typeparam>
     <typeparam name="SourceScore">To be added.</typeparam>

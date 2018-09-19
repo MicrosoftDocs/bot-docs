@@ -16,6 +16,9 @@
     <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Parameter, AllowMultiple=true, Inherited=true)</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>

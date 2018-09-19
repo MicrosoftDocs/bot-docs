@@ -19,6 +19,11 @@
       <InterfaceName>System.IEquatable&lt;Microsoft.Bot.Builder.Classic.Dialogs.IAddress&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>

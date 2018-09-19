@@ -1,0 +1,49 @@
+﻿<Type Name="ErrorHandling" FullName="Microsoft.Bot.Connector.DirectLine.ErrorHandling">
+  <TypeSignature Language="C#" Value="public static class ErrorHandling" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ErrorHandling extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.ErrorHandling" />
+  <TypeSignature Language="VB.NET" Value="Public Module ErrorHandling" />
+  <TypeSignature Language="F#" Value="type ErrorHandling = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HandleError&lt;ObjectT&gt;">
+      <MemberSignature Language="C#" Value="public static ObjectT HandleError&lt;ObjectT&gt; (this Microsoft.Rest.HttpOperationResponse&lt;ObjectT&gt; result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!ObjectT HandleError&lt;ObjectT&gt;(class Microsoft.Rest.HttpOperationResponse`1&lt;!!ObjectT&gt; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ErrorHandling.HandleError``1(Microsoft.Rest.HttpOperationResponse{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HandleError(Of ObjectT) (result As HttpOperationResponse(Of ObjectT)) As ObjectT" />
+      <MemberSignature Language="F#" Value="static member HandleError : Microsoft.Rest.HttpOperationResponse&lt;'ObjectT&gt; -&gt; 'ObjectT" Usage="Microsoft.Bot.Connector.DirectLine.ErrorHandling.HandleError result" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ObjectT</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="ObjectT" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="result" Type="Microsoft.Rest.HttpOperationResponse&lt;ObjectT&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="ObjectT">To be added.</typeparam>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

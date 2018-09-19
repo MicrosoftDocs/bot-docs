@@ -67,7 +67,7 @@
       <MemberSignature Language="F#" Value="abstract member TryResolve : Type * obj *  -&gt; bool&#xA;override this.TryResolve : Type * obj *  -&gt; bool" Usage="delegatingResolver.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

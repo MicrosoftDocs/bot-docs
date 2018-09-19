@@ -1,0 +1,162 @@
+﻿<Type Name="DigitCollectionCompletionReason" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason">
+  <TypeSignature Language="C#" Value="public enum DigitCollectionCompletionReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DigitCollectionCompletionReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DigitCollectionCompletionReason" />
+  <TypeSignature Language="F#" Value="type DigitCollectionCompletionReason = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason&gt;))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Reason for completion of Digit Collection Operation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CallTerminated">
+      <MemberSignature Language="C#" Value="CallTerminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason CallTerminated = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.CallTerminated" />
+      <MemberSignature Language="VB.NET" Value="CallTerminated" />
+      <MemberSignature Language="F#" Value="CallTerminated = 4" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.CallTerminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The underlying call was terminated
+            
+            This results in a "failed" DigitCollection Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedStopToneDetected">
+      <MemberSignature Language="C#" Value="CompletedStopToneDetected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason CompletedStopToneDetected = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.CompletedStopToneDetected" />
+      <MemberSignature Language="VB.NET" Value="CompletedStopToneDetected" />
+      <MemberSignature Language="F#" Value="CompletedStopToneDetected = 3" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.CompletedStopToneDetected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Digit collection attempt was stopped by user punching in a stop tone.
+            
+            This results in a "successful" DigitCollection Attempt and we return the digits collected till then. 
+            The stopTone(s) detected are excluded from the digits we return.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialSilenceTimeout">
+      <MemberSignature Language="C#" Value="InitialSilenceTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason InitialSilenceTimeout = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.InitialSilenceTimeout" />
+      <MemberSignature Language="VB.NET" Value="InitialSilenceTimeout" />
+      <MemberSignature Language="F#" Value="InitialSilenceTimeout = 1" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.InitialSilenceTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The max time period by which user is supposed to start punching in digits has elapsed.
+            
+            This results in a "failed" DigitCollection Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InterdigitTimeout">
+      <MemberSignature Language="C#" Value="InterdigitTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason InterdigitTimeout = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.InterdigitTimeout" />
+      <MemberSignature Language="VB.NET" Value="InterdigitTimeout" />
+      <MemberSignature Language="F#" Value="InterdigitTimeout = 2" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.InterdigitTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The maximum time period between user punching in successive digits has elapsed.
+            
+            This results in a "successful" DigitCollection Attempt and we return the digits collected till then.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemporarySystemFailure">
+      <MemberSignature Language="C#" Value="TemporarySystemFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason TemporarySystemFailure = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.TemporarySystemFailure" />
+      <MemberSignature Language="VB.NET" Value="TemporarySystemFailure" />
+      <MemberSignature Language="F#" Value="TemporarySystemFailure = 5" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.TemporarySystemFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            Misc System Failure
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Unknown not recognized.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

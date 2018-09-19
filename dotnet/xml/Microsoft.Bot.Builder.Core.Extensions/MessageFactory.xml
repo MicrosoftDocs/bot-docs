@@ -152,6 +152,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attachments" /> is <c>null</c>.</exception>
+        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.Attachment(System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
         <example>This code creates and sends a carousel of HeroCards.
             <code>
             // Create the activity and attach a set of Hero cards.
@@ -187,7 +188,6 @@
             // Send the activity as a reply to the user.
             await context.SendActivity(activity);
             </code></example>
-        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.Attachment(System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ContentUrl">
@@ -274,6 +274,9 @@
             </summary>
         <returns>A message activity that contains the suggested actions.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cardActions" /> is <c>null</c>.</exception>
+        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{System.String},System.String,System.String,System.String)" />
         <example>
           <code>    
             // Create the activity and add suggested actions.
@@ -289,9 +292,6 @@
             await context.SendActivity(activity);
             </code>
         </example>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="cardActions" /> is <c>null</c>.</exception>
-        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{System.String},System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SuggestedActions">
@@ -334,6 +334,9 @@
             <see cref="P:Microsoft.Bot.Schema.CardAction.Title" /> and sets the <see cref="P:Microsoft.Bot.Schema.CardAction.Type" /> to
             <see cref="F:Microsoft.Bot.Schema.ActionTypes.ImBack" />.
             </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="actions" /> is <c>null</c>.</exception>
+        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
         <example>
           <code>
             // Create the activity and add suggested actions.
@@ -345,9 +348,6 @@
             await context.SendActivity(activity);
             </code>
         </example>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="actions" /> is <c>null</c>.</exception>
-        <altmember cref="M:Microsoft.Bot.Builder.Core.Extensions.MessageFactory.SuggestedActions(System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Text">

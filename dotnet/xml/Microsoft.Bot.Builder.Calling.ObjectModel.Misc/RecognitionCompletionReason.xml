@@ -1,0 +1,210 @@
+﻿<Type Name="RecognitionCompletionReason" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason">
+  <TypeSignature Language="C#" Value="public enum RecognitionCompletionReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecognitionCompletionReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecognitionCompletionReason" />
+  <TypeSignature Language="F#" Value="type RecognitionCompletionReason = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason&gt;))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Reason for completion of Recognition(speech/dtmf) Operation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CallTerminated">
+      <MemberSignature Language="C#" Value="CallTerminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason CallTerminated = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.CallTerminated" />
+      <MemberSignature Language="VB.NET" Value="CallTerminated" />
+      <MemberSignature Language="F#" Value="CallTerminated = 6" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.CallTerminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            The underlying call was terminated
+            
+            This results in a "failed" Recognition Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DtmfOptionMatched">
+      <MemberSignature Language="C#" Value="DtmfOptionMatched" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason DtmfOptionMatched = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.DtmfOptionMatched" />
+      <MemberSignature Language="VB.NET" Value="DtmfOptionMatched" />
+      <MemberSignature Language="F#" Value="DtmfOptionMatched = 5" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.DtmfOptionMatched" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            The recognition successfully matched a Dtmf option
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncorrectDtmf">
+      <MemberSignature Language="C#" Value="IncorrectDtmf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason IncorrectDtmf = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.IncorrectDtmf" />
+      <MemberSignature Language="VB.NET" Value="IncorrectDtmf" />
+      <MemberSignature Language="F#" Value="IncorrectDtmf = 2" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.IncorrectDtmf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The Recognition completed because the user punched in wrong dtmf which was not amongst the possible 
+            choices. 
+            
+            We would only look for dtmfs when dtmf recognition is requested. Thus for pure speech menus, this
+            completion reason would never be possible.
+            
+            This results in a "failed" Recognition Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialSilenceTimeout">
+      <MemberSignature Language="C#" Value="InitialSilenceTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason InitialSilenceTimeout = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.InitialSilenceTimeout" />
+      <MemberSignature Language="VB.NET" Value="InitialSilenceTimeout" />
+      <MemberSignature Language="F#" Value="InitialSilenceTimeout = 1" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.InitialSilenceTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The maximum initial silence that can be tolerated had been reached
+            
+            This results in a "failed" Recognition Attempt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InterdigitTimeout">
+      <MemberSignature Language="C#" Value="InterdigitTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason InterdigitTimeout = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.InterdigitTimeout" />
+      <MemberSignature Language="VB.NET" Value="InterdigitTimeout" />
+      <MemberSignature Language="F#" Value="InterdigitTimeout = 3" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.InterdigitTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            The maximum time period between user punching in successive digits has elapsed.
+            
+            We would only look for dtmfs when dtmf recognition is requested. Thus for pure speech menus, this
+            completion reason would never be possible.
+            
+            This results in a "failed" Recognition Attempt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeechOptionMatched">
+      <MemberSignature Language="C#" Value="SpeechOptionMatched" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason SpeechOptionMatched = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.SpeechOptionMatched" />
+      <MemberSignature Language="VB.NET" Value="SpeechOptionMatched" />
+      <MemberSignature Language="F#" Value="SpeechOptionMatched = 4" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.SpeechOptionMatched" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The recognition successfully matched a Grammar option
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemporarySystemFailure">
+      <MemberSignature Language="C#" Value="TemporarySystemFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason TemporarySystemFailure = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.TemporarySystemFailure" />
+      <MemberSignature Language="VB.NET" Value="TemporarySystemFailure" />
+      <MemberSignature Language="F#" Value="TemporarySystemFailure = 7" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.TemporarySystemFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            Misc System Failure
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Unknown not recognized.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

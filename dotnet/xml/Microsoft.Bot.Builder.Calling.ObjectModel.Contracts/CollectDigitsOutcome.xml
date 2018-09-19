@@ -1,0 +1,98 @@
+﻿<Type Name="CollectDigitsOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome">
+  <TypeSignature Language="C#" Value="public class CollectDigitsOutcome" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectDigitsOutcome extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectDigitsOutcome" />
+  <TypeSignature Language="F#" Value="type CollectDigitsOutcome = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is a part of the "recognize" action outcome. This is specified if the customer had specified any collectDigits operation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectDigitsOutcome ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletionReason">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason CompletionReason { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason CompletionReason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.CompletionReason" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompletionReason As DigitCollectionCompletionReason" />
+      <MemberSignature Language="F#" Value="member this.CompletionReason : Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.CompletionReason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Completion reason
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Digits">
+      <MemberSignature Language="C#" Value="public string Digits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Digits" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.Digits" />
+      <MemberSignature Language="VB.NET" Value="Public Property Digits As String" />
+      <MemberSignature Language="F#" Value="member this.Digits : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.Digits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Digits collected ( if any )
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

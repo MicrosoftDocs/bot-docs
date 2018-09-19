@@ -20,6 +20,9 @@
     <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
       <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>

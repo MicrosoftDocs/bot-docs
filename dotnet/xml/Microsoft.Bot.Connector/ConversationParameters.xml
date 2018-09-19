@@ -1,0 +1,240 @@
+﻿<Type Name="ConversationParameters" FullName="Microsoft.Bot.Connector.ConversationParameters">
+  <TypeSignature Language="C#" Value="public class ConversationParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConversationParameters" />
+  <TypeSignature Language="F#" Value="type ConversationParameters = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Parameters for creating a new conversation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationParameters.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the ConversationParameters class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationParameters (Nullable&lt;bool&gt; isGroup = null, Microsoft.Bot.Connector.ChannelAccount bot = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; members = null, string topicName = null, Microsoft.Bot.Connector.Activity activity = null, object channelData = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, class Microsoft.Bot.Connector.ChannelAccount bot, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; members, string topicName, class Microsoft.Bot.Connector.Activity activity, object channelData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationParameters.#ctor(System.Nullable{System.Boolean},Microsoft.Bot.Connector.ChannelAccount,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,Microsoft.Bot.Connector.Activity,System.Object)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationParameters : Nullable&lt;bool&gt; * Microsoft.Bot.Connector.ChannelAccount * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * string * Microsoft.Bot.Connector.Activity * obj -&gt; Microsoft.Bot.Connector.ConversationParameters" Usage="new Microsoft.Bot.Connector.ConversationParameters (isGroup, bot, members, topicName, activity, channelData)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isGroup" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" />
+        <Parameter Name="members" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;" />
+        <Parameter Name="topicName" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="channelData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="isGroup">IsGroup</param>
+        <param name="bot">The bot address for this conversation</param>
+        <param name="members">Members to add to the conversation</param>
+        <param name="topicName">(Optional) Topic of the conversation (if
+            supported by the channel)</param>
+        <param name="activity">(Optional) When creating a new conversation,
+            use this activity as the initial message to the
+            conversation</param>
+        <param name="channelData">Channel specific payload for creating the
+            conversation</param>
+        <summary>
+            Initializes a new instance of the ConversationParameters class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Activity Activity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Activity As Activity" />
+      <MemberSignature Language="F#" Value="member this.Activity : Microsoft.Bot.Connector.Activity with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Optional) When creating a new conversation, use this
+            activity as the initial message to the conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bot">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.ChannelAccount Bot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.ChannelAccount Bot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.Bot" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bot As ChannelAccount" />
+      <MemberSignature Language="F#" Value="member this.Bot : Microsoft.Bot.Connector.ChannelAccount with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.Bot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bot")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the bot address for this conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelData">
+      <MemberSignature Language="C#" Value="public object ChannelData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.ChannelData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelData As Object" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.ChannelData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelData")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets channel specific payload for creating the conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGroup">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.IsGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsGroup As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsGroup : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.IsGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isGroup")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets isGroup
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; Members { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; Members" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.Members" />
+      <MemberSignature Language="VB.NET" Value="Public Property Members As IList(Of ChannelAccount)" />
+      <MemberSignature Language="F#" Value="member this.Members : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.Members" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="members")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets members to add to the conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopicName">
+      <MemberSignature Language="C#" Value="public string TopicName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TopicName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.TopicName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopicName As String" />
+      <MemberSignature Language="F#" Value="member this.TopicName : string with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.TopicName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="topicName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Optional) Topic of the conversation (if supported by
+            the channel)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

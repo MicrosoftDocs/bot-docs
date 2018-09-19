@@ -1,0 +1,244 @@
+﻿<Type Name="ReceiptItem" FullName="Microsoft.Bot.Connector.DirectLine.ReceiptItem">
+  <TypeSignature Language="C#" Value="public class ReceiptItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReceiptItem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.ReceiptItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReceiptItem" />
+  <TypeSignature Language="F#" Value="type ReceiptItem = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiptItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ReceiptItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiptItem (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Connector.DirectLine.CardImage image = null, string price = null, string quantity = null, Microsoft.Bot.Connector.DirectLine.CardAction tap = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Connector.DirectLine.CardImage image, string price, string quantity, class Microsoft.Bot.Connector.DirectLine.CardAction tap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ReceiptItem.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.DirectLine.CardImage,System.String,System.String,Microsoft.Bot.Connector.DirectLine.CardAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As CardImage = null, Optional price As String = null, Optional quantity As String = null, Optional tap As CardAction = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.DirectLine.ReceiptItem : string * string * string * Microsoft.Bot.Connector.DirectLine.CardImage * string * string * Microsoft.Bot.Connector.DirectLine.CardAction -&gt; Microsoft.Bot.Connector.DirectLine.ReceiptItem" Usage="new Microsoft.Bot.Connector.DirectLine.ReceiptItem (title, subtitle, text, image, price, quantity, tap)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="subtitle" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="image" Type="Microsoft.Bot.Connector.DirectLine.CardImage" />
+        <Parameter Name="price" Type="System.String" />
+        <Parameter Name="quantity" Type="System.String" />
+        <Parameter Name="tap" Type="Microsoft.Bot.Connector.DirectLine.CardAction" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="subtitle">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="price">To be added.</param>
+        <param name="quantity">To be added.</param>
+        <param name="tap">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.DirectLine.CardImage Image { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.DirectLine.CardImage Image" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Property Image As CardImage" />
+      <MemberSignature Language="F#" Value="member this.Image : Microsoft.Bot.Connector.DirectLine.CardImage with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Image" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="image")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.CardImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Price">
+      <MemberSignature Language="C#" Value="public string Price { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Price" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Price" />
+      <MemberSignature Language="VB.NET" Value="Public Property Price As String" />
+      <MemberSignature Language="F#" Value="member this.Price : string with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Price" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="price")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Quantity">
+      <MemberSignature Language="C#" Value="public string Quantity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Quantity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Quantity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Quantity As String" />
+      <MemberSignature Language="F#" Value="member this.Quantity : string with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Quantity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="quantity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtitle">
+      <MemberSignature Language="C#" Value="public string Subtitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Subtitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subtitle As String" />
+      <MemberSignature Language="F#" Value="member this.Subtitle : string with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Subtitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subtitle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tap">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.DirectLine.CardAction Tap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.DirectLine.CardAction Tap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Tap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tap As CardAction" />
+      <MemberSignature Language="F#" Value="member this.Tap : Microsoft.Bot.Connector.DirectLine.CardAction with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Tap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.CardAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.ReceiptItem.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Connector.DirectLine.ReceiptItem.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
