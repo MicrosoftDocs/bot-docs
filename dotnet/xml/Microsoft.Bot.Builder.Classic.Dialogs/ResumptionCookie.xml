@@ -20,6 +20,9 @@
     <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
       <AttributeName>System.Obsolete("Use ConversationReference.")</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>

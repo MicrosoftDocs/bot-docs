@@ -1,0 +1,154 @@
+﻿<Type Name="IOAuthApi" FullName="Microsoft.Bot.Connector.IOAuthApi">
+  <TypeSignature Language="C#" Value="public interface IOAuthApi" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOAuthApi" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IOAuthApi" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IOAuthApi" />
+  <TypeSignature Language="F#" Value="type IOAuthApi = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            OAuth API operations.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSignInLinkAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetSignInLinkAsync (Microsoft.Bot.Connector.IActivity activity, string connectionName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetSignInLinkAsync(class Microsoft.Bot.Connector.IActivity activity, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IOAuthApi.GetSignInLinkAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetSignInLinkAsync : Microsoft.Bot.Connector.IActivity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iOAuthApi.GetSignInLinkAsync (activity, connectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync(string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IOAuthApi.GetUserTokenAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetUserTokenAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;" Usage="iOAuthApi.GetUserTokenAsync (userId, connectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, string magicCode, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync(string userId, string connectionName, string magicCode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IOAuthApi.GetUserTokenAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetUserTokenAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;" Usage="iOAuthApi.GetUserTokenAsync (userId, connectionName, magicCode, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="magicCode" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="magicCode">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendEmulateOAuthCardsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendEmulateOAuthCardsAsync (bool emulateOAuthCards);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SendEmulateOAuthCardsAsync(bool emulateOAuthCards) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IOAuthApi.SendEmulateOAuthCardsAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendEmulateOAuthCardsAsync (emulateOAuthCards As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="abstract member SendEmulateOAuthCardsAsync : bool -&gt; System.Threading.Tasks.Task" Usage="iOAuthApi.SendEmulateOAuthCardsAsync emulateOAuthCards" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="emulateOAuthCards" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="emulateOAuthCards">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutUserAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string userId, string connectionName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignOutUserAsync(string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IOAuthApi.SignOutUserAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SignOutUserAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iOAuthApi.SignOutUserAsync (userId, connectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

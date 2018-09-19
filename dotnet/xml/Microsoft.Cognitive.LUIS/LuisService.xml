@@ -16,6 +16,11 @@
       <InterfaceName>Microsoft.Cognitive.LUIS.ILuisService</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Standard implementation of ILuisService against actual LUIS service.

@@ -20,6 +20,11 @@
       <InterfaceName>Microsoft.Bot.Builder.Classic.Dialogs.ICase&lt;T,R&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">To be added.</typeparam>
     <typeparam name="R">To be added.</typeparam>

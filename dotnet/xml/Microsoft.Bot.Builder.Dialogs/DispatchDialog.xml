@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DispatchDialog&lt;System.Object&gt;</BaseTypeName>
@@ -15,6 +16,11 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             A dialog specialized to dispatch an IScorable.
@@ -34,6 +40,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

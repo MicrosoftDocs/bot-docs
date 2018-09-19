@@ -1,0 +1,73 @@
+﻿<Type Name="ReplayTranscript" FullName="Microsoft.Bot.Builder.History.ReplayTranscript">
+  <TypeSignature Language="C#" Value="public sealed class ReplayTranscript" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReplayTranscript extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.ReplayTranscript" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReplayTranscript" />
+  <TypeSignature Language="F#" Value="type ReplayTranscript = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.History</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class to collect and then replay activities as a transcript.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplayTranscript (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, Func&lt;Microsoft.Bot.Connector.IActivity,string&gt; header = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, string&gt; header) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.ReplayTranscript.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Func{Microsoft.Bot.Connector.IActivity,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (botToUser As IBotToUser, Optional header As Func(Of IActivity, String) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.History.ReplayTranscript : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * Func&lt;Microsoft.Bot.Connector.IActivity, string&gt; -&gt; Microsoft.Bot.Builder.History.ReplayTranscript" Usage="new Microsoft.Bot.Builder.History.ReplayTranscript (botToUser, header)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.History</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+        <Parameter Name="header" Type="System.Func&lt;Microsoft.Bot.Connector.IActivity,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="botToUser">Where to replay transcript.</param>
+        <param name="header">Function for defining the transcript header on each message.</param>
+        <summary>
+            Constructor.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replay">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Replay (Microsoft.Bot.Connector.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Replay(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.ReplayTranscript.Replay(Microsoft.Bot.Connector.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replay (activity As IActivity) As Task" />
+      <MemberSignature Language="F#" Value="member this.Replay : Microsoft.Bot.Connector.IActivity -&gt; System.Threading.Tasks.Task" Usage="replayTranscript.Replay activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.History</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">Activity.</param>
+        <summary>
+            Replay activity to IBotToUser.
+            </summary>
+        <returns>Task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

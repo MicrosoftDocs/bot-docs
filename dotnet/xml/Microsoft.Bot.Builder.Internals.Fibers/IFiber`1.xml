@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="C" />
@@ -32,6 +33,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -52,6 +54,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;&gt;</ReturnType>
@@ -72,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -92,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;</ReturnType>

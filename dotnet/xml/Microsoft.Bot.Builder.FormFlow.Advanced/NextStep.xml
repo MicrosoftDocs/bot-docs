@@ -7,11 +7,17 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Next step to take.
@@ -28,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +54,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="direction" Type="Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection" />
@@ -69,6 +77,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="names" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
@@ -91,6 +100,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.StepDirection</ReturnType>
@@ -112,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>

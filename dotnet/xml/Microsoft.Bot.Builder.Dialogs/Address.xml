@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,6 +20,11 @@
       <InterfaceName>System.IEquatable&lt;Microsoft.Bot.Builder.Dialogs.IAddress&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             The key that minimally and completely identifies a bot's conversation with a user on a channel. 
@@ -36,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -72,6 +79,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -118,6 +127,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -141,6 +151,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -165,6 +176,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -189,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Address</ReturnType>
@@ -213,6 +226,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -237,6 +251,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -260,6 +275,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

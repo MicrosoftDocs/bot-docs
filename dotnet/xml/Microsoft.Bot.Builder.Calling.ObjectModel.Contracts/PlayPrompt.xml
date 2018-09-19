@@ -1,0 +1,91 @@
+﻿<Type Name="PlayPrompt" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt">
+  <TypeSignature Language="C#" Value="public class PlayPrompt : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlayPrompt extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlayPrompt&#xA;Inherits ActionBase" />
+  <TypeSignature Language="F#" Value="type PlayPrompt = class&#xA;    inherit ActionBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is the action which customers can specify to indicate that the server call agent should play/tts out prompt(s).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PlayPrompt ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prompts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt&gt; Prompts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt&gt; Prompts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.Prompts" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prompts As IEnumerable(Of Prompt)" />
+      <MemberSignature Language="F#" Value="member this.Prompts : seq&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.Prompts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of prompts to play out
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="playPrompt.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

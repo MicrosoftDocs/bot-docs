@@ -44,7 +44,7 @@
       <MemberSignature Language="VB.NET" Value="Function TryParse (properties As IDictionary(Of String, Object), ByRef resolution As Resolution) As Boolean Implements IResolutionParser.TryParse" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Cognitive.LUIS.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Cognitive.LUIS.Resolution)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Cognitive.LUIS.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Cognitive.LUIS.Resolution@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>

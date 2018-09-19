@@ -122,7 +122,7 @@
       <MemberSignature Language="VB.NET" Value="Function TryLoad (ByRef item As T) As Boolean Implements IStore(Of T).TryLoad" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Internals.Fibers.IStore`1.TryLoad(`0)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Internals.Fibers.IStore`1.TryLoad(`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

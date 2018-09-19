@@ -1,0 +1,316 @@
+﻿<Type Name="ReceiptCard" FullName="Microsoft.Bot.Connector.ReceiptCard">
+  <TypeSignature Language="C#" Value="public class ReceiptCard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReceiptCard extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ReceiptCard" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReceiptCard" />
+  <TypeSignature Language="F#" Value="type ReceiptCard = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A receipt card
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiptCard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ReceiptCard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the ReceiptCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiptCard (string title = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; items = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; facts = null, Microsoft.Bot.Connector.CardAction tap = null, string total = null, string tax = null, string vat = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ReceiptItem&gt; items, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Fact&gt; facts, class Microsoft.Bot.Connector.CardAction tap, string total, string tax, string vat, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ReceiptCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ReceiptItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.Fact},Microsoft.Bot.Connector.CardAction,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional items As IList(Of ReceiptItem) = null, Optional facts As IList(Of Fact) = null, Optional tap As CardAction = null, Optional total As String = null, Optional tax As String = null, Optional vat As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ReceiptCard : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; * Microsoft.Bot.Connector.CardAction * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.ReceiptCard" Usage="new Microsoft.Bot.Connector.ReceiptCard (title, items, facts, tap, total, tax, vat, buttons)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="items" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt;" />
+        <Parameter Name="facts" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt;" />
+        <Parameter Name="tap" Type="Microsoft.Bot.Connector.CardAction" />
+        <Parameter Name="total" Type="System.String" />
+        <Parameter Name="tax" Type="System.String" />
+        <Parameter Name="vat" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="title">Title of the card</param>
+        <param name="items">Array of Receipt Items</param>
+        <param name="facts">Array of Fact objects</param>
+        <param name="tap">This action will be activated when user taps on
+            the card</param>
+        <param name="total">Total amount of money paid (or to be
+            paid)</param>
+        <param name="tax">Total amount of tax paid (or to be paid)</param>
+        <param name="vat">Total amount of VAT paid (or to be paid)</param>
+        <param name="buttons">Set of actions applicable to the current
+            card</param>
+        <summary>
+            Initializes a new instance of the ReceiptCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buttons">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; Buttons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; Buttons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Buttons" />
+      <MemberSignature Language="VB.NET" Value="Public Property Buttons As IList(Of CardAction)" />
+      <MemberSignature Language="F#" Value="member this.Buttons : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Buttons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets set of actions applicable to the current card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public const string ContentType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ReceiptCard.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Connector.ReceiptCard.ContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Facts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; Facts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Fact&gt; Facts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Facts" />
+      <MemberSignature Language="VB.NET" Value="Public Property Facts As IList(Of Fact)" />
+      <MemberSignature Language="F#" Value="member this.Facts : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Facts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="facts")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets array of Fact objects
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ReceiptItem&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Property Items As IList(Of ReceiptItem)" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="items")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets array of Receipt Items
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tap">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.CardAction Tap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.CardAction Tap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Tap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tap As CardAction" />
+      <MemberSignature Language="F#" Value="member this.Tap : Microsoft.Bot.Connector.CardAction with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Tap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.CardAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this action will be activated when user taps on the
+            card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tax">
+      <MemberSignature Language="C#" Value="public string Tax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Tax" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tax As String" />
+      <MemberSignature Language="F#" Value="member this.Tax : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Tax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tax")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets total amount of tax paid (or to be paid)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets title of the card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Total">
+      <MemberSignature Language="C#" Value="public string Total { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Total" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Total" />
+      <MemberSignature Language="VB.NET" Value="Public Property Total As String" />
+      <MemberSignature Language="F#" Value="member this.Total : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Total" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="total")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets total amount of money paid (or to be paid)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vat">
+      <MemberSignature Language="C#" Value="public string Vat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Vat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ReceiptCard.Vat" />
+      <MemberSignature Language="VB.NET" Value="Public Property Vat As String" />
+      <MemberSignature Language="F#" Value="member this.Vat : string with get, set" Usage="Microsoft.Bot.Connector.ReceiptCard.Vat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vat")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets total amount of VAT paid (or to be paid)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

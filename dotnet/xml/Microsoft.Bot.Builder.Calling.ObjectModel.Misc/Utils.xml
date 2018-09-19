@@ -1,0 +1,74 @@
+﻿<Type Name="Utils" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils">
+  <TypeSignature Language="C#" Value="public class Utils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Utils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils" />
+  <TypeSignature Language="VB.NET" Value="Public Class Utils" />
+  <TypeSignature Language="F#" Value="type Utils = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Utils class
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Utils ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssertArgument">
+      <MemberSignature Language="C#" Value="public static void AssertArgument (bool condition, string format, params object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AssertArgument(bool condition, string format, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils.AssertArgument(System.Boolean,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AssertArgument (condition As Boolean, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="static member AssertArgument : bool * string * obj[] -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils.AssertArgument (condition, format, args)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="condition" Type="System.Boolean" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="condition"></param>
+        <param name="format"></param>
+        <param name="args"></param>
+        <summary>
+            Argument checker
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

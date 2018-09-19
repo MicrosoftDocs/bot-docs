@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</BaseTypeName>
@@ -15,6 +16,9 @@
   <Attributes>
     <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pattern" Type="Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />
@@ -60,6 +65,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="patterns" Type="System.String[]">

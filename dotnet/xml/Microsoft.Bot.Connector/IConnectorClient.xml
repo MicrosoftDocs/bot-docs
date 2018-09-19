@@ -6,6 +6,7 @@
   <TypeSignature Language="F#" Value="type IConnectorClient = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -54,6 +55,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,6 +78,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,6 +101,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,6 +124,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,6 +148,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,6 +171,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

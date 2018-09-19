@@ -1,0 +1,305 @@
+﻿<Type Name="ConversationsExtensions" FullName="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions">
+  <TypeSignature Language="C#" Value="public static class ConversationsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConversationsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ConversationsExtensions" />
+  <TypeSignature Language="F#" Value="type ConversationsExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetActivities">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.ActivitySet GetActivities (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.ActivitySet GetActivities(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.GetActivities(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivities (operations As IConversations, conversationId As String, Optional watermark As String = null) As ActivitySet" />
+      <MemberSignature Language="F#" Value="static member GetActivities : Microsoft.Bot.Connector.DirectLine.IConversations * string * string -&gt; Microsoft.Bot.Connector.DirectLine.ActivitySet" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.GetActivities (operations, conversationId, watermark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.ActivitySet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="watermark" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="watermark">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivitiesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ActivitySet&gt; GetActivitiesAsync (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.ActivitySet&gt; GetActivitiesAsync(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.GetActivitiesAsync(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetActivitiesAsync : Microsoft.Bot.Connector.DirectLine.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ActivitySet&gt;" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.GetActivitiesAsync (operations, conversationId, watermark, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ActivitySet&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="watermark" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="watermark">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.ResourceResponse PostActivity (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, Microsoft.Bot.Connector.DirectLine.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.ResourceResponse PostActivity(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, class Microsoft.Bot.Connector.DirectLine.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.PostActivity(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,Microsoft.Bot.Connector.DirectLine.Activity)" />
+      <MemberSignature Language="F#" Value="static member PostActivity : Microsoft.Bot.Connector.DirectLine.IConversations * string * Microsoft.Bot.Connector.DirectLine.Activity -&gt; Microsoft.Bot.Connector.DirectLine.ResourceResponse" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.PostActivity (operations, conversationId, activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.ResourceResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.DirectLine.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostActivityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt; PostActivityAsync (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, Microsoft.Bot.Connector.DirectLine.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt; PostActivityAsync(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, class Microsoft.Bot.Connector.DirectLine.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.PostActivityAsync(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,Microsoft.Bot.Connector.DirectLine.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member PostActivityAsync : Microsoft.Bot.Connector.DirectLine.IConversations * string * Microsoft.Bot.Connector.DirectLine.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.PostActivityAsync (operations, conversationId, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.DirectLine.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReconnectToConversation">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.Conversation ReconnectToConversation (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.Conversation ReconnectToConversation(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.ReconnectToConversation(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReconnectToConversation (operations As IConversations, conversationId As String, Optional watermark As String = null) As Conversation" />
+      <MemberSignature Language="F#" Value="static member ReconnectToConversation : Microsoft.Bot.Connector.DirectLine.IConversations * string * string -&gt; Microsoft.Bot.Connector.DirectLine.Conversation" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.ReconnectToConversation (operations, conversationId, watermark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.Conversation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="watermark" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="watermark">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReconnectToConversationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt; ReconnectToConversationAsync (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.Conversation&gt; ReconnectToConversationAsync(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, string watermark, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.ReconnectToConversationAsync(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReconnectToConversationAsync : Microsoft.Bot.Connector.DirectLine.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.ReconnectToConversationAsync (operations, conversationId, watermark, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="watermark" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="watermark">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartConversation">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.Conversation StartConversation (this Microsoft.Bot.Connector.DirectLine.IConversations operations);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.Conversation StartConversation(class Microsoft.Bot.Connector.DirectLine.IConversations operations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.StartConversation(Microsoft.Bot.Connector.DirectLine.IConversations)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartConversation (operations As IConversations) As Conversation" />
+      <MemberSignature Language="F#" Value="static member StartConversation : Microsoft.Bot.Connector.DirectLine.IConversations -&gt; Microsoft.Bot.Connector.DirectLine.Conversation" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.StartConversation operations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.Conversation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartConversationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt; StartConversationAsync (this Microsoft.Bot.Connector.DirectLine.IConversations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.Conversation&gt; StartConversationAsync(class Microsoft.Bot.Connector.DirectLine.IConversations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.StartConversationAsync(Microsoft.Bot.Connector.DirectLine.IConversations,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member StartConversationAsync : Microsoft.Bot.Connector.DirectLine.IConversations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.StartConversationAsync (operations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.Conversation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upload">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.DirectLine.ResourceResponse Upload (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, System.IO.Stream file, string userId = null, string contentType = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.DirectLine.ResourceResponse Upload(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, class System.IO.Stream file, string userId, string contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.Upload(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,System.IO.Stream,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Upload (operations As IConversations, conversationId As String, file As Stream, Optional userId As String = null, Optional contentType As String = null) As ResourceResponse" />
+      <MemberSignature Language="F#" Value="static member Upload : Microsoft.Bot.Connector.DirectLine.IConversations * string * System.IO.Stream * string * string -&gt; Microsoft.Bot.Connector.DirectLine.ResourceResponse" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.Upload (operations, conversationId, file, userId, contentType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.DirectLine.ResourceResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="file" Type="System.IO.Stream" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt; UploadAsync (this Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, System.IO.Stream file, string userId = null, string contentType = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt; UploadAsync(class Microsoft.Bot.Connector.DirectLine.IConversations operations, string conversationId, class System.IO.Stream file, string userId, string contentType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.UploadAsync(Microsoft.Bot.Connector.DirectLine.IConversations,System.String,System.IO.Stream,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member UploadAsync : Microsoft.Bot.Connector.DirectLine.IConversations * string * System.IO.Stream * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.DirectLine.ConversationsExtensions.UploadAsync (operations, conversationId, file, userId, contentType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.DirectLine.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.DirectLine.IConversations" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="file" Type="System.IO.Stream" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="file">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="contentType">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

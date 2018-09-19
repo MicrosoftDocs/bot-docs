@@ -1,0 +1,68 @@
+﻿<Type Name="IMessageReactionActivity" FullName="Microsoft.Bot.Connector.IMessageReactionActivity">
+  <TypeSignature Language="C#" Value="public interface IMessageReactionActivity : Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageReactionActivity implements class Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IMessageReactionActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageReactionActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IMessageReactionActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A reaction to a Message Activity
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReactionsAdded">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; ReactionsAdded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; ReactionsAdded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageReactionActivity.ReactionsAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionsAdded As IList(Of MessageReaction)" />
+      <MemberSignature Language="F#" Value="member this.ReactionsAdded : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; with get, set" Usage="Microsoft.Bot.Connector.IMessageReactionActivity.ReactionsAdded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reactions added to the activity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReactionsRemoved">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; ReactionsRemoved { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; ReactionsRemoved" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageReactionActivity.ReactionsRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionsRemoved As IList(Of MessageReaction)" />
+      <MemberSignature Language="F#" Value="member this.ReactionsRemoved : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; with get, set" Usage="Microsoft.Bot.Connector.IMessageReactionActivity.ReactionsRemoved" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reactions removed from the activity
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

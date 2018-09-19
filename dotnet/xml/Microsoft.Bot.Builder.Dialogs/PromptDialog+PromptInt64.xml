@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Int64,System.Int64&gt;</BaseTypeName>
@@ -16,6 +17,11 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>   Prompt for a Int64 </summary>
     <remarks>   Normally used through <see cref="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Number(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{System.Int64},System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />.</remarks>
@@ -31,6 +37,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;System.Int64&gt;" />
@@ -55,6 +62,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="prompt" Type="System.String" />
@@ -85,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -107,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -129,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

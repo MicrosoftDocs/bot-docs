@@ -1,0 +1,42 @@
+﻿<Type Name="IEventActivity" FullName="Microsoft.Bot.Connector.DirectLine.IEventActivity">
+  <TypeSignature Language="C#" Value="public interface IEventActivity : Microsoft.Bot.Connector.DirectLine.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventActivity implements class Microsoft.Bot.Connector.DirectLine.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DirectLine.IEventActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEventActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IEventActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.DirectLine.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.DirectLine.IEventActivity.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="Microsoft.Bot.Connector.DirectLine.IEventActivity.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.DirectLine</AssemblyName>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

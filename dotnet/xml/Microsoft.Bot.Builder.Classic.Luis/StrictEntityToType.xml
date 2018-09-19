@@ -88,7 +88,7 @@
       <MemberSignature Language="VB.NET" Value="Function TryMapToDateRanges (now As DateTime, entities As IEnumerable(Of EntityRecommendation), ByRef ranges As IEnumerable(Of Range(Of DateTime))) As Boolean Implements IEntityToType.TryMapToDateRanges" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Luis.IEntityToType.TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Internals.Fibers.Range{System.DateTime}})</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Luis.IEntityToType.TryMapToDateRanges(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Luis.Models.EntityRecommendation},System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Internals.Fibers.Range{System.DateTime}}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
@@ -118,7 +118,7 @@
       <MemberSignature Language="VB.NET" Value="Function TryMapToTimeSpan (now As DateTime, entities As IEnumerable(Of EntityRecommendation), ByRef span As TimeSpan) As Boolean Implements IEntityToType.TryMapToTimeSpan" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Luis.Models.EntityRecommendation},System.TimeSpan)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Luis.IEntityToType.TryMapToTimeSpan(System.DateTime,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Classic.Luis.Models.EntityRecommendation},System.TimeSpan@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>
