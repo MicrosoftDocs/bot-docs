@@ -273,6 +273,6 @@ qnamaker create --in qnaKB.json --msbot | msbot connect qna --stdin
 ## References
 - [BotBuilder Tools Source Code](https://github.com/Microsoft/botbuilder-tools)
 - [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/MSBot)
-- [ChatDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Chatdown)
+- [ChatDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Chatdown)
 - [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/Ludown)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
