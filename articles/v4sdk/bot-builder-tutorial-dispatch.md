@@ -107,6 +107,11 @@ dispatch init -name CombineWeatherAndLights -luisAuthoringKey "YOUR-LUIS-AUTHORI
 
 For each of the LUIS apps that you have created, get the LUIS app ID. Those can be found for each app under **My Apps** on the [LUIS site](https://www.luis.ai/home); click the app name, and then click **Settings** to see the **Application ID**. Use the same *LUIS authoring key* you got from **Step 2**.
 
+> [!NOTE] 
+> The dispatch tool can also take services listed in a .bot file and add them to the .dispatch file. See [--bot option](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Dispatch/readme.md) in the readme.
+>
+> You can also specify which intents from a child LUIS model to include in your dispatch model. For example, an app has _Greet, Help, and Cancel_ intents, and you want only to include _Greet_ intent. The dipatch tool provides --includedIntents option to accomplish that. See [--includedIntents](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Dispatch/readme.md) in the readme.
+
 Run the following command for each of the LUIS apps you created (e.g.: **homeautomation** and **weather**). Be sure to replace the appropriate ID for the appropriate command below.
 
 ```
@@ -575,9 +580,6 @@ Review example utterances that are flagged as duplicates in **Summary.html**, an
 [DispatchJSON]: https://aka.ms/dispatch-luis
 [FAQ_TSV]: https://aka.ms/dispatch-qna-tsv
 
-[DispatchTool]: https://github.com/Microsoft/botbuilder-tools/tree/master/Dispatch
+[DispatchTool]: https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch
 [DispatchBotCS]: https://aka.ms/dispatch-sample-cs
 [DispatchBotJs]: https://aka.ms/dispatch-sample-js
-
-
-

@@ -2,12 +2,12 @@
 title: Language Understanding | Microsoft Docs
 description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
 keywords: LUIS, intent, recognizer, dispatch tool, qna, qna maker
-author: DeniseMak
-ms.author: v-demak
+author: ivorb
+ms.author: v-ivorb
 manager: rstand
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 03/22/2018
+ms.date: 09/19/2018
 ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -36,7 +36,7 @@ For example, consider the many ways a user of a travel bot can ask to book a fli
 
 These utterances can have different structures and contain various synonyms for “flight” that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
 
-When you design your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In <a href="https://www.luis.ai" target="_blank">LUIS</a>, you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
+When you design your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In [luis.ai](https://www.luis.ai), you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
 
 Your bot uses the intent recognized by LUIS to determine the conversation topic, or begin a conversation flow. For example, when a user says "I'd like to book a flight", your bot detects the BookFlight intent and invokes the conversation flow for starting a search for flights. LUIS detects entities like the destination city and the departure date, both in the original utterance that triggers the intent and later in the conversation flow. Once the bot has all the information it needs, it can fulfill the user's intent.
 
@@ -44,23 +44,19 @@ Your bot uses the intent recognized by LUIS to determine the conversation topic,
 
 ### Recognize intent in common scenarios
 
-To save development time, LUIS provides pre-trained language models that recognize common utterances for common categories of bots. <!-- Consider if you'll use prebuilt or custom intents and entities: -->
+To save development time, LUIS provides pre-trained language models that recognize common utterances for common categories of bots. 
 
-* **Prebuilt domains** are pre-trained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. See the Reminders sample for [C#]( https://github.com/Microsoft/botbuilder-dotnet/tree/master/samples-final/8.AspNetCore-LUIS-Bot) or [JavaScript](https://github.com/Microsoft/botbuilder-js/tree/master/samples/luis-bot-es6) for an example of using a prebuilt domain in your bot, and take a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains)  that LUIS offers.
-* **Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age.
+**Prebuilt domains** are pre-trained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. Take a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains) that LUIS offers.
 
-See [Extract typed LUIS results][luis-v4-typed-entities] for an example that uses LUIS to extract dates. See [Use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize.
-
-<!-- TODO: Link to Bot Framework design guidance about LUIS apps, when this is ready -->
+**Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age. See [use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize.
 
 ## How your bot gets messages from LUIS
-Every time your LUIS-integrated bot receives an utterance, the bot sends it to the LUIS app, which returns a JSON response that contains the intents and entities. The Bot Builder SDK provides functionality (implemented as [middleware](bot-builder-concept-middleware.md)) to automatically process the responses from LUIS and pass them to your bot. You can use the [turn context](bot-builder-concept-activity-processing.md#turn-context) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response. 
+
+Once you have set up and connected LUIS, your bot can send the message to your LUIS app, which returns a JSON response that contains the intents and entities. Then, you can use the [turn context](bot-builder-concept-activity-processing.md#turn-context) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response. 
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
-See the following to get started with integrating a LUIS app with a bot:
-
-* [Using LUIS for conversation flow][luis-v4-how-to]
+To get started using a LUIS app with your bot, check out [using LUIS for language understanding][luis-v4-how-to].
 
 ## Best practices for Language Understanding
 
@@ -82,12 +78,11 @@ The `None` intent is very useful for improving recognition results. In this home
 
 ### Review the utterances that LUIS app receives
 
-LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [Review suggested utterances](https://docs.microsoft.com/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walkthrough.
+LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [suggested utterances](https://docs.microsoft.com/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walkthrough.
 
 
 ## Integrate multiple LUIS apps and QnA services with the Dispatch tool
 
-<!-- 1. Modular. 2. Better performance for classification -->
 When building a multi-purpose bot that understands multiple conversational topics, you can start to develop services for each function separately, and then integrate them together. These services can include Language Understanding (LUIS) apps and QnAMaker services. Here are a few example scenarios in which a bot might combine multiple LUIS apps, multiple QnAMaker services or a combination of the two:
 
 * A personal assistant bot lets the user invoke a variety of commands. Each category of commands form a "skill" that can be developed separately, and each skill has a LUIS app.
@@ -96,31 +91,11 @@ When building a multi-purpose bot that understands multiple conversational topic
 
 ### The Dispatch tool
 
-The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services with your bot, by creating a *dispatch app*, which is a new LUIS app that routes messages to the appropriate LUIS and QnAMaker services. See the [Dispatch tutorial](./bot-builder-tutorial-dispatch.md) for a step-by-step tutorial that combines multiple LUIS apps and QnA Maker in one bot.
+The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services with your bot, by creating a *dispatch app*, which is a new LUIS app that routes messages to the appropriate LUIS and QnAMaker services. See the [dispatch tutorial](./bot-builder-tutorial-dispatch.md) for a step-by-step tutorial that combines multiple LUIS apps and QnA Maker in one bot.
 
 ## Use LUIS to improve speech recognition
 
 For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming][speechrecognitionpriming] with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
 
 ## Additional resources
-
-* [Language understanding](~/bot-service-concept-intelligence.md#language-understanding)
-* <a href="https://www.luis.ai" target="_blank">LUIS website</a>
-
-<!-- Links -->
-[luis_home]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
-[middleware]: bot-builder-concept-middleware.md
-<!-- TODO: this link is a placeholder, need to find existing speech priming article -->
-[speechrecognitionpriming]: ../bot-service-channel-connect-webchat-speech.md
-
-[luis-v4-typed-entities]: bot-builder-howto-v4-luisgen.md
-[luis-v4-how-to]: bot-builder-howto-v4-luis.md
-[luis-v4-cs-quickstart]: https://github.com/Microsoft/botbuilder-dotnet/wiki/Using-LUIS-and-QnA-Maker
-[luis-v4-js-quickstart]: https://github.com/Microsoft/botbuilder-js/wiki/Using-LUIS-and-QnA-Maker
-
-## Next steps
-
-Cognitive Services provides ways to add intelligence to your bot.
-
-> [!div class="nextstepaction"]
-> [Cognitive Services for bots](../bot-service-concept-intelligence.md)
+Refer to [Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/) documentation for more information.

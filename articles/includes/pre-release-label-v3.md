@@ -1,2 +1,2 @@
 > [!NOTE]  
-> This topic applies to SDK v3 (stable) release. You can find the documentation for the pre-release verion of the SDK v4 [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0) 
+> This topic applies to SDK v3 release. You can find the documentation for the latest verion of the SDK v4 [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0) 

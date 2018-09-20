@@ -1,9 +1,4 @@
 # [Manage a bot](../bot-service-manage-overview.md)
-# Build
-## [Edit a bot with Online Code Editor](../bot-service-build-online-code-editor.md)
-## [Download and redeploy bot source code](../bot-service-build-download-source-code.md)
-## [Set up continuous deployment](../bot-service-build-continuous-deployment.md)
-# [Test in Web Chat](../bot-service-manage-test-webchat.md)
 # [Bot analytics](../bot-service-manage-analytics.md)
 # Channels
 ## [Connect a bot to channels](../bot-service-manage-channels.md)
@@ -12,9 +7,8 @@
 ## [Skype for Business](../bot-service-channel-connect-skypeforbusiness.md)
 ## [Direct Line](../bot-service-channel-connect-directline.md)
 ## [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
-## Web Chat
-### [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md)
-### [Enable speech in Web Chat](../bot-service-channel-connect-webchat-speech.md)
+## [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md)
+## [Enable speech in Web Chat](../bot-service-channel-connect-webchat-speech.md)
 ## [Email](../bot-service-channel-connect-email.md)
 ## [GroupMe](../bot-service-channel-connect-groupme.md) 
 ## [Facebook](../bot-service-channel-connect-facebook.md) 
@@ -22,10 +16,7 @@
 ## [Slack](../bot-service-channel-connect-slack.md) 
 ## [Telegram](../bot-service-channel-connect-telegram.md) 
 ## [Twilio](../bot-service-channel-connect-twilio.md)
-## [Preview bot features](../bot-service-channel-inspector.md)
 # [Configure settings](../bot-service-manage-settings.md)
 # [Configure speech priming](../bot-service-manage-speech-priming.md)
 # [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md)
 # [Migrate your bot](../bot-service-migrate-bot.md)
-# [Deploy your bot to Azure](../bot-builder-howto-deploy-azure.md)
-

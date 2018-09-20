@@ -7,18 +7,23 @@ ms.author: v-ivorb
 manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 05/14/2018
+ms.date: 09/14/2018
 ---
 
 # Deploy your bot to Azure
 
-[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+[!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. To do so, you will first deploy the bot to Azure in an App Service then you’ll configure your bot with the Azure Bot Service using the Bot Channels Registration item.
+Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. For C# bot, you can use Visual Studio or Azure CLI to publish your bot to Azure. For Node.js bot, you can only use Azure CLI. 
+
+## Prerequisites
+- Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- Install Azure CLI bot extension using `az extension add -n botservice` command
+
+# [C#](#tab/csharp)
 
 ## Publish from Visual Studio
-
-Use Visual Studio to create your resources in Azure and publish your code.
+You will first deploy the bot to Azure from Visual Studio in an App Service. Then you’ll configure your bot with the Azure Bot Service using Bot Channels Registration.
 
 In the Solution Explorer window, right click on your project’s node and select Publish.
 
@@ -120,16 +125,34 @@ In order for your bot to authenticate with the Azure Bot Service, you need to ad
 
 8. Click the Save button up top.
 
+# [JavaScript](#tab/javascript)
+
+## Create a registration bot
+Use az bot create command to create a **registration** bot.
+
+```AZ CLI
+az bot create --resource-group "my-resource-group" --name "my-bot-name" --kind "registration" --description "description-of-my-bot" --lang Node
+```
+## Publish your bot
+Publish your bot to Azure by using the `publish` command. The _path to directory_ is where the code is for your local bot.
+
+```AZ CLI
+az bot publish -n name -g group --code-dir <path to directory> 
+```
+
 ## Test Your Bot in Production
 At this point, you can test your bot from Azure using the built-in Web Chat client.
 
-1. Go back to your Resource group in the portal
+1. Go back to your Resource group in the Azure portal
 
-2. Open your bot registration.
+2. Open your bot.
 
-3. Under Bot management, select Test in Web Chat.
+3. Under **Bot management**, select **Test in Web Chat**.
 
 ![test in webchat](media/azure-bot-quickstarts/getting-started-test-webchat.png)
 
 4. Type a message like `Hi` and press Enter. The bot will echo back `Turn 1: You sent Hi`.
 
+## Next steps
+> [!div class="nextstepaction"]
+> [Set up continous deployment](bot-service-build-continuous-deployment.md)

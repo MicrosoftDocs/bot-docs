@@ -11,7 +11,7 @@ ms.date: 08/23/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Send messages
+# Send text and spoken messages
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

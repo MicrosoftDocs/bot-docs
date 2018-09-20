@@ -72,6 +72,16 @@ Bots follow an event driven programming paradigm, which can be hard to rationali
 
 Your bot deals with different types of [activities](bot-builder-concept-activity-processing.md) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
 
+**Saving and retrieving user interactions with transcripts**
+
+Azure blob transcript storage provides a specialized resource where you can both [store and retrieve transcripts](bot-builder-howto-v4-storage.md) containing interactions between your users and your bot.  
+
+Additionally, once user input interactions have been stored, you can use Azure's "_storage explorer_" to manually view data contained in transcripts stored within your blob transcript store. The following example opens "_storage explorer_" from settings for "_mynewtestblobstorage_." To open a saved user input select:    Blob Container > ChannelId > TranscriptId > ConversationId
+
+![Examine_stored_transcript_text](./media/examine_transcript_text_in_azure.png)
+
+This opens the stored user conversation input in JSON format. User input is preserved together with the key "_text:_."
+
 **How middleware works**
 
 [Middleware](bot-builder-concept-middleware.md) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 

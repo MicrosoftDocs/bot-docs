@@ -54,7 +54,7 @@ To load transcripts, simply select **File** --> **Open Tranascript File** and se
 
 ## Author transcripts with Chatdown
 
-The [Chatdown](https://github.com/Microsoft/botbuilder-tools/tree/master/Chatdown) tool is a transcript generator which consumes a [markdown](https://daringfireball.net/projects/markdown/syntax) file to generate activity transcripts. You can author your own transcripts completely in markdown format, and save them as a **.chat** file to generate transcripts. This is useful for quickly creating mock conversation scenarios during bot development.  
+The [Chatdown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Chatdown) tool is a transcript generator which consumes a [markdown](https://daringfireball.net/projects/markdown/syntax) file to generate activity transcripts. You can author your own transcripts completely in markdown format, and save them as a **.chat** file to generate transcripts. This is useful for quickly creating mock conversation scenarios during bot development.  
 
 ### Prerequisites
 
@@ -83,7 +83,7 @@ What can I do for you?
 user: Actually nevermind, goodbye.
 bot: bye!
 ```
-[Click here](https://github.com/Microsoft/botbuilder-tools/tree/master/Chatdown/Examples) to view more samples of .chat files. 
+[Click here](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Chatdown/Examples) to view more samples of .chat files. 
 
 To generate the transcript file, using the **chatdown** command in your CLI, enter the name of the .chat file, followed by '>' and the name of the output transcript file. 
 
@@ -92,7 +92,7 @@ chatdown sample.chat > sample.transcript
 ```
 ## Manage bot resources with the MSBot tool
 
-The new [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/MSBot) tool allows you to create a **.bot** file, which stores metadata about different services your bot consumes, all in one location. This file also enables your bot to connect to these services from the CLI.The tool is available as an npm module, to install it run:
+The new [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool allows you to create a **.bot** file, which stores metadata about different services your bot consumes, all in one location. This file also enables your bot to connect to these services from the CLI.The tool is available as an npm module, to install it run:
 
 ```
 npm install -g msbot 

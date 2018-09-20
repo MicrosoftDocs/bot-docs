@@ -8,6 +8,7 @@ manager: rstand
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 12/17/2017
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Cognitive Services
