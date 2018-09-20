@@ -7,20 +7,14 @@ ms.author: v-ivorb
 manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 09/14/2018
+ms.date: 09/19/2018
 ---
 
 # Deploy your bot to Azure
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. For C# bot, you can use Visual Studio or Azure CLI to publish your bot to Azure. For Node.js bot, you can only use Azure CLI. 
-
-## Prerequisites
-- Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-- Install Azure CLI bot extension using `az extension add -n botservice` command
-
-# [C#](#tab/csharp)
+Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. For C# bot, you can use Visual Studio or Azure CLI to publish your bot to Azure. 
 
 ## Publish from Visual Studio
 You will first deploy the bot to Azure from Visual Studio in an App Service. Then you’ll configure your bot with the Azure Bot Service using Bot Channels Registration.
@@ -124,21 +118,6 @@ In order for your bot to authenticate with the Azure Bot Service, you need to ad
 7. Type **MicrosoftAppPassword** for the name and your password for the value.
 
 8. Click the Save button up top.
-
-# [JavaScript](#tab/javascript)
-
-## Create a registration bot
-Use az bot create command to create a **registration** bot.
-
-```AZ CLI
-az bot create --resource-group "my-resource-group" --name "my-bot-name" --kind "registration" --description "description-of-my-bot" --lang Node
-```
-## Publish your bot
-Publish your bot to Azure by using the `publish` command. The _path to directory_ is where the code is for your local bot.
-
-```AZ CLI
-az bot publish -n name -g group --code-dir <path to directory> 
-```
 
 ## Test Your Bot in Production
 At this point, you can test your bot from Azure using the built-in Web Chat client.
