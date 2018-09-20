@@ -7,7 +7,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 9/11/2018
+ms.date: 9/17/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -122,9 +122,17 @@ You can handle a return value from a dialog either within a waterfall step in a 
 Within a waterfall step, the dialog provides the return value in the waterfall step context's _result_ property.
 You generally only need to check the status of the dialog turn result from your bot's turn logic.
 
+### In your bot's on turn handler
+
+Both the dialog context's _begin dialog_ and _continue dialog_ async methods return a dialog turn result value, for single-step dialogs and multi-step dialogs, respectively.
+
+In a multi-step waterfall, you would capture the returned results from the dialog context's _continue dialog_ method, instead of from its _begin dialog_ method.
+
+If your bot can start a number of different dialogs, you will to reconcile the returned information with the original process that you started. You could do this by setting a state flag in your bot or by checking the return type or type of information contained in the return value.
+
 ## Repeating a dialog
 
-To repeat a dialog, use the *replace dialog* method. The dialog context's *replace dialog* method will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. You can use this method to create a loop by replacing a dialog with itself. Note that if you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialie the dialog appropriately. The options passed into the new dialog can be accessed via the step context's _options_ property in any step of the dialog.
+To repeat a dialog, use the *replace dialog* method. The dialog context's *replace dialog* method will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. You can use this method to create a loop by replacing a dialog with itself. Note that if you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialize the dialog appropriately. The options passed into the new dialog can be accessed via the step context's _options_ property in any step of the dialog.
 
 This is a great way to handle a complex conversation flow or to manage menus.
 
@@ -138,7 +146,7 @@ Therefore, you can create a branch within your conversation flow by including a 
 
 ## Component dialog
 
-The _component dialog_ class allows you to encapsulate one or more dialogs, and break some of your bot logic into separate classes that can then be shared between different bots or packaged for distribution. A component dialog class defines an internal _dialog set_ of its own, as well as one or more interlinked dialogs in that set. By defining dialogs as part of a component dialog, developers create a new scope in which dialogs are interpreted that is separate from the bot's main dialog set scope. This prevents dialogs from different components from colliding or interferering with one another.
+The _component dialog_ class allows you to encapsulate one or more dialogs, and break some of your bot logic into separate classes that can then be shared between different bots or packaged for distribution. A component dialog class defines an internal _dialog set_ of its own, as well as one or more interlinked dialogs in that set. By defining dialogs as part of a component dialog, developers create a new scope in which dialogs are interpreted that is separate from the bot's main dialog set scope. This prevents dialogs from different components from colliding or interfering with one another.
 
 The combined unit can be added into any bot's _dialog set_. Once it is added to the set, it can be invoked or popped off the stack just like any other dialogs in the set.
 
