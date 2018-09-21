@@ -1,3 +1,12 @@
+# Enterprise template
+## [Introduction](../v4sdk/bot-builder-enterprise-template-overview.md)
+## [Overview](../v4sdk/bot-builder-enterprise-template-overview-detail.md)
+## [Create a project](../v4sdk/bot-builder-enterprise-template-create-project.md)
+## [Customize template](../v4sdk/bot-builder-enterprise-template-customize.md)
+## [Deploy template](../v4sdk/bot-builder-enterprise-template-deployment.md)
+## [Analytics](../v4sdk/bot-builder-enterprise-template-powerbi.md)
+# Custom assistant
+## [Overview](../v4sdk/bot-builder-custom-assistant-introduction.md)
 # [FAQ](../bot-service-resources-bot-framework-faq.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
@@ -8,15 +17,6 @@
 # [Bot Framework Card schema](https://github.com/Microsoft/BotBuilder/blob/hub/specs/botframework-activity/botframework-cards.md)
 # [Bot Framework Transcript schema](https://github.com/Microsoft/BotBuilder/blob/hub/specs/transcript/transcript.md)
 # [Bot Service Compliance](../v4sdk/bot-service-compliance.md)
-# Enterprise template
-## [Introduction](../v4sdk/bot-builder-enterprise-template-overview.md)
-## [Overview](../v4sdk/bot-builder-enterprise-template-overview-detail.md)
-## [Create a project](../v4sdk/bot-builder-enterprise-template-create-project.md)
-## [Customize template](../v4sdk/bot-builder-enterprise-template-customize.md)
-## [Deploy template](../v4sdk/bot-builder-enterprise-template-deployment.md)
-## [Analytics](../v4sdk/bot-builder-enterprise-template-powerbi.md)
-# Custom assistant
-## [Overview](../v4sdk/bot-builder-custom-assistant-introduction.md)
 # Troubleshoot
 ## [Troubleshoot general problems](../bot-service-troubleshoot-general-problems.md)
 ## [Troubleshoot authentication](../bot-service-troubleshoot-authentication-problems.md)

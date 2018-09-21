@@ -1,4 +1,4 @@
-﻿---
+---
 title: Custom Assistant Overview | Microsoft Docs
 description: Learn about creating your own Custom Assistant
 author: darrenj
@@ -22,7 +22,7 @@ The scope of Custom Personal Assistant functionality is broad, typically offerin
 
 At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months. 
 
-![Custom Assistant Diagram](media/enterprise-template/CustomAssistantDiagram.png)
+![Custom Assistant Diagram](media/enterprise-template/CustomAssistantDiagram.jpg)
 
 ## Complete control of the user experience
 
