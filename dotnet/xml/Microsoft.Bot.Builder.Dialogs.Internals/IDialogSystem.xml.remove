@@ -1,0 +1,30 @@
+<Type Name="IDialogSystem" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem">
+  <TypeSignature Language="C#" Value="public interface IDialogSystem : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;, Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogSystem implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialogSystem&#xA;Implements IDialogTasks, IEventLoop, IEventProducer(Of IActivity)" />
+  <TypeSignature Language="F#" Value="type IDialogSystem = interface&#xA;    interface IDialogTasks&#xA;    interface IEventLoop&#xA;    interface IEventProducer&lt;IActivity&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Base.IEventLoop</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            The dialog system represents the top-level interface for the dialog tasks and their event loop.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

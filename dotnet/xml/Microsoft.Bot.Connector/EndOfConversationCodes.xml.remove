@@ -1,0 +1,137 @@
+<Type Name="EndOfConversationCodes" FullName="Microsoft.Bot.Connector.EndOfConversationCodes">
+  <TypeSignature Language="C#" Value="public static class EndOfConversationCodes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EndOfConversationCodes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.EndOfConversationCodes" />
+  <TypeSignature Language="VB.NET" Value="Public Class EndOfConversationCodes" />
+  <TypeSignature Language="F#" Value="type EndOfConversationCodes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines values for EndOfConversationCodes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BotIssuedInvalidMessage">
+      <MemberSignature Language="C#" Value="public const string BotIssuedInvalidMessage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BotIssuedInvalidMessage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotIssuedInvalidMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Const BotIssuedInvalidMessage As String " />
+      <MemberSignature Language="F#" Value="val mutable BotIssuedInvalidMessage : string" Usage="Microsoft.Bot.Connector.EndOfConversationCodes.BotIssuedInvalidMessage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotTimedOut">
+      <MemberSignature Language="C#" Value="public const string BotTimedOut;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BotTimedOut" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.BotTimedOut" />
+      <MemberSignature Language="VB.NET" Value="Public Const BotTimedOut As String " />
+      <MemberSignature Language="F#" Value="val mutable BotTimedOut : string" Usage="Microsoft.Bot.Connector.EndOfConversationCodes.BotTimedOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelFailed">
+      <MemberSignature Language="C#" Value="public const string ChannelFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChannelFailed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.ChannelFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChannelFailed As String " />
+      <MemberSignature Language="F#" Value="val mutable ChannelFailed : string" Usage="Microsoft.Bot.Connector.EndOfConversationCodes.ChannelFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedSuccessfully">
+      <MemberSignature Language="C#" Value="public const string CompletedSuccessfully;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CompletedSuccessfully" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.CompletedSuccessfully" />
+      <MemberSignature Language="VB.NET" Value="Public Const CompletedSuccessfully As String " />
+      <MemberSignature Language="F#" Value="val mutable CompletedSuccessfully : string" Usage="Microsoft.Bot.Connector.EndOfConversationCodes.CompletedSuccessfully" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="public const string Unknown;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Unknown" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Public Const Unknown As String " />
+      <MemberSignature Language="F#" Value="val mutable Unknown : string" Usage="Microsoft.Bot.Connector.EndOfConversationCodes.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserCancelled">
+      <MemberSignature Language="C#" Value="public const string UserCancelled;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UserCancelled" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.EndOfConversationCodes.UserCancelled" />
+      <MemberSignature Language="VB.NET" Value="Public Const UserCancelled As String " />
+      <MemberSignature Language="F#" Value="val mutable UserCancelled : string" Usage="Microsoft.Bot.Connector.EndOfConversationCodes.UserCancelled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,12 +1,16 @@
-﻿<Type Name="QnAMakerEndpoint" FullName="Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint">
+﻿<Type Name="QnAMakerEndpoint" FullName="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint">
   <TypeSignature Language="C#" Value="public class QnAMakerEndpoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerEndpoint extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class QnAMakerEndpoint" />
   <TypeSignature Language="F#" Value="type QnAMakerEndpoint = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,12 +26,16 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QnAMakerEndpoint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,66 +46,84 @@
     <Member MemberName="EndpointKey">
       <MemberSignature Language="C#" Value="public string EndpointKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EndpointKey" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.EndpointKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.EndpointKey" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointKey As String" />
-      <MemberSignature Language="F#" Value="member this.EndpointKey : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.EndpointKey" />
+      <MemberSignature Language="F#" Value="member this.EndpointKey : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.EndpointKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The endpoint key for the knowledge base.
+            Gets or sets the endpoint key for the knowledge base.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The endpoint key for the knowledge base.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Host">
       <MemberSignature Language="C#" Value="public string Host { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Host" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.Host" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
-      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.Host" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The host path. For example "https://westus.api.cognitive.microsoft.com/qnamaker/v2.0"
+            Gets or sets the host path. For example "https://westus.api.cognitive.microsoft.com/qnamaker/v2.0".
             </summary>
-        <value>To be added.</value>
+        <value>
+            The host path.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KnowledgeBaseId">
       <MemberSignature Language="C#" Value="public string KnowledgeBaseId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KnowledgeBaseId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.KnowledgeBaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.KnowledgeBaseId" />
       <MemberSignature Language="VB.NET" Value="Public Property KnowledgeBaseId As String" />
-      <MemberSignature Language="F#" Value="member this.KnowledgeBaseId : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint.KnowledgeBaseId" />
+      <MemberSignature Language="F#" Value="member this.KnowledgeBaseId : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint.KnowledgeBaseId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The knowledge base ID.
+            Gets or sets the knowledge base ID.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The knowledge base ID.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

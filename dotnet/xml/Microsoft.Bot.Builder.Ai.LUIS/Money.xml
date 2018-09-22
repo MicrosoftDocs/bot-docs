@@ -1,15 +1,20 @@
-﻿<Type Name="Money" FullName="Microsoft.Bot.Builder.Ai.LUIS.Money">
-  <TypeSignature Language="C#" Value="public class Money : Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Money extends Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.LUIS.Money" />
+﻿<Type Name="Money" FullName="Microsoft.Bot.Builder.AI.Luis.Money">
+  <TypeSignature Language="C#" Value="public class Money : Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Money extends Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.Money" />
   <TypeSignature Language="VB.NET" Value="Public Class Money&#xA;Inherits NumberWithUnits" />
   <TypeSignature Language="F#" Value="type Money = class&#xA;    inherit NumberWithUnits" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="botbuilder-dotnet-stable">Microsoft.Bot.Builder.AI.Luis.NumberWithUnits</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +25,26 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Money (double number, string units);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 number, string units) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.Money.#ctor(System.Double,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (number As Double, units As String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.LUIS.Money : double * string -&gt; Microsoft.Bot.Builder.Ai.LUIS.Money" Usage="new Microsoft.Bot.Builder.Ai.LUIS.Money (number, units)" />
+      <MemberSignature Language="C#" Value="public Money (double money, string units);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 money, string units) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Money.#ctor(System.Double,System.String)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (money As Double, units As String)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.Money : double * string -&gt; Microsoft.Bot.Builder.AI.Luis.Money" Usage="new Microsoft.Bot.Builder.AI.Luis.Money (money, units)" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="number" Type="System.Double" />
-        <Parameter Name="units" Type="System.String" />
+        <Parameter Name="money" Type="System.Double" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="units" Type="System.String" Index="1" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
+        <param name="money">To be added.</param>
         <param name="units">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -44,13 +53,17 @@
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.Money.ToString" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Money.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="money.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

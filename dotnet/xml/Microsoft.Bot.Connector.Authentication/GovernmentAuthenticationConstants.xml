@@ -1,0 +1,149 @@
+﻿<Type Name="GovernmentAuthenticationConstants" FullName="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants">
+  <TypeSignature Language="C#" Value="public static class GovernmentAuthenticationConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GovernmentAuthenticationConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class GovernmentAuthenticationConstants" />
+  <TypeSignature Language="F#" Value="type GovernmentAuthenticationConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Values and Constants used for Authentication and Authrization by the Bot Framework Protocol to US Government DataCenters
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelService">
+      <MemberSignature Language="C#" Value="public const string ChannelService;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChannelService" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ChannelService" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChannelService As String " />
+      <MemberSignature Language="F#" Value="val mutable ChannelService : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ChannelService" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Government Channel Service property value
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OAuthUrlGov">
+      <MemberSignature Language="C#" Value="public const string OAuthUrlGov;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OAuthUrlGov" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.OAuthUrlGov" />
+      <MemberSignature Language="VB.NET" Value="Public Const OAuthUrlGov As String " />
+      <MemberSignature Language="F#" Value="val mutable OAuthUrlGov : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.OAuthUrlGov" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            OAuth Url used to get a token from OAuthApiClient
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBotFromChannelOpenIdMetadataUrl">
+      <MemberSignature Language="C#" Value="public const string ToBotFromChannelOpenIdMetadataUrl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToBotFromChannelOpenIdMetadataUrl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToBotFromChannelOpenIdMetadataUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToBotFromChannelOpenIdMetadataUrl As String " />
+      <MemberSignature Language="F#" Value="val mutable ToBotFromChannelOpenIdMetadataUrl : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToBotFromChannelOpenIdMetadataUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO BOT FROM GOVERNMANT CHANNEL: OpenID metadata document for tokens coming from MSA
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBotFromChannelTokenIssuer">
+      <MemberSignature Language="C#" Value="public const string ToBotFromChannelTokenIssuer;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToBotFromChannelTokenIssuer" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToBotFromChannelTokenIssuer" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToBotFromChannelTokenIssuer As String " />
+      <MemberSignature Language="F#" Value="val mutable ToBotFromChannelTokenIssuer : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToBotFromChannelTokenIssuer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO BOT FROM GOVERNMENT CHANNEL: Token issuer
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToChannelFromBotLoginUrl">
+      <MemberSignature Language="C#" Value="public const string ToChannelFromBotLoginUrl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToChannelFromBotLoginUrl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToChannelFromBotLoginUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToChannelFromBotLoginUrl As String " />
+      <MemberSignature Language="F#" Value="val mutable ToChannelFromBotLoginUrl : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToChannelFromBotLoginUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO GOVERNMENT CHANNEL FROM BOT: Login URL
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToChannelFromBotOAuthScope">
+      <MemberSignature Language="C#" Value="public const string ToChannelFromBotOAuthScope;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToChannelFromBotOAuthScope" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToChannelFromBotOAuthScope" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToChannelFromBotOAuthScope As String " />
+      <MemberSignature Language="F#" Value="val mutable ToChannelFromBotOAuthScope : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToChannelFromBotOAuthScope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO GOVERNMENT CHANNEL FROM BOT: OAuth scope to request
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

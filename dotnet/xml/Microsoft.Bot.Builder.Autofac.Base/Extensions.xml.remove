@@ -1,0 +1,102 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Autofac.Base.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Autofac.Base.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RegisterAdapterChain&lt;TLimit&gt;">
+      <MemberSignature Language="C#" Value="public static Autofac.Builder.IRegistrationBuilder&lt;TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle&gt; RegisterAdapterChain&lt;TLimit&gt; (this Autofac.ContainerBuilder builder, params Type[] types);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Autofac.Builder.IRegistrationBuilder`3&lt;!!TLimit, class Autofac.Builder.SimpleActivatorData, class Autofac.Builder.SingleRegistrationStyle&gt; RegisterAdapterChain&lt;TLimit&gt;(class Autofac.ContainerBuilder builder, class System.Type[] types) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RegisterAdapterChain(Of TLimit) (builder As ContainerBuilder, ParamArray types As Type()) As IRegistrationBuilder(Of TLimit, SimpleActivatorData, SingleRegistrationStyle)" />
+      <MemberSignature Language="F#" Value="static member RegisterAdapterChain : Autofac.ContainerBuilder * Type[] -&gt; Autofac.Builder.IRegistrationBuilder&lt;'Limit, Autofac.Builder.SimpleActivatorData, Autofac.Builder.SingleRegistrationStyle&gt;" Usage="Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain (builder, types)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Autofac.Builder.IRegistrationBuilder&lt;TLimit,Autofac.Builder.SimpleActivatorData,Autofac.Builder.SingleRegistrationStyle&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TLimit" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" RefType="this" />
+        <Parameter Name="types" Type="System.Type[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TLimit">The service type provided by the component.</typeparam>
+        <param name="builder">Container builder.</param>
+        <param name="types">The services type keys that can be used to retrieve the components in the chain.</param>
+        <summary>
+            Register an adapter chain of components, exposing a shared service interface.
+            </summary>
+        <returns>Registration builder allowing the registration to be configured.</returns>
+        <remarks>
+            This registers a factory method to create a adapter chain of components, based on wrapping each
+            inner component with an adapter outer component.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterKeyedType&lt;TImplementer,TLimit&gt;">
+      <MemberSignature Language="C#" Value="public static Autofac.Builder.IRegistrationBuilder&lt;TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle&gt; RegisterKeyedType&lt;TImplementer,TLimit&gt; (this Autofac.ContainerBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Autofac.Builder.IRegistrationBuilder`3&lt;!!TImplementer, class Autofac.Builder.ConcreteReflectionActivatorData, class Autofac.Builder.SingleRegistrationStyle&gt; RegisterKeyedType&lt;TImplementer, TLimit&gt;(class Autofac.ContainerBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RegisterKeyedType(Of TImplementer, TLimit) (builder As ContainerBuilder) As IRegistrationBuilder(Of TImplementer, ConcreteReflectionActivatorData, SingleRegistrationStyle)" />
+      <MemberSignature Language="F#" Value="static member RegisterKeyedType : Autofac.ContainerBuilder -&gt; Autofac.Builder.IRegistrationBuilder&lt;'Implementer, Autofac.Builder.ConcreteReflectionActivatorData, Autofac.Builder.SingleRegistrationStyle&gt;" Usage="Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Autofac.Builder.IRegistrationBuilder&lt;TImplementer,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TImplementer" />
+        <TypeParameter Name="TLimit" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TImplementer">The type of the component implementation.</typeparam>
+        <typeparam name="TLimit">The service type provided by the component.</typeparam>
+        <param name="builder">Container builder.</param>
+        <summary>
+            Register a component to be created through reflection, and
+            provide a key that can be used to retrieve the component.
+            </summary>
+        <returns>Registration builder allowing the registration to be configured.</returns>
+        <remarks>
+            This method leverages Autofac's autowiring of components through reflection,
+            providing a key that directly reflects that component type, so that it might
+            be retrieved by that key and possibly replaced in an adapter chain.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

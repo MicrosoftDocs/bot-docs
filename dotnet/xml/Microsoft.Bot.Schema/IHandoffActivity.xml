@@ -1,0 +1,23 @@
+﻿<Type Name="IHandoffActivity" FullName="Microsoft.Bot.Schema.IHandoffActivity">
+  <TypeSignature Language="C#" Value="public interface IHandoffActivity : Microsoft.Bot.Schema.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHandoffActivity implements class Microsoft.Bot.Schema.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IHandoffActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHandoffActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IHandoffActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Control of the conversation has been transferred, or a request to transfer control of the conversation
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

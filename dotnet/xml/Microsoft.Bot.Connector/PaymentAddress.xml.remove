@@ -1,0 +1,410 @@
+<Type Name="PaymentAddress" FullName="Microsoft.Bot.Connector.PaymentAddress">
+  <TypeSignature Language="C#" Value="public class PaymentAddress" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentAddress extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentAddress" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentAddress" />
+  <TypeSignature Language="F#" Value="type PaymentAddress = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Address within a Payment Request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentAddress.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentAddress class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentAddress (string country = null, System.Collections.Generic.IList&lt;string&gt; addressLine = null, string region = null, string city = null, string dependentLocality = null, string postalCode = null, string sortingCode = null, string languageCode = null, string organization = null, string recipient = null, string phone = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string country, class System.Collections.Generic.IList`1&lt;string&gt; addressLine, string region, string city, string dependentLocality, string postalCode, string sortingCode, string languageCode, string organization, string recipient, string phone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentAddress.#ctor(System.String,System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional country As String = null, Optional addressLine As IList(Of String) = null, Optional region As String = null, Optional city As String = null, Optional dependentLocality As String = null, Optional postalCode As String = null, Optional sortingCode As String = null, Optional languageCode As String = null, Optional organization As String = null, Optional recipient As String = null, Optional phone As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentAddress : string * System.Collections.Generic.IList&lt;string&gt; * string * string * string * string * string * string * string * string * string -&gt; Microsoft.Bot.Connector.PaymentAddress" Usage="new Microsoft.Bot.Connector.PaymentAddress (country, addressLine, region, city, dependentLocality, postalCode, sortingCode, languageCode, organization, recipient, phone)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="country" Type="System.String" />
+        <Parameter Name="addressLine" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="region" Type="System.String" />
+        <Parameter Name="city" Type="System.String" />
+        <Parameter Name="dependentLocality" Type="System.String" />
+        <Parameter Name="postalCode" Type="System.String" />
+        <Parameter Name="sortingCode" Type="System.String" />
+        <Parameter Name="languageCode" Type="System.String" />
+        <Parameter Name="organization" Type="System.String" />
+        <Parameter Name="recipient" Type="System.String" />
+        <Parameter Name="phone" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="country">This is the CLDR (Common Locale Data
+            Repository) region code. For example, US, GB, CN, or JP</param>
+        <param name="addressLine">This is the most specific part of the
+            address. It can include, for example, a street name, a house
+            number, apartment number, a rural delivery route, descriptive
+            instructions, or a post office box number.</param>
+        <param name="region">This is the top level administrative
+            subdivision of the country. For example, this can be a state, a
+            province, an oblast, or a prefecture.</param>
+        <param name="city">This is the city/town portion of the
+            address.</param>
+        <param name="dependentLocality">This is the dependent locality or
+            sublocality within a city. For example, used for neighborhoods,
+            boroughs, districts, or UK dependent localities.</param>
+        <param name="postalCode">This is the postal code or ZIP code, also
+            known as PIN code in India.</param>
+        <param name="sortingCode">This is the sorting code as used in, for
+            example, France.</param>
+        <param name="languageCode">This is the BCP-47 language code for the
+            address. It's used to determine the field separators and the order
+            of fields when formatting the address for display.</param>
+        <param name="organization">This is the organization, firm, company,
+            or institution at this address.</param>
+        <param name="recipient">This is the name of the recipient or
+            contact person.</param>
+        <param name="phone">This is the phone number of the recipient or
+            contact person.</param>
+        <summary>
+            Initializes a new instance of the PaymentAddress class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressLine">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; AddressLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; AddressLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.AddressLine" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressLine As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AddressLine : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.AddressLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="addressLine")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the most specific part of the address. It can
+            include, for example, a street name, a house number, apartment
+            number, a rural delivery route, descriptive instructions, or a post
+            office box number.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="City">
+      <MemberSignature Language="C#" Value="public string City { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string City" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.City" />
+      <MemberSignature Language="VB.NET" Value="Public Property City As String" />
+      <MemberSignature Language="F#" Value="member this.City : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.City" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="city")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the city/town portion of the address.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Country">
+      <MemberSignature Language="C#" Value="public string Country { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Country" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.Country" />
+      <MemberSignature Language="VB.NET" Value="Public Property Country As String" />
+      <MemberSignature Language="F#" Value="member this.Country : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.Country" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="country")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the CLDR (Common Locale Data Repository)
+            region code. For example, US, GB, CN, or JP
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependentLocality">
+      <MemberSignature Language="C#" Value="public string DependentLocality { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DependentLocality" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.DependentLocality" />
+      <MemberSignature Language="VB.NET" Value="Public Property DependentLocality As String" />
+      <MemberSignature Language="F#" Value="member this.DependentLocality : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.DependentLocality" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="dependentLocality")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the dependent locality or sublocality within a
+            city. For example, used for neighborhoods, boroughs, districts, or
+            UK dependent localities.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageCode">
+      <MemberSignature Language="C#" Value="public string LanguageCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LanguageCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.LanguageCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageCode As String" />
+      <MemberSignature Language="F#" Value="member this.LanguageCode : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.LanguageCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="languageCode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the BCP-47 language code for the address. It's
+            used to determine the field separators and the order of fields when
+            formatting the address for display.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Organization">
+      <MemberSignature Language="C#" Value="public string Organization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Organization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.Organization" />
+      <MemberSignature Language="VB.NET" Value="Public Property Organization As String" />
+      <MemberSignature Language="F#" Value="member this.Organization : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.Organization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="organization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the organization, firm, company, or
+            institution at this address.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Phone">
+      <MemberSignature Language="C#" Value="public string Phone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Phone" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.Phone" />
+      <MemberSignature Language="VB.NET" Value="Public Property Phone As String" />
+      <MemberSignature Language="F#" Value="member this.Phone : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.Phone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="phone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the phone number of the recipient or contact
+            person.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalCode">
+      <MemberSignature Language="C#" Value="public string PostalCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PostalCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.PostalCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostalCode As String" />
+      <MemberSignature Language="F#" Value="member this.PostalCode : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.PostalCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="postalCode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the postal code or ZIP code, also known as PIN
+            code in India.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recipient">
+      <MemberSignature Language="C#" Value="public string Recipient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Recipient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.Recipient" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recipient As String" />
+      <MemberSignature Language="F#" Value="member this.Recipient : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.Recipient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the name of the recipient or contact person.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Region">
+      <MemberSignature Language="C#" Value="public string Region { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Region" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.Region" />
+      <MemberSignature Language="VB.NET" Value="Public Property Region As String" />
+      <MemberSignature Language="F#" Value="member this.Region : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.Region" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="region")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the top level administrative subdivision of
+            the country. For example, this can be a state, a province, an
+            oblast, or a prefecture.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortingCode">
+      <MemberSignature Language="C#" Value="public string SortingCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SortingCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentAddress.SortingCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortingCode As String" />
+      <MemberSignature Language="F#" Value="member this.SortingCode : string with get, set" Usage="Microsoft.Bot.Connector.PaymentAddress.SortingCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sortingCode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this is the sorting code as used in, for example,
+            France.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

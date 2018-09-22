@@ -1,0 +1,93 @@
+<Type Name="PaymentRequestCompleteResult" FullName="Microsoft.Bot.Connector.PaymentRequestCompleteResult">
+  <TypeSignature Language="C#" Value="public class PaymentRequestCompleteResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestCompleteResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentRequestCompleteResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentRequestCompleteResult" />
+  <TypeSignature Language="F#" Value="type PaymentRequestCompleteResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Result from a completed payment request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequestCompleteResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestCompleteResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the PaymentRequestCompleteResult
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequestCompleteResult (string result = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestCompleteResult.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional result As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentRequestCompleteResult : string -&gt; Microsoft.Bot.Connector.PaymentRequestCompleteResult" Usage="new Microsoft.Bot.Connector.PaymentRequestCompleteResult result" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="result" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="result">Result of the payment request
+            completion</param>
+        <summary>
+            Initializes a new instance of the PaymentRequestCompleteResult
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public string Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentRequestCompleteResult.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="Microsoft.Bot.Connector.PaymentRequestCompleteResult.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="result")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets result of the payment request completion
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

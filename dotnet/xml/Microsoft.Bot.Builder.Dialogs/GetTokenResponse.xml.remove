@@ -1,0 +1,89 @@
+<Type Name="GetTokenResponse" FullName="Microsoft.Bot.Builder.Dialogs.GetTokenResponse">
+  <TypeSignature Language="C#" Value="public class GetTokenResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetTokenResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.GetTokenResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetTokenResponse" />
+  <TypeSignature Language="F#" Value="type GetTokenResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Result object from the GetTokenDialog
+            If the GetToken action is successful in retrieving a user token, the GetTokenDialog will be populated with the Token property
+            If the GetToken action is unsuccessful in retrieving a user token, the GetTokenDialog will be populated with the NonTokenResponse property
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetTokenResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.GetTokenResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonTokenResponse">
+      <MemberSignature Language="C#" Value="public string NonTokenResponse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NonTokenResponse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.GetTokenResponse.NonTokenResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Property NonTokenResponse As String" />
+      <MemberSignature Language="F#" Value="member this.NonTokenResponse : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.GetTokenResponse.NonTokenResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The text that the user typed when the GetTokenDialog is unable to retrieve a user token
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Token">
+      <MemberSignature Language="C#" Value="public string Token { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Token" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.GetTokenResponse.Token" />
+      <MemberSignature Language="VB.NET" Value="Public Property Token As String" />
+      <MemberSignature Language="F#" Value="member this.Token : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.GetTokenResponse.Token" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The user token
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,105 @@
+﻿<Type Name="PromptValidatorContext&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class PromptValidatorContext&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptValidatorContext`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class PromptValidatorContext(Of T)" />
+  <TypeSignature Language="F#" Value="type PromptValidatorContext&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ITurnContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.ITurnContext Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ITurnContext" />
+      <MemberSignature Language="F#" Value="member this.Context : Microsoft.Bot.Builder.ITurnContext" Usage="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;'T&gt;.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.PromptOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.PromptOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As PromptOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : Microsoft.Bot.Builder.Dialogs.PromptOptions" Usage="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;'T&gt;.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recognized">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt; Recognized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1&lt;!T&gt; Recognized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.Recognized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recognized As PromptRecognizerResult(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Recognized : Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;'T&gt;.Recognized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.State : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;'T&gt;.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

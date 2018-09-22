@@ -1,0 +1,430 @@
+<Type Name="ILocalizer" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer">
+  <TypeSignature Language="C#" Value="public interface ILocalizer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILocalizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILocalizer" />
+  <TypeSignature Language="F#" Value="type ILocalizer = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>   Interface for localizing string resources. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string prefix, Microsoft.Bot.Builder.FormFlow.TemplateAttribute template);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,Microsoft.Bot.Builder.FormFlow.TemplateAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, template As TemplateAttribute)" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Microsoft.Bot.Builder.FormFlow.TemplateAttribute -&gt; unit" Usage="iLocalizer.Add (prefix, template)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="template" Type="Microsoft.Bot.Builder.FormFlow.TemplateAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The resource prefix. </param>
+        <param name="template">     The template to add. </param>
+        <summary>   Adds patterns from template separated by semi-colons under prefix;usage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string key, System.Collections.Generic.IEnumerable&lt;string&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, list As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * seq&lt;string&gt; -&gt; unit" Usage="iLocalizer.Add (key, list)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="list" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key for indexing translation list.</param>
+        <param name="list">List of translated terms.</param>
+        <summary>
+            Add a key and a list of translations separated by semi-colon.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string prefix, System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; templates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class System.Collections.Generic.IReadOnlyDictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; templates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, templates As IReadOnlyDictionary(Of TemplateUsage, TemplateAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage, Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; -&gt; unit" Usage="iLocalizer.Add (prefix, templates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="templates" Type="System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The resource prefix. </param>
+        <param name="templates">    The template dictionary to add. </param>
+        <summary>   Adds patterns from template separated by semi-colons under prefix;usage. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string prefix, System.Collections.Generic.IReadOnlyDictionary&lt;object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class System.Collections.Generic.IReadOnlyDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, dictionary As IReadOnlyDictionary(Of Object, DescribeAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Collections.Generic.IReadOnlyDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; -&gt; unit" Usage="iLocalizer.Add (prefix, dictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The resource prefix. </param>
+        <param name="dictionary">   The dictionary to add. </param>
+        <summary>   Adds value from dictionary under object if enumeration and prefix;object otherwise. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string prefix, System.Collections.Generic.IReadOnlyDictionary&lt;object,Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string prefix, class System.Collections.Generic.IReadOnlyDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.Collections.Generic.IReadOnlyDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, dictionary As IReadOnlyDictionary(Of Object, TermsAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Collections.Generic.IReadOnlyDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; -&gt; unit" Usage="iLocalizer.Add (prefix, dictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The resource prefix. </param>
+        <param name="dictionary">   The dictionary to add. </param>
+        <summary>   Adds values from dictionary separated by semi-colons under object if enumeration and prefix;object otherwise.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string key, string translation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, string translation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, translation As String)" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; unit" Usage="iLocalizer.Add (key, translation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="translation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key for indexing translation.</param>
+        <param name="translation">Translation for key.</param>
+        <summary>
+            Add a key and its translation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Return the localizer culture.
+            </summary>
+        <value>Current culture.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Load (System.Collections.IDictionaryEnumerator reader, out System.Collections.Generic.IEnumerable&lt;string&gt; missing, out System.Collections.Generic.IEnumerable&lt;string&gt; extra);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Load(class System.Collections.IDictionaryEnumerator reader, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; missing, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; extra) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Load (reader As IDictionaryEnumerator, ByRef missing As IEnumerable(Of String), ByRef extra As IEnumerable(Of String)) As ILocalizer" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionaryEnumerator *  *  -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" Usage="iLocalizer.Load (reader, missing, extra)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Collections.IDictionaryEnumerator" />
+        <Parameter Name="missing" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" RefType="out" />
+        <Parameter Name="extra" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="reader">Dictionary with resources.</param>
+        <param name="missing">Keys found in current localizer that are not in loaded localizer.</param>
+        <param name="extra">Keys found in loaded localizer that were not in current localizer.</param>
+        <summary>
+            Load the localizer from a stream.
+            </summary>
+        <returns>New localizer from reader.</returns>
+        <remarks>
+          <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Save(System.Resources.IResourceWriter)" /> to see resource format.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lookup">
+      <MemberSignature Language="C#" Value="public bool Lookup (string key, out string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Lookup(string key, [out] string&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Lookup(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Lookup (key As String, ByRef value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Lookup : string *  -&gt; bool" Usage="iLocalizer.Lookup (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key to lookup.</param>
+        <param name="value">Value to set if present.</param>
+        <summary>
+            Translate a key to a translation.
+            </summary>
+        <returns>True if value is found. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupDictionary">
+      <MemberSignature Language="C#" Value="public void LookupDictionary (string prefix, System.Collections.Generic.IDictionary&lt;object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LookupDictionary(string prefix, class System.Collections.Generic.IDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LookupDictionary (prefix As String, dictionary As IDictionary(Of Object, DescribeAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member LookupDictionary : string * System.Collections.Generic.IDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; -&gt; unit" Usage="iLocalizer.LookupDictionary (prefix, dictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;System.Object,Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The prefix. </param>
+        <param name="dictionary">   Dictionary with existing values. </param>
+        <summary>   Look up prefix;object from dictionary and replace value from localizer. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupDictionary">
+      <MemberSignature Language="C#" Value="public void LookupDictionary (string prefix, System.Collections.Generic.IDictionary&lt;object,Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LookupDictionary(string prefix, class System.Collections.Generic.IDictionary`2&lt;object, class Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; dictionary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupDictionary(System.String,System.Collections.Generic.IDictionary{System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LookupDictionary (prefix As String, dictionary As IDictionary(Of Object, TermsAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member LookupDictionary : string * System.Collections.Generic.IDictionary&lt;obj, Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt; -&gt; unit" Usage="iLocalizer.LookupDictionary (prefix, dictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;System.Object,Microsoft.Bot.Builder.FormFlow.TermsAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The prefix. </param>
+        <param name="dictionary">   Dictionary with existing values. </param>
+        <summary>   Look up prefix;object from dictionary and replace values from localizer. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupTemplates">
+      <MemberSignature Language="C#" Value="public void LookupTemplates (string prefix, System.Collections.Generic.IDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; templates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LookupTemplates(string prefix, class System.Collections.Generic.IDictionary`2&lt;valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage, class Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; templates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupTemplates(System.String,System.Collections.Generic.IDictionary{Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LookupTemplates (prefix As String, templates As IDictionary(Of TemplateUsage, TemplateAttribute))" />
+      <MemberSignature Language="F#" Value="abstract member LookupTemplates : string * System.Collections.Generic.IDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage, Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt; -&gt; unit" Usage="iLocalizer.LookupTemplates (prefix, templates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="templates" Type="System.Collections.Generic.IDictionary&lt;Microsoft.Bot.Builder.FormFlow.TemplateUsage,Microsoft.Bot.Builder.FormFlow.TemplateAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">       The prefix. </param>
+        <param name="templates">    Template dictionary with existing values. </param>
+        <summary>   Looks up prefix;usage and replace patterns in template from localizer. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupValues">
+      <MemberSignature Language="C#" Value="public bool LookupValues (string key, out string[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LookupValues(string key, [out] string[]&amp; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupValues(System.String,System.String[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LookupValues (key As String, ByRef values As String()) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupValues : string *  -&gt; bool" Usage="iLocalizer.LookupValues (key, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="values" Type="System.String[]" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key to lookup.</param>
+        <param name="values">Array value to set if present.</param>
+        <summary>
+            Translate a key to an array of values.
+            </summary>
+        <returns>True if value is found. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit" Usage="iLocalizer.Remove key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key to remove.</param>
+        <summary>
+            Remove a key from the localizer.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (System.Resources.IResourceWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Resources.IResourceWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Save(System.Resources.IResourceWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As IResourceWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.Resources.IResourceWriter -&gt; unit" Usage="iLocalizer.Save writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Resources.IResourceWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">Where to write resources.</param>
+        <summary>
+            Save localizer resources to stream.
+            </summary>
+        <remarks>
+            Resource values are all strings.  The key and value can have different parts separated by semi-colons.
+            Key | Value | Description
+            ----|-------|------------
+            key;VALUE | string | Simple value.
+            key;LIST | string[;string]* | List of values.
+            usage;field[;field]*;TEMPLATE | pattern[;pattern]* | List of template patterns.  Key includes fields that use template.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

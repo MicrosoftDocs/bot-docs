@@ -1,0 +1,293 @@
+﻿<Type Name="BotState" FullName="Microsoft.Bot.Builder.BotState">
+  <TypeSignature Language="C#" Value="public abstract class BotState : Microsoft.Bot.Builder.IPropertyManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BotState extends System.Object implements class Microsoft.Bot.Builder.IPropertyManager" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.BotState" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BotState&#xA;Implements IPropertyManager" />
+  <TypeSignature Language="F#" Value="type BotState = class&#xA;    interface IPropertyManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IPropertyManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Reads and writes state for your bot to storage.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotState (Microsoft.Bot.Builder.IStorage storage, string contextServiceKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.IStorage storage, string contextServiceKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.#ctor(Microsoft.Bot.Builder.IStorage,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storage As IStorage, contextServiceKey As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.BotState : Microsoft.Bot.Builder.IStorage * string -&gt; Microsoft.Bot.Builder.BotState" Usage="new Microsoft.Bot.Builder.BotState (storage, contextServiceKey)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
+        <Parameter Name="contextServiceKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="storage">The storage provider to use.</param>
+        <param name="contextServiceKey">the key for caching on the context services dictionary.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.BotState" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearStateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ClearStateAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ClearStateAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.ClearStateAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ClearStateAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.ClearStateAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">cancellation token.</param>
+        <summary>
+            Reset the state cache in the turn context to it's default form.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt; CreateProperty&lt;T&gt; (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.IStatePropertyAccessor`1&lt;!!T&gt; CreateProperty&lt;T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.CreateProperty``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateProperty(Of T) (name As String) As IStatePropertyAccessor(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member CreateProperty : string -&gt; Microsoft.Bot.Builder.IStatePropertyAccessor&lt;'T&gt;&#xA;override this.CreateProperty : string -&gt; Microsoft.Bot.Builder.IStatePropertyAccessor&lt;'T&gt;" Usage="botState.CreateProperty name" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IPropertyManager.CreateProperty``1(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of property.</typeparam>
+        <param name="name">name of the property.</param>
+        <summary>
+            Create a property definition and register it with this BotState.
+            </summary>
+        <returns>The created state property accessor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletePropertyValueAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task DeletePropertyValueAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task DeletePropertyValueAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.DeletePropertyValueAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.DeletePropertyValueAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.DeletePropertyValueAsync (turnContext, propertyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="propertyName">The name of the property to delete.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Deletes a property from the state cache in the turn context.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; GetPropertyValueAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetPropertyValueAsync&lt;T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.GetPropertyValueAsync``1(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValueAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="botState.GetPropertyValueAsync (turnContext, propertyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The property type.</typeparam>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="propertyName">The name of the property to get.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Gets a property from the state cache in the turn context.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result contains the property value.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageKey">
+      <MemberSignature Language="C#" Value="protected abstract string GetStorageKey (Microsoft.Bot.Builder.ITurnContext turnContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetStorageKey(class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.GetStorageKey(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetStorageKey (turnContext As ITurnContext) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetStorageKey : Microsoft.Bot.Builder.ITurnContext -&gt; string" Usage="botState.GetStorageKey turnContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <summary>
+            When overridden in a derived class, gets the key to use when reading and writing state to and from storage.
+            </summary>
+        <returns>The storage key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LoadAsync (Microsoft.Bot.Builder.ITurnContext turnContext, bool force = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task LoadAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.LoadAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.LoadAsync : Microsoft.Bot.Builder.ITurnContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.LoadAsync (turnContext, force, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="force">Optional. True to bypass the cache.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Reads in  the current state object and caches it in the context object for this turm.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveChangesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveChangesAsync (Microsoft.Bot.Builder.ITurnContext turnContext, bool force = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveChangesAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.SaveChangesAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SaveChangesAsync : Microsoft.Bot.Builder.ITurnContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.SaveChangesAsync (turnContext, force, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="force">Optional. True to save state to storage whether or not there are changes.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            If it has changed, writes to storage the state object that is cached in the current context object for this turn.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyValueAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task SetPropertyValueAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, object value, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task SetPropertyValueAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, object value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.SetPropertyValueAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyValueAsync : Microsoft.Bot.Builder.ITurnContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.SetPropertyValueAsync (turnContext, propertyName, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="propertyName">The name of the property to set.</param>
+        <param name="value">The value to set on the property.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Set the value of a property in the state cache in the turn context.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

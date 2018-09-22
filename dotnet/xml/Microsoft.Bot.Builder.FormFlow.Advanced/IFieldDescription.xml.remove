@@ -1,0 +1,268 @@
+<Type Name="IFieldDescription" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription">
+  <TypeSignature Language="C#" Value="public interface IFieldDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldDescription" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFieldDescription" />
+  <TypeSignature Language="F#" Value="type IFieldDescription = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Describe the information displayed about a field and its values.
+            </summary>
+    <remarks>
+            Throughout this class Description refers to the name of a field or a value
+            whereas "terms" tell what people can type to match the field or terms in it.
+            When generating terms it is a good idea to include anything that might be reasonable
+            for someone to type.  The form dialog itself will help clarify any ambiguity.  One
+            way to do this is to use <see cref="P:Microsoft.Bot.Builder.FormFlow.TermsAttribute.MaxPhrase" /> which ensures that <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)" />
+            is called on your base terms.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowDefault">
+      <MemberSignature Language="C#" Value="public bool AllowDefault { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowDefault" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowDefault : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Allow the default value as an option.
+            </summary>
+        <value>True if default values are allowed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowNumbers">
+      <MemberSignature Language="C#" Value="public bool AllowNumbers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowNumbers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowNumbers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowNumbers : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowNumbers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Allow user input to match numbers shown with enumerated choices. 
+            </summary>
+        <value>True if numbers are allowed as input.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowsMultiple">
+      <MemberSignature Language="C#" Value="public bool AllowsMultiple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowsMultiple" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowsMultiple" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowsMultiple As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowsMultiple : bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.AllowsMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Are multiple matches allowed.
+            </summary>
+        <value>True if more than one value is allowed.</value>
+        <remarks>This is true is you have a list of enumerated values.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldDescription">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.DescribeAttribute FieldDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute FieldDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldDescription As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="member this.FieldDescription : Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.DescribeAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Description of the field itself.
+            </summary>
+        <value>Field description.</value>
+        <remarks>
+            This is the value that will be used in \ref patterns by {&amp;}, choices with {||} or buttons.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldTerms">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; FieldTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; FieldTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldTerms" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldTerms As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.FieldTerms : seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.FieldTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Terms for matching this field.
+            </summary>
+        <value>List of term regex for matching the field name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole Role" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Role" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As FieldRole" />
+      <MemberSignature Language="F#" Value="member this.Role : Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.FieldRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Role field plays in a form.
+            </summary>
+        <value>Role field plays in form.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terms">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; Terms (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Terms(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Terms(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Terms (value As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member Terms : obj -&gt; seq&lt;string&gt;" Usage="iFieldDescription.Terms value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value that would result from a match.</param>
+        <summary>
+            Given a value return terms that can be used in a dialog to match the object.
+            </summary>
+        <returns>Enumeration of regex.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueDescription">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ValueDescription(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.ValueDescription(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValueDescription (value As Object) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="abstract member ValueDescription : obj -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="iFieldDescription.ValueDescription value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.DescribeAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value being described.</param>
+        <summary>
+            Return the description of a specific value.
+            </summary>
+        <returns>Description of value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueDescriptions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt; ValueDescriptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.ValueDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueDescriptions As IEnumerable(Of DescribeAttribute)" />
+      <MemberSignature Language="F#" Value="member this.ValueDescriptions : seq&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.ValueDescriptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.DescribeAttribute&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Return all possible value descriptions in order to support enumeration.
+            </summary>
+        <value>All possible value descriptions.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.Values : seq&lt;obj&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            All possible values or null if it is a data type like number.
+            </summary>
+        <value>All possible values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,90 @@
+<Type Name="UrlToken" FullName="Microsoft.Bot.Builder.Dialogs.UrlToken">
+  <TypeSignature Language="C#" Value="public static class UrlToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UrlToken extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.UrlToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class UrlToken" />
+  <TypeSignature Language="F#" Value="type UrlToken = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Allow object instances to serialized to URLs.  Base64 can not be stored in URLs due to special characters.
+            </summary>
+    <remarks>
+            We use Bson and Gzip to make it small enough to fit within the maximum character limit of URLs.
+            http://stackoverflow.com/a/32999062 suggests HttpServerUtility's UrlTokenEncode and UrlTokenDecode
+            is not standards-compliant, but they seem to do the job.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decode&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Decode&lt;T&gt; (string token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Decode&lt;T&gt;(string token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.UrlToken.Decode``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decode(Of T) (token As String) As T" />
+      <MemberSignature Language="F#" Value="static member Decode : string -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.UrlToken.Decode token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="token" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The item type.</typeparam>
+        <param name="token">The item token.</param>
+        <summary>
+            Decode an item from a url token.
+            </summary>
+        <returns>The item instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static string Encode&lt;T&gt; (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encode&lt;T&gt;(!!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.UrlToken.Encode``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encode(Of T) (item As T) As String" />
+      <MemberSignature Language="F#" Value="static member Encode : 'T -&gt; string" Usage="Microsoft.Bot.Builder.Dialogs.UrlToken.Encode item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The item type.</typeparam>
+        <param name="item">The item instance.</param>
+        <summary>
+            Encode an item to be stored in a url.
+            </summary>
+        <returns>The encoded token.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

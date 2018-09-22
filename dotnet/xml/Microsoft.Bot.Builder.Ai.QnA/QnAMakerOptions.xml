@@ -1,12 +1,16 @@
-﻿<Type Name="QnAMakerOptions" FullName="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions">
+﻿<Type Name="QnAMakerOptions" FullName="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions">
   <TypeSignature Language="C#" Value="public class QnAMakerOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerOptions extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class QnAMakerOptions" />
   <TypeSignature Language="F#" Value="type QnAMakerOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,12 +26,16 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QnAMakerOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,18 +44,22 @@
       </Docs>
     </Member>
     <Member MemberName="MetadataBoost">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Ai.QnA.Metadata[] MetadataBoost { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Ai.QnA.Metadata[] MetadataBoost" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.MetadataBoost" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.Metadata[] MetadataBoost { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.QnA.Metadata[] MetadataBoost" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.MetadataBoost" />
       <MemberSignature Language="VB.NET" Value="Public Property MetadataBoost As Metadata()" />
-      <MemberSignature Language="F#" Value="member this.MetadataBoost : Microsoft.Bot.Builder.Ai.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.MetadataBoost" />
+      <MemberSignature Language="F#" Value="member this.MetadataBoost : Microsoft.Bot.Builder.AI.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.MetadataBoost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Ai.QnA.Metadata[]</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.Metadata[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -58,39 +70,49 @@
     <Member MemberName="ScoreThreshold">
       <MemberSignature Language="C#" Value="public float ScoreThreshold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 ScoreThreshold" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.ScoreThreshold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.ScoreThreshold" />
       <MemberSignature Language="VB.NET" Value="Public Property ScoreThreshold As Single" />
-      <MemberSignature Language="F#" Value="member this.ScoreThreshold : single with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.ScoreThreshold" />
+      <MemberSignature Language="F#" Value="member this.ScoreThreshold : single with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.ScoreThreshold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The minimum score threshold, used to filter returned results.
+            Gets or sets the minimum score threshold, used to filter returned results.
             </summary>
-        <value>To be added.</value>
-        <remarks>Scores are normalized to the range of 0.0 to 1.0 
+        <value>
+            The minimum score threshold, used to filter returned results.
+            </value>
+        <remarks>Scores are normalized to the range of 0.0 to 1.0
             before filtering.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrictFilters">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Ai.QnA.Metadata[] StrictFilters { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Ai.QnA.Metadata[] StrictFilters" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.StrictFilters" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.Metadata[] StrictFilters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.QnA.Metadata[] StrictFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.StrictFilters" />
       <MemberSignature Language="VB.NET" Value="Public Property StrictFilters As Metadata()" />
-      <MemberSignature Language="F#" Value="member this.StrictFilters : Microsoft.Bot.Builder.Ai.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.StrictFilters" />
+      <MemberSignature Language="F#" Value="member this.StrictFilters : Microsoft.Bot.Builder.AI.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.StrictFilters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Ai.QnA.Metadata[]</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.Metadata[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -101,22 +123,28 @@
     <Member MemberName="Top">
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
-      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions.Top" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The number of ranked results you want in the output.
+            Gets or sets the number of ranked results you want in the output.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The number of ranked results you want in the output.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

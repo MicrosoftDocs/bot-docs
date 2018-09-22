@@ -1,0 +1,146 @@
+﻿<Type Name="DialogReason" FullName="Microsoft.Bot.Builder.Dialogs.DialogReason">
+  <TypeSignature Language="C#" Value="public enum DialogReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DialogReason" />
+  <TypeSignature Language="F#" Value="type DialogReason = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginCalled">
+      <MemberSignature Language="C#" Value="BeginCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.DialogReason BeginCalled = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogReason.BeginCalled" />
+      <MemberSignature Language="VB.NET" Value="BeginCalled" />
+      <MemberSignature Language="F#" Value="BeginCalled = 0" Usage="Microsoft.Bot.Builder.Dialogs.DialogReason.BeginCalled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            A dialog is being started through a call to `DialogContext.BeginAsync()`.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCalled">
+      <MemberSignature Language="C#" Value="CancelCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.DialogReason CancelCalled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogReason.CancelCalled" />
+      <MemberSignature Language="VB.NET" Value="CancelCalled" />
+      <MemberSignature Language="F#" Value="CancelCalled = 4" Usage="Microsoft.Bot.Builder.Dialogs.DialogReason.CancelCalled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            A dialog was cancelled as part of a call to `DialogContext.CancelAllDialogsAsync()`.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueCalled">
+      <MemberSignature Language="C#" Value="ContinueCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.DialogReason ContinueCalled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogReason.ContinueCalled" />
+      <MemberSignature Language="VB.NET" Value="ContinueCalled" />
+      <MemberSignature Language="F#" Value="ContinueCalled = 1" Usage="Microsoft.Bot.Builder.Dialogs.DialogReason.ContinueCalled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            A dialog is being continued through a call to `DialogContext.ContinueDialogAsync()`.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCalled">
+      <MemberSignature Language="C#" Value="EndCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.DialogReason EndCalled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogReason.EndCalled" />
+      <MemberSignature Language="VB.NET" Value="EndCalled" />
+      <MemberSignature Language="F#" Value="EndCalled = 2" Usage="Microsoft.Bot.Builder.Dialogs.DialogReason.EndCalled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            A dialog ended normally through a call to `DialogContext.EndDialogAsync()`.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NextCalled">
+      <MemberSignature Language="C#" Value="NextCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.DialogReason NextCalled = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogReason.NextCalled" />
+      <MemberSignature Language="VB.NET" Value="NextCalled" />
+      <MemberSignature Language="F#" Value="NextCalled = 5" Usage="Microsoft.Bot.Builder.Dialogs.DialogReason.NextCalled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            A step was advanced through a call to `WaterfallStepContext.NextAsync()`.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceCalled">
+      <MemberSignature Language="C#" Value="ReplaceCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.DialogReason ReplaceCalled = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogReason.ReplaceCalled" />
+      <MemberSignature Language="VB.NET" Value="ReplaceCalled" />
+      <MemberSignature Language="F#" Value="ReplaceCalled = 3" Usage="Microsoft.Bot.Builder.Dialogs.DialogReason.ReplaceCalled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            A dialog is ending because its being replaced through a call to `DialogContext.ReplaceDialogAsync()`.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

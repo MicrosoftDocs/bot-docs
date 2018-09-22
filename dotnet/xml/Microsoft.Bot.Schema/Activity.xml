@@ -1,12 +1,13 @@
 ﻿<Type Name="Activity" FullName="Microsoft.Bot.Schema.Activity">
-  <TypeSignature Language="C#" Value="public class Activity : Microsoft.Bot.Schema.IContactRelationUpdateActivity, Microsoft.Bot.Schema.IConversationUpdateActivity, Microsoft.Bot.Schema.IEndOfConversationActivity, Microsoft.Bot.Schema.IEventActivity, Microsoft.Bot.Schema.IInstallationUpdateActivity, Microsoft.Bot.Schema.IInvokeActivity, Microsoft.Bot.Schema.IMessageDeleteActivity, Microsoft.Bot.Schema.IMessageReactionActivity, Microsoft.Bot.Schema.IMessageUpdateActivity, Microsoft.Bot.Schema.ISuggestionActivity, Microsoft.Bot.Schema.ITraceActivity, Microsoft.Bot.Schema.ITypingActivity" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object implements class Microsoft.Bot.Schema.IActivity, class Microsoft.Bot.Schema.IContactRelationUpdateActivity, class Microsoft.Bot.Schema.IConversationUpdateActivity, class Microsoft.Bot.Schema.IEndOfConversationActivity, class Microsoft.Bot.Schema.IEventActivity, class Microsoft.Bot.Schema.IInstallationUpdateActivity, class Microsoft.Bot.Schema.IInvokeActivity, class Microsoft.Bot.Schema.IMessageActivity, class Microsoft.Bot.Schema.IMessageDeleteActivity, class Microsoft.Bot.Schema.IMessageReactionActivity, class Microsoft.Bot.Schema.IMessageUpdateActivity, class Microsoft.Bot.Schema.ISuggestionActivity, class Microsoft.Bot.Schema.ITraceActivity, class Microsoft.Bot.Schema.ITypingActivity" />
+  <TypeSignature Language="C#" Value="public class Activity : Microsoft.Bot.Schema.IContactRelationUpdateActivity, Microsoft.Bot.Schema.IConversationUpdateActivity, Microsoft.Bot.Schema.IEndOfConversationActivity, Microsoft.Bot.Schema.IEventActivity, Microsoft.Bot.Schema.IHandoffActivity, Microsoft.Bot.Schema.IInstallationUpdateActivity, Microsoft.Bot.Schema.IInvokeActivity, Microsoft.Bot.Schema.IMessageDeleteActivity, Microsoft.Bot.Schema.IMessageReactionActivity, Microsoft.Bot.Schema.IMessageUpdateActivity, Microsoft.Bot.Schema.ISuggestionActivity, Microsoft.Bot.Schema.ITraceActivity, Microsoft.Bot.Schema.ITypingActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object implements class Microsoft.Bot.Schema.IActivity, class Microsoft.Bot.Schema.IContactRelationUpdateActivity, class Microsoft.Bot.Schema.IConversationUpdateActivity, class Microsoft.Bot.Schema.IEndOfConversationActivity, class Microsoft.Bot.Schema.IEventActivity, class Microsoft.Bot.Schema.IHandoffActivity, class Microsoft.Bot.Schema.IInstallationUpdateActivity, class Microsoft.Bot.Schema.IInvokeActivity, class Microsoft.Bot.Schema.IMessageActivity, class Microsoft.Bot.Schema.IMessageDeleteActivity, class Microsoft.Bot.Schema.IMessageReactionActivity, class Microsoft.Bot.Schema.IMessageUpdateActivity, class Microsoft.Bot.Schema.ISuggestionActivity, class Microsoft.Bot.Schema.ITraceActivity, class Microsoft.Bot.Schema.ITypingActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Activity" />
-  <TypeSignature Language="VB.NET" Value="Public Class Activity&#xA;Implements IContactRelationUpdateActivity, IConversationUpdateActivity, IEndOfConversationActivity, IEventActivity, IInstallationUpdateActivity, IInvokeActivity, IMessageDeleteActivity, IMessageReactionActivity, IMessageUpdateActivity, ISuggestionActivity, ITraceActivity, ITypingActivity" />
-  <TypeSignature Language="F#" Value="type Activity = class&#xA;    interface IActivity&#xA;    interface IConversationUpdateActivity&#xA;    interface IContactRelationUpdateActivity&#xA;    interface IInstallationUpdateActivity&#xA;    interface IMessageActivity&#xA;    interface IMessageUpdateActivity&#xA;    interface IMessageDeleteActivity&#xA;    interface IMessageReactionActivity&#xA;    interface ISuggestionActivity&#xA;    interface ITypingActivity&#xA;    interface IEndOfConversationActivity&#xA;    interface IEventActivity&#xA;    interface IInvokeActivity&#xA;    interface ITraceActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Class Activity&#xA;Implements IContactRelationUpdateActivity, IConversationUpdateActivity, IEndOfConversationActivity, IEventActivity, IHandoffActivity, IInstallationUpdateActivity, IInvokeActivity, IMessageDeleteActivity, IMessageReactionActivity, IMessageUpdateActivity, ISuggestionActivity, ITraceActivity, ITypingActivity" />
+  <TypeSignature Language="F#" Value="type Activity = class&#xA;    interface IActivity&#xA;    interface IConversationUpdateActivity&#xA;    interface IContactRelationUpdateActivity&#xA;    interface IInstallationUpdateActivity&#xA;    interface IMessageActivity&#xA;    interface IMessageUpdateActivity&#xA;    interface IMessageDeleteActivity&#xA;    interface IMessageReactionActivity&#xA;    interface ISuggestionActivity&#xA;    interface ITypingActivity&#xA;    interface IEndOfConversationActivity&#xA;    interface IEventActivity&#xA;    interface IInvokeActivity&#xA;    interface ITraceActivity&#xA;    interface IHandoffActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,6 +24,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Schema.IEventActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Schema.IHandoffActivity</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Schema.IInstallationUpdateActivity</InterfaceName>
@@ -51,8 +55,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            An Activity is the basic communication type for the Bot Framework 3.0
-            protocol
+            An Activity is the basic communication type for the Bot Framework 3.0 protocol
             </summary>
     <remarks>
             The Activity class contains all properties that individual, more specific activities
@@ -69,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -212,6 +216,160 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTimeOffset&gt; timestamp = null, Nullable&lt;DateTimeOffset&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Schema.ChannelAccount from = null, Microsoft.Bot.Schema.ConversationAccount conversation = null, Microsoft.Bot.Schema.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Schema.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, string label = null, string valueType = null, object value = null, string name = null, Microsoft.Bot.Schema.ConversationReference relatesTo = null, string code = null, Nullable&lt;DateTimeOffset&gt; expiration = null, string importance = null, string deliveryMode = null, System.Collections.Generic.IList&lt;string&gt; listenFor = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; textHighlights = null, Microsoft.Bot.Schema.SemanticAction semanticAction = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Schema.ChannelAccount from, class Microsoft.Bot.Schema.ConversationAccount conversation, class Microsoft.Bot.Schema.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Schema.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Schema.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TextHighlight&gt; textHighlights, class Microsoft.Bot.Schema.SemanticAction semanticAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ConversationAccount,Microsoft.Bot.Schema.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Schema.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Schema.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Schema.TextHighlight},Microsoft.Bot.Schema.SemanticAction)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ConversationAccount * Microsoft.Bot.Schema.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Schema.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Schema.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; * Microsoft.Bot.Schema.SemanticAction -&gt; Microsoft.Bot.Schema.Activity" Usage="new Microsoft.Bot.Schema.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="timestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="localTimestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="serviceUrl" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="from" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="conversation" Type="Microsoft.Bot.Schema.ConversationAccount" />
+        <Parameter Name="recipient" Type="Microsoft.Bot.Schema.ChannelAccount" />
+        <Parameter Name="textFormat" Type="System.String" />
+        <Parameter Name="attachmentLayout" Type="System.String" />
+        <Parameter Name="membersAdded" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;" />
+        <Parameter Name="membersRemoved" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;" />
+        <Parameter Name="reactionsAdded" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;" />
+        <Parameter Name="reactionsRemoved" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;" />
+        <Parameter Name="topicName" Type="System.String" />
+        <Parameter Name="historyDisclosed" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="inputHint" Type="System.String" />
+        <Parameter Name="summary" Type="System.String" />
+        <Parameter Name="suggestedActions" Type="Microsoft.Bot.Schema.SuggestedActions" />
+        <Parameter Name="attachments" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;" />
+        <Parameter Name="channelData" Type="System.Object" />
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="replyToId" Type="System.String" />
+        <Parameter Name="label" Type="System.String" />
+        <Parameter Name="valueType" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="relatesTo" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="expiration" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="importance" Type="System.String" />
+        <Parameter Name="deliveryMode" Type="System.String" />
+        <Parameter Name="listenFor" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="textHighlights" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;" />
+        <Parameter Name="semanticAction" Type="Microsoft.Bot.Schema.SemanticAction" />
+      </Parameters>
+      <Docs>
+        <param name="type">Contains the activity type. Possible values
+            include: 'message', 'contactRelationUpdate', 'conversationUpdate',
+            'typing', 'endOfConversation', 'event', 'invoke', 'deleteUserData',
+            'messageUpdate', 'messageDelete', 'installationUpdate',
+            'messageReaction', 'suggestion', 'trace', 'handoff'</param>
+        <param name="id">Contains an ID that uniquely identifies the
+            activity on the channel.</param>
+        <param name="timestamp">Contains the date and time that the message
+            was sent, in UTC, expressed in ISO-8601 format.</param>
+        <param name="localTimestamp">Contains the date and time that the
+            message was sent, in local time, expressed in ISO-8601 format.
+            For example, 2016-09-23T13:07:49.4714686-07:00.</param>
+        <param name="serviceUrl">Contains the URL that specifies the
+            channel's service endpoint. Set by the channel.</param>
+        <param name="channelId">Contains an ID that uniquely identifies the
+            channel. Set by the channel.</param>
+        <param name="from">Identifies the sender of the
+            message.</param>
+        <param name="conversation">Identifies the conversation to which the
+            activity belongs.</param>
+        <param name="recipient">Identifies the recipient of the
+            message.</param>
+        <param name="textFormat">Format of text fields Default:markdown.
+            Possible values include: 'markdown', 'plain', 'xml'</param>
+        <param name="attachmentLayout">The layout hint for multiple
+            attachments. Default: list. Possible values include: 'list',
+            'carousel'</param>
+        <param name="membersAdded">The collection of members added to the
+            conversation.</param>
+        <param name="membersRemoved">The collection of members removed from
+            the conversation.</param>
+        <param name="reactionsAdded">The collection of reactions added to
+            the conversation.</param>
+        <param name="reactionsRemoved">The collection of reactions removed
+            from the conversation.</param>
+        <param name="topicName">The updated topic name of the
+            conversation.</param>
+        <param name="historyDisclosed">Indicates whether the prior history
+            of the channel is disclosed.</param>
+        <param name="locale">A locale name for the contents of the text
+            field.
+            The locale name is a combination of an ISO 639 two- or three-letter
+            culture code associated with a language
+            and an ISO 3166 two-letter subculture code associated with a
+            country or region.
+            The locale name can also correspond to a valid BCP-47 language
+            tag.</param>
+        <param name="text">The text content of the message.</param>
+        <param name="speak">The text to speak.</param>
+        <param name="inputHint">Indicates whether your bot is accepting,
+            expecting, or ignoring user input after the message is delivered to
+            the client. Possible values include: 'acceptingInput',
+            'ignoringInput', 'expectingInput'</param>
+        <param name="summary">The text to display if the channel cannot
+            render cards.</param>
+        <param name="suggestedActions">The suggested actions for the
+            activity.</param>
+        <param name="attachments">Attachments</param>
+        <param name="entities">Represents the entities that were mentioned
+            in the message.</param>
+        <param name="channelData">Contains channel-specific
+            content.</param>
+        <param name="action">Indicates whether the recipient of a
+            contactRelationUpdate was added or removed from the sender's
+            contact list.</param>
+        <param name="replyToId">Contains the ID of the message to which
+            this message is a reply.</param>
+        <param name="label">A descriptive label for the activity.</param>
+        <param name="valueType">The type of the activity's value
+            object.</param>
+        <param name="value">A value that is associated with the
+            activity.</param>
+        <param name="name">The name of the operation associated with an
+            invoke or event activity.</param>
+        <param name="relatesTo">A reference to another conversation or
+            activity.</param>
+        <param name="code">The a code for endOfConversation activities that
+            indicates why the conversation ended. Possible values include:
+            'unknown', 'completedSuccessfully', 'userCancelled', 'botTimedOut',
+            'botIssuedInvalidMessage', 'channelFailed'</param>
+        <param name="expiration">The time at which the activity should be
+            considered to be "expired" and should not be presented to the
+            recipient.</param>
+        <param name="importance">The importance of the activity. Possible
+            values include: 'low', 'normal', 'high'</param>
+        <param name="deliveryMode">A delivery hint to  signal to the
+            recipient alternate delivery paths for the activity.
+            The default delivery mode is "default". Possible values include:
+            'normal', 'notification'</param>
+        <param name="listenFor">List of phrases and references that speech
+            and language priming systems should listen for</param>
+        <param name="textHighlights">The collection of text fragments to
+            highlight when the activity contains a ReplyToId value.</param>
+        <param name="semanticAction">An optional programmatic action
+            accompanying this request</param>
+        <summary>
+            Initializes a new instance of the Activity class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Action">
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
@@ -226,9 +384,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="action")</AttributeName>
         </Attribute>
       </Attributes>
@@ -237,10 +396,49 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets contactAdded/Removed action
+            Gets or sets indicates whether the recipient of a
+            contactRelationUpdate was added or removed from the sender's
+            contact list.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyConversationReference">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity ApplyConversationReference (Microsoft.Bot.Schema.ConversationReference reference, bool isIncoming = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.Activity ApplyConversationReference(class Microsoft.Bot.Schema.ConversationReference reference, bool isIncoming) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.ApplyConversationReference(Microsoft.Bot.Schema.ConversationReference,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyConversationReference (reference As ConversationReference, Optional isIncoming As Boolean = false) As Activity" />
+      <MemberSignature Language="F#" Value="abstract member ApplyConversationReference : Microsoft.Bot.Schema.ConversationReference * bool -&gt; Microsoft.Bot.Schema.Activity&#xA;override this.ApplyConversationReference : Microsoft.Bot.Schema.ConversationReference * bool -&gt; Microsoft.Bot.Schema.Activity" Usage="activity.ApplyConversationReference (reference, isIncoming)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.ApplyConversationReference(Microsoft.Bot.Schema.ConversationReference,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="isIncoming" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The conversation reference.</param>
+        <param name="isIncoming">(Optional) <c>true</c> to treat the activity as an 
+            incoming activity, where the bot is the recipient; otherwaire <c>false</c>.
+            Default is <c>false</c>, and the activity will show the bot as the sender.</param>
+        <summary>
+            Updates this activity with the delivery information from an existing 
+            conversation reference.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>Call <see cref="M:Microsoft.Bot.Schema.Activity.GetConversationReference" /> on an incoming
+            activity to get a conversation reference that you can then use to update an
+            outgoing activity with the correct delivery information.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContactRelationUpdateActivity">
@@ -256,6 +454,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -263,7 +462,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IContactRelationUpdateActivity mask if this is a contact relation update activity
+            Returns this activity as a contact relation update activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -282,6 +481,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -289,7 +489,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IConversationUpdateActivity mask if this is a conversation update activity
+            Returns this activity as a conversation update activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -308,6 +508,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -315,7 +516,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IEndOfConversationActivity mask if this is an end of conversation activity
+            Returns this activity as an end of conversation activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -334,6 +535,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -341,7 +543,30 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IEventActivity mask if this is an event activity
+            Returns this activity as an event activty type; or null, if this is not that type of activity.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsHandoffActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IHandoffActivity AsHandoffActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.IHandoffActivity AsHandoffActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.AsHandoffActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsHandoffActivity () As IHandoffActivity" />
+      <MemberSignature Language="F#" Value="member this.AsHandoffActivity : unit -&gt; Microsoft.Bot.Schema.IHandoffActivity" Usage="activity.AsHandoffActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IHandoffActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns this activity as a handoff activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -360,6 +585,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInstallationUpdateActivity</ReturnType>
@@ -367,7 +593,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IInstallationUpdateActivity mask if this is a installation update activity
+            Returns this activity as an installation update activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -386,6 +612,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -393,7 +620,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IInvokeActivity mask if this is an invoke activity
+            Returns this activity as an invoke activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -412,6 +639,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -419,7 +647,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IMessageActivity mask if this is a message activity
+            Returns this activity as a message activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -438,6 +666,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageDeleteActivity</ReturnType>
@@ -445,7 +674,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IMessageDeleteActivity if this is a MessageDelete activity
+            Returns this activity as a message delete activty type; or null, if this is not that type of activity.
             </summary>
         <returns />
         <remarks>To be added.</remarks>
@@ -464,6 +693,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageReactionActivity</ReturnType>
@@ -471,7 +701,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IMessageReactionActivity if this is a MessageReaction activity
+            Returns this activity as a message reaction activty type; or null, if this is not that type of activity.
             </summary>
         <returns />
         <remarks>To be added.</remarks>
@@ -490,6 +720,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageUpdateActivity</ReturnType>
@@ -497,7 +728,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an IMessageUpdateAcitvity if this is a MessageUpdate activity
+            Returns this activity as a message update activty type; or null, if this is not that type of activity.
             </summary>
         <returns />
         <remarks>To be added.</remarks>
@@ -516,6 +747,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ISuggestionActivity</ReturnType>
@@ -523,7 +755,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an ISuggestionActivity if this is a Suggestion activity
+            Returns this activity as a suggestion activty type; or null, if this is not that type of activity.
             </summary>
         <returns />
         <remarks>To be added.</remarks>
@@ -539,6 +771,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -546,7 +779,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an ITraceActivity if this is a Trace activity
+            Returns this activity as a trace activty type; or null, if this is not that type of activity.
             </summary>
         <returns />
         <remarks>To be added.</remarks>
@@ -565,6 +798,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -572,7 +806,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Return an ITypingActivity mask if this is a typing activity
+            Returns this activity as a typing activty type; or null, if this is not that type of activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -591,9 +825,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")</AttributeName>
         </Attribute>
       </Attributes>
@@ -602,8 +837,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets hint for how to deal with multiple attachments.
-            Default:list. Possible values include: 'list', 'carousel'
+            Gets or sets the layout hint for multiple attachments. Default:
+            list. Possible values include: 'list', 'carousel'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -622,9 +857,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
         </Attribute>
       </Attributes>
@@ -652,9 +888,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelData")</AttributeName>
         </Attribute>
       </Attributes>
@@ -663,7 +900,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets channel-specific payload
+            Gets or sets contains channel-specific content.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -682,9 +919,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
         </Attribute>
       </Attributes>
@@ -693,7 +931,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets ID of the channel where the activity was sent
+            Gets or sets contains an ID that uniquely identifies the channel.
+            Set by the channel.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -712,9 +951,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
         </Attribute>
       </Attributes>
@@ -723,10 +963,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets code indicating why the conversation has ended.
-            Possible values include: 'unknown', 'completedSuccessfully',
-            'userCancelled', 'botTimedOut', 'botIssuedInvalidMessage',
-            'channelFailed'
+            Gets or sets the a code for endOfConversation activities that
+            indicates why the conversation ended. Possible values include:
+            'unknown', 'completedSuccessfully', 'userCancelled', 'botTimedOut',
+            'botIssuedInvalidMessage', 'channelFailed'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -742,13 +982,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Content-type for an Activity
+            Content-type for an <see cref="T:Microsoft.Bot.Schema.Activity" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -766,9 +1007,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
         </Attribute>
       </Attributes>
@@ -777,7 +1019,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets conversation
+            Gets or sets identifies the conversation to which the activity
+            belongs.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -793,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -816,6 +1060,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -823,7 +1068,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Create an instance of the Activity class with IConversationUpdateActivity masking
+            Creates a conversation update activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -839,6 +1084,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -846,7 +1092,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Create an instance of the Activity class with IEndOfConversationActivity masking
+            Creates an end of conversation activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -862,6 +1108,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -869,7 +1116,30 @@
       <Parameters />
       <Docs>
         <summary>
-            Create an instance of the Activity class with an IEventActivity masking
+            Creates an event activity.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHandoffActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IHandoffActivity CreateHandoffActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IHandoffActivity CreateHandoffActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.CreateHandoffActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHandoffActivity () As IHandoffActivity" />
+      <MemberSignature Language="F#" Value="static member CreateHandoffActivity : unit -&gt; Microsoft.Bot.Schema.IHandoffActivity" Usage="Microsoft.Bot.Schema.Activity.CreateHandoffActivity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IHandoffActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create a Handoff activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -885,6 +1155,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -892,7 +1163,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Create an instance of the Activity class with IInvokeActivity masking
+            Creates an invoke activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -908,6 +1179,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -954,6 +1226,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -963,13 +1236,13 @@
         <Parameter Name="locale" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">text you want to reply with</param>
-        <param name="locale">language of your reply</param>
+        <param name="text">The text of the reply.</param>
+        <param name="locale">The language code for the <paramref name="text" />.</param>
         <summary>
-            Take a message and create a reply message for it with the routing information 
-            set up to correctly route a reply to the source message
+            Creates a reply message to this message and set up the routing information 
+            as a reply to the source message.
             </summary>
-        <returns>message set up to route back to the sender</returns>
+        <returns>A message activity set up to route back to the sender.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -983,6 +1256,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -1000,14 +1274,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="name">Name of the operation</param>
-        <param name="value">value of the operation</param>
-        <param name="valueType">valueType if helpful to identify the value schema (default is value.GetType().Name)</param>
-        <param name="label">descritive label of context. (Default is calling function name)</param>
+        <param name="name">The value to assign to the trace activity's <see cref="P:Microsoft.Bot.Schema.Activity.Name" /> property.</param>
+        <param name="value">The value to assign to the trace activity's <see cref="P:Microsoft.Bot.Schema.Activity.Value" /> property.</param>
+        <param name="valueType">The value to assign to the trace activity's <see cref="P:Microsoft.Bot.Schema.Activity.ValueType" /> property.</param>
+        <param name="label">The value to assign to the trace activity's <see cref="P:Microsoft.Bot.Schema.Activity.Label" /> property.</param>
         <summary>
-            Create a trace activity based of this activity
+            Creates a trace activity based on this activity.
             </summary>
-        <returns />
+        <returns>The created trace activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1021,6 +1295,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -1038,12 +1313,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="name">Name of the operation</param>
-        <param name="valueType">valueType if helpful to identify the value schema (default is value.GetType().Name)</param>
-        <param name="value">value of the operation</param>
-        <param name="label">descritive label of context. (Default is calling function name)</param>
+        <param name="name">The value to assign to the new activity's <see cref="P:Microsoft.Bot.Schema.Activity.Name" /> property.</param>
+        <param name="valueType">The value to assign to the new activity's <see cref="P:Microsoft.Bot.Schema.Activity.ValueType" /> property.
+            Default is the type name of the <paramref name="value" /> parameter.</param>
+        <param name="value">The value to assign to the new activity's <see cref="P:Microsoft.Bot.Schema.Activity.Value" /> property.</param>
+        <param name="label">The value to assign to the new activity's <see cref="P:Microsoft.Bot.Schema.Activity.Label" /> property.</param>
         <summary>
-            Create an instance of the TraceActivity 
+            Creates a trace activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1059,6 +1335,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -1066,7 +1343,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Create an instance of the Activity class with ITypingActivity masking
+            Creates a typing activity.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1085,9 +1362,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="deliveryMode")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1096,10 +1374,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets hint to describe how this activity should be
-            delivered.
-            Currently: null or "Default" = default delivery
-            "Notification" = notification semantics
+            Gets or sets a delivery hint to  signal to the recipient alternate
+            delivery paths for the activity.
+            The default delivery mode is "default". Possible values include:
+            'normal', 'notification'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1118,9 +1396,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entities")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1129,8 +1408,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets collection of Entity objects, each of which contains
-            metadata about this activity. Each Entity object is typed.
+            Gets or sets represents the entities that were mentioned in the
+            message.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1149,9 +1428,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expiration")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1160,8 +1440,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets dateTime to expire the activity as ISO 8601 encoded
-            datetime
+            Gets or sets the time at which the activity should be considered to
+            be "expired" and should not be presented to the recipient.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1180,9 +1460,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="from")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1191,7 +1472,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets sender address
+            Gets or sets identifies the sender of the message.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1210,6 +1491,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -1219,12 +1501,41 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TypeT">type to use</typeparam>
+        <typeparam name="TypeT">The type of the object to return.</typeparam>
         <summary>
-            Get channeldata as typed structure
+            Gets the channel data as a strongly-typed object.
             </summary>
-        <returns>typed object or default(TypeT)</returns>
+        <returns>The strongly-typed object; or the type's default value, if the <see cref="P:Microsoft.Bot.Schema.Activity.ChannelData" /> is null.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Bot.Schema.Activity.ChannelData" />
+        <altmember cref="M:Microsoft.Bot.Schema.Activity.TryGetChannelData``1(``0@)" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetConversationReference">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ConversationReference GetConversationReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Schema.ConversationReference GetConversationReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.GetConversationReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConversationReference () As ConversationReference" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationReference : unit -&gt; Microsoft.Bot.Schema.ConversationReference&#xA;override this.GetConversationReference : unit -&gt; Microsoft.Bot.Schema.ConversationReference" Usage="activity.GetConversationReference " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Schema.IActivity.GetConversationReference</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a conversation reference from an activity.
+            </summary>
+        <returns>A conversation reference for the conversation that contains the activity.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="GetMentions">
@@ -1240,6 +1551,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Mention[]</ReturnType>
@@ -1249,7 +1561,7 @@
         <summary>
             Resolves the mentions from the entities of this (message) activity.
             </summary>
-        <returns>The array of mentions or an empty array, if none found.</returns>
+        <returns>The array of mentions; or an empty array, if none are found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1266,6 +1578,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1273,10 +1586,11 @@
       <Parameters />
       <Docs>
         <summary>
-            Checks if this (message) activity has content.
+            Checks whether this message activity has content.
             </summary>
-        <returns>Returns true, if this message has any content to send. False otherwise.</returns>
-        <remarks>To be added.</remarks>
+        <returns>True, if this message activity has any content to send; otherwise, false.</returns>
+        <remarks>This method is defined on the <see cref="T:Microsoft.Bot.Schema.Activity" /> class, but is only intended
+            for use on an activity of <see cref="P:Microsoft.Bot.Schema.Activity.Type" /><see cref="F:Microsoft.Bot.Schema.ActivityTypes.Message" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HistoryDisclosed">
@@ -1292,9 +1606,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="historyDisclosed")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1303,7 +1618,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets true if prior history of the channel is disclosed
+            Gets or sets indicates whether the prior history of the channel is
+            disclosed.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1322,9 +1638,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1333,7 +1650,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets ID of this activity
+            Gets or sets contains an ID that uniquely identifies the activity
+            on the channel.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1352,9 +1670,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="importance")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1363,9 +1682,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets importance of this activity
-            {Low|Normal|High}, null value indicates Normal importance see
-            ActivityImportance)
+            Gets or sets the importance of the activity. Possible values
+            include: 'low', 'normal', 'high'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1384,9 +1702,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="inputHint")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1395,8 +1714,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets input hint to the channel on what the bot is
-            expecting. Possible values include: 'acceptingInput',
+            Gets or sets indicates whether your bot is accepting,
+            expecting, or ignoring user input after the message is delivered to
+            the client. Possible values include: 'acceptingInput',
             'ignoringInput', 'expectingInput'
             </summary>
         <value>To be added.</value>
@@ -1404,26 +1724,34 @@
       </Docs>
     </Member>
     <Member MemberName="IsActivity">
-      <MemberSignature Language="C#" Value="protected bool IsActivity (string activity);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsActivity(string activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.IsActivity(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function IsActivity (activity As String) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.IsActivity : string -&gt; bool" Usage="activity.IsActivity activity" />
+      <MemberSignature Language="C#" Value="protected bool IsActivity (string activity);" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsActivity(string activity) cil managed" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.IsActivity(System.String)" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsActivity (activity As String) As Boolean" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.IsActivity : string -&gt; bool" Usage="activity.IsActivity activity" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="C#" Value="protected bool IsActivity (string activityType);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsActivity(string activityType) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.IsActivity(System.String)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsActivity (activityType As String) As Boolean" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="member this.IsActivity : string -&gt; bool" Usage="activity.IsActivity activityType" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="activity" Type="System.String" />
+        <Parameter Name="activity" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
+        <Parameter Name="activityType" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="activity">To be added.</param>
+        <param name="activityType">The activity type to check for.</param>
         <summary>
-            True if the Activity is of the specified activity type
+            Indicates whether this activity is of a specified activity type.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1442,9 +1770,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="label")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1453,7 +1782,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets descriptive label
+            Gets or sets a descriptive label for the activity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenFor">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; ListenFor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; ListenFor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.ListenFor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenFor As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ListenFor : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Schema.Activity.ListenFor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="listenFor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets list of phrases and references that speech and
+            language priming systems should listen for
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1472,9 +1829,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="locale")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1483,7 +1841,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the language code of the Text field
+            Gets or sets a locale name for the contents of the text field.
+            The locale name is a combination of an ISO 639 two- or three-letter
+            culture code associated with a language
+            and an ISO 3166 two-letter subculture code associated with a
+            country or region.
+            The locale name can also correspond to a valid BCP-47 language tag.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1502,9 +1865,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="localTimestamp")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1513,8 +1877,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets local time when message was sent (set by client, Ex:
-            2016-09-23T13:07:49.4714686-07:00)
+            Gets or sets contains the date and time that the message was sent,
+            in local time, expressed in ISO-8601 format.
+            For example, 2016-09-23T13:07:49.4714686-07:00.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1533,9 +1898,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="membersAdded")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1544,7 +1910,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets members added to the conversation
+            Gets or sets the collection of members added to the conversation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1563,9 +1929,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="membersRemoved")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1574,7 +1941,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets members removed from the conversation
+            Gets or sets the collection of members removed from the
+            conversation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1595,9 +1963,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1606,8 +1975,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets name of the operation to invoke or the name of the
-            event
+            Gets or sets the name of the operation associated with an invoke or
+            event activity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1623,9 +1992,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1634,10 +2004,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Extension data for overflow of properties
+            Gets or sets properties that are not otherwise defined by the <see cref="T:Microsoft.Bot.Schema.Activity" /> type but that
+            might appear in the REST JSON object.
             </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <value>The extended properties for the object.</value>
+        <remarks>With this, properties not represented in the defined type are not dropped when
+            the JSON object is deserialized, but are instead stored in this property. Such properties
+            will be written to a JSON object when the instance is serialized.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReactionsAdded">
@@ -1653,9 +2026,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionsAdded")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1664,7 +2038,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets reactions added to the activity
+            Gets or sets the collection of reactions added to the conversation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1683,9 +2057,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionsRemoved")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1694,7 +2069,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets reactions removed from the activity
+            Gets or sets the collection of reactions removed from the
+            conversation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1713,9 +2089,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1724,8 +2101,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets (Outbound to bot only) Bot's address that received the
-            message
+            Gets or sets identifies the recipient of the message.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1746,9 +2122,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="relatesTo")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1757,7 +2134,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets reference to another conversation or activity
+            Gets or sets a reference to another conversation or activity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1776,9 +2153,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="replyToId")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1787,7 +2165,36 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the original ID this message is a response to
+            Gets or sets contains the ID of the message to which this message
+            is a reply.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SemanticAction">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.SemanticAction SemanticAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.SemanticAction SemanticAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.SemanticAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property SemanticAction As SemanticAction" />
+      <MemberSignature Language="F#" Value="member this.SemanticAction : Microsoft.Bot.Schema.SemanticAction with get, set" Usage="Microsoft.Bot.Schema.Activity.SemanticAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="semanticAction")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.SemanticAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an optional programmatic action accompanying this
+            request
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1806,9 +2213,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1817,8 +2225,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets service endpoint where operations concerning the
-            activity may be performed
+            Gets or sets contains the URL that specifies the channel's service
+            endpoint. Set by the channel.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1837,9 +2245,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="speak")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1848,7 +2257,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets SSML Speak for TTS audio response
+            Gets or sets the text to speak.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1867,9 +2276,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1878,8 +2288,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets suggestedActions are used to provide
-            keyboard/quickreply like behavior in many clients
+            Gets or sets the suggested actions for the activity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1898,9 +2307,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="summary")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1909,7 +2319,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets text to display if the channel cannot render cards
+            Gets or sets the text to display if the channel cannot render
+            cards.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1929,9 +2340,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1940,7 +2352,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets content for the message
+            Gets or sets the text content of the message.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1959,9 +2371,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="textFormat")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1990,9 +2403,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="textHighlights")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2001,8 +2415,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets textHighlight in the activity represented in the
-            ReplyToId property
+            Gets or sets the collection of text fragments to highlight when the
+            activity contains a ReplyToId value.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2021,9 +2435,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timestamp")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2032,7 +2447,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets UTC Time when message was sent (set by service)
+            Gets or sets contains the date and time that the message was sent,
+            in UTC, expressed in ISO-8601 format.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2051,9 +2467,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="topicName")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2062,7 +2479,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the conversation's updated topic name
+            Gets or sets the updated topic name of the conversation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2081,6 +2498,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2092,15 +2510,18 @@
         <Parameter Name="instance" Type="TypeT" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TypeT">type to use</typeparam>
-        <param name="instance">The resulting instance, if possible</param>
+        <typeparam name="TypeT">The type of the object to return.</typeparam>
+        <param name="instance">When this method returns, contains the strongly-typed object if the operation succeeded,
+            or the type's default value if the operation failed.</param>
         <summary>
-            Get channeldata as typed structure
+            Gets the channel data as a strongly-typed object.. A return value idicates whether the operation succeeded.
             </summary>
         <returns>
-          <c>true</c> if value of <seealso cref="P:Microsoft.Bot.Schema.IActivity.ChannelData" /> was coerceable to <typeparamref name="TypeT" />, <c>false</c> otherwise.
+          <c>true</c> if the operation succeeded; otherwise, <c>false</c>.
             </returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Bot.Schema.Activity.ChannelData" />
+        <altmember cref="M:Microsoft.Bot.Schema.Activity.GetChannelData``1" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -2116,9 +2537,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2127,11 +2549,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the type of the activity. Possible values include:
+            Gets or sets contains the activity type. Possible values include:
             'message', 'contactRelationUpdate', 'conversationUpdate', 'typing',
-            'ping', 'endOfConversation', 'event', 'invoke', 'deleteUserData',
+            'endOfConversation', 'event', 'invoke', 'deleteUserData',
             'messageUpdate', 'messageDelete', 'installationUpdate',
-            'messageReaction', 'suggestion', 'trace'
+            'messageReaction', 'suggestion', 'trace', 'handoff'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2153,9 +2575,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2164,7 +2587,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets open-ended value
+            Gets or sets a value that is associated with the activity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2183,9 +2606,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="valueType")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2194,8 +2618,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets unique string which identifies the shape of the value
-            object
+            Gets or sets the type of the activity's value object.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

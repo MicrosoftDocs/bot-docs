@@ -1,0 +1,80 @@
+<Type Name="ActivityImportance" FullName="Microsoft.Bot.Connector.ActivityImportance">
+  <TypeSignature Language="C#" Value="public static class ActivityImportance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityImportance extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityImportance" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityImportance" />
+  <TypeSignature Language="F#" Value="type ActivityImportance = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines values for ActivityImportance.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="public const string High;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string High" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityImportance.High" />
+      <MemberSignature Language="VB.NET" Value="Public Const High As String " />
+      <MemberSignature Language="F#" Value="val mutable High : string" Usage="Microsoft.Bot.Connector.ActivityImportance.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="public const string Low;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Low" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityImportance.Low" />
+      <MemberSignature Language="VB.NET" Value="Public Const Low As String " />
+      <MemberSignature Language="F#" Value="val mutable Low : string" Usage="Microsoft.Bot.Connector.ActivityImportance.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public const string Normal;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Normal" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActivityImportance.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Const Normal As String " />
+      <MemberSignature Language="F#" Value="val mutable Normal : string" Usage="Microsoft.Bot.Connector.ActivityImportance.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
