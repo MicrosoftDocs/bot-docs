@@ -71,6 +71,7 @@ namespace SampleApp
     {
         protected void Application_Start()
         {
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             var uri = new Uri(ConfigurationManager.AppSettings["DocumentDbUrl"]);
             var key = ConfigurationManager.AppSettings["DocumentDbKey"];
             var store = new DocumentDbBotDataStore(uri, key);

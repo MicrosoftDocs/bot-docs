@@ -17,7 +17,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 
 ## Show your purpose
 
-Imagine for a moment the interaction experience of a user who connects to your bot labeled, “Chicago Tourist Information,” hoping to find out about hotels in Chicago, but your bot was created to help tourists find the best deep-dish pizza restaurants in Chicago. Once it became clear that their questions were not being answered correctly, this user would quickly disengage and consider that your site provided a bad online experience. A bad user experience such as this can be avoided by welcoming your users with enough information for them to understand the primary purpose and capabilities of your bot.
+Imagine for a moment the experience of a user who connects to your bot labeled, “Chicago Tourist Information,” hoping to find out about hotels in Chicago. Little do they know, your bot is actually for deep-dish pizza enthusiasts and only offers restaurant tips. Once it became clear that their questions were not being answered correctly, this user would quickly disengage and consider that your site provided a bad online experience. A bad user experience such as this can be avoided by welcoming your users with enough information for them to understand the primary purpose and capabilities of your bot. 
 
 ![Welcome Message](./media/welcome_message.png)
 

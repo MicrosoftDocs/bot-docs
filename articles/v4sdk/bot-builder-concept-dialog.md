@@ -2,139 +2,62 @@
 title: Dialogs within the Bot Builder SDK | Microsoft Docs
 description: Describes what a dialog is and how it work within the Bot Builder SDK.
 keywords: conversation flow, recognize intent, single turn, multiple turn, bot conversation, dialogs, prompts, waterfalls, dialog set
-author: v-ducvo
-ms.author: v-ducvo
+author: johnataylor
+ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 9/17/2018
+ms.date: 9/22/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Dialog library
+# Dialogs library
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Dialogs enable the bot developer to guide conversational flow using a predetermined sequence of operations. A dialog is similar to a function in a program, and can be invoked as often as it is needed. You can also connect multiple dialogs together to handle all the interactions that you want your bot to offer.
+The central concept in the SDK to manage conversations is the idea of a Dialog. Dialog objects process inbound Activities and generate outbound responses. The business logic of the bot runs either directly or indirectly within Dialog classes.
 
-The **Dialog** library in the Bot Builder SDK includes built-in features such as _prompts_, _waterfall dialogs_, and _component dialogs_ to help you manage your bot's conversation. You can use prompts to ask users for different types of information, a waterfall to combine multiple steps together in a sequence, and component dialogs to package your dialog logic into separate classes that can then be integrated into multiple bots.
+At runtime, Dialog instances are arranged in a stack. The Dialog on the top of the stack is referred to as the ActiveDialog. The current active Dialog processes the inbound Activity. Between each turn of the conversation (which is not time-bound and maybe over several days), the stack is persisted. 
 
-For more information about conversation flow, see [conversation flow](bot-builder-conversations.md) and [how to design and control conversation flow](../bot-service-design-conversation-flow.md).
+A Dialog implements three main functions:
+- BeginDialog
+- ContinueDialog
+- ResumeDialog
 
-## Dialog sets
+At runtime, Dialogs and DialogContext class work together to choose the appropriate Dialog to handle the activity. The DialogContext class ties the persisted Dialog stack, the inbound Activity, and the DialogSet class. A DialogSet contains dialogs that the bot can call.
 
-A _dialog set_ object contains dialogs that the bot can call during the course of a conversation. When designing your conversation flow, you should add any dialogs required to a dialog set. Dialogs contained within the set may include any number of prompts, waterfall, and component dialogs. It is important to note that dialogs within a given set can only invoke other dialogs in that same set. It is possible to have multiple dialog sets in a single bot.
+The DialogContext's interface reflects the underlying notion of Dialog’s begin and continue. The general pattern for the application is always to call ContinueDialog first. If there is no stack and therefore no ActiveDialog, the application should begin the Dialog it chooses by calling BeginDialog on the DialogContext. This will cause the corresponding Dialog entry from the DialogSet to be pushed onto the stack (technically it’s the Dialog’s id that is added to the stack) and it will then delegate a call to BeginDialog on the specific Dialog object. If there had been an ActiveDialog, it would have simply delegated the call to that Dialog’s ContinueDialog, in the processing giving that Dialog any associated persisted properties.
 
-## Dialog state
+Notice that a **Dialog’s BeginDialog** is initialization code and takes initialization properties (called “options” in the code) and a **Dialog’s ContinueDialog** is the code that is run to continue execution on the arrival of an Activity following persistence. For example, imagine a Dialog that asks the user a question, the question would be asked in the BeginDialog and the answer expected in the ContinueDialog.
 
-When defining a dialog set, you must also specify the _state property accessor_ with which to track the _dialog state_. Since a user's position in a dialog is tied directly to the conversation, the dialog state accessor should be created off of _conversation state_. The dialog set uses the dialog state accessor to manage data specific to the active dialog and the _dialog stack_, which keeps track of the bot's active dialogs. When a dialog ends or the stack is cleared, the associated data is deleted.
+To support nesting of Dialogs (where a dialog has child dialog) there is an additional type of continuation; this is called resumption. The DialogContext will call the ResumeDialog method on a parent Dialog when a child Dialog completes.
 
-For more information about state and storage, see [how to manage conversation and user state](bot-builder-howto-v4-state.md).
+Prompts and Waterfalls are both concrete examples of Dialogs provided by the SDK. Many scenarios are built by composing these abstractions, but under the covers, the logic executed is always the same begin, i.e., the continue and resume pattern described here. Implementing a Dialog class from scratch is a relatively advanced topic, but an example is included in the [samples](https://github.com/Microsoft/BotBuilder-samples).
 
-## Dialog stack and dialog context
+The **Dialog** library in the Bot Builder SDK includes built-in features such as _prompts_, _waterfall dialogs_, and _component dialogs_ to help you manage your bot's conversation. You can use prompts to ask users for different types of information, a waterfall to combine multiple steps in a sequence, and component dialogs to package your dialog logic into separate classes that can then be integrated into other bots.
+## Waterfall Dialogs and Prompts
 
-When you add a dialog to the _dialog set_, you are defining a possible dialog that the bot can call on during a conversation. The dialog is not active until it is directly invoked and pushed onto the dialog stack, at which point it becomes the active dialog. The dialog remains active until it completes - either because it runs of of steps to process, or because _endDialog_ is called. When a dialog ends, it is popped off the stack, and control is returned to parent dialog or the bot's main turn handler. Though all dialogs on the stack are considered _active_, only the dialog on the top of the stack gets to process user input.
+The **Dialog** library comes with a set of prompt types you can use to collect various types of user input. For example, to ask a user for text input, you can use the **TextPrompt**; to ask a user for a number, you can use the **NumberPrompt**; to ask for a date and time, you can use the **DateTimePrompt**. Prompts are a particular type of dialog. To use a prompt from a waterfall dialog, add both the waterfall and the prompt to the same dialog set. 
 
-Before you can interact with the dialog stack and the dialogs in a dialog set, the bot's turn handler needs to create a _dialog context_ for the dialog set. You can use this dialog context object to start or continue a dialog, and it is also available to the currently running dialog. For more information, see [how to manage simple conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
+Because of the nature of the prompt-response interaction, implementing a prompt requires at least two steps in a waterfall dialog - one to send the prompt, and a second to capture and process the response.  If you have an additional prompt, you can sometimes combine these by using a single function to first process the user's response and then start the next prompt.
 
-## Prompts
+A `WaterfallDialog` is a specific implementation of a dialog that is used to collect information from the user or guide the user through a series of tasks. The tasks are implemented as an array of functions where the result of the first function is passed as an argument into the next function, and so on. Each function typically represents one step in the overall process. At each step, the bot prompts the user for input, waits for a response, and then passes the results to the next step. 
 
-The **Dialog** library comes with a set of prompt types you can use to collect various types of user input. For example, to ask user for text input, you can use the **TextPrompt**; to ask user for a number, you can use the **NumberPrompt**; to ask for a date and time, you can use the **DateTimePrompt**. Prompts are a special type of dialog.
+Prompts and Waterfall are both Dialogs, as shown in the following class hierarchy. 
 
-To use a prompt from a [waterfall dialog](#waterfall-dialogs), add both the waterfall and the prompt to the same dialog set. When a _waterfall step_ calls a prompt, the following operations occur:
+![dialog classes](media/bot-builder-dialog-classes.png)
 
-1. The prompt is started and pushed onto the top of the stack, becoming the active dialog.
-1. The prompt's prompt message is sent to the user.
-1. The dialog context pauses and returns control to the bot's turn handler.
-1. When the dialog continues on the next turn, the prompt tries to interpret the user's input, ensuring it matches the appropriate data type such as text, an number, or a date and time.
-   - If the prompt can not interpret the input, or the prompt includes a validator and the validation fails, the user is re-prompted for input, and this step is repeated on the next turn.
-   - Otherwise, the prompt exits and the next step of the waterfall begins, with the result of the prompt passed in as input.
+A waterfall dialog is composed of a sequence of waterfall steps. Each step is an asynchronous delegate that takes a _waterfall step context_ (`step`) parameter. The pattern is that the last thing done in a waterfall step is to either begin a child dialog (typically a prompt) or end the waterfall itself. The following diagram shows a sequence of waterfall steps and the stack operations that take place.
 
-Because of the nature of the prompt-response interaction, implementing a prompt requires at least two steps in a waterfall dialog - one to send the prompt, and a second to capture and process the response.  If you have an additional prompt, you can sometimes combine these by using a single function to first processing the user's response and then start the next prompt.
-
-For examples of prompt types and how to use them in a waterfall dialog, see [how to prompt users for input using the Dialog library](bot-builder-prompts.md).
-
-## Waterfall dialogs
-
-A `WaterfallDialog` is a specific implementation of a dialog that is used to collect information from the user or guide the user through a series of tasks. The tasks are implemented as an array of functions where the result of the first function is passed as an argument into the next function, and so on. Each function typically represents one step in the overall process. At each step, the bot prompts the user for input, waits for a response, and then passes the results to the next step.
-
-When you invoke a dialog, you can pass in options to the dialog, These options are available to the dialog's first step, and can be used to initialize the dialog.
-
-When you end a dialog, you can return a value. If the dialog was started from within another waterfall step, then the value returned from the child dialog is available to the next step of the waterfall. If the dialog was started or continued using the dialog context, then the value is returned as part of the result to the calling code. For more information, see [how to manage simple conversation flow with dialogs](bot-builder-dialog-manage-conversation-flow.md).
-
-### Waterfall step arguments
-
-A _waterfall dialog_ is composed of a sequence of _waterfall steps_. Each step is an asynchronous delegate that takes a _waterfall step context_ (`step`) parameter.
-
-A waterfall step context object includes the following properties:
-
-- A _context_ that contains the current turn context.
-- An _options_ object that contains any input passed in when the dialog was started.
-- A _reason_ that indicates how control passed to this step of the dialog.
-- A _result_ that contains the return value from the previous step.
-- A _values_ collection in which you can persist dialog information between turns.
-
-A waterfall step context object includes the following methods:
-
-- A _begin dialog_ method for pushing a dialog onto the top of the _dialog stack_ and starting it.
-- A _cancel all dialogs_ method to cancel all dialogs on the stack and clearing the stack.
-- A _continue dialog_ method to continue the active dialog in the stack. In general, you would only call this from a bot's turn handler and not from within a waterfall step.
-- An _end dialog_ method to end the current dialog and pop it from the stack.
-- A _next_ method to move to the next step of the waterfall without pausing for input.
-- A _prompt_ method to use a prompt to collect information from the user.
-- A _replace dialog_ method to replace to dialog on the top of the stack. The old dialog is canceled and popped from the stack, and the new dialog is started and push onto the stack. You can replace a dialog with itself, which has the effect of starting over from the beginning.
-
-### Waterfall step return values
-
-Each waterfall step must return a _dialog turn result_ object. Except for the _cancel all dialogs_ method, all of the methods outlined for the step object return a _dialog turn result_ that you can use as the return value for that step.
-
-You can also return the _end of turn_ object as a return value to end the current step and proceed with the next step on the next turn.
-
-> [!IMPORTANT]
-> If a step does not return an appropriate object, then the dialog may repeat the step indefinitely or throw an error.
-
-How you exit the previous step of the waterfall determines how the result value is exposed in the subsequent step.
-
-| The value returned by the previous step | The value of this step's _result_ property |
-| :--- | :--- |
-| The result of the _next_ method | The _result_ parameter from the call to the _next_ method. |
-| The result of the _begin dialog_ method | The _result_ parameter from the child dialog's _end dialog_ method. |
-| The result of the _prompt_ method | The object the prompt or the prompt's validator returns. |
-| An _end of turn_ value | The user's input text for this turn. |
-
-The _next_, _begin dialog_, _end dialog_, and _prompt_ methods are defined on the waterfall step context object as described in the [waterfall step arguments](#waterfall-step-arguments) section.
-
-## Dialog results
-
-When a dialog ends, you can optionally return a value. The _dialog turn result_ object contains the following members:
-
-- *status*: This enumeration indicates the status of the dialog stack, including whether there are any _active dialogs_ and whether there is a return value.
-  - _cancelled_ indicates that the dialog was cancelled and the stack is empty.
-  - _complete_ indicates that the dialog completed successfully, the result is available, and the stack is empty.
-  - _empty_ indicates that there is currently nothing on the dialog stack.
-  - _waiting_ indicates that the dialog on top is waiting for a response from the user.
-- *result*: When _status_ is _complete_, this property contains the value returned by the _end_ method of the final dialog that was on the stack.
-
-> [!TIP]
-> Prompts are implemented as dialogs, and their return values are handled in the same way as return values from other dialogs. However, if you are using a validator with your prompt, the validator may alter the return value.
+![Dialog concept](media/bot-builder-dialog-concept.png)
 
 You can handle a return value from a dialog either within a waterfall step in a dialog or from your bot's on turn handler.
 Within a waterfall step, the dialog provides the return value in the waterfall step context's _result_ property.
 You generally only need to check the status of the dialog turn result from your bot's turn logic.
 
-### In your bot's on turn handler
-
-Both the dialog context's _begin dialog_ and _continue dialog_ async methods return a dialog turn result value, for single-step dialogs and multi-step dialogs, respectively.
-
-In a multi-step waterfall, you would capture the returned results from the dialog context's _continue dialog_ method, instead of from its _begin dialog_ method.
-
-If your bot can start a number of different dialogs, you will to reconcile the returned information with the original process that you started. You could do this by setting a state flag in your bot or by checking the return type or type of information contained in the return value.
-
 ## Repeating a dialog
 
-To repeat a dialog, use the *replace dialog* method. The dialog context's *replace dialog* method will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. You can use this method to create a loop by replacing a dialog with itself. Note that if you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialize the dialog appropriately. The options passed into the new dialog can be accessed via the step context's _options_ property in any step of the dialog.
-
-This is a great way to handle a complex conversation flow or to manage menus.
+To repeat a dialog, use the *replace dialog* method. The dialog context's *replace dialog* method will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. You can use this method to create a loop by replacing a dialog with itself. Note that if you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialize the dialog appropriately. The options passed into the new dialog can be accessed via the step context's _options_ property in any step of the dialog. This is a great way to handle a complex conversation flow or to manage menus.
 
 ## Branch a conversation
 
@@ -145,16 +68,9 @@ A dialog can start a new dialog within the same dialog set by calling the dialog
 Therefore, you can create a branch within your conversation flow by including a step in one dialog that can conditionally choose a dialog to start out of a set of available dialogs.
 
 ## Component dialog
+Sometimes you want to write a reusable Dialog that you want to use in different scenarios. An example might be an address Dialog that asks the user to provide values for street, city and zip code. 
 
-The _component dialog_ class allows you to encapsulate one or more dialogs, and break some of your bot logic into separate classes that can then be shared between different bots or packaged for distribution. A component dialog class defines an internal _dialog set_ of its own, as well as one or more interlinked dialogs in that set. By defining dialogs as part of a component dialog, developers create a new scope in which dialogs are interpreted that is separate from the bot's main dialog set scope. This prevents dialogs from different components from colliding or interfering with one another.
-
-The combined unit can be added into any bot's _dialog set_. Once it is added to the set, it can be invoked or popped off the stack just like any other dialogs in the set.
-
-<!--TODO: Add this or another appropriate link when we know what it is.
-
-For more information, see [Create an integrated set of dialogs](bot-builder-compositcontrol.md).
-
--->
+The ComponentDialog provides a level of isolation because it has a separate DialogSet . By having a separate DialogSet, it avoids name collisions with the parent containing Dialog, and it creates its own independent internal Dialog runtime (by creating its own DialogContext) and dispatches the Activity to that. This secondary dispatch means that it has had an opportunity to intercept the Activity. This can be very useful if you want to implement features such as “help” and “cancel.”  See Enterprise Bot Template sample. 
 
 ## Next steps
 

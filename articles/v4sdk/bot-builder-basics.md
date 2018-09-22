@@ -1,45 +1,52 @@
 ---
-title: Bot basics | Microsoft Docs
-description: Bot Builder SDK basic.
-keywords: turn context, receiving input, bot basic, bot
-author: ivorb
-ms.author: v-ivorb
+title: Bot Activity in the Bot Builder SDK | Microsoft Docs
+description: Describes how activity and http work within the Bot Builder SDK.
+keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
+author: johnataylor
+ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/16/2018
+ms.date: 9/12/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Bot basics
+# Understanding how bots work
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Intelligent bots can help you get things done without involving humans. Bots can perform tasks such as, setting an alarm, giving you a weather report, finding an airline ticket or ordering pizza.
+A bot is an app that users interact with in a conversational way, using text, graphics (cards), or speech. Every interaction between the user and the bot generates an Activity. Depending on the application used to connect to the bot (Facebook, Skype, Slack, etc.), certain information is sent between the user and your bot as part of the Activity. Before creating bots, it is important to undertand how a bot uses Activity object to communicate with its users. Let's first take a look at Activities that are exchanged when we run a simple echo bot and its relationship to HTTP.
 
-A bot is a messaging app that can be developed in C# or JavaScript using the Bot Builder SDK v4. You can leverage samples and templates in the SDK to create bots that have the ability to understand natural language and answer questions. Bots developed with the SDK can be easily deployed to Azure or another cloud service.
+![activity diagram](media/bot-builder-activity.png)
 
-## Interaction with your bot
+Two Activity types illustrated here are: ConversationUpdate and Message.
 
-A bot is an app that users interact with in a conversational way, using text, graphics (cards), or speech. Every interaction between the user and the bot generates an Activity. Depending on the application used to connect to the bot (Facebook, Skype, Slack, etc.), certain information is sent between the user and your bot as part of the Activity.
+Activities belonging to the same conversation all include the same ConversationReference details along with a few other tracking identifiers. Without these fields correctly set in the Activity, the Bot Framework Service won’t know what to do with it, and it will get dropped or rejected.
 
-An Activity can come in various forms. Activities include both communication from the user, which is referred to as a message, or additional information wrapped up in a handful of other [activity types](~/bot-service-activities-entities.md). This additional information can include when a new party joins or leaves the conversation, when a conversation ends, etc. Those types of communication from the user's connection are sent by the underlying system, without the user needing to do anything.
+ConversationUpdate is sent from the Bot Framework Service when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two ConversationUpdate Activities. One for the user joining the conversation and one for the bot joining. These ConversationUpdate Activities are easily distinguished these because the sender id and the recipient id will be the same for the bot joining.
 
-The SDK receives the communication and wraps it up in an Activity object, with the correct type, to give it to your bot code. An inbound Activity arrives at the bot via an HTTP POST request, and an outbound Activitiy is sent as an outbound HTTP POST from the bot.
+The Message Activity carries conversation information between the parties. In an echo bot example, the Message Activities are carrying simple text. The client will render this text content. Alternatively, the Message Activity might carry text to be spoken, suggested actions or cards to be displayed. 
 
-## Defining a turn
+Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn is, acknowledged with a 200 HTTP status code.
 
-The process of receiving an activity and sending an activity in response is called a turn. The bot execution follows this general pattern:
+The protocol doesn’t specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the diagram above. As there are two distinct HTTP connections back to back the security model must provide for both. 
 
-- Receive an Activity.
-- Perform business logic and send one or more Activities in response.
+## The Activity processing stack
+Let's drill into the previous diagram with a focus on the arrival of a Message Activity.
 
-Activity processing is managed by the **adapter**. When the adapter receives an Activity, it creates a **turn context** to provide information about the Activity and give context to the current turn we are processing. That turn context exists for the duration of the turn, and then is disposed of, marking the end of the turn.
+![activity processing stack](media/bot-builder-activity-processing-stack.png)
 
-The turn context contains a handful of information, and the same object is used through all the layers of your bot. This is helpful because this turn context object can be, and should be, used to store information that might be needed later in the turn. See [activity processing](~/v4sdk/bot-builder-concept-activity-processing.md) for more information.
+In the echo example, the bot replied to the Message Activity with another Message Activity containing the same text message. The Message Activity generated in response must be correctly addressed. Otherwise, it won’t arrive at its intended destination. Correctly addressing an Activity means including the appropriate ConversationReference details along with details about the sender and the recipient. In this particular example, the Message Activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound Activity. In general, this is not something application need be concerned about as it handled by the SDK behind the scenes. However, it can be useful to know when debugging and examining traces or audit logs.
 
-> [!IMPORTANT]
-> All **turns** are independent of each other, executing on their own, and have the potential to overlap. The bot may be processing multiple turns at a time, from various users on various channels. Each turn will have it's own turn context, but it's worth considering the complexity that introduces in some situations.
+In the echo bot example, the bot created and sent a Message Activity on an HTTP POST in response to the inbound Message Activity it had received on the HTTP POST it was handling. However, there is nothing in the protocol that mandates this exchange. It’s common for a bot to respond to a ConversationUpdate Activity by sending some welcome text in a Message Activity.  
+
+In the example, the processing starts with the HTTP POST request arriving at the Web Server. In C# this will typically be an ASP.NET project, in a JavaScript NodeJS project this is likely to be one of the popular frameworks such as Express or Restify.
+
+Integrated into the Web Service framework is the Adapter. The Adapter is the core of the Bot SDK runtime.  The Activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the Activity object that is then handed to the Adapter with a call to ProcessActivity. On receiving the Activity, the Adapter creates a TurnContext and calls the Middleware. The name “TurnContext” follows from the use of the word “turn” to describe all the processing associated with the arrival of an Activity. The TurnContext is one of the most important abstractions in the SDK, not only does it carry the inbound Activity to all the Middleware components and the application logic but it also provides the mechanism whereby the Middleware components and the application logic can send outbound Activities.
+
+## Middleware
+
+Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the Activity. The final stage of the middleware pipeline is a callback to invoke the OnTurn function on the bot class the application has registered with the Adapter. The OnTurn function takes a TurnContext as its argument, typically the application logic running inside the OnTurn function will process the inbound Activity’s content and generate one or more Activities in response, sending these out using the SendActivity function on the TurnContext. Calling SendActivity on the TurnContext will cause the middleware components to be invoked on the outbound Activities. Middleware components execute before and after the bot’s OnTurn function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll.
 
 ## Bot structure
 
@@ -186,13 +193,11 @@ At the very top of your `index.js` file you will find a series of modules or lib
 const path = require('path');
 const restify = require('restify');
 
-const CONFIG_ERROR = 1;
-
 // Import required bot services. See https://aka.ms/bot-services to learn more about the different parts of a bot.
 const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
 
 // This bot's main dialog.
-const MainDialog = require('./dialogs/mainDialog');
+const { EchoBot } = require('./bot');
 
 // Import required bot configuration.
 const { BotConfiguration } = require('botframework-config');
@@ -208,7 +213,7 @@ Within **index.js**, we created a state object that uses `MemoryStorage` as the 
 const conversationState = new ConversationState(memoryStorage);
 
 // Create the main dialog.
-const mainDlg = new MainDialog(conversationState);
+const bot = new EchoBot(conversationState);
 ```
 
 ### Bot Logic
@@ -221,55 +226,62 @@ server.post('/api/messages', (req, res) => {
     // Route received request to adapter for processing
     adapter.processActivity(req, res, (context) => {
         // Route to main dialog.
-        await mainDlg.onTurn(context);
+        await bot.onTurn(context);
     });
 });
 ```
 
 
-### MainDialog
+### EchoBot
 
 All Activity processing is routed to this class's `onTurn` handler. When the class is created, a state object is passed in. Using this state object, the constructor creates a `this.countProperty` accessor to persist the turn counter for this bot.
 
 On each turn, we first check to see if the bot has received a message. If the bot did not receive a message, we will echo back the activity type received. Next, we create a state variable that holds the information of your bot's conversation. If the count variable is `undefined`, it is set to 1 (which will occur when your bot first starts) or increment it with every new message. We echo back to the user the count along with the message they sent. Finally, we set the count and save the changes to state.
 
 ```javascript
-// Turn counter property
-const TURN_COUNTER = 'turnCounter';
+const { ActivityTypes } = require('botbuilder');
 
-class MainDialog {
+// Turn counter property
+const TURN_COUNTER_PROPERTY = 'turnCounterProperty';
+
+class EchoBot {
     /**
-     * 
-     * @param {Object} conversationState 
+     *
+     * @param {ConversationState} conversation state object
      */
-    constructor (conversationState) {
-        // creates a new state accessor property.see https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors
-        this.conversationState = conversationiState;
-        this.countProperty = this.conversationState.createProperty(TURN_COUNTER);
+    constructor(conversationState) {
+        // Creates a new state accessor property.
+        // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors
+        this.countProperty = conversationState.createProperty(TURN_COUNTER_PROPERTY);
+        this.conversationState = conversationState;
     }
     /**
-     * 
-     * @param {Object} context on turn context object.
+     *
+     * Use onTurn to handle an incoming activity, received from a user, process it, and reply as needed
+     *
+     * @param {TurnContext} on turn context object.
      */
-    async onTurn(context) {
+    async onTurn(turnContext) {
+        // Handle message activity type. User's responses via text or speech or card interactions flow back to the bot as Message activity.
+        // Message activities may contain text, speech, interactive cards, and binary or unknown attachments.
         // see https://aka.ms/about-bot-activity-message to learn more about the message and other activity types
-        if (context.activity.type === 'message') {
+        if (turnContext.activity.type === ActivityTypes.Message) {
             // read from state.
-            let count = await this.countProperty.get(context);
+            let count = await this.countProperty.get(turnContext);
             count = count === undefined ? 1 : ++count;
-            await context.sendActivity(`${count}: You said "${context.activity.text}"`);
-            await this.countProperty.set(context, count);
-
-            // End this turn by saving changes to the conversation state.
-            await this.conversationState.saveChanges(context);
+            await turnContext.sendActivity(`${ count }: You said "${ turnContext.activity.text }"`);
+            // increment and set turn counter.
+            await this.countProperty.set(turnContext, count);
+        } else { 
+            // Generic handler for all other activity types.
+            await turnContext.sendActivity(`[${ turnContext.activity.type } event detected]`);
         }
-        else {
-            await context.sendActivity(`[${context.activity.type} event detected]`);
-        }
+        // Save state changes
+        await this.conversationState.saveChanges(turnContext);
     }
 }
 
-module.exports = MainDialog;
+exports.EchoBot = EchoBot;
 ```
 
 
@@ -283,11 +295,11 @@ The `.bot` file contains information, including the endpoint, app ID, and passwo
 {
     "name": "EchoBotWithCounter",
     "description": "Echo bot with counter sample.",
-    "secretKey": "",
+    "padlock": "",
     "services": [
       {
-        "id": "http://localhost:3978/api/messages",
-        "name": "EchoBotWithCounter",
+        "id": "1",
+        "name": "development",
         "type": "endpoint",
         "appId": "",
         "appPassword": "",
