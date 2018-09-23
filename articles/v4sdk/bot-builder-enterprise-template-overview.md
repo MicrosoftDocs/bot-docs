@@ -35,4 +35,4 @@ Once the template is created and deployment steps are executed you can hit F5 to
 
 To get started, continue [create the project](bot-builder-enterprise-template-create-project.md). To learn more about the best practice and learnings that have driven the above features, see [template details](bot-builder-enterprise-template-overview-detail.md) topic. 
 
-<!-- Full source code of the Enterprise Bot Template is available at this **GitHub location.** -->
+Full source code for the Enterprise Bot Template is available at this [GitHub location](https://github.com/Microsoft/AI/tree/master/templates/Enterprise-Template)
