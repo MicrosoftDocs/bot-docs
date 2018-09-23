@@ -7,7 +7,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/03/2018
+ms.date: 09/23/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -57,7 +57,7 @@ The **Microsoft.Bot.Builder** npm package.
 
 ## Notes on the sample code
 
-Code for this article is taken from the proactive messages sample (#17).
+Code for this article is taken from the [proactive messages sample (#17)](https://github.com/Microsoft/BotBuilder-Samples/).
 
 <!--TODO: At Ignite, add live links to the samples.
 

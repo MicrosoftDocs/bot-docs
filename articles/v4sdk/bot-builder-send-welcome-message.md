@@ -7,18 +7,18 @@ ms.author: dashel
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 8/30/2018
+ms.date: 09/23/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Our previous design article [Welcome the user](./bot-builder-welcome-user.md) discussed various best practices you can implement to ensure that your users have a good initial interaction with your bot. This article extends that topic by providing short code examples to help you welcome users to your bot.
+Our previous design article [welcome the user](./bot-builder-welcome-user.md) discussed various best practices you can implement to ensure that your users have a good initial interaction with your bot. This article extends that topic by providing short code examples to help you welcome users to your bot.
 
 ## Same welcome for different channels
 
-The following example watches for new _conversation update_ activity, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input.
+The following example watches for new _conversation update_ activity, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. The code below uses the welcome user sample in the [GitHub](https://github.com/Microsoft/BotBuilder-Samples/) repo.
 
 ## [C#](#tab/csharp)
 
