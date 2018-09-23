@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 08/30/2018
+ms.date: 09/23/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,7 +18,7 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 ## Prerequisites
 - Visual Studio [2017](https://www.visualstudio.com/downloads)
-- Bot Builder SDK v4 template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
+- Bot Builder SDK v4 template for [C#](https://botbuilder.myget.org/feed/aitemplates/package/vsix/BotBuilderV4.fbe0fc50-a6f1-4500-82a2-189314b7bea2)
 - Bot Framework [Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
@@ -51,7 +51,6 @@ Send a message to your bot, and the bot will respond back with a message.
 ![Emulator running](../media/emulator-v4/emulator-running.png)
 
 ## Next steps
-If you'd like to review the source code that was used in this quickstart, take a look at [anatomy of a bot](../v4sdk/bot-builder-anatomy.md) topic. 
 
 > [!div class="nextstepaction"]
-> [Deploy to Azure](../bot-builder-howto-deploy-azure.md)
+> [How bots work](../v4sdk/bot-builder-basics.md) 

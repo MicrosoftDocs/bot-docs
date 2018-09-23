@@ -44,7 +44,7 @@ To load transcripts, simply select **File > Open Tranascript File** and select t
 
 You can easily add a LUIS app, QnA knowledge base, or dispatch model to your .bot file directly from the emulator. When the .bot file is loaded, select the services button on the far left of the emulator window. You will see options under the **Services** menu to add LUIS, QnA Maker, and Dispatch. 
 
-To add a service app, simply click on the **+** button and select the service you want to add. You will be prompted to Azure to add the service to the bot file, and connect the service to your bot application. 
+To add a service app, simply click on the **+** button and select the service you want to add. You will be prompted to sign in to the Azure portal to add the service to the bot file, and connect the service to your bot application. 
 
 ![LUIS connect](media/emulator-v4/emulator-connect-luis-btn.png)
 
