@@ -1,0 +1,62 @@
+﻿<Type Name="StorageExtensions" FullName="Microsoft.Bot.Builder.StorageExtensions">
+  <TypeSignature Language="C#" Value="public static class StorageExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StorageExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.StorageExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StorageExtensions" />
+  <TypeSignature Language="F#" Value="type StorageExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Contains extension methods for <see cref="T:Microsoft.Bot.Builder.IStorage" /> objects.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReadAsync&lt;TStoreItem&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,TStoreItem&gt;&gt; ReadAsync&lt;TStoreItem&gt; (this Microsoft.Bot.Builder.IStorage storage, string[] keys, System.Threading.CancellationToken cancellationToken = null) where TStoreItem : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, !!TStoreItem&gt;&gt; ReadAsync&lt;class TStoreItem&gt;(class Microsoft.Bot.Builder.IStorage storage, string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StorageExtensions.ReadAsync``1(Microsoft.Bot.Builder.IStorage,System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReadAsync : Microsoft.Bot.Builder.IStorage * string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, 'StoreItem&gt;&gt; (requires 'StoreItem : null)" Usage="Microsoft.Bot.Builder.StorageExtensions.ReadAsync (storage, keys, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,TStoreItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TStoreItem">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" RefType="this" />
+        <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TStoreItem">The type of item to get from storage.</typeparam>
+        <param name="storage">The state storage.</param>
+        <param name="keys">The collection of keys for the objects to get from storage.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Gets and strongly types a collection of <see cref="T:Microsoft.Bot.Builder.IStoreItem" /> objects from state storage.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the result contains a dictionary of the
+            strongly typed objects, indexed by the <paramref name="keys" />.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

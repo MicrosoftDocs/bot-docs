@@ -7,25 +7,21 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/02/2018
+ms.date: 08/30/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot with the Bot Builder SDK for Java
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
-
-The Bot Builder SDK for Java provides a familiar way for Java developers to write bots. The SDK v4 is in preview, for more information visit Java [GitHub repo](https://github.com/Microsoft/botbuilder-java).
-
-> [!NOTE]
-> Our code samples and docs are currently targeting Java version 1.8.
+# Create a bot with the Bot Builder SDK for Java 
+> [!NOTE] 
+> The Java SDK v4 is in **preview**. For more information, visit Java [GitHub repo](https://github.com/Microsoft/botbuilder-java). Our code samples and docs are currently targeting Java version 1.8.
 
 ## Getting Started
 
-The v4 SDK consists of a series of [libraries](https://github.com/Microsoft/botbuilder-java/tree/master/libraries). To build them locally, see [Building the SDK](https://github.com/Microsoft/botbuilder-java/wiki/building-the-sdk).
+The Java SDK v4 consists of a series of [libraries](https://github.com/Microsoft/botbuilder-java/tree/master/libraries). To build them locally, see [Building the SDK](https://github.com/Microsoft/botbuilder-java/wiki/building-the-sdk).
 
 - Install [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
-### Create EchoBot
+## Create EchoBot
 
 In the App.java file add the following:
 
@@ -141,25 +137,21 @@ public class App {
 }
 ```
 
-If you are using Maven you can copy the pom.xml file from the samples folder in this repo. Once you have started running your executable, start the Bot Framework Emulator.
+If you are using Maven you can copy the pom.xml file from the samples folder in this repo. Run your executable. At this point, your bot is running locally.
 
-### Start the emulator and connect your bot
+## Start the emulator and connect your bot
 
-At this point, your bot is running locally.
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click **create a new bot configuration** link in the emulator "Welcome" tab. 
+1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+2. Select the .bot file located in the directory where you created the project.
 
-2. Enter a **Bot name** and enter the directory path to your bot code. The bot configuration file will be saved to this path.
+## Interact with your bot
 
-3. Type `http://localhost:port-number/api/messages` into the **Endpoint URL** field, where *port-number* matches the port number shown in the browser where your application is running.
-
-4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
-
-### Interact with your bot
-Send "Hi" to your bot, and the bot will echo the message back.
+Send message to your bot, and the bot will respond back with a message.
+![Emulator running](../media/emulator-v4/emulator-running.png)
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Basic Bot concepts](../v4sdk/bot-builder-basics.md)
+> [Bot concepts](../v4sdk/bot-builder-basics.md)

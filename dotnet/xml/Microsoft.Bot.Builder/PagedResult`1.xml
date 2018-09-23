@@ -1,0 +1,87 @@
+﻿<Type Name="PagedResult&lt;T&gt;" FullName="Microsoft.Bot.Builder.PagedResult&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class PagedResult&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PagedResult`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.PagedResult`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class PagedResult(Of T)" />
+  <TypeSignature Language="F#" Value="type PagedResult&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T"></typeparam>
+    <summary>
+            Page of results from an enumeration.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PagedResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.PagedResult`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinuationToken">
+      <MemberSignature Language="C#" Value="public string ContinuationToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContinuationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.PagedResult`1.ContinuationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinuationToken As String" />
+      <MemberSignature Language="F#" Value="member this.ContinuationToken : string with get, set" Usage="Microsoft.Bot.Builder.PagedResult&lt;'T&gt;.ContinuationToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Token used to page through multiple pages.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public T[] Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T[] Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.PagedResult`1.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Property Items As T()" />
+      <MemberSignature Language="F#" Value="member this.Items : 'T[] with get, set" Usage="Microsoft.Bot.Builder.PagedResult&lt;'T&gt;.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Page of items.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

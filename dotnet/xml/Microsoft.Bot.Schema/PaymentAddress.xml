@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="country" Type="System.String" />
@@ -105,9 +108,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="addressLine")</AttributeName>
         </Attribute>
       </Attributes>
@@ -135,9 +139,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="city")</AttributeName>
         </Attribute>
       </Attributes>
@@ -162,9 +167,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="country")</AttributeName>
         </Attribute>
       </Attributes>
@@ -190,9 +196,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="dependentLocality")</AttributeName>
         </Attribute>
       </Attributes>
@@ -219,9 +226,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="languageCode")</AttributeName>
         </Attribute>
       </Attributes>
@@ -248,9 +256,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="organization")</AttributeName>
         </Attribute>
       </Attributes>
@@ -276,9 +285,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="phone")</AttributeName>
         </Attribute>
       </Attributes>
@@ -304,9 +314,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="postalCode")</AttributeName>
         </Attribute>
       </Attributes>
@@ -332,9 +343,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient")</AttributeName>
         </Attribute>
       </Attributes>
@@ -359,9 +371,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="region")</AttributeName>
         </Attribute>
       </Attributes>
@@ -388,9 +401,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sortingCode")</AttributeName>
         </Attribute>
       </Attributes>

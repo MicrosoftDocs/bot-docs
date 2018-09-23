@@ -1,0 +1,138 @@
+﻿<Type Name="ChoiceFactoryOptions" FullName="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions">
+  <TypeSignature Language="C#" Value="public class ChoiceFactoryOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChoiceFactoryOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChoiceFactoryOptions" />
+  <TypeSignature Language="F#" Value="type ChoiceFactoryOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChoiceFactoryOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeNumbers">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IncludeNumbers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IncludeNumbers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.IncludeNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeNumbers As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IncludeNumbers : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.IncludeNumbers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether an inline and list style choices will be prefixed with the index of the
+            choice as in "1. choice". If <see langword="false" />, the list style will use a bulleted list instead.The default value is <see langword="true" />.
+            </summary>
+        <value>
+            A <c>true</c>if an inline and list style choices will be prefixed with the index of the
+            choice as in "1. choice"; otherwise a <c>false</c> and the list style will use a bulleted list instead.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineOr">
+      <MemberSignature Language="C#" Value="public string InlineOr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InlineOr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.InlineOr" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineOr As String" />
+      <MemberSignature Language="F#" Value="member this.InlineOr : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.InlineOr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the separator inserted between the choices when their are only 2 choices. The default
+            value is `" or "`. This is optional.
+            </summary>
+        <value>
+            The separator inserted between the choices when their are only 2 choices.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineOrMore">
+      <MemberSignature Language="C#" Value="public string InlineOrMore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InlineOrMore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.InlineOrMore" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineOrMore As String" />
+      <MemberSignature Language="F#" Value="member this.InlineOrMore : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.InlineOrMore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the separator inserted between the last 2 choices when their are more than 2 choices.
+            The default value is `", or "`. This is optional.
+            </summary>
+        <value>
+            The separator inserted between the last 2 choices when their are more than 2 choices.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineSeparator">
+      <MemberSignature Language="C#" Value="public string InlineSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InlineSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.InlineSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.InlineSeparator : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions.InlineSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the character used to separate individual choices when there are more than 2 choices.
+            The default value is `", "`. This is optional.
+            </summary>
+        <value>
+            The character used to separate individual choices when there are more than 2 choices.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

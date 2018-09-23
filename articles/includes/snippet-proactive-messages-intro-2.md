@@ -1,8 +1,9 @@
-An **ad hoc proactive message** is the simplest type of proactive message. 
-The bot simply interjects the message into the conversation whenever it is triggered, 
-without any regard for whether the user is currently engaged in a separate 
-topic of conversation with the bot and will not attempt to change the conversation in any way. 
+An **ad hoc proactive message** is the simplest type of proactive message.
+The bot simply interjects the message into the conversation whenever it is triggered, without any regard for whether the user is currently engaged in a separate topic of conversation with the bot and will not attempt to change the conversation in any way.
 
+To handle notifications more smoothly, consider other ways to integrate the notification into the conversation flow, such as setting a flag in the conversation state or adding the notification to a queue.
+
+<!--Snip
 A **dialog-based proactive message** is more complex than an ad hoc proactive message. 
 Before it can inject this type of proactive message into the conversation, 
 the bot must identify the context of the existing conversation and decide how (or if)
@@ -18,3 +19,4 @@ When the user finishes all required tasks at the `SurveyDialog`, the `SurveyDial
 A dialog-based proactive message is more than just simple notification. 
 In sending the notification, the bot changes the topic of the existing conversation. 
 It then must decide whether to resume that conversation later, or to abandon that conversation altogether by resetting the dialog stack. 
+/Snip-->

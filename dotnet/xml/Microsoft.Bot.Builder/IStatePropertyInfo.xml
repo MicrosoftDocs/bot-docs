@@ -1,0 +1,44 @@
+﻿<Type Name="IStatePropertyInfo" FullName="Microsoft.Bot.Builder.IStatePropertyInfo">
+  <TypeSignature Language="C#" Value="public interface IStatePropertyInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStatePropertyInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.IStatePropertyInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStatePropertyInfo" />
+  <TypeSignature Language="F#" Value="type IStatePropertyInfo = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This is metadata about the property including policy info.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.IStatePropertyInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Bot.Builder.IStatePropertyInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the property.
+            </summary>
+        <value>
+            The name of the property.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

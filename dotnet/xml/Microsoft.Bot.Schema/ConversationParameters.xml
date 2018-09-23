@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,6 +48,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isGroup" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -62,7 +65,8 @@
         <param name="topicName">(Optional) Topic of the conversation (if
             supported by the channel)</param>
         <param name="activity">(Optional) When creating a new conversation,
-            use this activity as the intial message to the conversation</param>
+            use this activity as the initial message to the
+            conversation</param>
         <param name="channelData">Channel specific payload for creating the
             conversation</param>
         <summary>
@@ -81,9 +85,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activity")</AttributeName>
         </Attribute>
       </Attributes>
@@ -93,7 +98,7 @@
       <Docs>
         <summary>
             Gets or sets (Optional) When creating a new conversation, use this
-            activity as the intial message to the conversation
+            activity as the initial message to the conversation
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -109,9 +114,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bot")</AttributeName>
         </Attribute>
       </Attributes>
@@ -136,9 +142,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelData")</AttributeName>
         </Attribute>
       </Attributes>
@@ -163,9 +170,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isGroup")</AttributeName>
         </Attribute>
       </Attributes>
@@ -190,9 +198,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="members")</AttributeName>
         </Attribute>
       </Attributes>
@@ -217,9 +226,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="topicName")</AttributeName>
         </Attribute>
       </Attributes>

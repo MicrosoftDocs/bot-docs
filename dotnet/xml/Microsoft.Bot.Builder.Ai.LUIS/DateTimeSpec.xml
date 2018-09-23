@@ -1,12 +1,16 @@
-﻿<Type Name="DateTimeSpec" FullName="Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec">
+﻿<Type Name="DateTimeSpec" FullName="Microsoft.Bot.Builder.AI.Luis.DateTimeSpec">
   <TypeSignature Language="C#" Value="public class DateTimeSpec" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateTimeSpec extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec" />
   <TypeSignature Language="VB.NET" Value="Public Class DateTimeSpec" />
   <TypeSignature Language="F#" Value="type DateTimeSpec = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +30,17 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DateTimeSpec (string type, System.Collections.Generic.IEnumerable&lt;string&gt; expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class System.Collections.Generic.IEnumerable`1&lt;string&gt; expressions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, expressions As IEnumerable(Of String))" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec : string * seq&lt;string&gt; -&gt; Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec" Usage="new Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec (type, expressions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.DateTimeSpec : string * seq&lt;string&gt; -&gt; Microsoft.Bot.Builder.AI.Luis.DateTimeSpec" Usage="new Microsoft.Bot.Builder.AI.Luis.DateTimeSpec (type, expressions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -46,41 +54,44 @@
       </Docs>
     </Member>
     <Member MemberName="Expressions">
-      <MemberSignature Language="C#" Value="public readonly System.Collections.Generic.IList&lt;string&gt; Expressions;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly class System.Collections.Generic.IList`1&lt;string&gt; Expressions" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec.Expressions" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Expressions As IList(Of String) " />
-      <MemberSignature Language="F#" Value="val mutable Expressions : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec.Expressions" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; Expressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; Expressions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec.Expressions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As IReadOnlyList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Microsoft.Bot.Builder.AI.Luis.DateTimeSpec.Expressions" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty("timex")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Timex expressions.
-            </summary>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec.ToString" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dateTimeSpec.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -93,18 +104,18 @@
       </Docs>
     </Member>
     <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public readonly string Type;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string Type" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec.Type" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Type As String " />
-      <MemberSignature Language="F#" Value="val mutable Type : string" Usage="Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec.Type" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.Bot.Builder.AI.Luis.DateTimeSpec.Type" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty("type")</AttributeName>
         </Attribute>
       </Attributes>
@@ -112,11 +123,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Type of expression.
-            </summary>
-        <remarks>Example types include:
-            <list type="*"><item>time -- simple time expression like "3pm".</item><item>date -- simple date like "july 3rd".</item><item>datetime -- combination of date and time like "march 23 2pm".</item><item>timerange -- a range of time like "2pm to 4pm".</item><item>daterange -- a range of dates like "march 23rd to 24th".</item><item>datetimerang -- a range of dates and times like "july 3rd 2pm to 5th 4pm".</item><item>set -- a recurrence like "every monday".</item></list></remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

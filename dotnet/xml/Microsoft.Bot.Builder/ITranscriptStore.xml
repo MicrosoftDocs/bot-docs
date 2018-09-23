@@ -1,0 +1,112 @@
+﻿<Type Name="ITranscriptStore" FullName="Microsoft.Bot.Builder.ITranscriptStore">
+  <TypeSignature Language="C#" Value="public interface ITranscriptStore : Microsoft.Bot.Builder.ITranscriptLogger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITranscriptStore implements class Microsoft.Bot.Builder.ITranscriptLogger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ITranscriptStore" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITranscriptStore&#xA;Implements ITranscriptLogger" />
+  <TypeSignature Language="F#" Value="type ITranscriptStore = interface&#xA;    interface ITranscriptLogger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.ITranscriptLogger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Represents a store for recording conversations.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteTranscriptAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteTranscriptAsync (string channelId, string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTranscriptAsync(string channelId, string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITranscriptStore.DeleteTranscriptAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteTranscriptAsync (channelId As String, conversationId As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTranscriptAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="iTranscriptStore.DeleteTranscriptAsync (channelId, conversationId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The ID of the channel the conversation is in.</param>
+        <param name="conversationId">The ID of the conversation to delete.</param>
+        <summary>
+            Deletes conversation data from the store.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTranscriptActivitiesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt; GetTranscriptActivitiesAsync (string channelId, string conversationId, string continuationToken = null, DateTimeOffset startDate = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.PagedResult`1&lt;class Microsoft.Bot.Schema.IActivity&gt;&gt; GetTranscriptActivitiesAsync(string channelId, string conversationId, string continuationToken, valuetype System.DateTimeOffset startDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITranscriptStore.GetTranscriptActivitiesAsync(System.String,System.String,System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTranscriptActivitiesAsync (channelId As String, conversationId As String, Optional continuationToken As String = null, Optional startDate As DateTimeOffset = null) As Task(Of PagedResult(Of IActivity))" />
+      <MemberSignature Language="F#" Value="abstract member GetTranscriptActivitiesAsync : string * string * string * DateTimeOffset -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;" Usage="iTranscriptStore.GetTranscriptActivitiesAsync (channelId, conversationId, continuationToken, startDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="startDate" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The ID of the channel the conversation is in.</param>
+        <param name="conversationId">The ID of the conversation.</param>
+        <param name="continuationToken">The continuation token (if available).</param>
+        <param name="startDate">A cutoff date. Activities older than this date are not included.</param>
+        <summary>
+            Gets from the store activities that match a set of criteria.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the result contains the matching activities.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListTranscriptsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt; ListTranscriptsAsync (string channelId, string continuationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.PagedResult`1&lt;class Microsoft.Bot.Builder.TranscriptInfo&gt;&gt; ListTranscriptsAsync(string channelId, string continuationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITranscriptStore.ListTranscriptsAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListTranscriptsAsync (channelId As String, Optional continuationToken As String = null) As Task(Of PagedResult(Of TranscriptInfo))" />
+      <MemberSignature Language="F#" Value="abstract member ListTranscriptsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;" Usage="iTranscriptStore.ListTranscriptsAsync (channelId, continuationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The ID of the channel.</param>
+        <param name="continuationToken">Continuation token (if available).</param>
+        <summary>
+            Gets the conversations on a channel from the store.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>List all transcripts for given ChannelID.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

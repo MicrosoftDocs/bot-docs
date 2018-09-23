@@ -1,4 +1,9 @@
 ---
+redirect_url: /bot-framework/bot-builder-howto-v4-state
+---
+
+<!--
+---
 title: State and storage | Microsoft Docs
 description: Describes what the state manager, conversation state and user state is within the Bot Builder SDK.
 keywords: LUIS, conversation state, user state, storage, manage state
@@ -32,7 +37,7 @@ You can also store *user state* that persists after a conversation ends. For exa
 <!-- You should generally avoid saving state using a global variable or function closures.
 Doing so will create issues when you want to scale out your bot. Instead, use the conversation state and user state middleware that the BotBuilder SDK provides --> 
 
-
+<!--
 ## Types of underlying storage
 
 The SDK provides bot state manager middleware to persist conversation and user state. State can be accessed using the bot's context. This state manager can use Azure Table Storage, file storage, or memory storage as the underlying data storage. You can also create your own storage components for your bot.
@@ -59,3 +64,5 @@ Next, lets get into how activities are processed, in depth, and how we respond t
 
 - [How to save state](bot-builder-howto-v4-state.md)
 - [How to write directly to storage](bot-builder-howto-v4-storage.md)
+
+-->

@@ -1,13 +1,13 @@
 ---
 title: Add media to messages | Microsoft Docs
 description: Learn how to add media to messages using the Bot Builder SDK.
-keywords: media, messages, images, audio, video, files, MessageFactory, rich messages
+keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/24/2018
+ms.date: 09/10/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-A message exchange between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Builder SDK includes a new `Microsoft.Bot.Builder.MessageFactory` class, designed to ease the task of sending rich messages to the user.
+Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Builder SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards. 
 
 ## Send attachments
 
@@ -24,38 +24,28 @@ To send the user content like an image or a video, you can add an attachment or 
 # [C#](#tab/csharp)
 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, use the `Attachment` method to create an `Attachment` object for the `message` activity and set the`ContentType`, `ContentUrl`, and `Name` properties. The source code shown here is based on the [Handling Attachments](https://aka.ms/HandlingAttachmentsCSharp) sample. 
 
 ```csharp
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
-// Create the activity and add an attachment.
-var activity = MessageFactory.Attachment(
-    new Attachment { ContentUrl = "imageUrl.png", ContentType = "image/png" }
-);
+var reply = turnContext.Activity.CreateReply();
+
+// Create an attachment.
+var attachment = new Attachment
+    {
+        ContentUrl = "imageUrl.png",
+        ContentType = "image/png",
+        Name = "imageName",
+    };
+    
+// Add the attachment to our reply.
+reply.Attachments = new List<Attachment>() { attachment };
 
 // Send the activity to the user.
-await context.SendActivity(activity);
-```
-
-The message factory's `Attachment` method can also send a list of attachments, stacked on on top of another.
-
-```csharp
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Schema;
-
-// Create the activity and add an attachment.
-var activity = MessageFactory.Attachment(new Attachment[]
-{
-    new Attachment { ContentUrl = "imageUrl1.png", ContentType = "image/png" },
-    new Attachment { ContentUrl = "imageUrl2.png", ContentType = "image/png" },
-    new Attachment { ContentUrl = "imageUrl3.png", ContentType = "image/png" }
-});
-
-// Send the activity to the user.
-await context.SendActivity(activity);
+await turnContext.SendActivityAsync(reply, cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -70,25 +60,9 @@ let imageOrVideoMessage = MessageFactory.contentUrl('imageUrl.png', 'image/jpeg'
 await context.sendActivity(imageOrVideoMessage);
 ```
 
-To send a list of attachments, stacked one on top of another:
-<!-- TODO: Convert the hero cards to image attachments in this example. -->
-
-```javascript
-// require MessageFactory and CardFactory from botbuilder.
-const {MessageFactory, CardFactory} = require('botbuilder');
-
-let messageWithCarouselOfCards = MessageFactory.list([
-    CardFactory.heroCard('title1', ['imageUrl1'], ['button1']),
-    CardFactory.heroCard('title2', ['imageUrl2'], ['button2']),
-    CardFactory.heroCard('title3', ['imageUrl3'], ['button3'])
-]);
-
-await context.sendActivity(messageWithCarouselOfCards);
-```
-
 ---
 
-If an attachment is an image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](~/v4sdk/bot-builder-channeldata.md) to render that attachment within the conversation. If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
+If an attachment is an image, audio, or video, the Connector service will communicate attachment data to the channel in a way that enables the [channel](bot-builder-channeldata.md) to render that attachment within the conversation. If the attachment is a file, the file URL will be rendered as a hyperlink within the conversation.
 
 ## Send a hero card
 
@@ -96,31 +70,36 @@ Besides simple image or video attachments, you can attach a **hero card**, which
 
 # [C#](#tab/csharp)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message:
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [Handling Attachments](https://aka.ms/HandlingAttachmentsCSharp) sample. 
 
 ```csharp
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
-// Create the activity and attach a Hero card.
-var activity = MessageFactory.Attachment(
-    new HeroCard(
-        title: "White T-Shirt",
-        images: new CardImage[] { new CardImage(url: "imageUrl.png") },
-        buttons: new CardAction[]
-        {
-            new CardAction(title: "buy", type: ActionTypes.ImBack, value: "buy")
-        })
-    .ToAttachment());
+var reply = turnContext.Activity.CreateReply();
 
-// Send the activity as a reply to the user.
-await context.SendActivity(activity);
+// Create a HeroCard with options for the user to choose to interact with the bot.
+var card = new HeroCard
+{
+    Text = "You can upload an image or select one of the following choices",
+    Buttons = new List<CardAction>()
+    {
+        new CardAction(ActionTypes.ImBack, title: "1. Inline Attachment", value: "1"),
+        new CardAction(ActionTypes.ImBack, title: "2. Internet Attachment", value: "2"),
+        new CardAction(ActionTypes.ImBack, title: "3. Uploaded Attachment", value: "3"),
+    },
+};
+
+// Add the card to our reply.
+reply.Attachments = new List<Attachment>() { card.ToAttachment() };
+
+await turnContext.SendActivityAsync(reply, cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
 
-To send the user a card and button, you can attach a `heroCard` to the message:
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message:
 
 ```javascript
 // require MessageFactory and CardFactory from botbuilder.
@@ -137,15 +116,7 @@ const message = MessageFactory.attachment(
 
 await context.sendActivity(message);
 ```
-
 ---
-
-<!--Lifted from the RESP API documentation-->
-
-A rich card comprises a title, description, link, and images. A message can contain multiple rich cards, displayed in either list format or carousel format. The Bot Builder SDK currently supports a wide range of rich cards. To see a listing of rich cards and channels in which they are supported, see [Design UX elements](../bot-service-design-user-experience.md).
-
-> [!TIP]
-> To determine the type of rich cards that a channel supports and see how the channel renders rich cards, see the [Channel Inspector](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-inspector?view=azure-bot-service-4.0). Consult the channel's documentation for information about limitations on the contents of cards (for example, the maximum number of buttons or maximum length of title).
 
 ## Process events within rich cards
 
@@ -176,30 +147,24 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
-// Create the activity and attach a Hero card.
-var activity = MessageFactory.Attachment(
-    new HeroCard(
-        title: "Holler Back Buttons",
-        images: new CardImage[] { new CardImage(url: "imageUrl.png") },
-        buttons: new CardAction[]
-        {
-            new CardAction(title: "Shout Out Loud", type: ActionTypes.imBack, value: "You can ALL hear me!"),
-            new CardAction(title: "Much Quieter", type: ActionTypes.postBack, value: "Shh! My Bot friend hears me."),
-            new CardAction(title: "Show me how to Holler", type: ActionTypes.openURL, value: $"https://en.wikipedia.org/wiki/{cardContent.Key}")
-        })
-    .ToAttachment());
+var reply = turnContext.Activity.CreateReply();
 
-// Send the activity as a reply to the user.
-await context.SendActivity(activity);
+var card = new HeroCard
+{
+    Buttons = new List<CardAction>()
+    {
+        new CardAction(title: "Much Quieter", type: ActionTypes.PostBack, value: "Shh! My Bot friend hears me."),
+        new CardAction(ActionTypes.OpenUrl, title: "Azure Bot Service", value: "https://azure.microsoft.com/en-us/services/bot-service/"),
+    },
+};
+
 ```
 
 # [JavaScript](#tab/javascript)
 
 ```javascript
 const {ActionTypes} = require("botbuilder");
-```
 
-```javascript
 const hero = MessageFactory.attachment(
     CardFactory.heroCard(
         'Holler Back Buttons',
@@ -237,12 +202,13 @@ Second, Adaptive Card delivers messages in the card format, and the channel dete
 
 To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
 
-# [C#](#tab/csharp)
-To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package.
+To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package. Refer to [Using Adaptive Cards](https://aka.ms/AdaptiveCardsCSharp) sample for source code shown here.
 
 
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
+
+# [C#](#tab/csharp)
 
 ```csharp
 using AdaptiveCards;
@@ -250,32 +216,25 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
-// Create the activity and attach an Adaptive Card.
-var card = new AdaptiveCard();
-card.Body.Add(new TextBlock()
+// Creates an attachment that contains an adaptive card
+// filePath is the path to JSON file
+private static Attachment CreateAdaptiveCardAttachment(string filePath)
 {
-    Text = "<title>",
-    Size = TextSize.Large,
-    Wrap = true,
-    Weight = TextWeight.Bolder
-});
-card.Body.Add(new TextBlock() { Text = "<message text>", Wrap = true });
-card.Body.Add(new TextInput()
-{
-    Id = "Title",
-    Value = string.Empty,
-    Style = TextInputStyle.Text,
-    Placeholder = "Title",
-    IsRequired = true,
-    MaxLength = 50
-});
-card.Actions.Add(new SubmitAction() { Title = "Submit", DataJson = "{ Action:'Submit' }" });
-card.Actions.Add(new SubmitAction() { Title = "Cancel", DataJson = "{ Action:'Cancel'}" });
+    var adaptiveCardJson = File.ReadAllText(filePath);
+    var adaptiveCardAttachment = new Attachment()
+    {
+        ContentType = "application/vnd.microsoft.card.adaptive",
+        Content = JsonConvert.DeserializeObject(adaptiveCardJson),
+    };
+    return adaptiveCardAttachment;
+}
 
-var activity = MessageFactory.Attachment(new Attachment(AdaptiveCard.ContentType, content: card));
+// Create adaptive card and attach it to the message 
+var cardAttachment = CreateAdaptiveCardAttachment(adaptiveCardJsonFilePath);
+var reply = turnContext.Activity.CreateReply();
+reply.Attachments = new List<Attachment>() { cardAttachment };
 
-// Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await turnContext.SendActivityAsync(reply, cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -476,7 +435,4 @@ await context.sendActivity(messageWithCarouselOfCards);
 ---
 
 ## Additional resources
-
-[Preview features with the Channel Inspector](../bot-service-channel-inspector.md)
-
----
+Sample code can be found here for cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-js-sample-code), and suggested actions: [C#](https://aka.ms/bot-suggested-actions-code)/[JS](https://aka.ms/bot-suggested-actions-js-code). Refer to Bot Builder Samples repo on [GitHub](https://github.com/Microsoft/BotBuilder-Samples) for additional samples.

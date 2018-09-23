@@ -1,15 +1,8 @@
 ---
-title: Using event handlers | Microsoft Docs
-description: Understand how to use event handlers.
-author: ivorb
-ms.author: v-ivorb
-manager: kamrani
-ms.topic: article
-ms.prod: bot-framework
-ms.date: 06/14/2018
-monikerRange: 'azure-bot-service-4.0'
+redirect_url: /bot-framework/bot-builder-concept-middleware
 ---
 
+<!-- 
 # Using event handlers
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
@@ -93,3 +86,4 @@ adapter.processActivity(req, res, async (context) => {
 
 It's important to differentiate between *send activity* and *update or delete activity* events, where the first creates an entirely new activity event and the later acts on a past activity. Also. not all channels support *update* or *delete* activity. It's suggested to add the appropriate exception handling around calls to these and their handlers to account for that possibility.
 
+-->

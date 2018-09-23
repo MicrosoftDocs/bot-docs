@@ -1,0 +1,90 @@
+<Type Name="ResolverScorable&lt;OuterState,OuterScore,InnerState,InnerScore&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;OuterState,OuterScore,InnerState,InnerScore&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ResolverScorable&lt;OuterState,OuterScore,InnerState,InnerScore&gt; : Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,OuterState,OuterScore,Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerState,InnerScore&gt; where OuterState : ResolverScope&lt;InnerScore&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ResolverScorable`4&lt;(class Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1&lt;!InnerScore&gt;) OuterState, OuterScore, InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator`6&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !OuterState, !OuterScore, class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerState, !InnerScore&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResolverScorable(Of OuterState, OuterScore, InnerState, InnerScore)&#xA;Inherits ScorableAggregator(Of IResolver, OuterState, OuterScore, IResolver, InnerState, InnerScore)" />
+  <TypeSignature Language="F#" Value="type ResolverScorable&lt;'OuterState, 'OuterScore, 'InnerState, 'InnerScore (requires 'OuterState :&gt; ResolverScope&lt;'InnerScore&gt;)&gt; = class&#xA;    inherit ScorableAggregator&lt;IResolver, 'OuterState, 'OuterScore, IResolver, 'InnerState, 'InnerScore (requires 'OuterState :&gt; ResolverScope&lt;'InnerScore&gt;)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="OuterState">
+      <Constraints>
+        <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="OuterScore" />
+    <TypeParameter Name="InnerState" />
+    <TypeParameter Name="InnerScore" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.ScorableAggregator&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,OuterState,OuterScore,Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerState,InnerScore&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="OuterItem">Microsoft.Bot.Builder.Scorables.Internals.IResolver</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="OuterState">OuterState</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="OuterScore">OuterScore</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerItem">Microsoft.Bot.Builder.Scorables.Internals.IResolver</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerState">InnerState</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerScore">InnerScore</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="OuterState">To be added.</typeparam>
+    <typeparam name="OuterScore">To be added.</typeparam>
+    <typeparam name="InnerState">To be added.</typeparam>
+    <typeparam name="InnerScore">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResolverScorable (Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4.#ctor(Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`3})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IScorable(Of IResolver, InnerScore))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;'OuterState, 'OuterScore, 'InnerState, 'InnerScore (requires 'OuterState :&gt; Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;'InnerScore&gt;)&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'InnerScore&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;'OuterState, 'OuterScore, 'InnerState, 'InnerScore (requires 'OuterState :&gt; Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;'InnerScore&gt;)&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;'OuterState, 'OuterScore, 'InnerState, 'InnerScore (requires 'OuterState :&gt; Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;'InnerScore&gt;)&gt; inner" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="inner">
+      <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; inner;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4.inner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly inner As IScorable(Of IResolver, InnerScore) " />
+      <MemberSignature Language="F#" Value="val mutable inner : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'InnerScore&gt;" Usage="Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;'OuterState, 'OuterScore, 'InnerState, 'InnerScore (requires 'OuterState :&gt; Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;'InnerScore&gt;)&gt;.inner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

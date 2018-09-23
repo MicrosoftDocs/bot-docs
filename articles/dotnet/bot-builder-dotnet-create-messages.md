@@ -30,8 +30,6 @@ This sample shows how to create a custom `message` object and set the `Text`, `T
 
 The `TextFormat` property of a message can be used to specify the format of the text. The `TextFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `TextFormat` is **markdown**. 
 
-For a list of commonly supported text formatting, see [Text formatting](../bot-service-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../bot-service-channel-inspector.md).
-
 ## Attachments
 
 The `Attachments` property of a message activity can be used to send and receive simple media attachments 

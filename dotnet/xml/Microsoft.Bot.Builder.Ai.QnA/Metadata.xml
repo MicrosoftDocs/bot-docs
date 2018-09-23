@@ -1,19 +1,23 @@
-﻿<Type Name="Metadata" FullName="Microsoft.Bot.Builder.Ai.QnA.Metadata">
+﻿<Type Name="Metadata" FullName="Microsoft.Bot.Builder.AI.QnA.Metadata">
   <TypeSignature Language="C#" Value="public class Metadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Metadata extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.QnA.Metadata" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.Metadata" />
   <TypeSignature Language="VB.NET" Value="Public Class Metadata" />
   <TypeSignature Language="F#" Value="type Metadata = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute>
       <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -25,12 +29,16 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Metadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.Metadata.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Metadata.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,16 +49,20 @@
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.Metadata.Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Metadata.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
-      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.Metadata.Name" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Metadata.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
         </Attribute>
       </Attributes>
@@ -66,16 +78,20 @@
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.Metadata.Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Metadata.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
-      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.Metadata.Value" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Metadata.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
         </Attribute>
       </Attributes>

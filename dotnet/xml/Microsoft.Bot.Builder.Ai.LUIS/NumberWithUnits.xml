@@ -1,12 +1,16 @@
-﻿<Type Name="NumberWithUnits" FullName="Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits">
+﻿<Type Name="NumberWithUnits" FullName="Microsoft.Bot.Builder.AI.Luis.NumberWithUnits">
   <TypeSignature Language="C#" Value="public class NumberWithUnits" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberWithUnits extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" />
   <TypeSignature Language="VB.NET" Value="Public Class NumberWithUnits" />
   <TypeSignature Language="F#" Value="type NumberWithUnits = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,13 +28,17 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NumberWithUnits (Nullable&lt;double&gt; number, string units);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;float64&gt; number, string units) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits.#ctor(System.Nullable{System.Double},System.String)" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.#ctor(System.Nullable{System.Double},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (number As Nullable(Of Double), units As String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits : Nullable&lt;double&gt; * string -&gt; Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits" Usage="new Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits (number, units)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.NumberWithUnits : Nullable&lt;double&gt; * string -&gt; Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" Usage="new Microsoft.Bot.Builder.AI.Luis.NumberWithUnits (number, units)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="number" Type="System.Nullable&lt;System.Double&gt;" />
@@ -44,18 +52,18 @@
       </Docs>
     </Member>
     <Member MemberName="Number">
-      <MemberSignature Language="C#" Value="public readonly Nullable&lt;double&gt; Number;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly valuetype System.Nullable`1&lt;float64&gt; Number" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits.Number" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Number As Nullable(Of Double) " />
-      <MemberSignature Language="F#" Value="val mutable Number : Nullable&lt;double&gt;" Usage="Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits.Number" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Number { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Number" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.Number" />
+      <MemberSignature Language="VB.NET" Value="Public Property Number As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Number : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.Number" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty("number")</AttributeName>
         </Attribute>
       </Attributes>
@@ -63,25 +71,24 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Recognized number, or null if unit only.
-            </summary>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Units">
-      <MemberSignature Language="C#" Value="public readonly string Units;" />
-      <MemberSignature Language="ILAsm" Value=".field public initonly string Units" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits.Units" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Units As String " />
-      <MemberSignature Language="F#" Value="val mutable Units : string" Usage="Microsoft.Bot.Builder.Ai.LUIS.NumberWithUnits.Units" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public string Units { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Units" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.Units" />
+      <MemberSignature Language="VB.NET" Value="Public Property Units As String" />
+      <MemberSignature Language="F#" Value="member this.Units : string with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.Units" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty("units")</AttributeName>
         </Attribute>
       </Attributes>
@@ -89,9 +96,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Normalized recognized unit.
-            </summary>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

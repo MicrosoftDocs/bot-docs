@@ -1,0 +1,125 @@
+<Type Name="LuisTraceInfo" FullName="Microsoft.Bot.Builder.Dialogs.LuisTraceInfo">
+  <TypeSignature Language="C#" Value="public class LuisTraceInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisTraceInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisTraceInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisTraceInfo" />
+  <TypeSignature Language="F#" Value="type LuisTraceInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The schema for the LUIS trace info
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisTraceInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisModel">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.ILuisModel LuisModel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.ILuisModel LuisModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.LuisModel" />
+      <MemberSignature Language="VB.NET" Value="Public Property LuisModel As ILuisModel" />
+      <MemberSignature Language="F#" Value="member this.LuisModel : Microsoft.Bot.Builder.Luis.ILuisModel with get, set" Usage="Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.LuisModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("luisModel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.ILuisModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The metadata about the LUIS app
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.ILuisOptions LuisOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.ILuisOptions LuisOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.LuisOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property LuisOptions As ILuisOptions" />
+      <MemberSignature Language="F#" Value="member this.LuisOptions : Microsoft.Bot.Builder.Luis.ILuisOptions with get, set" Usage="Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.LuisOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("luisOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.ILuisOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The options passed to the LUIS service
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisResult">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.Models.LuisResult LuisResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Luis.Models.LuisResult LuisResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.LuisResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property LuisResult As LuisResult" />
+      <MemberSignature Language="F#" Value="member this.LuisResult : Microsoft.Bot.Builder.Luis.Models.LuisResult with get, set" Usage="Microsoft.Bot.Builder.Dialogs.LuisTraceInfo.LuisResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("luisResult")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.Models.LuisResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The raw response coming back from the LUIS service
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

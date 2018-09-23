@@ -1,0 +1,29 @@
+﻿<Type Name="ValidateReply" FullName="Microsoft.Bot.Builder.Adapters.ValidateReply">
+  <TypeSignature Language="C#" Value="public delegate void ValidateReply(IActivity expected, IActivity actual);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidateReply extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.ValidateReply" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ValidateReply(expected As IActivity, actual As IActivity)" />
+  <TypeSignature Language="F#" Value="type ValidateReply = delegate of IActivity * IActivity -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="expected" Type="Microsoft.Bot.Schema.IActivity" />
+    <Parameter Name="actual" Type="Microsoft.Bot.Schema.IActivity" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="expected">The expected activity from the bot or adapter.</param>
+    <param name="actual">The actual activity from the bot or adapter.</param>
+    <summary>
+            Represents a method the <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> can call to validate an activity.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

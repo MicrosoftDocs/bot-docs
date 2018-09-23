@@ -1,0 +1,229 @@
+<Type Name="Conversation" FullName="Microsoft.Bot.Builder.Dialogs.Conversation">
+  <TypeSignature Language="C#" Value="public static class Conversation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Conversation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Conversation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Conversation" />
+  <TypeSignature Language="F#" Value="type Conversation = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The top level composition root for the SDK.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Container">
+      <MemberSignature Language="C#" Value="public static Autofac.IContainer Container { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Autofac.IContainer Container" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Conversation.Container" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Container As IContainer" />
+      <MemberSignature Language="F#" Value="member this.Container : Autofac.IContainer" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Container" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Autofac.IContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="public static void Disable (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.Disable(System.Type)" />
+      <MemberSignature Language="F#" Value="static member Disable : Type -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Disable type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The service type.</param>
+        <summary>
+            Disable a specific service type by replacing it with a pass through implementation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="public static void Disable (Type type, Autofac.ContainerBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type, class Autofac.ContainerBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.Disable(System.Type,Autofac.ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="static member Disable : Type * Autofac.ContainerBuilder -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Disable (type, builder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="type">The service type.</param>
+        <param name="builder">The container builder.</param>
+        <summary>
+            Disable a specific service type by replacing it with a pass through implementation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, class Microsoft.Bot.Connector.IActivity toBot, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Builder.Dialogs.ResumptionCookie * Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync (resumptionCookie, toBot, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Obsolete("Use the overload that uses ConversationReference instead of ResumptionCookie")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resumptionCookie" Type="Microsoft.Bot.Builder.Dialogs.ResumptionCookie" />
+        <Parameter Name="toBot" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resumptionCookie"> The resumption cookie.</param>
+        <param name="toBot"> The data sent to bot.</param>
+        <param name="token"> The cancellation token.</param>
+        <summary>
+            Resume a conversation and post the data to the dialog waiting.
+            </summary>
+        <returns> A task that represent the message to send back to the user after resumption of the conversation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Connector.ConversationReference conversationReference, class Microsoft.Bot.Connector.IActivity toBot, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Connector.ConversationReference * Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync (conversationReference, toBot, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationReference" Type="Microsoft.Bot.Connector.ConversationReference" />
+        <Parameter Name="toBot" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="conversationReference"> The resumption cookie.</param>
+        <param name="toBot"> The data sent to bot.</param>
+        <param name="token"> The cancellation token.</param>
+        <summary>
+            Resume a conversation and post the data to the dialog waiting.
+            </summary>
+        <returns> A task that represent the message to send back to the user after resumption of the conversation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendAsync (Microsoft.Bot.Connector.IMessageActivity toBot, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt;&gt; MakeRoot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendAsync(class Microsoft.Bot.Connector.IMessageActivity toBot, class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;&gt; MakeRoot, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendAsync (toBot As IMessageActivity, MakeRoot As Func(Of IDialog(Of Object)), Optional token As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="static member SendAsync : Microsoft.Bot.Connector.IMessageActivity * Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;obj&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync (toBot, MakeRoot, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toBot" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="MakeRoot" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Object&gt;&gt;" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="toBot">The message sent to the bot.</param>
+        <param name="MakeRoot">The factory method to make the root dialog.</param>
+        <param name="token">The cancellation token.</param>
+        <summary>
+            Process an incoming message within the conversation.
+            </summary>
+        <returns>A task that represents the message to send inline back to the user.</returns>
+        <remarks>
+            This method:
+            1. Instantiates and composes the required components.
+            2. Deserializes the dialog state (the dialog stack and each dialog's state) from the <paramref name="toBot" /><see cref="T:Microsoft.Bot.Connector.IMessageActivity" />.
+            3. Resumes the conversation processes where the dialog suspended to wait for a <see cref="T:Microsoft.Bot.Connector.IMessageActivity" />.
+            4. Queues <see cref="T:Microsoft.Bot.Connector.IMessageActivity" />s to be sent to the user.
+            5. Serializes the updated dialog state in the messages to be sent to the user.
+            
+            The <paramref name="MakeRoot" /> factory method is invoked for new conversations only,
+            because existing conversations have the dialog stack and state serialized in the <see cref="T:Microsoft.Bot.Connector.IMessageActivity" /> data.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateContainer">
+      <MemberSignature Language="C#" Value="public static void UpdateContainer (Action&lt;Autofac.ContainerBuilder&gt; update);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateContainer(class System.Action`1&lt;class Autofac.ContainerBuilder&gt; update) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.UpdateContainer(System.Action{Autofac.ContainerBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateContainer (update As Action(Of ContainerBuilder))" />
+      <MemberSignature Language="F#" Value="static member UpdateContainer : Action&lt;Autofac.ContainerBuilder&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.UpdateContainer update" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Autofac</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="update" Type="System.Action&lt;Autofac.ContainerBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="update">The delegate that represents the update to apply.</param>
+        <summary>
+            Update the Autofac container.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

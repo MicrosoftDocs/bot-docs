@@ -1,30 +1,37 @@
 ﻿<Type Name="WaterfallStep" FullName="Microsoft.Bot.Builder.Dialogs.WaterfallStep">
-  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task WaterfallStep(DialogContext dc, IDictionary&lt;string,object&gt; args = null, SkipStepFunction next = null);" />
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; WaterfallStep(WaterfallStepContext stepContext, CancellationToken cancellationToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WaterfallStep extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.WaterfallStep" />
-  <TypeSignature Language="VB.NET" Value="Public Delegate Function WaterfallStep(dc As DialogContext, Optional args As IDictionary(Of String, Object) = null, Optional next As SkipStepFunction = null) As Task " />
-  <TypeSignature Language="F#" Value="type WaterfallStep = delegate of DialogContext * IDictionary&lt;string, obj&gt; * SkipStepFunction -&gt; Task" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function WaterfallStep(stepContext As WaterfallStepContext, cancellationToken As CancellationToken) As Task(Of DialogTurnResult) " />
+  <TypeSignature Language="F#" Value="type WaterfallStep = delegate of WaterfallStepContext * CancellationToken -&gt; Task&lt;DialogTurnResult&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
     <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+    <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
     <Parameter Name="args" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
     <Parameter Name="next" Type="Microsoft.Bot.Builder.Dialogs.SkipStepFunction" />
+    <Parameter Name="stepContext" Type="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext" />
   </Parameters>
   <ReturnValue>
-    <ReturnType>System.Threading.Tasks.Task</ReturnType>
+    <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
   </ReturnValue>
   <Docs>
     <param name="dc">To be added.</param>
+    <param name="cancellationToken">The cancellation token.</param>
     <param name="args">To be added.</param>
     <param name="next">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="stepContext">The WaterfallStepContext for this waterfall dialog.</param>
+    <summary>
+            A delegate definition of a Waterfall step. This is implemented by application code.
+            </summary>
+    <returns>A <see cref="T:System.Threading.Tasks.Task" /> of <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" /> representing the asynchronous operation.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

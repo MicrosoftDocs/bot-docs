@@ -40,7 +40,7 @@ Clicking the name of a migrated bot will open the bot in the [Azure portal](http
 
 Functions bots created with Node.js must be packed using [Funcpack](https://github.com/Azure/azure-functions-pack) before migrating. To Funcpack your project, follow these steps:
 
-1.	[Download](bot-service-build-download-source-code.md#download-bot-source-code) your code locally if you haven’t already.
+1.	[Download](bot-service-build-download-source-code.md) your code locally if you haven’t already.
 2.	Update all the npm packages in **packages.json** to the latest versions and then run `npm install`.
 3.	Open **messages/index.js** and change `module.exports = { default: connector.listen() }`
 to `module.exports = connector.listen();`

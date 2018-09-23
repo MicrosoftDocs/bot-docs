@@ -1,17 +1,19 @@
 ﻿<Type Name="AttachmentPrompt" FullName="Microsoft.Bot.Builder.Dialogs.AttachmentPrompt">
-  <TypeSignature Language="C#" Value="public class AttachmentPrompt : Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Prompts.AttachmentResult&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentPrompt extends Microsoft.Bot.Builder.Dialogs.Prompt`1&lt;class Microsoft.Bot.Builder.Prompts.AttachmentResult&gt;" />
+  <TypeSignature Language="C#" Value="public class AttachmentPrompt : Microsoft.Bot.Builder.Dialogs.Prompt&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentPrompt extends Microsoft.Bot.Builder.Dialogs.Prompt`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt" />
-  <TypeSignature Language="VB.NET" Value="Public Class AttachmentPrompt&#xA;Inherits Prompt(Of AttachmentResult)" />
-  <TypeSignature Language="F#" Value="type AttachmentPrompt = class&#xA;    inherit Prompt&lt;AttachmentResult&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachmentPrompt&#xA;Inherits Prompt(Of IList(Of Attachment))" />
+  <TypeSignature Language="F#" Value="type AttachmentPrompt = class&#xA;    inherit Prompt&lt;IList&lt;Attachment&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Prompts.AttachmentResult&gt;</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="botbuilder-dotnet-stable">Microsoft.Bot.Builder.Dialogs.Prompt&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;</BaseTypeName>
     <BaseTypeArguments>
-      <BaseTypeArgument TypeParamName="T">Microsoft.Bot.Builder.Prompts.AttachmentResult</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T">System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;</BaseTypeArgument>
     </BaseTypeArguments>
   </Base>
   <Interfaces />
@@ -32,6 +34,28 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachmentPrompt (string dialogId, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt; validator = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt;&gt; validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, Optional validator As PromptValidator(Of IList(Of Attachment)) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.AttachmentPrompt : string * Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.AttachmentPrompt" Usage="new Microsoft.Bot.Builder.Dialogs.AttachmentPrompt (dialogId, validator)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+        <Parameter Name="validator" Type="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">To be added.</param>
+        <param name="validator">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +88,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnPromptAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnPromptAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OnPromptAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt.OnPromptAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnPromptAsync : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Microsoft.Bot.Builder.Dialogs.PromptOptions * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="attachmentPrompt.OnPromptAsync (turnContext, state, options, isRetry, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="state" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
+        <Parameter Name="isRetry" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="isRetry">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnRecognize">
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.AttachmentResult&gt; OnRecognize (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Prompts.AttachmentResult&gt; OnRecognize(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options) cil managed" />
@@ -85,6 +140,35 @@
       <Docs>
         <param name="dc">To be added.</param>
         <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecognizeAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;&gt; OnRecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt;&gt;&gt; OnRecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt.OnRecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnRecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Microsoft.Bot.Builder.Dialogs.PromptOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;&gt;" Usage="attachmentPrompt.OnRecognizeAsync (turnContext, state, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="state" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

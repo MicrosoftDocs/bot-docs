@@ -1,0 +1,158 @@
+﻿<Type Name="WaterfallStepContext" FullName="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext">
+  <TypeSignature Language="C#" Value="public class WaterfallStepContext : Microsoft.Bot.Builder.Dialogs.DialogContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WaterfallStepContext extends Microsoft.Bot.Builder.Dialogs.DialogContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class WaterfallStepContext&#xA;Inherits DialogContext" />
+  <TypeSignature Language="F#" Value="type WaterfallStepContext = class&#xA;    inherit DialogContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DialogContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the index of the current waterfall step being executed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; NextAsync (object result = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; NextAsync(object result, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.NextAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.NextAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="waterfallStepContext.NextAsync (result, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="result">Optional result to pass to next step.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Used to skip to the next waterfall step.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> of <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public object Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As Object" />
+      <MemberSignature Language="F#" Value="member this.Options : obj" Usage="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets any options the waterfall dialog was called with.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogReason Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Dialogs.DialogReason Reason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As DialogReason" />
+      <MemberSignature Language="F#" Value="member this.Reason : Microsoft.Bot.Builder.Dialogs.DialogReason" Usage="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the reason the waterfall step is being executed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public object Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Object" />
+      <MemberSignature Language="F#" Value="member this.Result : obj" Usage="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets results returned by a dialog called in the previous waterfall step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a dictionary of values which will be persisted across all waterfall steps.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

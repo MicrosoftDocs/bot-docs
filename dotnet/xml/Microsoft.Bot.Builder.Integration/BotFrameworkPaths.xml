@@ -1,0 +1,85 @@
+﻿<Type Name="BotFrameworkPaths" FullName="Microsoft.Bot.Builder.Integration.BotFrameworkPaths">
+  <TypeSignature Language="C#" Value="public class BotFrameworkPaths" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotFrameworkPaths extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.BotFrameworkPaths" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotFrameworkPaths" />
+  <TypeSignature Language="F#" Value="type BotFrameworkPaths = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkPaths ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.BotFrameworkPaths.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasePath">
+      <MemberSignature Language="C#" Value="public string BasePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BasePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Integration.BotFrameworkPaths.BasePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePath As String" />
+      <MemberSignature Language="F#" Value="member this.BasePath : string with get, set" Usage="Microsoft.Bot.Builder.Integration.BotFrameworkPaths.BasePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the base path at which the bot's endpoints should be exposed.
+            </summary>
+        <value>
+            A string that represents the base URL at which the bot should be exposed.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessagesPath">
+      <MemberSignature Language="C#" Value="public string MessagesPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessagesPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Integration.BotFrameworkPaths.MessagesPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessagesPath As String" />
+      <MemberSignature Language="F#" Value="member this.MessagesPath : string with get, set" Usage="Microsoft.Bot.Builder.Integration.BotFrameworkPaths.MessagesPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the path, relative to the <see cref="P:Microsoft.Bot.Builder.Integration.BotFrameworkPaths.BasePath" />, at which the bot framework messages are expected to be delivered.
+            </summary>
+        <value>
+            A string that represents the URL at which the bot framework messages are expected to be delivered.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

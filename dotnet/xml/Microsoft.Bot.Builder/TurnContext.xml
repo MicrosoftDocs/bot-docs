@@ -8,6 +8,10 @@
     <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -24,10 +28,11 @@
             Provides context for a turn of a bot.
             </summary>
     <remarks>Context provides information needed to process an incoming activity.
-            The context object is created by a <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> and persists for the 
+            The context object is created by a <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> and persists for the
             length of the turn.</remarks>
     <altmember cref="T:Microsoft.Bot.IBot" />
     <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
+    <altmember cref="T:Microsoft.Bot.Builder.IBot" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +45,10 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.BotAdapter" />
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
@@ -49,7 +58,7 @@
         <param name="activity">The incoming activity for the turn;
             or <c>null</c> for a turn for a proactive message.</param>
         <summary>
-            Creates a context object.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.TurnContext" /> class.
             </summary>
         <remarks>For use by bot adapter implementations only.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -71,6 +80,10 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
       </ReturnValue>
@@ -79,7 +92,7 @@
             Gets the activity associated with this turn; or <c>null</c> when processing
             a proactive message.
             </summary>
-        <value>To be added.</value>
+        <value>The activity associated with this turn.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,6 +110,10 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
       </ReturnValue>
@@ -104,7 +121,7 @@
         <summary>
             Gets the bot adapter that created this context object.
             </summary>
-        <value>To be added.</value>
+        <value>The bot adapter that created this context object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,6 +223,71 @@
             The HTTP operation failed and the response contained additional information.</exception>
       </Docs>
     </Member>
+    <Member MemberName="DeleteActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivityAsync (Microsoft.Bot.Schema.ConversationReference conversationReference, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(class Microsoft.Bot.Schema.ConversationReference conversationReference, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteActivityAsync : Microsoft.Bot.Schema.ConversationReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteActivityAsync : Microsoft.Bot.Schema.ConversationReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="turnContext.DeleteActivityAsync (conversationReference, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITurnContext.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationReference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="conversationReference">The conversation containing the activity to delete.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Deletes an existing activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>The conversation reference's <see cref="P:Microsoft.Bot.Schema.ConversationReference.ActivityId" />
+            indicates the activity in the conversation to delete.</remarks>
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
+            The HTTP operation failed and the response contained additional information.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivityAsync (string activityId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.DeleteActivityAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteActivityAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteActivityAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="turnContext.DeleteActivityAsync (activityId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITurnContext.DeleteActivityAsync(System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activityId">The ID of the activity to delete.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Deletes an existing activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
+            The HTTP operation failed and the response contained additional information.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -220,12 +302,18 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Frees resources.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,6 +358,10 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
       </ReturnValue>
@@ -282,8 +374,9 @@
             Adds a response handler for delete activity operations.
             </summary>
         <returns>The updated context object.</returns>
-        <remarks>When the context's <see cref="M:Microsoft.Bot.Builder.TurnContext.DeleteActivity(System.String)" /> is called, 
-            the adapter calls the registered handlers in the order in which they were 
+        <remarks>When the context's <see cref="M:Microsoft.Bot.Builder.TurnContext.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
+            or <see cref="M:Microsoft.Bot.Builder.TurnContext.DeleteActivityAsync(System.String,System.Threading.CancellationToken)" /> is called,
+            the adapter calls the registered handlers in the order in which they were
             added to the context object.
             </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -304,6 +397,10 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
       </ReturnValue>
@@ -316,9 +413,9 @@
             Adds a response handler for send activity operations.
             </summary>
         <returns>The updated context object.</returns>
-        <remarks>When the context's <see cref="M:Microsoft.Bot.Builder.TurnContext.SendActivity(Microsoft.Bot.Schema.IActivity)" /> 
-            or <see cref="M:Microsoft.Bot.Builder.TurnContext.SendActivities(Microsoft.Bot.Schema.IActivity[])" /> methods are called, 
-            the adapter calls the registered handlers in the order in which they were 
+        <remarks>When the context's <see cref="M:Microsoft.Bot.Builder.TurnContext.SendActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
+            or <see cref="M:Microsoft.Bot.Builder.TurnContext.SendActivitiesAsync(Microsoft.Bot.Schema.IActivity[],System.Threading.CancellationToken)" /> methods are called,
+            the adapter calls the registered handlers in the order in which they were
             added to the context object.
             </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -339,6 +436,10 @@
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
       </ReturnValue>
@@ -351,8 +452,8 @@
             Adds a response handler for update activity operations.
             </summary>
         <returns>The updated context object.</returns>
-        <remarks>When the context's <see cref="M:Microsoft.Bot.Builder.TurnContext.UpdateActivity(Microsoft.Bot.Schema.IActivity)" /> is called, 
-            the adapter calls the registered handlers in the order in which they were 
+        <remarks>When the context's <see cref="M:Microsoft.Bot.Builder.TurnContext.UpdateActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" /> is called,
+            the adapter calls the registered handlers in the order in which they were
             added to the context object.
             </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -360,29 +461,31 @@
       </Docs>
     </Member>
     <Member MemberName="Responded">
-      <MemberSignature Language="C#" Value="public bool Responded { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool Responded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Responded" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TurnContext.Responded" />
-      <MemberSignature Language="VB.NET" Value="Public Property Responded As Boolean" />
-      <MemberSignature Language="F#" Value="member this.Responded : bool with get, set" Usage="Microsoft.Bot.Builder.TurnContext.Responded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Responded As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Responded : bool" Usage="Microsoft.Bot.Builder.TurnContext.Responded" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.Bot.Builder.ITurnContext.Responded</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates whether at least one response was sent for the current turn.
+            Gets a value indicating whether at least one response was sent for the current turn.
             </summary>
         <value>
           <c>true</c> if at least one response was sent for the current turn.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <see cref="T:Microsoft.Bot.Schema.ITraceActivity" /> activities on their own do not set this flag.</remarks>
         <exception cref="T:System.ArgumentException">You attempted to set the value to <c>false</c>.</exception>
       </Docs>
     </Member>
@@ -414,6 +517,38 @@
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>If the activities are successfully sent, the task result contains
             an array of <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> objects containing the IDs that 
+            the receiving channel assigned to the activities.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivitiesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync (Microsoft.Bot.Schema.IActivity[] activities, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync(class Microsoft.Bot.Schema.IActivity[] activities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.SendActivitiesAsync(Microsoft.Bot.Schema.IActivity[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendActivitiesAsync : Microsoft.Bot.Schema.IActivity[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;&#xA;override this.SendActivitiesAsync : Microsoft.Bot.Schema.IActivity[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;" Usage="turnContext.SendActivitiesAsync (activities, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITurnContext.SendActivitiesAsync(Microsoft.Bot.Schema.IActivity[],System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activities" Type="Microsoft.Bot.Schema.IActivity[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activities">The activities to send.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Sends a set of activities to the sender of the incoming activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the activities are successfully sent, the task result contains
+            an array of <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> objects containing the IDs that
             the receiving channel assigned to the activities.</remarks>
       </Docs>
     </Member>
@@ -495,6 +630,86 @@
           <paramref name="textReplyToSend" /> is <c>null</c> or whitespace.</exception>
       </Docs>
     </Member>
+    <Member MemberName="SendActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.SendActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.SendActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="turnContext.SendActivityAsync (activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITurnContext.SendActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity to send.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Sends an activity to the sender of the incoming activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the activity is successfully sent, the task result contains
+            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
+            channel assigned to the activity.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (string textReplyToSend, string speak = null, string inputHint = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(string textReplyToSend, string speak, string inputHint, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.SendActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendActivityAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.SendActivityAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="turnContext.SendActivityAsync (textReplyToSend, speak, inputHint, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITurnContext.SendActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textReplyToSend" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="inputHint" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="textReplyToSend">The text of the message to send.</param>
+        <param name="speak">Optional, text to be spoken by your bot on a speech-enabled
+            channel.</param>
+        <param name="inputHint">Optional, indicates whether your bot is accepting,
+            expecting, or ignoring user input after the message is delivered to the client.
+            One of: "acceptingInput", "ignoringInput", or "expectingInput".
+            Default is null.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Sends a message activity to the sender of the incoming activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the activity is successfully sent, the task result contains
+            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
+            channel assigned to the activity.
+            <para>See the channel's documentation for limits imposed upon the contents of
+            <paramref name="textReplyToSend" />.</para><para>To control various characteristics of your bot's speech such as voice,
+            rate, volume, pronunciation, and pitch, specify <paramref name="speak" /> in
+            Speech Synthesis Markup Language (SSML) format.</para></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="textReplyToSend" /> is <c>null</c> or whitespace.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="Services">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ITurnContextServiceCollection Services { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.ITurnContextServiceCollection Services" />
@@ -517,6 +732,31 @@
             Gets the services registered on this context object.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TurnState">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.TurnContextStateCollection TurnState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.TurnContextStateCollection TurnState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TurnContext.TurnState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TurnState As TurnContextStateCollection" />
+      <MemberSignature Language="F#" Value="member this.TurnState : Microsoft.Bot.Builder.TurnContextStateCollection" Usage="Microsoft.Bot.Builder.TurnContext.TurnState" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.ITurnContext.TurnState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.TurnContextStateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the services registered on this context object.
+            </summary>
+        <value>The services registered on this context object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -548,6 +788,44 @@
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>If the activity is successfully sent, the task result contains
             a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving 
+            channel assigned to the activity.
+            <para>Before calling this, set the ID of the replacement activity to the ID
+            of the activity to replace.</para></remarks>
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
+            The HTTP operation failed and the response contained additional information.</exception>
+        <exception cref="T:System.AggregateException">
+            One or more exceptions occurred during the operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.UpdateActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.UpdateActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="turnContext.UpdateActivityAsync (activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITurnContext.UpdateActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">New replacement activity.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Replaces an existing activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the activity is successfully sent, the task result contains
+            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
             channel assigned to the activity.
             <para>Before calling this, set the ID of the replacement activity to the ID
             of the activity to replace.</para></remarks>

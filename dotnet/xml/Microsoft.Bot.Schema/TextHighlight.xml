@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Refers to a substring of content within another field
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,24 +40,33 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TextHighlight (string text = null, Nullable&lt;int&gt; occurence = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, valuetype System.Nullable`1&lt;int32&gt; occurence) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.TextHighlight.#ctor(System.String,System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional occurence As Nullable(Of Integer) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.TextHighlight : string * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Schema.TextHighlight" Usage="new Microsoft.Bot.Schema.TextHighlight (text, occurence)" />
+      <MemberSignature Language="C#" Value="public TextHighlight (string text = null, Nullable&lt;int&gt; occurence = null);" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, valuetype System.Nullable`1&lt;int32&gt; occurence) cil managed" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.TextHighlight.#ctor(System.String,System.Nullable{System.Int32})" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional occurence As Nullable(Of Integer) = null)" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.TextHighlight : string * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Schema.TextHighlight" Usage="new Microsoft.Bot.Schema.TextHighlight (text, occurence)" FrameworkAlternate="botbuilder-dotnet-preview" />
+      <MemberSignature Language="C#" Value="public TextHighlight (string text = null, Nullable&lt;int&gt; occurrence = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, valuetype System.Nullable`1&lt;int32&gt; occurrence) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.TextHighlight.#ctor(System.String,System.Nullable{System.Int32})" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional occurrence As Nullable(Of Integer) = null)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.TextHighlight : string * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Schema.TextHighlight" Usage="new Microsoft.Bot.Schema.TextHighlight (text, occurrence)" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
-        <Parameter Name="occurence" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="text" Type="System.String" Index="0" />
+        <Parameter Name="occurence" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-preview" />
+        <Parameter Name="occurrence" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
-        <param name="text">plain text fragment to highlight</param>
+        <param name="text">Defines the snippet of text to highlight</param>
         <param name="occurence">index of occurence of the Text (Starting at
             1)</param>
+        <param name="occurrence">Occurrence of the text field within the
+            referenced text, if multiple exist.</param>
         <summary>
             Initializes a new instance of the TextHighlight class.
             </summary>
@@ -87,6 +100,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Occurrence">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Occurrence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Occurrence" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TextHighlight.Occurrence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Occurrence As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Occurrence : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Schema.TextHighlight.Occurrence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="occurrence")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets occurrence of the text field within the referenced
+            text, if multiple exist.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Text">
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
@@ -97,9 +138,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
         </Attribute>
       </Attributes>
@@ -108,7 +150,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets plain text fragment to highlight
+            Gets or sets defines the snippet of text to highlight
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
