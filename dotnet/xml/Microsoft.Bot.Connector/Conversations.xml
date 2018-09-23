@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
@@ -66,6 +68,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConnectorClient</ReturnType>
@@ -76,82 +79,6 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateConversationWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;&gt; CreateConversationWithHttpMessagesAsync (Microsoft.Bot.Connector.ConversationParameters parameters, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ConversationResourceResponse&gt;&gt; CreateConversationWithHttpMessagesAsync(class Microsoft.Bot.Connector.ConversationParameters parameters, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member CreateConversationWithHttpMessagesAsync : Microsoft.Bot.Connector.ConversationParameters * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;&gt;&#xA;override this.CreateConversationWithHttpMessagesAsync : Microsoft.Bot.Connector.ConversationParameters * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;&gt;" Usage="conversations.CreateConversationWithHttpMessagesAsync (parameters, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.CreateConversationWithHttpMessagesAsync(Microsoft.Bot.Connector.ConversationParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="parameters">
-             Parameters to create the conversation from
-             </param>
-        <param name="customHeaders">
-             Headers that will be added to request.
-             </param>
-        <param name="cancellationToken">
-             The cancellation token.
-             </param>
-        <summary>
-             CreateConversation
-             </summary>
-        <returns>To be added.</returns>
-        <remarks>
-             Create a new Conversation.
-            
-             POST to this method with a
-             * Bot being the bot creating the conversation
-             * IsGroup set to true if this is not a direct message (default is false)
-             * Array containing the members to include in the conversation
-            
-             The return value is a ResourceResponse which contains a conversation id
-             which is suitable for use
-             in the message payload and REST API uris.
-            
-             Most channels only support the semantics of bots initiating a direct
-             message conversation.  An example of how to do that would be:
-            
-             ```
-             var resource = await connector.conversations.CreateConversation(new
-             ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new
-             ChannelAccount("user1") } );
-             await connect.Conversations.SendToConversationAsync(resource.Id, new
-             Activity() ... ) ;
-            
-             ```
-             </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
-             Thrown when the operation returned an invalid status code
-             </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-             Thrown when unable to deserialize the response
-             </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-             Thrown when a required parameter is null
-             </exception>
-        <exception cref="T:System.ArgumentNullException">
-             Thrown when a required parameter is null
-             </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
       </Docs>
     </Member>
     <Member MemberName="CreateConversationWithHttpMessagesAsync">
@@ -166,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;&gt;</ReturnType>
@@ -195,8 +123,7 @@
              POST to this method with a
              * Bot being the bot creating the conversation
              * IsGroup set to true if this is not a direct message (default is false)
-             * Members array contining the members you want to have be in the
-             conversation.
+             * Array containing the members to include in the conversation
             
              The return value is a ResourceResponse which contains a conversation id
              which is suitable for use
@@ -244,6 +171,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt;</ReturnType>
@@ -286,12 +214,12 @@
         <exception cref="T:System.ArgumentNullException">
              Thrown when a required parameter is null
              </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
         <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
+        <return>
+             A response object containing the response body and response headers.
+             </return>
       </Docs>
     </Member>
     <Member MemberName="DeleteConversationMemberWithHttpMessagesAsync">
@@ -307,6 +235,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt;</ReturnType>
@@ -351,29 +280,30 @@
         <exception cref="T:System.ArgumentNullException">
              Thrown when a required parameter is null
              </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
         <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
+        <return>
+             A response object containing the response body and response headers.
+             </return>
       </Docs>
     </Member>
     <Member MemberName="GetActivityMembersWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt; GetActivityMembersWithHttpMessagesAsync (string conversationId, string activityId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt; GetActivityMembersWithHttpMessagesAsync(string conversationId, string activityId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt; GetActivityMembersWithHttpMessagesAsync (string conversationId, string activityId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt; GetActivityMembersWithHttpMessagesAsync(string conversationId, string activityId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetActivityMembersWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;&#xA;override this.GetActivityMembersWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;" Usage="conversations.GetActivityMembersWithHttpMessagesAsync (conversationId, activityId, customHeaders, cancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetActivityMembersWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;&#xA;override this.GetActivityMembersWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;" Usage="conversations.GetActivityMembersWithHttpMessagesAsync (conversationId, activityId, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="conversationId" Type="System.String" />
@@ -405,7 +335,7 @@
              of ChannelAccount objects representing the members of the particular
              activity in the conversation.
              </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
         <exception cref="T:Microsoft.Rest.SerializationException">
@@ -423,20 +353,21 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationMembersWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt; GetConversationMembersWithHttpMessagesAsync (string conversationId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt; GetConversationMembersWithHttpMessagesAsync(string conversationId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt; GetConversationMembersWithHttpMessagesAsync (string conversationId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt; GetConversationMembersWithHttpMessagesAsync(string conversationId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetConversationMembersWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;&#xA;override this.GetConversationMembersWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;" Usage="conversations.GetConversationMembersWithHttpMessagesAsync (conversationId, customHeaders, cancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationMembersWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;&#xA;override this.GetConversationMembersWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;" Usage="conversations.GetConversationMembersWithHttpMessagesAsync (conversationId, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="conversationId" Type="System.String" />
@@ -463,7 +394,7 @@
              This REST API takes a ConversationId and returns an array of ChannelAccount
              objects representing the members of the conversation.
              </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
         <exception cref="T:Microsoft.Rest.SerializationException">
@@ -481,20 +412,20 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationPagedMembersWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.PagedMembersResult&gt;&gt; GetConversationPagedMembersWithHttpMessagesAsync (string conversationId, Nullable&lt;int&gt; pageSize = null, string continuationToken = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.PagedMembersResult&gt;&gt; GetConversationPagedMembersWithHttpMessagesAsync(string conversationId, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;&gt; GetConversationPagedMembersWithHttpMessagesAsync (string conversationId, Nullable&lt;int&gt; pageSize = null, string continuationToken = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.PagedMembersResult&gt;&gt; GetConversationPagedMembersWithHttpMessagesAsync(string conversationId, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.GetConversationPagedMembersWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetConversationPagedMembersWithHttpMessagesAsync : string * Nullable&lt;int&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.PagedMembersResult&gt;&gt;&#xA;override this.GetConversationPagedMembersWithHttpMessagesAsync : string * Nullable&lt;int&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.PagedMembersResult&gt;&gt;" Usage="conversations.GetConversationPagedMembersWithHttpMessagesAsync (conversationId, pageSize, continuationToken, customHeaders, cancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationPagedMembersWithHttpMessagesAsync : string * Nullable&lt;int&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;&gt;&#xA;override this.GetConversationPagedMembersWithHttpMessagesAsync : string * Nullable&lt;int&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;&gt;" Usage="conversations.GetConversationPagedMembersWithHttpMessagesAsync (conversationId, pageSize, continuationToken, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.GetConversationPagedMembersWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.PagedMembersResult&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="conversationId" Type="System.String" />
@@ -560,20 +491,21 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationsResult&gt;&gt; GetConversationsWithHttpMessagesAsync (string continuationToken = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ConversationsResult&gt;&gt; GetConversationsWithHttpMessagesAsync(string continuationToken, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationsResult&gt;&gt; GetConversationsWithHttpMessagesAsync (string continuationToken = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ConversationsResult&gt;&gt; GetConversationsWithHttpMessagesAsync(string continuationToken, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.GetConversationsWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetConversationsWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationsResult&gt;&gt;&#xA;override this.GetConversationsWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationsResult&gt;&gt;" Usage="conversations.GetConversationsWithHttpMessagesAsync (continuationToken, customHeaders, cancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationsWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationsResult&gt;&gt;&#xA;override this.GetConversationsWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationsResult&gt;&gt;" Usage="conversations.GetConversationsWithHttpMessagesAsync (continuationToken, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.GetConversationsWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationsResult&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationsResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="continuationToken" Type="System.String" />
@@ -607,7 +539,7 @@
              Each ConversationMembers object contains the ID of the conversation and an
              array of ChannelAccounts that describe the members of the conversation.
              </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
         <exception cref="T:Microsoft.Rest.SerializationException">
@@ -619,25 +551,26 @@
       </Docs>
     </Member>
     <Member MemberName="ReplyToActivityWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt; ReplyToActivityWithHttpMessagesAsync (string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt;&gt; ReplyToActivityWithHttpMessagesAsync(string conversationId, string activityId, class Microsoft.Bot.Connector.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member ReplyToActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Connector.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;&#xA;override this.ReplyToActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Connector.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;" Usage="conversations.ReplyToActivityWithHttpMessagesAsync (conversationId, activityId, activity, customHeaders, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt; ReplyToActivityWithHttpMessagesAsync (string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt;&gt; ReplyToActivityWithHttpMessagesAsync(string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReplyToActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;&#xA;override this.ReplyToActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Usage="conversations.ReplyToActivityWithHttpMessagesAsync (conversationId, activityId, activity, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="conversationId" Type="System.String" />
         <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
@@ -676,81 +609,6 @@
             
              Use SendToConversation in all other cases.
              </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
-             Thrown when the operation returned an invalid status code
-             </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-             Thrown when unable to deserialize the response
-             </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-             Thrown when a required parameter is null
-             </exception>
-        <exception cref="T:System.ArgumentNullException">
-             Thrown when a required parameter is null
-             </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
-      </Docs>
-    </Member>
-    <Member MemberName="ReplyToActivityWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt; ReplyToActivityWithHttpMessagesAsync (string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt;&gt; ReplyToActivityWithHttpMessagesAsync(string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member ReplyToActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;&#xA;override this.ReplyToActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Usage="conversations.ReplyToActivityWithHttpMessagesAsync (conversationId, activityId, activity, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="conversationId">
-             Conversation ID
-             </param>
-        <param name="activityId">
-             activityId the reply is to (OPTIONAL)
-             </param>
-        <param name="activity">
-             Activity to send
-             </param>
-        <param name="customHeaders">
-             Headers that will be added to request.
-             </param>
-        <param name="cancellationToken">
-             The cancellation token.
-             </param>
-        <summary>
-             ReplyToActivity
-             </summary>
-        <returns>To be added.</returns>
-        <remarks>
-             This method allows you to reply to an activity.
-            
-             This is slightly different from SendToConversation().
-             * SendToConverstion(conversationId) - will append the activity to the end
-             of the conversation according to the timestamp or semantics of the channel.
-             * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
-             to another activity, if the channel supports it. If the channel does not
-             support nested replies, ReplyToActivity falls back to SendToConversation.
-            
-             Use ReplyToActivity when replying to a specific activity in the
-             conversation.
-            
-             Use SendToConversation in all other cases.
-             </remarks>
         <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
@@ -769,24 +627,24 @@
       </Docs>
     </Member>
     <Member MemberName="SendConversationHistoryWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt; SendConversationHistoryWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Connector.Transcript transcript, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt;&gt; SendConversationHistoryWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Connector.Transcript transcript, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.SendConversationHistoryWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.Transcript,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member SendConversationHistoryWithHttpMessagesAsync : string * Microsoft.Bot.Connector.Transcript * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;&#xA;override this.SendConversationHistoryWithHttpMessagesAsync : string * Microsoft.Bot.Connector.Transcript * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;" Usage="conversations.SendConversationHistoryWithHttpMessagesAsync (conversationId, transcript, customHeaders, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt; SendConversationHistoryWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Schema.Transcript transcript, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt;&gt; SendConversationHistoryWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Schema.Transcript transcript, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.SendConversationHistoryWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.Transcript,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendConversationHistoryWithHttpMessagesAsync : string * Microsoft.Bot.Schema.Transcript * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;&#xA;override this.SendConversationHistoryWithHttpMessagesAsync : string * Microsoft.Bot.Schema.Transcript * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Usage="conversations.SendConversationHistoryWithHttpMessagesAsync (conversationId, transcript, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.SendConversationHistoryWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.Transcript,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.SendConversationHistoryWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.Transcript,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="transcript" Type="Microsoft.Bot.Connector.Transcript" />
+        <Parameter Name="transcript" Type="Microsoft.Bot.Schema.Transcript" />
         <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
@@ -816,7 +674,7 @@
              duplicate activities and the timestamps are used by the client to render
              the activities in the right order.
              </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
+        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
         <exception cref="T:Microsoft.Rest.SerializationException">
@@ -834,24 +692,25 @@
       </Docs>
     </Member>
     <Member MemberName="SendToConversationWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt; SendToConversationWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Connector.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt;&gt; SendToConversationWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Connector.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.SendToConversationWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member SendToConversationWithHttpMessagesAsync : string * Microsoft.Bot.Connector.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;&#xA;override this.SendToConversationWithHttpMessagesAsync : string * Microsoft.Bot.Connector.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;" Usage="conversations.SendToConversationWithHttpMessagesAsync (conversationId, activity, customHeaders, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt; SendToConversationWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt;&gt; SendToConversationWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.SendToConversationWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendToConversationWithHttpMessagesAsync : string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;&#xA;override this.SendToConversationWithHttpMessagesAsync : string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Usage="conversations.SendToConversationWithHttpMessagesAsync (conversationId, activity, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
@@ -887,147 +746,7 @@
             
              Use SendToConversation in all other cases.
              </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
-             Thrown when the operation returned an invalid status code
-             </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-             Thrown when unable to deserialize the response
-             </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-             Thrown when a required parameter is null
-             </exception>
-        <exception cref="T:System.ArgumentNullException">
-             Thrown when a required parameter is null
-             </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
-      </Docs>
-    </Member>
-    <Member MemberName="SendToConversationWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt; SendToConversationWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt;&gt; SendToConversationWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.SendToConversationWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member SendToConversationWithHttpMessagesAsync : string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;&#xA;override this.SendToConversationWithHttpMessagesAsync : string * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Usage="conversations.SendToConversationWithHttpMessagesAsync (conversationId, activity, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.SendToConversationWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="conversationId">
-             Conversation ID
-             </param>
-        <param name="activity">
-             Activity to send
-             </param>
-        <param name="customHeaders">
-             Headers that will be added to request.
-             </param>
-        <param name="cancellationToken">
-             The cancellation token.
-             </param>
-        <summary>
-             SendToConversation
-             </summary>
-        <returns>To be added.</returns>
-        <remarks>
-             This method allows you to send an activity to the end of a conversation.
-            
-             This is slightly different from ReplyToActivity().
-             * SendToConverstion(conversationId) - will append the activity to the end
-             of the conversation according to the timestamp or semantics of the channel.
-             * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
-             to another activity, if the channel supports it. If the channel does not
-             support nested replies, ReplyToActivity falls back to SendToConversation.
-            
-             Use ReplyToActivity when replying to a specific activity in the
-             conversation.
-            
-             Use SendToConversation in all other cases.
-             </remarks>
         <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
-             Thrown when the operation returned an invalid status code
-             </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-             Thrown when unable to deserialize the response
-             </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-             Thrown when a required parameter is null
-             </exception>
-        <exception cref="T:System.ArgumentNullException">
-             Thrown when a required parameter is null
-             </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
-      </Docs>
-    </Member>
-    <Member MemberName="UpdateActivityWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt; UpdateActivityWithHttpMessagesAsync (string conversationId, string activityId, Microsoft.Bot.Connector.Activity activity, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt;&gt; UpdateActivityWithHttpMessagesAsync(string conversationId, string activityId, class Microsoft.Bot.Connector.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Connector.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;&#xA;override this.UpdateActivityWithHttpMessagesAsync : string * string * Microsoft.Bot.Connector.Activity * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;" Usage="conversations.UpdateActivityWithHttpMessagesAsync (conversationId, activityId, activity, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.UpdateActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Connector.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="conversationId">
-             Conversation ID
-             </param>
-        <param name="activityId">
-             activityId to update
-             </param>
-        <param name="activity">
-             replacement Activity
-             </param>
-        <param name="customHeaders">
-             Headers that will be added to request.
-             </param>
-        <param name="cancellationToken">
-             The cancellation token.
-             </param>
-        <summary>
-             UpdateActivity
-             </summary>
-        <returns>To be added.</returns>
-        <remarks>
-             Edit an existing activity.
-            
-             Some channels allow you to edit an existing activity to reflect the new
-             state of a bot conversation.
-            
-             For example, you can remove buttons after someone has clicked "Approve"
-             button.
-             </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
              Thrown when the operation returned an invalid status code
              </exception>
         <exception cref="T:Microsoft.Rest.SerializationException">
@@ -1056,6 +775,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
@@ -1114,71 +834,6 @@
       </Docs>
     </Member>
     <Member MemberName="UploadAttachmentWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt; UploadAttachmentWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Connector.AttachmentData attachmentUpload, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt;&gt; UploadAttachmentWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Connector.AttachmentData attachmentUpload, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member UploadAttachmentWithHttpMessagesAsync : string * Microsoft.Bot.Connector.AttachmentData * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;&#xA;override this.UploadAttachmentWithHttpMessagesAsync : string * Microsoft.Bot.Connector.AttachmentData * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;" Usage="conversations.UploadAttachmentWithHttpMessagesAsync (conversationId, attachmentUpload, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Connector.IConversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Connector.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="conversationId">
-             Conversation ID
-             </param>
-        <param name="attachmentUpload">
-             Attachment data
-             </param>
-        <param name="customHeaders">
-             Headers that will be added to request.
-             </param>
-        <param name="cancellationToken">
-             The cancellation token.
-             </param>
-        <summary>
-             UploadAttachment
-             </summary>
-        <returns>To be added.</returns>
-        <remarks>
-             Upload an attachment directly into a channel's blob storage.
-            
-             This is useful because it allows you to store data in a compliant store
-             when dealing with enterprises.
-            
-             The response is a ResourceResponse which contains an AttachmentId which is
-             suitable for using with the attachments API.
-             </remarks>
-        <exception cref="T:Microsoft.Bot.Connector.ErrorResponseException">
-             Thrown when the operation returned an invalid status code
-             </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-             Thrown when unable to deserialize the response
-             </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-             Thrown when a required parameter is null
-             </exception>
-        <exception cref="T:System.ArgumentNullException">
-             Thrown when a required parameter is null
-             </exception>
-        <return>
-             A response object containing the response body and response headers.
-             </return>
-      </Docs>
-    </Member>
-    <Member MemberName="UploadAttachmentWithHttpMessagesAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt; UploadAttachmentWithHttpMessagesAsync (string conversationId, Microsoft.Bot.Schema.AttachmentData attachmentUpload, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt;&gt; UploadAttachmentWithHttpMessagesAsync(string conversationId, class Microsoft.Bot.Schema.AttachmentData attachmentUpload, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Conversations.UploadAttachmentWithHttpMessagesAsync(System.String,Microsoft.Bot.Schema.AttachmentData,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
@@ -1190,6 +845,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>

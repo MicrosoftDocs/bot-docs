@@ -1,0 +1,147 @@
+﻿<Type Name="TokenExchangeState" FullName="Microsoft.Bot.Schema.TokenExchangeState">
+  <TypeSignature Language="C#" Value="public class TokenExchangeState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TokenExchangeState extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.TokenExchangeState" />
+  <TypeSignature Language="VB.NET" Value="Public Class TokenExchangeState" />
+  <TypeSignature Language="F#" Value="type TokenExchangeState = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            State object passed to the bot token service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TokenExchangeState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.TokenExchangeState.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotUrl">
+      <MemberSignature Language="C#" Value="public string BotUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BotUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TokenExchangeState.BotUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property BotUrl As String" />
+      <MemberSignature Language="F#" Value="member this.BotUrl : string with get, set" Usage="Microsoft.Bot.Schema.TokenExchangeState.BotUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("botUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The URL of the bot messaging endpoint
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionName">
+      <MemberSignature Language="C#" Value="public string ConnectionName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TokenExchangeState.ConnectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionName As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionName : string with get, set" Usage="Microsoft.Bot.Schema.TokenExchangeState.ConnectionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("connectionName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The connection name that was used
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conversation">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ConversationReference Conversation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.ConversationReference Conversation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TokenExchangeState.Conversation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Conversation As ConversationReference" />
+      <MemberSignature Language="F#" Value="member this.Conversation : Microsoft.Bot.Schema.ConversationReference with get, set" Usage="Microsoft.Bot.Schema.TokenExchangeState.Conversation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("conversation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A reference to the conversation
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MsAppId">
+      <MemberSignature Language="C#" Value="public string MsAppId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MsAppId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TokenExchangeState.MsAppId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MsAppId As String" />
+      <MemberSignature Language="F#" Value="member this.MsAppId : string with get, set" Usage="Microsoft.Bot.Schema.TokenExchangeState.MsAppId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("msAppId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The bot's registered application ID
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

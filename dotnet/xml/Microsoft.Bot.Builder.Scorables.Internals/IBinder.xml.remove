@@ -1,0 +1,143 @@
+<Type Name="IBinder" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinder">
+  <TypeSignature Language="C#" Value="public interface IBinder" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IBinder" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBinder" />
+  <TypeSignature Language="F#" Value="type IBinder = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryBind">
+      <MemberSignature Language="C#" Value="public bool TryBind (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryBind(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryBind (lambda As Delegate, resolver As IResolver, ByRef binding As IBinding) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryBind : Delegate * Microsoft.Bot.Builder.Scorables.Internals.IResolver *  -&gt; bool" Usage="iBinder.TryBind (lambda, resolver, binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lambda" Type="System.Delegate" />
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Scorables.Internals.IBinding" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lambda">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryBind">
+      <MemberSignature Language="C#" Value="public bool TryBind (System.Reflection.MethodBase method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryBind(class System.Reflection.MethodBase method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding&amp; binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind(System.Reflection.MethodBase,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryBind (method As MethodBase, resolver As IResolver, ByRef binding As IBinding) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryBind : System.Reflection.MethodBase * Microsoft.Bot.Builder.Scorables.Internals.IResolver *  -&gt; bool" Usage="iBinder.TryBind (method, resolver, binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.MethodBase" />
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Scorables.Internals.IBinding" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryBind&lt;R&gt;">
+      <MemberSignature Language="C#" Value="public bool TryBind&lt;R&gt; (Delegate lambda, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryBind&lt;R&gt;(class System.Delegate lambda, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Delegate,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryBind(Of R) (lambda As Delegate, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryBind : Delegate * Microsoft.Bot.Builder.Scorables.Internals.IResolver *  -&gt; bool" Usage="iBinder.TryBind (lambda, resolver, binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="lambda" Type="System.Delegate" />
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R">To be added.</typeparam>
+        <param name="lambda">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryBind&lt;R&gt;">
+      <MemberSignature Language="C#" Value="public bool TryBind&lt;R&gt; (System.Reflection.MethodInfo method, Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, out Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt; binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryBind&lt;R&gt;(class System.Reflection.MethodInfo method, class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, [out] class Microsoft.Bot.Builder.Scorables.Internals.IBinding`1&lt;!!R&gt;&amp; binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.IBinder.TryBind``1(System.Reflection.MethodInfo,Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryBind(Of R) (method As MethodInfo, resolver As IResolver, ByRef binding As IBinding(Of R)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryBind : System.Reflection.MethodInfo * Microsoft.Bot.Builder.Scorables.Internals.IResolver *  -&gt; bool" Usage="iBinder.TryBind (method, resolver, binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.MethodInfo" />
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="binding" Type="Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R">To be added.</typeparam>
+        <param name="method">To be added.</param>
+        <param name="resolver">To be added.</param>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

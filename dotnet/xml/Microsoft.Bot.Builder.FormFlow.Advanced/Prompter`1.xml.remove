@@ -1,0 +1,180 @@
+<Type Name="Prompter&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class Prompter&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt; where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Prompter`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Prompter(Of T)&#xA;Implements IPrompt(Of T)" />
+  <TypeSignature Language="F#" Value="type Prompter&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IPrompt&lt;'T (requires 'T : null)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">    UNderlying form type. </typeparam>
+    <summary>   A prompt and recognizer packaged together. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Prompter (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute annotation, Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; form, Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; recognizer, Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;T&gt; fields = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute annotation, class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form, class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; recognizer, class Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1&lt;!T&gt; fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute,Microsoft.Bot.Builder.FormFlow.IForm{`0},Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize{`0},Microsoft.Bot.Builder.FormFlow.Advanced.IFields{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (annotation As TemplateBaseAttribute, form As IForm(Of T), recognizer As IRecognize(Of T), Optional fields As IFields(Of T) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute * Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt; (annotation, form, recognizer, fields)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="annotation" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+        <Parameter Name="form" Type="Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;" />
+        <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt;" />
+        <Parameter Name="fields" Type="Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="annotation">Annotation describing the \ref patterns and formatting for prompt.</param>
+        <param name="form">Current form.</param>
+        <param name="recognizer">Recognizer if any.</param>
+        <param name="fields">Fields name lookup.  (Defaults to forms.)</param>
+        <summary>
+            Construct a prompter.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute Annotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute Annotation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotation As TemplateBaseAttribute" />
+      <MemberSignature Language="F#" Value="member this.Annotation : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt;.Annotation" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Annotation</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prompt">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt (T state, Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt; field, params object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt Prompt(!T state, class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1.Prompt(`0,Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0},System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Prompt (state As T, field As IField(Of T), ParamArray args As Object()) As FormPrompt" />
+      <MemberSignature Language="F#" Value="abstract member Prompt : 'T * Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; * obj[] -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt&#xA;override this.Prompt : 'T * Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; * obj[] -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" Usage="prompter.Prompt (state, field, args)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Prompt(`0,Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0},System.Object[])</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="T" />
+        <Parameter Name="field" Type="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <param name="field">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recognizer">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; Recognizer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; Recognizer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1.Recognizer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recognizer As IRecognize(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Recognizer : Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;'T (requires 'T : null)&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt;.Recognizer" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1.Recognizer</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatePattern">
+      <MemberSignature Language="C#" Value="public static bool ValidatePattern (Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; form, string pattern, Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt; field, int argLimit = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ValidatePattern(class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form, string pattern, class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;!T&gt; field, int32 argLimit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1.ValidatePattern(Microsoft.Bot.Builder.FormFlow.IForm{`0},System.String,Microsoft.Bot.Builder.FormFlow.Advanced.IField{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ValidatePattern (form As IForm(Of T), pattern As String, field As IField(Of T), Optional argLimit As Integer = 0) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ValidatePattern : Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt; * string * Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;'T (requires 'T : null)&gt; * int -&gt; bool" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt;.ValidatePattern (form, pattern, field, argLimit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="form" Type="Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;" />
+        <Parameter Name="pattern" Type="System.String" />
+        <Parameter Name="field" Type="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;" />
+        <Parameter Name="argLimit" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="form">     The form. </param>
+        <param name="pattern">  Specifies the pattern. </param>
+        <param name="field"> Base field for pattern. </param>
+        <param name="argLimit"> The number of arguments passed to the pattern. </param>
+        <summary>   Validate pattern by ensuring they refer to real fields. </summary>
+        <returns>   true if it succeeds, false if it fails. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

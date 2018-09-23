@@ -8,12 +8,18 @@
     <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Contains methods for woring with <see cref="T:Microsoft.Bot.Builder.ITurnContext" /> objects.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,6 +61,51 @@
             </summary>
         <returns />
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceActivityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivityAsync (this Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value = null, string valueType = null, string label = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value, string valueType, string label, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivityAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member TraceActivityAsync : Microsoft.Bot.Builder.ITurnContext * string * obj * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivityAsync (turnContext, name, value, valueType, label, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="valueType" Type="System.String" />
+        <Parameter Name="label" Type="System.String">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context for the current turn.</param>
+        <param name="name">The value to assign to the activity's <see cref="P:Microsoft.Bot.Schema.Activity.Name" /> property.</param>
+        <param name="value">The value to assign to the activity's <see cref="P:Microsoft.Bot.Schema.Activity.Value" /> property.</param>
+        <param name="valueType">The value to assign to the activity's <see cref="P:Microsoft.Bot.Schema.Activity.ValueType" /> property.</param>
+        <param name="label">The value to assign to the activity's <see cref="P:Microsoft.Bot.Schema.Activity.Label" /> property.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Sends a trace activity to the <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> for logging purposes.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the adapter is being hosted in the Emulator, the task result contains
+            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object with the original trace activity's ID; otherwise,
+            it containsa <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
+            channel assigned to the activity.</remarks>
       </Docs>
     </Member>
   </Members>

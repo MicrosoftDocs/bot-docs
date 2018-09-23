@@ -1,29 +1,29 @@
 ---
 title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
 description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
-keywords: Bot Builder SDK, create a bot, quickstart, .NET, getting started
-author: RobStand
+keywords: Bot Builder SDK, create a bot, quickstart, .NET, getting started, C# bot
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 04/27/2018
+ms.date: 09/23/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot with the Bot Builder SDK v4 for .NET
+# Create a bot with the Bot Builder SDK for .NET
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-This quickstart walks you through building a bot by using the Bot Application template and the Bot Builder SDK for .NET, and then testing it with the Bot Framework Emulator. This is based off the [Microsoft Bot Builder SDK v4](https://github.com/Microsoft/botbuilder-dotnet).
+This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator. 
 
 ## Prerequisites
 - Visual Studio [2017](https://www.visualstudio.com/downloads)
-- Bot Builder SDK v4 template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
-- [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
+- Bot Builder SDK v4 template for [C#](https://botbuilder.myget.org/feed/aitemplates/package/vsix/BotBuilderV4.fbe0fc50-a6f1-4500-82a2-189314b7bea2)
+- Bot Framework [Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
 ## Create a bot
-Install BotBuilderVSIX.vsix template that you downloaded in the prerequisite section. 
+Install BotBuilderVSIX.vsix template that you downloaded in the prerequisites section. 
 
 In Visual Studio, create a new bot project.
 
@@ -32,70 +32,25 @@ In Visual Studio, create a new bot project.
 > [!TIP] 
 > If needed, update [NuGet packages](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
-## Explore code
-Open Startup.cs file to review code in the `ConfigureServices(IServiceCollection services)` method. The `CatchExceptionMiddleware` middleware is added to the messaging pipeline. It handles any exceptions thrown by other middleware, or by OnTurn method. 
+Thanks to the template, your project contains all of the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.
 
-```cs
-options.Middleware.Add(new CatchExceptionMiddleware<Exception>(async (context, exception) =>
-{
-    await context.TraceActivity("EchoBot Exception", exception);
-    await context.SendActivity("Sorry, it looks like something went wrong!");
-}));
-```
+## Start your bot in Visual Studio
 
-The conversation state middleware uses in-memory storage. It reads and writes the EchoState to storage.  The turn count in EchoState class keeps track of the number of messages sent to the bot. You can use a similar technique to maintain state in between turns.
+When you click the run button, Visual Studio will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally.
 
-```cs
- IStorage dataStore = new MemoryStorage();
- options.Middleware.Add(new ConversationState<EchoState>(dataStore));
-```
+## Start the emulator and connect your bot
 
-The `Configure(IApplicationBuilder app, IHostingEnvironment env)` method calls `.UseBotFramework` to route incoming activities to the bot adapter. 
-
-The `OnTurn(ITurnContext context)` method in the EchoBot.cs file is used to check the incoming activity type and send a reply to the user. 
-
-```cs
-public async Task OnTurn(ITurnContext context)
-{
-    // This bot is only handling Messages
-    if (context.Activity.Type == ActivityTypes.Message)
-    {
-        // Get the conversation state from the turn context
-        var state = context.GetConversationState<EchoState>();
-
-        // Bump the turn count. 
-        state.TurnCount++;
-
-        // Echo back to the user whatever they typed.
-        await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
-    }
-}
-```
-## Start your bot
-
-- Your `default.html` page will be displayed in a browser.
-- Note the localhost port number for the page. You will need this information to interact with your bot.
-
-### Start the emulator and connect your bot
-
-At this point, your bot is running locally.
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click **create a new bot configuration** link in the emulator "Welcome" tab. 
-
-2. Enter a **Bot name** and enter the directory path to your bot code. The bot configuration file will be saved to this path.
-
-3. Type `http://localhost:port-number/api/messages` into the **Endpoint URL** field, where *port-number* matches the port number shown in the browser where your application is running.
-
-4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
+1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+2. Select the .bot file located in the directory where you created the Visual Studio solution.
 
 ## Interact with your bot
 
-Send "Hi" to your bot, and the bot will respond with "Turn 1: You sent Hi" to the message.
+Send a message to your bot, and the bot will respond back with a message.
+![Emulator running](../media/emulator-v4/emulator-running.png)
 
 ## Next steps
 
-Next, [deploy your bot to azure](../bot-builder-howto-deploy-azure.md) or jump into the concepts that explain a bot and how it works.
-
 > [!div class="nextstepaction"]
-> [Basic Bot concepts](../v4sdk/bot-builder-basics.md)
+> [How bots work](../v4sdk/bot-builder-basics.md) 

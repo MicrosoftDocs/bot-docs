@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,6 +21,8 @@
     <altmember cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkPaths" />
     <altmember cref="T:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter" />
     <altmember cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions" />
+    <altmember cref="T:Microsoft.Bot.Builder.Integration.BotFrameworkPaths" />
+    <altmember cref="T:Microsoft.Bot.Builder.BotFrameworkAdapter" />
   </Docs>
   <Members>
     <Member MemberName="UseBotFramework">
@@ -32,6 +35,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.AspNetCore.Builder.IApplicationBuilder</ReturnType>
@@ -40,9 +44,9 @@
         <Parameter Name="applicationBuilder" Type="Microsoft.AspNetCore.Builder.IApplicationBuilder" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="applicationBuilder">To be added.</param>
+        <param name="applicationBuilder">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" />.</param>
         <summary>
-            Maps various endpoint handlers for the <see cref="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkOptions})">registered bot</see> into the request execution pipeline.
+            Maps various endpoint handlers for the <see cref="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})">registered bot</see> into the request execution pipeline.
             </summary>
         <returns>A reference to this instance after the operation has completed.</returns>
         <remarks>

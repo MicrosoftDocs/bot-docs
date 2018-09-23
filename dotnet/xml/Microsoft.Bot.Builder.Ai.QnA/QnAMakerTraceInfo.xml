@@ -1,12 +1,16 @@
-﻿<Type Name="QnAMakerTraceInfo" FullName="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo">
+﻿<Type Name="QnAMakerTraceInfo" FullName="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo">
   <TypeSignature Language="C#" Value="public class QnAMakerTraceInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerTraceInfo extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class QnAMakerTraceInfo" />
   <TypeSignature Language="F#" Value="type QnAMakerTraceInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +18,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            This class represents all the trace info that we collect from the QnAMaker Middleware
+            This class represents all the trace info that we collect from the QnAMaker Middleware.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -22,12 +26,16 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QnAMakerTraceInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,16 +46,20 @@
     <Member MemberName="KnowledgeBaseId">
       <MemberSignature Language="C#" Value="public string KnowledgeBaseId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KnowledgeBaseId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.KnowledgeBaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.KnowledgeBaseId" />
       <MemberSignature Language="VB.NET" Value="Public Property KnowledgeBaseId As String" />
-      <MemberSignature Language="F#" Value="member this.KnowledgeBaseId : string with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.KnowledgeBaseId" />
+      <MemberSignature Language="F#" Value="member this.KnowledgeBaseId : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.KnowledgeBaseId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("knowledgeBaseId")</AttributeName>
         </Attribute>
       </Attributes>
@@ -56,106 +68,130 @@
       </ReturnValue>
       <Docs>
         <summary>
-            ID of the Knowledgebase that is being used
+            Gets or sets iD of the Knowledgebase that is being used.
             </summary>
-        <value>To be added.</value>
+        <value>
+            ID of the Knowledgebase that is being used.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.IMessageActivity Message { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.IMessageActivity Message" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.Message" />
-      <MemberSignature Language="VB.NET" Value="Public Property Message As IMessageActivity" />
-      <MemberSignature Language="F#" Value="member this.Message : Microsoft.Bot.Schema.IMessageActivity with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.Message" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity Message { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity Message" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As Activity" />
+      <MemberSignature Language="F#" Value="member this.Message : Microsoft.Bot.Schema.Activity with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("message")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Message which instigated the query to QnAMaker
+            Gets or sets message which instigated the query to QnAMaker.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Message which instigated the query to QnAMaker.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataBoost">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Ai.QnA.Metadata[] MetadataBoost { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Ai.QnA.Metadata[] MetadataBoost" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.MetadataBoost" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.Metadata[] MetadataBoost { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.QnA.Metadata[] MetadataBoost" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.MetadataBoost" />
       <MemberSignature Language="VB.NET" Value="Public Property MetadataBoost As Metadata()" />
-      <MemberSignature Language="F#" Value="member this.MetadataBoost : Microsoft.Bot.Builder.Ai.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.MetadataBoost" />
+      <MemberSignature Language="F#" Value="member this.MetadataBoost : Microsoft.Bot.Builder.AI.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.MetadataBoost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("metadataBoost")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Ai.QnA.Metadata[]</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.Metadata[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Miscellaneous data
+            Gets or sets miscellaneous data to boost answers.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Miscellaneous data to boost answers.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryResults">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Ai.QnA.QueryResult[] QueryResults { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Ai.QnA.QueryResult[] QueryResults" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.QueryResults" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.QueryResult[] QueryResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.QnA.QueryResult[] QueryResults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.QueryResults" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryResults As QueryResult()" />
-      <MemberSignature Language="F#" Value="member this.QueryResults : Microsoft.Bot.Builder.Ai.QnA.QueryResult[] with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.QueryResults" />
+      <MemberSignature Language="F#" Value="member this.QueryResults : Microsoft.Bot.Builder.AI.QnA.QueryResult[] with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.QueryResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("queryResults")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Ai.QnA.QueryResult[]</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.QueryResult[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Results that QnAMaker returned
+            Gets or sets results that QnAMaker returned.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Results that QnAMaker returned.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScoreThreshold">
       <MemberSignature Language="C#" Value="public float ScoreThreshold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 ScoreThreshold" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.ScoreThreshold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.ScoreThreshold" />
       <MemberSignature Language="VB.NET" Value="Public Property ScoreThreshold As Single" />
-      <MemberSignature Language="F#" Value="member this.ScoreThreshold : single with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.ScoreThreshold" />
+      <MemberSignature Language="F#" Value="member this.ScoreThreshold : single with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.ScoreThreshold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("scoreThreshold")</AttributeName>
         </Attribute>
       </Attributes>
@@ -164,50 +200,65 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Questions with a match of less than the score threshold are not returned
+            Gets or sets the minimum score threshold, used to filter returned results.
             </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <value>
+            The minimum score threshold, used to filter returned results.
+            </value>
+        <remarks>Scores are normalized to the range of 0.0 to 1.0
+            before filtering.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StrictFilters">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Ai.QnA.Metadata[] StrictFilters { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Ai.QnA.Metadata[] StrictFilters" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.StrictFilters" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.Metadata[] StrictFilters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.QnA.Metadata[] StrictFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.StrictFilters" />
       <MemberSignature Language="VB.NET" Value="Public Property StrictFilters As Metadata()" />
-      <MemberSignature Language="F#" Value="member this.StrictFilters : Microsoft.Bot.Builder.Ai.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.StrictFilters" />
+      <MemberSignature Language="F#" Value="member this.StrictFilters : Microsoft.Bot.Builder.AI.QnA.Metadata[] with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.StrictFilters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("strictFilters")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Ai.QnA.Metadata[]</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.Metadata[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the filters used to return answers that have the specified metadata.
+            </summary>
+        <value>
+            The filters used to return answers that have the specified metadata.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
-      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Bot.Builder.Ai.QnA.QnAMakerTraceInfo.Top" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMakerTraceInfo.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("top")</AttributeName>
         </Attribute>
       </Attributes>
@@ -216,9 +267,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Number of ranked results that are asked to be returned
+            Gets or sets number of ranked results that are asked to be returned.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Number of ranked results that are asked to be returned.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

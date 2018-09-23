@@ -1,19 +1,23 @@
-﻿<Type Name="LuisRecognizer" FullName="Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer">
-  <TypeSignature Language="C#" Value="public class LuisRecognizer : Microsoft.Bot.Builder.Core.Extensions.IRecognizer" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisRecognizer extends System.Object implements class Microsoft.Bot.Builder.Core.Extensions.IRecognizer" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer" />
+﻿<Type Name="LuisRecognizer" FullName="Microsoft.Bot.Builder.AI.Luis.LuisRecognizer">
+  <TypeSignature Language="C#" Value="public class LuisRecognizer : Microsoft.Bot.Builder.IRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisRecognizer extends System.Object implements class Microsoft.Bot.Builder.IRecognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Class LuisRecognizer&#xA;Implements IRecognizer" />
   <TypeSignature Language="F#" Value="type LuisRecognizer = class&#xA;    interface IRecognizer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>Microsoft.Bot.Builder.Core.Extensions.IRecognizer</InterfaceName>
+      <InterfaceName>Microsoft.Bot.Builder.IRecognizer</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -25,74 +29,109 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LuisRecognizer (Microsoft.Cognitive.LUIS.ILuisModel luisModel, Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions luisRecognizerOptions = null, Microsoft.Cognitive.LUIS.ILuisOptions options = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Cognitive.LUIS.ILuisModel luisModel, class Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions luisRecognizerOptions, class Microsoft.Cognitive.LUIS.ILuisOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer.#ctor(Microsoft.Cognitive.LUIS.ILuisModel,Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions,Microsoft.Cognitive.LUIS.ILuisOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (luisModel As ILuisModel, Optional luisRecognizerOptions As ILuisRecognizerOptions = null, Optional options As ILuisOptions = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer : Microsoft.Cognitive.LUIS.ILuisModel * Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions * Microsoft.Cognitive.LUIS.ILuisOptions -&gt; Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer" Usage="new Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer (luisModel, luisRecognizerOptions, options)" />
+      <MemberSignature Language="C#" Value="public LuisRecognizer (Microsoft.Bot.Builder.AI.Luis.LuisApplication application, Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions = null, bool includeApiResults = false, System.Net.Http.HttpClientHandler clientHandler = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.AI.Luis.LuisApplication application, class Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, bool includeApiResults, class System.Net.Http.HttpClientHandler clientHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.#ctor(Microsoft.Bot.Builder.AI.Luis.LuisApplication,Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions,System.Boolean,System.Net.Http.HttpClientHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (application As LuisApplication, Optional predictionOptions As LuisPredictionOptions = null, Optional includeApiResults As Boolean = false, Optional clientHandler As HttpClientHandler = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.LuisRecognizer : Microsoft.Bot.Builder.AI.Luis.LuisApplication * Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions * bool * System.Net.Http.HttpClientHandler -&gt; Microsoft.Bot.Builder.AI.Luis.LuisRecognizer" Usage="new Microsoft.Bot.Builder.AI.Luis.LuisRecognizer (application, predictionOptions, includeApiResults, clientHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="luisModel" Type="Microsoft.Cognitive.LUIS.ILuisModel" />
-        <Parameter Name="luisRecognizerOptions" Type="Microsoft.Bot.Builder.Ai.LUIS.ILuisRecognizerOptions" />
-        <Parameter Name="options" Type="Microsoft.Cognitive.LUIS.ILuisOptions" />
+        <Parameter Name="application" Type="Microsoft.Bot.Builder.AI.Luis.LuisApplication" />
+        <Parameter Name="predictionOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions" />
+        <Parameter Name="includeApiResults" Type="System.Boolean" />
+        <Parameter Name="clientHandler" Type="System.Net.Http.HttpClientHandler" />
       </Parameters>
       <Docs>
-        <param name="luisModel">The LUIS model to use to recognize text.</param>
-        <param name="luisRecognizerOptions">The LUIS recognizer options to use.</param>
-        <param name="options">The LUIS request options to use.</param>
-        <summary> 
-            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer" /> object. 
-            </summary>
+        <param name="application">To be added.</param>
+        <param name="predictionOptions">To be added.</param>
+        <param name="includeApiResults">To be added.</param>
+        <param name="clientHandler">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Recognize">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt; Recognize (string utterance, System.Threading.CancellationToken ct);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt; Recognize(string utterance, valuetype System.Threading.CancellationToken ct) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer.Recognize(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Recognize (utterance As String, ct As CancellationToken) As Task(Of RecognizerResult)" />
-      <MemberSignature Language="F#" Value="abstract member Recognize : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt;&#xA;override this.Recognize : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt;" Usage="luisRecognizer.Recognize (utterance, ct)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IRecognizer.Recognize(System.String,System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
+    <Member MemberName="LuisTraceLabel">
+      <MemberSignature Language="C#" Value="public const string LuisTraceLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceLabel" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.LuisTraceLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceLabel As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceLabel : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.LuisTraceLabel" />
+      <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Core.Extensions.RecognizerResult&gt;</ReturnType>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceType">
+      <MemberSignature Language="C#" Value="public const string LuisTraceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.LuisTraceType" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceType As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceType : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.LuisTraceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="luisRecognizer.RecognizeAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="utterance" Type="System.String" />
-        <Parameter Name="ct" Type="System.Threading.CancellationToken" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="utterance">To be added.</param>
-        <param name="ct">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
       </Docs>
     </Member>
-    <Member MemberName="Recognize&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; Recognize&lt;T&gt; (string utterance, System.Threading.CancellationToken ct) where T : Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvertnew();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; Recognize&lt;.ctor (class Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert) T&gt;(string utterance, valuetype System.Threading.CancellationToken ct) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.LUIS.LuisRecognizer.Recognize``1(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Recognize(Of T As {IRecognizerConvertNew}) (utterance As String, ct As CancellationToken) As Task(Of T)" />
-      <MemberSignature Language="F#" Value="abstract member Recognize : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.Recognize : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="luisRecognizer.Recognize (utterance, ct)" />
+    <Member MemberName="RecognizeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="luisRecognizer.RecognizeAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IRecognizer.Recognize``1(System.String,System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.LUIS</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -101,22 +140,21 @@
         <TypeParameter Name="T">
           <Constraints>
             <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <InterfaceName>Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert</InterfaceName>
+            <InterfaceName>Microsoft.Bot.Builder.IRecognizerConvert</InterfaceName>
           </Constraints>
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="utterance" Type="System.String" />
-        <Parameter Name="ct" Type="System.Threading.CancellationToken" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="utterance">To be added.</param>
-        <param name="ct">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
       </Docs>
     </Member>
   </Members>

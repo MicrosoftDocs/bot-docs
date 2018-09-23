@@ -1,0 +1,33 @@
+<Type Name="ActiveDelegate&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate bool ActiveDelegate&lt;T&gt;(T state);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDelegate`1&lt;T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ActiveDelegate(Of T)(state As T) As Boolean " />
+  <TypeSignature Language="F#" Value="type ActiveDelegate&lt;'T&gt; = delegate of 'T -&gt; bool" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="state" Type="T" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">Form state type.</typeparam>
+    <param name="state">Form state to test.</param>
+    <summary>
+            A delegate for testing a form state to see if a particular step is active.
+            </summary>
+    <returns>True if step is active given the current form state.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,950 @@
+<Type Name="Chain" FullName="Microsoft.Bot.Builder.Dialogs.Chain">
+  <TypeSignature Language="C#" Value="public static class Chain" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Chain extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Chain" />
+  <TypeSignature Language="VB.NET" Value="Public Module Chain" />
+  <TypeSignature Language="F#" Value="type Chain = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A fluent, chainable interface for IDialogs.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Case&lt;R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.ICase&lt;string,R&gt; Case&lt;R&gt; (System.Text.RegularExpressions.Regex regex, Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string,R&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;string, !!R&gt; Case&lt;R&gt;(class System.Text.RegularExpressions.Regex regex, class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;string, !!R&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Case``1(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,``0})" />
+      <MemberSignature Language="F#" Value="static member Case : System.Text.RegularExpressions.Regex * Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.ICase&lt;string, 'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Case (regex, selector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.ICase&lt;System.String,R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="regex" Type="System.Text.RegularExpressions.Regex" />
+        <Parameter Name="selector" Type="Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;System.String,R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="R"> The type of the object returned by selector.</typeparam>
+        <param name="regex"> The regex for condition.</param>
+        <param name="selector"> The contextual selector for the case.</param>
+        <summary>
+            Constructs a case based on a regular expression.
+            </summary>
+        <returns>The case.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Case&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt; Case&lt;T,R&gt; (Func&lt;T,bool&gt; condition, Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;!!T, !!R&gt; Case&lt;T, R&gt;(class System.Func`2&lt;!!T, bool&gt; condition, class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;!!T, !!R&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Case``2(System.Func{``0,System.Boolean},Microsoft.Bot.Builder.Dialogs.ContextualSelector{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Case(Of T, R) (condition As Func(Of T, Boolean), selector As ContextualSelector(Of T, R)) As ICase(Of T, R)" />
+      <MemberSignature Language="F#" Value="static member Case : Func&lt;'T, bool&gt; * Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;'T, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.ICase&lt;'T, 'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Case (condition, selector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="condition" Type="System.Func&lt;T,System.Boolean&gt;" />
+        <Parameter Name="selector" Type="Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T"> The type of incoming value to case.</typeparam>
+        <typeparam name="R"> The type of the object returned by selector.</typeparam>
+        <param name="condition"> The condition of the case.</param>
+        <param name="selector"> The contextual selector of the case.</param>
+        <summary>
+            Constructs a case. 
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Catch&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Catch&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;,Exception,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; block);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Catch&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;, class System.Exception, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; block) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Catch``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Exception,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Catch(Of T) (antecedent As IDialog(Of T), block As Func(Of IDialog(Of T), Exception, IDialog(Of T))) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Catch : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;, Exception, Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Catch (antecedent, block)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="block" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;,System.Exception,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type returned by the antecedent dialog.</typeparam>
+        <param name="antecedent">The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="block">The lambda expression representing the catch block handler.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, catch and handle any exceptions.
+            </summary>
+        <returns>The result of the catch block handler if there is an exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Catch&lt;T,E&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Catch&lt;T,E&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;,E,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; block) where E : Exception;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Catch&lt;T, (class System.Exception) E&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;, !!E, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; block) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Catch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Catch(Of T, E) (antecedent As IDialog(Of T), block As Func(Of IDialog(Of T), E, IDialog(Of T))) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Catch : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;, 'E, Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; (requires 'E :&gt; Exception)&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; (requires 'E :&gt; Exception)" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Catch (antecedent, block)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="E">
+          <Constraints>
+            <BaseTypeName>System.Exception</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="block" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;,E,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type returned by the antecedent dialog.</typeparam>
+        <typeparam name="E">The type of exception to catch and handle.</typeparam>
+        <param name="antecedent">The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="block">The lambda expression representing the catch block handler.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, catch and handle any exceptions of type <typeparamref name="E" />.
+            </summary>
+        <returns>The result of the catch block handler if there is an exception of type <typeparamref name="E" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueWith&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; ContinueWith&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Microsoft.Bot.Builder.Dialogs.Chain.Continuation&lt;T,R&gt; continuation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; ContinueWith&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Dialogs.Chain/Continuation`2&lt;!!T, !!R&gt; continuation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.ContinueWith``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Chain.Continuation{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ContinueWith(Of T, R) (antecedent As IDialog(Of T), continuation As Chain.Continuation(Of T, R)) As IDialog(Of R)" />
+      <MemberSignature Language="F#" Value="static member ContinueWith : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Microsoft.Bot.Builder.Dialogs.Chain.Continuation&lt;'T, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.ContinueWith (antecedent, continuation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="continuation" Type="Microsoft.Bot.Builder.Dialogs.Chain+Continuation&lt;T,R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the antecedent dialog.</typeparam>
+        <typeparam name="R">The type of the next dialog.</typeparam>
+        <param name="antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="continuation">The continuation to produce the next <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, execute the continuation to produce the next <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.
+            </summary>
+        <returns>The next <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt; Default&lt;T,R&gt; (Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;!!T, !!R&gt; Default&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;!!T, !!R&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Default``2(Microsoft.Bot.Builder.Dialogs.ContextualSelector{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Default(Of T, R) (selector As ContextualSelector(Of T, R)) As ICase(Of T, R)" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;'T, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.ICase&lt;'T, 'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Default selector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="selector" Type="Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;T,R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T"> The type of incoming value to case.</typeparam>
+        <typeparam name="R"> The type of the object returned by selector.</typeparam>
+        <param name="selector"> The contextual selector of the case.</param>
+        <summary>
+            Constructs a case to use as the default.
+            </summary>
+        <returns>The case.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultIfException&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; DefaultIfException&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; DefaultIfException&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DefaultIfException(Of T) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member DefaultIfException : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type returned by the antecedent dialog.</typeparam>
+        <param name="antecedent"> The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, stop the propagation of Exception.
+            </summary>
+        <returns>The default value of <typeparamref name="T" /> if there is an Exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultIfException&lt;T,E&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; DefaultIfException&lt;T,E&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent) where E : Exception;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; DefaultIfException&lt;T, (class System.Exception) E&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DefaultIfException(Of T, E) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member DefaultIfException : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; (requires 'E :&gt; Exception)" Usage="Microsoft.Bot.Builder.Dialogs.Chain.DefaultIfException antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="E">
+          <Constraints>
+            <BaseTypeName>System.Exception</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type returned by the antecedent dialog.</typeparam>
+        <typeparam name="E">The type of exception to swallow.</typeparam>
+        <param name="antecedent"> The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, stop the propagation of an exception of <typeparamref name="E" />.
+            </summary>
+        <returns>The default value of <typeparamref name="T" /> if there is an exception of type <typeparamref name="E" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Do&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Do&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;,System.Threading.Tasks.Task&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Do&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!T&gt;, class System.Threading.Tasks.Task&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Do``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Do(Of T) (antecedent As IDialog(Of T), callback As Func(Of IBotContext, IAwaitable(Of T), Task)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Do : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;'T&gt;, System.Threading.Tasks.Task&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Do (antecedent, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="callback" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the dialog.</typeparam>
+        <param name="antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="callback">The callback method.</param>
+        <summary>
+            Execute a side-effect after a <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> completes.
+            </summary>
+        <returns>The antecedent dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fold&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Fold&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;&gt; antecedent, Func&lt;T,T,T&gt; folder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Fold&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt;&gt; antecedent, class System.Func`3&lt;!!T, !!T, !!T&gt; folder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Fold``1(Microsoft.Bot.Builder.Dialogs.IDialog{System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.IDialog{``0}}},System.Func{``0,``0,``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Fold(Of T) (antecedent As IDialog(Of IEnumerable(Of IDialog(Of T))), folder As Func(Of T, T, T)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Fold : Microsoft.Bot.Builder.Dialogs.IDialog&lt;seq&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;&gt;&gt; * Func&lt;'T, 'T, 'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Fold (antecedent, folder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;&gt;" RefType="this" />
+        <Parameter Name="folder" Type="System.Func&lt;T,T,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T"> The type of the dialogs in the enumeration produced by the antecedent dialog.</typeparam>
+        <param name="antecedent">The antecedent dialog that produces an enumeration of <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="folder">The accumulator for the dialog enumeration.</param>
+        <summary>
+            Fold items from an enumeration of dialogs.
+            </summary>
+        <returns>The accumulated result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; From&lt;T&gt; (Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; MakeDialog);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; From&lt;T&gt;(class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; MakeDialog) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.From``1(System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function From(Of T) (MakeDialog As Func(Of IDialog(Of T))) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member From : Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.From MakeDialog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="MakeDialog" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the dialog.</typeparam>
+        <param name="MakeDialog">The dialog factory method.</param>
+        <summary>
+            Construct a <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> that will make a new copy of another <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> when started.
+            </summary>
+        <returns>The new dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Loop&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Loop&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Loop&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Loop``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Loop(Of T) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Loop : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Loop antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            Loop the <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> forever.
+            </summary>
+        <returns>The looping dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostEvent&lt;T,E&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; PostEvent&lt;T,E&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, E event);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; PostEvent&lt;T, E&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, !!E event) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.PostEvent``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function PostEvent(Of T, E) (antecedent As IDialog(Of T), event As E) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member PostEvent : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * 'E -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.PostEvent (antecedent, event)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="E" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="event" Type="E" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the antecedent dialog.</typeparam>
+        <typeparam name="E">The type of the event.</typeparam>
+        <param name="antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="event">The event.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, post the item to the event queue.
+            </summary>
+        <returns>The result from the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostToChain">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt; PostToChain ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; PostToChain() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.PostToChain" />
+      <MemberSignature Language="VB.NET" Value="Public Function PostToChain () As IDialog(Of IMessageActivity)" />
+      <MemberSignature Language="F#" Value="static member PostToChain : unit -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.PostToChain " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Post the message from the user to Chain.
+            </summary>
+        <returns> The dialog that dispatches the incoming message from the user to chain.</returns>
+        <remarks>
+            The returned <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> can be used as the root dialog for a chain.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostToUser&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; PostToUser&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; PostToUser&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.PostToUser``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function PostToUser(Of T) (antecedent As IDialog(Of T)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member PostToUser : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.PostToUser antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the dialog.</typeparam>
+        <param name="antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            Post to the user the result of a <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.
+            </summary>
+        <returns>The antecedent dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Return&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Return&lt;T&gt; (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Return&lt;T&gt;(!!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Return``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Return(Of T) (item As T) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Return : 'T -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Return item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T"> Type of the value.</typeparam>
+        <param name="item"> The value to be wrapped.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> that returns a value.
+            </summary>
+        <returns> The <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> that wraps the value.</returns>
+        <remarks>
+            The type of the value should be serializable.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Select&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;T,R&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Select&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`2&lt;!!T, !!R&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Select``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of T, R) (antecedent As IDialog(Of T), selector As Func(Of T, R)) As IDialog(Of R)" />
+      <MemberSignature Language="F#" Value="static member Select : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;'T, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Select (antecedent, selector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="selector" Type="System.Func&lt;T,R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the antecedent dialog.</typeparam>
+        <typeparam name="R">The type of the projected dialog.</typeparam>
+        <param name="antecedent">The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="selector">The projection function from <typeparamref name="T" /> to <typeparamref name="R" />.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, project the result into a new <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.
+            </summary>
+        <returns>The result <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectMany&lt;T,C,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; SelectMany&lt;T,C,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;C&gt;&gt; function, Func&lt;T,C,R&gt; projection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; SelectMany&lt;T, C, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`2&lt;!!T, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!C&gt;&gt; function, class System.Func`3&lt;!!T, !!C, !!R&gt; projection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.SelectMany``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``1}},System.Func{``0,``1,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of T, C, R) (antecedent As IDialog(Of T), function As Func(Of T, IDialog(Of C)), projection As Func(Of T, C, R)) As IDialog(Of R)" />
+      <MemberSignature Language="F#" Value="static member SelectMany : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;'T, Microsoft.Bot.Builder.Dialogs.IDialog&lt;'C&gt;&gt; * Func&lt;'T, 'C, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.SelectMany (antecedent, function, projection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="C" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;C&gt;&gt;" />
+        <Parameter Name="projection" Type="System.Func&lt;T,C,R&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the antecedent dialog.</typeparam>
+        <typeparam name="C">The type of the intermediate dialog.</typeparam>
+        <typeparam name="R">The type of the projected dialog.</typeparam>
+        <param name="antecedent">The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="function">The factory method to create the next dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="projection">The projection function for the combination of the two dialogs.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, execute the next <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />, and use the projection to combine the results.
+            </summary>
+        <returns>The result <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Switch&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, params Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;[] cases);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Switch&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;!!T, !!R&gt;[] cases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Switch``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ICase{``0,``1}[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Switch(Of T, R) (antecedent As IDialog(Of T), ParamArray cases As ICase(Of T, R)()) As IDialog(Of R)" />
+      <MemberSignature Language="F#" Value="static member Switch : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Microsoft.Bot.Builder.Dialogs.ICase&lt;'T, 'R&gt;[] -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Switch (antecedent, cases)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="cases" Type="Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T"> The type of the antecedent dialog.</typeparam>
+        <typeparam name="R"> The type of the Dialog returned by <see cref="T:Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" /></typeparam>
+        <param name="antecedent"> The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="cases"> Cases for the switch</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, go through each <see cref="T:Microsoft.Bot.Builder.Dialogs.ICase`2" /> 
+            and run the <see cref="T:Microsoft.Bot.Builder.Dialogs.ContextualSelector`2" />" of the first <see cref="T:Microsoft.Bot.Builder.Dialogs.ICase`2" /> that 
+            the returned value by the antecedent dialog satisfies.
+            </summary>
+        <returns>The result <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Then&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Then&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Antecedent, Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;,System.Threading.Tasks.Task&lt;R&gt;&gt; Action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Then&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Antecedent, class System.Func`3&lt;class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!!T&gt;, class System.Threading.Tasks.Task`1&lt;!!R&gt;&gt; Action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Then``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{``0},System.Threading.Tasks.Task{``1}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Then(Of T, R) (Antecedent As IDialog(Of T), Action As Func(Of IBotContext, IAwaitable(Of T), Task(Of R))) As IDialog(Of R)" />
+      <MemberSignature Language="F#" Value="static member Then : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;'T&gt;, System.Threading.Tasks.Task&lt;'R&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Then (Antecedent, Action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="Antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="Action" Type="System.Func&lt;Microsoft.Bot.Builder.Dialogs.IBotContext,Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;,System.Threading.Tasks.Task&lt;R&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the dialog.</typeparam>
+        <typeparam name="R">They type returned by action.</typeparam>
+        <param name="Antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="Action">The action that will be called after the antecedent dialog completes.</param>
+        <summary>
+            Execute an action after the <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> completes. 
+            </summary>
+        <returns>The antecedent dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unwrap&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Unwrap&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; antecedent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Unwrap&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Unwrap``1(Microsoft.Bot.Builder.Dialogs.IDialog{Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Unwrap(Of T) (antecedent As IDialog(Of IDialog(Of T))) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Unwrap : Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Unwrap antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the antecedent dialog.</typeparam>
+        <param name="antecedent">The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> where T is <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> where T is <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> completes, unwrap the result into a new <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Void&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt; Void&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt; Void&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack stack) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Void``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Void(Of T) (antecedent As IDialog(Of T), stack As IDialogStack) As IDialog(Of Object)" />
+      <MemberSignature Language="F#" Value="static member Void : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;obj&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Void (antecedent, stack)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="stack" Type="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the voided dialog.</typeparam>
+        <param name="antecedent">The voided dialog.</param>
+        <param name="stack">The dialog stack.</param>
+        <summary>
+            Call the voided <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />, ignore the result, then restart the original dialog wait.
+            </summary>
+        <returns>The dialog that produces the item to satisfy the original wait.</returns>
+        <remarks>
+            (value types don't support generic parameter variance - so this reflection-based method may not work)
+            It's okay to loose type information (i.e. IDialog{object}) because voided dialogs are called with a null 
+            <see cref="T:Microsoft.Bot.Builder.Dialogs.ResumeAfter`1" /> because they are hacking the stack to satisfy the wait of the interrupted dialog. 
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Void&lt;T,R&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt; Void&lt;T,R&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; Void&lt;T, R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Void``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Void(Of T, R) (antecedent As IDialog(Of T)) As IDialog(Of R)" />
+      <MemberSignature Language="F#" Value="static member Void : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Void antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;R&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="R" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the voided dialog.</typeparam>
+        <typeparam name="R">The type of the original dialog wait.</typeparam>
+        <param name="antecedent">The voided dialog.</param>
+        <summary>
+            Call the voided <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />, ignore the result, then restart the original dialog wait.
+            </summary>
+        <returns>The dialog that produces the item to satisfy the original wait.</returns>
+        <remarks>
+            The purpose of this method is to wrap an antecedent dialog A with a new dialog D to push on the stack
+            on top of the existing stack top dialog L.
+            1. D will call A.
+            2. D will receive the value of A when A is done.
+            3. D will re-initiate the typed wait (often for a message) for which a method of L was waiting
+            4. D will receive that value of the re-initiated typed wait.
+            5. D will return that value of the typed wait to L.
+            This depends on the symmetry of IDialogStack.Done and IDialogStack.Wait in how they satisfy typed waits.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitToBot&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt; WaitToBot&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; WaitToBot&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.WaitToBot``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WaitToBot(Of T) (antecedent As IDialog(Of T)) As IDialog(Of IMessageActivity)" />
+      <MemberSignature Language="F#" Value="static member WaitToBot : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.WaitToBot antecedent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the dialog.</typeparam>
+        <param name="antecedent">The antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <summary>
+            Post to the chain the message to the bot after the antecedent completes.
+            </summary>
+        <returns>The dialog representing the message sent to the bot.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Where&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; Where&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; Where&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Where``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of T) (antecedent As IDialog(Of T), predicate As Func(Of T, Boolean)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member Where : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;'T, bool&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Where (antecedent, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the antecedent dialog.</typeparam>
+        <param name="antecedent">The antecedent dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</param>
+        <param name="predicate">The predicate to decide whether to continue the chain.</param>
+        <summary>
+            When the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> has completed, evaluate the predicate and decide whether to continue.
+            </summary>
+        <returns>The result from the antecedent <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> or its cancellation, wrapped in a <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="While&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; While&lt;T&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; initial, Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;bool&gt;&gt; test, Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt; body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; While&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; initial, class System.Func`2&lt;!!T, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;bool&gt;&gt; test, class System.Func`2&lt;!!T, class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt;&gt; body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.While``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{System.Boolean}},System.Func{``0,Microsoft.Bot.Builder.Dialogs.IDialog{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function While(Of T) (initial As IDialog(Of T), test As Func(Of T, IDialog(Of Boolean)), body As Func(Of T, IDialog(Of T))) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member While : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Func&lt;'T, Microsoft.Bot.Builder.Dialogs.IDialog&lt;bool&gt;&gt; * Func&lt;'T, Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.While (initial, test, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="initial" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="test" Type="System.Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;System.Boolean&gt;&gt;" />
+        <Parameter Name="body" Type="System.Func&lt;T,Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the value.</typeparam>
+        <param name="initial">The value if <paramref name="test" /> is never true.</param>
+        <param name="test">The test to enter the while loop <paramref name="body" />.</param>
+        <param name="body">The body of the while loop.</param>
+        <summary>
+            Create a <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> that represents a while loop.
+            </summary>
+        <returns>Zero or the last value returned by the <paramref name="body" /> of the while loop.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithScorable&lt;T,Item,Score&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; WithScorable&lt;T,Item,Score&gt; (this Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; antecedent, Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; WithScorable&lt;T, Item, Score&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!T&gt; antecedent, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!!Item, !!Score&gt; scorable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.WithScorable``3(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Scorables.IScorable{``1,``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithScorable(Of T, Item, Score) (antecedent As IDialog(Of T), scorable As IScorable(Of Item, Score)) As IDialog(Of T)" />
+      <MemberSignature Language="F#" Value="static member WithScorable : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt; * Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt; -&gt; Microsoft.Bot.Builder.Dialogs.IDialog&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.WithScorable (antecedent, scorable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Item" />
+        <TypeParameter Name="Score" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
+        <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the dialog.</typeparam>
+        <typeparam name="Item">The type of the item scored by the scorable.</typeparam>
+        <typeparam name="Score">The type of the scope produced by the scorable.</typeparam>
+        <param name="antecedent">The antecedent dialog.</param>
+        <param name="scorable">The scorable.</param>
+        <summary>
+            Decorate a dialog with a scorable, so that a scorable can participate on the dialog stack.
+            </summary>
+        <returns>The dialog augmented with the scorables.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

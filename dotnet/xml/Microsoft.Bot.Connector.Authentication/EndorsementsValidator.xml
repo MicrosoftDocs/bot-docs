@@ -1,0 +1,58 @@
+﻿<Type Name="EndorsementsValidator" FullName="Microsoft.Bot.Connector.Authentication.EndorsementsValidator">
+  <TypeSignature Language="C#" Value="public static class EndorsementsValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EndorsementsValidator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.EndorsementsValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class EndorsementsValidator" />
+  <TypeSignature Language="F#" Value="type EndorsementsValidator = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Contains helper methods for verifying JWT endorsements.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static bool Validate (string channelId, System.Collections.Generic.HashSet&lt;string&gt; endorsements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Validate(string channelId, class System.Collections.Generic.HashSet`1&lt;string&gt; endorsements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EndorsementsValidator.Validate(System.String,System.Collections.Generic.HashSet{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Validate (channelId As String, endorsements As HashSet(Of String)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Validate : string * System.Collections.Generic.HashSet&lt;string&gt; -&gt; bool" Usage="Microsoft.Bot.Connector.Authentication.EndorsementsValidator.Validate (channelId, endorsements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="endorsements" Type="System.Collections.Generic.HashSet&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The ID of the channel to validate, typically extracted from the activity's
+            <see cref="P:Microsoft.Bot.Schema.Activity.ChannelId" /> property, that to which the Activity is affinitized.</param>
+        <param name="endorsements">The JWT token’s signing party is permitted to send activities only for
+            specific channels. That list, the set of channels the service can sign for, is called the the endorsement list.
+            The activity’s <see cref="P:Microsoft.Bot.Schema.Activity.ChannelId" /> MUST be found in the endorsement list, or the incoming 
+            activity is not considered valid.</param>
+        <summary>
+            Verify that a channel matches the endorsements found on the JWT token.
+            For example, if an <see cref="T:Microsoft.Bot.Schema.Activity" /> comes from WebChat, that activity's
+            <see cref="P:Microsoft.Bot.Schema.Activity.ChannelId" /> property is set to "webchat" and the signing party
+            of the JWT token must have a corresponding endorsement of “Webchat”.
+            </summary>
+        <returns>True if the channel ID is found in the endorsements list; otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

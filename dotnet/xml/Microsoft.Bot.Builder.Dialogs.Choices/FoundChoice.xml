@@ -1,0 +1,135 @@
+﻿<Type Name="FoundChoice" FullName="Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice">
+  <TypeSignature Language="C#" Value="public class FoundChoice" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FoundChoice extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice" />
+  <TypeSignature Language="VB.NET" Value="Public Class FoundChoice" />
+  <TypeSignature Language="F#" Value="type FoundChoice = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FoundChoice ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Index" />
+      <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the choices index within the list of choices that was searched over.
+            </summary>
+        <value>
+            The choices index within the list of choices that was searched over.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Score">
+      <MemberSignature Language="C#" Value="public float Score { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Score" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Score" />
+      <MemberSignature Language="VB.NET" Value="Public Property Score As Single" />
+      <MemberSignature Language="F#" Value="member this.Score : single with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Score" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the accuracy with which the synonym matched the specified portion of the utterance. A
+            value of 1.0 would indicate a perfect match.
+            </summary>
+        <value>
+            The accuracy with which the synonym matched the specified portion of the utterance. A
+            value of 1.0 would indicate a perfect match.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synonym">
+      <MemberSignature Language="C#" Value="public string Synonym { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Synonym" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Synonym" />
+      <MemberSignature Language="VB.NET" Value="Public Property Synonym As String" />
+      <MemberSignature Language="F#" Value="member this.Synonym : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Synonym" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the synonym that was matched. This is optional.
+            </summary>
+        <value>
+            The synonym that was matched.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value of the choice that was matched.
+            </summary>
+        <value>
+            The value of the choice that was matched.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

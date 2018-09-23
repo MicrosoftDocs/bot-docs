@@ -1,0 +1,232 @@
+<Type Name="ActionTypes" FullName="Microsoft.Bot.Connector.ActionTypes">
+  <TypeSignature Language="C#" Value="public static class ActionTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActionTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActionTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActionTypes" />
+  <TypeSignature Language="F#" Value="type ActionTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines values for ActionTypes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Call">
+      <MemberSignature Language="C#" Value="public const string Call;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Call" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.Call" />
+      <MemberSignature Language="VB.NET" Value="Public Const Call As String " />
+      <MemberSignature Language="F#" Value="val mutable Call : string" Usage="Microsoft.Bot.Connector.ActionTypes.Call" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public const string DownloadFile;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DownloadFile" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.DownloadFile" />
+      <MemberSignature Language="VB.NET" Value="Public Const DownloadFile As String " />
+      <MemberSignature Language="F#" Value="val mutable DownloadFile : string" Usage="Microsoft.Bot.Connector.ActionTypes.DownloadFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImBack">
+      <MemberSignature Language="C#" Value="public const string ImBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ImBack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.ImBack" />
+      <MemberSignature Language="VB.NET" Value="Public Const ImBack As String " />
+      <MemberSignature Language="F#" Value="val mutable ImBack : string" Usage="Microsoft.Bot.Connector.ActionTypes.ImBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageBack">
+      <MemberSignature Language="C#" Value="public const string MessageBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MessageBack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.MessageBack" />
+      <MemberSignature Language="VB.NET" Value="Public Const MessageBack As String " />
+      <MemberSignature Language="F#" Value="val mutable MessageBack : string" Usage="Microsoft.Bot.Connector.ActionTypes.MessageBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenUrl">
+      <MemberSignature Language="C#" Value="public const string OpenUrl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OpenUrl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.OpenUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const OpenUrl As String " />
+      <MemberSignature Language="F#" Value="val mutable OpenUrl : string" Usage="Microsoft.Bot.Connector.ActionTypes.OpenUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Payment">
+      <MemberSignature Language="C#" Value="public const string Payment;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Payment" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.Payment" />
+      <MemberSignature Language="VB.NET" Value="Public Const Payment As String " />
+      <MemberSignature Language="F#" Value="val mutable Payment : string" Usage="Microsoft.Bot.Connector.ActionTypes.Payment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayAudio">
+      <MemberSignature Language="C#" Value="public const string PlayAudio;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlayAudio" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.PlayAudio" />
+      <MemberSignature Language="VB.NET" Value="Public Const PlayAudio As String " />
+      <MemberSignature Language="F#" Value="val mutable PlayAudio : string" Usage="Microsoft.Bot.Connector.ActionTypes.PlayAudio" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayVideo">
+      <MemberSignature Language="C#" Value="public const string PlayVideo;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlayVideo" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.PlayVideo" />
+      <MemberSignature Language="VB.NET" Value="Public Const PlayVideo As String " />
+      <MemberSignature Language="F#" Value="val mutable PlayVideo : string" Usage="Microsoft.Bot.Connector.ActionTypes.PlayVideo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostBack">
+      <MemberSignature Language="C#" Value="public const string PostBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PostBack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.PostBack" />
+      <MemberSignature Language="VB.NET" Value="Public Const PostBack As String " />
+      <MemberSignature Language="F#" Value="val mutable PostBack : string" Usage="Microsoft.Bot.Connector.ActionTypes.PostBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowImage">
+      <MemberSignature Language="C#" Value="public const string ShowImage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ShowImage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.ShowImage" />
+      <MemberSignature Language="VB.NET" Value="Public Const ShowImage As String " />
+      <MemberSignature Language="F#" Value="val mutable ShowImage : string" Usage="Microsoft.Bot.Connector.ActionTypes.ShowImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Signin">
+      <MemberSignature Language="C#" Value="public const string Signin;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Signin" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.ActionTypes.Signin" />
+      <MemberSignature Language="VB.NET" Value="Public Const Signin As String " />
+      <MemberSignature Language="F#" Value="val mutable Signin : string" Usage="Microsoft.Bot.Connector.ActionTypes.Signin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

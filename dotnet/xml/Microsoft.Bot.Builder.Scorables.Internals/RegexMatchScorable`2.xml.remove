@@ -1,0 +1,139 @@
+<Type Name="RegexMatchScorable&lt;InnerState,InnerScore&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;">
+  <TypeSignature Language="C#" Value="public sealed class RegexMatchScorable&lt;InnerState,InnerScore&gt; : Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;.Scope,System.Text.RegularExpressions.Match,InnerState,InnerScore&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegexMatchScorable`2&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable`4&lt;class Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2/Scope&lt;!InnerState, !InnerScore&gt;, class System.Text.RegularExpressions.Match, !InnerState, !InnerScore&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegexMatchScorable(Of InnerState, InnerScore)&#xA;Inherits ResolverScorable(Of RegexMatchScorable(Of InnerState, InnerScore).Scope, Match, InnerState, InnerScore)" />
+  <TypeSignature Language="F#" Value="type RegexMatchScorable&lt;'InnerState, 'InnerScore&gt; = class&#xA;    inherit ResolverScorable&lt;RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;.Scope, Match, 'InnerState, 'InnerScore&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="InnerState" />
+    <TypeParameter Name="InnerScore" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.ResolverScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope,System.Text.RegularExpressions.Match,InnerState,InnerScore&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="OuterState">Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="OuterScore">System.Text.RegularExpressions.Match</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerState">InnerState</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="InnerScore">InnerScore</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="InnerState">To be added.</typeparam>
+    <typeparam name="InnerScore">To be added.</typeparam>
+    <summary>
+            Scorable to represent a regular expression match against an activity's text.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegexMatchScorable (System.Text.RegularExpressions.Regex regex, Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt; inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.RegularExpressions.Regex regex, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.#ctor(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Scorables.IScorable{Microsoft.Bot.Builder.Scorables.Internals.IResolver,`1})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt; : System.Text.RegularExpressions.Regex * Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver, 'InnerScore&gt; -&gt; Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;" Usage="new Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt; (regex, inner)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="regex" Type="System.Text.RegularExpressions.Regex" />
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="regex">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScore">
+      <MemberSignature Language="C#" Value="protected override System.Text.RegularExpressions.Match GetScore (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;.Scope state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Text.RegularExpressions.Match GetScore(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2/Scope&lt;!InnerState, !InnerScore&gt; state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.GetScore(Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope{`0,`1})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScore (resolver As IResolver, state As RegexMatchScorable(Of InnerState, InnerScore).Scope) As Match" />
+      <MemberSignature Language="F#" Value="override this.GetScore : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;.Scope -&gt; System.Text.RegularExpressions.Match" Usage="regexMatchScorable.GetScore (resolver, state)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Match</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="state" Type="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope" />
+      </Parameters>
+      <Docs>
+        <param name="resolver">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;.Scope&gt; PrepareAsync (Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2/Scope&lt;!InnerState, !InnerScore&gt;&gt; PrepareAsync(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.PrepareAsync(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareAsync (resolver As IResolver, token As CancellationToken) As Task(Of RegexMatchScorable(Of InnerState, InnerScore).Scope)" />
+      <MemberSignature Language="F#" Value="override this.PrepareAsync : Microsoft.Bot.Builder.Scorables.Internals.IResolver * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;.Scope&gt;" Usage="regexMatchScorable.PrepareAsync (resolver, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolver" Type="Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resolver">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="regexMatchScorable.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

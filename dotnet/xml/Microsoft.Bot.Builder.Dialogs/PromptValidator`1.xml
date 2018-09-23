@@ -1,0 +1,34 @@
+﻿<Type Name="PromptValidator&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;bool&gt; PromptValidator&lt;T&gt;(PromptValidatorContext&lt;T&gt; promptContext, CancellationToken cancellationToken);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PromptValidator`1&lt;T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function PromptValidator(Of T)(promptContext As PromptValidatorContext(Of T), cancellationToken As CancellationToken) As Task(Of Boolean) " />
+  <TypeSignature Language="F#" Value="type PromptValidator&lt;'T&gt; = delegate of PromptValidatorContext&lt;'T&gt; * CancellationToken -&gt; Task&lt;bool&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="promptContext" Type="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;T&gt;" />
+    <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T"></typeparam>
+    <param name="promptContext">The prompt validation context.</param>
+    <param name="cancellationToken">The cancellation token.</param>
+    <summary>
+            The delegate definition for custom prompt validators. Implement this function to add custom validation to a prompt.
+            </summary>
+    <returns>A <see cref="T:System.Threading.Tasks.Task" /> of bool representing the asynchronous operation indicating validation success or failure.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

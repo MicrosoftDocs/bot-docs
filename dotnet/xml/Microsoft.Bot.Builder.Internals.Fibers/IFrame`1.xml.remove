@@ -1,0 +1,29 @@
+<Type Name="IFrame&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;">
+  <TypeSignature Language="C#" Value="public interface IFrame&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFrame`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IFrame`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFrame(Of C)&#xA;Implements IFrameLoop(Of C), IWaiter(Of C)" />
+  <TypeSignature Language="F#" Value="type IFrame&lt;'C&gt; = interface&#xA;    interface IWaiter&lt;'C&gt;&#xA;    interface IFrameLoop&lt;'C&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="C" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="C">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

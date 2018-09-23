@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -63,7 +66,7 @@
       <Docs>
         <param name="ex">Exception to check against.</param>
         <summary>
-            Returns true if status code in HttpRequestExceptionWithStatus exception is RequestTimeout, TooManyRequests, NotFound or greater 
+            Returns true if status code in HttpRequestExceptionWithStatus exception is RequestTimeout, TooManyRequests, NotFound or greater
             than or equal to 500 and not NotImplemented (501) or HttpVersionNotSupported (505).
             </summary>
         <returns>True if exception is transient otherwise false.</returns>

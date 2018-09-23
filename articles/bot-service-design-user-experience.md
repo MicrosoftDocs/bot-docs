@@ -7,7 +7,7 @@ ms.author: mateusv
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/27/2018
+ms.date: 09/20/2018
  
 ---
 
@@ -29,20 +29,21 @@ Microsoft Bot Service cards are programmable objects containing standardized col
 
 | Card type | Example | Description |
 | ---- | ---- | ---- |
-| AdaptiveCard | ![Adaptive card Image](~/media/adaptive-card.png) | An open card exchange format rendered as a JSON object. Typically used for cross-channel deployment of cards. Cards adapt to the look and feel of each host channel. |
-| AnimationCard | ![Animation card Image](~/media/animation-card1.png) | A card that can play animated GIFs or short videos. |
-| AudioCard | ![Audio card Image](~/media/audio-card.png) | A card that can play an audio file. |
-| HeroCard | ![Hero card Image](~/media/hero-card1.png) | A card that contains a single large image, one or more buttons, and text. Typically used to visually highlight a potential user selection. |
-| ThumbnailCard | ![Thumbnail card Image](~/media/thumbnail-card.png) | A card that contains a single thumbnail image, one or more buttons, and text. Typically used to visually highlight the buttons for a potential user selection. |
-| ReceiptCard | ![Receipt card Image](~/media/receipt-card1.png) | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-| SignInCard | ![Sign-in card Image](~/media/sign-in-card.png) | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-| SuggestedAction | ![Suggested actions card Image](~/media/suggested-actions.png) | Presents your user with a set of CardActions representing a user choice. This card disappears once any of the suggested actions is selected. |
-| VideoCard | ![Video card Image](~/media/video-card.png) | A card that can play videos. Typically used to open a URL and stream an available video. |
-| CardCarousel | ![Card carousel Image](~/media/card-carousel.png) | A horizontally scrollable collection of cards that allows your user to easily view a series of possible user choices.|
+| AdaptiveCard | ![Adaptive card Image](./media/adaptive-card.png) | An open card exchange format rendered as a JSON object. Typically used for cross-channel deployment of cards. Cards adapt to the look and feel of each host channel. |
+| AnimationCard | ![Animation card Image](./media/animation-card1.png) | A card that can play animated GIFs or short videos. |
+| AudioCard | ![Audio card Image](./media/audio-card.png) | A card that can play an audio file. |
+| HeroCard | ![Hero card Image](./media/hero-card1.png) | A card that contains a single large image, one or more buttons, and text. Typically used to visually highlight a potential user selection. |
+| ThumbnailCard | ![Thumbnail card Image](./media/thumbnail-card.png) | A card that contains a single thumbnail image, one or more buttons, and text. Typically used to visually highlight the buttons for a potential user selection. |
+| ReceiptCard | ![Receipt card Image](./media/receipt-card1.png) | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| SignInCard | ![Sign-in card Image](./media/sign-in-card.png) | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| SuggestedAction | ![Suggested actions card Image](./media/suggested-actions.png) | Presents your user with a set of CardActions representing a user choice. This card disappears once any of the suggested actions is selected. |
+| VideoCard | ![Video card Image](./media/video-card.png) | A card that can play videos. Typically used to open a URL and stream an available video. |
+| CardCarousel | ![Card carousel Image](./media/card-carousel.png) | A horizontally scrollable collection of cards that allows your user to easily view a series of possible user choices.|
 
 Cards allow you to design your bot once, and have it work across a variety of channels. However, not all card types are fully supported across all available channels. 
 
-Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md).
+Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md). Sample code can also be found here for cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-js-sample-code), and suggested actions: [C#](https://aka.ms/bot-suggested-actions-code)/[JS](https://aka.ms/bot-suggested-actions-js-code).
+
 
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." As discussed [previously](~/bot-service-design-principles.md#designing-a-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it is often unnecessary and introduces unjustified complexity.
@@ -85,7 +86,7 @@ In other scenarios, a user may be **typing simple requests based on natural lang
 
 Using the APIs, your bot can extract the key components of the user's text to identify the user's intent. When implementing natural language understanding capabilities in your bot, set realistic expectations for the level of detail that users are likely to provide in their input. 
 
-![how users talk](~/media/bot-service-design-user-experience/buy-house.png)
+![how users talk](./media/bot-service-design-user-experience/buy-house.png)
 
 > [!TIP]
 > When building natural language models, do not assume that users will provide all the required information in their initial query. 

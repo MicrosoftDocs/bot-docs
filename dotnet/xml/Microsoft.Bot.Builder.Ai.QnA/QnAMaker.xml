@@ -1,12 +1,16 @@
-﻿<Type Name="QnAMaker" FullName="Microsoft.Bot.Builder.Ai.QnA.QnAMaker">
+﻿<Type Name="QnAMaker" FullName="Microsoft.Bot.Builder.AI.QnA.QnAMaker">
   <TypeSignature Language="C#" Value="public class QnAMaker" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMaker extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Ai.QnA.QnAMaker" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnAMaker" />
   <TypeSignature Language="VB.NET" Value="Public Class QnAMaker" />
   <TypeSignature Language="F#" Value="type QnAMaker = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,54 +24,111 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public QnAMaker (Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint endpoint, Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions options = null, System.Net.Http.HttpClient httpClient = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint endpoint, class Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions options, class System.Net.Http.HttpClient httpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMaker.#ctor(Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint,Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Ai.QnA.QnAMaker : Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint * Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions * System.Net.Http.HttpClient -&gt; Microsoft.Bot.Builder.Ai.QnA.QnAMaker" Usage="new Microsoft.Bot.Builder.Ai.QnA.QnAMaker (endpoint, options, httpClient)" />
+      <MemberSignature Language="C#" Value="public QnAMaker (Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint endpoint, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options = null, System.Net.Http.HttpClient httpClient = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint endpoint, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, class System.Net.Http.HttpClient httpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.#ctor(Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Net.Http.HttpClient)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.QnAMaker : Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Net.Http.HttpClient -&gt; Microsoft.Bot.Builder.AI.QnA.QnAMaker" Usage="new Microsoft.Bot.Builder.AI.QnA.QnAMaker (endpoint, options, httpClient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.Ai.QnA.QnAMakerEndpoint" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Ai.QnA.QnAMakerOptions" />
+        <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" />
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
       </Parameters>
       <Docs>
         <param name="endpoint">The endpoint of the knowledge base to query.</param>
         <param name="options">The options for the QnA Maker knowledge base.</param>
-        <param name="httpClient">A client with which to talk to QnAMaker.
+        <param name="httpClient">An alternate client with which to talk to QnAMaker.
             If null, a default client is used for this instance.</param>
         <summary>
-            Creates a new <see cref="T:Microsoft.Bot.Builder.Ai.QnA.QnAMaker" /> instance.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.QnAMaker" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAnswers">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Ai.QnA.QueryResult[]&gt; GetAnswers (string question);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Ai.QnA.QueryResult[]&gt; GetAnswers(string question) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Ai.QnA.QnAMaker.GetAnswers(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetAnswers (question As String) As Task(Of QueryResult())" />
-      <MemberSignature Language="F#" Value="member this.GetAnswers : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Ai.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswers question" />
+    <Member MemberName="GetAnswersAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync (Microsoft.Bot.Builder.ITurnContext turnContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext) As Task(Of QueryResult())" />
+      <MemberSignature Language="F#" Value="member this.GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswersAsync turnContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Ai.QnA</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Ai.QnA.QueryResult[]&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="question" Type="System.String" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
       </Parameters>
       <Docs>
-        <param name="question">The user question to be queried against your knowledge base.</param>
+        <param name="turnContext">The Turn Context that contains the user question to be queried against your knowledge base.</param>
         <summary>
             Generates an answer from the knowledge base.
             </summary>
         <returns>A list of answers for the user query, sorted in decreasing order of ranking score.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnAMakerMiddlewareName">
+      <MemberSignature Language="C#" Value="public const string QnAMakerMiddlewareName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerMiddlewareName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerMiddlewareName" />
+      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerMiddlewareName As String " />
+      <MemberSignature Language="F#" Value="val mutable QnAMakerMiddlewareName : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerMiddlewareName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnAMakerTraceLabel">
+      <MemberSignature Language="C#" Value="public const string QnAMakerTraceLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerTraceLabel" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerTraceLabel As String " />
+      <MemberSignature Language="F#" Value="val mutable QnAMakerTraceLabel : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnAMakerTraceType">
+      <MemberSignature Language="C#" Value="public const string QnAMakerTraceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerTraceType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceType" />
+      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerTraceType As String " />
+      <MemberSignature Language="F#" Value="val mutable QnAMakerTraceType : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

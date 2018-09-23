@@ -1,0 +1,75 @@
+<Type Name="IMessageQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue">
+  <TypeSignature Language="C#" Value="public interface IMessageQueue" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageQueue" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageQueue" />
+  <TypeSignature Language="F#" Value="type IMessageQueue = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DrainQueueAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DrainQueueAsync (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DrainQueueAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.DrainQueueAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DrainQueueAsync (botToUser As IBotToUser, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DrainQueueAsync : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iMessageQueue.DrainQueueAsync (botToUser, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="botToUser">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueMessageAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task QueueMessageAsync (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task QueueMessageAsync(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue.QueueMessageAsync(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueueMessageAsync (botToUser As IBotToUser, message As IMessageActivity, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member QueueMessageAsync : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iMessageQueue.QueueMessageAsync (botToUser, message, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="botToUser">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

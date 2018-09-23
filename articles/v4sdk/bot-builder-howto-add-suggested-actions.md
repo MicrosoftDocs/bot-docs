@@ -19,7 +19,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 ## Send suggested actions
 
-You can create a list of suggested actions (also known as "quick replies") that will be shown to the user for a single turn of the conversation:
+You can create a list of suggested actions (also known as "quick replies") that will be shown to the user for a single turn of the conversation: 
 
 # [C#](#tab/csharp)
 
@@ -28,34 +28,35 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
-// Create the activity and add suggested actions.
-var activity = MessageFactory.SuggestedActions(
-    new CardAction[]
-    {
-        new CardAction(title: "red", type: ActionTypes.ImBack, value: "red"),
-        new CardAction( title: "green", type: ActionTypes.ImBack, value: "green"),
-        new CardAction(title: "blue", type: ActionTypes.ImBack, value: "blue")
-    }, text: "Choose a color");
+```csharp
+var reply = turnContext.Activity.CreateReply("What is your favorite color?");
 
-// Send the activity as a reply to the user.
-await context.SendActivity(activity);
+reply.SuggestedActions = new SuggestedActions()
+{
+    Actions = new List<CardAction>()
+    {
+        new CardAction() { Title = "Red", Type = ActionTypes.ImBack, Value = "Red" },
+        new CardAction() { Title = "Yellow", Type = ActionTypes.ImBack, Value = "Yellow" },
+        new CardAction() { Title = "Blue", Type = ActionTypes.ImBack, Value = "Blue" },
+    },
+
+};
+await turnContext.SendActivityAsync(reply, cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
+You can access the source code used here from [GitHub](https://aka.ms/SuggestActionsJS).
 
 ```javascript
 // Require MessageFactory from botbuilder.
 const {MessageFactory} = require('botbuilder');
 
-//  Initialize the message object.
-const basicMessage = MessageFactory.suggestedActions(['red', 'green', 'blue'], 'Choose a color');
-
-await context.sendActivity(basicMessage);
+var reply = MessageFactory.suggestedActions(['Red', 'Yellow', 'Blue'], `What is the best color?`);
+await turnContext.sendActivity(reply);
 ```
 
 ---
 
 ## Additional resources
 
-To preview features, you can use the [Channel Inspector](../bot-service-channel-inspector.md)
-
+You can access the complete source code shown here from GitHub [[C#](https://aka.ms/SuggestedActionsCSharp) | [JS](https://aka.ms/SuggestActionsJS)].

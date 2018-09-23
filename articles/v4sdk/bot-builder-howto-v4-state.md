@@ -1,13 +1,13 @@
 ---
 title: Manage conversation and user state | Microsoft Docs
-description: Learn how to save and retrieve data with V4 of the Bot Builder SDK for .NET.
-keywords: conversation state, user state, state middleware, conversation flow, file storage, azure table storage
+description: Learn how to save and retrieve state data with the Bot Builder SDK for .NET.
+keywords: conversation state, user state, conversation flow
 author: ivorb
-ms.author: v-demak
+ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/03/18
+ms.date: 09/18/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,461 +15,306 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-For your bot to save conversation and user state, first initialize state manager middleware, and then use the conversation and user state properties.
-For more information on how that state is used, see [State and storage](./bot-builder-storage-concept.md).
+A key to good bot design is to track the context of a conversation, so that your bot remembers things like the answers to previous questions. Depending on what your bot is used for, you may even need to keep track of state or store information for longer than the lifetime of the conversation. A bot's *state* is information it remembers in order to respond appropriately to incoming messages. The Bot Builder SDK provides two classes for storing and retrieving state data as an object associated with a user or a conversation.
 
-## Initialize state manager middleware
+- **Conversation state** help your bot keep track of the current conversation the bot is having with the user. If your bot needs to complete a sequence of steps or switch between conversation topics, you can use conversation properties to manage steps in a sequence or track the current topic. 
 
-In the SDK, you need to initialize the bot adapter to use state manager middleware before you can use the conversation or user property stores. _Conversation state_ is used for conversation properties, and _user state_ is used for user properties. (User state properties can be accessed across multiple conversations.) The state manager middleware provides an abstraction that lets you access properties using a simple key-value or object store, independent of the type of underlying storage. The state manager takes care of writing data to storage and managing concurrency, whether the underlying storage type is in-memory, file storage, or Azure Table Storage.
+- **User state** can be used for many purposes, such as determining where the user's prior conversation left off or simply greeting a returning user by name. If you store a user's preferences, you can use that information to customize the conversation the next time you chat. For example, you might alert the user to a news article about a topic that interests her, or alert a user when an appointment becomes available. 
 
-
-# [C#](#tab/csharp)
-To see how `ConversationState` is initialized, see `Startup.cs` in the Microsoft.Bot.Samples.EchoBot-AspNetCore sample.
-
-The libraries required for this code:
-
-```csharp
-using Microsoft.Bot.Builder.BotFramework;
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Builder.Integration.AspNet.Core;
-```
-
-Initializing `ConversationState`:
-
-```csharp
-services.AddBot<EchoBot>(options =>
-{
-    options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
-
-    IStorage dataStore = new MemoryStorage();
-    options.Middleware.Add(new ConversationState<EchoState>(dataStore));
-});
-```
-
-In the line `options.Middleware.Add(new ConversationState<EchoState>(dataStore));`, `ConversationState` is the conversation state manager object, which is added to the bot as middleware. The `EchoState` type parameter is the type representing how you want conversation state info to be stored. A bot can use any class type for conversation or user state data.
-
-The implementation of `EchoState` is in `EchoBot.cs`:
-```csharp
-public class EchoState
-{
-    public int TurnNumber { get; set; }
-}
-``` 
-
-# [JavaScript](#tab/js)
-
-Define the storage provider and assign it to the state manager you want to use.
-You could use the same storage provider for `ConversationState` and `UserState` management middleware.
-You would then use the `BotStateSet` library to connect it to the middleware layer that will manage the persisting of data for you.
-
-```javascript
-const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState, BotStateSet } = require('botbuilder');
-const restify = require('restify');
-
-// Create adapter
-const adapter = new BotFrameworkAdapter({ 
-    appId: process.env.MICROSOFT_APP_ID, 
-    appPassword: process.env.MICROSOFT_APP_PASSWORD 
-});
-
-// Add conversation state middleware.
-const conversationState = new ConversationState(new MemoryStorage());
-adapter.use(conversationState);
-
-// Alternatively, use both conversation and user state middleware.
-// const storage = new MemoryStorage;
-// const conversationState = new ConverstationState(storage);
-// const userState = new UserState(storage);
-// adapter.use(new BotStateSet(conversationState, userState));
-```    
----
+The `ConversationState` and `UserState` are state classes that are specializations of `BotState` class with policies that control the lifetime and scope of the objects stored in them. Components that need to store state create and register a property with a type, and use property accessor to access the state. The bot state manager can use memory storage, CosmosDB, and Blob Storage. 
 
 > [!NOTE] 
-> In-memory data storage is intended for testing only. This storage is volatile and temporary. The data is cleared each time the bot is restarted. See [File storage](#file-storage) and [Azure table storage](#azure-table-storage) later in this article to set up other underlying storage mediums for conversation state and user state. 
+> Use bot state manager to store preferences, user name, or the last thing they ordered, but do not use it to store critical business data. For critical data, create your own storage components or write directly to [storage](bot-builder-howto-v4-storage.md).
+> In-memory data storage is intended for testing only. This storage is volatile and temporary. The data is cleared each time the bot is restarted.
 
-### Configuring state manager middleware
+## Using conversation state and user state to direct conversation flow
+In designing a conversation flow, it is useful to define a state flag to direct the conversation flow. The flag can be a simple boolean type or a type that includes the name of the current topic. The flag can help you track where in a conversation you are. For example, a boolean type flag can tell you whether you are in a conversation or not, while a topic name property can tell you which conversation you are currently in.
 
-When initializing the state middleware, an optional _state settings_ parameter allows you to change the default behavior of how properties are saved. The default settings are:
 
-* Persist properties beyond the lifetime of the turn context.
-* If more than one instance of the bot writes to a property, allow the last instance of the bot to overwrite the previous one.
-
-## Use conversation and user state properties 
-<!-- middleware and message context properties -->
-
-Once the state manager middleware has been configured, you can get the conversation state and user state properties from the context object.
-<!-- Changes are written to storage before the `SendActivity()` pipeline completes. -->
 
 # [C#](#tab/csharp)
-
-You can see how this works using the `Microsoft.Bot.Samples.EchoBot` sample in the Bot Builder SDK. 
-
-In the `OnTurn` handler, `context.GetConversationState` gets the conversation state to access the data you defined, and you can modify the state by using the properties (in this case, incrementing `TurnNumber`).
+### Conversation and User state
+You can use [Echo Bot With Counter sample](https://github.com/Microsoft/BotBuilder-Samples) as the start point for this how-to. First, create `TopicState` class to manage the current topic of conversation in `TopicState.cs` as shown below:
 
 ```csharp
-public async Task OnTurn(ITurnContext context)
+public class TopicState
 {
-    // This bot is only handling Messages
-    if (context.Activity.Type == ActivityTypes.Message)
+   public string Prompt { get; set; } = "askName";
+}
+``` 
+Then create `UserProfile` class in `UserProfile.cs` to manage user state.
+```csharp
+public class UserProfile
+{
+    public string UserName { get; set; }
+    public string TelephoneNumber { get; set; }
+}
+``` 
+The `TopicState` class has a flag to keep track of where we are in the conversation and uses conversation state to store it. The Prompt is initialized as "askName" to initiate the conversation. Once the bot receives response from the user, Prompt will be redefined as "askNumber" to initiate the next conversation. `UserProfile` class tracks user name and phone number and stores it in user state.
+
+### Property accessors
+The `EchoBotAccessors` class in our example is created as a singleton and passed into the `class EchoWithCounterBot : IBot` constructor through dependency injection. The `EchoBotAccessors` class constructor initializes a new instance of the `EchoBotAccessors` class. It contains the `ConversationState`, `UserState`, and associated `IStatePropertyAccessor`. The `conversationState` object stores the topic state and `userState` object that stores the user profile information. The `ConversationState` and `UserState` objects are created in the Startup.cs file. The conversation and user state objects are where we persist anything at the conversation and user scope. 
+
+Updated the constructor to include `UserState` as shown below:
+```csharp
+public EchoBotAccessors(ConversationState conversationState, UserState userState)
+{
+    ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+    UserState = userState ?? throw new ArgumentNullException(nameof(userState));
+}
+```
+Create unique names for `TopicState` and `UserProfile` accessors.
+```csharp
+public static string UserProfileName { get; } = $"{nameof(EchoBotAccessors)}.UserProfile";
+public static string TopicStateName { get; } = $"{nameof(EchoBotAccessors)}.TopicState";
+```
+Next, define two accessors. The first one stores the topic of the conversation, and the second stores user's name and phone number.
+```csharp
+public IStatePropertyAccessor<TopicState> TopicState { get; set; }
+public IStatePropertyAccessor<UserProfile> UserProfile { get; set; }
+```
+
+Properties to get the ConversationState is already defined, but you'll need to add `UserState` as shown below:
+```csharp
+public ConversationState ConversationState { get; }
+public UserState UserState { get; }
+```
+After making the changes, save the file. Next, we will update the Startup class to create `UserState` object to persist anything at the user-scope. The `ConversationState` is already exists. 
+```csharp
+
+services.AddBot<EchoWithCounterBot>(options =>
+{
+    ...
+
+    IStorage dataStore = new MemoryStorage();
+    
+    var conversationState = new ConversationState(dataStore);
+    options.State.Add(conversationState);
+        
+    var userState = new UserState(dataStore);  
+    options.State.Add(userState);
+});
+```
+The line `options.State.Add(ConversationState);` and `options.State.Add(userState);` add the conversation state and user state, respectively. Next, create and register state accesssors. Acessors created here are passed into the IBot-derived class on every turn. Modift the code to inclue user state as shown below:
+```csharp
+services.AddSingleton<EchoBotAccessors>(sp =>
+{
+   ...
+    var userState = options.State.OfType<UserState>().FirstOrDefault();
+    if (userState == null)
     {
-        // Get the conversation state from the turn context
-        var state = context.GetConversationState<EchoState>();
+        throw new InvalidOperationException("UserState must be defined and added before adding user-scoped state accessors.");
+    }
+   ...
+ });
+```
 
-        // Bump the turn count. 
-        state.TurnCount++;
+Next, create the two accessors using `TopicState` and `UserProfile` and pass it into the `class EchoWithCounterBot : IBot` class through dependency injection.
+```csharp
+services.AddSingleton<EchoBotAccessors>(sp =>
+{
+   ...
+    var accessors = new BotAccessors(conversationState, userState)
+    {
+        TopicState = conversationState.CreateProperty<TopicState>("TopicState"),
+        UserProfile = userState.CreateProperty<UserProfile>("UserProfile"),
+     };
 
-        // Echo back to the user whatever they typed.
-        await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
+     return accessors;
+ });
+```
+
+The conversation and user state are linked to a singleton via the `services.AddSingleton` code block and saved via a state store accessor in the code starting with `var accessors = new BotAccessor(conversationState, userState)`.
+
+### Use conversation and user state properties 
+In the `OnTurnAsync` handler of the `EchoWithCounterBot : IBot` class, modify the code to prompt for user name and then phone number. To track where we are in the conversation, we use the Prompt property defined in the TopicState. This property was initialized a "askName". Once we get the user name, we set it to "askNumber" and set the UserName to the name user typed in. After the phone number is received, you send a confirmation message and set the prompt to 'confirmation' because you are at the end of the conversation.
+
+```csharp
+if (turnContext.Activity.Type == ActivityTypes.Message)
+{
+    // Get the conversation state from the turn context.
+    var convo = await _accessors.TopicState.GetAsync(turnContext, () => new TopicState());
+    
+    // Get the user state from the turn context.
+    var user = await _accessors.UserProfile.GetAsync(turnContext, () => new UserProfile());
+    
+    // Ask user name. The Prompt was initialiazed as "askName" in the TopicState.cs file.
+    if (convo.Prompt == "askName")
+    {
+        await turnContext.SendActivityAsync("What is your name?");
+        
+        // Set the Prompt to ask the next question for this conversation
+        convo.Prompt = "askNumber";
+        
+        // Set the property using the accessor
+        await _accessors.TopicState.SetAsync(turnContext, convo);
+        
+        //Save the new prompt into the conversation state.
+        await _accessors.ConversationState.SaveChangesAsync(turnContext);
+    }
+    else if (convo.Prompt == "askNumber")
+    {
+        // Set the UserName that is defined in the UserProfile class
+        user.UserName = turnContext.Activity.Text;
+        
+        // Use the user name to prompt the user for phone number
+        await turnContext.SendActivityAsync($"Hello, {user.UserName}. What's your telephone number?");
+        
+        // Set the Prompt now that we have collected all the data
+        convo.Prompt = "confirmation";
+                 
+        await _accessors.TopicState.SetAsync(turnContext, convo);
+        await _accessors.ConversationState.SaveChangesAsync(turnContext);
+
+        await _accessors.UserProfile.SetAsync(turnContext, user);
+        await _accessors.UserState.SaveChangesAsync(turnContext);
+    }
+    else if (convo.Prompt == "confirmation")
+    { 
+        // Set the TelephoneNumber that is defined in the UserProfile class
+        user.TelephoneNumber = turnContext.Activity.Text;
+
+        await turnContext.SendActivityAsync($"Got it, {user.UserName}. I'll call you later.");
+
+        // initialize prompt
+        convo.Prompt = ""; // End of conversation
+        await _accessors.TopicState.SetAsync(turnContext, convo);
+        await _accessors.ConversationState.SaveChangesAsync(turnContext);
     }
 }
 ```   
 
 # [JavaScript](#tab/js)
 
-You can see how this works using the generated EchoBot from the Yeoman generator sample.
+### Conversation and User state
 
-This code sample shows how you can store a turn counter to the conversation state.
+You can use [Echo Bot With Counter sample](https://github.com/Microsoft/BotBuilder-Samples) as the starting point for this how-to. This sample already uses the `ConversationState` to store the message count. We will need to add a `TopicStates` object to track our conversation state and `UserState` to track user information in a `userProfile` object. 
+
+In the main bot's `index.js` file, add the `UserState` to the require list:
+
+**index.js**
 
 ```javascript
-const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
-const restify = require('restify');
-
-// Create server
-let server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
-    console.log(`${server.name} listening to ${server.url}`);
-});
-
-// Create adapter
-const adapter = new BotFrameworkAdapter({ 
-    appId: process.env.MICROSOFT_APP_ID, 
-    appPassword: process.env.MICROSOFT_APP_PASSWORD 
-});
-
-// Add conversation state middleware
-const conversationState = new ConversationState(new MemoryStorage());
-adapter.use(conversationState);
-
-// Listen for incoming requests 
-server.post('/api/messages', (req, res) => {
-    // Route received request to adapter for processing
-    adapter.processActivity(req, res, async (context) => {
-        if (context.activity.type === 'message') {
-            const state = conversationState.get(context);
-            const count = state.count === undefined ? state.count = 0 : ++state.count;
-            await context.sendActivity(`${count}: You said "${context.activity.text}"`);
-        } else {
-            await context.sendActivity(`[${context.activity.type} event detected]`);
-        }
-    });
-});
+// Import required bot services. See https://aka.ms/bot-services to learn more about the different parts of a bot.
+const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState } = require('botbuilder');
 ```
----
 
-## Using conversation state to direct conversation flow
+Next, create the `UserState` using `MemoryStorage` as the storage provider then pass it as the second argument to the `MainDialog` class.
 
-In designing a conversation flow, it is useful to define a state flag to direct the conversation flow. The flag can be a simple **Boolean** type or a type that includes the name of the current topic. The flag can help you track where in a conversation you are. For example, a **Boolean** type flag can tell you whether you are in a conversation or not. While a topic name property can tell you which conversation you are currently in.
+**index.js**
 
-The following example uses a Boolean _have asked name_ property to flag when the bot has asked the user for their name. When the next message is received, the bot checks the property. If the property is set to `true`, the bot knows the user was just asked for their name, and interprets the incoming message as a name to save as a user property.
+```javascript
+// Create conversation state with in-memory storage provider. 
+const conversationState = new ConversationState(memoryStorage);
+const userState = new UserState(memoryStorage);
+// Create the main dialog.
+const mainDlg = new MainDialog(conversationState, userState);
+```
 
+In your `dialogs/mainDialog/index.js` file, update the constructor to accept the `userState` as the second argument. Then create a `topicStates` property from the `conversationState` and create a `userProfile` property from the `userState`.
 
-# [C#](#tab/csharp)
-```csharp
-public class ConversationInfo
-{
-    public bool haveAskedNameFlag { get; set; }
-    public bool haveAskedNumberFlag { get; set; }
+**dialogs/mainDialog/index.js**
+
+```javascript
+constructor (conversationState, userState) {
+    // creates a new state accessor property.see https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors 
+    this.conversationState = conversationState;
+    this.topicState = this.conversationState.createProperty(TOPIC_STATE);
+
+    // User state
+    this.userState = userState;
+    this.userProfile = this.userState.createProperty(USER_PROFILE);
 }
+```
 
-public class UserInfo
-{
-    public string name { get; set; }
-    public string telephoneNumber { get; set; }
-    public bool done { get; set; }
-}
+### Use conversation and user state properties
 
-public async Task OnTurn(ITurnContext context)
-{
-    // Get state objects. Default objects are created if they don't already exist.
-    var convo = ConversationState<ConversationInfo>.Get(context);
-    var user = UserState<UserInfo>.Get(context);
+In the `onTurn` handler of the `MainDialog` class, modify the code to prompt for user name and then phone number. To track where we are in the conversation, we use the `prompt` property defined in the `topicState`. This property is initialized to "askName". Once we get the user name, we set it to "askNumber" and set the UserName to the name user typed in. After the phone number is received, you send a confirmation message and set the prompt to `undefined` because you are at the end of the conversation.
 
-    if (context.Activity.Type is ActivityTypes.Message)
-    {
-        if (string.IsNullOrEmpty(user.name) && !convo.haveAskedNameFlag)
-        {
-            // Ask for the name.
-            await context.SendActivity("Hello. What's your name?");
+**dialogs/mainDialog/index.js**
 
-            // Set flag to show we've asked for the name. We save this out so the
-            // context object for the next turn of the conversation can check haveAskedName
-            convo.haveAskedNameFlag = true;
-        }
-        else if (!convo.haveAskedNumberFlag)
-        {
-            // Save the name.
-            var name = context.Activity.AsMessageActivity().Text;
-            user.name = name;
-            convo.haveAskedNameFlag = false; // Reset flag
+```javascript
+// see https://aka.ms/about-bot-activity-message to learn more about the message and other activity types
+if (context.activity.type === 'message') {
+    // read from state and set default object if object does not exist in storage.
+    let topicState = await this.topicState.get(context, {
+        //Define the topic state object
+        prompt: "askName"
+    });
+    let userProfile = await this.userProfile.get(context, {  
+        // Define the user's profile object
+        "userName": undefined,
+        "telephoneNumber": undefined
+    });
 
-            // Ask for the phone number. You might want a flag to track this, too.
-            await context.SendActivity($"Hello, {name}. What's your telephone number?");
-            convo.haveAskedNumberFlag = true;
-        }
-        else if (convo.haveAskedNumberFlag)
-        {
-            // save the telephone number
-            var telephonenumber = context.Activity.AsMessageActivity().Text;
+    if(topicState.prompt == "askName"){
+        await context.sendActivity("What is your name?");
 
-            user.telephoneNumber = telephonenumber;
-            convo.haveAskedNumberFlag = false; // Reset flag
-            await context.SendActivity($"Got it. I'll call you later.");
-        }
+        // Set next prompt state
+        topicState.prompt = "askNumber";
+
+        // Update state
+        await this.topicState.set(context, topicState);
     }
+    else if(topicState.prompt == "askNumber"){
+        // Set the UserName that is defined in the UserProfile class
+        userProfile.userName = context.activity.text;
+
+        // Use the user name to prompt the user for phone number
+        await context.sendActivity(`Hello, ${userProfile.userName}. What's your telephone number?`);
+
+        // Set next prompt state
+        topicState.prompt = "confirmation";
+
+        // Update states
+        await this.topicState.set(context, topicState);
+        await this.userProfile.set(context, userProfile);
+    }
+    else if(topicState.prompt == "confirmation"){
+        // Set the phone number
+        userProfile.telephoneNumber = context.activity.text;
+
+        // Sent confirmation
+        await context.sendActivity(`Got it, ${userProfile.userName}. I'll call you later.`)
+
+        // Set next prompt state
+        topicState.prompt = undefined; // End of conversation
+
+        // Update states
+        await this.topicState.set(context, topicState);
+        await this.userProfile.set(context, userProfile);
+    }
+    
+    // Save state changes to storage
+    await this.conversationState.saveChanges(context);
+    await this.userState.saveChanges(context);
+    
 }
-```
-
-To set up user state so that it can be returned by `UserState<UserInfo>.Get(context)`, 
-you add user state middleware. For example, in `Startup.cs` of the ASP .NET Core EchoBot, changing the code in ConfigureServices.cs:
-
-```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddBot<EchoBot>(options =>
-    {
-        options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
-        
-        IStorage dataStore = new MemoryStorage();
-        options.Middleware.Add(new ConversationState<ConversationInfo>(dataStore));
-        options.Middleware.Add(new UserState<UserInfo>(dataStore));
-    });
+else {
+    await context.sendActivity(`[${context.activity.type} event detected]`);
 }
-```
-
-# [JavaScript](#tab/js)
-
-**app.js**
-
-```js
-const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState, BotStateSet } = require('botbuilder');
-const restify = require('restify');
-
-// Create server
-let server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
-    console.log(`${server.name} listening to ${server.url}`);
-});
-
-// Create adapter (it's ok for MICROSOFT_APP_ID and MICROSOFT_APP_PASSWORD to be blank for now)  
-const adapter = new BotFrameworkAdapter({ 
-    appId: process.env.MICROSOFT_APP_ID, 
-    appPassword: process.env.MICROSOFT_APP_PASSWORD 
-});
-
-// Storage
-const storage = new MemoryStorage();
-const conversationState = new ConversationState(storage);
-const userState  = new UserState(storage);
-adapter.use(new BotStateSet(conversationState, userState));
-
-// Listen for incoming requests 
-server.post('/api/messages', (req, res) => {
-    // Route received request to adapter for processing
-    adapter.processActivity(req, res, async (context) => {
-        const isMessage = (context.activity.type === 'message');
-        const convo = conversationState.get(context);
-        const user = userState.get(context);
-
-        if (isMessage) {
-            if(!user.name && !convo.haveAskedNameFlag){
-                // Ask for the name.
-                await context.sendActivity("What is your name?")
-                // Set flag to show we've asked for the name. We save this out so the
-                // context object for the next turn of the conversation can check haveAskedNameFlag
-                convo.haveAskedNameFlag = true;
-            } else if(convo.haveAskedNameFlag){
-                // Save the name.
-                user.name = context.activity.text;
-                convo.haveAskedNameFlag = false; // Reset flag
-
-                await context.sendActivity(`Hello, ${user.name}. What's your telephone number?`);
-                convo.haveAskedNumberFlag = true; // Set flag
-            } else if(convo.haveAskedNumberFlag){
-                // save the phone number
-                user.telephonenumber = context.activity.text;
-                convo.haveAskedNumberFlag = false; // Reset flag
-                await context.sendActivity(`Got it. I'll call you later.`);
-            }
-        }
-
-        // ...
-    });
-});
-
 ```
 
 ---
 
-An alternative is to use the _waterfall_ model of a dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [Manage simple conversation with Dialogs](bot-builder-dialog-manage-conversation-flow.md).
+## Start your bot
+Run your bot locally.
 
-## File storage
+### Start the emulator and connect your bot
+Next, start the emulator and then connect to your bot in the emulator:
 
-The memory storage provider uses in-memory storage that gets disposed when the bot is restarted. It is good for testing purposes only. If you want to persist data but do not want to hook your bot up to a database, you can use the file storage provider. While this provider is also intented for testing purposes, it persists state data to a file so that you can inspect it. The data is written out to file using JSON format.
+1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+2. Select the .bot file located in the directory where you created the Visual Studio solution.
 
-# [C#](#tab/csharp)
+### Interact with your bot
 
-Go to `Startup.cs` in the Microsoft.Bot.Samples.EchoBot-AspNetCore sample, and edit the code in the `ConfigureServices` method.
-```csharp
-// This method gets called by the runtime. Use this method to add services to the container.
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddBot<EchoBot>(options =>
-    {
-        options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+Send a message to your bot, and the bot will respond back with a message.
+![Emulator running](../media/emulator-v4/emulator-running.png)
 
-        // Using file storage instead of in-memory storage.
-        IStorage dataStore = new FileStorage(System.IO.Path.GetTempPath());
-        options.Middleware.Add(new ConversationState<EchoState>(dataStore));
-    });
-}
-``` 
-
-Run the code, and let the echobot echo back your input a few times.
-
-Then go to the directory specified by `System.IO.Path.GetTempPath()`. You should see a file with a name starting with "conversation". Open it and look at the JSON. The file contains something like the following:
-```json
-{
-  "$type": "Microsoft.Bot.Samples.Echo.EchoState, Microsoft.Bot.Samples.EchoBot",
-  "TurnNumber": "3",
-  "eTag": "ecfe2a23566b4b52b2fe697cffc59385"
-}
-```
-
-The `$type` specifies the type of the data structure you're using in your bot to store conversation state. The `TurnNumber` field corresponds to the `TurnNumber` property in the `EchoState` class. The `eTag` field is inherited from `IStoreItem` and is a unique value that automatically gets updated each time your bot updates conversation state.  The eTag field enables your bot to enable optimistic concurrency.
-
-# [JavaScript](#tab/js)
-
-To use `FileStorage`, update your echo bot sample described in section: [Use conversation and user state properties](#use-conversation-and-user-state-properties) earlier. Make sure `storage` is set to `FileStorage` instead of `MemoryStorage` and require `FileStorage` from botbuilder. These are the only changes needed. 
-
-```javascript
-// Storage
-const storage = new FileStorage("c:/temp");
-const conversationState = new ConversationState(storage);
-const userState  = new UserState(storage);
-adapter.use(new BotStateSet(conversationState, userState));
-```
-
-The `FileStorage` provider takes a "path" as a parameter. Specifying a path allows you to easily find the file with the persisted information from your bot. Each *conversation* will have a new file created for it. So, in the *path*, you may find multiple file names starting with `conversation!`. You can sort by date to find the lastest conversation easier. On the other hand, you will only find one file for the *user* state. The filename will start with `user!`. Anytime the state of either of these object changes, the state manager will update the file to reflect what's changed.
-
-Run the bot and send it a few messages. Then, find the storage file and open it. Here is what the JSON content might look like for the echo bot that keeps track of the turn counter.
-
-```json
-{
-  "turnNumber": "3",
-  "eTag": "322"
-}
-```
----
-
-## Azure table storage
-
-You can also use Azure Table storage as your storage medium.
-
-# [C#](#tab/csharp)
-
-In the Microsoft.Bot.Samples.EchoBot-AspNetCore sample, add a reference to the `Microsoft.Bot.Builder.Azure` NuGet package.
-
-Then, go to `Startup.cs`, add a `using Microsoft.Bot.Builder.Azure;` statement, and edit the code in the `ConfigureServices` method.
-```csharp
-services.AddBot<EchoBot>(options =>
-{
-    options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
-    // The parameters are the connection string and table name.
-    // "UseDevelopmentStorage=true" is the connection string to use if you are using the Azure Storage Emulator.
-    // Replace it with your own connection string if you're not using the emulator
-    options.Middleware.Add(new ConversationState<EchoState>(new AzureTableStorage("UseDevelopmentStorage=true","conversationstatetable")));
-    // you could also specify the cloud storage account instead of the connection string
-    /* options.Middleware.Add(new ConversationState<EchoState>(
-        new AzureTableStorage(WindowsAzure.Storage.CloudStorageAccount.DevelopmentStorageAccount, "conversationstatetable"))); */
-    options.EnableProactiveMessages = true;
-});
-```
-`UseDevelopmentStorage=true` is the connection string you can use with the [Azure Storage Emulator][AzureStorageEmulator]. Replace it with your own connection string if you're not using the emulator.
-
-If the table with the name you specify in the constructor to `AzureTableStorage` doesn't exist, it is created.
-
-<!-- 
-TODO: step-by-step inspection of the stored table
--->
-
-# [JavaScript](#tab/js)
-
-In `app.js` of the echobot sample, you can create ConversationState using `AzureTableStorage`. 
-
-```bash
-npm install --save botbuilder-azure@preview
-```
-
-```javascript
-const { BotFrameworkAdapter, FileStorage, MemoryStorage, ConversationState } = require('botbuilder');
-const { TableStorage } = require('botbuilder-azure');
-
-// ...
-
-// Create adapter
-const adapter = new BotFrameworkAdapter({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
-});
-
-// Add conversation state middleware
-// The parameters are the connection string and table name.
-// "UseDevelopmentStorage=true" is the connection string to use if you are using the Azure Storage Emulator.
-// Replace it with your own connection string if you're not using the emulator
-var azureStorage = new TableStorage({ tableName: "TestAzureTable1", storageAccountOrConnectionString: "UseDevelopmentStorage=true"})
-
-// You can alternatively use your account name and table name
-// var azureStorage = new TableStorage({tableName: "TestAzureTable2", storageAccessKey: "V3ah0go4DLkMtQKUPC6EbgFeXnE6GeA+veCwDNFNcdE6rqSVE/EQO/kjfemJaitPwtAkmR9lMKLtcvgPhzuxZg==", storageAccountOrConnectionString: "storageaccount"});
-
-const conversationState = new ConversationState(azureStorage);
-adapter.use(conversationState);
-
-```
-
-`UseDevelopmentStorage=true` is the connection string you can use with the [Azure Storage Emulator][AzureStorageEmulator].
-If the table with the name you specify in the constructor to `AzureTableStorage` doesn't exist, it is created.
-
----
-
-To look at the conversation state data that is saved, run the sample and then open the table using [Azure Storage explorer][AzureStorageExplorer].
-
-![echobot conversation state data in Azure Storage Explorer](media/how-to-state/echostate-azure-storage-explorer.png)
-
-
-The **Partition Key** is a uniquely-generated key specific to the current conversation. If you restart the bot or start a new conversation, the new conversation will get its own row with its own partition key. The `EchoState` data structure is serialized to JSON and saved in the **Json** column of the Azure Table. 
-
-```json
-{
-    "$type":"Microsoft.Bot.Samples.Echo.AspNetCore.EchoState, Microsoft.Bot.Samples.EchoBot-AspNetCore",
-    "TurnNumber":2,
-    "LastMessage":"second message",
-    "eTag":"*"
-}
-```
-
-The `$type` and `eTag` fields are added by the BotBuilder SDK. For more about eTags, see [Managing optimistic concurrency](bot-builder-howto-v4-storage.md#manage-concurrency-using-etags)
-
+If you decide to manage state yourself, see [manage conversation flow with your own prompts](bot-builder-primitive-prompts.md). An alternative is to use the waterfall dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [manage a simple conversation with dialogs](bot-builder-dialog-manage-conversation-flow.md).
 
 ## Next steps
-
 Now that you know how to use state to help you read and write bot data to storage, lets take a look at how you can read and write directly to storage.
 
 > [!div class="nextstepaction"]
 > [How to write directly to storage](bot-builder-howto-v4-storage.md).
-
-## Additional resources
-For more background on storage, see [Storage in the Bot Builder SDK](bot-builder-storage-concept.md)
-
-<!-- Links -->
-[AzureStorageEmulator]: https://docs.microsoft.com/azure/storage/common/storage-use-emulator
-[AzureStorageExplorer]: https://azure.microsoft.com/features/storage-explorer/

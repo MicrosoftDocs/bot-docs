@@ -1,0 +1,66 @@
+﻿<Type Name="AadResourceUrls" FullName="Microsoft.Bot.Schema.AadResourceUrls">
+  <TypeSignature Language="C#" Value="public class AadResourceUrls" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AadResourceUrls extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.AadResourceUrls" />
+  <TypeSignature Language="VB.NET" Value="Public Class AadResourceUrls" />
+  <TypeSignature Language="F#" Value="type AadResourceUrls = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A collection of Azure Active Directory resource URLs
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AadResourceUrls ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.AadResourceUrls.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceUrls">
+      <MemberSignature Language="C#" Value="public string[] ResourceUrls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ResourceUrls" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.AadResourceUrls.ResourceUrls" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceUrls As String()" />
+      <MemberSignature Language="F#" Value="member this.ResourceUrls : string[] with get, set" Usage="Microsoft.Bot.Schema.AadResourceUrls.ResourceUrls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("resourceUrls")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An array of resource URLs to use with Azure Active Directory
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

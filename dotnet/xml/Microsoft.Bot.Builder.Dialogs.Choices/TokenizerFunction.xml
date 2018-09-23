@@ -1,0 +1,28 @@
+﻿<Type Name="TokenizerFunction" FullName="Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction">
+  <TypeSignature Language="C#" Value="public delegate System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt; TokenizerFunction(string text, string locale = null);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TokenizerFunction extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TokenizerFunction(text As String, Optional locale As String = null) As List(Of Token) " />
+  <TypeSignature Language="F#" Value="type TokenizerFunction = delegate of string * string -&gt; List&lt;Token&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="text" Type="System.String" />
+    <Parameter Name="locale" Type="System.String" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="text">To be added.</param>
+    <param name="locale">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

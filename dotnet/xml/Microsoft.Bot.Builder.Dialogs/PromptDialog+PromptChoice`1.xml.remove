@@ -1,0 +1,169 @@
+<Type Name="PromptDialog+PromptChoice&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptChoice&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class PromptDialog.PromptChoice&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;T,T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptChoice`1&lt;T&gt; extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;!T, !T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class PromptDialog.PromptChoice(Of T)&#xA;Inherits Prompt(Of T, T)" />
+  <TypeSignature Language="F#" Value="type PromptDialog.PromptChoice&lt;'T&gt; = class&#xA;    inherit Prompt&lt;'T, 'T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;T,T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="U">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>   Prompt for a choice from a set of choices. </summary>
+    <remarks>   Normally used through <see cref="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.Choice``1(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String})" />.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptChoice (Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt; promptOptions, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;!T&gt; promptOptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{`0},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As IPromptOptions(Of T), Optional recognizeChoices As Boolean = true, Optional recognizeNumbers As Boolean = true, Optional recognizeOrdinals As Boolean = true, Optional minScore As Double = 0.4)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; : Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;'T&gt; * bool * bool * bool * double -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; (promptOptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="promptOptions" Type="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt;" />
+        <Parameter Name="recognizeChoices" Type="System.Boolean" />
+        <Parameter Name="recognizeNumbers" Type="System.Boolean" />
+        <Parameter Name="recognizeOrdinals" Type="System.Boolean" />
+        <Parameter Name="minScore" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="promptOptions"> The prompt options</param>
+        <param name="recognizeChoices">(Optional) if true, the prompt will attempt to recognize the selected value using the choices themselves. The default value is "true".</param>
+        <param name="recognizeNumbers">(Optional) if true, the prompt will attempt to recognize numbers in the users utterance as the index of the choice to return. The default value is "true".</param>
+        <param name="recognizeOrdinals">(Optional) if true, the prompt will attempt to recognize ordinals like "the first one" or "the second one" as the index of the choice to return. The default value is "true".</param>
+        <param name="minScore">(Optional) minimum score from 0.0 - 1.0 needed for a recognized choice to be considered a match. The default value is "0.4".</param>
+        <summary>
+            Constructs a choice dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptChoice (System.Collections.Generic.IDictionary&lt;T,System.Collections.Generic.IEnumerable&lt;T&gt;&gt; choices, string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable&lt;string&gt; descriptions = null, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;!T, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;&gt; choices, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IDictionary{`0,System.Collections.Generic.IEnumerable{`0}},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; : System.Collections.Generic.IDictionary&lt;'T, seq&lt;'T&gt;&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * seq&lt;string&gt; * bool * bool * bool * double -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; (choices, prompt, retry, attempts, promptStyle, descriptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IDictionary&lt;T,System.Collections.Generic.IEnumerable&lt;T&gt;&gt;" />
+        <Parameter Name="prompt" Type="System.String" />
+        <Parameter Name="retry" Type="System.String" />
+        <Parameter Name="attempts" Type="System.Int32" />
+        <Parameter Name="promptStyle" Type="Microsoft.Bot.Builder.Dialogs.PromptStyle" />
+        <Parameter Name="descriptions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="recognizeChoices" Type="System.Boolean" />
+        <Parameter Name="recognizeNumbers" Type="System.Boolean" />
+        <Parameter Name="recognizeOrdinals" Type="System.Boolean" />
+        <Parameter Name="minScore" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="choices">Dictionary with the options to choose from as a key and their synonyms as a value.</param>
+        <param name="prompt">   The prompt. </param>
+        <param name="retry">    What to display on retry. </param>
+        <param name="attempts"> Maximum number of attempts. </param>
+        <param name="promptStyle"> Style of the prompt <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptStyle" /></param>
+        <param name="descriptions">Descriptions to show for each option.</param>
+        <param name="recognizeChoices">(Optional) if true, the prompt will attempt to recognize the selected value using the choices themselves. The default value is "true".</param>
+        <param name="recognizeNumbers">(Optional) if true, the prompt will attempt to recognize numbers in the users utterance as the index of the choice to return. The default value is "true".</param>
+        <param name="recognizeOrdinals">(Optional) if true, the prompt will attempt to recognize ordinals like "the first one" or "the second one" as the index of the choice to return. The default value is "true".</param>
+        <param name="minScore">(Optional) minimum score from 0.0 - 1.0 needed for a recognized choice to be considered a match. The default value is "0.4".</param>
+        <summary>   Constructor for a prompt choice dialog. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptChoice (System.Collections.Generic.IEnumerable&lt;T&gt; options, string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, System.Collections.Generic.IEnumerable&lt;string&gt; descriptions = null, bool recognizeChoices = true, bool recognizeNumbers = true, bool recognizeOrdinals = true, double minScore = 0.4);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; options, string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, class System.Collections.Generic.IEnumerable`1&lt;string&gt; descriptions, bool recognizeChoices, bool recognizeNumbers, bool recognizeOrdinals, float64 minScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Double)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; : seq&lt;'T&gt; * string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * seq&lt;string&gt; * bool * bool * bool * double -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice&lt;'T&gt; (options, prompt, retry, attempts, promptStyle, descriptions, recognizeChoices, recognizeNumbers, recognizeOrdinals, minScore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="prompt" Type="System.String" />
+        <Parameter Name="retry" Type="System.String" />
+        <Parameter Name="attempts" Type="System.Int32" />
+        <Parameter Name="promptStyle" Type="Microsoft.Bot.Builder.Dialogs.PromptStyle" />
+        <Parameter Name="descriptions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="recognizeChoices" Type="System.Boolean" />
+        <Parameter Name="recognizeNumbers" Type="System.Boolean" />
+        <Parameter Name="recognizeOrdinals" Type="System.Boolean" />
+        <Parameter Name="minScore" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="options">Enumerable of the options to choose from.</param>
+        <param name="prompt">   The prompt. </param>
+        <param name="retry">    What to display on retry. </param>
+        <param name="attempts"> Maximum number of attempts. </param>
+        <param name="promptStyle"> Style of the prompt <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptStyle" /></param>
+        <param name="descriptions">Descriptions to show for each option.</param>
+        <param name="recognizeChoices">(Optional) if true, the prompt will attempt to recognize the selected value using the choices themselves. The default value is "true".</param>
+        <param name="recognizeNumbers">(Optional) if true, the prompt will attempt to recognize numbers in the users utterance as the index of the choice to return. The default value is "true".</param>
+        <param name="recognizeOrdinals">(Optional) if true, the prompt will attempt to recognize ordinals like "the first one" or "the second one" as the index of the choice to return. The default value is "true".</param>
+        <param name="minScore">(Optional) minimum score from 0.0 - 1.0 needed for a recognized choice to be considered a match. The default value is "0.4".</param>
+        <summary>   Constructor for a prompt choice dialog. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="protected internal override bool TryParse (Microsoft.Bot.Connector.IMessageActivity message, out T result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] !T&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As T) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptChoice.TryParse (message, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="result" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,40 +1,49 @@
 ﻿<Type Name="UpdateActivityHandler" FullName="Microsoft.Bot.Builder.UpdateActivityHandler">
-  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityHandler(ITurnContext context, Activity activity, Func&lt;Task&lt;ResourceResponse&gt;&gt; next);" />
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityHandler(ITurnContext turnContext, Activity activity, Func&lt;Task&lt;ResourceResponse&gt;&gt; next);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateActivityHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.UpdateActivityHandler" />
-  <TypeSignature Language="VB.NET" Value="Public Delegate Function UpdateActivityHandler(context As ITurnContext, activity As Activity, next As Func(Of Task(Of ResourceResponse))) As Task(Of ResourceResponse) " />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function UpdateActivityHandler(turnContext As ITurnContext, activity As Activity, next As Func(Of Task(Of ResourceResponse))) As Task(Of ResourceResponse) " />
   <TypeSignature Language="F#" Value="type UpdateActivityHandler = delegate of ITurnContext * Activity * Func&lt;Task&lt;ResourceResponse&gt;&gt; -&gt; Task&lt;ResourceResponse&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
     <AssemblyVersion>4.0.0.46</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
-    <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" />
+    <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
+    <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+    <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" />
+    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Index="2" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
   </ReturnValue>
   <Docs>
     <param name="context">The context object for the turn.</param>
+    <param name="turnContext">The context object for the turn.</param>
     <param name="activity">The replacement activity.</param>
     <param name="next">The delegate to call to continue event processing.</param>
     <summary>
             A method that can participate in update activity events for the current turn.
             </summary>
     <returns>A task that represents the work queued to execute.</returns>
-    <remarks>A handler calls the <paramref name="next" /> delegate to pass control to 
+    <remarks>A handler calls the <paramref name="next" /> delegate to pass control to
             the next registered handler. If a handler doesn’t call the next delegate,
             the adapter does not call any of the subsequent handlers and does not update the
             activity.
             <para>The activity's <see cref="P:Microsoft.Bot.Schema.IActivity.Id" /> indicates the activity in the
-            conversation to replace.</para></remarks>
+            conversation to replace.</para><para>If the activity is successfully sent, the <paramref name="next" /> delegater returns
+            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
+            channel assigned to the activity. Use this response object as the return value of this handler.</para></remarks>
     <altmember cref="T:Microsoft.Bot.Builder.BotAdapter" />
     <altmember cref="T:Microsoft.Bot.Builder.SendActivitiesHandler" />
     <altmember cref="T:Microsoft.Bot.Builder.DeleteActivityHandler" />
+    <altmember cref="M:Microsoft.Bot.Builder.ITurnContext.OnUpdateActivity(Microsoft.Bot.Builder.UpdateActivityHandler)" />
   </Docs>
 </Type>

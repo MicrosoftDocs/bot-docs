@@ -19,8 +19,6 @@ Message text can be formatted using **plain**, **markdown**, or **xml**. The def
 
 The `textFormat` property of the [Activity][Activity] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the [Activity][Activity] object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender. 
 
-For a list of commonly supported text formatting, see [Text formatting](../bot-service-channel-inspector.md#text-formatting).
-
 ## Attachments
 
 The `attachments` property of the [Activity][Activity] object can be used to send simple media attachments 

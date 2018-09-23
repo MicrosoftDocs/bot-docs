@@ -7,7 +7,7 @@ ms.author: RobStand
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 08/16/2018
+ms.date: 09/16/2018
 ---
 
 # Connect a bot to Facebook Messenger
@@ -73,7 +73,7 @@ In the [Azure portal](https://portal.azure.com/), open the bot, click the **Chan
 
 1. Return to Facebook Messenger and paste the **Callback URL** and **Verify Token** values.
 
-2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_options*, and *messaging\_postbacks*.
+2. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_optins*, and *messaging\_postbacks*.
 
 3. Click **Verify and Save**.
 

@@ -1,0 +1,30 @@
+﻿<Type Name="BotCallbackHandler" FullName="Microsoft.Bot.Builder.BotCallbackHandler">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task BotCallbackHandler(ITurnContext turnContext, CancellationToken cancellationToken);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BotCallbackHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.BotCallbackHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function BotCallbackHandler(turnContext As ITurnContext, cancellationToken As CancellationToken) As Task " />
+  <TypeSignature Language="F#" Value="type BotCallbackHandler = delegate of ITurnContext * CancellationToken -&gt; Task" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+    <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="turnContext">The turn context.</param>
+    <param name="cancellationToken">The task cancellation token.</param>
+    <summary>
+            The callback delegate for application code.
+            </summary>
+    <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>
