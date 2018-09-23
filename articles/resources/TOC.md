@@ -5,8 +5,8 @@
 ## [Customize template](../v4sdk/bot-builder-enterprise-template-customize.md)
 ## [Deploy template](../v4sdk/bot-builder-enterprise-template-deployment.md)
 ## [Analytics](../v4sdk/bot-builder-enterprise-template-powerbi.md)
-# Custom assistant
-## [Overview](../v4sdk/bot-builder-custom-assistant-introduction.md)
+# Virtual Assistant
+## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
 # [FAQ](../bot-service-resources-bot-framework-faq.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
