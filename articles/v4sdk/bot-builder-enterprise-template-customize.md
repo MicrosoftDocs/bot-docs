@@ -22,7 +22,7 @@ you can easily customize your bot based on your scenario and needs. The goal of 
 
 The folder structure of your Bot is shown below and represents our recommended best practice for structuring your Bot project and processing incoming messages.
 
-    | - IPABot.bot          // The .bot file containing all of your Bot configuration including dependencies
+    | - YourBot.bot         // The .bot file containing all of your Bot configuration including dependencies
     | - README.md           // README file containing links to documentation
     | - Program.cs          // Default Program.cs file
     | - Startup.cs          // Core Bot Initialisation including Bot Configuration LUIS, Dispatcher, etc. 

@@ -34,8 +34,8 @@ az extension add -n botservice
 
 ## Configuration
 
-1. Retrieve your LUIS Authoring Key
-   - Go to https://www.luis.ai and signin.
+- Retrieve your LUIS Authoring Key
+   - Review [this](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-regions) documentation page for the correct LUIS portal for the region you plan to deploy to. 
    - Once signed in click on your name in the top right hand corner.
    - Choose Settings and make a note of the Authoring Key for the next step.
 
@@ -65,11 +65,30 @@ Your new Bot project has a deployment recipe enabling the `msbot clone services`
 
 The README.md within your created project contains an example msbot clone services command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope).
 
+> Ensure the LUIS authoring key retrieved on the previous step is for the region you specify below.
+
 ```shell
 msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\msbotClone" --location "westus"
 ```
 
-Once this is complete ensure that you make a note of the .bot file secret provided as this will be required for later steps. At this time, take the secret and update the `botFileSecret` entry in your `appsettings.json` file. This will ensure your Bot can decrypt the secrets.
+The msbot tool will outline the deployment plan including location and SKU. Ensure you review before proceeding.
+
+![Deployment Confirmation](./media/enterprise-template/EnterpriseBot-ConfirmDeployment.png)
+
+>After deployment is complete, it's **imperative** that you make a note of the .bot file secret provided as this will be required for later steps.
+
+- Update your `appsettings.json` file with the newly created .bot file name and .bot file secret.
+- Run the following command and retrieve the InstrumentationKey for your Application Insights instance and update InstrumentationKey in your `appsettings.json` file.
+
+`msbot list --bot YOURBOTFILE.bot --secret YOUR_BOT_SECRET`
+
+        {
+          "botFilePath": ".\\YOURBOTFILE.bot",
+          "botFileSecret": "YOUR_BOT_SECRET",
+          "ApplicationInsights": {
+            "InstrumentationKey": "YOUR_INSTRUMENTATION_KEY"
+          }
+        }
 
 ## Testing
 
@@ -79,10 +98,10 @@ Then type ```hi``` to verify everything is working.
 
 ## Deploy to Azure
 
-Testing can be performed end to end locally, when your ready to deploy your Bot to Azure for additional testing you can use the following command to publish the source code
+Testing can be performed end to end locally. When your ready to deploy your Bot to Azure for additional testing you can use the following command to publish the source code, this can be run whenever you wish to push source code updates.
 
 ```shell
-az bot publish --name "my-bot-name" --resource-group "my-resource-group"
+az bot publish -g YOUR_BOT_NAME -n YOUR_BOT_NAME --proj-file YOUR_BOT_NAME.csproj --sdk-version v4
 ```
 
 ## Enabling more scenarios
@@ -91,7 +110,7 @@ Your Bot project provides additional functionality which you can enable through 
 
 ### Authentication
 
-To enable authentication follow these steps after cnfiguring an Authentication Connect Name within the Settings of your Bot in the Azure Portal. Further information can be found in the [documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0).
+To enable authentication follow these steps after configuring an Authentication Connection Name within the Settings of your Bot in the Azure Portal. Further information can be found in the [documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0).
 
 Register the `SignInDialog` in the MainDialog constructor:
     
