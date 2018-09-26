@@ -306,7 +306,7 @@ constructor (conversationState, userState) {
 
 When it comes time to save user data, you have some choices. The SDK provides a few state objects with different scopes that you can choose from. Here, we're using conversation state to manage the dialog state object and user state to manage user data.
 
-For more information about state in general, see [state and storage](bot-builder-storage-concept.md) and [how to manage conversation and user state](bot-builder-howto-v4-state.md).
+For more information about storage and state in general, see [storage](bot-builder-howto-v4-storage.md) and [how to manage conversation and user state](bot-builder-howto-v4-state.md).
 
 ## Create a greeting dialog
 

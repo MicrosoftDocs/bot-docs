@@ -22,6 +22,9 @@ Your bot may already be integrated with a LUIS app, or you can choose to create 
 > [!IMPORTANT]
 > Speech priming only applies to bots configured for the Cortana channel or the Web Chat channel.
 
+> [!IMPORTANT]
+> Priming is not supported from non U.S. regional LUIS apps including: eu.luis.ai and au.luis.ai
+
 ## Change the list of LUIS apps your bot uses
 
 To change the list of LUIS apps used by Bing Speech with your bot, do the following:

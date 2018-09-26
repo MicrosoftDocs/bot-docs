@@ -42,7 +42,7 @@ Microsoft Bot Service cards are programmable objects containing standardized col
 
 Cards allow you to design your bot once, and have it work across a variety of channels. However, not all card types are fully supported across all available channels. 
 
-Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md). Sample code can also be found here for cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-js-sample-code), and suggested actions: [C#](https://aka.ms/bot-suggested-actions-code)/[JS](https://aka.ms/bot-suggested-actions-js-code).
+Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md). Sample code can also be found here for cards: [C#](https://aka.ms/bot-cards-sample-code-cs)/[JS](https://aka.ms/bot-cards-sample-code-js) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-js-sample-code), and suggested actions: [C#](https://aka.ms/bot-suggested-actions-code)/[JS](https://aka.ms/bot-suggested-actions-js-code).
 
 
 

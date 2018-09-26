@@ -61,7 +61,8 @@ For more information about using `channelData`, see the [Node.js](https://github
 ::: moniker-end
 
 ::: moniker range="azure-bot-service-4.0"
-For more information about using `channelData`, see the [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ChannelData) sample or [.NET](~/v4sdk/bot-builder-channeldata.md) documentation.
+For more information about using `channelData`,
+see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
 ::: moniker-end
 
 ## Additional resources

@@ -70,4 +70,4 @@ For event handlers, not calling _next_ means that the event is cancelled, which 
 > If you do short-circuit a response event, such as `SendActivities`, be sure it's the behavior you intend. Otherwise, it can result in difficult to fix bugs.
 
 ## Additional resources
-You can take a look at the transcript logger middleware mentioned in this article on [GitHub](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs).
+You can take a look at the transcript logger middleware, as implemented in the Bot Builder SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs)|[JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].

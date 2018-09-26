@@ -20,10 +20,10 @@ This guide can help you to troubleshoot authentication issues with your bot by e
 
 Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service. 
 
-If you have not yet done so, [register your bot](~/bot-service-quickstart-registration.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication. 
+If you have not yet done so, [deploy your bot to azure](~/bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication. 
 
 > [!NOTE]
-> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+> To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ## Step 1: Disable security and test on localhost
 

@@ -57,21 +57,7 @@ The **Microsoft.Bot.Builder** npm package.
 
 ## Notes on the sample code
 
-Code for this article is taken from the [proactive messages sample (#17)](https://github.com/Microsoft/BotBuilder-Samples/).
-
-<!--TODO: At Ignite, add live links to the samples.
-
-# [C#](#tab/csharp)
-
-See [BotBuilder-Samples/csharp_dotnetcore/17.Proactive-Messages/](https://github.com/Microsoft/BotBuilder-Samples/tree/v4/csharp_dotnetcore/17.Proactive-Messages)
-
-# [JavaScript](#tab/javascript)
-
-See [BotBuilder-Samples/javascript_nodejs/17.proactive-messages/](https://github.com/Microsoft/BotBuilder-Samples/tree/v4/javascript_nodejs/17.proactive-messages)
-
----
-
--->
+Code for this article is taken from the proactive messages sample [[C#](https://aka.ms/proactive-sample-cs)|[JS](https://aka.ms/proactive-sample-js)].
 
 This sample models user tasks that can take an indeterminate amount of time. The bot stores information about the task, tells the user that it will get back to them when the task finishes, and lets the conversation proceed. When the task completes, the bot sends the confirmation message proactively on the original conversation.
 
@@ -199,91 +185,91 @@ namespace Microsoft.BotBuilderSamples
 
 1. The set of using statements is expanded to reference these namespaces:
 
-```csharp
-using System;
-using System.Linq;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.BotFramework;
-using Microsoft.Bot.Builder.Integration;
-using Microsoft.Bot.Builder.Integration.AspNet.Core;
-using Microsoft.Bot.Builder.TraceExtensions;
-using Microsoft.Bot.Configuration;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-```
+    ```csharp
+    using System;
+    using System.Linq;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Bot.Builder;
+    using Microsoft.Bot.Builder.BotFramework;
+    using Microsoft.Bot.Builder.Integration;
+    using Microsoft.Bot.Builder.Integration.AspNet.Core;
+    using Microsoft.Bot.Builder.TraceExtensions;
+    using Microsoft.Bot.Configuration;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Options;
+    ```
 
 1. The `ConfigureServices` method registers the bot, including error handling and state management. It also registers the bot's endpoint service and the job state accessor.
 
-```csharp
-/// <summary>
-/// This method gets called by the runtime. Use this method to add services to the container.
-/// </summary>
-/// <param name="services">The <see cref="IServiceCollection"/> specifies the contract for a collection of service descriptors.</param>
-/// <seealso cref="IStatePropertyAccessor{T}"/>
-/// <seealso cref="https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/dependency-injection"/>
-/// <seealso cref="https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0"/>
-public void ConfigureServices(IServiceCollection services)
-{
-    // Register the proactive bot.
-    services.AddBot<ProactiveBot>(options =>
+    ```csharp
+    /// <summary>
+    /// This method gets called by the runtime. Use this method to add services to the container.
+    /// </summary>
+    /// <param name="services">The <see cref="IServiceCollection"/> specifies the contract for a collection of service descriptors.</param>
+    /// <seealso cref="IStatePropertyAccessor{T}"/>
+    /// <seealso cref="https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/dependency-injection"/>
+    /// <seealso cref="https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0"/>
+    public void ConfigureServices(IServiceCollection services)
     {
-        options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
-
-        // Set up error handling. (Trace output goes to the Emulator log, but not to the user.)
-        options.OnTurnError = async (context, exception) =>
+        // Register the proactive bot.
+        services.AddBot<ProactiveBot>(options =>
         {
-            await context.TraceActivityAsync("Proactive bot exception", exception);
-            await context.SendActivityAsync("Sorry, it looks like something went wrong!");
-        };
+            options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
 
-        // The Memory Storage used here is for local bot debugging only. When the bot
-        // is restarted, everything stored in memory will be gone.
-        IStorage dataStore = new MemoryStorage();
+            // Set up error handling. (Trace output goes to the Emulator log, but not to the user.)
+            options.OnTurnError = async (context, exception) =>
+            {
+                await context.TraceActivityAsync("Proactive bot exception", exception);
+                await context.SendActivityAsync("Sorry, it looks like something went wrong!");
+            };
 
-        // Create Job State object.
-        // The Job State object is where we persist anything at the job-scope.
-        // It's independent of any user or conversation.
-        var jobState = new JobState(dataStore);
-        options.State.Add(jobState);
-    });
+            // The Memory Storage used here is for local bot debugging only. When the bot
+            // is restarted, everything stored in memory will be gone.
+            IStorage dataStore = new MemoryStorage();
 
-    // Validate .bot file endpoint.
-    services.AddSingleton(sp =>
-    {
-        var config = BotConfiguration.Load(@".\ProactiveBot.bot");
-        var endpointService = (EndpointService)config.Services.First(s => s.Type == "endpoint")
-            ?? throw new InvalidOperationException(".bot file 'endpoint' must be configured prior to running.");
+            // Create Job State object.
+            // The Job State object is where we persist anything at the job-scope.
+            // It's independent of any user or conversation.
+            var jobState = new JobState(dataStore);
+            options.State.Add(jobState);
+        });
 
-        return endpointService;
-    });
-
-    // Create and register the state accessors for use with this bot.
-    // Accessors created here are passed into the IBot-derived class on every turn.
-    services.AddSingleton(sp =>
-    {
-        var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value
-            ?? throw new InvalidOperationException(
-                "BotFrameworkOptions must be configured prior to setting up the state accessors.");
-
-        var jobState = options.State.OfType<JobState>().FirstOrDefault();
-        if (jobState == null)
+        // Validate .bot file endpoint.
+        services.AddSingleton(sp =>
         {
-            throw new InvalidOperationException("JobState must be defined and added before adding conversation-scoped state accessors.");
-        }
+            var config = BotConfiguration.Load(@".\ProactiveBot.bot");
+            var endpointService = (EndpointService)config.Services.First(s => s.Type == "endpoint")
+                ?? throw new InvalidOperationException(".bot file 'endpoint' must be configured prior to running.");
 
-        // Create the custom state accessor.
-        // State accessors enable other components to read and write individual properties of state.
-        return new ProactiveAccessors(jobState)
+            return endpointService;
+        });
+
+        // Create and register the state accessors for use with this bot.
+        // Accessors created here are passed into the IBot-derived class on every turn.
+        services.AddSingleton(sp =>
         {
-            // Create the state property accessor for job data.
-            JobLogData = jobState.CreateProperty<JobLog>(ProactiveAccessors.JobLogDataName),
-        };
-    });
-}
-```
+            var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value
+                ?? throw new InvalidOperationException(
+                    "BotFrameworkOptions must be configured prior to setting up the state accessors.");
+
+            var jobState = options.State.OfType<JobState>().FirstOrDefault();
+            if (jobState == null)
+            {
+                throw new InvalidOperationException("JobState must be defined and added before adding conversation-scoped state accessors.");
+            }
+
+            // Create the custom state accessor.
+            // State accessors enable other components to read and write individual properties of state.
+            return new ProactiveAccessors(jobState)
+            {
+                // Create the state property accessor for job data.
+                JobLogData = jobState.CreateProperty<JobLog>(ProactiveAccessors.JobLogDataName),
+            };
+        });
+    }
+    ```
 
 # [JavaScript](#tab/javascript)
 
@@ -396,7 +382,10 @@ The bot is designed to:
 - Simulate a job completed event in response to a `done <jobIdentifier>` message.
 - Send a proactive message to the user, using the original conversation, when the job completes.
 
-We do not show how to implement a system that can send event activities to our bot. See [how to create a Direct Line bot and client](bot-builder-howto-direct-line.md) for information on how to do so.
+We do not show how to implement a system that can send event activities to our bot.
+<!--TODO: DirectLine--Add back in once the DirectLine topic is added back to the TOC.
+See [how to create a Direct Line bot and client](bot-builder-howto-direct-line.md) for information on how to do so.
+-->
 
 # [C#](#tab/csharp)
 

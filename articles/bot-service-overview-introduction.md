@@ -110,7 +110,7 @@ Included within the Azure Bot Service are a variety of bot building tools, inclu
 With the Bot Builder SDK, developers can connect their bot to an array of useful Azure services tuned to work in the context
 of conversational software, such as:
 
-* [LUIS](https://luis.ai) adds natural language understanding to your bot.
+* [LUIS](https://www.luis.ai) adds natural language understanding to your bot.
 * [QnaMaker](https://qnamaker.ai) helps your bot provide answers to common questions.
 * Your bot can store data in [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/) or [Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/).
 
