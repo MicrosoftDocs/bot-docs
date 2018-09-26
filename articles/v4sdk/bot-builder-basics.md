@@ -23,7 +23,7 @@ Two Activity types illustrated here are: ConversationUpdate and Message.
 
 Activities belonging to the same conversation all include the same ConversationReference details along with a few other tracking identifiers. Without these fields correctly set in the Activity, the Bot Framework Service won’t know what to do with it, and it will get dropped or rejected.
 
-ConversationUpdate is sent from the Bot Framework Service when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two ConversationUpdate Activities. One for the user joining the conversation and one for the bot joining. These ConversationUpdate Activities are easily distinguished these because the sender id and the recipient id will be the same for the bot joining.
+ConversationUpdate is sent from the Bot Framework Service when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two ConversationUpdate Activities. One for the user joining the conversation and one for the bot joining. These ConversationUpdate Activities are easily distinguished because the MembersAdded property will contain an Id that matches the Recipient Id for the ConversationUpdate Activity corresponding to the bot joining.
 
 The Message Activity carries conversation information between the parties. In an echo bot example, the Message Activities are carrying simple text. The client will render this text content. Alternatively, the Message Activity might carry text to be spoken, suggested actions or cards to be displayed. 
 
