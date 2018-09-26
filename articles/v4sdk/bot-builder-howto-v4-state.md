@@ -34,7 +34,7 @@ In designing a conversation flow, it is useful to define a state flag to direct 
 
 # [C#](#tab/csharp)
 ### Conversation and User state
-You can use [Echo Bot With Counter sample](https://github.com/Microsoft/BotBuilder-Samples) as the start point for this how-to. First, create `TopicState` class to manage the current topic of conversation in `TopicState.cs` as shown below:
+You can use [Echo Bot With Counter sample](https://aka.ms/EchoBot-With-Counter) as the start point for this how-to. First, create `TopicState` class to manage the current topic of conversation in `TopicState.cs` as shown below:
 
 ```csharp
 public class TopicState
@@ -188,7 +188,7 @@ if (turnContext.Activity.Type == ActivityTypes.Message)
 
 ### Conversation and User state
 
-You can use [Echo Bot With Counter sample](https://github.com/Microsoft/BotBuilder-Samples) as the starting point for this how-to. This sample already uses the `ConversationState` to store the message count. We will need to add a `TopicStates` object to track our conversation state and `UserState` to track user information in a `userProfile` object. 
+You can use [Echo Bot With Counter sample](https://aka.ms/EchoBot-With-Counter-JS) as the starting point for this how-to. This sample already uses the `ConversationState` to store the message count. We will need to add a `TopicStates` object to track our conversation state and `UserState` to track user information in a `userProfile` object. 
 
 In the main bot's `index.js` file, add the `UserState` to the require list:
 
