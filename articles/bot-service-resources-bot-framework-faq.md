@@ -119,7 +119,7 @@ Direct Line is suitable for:
 * Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 * Service-to-service applications
 
-[DirectLineAPI]: http://docs.botframework.com/en-us/restapi/directline/
+[DirectLineAPI]: https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
 

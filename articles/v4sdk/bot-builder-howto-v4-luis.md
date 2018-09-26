@@ -45,7 +45,7 @@ First, set up a _LUIS app_, which is a service you create at [luis.ai](https://w
 
 For this example, you'll just use a demo LUIS app that can recognize Help, Cancel, and Weather intents; the app ID is already in the sample code. You will need to have a Cognitive Services key that you can get by logging in to [luis.ai](https://www.luis.ai) and copying the key from **User settings** > **Authoring Key**.
 
-> [!NOTE] 
+> [!NOTE]
 > To create your own copy of the public LUIS app used in this example, copy the [JSON](https://github.com/Microsoft/LUIS-Samples/blob/master/examples/simple-bot-example/FirstSimpleBotExample.json) LUIS file. Then [import](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/create-new-app#import-new-app) the LUIS app, [train](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-train), and [publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) it. Replace the public app ID in the sample code with the app ID of your new LUIS app.
 
 
@@ -94,7 +94,7 @@ The singleton returns a new `LuisRecognizer` to the constructor.
 
 Paste in your subscription key from [luis.ai](https://www.luis.ai) in place of `<subscriptionKey>`. This is most readily found if you click on your account name on the top right, and go to **Settings**, where it is called your **Authoring Key**.
 
-> [!NOTE] 
+> [!NOTE]
 > If you're using your own LUIS app instead of the public one, you can get the ID, subscription key, and URL for your LUIS app from [luis.ai](https://www.luis.ai). These can be found under **Publish** and **Settings** tabs on your app's page.
 >
 >You can find the base URL to use in your `LuisModel` by logging into the [luis.ai](https://www.luis.ai), going to the **Publish** tab, and looking at the **Endpoint** column under **Resources and Keys**. The base URL is the portion of the **Endpoint URL** before the subscription ID and other parameters.
@@ -129,7 +129,7 @@ public class EchoBot : IBot
 
 First follow the steps in JavaScript [quickstart](../javascript/bot-builder-javascript-quickstart.md) to create a bot. Here we are hardcoding our LUIS information into our bot, but it can be pulled from the `.bot` file as is done in the sample linked at the end of this article.
 
-In the new bot, edit **app.js** to require the [LuisRecognizer](https://github.com/Microsoft/botbuilder-js/tree/master/doc/botbuilder-ai/classes/botbuilder_ai.luisrecognizer.md) class and create an instance for your LUIS model:
+In the new bot, edit **app.js** to require the `LuisRecognizer` class and create an instance for your LUIS model:
 
 ```javascript
 const { ActivityTypes } = require('botbuilder');
@@ -185,7 +185,7 @@ Your bot gets results from LUIS by calling the LUIS recognizer.
 
 # [C#](#tab/cs)
 
-To have your bot simply send a reply based on the intent that the LUIS app detected, call the the [LuisRecognizer](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.luisrecognizer), to get a [RecognizerResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.core.extensions.recognizerresult). This can be done within your code whenever you need to get the LUIS intent.
+To have your bot simply send a reply based on the intent that the LUIS app detected, call the the `LuisRecognizer`, to get a `RecognizerResult`. This can be done within your code whenever you need to get the LUIS intent.
 
 ```cs
 using System.Threading.Tasks;
@@ -252,7 +252,7 @@ Any entities recognized will be returned as a map of entity names to values and 
 
 # [JavaScript](#tab/js)
 
-Edit the code for listening to incoming activity, so that it calls [LuisRecognizer](https://docs.microsoft.com/en-us/javascript/api/botbuilder-ai/luisrecognizer) to get a [RecognizerResult](https://docs.microsoft.com/en-us/javascript/api/botbuilder-core-extensions/recognizerresult).
+Edit the code for listening to incoming activity, so that it calls `LuisRecognizer` to get a `RecognizerResult`.
 
 ```javascript
 const { ActivityTypes } = require('botbuilder');
@@ -305,13 +305,13 @@ Try running the bot in the Bot Framework Emulator, and say things like "weather"
 
 ## Extract entities
 
-Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, for a weather bot, the LUIS app might be able to extract the location for the weather report from the user's message. 
+Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, for a weather bot, the LUIS app might be able to extract the location for the weather report from the user's message.
 
 A common way to structure your conversation is to identify any entities in the user's message, and prompt for any of the required entities that are not found. Then, the subsequent steps handle the response to the prompt.
 
 # [C#](#tab/cs)
 
-Let's say the message from the user was "What's the weather in Seattle"? The [LuisRecognizer](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.luisrecognizer) gives you a [RecognizerResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.core.extensions.recognizerresult) with an [`Entities` property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.core.extensions.recognizerresult#properties-) that has this structure:
+Let's say the message from the user was "What's the weather in Seattle"? The `LuisRecognizer` gives you a `RecognizerResult` with an `Entities` property that has this structure:
 
 ```json
 {
@@ -350,7 +350,7 @@ When gathering information like entities from multiple steps in a conversation, 
 
 # [JavaScript](#tab/js)
 
-Let's say the message from the user was "What's the weather in Seattle"? The [LuisRecognizer](https://docs.microsoft.com/en-us/javascript/api/botbuilder-ai/luisrecognizer) gives you a [RecognizerResult](https://docs.microsoft.com/en-us/javascript/api/botbuilder-core-extensions/recognizerresult) with an `entities` property that has this structure:
+Let's say the message from the user was "What's the weather in Seattle"? The `LuisRecognizer` gives you a `RecognizerResult` with an `entities` property that has this structure:
 
 ```json
 {
@@ -390,6 +390,7 @@ function findEntities(entityName, entityResults) {
 When gathering information like entities from multiple steps in a conversation, it can be helpful to save the information you need in your state. If an entity is found, it can be added to the appropriate state field. In your conversation if the current step already has the associated field completed, the step to prompt for that information can be skipped.
 
 ## Additional resources
+
 For a sample using LUIS, check out the projects for [[C#](https://aka.ms/cs-luis-sample)] or [[JavaScript](https://aka.ms/js-luis-sample)].
 
 ## Next steps

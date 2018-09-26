@@ -1,8 +1,8 @@
 # Implement channel-specific functionality
 
-Some channels provide features that cannot be implemented by using only [message text and attachments](../dotnet/bot-builder-dotnet-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the `Activity` object's `ChannelData` property. For example, your bot can use the `ChannelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+Some channels provide features that cannot be implemented by using only message text and attachments. To implement channel-specific functionality, you can pass native metadata to a channel in the activity object's _channel data_ property. For example, your bot can use the channel data property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
-This article describes how to use a message activity's `ChannelData` property to implement this channel-specific functionality:
+This article describes how to use a message activity's channel data property to implement this channel-specific functionality:
 
 | Channel | Functionality |
 |----|----|
@@ -10,49 +10,62 @@ This article describes how to use a message activity's `ChannelData` property to
 | Slack | Send full fidelity Slack messages |
 | Facebook | Send Facebook notifications natively |
 | Telegram | Perform Telegram-specific actions, such as sharing a voice memo or a sticker |
-| Kik | Send and receive native Kik messages | 
+| Kik | Send and receive native Kik messages |
 
 > [!NOTE]
-> The value of an `Activity` object's `ChannelData` property is a JSON object. 
-> Therefore, the examples in this article show the expected format of the 
-> `channelData` JSON property in various scenarios. 
-> To create a JSON object using .NET, use the `JObject` (.NET) class. 
+> The value of an activity object's channel data property is a JSON object.
+> Therefore, the examples in this article show the expected format of the
+> `channelData` JSON property in various scenarios.
+> To create a JSON object using .NET, use the `JObject` (.NET) class.
 
 ## Create a custom Email message
 
-To create an email message, set the `Activity` object's `ChannelData` property 
-to a JSON object that contains these properties: 
+To create an email message, set the activity object's channel data property
+to a JSON object that contains these properties:
 
 | Property | Description |
 |----|----|
+| bccRecipients | A semicolon (;) delimited string of email addresses to add to the message's Bcc (blind carbon copy) field. |
+| ccRecipients | A semicolon (;) delimited string of email addresses to add to the message's Cc (carbon copy) field. |
 | htmlBody | An HTML document that specifies the body of the email message. See the channel's documentation for information about supported HTML elements and attributes. |
 | importance | The email's importance level. Valid values are **high**, **normal**, and **low**. The default value is **normal**. |
 | subject | The email's subject. See the channel's documentation for information about field requirements. |
+| toRecipients | A semicolon (;) delimited string of email addresses to add to the message's To field. |
 
 > [!NOTE]
-> Messages that your bot receives from users via the Email channel may 
-> contain a `ChannelData` property that is populated with a JSON object like the one described above.
+> Messages that your bot receives from users via the Email channel may
+> contain a channel data property that is populated with a JSON object like the one described above.
 
 This snippet shows an example of the `channelData` property for a custom email message.
 
 ```json
 "channelData": {
-    "htmlBody" : "<html><body style=\"font-family: Calibri; font-size: 11pt;\">This is the email body!</body></html>",
-    "subject":"This is the email subject",
-    "importance":"high"
+    "type": "message",
+    "locale": "en-Us",
+    "channelID": "email",
+    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
+    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
+    "conversation": { "id": "123123123123", "topic": "awesome chat" },
+    "channelData":
+    {
+        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
+        "subject": "Super awesome message subject",
+        "importance": "high",
+        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
+    }
 }
 ```
 
 ## Create a full-fidelity Slack message
 
-To create a full-fidelity Slack message, 
-set the `Activity` object's `ChannelData` property to a JSON object that specifies 
-<a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>, 
-<a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or 
-<a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>. 
+To create a full-fidelity Slack message,
+set the activity object's channel data property to a JSON object that specifies
+<a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>,
+<a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or
+<a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>.
 
 > [!NOTE]
-> To support buttons in Slack messages, you must enable **Interactive Messages** when you 
+> To support buttons in Slack messages, you must enable **Interactive Messages** when you
 > [connect your bot](../bot-service-manage-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
@@ -111,11 +124,11 @@ This snippet shows an example of the `channelData` property for a custom Slack m
 ```
 
 When a user clicks a button within a Slack message, your bot will receive a response message
-in which the `ChannelData` property is populated with a `payload` JSON object. 
-The `payload` object specifies contents of the original message, 
-identifies the button that was clicked, and identifies the user who clicked the button. 
+in which the channel data property is populated with a `payload` JSON object.
+The `payload` object specifies contents of the original message,
+identifies the button that was clicked, and identifies the user who clicked the button.
 
-This snippet shows an example of the `channelData` property in the message that a bot receives 
+This snippet shows an example of the `channelData` property in the message that a bot receives
 when a user clicks a button in the Slack message.
 
 ```json
@@ -134,11 +147,11 @@ when a user clicks a button in the Slack message.
 }
 ```
 
-Your bot can reply to this message in the [normal manner](../dotnet/bot-builder-dotnet-connector.md#create-reply), 
-or it can post its response directly to the endpoint that is specified by 
+Your bot can reply to this message in the normal manner,
+or it can post its response directly to the endpoint that is specified by
 the `payload` object's `response_url` property.
-For information about when and how to post a response to the `response_url`, see 
-<a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>. 
+For information about when and how to post a response to the `response_url`, see
+<a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>.
 
 You can create dynamic buttons using the following code:
 ```cs
@@ -260,7 +273,7 @@ private async Task DemoMenuAsync(IDialogContext context)
 ## Create a Facebook notification
 
 To create a Facebook notification, 
-set the `Activity` object's `ChannelData` property to a JSON object that specifies these properties: 
+set the activity object's channel data property to a JSON object that specifies these properties:
 
 | Property | Description |
 |----|----|
@@ -290,7 +303,7 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 
 To create a message that implements Telegram-specific actions, 
 such as sharing a voice memo or a sticker, 
-set the `Activity` object's `ChannelData` property to a JSON object that specifies these properties: 
+set the activity object's channel data property to a JSON object that specifies these properties: 
 
 | Property | Description |
 |----|----|
@@ -365,8 +378,7 @@ This snippet shows an example of a `channelData` property that specifies an arra
 
 ## Create a native Kik message
 
-To create a native Kik message, 
-set the `Activity` object's `ChannelData` property to a JSON object that specifies this property: 
+To create a native Kik message, set the activity object's channel data property to a JSON object that specifies this property:
 
 | Property | Description |
 |----|----|
@@ -397,9 +409,8 @@ This snippet shows an example of the `channelData` property for a native Kik mes
     ]
 }
 ```
- 
+
 ## Additional resources
 
-- [Activities overview](../dotnet/bot-builder-dotnet-activities.md)
-- [Create messages](../dotnet/bot-builder-dotnet-create-messages.md)
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
+- [Entities and activity types](../bot-service-activities-entities.md)
+- [Bot Framework Activity schema](https://github.com/Microsoft/BotBuilder/blob/hub/specs/botframework-activity/botframework-activity.md)

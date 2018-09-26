@@ -1,5 +1,5 @@
 ---
-title: Prompt users for input using the Dailogs library | Microsoft Docs
+title: Prompt users for input using the Dialogs library | Microsoft Docs
 description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK for Node.js.
 keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: v-ducvo
@@ -7,7 +7,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 4/10/2018
+ms.date: 9/25/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Prompt users for input using the Dialogs library
@@ -138,12 +138,12 @@ In the app.js file, add the following.
 ```javascript
 // Import components from the dialogs library.
 const { DialogSet } = require("botbuilder-dialogs");
-// Import components from the main Bot Builder libary.
+// Import components from the main Bot Builder library.
 const { ConversationState, MemoryStorage } = require('botbuilder');
 
 // Set up a memory storage system to store information.
 const storage = new MemoryStorage();
-// We'll use ConverstationState to track the state of the dialogs.
+// We'll use ConversationState to track the state of the dialogs.
 const conversationState = new ConversationState(storage);
 // Create a property used to track state.
 const dialogState = conversationState.createProperty('dialogState');
@@ -166,7 +166,7 @@ For example, the following dialog prompts the user for their name, and then uses
 
 Each prompt you use in your dialog is also given a name, used by the dialog or your bot to access the prompt. In all of these samples, we are exposing the prompt IDs as constants.
 
-Within your bot constructor, add definitions for your two step waterfall and the prompt for the dialog to use. Here we're adding them as independent functions, but they can be defined as an inline lambda if prefered.
+Within your bot constructor, add definitions for your two step waterfall and the prompt for the dialog to use. Here we're adding them as independent functions, but they can be defined as an inline lambda if preferred.
 
 ```csharp
  public MultiTurnPromptsBot(BotAccessors accessors)
@@ -329,7 +329,7 @@ When you use a prompt within a dialog step, you can also provide prompt options,
 
 Specifying a reprompt string is useful when user input can fail to satisfy a prompt, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. The number prompt can interpret a wide variety of input, such as "twelve" or "one quarter", as well as "12" and "0.25".
 
-The local is an optional paramater on certain prompts, like **NumberPrompt**. This can help the prompt parse input more accurately, but is not required.
+The local is an optional parameter on certain prompts, like **NumberPrompt**. This can help the prompt parse input more accurately, but is not required.
 
 # [C#](#tab/csharp)
 
@@ -475,7 +475,7 @@ Likewise, if you want to validate a **DatetimePrompt** response for a date and t
         {
             var resolution = prompt.Recognized.Value.First();
 
-            // Verify that the Timex recieved is within the desired bounds, compared to today.
+            // Verify that the Timex received is within the desired bounds, compared to today.
             var now = DateTime.Now;
             DateTime.TryParse(resolution.Value, out var time);
 
@@ -495,13 +495,13 @@ Likewise, if you want to validate a **DatetimePrompt** response for a date and t
 _dialogs.Add(new DateTimePrompt("date", DateTimeValidatorAsync));
 ```
 
-Further examples can be found in our [samples repo](https://github.com/Microsoft/BotBuilder-Samples/).
+Further examples can be found in our [samples repo](https://aka.ms/bot-samples-readme).
 
 # [JavaScript](#tab/javascript)
 
 ```JavaScript
 // A date and time prompt with validation for date/time in the future.
-dialogs.add(new .atetimePrompt('dateTimePrompt', async (promptContext) => {
+dialogs.add(new atetimePrompt('dateTimePrompt', async (promptContext) => {
     if (promptContext.recognized.succeeded) {
         const values = promptContext.recognized.value;
         try {
@@ -523,12 +523,12 @@ dialogs.add(new .atetimePrompt('dateTimePrompt', async (promptContext) => {
 }));
 ```
 
-Further examples can be found in our [samples repo](https://github.com/Microsoft/BotBuilder-Samples/).
+Further examples can be found in our [samples repo](https://aka.ms/bot-samples-readme).
 
 ---
 
 > [!TIP]
-> Date time prompts can resolve to a few different dates if the user gives an ambigious answer. Depending on what you're using it for, you may want to check all the resolutions provided by the prompt result, instead of just the first.
+> Date time prompts can resolve to a few different dates if the user gives an ambiguous answer. Depending on what you're using it for, you may want to check all the resolutions provided by the prompt result, instead of just the first.
 
 You can use the similar techniques to validate prompt responses for any of the prompt types.
 
@@ -543,5 +543,3 @@ For a complete sample using some of these prompts, see the the Multi Turn Prompt
 ## Next steps
 
 Now that you know how to prompt a user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
-
-

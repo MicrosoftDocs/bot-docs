@@ -59,4 +59,4 @@ The problem with this approach is that any state updates made from some custom m
 ![state middleware solution](media/bot-builder-dialog-state-solution.png)
 
 ## Additional resources
-For more details, refer to the SDK on GitHub [[C#](https://github.com/Microsoft/BotBuilder-dotnet) | [JavaScript](https://github.com/Microsoft/BotBuilder-js)].
+For more details, refer to the Bot Builder SDK on GitHub [[C#](https://github.com/Microsoft/BotBuilder-dotnet) | [JavaScript](https://github.com/Microsoft/BotBuilder-js)].

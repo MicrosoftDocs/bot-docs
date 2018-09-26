@@ -17,7 +17,7 @@ Entities are a part of an activity, and provide additional information about the
 
 ## Entities
 
-The *Entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a>
+The *entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a>
 objects which allows the exchange of common contextual metadata between the channel and bot.
 
 ### Mention entities
