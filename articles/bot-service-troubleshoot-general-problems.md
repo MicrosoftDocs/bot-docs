@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 09/26/2018
 ---
 
 # Troubleshooting general problems
@@ -14,16 +14,16 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or Visual Studio.
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
 2. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
-3. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this guide: [Troubleshoot a web app in Azure App Service using Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-dotnet-bot-service-troubleshoot-visual-studio/).
+3. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/en-us/blog/understanding-azure-troubleshooting-and-support/).
 4. Rule out [authentication][TroubleshootingAuth] as a possible issue.
 5. Test your bot on Skype. This will help you to validate the end-to-end user experience.
 6. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
 
 ## How can I troubleshoot authentication issues?
 
-For details about troubleshooting authentication issues with your bot, see [Troubleshooting Bot Framework authentication][TroubleshootingAuth].
+For details about troubleshooting authentication issues with your bot, see [troubleshooting][TroubleshootingAuth] Bot Framework authentication.
 
 ## I'm using the Bot Builder SDK for .NET. How can I troubleshoot issues with my bot?
 
@@ -86,7 +86,7 @@ This [sample](https://github.com/Microsoft/BotBuilder/issues/2258#issuecomment-2
 
 ## How do identifiers work in the Bot Framework?
 
-For details about identifiers in the Bot Framework, see the [Bot Framework guide to identifiers][BotFrameworkIDGuide].
+For details about identifiers in the Bot Framework, see the Bot Framework [guide to identifiers][BotFrameworkIDGuide].
 
 ## How can I get access to the user ID?
 
@@ -102,7 +102,7 @@ Bots in development on Kik are allowed 50 subscribers. After 50 unique users hav
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, consider using the [BotAuth NuGet](https://www.nuget.org/packages/BotAuth) library. For Facebook authentication examples, see the [Bot Builder SDK for .NET samples](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples) on GitHub. 
+For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp). 
 
 > [!NOTE] 
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
@@ -137,7 +137,7 @@ From the perspective of your bot, "reactive" means that the user initiates the c
 
 ## How can I send proactive messages to the user?
 
-For examples that show how to send proactive messages, see the [C# samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages) and [Node.js samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages) within the BotBuilder-Samples repository on GitHub.
+For examples that show how to send proactive messages, see the [C# V4 samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages) and [Node.js V4 samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages) within the BotBuilder-Samples repository on GitHub.
 
 ## How can I reference non-serializable services from my C# dialogs?
 
@@ -147,6 +147,8 @@ There are multiple options:
 * Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization. This is the simplest solution.
 * Do not store that dependency, so that it won't be serialized. This solution, while technically feasible, is not recommended.
 * Use the reflection serialization surrogate. This solution may not be feasible in some cases and risks serializing too much.
+
+::: moniker range="azure-bot-service-3.0"
 
 ## Where is conversation state stored?
 
@@ -167,6 +169,8 @@ If you want to store this data within your data centers, you can provide a custo
 > [!IMPORTANT]
 > The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
 
+::: moniker-end
+
 ## What is an ETag?  How does it relate to bot data bag storage?
 
 An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control). The bot data bag storage uses ETags to prevent conflicting updates to the data. An ETag error with HTTP status code 412 "Precondition Failed" indicates that there were multiple "read-modify-write" sequences executing concurrently for that bot data bag.
@@ -183,7 +187,11 @@ The Connector's `IBotState` service is used to store the bot data bags (i.e., th
 ## How can I fix "Precondition Failed" (412) or "Conflict" (409) errors?
 
 These errors indicate that your bot processed multiple messages for the same conversation at once. If your bot is connected to services that require precisely ordered messages,
-you should consider locking the conversation state to make sure messages are not processed in parallel. The Bot Builder SDK for .NET provides a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
+you should consider locking the conversation state to make sure messages are not processed in parallel. 
+
+::: moniker range="azure-bot-service-3.0"
+
+The Bot Builder SDK for .NET provides a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
 pessimistically serialize the handling of a single conversations with an in-memory semaphore. You could extend this implementation to use a Redis lease, scoped by the conversation address.
 
 If your bot is not connected to external services or if processing messages in parallel from the same conversation is acceptable, you can add this code to ignore any collisions that occur in the Bot State API. This will allow the last reply to set the conversation state.
@@ -197,15 +205,18 @@ builder
     .InstancePerLifetimeScope();
 builder.Update(Conversation.Container);
 ```
+::: moniker-end
 
 ## Is there a limit on the amount of data I can store using the State API?
 
 Yes, each state store (i.e., user, conversation, and private bot data bag) may contain up to 64kb of data. For more information, see [Manage State data][StateAPI].
 
+::: moniker range="azure-bot-service-3.0"
+
 ## How do I version the bot data stored through the State API?
 
 > [!IMPORTANT]
-> The Bot Framework State Service API is not recommended for production environments, and may be deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the **Manage state data** topic for [.NET](~/dotnet/bot-builder-dotnet-state.md) or [Node](~/nodejs/bot-builder-nodejs-state.md) implementation.
+> The Bot Framework State Service API is not recommended for production environments or v4 bots, and may be fully deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the [Manage state data](v4sdk/bot-builder-howto-v4-state.md) topic.
 
 The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data. 
 
@@ -214,6 +225,8 @@ The State service enables you to persist progress through the dialogs in a conve
 
 > [!NOTE]
 > If the dialog stack cannot be deserialized correctly, due to serialization format changes or because the code has changed too much, the conversation state will be reset.
+
+::: moniker-end
 
 ## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
 
