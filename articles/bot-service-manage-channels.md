@@ -27,7 +27,7 @@ To configure your bot to connect to a channel, complete the following steps:
 3. In the Bot Service blade, click **Channels** under **Bot Management**.
 4. Click the icon of the channel you want to add to your bot.
 
-![Connect to channels](~/media/channels/connect-to-channels.png)
+![Connect to channels](./media/channels/connect-to-channels.png)
 
 After you've configured the channel, users on that channel can start using your bot.
 
@@ -35,7 +35,7 @@ After you've configured the channel, users on that channel can start using your 
 
 The publishing process is different for each channel.
 
-[!INCLUDE [publishing](~/includes/snippet-publish-to-channel.md)]
+[!INCLUDE [publishing](./includes/snippet-publish-to-channel.md)]
 
 ## Additional resources
 The SDK includes samples that you can use to build bots. Visit [GitHub](https://github.com/Microsoft/BotBuilder-samples) repo to see list of samples.
