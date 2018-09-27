@@ -2,12 +2,12 @@
 title: Handle user interruptions | Microsoft Docs
 description: Learn how to handle user interrupt and direct conversation flow.
 keywords: interrupt, interruptions, switching topic, break
-author: v-ducvo
-ms.author: v-ducvo
+author: ivorb
+ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/17/2018
+ms.date: 09/20/2018
 ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -113,7 +113,7 @@ public class DinnerMenu
 ```javascript
 var dinnerMenu = {
     choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50",
-            "more info", "Process order", "Cancel"],
+            "more info", "Process order", "Help", "Cancel"],
     "Potato Salad - $5.99": {
         Description: "Potato Salad",
         Price: 5.99
@@ -321,7 +321,7 @@ Notice that the code checks for and handles interruptions _first_, then proceeds
 // Helper dialog to repeatedly prompt user for orders
 dialogs.add('orderPrompt', [
     async function(step, orderCart) {
-        // Define a new cart of one does not exists
+        // Define a new cart if one does not exists
         if (!orderCart) {
             // Initialize a new cart
             step.values.orderCart = {
@@ -329,7 +329,7 @@ dialogs.add('orderPrompt', [
                 total: 0
             };
         } else {
-            step.values.orderCart = orderCart;
+            step.values.orderCart = orderCart; // Use an existing cart
         }
         return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
     },
@@ -358,13 +358,13 @@ dialogs.add('orderPrompt', [
             await step.context.sendActivity(msg);
 
             // Ask again
-            return await step.replaceDialog('orderPrompt');
+            return await step.replaceDialog('orderPrompt', step.values.orderCart);
         } else if (choice.value.match(/help/ig)) {
             var msg = `Help: <br/>To make an order, add as many items to your cart as you like then choose the "Process order" option to check out.`
             await step.context.sendActivity(msg);
 
             // Ask again
-            return await step.replaceDialog('orderPrompt');
+            return await step.replaceDialog('orderPrompt', step.values.orderCart);
         } else {
             var choice = dinnerMenu[choice.value];
 
@@ -373,7 +373,7 @@ dialogs.add('orderPrompt', [
                 await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
 
                 // Ask again
-                await step.replaceDialog('orderPrompt');
+                await step.replaceDialog('orderPrompt', step.values.orderCart);
             } else {
                 // Add the item to cart
                 step.values.orderCart.orders.push(choice);
@@ -382,7 +382,7 @@ dialogs.add('orderPrompt', [
                 await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${ step.values.orderCart.total}`);
 
                 // Ask again
-                return await step.replaceDialog('orderPrompt');
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
             }
         }
     }
@@ -480,6 +480,10 @@ else
 ```
 
 # [JavaScript](#tab/jstab)
+
+<!-- @Ben: Where's the "helpDialog" defined? 
+Interrupts at this level are more for "global" scope while interrupts inside a dialog are more for "local" scope and you can't use the same interrupt commands in both places otherwise only the global scoped one will get run. - CashVo
+-->
 
 ```javascript
 // Listen for incoming activity 
