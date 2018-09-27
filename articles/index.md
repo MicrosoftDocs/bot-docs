@@ -7,17 +7,17 @@ manager: kamrani
 ms.topic: landing-page
 layout: LandingPage
 ms.prod: bot-framework
-ms.date: 09/17/2018
+ms.date: 09/27/2018
 ---
 ::: moniker range="azure-bot-service-3.0"
 
 > [!NOTE]
-> This topic applies to the previous version of the SDK (v3). You can find the documentation for current verion of the SDK (v4) [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0)
+> This topic applies to the **previous version of the SDK (v3)**. You can find the documentation for current version of the SDK (v4) [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0)
 
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
     <div class="intro" style="min-width: 200px">
-        <p>Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Builder SDK with support for .NET and Node.js. Learn how to use Bot Service with our quickstarts, tutorials, and samples.</p>
+        <p>Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Builder SDK with support for .NET and Node.js. Learn how to use Bot Service with our quickstart and samples.</p>
     </div>
 <h2 style="margin-top: 18px; margin-bottom: 0px;">5-Minute Quickstarts</h2>
 <div class="ico48Case">
@@ -27,31 +27,16 @@ ms.date: 09/17/2018
             <span>Bot Service</span>
         </a>
     </div>
-    <div class="ico48Link">
-        <a href="/bot-framework/dotnet/bot-builder-dotnet-quickstart">
-            <img src="media/index/logo_csharp.svg" alt="">
-            <span>C&#35;</span>
-        </a>
-    </div>
-    <div class="ico48Link">
-        <a href="/bot-framework/nodejs/bot-builder-nodejs-quickstart">
-            <img src="media/index/logo_nodejs.svg" alt="">
-            <span>Nodejs</span>
-        </a>
-    </div>
 </div>
  
 <h2 style="margin-top: 36px">Samples</h2>
 <p>Quickly get started with building great bots with rich capabilities.</p>
 <ul>
-    <li><a href="/bot-framework/dotnet/bot-builder-dotnet-samples">.NET</a></li>
-    <li><a href="/bot-framework/nodejs/bot-builder-nodejs-samples">Node.js</a></li>
+    <li><a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp">.NET</a></li>
+    <li><a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node">Node.js</a></li>
 </ul>
 <h2 style="margin-top: 36px">Step-by-Step Tutorials</h2>
-<p>Develop bots using Azure Bot Service:</p>
-<ol>
-    <li><a href="/bot-framework/bot-builder-tutorial-authentication">Add authentication to your bot</a></li>
-</ol>
+<p> <a href="/bot-framework/bot-builder-tutorial-authentication">Add authentication to your bot</a> </p>
 <h2 style="margin-top: 36px">Reference</h2>
 <ul class="panelContent cardsD">
     <li>
@@ -62,18 +47,6 @@ ms.date: 09/17/2018
                         <h3>Languages</h3>
                         <p><a href="/dotnet/api/?view=botbuilder-3.12.2.4">.NET</a></p>
                         <p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">Node.js</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>REST</h3>
-                        <p><a href="/Bot-Framework/rest-api/bot-framework-rest-connector-api-reference">REST API Reference</a></p>
                     </div>
                 </div>
             </div>

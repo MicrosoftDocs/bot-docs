@@ -7,12 +7,13 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 09/27/2018
-monikerRange: 'azure-bot-service-3.0'
+monikerRange: 'azure-bot-service-4.0'
 ---
 
-[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
-
 # Add authentication to your bot via Azure Bot Service
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
 This tutorial uses new bot authentication capabilities in Azure Bot Service, providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, and so on. These updates also take steps towards an improved user experience by eliminating the _magic code verification_ for some clients.
 
 Prior to this, your bot needed to include OAuth controllers and login links, store the target client IDs and secrets, and perform user token management.
@@ -28,29 +29,28 @@ The features include:
 - Improvements to the Azure Portal to  add, delete, and configure connection settings to various OAuth identity providers.
 - Support for a variety of out-of-the-box identity providers including Azure AD (both v1 and v2 endpoints), GitHub, and others.
 - Updates to the C# and Node.js Bot Builder SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
-- Samples for how to make a bot that authenticates to Azure AD (v1 and v2 endpoints) and to GitHub.
+- Samples for how to make a bot that authenticates to Azure AD.
 
 You can extrapolate from the steps in this article to add such features to an existing bot. The following are sample bots that demonstrate the new authentication features
 
 | Sample | BotBuilder version | Description |
 |:---|:---:|:---|
-| [AadV1Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV1Bot) | v3 | Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v1 endpoint |
-| [AadV2Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV2Bot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v2 endpoint |
-| [GitHubBot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/GitHubBot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using GitHub |
-| [BasicOAuth](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/Microsoft.Bot.Sample.BasicOAuth) | v3 |  Demonstrates OAuth 2.0 support in the v3 C# SDK |
+| [C# Auth](http://aka.ms/v4csharpauth) | v4 | Demonstrates OAuthCard support in the v4 C# SDK |
+| [C# Auth Graph](http://aka.ms/v4csharpauthgraph) | v4 |  Demonstrates OAuthCard support in the v4 C# SDK, using AAD and the Microsoft Graph API |
+| [Node Auth](http://aka.ms/v4cnodeauth) | v4 |  Demonstrates OAuthCard support in the v4 Node/JavaScript SDK |
 
 > [!NOTE]
-> The authentication features also work with Node.js with BotBuilder v3. However, this article covers just sample C# code.
+> The authentication features also work with with BotBuilder v3. However, this article covers just sample v4 code.
 
 For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help).
 
 ## Overview
 
-This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. <!--verify this info and fix wording--> As part of this process, you'll use code from a GitHub repo, and this tutorial describes how to set that up, including the bot application.
+This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from a GitHub repo, and this tutorial describes how to set that up, including the bot application.
 
-- [Create your bot and an authentication application](#create-your-bot-and-an-authentication-application)
-- [Prepare the bot sample code](#prepare-the-bot-sample-code)
-- [Use the Emulator to test your bot](#use-the-emulator-to-test-your-bot)
+- **Create your bot and an authentication application**
+- **Prepare the bot sample code**
+- **Use the Emulator to test your bot**
 
 To complete these steps, you will need Visual Studio 2017, npm, node, and git installed. You should also have some familiarity with Azure, OAuth 2.0, and bot development.
 
@@ -58,7 +58,7 @@ Once you finish, you will have a bot that can respond to a few simple tasks agai
 
 The final section breaks down some of the bot code
 
-- [Notes on the token retrieval flow](#notes-on-the-token-retrieval-flow)
+- **Notes on the token retrieval flow**
 
 ## Create your bot and an authentication application
 
@@ -208,26 +208,37 @@ You can now use this connection name in your bot code to retrieve user tokens.
 
 ## Prepare the bot sample code
 
-1. Clone the github repository at https://github.com/Microsoft/BotBuilder.
-1. Open and build the solution, `BotBuilder\CSharp\Microsoft.Bot.Builder.sln`.
-1. Close that solution and open, `BotBuilder\CSharp\Samples\Microsoft.Bot.Builder.Samples.sln`.
-1. Set the start up project.
-    - For a bot that uses the v1 Azure AD application, use the `Microsoft.Bot.Sample.AadV1Bot` project.
-    - For a bot that uses the v2 Azure AD application, use the `Microsoft.Bot.Sample.AadV2Bot` project.
-1. Open the `Web.config` file, and modify the app settings as follows:
-    1. Set the `ConnectionName` to the value you used when you configured your bot's OAuth 2.0 connection setting.
-    1. Set the `MicrosoftAppId` value to your bot's app ID.
-    1. Set the `MicosoftAppPassword` value to your bot's secret.
+Depending on the sample you've chosen, you'll be working with either C# or Node.
+
+1. Click on one of the sample links above and clone the github repository.
+1. Follow the instructions on the GitHub readme page for how to run that particular bot (C# or Node).
+1. If you are using the C# Bot-Authentication sample:
+    1. Set the `ConnectionName` variable in the `AuthenticationBot.cs` file to the value you  used when you configured your bot's OAuth 2.0 connection setting.
+    1. Set the `appId` value in the `BotConfiguration.bot` file to your bot's app ID.
+    1. Set the `appPassword` value in the `BotConfiguration.bot` file to your bot's secret.
+1. If you are using the Node/JS Bot-Authentication sample:
+    1. Set the `CONNECTION_NAME` variable in the `bot.js` file to the value you  used when you configured your bot's OAuth 2.0 connection setting.
+    1. Set the `appId` value in the `bot-authentication.bot` file to your bot's app ID.
+    1. Set the `appPassword` value in the `bot-authentication.bot` file to your bot's secret.
 
     > [!IMPORTANT]
     > Depending on the characters in your secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
     ```xml
-    <appSettings>
-        <add key="ConnectionName" value="<your-AAD-connection-name>"/>
-        <add key="MicrosoftAppId" value="<your-bot-appId>" />
-        <add key="MicrosoftAppPassword" value="<your-bot-password>" />
-    </appSettings>
+    {
+        "name": "BotAuthentication",
+        "secretKey": "",
+        "services": [
+            {
+            "appId": "",
+            "id": "http://localhost:3978/api/messages",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "BotAuthentication"
+            }
+        ]
+    }
     ```
 
     If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, look in the **ApplicationSettings** of the Azure app service that was provisioned for your bot on the Azure Portal.
@@ -270,15 +281,24 @@ You will need to install the [Bot Emulator](https://github.com/Microsoft/BotFram
 
 ## Notes on the token retrieval flow
 
-When a user asks the bot to do something that requires the bot to have the user logged in, the bot can use the `Microsoft.Bot.Builder.Dialogs.GetTokenDialog` to initiate retrieving a token for a given connection. The next couple of snippets are taken from the `GetTokenDialog` class.
+When a user asks the bot to do something that requires the bot to have the user logged in, the bot can use an `OAuthPrompt` to initiate retrieving a token for a given connection. The `OAuthPrompt` creates a token retrieval flow that consists of:
+
+1. Checking to see if the Azure Bot Service already has a token for the current user and connection. If there is a token, the token is returned.
+1. If Azure Bot Service does not have a cached token, an `OAuthCard` is created which is a sign in button the user can click on.
+1. After the user clicks on the `OAuthCard` sign in button, Azure Bot Service will either send the bot the user's token directly or will present the user with a 6-digit authentication code to enter in the chat window.
+1. If the user is presented with an authentication code, the bot then exchanges this authentication code for the user's token.
+
+The next couple of code snippets are taken from the `OAuthPrompt` showing how these steps work in the prompt.
 
 ### Check for a cached token
 
-In this code, first the bot does a quick check to determine if the Azure Bot Service already has a token for the user (which is identified by the current Activity sender) and the given ConnectionName (which is the connection name used in configuration). Azure Bot Service will either already have a token cached or it will not. The call to GetUserTokenAsync performs this ‘quick check'. If Azure Bot Service has a token and returns it, the token can immediately be used. If Azure Bot Service does not have a token, this method will return null. In this case, the bot can send a customized OAuthCard for the user to login.
+In this code, first the bot does a quick check to determine if the Azure Bot Service already has a token for the user (which is identified by the current Activity sender) and the given ConnectionName (which is the connection name used in configuration). Azure Bot Service will either already have a token cached or it will not. The call to GetUserTokenAsync performs this �quick check'. If Azure Bot Service has a token and returns it, the token can immediately be used. If Azure Bot Service does not have a token, this method will return null. In this case, the bot can send a customized OAuthCard for the user to login.
+
+# [C#](#tab/csharp)
 
 ```csharp
 // First ask Bot Service if it already has a token for this user
-var token = await context.GetUserTokenAsync(ConnectionName).ConfigureAwait(false);
+var token = await adapter.GetUserTokenAsync(turnContext, connectionName, null, cancellationToken).ConfigureAwait(false);
 if (token != null)
 {
     // use the token to do exciting things!
@@ -286,9 +306,20 @@ if (token != null)
 else
 {
     // If Bot Service does not have a token, send an OAuth card to sign in
-    await SendOAuthCardAsync(context, (Activity)context.Activity);
 }
 ```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+public async getUserToken(context: TurnContext, code?: string): Promise<TokenResponse|undefined> {
+    // Get the token and call validator
+    const adapter: any = context.adapter as any; // cast to BotFrameworkAdapter
+    return await adapter.getUserToken(context, this.settings.connectionName, code);
+}
+```
+
+---
 
 ### Send an OAuthCard to the user
 
@@ -300,64 +331,157 @@ You can customize the OAuthCard with whatever text and button text you want. The
 
 At the end of this call, the bot needs to "wait for the token" to come back. This waiting takes place on the main Activity stream because there could be a lot the user needs to do to sign-in.
 
+# [C#](#tab/csharp)
+
 ```csharp
-private async Task SendOAuthCardAsync(IDialogContext context, Activity activity)
+private async Task SendOAuthCardAsync(ITurnContext turnContext, IMessageActivity message, CancellationToken cancellationToken = default(CancellationToken))
 {
-    await context.PostAsync($"To do this, you'll first need to sign in.");
+    if (message.Attachments == null)
+    {
+        message.Attachments = new List<Attachment>();
+    }
 
-    var reply = await context.Activity.CreateOAuthReplyAsync(_connectionName, _signInMessage, _buttonLabel).ConfigureAwait(false);
-    await context.PostAsync(reply);
-
-    context.Wait(WaitForToken);
+    message.Attachments.Add(new Attachment
+    {
+        ContentType = OAuthCard.ContentType,
+        Content = new OAuthCard
+        {
+            Text = "Please sign in",
+            ConnectionName = connectionName,
+            Buttons = new[]
+            {
+                new CardAction
+                {
+                    Title = "Sign In",
+                    Text = "Sign In",
+                    Type = ActionTypes.Signin,
+                },
+            },
+        },
+    });
+    
+    await turnContext.SendActivityAsync(message, cancellationToken).ConfigureAwait(false);
 }
 ```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+private async sendOAuthCardAsync(context: TurnContext, prompt?: string|Partial<Activity>): Promise<void> {
+    // Initialize outgoing message
+    const msg: Partial<Activity> =
+        typeof prompt === 'object' ? {...prompt} : MessageFactory.text(prompt, undefined, InputHints.ExpectingInput);
+    if (!Array.isArray(msg.attachments)) { msg.attachments = []; }
+
+    const cards: Attachment[] = msg.attachments.filter((a: Attachment) => a.contentType === CardFactory.contentTypes.oauthCard);
+    if (cards.length === 0) {
+        // Append oauth card
+        msg.attachments.push(CardFactory.oauthCard(
+            this.settings.connectionName,
+            this.settings.title,
+            this.settings.text
+        ));
+    }
+    
+    // Send prompt
+    await context.sendActivity(msg);
+}
+```
+
+---
 
 ### Wait for a TokenResponseEvent
 
-In this code the Bot's dialog class is waiting for a `TokenResponseEvent` (more about how this is routed to the Dialog stack is below). The `WaitForToken` method first determines if this event was sent. If it was sent, it can be used by the bot. If it was not, the `WaitForToken` method takes whatever text was sent to the bot and passes it to `GetUserTokenAsync`. The reason for this is that some clients (like WebChat) do not need the Magic Code verification code and can directly send the Token in the `TokenResponseEvent`. Other clients still require the magic code (like Facebook or Slack). The Azure Bot Service will present these clients with a six digit magic code and ask the user to type this into the chat window. While not ideal, this is the 'fall back' behavior and so if `WaitForToke`n receives a code, the bot can send this code to the Azure Bot Service and get a token back. If this call also fails, then you can decide to report an error, or do something else. In most cases though, the bot will now have a user token.
+In this code the Bot  is waiting for a `TokenResponseEvent` (more about how this is routed to the Dialog stack is below). The `WaitForToken` method first determines if this event was sent. If it was sent, it can be used by the bot. If it was not, the `RecognizeTokenAsync` method takes whatever text was sent to the bot and passes it to `GetUserTokenAsync`. The reason for this is that some clients (like WebChat) do not need the Magic Code verification code and can directly send the Token in the `TokenResponseEvent`. Other clients still require the magic code (like Facebook or Slack). The Azure Bot Service will present these clients with a six digit magic code and ask the user to type this into the chat window. While not ideal, this is the 'fall back' behavior and so if `RecognizeTokenAsync` receives a code, the bot can send this code to the Azure Bot Service and get a token back. If this call also fails, then you can decide to report an error, or do something else. In most cases though, the bot will now have a user token.
 
-If you look in the **MessageController.cs** file, you'll see that `Event` activities of this type are also routed to the dialog stack.
+If you look in the the bot code of each sample, you'll see that `Event` and `Invoke` activities are also routed to the dialog stack.
+
+# [C#](#tab/csharp)
 
 ```csharp
-private async Task WaitForToken(IDialogContext context, IAwaitable<object> result)
+// This can be called when the bot receives an Activity after sending an OAuthCard
+private async Task<TokenResponse> RecognizeTokenAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
 {
-    var activity = await result as Activity;
+    if (IsTokenResponseEvent(turnContext))
+    {
+        // The bot received the token directly
+        var tokenResponseObject = turnContext.Activity.Value as JObject;
+        var token = tokenResponseObject?.ToObject<TokenResponse>();
+        return token;
+    }
+    else if (IsTeamsVerificationInvoke(turnContext))
+    {
+        var magicCodeObject = turnContext.Activity.Value as JObject;
+        var magicCode = magicCodeObject.GetValue("state")?.ToString();
 
-    var tokenResponse = activity.ReadTokenResponseContent();
-    if (tokenResponse != null)
-    {
-        // Use the token to do exciting things!
+        var token = await adapter.GetUserTokenAsync(turnContext, _settings.ConnectionName, magicCode, cancellationToken).ConfigureAwait(false);
+        return token;
     }
-    else
+    else if (turnContext.Activity.Type == ActivityTypes.Message)
     {
-        if (!string.IsNullOrEmpty(activity.Text))
+        // make sure it's a 6-digit code
+        var matched = _magicCodeRegex.Match(turnContext.Activity.Text);
+        if (matched.Success)
         {
-            tokenResponse = await context.GetUserTokenAsync(ConnectionName,
-                                                               activity.Text);
-            if (tokenResponse != null)
-            {
-                // Use the token to do exciting things!
-                return;
-            }
+            var token = await adapter.GetUserTokenAsync(turnContext, _settings.ConnectionName, matched.Value, cancellationToken).ConfigureAwait(false);
+            return token;
         }
-        await context.PostAsync($"Hmm. Something went wrong. Let's try again.");
-        await SendOAuthCardAsync(context, activity);
     }
+
+    return null;
+}
+
+private bool IsTokenResponseEvent(ITurnContext turnContext)
+{
+    var activity = turnContext.Activity;
+    return activity.Type == ActivityTypes.Event && activity.Name == "tokens/response";
+}
+
+private bool IsTeamsVerificationInvoke(ITurnContext turnContext)
+{
+    var activity = turnContext.Activity;
+    return activity.Type == ActivityTypes.Invoke && activity.Name == "signin/verifyState";
 }
 ```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+private async recognizeToken(context: TurnContext): Promise<PromptRecognizerResult<TokenResponse>> {
+    let token: TokenResponse|undefined;
+    if (this.isTokenResponseEvent(context)) {
+        token = context.activity.value as TokenResponse;
+    } else if (this.isTeamsVerificationInvoke(context)) {
+        const code: any = context.activity.value.state;
+        await context.sendActivity({ type: 'invokeResponse', value: { status: 200 }});
+        token = await this.getUserToken(context, code);
+    } else if (context.activity.type === ActivityTypes.Message) {
+        const matched: RegExpExecArray = /(\d{6})/.exec(context.activity.text);
+        if (matched && matched.length > 1) {
+            token = await this.getUserToken(context, matched[1]);
+        }
+    }
+
+    return token !== undefined ? { succeeded: true, value: token } : { succeeded: false };
+}
+
+private isTokenResponseEvent(context: TurnContext): boolean {
+    const activity: Activity = context.activity;
+    return activity.type === ActivityTypes.Event && activity.name === 'tokens/response';
+}
+
+private isTeamsVerificationInvoke(context: TurnContext): boolean {
+    const activity: Activity = context.activity;
+    return activity.type === ActivityTypes.Invoke && activity.name === 'signin/verifyState';
+}
+```
+
+---
+
 
 ### Message controller
 
 On subsequent calls to the bot, notice that the token is never cached by this sample bot. This is because the bot can always ask the Azure Bot Service for the token. This avoids the bot needing to manage the token life-cycle, refresh the token, etc, as Azure Bot Service does all of this for you.
 
-```csharp
-else if(message.Type == ActivityTypes.Event)
-{
-    if(message.IsTokenResponseEvent())
-    {
-        await Conversation.SendAsync(message, () => new Dialogs.RootDialog());
-    }
-}
-```
 ## Additional resources
 [Bot Builder SDK](https://github.com/microsoft/botbuilder)
