@@ -36,7 +36,7 @@ Before writing code, review the bot [design guidelines](bot-service-design-pri
 >  - Bot builder Node.js SDK v3 [Yeoman template](https://www.npmjs.com/package/generator-botbuilder) 
 >
 > Install tools:
-> - Download [CLI tools](https://github.com/Microsoft/botbuilder-tools) to create and manage bot assests. These tools help you manage bot  configuration file, LUIS app, QnA knowledge base, and more from the command-line. You can find more details in the [readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
+> - Download [CLI tools][https://aka.ms/botbuilder-tools] to create and manage bot assets. These tools help you manage bot  configuration file, LUIS app, QnA knowledge base, and more from the command-line. You can find more details in the [readme][https://aka.ms/botbuilder-tools-readme].
 > - [Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases) to test your bot
 >
 > If needed, use bot components, such as:  
@@ -110,7 +110,7 @@ Included within the Azure Bot Service are a variety of bot building tools, inclu
 With the Bot Builder SDK, developers can connect their bot to an array of useful Azure services tuned to work in the context
 of conversational software, such as:
 
-* [LUIS](https://www.luis.ai) adds natural language understanding to your bot.
+* [LUIS](https://luis.ai) adds natural language understanding to your bot.
 * [QnaMaker](https://qnamaker.ai) helps your bot provide answers to common questions.
 * Your bot can store data in [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/) or [Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/).
 
@@ -144,7 +144,7 @@ Creating a bot is both a technical and a creative process. In addition to writin
 
 Every word counts!
 
-Azure Bot Service offers an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot in C#, JavaScript, or Typescript. (Java and Python are coming too!) We provide tools for various stages of bot development that you can use to build your bot to get you started.    
+Azure Bot Service offers an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot in C#, JavaScript, or Typescript. (Java and Python are coming too!) We provide tools for various stages of bot development that you can use to build your bot to get you started.
 
 ### Design
 As with any type of software, having a thorough understanding of the goals, processes and user needs is important to the process of creating a successful bot.
@@ -174,7 +174,7 @@ As part of the Azure Bot Service, we offer additional components you can use to 
 > [!NOTE]
 > The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally we provide command line tools to help you to create, manage, and test bot assets. These tools can manage a bot configuration file, configure LUIS apps, build a QnA knowledge base, mock a conversation, and more - all from the command line. You can find more details in the [command line tools readme](https://github.com/Microsoft/botbuilder-tools/blob/master/README.md).
+Additionally we provide command line tools to help you to create, manage, and test bot assets. These tools can manage a bot configuration file, configure LUIS apps, build a QnA knowledge base, mock a conversation, and more - all from the command line. You can find more details in the [command line tools readme](https://aka.ms/botbuilder-tools-readme).
 
 ### Test 
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot. 
