@@ -19,7 +19,7 @@ One of the basic requirements in writing your own QnA Maker service is to seed i
 
 ## Create a QnA Maker service
 
-First create an account and sign in at [QnA Maker](https://qnamaker.ai/). Then navigate to [Set up a QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure), followed by the article linked at the bottom, [Create and publish a knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base). Follow those instructions to create your Azure QnA service, then come back here for how to use QnA Maker with your bot.
+First create an account and sign in at [QnA Maker](https://www.qnamaker.ai/). Then navigate to [Set up a QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure), followed by the article linked at the bottom, [Create and publish a knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base). Follow those instructions to create your Azure QnA service, then come back here for how to use QnA Maker with your bot.
 
 ## Installing Packages
 
@@ -148,7 +148,7 @@ When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your 
     /// ...
 ```
 
-See the [QnA Maker sample](https://aka.ms/qna-cs-bot-sample) for a sample bot.
+See the [QnA Maker sample](https://aka.ms/cs-qna) for a sample bot.
 
 # [JavaScript](#tab/js)
 

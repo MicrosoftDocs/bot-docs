@@ -24,7 +24,7 @@ To send the user content like an image or a video, you can add an attachment or 
 # [C#](#tab/csharp)
 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, use the `Attachment` method to create an `Attachment` object for the `message` activity and set the`ContentType`, `ContentUrl`, and `Name` properties. The source code shown here is based on the [Handling Attachments](https://aka.ms/HandlingAttachmentsCSharp) sample. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, use the `Attachment` method to create an `Attachment` object for the `message` activity and set the`ContentType`, `ContentUrl`, and `Name` properties. The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
 
 ```csharp
 using Microsoft.Bot.Builder;
@@ -50,6 +50,7 @@ await turnContext.SendActivityAsync(reply, cancellationToken);
 
 # [JavaScript](#tab/javascript)
 
+The source code shown here is based on the [JS Handling Attachments](https://aka.ms/bot-attachments-sample-code-js) sample.
 To send the user a single piece of content like an image or a video, you can send media contained in a URL:
 
 ```javascript
@@ -70,7 +71,7 @@ Besides simple image or video attachments, you can attach a **hero card**, which
 
 # [C#](#tab/csharp)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [Handling Attachments](https://aka.ms/HandlingAttachmentsCSharp) sample. 
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
 
 ```csharp
 using Microsoft.Bot.Builder;
@@ -99,7 +100,7 @@ await turnContext.SendActivityAsync(reply, cancellationToken);
 
 # [JavaScript](#tab/javascript)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message:
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [JS Handling Attachments](https://aka.ms/bot-attachments-sample-code-js) sample:
 
 ```javascript
 // require MessageFactory and CardFactory from botbuilder.
@@ -202,13 +203,15 @@ Second, Adaptive Card delivers messages in the card format, and the channel dete
 
 To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
 
-To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package. Refer to [Using Adaptive Cards](https://aka.ms/AdaptiveCardsCSharp) sample for source code shown here.
+To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package. 
 
 
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
 
 # [C#](#tab/csharp)
+
+The source code shown here is based on the [Using Adaptive Cards](https://aka.ms/bot-adaptive-cards-sample-code) sample:
 
 ```csharp
 using AdaptiveCards;
@@ -238,6 +241,8 @@ await turnContext.SendActivityAsync(reply, cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
+
+The source code shown here is based on the [JS Using Adaptive Cards](https://aka.ms/bot-adaptive-cards-js-sample-code) sample:
 
 ```javascript
 const {CardFactory} = require("botbuilder");
@@ -435,4 +440,4 @@ await context.sendActivity(messageWithCarouselOfCards);
 ---
 
 ## Additional resources
-Sample code can be found here for cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-js-sample-code), and suggested actions: [C#](https://aka.ms/bot-suggested-actions-code)/[JS](https://aka.ms/bot-suggested-actions-js-code). Refer to Bot Builder Samples repo on [GitHub](https://github.com/Microsoft/BotBuilder-Samples) for additional samples.
+Sample code can be found here for cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-sample-code-js), and suggested actions: [C#](https://aka.ms/SuggestedActionsCSharp)/[JS](https://aka.ms/SuggestedActionsJS). Refer to Bot Builder Samples repo on [GitHub](https://github.com/Microsoft/BotBuilder-Samples) for additional samples.

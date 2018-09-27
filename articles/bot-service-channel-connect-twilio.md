@@ -20,7 +20,7 @@ If you don't have a Twilio account, <a href="https://www.twilio.com/try-twilio" 
 
 ## Create a TwiML Application
 
-<a href="https://www.twilio.com/user/account/messaging/dev-tools/twiml-apps/add" target="_blank">Create a TwiML application</a>
+<a href="https://support.twilio.com/hc/en-us/articles/223180928-How-Do-I-Create-a-TwiML-App-" target="_blank">Create a TwiML application</a>
 
 ![Create app](~/media/channels/twi-StepTwiml.png)
 
@@ -28,7 +28,7 @@ If you don't have a Twilio account, <a href="https://www.twilio.com/try-twilio" 
 
 ## Select or add a phone number
 
-<a href="https://www.twilio.com/user/account/phone-numbers/incoming" target="_blank">Select or add a phone number</a>. Click  the number to add it to the TwiML application you created.
+<a href = "https://support.twilio.com/hc/en-us/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio" target="_blank">Select or add a phone number</a>. Click  the number to add it to the TwiML application you created.
 
 ![Set phone number](~/media/channels/twi-StepPhone.png)
 
@@ -40,7 +40,7 @@ Copy the **Phone Number** value for later use.
 
 ## Gather credentials
 
-<a href="https://www.twilio.com/user/account/settings" target="_blank">Gather credentials</a> and then click the "eye" icon to see the Auth Token.
+Gather credentials and then click the "eye" icon to see the Auth Token.
 
 ![Gather app credentials](~/media/channels/twi-StepAuth.png)
 
