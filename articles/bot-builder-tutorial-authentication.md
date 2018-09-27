@@ -405,9 +405,9 @@ For additional information and support, refer to [Bot Framework additional resou
 
 This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from a GitHub repo, and this tutorial describes how to set that up, including the bot application.
 
-- [Create your bot and an authentication application](#create-your-bot-and-an-authentication-application)
-- [Prepare the bot sample code](#prepare-the-bot-sample-code)
-- [Use the Emulator to test your bot](#use-the-emulator-to-test-your-bot)
+- **Create your bot and an authentication application**
+- **Prepare the bot sample code**
+- **Use the Emulator to test your bot**
 
 To complete these steps, you will need Visual Studio 2017, npm, node, and git installed. You should also have some familiarity with Azure, OAuth 2.0, and bot development.
 
@@ -415,7 +415,7 @@ Once you finish, you will have a bot that can respond to a few simple tasks agai
 
 The final section breaks down some of the bot code
 
-- [Notes on the token retrieval flow](#notes-on-the-token-retrieval-flow)
+- **Notes on the token retrieval flow**
 
 ## Create your bot and an authentication application
 
