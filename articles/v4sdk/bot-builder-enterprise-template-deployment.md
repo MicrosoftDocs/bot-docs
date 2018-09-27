@@ -92,7 +92,7 @@ The msbot tool will outline the deployment plan including location and SKU. Ensu
 
 ## Testing
 
-Once complete, run your bot project within your development envrionment and open the Bot Framework Emulator. Within the Emulator, choose Open Bot from teh File menu and navigate to the .bot file in your directory.
+Once complete, run your bot project within your development envrionment and open the Bot Framework Emulator. Within the Emulator, choose Open Bot from the File menu and navigate to the .bot file in your directory.
 
 Then type ```hi``` to verify everything is working.
 
