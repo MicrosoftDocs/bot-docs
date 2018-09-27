@@ -74,9 +74,11 @@ that renders the embedded web view with the web chat control.
 
 ![Back-channel](~/media/bot-service-design-pattern-embed-app/xamarin-apps.png)
 
+<!-- TODO: No sample bot available
 ## Sample code
 
 For a complete sample that shows how to create a cross-platform mobile app that runs a bot (as described in this article), see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-BotInApps" target="_blank">Bot in Apps sample</a> in GitHub.
+-->
 
 ## Additional resources
 

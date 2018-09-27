@@ -99,7 +99,7 @@ Finally, the spec provides an example of a user communicating with the bot to su
 You may be wondering, if a task automation bot closely resembles an app or website, why not just build an app or website instead? 
 Depending on your particular scenario, building an app or website instead of a bot may be an entirely reasonable choice. 
 You may even choose to embed your bot into an app, by using the [Bot Framework Direct Line API][directLineAPI] 
-or <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Web Chat control</a>. 
+or <a href="https://aka.ms/BotFramework-WebChat" target="_blank">Web Chat control</a>. 
 Implementing your bot within the context of an app provides the best of both worlds: a rich app experience and a conversational experience, all in one place. 
 
 In many cases, however, building an app or website can be significantly more complex and more expensive than building a bot. 
@@ -113,11 +113,13 @@ or she may add support for text messages.
 The company may setup kiosks throughout the building and embed the password-reset bot into that experience.
 
 ::: moniker range="azure-bot-service-3.0"
+<!-- TODO: SimpleTaskAutomation no longer exists
 ## Sample code
 
-For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
+For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for .NET, see the <a href="https://aka.ms/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
 
-For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
+For a complete sample that shows how to implement simple task automation using the Bot Builder SDK for Node.js, see the <a href="https://aka.ms/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
+-->
 
 ## Additional resources
 

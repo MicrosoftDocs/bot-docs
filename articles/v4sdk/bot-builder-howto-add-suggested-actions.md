@@ -23,6 +23,8 @@ You can create a list of suggested actions (also known as "quick replies") that 
 
 # [C#](#tab/csharp)
 
+You can access the source code used here from [GitHub](https://aka.ms/SuggestedActionsCSharp)
+
 ```csharp
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;

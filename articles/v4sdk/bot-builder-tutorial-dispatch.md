@@ -532,6 +532,6 @@ Review example utterances that are flagged as duplicates in **Summary.html**, an
 [DispatchJSON]: https://aka.ms/dispatch-luis
 [FAQ_TSV]: https://aka.ms/dispatch-qna-tsv
 
-[DispatchTool]: https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch
+[DispatchTool]: https://aka.ms/botbuilder-tools-dispatch
 [DispatchBotCS]: https://aka.ms/csDispatch
 [DispatchBotJs]: https://aka.ms/dispatch-sample-js
