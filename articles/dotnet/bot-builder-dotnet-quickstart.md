@@ -33,7 +33,7 @@ and then testing it with the Bot Framework Emulator.
 
 2. In Visual Studio, update all [extensions](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension) to their latest versions.
 
-3. Bot template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3).
+3. Bot template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4).
 
 > [!TIP]
 > The Visual Studio 2017 project templates directory is typically located at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\` and the item templates directory is at `%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates\Visual C#\`
