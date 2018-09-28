@@ -65,7 +65,12 @@ Thanks to the template, your project contains all of the code that's necessary t
 
 ## Start your bot
 
-Change directories to the one created for your bot, and start it. At this point, your bot is running locally. 
+Using the terminal change directories to the one created for your bot, and start it. At this point, your bot is running locally. 
+
+```bash
+cd myJsBot
+npm start
+```
 
 ## Start the emulator and connect your bot
 1. Start the emulator.
