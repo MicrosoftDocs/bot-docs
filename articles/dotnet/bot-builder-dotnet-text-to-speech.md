@@ -53,7 +53,7 @@ When you send a message on a speech-enabled channel, you can attempt to influenc
 
 ## Sample code 
 
-For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill" target="_blank">Roller Skill sample</a> in GitHub.
+For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp" target="_blank">Roller Skill sample</a> in GitHub.
 
 ## Additional resources
 

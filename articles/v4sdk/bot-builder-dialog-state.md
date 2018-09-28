@@ -31,9 +31,8 @@ When the bot’s OnTurn is called the bot will initialize the Dialog subsystem b
 
 UserState and ConversationState use keys for underlying storage. The key is passed down to the physical storage. Logically, the key acts as a namespace for the property named by the Accessor. The BotState implementation internally uses the inbound Activity on the TurnContext to dynamically generate the storage key it uses.
 
-- The UserState creates a key using the Channel Id and From Id. For example, _{Activity.ChannelId}/users/{Activity.Conversation.Id}#YourPropertyName_
-
-- The ConversationState creates a key using the Channel Id and the Conversation Id. For example, _{Activity.ChannelId}/conversations/{Activity.From.Id}#DialogState_
+- The UserState creates a key using the Channel Id and From Id. For example, _{Activity.ChannelId}/conversations/{Activity.From.Id}#DialogState_
+- The ConversationState creates a key using the Channel Id and the Conversation Id. For example, _{Activity.ChannelId}/users/{Activity.Conversation.Id}#YourPropertyName_
 
 An application needs to provide an Accessor, and the binding to the appropriate dynamically created storage key and property name all happen behind the scenes. The BotState’s implementation of the Accessor includes some optimizations: 
 
