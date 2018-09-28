@@ -50,11 +50,12 @@ await turnContext.SendActivityAsync(reply, cancellationToken);
 You can access the source code used here from [GitHub](https://aka.ms/SuggestActionsJS).
 
 ```javascript
-// Require MessageFactory from botbuilder.
-const {MessageFactory} = require('botbuilder');
+const { ActivityTypes, MessageFactory, TurnContext } = require('botbuilder');
 
-var reply = MessageFactory.suggestedActions(['Red', 'Yellow', 'Blue'], `What is the best color?`);
-await turnContext.sendActivity(reply);
+async sendSuggestedActions(turnContext) {
+    var reply = MessageFactory.suggestedActions(['Red', 'Yellow', 'Blue'], 'What is the best color?');
+    await turnContext.sendActivity(reply);
+}
 ```
 
 ---
