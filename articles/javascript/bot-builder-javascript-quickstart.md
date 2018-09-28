@@ -61,7 +61,7 @@ Yeoman prompts you for some information with which to create your bot.
 Thanks to the template, your project contains all of the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.
 
 > [!NOTE]
-> For a Basic bot, you'll need to a LUIS language model. You can create one on [luis.ai](https://www.luis.ai). After creating the model, update the .bot file. Your bot file should look similar to this [one](../v4sdk/bot-builder-service-file.md). 
+> For a Basic bot, you'll need a LUIS language model. You can create one on [luis.ai](https://www.luis.ai). After creating the model, update the .bot file. Your bot file should look similar to this [one](../v4sdk/bot-builder-service-file.md). 
 
 ## Start your bot
 
