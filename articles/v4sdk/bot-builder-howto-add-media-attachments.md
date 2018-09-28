@@ -54,11 +54,20 @@ The source code shown here is based on the [JS Handling Attachments](https://aka
 To send the user a single piece of content like an image or a video, you can send media contained in a URL:
 
 ```javascript
-const {MessageFactory} = require('botbuilder');
-let imageOrVideoMessage = MessageFactory.contentUrl('imageUrl.png', 'image/jpeg')
-
+const { ActionTypes, ActivityTypes, CardFactory } = require('botbuilder');
+// Call function to get an attachment.
+reply.attachments = [this.getInternetAttachment()];
+reply.text = 'This is an internet attachment.';
 // Send the activity to the user.
-await context.sendActivity(imageOrVideoMessage);
+await turnContext.sendActivity(reply);
+
+/* function getInternetAttachment - Returns an attachment to be sent to the user from a HTTPS URL */
+getInternetAttachment() {
+        return {
+            name: 'imageName.png',
+            contentType: 'image/png',
+            contentUrl: 'imageUrl.png'}
+}
 ```
 
 ---
@@ -103,19 +112,23 @@ await turnContext.SendActivityAsync(reply, cancellationToken);
 To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [JS Handling Attachments](https://aka.ms/bot-attachments-sample-code-js) sample:
 
 ```javascript
-// require MessageFactory and CardFactory from botbuilder.
-const {MessageFactory} = require('botbuilder');
-const {CardFactory} = require('botbuilder');
+const { ActionTypes, ActivityTypes, CardFactory } = require('botbuilder');
+// build buttons to display.
+const buttons = [
+            { type: ActionTypes.ImBack, title: '1. Inline Attachment', value: '1' },
+            { type: ActionTypes.ImBack, title: '2. Internet Attachment', value: '2' },
+            { type: ActionTypes.ImBack, title: '3. Uploaded Attachment', value: '3' }
+];
 
-const message = MessageFactory.attachment(
-     CardFactory.heroCard(
-        'White T-Shirt',
-        ['https://example.com/whiteShirt.jpg'],
-        ['buy']
-    )
- );
+// construct hero card.
+const card = CardFactory.heroCard('', undefined,
+buttons, { text: 'You can upload an image or select one of the following choices.' });
 
-await context.sendActivity(message);
+// add card to Activity.
+reply.attachments = [card];
+
+// Send hero card to the user.
+await turnContext.sendActivity(reply);
 ```
 ---
 
@@ -245,133 +258,30 @@ await turnContext.SendActivityAsync(reply, cancellationToken);
 The source code shown here is based on the [JS Using Adaptive Cards](https://aka.ms/bot-adaptive-cards-js-sample-code) sample:
 
 ```javascript
-const {CardFactory} = require("botbuilder");
+const { BotFrameworkAdapter } = require('botbuilder');
 
-const message = CardFactory.adaptiveCard({
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.0",
-    "type": "AdaptiveCard",
-    "speak": "Your flight is confirmed for you from San Francisco to Amsterdam on Friday, October 10 8:30 AM",
-    "body": [
-        {
-            "type": "TextBlock",
-            "text": "Passenger",
-            "weight": "bolder",
-            "isSubtle": false
-        },
-        {
-            "type": "TextBlock",
-            "text": "Sarah Hum",
-            "separator": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "1 Stop",
-            "weight": "bolder",
-            "spacing": "medium"
-        },
-        {
-            "type": "TextBlock",
-            "text": "Fri, October 10 8:30 AM",
-            "weight": "bolder",
-            "spacing": "none"
-        },
-        {
-            "type": "ColumnSet",
-            "separator": true,
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": 1,
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "San Francisco",
-                            "isSubtle": true
-                        },
-                        {
-                            "type": "TextBlock",
-                            "size": "extraLarge",
-                            "color": "accent",
-                            "text": "SFO",
-                            "spacing": "none"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "auto",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": " "
-                        },
-                        {
-                            "type": "Image",
-                            "url": "http://messagecardplayground.azurewebsites.net/assets/airplane.png",
-                            "size": "small",
-                            "spacing": "none"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": 1,
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "horizontalAlignment": "right",
-                            "text": "Amsterdam",
-                            "isSubtle": true
-                        },
-                        {
-                            "type": "TextBlock",
-                            "horizontalAlignment": "right",
-                            "size": "extraLarge",
-                            "color": "accent",
-                            "text": "AMS",
-                            "spacing": "none"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "ColumnSet",
-            "spacing": "medium",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "1",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "Total",
-                            "size": "medium",
-                            "isSubtle": true
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": 1,
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "horizontalAlignment": "right",
-                            "text": "$1,032.54",
-                            "size": "medium",
-                            "weight": "bolder"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+// Import AdaptiveCard content.
+const FlightItineraryCard = require('./resources/FlightItineraryCard.json');
+const ImageGalleryCard = require('./resources/ImageGalleryCard.json');
+const LargeWeatherCard = require('./resources/LargeWeatherCard.json');
+const RestaurantCard = require('./resources/RestaurantCard.json');
+const SolitaireCard = require('./resources/SolitaireCard.json');
+
+// Create array of AdaptiveCard content, this will be used to send a random card to the user.
+const CARDS = [
+    FlightItineraryCard,
+    ImageGalleryCard,
+    LargeWeatherCard,
+    RestaurantCard,
+    SolitaireCard
+];
+// Select a random card to send.
+const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
+// Send adaptive card.
+await context.sendActivity({
+      text: 'Here is an Adaptive Card:',
+       attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
 });
-
-// send adaptive card as attachment 
-await context.sendActivity({ attachments: [message] })
 ```
 
 ---
