@@ -62,16 +62,23 @@ using Microsoft.Bot.Builder.Dialogs;
 
 # [JavaScript](#tab/javascript)
 
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for JavaScript](~/javascript/bot-builder-javascript-quickstart.md).
+
 The `botbuilder-dialogs` library can be downloaded from NPM. To install the `botbuilder-dialogs` library, run the following NPM command:
 
 ```cmd
 npm install --save botbuilder-dialogs
 ```
 
-To use **dialogs** in your bot, include it in the bot code. For example, add this to your **app.js** file:
+To use **dialogs** in your bot, include it in the bot code. For example, add this to your **index.js** file:
 
 ```javascript
-const { MemoryStorage, UserState, ConversationState } = require('botbuilder');
+const { DialogSet } = require('botbuilder-dialogs');
+```
+
+And this to your **bot.js** file:
+
+```javascript
 const { DialogSet, NumberPrompt, ChoicePrompt, WaterfallDialog } = require('botbuilder-dialogs');
 ```
 
@@ -138,12 +145,30 @@ public class HotelDialogs : DialogSet
 
 # [JavaScript](#tab/javascript)
 
-```javascript
-const storage = new MemoryStorage();
-const conversationState = new ConversationState(storage);
-const dialogState = conversationState.createProperty('dialogState');
+In the **index.js** file, add code to create a state property accessor for managing dialog state, and use that to create the dialog set we'll use for the bot.
 
-const dialogs new DialogSet(dialogState);
+```javascript
+// Create conversation state with in-memory storage provider.
+const conversationState = new ConversationState(memoryStorage);
+const dialogStateAccessor = conversationState.createProperty('dialogState');
+
+// Create a dialog set for the bot.
+const dialogSet = new DialogSet(dialogStateAccessor);
+
+// Create the bot.
+const bot = new MyBot(conversationState, dialogSet)
+```
+
+Then update the activity processing call to use the bot object.
+
+```javascript
+// Listen for incoming requests.
+server.post('/api/messages', (req, res) => {
+    adapter.processActivity(req, res, async (context) => {
+        // Route to the bot's turn handler.
+        await bot.onTurn(context);
+    });
+});
 ```
 
 ---
@@ -375,6 +400,8 @@ private static class MainDialogSteps
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the `mainMenu` waterfall dialog.
+
 ```javascript
 // Display a menu and ask user to choose a menu item. Direct user to the item selected otherwise, show
 // the menu again.
@@ -505,25 +532,30 @@ private static class OrderDinnerSteps
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the `orderDinner` waterfall dialog.
+
 ```javascript
 // Order dinner:
 // Help user order dinner from a menu
-dialogs.add(new WaterfallDialog('orderDinner', [
+this.dialogSet.add(new WaterfallDialog('orderDinner', [
     async function (step) {
-        await step.context.sendActivity("Welcome to our dinner order service.");
+    await step.context.sendActivity("Welcome to our dinner order service.");
 
-        return await step.beginDialog('orderPrompt', step.values.orderCart); // Prompt for orders
+    return await step.beginDialog('orderPrompt', step.values.orderCart = {
+        orders: [],
+        total: 0
+    }); // Prompt for orders
     },
     async function (step) {
-        if (step.result == "Cancel"){
-            return await step.endDialog();
-        } else {
-            return await step.prompt('numberPrompt', "What is your room number?");
-        }
-    },
-    async function(step) {
-        await step.context.sendActivity(`Thank you. Your order will be delivered to room ${ step.result } within 45 minutes.`);
+    if (step.result == "Cancel") {
         return await step.endDialog();
+    } else {
+        return await step.prompt('numberPrompt', "What is your room number?");
+    }
+    },
+    async function (step) {
+    await step.context.sendActivity(`Thank you. Your order will be delivered to room ${step.result} within 45 minutes.`);
+    return await step.endDialog();
     }
 ]));
 ```
@@ -655,60 +687,54 @@ private static class OrderPromptSteps
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the `orderPrompt` waterfall dialog.
+
 ```javascript
 // Helper dialog to repeatedly prompt user for orders
-dialogs.add(new WaterfallDialog('orderPrompt', [
-    async function(step, orderCart) {
-        // Define a new cart of one does not exists
-        if (!orderCart) {
-            // Initialize a new cart
-            step.values.orderCart = {
-                orders: [],
-                total: 0
-            };
-        } else {
-            step.values.orderCart = orderCart;
-        }
+this.dialogSet.add(new WaterfallDialog('orderPrompt', [
+    async function (step) {
+    // Define a new cart of one does not exists
+    step.values.orderCart = step.options;
 
-        return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
+    return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
     },
-    async function(step) {
-        const choice = step.result;
-        if (choice.value.match(/process order/ig)) {
-            if (step.values.orderCart.orders.length > 0) {
-                // Process the order
-                // ...
-                step.values.orderCart = undefined; // Reset cart
-                await step.context.sendActivity("Processing your order.");
-                return await step.endDialog();
-            } else {
-                await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
-                // Ask again
-                return await step.replaceDialog('orderPrompt');
-            }
-        } else if (choice.value.match(/cancel/ig)) {
-            await step.context.sendActivity("Your order has been canceled.");
-            return await step.endDialog(choice.value);
+    async function (step) {
+    const choice = step.result;
+    if (choice.value.match(/process order/ig)) {
+        if (step.values.orderCart.orders.length > 0) {
+        // Process the order
+        // ...
+        step.values.orderCart = undefined; // Reset cart
+        await step.context.sendActivity("Processing your order.");
+        return await step.endDialog();
         } else {
-            var item = dinnerMenu[choice.value];
-
-            // Only proceed if user chooses an item from the menu
-            if (!item) {
-                await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
-
-                // Ask again
-                return await step.replaceDialog('orderPrompt');
-            } else {
-                // Add the item to cart
-                step.values.orderCart.orders.push(item);
-                step.values.orderCart.total += item.Price;
-
-                await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${step.values.orderCart.total}`);
-
-                // Ask again
-                return await step.replaceDialog('orderPrompt', dc.activeDialog.state.orderCart);
-            }
+        await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
+        // Ask again
+        return await step.replaceDialog('orderPrompt', step.values.orderCart);
         }
+    } else if (choice.value.match(/cancel/ig)) {
+        await step.context.sendActivity("Your order has been canceled.");
+        return await step.endDialog(choice.value);
+    } else {
+        var item = dinnerMenu[choice.value];
+
+        // Only proceed if user chooses an item from the menu
+        if (!item) {
+        await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
+
+        // Ask again
+        return await step.replaceDialog('orderPrompt', step.values.orderCart);
+        } else {
+        // Add the item to cart
+        step.values.orderCart.orders.push(item);
+        step.values.orderCart.total += item.Price;
+
+        await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${step.values.orderCart.total}`);
+
+        // Ask again
+        return await step.replaceDialog('orderPrompt', step.values.orderCart);
+        }
+    }
     }
 ]));
 ```
@@ -762,17 +788,206 @@ private static class ReserveTableSteps
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the placeholder `reserveTable` waterfall dialog.
+
 ```javascript
 // Reserve a table:
 // Help the user to reserve a table
 
-dialogs.add(new WaterfallDialog('reserveTable', [
+this.dialogSet.add(new WaterfallDialog('reserveTable', [
     // Replace this waterfall with your reservation steps.
     async function(step){
         await step.context.sendActivity("Your table has been reserved");
         await step.endDialog();
     }
 ]));
+```
+
+---
+
+### Update the bot code to call the dialogs
+
+Update your bot's turn handler code to call the dialog.
+
+# [C#](#tab/csharp)
+
+Rename **EchoBotAccessors.cs** to **BotAccessors.cs**, and rename the class from `EchoBotAccessors` to `BotAccessors`. Update the using statements and the class definition to provide the state property accessor we need for this bot.
+
+```csharp
+using System;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
+```
+
+```csharp
+/// <summary>
+/// This class is created as a Singleton and passed into the IBot-derived constructor.
+///  - See <see cref="EchoWithCounterBot"/> constructor for how that is injected.
+///  - See the Startup.cs file for more details on creating the Singleton that gets
+///    injected into the constructor.
+/// </summary>
+public class BotAccessors
+{
+    /// <summary>
+    /// Initializes a new instance of the <see cref="BotAccessors"/> class.
+    /// Contains the <see cref="ConversationState"/> and associated <see cref="IStatePropertyAccessor{T}"/>.
+    /// </summary>
+    /// <param name="conversationState">The state object that stores the counter.</param>
+    public BotAccessors(ConversationState conversationState)
+    {
+        ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+    }
+
+    /// <summary>
+    /// Gets the <see cref="IStatePropertyAccessor{T}"/> name used for the <see cref="DialogState"/> accessor.
+    /// </summary>
+    /// <remarks>Accessors require a unique name.</remarks>
+    /// <value>The accessor name for the dialog state accessor.</value>
+    public static string DialogStateAccessorName { get; } = $"{nameof(BotAccessors)}.DialogState";
+
+    /// <summary>
+    /// Gets or sets the DialogState property accessor.
+    /// </summary>
+    /// <value>
+    /// The DialogState property accessor.
+    /// </value>
+    public IStatePropertyAccessor<DialogState> DialogStateAccessor { get; set; }
+
+    /// <summary>
+    /// Gets the <see cref="ConversationState"/> object for the conversation.
+    /// </summary>
+    /// <value>The <see cref="ConversationState"/> object.</value>
+    public ConversationState ConversationState { get; }
+}
+```
+
+Update the **Startup.cs** file to configure the `BotAccessors` singleton.
+
+1. Update the using statements.
+
+    ```csharp
+    using System;
+    using System.Linq;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Bot.Builder;
+    using Microsoft.Bot.Builder.Dialogs;
+    using Microsoft.Bot.Builder.Integration;
+    using Microsoft.Bot.Builder.Integration.AspNet.Core;
+    using Microsoft.Bot.Configuration;
+    using Microsoft.Bot.Connector.Authentication;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+    ```
+
+1. Update the part of the `ConfigureServices` method that registers the bot state property accessors.
+
+    ```csharp
+    // Create and register state accesssors.
+    // Acessors created here are passed into the IBot-derived class on every turn.
+    services.AddSingleton<BotAccessors>(sp =>
+    {
+        var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value;
+        var conversationState = options.State.OfType<ConversationState>().FirstOrDefault();
+
+        // Create the custom state accessor.
+        // State accessors enable other components to read and write individual properties of state.
+        var accessors = new BotAccessors(conversationState)
+        {
+            DialogStateAccessor = conversationState.CreateProperty<DialogState>(BotAccessors.DialogStateAccessorName),
+        };
+
+        return accessors;
+    });
+    ```
+
+Rename the EchoWithCounterBot.cs file to HotelBot.cs, and rename the class from EchoWithCounterBot to HotelBot.
+
+1. Update the initialization code for the bot.
+
+    ```csharp
+    private readonly BotAccessors _accessors;
+    private readonly HotelDialogs _dialogs;
+    private readonly ILogger _logger;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HotelBot"/> class.
+    /// </summary>
+    /// <param name="accessors">A class containing <see cref="IStatePropertyAccessor{T}"/> used to manage state.</param>
+    /// <param name="loggerFactory">A <see cref="ILoggerFactory"/> that is hooked to the Azure App Service provider.</param>
+    public HotelBot(BotAccessors accessors, ILoggerFactory loggerFactory)
+    {
+        _logger = loggerFactory.CreateLogger<HotelBot>();
+        _logger.LogTrace("EchoBot turn start.");
+        _accessors = accessors;
+        _dialogs = new HotelDialogs(_accessors.DialogStateAccessor);
+    }
+    ```
+
+1. Update the turn handler for the bot, so that it runs the dialog.
+
+    ```csharp
+    public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
+    {
+        var dc = await _dialogs.CreateContextAsync(turnContext, cancellationToken);
+
+        if (turnContext.Activity.Type == ActivityTypes.Message)
+        {
+            await dc.ContinueDialogAsync(cancellationToken);
+            if (!turnContext.Responded)
+            {
+                await dc.BeginDialogAsync(HotelDialogs.MainMenu, null, cancellationToken);
+            }
+        }
+        else if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
+        {
+            var activity = turnContext.Activity.AsConversationUpdateActivity();
+            if (activity.MembersAdded.Any(member => member.Id != activity.Recipient.Id))
+            {
+                await dc.BeginDialogAsync(HotelDialogs.MainMenu, null, cancellationToken);
+            }
+        }
+
+        await _accessors.ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
+    }
+    ```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+async onTurn(turnContext) {
+    let dc = await this.dialogSet.createContext(turnContext);
+
+    // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+    if (turnContext.activity.type === ActivityTypes.Message) {
+
+        await dc.continueDialog();
+
+        if (!turnContext.responded) {
+            await dc.beginDialog('mainMenu');
+        }
+    } else if (turnContext.activity.type === ActivityTypes.ConversationUpdate) {
+        // Do we have any new members added to the conversation?
+        if (turnContext.activity.membersAdded.length !== 0) {
+            // Iterate over all new members added to the conversation
+            for (var idx in turnContext.activity.membersAdded) {
+                // Greet anyone that was not the target (recipient) of this message.
+                // Since the bot is the recipient for events from the channel,
+                // context.activity.membersAdded === context.activity.recipient.Id indicates the
+                // bot was added to the conversation, and the opposite indicates this is a user.
+                if (turnContext.activity.membersAdded[idx].id !== turnContext.activity.recipient.id) {
+                    // Start the dialog.
+                    await dc.beginDialog('mainMenu');
+                }
+            }
+        }
+    }
+
+    // Save state changes
+    await this.conversationState.saveChanges(turnContext);
+}
 ```
 
 ---
