@@ -164,8 +164,8 @@ class MainDialog {
             {
                 // The channel should send the user name in the 'From' object
                 let userName = turnContext.activity.from.name;
-                await turnContext.sendActivity("You are seeing this message because this was your first message ever sent to this bot.");
-                await turnContext.sendActivity(`It is a good practice to welcome the user and provdie personal greeting. For example, welcome ${userName}.`);
+                // Call the welcome message
+                await this.sendWelcomeMessage(turnContext);
                 
                 // Set the flag indicating the bot handled the user's first message.
                 await this.welcomedUserPropery.set(turnContext, true);
