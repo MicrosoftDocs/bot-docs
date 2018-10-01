@@ -95,7 +95,7 @@ services.AddBot<EchoWithCounterBot>(options =>
     options.State.Add(userState);
 });
 ```
-The line `options.State.Add(ConversationState);` and `options.State.Add(userState);` add the conversation state and user state, respectively. Next, create and register state accesssors. Acessors created here are passed into the IBot-derived class on every turn. Modift the code to inclue user state as shown below:
+The line `options.State.Add(ConversationState);` and `options.State.Add(userState);` add the conversation state and user state, respectively. Next, create and register state accesssors. Acessors created here are passed into the IBot-derived class on every turn. Modify the code to inclue user state as shown below:
 ```csharp
 services.AddSingleton<EchoBotAccessors>(sp =>
 {
@@ -116,8 +116,8 @@ services.AddSingleton<EchoBotAccessors>(sp =>
    ...
     var accessors = new BotAccessors(conversationState, userState)
     {
-        TopicState = conversationState.CreateProperty<TopicState>("TopicState"),
-        UserProfile = userState.CreateProperty<UserProfile>("UserProfile"),
+        TopicState = conversationState.CreateProperty<TopicState>(EchoBotAccessors.TopicStateName),
+        UserProfile = userState.CreateProperty<UserProfile>(EchoBotAccessors.UserProfileName),
      };
 
      return accessors;
