@@ -79,7 +79,7 @@ Properties to get the ConversationState is already defined, but you'll need to a
 public ConversationState ConversationState { get; }
 public UserState UserState { get; }
 ```
-After making the changes, save the file. Next, we will update the Startup class to create `UserState` object to persist anything at the user-scope. The `ConversationState` is already exists. 
+After making the changes, save the file. Next, we will update the Startup class to create `UserState` object to persist anything at the user-scope. The `ConversationState` already exists. 
 ```csharp
 
 services.AddBot<EchoWithCounterBot>(options =>
