@@ -73,7 +73,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contextId")</AttributeName>
         </Attribute>
       </Attributes>
@@ -98,7 +98,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameterName")</AttributeName>
         </Attribute>
       </Attributes>
@@ -123,7 +123,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameterType")</AttributeName>
         </Attribute>
       </Attributes>
@@ -148,7 +148,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="prompt")</AttributeName>
         </Attribute>
       </Attributes>
@@ -173,7 +173,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="status")</AttributeName>
         </Attribute>
       </Attributes>

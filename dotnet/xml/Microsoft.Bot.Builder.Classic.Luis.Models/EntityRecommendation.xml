@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -82,7 +82,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="endIndex")</AttributeName>
         </Attribute>
       </Attributes>
@@ -107,7 +107,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entity")</AttributeName>
         </Attribute>
       </Attributes>
@@ -132,7 +132,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(ItemConverterType=typeof(Microsoft.Bot.Builder.Classic.Luis.Models.EntityRecommendation/ResolutionConverter), PropertyName="resolution")</AttributeName>
         </Attribute>
       </Attributes>
@@ -157,7 +157,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="role")</AttributeName>
         </Attribute>
       </Attributes>
@@ -182,7 +182,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="score")</AttributeName>
         </Attribute>
       </Attributes>
@@ -207,7 +207,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startIndex")</AttributeName>
         </Attribute>
       </Attributes>
@@ -232,7 +232,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
         </Attribute>
       </Attributes>

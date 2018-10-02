@@ -10,7 +10,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,7 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
@@ -58,7 +58,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
@@ -108,7 +108,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="testTask" Type="System.Threading.Tasks.Task" />
@@ -137,7 +137,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -146,7 +146,7 @@
         <Parameter Name="expected" Type="Microsoft.Bot.Schema.IActivity" />
         <Parameter Name="description" Type="System.String">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
             </Attribute>
           </Attributes>
@@ -178,7 +178,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -187,7 +187,7 @@
         <Parameter Name="validateActivity" Type="System.Action&lt;Microsoft.Bot.Schema.IActivity&gt;" />
         <Parameter Name="description" Type="System.String">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
             </Attribute>
           </Attributes>
@@ -219,7 +219,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -254,7 +254,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -289,7 +289,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -319,7 +319,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -349,7 +349,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -398,7 +398,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -423,7 +423,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -462,7 +462,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -508,7 +508,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -533,6 +533,44 @@
       </Docs>
     </Member>
     <Member MemberName="Test">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.TestFlow Test (string userSays, Action&lt;Microsoft.Bot.Schema.IActivity&gt; validateActivity, string description = null, uint timeout = 3000);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Adapters.TestFlow Test(string userSays, class System.Action`1&lt;class Microsoft.Bot.Schema.IActivity&gt; validateActivity, string description, unsigned int32 timeout) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestFlow.Test(System.String,System.Action{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="VB.NET" Value="Public Function Test (userSays As String, validateActivity As Action(Of IActivity), Optional description As String = null, Optional timeout As UInteger = 3000) As TestFlow" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="member this.Test : string * Action&lt;Microsoft.Bot.Schema.IActivity&gt; * string * uint32 -&gt; Microsoft.Bot.Builder.Adapters.TestFlow" Usage="testFlow.Test (userSays, validateActivity, description, timeout)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userSays" Type="System.String" Index="0" />
+        <Parameter Name="validateActivity" Type="System.Action&lt;Microsoft.Bot.Schema.IActivity&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="description" Type="System.String" Index="2" />
+        <Parameter Name="timeout" Type="System.UInt32" Index="3" />
+      </Parameters>
+      <Docs>
+        <param name="userSays">The text of the message to send.</param>
+        <param name="validateActivity">A validation method to apply to an activity from the bot.
+            This activity should throw an exception if validation fails.</param>
+        <param name="description">A message to send if the actual response is not as expected.</param>
+        <param name="timeout">The amount of time in milliseconds within which a response is expected.</param>
+        <summary>
+            Shortcut for calling <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.Send(System.String)" /> followed by <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(System.Action{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" />.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> object that appends this exchange to the modeled exchange.</returns>
+        <remarks>This method does not modify the original <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> object.</remarks>
+        <exception cref="T:System.Exception">The bot did not respond as expected.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Test">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.TestFlow Test (string userSays, string expected, string description = null, uint timeout = 3000);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Adapters.TestFlow Test(string userSays, string expected, string description, unsigned int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestFlow.Test(System.String,System.String,System.String,System.UInt32)" />
@@ -545,7 +583,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -563,51 +601,6 @@
         <param name="timeout">The amount of time in milliseconds within which a response is expected.</param>
         <summary>
             Shortcut for calling <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.Send(System.String)" /> followed by <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(System.String,System.String,System.UInt32)" />.
-            </summary>
-        <returns>A new <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> object that appends this exchange to the modeled exchange.</returns>
-        <remarks>This method does not modify the original <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> object.</remarks>
-        <exception cref="T:System.Exception">The bot did not respond as expected.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Test">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.TestFlow Test (string userSays, Action&lt;Microsoft.Bot.Schema.IActivity&gt; expected, string description = null, uint timeout = 3000);" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Adapters.TestFlow Test(string userSays, class System.Action`1&lt;class Microsoft.Bot.Schema.IActivity&gt; expected, string description, unsigned int32 timeout) cil managed" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestFlow.Test(System.String,System.Action{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Function Test (userSays As String, expected As Action(Of IActivity), Optional description As String = null, Optional timeout As UInteger = 3000) As TestFlow" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.Test : string * Action&lt;Microsoft.Bot.Schema.IActivity&gt; * string * uint32 -&gt; Microsoft.Bot.Builder.Adapters.TestFlow" Usage="testFlow.Test (userSays, expected, description, timeout)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.TestFlow Test (string userSays, Action&lt;Microsoft.Bot.Schema.IActivity&gt; validateActivity, string description = null, uint timeout = 3000);" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Adapters.TestFlow Test(string userSays, class System.Action`1&lt;class Microsoft.Bot.Schema.IActivity&gt; validateActivity, string description, unsigned int32 timeout) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestFlow.Test(System.String,System.Action{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="VB.NET" Value="Public Function Test (userSays As String, validateActivity As Action(Of IActivity), Optional description As String = null, Optional timeout As UInteger = 3000) As TestFlow" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="F#" Value="member this.Test : string * Action&lt;Microsoft.Bot.Schema.IActivity&gt; * string * uint32 -&gt; Microsoft.Bot.Builder.Adapters.TestFlow" Usage="testFlow.Test (userSays, validateActivity, description, timeout)" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="userSays" Type="System.String" Index="0" />
-        <Parameter Name="expected" Type="System.Action&lt;Microsoft.Bot.Schema.IActivity&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-preview" />
-        <Parameter Name="validateActivity" Type="System.Action&lt;Microsoft.Bot.Schema.IActivity&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="description" Type="System.String" Index="2" />
-        <Parameter Name="timeout" Type="System.UInt32" Index="3" />
-      </Parameters>
-      <Docs>
-        <param name="userSays">The text of the message to send.</param>
-        <param name="expected"></param>
-        <param name="validateActivity">A validation method to apply to an activity from the bot.
-            This activity should throw an exception if validation fails.</param>
-        <param name="description">A message to send if the actual response is not as expected.</param>
-        <param name="timeout">The amount of time in milliseconds within which a response is expected.</param>
-        <summary>
-            Shortcut for calling <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.Send(System.String)" /> followed by <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(System.Action{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" />.
             </summary>
         <returns>A new <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> object that appends this exchange to the modeled exchange.</returns>
         <remarks>This method does not modify the original <see cref="T:Microsoft.Bot.Builder.Adapters.TestFlow" /> object.</remarks>

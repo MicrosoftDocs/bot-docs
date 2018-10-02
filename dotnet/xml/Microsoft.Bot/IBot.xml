@@ -15,7 +15,6 @@
             </summary>
     <remarks>A <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> passes incoming activities from the user's 
             channel to the bot's <see cref="M:Microsoft.Bot.IBot.OnTurn(Microsoft.Bot.Builder.ITurnContext)" /> method.</remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
     <example>
             This defines a bot that responds with "Hello world!" to any incoming message.
             <code>
@@ -30,6 +29,7 @@
                 }
             }
             </code></example>
+    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
   </Docs>
   <Members>
     <Member MemberName="OnTurn">

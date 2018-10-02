@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -74,7 +74,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="actions")</AttributeName>
         </Attribute>
       </Attributes>
@@ -99,7 +99,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="intent")</AttributeName>
         </Attribute>
       </Attributes>
@@ -124,7 +124,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="score")</AttributeName>
         </Attribute>
       </Attributes>

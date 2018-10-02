@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type ITraceActivity = interface&#xA;    interface IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -30,8 +29,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -53,8 +51,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,8 +73,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -99,8 +95,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -122,8 +117,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

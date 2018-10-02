@@ -13,10 +13,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>System.CodeDom.Compiler.GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
     </Attribute>
   </Attributes>
@@ -397,7 +397,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -762,7 +762,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>

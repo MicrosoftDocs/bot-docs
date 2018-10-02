@@ -28,7 +28,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.ComponentModel.Description("future")</AttributeName>
         </Attribute>
       </Attributes>
@@ -52,7 +52,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.ComponentModel.Description("past")</AttributeName>
         </Attribute>
       </Attributes>
@@ -76,7 +76,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.ComponentModel.Description("present")</AttributeName>
         </Attribute>
       </Attributes>

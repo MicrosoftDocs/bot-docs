@@ -6,11 +6,11 @@
   <TypeSignature Language="F#" Value="type ConfigurationChannelProvider = class&#xA;    inherit SimpleChannelProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Connector.Authentication.SimpleChannelProvider</BaseTypeName>
@@ -35,7 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,7 +52,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
@@ -72,11 +72,11 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

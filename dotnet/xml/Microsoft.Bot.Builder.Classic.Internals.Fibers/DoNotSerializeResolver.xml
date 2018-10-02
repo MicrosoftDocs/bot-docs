@@ -84,7 +84,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Classic.Internals.Fibers.DoNotSerializeResolver/&lt;Services&gt;d__3))</AttributeName>
         </Attribute>
       </Attributes>

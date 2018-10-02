@@ -1,0 +1,75 @@
+﻿<Type Name="LanguageResources" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources">
+  <TypeSignature Language="C#" Value="public class LanguageResources" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LanguageResources extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources" />
+  <TypeSignature Language="VB.NET" Value="Public Class LanguageResources" />
+  <TypeSignature Language="F#" Value="type LanguageResources = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LanguageResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Articles">
+      <MemberSignature Language="C#" Value="public readonly System.Collections.Generic.HashSet&lt;string&gt; Articles;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class System.Collections.Generic.HashSet`1&lt;string&gt; Articles" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources.Articles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Articles As HashSet(Of String) " />
+      <MemberSignature Language="F#" Value="val mutable Articles : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources.Articles" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopWords">
+      <MemberSignature Language="C#" Value="public readonly System.Collections.Generic.HashSet&lt;string&gt; StopWords;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class System.Collections.Generic.HashSet`1&lt;string&gt; StopWords" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources.StopWords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly StopWords As HashSet(Of String) " />
+      <MemberSignature Language="F#" Value="val mutable StopWords : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources.StopWords" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

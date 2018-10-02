@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type ErrorResponseException = class&#xA;    inherit RestException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.RestException</BaseTypeName>
@@ -29,8 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,8 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -72,8 +69,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -97,8 +93,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ErrorResponse</ReturnType>
@@ -120,8 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.HttpRequestMessageWrapper</ReturnType>
@@ -143,8 +137,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.HttpResponseMessageWrapper</ReturnType>

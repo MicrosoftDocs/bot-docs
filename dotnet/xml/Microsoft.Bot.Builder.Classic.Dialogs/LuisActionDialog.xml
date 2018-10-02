@@ -17,10 +17,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>

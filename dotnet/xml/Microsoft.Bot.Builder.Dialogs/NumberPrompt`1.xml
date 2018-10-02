@@ -6,15 +6,13 @@
   <TypeSignature Language="F#" Value="type NumberPrompt&lt;'T&gt; = class&#xA;    inherit Prompt&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
   <Base>
-    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt;</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="botbuilder-dotnet-stable">Microsoft.Bot.Builder.Dialogs.Prompt&lt;T&gt;</BaseTypeName>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;T&gt;</BaseTypeName>
     <BaseTypeArguments>
       <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
     </BaseTypeArguments>
@@ -27,50 +25,6 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected NumberPrompt (Microsoft.Bot.Builder.Prompts.NumberPrompt&lt;T&gt; prompt, Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt; validator = null);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Prompts.NumberPrompt`1&lt;!T&gt; prompt, class Microsoft.Bot.Builder.Prompts.PromptValidatorEx/PromptValidator`1&lt;class Microsoft.Bot.Builder.Prompts.NumberResult`1&lt;!T&gt;&gt; validator) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.#ctor(Microsoft.Bot.Builder.Prompts.NumberPrompt{`0},Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator{Microsoft.Bot.Builder.Prompts.NumberResult{`0}})" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (prompt As NumberPrompt(Of T), Optional validator As PromptValidatorEx.PromptValidator(Of NumberResult(Of T)) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt; : Microsoft.Bot.Builder.Prompts.NumberPrompt&lt;'T&gt; * Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;'T&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt; (prompt, validator)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="prompt" Type="Microsoft.Bot.Builder.Prompts.NumberPrompt&lt;T&gt;" />
-        <Parameter Name="validator" Type="Microsoft.Bot.Builder.Prompts.PromptValidatorEx+PromptValidator&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="prompt">To be added.</param>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NumberPrompt (string culture, Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt; validator = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string culture, class Microsoft.Bot.Builder.Prompts.PromptValidatorEx/PromptValidator`1&lt;class Microsoft.Bot.Builder.Prompts.NumberResult`1&lt;!T&gt;&gt; validator) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.#ctor(System.String,Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator{Microsoft.Bot.Builder.Prompts.NumberResult{`0}})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As String, Optional validator As PromptValidatorEx.PromptValidator(Of NumberResult(Of T)) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt; : string * Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;'T&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt; (culture, validator)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="culture" Type="System.String" />
-        <Parameter Name="validator" Type="Microsoft.Bot.Builder.Prompts.PromptValidatorEx+PromptValidator&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="culture">To be added.</param>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NumberPrompt (string dialogId, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;T&gt; validator = null, string defaultLocale = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;!T&gt; validator, string defaultLocale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{`0},System.String)" />
@@ -79,7 +33,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -103,7 +57,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -111,34 +65,6 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnPrompt">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnPrompt (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OnPrompt(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.OnPrompt(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnPrompt (dc As DialogContext, options As PromptOptions, isRetry As Boolean) As Task" />
-      <MemberSignature Language="F#" Value="override this.OnPrompt : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.PromptOptions * bool -&gt; System.Threading.Tasks.Task" Usage="numberPrompt.OnPrompt (dc, options, isRetry)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
-        <Parameter Name="isRetry" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="isRetry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +76,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -173,32 +99,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnRecognize">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt; OnRecognize (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Prompts.NumberResult`1&lt;!T&gt;&gt; OnRecognize(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.OnRecognize(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.PromptOptions)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRecognize (dc As DialogContext, options As PromptOptions) As Task(Of NumberResult(Of T))" />
-      <MemberSignature Language="F#" Value="override this.OnRecognize : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.PromptOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;'T&gt;&gt;" Usage="numberPrompt.OnRecognize (dc, options)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.NumberResult&lt;T&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
-      </Parameters>
-      <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnRecognizeAsync">
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;&gt; OnRecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1&lt;!T&gt;&gt; OnRecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -207,7 +107,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;&gt;</ReturnType>

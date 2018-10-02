@@ -50,7 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.JObjectSurrogate.Microsoft#Bot#Builder#Classic#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Classic.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Classic</AssemblyName>

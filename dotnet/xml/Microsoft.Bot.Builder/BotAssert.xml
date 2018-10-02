@@ -10,7 +10,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,7 +56,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -87,7 +87,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -106,11 +106,6 @@
       </Docs>
     </Member>
     <Member MemberName="ContextNotNull">
-      <MemberSignature Language="C#" Value="public static void ContextNotNull (Microsoft.Bot.Builder.ITurnContext context);" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ContextNotNull(class Microsoft.Bot.Builder.ITurnContext context) cil managed" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.ContextNotNull(Microsoft.Bot.Builder.ITurnContext)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub ContextNotNull (context As ITurnContext)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="F#" Value="static member ContextNotNull : Microsoft.Bot.Builder.ITurnContext -&gt; unit" Usage="Microsoft.Bot.Builder.BotAssert.ContextNotNull context" FrameworkAlternate="botbuilder-dotnet-preview" />
       <MemberSignature Language="C#" Value="public static void ContextNotNull (Microsoft.Bot.Builder.ITurnContext turnContext);" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ContextNotNull(class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotAssert.ContextNotNull(Microsoft.Bot.Builder.ITurnContext)" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -123,17 +118,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
         <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
-        <param name="context">The context object.</param>
         <param name="turnContext">The context object.</param>
         <summary>
             Checks that a context object is not <c>null</c>.
@@ -156,7 +149,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -187,7 +180,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -218,7 +211,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

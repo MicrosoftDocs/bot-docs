@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>System.Obsolete("Please use SuggestedActions instead.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,7 +56,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
         </Attribute>
       </Attributes>
@@ -100,7 +100,7 @@
         <AssemblyVersion>4.0.0.46</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
         </Attribute>
       </Attributes>

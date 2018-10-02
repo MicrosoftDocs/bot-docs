@@ -13,10 +13,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
       <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,7 +39,7 @@
       <Parameters>
         <Parameter Name="alternatives" Type="System.String[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

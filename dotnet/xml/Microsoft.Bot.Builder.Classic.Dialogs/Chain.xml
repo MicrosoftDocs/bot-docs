@@ -583,7 +583,7 @@
         <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Classic.Dialogs.IDialog&lt;T&gt;" RefType="this" />
         <Parameter Name="cases" Type="Microsoft.Bot.Builder.Classic.Dialogs.ICase&lt;T,R&gt;[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

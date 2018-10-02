@@ -31,8 +31,8 @@
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.String,System.Double&gt;</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+          <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "intent", "score" })</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>

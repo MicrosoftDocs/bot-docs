@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type Dialog = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,22 +20,6 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected Dialog ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Dialog.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Dialog (string dialogId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Dialog.#ctor(System.String)" />
@@ -45,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -53,38 +36,6 @@
       <Docs>
         <param name="dialogId">To be added.</param>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Begin">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt; Begin (Microsoft.Bot.Builder.ITurnContext context, System.Collections.Generic.IDictionary&lt;string,object&gt; state, System.Collections.Generic.IDictionary&lt;string,object&gt; options = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt; Begin(class Microsoft.Bot.Builder.ITurnContext context, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Dialog.Begin(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Begin (context As ITurnContext, state As IDictionary(Of String, Object), Optional options As IDictionary(Of String, Object) = null) As Task(Of DialogCompletion)" />
-      <MemberSignature Language="F#" Value="member this.Begin : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt;" Usage="dialog.Begin (context, state, options)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
-        <Parameter Name="state" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
-        <Parameter Name="options" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="context">Context for the current turn of the conversation with the user.</param>
-        <param name="state">A state object that the dialog will use to persist its current state. This should be an empty object which the dialog will populate. The bot should persist this with its other conversation state for as long as the dialog is still active.</param>
-        <param name="options">(Optional) additional options supported by the dialog.</param>
-        <summary>
-            Starts the dialog. Depending on the dialog, its possible for the dialog to finish 
-            immediately so it's advised to check the completion object returned by `begin()` and ensure 
-            that the dialog is still active before continuing.
-            </summary>
-        <returns>DialogCompletion result</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +47,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -117,37 +68,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Continue">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt; Continue (Microsoft.Bot.Builder.ITurnContext context, System.Collections.Generic.IDictionary&lt;string,object&gt; state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt; Continue(class Microsoft.Bot.Builder.ITurnContext context, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Dialog.Continue(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Continue (context As ITurnContext, state As IDictionary(Of String, Object)) As Task(Of DialogCompletion)" />
-      <MemberSignature Language="F#" Value="member this.Continue : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt;" Usage="dialog.Continue (context, state)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogCompletion&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
-        <Parameter Name="state" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="context">Context for the current turn of the conversation with the user.</param>
-        <param name="state">A state object that was previously initialized by a call to [begin()](#begin).</param>
-        <summary>
-            Passes a users reply to the dialog for further processing.The bot should keep calling 
-            'continue()' for future turns until the dialog returns a completion object with 
-            'isCompleted == true'. To cancel or interrupt the prompt simply delete the `state` object
-            being persisted.     
-            </summary>
-        <returns>DialogCompletion result</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ContinueDialogAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -156,7 +76,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -186,7 +106,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -216,7 +136,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnResult</ReturnType>
@@ -235,7 +155,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -254,7 +174,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -281,7 +201,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>

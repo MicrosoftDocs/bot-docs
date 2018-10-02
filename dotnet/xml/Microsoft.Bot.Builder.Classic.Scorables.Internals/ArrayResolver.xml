@@ -54,7 +54,7 @@
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Classic.Scorables.Internals.IResolver" />
         <Parameter Name="services" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

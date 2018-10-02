@@ -1,0 +1,163 @@
+﻿<Type Name="BotStateData" FullName="Microsoft.Bot.Connector.BotStateData">
+  <TypeSignature Language="C#" Value="public class BotStateData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotStateData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotStateData" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotStateData" />
+  <TypeSignature Language="F#" Value="type BotStateData = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotStateData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotStateData (string conversationId = null, string userId = null, string data = null, Nullable&lt;DateTimeOffset&gt; lastModified = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conversationId, string userId, string data, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateData.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional conversationId As String = null, Optional userId As String = null, Optional data As String = null, Optional lastModified As Nullable(Of DateTimeOffset) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotStateData : string * string * string * Nullable&lt;DateTimeOffset&gt; -&gt; Microsoft.Bot.Connector.BotStateData" Usage="new Microsoft.Bot.Connector.BotStateData (conversationId, userId, data, lastModified)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="lastModified" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="lastModified">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationId">
+      <MemberSignature Language="C#" Value="public string ConversationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConversationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateData.ConversationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationId As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationId : string with get, set" Usage="Microsoft.Bot.Connector.BotStateData.ConversationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversationId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public string Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Data" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateData.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As String" />
+      <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="Microsoft.Bot.Connector.BotStateData.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="data")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; LastModified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastModified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateData.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModified As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastModified : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Bot.Connector.BotStateData.LastModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastModified")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserId">
+      <MemberSignature Language="C#" Value="public string UserId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateData.UserId" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserId As String" />
+      <MemberSignature Language="F#" Value="member this.UserId : string with get, set" Usage="Microsoft.Bot.Connector.BotStateData.UserId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="userId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

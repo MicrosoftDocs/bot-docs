@@ -10,13 +10,12 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
     <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
     <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" />
     <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Index="2" />
@@ -25,7 +24,6 @@
     <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">The context object for the turn.</param>
     <param name="turnContext">The context object for the turn.</param>
     <param name="activity">The replacement activity.</param>
     <param name="next">The delegate to call to continue event processing.</param>

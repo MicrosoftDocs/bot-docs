@@ -100,7 +100,7 @@
         <Parameter Name="field" Type="Microsoft.Bot.Builder.Classic.FormFlow.Advanced.IField&lt;T&gt;" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

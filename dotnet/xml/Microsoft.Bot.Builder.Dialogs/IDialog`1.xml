@@ -1,0 +1,58 @@
+﻿<Type Name="IDialog&lt;TResult&gt;" FullName="Microsoft.Bot.Builder.Dialogs.IDialog&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public interface IDialog&lt;out TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog`1&lt;+ TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialog(Of Out TResult)" />
+  <TypeSignature Language="F#" Value="type IDialog&lt;'Result&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TResult">The result type.</typeparam>
+    <summary>
+            A <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialog`1" /> is a suspendable conversational process that produces a result of type <typeparamref name="TResult" />.
+            </summary>
+    <remarks>
+            Dialogs can call child dialogs or send messages to a user.
+            Dialogs are suspended when waiting for a message from the user to the bot.
+            Dialogs are resumed when the bot receives a message from the user.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (context As IDialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task" Usage="iDialog.StartAsync context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The dialog context.</param>
+        <summary>
+            The start of the code that represents the conversational dialog.
+            </summary>
+        <returns>A task that represents the dialog start.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
