@@ -1709,9 +1709,22 @@
     <Type Name="Microsoft.Bot.Builder.History.IActivityLogger" Id="T:Microsoft.Bot.Builder.History.IActivityLogger">
       <Member Id="M:Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.History.IActivityManager" Id="T:Microsoft.Bot.Builder.History.IActivityManager">
+      <Member Id="M:Microsoft.Bot.Builder.History.IActivityManager.DeleteBeforeAsync(System.DateTime,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.History.IActivityManager.DeleteConversationAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.History.IActivityManager.DeleteUserActivitiesAsync(System.String,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.History.IActivitySource" Id="T:Microsoft.Bot.Builder.History.IActivitySource">
+      <Member Id="M:Microsoft.Bot.Builder.History.IActivitySource.Activities(System.String,System.String,System.DateTime)" />
+      <Member Id="M:Microsoft.Bot.Builder.History.IActivitySource.WalkActivitiesAsync(System.Func{Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task},System.String,System.String,System.DateTime,System.Threading.CancellationToken)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.History.NullActivityLogger" Id="T:Microsoft.Bot.Builder.History.NullActivityLogger">
       <Member Id="M:Microsoft.Bot.Builder.History.NullActivityLogger.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.History.NullActivityLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.History.ReplayTranscript" Id="T:Microsoft.Bot.Builder.History.ReplayTranscript">
+      <Member Id="M:Microsoft.Bot.Builder.History.ReplayTranscript.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Func{Microsoft.Bot.Connector.IActivity,System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.History.ReplayTranscript.Replay(Microsoft.Bot.Connector.IActivity)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.History.TraceActivityLogger" Id="T:Microsoft.Bot.Builder.History.TraceActivityLogger">
       <Member Id="M:Microsoft.Bot.Builder.History.TraceActivityLogger.#ctor" />
