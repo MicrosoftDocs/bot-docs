@@ -34,13 +34,11 @@ You can extrapolate from the steps in this article to add such features to an ex
 
 | Sample | BotBuilder version | Description |
 |:---|:---:|:---|
-| [AadV1Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV1Bot) | v3 | Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v1 endpoint |
-| [AadV2Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV2Bot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v2 endpoint |
-| [GitHubBot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/GitHubBot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using GitHub |
-| [BasicOAuth](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/Microsoft.Bot.Sample.BasicOAuth) | v3 |  Demonstrates OAuth 2.0 support in the v3 C# SDK |
+| [AadV2Bot](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/24.bot-authentication-msgraph) | v4 |  Demonstrates OAuthCard support in the v4 C# SDK, using the Azure AD v2 endpoint, as well as accessing Microsoft Graph |
+| [BasicOAuth](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/18.bot-authentication) | v4 |  Demonstrates OAuth 2.0 support in the v4 C# SDK |
 
 > [!NOTE]
-> The authentication features also work with Node.js with BotBuilder v3. However, this article covers just sample C# code.
+> The authentication features also work with Node.js with BotBuilder v4. However, this article covers just sample C# code.
 
 For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help).
 
