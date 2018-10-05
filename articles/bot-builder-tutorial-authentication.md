@@ -6,7 +6,7 @@ ms.author: JonathanFingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/27/2018
+ms.date: 10/04/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 
@@ -34,10 +34,10 @@ You can extrapolate from the steps in this article to add such features to an ex
 
 | Sample | BotBuilder version | Description |
 |:---|:---:|:---|
-| [AadV1Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV1Bot) | v3 | Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v1 endpoint |
-| [AadV2Bot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AadV2Bot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v2 endpoint |
-| [GitHubBot](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/GitHubBot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using GitHub |
-| [BasicOAuth](https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/Microsoft.Bot.Sample.BasicOAuth) | v3 |  Demonstrates OAuth 2.0 support in the v3 C# SDK |
+| [AadV1Bot](https://aka.ms/AadV1Bot) | v3 | Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v1 endpoint |
+| [AadV2Bot](https://aka.ms/AadV2Bot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using the Azure AD v2 endpoint |
+| [GitHubBot](https://aka.ms/GitHubBot) | v3 |  Demonstrates OAuthCard support in the v3 C# SDK, using GitHub |
+| [BasicOAuth](https://aka.ms/BasicOAuth) | v3 |  Demonstrates OAuth 2.0 support in the v3 C# SDK |
 
 > [!NOTE]
 > The authentication features also work with Node.js with BotBuilder v3. However, this article covers just sample C# code.
