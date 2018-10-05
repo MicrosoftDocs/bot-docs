@@ -5,10 +5,6 @@
   <TypeSignature Language="VB.NET" Value="Public Module ITurnContextExtensions" />
   <TypeSignature Language="F#" Value="type ITurnContextExtensions = class" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,46 +19,6 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="TraceActivity">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivity (this Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value = null, string valueType = null, string label = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivity(class Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value, string valueType, string label) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivity(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TraceActivity (turnContext As ITurnContext, name As String, Optional value As Object = null, Optional valueType As String = null, Optional label As String = null) As Task(Of ResourceResponse)" />
-      <MemberSignature Language="F#" Value="static member TraceActivity : Microsoft.Bot.Builder.ITurnContext * string * obj * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivity (turnContext, name, value, valueType, label)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" RefType="this" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" />
-        <Parameter Name="valueType" Type="System.String" />
-        <Parameter Name="label" Type="System.String">
-          <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="turnContext"></param>
-        <param name="name">Name of the operation</param>
-        <param name="value">value of the operation</param>
-        <param name="valueType">valueType if helpful to identify the value schema (default is value.GetType().Name)</param>
-        <param name="label">descritive label of context. (Default is calling function name)</param>
-        <summary>
-            Send a TraceActivity to transcript and/or emulator if attached
-            </summary>
-        <returns />
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="TraceActivityAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivityAsync (this Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value = null, string valueType = null, string label = null, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value, string valueType, string label, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />

@@ -5,10 +5,6 @@
   <TypeSignature Language="VB.NET" Value="Public Delegate Function UpdateActivityHandler(turnContext As ITurnContext, activity As Activity, next As Func(Of Task(Of ResourceResponse))) As Task(Of ResourceResponse) " />
   <TypeSignature Language="F#" Value="type UpdateActivityHandler = delegate of ITurnContext * Activity * Func&lt;Task&lt;ResourceResponse&gt;&gt; -&gt; Task&lt;ResourceResponse&gt;" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
@@ -16,9 +12,9 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-    <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" />
-    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" Index="2" />
+    <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+    <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
