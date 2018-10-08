@@ -65,7 +65,7 @@ Thanks to the template, your project contains all of the code that's necessary t
 
 ## Start your bot
 
-Change directories to the one created for your bot, and start it. At this point, your bot is running locally. 
+In Powershell/Bash change directories to the one created for your bot, and start it by with `npm start`. At this point, your bot is running locally.
 
 ## Start the emulator and connect your bot
 1. Start the emulator.

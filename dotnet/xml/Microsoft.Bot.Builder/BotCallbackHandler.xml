@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type BotCallbackHandler = delegate of ITurnContext * CancellationToken -&gt; Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

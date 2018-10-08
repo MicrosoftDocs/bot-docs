@@ -5,12 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class MiddlewareSet&#xA;Implements IMiddleware" />
   <TypeSignature Language="F#" Value="type MiddlewareSet = class&#xA;    interface IMiddleware" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,45 +30,12 @@
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnTurn">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurn (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.MiddlewareSet.NextDelegate next);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurn(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Builder.MiddlewareSet/NextDelegate next) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MiddlewareSet.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)" />
-      <MemberSignature Language="VB.NET" Value="Public Function OnTurn (context As ITurnContext, next As MiddlewareSet.NextDelegate) As Task" />
-      <MemberSignature Language="F#" Value="abstract member OnTurn : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.MiddlewareSet.NextDelegate -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurn : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.MiddlewareSet.NextDelegate -&gt; System.Threading.Tasks.Task" Usage="middlewareSet.OnTurn (context, next)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurn(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.MiddlewareSet.NextDelegate)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
-        <Parameter Name="next" Type="Microsoft.Bot.Builder.MiddlewareSet+NextDelegate" />
-      </Parameters>
-      <Docs>
-        <param name="context">To be added.</param>
-        <param name="next">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +50,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -109,60 +72,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ReceiveActivity">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReceiveActivity (Microsoft.Bot.Builder.ITurnContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReceiveActivity(class Microsoft.Bot.Builder.ITurnContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MiddlewareSet.ReceiveActivity(Microsoft.Bot.Builder.ITurnContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ReceiveActivity (context As ITurnContext) As Task" />
-      <MemberSignature Language="F#" Value="member this.ReceiveActivity : Microsoft.Bot.Builder.ITurnContext -&gt; System.Threading.Tasks.Task" Usage="middlewareSet.ReceiveActivity context" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
-      </Parameters>
-      <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ReceiveActivityWithStatus">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReceiveActivityWithStatus (Microsoft.Bot.Builder.ITurnContext context, Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt; callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReceiveActivityWithStatus(class Microsoft.Bot.Builder.ITurnContext context, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, class System.Threading.Tasks.Task&gt; callback) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MiddlewareSet.ReceiveActivityWithStatus(Microsoft.Bot.Builder.ITurnContext,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task})" />
-      <MemberSignature Language="VB.NET" Value="Public Function ReceiveActivityWithStatus (context As ITurnContext, callback As Func(Of ITurnContext, Task)) As Task" />
-      <MemberSignature Language="F#" Value="member this.ReceiveActivityWithStatus : Microsoft.Bot.Builder.ITurnContext * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="middlewareSet.ReceiveActivityWithStatus (context, callback)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
-        <Parameter Name="callback" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="context">To be added.</param>
-        <param name="callback">To be added.</param>
-        <summary>
-            Intended to be called from Bot, this method performs exactly the same as the
-            standard ReceiveActivity, except that it runs a user-defined delegate returns 
-            if all Middlware in the receive pipeline was run.
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ReceiveActivityWithStatusAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReceiveActivityWithStatusAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.BotCallbackHandler callback, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReceiveActivityWithStatusAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.BotCallbackHandler callback, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -171,7 +80,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -201,12 +110,8 @@
       <MemberSignature Language="F#" Value="member this.Use : Microsoft.Bot.Builder.IMiddleware -&gt; Microsoft.Bot.Builder.MiddlewareSet" Usage="middlewareSet.Use middleware" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.MiddlewareSet</ReturnType>

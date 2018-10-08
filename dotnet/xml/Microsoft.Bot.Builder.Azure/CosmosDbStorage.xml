@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type CosmosDbStorage = class&#xA;    interface IStorage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
@@ -43,77 +42,6 @@
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbStorage" /> class.
             using the provided CosmosDB credentials, database ID, and collection ID.
             </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CosmosDbStorage (Uri serviceEndpoint, string authKey, string databaseId, string collectionId, Action&lt;Microsoft.Azure.Documents.Client.ConnectionPolicy&gt; connectionPolicyConfigurator = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri serviceEndpoint, string authKey, string databaseId, string collectionId, class System.Action`1&lt;class Microsoft.Azure.Documents.Client.ConnectionPolicy&gt; connectionPolicyConfigurator) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.#ctor(System.Uri,System.String,System.String,System.String,System.Action{Microsoft.Azure.Documents.Client.ConnectionPolicy})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceEndpoint As Uri, authKey As String, databaseId As String, collectionId As String, Optional connectionPolicyConfigurator As Action(Of ConnectionPolicy) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbStorage : Uri * string * string * string * Action&lt;Microsoft.Azure.Documents.Client.ConnectionPolicy&gt; -&gt; Microsoft.Bot.Builder.Azure.CosmosDbStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbStorage (serviceEndpoint, authKey, databaseId, collectionId, connectionPolicyConfigurator)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="serviceEndpoint" Type="System.Uri" />
-        <Parameter Name="authKey" Type="System.String" />
-        <Parameter Name="databaseId" Type="System.String" />
-        <Parameter Name="collectionId" Type="System.String" />
-        <Parameter Name="connectionPolicyConfigurator" Type="System.Action&lt;Microsoft.Azure.Documents.Client.ConnectionPolicy&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="serviceEndpoint">The URI of the service endpoint for the Azure Cosmos DB service.</param>
-        <param name="authKey">The AuthKey used by the client from the Azure Cosmos DB service.</param>
-        <param name="databaseId">The database ID.</param>
-        <param name="collectionId">The collection ID.</param>
-        <param name="connectionPolicyConfigurator">A connection policy delegate.</param>
-        <summary>
-            Creates a new <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbStorage" /> object,
-            using the provided CosmosDB credentials, database ID, and collection ID.
-            </summary>
-        <remarks>
-            You can use the <paramref name="connectionPolicyConfigurator" /> delegate to 
-            further customize the connection to CosmosDB, 
-            such as setting connection mode, retry options, timeouts, and so on.
-            See https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.connectionpolicy?view=azure-dotnet
-            for more information.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Delete (params string[] keys);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Delete(string[] keys) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.Delete(System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Function Delete (ParamArray keys As String()) As Task" />
-      <MemberSignature Language="F#" Value="abstract member Delete : string[] -&gt; System.Threading.Tasks.Task&#xA;override this.Delete : string[] -&gt; System.Threading.Tasks.Task" Usage="cosmosDbStorage.Delete keys" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IStorage.Delete(System.String[])</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="keys" Type="System.String[]">
-          <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="keys">Array of item keys to remove from the store.</param>
-        <summary>
-            Removes store items from storage.
-            </summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +56,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -150,41 +78,6 @@
         <altmember cref="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)" />
       </Docs>
     </Member>
-    <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;&gt; Read (params string[] keys);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;&gt; Read(string[] keys) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.Read(System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Function Read (ParamArray keys As String()) As Task(Of IEnumerable(Of KeyValuePair(Of String, Object)))" />
-      <MemberSignature Language="F#" Value="abstract member Read : string[] -&gt; System.Threading.Tasks.Task&lt;seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;&gt;&#xA;override this.Read : string[] -&gt; System.Threading.Tasks.Task&lt;seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;&gt;" Usage="cosmosDbStorage.Read keys" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IStorage.Read(System.String[])</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="keys" Type="System.String[]">
-          <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="keys">Array of item keys to read from the store.</param>
-        <summary>
-            Loads store items from storage.
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ReadAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; ReadAsync (string[] keys, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; ReadAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -196,7 +89,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -228,7 +121,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -247,35 +140,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Write (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; changes);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Write(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; changes) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.Write(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Write (changes As IEnumerable(Of KeyValuePair(Of String, Object))) As Task" />
-      <MemberSignature Language="F#" Value="abstract member Write : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.Write : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Threading.Tasks.Task" Usage="cosmosDbStorage.Write changes" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IStorage.Write(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="changes" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="changes">Map of items to write to storage.</param>
-        <summary>
-            Saves store items to storage.
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (System.Collections.Generic.IDictionary&lt;string,object&gt; changes, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; changes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -287,7 +151,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

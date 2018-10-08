@@ -47,6 +47,7 @@ To create the solution for the Direct Line bot, in Visual Studio 2015 or later:
     - Microsoft.Bot.Builder
     - Microsoft.Bot.Builder.Core.Extensions
     - Microsoft.Bot.Builder.Integration.AspNet.Core
+    - Microsoft.Rest.ClientRuntime
     - Newtonsoft.Json
 
 ### Create the appsettings.json file

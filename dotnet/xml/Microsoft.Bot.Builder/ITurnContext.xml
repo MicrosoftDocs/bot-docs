@@ -5,12 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Interface ITurnContext" />
   <TypeSignature Language="F#" Value="type ITurnContext = interface" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -20,9 +16,8 @@
     <remarks>Context provides information needed to process an incoming activity.
             The context object is created by a <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> and persists for the
             length of the turn.</remarks>
-    <altmember cref="T:Microsoft.Bot.IBot" />
-    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
     <altmember cref="T:Microsoft.Bot.Builder.IBot" />
+    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
   </Docs>
   <Members>
     <Member MemberName="Activity">
@@ -33,12 +28,8 @@
       <MemberSignature Language="F#" Value="member this.Activity : Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.ITurnContext.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -59,12 +50,8 @@
       <MemberSignature Language="F#" Value="member this.Adapter : Microsoft.Bot.Builder.BotAdapter" Usage="Microsoft.Bot.Builder.ITurnContext.Adapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
@@ -77,58 +64,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DeleteActivity">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivity (Microsoft.Bot.Schema.ConversationReference conversationReference);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivity(class Microsoft.Bot.Schema.ConversationReference conversationReference) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITurnContext.DeleteActivity(Microsoft.Bot.Schema.ConversationReference)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteActivity : Microsoft.Bot.Schema.ConversationReference -&gt; System.Threading.Tasks.Task" Usage="iTurnContext.DeleteActivity conversationReference" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="conversationReference" Type="Microsoft.Bot.Schema.ConversationReference" />
-      </Parameters>
-      <Docs>
-        <param name="conversationReference">The conversation containing the activity to delete.</param>
-        <summary>
-            Deletes an existing activity.
-            </summary>
-        <returns>A task that represents the work queued to execute.</returns>
-        <remarks>The conversation reference's <see cref="P:Microsoft.Bot.Schema.ConversationReference.ActivityId" /> 
-            indicates the activity in the conversation to delete.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DeleteActivity">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivity (string activityId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivity(string activityId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITurnContext.DeleteActivity(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteActivity (activityId As String) As Task" />
-      <MemberSignature Language="F#" Value="abstract member DeleteActivity : string -&gt; System.Threading.Tasks.Task" Usage="iTurnContext.DeleteActivity activityId" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="activityId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="activityId">The ID of the activity to delete.</param>
-        <summary>
-            Deletes an existing activity.
-            </summary>
-        <returns>A task that represents the work queued to execute.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="DeleteActivityAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivityAsync (Microsoft.Bot.Schema.ConversationReference conversationReference, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(class Microsoft.Bot.Schema.ConversationReference conversationReference, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -137,7 +72,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -170,7 +105,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -201,12 +136,8 @@
       <MemberSignature Language="F#" Value="abstract member OnDeleteActivity : Microsoft.Bot.Builder.DeleteActivityHandler -&gt; Microsoft.Bot.Builder.ITurnContext" Usage="iTurnContext.OnDeleteActivity handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -241,12 +172,8 @@
       <MemberSignature Language="F#" Value="abstract member OnSendActivities : Microsoft.Bot.Builder.SendActivitiesHandler -&gt; Microsoft.Bot.Builder.ITurnContext" Usage="iTurnContext.OnSendActivities handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -281,12 +208,8 @@
       <MemberSignature Language="F#" Value="abstract member OnUpdateActivity : Microsoft.Bot.Builder.UpdateActivityHandler -&gt; Microsoft.Bot.Builder.ITurnContext" Usage="iTurnContext.OnUpdateActivity handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -318,12 +241,8 @@
       <MemberSignature Language="F#" Value="member this.Responded : bool" Usage="Microsoft.Bot.Builder.ITurnContext.Responded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -337,34 +256,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SendActivities">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivities (Microsoft.Bot.Schema.IActivity[] activities);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivities(class Microsoft.Bot.Schema.IActivity[] activities) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITurnContext.SendActivities(Microsoft.Bot.Schema.IActivity[])" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivities (activities As IActivity()) As Task(Of ResourceResponse())" />
-      <MemberSignature Language="F#" Value="abstract member SendActivities : Microsoft.Bot.Schema.IActivity[] -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;" Usage="iTurnContext.SendActivities activities" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="activities" Type="Microsoft.Bot.Schema.IActivity[]" />
-      </Parameters>
-      <Docs>
-        <param name="activities">The activities to send.</param>
-        <summary>
-            Sends a set of activities to the sender of the incoming activity.
-            </summary>
-        <returns>A task that represents the work queued to execute.</returns>
-        <remarks>If the activities are successfully sent, the task result contains
-            an array of <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> objects containing the IDs that 
-            the receiving channel assigned to the activities.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SendActivitiesAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync (Microsoft.Bot.Schema.IActivity[] activities, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync(class Microsoft.Bot.Schema.IActivity[] activities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -373,7 +264,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
@@ -399,74 +290,6 @@
         <altmember cref="M:Microsoft.Bot.Builder.ITurnContext.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
-    <Member MemberName="SendActivity">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivity (Microsoft.Bot.Schema.IActivity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivity(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITurnContext.SendActivity(Microsoft.Bot.Schema.IActivity)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivity (activity As IActivity) As Task(Of ResourceResponse)" />
-      <MemberSignature Language="F#" Value="abstract member SendActivity : Microsoft.Bot.Schema.IActivity -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="iTurnContext.SendActivity activity" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
-      </Parameters>
-      <Docs>
-        <param name="activity">The activity to send.</param>
-        <summary>
-            Sends an activity to the sender of the incoming activity.
-            </summary>
-        <returns>A task that represents the work queued to execute.</returns>
-        <remarks>If the activity is successfully sent, the task result contains
-            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving 
-            channel assigned to the activity.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SendActivity">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivity (string textReplyToSend, string speak = null, string inputHint = &quot;acceptingInput&quot;);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivity(string textReplyToSend, string speak, string inputHint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITurnContext.SendActivity(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivity (textReplyToSend As String, Optional speak As String = null, Optional inputHint As String = &quot;acceptingInput&quot;) As Task(Of ResourceResponse)" />
-      <MemberSignature Language="F#" Value="abstract member SendActivity : string * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="iTurnContext.SendActivity (textReplyToSend, speak, inputHint)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="textReplyToSend" Type="System.String" />
-        <Parameter Name="speak" Type="System.String" />
-        <Parameter Name="inputHint" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="textReplyToSend">The text of the message to send.</param>
-        <param name="speak">Optional, text to be spoken by your bot on a speech-enabled 
-            channel.</param>
-        <param name="inputHint">Optional, indicates whether your bot is accepting, 
-            expecting, or ignoring user input after the message is delivered to the client.
-            One of: "acceptingInput", "ignoringInput", or "expectingInput".
-            Default is "acceptingInput".</param>
-        <summary>
-            Sends a message activity to the sender of the incoming activity.
-            </summary>
-        <returns>A task that represents the work queued to execute.</returns>
-        <remarks>If the activity is successfully sent, the task result contains
-            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving 
-            channel assigned to the activity.
-            <para>See the channel's documentation for limits imposed upon the contents of 
-            <paramref name="textReplyToSend" />.</para><para>To control various characteristics of your bot's speech such as voice, 
-            rate, volume, pronunciation, and pitch, specify <paramref name="speak" /> in 
-            Speech Synthesis Markup Language (SSML) format.</para></remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SendActivityAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -475,7 +298,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -509,7 +332,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -547,28 +370,6 @@
         <altmember cref="M:Microsoft.Bot.Builder.ITurnContext.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
-    <Member MemberName="Services">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ITurnContextServiceCollection Services { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.ITurnContextServiceCollection Services" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ITurnContext.Services" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ITurnContextServiceCollection" />
-      <MemberSignature Language="F#" Value="member this.Services : Microsoft.Bot.Builder.ITurnContextServiceCollection" Usage="Microsoft.Bot.Builder.ITurnContext.Services" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.ITurnContextServiceCollection</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the services registered on this context object.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="TurnState">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.TurnContextStateCollection TurnState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.TurnContextStateCollection TurnState" />
@@ -578,7 +379,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TurnContextStateCollection</ReturnType>
@@ -591,36 +392,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UpdateActivity">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivity (Microsoft.Bot.Schema.IActivity activity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivity(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ITurnContext.UpdateActivity(Microsoft.Bot.Schema.IActivity)" />
-      <MemberSignature Language="VB.NET" Value="Public Function UpdateActivity (activity As IActivity) As Task(Of ResourceResponse)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateActivity : Microsoft.Bot.Schema.IActivity -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="iTurnContext.UpdateActivity activity" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
-      </Parameters>
-      <Docs>
-        <param name="activity">New replacement activity.</param>
-        <summary>
-            Replaces an existing activity. 
-            </summary>
-        <returns>A task that represents the work queued to execute.</returns>
-        <remarks>If the activity is successfully sent, the task result contains
-            a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving 
-            channel assigned to the activity.
-            <para>Before calling this, set the ID of the replacement activity to the ID
-            of the activity to replace.</para></remarks>
-      </Docs>
-    </Member>
     <Member MemberName="UpdateActivityAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -629,7 +400,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>

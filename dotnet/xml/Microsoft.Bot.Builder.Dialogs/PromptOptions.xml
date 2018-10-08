@@ -6,16 +6,10 @@
   <TypeSignature Language="F#" Value="type PromptOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</BaseTypeName>
-    <BaseTypeArguments>
-      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
-      <BaseTypeArgument TypeParamName="!1">System.Object</BaseTypeArgument>
-    </BaseTypeArguments>
-    <BaseTypeName FrameworkAlternate="botbuilder-dotnet-stable">System.Object</BaseTypeName>
+    <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -31,8 +25,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,7 +42,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;</ReturnType>
@@ -57,34 +50,6 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetProperty&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected T GetProperty&lt;T&gt; (string propertyName);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance !!T GetProperty&lt;T&gt;(string propertyName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptOptions.GetProperty``1(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function GetProperty(Of T) (propertyName As String) As T" />
-      <MemberSignature Language="F#" Value="member this.GetProperty : string -&gt; 'T" Usage="promptOptions.GetProperty propertyName" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T" />
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +62,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -112,50 +77,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PromptActivity">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity PromptActivity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity PromptActivity" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions.PromptActivity" />
-      <MemberSignature Language="VB.NET" Value="Public Property PromptActivity As Activity" />
-      <MemberSignature Language="F#" Value="member this.PromptActivity : Microsoft.Bot.Schema.Activity with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptOptions.PromptActivity" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            (Optional) Initial prompt to send the user. As Activity.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PromptString">
-      <MemberSignature Language="C#" Value="public string PromptString { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PromptString" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions.PromptString" />
-      <MemberSignature Language="VB.NET" Value="Public Property PromptString As String" />
-      <MemberSignature Language="F#" Value="member this.PromptString : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptOptions.PromptString" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            (Optional) Initial prompt to send the user. As string.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="RetryPrompt">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity RetryPrompt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity RetryPrompt" />
@@ -165,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -180,94 +101,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RetryPromptActivity">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity RetryPromptActivity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity RetryPromptActivity" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions.RetryPromptActivity" />
-      <MemberSignature Language="VB.NET" Value="Public Property RetryPromptActivity As Activity" />
-      <MemberSignature Language="F#" Value="member this.RetryPromptActivity : Microsoft.Bot.Schema.Activity with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptOptions.RetryPromptActivity" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            (Optional) Retry prompt to send the user. As Activity.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RetryPromptString">
-      <MemberSignature Language="C#" Value="public string RetryPromptString { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RetryPromptString" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions.RetryPromptString" />
-      <MemberSignature Language="VB.NET" Value="Public Property RetryPromptString As String" />
-      <MemberSignature Language="F#" Value="member this.RetryPromptString : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptOptions.RetryPromptString" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            (Optional) Retry prompt to send the user. As String.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RetrySpeak">
-      <MemberSignature Language="C#" Value="public string RetrySpeak { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RetrySpeak" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions.RetrySpeak" />
-      <MemberSignature Language="VB.NET" Value="Public Property RetrySpeak As String" />
-      <MemberSignature Language="F#" Value="member this.RetrySpeak : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptOptions.RetrySpeak" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            (Optional) Retry SSML to send the user.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Speak">
-      <MemberSignature Language="C#" Value="public string Speak { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptOptions.Speak" />
-      <MemberSignature Language="VB.NET" Value="Public Property Speak As String" />
-      <MemberSignature Language="F#" Value="member this.Speak : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptOptions.Speak" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            (Optional) Initial SSML to send the user.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Validations">
       <MemberSignature Language="C#" Value="public object Validations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Validations" />
@@ -277,7 +110,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

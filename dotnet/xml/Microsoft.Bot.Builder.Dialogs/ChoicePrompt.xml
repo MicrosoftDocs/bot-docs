@@ -6,12 +6,10 @@
   <TypeSignature Language="F#" Value="type ChoicePrompt = class&#xA;    inherit Prompt&lt;FoundChoice&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt;</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="botbuilder-dotnet-stable">Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;</BaseTypeName>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;</BaseTypeName>
     <BaseTypeArguments>
       <BaseTypeArgument TypeParamName="T">Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice</BaseTypeArgument>
     </BaseTypeArguments>
@@ -23,28 +21,6 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ChoicePrompt (string culture, Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt; validator = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string culture, class Microsoft.Bot.Builder.Prompts.PromptValidatorEx/PromptValidator`1&lt;class Microsoft.Bot.Builder.Prompts.ChoiceResult&gt; validator) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.#ctor(System.String,Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator{Microsoft.Bot.Builder.Prompts.ChoiceResult})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As String, Optional validator As PromptValidatorEx.PromptValidator(Of ChoiceResult) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.ChoicePrompt : string * Microsoft.Bot.Builder.Prompts.PromptValidatorEx.PromptValidator&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt; -&gt; Microsoft.Bot.Builder.Dialogs.ChoicePrompt" Usage="new Microsoft.Bot.Builder.Dialogs.ChoicePrompt (culture, validator)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="culture" Type="System.String" />
-        <Parameter Name="validator" Type="Microsoft.Bot.Builder.Prompts.PromptValidatorEx+PromptValidator&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="culture">To be added.</param>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChoicePrompt (string dialogId, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt; validator = null, string defaultLocale = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt; validator, string defaultLocale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice},System.String)" />
@@ -53,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -77,31 +53,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Culture">
-      <MemberSignature Language="C#" Value="public string Culture { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.Culture" />
-      <MemberSignature Language="VB.NET" Value="Public Property Culture As String" />
-      <MemberSignature Language="F#" Value="member this.Culture : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.ChoicePrompt.Culture" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -118,7 +73,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -126,34 +81,6 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnPrompt">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnPrompt (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OnPrompt(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.OnPrompt(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnPrompt (dc As DialogContext, options As PromptOptions, isRetry As Boolean) As Task" />
-      <MemberSignature Language="F#" Value="override this.OnPrompt : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.PromptOptions * bool -&gt; System.Threading.Tasks.Task" Usage="choicePrompt.OnPrompt (dc, options, isRetry)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
-        <Parameter Name="isRetry" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="isRetry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +92,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -188,32 +115,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnRecognize">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt; OnRecognize (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.PromptOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Prompts.ChoiceResult&gt; OnRecognize(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.PromptOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.OnRecognize(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.PromptOptions)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRecognize (dc As DialogContext, options As PromptOptions) As Task(Of ChoiceResult)" />
-      <MemberSignature Language="F#" Value="override this.OnRecognize : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.PromptOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt;" Usage="choicePrompt.OnRecognize (dc, options)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Prompts.ChoiceResult&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
-      </Parameters>
-      <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="OnRecognizeAsync">
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; OnRecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; OnRecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -222,7 +123,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt;</ReturnType>
@@ -252,8 +153,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions</ReturnType>
@@ -273,8 +173,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.ListStyle</ReturnType>

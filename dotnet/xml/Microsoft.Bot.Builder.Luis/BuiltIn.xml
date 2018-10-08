@@ -1,0 +1,20 @@
+﻿<Type Name="BuiltIn" FullName="Microsoft.Bot.Builder.Luis.BuiltIn">
+  <TypeSignature Language="C#" Value="public static class BuiltIn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BuiltIn extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuiltIn" />
+  <TypeSignature Language="F#" Value="type BuiltIn = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

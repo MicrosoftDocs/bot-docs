@@ -110,21 +110,48 @@ public class DinnerMenu
 
 # [JavaScript](#tab/jstab)
 
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for JavaScript](~/javascript/bot-builder-javascript-quickstart.md).
+
+The `botbuilder-dialogs` library can be downloaded from NPM. To install the `botbuilder-dialogs` library, run the following npm command:
+
+```cmd
+npm install --save botbuilder-dialogs
+```
+
+In your **bot.js** file, reference the classes we'll reference and define identifiers we'll use for the dialog.
+
 ```javascript
-var dinnerMenu = {
+const { ActivityTypes } = require('botbuilder');
+const { DialogSet, ChoicePrompt, WaterfallDialog, DialogTurnStatus } = require('botbuilder-dialogs');
+
+// Name for the dialog state property accessor.
+const DIALOG_STATE_PROPERTY = 'dialogStateProperty';
+
+// Name of the order-prompt dialog.
+const ORDER_PROMPT = 'orderingDialog';
+
+// Name for the choice prompt for use in the dialog.
+const CHOICE_PROMPT = 'choicePrompt';
+```
+
+Define the options we want to appear on our ordering dialog.
+
+```javascript
+// The options on the dinner menu, including commands for the bot.
+const dinnerMenu = {
     choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50",
-            "more info", "Process order", "Help", "Cancel"],
+        "Process order", "Cancel", "More info", "Help"],
     "Potato Salad - $5.99": {
-        Description: "Potato Salad",
-        Price: 5.99
+        description: "Potato Salad",
+        price: 5.99
     },
     "Tuna Sandwich - $6.89": {
-        Description: "Tuna Sandwich",
-        Price: 6.89
+        description: "Tuna Sandwich",
+        price: 6.89
     },
     "Clam Chowder - $4.50": {
-        Description: "Clam Chowder",
-        Price: 4.50
+        description: "Clam Chowder",
+        price: 4.50
     }
 }
 ```
@@ -313,80 +340,105 @@ private async Task<DialogTurnResult> ProcessInputAsync(WaterfallStepContext step
 
 # [JavaScript](#tab/jstab)
 
-Notice that the code checks for and handles interruptions _first_, then proceeds to the next logical step.
-
-<!--@Ben: where did `orderCart` come from? was it missing all along? I've changed the C# Order class to contain a list of items.-->
+Define your dialog in the bot constructor. Notice that the code checks for and handles interruptions _first_, then proceeds to the next logical step.
 
 ```javascript
-// Helper dialog to repeatedly prompt user for orders
-dialogs.add('orderPrompt', [
-    async function(step, orderCart) {
-        // Define a new cart if one does not exists
-        if (!orderCart) {
-            // Initialize a new cart
-            step.values.orderCart = {
-                orders: [],
-                total: 0
-            };
-        } else {
-            step.values.orderCart = orderCart; // Use an existing cart
-        }
-        return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
-    },
-    async function(step) {
-        const choice = step.result;
-        if (choice.value.match(/process order/ig)) {
-            if (step.values.orderCart.orders.length > 0) {
-                // Process the order by returning the order to the parent dialog
-                return await step.endDialog(step.values.orderCart);
-            } else {
-                await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
-                // Ask again
-                return await step.replaceDialog('orderPrompt');
+constructor(conversationState) {
+    this.dialogStateAccessor = conversationState.createProperty(DIALOG_STATE_PROPERTY);
+    this.conversationState = conversationState;
+
+    this.dialogs = new DialogSet(this.dialogStateAccessor)
+        .add(new ChoicePrompt(CHOICE_PROMPT))
+        .add(new WaterfallDialog(ORDER_PROMPT, [
+            async (step) => {
+                if (step.options && step.options.orders) {
+                    // If an order cart was passed in, continue to use it.
+                    step.values.orderCart = step.options;
+                } else {
+                    // Otherwise, start a new cart.
+                    step.values.orderCart = {
+                        orders: [],
+                        total: 0
+                    };
+                }
+                return await step.prompt(CHOICE_PROMPT, "What would you like?", dinnerMenu.choices);
+            },
+            async (step) => {
+                const choice = step.result;
+                if (choice.value.match(/process order/ig)) {
+                    if (step.values.orderCart.orders.length > 0) {
+                        // If the cart is not empty, process the order by returning the order to the parent context.
+                        await step.context.sendActivity("Your order has been processed.");
+                        return await step.endDialog(step.values.orderCart);
+                    } else {
+                        // Otherwise, prompt again.
+                        await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
+                        return await step.replaceDialog(ORDER_PROMPT);
+                    }
+                } else if (choice.value.match(/cancel/ig)) {
+                    // Cancel the order, and return "cancel" to the parent context.
+                    await step.context.sendActivity("Your order has been canceled.");
+                    return await step.endDialog("cancelled");
+                } else if (choice.value.match(/more info/ig)) {
+                    // Provide more information, and then continue the ordering process.
+                    var msg = "More info: <br/>Potato Salad: contains 330 calories per serving. <br/>"
+                        + "Tuna Sandwich: contains 700 calories per serving. <br/>"
+                        + "Clam Chowder: contains 650 calories per serving."
+                    await step.context.sendActivity(msg);
+                    return await step.replaceDialog(ORDER_PROMPT, step.values.orderCart);
+                } else if (choice.value.match(/help/ig)) {
+                    // Provide help information, and then continue the ordering process.
+                    var msg = `Help: <br/>`
+                        + `To make an order, add as many items to your cart as you like then choose `
+                        + `the "Process order" option to check out.`
+                    await step.context.sendActivity(msg);
+                    return await step.replaceDialog(ORDER_PROMPT, step.values.orderCart);
+                } else {
+                    // The user has chosen a food item from the menu. Add the item to cart.
+                    var item = dinnerMenu[choice.value];
+                    step.values.orderCart.orders.push(item.description);
+                    step.values.orderCart.total += item.price;
+
+                    await step.context.sendActivity(`Added ${item.description} to your cart. <br/>`
+                        + `Current total: $${step.values.orderCart.total}`);
+
+                    // Continue the ordering process.
+                    return await step.replaceDialog(ORDER_PROMPT, step.values.orderCart);
+                }
             }
-        } else if (choice.value.match(/cancel/ig)) {
-            step.values.orderCart = {
-                orders: [],
-                total: 0
-            };
-            await step.context.sendActivity("Your order has been canceled.");
-            await step.endDialog(choice.value);
-        } else if (choice.value.match(/more info/ig)) {
-            var msg = "More info: <br/>Potato Salad: contains 330 calories per serving. <br/>"
-                + "Tuna Sandwich: contains 700 calories per serving. <br/>"
-                + "Clam Chowder: contains 650 calories per serving."
-            await step.context.sendActivity(msg);
+        ]));
+}
+```
 
-            // Ask again
-            return await step.replaceDialog('orderPrompt', step.values.orderCart);
-        } else if (choice.value.match(/help/ig)) {
-            var msg = `Help: <br/>To make an order, add as many items to your cart as you like then choose the "Process order" option to check out.`
-            await step.context.sendActivity(msg);
+Update the on turn handler to call the dialog and display results from the ordering process.
 
-            // Ask again
-            return await step.replaceDialog('orderPrompt', step.values.orderCart);
-        } else {
-            var choice = dinnerMenu[choice.value];
-
-            // Only proceed if user chooses an item from the menu
-            if (!choice) {
-                await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
-
-                // Ask again
-                await step.replaceDialog('orderPrompt', step.values.orderCart);
+```javascript
+async onTurn(turnContext) {
+    if (turnContext.activity.type === ActivityTypes.Message) {
+        let dc = await this.dialogs.createContext(turnContext);
+        let dialogTurnResult = await dc.continueDialog();
+        if (dialogTurnResult.status === DialogTurnStatus.complete) {
+            // The dialog completed this turn.
+            const result = dialogTurnResult.result;
+            if (!result || result === "cancelled") {
+                await turnContext.sendActivity('You cancelled your order.');
             } else {
-                // Add the item to cart
-                step.values.orderCart.orders.push(choice);
-                step.values.orderCart.total += dinnerMenu[choice.value].Price;
-
-                await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${ step.values.orderCart.total}`);
-
-                // Ask again
-                return await step.replaceDialog('orderPrompt', step.values.orderCart);
+                await turnContext.sendActivity(`Your order came to $${result.total}`);
             }
+        } else if (!turnContext.responded) {
+            // No dialog was active.
+            await turnContext.sendActivity("Let's order dinner...");
+            await dc.cancelAllDialogs();
+            await dc.beginDialog(ORDER_PROMPT);
+        } else {
+            // The dialog is active.
         }
+    } else {
+        await turnContext.sendActivity(`[${turnContext.activity.type} event detected]`);
     }
-]);
+    // Save state changes
+    await this.conversationState.saveChanges(turnContext);
+}
 ```
 
 ---
@@ -415,7 +467,7 @@ If all else fails, you should send a default response instead of doing nothing a
 
 You can check against the context **responded** flag at the end of the bot logic to see if the bot sent anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
 
-The default for this bot is to give the user the `mainMenu` dialog. It's up to you to decide what experience your user will have in this situation for your bot.
+If the default for your bot is to give the user a `mainMenu` dialog. It's up to you to decide what experience your user will have in this situation for your bot.
 
 # [C#](#tab/csharptab)
 
@@ -434,7 +486,7 @@ if (!turnContext.Responded)
 // Check to see if anyone replied. If not then clear all the stack and present the main menu
 if (!context.responded) {
     await dc.cancelAllDialogs();
-    return await step.beginDialog('mainMenu');
+    await step.beginDialog('mainMenu');
 }
 ```
 
@@ -481,49 +533,35 @@ else
 
 # [JavaScript](#tab/jstab)
 
-<!-- @Ben: Where's the "helpDialog" defined? 
-Interrupts at this level are more for "global" scope while interrupts inside a dialog are more for "local" scope and you can't use the same interrupt commands in both places otherwise only the global scoped one will get run. - CashVo
--->
+We could handle interrupts before sending a user response to a dialog.
+
+This snippet assumes we have a `helpDialog` and a `mainMenu` in our dialog set.
 
 ```javascript
-// Listen for incoming activity 
-server.post('/api/messages', (req, res) => {
-    // Route received activity to adapter for processing
-    adapter.processActivity(req, res, async (context) => {
-        const isMessage = context.activity.type === ActivityTypes.Message;
-        // Create a DialogContext object.
-        const dc = dialogs.createContext(context);
+const utterance = (context.activity.text || '').trim();
 
-        if (isMessage) {
+// Let's look for some interruptions first!
+if (utterance.match(/help/ig)) {
+    // Launch a new help dialog if the user asked for help
+    await dc.beginDialog('helpDialog');
+} else if (utterance.match(/cancel/ig)) {
+    // Cancel any active dialogs if the user says cancel
+    await dc.context.sendActivity('Canceled.');
+    await dc.cancelAllDialogs();
+}
 
-            const utterance = (context.activity.text || '').trim().toLowerCase();
-            
-            // Let's look for some interruptions first!
-            if (utterance === 'help') {
-                // Launch a new help dialog if the user asked for help
-                await dc.beginDialog('helpDialog');
-            } else if (utterance === 'cancel') {
-                // Cancel any active dialogs if the user says cancel
-                await dc.context.sendActivity('Canceled.');
-                await dc.cancelAllDialogs();        
-            }
-            
-            // If the bot hasn't yet responded...
-            if (!context.responded) {
-                // Continue any active dialog, which might send a response...
-                await dc.continueDialog();
+// If the bot hasn't yet responded...
+if (!context.responded) {
+    // Continue any active dialog, which might send a response...
+    await dc.continueDialog();
 
-                // Finally, if the bot still hasn't sent a response, send instructions.
-                if (!context.responded && isMessage) {
-                    await dc.context.sendActivity(`Hi! I'm a sample bot!`);
-                }
-            }
-        } else {
-            await context.sendActivity(`[${context.activity.type} event detected]`);
-        }
-    });
-});
-
+    // Finally, if the bot still hasn't sent a response, send instructions.
+    if (!context.responded) {
+        await dc.cancelAllDialogs();
+        await context.sendActivity("Starting the main menu...");
+        await dc.beginDialog('mainMenu');
+    }
+}
 ```
 
 ---

@@ -1,0 +1,126 @@
+﻿<Type Name="DispatchDialog&lt;TResult&gt;" FullName="Microsoft.Bot.Builder.Dialogs.DispatchDialog&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public class DispatchDialog&lt;TResult&gt; : Microsoft.Bot.Builder.Scorables.Dispatcher, Microsoft.Bot.Builder.Dialogs.IDialog&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DispatchDialog`1&lt;TResult&gt; extends Microsoft.Bot.Builder.Scorables.Dispatcher implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DispatchDialog(Of TResult)&#xA;Inherits Dispatcher&#xA;Implements IDialog(Of TResult)" />
+  <TypeSignature Language="F#" Value="type DispatchDialog&lt;'Result&gt; = class&#xA;    inherit Dispatcher&#xA;    interface IDialog&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Scorables.Dispatcher</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialog&lt;TResult&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The result type.</typeparam>
+    <summary>
+            A dialog specialized to dispatch an IScorable.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DispatchDialog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityReceivedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task ActivityReceivedAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IActivity&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task ActivityReceivedAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.ActivityReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IActivity})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ActivityReceivedAsync (context As IDialogContext, item As IAwaitable(Of IActivity)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ActivityReceivedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.ActivityReceivedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="dispatchDialog.ActivityReceivedAsync (context, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IActivity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeServices">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.IReadOnlyList&lt;object&gt; MakeServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; MakeServices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.MakeServices" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MakeServices () As IReadOnlyList(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.MakeServices : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;obj&gt;" Usage="dispatchDialog.MakeServices " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DispatchDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (context As IDialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task&#xA;override this.StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task" Usage="dispatchDialog.StartAsync context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

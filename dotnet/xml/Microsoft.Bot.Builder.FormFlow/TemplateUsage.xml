@@ -1,0 +1,956 @@
+﻿<Type Name="TemplateUsage" FullName="Microsoft.Bot.Builder.FormFlow.TemplateUsage">
+  <TypeSignature Language="C#" Value="public enum TemplateUsage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TemplateUsage extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TemplateUsage" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TemplateUsage" />
+  <TypeSignature Language="F#" Value="type TemplateUsage = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            All of the built-in templates.
+            </summary>
+    <remarks>
+            A good way to understand these is to look at the default templates defined in <see cref="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.Templates" /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttachmentCollection">
+      <MemberSignature Language="C#" Value="AttachmentCollection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentCollection = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentCollection" />
+      <MemberSignature Language="VB.NET" Value="AttachmentCollection" />
+      <MemberSignature Language="F#" Value="AttachmentCollection = 1" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentCollection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for an attachment collection. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentCollectionDescription">
+      <MemberSignature Language="C#" Value="AttachmentCollectionDescription" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentCollectionDescription = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentCollectionDescription" />
+      <MemberSignature Language="VB.NET" Value="AttachmentCollectionDescription" />
+      <MemberSignature Language="F#" Value="AttachmentCollectionDescription = 2" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentCollectionDescription" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            How to display attachment collection status.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentCollectionHelp">
+      <MemberSignature Language="C#" Value="AttachmentCollectionHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentCollectionHelp = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentCollectionHelp" />
+      <MemberSignature Language="VB.NET" Value="AttachmentCollectionHelp" />
+      <MemberSignature Language="F#" Value="AttachmentCollectionHelp = 3" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentCollectionHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when entering an attachment collection.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentContentTypeValidatorError">
+      <MemberSignature Language="C#" Value="AttachmentContentTypeValidatorError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentContentTypeValidatorError = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentContentTypeValidatorError" />
+      <MemberSignature Language="VB.NET" Value="AttachmentContentTypeValidatorError" />
+      <MemberSignature Language="F#" Value="AttachmentContentTypeValidatorError = 4" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentContentTypeValidatorError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            How to display attachment content-type validator errors.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentContentTypeValidatorHelp">
+      <MemberSignature Language="C#" Value="AttachmentContentTypeValidatorHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentContentTypeValidatorHelp = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentContentTypeValidatorHelp" />
+      <MemberSignature Language="VB.NET" Value="AttachmentContentTypeValidatorHelp" />
+      <MemberSignature Language="F#" Value="AttachmentContentTypeValidatorHelp = 5" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentContentTypeValidatorHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            How to display attachment content-type validator help.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentField">
+      <MemberSignature Language="C#" Value="AttachmentField" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentField = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentField" />
+      <MemberSignature Language="VB.NET" Value="AttachmentField" />
+      <MemberSignature Language="F#" Value="AttachmentField = 6" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for an attachment collection. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentFieldDescription">
+      <MemberSignature Language="C#" Value="AttachmentFieldDescription" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentFieldDescription = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentFieldDescription" />
+      <MemberSignature Language="VB.NET" Value="AttachmentFieldDescription" />
+      <MemberSignature Language="F#" Value="AttachmentFieldDescription = 7" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentFieldDescription" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            How to display an attachment status.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentFieldHelp">
+      <MemberSignature Language="C#" Value="AttachmentFieldHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage AttachmentFieldHelp = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentFieldHelp" />
+      <MemberSignature Language="VB.NET" Value="AttachmentFieldHelp" />
+      <MemberSignature Language="F#" Value="AttachmentFieldHelp = 8" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.AttachmentFieldHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when entering an attachment collection.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bool">
+      <MemberSignature Language="C#" Value="Bool" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Bool = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Bool" />
+      <MemberSignature Language="VB.NET" Value="Bool" />
+      <MemberSignature Language="F#" Value="Bool = 9" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Bool" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for a boolean.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BoolHelp">
+      <MemberSignature Language="C#" Value="BoolHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage BoolHelp = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.BoolHelp" />
+      <MemberSignature Language="VB.NET" Value="BoolHelp" />
+      <MemberSignature Language="F#" Value="BoolHelp = 10" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.BoolHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when entering a bool.
+            </summary>
+        <remarks>
+            Within this template {0} is the current choice if any and {1} is no preference if optional. 
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clarify">
+      <MemberSignature Language="C#" Value="Clarify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Clarify = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Clarify" />
+      <MemberSignature Language="VB.NET" Value="Clarify" />
+      <MemberSignature Language="F#" Value="Clarify = 11" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Clarify" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+            Clarify an ambiguous choice.
+            </summary>
+        <remarks>This template can use {0} to capture the term that was ambiguous.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Confirmation">
+      <MemberSignature Language="C#" Value="Confirmation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Confirmation = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Confirmation" />
+      <MemberSignature Language="VB.NET" Value="Confirmation" />
+      <MemberSignature Language="F#" Value="Confirmation = 12" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Confirmation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+            Default confirmation.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentChoice">
+      <MemberSignature Language="C#" Value="CurrentChoice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage CurrentChoice = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.CurrentChoice" />
+      <MemberSignature Language="VB.NET" Value="CurrentChoice" />
+      <MemberSignature Language="F#" Value="CurrentChoice = 13" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.CurrentChoice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+            Show the current choice.
+            </summary>
+        <remarks>
+            This is how the current choice is represented as an option.  
+            If you change this, you should also change <see cref="F:Microsoft.Bot.Builder.FormFlow.FormConfiguration.CurrentChoice" />
+            so that what people can type matches what you show.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime">
+      <MemberSignature Language="C#" Value="DateTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage DateTime = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />
+      <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 14" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for a <see cref="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeHelp">
+      <MemberSignature Language="C#" Value="DateTimeHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage DateTimeHelp = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTimeHelp" />
+      <MemberSignature Language="VB.NET" Value="DateTimeHelp" />
+      <MemberSignature Language="F#" Value="DateTimeHelp = 15" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTimeHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when entering a <see cref="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DateTime" />.
+            </summary>
+        <remarks>
+            Within this template {0} is the current choice if any and {1} is no preference if optional. 
+            </remarks>
+        <remarks>
+            This template can use {0} to get the current choice or {1} for no preference if field is optional.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Double = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Double" />
+      <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 16" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for a double.
+            </summary>
+        <remarks>
+            Within this template if numerical limits are specified using <see cref="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />, 
+            {0} is the minimum possible value and {1} is the maximum possible value.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleHelp">
+      <MemberSignature Language="C#" Value="DoubleHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage DoubleHelp = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.DoubleHelp" />
+      <MemberSignature Language="VB.NET" Value="DoubleHelp" />
+      <MemberSignature Language="F#" Value="DoubleHelp = 17" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.DoubleHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when entering a double.
+            </summary>
+        <remarks>
+            Within this template {0} is the current choice if any and {1} is no preference if optional. 
+            If limits are specified through <see cref="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />, then {2} will be the minimum possible value 
+            and {3} the maximum possible value.
+            </remarks>
+        <remarks>
+            Within this template, {0} is current choice if any, {1} is no preference for optional  and {1} and {2} are min/max if specified.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumManyNumberHelp">
+      <MemberSignature Language="C#" Value="EnumManyNumberHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumManyNumberHelp = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyNumberHelp" />
+      <MemberSignature Language="VB.NET" Value="EnumManyNumberHelp" />
+      <MemberSignature Language="F#" Value="EnumManyNumberHelp = 19" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyNumberHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>
+             What you can enter when selecting multiple values from a numbered enumeration.
+            </summary>
+        <remarks>
+            Within this template, {0} is the minimum choice. {1} is the maximum choice and {2} is a description of all the possible words.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumManyWordHelp">
+      <MemberSignature Language="C#" Value="EnumManyWordHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumManyWordHelp = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyWordHelp" />
+      <MemberSignature Language="VB.NET" Value="EnumManyWordHelp" />
+      <MemberSignature Language="F#" Value="EnumManyWordHelp = 21" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumManyWordHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when selecting mutiple values from an enumeration.
+            </summary>
+        <remarks>
+            Within this template, {2} is a list of the possible values.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumOneNumberHelp">
+      <MemberSignature Language="C#" Value="EnumOneNumberHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumOneNumberHelp = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneNumberHelp" />
+      <MemberSignature Language="VB.NET" Value="EnumOneNumberHelp" />
+      <MemberSignature Language="F#" Value="EnumOneNumberHelp = 18" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneNumberHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when selecting a single value from a numbered enumeration.
+            </summary>
+        <remarks>
+            Within this template, {0} is the minimum choice. {1} is the maximum choice and {2} is a description of all the possible words.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumOneWordHelp">
+      <MemberSignature Language="C#" Value="EnumOneWordHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumOneWordHelp = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneWordHelp" />
+      <MemberSignature Language="VB.NET" Value="EnumOneWordHelp" />
+      <MemberSignature Language="F#" Value="EnumOneWordHelp = 20" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumOneWordHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when selecting one value from an enumeration.
+            </summary>
+        <remarks>
+            Within this template, {2} is a list of the possible values.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumSelectMany">
+      <MemberSignature Language="C#" Value="EnumSelectMany" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumSelectMany = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectMany" />
+      <MemberSignature Language="VB.NET" Value="EnumSelectMany" />
+      <MemberSignature Language="F#" Value="EnumSelectMany = 23" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectMany" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for multiple values from an enumeration.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumSelectOne">
+      <MemberSignature Language="C#" Value="EnumSelectOne" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage EnumSelectOne = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectOne" />
+      <MemberSignature Language="VB.NET" Value="EnumSelectOne" />
+      <MemberSignature Language="F#" Value="EnumSelectOne = 22" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.EnumSelectOne" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for one value from an enumeration.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Feedback">
+      <MemberSignature Language="C#" Value="Feedback" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Feedback = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback" />
+      <MemberSignature Language="VB.NET" Value="Feedback" />
+      <MemberSignature Language="F#" Value="Feedback = 24" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Feedback" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>
+            How to show feedback after user input.
+            </summary>
+        <remarks>
+            Within this template, unmatched input is available through {0}, but it should be wrapped in an optional {?} in \ref patterns in case everything was matched. 
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="Help" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Help = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Help" />
+      <MemberSignature Language="VB.NET" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 25" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Help" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>25</MemberValue>
+      <Docs>
+        <summary>
+            What to display when asked for help.
+            </summary>
+        <remarks>
+            This template controls the overall help experience.  {0} will be recognizer specific help and {1} will be command help.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpClarify">
+      <MemberSignature Language="C#" Value="HelpClarify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage HelpClarify = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpClarify" />
+      <MemberSignature Language="VB.NET" Value="HelpClarify" />
+      <MemberSignature Language="F#" Value="HelpClarify = 26" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpClarify" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>26</MemberValue>
+      <Docs>
+        <summary>
+            What to display when asked for help while clarifying. 
+            </summary>
+        <remarks>
+            This template controls the overall help experience.  {0} will be recognizer specific help and {1} will be command help.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpConfirm">
+      <MemberSignature Language="C#" Value="HelpConfirm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage HelpConfirm = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpConfirm" />
+      <MemberSignature Language="VB.NET" Value="HelpConfirm" />
+      <MemberSignature Language="F#" Value="HelpConfirm = 27" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpConfirm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>
+            What to display when asked for help while in a confirmation.
+            </summary>
+        <remarks>
+            This template controls the overall help experience.  {0} will be recognizer specific help and {1} will be command help.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpNavigation">
+      <MemberSignature Language="C#" Value="HelpNavigation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage HelpNavigation = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpNavigation" />
+      <MemberSignature Language="VB.NET" Value="HelpNavigation" />
+      <MemberSignature Language="F#" Value="HelpNavigation = 28" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.HelpNavigation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>
+            What to display when asked for help while navigating.
+            </summary>
+        <remarks>
+            This template controls the overall help experience.  {0} will be recognizer specific help and {1} will be command help.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Integer">
+      <MemberSignature Language="C#" Value="Integer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Integer = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Integer" />
+      <MemberSignature Language="VB.NET" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 29" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Integer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>29</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for an integer.
+            </summary>
+        <remarks>
+            Within this template if numerical limits are specified using <see cref="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />, 
+            {0} is the minimum possible value and {1} is the maximum possible value.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegerHelp">
+      <MemberSignature Language="C#" Value="IntegerHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage IntegerHelp = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.IntegerHelp" />
+      <MemberSignature Language="VB.NET" Value="IntegerHelp" />
+      <MemberSignature Language="F#" Value="IntegerHelp = 30" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.IntegerHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter while entering an integer.
+            </summary>
+        <remarks>
+            Within this template, {0} is current choice if any, {1} is no preference for optional  and {1} and {2} are min/max if specified.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigation">
+      <MemberSignature Language="C#" Value="Navigation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Navigation = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Navigation" />
+      <MemberSignature Language="VB.NET" Value="Navigation" />
+      <MemberSignature Language="F#" Value="Navigation = 31" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Navigation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for a navigation.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationCommandHelp">
+      <MemberSignature Language="C#" Value="NavigationCommandHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NavigationCommandHelp = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationCommandHelp" />
+      <MemberSignature Language="VB.NET" Value="NavigationCommandHelp" />
+      <MemberSignature Language="F#" Value="NavigationCommandHelp = 32" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationCommandHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>
+            Help pattern for navigation commands. 
+            </summary>
+        <remarks>
+            Within this template, {0} has the list of possible field names.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationFormat">
+      <MemberSignature Language="C#" Value="NavigationFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NavigationFormat = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationFormat" />
+      <MemberSignature Language="VB.NET" Value="NavigationFormat" />
+      <MemberSignature Language="F#" Value="NavigationFormat = 33" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>33</MemberValue>
+      <Docs>
+        <summary>
+            Navigation format for one line in navigation choices.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationHelp">
+      <MemberSignature Language="C#" Value="NavigationHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NavigationHelp = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationHelp" />
+      <MemberSignature Language="VB.NET" Value="NavigationHelp" />
+      <MemberSignature Language="F#" Value="NavigationHelp = 34" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NavigationHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>34</MemberValue>
+      <Docs>
+        <summary>
+            What you can enter when navigating.
+            </summary>
+        <remarks>
+            Within this template, if numeric choies are allowed {0} is the minimum possible choice 
+            and {1} the maximum possible choice. 
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>   An enum constant representing the none option. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPreference">
+      <MemberSignature Language="C#" Value="NoPreference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NoPreference = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NoPreference" />
+      <MemberSignature Language="VB.NET" Value="NoPreference" />
+      <MemberSignature Language="F#" Value="NoPreference = 35" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NoPreference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>35</MemberValue>
+      <Docs>
+        <summary>
+            How to show no preference in an optional field.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotUnderstood">
+      <MemberSignature Language="C#" Value="NotUnderstood" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage NotUnderstood = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NotUnderstood" />
+      <MemberSignature Language="VB.NET" Value="NotUnderstood" />
+      <MemberSignature Language="F#" Value="NotUnderstood = 36" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.NotUnderstood" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>36</MemberValue>
+      <Docs>
+        <summary>
+            Response when an input is not understood.
+            </summary>
+        <remarks>
+            When no input is matched this template is used and gets {0} for what the user entered.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusFormat">
+      <MemberSignature Language="C#" Value="StatusFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage StatusFormat = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.StatusFormat" />
+      <MemberSignature Language="VB.NET" Value="StatusFormat" />
+      <MemberSignature Language="F#" Value="StatusFormat = 37" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.StatusFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>37</MemberValue>
+      <Docs>
+        <summary>
+            Format for one entry in status.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage String = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="F#" Value="String = 38" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>38</MemberValue>
+      <Docs>
+        <summary>
+            How to ask for a string.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StringHelp">
+      <MemberSignature Language="C#" Value="StringHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage StringHelp = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.StringHelp" />
+      <MemberSignature Language="VB.NET" Value="StringHelp" />
+      <MemberSignature Language="F#" Value="StringHelp = 39" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.StringHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>39</MemberValue>
+      <Docs>
+        <summary>
+            What to display when asked for help when entering a string. 
+            </summary>
+        <remarks>
+            Within this template {0} is the current choice if any and {1} is no preference if optional. 
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.FormFlow.TemplateUsage Unspecified = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 40" Usage="Microsoft.Bot.Builder.FormFlow.TemplateUsage.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.TemplateUsage</ReturnType>
+      </ReturnValue>
+      <MemberValue>40</MemberValue>
+      <Docs>
+        <summary>
+            How to represent a value that has not yet been specified.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
