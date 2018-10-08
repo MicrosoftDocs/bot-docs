@@ -1,0 +1,48 @@
+﻿<Type Name="ILocaleFinder" FullName="Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder">
+  <TypeSignature Language="C#" Value="public interface ILocaleFinder" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILocaleFinder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILocaleFinder" />
+  <TypeSignature Language="F#" Value="type ILocaleFinder = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The interface for finding and setting locale for <see cref="T:Microsoft.Bot.Builder.Base.LocalizedScope" /> in <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindLocale">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; FindLocale (Microsoft.Bot.Connector.IActivity activity, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; FindLocale(class Microsoft.Bot.Connector.IActivity activity, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder.FindLocale(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindLocale (activity As IActivity, token As CancellationToken) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member FindLocale : Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iLocaleFinder.FindLocale (activity, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity"> The activity.</param>
+        <param name="token">The cancellation token.</param>
+        <summary>
+            Given an activity it finds the locale.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,105 @@
+﻿<Type Name="CommandDialog&lt;T&gt;+Command" FullName="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;T&gt;+Command">
+  <TypeSignature Language="C#" Value="public class CommandDialog&lt;T&gt;.Command" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit CommandDialog`1/Command&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommandDialog(Of T).Command" />
+  <TypeSignature Language="F#" Value="type CommandDialog&lt;'T&gt;.Command = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>   A single command. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Command ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandHandler">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt; CommandHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; CommandHandler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandHandler As ResumeAfter(Of IMessageActivity)" />
+      <MemberSignature Language="F#" Value="member this.CommandHandler : Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;.Command.CommandHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;Microsoft.Bot.Connector.IMessageActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Gets or sets the command handler. </summary>
+        <value> The command handler. </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandId">
+      <MemberSignature Language="C#" Value="public string CommandId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommandId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.CommandId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandId As String" />
+      <MemberSignature Language="F#" Value="member this.CommandId : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;.Command.CommandId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Gets or sets the command ID used for persisting currently running command handler. </summary>
+        <value> Command ID. </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public System.Text.RegularExpressions.Regex Expression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Regex Expression" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.CommandDialog`1.Command.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As Regex" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Text.RegularExpressions.Regex with get, set" Usage="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;'T&gt;.Command.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Gets or sets the regular expression for matching command. </summary>
+        <value> The regular expression. </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

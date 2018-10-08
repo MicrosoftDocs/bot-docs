@@ -1,0 +1,81 @@
+﻿<Type Name="RecognizeEntity&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class RecognizeEntity&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecognizeEntity`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecognizeEntity(Of T)" />
+  <TypeSignature Language="F#" Value="type RecognizeEntity&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecognizeEntity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entity">
+      <MemberSignature Language="C#" Value="public T Entity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Entity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1.Entity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entity As T" />
+      <MemberSignature Language="F#" Value="member this.Entity : 'T with get, set" Usage="Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;'T&gt;.Entity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Score">
+      <MemberSignature Language="C#" Value="public double Score { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Score" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1.Score" />
+      <MemberSignature Language="VB.NET" Value="Public Property Score As Double" />
+      <MemberSignature Language="F#" Value="member this.Score : double with get, set" Usage="Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;'T&gt;.Score" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

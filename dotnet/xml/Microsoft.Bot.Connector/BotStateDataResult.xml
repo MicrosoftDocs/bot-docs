@@ -1,0 +1,109 @@
+﻿<Type Name="BotStateDataResult" FullName="Microsoft.Bot.Connector.BotStateDataResult">
+  <TypeSignature Language="C#" Value="public class BotStateDataResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotStateDataResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotStateDataResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotStateDataResult" />
+  <TypeSignature Language="F#" Value="type BotStateDataResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotStateDataResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateDataResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotStateDataResult (System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt; botStateData = null, string continuationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.BotStateData&gt; botStateData, string continuationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateDataResult.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Connector.BotStateData},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional botStateData As IList(Of BotStateData) = null, Optional continuationToken As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotStateDataResult : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt; * string -&gt; Microsoft.Bot.Connector.BotStateDataResult" Usage="new Microsoft.Bot.Connector.BotStateDataResult (botStateData, continuationToken)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="botStateData" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt;" />
+        <Parameter Name="continuationToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="botStateData">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotStateData">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt; BotStateData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.BotStateData&gt; BotStateData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateDataResult.BotStateData" />
+      <MemberSignature Language="VB.NET" Value="Public Property BotStateData As IList(Of BotStateData)" />
+      <MemberSignature Language="F#" Value="member this.BotStateData : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt; with get, set" Usage="Microsoft.Bot.Connector.BotStateDataResult.BotStateData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="botStateData")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinuationToken">
+      <MemberSignature Language="C#" Value="public string ContinuationToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContinuationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateDataResult.ContinuationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinuationToken As String" />
+      <MemberSignature Language="F#" Value="member this.ContinuationToken : string with get, set" Usage="Microsoft.Bot.Connector.BotStateDataResult.ContinuationToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type ChannelValidation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,41 +18,6 @@
   </Docs>
   <Members>
     <Member MemberName="AuthenticateChannelToken">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, System.Net.Http.HttpClient httpClient);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class System.Net.Http.HttpClient httpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.ChannelValidation.AuthenticateChannelToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="F#" Value="static member AuthenticateChannelToken : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * System.Net.Http.HttpClient -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.ChannelValidation.AuthenticateChannelToken (authHeader, credentials, httpClient)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="authHeader" Type="System.String" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
-        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
-      </Parameters>
-      <Docs>
-        <param name="authHeader">The raw HTTP header in the format: "Bearer [longString]"</param>
-        <param name="credentials">The user defined set of valid credentials, such as the AppId.</param>
-        <param name="httpClient">Authentication of tokens requires calling out to validate Endorsements and related documents. The
-            HttpClient is used for making those calls. Those calls generally require TLS connections, which are expensive to
-            setup and teardown, so a shared HttpClient is recommended.</param>
-        <summary>
-            Validate the incoming Auth Header as a token sent from the Bot Framework Service.
-            </summary>
-        <returns>
-            A valid ClaimsIdentity.
-            </returns>
-        <remarks>
-            A token issued by the Bot Framework emulator will FAIL this check.
-            </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AuthenticateChannelToken">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, System.Net.Http.HttpClient httpClient, string channelId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class System.Net.Http.HttpClient httpClient, string channelId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.ChannelValidation.AuthenticateChannelToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.Net.Http.HttpClient,System.String)" />
@@ -61,7 +25,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -91,39 +55,6 @@
       </Docs>
     </Member>
     <Member MemberName="AuthenticateChannelToken">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl, System.Net.Http.HttpClient httpClient);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl, class System.Net.Http.HttpClient httpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.ChannelValidation.AuthenticateChannelToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.String,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="F#" Value="static member AuthenticateChannelToken : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * string * System.Net.Http.HttpClient -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.ChannelValidation.AuthenticateChannelToken (authHeader, credentials, serviceUrl, httpClient)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="authHeader" Type="System.String" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
-        <Parameter Name="serviceUrl" Type="System.String" />
-        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
-      </Parameters>
-      <Docs>
-        <param name="authHeader">The raw HTTP header in the format: "Bearer [longString]"</param>
-        <param name="credentials">The user defined set of valid credentials, such as the AppId.</param>
-        <param name="serviceUrl"></param>
-        <param name="httpClient">Authentication of tokens requires calling out to validate Endorsements and related documents. The
-            HttpClient is used for making those calls. Those calls generally require TLS connections, which are expensive to
-            setup and teardown, so a shared HttpClient is recommended.</param>
-        <summary>
-            Validate the incoming Auth Header as a token sent from the Bot Framework Service.
-            </summary>
-        <returns />
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AuthenticateChannelToken">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl, System.Net.Http.HttpClient httpClient, string channelId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl, class System.Net.Http.HttpClient httpClient, string channelId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.ChannelValidation.AuthenticateChannelToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.String,System.Net.Http.HttpClient,System.String)" />
@@ -131,7 +62,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -167,7 +98,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -189,8 +120,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.TokenValidationParameters</ReturnType>

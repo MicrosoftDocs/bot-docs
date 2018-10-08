@@ -1,0 +1,70 @@
+﻿<Type Name="IBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser">
+  <TypeSignature Language="C#" Value="public interface IBotToUser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotToUser" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBotToUser" />
+  <TypeSignature Language="F#" Value="type IBotToUser = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Methods to send a message from the bot to the user. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MakeMessage">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IMessageActivity MakeMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity MakeMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeMessage () As IMessageActivity" />
+      <MemberSignature Language="F#" Value="abstract member MakeMessage : unit -&gt; Microsoft.Bot.Connector.IMessageActivity" Usage="iBotToUser.MakeMessage " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Make a message.
+            </summary>
+        <returns>The new message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PostAsync (Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PostAsync(class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member PostAsync : Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iBotToUser.PostAsync (message, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message for the user.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Post a message to be sent to the user.
+            </summary>
+        <returns>A task that represents the post operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

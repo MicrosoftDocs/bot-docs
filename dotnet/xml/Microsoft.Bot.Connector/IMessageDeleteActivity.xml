@@ -1,0 +1,21 @@
+﻿<Type Name="IMessageDeleteActivity" FullName="Microsoft.Bot.Connector.IMessageDeleteActivity">
+  <TypeSignature Language="C#" Value="public interface IMessageDeleteActivity : Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageDeleteActivity implements class Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IMessageDeleteActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageDeleteActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IMessageDeleteActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

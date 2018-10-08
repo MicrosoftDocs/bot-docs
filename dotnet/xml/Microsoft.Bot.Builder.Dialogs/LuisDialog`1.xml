@@ -1,0 +1,492 @@
+﻿<Type Name="LuisDialog&lt;TResult&gt;" FullName="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public class LuisDialog&lt;TResult&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisDialog`1&lt;TResult&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisDialog`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisDialog(Of TResult)&#xA;Implements IDialog(Of TResult)" />
+  <TypeSignature Language="F#" Value="type LuisDialog&lt;'Result&gt; = class&#xA;    interface IDialog&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialog&lt;TResult&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The result type.</typeparam>
+    <summary>
+            A dialog specialized to handle intents and entities from LUIS.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisDialog (params Microsoft.Bot.Builder.Luis.ILuisService[] services);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.ILuisService[] services) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.#ctor(Microsoft.Bot.Builder.Luis.ILuisService[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray services As ILuisService())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt; : Microsoft.Bot.Builder.Luis.ILuisService[] -&gt; Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt; services" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="services" Type="Microsoft.Bot.Builder.Luis.ILuisService[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="services">The LUIS service.</param>
+        <summary>
+            Construct the LUIS dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BestIntentFrom">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Builder.Luis.Models.IntentRecommendation BestIntentFrom (Microsoft.Bot.Builder.Luis.Models.LuisResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation BestIntentFrom(class Microsoft.Bot.Builder.Luis.Models.LuisResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.BestIntentFrom(Microsoft.Bot.Builder.Luis.Models.LuisResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function BestIntentFrom (result As LuisResult) As IntentRecommendation" />
+      <MemberSignature Language="F#" Value="abstract member BestIntentFrom : Microsoft.Bot.Builder.Luis.Models.LuisResult -&gt; Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&#xA;override this.BestIntentFrom : Microsoft.Bot.Builder.Luis.Models.LuisResult -&gt; Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" Usage="luisDialog.BestIntentFrom result" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.Models.IntentRecommendation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A result of a LUIS service call.</param>
+        <summary>
+            Calculates the best scored <see cref="T:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" /> from a <see cref="T:Microsoft.Bot.Builder.Luis.Models.LuisResult" />.
+            </summary>
+        <returns>The best scored <see cref="T:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />, or null if <paramref name="result" /> doesn't contain any intents.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BestResultFrom">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Builder.Dialogs.LuisServiceResult BestResultFrom (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.LuisServiceResult&gt; results);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Dialogs.LuisServiceResult BestResultFrom(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.LuisServiceResult&gt; results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.BestResultFrom(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.LuisServiceResult})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function BestResultFrom (results As IEnumerable(Of LuisServiceResult)) As LuisServiceResult" />
+      <MemberSignature Language="F#" Value="abstract member BestResultFrom : seq&lt;Microsoft.Bot.Builder.Dialogs.LuisServiceResult&gt; -&gt; Microsoft.Bot.Builder.Dialogs.LuisServiceResult&#xA;override this.BestResultFrom : seq&lt;Microsoft.Bot.Builder.Dialogs.LuisServiceResult&gt; -&gt; Microsoft.Bot.Builder.Dialogs.LuisServiceResult" Usage="luisDialog.BestResultFrom results" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.LuisServiceResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.LuisServiceResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="results">Results of multiple LUIS services calls.</param>
+        <summary>
+            Calculates the best scored <see cref="T:Microsoft.Bot.Builder.Dialogs.LuisServiceResult" /> across multiple <see cref="T:Microsoft.Bot.Builder.Dialogs.LuisServiceResult" /> returned by
+            different <see cref="T:Microsoft.Bot.Builder.Luis.ILuisService" />.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Builder.Dialogs.LuisServiceResult" /> with the best scored <see cref="T:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" /> and related <see cref="T:Microsoft.Bot.Builder.Luis.Models.LuisResult" />,
+            or null if no one of <paramref name="results" /> contains any intents.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchToIntentHandler">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task DispatchToIntentHandler (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation bestIntent, Microsoft.Bot.Builder.Luis.Models.LuisResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task DispatchToIntentHandler(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation bestIntent, class Microsoft.Bot.Builder.Luis.Models.LuisResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.DispatchToIntentHandler(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.Models.LuisResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function DispatchToIntentHandler (context As IDialogContext, item As IAwaitable(Of IMessageActivity), bestIntent As IntentRecommendation, result As LuisResult) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DispatchToIntentHandler : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * Microsoft.Bot.Builder.Luis.Models.IntentRecommendation * Microsoft.Bot.Builder.Luis.Models.LuisResult -&gt; System.Threading.Tasks.Task&#xA;override this.DispatchToIntentHandler : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * Microsoft.Bot.Builder.Luis.Models.IntentRecommendation * Microsoft.Bot.Builder.Luis.Models.LuisResult -&gt; System.Threading.Tasks.Task" Usage="luisDialog.DispatchToIntentHandler (context, item, bestIntent, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+        <Parameter Name="bestIntent" Type="Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="bestIntent">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHandlersByIntent">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt; GetHandlersByIntent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt; GetHandlersByIntent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.GetHandlersByIntent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetHandlersByIntent () As IDictionary(Of String, IntentActivityHandler)" />
+      <MemberSignature Language="F#" Value="abstract member GetHandlersByIntent : unit -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;&#xA;override this.GetHandlersByIntent : unit -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;" Usage="luisDialog.GetHandlersByIntent " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLuisQueryTextAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;string&gt; GetLuisQueryTextAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Connector.IMessageActivity message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetLuisQueryTextAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.GetLuisQueryTextAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetLuisQueryTextAsync (context As IDialogContext, message As IMessageActivity) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetLuisQueryTextAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetLuisQueryTextAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="luisDialog.GetLuisQueryTextAsync (context, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="handlerByIntent">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt; handlerByIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt; handlerByIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.handlerByIntent" />
+      <MemberSignature Language="VB.NET" Value="Protected handlerByIntent As Dictionary(Of String, IntentActivityHandler) " />
+      <MemberSignature Language="F#" Value="val mutable handlerByIntent : System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.handlerByIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.IntentActivityHandler&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>   Mapping from intent string to the appropriate handler. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisActionDialogFinished">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task LuisActionDialogFinished (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task LuisActionDialogFinished(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisActionDialogFinished(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Builder.Luis.Models.LuisResult})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LuisActionDialogFinished (context As IDialogContext, item As IAwaitable(Of LuisResult)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LuisActionDialogFinished : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.LuisActionDialogFinished : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt; -&gt; System.Threading.Tasks.Task" Usage="luisDialog.LuisActionDialogFinished (context, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceLabel">
+      <MemberSignature Language="C#" Value="public const string LuisTraceLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceLabel" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisTraceLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceLabel As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceLabel : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.LuisTraceLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceName">
+      <MemberSignature Language="C#" Value="public const string LuisTraceName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisTraceName" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceName As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceName : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.LuisTraceName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceType">
+      <MemberSignature Language="C#" Value="public const string LuisTraceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.LuisTraceType" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceType As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceType : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.LuisTraceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeLuisActionDialog">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt; MakeLuisActionDialog (Microsoft.Bot.Builder.Luis.ILuisService luisService, string contextId, string prompt);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt; MakeLuisActionDialog(class Microsoft.Bot.Builder.Luis.ILuisService luisService, string contextId, string prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MakeLuisActionDialog(Microsoft.Bot.Builder.Luis.ILuisService,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakeLuisActionDialog (luisService As ILuisService, contextId As String, prompt As String) As Task(Of IDialog(Of LuisResult))" />
+      <MemberSignature Language="F#" Value="abstract member MakeLuisActionDialog : Microsoft.Bot.Builder.Luis.ILuisService * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt;&#xA;override this.MakeLuisActionDialog : Microsoft.Bot.Builder.Luis.ILuisService * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt;" Usage="luisDialog.MakeLuisActionDialog (luisService, contextId, prompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Luis.Models.LuisResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="luisService" Type="Microsoft.Bot.Builder.Luis.ILuisService" />
+        <Parameter Name="contextId" Type="System.String" />
+        <Parameter Name="prompt" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="luisService">To be added.</param>
+        <param name="contextId">To be added.</param>
+        <param name="prompt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeServicesFromAttributes">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.ILuisService[] MakeServicesFromAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Luis.ILuisService[] MakeServicesFromAttributes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MakeServicesFromAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeServicesFromAttributes () As ILuisService()" />
+      <MemberSignature Language="F#" Value="member this.MakeServicesFromAttributes : unit -&gt; Microsoft.Bot.Builder.Luis.ILuisService[]" Usage="luisDialog.MakeServicesFromAttributes " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.ILuisService[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageReceived">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task MessageReceived (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task MessageReceived(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.MessageReceived(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MessageReceived (context As IDialogContext, item As IAwaitable(Of IMessageActivity)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member MessageReceived : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.MessageReceived : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="luisDialog.MessageReceived (context, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyLuisRequest">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Builder.Luis.LuisRequest ModifyLuisRequest (Microsoft.Bot.Builder.Luis.LuisRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Builder.Luis.LuisRequest ModifyLuisRequest(class Microsoft.Bot.Builder.Luis.LuisRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.ModifyLuisRequest(Microsoft.Bot.Builder.Luis.LuisRequest)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ModifyLuisRequest (request As LuisRequest) As LuisRequest" />
+      <MemberSignature Language="F#" Value="abstract member ModifyLuisRequest : Microsoft.Bot.Builder.Luis.LuisRequest -&gt; Microsoft.Bot.Builder.Luis.LuisRequest&#xA;override this.ModifyLuisRequest : Microsoft.Bot.Builder.Luis.LuisRequest -&gt; Microsoft.Bot.Builder.Luis.LuisRequest" Usage="luisDialog.ModifyLuisRequest request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Luis.LuisRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Request so far.</param>
+        <summary>
+            Modify LUIS request before it is sent.
+            </summary>
+        <returns>Modified request.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Obfuscated">
+      <MemberSignature Language="C#" Value="public const string Obfuscated;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Obfuscated" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.Obfuscated" />
+      <MemberSignature Language="VB.NET" Value="Public Const Obfuscated As String " />
+      <MemberSignature Language="F#" Value="val mutable Obfuscated : string" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.Obfuscated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSensitiveData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Luis.ILuisModel RemoveSensitiveData (Microsoft.Bot.Builder.Luis.ILuisModel luisModel);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Luis.ILuisModel RemoveSensitiveData(class Microsoft.Bot.Builder.Luis.ILuisModel luisModel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.RemoveSensitiveData(Microsoft.Bot.Builder.Luis.ILuisModel)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveSensitiveData (luisModel As ILuisModel) As ILuisModel" />
+      <MemberSignature Language="F#" Value="static member RemoveSensitiveData : Microsoft.Bot.Builder.Luis.ILuisModel -&gt; Microsoft.Bot.Builder.Luis.ILuisModel" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.RemoveSensitiveData luisModel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Luis.ILuisModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="luisModel" Type="Microsoft.Bot.Builder.Luis.ILuisModel" />
+      </Parameters>
+      <Docs>
+        <param name="luisModel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="services">
+      <MemberSignature Language="C#" Value="protected readonly System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt; services;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Luis.ILuisService&gt; services" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.services" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly services As IReadOnlyList(Of ILuisService) " />
+      <MemberSignature Language="F#" Value="val mutable services : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt;" Usage="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;'Result&gt;.services" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Luis.ILuisService&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (context As IDialogContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task&#xA;override this.StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task" Usage="luisDialog.StartAsync context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

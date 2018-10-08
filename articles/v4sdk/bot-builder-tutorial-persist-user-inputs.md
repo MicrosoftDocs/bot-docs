@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-When the bot ask users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Builder SDK allows you to store user inputs using *in-memory storage* or database storage such as *CosmosDB*. Local storage types are mainly used during testing or prototyping of your bot. However, persistent storage types, such as database storage, are best for production bots. 
+When the bot ask users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Builder SDK allows you to store user inputs using *in-memory storage* or database storage such as *CosmosDB*. Local storage types are mainly used during testing or prototyping of your bot. However, persistent storage types, such as database storage, are best for production bots.
 
 This topic shows you how to define your storage object and save user inputs to the storage object so that it can be persisted. We'll use a dialog to ask the user for their name, if we don't already have it. Regardless of the storage type you choose to use, the process for hooking it up and persisting data is the same. The code in this topic uses `CosmosDB` as the storage to persist data.
 
@@ -45,15 +45,18 @@ This tutorial makes use of the following packages.
 
 # [C#](#tab/csharp)
 
-Install these packages from the NuGet packet manager.
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for .NET](~/dotnet/bot-builder-dotnet-quickstart.md).
+
+Install these additional packages from the NuGet packet manager.
 
 * **Microsoft.Bot.Builder.Azure**
 * **Microsoft.Bot.Builder.Dialogs**
-* **Microsoft.Bot.Builder.Integration.AspNet.Core**
 
 # [JavaScript](#tab/javascript)
 
-Navigate to your bot's project folder and install the `botbuilder-dialogs` package from NPM:
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for JavaScript](~/javascript/bot-builder-javascript-quickstart.md).
+
+Install these additional npm packages.
 
 ```cmd
 npm install --save botbuilder-dialogs
@@ -65,13 +68,15 @@ npm install --save botbuilder-azure
 To test the bot you create in this tutorial, you will need to install the [BotFramework Emulator](https://github.com/Microsoft/BotFramework-Emulator).
 
 ## Create a CosmosDB service and update your application settings
-To set up a CosmosDB service and a database, follow the instructions for [using CosmosDB](bot-builder-howto-v4-storage.md#using-cosmos-db). The steps are summarized here:
-   1. In a new browser window, sign in to the <a href="http://portal.azure.com/" target="_blank">Azure portal</a>.
-   1. Click **Create a resource > Databases > Azure Cosmos DB**.
-   1. In the **New account** page, provide a unique name in the **ID** field. For **API**, select **SQL**, and provide **Subscription**, **Location**, and **Resource group** information.
-   1. Click **Create**.
 
-Then, Add a collection to that service for use with this bot.
+To set up a CosmosDB service and a database, follow the instructions for [using CosmosDB](bot-builder-howto-v4-storage.md#using-cosmos-db). The steps are summarized here:
+
+1. In a new browser window, sign in to the <a href="http://portal.azure.com/" target="_blank">Azure portal</a>.
+1. Click **Create a resource > Databases > Azure Cosmos DB**.
+1. In the **New account** page, provide a unique name in the **ID** field. For **API**, select **SQL**, and provide **Subscription**, **Location**, and **Resource group** information.
+1. Click **Create**.
+
+Then, add a collection to that service for use with this bot.
 
 Record the database ID and collection ID you used to add the collection, and also the URI and primary key from the collection's keys settings, as we will need these to connect our bot to the service.
 
@@ -99,18 +104,18 @@ In your project folder, locate the **.env** file and add these entries with your
 
 **.env**
 
-```cmd
-DB_SERVICE_ENDPOINT=<database service endpoint>
+```text
+DB_SERVICE_ENDPOINT=<your-CosmosDB-endpoint>
 AUTH_KEY=<authentication key>
-DATABASE=<database name>
-COLLECTION=<collection name>
+DATABASE=<your-primary-key>
+COLLECTION=<your-collection-identifier>
 ```
 
 Then, in your bot's main **index.js** file, replace `storage` to use `CosmosDbStorage` instead of `MemoryStorage`. During run time, the environment variables will be pulled in and populate these fields.
 
 ```javascript
 const storage = new CosmosDbStorage({
-    serviceEndpoint: process.env.DB_SERVICE_ENDPOINT, 
+    serviceEndpoint: process.env.DB_SERVICE_ENDPOINT,
     authKey: process.env.AUTH_KEY, 
     databaseId: process.env.DATABASE,
     collectionId: process.env.COLLECTION
@@ -121,8 +126,7 @@ const storage = new CosmosDbStorage({
 
 ## Create storage, state manager, and state property accessor objects
 
-Bots use state management and storage objects to manage and persist state. The manager provides an abstraction layer that lets you access state properties using state property accessors, independent of the type of underlying storage. Use the state manager to write data to storage. 
-
+Bots use state management and storage objects to manage and persist state. The manager provides an abstraction layer that lets you access state properties using state property accessors, independent of the type of underlying storage. Use the state manager to write data to storage.
 
 # [C#](#tab/csharp)
 
@@ -185,13 +189,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Azure;
-using Microsoft.Bot.Builder.BotFramework;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Integration;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
-using Microsoft.Bot.Builder.TraceExtensions;
+using Microsoft.Bot.Configuration;
+using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 ```
 
@@ -210,14 +215,14 @@ public void ConfigureServices(IServiceCollection services)
         // ...
 
         // Use persistent storage and create state management objects.
-        var CosmosSettings = Configuration.GetSection("CosmosDB");
+        var cosmosSettings = Configuration.GetSection("CosmosDB");
         IStorage storage = new CosmosDbStorage(
             new CosmosDbStorageOptions
             {
-                DatabaseId = CosmosSettings["DatabaseID"],
-                CollectionId = CosmosSettings["CollectionID"],
-                CosmosDBEndpoint = new Uri(CosmosSettings["EndpointUri"]),
-                AuthKey = CosmosSettings["AuthenticationKey"],
+                DatabaseId = cosmosSettings["DatabaseID"],
+                CollectionId = cosmosSettings["CollectionID"],
+                CosmosDBEndpoint = new Uri(cosmosSettings["EndpointUri"]),
+                AuthKey = cosmosSettings["AuthenticationKey"],
             });
         options.State.Add(new ConversationState(storage));
         options.State.Add(new UserState(storage));
@@ -241,11 +246,12 @@ public void ConfigureServices(IServiceCollection services)
 
 # [JavaScript](#tab/javascript)
 
-### index.js
+### Update your server code
 
-In your main bot's **index.js** file, update the following require statements.
+In your project's **index.js** file, update the following require statements.
 
 ```javascript
+// Import required bot services.
 const { BotFrameworkAdapter, ConversationState, UserState } = require('botbuilder');
 const { CosmosDbStorage } = require('botbuilder-azure');
 ```
@@ -253,17 +259,49 @@ const { CosmosDbStorage } = require('botbuilder-azure');
 We will be using the `UserState` to store data for this tutorial. We need to create a new `userState` object and update this line of code to pass in a second parameter to the `MainDialog` class.
 
 ```javascript
-// Create conversation state with in-memory storage provider. 
+// Create conversation state with in-memory storage provider.
 const conversationState = new ConversationState(storage);
 const userState = new UserState(storage);
 
 // Create the main dialog.
-const mainDlg = new MainDialog(conversationState, userState);
+const bot = new MyBot(conversationState, userState);
 ```
 
-### dialogs/mainDialog/index.js
+If we encounter a general error, clear out both conversation and user state.
 
-In the `MainDialog` class, require the necessary libraries for your bot to operate. In this tutorial, we will be using the **Dialogs** library.
+```javascript
+// Catch-all for errors.
+adapter.onTurnError = async (context, error) => {
+    // This check writes out errors to console log .vs. app insights.
+    console.error(`\n [onTurnError]: ${error}`);
+    // Send a message to the user
+    context.sendActivity(`Oops. Something went wrong!`);
+    // Clear out state
+    await conversationState.load(context);
+    await conversationState.clear(context);
+    await userState.load(context);
+    await userState.clear(context);
+    // Save state changes.
+    await conversationState.saveChanges(context);
+    await userState.saveChanges(context);
+};
+```
+
+And update the HTTP server loop to call our bot object.
+
+```javascript
+// Listen for incoming requests.
+server.post('/api/messages', (req, res) => {
+    adapter.processActivity(req, res, async (context) => {
+        // Route to main dialog.
+        await bot.onTurn(context);
+    });
+});
+```
+
+### Update your bot logic
+
+In the `MyBot` class, require the necessary libraries for your bot to operate. In this tutorial, we will be using the **Dialogs** library.
 
 ```javascript
 // Required packages for this bot
@@ -272,30 +310,29 @@ const { DialogSet, WaterfallDialog, TextPrompt, NumberPrompt } = require('botbui
 
 ```
 
-Update the `MainDialog` class's constructor to accept a second parameter as `userState`. Also, update the constructor to define the states, dialogs, and prompts we need for this tutorial. In this case, we are defining a two step waterfall where _step 1_ ask the user for their name and _step 2_ returns the user input. It's up to the bot's main logic to persist that information.
+Update the `MyBot` class's constructor to accept a second parameter, `userState`. Also, update the constructor to define the states, dialogs, and prompts we need for this tutorial. In this case, we are defining a two step waterfall where _step 1_ asks the user for their name and _step 2_ returns the user's response. It's up to the bot's main logic to persist that information.
 
 ```javascript
-constructor (conversationState, userState) {
+constructor(conversationState, userState) {
 
-    // creates a new state accessor property. see https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors 
+    // creates a new state accessor property.
     this.conversationState = conversationState;
     this.userState = userState;
 
     this.dialogState = this.conversationState.createProperty('dialogState');
-
     this.userDataAccessor = this.userState.createProperty('userData');
 
     this.dialogs = new DialogSet(this.dialogState);
-    
+
     // Add prompts
     this.dialogs.add(new TextPrompt('textPrompt'));
-    
-    // Check in user:
+
+    // Add a waterfall dialog to collect and return the user's name.
     this.dialogs.add(new WaterfallDialog('greetings', [
         async function (step) {
             return await step.prompt('textPrompt', "What is your name?");
         },
-        async function (step){
+        async function (step) {
             return await step.endDialog(step.result);
         }
     ]));
@@ -478,14 +515,14 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
                     await turnContext.SendActivityAsync($"Pleased to meet you {userData.Name}.");
                 }
             }
-            // Else, if we don't have the user's name yet, ask for it.
             else if (userData.Name is null)
             {
+                // Else, if we don't have the user's name yet, ask for it.
                 await dc.BeginDialogAsync(GreetingsDialog.MainDialog);
             }
-            // Else, echo the user's message text.
             else
             {
+                // Else, echo the user's message text.
                 await turnContext.SendActivityAsync($"{userData.Name} said, '{turnContext.Activity.Text}'.");
             }
 
@@ -511,20 +548,17 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
 # [JavaScript](#tab/javascript)
 
-Update the `MainDialog`'s `onTurn` handler.
-
-**dialogs/mainDialog/index.js**
+Update the bot's `onTurn` handler.
 
 ```javascript
 async onTurn(turnContext) {
-        
     const dc = await this.dialogs.createContext(turnContext); // Create dialog context
     const userData = await this.userDataAccessor.get(turnContext, {});
 
-    switch(turnContext.activity.type){
+    switch (turnContext.activity.type) {
         case ActivityTypes.ConversationUpdate:
             if (turnContext.activity.membersAdded[0].name !== 'Bot') {
-                if(userData.name){
+                if (userData.name) {
                     await turnContext.sendActivity(`Hi ${userData.name}! Welcome back to the User Data bot.`);
                 }
                 else {
@@ -533,12 +567,12 @@ async onTurn(turnContext) {
                     await dc.beginDialog('greetings');
                 }
             }
-        break;
+            break;
         case ActivityTypes.Message:
             // If there is an active dialog running, continue it
-            if(dc.activeDialog){
+            if (dc.activeDialog) {
                 var turnResult = await dc.continueDialog();
-                if(turnResult.status == "complete" && turnResult.result){
+                if (turnResult.status == "complete" && turnResult.result) {
                     // If it completes successfully and returns a value, save the name and greet the user.
                     userData.name = turnResult.result;
                     await this.userDataAccessor.set(turnContext, userData);
@@ -546,50 +580,48 @@ async onTurn(turnContext) {
                 }
             }
             // Else, if we don't have the user's name yet, ask for it.
-            else if(!userData.name){
+            else if (!userData.name) {
                 await dc.beginDialog('greetings');
             }
             // Else, echo the user's message text.
             else {
                 await turnContext.sendActivity(`${userData.name} said, ${turnContext.activity.text}.`);
             }
-        break;
-        case "deleteUserData":
+            break;
+        case ActivityTypes.DeleteUserData:
             // Delete the user's data.
-            // Note: You can use the emuluator to send this activity.
+            // Note: You can use the Emulator to send this activity.
             userData.name = null;
             await this.userDataAccessor.set(turnContext, userData);
             await turnContext.sendActivity("I have deleted your user data.");
-        break;
+            break;
     }
 
-    // Save changes to the user name.
-    await this.userState.saveChanges(turnContext);
-
-    // End this turn by saving changes to the conversation state.
+    // Save changes to the conversation and user states.
     await this.conversationState.saveChanges(turnContext);
-
+    await this.userState.saveChanges(turnContext);
 }
-
 ```
 
 ---
 
 ## Start your bot in Visual Studio
+
 Build and run your application.
 
 ## Start the emulator and connect your bot
 
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+1. Click the **Open Bot** link in the emulator "Welcome" tab.
 2. Select the .bot file located in the directory where you created the Visual Studio solution.
 
 ## Interact with your bot
+
 Send a message to your bot, and the bot will respond back with a message.
 ![Emulator running](../media/emulator-v4/emulator-running.png)
 
-
 ## Next steps
+
 > [!div class="nextstepaction"]
 > [Manage conversation and user state](bot-builder-howto-v4-state.md)

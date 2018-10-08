@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type TemplateManager = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,8 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,8 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -70,8 +67,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
@@ -94,8 +90,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TemplateManager.TemplateManager</ReturnType>
@@ -113,34 +108,26 @@
       </Docs>
     </Member>
     <Member MemberName="RenderTemplate">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data = null);" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Activity&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data) cil managed" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (context As ITurnContext, language As String, templateId As String, Optional data As Object = null) As Task(Of Activity)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;" Usage="templateManager.RenderTemplate (context, language, templateId, data)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Activity&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (turnContext As ITurnContext, language As String, templateId As String, Optional data As Object = null) As Task(Of Activity)" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="F#" Value="member this.RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;" Usage="templateManager.RenderTemplate (turnContext, language, templateId, data)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Activity&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (turnContext As ITurnContext, language As String, templateId As String, Optional data As Object = null) As Task(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;" Usage="templateManager.RenderTemplate (turnContext, language, templateId, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
-        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="language" Type="System.String" Index="1" />
-        <Parameter Name="templateId" Type="System.String" Index="2" />
-        <Parameter Name="data" Type="System.Object" Index="3" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="templateId" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context"></param>
         <param name="turnContext"></param>
         <param name="language"></param>
         <param name="templateId"></param>
@@ -153,33 +140,25 @@
       </Docs>
     </Member>
     <Member MemberName="ReplyWith">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReplyWith (Microsoft.Bot.Builder.ITurnContext context, string templateId, object data = null);" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReplyWith(class Microsoft.Bot.Builder.ITurnContext context, string templateId, object data) cil managed" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.ReplyWith(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Function ReplyWith (context As ITurnContext, templateId As String, Optional data As Object = null) As Task" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.ReplyWith : Microsoft.Bot.Builder.ITurnContext * string * obj -&gt; System.Threading.Tasks.Task" Usage="templateManager.ReplyWith (context, templateId, data)" FrameworkAlternate="botbuilder-dotnet-preview" />
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReplyWith (Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReplyWith(class Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.ReplyWith(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object)" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="VB.NET" Value="Public Function ReplyWith (turnContext As ITurnContext, templateId As String, Optional data As Object = null) As Task" FrameworkAlternate="botbuilder-dotnet-stable" />
-      <MemberSignature Language="F#" Value="member this.ReplyWith : Microsoft.Bot.Builder.ITurnContext * string * obj -&gt; System.Threading.Tasks.Task" Usage="templateManager.ReplyWith (turnContext, templateId, data)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReplyWith (Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReplyWith(class Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.ReplyWith(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReplyWith (turnContext As ITurnContext, templateId As String, Optional data As Object = null) As Task" />
+      <MemberSignature Language="F#" Value="member this.ReplyWith : Microsoft.Bot.Builder.ITurnContext * string * obj -&gt; System.Threading.Tasks.Task" Usage="templateManager.ReplyWith (turnContext, templateId, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
-        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="templateId" Type="System.String" Index="1" />
-        <Parameter Name="data" Type="System.Object" Index="2" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="templateId" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context"></param>
         <param name="turnContext"></param>
         <param name="templateId"></param>
         <param name="data"></param>
@@ -199,8 +178,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-        <AssemblyVersion>4.0.6.0</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,0 +1,34 @@
+﻿<Type Name="BuildFormDelegate&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; BuildFormDelegate&lt;T&gt;() where T : class;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildFormDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function BuildFormDelegate(Of T)() As IForm(Of T) " />
+  <TypeSignature Language="F#" Value="type BuildFormDelegate&lt;'T (requires 'T : null)&gt; = delegate of unit -&gt; IForm&lt;'T (requires 'T : null)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt;</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The form state type.</typeparam>
+    <summary>
+            Delegate for building the form.
+            </summary>
+    <returns>An <see cref="T:Microsoft.Bot.Builder.FormFlow.IForm`1" />.</returns>
+    <remarks>This is a delegate so that we can rebuild the form and don't have to serialize
+            the form definition with every message.</remarks>
+  </Docs>
+</Type>

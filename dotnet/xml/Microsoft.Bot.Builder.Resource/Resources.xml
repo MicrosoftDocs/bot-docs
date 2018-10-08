@@ -1,0 +1,1899 @@
+﻿<Type Name="Resources" FullName="Microsoft.Bot.Builder.Resource.Resources">
+  <TypeSignature Language="C#" Value="public class Resources" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Resources extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Resource.Resources" />
+  <TypeSignature Language="VB.NET" Value="Public Class Resources" />
+  <TypeSignature Language="F#" Value="type Resources = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttachmentContentTypeValidatorError">
+      <MemberSignature Language="C#" Value="public static string AttachmentContentTypeValidatorError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AttachmentContentTypeValidatorError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.AttachmentContentTypeValidatorError" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AttachmentContentTypeValidatorError As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentContentTypeValidatorError : string" Usage="Microsoft.Bot.Builder.Resource.Resources.AttachmentContentTypeValidatorError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Attachment '{0}' is invalid! The content-type should contain {1}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentContentTypeValidatorHelp">
+      <MemberSignature Language="C#" Value="public static string AttachmentContentTypeValidatorHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AttachmentContentTypeValidatorHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.AttachmentContentTypeValidatorHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AttachmentContentTypeValidatorHelp As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentContentTypeValidatorHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.AttachmentContentTypeValidatorHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You should provide an attachment where content-type has {0}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BooleanChoices">
+      <MemberSignature Language="C#" Value="public static string BooleanChoices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string BooleanChoices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.BooleanChoices" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BooleanChoices As String" />
+      <MemberSignature Language="F#" Value="member this.BooleanChoices : string" Usage="Microsoft.Bot.Builder.Resource.Resources.BooleanChoices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to true=y,yes,yep,sure,ok,\u1f44d,\u1f44c|false=n,no,nope,\u1f44e,\\u270b,\\u1f590.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandBack">
+      <MemberSignature Language="C#" Value="public static string CommandBack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandBack" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBack" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBack As String" />
+      <MemberSignature Language="F#" Value="member this.CommandBack : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandBack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Back.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandBackHelp">
+      <MemberSignature Language="C#" Value="public static string CommandBackHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandBackHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBackHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandBackHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandBackHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Back: Go back to the previous question..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandBackTerms">
+      <MemberSignature Language="C#" Value="public static string CommandBackTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandBackTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandBackTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandBackTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandBackTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandBackTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to backup;go back;back.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandHelp">
+      <MemberSignature Language="C#" Value="public static string CommandHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Help.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandHelpHelp">
+      <MemberSignature Language="C#" Value="public static string CommandHelpHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandHelpHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelpHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelpHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandHelpHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandHelpHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Help: Show the kinds of responses you can enter..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandHelpTerms">
+      <MemberSignature Language="C#" Value="public static string CommandHelpTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandHelpTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandHelpTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandHelpTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandHelpTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandHelpTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to help;choices;\?.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandQuit">
+      <MemberSignature Language="C#" Value="public static string CommandQuit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandQuit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuit As String" />
+      <MemberSignature Language="F#" Value="member this.CommandQuit : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandQuit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Quit.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandQuitHelp">
+      <MemberSignature Language="C#" Value="public static string CommandQuitHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandQuitHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuitHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuitHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandQuitHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandQuitHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Quit: Quit the form without completing it..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandQuitTerms">
+      <MemberSignature Language="C#" Value="public static string CommandQuitTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandQuitTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandQuitTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandQuitTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandQuitTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandQuitTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to quit;stop;finish;goodby?;good bye?;bye;ciao;adios;bye-bye;so long;cheers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandReset">
+      <MemberSignature Language="C#" Value="public static string CommandReset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandReset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandReset" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandReset As String" />
+      <MemberSignature Language="F#" Value="member this.CommandReset : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandReset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Start over.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandResetHelp">
+      <MemberSignature Language="C#" Value="public static string CommandResetHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandResetHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandResetHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandResetHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandResetHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandResetHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Reset: Start over filling in the form.  (With defaults from your previous entries.).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandResetTerms">
+      <MemberSignature Language="C#" Value="public static string CommandResetTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandResetTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandResetTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandResetTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandResetTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandResetTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to start over;reset;clear.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandStatus">
+      <MemberSignature Language="C#" Value="public static string CommandStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatus As String" />
+      <MemberSignature Language="F#" Value="member this.CommandStatus : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Status.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandStatusHelp">
+      <MemberSignature Language="C#" Value="public static string CommandStatusHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandStatusHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatusHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatusHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CommandStatusHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandStatusHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Status: Show your progress in filling in the form so far..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandStatusTerms">
+      <MemberSignature Language="C#" Value="public static string CommandStatusTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CommandStatusTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.CommandStatusTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandStatusTerms As String" />
+      <MemberSignature Language="F#" Value="member this.CommandStatusTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.CommandStatusTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to status;progress;so far;results.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Confirmation">
+      <MemberSignature Language="C#" Value="public static string Confirmation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Confirmation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Confirmation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Confirmation As String" />
+      <MemberSignature Language="F#" Value="member this.Confirmation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.Confirmation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Confirmation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfirmChoiceFormat">
+      <MemberSignature Language="C#" Value="public static string ConfirmChoiceFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ConfirmChoiceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.ConfirmChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConfirmChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.ConfirmChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.ConfirmChoiceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {1}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Bot.Builder.Resource.Resources.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultChoiceFormat">
+      <MemberSignature Language="C#" Value="public static string DefaultChoiceFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {0}. {1}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultChoiceLastSeparator">
+      <MemberSignature Language="C#" Value="public static string DefaultChoiceLastSeparator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceLastSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceLastSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceLastSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultChoiceLastSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceLastSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to , or .
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultChoiceSeparator">
+      <MemberSignature Language="C#" Value="public static string DefaultChoiceSeparator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultChoiceSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultChoiceSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultChoiceSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultChoiceSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to , .
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultContentTypesSeparator">
+      <MemberSignature Language="C#" Value="public static string DefaultContentTypesSeparator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultContentTypesSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultContentTypesSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultContentTypesSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultContentTypesSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultContentTypesSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to or.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultLastSeparator">
+      <MemberSignature Language="C#" Value="public static string DefaultLastSeparator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultLastSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultLastSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultLastSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultLastSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultLastSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to , and .
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSeparator">
+      <MemberSignature Language="C#" Value="public static string DefaultSeparator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.DefaultSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultSeparator As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultSeparator : string" Usage="Microsoft.Bot.Builder.Resource.Resources.DefaultSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to , .
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageArticles">
+      <MemberSignature Language="C#" Value="public static string LanguageArticles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string LanguageArticles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.LanguageArticles" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LanguageArticles As String" />
+      <MemberSignature Language="F#" Value="member this.LanguageArticles : string" Usage="Microsoft.Bot.Builder.Resource.Resources.LanguageArticles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to a;an;the.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageStopWords">
+      <MemberSignature Language="C#" Value="public static string LanguageStopWords { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string LanguageStopWords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.LanguageStopWords" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LanguageStopWords As String" />
+      <MemberSignature Language="F#" Value="member this.LanguageStopWords : string" Usage="Microsoft.Bot.Builder.Resource.Resources.LanguageStopWords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to a;about;above;above;across;after;afterwards;again;against;all;almost;alone;along;already;also;although;always;am;among;amongst;amoungst;amount;an;and;another;any;anyhow;anyone;anything;anyway;anywhere;are;around;as;at;back;be;became;because;become;becomes;becoming;been;before;beforehand;behind;being;below;beside;besides;between;beyond;bill;both;bottom;but;by;call;can;cannot;cant;co;con;could;couldnt;cry;de;describe;detail;do;done;down;due;during;each;eg;eight;either;eleven;else;elsewhere;empty;enough;etc;ev [rest of string was truncated]";.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchCurrentChoice">
+      <MemberSignature Language="C#" Value="public static string MatchCurrentChoice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MatchCurrentChoice" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchCurrentChoice" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchCurrentChoice As String" />
+      <MemberSignature Language="F#" Value="member this.MatchCurrentChoice : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchCurrentChoice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Current Choice('c');current;c;current choice;no change.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchNo">
+      <MemberSignature Language="C#" Value="public static string MatchNo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MatchNo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchNo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchNo As String" />
+      <MemberSignature Language="F#" Value="member this.MatchNo : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchNo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to No;n;nope;2.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchNoPreference">
+      <MemberSignature Language="C#" Value="public static string MatchNoPreference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MatchNoPreference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchNoPreference" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchNoPreference As String" />
+      <MemberSignature Language="F#" Value="member this.MatchNoPreference : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchNoPreference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to No Preference;no;none;I don'?t care.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchYes">
+      <MemberSignature Language="C#" Value="public static string MatchYes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MatchYes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.MatchYes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MatchYes As String" />
+      <MemberSignature Language="F#" Value="member this.MatchYes : string" Usage="Microsoft.Bot.Builder.Resource.Resources.MatchYes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Yes;y;sure;ok;yep;1.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigation">
+      <MemberSignature Language="C#" Value="public static string Navigation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Navigation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.Navigation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Navigation As String" />
+      <MemberSignature Language="F#" Value="member this.Navigation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.Navigation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Field Name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberExpression">
+      <MemberSignature Language="C#" Value="public static string NumberExpression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string NumberExpression" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberExpression As String" />
+      <MemberSignature Language="F#" Value="member this.NumberExpression : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to [+-]?(?:\d+\.?\d*|\d*\.?\d+).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOrdinals">
+      <MemberSignature Language="C#" Value="public static string NumberOrdinals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string NumberOrdinals" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberOrdinals" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberOrdinals As String" />
+      <MemberSignature Language="F#" Value="member this.NumberOrdinals : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberOrdinals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to 1=1st,first,first one|2=2nd,second,second one|3=3rd,third,third one|4=4th,fourth,fourth one|5=5th,fifth,fifth one|6=6th,sixth,sixth one|7=7th,seventh,seventh one|8=8th,eigth,eigth one|9=9th,ninth,ninth one|10=10th,tenth,tenth one.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberReverseOrdinals">
+      <MemberSignature Language="C#" Value="public static string NumberReverseOrdinals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string NumberReverseOrdinals" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberReverseOrdinals" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberReverseOrdinals As String" />
+      <MemberSignature Language="F#" Value="member this.NumberReverseOrdinals : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberReverseOrdinals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to -1=last,last one|-2=next to last,second to last,second from last|-3=third to last,third from last|-4=fourth to last,fourth from last|-5=fifth to last,fith from last.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberTerms">
+      <MemberSignature Language="C#" Value="public static string NumberTerms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string NumberTerms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.NumberTerms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberTerms As String" />
+      <MemberSignature Language="F#" Value="member this.NumberTerms : string" Usage="Microsoft.Bot.Builder.Resource.Resources.NumberTerms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to 0=zero|1=one|2=two|3=three|4=four|5=five|6=six|7=seven|8=eight|9=nine|10=ten|11=eleven|12=twelve|13=thirteen|14=fourteen|15=fifteen|16=sixteen|17=seventeen|18=eighteen|19=nineteen|20=twenty.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PromptRetry">
+      <MemberSignature Language="C#" Value="public static string PromptRetry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string PromptRetry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.PromptRetry" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PromptRetry As String" />
+      <MemberSignature Language="F#" Value="member this.PromptRetry : string" Usage="Microsoft.Bot.Builder.Resource.Resources.PromptRetry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to I didn't understand. Say something in reply..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceManager">
+      <MemberSignature Language="C#" Value="public static System.Resources.ResourceManager ResourceManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Resources.ResourceManager ResourceManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.ResourceManager" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResourceManager As ResourceManager" />
+      <MemberSignature Language="F#" Value="member this.ResourceManager : System.Resources.ResourceManager" Usage="Microsoft.Bot.Builder.Resource.Resources.ResourceManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Resources.ResourceManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateAttachment">
+      <MemberSignature Language="C#" Value="public static string TemplateAttachment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateAttachment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateAttachment" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateAttachment As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateAttachment : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateAttachment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please submit an attachment for {&amp;}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateAttachmentCollection">
+      <MemberSignature Language="C#" Value="public static string TemplateAttachmentCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateAttachmentCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateAttachmentCollection As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateAttachmentCollection : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please submit a collection of attachments for {&amp;}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateAttachmentCollectionDescription">
+      <MemberSignature Language="C#" Value="public static string TemplateAttachmentCollectionDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateAttachmentCollectionDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentCollectionDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateAttachmentCollectionDescription As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateAttachmentCollectionDescription : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentCollectionDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {0} attachment/s linked..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateAttachmentCollectionHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateAttachmentCollectionHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateAttachmentCollectionHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentCollectionHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateAttachmentCollectionHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateAttachmentCollectionHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentCollectionHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can submit one or more attachments.{0}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateAttachmentDescription">
+      <MemberSignature Language="C#" Value="public static string TemplateAttachmentDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateAttachmentDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateAttachmentDescription As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateAttachmentDescription : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Attachment named '{0}' with content-type '{1}'..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateAttachmentHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateAttachmentHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateAttachmentHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateAttachmentHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateAttachmentHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateAttachmentHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can submit one attachment.{0}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateBool">
+      <MemberSignature Language="C#" Value="public static string TemplateBool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateBool" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBool As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateBool : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateBool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Would you like a {&amp;}? {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateBoolHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateBoolHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateBoolHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateBoolHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBoolHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateBoolHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateBoolHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter 'yes' or 'no'{?, {0}}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateClarify">
+      <MemberSignature Language="C#" Value="public static string TemplateClarify { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateClarify" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateClarify" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateClarify As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateClarify : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateClarify" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to By "{0}" {&amp;} did you mean {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateConfirmation">
+      <MemberSignature Language="C#" Value="public static string TemplateConfirmation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateConfirmation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateConfirmation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateConfirmation As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateConfirmation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateConfirmation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Looks up a localized string similar to Is this your selection?
+            {*}.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateCurrentChoice">
+      <MemberSignature Language="C#" Value="public static string TemplateCurrentChoice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateCurrentChoice" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateCurrentChoice" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateCurrentChoice As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateCurrentChoice : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateCurrentChoice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to (current choice: {}).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateDateTime">
+      <MemberSignature Language="C#" Value="public static string TemplateDateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateDateTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDateTime As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDateTime : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter a date and time for {&amp;} {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateDateTimeHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateDateTimeHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateDateTimeHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDateTimeHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDateTimeHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDateTimeHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDateTimeHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter a date or time expression {?, {0}}{?, {1}}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateDouble">
+      <MemberSignature Language="C#" Value="public static string TemplateDouble { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateDouble" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDouble As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDouble : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDouble" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter a number {?between {0:F1} and {1:F1}} for {&amp;} {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateDoubleChoiceFormat">
+      <MemberSignature Language="C#" Value="public static string TemplateDoubleChoiceFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateDoubleChoiceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDoubleChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDoubleChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleChoiceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {1}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateDoubleHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateDoubleHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateDoubleHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateDoubleHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateDoubleHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateDoubleHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter a number{? between {2:F1} and {3:F1}}{?, {0}}{?, {1}}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEnumManyNumberHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateEnumManyNumberHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateEnumManyNumberHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyNumberHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumManyNumberHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumManyNumberHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyNumberHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can enter one or more numbers {0}-{1} or words from the descriptions. ({2}).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEnumManyWordHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateEnumManyWordHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateEnumManyWordHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyWordHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumManyWordHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumManyWordHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumManyWordHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can enter in one or more selections from the descriptions. ({2}).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEnumOneNumberHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateEnumOneNumberHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateEnumOneNumberHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneNumberHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumOneNumberHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumOneNumberHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneNumberHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can enter a number {0}-{1} or words from the descriptions. ({2}).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEnumOneWordHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateEnumOneWordHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateEnumOneWordHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneWordHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumOneWordHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumOneWordHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumOneWordHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can enter in any words from the descriptions. ({2}).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEnumSelectMany">
+      <MemberSignature Language="C#" Value="public static string TemplateEnumSelectMany { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateEnumSelectMany" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectMany" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumSelectMany As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumSelectMany : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectMany" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please select one or more {&amp;} {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEnumSelectOne">
+      <MemberSignature Language="C#" Value="public static string TemplateEnumSelectOne { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateEnumSelectOne" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectOne" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateEnumSelectOne As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateEnumSelectOne : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateEnumSelectOne" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please select a {&amp;} {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateFeedback">
+      <MemberSignature Language="C#" Value="public static string TemplateFeedback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateFeedback" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateFeedback As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateFeedback : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateFeedback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to For {&amp;} I understood {}. {?"{0}" is not an option.}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Looks up a localized string similar to You are filling in the {&amp;} field.  Possible responses:
+            {0}
+            {1}.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateHelpClarify">
+      <MemberSignature Language="C#" Value="public static string TemplateHelpClarify { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateHelpClarify" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpClarify" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpClarify As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelpClarify : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelpClarify" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Looks up a localized string similar to You are clarifying a {&amp;} value.  Possible responses:
+            {0}
+            {1}.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateHelpConfirm">
+      <MemberSignature Language="C#" Value="public static string TemplateHelpConfirm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateHelpConfirm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpConfirm" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpConfirm As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelpConfirm : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelpConfirm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Looks up a localized string similar to Please answer the question.  Possible responses:
+            {0}
+            {1}.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateHelpNavigation">
+      <MemberSignature Language="C#" Value="public static string TemplateHelpNavigation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateHelpNavigation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateHelpNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateHelpNavigation As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateHelpNavigation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateHelpNavigation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Looks up a localized string similar to Choose what field to change.  Possible responses:
+            {0}
+            {1}.
+             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateInteger">
+      <MemberSignature Language="C#" Value="public static string TemplateInteger { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateInteger" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateInteger" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateInteger As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateInteger : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateInteger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter a number{? between {0} and {1}} for {&amp;} {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateIntegerChoiceFormat">
+      <MemberSignature Language="C#" Value="public static string TemplateIntegerChoiceFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateIntegerChoiceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateIntegerChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateIntegerChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerChoiceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {1}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateIntegerHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateIntegerHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateIntegerHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateIntegerHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateIntegerHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateIntegerHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can enter a number{? between {2} and {3}}{?, {0}}{?, {1}}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNavigation">
+      <MemberSignature Language="C#" Value="public static string TemplateNavigation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateNavigation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigation As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigation : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to What do you want to change? {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNavigationCommandHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateNavigationCommandHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationCommandHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationCommandHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationCommandHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigationCommandHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationCommandHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can switch to another field by entering its name. ({0})..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNavigationFormat">
+      <MemberSignature Language="C#" Value="public static string TemplateNavigationFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigationFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {&amp;}({}).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNavigationHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateNavigationHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateNavigationHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNavigationHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNavigationHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNavigationHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Choose {?a number from {0}-{1}, or} a field name..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNoPreference">
+      <MemberSignature Language="C#" Value="public static string TemplateNoPreference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateNoPreference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNoPreference" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNoPreference As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNoPreference : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNoPreference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to No Preference.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNotUnderstood">
+      <MemberSignature Language="C#" Value="public static string TemplateNotUnderstood { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateNotUnderstood" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateNotUnderstood" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateNotUnderstood As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateNotUnderstood : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateNotUnderstood" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to "{0}" is not a {&amp;} option..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateStatusFormat">
+      <MemberSignature Language="C#" Value="public static string TemplateStatusFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateStatusFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStatusFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStatusFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateStatusFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateStatusFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {&amp;}: {}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateString">
+      <MemberSignature Language="C#" Value="public static string TemplateString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateString" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateString As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateString : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Please enter {&amp;} {||}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateStringChoiceFormat">
+      <MemberSignature Language="C#" Value="public static string TemplateStringChoiceFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateStringChoiceFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStringChoiceFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStringChoiceFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateStringChoiceFormat : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateStringChoiceFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to {1}.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateStringHelp">
+      <MemberSignature Language="C#" Value="public static string TemplateStringHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateStringHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateStringHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateStringHelp As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateStringHelp : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateStringHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to You can enter anything (use "'s to force string){?, {0}}{?, {1}}..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateUnspecified">
+      <MemberSignature Language="C#" Value="public static string TemplateUnspecified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateUnspecified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TemplateUnspecified" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateUnspecified As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateUnspecified : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TemplateUnspecified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Unspecified.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TooManyAttempts">
+      <MemberSignature Language="C#" Value="public static string TooManyAttempts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TooManyAttempts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.TooManyAttempts" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TooManyAttempts As String" />
+      <MemberSignature Language="F#" Value="member this.TooManyAttempts : string" Usage="Microsoft.Bot.Builder.Resource.Resources.TooManyAttempts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to too many attempts.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhandledExceptionToUser">
+      <MemberSignature Language="C#" Value="public static string UnhandledExceptionToUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string UnhandledExceptionToUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.UnhandledExceptionToUser" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnhandledExceptionToUser As String" />
+      <MemberSignature Language="F#" Value="member this.UnhandledExceptionToUser : string" Usage="Microsoft.Bot.Builder.Resource.Resources.UnhandledExceptionToUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Sorry, my bot code is having an issue..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserProfileDeleted">
+      <MemberSignature Language="C#" Value="public static string UserProfileDeleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string UserProfileDeleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Resource.Resources.UserProfileDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserProfileDeleted As String" />
+      <MemberSignature Language="F#" Value="member this.UserProfileDeleted : string" Usage="Microsoft.Bot.Builder.Resource.Resources.UserProfileDeleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to User profile deleted!.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

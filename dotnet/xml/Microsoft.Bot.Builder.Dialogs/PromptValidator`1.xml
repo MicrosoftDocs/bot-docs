@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PromptValidator&lt;'T&gt; = delegate of PromptValidatorContext&lt;'T&gt; * CancellationToken -&gt; Task&lt;bool&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />

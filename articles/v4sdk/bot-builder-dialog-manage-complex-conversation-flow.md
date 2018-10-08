@@ -7,7 +7,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 7/27/2018
+ms.date: 10/03/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,7 +19,7 @@ In the last article, we demonstrated using the dialogs library to manage simple 
 
 <!-- TODO: We need a dialogs conceptual topic to link to, so we can reference that here, in place of describing what they are and what their features are in a how-to topic. -->
 
-To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate using [component dialogs](bot-builder-compositcontrol.md) or building a custom dialog management class based on the base `Dialog` class.
+To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate <!--using [component dialogs](bot-builder-compositcontrol.md) or--> building a custom dialog management class based on the base `Dialog` class.
 
 In this article we'll create sample dialogs for a hotel concierge bot that a guest could use to access common services: reserving a table at the hotel restaurant, and ordering a meal from room service.  Each one of these features, along with a menu connecting them together, will be created as dialogs in a dialog set.
 
@@ -996,7 +996,11 @@ async onTurn(turnContext) {
 
 You can enhance this bot by offering other options like "more info" or "help" to the menu choices. For more information on implementing these types of interruptions, see [Handle user interruptions](bot-builder-howto-handle-user-interrupt.md).
 
+<!--TODO: Fix the component dialog topic before adding this back in.
+
 Now that you have learned how to use dialogs, prompts, and waterfalls to manage complex conversation flows, let's take a look at how we can break our dialogs (such as the `orderDinner` and `reserveTable` dialogs) into separate objects, instead of lumping them all together in one large dialog set.
 
 > [!div class="nextstepaction"]
 > [Create modular bot logic with Composite Control](bot-builder-compositcontrol.md)
+
+-->

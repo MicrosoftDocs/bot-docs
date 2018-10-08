@@ -1,0 +1,40 @@
+﻿<Type Name="FoldScorable&lt;Item,Score&gt;+OnStageDelegate" FullName="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate">
+  <TypeSignature Language="C#" Value="public delegate bool FoldScorable&lt;Item,Score&gt;.OnStageDelegate(FoldStage stage, IScorable&lt;Item,Score&gt; scorable, Item item, object state, Score score);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed FoldScorable`2/OnStageDelegate&lt;Item, Score&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function FoldScorable(Of Item, Score).OnStageDelegate(stage As FoldStage, scorable As IScorable(Of Item, Score), item As Item, state As Object, score As Score) As Boolean " />
+  <TypeSignature Language="F#" Value="type FoldScorable&lt;'Item, 'Score&gt;.OnStageDelegate = delegate of FoldStage * IScorable&lt;'Item, 'Score&gt; * 'Item * obj * 'Score -&gt; bool" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Item" />
+    <TypeParameter Name="Score" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="stage" Type="Microsoft.Bot.Builder.Scorables.Internals.FoldStage" />
+    <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
+    <Parameter Name="item" Type="Item" />
+    <Parameter Name="state" Type="System.Object" />
+    <Parameter Name="score" Type="Score" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="stage">To be added.</param>
+    <param name="scorable">To be added.</param>
+    <param name="item">To be added.</param>
+    <param name="state">To be added.</param>
+    <param name="score">To be added.</param>
+    <summary>
+            Event handler delegate for fold scorable stages.
+            </summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -5,27 +5,21 @@
   <TypeSignature Language="VB.NET" Value="Public Delegate Function SendActivitiesHandler(turnContext As ITurnContext, activities As List(Of Activity), next As Func(Of Task(Of ResourceResponse()))) As Task(Of ResourceResponse()) " />
   <TypeSignature Language="F#" Value="type SendActivitiesHandler = delegate of ITurnContext * List&lt;Activity&gt; * Func&lt;Task&lt;ResourceResponse[]&gt;&gt; -&gt; Task&lt;ResourceResponse[]&gt;" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Bot.Builder.Core</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>4.0.6.0</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-preview" />
-    <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-    <Parameter Name="activities" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;" Index="1" />
-    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;&gt;" Index="2" />
+    <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+    <Parameter Name="activities" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;" />
+    <Parameter Name="next" Type="System.Func&lt;System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;&gt;" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">The context object for the turn.</param>
     <param name="turnContext">The context object for the turn.</param>
     <param name="activities">The activities to send.</param>
     <param name="next">The delegate to call to continue event processing.</param>
