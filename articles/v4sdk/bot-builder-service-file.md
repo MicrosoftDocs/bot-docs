@@ -29,7 +29,7 @@ monikerRange: 'azure-bot-service-4.0'
             "name": "basic-bot-LUIS",
             "appId": "<your app id>",
             "version": "0.1",
-            "authoringKey": "<your authoring key>"
+            "authoringKey": "<your authoring key>",
             "subscriptionKey": "<your subscription key>",
             "region": "westus",
             "id": "206"
