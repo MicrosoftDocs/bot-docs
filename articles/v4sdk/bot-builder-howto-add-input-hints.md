@@ -52,7 +52,7 @@ var reply = MessageFactory.Text(
     "This is the text that will be displayed.",
     "This is the text that will be spoken.",
     InputHints.AcceptingInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -75,7 +75,7 @@ var reply = MessageFactory.Text(
     "This is the text that will be displayed.",
     "This is the text that will be spoken.",
     InputHints.ExpectingInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -98,7 +98,7 @@ var reply = MessageFactory.Text(
     "This is the text that will be displayed.",
     "This is the text that will be spoken.",
     InputHints.IgnoringInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)

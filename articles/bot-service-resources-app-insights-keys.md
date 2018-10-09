@@ -34,6 +34,7 @@ To get the Instrumentation key, do the following:
 3. Click **Overview**.
 
 4. Expand the **Essentials** block and find the **Instrumentation Key**. 
+![Portal screen capture of Overview](~/media/portal-app-insights-instrumentation-key-dropdown.png)
 ![Portal screen capture of the Instrumentation key](~/media/portal-app-insights-instrumentation-key.png)
 
 5. Copy the **Instrumentation Key** and paste it to the **Application Insights Instrumentation Key** field of your bot's settings.

@@ -34,10 +34,7 @@ In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. I
 In Visual Studio, you can choose whether or you are debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not. Examining the full call stack may provide additional insight into any issues.
 
 **Ensure all dialog methods end with a plan to handle the next message.**  
-All `IDialog` methods should complete with `IDialogStack.Call`, `IDialogStack.Wait`, or `IDialogStack.Done`. These `IDialogStack` methods are exposed through the `IDialogContext` that is passed to every `IDialog` method. Calling `IDialogStack.Forward` and using the system prompts through the `PromptDialog` static methods will call one of these methods in their implementation.
-
-**Ensure that all dialogs are serializable.**  
-This can be as simple as using the `[Serializable]` attribute on your `IDialog` implementations. However, be aware that anonymous method closures are not serializable if they reference their outside environment to capture variables. The Bot Framework supports a reflection-based serialization surrogate to help serialize types that are not marked as serializable.
+All dialog steps need to feed into the next step of the waterfall, or end the current dialog to pop it off the stack. If a step is not correctly handled, the conversation will not continue like you expect. Take a look at the concept article for [dialogs](v4sdk/bot-builder-concept-dialog.md) for more on dialogs.
 
 ## Why doesn't the Typing activity do anything?
 Some channels do not support transient typing updates in their client.
@@ -72,7 +69,7 @@ The Bot Framework will preserve message ordering as much as possible. For exampl
 
 ## How can I intercept all messages between the user and my bot?
 
-Using the Bot Builder SDK for .NET, you can provide implementations of the `IPostToBot` and `IBotToUser` interfaces to the `Autofac` dependency injection container. Using the Bot Builder SDK for Node.js, you can use middleware for much the same purpose. The [BotBuilder-Azure](https://github.com/Microsoft/BotBuilder-Azure) repository contains C# and Node.js libraries that will log this data to an Azure table.
+Using the Bot Builder SDK for .NET, you can provide implementations of the `IPostToBot` and `IBotToUser` interfaces to the `Autofac` dependency injection container. Using the Bot Builder SDK for any language, you can use middleware for much the same purpose. The [BotBuilder-Azure](https://github.com/Microsoft/BotBuilder-Azure) repository contains C# and Node.js libraries that will log this data to an Azure table.
 
 ## Why are parts of my message text being dropped?
 
@@ -122,6 +119,8 @@ To fix this, set the `from` property in each message that the Direct Line client
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
 Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there. 
 
+::: moniker range="azure-bot-service-3.0"
+
 ## What is the IDialogStack.Forward method in the Bot Builder SDK for .NET?
 
 The primary purpose of `IDialogStack.Forward` is to reuse an existing child dialog that is often "reactive", where the child dialog (in `IDialog.StartAsync`) waits for an object `T` with some `ResumeAfter` handler. In particular, if you have a child dialog that waits for an `IMessageActivity` `T`, you can forward the incoming `IMessageActivity` (already received by some parent dialog) by using the `IDialogStack.Forward` method. For example, to forward an incoming `IMessageActivity` to a `LuisDialog`, call `IDialogStack.Forward` to push the `LuisDialog` onto the dialog stack, run the code in `LuisDialog.StartAsync` until it schedules a wait for the next message, and then immediately satisfy that wait with the forwarded `IMessageActivity`.
@@ -130,6 +129,8 @@ The primary purpose of `IDialogStack.Forward` is to reuse an existing child dial
 some processing before forwarding the message to an existing `LuisDialog`. Alternatively, you can also use `DispatchDialog` with `ContinueToNextGroup` for that purpose.
 
 You would expect to find the forwarded item in the first `ResumeAfter` handler (e.g. `LuisDialog.MessageReceived`) that is scheduled by `StartAsync`.
+
+::: moniker-end
 
 ## What is the difference between "proactive" and "reactive"?
 
