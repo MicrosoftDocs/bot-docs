@@ -185,7 +185,7 @@ Your bot gets results from LUIS by calling the LUIS recognizer.
 
 # [C#](#tab/cs)
 
-To have your bot simply send a reply based on the intent that the LUIS app detected, call the the `LuisRecognizer`, to get a `RecognizerResult`. This can be done within your code whenever you need to get the LUIS intent.
+To have your bot simply send a reply based on the intent that the LUIS app detected, call the `LuisRecognizer`, to get a `RecognizerResult`. This can be done within your code whenever you need to get the LUIS intent.
 
 ```cs
 using System.Threading.Tasks;
