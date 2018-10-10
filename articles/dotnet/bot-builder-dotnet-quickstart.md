@@ -1,4 +1,10 @@
 ---
+redirect_url: /bot-framework/dotnet/bot-builder-dotnet-sdk-quickstart
+---
+
+<!--
+
+
 title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
 description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
 keywords: Bot Builder SDK, create a bot, quickstart, getting started
@@ -9,7 +15,7 @@ ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 04/27/2018
 monikerRange: 'azure-bot-service-3.0'
----
+
 
 # Create a bot with the Bot Builder SDK for .NET
 
@@ -151,3 +157,5 @@ Next, learn about the key concepts of the Bot Builder SDK for .NET.
 
 > [!div class="nextstepaction"]
 > [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)
+
+-->
