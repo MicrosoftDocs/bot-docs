@@ -1,4 +1,9 @@
 ---
+redirect_url: /bot-framework/javascript/bot-builder-javascript-quickstart
+---
+
+<!--
+
 title: Create a bot with the Bot Builder SDK for Node.js | Microsoft Docs
 description: Create a bot with the Bot Builder SDK for Node.js, a powerful bot construction framework.
 author: RobStand
@@ -8,7 +13,7 @@ ms.topic: get-started-article
 ms.prod: bot-framework
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
----
+
 
 # Create a bot with the Bot Builder SDK for Node.js
 
@@ -128,3 +133,5 @@ You've successfully created your first bot using the Bot Builder SDK for Node.js
 
 > [!div class="nextstepaction"]
 > [Bot Builder SDK for Node.js](bot-builder-nodejs-overview.md)
+
+-->
