@@ -56,7 +56,7 @@ Once you have set up and connected LUIS, your bot can send the message to your L
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
-To get started using a LUIS app with your bot, check out [using LUIS for language understanding][luis-v4-how-to].
+To get started using a LUIS app with your bot, check out [using LUIS for language understanding][https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0].
 
 ## Best practices for Language Understanding
 
