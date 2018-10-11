@@ -51,7 +51,7 @@ In this section we'll create the dialogs to manage a conversation for the hotel 
 
 # [C#](#tab/csharp)
 
-We'll start from a basic EchoBot template. For instructions, see the [quickstart for .NET](~/dotnet/bot-builder-dotnet-quickstart.md).
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for .NET](../dotnet/bot-builder-dotnet-sdk-quickstart.md).
 
 To use dialogs, install the `Microsoft.Bot.Builder.Dialogs` NuGet package for your project or solution.
 Then reference the dialogs library in using statements in your code files as necessary.
@@ -62,7 +62,7 @@ using Microsoft.Bot.Builder.Dialogs;
 
 # [JavaScript](#tab/javascript)
 
-We'll start from a basic EchoBot template. For instructions, see the [quickstart for JavaScript](~/javascript/bot-builder-javascript-quickstart.md).
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for JavaScript](../javascript/bot-builder-javascript-quickstart.md).
 
 The `botbuilder-dialogs` library can be downloaded from NPM. To install the `botbuilder-dialogs` library, run the following NPM command:
 
