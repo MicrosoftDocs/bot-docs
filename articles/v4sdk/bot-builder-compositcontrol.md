@@ -7,7 +7,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 4/27/2018
+ms.date: 10/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,23 +15,59 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Imagine that you are creating a hotel bot that handles multiple tasks such as greeting the user, reserving a dinner table, ordering food, setting an alarm, displaying the current weather and many others. You can handle each of these tasks within your bot using one dialog object but this can make your dialog code too large and cluttered in your bot's main file.
+Imagine that you are creating a hotel bot that handles multiple tasks such as greeting the user, reserving a dinner table, ordering food, setting an alarm, displaying the current weather and many others. You can handle each of these tasks within your bot using one dialog object; however, this can make your dialog code too large and cluttered.
 
-You can tackle this issue through modularization. Modularization will streamline your code and make it easier to debug. Additionally, you can break it up into sections allowing multiple teams to simultaneously work on the bot. We can create a bot that manages multiple conversation flows by breaking them up into components using a dialog container. We will create a few basic conversation flows and show how they can be combined together using a dialog container.
+You can turn portions of your conversation flow into component dialogs, breaking up a large dialog set into more manageable pieces. This can streamline your code and make it easier to debug and allow multiple teams to simultaneously work on the bot.
+You can also create a library of component dialogs for reuse in other dialog sets and bots.
 
-In this example we will be creating a hotel bot that combines check-in, wake-up, and reserve-table modules.
+In this example we will be creating a hotel bot that combines check-in, wake-up, and reserve-table component dialogs.
 
-## Managing state
+This article builds on information about managing [simple](bot-builder-dialog-manage-conversation-flow.md) and [complex](bot-builder-dialog-manage-complex-conversation-flow.md) conversation flows.
 
-There are many ways to set up state management for a bot that uses composite dialogs. In this bot, we demonstrate one way to do so.
+## Create your project
 
-For more information about state management, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
+We start with the echo bot template and include the dialogs library in the project.
 
 # [C#](#tab/csharp)
 
-Each dialog will collect some information, and we will save this information to the user state. We'll define a class for each dialog, and we'll use those classes as properties in our user state class.
+We'll start from the **EchoBot** template. For instructions, see the [quickstart for .NET](../dotnet/bot-builder-dotnet-sdk-quickstart.md).
+
+To use dialogs, install the `Microsoft.Bot.Builder.Dialogs` NuGet package for your project or solution.
+Then reference the dialogs library in using statements in your code files as necessary.
+
+Rename the **EchoBotWithCounter.cs** file to **HotelBot.cs** and  rename the class to **HotelBot**.
+
+# [JavaScript](#tab/javascript)
+
+We'll start from the **Echo** template. For instructions, see the [quickstart for JavaScript](../javascript/bot-builder-javascript-quickstart.md).
+
+The `botbuilder-dialogs` library can be downloaded from npm. To install the `botbuilder-dialogs` library, run the following npm command:
+
+```cmd
+npm install --save botbuilder-dialogs
+```
+
+---
+
+## Managing state
+
+There are many ways to set up state management for a bot that uses composite dialogs. In this bot, each component dialog will return an object as the dialog result. The calling context manages the returned values. For more information about state management, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md).
+
+# [C#](#tab/csharp)
+
+Each dialog will collect some information, and the bot's turn handler or main menu will save this information to the user state. We'll define component dialogs for check in, table reservation, and setting an alarm. Each one will return an object of an appropriate class. Add each of the following classes to your project as a new C# class module.
 
 ```csharp
+/// <summary>
+/// User state information.
+/// </summary>
+public class UserInfo
+{
+    public GuestInfo Guest { get; set; }
+    public TableInfo Table { get; set; }
+    public WakeUpInfo WakeUp { get; set; }
+}
+
 /// <summary>
 /// State information associated with the check-in dialog.
 /// </summary>
@@ -56,688 +92,886 @@ public class WakeUpInfo
 {
     public string Time { get; set; }
 }
+```
+
+Rename **EchoBotAccessors.cs** to **BotAccessors.cs** and update the class name **BotAccessors**.
+
+Then, update the file using this code. We need accessors for both dialog state and for the user's information we collect.
+
+```csharp
+using System;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
 
 /// <summary>
-/// User state information.
+/// Contains the state objects and the state property accessors for the bot.
 /// </summary>
-public class UserInfo
+public class BotAccessors
 {
-    public GuestInfo Guest { get; set; }
-    public TableInfo Table { get; set; }
-    public WakeUpInfo WakeUp { get; set; }
+    // The property accessor keys to use.
+    public const string UserInfoAccessorName = "HotelBot.UserInfo";
+    public const string DialogStateAccessorName = "HotelBot.DialogState";
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="BotAccessors"/> class.
+    /// Contains the <see cref="ConversationState"/> and associated <see cref="IStatePropertyAccessor{T}"/>.
+    /// </summary>
+    /// <param name="conversationState">The state object that stores the counter.</param>
+    public BotAccessors(ConversationState conversationState, UserState userState)
+    {
+        ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+        UserState = userState ?? throw new ArgumentNullException(nameof(userState));
+    }
+
+    /// <summary>Gets or sets the state property accessor for the user information we're tracking.</summary>
+    /// <value>Accessor for user information.</value>
+    public IStatePropertyAccessor<UserInfo> UserInfoAccessor { get; set; }
+
+    /// <summary>Gets or sets the state property accessor for the dialog state.</summary>
+    /// <value>Accessor for the dialog state.</value>
+    public IStatePropertyAccessor<DialogState> DialogStateAccessor { get; set; }
+
+    /// <summary>Gets the conversation state for the bot.</summary>
+    /// <value>The conversation state for the bot.</value>
+    public ConversationState ConversationState { get; }
+
+    /// <summary>Gets the user state for the bot.</summary>
+    /// <value>The user state for the bot.</value>
+    public UserState UserState { get; }
 }
 ```
 
-Within a bot turn, the dialog set's `CreateContext` method establishes dialog state.
-The method takes the [turn context](bot-builder-concept-activity-processing.md#turn-context) and a state object as parameters.
-
-For dialogs, this state object must implement the `IDictionary<string, object>` interface. Since this bot is only using conversation state to house the dialog state, our conversation state class can be a simple dictionary.
+In the **Startup.cs** file, update the code in the `ConfigureServices` method that sets up state and the bot's state property accessors.
 
 ```csharp
-using System.Collections.Generic;
+using Microsoft.Bot.Builder.Dialogs;
 
-/// <summary>
-/// Conversation state information.
-/// We are also using this directly for dialog state, which needs an <see cref="IDictionary{string, object}"/> object.
-/// </summary>
-public class ConversationInfo : Dictionary<string, object> { }
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddBot<HotelBot>(options =>
+    {
+        //...
+
+        // The Memory Storage used here is for local bot debugging only. When the bot
+        // is restarted, everything stored in memory will be gone.
+        IStorage dataStore = new MemoryStorage();
+
+        // Create conversation and user state objects.
+        options.State.Add(new ConversationState(dataStore));
+        options.State.Add(new UserState(dataStore));
+    });
+
+    // Create and register state accessors.
+    // Accessors created here are passed into the IBot-derived class on every turn.
+    services.AddSingleton<BotAccessors>(sp =>
+    {
+        var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value;
+        var conversationState = options.State.OfType<ConversationState>().FirstOrDefault();
+        var userState = options.State.OfType<UserState>().FirstOrDefault();
+
+        // Create the custom state accessor.
+        // State accessors enable other components to read and write individual properties of state.
+        var accessors = new BotAccessors(conversationState, userState)
+        {
+            UserInfoAccessor = userState.CreateProperty<UserInfo>(BotAccessors.UserInfoAccessorName),
+            DialogStateAccessor = conversationState.CreateProperty<DialogState>(BotAccessors.DialogStateAccessorName),
+        };
+
+        return accessors;
+    });
+}
 ```
 
 # [JavaScript](#tab/javascript)
 
-To keep track of the user's input, we will pass in from the parent dialog a `userInfo` object as a dialog parameter. In each dialog class the dialog will be built into the constructor, which allows you to save information to `userInfo`. Throughout this dialog, we can write to a local state object defined as a property on the `step.values` object as the user inputs information. After the dialog is complete, the local state object will be disposed of. Therefore, we will save the local state object to the parent's `userInfo`, which will persist information about the user across all the conversations you have with the user. 
+Each dialog will collect some information, and the bot's turn handler or main menu will save this information to the user state. We'll define component dialogs for check in, table reservation, and setting an alarm. Each one will return an object with appropriate properties. We will aggregate these properties in the bot's user state.
+
+In your **bot.js** file, update your bot constructor to create state property accessors to track user state and dialog state.
+
+```javascript
+// Define the identifiers for our state property accessors.
+const DIALOG_STATE_PROPERTY = 'dialogStatePropertyAccessor';
+const USER_INFO_PROPERTY = 'userInfoPropertyAccessor';
+
+constructor(conversationState, userState) {
+    // Record the conversation and user state management objects.
+    this.conversationState = conversationState;
+    this.userState = userState;
+
+    // Create our state property accessors.
+    this.dialogStateAccessor = conversationState.createProperty(DIALOG_STATE_PROPERTY);
+    this.userInfoAccessor = userState.createProperty(USER_INFO_PROPERTY);
+}
+```
+
+In your **index.js** file, update the imported classes from the `botbuilder` library and the code that creates the state objects and your bot:
+
+```javascript
+// Import required bot services.
+const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState } = require('botbuilder');
+```
+
+```javascript
+// Define state store for your bot.
+const memoryStorage = new MemoryStorage();
+
+// Create conversation and user state with in-memory storage provider.
+const conversationState = new ConversationState(memoryStorage);
+const userState = new UserState(memoryStorage);
+
+// Create the bot.
+const myBot = new MyBot(conversationState, userState);
+```
 
 ---
 
-## Define a modular check-in dialog
+## Define the check-in component dialog
 
-First, we start with a simple check-in dialog that will ask the user for their name and what room they will be staying in. To modularize this task, we create a `CheckIn` class that extends `ComponentDialog`. This class has a constructor that defines the name of the root dialog, which is defined as a *waterfall* with three steps. The signature and construction of the dialog object is exactly the same as a standard waterfall.
+First, we start with a simple check-in dialog that will ask the user for their name and what room they will be staying in. We create a `CheckInDialog` class that extends `ComponentDialog`. This class has a constructor that defines the name of the root dialog, which we'll define as a waterfall dialog with three steps.
 
-**Check-in dialog steps**
+These are the steps for the check-in dialog.
 
 1. Ask for the guest's name.
 1. Ask for the room they'd like to stay in.
 1. Send a confirmation message and complete the dialog.
 
-For more information about dialogs and waterfalls, see [Use dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
-
 # [C#](#tab/csharp)
 
-The `CheckIn` class has a private constructor that defines the steps for our check-in dialog, creates a single instance, and exposes that in a static `Instance` property.
+Add a `CheckInDialog` class to your project, using the code below.
 
-Throughout this dialog we can write to a local state object, accessible through a property of the step context, `step.values`. When the dialog completes, the local state object is be disposed of. Therefore, we save the local state object to the bot's `userState` that will persist information about the user across all the conversations you have with the user.
+Throughout this dialog we can write to a local state object, accessible through the `Values` property of the step context. When the dialog completes, the local state object is be disposed of. Therefore, we return a value from the dialog that contains the guest info.
 
-For more information about state management, see [Save state using conversation and user properties](bot-builder-howto-v4-state.md). 
-
-**CheckIn.cs**
 ```csharp
-using Microsoft.Bot.Builder.Core.Extensions;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Recognizers.Text;
 
-namespace HotelBot
+public class CheckInDialog : ComponentDialog
 {
-    public class CheckIn : DialogContainer
+    private const string GuestKey = nameof(CheckInDialog);
+    private const string TextPrompt = "textPrompt";
+
+    // You can start this from the parent using the dialog's ID.
+    public CheckInDialog(string id)
+        : base(id)
     {
-        public const string Id = "checkIn";
+        InitialDialogId = Id;
 
-        private const string GuestKey = nameof(CheckIn);
+        // Define the prompts used in this conversation flow.
+        AddDialog(new TextPrompt(TextPrompt));
 
-        public static CheckIn Instance { get; } = new CheckIn();
-
-        // You can start this from the parent using the dialog's ID.
-        private CheckIn() : base(Id)
+        // Define the conversation flow using a waterfall model.
+        WaterfallStep[] waterfallSteps = new WaterfallStep[]
         {
-            // Define the conversation flow using a waterfall model.
-            this.Dialogs.Add(Id, new WaterfallStep[]
+            NameStepAsync,
+            RoomStepAsync,
+            FinalStepAsync,
+        };
+        AddDialog(new WaterfallDialog(Id, waterfallSteps));
+    }
+
+    private static async Task<DialogTurnResult> NameStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        // Clear the guest information and prompt for the guest's name.
+        step.Values[GuestKey] = new GuestInfo();
+        return await step.PromptAsync(
+            TextPrompt,
+            new PromptOptions
             {
-                async (dc, args, next) =>
-                {
-                    // Clear the guest information and prompt for the guest's name.
-                    dc.ActiveDialog.State[GuestKey] = new GuestInfo();
-                    await dc.Prompt("textPrompt", "What is your name?");
-                },
-                async (dc, args, next) =>
-                {
-                    // Save the name and prompt for the room number.
-                    var name = args["Value"] as string;
+                Prompt = MessageFactory.Text("What is your name?"),
+            },
+            cancellationToken);
+    }
 
-                    var guestInfo = dc.ActiveDialog.State[GuestKey];
-                    ((GuestInfo)guestInfo).Name = name;
+    private static async Task<DialogTurnResult> RoomStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        // Save the name and prompt for the room number.
+        string name = step.Result as string;
+        ((GuestInfo)step.Values[GuestKey]).Name = name;
+        return await step.PromptAsync(
+            TextPrompt,
+            new PromptOptions
+            {
+                Prompt = MessageFactory.Text($"Hi {name}. What room will you be staying in?"),
+            },
+            cancellationToken);
+    }
 
-                    await dc.Prompt("numberPrompt",
-                        $"Hi {name}. What room will you be staying in?");
-                },
-                async (dc, args, next) =>
-                {
-                    // Save the room number and "sign off".
-                    var room = (string)args["Text"];
+    private static async Task<DialogTurnResult> FinalStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        // Save the room number and "sign off".
+        string room = step.Result as string;
+        ((GuestInfo)step.Values[GuestKey]).Room = room;
 
-                    var guestInfo = dc.ActiveDialog.State[GuestKey];
-                    ((GuestInfo)guestInfo).Room = room;
+        await step.Context.SendActivityAsync(
+            "Great, enjoy your stay!",
+            cancellationToken: cancellationToken);
 
-                    await dc.Context.SendActivity("Great, enjoy your stay!");
-
-                    // Save dialog state to user state and end the dialog.
-                    var userState = UserState<UserInfo>.Get(dc.Context);
-                    userState.Guest = (GuestInfo)guestInfo;
-
-                    await dc.End();
-                }
-            });
-
-            // Define the prompts used in this conversation flow.
-            this.Dialogs.Add("textPrompt", new TextPrompt());
-            this.Dialogs.Add("numberPrompt", new NumberPrompt<int>(Culture.English));
-        }
+        // End the dialog, returning the guest info.
+        return await step.EndDialogAsync(
+            (GuestInfo)step.Values[GuestKey],
+            cancellationToken);
     }
 }
 ```
 
 # [JavaScript](#tab/javascript)
 
-**checkIn.js**
-```JavaScript
-const { ComponentDialog, DialogSet, TextPrompt, NumberPrompt, WaterfallDialog } = require('botbuilder-dialogs');
+Create a **checkInDialog.js** file, and add to it a `CheckInDialog` class that extends `ComponentDialog`.
 
-class CheckIn extends ComponentDialog {
-    constructor(dialogId, userInfo) {
-        // Dialog ID of 'checkIn' will start when class is called in the parent
+Throughout this dialog we can write to a local state object, accessible through the `values` property of the step context. When the dialog completes, the local state object is be disposed of. Therefore, we return a value from the dialog that contains the guest info.
+
+```JavaScript
+const { ComponentDialog, TextPrompt, WaterfallDialog } = require('botbuilder-dialogs');
+
+class CheckInDialog extends ComponentDialog {
+    constructor(dialogId) {
         super(dialogId);
 
-        // Defining the conversation flow using a waterfall model
-        this.dialogs.add(new WaterfallDialog('checkIn', [
+        // ID of the child dialog that should be started anytime the component is started.
+        this.initialDialogId = dialogId;
+
+        // Define the prompts used in this conversation flow.
+        this.addDialog(new TextPrompt('textPrompt'));
+
+        // Define the conversation flow using a waterfall model.
+        this.addDialog(new WaterfallDialog(dialogId, [
             async function (step) {
-                // Create a new local guestInfo step.values object
+                // Clear the guest information and prompt for the guest's name.
                 step.values.guestInfo = {};
                 return await step.prompt('textPrompt', "What is your name?");
             },
             async function (step) {
-                // Save the name 
+                // Save the name and prompt for the room number.
                 step.values.guestInfo.userName = step.result;
-                return await step.prompt('numberPrompt', `Hi ${name}. What room will you be staying in?`);
+                return await step.prompt('textPrompt', `Hi ${step.result}. What room will you be staying in?`);
             },
-            async function (step) { 
-                // Save the room number
-                step.values.guestInfo.room = step.result;
-                await step.context.sendActivity(`Great! Enjoy your stay!`);
+            async function (step) {
+                // Save the room number and "sign off".
+                step.values.guestInfo.roomNumber = step.result;
+                await step.context.sendActivity(`Great! Enjoy your stay in room ${step.result}!`);
 
-                // Save dialog's state object to the parent's state object
-                const user = await userInfo.get(step.context);
-                user.guestInfo = step.values.guestInfo;
-                // Save changes
-                await userInfo.set(step.context, user);
-                return await step.endDialog();
+                // End the dialog, returning the guest info.
+                return await step.endDialog(step.values.guestInfo);
             }
         ]));
-        
-        // Defining the prompt used in this conversation flow
-        this.dialogs.add(new TextPrompt('textPrompt'));
-        this.dialogs.add(new NumberPrompt('numberPrompt'));
     }
 }
-exports.CheckIn = CheckIn;
+
+exports.CheckInDialog = CheckInDialog;
 ```
 
 ---
 
-## Define modular reserve-table and wake-up dialogs
+## Define the reserve-table and wake-up component dialogs
 
-One benefit of using a component dialog s the ability to compose dialogs together. Since each `DialogSet` maintains an exclusive set of `dialogs`, sharing or cross referencing `dialogs` cannot be done easily. This is where the component dialog comes in. You can use component dialogs to create a composite dialog that makes managing the dialog flow across dialogs easier. To illustrate that, let's create two more dialogs: one to ask the user which table they would like to reserve for dinner, and one to create a wake up call. Again, we'll use a seaparate class for each dialog, and each dialog will extend `ComponentDialog`.
+One benefit of using a component dialog is the ability to use differing dialogs together. Since each `DialogSet` maintains an exclusive set of `dialogs`, sharing or cross referencing `dialogs` cannot be done easily. This is where the component dialog comes in. You can encapsulate complex or intricate aspects of conversation flow in component dialogs, which can make dialog management and maintenance easier. We'll create the other two component dialogs: one to ask the user which table they would like to reserve for dinner, and one to create a wake up call. Again, we'll use a separate class for each dialog, and each dialog will extend the main `ComponentDialog`.
 
-**Reserve-table dialog steps**
+We'll design these to accept guest information in the dialog options when they are started.
+
+These are the steps for the reserve-table dialog.
 
 1. Ask for the table to reserve.
-1. Send a confirmation message and complete the dialog.
+1. Send a confirmation message and complete the dialog, returning the table number.
 
-**Wake-up dialog steps**
+These are the steps for the wake-up dialog.
 
 1. Ask for the wake-up time to set for them.
-1. Send a confirmation message and complete the dialog.
+1. Send a confirmation message and complete the dialog, returning the alarm time.
 
 # [C#](#tab/csharp)
 
-**ReserveTable.cs**
+Add a `ReserveTableDialog` class to your project, using the code below.
+
+We'll get the guest's name from the options object that is passed in when the dialog is started. Then, we'll return a value from the dialog, one that contains the table number this time.
+
 ```csharp
-using Microsoft.Bot.Builder.Core.Extensions;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Recognizers.Text;
-using System.Linq;
-using Choice = Microsoft.Bot.Builder.Prompts.Choices.Choice;
-using FoundChoice = Microsoft.Bot.Builder.Prompts.Choices.FoundChoice;
+using Microsoft.Bot.Builder.Dialogs.Choices;
 
-namespace HotelBot
+public class ReserveTableDialog : ComponentDialog
 {
-    public class ReserveTable : DialogContainer
+    private const string TablePrompt = "choicePrompt";
+
+    public ReserveTableDialog(string id)
+        : base(id)
     {
-        public const string Id = "reserveTable";
+        InitialDialogId = Id;
 
-        private const string TableKey = "Table";
+        // Define the prompts used in this conversation flow.
+        AddDialog(new ChoicePrompt(TablePrompt));
 
-        public static ReserveTable Instance { get; } = new ReserveTable();
-
-        private ReserveTable() : base(Id)
+        // Define the conversation flow using a waterfall model.
+        WaterfallStep[] waterfallSteps = new WaterfallStep[]
         {
-            this.Dialogs.Add(Id, new WaterfallStep[]
+                TableStepAsync,
+                FinalStepAsync,
+        };
+        AddDialog(new WaterfallDialog(Id, waterfallSteps));
+    }
+
+    private static async Task<DialogTurnResult> TableStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        string greeting = step.Options is GuestInfo guest
+                && !string.IsNullOrWhiteSpace(guest?.Name)
+                ? $"Welcome {guest.Name}" : "Welcome";
+
+        string prompt = $"{greeting}, How many diners will be at your table?";
+        string[] choices = new string[] { "1", "2", "3", "4", "5", "6" };
+        return await step.PromptAsync(
+            TablePrompt,
+            new PromptOptions
             {
-                async (dc, args, next) =>
-                {
-                    // Clear the table information and prompt for the table number.
-                    dc.ActiveDialog.State[TableKey] = new TableInfo();
+                Prompt = MessageFactory.Text(prompt),
+                Choices = ChoiceFactory.ToChoices(choices),
+            },
+            cancellationToken);
+    }
 
-                    var guestInfo = UserState<UserInfo>.Get(dc.Context).Guest;
+    private static async Task<DialogTurnResult> FinalStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        // ChoicePrompt returns a FoundChoice object.
+        string table = (step.Result as FoundChoice).Value;
 
-                    var prompt = $"Welcome {guestInfo.Name}, " +
-                        $"which table would you like to reserve?";
-                    var choices = new string[] { "1", "2", "3", "4", "5", "6" };
-                    await dc.Prompt("choicePrompt", prompt,
-                        new ChoicePromptOptions
-                        {
-                            Choices = choices.Select(s => new Choice { Value = s }).ToList()
-                        });
-                },
-                async (dc, args, next) =>
-                {
-                    // Save the table number and "sign off".
-                    var table = (args["Value"] as FoundChoice).Value;
+        // Send a confirmation message.
+        await step.Context.SendActivityAsync(
+            $"Sounds great;  we will reserve a table for you for {table} diners.",
+            cancellationToken: cancellationToken);
 
-                    var tableInfo = dc.ActiveDialog.State[TableKey];
-                    ((TableInfo)tableInfo).Number = table;
-
-                    await dc.Context.SendActivity(
-                        $"Sounds great; we will reserve table number {table} for you.");
-
-                    // Save dialog state to user state and end the dialog.
-                    var userState = UserState<UserInfo>.Get(dc.Context);
-                    userState.Table = (TableInfo)tableInfo;
-
-                    await dc.End();
-                }
-            });
-
-            // Define the prompts used in this conversation flow.
-            this.Dialogs.Add("choicePrompt", new ChoicePrompt(Culture.English));
-        }
+        // End the dialog, returning the table info.
+        return await step.EndDialogAsync(
+            new TableInfo { Number = table },
+            cancellationToken);
     }
 }
 ```
 
-**WakeUp.cs**
+Add a `SetAlarmDialog` class to your project, using the code below.
+
+We'll get the guest's room number from the options object that is passed in when the dialog is started. Then, we'll return a value from the dialog, one that contains the time they want a wake up call set for.
+
 ```csharp
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Recognizers.Text;
 using System.Collections.Generic;
 using System.Linq;
-using DateTimeResolution = Microsoft.Bot.Builder.Prompts.DateTimeResult.DateTimeResolution;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
 
-namespace HotelBot
+public class SetAlarmDialog : ComponentDialog
 {
-    public class WakeUp : DialogContainer
+    private const string AlarmPrompt = "dateTimePrompt";
+
+    public SetAlarmDialog(string id)
+        : base(id)
     {
-        public const string Id = "wakeUp";
+        InitialDialogId = Id;
 
-        private const string WakeUpKey = "WakeUp";
+        // Define the prompts used in this conversation flow.
+        // Ideally, we'd add validation to this prompt.
+        AddDialog(new DateTimePrompt(AlarmPrompt));
 
-        public static WakeUp Instance { get; } = new WakeUp();
-
-        private WakeUp() : base(Id)
+        // Define the conversation flow using a waterfall model.
+        WaterfallStep[] waterfallSteps = new WaterfallStep[]
         {
-            this.Dialogs.Add(Id, new WaterfallStep[]
-            {
-                async (dc, args, next) =>
-                {
-                    // Clear the wake up call information and prompt for the alarm time.
-                   dc.ActiveDialog.State[WakeUpKey] = new WakeUpInfo();
+                AlarmStepAsync,
+                FinalStepAsync,
+        };
 
-                    var guestInfo = UserState<UserInfo>.Get(dc.Context).Guest;
+        AddDialog(new WaterfallDialog(Id, waterfallSteps));
+    }
 
-                    await dc.Prompt("datePrompt", $"Hi {guestInfo.Name}, " +
-                        $"what time would you like your alarm set for?");
-                },
-                async (dc, args, next) =>
-                {
-                    // Save the alarm time and "sign off".
-                    var resolution = (List<DateTimeResolution>)args["Resolution"];
+    private static async Task<DialogTurnResult> AlarmStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        string greeting = step.Options is GuestInfo guest
+                && !string.IsNullOrWhiteSpace(guest?.Name)
+                ? $"Hi {guest.Name}" : "Hi";
 
-                    var wakeUp = dc.ActiveDialog.State[WakeUpKey];
-                    ((WakeUpInfo)wakeUp).Time = resolution?.FirstOrDefault()?.Value;
+        string prompt = $"{greeting}. When would you like your alarm set for?";
+        return await step.PromptAsync(
+            AlarmPrompt,
+            new PromptOptions { Prompt = MessageFactory.Text(prompt) },
+            cancellationToken);
+    }
 
-                    var userState = UserState<UserInfo>.Get(dc.Context);
-                    await dc.Context.SendActivity(
-                        $"Your alarm is set to {((WakeUpInfo)wakeUp).Time}" +
-                        $" for room {userState.Guest.Room}.");
+    private static async Task<DialogTurnResult> FinalStepAsync(
+        WaterfallStepContext step,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        // Ambiguous responses can generate multiple results.
+        var resolution = (step.Result as IList<DateTimeResolution>)?.FirstOrDefault();
 
-                    // Save dialog state to user state and end the dialog.
-                    userState.WakeUp = (WakeUpInfo)wakeUp;
+        // Time ranges have a start and no value.
+        var alarm = resolution.Value ?? resolution.Start;
+        string roomNumber = (step.Options as GuestInfo)?.Room;
 
-                    await dc.End();
-                }
-            });
+        // Send a confirmation message.
+        await step.Context.SendActivityAsync(
+            $"Your alarm is set to {alarm} for room {roomNumber}.",
+            cancellationToken: cancellationToken);
 
-            // Define the prompts used in this conversation flow.
-            this.Dialogs.Add("datePrompt", new DateTimePrompt(Culture.English));
-        }
+        // End the dialog, returning the alarm info.
+        return await step.EndDialogAsync(
+            new WakeUpInfo { Time = alarm },
+            cancellationToken);
     }
 }
 ```
 
 # [JavaScript](#tab/javascript)
 
-**reserveTable.js**
+Create a **reserveTableDialog.js** file, and add to it a `ReserveTableDialog` class that extends `ComponentDialog`.
+
+We'll get the guest's name from the options object that is passed in when the dialog is started. Then, we'll return a value from the dialog, one that contains the table number this time.
+
 ```JavaScript
-const { ComponentDialog, DialogSet, ChoicePrompt, WaterfallDialog } = require('botbuilder-dialogs');
+const { ComponentDialog, ChoicePrompt, WaterfallDialog } = require('botbuilder-dialogs');
 
-class ReserveTable extends ComponentDialog {
-    constructor(dialogId, userInfo) {
-        super(dialogId); 
+class ReserveTableDialog extends ComponentDialog {
+    constructor(dialogId) {
+        super(dialogId);
 
-        // Defining the conversation flow using a waterfall model
-        this.dialogs.add(new WaterfallDialog('reserve_table', [
+        // ID of the child dialog that should be started anytime the component is started.
+        this.initialDialogId = dialogId;
+
+        // Define the prompts used in this conversation flow.
+        this.addDialog(new ChoicePrompt('choicePrompt'));
+
+        // Define the conversation flow using a waterfall model.
+        this.addDialog(new WaterfallDialog(dialogId, [
             async function (step) {
-                // Get the user state from context
-                const user = await userInfo.get(step.context);
+                // Welcome the user and ask for their table preference.
+                const greeting = step.options && step.options.userName ? `Welcome ${step.options.userName}` : `Welcome`;
 
-                // Create a new local reserveTable state object
-                step.values.reserveTable = {};
-
-                const prompt = `Welcome ${ user.guestInfo.userName }, which table would you like to reserve?`;
-                const choices = ['1', '2', '3', '4', '5', '6'];
-                return await step.prompt('choicePrompt', prompt, choices);
+                const promptOptions = {
+                    prompt: `${greeting}, How many diners will be at your table?`,
+                    reprompt: 'That was not a valid choice, please select a table size between 1 and 6 guests.',
+                    choices: ['1', '2', '3', '4', '5', '6']
+                };
+                return await step.prompt('choicePrompt', promptOptions);
             },
-            async function(step) {
+            async function (step) {
                 const choice = step.result;
-                
-                // Save the table number
-                step.values.reserveTable.tableNumber = choice.value;
-                await step.context.sendActivity(`Sounds great, we will reserve table number ${ choice.value } for you.`);
-                
-                // Get the user state from context
-                const user = await userInfo.get(dc.context);
-                // Persist dialog's state object to the parent's state object
-                user.reserveTable = step.values.reserveTable;
-               
-                // Save changes
-                await userInfo.set(step.context, user);
 
-                // End the dialog
-                return await step.endDialog();
+                // Send a confirmation message.
+                const tableNumber = choice.value;
+                await step.context.sendActivity(`Sounds great, we will reserve a table for you for ${tableNumber} diners.`);
+
+                // End the dialog, returning the table info.
+                return await step.endDialog({ table: tableNumber });
             }
         ]));
-
-        // Defining the prompt used in this conversation flow
-        this.dialogs.add(new ChoicePrompt('choicePrompt'));
     }
 }
-exports.ReserveTable = ReserveTable;
+
+exports.ReserveTableDialog = ReserveTableDialog;
 ```
 
-**wakeUp.js**
+Create a **setAlarmDialog.js** file, and add to it a `SetAlarmDialog` class that extends `ComponentDialog`.
+
+We'll get the guest's room number from the options object that is passed in when the dialog is started. Then, we'll return a value from the dialog, one that contains the time they want a wake up call set for.
+
 ```JavaScript
-const { ComponentDialog, DialogSet, DatetimePrompt, WaterfallDialog } = require('botbuilder-dialogs');
+const { ComponentDialog, DateTimePrompt, WaterfallDialog } = require('botbuilder-dialogs');
 
-class WakeUp extends ComponentDialog {
-    constructor(userInfo) {
-        // Dialog ID of 'wakeup' will start when class is called in the parent
-        super('wakeUp');
+class SetAlarmDialog extends ComponentDialog {
+    constructor(dialogId) {
+        super(dialogId);
 
-        this.dialogs.add(new WaterfallDialog('wakeUp', [
+        // ID of the child dialog that should be started anytime the component is started.
+        this.initialDialogId = dialogId;
+
+        // Define the prompts used in this conversation flow.
+        this.dialogs.add(new DateTimePrompt('datePrompt'));
+
+        this.dialogs.add(new WaterfallDialog(dialogId, [
             async function (step) {
-                // Get the user state from context
-                const user = await userInfo.get(step.context); 
+                step.values.wakeUp = {};
+                if (step.options && step.options.roomNumber) {
+                    step.values.roomNumber = step.options.roomNumber;
+                }
 
-                // Create a new local reserveTable state object
-                step.values.wakeUp = {};  
-                             
-                return await step.prompt('datePrompt', `Hello, ${ user.guestInfo.userName }. What time would you like your alarm to be set?`);
+                const greeting = step.options && step.options.userName ? `Hi ${step.options.userName}` : `Hi`;
+                return await step.prompt('datePrompt', `${greeting}. What time would you like your alarm to be set?`);
             },
             async function (step) {
-                const time = step.result;
-            
-                // Get the user state from context
-                const user = await userInfo.get(step.context);
+                // Ambiguous responses can generate multiple results.
+                const resolution = step.result[0];
 
-                // Save the time
-                step.values.wakeUp.time = time[0].value
+                // Time ranges have a start and no value.
+                const alarm = resolution.value ? resolution.value : resolution.start;
+                const roomNumber = step.values.roomNumber;
 
-                await step.context.sendActivity(`Your alarm is set to ${ time[0].value } for room ${ user.guestInfo.room }`);
-                
-                // Save dialog's state object to the parent's state object
-                user.wakeUp = step.values.wakeUp;
+                // Send a confirmation message.
+                await step.context.sendActivity(`Your alarm is set to ${alarm} for room ${roomNumber}.`);
 
-                // Save changes
-                await userInfo.step(step.context, user);
-
-                // End the dialog
-                return await step.endDialog();
+                // End the dialog, returning the alarm info.
+                return await step.endDialog({ alarm: alarm });
             }]));
 
         // Defining the prompt used in this conversation flow
-        this.dialogs.add(new DatetimePrompt('datePrompt'));
     }
 }
-exports.WakeUp = WakeUp;
+
+exports.SetAlarmDialog = SetAlarmDialog;
 ```
 
 ---
 
-## Add modular dialogs to a bot
+## Add the component dialogs to the bot
 
-The main bot file ties these three modularized dialogs into one bot.
+Now that we've defined our three component dialogs, we can use them in our bot.
 
 - All three dialogs are added to our bot's main dialog set.
-- The reserve-table and wake-up dialogs are built into the conversation flow of the main dialog.
 - When a new conversation starts, we don't have an active dialog and the bot's on turn logic takes over.
+- If we don't have guest information for the user, we start the check-in dialog.
+- Once we have guest information, the main dialog takes over, repeatedly allowing the user to start the reserve-table or wake-up dialog.
 
-**Bot's on-turn handler**
+We'll update the logic for the bot's on-turn handler.
 
-Whenever the bot turn is outside an active dialog it checks user state.
-1. If it already has the guest's information, it starts it's main dialog.
-1. Otherwise, it starts the main dialog's check-in child dialog.
+1. Get user state.
+1. Continue any active dialog.
+1. If a dialog completed this turn, it should be the check-in dialog.
+   1. Store the guest information.
+   1. Start the main dialog.
+1. If the bot has not sent a message to the user yet, then there is no active dialog running.
+    1. If we don't have the guest's information, start the check-in dialog.
+    1. Otherwise, start the main dialog.
+1. Save any state changes that might have occurred.
 
-**Main dialog setps**
+These are the steps for the main dialog.
 
 1. Ask the guest what they'd like to do: reserve a table or set a wake up call.
-1. Start the corresponding child dialog, or send an _input not understood_ message and skip to the next step.
-1. Skip back to the beginning of this dialog.
-
+1. Start the corresponding child dialog, or send an _input not understood_ message and start over from the first step.
+1. Process the return value from the child dialog and restart the main dialog.
 
 # [C#](#tab/csharp)
 
-Dialog flow is updated using dialog context's `Continue` method. This method runs the next step of the waterfall on the dialog stack.
+In the **HotelBot.cs** file update the using statements.
 
-**HotelBot.cs**
 ```csharp
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Bot;
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Schema;
+using Microsoft.Extensions.Logging;
+```
 
-namespace HotelBot
+Update the initialization code and define the bot's dialog set and main dialog.
+
+```csharp
+// Define the IDs for the dialogs in the bot's dialog set.
+private const string MainDialogId = "mainDialog";
+private const string CheckInDialogId = "checkInDialog";
+private const string TableDialogId = "tableDialog";
+private const string AlarmDialogId = "alarmDialog";
+
+// Define the dialog set for the bot.
+private readonly DialogSet _dialogs;
+
+// Define the state accessors and the logger for the bot.
+private readonly BotAccessors _accessors;
+private readonly ILogger _logger;
+
+/// <summary>
+/// Initializes a new instance of the <see cref="HotelBot"/> class.
+/// </summary>
+/// <param name="accessors">Contains the objects to use to manage state.</param>
+/// <param name="loggerFactory">A <see cref="ILoggerFactory"/> that is hooked to the Azure App Service provider.</param>
+public HotelBot(BotAccessors accessors, ILoggerFactory loggerFactory)
 {
-    public class HotelBot : IBot
+    if (loggerFactory == null)
     {
-        private const string MainMenuId = "mainMenu";
-
-        private DialogSet _dialogs { get; } = ComposeMainDialog();
-
-        /// <summary>
-        /// Every Conversation turn for our bot calls this method. 
-        /// </summary>
-        /// <param name="context">The current turn context.</param>        
-        public async Task OnTurn(ITurnContext context)
-        {
-            if (context.Activity.Type is ActivityTypes.Message)
-            {
-                // Get the user and conversation state from the turn context.
-                var userInfo = UserState<UserInfo>.Get(context);
-                var conversationInfo = ConversationState<ConversationInfo>.Get(context);
-
-                // Establish dialog state from the conversation state.
-                var dc = _dialogs.CreateContext(context, conversationInfo);
-
-                // Continue any current dialog.
-                await dc.Continue();
-
-                // Every turn sends a response, so if no response was sent,
-                // then there no dialog is currently active.
-                if (!context.Responded)
-                {
-                    // If we don't yet have the guest's info, start the check-in dialog.
-                    if (string.IsNullOrEmpty(userInfo?.Guest?.Name))
-                    {
-                        await dc.Begin(CheckIn.Id);
-                    }
-                    // Otherwise, start our bot's main dialog.
-                    else
-                    {
-                        await dc.Begin(MainMenuId);
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// Composes a main dialog for our bot.
-        /// </summary>
-        /// <returns>A new main dialog.</returns>
-        private static DialogSet ComposeMainDialog()
-        {
-            var dialogs = new DialogSet();
-
-            dialogs.Add(MainMenuId, new WaterfallStep[]
-            {
-                async (dc, args, next) =>
-                {
-                    var menu = new List<string> { "Reserve Table", "Wake Up" };
-                    await dc.Context.SendActivity(MessageFactory.SuggestedActions(menu, "How can I help you?"));
-                },
-                async (dc, args, next) =>
-                {
-                    // Decide which dialog to start.
-                    var result = (args["Activity"] as Activity)?.Text?.Trim().ToLowerInvariant();
-                    switch (result)
-                    {
-                        case "reserve table":
-                            await dc.Begin(ReserveTable.Id);
-                            break;
-                        case "wake up":
-                            await dc.Begin(WakeUp.Id);
-                            break;
-                        default:
-                            await dc.Context.SendActivity("Sorry, I don't understand that command. Please choose an option from the list below.");
-                            await next();
-                            break;
-                    }
-                },
-                async (dc, args, next) =>
-                {
-                    // Show the main menu again.
-                    await dc.Replace(MainMenuId);
-                }
-            });
-
-            // Add our child dialogs.
-            dialogs.Add(CheckIn.Id, CheckIn.Instance);
-            dialogs.Add(ReserveTable.Id, ReserveTable.Instance);
-            dialogs.Add(WakeUp.Id, WakeUp.Instance);
-
-            return dialogs;
-        }
+        throw new System.ArgumentNullException(nameof(loggerFactory));
     }
+
+    _logger = loggerFactory.CreateLogger<HotelBot>();
+    _logger.LogTrace($"{nameof(HotelBot)} turn start.");
+    _accessors = accessors ?? throw new System.ArgumentNullException(nameof(accessors));
+
+    // Define the steps of the main dialog.
+    WaterfallStep[] steps = new WaterfallStep[]
+    {
+        MenuStepAsync,
+        HandleChoiceAsync,
+        LoopBackAsync,
+    };
+
+    // Create our bot's dialog set, adding a main dialog and the three component dialogs.
+    _dialogs = new DialogSet(_accessors.DialogStateAccessor)
+        .Add(new WaterfallDialog(MainDialogId, steps))
+        .Add(new CheckInDialog(CheckInDialogId))
+        .Add(new ReserveTableDialog(TableDialogId))
+        .Add(new SetAlarmDialog(AlarmDialogId));
+}
+
+private static async Task<DialogTurnResult> MenuStepAsync(
+    WaterfallStepContext stepContext,
+    CancellationToken cancellationToken = default(CancellationToken))
+{
+    // Present the user with a set of "suggested actions".
+    List<string> menu = new List<string> { "Reserve Table", "Wake Up" };
+    await stepContext.Context.SendActivityAsync(
+        MessageFactory.SuggestedActions(menu, "How can I help you?"),
+        cancellationToken: cancellationToken);
+    return Dialog.EndOfTurn;
+}
+
+private async Task<DialogTurnResult> HandleChoiceAsync(
+    WaterfallStepContext stepContext,
+    CancellationToken cancellationToken = default(CancellationToken))
+{
+    // Get the user's info. (Since the type factory is null, this will throw if state does not yet have a value for user info.)
+    UserInfo userInfo = await _accessors.UserInfoAccessor.GetAsync(stepContext.Context, null, cancellationToken);
+
+    // Check the user's input and decide which dialog to start.
+    // Pass in the guest info when starting either of the child dialogs.
+    string choice = (stepContext.Result as string)?.Trim()?.ToLowerInvariant();
+    switch (choice)
+    {
+        case "reserve table":
+            return await stepContext.BeginDialogAsync(TableDialogId, userInfo.Guest, cancellationToken);
+
+        case "wake up":
+            return await stepContext.BeginDialogAsync(AlarmDialogId, userInfo.Guest, cancellationToken);
+
+        default:
+            // If we don't recognize the user's intent, start again from the beginning.
+            await stepContext.Context.SendActivityAsync(
+                "Sorry, I don't understand that command. Please choose an option from the list.");
+            return await stepContext.ReplaceDialogAsync(MainDialogId, null, cancellationToken);
+    }
+}
+
+private async Task<DialogTurnResult> LoopBackAsync(
+    WaterfallStepContext stepContext,
+    CancellationToken cancellationToken = default(CancellationToken))
+{
+    // Get the user's info. (Because the type factory is null, this will throw if state does not yet have a value for user info.)
+    UserInfo userInfo = await _accessors.UserInfoAccessor.GetAsync(stepContext.Context, null, cancellationToken);
+
+    // Process the return value from the child dialog.
+    switch (stepContext.Result)
+    {
+        case TableInfo table:
+            // Store the results of the reserve-table dialog.
+            userInfo.Table = table;
+            await _accessors.UserInfoAccessor.SetAsync(stepContext.Context, userInfo, cancellationToken);
+            break;
+        case WakeUpInfo alarm:
+            // Store the results of the set-wake-up-call dialog.
+            userInfo.WakeUp = alarm;
+            await _accessors.UserInfoAccessor.SetAsync(stepContext.Context, userInfo, cancellationToken);
+            break;
+        default:
+            // We shouldn't get here, since these are no other branches that get this far.
+            break;
+    }
+
+    // Restart the main menu dialog.
+    return await stepContext.ReplaceDialogAsync(MainDialogId, null, cancellationToken);
 }
 ```
 
-Finally, we need to update the `ConfigureServices` method of the `StartUp` class to connect our bot and add state middleware.
+And, update the bot's turn handler to use the dialog set.
 
-**Startup.cs**
 ```csharp
-// This method gets called by the runtime. Use this method to add services to the container.
-public void ConfigureServices(IServiceCollection services)
+public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
 {
-    services.AddBot<HotelBot>(options =>
+    if (turnContext.Activity.Type == ActivityTypes.Message)
     {
-        options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+        // Establish dialog state from the conversation state.
+        DialogContext dc = await _dialogs.CreateContextAsync(turnContext, cancellationToken);
 
-        options.Middleware.Add(new CatchExceptionMiddleware<Exception>(async (context, exception) =>
-        {
-            await context.TraceActivity($"{nameof(HotelBot)} Exception", exception);
-            await context.SendActivity("Sorry, it looks like something went wrong!");
-        }));
+        // Get the user's info.
+        UserInfo userInfo = await _accessors.UserInfoAccessor.GetAsync(turnContext, () => new UserInfo(), cancellationToken);
 
-        // Add state management middleware for conversation and user state.
-        var path = Path.Combine(Path.GetTempPath(), nameof(HotelBot));
-        if (!Directory.Exists(path))
+        // Continue any current dialog.
+        DialogTurnResult dialogTurnResult = await dc.ContinueDialogAsync();
+
+        // Process the result of any complete dialog.
+        if (dialogTurnResult.Status is DialogTurnStatus.Complete)
         {
-            Directory.CreateDirectory(path);
+            switch (dialogTurnResult.Result)
+            {
+                case GuestInfo guestInfo:
+                    // Store the results of the check-in dialog.
+                    userInfo.Guest = guestInfo;
+                    await _accessors.UserInfoAccessor.SetAsync(turnContext, userInfo, cancellationToken);
+                    break;
+                default:
+                    // We shouldn't get here, since the main dialog is designed to loop.
+                    break;
+            }
         }
-        IStorage storage = new FileStorage(path);
 
-        options.Middleware.Add(new ConversationState<ConversationInfo>(storage));
-        options.Middleware.Add(new UserState<UserInfo>(storage));
-    });
+        // Every dialog step sends a response, so if no response was sent,
+        // then no dialog is currently active.
+        else if (!turnContext.Responded)
+        {
+            if (string.IsNullOrEmpty(userInfo.Guest?.Name))
+            {
+                // If we don't yet have the guest's info, start the check-in dialog.
+                await dc.BeginDialogAsync(CheckInDialogId, null, cancellationToken);
+            }
+            else
+            {
+                // Otherwise, start our bot's main dialog.
+                await dc.BeginDialogAsync(MainDialogId, null, cancellationToken);
+            }
+        }
+
+        // Save the new turn count into the conversation state.
+        await _accessors.ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
+        await _accessors.UserState.SaveChangesAsync(turnContext, false, cancellationToken);
+    }
+    else
+    {
+        await turnContext.SendActivityAsync($"{turnContext.Activity.Type} event detected");
+    }
 }
 ```
 
 # [JavaScript](#tab/javascript)
 
-Dialog flow is updated using dialog context's `continue` method. This method runs the next step of the waterfall on the dialog stack.
+In our bot file, **bot.js**, we need to import not just the classes we'll use from the SDK, but also the classes we defined for our component dialogs.
 
-**app.js**
 ```JavaScript
-const { BotFrameworkAdapter, ConversationState, UserState, MemoryStorage, MessageFactory } = require("botbuilder");
-const { DialogSet } = require("botbuilder-dialogs");
-const restify = require("restify");
-var azure = require('botbuilder-azure'); 
+const { ActivityTypes, MessageFactory } = require('botbuilder');
+const { DialogSet, WaterfallDialog, Dialog, DialogTurnStatus } = require('botbuilder-dialogs');
 
-// Create server
-let server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
-    console.log(`${server.name} listening to ${server.url}`);
-});
+// Import our component dialogs.
+const { CheckInDialog } = require("./checkInDialog");
+const { ReserveTableDialog } = require("./reserveTableDialog");
+const { SetAlarmDialog } = require("./setAlarmDialog");
+```
 
-// Create adapter
-const adapter = new BotFrameworkAdapter({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
-});
+We'll also need to create a dialog set and add all the dialogs we'll be using to it.
 
-// Memory Storage
-const storage = new MemoryStorage();
-// ConversationState lasts for the entirety of a conversation then gets disposed of
-const conversationState = new ConversationState(storage);
+We're defining the waterfall steps of the main dialog as functions in the class, instead of in-line. We are using `bind()` on these functions so that from within the function, `this` resolves correctly.
 
-// UserState persists information about the user across all of the conversations you have with that user
-const userState  = new UserState(storage);
+Here's our updated bot constructor.
 
-// Create a place in the conversation state to store dialog state.
-const dialogState = conversationState.createProperty('dialogState');
+```JavaScript
+constructor(conversationState, userState) {
+    // Record the conversation and user state management objects.
+    this.conversationState = conversationState;
+    this.userState = userState;
 
-// Create a place in the user storage to store a user info.
-const userInfo = userState.createProperty('userInfo');
+    // Create our state property accessors.
+    this.dialogStateAccessor = conversationState.createProperty(DIALOG_STATE_PROPERTY);
+    this.userInfoAccessor = userState.createProperty(USER_INFO_PROPERTY);
 
-// Create a dialog set and pass in our dialogState property.
-const dialogs = new DialogSet(dialogState);
+    // Create our bot's dialog set, adding a main dialog and the three component dialogs.
+    this.dialogs = new DialogSet(this.dialogStateAccessor)
+        .add(new CheckInDialog('checkInDialog'))
+        .add(new ReserveTableDialog('reserveTableDialog'))
+        .add(new SetAlarmDialog('setAlarmDialog'))
+        .add(new WaterfallDialog('mainDialog', [
+            this.promptForChoice.bind(this),
+            this.startChildDialog.bind(this),
+            this.saveResult.bind(this)
+    ]));
+}
+```
 
-// Listen for incoming requests 
-server.post('/api/messages', (req, res) => {
-    adapter.processActivity(req, res, async (context) => {
-        const isMessage = context.activity.type === 'message';
-        const dc = dialogs.createContext(context);
- 
-        // Continue the current dialog if one is currently active
-        await dc.continueDialog();
+Below the bot constructor, add the following code that implements steps for the main dialog.
 
-        // Default action
-        if (!context.responded && isMessage) {
+```JavaScript
+async promptForChoice(step) {
+    const menu = ["Reserve Table", "Wake Up"];
+    await step.context.sendActivity(MessageFactory.suggestedActions(menu, 'How can I help you?'));
+    return Dialog.EndOfTurn;
+}
 
-            // Getting the user info from the state
-            const user = await userInfo.get(dc.context); 
-            // If guest info is undefined prompt the user to check in
-            if (!user.guestInfo) {
-                await dc.beginDialog('checkInPrompt');
-            } else {
-                await dc.beginDialog('mainMenu'); 
-            }           
-        }
-        
-        // End by saving any changes to the state that have occured during this turn.
-        await conversationState.saveChanges(dc.context);
-        await userState.saveChanges(dc.context);
-    });
-});
-
-dialogs.add(new WaterfallDialog('mainMenu', [
-    async function (step) {
-        const menu = ["Reserve Table", "Wake Up"];
-        await step.context.sendActivity(MessageFactory.suggestedActions(menu));
-        return await step.next();
-    },
-    async function (step) {
-        // Decide which module to start
-        switch (step.result) {
-            case "Reserve Table":
-                return await step.beginDialog('reservePrompt');
-                break;
-            case "Wake Up":
-                return await step.beginDialog('wakeUpPrompt');
-                break;
-            default:
-                await step.context.sendActivity("Sorry, i don't understand that command. Please choose an option from the list below.");
-                return await step.next();
-                break;            
-        }
-    },
-    async function (step){
-        return await step.replaceDialog('mainMenu'); // Show the menu again
+async startChildDialog(step) {
+    // Get the user's info.
+    const user = await this.userInfoAccessor.get(step.context);
+    // Check the user's input and decide which dialog to start.
+    // Pass in the guest info when starting either of the child dialogs.
+    switch (step.result) {
+        case "Reserve Table":
+            return await step.beginDialog('reserveTableDialog', user.guestInfo);
+            break;
+        case "Wake Up":
+            return await step.beginDialog('setAlarmDialog', user.guestInfo);
+            break;
+        default:
+            await step.context.sendActivity("Sorry, I don't understand that command. Please choose an option from the list.");
+            return await step.replaceDialog('mainDialog');
+            break;
     }
+}
 
-]));
+async saveResult(step) {
+    // Process the return value from the child dialog.
+    if (step.result) {
+        const user = await this.userInfoAccessor.get(step.context);
+        if (step.result.table) {
+            // Store the results of the reserve-table dialog.
+            user.table = step.result.table;
+        } else if (step.result.alarm) {
+            // Store the results of the set-wake-up-call dialog.
+            user.alarm = step.result.alarm;
+        }
+        await this.userInfoAccessor.set(step.context, user);
+    }
+    // Restart the main menu dialog.
+    return await step.replaceDialog('mainDialog'); // Show the menu again
+}
+```
 
-// Importing the dialogs 
-const checkIn = require("./checkIn");
-dialogs.add(new checkIn.CheckIn('checkInPrompt', userState));
+And now update your bot's turn handler:
 
-const reserve_table = require("./reserveTable");
-dialogs.add(new reserve_table.ReserveTable('reservePrompt', userState));
-
-const wake_up = require("./wake_up");
-dialogs.add(new wake_up.WakeUp('wakeUpPrompt', userState));
+```JavaScript
+async onTurn(turnContext) {
+    if (turnContext.activity.type === ActivityTypes.Message) {
+        const user = await this.userInfoAccessor.get(turnContext, {});
+        const dc = await this.dialogs.createContext(turnContext);
+        const dialogTurnResult = await dc.continueDialog();
+        if (dialogTurnResult.status === DialogTurnStatus.complete) {
+            user.guestInfo = dialogTurnResult.result;
+            await this.userInfoAccessor.set(turnContext, user);
+            await dc.beginDialog('mainDialog');
+        } else if (!turnContext.responded) {
+            if (!user.guestInfo) {
+                await dc.beginDialog('checkInDialog');
+            } else {
+                await dc.beginDialog('mainDialog');
+            }
+        }
+        // Save state changes
+        await this.conversationState.saveChanges(turnContext);
+        await this.userState.saveChanges(turnContext);
+    }
+}
 ```
 
 ---
-<!-- TODO: These dialogs are not fully modularized, as there are cross dependencies:
-    - Importantly, the dialogs need to know details about the bot's user state.
--->
 
-As you can see, the modular dialogs are added to the bot's main dialog in a fashion similiar to how you add [prompts](bot-builder-prompts.md) to a dialog. You can add as many child dialogs to your main dialog as you want. Each module would add additional capabilities and services that the bot can offer to your users.
+As you can see, the component dialogs are added to the bot's main dialog in a fashion similar to how you add [prompts](bot-builder-prompts.md) to a dialog. You can add as many child dialogs to your main dialog as you want. Each module would add additional capabilities and services that the bot can offer to your users.
 
 ## Next steps
 
-Now that you know how to modularize your bot logic by using dialogs, let's take a look at how to use Language Understanding (LUIS) to help your bot decide when to begin the dialogs.
+Now that you know how to use component dialogs, let's take a look at how to use Language Understanding (LUIS) to help your bot decide when to begin the dialogs.
 
 > [!div class="nextstepaction"]
 > [Use LUIS for Language Understanding](./bot-builder-howto-v4-luis.md)
