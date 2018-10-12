@@ -38,6 +38,11 @@ md myJsBots
 cd myJsBots
 ```
 
+Ensure your version of npm is up to date.
+```bash
+npm i npm
+```
+
 Next, install Yeoman and the generator for JavaScript.
 
 ```bash

@@ -54,7 +54,7 @@ public class _Entities
     public string[] partySize;
 
     // Built-in entities
-    public Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec[] datetime;
+    public Microsoft.Bot.Builder.Ai.Luis.DateTimeSpec[] datetime;
     public double[] number;
 
     // Lists
@@ -63,10 +63,10 @@ public class _Entities
     // Instance
     public class _Instance
     {
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] partySize;
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] datetime;
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] number;
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] cafeLocation;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] partySize;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] datetime;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] number;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] cafeLocation;
     }
     [JsonProperty("$instance")]
     public _Instance _instance;

@@ -30,6 +30,7 @@ In Visual Studio, create a new bot project.
 ![Visual Studio project](../media/azure-bot-quickstarts/bot-builder-dotnet-project.png)
 
 > [!TIP] 
+> If needed, change the project build type to ``.Net Core 2.1``
 > If needed, update [NuGet packages](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 Thanks to the template, your project contains all of the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.

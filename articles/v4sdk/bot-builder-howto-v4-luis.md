@@ -28,7 +28,7 @@ First, make sure you have the packages necessary for LUIS.
 [Add a reference](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui) to v4 version of the following NuGet packages:
 
 
-* `Microsoft.Bot.Builder.AI.LUIS`
+* `Microsoft.Bot.Builder.AI.Luis`
 
 # [JavaScript](#tab/js)
 
@@ -57,11 +57,11 @@ While it's possible to both create and call your LUIS app on every turn, it's be
 
 Start with the Echo bot template, and open **Startup.cs**. 
 
-Add a `using` statement for `Microsoft.Bot.Builder.AI.LUIS`
+Add a `using` statement for `Microsoft.Bot.Builder.AI.Luis`
 
 ```csharp
 // add this
-using Microsoft.Bot.Builder.AI.LUIS;
+using Microsoft.Bot.Builder.AI.Luis;
 ```
 
 Add the following code at the end of `ConfigureServices`, after the state initialization. This grabs the information from the `appsettings.json` file, but those strings can be grabbed from your `.bot` file, like the sample linked at the end of this article, or hard coded for testing.
@@ -194,7 +194,7 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 // add this reference
-using Microsoft.Bot.Builder.AI.LUIS;
+using Microsoft.Bot.Builder.AI.Luis;
 
 namespace EchoBot
 {

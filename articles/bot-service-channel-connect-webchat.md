@@ -7,27 +7,28 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 10/10/2018
 ---
 
 # Connect a bot to Web Chat
+
+[!INCLUDE pre-release-label]
+
 When you [create a bot](bot-service-quickstart.md) with Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the web chat control, which provides the ability for users to interact with your bot directly in a web page.
 
-![Web chat sample](~/media/bot-service-channel-webchat/webchat-sample.png)
+![Web chat sample](./media/bot-service-channel-webchat/create-a-bot.png)
 
 The Web Chat channel in the Bot Framework Portal contains everything you need to embed the web chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
-
-[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## <a id="step-1"></a> Get your bot secret key
 
 1. Open your bot in the [Azure Portal](http://portal.azure.com) and click **Channels** blade.
 
 2. Click **Edit** for the **Web Chat** channel.  
-![Web chat channel](~/media/bot-service-channel-webchat/bot-service-channel-list.png)
+![Web chat channel](./media/bot-service-channel-webchat/bot-service-channel-list.png)
 
 3. Under **Secret keys**, click **Show** for the first key.  
-![Secret key](~/media/bot-service-channel-webchat/secret-key.png)
+![Secret key](./media/bot-service-channel-webchat/secret-key.png)
 
 4. Copy the **Secret key** and the **Embed code**.
 
@@ -127,8 +128,8 @@ You may change the size of the web chat control by using the `style` attribute o
 <iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
 ```
 
-![Chat control Client](~/media/chatwidget-client.png)
+![Chat control Client](./media/chatwidget-client.png)
 
 ## Additional resources
 
-You can [download the source code](https://github.com/Microsoft/BotFramework-WebChat) for the web chat control on GitHub.
+You can [download the source code](https://aka.ms/BotFramework-WebChat-V4) for the web chat control on GitHub.
