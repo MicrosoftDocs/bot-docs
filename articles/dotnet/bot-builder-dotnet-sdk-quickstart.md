@@ -48,6 +48,7 @@ Next, start the emulator and then connect to your bot in the emulator:
 ## Interact with your bot
 
 Send a message to your bot, and the bot will respond back with a message.
+
 ![Emulator running](../media/emulator-v4/emulator-running.png)
 
 ## Next steps
