@@ -23,7 +23,7 @@ To give you more control over the *dialog stack*, the **Dialogs** library provid
 
 In this article we'll create sample dialogs for a hotel concierge bot that a guest could use to access common services: reserving a table at the hotel restaurant, and ordering a meal from room service.  Each one of these features, along with a menu connecting them together, will be created as dialogs in a dialog set.
 
-The bot's top-level dialog provides the guest with these two options. If the the guest wants to reserve a table, the top-level dialog uses the _begin dialog_ async method to start the table reservation dialog. If the guest wants to order room service, the top-level dialog instead starts the dinner ordering dialog.
+The bot's top-level dialog provides the guest with these two options. If the guest wants to reserve a table, the top-level dialog uses the _begin dialog_ async method to start the table reservation dialog. If the guest wants to order room service, the top-level dialog instead starts the dinner ordering dialog.
 
 The dinner ordering dialog first asks the guest to select food items off a menu, and then asks for their room number. The selection of food items is _also_ a dialog - it is called into play multiple times as a guest selects items from the menu before submitting the dinner order.
 

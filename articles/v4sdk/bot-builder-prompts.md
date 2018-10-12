@@ -538,7 +538,7 @@ When you prompt for user input, you have several options on how to handle that i
 
 ## Additional resources
 
-For a complete sample using some of these prompts, see the the Multi Turn Prompt Bot for [C#](https://aka.ms/cs-multi-prompts-sample) or [JavaScript](https://aka.ms/js-multi-prompts-sample).
+For a complete sample using some of these prompts, see the Multi Turn Prompt Bot for [C#](https://aka.ms/cs-multi-prompts-sample) or [JavaScript](https://aka.ms/js-multi-prompts-sample).
 
 ## Next steps
 

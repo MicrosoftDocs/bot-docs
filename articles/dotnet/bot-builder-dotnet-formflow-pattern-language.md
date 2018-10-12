@@ -1,6 +1,6 @@
 ---
 title: Customize user experience with pattern language | Microsoft Docs
-description: Learn how to to customize FormFlow prompts and override FormFlow templates by using pattern language with the Bot Builder SDK for .NET.
+description: Learn how to customize FormFlow prompts and override FormFlow templates by using pattern language with the Bot Builder SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
