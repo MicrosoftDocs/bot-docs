@@ -65,6 +65,7 @@ using Microsoft.Bot.Builder.Dialogs;
 We'll start from a EchoBot template. For instructions, see the [quickstart for JavaScript](../javascript/bot-builder-javascript-quickstart.md).
 
 
+
 The `botbuilder-dialogs` library can be downloaded from npm. To install the `botbuilder-dialogs` library, run the following npm command:
 
 ```cmd
