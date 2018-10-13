@@ -24,7 +24,7 @@ Open the bot in the [Azure Portal](https://portal.azure.com/), click the **Chann
 Connecting the bot with Skype for Business Online is performed by a **Tenant Administrator** of that Skype for Business tenant.
 
 ## Next steps
-* [Connect a bot with Skype for Business](https://msdn.microsoft.com/en-us/skype/Skype-For-Business-Bot-Framework/docs/overview)
+* [Skype for Business Bot Framework](https://msdn.microsoft.com/en-us/skype/Skype-For-Business-Bot-Framework/docs/overview)
 
 
 

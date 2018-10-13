@@ -16,7 +16,7 @@ You can configure your bot to communicate with people using the Slack messaging 
 
 ## Create a Slack Application for your bot
 
-Log into Slack and [create a Slack application](https://api.slack.com/applications/new).
+Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
 
 ![Set up bot](~/media/channels/slack-NewApp.png)
 
@@ -58,25 +58,25 @@ Click **Add Bot User** to validate your settings, click **Always Show My Bot as 
 Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify.
 
 > [!TIP]
-> Your bot handle is a property of your bot. To find a bot's handle,
+> Your bot handle is the name of your bot. To find a bot's handle,
 > visit [https://dev.botframework.com/bots](https://dev.botframework.com/bots),
-> choose a bot, and click **SETTINGS**.
+> choose a bot, and record the name of the bot.
 
 1. Select the **Event Subscriptions** tab.
 2. Click **Enable Events** to **On**.
-3. In **Request URL**, enter this URL, but replace `{YourBotHandle}` with your bot handle.
+3. In **Request URL**, enter this URL, but replace `{YourBotHandle}` with your bot handle. The bot handle used in this tutorial is testChannels.
         `https://slack.botframework.com/api/Events/{YourBotHandle}`
-4. In **Subscribe to Bot Events**, click **Add Bot User Event**.
-5. In the list of events, click Add **Bot User Event** and select these six event types:
+4. In **Subscribe to Workspace Events**, click **Add Workspace Event**.
+5. In the list of events, select these six event types:
     * `member_joined_channel`
     * `member_left_channel`
     * `message.channels`
     * `message.groups`
     * `message.im`
     * `message.mpim`
-6. Click **Save Changes**.
 
-![Subscribe to Events](~/media/channels/slack-EnableEvents.png)
+![Subscribe Events](~/media/channels/slack-SubscribeEvents.png)
+6. Click **Save Changes**.
 
 ## Add and Configure Interactive Messages (optional)
 
@@ -84,7 +84,7 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 
 1. Select the **Interactive Components** tab and click **Enable Interactive Components**.
 2. Enter `https://slack.botframework.com/api/Actions` as the **Request URL**.
-3. Click the **Enable Interactive Messages** button, and then click the **Save changes** button.
+3. Click the **Save changes** button.
 
 ![Enable messages](~/media/channels/slack-MessageURL.png)
 
@@ -100,7 +100,7 @@ The Client ID, Client Secret, and Verification Token required for configuration 
 In a separate browser window, return to the Bot Framework site at `https://dev.botframework.com/`.
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
-2. In the **Add a channel** section, click the Slack icon.
+2. In the **Channels** section, click the Slack icon.
 3. In the **Enter your Slack credentials** section, paste the App Credentials from the Slack website into the appropriate fields.
 4. The **Landing Page URL** is optional. You may omit or change it.
 5. Click **Save**.
@@ -122,7 +122,7 @@ To use this HTML with your bot, replace the href value (begins with `https://`) 
 Follow these steps to get the replacement URL.
 
 1. On [https://dev.botframework.com/bots](https://dev.botframework.com/bots), click your bot.
-2. Click **CHANNELS**, right-click the entry named **Slack**, and click **Copy link**. This URL is now in your clipboard.
+2. Click **Channels**, right-click the entry named **Slack**, and click **Copy link**. This URL is now in your clipboard.
 3. Paste this URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.

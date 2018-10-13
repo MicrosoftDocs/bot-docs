@@ -32,7 +32,7 @@ Log in to the [Azure portal](http://portal.azure.com).
 2. A new blade will open with information about the **Web App Bot**.  
 
 3. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  <br/>
-   ![Create Web App Bot blade](~/media/azure-bot-quickstarts/sdk-create-bot-service-blade.png)
+   ![Create Web App Bot blade](./media/azure-bot-quickstarts/sdk-create-bot-service-blade.png)
 
    | Setting | Suggested value | Description |
    | ---- | ---- | ---- |
@@ -117,7 +117,7 @@ Now that your bot is created, test it in Web Chat.
 ## Test the bot
 In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot. 
 
-![Azure Webchat test](~/media/azure-bot-quickstarts/azure-webchat-test.png)
+![Azure Webchat test](./media/azure-bot-quickstarts/azure-webchat-test.png)
 
 Enter a message and your bot should respond.
 

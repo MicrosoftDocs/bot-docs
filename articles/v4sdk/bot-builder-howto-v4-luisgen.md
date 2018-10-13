@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, in the example of a restaurant reservation, the LUIS app might be able to extract the party size, reservation date or restaurant location from the user's message. 
 
 
-You can use the [LUISGen tool][https://aka.ms/botbuilder-tools-luisgen] to generate classes that make it easier to extract entities from LUIS in your bot's code.
+You can use the [LUISGen tool](https://aka.ms/botbuilder-tools-luisgen) to generate classes that make it easier to extract entities from LUIS in your bot's code.
 
 At a Node.js command line, install `luisgen` to the global path.
 ```
@@ -54,7 +54,7 @@ public class _Entities
     public string[] partySize;
 
     // Built-in entities
-    public Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec[] datetime;
+    public Microsoft.Bot.Builder.Ai.Luis.DateTimeSpec[] datetime;
     public double[] number;
 
     // Lists
@@ -63,10 +63,10 @@ public class _Entities
     // Instance
     public class _Instance
     {
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] partySize;
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] datetime;
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] number;
-        public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] cafeLocation;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] partySize;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] datetime;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] number;
+        public Microsoft.Bot.Builder.Ai.Luis.InstanceData[] cafeLocation;
     }
     [JsonProperty("$instance")]
     public _Instance _instance;

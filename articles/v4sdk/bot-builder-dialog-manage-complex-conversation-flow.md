@@ -17,9 +17,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 In the last article, we demonstrated using the dialogs library to manage simple conversations. In [simple conversation flows](bot-builder-dialog-manage-conversation-flow.md), the user starts from the first step of a *waterfall*, continues through to the last step, and the conversational exchange finishes. In this article we will use dialogs to manage more complex conversations with portions that can branch and loop. To do so, we'll use various methods defined on the dialog context and waterfall step context, and we'll pass arguments between different parts of the dialog.
 
-<!-- TODO: We need a dialogs conceptual topic to link to, so we can reference that here, in place of describing what they are and what their features are in a how-to topic. -->
+See [Dialogs library](bot-builder-concept-dialog.md) for more background information about dialogs.
 
-To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate <!--using [component dialogs](bot-builder-compositcontrol.md) or--> building a custom dialog management class based on the base `Dialog` class.
+To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate using [component dialogs](bot-builder-compositcontrol.md) or building a custom dialog management class based on the base `Dialog` class.
 
 In this article we'll create sample dialogs for a hotel concierge bot that a guest could use to access common services: reserving a table at the hotel restaurant, and ordering a meal from room service.  Each one of these features, along with a menu connecting them together, will be created as dialogs in a dialog set.
 
@@ -62,9 +62,11 @@ using Microsoft.Bot.Builder.Dialogs;
 
 # [JavaScript](#tab/javascript)
 
-We'll start from a basic EchoBot template. For instructions, see the [quickstart for JavaScript](../javascript/bot-builder-javascript-quickstart.md).
+We'll start from a EchoBot template. For instructions, see the [quickstart for JavaScript](../javascript/bot-builder-javascript-quickstart.md).
 
-The `botbuilder-dialogs` library can be downloaded from NPM. To install the `botbuilder-dialogs` library, run the following NPM command:
+
+
+The `botbuilder-dialogs` library can be downloaded from npm. To install the `botbuilder-dialogs` library, run the following npm command:
 
 ```cmd
 npm install --save botbuilder-dialogs
@@ -189,11 +191,19 @@ Add(new NumberPrompt<int>(Inputs.Number));
 
 # [JavaScript](#tab/javascript)
 
-Add these two prompts to the dialog set.
+Update the bot constructor, and add two prompts to the dialog set.
 
 ```javascript
-dialogs.add(new ChoicePrompt('choicePrompt'));
-dialogs.add(new NumberPrompt('numberPrompt'));
+constructor(conversationState, dialogSet) {
+    // Creates a new state accessor property.
+    // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors.
+    this.countProperty = conversationState.createProperty(TURN_COUNTER_PROPERTY);
+    this.conversationState = conversationState;
+    this.dialogSet = dialogSet;
+
+    this.dialogSet.add(new ChoicePrompt('choicePrompt'));
+    this.dialogSet.add(new NumberPrompt('numberPrompt'));
+}
 ```
 
 ---
@@ -299,11 +309,11 @@ private static class Lists
 
 # [JavaScript](#tab/javascript)
 
-Create a **dinnerMenu** constant to contain this information.
+In the **bot.js** file, create a **dinnerMenu** constant to contain this information.
 
 ```javascript
 const dinnerMenu = {
-    choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50", 
+    choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50",
         "Process order", "Cancel"],
     "Potato Salad - $5.99": {
         Description: "Potato Salad",
@@ -405,7 +415,7 @@ In the bot constructor, add the `mainMenu` waterfall dialog.
 ```javascript
 // Display a menu and ask user to choose a menu item. Direct user to the item selected otherwise, show
 // the menu again.
-dialogs.add(new WaterfallDialog('mainMenu', [
+this.dialogSet.add(new WaterfallDialog('mainMenu', [
     async function (step) {
         // Welcome the user and send a prompt.
         await step.context.sendActivity("Welcome to Contoso Hotel and Resort.");
@@ -413,7 +423,7 @@ dialogs.add(new WaterfallDialog('mainMenu', [
     },
     async function (step) {
         // Handle the user's response to the previous prompt and branch the dialog.
-        if (step.result.value.match(/order dinner/ig)){
+        if (step.result.value.match(/order dinner/ig)) {
             return await step.beginDialog('orderDinner');
         } else if (step.result.value.match(/reserve a table/ig)) {
             return await step.beginDialog('reserveTable');
@@ -539,23 +549,23 @@ In the bot constructor, add the `orderDinner` waterfall dialog.
 // Help user order dinner from a menu
 this.dialogSet.add(new WaterfallDialog('orderDinner', [
     async function (step) {
-    await step.context.sendActivity("Welcome to our dinner order service.");
+        await step.context.sendActivity("Welcome to our dinner order service.");
 
-    return await step.beginDialog('orderPrompt', step.values.orderCart = {
-        orders: [],
-        total: 0
-    }); // Prompt for orders
+        return await step.beginDialog('orderPrompt', step.values.orderCart = {
+            orders: [],
+            total: 0
+        }); // Prompt for orders
     },
     async function (step) {
-    if (step.result == "Cancel") {
+        if (step.result == "Cancel") {
+            return await step.endDialog();
+        } else {
+            return await step.prompt('numberPrompt', "What is your room number?");
+        }
+    },
+    async function (step) {
+        await step.context.sendActivity(`Thank you. Your order will be delivered to room ${step.result} within 45 minutes.`);
         return await step.endDialog();
-    } else {
-        return await step.prompt('numberPrompt', "What is your room number?");
-    }
-    },
-    async function (step) {
-    await step.context.sendActivity(`Thank you. Your order will be delivered to room ${step.result} within 45 minutes.`);
-    return await step.endDialog();
     }
 ]));
 ```
@@ -693,48 +703,48 @@ In the bot constructor, add the `orderPrompt` waterfall dialog.
 // Helper dialog to repeatedly prompt user for orders
 this.dialogSet.add(new WaterfallDialog('orderPrompt', [
     async function (step) {
-    // Define a new cart of one does not exists
-    step.values.orderCart = step.options;
+        // Define a new cart of one does not exists
+        step.values.orderCart = step.options;
 
-    return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
+        return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
     },
     async function (step) {
-    const choice = step.result;
-    if (choice.value.match(/process order/ig)) {
-        if (step.values.orderCart.orders.length > 0) {
-        // Process the order
-        // ...
-        step.values.orderCart = undefined; // Reset cart
-        await step.context.sendActivity("Processing your order.");
-        return await step.endDialog();
+        const choice = step.result;
+        if (choice.value.match(/process order/ig)) {
+            if (step.values.orderCart.orders.length > 0) {
+                // Process the order
+                await step.context.sendActivity("Processing your order.");
+                // ...
+                step.values.orderCart = undefined; // Reset cart
+                return await step.endDialog();
+            } else {
+                await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
+                // Ask again
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
+            }
+        } else if (choice.value.match(/cancel/ig)) {
+            await step.context.sendActivity("Your order has been canceled.");
+            return await step.endDialog(choice.value);
         } else {
-        await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
-        // Ask again
-        return await step.replaceDialog('orderPrompt', step.values.orderCart);
+            var item = dinnerMenu[choice.value];
+
+            // Only proceed if user chooses an item from the menu
+            if (!item) {
+                await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
+
+                // Ask again
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
+            } else {
+                // Add the item to cart
+                step.values.orderCart.orders.push(item);
+                step.values.orderCart.total += item.Price;
+
+                await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${step.values.orderCart.total}`);
+
+                // Ask again
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
+            }
         }
-    } else if (choice.value.match(/cancel/ig)) {
-        await step.context.sendActivity("Your order has been canceled.");
-        return await step.endDialog(choice.value);
-    } else {
-        var item = dinnerMenu[choice.value];
-
-        // Only proceed if user chooses an item from the menu
-        if (!item) {
-        await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
-
-        // Ask again
-        return await step.replaceDialog('orderPrompt', step.values.orderCart);
-        } else {
-        // Add the item to cart
-        step.values.orderCart.orders.push(item);
-        step.values.orderCart.total += item.Price;
-
-        await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${step.values.orderCart.total}`);
-
-        // Ask again
-        return await step.replaceDialog('orderPrompt', step.values.orderCart);
-        }
-    }
     }
 ]));
 ```
@@ -793,7 +803,6 @@ In the bot constructor, add the placeholder `reserveTable` waterfall dialog.
 ```javascript
 // Reserve a table:
 // Help the user to reserve a table
-
 this.dialogSet.add(new WaterfallDialog('reserveTable', [
     // Replace this waterfall with your reservation steps.
     async function(step){
@@ -996,11 +1005,7 @@ async onTurn(turnContext) {
 
 You can enhance this bot by offering other options like "more info" or "help" to the menu choices. For more information on implementing these types of interruptions, see [Handle user interruptions](bot-builder-howto-handle-user-interrupt.md).
 
-<!--TODO: Fix the component dialog topic before adding this back in.
-
 Now that you have learned how to use dialogs, prompts, and waterfalls to manage complex conversation flows, let's take a look at how we can break our dialogs (such as the `orderDinner` and `reserveTable` dialogs) into separate objects, instead of lumping them all together in one large dialog set.
 
 > [!div class="nextstepaction"]
 > [Create modular bot logic with Composite Control](bot-builder-compositcontrol.md)
-
--->
