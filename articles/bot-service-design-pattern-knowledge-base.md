@@ -172,7 +172,7 @@ Some knowledge bots might use QnA Maker to answer basic questions in combination
 2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, then call QnA Maker. Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent." 
 3. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS. 
 
-The Bot Builder SDK provide built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See the [bot service templates](bot-service-concept-templates.md) for more information.
+The Bot Builder SDK provide built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See the [Bot Builder Dispatch Tool Tutorial](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0) for more information.
 
 > [!TIP]
 > When implementing a combination of LUIS, QnA Maker, and/or Azure Search, 
