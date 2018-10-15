@@ -77,7 +77,7 @@ After the code is downloaded, do the following:
 }
 ```
 
-- For node.js bot, dd a .env file with the following entries:
+- For node.js bot, add a .env file with the following entries:
 ```
 botFilePath=yourbasicBot.bot
 botFileSecret=ukxxxxxxxxxxxxs=
