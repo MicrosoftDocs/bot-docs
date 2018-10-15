@@ -363,7 +363,7 @@ public class GreetingsDialog : DialogSet
     /// <summary>The ID of the main dialog.</summary>
     public const string MainDialog = "main";
 
-    /// <summary>The ID of the the text prompt to use in the dialog.</summary>
+    /// <summary>The ID of the text prompt to use in the dialog.</summary>
     private const string TextPrompt = "textPrompt";
 
     /// <summary>Creates a new instance of this dialog set.</summary>

@@ -1,6 +1,6 @@
 ---
 title: Implement channel-specific functionality | Microsoft Docs
-description: Learn how to implement channel-specific functionality using the the Bot Builder SDK for .NET.
+description: Learn how to implement channel-specific functionality using the Bot Builder SDK for .NET.
 keywords: channel specific, email, slack, facebook, telegram, kik, custom channel
 author: RobStand
 ms.author: kamrani
