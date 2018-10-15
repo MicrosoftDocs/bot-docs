@@ -34,7 +34,7 @@ Even after the web browser is closed, the user may continue to interact with the
 
 ## Open source web control
 
-The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> 
+The <a href="https://aka.ms/BotFramework-WebChat" target="_blank">open source web chat control</a> 
 is based upon ReactJS and uses the 
 [Direct Line API][directLineAPI] 
 to communicate with the Bot Framework. The web chat control provides a blank canvas for implementing the web chat, 
@@ -56,7 +56,7 @@ This capability enables a number of useful scenarios:
 
 ## Sample code
 
-The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> is available via GitHub. For details about how you can implement the backchannel mechanism using the open source web chat control and the Bot Builder SDK for Node.js, see [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md).
+The <a href="https://aka.ms/BotFramework-WebChat" target="_blank">open source web chat control</a> is available via GitHub. For details about how you can implement the backchannel mechanism using the open source web chat control and the Bot Builder SDK for Node.js, see [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md).
 
 ## Additional resources
 

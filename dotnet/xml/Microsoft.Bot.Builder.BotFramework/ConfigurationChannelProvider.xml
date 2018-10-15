@@ -1,0 +1,92 @@
+﻿<Type Name="ConfigurationChannelProvider" FullName="Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider">
+  <TypeSignature Language="C#" Value="public sealed class ConfigurationChannelProvider : Microsoft.Bot.Connector.Authentication.SimpleChannelProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationChannelProvider extends Microsoft.Bot.Connector.Authentication.SimpleChannelProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationChannelProvider&#xA;Inherits SimpleChannelProvider" />
+  <TypeSignature Language="F#" Value="type ConfigurationChannelProvider = class&#xA;    inherit SimpleChannelProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Connector.Authentication.SimpleChannelProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Channel provider which uses <see cref="P:System.Configuration.ConfigurationManager.AppSettings" /> to lookup the channel service property.
+             </summary>
+    <remarks>
+             This will populate the <see cref="P:Microsoft.Bot.Connector.Authentication.SimpleChannelProvider.ChannelService" /> from a configuration entry with the key of <see cref="F:Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider.ChannelServiceKey" />.
+            
+             NOTE: if the keys are not present, a <c>null</c> value will be used.
+             </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationChannelProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationChannelProvider (Microsoft.Extensions.Configuration.IConfiguration configuration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider.#ctor(Microsoft.Extensions.Configuration.IConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider : Microsoft.Extensions.Configuration.IConfiguration -&gt; Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider" Usage="new Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider configuration" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="configuration">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelServiceKey">
+      <MemberSignature Language="C#" Value="public const string ChannelServiceKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChannelServiceKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider.ChannelServiceKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChannelServiceKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ChannelServiceKey : string" Usage="Microsoft.Bot.Builder.BotFramework.ConfigurationChannelProvider.ChannelServiceKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for ChannelService.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

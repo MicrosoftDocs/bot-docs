@@ -52,7 +52,7 @@ var reply = MessageFactory.Text(
     "This is the text that will be displayed.",
     "This is the text that will be spoken.",
     InputHints.AcceptingInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -75,7 +75,7 @@ var reply = MessageFactory.Text(
     "This is the text that will be displayed.",
     "This is the text that will be spoken.",
     InputHints.ExpectingInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -98,7 +98,7 @@ var reply = MessageFactory.Text(
     "This is the text that will be displayed.",
     "This is the text that will be spoken.",
     InputHints.IgnoringInput);
-await context.SendActivity(reply).ConfigureAwait(false);
+await context.SendActivityAsync(reply).ConfigureAwait(false);
 ```
 
 # [JavaScript](#tab/js)
@@ -117,3 +117,4 @@ If you do not set the input hint for a message, the Bot Builder SDK will automat
 - If your bot sends a prompt, the input hint for the message will specify that your bot is **expecting input**.</li>
 - If your bot sends a single message, the input hint for the message will specify that your bot is **accepting input**.</li>
 - If your bot sends a series of consecutive messages, the input hint for all but the final message in the series will specify that your bot is **ignoring input**, and the input hint for the final message in the series will specify that your bot is **accepting input**.
+

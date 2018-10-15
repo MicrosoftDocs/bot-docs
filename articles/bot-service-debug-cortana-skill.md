@@ -7,9 +7,12 @@ manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
 ms.date: 05/01/18
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Test a Cortana skill
+
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
  
 If you've built a Cortana skill using the Bot Builder SDK, you can test it by invoking it from Cortana. The following instructions walk you through the steps required to try out your Cortana skill.
 
@@ -78,7 +81,6 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 
 ## Additional resources
 * [The Cortana Skills Kit][CortanaGetStarted]
-* [Preview features with the Channel Inspector](bot-service-channel-inspector.md)
 
 [CortanaGetStarted]: /cortana/getstarted
 

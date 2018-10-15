@@ -1,0 +1,161 @@
+﻿<Type Name="Channel" FullName="Microsoft.Bot.Builder.Dialogs.Choices.Channel">
+  <TypeSignature Language="C#" Value="public class Channel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Channel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.Channel" />
+  <TypeSignature Language="VB.NET" Value="Public Class Channel" />
+  <TypeSignature Language="F#" Value="type Channel = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Channel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Channel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChannelId">
+      <MemberSignature Language="C#" Value="public static string GetChannelId (Microsoft.Bot.Builder.ITurnContext turnContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetChannelId(class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Channel.GetChannelId(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetChannelId (turnContext As ITurnContext) As String" />
+      <MemberSignature Language="F#" Value="static member GetChannelId : Microsoft.Bot.Builder.ITurnContext -&gt; string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.GetChannelId turnContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMessageFeed">
+      <MemberSignature Language="C#" Value="public static bool HasMessageFeed (string channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasMessageFeed(string channelId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Channel.HasMessageFeed(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasMessageFeed (channelId As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasMessageFeed : string -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.HasMessageFeed channelId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxActionTitleLength">
+      <MemberSignature Language="C#" Value="public static int MaxActionTitleLength (string channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MaxActionTitleLength(string channelId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Channel.MaxActionTitleLength(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MaxActionTitleLength (channelId As String) As Integer" />
+      <MemberSignature Language="F#" Value="static member MaxActionTitleLength : string -&gt; int" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.MaxActionTitleLength channelId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsCardActions">
+      <MemberSignature Language="C#" Value="public static bool SupportsCardActions (string channelId, int buttonCnt = 100);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SupportsCardActions(string channelId, int32 buttonCnt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Channel.SupportsCardActions(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SupportsCardActions (channelId As String, Optional buttonCnt As Integer = 100) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SupportsCardActions : string * int -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.SupportsCardActions (channelId, buttonCnt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="buttonCnt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <param name="buttonCnt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsSuggestedActions">
+      <MemberSignature Language="C#" Value="public static bool SupportsSuggestedActions (string channelId, int buttonCnt = 100);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SupportsSuggestedActions(string channelId, int32 buttonCnt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Channel.SupportsSuggestedActions(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SupportsSuggestedActions (channelId As String, Optional buttonCnt As Integer = 100) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SupportsSuggestedActions : string * int -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.SupportsSuggestedActions (channelId, buttonCnt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="buttonCnt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <param name="buttonCnt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

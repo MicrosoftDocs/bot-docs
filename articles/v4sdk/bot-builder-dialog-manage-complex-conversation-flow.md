@@ -7,7 +7,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 7/27/2018
+ms.date: 10/03/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,15 +15,17 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 
-You can manage both simple and complex conversation flows using the dialogs library. In [simple conversation flows](bot-builder-dialog-manage-conversation-flow.md), the user starts from the first step of a *waterfall*, continues through to the last step, and the conversational exchange finishes. In this article we will use dialogs to manage more complex conversations with portions that can branch and loop. To do so, we'll use the dialog context's _replace_ method, as well as passing arguments between different parts of the dialog.
+In the last article, we demonstrated using the dialogs library to manage simple conversations. In [simple conversation flows](bot-builder-dialog-manage-conversation-flow.md), the user starts from the first step of a *waterfall*, continues through to the last step, and the conversational exchange finishes. In this article we will use dialogs to manage more complex conversations with portions that can branch and loop. To do so, we'll use various methods defined on the dialog context and waterfall step context, and we'll pass arguments between different parts of the dialog.
 
-<!-- TODO: We need a dialogs conceptual topic to link to, so we can reference that here, in place of describing what they are and what their features are in a how-to topic. -->
+See [Dialogs library](bot-builder-concept-dialog.md) for more background information about dialogs.
 
-To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace_ method. This method allows you to pop the current dialog off the stack, push a new dialog onto the top of the stack, and start the new dialog. This feature allows you to provide a more complex conversation. These techniques can be used to create arbitrarily complex conversations. Should your conversation complexity increase to where dialogs become difficult to manage, it is possible to create your own flow of control logic to keep track of your user's conversation.
+To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate using [component dialogs](bot-builder-compositcontrol.md) or building a custom dialog management class based on the base `Dialog` class.
 
-<!-- TODO: This is probably a good place to add a link to the modular/composite dialogs topic. -->
+In this article we'll create sample dialogs for a hotel concierge bot that a guest could use to access common services: reserving a table at the hotel restaurant, and ordering a meal from room service.  Each one of these features, along with a menu connecting them together, will be created as dialogs in a dialog set.
 
-In this article we'll create the dialogs for a hotel bot that a guest could use to reserve a table or order a meal to be delivered to their room. The top-level dialog provides the guest with these two options. If they want to reserve a table the top-level dialog starts a table reservation dialog. If the guest wants to order dinner, the top-level dialog starts a dinner ordering dialog. The dinner ordering dialog first asks the guest to select food items off a menu and then asks for their room number. The selection of food items is also a dialog, so that we can allow the guest to select multiple items before processing their dinner order.
+The bot's top-level dialog provides the guest with these two options. If the the guest wants to reserve a table, the top-level dialog uses the _begin dialog_ async method to start the table reservation dialog. If the guest wants to order room service, the top-level dialog instead starts the dinner ordering dialog.
+
+The dinner ordering dialog first asks the guest to select food items off a menu, and then asks for their room number. The selection of food items is _also_ a dialog - it is called into play multiple times as a guest selects items from the menu before submitting the dinner order.
 
 This diagram illustrates the dialogs we'll be creating in this article and their relationship to each other.
 
@@ -31,15 +33,15 @@ This diagram illustrates the dialogs we'll be creating in this article and their
 
 ## How to branch
 
-The dialog context maintains a _dialog stack_ and for each dialog on the stack, tracks which step is next. Its _begin_ method pushes a dialog onto the top of the stack, and its _end_ method pops the top dialog off the stack.
+The dialog context maintains a _dialog stack_ and for each dialog on the stack, tracks which step is next. Its _begin dialog_ method pushes a dialog onto the top of the stack, and its _end dialog_ method pops the top dialog off the stack.
 
-A dialog can start a new dialog (aka: branching) within the same dialog set by calling the dialog context's _begin_ method and providing the ID of the new dialog. The original dialog is still on the stack, but calls to the dialog context's _continue_ method are only sent to the dialog that is on top of the stack, the _active dialog_. When a dialog is popped off the stack, the dialog context will resume with the next step of the waterfall on the stack where it left off.
-
-Thus, you can create a branch within your conversation flow by including a step in one dialog that can conditionally choose a dialog to start out of a set of potential dialogs.
+To branch, choose one from a set of child dialogs to start. For more information about this concept, see [branch a conversation](bot-builder-concept-dialog.md#branch-a-conversation).
 
 ## How to loop
 
-The dialog context's _replace_ method allows you to replace the dialog that is on top of the stack. The state of the old dialog is discarded and the new dialog starts from the beginning. You can use this method to create a loop by replacing a dialog with itself. However, to [persist state](bot-builder-howto-v4-state.md) you will need to pass information to the new instance of the dialog in the call to the _replace_ method. In the following example, you will see that the dinner order cart is stored on the dialog state and when the `orderPrompt` dialog is repeated, the current dialog state is passed in so that the new dialog's state can continue adding items to it. If you prefer to store these information in the other states, see [Persist user data](bot-builder-tutorial-persist-user-inputs.md).
+The dialog context's _replace dialog_ method allows you to replace the dialog that is on top of the stack. The state of the old dialog is discarded and the new dialog starts from the beginning. You can use this method to create a loop by replacing a dialog with itself. However, to [persist any information the bot has already collected](bot-builder-howto-v4-state.md), you will need to pass that information to the new instance of the dialog in the call to the _replace dialog_ method.
+
+In the following example, you will see that the room service order is stored on the dialog state, and when the `orderPrompt` dialog is repeated, the current dialog state is passed in so that the new dialog's state can continue adding items to it. If you prefer to store this information in a bot state outside of the dialog, see how to [persist user data](bot-builder-tutorial-persist-user-inputs.md).
 
 ## Create the dialogs for the hotel bot
 
@@ -49,7 +51,7 @@ In this section we'll create the dialogs to manage a conversation for the hotel 
 
 # [C#](#tab/csharp)
 
-We'll start from a basic EchoBot template. For instructions, see the [quickstart for .NET](~/dotnet/bot-builder-dotnet-quickstart.md).
+We'll start from a basic EchoBot template. For instructions, see the [quickstart for .NET](../dotnet/bot-builder-dotnet-sdk-quickstart.md).
 
 To use dialogs, install the `Microsoft.Bot.Builder.Dialogs` NuGet package for your project or solution.
 Then reference the dialogs library in using statements in your code files as necessary.
@@ -60,16 +62,26 @@ using Microsoft.Bot.Builder.Dialogs;
 
 # [JavaScript](#tab/javascript)
 
-The `botbuilder-dialogs` library can be downloaded from NPM. To install the `botbuilder-dialogs` library, run the following NPM command:
+We'll start from a EchoBot template. For instructions, see the [quickstart for JavaScript](../javascript/bot-builder-javascript-quickstart.md).
+
+
+
+The `botbuilder-dialogs` library can be downloaded from npm. To install the `botbuilder-dialogs` library, run the following npm command:
 
 ```cmd
 npm install --save botbuilder-dialogs
 ```
 
-To use **dialogs** in your bot, include it in the bot code. For example, add this to your **app.js** file:
+To use **dialogs** in your bot, include it in the bot code. For example, add this to your **index.js** file:
 
 ```javascript
-const botbuilder_dialogs = require('botbuilder-dialogs');
+const { DialogSet } = require('botbuilder-dialogs');
+```
+
+And this to your **bot.js** file:
+
+```javascript
+const { DialogSet, NumberPrompt, ChoicePrompt, WaterfallDialog } = require('botbuilder-dialogs');
 ```
 
 ---
@@ -80,27 +92,33 @@ Create a _dialog set_ to which we'll add all of the dialogs for this example.
 
 # [C#](#tab/csharp)
 
-Create a **HotelDialog** class, and add the using statements we'll need.
+Create a **HotelDialogs** class, and add the using statements we'll need.
 
 ```csharp
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Bot.Builder.Prompts.Choices;
-using Microsoft.Bot.Schema;
-using Microsoft.Recognizers.Text;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.Dialogs.Choices;
+using Microsoft.Bot.Schema;
 ```
 
-Derive the class from **DialogSet**, and define the IDs and keys we'll use to identify the dialogs, prompts, and state information for this dialog set.
+Derive the class from **DialogSet**. Include a constructor that takes an `IStatePropertyAccessor<DialogState>` parameter to use to manage the internal state of an instance of the dialog set. Also, define the IDs and keys we'll use to identify the dialogs, prompts, and state information for this dialog set.
 
 ```csharp
 /// <summary>Contains the set of dialogs and prompts for the hotel bot.</summary>
-public class HotelDialog : DialogSet
+public class HotelDialogs : DialogSet
 {
     /// <summary>The ID of the top-level dialog.</summary>
     public const string MainMenu = "mainMenu";
+
+    public HotelDialogs(IStatePropertyAccessor<DialogState> dialogStateAccessor)
+        : base(dialogStateAccessor)
+    {
+    }
 
     /// <summary>Contains the IDs for the other dialogs in the set.</summary>
     private static class Dialogs
@@ -129,18 +147,30 @@ public class HotelDialog : DialogSet
 
 # [JavaScript](#tab/javascript)
 
-To use **dialogs** in your bot, include it in the bot code.
-
-Reference the library from your **app.js** file.
+In the **index.js** file, add code to create a state property accessor for managing dialog state, and use that to create the dialog set we'll use for the bot.
 
 ```javascript
-const botbuilder_dialogs = require('botbuilder-dialogs');
+// Create conversation state with in-memory storage provider.
+const conversationState = new ConversationState(memoryStorage);
+const dialogStateAccessor = conversationState.createProperty('dialogState');
+
+// Create a dialog set for the bot.
+const dialogSet = new DialogSet(dialogStateAccessor);
+
+// Create the bot.
+const bot = new MyBot(conversationState, dialogSet)
 ```
 
-And then create the dialog set.
+Then update the activity processing call to use the bot object.
 
 ```javascript
-const dialogs = new botbuilder_dialogs.DialogSet();
+// Listen for incoming requests.
+server.post('/api/messages', (req, res) => {
+    adapter.processActivity(req, res, async (context) => {
+        // Route to the bot's turn handler.
+        await bot.onTurn(context);
+    });
+});
 ```
 
 ---
@@ -151,21 +181,29 @@ We'll use a **ChoicePrompt** to ask guests whether to order dinner or to reserve
 
 # [C#](#tab/csharp)
 
-In the **HotelDialog** constructor, add the two prompts.
+In the **HotelDialogs** constructor, add the two prompts.
 
 ```csharp
 // Add the prompts.
-this.Add(Inputs.Choice, new ChoicePrompt(Culture.English));
-this.Add(Inputs.Number, new NumberPrompt<int>(Culture.English));
+Add(new ChoicePrompt(Inputs.Choice));
+Add(new NumberPrompt<int>(Inputs.Number));
 ```
 
 # [JavaScript](#tab/javascript)
 
-Add these two prompts to the dialog set.
+Update the bot constructor, and add two prompts to the dialog set.
 
 ```javascript
-dialogs.add('choicePrompt', new botbuilder_dialogs.ChoicePrompt());
-dialogs.add('numberPrompt', new botbuilder_dialogs.NumberPrompt());
+constructor(conversationState, dialogSet) {
+    // Creates a new state accessor property.
+    // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors.
+    this.countProperty = conversationState.createProperty(TURN_COUNTER_PROPERTY);
+    this.conversationState = conversationState;
+    this.dialogSet = dialogSet;
+
+    this.dialogSet.add(new ChoicePrompt('choicePrompt'));
+    this.dialogSet.add(new NumberPrompt('numberPrompt'));
+}
 ```
 
 ---
@@ -184,10 +222,10 @@ While we're at it, we'll add information for the list of options in the top-leve
 /// <summary>Describes an option for the top-level dialog.</summary>
 private class WelcomeChoice
 {
-    /// <summary>The text to show the guest for this option.</summary>
+    /// <summary>Gets or sets the text to show the guest for this option.</summary>
     public string Description { get; set; }
 
-    /// <summary>The ID of the associated dialog for this option.</summary>
+    /// <summary>Gets or sets the ID of the associated dialog for this option.</summary>
     public string DialogName { get; set; }
 }
 
@@ -203,43 +241,45 @@ private class MenuChoice
     /// <summary>The request text for processing the meal order.</summary>
     public const string Process = "Process order";
 
-    /// <summary>The name of the meal item or the request.</summary>
+    /// <summary>Gets or sets the name of the meal item or the request.</summary>
     public string Name { get; set; }
 
-    /// <summary>The price of the meal item; or NaN for a request.</summary>
+    /// <summary>Gets or sets the price of the meal item; or NaN for a request.</summary>
     public double Price { get; set; }
 
-    /// <summary>The text to show the guest for this option.</summary>
-    public string Description => (double.IsNaN(Price)) ? Name : $"{Name} - ${Price:0.00}";
+    /// <summary>Gets the text to show the guest for this option.</summary>
+    public string Description => double.IsNaN(Price) ? Name : $"{Name} - ${Price:0.00}";
 }
+```
 
+```csharp
 /// <summary>Contains the lists used to present options to the guest.</summary>
 private static class Lists
 {
-    /// <summary>The options for the top-level dialog.</summary>
+    /// <summary>Gets the options for the top-level dialog.</summary>
     public static List<WelcomeChoice> WelcomeOptions { get; } = new List<WelcomeChoice>
     {
         new WelcomeChoice { Description = "Order dinner", DialogName = Dialogs.OrderDinner },
         new WelcomeChoice { Description = "Reserve a table", DialogName = Dialogs.ReserveTable },
     };
 
-    private static List<string> WelcomeList { get; } = WelcomeOptions.Select(x => x.Description).ToList();
+    private static readonly List<string> _welcomeList = WelcomeOptions.Select(x => x.Description).ToList();
 
-    /// <summary>The choices to present in the choice prompt for the top-level dialog.</summary>
-    public static List<Choice> WelcomeChoices { get; } = ChoiceFactory.ToChoices(WelcomeList);
+    /// <summary>Gets the choices to present in the choice prompt for the top-level dialog.</summary>
+    public static IList<Choice> WelcomeChoices { get; } = ChoiceFactory.ToChoices(_welcomeList);
 
-    /// <summary>The reprompt action for the top-level dialog.</summary>
+    /// <summary>Gets the reprompt action for the top-level dialog.</summary>
     public static Activity WelcomeReprompt
     {
         get
         {
-            var reprompt = MessageFactory.SuggestedActions(WelcomeList, "Please choose an option");
+            var reprompt = MessageFactory.SuggestedActions(_welcomeList, "Please choose an option");
             reprompt.AttachmentLayout = AttachmentLayoutTypes.List;
             return reprompt as Activity;
         }
     }
 
-    /// <summary>The options for the food-selection dialog.</summary>
+    /// <summary>Gets the options for the food-selection dialog.</summary>
     public static List<MenuChoice> MenuOptions { get; } = new List<MenuChoice>
     {
         new MenuChoice { Name = "Potato Salad", Price = 5.99 },
@@ -249,17 +289,17 @@ private static class Lists
         new MenuChoice { Name = MenuChoice.Cancel, Price = double.NaN },
     };
 
-    private static List<string> MenuList { get; } = MenuOptions.Select(x => x.Description).ToList();
+    private static readonly List<string> _menuList = MenuOptions.Select(x => x.Description).ToList();
 
-    /// <summary>The choices to present in the choice prompt for the food-selection dialog.</summary>
-    public static List<Choice> MenuChoices { get; } = ChoiceFactory.ToChoices(MenuList);
+    /// <summary>Gets the choices to present in the choice prompt for the food-selection dialog.</summary>
+    public static IList<Choice> MenuChoices { get; } = ChoiceFactory.ToChoices(_menuList);
 
-    /// <summary>The reprompt action for the food-selection dialog.</summary>
+    /// <summary>Gets the reprompt action for the food-selection dialog.</summary>
     public static Activity MenuReprompt
     {
         get
         {
-            var reprompt = MessageFactory.SuggestedActions(MenuList, "Please choose an option");
+            var reprompt = MessageFactory.SuggestedActions(_menuList, "Please choose an option");
             reprompt.AttachmentLayout = AttachmentLayoutTypes.List;
             return reprompt as Activity;
         }
@@ -269,11 +309,11 @@ private static class Lists
 
 # [JavaScript](#tab/javascript)
 
-Create a **dinnerMenu** constant to contain this information.
+In the **bot.js** file, create a **dinnerMenu** constant to contain this information.
 
 ```javascript
 const dinnerMenu = {
-    choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50", 
+    choices: ["Potato Salad - $5.99", "Tuna Sandwich - $6.89", "Clam Chowder - $4.50",
         "Process order", "Cancel"],
     "Potato Salad - $5.99": {
         Description: "Potato Salad",
@@ -294,160 +334,240 @@ const dinnerMenu = {
 
 ### Create the welcome dialog
 
-This dialog uses a `ChoicePrompt` to display the menu and waits for the user to choose an option. When the user chooses either `Order dinner` or `Reserve a table`, it starts the dialog for the appropriate choice and when that dialog is done, instead of just ending the dialog in the last step and leaving the user wondering what's happening, this `mainMenu` dialog repeats itself by starting the `mainMenu` dialog again. With this simple structure, the bot will always show the menu and the user will always know what their choices are.
+This dialog uses a `ChoicePrompt` to display the menu and then wait for the user to choose an option. When the user chooses either `Order dinner` or `Reserve a table`, it starts the appropriate dialog. When the child dialog is done, instead of just ending the dialog in the last step and leaving the user wondering what's happening, the `mainMenu` dialog loops by starting the `mainMenu` dialog again. With this simple structure, the bot will always show the menu and the user will always know what their choices are.
 
-The **MainMenu** dialog contains these waterfall steps.
+The `mainMenu` dialog contains these waterfall steps:
 
 * In the first step of the waterfall, we initialize or clear the dialog state, greet the guest, and ask them to choose from the available options: `Order dinner` or `Reserve a table`.
-* In the second step, we're retrieving their selection and then starting the child dialog that is associated with that selection. Once the child dialog ends, this dialog will resume with the following step.
-* In the last step, we use the **DialogContext.Replace** method to replace this dialog with a new instance of itself, which effectively turns the welcome dialog into a looping menu.
+* In the second step, we retrieve their selection and then start the child dialog that is associated with that selection. Once the child dialog ends, this dialog will resume with the following step.
+* In the last step, we use the _replace dialog_ method to replace this dialog with a new instance of itself, which effectively turns the welcome dialog into a looping menu.
 
 # [C#](#tab/csharp)
 
+Within the constructor, add the waterfall dialog. Then define the waterfall steps. Here, we've defined them in a nested class.
+
+Within the **HotelDialogs** constructor.
+
 ```csharp
-// Add the main welcome dialog.
-this.Add(MainMenu, new WaterfallStep[]
+// Define the steps for and add the main welcome dialog.
+WaterfallStep[] welcomeDialogSteps = new WaterfallStep[]
 {
-    async (dc, args, next) =>
+    MainDialogSteps.PresentMenuAsync,
+    MainDialogSteps.ProcessInputAsync,
+    MainDialogSteps.RepeatMenuAsync,
+};
+
+Add(new WaterfallDialog(MainMenu, welcomeDialogSteps));
+```
+
+Within the **HotelDialogs** class, add the step definitions.
+
+```csharp
+/// <summary>
+/// Contains the waterfall dialog steps for the order-dinner dialog.
+/// </summary>
+private static class MainDialogSteps
+{
+    public static async Task<DialogTurnResult> PresentMenuAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
         // Greet the guest and ask them to choose an option.
-        await dc.Context.SendActivity("Welcome to Contoso Hotel and Resort.");
-        await dc.Prompt(Inputs.Choice, "How may we serve you today?", new ChoicePromptOptions
-        {
-            Choices = Lists.WelcomeChoices,
-            RetryPromptActivity = Lists.WelcomeReprompt,
-        });
-    },
-    async (dc, args, next) =>
+        await stepContext.Context.SendActivityAsync(
+            "Welcome to Contoso Hotel and Resort.",
+            cancellationToken: cancellationToken);
+        return await stepContext.PromptAsync(
+            Inputs.Choice,
+            new PromptOptions
+            {
+                Prompt = MessageFactory.Text("How may we serve you today?"),
+                RetryPrompt = Lists.WelcomeReprompt,
+                Choices = Lists.WelcomeChoices,
+            },
+            cancellationToken);
+    }
+
+    public static async Task<DialogTurnResult> ProcessInputAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
         // Begin a child dialog associated with the chosen option.
-        var choice = (FoundChoice)args["Value"];
+        var choice = (FoundChoice)stepContext.Result;
         var dialogId = Lists.WelcomeOptions[choice.Index].DialogName;
 
-        await dc.Begin(dialogId, dc.ActiveDialog.State);
-    },
-    async (dc, args, next) =>
+        return await stepContext.BeginDialogAsync(dialogId, null, cancellationToken);
+    }
+
+    public static async Task<DialogTurnResult> RepeatMenuAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
         // Start this dialog over again.
-        await dc.Replace(MainMenu);
-    },
-});
+        return await stepContext.ReplaceDialogAsync(MainMenu, null, cancellationToken);
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the `mainMenu` waterfall dialog.
+
 ```javascript
 // Display a menu and ask user to choose a menu item. Direct user to the item selected otherwise, show
 // the menu again.
-dialogs.add('mainMenu', [
-    async function(dc){
-        await dc.context.sendActivity("Welcome to Contoso Hotel and Resort.");
-        await dc.prompt('choicePrompt', "How may we serve you today?", ['Order Dinner', 'Reserve a table']);
+this.dialogSet.add(new WaterfallDialog('mainMenu', [
+    async function (step) {
+        // Welcome the user and send a prompt.
+        await step.context.sendActivity("Welcome to Contoso Hotel and Resort.");
+        return await step.prompt('choicePrompt', "How may we serve you today?", ['Order Dinner', 'Reserve a table']);
     },
-    async function(dc, result){
-        if(result.value.match(/order dinner/ig)){
-            await dc.begin('orderDinner');
-        }
-        else if(result.value.match(/reserve a table/ig)){
-            await dc.begin('reserveTable');
+    async function (step) {
+        // Handle the user's response to the previous prompt and branch the dialog.
+        if (step.result.value.match(/order dinner/ig)) {
+            return await step.beginDialog('orderDinner');
+        } else if (step.result.value.match(/reserve a table/ig)) {
+            return await step.beginDialog('reserveTable');
         }
     },
-    async function(dc, result){
-        // Start over
-        await dc.endAll().begin('mainMenu');
+    async function (step) {
+        // Calling replaceDialog will loop the main menu
+        return await step.replaceDialog('mainMenu');
     }
-]);
+]));
 ```
 
 ---
 
 ### Create the order dinner dialog
 
-In the order-dinner dialog, we'll welcome the guest to the "dinner order service" and immediately start the food-selection dialog, which we'll cover in the next section. Importantly, if the guest asks the service to process their order, the food-selection dialog returns the list of items on the order. To complete the whole process, this dialog then asks for a room number to which to deliver the food, and then sends a confirmation message before ending. If the guest cancels their order, this dialog doesn't ask for a room number and ends immediately.
+In the order-dinner dialog, we'll welcome the guest to the "dinner order service" and immediately start the food-selection dialog, which we'll cover in the next section. Importantly, if the guest asks the service to process their order, the food-selection dialog returns the list of items on the order. To complete the process, this dialog then asks for a room number to which to deliver the food, and then sends a confirmation message. If the guest cancels their order, this dialog doesn't ask for a room number and ends immediately.
 
 # [C#](#tab/csharp)
 
-To the **HotelDialog** class, add a data structure we can use to track the guest's dinner order.
+To the **HotelDialog** class, add a data structure we can use to track the guest's dinner order. Since this will be persisted in the dialog state, the class needs the default constructor for serialization.
 
 ```csharp
 /// <summary>Contains the guest's dinner order.</summary>
-private class OrderCart : List<MenuChoice> { }
+private class OrderCart : List<MenuChoice>
+{
+    public OrderCart() : base() { }
+
+    public OrderCart(OrderCart other) : base(other) { }
+}
 ```
 
-In the **HotelDialog** constructor, add the order-dinner dialog.
+Within the constructor, add the waterfall dialog. Then define the waterfall steps. Here, we've defined them in a nested class.
+
+Within the **HotelDialogs** constructor.
+
+```csharp
+// Define the steps for and add the order-dinner dialog.
+WaterfallStep[] orderDinnerDialogSteps = new WaterfallStep[]
+{
+    OrderDinnerSteps.StartFoodSelectionAsync,
+    OrderDinnerSteps.GetRoomNumberAsync,
+    OrderDinnerSteps.ProcessOrderAsync,
+};
+
+Add(new WaterfallDialog(Dialogs.OrderDinner, orderDinnerDialogSteps));
+```
+
+Within the **HotelDialogs** class, add the step definitions.
 
 * In the first step, we send a welcome message and start the food-selection dialog.
 * In the second step, we check whether the food-selection dialog returned an order cart.
   * If so, prompt them for their room number and save the cart information.
-  * If not, assume they cancelled their order, and call **DialogContext.End** to end this dialog.
+  * If not, assume they cancelled their order, and call the _end dialog_ method to end this dialog.
 * In the last step, record their room number and send them a confirmation message before ending. This is the step in which your bot would forward the order to a processing service.
 
 ```csharp
-// Add the order-dinner dialog.
-this.Add(Dialogs.OrderDinner, new WaterfallStep[]
+/// <summary>
+/// Contains the waterfall dialog steps for the order-dinner dialog.
+/// </summary>
+private static class OrderDinnerSteps
 {
-    async (dc, args, next) =>
+    public static async Task<DialogTurnResult> StartFoodSelectionAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
-        await dc.Context.SendActivity("Welcome to our Dinner order service.");
+        await stepContext.Context.SendActivityAsync(
+            "Welcome to our Dinner order service.",
+            cancellationToken: cancellationToken);
 
         // Start the food selection dialog.
-        await dc.Begin(Dialogs.OrderPrompt);
-    },
-    async (dc, args, next) =>
+        return await stepContext.BeginDialogAsync(Dialogs.OrderPrompt, null, cancellationToken);
+    }
+
+    public static async Task<DialogTurnResult> GetRoomNumberAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
-        if (args.TryGetValue(Outputs.OrderCart, out object arg) && arg is OrderCart cart)
+        if (stepContext.Result != null && stepContext.Result is OrderCart cart)
         {
             // If there are items in the order, record the order and ask for a room number.
-            dc.ActiveDialog.State[Outputs.OrderCart] = cart;
-            await dc.Prompt(Inputs.Number, "What is your room number?", new PromptOptions
-            {
-                RetryPromptString = "Please enter your room number."
-            });
+            stepContext.Values[Outputs.OrderCart] = cart;
+            return await stepContext.PromptAsync(
+                Inputs.Number,
+                new PromptOptions
+                {
+                    Prompt = MessageFactory.Text("What is your room number?"),
+                    RetryPrompt = MessageFactory.Text("Please enter your room number."),
+                },
+                cancellationToken);
         }
         else
         {
             // Otherwise, assume the order was cancelled by the guest and exit.
-            await dc.End();
+            return await stepContext.EndDialogAsync(null, cancellationToken);
         }
-    },
-    async (dc, args, next) =>
+    }
+
+    public static async Task<DialogTurnResult> ProcessOrderAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
         // Get and save the guest's answer.
-        var roomNumber = args["Text"] as string;
-        dc.ActiveDialog.State[Outputs.RoomNumber] = roomNumber;
+        var roomNumber = (int)stepContext.Result;
+        stepContext.Values[Outputs.RoomNumber] = roomNumber;
 
         // Process the dinner order using the collected order cart and room number.
 
-        await dc.Context.SendActivity($"Thank you. Your order will be delivered to room {roomNumber} within 45 minutes.");
-        await dc.End();
-    },
-});
+        await stepContext.Context.SendActivityAsync(
+            $"Thank you. Your order will be delivered to room {roomNumber} within 45 minutes.",
+            cancellationToken: cancellationToken);
+        return await stepContext.EndDialogAsync(null, cancellationToken);
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the `orderDinner` waterfall dialog.
+
 ```javascript
 // Order dinner:
 // Help user order dinner from a menu
-dialogs.add('orderDinner', [
-    async function (dc){
-        await dc.context.sendActivity("Welcome to our Dinner order service.");
-        
-        await dc.begin('orderPrompt', dc.activeDialog.state.orderCart); // Prompt for orders
+this.dialogSet.add(new WaterfallDialog('orderDinner', [
+    async function (step) {
+        await step.context.sendActivity("Welcome to our dinner order service.");
+
+        return await step.beginDialog('orderPrompt', step.values.orderCart = {
+            orders: [],
+            total: 0
+        }); // Prompt for orders
     },
-    async function (dc, result) {
-        if(result == "Cancel"){
-            await dc.end();
-        }
-        else { 
-            await dc.prompt('numberPrompt', "What is your room number?");
+    async function (step) {
+        if (step.result == "Cancel") {
+            return await step.endDialog();
+        } else {
+            return await step.prompt('numberPrompt', "What is your room number?");
         }
     },
-    async function(dc, result){
-        await dc.context.sendActivity(`Thank you. Your order will be delivered to room ${result} within 45 minutes.`);
-        await dc.end();
+    async function (step) {
+        await step.context.sendActivity(`Thank you. Your order will be delivered to room ${step.result} within 45 minutes.`);
+        return await step.endDialog();
     }
-]);
+]));
 ```
 
 ---
@@ -464,7 +584,20 @@ In the food-selection dialog, we'll present the guest with a list of options tha
 
 # [C#](#tab/csharp)
 
-In the **HotelDialog** constructor, add the food-selection dialog.
+Within the constructor, add the waterfall dialog. Then define the waterfall steps. Here, we've defined them in a nested class.
+
+Within the **HotelDialogs** constructor.
+
+```csharp
+// Define the steps for and add the order-prompt dialog.
+WaterfallStep[] orderPromptDialogSteps = new WaterfallStep[]
+{
+    OrderPromptSteps.PromptForItemAsync,
+    OrderPromptSteps.ProcessInputAsync,
+};
+
+Add(new WaterfallDialog(Dialogs.OrderPrompt, orderPromptDialogSteps));
+```
 
 * In the first step, we initialize the dialog state. If the input arguments to the dialog contain cart information, we save that to our dialog state; otherwise, we create an empty cart and add that. We then prompt the guest for a choice from the dinner menu.
 * In the next step, we look at the option the guest picked:
@@ -474,156 +607,152 @@ In the **HotelDialog** constructor, add the food-selection dialog.
   * If it is a request to cancel the order, end the dialog, returning an empty dictionary.
   * If it is a dinner item, add it to the cart, send a status message, and start the dialog over, passing in the current order state.
 
+Within the **HotelDialogs** class, add the step definitions.
+
 ```csharp
-// Add the food-selection dialog.
-this.Add(Dialogs.OrderPrompt, new WaterfallStep[]
+/// <summary>
+/// Contains the waterfall dialog steps for the order-prompt dialog.
+/// </summary>
+private static class OrderPromptSteps
+{
+    public static async Task<DialogTurnResult> PromptForItemAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
-        async (dc, args, next) =>
-        {
-            if (args is null || !args.ContainsKey(Outputs.OrderCart))
-            {
-                // First time through, initialize the order state.
-                dc.ActiveDialog.State[Outputs.OrderCart] = new OrderCart();
-                dc.ActiveDialog.State[Outputs.OrderTotal] = 0.0;
-            }
-            else
-            {
-                // Otherwise, set the order state to that of the arguments.
-                dc.ActiveDialog.State = new Dictionary<string, object>(args);
-            }
+        // First time through, options will be null.
+        var cart = (stepContext.Options is OrderCart oldCart && oldCart != null)
+            ? new OrderCart(oldCart) : new OrderCart();
 
-            await dc.Prompt(Inputs.Choice, "What would you like?", new ChoicePromptOptions
+        stepContext.Values[Outputs.OrderCart] = cart;
+        stepContext.Values[Outputs.OrderTotal] = cart.Sum(item => item.Price);
+
+        return await stepContext.PromptAsync(
+            Inputs.Choice,
+            new PromptOptions
             {
+                Prompt = MessageFactory.Text("What would you like?"),
+                RetryPrompt = Lists.MenuReprompt,
                 Choices = Lists.MenuChoices,
-                RetryPromptActivity = Lists.MenuReprompt,
-            });
-        },
-        async (dc, args, next) =>
+            },
+            cancellationToken);
+    }
+
+    public static async Task<DialogTurnResult> ProcessInputAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
+    {
+        // Get the guest's choice.
+        var choice = (FoundChoice)stepContext.Result;
+        var menuOption = Lists.MenuOptions[choice.Index];
+
+        // Get the current order from dialog state.
+        var cart = (OrderCart)stepContext.Values[Outputs.OrderCart];
+
+        if (menuOption.Name is MenuChoice.Process)
         {
-            // Get the guest's choice.
-            var choice = (FoundChoice)args["Value"];
-            var option = Lists.MenuOptions[choice.Index];
-
-            // Get the current order from dialog state.
-            var cart = (OrderCart)dc.ActiveDialog.State[Outputs.OrderCart];
-
-            if (option.Name is MenuChoice.Process)
+            if (cart.Count > 0)
             {
-                if (cart.Count > 0)
-                {
-                    // If there are any items in the order, then exit this dialog,
-                    // and return the list of selected food items.
-                    await dc.End(new Dictionary<string, object>
-                    {
-                        [Outputs.OrderCart] = cart
-                    });
-                }
-                else
-                {
-                    // Otherwise, send an error message and restart from
-                    // the beginning of this dialog.
-                    await dc.Context.SendActivity(
-                        "Your cart is empty. Please add at least one item to the cart.");
-                    await dc.Replace(Dialogs.OrderPrompt);
-                }
-            }
-            else if (option.Name is MenuChoice.Cancel)
-            {
-                await dc.Context.SendActivity("Your order has been cancelled.");
-
-                // Exit this dialog, returning an empty property bag.
-                dc.ActiveDialog.State.Clear();
-                await dc.End(new Dictionary<string, object>());
+                // If there are any items in the order, then exit this dialog,
+                // and return the list of selected food items.
+                return await stepContext.EndDialogAsync(cart, cancellationToken);
             }
             else
             {
-                // Add the selected food item to the order and update the order total.
-                cart.Add(option);
-                var total = (double)dc.ActiveDialog.State[Outputs.OrderTotal] + option.Price;
-                dc.ActiveDialog.State[Outputs.OrderTotal] = total;
-
-                await dc.Context.SendActivity($"Added {option.Name} (${option.Price:0.00}) to your order." +
-                    Environment.NewLine + Environment.NewLine +
-                    $"Your current total is ${total:0.00}.");
-
-                // Present the order options again, passing in the current order state.
-                await dc.Replace(Dialogs.OrderPrompt, dc.ActiveDialog.State);
+                // Otherwise, send an error message and restart from
+                // the beginning of this dialog.
+                await stepContext.Context.SendActivityAsync(
+                    "Your cart is empty. Please add at least one item to the cart.",
+                    cancellationToken: cancellationToken);
+                return await stepContext.ReplaceDialogAsync(Dialogs.OrderPrompt, null, cancellationToken);
             }
-        },
-    });
+        }
+        else if (menuOption.Name is MenuChoice.Cancel)
+        {
+            await stepContext.Context.SendActivityAsync(
+                "Your order has been cancelled.",
+                cancellationToken: cancellationToken);
+
+            // Exit this dialog, returning null.
+            return await stepContext.EndDialogAsync(null, cancellationToken);
+        }
+        else
+        {
+            // Add the selected food item to the order and update the order total.
+            cart.Add(menuOption);
+            var total = (double)stepContext.Values[Outputs.OrderTotal] + menuOption.Price;
+            stepContext.Values[Outputs.OrderTotal] = total;
+
+            await stepContext.Context.SendActivityAsync(
+                $"Added {menuOption.Name} (${menuOption.Price:0.00}) to your order." +
+                    Environment.NewLine + Environment.NewLine +
+                    $"Your current total is ${total:0.00}.",
+                cancellationToken: cancellationToken);
+
+            // Present the order options again, passing in the current order state.
+            return await stepContext.ReplaceDialogAsync(Dialogs.OrderPrompt, cart);
+        }
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the `orderPrompt` waterfall dialog.
+
 ```javascript
 // Helper dialog to repeatedly prompt user for orders
-dialogs.add('orderPrompt', [
-    async function(dc, orderCart){
+this.dialogSet.add(new WaterfallDialog('orderPrompt', [
+    async function (step) {
         // Define a new cart of one does not exists
-        if(!orderCart){
-            // Initialize a new cart
-            // convoState = conversationState.get(dc.context);
-            dc.activeDialog.state.orderCart = {
-                orders: [],
-                total: 0
-            };
-        }
-        else {
-            dc.activeDialog.state.orderCart = orderCart;
-        }
-        await dc.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
-    },
-    async function(dc, choice){
-        // Get state object
-        // convoState = conversationState.get(dc.context);
+        step.values.orderCart = step.options;
 
-        if(choice.value.match(/process order/ig)){
-            if(dc.activeDialog.state.orderCart.orders.length > 0) {
+        return await step.prompt('choicePrompt', "What would you like?", dinnerMenu.choices);
+    },
+    async function (step) {
+        const choice = step.result;
+        if (choice.value.match(/process order/ig)) {
+            if (step.values.orderCart.orders.length > 0) {
                 // Process the order
+                await step.context.sendActivity("Processing your order.");
                 // ...
-                dc.activeDialog.state.orderCart = undefined; // Reset cart
-                await dc.context.sendActivity("Processing your order.");
-                await dc.end();
-            }
-            else {
-                await dc.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
+                step.values.orderCart = undefined; // Reset cart
+                return await step.endDialog();
+            } else {
+                await step.context.sendActivity("Your cart was empty. Please add at least one item to the cart.");
                 // Ask again
-                await dc.replace('orderPrompt');
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
             }
-        }
-        else if(choice.value.match(/cancel/ig)){
-            //dc.activeDialog.state.orderCart = undefined; // Reset cart
-            await dc.context.sendActivity("Your order has been canceled.");
-            await dc.end(choice.value);
-        }
-        else {
+        } else if (choice.value.match(/cancel/ig)) {
+            await step.context.sendActivity("Your order has been canceled.");
+            return await step.endDialog(choice.value);
+        } else {
             var item = dinnerMenu[choice.value];
 
             // Only proceed if user chooses an item from the menu
-            if(!item){
-                await dc.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
-                
+            if (!item) {
+                await step.context.sendActivity("Sorry, that is not a valid item. Please pick one from the menu.");
+
                 // Ask again
-                await dc.replace('orderPrompt');
-            }
-            else {
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
+            } else {
                 // Add the item to cart
-                dc.activeDialog.state.orderCart.orders.push(item);
-                dc.activeDialog.state.orderCart.total += item.Price;
+                step.values.orderCart.orders.push(item);
+                step.values.orderCart.total += item.Price;
 
-                await dc.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${dc.activeDialog.state.orderCart.total}`);
+                await step.context.sendActivity(`Added to cart: ${choice.value}. <br/>Current total: $${step.values.orderCart.total}`);
 
                 // Ask again
-                await dc.replace('orderPrompt', dc.activeDialog.state.orderCart);
+                return await step.replaceDialog('orderPrompt', step.values.orderCart);
             }
         }
     }
-]);
+]));
 ```
 
 The sample code above shows that the main `orderDinner` dialog uses a helper dialog named `orderPrompt` to handle user choices. The `orderPrompt` dialog displays the menu of food items, asks the user to choose an item, add the item to cart and prompts again in a loop. This allows the user to add multiple items to their order. The dialog loops until the user chooses `Process order` or `Cancel`. At which point, execution is handed back to the parent dialog (the `orderDinner` dialog). The `orderDinner` dialog does some last minute house keeping if the user wants to process the order; otherwise, it ends and returns execution back to its parent dialog (e.g.: `mainMenu`). The `mainMenu` dialog in turn continues executing the last step which is to simply redisplay the main menu choices.
 
 ---
+
 ### Create the reserve table dialog
 
 <!-- TODO: Update the "Manage simple conversation flows" topic to use a reserveTable dialog, and then reference that from here. -->
@@ -632,32 +761,242 @@ To keep this example shorter, we show only a minimal implementation of the `rese
 
 # [C#](#tab/csharp)
 
+Within the constructor, add the waterfall dialog. Then define the waterfall steps. Here, we've defined them in a nested class.
+
+Within the **HotelDialogs** constructor.
+
 ```csharp
-// Add the table-reservation dialog.
-this.Add(Dialogs.ReserveTable, new WaterfallStep[]
+// Define the steps for and add the reserve-table dialog.
+WaterfallStep[] reserveTableDialogSteps = new WaterfallStep[]
+{
+    ReserveTableSteps.StubAsync,
+};
+
+Add(new WaterfallDialog(Dialogs.ReserveTable, reserveTableDialogSteps));
+```
+
+Within the **HotelDialogs** class, add the step definitions.
+
+```csharp
+/// <summary>
+/// Contains the waterfall dialog steps for the reserve-table dialog.
+/// </summary>
+private static class ReserveTableSteps
+{
+    public static async Task<DialogTurnResult> StubAsync(
+        WaterfallStepContext stepContext,
+        CancellationToken cancellationToken)
     {
-        // Replace this waterfall with your reservation steps.
-        async (dc, args, next) =>
-        {
-            await dc.Context.SendActivity("Your table has been reserved.");
-            await dc.End();
-        }
-    });
+        await stepContext.Context.SendActivityAsync(
+            "Your table has been reserved.",
+            cancellationToken: cancellationToken);
+
+        return await stepContext.EndDialogAsync(null, cancellationToken);
+    }
+}
 ```
 
 # [JavaScript](#tab/javascript)
 
+In the bot constructor, add the placeholder `reserveTable` waterfall dialog.
+
 ```javascript
 // Reserve a table:
 // Help the user to reserve a table
-
-dialogs.add('reserveTable', [
+this.dialogSet.add(new WaterfallDialog('reserveTable', [
     // Replace this waterfall with your reservation steps.
-    async function(dc, args, next){
-        await dc.context.sendActivity("Your table has been reserved");
-        await dc.end();
+    async function(step){
+        await step.context.sendActivity("Your table has been reserved");
+        await step.endDialog();
     }
-]);
+]));
+```
+
+---
+
+### Update the bot code to call the dialogs
+
+Update your bot's turn handler code to call the dialog.
+
+# [C#](#tab/csharp)
+
+Rename **EchoBotAccessors.cs** to **BotAccessors.cs**, and rename the class from `EchoBotAccessors` to `BotAccessors`. Update the using statements and the class definition to provide the state property accessor we need for this bot.
+
+```csharp
+using System;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
+```
+
+```csharp
+/// <summary>
+/// This class is created as a Singleton and passed into the IBot-derived constructor.
+///  - See <see cref="EchoWithCounterBot"/> constructor for how that is injected.
+///  - See the Startup.cs file for more details on creating the Singleton that gets
+///    injected into the constructor.
+/// </summary>
+public class BotAccessors
+{
+    /// <summary>
+    /// Initializes a new instance of the <see cref="BotAccessors"/> class.
+    /// Contains the <see cref="ConversationState"/> and associated <see cref="IStatePropertyAccessor{T}"/>.
+    /// </summary>
+    /// <param name="conversationState">The state object that stores the counter.</param>
+    public BotAccessors(ConversationState conversationState)
+    {
+        ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+    }
+
+    /// <summary>
+    /// Gets the <see cref="IStatePropertyAccessor{T}"/> name used for the <see cref="DialogState"/> accessor.
+    /// </summary>
+    /// <remarks>Accessors require a unique name.</remarks>
+    /// <value>The accessor name for the dialog state accessor.</value>
+    public static string DialogStateAccessorName { get; } = $"{nameof(BotAccessors)}.DialogState";
+
+    /// <summary>
+    /// Gets or sets the DialogState property accessor.
+    /// </summary>
+    /// <value>
+    /// The DialogState property accessor.
+    /// </value>
+    public IStatePropertyAccessor<DialogState> DialogStateAccessor { get; set; }
+
+    /// <summary>
+    /// Gets the <see cref="ConversationState"/> object for the conversation.
+    /// </summary>
+    /// <value>The <see cref="ConversationState"/> object.</value>
+    public ConversationState ConversationState { get; }
+}
+```
+
+Update the **Startup.cs** file to configure the `BotAccessors` singleton.
+
+1. Update the using statements.
+
+    ```csharp
+    using System;
+    using System.Linq;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Bot.Builder;
+    using Microsoft.Bot.Builder.Dialogs;
+    using Microsoft.Bot.Builder.Integration;
+    using Microsoft.Bot.Builder.Integration.AspNet.Core;
+    using Microsoft.Bot.Configuration;
+    using Microsoft.Bot.Connector.Authentication;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+    ```
+
+1. Update the part of the `ConfigureServices` method that registers the bot state property accessors.
+
+    ```csharp
+    // Create and register state accesssors.
+    // Acessors created here are passed into the IBot-derived class on every turn.
+    services.AddSingleton<BotAccessors>(sp =>
+    {
+        var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value;
+        var conversationState = options.State.OfType<ConversationState>().FirstOrDefault();
+
+        // Create the custom state accessor.
+        // State accessors enable other components to read and write individual properties of state.
+        var accessors = new BotAccessors(conversationState)
+        {
+            DialogStateAccessor = conversationState.CreateProperty<DialogState>(BotAccessors.DialogStateAccessorName),
+        };
+
+        return accessors;
+    });
+    ```
+
+Rename the EchoWithCounterBot.cs file to HotelBot.cs, and rename the class from EchoWithCounterBot to HotelBot.
+
+1. Update the initialization code for the bot.
+
+    ```csharp
+    private readonly BotAccessors _accessors;
+    private readonly HotelDialogs _dialogs;
+    private readonly ILogger _logger;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HotelBot"/> class.
+    /// </summary>
+    /// <param name="accessors">A class containing <see cref="IStatePropertyAccessor{T}"/> used to manage state.</param>
+    /// <param name="loggerFactory">A <see cref="ILoggerFactory"/> that is hooked to the Azure App Service provider.</param>
+    public HotelBot(BotAccessors accessors, ILoggerFactory loggerFactory)
+    {
+        _logger = loggerFactory.CreateLogger<HotelBot>();
+        _logger.LogTrace("EchoBot turn start.");
+        _accessors = accessors;
+        _dialogs = new HotelDialogs(_accessors.DialogStateAccessor);
+    }
+    ```
+
+1. Update the turn handler for the bot, so that it runs the dialog.
+
+    ```csharp
+    public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
+    {
+        var dc = await _dialogs.CreateContextAsync(turnContext, cancellationToken);
+
+        if (turnContext.Activity.Type == ActivityTypes.Message)
+        {
+            await dc.ContinueDialogAsync(cancellationToken);
+            if (!turnContext.Responded)
+            {
+                await dc.BeginDialogAsync(HotelDialogs.MainMenu, null, cancellationToken);
+            }
+        }
+        else if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
+        {
+            var activity = turnContext.Activity.AsConversationUpdateActivity();
+            if (activity.MembersAdded.Any(member => member.Id != activity.Recipient.Id))
+            {
+                await dc.BeginDialogAsync(HotelDialogs.MainMenu, null, cancellationToken);
+            }
+        }
+
+        await _accessors.ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
+    }
+    ```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+async onTurn(turnContext) {
+    let dc = await this.dialogSet.createContext(turnContext);
+
+    // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+    if (turnContext.activity.type === ActivityTypes.Message) {
+
+        await dc.continueDialog();
+
+        if (!turnContext.responded) {
+            await dc.beginDialog('mainMenu');
+        }
+    } else if (turnContext.activity.type === ActivityTypes.ConversationUpdate) {
+        // Do we have any new members added to the conversation?
+        if (turnContext.activity.membersAdded.length !== 0) {
+            // Iterate over all new members added to the conversation
+            for (var idx in turnContext.activity.membersAdded) {
+                // Greet anyone that was not the target (recipient) of this message.
+                // Since the bot is the recipient for events from the channel,
+                // context.activity.membersAdded === context.activity.recipient.Id indicates the
+                // bot was added to the conversation, and the opposite indicates this is a user.
+                if (turnContext.activity.membersAdded[idx].id !== turnContext.activity.recipient.id) {
+                    // Start the dialog.
+                    await dc.beginDialog('mainMenu');
+                }
+            }
+        }
+    }
+
+    // Save state changes
+    await this.conversationState.saveChanges(turnContext);
+}
 ```
 
 ---

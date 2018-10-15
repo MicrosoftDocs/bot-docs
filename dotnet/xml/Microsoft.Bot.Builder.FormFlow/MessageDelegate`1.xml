@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type MessageDelegate&lt;'T&gt; = delegate of 'T -&gt; Task&lt;PromptAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />

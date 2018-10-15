@@ -22,7 +22,7 @@ Follow the steps in this section to debug a bot written in JavaScript.
 
 Before you can debug your JavaScript bot, you must complete these tasks.
 
-- Download the source code for your bot (from Azure), as described in [Download bot source code](bot-service-build-download-source-code.md?#download-bot-source-code).
+- Download the source code for your bot (from Azure), as described in [download bot source code](bot-service-build-download-source-code.md).
 - Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases).
 - Download and install a code editor such as <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>.
 
@@ -67,7 +67,7 @@ Follow the steps in this section to debug a bot written in C#.
 
 Before you can debug your web app C# bot, you must complete these tasks.
 
-- Download the source code for your bot (from Azure), as described in [Download bot source code](bot-service-build-download-source-code.md?#download-bot-source-code).
+- Download the source code for your bot (from Azure), as described in [download bot source code](bot-service-build-download-source-code.md).
 - Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases).
 - Download and install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> (Community Edition or above).
 
@@ -145,13 +145,6 @@ After you have connected the emulator to your bot, send a message to your bot by
 Additionally, you can view log details in the console window.
 
 ![Console window](~/media/bot-service-debug-bot/csharp-azureservice-debug-debughostlogging.png)
-
-::: moniker-end
-::: moniker range="azure-bot-service-4.0" 
-
-## <a id="debug-csharp-serverless"></a> Debug a Consumption plan C\# Functions bot
-
-Functions bot for Bot Builder SDK V4 is coming soon.
 
 ::: moniker-end
 

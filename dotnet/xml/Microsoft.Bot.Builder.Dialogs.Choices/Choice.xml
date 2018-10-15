@@ -1,0 +1,113 @@
+﻿<Type Name="Choice" FullName="Microsoft.Bot.Builder.Dialogs.Choices.Choice">
+  <TypeSignature Language="C#" Value="public class Choice" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Choice extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.Choice" />
+  <TypeSignature Language="VB.NET" Value="Public Class Choice" />
+  <TypeSignature Language="F#" Value="type Choice = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Choice (string value = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Choice.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional value As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Choices.Choice : string -&gt; Microsoft.Bot.Builder.Dialogs.Choices.Choice" Usage="new Microsoft.Bot.Builder.Dialogs.Choices.Choice value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.CardAction Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.CardAction Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.Choice.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As CardAction" />
+      <MemberSignature Language="F#" Value="member this.Action : Microsoft.Bot.Schema.CardAction with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Choice.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.CardAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the action to use when rendering the choice as a suggested action. This is optional.
+            </summary>
+        <value>
+            The action to use when rendering the choice as a suggested action.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synonyms">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Synonyms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Synonyms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.Choice.Synonyms" />
+      <MemberSignature Language="VB.NET" Value="Public Property Synonyms As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Synonyms : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Choice.Synonyms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the list of synonyms to recognize in addition to the value. This is optional.
+            </summary>
+        <value>
+            The list of synonyms to recognize in addition to the value.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.Choice.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Choice.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value to return when selected.
+            </summary>
+        <value>
+            The value to return when selected.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

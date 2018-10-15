@@ -1,0 +1,137 @@
+﻿<Type Name="FindValuesOptions" FullName="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions">
+  <TypeSignature Language="C#" Value="public class FindValuesOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FindValuesOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindValuesOptions" />
+  <TypeSignature Language="F#" Value="type FindValuesOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FindValuesOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPartialMatches">
+      <MemberSignature Language="C#" Value="public bool AllowPartialMatches { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPartialMatches" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.AllowPartialMatches" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPartialMatches As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowPartialMatches : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.AllowPartialMatches" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether only some of the tokens in a value need to exist to be considered
+            a match. The default value is "false". This is optional.
+            </summary>
+        <value>
+            A <c>true</c> if only some of the tokens in a value need to exist to be considered; otherwise <c>false</c>.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the locale/culture code of the utterance. The default is `en-US`. This is optional.
+            </summary>
+        <value>
+            The locale/culture code of the utterance.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxTokenDistance">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxTokenDistance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxTokenDistance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.MaxTokenDistance" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxTokenDistance As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxTokenDistance : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.MaxTokenDistance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum tokens allowed between two matched tokens in the utterance. So with
+            a max distance of 2 the value "second last" would match the utterance "second from the last"
+            but it wouldn't match "Wait a second. That's not the last one is it?".
+            The default value is "2".
+            </summary>
+        <value>
+            The maximum tokens allowed between two matched tokens in the utterance.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tokenizer">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction Tokenizer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction Tokenizer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.Tokenizer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tokenizer As TokenizerFunction" />
+      <MemberSignature Language="F#" Value="member this.Tokenizer : Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.Tokenizer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the tokenizer to use when parsing the utterance and values being recognized.
+            </summary>
+        <value>
+            The tokenizer to use when parsing the utterance and values being recognized.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

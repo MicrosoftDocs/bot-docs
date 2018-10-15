@@ -63,8 +63,6 @@ In cases where you do not have the `session` object in scope, you can use `bot.s
 
 The `textFormat` property of a message can be used to specify the format of the text. The `textFormat` property can be set to **plain**, **markdown**, or **xml**. The default value for `textFormat` is **markdown**. 
 
-For a list of commonly supported text formatting, see [Text formatting](../bot-service-channel-inspector.md#text-formatting). To ensure that the feature(s) you want to use is supported by the target channel, preview the feature(s) using the [Channel Inspector](../bot-service-channel-inspector.md).
-
 ## Message property
 
 The [`Message`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message.html) object has an internal **data** property that it uses to manage the message being sent. Other properties you set are through the different methods this object expose to you. 

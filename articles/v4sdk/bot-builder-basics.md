@@ -1,62 +1,417 @@
 ---
-title: Bot Builder basics | Microsoft Docs
-description: Bot Builder SDK basic structure.
-keywords: turn context, bot structure, receiving input
-author: ivorb
-ms.author: v-ivorb
+title: Bot Activity in the Bot Builder SDK | Microsoft Docs
+description: Describes how activity and http work within the Bot Builder SDK.
+keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
+author: johnataylor
+ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 04/18/2018
+ms.date: 9/26/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Basic bot structure
+# Understanding how bots work
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-The Azure Bot Service and Bot Builder SDK provide libraries, samples, and tools to help you build and debug bots. However, before we get into too much detail on any of those, it's important to understand the basic structure of a bot and how everything works together. These concepts apply regardless of which programming language you choose. Links to more in depth content are provided throughout; this article will provide an initial mental framework for how a bot operates.
+A bot is an app that users interact with in a conversational way, using text, graphics (cards), or speech. Every interaction between the user and the bot generates an Activity. Depending on the application used to connect to the bot (Facebook, Skype, Slack, etc.), certain information is sent between the user and your bot as part of the Activity. Before creating bots, it is important to understand how a bot uses Activity object to communicate with its users. Let's first take a look at Activities that are exchanged when we run a simple echo bot and its relationship to HTTP.
 
-From the ground up, let's explore the basic structure of a bot.
+![activity diagram](media/bot-builder-activity.png)
 
-## Creation of your bot
+Two Activity types illustrated here are: ConversationUpdate and Message.
 
-A bot can be created in a variety of ways, such as within the [Azure portal](~/bot-service-quickstart.md), in [Visual Studio](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), or through command-line tools for [JavaScript](~/javascript/bot-builder-javascript-quickstart.md), [Java](~/java/bot-builder-java-quickstart.md), or [Python](~/python/bot-builder-python-quickstart.md). Once created, bots can be run on a local machine, on Azure, or on another cloud service. They all function very similarly, regardless of where they're run or how they're built.
+Activities belonging to the same conversation all include the same ConversationReference details along with a few other tracking identifiers. Without these fields correctly set in the Activity, the Bot Framework Service won’t know what to do with it, and it will get dropped or rejected.
 
-## Interaction with your bot
+ConversationUpdate is sent from the Bot Framework Service when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two ConversationUpdate Activities. One for the user joining the conversation and one for the bot joining. These ConversationUpdate Activities are easily distinguished because the MembersAdded property will contain an Id that matches the Recipient Id for the ConversationUpdate Activity corresponding to the bot joining.
 
-A bot inherently doesn't have any visible UI in the way a website or app does, and instead a user interacts with it through a [conversation](~/v4sdk/bot-concepts.md#activities-and-conversations). Depending on the application used to connect to the bot (which we call a [channel](~/v4sdk/bot-concepts.md), but we won't get into that here), certain information is sent back and forth between the user and your bot.
+The Message Activity carries conversation information between the parties. In an echo bot example, the Message Activities are carrying simple text. The client will render this text content. Alternatively, the Message Activity might carry text to be spoken, suggested actions or cards to be displayed.
 
-Each unit of information is called an **activity** within our bot, and an activity can come in various forms. Activities include both communication from the user, which is referred to as a **message**, or additional information wrapped up in a handful of other [activity types](~/bot-service-activities-entities.md). This additional information can include when a new party joins or leaves the conversation, when a conversation ends, etc. Those types of communication from the user's connection are sent by the underlying system, without the user needing to do anything.
+Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn is, acknowledged with a 200 HTTP status code.
 
-The bot receives the communication and wraps it up in an activity object, with the correct type, to give it to your bot code. All of the other activity types provide useful information, however the most interesting and most common activity is the **message** activity from the user.
+The protocol doesn’t specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the diagram above. As there are two distinct HTTP connections back to back the security model must provide for both. 
 
-Each activity the bot receives begins a turn, which we'll describe in more detail shortly.
+## The Activity processing stack
 
-## Receiving user input
+Let's drill into the previous diagram with a focus on the arrival of a Message Activity.
 
-When we receive a message activity from the user, we need to understand what they're sending us. The most straightforward way is to simply match the incoming message text to a string. Based on which string it is, we can choose to do something, depending on what your bot is trying to achieve. This may include responding to the user, updating some variable or resource, saving it to [storage](~/v4sdk/bot-builder-storage-concept.md), or similar processing.
+![activity processing stack](media/bot-builder-activity-processing-stack.png)
 
-There are more complex ways to recognize user input, such as using [LUIS](~/v4sdk/bot-builder-concept-luis.md) or [QnA Maker](~/v4sdk/bot-builder-howto-qna.md), but string matching is the simplest.
+In the echo example, the bot replied to the Message Activity with another Message Activity containing the same text message. The Message Activity generated in response must be correctly addressed. Otherwise, it won’t arrive at its intended destination. Correctly addressing an Activity means including the appropriate ConversationReference details along with details about the sender and the recipient. In this particular example, the Message Activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound Activity. In general this is handled by the SDK behind the scenes. In most cases your application will not need to handle this explicitly. However, it can be useful to know when debugging and examining traces or audit logs.
 
-## Defining a turn
+In the echo bot example, the bot created and sent a Message Activity on an HTTP POST in response to the inbound Message Activity it had received on the HTTP POST it was handling. However, there is nothing in the protocol that mandates this exchange. It’s common for a bot to respond to a ConversationUpdate Activity by sending some welcome text in a Message Activity.  
 
-[!INCLUDE [Define a turn](~/includes/snippet-definition-turn.md)]
+In the example, the processing starts with the HTTP POST request arriving at the Web Server. In C# this will typically be an ASP.NET project, in a JavaScript NodeJS project this is likely to be one of the popular frameworks such as Express or Restify.
 
-Activity processing is managed by the **adapter** as described in more detail in [activity processing](~/v4sdk/bot-builder-concept-activity-processing.md). When the adapter receives an activity, it creates a **turn context** to provide information about the activity and give context to the current turn we are processing. That turn context exists for the duration of the turn, and then is disposed of, marking the end of the turn.
+Integrated into the Web Service framework is the Adapter. The Adapter is the core of the Bot SDK runtime.  The Activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the Activity object that is then handed to the Adapter with a call to ProcessActivity. On receiving the Activity, the Adapter creates a TurnContext and calls the Middleware. The name “TurnContext” follows from the use of the word “turn” to describe all the processing associated with the arrival of an Activity. The TurnContext is one of the most important abstractions in the SDK, not only does it carry the inbound Activity to all the Middleware components and the application logic but it also provides the mechanism whereby the Middleware components and the application logic can send outbound Activities.
 
-The [turn context](~/v4sdk/bot-builder-concept-activity-processing.md#turn-context) contains a handful of information, and the same object is used through all the layers of your bot. This is helpful because this turn context object can be, and should be, used to store information that might be needed later in the turn.
+## Middleware
 
-> [!IMPORTANT]
-> All **turns** are independent of each other, executing on their own, and have the potential to overlap. The bot may be processing multiple turns at a time, from various users on various channels. Each turn will have it's own turn context, but it's worth considering the complexity that introduces in some situations.
+Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the Activity. The final stage of the middleware pipeline is a callback to invoke the OnTurn function on the bot class the application has registered with the Adapter. The OnTurn function takes a TurnContext as its argument, typically the application logic running inside the OnTurn function will process the inbound Activity’s content and generate one or more Activities in response, sending these out using the SendActivity function on the TurnContext. Calling SendActivity on the TurnContext will cause the middleware components to be invoked on the outbound Activities. Middleware components execute before and after the bot’s OnTurn function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll.
 
-## Where to go from here
+## Bot structure
 
-This article avoided a lot of details, such as how [activities are processed](~/v4sdk/bot-builder-concept-activity-processing.md), different [conversation types](~/v4sdk/bot-builder-conversations.md), keeping track of the [state of your conversation](~/v4sdk/bot-builder-storage-concept.md) for more intelligent conversations, and so on. The rest of the conceptual topics build on the basics, and cover the rest of the ideas needed to understand both bots and the Azure Bot Service. You can follow the next steps sections to build up your knowledge, or you can jump around to what intrigues you, try out the [quickstart](~/bot-service-quickstart.md) to build your first bot, or dive into how to [develop](~/v4sdk/bot-builder-howto-send-messages.md) bots.
+Let's look at the Echo Bot With Counter [[C#](https://aka.ms/EchoBotWithStateCSharp) | [JS](https://aka.ms/EchoBotWithStateJS)] sample, and examine key pieces of the bot.
+
+# [C#](#tab/cs)
+
+A bot is a type of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1) web application. If you look at the [ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as Program.cs and Startup.cs. These files are required for all web apps and are not bot specific. Code in some of these files won't be copied here, but you can refer to the Echo Bot With Counter sample.
+
+### EchoWithCounterBot.cs
+
+The main bot logic is defined in the `EchoWithCounterBot` class that derives from the `IBot` interface. `IBot` defines a single method `OnTurnAsync`. Your application must implement this method. `OnTurnAsync` has turnContext that provides information about the incoming Activity. The incoming Activity corresponds to the inbound HTTP request. Activities can be of various types, so we first check to see if your bot has received a message. If it is a message, we  get the conversation state from the turn context, increment the turn counter, and then persist the new turn counter value into the conversation state. And then send a message back to the user using SendActivityAsync call. The outgoing Activity corresponds to the outbound HTTP request.
+
+```cs
+public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
+{
+    if (turnContext.Activity.Type == ActivityTypes.Message)
+    {
+        // Get the conversation state from the turn context.
+        var oldState = await _accessors.CounterState.GetAsync(turnContext, () => new CounterState());
+
+        // Bump the turn count for this conversation.
+        var newState = new CounterState { TurnCount = oldState.TurnCount + 1 };
+
+        // Set the property using the accessor.
+        await _accessors.CounterState.SetAsync(turnContext, newState);
+
+        // Save the new turn count into the conversation state.
+        await _accessors.ConversationState.SaveChangesAsync(turnContext);
+
+        // Echo back to the user whatever they typed.
+        var responseMessage = $"Turn {newState.TurnCount}: You sent '{turnContext.Activity.Text}'\n";
+        await turnContext.SendActivityAsync(responseMessage);
+    }
+    else
+    {
+        await turnContext.SendActivityAsync($"{turnContext.Activity.Type} event detected");
+    }
+}
+```
+
+### Startup.cs
+
+The `ConfigureServices` method loads the connected services from [.bot](bot-builder-basics.md#the-bot-file) file, catches any errors that occur during a conversation turn and logs them, sets up your credential provider and creates a conversation state object to store conversation data in memory.
+
+```csharp
+services.AddBot<EchoWithCounterBot>(options =>
+{
+    // Creates a logger for the application to use.
+    ILogger logger = _loggerFactory.CreateLogger<EchoWithCounterBot>();
+
+    var secretKey = Configuration.GetSection("botFileSecret")?.Value;
+    var botFilePath = Configuration.GetSection("botFilePath")?.Value;
+
+    // Loads .bot configuration file and adds a singleton that your Bot can access through dependency injection.
+    BotConfiguration botConfig = null;
+    try
+    {
+        botConfig = BotConfiguration.Load(botFilePath ?? @".\BotConfiguration.bot", secretKey);
+    }
+    catch
+    {
+        //...
+    }
+
+    services.AddSingleton(sp => botConfig);
+
+    // Retrieve current endpoint.
+    var environment = _isProduction ? "production" : "development";
+    var service = botConfig.Services.Where(s => s.Type == "endpoint" && s.Name == environment).FirstOrDefault();
+    if (!(service is EndpointService endpointService))
+    {
+        throw new InvalidOperationException($"The .bot file does not contain an endpoint with name '{environment}'.");
+    }
+
+    options.CredentialProvider = new SimpleCredentialProvider(endpointService.AppId, endpointService.AppPassword);
+
+    // Catches any errors that occur during a conversation turn and logs them.
+    options.OnTurnError = async (context, exception) =>
+    {
+        logger.LogError($"Exception caught : {exception}");
+        await context.SendActivityAsync("Sorry, it looks like something went wrong.");
+    };
+
+    // The Memory Storage used here is for local bot debugging only. When the bot
+    // is restarted, everything stored in memory will be gone.
+    IStorage dataStore = new MemoryStorage();
+
+    // ...
+
+    // Create Conversation State object.
+    // The Conversation State object is where we persist anything at the conversation-scope.
+    var conversationState = new ConversationState(dataStore);
+
+    options.State.Add(conversationState);
+});
+```
+
+It also creates and registers `EchoBotAccessors` that are defined in the **EchoBotStateAccessors.cs** file and are passed into the public `EchoWithCounterBot` constructor using dependency injection framework in ASP.NET Core.
+
+```csharp
+// Create and register state accessors.
+// Accessors created here are passed into the IBot-derived class on every turn.
+services.AddSingleton<EchoBotAccessors>(sp =>
+{
+    var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value;
+    // ...
+    var conversationState = options.State.OfType<ConversationState>().FirstOrDefault();
+    // ...
+
+    // Create the custom state accessor.
+    // State accessors enable other components to read and write individual properties of state.
+    var accessors = new EchoBotAccessors(conversationState)
+    {
+        CounterState = conversationState.CreateProperty<CounterState>(EchoBotAccessors.CounterStateName),
+    };
+
+    return accessors;
+});
+```
+
+The `Configure` method finishes the configuration of your app by specifying that the app use the Bot Framework and a few other files. All bots using the Bot Framework will need that configuration call. `ConfigureServices` and `Configure` are called by the runtime when the app starts.
+
+### CounterState.cs
+
+This file contains a simple class that our bot uses to maintain the current state. It contains only an `int` that we use to increment your the counter.
+
+```cs
+public class CounterState
+{
+    public int TurnCount { get; set; } = 0;
+}
+```
+
+### EchoBotAccessors.cs
+
+The `EchoBotAccessors` class is created as a singleton in the `Startup` class and passed into the IBot derived class. In this case, `public class EchoWithCounterBot : IBot`. The bot uses the accessor to persist conversation data. The constructor of `EchoBotAccessors` is passed in a conversation object that is created in the Startup.cs file.
+
+```cs
+public class EchoBotAccessors
+{
+    public EchoBotAccessors(ConversationState conversationState)
+    {
+        ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+    }
+
+    public static string CounterStateName { get; } = $"{nameof(EchoBotAccessors)}.CounterState";
+
+    public IStatePropertyAccessor<CounterState> CounterState { get; set; }
+
+    public ConversationState ConversationState { get; }
+}
+```
+
+# [JavaScript](#tab/js)
+
+The system section mainly contains the **package.json**, **.env** , **index.js**, and **README.md** files. Code in some files won't be copied here, but you will see it when you run the bot.
+
+### package.json
+
+**package.json** specifies dependencies and their associated versions for your bot. This is all set up by the template and your system.
+
+### .env file
+
+The **.env** file specifies the configuration information for your bot, such as the port number, app ID, and password among other things. If using certain technologies or using this bot in production, you will need to add your specific keys or URL to this configuration. For this Echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
+
+To use the **.env** configuration file, the template needs an extra package included.  First, get the `dotenv` package from npm:
+
+`npm install dotenv`
+
+### index.js
+
+The `index.js` sets up your bot and the hosting service that will forward activities to your bot logic.
+
+#### Required libraries
+
+At the very top of your `index.js` file you will find a series of modules or libraries that are being required. These modules will give you access to a set of functions that you may want to include in your application.
+
+```javascript
+// Import required packages
+const path = require('path');
+const restify = require('restify');
+
+// Import required bot services. See https://aka.ms/bot-services to learn more about the different parts of a bot.
+const { BotFrameworkAdapter, ConversationState, MemoryStorage } = require('botbuilder');
+// Import required bot configuration.
+const { BotConfiguration } = require('botframework-config');
+
+const { EchoBot } = require('./bot');
+
+// Read botFilePath and botFileSecret from .env file
+// Note: Ensure you have a .env file and include botFilePath and botFileSecret.
+const ENV_FILE = path.join(__dirname, '.env');
+const env = require('dotenv').config({ path: ENV_FILE });
+```
+
+#### Bot configuration
+
+The next part loads information from your bot configuration file.
+
+```javascript
+// Get the .bot file path
+// See https://aka.ms/about-bot-file to learn more about .bot file its use and bot configuration.
+const BOT_FILE = path.join(__dirname, (process.env.botFilePath || ''));
+let botConfig;
+try {
+    // Read bot configuration from .bot file.
+    botConfig = BotConfiguration.loadSync(BOT_FILE, process.env.botFileSecret);
+} catch (err) {
+    console.error(`\nError reading bot file. Please ensure you have valid botFilePath and botFileSecret set for your environment.`);
+    console.error(`\n - The botFileSecret is available under appsettings for your Azure Bot Service bot.`);
+    console.error(`\n - If you are running this bot locally, consider adding a .env file with botFilePath and botFileSecret.`);
+    console.error(`\n - See https://aka.ms/about-bot-file to learn more about .bot file its use and bot configuration.\n\n`);
+    process.exit();
+}
+
+// For local development configuration as defined in .bot file
+const DEV_ENVIRONMENT = 'development';
+
+// Define name of the endpoint configuration section from the .bot file
+const BOT_CONFIGURATION = (process.env.NODE_ENV || DEV_ENVIRONMENT);
+
+// Get bot endpoint configuration by service name
+// Bot configuration as defined in .bot file
+const endpointConfig = botConfig.findServiceByNameOrId(BOT_CONFIGURATION);
+```
+
+#### Bot adapter, HTTP server, and bot state
+
+The next parts set up the server and adapter that allow your bot to communicate with the user and send responses. The server will listen on the specified port from the **BotConfiguration.bot** configuration file, or fall back to _3978_ for connection with your emulator. The adapter will act as the conductor for your bot, directing incoming and outgoing communication, authentication, and so on.
+
+We also create a state object that uses `MemoryStorage` as the storage provider. This state is defined as `ConversationState`, which just means it's keeping the state of your conversation. `ConversationState` will store the information you're interested in, which in this case is simply a turn counter, in memory.
+
+```javascript
+// Create bot adapter.
+// See https://aka.ms/about-bot-adapter to learn more about bot adapter.
+const adapter = new BotFrameworkAdapter({
+    appId: endpointConfig.appId || process.env.microsoftAppID,
+    appPassword: endpointConfig.appPassword || process.env.microsoftAppPassword
+});
+
+// Catch-all for any unhandled errors in your bot.
+adapter.onTurnError = async (context, error) => {
+    // This check writes out errors to console log .vs. app insights.
+    console.error(`\n [onTurnError]: ${ error }`);
+    // Send a message to the user
+    context.sendActivity(`Oops. Something went wrong!`);
+    // Clear out state
+    await conversationState.clear(context);
+    // Save state changes.
+    await conversationState.saveChanges(context);
+};
+
+// Define a state store for your bot. See https://aka.ms/about-bot-state to learn more about using MemoryStorage.
+// A bot requires a state store to persist the dialog and user state between messages.
+let conversationState;
+
+// For local development, in-memory storage is used.
+// CAUTION: The Memory Storage used here is for local bot debugging only. When the bot
+// is restarted, anything stored in memory will be gone.
+const memoryStorage = new MemoryStorage();
+conversationState = new ConversationState(memoryStorage);
+
+// Create the main dialog.
+const bot = new EchoBot(conversationState);
+
+// Create HTTP server
+let server = restify.createServer();
+server.listen(process.env.port || process.env.PORT || 3978, function() {
+    console.log(`\n${ server.name } listening to ${ server.url }`);
+    console.log(`\nGet Bot Framework Emulator: https://aka.ms/botframework-emulator`);
+    console.log(`\nTo talk to your bot, open echoBot-with-counter.bot file in the Emulator`);
+});
+```
+
+#### Bot Logic
+
+The adapter's `processActivity` sends incoming activities to the bot logic.
+The third parameter within `processActivity` is a function handler that will be called to perform the bot’s logic after the received [activity](bot-builder-concept-activity-processing.md) has been pre-processed by the adapter and routed through any middleware. The [context](./bot-builder-concept-activity-processing.md#turn-context) variable, passed as an argument to the function handler, can be used to provide information about the incoming activity, the sender and receiver, the channel, the conversation, etc. Activity processing is routed to the EchoBot's `onTurn`.
+
+```javascript
+// Listen for incoming requests.
+server.post('/api/messages', (req, res) => {
+    // Route received request to adapter for processing
+    adapter.processActivity(req, res, (context) => {
+        // Route to main dialog.
+        await bot.onTurn(context);
+    });
+});
+```
+
+### EchoBot
+
+All Activity processing is routed to this class's `onTurn` handler. When the class is created, a state object is passed in. Using this state object, the constructor creates a `this.countProperty` accessor to persist the turn counter for this bot.
+
+On each turn, we first check to see if the bot has received a message. If the bot did not receive a message, we will echo back the activity type received. Next, we create a state variable that holds the information of your bot's conversation. If the count variable is `undefined`, it is set to 1 (which will occur when your bot first starts) or increment it with every new message. We echo back to the user the count along with the message they sent. Finally, we set the count and save the changes to state.
+
+```javascript
+const { ActivityTypes } = require('botbuilder');
+
+// Turn counter property
+const TURN_COUNTER_PROPERTY = 'turnCounterProperty';
+
+class EchoBot {
+
+    constructor(conversationState) {
+        // Creates a new state accessor property.
+        // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors
+        this.countProperty = conversationState.createProperty(TURN_COUNTER_PROPERTY);
+        this.conversationState = conversationState;
+    }
+
+    async onTurn(turnContext) {
+        // Handle message activity type. User's responses via text or speech or card interactions flow back to the bot as Message activity.
+        // Message activities may contain text, speech, interactive cards, and binary or unknown attachments.
+        // see https://aka.ms/about-bot-activity-message to learn more about the message and other activity types
+        if (turnContext.activity.type === ActivityTypes.Message) {
+            // read from state.
+            let count = await this.countProperty.get(turnContext);
+            count = count === undefined ? 1 : ++count;
+            await turnContext.sendActivity(`${ count }: You said "${ turnContext.activity.text }"`);
+            // increment and set turn counter.
+            await this.countProperty.set(turnContext, count);
+        } else {
+            // Generic handler for all other activity types.
+            await turnContext.sendActivity(`[${ turnContext.activity.type } event detected]`);
+        }
+        // Save state changes
+        await this.conversationState.saveChanges(turnContext);
+    }
+}
+
+exports.EchoBot = EchoBot;
+```
+
+---
+
+### The bot file
+
+The **.bot** file contains information, including the endpoint, app ID, and password, and references to services that are used by the bot. This file gets created for you when you start building a bot from a template, but you can create your own through the emulator or other tools. You can specify the .bot file to use when testing your bot with the [emulator](../bot-service-debug-emulator.md).
+
+```json
+{
+    "name": "echobot-with-counter",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "development",
+            "endpoint": "http://localhost:3978/api/messages",
+            "appId": "",
+            "appPassword": "",
+            "id": "1"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0"
+}
+```
+
+## Additional resources
+
+For more information about state management, see [how to manage conversation and user state](bot-builder-howto-v4-state.md)
 
 ## Next steps
 
-Next, the Bot Connector Service allows your bot to communicate with users on different platforms.
-
 > [!div class="nextstepaction"]
-> [Channels and the Bot Connector Service](~/v4sdk/bot-concepts.md)
+> [Create a bot](~/bot-service-quickstart.md)

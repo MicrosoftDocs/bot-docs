@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DialogContext = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,57 +26,85 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogInstance</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Returns the cached instance of the active dialog on the top of the stack or `null` if the stack is empty.
+            Gets the cached instance of the active dialog on the top of the stack or <c>null</c> if the stack is empty.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The cached instance of the active dialog on the top of the stack or <c>null</c> if the stack is empty.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Begin">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Begin (string dialogId, System.Collections.Generic.IDictionary&lt;string,object&gt; dialogArgs = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Begin(string dialogId, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dialogArgs) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.Begin(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Begin (dialogId As String, Optional dialogArgs As IDictionary(Of String, Object) = null) As Task" />
-      <MemberSignature Language="F#" Value="member this.Begin : string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Begin (dialogId, dialogArgs)" />
+    <Member MemberName="BeginDialogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (string dialogId, object options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(string dialogId, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.BeginDialogAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.BeginDialogAsync (dialogId, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
-        <Parameter Name="dialogArgs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="dialogId">ID of the dialog to start.</param>
-        <param name="dialogArgs">(Optional) additional argument(s) to pass to the dialog being started.</param>
+        <param name="options">(Optional) additional argument(s) to pass to the dialog being started.</param>
+        <param name="cancellationToken">The cancellation token.</param>
         <summary>
             Pushes a new dialog onto the dialog stack.
             </summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAllDialogsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; CancelAllDialogsAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; CancelAllDialogsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.CancelAllDialogsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CancelAllDialogsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.CancelAllDialogsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Deletes any existing dialog stack thus cancelling all dialogs on the stack.
+            </summary>
+        <returns>The dialog context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ITurnContext Context { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ITurnContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.ITurnContext Context" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Context" />
-      <MemberSignature Language="VB.NET" Value="Public Property Context As ITurnContext" />
-      <MemberSignature Language="F#" Value="member this.Context : Microsoft.Bot.Builder.ITurnContext with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ITurnContext" />
+      <MemberSignature Language="F#" Value="member this.Context : Microsoft.Bot.Builder.ITurnContext" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -87,41 +115,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Continue">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Continue ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Continue() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.Continue" />
-      <MemberSignature Language="VB.NET" Value="Public Function Continue () As Task" />
-      <MemberSignature Language="F#" Value="member this.Continue : unit -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Continue " />
+    <Member MemberName="ContinueDialogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.ContinueDialogAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ContinueDialogAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.ContinueDialogAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
       <Docs>
+        <param name="cancellationToken">The cancellation token.</param>
         <summary>
             Continues execution of the active dialog, if there is one, by passing the context object to
-            its `Dialog.continue()` method. You can check `context.responded` after the call completes
+            its `Dialog.ContinueDialogAsync()` method. You can check `context.responded` after the call completes
             to determine if a dialog was run and a reply was sent to the user.
             </summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dialogs">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Dialogs" />
-      <MemberSignature Language="VB.NET" Value="Public Property Dialogs As DialogSet" />
-      <MemberSignature Language="F#" Value="member this.Dialogs : Microsoft.Bot.Builder.Dialogs.DialogSet with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Dialogs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dialogs As DialogSet" />
+      <MemberSignature Language="F#" Value="member this.Dialogs : Microsoft.Bot.Builder.Dialogs.DialogSet" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Dialogs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogSet</ReturnType>
@@ -132,151 +162,134 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="End">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task End (System.Collections.Generic.IDictionary&lt;string,object&gt; result = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task End(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.End(System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Function End (Optional result As IDictionary(Of String, Object) = null) As Task" />
-      <MemberSignature Language="F#" Value="member this.End : System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="dialogContext.End result" />
+    <Member MemberName="EndDialogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; EndDialogAsync (object result = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; EndDialogAsync(object result, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.EndDialogAsync : obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.EndDialogAsync (result, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="result" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EndAll">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogContext EndAll ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.DialogContext EndAll() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndAll" />
-      <MemberSignature Language="VB.NET" Value="Public Function EndAll () As DialogContext" />
-      <MemberSignature Language="F#" Value="member this.EndAll : unit -&gt; Microsoft.Bot.Builder.Dialogs.DialogContext" Usage="dialogContext.EndAll " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
+        <param name="result"> (Optional) result to pass to the parent dialogs.</param>
+        <param name="cancellationToken">The cancellation token.</param>
         <summary>
-            Deletes any existing dialog stack thus cancelling all dialogs on the stack.
+            Ends a dialog by popping it off the stack and returns an optional result to the dialogs
+            parent.The parent dialog is the dialog the started the on being ended via a call to
+            either[begin()](#begin) or [prompt()](#prompt).
+            The parent dialog will have its `Dialog.resume()` method invoked with any returned
+            result. If the parent dialog hasn't implemented a `resume()` method then it will be
+            automatically ended as well and the result passed to its parent. If there are no more
+            parent dialogs on the stack then processing of the turn will end.
             </summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Prompt">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Prompt (string dialogId, Microsoft.Bot.Schema.Activity prompt, Microsoft.Bot.Builder.Dialogs.PromptOptions options = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Prompt(string dialogId, class Microsoft.Bot.Schema.Activity prompt, class Microsoft.Bot.Builder.Dialogs.PromptOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.Prompt(System.String,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.Dialogs.PromptOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Prompt (dialogId As String, prompt As Activity, Optional options As PromptOptions = null) As Task" />
-      <MemberSignature Language="F#" Value="member this.Prompt : string * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.Dialogs.PromptOptions -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Prompt (dialogId, prompt, options)" />
+    <Member MemberName="PromptAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; PromptAsync (string dialogId, Microsoft.Bot.Builder.Dialogs.PromptOptions options, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; PromptAsync(string dialogId, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.PromptAsync : string * Microsoft.Bot.Builder.Dialogs.PromptOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.PromptAsync (dialogId, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
-        <Parameter Name="prompt" Type="Microsoft.Bot.Schema.Activity" />
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
-      </Parameters>
-      <Docs>
-        <param name="dialogId">To be added.</param>
-        <param name="prompt">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Prompt">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Prompt (string dialogId, string prompt, Microsoft.Bot.Builder.Dialogs.PromptOptions options = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Prompt(string dialogId, string prompt, class Microsoft.Bot.Builder.Dialogs.PromptOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.Prompt(System.String,System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Prompt (dialogId As String, prompt As String, Optional options As PromptOptions = null) As Task" />
-      <MemberSignature Language="F#" Value="member this.Prompt : string * string * Microsoft.Bot.Builder.Dialogs.PromptOptions -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Prompt (dialogId, prompt, options)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dialogId" Type="System.String" />
-        <Parameter Name="prompt" Type="System.String" />
-        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.PromptOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="dialogId">ID of the prompt to start.</param>
-        <param name="prompt">Initial prompt to send the user.</param>
-        <param name="options">To be added.</param>
+        <param name="options">Contains a Prompt, potentially a RetryPrompt and if using ChoicePrompt, Choices.</param>
+        <param name="cancellationToken">The cancellation token.</param>
         <summary>
             Helper function to simplify formatting the options for calling a prompt dialog. This helper will
-            construct a `PromptOptions` structure and then call[begin(context, dialogId, options)](#begin).
+            take a `PromptOptions` argument and then call[begin(context, dialogId, options)](#begin).
             </summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Replace">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Replace (string dialogId, System.Collections.Generic.IDictionary&lt;string,object&gt; dialogArgs = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Replace(string dialogId, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dialogArgs) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Replace (dialogId As String, Optional dialogArgs As IDictionary(Of String, Object) = null) As Task" />
-      <MemberSignature Language="F#" Value="member this.Replace : string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Replace (dialogId, dialogArgs)" />
+    <Member MemberName="ReplaceDialogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ReplaceDialogAsync (string dialogId, object options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ReplaceDialogAsync(string dialogId, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.ReplaceDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.ReplaceDialogAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.ReplaceDialogAsync (dialogId, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
-        <Parameter Name="dialogArgs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="dialogId">ID of the new dialog to start.</param>
-        <param name="dialogArgs">(Optional) additional argument(s) to pass to the new dialog.</param>
+        <param name="options">(Optional) additional argument(s) to pass to the new dialog.</param>
+        <param name="cancellationToken">The cancellation token.</param>
         <summary>
             Ends the active dialog and starts a new dialog in its place. This is particularly useful
             for creating loops or redirecting to another dialog.
             </summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RepromptDialogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RepromptDialogAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RepromptDialogAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.RepromptDialogAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.RepromptDialogAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogContext.RepromptDialogAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Calls reprompt on the currently active dialog, if there is one. Used with Prompts that have a reprompt behavior.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stack">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; Stack { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; Stack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; Stack" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Stack" />
-      <MemberSignature Language="VB.NET" Value="Public Property Stack As List(Of DialogInstance)" />
-      <MemberSignature Language="F#" Value="member this.Stack : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Stack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stack As List(Of DialogInstance)" />
+      <MemberSignature Language="F#" Value="member this.Stack : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Stack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;</ReturnType>

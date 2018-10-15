@@ -1,0 +1,50 @@
+﻿<Type Name="IPropertyManager" FullName="Microsoft.Bot.Builder.IPropertyManager">
+  <TypeSignature Language="C#" Value="public interface IPropertyManager" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertyManager" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.IPropertyManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPropertyManager" />
+  <TypeSignature Language="F#" Value="type IPropertyManager = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            IPropertyManager defines implementation of a source of named properties.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt; CreateProperty&lt;T&gt; (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.IStatePropertyAccessor`1&lt;!!T&gt; CreateProperty&lt;T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IPropertyManager.CreateProperty``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateProperty(Of T) (name As String) As IStatePropertyAccessor(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member CreateProperty : string -&gt; Microsoft.Bot.Builder.IStatePropertyAccessor&lt;'T&gt;" Usage="iPropertyManager.CreateProperty name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of object</typeparam>
+        <param name="name">name of the object</param>
+        <summary>
+            Create a managed state property accessor for named property.
+            </summary>
+        <returns>property accessor for accessing the object of type T.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

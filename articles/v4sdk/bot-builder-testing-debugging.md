@@ -46,7 +46,7 @@ the [Azure Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emu
 
 ### Level 2: Use a Direct Line client
 
-After verifying your bot appears to work how you’d like it to, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server and create your own [Direct Line client](bot-builder-howto-direct-line.md) for your bot to connect to.
+After verifying your bot appears to work how you’d like it to, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server and create your own <!--IBTODO [Direct Line client](bot-builder-howto-direct-line.md)--> direct line client for your bot to connect to.
 
 Creating your own client allows you to define the inner workings of the channel, as well as specifically test how your bot responds to certain activity exchanges. Once connected to your client, run your tests to set up your bot state and verify your features. If your bot utilizes a feature like speech, using these channels can offer a way to verify that functionality.
 
@@ -60,7 +60,7 @@ How this is achieved can vary greatly, from individually using different channel
 
 ### Other testing
 
-Different types of testing can be done in conjunction with the above levels or from different angles, such as stress testing, performance testing, or profiling your bot’s activity. Visual studio provides methods to do this locally as well as a [suite of tools](https://www.visualstudio.com/team-services/testing-tools/) for testing your app, and the [Azure portal](https://portal.azure.com) provides insight into how your bot is performing.
+Different types of testing can be done in conjunction with the above levels or from different angles, such as stress testing, performance testing, or profiling your bot’s activity. Visual studio provides methods to do this locally as well as a [suite of tools](https://azure.microsoft.com/en-us/solutions/dev-test/) for testing your app, and the [Azure portal](https://portal.azure.com) provides insight into how your bot is performing.
 
 ## Debugging
 
@@ -70,7 +70,17 @@ Bots follow an event driven programming paradigm, which can be hard to rationali
 
 **Understanding bot activities with the emulator**
 
-Your bot deals with different types of [activities](bot-builder-concept-activity-processing.md) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
+Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
+
+**Saving and retrieving user interactions with transcripts**
+
+Azure blob transcript storage provides a specialized resource where you can both [store and retrieve transcripts](bot-builder-howto-v4-storage.md) containing interactions between your users and your bot.  
+
+Additionally, once user input interactions have been stored, you can use Azure's "_storage explorer_" to manually view data contained in transcripts stored within your blob transcript store. The following example opens "_storage explorer_" from settings for "_mynewtestblobstorage_." To open a saved user input select:    Blob Container > ChannelId > TranscriptId > ConversationId
+
+![Examine_stored_transcript_text](./media/examine_transcript_text_in_azure.png)
+
+This opens the stored user conversation input in JSON format. User input is preserved together with the key "_text:_."
 
 **How middleware works**
 
@@ -80,7 +90,7 @@ If you are using multiple pieces of middleware the delegate may pass execution t
 
 If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-middleware.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
 
-Understanding when, and why, middleware short-circuits helps indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try [creating your own middleware](bot-builder-create-middleware.md) first to experiment a bit before diving into the built-in middleware.
+Understanding when, and why, middleware short-circuits helps indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try creating your own middleware first to experiment a bit before diving into the built-in middleware.
 
 For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain interactions and short-circuit the pipeline when it does, which can be confusing when first learning how to use it.
 

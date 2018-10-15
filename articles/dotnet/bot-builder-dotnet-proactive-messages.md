@@ -173,8 +173,8 @@ public class SurveyDialog : IDialog<object>
 
 ## Sample code
 
-For a complete sample that shows how to send proactive messages using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample</a> in GitHub. 
-Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages/simpleSendMessage" target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages/startNewDialog" target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message. 
+For a complete sample that shows how to send proactive messages using the Bot Builder SDK for .NET, see the <a href="https://aka.ms/proactive-messaging-cs-v3 " target="_blank">Proactive Messages sample</a> in GitHub. 
+Within the Proactive Messages sample, <a href="https://aka.ms/proactive-sendmessage-cs-v3 " target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://aka.ms/proactive-newdialog-cs-v3 " target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message. 
 
 ## Additional resources
 

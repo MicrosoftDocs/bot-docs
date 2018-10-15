@@ -6,26 +6,28 @@
   <TypeSignature Language="F#" Value="type JwtTokenValidation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Contains helper methods for authenticating incoming HTTP requests.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AuthenticateRequest">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateRequest (Microsoft.Bot.Schema.IActivity activity, string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, System.Net.Http.HttpClient httpClient = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateRequest(class Microsoft.Bot.Schema.IActivity activity, string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class System.Net.Http.HttpClient httpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenValidation.AuthenticateRequest(Microsoft.Bot.Schema.IActivity,System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="F#" Value="static member AuthenticateRequest : Microsoft.Bot.Schema.IActivity * string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * System.Net.Http.HttpClient -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.JwtTokenValidation.AuthenticateRequest (activity, authHeader, credentials, httpClient)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateRequest (Microsoft.Bot.Schema.IActivity activity, string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, Microsoft.Bot.Connector.Authentication.IChannelProvider provider, System.Net.Http.HttpClient httpClient = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateRequest(class Microsoft.Bot.Schema.IActivity activity, string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class Microsoft.Bot.Connector.Authentication.IChannelProvider provider, class System.Net.Http.HttpClient httpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenValidation.AuthenticateRequest(Microsoft.Bot.Schema.IActivity,System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.Net.Http.HttpClient)" />
+      <MemberSignature Language="F#" Value="static member AuthenticateRequest : Microsoft.Bot.Schema.IActivity * string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * System.Net.Http.HttpClient -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.JwtTokenValidation.AuthenticateRequest (activity, authHeader, credentials, provider, httpClient)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -34,29 +36,33 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
         <Parameter Name="authHeader" Type="System.String" />
         <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="provider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
       </Parameters>
       <Docs>
         <param name="activity">The activity.</param>
         <param name="authHeader">The authentication header.</param>
-        <param name="credentials">The credentials.</param>
+        <param name="credentials">The bot's credential provider.</param>
+        <param name="provider">The bot's channel service provider.</param>
         <param name="httpClient">The HTTP client.</param>
         <summary>
-            Authenticates the request and sets the service url in the set of trusted urls.
+            Authenticates the request and add's the activity's <see cref="P:Microsoft.Bot.Schema.Activity.ServiceUrl" />
+            to the set of trusted URLs.
             </summary>
-        <returns>ClaimsIdentity for the request.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the result contains the claims-based
+            identity for the request</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateAuthHeader">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateAuthHeader (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl = null, System.Net.Http.HttpClient httpClient = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateAuthHeader(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl, class System.Net.Http.HttpClient httpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenValidation.ValidateAuthHeader(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.String,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="F#" Value="static member ValidateAuthHeader : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * string * System.Net.Http.HttpClient -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.JwtTokenValidation.ValidateAuthHeader (authHeader, credentials, serviceUrl, httpClient)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateAuthHeader (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, string channelId, string serviceUrl = null, System.Net.Http.HttpClient httpClient = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateAuthHeader(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, string channelId, string serviceUrl, class System.Net.Http.HttpClient httpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenValidation.ValidateAuthHeader(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.String,System.String,System.Net.Http.HttpClient)" />
+      <MemberSignature Language="F#" Value="static member ValidateAuthHeader : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * string * string * System.Net.Http.HttpClient -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.JwtTokenValidation.ValidateAuthHeader (authHeader, credentials, channelProvider, channelId, serviceUrl, httpClient)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -64,17 +70,24 @@
       <Parameters>
         <Parameter Name="authHeader" Type="System.String" />
         <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="channelId" Type="System.String" />
         <Parameter Name="serviceUrl" Type="System.String" />
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="credentials">To be added.</param>
-        <param name="serviceUrl">To be added.</param>
-        <param name="httpClient">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="authHeader">The authentication header to validate.</param>
+        <param name="credentials">The bot's credential provider.</param>
+        <param name="channelProvider">The bot's channel service provider.</param>
+        <param name="channelId">The ID of the channel that sent the request.</param>
+        <param name="serviceUrl">The service URL for the activity.</param>
+        <param name="httpClient">The HTTP client.</param>
+        <summary>
+            Validates the authentication header of an incoming request.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the result contains the claims-based
+            identity for the request</remarks>
       </Docs>
     </Member>
   </Members>

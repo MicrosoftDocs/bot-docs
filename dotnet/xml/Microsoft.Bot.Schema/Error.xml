@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Error = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,23 +38,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Error (string code = null, string message = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Error.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = null, Optional message As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Error : string * string -&gt; Microsoft.Bot.Schema.Error" Usage="new Microsoft.Bot.Schema.Error (code, message)" />
+      <MemberSignature Language="C#" Value="public Error (string code = null, string message = null, Microsoft.Bot.Schema.InnerHttpError innerHttpError = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message, class Microsoft.Bot.Schema.InnerHttpError innerHttpError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Error.#ctor(System.String,System.String,Microsoft.Bot.Schema.InnerHttpError)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Error : string * string * Microsoft.Bot.Schema.InnerHttpError -&gt; Microsoft.Bot.Schema.Error" Usage="new Microsoft.Bot.Schema.Error (code, message, innerHttpError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="code" Type="System.String" />
         <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerHttpError" Type="Microsoft.Bot.Schema.InnerHttpError" />
       </Parameters>
       <Docs>
         <param name="code">Error code</param>
         <param name="message">Error message</param>
+        <param name="innerHttpError">Error from inner http call</param>
         <summary>
             Initializes a new instance of the Error class.
             </summary>
@@ -70,10 +71,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
         </Attribute>
       </Attributes>
@@ -88,6 +89,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InnerHttpError">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.InnerHttpError InnerHttpError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.InnerHttpError InnerHttpError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Error.InnerHttpError" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerHttpError As InnerHttpError" />
+      <MemberSignature Language="F#" Value="member this.InnerHttpError : Microsoft.Bot.Schema.InnerHttpError with get, set" Usage="Microsoft.Bot.Schema.Error.InnerHttpError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="innerHttpError")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.InnerHttpError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets error from inner http call
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Message">
       <MemberSignature Language="C#" Value="public string Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
@@ -97,10 +125,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="message")</AttributeName>
         </Attribute>
       </Attributes>

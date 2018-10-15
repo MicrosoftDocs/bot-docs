@@ -1,0 +1,91 @@
+﻿<Type Name="ShowTypingMiddleware" FullName="Microsoft.Bot.Builder.ShowTypingMiddleware">
+  <TypeSignature Language="C#" Value="public class ShowTypingMiddleware : Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ShowTypingMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ShowTypingMiddleware" />
+  <TypeSignature Language="VB.NET" Value="Public Class ShowTypingMiddleware&#xA;Implements IMiddleware" />
+  <TypeSignature Language="F#" Value="type ShowTypingMiddleware = class&#xA;    interface IMiddleware" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IMiddleware</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            When added, this middleware will send typing activities back to the user when a Message activity
+            is receieved to let them know that the bot has receieved the message and is working on the response.
+            You can specify a delay in milliseconds before the first typing activity is sent and then a frequency,
+            also in milliseconds which determines how often another typing activity is sent. Typing activities
+            will continue to be sent until your bot sends another message back to the user.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ShowTypingMiddleware (int delay = 500, int period = 2000);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 delay, int32 period) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ShowTypingMiddleware.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional delay As Integer = 500, Optional period As Integer = 2000)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ShowTypingMiddleware : int * int -&gt; Microsoft.Bot.Builder.ShowTypingMiddleware" Usage="new Microsoft.Bot.Builder.ShowTypingMiddleware (delay, period)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="delay" Type="System.Int32" />
+        <Parameter Name="period" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="delay">Initial delay before sending first typing indicator. Defaults to 500ms.</param>
+        <param name="period">Rate at which additional typing indicators will be sent. Defaults to every 2000ms.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.ShowTypingMiddleware" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurnAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.NextDelegate next, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.NextDelegate next, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ShowTypingMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="showTypingMiddleware.OnTurnAsync (turnContext, next, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="next" Type="Microsoft.Bot.Builder.NextDelegate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="next">The delegate to call to continue the bot middleware pipeline.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Processess an incoming activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>Spawns a thread that sends the periodic typing activities until the turn ends.
+            </remarks>
+        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
+        <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

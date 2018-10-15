@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ITemplateRenderer = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -17,27 +17,27 @@
   </Docs>
   <Members>
     <Member MemberName="RenderTemplate">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;object&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext context, string language, string templateId, object data) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;object&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (context As ITurnContext, language As String, templateId As String, data As Object) As Task(Of Object)" />
-      <MemberSignature Language="F#" Value="abstract member RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="iTemplateRenderer.RenderTemplate (context, language, templateId, data)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (turnContext As ITurnContext, language As String, templateId As String, data As Object) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member RenderTemplate : Microsoft.Bot.Builder.ITurnContext * string * string * obj -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="iTemplateRenderer.RenderTemplate (turnContext, language, templateId, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
         <Parameter Name="language" Type="System.String" />
         <Parameter Name="templateId" Type="System.String" />
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">context</param>
+        <param name="turnContext">context</param>
         <param name="language">language to render</param>
         <param name="templateId">tenmplate to render</param>
         <param name="data">data object to use to render</param>

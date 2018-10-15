@@ -7,19 +7,22 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 02/21/2018
+ms.date: 08/30/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Create a bot with the Bot Builder SDK for Python
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-The Bot Builder SDK for Python is an easy-to-use framework for developing bots. This quickstart walks you through building a bot, and then testing it with the Bot Framework Emulator. The SDK v4 is in preview, visit Python [GitHub repo](https://github.com/Microsoft/botbuilder-python) for more information. 
+# Create a bot with the Bot Builder SDK for Python
+
+>[!NOTE] 
+> The Python SDK is in **preview**, visit Python [GitHub repo](https://github.com/Microsoft/botbuilder-python) for more information. 
+
+This quickstart walks you through building a bot, and then testing it with the Bot Framework Emulator. 
 
 ## Pre-requisite
 - [Python 3.6.4](https://www.python.org/downloads/) 
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
-# Create a bot
+## Create a bot
 In the main.py file, import the following standard modules:
 
 ```python
@@ -75,7 +78,7 @@ class BotRequestHandler(http.server.BaseHTTPRequestHandler):
         credential_provider = SimpleCredentialProvider(APP_ID, APP_PASSWORD)
         loop = asyncio.new_event_loop()
         try:
-            loop.run_until_complete(JwtTokenValidation.assert_valid_activity(
+            loop.run_until_complete(JwtTokenValidation.authenticate_request(
                 activity, self.headers.get("Authorization"), credential_provider))
             return True
         except Exception as ex:
@@ -121,24 +124,20 @@ python main.py
 ```
 In your local terminal you should see the message 'Started http server on localhost:9000'
 
-### Start the emulator and connect your bot
+## Start the emulator and connect your bot
 
 Next, start the emulator and then connect to your bot in the emulator:
 
+1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+2. Select the .bot file located in the directory where you created the project.
 
-1. Click **create a new bot configuration** link in the emulator "Welcome" tab. 
+## Interact with your bot
 
-2. Enter a **Bot name** and enter the directory path to your bot code. The bot configuration file will be saved to this path.
+Send a message to your bot, and the bot will respond back with a message.
+![Emulator running](../media/emulator-v4/emulator-running.png)
 
-3. Type `http://localhost:port-number/api/messages` into the **Endpoint URL** field, where *port-number* matches the port number shown in the browser where your application is running.
-
-4. Click **Connect** to connect to your bot. You won't need to specify **Microsoft App ID** and **Microsoft App Password**. You can leave these fields blank for now. You'll get this information later when you register your bot.
-
-Type **Hello** in the emulator, and the bot will echo back **You said "Hello"**.
 
 ## Next steps
 
-Next, [deploy your bot to azure](../bot-builder-howto-deploy-azure.md) or jump into the concepts that explain a bot and how it works.
-
 > [!div class="nextstepaction"]
-> [Basic Bot concepts](../v4sdk/bot-builder-basics.md)
+> [Bot concepts](../v4sdk/bot-builder-basics.md)

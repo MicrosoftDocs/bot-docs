@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 03/08/2018
+ms.date: 10/11/2018
 ---
 
 # Connect a bot to Direct Line

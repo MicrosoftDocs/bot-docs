@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ResolverScorable&lt;'OuterState, 'OuterScore, 'InnerState, 'InnerScore (requires 'OuterState :&gt; ResolverScope&lt;'InnerScore&gt;)&gt; = class&#xA;    inherit ScorableAggregator&lt;IResolver, 'OuterState, 'OuterScore, IResolver, 'InnerState, 'InnerScore (requires 'OuterState :&gt; ResolverScope&lt;'InnerScore&gt;)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="OuterState">
@@ -30,6 +30,11 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="OuterState">To be added.</typeparam>
     <typeparam name="OuterScore">To be added.</typeparam>
@@ -48,7 +53,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inner" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;" />
@@ -68,7 +73,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;</ReturnType>

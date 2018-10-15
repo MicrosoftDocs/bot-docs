@@ -1,0 +1,87 @@
+﻿<Type Name="Tokenizer" FullName="Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer">
+  <TypeSignature Language="C#" Value="public class Tokenizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Tokenizer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class Tokenizer" />
+  <TypeSignature Language="F#" Value="type Tokenizer = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Tokenizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTokenizer">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction DefaultTokenizer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction DefaultTokenizer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.DefaultTokenizer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultTokenizer As TokenizerFunction" />
+      <MemberSignature Language="F#" Value="member this.DefaultTokenizer : Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.DefaultTokenizer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTokenizerImpl">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt; DefaultTokenizerImpl (string text, string locale = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Token&gt; DefaultTokenizerImpl(string text, string locale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.DefaultTokenizerImpl(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultTokenizerImpl (text As String, Optional locale As String = null) As List(Of Token)" />
+      <MemberSignature Language="F#" Value="static member DefaultTokenizerImpl : string * string -&gt; System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.DefaultTokenizerImpl (text, locale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="locale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text being tokenized.</param>
+        <param name="locale">The locale of the text.</param>
+        <summary>
+            Simple tokenizer that breaks on spaces and punctuation. The only normalization done is to lowercase.
+            This is an exact port of the JavaScript implementation of the algorithm except that here
+            the .NET library functions are used in place of the JavaScript string code point functions.
+            </summary>
+        <returns>A list of tokens.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

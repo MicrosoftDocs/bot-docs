@@ -1,32 +1,33 @@
 ﻿<Type Name="AzureBlobStorage" FullName="Microsoft.Bot.Builder.Azure.AzureBlobStorage">
-  <TypeSignature Language="C#" Value="public class AzureBlobStorage : Microsoft.Bot.Builder.Core.Extensions.IStorage" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureBlobStorage extends System.Object implements class Microsoft.Bot.Builder.Core.Extensions.IStorage" />
+  <TypeSignature Language="C#" Value="public class AzureBlobStorage : Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureBlobStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.AzureBlobStorage" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureBlobStorage&#xA;Implements IStorage" />
   <TypeSignature Language="F#" Value="type AzureBlobStorage = class&#xA;    interface IStorage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>Microsoft.Bot.Builder.Core.Extensions.IStorage</InterfaceName>
+      <InterfaceName>Microsoft.Bot.Builder.IStorage</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
     <summary>
-            Models IStorage using Azure Storge Blobs
+            Implements <see cref="T:Microsoft.Bot.Builder.IStorage" /> using Azure Blob Storage.
             </summary>
     <remarks>
-            The AzureBlobStorage implements State's IStorage using a single Azure Storage Blob Container.
-            Each entity or StoreItem is serialized into a JSON string and stored in an individual text blob.
-            Each blob is named after the StoreItem key which is encoded and ensure it conforms a valid blob name.
-            Concurrency is managed in a per entity (e.g. per blob) basis. If an entity implement IStoreItem
-            its eTag property value will be set with the blob's ETag upon Read. Afterward an AccessCondition
-            with the ETag value will be generated during Write. New entities will simple have an null ETag.
+            This class uses a single Azure Storage Blob Container.
+            Each entity or <see cref="T:Microsoft.Bot.Builder.IStoreItem" /> is serialized into a JSON string and stored in an individual text blob.
+            Each blob is named after the store item key,  which is encoded so that it conforms a valid blob name.
+            Concurrency is managed on a per-entity (that is, per-blob) basis. If an entity is an <see cref="T:Microsoft.Bot.Builder.IStoreItem" />,
+            the storage object will set the entity's <see cref="P:Microsoft.Bot.Builder.IStoreItem.ETag" /> property value to the blob's ETag upon read.
+            Afterward, an <see cref="T:Microsoft.WindowsAzure.Storage.AccessCondition" /> with the ETag value will be generated during Write.
+            New entities start with a null ETag.
             </remarks>
   </Docs>
   <Members>
@@ -39,135 +40,135 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
         <Parameter Name="containerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storageAccount">Azure CloudStorageAccount instance</param>
-        <param name="containerName">Name of the Blob container where entities will be stored</param>
+        <param name="storageAccount">Azure CloudStorageAccount instance.</param>
+        <param name="containerName">Name of the Blob container where entities will be stored.</param>
         <summary>
-            Creates the AzureBlobStorage instance
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.AzureBlobStorage" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureBlobStorage (string dataConnectionString, string containerName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataConnectionString, string containerName) cil managed" />
+      <MemberSignature Language="C#" Value="public AzureBlobStorage (string dataConnectionstring, string containerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataConnectionstring, string containerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (dataConnectionString As String, containerName As String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.AzureBlobStorage : string * string -&gt; Microsoft.Bot.Builder.Azure.AzureBlobStorage" Usage="new Microsoft.Bot.Builder.Azure.AzureBlobStorage (dataConnectionString, containerName)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataConnectionstring As String, containerName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.AzureBlobStorage : string * string -&gt; Microsoft.Bot.Builder.Azure.AzureBlobStorage" Usage="new Microsoft.Bot.Builder.Azure.AzureBlobStorage (dataConnectionstring, containerName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="dataConnectionString" Type="System.String" />
+        <Parameter Name="dataConnectionstring" Type="System.String" />
         <Parameter Name="containerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataConnectionString">Azure Storage connection string</param>
-        <param name="containerName">Name of the Blob container where entities will be stored</param>
+        <param name="dataConnectionstring">Azure Storage connection string.</param>
+        <param name="containerName">Name of the Blob container where entities will be stored.</param>
         <summary>
-            The Azure Storage Blob Container where entities will be stored
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.AzureBlobStorage" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Delete (string[] keys);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Delete(string[] keys) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.Delete(System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Function Delete (keys As String()) As Task" />
-      <MemberSignature Language="F#" Value="abstract member Delete : string[] -&gt; System.Threading.Tasks.Task&#xA;override this.Delete : string[] -&gt; System.Threading.Tasks.Task" Usage="azureBlobStorage.Delete keys" />
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAsync (string[] keys, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.DeleteAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="azureBlobStorage.DeleteAsync (keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IStorage.Delete(System.String[])</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IStorage.DeleteAsync(System.String[],System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="keys">An array of entity keys</param>
+        <param name="keys">An array of entity keys.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Deletes entity blobs from the configured container
+            Deletes entity blobs from the configured container.
             </summary>
-        <returns />
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;&gt; Read (params string[] keys);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;&gt; Read(string[] keys) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.Read(System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Function Read (ParamArray keys As String()) As Task(Of IEnumerable(Of KeyValuePair(Of String, Object)))" />
-      <MemberSignature Language="F#" Value="abstract member Read : string[] -&gt; System.Threading.Tasks.Task&lt;seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;&gt;&#xA;override this.Read : string[] -&gt; System.Threading.Tasks.Task&lt;seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;&gt;" Usage="azureBlobStorage.Read keys" />
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; ReadAsync (string[] keys, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; ReadAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.ReadAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;&#xA;override this.ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;" Usage="azureBlobStorage.ReadAsync (keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IStorage.Read(System.String[])</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IStorage.ReadAsync(System.String[],System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keys" Type="System.String[]">
-          <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
+        <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="keys">An array of entity keys</param>
+        <param name="keys">An array of entity keys.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Retrieve entities from the configured blob container
+            Retrieve entities from the configured blob container.
             </summary>
-        <returns />
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Write (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; changes);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Write(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; changes) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.Write(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Write (changes As IEnumerable(Of KeyValuePair(Of String, Object))) As Task" />
-      <MemberSignature Language="F#" Value="abstract member Write : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.Write : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Threading.Tasks.Task" Usage="azureBlobStorage.Write changes" />
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (System.Collections.Generic.IDictionary&lt;string,object&gt; changes, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; changes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="azureBlobStorage.WriteAsync (changes, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Core.Extensions.IStorage.Write(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="changes" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
+        <Parameter Name="changes" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="changes"></param>
+        <param name="changes">The changes to write to storage.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Stores a new entity in the configured blob container
+            Stores a new entity in the configured blob container.
             </summary>
-        <returns />
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

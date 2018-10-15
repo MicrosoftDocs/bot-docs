@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ISuggestionActivity = interface&#xA;    interface IMessageActivity&#xA;    interface IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -15,10 +15,11 @@
   </Interfaces>
   <Docs>
     <summary>
-            SuggestionActivity (Type="suggestion")
+            Represents a private suggestion to the <see cref="P:Microsoft.Bot.Schema.Activity.Recipient" /> about another activity.
             </summary>
     <remarks>
-            A suggestion is a private message for the Recipient which can offer a suggestion activity for an activity by ReplyToId property
+            The activity's <see cref="P:Microsoft.Bot.Schema.Activity.ReplyToId" /> property identifies the activity being referenced.
+            The activity's <see cref="P:Microsoft.Bot.Schema.Activity.Recipient" /> property indicates which user the suggestion is for.
             </remarks>
   </Docs>
   <Members>
@@ -31,14 +32,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            TextHighlight in the activity represented in the ReplyToId property
+            Indicates the sections of text in the referenced message to highlight.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

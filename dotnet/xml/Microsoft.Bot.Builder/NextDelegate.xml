@@ -1,0 +1,31 @@
+﻿<Type Name="NextDelegate" FullName="Microsoft.Bot.Builder.NextDelegate">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task NextDelegate(CancellationToken cancellationToken);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NextDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.NextDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function NextDelegate(cancellationToken As CancellationToken) As Task " />
+  <TypeSignature Language="F#" Value="type NextDelegate = delegate of CancellationToken -&gt; Task" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+    <summary>
+            Encapsulates an asynchronous method that calls the next
+            <see cref="T:Microsoft.Bot.Builder.IMiddleware" />.<see cref="M:Microsoft.Bot.Builder.IMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+            or <see cref="T:Microsoft.Bot.Builder.IBot" />.<see cref="M:Microsoft.Bot.Builder.IBot.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" /> method in the middleware pipeline.
+            </summary>
+    <returns>A task that represents the work queued to execute.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

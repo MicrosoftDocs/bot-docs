@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type IDialogContext = interface&#xA;    interface IDialogStack&#xA;    interface IBotContext&#xA;    interface IBotData&#xA;    interface IBotToUser" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>

@@ -2,24 +2,21 @@
 title: Configure a bot to run on one or more channels | Microsoft Docs
 description: Learn how to configure a bot to run on one or more channels using the Bot Framework Portal.
 keywords: bot channels, configure, cortana, facebook messenger, kik, slack, skype, azure portal
-author: RobStand
-ms.author: kamrani
+author: ivorb
+ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
-
+ms.date: 09/22/2018
 ---
 
 # Connect a bot to channels
 
-A channel is a connection between the Bot Framework and communication apps. You configure a bot to connect to the channels you want it to be available on. For example, a bot connected to the Skype channel can be added to a contact list and people can interact with it in Skype. 
+A channel is a connection between the bot  and communication apps. You configure a bot to connect to the channels you want it to be available on. The Bot Framework Service, configured through the Azure portal, connects your bot to these channels and facilitates communication between your bot and the user. You can connect to many popular services, such as [Cortana](bot-service-channel-connect-cortana.md), [Facebook Messenger](bot-service-channel-connect-facebook.md), [Kik](bot-service-channel-connect-kik.md), and [Slack](bot-service-channel-connect-slack.md), as well as several others. [Skype](https://dev.skype.com/bots) and Web Chat are pre-configured for you. In addition to standard channels provided with the Bot Connector Service, you can also connect your bot to your own client application using Direct Line as your channel.
 
-The channels include many popular services, such as [Cortana](bot-service-channel-connect-cortana.md), [Facebook Messenger](bot-service-channel-connect-facebook.md), [Kik](bot-service-channel-connect-kik.md), and [Slack](bot-service-channel-connect-slack.md), as well as several others. [Skype](https://dev.skype.com/bots) and Web Chat are pre-configured for you. 
+The Bot Framework Service allows you to develop your bot in a channel-agnostic way by normalizing messages that the bot sends to a channel. This involves converting it from the bot builder schema into the channel’s schema. However, if the channel does not support all aspects of the bot builder schema, the service will try to convert the message to a format that the channel does support. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the connector may send the card as an image and include the actions as links in the message’s text.
 
-Connecting to channels is quick and easy in the [Azure Portal](https://portal.azure.com).
 
-## Get started
 
 For most channels, you must provide channel configuration information to run your bot on the channel. Most channels require that your bot have an account on the channel, and others, like Facebook Messenger, require your bot to have an application registered with the channel also.
 
@@ -30,7 +27,7 @@ To configure your bot to connect to a channel, complete the following steps:
 3. In the Bot Service blade, click **Channels** under **Bot Management**.
 4. Click the icon of the channel you want to add to your bot.
 
-![Connect to channels](~/media/channels/connect-to-channels.png)
+![Connect to channels](./media/channels/connect-to-channels.png)
 
 After you've configured the channel, users on that channel can start using your bot.
 
@@ -38,5 +35,7 @@ After you've configured the channel, users on that channel can start using your 
 
 The publishing process is different for each channel.
 
-[!INCLUDE [publishing](~/includes/snippet-publish-to-channel.md)]
+[!INCLUDE [publishing](./includes/snippet-publish-to-channel.md)]
 
+## Additional resources
+The SDK includes samples that you can use to build bots. Visit [GitHub](https://github.com/Microsoft/BotBuilder-samples) repo to see list of samples.

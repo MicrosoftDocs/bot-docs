@@ -7,13 +7,13 @@ ms.author: mateusv
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 09/20/2018
  
 ---
 
 # Design the user experience
 
-Bots typically use some combination of **rich user controls**, **text and natural language**, and **speech** to exchange information with users.
+You can create bots with a variety of features such as text, buttons, images, rich cards displayed in carousel or list format, and more. However, each channel such as Facebook, Slack, Skype, etc. ultimately controls how its messaging clients render features. Even when multiple channels support a feature, each channel may render the feature in a slightly different way. In cases where a message contains feature(s) that a channel does not natively support, the channel may attempt to down-render message contents as text or as a static image, which can significantly impact the message's appearance on the client. In some cases, a channel may not support a particular feature at all. For example, GroupMe clients cannot display a typing indicator.
 
 ## Rich user controls
 
@@ -29,50 +29,22 @@ Microsoft Bot Service cards are programmable objects containing standardized col
 
 | Card type | Example | Description |
 | ---- | ---- | ---- |
-| AdaptiveCard | ![Adaptive card Image](~/media/adaptive-card.png) | An open card exchange format rendered as a JSON object. Typically used for cross-channel deployment of cards. Cards adapt to the look and feel of each host channel. |
-| AnimationCard | ![Animation card Image](~/media/animation-card1.png) | A card that can play animated GIFs or short videos. |
-| AudioCard | ![Audio card Image](~/media/audio-card.png) | A card that can play an audio file. |
-| HeroCard | ![Hero card Image](~/media/hero-card1.png) | A card that contains a single large image, one or more buttons, and text. Typically used to visually highlight a potential user selection. |
-| ThumbnailCard | ![Thumbnail card Image](~/media/thumbnail-card.png) | A card that contains a single thumbnail image, one or more buttons, and text. Typically used to visually highlight the buttons for a potential user selection. |
-| ReceiptCard | ![Receipt card Image](~/media/receipt-card1.png) | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-| SignInCard | ![Sign-in card Image](~/media/sign-in-card.png) | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-| SuggestedAction | ![Suggested actions card Image](~/media/suggested-actions.png) | Presents your user with a set of CardActions representing a user choice. This card disappears once any of the suggested actions is selected. |
-| VideoCard | ![Video card Image](~/media/video-card.png) | A card that can play videos. Typically used to open a URL and stream an available video. |
-| CardCarousel | ![Card carousel Image](~/media/card-carousel.png) | A horizontally scrollable collection of cards that allows your user to easily view a series of possible user choices.|
+| AdaptiveCard | ![Adaptive card Image](./media/adaptive-card.png) | An open card exchange format rendered as a JSON object. Typically used for cross-channel deployment of cards. Cards adapt to the look and feel of each host channel. |
+| AnimationCard | ![Animation card Image](./media/animation-card1.png) | A card that can play animated GIFs or short videos. |
+| AudioCard | ![Audio card Image](./media/audio-card.png) | A card that can play an audio file. |
+| HeroCard | ![Hero card Image](./media/hero-card1.png) | A card that contains a single large image, one or more buttons, and text. Typically used to visually highlight a potential user selection. |
+| ThumbnailCard | ![Thumbnail card Image](./media/thumbnail-card.png) | A card that contains a single thumbnail image, one or more buttons, and text. Typically used to visually highlight the buttons for a potential user selection. |
+| ReceiptCard | ![Receipt card Image](./media/receipt-card1.png) | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| SignInCard | ![Sign-in card Image](./media/sign-in-card.png) | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| SuggestedAction | ![Suggested actions card Image](./media/suggested-actions.png) | Presents your user with a set of CardActions representing a user choice. This card disappears once any of the suggested actions is selected. |
+| VideoCard | ![Video card Image](./media/video-card.png) | A card that can play videos. Typically used to open a URL and stream an available video. |
+| CardCarousel | ![Card carousel Image](./media/card-carousel.png) | A horizontally scrollable collection of cards that allows your user to easily view a series of possible user choices.|
 
-Cards allow you to design your bot once, and have it work across a variety of channels. However, not all card types are fully supported across all available channels. The following tables show a sampling of current support for card types across a selection of channels. For the latest information concerning channel support, be sure to use the [Channel Inspector](bot-service-channel-inspector.md) to see how particular cards look and function on your channel of interest. For further in depth information on adaptive cards, be sure to also see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
+Cards allow you to design your bot once, and have it work across a variety of channels. However, not all card types are fully supported across all available channels. 
 
-The table below shows channel support for card types that would typically be used within a card carousel.
+Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md). Sample code can also be found here for cards: [C#](https://aka.ms/bot-cards-sample-code-cs)/[JS](https://aka.ms/bot-cards-sample-code-js) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-js-sample-code), and suggested actions: [C#](https://aka.ms/bot-suggested-actions-code)/[JS](https://aka.ms/bot-suggested-actions-js-code).
 
-| Channel | Adaptive | Hero | Thumbnail | Carousel |
-| ---- | ---- | ---- | ---- | ---- |
-| Cortana | ✔ | ✔ | ✔ | ✔ |
-| O365 Email | ✔ | ✔ | ✔ | ✔ |
-| Facebook | - | ✔ | ✔ | ✔ |
-| Kik | ✔ | ✔ | ✔ | ✔ |
-| Skype | ✔ | ✔ | ✔ | ✔ |
-| Slack | ✔ | ✔ | ✔ | ✔ |
-| SMS | ✔ | ✔ | ✔ | ✔ |
-| Teams | ✔ | ✔ | ✔ | ✔ |
-| Web Chat | ✔ | ✔ | ✔ | ✔ |
 
-The following table shows channel support for additional types of Microsoft Bot Service cards.
-
-| Channel | Video | Receipt | SignIn | SuggestedAction |
-| ---- | ---- | ---- | ---- | ---- |
-| Cortana | ✔ | ✔ | ✔ | - |
-| O365 Email | ✔ | ✔ | ✔ | ✔ |
-| Facebook | ✔ | ✔ | ✔ | ✔ |
-| Kik | ✔ | ✔ | ✔ | ✔ |
-| Skype | ✔ | ✔ | ✔ | ✔ |
-| Slack | ✔ | ✔ | ✔ | ✔ |
-| SMS | ✔ | ✔ | - | ✔ |
-| Teams | - | ✔ | ✔ | - |
-| Web Chat | ✔ | ✔ | ✔ | ✔ |
-
-✔ = supported
-
-Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md).
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." As discussed [previously](~/bot-service-design-principles.md#designing-a-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it is often unnecessary and introduces unjustified complexity.
 
@@ -114,7 +86,7 @@ In other scenarios, a user may be **typing simple requests based on natural lang
 
 Using the APIs, your bot can extract the key components of the user's text to identify the user's intent. When implementing natural language understanding capabilities in your bot, set realistic expectations for the level of detail that users are likely to provide in their input. 
 
-![how users talk](~/media/bot-service-design-user-experience/buy-house.png)
+![how users talk](./media/bot-service-design-user-experience/buy-house.png)
 
 > [!TIP]
 > When building natural language models, do not assume that users will provide all the required information in their initial query. 
@@ -131,5 +103,4 @@ A bot can use **speech** input and/or output to communicate with users. In cases
 Just like people communicate with each other using a combination of gestures, voice, and symbols, bots can communicate with users using a combination of rich user controls, text (sometimes including natural language), and speech. These communication methods can be used together; you do not need to choose one over another. 
 
 For example, imagine a "cooking bot" that helps users with recipes, where the bot may provide instructions by playing a video or displaying a series of pictures to explain what needs to be done. Some users may prefer to flip pages of the recipe or ask the bot questions using speech while they are assembling a recipe. Others may prefer to touch the screen of a device instead of interacting with the bot via speech. When designing your bot, incorporate the UX elements that support the ways in which users will likely prefer to interact with your bot, given the specific use cases that it is intended support. 
-
 

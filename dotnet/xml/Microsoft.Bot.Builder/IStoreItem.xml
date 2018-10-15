@@ -1,0 +1,42 @@
+﻿<Type Name="IStoreItem" FullName="Microsoft.Bot.Builder.IStoreItem">
+  <TypeSignature Language="C#" Value="public interface IStoreItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStoreItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.IStoreItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStoreItem" />
+  <TypeSignature Language="F#" Value="type IStoreItem = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Exposes an ETag for concurrency control.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public string ETag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.IStoreItem.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public Property ETag As String" />
+      <MemberSignature Language="F#" Value="member this.ETag : string with get, set" Usage="Microsoft.Bot.Builder.IStoreItem.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the ETag for concurrency control.
+            </summary>
+        <value>The concurrency control ETag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

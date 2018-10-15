@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type FoldScorable&lt;'Item, 'Score&gt;.OnStageDelegate = delegate of FoldStage * IScorable&lt;'Item, 'Score&gt; * 'Item * obj * 'Score -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item" />

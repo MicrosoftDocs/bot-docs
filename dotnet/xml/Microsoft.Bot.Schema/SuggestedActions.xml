@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SuggestedActions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -35,6 +35,33 @@
             Initializes a new instance of the SuggestedActions class.
             </summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SuggestedActions (System.Collections.Generic.IEnumerable&lt;string&gt; to, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.CardAction&gt; actions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;string&gt; to, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.CardAction&gt; actions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.SuggestedActions.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.CardAction})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (to As IEnumerable(Of String), actions As IEnumerable(Of CardAction))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.SuggestedActions : seq&lt;string&gt; * seq&lt;Microsoft.Bot.Schema.CardAction&gt; -&gt; Microsoft.Bot.Schema.SuggestedActions" Usage="new Microsoft.Bot.Schema.SuggestedActions (to, actions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="to" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.CardAction&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="to">Ids of the recipients that the actions should be
+            shown to. These Ids are relative to the channelId and a subset of
+            all recipients of the activity.</param>
+        <param name="actions">Actions that can be shown to the user.</param>
+        <summary>
+            Initializes a new instance of the SuggestedActions class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,7 +73,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="to" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -72,10 +99,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="actions")</AttributeName>
         </Attribute>
       </Attributes>
@@ -99,10 +126,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="to")</AttributeName>
         </Attribute>
       </Attributes>

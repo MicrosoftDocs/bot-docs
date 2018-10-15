@@ -1,0 +1,163 @@
+﻿<Type Name="CosmosDbStorageOptions" FullName="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions">
+  <TypeSignature Language="C#" Value="public class CosmosDbStorageOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbStorageOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbStorageOptions" />
+  <TypeSignature Language="F#" Value="type CosmosDbStorageOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Cosmos DB Storage Options.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbStorageOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthKey">
+      <MemberSignature Language="C#" Value="public string AuthKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.AuthKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthKey As String" />
+      <MemberSignature Language="F#" Value="member this.AuthKey : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.AuthKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the authentication key for Cosmos DB.
+            </summary>
+        <value>
+            The authentication key for Cosmos DB.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionId">
+      <MemberSignature Language="C#" Value="public string CollectionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CollectionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.CollectionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollectionId As String" />
+      <MemberSignature Language="F#" Value="member this.CollectionId : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.CollectionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the collection identifier.
+            </summary>
+        <value>
+            The collection identifier.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionPolicyConfigurator">
+      <MemberSignature Language="C#" Value="public Action&lt;Microsoft.Azure.Documents.Client.ConnectionPolicy&gt; ConnectionPolicyConfigurator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class Microsoft.Azure.Documents.Client.ConnectionPolicy&gt; ConnectionPolicyConfigurator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.ConnectionPolicyConfigurator" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionPolicyConfigurator As Action(Of ConnectionPolicy)" />
+      <MemberSignature Language="F#" Value="member this.ConnectionPolicyConfigurator : Action&lt;Microsoft.Azure.Documents.Client.ConnectionPolicy&gt; with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.ConnectionPolicyConfigurator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Microsoft.Azure.Documents.Client.ConnectionPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the connection policy configurator. This action allows you to customise the connection parameters.
+            </summary>
+        <value>
+            The connection policy configurator.
+            </value>
+        <remarks>You can use this delegate to
+            further customize the connection to CosmosDB,
+            such as setting connection mode, retry options, timeouts, and so on.
+            See https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.connectionpolicy?view=azure-dotnet
+            for more information.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosmosDBEndpoint">
+      <MemberSignature Language="C#" Value="public Uri CosmosDBEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CosmosDBEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.CosmosDBEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property CosmosDBEndpoint As Uri" />
+      <MemberSignature Language="F#" Value="member this.CosmosDBEndpoint : Uri with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.CosmosDBEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the CosmosDB endpoint.
+            </summary>
+        <value>
+            The CosmosDB endpoint.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseId">
+      <MemberSignature Language="C#" Value="public string DatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.DatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseId As String" />
+      <MemberSignature Language="F#" Value="member this.DatabaseId : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions.DatabaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the database identifier for Cosmos DB instance.
+            </summary>
+        <value>
+            The database identifier for Cosmos DB instance.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

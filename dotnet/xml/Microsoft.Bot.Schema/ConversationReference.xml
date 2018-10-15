@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ConversationReference = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="activityId" Type="System.String" />
@@ -81,10 +81,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activityId")</AttributeName>
         </Attribute>
       </Attributes>
@@ -108,10 +108,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bot")</AttributeName>
         </Attribute>
       </Attributes>
@@ -135,10 +135,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
         </Attribute>
       </Attributes>
@@ -162,10 +162,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
         </Attribute>
       </Attributes>
@@ -180,16 +180,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetPostToBotMessage">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity GetPostToBotMessage ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity GetPostToBotMessage() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.GetPostToBotMessage" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPostToBotMessage () As Activity" />
-      <MemberSignature Language="F#" Value="member this.GetPostToBotMessage : unit -&gt; Microsoft.Bot.Schema.Activity" Usage="conversationReference.GetPostToBotMessage " />
+    <Member MemberName="GetContinuationActivity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity GetContinuationActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity GetContinuationActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.GetContinuationActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContinuationActivity () As Activity" />
+      <MemberSignature Language="F#" Value="member this.GetContinuationActivity : unit -&gt; Microsoft.Bot.Schema.Activity" Usage="conversationReference.GetContinuationActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -198,29 +198,6 @@
       <Docs>
         <summary>
             Creates <see cref="T:Microsoft.Bot.Schema.Activity" /> from conversation reference as it is posted to bot.
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetPostToUserMessage">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity GetPostToUserMessage ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity GetPostToUserMessage() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationReference.GetPostToUserMessage" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPostToUserMessage () As Activity" />
-      <MemberSignature Language="F#" Value="member this.GetPostToUserMessage : unit -&gt; Microsoft.Bot.Schema.Activity" Usage="conversationReference.GetPostToUserMessage " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Creates <see cref="T:Microsoft.Bot.Schema.Activity" /> from conversation reference that can be posted to user as reply.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -235,10 +212,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")</AttributeName>
         </Attribute>
       </Attributes>
@@ -263,10 +240,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="user")</AttributeName>
         </Attribute>
       </Attributes>

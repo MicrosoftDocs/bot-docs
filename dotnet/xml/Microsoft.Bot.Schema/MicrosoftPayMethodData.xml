@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type MicrosoftPayMethodData = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,23 +38,23 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string mechantId = null, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = null, System.Collections.Generic.IList&lt;string&gt; supportedTypes = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mechantId, class System.Collections.Generic.IList`1&lt;string&gt; supportedNetworks, class System.Collections.Generic.IList`1&lt;string&gt; supportedTypes) cil managed" />
+      <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = null, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = null, System.Collections.Generic.IList&lt;string&gt; supportedTypes = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string merchantId, class System.Collections.Generic.IList`1&lt;string&gt; supportedNetworks, class System.Collections.Generic.IList`1&lt;string&gt; supportedTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional mechantId As String = null, Optional supportedNetworks As IList(Of String) = null, Optional supportedTypes As IList(Of String) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.MicrosoftPayMethodData : string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Bot.Schema.MicrosoftPayMethodData" Usage="new Microsoft.Bot.Schema.MicrosoftPayMethodData (mechantId, supportedNetworks, supportedTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional merchantId As String = null, Optional supportedNetworks As IList(Of String) = null, Optional supportedTypes As IList(Of String) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.MicrosoftPayMethodData : string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Bot.Schema.MicrosoftPayMethodData" Usage="new Microsoft.Bot.Schema.MicrosoftPayMethodData (merchantId, supportedNetworks, supportedTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="mechantId" Type="System.String" />
+        <Parameter Name="merchantId" Type="System.String" />
         <Parameter Name="supportedNetworks" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="supportedTypes" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="mechantId">Microsoft Pay Merchant ID</param>
+        <param name="merchantId">Microsoft Pay Merchant ID</param>
         <param name="supportedNetworks">Supported payment networks (e.g.,
             "visa" and "mastercard")</param>
         <param name="supportedTypes">Supported payment types (e.g.,
@@ -74,7 +74,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="merchantId" Type="System.String" />
@@ -93,20 +93,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MechantId">
-      <MemberSignature Language="C#" Value="public string MechantId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MechantId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.MicrosoftPayMethodData.MechantId" />
-      <MemberSignature Language="VB.NET" Value="Public Property MechantId As String" />
-      <MemberSignature Language="F#" Value="member this.MechantId : string with get, set" Usage="Microsoft.Bot.Schema.MicrosoftPayMethodData.MechantId" />
+    <Member MemberName="MerchantId">
+      <MemberSignature Language="C#" Value="public string MerchantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MerchantId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.MicrosoftPayMethodData.MerchantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MerchantId As String" />
+      <MemberSignature Language="F#" Value="member this.MerchantId : string with get, set" Usage="Microsoft.Bot.Schema.MicrosoftPayMethodData.MerchantId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="mechantId")</AttributeName>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="merchantId")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -129,7 +129,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -150,10 +150,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="mode")</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,10 +177,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="supportedNetworks")</AttributeName>
         </Attribute>
       </Attributes>
@@ -205,10 +205,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-preview">
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="supportedTypes")</AttributeName>
         </Attribute>
       </Attributes>
@@ -232,7 +232,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.PaymentMethodData</ReturnType>

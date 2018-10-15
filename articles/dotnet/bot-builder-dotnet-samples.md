@@ -6,11 +6,15 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 05/03/2018
+ms.date: 09/13/2018
 ---
+
 
 # Bot Builder SDK for .NET samples
 
+::: moniker range="azure-bot-service-3.0"
+
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
 These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
@@ -84,17 +88,12 @@ Sample | Description
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK v4 for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities. 
+Samples in the Bot Builder Samples repo demonstrate task-focused bots that show how to take advantage of features provided in the SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities. Refer to [readme](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) file for sample list and additional informaiton.
 
-Note: The SDK v4 is being actively developed and should therefore be used for experimentation only. 
-
-To get the samples, clone the [botbuilder-dotnet](https://github.com/Microsoft/botbuilder-dotnet) GitHub repository using Git.
+To get the samples, clone the [botbuilder-samples](https://github.com/Microsoft/botbuilder-samples) GitHub repository using Git.
 ```cmd
 git clone https://github.com/Microsoft/botbuilder-dotnet.git
-cd botbuilder-dotnet\samples-final
 ```
-The sample bots built with the Bot Builder SDK for .NET are organized in the **samples-final** directory.
-
 
 ::: moniker-end
 

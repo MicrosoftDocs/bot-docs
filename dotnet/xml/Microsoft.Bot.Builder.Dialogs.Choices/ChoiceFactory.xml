@@ -1,0 +1,239 @@
+﻿<Type Name="ChoiceFactory" FullName="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory">
+  <TypeSignature Language="C#" Value="public class ChoiceFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChoiceFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChoiceFactory" />
+  <TypeSignature Language="F#" Value="type ChoiceFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChoiceFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForChannel">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity ForChannel (string channelId, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; list, string text = null, string speak = null, Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity ForChannel(string channelId, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; list, string text, string speak, class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.ForChannel(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Choices.Choice},System.String,System.String,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForChannel (channelId As String, list As IList(Of Choice), Optional text As String = null, Optional speak As String = null, Optional options As ChoiceFactoryOptions = null) As IMessageActivity" />
+      <MemberSignature Language="F#" Value="static member ForChannel : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; * string * string * Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.ForChannel (channelId, list, text, speak, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <param name="list">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inline">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity Inline (System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, string text = null, string speak = null, Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity Inline(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, string text, string speak, class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.Inline(System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Choices.Choice},System.String,System.String,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Inline (choices As IList(Of Choice), Optional text As String = null, Optional speak As String = null, Optional options As ChoiceFactoryOptions = null) As Activity" />
+      <MemberSignature Language="F#" Value="static member Inline : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; * string * string * Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions -&gt; Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.Inline (choices, text, speak, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity List (System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, string text = null, string speak = null, Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity List(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, string text, string speak, class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.List(System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Choices.Choice},System.String,System.String,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function List (choices As IList(Of Choice), Optional text As String = null, Optional speak As String = null, Optional options As ChoiceFactoryOptions = null) As Activity" />
+      <MemberSignature Language="F#" Value="static member List : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; * string * string * Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions -&gt; Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.List (choices, text, speak, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity List (System.Collections.Generic.IList&lt;string&gt; choices, string text = null, string speak = null, Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity List(class System.Collections.Generic.IList`1&lt;string&gt; choices, string text, string speak, class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.List(System.Collections.Generic.IList{System.String},System.String,System.String,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function List (choices As IList(Of String), Optional text As String = null, Optional speak As String = null, Optional options As ChoiceFactoryOptions = null) As Activity" />
+      <MemberSignature Language="F#" Value="static member List : System.Collections.Generic.IList&lt;string&gt; * string * string * Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions -&gt; Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.List (choices, text, speak, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedAction">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedAction (System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, string text = null, string speak = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity SuggestedAction(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, string text, string speak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.SuggestedAction(System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Choices.Choice},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedAction (choices As IList(Of Choice), Optional text As String = null, Optional speak As String = null) As IMessageActivity" />
+      <MemberSignature Language="F#" Value="static member SuggestedAction : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.SuggestedAction (choices, text, speak)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedAction">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedAction (System.Collections.Generic.IList&lt;string&gt; choices, string text = null, string speak = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity SuggestedAction(class System.Collections.Generic.IList`1&lt;string&gt; choices, string text, string speak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.SuggestedAction(System.Collections.Generic.IList{System.String},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedAction (choices As IList(Of String), Optional text As String = null, Optional speak As String = null) As IMessageActivity" />
+      <MemberSignature Language="F#" Value="static member SuggestedAction : System.Collections.Generic.IList&lt;string&gt; * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.SuggestedAction (choices, text, speak)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="speak" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="speak">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToChoices">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; ToChoices (System.Collections.Generic.IList&lt;string&gt; choices);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; ToChoices(class System.Collections.Generic.IList`1&lt;string&gt; choices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.ToChoices(System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToChoices (choices As IList(Of String)) As IList(Of Choice)" />
+      <MemberSignature Language="F#" Value="static member ToChoices : System.Collections.Generic.IList&lt;string&gt; -&gt; System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactory.ToChoices choices" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

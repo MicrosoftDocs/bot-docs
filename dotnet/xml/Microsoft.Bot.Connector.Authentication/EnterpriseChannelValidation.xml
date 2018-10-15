@@ -1,0 +1,123 @@
+﻿<Type Name="EnterpriseChannelValidation" FullName="Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation">
+  <TypeSignature Language="C#" Value="public sealed class EnterpriseChannelValidation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnterpriseChannelValidation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnterpriseChannelValidation" />
+  <TypeSignature Language="F#" Value="type EnterpriseChannelValidation = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EnterpriseChannelValidation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticateChannelToken">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, string serviceUrl, System.Net.Http.HttpClient httpClient, string channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, string serviceUrl, class System.Net.Http.HttpClient httpClient, string channelId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.AuthenticateChannelToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.String,System.Net.Http.HttpClient,System.String)" />
+      <MemberSignature Language="F#" Value="static member AuthenticateChannelToken : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * string * System.Net.Http.HttpClient * string -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.AuthenticateChannelToken (authHeader, credentials, channelProvider, serviceUrl, httpClient, channelId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authHeader" Type="System.String" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="serviceUrl" Type="System.String" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="channelId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="authHeader">The raw HTTP header in the format: "Bearer [longString]"</param>
+        <param name="credentials">The user defined set of valid credentials, such as the AppId.</param>
+        <param name="channelProvider">The user defined configuration for the channel.</param>
+        <param name="serviceUrl">The service url from the request</param>
+        <param name="httpClient">Authentication of tokens requires calling out to validate Endorsements and related documents. The
+            HttpClient is used for making those calls. Those calls generally require TLS connections, which are expensive to
+            setup and teardown, so a shared HttpClient is recommended.</param>
+        <param name="channelId">The ID of the channel to validate.</param>
+        <summary>
+            Validate the incoming Auth Header as a token sent from a Bot Framework Channel Service.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBotFromEnterpriseChannelTokenValidationParameters">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.TokenValidationParameters ToBotFromEnterpriseChannelTokenValidationParameters;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.TokenValidationParameters ToBotFromEnterpriseChannelTokenValidationParameters" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.ToBotFromEnterpriseChannelTokenValidationParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToBotFromEnterpriseChannelTokenValidationParameters As TokenValidationParameters " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToBotFromEnterpriseChannelTokenValidationParameters : Microsoft.IdentityModel.Tokens.TokenValidationParameters" Usage="Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.ToBotFromEnterpriseChannelTokenValidationParameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.TokenValidationParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO BOT FROM ENTERPRISE CHANNEL: Token validation parameters when connecting to a bot
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateIdentity">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ValidateIdentity (System.Security.Claims.ClaimsIdentity identity, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ValidateIdentity(class System.Security.Claims.ClaimsIdentity identity, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, string serviceUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.ValidateIdentity(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ValidateIdentity (identity As ClaimsIdentity, credentials As ICredentialProvider, serviceUrl As String) As Task" />
+      <MemberSignature Language="F#" Value="static member ValidateIdentity : System.Security.Claims.ClaimsIdentity * Microsoft.Bot.Connector.Authentication.ICredentialProvider * string -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Connector.Authentication.EnterpriseChannelValidation.ValidateIdentity (identity, credentials, serviceUrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="serviceUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identity">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="serviceUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

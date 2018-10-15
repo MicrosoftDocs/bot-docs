@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type BotMessageHandlerBase = class&#xA;    inherit HttpMessageHandler" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.Http.HttpMessageHandler</BaseTypeName>
@@ -18,17 +18,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotMessageHandlerBase (Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter botFrameworkAdapter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter botFrameworkAdapter) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase.#ctor(Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase : Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter -&gt; Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase" Usage="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase botFrameworkAdapter" />
+      <MemberSignature Language="C#" Value="public BotMessageHandlerBase (Microsoft.Bot.Builder.BotFrameworkAdapter botFrameworkAdapter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.BotFrameworkAdapter botFrameworkAdapter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase.#ctor(Microsoft.Bot.Builder.BotFrameworkAdapter)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase : Microsoft.Bot.Builder.BotFrameworkAdapter -&gt; Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase" Usage="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase botFrameworkAdapter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="botFrameworkAdapter" Type="Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter" />
+        <Parameter Name="botFrameworkAdapter" Type="Microsoft.Bot.Builder.BotFrameworkAdapter" />
       </Parameters>
       <Docs>
         <param name="botFrameworkAdapter">To be added.</param>
@@ -45,7 +45,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.Formatting.MediaTypeFormatter[]</ReturnType>
@@ -56,22 +56,22 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessMessageRequestAsync">
-      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; ProcessMessageRequestAsync (System.Net.Http.HttpRequestMessage request, Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter botFrameworkAdapter, Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt; botCallbackHandler, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; ProcessMessageRequestAsync(class System.Net.Http.HttpRequestMessage request, class Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter botFrameworkAdapter, class System.Func`2&lt;class Microsoft.Bot.Builder.ITurnContext, class System.Threading.Tasks.Task&gt; botCallbackHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase.ProcessMessageRequestAsync(System.Net.Http.HttpRequestMessage,Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member ProcessMessageRequestAsync : System.Net.Http.HttpRequestMessage * Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter * Func&lt;Microsoft.Bot.Builder.ITurnContext, System.Threading.Tasks.Task&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="botMessageHandlerBase.ProcessMessageRequestAsync (request, botFrameworkAdapter, botCallbackHandler, cancellationToken)" />
+      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; ProcessMessageRequestAsync (System.Net.Http.HttpRequestMessage request, Microsoft.Bot.Builder.BotFrameworkAdapter botFrameworkAdapter, Microsoft.Bot.Builder.BotCallbackHandler botCallbackHandler, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; ProcessMessageRequestAsync(class System.Net.Http.HttpRequestMessage request, class Microsoft.Bot.Builder.BotFrameworkAdapter botFrameworkAdapter, class Microsoft.Bot.Builder.BotCallbackHandler botCallbackHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase.ProcessMessageRequestAsync(System.Net.Http.HttpRequestMessage,Microsoft.Bot.Builder.BotFrameworkAdapter,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessMessageRequestAsync : System.Net.Http.HttpRequestMessage * Microsoft.Bot.Builder.BotFrameworkAdapter * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="botMessageHandlerBase.ProcessMessageRequestAsync (request, botFrameworkAdapter, botCallbackHandler, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
-        <Parameter Name="botFrameworkAdapter" Type="Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter" />
-        <Parameter Name="botCallbackHandler" Type="System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="botFrameworkAdapter" Type="Microsoft.Bot.Builder.BotFrameworkAdapter" />
+        <Parameter Name="botCallbackHandler" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -92,7 +92,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>

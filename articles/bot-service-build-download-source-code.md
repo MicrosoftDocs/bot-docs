@@ -2,79 +2,110 @@
 title: Download and redeploy bot source code | Microsoft Docs
 description: Learn how to download and publish a Bot Service.
 keywords: download source code, redeploy, deploy, zip file, publish
-author: v-ducvo
-ms.author: v-ducvo
+author: ivorb
+ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 03/08/2018
+ms.date: 09/26/2018
 ---
+# Download and redeploy bot code
+Azure Bot Service allows you to download the entire source project for your bot so that you can work locally using an IDE of your choice. After you are done updating code, you can publish your changes back to the Azure portal. We'll show you how to download code using the Azure portal and `az` cli. We'll also cover redeploying your updated bot code using Visual Studio and `az` cli tool. You can choose the method that works best for you.
 
-# Download and redeploy bot source code
+## Prerequisites
+- Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
+- Install az botservice extension by using `az extension add -n botservice` command
 
-Bot Service allows you to download the entire source project for your bot. This allows you to work on your bot locally using an IDE of your choice. Once you are done making changes, you can publish your changes back to Azure. 
+### Download code using the Azure portal
+To download code from the [Azure portal](https://portal.azure.com), do the following:
+1. Open the blade for the bot.
+1. Under the **Bot management** section, Click **Build**.
+1. Under **Download source code**, click **Download zip file**.
+1. Wait until Azure prepares your download URI, and then click **Download zip file** in the notification.
+1. Save and extract the .zip file to a local directory.
 
-This topic will show you how to download your bot's source code and publishing the changes back to Azure. 
+If you have a C# bot, update the `appsettings.json` file to include .bot file information as shown below:
 
-## Download bot source code
+```
+{
+  "botFilePath": "yourbasicBot.bot",
+  "botFileSecret": "ukxxxxxxxxxxxs="
+}
+```
+The `botFilePath` references the name of your bot, simply replace "yourbasicBot.bot" with your own bot name. To obtain the `botFileSecret` key, refer to [Bot File Encryption](https://aka.ms/bot-file-encryption) article on generating a key for your bot.
 
-To develop your bot locally, do the following:
 
-1. In the Azure portal and open the blade for the bot.
-2. Under the **BOT MANAGEMENT** section, Click **Build**.
-3. Click **Download zip file**. 
-
-   ![Download source code](~/media/azure-bot-build/download-zip-file.png)
-
-4. Extract the .zip file to a local directory.
-5. Navigate to the extracted folder and open the source files in your favorite IDE.
-6. Make changes to your sources. Either edit existing source files or add new ones to your project.
-
-When you are ready, you can publish the sources back to Azure.
-
-## Publish Node bot source code to Azure
-
-To install these packages, browse to your project directory from a command prompt and run the following NPM commands.
-
-**Note:** These packages only need to be added once.
-
-```console
-npm install --save fs
-npm install --save path
-npm install --save request
-npm install --save zip-folder
+If you have a node.js bot, add a `.env` file with the following entries:
+```
+botFilePath=yourbasicBot.bot
+botFileSecret=ukxxxxxxxxxxxxs=
 ```
 
-Now you are ready to publish your project to Microsoft Azure. To publish your project to Microsoft Azure, run the following NPM command in the cmd prompt:
+Next, make changes to your sources by either editing existing source files or adding new ones to your project. Test your code using the Emulator. When you are ready to redeploy modified code to the Azure portal, follow the instructions below.
 
-```console
-npm run azure-publish
+### Publish code using Visual Studio
+1. In Visual Studio, right-click your project name and click **Publish...**. The **Publish** window opens.
+
+![Azure publish](~/media/azure-bot-build/azure-csharp-publish.png)
+
+2. Select the profile for your project.
+3. Copy the password listed in the _publish.cmd_ file in your project.
+4. Click **Publish**.
+5. When prompted, enter the password that you copied in step 3.   
+
+After your project configured, your project changes will be published to Azure. 
+
+Next, we'll take a look at downloading and redeploying code using the `az` cli.
+
+### Download code usubg Azure CLI
+First, log in to the Azure portal using the az cli tool.
+
+```azcli
+az login
 ```
 
-> [!NOTE]
-> If you run into an error after this NPM command you may need to add `"scripts": {"azure-publish": "node publish.js"}` to your `package.json` file and run it again.
+You will be prompted with a unique temporary auth code. To sign in, use a web browser and visit Microsoft [device login](https://microsoft.com/devicelogin), and paste the code provided by the CLI to continue.
 
-## Publish C# bot source code to Azure
+To download code using `az` cli, use the following command:
+```azcli
+az bot download --name "my-bot-name" --resource-group "my-resource-group"`
+```
+After the code is downloaded, do the following:
+- For C# bot, update the appsettings.json file to include .bot file information as shown below:
 
-Publishing C# code to Azure using Visual Studio is a two step process: First, you will need to configure publishing settings. Then, you can publish your changes.
+```
+{
+  "botFilePath": "yourbasicBot.bot",
+  "botFileSecret": "ukxxxxxxxxxxxs="
+}
+```
 
-To configure publishing from Visual Studio, do the following:
+- For node.js bot, dd a .env file with the following entries:
+```
+botFilePath=yourbasicBot.bot
+botFileSecret=ukxxxxxxxxxxxxs=
+```
 
-1. In Visual Studio, click **Solution Explorer**.
-2. Right-click your project name and click **Publish...**. The **Publish** window opens.
-3. Click **Create new profile**, click **Import profile**, and click **OK**.
-4. Navigate to your project folder then navigate to the **PostDeployScripts** folder, and select the file that ends in **.PublishSettings**. Click **Open**.
+Next, make changes to your sources by either editing existing source files or adding new ones to your project. Test your code using the Emulator. When you are ready to redeploy modified code to the Azure portal, follow the instructions below.
 
-Your project is now configured to publish changes to Azure.
+### Login to Azure CLI by running the following command.
+You can skip this step if you are already logged in.
 
-Once your project is configured, you can publish your bot source code back to Azure by doing the following:
+```azcli
+az login
+```
+You will be prompted with a unique temporary auth code. To sign in, use a web browser and visit Microsoft [device login](https://microsoft.com/devicelogin), and paste the code provided by the CLI to continue.
 
-1. In Visual Studio, click **Solution Explorer**.
-2. Right-click your project name and click **Publish...**.
-3. Click the **Publish** button to publish your changes to Azure.
+### Publish code using Azure CLI
+To publish code back to Azure using `az` cli, use the following command:
+```azcli
+az bot publish --name "my-bot-name" --resource-group "my-resource-group" --code-dir <path to directory> 
+```
+
+You can use the `code-dir` option to indicate which directory to use. If it is not provided, the `az bot publish` command will use the local directory to publish.
 
 ## Next steps
-Now that you know how to build your bot locally, you can setup continuous deployment for your bot.
+Now that you know how to upload changes back to Azure, you can setup continuous deployment for your bot.
 
 > [!div class="nextstepaction"]
 > [Set up continuous deployment](bot-service-build-continuous-deployment.md)

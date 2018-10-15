@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 12/13/2017
+ms.date: 10/10/2018
 ---
 # Connect a bot to Office 365 email
 
@@ -61,7 +61,8 @@ For more information about using `channelData`, see the [Node.js](https://github
 ::: moniker-end
 
 ::: moniker range="azure-bot-service-4.0"
-For more information about using `channelData`, see the [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ChannelData) sample or [.NET](~/v4sdk/bot-builder-channeldata.md) documentation.
+For more information about using `channelData`,
+see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
 ::: moniker-end
 
 ## Additional resources

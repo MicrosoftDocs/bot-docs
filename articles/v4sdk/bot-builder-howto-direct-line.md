@@ -47,6 +47,7 @@ To create the solution for the Direct Line bot, in Visual Studio 2015 or later:
     - Microsoft.Bot.Builder
     - Microsoft.Bot.Builder.Core.Extensions
     - Microsoft.Bot.Builder.Integration.AspNet.Core
+    - Microsoft.Rest.ClientRuntime
     - Newtonsoft.Json
 
 ### Create the appsettings.json file
@@ -487,7 +488,7 @@ server.post('/api/messages', (req, res) => {
 
 ```
 
-When you are ready, you can publish the sources back to Azure. [Follow these steps to learn how to publish your bot back to Azure](../bot-service-build-download-source-code.md#publish-node-bot-source-code-to-azure)
+When you are ready, you can publish the sources back to Azure. Follow these steps to learn how to publish your bot back to [Azure](../bot-service-build-download-source-code.md)
 
 ---
 

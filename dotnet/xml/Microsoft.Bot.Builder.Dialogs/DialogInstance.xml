@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DialogInstance = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,16 +44,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            ID of the dialog this instance is for.
+            Gets or sets the ID of the dialog this instance is for.
             </summary>
-        <value>To be added.</value>
+        <value>
+            ID of the dialog this instance is for.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,38 +68,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
+            Gets or sets the instances persisted state.
+            </summary>
+        <value>
             The instances persisted state.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Step">
-      <MemberSignature Language="C#" Value="public int Step { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 Step" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogInstance.Step" />
-      <MemberSignature Language="VB.NET" Value="Public Property Step As Integer" />
-      <MemberSignature Language="F#" Value="member this.Step : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogInstance.Step" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.0.46</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Used when the instance is a Waterfall.
-            </summary>
-        <value>To be added.</value>
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,135 @@
+﻿<Type Name="PaymentRequestComplete" FullName="Microsoft.Bot.Connector.PaymentRequestComplete">
+  <TypeSignature Language="C#" Value="public class PaymentRequestComplete" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestComplete extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentRequestComplete" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaymentRequestComplete" />
+  <TypeSignature Language="F#" Value="type PaymentRequestComplete = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequestComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestComplete.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PaymentRequestComplete (string id = null, Microsoft.Bot.Connector.PaymentRequest paymentRequest = null, Microsoft.Bot.Connector.PaymentResponse paymentResponse = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class Microsoft.Bot.Connector.PaymentRequest paymentRequest, class Microsoft.Bot.Connector.PaymentResponse paymentResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestComplete.#ctor(System.String,Microsoft.Bot.Connector.PaymentRequest,Microsoft.Bot.Connector.PaymentResponse)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentRequestComplete : string * Microsoft.Bot.Connector.PaymentRequest * Microsoft.Bot.Connector.PaymentResponse -&gt; Microsoft.Bot.Connector.PaymentRequestComplete" Usage="new Microsoft.Bot.Connector.PaymentRequestComplete (id, paymentRequest, paymentResponse)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="paymentRequest" Type="Microsoft.Bot.Connector.PaymentRequest" />
+        <Parameter Name="paymentResponse" Type="Microsoft.Bot.Connector.PaymentResponse" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="paymentRequest">To be added.</param>
+        <param name="paymentResponse">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentRequestComplete.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Connector.PaymentRequestComplete.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaymentRequest">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.PaymentRequest PaymentRequest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.PaymentRequest PaymentRequest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentRequestComplete.PaymentRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property PaymentRequest As PaymentRequest" />
+      <MemberSignature Language="F#" Value="member this.PaymentRequest : Microsoft.Bot.Connector.PaymentRequest with get, set" Usage="Microsoft.Bot.Connector.PaymentRequestComplete.PaymentRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="paymentRequest")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.PaymentRequest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaymentResponse">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.PaymentResponse PaymentResponse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.PaymentResponse PaymentResponse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentRequestComplete.PaymentResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Property PaymentResponse As PaymentResponse" />
+      <MemberSignature Language="F#" Value="member this.PaymentResponse : Microsoft.Bot.Connector.PaymentResponse with get, set" Usage="Microsoft.Bot.Connector.PaymentRequestComplete.PaymentResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="paymentResponse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.PaymentResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

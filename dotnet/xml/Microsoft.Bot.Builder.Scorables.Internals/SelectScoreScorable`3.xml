@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SelectScoreScorable&lt;'Item, 'SourceScore, 'argetScore&gt; = class&#xA;    inherit DelegatingScorable&lt;'Item, 'SourceScore&gt;&#xA;    interface IScorable&lt;'Item, 'argetScore&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-    <AssemblyVersion>3.15.3.0</AssemblyVersion>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Item" />
@@ -25,6 +25,11 @@
       <InterfaceName>Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="Item">To be added.</typeparam>
     <typeparam name="SourceScore">To be added.</typeparam>
@@ -42,7 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,SourceScore&gt;" />
@@ -65,7 +70,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>3.15.3.0</AssemblyVersion>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TargetScore</ReturnType>

@@ -1,0 +1,153 @@
+﻿<Type Name="AutoSaveStateMiddleware" FullName="Microsoft.Bot.Builder.AutoSaveStateMiddleware">
+  <TypeSignature Language="C#" Value="public class AutoSaveStateMiddleware : Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutoSaveStateMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AutoSaveStateMiddleware" />
+  <TypeSignature Language="VB.NET" Value="Public Class AutoSaveStateMiddleware&#xA;Implements IMiddleware" />
+  <TypeSignature Language="F#" Value="type AutoSaveStateMiddleware = class&#xA;    interface IMiddleware" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IMiddleware</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+             Middleware to automatically call .SaveChanges() at the end of the turn for all BotState class it is managing.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutoSaveStateMiddleware (params Microsoft.Bot.Builder.BotState[] botStates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.BotState[] botStates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.#ctor(Microsoft.Bot.Builder.BotState[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray botStates As BotState())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AutoSaveStateMiddleware : Microsoft.Bot.Builder.BotState[] -&gt; Microsoft.Bot.Builder.AutoSaveStateMiddleware" Usage="new Microsoft.Bot.Builder.AutoSaveStateMiddleware botStates" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="botStates" Type="Microsoft.Bot.Builder.BotState[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="botStates">initial list of <see cref="T:Microsoft.Bot.Builder.BotState" /> objects to manage.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AutoSaveStateMiddleware" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutoSaveStateMiddleware (Microsoft.Bot.Builder.BotStateSet botStateSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.BotStateSet botStateSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.#ctor(Microsoft.Bot.Builder.BotStateSet)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AutoSaveStateMiddleware : Microsoft.Bot.Builder.BotStateSet -&gt; Microsoft.Bot.Builder.AutoSaveStateMiddleware" Usage="new Microsoft.Bot.Builder.AutoSaveStateMiddleware botStateSet" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="botStateSet" Type="Microsoft.Bot.Builder.BotStateSet" />
+      </Parameters>
+      <Docs>
+        <param name="botStateSet">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AutoSaveStateMiddleware Add (Microsoft.Bot.Builder.BotState botState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.AutoSaveStateMiddleware Add(class Microsoft.Bot.Builder.BotState botState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.Add(Microsoft.Bot.Builder.BotState)" />
+      <MemberSignature Language="F#" Value="member this.Add : Microsoft.Bot.Builder.BotState -&gt; Microsoft.Bot.Builder.AutoSaveStateMiddleware" Usage="autoSaveStateMiddleware.Add botState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AutoSaveStateMiddleware</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botState" Type="Microsoft.Bot.Builder.BotState" />
+      </Parameters>
+      <Docs>
+        <param name="botState">botState to manage.</param>
+        <summary>
+            Add a BotState to the list of sources to load.
+            </summary>
+        <returns>botstateset for chaining more .Use().</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotStateSet">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.BotStateSet BotStateSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.BotStateSet BotStateSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AutoSaveStateMiddleware.BotStateSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property BotStateSet As BotStateSet" />
+      <MemberSignature Language="F#" Value="member this.BotStateSet : Microsoft.Bot.Builder.BotStateSet with get, set" Usage="Microsoft.Bot.Builder.AutoSaveStateMiddleware.BotStateSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.BotStateSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the list of state management objects managed by this object.
+            </summary>
+        <value>The state management objects managed by this object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurnAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.NextDelegate next, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.NextDelegate next, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="autoSaveStateMiddleware.OnTurnAsync (turnContext, next, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.0.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="next" Type="Microsoft.Bot.Builder.NextDelegate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">turn context.</param>
+        <param name="next">next middlware.</param>
+        <param name="cancellationToken">cancellationToken.</param>
+        <summary>
+            Middleware implementation which calls savesChanges automatically at the end of the turn.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

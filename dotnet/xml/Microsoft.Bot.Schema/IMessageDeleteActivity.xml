@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type IMessageDeleteActivity = interface&#xA;    interface IActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.0.46</AssemblyVersion>
+    <AssemblyVersion>4.0.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -15,7 +15,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Indicates a delete of an existing Message Activity
+            Represents a request to delete a previous message activity in a conversation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>

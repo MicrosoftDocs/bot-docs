@@ -7,7 +7,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 8/2/2018
+ms.date: 9/25/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,586 +15,423 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-You can manage both simple and complex conversation flows using the dialogs library. In a simple conversation flow, the user starts from the first step of a *waterfall*, continues through to the last step, and the conversational exchange finishes. Dialogs can also handle [complex conversation flows](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md), where portions of the dialog can branch and loop.
-
-<!-- TODO: We need a dialogs conceptual topic to link to, so we can reference that here, in place of describing what they are and what their features are in a how-to topic. -->
+You can manage simple and complex conversation flows using the dialogs library. In a simple conversation flow, the user starts from the first step of a *waterfall*, continues through to the last step, and the conversation finishes. [Complex conversation flows](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) include branches and loop.
 
 <!-- TODO: This paragraph belongs in a conceptual topic. -->
-A dialog is like a function in a program. It is generally designed to perform a specific operation, in a specific order, and it can be invoked as often as it is needed. Using dialogs enables the bot developer to guide conversational flow. You can chain multiple dialogs together to handle just about any conversation flow that you want your bot to handle. The **Dialogs** library in the Bot Builder SDK includes built-in features such as _prompts_ and _waterfall dialogs_ to help you manage conversation flow. You can use prompts to ask users for different types of information. You can use a waterfall to combine multiple steps together in a sequence.
 
-In this article, we use _dialog sets_ to create a conversation flow that contains both prompts and waterfall steps. We have two example dialogs. The first is a one-step dialog that performs an operation that requires no user input. The second is a multi-step dialog that prompts the user for some information.
+Dialogs are structures in your bot that act like a functions in your bot's program. Dialogs build the messages your bot sends, and carry out the computational tasks required. They are designed to perform a specific operations, in a specific order. They can be invoked in different ways - sometimes in response to a user, sometimes in response to some outside stimuli, or by other dialogs.
 
-## Install the dialogs library
+Using dialogs enables the bot developer to guide the conversational flow. You can create multiple dialogs and link them together to create any conversation flow that you want your bot to handle. The **Dialogs** library in the Bot Builder SDK includes built-in features such as _prompts_, _waterfall dialogs_ and _component dialogs_ to help you manage conversation flow. You can use prompts to ask users for different types of information. You can use a waterfall to combine multiple steps together in a sequence. And you can use component dialogs to create modular dialog systems containing multiple sub-dialogs.
 
-# [C#](#tab/csharp)
+In this article, we use _dialog sets_ to create a conversation flow that contains both prompts and waterfalls. We will draw on code from the **multi-turn prompt** [[C#](https://aka.ms/cs-multi-prompts-sample)|[JS](https://aka.ms/js-multi-prompts-sample)] sample.
 
-We'll start from a basic EchoBot template. For instructions, see the [quickstart for .NET](~/dotnet/bot-builder-dotnet-quickstart.md).
-
-To use dialogs, install the `Microsoft.Bot.Builder.Dialogs` NuGet package for your project or solution.
-Then reference the dialogs library in using statements in your code files as necessary.
-
-```csharp
-using Microsoft.Bot.Builder.Dialogs;
-```
-
-# [JavaScript](#tab/javascript)
-
-The `botbuilder-dialogs` library can be downloaded from NPM. To install the `botbuilder-dialogs` library, run the following NPM command:
-
-```cmd
-npm install --save botbuilder-dialogs@preview
-```
-
-To use **dialogs** in your bot, include this in your **app.js** file.
-
-```javascript
-const botbuilder_dialogs = require('botbuilder-dialogs');
-```
-
----
-
-## Create a dialog stack
-
-In this first example, we'll create a one-step dialog that can add two numbers together and display the result.
-
-To use dialogs, you must first create a *dialog set*.
+For an overview of dialogs, see [dialogs library](bot-builder-concept-dialog.md) and [dialogs state](bot-builder-dialog-state.md).
 
 # [C#](#tab/csharp)
 
-The `Microsoft.Bot.Builder.Dialogs` library provides a `DialogSet` class.
-Create an **AdditionDialog** class, and add the using statements we'll need.
-You can add named dialogs and sets of dialogs to a dialog set, and then access them by name later.
-
-```csharp
-using Microsoft.Bot.Builder.Dialogs;
-```
-
-Derive the class from **DialogSet**, and define the IDs and keys we'll use to identify the dialogs and input information for this dialog set.
-
-```csharp
-/// <summary>Defines a simple dialog for adding two numbers together.</summary>
-public class AdditionDialog : DialogSet
-{
-    /// <summary>The ID of the main dialog in the set.</summary>
-    public const string Main = "additionDialog";
-
-    /// <summary>Defines the IDs of the input arguments.</summary>
-    public struct Inputs
-    {
-        public const string First = "first";
-        public const string Second = "second";
-    }
-}
-```
+To use dialogs in general, you need the `Microsoft.Bot.Builder.Dialogs` NuGet package for your project or solution.
 
 # [JavaScript](#tab/javascript)
 
-The `botbuilder-dialogs` library provides a `DialogSet` class.
-The **DialogSet** class defines a **dialog stack** and gives you a simple interface to manage the stack.
-The Bot Builder SDK implements the stack as an array.
-
-To create a **DialogSet**, do the following:
-
-```javascript
-const dialogs = new botbuilder_dialogs.DialogSet();
-```
-
-The call above will create a **DialogSet** with a default **dialog stack** named `dialogStack`.
-If you want to name your stack, you can pass it in as a parameter to **DialogSet()**. For example:
-
-```javascript
-const dialogs = new botbuilder_dialogs.DialogSet("myStack");
-```
+To use dialogs in general, you need the `botbuilder-dialogs` library, which can be downloaded from NPM.
 
 ---
-
-Creating a dialog only adds the dialog definition to the set. The dialog is not run until it is pushed onto the dialog stack by calling a _begin_ or _replace_ method.
-
-The dialog name (for example, `addTwoNumbers`) must be unique within each dialog set. You can define as many dialogs as necessary within each set. If you want to create multiple dialog sets and have them work seemlessly together, see [Create modular bot logic](bot-builder-compositcontrol.md).
-
-The dialog library defines the following dialogs:
-
-* A **prompt** dialog where the dialog uses at least two functions, one to prompt the user for input and the other to process the input. You can string these together using the **waterfall** model.
-* A **waterfall** dialog defines a sequence of _waterfall steps_, which run in order. A waterfall dialog can have a single step, in which case it can be thought of as a simple, one-step dialog.
-
-## Create a single-step dialog
-
-Single-step dialogs can be useful for capturing single-turn conversational flows. This example creates a bot that can detect if the user says something like "1 + 2", and starts an `addTwoNumbers` dialog to reply with "1 + 2 = 3".
-
-# [C#](#tab/csharp)
-
-Values are passed into and returned from dialogs as `IDictionary<string,object>` property bags.
-
-To create a simple dialog within a dialog set, use the `Add` method. The following adds a one-step waterfall named `addTwoNumbers`.
-
-This step assumes that the dialog arguments getting passed in contain `first` and `second` properties that represent the numbers to be added.
-
-Add the following constructor to the **AdditionDialog** class.
-
-```csharp
-/// <summary>Defines the steps of the dialog.</summary>
-public AdditionDialog()
-{
-    Add(Main, new WaterfallStep[]
-    {
-        async (dc, args, next) =>
-        {
-            // Get the input from the arguments to the dialog and add them.
-            var x =(double)args[Inputs.First];
-            var y =(double)args[Inputs.Second];
-            var sum = x + y;
-
-            // Display the result to the user.
-            await dc.Context.SendActivity($"{x} + {y} = {sum}");
-
-            // End the dialog.
-            await dc.End();
-        }
-    });
-}
-```
-
-### Pass arguments to the dialog
-
-In your bot code, update your using statements.
-
-```cs
-using Microsoft.Bot;
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
-using Microsoft.Bot.Schema;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-```
-
-Add a static property to the class for the addition dialog.
-
-```cs
-private static AdditionDialog AddTwoNumbers { get; } = new AdditionDialog();
-```
-
-To call the dialog from within your bot's `OnTurn` method, modify `OnTurn` to contain the following:
-
-```cs
-public async Task OnTurn(ITurnContext context)
-{
-    // Handle any message activity from the user.
-    if (context.Activity.Type is ActivityTypes.Message)
-    {
-        // Get the conversation state from the turn context.
-        var conversationState = context.GetConversationState<ConversationData>();
-
-        // Generate a dialog context for the addition dialog.
-        var dc = AddTwoNumbers.CreateContext(context, conversationState.DialogState);
-
-        // Call a helper function that identifies if the user says something
-        // like "2 + 3" or "1.25 + 3.28" and extract the numbers to add.
-        if (TryParseAddingTwoNumbers(context.Activity.Text, out double first, out double second))
-        {
-            // Start the dialog, passing in the numbers to add.
-            var args = new Dictionary<string, object>
-            {
-                [AdditionDialog.Inputs.First] = first,
-                [AdditionDialog.Inputs.Second] = second
-            };
-            await dc.Begin(AdditionDialog.Main, args);
-        }
-        else
-        {
-            // Echo back to the user whatever they typed.
-            await context.SendActivity($"You said '{context.Activity.Text}'");
-        }
-    }
-}
-```
-
-Add a **TryParseAddingTwoNumbers** helper function to the bot class. The helper function just uses a simple regex to detect if the user's message is a request to add 2 numbers.
-
-```cs
-// Recognizes if the message is a request to add 2 numbers, in the form: number + number,
-// where number may have optionally have a decimal point.: 1 + 1, 123.99 + 45, 0.4+7.
-// For the sake of simplicity it doesn't handle negative numbers or numbers like 1,000 that contain a comma.
-// If you need more robust number recognition, try System.Recognizers.Text
-public static bool TryParseAddingTwoNumbers(string message, out double first, out double second)
-{
-    // captures a number with optional -/+ and optional decimal portion
-    const string NUMBER_REGEXP = "([-+]?(?:[0-9]+(?:\\.[0-9]+)?|\\.[0-9]+))";
-
-    // matches the plus sign with optional spaces before and after it
-    const string PLUSSIGN_REGEXP = "(?:\\s*)\\+(?:\\s*)";
-
-    const string ADD_TWO_NUMBERS_REGEXP = NUMBER_REGEXP + PLUSSIGN_REGEXP + NUMBER_REGEXP;
-
-    var regex = new Regex(ADD_TWO_NUMBERS_REGEXP);
-    var matches = regex.Matches(message);
-
-    first = 0;
-    second = 0;
-    if (matches.Count > 0)
-    {
-        var matched = matches[0];
-        if (double.TryParse(matched.Groups[1].Value, out first)
-            && double.TryParse(matched.Groups[2].Value, out second))
-        {
-            return true;
-        }
-    }
-    return false;
-}
-```
-
-If you're using the EchoBot template, change the name of the **EchoState** class to **ConversationData** and modify it to contain the following.
-
-```cs
-using System.Collections.Generic;
-
-/// <summary>
-/// Class for storing conversation state.
-/// </summary>
-public class ConversationData
-{
-    /// <summary>Property for storing dialog state.</summary>
-    public Dictionary<string, object> DialogState { get; set; } = new Dictionary<string, object>();
-}
-```
-
-# [JavaScript](#tab/javascript)
-
-Start with the JS template described in [Create a bot with the Bot Builder SDK v4](../javascript/bot-builder-javascript-quickstart.md). In **app.js**, add a statement to require `botbuilder-dialogs`.
-
-```js
-const {DialogSet} = require('botbuilder-dialogs');
-```
-
-In **app.js**, add the following code that defines a simple dialog named `addTwoNumbers` that belongs to the `dialogs` set:
-
-```javascript
-const dialogs = new DialogSet("myDialogStack");
-
-// Show the sum of two numbers.
-dialogs.add('addTwoNumbers', [async function (dc, numbers){
-        var sum = Number.parseFloat(numbers[0]) + Number.parseFloat(numbers[1]);
-        await dc.context.sendActivity(`${numbers[0]} + ${numbers[1]} = ${sum}`);
-        await dc.end();
-    }]
-);
-```
-
-Replace the code in **app.js** for processing the incoming activity with the following. The bot calls a helper function to check if the incoming message looks like a request for adding two numbers. If it does, it passes the numbers in the argument to `DialogContext.begin`.
-
-```js
-// Listen for incoming activity 
-server.post('/api/messages', (req, res) => {
-    // Route received activity to adapter for processing
-    adapter.processActivity(req, res, async (context) => {
-        const isMessage = context.activity.type === 'message';
-        // State will store all of your information
-        const convoState = conversationState.get(context);
-        const dc = dialogs.createContext(context, convoState);
-
-        if (isMessage) {
-            // TryParseAddingTwoNumbers checks if the message matches a regular expression
-            // and if it does, returns an array of the numbers to add
-            var numbers = await TryParseAddingTwoNumbers(context.activity.text); 
-            if (numbers != null && numbers.length >=2 )
-            {
-                await dc.begin('addTwoNumbers', numbers);
-            }
-            else {
-                // Just echo back the user's message if they're not adding numbers
-                const count = (convoState.count === undefined ? convoState.count = 0 : ++convoState.count);
-                return context.sendActivity(`Turn ${count}: You said "${context.activity.text}"`);
-            }
-        }
-        else {
-            return context.sendActivity(`[${context.activity.type} event detected]`);
-        }
-
-        if (!context.responded) {
-            await dc.continue();
-            // if the dialog didn't send a response
-            if (!context.responded && isMessage) {
-                await dc.context.sendActivity(`Hi! I'm the add 2 numbers bot. Say something like "What's 2+3?"`);
-            }
-        }
-    });
-});
-
-```
-
-Add the helper function to **app.js**. The helper function just uses a simple regular expression to detect if the user's message is a request to add 2 numbers. If the regular expression matches, it returns an array that contains the numbers to add.
-
-```javascript
-async function TryParseAddingTwoNumbers(message) {
-    const ADD_NUMBERS_REGEXP = /([-+]?(?:[0-9]+(?:\.[0-9]+)?|\.[0-9]+))(?:\s*)\+(?:\s*)([-+]?(?:[0-9]+(?:\.[0-9]+)?|\.[0-9]+))/i;
-    let matched = ADD_NUMBERS_REGEXP.exec(message);
-    if (!matched) {
-        // message wasn't a request to add 2 numbers
-        return null;
-    }
-    else {
-        var numbers = [matched[1], matched[2]];
-        return numbers;
-    }
-}
-```
-
----
-
-### Run the bot
-
-Try running the bot in the Bot Framework Emulator, and say things like "what's 1+1?" to it.
-
-![run the bot](./media/how-to-dialogs/bot-output-add-numbers.png)
 
 ## Using dialogs to guide the user through steps
 
-In this next example, we create a multi-step dialog to prompt the user for information.
+In this example, we create a multi-step dialog to prompt the user for information utilizing a dialog set.
 
 ### Create a dialog with waterfall steps
 
-A **waterfall** is a specific implementation of a dialog that is most commonly used to collect information from the user or guide the user through a series of tasks. The tasks are implemented as an array of functions where the result of the first function is passed as arguments into the next function, and so on. Each function typically represents one step in the overall process. At each step, the bot [prompts the user for input](bot-builder-prompts.md), waits for a response, and then passes the result to the next step.
+A **WaterfallDialog** is a specific implementation of a dialog that is commonly used to collect information from the user or guide the user through a series of tasks. Each step of the conversation is implemented as a function. At each step, the bot [prompts the user for input](bot-builder-prompts.md), waits for a response, and then passes the result to the next step. The result of the first function is passed as an argument into the next function, and so on.
 
-For example, the following code sample defines three functions in an array that represents the three steps of a **waterfall**. After each prompt, the bot acknowledges the user's input but did not save the input. If you want to persist user inputs, see [Persist user data](bot-builder-tutorial-persist-user-inputs.md) for more details.
+For example, the following code sample defines an array of delegates that represent the steps of a **waterfall**. After each prompt, the bot acknowledges the user's input. There are many ways you could persist the input you collect in a dialog. See [Persist user data](bot-builder-tutorial-persist-user-inputs.md) for some of the options.
+
+This sample writes information directly to the user's profile as it is collected in the dialog.
 
 # [C#](#tab/csharp)
 
-This shows a constructor for a greeting dialog, where **GreetingDialog** derives from **DialogSet**, **Inputs.Text** contains the ID we're using for the **TextPrompt** object, and **Main** contains the ID for the greeting dialog itself.
+In this sample, the waterfall dialog is defined within the bot file.
+
+Reference the namespaces used in this file.
 
 ```csharp
-public GreetingDialog()
+using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Schema;
+```
+
+Define an instance property for the dialog set.
+
+```csharp
+/// <summary>
+/// The <see cref="DialogSet"/> that contains all the Dialogs that can be used at runtime.
+/// </summary>
+private DialogSet _dialogs;
+```
+
+Create the dialog set within the bot's constructor, adding the prompts and the waterfall dialog to the set.
+
+```csharp
+/// <summary>
+/// Initializes a new instance of the <see cref="MultiTurnPromptsBot"/> class.
+/// </summary>
+/// <param name="accessors">A class containing <see cref="IStatePropertyAccessor{T}"/> used to manage state.</param>
+public MultiTurnPromptsBot(MultiTurnPromptsBotAccessors accessors)
 {
-    // Include a text prompt.
-    Add(Inputs.Text, new TextPrompt());
+    _accessors = accessors ?? throw new ArgumentNullException(nameof(accessors));
 
-    // Define the dialog logic for greeting the user.
-    Add(Main, new WaterfallStep[]
+    // The DialogSet needs a DialogState accessor, it will call it when it has a turn context.
+    _dialogs = new DialogSet(accessors.ConversationDialogState);
+
+    // This array defines how the Waterfall will execute.
+    var waterfallSteps = new WaterfallStep[]
     {
-        async (dc, args, next) =>
-        {
-            // Ask for their name.
-            await dc.Prompt(Inputs.Text, "What is your name?");
-        },
-        async (dc, args, next) =>
-        {
-            // Get the prompt result.
-            var name = args["Text"] as string;
+        NameStepAsync,
+        NameConfirmStepAsync,
+        AgeStepAsync,
+        ConfirmStepAsync,
+        SummaryStepAsync,
+    };
 
-            // Acknowledge their input.
-            await dc.Context.SendActivity($"Hi, {name}!");
-
-            // Ask where they work.
-            await dc.Prompt(Inputs.Text, "Where do you work?");
-        },
-        async (dc, args, next) =>
-        {
-            // Get the prompt result.
-            var work = args["Text"] as string;
-
-            // Acknowledge their input.
-            await dc.Context.SendActivity($"{work} is a fun place.");
-
-            // End the dialog.
-            await dc.End();
-        }
-    });
+    // Add named dialogs to the DialogSet. These names are saved in the dialog state.
+    _dialogs.Add(new WaterfallDialog("details", waterfallSteps));
+    _dialogs.Add(new TextPrompt("name"));
+    _dialogs.Add(new NumberPrompt<int>("age"));
+    _dialogs.Add(new ConfirmPrompt("confirm"));
 }
 ```
 
-# [JavaScript](#tab/javascript)
-
-```javascript
-// Greet user:
-// Ask for the user name and then greet them by name.
-// Ask them where they work.
-dialogs.add('greetings',[
-    async function (dc){
-        await dc.prompt('textPrompt', 'What is your name?');
-    },
-    async function(dc, results){
-        var userName = results;
-        await dc.context.sendActivity(`Hi ${userName}!`);
-        await dc.prompt('textPrompt', 'Where do you work?');
-    },
-    async function(dc, results){
-        var workPlace = results;
-        await dc.context.sendActivity(`${workPlace} is a fun place.`);
-        await dc.end(); // Ends the dialog
-    }
-]);
-
-dialogs.add('textPrompt', new botbuilder_dialogs.TextPrompt());
-```
-
----
-
-The signature for a **waterfall** step is as follows:
-
-| Parameter | Description |
-| :---- | :----- |
-| `dc` | The dialog context. |
-| `args` | Optional, contains the arguments passed into the step. |
-| `next` | Optional, a method that allows you to proceed to the next step of the waterfall without prompting. You can provide an *args* argument when you call this method, This allows you to pass arguments to the next step in the waterfall. |
-
-Each step must call one of the following methods before returning: the *next()* delegate or one of the dialog context methods *begin*, *end*, *prompt*, or *replace*; otherwise, the bot will be stuck in that step. That is, if a function does not finish with one of these methods then all user input will cause this step to be re-executed each time the user sends the bot a message.
-
-When you reached the end of the waterfall, it is best practice to return with the _end_ method so that the dialog can be popped off the stack. See [End a dialog](#end-a-dialog) section below for more information. Likewise, to proceed from one step to the next, the waterfall step must end with either a prompt or explicitly call the _next_ delegate to advance the waterfall.
-
-## Start a dialog
-
-To start a dialog, pass the *dialogId* you want to start into the dialog context's _begin_, _prompt_, or _replace_ method. The _begin_ method will push the dialog onto the top of the stack, while the _replace_ method will pop the current dialog off the stack and push the replacing dialog onto the stack.
-
-To start a dialog without arguments:
-
-# [C#](#tab/csharp)
+And, define each step as a separate method. You could also define the steps in-line using lambda expressions.
 
 ```csharp
-// Start the greetings dialog.
-await dc.Begin("greetings");
-```
+/// <summary>
+/// One of the functions that make up the <see cref="WaterfallDialog"/>.
+/// </summary>
+/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
+/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
+/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
+private static async Task<DialogTurnResult> NameStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+{
+    // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
+    // Running a prompt here means the next WaterfallStep will be run when the users response is received.
+    return await stepContext.PromptAsync("name", new PromptOptions { Prompt = MessageFactory.Text("Please enter your name.") }, cancellationToken);
+}
 
-# [JavaScript](#tab/javascript)
+/// <summary>
+/// One of the functions that make up the <see cref="WaterfallDialog"/>.
+/// </summary>
+/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
+/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
+/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
+private async Task<DialogTurnResult> NameConfirmStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+{
+    // Get the current profile object from user state.
+    var userProfile = await _accessors.UserProfile.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
 
-```javascript
-// Start the 'greetings' dialog.
-await dc.begin('greetings');
-```
+    // Update the profile.
+    userProfile.Name = (string)stepContext.Result;
 
----
+    // We can send messages to the user at any point in the WaterfallStep.
+    await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thanks {stepContext.Result}."), cancellationToken);
 
-To start a dialog with arguments:
+    // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
+    return await stepContext.PromptAsync("confirm", new PromptOptions { Prompt = MessageFactory.Text("Would you like to give your age?") }, cancellationToken);
+}
 
-# [C#](#tab/csharp)
-
-```csharp
-// Start the greetings dialog, passing in a property bag.
-await dc.Begin("greetings", args);
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-// Start the 'greetings' dialog with the 'userName' passed in.
-await dc.begin('greetings', userName);
-```
-
----
-
-To start a **prompt** dialog:
-
-# [C#](#tab/csharp)
-
-Here, **Inputs.Text** contains the ID of a **TextPrompt** that is in the same dialog set.
-
-```csharp
-// Ask a user for their name.
-await dc.Prompt(Inputs.Text, "What is your name?");
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-// Ask a user for their name.
-await dc.prompt('textPrompt', "What is your name?");
-```
-
----
-
-Depending on the type of prompt you are starting, the prompt's argument signature may be different. The **DialogSet.prompt** method is a helper method. This method takes in arguments and constructs the appropriate options for the prompt; then, it calls the **begin** method to start the prompt dialog. For more information on prompts, see [Prompt user for input](bot-builder-prompts.md).
-
-## End a dialog
-
-The _end_ method ends a dialog by popping it off the stack and returns an optional result to the parent dialog.
-
-It is best practice to explicitly call the _end_ method at the end of the dialog; however, it is not required because the dialog will automatically be popped off the stack for you when you reach the end of the waterfall.
-
-To end a dialog:
-
-# [C#](#tab/csharp)
-
-```csharp
-// End the current dialog by popping it off the stack.
-await dc.End();
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-// End the current dialog by popping it off the stack
-await dc.end();
-```
-
----
-
-To end a dialog and return information to the parent dialog, include a property bag argument.
-
-# [C#](#tab/csharp)
-
-```csharp
-// End the current dialog and return information to the parent dialog.
-await dc.end(new Dictionary<string, object>
+/// <summary>
+/// One of the functions that make up the <see cref="WaterfallDialog"/>.
+/// </summary>
+/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
+/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
+/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
+private async Task<DialogTurnResult> AgeStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+{
+    if ((bool)stepContext.Result)
     {
-        ["property1"] = value1,
-        ["property2"] = value2
-    });
+        // User said "yes" so we will be prompting for the age.
+
+        // Get the current profile object from user state.
+        var userProfile = await _accessors.UserProfile.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
+
+        // WaterfallStep always finishes with the end of the Waterfall or with another dialog, here it is a Prompt Dialog.
+        return await stepContext.PromptAsync("age", new PromptOptions { Prompt = MessageFactory.Text("Please enter your age.") }, cancellationToken);
+    }
+    else
+    {
+        // User said "no" so we will skip the next step. Give -1 as the age.
+        return await stepContext.NextAsync(-1, cancellationToken);
+    }
+}
+
+/// <summary>
+/// One of the functions that make up the <see cref="WaterfallDialog"/>.
+/// </summary>
+/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
+/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
+/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
+private async Task<DialogTurnResult> ConfirmStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+{
+    // Get the current profile object from user state.
+    var userProfile = await _accessors.UserProfile.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
+
+    // Update the profile.
+    userProfile.Age = (int)stepContext.Result;
+
+    // We can send messages to the user at any point in the WaterfallStep.
+    if (userProfile.Age == -1)
+    {
+        await stepContext.Context.SendActivityAsync(MessageFactory.Text($"No age given."), cancellationToken);
+    }
+    else
+    {
+        // We can send messages to the user at any point in the WaterfallStep.
+        await stepContext.Context.SendActivityAsync(MessageFactory.Text($"I have your age as {userProfile.Age}."), cancellationToken);
+    }
+
+    // WaterfallStep always finishes with the end of the Waterfall or with another dialog, here it is a Prompt Dialog.
+    return await stepContext.PromptAsync("confirm", new PromptOptions { Prompt = MessageFactory.Text("Is this ok?") }, cancellationToken);
+}
+
+/// <summary>
+/// One of the functions that make up the <see cref="WaterfallDialog"/>.
+/// </summary>
+/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
+/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
+/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
+private async Task<DialogTurnResult> SummaryStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+{
+    if ((bool)stepContext.Result)
+    {
+        // Get the current profile object from user state.
+        var userProfile = await _accessors.UserProfile.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
+
+        // We can send messages to the user at any point in the WaterfallStep.
+        if (userProfile.Age == -1)
+        {
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"I have your name as {userProfile.Name}."), cancellationToken);
+        }
+        else
+        {
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"I have your name as {userProfile.Name} and age as {userProfile.Age}."), cancellationToken);
+        }
+    }
+    else
+    {
+        // We can send messages to the user at any point in the WaterfallStep.
+        await stepContext.Context.SendActivityAsync(MessageFactory.Text("Thanks. Your profile will not be kept."), cancellationToken);
+    }
+
+    // WaterfallStep always finishes with the end of the Waterfall or with another dialog, here it is the end.
+    return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
+}
 ```
 
-# [JavaScript](#tab/javascript)
-
-```javascript
-// End the current dialog and pass a result to the parent dialog
-await dc.end({
-    "property1": value1,
-    "property2": value2
-});
-```
-
----
-
-## Clear the dialog stack
-
-If you want to pop all dialogs off the stack, you can clear the dialog stack by calling the _end all_ method.
-
-# [C#](#tab/csharp)
+The dialog is run from the bot's on turn handler, which first creates a dialog context and continues or begins the dialog as appropriate, and then saves conversation and user state at the end of the turn.
 
 ```csharp
-// Pop all dialogs from the current stack.
-await dc.EndAll();
+// Run the DialogSet - let the framework identify the current state of the dialog from
+// the dialog stack and figure out what (if any) is the active dialog.
+var dialogContext = await _dialogs.CreateContextAsync(turnContext, cancellationToken);
+var results = await dialogContext.ContinueDialogAsync(cancellationToken);
+
+// If the DialogTurnStatus is Empty we should start a new dialog.
+if (results.Status == DialogTurnStatus.Empty)
+{
+    await dialogContext.BeginDialogAsync("details", null, cancellationToken);
+}
 ```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-// Pop all dialogs from the current stack.
-await dc.endAll();
-```
-
----
-
-## Repeat a dialog
-
-To repeat a dialog, use the _replace_ method. The dialog context's *replace* method will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. This is a great way to handle [complex conversation flows](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus.
-
-# [C#](#tab/csharp)
 
 ```csharp
-// End the current dialog and start the main menu dialog.
-await dc.Replace("mainMenu");
+// Save the dialog state into the conversation state.
+await _accessors.ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
+
+// Save the user profile updates into the user state.
+await _accessors.UserState.SaveChangesAsync(turnContext, false, cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
 
+In this sample, the waterfall dialog is defined within the **bot.js** file.
+
+Import the objects you need for the code.
+
 ```javascript
-// End the current dialog and start the 'mainMenu' dialog.
-await dc.replace('mainMenu');
+const { ActivityTypes } = require('botbuilder');
+const { ChoicePrompt, DialogSet, NumberPrompt, TextPrompt, WaterfallDialog } = require('botbuilder-dialogs');
+```
+
+Define and create the dialog set in the bot's constructor, adding the prompts and the waterfall dialog to the set.
+
+```javascript
+/**
+*
+* @param {ConversationState} conversationState A ConversationState object used to store the dialog state.
+* @param {UserState} userState A UserState object used to store values specific to the user.
+*/
+constructor(conversationState, userState) {
+    // Create a new state accessor property. See https://aka.ms/about-bot-state-accessors to learn more about bot state and state accessors.
+    this.conversationState = conversationState;
+    this.userState = userState;
+
+    this.dialogState = this.conversationState.createProperty(DIALOG_STATE_PROPERTY);
+
+    this.userProfile = this.userState.createProperty(USER_PROFILE_PROPERTY);
+
+    this.dialogs = new DialogSet(this.dialogState);
+
+    // Add prompts that will be used by the main dialogs.
+    this.dialogs.add(new TextPrompt(NAME_PROMPT));
+    this.dialogs.add(new ChoicePrompt(CONFIRM_PROMPT));
+    this.dialogs.add(new NumberPrompt(AGE_PROMPT, async (prompt) => {
+        if (prompt.recognized.succeeded) {
+            if (prompt.recognized.value <= 0) {
+                await prompt.context.sendActivity(`Your age can't be less than zero.`);
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        return false;
+    }));
+
+    // Create a dialog that asks the user for their name.
+    this.dialogs.add(new WaterfallDialog(WHO_ARE_YOU, [
+        this.promptForName.bind(this),
+        this.confirmAgePrompt.bind(this),
+        this.promptForAge.bind(this),
+        this.captureAge.bind(this)
+    ]));
+
+    // Create a dialog that displays a user name after it has been collected.
+    this.dialogs.add(new WaterfallDialog(HELLO_USER, [
+        this.displayProfile.bind(this)
+    ]));
+}
+```
+
+And, define each step as a separate method. You could also define the steps in-line using lambda expressions.
+
+```javascript
+// This step in the dialog prompts the user for their name.
+async promptForName(step) {
+    return await step.prompt(NAME_PROMPT, `What is your name, human?`);
+}
+
+// This step captures the user's name, then prompts whether or not to collect an age.
+async confirmAgePrompt(step) {
+    const user = await this.userProfile.get(step.context, {});
+    user.name = step.result;
+    await this.userProfile.set(step.context, user);
+    await step.prompt(CONFIRM_PROMPT, 'Do you want to give your age?', ['yes', 'no']);
+}
+
+// This step checks the user's response - if yes, the bot will proceed to prompt for age.
+// Otherwise, the bot will skip the age step.
+async promptForAge(step) {
+    if (step.result && step.result.value === 'yes') {
+        return await step.prompt(AGE_PROMPT, `What is your age?`,
+            {
+                retryPrompt: 'Sorry, please specify your age as a positive number or say cancel.'
+            }
+        );
+    } else {
+        return await step.next(-1);
+    }
+}
+
+// This step captures the user's age.
+async captureAge(step) {
+    const user = await this.userProfile.get(step.context, {});
+    if (step.result !== -1) {
+        user.age = step.result;
+        await this.userProfile.set(step.context, user);
+        await step.context.sendActivity(`I will remember that you are ${ step.result } years old.`);
+    } else {
+        await step.context.sendActivity(`No age given.`);
+    }
+    return await step.endDialog();
+}
+
+// This step displays the captured information back to the user.
+async displayProfile(step) {
+    const user = await this.userProfile.get(step.context, {});
+    if (user.age) {
+        await step.context.sendActivity(`Your name is ${ user.name } and you are ${ user.age } years old.`);
+    } else {
+        await step.context.sendActivity(`Your name is ${ user.name } and you did not share your age.`);
+    }
+    return await step.endDialog();
+}
+```
+
+The dialog is run from the bot's on turn handler, which first creates a dialog context and continues or begins the dialog as appropriate, and then saves conversation and user state at the end of the turn.
+
+```javascript
+// Create a dialog context object.
+const dc = await this.dialogs.createContext(turnContext);
+```
+
+```javascript
+// If the bot has not yet responded, continue processing the current dialog.
+await dc.continueDialog();
+```
+
+```javascript
+// Start the sample dialog in response to any other input.
+if (!turnContext.responded) {
+    const user = await this.userProfile.get(dc.context, {});
+    if (user.name) {
+        await dc.beginDialog(HELLO_USER);
+    } else {
+        await dc.beginDialog(WHO_ARE_YOU);
+    }
+}
+```
+
+```javascript
+// Save changes to the user state.
+await this.userState.saveChanges(turnContext);
+
+// End this turn by saving changes to the conversation state.
+await this.conversationState.saveChanges(turnContext);
 ```
 
 ---
+
+## Dialog context and waterfall step context objects
+
+Use the dialog context object to interact with a dialog set from within your bot's turn handler.
+Use the waterfall step context object to interact with a dialog set from within a waterfall step.
+
+## To start a dialog
+
+To start a dialog, pass the *dialogId* you want to start into the dialog context's _beginDialog_, _prompt_, or _replaceDialog_ method. The _beginDialog_ method will push the dialog onto the top of the stack, while the _replaceDialog_ method will pop the current dialog off the stack and push the replacing dialog onto the stack.
+
+The dialog context's _prompt_ method is a helper method that takes in arguments and constructs the appropriate options for the prompt; then, it begins the prompt dialog. For more information on prompts, see [Prompt user for input](bot-builder-prompts.md).
+
+## To end a dialog
+
+The _end dialog_ method ends a dialog by popping it off the stack and returns an optional result to the parent dialog.
+
+It is best practice to explicitly call the _endDialog_ method at the end of the dialog.
+
+## To clear the dialog stack
+
+If you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's _cancel all dialogs_ method.
+
+## To repeat a dialog
+
+To repeat a dialog, use the _replace dialog_ method, which will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. This is a great way to handle [complex conversation flows](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus.
 
 ## Next steps
 
-Now that you've learned how to manage simple conversation flows, lets take a look at how you can leverage the _replace_ method to handle complex conversation flows.
+Now that you've learned how to manage simple conversation flows, let's take a look at how you can leverage the _replace dialog_ method to handle complex conversation flows.
 
 > [!div class="nextstepaction"]
 > [Manage complex conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md)

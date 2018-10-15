@@ -17,7 +17,7 @@ Entities are a part of an activity, and provide additional information about the
 
 ## Entities
 
-The *Entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a>
+The *entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a>
 objects which allows the exchange of common contextual metadata between the channel and bot.
 
 ### Mention entities
@@ -234,7 +234,7 @@ This activity type is reserved for internal use by the Microsoft Bot Framework.
 
 ## messageReaction
 
-Some channels will send message reaction activities to your bot when a user reacted to an existing activity. For example, a user clicks the "Like" button on a message. The reply toId property will indicate which activity the user reacted to.
+Some channels will send message reaction activities to your bot when a user reacted to an existing activity. For example, a user clicks the "Like" button on a message. The replyToId property will indicate which activity the user reacted to.
 
 The message reaction activity may correspond to any number of message reaction types that the channel defined. For example, "Like" or "PlusOne" as reaction types that a channel may send.
 

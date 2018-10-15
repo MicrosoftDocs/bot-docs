@@ -7,18 +7,17 @@ ms.author: v-ivorb
 manager: kamrani
 ms.topic: get-started-article
 ms.prod: bot-framework
-ms.date: 05/14/2018
+ms.date: 09/19/2018
 ---
 
 # Deploy your bot to Azure
 
-[!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
+[!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. To do so, you will first deploy the bot to Azure in an App Service then you’ll configure your bot with the Azure Bot Service using the Bot Channels Registration item.
+Once you have created your bot and verified it locally, you can push it to Azure to make it accessible from anywhere. For C# bot, you can use Visual Studio or Azure CLI to publish your bot to Azure. 
 
 ## Publish from Visual Studio
-
-Use Visual Studio to create your resources in Azure and publish your code.
+You will first deploy the bot to Azure from Visual Studio in an App Service. Then you’ll configure your bot with the Azure Bot Service using Bot Channels Registration.
 
 In the Solution Explorer window, right click on your project’s node and select Publish.
 
@@ -123,13 +122,16 @@ In order for your bot to authenticate with the Azure Bot Service, you need to ad
 ## Test Your Bot in Production
 At this point, you can test your bot from Azure using the built-in Web Chat client.
 
-1. Go back to your Resource group in the portal
+1. Go back to your Resource group in the Azure portal
 
-2. Open your bot registration.
+2. Open your bot.
 
-3. Under Bot management, select Test in Web Chat.
+3. Under **Bot management**, select **Test in Web Chat**.
 
 ![test in webchat](media/azure-bot-quickstarts/getting-started-test-webchat.png)
 
 4. Type a message like `Hi` and press Enter. The bot will echo back `Turn 1: You sent Hi`.
 
+## Next steps
+> [!div class="nextstepaction"]
+> [Set up continous deployment](bot-service-build-continuous-deployment.md)

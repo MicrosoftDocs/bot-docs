@@ -26,7 +26,7 @@ This topic will show you how to create these Application Insights keys.
 ## Instrumentation key
 
 To get the Instrumentation key, do the following:
-1. From the [portal.azure.com](http://portal.azure.com), under the Monitor section, create a new **Application Insights** resource (or use an existing one).
+1. From the [Azure portal](http://portal.azure.com), under the Monitor section, create a new **Application Insights** resource (or use an existing one).
 ![Portal screen capture of Application Insights listing](~/media/portal-app-insights-add-new.png)
 
 2. From the list of Application Insights resources, click the Application Insight resource you just created.
@@ -34,6 +34,7 @@ To get the Instrumentation key, do the following:
 3. Click **Overview**.
 
 4. Expand the **Essentials** block and find the **Instrumentation Key**. 
+![Portal screen capture of Overview](~/media/portal-app-insights-instrumentation-key-dropdown.png)
 ![Portal screen capture of the Instrumentation key](~/media/portal-app-insights-instrumentation-key.png)
 
 5. Copy the **Instrumentation Key** and paste it to the **Application Insights Instrumentation Key** field of your bot's settings.

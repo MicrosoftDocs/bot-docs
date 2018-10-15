@@ -1,0 +1,347 @@
+﻿<Type Name="IMessageActivity" FullName="Microsoft.Bot.Connector.IMessageActivity">
+  <TypeSignature Language="C#" Value="public interface IMessageActivity : Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageActivity implements class Microsoft.Bot.Connector.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IMessageActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMessageActivity&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type IMessageActivity = interface&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttachmentLayout">
+      <MemberSignature Language="C#" Value="public string AttachmentLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentLayout : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.AttachmentLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; Attachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; Attachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of Attachment)" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Attachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeliveryMode">
+      <MemberSignature Language="C#" Value="public string DeliveryMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeliveryMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.DeliveryMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeliveryMode As String" />
+      <MemberSignature Language="F#" Value="member this.DeliveryMode : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.DeliveryMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; Entities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; Entities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As IList(Of Entity)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Entities" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Connector.IActivity.Entities</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expiration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Expiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Expiration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Expiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expiration As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.Expiration : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Expiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMentions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Mention[] GetMentions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Connector.Mention[] GetMentions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IMessageActivity.GetMentions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMentions () As Mention()" />
+      <MemberSignature Language="F#" Value="abstract member GetMentions : unit -&gt; Microsoft.Bot.Connector.Mention[]" Usage="iMessageActivity.GetMentions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Mention[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasContent">
+      <MemberSignature Language="C#" Value="public bool HasContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IMessageActivity.HasContent" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasContent () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HasContent : unit -&gt; bool" Usage="iMessageActivity.HasContent " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Importance">
+      <MemberSignature Language="C#" Value="public string Importance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Importance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Importance As String" />
+      <MemberSignature Language="F#" Value="member this.Importance : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Importance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputHint">
+      <MemberSignature Language="C#" Value="public string InputHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputHint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.InputHint" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputHint As String" />
+      <MemberSignature Language="F#" Value="member this.InputHint : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.InputHint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public string Speak { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Speak" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Speak" />
+      <MemberSignature Language="VB.NET" Value="Public Property Speak As String" />
+      <MemberSignature Language="F#" Value="member this.Speak : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Speak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.SuggestedActions SuggestedActions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.SuggestedActions SuggestedActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.SuggestedActions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedActions As SuggestedActions" />
+      <MemberSignature Language="F#" Value="member this.SuggestedActions : Microsoft.Bot.Connector.SuggestedActions with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.SuggestedActions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.SuggestedActions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Summary">
+      <MemberSignature Language="C#" Value="public string Summary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Summary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Summary" />
+      <MemberSignature Language="VB.NET" Value="Public Property Summary As String" />
+      <MemberSignature Language="F#" Value="member this.Summary : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Summary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFormat">
+      <MemberSignature Language="C#" Value="public string TextFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.TextFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextFormat As String" />
+      <MemberSignature Language="F#" Value="member this.TextFormat : string with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.TextFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="Microsoft.Bot.Connector.IMessageActivity.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

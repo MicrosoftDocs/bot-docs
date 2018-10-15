@@ -20,10 +20,10 @@ This guide can help you to troubleshoot authentication issues with your bot by e
 
 Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service. 
 
-If you have not yet done so, [register your bot](~/bot-service-quickstart-registration.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication. 
+If you have not yet done so, [deploy your bot to azure](~/bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication. 
 
 > [!NOTE]
-> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+> To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ## Step 1: Disable security and test on localhost
 
@@ -36,7 +36,9 @@ In this step, you will verify that your bot is accessible and functional on loca
 
 To disable security for your bot, edit its configuration settings to remove the values for app ID and password. 
 
-If you're using the Bot Builder SDK for .NET, edit these settings in the Web.config file:
+::: moniker range="azure-bot-service-3.0"
+
+If you're using the Bot Builder SDK for .NET, edit these settings in your Web.config file: 
 
 ```xml
 <appSettings>
@@ -53,6 +55,32 @@ var connector = new builder.ChatConnector({
   appPassword: null
 });
 ```
+
+::: moniker-end
+
+::: moniker range="azure-bot-service-4.0"
+
+If you're using the Bot Builder SDK for .NET, edit the settings in your `appsettings.config` file:
+
+```xml
+<appSettings>
+  <add key="MicrosoftAppId" value="" />
+  <add key="MicrosoftAppPassword" value="" />
+</appSettings>
+```
+
+If you're using the Bot Builder SDK for Node.js, edit these values (or update the corresponding environment variables):
+
+```javascript
+const adapter = new BotFrameworkAdapter({
+    appId: null,
+    appPassword: null
+});
+```
+
+If using the `.bot` file for configuration, you can update the `appId` and `appPassword` to `""`.
+
+::: moniker-end
 
 ### Test your bot on localhost 
 
@@ -110,7 +138,7 @@ At this point, you have verified that your bot is accessible and functional on l
 
 Your bot's security relies on Microsoft services, even when your bot is running only on localhost. To enable security for your bot, edit its configuration settings to populate app ID and password with the values that you verified in [Step 2](#step-2).
 
-If you're using the Bot Builder SDK for .NET, populate these settings in the Web.config file:
+If you're using the Bot Builder SDK for .NET, populate these settings in your `.bot` or your `appsettings.config` file:
 
 ```xml
 <appSettings>
