@@ -67,4 +67,5 @@ var msg = new builder.Message(session)
                 ]
         }
     });
+session.send(msg);
 // </addAdaptiveCardAttachment>

@@ -47,7 +47,7 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **Privacy information**: There is an all-up privacy policy for Microsoft Online Services that covers all of Azure. Privacy information specific to a service should be presented as technical content, not "privacy statements". See https://azure.microsoft.com/en-us/support/legal/.
 
-* **Redirect articles**:  Do not republish an article so that the content of the article is a link to the replacement content. Convert the article into an actual redirect so the user doesn't have to click to go the the replacement content.
+* **Redirect articles**:  Do not republish an article so that the content of the article is a link to the replacement content. Convert the article into an actual redirect so the user doesn't have to click to go the replacement content.
 
 * **Reference content**: managed reference, REST APIs, PowerShell cmdlet help, schema reference, and error reference content is published to docs.microsoft.com, but not through this repository.
 

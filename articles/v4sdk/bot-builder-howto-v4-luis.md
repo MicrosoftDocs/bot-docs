@@ -313,7 +313,7 @@ Your bot gets results from LUIS by calling the LUIS recognizer.
 
 # [C#](#tab/cs)
 
-To have your bot simply send a reply based on the intent that the LUIS app detected, call the the [LuisRecognizer](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.luisrecognizer), to get a [RecognizerResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.core.extensions.recognizerresult). This can be done within your **LuisBot.cs** code whenever you need to get the LUIS intent, as shown below.
+To have your bot simply send a reply based on the intent that the LUIS app detected, call the `LuisRecognizer`, to get a `RecognizerResult`. This can be done within your code whenever you need to get the LUIS intent.
 
 ```cs
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
