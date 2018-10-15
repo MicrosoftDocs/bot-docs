@@ -41,7 +41,7 @@ Now we need to create a state object for a given user in a conversation and it's
 /// In this example, we are tracking if the bot has replied to customer first interaction.
 public class WelcomeUserState
 {
-    public bool DidBotWelcomedUser { get; set; } = false;
+    public bool DidBotWelcomeUser { get; set; } = false;
 }
 
 /// Initializes a new instance of the <see cref="WelcomeUserStateAccessors"/> class.
@@ -52,7 +52,7 @@ public class WelcomeUserStateAccessors
         this.UserState = userState ?? throw new ArgumentNullException(nameof(userState));
     }
 
-    public IStatePropertyAccessor<bool> DidBotWelcomedUser { get; set; }
+    public IStatePropertyAccessor<bool> DidBotWelcomeUser { get; set; }
 
     public UserState UserState { get; }
 }
@@ -86,7 +86,7 @@ public WelcomeUserBot(WelcomeUserStateAccessors statePropertyAccessor)
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = new CancellationToken())
 {
     // Use state accessor to extract the didBotWelcomeUser flag
-    var didBotWelcomeUser = await _welcomeUserStateAccessors.DidBotWelcomedUser.GetAsync(turnContext, () => false);
+    var didBotWelcomeUser = await _welcomeUserStateAccessors.DidBotWelcomeUser.GetAsync(turnContext, () => false);
 
     if (turnContext.Activity.Type == ActivityTypes.Message)
     {
@@ -95,7 +95,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
         if (didBotWelcomeUser == false)
         {
             // Update user state flag to reflect bot handled first user interaction.
-            await _welcomeUserStateAccessors.DidBotWelcomedUser.SetAsync(turnContext, true);
+            await _welcomeUserStateAccessors.DidBotWelcomeUser.SetAsync(turnContext, true);
             await _welcomeUserStateAccessors.UserState.SaveChangesAsync(turnContext);
 
             // the channel should sends the user name in the 'From' object
@@ -140,7 +140,7 @@ const { ActivityTypes } = require('botbuilder');
 const { CardFactory } = require('botbuilder');
 
 // Welcomed User property name
-const WELCOMED_USER = 'DidBotWelcomedUser';
+const WELCOMED_USER = 'DidBotWelcomeUser';
 
 class MainDialog {
     constructor (userState) {
@@ -154,13 +154,13 @@ class MainDialog {
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         if (turnContext.activity.type === ActivityTypes.Message) 
         {
-            // Read UserState. If the 'DidBotWelcomedUser' does not exist (first time ever for a user)
+            // Read UserState. If the 'DidBotWelcomeUser' does not exist (first time ever for a user)
             // set the default to false.
-            let didBotWelcomedUser = await this.welcomedUserPropery.get(turnContext, false);
+            let didBotWelcomeUser = await this.welcomedUserPropery.get(turnContext, false);
 
             // Your bot should proactively send a welcome message to a personal chat the first time
             // (and only the first time) a user initiates a personal chat with your bot.
-            if (didBotWelcomedUser === false) 
+            if (didBotWelcomeUser === false) 
             {
                 // The channel should send the user name in the 'From' object
                 let userName = turnContext.activity.from.name;
@@ -221,7 +221,7 @@ To ensure your user has a good experience on all possible channels, we avoid pro
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = new CancellationToken())
 {
     // Use state accessor to extract the didBotWelcomeUser flag
-    var didBotWelcomeUser = await _welcomeUserStateAccessors.DidBotWelcomedUser.GetAsync(turnContext, () => false);
+    var didBotWelcomeUser = await _welcomeUserStateAccessors.DidBotWelcomeUser.GetAsync(turnContext, () => false);
 
     if (turnContext.Activity.Type == ActivityTypes.Message)
     {
@@ -286,7 +286,7 @@ class MainDialog
             
             // Previous Code Sample
             
-            if (didBotWelcomedUser === false) 
+            if (didBotWelcomeUser === false) 
             {
                 // Previous Code Sample
             }

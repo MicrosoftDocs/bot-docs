@@ -67,7 +67,6 @@ An alternate method for obtaining your knowledge base access values is to use th
 If you've encrypted your configuration file, you will need to provide your secret key to update the file.
 
 ## Using QnA Maker
-
 A reference to the QnA Maker is first added when initializing the bot. Then we can call it within our bot logic.
 
 # [C#](#tab/cs)
