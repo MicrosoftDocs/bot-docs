@@ -50,7 +50,8 @@ Next, start the emulator and then connect to your bot in the emulator:
 Send a message to your bot, and the bot will respond back with a message.
 ![Emulator running](../media/emulator-v4/emulator-running.png)
 
-Note: when the you see that the message can not be sent you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done 1 time).
+> [!NOTE]
+> If you see that the message can not be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
 
 ## Next steps
 
