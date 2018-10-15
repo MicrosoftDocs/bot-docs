@@ -27,7 +27,7 @@ We will first create a bot that will read and write data to Memory Storage. Memo
 
 #### Build a basic bot
 
-The rest of this topic builds off of a Echo bot. You can create one in either [C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md) or [JS](../javascript/bot-builder-javascript-quickstart.md). You can use the Bot Framework Emulator to connect to, converse with, and test your bot. The following sample adds every message from the the user to a list. The data structure containing the list is saved to your storage.
+The rest of this topic builds off of a Echo bot. You can create one in either [C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md) or [JS](../javascript/bot-builder-javascript-quickstart.md). You can use the Bot Framework Emulator to connect to, converse with, and test your bot. The following sample adds every message from the user to a list. The data structure containing the list is saved to your storage.
 
 # [C#](#tab/csharp)
 

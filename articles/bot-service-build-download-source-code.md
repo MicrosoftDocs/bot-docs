@@ -57,7 +57,7 @@ After your project configured, your project changes will be published to Azure.
 
 Next, we'll take a look at downloading and redeploying code using the `az` cli.
 
-### Download code usubg Azure CLI
+### Download code using Azure CLI
 First, log in to the Azure portal using the az cli tool.
 
 ```azcli
@@ -80,7 +80,7 @@ After the code is downloaded, do the following:
 }
 ```
 
-- For node.js bot, dd a .env file with the following entries:
+- For node.js bot, add a .env file with the following entries:
 ```
 botFilePath=yourbasicBot.bot
 botFileSecret=ukxxxxxxxxxxxxs=

@@ -67,7 +67,7 @@ You might design your bot to handle more than one type of task. For example, you
 
 ### Recognize intent
 
-The Bot Builder SDK supplies _recognizers_ that can process a message to determine intent, so your bot can initiate the appropriate conversational flow. Call the recognizer's _recognize_ async method to determine the user's intent from their message content. You can then call the _get top scoring intent_ method on the result to get the the recognizer's top prediction.
+The Bot Builder SDK supplies _recognizers_ that can process a message to determine intent, so your bot can initiate the appropriate conversational flow. Call the recognizer's _recognize_ async method to determine the user's intent from their message content. You can then call the _get top scoring intent_ method on the result to get the recognizer's top prediction.
 
 A recognizer could use regular expressions, language understanding, or other logic that you develop. The following are examples of possible recognizers:
 

@@ -56,7 +56,7 @@ Once you have set up and connected LUIS, your bot can send the message to your L
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
-To get started using a LUIS app with your bot, check out [using LUIS for language understanding][luis-v4-how-to].
+To get started using a LUIS app with your bot, check out [using LUIS for language understanding](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0).
 
 ## Best practices for Language Understanding
 
@@ -95,7 +95,7 @@ The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services 
 
 ## Use LUIS to improve speech recognition
 
-For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming][speechrecognitionpriming] with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
+For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
 
 ## Additional resources
 Refer to [Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/) documentation for more information.
