@@ -501,7 +501,7 @@ Further examples can be found in our [samples repo](https://aka.ms/bot-samples-r
 
 ```JavaScript
 // A date and time prompt with validation for date/time in the future.
-dialogs.add(new atetimePrompt('dateTimePrompt', async (promptContext) => {
+dialogs.add(new DateTimePrompt('dateTimePrompt', async (promptContext) => {
     if (promptContext.recognized.succeeded) {
         const values = promptContext.recognized.value;
         try {
