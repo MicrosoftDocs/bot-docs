@@ -62,7 +62,7 @@ An alternate method for obtaining your knowledge base access values is to use th
 3. Run the following command to download your metadata and add it to your bot's configuration file.
 
     ```shell
-    qnamaker get kb --kbId <your-kb-id> --msbot | msbot connect qna --stdin [--secret <your-secret>]
+    qnamaker get kb --kbId <your-kb-id> --msbot | msbot connect qna --stdin [ --secret <your-secret>]
     ```
 If you've encrypted your configuration file, you will need to provide your secret key to update the file.
 
