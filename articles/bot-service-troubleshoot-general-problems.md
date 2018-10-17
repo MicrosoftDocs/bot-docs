@@ -46,7 +46,14 @@ The Connector library is the exposition of the REST API. The Builder library add
 ## What causes an error with HTTP status code 429 "Too Many Requests"?
 
 An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. One possible source for this error is [ngrok](https://ngrok.com/). If you are on a free plan and running into ngrok's limits, go to the pricing and limits page on their website for more [options](https://ngrok.com/product#pricing). 
- 
+
+## Why aren't my bot messages getting received by the user?
+
+The message activity generated in response must be correctly addressed, otherwise it won’t arrive at its intended destination. In the vast majority of cases you will not need to handle this explicitly; the SDK takes care of addressing the message activity for you. 
+
+Correctly addressing an activity means including the appropriate *conversation reference* details along with details about the sender and the recipient. In most cases, the message activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound activity. 
+
+If you examine traces or audit logs, you can check to make sure your messages are correctly addressed. If they aren't, set a breakpoint in your bot and see where the IDs are being set for your message.
 
 ## How can I run background tasks in ASP.NET? 
 

@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The [turn context](bot-builder-concept-activity-processing.md#turn-context) object provides methods for sending messages back to the user. For more information about activity processing in general, see [Activity processing](bot-builder-concept-activity-processing.md).
+The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. For more information about activity processing in general, see [Activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack).
 
 This article describes how to send simple text and speech messages. For sending richer content, see how to [add rich media attachments](bot-builder-howto-add-media-attachments.md). For information on how to use prompt objects, see how to [prompt users for input](bot-builder-prompts.md).
 
