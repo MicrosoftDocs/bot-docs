@@ -52,7 +52,7 @@ To save development time, LUIS provides pre-trained language models that recogni
 
 ## How your bot gets messages from LUIS
 
-Once you have set up and connected LUIS, your bot can send the message to your LUIS app, which returns a JSON response that contains the intents and entities. Then, you can use the [turn context](bot-builder-concept-activity-processing.md#turn-context) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response. 
+Once you have set up and connected LUIS, your bot can send the message to your LUIS app, which returns a JSON response that contains the intents and entities. Then, you can use the [turn context](~/v4sdk/bot-builder-basics.md#defining-a-turn) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response. 
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 

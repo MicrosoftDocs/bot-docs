@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Gathering information by posting questions is one of the main ways a bot interacts with users. It is possible to do this directly by using the [turn context](bot-builder-concept-activity-processing.md#turn-context) object's _send activity_ method and then process the next incoming message as the response. However, the Bot Builder SDK provides a **dialogs** library that provides methods designed to make it easier to ask questions, and to make sure the response matches a specific data type or meets custom validation rules. This topic details how to achieve this using **prompts** to ask a user for input.
+Gathering information by posting questions is one of the main ways a bot interacts with users. It is possible to do this directly by using the [turn context](~/v4sdk/bot-builder-basics.md#defining-a-turn) object's _send activity_ method and then process the next incoming message as the response. However, the Bot Builder SDK provides a **dialogs** library that provides methods designed to make it easier to ask questions, and to make sure the response matches a specific data type or meets custom validation rules. This topic details how to achieve this using **prompts** to ask a user for input.
 
 This article describes how to use prompts within a dialog. For information on using dialogs in general, see [using dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
