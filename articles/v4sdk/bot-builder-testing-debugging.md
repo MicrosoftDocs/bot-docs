@@ -46,7 +46,8 @@ the [Azure Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emu
 
 ### Level 2: Use a Direct Line client
 
-After verifying your bot appears to work how you’d like it to, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server and create your own <!--IBTODO [Direct Line client](bot-builder-howto-direct-line.md)--> direct line client for your bot to connect to.
+After verifying your bot appears to work how you’d like it to, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server and create your own direct line client for your bot to connect to.
+<!--IBTODO [Direct Line client](bot-builder-howto-direct-line.md)-->
 
 Creating your own client allows you to define the inner workings of the channel, as well as specifically test how your bot responds to certain activity exchanges. Once connected to your client, run your tests to set up your bot state and verify your features. If your bot utilizes a feature like speech, using these channels can offer a way to verify that functionality.
 
