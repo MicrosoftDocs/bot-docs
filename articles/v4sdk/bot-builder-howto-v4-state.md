@@ -53,7 +53,7 @@ public class UserProfile
 The `TopicState` class has a flag to keep track of where we are in the conversation and uses conversation state to store it. The Prompt is initialized as "askName" to initiate the conversation. Once the bot receives response from the user, Prompt will be redefined as "askNumber" to initiate the next conversation. `UserProfile` class tracks user name and phone number and stores it in user state.
 
 ### Property accessors
-The `EchoBotAccessors` class in our example is created as a singleton and passed into the `class EchoWithCounterBot : IBot` constructor through dependency injection. The `EchoBotAccessors` class constructor initializes a new instance of the `EchoBotAccessors` class. It contains the `ConversationState`, `UserState`, and associated `IStatePropertyAccessor`. The `conversationState` object stores the topic state and `userState` object that stores the user profile information. The `ConversationState` and `UserState` objects are created in the Startup.cs file. The conversation and user state objects are where we persist anything at the conversation and user scope. 
+The `EchoBotAccessors` class in our example is created as a singleton and passed into the `class EchoWithCounterBot : IBot` constructor through dependency injection. The `EchoBotAccessors` class contains the `ConversationState`, `UserState`, and associated `IStatePropertyAccessor`. The `conversationState` object stores the topic state and `userState` object that stores the user profile information. The `ConversationState` and `UserState` objects will be created later in the Startup.cs file. The conversation and user state objects are where we persist anything at the conversation and user scope. 
 
 Updated the constructor to include `UserState` as shown below:
 ```csharp
@@ -97,7 +97,7 @@ services.AddBot<EchoWithCounterBot>(options =>
     options.State.Add(userState);
 });
 ```
-The line `options.State.Add(ConversationState);` and `options.State.Add(userState);` add the conversation state and user state, respectively. Next, create and register state accesssors. Acessors created here are passed into the IBot-derived class on every turn. Modift the code to inclue user state as shown below:
+The line `options.State.Add(ConversationState);` and `options.State.Add(userState);` add the conversation state and user state, respectively. Next, create and register state accesssors. Accessors created here are passed into the IBot-derived class on every turn. Modify the code to inclue user state as shown below:
 ```csharp
 services.AddSingleton<EchoBotAccessors>(sp =>
 {
@@ -116,17 +116,17 @@ Next, create the two accessors using `TopicState` and `UserProfile` and pass it 
 services.AddSingleton<EchoBotAccessors>(sp =>
 {
    ...
-    var accessors = new BotAccessors(conversationState, userState)
+    var accessors = new EchoBotAccessors(conversationState, userState)
     {
-        TopicState = conversationState.CreateProperty<TopicState>("TopicState"),
-        UserProfile = userState.CreateProperty<UserProfile>("UserProfile"),
+        TopicState = conversationState.CreateProperty<TopicState>(EchoBotAccessors.TopicStateName),
+        UserProfile = userState.CreateProperty<UserProfile>(EchoBotAccessors.UserProfileName),
      };
 
      return accessors;
  });
 ```
 
-The conversation and user state are linked to a singleton via the `services.AddSingleton` code block and saved via a state store accessor in the code starting with `var accessors = new BotAccessor(conversationState, userState)`.
+The conversation and user state are linked to a singleton via the `services.AddSingleton` code block and saved via a state store accessor in the code starting with `var accessors = new EchoBotAccessor(conversationState, userState)`.
 
 ### Use conversation and user state properties 
 In the `OnTurnAsync` handler of the `EchoWithCounterBot : IBot` class, modify the code to prompt for user name and then phone number. To track where we are in the conversation, we use the Prompt property defined in the TopicState. This property was initialized a "askName". Once we get the user name, we set it to "askNumber" and set the UserName to the name user typed in. After the phone number is received, you send a confirmation message and set the prompt to 'confirmation' because you are at the end of the conversation.
