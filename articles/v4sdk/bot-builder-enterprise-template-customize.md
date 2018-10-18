@@ -75,7 +75,7 @@ To update an existing LUIS model for the Enterprise Template, perform these step
 ```
 3. Run the following command from your project root for each updated model to update their associated LuisGen classes: 
 ```shell
-    luis export version --appId [LUIS_APP_ID] --versionId [LUIS_APP_VERSION] --authoringKey [YOUR_LUIS_AUTHORING_KEY] | luisgen - -cs [CS_FILE_NAME] -o "\Dialogs\Shared\Resources"
+    luis export version --appId [LUIS_APP_ID] --versionId [LUIS_APP_VERSION] --authoringKey [YOUR_LUIS_AUTHORING_KEY] | luisgen --cs [CS_FILE_NAME] -o "\Dialogs\Shared\Resources"
 ```
 
 ### Updating an existing QnAMaker Knowledge Base

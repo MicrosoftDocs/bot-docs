@@ -13,9 +13,9 @@
 # [App Insights keys](../bot-service-resources-app-insights-keys.md)
 # [User-agent requests](../bot-service-resources-user-agent.md)
 # [Bot review guidelines](../bot-service-review-guidelines.md)
-# [Bot Framework Activity schema](https://github.com/Microsoft/BotBuilder/blob/hub/specs/botframework-activity/botframework-activity.md)
-# [Bot Framework Card schema](https://github.com/Microsoft/BotBuilder/blob/hub/specs/botframework-activity/botframework-cards.md)
-# [Bot Framework Transcript schema](https://github.com/Microsoft/BotBuilder/blob/hub/specs/transcript/transcript.md)
+# [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+# [Bot Framework Card schema](https://aka.ms/botSpecs-cardSchema)
+# [Bot Framework Transcript schema](https://aka.ms/botSpecs-transcripts)
 # [Bot Service Compliance](../v4sdk/bot-service-compliance.md)
 # Troubleshoot
 ## [Troubleshoot general problems](../bot-service-troubleshoot-general-problems.md)
