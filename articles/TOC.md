@@ -44,6 +44,7 @@
 ### [Use dialogs to manage complex conversation flow](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 ### [Persist data in dialogs](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
+### [Create an integrated set of dialogs](v4sdk/bot-builder-compositcontrol.md)
 ### [Use LUIS for language understanding](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Use QnA Maker to answer questions](v4sdk/bot-builder-howto-qna.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)

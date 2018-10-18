@@ -17,14 +17,14 @@ monikerRange: 'azure-bot-service-4.0'
 
 The central concept in the SDK to manage conversations is the idea of a Dialog. Dialog objects process inbound Activities and generate outbound responses. The business logic of the bot runs either directly or indirectly within Dialog classes.
 
-At runtime, Dialog instances are arranged in a stack. The Dialog on the top of the stack is referred to as the ActiveDialog. The current active Dialog processes the inbound Activity. Between each turn of the conversation (which is not time-bound and maybe over several days), the stack is persisted. 
+At runtime, Dialog instances are arranged in a stack. The Dialog on the top of the stack is referred to as the ActiveDialog. The current active Dialog processes the inbound Activity. Between each turn of the conversation (which is not time-bound and may span over several days), the stack is persisted. 
 
 A Dialog implements three main functions:
 - BeginDialog
 - ContinueDialog
 - ResumeDialog
 
-At runtime, Dialogs and DialogContext class work together to choose the appropriate Dialog to handle the activity. The DialogContext class ties the persisted Dialog stack, the inbound Activity, and the DialogSet class. A DialogSet contains dialogs that the bot can call.
+At runtime, Dialogs and DialogContext classes work together to choose the appropriate Dialog to handle the activity. The DialogContext class ties the persisted Dialog stack, the inbound Activity, and the DialogSet class. A DialogSet contains dialogs that the bot can call.
 
 The DialogContext's interface reflects the underlying notion of Dialog’s begin and continue. The general pattern for the application is always to call ContinueDialog first. If there is no stack and therefore no ActiveDialog, the application should begin the Dialog it chooses by calling BeginDialog on the DialogContext. This will cause the corresponding Dialog entry from the DialogSet to be pushed onto the stack (technically it’s the Dialog’s id that is added to the stack) and it will then delegate a call to BeginDialog on the specific Dialog object. If there had been an ActiveDialog, it would have simply delegated the call to that Dialog’s ContinueDialog, in the processing giving that Dialog any associated persisted properties.
 

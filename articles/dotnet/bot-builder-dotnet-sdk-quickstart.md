@@ -25,7 +25,7 @@ This quickstart walks you through building a bot by using the C# template, and t
 ## Create a bot
 Install BotBuilderVSIX.vsix template that you downloaded in the prerequisites section. 
 
-In Visual Studio, create a new bot project.
+In Visual Studio, create a new bot project using the Bot Builder Echo Bot V4 template.
 
 ![Visual Studio project](../media/azure-bot-quickstarts/bot-builder-dotnet-project.png)
 
