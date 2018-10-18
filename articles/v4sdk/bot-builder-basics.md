@@ -15,39 +15,73 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (cards), or speech. Every interaction between the user and the bot generates an Activity. Depending on the application used to connect to the bot (Facebook, Skype, Slack, etc.), certain information is sent between the user and your bot as part of the Activity. Before creating bots, it is important to understand how a bot uses Activity object to communicate with its users. Let's first take a look at Activities that are exchanged when we run a simple echo bot and its relationship to HTTP.
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot generates an *activity*. The Bot Service sends information between the user's bot-connected app (such as Facebook, Skype, Slack, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
 
 ![activity diagram](media/bot-builder-activity.png)
 
-Two Activity types illustrated here are: ConversationUpdate and Message.
+Two activity types illustrated here are: *conversation update* and *message*.
 
-Activities belonging to the same conversation all include the same ConversationReference details along with a few other tracking identifiers. Without these fields correctly set in the Activity, the Bot Framework Service won’t know what to do with it, and it will get dropped or rejected.
+The Bot Framework Service may send a conversation update when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two conversation update activities (one for the user joining the conversation and one for the bot joining). To distinguish these conversation update activities, check whether the *members added* property includes a member other than the bot. 
 
-ConversationUpdate is sent from the Bot Framework Service when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two ConversationUpdate Activities. One for the user joining the conversation and one for the bot joining. These ConversationUpdate Activities are easily distinguished because the MembersAdded property will contain an Id that matches the Recipient Id for the ConversationUpdate Activity corresponding to the bot joining.
+The message activity carries conversation information between the parties. In an echo bot example, the message activities are carrying simple text and the channel will render this text. Alternatively, the message activity might carry text to be spoken, suggested actions or cards to be displayed.
 
-The Message Activity carries conversation information between the parties. In an echo bot example, the Message Activities are carrying simple text. The client will render this text content. Alternatively, the Message Activity might carry text to be spoken, suggested actions or cards to be displayed.
+In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity; it’s not uncommon for a bot to respond to a conversation update activity by sending some welcome text in a message activity. More information can be found in [welcoming the user](bot-builder-welcome-user.md).
 
-Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn is, acknowledged with a 200 HTTP status code.
+### HTTP Details
 
-The protocol doesn’t specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the diagram above. As there are two distinct HTTP connections back to back the security model must provide for both. 
+Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn, is acknowledged with a 200 HTTP status code.
 
-## The Activity processing stack
+The protocol doesn’t specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the diagram above. Since there are two distinct HTTP connections back to back, the security model must provide for both.
 
-Let's drill into the previous diagram with a focus on the arrival of a Message Activity.
+### Defining a turn
+
+A turn, as it pertains to our bots, is used to describe all the processing associated with the arrival of an activity. 
+
+The *turn context* object provides information about the activity such as the sender and receiver, the channel, and other data needed to process the activity. It also allows for the addition of information during the turn across various layers of the bot.
+
+The turn context is one of the most important abstractions in the SDK. Not only does it carry the inbound activity to all the middleware components and the application logic but it also provides the mechanism whereby the middleware components and the application logic can send outbound activities.
+
+## The activity processing stack
+
+Let's drill into the previous diagram with a focus on the arrival of a message activity.
 
 ![activity processing stack](media/bot-builder-activity-processing-stack.png)
 
-In the echo example, the bot replied to the Message Activity with another Message Activity containing the same text message. The Message Activity generated in response must be correctly addressed. Otherwise, it won’t arrive at its intended destination. Correctly addressing an Activity means including the appropriate ConversationReference details along with details about the sender and the recipient. In this particular example, the Message Activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound Activity. In general this is handled by the SDK behind the scenes. In most cases your application will not need to handle this explicitly. However, it can be useful to know when debugging and examining traces or audit logs.
+In the example above, the bot replied to the message activity with another message activity containing the same text message. Processing starts with the HTTP POST request, with the activity information carried as a JSON payload, arriving at the web server. In C# this will typically be an ASP.NET project, in a JavaScript Node.js project this is likely to be one of the popular frameworks such as Express or Restify.
 
-In the echo bot example, the bot created and sent a Message Activity on an HTTP POST in response to the inbound Message Activity it had received on the HTTP POST it was handling. However, there is nothing in the protocol that mandates this exchange. It’s common for a bot to respond to a ConversationUpdate Activity by sending some welcome text in a Message Activity.  
+The *adapter*, an integrated component of the SDK, serves as the conductor of the framework. The service uses the activity information to create an activity object, and then calls the adapter's *process activity* method while passing in the activity object and authentication information (this call is wrapped inside the libraries for C#, but you will see it in JavaScript). Upon receiving the activity, the adapter creates a turn context object and calls the [middleware](#middleware). Processing continues to the bot logic after middleware, the pipeline completes, and the adapter disposes of the turn context object.
 
-In the example, the processing starts with the HTTP POST request arriving at the Web Server. In C# this will typically be an ASP.NET project, in a JavaScript NodeJS project this is likely to be one of the popular frameworks such as Express or Restify.
-
-Integrated into the Web Service framework is the Adapter. The Adapter is the core of the Bot SDK runtime.  The Activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the Activity object that is then handed to the Adapter with a call to ProcessActivity. On receiving the Activity, the Adapter creates a TurnContext and calls the Middleware. The name “TurnContext” follows from the use of the word “turn” to describe all the processing associated with the arrival of an Activity. The TurnContext is one of the most important abstractions in the SDK, not only does it carry the inbound Activity to all the Middleware components and the application logic but it also provides the mechanism whereby the Middleware components and the application logic can send outbound Activities.
+The bot's *turn handler*, which makes up most of the application logic, takes a turn context as its argument. The turn handler will typically process the inbound activity’s content and generate one or more activities in response, sending these out using the turn context's *send activity* method. Calling the send activity method will send an activity to the user's channel, unless processing otherwise gets interrupted. The activity will pass through any registered [event handlers](#response-event-handlers) before being sent to the channel.
 
 ## Middleware
 
-Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the Activity. The final stage of the middleware pipeline is a callback to invoke the OnTurn function on the bot class the application has registered with the Adapter. The OnTurn function takes a TurnContext as its argument, typically the application logic running inside the OnTurn function will process the inbound Activity’s content and generate one or more Activities in response, sending these out using the SendActivity function on the TurnContext. Calling SendActivity on the TurnContext will cause the middleware components to be invoked on the outbound Activities. Middleware components execute before and after the bot’s OnTurn function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll.
+Middleware is a linear set of components that are each added and executed in order, giving each a chance to operate on the activity both before and after the bot's turn handler and have access to the turn context for that activity. Unless middleware [short circuited](~/v4sdk/bot-builder-concept-middleware.md#short-circuiting), the final stage of the middleware pipeline is a callback to invoke the turn handler of the bot, before returning up the stack. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
+
+## Generating responses
+
+The turn context provides activity response methods to allow code to respond to an activity:
+
+* The _send activity_ and _send activities_ methods send one or more activities to the conversation.
+* If supported by the channel, the _update activity_ method updates an activity within the conversation.
+* If supported by the channel, the _delete activity_ method removes an activity from the conversation.
+
+Each response method runs in an asynchronous process. When it is called, the activity response method clones the associated [event handler](#response-event-handlers) list before starting to call the handlers, which means it will contain every handler added up to this point but will not contain anything added after the process starts.
+
+This also means the order of your responses for independent activity calls is not guaranteed, particularly when one task is more complex than another. If your bot can generate multiple responses to an incoming activity, make sure that they make sense in whatever order they are received by the user. The only exception to this is the *send activities* method, which allows you to send an ordered set of activities.
+
+> [!IMPORTANT]
+> The thread handling the primary bot turn deals with disposing of the context object when it is done. **Be sure to `await` any activity calls** so the primary thread will wait on the generated activity before finishing it's processing and disposing of the turn context. Otherwise, a response (including its handlers) take any significant amount of time and try to act on the context object, they may get a `Context was disposed` error. 
+
+## Response event handlers
+
+In addition to the application and middleware logic, response handlers (also sometimes referred to as event handlers, or activity event handlers) can be added to the context object. These handlers are called when the associated [response](#generating-responses) happens on the current context object, before executing the actual response. These handlers are useful when you know you'll want to do something, either before or after the actual event, for every activity of that type for the rest of the current response.
+
+> [!WARNING]
+> Be careful to not call an activity response method from within it's respective response event handler, for example, calling the send activity method from within an _on send activity_ handler. Doing so can generate an infinite loop.
+
+Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
+
+The handlers registered on a context object are handled very similarly to how the adapter manages the manages the [middleware pipeline](~/v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). Namely, handlers get called in the order they're added, and calling the _next_ delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event [short circuits](~/v4sdk/bot-builder-concept-middleware.md#short-circuiting), and the adapter does not send the response to the channel.
 
 ## Bot structure
 
@@ -59,7 +93,7 @@ A bot is a type of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=a
 
 ### EchoWithCounterBot.cs
 
-The main bot logic is defined in the `EchoWithCounterBot` class that derives from the `IBot` interface. `IBot` defines a single method `OnTurnAsync`. Your application must implement this method. `OnTurnAsync` has turnContext that provides information about the incoming Activity. The incoming Activity corresponds to the inbound HTTP request. Activities can be of various types, so we first check to see if your bot has received a message. If it is a message, we  get the conversation state from the turn context, increment the turn counter, and then persist the new turn counter value into the conversation state. And then send a message back to the user using SendActivityAsync call. The outgoing Activity corresponds to the outbound HTTP request.
+The main bot logic is defined in the `EchoWithCounterBot` class that derives from the `IBot` interface. `IBot` defines a single method `OnTurnAsync`. Your application must implement this method. `OnTurnAsync` has turnContext that provides information about the incoming activity. The incoming activity corresponds to the inbound HTTP request. Activities can be of various types, so we first check to see if your bot has received a message. If it is a message, we  get the conversation state from the turn context, increment the turn counter, and then persist the new turn counter value into the conversation state. And then send a message back to the user using SendActivityAsync call. The outgoing activity corresponds to the outbound HTTP request.
 
 ```cs
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
@@ -326,7 +360,7 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
 #### Bot Logic
 
 The adapter's `processActivity` sends incoming activities to the bot logic.
-The third parameter within `processActivity` is a function handler that will be called to perform the bot’s logic after the received [activity](bot-builder-concept-activity-processing.md) has been pre-processed by the adapter and routed through any middleware. The [context](./bot-builder-concept-activity-processing.md#turn-context) variable, passed as an argument to the function handler, can be used to provide information about the incoming activity, the sender and receiver, the channel, the conversation, etc. Activity processing is routed to the EchoBot's `onTurn`.
+The third parameter within `processActivity` is a function handler that will be called to perform the bot’s logic after the received [activity](#the-activity-processing-stack) has been pre-processed by the adapter and routed through any middleware. The turn context variable, passed as an argument to the function handler, can be used to provide information about the incoming activity, the sender and receiver, the channel, the conversation, etc. Activity processing is routed to the EchoBot's `onTurn`.
 
 ```javascript
 // Listen for incoming requests.
@@ -341,7 +375,7 @@ server.post('/api/messages', (req, res) => {
 
 ### EchoBot
 
-All Activity processing is routed to this class's `onTurn` handler. When the class is created, a state object is passed in. Using this state object, the constructor creates a `this.countProperty` accessor to persist the turn counter for this bot.
+All activity processing is routed to this class's `onTurn` handler. When the class is created, a state object is passed in. Using this state object, the constructor creates a `this.countProperty` accessor to persist the turn counter for this bot.
 
 On each turn, we first check to see if the bot has received a message. If the bot did not receive a message, we will echo back the activity type received. Next, we create a state variable that holds the information of your bot's conversation. If the count variable is `undefined`, it is set to 1 (which will occur when your bot first starts) or increment it with every new message. We echo back to the user the count along with the message they sent. Finally, we set the count and save the changes to state.
 
