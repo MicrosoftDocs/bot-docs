@@ -13,7 +13,7 @@ Thank you for your interest in Bot Framework documentation!
 
 * [Ways to contribute](#ways-to-contribute)
 * [Code of conduct](#code-of-conduct)
-* [About your contributions to Bot Framework content](#about-your-contributions-to-Bot-Framework-content)
+* [About your contributions to Bot Framework content](#about-your-contributions-to-bot-framework-content)
 * [Repository organization](#repository-organization)
 * [Use GitHub, Git, and this repository](#use-github-git-and-this-repository)
 * [How to use markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
