@@ -19,7 +19,7 @@ Middleware is simply a class that sits between the adapter and your bot logic, a
 
 The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. As each activity flows in and out of the bot, each piece of middleware can inspect or act upon the activity, both before and after the bot logic runs.
 
-Before jumping into middleware, it is important to understand [bots in general](~/v4sdk/bot-builder-basics.md) and [how they process activities](~/v4sdk/bot-builder-concept-activity-processing.md).
+Before jumping into middleware, it is important to understand [bots in general](~/v4sdk/bot-builder-basics.md) and [how they process activities](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack).
 
 ## Uses for middleware
 The question often comes up: "When should I implement actions as middleware versus using my normal bot logic?" Middleware provides you with additional opportunities to interact with your users' conversation flow both before and after each _turn_ of the conversation is processed. Middleware also allows you to store and retrieve information concerning the conversation and call additional processing logic when required. Below are some common scenarios that show where middleware can be useful.
@@ -28,7 +28,7 @@ The question often comes up: "When should I implement actions as middleware vers
 There are plenty of situations that require your bot to do something on every activity, or for every activity of a certain type. For example, you may want to log every message activity your bot receives or provide a fallback response if the bot has not otherwise generated a response this turn. Middleware is a great place for this, with its ability to act both before and after the rest of the bot logic has executed.
 
 ### Modifying or enhancing the turn context
-Certain conversations can be much more fruitful if the bot has more information than what is provided in the activity. Middleware in this case could look at the conversation state information it has so far, query an external data source, and append that to the [turn context](bot-builder-concept-activity-processing.md#turn-context) object before passing execution on to the bot logic. 
+Certain conversations can be much more fruitful if the bot has more information than what is provided in the activity. Middleware in this case could look at the conversation state information it has so far, query an external data source, and append that to the [turn context](~/v4sdk/bot-builder-basics.md#defining-a-turn) object before passing execution on to the bot logic. 
 
 The SDK defines logging middleware that can record incoming and outgoing activities, but You can also define your own middleware.
 
@@ -60,7 +60,7 @@ The first things in your middleware pipeline should likely be those that take ca
 The last things in your middleware pipeline should be bot-specific middleware, which is middleware you implement to do some processing on every message sent to your bot. If your middleware uses state information or other information set in the bot context, add it to the middleware pipeline after the middleware that modifies state or context.
 
 ## Short circuiting
-An important idea around middleware (and [response handlers](./bot-builder-concept-activity-processing.md#response-event-handlers)) is _short circuiting_. If execution is to continue through the layers that follow it, middleware (or a response handler) is required to pass execution on by calling it's _next_ delegate.  If the next delegate is not called within that middleware (or response handler), the associated pipeline short circuits and subsequent layers are not executed. This means all bot logic, and any middleware further along the pipeline, is skipped. There is a subtle difference between your middleware and your response handler short circuiting a turn.
+An important idea around middleware (and [response handlers](bot-builder-basics.md#response-event-handlers)) is _short circuiting_. If execution is to continue through the layers that follow it, middleware (or a response handler) is required to pass execution on by calling it's _next_ delegate.  If the next delegate is not called within that middleware (or response handler), the associated pipeline short circuits and subsequent layers are not executed. This means all bot logic, and any middleware further along the pipeline, is skipped. There is a subtle difference between your middleware and your response handler short circuiting a turn.
 
 When middleware short circuits a turn, your bot turn handler will not be called, but all middleware code executed prior to this point in the pipeline will still run to completion. 
 

@@ -18,7 +18,7 @@ Our previous design article [welcome the user](./bot-builder-welcome-user.md) di
 
 ## Same welcome for different channels
 
-The following example watches for new _conversation update_ activity, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. The code below uses the welcome user sample in the [GitHub](https://github.com/Microsoft/BotBuilder-Samples/) repo.
+The following example watches for new _conversation update_ activity, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. The example code below uses the welcome user samples in the Github repo for [C#](https://aka.ms/bot-welcome-sample-cs) and [JS](https://aka.ms/bot-welcome-sample-js) code.
 
 ## [C#](#tab/csharp)
 
@@ -170,6 +170,16 @@ class MainDialog {
                 // Set the flag indicating the bot handled the user's first message.
                 await this.welcomedUserPropery.set(turnContext, true);
             }
+            . . .
+            
+            // Save state changes
+            await this.userState.saveChanges(turnContext);
+        } else if (turnContext.activity.type === ActivityTypes.ConversationUpdate) {
+            // Send greeting when users are added to the conversation.
+            await this.sendWelcomeMessage(turnContext);
+        } else {
+            // Generic message for all other activities
+            await turnContext.sendActivity(`[${ turnContext.activity.type } event detected]`);
         }
     }
     

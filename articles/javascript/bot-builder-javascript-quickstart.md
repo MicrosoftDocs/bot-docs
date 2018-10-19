@@ -7,7 +7,7 @@ ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.prod: bot-framework
-ms.date: 09/23/2018
+ms.date: 10/15/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,6 +22,7 @@ This quickstart walks you through building a bot by using the Yeoman Bot Builder
 - [Visual Studio Code](https://www.visualstudio.com/downloads)
 - [Node.js](https://nodejs.org/)
 - [Yeoman](http://yeoman.io/), which can use a generator to create a bot for you
+- [git](https://git-scm.com/)
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator)
 - Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
 
