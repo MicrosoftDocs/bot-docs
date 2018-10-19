@@ -25,10 +25,10 @@ To send a simple text message, specify the string you want to send as the activi
 
 # [C#](#tab/csharp)
 
-In the bot's **OnTurn** method, use the turn context object's **SendActivity** method to send a single message response. You can also use the object's **SendActivities** method to send multiple responses at once.
+In the bot's **OnTurn** method, use the turn context object's **SendActivityAsync** method to send a single message response. You can also use the object's **SendActivitiesAsync** method to send multiple responses at once.
 
 ```cs
-await context.SendActivity("Greetings from sample message.");
+await context.SendActivityAsync("Greetings from sample message.");
 ```
 
 # [JavaScript](#tab/javascript)
@@ -53,7 +53,7 @@ Certain channels support speech-enabled bots, allowing them to speak to the user
 Use the optional **speak** parameter to provide text to be spoken as part of the response.
 
 ```cs
-await context.SendActivity(
+await context.SendActivityAsync(
     "This is the text to be displayed.",
     "This is the text to be spoken.");
 ```

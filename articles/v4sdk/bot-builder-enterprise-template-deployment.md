@@ -25,7 +25,7 @@ monikerRange: 'azure-bot-service-4.0'
 npm install -g ludown luis-apis qnamaker botdispatch msbot luisgen chatdown
 ```
 
-- Install the Azure Command Line Tools (CLI) from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
+- Install the Azure Command Line Tools (CLI) from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest). If you already have the Azure Bot Service command line (CLI) tool installed, make sure you update it to the latest version by uninstalling your current version and then installing the new one.
 
 - Install the AZ Extension for Bot Service
 ```shell
@@ -96,6 +96,8 @@ Once complete, run your bot project within your development envrionment and open
 
 Then type ```hi``` to verify everything is working.
 
+If there is any issues with the Bot Framework Emulator, first ensure you have the latest Bot Framework Emulator. If your older version of the emulator is not properly updating, uninstall and reinstall emulator.
+
 ## Deploy to Azure
 
 Testing can be performed end to end locally. When your ready to deploy your Bot to Azure for additional testing you can use the following command to publish the source code, this can be run whenever you wish to push source code updates.
@@ -118,7 +120,7 @@ Register the `SignInDialog` in the MainDialog constructor:
 
 Add the following in your code at your desired location to test a simple login flow:
     
-`var signInResult = await dc.BeginAsync(SignInDialog.Name);`
+`var signInResult = await dc.BeginDialogAsync(nameof(SignInDialog));`
 
 ### Content Moderation
 
