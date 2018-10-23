@@ -13,6 +13,9 @@ ms.date: 12/13/2017
 
 Either a client or a bot may signal the end of a Direct Line conversation by sending an **endOfConversation** [activity](bot-framework-rest-connector-activities.md). 
 
+> [!NOTE] 
+> The endOfConversation event is only supported in the Cortana channel, other channels do not implement this functionality. Each channel determines how to react to an endOfConversation activity. If you are designing a DirectLine client, you would update the client to behave appropriately, such as generating an error if the bot sent an activity to a conversation that has already ended.
+
 ## Send an endOfConversation activity
 
 An **endOfConversation** activity ends communication between bot and client. After an **endOfConversation** activity has been sent, the client may still [retrieve messages](bot-framework-rest-direct-line-3-0-receive-activities.md#http-get) using `HTTP GET`, but neither the client nor the bot can send any additional messages to the conversation. 

@@ -1,6 +1,6 @@
 ---
 title: Detailed overview of the Enterprise Bot Template | Microsoft Docs
-description: Learn about how the design decisions behind the Enterprise Bot Template
+description: Learn about the design decisions behind the Enterprise Bot Template
 author: darrenj
 ms.author: darrenj
 manager: kamrani
