@@ -6,7 +6,8 @@ author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: cognitive-services
 ms.date: 10/12/18
 monikerRange: 'azure-bot-service-4.0'
 ---

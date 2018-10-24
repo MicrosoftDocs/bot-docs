@@ -6,7 +6,8 @@ ms.author: v-ducvo
 keywords: Bot Builder SDK, continuous deployment, app service, emulator
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 07/13/2018
 ---
 

@@ -6,7 +6,8 @@ author: v-ducvo
 ms.author: rstand
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: abs
 ms.date: 12/13/2017
 ---
 # Manage a bot

@@ -6,7 +6,8 @@ author: Kaiqb
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date:  03/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---

@@ -5,7 +5,7 @@ keywords: Bot Builder SDK, register your bot, cortana
 author: v-ducvo
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
 ms.date: 05/01/18
 monikerRange: 'azure-bot-service-3.0'
 ---

@@ -6,7 +6,8 @@ author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: get-started-article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: abs
 ms.date: 09/19/2018
 ---
 
