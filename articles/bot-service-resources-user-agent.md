@@ -5,7 +5,8 @@ author: JohnD-ms
 ms.author: v-jodemp
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 # Bot Framework User-Agent requests

@@ -5,7 +5,8 @@ author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: abs
 ms.date: 6/22/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

@@ -6,7 +6,8 @@ author: ivorb
 ms.author: v-ivorb
 manager: rstand
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: cognitive-services
 ms.date: 09/19/2018
 ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'

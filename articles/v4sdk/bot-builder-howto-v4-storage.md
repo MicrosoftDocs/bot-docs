@@ -6,7 +6,8 @@ author: DeniseMak
 ms.author: v-demak
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 09/14/18
 monikerRange: 'azure-bot-service-4.0'
 ---
