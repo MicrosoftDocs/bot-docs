@@ -6,7 +6,8 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: landing-page
 layout: LandingPage
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 09/27/2018
 ---
 ::: moniker range="azure-bot-service-3.0"

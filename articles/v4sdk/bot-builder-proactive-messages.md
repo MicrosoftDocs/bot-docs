@@ -6,7 +6,8 @@ author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 03/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ROBOTS: NOINDEX
