@@ -5,7 +5,8 @@ author: JonathanFingold
 ms.author: JonathanFingold
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: abs
 ms.date: 09/27/2018
 monikerRange: 'azure-bot-service-4.0'
 ---

@@ -1,11 +1,11 @@
 ---
 title: Detailed overview of the Enterprise Bot Template | Microsoft Docs
-description: Learn about how the design decisions behind the Enterprise Bot Template
+description: Learn about the design decisions behind the Enterprise Bot Template
 author: darrenj
 ms.author: darrenj
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
 ms.date: 09/18/2018
 monikerRange: 'azure-bot-service-4.0'
 ---

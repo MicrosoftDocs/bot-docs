@@ -6,7 +6,7 @@ author: Kaiqb
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
 ms.date: 10/08/2018
 ---
 

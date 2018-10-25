@@ -6,7 +6,8 @@ author: RobStand
 ms.author: RobStand
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 10/12/2018
 ---
 

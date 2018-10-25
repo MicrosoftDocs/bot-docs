@@ -4,7 +4,7 @@ description: Learn how to configure adaptive cards.
 author: vkannan
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
 ms.date: 12/13/2017
 ROBOTS: NoIndex, NoFollow
 ---

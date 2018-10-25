@@ -5,7 +5,8 @@ author: matthewshim-ms
 ms.author: v-shimma
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: tools
 ms.date: 08/31/2018
 monikerRange: 'azure-bot-service-3.0'
 ---

@@ -6,7 +6,8 @@ author: v-royhar
 ms.author: v-royhar
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 4/16/18
 monikerRange: 'azure-bot-service-4.0'
 ---

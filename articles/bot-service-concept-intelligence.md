@@ -6,7 +6,8 @@ author: RobStand
 ms.author: rstand
 manager: rstand
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: cognitive-services
 ms.date: 12/17/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

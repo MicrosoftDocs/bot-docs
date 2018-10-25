@@ -5,7 +5,8 @@ author: matvelloso
 ms.author: mateusv
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
+ms.subservice: sdk
 ms.date: 2/13/2018
 ---
 

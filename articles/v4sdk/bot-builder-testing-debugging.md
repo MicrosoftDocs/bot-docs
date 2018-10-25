@@ -6,7 +6,7 @@ author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
-ms.prod: bot-framework
+ms.service: bot-service
 ms.date: 04/09/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
