@@ -71,6 +71,8 @@ The README.md within your created project contains an example msbot clone servic
 msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\msbotClone" --location "westus"
 ```
 
+> There is a known issue with some users whereby you might experience the following error when running deployment `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`. In this situation, please browse to https://apps.dev.microsoft.com and manually create a new application retrieving the ApplicationID and Password/Secret. Run the above msbot clone services command but provide two new arguments `appId` and `appSecret` passing the values you've just retrieved.
+
 The msbot tool will outline the deployment plan including location and SKU. Ensure you review before proceeding.
 
 ![Deployment Confirmation](./media/enterprise-template/EnterpriseBot-ConfirmDeployment.png)
