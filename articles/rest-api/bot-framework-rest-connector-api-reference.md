@@ -1,13 +1,12 @@
 ---
 title: API reference | Microsoft Docs
 description: Learn about headers, operations, objects, and errors in the Bot Connector service and Bot State service. 
-author: RobStand
-ms.author: kamrani
+author: ivorb
+ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 10/24/2018
 ---
 
 # API reference
@@ -125,6 +124,7 @@ Use these operations to create conversations, send messages (activities), and ma
 | [Send to Conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. | 
 | [Reply to Activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. | 
 | [Get Conversation Members](#get-conversation-members) | Gets the members of the specified conversation. |
+| [Get Conversation Paged Members](#get-conversation-paged-members) | Gets the members of the specified conversation one page at a time. |
 | [Get Activity Members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. | 
 | [Update Activity](#update-activity) | Updates an existing activity. | 
 | [Delete Activity](#delete-activity) | Deletes an existing activity. | 
@@ -173,6 +173,17 @@ GET /v3/conversations/{conversationId}/members
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An array of [ChannelAccount](#channelaccount-object) objects | 
+
+### Get Conversation Paged Members
+Gets the members of the specified conversation one page at a time.
+```http
+GET /v3/conversations/{conversationId}/pagedmembers
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects and a continuation token that can be used to get more values|
 
 ### Get Activity Members
 Gets the members of the specified activity within the specified conversation.
@@ -381,7 +392,7 @@ Schema defines the object and its properties that your bot can use to communicat
 | [ThumbnailCard object](#thumbnailcard-object) | Defines a card with a thumbnail image, title, text, and action buttons. |
 | [ThumbnailUrl object](#thumbnailurl-object) | Defines the URL to an image's source. |
 | [VideoCard object](#videocard-object) | Defines a card that can play videos. |
-
+| [SemanticAction object](#semanticaction-object) | Defines a reference to a programmatic action. |
 
 ### Activity object
 Defines a message that is exchanged between bot and user.<br/><br/> 
@@ -418,6 +429,7 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **topicName** | string | Topic of the conversation to which the activity belongs. |
 | **type** | string | Type of activity. One of these values: **contactRelationUpdate**, **conversationUpdate**, **deleteUserData**, **message**, **typing**, **endOfConversation**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
 | **value** | object | Open-ended value. |
+| **semanticAction** |[SemanticAction](#semanticaction-object) | A **SemanticAction** object that represents a reference to a programmatic action. |
 
 <a href="#objects">Back to Schema table</a>
 
@@ -847,5 +859,15 @@ Defines a card that can play videos.<br/><br/>
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
 | **value** | object | Supplementary parameter for this card|
+
+<a href="#objects">Back to Schema table</a>
+
+### SemanticAction object
+Defines a reference to a programmatic action.<br/><br/>
+
+| Property | Type | Description |
+|----|----|----|
+| **id** | string | ID of this action |
+| **entities** | [Entity](#entity-object) | Entities associated with this action |
 
 <a href="#objects">Back to Schema table</a>
