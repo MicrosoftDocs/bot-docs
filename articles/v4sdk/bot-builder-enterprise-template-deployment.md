@@ -17,6 +17,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 ## Prerequisites
 
+- Ensure you have updated [.NET Core](https://www.microsoft.com/net/download) to the latest version.
+
 - Ensure the [Node Package manager](https://nodejs.org/en/) is installed.
 
 - Install the Azure Bot Service command line (CLI) tools. It's important to do this even if you've used the tools before to ensure you have the latest versions.
@@ -35,7 +37,7 @@ az extension add -n botservice
 ## Configuration
 
 - Retrieve your LUIS Authoring Key
-   - Review [this](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-regions) documentation page for the correct LUIS portal for the region you plan to deploy to. 
+   - Review [this](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-regions) documentation page for the correct LUIS portal for the region you plan to deploy to. Note that www.luis.ai refers to the US region and an authoring key retrieved from this portal will not work with a europe deployment.
    - Once signed in click on your name in the top right hand corner.
    - Choose Settings and make a note of the Authoring Key for the next step.
 
@@ -63,13 +65,13 @@ Your new Bot project has a deployment recipe enabling the `msbot clone services`
 
 > Once deployed, review the Pricing Tiers for the created services and adjust to suit your scenario.
 
-The README.md within your created project contains an example msbot clone services command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope).
-
-> Ensure the LUIS authoring key retrieved on the previous step is for the region you specify below.
+The README.md within your created project contains an example msbot clone services command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope). Ensure the LUIS authoring key retrieved on the previous step is for the region you specify below (e.g. westus for luis.ai or westeurope for eu.luis.ai)
 
 ```shell
-msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\msbotClone" --location "westus"
+msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\msbotClone" --location "YOUR_REGION"
 ```
+
+> There is a known issue with some users whereby you might experience the following error when running deployment `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`. In this situation, please browse to https://apps.dev.microsoft.com and manually create a new application retrieving the ApplicationID and Password/Secret. Run the above msbot clone services command but provide two new arguments `appId` and `appSecret` passing the values you've just retrieved.
 
 The msbot tool will outline the deployment plan including location and SKU. Ensure you review before proceeding.
 
