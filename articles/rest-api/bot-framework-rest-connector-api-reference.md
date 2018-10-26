@@ -6,6 +6,7 @@ ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
+ms.subservice: sdk
 ms.date: 10/24/2018
 ---
 
