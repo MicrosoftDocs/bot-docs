@@ -218,5 +218,6 @@ When a client sends an [Activity](bot-framework-rest-connector-api-reference.md#
 - The `from` property must be populated with a user ID, chosen by the client.
 - Attachments may contain URLs to existing resources or URLs uploaded through the Direct Line attachment endpoint.
 - The `channelData` property is preserved without modification.
+- The total size of the activity, when serialized to JSON, must not exceed 300K characters.
 
 Clients may [send](bot-framework-rest-direct-line-3-0-send-activity.md) a single activity per request. 
