@@ -363,7 +363,7 @@
         <param name="description">A message to send if the actual response is not as expected.</param>
         <param name="timeout">The amount of time in milliseconds within which a response is expected.</param>
         <summary>
-            Shorcut for adding an arbitray exchange between the user and bot.
+            Shortcut for adding an arbitray exchange between the user and bot.
             Each activity with a <see cref="P:Microsoft.Bot.Schema.IActivity.From" />.<see cref="P:Microsoft.Bot.Schema.ChannelAccount.Role" /> equals to "bot"
             will be processed with the <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(Microsoft.Bot.Schema.IActivity,System.String,System.UInt32)" /> method.
             Every other activity will be processed as user's message via the <see cref="M:Microsoft.Bot.Builder.Adapters.TestFlow.Send(Microsoft.Bot.Schema.IActivity)" /> method.
