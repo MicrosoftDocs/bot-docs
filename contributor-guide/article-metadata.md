@@ -19,7 +19,7 @@ The standard Bot Framework metadata section looks like this:
   ms.author: <your microsoft alias, one value only, alias only>
 ---
   ```
-##Usage
+## Usage
 
 - The element name and attribute names are case sensitive.
 
