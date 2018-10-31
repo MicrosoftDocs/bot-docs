@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-The central concept in the SDK to manage conversations is the idea of a Dialog. Dialog objects process inbound Activities and generate outbound responses. The business logic of the bot runs either directly or indirectly within Dialog classes.
+Managing conversations through the concept of a Dialog is central to the SDK. Dialog objects process inbound Activities and generate outbound responses. The business logic of the bot runs either directly or indirectly within Dialog classes.
 
 At runtime, Dialog instances are arranged in a stack. The Dialog on the top of the stack is referred to as the ActiveDialog. The current active Dialog processes the inbound Activity. Between each turn of the conversation (which is not time-bound and may span over several days), the stack is persisted. 
 

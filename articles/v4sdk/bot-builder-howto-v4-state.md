@@ -300,7 +300,7 @@ if (turnContext.activity.type === 'message') {
     
 }
 else {
-    await turnContext.sendActivity(`[${context.activity.type} event detected]`);
+    await turnContext.sendActivity(`[${turnContext.activity.type} event detected]`);
 }
 ```
 
