@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/08/2018
+ms.date: 10/31/2018
 ---
 
 ::: moniker range="azure-bot-service-3.0"
@@ -84,14 +84,15 @@ Bots are a lot like modern web applications, living on the internet and use APIs
 Bots can do the same things other types of software can do - read and write files, use databases and APIs, and do the regular computational tasks. What makes bots unique is their use of mechanisms generally reserved for human-to-human communication. 
 
 Bots usually consist of the following components:
-* A web server, in most cases one that is available on the public internet
-* The Bot Builder SDK and Bot Builder Tools that provides an interface for developing bots
-* Azure Cognitive Service 
-* Azure Storage
+
+- A web server, in most cases one that is available on the public internet
+- The Bot Builder SDK and Bot Builder Tools that provides an interface for developing bots
+- Azure Cognitive Services
+- Azure Storage
 
 ## Building a bot 
 
-Azure Bot Service offers an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot in C#, JavaScript, or Typescript. (Java and Python are coming too!) We provide tools for various stages of bot development that you can use to build your bot to get you started.
+Azure Bot Service offers an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot. SDKs exist for C#, JavaScript, and Typescript. (SDKs for Java and Python are under development.) We provide tools for various stages of bot development to help you design and build bots.
 
 ![Bot Overview](media/bot-service-overview.png) 
 
