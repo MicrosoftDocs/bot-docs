@@ -1,6 +1,6 @@
 ---
-title: Prompt users for input using the Dialogs library | Microsoft Docs
-description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK for Node.js.
+title: Use dialog library to gather user input | Microsoft Docs
+description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK.
 keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: v-ducvo
 ms.author: v-ducvo
@@ -8,10 +8,10 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 9/25/2018
+ms.date: 10/25/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Prompt users for input using the Dialogs library
+# Use dialog library to gather user input
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

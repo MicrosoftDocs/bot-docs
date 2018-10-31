@@ -1,5 +1,5 @@
 ---
-title: Manage a conversation flow with primitive prompts | Microsoft Docs
+title: Create your own prompts to gather user input | Microsoft Docs
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Builder SDK.
 keywords: conversation flow, prompts
 author: v-ducvo
@@ -8,11 +8,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 7/20/2018
+ms.date: 10/20/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Prompt users for input using your own prompts
+# Create your own prompts to gather user input
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
