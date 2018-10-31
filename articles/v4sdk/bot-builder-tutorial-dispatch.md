@@ -1,5 +1,5 @@
 ---
-title: Integrate multiple LUIS and QnA services with the Dispatch tool | Microsoft Docs
+title: Use LUIS and QnA services with the Dispatch tool | Microsoft Docs
 description: Learn how to use LUIS and QnA maker in your bot.
 keywords: Luis, QnA, Dispatch tool, multiple services
 author: DeniseMak
@@ -8,11 +8,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/09/2018
+ms.date: 10/31/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Integrate multiple LUIS and QnA services with the Dispatch tool
+# Use LUIS and QnA services with the Dispatch tool
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

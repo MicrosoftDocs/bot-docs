@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/23/2018
+ms.date: 10/31/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
@@ -20,6 +20,8 @@ Our previous design article [welcome the user](./bot-builder-welcome-user.md) di
 ## Same welcome for different channels
 
 The following example watches for new _conversation update_ activity, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. The example code below uses the welcome user samples in the Github repo for [C#](https://aka.ms/bot-welcome-sample-cs) and [JS](https://aka.ms/bot-welcome-sample-js) code.
+
+[!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
 ## [C#](#tab/csharp)
 
