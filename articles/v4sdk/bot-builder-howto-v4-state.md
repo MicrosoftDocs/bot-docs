@@ -314,6 +314,7 @@ Next, start the emulator and then connect to your bot in the emulator:
 ### Interact with your bot
 
 Send a "Hi" message to your bot, and the bot will ask for your name and phone number. After you provide that informmation, the bot will send a confirmation messsage. If you continue after that, the bot will go through the same cycle again.
+
 ![Emulator running](../media/emulator-v4/emulator-running-manage-state.png)
 
 If you decide to manage state yourself, see [manage conversation flow with your own prompts](bot-builder-primitive-prompts.md). An alternative is to use the waterfall dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [manage a simple conversation with dialogs](bot-builder-dialog-manage-conversation-flow.md).
