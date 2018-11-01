@@ -31,7 +31,6 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
-```csharp
 var reply = turnContext.Activity.CreateReply("What is your favorite color?");
 
 reply.SuggestedActions = new SuggestedActions()
