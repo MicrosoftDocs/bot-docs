@@ -25,7 +25,7 @@ Bot Builder [tools][cliTools] cover end-to-end bot development workflow that inc
 - Keep track of service references using [MSBot](#keep-track-of-service-references-using-bot-file)
 - Create and manage LUIS applications using [LUIS CLI](#create-and-manage-luis-applications-using-luis-cli)
 - Create QnA Maker KB using [QnA Maker CLI](#create-qna-maker-kb-using-qna-maker-cli)
-- Create dipsatch model using [Dispatch CLI](#create-dipsatch-model-using-dispatch-cli)
+- Create dispatch model using [Dispatch CLI](#create-dipsatch-model-using-dispatch-cli)
 
 [Test](#test)
 - Test your bot using [Bot Framework Emulator V4](https://aka.ms/bot-framework-emulator-v4-overview)
