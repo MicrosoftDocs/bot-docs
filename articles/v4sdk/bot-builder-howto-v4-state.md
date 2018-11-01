@@ -58,8 +58,6 @@ The `EchoBotAccessors` class in our example is created as a singleton and passed
 
 Updated the constructor to include `UserState` as shown below:
 ```csharp
-using EchoBotWithCounter;
-
 public EchoBotAccessors(ConversationState conversationState, UserState userState)
 {
     ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
@@ -133,8 +131,6 @@ The conversation and user state are linked to a singleton via the `services.AddS
 In the `OnTurnAsync` handler of the `EchoWithCounterBot : IBot` class, modify the code to prompt for user name and then phone number. To track where we are in the conversation, we use the Prompt property defined in the TopicState. This property was initialized a "askName". Once we get the user name, we set it to "askNumber" and set the UserName to the name user typed in. After the phone number is received, you send a confirmation message and set the prompt to 'confirmation' because you are at the end of the conversation.
 
 ```csharp
-using EchoBotWithCounter;
-
 if (turnContext.Activity.Type == ActivityTypes.Message)
 {
     // Get the conversation state from the turn context.
@@ -317,7 +313,7 @@ Next, start the emulator and then connect to your bot in the emulator:
 
 ### Interact with your bot
 
-Send a message to your bot, and the bot will respond back with a message.
+Send a "Hi" message to your bot, and the bot will ask for your name and phone number. After you provide that informmation, the bot will send a confirmation messsage. If you continue after that, the bot will go through the same cycle again.
 ![Emulator running](../media/emulator-v4/emulator-running.png)
 
 If you decide to manage state yourself, see [manage conversation flow with your own prompts](bot-builder-primitive-prompts.md). An alternative is to use the waterfall dialog. The dialog keeps track of the conversation state for you so you do not need to create flags to track your state. For more information, see [manage a simple conversation with dialogs](bot-builder-dialog-manage-conversation-flow.md).
