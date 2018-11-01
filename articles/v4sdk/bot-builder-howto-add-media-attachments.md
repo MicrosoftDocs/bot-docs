@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/10/2018
+ms.date: 10/25/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -41,7 +41,7 @@ var attachment = new Attachment
         ContentType = "image/png",
         Name = "imageName",
     };
-    
+
 // Add the attachment to our reply.
 reply.Attachments = new List<Attachment>() { attachment };
 
@@ -350,5 +350,15 @@ await context.sendActivity(messageWithCarouselOfCards);
 
 ---
 
+<!-- TODO: Add a media card, such as video or audion. Revisit which examples we put here and link to the 06 through 08 samples. -->
+
 ## Additional resources
-Sample code can be found here for cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code) adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code), attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-sample-code-js), and suggested actions: [C#](https://aka.ms/SuggestedActionsCSharp)/[JS](https://aka.ms/SuggestedActionsJS). Refer to Bot Builder Samples repo on [GitHub](https://github.com/Microsoft/BotBuilder-Samples) for additional samples.
+
+For detailed information on the card schema, see the [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema).
+
+Sample code can be found here for
+cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code),
+adaptive cards: [C#](https://aka.ms/bot-adaptive-cards-sample-code)/[JS](https://aka.ms/bot-adaptive-cards-js-sample-code),
+attachments: [C#](https://aka.ms/bot-attachments-sample-code)/[JS](https://aka.ms/bot-attachments-sample-code-js),
+and suggested actions: [C#](https://aka.ms/SuggestedActionsCSharp)/[JS](https://aka.ms/SuggestedActionsJS).
+Refer to Bot Builder Samples repo on [GitHub](https://aka.ms/bot-samples-readme) for additional samples.
