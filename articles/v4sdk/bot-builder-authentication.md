@@ -2,12 +2,12 @@
 title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
 author: JonathanFingold
-ms.author: JonathanFingold
+ms.author: v-jofing
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 09/27/2018
+ms.date: 10/30/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -41,7 +41,7 @@ You can extrapolate from the steps in this article to add such features to an ex
 | [Node Auth](http://aka.ms/v4cnodeauth) | v4 |  Demonstrates OAuthCard support in the v4 Node/JavaScript SDK |
 
 > [!NOTE]
-> The authentication features also work with with BotBuilder v3. However, this article covers just sample v4 code.
+> The authentication features also work with BotBuilder v3. However, this article covers just sample v4 code.
 
 For additional information and support, refer to [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help).
 
@@ -360,7 +360,7 @@ private async Task SendOAuthCardAsync(ITurnContext turnContext, IMessageActivity
             },
         },
     });
-    
+
     await turnContext.SendActivityAsync(message, cancellationToken).ConfigureAwait(false);
 }
 ```
@@ -383,7 +383,7 @@ private async sendOAuthCardAsync(context: TurnContext, prompt?: string|Partial<A
             this.settings.text
         ));
     }
-    
+
     // Send prompt
     await context.sendActivity(msg);
 }
@@ -478,7 +478,6 @@ private isTeamsVerificationInvoke(context: TurnContext): boolean {
 ```
 
 ---
-
 
 ### Message controller
 
