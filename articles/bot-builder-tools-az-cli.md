@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: tools
-ms.date: 08/31/2018
+ms.date: 10/31/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 
@@ -69,9 +69,11 @@ az bot [command]
 To create a new bot from the CLI, you need to select an existing [resource group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview), or create a new one. 
 
 ```azurecli
-az bot create --resource-group "my-resource-group" --name "my-bot-name" --kind "my-resource-type" --version v3 --description "description-of-my-bot"
+az bot create --resource-group "my-resource-group" --name "my-bot-name" --kind "my-resource-type" --version v3 --description "description-of-my-bot" --lang "programming-language"
 ```
-Allowed values for `--kind` are: `function, registration, webapp` and for `--version` are `v3, v4`.  After a successful request, you will see the confirmation message.
+Allowed values for `--kind` are: `function, registration, webapp` and for `--version` are `v3, v4`.  If you don't specify `--lang` argument, a .NET bot is created. To create a node bot, use`Node`.
+
+After a successful request, you will see the confirmation message.
 ```
 Obtained msa app id and password. Provisioning bot now.
 ```
@@ -86,11 +88,6 @@ Obtained msa app id and password. Provisioning bot now.
 > az account list
 > ```
 
-By default, a new .NET bot will be created. You can specify which platform SDK by specifying the language using the **-- lang** argument. Currently, the bot extension package supports C# and Node.js bot SDKs. For example, to **create a Node.js bot**:
-
-```azurecli
-az bot create --resource-group "my-resource-group" --name "my-bot-name" --kind "my-resource-type" --description "description-of-my-bot" --lang Node 
-```
 Your new echo bot will be provisioned to your resource group on Azure, to test it out simply select **Test in Webchat** under the bot management header of the Web App Bot view. 
 
 ![Azure Echo bot](media/bot-builder-tools/az-echo-bot.png) 
