@@ -47,6 +47,7 @@
 ### [Use LUIS for language understanding](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Use QnA Maker to answer questions](v4sdk/bot-builder-howto-qna.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
+### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### [Implement channel-specific functionality](v4sdk/bot-builder-channeldata.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
