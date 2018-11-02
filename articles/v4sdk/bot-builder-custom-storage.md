@@ -131,6 +131,7 @@ To support unit testing we start out by defining an interface for our new store 
 The interface consists of Load and Save methods. Both these take the key we will use for the state. The Load will return the data and the associated ETag. And the Save will take these in. Additionally, the Save will return bool. This bool will indicate whether the ETag has matched and the Save was successful. This is not intended as a general error indicator but rather a specific indicator of precondition failure, we model this as a return code rather than an exception because we will be writing control flow logic around this in the shape of our retry loop.
 
 As we would like this lowest level storage piece to be pluggable, we will make sure to avoid placing any serialization requirements on it, however we would like to specify that the content save should be JSON, that way a store implementation can set the content-type. The easiest and most natural way to do this in .NET is through the argument types, specifically we will type the content argument as JObject. In JavaScript or TypeScript this will just be a regular native object.  
+
 This is the resulting interface:
 
 ```csharp
@@ -204,7 +205,7 @@ public class BlobStore : IStore
 
 As you can see Azure Blob Storage is doing the real work here. Note the catch of specific exceptions and how that is translated across to meet what will be the expectations of the calling code. That is, on the load we want a Not Found exception to return null and the Precondition Failed exception on the Save to return bool.
 
-All this source code will be available in a corresponding sample and that sample will include a memory store implementation.
+All this source code will be available in a corresponding [sample](https://aka.ms/scale-out) and that sample will include a memory store implementation.
 
 ## Implementing the Retry Loop
 The basic shape of the loop is derived directly from the behavior shown in the sequence diagrams.
@@ -392,5 +393,5 @@ public class RefAccessor<T> : IStatePropertyAccessor<T> where T : class
 ```
 
 ## Additional resources
-The [C#](http://aka.ms/sacle-out) sample code used in this article is available on GitHub.
+The [C#](http://aka.ms/scale-out) sample code used in this article is available on GitHub.
 
