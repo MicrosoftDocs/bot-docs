@@ -34,7 +34,10 @@ To use dialogs in general, you need the `Microsoft.Bot.Builder.Dialogs` NuGet pa
 
 # [JavaScript](#tab/javascript)
 
-To use dialogs in general, you need the `botbuilder-dialogs` library, which can be downloaded from NPM.
+To use dialogs in general, you need the `botbuilder-dialogs` library. To install the library, run the following npm command:
+```cmd
+npm install --save botbuilder-dialogs
+```
 
 ---
 
