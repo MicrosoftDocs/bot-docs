@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 
@@ -15,9 +15,9 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
-A form's localization language is determined by the current thread's [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.threading.thread.currentuiculture(v=vs.110).aspx) and [CurrentCulture](https://msdn.microsoft.com/en-us/library/system.threading.thread.currentculture(v=vs.110).aspx). 
-By default, the culture derives from the **Locale** field of the current message, but you can 
-override that default behavior. 
+A form's localization language is determined by the current thread's [CurrentUICulture](https://msdn.microsoft.com/library/system.threading.thread.currentuiculture(v=vs.110).aspx) and [CurrentCulture](https://msdn.microsoft.com/library/system.threading.thread.currentculture(v=vs.110).aspx).
+By default, the culture derives from the **Locale** field of the current message, but you can
+override that default behavior.
 Depending on how your bot is constructed, localized information may come from up to three different sources:
 
 - the built-in localization for **PromptDialog** and **FormFlow**
@@ -26,11 +26,11 @@ Depending on how your bot is constructed, localized information may come from up
 
 ## Generate a resource file for the static strings in your form
 
-Static strings in a form include the strings that the form generates from the information in your C# class 
-and the strings that you specify as prompts, templates, messages or confirmations. 
-Strings that are generated from built-in templates are not considered static strings, since those strings are already localized. 
-Since many of the strings in a form are automatically generated, it is not feasible to use normal C# resource strings directly. 
-Instead, you can generate a resource file for the static strings in your form either by calling 
+Static strings in a form include the strings that the form generates from the information in your C# class
+and the strings that you specify as prompts, templates, messages or confirmations.
+Strings that are generated from built-in templates are not considered static strings, since those strings are already localized.
+Since many of the strings in a form are automatically generated, it is not feasible to use normal C# resource strings directly.
+Instead, you can generate a resource file for the static strings in your form either by calling
 `IFormBuilder.SaveResources` or by using the **RView** tool that is included with the BotBuilder SDK for .NET.
 
 ### Use IFormBuilder.SaveResources
@@ -40,11 +40,11 @@ calling [IFormBuilder.SaveResources][saveResources] on your form to save the str
 
 ### Use RView
 
-Alternatively, you can generate a resource file that is based upon your .dll or .exe by using 
-the <a href="https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Tools/RView" target="_blank">RView</a> 
-tool that is included in the BotBuilder SDK for .NET. 
-To generate the .resx file, execute **rview** and specify the assembly that contains your static form-building method and the path to that method. 
-This snippet shows how to generate the `Microsoft.Bot.Sample.AnnotatedSandwichBot.SandwichOrder.resx` resource file using **RView**. 
+Alternatively, you can generate a resource file that is based upon your .dll or .exe by using
+the <a href="https://aka.ms/v3-cs-RView-library" target="_blank">RView</a>
+tool that is included in the BotBuilder SDK for .NET.
+To generate the .resx file, execute **rview** and specify the assembly that contains your static form-building method and the path to that method.
+This snippet shows how to generate the `Microsoft.Bot.Sample.AnnotatedSandwichBot.SandwichOrder.resx` resource file using **RView**.
 
 ```csharp
 rview -g Microsoft.Bot.Sample.AnnotatedSandwichBot.dll Microsoft.Bot.Sample.AnnotatedSandwichBot.SandwichOrder.BuildForm
@@ -97,7 +97,7 @@ When your form is created, the [IFormBuilder.Build][build] method will automatic
 ### Localize resource files 
 
 After you have added resource files to your project, you can localize them by using the 
-<a href="https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit" target="_blank">Multilingual App Toolkit (MAT)</a>. 
+<a href="https://developer.microsoft.com/windows/develop/multilingual-app-toolkit" target="_blank">Multilingual App Toolkit (MAT)</a>. 
 Install **MAT**, then enable it for your project by completing these steps:
 
 1. Select your project in the Visual Studio Solution Explorer.

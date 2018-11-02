@@ -461,7 +461,7 @@ To help your users better navigate multiple topics of conversation, consider pro
 
 The **Dialogs** library provides built in ways to validate the user's input, but we can also do so with our own prompts. For example, if we ask for the user's age, we want to make sure we get a number, not something like "Bob" as a response.
 
-Parsing a number or a date and time is a complex task that's beyond the scope of this topic. Fortunately, there is a library we can leverage. To parse this information, we use the [Microsoft's Text Recognizer](https://github.com/Microsoft/Recognizers-Text) library. This package is available through NuGet, or downloading it from the repository. (It's included in the **Dialogs** library too, which is worth noting even though we are not using it here.)
+Parsing a number or a date and time is a complex task that's beyond the scope of this topic. Fortunately, there is a library we can leverage. To parse this information, we use the [Microsoft's Text Recognizer](https://github.com/Microsoft/Recognizers-Text) library. This package is available through NuGet and npm. You can also downloading it directly from the repository. (It's included in the **Dialogs** library too, which is worth noting even though we are not using it here.)
 
 This library is particularly useful for parsing complex input like dates, times, or phone numbers. In this sample, we're  validating a number for a dinner reservation party size, but the same idea can be extended for more complex validation operations.
 

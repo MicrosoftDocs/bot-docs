@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/30/2018
+ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Use dialog library to gather user input
@@ -32,7 +32,7 @@ The dialogs library offers a number of basic prompts, each used for collecting a
 | _Attachment prompt_ | Asks for one or more attachments, such as a document or image. | A collection of _attachment_ objects. |
 | _Choice prompt_ | Asks for a choice from a set of options. | A _found choice_ object. |
 | _Confirm prompt_ | Asks for a confirmation. | A Boolean value. |
-| _Datetime prompt_ | Asks for a date-time. | A collection of _date-time resolution_ objects. |
+| _Date-time prompt_ | Asks for a date-time. | A collection of _date-time resolution_ objects. |
 | _Number prompt_ | Asks for a number. | A numeric value. |
 | _Text prompt_ | Asks for general text input. | A string. |
 
@@ -236,7 +236,7 @@ async favoriteColor(step) {
     return await step.prompt('colorChoice', {
         prompt: 'Please choose a color:',
         retryPrompt: 'Sorry, please choose a color from the list.',
-        choices: list
+        choices: [ 'red', 'green', 'blue' ]
     });
 }
 ```
@@ -245,13 +245,29 @@ async favoriteColor(step) {
 
 ## Custom validation
 
-You can validate a prompt response before returning the value to the next step of the **waterfall**.
+You can validate a prompt response before returning the value to the next step of the **waterfall**. A validator function has a _prompt validator context_ parameter and returns a Boolean, indicating whether the input passes validation.
 
-<!--TODO: Custom validation still needs review and editing.-->
+The prompt validator context includes the following properties:
+
+| Property | Description |
+| :--- | :--- |
+| _Context_ | The current turn context for the bot. |
+| _Recognized_ | A _prompt recognizer result_ that contains information about the user input, as processed by the recognizer. |
+
+The prompt recognizer result has the following properties:
+
+| Property | Description |
+| :--- | :--- |
+| _Succeeded_ | Indicates whether the recognizer was able to parse the input. |
+| _Value_ | The return value from the recognizer. If necessary, the validation code can modify this value. |
+
+### Setup
+
+We need to do a little setup before adding our validation code.
 
 # [C#](#tab/csharp)
 
-define an inner class for reservation information
+In your bot's **.cs** file, define an inner class for reservation information.
 
 ```csharp
 public class Reservation
@@ -262,7 +278,7 @@ public class Reservation
 }
 ```
 
-in botaccessors
+In **BotAccessors.cs**, add a state property accessor for the reservation data.
 
 ```csharp
 public class BotAccessors
@@ -282,26 +298,55 @@ public class BotAccessors
 }
 ```
 
-in startup
+In **Startup.cs**, update `ConfigureServices` to set the accessors.
 
 ```csharp
-public class Reservation
+public void ConfigureServices(IServiceCollection services)
 {
-    public int Size { get; set; }
+    // ...
 
-    public string Date { get; set; }
+    // Create and register state accesssors.
+    // Acessors created here are passed into the IBot-derived class on every turn.
+    services.AddSingleton<BotAccessors>(sp =>
+    {
+        // ...
+
+        // Create the custom state accessor.
+        // State accessors enable other components to read and write individual properties of state.
+        var accessors = new BotAccessors(conversationState)
+        {
+            DialogStateAccessor = conversationState.CreateProperty<DialogState>(BotAccessors.DialogStateAccessorKey),
+            ReservationAccessor = conversationState.CreateProperty<ReservationBot.Reservation>(BotAccessors.ReservationAccessorKey),
+        };
+
+        return accessors;
+    });
 }
 ```
 
 # [JavaScript](#tab/javascript)
 
-No changes to the HTTP service code required for JavaScript, we can leave our index.js file as is.
+No changes to the HTTP service code required for JavaScript, we can leave our **index.js** file as is.
+
+In **bot.js**, update the require statements and add identifiers for the state property accessors.
+
+```javascript
+const { ActivityTypes } = require('botbuilder');
+const { DialogSet, WaterfallDialog, NumberPrompt, DateTimePrompt, DialogTurnStatus } = require('botbuilder-dialogs');
+
+// Define identifiers for our state property accessors.
+const DIALOG_STATE_ACCESSOR = 'dialogStateAccessor';
+const RESERVATION_ACCESSOR = 'reservationAccessor';
+```
 
 ---
+
+In your bot file, add identifiers for our dialogs and prompts.
 
 # [C#](#tab/csharp)
 
 ```csharp
+// Define identifiers for our dialogs and prompts.
 private const string ReservationDialog = "reservationDialog";
 private const string PartySizePrompt = "partyPrompt";
 private const string ReservationDatePrompt = "reservationDatePrompt";
@@ -318,10 +363,12 @@ const RESERVATION_DATE_PROMPT = 'reservationDatePrompt';
 
 ---
 
-# [C#](#tab/csharp)
+### Define the prompts and dialogs
 
 In the bot's constructor code, create the dialog set, add the prompts, and add the reservation dialog.
-We include the custom validation when we create the prompts.
+We include the custom validation when we create the prompts. We will implement the validation functions next.
+
+# [C#](#tab/csharp)
 
 ```csharp
 public ReservationBot(BotAccessors accessors, ILoggerFactory loggerFactory)
@@ -371,6 +418,10 @@ constructor(conversationState) {
 
 ---
 
+### Implement validation code
+
+Implement the party-size validator. We'll limit reservations to parties of 6 to 20 people.
+
 # [C#](#tab/csharp)
 
 ```csharp
@@ -411,14 +462,37 @@ private async Task<bool> PartySizeValidatorAsync(
 # [JavaScript](#tab/javascript)
 
 ```javascript
+async partySizeValidator(promptContext) {
+    // Check whether the input could be recognized as an integer.
+    if (!promptContext.recognized.succeeded) {
+        await promptContext.context.sendActivity(
+            "I'm sorry, I do not understand. Please enter the number of people in your party.");
+        return false;
+    }
+    if (promptContext.recognized.value % 1 != 0) {
+        await promptContext.context.sendActivity(
+            "I'm sorry, I don't understand fractional people.");
+        return false;
+    }
+    // Check whether the party size is appropriate.
+    var size = promptContext.recognized.value;
+    if (size < 6 || size > 20) {
+        await promptContext.context.sendActivity(
+            'Sorry, we can only take reservations for parties of 6 to 20.');
+        return false;
+    }
+
+    return true;
+}
 ```
 
 ---
 
-Likewise, if you want to validate a **DatetimePrompt** response for a date and time in the future, you can have validation logic similar to this.
+The date-time prompt returns a list or array of the possible _date-time resolutions_ that match the user input. For example, 9:00 could mean 9 AM or 9 PM, and Sunday is also ambiguous. In addition, a date-time resolution can represent a date, a time, a date-time, or a range. The date-time prompt uses the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text) to parse the user input.
 
-> [!TIP]
-> Date time prompts can resolve to a few different dates if the user gives an ambiguous answer. Depending on what you're using it for, you may want to check all the resolutions provided by the prompt result, instead of just the first.
+Implement the reservation-date validator. We'll limit reservations to an hour or more from the current time. We are keeping the first resolution that matches our criteria, and clearing the rest.
+
+This validation code is not exhaustive. It works best for input that parses to a date and time. It demonstrates some of the options for validating a date-time prompt, and your implementation will depend on what information you are trying to collect from the user.
 
 # [C#](#tab/csharp)
 
@@ -465,9 +539,164 @@ private async Task<bool> DateValidatorAsync(
 # [JavaScript](#tab/javascript)
 
 ```javascript
+async dateValidator(promptContext) {
+// Check whether the input could be recognized as an integer.
+if (!promptContext.recognized.succeeded) {
+    await promptContext.context.sendActivity(
+        "I'm sorry, I do not understand. Please enter the date or time for your reservation.");
+    return false;
+}
+
+// Check whether any of the recognized date-times are appropriate,
+// and if so, return the first appropriate date-time.
+const earliest = Date.now() + (60 * 60 * 1000);
+let value = null;
+promptContext.recognized.value.forEach(candidate => {
+    // TODO: update validation to account for time vs date vs date-time vs range.
+    const time = new Date(candidate.value || candidate.start);
+    if (earliest < time.getTime()) {
+        value = candidate;
+    }
+});
+if (value) {
+    promptContext.recognized.value = [value];
+    return true;
+}
+
+await promptContext.context.sendActivity(
+    "I'm sorry, we can't take reservations earlier than an hour from now.");
+return false;
+}
 ```
 
 ---
+
+### Implement the dialog steps
+
+Use the prompts that we added to the dialog set. We added validation to the prompts when we created them in the bot's constructor. The first time the prompt asks for user input, it sends the _prompt_ activity from the options provided. If validation fails, it sends the _retry prompt_ activity to ask the user for different input.
+
+# [C#](#tab/csharp)
+
+```csharp
+/// <summary>First step of the main dialog: prompt for party size.</summary>
+/// <param name="stepContext">The context for the waterfall step.</param>
+/// <param name="cancellationToken">A cancellation token that can be used by other objects
+/// or threads to receive notice of cancellation.</param>
+/// <returns>A task that represents the work queued to execute.</returns>
+/// <remarks>If the task is successful, the result contains information from this step.</remarks>
+private async Task<DialogTurnResult> PromptForPartySizeAsync(
+    WaterfallStepContext stepContext,
+    CancellationToken cancellationToken = default(CancellationToken))
+{
+    // Prompt for the party size. The result of the prompt is returned to the next step of the waterfall.
+    return await stepContext.PromptAsync(
+        PartySizePrompt,
+        new PromptOptions
+        {
+            Prompt = MessageFactory.Text("How many people is the reservation for?"),
+            RetryPrompt = MessageFactory.Text("How large is your party?"),
+        },
+        cancellationToken);
+}
+
+/// <summary>Second step of the main dialog: record the party size and prompt for the
+/// reservation date.</summary>
+/// <param name="stepContext">The context for the waterfall step.</param>
+/// <param name="cancellationToken">A cancellation token that can be used by other objects
+/// or threads to receive notice of cancellation.</param>
+/// <returns>A task that represents the work queued to execute.</returns>
+/// <remarks>If the task is successful, the result contains information from this step.</remarks>
+private async Task<DialogTurnResult> PromptForReservationDateAsync(
+    WaterfallStepContext stepContext,
+    CancellationToken cancellationToken = default(CancellationToken))
+{
+    // Record the party size information in the current dialog state.
+    int size = (int)stepContext.Result;
+    stepContext.Values["size"] = size;
+
+    // Prompt for the reservation date. The result of the prompt is returned to the next step of the waterfall.
+    return await stepContext.PromptAsync(
+        ReservationDatePrompt,
+        new PromptOptions
+        {
+            Prompt = MessageFactory.Text("Great. When will the reservation be for?"),
+            RetryPrompt = MessageFactory.Text("What time should we make your reservation for?"),
+        },
+        cancellationToken);
+}
+
+/// <summary>Third step of the main dialog: return the collected party size and reservation date.</summary>
+/// <param name="stepContext">The context for the waterfall step.</param>
+/// <param name="cancellationToken">A cancellation token that can be used by other objects
+/// or threads to receive notice of cancellation.</param>
+/// <returns>A task that represents the work queued to execute.</returns>
+/// <remarks>If the task is successful, the result contains information from this step.</remarks>
+private async Task<DialogTurnResult> AcknowledgeReservationAsync(
+    WaterfallStepContext stepContext,
+    CancellationToken cancellationToken = default(CancellationToken))
+{
+    // Retrieve the reservation date.
+    DateTimeResolution resolution = (stepContext.Result as IList<DateTimeResolution>).First();
+    string time = resolution.Value ?? resolution.Start;
+
+    // Send an acknowledgement to the user.
+    await stepContext.Context.SendActivityAsync(
+        "Thank you. We will confirm your reservation shortly.",
+        cancellationToken: cancellationToken);
+
+    // Return the collected information to the parent context.
+    Reservation reservation = new Reservation
+    {
+        Date = time,
+        Size = (int)stepContext.Values["size"],
+    };
+    return await stepContext.EndDialogAsync(reservation, cancellationToken);
+}
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+async promptForPartySize(stepContext) {
+    // Prompt for the party size. The result of the prompt is returned to the next step of the waterfall.
+    return await stepContext.prompt(
+        PARTY_SIZE_PROMPT, {
+            prompt: 'How many people is the reservation for?',
+            retryPrompt: 'How large is your party?'
+        });
+}
+
+async promptForReservationDate(stepContext) {
+    // Record the party size information in the current dialog state.
+    stepContext.values.size = stepContext.result;
+
+    // Prompt for the reservation date. The result of the prompt is returned to the next step of the waterfall.
+    return await stepContext.prompt(
+        RESERVATION_DATE_PROMPT, {
+            prompt: 'Great. When will the reservation be for?',
+            retryPrompt: 'What time should we make your reservation for?'
+        });
+}
+
+async acknowledgeReservation(stepContext) {
+    // Retrieve the reservation date.
+    const resolution = stepContext.result[0];
+    const time = resolution.value || resolution.start;
+
+    // Send an acknowledgement to the user.
+    await stepContext.context.sendActivity(
+        'Thank you. We will confirm your reservation shortly.');
+
+    // Return the collected information to the parent context.
+    return await stepContext.endDialog({ date: time, size: stepContext.values.size });
+}
+```
+
+---
+
+### Update the turn handler
+
+Update the bot's turn handler to start the dialog and accept a return value from the dialog when it completes.
 
 # [C#](#tab/csharp)
 
@@ -538,6 +767,51 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 # [JavaScript](#tab/javascript)
 
 ```javascript
+async onTurn(turnContext) {
+    switch (turnContext.activity.type) {
+        case ActivityTypes.Message:
+            // Get the current reservation info from state.
+            const reservation = await this.reservationAccessor.get(turnContext, null);
+
+            // Generate a dialog context for our dialog set.
+            const dc = await this.dialogSet.createContext(turnContext);
+
+            if (!dc.activeDialog) {
+                // If there is no active dialog, check whether we have a reservation yet.
+                if (!reservation) {
+                    // If not, start the dialog.
+                    await dc.beginDialog(RESERVATION_DIALOG);
+                }
+                else {
+                    // Otherwise, send a status message.
+                    await turnContext.sendActivity(
+                        `We'll see you ${reservation.date}.`);
+                }
+            }
+            else {
+                // Continue the dialog.
+                const dialogTurnResult = await dc.continueDialog();
+
+                // If the dialog completed this turn, record the reservation info.
+                if (dialogTurnResult.status === DialogTurnStatus.complete) {
+                    await this.reservationAccessor.set(
+                        turnContext,
+                        dialogTurnResult.result);
+
+                    // Send a confirmation message to the user.
+                    await turnContext.sendActivity(
+                        `Your party of ${dialogTurnResult.result.size} is ` +
+                        `confirmed for ${dialogTurnResult.result.date}.`);
+                }
+            }
+
+            // Save the updated dialog state into the conversation state.
+            await this.conversationState.saveChanges(turnContext, false);
+            break;
+        default:
+            break;
+    }
+}
 ```
 
 ---
