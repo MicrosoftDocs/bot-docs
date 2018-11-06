@@ -412,4 +412,4 @@ switch (text)
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Prompt users for input using the dialogs library](bot-builder-prompts.md)
+> [Gather user input](bot-builder-prompts.md)
