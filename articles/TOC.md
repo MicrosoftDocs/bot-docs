@@ -55,7 +55,7 @@
 ## Deploy
 ### [Download and redeploy bot code](bot-service-build-download-source-code.md)
 ### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
-### [Deploy your local bot to Azure](bot-builder-howto-deploy-azure.md)
+### [Deploy your C# bot to Azure](bot-builder-howto-deploy-azure.md)
 ## [Manage](manage/TOC.md)
 # Reference
 ## [Bot Builder tools](bot-builder-tools.md)
