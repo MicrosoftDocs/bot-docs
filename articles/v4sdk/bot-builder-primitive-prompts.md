@@ -1,4 +1,8 @@
 ---
+redirect_url: /bot-framework/bot-builder-howto-v4-state
+---
+<!--
+---
 title: Create your own prompts to gather user input | Microsoft Docs
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Builder SDK.
 keywords: conversation flow, prompts
@@ -692,3 +696,5 @@ Now that you have a handle on how to manage the prompt states yourself, let's ta
 
 > [!div class="nextstepaction"]
 > [Prompt users for input using Dialogs](bot-builder-prompts.md)
+
+-->
