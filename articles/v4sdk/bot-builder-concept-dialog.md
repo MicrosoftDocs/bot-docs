@@ -20,6 +20,8 @@ Managing conversations through the concept of a Dialog is central to the SDK. Di
 
 At runtime, Dialog instances are arranged in a stack. The Dialog on the top of the stack is referred to as the ActiveDialog. The current active Dialog processes the inbound Activity. Between each turn of the conversation (which is not time-bound and may span over several days), the stack is persisted. 
 
+## Dialog Lifecycle
+
 A Dialog implements three main functions:
 - BeginDialog
 - ContinueDialog
