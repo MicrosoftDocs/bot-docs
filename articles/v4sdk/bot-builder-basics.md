@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/31/2018
+ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -91,7 +91,7 @@ Let's look at the Echo Bot With Counter [[C#](https://aka.ms/EchoBotWithStateCSh
 
 # [C#](#tab/cs)
 
-A bot is a type of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1) web application. If you look at the [ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as Program.cs and Startup.cs. These files are required for all web apps and are not bot specific. Code in some of these files won't be copied here, but you can refer to the Echo Bot With Counter sample.
+A bot is a type of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1) web application. If you look at the [ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific. Code in some of these files won't be copied here, but you can refer to the [C# echobot-with-counter](https://aka.ms/EchoBot-With-Counter) sample.
 
 ### EchoWithCounterBot.cs
 
@@ -240,7 +240,7 @@ public class EchoBotAccessors
 
 # [JavaScript](#tab/js)
 
-The system section mainly contains the **package.json**, **.env** , **index.js**, and **README.md** files. Code in some files won't be copied here, but you will see it when you run the bot.
+The Yeoman generator creates a type of [restify](http://restify.com/) web application. If you look at the restify quickstart in their docs, you'll see an app similar to the generated **index.js** file. This section mainly describes the **package.json**, **.env** , **index.js**, **bot.js**, and **echobot-with-counter.bot** files. Code in some files won't be copied here, but you will see it when you run the bot, and you can refer to the [Node.js echobot-with-counter](https://aka.ms/js-echobot-with-counter) sample.
 
 ### package.json
 
