@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 10/25/2018
 ---
 
 # Add media attachments to messages
@@ -123,6 +123,7 @@ Adding an [AudioCard](bot-framework-rest-connector-api-reference.md#audiocard-ob
         "title": "Allegro in C Major",
         "subtitle": "Allegro Duet",
         "text": "No Image, No Buttons, Autoloop, Autostart, Sharable",
+        "duration": "PT2M55S",
         "media": [
           {
             "url": "https://contoso.com/media/AllegrofromDuetinCMajor.mp3"
@@ -172,9 +173,7 @@ The media event name **media/pause** will appear in the `activity.name` field. R
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)
-- [Channel Inspector][ChannelInspector]
-
-[ChannelInspector]: ../bot-service-channel-inspector.md
+- [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object

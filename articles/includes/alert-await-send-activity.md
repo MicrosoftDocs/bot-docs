@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> The thread handling the primary bot turn deals with disposing of the context object when it is done. **Be sure to `await` any activity calls** so the primary thread will wait on the generated activity before finishing it's processing and disposing of the turn context. Otherwise, if a response (including its handlers) takes any significant amount of time and tries to act on the context object, it may get a _context was disposed_ error.
