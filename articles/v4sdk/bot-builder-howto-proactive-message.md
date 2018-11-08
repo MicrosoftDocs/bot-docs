@@ -1,18 +1,18 @@
 ---
-title: How to use proactive messaging | Microsoft Docs
-description: Understand how to send proactive messages with your bot.
-keywords: proactive message
+title: Get notification from bot| Microsoft Docs
+description: Understand how to send notification messages
+keywords: proactive message, notification message, bot notification, 
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/27/2018
+ms.date: 11/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to use proactive messaging
+# Get notification from bot
 
 [!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 
