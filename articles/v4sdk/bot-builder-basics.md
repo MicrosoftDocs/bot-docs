@@ -4,7 +4,7 @@ description: Describes how activity and http work within the Bot Builder SDK.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
 ms.author: johtaylo
-manager: kamrani
+manager: kamrani\
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
@@ -81,7 +81,7 @@ In addition to the application and middleware logic, response handlers (also som
 
 Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
 
-The handlers registered on a context object are handled very similarly to how the adapter manages the manages the [middleware pipeline](~/v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). Namely, handlers get called in the order they're added, and calling the _next_ delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event [short circuits](~/v4sdk/bot-builder-concept-middleware.md#short-circuiting), and the adapter does not send the response to the channel.
+The handlers registered on a context object are handled very similarly to how the adapter manages the [middleware pipeline](~/v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). Namely, handlers get called in the order they're added, and calling the _next_ delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event [short circuits](~/v4sdk/bot-builder-concept-middleware.md#short-circuiting), and the adapter does not send the response to the channel.
 
 ## Bot structure
 
