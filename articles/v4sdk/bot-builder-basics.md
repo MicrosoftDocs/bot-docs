@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/02/2018
+ms.date: 11/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -50,38 +50,13 @@ Let's drill into the previous diagram with a focus on the arrival of a message a
 
 In the example above, the bot replied to the message activity with another message activity containing the same text message. Processing starts with the HTTP POST request, with the activity information carried as a JSON payload, arriving at the web server. In C# this will typically be an ASP.NET project, in a JavaScript Node.js project this is likely to be one of the popular frameworks such as Express or Restify.
 
-The *adapter*, an integrated component of the SDK, serves as the conductor of the framework. The service uses the activity information to create an activity object, and then calls the adapter's *process activity* method while passing in the activity object and authentication information (this call is wrapped inside the libraries for C#, but you will see it in JavaScript). Upon receiving the activity, the adapter creates a turn context object and calls the [middleware](#middleware). Processing continues to the bot logic after middleware, the pipeline completes, and the adapter disposes of the turn context object.
-
-The bot's *turn handler*, which makes up most of the application logic, takes a turn context as its argument. The turn handler will typically process the inbound activity’s content and generate one or more activities in response, sending these out using the turn context's *send activity* method. Calling the send activity method will send an activity to the user's channel, unless processing otherwise gets interrupted. The activity will pass through any registered [event handlers](#response-event-handlers) before being sent to the channel.
-
-## Middleware
-
-Middleware is a linear set of components that are each added and executed in order, giving each a chance to operate on the activity both before and after the bot's turn handler and have access to the turn context for that activity. Unless middleware [short circuited](~/v4sdk/bot-builder-concept-middleware.md#short-circuiting), the final stage of the middleware pipeline is a callback to invoke the turn handler of the bot, before returning up the stack. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
-
-## Generating responses
-
-The turn context provides activity response methods to allow code to respond to an activity:
-
-* The _send activity_ and _send activities_ methods send one or more activities to the conversation.
-* If supported by the channel, the _update activity_ method updates an activity within the conversation.
-* If supported by the channel, the _delete activity_ method removes an activity from the conversation.
-
-Each response method runs in an asynchronous process. When it is called, the activity response method clones the associated [event handler](#response-event-handlers) list before starting to call the handlers, which means it will contain every handler added up to this point but will not contain anything added after the process starts.
-
-This also means the order of your responses for independent activity calls is not guaranteed, particularly when one task is more complex than another. If your bot can generate multiple responses to an incoming activity, make sure that they make sense in whatever order they are received by the user. The only exception to this is the *send activities* method, which allows you to send an ordered set of activities.
+The *adapter*, an integrated component of the SDK, is the core of the SDK runtime. The activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the Activity object that is then handed to the adapter with a call to *process activity* method. On receiving the activity, the adapter creates a *turn context* and calls the middleware. The name *turn context* follows from the use of the word “turn” to describe all the processing associated with the arrival of an activity. The turn context is one of the most important abstractions in the SDK, not only does it carry the inbound activity to all the middleware components and the application logic, but it also provides the mechanism for the middleware components and the application logic to send outbound activities. The turn context provides _send, update, and delete activity_ response methods to respond to an activity. Each response method runs in an asynchronous process. 
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
-## Response event handlers
 
-In addition to the application and middleware logic, response handlers (also sometimes referred to as event handlers, or activity event handlers) can be added to the context object. These handlers are called when the associated [response](#generating-responses) happens on the current context object, before executing the actual response. These handlers are useful when you know you'll want to do something, either before or after the actual event, for every activity of that type for the rest of the current response.
-
-> [!WARNING]
-> Be careful to not call an activity response method from within it's respective response event handler, for example, calling the send activity method from within an _on send activity_ handler. Doing so can generate an infinite loop.
-
-Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
-
-The handlers registered on a context object are handled very similarly to how the adapter manages the manages the [middleware pipeline](~/v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). Namely, handlers get called in the order they're added, and calling the _next_ delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event [short circuits](~/v4sdk/bot-builder-concept-middleware.md#short-circuiting), and the adapter does not send the response to the channel.
+## Middleware
+Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to invoke the turn handler (`OnTurnAsync` in C# and `onTurn` in JS) function on the bot class the application has registered with the adapter. The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity’s content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot’s turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
 
 ## Bot structure
 

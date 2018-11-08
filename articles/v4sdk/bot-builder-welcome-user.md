@@ -1,4 +1,8 @@
 ---
+redirect_url: /bot-framework/bot-builder-send-welcome-message
+---
+<!--
+---
 title: Welcome the user | Microsoft Docs
 description: Learn how to design your bot to provide a welcoming user experience.
 keywords: overview, design, user experience, Welcome, personalized experience 
@@ -69,3 +73,5 @@ Keeping your interactions timely and conversational helps users experience a mor
 ## Next steps
 > [!div class="nextstepaction"]
 > [Send welcome message to users](bot-builder-send-welcome-message.md)
+
+-->

@@ -176,15 +176,21 @@ Activities can be of several different types past the most common **message**. T
 ## message
 
 <!-- Only the last link is different. -->
+
 ::: moniker range="azure-bot-service-3.0"
+
 Your bot will send message activities to communicate information to and receive message activities from users.
-Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](v4sdk/bot-builder-howto-send-messages.md#send-a-spoken-message), [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card),
+Some messages may simply consist of plain text, while others may contain richer content such as text to be spoken, [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card),
 and [channel-specific data](~/dotnet/bot-builder-dotnet-channeldata.md).
+
 ::: moniker-end
+
 ::: moniker range="azure-bot-service-4.0"
+
 Your bot will send message activities to communicate information to and receive message activities from users.
-Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](v4sdk/bot-builder-howto-send-messages.md#send-a-spoken-message), [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card),
+Some messages may simply consist of plain text, while others may contain richer content such as text to be spoken, [suggested actions](v4sdk/bot-builder-howto-add-suggested-actions.md), [media attachments](v4sdk/bot-builder-howto-add-media-attachments.md), [rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card),
 and [channel-specific data](~/v4sdk/bot-builder-channeldata.md).
+
 ::: moniker-end
 
 ## contactRelationUpdate
@@ -245,6 +251,7 @@ A bot receives a typing activity to indicate that the user is typing a response.
 A bot may send a typing activity to indicate to the user that it is working to fulfill a request or compile a response.
 
 ::: moniker range="azure-bot-service-3.0"
+
 ## Additional resources
 
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>

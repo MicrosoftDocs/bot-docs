@@ -47,7 +47,7 @@ A dialog can use a prompt only if both the dialog and prompt are in the same dia
 1. Define a state property accessor for your dialog state.
 1. Create a dialog set.
 1. Create your prompts, and add them to the dialog set.
-1. Create a dialog that will user your prompts, and add it to the dialog set.
+1. Create a dialog that will use your prompts, and add it to the dialog set.
 1. Within the dialog, add calls to the prompts and to retrieve the prompt results.
 
 This article discusses how to create your prompts and how to call them from a waterfall dialog.
