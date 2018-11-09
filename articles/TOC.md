@@ -29,7 +29,7 @@
 ## [Design](design/TOC.md)
 ## Develop
 <!-- ## [Best practice for welcoming the user](v4sdk/bot-builder-welcome-user.md) -->
-### [Send text message to users](v4sdk/bot-builder-howto-send-messages.md)
+### [Send and receive text message](v4sdk/bot-builder-howto-send-messages.md)
 ### [Add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md)
 ### [Use button for input](v4sdk/bot-builder-howto-add-suggested-actions.md)
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
