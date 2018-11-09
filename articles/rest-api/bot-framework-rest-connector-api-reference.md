@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/24/2018
+ms.date: 10/25/2018
 ---
 
 # API reference
@@ -442,6 +442,7 @@ Defines a card that can play animated GIFs or short videos.<br/><br/>
 | **autoloop** | boolean | Flag that indicates whether to replay the list of animated GIFs when the last one ends. Set this property to **true** to automatically replay the animation; otherwise, **false**. The default value is **true**. |
 | **autostart** | boolean | Flag that indicates whether to automatically play the animation when the card is displayed. Set this property to **true** to automatically play the animation; otherwise, **false**. The default value is **true**. |
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
+| **duration** | string | The length of the media content, in [ISO 8601 duration format](https://www.iso.org/iso-8601-date-and-time-format.html). |
 | **image** | [ThumbnailUrl](#thumbnailurl-object) | A **ThumbnailUrl** object that specifies the image to display on the card. |
 | **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects that specifies the list of animated GIFs to play. |
 | **shareable** | boolean | Flag that indicates whether the animation may be shared with others. Set this property to **true** if the animation may be shared; otherwise, **false**. The default value is **true**. |
@@ -518,6 +519,7 @@ Defines a card that can play an audio file.<br/><br/>
 | **autoloop** | boolean | Flag that indicates whether to replay the list of audio files when the last one ends. Set this property to **true** to automatically replay the audio files; otherwise, **false**. The default value is **true**. |
 | **autostart** | boolean | Flag that indicates whether to automatically play the audio when the card is displayed. Set this property to **true** to automatically play the audio; otherwise, **false**. The default value is **true**. |
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
+| **duration** | string | The length of the media content, in [ISO 8601 duration format](https://www.iso.org/iso-8601-date-and-time-format.html). |
 | **image** | [ThumbnailUrl](#thumbnailurl-object) | A **ThumbnailUrl** object that specifies the image to display on the card. |
 | **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects that specifies the list of audio files to play. |
 | **shareable** | boolean | Flag that indicates whether the audio files may be shared with others. Set this property to **true** if the audio may be shared; otherwise, **false**. The default value is **true**. |
@@ -853,6 +855,7 @@ Defines a card that can play videos.<br/><br/>
 | **autoloop** | boolean | Flag that indicates whether to replay the list of videos when the last one ends. Set this property to **true** to automatically replay the videos; otherwise, **false**. The default value is **true**. |
 | **autostart** | boolean | Flag that indicates whether to automatically play the videos when the card is displayed. Set this property to **true** to automatically play the videos; otherwise, **false**. The default value is **true**. |
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
+| **duration** | string | The length of the media content, in [ISO 8601 duration format](https://www.iso.org/iso-8601-date-and-time-format.html). |
 | **image** | [ThumbnailUrl](#thumbnailurl-object) | A **ThumbnailUrl** object that specifies the image to display on the card. |
 | **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects that specifies the list of videos to play. |
 | **shareable** | boolean | Flag that indicates whether the videos may be shared with others. Set this property to **true** if the videos may be shared; otherwise, **false**. The default value is **true**. |

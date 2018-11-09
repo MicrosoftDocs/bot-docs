@@ -1,4 +1,8 @@
 ---
+redirect_url: /bot-framework/bot-builder-howto-v4-state
+---
+<!--
+---
 title: Create your own prompts to gather user input | Microsoft Docs
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Builder SDK.
 keywords: conversation flow, prompts
@@ -8,7 +12,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/20/2018
+ms.date: 10/31/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -67,32 +71,38 @@ public class UserProfile
 
 # [JavaScript](#tab/javascript)
 
-**app.js**
+In **index.js**, update the require statement to include `UserState`.
 
 ```javascript
-const storage = new MemoryStorage(); // Volatile memory
-const conversationState = new ConversationState(storage);
-const userState = new UserState(storage);
-const dialogState = conversationState.createProperty('dialogState');
-const userProfile = userState.createProperty('userProfile');
+const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState } = require('botbuilder');
 ```
 
-Place this code within your main bot logic.
+Then create a user state management object and pass it in when creating your bot.
 
 ```javascript
-// Pull the state of the dialog out of the conversation state manager.
-const convo = await dialogState.get(context, {
-    prompt: undefined,
-    topic: 'profile'
-});
+// Create conversation and user state with in-memory storage provider.
+const conversationState = new ConversationState(memoryStorage);
+const userState = new UserState(memoryStorage);
 
-// Pull the user profile out of the user state manager.
-const userProfile = await userProfile.get(context, {  // Define the user's profile object
-        "userName": undefined,
-        "age": undefined,
-        "workPlace": undefined
-    }
-);
+// Create the bot.
+const myBot = new MyBot(conversationState, userState);
+```
+
+In **bot.js**, define identifiers for the state property accessors we will use to manage the bot's [state](bot-builder-howto-v4-state.md). Also define the prompts to use for the information we want to collect from the user.
+
+Add this code outside of the `MyBot` class.
+
+```javascript
+// Define identifiers for our state property accessors.
+const TOPIC_STATE_PROPERTY = 'topicStateProperty';
+const USER_PROFILE_PROPERTY = 'userProfileProperty';
+
+// Define the prompts to use to ask for user profile information.
+const fields = {
+    userName: "What is your name?",
+    age: "How old are you?",
+    workPlace: "Where do you work?"
+}
 ```
 
 ---
@@ -346,91 +356,91 @@ public class PrimitivePromptsBot : IBot
 
 # [JavaScript](#tab/javascript)
 
-**app.js**
+In **bot.js**, update the `MyBot` class definition.
+
+We setup the state property accessors in the bot's constructor: `topicStateAccessor` and `userProfileAccessor`. The topic state tracks the topic of conversation, and the user profile tracks the information we've collected for the user.
 
 ```javascript
+constructor(conversationState, userState) {
+    // Create state property accessors.
+    this.topicStateAccessor = conversationState.createProperty(TOPIC_STATE_PROPERTY);
+    this.userProfileAccessor = userState.createProperty(USER_PROFILE_PROPERTY);
 
-server.post('/api/messages', (req, res) => {
-    adapter.processActivity(req, res, async (context) => {
-        const isMessage = (context.activity.type === ActivityTypes.Message);
+    // Track the conversation and user state management objects.
+    this.conversationState = conversationState;
+    this.userState = userState;
+}
+```
 
-        // Set up a list of fields that we need to collect from the user.
-        const fields = {
-            userName: "What is your name?",
-            age: "How old are you?",
-            workPlace: "Where do you work?"
-        }
+Then update the turn handler to use the bot state to control the conversation flow and save the collected user information.
 
-        // Pull the state of the dialog out of the conversation state manager.
-        const convo = await dialogState.get(context, {
-            topic: 'profile',
-            prompt: undefined
+```javascript
+async onTurn(turnContext) {
+    // Handle only message activities from the user.
+    if (turnContext.activity.type === ActivityTypes.Message) {
+        // Get state properties using their accessors, providing default values.
+        const topicState = await this.topicStateAccessor.get(turnContext, {
+            prompt: undefined,
+            topic: 'profile'
+        });
+        const userProfile = await this.userProfileAccessor.get(turnContext, {
+            "userName": undefined,
+            "age": undefined,
+            "workPlace": undefined
         });
 
-        // Pull the user profile out of the user state manager.
-        const userProfile = await userProfile.get(context, {  // Define the user's profile object
-                "userName": undefined,
-                "age": undefined,
-                "workPlace": undefined
+        if (topicState.topic === 'profile') {
+            // If a prompt flag is set in the conversation state, use it to capture the incoming value
+            // into the appropriate field of the user profile.
+            if (topicState.prompt) {
+                userProfile[topicState.prompt] = turnContext.activity.text;
             }
-        );
 
-        if (isMessage) {
+            // Determine which fields are not yet set.
+            const empty_fields = [];
+            Object.keys(fields).forEach(function (key) {
+                if (!userProfile[key]) {
+                    empty_fields.push({
+                        key: key,
+                        prompt: fields[key]
+                    });
+                }
+            });
 
-            if (convo.topic === 'profile') {
-                // If a prompt flag is set in the conversation state, use it to capture the incoming value
-                // into the appropriate field of the user profile.
-                if (convo.prompt) {
-                    userProfile[convo.prompt] = context.activity.text;
+            if (empty_fields.length) {
+
+                // If all the fields are empty, send a welcome message.
+                if (empty_fields.length == Object.keys(fields).length) {
+                    await turnContext.sendActivity('Welcome new user, please fill out your profile information.');
                 }
 
-                 // Determine which fields are not yet set.
-                 const empty_fields = [];
-                 Object.keys(fields).forEach(function(key) {
-                    if (!userProfile[key]) {
-                        empty_fields.push({
-                           key: key,
-                           prompt: fields[key]
-                        });
-                     }
-                 });
+                // We have at least one empty field. Prompt for the next empty field.
+                await turnContext.sendActivity(empty_fields[0].prompt);
 
-                 if (empty_fields.length) {
+                // update the flag to indicate which prompt we just sent
+                // so that the response can be captured at the beginning of the next turn.
+                topicState.prompt = empty_fields[0].key;
 
-                    // If all the fields are empty, send a welcome message.
-                    if (empty_fields.length == Object.keys(fields).length) {
-                        await context.sendActivity('Welcome new user, please fill out your profile information.');
-                    }
-
-                    // We have at least one empty field. Prompt for the next empty field.
-                    await context.sendActivity(empty_fields[0].prompt);
-
-                    // update the flag to indicate which prompt we just sent
-                    // so that the response can be captured at the beginning of the next turn.
-                    convo.prompt = empty_fields[0].key;
-
-                 } else {
-                    // Our user profile is complete!
-                    await context.sendActivity('Thank you. Your profile is complete.');
-                    convo.prompt = null;
-                    convo.topic = null;
-
-                 }
-            } else if (context.activity.text && context.activity.text.match(/hi/ig)) {
-                // Check to see if the user said "hi" and respond with a greeting
-                await context.sendActivity(`Hi ${ userProfile.userName }.`);
             } else {
-                // Default message
-                await context.sendActivity("Hi. I'm the Contoso bot.");
+                // Our user profile is complete!
+                await turnContext.sendActivity('Thank you. Your profile is complete.');
+                topicState.prompt = null;
+                topicState.topic = null;
+
             }
+        } else if (turnContext.activity.text && turnContext.activity.text.match(/hi/ig)) {
+            // Check to see if the user said "hi" and respond with a greeting
+            await turnContext.sendActivity(`Hi ${userProfile.userName}.`);
+        } else {
+            // Default message
+            await turnContext.sendActivity("Hi. I'm the Contoso bot.");
         }
 
-        // End the turn by writing state changes back to storage
-        await conversationState.saveChanges(context);
-        await userState.saveChanges(context);
-    });
-});
-
+        // Save state changes
+        await this.conversationState.saveChanges(turnContext);
+        await this.userState.saveChanges(turnContext);
+    }
+}
 ```
 
 ---
@@ -455,7 +465,7 @@ To help your users better navigate multiple topics of conversation, consider pro
 
 The **Dialogs** library provides built in ways to validate the user's input, but we can also do so with our own prompts. For example, if we ask for the user's age, we want to make sure we get a number, not something like "Bob" as a response.
 
-Parsing a number or a date and time is a complex task that's beyond the scope of this topic. Fortunately, there is a library we can leverage. To parse this information, we use the [Microsoft's Text Recognizer](https://github.com/Microsoft/Recognizers-Text) library. This package is available through NuGet, or downloading it from the repository. (It's included in the **Dialogs** library too, which is worth noting even though we are not using it here.)
+Parsing a number or a date and time is a complex task that's beyond the scope of this topic. Fortunately, there is a library we can leverage. To parse this information, we use the [Microsoft's Text Recognizer](https://github.com/Microsoft/Recognizers-Text) library. This package is available through NuGet and npm. You can also downloading it directly from the repository. (It's included in the **Dialogs** library too, which is worth noting even though we are not using it here.)
 
 This library is particularly useful for parsing complex input like dates, times, or phone numbers. In this sample, we're  validating a number for a dinner reservation party size, but the same idea can be extended for more complex validation operations.
 
@@ -463,129 +473,219 @@ In the following sample we only show the use of `RecognizeNumber`. Details on ho
 
 # [C#](#tab/csharp)
 
-To use the **Microsoft.Recognizers.Text.Number** library, include the NuGet package and add it to your using statements.
+To use the **Microsoft.Recognizers.Text.Number** library, include the NuGet package, and add these using statements to your bot file.
 
 ```csharp
-using Microsoft.Recognizers.Text.Number;
-using Microsoft.Recognizers.Text;
 using System.Linq;
+using Microsoft.Recognizers.Text;
+using Microsoft.Recognizers.Text.Number;
 ```
 
-Then, define a function that actually does the validation.
+There are many ways we could handle validation. Here, we'll update our helper class to include validation.
+
+Add the following members to the bot's inner `UserFieldInfo` class.
 
 ```csharp
-private async Task<bool> ValidatePartySize(ITurnContext context, string value)
+/// <summary>Delegate for validating input.</summary>
+/// <param name="turnContext">The current turn context. turnContext.Activity.Text contains the input to validate.</param>
+/// <returns><code>true</code> if the input is valid; otherwise, <code>false</code>.</returns>
+public delegate Task<bool> ValidatorDelegate(
+    ITurnContext turnContext,
+    CancellationToken cancellationToken = default(CancellationToken));
+
+/// <summary>By default, evaluate all input as valid.</summary>
+private static readonly ValidatorDelegate NoValidator =
+    async (ITurnContext turnContext, CancellationToken cancellationToken) => true;
+
+/// <summary>Gets or sets the validation function to use.</summary>
+public ValidatorDelegate ValidateInput { get; set; } = NoValidator;
+```
+
+Then, update the _age_ entry in the bot's `UserFields` to define the validation to use.
+Since we will validate the input before setting the value for age, we can simplify the `SetValue` function a little and take advantage of the text recognizers library.
+
+```csharp
+private static List<UserFieldInfo> UserFields { get; } = new List<UserFieldInfo>
 {
-    try
-    {
-        // Recognize the input as a number. This works for responses such as
-        // "twelve" as well as "12"
-        var result = NumberRecognizer.RecognizeNumber(value, Culture.English);
-
-        // Attempt to convert the Recognizer result to an integer
-        int.TryParse(result.First().Text, out int partySize);
-
-        if (partySize < 6)
+    // ...
+    new UserFieldInfo {
+        Key = nameof(UserProfile.Age),
+        Prompt = "How old are you?",
+        GetValue = (profile) => profile.Age.HasValue? profile.Age.Value.ToString() : null,
+        SetValue = (profile, value) =>
         {
-            throw new Exception("Party size too small.");
-        }
-        else if (partySize > 20)
+            // As long as the input validates, this should work.
+            List<ModelResult> result = NumberRecognizer.RecognizeNumber(value, Culture.English);
+            profile.Age = int.Parse(result.First().Text);
+        },
+        ValidateInput = async (turnContext, cancellationToken) =>
         {
-            throw new Exception("Party size too big.");
-        }
+            try
+            {
+                // Recognize the input as a number. This works for responses such as
+                // "twelve" as well as "12".
+                List<ModelResult> result = NumberRecognizer.RecognizeNumber(
+                    turnContext.Activity.Text, Culture.English);
 
-        // If we got through this, the number is valid
-        return true;
-    }
-    catch (Exception)
+                // Attempt to convert the Recognizer result to an integer
+                int.TryParse(result.First().Text, out int age);
+
+                if (age < 18)
+                {
+                    await turnContext.SendActivityAsync(
+                        "You must be 18 or older.",
+                        cancellationToken: cancellationToken);
+                    return false;
+                }
+                else if (age > 120)
+                {
+                    await turnContext.SendActivityAsync(
+                        "You must be 120 or younger.",
+                        cancellationToken: cancellationToken);
+                    return false;
+                }
+            }
+            catch
+            {
+                await turnContext.SendActivityAsync(
+                    "I couldn't understand your input. Please enter your age in years.",
+                    cancellationToken: cancellationToken);
+                return false;
+            }
+
+            // If we got through this, the number is valid.
+            return true;
+        },
+    },
+    // ...
+};
+```
+
+Finally, we update our turn handler to validate all input before saving a value to the property.
+Validation defaults to our NoValidator function, which accepts any input. So, the behavior for the age prompt is the only one that will change. If the input fails to validate, we don't set the field, and the bot will prompt for input for this field again next turn.
+
+Here, we're just looking at the part of the turn handler we need to update.
+
+```csharp
+public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
+{
+    if (turnContext.Activity.Type is ActivityTypes.Message)
     {
-        await context.SendActivityAsync("Error with your party size. < br /> Please specify a number between 6 - 20.");
-        return false;
+        // ...
+        // Check whether we need more information.
+        if (topicState.Topic is ProfileTopic)
+        {
+            // If we're expecting input, record it in the user's profile.
+            if (topicState.Prompt != null)
+            {
+                UserFieldInfo field = UserFields.First(f => f.Key.Equals(topicState.Prompt));
+                if (await field.ValidateInput(turnContext, cancellationToken))
+                {
+                    field.SetValue(userProfile, turnContext.Activity.Text.Trim());
+                }
+            }
+
+            // ...
+        }
+        //...
     }
 }
 ```
 
 # [JavaScript](#tab/javascript)
 
-To use the **Recognizers** library, require it in **app.js**:
+To use the **Recognizers** library, add the package and require it in your bot code (in **bot.js**):
 
-```javascript
-// Required packages for this bot
-var Recognizers = require('@microsoft/recognizers-text-suite');
+```bash
+npm i @microsoft/recognizers-text-suite --save
 ```
 
-Then, define a function that actually does the validation.
+```javascript
+// Required packages for this bot.
+const Recognizers = require('@microsoft/recognizers-text-suite');
+```
+
+Then, update the `fields` metadata to include text recognition and validation code:
 
 ```javascript
-// Support party size between 6 and 20 only
-async function validatePartySize(context, input){
-    try {
-        // Recognize the input as a number. This works for responses such as
-        // "twelve" as well as "12"
-        var result = Recognizers.recognizeNumber(input, Recognizers.Culture.English);
-        var value = parseInt(results[0].resolution.value);
-
-        if (value < 6) {
-            throw new Error(`Party size too small.`);
-        } else if(value > 20){
-            throw new Error(`Party size too big.`);
+// Define the prompts to use to ask for user profile information.
+const fields = {
+    userName: { prompt: "What is your name?" },
+    age: {
+        prompt: "How old are you?",
+        recognize: (turnContext) => {
+            var result = Recognizers.recognizeNumber(
+                turnContext.activity.text, Recognizers.Culture.English);
+            return parseInt(result[0].resolution.value);
+        },
+        validate: async (turnContext) => {
+            try {
+                // Recognize the input as a number. This works for responses such as
+                // "twelve" as well as "12".
+                var result = Recognizers.recognizeNumber(
+                    turnContext.activity.text, Recognizers.Culture.English);
+                var age = parseInt(result[0].resolution.value);
+                if (age < 18) {
+                    await turnContext.sendActivity("You must be 18 or older.");
+                    return false;
+                }
+                if (age > 120 ) {
+                    await turnContext.sendActivity("You must be 120 or younger.");
+                    return false;
+                }
+            } catch (_) {
+                await turnContext.sendActivity(
+                    "I couldn't understand your input. Please enter your age in years.");
+                return false;
+            }
+            return true;
         }
-        return true; // Return the valid value
-    } catch (err){
-        await context.sendActivity(`${err.message} <br/>Please specify a number between 6 - 20.`);
-        return false;
-    }
+    },
+    workPlace: { prompt: "Where do you work?" }
 }
 ```
 
----
-
-While processing the user's response to the prompt, call the validation function before moving on to the next prompt. If the validation fails, ask the question again.
-
-# [C#](#tab/csharp)
-
-```csharp
-if (topicState.Prompt == "partySize")
-{
-    if (await ValidatePartySize(turnContext, turnContext.Activity.Text))
-    {
-        // Save user's response in our state, ReservationInfo, which
-        // is a new class we've added to our state
-        // UserFieldInfo partySize;
-        partySize.SetValue(userProfile, turnContext.Activity.Text);
-
-        // Ask next question.
-        topicState.Prompt = "reserveName";
-        await turnContext.SendActivityAsync("Who's name will this be under?");
-    }
-    else
-    {
-        // Ask again.
-        await turnContext.SendActivityAsync("How many people are in your party?");
-    }
-}
-```
-
-# [JavaScript](#tab/javascript)
-
-**app.js**
+In our bot's turn handler, update the following blocks, where we record the user's input, and where we prompt the user. We need to update these sections to account for the changes to the field metadata.
 
 ```javascript
-// ...
-if (convo.prompt == "partySize") {
-    if (await validatePartySize(context, context.activity.text)) {
-        // Save user's response
-        reservationInfo.partySize = context.activity.text;
+async onTurn(turnContext) {
+    // Handle only message activities from the user.
+    if (turnContext.activity.type === ActivityTypes.Message) {
+        // ...
 
-        // Ask next question
-        convo.prompt = "reserveName";
-        await context.sendActivity("Who's name will this be under?");
-    } else {
-        // Ask again
-        await context.sendActivity("How many people are in your party?");
+        if (topicState.topic === 'profile') {
+            // If a prompt flag is set in the conversation state, use it to capture the incoming value
+            // into the appropriate field of the user profile.
+            if (topicState.prompt) {
+                const field = fields[topicState.prompt];
+                // If the prompt has validation, check whether the input validates.
+                if (!field.validate || await field.validate(turnContext)) {
+                    // Set the field, using a recognizer if one is defined.
+                    userProfile[topicState.prompt] = (field.recognize)
+                        ? field.recognize(turnContext)
+                        : turnContext.activity.text;
+                }
+            }
+
+            // ...
+
+            if (empty_fields.length) {
+
+                // ...
+
+                // We have at least one empty field. Prompt for the next empty field.
+                await turnContext.sendActivity(empty_fields[0].prompt.prompt);
+
+                // ...
+
+            } // ...
+        } // ...
+
+        // Save state changes
+        await this.conversationState.saveChanges(turnContext);
+        await this.userState.saveChanges(turnContext);
     }
 }
-// ...
 ```
 
 ---
@@ -596,3 +696,5 @@ Now that you have a handle on how to manage the prompt states yourself, let's ta
 
 > [!div class="nextstepaction"]
 > [Prompt users for input using Dialogs](bot-builder-prompts.md)
+
+-->

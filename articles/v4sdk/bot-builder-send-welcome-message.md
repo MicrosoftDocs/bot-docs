@@ -1,7 +1,7 @@
 ---
-title: Develop Welcome the user | Microsoft Docs
+title: Send welcome message to users | Microsoft Docs
 description: Learn how to develop your bot to provide a welcoming user experience.
-keywords: overview, develop, user experience, Welcome, personalized experience, C#, JS
+keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
 author: dashel
 ms.author: dashel
 manager: kamrani
@@ -412,4 +412,4 @@ switch (text)
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Prompt users for input using the dialogs library](bot-builder-prompts.md)
+> [Gather user input](bot-builder-prompts.md)

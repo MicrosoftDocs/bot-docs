@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template 
 
 > [!NOTE]
-> This topics applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK. 
 
 Creation of a high quality conversational experience requires a foundational set of capabilities. To help you succeed with building great conversational experiences, we have created an Enterprise Bot Template. This template brings together all of the best practices and supporting components we've identified through building of conversational experiences. 
 

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Conversational Analytics using PowerBI Dashboard and Application Insights
 
 > [!NOTE]
-> This topics applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK. 
 
 Once your Bot is deployed and it starts to process messages you will see telemetry flowing into the Application Insights instance within your Resource Group. 
 

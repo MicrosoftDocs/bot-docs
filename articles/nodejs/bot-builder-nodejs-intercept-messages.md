@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Intercept messages
@@ -61,4 +61,4 @@ update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the 
 
 ## Sample code
 
-For a complete sample that shows how to intercept and log messages using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/capability-middlewareLogging" target="_blank">Middleware and Logging sample</a> in GitHub.
+For a complete sample that shows how to intercept and log messages using the Bot Builder SDK for Node.js, see the <a href="https://aka.ms/v3-js-capability-middlewareLogging" target="_blank">Middleware and Logging sample</a> in GitHub.

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Creating a new project
 
 > [!NOTE]
-> This topics applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK. 
 
 Enterprise Bot Template brings together all of the best practices and supporting components we've identified through building of conversational experiences. The template is available in the following Botbuilder SDK platforms:
 
