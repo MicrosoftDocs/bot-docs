@@ -44,7 +44,7 @@
 #### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 #### [Create advance conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 #### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
-#### [Persist data in dialogs](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
+#### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
 #### [Reuse dialogs](v4sdk/bot-builder-compositcontrol.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
