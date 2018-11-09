@@ -1,7 +1,7 @@
 ---
-title: Use dialog library to gather user input | Microsoft Docs
+title: Gather user input | Microsoft Docs
 description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK.
-keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
+keywords: prompts, prompt, user input, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: JonathanFingold
 ms.author: v-jofing
 manager: kamrani
@@ -11,7 +11,7 @@ ms.subservice: sdk
 ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Use dialog library to gather user input
+# Gather user input
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
