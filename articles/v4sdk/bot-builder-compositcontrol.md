@@ -1,5 +1,5 @@
 ---
-title: Create an integrated set of dialogs | Microsoft Docs
+title: Reuse dialogs | Microsoft Docs
 description: Learn how to modularize your bot logic using dialog container in the Bot Builder SDK for Node.js and C#.
 keywords: composite control, modular bot logic
 author: v-ducvo
@@ -8,11 +8,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/08/2018
+ms.date: 11/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create an integrated set of dialogs
+# Reuse dialogs
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
