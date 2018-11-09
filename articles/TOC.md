@@ -13,11 +13,10 @@
 ## [Samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/readme.md)
 # Concepts
 ## [How bots work](v4sdk/bot-builder-basics.md)
-## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
-## [Dialogs state](v4sdk/bot-builder-dialog-state.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
-## [Welcoming the user](v4sdk/bot-builder-welcome-user.md)
-## [Language understanding](v4sdk/bot-builder-concept-luis.md)
+## [About Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+## [Understanding Dialogs state](v4sdk/bot-builder-dialog-state.md)
+<!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
 ## [Key scenarios for bots](bot-service-scenario-overview.md)
@@ -26,22 +25,23 @@
 ### [Enterprise Productivity bot](bot-service-scenario-enterprise-productivity.md)
 ### [Information bot](bot-service-scenario-informational.md)
 ### [Internet of Things bot](bot-service-scenario-internet-things.md)
-# How-To
+# How-To 
 ## [Design](design/TOC.md)
 ## Develop
+<!-- ## [Best practice for welcoming the user](v4sdk/bot-builder-welcome-user.md) -->
+### [Send text message to users](v4sdk/bot-builder-howto-send-messages.md)
+### [Add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md)
+### [Use button for input](v4sdk/bot-builder-howto-add-suggested-actions.md)
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
-### [Send text and spoken messages](v4sdk/bot-builder-howto-send-messages.md)
-### [Include media attachments in messages](v4sdk/bot-builder-howto-add-media-attachments.md)
-### [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md)
-### [Suggest actions to users](v4sdk/bot-builder-howto-add-suggested-actions.md)
-<!-- ### [Save user input](v4sdk/bot-builder-primitive-prompts.md) -->
-### [Manage state](v4sdk/bot-builder-howto-v4-state.md) 
-### [Proactively send messages to user](v4sdk/bot-builder-howto-proactive-message.md)
-### [Add language understanding capability](v4sdk/bot-builder-howto-v4-luis.md)
+<!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
+### [Get notification from bot](v4sdk/bot-builder-howto-proactive-message.md)
+<!-- ## [Save user input](v4sdk/bot-builder-primitive-prompts.md) -->
+### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md) 
+### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### Manage conversations using the Dialogs library 
 #### [Gather user input](v4sdk/bot-builder-prompts.md)
-#### [Implement basic sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
+#### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 #### [Create advance conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 #### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 #### [Persist data in dialogs](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
@@ -50,7 +50,6 @@
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### [Manage bots using CLI tools](bot-builder-tools.md)
-### [Implement channel-specific functionality](v4sdk/bot-builder-channeldata.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
 ## [Debug](debug/TOC.md)
@@ -66,9 +65,4 @@
 ## [.NET SDK v3](/dotnet/api/?view=botbuilder-3.12.2.4)
 ## [Node.js SDK v3](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [Entities and activity types](bot-service-activities-entities.md)
-# Related
-## [Web Apps](https://docs.microsoft.com/azure/app-service/)
-## [Functions](https://docs.microsoft.com/azure/azure-functions/)
-## [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/)
-## [Application Insights](https://docs.microsoft.com/azure/azure-monitor/)
 # [Resources](resources/TOC.md)

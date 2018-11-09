@@ -1,24 +1,22 @@
 ---
-title: Send messages | Microsoft Docs
-description: Learn about how to send messages within the Bot Builder SDK.
-keywords: sending messages, message activities, simple text message, speech, spoken message  
+title: Send text message to users| Microsoft Docs
+description: Learn about how to send text messages within the Bot Builder SDK.
+keywords: sending messages, message activities, simple text message, message, text message  
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 08/23/2018
+ms.date: 11/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Send text and spoken messages
+# Send text message to users
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. For more information about activity processing in general, see [Activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack).
-
-This article describes how to send simple text and speech messages. For sending richer content, see how to [add rich media attachments](bot-builder-howto-add-media-attachments.md). For information on how to use prompt objects, see how to [prompt users for input](bot-builder-prompts.md).
+The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. This article describes how to send simple text messages.
 
 ## Send a simple text message
 
@@ -26,10 +24,14 @@ To send a simple text message, specify the string you want to send as the activi
 
 # [C#](#tab/csharp)
 
-In the bot's **OnTurn** method, use the turn context object's **SendActivityAsync** method to send a single message response. You can also use the object's **SendActivitiesAsync** method to send multiple responses at once.
+In the bot's **OnTurnAsync** method, use the turn context object's **SendActivityAsync** method to send a single message response. You can also use the object's **SendActivitiesAsync** method to send multiple responses at once.
 
 ```cs
-await context.SendActivityAsync("Greetings from sample message.");
+public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
+{
+   // bot logic...
+   await turnContext.SendActivityAsync($"Greetings!", cancellationToken: cancellationToken);
+}
 ```
 
 # [JavaScript](#tab/javascript)
@@ -37,38 +39,12 @@ await context.SendActivityAsync("Greetings from sample message.");
 In the bot's turn handler, use the turn context object's **sendActivity** method to send a single message response. You can also use the object's **sendActivities** method to send multiple responses at once.
 
 ```javascript
-await context.sendActivity("Greetings from sample message.");
+async onTurn(turnContext) {
+   // bot logic...
+   await context.sendActivity("Greetings from sample message.");
+}
 ```
-
 ---
 
-## Send a spoken message
-
-Certain channels support speech-enabled bots, allowing them to speak to the user. A message can have both written and spoken content.
-
-> [!NOTE]
-> For those channels that don't support speech, the speech content is ignored.
-
-# [C#](#tab/csharp)
-
-Use the optional **speak** parameter to provide text to be spoken as part of the response.
-
-```cs
-await context.SendActivityAsync(
-    "This is the text to be displayed.",
-    "This is the text to be spoken.");
-```
-
-# [JavaScript](#tab/javascript)
-
-To add speech, you'll need the `Microsoft.Bot.Builder.MessageFactory` to build the message. `MessageFactory` is used more with [rich media](bot-builder-howto-add-media-attachments.md), where it is explained a bit more, but for now we'll just require and use it here.
-
-```javascript
-// Require MessageFactory from botbuilder
-const {MessageFactory} = require('botbuilder');
-
-const basicMessage = MessageFactory.text('This is the text that will be displayed.', 'This is the text that will be spoken.');
-await context.sendActivity(basicMessage);
-```
-
----
+## Additional resources
+For more information about activity processing in general, see [activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack). For sending richer content, see how to add [rich media](bot-builder-howto-add-media-attachments.md) attachments.
