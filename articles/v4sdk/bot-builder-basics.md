@@ -1,5 +1,5 @@
 ---
-title: Bot Activity in the Bot Builder SDK | Microsoft Docs
+title: How bots work | Microsoft Docs
 description: Describes how activity and http work within the Bot Builder SDK.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
@@ -12,7 +12,7 @@ ms.date: 11/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Understanding how bots work
+# How bots work
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
