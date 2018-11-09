@@ -8,18 +8,32 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/31/2018
+ms.date: 11/08/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Our previous design article [welcome the user](./bot-builder-welcome-user.md) discussed various best practices you can implement to ensure that your users have a good initial interaction with your bot. This article extends that topic by providing short code examples to help you welcome users to your bot.
+The primary goal when creating any bot is to engage your user in a meaningful conversation. One of the best ways to achieve this goal is to ensure that from the moment a user first connects, they understand your bot’s main purpose and capabilities, the reason your bot was created. This article provides code examples to help you welcome users to your bot.
 
 ## Same welcome for different channels
+A welcome message should be generated whenever your users first interacts with your bot. To achieve this, you can monitor your bot’s Activity types and watch for new connections. Each new connection can generate up to two conversation update activities depending on the channel.
 
-The following example watches for new _conversation update_ activity, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. The example code below uses the welcome user samples in the Github repo for [C#](https://aka.ms/bot-welcome-sample-cs) and [JS](https://aka.ms/bot-welcome-sample-js) code.
+- One when the user’s bot is connected to the conversation.
+- One when the user joins the conversation.
+
+It is tempting to simply generate a welcome message whenever a new conversation update is detected, but that can lead to unexpected results when your bot is accessed across a variety of channels.
+
+Some channels create one conversation update when a user initially connects to that channel, and a separate conversation update only after an initial input message is received from the user. Other channels generate both these activities when the user initially connects to the channel. If you simply watch for a conversation update event and display a welcome message on a channel with two conversation update activities, your user could receive the following:
+
+![Double Welcome Message](./media/double_welcome_message.png)
+
+This duplicate message can be avoided by generating an initial welcome message for only the second conversation update event. The second event can be detected when both:
+- A conversation update event has occurred.
+- A new member (user) has been added to the conversation.
+
+The following example watches for new *conversation update activity*, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. You can download the complete source code in [[C#](https://aka.ms/bot-welcome-sample-cs) or [JS](https://aka.ms/bot-welcome-sample-js)] from GitHub.
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
@@ -225,8 +239,7 @@ module.exports = MainDialog;
 ---
 
 ## Discard initial user input
-
-To ensure your user has a good experience on all possible channels, we avoid processing invalid response data by giving the initial prompt and setting up keywords to look for in the user's replies.
+It is also important to consider when your user’s input may actually contain useful information, and this too can vary per channel. To ensure your user has a good experience on all possible channels, we avoid processing invalid response data by giving the initial prompt and setting up keywords to look for in the user's replies.
 
 ## [C#](#tab/csharpmulti)
 
@@ -357,12 +370,12 @@ private static async Task SendIntroCardAsync(ITurnContext turnContext, Cancellat
 }
 ```
 
-Next, we can send the card by using the following await command. Let's put this into the bots _switch (text)_ _case "hel
+Next, we can send the card by using the following await command. Let's put this into the bots _switch (text) case "help"_.
 
 ```csharp
 switch (text)
 {
-    case "hello":
+    case "hello":"
     case "hi":
         await turnContext.SendActivityAsync($"You said {text}.", cancellationToken: cancellationToken);
         break;

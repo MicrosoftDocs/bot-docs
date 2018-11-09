@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 05/24/2018
+ms.date: 11/8/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Middleware is simply a class that sits between the adapter and your bot logic, added to your adapter's middleware collection during initialization. The SDK allows you to write your own middleware or add reusable components of middleware created by others. Every activity coming into or out of your bot flows through your middleware.
+Middleware is simply a class that sits between the adapter and your bot logic, added to your adapter's middleware collection during initialization. The SDK allows you to write your own middleware or add middleware created by others. Every activity coming into or out of your bot flows through your middleware.
 
 The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. As each activity flows in and out of the bot, each piece of middleware can inspect or act upon the activity, both before and after the bot logic runs.
 
@@ -61,7 +61,7 @@ The first things in your middleware pipeline should likely be those that take ca
 The last things in your middleware pipeline should be bot-specific middleware, which is middleware you implement to do some processing on every message sent to your bot. If your middleware uses state information or other information set in the bot context, add it to the middleware pipeline after the middleware that modifies state or context.
 
 ## Short circuiting
-An important idea around middleware (and [response handlers](bot-builder-basics.md#response-event-handlers)) is _short circuiting_. If execution is to continue through the layers that follow it, middleware (or a response handler) is required to pass execution on by calling it's _next_ delegate.  If the next delegate is not called within that middleware (or response handler), the associated pipeline short circuits and subsequent layers are not executed. This means all bot logic, and any middleware further along the pipeline, is skipped. There is a subtle difference between your middleware and your response handler short circuiting a turn.
+An important idea around middleware and response handlers is _short circuiting_. If execution is to continue through the layers that follow it, middleware (or a response handler) is required to pass execution on by calling it's _next_ delegate.  If the next delegate is not called within that middleware (or response handler), the associated pipeline short circuits and subsequent layers are not executed. This means all bot logic, and any middleware further along the pipeline, is skipped. There is a subtle difference between your middleware and your response handler short circuiting a turn.
 
 When middleware short circuits a turn, your bot turn handler will not be called, but all middleware code executed prior to this point in the pipeline will still run to completion. 
 
@@ -70,5 +70,14 @@ For event handlers, not calling _next_ means that the event is cancelled, which 
 > [!TIP]
 > If you do short-circuit a response event, such as `SendActivities`, be sure it's the behavior you intend. Otherwise, it can result in difficult to fix bugs.
 
+## Response event handlers
+In addition to the application and middleware logic, response handlers (also sometimes referred to as event handlers, or activity event handlers) can be added to the context object. These handlers are called when the associated response happens on the current context object, before executing the actual response. These handlers are useful when you know you'll want to do something, either before or after the actual event, for every activity of that type for the rest of the current response.
+
+> [!WARNING] 
+> Be careful to not call an activity response method from within it's respective response event handler, for example, calling the send activity method from within an on send activity handler. Doing so can generate an infinite loop.
+
+Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
+The handlers registered on a context object are handled very similarly to how the adapter manages the manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
+
 ## Additional resources
-You can take a look at the transcript logger middleware, as implemented in the Bot Builder SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs)|[JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].
+You can take a look at the transcript logger middleware, as implemented in the Bot Builder SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs) | [JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].

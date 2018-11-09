@@ -1,5 +1,5 @@
 ---
-title: Manage conversation and user state | Microsoft Docs
+title: Save user and conversation data | Microsoft Docs
 description: Learn how to save and retrieve state data with the Bot Builder SDK for .NET.
 keywords: conversation state, user state, conversation flow
 author: ivorb
@@ -8,11 +8,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/18/18
+ms.date: 11/08/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Manage conversation and user state
+# Save user and conversation data
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 

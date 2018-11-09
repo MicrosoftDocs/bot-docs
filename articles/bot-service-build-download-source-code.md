@@ -33,14 +33,14 @@ If you have a C# bot, update the `appsettings.json` file to include .bot file in
   "botFileSecret": "ukxxxxxxxxxxxs="
 }
 ```
-The `botFilePath` references the name of your bot, simply replace "yourbasicBot.bot" with your own bot name. To obtain the `botFileSecret` key, refer to [Bot File Encryption](https://aka.ms/bot-file-encryption) article on generating a key for your bot.
-
 
 If you have a node.js bot, add a `.env` file with the following entries:
 ```
 botFilePath=yourbasicBot.bot
 botFileSecret=ukxxxxxxxxxxxxs=
 ```
+
+The `botFilePath` references the name of your bot, simply replace "yourbasicBot.bot" with your own bot name. To obtain the `botFileSecret` key, refer to [Bot File Encryption](https://aka.ms/bot-file-encryption) article on generating a key for your bot.
 
 Next, make changes to your sources by either editing existing source files or adding new ones to your project. Test your code using the Emulator. When you are ready to redeploy modified code to the Azure portal, follow the instructions below.
 
