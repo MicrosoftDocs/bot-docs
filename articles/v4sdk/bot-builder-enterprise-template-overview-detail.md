@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Template - Detailed Overview
 
 > [!NOTE]
-> This topics applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK. 
 
 The Enterprise Bot Template brings together a number of best practices we've identified through the building of conversational experiences and automates integration of components that we've found to be highly beneficial to Azure Bot Service developers. This section covers some background to key decisions to help explain why the template works the way it does.
 

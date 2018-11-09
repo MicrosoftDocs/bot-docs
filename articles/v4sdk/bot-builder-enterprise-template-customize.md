@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Customize your Bot
 
 > [!NOTE]
-> This topics applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK. 
 
 ## .NET
 After you have deployed and tested that the Enterprise Bot Template works end-to-end as listed in the instructions [here](bot-builder-enterprise-template-deployment.md),
