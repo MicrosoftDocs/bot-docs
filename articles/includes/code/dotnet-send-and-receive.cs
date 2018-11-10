@@ -20,7 +20,7 @@ await connector.Conversations.SendToConversationAsync((Activity)newMessage);
 
 // <startPrivateConversation>
 var userAccount = new ChannelAccount(name: "Larry", id: "@UV357341");
-var connector = new ConnectorClient(new Uri(actvity.ServiceUrl));
+var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
 var conversationId = await connector.Conversations.CreateDirectConversationAsync(botAccount, userAccount);
 
 IMessageActivity message =  Activity.CreateMessageActivity();
