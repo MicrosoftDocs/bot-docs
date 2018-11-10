@@ -34,9 +34,9 @@ To run a JavaScript bot using the command line and testing the bot with the emul
 2. Start the bot by running the command **node app.js**.
 3. Start the emulator and connect to the bot's endpoint (e.g.: **http://localhost:3978/api/messages**). If this is the first time you are running the bot then click **File > New Bot** and follow the instructions on screen. Otherwise, click **File > Open Bot** to open an existing bot. Since this bot is running locally on your computer, you can leave the **MSA app ID** and **MSA app password** fileds blank. For more information, see [Debug with the Emulator](bot-service-debug-emulator.md).
 4. From the emulator, send your bot a message (e.g.: send the message "Hi"). 
-5. Use the **Inspector** and **Log** pannels on the right side of the emulator window to debug your bot. For example, clicking on any of the messages bubble (e.g.: the "Hi" message bubble in the screenshot below) will show you the detail of that message in the **Inspector** pannel. You can use it to view requests and responses as messages are exchanged between the emulator and the bot. Alternatively, you can click on any of the linked text in the **Log** panel to view the details in the **Inspector** pannel.
+5. Use the **Inspector** and **Log** panels on the right side of the emulator window to debug your bot. For example, clicking on any of the messages bubble (e.g.: the "Hi" message bubble in the screenshot below) will show you the detail of that message in the **Inspector** panel. You can use it to view requests and responses as messages are exchanged between the emulator and the bot. Alternatively, you can click on any of the linked text in the **Log** panel to view the details in the **Inspector** panel.
 
-   ![Inspector pannel on the Emulator](~/media/bot-service-debug-bot/emulator_inspector.png)
+   ![Inspector panel on the Emulator](~/media/bot-service-debug-bot/emulator_inspector.png)
 
 ### Debug a JavaScript bot using breakpoints in Visual Studio Code
 
