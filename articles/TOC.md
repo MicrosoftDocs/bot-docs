@@ -32,11 +32,11 @@
 ### [Send and receive text message](v4sdk/bot-builder-howto-send-messages.md)
 ### [Add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md)
 ### [Use button for input](v4sdk/bot-builder-howto-add-suggested-actions.md)
+### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md) 
+<!-- ## [Save user input](v4sdk/bot-builder-primitive-prompts.md) -->
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 <!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
 ### [Get notification from bot](v4sdk/bot-builder-howto-proactive-message.md)
-<!-- ## [Save user input](v4sdk/bot-builder-primitive-prompts.md) -->
-### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md) 
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### Manage conversations using the Dialogs library 
