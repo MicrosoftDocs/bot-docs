@@ -103,7 +103,28 @@ In scenarios where you wish to add a new LUIS model to your project you need to 
     dispatch refresh -bot "YOURBOT.bot" -secret YOURSECRET
 ```
 
-## Adding a new dialog 
+### Adding an additional QnAMaker knowledgebase
+
+In some scenarios you may wish to add an addditional QnAMaker knowledgebase to your Bot, this can be performed through the following steps.
+
+1. Create a new QnAMaker knowledgebase from a JSON file using the following command executed in your assistant directory
+```shell
+qnamaker create kb --in <KB.json> --msbot | msbot connect qna --stdin --bot "YOURBOT.bot" --secret YOURSECRET
+```
+2. Run the following command to update your Dispatch model to reflect your changes
+```shell
+dispatch refresh --bot "YOURBOT.bot" --secret YOURSECRET
+```
+3. Update the strongly typed Dispatch class to reflect the new QnA source
+```shell
+msbot get dispatch --bot "YOURBOT.bot" | luis export version --stdin > dispatch.json
+luisgen dispatch.json -cs Dispatch -o Dialogs\Shared
+```
+4.  Update the `Dialogs\Main\MainDialog.cs` file to include the corresponding Dispatch intent for your new QnA source following the example provided.
+
+You should now be able to leverage multiple QnA sources as part of your Bot.
+
+## Adding a new dialog
 
 To add a new Dialog to your Bot you need to first create a new Folder under Dialogs and ensure this class derives from `EnterpriseDialog`. You then need to wire up the Dialog infrastructure. The Onboarding dialog shows a simple example which you can refer to and an excerpt is shown below alongside an overview of the steps.
 
