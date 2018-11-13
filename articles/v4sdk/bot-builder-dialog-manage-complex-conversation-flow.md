@@ -1,5 +1,5 @@
 ---
-title: Manage a complex conversation flow with dialogs | Microsoft Docs
+title: Create advance conversation flow using branches and loops | Microsoft Docs
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Builder SDK for Node.js.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: v-ducvo
@@ -8,19 +8,19 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/03/2018
+ms.date: 11/03/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Manage complex conversation flows with dialogs
+# Create advance conversation flow using branches and loops
 
 [!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 
-In the last article, we demonstrated using the dialogs library to manage simple conversations. In [simple conversation flows](bot-builder-dialog-manage-conversation-flow.md), the user starts from the first step of a *waterfall*, continues through to the last step, and the conversational exchange finishes. In this article we will use dialogs to manage more complex conversations with portions that can branch and loop. To do so, we'll use various methods defined on the dialog context and waterfall step context, and we'll pass arguments between different parts of the dialog.
+In the last article, we demonstrated using the dialogs library to manage simple conversations. In [sequential conversation flows](bot-builder-dialog-manage-conversation-flow.md), the user starts from the first step of a *waterfall*, continues through to the last step, and the conversational exchange finishes. In this article we will use dialogs to manage more complex conversations with portions that can branch and loop. To do so, we'll use various methods defined on the dialog context and waterfall step context, and we'll pass arguments between different parts of the dialog.
 
 See [Dialogs library](bot-builder-concept-dialog.md) for more background information about dialogs.
 
-To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate using [component dialogs](bot-builder-compositcontrol.md) or building a custom dialog management class based on the base `Dialog` class.
+To give you more control over the *dialog stack*, the **Dialogs** library provides a _replace dialog_ method. This method allows you swap the currently active dialog for another one while maintaining the state and flow of the conversation. The _begin dialog_ and _replace dialog_ methods allow you to branch and loop as necessary to create more complex interactions. Should your conversation complexity increase to where your waterfall dialogs become difficult to manage, investigate [dialog reuse](bot-builder-compositcontrol.md) or build a custom dialog management class based on the base `Dialog` class.
 
 In this article we'll create sample dialogs for a hotel concierge bot that a guest could use to access common services: reserving a table at the hotel restaurant, and ordering a meal from room service.  Each one of these features, along with a menu connecting them together, will be created as dialogs in a dialog set.
 

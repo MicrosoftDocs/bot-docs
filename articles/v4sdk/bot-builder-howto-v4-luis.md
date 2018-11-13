@@ -1,5 +1,5 @@
 ---
-title: Using LUIS for Language Understanding | Microsoft Docs
+title: Add natural language understanding to your bot | Microsoft Docs
 description: Learn how to use LUIS for natural language understanding with the Bot Builder SDK.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
 author: ivorb
@@ -8,15 +8,15 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: cognitive-services
-ms.date: 10/12/18
+ms.date: 11/08/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Using LUIS for Language Understanding
+# Add natural language understanding to your bot
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. If you need more background on how LUIS integrates with a bot, see [language understanding for bots](./bot-builder-concept-LUIS.md).
+The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. If you need more background on LUIS, see [language understanding](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis) for bots.
 
 ## Prerequisites
 This topic walks you through setting up a simple bot that uses LUIS to recognize a few different intents. The code in this article is based on the NLP with LUIS sample in [C#](https://aka.ms/cs-luis-sample) and [JavaScript](https://aka.ms/js-luis-sample).

@@ -1,18 +1,18 @@
 ---
-title: Manage a simple conversation flow with dialogs | Microsoft Docs
+title: Implement sequential conversation flow | Microsoft Docs
 description: Learn how to manage a simple conversation flow with dialogs in the Bot Builder SDK for Node.js.
-keywords: simple conversation flow, dialogs, prompts, waterfalls, dialog set
+keywords: simple conversation flow, sequential conversation flow, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
 ms.author: v-jofing
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/02/2018
+ms.date: 11/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Manage simple conversation flow with dialogs
+# Implement sequential conversation flow
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
@@ -20,11 +20,7 @@ You can manage simple and complex conversation flows using the dialogs library.
 
 In a simple interaction, the bot runs through a fixed sequence of steps, and the conversation finishes.
 In this article, we use a _waterfall dialog_, a few _prompts_, and a _dialog set_ to create a simple interaction that asks the user a series of questions.
-We draw on code from the **multi-turn prompt** [[C#](https://aka.ms/cs-multi-prompts-sample)/[JS](https://aka.ms/js-multi-prompts-sample)] sample.
-
-For an overview of dialogs, see [dialogs library](bot-builder-concept-dialog.md) and [dialogs state](bot-builder-dialog-state.md).
-For information about prompts, see how to [prompt users for input using the Dialogs library](bot-builder-prompts.md).
-For modeling conversations that include branches and loops, See [complex conversation flows](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md).
+We draw on code from the **multi-turn prompt** [[C#](https://aka.ms/cs-multi-prompts-sample) | [JS](https://aka.ms/js-multi-prompts-sample)] sample.
 
 # [C#](#tab/csharp)
 
@@ -41,13 +37,7 @@ npm install botbuilder-dialogs --save
 ```
 
 ---
-
 The following sections reflect the steps you would take to implement simple dialogs for most bots:
-
-1. [Configure your bot](#configure-your-bot)
-1. [Update the bot turn handler to call the dialog](#update-the-bot-turn-handler-to-call-the-dialog)
-1. [Initialize your bot and define your dialog](#initialize-your-bot-and-define-your-dialog)
-1. [Test your dialog](#test-your-dialog)
 
 ## Configure your bot
 
@@ -63,12 +53,7 @@ Here, we're calling out only portions of the code.
 ```csharp
 public class MultiTurnPromptsBotAccessors
 {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="MultiTurnPromptsBotAccessors"/> class.
-    /// Contains the <see cref="ConversationState"/> and associated <see cref="IStatePropertyAccessor{T}"/>.
-    /// </summary>
-    /// <param name="conversationState">The state object that stores the dialog state.</param>
-    /// <param name="userState">The state object that stores the user state.</param>
+    // Initializes a new instance of the class.
     public MultiTurnPromptsBotAccessors(ConversationState conversationState, UserState userState)
     {
         ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
@@ -179,6 +164,12 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
 # [JavaScript](#tab/javascript)
 
+The bot code uses a few of the classes in the dialogs library.
+
+```javascript
+const { ChoicePrompt, DialogSet, NumberPrompt, TextPrompt, WaterfallDialog } = require('botbuilder-dialogs');
+```
+
 The dialog is run from the bot's turn handler. The handler first creates a `DialogContext` (`dc`) and either continues the active dialog or begins a new dialog as appropriate. The handler then saves conversation and user state at the end of the turn.
 
 The `MultiTurnBot` class is defined in the **bot.js** file. The constructor for this class adds a `dialogs` property for the dialog set, from which we generate a dialog context. This bot collects the user data once, using the `WHO_ARE_YOU` dialog. Once the user profile is populated, the bot uses the `HELLO_USER` dialog to respond. Again, we're showing only part of the turn handler code here.
@@ -220,8 +211,6 @@ async onTurn(turnContext) {
 In the bot's turn handler, we create a dialog context for the dialog set. The dialog context accesses the state cache for the bot, effectively remembering where in the conversation the last turn left off.
 
 If there is an active dialog, dialog context's _continue dialog_ method progresses it, using the user's input that triggered this turn; otherwise, the bot calls the dialog context's _begin dialog_ method to start a dialog.
-
-<!-- For more information about continuing a dialog, see [section-name](bot-builder-concept-dialog.md#section-id). -->
 
 Finally, we call the _save changes_ method on the state management objects to persist any changes that have happened this turn.
 
@@ -266,7 +255,7 @@ For the `hello_user` dialog:
 Here are a couple things things to remember when defining your own waterfall steps.
 
 * Each bot turn reflects input from the user, followed by a response from the bot. Thus, you are asking the user for input at the end of a waterfall step, and receiving their answer in the next waterfall step.
-* Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. (You can rely on the built-in validation for each type of prompt, or you can add your own custom validation to the prompt. For more information, see [prompt users for input using the Dialogs library](bot-builder-prompts.md).)
+* Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. (You can rely on the built-in validation for each type of prompt, or you can add your own custom validation to the prompt. For more information, see [get user input](bot-builder-prompts.md).)
 
 In this sample, the dialog is defined within the bot file and initialized in the bot's constructor.
 
@@ -275,19 +264,13 @@ In this sample, the dialog is defined within the bot file and initialized in the
 Define an instance property for the dialog set.
 
 ```csharp
-/// <summary>
-/// The <see cref="DialogSet"/> that contains all the Dialogs that can be used at runtime.
-/// </summary>
+// The DialogSet that contains all the Dialogs that can be used at runtime.
 private DialogSet _dialogs;
 ```
 
 Create the dialog set within the bot's constructor, adding the prompts and the waterfall dialog to the set.
 
 ```csharp
-/// <summary>
-/// Initializes a new instance of the <see cref="MultiTurnPromptsBot"/> class.
-/// </summary>
-/// <param name="accessors">A class containing <see cref="IStatePropertyAccessor{T}"/> used to manage state.</param>
 public MultiTurnPromptsBot(MultiTurnPromptsBotAccessors accessors)
 {
     _accessors = accessors ?? throw new ArgumentNullException(nameof(accessors));
@@ -316,12 +299,6 @@ public MultiTurnPromptsBot(MultiTurnPromptsBotAccessors accessors)
 In this sample, we define each step as a separate method. You can also define the steps in-line in the constructor using lambda expressions.
 
 ```csharp
-/// <summary>
-/// One of the functions that make up the <see cref="WaterfallDialog"/>.
-/// </summary>
-/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
-/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
-/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
 private static async Task<DialogTurnResult> NameStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
 {
     // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
@@ -329,12 +306,6 @@ private static async Task<DialogTurnResult> NameStepAsync(WaterfallStepContext s
     return await stepContext.PromptAsync("name", new PromptOptions { Prompt = MessageFactory.Text("Please enter your name.") }, cancellationToken);
 }
 
-/// <summary>
-/// One of the functions that make up the <see cref="WaterfallDialog"/>.
-/// </summary>
-/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
-/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
-/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
 private async Task<DialogTurnResult> NameConfirmStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
 {
     // Get the current profile object from user state.
@@ -350,12 +321,6 @@ private async Task<DialogTurnResult> NameConfirmStepAsync(WaterfallStepContext s
     return await stepContext.PromptAsync("confirm", new PromptOptions { Prompt = MessageFactory.Text("Would you like to give your age?") }, cancellationToken);
 }
 
-/// <summary>
-/// One of the functions that make up the <see cref="WaterfallDialog"/>.
-/// </summary>
-/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
-/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
-/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
 private async Task<DialogTurnResult> AgeStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
 {
     if ((bool)stepContext.Result)
@@ -375,12 +340,7 @@ private async Task<DialogTurnResult> AgeStepAsync(WaterfallStepContext stepConte
     }
 }
 
-/// <summary>
-/// One of the functions that make up the <see cref="WaterfallDialog"/>.
-/// </summary>
-/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
-/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
-/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
+
 private async Task<DialogTurnResult> ConfirmStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
 {
     // Get the current profile object from user state.
@@ -404,12 +364,6 @@ private async Task<DialogTurnResult> ConfirmStepAsync(WaterfallStepContext stepC
     return await stepContext.PromptAsync("confirm", new PromptOptions { Prompt = MessageFactory.Text("Is this ok?") }, cancellationToken);
 }
 
-/// <summary>
-/// One of the functions that make up the <see cref="WaterfallDialog"/>.
-/// </summary>
-/// <param name="stepContext">The <see cref="WaterfallStepContext"/> gives access to the executing dialog runtime.</param>
-/// <param name="cancellationToken">A <see cref="CancellationToken"/>.</param>
-/// <returns>A <see cref="DialogTurnResult"/> to communicate some flow control back to the containing WaterfallDialog.</returns>
 private async Task<DialogTurnResult> SummaryStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
 {
     if ((bool)stepContext.Result)
@@ -457,6 +411,7 @@ const AGE_PROMPT = 'age_prompt';
 ```
 
 Define and create the dialog set in the bot's constructor, adding the prompts and the waterfall dialogs to the set.
+The `NumberPrompt` includes custom validation to ensure that the user enters an age greater than 0.
 
 ```javascript
 constructor(conversationState, userState) {
@@ -474,7 +429,15 @@ constructor(conversationState, userState) {
     this.dialogs.add(new TextPrompt(NAME_PROMPT));
     this.dialogs.add(new ChoicePrompt(CONFIRM_PROMPT));
     this.dialogs.add(new NumberPrompt(AGE_PROMPT, async (prompt) => {
-        // Prompt validation code.
+        if (prompt.recognized.succeeded) {
+            if (prompt.recognized.value <= 0) {
+                await prompt.context.sendActivity(`Your age can't be less than zero.`);
+                return false;
+            } else {
+                return true;
+            }
+        }
+        return false;
     }));
 
     // Create a dialog that asks the user for their name.
@@ -560,7 +523,7 @@ There are various options for keeping dialog steps and bot state separate. For e
 
 ## Test your dialog
 
-Build and run your bot locally, then [interact with your bot using the Emulator](../bot-service-debug-emulator.md).
+Build and run your bot locally, then interact with your bot using the [Emulator](../bot-service-debug-emulator.md).
 
 # [C#](#tab/csharp)
 
@@ -584,17 +547,7 @@ Build and run your bot locally, then [interact with your bot using the Emulator]
 
 ---
 
-## Additional resources
-
-* About the [dialogs library](bot-builder-concept-dialog.md)
-* About [dialog state](bot-builder-dialog-state.md)
-* How to [design and control conversation flow](../bot-service-design-conversation-flow.md)
-* How to [prompt users for input using the Dialogs library](bot-builder-prompts.md)
-* How to [manage conversation and user state](bot-builder-howto-v4-state.md)
-
 ## Next steps
 
-Now that you've learned how to manage simple interactions, let's take a look at how you can leverage the _begin dialog_ and _replace dialog_ methods to handle more complex conversation flows.
-
 > [!div class="nextstepaction"]
-> [Manage complex conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md)
+> [Create advance conversation flow using branches and loops](bot-builder-dialog-manage-complex-conversation-flow.md)

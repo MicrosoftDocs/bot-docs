@@ -1,7 +1,7 @@
 ---
-title: Use dialog library to gather user input | Microsoft Docs
+title: Gather user input | Microsoft Docs
 description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK.
-keywords: prompts, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
+keywords: prompts, prompt, user input, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: JonathanFingold
 ms.author: v-jofing
 manager: kamrani
@@ -11,15 +11,11 @@ ms.subservice: sdk
 ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Use dialog library to gather user input
+# Gather user input
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 Gathering information by posting questions is one of the main ways a bot interacts with users. It is possible to do this directly by using the [turn context](~/v4sdk/bot-builder-basics.md#defining-a-turn) object's _send activity_ method and then process the next incoming message as the response. However, the Bot Builder SDK provides a [dialogs library](bot-builder-concept-dialog.md) that provides methods designed to make it easier to ask questions, and to make sure the response matches a specific data type or meets custom validation rules. This topic details how to achieve this using prompt objects to ask a user for input.
-
-This article describes how to create prompts and call them from within a dialog.
-For how to prompt for input without using dialogs, see [prompt the user for input using your own prompts](bot-builder-primitive-prompts.md).
-For how to use dialogs in general, see [use dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 ## Prompt types
 
@@ -47,7 +43,7 @@ A dialog can use a prompt only if both the dialog and prompt are in the same dia
 1. Define a state property accessor for your dialog state.
 1. Create a dialog set.
 1. Create your prompts, and add them to the dialog set.
-1. Create a dialog that will user your prompts, and add it to the dialog set.
+1. Create a dialog that will use your prompts, and add it to the dialog set.
 1. Within the dialog, add calls to the prompts and to retrieve the prompt results.
 
 This article discusses how to create your prompts and how to call them from a waterfall dialog.
@@ -425,13 +421,6 @@ Implement the party-size validator. We'll limit reservations to parties of 6 to 
 # [C#](#tab/csharp)
 
 ```csharp
-/// <summary>Validates whether the party size is appropriate to make a reservation.</summary>
-/// <param name="promptContext">The validation context.</param>
-/// <param name="cancellationToken">A cancellation token that can be used by other objects
-/// or threads to receive notice of cancellation.</param>
-/// <returns>A task that represents the work queued to execute.</returns>
-/// <remarks>Reservations can be made for groups of 6 to 20 people.
-/// If the task is successful, the result indicates whether the input was valid.</remarks>
 private async Task<bool> PartySizeValidatorAsync(
     PromptValidatorContext<int> promptContext,
     CancellationToken cancellationToken)
@@ -463,7 +452,7 @@ private async Task<bool> PartySizeValidatorAsync(
 
 ```javascript
 async partySizeValidator(promptContext) {
-    // Check whether the input could be recognized as an integer.
+    // Check whether the input could be recognized as date.
     if (!promptContext.recognized.succeeded) {
         await promptContext.context.sendActivity(
             "I'm sorry, I do not understand. Please enter the number of people in your party.");
@@ -497,13 +486,8 @@ This validation code is not exhaustive. It works best for input that parses to a
 # [C#](#tab/csharp)
 
 ```csharp
-/// <summary>Validates whether the reservation date is appropriate.</summary>
-/// <param name="promptContext">The validation context.</param>
-/// <param name="cancellationToken">A cancellation token that can be used by other objects
-/// or threads to receive notice of cancellation.</param>
-/// <returns>A task that represents the work queued to execute.</returns>
-/// <remarks>Reservations must be made at least an hour in advance.
-/// If the task is successful, the result indicates whether the input was valid.</remarks>
+// Validates whether the reservation date is appropriate.
+// Reservations must be made at least an hour in advance.
 private async Task<bool> DateValidatorAsync(
     PromptValidatorContext<IList<DateTimeResolution>> promptContext,
     CancellationToken cancellationToken = default(CancellationToken))
@@ -578,12 +562,7 @@ Use the prompts that we added to the dialog set. We added validation to the prom
 # [C#](#tab/csharp)
 
 ```csharp
-/// <summary>First step of the main dialog: prompt for party size.</summary>
-/// <param name="stepContext">The context for the waterfall step.</param>
-/// <param name="cancellationToken">A cancellation token that can be used by other objects
-/// or threads to receive notice of cancellation.</param>
-/// <returns>A task that represents the work queued to execute.</returns>
-/// <remarks>If the task is successful, the result contains information from this step.</remarks>
+// First step of the main dialog: prompt for party size.
 private async Task<DialogTurnResult> PromptForPartySizeAsync(
     WaterfallStepContext stepContext,
     CancellationToken cancellationToken = default(CancellationToken))
@@ -599,13 +578,8 @@ private async Task<DialogTurnResult> PromptForPartySizeAsync(
         cancellationToken);
 }
 
-/// <summary>Second step of the main dialog: record the party size and prompt for the
-/// reservation date.</summary>
-/// <param name="stepContext">The context for the waterfall step.</param>
-/// <param name="cancellationToken">A cancellation token that can be used by other objects
-/// or threads to receive notice of cancellation.</param>
-/// <returns>A task that represents the work queued to execute.</returns>
-/// <remarks>If the task is successful, the result contains information from this step.</remarks>
+// Second step of the main dialog: record the party size and prompt for the
+// reservation date.
 private async Task<DialogTurnResult> PromptForReservationDateAsync(
     WaterfallStepContext stepContext,
     CancellationToken cancellationToken = default(CancellationToken))
@@ -625,12 +599,7 @@ private async Task<DialogTurnResult> PromptForReservationDateAsync(
         cancellationToken);
 }
 
-/// <summary>Third step of the main dialog: return the collected party size and reservation date.</summary>
-/// <param name="stepContext">The context for the waterfall step.</param>
-/// <param name="cancellationToken">A cancellation token that can be used by other objects
-/// or threads to receive notice of cancellation.</param>
-/// <returns>A task that represents the work queued to execute.</returns>
-/// <remarks>If the task is successful, the result contains information from this step.</remarks>
+// Third step of the main dialog: return the collected party size and reservation date.
 private async Task<DialogTurnResult> AcknowledgeReservationAsync(
     WaterfallStepContext stepContext,
     CancellationToken cancellationToken = default(CancellationToken))
@@ -816,8 +785,6 @@ async onTurn(turnContext) {
 
 ---
 
-Further examples can be found in our [samples repo](https://aka.ms/bot-samples-readme).
-
 You can use the similar techniques to validate prompt responses for any of the prompt types.
 
 ## Handling prompt results
@@ -828,19 +795,10 @@ What you do with the prompt result depends on why you requested the information 
 * Cache the information in the dialog's state, such as setting a value in the waterfall step context's _values_ property, and then return the collected information when the dialog ends.
 * Save the information to bot state. This would require you to design your dialog to have access to the bot's state property accessors.
 
-See the additional resources for topics and samples that cover these scenarios.
-
 ## Additional resources
-
-* [Manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md)
-* [Manage complex conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md)
-* [Create an integrated set of dialogs](bot-builder-compositcontrol.md)
-* [Persist data in dialogs](bot-builder-tutorial-persist-user-inputs.md)
-* The **multi-turn prompt** sample ([C#](https://aka.ms/cs-multi-prompts-sample) | [JS](https://aka.ms/js-multi-prompts-sample))
+To learn more about multiple prompts, see samples in [[C#](https://aka.ms/cs-multi-prompts-sample) or [JS](https://aka.ms/js-multi-prompts-sample)].
 
 ## Next steps
 
-Now that you know how to prompt a user for input, lets enhance the bot code and user experience by managing various conversation flows through dialogs.
-
 > [!div class="nextstepaction"]
-> [Manage complex conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md)
+> [Implement basic sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md)
