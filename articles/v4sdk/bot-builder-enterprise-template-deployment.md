@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Deploying your Bot
 
 > [!NOTE]
-> This topics applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK. 
 
 ## Prerequisites
 
