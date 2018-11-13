@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/02/2018
+ms.date: 11/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -163,6 +163,12 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 ```
 
 # [JavaScript](#tab/javascript)
+
+The bot code uses a few of the classes in the dialogs library.
+
+```javascript
+const { ChoicePrompt, DialogSet, NumberPrompt, TextPrompt, WaterfallDialog } = require('botbuilder-dialogs');
+```
 
 The dialog is run from the bot's turn handler. The handler first creates a `DialogContext` (`dc`) and either continues the active dialog or begins a new dialog as appropriate. The handler then saves conversation and user state at the end of the turn.
 
@@ -405,6 +411,7 @@ const AGE_PROMPT = 'age_prompt';
 ```
 
 Define and create the dialog set in the bot's constructor, adding the prompts and the waterfall dialogs to the set.
+The `NumberPrompt` includes custom validation to ensure that the user enters an age greater than 0.
 
 ```javascript
 constructor(conversationState, userState) {
@@ -422,7 +429,15 @@ constructor(conversationState, userState) {
     this.dialogs.add(new TextPrompt(NAME_PROMPT));
     this.dialogs.add(new ChoicePrompt(CONFIRM_PROMPT));
     this.dialogs.add(new NumberPrompt(AGE_PROMPT, async (prompt) => {
-        // Prompt validation code.
+        if (prompt.recognized.succeeded) {
+            if (prompt.recognized.value <= 0) {
+                await prompt.context.sendActivity(`Your age can't be less than zero.`);
+                return false;
+            } else {
+                return true;
+            }
+        }
+        return false;
     }));
 
     // Create a dialog that asks the user for their name.
