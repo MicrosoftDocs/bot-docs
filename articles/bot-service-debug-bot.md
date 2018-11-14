@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 07/13/2018
+ms.date: 11/13/2018
 ---
 
 # Debug a Bot Service bot
@@ -24,7 +24,7 @@ Follow the steps in this section to debug a bot written in JavaScript.
 Before you can debug your JavaScript bot, you must complete these tasks.
 
 - Download the source code for your bot (from Azure), as described in [download bot source code](bot-service-build-download-source-code.md).
-- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases).
+- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Download and install a code editor such as <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>.
 
 ### Debug a JavaScript bot using command line and emulator
@@ -69,7 +69,7 @@ Follow the steps in this section to debug a bot written in C#.
 Before you can debug your web app C# bot, you must complete these tasks.
 
 - Download the source code for your bot (from Azure), as described in [download bot source code](bot-service-build-download-source-code.md).
-- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases).
+- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Download and install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> (Community Edition or above).
 
 ### Debug a C# bot using breakpoints in Visual Studio
@@ -105,7 +105,7 @@ The Consumption plan serverless C\# environment in Bot Service has more in commo
 Before you can debug your Consumption plan C# bot, you must complete these tasks.
 
 - Download the source code for your bot (from Azure), as described in [Set up continuous deployment](bot-service-continuous-deployment.md).
-- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases).
+- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Install the <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a>.
 - Install the <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a>.
   

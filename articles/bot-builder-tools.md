@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: tools
-ms.date: 11/07/2018
+ms.date: 11/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -223,7 +223,7 @@ See [Disptach CLI][dispatchCli] to learn more.
 
 ## Test
 
-The [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
+The Bot Framework [Emulator](bot-service-debug-emulator.md) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
 
 ## Publish
 

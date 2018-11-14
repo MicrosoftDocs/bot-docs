@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 08/30/2018
+ms.date: 11/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,7 +21,7 @@ This quickstart walks you through building a bot, and then testing it with the B
 
 ## Pre-requisite
 - [Python 3.6.4](https://www.python.org/downloads/) 
-- [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
+- Bot Framework [Emulator](https://aka.ms/Emulator-wiki-getting-started)
 
 ## Create a bot
 In the main.py file, import the following standard modules:
