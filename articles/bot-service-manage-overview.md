@@ -44,7 +44,7 @@ The **Application Settings** blade contains detailed information about your bot,
 
 ### MicrosoftAppID and MicrosoftAppPassword
 
-You can find the **MicrosoftAppID** and **MicrosoftAppPassword** for your bot in the **Application Settings** blade.
+You can find the **MicrosoftAppID** for your bot in the **Settings** blade. The **MicrosoftAppPassword** for your bot is only shown when you first create your bot.
 
 ![Microsoft AppID and Password](~/media/azure-manage-a-bot/app-settings.png)
 

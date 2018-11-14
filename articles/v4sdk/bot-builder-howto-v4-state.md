@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/08/18
+ms.date: 11/14/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -303,7 +303,9 @@ else {
 ---
 
 ## Start your bot
-Run your bot locally.
+- For JavaScript bot: In a terminal or command prompt change directories to the one created for your bot, and start it with `npm start`. At this point, your bot is running locally.
+
+- For C# bot: Run your bot locally with Visual Studio. Click the run button, Visual Studio will build the application, deploy it to localhost, and launch the web browser to display the applications ``default.htm`` page. At this point, your bot is running locally.
 
 ### Start the emulator and connect your bot
 Next, start the emulator and then connect to your bot in the emulator:
