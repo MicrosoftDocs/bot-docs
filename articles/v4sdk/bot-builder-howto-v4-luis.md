@@ -248,7 +248,7 @@ After following the instructions for creating your LUIS app and for updating you
 }
 ```
 
-In the **index.js** file, we read in the configuration information to generate the LUIS service and initialize the bot.
+In the **bot.js** file, we read in the configuration information to generate the LUIS service and initialize the bot.
 Update the value of `LUIS_CONFIGURATION` to the name of your LUIS app, as it appears in your configuration file.
 
 ```javascript
