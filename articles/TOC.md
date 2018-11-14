@@ -41,8 +41,8 @@
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### Manage conversations using the Dialogs library 
-#### [Gather user input](v4sdk/bot-builder-prompts.md)
 #### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
+#### [Gather user input using a dialog prompt](v4sdk/bot-builder-prompts.md)
 #### [Create advance conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 #### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 #### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
