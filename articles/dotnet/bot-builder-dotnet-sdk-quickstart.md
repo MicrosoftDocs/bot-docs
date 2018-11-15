@@ -19,7 +19,7 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 ## Prerequisites
 - Visual Studio [2017](https://www.visualstudio.com/downloads)
-- Bot Builder SDK v4 template for [C#](https://botbuilder.myget.org/feed/aitemplates/package/vsix/BotBuilderV4.fbe0fc50-a6f1-4500-82a2-189314b7bea2)
+- Bot Builder SDK v4 template for C#. Install the template by clicking Tools/Extensions & updates, then select "Online and search for "Bot Builder V4"
 - Bot Framework [Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
