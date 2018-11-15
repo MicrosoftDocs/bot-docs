@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 09/18/2018
+ms.date: 11/15/2018
 ---
 
 ::: moniker range="azure-bot-service-3.0"
@@ -80,17 +80,17 @@ In this topic, you learned how to create a **Basic** Web App Bot/Functions Bot b
 
 Azure Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Builder SDK v4.
 
-## Log in to Azure
-Log in to the [Azure portal](http://portal.azure.com).
+## Prerequisites
+- [Azure](http://portal.azure.com) account
 
-> [!TIP]
-> If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>.
+### Create a new bot service
 
-## Create a new bot service
+1. Log in to the [Azure portal](http://portal.azure.com/).
+1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning** > **Web App bot**. 
 
-1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**. 
+![create bot](~/media/azure-bot-quickstarts/abs-create-blade.png)
 
-2. A new blade will open with information about the **Web App Bot**.  
+2. A *new blade* will open with information about the **Web App Bot**.  
 
 3. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  <br/>
  ![Create Web App Bot blade](~/media/azure-bot-quickstarts/sdk-create-bot-service-blade.png)
@@ -127,6 +127,6 @@ Enter a message and your bot should respond.
 In this topic, you learned how to create a **Echo** Web App Bot by using Azure Bot Service and verified the bot's functionality by using the built-in Web Chat control. Now, learn how to manage your bot and start working with its source code.
 
 > [!div class="nextstepaction"]
-> [Manage a bot](bot-service-manage-overview.md)
+> [How bots work](~/v4sdk/bot-builder-basics.md)
 
 ::: moniker-end
