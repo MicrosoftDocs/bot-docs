@@ -53,8 +53,8 @@ We need to define classes for job data and job state. We also need to register o
 
 ### Define a class for job data
 
-The `JobLog` class tracks job data, indexed by job number (the time-stamp). The `JobLog` class tracks all the outstanding jobs.  Each job is identified by a unique key. `JobData` describes the state of a job and is defined as an inner class of a dictionary.
-
+The `JobLog` class tracks job data, indexed by job number (the time-stamp). The `JobLog` class tracks all the outstanding jobs.  Each job is identified by a unique key. `JobData` describes 
+the state of a job and is defined as an inner class of a dictionary.
 
 ```csharp
 public class JobLog : Dictionary<long, JobLog.JobData>
@@ -169,6 +169,9 @@ The bot has a few aspects:
 - methods for creating and completing the jobs
 
 ### Declare the class
+
+Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. 
+Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
 
 Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. 
 Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
@@ -294,7 +297,9 @@ private static async Task SendWelcomeMessageAsync(ITurnContext turnContext)
     }
 }
 ```
+
 ### Handle non-message activities
+
 On a job completed event, mark the job as complete and notify the user.
 
 ```csharp
@@ -346,7 +351,9 @@ private JobLog.JobData CreateJob(ITurnContext turnContext, JobLog jobLog)
     return jobInfo;
 }
 ```
+
 ### Sends a proactive message to the user
+
 ```csharp
 private async Task CompleteJobAsync(
     BotAdapter adapter,
@@ -357,7 +364,9 @@ private async Task CompleteJobAsync(
     await adapter.ContinueConversationAsync(botId, jobInfo.Conversation, CreateCallback(jobInfo), cancellationToken);
 }
 ```
+
 ### Creates the turn logic to use for the proactive message
+
 ```csharp
 private BotCallbackHandler CreateCallback(JobLog.JobData jobInfo)
 {
