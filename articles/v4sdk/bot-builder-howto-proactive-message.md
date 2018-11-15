@@ -55,6 +55,7 @@ We need to define classes for job data and job state. We also need to register o
 
 The `JobLog` class tracks job data, indexed by job number (the time-stamp). The `JobLog` class tracks all the outstanding jobs.  Each job is identified by a unique key. `JobData` describes the state of a job and is defined as an inner class of a dictionary.
 
+
 ```csharp
 public class JobLog : Dictionary<long, JobLog.JobData>
 {
@@ -123,11 +124,12 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 # [JavaScript](#tab/javascript)
- 
+
 A bot requires a state storage system to persist the dialog and user state between messages, which in this case is defined using in-memory storage provider. 
 
 ```javascript
 // index.js 
+
 
 const memoryStorage = new MemoryStorage();
 const botState = new BotState(memoryStorage, () => 'proactiveBot.botState');
@@ -167,12 +169,13 @@ The bot has a few aspects:
 - methods for creating and completing the jobs
 
 #### Declare the class
-Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
+
+Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. 
+Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
 
 ```csharp
 namespace Microsoft.BotBuilderSamples
 {
-   
     public class ProactiveBot : IBot
     {
         // The name of events that signal that a job has completed.
