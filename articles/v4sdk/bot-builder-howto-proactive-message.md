@@ -1,5 +1,5 @@
 ---
-title: Get notification from a bot| Microsoft Docs
+title: Get notification from bots| Microsoft Docs
 description: Understand how to send notification messages
 keywords: proactive message, notification message, bot notification, 
 author: jonathanfingold
@@ -12,7 +12,7 @@ ms.date: 11/15/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Get notification from a bot
+# Get notification from bots
 
 [!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
 

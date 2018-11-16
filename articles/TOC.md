@@ -37,7 +37,7 @@
 ### [Prompt user for input](v4sdk/bot-builder-primitive-prompts.md) 
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 <!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
-### [Get notification from bot](v4sdk/bot-builder-howto-proactive-message.md)
+### [Get notification from bots](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### Manage conversations using the Dialogs library 
