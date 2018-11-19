@@ -79,7 +79,7 @@ Add the information required to access your LUIS app including application id, a
 # [C#](#tab/cs)
 
 ## Configure your bot to use your LUIS app
-Next, we initialize a new instance of the BotService class `BotServices.cs`, which grabs the above information from your `.bot` file. The external service is configured using the `BotConfiguration` class.
+Next, we initialize a new instance of the BotService class in `BotServices.cs`, which grabs the above information from your `.bot` file. The external service is configured using the `BotConfiguration` class.
 
 ```csharp
 public class BotServices
@@ -435,7 +435,7 @@ When gathering information like entities from multiple steps in a conversation, 
 /Snip -->
 
 ## Test the bot
-1. Run the sample locally on your machine. If you need instructions, refer to the readme file for [C#](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/12.nlp-with-luis/README.md) or [JS](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/12.nlp-with-luis/README.MD) sample.
+1. Run the sample locally on your machine. If you need instructions, refer to the readme file for [C#](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/12.nlp-with-luis/README.md) or [JS](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/12.nlp-with-luis/README.md) sample.
 1. In the emulator, type a message as shown below. 
 
 ![test nlp sample](~/media/emulator-v4/nlp-luis-sample-testing.png)
