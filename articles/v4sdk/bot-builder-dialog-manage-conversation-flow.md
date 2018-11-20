@@ -208,8 +208,6 @@ In this bot, we've defined two state property accessors:
 
 The _get_ and _set_ methods of a state property accessor get and set the value of the property in the state management object's cache. The cache is populated the first time the value of a state property is requested in a turn, but it must be persisted explicitly. In order to persist changes to both of these state properties, we call the _save changes_ method of the corresponding state management object.
 
-For more information, see [dialog state](bot-builder-dialog-state.md).
-
 ## Initialize your bot and define your dialog
 
 Our simple conversation is modeled as a series of questions posed to the user. The C# and JavaScript versions have slightly different steps:
@@ -240,7 +238,7 @@ For the `hello_user` dialog:
 Here are a couple things things to remember when defining your own waterfall steps.
 
 * Each bot turn reflects input from the user, followed by a response from the bot. Thus, you are asking the user for input at the end of a waterfall step, and receiving their answer in the next waterfall step.
-* Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. (You can rely on the built-in validation for each type of prompt, or you can add your own custom validation to the prompt. For more information, see [get user input](bot-builder-prompts.md).)
+* Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. 
 
 In this sample, the dialog is defined within the bot file and initialized in the bot's constructor.
 
@@ -531,6 +529,9 @@ Build and run your bot locally, then interact with your bot using the Emulator.
    * The bot starts the one-step `hello_user` dialog, which displays information from the collected data and immediately ends.
 
 ---
+
+## Additional resources
+You can rely on the built-in validation for each type of prompt as shown here, or you can add your own custom validation to the prompt. For more information, see [gather user input using a dialog prompt](bot-builder-prompts.md).
 
 ## Next steps
 
