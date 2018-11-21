@@ -15,12 +15,12 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Gathering information by posting questions is one of the main ways a bot interacts with users. The Dialogs library make it easy to ask questions, and to make sure the response matches a specific data type or meets custom validation rules. This topic details how to create and call prompts from a waterfall dialog.
+Gathering information by posing questions is one of the main ways a bot interacts with users. The *dialogs* library makes it easy to ask questions, as well as validate the response to make sure it matches a specific data type or meets custom validation rules. This topic details how to create and call prompts from a waterfall dialog.
 
 ## Prerequisites
 - The code in this article is based on the dialog-prompt sample. You'll need a copy of the sample in either [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
 - A basic understanding of the [dialogs library](bot-builder-concept-dialog.md) and how to [manage conversations](bot-builder-dialog-manage-conversation-flow.md) is required. 
-- [Bot Framework Emulator]() for testing.
+- [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator) for testing.
 
 ## About prompt types
 
@@ -35,16 +35,21 @@ Behind the scenes, prompts are a two-step dialog. First, the prompt asks for inp
 | _Number prompt_ | Asks for a number. | A numeric value. |
 | _Text prompt_ | Asks for general text input. | A string. |
 
-To prompt a user for input, define a prompt using one of the built-in classes, such as the _text prompt_, and add it to your dialog set. Prompts have fixed IDs that must be unique within a dialog set. You can have a custom validator for each prompt, and for some prompts, you can specify a _default locale_. The locale is used to determine language-specific behavior of the **choice**, **confirm**, **date-time**, and **number** prompts. For any given input from the user, if the channel provided a _locale_ property in user's message, then that is used. Otherwise, if the prompt's _default locale_ is set, by providing it when calling the prompt's constructor or by setting it later, then that is used. Otherwise, English ("en-us") is used as the locale. Note: The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.
+To prompt a user for input, define a prompt using one of the built-in classes, such as the _text prompt_, and add it to your dialog set. Prompts have fixed IDs that must be unique within a dialog set. You can have a custom validator for each prompt, and for some prompts, you can specify a _default locale_. 
+
+### Prompt locale
+
+The locale is used to determine language-specific behavior of the **choice**, **confirm**, **date-time**, and **number** prompts. For any given input from the user, if the channel provided a _locale_ property in user's message, then that is used. Otherwise, if the prompt's _default locale_ is set, by providing it when calling the prompt's constructor or by setting it later, then that is used. If neither of those are provided, English ("en-us") is used as the locale. Note: The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.
 
 ## Using prompts
 
 A dialog can use a prompt only if both the dialog and prompt are in the same dialog set. You can use the same prompt in multiple steps within a dialog and in multiple dialogs in the same dialog set. However, you associate custom validation with a prompt at initialization time. To use different validation for the same type of prompt, you need multiple instances of the prompt type, each with its own validation code.
 
 ### Define a state property accessor for the dialog state
+
 # [C#](#tab/csharp)
 
-The Dialog Prompt sample used in this article prompts user for reservation information. To manage party size and date, we define an inner class for reservation information in the DialogPromptBot.cs file.
+The Dialog Prompt sample used in this article prompts the user for reservation information. To manage party size and date, we define an inner class for reservation information in the DialogPromptBot.cs file.
 
 ```csharp
 public class Reservation
@@ -143,7 +148,7 @@ private const string ReservationDatePrompt = "reservationDatePrompt";
 private readonly DialogSet _dialogSet;
 ```
 
-In the bot's constructor, create the dialog set, add the prompts, and add the reservation dialog. We include the custom validation when we create the prompts. We will implement the validation functions later.
+In the bot's constructor, create the dialog set, add the prompts, and add the reservation dialog. We include the custom validation when we create the prompts, and we will implement the validation functions later.
 
 ```csharp
 // The following code creates prompts and adds them to an existing dialog set. The DialogSet contains all the dialogs that can 
@@ -211,11 +216,14 @@ Then define the steps of the waterfall dialog and add it to the set.
 ```
 
 ---
+
 ### Implement dialog steps
 
-In the DialogPromptBot.cs file, we implment `PromptForPartySizeAsync`, `PromptForLocationAsync`, `PromptForReservationDateAsync`, and `AcknowledgeReservationAsync` steps of the waterfall dialog. After a prompt is added, we call it in one step of a waterfall dialog, and get the prompt result in the following dialog step. To call a prompt from within a waterfall step, call the _waterfall step context_ object's _prompt_ method. The first parameter is the ID of the prompt to use, and the second parameter contains the options for the prompt, such as the text used to ask the user for input.     
+In the main bot file, we implement each of our steps of the waterfall dialog. After a prompt is added, we call it in one step of a waterfall dialog, and get the prompt result in the following dialog step. To call a prompt from within a waterfall step, call the _waterfall step context_ object's _prompt_ method. The first parameter is the ID of the prompt to use, and the second parameter contains the options for the prompt, such as the text used to ask the user for input.     
 
 # [C#](#tab/csharp)
+
+In the DialogPromptBot.cs file, we implment `PromptForPartySizeAsync`, `PromptForLocationAsync`, `PromptForReservationDateAsync`, and `AcknowledgeReservationAsync` steps of the waterfall dialog.
 
 Here we are only showing `PromptForPartySizeAsync` and `PromptForLocationAsync` that are two consecutive step delegates of a waterfall dialog.
 
@@ -292,7 +300,7 @@ In general, the prompt and retry prompt properties are activities, though there 
 
 You should always specify the initial prompt activity to send the user.
 
-Specifying a retry prompt is useful when the user's input can fail to validate, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt activity to re-prompt the user for input.
+Specifying a retry prompt is useful for when the user's input fails to validate, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt activity to re-prompt the user for input.
 
 For a choice prompt, you should always provide the list of available choices.
 
@@ -380,9 +388,10 @@ async partySizeValidator(promptContext) {
 ```
 
 ---
+
 **Date time validation**
 
-In the reservation date validator, we limit reservations to an hour or more from the current time. We are keeping the first resolution that matches our criteria, and clearing the rest. The validation code below is not exhaustive. It works best for input that parses to a date and time. It demonstrates some of the options for validating a date-time prompt, and your implementation will depend on what information you are trying to collect from the user.
+In the reservation date validator, we limit reservations to an hour or more from the current time. We are keeping the first resolution that matches our criteria, and clearing the rest. The validation code below is not exhaustive, and it works best for input that parses to a date and time. It does demonstrate some of the options for validating a date-time prompt, and your implementation will depend on what information you are trying to collect from the user.
 
 # [C#](#tab/csharp)
 
@@ -478,7 +487,7 @@ Update the bot's turn handler to start the dialog and accept a return value from
 
 What you do with the prompt result depends on why you requested the information from the user. Options include:
 
-* Use the information to control the flow of your dialog, such as when the user responses to a confirm or choice prompt.
+* Use the information to control the flow of your dialog, such as when the user responds to a confirm or choice prompt.
 * Cache the information in the dialog's state, such as setting a value in the waterfall step context's _values_ property, and then return the collected information when the dialog ends.
 * Save the information to bot state. This would require you to design your dialog to have access to the bot's state property accessors. 
 
