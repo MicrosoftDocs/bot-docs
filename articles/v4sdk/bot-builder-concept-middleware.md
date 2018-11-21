@@ -79,5 +79,15 @@ In addition to the application and middleware logic, response handlers (also som
 Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
 The handlers registered on a context object are handled very similarly to how the adapter manages the manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
 
+## Handling state in middleware
+
+A common method to save state is to call the save changes method at the end of the turn handler. Here is a diagram with a focus on the call.
+
+![state middleware issues](media/bot-builder-dialog-state-problem.png)
+
+The problem with this approach is that any state updates made from some custom middleware that happens after the bot’s turn handler has returned will not be saved to durable storage. The solution is to move the call to the save changes method to after the custom middleware has completed by adding AutoSaveChangesMiddleware to the beginning of the middleware stack, or at least before any of the middleware that might update state. The execution is shown below.
+
+![state middleware solution](media/bot-builder-dialog-state-solution.png)
+
 ## Additional resources
 You can take a look at the transcript logger middleware, as implemented in the Bot Builder SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs) | [JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].
