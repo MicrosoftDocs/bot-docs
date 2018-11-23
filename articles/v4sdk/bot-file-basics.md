@@ -1,5 +1,5 @@
 ---
-title: Manage bot resources with a bot file | Microsoft Docs
+title: Manage resources with a .bot file | Microsoft Docs
 description: Describes the purpose and use of bot file.
 keywords: bot file, .bot, .bot file, msbot, bot resources, manage bot resources
 author: ivorb
@@ -8,11 +8,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/13/2018
+ms.date: 11/23/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Manage bot resources with a bot file
+# Manage resources with a .bot file
 
 Bots usually consume lots of different services, such as [LUIS.ai](https://luis.ai) or [QnaMaker.ai](https://qnamaker.ai). When you are developing a bot, there is no uniform place to store the metadata about the services that are in use.  This prevents us from building tooling that looks at a bot as a whole.
 
