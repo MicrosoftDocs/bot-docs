@@ -18,28 +18,9 @@ monikerRange: 'azure-bot-service-4.0'
 Gathering information by posing questions is one of the main ways a bot interacts with users. The *dialogs* library makes it easy to ask questions, as well as validate the response to make sure it matches a specific data type or meets custom validation rules. This topic details how to create and call prompts from a waterfall dialog.
 
 ## Prerequisites
-- The code in this article is based on the dialog-prompt sample. You'll need a copy of the sample in either [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
+- The code in this article is based on the **DialogPromptBot** sample. You'll need a copy of the sample in either [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
 - A basic understanding of the [dialogs library](bot-builder-concept-dialog.md) and how to [manage conversations](bot-builder-dialog-manage-conversation-flow.md) is required. 
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator) for testing.
-
-## About prompt types
-
-Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or restarts from the top with a re-prompt. The dialogs library offers a number of basic prompts, each used for collecting a different type of response. The basic prompts can interpret natural language input, such as "ten" or "a dozen" for a number, or "tomorrow" or "Friday at 10am" for a date-time.
-
-| Prompt | Description | Returns |
-|:----|:----|:----|
-| _Attachment prompt_ | Asks for one or more attachments, such as a document or image. | A collection of _attachment_ objects. |
-| _Choice prompt_ | Asks for a choice from a set of options. | A _found choice_ object. |
-| _Confirm prompt_ | Asks for a confirmation. | A Boolean value. |
-| _Date-time prompt_ | Asks for a date-time. | A collection of _date-time resolution_ objects. |
-| _Number prompt_ | Asks for a number. | A numeric value. |
-| _Text prompt_ | Asks for general text input. | A string. |
-
-To prompt a user for input, define a prompt using one of the built-in classes, such as the _text prompt_, and add it to your dialog set. Prompts have fixed IDs that must be unique within a dialog set. You can have a custom validator for each prompt, and for some prompts, you can specify a _default locale_. 
-
-### Prompt locale
-
-The locale is used to determine language-specific behavior of the **choice**, **confirm**, **date-time**, and **number** prompts. For any given input from the user, if the channel provided a _locale_ property in user's message, then that is used. Otherwise, if the prompt's _default locale_ is set, by providing it when calling the prompt's constructor or by setting it later, then that is used. If neither of those are provided, English ("en-us") is used as the locale. Note: The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.
 
 ## Using prompts
 
