@@ -18,6 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 Gathering information by posing questions is one of the main ways a bot interacts with users. The *dialogs* library makes it easy to ask questions, as well as validate the response to make sure it matches a specific data type or meets custom validation rules. This topic details how to create and call prompts from a waterfall dialog.
 
 ## Prerequisites
+
 - The code in this article is based on the **DialogPromptBot** sample. You'll need a copy of the sample in either [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
 - A basic understanding of the [dialogs library](bot-builder-concept-dialog.md) and how to [manage conversations](bot-builder-dialog-manage-conversation-flow.md) is required. 
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator) for testing.
