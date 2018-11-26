@@ -44,7 +44,8 @@ To create a new bot project using the template, simply open Visual Studio, and s
 
 Now that your have your project created the next step is to create the supporting Azure infrastructure and perform configuration/deployment enabling the Bot to work right out of the box. Continue with [Deploy the Bot](bot-builder-enterprise-template-deployment.md).
 
-> You must run this step otherwise Bot initalization (AppInsights) and LUIS dependencies will not be available.
+> You must run this step otherwise your Bot's dependencies (Azure Bot Service, Application Insights, LUIS, etc) will not be available.
+
 ## Customize your Bot
 
 After you verify that you have successfully deployed the Bot out of the box, you can customize the bot for your scenario and needs. Continue with [Customize the Bot](bot-builder-enterprise-template-customize.md).
