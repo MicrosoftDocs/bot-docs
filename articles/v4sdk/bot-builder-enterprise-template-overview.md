@@ -27,11 +27,11 @@ Basic conversational intents  | Base intents (Greeting, Goodbye, Help, Cancel, e
 Basic conversational responses  | Responses to basic conversational intents abstracted into separate View classes. These will move to the new language generation (LG) files in the future.
 Inappropriate content or PII (personally identifiable information) detection  |Detect inappropriate or PII data in incoming conversations through use of [Content Moderator](https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/) in a middleware component.
 Transcripts  | Transcripts of all conversation stored in Azure Storage
-Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS + Code or passed to QnAMaker.
-QnAMAker Integration  | Integration with [QnAMaker](https://www.qnamaker.ai) to answer general questions from a Knowledgebase which can be leverage existing data sources (e.g. PDF manuals).
+Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS + Code or passed to QnA Maker.
+QnA Maker Integration  | Integration with [QnA Maker](https://www.qnamaker.ai) to answer general questions from a Knowledgebase which can be leverage existing data sources (e.g. PDF manuals).
 Conversational Insights  | Integration with [Application Insights](https://azure.microsoft.com/en-gb/services/application-insights/) to collect telemetry for all conversations and an example PowerBI dashboard to get you started with insights into your conversational experiences.
 
-In addition, all of the Azure resources required for the Bot are automatically deployed: Bot registration, Azure App Service, LUIS, QnAMaker, Content Moderator, CosmosDB, Azure Storage, and Application Insights. Additionally, base LUIS, QnAMaker, and Dispatch models are created, trained, and published to enable immediate testing of basic intents and routing.
+In addition, all of the Azure resources required for the Bot are automatically deployed: Bot registration, Azure App Service, LUIS, QnA Maker, Content Moderator, CosmosDB, Azure Storage, and Application Insights. Additionally, base LUIS, QnA Maker, and Dispatch models are created, trained, and published to enable immediate testing of basic intents and routing.
 
 Once the template is created and deployment steps are executed you can hit F5 to test end-to-end. This provides a solid base from which to start your conversational experience, reducing multiple days' worth of effort that each project had to undertake and raises the conversational quality bar.
 
