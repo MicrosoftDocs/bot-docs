@@ -235,7 +235,7 @@ For the `hello_user` dialog:
 
 ---
 
-Here are a couple things things to remember when defining your own waterfall steps.
+Here are a couple of things to remember when defining your own waterfall steps.
 
 * Each bot turn reflects input from the user, followed by a response from the bot. Thus, you are asking the user for input at the end of a waterfall step, and receiving their answer in the next waterfall step.
 * Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. 

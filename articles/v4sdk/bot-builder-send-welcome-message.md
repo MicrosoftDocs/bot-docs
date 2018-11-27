@@ -128,7 +128,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
                     await turnContext.SendActivityAsync($"Hi there - {member.Name}. Welcome to the 'Welcome User' Bot. This bot will introduce you to welcoming and greeting users.", cancellationToken: cancellationToken);
-                    await turnContext.SendActivityAsync($"You are seeing this message because the bot recieved atleast one 'ConversationUpdate' event,indicating you (and possibly others) joined the conversation. If you are using the emulator, pressing the 'Start Over' button to trigger this event again. The specifics of the 'ConversationUpdate' event depends on the channel. You can read more information at https://aka.ms/about-botframewor-welcome-user", cancellationToken: cancellationToken);
+                    await turnContext.SendActivityAsync($"You are seeing this message because the bot recieved at least one 'ConversationUpdate' event,indicating you (and possibly others) joined the conversation. If you are using the emulator, pressing the 'Start Over' button to trigger this event again. The specifics of the 'ConversationUpdate' event depends on the channel. You can read more information at https://aka.ms/about-botframewor-welcome-user", cancellationToken: cancellationToken);
                     await turnContext.SendActivityAsync($"It is a good pattern to use this event to send general greeting to user, explaning what your bot can do. In this example, the bot handles 'hello', 'hi', 'help' and 'intro. Try it now, type 'hi'", cancellationToken: cancellationToken);
                 }
             }
@@ -143,7 +143,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
 This JavaScript code sends a welcome message when a user is added. This is done by checking the conversation activity and verify that a new member was added to the conversation.
 
-``` javascript
+```javascript
 // Import required Bot Framework classes.
 const { ActivityTypes } = require('botbuilder');
 const { CardFactory } = require('botbuilder');
@@ -207,7 +207,7 @@ class MainDialog {
                     // Because the TurnContext was bound to this function, the bot can call
                     // `TurnContext.sendActivity` via `this.sendActivity`;
                     await this.sendActivity(`Welcome to the 'Welcome User' Bot. This bot will introduce you to welcoming and greeting users.`);
-                    await this.sendActivity("You are seeing this message because the bot recieved atleast one 'ConversationUpdate'" + 
+                    await this.sendActivity("You are seeing this message because the bot recieved at least one 'ConversationUpdate'" + 
                                             "event,indicating you (and possibly others) joined the conversation. If you are using the emulator, "+ 
                                             "pressing the 'Start Over' button to trigger this event again. The specifics of the 'ConversationUpdate' "+
                                             "event depends on the channel. You can read more information at https://aka.ms/about-botframewor-welcome-user");
@@ -292,7 +292,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
 ## [JavaScript](#tab/jsmulti)
 
-``` javascript
+```javascript
 class MainDialog 
 { 
     // Previous Code Sample
@@ -367,7 +367,7 @@ Next, we can send the card by using the following await command. Let's put this 
 ```csharp
 switch (text)
 {
-    case "hello":"
+    case "hello":
     case "hi":
         await turnContext.SendActivityAsync($"You said {text}.", cancellationToken: cancellationToken);
         break;
@@ -386,14 +386,14 @@ switch (text)
 
 First we want to add our Adaptive Card to the bot at the top of our _index.js_ right below our Imports.
 
-``` javascript
+```javascript
 // Adaptive Card content
 const IntroCard = require('./Resources/IntroCard.json');
 ```
 
 Next we can simply use the below code in our _switch (text)_ _case "help"_ section of our bot to respond to the users prompt with the adaptive card.
 
-``` javascript
+```javascript
 switch (text) 
 {
     case "hello":

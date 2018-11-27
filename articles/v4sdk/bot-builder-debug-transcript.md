@@ -45,8 +45,8 @@ To retrieve a bot transcript file using the Bot Framework Emulator, select the _
 ![retrieve saved transcript](./media/emulator_transcript_retrieve.png)
 
 ## Debug using transcript file
-With your transcript file loaded, you are now ready to debug interactions that you captured between a user and your bot. To do this, simply click on any event or activity recorded in the _LOG_ section shown in the lower right area of the emulator. In the example shown below, we selected the user's first interation when they sent the message "Hello". When we do this, all of the information in your transcript file concerning this specific interaction is displayed in the emulator's _INSPECTOR_ window in JSON format. Looking at some of these values from the bottom upward, we see the:
-* Interation type was _message_.
+With your transcript file loaded, you are now ready to debug interactions that you captured between a user and your bot. To do this, simply click on any event or activity recorded in the _LOG_ section shown in the lower right area of the emulator. In the example shown below, we selected the user's first interaction when they sent the message "Hello". When we do this, all of the information in your transcript file concerning this specific interaction is displayed in the emulator's _INSPECTOR_ window in JSON format. Looking at some of these values from the bottom upward, we see the:
+* Interaction type was _message_.
 * Time the message was sent.
 * Plain text sent contained "Hello".
 * Message was sent to our bot.
