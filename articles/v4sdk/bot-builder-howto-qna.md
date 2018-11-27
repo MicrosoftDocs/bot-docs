@@ -129,7 +129,7 @@ public class QnABot : IBot
 {
     public static readonly string QnAMakerKey = "QnABot";
     private const string WelcomeText = @"This bot will introduce you to QnA Maker.
-                                         Ask a quesiton to get started.";
+                                         Ask a question to get started.";
     private readonly BotServices _services;
     public QnABot(BotServices services)
     {

@@ -31,7 +31,7 @@ There are plenty of situations that require your bot to do something on every ac
 ### Modifying or enhancing the turn context
 Certain conversations can be much more fruitful if the bot has more information than what is provided in the activity. Middleware in this case could look at the conversation state information it has so far, query an external data source, and append that to the [turn context](~/v4sdk/bot-builder-basics.md#defining-a-turn) object before passing execution on to the bot logic. 
 
-The SDK defines logging middleware that can record incoming and outgoing activities, but You can also define your own middleware.
+The SDK defines logging middleware that can record incoming and outgoing activities, but you can also define your own middleware.
 
 ## The bot middleware pipeline
 For each activity, the adapter calls middleware in the order in which you added it. The adapter passes in the context object for the turn and a _next_ delegate, and the middleware calls the delegate to pass control to the next middleware in the pipeline. Middleware also has an opportunity to do things after the _next_ delegate returns before completing the method. You can think of it as each middleware object has the first-and-last chance to act with respect to the middleware objects that follow it in the pipeline.
@@ -77,7 +77,7 @@ In addition to the application and middleware logic, response handlers (also som
 > Be careful to not call an activity response method from within it's respective response event handler, for example, calling the send activity method from within an on send activity handler. Doing so can generate an infinite loop.
 
 Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
-The handlers registered on a context object are handled very similarly to how the adapter manages the manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
+The handlers registered on a context object are handled very similarly to how the adapter manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
 
 ## Handling state in middleware
 
