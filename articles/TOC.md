@@ -10,7 +10,7 @@
 ## [Use LUIS and QnA services with the Dispatch tool](v4sdk/bot-builder-tutorial-dispatch.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
-## [Samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/readme.md)
+## [Samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
 # Concepts
 ## [How bots work](v4sdk/bot-builder-basics.md)
 ## [Manage bot resources with a bot file](v4sdk/bot-file-basics.md)
