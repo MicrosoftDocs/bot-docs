@@ -28,7 +28,13 @@ As it pertains to bots, there are a few layers to using state which we'll cover 
 
 Starting at the backend, where the state information is actually stored, is our *storage layer*. This can be thought of as our physical storage, such as in-memory, Azure, or a third party server.
 
-The Bot Framework SDK provides implementations of the storage layer, such as in-memory storage, for testing locally, and Azure Storage or CosmosDB, for testing and deployment to the cloud.
+The Bot Framework SDK includes some implementations for the storage layer:
+
+- **Memory storage** implements in-memory storage for testing purposes. In-memory data storage is intended for local testing only as this storage is volatile and temporary. The data is cleared each time the bot is restarted.
+- **Azure Blob Storage** connects to an Azure Blob Storage object database.
+- **Azure Cosmos DB storage** connects to a Cosmos DB NoSQL database.
+
+For instructions on how to connect to other storage options, see [write directly to storage](bot-builder-howto-v4-storage.md).
 
 ## State management
 
@@ -40,7 +46,7 @@ These state properties are lumped into scoped "buckets", which are just collecti
 - Conversation state
 - Private conversation state
 
-All of these buckets are subclasses of the *bot state* class, which can be derived to define other types of buckets.
+All of these buckets are subclasses of the *bot state* class, which can be derived to define other types of buckets with different scopes.
 
 These predifined buckets are scoped to a certain visibility, depending on the bucket:
 
@@ -48,13 +54,40 @@ These predifined buckets are scoped to a certain visibility, depending on the bu
 - Conversation state is available in any turn in a specific conversation, regardless of user (i.e. group conversations)
 - Private conversation state is scoped to both the specific conversation and to that specific user
 
+> [!TIP]
+> Both user and conversation state are scoped by channel.
+> The same person using different channels to access your bot appears as different users, one for each channel, and each with a distinct user state.
+
 The keys used for each of these predefined buckets are specific to the user and conversation, or both. When setting the value of your state property, the key is defined for you internally with information contained on the turn context to ensure that each user or conversation gets placed in the correct bucket and property. Specifically, the keys are defined as follows:
 
 - The user state creates a key using the *channel ID* and *from ID*. For example, _{Activity.ChannelId}/users/{Activity.From.Id}#YourPropertyName_
 - The conversation state creates a key using the *channel ID* and the *conversation ID*. For example, _{Activity.ChannelId}/conversations/{Activity.Conversation.Id}#YourPropertyName_
 - The private conversation state creates a key using the *channel ID*, *from ID* and the *conversation ID*. For example, _{Activity.ChannelId}/conversations/{Activity.Conversation.Id}/users/{Activity.From.Id}#YourPropertyName_
 
+### When to use each type of state
+
+Conversation state is good for tracking the context of the conversation, such as:
+
+- Whether the bot asked the user a question, and which question that was
+- What the current topic of conversation is, or what the last one was
+
+User state is good for tracking information about the user, such as:
+
+- Non-critical user information, such as name and preferences, an alarm setting, or an alert preference
+- Information about the last conversation they had with the bot
+  - For instance, a product-support bot might track which products the user has asked about.
+
+Private conversation state is good for channels that support group conversations, but where you want to track both user and conversation specific information. For example, if you had a classroom clicker bot:
+
+- The bot could aggregate and display student responses for a given question.
+- The bot could aggregate each student's performance and privately relay that back to them at the end of the session.
+
 For details on using these predefined buckets, see the [state how-to article](bot-builder-howto-v4-state.md).
+
+### Connecting to multiple databases
+
+If your bot needs to connect to multiple databases, create a storage layer for each database.
+For each storage layer, create the state management objects you need to support your state properties.
 
 ## State property accessors
 
@@ -73,15 +106,15 @@ To persist any changes you make to the state property you get from the accessor,
 
 The accessor methods are the primary way for your bot to interact with state. How each work, and how the underlying layers interact, are as follows:
 
-- Accessor's *get*
-    - Accessor requests property from the state cache
-    - If the property is in the cache, return it. Otherwise, get it from the state management object.
-        - If it is not yet in state, use the factory method provided in the accessors *get* call.
-- Accessor's *set*
-    - Update the state cache with the new property value.
-- State management object's *save changes*
-    - Check the changes to the property in the state cache.
-    - Write that property to storage.
+- The accessor's *get* method:
+  - Accessor requests property from the state cache.
+  - If the property is in the cache, return it. Otherwise, get it from the state management object.
+    (If it is not yet in state, use the factory method provided in the accessors *get* call.)
+-The accessor's *set* method:
+  - Update the state cache with the new property value.
+- The state management object's *save changes* method:
+  - Check the changes to the property in the state cache.
+  - Write that property to storage.
 
 ## Saving state
 
