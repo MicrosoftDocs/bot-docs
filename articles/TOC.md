@@ -7,7 +7,7 @@
 ### [.NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ### [JavaScript](javascript/bot-builder-javascript-quickstart.md)
 # Tutorials
-## [Use LUIS and QnA services with the Dispatch tool](v4sdk/bot-builder-tutorial-dispatch.md)
+## [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
 ## [Samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/readme.md)
