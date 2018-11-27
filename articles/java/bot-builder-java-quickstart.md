@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 08/30/2018
+ms.date: 11/13/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 The Java SDK v4 consists of a series of [libraries](https://github.com/Microsoft/botbuilder-java/tree/master/libraries). To build them locally, see [Building the SDK](https://github.com/Microsoft/botbuilder-java/wiki/building-the-sdk).
 
-- Install [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
+- Install the Bot Framework [Emulator](https://aka.ms/Emulator-wiki-getting-started)
 
 ## Create EchoBot
 

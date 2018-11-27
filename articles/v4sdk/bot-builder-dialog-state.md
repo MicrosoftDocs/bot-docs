@@ -1,17 +1,9 @@
 ---
-title: Dialog State | Microsoft Docs
-description: Describes how state works within the Bot Builder SDK.
-keywords: state, bot state, conversation state, user state
-author: johnataylor
-ms.author: johtaylo
-manager: kamrani
-ms.topic: article
-ms.service: bot-service
-ms.subservice: sdk
-ms.date: 9/21/2018
-monikerRange: 'azure-bot-service-4.0'
+redirect_url: /bot-framework/bot-builder-concept-state
 ---
 
+
+<!--
 # Dialog state
 
 Dialogs are an approach to implementing multi-turn conversation logic, and as such, they are an example of a feature in the SDK that relies on persisted state across. 
@@ -60,3 +52,4 @@ The problem with this approach is that any state updates made from some custom m
 
 ## Additional resources
 For more details, refer to the Bot Builder SDK on GitHub [[C#](https://github.com/Microsoft/BotBuilder-dotnet) | [JavaScript](https://github.com/Microsoft/BotBuilder-js)].
+-->

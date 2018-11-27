@@ -1,14 +1,14 @@
 ---
 title: Dialogs within the Bot Builder SDK | Microsoft Docs
 description: Describes what a dialog is and how it work within the Bot Builder SDK.
-keywords: conversation flow, recognize intent, single turn, multiple turn, bot conversation, dialogs, prompts, waterfalls, dialog set
+keywords: conversation flow, prompt, dialog state, recognize intent, single turn, multiple turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
 ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 9/22/2018
+ms.date: 11/22/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -35,7 +35,7 @@ Notice that a **Dialog’s BeginDialog** is initialization code and takes initia
 
 To support nesting of Dialogs (where a dialog has child dialog) there is an additional type of continuation; this is called resumption. The DialogContext will call the ResumeDialog method on a parent Dialog when a child Dialog completes.
 
-Prompts and Waterfalls are both concrete examples of Dialogs provided by the SDK. Many scenarios are built by composing these abstractions, but under the covers, the logic executed is always the same begin, i.e., the continue and resume pattern described here. Implementing a Dialog class from scratch is a relatively advanced topic, but an example is included in the [samples](https://github.com/Microsoft/BotBuilder-samples).
+Prompts and Waterfalls are both concrete examples of Dialogs provided by the SDK. Many scenarios are built by composing these abstractions, but under the covers, the logic executed is always the same begin, i.e., the continue and resume pattern described here. 
 
 The **Dialog** library in the Bot Builder SDK includes built-in features such as _prompts_, _waterfall dialogs_, and _component dialogs_ to help you manage your bot's conversation. You can use prompts to ask users for different types of information, a waterfall to combine multiple steps in a sequence, and component dialogs to package your dialog logic into separate classes that can then be integrated into other bots.
 ## Waterfall Dialogs and Prompts
@@ -58,6 +58,37 @@ You can handle a return value from a dialog either within a waterfall step in a 
 Within a waterfall step, the dialog provides the return value in the waterfall step context's _result_ property.
 You generally only need to check the status of the dialog turn result from your bot's turn logic.
 
+## About prompt types
+
+Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or restarts from the top with a re-prompt. The dialogs library offers a number of basic prompts, each used for collecting a different type of response. The basic prompts can interpret natural language input, such as "ten" or "a dozen" for a number, or "tomorrow" or "Friday at 10am" for a date-time.
+
+| Prompt | Description | Returns |
+|:----|:----|:----|
+| _Attachment prompt_ | Asks for one or more attachments, such as a document or image. | A collection of _attachment_ objects. |
+| _Choice prompt_ | Asks for a choice from a set of options. | A _found choice_ object. |
+| _Confirm prompt_ | Asks for a confirmation. | A Boolean value. |
+| _Date-time prompt_ | Asks for a date-time. | A collection of _date-time resolution_ objects. |
+| _Number prompt_ | Asks for a number. | A numeric value. |
+| _Text prompt_ | Asks for general text input. | A string. |
+
+To prompt a user for input, define a prompt using one of the built-in classes, such as the _text prompt_, and add it to your dialog set. Prompts have fixed IDs that must be unique within a dialog set. You can have a custom validator for each prompt, and for some prompts, you can specify a _default locale_. 
+
+### Prompt locale
+
+The locale is used to determine language-specific behavior of the **choice**, **confirm**, **date-time**, and **number** prompts. For any given input from the user, if the channel provided a _locale_ property in user's message, then that is used. Otherwise, if the prompt's _default locale_ is set, by providing it when calling the prompt's constructor or by setting it later, then that is used. If neither of those are provided, English ("en-us") is used as the locale. Note: The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.
+
+## Dialog state
+
+Dialogs are an approach to implementing a multi-turn conversation, and as such, they are an example of a feature in the SDK that relies on persisted state across multiple turns. Without state in dialogs, your bot wouldn't know where in the dialog set it is or information it has already gathered.
+
+A dialog based bot typically holds a dialog set collection as a member variable in its bot implementation. That dialog set is created with a handle to an object called an accessor that provides access to persisted state. For background on state within bots, see [managing state](bot-builder-concept-state.md). 
+
+![dialog state](media/bot-builder-dialog-state.png)
+
+When the bot’s on turn handler is called the bot will initialize the dialog subsystem by calling *create context* on the dialog set, which returns the *dialog context*. The creation of a dialog context requires state, which is accessed with the accessor provided when creating the dialog set. With that accessor, the dialog set can get the appropriate dialog state JSON. That dialog context contains the necessary information needed by the dialog.
+
+Details on state accessors can be found in [Save conversation and user data](bot-builder-howto-v4-state.md).
+
 ## Repeating a dialog
 
 To repeat a dialog, use the *replace dialog* method. The dialog context's *replace dialog* method will pop the current dialog off the stack and push the replacing dialog onto the top of the stack and begin that dialog. You can use this method to create a loop by replacing a dialog with itself. Note that if you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialize the dialog appropriately. The options passed into the new dialog can be accessed via the step context's _options_ property in any step of the dialog. This is a great way to handle a complex conversation flow or to manage menus.
@@ -73,7 +104,7 @@ Therefore, you can create a branch within your conversation flow by including a 
 ## Component dialog
 Sometimes you want to write a reusable Dialog that you want to use in different scenarios. An example might be an address Dialog that asks the user to provide values for street, city and zip code. 
 
-The ComponentDialog provides a level of isolation because it has a separate DialogSet . By having a separate DialogSet, it avoids name collisions with the parent containing Dialog, and it creates its own independent internal Dialog runtime (by creating its own DialogContext) and dispatches the Activity to that. This secondary dispatch means that it has had an opportunity to intercept the Activity. This can be very useful if you want to implement features such as “help” and “cancel.”  See Enterprise Bot Template sample. 
+The ComponentDialog provides a level of isolation because it has a separate DialogSet . By having a separate DialogSet, it avoids name collisions with the parent containing Dialog, and it creates its own independent internal Dialog runtime (by creating its own DialogContext) and dispatches the Activity to that. This secondary dispatch means that it has had an opportunity to intercept the Activity. This can be very useful if you want to implement features such as “help” and “cancel.”  See [Enterprise Bot Template](https://aka.ms/abs/templates/cabot) sample. 
 
 ## Next steps
 

@@ -1,4 +1,10 @@
 ---
+redirect_url: https://github.com/Microsoft/botbuilder-tools/blob/master/packages/LUISGen/src/npm/readme.md
+---
+
+<!--
+
+---
 title: Extract typed LUIS results | Microsoft Docs
 description: Learn how to use LUIS to extract entities with the Bot Builder SDK.
 keywords: intents, entities, LUISGen, extract 
@@ -497,4 +503,4 @@ For more background on LUIS, see [Language Understanding](./bot-builder-concept-
 > [!div class="nextstepaction"]
 > [Combine LUIS and QnA using the Dispatch tool](./bot-builder-tutorial-dispatch.md)
 
-
+-->
