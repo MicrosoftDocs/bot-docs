@@ -24,7 +24,7 @@ monikerRange: 'azure-bot-service-4.0'
 - Install the Azure Bot Service command line (CLI) tools. It's important to do this even if you've used the tools before to ensure you have the latest versions.
 
 ```shell
-npm install -g ludown luis-apis qnamaker botdispatch msbot luisgen chatdown
+npm install -g ludown luis-apis qnamaker botdispatch msbot chatdown
 ```
 
 - Install the Azure Command Line Tools (CLI) from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest). If you already have the Azure Bot Service command line (CLI) tool installed, make sure you update it to the latest version by uninstalling your current version and then installing the new one.
@@ -32,6 +32,12 @@ npm install -g ludown luis-apis qnamaker botdispatch msbot luisgen chatdown
 - Install the AZ Extension for Bot Service
 ```shell
 az extension add -n botservice
+```
+
+- Install the LUISGen tool
+
+```shell
+dotnet tool install -g luisgen
 ```
 
 ## Configuration
@@ -43,7 +49,7 @@ az extension add -n botservice
 
 ## Deployment
 
->If you have multiple Azure subscriptions and want to ensure the deployment selects the correct one, run the following commands before continuing.
+> If you have multiple Azure subscriptions and want to ensure the deployment selects the correct one, run the following commands before continuing.
 
  Follow the browser login process into your Azure Account
 ```shell
@@ -58,17 +64,17 @@ Enterprise Template Bots require the following dependencies for end to end opera
 - Azure Application Insights (Telemetry)
 - Azure CosmosDb (State)
 - Azure Cognitive Services - Language Understanding
-- Azure Cognitive Services - QnAMaker (including Azure Search, Azure Web App)
+- Azure Cognitive Services - QnA Maker (including Azure Search, Azure Web App)
 - Azure Cognitive Services - Content Moderator (optional manual step)
 
-Your new Bot project has a deployment recipe enabling the `msbot clone services` command to automate deployment of all the above services into your Azure subscription and ensure the .bot file in your project is updated with all of the services including keys enabling seamless operation of your Bot.
+Your new Bot project has a deployment recipe enabling the `msbot clone services` command to automate deployment of all the above services into your Azure subscription and ensure the .bot file in your project is updated with all of the services including keys enabling seamless operation of your Bot. It also has multiple configuration options for the following languages: Chinese, English, French, German, Italian, and Spanish.
 
 > Once deployed, review the Pricing Tiers for the created services and adjust to suit your scenario.
 
-The README.md within your created project contains an example msbot clone services command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope). Ensure the LUIS authoring key retrieved on the previous step is for the region you specify below (e.g. westus for luis.ai or westeurope for eu.luis.ai)
+The README.md within your created project contains an example `msbot clone services` command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope). Ensure the LUIS authoring key retrieved on the previous step is for the region you specify below (e.g. westus for luis.ai or westeurope for eu.luis.ai). Finally, reference the folder of the language you want to use (e.g. `DeploymentScripts\en`).
 
 ```shell
-msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\msbotClone" --location "YOUR_REGION"
+msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\LOCALE_FOLDER" --location "REGION"
 ```
 
 > There is a known issue with some users whereby you might experience the following error when running deployment `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`. In this situation, please browse to https://apps.dev.microsoft.com and manually create a new application retrieving the ApplicationID and Password/Secret. Run the above msbot clone services command but provide two new arguments `appId` and `appSecret` passing the values you've just retrieved. Ensure you wrap the secret with quotes to prevent parsing issues, e.g: `-appSecret "YOUR_SECRET"`
@@ -77,15 +83,15 @@ The msbot tool will outline the deployment plan including location and SKU. Ensu
 
 ![Deployment Confirmation](./media/enterprise-template/EnterpriseBot-ConfirmDeployment.png)
 
->After deployment is complete, it's **imperative** that you make a note of the .bot file secret provided as this will be required for later steps.
+>After deployment is complete, it's **imperative** that you make a note of the .bot file secret provided as this will be required for later steps. You can also run `msbot secret --clear --secret YOUR_BOT_SECRET` to remove the secret from your bot file and simplify development until you are ready to release your bot to production. Run `msbot secret --new` to generate a new secret.
 
 - Update your `appsettings.json` file with the newly created .bot file name and .bot file secret.
 - Run the following command and retrieve the InstrumentationKey for your Application Insights instance and update InstrumentationKey in your `appsettings.json` file.
 
-`msbot list --bot YOURBOTFILE.bot --secret "YOUR_BOT_SECRET"`
+`msbot list --bot YOUR_BOT_FILE.bot --secret "YOUR_BOT_SECRET"`
 
         {
-          "botFilePath": ".\\YOURBOTFILE.bot",
+          "botFilePath": ".\\YOUR_BOT_FILE.bot",
           "botFileSecret": "YOUR_BOT_SECRET",
           "ApplicationInsights": {
             "InstrumentationKey": "YOUR_INSTRUMENTATION_KEY"
@@ -116,13 +122,13 @@ Your Bot project provides additional functionality which you can enable through 
 
 To enable authentication follow these steps after configuring an Authentication Connection Name within the Settings of your Bot in the Azure Portal. Further information can be found in the [documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0).
 
-Register the `SignInDialog` in the MainDialog constructor:
+Register the `AuthenticationDialog` in the MainDialog constructor:
     
-`AddDialog(new SignInDialog(_services.AuthConnectionName));`
+`AddDialog(new AuthenticationDialog(_services.AuthConnectionName));`
 
 Add the following in your code at your desired location to test a simple login flow:
     
-`var signInResult = await dc.BeginDialogAsync(nameof(SignInDialog));`
+`var authResult = await dc.BeginDialogAsync(nameof(AuthenticationDialog));`
 
 ### Content Moderation
 
