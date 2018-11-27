@@ -265,7 +265,7 @@
       </Parameters>
       <Docs>
         <param name="context">Context for the current turn of conversation with the user.</param>
-        <param name="connectionName">The name of the Azure Active Direcotry connection configured with this bot.</param>
+        <param name="connectionName">The name of the Azure Active Directory connection configured with this bot.</param>
         <param name="resourceUrls">The list of resource URLs to retrieve tokens for.</param>
         <param name="userId">The user Id for which tokens are retrieved. If passing in null the userId is taken from the Activity in the ITurnContext.</param>
         <summary>
