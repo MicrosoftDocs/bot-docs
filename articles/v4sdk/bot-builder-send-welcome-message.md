@@ -375,7 +375,7 @@ Next, we can send the card by using the following await command. Let's put this 
 ```csharp
 switch (text)
 {
-    case "hello":"
+    case "hello":
     case "hi":
         await turnContext.SendActivityAsync($"You said {text}.", cancellationToken: cancellationToken);
         break;
