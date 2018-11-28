@@ -1,4 +1,10 @@
 ---
+redirect_url: /bot-framework/bot-builder-concept-middleware
+---
+
+<!--
+
+---
 title: Create your own middleware | Microsoft Docs
 description: Understand how to write your own middleware.
 keywords: middleware, custom middleware, short circuit, fallback, activity handlers
@@ -209,3 +215,4 @@ adapter.use({onTurn: async (context, next) =>{
 > This might not work in all cases, such as when other middleware might be able to respond to the user or when the bot receives a message correctly but does not reply. Responding with, "I don't understand" would be misleading to our user.
 
 
+-->
