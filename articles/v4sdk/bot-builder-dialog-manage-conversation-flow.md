@@ -68,7 +68,7 @@ public class MultiTurnPromptsBotAccessors
 }
 ```
 
-We register the accessors class in the `ConfigureServices` method of the `Statup` class.
+We register the accessors class in the `ConfigureServices` method of the `Startup` class.
 Again, we're calling out only portions of the code.
 
 ```csharp
