@@ -252,7 +252,7 @@ In the **index.js** file, we read in the configuration information to generate t
 Update the value of `LUIS_CONFIGURATION` to the name of your LUIS app, as it appears in your configuration file.
 
 ```javascript
-// Language Understanding (LUIS) service name as defined in the .bot file.YOUR_LUIS_APP_NAME is "LuisBot" in the C# code.
+// Language Understanding (LUIS) service name as defined in the .bot file.YOUR_LUIS_APP_NAME is "LuisBot" in the JavaScript code.
 const LUIS_CONFIGURATION = '<YOUR_LUIS_APP_NAME>';
 
 // Get endpoint and LUIS configurations by service name.
