@@ -17,7 +17,7 @@ ms.date: 12/06/2018
 
 After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
-In this article, we'll show you how to deploy a C# and JS bot to Azure using the `az` cli. We'll also provide steps to deploy C# bots using Visual Studio and the Azure portal. It would be useful to read this complete article before following the steps, so that you fully understand what is involved in deploying a bot.
+In this article, we'll show you how to deploy a C# and JS bot to Azure using the `az` cli. We'll also provide steps to deploy C# bots using Visual Studio and the Azure portal. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
@@ -106,7 +106,7 @@ Our goal is to have a single .bot file that will have all the service references
 | File           | Description |
 |----------------|-------------|
 | Local bot file | Contains references to services (e.g. LUIS or QnA) your local bot uses.|
-| Bot file downloaded from the Azure portal | Contains references to additional services that your local bot needs.|
+| Bot file downloaded from the Azure portal | This is the .bot file you _decrypted_ in the above section. It contains references to additional services that your local bot needs.|
 | A blank file | Used to temporarily store references to all the services from the above bot files.|
 
 1. Create a new text file in the project folder where existing local .bot file is. We'll use this file to combine the relevant sections of the two bot files. 
@@ -163,6 +163,8 @@ After the above command completes, you'll see a message with details about the d
 You can test the bot using the "Test in Webchat" option in the Azure portal.
 
 ![Azure Echo bot](media/bot-builder-tools/az-echo-bot.png) 
+
+If you modify your local bot code, use the `az bot publish` command to upload it again to the Azure portal.
 
 # [Visual Studio](#tab/csbotvs)
 
@@ -285,6 +287,7 @@ At this point, you can test your bot from Azure using the built-in Web Chat clie
 4. Type a message like `Hi` and press Enter. The bot will echo back `Turn 1: You sent Hi`.
 
 ---
+
 ## Additional resources
 - To see documentation on `az bot` commands, see the [reference](https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest) topic.
 - If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology) topic.
