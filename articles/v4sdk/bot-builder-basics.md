@@ -419,9 +419,6 @@ The **.bot** file contains information, including the endpoint, app ID, and pass
 
 ## Additional resources
 
-To understand what role a bot file plays in managing resources, see [bot file](bot-file-basics.md).
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Create a bot](~/bot-service-quickstart.md)
+- To understand the role of state in bots, see [managing state](bot-builder-concept-state.md).
+- To understand the role a .bot file plays in managing resources, see [manage resources with a .bot file](bot-file-basics.md).
+- To create your first bot, see one of the quickstarts: [using Azure Bot service](../bot-service-quickstart.md), [using C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md), or [using JavaScript](../javascript/bot-builder-javascript-quickstart.md)
