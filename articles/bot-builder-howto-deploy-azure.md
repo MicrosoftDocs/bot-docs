@@ -85,23 +85,24 @@ Typically, when you create a bot using `az` cli, the following Azure reources ar
 | [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
 
 ## Download the source code
-After you create the bot, you'll need to download the code from the Azure portal by using the `download` command. Note that `<your-bot-name>` is the name of the bot you created in the Azure portal. 
+Create a directory where you'd like to download the bot code from the Azure portal. The download `command` takes the name of the bot you created in the Azure portal as an argument. 
 
 ```azcli
+mkdir "<directory-name>"
+cd "<directory-name>"
 az bot download --name "<your-bot-name>"
 ```
 
 ## Decrypt the bot file
 After you download the code, you need to decrypt the .bot file. 
-1. Navigate to the folder where you downloaded the code.
-1. For C# bot, open appsettings.json file and copy the _bot file secret_. For JS, it will be in the .env file. 
+1. For C# bot, open `appsettings.json` file and copy the _bot file secret_. For JS, it will be in the `.env` file. 
 1. Decrypt the .bot file you downloaded using the following command:
 ```azcli
 msbot secret -b "<filename.bot>" --secret "<bot-file-secret>" --clear
 ```
 
 ## Add service references in the .bot file
-Our goal is to have a single .bot file that will have all the service references your local bot will need when deployed to Azure. To achieve this goal, we'll work with these .bot files: 
+We need to create a single .bot file that will have all the service references your local bot will need when deployed to Azure. To do that, here are the three files that we'll work with: 
 
 | File           | Description |
 |----------------|-------------|
@@ -109,9 +110,11 @@ Our goal is to have a single .bot file that will have all the service references
 | Bot file downloaded from the Azure portal | This is the .bot file you _decrypted_ in the above section. It contains references to additional services that your local bot needs.|
 | A blank file | Used to temporarily store references to all the services from the above bot files.|
 
-1. Create a new text file in the project folder where existing local .bot file is. We'll use this file to combine the relevant sections of the two bot files. 
+1. Create a new text file. We'll use this file to combine the relevant sections of the two bot files. 
 1. Open the _decrypted bot file_. Copy the entire file and paste it in the new file you just created. 
-1. Open the _local bot file_, copy the references to services such as, LUIS, QnA, etc. into the _new bot file_ you just created. In our example, the following `services` section in the _local bot file_ has an entry for a LUIS service. We only need to copy this part into the `services` section of the _new bot file_.
+1. Switch to the folder that has the local bot file. Open the _local bot file_, copy the references to services such as, LUIS, QnA, etc. into the _new bot file_ you just created. 
+
+In our example, the following `services` section in the _local bot file_ has an entry for a LUIS service. We only need to copy this part into the `services` section of the _new bot file_.
 
 ```json
 ...
