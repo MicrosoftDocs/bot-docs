@@ -162,7 +162,7 @@ public DialogPromptBot(DialogPromptBotAccessors accessors, ILoggerFactory logger
 
 # [JavaScript](#tab/javascript)
 
-In the constructor, create state accessor properties. 
+In the constructor, create state accessor properties.
 
 ```javascript
 constructor(conversationState) {
@@ -186,6 +186,7 @@ Next, create the dialog set and add the prompts, including custom validation.
 ```
 
 Then define the steps of the waterfall dialog and add it to the set.
+
 ```javascript
     // ...
     this.dialogSet.add(new WaterfallDialog(RESERVATION_DIALOG, [
@@ -201,11 +202,11 @@ Then define the steps of the waterfall dialog and add it to the set.
 
 ### Implement dialog steps
 
-In the main bot file, we implement each of our steps of the waterfall dialog. After a prompt is added, we call it in one step of a waterfall dialog, and get the prompt result in the following dialog step. To call a prompt from within a waterfall step, call the _waterfall step context_ object's _prompt_ method. The first parameter is the ID of the prompt to use, and the second parameter contains the options for the prompt, such as the text used to ask the user for input.     
+In the main bot file, we implement each of our steps of the waterfall dialog. After a prompt is added, we call it in one step of a waterfall dialog, and get the prompt result in the following dialog step. To call a prompt from within a waterfall step, call the _waterfall step context_ object's _prompt_ method. The first parameter is the ID of the prompt to use, and the second parameter contains the options for the prompt, such as the text used to ask the user for input.
 
 # [C#](#tab/csharp)
 
-In the DialogPromptBot.cs file, we implment `PromptForPartySizeAsync`, `PromptForLocationAsync`, `PromptForReservationDateAsync`, and `AcknowledgeReservationAsync` steps of the waterfall dialog.
+In the DialogPromptBot.cs file, we implement the `PromptForPartySizeAsync`, `PromptForLocationAsync`, `PromptForReservationDateAsync`, and `AcknowledgeReservationAsync` steps of the waterfall dialog.
 
 Here we are only showing `PromptForPartySizeAsync` and `PromptForLocationAsync` that are two consecutive step delegates of a waterfall dialog.
 
@@ -244,6 +245,7 @@ private async Task<DialogTurnResult> PromptForLocationAsync(WaterfallStepContext
         cancellationToken);
 }
 ```
+
 The example above shows how to use a choice prompt, providing all three properties. The `PromptForLocationAsync` method is used as a step in a waterfall dialog, and our dialog set contains both the waterfall dialog and a choice prompt with an ID of `locationPrompt`.
 
 # [JavaScript](#tab/javascript)
@@ -285,8 +287,6 @@ You should always specify the initial prompt activity to send the user.
 Specifying a retry prompt is useful for when the user's input fails to validate, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt activity to re-prompt the user for input.
 
 For a choice prompt, you should always provide the list of available choices.
-
-
 
 ## Custom validation
 
@@ -464,14 +464,13 @@ Update the bot's turn handler to start the dialog and accept a return value from
    1. Control passes to the next step in the active dialog, which is the second turn of the prompt.
    1. The prompt validates the user's input.
 
-      
 **Handling prompt results**
 
 What you do with the prompt result depends on why you requested the information from the user. Options include:
 
-* Use the information to control the flow of your dialog, such as when the user responds to a confirm or choice prompt.
-* Cache the information in the dialog's state, such as setting a value in the waterfall step context's _values_ property, and then return the collected information when the dialog ends.
-* Save the information to bot state. This would require you to design your dialog to have access to the bot's state property accessors. 
+- Use the information to control the flow of your dialog, such as when the user responds to a confirm or choice prompt.
+- Cache the information in the dialog's state, such as setting a value in the waterfall step context's _values_ property, and then return the collected information when the dialog ends.
+- Save the information to bot state. This would require you to design your dialog to have access to the bot's state property accessors.
 
 # [C#](#tab/csharp)
 
@@ -594,17 +593,17 @@ async onTurn(turnContext) {
 
 ---
 
-
-
 You can use the similar techniques to validate prompt responses for any of the prompt types.
 
 ## Test your bot
+
 1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
 2. Start the emulator, send messages as shown below to test the bot.
 
 ![test dialog prompt sample](~/media/emulator-v4/test-dialog-prompt.png)
 
 ## Additional resources
+
 To call a prompt directly from your turn handler, see the _prompt-validations_ sample in [C#](https://aka.ms/cs-prompt-validation-sample) or [JS](https://aka.ms/js-prompt-validation-sample).
 
 The dialog library also includes an _OAuth prompt_ for obtaining an _OAuth token_ with which to access another application on behalf of the user. For more about authentication, see how to [add authentication](bot-builder-authentication.md) to your bot.
