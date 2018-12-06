@@ -140,14 +140,15 @@ In our example, the following `services` section in the _local bot file_ has an 
 
 As you deploy your bot, make sure you use the name of the bot that was created in the Azure portal using the `create` command ealier. 
 
-- `proj-file` 
-   - For C# it is the name of the .csproj. 
-   - For JS, it is the startup project file name in JS (e.g. index.js) of your local bot.
-- `code-dir` points to local bot's folder.
-
 ```azurecli
 az bot publish --name "<your-bot-name>" --proj-file "<your-proj-file>" --resource-group "<azure-resource-group>" --code-dir "<folder>" --verbose --version v4
 ```
+
+- In the command above:
+  - `proj-file` for:  
+     - C# is the .csproj file. 
+     - JS is the startup project file name (e.g. index.js) of your local bot.
+  - `code-dir` points to the local bot folder.
 
 After the above command completes, you'll see a message with details about the deployment. At this point your bot code is deployed to the Azure portal. 
 
