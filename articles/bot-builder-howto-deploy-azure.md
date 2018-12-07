@@ -49,9 +49,10 @@ If you are not sure which subscription to use for deploying the bot, you can vie
 You also need to specify a resource group. To use an existing resource group, use the following command:
 
 ```azurecli
-az configure --defaults group="<azure-resource-group>"
+az configure --defaults group="<azure-resource-group
 ```
-     
+
+Use the same resource group that your local bot uses for services like Application Insights, Storage, QnA etc.  
 
 ### Create a bot
 Use the `create` command to first create a bot in Azure. By creating this bot, you get all the required Azure resources needed for deploying you local bot. 
@@ -112,7 +113,12 @@ We need to create a single .bot file that will have all the service references y
 
 1. Create a new text file. We'll use this file to combine the relevant sections of the two bot files. 
 1. Open the _decrypted bot file_. Copy the entire file and paste it in the new file you just created. 
-1. Switch to the folder that has the local bot file. Open the _local bot file_, copy the references to services such as, LUIS, QnA, etc. into the _new bot file_ you just created. 
+1. Switch to the folder that has the local bot file. Open the _local bot file_, copy the references to services such as, LUIS, QnA, 
+Application Insights etc. into the _new bot file_ you just created. 
+Note that the bot file you downloaded from Azure will also have some of these services listed in it. If you want to use resources that you have 
+in your local bot file, then remove the duplicate services. 
+
+Any services that was created by the `az bot create` command that you do not need should also be removed from the Azure portal.  
 
 In our example, the following `services` section in the _local bot file_ has an entry for a LUIS service. We only need to copy this part into the `services` section of the _new bot file_.
 
@@ -132,7 +138,7 @@ In our example, the following `services` section in the _local bot file_ has an 
 ...
 ```
 
-**Important:** If your local bot does not use any additional service references like LUIS or QnA, then you don't need to copy anything from your _local bot file_ into the _new bot file_. 
+**Important:** If your local bot does not use any additional service references like Application Insights, Storage, LUIS or QnA, then you don't need to copy anything from your _local bot file_ into the _new bot file_. 
 
 4. Delete the existing content of the _local bot file_, and then copy the contents from the _new bot file_ into it. Save the bot file.
 
