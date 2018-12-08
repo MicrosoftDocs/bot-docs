@@ -75,7 +75,6 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 | C#       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 | JS       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 
-
 **Business or school account**
 
 If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application id and password. You can simply use the following command:
@@ -84,7 +83,6 @@ If your are using an email account provided to you by your business or school to
 |----------|---------|
 | C#       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --proj-file "<your-project-file>" --name "<bot-name>"`|
 | JS       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --code-dir . --name "<bot-name>"`
-
 
 It is highly recommended that you use the `--verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
 
@@ -125,7 +123,6 @@ az bot publish --name "<your-azure-bot-name>" --proj-file "<your-proj-file>" --r
 | `name`      | The name you used when you initially deployed your bot to Azure.|
 | `proj-file` | For C# bot, it is the .csproj file. For JS bot, it is the startup project file name (e.g. index.js) of your local bot.|
 | `code-dir`  | Points to the local bot folder.|
-
 
 # [Visual Studio](#tab/csbotvs)
 
