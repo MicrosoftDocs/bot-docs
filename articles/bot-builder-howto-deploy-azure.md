@@ -60,37 +60,31 @@ Navigate to the bot folder.
 cd <local bot folder>
 ```
 
-#### Azure subscription account type
-Before proceeding, read the instruction that apply to you based on the type of account you are using for the Azure subscription.
+#### Azure subscription account
+Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
 
-##### MSA account
-If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) for your Azure subscription, you will need to create the appId and appSecret to use with `msbot clone services` command. 
+**MSA email account**
+
+If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the appId and appSecret to use with `msbot clone services` command. 
+
 - Go to the [Application Registration Portal](https://apps.dev.microsoft.com/). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. 
 - Save both application id and the new password you just generated, so you that can use them with `msbot clone services` command. 
 
-###### Command for C# bot:
-```cmd
-msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<your-bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose
-```
+| Bot      | Command |
+|----------|---------|
+| C#       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
+| JS       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 
-###### Command for JS bot:
-```cmd
-msbot clone services --folder deploymentScripts\msbotClone --location westus2 --appid "xxxxxxxx" --password "xxxxxxx" --verbose --code-dir . --name CloneBot123
-```
 
-##### Business or school account
+**Business or school account**
 
-If you are using a school or business account for your Azure subscription, you don't need to create the application id and password. You can simply use the following command:
+If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application id and password. You can simply use the following command:
 
-###### Command for C# bot:
-```cmd
-msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --proj-file "<your-project-file>" --name MyBotInAzure
-```
+| Bot      | Command |
+|----------|---------|
+| C#       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --proj-file "<your-project-file>" --name "<bot-name>"`|
+| JS       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --code-dir . --name "<bot-name>"`
 
-###### Command for JS bot:
-```cmd
-msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --code-dir . --name CloneBot123
-```
 
 It is highly recommended that you use the `--verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
 
@@ -104,16 +98,6 @@ It is highly recommended that you use the `--verbose` option to help troubleshoo
 Before Azure resources can be created, you'll be prompted to complete authentication. Follow the instructions that appear on the screen to complete this step.
 
 Note that the above step takes _few seconds to minutes_ to complete, and the resource that are created in Azure have their names mangled. To learn more about name mangling, see [issue# 796](https://github.com/Microsoft/botbuilder-tools/issues/796) in the GitHub repo.
-
-Typically, when you deploy a bot using `msbot` cli, the following Azure reources are created:
-
-| Resources      | Description |
-|----------------|-------------|
-| Web App Bot | An Azure Bot Service bot that is deployed to an Azure App Service.|
-| [App Service](https://docs.microsoft.com/en-us/azure/app-service/)| Enables you to build and host web applications.|
-| [App Service plan](https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
-| [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)| Provides tools for collecting and analyzing telemetry.|
-| [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
 
 #### Save the secret used to decrypt .bot file
 While the bot is being deployed, you'll see a message in the command-line asking you to save the .bot file secret. 
@@ -269,8 +253,20 @@ At this point, you can test your bot from Azure using the built-in Web Chat clie
 ---
 
 ## Additional resources
-- To see documentation on `az bot` commands, see the [reference](https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest) topic.
-- If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology) topic.
+
+When you deploy a bot, typically these reources are created in the Azure portal:
+
+| Resources      | Description |
+|----------------|-------------|
+| Web App Bot | An Azure Bot Service bot that is deployed to an Azure App Service.|
+| [App Service](https://docs.microsoft.com/en-us/azure/app-service/)| Enables you to build and host web applications.|
+| [App Service plan](https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
+| [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)| Provides tools for collecting and analyzing telemetry.|
+| [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
+
+To see documentation on `az bot` commands, see the [reference](https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest) topic.
+
+If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology) topic.
 
 ## Next steps
 > [!div class="nextstepaction"]
