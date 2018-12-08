@@ -28,6 +28,8 @@ In this article, we'll show you how to deploy a C# and JS bot to Azure using `ms
 - Install the latest `botservice` extension for the `az` tool. 
   - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
+- Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
 Instructions in the following sections apply to these scenarios:
@@ -72,8 +74,9 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 
 | Bot      | Command |
 |----------|---------|
-| C#       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
-| JS       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
+| CSharp       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
+| JavaScript/TypeScript       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
+
 
 **Business or school account**
 
@@ -81,8 +84,8 @@ If your are using an email account provided to you by your business or school to
 
 | Bot      | Command |
 |----------|---------|
-| C#       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --proj-file "<your-project-file>" --name "<bot-name>"`|
-| JS       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --code-dir . --name "<bot-name>"`
+| CSharp      | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --proj-file "<your-project-file>" --name "<bot-name>"`|
+| JavaScript/TypeScript       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --code-dir . --name "<bot-name>"`
 
 It is highly recommended that you use the `--verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
 
@@ -121,7 +124,7 @@ az bot publish --name "<your-azure-bot-name>" --proj-file "<your-proj-file>" --r
 | Arguments        | Description |
 |----------------  |-------------|
 | `name`      | The name you used when you initially deployed your bot to Azure.|
-| `proj-file` | For C# bot, it is the .csproj file. For JS bot, it is the startup project file name (e.g. index.js) of your local bot.|
+| `proj-file` | For C# bot, it is the .csproj file. For JS bot, it is the startup project file name (e.g. index.js or index.ts) of your local bot.|
 | `code-dir`  | Points to the local bot folder.|
 
 # [Visual Studio](#tab/csbotvs)
