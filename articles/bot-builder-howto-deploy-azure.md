@@ -17,7 +17,7 @@ ms.date: 12/07/2018
 
 After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
-In this article, we'll show you how to deploy a C# and JS bot to Azure using `msbot` and `az` cli tools. We'll also provide steps to deploy C# bots using Visual Studio and the Azure portal. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+In this article, we'll show you how to deploy a C#, JavaScript, and TypeScript bot to Azure using `msbot` and `az` cli tools. We'll also provide steps to deploy C# bots using Visual Studio and the Azure portal. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 
 # [AZ CLI](#tab/csbotazcli)
