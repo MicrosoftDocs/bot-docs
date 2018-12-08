@@ -77,6 +77,7 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 | CSharp       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 | JavaScript/TypeScript       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 
+
 **Business or school account**
 
 If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application id and password. You can simply use the following command:
