@@ -172,6 +172,11 @@ Activities can be of several different types past the most common **message**. T
 | [invoke](#invoke) | IInvokeActivity (C#) <br> Activity (JS) | Represents a communication sent to a bot to request that it perform a specific operation. This activity type is reserved for internal use by the Microsoft Bot Framework. |
 | [messageReaction](#messagereaction) | IMessageReactionActivity (C#) <br> Activity (JS) | Indicates that a user has reacted to an existing activity. For example, a user clicks the "Like" button on a message. |
 | [typing](#typing) | ITypingActivity (C#) <br> Activity (JS) | Indicates that the user or bot on the other end of the conversation is compiling a response. |
+| messageUpdate | IMessageUpdateActivity (C#) <br> Activity (JS) | Indicates a request to update a previous message activity in a conversation. |
+| messageDelete | IMessageDeleteActivity (C#) <br> Activity (JS) | Indicates a request to delete a previous message activity in a conversation. |
+| suggestion | ISuggestionActivity (C#) <br> Activity (JS) | Indicates a private suggestion to the recipient about another specific activity. |
+| trace | ITraceActivity (C#) <br> Activity (JS) | An activity by which a bot can log internal information into a logged conversation transcript. |
+| handoff | IHandoffActivity (C#) <br> Activity (JS) | Control of the conversation has been transferred, or a request to transfer control of the conversation. |
 
 ## message
 
