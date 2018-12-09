@@ -24,8 +24,7 @@ In this article, we'll show you how to deploy a C# bot using Visual Studio and t
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
-
-## Deploy your bot to an App Service
+## Deploy your bot in App Service
 You will first deploy the bot to Azure from Visual Studio in an App Service. Then you’ll configure your bot with the Azure Bot Service using Bot Channels Registration.
 
 **Note: If your Visual Studio project name has spaces, the deployment steps outlined below will not work.**
