@@ -55,7 +55,8 @@
 ### [Node.js](nodejs/TOC.md)
 ## [Debug](debug/TOC.md)
 ## Deploy
-### [Deploy your bot to Azure](bot-builder-howto-deploy-azure.md)
+### [Deploy your bot using Azure CLI](bot-builder-deploy-az-cli.md)
+### [Deploy your C# bot using Visual Studio](bot-builder-howto-deploy-azure.md)
 <!-- ### [Download and redeploy bot code](bot-service-build-download-source-code.md) -->
 ### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
 ## [Manage](manage/TOC.md)
