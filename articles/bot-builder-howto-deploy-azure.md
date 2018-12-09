@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/07/2018
+ms.date: 12/08/2018
 ---
 
 # Deploy your bot to Azure
@@ -24,6 +24,7 @@ In this article, we'll show you how to deploy a C#, JavaScript, and TypeScript b
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+- Install [.NET Core SDK](https://dotnet.microsoft.com/download) >=v2.2. 
 - Install the latest version of the [Azure cli tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 - Install the latest `botservice` extension for the `az` tool. 
   - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
@@ -32,13 +33,8 @@ In this article, we'll show you how to deploy a C#, JavaScript, and TypeScript b
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
-Instructions in the following sections apply to these scenarios:
-- You've already created a bot, and now you want to deploy it to Azure. This assumes that you created the required Azure resources, and updated the service references in the .bot file by using msbot connect command.
-- You want to deploy a sample to Azure from the [botbuilder-samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples) repo. In this case, you do not need to create Azure resources or update the .bot file. The deployment process will use the bot.receipt file to determine which resources are needed and provision it. 
-
 ## Deploy JavaScript and C# bots using az cli
-
-Open a command prompt to log in to the Azure portal.
+You've already created a bot, and now you want to deploy it to Azure. These steps assume that you created the required Azure resources, and updated the service references in the .bot file by using `msbot connect` command. First, open a command prompt to log in to the Azure portal.
 
 ```cmd
 az login
@@ -54,15 +50,12 @@ az account set --subscription "<azure-subscription>"
 
 If you are not sure which subscription to use for deploying the bot, you can view the list of `subscriptions` for your account by using `az account list` command.
 
-### Deploy your bot to Azure
-You'll use the ` msbot clone` command to deploy your bot to Azure.
-
 Navigate to the bot folder. 
 ```cmd 
-cd <local bot folder>
+cd <local-bot-folder>
 ```
 
-#### Azure subscription account
+### Azure subscription account
 Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
 
 **MSA email account**
@@ -71,28 +64,32 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 
 - Go to the [Application Registration Portal](https://apps.dev.microsoft.com/). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. 
 - Save both application id and the new password you just generated, so you that can use them with `msbot clone services` command. 
+- To deploy, use the command that applies to your bot.
 
 | Bot      | Command |
 |----------|---------|
 | CSharp       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 | JavaScript/TypeScript       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`|
 
+If you are using services such as LUIS, you will also need to pass `luisAuthoringKey`.
 
 **Business or school account**
 
-If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application id and password. You can simply use the following command:
+If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application id and password. To deploy, use the command that applies to your bot.
 
 | Bot      | Command |
 |----------|---------|
-| CSharp      | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --proj-file "<your-project-file>" --name "<bot-name>"`|
-| JavaScript/TypeScript       | `msbot clone services --folder deploymentScripts\msbotClone --location westus2 --verbose --code-dir . --name "<bot-name>"`
+| CSharp      | `msbot clone services --folder deploymentScripts\msbotClone --location "<geographic-location>" --verbose --proj-file "<your-project-file>" --name "<bot-name>"`|
+| JavaScript/TypeScript       | `msbot clone services --folder deploymentScripts\msbotClone --location "<geographic-location>" --verbose --code-dir . --name "<bot-name>"`
+
+If you are using services such as LUIS, you will also need to pass `luisAuthoringKey`.
 
 It is highly recommended that you use the `--verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
 
 | Arguments    | Description |
 |--------------|-------------|
 | `folder`     | Location of the `bot.receipe`  file. By default the receipe file is created in the `DeploymentsScript\MSBotClone`. DO NOT MODIFY this file.|
-| `location`   | Geographic location used to create the bot service resources. In our example, we are using `westus2`.|
+| `location`   | Geographic location used to create the bot service resources. For example, eastus, westus, westus2 etc.|
 | `proj-file`  | For C# bot it is the .csproj file. For JS bot it is the startup project file name (e.g. index.js) of your local bot.|
 | `name`       | A unique name that is used to deploy the bot in Azure. It could be the same name as your local bot. DO NOT include spaces in the name.|
 
@@ -112,7 +109,7 @@ While the bot is being deployed, you'll see a message in the command-line asking
 Save the secret for later use.
 
 ### Test your bot
-After the bot is deployed, the emulator is launched for you automatically. You can test the bot in using production endpoint. If you want to test it locally, make sure your bot is running on your local machine. 
+In the emulator, use production endpoint to test your app. If you want to test it locally, make sure your bot is running on your local machine. 
 
 ### To update your bot code in Azure
 DO NOT use `msbot clone services` command to update your bot code in Azure. You must use the `az bot publish` command as shown below:
@@ -125,6 +122,7 @@ az bot publish --name "<your-azure-bot-name>" --proj-file "<your-proj-file>" --r
 |----------------  |-------------|
 | `name`      | The name you used when you initially deployed your bot to Azure.|
 | `proj-file` | For C# bot, it is the .csproj file. For JS bot, it is the startup project file name (e.g. index.js or index.ts) of your local bot.|
+| `resource-group` | The Azure resource group that `msbot clone services` command used.|
 | `code-dir`  | Points to the local bot folder.|
 
 # [Visual Studio](#tab/csbotvs)
