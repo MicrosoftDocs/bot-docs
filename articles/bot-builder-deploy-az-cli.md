@@ -68,6 +68,7 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 
 # [C#](#tab/csharp)
 
+
 `msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>" --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
@@ -75,6 +76,7 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 # [JavaScript](#tab/js)
 
 `msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>"   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
+
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
@@ -93,6 +95,7 @@ If your are using an email account provided to you by your business or school to
 # [JavaScript](#tab/js)
 
 `msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>" --verbose --code-dir . --name "<bot-name>"`
+
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
