@@ -221,7 +221,7 @@ public class CustomPromptBot : IBot
     public StateBot(StateBotAccessors accessors, ILoggerFactory loggerFactory)
     {
         // ...
-        accessors = accessors ?? throw new System.ArgumentNullException(nameof(accessors));
+        _accessors = accessors ?? throw new System.ArgumentNullException(nameof(accessors));
     }
 
     // The bot's turn handler and other supporting code...
