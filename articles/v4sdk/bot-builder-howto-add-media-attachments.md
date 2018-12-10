@@ -24,8 +24,8 @@ To send the user content like an image or a video, you can add an attachment or 
 
 # [C#](#tab/csharp)
 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, use the `Attachment` method to create an `Attachment` object for the `message` activity and set the`ContentType`, `ContentUrl`, and `Name` properties. The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties.
+The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
 
 ```csharp
 using Microsoft.Bot.Builder;
