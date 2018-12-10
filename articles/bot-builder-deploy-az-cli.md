@@ -17,7 +17,7 @@ ms.date: 12/08/2018
 
 After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
-In this article, we'll show you how to deploy a C#, JavaScript, and TypeScript bot to Azure using `msbot` and `az` cli tools. We'll also provide steps to deploy C# bots using Visual Studio and the Azure portal. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+In this article, we'll show you how to deploy C# and JavaScript bots to Azure using `msbot` tool. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 
 ## Prerequisites
@@ -68,13 +68,13 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 
 # [C#](#tab/csharp)
 
-`msbot clone services --folder deploymentScripts\msbotClone --location "<geographic-location>" --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
+`msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>" --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
-# [JavaScript/TypeScript](#tab/jsts)
+# [JavaScript](#tab/js)
 
-`msbot clone services --folder deploymentScripts\msbotClone --location "<geographic-location>"   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
+`msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>"   --code-dir . --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
@@ -86,13 +86,13 @@ If your are using an email account provided to you by your business or school to
 
 # [C#](#tab/csharp)
 
-`msbot clone services --folder deploymentScripts\msbotClone --location "<geographic-location>" --verbose --proj-file "<your-project-file>" --name "<bot-name>"`
+`msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>" --verbose --proj-file "<your-project-file>" --name "<bot-name>"`
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
-# [JavaScript/TypeScript](#tab/jsts)
+# [JavaScript](#tab/js)
 
-`msbot clone services --folder deploymentScripts\msbotClone --location "<geographic-location>" --verbose --code-dir . --name "<bot-name>"`
+`msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>" --verbose --code-dir . --name "<bot-name>"`
 
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
