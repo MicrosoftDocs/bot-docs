@@ -1,10 +1,10 @@
 If you are using services such as LUIS, you will also need to pass `luisAuthoringKey`. If you want to use existing resource group in Azure, use the `groupName` argument with the above command.
 
-It is highly recommended that you use the `--verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
+It is highly recommended that you use the `verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
 
 | Arguments    | Description |
 |--------------|-------------|
-| `folder`     | Location of the `bot.receipe`  file. By default the receipe file is created in the `DeploymentsScript\MSBotClone`. DO NOT MODIFY this file.|
+| `folder`     | Location of the `bot.receipe`  file. By default the receipe file is created in the `DeploymentsScript/MSBotClone`. DO NOT MODIFY this file.|
 | `location`   | Geographic location used to create the bot service resources. For example, eastus, westus, westus2 etc.|
 | `proj-file`  | For C# bot it is the .csproj file. For JS bot it is the startup project file name (e.g. index.js) of your local bot.|
 | `name`       | A unique name that is used to deploy the bot in Azure. It could be the same name as your local bot. DO NOT include spaces in the name.|
