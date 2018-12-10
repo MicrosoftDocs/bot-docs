@@ -80,6 +80,7 @@ In addition to spoken responses, Cortana can also display card attachments. Cort
 
 | Card type | Description |
 |----|----|
+| [Adaptive Card](/adaptive-cards/get-started/bots) | A customizable card that can contain any combination of text, speech, images, buttons, and input fields.|
 | [HeroCard][heroCard] | A card that typically contains a single large image, one or more buttons, and text. |
 | [ThumbnailCard][thumbnailCard] | A card that typically contains a single thumbnail image, one or more buttons, and text. |
 | [ReceiptCard][receiptCard] | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
