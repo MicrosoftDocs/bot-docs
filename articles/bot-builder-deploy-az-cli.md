@@ -27,6 +27,8 @@ In this article, we'll show you how to deploy C# and JavaScript bots to Azure us
 - Install the latest `botservice` extension for the `az` tool. 
   - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
+  - You'll need [LUIS CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#installation) if the the clone operation includes LUIS or Dispatch resources.
+  - You'll need [QnA Maker CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#as-a-cli) if the clone operation includes QnA Maker resources.
 - Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
@@ -67,7 +69,6 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 - To deploy, use the command that applies to your bot.
 
 # [C#](#tab/csharp)
-
 
 `msbot clone services --folder deploymentScripts/msbotClone --location "<geographic-location>" --proj-file "<your.csproj>" --name "<bot-name>" --appid "xxxxxxxx" --password "xxxxxxx" --verbose`
 
@@ -110,7 +111,7 @@ It is important to note that the deployment process creates a _new .bot file and
 `NOTE: This secret is not recoverable and you should save it in a safe place according to best security practices.
       Copy this secret and use it to open the <file.bot> the first time.`
       
-Save the .bot file secret for later use.
+Save the .bot file secret for later use. This encrypted file is used in the Azure portal with the botFileSecret. If you need to change the bot file name or secret later on, go to **App Service Settings -> Application Settings** section in the portal. 
 
 ### Test your bot
 In the emulator, use production endpoint to test your app. If you want to test it locally, make sure your bot is running on your local machine. 
