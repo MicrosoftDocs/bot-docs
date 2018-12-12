@@ -1,0 +1,47 @@
+﻿<Type Name="TimeSpanExtensions" FullName="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions">
+  <TypeSignature Language="C#" Value="public static class TimeSpanExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TimeSpanExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TimeSpanExtensions" />
+  <TypeSignature Language="F#" Value="type TimeSpanExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WithRandomNoise">
+      <MemberSignature Language="C#" Value="public static TimeSpan WithRandomNoise (this TimeSpan delay, double multiplier = 0.1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeSpan WithRandomNoise(valuetype System.TimeSpan delay, float64 multiplier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise(System.TimeSpan,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithRandomNoise (delay As TimeSpan, Optional multiplier As Double = 0.1) As TimeSpan" />
+      <MemberSignature Language="F#" Value="static member WithRandomNoise : TimeSpan * double -&gt; TimeSpan" Usage="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise (delay, multiplier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delay" Type="System.TimeSpan" RefType="this" />
+        <Parameter Name="multiplier" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="delay">To be added.</param>
+        <param name="multiplier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -94,35 +94,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+ISurrogateProvider.Handles" ExplicitInterfaceMemberName="Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles">
-      <MemberSignature Language="C#" Value="bool Serialization.ISurrogateProvider.Handles (Type type, System.Runtime.Serialization.StreamingContext context, out int priority);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] int32&amp; priority) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider.Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
-        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
-        <Parameter Name="priority" Type="System.Int32" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="type">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="NameMethod">
       <MemberSignature Language="C#" Value="public const string NameMethod;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string NameMethod" />

@@ -1,0 +1,137 @@
+﻿<Type Name="CosmosDbCustomClientOptions" FullName="Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions">
+  <TypeSignature Language="C#" Value="public class CosmosDbCustomClientOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbCustomClientOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbCustomClientOptions" />
+  <TypeSignature Language="F#" Value="type CosmosDbCustomClientOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            CosmosDB options for custom client.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbCustomClientOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionId">
+      <MemberSignature Language="C#" Value="public string CollectionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CollectionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.CollectionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollectionId As String" />
+      <MemberSignature Language="F#" Value="member this.CollectionId : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.CollectionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the collection identifier.
+            </summary>
+        <value>
+            The collection identifier.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseCreationRequestOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Documents.Client.RequestOptions DatabaseCreationRequestOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Documents.Client.RequestOptions DatabaseCreationRequestOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.DatabaseCreationRequestOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseCreationRequestOptions As RequestOptions" />
+      <MemberSignature Language="F#" Value="member this.DatabaseCreationRequestOptions : Microsoft.Azure.Documents.Client.RequestOptions with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.DatabaseCreationRequestOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Documents.Client.RequestOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the CosmosDB <see cref="!:https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.requestoptions?view=azure-dotnet" />RequestOptions that
+            are passed when the database is created. Null is the default.
+            </summary>
+        <value>
+            The set of options passed into <see cref="!:https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.documentclient.createdatabaseifnotexistsasync?view=azure-dotnet" />CreateDatabaseIfNotExistsAsync.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseId">
+      <MemberSignature Language="C#" Value="public string DatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.DatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseId As String" />
+      <MemberSignature Language="F#" Value="member this.DatabaseId : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.DatabaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the database identifier for Cosmos DB instance.
+            </summary>
+        <value>
+            The database identifier for Cosmos DB instance.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentCollectionRequestOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Documents.Client.RequestOptions DocumentCollectionRequestOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Documents.Client.RequestOptions DocumentCollectionRequestOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.DocumentCollectionRequestOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocumentCollectionRequestOptions As RequestOptions" />
+      <MemberSignature Language="F#" Value="member this.DocumentCollectionRequestOptions : Microsoft.Azure.Documents.Client.RequestOptions with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions.DocumentCollectionRequestOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Documents.Client.RequestOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the CosmosDB <see cref="!:https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.requestoptions?view=azure-dotnet" />RequestOptions that
+            are passed when the document collection is created. Null is the default.
+            </summary>
+        <value>
+            The set of options passed into <see cref="!:https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentcollectionifnotexistsasync?view=azure-dotnet" />CreateDocumentCollectionIfNotExistsAsync.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
