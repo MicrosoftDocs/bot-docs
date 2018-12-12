@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/08/2018
+ms.date: 12/11/2018
 ---
 
 # Deploy your bot using Azure CLI
@@ -111,7 +111,7 @@ It is important to note that the deployment process creates a _new .bot file and
 `NOTE: This secret is not recoverable and you should save it in a safe place according to best security practices.
       Copy this secret and use it to open the <file.bot> the first time.`
       
-Save the .bot file secret for later use. This encrypted file is used in the Azure portal with the botFileSecret. If you need to change the bot file name or secret later on, go to **App Service Settings -> Application Settings** section in the portal. 
+Save the .bot file secret for later use. The new encrypted .bot file is used in the Azure portal with the botFileSecret. If you need to change the bot file name or secret later on, go to **App Service Settings -> Application Settings** section in the portal. Note that in the appsettings.json or .env file, the bot file name is updated with the latest bot file that was created.  
 
 ### Test your bot
 In the emulator, use production endpoint to test your app. If you want to test it locally, make sure your bot is running on your local machine. 
