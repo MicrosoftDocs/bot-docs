@@ -1,12 +1,13 @@
 ﻿<Type Name="NumberPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class NumberPrompt&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Prompt&lt;T&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberPrompt`1&lt;T&gt; extends Microsoft.Bot.Builder.Dialogs.Prompt`1&lt;!T&gt;" />
+  <TypeSignature Language="C#" Value="public class NumberPrompt&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Prompt&lt;T&gt; where T : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberPrompt`1&lt;struct .ctor (class System.ValueType) T&gt; extends Microsoft.Bot.Builder.Dialogs.Prompt`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1" />
   <TypeSignature Language="VB.NET" Value="Public Class NumberPrompt(Of T)&#xA;Inherits Prompt(Of T)" />
-  <TypeSignature Language="F#" Value="type NumberPrompt&lt;'T&gt; = class&#xA;    inherit Prompt&lt;'T&gt;" />
+  <TypeSignature Language="F#" Value="type NumberPrompt&lt;'T (requires 'T : struct)&gt; = class&#xA;    inherit Prompt&lt;'T (requires 'T : struct)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -29,11 +30,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;!T&gt; validator, string defaultLocale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{`0},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, Optional validator As PromptValidator(Of T) = null, Optional defaultLocale As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt; : string * Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;'T&gt; * string -&gt; Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt; (dialogId, validator, defaultLocale)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T (requires 'T : struct)&gt; : string * Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;'T (requires 'T : struct)&gt; * string -&gt; Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T (requires 'T : struct)&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T (requires 'T : struct)&gt; (dialogId, validator, defaultLocale)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -53,11 +55,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultLocale" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1.DefaultLocale" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultLocale As String" />
-      <MemberSignature Language="F#" Value="member this.DefaultLocale : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T&gt;.DefaultLocale" />
+      <MemberSignature Language="F#" Value="member this.DefaultLocale : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;'T (requires 'T : struct)&gt;.DefaultLocale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -77,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -108,6 +112,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;&gt;</ReturnType>

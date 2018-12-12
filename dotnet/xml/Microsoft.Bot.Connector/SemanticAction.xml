@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,19 +36,19 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SemanticAction (string id = null, System.Collections.Generic.IDictionary&lt;string,object&gt; entities = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; entities) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SemanticAction.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional entities As IDictionary(Of String, Object) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.SemanticAction : string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; Microsoft.Bot.Connector.SemanticAction" Usage="new Microsoft.Bot.Connector.SemanticAction (id, entities)" />
+      <MemberSignature Language="C#" Value="public SemanticAction (string id = null, System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Connector.Entity&gt; entities = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Connector.Entity&gt; entities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SemanticAction.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Bot.Connector.Entity})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional entities As IDictionary(Of String, Entity) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.SemanticAction : string * System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Connector.Entity&gt; -&gt; Microsoft.Bot.Connector.SemanticAction" Usage="new Microsoft.Bot.Connector.SemanticAction (id, entities)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="entities" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Connector.Entity&gt;" />
       </Parameters>
       <Docs>
         <param name="id">To be added.</param>
@@ -56,15 +58,16 @@
       </Docs>
     </Member>
     <Member MemberName="Entities">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Entities { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Entities" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Connector.Entity&gt; Entities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Connector.Entity&gt; Entities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.SemanticAction.Entities" />
-      <MemberSignature Language="VB.NET" Value="Public Property Entities As IDictionary(Of String, Object)" />
-      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IDictionary&lt;string, obj&gt; with get, set" Usage="Microsoft.Bot.Connector.SemanticAction.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As IDictionary(Of String, Entity)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Connector.Entity&gt; with get, set" Usage="Microsoft.Bot.Connector.SemanticAction.Entities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -72,7 +75,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Connector.Entity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -90,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">

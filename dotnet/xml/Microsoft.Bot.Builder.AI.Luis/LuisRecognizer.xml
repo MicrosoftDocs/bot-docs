@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="application" Type="Microsoft.Bot.Builder.AI.Luis.LuisApplication" />
@@ -40,6 +42,32 @@
       </Parameters>
       <Docs>
         <param name="application">To be added.</param>
+        <param name="predictionOptions">To be added.</param>
+        <param name="includeApiResults">To be added.</param>
+        <param name="clientHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisRecognizer (Microsoft.Bot.Configuration.LuisService service, Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions = null, bool includeApiResults = false, System.Net.Http.HttpClientHandler clientHandler = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Configuration.LuisService service, class Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, bool includeApiResults, class System.Net.Http.HttpClientHandler clientHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.#ctor(Microsoft.Bot.Configuration.LuisService,Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions,System.Boolean,System.Net.Http.HttpClientHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (service As LuisService, Optional predictionOptions As LuisPredictionOptions = null, Optional includeApiResults As Boolean = false, Optional clientHandler As HttpClientHandler = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.LuisRecognizer : Microsoft.Bot.Configuration.LuisService * Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions * bool * System.Net.Http.HttpClientHandler -&gt; Microsoft.Bot.Builder.AI.Luis.LuisRecognizer" Usage="new Microsoft.Bot.Builder.AI.Luis.LuisRecognizer (service, predictionOptions, includeApiResults, clientHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Configuration.LuisService" />
+        <Parameter Name="predictionOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions" />
+        <Parameter Name="includeApiResults" Type="System.Boolean" />
+        <Parameter Name="clientHandler" Type="System.Net.Http.HttpClientHandler" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
         <param name="predictionOptions">To be added.</param>
         <param name="includeApiResults">To be added.</param>
         <param name="clientHandler">To be added.</param>
@@ -57,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,6 +105,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -97,6 +127,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -125,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -145,6 +177,34 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="turnContext">To be added.</param>
         <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopIntent">
+      <MemberSignature Language="C#" Value="public static string TopIntent (Microsoft.Bot.Builder.RecognizerResult results, string defaultIntent = &quot;None&quot;, double minScore = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TopIntent(class Microsoft.Bot.Builder.RecognizerResult results, string defaultIntent, float64 minScore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.TopIntent(Microsoft.Bot.Builder.RecognizerResult,System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TopIntent (results As RecognizerResult, Optional defaultIntent As String = &quot;None&quot;, Optional minScore As Double = 0) As String" />
+      <MemberSignature Language="F#" Value="static member TopIntent : Microsoft.Bot.Builder.RecognizerResult * string * double -&gt; string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.TopIntent (results, defaultIntent, minScore)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="Microsoft.Bot.Builder.RecognizerResult" />
+        <Parameter Name="defaultIntent" Type="System.String" />
+        <Parameter Name="minScore" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <param name="defaultIntent">To be added.</param>
+        <param name="minScore">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
