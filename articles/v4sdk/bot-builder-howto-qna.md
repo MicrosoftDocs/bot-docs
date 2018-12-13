@@ -58,8 +58,9 @@ First, add the information required to access your knowledge base including host
       "type": "qna",
       "name": "QnABot",
       "KbId": "<YOUR_KNOWLEDGE_BASE_ID>",
-      "Hostname": "https://<YOUR_HOSTNAME>.azurewebsites.net/qnamaker",
-      "EndpointKey": "<YOUR_ENDPOINT_KEY>"
+      "subscriptionKey": "<Your_Azure_Subscription_Key>", // Used when creating your QnA service.
+      "endpointKey": "<Your_Recorded_Endpoint_Key>",
+      "hostname": "<Your_Recorded_Hostname>",
       "id": "117"
     }
   ],
