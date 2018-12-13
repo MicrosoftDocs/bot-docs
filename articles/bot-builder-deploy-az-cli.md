@@ -19,6 +19,7 @@ After you have created your bot and tested it locally, you can deploy it to Azur
 
 In this article, we'll show you how to deploy C# and JavaScript bots to Azure using `az` and `msbot` cli. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
+
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
@@ -26,7 +27,8 @@ In this article, we'll show you how to deploy C# and JavaScript bots to Azure us
 - Install the latest `botservice` extension for the `az` tool.
   - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
-- Install latest released version of [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Install latest released version of the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
