@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/11/2018
+ms.date: 12/13/2018
 ---
 
 # Deploy your bot using Azure CLI
@@ -62,11 +62,11 @@ Before proceeding, read the instructions that apply to you based on the type of 
 
 **MSA email account**
 
-If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the appId and appSecret to use with `msbot clone services` command. 
+If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the app ID and app password on the Application Registration Portal to use with `msbot clone services` command.
 
-- Go to the [Application Registration Portal](https://apps.dev.microsoft.com/). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. 
-- Save both application id and the new password you just generated, so you that can use them with `msbot clone services` command. 
-- To deploy, use the command that applies to your bot.
+- To get the app ID and app password, go to the [**Application Registration Portal**](https://apps.dev.microsoft.com/). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.  
+- Save both application ID and the new password you just generated, so you that can use them with `msbot clone services` command. 
+- To clone the bot code from Azure to your local computer, use the command that applies to your bot.
 
 # [C#](#tab/csharp)
 
@@ -85,7 +85,7 @@ If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email 
 
 **Business or school account**
 
-If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application id and password. To deploy, use the command that applies to your bot.
+If your are using an email account provided to you by your business or school to log in to Azure, you don't need to create the application ID and password. To deploy, use the command that applies to your bot.
 
 # [C#](#tab/csharp)
 
