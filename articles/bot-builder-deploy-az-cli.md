@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/13/2018
+ms.date: 12/14/2018
 ---
 
 # Deploy your bot using Azure CLI
@@ -17,19 +17,16 @@ ms.date: 12/13/2018
 
 After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
-In this article, we'll show you how to deploy C# and JavaScript bots to Azure using `msbot` tool. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+In this article, we'll show you how to deploy C# and JavaScript bots to Azure using `az` and `msbot` cli. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
-- Install [.NET Core SDK](https://dotnet.microsoft.com/download) >=v2.2.
 - Install the latest version of the [Azure cli tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 - Install the latest `botservice` extension for the `az` tool.
   - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
-- Install the latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
-  - You'll need [LUIS CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#installation) if your bot includes LUIS or Dispatch resources.
-  - You'll need [QnA Maker CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#as-a-cli) if your bot includes QnA Maker resources.
-- Install the latest [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
+- Install latest released version of [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
