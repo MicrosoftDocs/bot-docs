@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-In this tutorial, we demonstrate how to use the Dispatch service to route utterances when there are multiple LUIS models and QnA maker services for different scenarios supported by a bot. In this case, we configure dispatch with multiple LUIS models for conversations around home automation and weather information, plus QnA maker service to answer questions based on a FAQ text file as input. This sample combines the following services.
+In this tutorial, we demonstrate how to use the Dispatch service to route utterances when there are multiple LUIS models and QnA maker services for different scenarios supported by a bot. In this case, we configure Dispatch with multiple LUIS models for conversations around home automation and weather information, plus QnA maker service to answer questions based on a FAQ text file as input. This sample combines the following services.
 
 | Name | Description |
 |------|------|
@@ -32,7 +32,101 @@ In this tutorial, we demonstrate how to use the Dispatch service to route uttera
 
 ## Create the services and test the bot
 
-Follow the **README** instructions for [C#](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/14.nlp-with-dispatch/README.md) or [JS](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/14.nlp-with-dispatch/README.md) to build and run the sample using the emulator. 
+You may follow the **README** instructions for [C#](https://aka.ms/dispatch-sample-readme-cs) or [JS](https://aka.ms/dispatch-sample-readme-js) to create this bot using Command Line Interface calls, or follow the steps below to manually create your bot using the Azure, LUIS, and QnAMaker User Interfaces.
+
+ ### Create your bot using service UI
+ 
+To begin manually creating your bot, download the following 4 files into a local folder:
+[home-automation.json](https://aka.ms/dispatch-home-automation-json), 
+[weather.json](https://aka.ms/dispatch-weather-json), 
+[nlp-with-dispatchDispatch.json](https://aka.ms/dispatch-dispatch-json), 
+[QnAMaker.tsv](https://aka.ms/dispatch-qnamaker-tsv)
+
+### Manually create LUIS apps
+
+Log into the [LUIS web portal](https://www.luis.ai/). Under section _My apps_ select the Tab _Import new app_. The following Dialog Box will appear:
+
+![Import LUIS json file](./media/tutorial-dispatch/import-new-luis-app.png)
+
+select the button _Choose app file_ and select the downloaded file 'home-automation.json'. Leave the optional name field blank. Select _Done_.
+
+Once LUIS opens up your Home Automation app, select the _Train_ button. This will train your app using the set of utterances you just imported using the 'home-automation.json' file.
+
+When training is complete, select the _Publish_ button. The following Dialog Box will appear:
+
+![Publish LUIS app](./media/tutorial-dispatch/publish-luis-app.png)
+
+Choose the 'production' environment and then select the _Publish_ button.
+
+Once your new LUIS app has been published, select the _MANAGE_ Tab. From the 'Application Information' page, record the values `Application ID` and `Display name`. From the 'Key and Endpoints' page, record the values `Authoring Key` and `Region`. These values will later be used by your 'nlp-with-dispatch.bot' file.
+
+Once completed, repeat these same steps for both your locally downloaded 'weather.json' and 'nlp-with-dispatchDispatch.json' files.
+
+### Manually create QnA Maker app
+
+The first step to setting up a QnA Maker knowledge base is to first set up a QnA Maker service in Azure. To do that, follow the step-bystep instructions found [here](https://aka.ms/create-qna-maker). Now log into the [QnAMaker web portal](https://qnamaker.ai). Move down to Step 2
+
+![Create QnA Step 2](./media/tutorial-dispatch/create-qna-step-2.png)
+
+and select
+1. Your Azure AD account.
+1. Your Azure subscription name.
+1. The name you created for your QnA Maker service. (If your Azure QnA service does not initially appear in this pull down list, try refreshing the page.) 
+
+Move to Step 3
+
+![Create QnA Step 3](./media/tutorial-dispatch/create-qna-step-3.png)
+
+Provide a name for your QnA Maker knowledgebase. For this example we will be using the name 'sample-qna'.
+
+Move to Step 4
+
+![Create QnA Step 4](./media/tutorial-dispatch/create-qna-step-4.png)
+
+select the option _+ Add File_ and select the downloaded file 'QnAMaker.tsv'
+
+There is an additional selection to add a _Chit-chat_ personality to your knowledgebase but our example does not include this option.
+
+Select _Save and train_ and when finished select the _PUBLISH_ Tab and publish your app.
+
+Once your QnA Maker app is published, select the _SETTINGS_ Tab, and scroll down to 'Deployment details'. Record the following values from the _Postman_ Sample HTTP request.
+
+```
+POST /knowledgebases/<Your_Knowledgebase_Id>/generateAnswer
+Host: <Your_Hostname>
+Authorization: EndpointKey <Your_Endpoint_Key>
+```
+These values will later be used by your 'nlp-with-dispatch.bot' file.
+
+### Manually update your .bot file
+
+Once all of your service apps are created, the information for each needs to be added into your 'nlp-with-dispatch.bot' file. Open this file within the C# or JS Sample file that you previously downloaded. Add the following values to each section of "type": "luis" or "type": "dispatch"
+
+```
+"appId": "<Your_Recorded_App_Id>",
+"authoringKey": "<Your_Recorded_Authoring_Key>",
+"subscriptionKey": "<Your_Recorded_Authoring_Key>",
+"version": "0.1",
+"region": "<Your_Recorded_Region>",
+```
+
+For the section of "type": "qna" Add the following values:
+
+```
+"type": "qna",
+"name": "sample-qna",
+"id": "201",
+"kbId": "<Your_Recorded_Knowledgebase_Id>",
+"subscriptionKey": "<Your_Azure_Subscription_Key>", // Used when creating your QnA service.
+"endpointKey": "<Your_Recorded_Endpoint_Key>",
+"hostname": "<Your_Recorded_Hostname>"
+```
+
+When all changes are inplace, save this file.
+
+### Test your bot
+
+Now run the sample using the emulator. Once the emulator is opened, select the 'nlp-with-dispatch.bot' file.
 
 For your reference, here are some of the questions and commands that are covered by the services we've included:
 
@@ -140,13 +234,44 @@ private static BotServices InitBotServices(BotConfiguration config)
 }
 ```
 
-<!--
 # [JavaScript](#tab/javascript)
 
+The sample code uses predefined naming constants to identify the various sections of your .bot file. If you have modified any section names from the original sample namings in your _nlp-with-dispatch.bot_ file, be sure to locate the associated constant declaration in the **bot.js**, **homeAutomation.js**, **qna.js**, or **weather.js** file and change that entry to the modified name.  
 ```javascript
-```
--->
+// In file bot.js
+// this is the LUIS service type entry in the .bot file.
+const DISPATCH_CONFIG = 'nlp-with-dispatchDispatch';
 
+// In file homeAutomation.js
+// this is the LUIS service type entry in the .bot file.
+const LUIS_CONFIGURATION = 'Home Automation';
+
+// In file qna.js
+// Name of the QnA Maker service in the .bot file.
+const QNA_CONFIGURATION = 'sample-qna';
+
+// In file weather.js
+// this is the LUIS service type entry in the .bot file.
+const WEATHER_LUIS_CONFIGURATION = 'Weather';
+```
+
+In **bot.js** the information contained within configuration file _nlp-with-dispatch.bot_ is used to connect your dispatch bot to the various services. Each constructor looks for and uses the appropriate sections of the configuration file based on the section names detailed above.
+
+```javascript
+class DispatchBot {
+    constructor(conversationState, userState, botConfig) {
+        //...
+        this.homeAutomationDialog = new HomeAutomation(conversationState, userState, botConfig);
+        this.weatherDialog = new Weather(botConfig);
+        this.qnaDialog = new QnA(botConfig);
+
+        this.conversationState = conversationState;
+        this.userState = userState;
+
+        // dispatch recognizer
+        const dispatchConfig = botConfig.findServiceByNameOrId(DISPATCH_CONFIG);
+        //...
+```
 ---
 
 ### Calling the services from your bot
@@ -185,13 +310,19 @@ else
 }
 ```
 
-<!--
 # [JavaScript](#tab/javascript)
 
-```javascript
-```
--->
+In the **bot.js** `onTurn` method, we check for incoming messages from the user. If type _ActivityType.Message_ is received, this message is sent out via the bot's _dispatchRecognizer_.
 
+```javascript
+if (turnContext.activity.type === ActivityTypes.Message) {
+    // determine which dialog should fulfill this request
+    // call the dispatch LUIS model to get results.
+    const dispatchResults = await this.dispatchRecognizer.recognize(turnContext);
+    const dispatchTopIntent = LuisRecognizer.topIntent(dispatchResults);
+    //...
+ }
+```
 ---
 
 ### Working with the recognition results
@@ -279,32 +410,88 @@ private async Task DispatchToLuisModelAsync(
 }
 ```
 
-<!--
 # [JavaScript](#tab/javascript)
 
-```javascript
-```
--->
+When the model produces a result, it indicates which service can most appropriately process the utterance. The code in this bot routes the request to the corresponding service.
 
+```javascript
+switch (dispatchTopIntent) {
+   case HOME_AUTOMATION_INTENT:
+      await this.homeAutomationDialog.onTurn(turnContext);
+      break;
+   case WEATHER_INTENT:
+      await this.weatherDialog.onTurn(turnContext);
+      break;
+   case QNA_INTENT:
+      await this.qnaDialog.onTurn(turnContext);
+      break;
+   case NONE_INTENT:
+      default:
+      // Unknown request
+       await turnContext.sendActivity(`I do not understand that.`);
+       await turnContext.sendActivity(`I can help with weather forecast, turning devices on and off and answer general questions like 'hi', 'who are you' etc.`);
+ }
+ 
+ // In homeAutomation.js
+ async onTurn(turnContext) {
+    // make call to LUIS recognizer to get home automation intent + entities
+    const homeAutoResults = await this.luisRecognizer.recognize(turnContext);
+    const topHomeAutoIntent = LuisRecognizer.topIntent(homeAutoResults);
+    // depending on intent, call turn on or turn off or return unknown
+    switch (topHomeAutoIntent) {
+       case HOME_AUTOMATION_INTENT:
+          await this.handleDeviceUpdate(homeAutoResults, turnContext);
+          break;
+       case NONE_INTENT:
+       default:
+         await turnContext.sendActivity(`HomeAutomation dialog cannot fulfill this request.`);
+    }
+}
+    
+// In weather.js
+async onTurn(turnContext) {
+   // Call weather LUIS model.
+   const weatherResults = await this.luisRecognizer.recognize(turnContext);
+   const topWeatherIntent = LuisRecognizer.topIntent(weatherResults);
+   // Get location entity if available.
+   const locationEntity = (LOCATION_ENTITY in weatherResults.entities) ? weatherResults.entities[LOCATION_ENTITY][0] : undefined;
+   const locationPatternAnyEntity = (LOCATION_PATTERNANY_ENTITY in weatherResults.entities) ? weatherResults.entities[LOCATION_PATTERNANY_ENTITY][0] : undefined;
+   // Depending on intent, call "Turn On" or "Turn Off" or return unknown.
+   switch (topWeatherIntent) {
+      case GET_CONDITION_INTENT:
+         await turnContext.sendActivity(`You asked for current weather condition in Location = ` + (locationEntity || locationPatternAnyEntity));
+         break;
+      case GET_FORECAST_INTENT:
+         await turnContext.sendActivity(`You asked for weather forecast in Location = ` + (locationEntity || locationPatternAnyEntity));
+         break;
+      case NONE_INTENT:
+      default:
+         wait turnContext.sendActivity(`Weather dialog cannot fulfill this request.`);
+   }
+}
+    
+// In qna.js
+async onTurn(turnContext) {
+   // Call QnA Maker and get results.
+   const qnaResult = await this.qnaRecognizer.generateAnswer(turnContext.activity.text, QNA_TOP_N, QNA_CONFIDENCE_THRESHOLD);
+   if (!qnaResult || qnaResult.length === 0 || !qnaResult[0].answer) {
+       await turnContext.sendActivity(`No answer found in QnA Maker KB.`);
+       return;
+    }
+    // respond with qna result
+    await turnContext.sendActivity(qnaResult[0].answer);
+}
+```
 ---
 
-## Evaluate the dispatcher's performance
+## Edit intents to improve performance
 
-Sometimes there are user messages that are provided as examples in both the LUIS apps and the QnA maker services, and the combined LUIS app that Dispatch generates won't perform well for those inputs. You can check your app's performance using the `eval` option.
+Once your bot is running, it is possible to improve the bot's performance by removing similar or overlapping utterances. For example, let's say that in the `Home Automation` LUIS app  requests like "turn my lights on" map to a "TurnOnLights" intent, but requests like "Why won't my lights turn on?" map to a "None" intent so that they can be passed on to QnA Maker. When you combine the LUIS app and the QnA Maker service using dispatch, you need to do one of the following:
 
-```shell
-dispatch eval
-```
+* Remove the "None" intent from the original `Home Automation` LUIS app, and instead add the utterances from that intent to the "None" intent in the dispatcher app.
+* If you don't remove the "None" intent from the original LUIS app, you will instead need to add logic into your bot to pass the messages that match your "None" intent on to the QnA maker service.
 
-Running `dispatch eval` generates a **Summary.html** file that provides statistics on the predicted performance of the language model. You can run `dispatch eval` on any LUIS app, not just LUIS apps created by the dispatch tool.
-
-### Edit intents for duplicates and overlaps
-
-Review example utterances that are flagged as duplicates in **Summary.html**, and remove similar or overlapping examples. For example, let's say that in the `Home Automation` LUIS app  requests like "turn my lights on" map to a "TurnOnLights" intent, but requests like "Why won't my lights turn on?" map to a "None" intent so that they can be passed on to QnA Maker. When you combine the LUIS app and the QnA Maker service using dispatch, you need to do one of the following:
-
-* Remove the "None" intent from the original `Home Automation` LUIS app, and add the utterances in that intent to the "None" intent in the dispatcher app.
-* If you don't remove the "None" intent from the original LUIS app, you need to add logic in your bot to pass those messages that match that intent on to the QnA maker service.
-
+Either of the above two actions will reduce the number of times that your bot responds back to your users with the message, 'Couldn't find an answer.' 
 
 ## Additional resources 
 
