@@ -58,12 +58,22 @@ Navigate to the bot folder.
 cd <local-bot-folder>
 ```
 
-### Create and download a Web App Bot
+### Create a Web App Bot
 
 Create the bot resource into which you will publish your bot.
 
+Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
+
+#### MSA email account
+
+If you are using an [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the app ID and app password on the Application Registration Portal to use with `az bot create` command.
+
+1. Go to the [**Application Registration Portal**](https://apps.dev.microsoft.com/).
+1. Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.
+1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.  
+
 ```cmd
-az bot create --name <bot-resource-name> --kind webapp --location <location> --version v4 --lang <language> --verbose --resource-group <resource-group-name>
+az bot create --kind webapp --name <bot-resource-name> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name> --appid "<application-id>" --password "<application-password>" --verbose
 ```
 
 | Option | Description |
@@ -72,6 +82,23 @@ az bot create --name <bot-resource-name> --kind webapp --location <location> --v
 | --location | Geographic location used to create the bot service resources. For example, `eastus`, `westus`, `westus2`, and so on. |
 | --lang | The language to use to create the bot: `Csharp`, or `Node`; default is `Csharp`. |
 | --resource-group | Name of resource group in which to create the bot. You can configure the default group using `az configure --defaults group=<name>`. |
+| --appid | The Microsoft account ID (MSA ID) to be used with the bot. |
+| --password | The Microsoft account (MSA) password for the bot. |
+
+#### Business or school account
+
+```cmd
+az bot create --kind webapp --name <bot-resource-name> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name>
+```
+
+| Option | Description |
+|:---|:---|
+| --name | A unique name that is used to deploy the bot in Azure. It could be the same name as your local bot. DO NOT include spaces in the name. |
+| --location | Geographic location used to create the bot service resources. For example, `eastus`, `westus`, `westus2`, and so on. |
+| --lang | The language to use to create the bot: `Csharp`, or `Node`; default is `Csharp`. |
+| --resource-group | Name of resource group in which to create the bot. You can configure the default group using `az configure --defaults group=<name>`. |
+
+### Download the bot from Azure
 
 Next, download the bot you just created. This command will create a subdirectory under the save-path; however, the specified path must already exist.
 
