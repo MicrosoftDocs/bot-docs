@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/25/2018
+ms.date: 12/17/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -56,7 +56,9 @@ To send the user a single piece of content like an image or a video, you can sen
 
 ```javascript
 const { ActionTypes, ActivityTypes, CardFactory } = require('botbuilder');
+
 // Call function to get an attachment.
+const reply = { type: ActivityTypes.Message };
 reply.attachments = [this.getInternetAttachment()];
 reply.text = 'This is an internet attachment.';
 // Send the activity to the user.
@@ -126,30 +128,32 @@ const card = CardFactory.heroCard('', undefined,
 buttons, { text: 'You can upload an image or select one of the following choices.' });
 
 // add card to Activity.
+const reply = { type: ActivityTypes.Message };
 reply.attachments = [card];
 
 // Send hero card to the user.
 await turnContext.sendActivity(reply);
 ```
+
 ---
 
 ## Process events within rich cards
 
-To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card.
+To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card. Each card action has a _type_ and _value_.
 
-To function correctly, assign an action type to each clickable item on the card. This table lists the valid values for the type property of a card action object and describes the expected contents of the value property for each type.
+To function correctly, assign an action type to each clickable item on the card. This table lists and describes the available action types and what should be in the associated value property.
 
-| Type | Value |
-| :---- | :---- |
-| openUrl | URL to be opened in the built-in browser. Responds to Tap or Click by opening the URL. |
-| imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
-| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). Some client applications may display this text in the message feed, where it will be visible to all conversation participants. |
-| call | Destination for a phone call in this format: `tel:123123123123` Responds to Tap or Click by initiating a call.|
-| playAudio | URL of audio to be played. Responds to Tap or Click by playing the audio. |
-| playVideo | URL of video to be played. Responds to Tap or Click by playing the video. |
-| showImage | URL of image to be displayed. Responds to Tap or Click by displaying the image. |
-| downloadFile | URL of file to be downloaded.  Responds to Tap or Click by downloading the file. |
-| signin | URL of OAuth flow to be initiated. Responds to Tap or Click by initiating signin. |
+| Type | Description | Value |
+| :---- | :---- | :---- |
+| openUrl | Opens a URL in the built-in browser. | The URL to open. |
+| imBack | Sends a message to the bot, and posts a visible response in the chat. | Text of the message to send. |
+| postBack | Sends a message to the bot, and may not post a visible response in the chat. | Text of the message to send. |
+| call | Initiates a phone call. | Destination for the phone call in this format: `tel:123123123123`. |
+| playAudio | Plays audio. | The URL of the audio to play. |
+| playVideo | Plays a video. | The URL of video to play. |
+| showImage | Displays an image. | The URL of the image to display. |
+| downloadFile | Downloads a file. | The URL of the file to download. |
+| signin | Initiates an OAuth signin process. | The URL of the OAuth flow to initiate. |
 
 ## Hero card using various event types
 

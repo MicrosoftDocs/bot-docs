@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/13/2018
+ms.date: 11/19/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -55,6 +55,10 @@ Send a message to your bot, and the bot will respond back with a message.
 
 > [!NOTE]
 > If you see that the message can not be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
+
+## Additional resources
+
+See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
 
 ## Next steps
 
