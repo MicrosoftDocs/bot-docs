@@ -308,6 +308,32 @@ The prompt recognizer result has the following properties:
 
 ### Implement validation code
 
+You associate custom validation with a prompt at initialization time, in the bot's constructor.
+
+# [C#](#tab/csharp)
+
+```csharp
+// ...
+_dialogSet = new DialogSet(_accessors.DialogStateAccessor);
+_dialogSet.Add(new NumberPrompt<int>(PartySizePrompt, PartySizeValidatorAsync));
+_dialogSet.Add(new ChoicePrompt(LocationPrompt));
+_dialogSet.Add(new DateTimePrompt(ReservationDatePrompt, DateValidatorAsync));
+// ...
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+// ...
+this.dialogSet = new DialogSet(this.dialogStateAccessor);
+this.dialogSet.add(new NumberPrompt(PARTY_SIZE_PROMPT, this.partySizeValidator));
+this.dialogSet.add(new ChoicePrompt (LOCATION_PROMPT));
+this.dialogSet.add(new DateTimePrompt(RESERVATION_DATE_PROMPT, this.dateValidator));
+// ...
+```
+
+---
+
 **Party-size validator**
 
 We limit reservations to parties of 6 to 20 people.

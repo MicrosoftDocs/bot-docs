@@ -89,6 +89,10 @@ In a terminal or command prompt change directories to the one created for your b
 Send a message to your bot, and the bot will respond back with a message.
 ![Emulator running](../media/emulator-v4/js-quickstart.png)
 
+## Additional resources
+
+See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
