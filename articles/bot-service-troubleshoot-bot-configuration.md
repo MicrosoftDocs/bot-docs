@@ -34,7 +34,7 @@ To see if the bot is running:
 1. Open the **Overview** pane.
 1. Copy the **Messaging endpoint** and paste it into your browser.
 
-If the endpoint returns HTTP Error 405, that means the bot is reachable and the bot is able to respond to messages. You should investigate whether your bot [times out](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) or [fails with an HTTP 5xx error](https://github.com/daveta/analytics/blob/master/troubleshooting_500.md).
+If the endpoint returns HTTP Error 405, that means the bot is reachable and the bot is able to respond to messages. You should investigate whether your bot [times out](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) or [fails with an HTTP 5xx error](bot-service-troubleshoot-500-errors.md).
 
 If the endpoint returns an error "This site can't be reached" or "can't reach this page", that means that your bot is down and you need to redeploy it.
 
