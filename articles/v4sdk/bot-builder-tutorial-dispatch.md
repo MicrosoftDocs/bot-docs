@@ -60,7 +60,7 @@ Choose the 'production' environment and then select the _Publish_ button.
 
 Once your new LUIS app has been published, select the _MANAGE_ Tab. From the 'Application Information' page, record the values `Application ID` and `Display name`. From the 'Key and Endpoints' page, record the values `Authoring Key` and `Region`. These values will later be used by your 'nlp-with-dispatch.bot' file.
 
-Once completed, repeat these same steps for both your locally downloaded 'weather.json' and 'nlp-with-dispatchDispatch.json' files.
+Once completed, _Train_ and _Publish_ both your LUIS weather app and your LUIS dispatch app by repeating these same steps for the locally downloaded 'weather.json' and 'nlp-with-dispatchDispatch.json' files.
 
 ### Manually create QnA Maker app
 

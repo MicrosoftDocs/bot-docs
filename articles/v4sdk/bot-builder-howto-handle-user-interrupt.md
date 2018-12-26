@@ -468,7 +468,7 @@ If all else fails, you should send a default response instead of doing nothing a
 
 You can check against the context **responded** flag at the end of the bot logic to see if the bot sent anything back to the user during the turn. If the bot processes the user's input but does not respond, chances are that the bot does not know what to do with the input. In that case, you can catch it and send the user a default message.
 
-If the default for your bot is to give the user a `mainMenu` dialog. It's up to you to decide what experience your user will have in this situation for your bot.
+If the default for your bot is to give the user a `mainMenu` dialog, you must decide what bot experience your user will have in this situation.
 
 # [C#](#tab/csharptab)
 
