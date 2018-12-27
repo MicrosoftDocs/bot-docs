@@ -36,7 +36,7 @@ You may follow the **README** instructions for [C#](https://aka.ms/dispatch-samp
 
  ### Create your bot using service UI
  
-To begin manually creating your bot, download the following 4 files into a local folder:
+To begin manually creating your bot, download the following 4 files located in the GitHub [BotFramework-Samples](https://github.com/Microsoft/BotFramework-Samples) repository into a local folder:
 [home-automation.json](https://aka.ms/dispatch-home-automation-json), 
 [weather.json](https://aka.ms/dispatch-weather-json), 
 [nlp-with-dispatchDispatch.json](https://aka.ms/dispatch-dispatch-json), 
