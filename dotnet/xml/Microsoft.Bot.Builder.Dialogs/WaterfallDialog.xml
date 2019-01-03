@@ -15,7 +15,7 @@
   <Docs>
     <summary>
             Dialog optimized for prompting a user with a series of questions. Waterfalls accept a stack of
-            functions which will be executed in sequence.Each waterfall step can ask a question of the user
+            functions which will be executed in sequence. Each waterfall step can ask a question of the user
             and the users response will be passed as an argument to the next waterfall step.
             </summary>
     <remarks>To be added.</remarks>
