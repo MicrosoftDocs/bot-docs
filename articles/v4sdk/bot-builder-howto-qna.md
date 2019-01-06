@@ -31,7 +31,7 @@ After publishing your knowledge base, you need to record the following values to
 - With your knowledge base open, select the **Settings**. Record the value shown for _service name_ as <your_kb_name>
 - Scroll down to find **Deployment details** and record the following values:
    - POST /knowledgebases/<your_knowledge_base_id>/generateAnswer
-   - Host: https://<you_hostname>.azurewebsites.net/qnamaker
+   - Host: <your_hostname>/qnamaker
    - Authorization: EndpointKey <your_endpoint_key>
 
 ## Installing Packages
