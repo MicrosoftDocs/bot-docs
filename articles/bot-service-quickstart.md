@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 11/15/2018
+ms.date: 01/08/2019
 ---
 
 ::: moniker range="azure-bot-service-3.0"
@@ -76,6 +76,7 @@ In this topic, you learned how to create a **Basic** Web App Bot/Functions Bot b
 ::: moniker range="azure-bot-service-4.0"
 
 # Create a bot with Azure Bot Service
+
 [!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
 Azure Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Builder SDK v4.
@@ -121,6 +122,12 @@ In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service
 ![Azure Webchat test](./media/azure-bot-quickstarts/azure-webchat-test.png)
 
 Enter a message and your bot should respond.
+
+## Download code
+You can download the code to work on it locally. 
+1. In the **Bot Management** section, click **Build**. 
+1. Click on **Download Bot source code** link in the right-pane. 
+1. Follow the prompts to download the code.
 
 ## Next steps
 
