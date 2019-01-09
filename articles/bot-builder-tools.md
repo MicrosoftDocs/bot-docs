@@ -55,7 +55,6 @@ user: thanks
 bot:
 Here's a form for you
 [Attachment=card.json adaptivecard]
-
 ```
 
 ### Create a transcript file from .chat file
@@ -93,30 +92,33 @@ For example, you can create multiple LUIS intents in a single .lu file as follow
 
 The .lu file format supports also QnA pairs using the following notation: 
 
-```LUDown
+~~~LUDown
 > comment
 ### ? question ?
   ```markdown
     answer
   ```
+~~~
 
 The LUDown tool will automatically separate question and answers into a qnamaker JSON file that you can then use to create your new [QnaMaker.ai](http://qnamaker.ai) knowledge base.
 
-```LUDown
+~~~LUDown
 ### ? How do I change the default message for QnA Maker?
   ```markdown
   You can change the default message if you use the QnAMakerDialog. 
-  See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details. 
+  See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
   ```
+~~~
 
 You can also add multiple questions to the same answer by simply adding new lines of variations of questions for a single answer.
 
-```LUDown
+~~~LUDown
 ### ? What is your name?
 - What should I call you?
   ```markdown
     I'm the echoBot! Nice to meet you.
   ```
+~~~
 
 ### Generate .json models with LUDown
 
@@ -227,21 +229,37 @@ The Bot Framework [Emulator](bot-service-debug-emulator.md) is a desktop applica
 
 ## Publish
 
-You can use the Azure CLI to create, download, and publish your bot to Azure Bot Service. Install the bot extension via: 
+You can use the Azure CLI to create, download, and publish your bot to Azure Bot Service.
+
+With msbot 4.3.2 and later, you need Azure CLI version 2.0.53 or later. If you installed the botservice extension, remove it with this command.
+
 ```shell
-az extension add -n botservice
+az extension remove --name botservice
 ```
 
 ### Create Azure Bot Service bot
 
-Note: You must use the latest version of the `az cli`. Please upgrade it, so that az cli can work with MSBot tool. 
+Note: You must use the latest version of the `az cli`. Please upgrade it, so that az cli can work with MSBot tool.
 
-Login to your azure account via 
+Login to your azure account via
+
 ```shell
 az login
 ```
 
-Once you are loged in, you can create a new Azure Bot Service bot using: 
+If you don't already have a resource group to which to publish your bot, create one:
+
+```shell
+az group create --name <resource-group-name> --location <geographic-location> --verbose
+```
+
+| Option | Description |
+|:---|:---|
+| --name | A unique name for the resource group. DO NOT include spaces or underscores in the name. |
+| --location | Geographic location used to create the resource group. For example, `eastus`, `westus`, `westus2`, and so on. Use `az account list-locations` for a list of locations. |
+
+Then, create the bot resource into which you will publish your bot.
+
 ```shell
 az bot create [options]
 ```

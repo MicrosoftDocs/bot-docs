@@ -23,7 +23,7 @@ The first step in troubleshooting a bot is to test it in Web Chat. This will all
 
 ![Test In Web Chat](./media/test-in-webchat.png)
 
-If the bot responds with the expected output, go to [Bot does not work in Web Chat](#bot-does-not-work-in-web-chat). Otherwise, go to [Bot works in Web Chat but not in other channels](#bot-works-in-web-chat-but-not-in-other-channels).
+If the bot does not respond with the expected output, go to [Bot does not work in Web Chat](#bot-does-not-work-in-web-chat). Otherwise, go to [Bot works in Web Chat but not in other channels](#bot-works-in-web-chat-but-not-in-other-channels).
 
 ## Bot does not work in Web Chat
 

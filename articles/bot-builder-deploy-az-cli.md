@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/14/2018
+ms.date: 01/07/2019
 ---
 
 # Deploy your bot using Azure CLI
@@ -19,16 +19,20 @@ After you have created your bot and tested it locally, you can deploy it to Azur
 
 In this article, we'll show you how to deploy C# and JavaScript bots to Azure using `az` and `msbot` cli. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
-
 ## Prerequisites
+
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install the latest version of the [Azure cli tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
-- Install the latest `botservice` extension for the `az` tool.
-  - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
 - Install latest released version of the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
+
+With msbot 4.3.2 and later, you need Azure CLI version 2.0.53 or later. If you installed the botservice extension, remove it with this command.
+
+```cmd
+az extension remove --name botservice
+```
 
 ## Deploy JavaScript and C# bots using az cli
 
@@ -60,7 +64,18 @@ cd <local-bot-folder>
 
 ### Create a Web App Bot
 
-Create the bot resource into which you will publish your bot.
+If you don't already have a resource group to which to publish your bot, create one:
+
+```cmd
+az group create --name <resource-group-name> --location <geographic-location> --verbose
+```
+
+| Option | Description |
+|:---|:---|
+| --name | A unique name for the resource group. DO NOT include spaces or underscores in the name. |
+| --location | Geographic location used to create the resource group. For example, `eastus`, `westus`, `westus2`, and so on. Use `az account list-locations` for a list of locations. |
+
+Then, create the bot resource into which you will publish your bot.
 
 Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
 
@@ -181,15 +196,13 @@ At this point, your bot should work the same way it did with the old .bot file. 
 Publish your local bot to Azure. This step might take a while.
 
 ```cmd
-az bot publish --name <bot-resource-name> --proj-file "<project-file-name>" --resource-group <resource-group-name> --code-dir <directory-path> --verbose --version v4
+az bot publish --name <bot-resource-name> --proj-name "<project-file-name>" --resource-group <resource-group-name> --code-dir <directory-path> --verbose --version v4
 ```
-
-<!-- Question: What should --proj-file be for a Node project? -->
 
 | Option | Description |
 |:---|:---|
 | --name | The resource name of the bot in Azure. |
-| --proj-file | The startup project file name (without the .csproj) that needs to be published. For example: EnterpriseBot. |
+| --proj-name | For C#, use the startup project file name (without the .csproj) that needs to be published. For example: `EnterpriseBot`. For Node.js, use the main entry point for the bot. For example, `index.js`. |
 | --resource-group | Name of resource group. |
 | --code-dir | The directory to upload bot code from. |
 

@@ -31,14 +31,18 @@ It would be useful to read this article once through before following the steps,
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install [.NET Core SDK](https://dotnet.microsoft.com/download) >= v2.2. Use `dotnet --version` to see what version you have.
 - Install the latest version of the [Azure cli tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Use `az --version` to see what version you have.
-- Install the latest `botservice` extension for the `az` tool.
-  - First, remove the old version using `az extension remove -n botservice` command. Next, use the `az extension add -n botservice` command to install the latest version.
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
   - You'll need [LUIS CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#installation) if the the clone operation includes LUIS or Dispatch resources.
   - You'll need [QnA Maker CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#as-a-cli) if the clone operation includes QnA Maker resources.
 - Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) files.
+
+With msbot 4.3.2 and later, you need Azure CLI version 2.0.53 or later. If you installed the botservice extension, remove it with this command.
+
+```cmd
+az extension remove --name botservice
+```
 
 ### C\#
 
@@ -148,13 +152,13 @@ In the emulator, use production endpoint to test your app. If you want to test i
 DO NOT use `msbot clone services` command to update the bot code in Azure. You must use the `az bot publish` command as shown below:
 
 ```cmd
-az bot publish --name "<your-azure-bot-name>" --proj-file "<your-proj-file>" --resource-group "<azure-resource-group>" --code-dir "<folder>" --verbose --version v4
+az bot publish --name "<your-azure-bot-name>" --proj-name "<your-proj-name>" --resource-group "<azure-resource-group>" --code-dir "<folder>" --verbose --version v4
 ```
 
 | Arguments        | Description |
 |----------------  |-------------|
 | `name`      | The name you used when the bot was first deployed to Azure.|
-| `proj-file` | For C# bot, it is the .csproj file. For JS/TS bot, it is the startup project file name (e.g. index.js or index.ts) of your local bot.|
+| `proj-name` | For C#, use the startup project file name (without the .csproj) that needs to be published. For example: `EnterpriseBot`. For Node.js, use the main entry point for the bot. For example, `index.js`. |
 | `resource-group` | The Azure resource group that `msbot clone services` command used.|
 | `code-dir`  | Points to the local bot folder.|
 
