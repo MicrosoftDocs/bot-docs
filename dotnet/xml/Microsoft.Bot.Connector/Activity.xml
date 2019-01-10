@@ -7,11 +7,15 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IActivity</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Connector.IContactRelationUpdateActivity</InterfaceName>
     </Interface>
@@ -32,6 +36,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Connector.IInvokeActivity</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IMessageActivity</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Connector.IMessageDeleteActivity</InterfaceName>
@@ -66,6 +73,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -74,14 +82,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTimeOffset&gt; timestamp = null, Nullable&lt;DateTimeOffset&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Connector.ChannelAccount from = null, Microsoft.Bot.Connector.ConversationAccount conversation = null, Microsoft.Bot.Connector.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Connector.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, string label = null, string valueType = null, object value = null, string name = null, Microsoft.Bot.Connector.ConversationReference relatesTo = null, string code = null, Nullable&lt;DateTimeOffset&gt; expiration = null, string importance = null, string deliveryMode = null, System.Collections.Generic.IList&lt;string&gt; listenFor = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; textHighlights = null, Microsoft.Bot.Connector.SemanticAction semanticAction = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Connector.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.TextHighlight&gt; textHighlights, class Microsoft.Bot.Connector.SemanticAction semanticAction) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * Microsoft.Bot.Connector.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Connector.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Connector.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; * Microsoft.Bot.Connector.SemanticAction -&gt; Microsoft.Bot.Connector.Activity" Usage="new Microsoft.Bot.Connector.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction)" />
+      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTimeOffset&gt; timestamp = null, Nullable&lt;DateTimeOffset&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Connector.ChannelAccount from = null, Microsoft.Bot.Connector.ConversationAccount conversation = null, Microsoft.Bot.Connector.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Connector.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, string label = null, string valueType = null, object value = null, string name = null, Microsoft.Bot.Connector.ConversationReference relatesTo = null, string code = null, Nullable&lt;DateTimeOffset&gt; expiration = null, string importance = null, string deliveryMode = null, System.Collections.Generic.IList&lt;string&gt; listenFor = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; textHighlights = null, Microsoft.Bot.Connector.SemanticAction semanticAction = null, string localTimezone = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Connector.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.TextHighlight&gt; textHighlights, class Microsoft.Bot.Connector.SemanticAction semanticAction, string localTimezone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * Microsoft.Bot.Connector.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Connector.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Connector.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; * Microsoft.Bot.Connector.SemanticAction * string -&gt; Microsoft.Bot.Connector.Activity" Usage="new Microsoft.Bot.Connector.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction, localTimezone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -124,6 +132,7 @@
         <Parameter Name="listenFor" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="textHighlights" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt;" />
         <Parameter Name="semanticAction" Type="Microsoft.Bot.Connector.SemanticAction" />
+        <Parameter Name="localTimezone" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -166,6 +175,7 @@
         <param name="listenFor">To be added.</param>
         <param name="textHighlights">To be added.</param>
         <param name="semanticAction">To be added.</param>
+        <param name="localTimezone">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -212,6 +223,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -236,6 +248,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -260,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -284,6 +298,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -308,6 +323,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInstallationUpdateActivity</ReturnType>
@@ -332,6 +348,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -356,6 +373,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -380,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageDeleteActivity</ReturnType>
@@ -404,6 +423,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageReactionActivity</ReturnType>
@@ -428,6 +448,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageUpdateActivity</ReturnType>
@@ -452,6 +473,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ISuggestionActivity</ReturnType>
@@ -476,6 +498,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITraceActivity</ReturnType>
@@ -500,6 +523,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -524,6 +548,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -552,6 +577,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -580,6 +606,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -608,6 +635,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -636,6 +664,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -661,6 +690,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -683,6 +713,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -708,6 +739,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -729,6 +761,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -750,6 +783,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -771,6 +805,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -792,6 +827,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IHandoffActivity</ReturnType>
@@ -813,6 +849,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -834,6 +871,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -855,6 +893,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Activity</ReturnType>
@@ -880,6 +919,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITraceActivity</ReturnType>
@@ -918,6 +958,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -942,6 +983,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -972,6 +1014,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1000,6 +1043,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1028,6 +1072,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1053,6 +1098,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1080,6 +1126,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -1108,6 +1155,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Mention[]</ReturnType>
@@ -1132,6 +1180,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1156,6 +1205,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1184,6 +1234,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1212,6 +1263,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1240,6 +1292,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1265,6 +1318,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1292,6 +1346,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1317,6 +1372,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1345,6 +1401,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1373,6 +1430,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1381,6 +1439,31 @@
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalTimezone">
+      <MemberSignature Language="C#" Value="public string LocalTimezone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocalTimezone" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.LocalTimezone" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalTimezone As String" />
+      <MemberSignature Language="F#" Value="member this.LocalTimezone : string with get, set" Usage="Microsoft.Bot.Connector.Activity.LocalTimezone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="localTimezone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -1401,6 +1484,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1429,6 +1513,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1459,6 +1544,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1484,6 +1570,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1512,6 +1599,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1540,6 +1628,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1568,6 +1657,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1598,6 +1688,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1626,6 +1717,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1651,6 +1743,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1679,6 +1772,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1707,6 +1801,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1735,6 +1830,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1763,6 +1859,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1792,6 +1889,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1820,6 +1918,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1848,6 +1947,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1876,6 +1976,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1904,6 +2005,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1932,6 +2034,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1963,6 +2066,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -1994,6 +2098,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -2022,6 +2127,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">

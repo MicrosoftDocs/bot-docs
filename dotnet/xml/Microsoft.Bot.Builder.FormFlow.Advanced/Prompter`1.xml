@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -39,6 +40,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="annotation" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
@@ -70,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</ReturnType>
@@ -93,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt</ReturnType>
@@ -130,6 +134,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt;</ReturnType>
@@ -150,6 +155,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

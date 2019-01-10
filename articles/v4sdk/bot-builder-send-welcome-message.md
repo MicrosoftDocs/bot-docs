@@ -2,13 +2,13 @@
 title: Send welcome message to users | Microsoft Docs
 description: Learn how to develop your bot to provide a welcoming user experience.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
-author: dashel
-ms.author: dashel
+author: DanDev33
+ms.author: v-dashel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/15/2018
+ms.date: 12/20/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
@@ -19,7 +19,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 
 ## Prerequisites
 - Understand [bot basics](bot-builder-basics.md). 
-- A copy of the **Welcome user sample** in either [C#](https://aka.ms/proactive-sample-cs) or [JS](https://aka.ms/proactive-sample-js). The code from the sample is used to explain how to send welcome messages.
+- A copy of the **Welcome user sample** in either [C#](https://aka.ms/bot-welcome-sample-cs) or [JS](https://aka.ms/bot-welcome-sample-js). The code from the sample is used to explain how to send welcome messages.
 
 ## Same welcome for different channels
 A welcome message should be generated whenever your users first interacts with your bot. To achieve this, you can monitor your bot’s Activity types and watch for new connections. Each new connection can generate up to two conversation update activities depending on the channel.
@@ -415,7 +415,7 @@ switch (text)
 ```
 ---
 ## Test the bot
-Refer to the [README](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/03.welcome-user/readme.md) file for instructions on running and testing the bot. 
+Refer to the [README](https://aka.ms/bot-welcome-sample-cs) file for instructions on running and testing the bot.
 
 ## Next steps
 > [!div class="nextstepaction"]

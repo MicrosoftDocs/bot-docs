@@ -19,7 +19,7 @@ We strongly believe our customers should own and enrich their customer relations
 
 The scope of Virtual Assistant functionality is broad, typically offering end users a range of capabilities. To increase developer productivity and to enable a vibrant ecosystem of reusable conversational experiences, we are providing developers initial examples of reusable conversational skills. These Skills can be added into a conversational application to light up a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
 
-At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months.
+At this time we are working closely with initial customers and partners in an open-source repository to bring to life the first experiences.
 
 ![Virtual Assistant Diagram](./media/enterprise-template/customassistantdiagram.jpg)
 
@@ -92,5 +92,5 @@ All aspects of each Skill (Language Model, Dialogs, Integration Code and Languag
 
 ## Getting Started
 
-At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months. To register your interest and get started please fill in [this form](https://aka.ms/customassistantpreviewform) and we'll be in touch.
+The Virtual Assistant solution is available in [this GitHub repository](https://github.com/Microsoft/AI/tree/master/solutions/Virtual-Assistant) which is updated regularly by the Virtual Assistant team. More detailed documentation is available in the same repository and issues/feedback can be provided directly through the GitHub feedback mechanisms. If you have a key scenario that you'd like to discuss with us please fill in [this form](https://aka.ms/customassistantpreviewform) and we'll be in touch.
 

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;</ReturnType>
@@ -68,6 +71,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -91,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt;</ReturnType>
@@ -111,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -131,6 +137,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Mention[]</ReturnType>
@@ -152,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -173,6 +181,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -193,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -213,6 +223,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -233,6 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -253,6 +265,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.SuggestedActions</ReturnType>
@@ -273,6 +286,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -293,6 +307,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -313,6 +328,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -333,6 +349,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

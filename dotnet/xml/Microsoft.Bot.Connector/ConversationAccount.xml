@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,15 +40,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConversationAccount (Nullable&lt;bool&gt; isGroup = null, string id = null, string name = null, string conversationType = null, string role = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string id, string name, string conversationType, string role) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional id As String = null, Optional name As String = null, Optional conversationType As String = null, Optional role As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationAccount : Nullable&lt;bool&gt; * string * string * string * string -&gt; Microsoft.Bot.Connector.ConversationAccount" Usage="new Microsoft.Bot.Connector.ConversationAccount (isGroup, id, name, conversationType, role)" />
+      <MemberSignature Language="C#" Value="public ConversationAccount (Nullable&lt;bool&gt; isGroup = null, string id = null, string name = null, string conversationType = null, string role = null, string aadObjectId = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string id, string name, string conversationType, string role, string aadObjectId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional id As String = null, Optional name As String = null, Optional conversationType As String = null, Optional role As String = null, Optional aadObjectId As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationAccount : Nullable&lt;bool&gt; * string * string * string * string * string -&gt; Microsoft.Bot.Connector.ConversationAccount" Usage="new Microsoft.Bot.Connector.ConversationAccount (isGroup, id, name, conversationType, role, aadObjectId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isGroup" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -54,6 +56,7 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="conversationType" Type="System.String" />
         <Parameter Name="role" Type="System.String" />
+        <Parameter Name="aadObjectId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="isGroup">To be added.</param>
@@ -61,7 +64,33 @@
         <param name="name">To be added.</param>
         <param name="conversationType">To be added.</param>
         <param name="role">To be added.</param>
+        <param name="aadObjectId">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AadObjectId">
+      <MemberSignature Language="C#" Value="public string AadObjectId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AadObjectId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationAccount.AadObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AadObjectId As String" />
+      <MemberSignature Language="F#" Value="member this.AadObjectId : string with get, set" Usage="Microsoft.Bot.Connector.ConversationAccount.AadObjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="aadObjectId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -103,6 +133,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -127,6 +158,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -151,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -172,6 +205,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -197,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -222,6 +257,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -247,6 +283,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -272,6 +309,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">

@@ -22,7 +22,11 @@ As with web apps, a bot is inherently stateless; a different instance of your bo
 
 Maintaining state allows your bot to have more meaningful conversations by remembering certain things about a user or conversation. For example, if you've talked to a user previously, you can save previous information about them, so that you don't have to ask for it again. State also keeps data for longer than the current turn, so that your bot keeps information over the course of a multi-turn conversation.
 
-As it pertains to bots, there are a few layers to using state which we'll cover here: the storage layer, state management, and state property accessors.
+As it pertains to bots, there are a few layers to using state which we'll cover here: the storage layer, state management (contained in the bot state in the diagram below), and state property accessors. This diagram illustrates parts of the interaction sequence between these layers, with the solid arrows representing a method call, and the dashed arrows representing the response (with or without a return value).
+
+![bot state](media/bot-builder-state.png)
+
+The flow of this diagram is explained in following sections with details each of these layers.
 
 ## Storage layer
 

@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/13/2018
+ms.date: 11/19/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,7 +19,7 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 ## Prerequisites
 - Visual Studio [2017](https://www.visualstudio.com/downloads)
-- Bot Builder SDK v4 template for [C#](https://botbuilder.myget.org/feed/aitemplates/package/vsix/BotBuilderV4.fbe0fc50-a6f1-4500-82a2-189314b7bea2)
+- Bot Builder SDK v4 template for [C#](https://aka.ms/bot-vsix)
 - Bot Framework [Emulator](https://aka.ms/Emulator-wiki-getting-started)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
@@ -55,6 +55,10 @@ Send a message to your bot, and the bot will respond back with a message.
 
 > [!NOTE]
 > If you see that the message can not be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
+
+## Additional resources
+
+See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
 
 ## Next steps
 

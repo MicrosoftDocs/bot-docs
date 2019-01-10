@@ -113,7 +113,7 @@ The bot uses the accessor to get the state property from the turn context.
 We first define classes to contain all the information that we want to manage in each type of state.
 
 - A `UserProfile` class for the user information that the bot will collect.
-- A `ConversationData` class to tack information about when a message arrived and who sent the message.
+- A `ConversationData` class to track information about when a message arrived and who sent the message.
 
 ```csharp
 // Defines a state property used to track information about the user.

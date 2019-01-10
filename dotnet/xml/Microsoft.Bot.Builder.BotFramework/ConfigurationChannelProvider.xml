@@ -7,10 +7,12 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Connector.Authentication.SimpleChannelProvider</BaseTypeName>
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,6 +56,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
@@ -73,10 +77,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

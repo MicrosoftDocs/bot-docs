@@ -10,7 +10,8 @@
 ## [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
-## [Samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
+## [botbuilder-samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
+## [Deploy bots from botbuilder-samples repo](bot-builder-deploy-samples.md)
 # Concepts
 ## [How bots work](v4sdk/bot-builder-basics.md)
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
@@ -43,7 +44,7 @@
 ### Manage conversations using the Dialogs library 
 #### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 #### [Gather user input using a dialog prompt](v4sdk/bot-builder-prompts.md)
-#### [Create advance conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
+#### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 #### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 #### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
 #### [Reuse dialogs](v4sdk/bot-builder-compositcontrol.md)
@@ -55,9 +56,10 @@
 ### [Node.js](nodejs/TOC.md)
 ## [Debug](debug/TOC.md)
 ## Deploy
-### [Download and redeploy bot code](bot-service-build-download-source-code.md)
+### [Deploy your bot using Azure CLI](bot-builder-deploy-az-cli.md)
+### [Deploy your C# bot using Visual Studio](bot-builder-howto-deploy-azure.md)
+<!-- ### [Download and redeploy bot code](bot-service-build-download-source-code.md) -->
 ### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
-### [Deploy your C# bot to Azure](bot-builder-howto-deploy-azure.md)
 ## [Manage](manage/TOC.md)
 # Reference
 ## [.NET SDK v4](https://aka.ms/dotnetsdk4)

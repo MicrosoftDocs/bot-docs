@@ -7,10 +7,17 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.Dialogs.IBotContext</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IBotData</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack</InterfaceName>
