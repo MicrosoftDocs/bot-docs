@@ -254,7 +254,8 @@ You will need to install the [Bot Emulator](https://github.com/Microsoft/BotFram
 1. Start your bot (with or without debugging).
 1. Note the localhost port number for the page. You will need this information to interact with your bot.
 1. Start the Emulator.
-1. Connect to your bot.
+1. Connect to your bot. Please make sure the bot configuration uses **Microsoft app ID** and **Microsoft app password** when using authentication
+1. Ensure that in Emulator settings, **Use a sign-in verification code for OAuthCards** is ticked and **ngrok** is enabled so the Azure Bot Service can return the token to the emulator when it becomes available.
 
    If you haven't configured the connection already, provide the address and your bot's Microsoft app ID and password. Add `/api/messages` to the bot's URL. Your URL will look something like `http://localhost:portNumber/api/messages`.
 
