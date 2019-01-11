@@ -1,6 +1,6 @@
 ---
 title: Add suggested actions to messages | Microsoft Docs
-description: Learn how to add suggested actions to messages using the Bot Builder SDK for .NET.
+description: Learn how to add suggested actions to messages using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

@@ -1,6 +1,6 @@
 ---
 title: Create advanced conversation flow using branches and loops | Microsoft Docs
-description: Learn how to manage a complex conversation flow with dialogs in the Bot Builder SDK.
+description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
 ms.author: v-jofing

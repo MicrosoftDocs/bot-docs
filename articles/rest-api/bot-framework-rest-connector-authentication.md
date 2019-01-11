@@ -22,7 +22,7 @@ This article describes the authentication technologies and requirements for the 
 > By implementing all steps in this article, you can mitigate the risk of an attacker being able to read messages that 
 > are sent to your bot, send messages that impersonate your bot, and steal secret keys. 
 
-If you are using the [Bot Builder SDK for .NET](../dotnet/bot-builder-dotnet-overview.md) or the [Bot Builder SDK for Node.js](../nodejs/index.md), you do not need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](../bot-service-quickstart-registration.md) and the SDK will handle the rest.
+If you are using the [Bot Framework SDK for .NET](../dotnet/bot-builder-dotnet-overview.md) or the [Bot Framework SDK for Node.js](../nodejs/index.md), you do not need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](../bot-service-quickstart-registration.md) and the SDK will handle the rest.
 
 > [!WARNING]
 > In December 2016, v3.1 of the Bot Framework security protocol introduced changes to several values that are 
@@ -185,7 +185,7 @@ To get the list of valid signing keys, issue a `GET` request via HTTPS to the UR
 GET https://login.botframework.com/v1/.well-known/keys
 ```
 
-The response body specifies the document in the [JWK format](https://tools.ietf.org/html/rfc7517) but also includes an additional property for each key: `endorsements`. The list of keys is relatively stable and may be cached for long periods of time (by default, 5 days within the Bot Builder SDK).
+The response body specifies the document in the [JWK format](https://tools.ietf.org/html/rfc7517) but also includes an additional property for each key: `endorsements`. The list of keys is relatively stable and may be cached for long periods of time (by default, 5 days within the Bot Framework SDK).
 
 The `endorsements` property within each key contains one or more endorsement strings which you can use to verify that the channel ID specified in the `channelId` property within the [Activity][Activity] object of the incoming request is authentic. The list of channel IDs that require endorsements is configurable within each bot. By default, it will be the list of all published channel IDs, although bot developers may override selected channel ID values either way. If endorsement for a channel ID is required:
 
@@ -338,7 +338,7 @@ payload:
 
 > [!WARNING]
 > Support for v3.0 of the security protocol was discontinued on **July 31, 2017**. 
-> If you have written your own authentication code (i.e., did not use the Bot Builder SDK to create your bot), 
+> If you have written your own authentication code (i.e., did not use the Bot Framework SDK to create your bot), 
 > you must upgrade to v3.1 of the security protocol by updating your application to use the v3.1 values that are listed below. 
 
 ### [Bot to Connector authentication](#bot-to-connector)

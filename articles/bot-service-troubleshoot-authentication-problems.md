@@ -38,7 +38,7 @@ To disable security for your bot, edit its configuration settings to remove the 
 
 ::: moniker range="azure-bot-service-3.0"
 
-If you're using the Bot Builder SDK for .NET, edit these settings in your Web.config file: 
+If you're using the Bot Framework SDK for .NET, edit these settings in your Web.config file: 
 
 ```xml
 <appSettings>
@@ -47,7 +47,7 @@ If you're using the Bot Builder SDK for .NET, edit these settings in your Web.co
 </appSettings>
 ```
 
-If you're using the Bot Builder SDK for Node.js, edit these values (or update the corresponding environment variables):
+If you're using the Bot Framework SDK for Node.js, edit these values (or update the corresponding environment variables):
 
 ```javascript
 var connector = new builder.ChatConnector({
@@ -60,16 +60,18 @@ var connector = new builder.ChatConnector({
 
 ::: moniker range="azure-bot-service-4.0"
 
-If you're using the Bot Builder SDK for .NET, edit the settings in your `appsettings.config` file:
+If you're using the Bot Framework SDK for .NET, edit the settings in your `.bot` file:
 
-```xml
-<appSettings>
-  <add key="MicrosoftAppId" value="" />
-  <add key="MicrosoftAppPassword" value="" />
-</appSettings>
+```json
+"services": [
+  {
+    "appId": "<your app ID>",
+    "appPassword": "<your app password>",
+  }
+]
 ```
 
-If you're using the Bot Builder SDK for Node.js, edit these values (or update the corresponding environment variables):
+If you're using the Bot Framework SDK for Node.js, edit these values (or update the corresponding environment variables):
 
 ```javascript
 const adapter = new BotFrameworkAdapter({
@@ -116,6 +118,9 @@ These instructions describe how to use [cURL](https://curl.haxx.se/download.html
 
 To verify that your bot's app ID and password are valid, issue the following request using **cURL**, replacing `APP_ID` and `APP_PASSWORD` with your bot's app ID and password.
 
+> [!TIP]
+> Your password may contain special characters that make the following call invalid. If so, try converting your password to URL encoding.
+
 ```cmd
 curl -k -X POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token -d "grant_type=client_credentials&client_id=APP_ID&client_secret=APP_PASSWORD&scope=https%3A%2F%2Fapi.botframework.com%2F.default"
 ```
@@ -136,9 +141,9 @@ At this point, you have verified that your bot is accessible and functional on l
 
 ### <a id="enable-security-localhost"></a> Enable security
 
-Your bot's security relies on Microsoft services, even when your bot is running only on localhost. To enable security for your bot, edit its configuration settings to populate app ID and password with the values that you verified in [Step 2](#step-2).
+Your bot's security relies on Microsoft services, even when your bot is running only on localhost. To enable security for your bot, edit its configuration settings to populate app ID and password with the values that you verified in [Step 2](#step-2).  Additionally, make sure your packages are up to date, specifically `System.IdentityModel.Tokens.Jwt` and `Microsoft.IdentityModel.Tokens`.
 
-If you're using the Bot Builder SDK for .NET, populate these settings in your `.bot` or your `appsettings.config` file:
+If you're using the Bot Framework SDK for .NET, populate these settings in your `appsettings.config` or the corresponding values in your `.bot` file:
 
 ```xml
 <appSettings>
@@ -147,7 +152,7 @@ If you're using the Bot Builder SDK for .NET, populate these settings in your `.
 </appSettings>
 ```
 
-If you're using the Bot Builder SDK for Node.js, populate these settings (or update the corresponding environment variables):
+If you're using the Bot Framework SDK for Node.js, populate these settings (or update the corresponding environment variables):
 
 ```javascript
 var connector = new builder.ChatConnector({

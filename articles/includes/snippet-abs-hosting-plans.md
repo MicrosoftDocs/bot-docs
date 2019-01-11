@@ -7,7 +7,7 @@ A bot that uses an App Service plan is a standard Azure web app you can set to a
 * Edit bot source code online using an advanced in-browser code editor.
 * Download, debug, and re-publish your C# bot using Visual Studio.
 * Set up continuous deployment easily for Visual Studio Online and Github.
-* Use sample code prepared for the Bot Builder SDK.
+* Use sample code prepared for the Bot Framework SDK.
 
 ## Consumption plan
 

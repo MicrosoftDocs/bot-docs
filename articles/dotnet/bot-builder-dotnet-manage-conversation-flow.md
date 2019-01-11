@@ -1,6 +1,6 @@
 ---
 title: Manage conversation flow with dialogs | Microsoft Docs
-description: Learn how to model conversations and manage conversation flow using dialogs and the Bot Builder SDK for .NET.
+description: Learn how to model conversations and manage conversation flow using dialogs and the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -22,7 +22,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [Dialog flow example](../includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-This article describes how to model this conversation flow by using [dialogs](bot-builder-dotnet-dialogs.md) and the Bot Builder SDK for .NET. 
+This article describes how to model this conversation flow by using [dialogs](bot-builder-dotnet-dialogs.md) and the Bot Framework SDK for .NET. 
 
 ## Invoke the root dialog
 
@@ -132,11 +132,11 @@ private async Task NameDialogResumeAfter(IDialogContext context, IAwaitable<stri
 
 ## Sample code 
 
-For a complete sample that shows how to manage a conversation by using dialogs in the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub.
+For a complete sample that shows how to manage a conversation by using dialogs in the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub.
 
 ## Additional resources
 
 - [Dialogs](bot-builder-dotnet-dialogs.md)
 - [Design and control conversation flow](../bot-service-design-conversation-flow.md)
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample (GitHub)</a>
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>

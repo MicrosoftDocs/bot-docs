@@ -1,6 +1,6 @@
 ---
 title: Manage custom state data with Azure Cosmos DB | Microsoft Docs
-description: Learn how to save and retrieve state data using Azure Cosmos DB with the Bot Builder SDK for .NET
+description: Learn how to save and retrieve state data using Azure Cosmos DB with the Bot Framework SDK for .NET
 author: kaiqb
 manager: kamrani
 ms.topic: article

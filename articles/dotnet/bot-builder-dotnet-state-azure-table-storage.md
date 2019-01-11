@@ -1,6 +1,6 @@
 ---
 title:  Manage custom state data with Azure Table storage | Microsoft Docs
-description: Learn how to save and retrieve state data using Azure Table Storage with the Bot Builder SDK for .NET
+description: Learn how to save and retrieve state data using Azure Table Storage with the Bot Framework SDK for .NET
 author: kaiqb
 manager: kamrani
 ms.topic: article

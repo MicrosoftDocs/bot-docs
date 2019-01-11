@@ -1,6 +1,6 @@
 ---
 title: Manage state data | Microsoft Docs
-description: Learn how to save and retrieve state data with the Bot Builder SDK for .NET.
+description: Learn how to save and retrieve state data with the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -100,7 +100,7 @@ Each [Activity][Activity] object contains properties that you will use to manage
 
 ## <a id="state-client"></a> Create a state client
 
-The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
+The `StateClient` object enables you to manage state data using the Bot Framework SDK for .NET. 
 If you have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by calling the `GetStateClient` method on the `Activity` object.
 
 [!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient1)]
@@ -161,6 +161,6 @@ You can design your bot to account for this scenario, as shown in the following 
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](../bot-service-troubleshoot-general-problems.md)
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 
 [Activity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html

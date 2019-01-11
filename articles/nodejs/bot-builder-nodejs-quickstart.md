@@ -4,8 +4,8 @@ redirect_url: /bot-framework/javascript/bot-builder-javascript-quickstart
 
 <!--
 
-title: Create a bot with the Bot Builder SDK for Node.js | Microsoft Docs
-description: Create a bot with the Bot Builder SDK for Node.js, a powerful bot construction framework.
+title: Create a bot with the Bot Framework SDK for Node.js | Microsoft Docs
+description: Create a bot with the Bot Framework SDK for Node.js, a powerful bot construction framework.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -16,7 +16,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 
 
-# Create a bot with the Bot Builder SDK for Node.js
+# Create a bot with the Bot Framework SDK for Node.js
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
@@ -26,9 +26,9 @@ monikerRange: 'azure-bot-service-3.0'
 > - [Bot Service](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The Bot Builder SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
+The Bot Framework SDK for Node.js is a framework for developing bots. It is easy to use and models frameworks like Express & restify to provide a familiar way for JavaScript developers to write bots.
 
-This tutorial walks you through building a bot by using the Bot Builder SDK for Node.js. You can test the bot in a console window and with the Bot Framework Emulator.
+This tutorial walks you through building a bot by using the Bot Framework SDK for Node.js. You can test the bot in a console window and with the Bot Framework Emulator.
 
 ## Prerequisites
 Get started by completing the following prerequisite tasks:
@@ -45,7 +45,7 @@ npm init
 Follow the prompt on the screen to enter information about your bot and npm will create a **package.json** file that contains the information you provided. 
 
 ## Install the SDK
-Next, install the Bot Builder SDK for Node.js by running the following **npm** command:
+Next, install the Bot Framework SDK for Node.js by running the following **npm** command:
 
 ```nodejs
 npm install --save botbuilder
@@ -128,11 +128,11 @@ After you start your bot, start the emulator and then connect your bot:
 Now that your bot is running locally and is connected to the emulator, try out your bot by typing a few messages in the emulator.
 You should see that the bot responds to each message you send by echoing back your message prefixed with the text *"You said:"*.
 
-You've successfully created your first bot using the Bot Builder SDK for Node.js!
+You've successfully created your first bot using the Bot Framework SDK for Node.js!
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Bot Builder SDK for Node.js](bot-builder-nodejs-overview.md)
+> [Bot Framework SDK for Node.js](bot-builder-nodejs-overview.md)
 
 -->

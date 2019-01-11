@@ -1,6 +1,6 @@
 ---
 title: Send and receive activities | Microsoft Docs
-description: Learn how to exchange information with a user across various channels by using the Connector service via the Bot Builder SDK for .NET.
+description: Learn how to exchange information with a user across various channels by using the Connector service via the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -20,12 +20,12 @@ channels such as Skype, Email, Slack, and more.
 It facilitates communication between bot and user, by relaying messages from bot to channel 
 and from channel to bot. 
 
-This article describes how to use the Connector via the Bot Builder SDK for .NET to 
+This article describes how to use the Connector via the Bot Framework SDK for .NET to 
 exchange information between bot and user on a channel. 
 
 > [!NOTE]
 > While it is possible to construct a bot by exclusively using the techniques that are described
-> in this article, the Bot Builder SDK provides additional features like 
+> in this article, the Bot Framework SDK provides additional features like 
 > [dialogs](bot-builder-dotnet-dialogs.md) and [FormFlow](bot-builder-dotnet-formflow.md) that 
 > can streamline the process of managing conversation flow and state and 
 > make it simpler to incorporate cognitive services such as language understanding.
@@ -60,7 +60,7 @@ the bot should always use the value of the incoming activity's `Recipient` prope
 the `From` property in its response.
 
 Although you can create and initialize the outgoing `Activity` object yourself from scratch, 
-the Bot Builder SDK provides an easier way of creating a reply. 
+the Bot Framework SDK provides an easier way of creating a reply. 
 By using the incoming activity's `CreateReply` method, 
 you simply specify the message text for the response, and the outgoing activity is created 
 with the `Recipient`, `From`, and `Conversation` properties automatically populated.
@@ -122,7 +122,7 @@ This code example uses the `CreateConversation` method to create a group convers
 
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
 - <a href="/dotnet/api/microsoft.bot.connector.connectorclient" target="_blank">ConnectorClient class</a>
 

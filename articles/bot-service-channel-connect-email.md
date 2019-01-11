@@ -71,11 +71,11 @@ see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channe
 <!-- Put whole list in monikers, even though it's just the second item that needs to be different. -->
 ::: moniker range="azure-bot-service-3.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
-* [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Builder SDK for .NET
+* [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Framework SDK for .NET
 * Use the [Channel Inspector](bot-service-channel-inspector.md) to see how a channel renders a particular feature of your bot application
 ::: moniker-end
 ::: moniker range="azure-bot-service-4.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
-* [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Builder SDK for .NET
+* [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
 * Use the [Channel Inspector](bot-service-channel-inspector.md) to see how a channel renders a particular feature of your bot application
 ::: moniker-end

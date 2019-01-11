@@ -1,6 +1,6 @@
 ---
 title: Add input hints to messages | Microsoft Docs
-description: Learn how to add input hints to messages using the Bot Builder SDK.
+description: Learn how to add input hints to messages using the Bot Framework SDK.
 keywords: Inputhints, accepting input, expecting input, ignoring input, speech 
 author: ivorb
 ms.author: v-ivorb
@@ -113,7 +113,7 @@ await context.sendActivity(basicMessage);
 
 ## Default values for input hint
 
-If you do not set the input hint for a message, the Bot Builder SDK will automatically set it for you by using this logic:
+If you do not set the input hint for a message, the Bot Framework SDK will automatically set it for you by using this logic:
 
 - If your bot sends a prompt, the input hint for the message will specify that your bot is **expecting input**.</li>
 - If your bot sends a single message, the input hint for the message will specify that your bot is **accepting input**.</li>

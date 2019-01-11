@@ -79,7 +79,7 @@ After the agent connects to the bot, the bot begins to route messages between us
 
 ## Sample code
 
-For a complete sample that shows how to hand off conversations from bot to human using the Bot Builder SDK for Node.js, see the <a href="https://github.com/palindromed/Bot-HandOff" target="_blank">Bot-HandOff sample</a> in GitHub.
+For a complete sample that shows how to hand off conversations from bot to human using the Bot Framework SDK for Node.js, see the <a href="https://github.com/palindromed/Bot-HandOff" target="_blank">Bot-HandOff sample</a> in GitHub.
 
 ## Additional resources
 

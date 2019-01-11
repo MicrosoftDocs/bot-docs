@@ -10,15 +10,13 @@ ms.service: bot-service
 ms.subservice: abs
 ms.date: 01/08/2019
 ---
-
 ::: moniker range="azure-bot-service-3.0"
-
 
 # Create a bot with Azure Bot Service
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 
-Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the Bot Builder SDK.
+Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the Bot Framework SDK.
 
 ## Log in to Azure
 Log in to the [Azure portal](http://portal.azure.com).
@@ -79,7 +77,7 @@ In this topic, you learned how to create a **Basic** Web App Bot/Functions Bot b
 
 [!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
-Azure Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Builder SDK v4.
+Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Framework SDK v4.
 
 ## Prerequisites
 - [Azure](http://portal.azure.com) account

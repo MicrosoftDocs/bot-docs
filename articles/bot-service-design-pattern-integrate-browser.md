@@ -101,7 +101,7 @@ Since BotAuth does not make any assumptions about the channel's capabilities, su
 ### <a id="website-signal-to-bot"></a> How does the website 'signal' the bot?
 
 When the bot [generates the hyperlink](#generate-hyperlink) that the user will click to initiate the website flow, 
-it includes information via querystring parameters in the target URL about the context of the current conversation, such as conversation ID, channel ID, and user ID in the channel. The website can subsequently use this information to read and write state variables for that user or conversation using the Bot Builder SDK or REST APIs. See [step 6](#signal-to-bot) above for an example of how the website 'signals' to the bot that the website flow is complete.
+it includes information via querystring parameters in the target URL about the context of the current conversation, such as conversation ID, channel ID, and user ID in the channel. The website can subsequently use this information to read and write state variables for that user or conversation using the Bot Framework SDK or REST APIs. See [step 6](#signal-to-bot) above for an example of how the website 'signals' to the bot that the website flow is complete.
 
 ## Sample code
 

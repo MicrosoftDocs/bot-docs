@@ -14,17 +14,17 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
 
-The Bot Framework includes comprehensive reference documentation for the Bot Builder SDK for .NET, the Bot Builder SDK for Node.js, and the Bot Framework REST APIs.
+The Bot Framework includes comprehensive reference documentation for the Bot Framework SDK for .NET, the Bot Framework SDK for Node.js, and the Bot Framework REST APIs.
 
-## Bot Builder SDK for .NET
-To learn about the structure of the Bot Builder SDK for .NET, see the [Bot Builder SDK for .NET reference documentation](/dotnet/api/).
+## Bot Framework SDK for .NET
+To learn about the structure of the Bot Framework SDK for .NET, see the [Bot Framework SDK for .NET reference documentation](/dotnet/api/).
 
-You can also explore the Bot Builder SDK for .NET [source code](https://github.com/Microsoft/BotBuilder/tree/master/CSharp) on GitHub. 
+You can also explore the Bot Framework SDK for .NET [source code](https://github.com/Microsoft/BotBuilder/tree/master/CSharp) on GitHub. 
 
-## Bot Builder SDK for Node.js
-To learn about the structure of the Bot Builder SDK for Node.js, see the [Bot Builder SDK for Node.js reference documentation](https://docs.botframework.com/en-us/node/builder/calling-reference/modules/_botbuilder_d_.html).
+## Bot Framework SDK for Node.js
+To learn about the structure of the Bot Framework SDK for Node.js, see the [Bot Framework SDK for Node.js reference documentation](https://docs.botframework.com/en-us/node/builder/calling-reference/modules/_botbuilder_d_.html).
 
-You can also explore the Bot Builder SDK for Node.js [source code](https://github.com/Microsoft/BotBuilder/tree/master/Node) on GitHub.
+You can also explore the Bot Framework SDK for Node.js [source code](https://github.com/Microsoft/BotBuilder/tree/master/Node) on GitHub.
 
 ## Bot Framework REST APIs
 To learn about the Bot Connector service, see the [Bot Framework REST API reference documentation](~/rest-api/bot-framework-rest-connector-api-reference.md). 

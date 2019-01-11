@@ -1,6 +1,6 @@
 ---
 title: Requirements and considerations for real-time media bots | Microsoft Docs
-description: Understand important requirements and considerations related to creating real-time media bots for Skype, using the Bot Builder SDK for .NET.
+description: Understand important requirements and considerations related to creating real-time media bots for Skype, using the Bot Framework SDK for .NET.
 author: ssulzer
 ms.author: ssulzer
 manager: kamrani
