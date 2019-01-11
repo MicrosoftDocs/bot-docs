@@ -1,4 +1,9 @@
 ---
+redirect_url: /bot-framework/bot-builder-prompts
+---
+
+<!--
+---
 title: Ask the user questions | Microsoft Docs
 description: Learn how to use the waterfall model to ask user for multiple inputs in the Bot Builder SDK.
 keywords: waterfalls, dialogs, asking a question, prompts
@@ -495,3 +500,5 @@ In this tutorial, the bot is saving the user's input to variables within our bot
 
 > [!div class="nextstepaction"]
 > [Persist user data](bot-builder-tutorial-persist-user-inputs.md)
+
+-->

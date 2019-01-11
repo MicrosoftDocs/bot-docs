@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-3.0">
+  <Assemblies>
+    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.19.1.44133" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="3.16.3.40383" />
+    <Assembly Name="Microsoft.Bot.Builder" Version="3.19.1.44133" />
+    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.19.1.44133" />
+    <Assembly Name="Microsoft.Bot.Connector" Version="3.19.1.44133" />
+  </Assemblies>
   <Namespace Name="Microsoft.Bot.Builder.Autofac.Base">
     <Type Name="Microsoft.Bot.Builder.Autofac.Base.Extensions" Id="T:Microsoft.Bot.Builder.Autofac.Base.Extensions">
       <Member Id="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
@@ -2788,7 +2795,7 @@
     <Type Name="Microsoft.Bot.Connector.Activity" Id="T:Microsoft.Bot.Connector.Activity">
       <Member Id="F:Microsoft.Bot.Connector.Activity.ContentType" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction)" />
+      <Member Id="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsContactRelationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsConversationUpdateActivity" />
       <Member Id="M:Microsoft.Bot.Connector.Activity.AsEndOfConversationActivity" />
@@ -2837,6 +2844,7 @@
       <Member Id="P:Microsoft.Bot.Connector.Activity.ListenFor" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Locale" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.LocalTimestamp" />
+      <Member Id="P:Microsoft.Bot.Connector.Activity.LocalTimezone" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.MembersAdded" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.MembersRemoved" />
       <Member Id="P:Microsoft.Bot.Connector.Activity.Name" />
@@ -2903,12 +2911,13 @@
     <Type Name="Microsoft.Bot.Connector.AnimationCard" Id="T:Microsoft.Bot.Connector.AnimationCard">
       <Member Id="F:Microsoft.Bot.Connector.AnimationCard.ContentType" />
       <Member Id="M:Microsoft.Bot.Connector.AnimationCard.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.AnimationCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object)" />
+      <Member Id="M:Microsoft.Bot.Connector.AnimationCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.AnimationCard.Validate" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Aspect" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Autoloop" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Autostart" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Buttons" />
+      <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Duration" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Image" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Media" />
       <Member Id="P:Microsoft.Bot.Connector.AnimationCard.Shareable" />
@@ -2979,12 +2988,13 @@
     <Type Name="Microsoft.Bot.Connector.AudioCard" Id="T:Microsoft.Bot.Connector.AudioCard">
       <Member Id="F:Microsoft.Bot.Connector.AudioCard.ContentType" />
       <Member Id="M:Microsoft.Bot.Connector.AudioCard.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.AudioCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object)" />
+      <Member Id="M:Microsoft.Bot.Connector.AudioCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.AudioCard.Validate" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Aspect" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Autoloop" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Autostart" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Buttons" />
+      <Member Id="P:Microsoft.Bot.Connector.AudioCard.Duration" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Image" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Media" />
       <Member Id="P:Microsoft.Bot.Connector.AudioCard.Shareable" />
@@ -3068,7 +3078,8 @@
     </Type>
     <Type Name="Microsoft.Bot.Connector.CardAction" Id="T:Microsoft.Bot.Connector.CardAction">
       <Member Id="M:Microsoft.Bot.Connector.CardAction.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.CardAction.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String,System.Object)" />
+      <Member Id="P:Microsoft.Bot.Connector.CardAction.ChannelData" />
       <Member Id="P:Microsoft.Bot.Connector.CardAction.DisplayText" />
       <Member Id="P:Microsoft.Bot.Connector.CardAction.Image" />
       <Member Id="P:Microsoft.Bot.Connector.CardAction.Text" />
@@ -3085,10 +3096,11 @@
     </Type>
     <Type Name="Microsoft.Bot.Connector.ChannelAccount" Id="T:Microsoft.Bot.Connector.ChannelAccount">
       <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.#ctor(System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.Equals(Microsoft.Bot.Connector.ChannelAccount)" />
       <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.Equals(System.Object)" />
       <Member Id="M:Microsoft.Bot.Connector.ChannelAccount.GetHashCode" />
+      <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.AadObjectId" />
       <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.Id" />
       <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.Name" />
       <Member Id="P:Microsoft.Bot.Connector.ChannelAccount.Properties" />
@@ -3105,8 +3117,10 @@
     </Type>
     <Type Name="Microsoft.Bot.Connector.ConnectorClient" Id="T:Microsoft.Bot.Connector.ConnectorClient">
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Net.Http.HttpClientHandler,System.Boolean,System.Net.Http.DelegatingHandler[])" />
@@ -3128,10 +3142,11 @@
     </Type>
     <Type Name="Microsoft.Bot.Connector.ConversationAccount" Id="T:Microsoft.Bot.Connector.ConversationAccount">
       <Member Id="M:Microsoft.Bot.Connector.ConversationAccount.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationAccount.Equals(Microsoft.Bot.Connector.ConversationAccount)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationAccount.Equals(System.Object)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationAccount.GetHashCode" />
+      <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.AadObjectId" />
       <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.ConversationType" />
       <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.Id" />
       <Member Id="P:Microsoft.Bot.Connector.ConversationAccount.IsGroup" />
@@ -3509,12 +3524,13 @@
     </Type>
     <Type Name="Microsoft.Bot.Connector.ITypingActivity" Id="T:Microsoft.Bot.Connector.ITypingActivity" />
     <Type Name="Microsoft.Bot.Connector.JwtConfig" Id="T:Microsoft.Bot.Connector.JwtConfig">
+      <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ConvergedAppAuthority" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelAllowedSigningAlgorithms" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelOpenIdMetadataUrl" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromChannelTokenValidationParameters" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorOpenIdMetadataUrl" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToBotFromEmulatorTokenValidationParameters" />
-      <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotLoginUrl" />
+      <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotLoginUrlTemplate" />
       <Member Id="F:Microsoft.Bot.Connector.JwtConfig.ToChannelFromBotOAuthScope" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.JwtTokenExtractor" Id="T:Microsoft.Bot.Connector.JwtTokenExtractor">
@@ -3528,12 +3544,13 @@
     <Type Name="Microsoft.Bot.Connector.JwtTokenExtractor/EndorsementsValidator" Id="T:Microsoft.Bot.Connector.JwtTokenExtractor.EndorsementsValidator" />
     <Type Name="Microsoft.Bot.Connector.MediaCard" Id="T:Microsoft.Bot.Connector.MediaCard">
       <Member Id="M:Microsoft.Bot.Connector.MediaCard.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.MediaCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object)" />
+      <Member Id="M:Microsoft.Bot.Connector.MediaCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.MediaCard.Validate" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Aspect" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Autoloop" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Autostart" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Buttons" />
+      <Member Id="P:Microsoft.Bot.Connector.MediaCard.Duration" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Image" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Media" />
       <Member Id="P:Microsoft.Bot.Connector.MediaCard.Shareable" />
@@ -3571,13 +3588,9 @@
       <Member Id="F:Microsoft.Bot.Connector.MessageReactionTypes.PlusOne" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.MicrosoftAppCredentials" Id="T:Microsoft.Bot.Connector.MicrosoftAppCredentials">
-      <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.autoRefreshTimes" />
-      <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.CacheKey" />
       <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.logger" />
       <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.MicrosoftAppIdKey" />
       <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.MicrosoftAppPasswordKey" />
-      <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.tokenCache" />
-      <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.tokenTaskCache" />
       <Member Id="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.TrustedHostNames" />
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.#ctor(System.String,System.String)" />
@@ -3586,21 +3599,14 @@
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.IsTrustedServiceUrl(System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.ProcessHttpRequestAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.TrustServiceUrl(System.String,System.DateTime)" />
-      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.AutoTokenRefreshTimeSpan" />
       <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.MicrosoftAppId" />
       <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.MicrosoftAppPassword" />
+      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthAuthority" />
+      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthBotScope" />
       <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthEndpoint" />
-      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthScope" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.MicrosoftAppCredentials/OAuthException" Id="T:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthException">
       <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthException.#ctor(System.String,System.Exception)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Connector.MicrosoftAppCredentials/OAuthResponse" Id="T:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse">
-      <Member Id="M:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse.#ctor" />
-      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse.access_token" />
-      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse.expiration_time" />
-      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse.expires_in" />
-      <Member Id="P:Microsoft.Bot.Connector.MicrosoftAppCredentials.OAuthResponse.token_type" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.MicrosoftPayMethodData" Id="T:Microsoft.Bot.Connector.MicrosoftPayMethodData">
       <Member Id="F:Microsoft.Bot.Connector.MicrosoftPayMethodData.MethodName" />
@@ -3823,7 +3829,7 @@
     </Type>
     <Type Name="Microsoft.Bot.Connector.SemanticAction" Id="T:Microsoft.Bot.Connector.SemanticAction">
       <Member Id="M:Microsoft.Bot.Connector.SemanticAction.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.SemanticAction.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <Member Id="M:Microsoft.Bot.Connector.SemanticAction.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Bot.Connector.Entity})" />
       <Member Id="P:Microsoft.Bot.Connector.SemanticAction.Entities" />
       <Member Id="P:Microsoft.Bot.Connector.SemanticAction.Id" />
     </Type>
@@ -3846,8 +3852,10 @@
     <Type Name="Microsoft.Bot.Connector.StateClient" Id="T:Microsoft.Bot.Connector.StateClient">
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.Boolean,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
@@ -3932,12 +3940,13 @@
     <Type Name="Microsoft.Bot.Connector.VideoCard" Id="T:Microsoft.Bot.Connector.VideoCard">
       <Member Id="F:Microsoft.Bot.Connector.VideoCard.ContentType" />
       <Member Id="M:Microsoft.Bot.Connector.VideoCard.#ctor" />
-      <Member Id="M:Microsoft.Bot.Connector.VideoCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object)" />
+      <Member Id="M:Microsoft.Bot.Connector.VideoCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.VideoCard.Validate" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Aspect" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Autoloop" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Autostart" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Buttons" />
+      <Member Id="P:Microsoft.Bot.Connector.VideoCard.Duration" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Image" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Media" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Shareable" />
@@ -3945,6 +3954,30 @@
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Text" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Title" />
       <Member Id="P:Microsoft.Bot.Connector.VideoCard.Value" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Connector.Shared.Authentication">
+    <Type Name="Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator" Id="T:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator">
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential)" />
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator.GetTokenAsync(System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Shared.Authentication.Retry" Id="T:Microsoft.Bot.Connector.Shared.Authentication.Retry">
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.Retry.Run``1(System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.Exception,System.Int32,Microsoft.Bot.Connector.Shared.Authentication.RetryParams})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Shared.Authentication.RetryParams" Id="T:Microsoft.Bot.Connector.Shared.Authentication.RetryParams">
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.RetryParams.#ctor" />
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.RetryParams.#ctor(System.TimeSpan,System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.RetryParams.DefaultBackOff(System.Int32)" />
+      <Member Id="P:Microsoft.Bot.Connector.Shared.Authentication.RetryParams.RetryAfter" />
+      <Member Id="P:Microsoft.Bot.Connector.Shared.Authentication.RetryParams.ShouldRetry" />
+      <Member Id="P:Microsoft.Bot.Connector.Shared.Authentication.RetryParams.StopRetrying" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Shared.Authentication.ThrottleException" Id="T:Microsoft.Bot.Connector.Shared.Authentication.ThrottleException">
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.ThrottleException.#ctor" />
+      <Member Id="P:Microsoft.Bot.Connector.Shared.Authentication.ThrottleException.RetryParams" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions" Id="T:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions">
+      <Member Id="M:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise(System.TimeSpan,System.Double)" />
     </Type>
   </Namespace>
 </Framework>

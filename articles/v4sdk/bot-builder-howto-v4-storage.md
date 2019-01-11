@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/14/18
+ms.date: 11/13/18
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,7 +20,7 @@ You can read and write directly to your storage object without using middleware 
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/en-us/free/) account before you begin.
-- Install Bot Framework [Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
+- Install the Bot Framework [Emulator](https://aka.ms/Emulator-wiki-getting-started)
 
 ## Memory storage
 

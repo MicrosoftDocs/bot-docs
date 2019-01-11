@@ -1,23 +1,30 @@
 ---
-title: Deploy your C# bot to Azure | Microsoft Docs
+title: Deploy your C# bot using Visual Studio | Microsoft Docs
 description: Deploy your bot to the Azure cloud.
-keywords: deploy bot, azure deploy, bot channel registration, publish visual studio
+keywords: deploy bot, azure deploy, publish bot, az deploy bot, visual studio deploy bot, msbot publish, msbot clone
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 11/05/2018
+ms.date: 12/08/2018
 ---
 
-# Deploy your C# bot to Azure
+# Deploy your C# bot using Visual Studio
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-Once you have created your bot and tested it locally, you can publish it to Azure to make it accessible from anywhere.
+After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
-## Publish from Visual Studio
+In this article, we'll show you how to deploy a C# bot using Visual Studio and the Azure portal. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+
+## Prerequisites
+- Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
+- Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
+
+## Deploy your bot in App Service
 You will first deploy the bot to Azure from Visual Studio in an App Service. Then you’ll configure your bot with the Azure Bot Service using Bot Channels Registration.
 
 **Note: If your Visual Studio project name has spaces, the deployment steps outlined below will not work.**
@@ -134,6 +141,22 @@ At this point, you can test your bot from Azure using the built-in Web Chat clie
 ![test in webchat](media/azure-bot-quickstarts/getting-started-test-webchat.png)
 
 4. Type a message like `Hi` and press Enter. The bot will echo back `Turn 1: You sent Hi`.
+
+---
+
+## Additional resources
+
+When you deploy a bot, typically these reources are created in the Azure portal:
+
+| Resources      | Description |
+|----------------|-------------|
+| Web App Bot | An Azure Bot Service bot that is deployed to an Azure App Service.|
+| [App Service](https://docs.microsoft.com/en-us/azure/app-service/)| Enables you to build and host web applications.|
+| [App Service plan](https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
+| [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)| Provides tools for collecting and analyzing telemetry.|
+| [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
+
+If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology) topic.
 
 ## Next steps
 > [!div class="nextstepaction"]

@@ -19,19 +19,10 @@ Once your Bot is deployed and it starts to process messages you will see telemet
 
 This telemetry can be viewed within the Application Insights Blade in the Azure portal and using Log Analytics. In addition, the same telemetry can be used by PowerBI to provide more general business insights into the usage of your Bot.
 
-An example PowerBI dasboard is provided within the PowerBI folder of your created project. This is provided for example purposes and demonstrates how you can start to create your own insights. Over time we'll enhance these visualisations. 
+An example PowerBI dashboard is provided at [Conversational AI Telemetry](https://aka.ms/botPowerBiTemplate). 
 
-## Getting Started
+This is provided for example purposes and demonstrates how you can start to create your own insights. Over time we'll enhance these visualisations. 
 
-- Download PowerBI Desktop from [here](https://powerbi.microsoft.com/en-us/desktop/)
- 
-- Retrieve an ```Application Id``` for the Application Insights resource used by your Bot. You can get this by navigating to the API Access page under the Configure Section of the Application Insights Azure Blade.
-
-Double click the provided PowerBI template file located within the PowerBI folder of your Solution. You'll be prompted for the ```Application Id``` that you retrieved in the previous step. Complete authentication if prompted using your Azure subscription credentials, you may need to click on the Organizational Account setting to sign-in.
-
-The resulting dashboard is now linked to your Application Insights instance and you should see initial insights within the dashboard if messages have been sent and received.
-
->Note the Sentiment visualisation will not show data as the currently deployment script doesn't enable Sentiment when publishing the LUIS model. If you [re-publish](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-how-to-publish-app) the LUIS model and enable Sentiment this will work.
 
 ## Middleware Processing
 
@@ -50,11 +41,13 @@ Each LUIS Intent used by your project wil be prefixed with LuisIntent. to enable
     - ActivityId
     - Channel
     - FromId
-    - Conversationid
+    - FromName
+    - ConversationId
     - ConversationName
     - Locale
-    - UserName
     - Text
+    - RecipientId
+    - RecipientName
 ```
   
 ```
@@ -62,10 +55,12 @@ Each LUIS Intent used by your project wil be prefixed with LuisIntent. to enable
     - ActivityId,
     - Channel
     - RecipientId
-    - Conversationid
+    - ConversationId
     - ConversationName
     - Locale
-    - ReceipientName
+    - RecipientId
+    - RecipientName
+    - ReplyToId
     - Text
 ```
 
@@ -78,6 +73,7 @@ Each LUIS Intent used by your project wil be prefixed with LuisIntent. to enable
     - SentimentScore
     - ConversationId
     - Question
+    - DialogId
 ```
 
 ```
@@ -85,8 +81,8 @@ Each LUIS Intent used by your project wil be prefixed with LuisIntent. to enable
     - ActivityId
     - ConversationId
     - OriginalQuestion
-    - UserName
-    - QnAItemFound
+    - FromName
+    - ArticleFound
     - Question
     - Answer
     - Score

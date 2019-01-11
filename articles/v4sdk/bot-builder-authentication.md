@@ -36,9 +36,8 @@ You can extrapolate from the steps in this article to add such features to an ex
 
 | Sample | BotBuilder version | Description |
 |:---|:---:|:---|
-| [C# Auth](http://aka.ms/v4csharpauth) | v4 | Demonstrates OAuthCard support in the v4 C# SDK |
-| [C# Auth Graph](http://aka.ms/v4csharpauthgraph) | v4 |  Demonstrates OAuthCard support in the v4 C# SDK, using AAD and the Microsoft Graph API |
-| [Node Auth](http://aka.ms/v4cnodeauth) | v4 |  Demonstrates OAuthCard support in the v4 Node/JavaScript SDK |
+| **Bot authentication** ([C#](https://aka.ms/v4cs-bot-auth-sample) / [JS](https://aka.ms/v4js-bot-auth-sample)) | v4 | Demonstrates OAuthCard support. |
+| **Bot authentication MSGraph** ([C#](https://aka.ms/v4cs-auth-msgraph-sample) / [JS](https://aka.ms/v4js-auth-msgraph-sample)) | v4 |  Demonstrates Microsoft Graph API support with OAuth 2. |
 
 > [!NOTE]
 > The authentication features also work with BotBuilder v3. However, this article covers just sample v4 code.
@@ -47,7 +46,7 @@ For additional information and support, refer to [Bot Framework additional resou
 
 ## Overview
 
-This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from a GitHub repo, and this tutorial describes how to set that up, including the bot application.
+This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo, and this tutorial describes how to set that up, including the bot application.
 
 - **Create your bot and an authentication application**
 - **Prepare the bot sample code**
@@ -205,7 +204,7 @@ You can now use this connection name in your bot code to retrieve user tokens.
 1. Click **Test Connection** at the top of the **Service Provider Connection Setting** pane.
 1. The first time, this should open a new browser tab listing the permissions your app is requesting and prompt you to accept.
 1. Click **Accept**.
-1. This should then redirect you to a **Test Connection to `<your-connection-name>' Succeeded** page.
+1. This should then redirect you to a **Test Connection to <your-connection-name> Succeeded** page.
 
 ## Prepare the bot sample code
 
@@ -225,7 +224,7 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
     > [!IMPORTANT]
     > Depending on the characters in your secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
-    ```xml
+    ```json
     {
         "name": "BotAuthentication",
         "secretKey": "",

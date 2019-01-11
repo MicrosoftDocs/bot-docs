@@ -1,0 +1,51 @@
+﻿<Type Name="Retry" FullName="Microsoft.Bot.Connector.Shared.Authentication.Retry">
+  <TypeSignature Language="C#" Value="public static class Retry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Retry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Shared.Authentication.Retry" />
+  <TypeSignature Language="VB.NET" Value="Public Class Retry" />
+  <TypeSignature Language="F#" Value="type Retry = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Run&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TResult&gt; Run&lt;TResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; task, Func&lt;Exception,int,Microsoft.Bot.Connector.Shared.Authentication.RetryParams&gt; retryExceptionHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TResult&gt; Run&lt;TResult&gt;(class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!TResult&gt;&gt; task, class System.Func`3&lt;class System.Exception, int32, class Microsoft.Bot.Connector.Shared.Authentication.RetryParams&gt; retryExceptionHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Shared.Authentication.Retry.Run``1(System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.Exception,System.Int32,Microsoft.Bot.Connector.Shared.Authentication.RetryParams})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Run(Of TResult) (task As Func(Of Task(Of TResult)), retryExceptionHandler As Func(Of Exception, Integer, RetryParams)) As Task(Of TResult)" />
+      <MemberSignature Language="F#" Value="static member Run : Func&lt;System.Threading.Tasks.Task&lt;'Result&gt;&gt; * Func&lt;Exception, int, Microsoft.Bot.Connector.Shared.Authentication.RetryParams&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="Microsoft.Bot.Connector.Shared.Authentication.Retry.Run (task, retryExceptionHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="task" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;" />
+        <Parameter Name="retryExceptionHandler" Type="System.Func&lt;System.Exception,System.Int32,Microsoft.Bot.Connector.Shared.Authentication.RetryParams&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="task">To be added.</param>
+        <param name="retryExceptionHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

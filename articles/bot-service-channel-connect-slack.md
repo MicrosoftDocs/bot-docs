@@ -2,13 +2,13 @@
 title: Connect a bot to Slack | Microsoft Docs
 description: Learn how to configure a bot's connection to Slack.
 keywords: connect a bot, bot channel, Slack bot, Slack messaging app
-author: RobStand
-ms.author: kamrani
+author: JonathanFingold
+ms.author: v-jofing
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 01/09/2019
 ---
 
 # Connect a bot to Slack
@@ -65,9 +65,11 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 
 1. Select the **Event Subscriptions** tab.
 2. Click **Enable Events** to **On**.
-3. In **Request URL**, enter this URL, but replace `{YourBotHandle}` with your bot handle. The bot handle used in this tutorial is testChannels.
-        `https://slack.botframework.com/api/Events/{YourBotHandle}`
-4. In **Subscribe to Workspace Events**, click **Add Workspace Event**.
+3. In **Request URL**, enter `https://slack.botframework.com/api/Events/{YourBotHandle}`, where `{YourBotHandle}` is your bot handle, without the braces. The bot handle used in this example is **ContosoBot**.
+
+   ![Subscribe Events: top](~/media/channels/slack-SubscribeEvents-a.png)
+
+4. In **Subscribe to Bot Events**, click **Add Bot User Event**.
 5. In the list of events, select these six event types:
     * `member_joined_channel`
     * `member_left_channel`
@@ -76,8 +78,11 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
     * `message.im`
     * `message.mpim`
 
-![Subscribe Events](~/media/channels/slack-SubscribeEvents.png)
+   ![Subscribe Events: middle](~/media/channels/slack-SubscribeEvents-b.png)
+
 6. Click **Save Changes**.
+
+   ![Subscribe Events: bottom](~/media/channels/slack-SubscribeEvents-c.png)
 
 ## Add and Configure Interactive Messages (optional)
 
