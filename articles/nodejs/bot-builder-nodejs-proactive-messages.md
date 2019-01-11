@@ -1,6 +1,6 @@
 ---
 title: Send proactive messages | Microsoft Docs
-description:  Learn how to interrupt the current conversation flow with a proactive message using the Bot Builder SDK for Node.js
+description:  Learn how to interrupt the current conversation flow with a proactive message using the Bot Framework SDK for Node.js
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -25,7 +25,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 ## Send an ad hoc proactive message
 
-The following code samples show how to send an ad hoc proactive message by using the Bot Builder SDK for Node.js.
+The following code samples show how to send an ad hoc proactive message by using the Bot Framework SDK for Node.js.
 
 To be able to send an ad hoc message to a user, the bot must first collect and save information about the user from the current conversation. 
 The **address** property of the message includes all of the information that the bot will need to send an ad hoc message to the user later. 
@@ -68,7 +68,7 @@ function sendProactiveMessage(address) {
 
 ## Send a dialog-based proactive message
 
-The following code samples show how to send a dialog-based proactive message by using the Bot Builder SDK for Node.js. You can find the complete working example in the [Microsoft/BotBuilder-Samples/Node/core-proactiveMessages/startNewDialog](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog) folder.
+The following code samples show how to send a dialog-based proactive message by using the Bot Framework SDK for Node.js. You can find the complete working example in the [Microsoft/BotBuilder-Samples/Node/core-proactiveMessages/startNewDialog](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog) folder.
 
 To be able to send a dialog-based message to a user, the bot must first collect (and save) information from the current conversation. 
 The `session.message.address` object includes all of the information that the bot will need to send a dialog-based proactive message to the user. 
@@ -121,7 +121,7 @@ bot.dialog('survey', function (session, args, next) {
 
 ## Sample code
 
-For a complete sample that shows how to send proactive messages using the Bot Builder SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages" target="_blank">Proactive Messages sample</a> in GitHub. 
+For a complete sample that shows how to send proactive messages using the Bot Framework SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages" target="_blank">Proactive Messages sample</a> in GitHub. 
 Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/simpleSendMessage" target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog" target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message.
 
 ## Additional resources

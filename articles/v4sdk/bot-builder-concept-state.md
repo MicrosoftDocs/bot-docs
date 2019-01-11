@@ -1,6 +1,6 @@
 ---
 title: Managing State | Microsoft Docs
-description: Describes how state works within the Bot Builder SDK.
+description: Describes how state works within the Bot Framework SDK.
 keywords: state, bot state, conversation state, user state
 author: ivorb
 ms.author: v-ivorb

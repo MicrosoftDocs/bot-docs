@@ -1,6 +1,6 @@
 ---
 title: Real-time media calling with Skype | Microsoft Docs
-description: Understand key concepts in building a bot that can conduct real-time audio and video calls with Skype, using the Bot Builder SDK for .NET.
+description: Understand key concepts in building a bot that can conduct real-time audio and video calls with Skype, using the Bot Framework SDK for .NET.
 author: ssulzer
 ms.author: ssulzer
 manager: kamrani
@@ -53,7 +53,7 @@ In a call with a single Skype caller, the bot will automatically receive the vid
 
 To develop a real-time media bot, you must install these NuGet packages within your Visual Studio project:
 
-- [Bot Builder SDK for .NET](bot-builder-dotnet-overview.md)
+- [Bot Framework SDK for .NET](bot-builder-dotnet-overview.md)
 - [Bot Builder Real-Time Media Calling for .NET](https://www.nuget.org/packages?q=Bot.Builder.RealTimeMediaCalling)
 - [Microsoft.Skype.Bots.Media .NET library](https://www.nuget.org/packages?q=Microsoft.Skype.Bots.Media)
 

@@ -1,6 +1,6 @@
 ---
-title: Create messages with the Bot Builder SDK for .NET | Microsoft Docs
-description: Learn about commonly-used message properties within the Bot Builder SDK for .NET.
+title: Create messages with the Bot Framework SDK for .NET | Microsoft Docs
+description: Learn about commonly-used message properties within the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

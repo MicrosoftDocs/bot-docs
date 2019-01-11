@@ -1,6 +1,6 @@
 ---
 title: Write directly to storage | Microsoft Docs
-description: Learn how to write directly to storage with the Bot Builder SDK for .NET.
+description: Learn how to write directly to storage with the Bot Framework SDK for .NET.
 keywords: storage, read and write, memory storage, eTag
 author: DeniseMak
 ms.author: v-demak
@@ -592,7 +592,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
            var count = 0;
            do
            {
-               var pagedTranscript = await _transcriptStore.GetTranscriptActivitiesAsync(activity.ChannelId, activity.Conversation.Id);
+               var pagedTranscript = await _transcriptStore.GetTranscriptActivitiesAsync(activity.ChannelId, activity.Conversation.Id, continuationToken);
                var activities = pagedTranscript.Items
                   .Where(a => a.Type == ActivityTypes.Message)
                   .Select(ia => (Activity)ia)

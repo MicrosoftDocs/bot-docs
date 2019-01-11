@@ -1,6 +1,6 @@
 ---
 title: Define conversation steps with waterfalls | Microsoft Docs
-description: Learn how to use waterfalls to define the steps of a conversation with the Bot Builder SDK for Node.js.
+description: Learn how to use waterfalls to define the steps of a conversation with the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -40,7 +40,7 @@ bot.dialog('greetings', [
 ]);
 ```
 
-What makes this possible is the use of prompts. The Bot Builder SDK for Node.js provides several different types of built-in [prompts](bot-builder-nodejs-dialog-prompt.md) that you can use to ask the user for various types of information.
+What makes this possible is the use of prompts. The Bot Framework SDK for Node.js provides several different types of built-in [prompts](bot-builder-nodejs-dialog-prompt.md) that you can use to ask the user for various types of information.
 
 The following sample code shows a dialog that uses prompts to collect various pieces of information from the user throughout a 4-step waterfall.
 

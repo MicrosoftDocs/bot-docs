@@ -1,6 +1,6 @@
 ---
 title: Add media to messages | Microsoft Docs
-description: Learn how to add media to messages using the Bot Builder SDK.
+description: Learn how to add media to messages using the Bot Framework SDK.
 keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
 author: ivorb
 ms.author: v-ivorb
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Builder SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards. 
+Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards. 
 
 ## Send attachments
 
@@ -215,7 +215,7 @@ await context.sendActivity(hero);
 ## Send an Adaptive Card
 Adaptive Card and MessageFactory are used to send rich messages including texts, images, video, audio and files to communicate with users. However, there are some differences between them. 
 
-First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Builder SDK to automate creation steps for you, and supported by most channels. 
+First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Framework SDK to automate creation steps for you, and supported by most channels. 
 
 Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment. 
 

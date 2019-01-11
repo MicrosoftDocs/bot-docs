@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Creation of a high quality conversational experience requires a foundational set of capabilities. To help you succeed with building great conversational experiences, we have created an Enterprise Bot Template. This template brings together all of the best practices and supporting components we've identified through building of conversational experiences. 
 
-This template greatly simplifies the creation of a new bot project. The template will provide the following out of box capabilities, leveraging [Bot Builder SDK v4](https://github.com/Microsoft/botbuilder) and [Bot Builder Tools](https://github.com/Microsoft/botbuilder-tools).
+This template greatly simplifies the creation of a new bot project. The template will provide the following out of box capabilities, leveraging [Bot Framework SDK v4](https://github.com/Microsoft/botbuilder) and [Bot Framework Tools](https://github.com/Microsoft/botbuilder-tools).
 
 Feature | Description |
 ------------ | -------------

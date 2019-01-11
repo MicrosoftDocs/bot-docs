@@ -1,7 +1,7 @@
 ---
-title: Create a bot using Bot Builder SDK for JavaScript | Microsoft Docs
-description: Quickly create a bot using the Bot Builder SDK for JavaScript.
-keywords: quickstart, bot builder sdk, getting started
+title: Create a bot using Bot Framework SDK for JavaScript | Microsoft Docs
+description: Quickly create a bot using the Bot Framework SDK for JavaScript.
+keywords: quickstart, bot framework sdk, getting started
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani

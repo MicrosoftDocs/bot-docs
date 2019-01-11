@@ -1,6 +1,6 @@
 ---
 title: Create messages | Microsoft Docs
-description: Learn how create messages with the Bot Builder SDK for Node.js.
+description: Learn how create messages with the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -20,7 +20,7 @@ This article describes some of the commonly-used message methods you can use to 
 
 ## Default message handler
 
-The Bot Builder SDK for Node.js comes with a default message handler built into the [`session`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html) object. This message handler allows you to send and receive text messages between the bot and the user.
+The Bot Framework SDK for Node.js comes with a default message handler built into the [`session`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html) object. This message handler allows you to send and receive text messages between the bot and the user.
 
 ### Send a text message
 

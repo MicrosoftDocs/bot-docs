@@ -1,6 +1,6 @@
 ---
 title: Implement sequential conversation flow | Microsoft Docs
-description: Learn how to manage a simple conversation flow with dialogs in the Bot Builder SDK for Node.js.
+description: Learn how to manage a simple conversation flow with dialogs in the Bot Framework SDK for Node.js.
 keywords: simple conversation flow, sequential conversation flow, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
 ms.author: v-jofing

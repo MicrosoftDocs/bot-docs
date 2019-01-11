@@ -1,6 +1,6 @@
 ---
 title: Add natural language understanding to your bot | Microsoft Docs
-description: Learn how to use LUIS for natural language understanding with the Bot Builder SDK.
+description: Learn how to use LUIS for natural language understanding with the Bot Framework SDK.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
 author: ivorb
 ms.author: v-ivorb

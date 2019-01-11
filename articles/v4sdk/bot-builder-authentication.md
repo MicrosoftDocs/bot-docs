@@ -29,7 +29,7 @@ The features include:
 - Improvements to the channels to support new authentication features, such as new WebChat and DirectLineJS libraries to eliminate the need for the 6-digit magic code verification.
 - Improvements to the Azure Portal to  add, delete, and configure connection settings to various OAuth identity providers.
 - Support for a variety of out-of-the-box identity providers including Azure AD (both v1 and v2 endpoints), GitHub, and others.
-- Updates to the C# and Node.js Bot Builder SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
+- Updates to the C# and Node.js Bot Framework SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
 - Samples for how to make a bot that authenticates to Azure AD.
 
 You can extrapolate from the steps in this article to add such features to an existing bot. The following are sample bots that demonstrate the new authentication features
@@ -483,4 +483,4 @@ private isTeamsVerificationInvoke(context: TurnContext): boolean {
 On subsequent calls to the bot, notice that the token is never cached by this sample bot. This is because the bot can always ask the Azure Bot Service for the token. This avoids the bot needing to manage the token life-cycle, refresh the token, etc, as Azure Bot Service does all of this for you.
 
 ## Additional resources
-[Bot Builder SDK](https://github.com/microsoft/botbuilder)
+[Bot Framework SDK](https://github.com/microsoft/botbuilder)
