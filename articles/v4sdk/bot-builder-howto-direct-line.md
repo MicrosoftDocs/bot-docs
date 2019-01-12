@@ -1,4 +1,10 @@
 ---
+redirect_url: https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples
+---
+
+<!---
+
+---
 title: Create a Direct Line bot and client | Microsoft Docs
 description: Learn how to create a Direct Line bot and client with V4 of the Bot Framework SDK for .NET.
 keywords: direct line bot, direct line client, custom channel, console-based, publish
@@ -937,3 +943,5 @@ To test the custom messages type in the Client's console show me a hero card or 
 
 
 ### Next steps
+
+-->
