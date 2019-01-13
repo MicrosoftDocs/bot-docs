@@ -38,7 +38,7 @@ It would be useful to read this article once through before following the steps,
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) files.
 
-With msbot 4.3.2 and later, you need Azure CLI version 2.0.53 or later. If you installed the botservice extension, remove it with this command.
+With msbot 4.3.2 and later, you need Azure CLI version 2.0.54 or later. If you installed the botservice extension, remove it with this command.
 
 ```cmd
 az extension remove --name botservice
