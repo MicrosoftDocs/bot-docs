@@ -43,7 +43,9 @@ Take a look at a sample [.bot](https://github.com/Microsoft/botbuilder-tools/blo
 To learn about encrypting and decrypting the .bot file, see [Bot Secrets](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/MSBot/docs/bot-file-encryption.md).
 
 ## Why do I need a .bot file?
+
 A .bot file is **not** a requirement to build bots with Bot Framework SDK. You can continue to use appsettings.json, web.config, env, 
+
 keyvault or any mechanism you see fit to keep track of service references and keys that your bot depends on. However, to test
 the bot using the Emulator, you'll need a .bot file. The good news is that Emulator can create a .bot file for testing. To do that, 
 start the Emulator, click on the **create a new bot configuration** link on the Welcome page. In the dialog box that appears, type a **Bot name** and an **Endpoint URL**. Then connect.
@@ -53,7 +55,9 @@ The advantages of using .bot file are:
 - Bot Framework Emulator and CLI tools rely on and work great with tracking connected services in a consistent format (in a .bot file) 
 - Elegant tooling solutions around services creation and management is harder without a well defined schema (.bot file).  
 
+
 ## Using .bot file in your Bot Framework SDK bot
+
 You can use the .bot file to get service configuration information in your bot's code. The BotFramework-Configuration library available 
 for [C#](https://www.nuget.org/packages/Microsoft.Bot.Configuration) and [JS](https://www.npmjs.com/package/botframework-config) helps you load a bot file and supports several methods to query and get the appropriate service configuration information.
 
