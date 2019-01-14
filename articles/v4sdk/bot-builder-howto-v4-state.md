@@ -1,6 +1,6 @@
 ---
 title: Save user and conversation data | Microsoft Docs
-description: Learn how to save and retrieve state data with the Bot Builder SDK.
+description: Learn how to save and retrieve state data with the Bot Framework SDK.
 keywords: conversation state, user state, conversation, saving state, managing bot state
 author: ivorb
 ms.author: v-ivorb

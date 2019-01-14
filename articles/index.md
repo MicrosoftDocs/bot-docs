@@ -18,7 +18,7 @@ ms.date: 09/27/2018
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
     <div class="intro" style="min-width: 200px">
-        <p>Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Builder SDK with support for .NET and Node.js. Learn how to use Bot Service with our quickstart and samples.</p>
+        <p>Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for .NET and Node.js. Learn how to use Bot Service with our quickstart and samples.</p>
     </div>
 <h2 style="margin-top: 18px; margin-bottom: 0px;">5-Minute Quickstarts</h2>
 <div class="ico48Case">
@@ -67,7 +67,7 @@ ms.date: 09/27/2018
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
     <div class="intro" style="min-width: 200px">
-        <p>Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Builder SDK with support for C# and JavaScript. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
+        <p>Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for C# and JavaScript. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
 </p>
 </div>
 

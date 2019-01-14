@@ -39,10 +39,10 @@ Both the Bot Connector service and the Bot State service enable authentication w
 
 The Bot Framework provides client libraries that can be used to build bots in either C# or Node.js. 
 
-- To build a bot using C#, use the [Bot Builder SDK for C#](../dotnet/bot-builder-dotnet-overview.md). 
-- To build a bot using Node.js, use the [Bot Builder SDK for Node.js](../nodejs/index.md). 
+- To build a bot using C#, use the [Bot Framework SDK for C#](../dotnet/bot-builder-dotnet-overview.md). 
+- To build a bot using Node.js, use the [Bot Framework SDK for Node.js](../nodejs/index.md). 
 
-In addition to modeling the Bot Connector service and the Bot State service, each Bot Builder SDK also provides a powerful system for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as <a href="https://www.luis.ai/" target="_blank">LUIS</a>, and more. 
+In addition to modeling the Bot Connector service and the Bot State service, each Bot Framework SDK also provides a powerful system for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as <a href="https://www.luis.ai/" target="_blank">LUIS</a>, and more. 
 
 > [!NOTE]
 > As an alternative to using the C# SDK or Node.js SDK, you can generate your own client library in the language of your choice by using the <a href="https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json" target="_blank">Bot Connector Swagger file</a> and the <a href="https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/StateAPI.json" target="_blank">Bot State Swagger file</a>.

@@ -3,7 +3,7 @@ title: Debug a bot | Microsoft Docs
 description: Learn how to debug a bot built using Bot Service.
 author: v-ducvo
 ms.author: v-ducvo
-keywords: Bot Builder SDK, debug bot, test bot, bot emulator, emulator
+keywords: Bot Framework SDK, debug bot, test bot, bot emulator, emulator
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

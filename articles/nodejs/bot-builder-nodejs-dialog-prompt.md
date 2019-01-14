@@ -1,6 +1,6 @@
 ---
 title: Prompt for user input | Microsoft Docs
-description: Learn how to use prompts to collect user input with the Bot Builder SDK for Node.js.
+description: Learn how to use prompts to collect user input with the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
-The Bot Builder SDK for Node.js provides a set of built-in prompts to simplify collecting inputs from a user. 
+The Bot Framework SDK for Node.js provides a set of built-in prompts to simplify collecting inputs from a user. 
 
 A *prompt* is used whenever a bot needs input from the user. You can use prompts to ask a user for a series of inputs by chaining the prompts in a waterfall. You can use prompts in conjunction with [waterfall](bot-builder-nodejs-dialog-waterfall.md) to help you [manage conversation flow](bot-builder-nodejs-manage-conversation-flow.md) in your bot. 
 
@@ -69,7 +69,7 @@ bot.dialog('askName', [
 ```
 
 ## Prompt types
-The Bot Builder SDK for Node.js includes several different types of built-in prompts. 
+The Bot Framework SDK for Node.js includes several different types of built-in prompts. 
 
 |**Prompt type**     | **Description** |     
 | ------------------ | --------------- |

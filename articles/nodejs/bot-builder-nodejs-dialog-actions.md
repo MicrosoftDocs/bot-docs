@@ -1,6 +1,6 @@
 ---
 title: Handle user actions | Microsoft Docs
-description:  Learn how to handle user actions by enabling your bot to listen for and handle user input containing certain keywords using the Bot Builder SDK for Node.js.
+description:  Learn how to handle user actions by enabling your bot to listen for and handle user input containing certain keywords using the Bot Framework SDK for Node.js.
 author: DucVo
 ms.author: v-ducvo
 manager: kamrani
@@ -232,7 +232,7 @@ bot.dialog('orderDinner', [
 
 ### Bind an endConversationAction
 
-Binding an `endConversationAction` will register it to the dialog. Once triggered, this action ends the conversation with the user. Triggering this action is similar to calling the [endConversation](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation) method. Once a conversation ends, the Bot Builder SDK for Node.js will clear the dialog stack and persisted state data. For more information on persisted state data, see [Manage state data](bot-builder-nodejs-state.md).
+Binding an `endConversationAction` will register it to the dialog. Once triggered, this action ends the conversation with the user. Triggering this action is similar to calling the [endConversation](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation) method. Once a conversation ends, the Bot Framework SDK for Node.js will clear the dialog stack and persisted state data. For more information on persisted state data, see [Manage state data](bot-builder-nodejs-state.md).
 
 The following code snippet shows how to bind an [endConversationAction][endConversationAction] to a dialog.
 

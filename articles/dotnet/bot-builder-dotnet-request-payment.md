@@ -1,6 +1,6 @@
 ---
 title: Request payment | Microsoft Docs
-description: Learn how to send a payment request using the Bot Builder SDK for .NET.
+description: Learn how to send a payment request using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -21,11 +21,11 @@ monikerRange: 'azure-bot-service-3.0'
 
 If your bot enables users to purchase items, it can request payment by including 
 a special type of button within a [rich card](bot-builder-dotnet-add-rich-card-attachments.md). 
-This article describes how to send a payment request using the Bot Builder SDK for .NET.
+This article describes how to send a payment request using the Bot Framework SDK for .NET.
 
 ## Prerequisites
 
-Before you can send a payment request using the Bot Builder SDK for .NET, you must complete these prerequisite tasks.
+Before you can send a payment request using the Bot Framework SDK for .NET, you must complete these prerequisite tasks.
 
 ### Update Web.config
 
@@ -165,4 +165,4 @@ Payment Complete callbacks will contain emulated payment tokens or real payment 
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
 - <a href="http://www.w3.org/Payments/" target="_blank">Web Payments at W3C</a> 
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>

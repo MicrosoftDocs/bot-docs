@@ -1,6 +1,6 @@
 ---
 title: Gather user input using a dialog prompt| Microsoft Docs
-description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK.
+description: Learn how to prompt users for input using the Dialogs library in the Bot Framework SDK.
 keywords: prompts, prompt, user input, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: JonathanFingold
 ms.author: v-jofing

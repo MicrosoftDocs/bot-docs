@@ -1,6 +1,6 @@
 ---
 title: Implement global message handlers | Microsoft Docs
-description:  Learn how to enable your bot to listen for and handle user input containing certain keywords using the Bot Builder SDK for .NET.
+description:  Learn how to enable your bot to listen for and handle user input containing certain keywords using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -19,7 +19,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 ## Listen for keywords in user input
 
-The following walk through shows how to implement global message handlers by using the Bot Builder SDK for .NET.
+The following walk through shows how to implement global message handlers by using the Bot Framework SDK for .NET.
 
 First, `Global.asax.cs` registers `GlobalMessageHandlersBotModule`, which is implemented as shown here. 
 In this example, the module registers two scorables: one for managing a request to change settings (`SettingsScorable`) 
@@ -93,10 +93,10 @@ protected override async Task PostAsync(IActivity item, string state, Cancellati
 
 ## Sample code
 
-For a complete sample that shows how to implement global message handlers using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers" target="_blank">Global Message Handlers sample</a> in GitHub.
+For a complete sample that shows how to implement global message handlers using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers" target="_blank">Global Message Handlers sample</a> in GitHub.
 
 ## Additional resources
 
 - [Design and control conversation flow](../bot-service-design-conversation-flow.md)
-- <a href="/dotnet/api/?view=botbuilder-3.12.2.4" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.12.2.4" target="_blank">Bot Framework SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers" target="_blank">Global Message Handlers sample (GitHub)</a>

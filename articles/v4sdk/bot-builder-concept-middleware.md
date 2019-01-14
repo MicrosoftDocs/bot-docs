@@ -93,4 +93,4 @@ Add the state management objects that will need updating to a _bot state set_ ob
 
 
 ## Additional resources
-You can take a look at the transcript logger middleware, as implemented in the Bot Builder SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs) | [JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].
+You can take a look at the transcript logger middleware, as implemented in the Bot Framework SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs) | [JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].

@@ -1,6 +1,6 @@
 ---
-title: Sample bots for Bot Builder SDK for Node.js | Microsoft Docs
-description: Explore a large selection of sample bots that can help kickstart your bot development with the Bot Builder SDK for Node.js.
+title: Sample bots for Bot Framework SDK for Node.js | Microsoft Docs
+description: Explore a large selection of sample bots that can help kickstart your bot development with the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
@@ -10,11 +10,11 @@ ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0' 
 ---
-# Bot Builder SDK for Node.js samples
+# Bot Framework SDK for Node.js samples
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
-These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for Node.js. You can use the samples to help you quickly get started with building great bots with rich capabilities.
+These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Framework SDK for Node.js. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
 ## Get the samples
 To get the samples, clone the [BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repository using Git.
@@ -24,7 +24,7 @@ git clone https://github.com/Microsoft/BotBuilder-Samples.git
 cd BotBuilder-Samples
 ```
 
-The sample bots built with the Bot Builder SDK for Node.js are organized in the **Node** directory.
+The sample bots built with the Bot Framework SDK for Node.js are organized in the **Node** directory.
 
 You can also view the samples on GitHub and deploy them to Azure directly.
 

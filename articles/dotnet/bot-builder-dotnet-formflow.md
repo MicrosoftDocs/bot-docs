@@ -1,6 +1,6 @@
 ---
 title: Basic features of FormFlow | Microsoft Docs
-description: Learn how to guide conversation flows using FormFlow within the Bot Builder SDK for .NET.
+description: Learn how to guide conversation flows using FormFlow within the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-3.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
 [Dialogs](bot-builder-dotnet-dialogs.md) are very powerful and flexible, but handling a guided conversation such as ordering a sandwich can require a lot of effort. At each point in the conversation, there are many possibilities of what will happen next. For example, you may need to clarify an ambiguity, provide help, go back, or show progress. 
-By using **FormFlow** within the Bot Builder SDK for .NET, you can greatly simplify the process of managing 
+By using **FormFlow** within the Bot Framework SDK for .NET, you can greatly simplify the process of managing 
 a guided conversation like this. 
 
 FormFlow automatically generates the dialogs that are necessary to manage a guided conversation, 
@@ -368,7 +368,7 @@ FormFlow simplifies dialog development. The advanced features of FormFlow let yo
 - [Localize form content](bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 
 [LuisDialog]: /dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1
 

@@ -1,7 +1,7 @@
 ---
-title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
-description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
-keywords: Bot Builder SDK, create a bot, quickstart, .NET, getting started, C# bot
+title: Create a bot with the Bot Framework SDK for .NET | Microsoft Docs
+description: Create a bot with the Bot Framework SDK for .NET, a powerful bot construction framework.
+keywords: Bot Framework SDK, create a bot, quickstart, .NET, getting started, C# bot
 author: kamrani
 ms.author: kamrani
 manager: kamrani
@@ -12,14 +12,14 @@ ms.date: 11/19/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot with the Bot Builder SDK for .NET
+# Create a bot with the Bot Framework SDK for .NET
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator.
 
 ## Prerequisites
 - Visual Studio [2017](https://www.visualstudio.com/downloads)
-- Bot Builder SDK v4 template for [C#](https://aka.ms/bot-vsix)
+- Bot Framework SDK v4 template for [C#](https://aka.ms/bot-vsix)
 - Bot Framework [Emulator](https://aka.ms/Emulator-wiki-getting-started)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 

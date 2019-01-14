@@ -6,6 +6,7 @@ ms.author: JonathanFingold
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
+ROBOTS: NOINDEX
 ms.date: 10/04/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
@@ -27,7 +28,7 @@ The features include:
 - Improvements to the channels to support new authentication features, such as new WebChat and DirectLineJS libraries to eliminate the need for the 6-digit magic code verification.
 - Improvements to the Azure Portal to  add, delete, and configure connection settings to various OAuth identity providers.
 - Support for a variety of out-of-the-box identity providers including Azure AD (both v1 and v2 endpoints), GitHub, and others.
-- Updates to the C# and Node.js Bot Builder SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
+- Updates to the C# and Node.js Bot Framework SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
 - Samples for how to make a bot that authenticates to Azure AD (v1 and v2 endpoints) and to GitHub.
 
 You can extrapolate from the steps in this article to add such features to an existing bot. The following are sample bots that demonstrate the new authentication features
@@ -360,4 +361,4 @@ else if(message.Type == ActivityTypes.Event)
 }
 ```
 ## Additional resources
-[Bot Builder SDK](https://github.com/microsoft/botbuilder)
+[Bot Framework SDK](https://github.com/microsoft/botbuilder)
