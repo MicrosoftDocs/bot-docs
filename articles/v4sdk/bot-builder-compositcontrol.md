@@ -1,6 +1,6 @@
 ---
 title: Reuse dialogs | Microsoft Docs
-description: Learn how to modularize your bot logic using dialog container in the Bot Builder SDK for Node.js and C#.
+description: Learn how to modularize your bot logic using dialog container in the Bot Framework SDK for Node.js and C#.
 keywords: composite control, modular bot logic
 author: v-ducvo
 ms.author: v-ducvo

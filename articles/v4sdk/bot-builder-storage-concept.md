@@ -5,7 +5,7 @@ redirect_url: /bot-framework/bot-builder-howto-v4-state
 <!--
 ---
 title: State and storage | Microsoft Docs
-description: Describes what the state manager, conversation state and user state is within the Bot Builder SDK.
+description: Describes what the state manager, conversation state and user state is within the Bot Framework SDK.
 keywords: LUIS, conversation state, user state, storage, manage state
 author: DeniseMak
 ms.author: v-demak
@@ -22,7 +22,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 A key to good bot design is to track the context of a conversation, so that your bot remembers things like the answers to previous questions.
 Depending on what your bot is used for, you may even need to keep track of state or store information for longer than the lifetime of the conversation.
-A bot's *state* is information it remembers in order to respond appropriately to incoming messages. The Bot Builder SDK provides classes for storing and retrieving state data as an object associated with a user or a conversation.
+A bot's *state* is information it remembers in order to respond appropriately to incoming messages. The Bot Framework SDK provides classes for storing and retrieving state data as an object associated with a user or a conversation.
 
 * **Conversation properties** help your bot keep track of the current conversation the bot is having with the user. If your bot needs to complete a sequence of steps or switch between conversation topics, you can use conversation properties to manage steps in a sequence or track the current topic. Since conversation properties reflect the state of the current conversation, you typically clear them at the end of a conversation, when the bot receives an _end of conversation_ activity.
 * **User properties** can be used for many purposes, such as determining where the user's prior conversation left off or simply greeting a returning user by name. If you store a user's preferences, you can use that information to customize the conversation the next time you chat. For example, you might alert the user to a news article about a topic that interests her, or alert a user when an appointment becomes available. You should clear them if the bot receives a _delete user data_ activity.
@@ -50,7 +50,7 @@ Bots built using Azure Table Storage can be designed to be stateless and scalabl
 
 ## Writing directly to storage
 
-You can also use the Bot Builder SDK to read and write data directly to storage, without using middleware or without using the bot context. This can be appropriate to data that your bot uses, that comes from a source outside your bot's conversation flow.
+You can also use the Bot Framework SDK to read and write data directly to storage, without using middleware or without using the bot context. This can be appropriate to data that your bot uses, that comes from a source outside your bot's conversation flow.
 
 For example, let's say your bot allows the user to ask for the weather report, and your bot retrieves the weather report for a specified date, by reading it from an external database. The content of the weather database isn't dependent on user information or the conversation context, so you could just read it directly from storage instead of using the state manager.  See [How to write directly to storage](bot-builder-howto-v4-storage.md) for an example.
 

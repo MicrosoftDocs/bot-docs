@@ -19,8 +19,40 @@ This article contains answers to some frequently asked questions about the Bot F
 While the Conversation User Interface (CUI) is upon us, at this point few developers have the expertise and tools needed to create new conversational experiences or enable existing applications and services with a conversational interface their users can enjoy. We have created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.
 
 ### What is the v4 SDK?
-Bot Builder v4 SDK builds on the feedback and learnings from the prior Bot Builder SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
+Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
 
+## Bot Framework SDK Version 3 Lifetime Support 
+SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the release of Bot Framework SDK V4, as with other frameworks, we continue supporting SDK V3 with security, high priority bug fixes, and connector / protocol layer updates.  Customers can expect v3 support to continue through 2019.
+
+### What is Microsoft plan for supporting existing V3 bots? What happens to my V3 Bots? Will my V3 bots stop working?
+SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the release of Bot Framework SDK V4, as with other frameworks, we continue supporting SDK V3 with security, high priority bug fixes, and connector / protocol layer updates.  Customers can expect v3 support to continue through 2019.
+- Azure Bot Service and Bot Framework V3 are both GA products and are fully supported. The underlying Bot Framework protocol and connector libraries have not changed and are shared between both V3 and V4 SDKs.  
+- Bots created with Bot Framework (BotBuilder) V3 SDK continue to be supported through 2019. 
+- Customers can continue creating V3 bots using Azure portal or Azure CLI tools.
+
+### What happens to my bot written to REST & Bot Framework Protocol 3.1?
+- Azure Bot Service and Bot Framework V3 are both GA products and are fully supported.
+- The Bot Framework protocol has not changed and are shared between both V3 and V4 SDKs.  
+
+### Will there be more updates, additional development for the V3 SDK or just bugfixes?  
+- We will update V3 with minor enhancements, mainly at the connector layer, and with security and high priority bug fixes.  
+- Updates to V3 will be released twice yearly and as needed, based on bug fixes and/or required protocol changes. 
+- Current plan is to publish minor and patch versions of V3 to NuGet and NPM for our C# and JavaScript SDKs.
+
+### Why V4 is not backwards compatible with V3?
+- At the protocol level, communication between your conversational app (aka your bot) to different channels uses the Bot Framework Activity protocol which is identical between V3 and V4. The same underlying Azure Bot Service (AZURE BOT SERVICE) infrastructure supports both V3 and V4 bots.
+- Bot Framework SDK V4 offers conversational centric development experience with an SDK architecture that is modular and extensible, empowering developers to create robust and sophisticated chat applications. V4 extendable design was based on customer feedback, suggesting SDK V3 dialog models and primitives are too ridged and constraining extendibility.  
+
+### What is the general migration strategy? I have a V3 bot, how can I migrate it to V4/ Can I migrate my V3 bot to V4?
+- At this time, migration help for bots created with SDK V3 to SDK V4 will come in the form of documentations and samples. We currently do not have plans to provide any SDK V3 compatibility layer in SDK V4 that would allow V3 build bots to work within a V4 bot. 
+- If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future. 
+- Bot Framework SDK V4 is an evolution of the very successful V3 SDK. V4 is a major version release which includes breaking changes that prevent V3 bots from running on the newer V4 SDK. 
+
+### Should I build new a bot using V3 or V4?
+- For new conversational experiences, we recommend you start a new bot using Bot Framework SDK V4.
+- If you are already familiar with Bot Framework SDK V3, you should take the time to learn about the new version and features offered with the new [Bot Framework SDK V4](http://aka.ms/botframeowrkoverview).
+- If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future.
+- You can create Bot Framework SDK V4 and older V3 bots via Azure portal and Azure Command Line. 
 
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
@@ -36,7 +68,7 @@ We have not provided a general mechanism for developers to add new channels to B
 
 The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
 
-If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Builder for REST API (provided it has an internet-accessible REST endpoint).
+If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Framework for REST API (provided it has an internet-accessible REST endpoint).
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?

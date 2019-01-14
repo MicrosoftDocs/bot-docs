@@ -1,6 +1,6 @@
 ---
-title: Bot Builder SDK for .NET | Microsoft Docs
-description: Get started with Bot Builder SDK for .NET, a powerful, easy-to-use framework for building bots.
+title: Bot Framework SDK for .NET | Microsoft Docs
+description: Get started with Bot Framework SDK for .NET, a powerful, easy-to-use framework for building bots.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Bot Builder SDK for .NET
+# Bot Framework SDK for .NET
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
@@ -20,7 +20,7 @@ monikerRange: 'azure-bot-service-3.0'
 > - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
 > - [REST](../rest-api/bot-framework-rest-overview.md)
 
-The Bot Builder SDK for .NET is a powerful framework for constructing bots that can handle both free-form interactions 
+The Bot Framework SDK for .NET is a powerful framework for constructing bots that can handle both free-form interactions 
 and more guided conversations where the user selects from possible values. 
 It is easy to use and leverages C# to provide a familiar way for .NET developers to write bots.
 
@@ -35,16 +35,16 @@ conversation, providing help, navigation, clarification, and confirmation as nee
 > [!IMPORTANT]
 > On July 31, 2017 breaking changes have been implemented in the Bot Framework security protocol. 
 > To prevent these changes from adversely impacting your bot, you must ensure that your application is 
-> using Bot Builder SDK v3.5 or greater. If you've built a bot using an 
-> SDK that you obtained prior to January 5, 2017 (the release date for Bot Builder SDK v3.5), 
-> be sure to upgrade to Bot Builder SDK v3.5 or later.
+> using Bot Framework SDK v3.5 or greater. If you've built a bot using an 
+> SDK that you obtained prior to January 5, 2017 (the release date for Bot Framework SDK v3.5), 
+> be sure to upgrade to Bot Framework SDK v3.5 or later.
 
 ## Get the SDK
 
 The SDK is available as a NuGet package and as open source on <a href="https://github.com/Microsoft/BotBuilder" target="_blank">GitHub</a>.
 
 > [!IMPORTANT]
-> The Bot Builder SDK for .NET requires .NET Framework 4.6 or newer. If you are adding the SDK to an existing project
+> The Bot Framework SDK for .NET requires .NET Framework 4.6 or newer. If you are adding the SDK to an existing project
 > targeting a lower version of the .NET Framework, you will need to update your project to target .NET Framework 4.6 first.
 
 To install the SDK within a Visual Studio project, complete the following steps:
@@ -55,13 +55,13 @@ To install the SDK within a Visual Studio project, complete the following steps:
 
 ## Get code samples
 
-This SDK includes [sample source code](bot-builder-dotnet-samples.md) that uses the features of the Bot Builder SDK for .NET.
+This SDK includes [sample source code](bot-builder-dotnet-samples.md) that uses the features of the Bot Framework SDK for .NET.
 
 ## Next steps
 
-Learn more about building bots using the Bot Builder SDK for .NET by reviewing articles throughout this section, beginning with:
+Learn more about building bots using the Bot Framework SDK for .NET by reviewing articles throughout this section, beginning with:
 
 - [Quickstart](bot-builder-dotnet-quickstart.md): Quickly build and test a simple bot by following instructions in this step-by-step tutorial.
-- [Key concepts](bot-builder-dotnet-concepts.md): Learn about key concepts in the Bot Builder SDK for .NET.
+- [Key concepts](bot-builder-dotnet-concepts.md): Learn about key concepts in the Bot Framework SDK for .NET.
 
-If you encounter problems or have suggestions regarding the Bot Builder SDK for .NET, see [Support](../bot-service-resources-links-help.md) for a list of available resources. 
+If you encounter problems or have suggestions regarding the Bot Framework SDK for .NET, see [Support](../bot-service-resources-links-help.md) for a list of available resources. 

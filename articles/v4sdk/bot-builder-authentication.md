@@ -29,16 +29,15 @@ The features include:
 - Improvements to the channels to support new authentication features, such as new WebChat and DirectLineJS libraries to eliminate the need for the 6-digit magic code verification.
 - Improvements to the Azure Portal to  add, delete, and configure connection settings to various OAuth identity providers.
 - Support for a variety of out-of-the-box identity providers including Azure AD (both v1 and v2 endpoints), GitHub, and others.
-- Updates to the C# and Node.js Bot Builder SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
+- Updates to the C# and Node.js Bot Framework SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
 - Samples for how to make a bot that authenticates to Azure AD.
 
 You can extrapolate from the steps in this article to add such features to an existing bot. The following are sample bots that demonstrate the new authentication features
 
 | Sample | BotBuilder version | Description |
 |:---|:---:|:---|
-| [C# Auth](http://aka.ms/v4csharpauth) | v4 | Demonstrates OAuthCard support in the v4 C# SDK |
-| [C# Auth Graph](http://aka.ms/v4csharpauthgraph) | v4 |  Demonstrates OAuthCard support in the v4 C# SDK, using AAD and the Microsoft Graph API |
-| [Node Auth](http://aka.ms/v4cnodeauth) | v4 |  Demonstrates OAuthCard support in the v4 Node/JavaScript SDK |
+| **Bot authentication** ([C#](https://aka.ms/v4cs-bot-auth-sample) / [JS](https://aka.ms/v4js-bot-auth-sample)) | v4 | Demonstrates OAuthCard support. |
+| **Bot authentication MSGraph** ([C#](https://aka.ms/v4cs-auth-msgraph-sample) / [JS](https://aka.ms/v4js-auth-msgraph-sample)) | v4 |  Demonstrates Microsoft Graph API support with OAuth 2. |
 
 > [!NOTE]
 > The authentication features also work with BotBuilder v3. However, this article covers just sample v4 code.
@@ -47,7 +46,7 @@ For additional information and support, refer to [Bot Framework additional resou
 
 ## Overview
 
-This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from a GitHub repo, and this tutorial describes how to set that up, including the bot application.
+This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo, and this tutorial describes how to set that up, including the bot application.
 
 - **Create your bot and an authentication application**
 - **Prepare the bot sample code**
@@ -205,7 +204,7 @@ You can now use this connection name in your bot code to retrieve user tokens.
 1. Click **Test Connection** at the top of the **Service Provider Connection Setting** pane.
 1. The first time, this should open a new browser tab listing the permissions your app is requesting and prompt you to accept.
 1. Click **Accept**.
-1. This should then redirect you to a **Test Connection to `<your-connection-name>' Succeeded** page.
+1. This should then redirect you to a **Test Connection to <your-connection-name> Succeeded** page.
 
 ## Prepare the bot sample code
 
@@ -225,7 +224,7 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
     > [!IMPORTANT]
     > Depending on the characters in your secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
-    ```xml
+    ```json
     {
         "name": "BotAuthentication",
         "secretKey": "",
@@ -254,7 +253,8 @@ You will need to install the [Bot Emulator](https://github.com/Microsoft/BotFram
 1. Start your bot (with or without debugging).
 1. Note the localhost port number for the page. You will need this information to interact with your bot.
 1. Start the Emulator.
-1. Connect to your bot.
+1. Connect to your bot. Please make sure the bot configuration uses **Microsoft app ID** and **Microsoft app password** when using authentication
+1. Ensure that in Emulator settings, **Use a sign-in verification code for OAuthCards** is ticked and **ngrok** is enabled so the Azure Bot Service can return the token to the emulator when it becomes available.
 
    If you haven't configured the connection already, provide the address and your bot's Microsoft app ID and password. Add `/api/messages` to the bot's URL. Your URL will look something like `http://localhost:portNumber/api/messages`.
 
@@ -484,4 +484,4 @@ private isTeamsVerificationInvoke(context: TurnContext): boolean {
 On subsequent calls to the bot, notice that the token is never cached by this sample bot. This is because the bot can always ask the Azure Bot Service for the token. This avoids the bot needing to manage the token life-cycle, refresh the token, etc, as Azure Bot Service does all of this for you.
 
 ## Additional resources
-[Bot Builder SDK](https://github.com/microsoft/botbuilder)
+[Bot Framework SDK](https://github.com/microsoft/botbuilder)

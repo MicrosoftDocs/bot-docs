@@ -1,6 +1,6 @@
 ---
 title: Request payment | Microsoft Docs
-description: Learn how to send a payment request using the Bot Builder SDK for Node.js.
+description: Learn how to send a payment request using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -21,11 +21,11 @@ monikerRange: 'azure-bot-service-3.0'
 
 If your bot enables users to purchase items, it can request payment by including 
 a special type of button within a [rich card](bot-builder-nodejs-send-rich-cards.md). 
-This article describes how to send a payment request using the Bot Builder SDK for Node.js.
+This article describes how to send a payment request using the Bot Framework SDK for Node.js.
 
 ## Prerequisites
 
-Before you can send a payment request using the Bot Builder SDK for Node.js, you must complete these prerequisite tasks.
+Before you can send a payment request using the Bot Framework SDK for Node.js, you must complete these prerequisite tasks.
 
 ### Register and configure your bot
 

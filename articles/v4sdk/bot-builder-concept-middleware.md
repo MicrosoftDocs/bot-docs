@@ -73,11 +73,24 @@ For event handlers, not calling _next_ means that the event is cancelled, which 
 ## Response event handlers
 In addition to the application and middleware logic, response handlers (also sometimes referred to as event handlers, or activity event handlers) can be added to the context object. These handlers are called when the associated response happens on the current context object, before executing the actual response. These handlers are useful when you know you'll want to do something, either before or after the actual event, for every activity of that type for the rest of the current response.
 
-> [!WARNING] 
+> [!WARNING]
 > Be careful to not call an activity response method from within it's respective response event handler, for example, calling the send activity method from within an on send activity handler. Doing so can generate an infinite loop.
 
 Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
 The handlers registered on a context object are handled very similarly to how the adapter manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
 
+## Handling state in middleware
+
+A common method to save state is to call the save changes method at the end of the turn handler. Here is a diagram with a focus on the call.
+
+![state middleware issues](media/bot-builder-dialog-state-problem.png)
+
+The problem with this approach is that any state updates made from some custom middleware that happens after the bot’s turn handler has returned will not be saved to durable storage. The solution is to move the call to the save changes method to after the custom middleware has completed by adding an instance of the _auto-save changes_ middleware to the beginning of the middleware stack, or at least before any of the middleware that might update state. The execution is shown below.
+
+![state middleware solution](media/bot-builder-dialog-state-solution.png)
+
+Add the state management objects that will need updating to a _bot state set_ object, and then use that when you create your auto-save changes middleware.
+
+
 ## Additional resources
-You can take a look at the transcript logger middleware, as implemented in the Bot Builder SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs) | [JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].
+You can take a look at the transcript logger middleware, as implemented in the Bot Framework SDK [[C#](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/TranscriptLoggerMiddleware.cs) | [JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/transcriptLogger.ts)].

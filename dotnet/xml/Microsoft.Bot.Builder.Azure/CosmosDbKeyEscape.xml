@@ -1,0 +1,49 @@
+﻿<Type Name="CosmosDbKeyEscape" FullName="Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape">
+  <TypeSignature Language="C#" Value="public static class CosmosDbKeyEscape" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CosmosDbKeyEscape extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbKeyEscape" />
+  <TypeSignature Language="F#" Value="type CosmosDbKeyEscape = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EscapeKey">
+      <MemberSignature Language="C#" Value="public static string EscapeKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EscapeKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape.EscapeKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EscapeKey (key As String) As String" />
+      <MemberSignature Language="F#" Value="static member EscapeKey : string -&gt; string" Usage="Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape.EscapeKey key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to escape.</param>
+        <summary>
+            Converts the key into a DocumentID that can be used safely with Cosmos DB.
+            The following characters are restricted and cannot be used in the Id property: '/', '\', '?', '#'
+            More information at https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.resource.id?view=azure-dotnet#remarks.
+            </summary>
+        <returns>An escaped key that can be used safely with CosmosDB.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

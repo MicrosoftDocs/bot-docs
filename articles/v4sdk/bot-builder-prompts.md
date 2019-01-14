@@ -1,6 +1,6 @@
 ---
-title: Gather user input | Microsoft Docs
-description: Learn how to prompt users for input using the Dialogs library in the Bot Builder SDK.
+title: Gather user input using a dialog prompt| Microsoft Docs
+description: Learn how to prompt users for input using the Dialogs library in the Bot Framework SDK.
 keywords: prompts, prompt, user input, dialogs, AttachmentPrompt, ChoicePrompt, ConfirmPrompt, DatetimePrompt, NumberPrompt, TextPrompt, reprompt, validation
 author: JonathanFingold
 ms.author: v-jofing
@@ -8,182 +8,269 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/02/2018
+ms.date: 11/21/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
-# Gather user input
+# Gather user input using a dialog prompt
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Gathering information by posting questions is one of the main ways a bot interacts with users. It is possible to do this directly by using the [turn context](~/v4sdk/bot-builder-basics.md#defining-a-turn) object's _send activity_ method and then process the next incoming message as the response. However, the Bot Builder SDK provides a [dialogs library](bot-builder-concept-dialog.md) that provides methods designed to make it easier to ask questions, and to make sure the response matches a specific data type or meets custom validation rules. This topic details how to achieve this using prompt objects to ask a user for input.
+Gathering information by posing questions is one of the main ways a bot interacts with users. The *dialogs* library makes it easy to ask questions, as well as validate the response to make sure it matches a specific data type or meets custom validation rules. This topic details how to create and call prompts from a waterfall dialog.
 
-## Prompt types
+## Prerequisites
 
-Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or restarts from the top with a re-prompt.
-
-The dialogs library offers a number of basic prompts, each used for collecting a different type of response.
-
-| Prompt | Description | Returns |
-|:----|:----|:----|
-| _Attachment prompt_ | Asks for one or more attachments, such as a document or image. | A collection of _attachment_ objects. |
-| _Choice prompt_ | Asks for a choice from a set of options. | A _found choice_ object. |
-| _Confirm prompt_ | Asks for a confirmation. | A Boolean value. |
-| _Date-time prompt_ | Asks for a date-time. | A collection of _date-time resolution_ objects. |
-| _Number prompt_ | Asks for a number. | A numeric value. |
-| _Text prompt_ | Asks for general text input. | A string. |
-
-The library also includes an _OAuth prompt_ for obtaining an _OAuth token_ with which to access another application on behalf of the user. For more about authentication, see how to [add authentication to your bot](bot-builder-authentication.md).
-
-The basic prompts can interpret natural language input, such as "ten" or "a dozen" for a number, or "tomorrow" or "Friday at 10am" for a date-time.
+- The code in this article is based on the **DialogPromptBot** sample. You'll need a copy of the sample in either [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
+- A basic understanding of the [dialogs library](bot-builder-concept-dialog.md) and how to [manage conversations](bot-builder-dialog-manage-conversation-flow.md) is required. 
+- [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator) for testing.
 
 ## Using prompts
 
-A dialog can use a prompt only if both the dialog and prompt are in the same dialog set.
+A dialog can use a prompt only if both the dialog and prompt are in the same dialog set. You can use the same prompt in multiple steps within a dialog and in multiple dialogs in the same dialog set. However, you associate custom validation with a prompt at initialization time. To use different validation for the same type of prompt, you need multiple instances of the prompt type, each with its own validation code.
 
-1. Define a state property accessor for your dialog state.
-1. Create a dialog set.
-1. Create your prompts, and add them to the dialog set.
-1. Create a dialog that will use your prompts, and add it to the dialog set.
-1. Within the dialog, add calls to the prompts and to retrieve the prompt results.
-
-This article discusses how to create your prompts and how to call them from a waterfall dialog.
-For more information about dialogs in general, see the [dialogs library](bot-builder-concept-dialog.md) article.
-For a discussion of a complete bot that uses dialogs and prompts, see how to [use dialogs to manage simple conversation flow](bot-builder-dialog-manage-conversation-flow.md).
-
-You can use the same prompt in multiple steps within a dialog and in multiple dialogs in the same dialog set.
-However, you associate custom validation with a prompt at initialization time.
-So if you need different validation for the same type of prompt, you need multiple instances of the prompt type, each with its own validation code.
-
-### Create a prompt
-
-To prompt a user for input, define a prompt using one of the built-in classes, such as the _text prompt_, and add it to your dialog set.
-
-* The prompt has a fixed ID. (Identifiers must be unique within a dialog set.)
-* The prompt can have a custom validator. (See [custom validation](#custom-validation).)
-* For some prompts, you can specify a _default locale_.
-
-In general, create and add prompts and dialogs to your dialog set when you initialize your bot. The dialog set can then resolve the prompt's ID when the bot receives input from the user.
-
-For example, the following code creates a two text prompts and adds them to an existing dialog set. The second text prompt references a validation method that is not shown here.
+### Define a state property accessor for the dialog state
 
 # [C#](#tab/csharp)
 
-Here, `_dialogs` contains an existing dialog set, and `NameValidator` is a validation method.
+The Dialog Prompt sample used in this article prompts the user for reservation information. To manage party size and date, we define an inner class for reservation information in the DialogPromptBot.cs file.
 
 ```csharp
-_dialogs.Add(new TextPrompt("nickNamePrompt"));
-_dialogs.Add(new TextPrompt("namePrompt", NameValidator));
+public class Reservation
+{
+    public int Size { get; set; }
+
+    public string Date { get; set; }
+}
+```
+
+Next, we add a state property accessor for the reservation data.
+
+```csharp
+public class DialogPromptBotAccessors
+{
+    public DialogPromptBotAccessors(ConversationState conversationState)
+    {
+        ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+    }
+
+    public static string DialogStateAccessorKey { get; } = "DialogPromptBotAccessors.DialogState";
+    public static string ReservationAccessorKey { get; } = "DialogPromptBotAccessors.Reservation";
+
+    public IStatePropertyAccessor<DialogState> DialogStateAccessor { get; set; }
+    public IStatePropertyAccessor<DialogPromptBot.Reservation> ReservationAccessor { get; set; }
+
+    public ConversationState ConversationState { get; }
+}
+```
+
+In Startup.cs, we update `ConfigureServices` method to set the accessors.
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    // ...
+
+    // Create and register state accesssors.
+    // Acessors created here are passed into the IBot-derived class on every turn.
+    services.AddSingleton<BotAccessors>(sp =>
+    {
+        // ...
+
+        // Create the custom state accessor.
+        // State accessors enable other components to read and write individual properties of state.
+        var accessors = new BotAccessors(conversationState)
+        {
+            DialogStateAccessor = conversationState.CreateProperty<DialogState>(DialogPromptBotAccessors.DialogStateAccessorKey),
+            ReservationAccessor = conversationState.CreateProperty<DialogPromptBot.Reservation>(DialogPromptBotAccessors.ReservationAccessorKey),
+        };
+
+        return accessors;
+    });
+}
 ```
 
 # [JavaScript](#tab/javascript)
 
-Here, `this.dialogs` contains an existing dialog set, and `NameValidator` is a validation function.
+No changes to the HTTP service code required for JavaScript, we can leave our index.js file as is.
+
+In bot.js, we include the  `require` statements needed for the dialog prompt bot. 
+```javascript
+const { ActivityTypes } = require('botbuilder');
+const { DialogSet, WaterfallDialog, NumberPrompt, DateTimePrompt, ChoicePrompt, DialogTurnStatus } = require('botbuilder-dialogs');
+```
+
+Add identifiers for the state property accessors, dialogs, and prompts.
 
 ```javascript
-this.dialogs.add(new TextPrompt('nickNamePrompt'));
-this.dialogs.add(new TextPrompt('namePrompt', NameValidator));
+// Define identifiers for state property accessors.
+const DIALOG_STATE_ACCESSOR = 'dialogStateAccessor';
+const RESERVATION_ACCESSOR = 'reservationAccessor';
+
+// Define identifiers for dialogs and prompts.
+const RESERVATION_DIALOG = 'reservationDialog';
+const PARTY_SIZE_PROMPT = 'partySizePrompt';
+const LOCATION_PROMPT = 'locationPrompt';
+const RESERVATION_DATE_PROMPT = 'reservationDatePrompt';
 ```
 
 ---
 
-#### Locales
+### Create a dialog set and prompts
 
-The locale is used to determine language-specific behavior of the **choice**, **confirm**, **date-time**, and **number** prompts. For any given input from the user:
-
-* If the channel provided a _locale_ property in user's message, then that is used.
-* Otherwise, if the prompt's _default locale_ is set, by providing it when calling the prompt's constructor or by setting it later, then that is used.
-* Otherwise, English ("en-us") is used as the locale.
-
-> [!NOTE]
-> The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.
-
-### Call a prompt from a waterfall dialog
-
-Once a prompt is added, call it in one step of a waterfall dialog, and get the prompt result in the following dialog step.
-To call a prompt from within a waterfall step, call the _waterfall step context_ object's _prompt_ method. The first parameter is the ID of the prompt to use, and the second parameter contains the options for the prompt, such as the text used to ask the user for input.
-
-Assume the user is interacting with a bot, the bot has an active waterfall dialog, and the next step in the dialog uses a prompt.
-
-1. When the user sends a message to the bot, it does the following:
-   1. The bot's turn handler creates a dialog context and call its _continue_ method.
-   1. Control passes to the next step in the active dialog, which in this case is your waterfall dialog.
-   1. The step calls its waterfall step context's _prompt_ method to ask the user for input.
-   1. The waterfall step context pushes the prompt onto the stack and starts it.
-   1. The prompt sends an activity to the user to ask for their input.
-1. When the user sends their next message to the bot, it does the following:
-   1. The bot's turn handler creates a dialog context and call its _continue_ method.
-   1. Control passes to the next step in the active dialog, which is the second turn of the prompt.
-   1. The prompt validates the user's input.
-      * If their input is not valid, the prompt is restarted, causing it to reprompt for input, and this set of steps is repeated next turn.
-      * Otherwise, the prompt ends and returns a _dialog turn result_ object to the parent dialog. Control passes to the next step of your waterfall dialog, with the result of the prompt available in the waterfall step context's _result_ property.
-
-<!--
-> [!NOTE]
-> A waterfall step delegate takes a _waterfall step context_ parameter and returns a _dialog turn result_.
-> A prompt's result is contained within the prompt's return value (a dialog turn result object) when it ends.
-> The waterfall dialog provides the return value in the waterfall step context parameter when it calls the next waterfall step.
--->
-
-When a prompt returns, the waterfall step context's _result_ property is set to the return value of the prompt.
-
-This example shows parts of two consecutive waterfall steps. The first uses the prompt to ask the user for their name. The second gets the return value of the prompt.
+In general, you create and add prompts and dialogs to your dialog set when you initialize your bot. The dialog set can then resolve the prompt's ID when the bot receives input from the user.
 
 # [C#](#tab/csharp)
 
-Here, `name` is the ID of a text prompt, and `NameStepAsync` and `GreetingStepAsync` are two consecutive step delegates of a waterfall dialog.
+In the `DialogPromptBot` class define identifiers for dialogs, prompts, and dialog set.
+```csharp
+private const string ReservationDialog = "reservationDialog";
+private const string PartySizePrompt = "partyPrompt";
+private const string LocationPrompt = "locationPrompt";
+private const string ReservationDatePrompt = "reservationDatePrompt";
+
+private readonly DialogSet _dialogSet;
+```
+
+In the bot's constructor, create the dialog set, add the prompts, and add the reservation dialog. We include the custom validation when we create the prompts, and we will implement the validation functions later.
 
 ```csharp
-private static async Task<DialogTurnResult> NameStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
-{
-    // ...
+// The following code creates prompts and adds them to an existing dialog set. The DialogSet contains all the dialogs that can 
+// be used at runtime. The prompts also references a validation method is not shown here.
 
-    // Prompt for the user's name.
+public DialogPromptBot(DialogPromptBotAccessors accessors, ILoggerFactory loggerFactory)
+{
+   // ...
+
+    // Create the dialog set and add the prompts, including custom validation.
+    _dialogSet = new DialogSet(_accessors.DialogStateAccessor);
+    _dialogSet.Add(new NumberPrompt<int>(PartySizePrompt, PartySizeValidatorAsync));
+    _dialogSet.Add(new ChoicePrompt(LocationPrompt));
+    _dialogSet.Add(new DateTimePrompt(ReservationDatePrompt, DateValidatorAsync));
+
+    // Define the steps of the waterfall dialog and add it to the set.
+    WaterfallStep[] steps = new WaterfallStep[]
+    {
+        PromptForPartySizeAsync,
+        PromptForLocationAsync,
+        PromptForReservationDateAsync,
+        AcknowledgeReservationAsync,
+    };
+    _dialogSet.Add(new WaterfallDialog(ReservationDialog, steps));
+
+
+}
+```
+
+# [JavaScript](#tab/javascript)
+
+In the constructor, create state accessor properties.
+
+```javascript
+constructor(conversationState) {
+    // Creates our state accessor properties.
+    this.dialogStateAccessor = conversationState.createProperty(DIALOG_STATE_ACCESSOR);
+    this.reservationAccessor = conversationState.createProperty(RESERVATION_ACCESSOR);
+    this.conversationState = conversationState;
+    // ...
+    }
+```
+
+Next, create the dialog set and add the prompts, including custom validation.
+
+```javascript
+    // ...
+    this.dialogSet = new DialogSet(this.dialogStateAccessor);
+    this.dialogSet.add(new NumberPrompt(PARTY_SIZE_PROMPT, this.partySizeValidator));
+    this.dialogSet.add(new ChoicePrompt (LOCATION_PROMPT));
+    this.dialogSet.add(new DateTimePrompt(RESERVATION_DATE_PROMPT, this.dateValidator));
+    // ...
+```
+
+Then define the steps of the waterfall dialog and add it to the set.
+
+```javascript
+    // ...
+    this.dialogSet.add(new WaterfallDialog(RESERVATION_DIALOG, [
+    this.promptForPartySize.bind(this),
+    this.promptForLocation.bind(this),
+    this.promptForReservationDate.bind(this),
+    this.acknowledgeReservation.bind(this),
+ ]));
+}
+```
+
+---
+
+### Implement dialog steps
+
+In the main bot file, we implement each of our steps of the waterfall dialog. After a prompt is added, we call it in one step of a waterfall dialog, and get the prompt result in the following dialog step. To call a prompt from within a waterfall step, call the _waterfall step context_ object's _prompt_ method. The first parameter is the ID of the prompt to use, and the second parameter contains the options for the prompt, such as the text used to ask the user for input.
+
+# [C#](#tab/csharp)
+
+In the DialogPromptBot.cs file, we implement the `PromptForPartySizeAsync`, `PromptForLocationAsync`, `PromptForReservationDateAsync`, and `AcknowledgeReservationAsync` steps of the waterfall dialog.
+
+Here we are only showing `PromptForPartySizeAsync` and `PromptForLocationAsync` that are two consecutive step delegates of a waterfall dialog.
+
+```csharp
+private async Task<DialogTurnResult> PromptForPartySizeAsync(WaterfallStepContext stepContext)
+{
+    // Prompt for the party size. The result of the prompt is returned to the next step of the waterfall.
+    // If the input is not valid, the prompt is restarted, causing it to reprompt for input
+    // and this set of steps is repeated next turn. Otherwise, the prompt ends and returns a _dialog turn result_ object 
+    // to the parent dialog. Control passes to the next step of your waterfall dialog, with the result of the prompt 
+    // available in the waterfall step context's _result_ property.
     return await stepContext.PromptAsync(
-        "name",
-         new PromptOptions { Prompt = MessageFactory.Text("Please enter your name.") },
-         cancellationToken);
+        PartySizePrompt,
+        new PromptOptions
+        {
+            Prompt = MessageFactory.Text("How many people is the reservation for?"),
+            RetryPrompt = MessageFactory.Text("How large is your party?"),
+        },
+        cancellationToken);
 }
 
-private static async Task<DialogTurnResult> GreetingStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+private async Task<DialogTurnResult> PromptForLocationAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
 {
-    // Get the user's name from the prompt result.
-    string name = (string)stepContext.Result;
-    await stepContext.Context.SendActivityAsync(
-        MessageFactory.Text($"Pleased to meet you, {name}."),
-         cancellationToken);
+    // Record the party size information in the current dialog state.
+    int size = (int)stepContext.Result;
+    stepContext.Values["size"] = size;
 
-    // ...
+    return await stepContext.PromptAsync(
+        "locationPrompt",
+        new PromptOptions
+        {
+            Prompt = MessageFactory.Text("Please choose a location."),
+            RetryPrompt = MessageFactory.Text("Sorry, please choose a location from the list."),
+            Choices = ChoiceFactory.ToChoices(new List<string> { "Redmond", "Bellevue", "Seattle" }),
+        },
+        cancellationToken);
 }
 ```
 
+The example above shows how to use a choice prompt, providing all three properties. The `PromptForLocationAsync` method is used as a step in a waterfall dialog, and our dialog set contains both the waterfall dialog and a choice prompt with an ID of `locationPrompt`.
+
 # [JavaScript](#tab/javascript)
 
-Here, `name` is the ID of a text prompt, and `nameStep` and `greetingStep` are two consecutive step functions of a waterfall dialog.
+Here, `PARTY_SIZE_PROMPT` and `LOCATION_PROMPT` are the IDs of the prompts, and `promptForPartySize` and `promptForLocation` are two consecutive step functions of a waterfall dialog.
 
 ```javascript
-async nameStep(step) {
-    // ...
-
-    return await step.prompt('name', 'Please enter your name.');
+async promptForPartySize(stepContext) {
+    // Prompt for the party size. The result of the prompt is returned to the next step of the waterfall.
+    return await stepContext.prompt(
+        PARTY_SIZE_PROMPT, {
+            prompt: 'How many people is the reservation for?',
+            retryPrompt: 'How large is your party?'
+        });
 }
 
-async greetingStep(step) {
-    // Get the user's name from the prompt result.
-    const name = step.result;
-    await step.context.sendActivity(`Pleased to meet you, ${name}.`);
-
-    // ...
+async promptForLocation(stepContext) {
+    // Prompt for location
+    return await stepContext.prompt(
+        LOCATION_PROMPT, 'Select a location.', ['Redmond', 'Bellevue', 'Seattle']
+    );
 }
 ```
 
 ---
-
-### Call a prompt from the bot's turn handler
-
-It is possible to call a prompt directly from your turn handler, by using the the dialog context's _prompt_ method.
-You would need to call the dialog context's _continue dialog_ method on the next turn and review its return value, a _dialog turn result_ object. For an example of how to do this, see the prompt validations sample ([C#](https://aka.ms/cs-prompt-validation-sample) | [JS](https://aka.ms/js-prompt-validation-sample)), or see how to [prompt the user for input using your own prompts](bot-builder-primitive-prompts.md) for a alternative approach.
-
-## Prompt options
 
 The second parameter of the _prompt_ method takes a _prompt options_ object, which has the following properties.
 
@@ -197,47 +284,9 @@ In general, the prompt and retry prompt properties are activities, though there 
 
 You should always specify the initial prompt activity to send the user.
 
-Specifying a retry prompt is useful when the user's input can fail to validate, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt activity to re-prompt the user for input.
+Specifying a retry prompt is useful for when the user's input fails to validate, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt activity to re-prompt the user for input.
 
 For a choice prompt, you should always provide the list of available choices.
-
-This example shows how to use a choice prompt, providing all three properties. The _favorite color_ method is used as a step in a waterfall dialog, and our dialog set contains both the waterfall dialog and a choice prompt with an ID of `colorChoice`.
-
-# [C#](#tab/csharp)
-
-```csharp
-private static async Task<DialogTurnResult> FavoriteColorAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
-{
-    // ...
-
-    return await stepContext.PromptAsync(
-        "colorChoice",
-        new PromptOptions {
-            Prompt = MessageFactory.Text("Please choose a color."),
-            RetryPrompt = MessageFactory.Text("Sorry, please choose a color from the list."),
-            Choices = ChoiceFactory.ToChoices(new List<string> { "blue", "green", "red" }),
-        },
-        cancellationToken);
-}
-```
-
-# [JavaScript](#tab/javascript)
-
-In the JavaScript SDK, you can provide a string for both the `prompt` and `retryPrompt` properties. The prompt converts these to message activities for you.
-
-```javascript
-async favoriteColor(step) {
-    // ...
-
-    return await step.prompt('colorChoice', {
-        prompt: 'Please choose a color:',
-        retryPrompt: 'Sorry, please choose a color from the list.',
-        choices: [ 'red', 'green', 'blue' ]
-    });
-}
-```
-
----
 
 ## Custom validation
 
@@ -257,166 +306,37 @@ The prompt recognizer result has the following properties:
 | _Succeeded_ | Indicates whether the recognizer was able to parse the input. |
 | _Value_ | The return value from the recognizer. If necessary, the validation code can modify this value. |
 
-### Setup
-
-We need to do a little setup before adding our validation code.
-
-# [C#](#tab/csharp)
-
-In your bot's **.cs** file, define an inner class for reservation information.
-
-```csharp
-public class Reservation
-{
-    public int Size { get; set; }
-
-    public string Date { get; set; }
-}
-```
-
-In **BotAccessors.cs**, add a state property accessor for the reservation data.
-
-```csharp
-public class BotAccessors
-{
-    public BotAccessors(ConversationState conversationState)
-    {
-        ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
-    }
-
-    public static string DialogStateAccessorKey { get; } = "BotAccessors.DialogState";
-    public static string ReservationAccessorKey { get; } = "BotAccessors.Reservation";
-
-    public IStatePropertyAccessor<DialogState> DialogStateAccessor { get; set; }
-    public IStatePropertyAccessor<ReservationBot.Reservation> ReservationAccessor { get; set; }
-
-    public ConversationState ConversationState { get; }
-}
-```
-
-In **Startup.cs**, update `ConfigureServices` to set the accessors.
-
-```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    // ...
-
-    // Create and register state accesssors.
-    // Acessors created here are passed into the IBot-derived class on every turn.
-    services.AddSingleton<BotAccessors>(sp =>
-    {
-        // ...
-
-        // Create the custom state accessor.
-        // State accessors enable other components to read and write individual properties of state.
-        var accessors = new BotAccessors(conversationState)
-        {
-            DialogStateAccessor = conversationState.CreateProperty<DialogState>(BotAccessors.DialogStateAccessorKey),
-            ReservationAccessor = conversationState.CreateProperty<ReservationBot.Reservation>(BotAccessors.ReservationAccessorKey),
-        };
-
-        return accessors;
-    });
-}
-```
-
-# [JavaScript](#tab/javascript)
-
-No changes to the HTTP service code required for JavaScript, we can leave our **index.js** file as is.
-
-In **bot.js**, update the require statements and add identifiers for the state property accessors.
-
-```javascript
-const { ActivityTypes } = require('botbuilder');
-const { DialogSet, WaterfallDialog, NumberPrompt, DateTimePrompt, DialogTurnStatus } = require('botbuilder-dialogs');
-
-// Define identifiers for our state property accessors.
-const DIALOG_STATE_ACCESSOR = 'dialogStateAccessor';
-const RESERVATION_ACCESSOR = 'reservationAccessor';
-```
-
----
-
-In your bot file, add identifiers for our dialogs and prompts.
-
-# [C#](#tab/csharp)
-
-```csharp
-// Define identifiers for our dialogs and prompts.
-private const string ReservationDialog = "reservationDialog";
-private const string PartySizePrompt = "partyPrompt";
-private const string ReservationDatePrompt = "reservationDatePrompt";
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-// Define identifiers for our dialogs and prompts.
-const RESERVATION_DIALOG = 'reservationDialog';
-const PARTY_SIZE_PROMPT = 'partySizePrompt';
-const RESERVATION_DATE_PROMPT = 'reservationDatePrompt';
-```
-
----
-
-### Define the prompts and dialogs
-
-In the bot's constructor code, create the dialog set, add the prompts, and add the reservation dialog.
-We include the custom validation when we create the prompts. We will implement the validation functions next.
-
-# [C#](#tab/csharp)
-
-```csharp
-public ReservationBot(BotAccessors accessors, ILoggerFactory loggerFactory)
-{
-    // ...
-    _accessors = accessors ?? throw new System.ArgumentNullException(nameof(accessors));
-
-    // Create the dialog set and add the prompts, including custom validation.
-    _dialogSet = new DialogSet(_accessors.DialogStateAccessor);
-    _dialogSet.Add(new NumberPrompt<int>(PartySizePrompt, PartySizeValidatorAsync));
-    _dialogSet.Add(new DateTimePrompt(ReservationDatePrompt, DateValidatorAsync));
-
-    // Define the steps of the waterfall dialog and add it to the set.
-    WaterfallStep[] steps = new WaterfallStep[]
-    {
-        PromptForPartySizeAsync,
-        PromptForReservationDateAsync,
-        AcknowledgeReservationAsync,
-    };
-    _dialogSet.Add(new WaterfallDialog(ReservationDialog, steps));
-}
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-constructor(conversationState) {
-    // Creates our state accessor properties.
-    // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors.
-    this.dialogStateAccessor = conversationState.createProperty(DIALOG_STATE_ACCESSOR);
-    this.reservationAccessor = conversationState.createProperty(RESERVATION_ACCESSOR);
-    this.conversationState = conversationState;
-
-    // Create the dialog set and add the prompts, including custom validation.
-    this.dialogSet = new DialogSet(this.dialogStateAccessor);
-    this.dialogSet.add(new NumberPrompt(PARTY_SIZE_PROMPT, partySizeValidator));
-    this.dialogSet.add(new DateTimePrompt(RESERVATION_DATE_PROMPT, dateValidator));
-
-    // Define the steps of the waterfall dialog and add it to the set.
-    this.dialogSet.add(new WaterfallDialog(RESERVATION_DIALOG, [
-        this.promptForPartySize.bind(this),
-        this.promptForReservationDate.bind(this),
-        this.acknowledgeReservation.bind(this),
-    ]));
-}
-```
-
----
-
 ### Implement validation code
 
-Implement the party-size validator. We'll limit reservations to parties of 6 to 20 people.
+You associate custom validation with a prompt at initialization time, in the bot's constructor.
+
+# [C#](#tab/csharp)
+
+```csharp
+// ...
+_dialogSet = new DialogSet(_accessors.DialogStateAccessor);
+_dialogSet.Add(new NumberPrompt<int>(PartySizePrompt, PartySizeValidatorAsync));
+_dialogSet.Add(new ChoicePrompt(LocationPrompt));
+_dialogSet.Add(new DateTimePrompt(ReservationDatePrompt, DateValidatorAsync));
+// ...
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+// ...
+this.dialogSet = new DialogSet(this.dialogStateAccessor);
+this.dialogSet.add(new NumberPrompt(PARTY_SIZE_PROMPT, this.partySizeValidator));
+this.dialogSet.add(new ChoicePrompt (LOCATION_PROMPT));
+this.dialogSet.add(new DateTimePrompt(RESERVATION_DATE_PROMPT, this.dateValidator));
+// ...
+```
+
+---
+
+**Party-size validator**
+
+We limit reservations to parties of 6 to 20 people.
 
 # [C#](#tab/csharp)
 
@@ -452,7 +372,7 @@ private async Task<bool> PartySizeValidatorAsync(
 
 ```javascript
 async partySizeValidator(promptContext) {
-    // Check whether the input could be recognized as date.
+    // Check whether the input could be recognized as an integer.
     if (!promptContext.recognized.succeeded) {
         await promptContext.context.sendActivity(
             "I'm sorry, I do not understand. Please enter the number of people in your party.");
@@ -477,11 +397,9 @@ async partySizeValidator(promptContext) {
 
 ---
 
-The date-time prompt returns a list or array of the possible _date-time resolutions_ that match the user input. For example, 9:00 could mean 9 AM or 9 PM, and Sunday is also ambiguous. In addition, a date-time resolution can represent a date, a time, a date-time, or a range. The date-time prompt uses the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text) to parse the user input.
+**Date time validation**
 
-Implement the reservation-date validator. We'll limit reservations to an hour or more from the current time. We are keeping the first resolution that matches our criteria, and clearing the rest.
-
-This validation code is not exhaustive. It works best for input that parses to a date and time. It demonstrates some of the options for validating a date-time prompt, and your implementation will depend on what information you are trying to collect from the user.
+In the reservation date validator, we limit reservations to an hour or more from the current time. We are keeping the first resolution that matches our criteria, and clearing the rest. The validation code below is not exhaustive, and it works best for input that parses to a date and time. It does demonstrate some of the options for validating a date-time prompt, and your implementation will depend on what information you are trying to collect from the user.
 
 # [C#](#tab/csharp)
 
@@ -524,148 +442,61 @@ private async Task<bool> DateValidatorAsync(
 
 ```javascript
 async dateValidator(promptContext) {
-// Check whether the input could be recognized as an integer.
-if (!promptContext.recognized.succeeded) {
+    // Check whether the input could be recognized as an integer.
+    if (!promptContext.recognized.succeeded) {
+        await promptContext.context.sendActivity(
+            "I'm sorry, I do not understand. Please enter the date or time for your reservation.");
+        return false;
+    }
+
+    // Check whether any of the recognized date-times are appropriate,
+    // and if so, return the first appropriate date-time.
+    const earliest = Date.now() + (60 * 60 * 1000);
+    let value = null;
+    promptContext.recognized.value.forEach(candidate => {
+        // TODO: update validation to account for time vs date vs date-time vs range.
+        const time = new Date(candidate.value || candidate.start);
+        if (earliest < time.getTime()) {
+            value = candidate;
+        }
+    });
+    if (value) {
+        promptContext.recognized.value = [value];
+        return true;
+    }
+
     await promptContext.context.sendActivity(
-        "I'm sorry, I do not understand. Please enter the date or time for your reservation.");
+        "I'm sorry, we can't take reservations earlier than an hour from now.");
     return false;
 }
-
-// Check whether any of the recognized date-times are appropriate,
-// and if so, return the first appropriate date-time.
-const earliest = Date.now() + (60 * 60 * 1000);
-let value = null;
-promptContext.recognized.value.forEach(candidate => {
-    // TODO: update validation to account for time vs date vs date-time vs range.
-    const time = new Date(candidate.value || candidate.start);
-    if (earliest < time.getTime()) {
-        value = candidate;
-    }
-});
-if (value) {
-    promptContext.recognized.value = [value];
-    return true;
-}
-
-await promptContext.context.sendActivity(
-    "I'm sorry, we can't take reservations earlier than an hour from now.");
-return false;
-}
 ```
 
 ---
 
-### Implement the dialog steps
-
-Use the prompts that we added to the dialog set. We added validation to the prompts when we created them in the bot's constructor. The first time the prompt asks for user input, it sends the _prompt_ activity from the options provided. If validation fails, it sends the _retry prompt_ activity to ask the user for different input.
-
-# [C#](#tab/csharp)
-
-```csharp
-// First step of the main dialog: prompt for party size.
-private async Task<DialogTurnResult> PromptForPartySizeAsync(
-    WaterfallStepContext stepContext,
-    CancellationToken cancellationToken = default(CancellationToken))
-{
-    // Prompt for the party size. The result of the prompt is returned to the next step of the waterfall.
-    return await stepContext.PromptAsync(
-        PartySizePrompt,
-        new PromptOptions
-        {
-            Prompt = MessageFactory.Text("How many people is the reservation for?"),
-            RetryPrompt = MessageFactory.Text("How large is your party?"),
-        },
-        cancellationToken);
-}
-
-// Second step of the main dialog: record the party size and prompt for the
-// reservation date.
-private async Task<DialogTurnResult> PromptForReservationDateAsync(
-    WaterfallStepContext stepContext,
-    CancellationToken cancellationToken = default(CancellationToken))
-{
-    // Record the party size information in the current dialog state.
-    int size = (int)stepContext.Result;
-    stepContext.Values["size"] = size;
-
-    // Prompt for the reservation date. The result of the prompt is returned to the next step of the waterfall.
-    return await stepContext.PromptAsync(
-        ReservationDatePrompt,
-        new PromptOptions
-        {
-            Prompt = MessageFactory.Text("Great. When will the reservation be for?"),
-            RetryPrompt = MessageFactory.Text("What time should we make your reservation for?"),
-        },
-        cancellationToken);
-}
-
-// Third step of the main dialog: return the collected party size and reservation date.
-private async Task<DialogTurnResult> AcknowledgeReservationAsync(
-    WaterfallStepContext stepContext,
-    CancellationToken cancellationToken = default(CancellationToken))
-{
-    // Retrieve the reservation date.
-    DateTimeResolution resolution = (stepContext.Result as IList<DateTimeResolution>).First();
-    string time = resolution.Value ?? resolution.Start;
-
-    // Send an acknowledgement to the user.
-    await stepContext.Context.SendActivityAsync(
-        "Thank you. We will confirm your reservation shortly.",
-        cancellationToken: cancellationToken);
-
-    // Return the collected information to the parent context.
-    Reservation reservation = new Reservation
-    {
-        Date = time,
-        Size = (int)stepContext.Values["size"],
-    };
-    return await stepContext.EndDialogAsync(reservation, cancellationToken);
-}
-```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-async promptForPartySize(stepContext) {
-    // Prompt for the party size. The result of the prompt is returned to the next step of the waterfall.
-    return await stepContext.prompt(
-        PARTY_SIZE_PROMPT, {
-            prompt: 'How many people is the reservation for?',
-            retryPrompt: 'How large is your party?'
-        });
-}
-
-async promptForReservationDate(stepContext) {
-    // Record the party size information in the current dialog state.
-    stepContext.values.size = stepContext.result;
-
-    // Prompt for the reservation date. The result of the prompt is returned to the next step of the waterfall.
-    return await stepContext.prompt(
-        RESERVATION_DATE_PROMPT, {
-            prompt: 'Great. When will the reservation be for?',
-            retryPrompt: 'What time should we make your reservation for?'
-        });
-}
-
-async acknowledgeReservation(stepContext) {
-    // Retrieve the reservation date.
-    const resolution = stepContext.result[0];
-    const time = resolution.value || resolution.start;
-
-    // Send an acknowledgement to the user.
-    await stepContext.context.sendActivity(
-        'Thank you. We will confirm your reservation shortly.');
-
-    // Return the collected information to the parent context.
-    return await stepContext.endDialog({ date: time, size: stepContext.values.size });
-}
-```
-
----
+The date-time prompt returns a list or array of the possible _date-time resolutions_ that match the user input. For example, 9:00 could mean 9 AM or 9 PM, and Sunday is also ambiguous. In addition, a date-time resolution can represent a date, a time, a date-time, or a range. The date-time prompt uses the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text) to parse the user input.
 
 ### Update the turn handler
 
-Update the bot's turn handler to start the dialog and accept a return value from the dialog when it completes.
+Update the bot's turn handler to start the dialog and accept a return value from the dialog when it completes. Here we assume the user is interacting with a bot, the bot has an active waterfall dialog, and the next step in the dialog uses a prompt.
+
+1. When the user sends a message to the bot, it does the following:
+   1. The bot's turn handler creates a dialog context and call its _continue_ method.
+   1. Control passes to the next step in the active dialog, which in this case is your waterfall dialog.
+   1. The step calls its waterfall step context's _prompt_ method to ask the user for input.
+   1. The waterfall step context pushes the prompt onto the stack and starts it.
+   1. The prompt sends an activity to the user to ask for their input.
+1. When the user sends their next message to the bot, it does the following:
+   1. The bot's turn handler creates a dialog context and call its _continue_ method.
+   1. Control passes to the next step in the active dialog, which is the second turn of the prompt.
+   1. The prompt validates the user's input.
+
+**Handling prompt results**
+
+What you do with the prompt result depends on why you requested the information from the user. Options include:
+
+- Use the information to control the flow of your dialog, such as when the user responds to a confirm or choice prompt.
+- Cache the information in the dialog's state, such as setting a value in the waterfall step context's _values_ property, and then return the collected information when the dialog ends.
+- Save the information to bot state. This would require you to design your dialog to have access to the bot's state property accessors.
 
 # [C#](#tab/csharp)
 
@@ -777,6 +608,9 @@ async onTurn(turnContext) {
             // Save the updated dialog state into the conversation state.
             await this.conversationState.saveChanges(turnContext, false);
             break;
+        case ActivityTypes.EndOfConversation:
+        case ActivityTypes.DeleteUserData:
+            break;
         default:
             break;
     }
@@ -787,18 +621,20 @@ async onTurn(turnContext) {
 
 You can use the similar techniques to validate prompt responses for any of the prompt types.
 
-## Handling prompt results
+## Test your bot
 
-What you do with the prompt result depends on why you requested the information from the user. Options include:
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C#](https://aka.ms/dialog-prompt-cs) or [JS](https://aka.ms/dialog-prompt-js).
+2. Start the emulator, send messages as shown below to test the bot.
 
-* Use the information to control the flow of your dialog, such as when the user responses to a confirm or choice prompt.
-* Cache the information in the dialog's state, such as setting a value in the waterfall step context's _values_ property, and then return the collected information when the dialog ends.
-* Save the information to bot state. This would require you to design your dialog to have access to the bot's state property accessors.
+![test dialog prompt sample](~/media/emulator-v4/test-dialog-prompt.png)
 
 ## Additional resources
-To learn more about multiple prompts, see samples in [[C#](https://aka.ms/cs-multi-prompts-sample) or [JS](https://aka.ms/js-multi-prompts-sample)].
+
+To call a prompt directly from your turn handler, see the _prompt-validations_ sample in [C#](https://aka.ms/cs-prompt-validation-sample) or [JS](https://aka.ms/js-prompt-validation-sample).
+
+The dialog library also includes an _OAuth prompt_ for obtaining an _OAuth token_ with which to access another application on behalf of the user. For more about authentication, see how to [add authentication](bot-builder-authentication.md) to your bot.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Implement basic sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md)
+> [Create advance conversation flow using branches and loops](bot-builder-dialog-manage-complex-conversation-flow.md)

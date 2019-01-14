@@ -1,6 +1,6 @@
 ---
 title: Dialogs overview | Microsoft Docs
-description: Learn how to use dialogs within the Bot Builder SDK for .NET to model conversations and manage conversation flow.
+description: Learn how to use dialogs within the Bot Framework SDK for .NET to model conversations and manage conversation flow.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Dialogs in the Bot Builder SDK for .NET
+# Dialogs in the Bot Framework SDK for .NET
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
@@ -19,13 +19,13 @@ monikerRange: 'azure-bot-service-3.0'
 > - [.NET](../dotnet/bot-builder-dotnet-dialogs.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-dialog-overview.md)
 
-When you create a bot using the Bot Builder SDK for .NET, you can use dialogs to model 
+When you create a bot using the Bot Framework SDK for .NET, you can use dialogs to model 
 a conversation and manage [conversation flow](../bot-service-design-conversation-flow.md). 
 Each dialog is an abstraction that encapsulates its own state in a C# class that implements `IDialog`. 
 A dialog can be composed with other dialogs to maximize reuse, and a dialog context maintains the [stack of dialogs](../bot-service-design-conversation-flow.md#dialog-stack) that are active in the conversation at any point in time. 
 
 A conversation that comprises dialogs is portable across computers, which makes it possible for your bot implementation to scale. 
-When you use dialogs in the Bot Builder SDK for .NET, conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored to your choice of [state data](bot-builder-dotnet-state.md) storage. This enables your bot's service code to be stateless, much like a web application that does not need to store session state in web server memory. 
+When you use dialogs in the Bot Framework SDK for .NET, conversation state (the dialog stack and the state of each dialog in the stack) is automatically stored to your choice of [state data](bot-builder-dotnet-state.md) storage. This enables your bot's service code to be stateless, much like a web application that does not need to store session state in web server memory. 
 
 ## Echo bot example
 
@@ -40,7 +40,7 @@ exchange messages with the user.
 
 ### MessagesController.cs 
 
-In the Bot Builder SDK for .NET, the [Builder][builderLibrary] library enables you to implement dialogs. 
+In the Bot Framework SDK for .NET, the [Builder][builderLibrary] library enables you to implement dialogs. 
 To access the relevant classes, import the `Dialogs` namespace.
 
 [!code-csharp[Using statement](../includes/code/dotnet-dialogs.cs#usingStatement)]
@@ -61,7 +61,7 @@ It returns a `Task` object, which represents the task that is responsible for se
 passed-in message. 
 If there is an exception, the `Task` that is returned by the method will contain the exception information. 
 
-The `Conversation.SendAsync` method is key to implementing dialogs with the Bot Builder SDK 
+The `Conversation.SendAsync` method is key to implementing dialogs with the Bot Framework SDK 
 for .NET. It follows the <a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle" target="_blank">dependency inversion principle</a> and performs these steps:
 
 1. Instantiates the required components  

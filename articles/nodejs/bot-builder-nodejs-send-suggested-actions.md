@@ -1,6 +1,6 @@
 ---
 title: Add suggested actions to messages | Microsoft Docs
-description: Learn how to send suggested actions within messages using the Bot Builder SDK for Node.js.
+description: Learn how to send suggested actions within messages using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani

@@ -1,6 +1,6 @@
 ---
 title: Support localization | Microsoft Docs
-description: Learn how to determine where the user is and enable localization functionality using the Bot Builder SDK for Node.js.
+description: Learn how to determine where the user is and enable localization functionality using the Bot Framework SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani
@@ -106,7 +106,7 @@ var bot = new builder.UniversalBot(connector, {
 ```
 
 ## Localize prompts
-The default localization system for the Bot Builder SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the **./locale/<IETF TAG>/index.json** file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
+The default localization system for the Bot Framework SDK is file-based and allows a bot to support multiple languages using JSON files stored on disk. By default, the localization system will search for the bot's prompts in the **./locale/<IETF TAG>/index.json** file where <IETF TAG> is a valid [IETF language tag][IEFT] representing the preferred locale for which to find prompts. 
 
 The following screenshot shows the directory structure for a bot that supports three languages: English, Italian, and Spanish.
 

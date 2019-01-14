@@ -1,6 +1,6 @@
 ---
 title: Manage a conversation flow with dialogs | Microsoft Docs
-description: Learn how to manage a conversation between a bot and a user with dialogs in the Bot Builder SDK for Node.js.
+description: Learn how to manage a conversation between a bot and a user with dialogs in the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -19,9 +19,9 @@ monikerRange: 'azure-bot-service-3.0'
 > - [.NET](../dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md)
 
-Managing conversation flow is an essential task in building bots. A bot needs to be able to perform core tasks elegantly and handle interruptions gracefully. With the Bot Builder SDK for Node.js, you can manage conversation flow using dialogs.
+Managing conversation flow is an essential task in building bots. A bot needs to be able to perform core tasks elegantly and handle interruptions gracefully. With the Bot Framework SDK for Node.js, you can manage conversation flow using dialogs.
 
-A dialog is like a function in a program. It is generally designed to perform a specific operation and it can be invoked as often as it is needed. You can chain multiple dialogs together to handle just about any conversation flow that you want your bot to handle. The Bot Builder SDK for Node.js includes built-in features such as [prompts](bot-builder-nodejs-dialog-prompt.md) and [waterfalls](bot-builder-nodejs-dialog-waterfall.md) to help you manage conversation flow.
+A dialog is like a function in a program. It is generally designed to perform a specific operation and it can be invoked as often as it is needed. You can chain multiple dialogs together to handle just about any conversation flow that you want your bot to handle. The Bot Framework SDK for Node.js includes built-in features such as [prompts](bot-builder-nodejs-dialog-prompt.md) and [waterfalls](bot-builder-nodejs-dialog-waterfall.md) to help you manage conversation flow.
 
 This article provides a series of examples to explain how to manage both simple conversation flows and complex conversation flows where your bot can handle interruptions and resume the flow gracefully using dialogs. The examples are based on the following scenarios: 
 
@@ -169,7 +169,7 @@ With this technique, you can separate the conversation flow from the task logic.
 
 In the process of guiding the user through a series of tasks, if the user has questions or wants to request additional information before answering, how would you handle those requests? For example, regardless of where the user is in the conversation, how would the bot respond if the user enters "Help", "Support" or "Cancel"? What if the user wants additional information about a step? What happens if the user changes their mind and wants to abandon the current task to start a completely different task?
 
-The Bot Builder SDK for Node.js allows a bot to listen for certain input within a global context or within a local context in the scope of the current dialog. These inputs are called [actions](bot-builder-nodejs-dialog-actions.md), which allow the bot to listen for user input based on a `matches` clause. It's up to the bot to decide how to react to specific user inputs.
+The Bot Framework SDK for Node.js allows a bot to listen for certain input within a global context or within a local context in the scope of the current dialog. These inputs are called [actions](bot-builder-nodejs-dialog-actions.md), which allow the bot to listen for user input based on a `matches` clause. It's up to the bot to decide how to react to specific user inputs.
 
 ### Handle global action
 

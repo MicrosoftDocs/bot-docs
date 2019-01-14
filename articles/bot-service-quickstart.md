@@ -8,17 +8,15 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 09/18/2018
+ms.date: 01/08/2019
 ---
-
 ::: moniker range="azure-bot-service-3.0"
-
 
 # Create a bot with Azure Bot Service
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 
-Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the Bot Builder SDK.
+Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the Bot Framework SDK.
 
 ## Log in to Azure
 Log in to the [Azure portal](http://portal.azure.com).
@@ -76,21 +74,23 @@ In this topic, you learned how to create a **Basic** Web App Bot/Functions Bot b
 ::: moniker range="azure-bot-service-4.0"
 
 # Create a bot with Azure Bot Service
+
 [!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
-Azure Bot Service provides the core components for creating bots, including the Bot Builder SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Builder SDK v4.
+Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Framework SDK v4.
 
-## Log in to Azure
-Log in to the [Azure portal](http://portal.azure.com).
 
-> [!TIP]
-> If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>.
+## Prerequisites
+- [Azure](http://portal.azure.com) account
 
-## Create a new bot service
+### Create a new bot service
 
-1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**. 
+1. Log in to the [Azure portal](http://portal.azure.com/).
+1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning** > **Web App bot**. 
 
-2. A new blade will open with information about the **Web App Bot**.  
+![create bot](~/media/azure-bot-quickstarts/abs-create-blade.png)
+
+2. A *new blade* will open with information about the **Web App Bot**.  
 
 3. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  <br/>
  ![Create Web App Bot blade](~/media/azure-bot-quickstarts/sdk-create-bot-service-blade.png)
@@ -122,11 +122,21 @@ In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service
 
 Enter a message and your bot should respond.
 
+## Download code
+You can download the code to work on it locally. 
+1. In the **Bot Management** section, click **Build**. 
+1. Click on **Download Bot source code** link in the right-pane. 
+1. Follow the prompts to download the code, and then unzip the folder.
+
+The code you downloaded uses an encrypted [.bot file](./v4sdk/bot-file-basics.md). You'll need to update `botFilePath` and `botFileSecret` entires in the appsettings.json or .env file. 
+To do that, go to the Azure portal. Select your bot in the portal, then under **App Service Settings** section, click **Application Settings**. In the **Application Settings** pane, you'll 
+see `botFilePath` and `botFileSecret` values. Copy these values and update the .env or appsettings.json file. 
+
 ## Next steps
 
 In this topic, you learned how to create a **Echo** Web App Bot by using Azure Bot Service and verified the bot's functionality by using the built-in Web Chat control. Now, learn how to manage your bot and start working with its source code.
 
 > [!div class="nextstepaction"]
-> [Manage a bot](bot-service-manage-overview.md)
+> [How bots work](~/v4sdk/bot-builder-basics.md)
 
 ::: moniker-end

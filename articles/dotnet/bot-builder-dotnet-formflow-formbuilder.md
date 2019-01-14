@@ -1,6 +1,6 @@
 ---
 title: Customize a form using FormBuilder | Microsoft Docs
-description: Learn how to dynamically change and customize the conversation flow and contents using FormBuilder for the Bot Builder SDK for .NET.
+description: Learn how to dynamically change and customize the conversation flow and contents using FormBuilder for the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -106,7 +106,7 @@ In this example, the form executes these steps:
 - [Localize form content](bot-builder-dotnet-formflow-localize.md)
 - [Define a form using JSON schema](bot-builder-dotnet-formflow-json-schema.md)
 - [Customize user experience with pattern language](bot-builder-dotnet-formflow-pattern-language.md)
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 
 [formBuilder]: /dotnet/api/microsoft.bot.builder.formflow.formbuilder-1
 

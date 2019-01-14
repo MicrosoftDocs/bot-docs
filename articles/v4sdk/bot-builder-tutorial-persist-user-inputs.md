@@ -1,6 +1,6 @@
 ---
 title: Persist user data | Microsoft Docs
-description: Learn how to save user state data to storage in the Bot Builder SDK.
+description: Learn how to save user state data to storage in the Bot Framework SDK.
 keywords: persist user data, storage, conversation data 
 author: v-ducvo
 ms.author: v-ducvo
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-When the bot ask users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Builder SDK allows you to store user inputs using *in-memory storage* or database storage such as *CosmosDB*. Local storage types are mainly used during testing or prototyping of your bot. However, persistent storage types, such as database storage, are best for production bots.
+When the bot ask users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Framework SDK allows you to store user inputs using *in-memory storage* or database storage such as *CosmosDB*. Local storage types are mainly used during testing or prototyping of your bot. However, persistent storage types, such as database storage, are best for production bots.
 
 This topic shows you how to define your storage object and save user inputs to the storage object so that it can be persisted. We'll use a dialog to ask the user for their name, if we don't already have it. Regardless of the storage type you choose to use, the process for hooking it up and persisting data is the same. The code in this topic uses `CosmosDB` as the storage to persist data.
 

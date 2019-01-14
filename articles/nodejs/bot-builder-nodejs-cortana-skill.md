@@ -1,6 +1,6 @@
 ---
 title: Build a speech-enabled bot with Cortana skills | Microsoft Docs
-description: Learn how to build a speech-enabled bot with Cortana skills and the Bot Builder SDK for Node.js.
+description: Learn how to build a speech-enabled bot with Cortana skills and the Bot Framework SDK for Node.js.
 author: DeniseMak
 manager: kamrani
 ms.topic: article
@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-3.0'
 > - [.NET](../dotnet/bot-builder-dotnet-cortana-skill.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
 
-The Bot Builder SDK for Node.js enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
+The Bot Framework SDK for Node.js enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
 Cortana skills let you provide functionality through Cortana in response to spoken input from a user.
 
 > [!TIP]
@@ -30,7 +30,7 @@ Creating a Cortana skill using Bot Framework requires very little Cortana-specif
 
 ## Adding speech to your bot
 
-Spoken messages from your bot are represented as Speech Synthesis Markup Language (SSML). The Bot Builder SDK lets you include SSML in your bot's responses to control what the bot says, in addition to what it shows.
+Spoken messages from your bot are represented as Speech Synthesis Markup Language (SSML). The Bot Framework SDK lets you include SSML in your bot's responses to control what the bot says, in addition to what it shows.
 
 ### session.say
 

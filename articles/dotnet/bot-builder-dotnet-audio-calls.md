@@ -1,6 +1,6 @@
 ---
 title: Conduct audio calls with Skype | Microsoft Docs
-description: Learn how to conduct audio calls with Skype using the Bot Builder SDK for .NET.
+description: Learn how to conduct audio calls with Skype using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-3.0'
 [!INCLUDE [Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
-The following code samples show how to enable support for audio calls via Skype with the Bot Builder SDK for .NET. 
+The following code samples show how to enable support for audio calls via Skype with the Bot Framework SDK for .NET. 
 
 ## Enable support for audio calls
 
@@ -169,9 +169,9 @@ private async Task OnRecordCompleted(RecordOutcomeEvent recordOutcomeEvent)
 
 ## Sample code
 
-For a complete sample that shows how to support audio calls with Skype using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/skype-CallingBot" target="_blank">Skype Calling Bot sample</a> in GitHub.
+For a complete sample that shows how to support audio calls with Skype using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/skype-CallingBot" target="_blank">Skype Calling Bot sample</a> in GitHub.
 
 ## Additional resources
 
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/skype-CallingBot" target="_blank">Skype Calling Bot sample (GitHub)</a>

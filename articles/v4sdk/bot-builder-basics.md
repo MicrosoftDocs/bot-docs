@@ -1,6 +1,6 @@
 ---
 title: How bots work | Microsoft Docs
-description: Describes how activity and http work within the Bot Builder SDK.
+description: Describes how activity and http work within the Bot Framework SDK.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
 ms.author: johtaylo
@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/08/2018
+ms.date: 1/10/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot generates an *activity*. The Bot Service sends information between the user's bot-connected app (such as Facebook, Skype, Slack, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot generates an *activity*. The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook, Skype, Slack, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot. 
 
 ![activity diagram](media/bot-builder-activity.png)
 
@@ -36,7 +36,7 @@ The protocol doesn’t specify the order in which these POST requests and their 
 
 ### Defining a turn
 
-In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Builder SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the arrival of a given activity.
+In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Framework SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the arrival of a given activity.
 
 The *turn context* object provides information about the activity such as the sender and receiver, the channel, and other data needed to process the activity. It also allows for the addition of information during the turn across various layers of the bot.
 
@@ -59,16 +59,16 @@ The *adapter*, an integrated component of the SDK, is the core of the SDK runtim
 Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to invoke the turn handler (`OnTurnAsync` in C# and `onTurn` in JS) function on the bot class the application has registered with the adapter. The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity’s content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot’s turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
 
 ## Bot structure
+In the following sections, we examine key pieces of a bot.
 
-Let's look at the Echo Bot With Counter [[C#](https://aka.ms/EchoBotWithStateCSharp) | [JS](https://aka.ms/EchoBotWithStateJS)] sample, and examine key pieces of the bot.
-
-[!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
+### Prerequisites
+- A copy of the **EchoBotWithCounter** sample in either [C#](https://aka.ms/EchoBotWithStateCSharp) or [JS](https://aka.ms/EchoBotWithStateJS). Only relevant code is shown here, but you can refer to the sample for complete source code.
 
 # [C#](#tab/cs)
 
-A bot is a type of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1) web application. If you look at the [ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific. Code in some of these files won't be copied here, but you can refer to the [C# echobot-with-counter](https://aka.ms/EchoBot-With-Counter) sample.
+A bot is a type of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1) web application. If you look at the [ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific. 
 
-### EchoWithCounterBot.cs
+### Bot logic
 
 The main bot logic is defined in the `EchoWithCounterBot` class that derives from the `IBot` interface. `IBot` defines a single method `OnTurnAsync`. Your application must implement this method. `OnTurnAsync` has turnContext that provides information about the incoming activity. The incoming activity corresponds to the inbound HTTP request. Activities can be of various types, so we first check to see if your bot has received a message. If it is a message, we  get the conversation state from the turn context, increment the turn counter, and then persist the new turn counter value into the conversation state. And then send a message back to the user using SendActivityAsync call. The outgoing activity corresponds to the outbound HTTP request.
 
@@ -100,9 +100,9 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 }
 ```
 
-### Startup.cs
+### Set up services
 
-The `ConfigureServices` method loads the connected services from [.bot](bot-builder-basics.md#the-bot-file) file, catches any errors that occur during a conversation turn and logs them, sets up your credential provider and creates a conversation state object to store conversation data in memory.
+The `ConfigureServices` method in the startup.cs file loads the connected services from [.bot](bot-builder-basics.md#the-bot-file) file, catches any errors that occur during a conversation turn and logs them, sets up your credential provider and creates a conversation state object to store conversation data in memory.
 
 ```csharp
 services.AddBot<EchoWithCounterBot>(options =>
@@ -157,10 +157,9 @@ services.AddBot<EchoWithCounterBot>(options =>
 });
 ```
 
-It also creates and registers `EchoBotAccessors` that are defined in the **EchoBotStateAccessors.cs** file and are passed into the public `EchoWithCounterBot` constructor using dependency injection framework in ASP.NET Core.
+The `ConfigureServices` method also creates and registers `EchoBotAccessors` that are defined in the **EchoBotStateAccessors.cs** file and are passed into the public `EchoWithCounterBot` constructor using dependency injection framework in ASP.NET Core.
 
 ```csharp
-// Create and register state accessors.
 // Accessors created here are passed into the IBot-derived class on every turn.
 services.AddSingleton<EchoBotAccessors>(sp =>
 {
@@ -182,7 +181,7 @@ services.AddSingleton<EchoBotAccessors>(sp =>
 
 The `Configure` method finishes the configuration of your app by specifying that the app use the Bot Framework and a few other files. All bots using the Bot Framework will need that configuration call. `ConfigureServices` and `Configure` are called by the runtime when the app starts.
 
-### CounterState.cs
+### Manage state
 
 This file contains a simple class that our bot uses to maintain the current state. It contains only an `int` that we use to increment your the counter.
 
@@ -193,7 +192,7 @@ public class CounterState
 }
 ```
 
-### EchoBotAccessors.cs
+### Accessor class
 
 The `EchoBotAccessors` class is created as a singleton in the `Startup` class and passed into the IBot derived class. In this case, `public class EchoWithCounterBot : IBot`. The bot uses the accessor to persist conversation data. The constructor of `EchoBotAccessors` is passed in a conversation object that is created in the Startup.cs file.
 
@@ -396,7 +395,7 @@ exports.EchoBot = EchoBot;
 
 ---
 
-### The bot file
+## The bot file
 
 The **.bot** file contains information, including the endpoint, app ID, and password, and references to services that are used by the bot. This file gets created for you when you start building a bot from a template, but you can create your own through the emulator or other tools. You can specify the .bot file to use when testing your bot with the [emulator](../bot-service-debug-emulator.md).
 
@@ -420,9 +419,6 @@ The **.bot** file contains information, including the endpoint, app ID, and pass
 
 ## Additional resources
 
-For more information about state management, see [how to manage conversation and user state](bot-builder-howto-v4-state.md)
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Create a bot](~/bot-service-quickstart.md)
+- To understand the role of state in bots, see [managing state](bot-builder-concept-state.md).
+- To understand the role a .bot file plays in managing resources, see [manage resources with a .bot file](bot-file-basics.md).
+- To create your first bot, see one of the quickstarts: [using Azure Bot service](../bot-service-quickstart.md), [using C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md), or [using JavaScript](../javascript/bot-builder-javascript-quickstart.md)

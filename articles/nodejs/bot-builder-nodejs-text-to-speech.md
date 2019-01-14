@@ -1,6 +1,6 @@
 ---
 title: Add speech to messages | Microsoft Docs
-description: Learn how to add speech to messages using the Bot Builder SDK for Node.js.
+description: Learn how to add speech to messages using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
@@ -24,7 +24,7 @@ If you are building a bot for a speech-enabled channel such as Cortana, you can 
 
 ## Specify text to be spoken by your bot
 
-Using the Bot Builder SDK for Node.js, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `IMessage.speak` property and send the message using the `session.send()` method, send the message using the `session.say()` method (passing parameters that specify display text, speech text, and options), or send the message using a built-in prompt (specifying options `speak` and `retrySpeak`).
+Using the Bot Framework SDK for Node.js, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `IMessage.speak` property and send the message using the `session.send()` method, send the message using the `session.say()` method (passing parameters that specify display text, speech text, and options), or send the message using a built-in prompt (specifying options `speak` and `retrySpeak`).
 
 ### <a id="message-speak"></a> IMessage.speak 
 
@@ -67,13 +67,13 @@ When you send a message on a speech-enabled channel, you can attempt to influenc
 
 ## Sample code 
 
-For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill" target="_blank">Roller sample</a> in GitHub.
+For a complete sample that shows how to create a speech-enabled bot using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill" target="_blank">Roller sample</a> in GitHub.
 
 ## Additional resources
 
 - <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill" target="_blank">Roller sample (GitHub)</a>
-- [Bot Builder SDK for Node.js Reference][SDKReference]
+- [Bot Framework SDK for Node.js Reference][SDKReference]
 
 [SDKReference]: https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html
 

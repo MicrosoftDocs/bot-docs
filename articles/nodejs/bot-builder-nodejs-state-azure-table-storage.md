@@ -1,6 +1,6 @@
 ---
 title: Manage custom state data with Azure Table storage | Microsoft Docs
-description: Learn how to save and retrieve state data using Azure Table storage with the Bot Builder SDK for Node.js.
+description: Learn how to save and retrieve state data using Azure Table storage with the Bot Framework SDK for Node.js.
 author: DucVo
 ms.author: v-ducvo
 manager: kamrani
