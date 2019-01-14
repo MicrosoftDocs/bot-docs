@@ -31,6 +31,7 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 1. From the emulator, send your bot a message (e.g.: send the message "Hi"). 
 1. Use the **Inspector** and **Log** panels on the right side of the emulator window to debug your bot. For example, clicking on any of the messages bubble (e.g.: the "Hi" message bubble in the screenshot below) will show you the detail of that message in the **Inspector** panel. You can use it to view requests and responses as messages are exchanged between the emulator and the bot. Alternatively, you can click on any of the linked text in the **Log** panel to view the details in the **Inspector** panel.
 
+
    ![Inspector panel on the Emulator](~/media/bot-service-debug-bot/emulator_inspector.png)
 
 ### Debug a JavaScript bot using breakpoints in Visual Studio Code
