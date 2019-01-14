@@ -1,6 +1,6 @@
 ---
-title: Conversations within the Bot Builder SDK | Microsoft Docs
-description: Describes what a conversation is within the Bot Builder SDK.
+title: Conversations within the Bot Framework SDK | Microsoft Docs
+description: Describes what a conversation is within the Bot Framework SDK.
 keywords: conversation flow, recognize intent, single turn, multiple turn, bot conversation
 author: jonathanfingold
 ms.author: jonathanfingold
@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Designing a bot's conversation flow involves deciding how a bot responds when the user says something to it. A bot first recognizes the task or conversation topic based on a message from the user. To determine the task or topic (known as the *intent*) associated with a user's message, the bot can look for words or patterns in the text of the user's message, or it can take advantage of services like [Language Understanding](bot-builder-concept-luis.md) and [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview).
 
-Once the bot has recognized the user's intent, depending on the scenario, the bot could fulfill the user's request with a single reply, completing the conversation in one turn, or it might require a series of turns. For multi-turn conversation flows, the Bot Builder SDK provides [state management](./bot-builder-howto-v4-state.md) for keeping track of a conversation, [prompts](bot-builder-prompts.md) for asking for information, and [dialogs](bot-builder-dialog-manage-conversation-flow.md) for encapsulating conversation flows.
+Once the bot has recognized the user's intent, depending on the scenario, the bot could fulfill the user's request with a single reply, completing the conversation in one turn, or it might require a series of turns. For multi-turn conversation flows, the Bot Framework SDK provides [state management](./bot-builder-howto-v4-state.md) for keeping track of a conversation, [prompts](bot-builder-prompts.md) for asking for information, and [dialogs](bot-builder-dialog-manage-conversation-flow.md) for encapsulating conversation flows.
 
 In a complex bot with multiple subsystems, it can be the case that you use multiple services to recognize intent, one for each subcomponent of the bot. The [dispatch tool](bot-builder-tutorial-dispatch.md) gets the results of multiple services in one place when you combine conversational subsystems into one bot.
 
@@ -68,7 +68,7 @@ You might design your bot to handle more than one type of task. For example, you
 
 ### Recognize intent
 
-The Bot Builder SDK supplies _recognizers_ that can process a message to determine intent, so your bot can initiate the appropriate conversational flow. Call the recognizer's _recognize_ async method to determine the user's intent from their message content. You can then call the _get top scoring intent_ method on the result to get the recognizer's top prediction.
+The Bot Framework SDK supplies _recognizers_ that can process a message to determine intent, so your bot can initiate the appropriate conversational flow. Call the recognizer's _recognize_ async method to determine the user's intent from their message content. You can then call the _get top scoring intent_ method on the result to get the recognizer's top prediction.
 
 A recognizer could use regular expressions, language understanding, or other logic that you develop. The following are examples of possible recognizers:
 
@@ -107,7 +107,7 @@ If you are storing information about the conversation, you may want to clear tha
 <!--  Types of conversations -->
 
 Your bot can support multi-turn interactions where it prompts users for multiple pieces of information. It can be focused on a very specific task or support multiple types of tasks.
-The Bot Builder SDK has some built-in support for language understanding (LUIS) and QnA Maker for adding natural language "question and answer" features to your bot.
+The Bot Framework SDK has some built-in support for language understanding (LUIS) and QnA Maker for adding natural language "question and answer" features to your bot.
 
 ## Conversations, channels, and users
 

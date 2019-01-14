@@ -1,4 +1,4 @@
-# [Bot Builder SDK for .NET](bot-builder-dotnet-overview.md)
+# [Bot Framework SDK for .NET](bot-builder-dotnet-overview.md)
 # [Key concepts](bot-builder-dotnet-concepts.md)
 # Messages and activities
 ## [Activities overview](bot-builder-dotnet-activities.md)

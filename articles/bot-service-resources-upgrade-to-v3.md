@@ -79,7 +79,7 @@ If you wish to preserve your old code, follow the steps below:
 <!-- TODO: Remove outdated code 
 To update your bot code to version 3.0, complete these steps:
 
-1. Update to the latest version of the [Bot Builder SDK](https://github.com/Microsoft/BotBuilder) for your bot's language.
+1. Update to the latest version of the [Bot Framework SDK](https://github.com/Microsoft/BotBuilder) for your bot's language.
 2. Update your code to apply the necessary changes, according the guidance below.
 3. Use the [Bot Framework Emulator](~/bot-service-debug-emulator.md) to test your bot locally and then in the cloud.
 
@@ -88,10 +88,10 @@ The following sections describe the key differences between API v1 and API v3. A
 
 ### BotBuilder and Connector are now one SDK
 
-Instead of having to install separate SDKs for the Builder and Connector by using multiple NuGet packages (or NPM modules), you can now get both libraries in a single Bot Builder SDK:
+Instead of having to install separate SDKs for the Builder and Connector by using multiple NuGet packages (or NPM modules), you can now get both libraries in a single Bot Framework SDK:
 
-- Bot Builder SDK for .NET: `Microsoft.Bot.Builder` NuGet package
-- Bot Builder SDK for Node.js: `botbuilder` NPM module
+- Bot Framework SDK for .NET: `Microsoft.Bot.Builder` NuGet package
+- Bot Framework SDK for Node.js: `botbuilder` NPM module
 
 The standalone `Microsoft.Bot.Connector` SDK is now obsolete and is no longer being maintained.
 

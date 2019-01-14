@@ -1,6 +1,6 @@
 ---
 title: Replace dialogs | Microsoft Docs
-description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Builder SDK for Node.js.
+description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: v-ducvo
 manager: kamrani
@@ -15,11 +15,11 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
-The ability to replace a dialog can be useful when you need to validate user input or repeat an action during the course of a conversation. With the Bot Builder SDK for Node.js, you can replace a dialog by using the [`session.replaceDialog`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#replacedialog) method. This method enables you to end the current dialog and replace it with a new dialog without returning to the caller. 
+The ability to replace a dialog can be useful when you need to validate user input or repeat an action during the course of a conversation. With the Bot Framework SDK for Node.js, you can replace a dialog by using the [`session.replaceDialog`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#replacedialog) method. This method enables you to end the current dialog and replace it with a new dialog without returning to the caller. 
 
 ## Create custom prompts to validate input
 
-The Bot Builder SDK for Node.js includes input validation for some types of [prompts](bot-builder-nodejs-dialog-prompt.md) such as `Prompts.time` and `Prompts.choice`. To validate text input that you receive in response to `Prompts.text`, you must create your own validation logic and custom prompts. 
+The Bot Framework SDK for Node.js includes input validation for some types of [prompts](bot-builder-nodejs-dialog-prompt.md) such as `Prompts.time` and `Prompts.choice`. To validate text input that you receive in response to `Prompts.text`, you must create your own validation logic and custom prompts. 
 
 You may want to validate an input if the input must comply with a certain value, pattern, range, or criteria that you define. If an input fails validation, the bot can prompt the user for that information again by using the `session.replaceDialog` method.
 

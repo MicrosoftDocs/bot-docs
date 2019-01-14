@@ -31,7 +31,7 @@ Dialogs may or may not have graphical interfaces. They may contain buttons, text
 
 [!INCLUDE [Dialog flow example](./includes/snippet-dotnet-manage-conversation-flow-intro.md)]
 
-For a detailed walkthrough of managing conversation flow using dialogs and the Bot Builder SDK, see:
+For a detailed walkthrough of managing conversation flow using dialogs and the Bot Framework SDK, see:
 
 - [Manage conversation flow with dialogs (.NET)](./dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](./nodejs/bot-builder-nodejs-manage-conversation-flow.md)
@@ -99,7 +99,8 @@ Conversation with a bot is generally focused around the task a bot is trying to 
 
 In a procedural conversation flow, you define the order of the questions and the bot will ask the questions in the order you defined. You can organize the questions into logical *modules* to keep the code centralized while staying focused on guiding the conversational. For example, you may design one module to contain the logic that helps the user browse for products and a separate module to contain the logic that helps the user create a new order.
 
-You can structure these modules to flow in any way you like, ranging from free form to sequential. The Bot Builder SDK provides several libraries that allows you to construct any conversational flow your bot needs. For example, the `prompts` library allows you to ask users for input, the `waterfall` library allows you to define a sequence of question/answer pair, the `dialog control` library allows you to modularized your conversational flow logic, etc. All of these libraries are tied together through a `dialogs` object. Let's take a closer look at how modules are implemented as `dialogs` to design and manage conversation flows and see how that flow is similar to the traditional application flow.
+You can structure these modules to flow in any way you like, ranging from free form to sequential. The Bot Framework SDK provides several libraries that allows you to construct any conversational flow your bot needs. For example, the `prompts` library allows you to ask users for input, the `waterfall` library allows you to define a sequence of question/answer pair, the `dialog control` library allows you to modularized your conversational flow logic, etc. All of these libraries are tied together through a `dialogs` object. Let's take a closer look at how modules are implemented as `dialogs` to design and manage conversation flows and see how that flow is similar to the traditional application flow.
+
 
 ![bot](./media/designing-bots/core/dialogs-screens.png)
 

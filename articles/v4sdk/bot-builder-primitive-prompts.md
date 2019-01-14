@@ -1,6 +1,6 @@
 ---
 title: Create your own prompts to gather user input | Microsoft Docs
-description: Learn how to manage a conversation flow with primitive prompts in the Bot Builder SDK.
+description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
 ms.author: v-jofing

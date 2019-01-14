@@ -1,6 +1,6 @@
 ---
 title: Manage bots using CLI tools
-description: Bot builder tools allows you to manage your bot resources directly from the command line
+description: Bot Framework Tools allows you to manage your bot resources directly from the command line
 keywords: botbuilder templates, ludown, qna, luis, msbot, manage, cli, .bot, bot
 author: ivorb
 ms.author: v-ivorb
@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Manage bots using CLI tools
 
-Bot Builder tools cover end-to-end bot development workflow that includes planning, building, testing, publishing, connecting, and evaluation phase. Let's see how these tools can help you with each phase of the development cycle.
+Bot Framework Tools cover end-to-end bot development workflow that includes planning, building, testing, publishing, connecting, and evaluation phase. Let's see how these tools can help you with each phase of the development cycle.
 
 ## Plan
 
@@ -316,7 +316,7 @@ Group
 ```
 
 ## Additional information
-- [Bot Builder tools on GitHub][cliTools]
+- [Bot Framework Tools on GitHub][cliTools]
 
 <!-- Footnote links -->
 

@@ -1,6 +1,6 @@
 ---
 title: Intercept messages | Microsoft Docs
-description: Learn how to intercept messages between user and bot using the Bot Builder SDK for .NET.
+description: Learn how to intercept messages between user and bot using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -23,7 +23,7 @@ monikerRange: 'azure-bot-service-3.0'
 ## Intercept and log messages
 
 The following code sample shows how to intercept messages that are exchanged between user and bot 
-using the concept of **middleware** in the Bot Builder SDK for .NET. 
+using the concept of **middleware** in the Bot Framework SDK for .NET. 
 
 First, create a `DebugActivityLogger` class and define a `LogAsync` method to specify what action is taken for each intercepted message. This example just prints some information about each message.
 
@@ -57,9 +57,9 @@ Although this example simply prints some information about each message, you can
 
 ## Sample code 
 
-For a complete sample that shows how to intercept and log messages using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample</a> in GitHub. 
+For a complete sample that shows how to intercept and log messages using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample</a> in GitHub. 
 
 ## Additional resources
 
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample (GitHub)</a>

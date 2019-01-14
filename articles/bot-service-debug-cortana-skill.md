@@ -1,7 +1,7 @@
 ---
 title: Test a Cortana skill | Microsoft Docs
 description: Learn how to test a Cortana bot by invoking a Cortana skill.
-keywords: Bot Builder SDK, register your bot, cortana
+keywords: Bot Framework SDK, register your bot, cortana
 author: v-ducvo
 manager: kamrani
 ms.topic: article
@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
  
-If you've built a Cortana skill using the Bot Builder SDK, you can test it by invoking it from Cortana. The following instructions walk you through the steps required to try out your Cortana skill.
+If you've built a Cortana skill using the Bot Framework SDK, you can test it by invoking it from Cortana. The following instructions walk you through the steps required to try out your Cortana skill.
 
 ## Register your bot
 If you [created your bot](~/bot-service-quickstart.md) using Bot Service in Azure, then your bot is already registered and you can skip this step.

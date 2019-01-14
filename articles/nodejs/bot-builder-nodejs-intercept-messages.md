@@ -1,6 +1,6 @@
 ---
 title: Intercept messages | Microsoft Docs
-description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Builder SDK for Node.js.
+description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Framework SDK for Node.js.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -22,7 +22,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 ## Example
 
-The following code sample shows how to intercept messages that are exchanged between user and bot by using the concept of **middleware** in the Bot Builder SDK for Node.js. 
+The following code sample shows how to intercept messages that are exchanged between user and bot by using the concept of **middleware** in the Bot Framework SDK for Node.js. 
 
 First, configure the handler for incoming messages (`botbuilder`) and for outgoing messages (`send`).
 
@@ -61,4 +61,4 @@ update `logIncomingMessage` and `logOutgoingMessage` as necessary to define the 
 
 ## Sample code
 
-For a complete sample that shows how to intercept and log messages using the Bot Builder SDK for Node.js, see the <a href="https://aka.ms/v3-js-capability-middlewareLogging" target="_blank">Middleware and Logging sample</a> in GitHub.
+For a complete sample that shows how to intercept and log messages using the Bot Framework SDK for Node.js, see the <a href="https://aka.ms/v3-js-capability-middlewareLogging" target="_blank">Middleware and Logging sample</a> in GitHub.

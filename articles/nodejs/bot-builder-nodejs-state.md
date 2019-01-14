@@ -1,6 +1,6 @@
 ---
 title: Manage state data | Microsoft Docs
-description: Learn how to save and retrieve state data with the Bot Builder SDK for Node.js.
+description: Learn how to save and retrieve state data with the Bot Framework SDK for Node.js.
 author: DucVo
 ms.author: v-ducvo
 manager: kamrani
@@ -51,7 +51,7 @@ With either of these [Azure Extensions](https://www.npmjs.com/package/botbuilder
 
 ## Storage containers
 
-In the Bot Builder SDK for Node.js, the `session` object exposes the following properties for storing state data.
+In the Bot Framework SDK for Node.js, the `session` object exposes the following properties for storing state data.
 
 | Property | Scoped to | Description |
 | ---- | ---- | ---- |
@@ -124,7 +124,7 @@ session.userdata.start = startDate.toISOString();
 
 ### Saving data
 
-Data that is created in each storage container will remain in memory until the container is saved. The Bot Builder SDK for Node.js sends data to the `ChatConnector` service in batches to be saved when there are messages to be sent. To save the data that exists in the storage containers without sending any messages, you can manually call the [`save`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#save) method. If you do not call the `save` method, the data that exists in the storage containers will be persisted as part of the batch processing.
+Data that is created in each storage container will remain in memory until the container is saved. The Bot Framework SDK for Node.js sends data to the `ChatConnector` service in batches to be saved when there are messages to be sent. To save the data that exists in the storage containers without sending any messages, you can manually call the [`save`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#save) method. If you do not call the `save` method, the data that exists in the storage containers will be persisted as part of the batch processing.
 
 ```javascript
 session.userData.favoriteColor = "Red";

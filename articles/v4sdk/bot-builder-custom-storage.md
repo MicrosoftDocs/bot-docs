@@ -1,6 +1,6 @@
 ---
 title: Implement custom storage for your bot | Microsoft Docs
-description: How to build custom storage in Bot Builder SDK v4.0
+description: How to build custom storage in Bot Framework SDK v4.0
 keywords: custom, storage, state, dialog
 author: johnataylor
 ms.author: johtaylo
@@ -22,7 +22,7 @@ to get its job done.
 
 In this article, we will be exploring the semantics around the bot’s interactions with the Azure Bot Service and the Store.
 
-The Bot Builder framework includes a default implementation; this implementation will most likely fit the needs of many 
+The Bot Framework includes a default implementation; this implementation will most likely fit the needs of many 
 applications, and all that is needed to be done to make use of it is to plug the pieces together with a few lines of 
 initialization code. Many of the samples illustrate just that.
 
