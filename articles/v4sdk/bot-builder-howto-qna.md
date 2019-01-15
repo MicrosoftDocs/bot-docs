@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: cognitive-services
-ms.date: 11/19/2018
+ms.date: 01/15/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -35,7 +35,7 @@ In this topic we will create a knowledge base and use it in a bot.
 1. With your knowledge base open, select the **Settings**. Record the value shown for _service name_ as <your_kb_name>
 1. Scroll down to find **Deployment details** and record the following values:
    - POST /knowledgebases/<your_knowledge_base_id>/generateAnswer
-   - Host: https://<you_hostname>.azurewebsites.net/qnamaker
+   - Host: <your_hostname>/qnamaker
    - Authorization: EndpointKey <your_endpoint_key>
 
 ## Update the .bot file
