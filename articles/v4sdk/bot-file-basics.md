@@ -45,7 +45,6 @@ To learn about encrypting and decrypting the .bot file, see [Bot Secrets](https:
 ## Why do I need a .bot file?
 
 A .bot file is **not** a requirement to build bots with Bot Framework SDK. You can continue to use appsettings.json, web.config, env, 
-
 keyvault or any mechanism you see fit to keep track of service references and keys that your bot depends on. However, to test
 the bot using the Emulator, you'll need a .bot file. The good news is that Emulator can create a .bot file for testing. To do that, 
 start the Emulator, click on the **create a new bot configuration** link on the Welcome page. In the dialog box that appears, type a **Bot name** and an **Endpoint URL**. Then connect.

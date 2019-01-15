@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/26/2018
+ms.date: 01/15/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -36,16 +36,12 @@ You may follow the **README** instructions for [C#](https://aka.ms/dispatch-samp
 
  ### Create your bot using service UI
  
-
 To begin manually creating your bot, download the following 4 files located in the GitHub [BotFramework-Samples](https://aka.ms/botdispatchgitsamples) repository into a local folder:
 [home-automation.json](https://aka.ms/dispatch-home-automation-json), 
 [weather.json](https://aka.ms/dispatch-weather-json), 
 [nlp-with-dispatchDispatch.json](https://aka.ms/dispatch-dispatch-json), 
 [QnAMaker.tsv](https://aka.ms/dispatch-qnamaker-tsv)
-
 One method to accomplish this is to open the GitHub repository link above, click on **BotFramework-Samples**, then "Clone or download" the repository to your local machine. Note that these files are in a different repository than the sample mentioned in the prerequisites.
-
-
 
 ### Manually create LUIS apps
 
@@ -498,7 +494,10 @@ Once your bot is running, it is possible to improve the bot's performance by rem
 
 Either of the above two actions will reduce the number of times that your bot responds back to your users with the message, 'Couldn't find an answer.' 
 
-## Additional resources 
+## Additional resources
+
+**Update or create a new LUIS model:** This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](https://aka.ms/create-luis-model#updating-your-cognitive-models
+).
 
 **Delete resources:** This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that *any other apps or services* rely on. 
 
