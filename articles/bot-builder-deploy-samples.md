@@ -8,7 +8,8 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/17/2018
+ms.date: 01/15/2019
+monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Deploy bots from botbuilder-samples repo
