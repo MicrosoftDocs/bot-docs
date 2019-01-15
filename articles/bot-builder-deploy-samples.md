@@ -40,7 +40,6 @@ It would be useful to read this article once through before following the steps,
 
 With msbot 4.3.2 and later, you need Azure CLI version 2.0.54 or later. If you installed the botservice extension, remove it with this command.
 
-
 ```cmd
 az extension remove --name botservice
 ```

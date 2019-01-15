@@ -59,12 +59,12 @@ az bot [command]
 ```
 |Commands|  |
 |----|----|
-| create      |add a resource|
-| delete     |clone a resource|
-| download   | download the bot source code|
-| publish   |publish to an existing bot service|
-| show |show existing bot resources.|
-| update| Update an existing bot Service|
+| create      |Create a new bot|
+| delete     |Delete an existing bot|
+| download   |Download an existing bot|
+| publish   |Publish to a bot's associated app service|
+| show |Get an existing bot|
+| update|Update an existing bot|
 
 To create a new bot from the CLI, you need to select an existing [resource group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview), or create a new one. 
 
