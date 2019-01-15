@@ -201,4 +201,3 @@ Once your dialog is complete, your need to add the dialog to your `MainDialog` c
 
 ## Conversational insights using PowerBI dashboard and Application Insights
 - To get started with getting Conversational insights, continue with  [Configure conversational analytics with PowerBI dashboard](bot-builder-enterprise-template-powerbi.md).
-

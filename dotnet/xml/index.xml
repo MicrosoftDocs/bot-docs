@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.16.1.38846">
+    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.19.1.44133">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -18,7 +18,7 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute FrameworkAlternate="">
           <AttributeName>System.Reflection.AssemblyFileVersion("3.16.1.38846")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -45,9 +45,13 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.16.1.38846">
+    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.19.1.44133">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -65,7 +69,7 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute FrameworkAlternate="">
           <AttributeName>System.Reflection.AssemblyFileVersion("3.16.1.38846")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -92,9 +96,13 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -113,12 +121,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("LUIS Middleware and Recognizers for the Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -133,9 +135,16 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -154,12 +163,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("Classes for using QnA Maker Cognitive Service on the Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -174,9 +177,16 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
@@ -234,21 +244,23 @@
           <AttributeName>System.Reflection.AssemblyDescription("Azure classes for using Azure Services on the Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -267,12 +279,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library implements .NET Simple Dialog classes ")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -287,9 +293,16 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
@@ -306,9 +319,6 @@
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.16.1.38846")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder")</AttributeName>
@@ -347,20 +357,25 @@
           <AttributeName>System.Reflection.AssemblyDescription("Library for building bots using Microsoft Bot Framework Connector")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -379,12 +394,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library integrates the Microsoft Bot Builder SDK with ASP.NET Core. It offers idiomatic configuration APIs in addition to providing all the plumbing to direct incoming bot messages to a configured bot.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -399,9 +408,16 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -420,12 +436,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library integrates the Microsoft Bot Builder SDK with ASP.NET WebAPI. It offers idiomatic configuration APIs in addition to providing all the plumbing to direct incoming bot messages to a configured bot.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -440,9 +450,16 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6.1", FrameworkDisplayName=".NET Framework 4.6.1")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -461,12 +478,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library implements .NET TemplateManager classes to manage libraries of template renderers in Microsoft Bot Builder SDK v4")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -481,16 +492,20 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Connector" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Connector" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.16.1.38846")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
@@ -514,21 +529,26 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library implements C# classes for using the Bot Framework Connector REST API.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Connector")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Connector")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Schema" Version="4.0.7.0">
+    <Assembly Name="Microsoft.Bot.Schema" Version="4.1.5.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -547,12 +567,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library implements C# schema classes for using the Bot Framework.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.7.0")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.7")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Framework")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -567,7 +581,14 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+        </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
   </Assemblies>
   <Remarks>To be added.</Remarks>
@@ -658,6 +679,8 @@
       <Type Name="BotServiceDelegateSurrogate" Kind="Class" />
       <Type Name="BotServiceScope" Kind="Class" />
       <Type Name="BotServiceSerializationBinder" Kind="Class" />
+      <Type Name="CosmosDbCustomClientOptions" Kind="Class" />
+      <Type Name="CosmosDbKeyEscape" Kind="Class" />
       <Type Name="CosmosDbStorage" Kind="Class" />
       <Type Name="CosmosDbStorageOptions" Kind="Class" />
       <Type Name="DocumentDbBotDataStore" Kind="Class" />
@@ -969,6 +992,7 @@
     <Namespace Name="Microsoft.Bot.Builder.Integration">
       <Type Name="BotFrameworkOptions" Kind="Class" />
       <Type Name="BotFrameworkPaths" Kind="Class" />
+      <Type Name="IAdapterIntegration" Kind="Interface" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Integration.AspNet.Core">
       <Type Name="ApplicationBuilderExtensions" Kind="Class" />
@@ -1193,6 +1217,7 @@
       <Type Name="CardAction" Kind="Class" />
       <Type Name="CardImage" Kind="Class" />
       <Type Name="ChannelAccount" Kind="Class" />
+      <Type Name="Channels" Kind="Class" />
       <Type Name="ClaimsIdentityEx" Kind="Class" />
       <Type Name="ConfigurationCredentialProvider" Kind="Class" />
       <Type Name="ConnectorClient" Kind="Class" />
@@ -1259,7 +1284,6 @@
       <Type Name="MessageReactionTypes" Kind="Class" />
       <Type Name="MicrosoftAppCredentials" Kind="Class" />
       <Type Name="MicrosoftAppCredentials+OAuthException" Kind="Class" />
-      <Type Name="MicrosoftAppCredentials+OAuthResponse" Kind="Class" />
       <Type Name="MicrosoftPayMethodData" Kind="Class" />
       <Type Name="OAuthApi" Kind="Class" />
       <Type Name="OAuthCard" Kind="Class" />
@@ -1323,6 +1347,13 @@
       <Type Name="MicrosoftGovernmentAppCredentials" Kind="Class" />
       <Type Name="SimpleChannelProvider" Kind="Class" />
       <Type Name="SimpleCredentialProvider" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Connector.Shared.Authentication">
+      <Type Name="AdalAuthenticator" Kind="Class" />
+      <Type Name="Retry" Kind="Class" />
+      <Type Name="RetryParams" Kind="Class" />
+      <Type Name="ThrottleException" Kind="Class" />
+      <Type Name="TimeSpanExtensions" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Schema">
       <Type Name="AadResourceUrls" Kind="Class" />
@@ -6737,11 +6768,21 @@
           <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
         </Parameters>
         <Docs>
-          <param name="operations">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="activityId">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="operations">
+             The operations group for this extension method.
+             </param>
+          <param name="conversationId">
+             Conversation ID
+             </param>
+          <param name="activityId">
+             activityId to delete
+             </param>
+          <param name="cancellationToken">
+             The cancellation token.
+             </param>
+          <summary>
+             DeleteActivity
+             </summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.ConversationsExtensions" Member="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
       </Member>
@@ -6794,11 +6835,21 @@
           <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
         </Parameters>
         <Docs>
-          <param name="operations">To be added.</param>
-          <param name="conversationId">To be added.</param>
-          <param name="memberId">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="operations">
+             The operations group for this extension method.
+             </param>
+          <param name="conversationId">
+             Conversation ID
+             </param>
+          <param name="memberId">
+             ID of the member to delete from this conversation
+             </param>
+          <param name="cancellationToken">
+             The cancellation token.
+             </param>
+          <summary>
+             DeleteConversationMember
+             </summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.ConversationsExtensions" Member="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteConversationMemberAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
       </Member>
@@ -7253,23 +7304,24 @@
         <Target Type="T:Microsoft.Bot.Connector.IConversations" />
       </Targets>
       <Member MemberName="SendConversationHistory">
-        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse SendConversationHistory (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.Transcript transcript);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse SendConversationHistory(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.Transcript transcript) cil managed" />
+        <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse SendConversationHistory (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.Transcript history);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse SendConversationHistory(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.Transcript history) cil managed" />
         <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.Transcript)" />
-        <MemberSignature Language="F#" Value="static member SendConversationHistory : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.Transcript -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory (operations, conversationId, transcript)" />
+        <MemberSignature Language="F#" Value="static member SendConversationHistory : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.Transcript -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory (operations, conversationId, history)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SendConversationHistory (operations As IConversations, conversationId As String, history As Transcript) As ResourceResponse" />
         <MemberType>ExtensionMethod</MemberType>
         <ReturnValue>
           <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
         </ReturnValue>
         <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="transcript" Type="Microsoft.Bot.Connector.Transcript" />
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" />
+          <Parameter Name="conversationId" Type="System.String" Index="1" />
+          <Parameter Name="history" Type="Microsoft.Bot.Connector.Transcript" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
         </Parameters>
         <Docs>
           <param name="operations">To be added.</param>
           <param name="conversationId">To be added.</param>
-          <param name="transcript">To be added.</param>
+          <param name="history">To be added.</param>
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.ConversationsExtensions" Member="M:Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.Transcript)" />
@@ -7280,24 +7332,24 @@
         <Target Type="T:Microsoft.Bot.Connector.IConversations" />
       </Targets>
       <Member MemberName="SendConversationHistoryAsync">
-        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; SendConversationHistoryAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.Transcript transcript, System.Threading.CancellationToken cancellationToken = null);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; SendConversationHistoryAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.Transcript transcript, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt; SendConversationHistoryAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.Transcript history, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.ResourceResponse&gt; SendConversationHistoryAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.Transcript history, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
         <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistoryAsync(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.Transcript,System.Threading.CancellationToken)" />
-        <MemberSignature Language="F#" Value="static member SendConversationHistoryAsync : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.Transcript * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistoryAsync (operations, conversationId, transcript, cancellationToken)" />
+        <MemberSignature Language="F#" Value="static member SendConversationHistoryAsync : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.Transcript * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistoryAsync (operations, conversationId, history, cancellationToken)" />
         <MemberType>ExtensionMethod</MemberType>
         <ReturnValue>
           <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
         </ReturnValue>
         <Parameters>
-          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-          <Parameter Name="conversationId" Type="System.String" />
-          <Parameter Name="transcript" Type="Microsoft.Bot.Connector.Transcript" />
-          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" />
+          <Parameter Name="conversationId" Type="System.String" Index="1" />
+          <Parameter Name="history" Type="Microsoft.Bot.Connector.Transcript" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" />
         </Parameters>
         <Docs>
           <param name="operations">To be added.</param>
           <param name="conversationId">To be added.</param>
-          <param name="transcript">To be added.</param>
+          <param name="history">To be added.</param>
           <param name="cancellationToken">To be added.</param>
           <summary>To be added.</summary>
         </Docs>
@@ -8093,6 +8145,32 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.IdentityTokenExtensions" Member="M:Microsoft.Bot.Connector.IdentityTokenExtensions.ValidateServiceUrlClaim(Microsoft.Bot.Connector.IdentityToken,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.IActivity})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.TimeSpan" />
+      </Targets>
+      <Member MemberName="WithRandomNoise">
+        <MemberSignature Language="C#" Value="public static TimeSpan WithRandomNoise (this TimeSpan delay, double multiplier = 0.1);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeSpan WithRandomNoise(valuetype System.TimeSpan delay, float64 multiplier) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise(System.TimeSpan,System.Double)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithRandomNoise (delay As TimeSpan, Optional multiplier As Double = 0.1) As TimeSpan" />
+        <MemberSignature Language="F#" Value="static member WithRandomNoise : TimeSpan * double -&gt; TimeSpan" Usage="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise (delay, multiplier)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.TimeSpan</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="delay" Type="System.TimeSpan" RefType="this" />
+          <Parameter Name="multiplier" Type="System.Double" />
+        </Parameters>
+        <Docs>
+          <param name="delay">To be added.</param>
+          <param name="multiplier">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions" Member="M:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise(System.TimeSpan,System.Double)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>

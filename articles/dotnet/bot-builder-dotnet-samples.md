@@ -1,6 +1,6 @@
 ---
-title: Sample bots for Bot Builder SDK for .NET | Microsoft Docs
-description: Explore sample bots that can help kickstart your bot development with the Bot Builder SDK for .NET.
+title: Sample bots for Bot Framework SDK for .NET | Microsoft Docs
+description: Explore sample bots that can help kickstart your bot development with the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -11,13 +11,13 @@ ms.date: 09/13/2018
 ---
 
 
-# Bot Builder SDK for .NET samples
+# Bot Framework SDK for .NET samples
 
 ::: moniker range="azure-bot-service-3.0"
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
-These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Builder SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities.
+These samples demonstrate task-focused bots that show how to take advantage of features in the Bot Framework SDK for .NET. You can use the samples to help you quickly get started with building great bots with rich capabilities.
 
 ## Get the samples
 To get the samples, clone the [BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repository using Git.
@@ -27,7 +27,7 @@ git clone https://github.com/Microsoft/BotBuilder-Samples.git
 cd BotBuilder-Samples
 ```
 
-The sample bots built with the Bot Builder SDK for .NET are organized in the **CSharp** directory.
+The sample bots built with the Bot Framework SDK for .NET are organized in the **CSharp** directory.
 
 You can also view the samples on GitHub and deploy them to Azure directly.
 

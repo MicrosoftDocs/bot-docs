@@ -5,9 +5,9 @@ redirect_url: /bot-framework/dotnet/bot-builder-dotnet-sdk-quickstart
 <!--
 
 
-title: Create a bot with the Bot Builder SDK for .NET | Microsoft Docs
-description: Create a bot with the Bot Builder SDK for .NET, a powerful bot construction framework.
-keywords: Bot Builder SDK, create a bot, quickstart, getting started
+title: Create a bot with the Bot Framework SDK for .NET | Microsoft Docs
+description: Create a bot with the Bot Framework SDK for .NET, a powerful bot construction framework.
+keywords: Bot Framework SDK, create a bot, quickstart, getting started
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -18,7 +18,7 @@ ms.date: 04/27/2018
 monikerRange: 'azure-bot-service-3.0'
 
 
-# Create a bot with the Bot Builder SDK for .NET
+# Create a bot with the Bot Framework SDK for .NET
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
@@ -28,11 +28,11 @@ monikerRange: 'azure-bot-service-3.0'
 > - [Bot Service](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Builder SDK for .NET</a> is an easy-to-use framework for developing bots using Visual Studio and Windows. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
+The <a href="https://github.com/Microsoft/BotBuilder" target="_blank">Bot Framework SDK for .NET</a> is an easy-to-use framework for developing bots using Visual Studio and Windows. The SDK leverages C# to provide a familiar way for .NET developers to create powerful bots.
 
 
 This tutorial walks you through building a bot by using
-the Bot Application template and the Bot Builder SDK for .NET,
+the Bot Application template and the Bot Framework SDK for .NET,
 and then testing it with the Bot Framework Emulator.
 
 ## Prerequisites
@@ -148,15 +148,15 @@ and ending with the text 'which was *##* characters', where *##* is the total nu
 > [!TIP]
 > In the emulator, click on any speech bubble in your conversation. Details about the message will appear in the Details pane, in JSON format.
 
-You've successfully created a bot by using the Bot Application template Bot Builder SDK for .NET!
+You've successfully created a bot by using the Bot Application template Bot Framework SDK for .NET!
 
 ## Next steps
 
-In this quickstart, you created a simple bot by using the Bot Application template and the Bot Builder SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
+In this quickstart, you created a simple bot by using the Bot Application template and the Bot Framework SDK for .NET and verified the bot's functionality by using the Bot Framework Emulator.
 
-Next, learn about the key concepts of the Bot Builder SDK for .NET.
+Next, learn about the key concepts of the Bot Framework SDK for .NET.
 
 > [!div class="nextstepaction"]
-> [Key concepts in the Bot Builder SDK for .NET](bot-builder-dotnet-concepts.md)
+> [Key concepts in the Bot Framework SDK for .NET](bot-builder-dotnet-concepts.md)
 
 -->

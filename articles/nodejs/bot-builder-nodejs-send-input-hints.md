@@ -1,6 +1,6 @@
 ---
 title: Add input hints to messages | Microsoft Docs
-description: Learn how to add input hints to messages using the Bot Builder SDK for .NET.
+description: Learn how to add input hints to messages using the Bot Framework SDK for .NET.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
@@ -43,7 +43,7 @@ On many channels, this will cause the client's input box to be disabled and micr
 
 ## Default values for input hint
 
-If you do not set the input hint for a message, the Bot Builder SDK will automatically set it for you by using this logic: 
+If you do not set the input hint for a message, the Bot Framework SDK will automatically set it for you by using this logic: 
 
 - If your bot sends a prompt, the input hint for the message will specify that your bot is **expecting input**.</li>
 - If your bot sends single message, the input hint for the message will specify that your bot is **accepting input**.</li>
@@ -52,7 +52,7 @@ If you do not set the input hint for a message, the Bot Builder SDK will automat
 ## Additional resources
 
 - [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
-- [Bot Builder SDK for Node.js Reference][SDKReference]
+- [Bot Framework SDK for Node.js Reference][SDKReference]
 
 [SDKReference]: https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html
 

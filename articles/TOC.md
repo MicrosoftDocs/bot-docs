@@ -7,16 +7,17 @@
 ### [.NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ### [JavaScript](javascript/bot-builder-javascript-quickstart.md)
 # Tutorials
-## [Use LUIS and QnA services with the Dispatch tool](v4sdk/bot-builder-tutorial-dispatch.md)
+## [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
-## [Samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
+## [botbuilder-samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
+## [Deploy bots from botbuilder-samples repo](bot-builder-deploy-samples.md)
 # Concepts
 ## [How bots work](v4sdk/bot-builder-basics.md)
-## [Manage bot resources with a bot file](v4sdk/bot-file-basics.md)
+## [Managing state](v4sdk/bot-builder-concept-state.md)
+## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
-## [About Dialogs library](v4sdk/bot-builder-concept-dialog.md)
-## [Understanding Dialogs state](v4sdk/bot-builder-dialog-state.md)
+## [Manage resources with a .bot file](v4sdk/bot-file-basics.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
@@ -34,16 +35,16 @@
 ### [Add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md)
 ### [Add buttons to guide user action](v4sdk/bot-builder-howto-add-suggested-actions.md)
 ### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md) 
-### [Prompt user for input](v4sdk/bot-builder-primitive-prompts.md) 
+### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md) 
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 <!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
-### [Get notification from bot](v4sdk/bot-builder-howto-proactive-message.md)
+### [Get notification from bots](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### Manage conversations using the Dialogs library 
-#### [Gather user input](v4sdk/bot-builder-prompts.md)
 #### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
-#### [Create advance conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
+#### [Gather user input using a dialog prompt](v4sdk/bot-builder-prompts.md)
+#### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 #### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 #### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
 #### [Reuse dialogs](v4sdk/bot-builder-compositcontrol.md)
@@ -55,9 +56,10 @@
 ### [Node.js](nodejs/TOC.md)
 ## [Debug](debug/TOC.md)
 ## Deploy
-### [Download and redeploy bot code](bot-service-build-download-source-code.md)
+### [Deploy your bot using Azure CLI](bot-builder-deploy-az-cli.md)
+### [Deploy your C# bot using Visual Studio](bot-builder-howto-deploy-azure.md)
+<!-- ### [Download and redeploy bot code](bot-service-build-download-source-code.md) -->
 ### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
-### [Deploy your C# bot to Azure](bot-builder-howto-deploy-azure.md)
 ## [Manage](manage/TOC.md)
 # Reference
 ## [.NET SDK v4](https://aka.ms/dotnetsdk4)

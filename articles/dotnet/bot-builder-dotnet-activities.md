@@ -1,6 +1,6 @@
 ---
 title: Activities overview | Microsoft Docs
-description: Learn about the different activity types available within the Bot Builder SDK for .NET.
+description: Learn about the different activity types available within the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -17,9 +17,9 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [Activity concept overview](../includes/snippet-dotnet-concept-activity.md)]
 
-## Activity types in the Bot Builder SDK for .NET
+## Activity types in the Bot Framework SDK for .NET
 
-The following activity types are supported by the Bot Builder SDK for .NET.
+The following activity types are supported by the Bot Framework SDK for .NET.
 
 | Activity.Type | Interface | Description |
 |------|------|------|

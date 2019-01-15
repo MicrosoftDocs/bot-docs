@@ -2,13 +2,13 @@
 title: Send welcome message to users | Microsoft Docs
 description: Learn how to develop your bot to provide a welcoming user experience.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
-author: dashel
-ms.author: dashel
+author: DanDev33
+ms.author: v-dashel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/08/2018
+ms.date: 12/20/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
@@ -16,6 +16,10 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 The primary goal when creating any bot is to engage your user in a meaningful conversation. One of the best ways to achieve this goal is to ensure that from the moment a user first connects, they understand your bot’s main purpose and capabilities, the reason your bot was created. This article provides code examples to help you welcome users to your bot.
+
+## Prerequisites
+- Understand [bot basics](bot-builder-basics.md). 
+- A copy of the **Welcome user sample** in either [C#](https://aka.ms/bot-welcome-sample-cs) or [JS](https://aka.ms/bot-welcome-sample-js). The code from the sample is used to explain how to send welcome messages.
 
 ## Same welcome for different channels
 A welcome message should be generated whenever your users first interacts with your bot. To achieve this, you can monitor your bot’s Activity types and watch for new connections. Each new connection can generate up to two conversation update activities depending on the channel.
@@ -33,25 +37,13 @@ This duplicate message can be avoided by generating an initial welcome message f
 - A conversation update event has occurred.
 - A new member (user) has been added to the conversation.
 
-The following example watches for new *conversation update activity*, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. You can download the complete source code in [[C#](https://aka.ms/bot-welcome-sample-cs) or [JS](https://aka.ms/bot-welcome-sample-js)] from GitHub.
+The following example watches for new *conversation update activity*, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. 
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
 ## [C#](#tab/csharp)
 
-This set of libraries are used to support all of the following C# code example
-
-```csharp
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Bot.Schema;
-```
-
-Now we need to create a state object for a given user in a conversation and it's accessor.
+We need to create a state object for a given user in a conversation and it's accessor.
 
 ```csharp
 /// The state object is used to keep track of various state related to a user in a conversation.
@@ -422,6 +414,8 @@ switch (text)
 }
 ```
 ---
+## Test the bot
+Refer to the [README](https://aka.ms/bot-welcome-sample-cs) file for instructions on running and testing the bot.
 
 ## Next steps
 > [!div class="nextstepaction"]

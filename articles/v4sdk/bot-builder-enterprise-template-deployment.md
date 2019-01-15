@@ -29,9 +29,12 @@ npm install -g ludown luis-apis qnamaker botdispatch msbot chatdown
 
 - Install the Azure Command Line Tools (CLI) from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest). If you already have the Azure Bot Service command line (CLI) tool installed, make sure you update it to the latest version by uninstalling your current version and then installing the new one.
 
-- Install the AZ Extension for Bot Service
+> With msbot 4.3.2 and later, the only AZ CLI prerequisite is having an AZ CLI version >= 2.0.53. If you have the botservice extension installed as well, please remove this via "az extension remove --name botservice".
+
+- Install the LUISGen tool
+
 ```shell
-az extension add -n botservice
+dotnet tool install -g luisgen
 ```
 
 - Install the LUISGen tool
@@ -120,7 +123,7 @@ Your Bot project provides additional functionality which you can enable through 
 
 ### Authentication
 
-To enable authentication follow these steps after configuring an Authentication Connection Name within the Settings of your Bot in the Azure Portal. Further information can be found in the [documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0).
+To enable authentication follow these steps after configuring an Authentication Connection Name within the Settings of your Bot in the Azure Portal. Further information can be found in the [documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp).
 
 Register the `AuthenticationDialog` in the MainDialog constructor:
     

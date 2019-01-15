@@ -1,4 +1,10 @@
 ---
+redirect_url: /bot-framework/bot-builder-concept-middleware
+---
+
+<!--
+
+---
 title: Create your own middleware | Microsoft Docs
 description: Understand how to write your own middleware.
 keywords: middleware, custom middleware, short circuit, fallback, activity handlers
@@ -16,7 +22,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Middleware allows you to write rich plugins for your bots, that can then be used by others as well. Here we'll show how to add and implement basic middleware, and show how it works. The v4 SDK provides some middleware for you, for things such as state management, LUIS, QnAMaker, and translation. Take a look at the bot builder SDK for [.NET](https://github.com/Microsoft/botbuilder-dotnet) or [JavaScript](https://github.com/Microsoft/botbuilder-js) for more information.
+Middleware allows you to write rich plugins for your bots, that can then be used by others as well. Here we'll show how to add and implement basic middleware, and show how it works. The v4 SDK provides some middleware for you, for things such as state management, LUIS, QnAMaker, and translation. Take a look at the Bot Framework SDK for [.NET](https://github.com/Microsoft/botbuilder-dotnet) or [JavaScript](https://github.com/Microsoft/botbuilder-js) for more information.
 
 ## Adding middleware
 
@@ -209,3 +215,4 @@ adapter.use({onTurn: async (context, next) =>{
 > This might not work in all cases, such as when other middleware might be able to respond to the user or when the bot receives a message correctly but does not reply. Responding with, "I don't understand" would be misleading to our user.
 
 
+-->

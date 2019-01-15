@@ -52,11 +52,11 @@ Once you've registered a recognizer, you can associate the recognizer with an ac
 
 ## Disambiguate between multiple intents
 
-Your bot can register more than one recognizer. Notice that the custom recognizer example involves assigning a numerical score to each intent. This is done since your bot may have more than one recognizer, and the Bot Builder SDK provides built-in logic to disambiguate between intents returned by multiple recognizers. The score assigned to an intent is typically between 0.0 and 1.0, but a custom recognizer may define an intent greater than 1.1 to ensure that that intent will always be chosen by the Bot Builder SDK's disambiguation logic. 
+Your bot can register more than one recognizer. Notice that the custom recognizer example involves assigning a numerical score to each intent. This is done since your bot may have more than one recognizer, and the Bot Framework SDK provides built-in logic to disambiguate between intents returned by multiple recognizers. The score assigned to an intent is typically between 0.0 and 1.0, but a custom recognizer may define an intent greater than 1.1 to ensure that that intent will always be chosen by the Bot Framework SDK's disambiguation logic. 
 
 By default, recognizers run in parallel, but you can set recognizeOrder in [IIntentRecognizerSetOptions][IntentRecognizerSetOptions] so the process quits as soon as your bot finds one that gives a score of 1.0.
 
-The Bot Builder SDK includes a [sample][DisambiguationSample] that demonstrates how to provide custom disambiguation logic in your bot by implementing [IDisambiguateRouteHandler][IDisambiguateRouteHandler].
+The Bot Framework SDK includes a [sample][DisambiguationSample] that demonstrates how to provide custom disambiguation logic in your bot by implementing [IDisambiguateRouteHandler][IDisambiguateRouteHandler].
 
 ## Next steps
 The logic for using regular expressions and inspecting message contents can become complex, especially if your bot's conversational flow is open-ended. To help your bot handle a wider variety of textual and spoken input from users, you can use an intent recognition service like [LUIS][LUIS] to add natural language understanding to your bot.

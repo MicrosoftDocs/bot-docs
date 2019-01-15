@@ -19,4 +19,6 @@
 # [Bot Service Compliance](../v4sdk/bot-service-compliance.md)
 # Troubleshoot
 ## [Troubleshoot general problems](../bot-service-troubleshoot-general-problems.md)
+## [Troubleshoot bot configuration issues](../bot-service-troubleshoot-bot-configuration.md)
+## [Troubleshoot HTTP 500 errors](../bot-service-troubleshoot-500-errors.md)
 ## [Troubleshoot authentication](../bot-service-troubleshoot-authentication-problems.md)

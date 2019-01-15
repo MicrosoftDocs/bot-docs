@@ -1,6 +1,6 @@
 ---
 title: Building a Cortana skill using Node.js | Microsoft Docs
-description: Learn core concepts for building a Cortana skill in the Bot Builder SDK for Node.js.
+description: Learn core concepts for building a Cortana skill in the Bot Framework SDK for Node.js.
 keywords: Bot Framework, Cortana skill, speech, Node.js, Bot Builder, SDK, key concepts, core concepts
 author: DeniseMak
 manager: kamrani
@@ -19,7 +19,7 @@ monikerRange: 'azure-bot-service-3.0'
 > [!NOTE]
 > This article is preliminary content and will be updated.
 
-This article introduces key concepts for building a Cortana skill in the Bot Builder SDK for Node.js. 
+This article introduces key concepts for building a Cortana skill in the Bot Framework SDK for Node.js. 
 
 ## What is a Cortana skill?
 A Cortana skill is a bot you can invoke by using a Cortana client, like the one built in to Windows 10. The user launches the bot by saying some keywords or phrases associated with the bot. You use the Bot Framework Portal to configure which keywords are used to launch your bot. 

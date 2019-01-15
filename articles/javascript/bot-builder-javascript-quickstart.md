@@ -1,7 +1,7 @@
 ---
-title: Create a bot using Bot Builder SDK for JavaScript | Microsoft Docs
-description: Quickly create a bot using the Bot Builder SDK for JavaScript.
-keywords: quickstart, bot builder sdk, getting started
+title: Create a bot using Bot Framework SDK for JavaScript | Microsoft Docs
+description: Quickly create a bot using the Bot Framework SDK for JavaScript.
+keywords: quickstart, bot framework sdk, getting started
 author: jonathanfingold
 ms.author: v-jofing
 manager: kamrani
@@ -12,11 +12,11 @@ ms.date: 10/30/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot with the Bot Builder SDK for JavaScript
+# Create a bot with the Bot Framework SDK for JavaScript
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-This quickstart walks you through building a single bot by using the Yeoman Bot Builder generator and the Bot Builder SDK for JavaScript, and then testing it with the Bot Framework Emulator.
+This quickstart walks you through building a single bot by using the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript, and then testing it with the Bot Framework Emulator.
 
 ## Prerequisites
 
@@ -88,6 +88,10 @@ In a terminal or command prompt change directories to the one created for your b
 
 Send a message to your bot, and the bot will respond back with a message.
 ![Emulator running](../media/emulator-v4/js-quickstart.png)
+
+## Additional resources
+
+See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
 
 ## Next steps
 

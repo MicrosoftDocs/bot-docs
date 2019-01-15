@@ -1,6 +1,6 @@
 ---
 title: Manage state data | Microsoft Docs
-description: Learn how to save and retrieve state data with the Bot Builder SDK for .NET.
+description: Learn how to save and retrieve state data with the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -98,58 +98,6 @@ Each [Activity][Activity] object contains properties that you will use to manage
 > [!NOTE]
 > You may use these property values as keys even if you opt to store state data in your own database, rather than using the Bot Framework state data store.
 
-## <a id="state-client"></a> Create a state client
-
-The `StateClient` object enables you to manage state data using the Bot Builder SDK for .NET. 
-If you have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by calling the `GetStateClient` method on the `Activity` object.
-
-[!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient1)]
-
-If you do not have access to a message that belongs to the same context in which you want to manage state data, you can create a state client by simply creating a new instance of the `StateClient` class. In this example, `microsoftAppId` and `microsoftAppPassword` are the Bot Framework authentication credentials that you acquire for your bot during the [bot creation](../bot-service-quickstart.md) process.
-
-> [!NOTE]
-> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
-
-[!code-csharp[Get State client](../includes/code/dotnet-state.cs#getStateClient2)]
-
-> [!NOTE]
-> The default state client is stored in a central service. For some channels, you may want to use a state API that is hosted within the channel itself, so that state data can be stored in a compliant store that the channel supplies.
-
-## Get state data
-
-Each of the "**Get...Data**" methods returns a `BotData` object that contains the state data for the specified user and/or conversation. To get a specific property value from a `BotData` object, call the `GetProperty` method. 
-
-The following code example shows how to get a typed property from user data. 
-
-[!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty1)]
-
-The following code example shows how to get a property from a complex type within user data.
-
-[!code-csharp[Get state property](../includes/code/dotnet-state.cs#getProperty2)]
-
-If no state data exists for the user and/or conversation that is specified for a "**Get...Data**" method call, 
-the `BotData` object that is returned will contain these property values: 
-- `BotData.Data` = null
-- `BotData.ETag` = "*"
-
-## Save state data
-
-To save state data, first get the `BotData` object by calling the appropriate "**Get...Data**" method, 
-then update it by calling the `SetProperty` method for each property you want to update, 
-and save it by calling the appropriate "**Set...Data**" method. 
-
-> [!NOTE]
-> You may store up to 32 kilobytes of data for each user on a channel, each conversation on a channel, 
-> and each user within the context of a conversation on a channel. 
-
-The following code example shows how to save a typed property in user data.
-
-[!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty1)]
-
-The following code example shows how to save a property in a complex type within user data. 
-
-[!code-csharp[Set state property](../includes/code/dotnet-state.cs#setProperty2)]
-
 ## Handle concurrency issues
 
 Your bot may receive an error response with HTTP status code **412 Precondition Failed** 
@@ -161,6 +109,6 @@ You can design your bot to account for this scenario, as shown in the following 
 ## Additional resources
 
 - [Bot Framework troubleshooting guide](../bot-service-troubleshoot-general-problems.md)
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 
 [Activity]: https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html

@@ -47,6 +47,9 @@ This section configures the publish settings of your bot. All fields labeled wit
 
 Bots in **Preview** are limited to 100 contacts. If you need more than 100 contacts, submit your bot for review. Clicking **Submit for Review** will automatically make your bot searchable in Skype if accepted. If your request cannot be approved, you will be notified as to what you need to change before it can be approved.
 
+> [!TIP]
+> If you are wanting to submit your bot for review, keep in mind it must meet the [skype certification checklist](https://github.com/Microsoft/skype-dev-bots/blob/master/certification/CHECKLIST.md) before it will be accepted.
+
 After finishing configuration, click **Save** and accept the **Terms of Service**. The Skype channel is now added to your bot.
 
 ## Next steps

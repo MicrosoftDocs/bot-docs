@@ -30,7 +30,7 @@ To use these tools from the command line, you will need Node.js installed to you
 
 ## 1. Install tools
 1. [Install](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) latest version of the Azure CLI.
-2. [Install](https://aka.ms/botbuilder-tools-readme) Bot Builder tools.
+2. [Install](https://aka.ms/botbuilder-tools-readme) Bot Framework Tools.
 
 You can now manage bots using Azure CLI like any other Azure resource.
 
@@ -59,12 +59,12 @@ az bot [command]
 ```
 |Commands|  |
 |----|----|
-| create      |add a resource|
-| delete     |clone a resource|
-| download   | download the bot source code|
-| publish   |publish to an existing bot service|
-| show |show existing bot resources.|
-| update| Update an existing bot Service|
+| create      |Create a new bot|
+| delete     |Delete an existing bot|
+| download   |Download an existing bot|
+| publish   |Publish to a bot's associated app service|
+| show |Get an existing bot|
+| update|Update an existing bot|
 
 To create a new bot from the CLI, you need to select an existing [resource group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview), or create a new one. 
 
@@ -155,10 +155,10 @@ This will take current endpoint, MSA appID and password from the target resource
 
 ## 5. Manage, Update or Create LUIS and QnA services with  new botbuilder-tools
 
-[Bot builder tools](https://aka.ms/botbuilder-tools) is a new toolset which allows you to manage and interact with your bot resources directly from the command line.
+[Bot Framework Tools](https://aka.ms/botbuilder-tools) is a new toolset which allows you to manage and interact with your bot resources directly from the command line.
 
 >[!TIP]
-> Every bot builder tool includes a global help command, accessible from the command line by entering **-h** or **--help**. This command is available at any time from any action, which will provide a helpful display of the options available to you along with their descriptions.
+> Every Bot Framework Tool includes a global help command, accessible from the command line by entering **-h** or **--help**. This command is available at any time from any action, which will provide a helpful display of the options available to you along with their descriptions.
 
 ### LUDown
 
@@ -328,5 +328,5 @@ az bot publish --name "my-bot-name" --resource-group "my-resource-group"
 ```
 
 ## References
-- [Bot Builder Tools](https://aka.ms/botbuilder-tools-readme)
+- [Bot Framework Tools](https://aka.ms/botbuilder-tools-readme)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)

@@ -1,17 +1,24 @@
 ﻿<Type Name="Channel+Channels" FullName="Microsoft.Bot.Builder.Dialogs.Choices.Channel+Channels">
-  <TypeSignature Language="C#" Value="public class Channel.Channels" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Channel/Channels extends System.Object" />
+  <TypeSignature Language="C#" Value="public class Channel.Channels : Microsoft.Bot.Connector.Channels" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Channel/Channels extends Microsoft.Bot.Connector.Channels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels" />
-  <TypeSignature Language="VB.NET" Value="Public Class Channel.Channels" />
-  <TypeSignature Language="F#" Value="type Channel.Channels = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class Channel.Channels&#xA;Inherits Channels" />
+  <TypeSignature Language="F#" Value="type Channel.Channels = class&#xA;    inherit Channels" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="botbuilder-dotnet-stable">Microsoft.Bot.Connector.Channels</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+      <AttributeName>System.Obsolete("This class is deprecated. Please use Microsoft.Bot.Connector.Channels.")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -26,274 +33,9 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Console">
-      <MemberSignature Language="C#" Value="public const string Console;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Console" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Console" />
-      <MemberSignature Language="VB.NET" Value="Public Const Console As String " />
-      <MemberSignature Language="F#" Value="val mutable Console : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Console" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Cortana">
-      <MemberSignature Language="C#" Value="public const string Cortana;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Cortana" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Cortana" />
-      <MemberSignature Language="VB.NET" Value="Public Const Cortana As String " />
-      <MemberSignature Language="F#" Value="val mutable Cortana : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Cortana" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Directline">
-      <MemberSignature Language="C#" Value="public const string Directline;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Directline" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Directline" />
-      <MemberSignature Language="VB.NET" Value="Public Const Directline As String " />
-      <MemberSignature Language="F#" Value="val mutable Directline : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Directline" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Email">
-      <MemberSignature Language="C#" Value="public const string Email;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Email" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Email" />
-      <MemberSignature Language="VB.NET" Value="Public Const Email As String " />
-      <MemberSignature Language="F#" Value="val mutable Email : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Email" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Emulator">
-      <MemberSignature Language="C#" Value="public const string Emulator;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Emulator" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Emulator" />
-      <MemberSignature Language="VB.NET" Value="Public Const Emulator As String " />
-      <MemberSignature Language="F#" Value="val mutable Emulator : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Emulator" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Facebook">
-      <MemberSignature Language="C#" Value="public const string Facebook;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Facebook" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Facebook" />
-      <MemberSignature Language="VB.NET" Value="Public Const Facebook As String " />
-      <MemberSignature Language="F#" Value="val mutable Facebook : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Facebook" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Groupme">
-      <MemberSignature Language="C#" Value="public const string Groupme;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Groupme" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Groupme" />
-      <MemberSignature Language="VB.NET" Value="Public Const Groupme As String " />
-      <MemberSignature Language="F#" Value="val mutable Groupme : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Groupme" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Kik">
-      <MemberSignature Language="C#" Value="public const string Kik;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Kik" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Kik" />
-      <MemberSignature Language="VB.NET" Value="Public Const Kik As String " />
-      <MemberSignature Language="F#" Value="val mutable Kik : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Kik" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Msteams">
-      <MemberSignature Language="C#" Value="public const string Msteams;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Msteams" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Msteams" />
-      <MemberSignature Language="VB.NET" Value="Public Const Msteams As String " />
-      <MemberSignature Language="F#" Value="val mutable Msteams : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Msteams" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Skype">
-      <MemberSignature Language="C#" Value="public const string Skype;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Skype" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Skype" />
-      <MemberSignature Language="VB.NET" Value="Public Const Skype As String " />
-      <MemberSignature Language="F#" Value="val mutable Skype : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Skype" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Slack">
-      <MemberSignature Language="C#" Value="public const string Slack;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Slack" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Slack" />
-      <MemberSignature Language="VB.NET" Value="Public Const Slack As String " />
-      <MemberSignature Language="F#" Value="val mutable Slack : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Slack" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sms">
-      <MemberSignature Language="C#" Value="public const string Sms;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Sms" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Sms" />
-      <MemberSignature Language="VB.NET" Value="Public Const Sms As String " />
-      <MemberSignature Language="F#" Value="val mutable Sms : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Sms" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Telegram">
-      <MemberSignature Language="C#" Value="public const string Telegram;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Telegram" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Telegram" />
-      <MemberSignature Language="VB.NET" Value="Public Const Telegram As String " />
-      <MemberSignature Language="F#" Value="val mutable Telegram : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Telegram" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Webchat">
-      <MemberSignature Language="C#" Value="public const string Webchat;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string Webchat" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Webchat" />
-      <MemberSignature Language="VB.NET" Value="Public Const Webchat As String " />
-      <MemberSignature Language="F#" Value="val mutable Webchat : string" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels.Webchat" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>

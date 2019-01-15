@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="R" />
@@ -15,6 +16,9 @@
     <BaseTypeName>Microsoft.Bot.Builder.Scorables.Internals.Binding</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Scorables.Internals.IBinding</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;</InterfaceName>
     </Interface>
@@ -38,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
@@ -64,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;R&gt;</ReturnType>

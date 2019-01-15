@@ -1,6 +1,6 @@
 ---
 title: Implement sequential conversation flow | Microsoft Docs
-description: Learn how to manage a simple conversation flow with dialogs in the Bot Builder SDK for Node.js.
+description: Learn how to manage a simple conversation flow with dialogs in the Bot Framework SDK for Node.js.
 keywords: simple conversation flow, sequential conversation flow, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
 ms.author: v-jofing
@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/13/2018
+ms.date: 11/18/2018
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,32 +16,17 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-You can manage simple and complex conversation flows using the dialogs library.
+You can manage simple and complex conversation flows using the dialogs library. In a simple interaction, the bot runs through a fixed sequence of steps, and the conversation finishes. In this article, we use a _waterfall dialog_, a few _prompts_, and a _dialog set_ to create a simple interaction that asks the user a series of questions.
 
-In a simple interaction, the bot runs through a fixed sequence of steps, and the conversation finishes.
-In this article, we use a _waterfall dialog_, a few _prompts_, and a _dialog set_ to create a simple interaction that asks the user a series of questions.
-We draw on code from the **multi-turn prompt** [[C#](https://aka.ms/cs-multi-prompts-sample) | [JS](https://aka.ms/js-multi-prompts-sample)] sample.
+## Prerequisites
+- [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download)
+- The code in this article is based on the **multi-turn-prompt** sample. You'll need a copy of the sample in either [C#](https://aka.ms/cs-multi-prompts-sample) or [JS](https://aka.ms/js-multi-prompts-sample).
+- Knowledge of [bot basics](bot-builder-basics.md), [dialog library](bot-builder-concept-dialog.md), [dialog state](bot-builder-dialog-state.md), and [.bot](bot-file-basics.md) file.
 
-# [C#](#tab/csharp)
 
-To use dialogs in general, you need the `Microsoft.Bot.Builder.Dialogs` NuGet package for your project or solution.
-
-# [JavaScript](#tab/javascript)
-
-To use dialogs in general, you need the `botbuilder-dialogs` library, which can be downloaded via npm.
-
-To install this package and save it as a dependency, navigate to your project's directory and use this command.
-
-```shell
-npm install botbuilder-dialogs --save
-```
-
----
 The following sections reflect the steps you would take to implement simple dialogs for most bots:
 
 ## Configure your bot
-
-We will need a state property accessor assigned to the dialog set that the bot can use to manage [dialog state](bot-builder-dialog-state.md).
 
 # [C#](#tab/csharp)
 
@@ -68,7 +53,7 @@ public class MultiTurnPromptsBotAccessors
 }
 ```
 
-We register the accessors class in the `ConfigureServices` method of the `Statup` class.
+We register the accessors class in the `ConfigureServices` method of the `Startup` class.
 Again, we're calling out only portions of the code.
 
 ```csharp
@@ -127,7 +112,7 @@ The bot's constructor will create the state property accessors for the bot: `thi
 
 ## Update the bot turn handler to call the dialog
 
-To run the dialog, the bot's turn handler needs to create a dialog context for the dialog set that contains the dialogs for the bot. (A bot could define multiple dialog sets, but as a general rule, you should just define one for your bot. [Dialogs library](bot-builder-concept-dialog.md) describes key aspects of dialogs.)
+To run the dialog, the bot's turn handler needs to create a dialog context for the dialog set that contains the dialogs for the bot. A bot could define multiple dialog sets, but as a general rule, you should just define one for your bot. 
 
 # [C#](#tab/csharp)
 
@@ -223,8 +208,6 @@ In this bot, we've defined two state property accessors:
 
 The _get_ and _set_ methods of a state property accessor get and set the value of the property in the state management object's cache. The cache is populated the first time the value of a state property is requested in a turn, but it must be persisted explicitly. In order to persist changes to both of these state properties, we call the _save changes_ method of the corresponding state management object.
 
-For more information, see [dialog state](bot-builder-dialog-state.md).
-
 ## Initialize your bot and define your dialog
 
 Our simple conversation is modeled as a series of questions posed to the user. The C# and JavaScript versions have slightly different steps:
@@ -255,7 +238,7 @@ For the `hello_user` dialog:
 Here are a couple of things to remember when defining your own waterfall steps.
 
 * Each bot turn reflects input from the user, followed by a response from the bot. Thus, you are asking the user for input at the end of a waterfall step, and receiving their answer in the next waterfall step.
-* Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. (You can rely on the built-in validation for each type of prompt, or you can add your own custom validation to the prompt. For more information, see [get user input](bot-builder-prompts.md).)
+* Each prompt is effectively a two-step dialog that presents its prompt and loops until it receives "valid" input. 
 
 In this sample, the dialog is defined within the bot file and initialized in the bot's constructor.
 
@@ -523,7 +506,7 @@ There are various options for keeping dialog steps and bot state separate. For e
 
 ## Test your dialog
 
-Build and run your bot locally, then interact with your bot using the [Emulator](../bot-service-debug-emulator.md).
+Build and run your bot locally, then interact with your bot using the Emulator.
 
 # [C#](#tab/csharp)
 
@@ -546,6 +529,9 @@ Build and run your bot locally, then interact with your bot using the [Emulator]
    * The bot starts the one-step `hello_user` dialog, which displays information from the collected data and immediately ends.
 
 ---
+
+## Additional resources
+You can rely on the built-in validation for each type of prompt as shown here, or you can add your own custom validation to the prompt. For more information, see [gather user input using a dialog prompt](bot-builder-prompts.md).
 
 ## Next steps
 

@@ -1,7 +1,7 @@
 ---
 title: Build a Cortana skill using .NET | Microsoft Docs
-description: Learn core concepts for building a Cortana skill in the Bot Builder SDK for .NET.
-keywords: Bot Framework, Cortana skill, speech, .NET, Bot Builder, SDK, key concepts, core concepts
+description: Learn core concepts for building a Cortana skill in the Bot Framework SDK for .NET.
+keywords: Bot Framework, Cortana skill, speech, .NET, SDK, key concepts, core concepts
 author: DeniseMak
 manager: kamrani
 ms.topic: article
@@ -22,7 +22,7 @@ monikerRange: 'azure-bot-service-3.0'
 > - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
 
 
-The Bot Builder SDK for .NET enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
+The Bot Framework SDK for .NET enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
 
 
 > [!TIP]
@@ -35,7 +35,7 @@ Creating a Cortana skill using Bot Framework requires very little Cortana-specif
 
 ## Adding speech to your bot
 
-Spoken messages from your bot are represented as Speech Synthesis Markup Language (SSML). The Bot Builder SDK lets you include SSML in your bot's responses to control what the bot says, in addition to what it shows.  You can also control the state of Cortana's microphone, by specifying whether your bot is accepting, expecting, or ignoring user input.
+Spoken messages from your bot are represented as Speech Synthesis Markup Language (SSML). The Bot Framework SDK lets you include SSML in your bot's responses to control what the bot says, in addition to what it shows.  You can also control the state of Cortana's microphone, by specifying whether your bot is accepting, expecting, or ignoring user input.
 
 Set the `Speak` property of the `IMessageActivity` object to specify a message for Cortana to say. If you specify plain text, Cortana determines how the words are pronounced. 
 
@@ -332,7 +332,7 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 * [Card design best practices for Cortana][CardDesign]
 * [Cortana Dev Center][CortanaDevCenter]
 * [Testing and debugging best practices for Cortana][Cortana-TestBestPractice]
-* <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+* <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 
 [CortanaGetStarted]: /cortana/getstarted
 [BFPortal]: https://dev.botframework.com/

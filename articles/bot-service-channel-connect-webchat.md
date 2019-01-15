@@ -8,12 +8,12 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/10/2018
+ms.date: 12/04/2018
 ---
 
 # Connect a bot to Web Chat
 
-[!INCLUDE pre-release-label]
+[!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
 When you [create a bot](bot-service-quickstart.md) with Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the web chat control, which provides the ability for users to interact with your bot directly in a web page.
 

@@ -1,6 +1,6 @@
 ---
-title: Sample bots for Bot Builder SDK for Java | Microsoft Docs
-description: Explore sample bots that can help kickstart your bot development with the Bot Builder SDK for Java.
+title: Sample bots for Bot Framework SDK for Java | Microsoft Docs
+description: Explore sample bots that can help kickstart your bot development with the Bot Framework SDK for Java.
 author: jonathanfingold
 ms.author: jonathanfingold
 manager: kamrani
@@ -11,7 +11,7 @@ ms.date: 05/03/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
-# Bot Builder SDK v4 Java samples
+# Bot Framework SDK v4 Java samples
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 You can use the samples to help you build bots using Java SDK v4, which is currently in preview.
@@ -23,4 +23,4 @@ To get the samples, clone the [botbuilder-java](https://github.com/Microsoft/bot
 git clone https://github.com/Microsoft/botbuilder-java.git
 cd samples
 ```
-The sample bots built with the Bot Builder SDK for Java are organized in the **samples** directory.
+The sample bots built with the Bot Framework SDK for Java are organized in the **samples** directory.

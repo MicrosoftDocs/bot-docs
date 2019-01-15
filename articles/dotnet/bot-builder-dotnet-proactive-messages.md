@@ -1,6 +1,6 @@
 ---
 title: Send proactive messages | Microsoft Docs
-description: Learn how to send proactive messages using the Bot Builder SDK for .NET.
+description: Learn how to send proactive messages using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -27,7 +27,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 ## Send an ad hoc proactive message
 
-The following code samples show how to send an ad hoc proactive message with the Bot Builder SDK for .NET.
+The following code samples show how to send an ad hoc proactive message with the Bot Framework SDK for .NET.
 
 To be able to send an ad hoc message to a user, the bot must first collect and store some information about the user from the current conversation. 
 
@@ -94,7 +94,7 @@ await connector.Conversations.SendToConversationAsync((Activity)message);
 
 ## Send a dialog-based proactive message
 
-The following code samples show how to send a dialog-based proactive message by using the Bot Builder SDK for .NET.
+The following code samples show how to send a dialog-based proactive message by using the Bot Framework SDK for .NET.
 
 To be able to send a dialog-based proactive message to a user, the bot must first collect and save information from the current conversation. 
 
@@ -174,12 +174,12 @@ public class SurveyDialog : IDialog<object>
 
 ## Sample code
 
-For a complete sample that shows how to send proactive messages using the Bot Builder SDK for .NET, see the <a href="https://aka.ms/proactive-messaging-cs-v3 " target="_blank">Proactive Messages sample</a> in GitHub. 
+For a complete sample that shows how to send proactive messages using the Bot Framework SDK for .NET, see the <a href="https://aka.ms/proactive-messaging-cs-v3 " target="_blank">Proactive Messages sample</a> in GitHub. 
 Within the Proactive Messages sample, <a href="https://aka.ms/proactive-sendmessage-cs-v3 " target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://aka.ms/proactive-newdialog-cs-v3 " target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message. 
 
 ## Additional resources
 
 - [Design and control conversation flow](../bot-service-design-conversation-flow.md)
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-proactiveMessages" target="_blank">Proactive Messages sample (GitHub)</a>
 

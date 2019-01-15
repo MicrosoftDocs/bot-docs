@@ -1,6 +1,6 @@
 ---
 title: Create data-driven experiences with Azure Search  | Microsoft Docs
-description: Learn how to create data-driven experiences with Azure Search and help users navigate large amounts of content in a bot with the Bot Builder SDK for .NET and Azure Search.
+description: Learn how to create data-driven experiences with Azure Search and help users navigate large amounts of content in a bot with the Bot Framework SDK for .NET and Azure Search.
 author: matthewshim-ms
 ms.author: v-shimma
 manager: kamrani
@@ -176,7 +176,7 @@ The search results are displayed to the user and you've successfully added Azure
 
 ## Samples
 
-For two complete samples that show how to support Azure Search with bots using the Bot Builder SDK for .NET, see the 
+For two complete samples that show how to support Azure Search with bots using the Bot Framework SDK for .NET, see the 
 [Real Estate bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search/RealEstateBot) or [Job Listing bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search/JobListingBot) in GitHub. 
 
 ## Additional resources

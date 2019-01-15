@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,6 +33,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
@@ -41,6 +43,31 @@
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbStorage" /> class.
             using the provided CosmosDB credentials, database ID, and collection ID.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbStorage (Microsoft.Azure.Documents.IDocumentClient documentClient, Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions cosmosDbCustomClientOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Documents.IDocumentClient documentClient, class Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions cosmosDbCustomClientOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.#ctor(Microsoft.Azure.Documents.IDocumentClient,Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbStorage : Microsoft.Azure.Documents.IDocumentClient * Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions -&gt; Microsoft.Bot.Builder.Azure.CosmosDbStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbStorage (documentClient, cosmosDbCustomClientOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="documentClient" Type="Microsoft.Azure.Documents.IDocumentClient" />
+        <Parameter Name="cosmosDbCustomClientOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions" />
+      </Parameters>
+      <Docs>
+        <param name="documentClient">The custom implementation of IDocumentClient.</param>
+        <param name="cosmosDbCustomClientOptions">Custom client configuration options.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbStorage" /> class.
+            This constructor should only be used if the default behavior of the DocumentClient needs to be changed.
+            The <see cref="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.#ctor(Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions)" /> constructor is preferer for most cases.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -90,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -122,7 +151,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Obsolete("Replaced by CosmosDBKeyEscape.EscapeKey.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -152,6 +187,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

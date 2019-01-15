@@ -1,6 +1,6 @@
 ---
 title: Add speech to messages | Microsoft Docs
-description: Learn how to add speech to messages using the Bot Builder SDK for .NET.
+description: Learn how to add speech to messages using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -24,7 +24,7 @@ If you are building a bot for a speech-enabled channel such as Cortana, you can 
 
 ## Specify text to be spoken by your bot
 
-Using the Bot Builder SDK for .NET, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `Speak` property of the [message][IMessageActivity], call the `IDialogContext.SayAsync()` method, or specify prompt options `speak` and `retrySpeak` when sending a message using a built-in prompt.
+Using the Bot Framework SDK for .NET, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `Speak` property of the [message][IMessageActivity], call the `IDialogContext.SayAsync()` method, or specify prompt options `speak` and `retrySpeak` when sending a message using a built-in prompt.
 
 ### <a id="message-speak"></a> IMessageActivity.Speak
 
@@ -54,7 +54,7 @@ When you send a message on a speech-enabled channel, you can attempt to influenc
 
 ## Sample code 
 
-For a complete sample that shows how to create a speech-enabled bot using the Bot Builder SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp" target="_blank">Roller Skill sample</a> in GitHub.
+For a complete sample that shows how to create a speech-enabled bot using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp" target="_blank">Roller Skill sample</a> in GitHub.
 
 ## Additional resources
 

@@ -1,6 +1,6 @@
 ---
 title: Add media to messages | Microsoft Docs
-description: Learn how to add media to messages using the Bot Builder SDK.
+description: Learn how to add media to messages using the Bot Framework SDK.
 keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
 author: ivorb
 ms.author: v-ivorb
@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/25/2018
+ms.date: 12/17/2018
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Builder SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards. 
+Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards. 
 
 ## Send attachments
 
@@ -24,8 +24,8 @@ To send the user content like an image or a video, you can add an attachment or 
 
 # [C#](#tab/csharp)
 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties. 
-The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, use the `Attachment` method to create an `Attachment` object for the `message` activity and set the`ContentType`, `ContentUrl`, and `Name` properties. The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
+The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `message` activity and set the `ContentType`, `ContentUrl`, and `Name` properties.
+The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
 
 ```csharp
 using Microsoft.Bot.Builder;
@@ -56,7 +56,9 @@ To send the user a single piece of content like an image or a video, you can sen
 
 ```javascript
 const { ActionTypes, ActivityTypes, CardFactory } = require('botbuilder');
+
 // Call function to get an attachment.
+const reply = { type: ActivityTypes.Message };
 reply.attachments = [this.getInternetAttachment()];
 reply.text = 'This is an internet attachment.';
 // Send the activity to the user.
@@ -126,30 +128,32 @@ const card = CardFactory.heroCard('', undefined,
 buttons, { text: 'You can upload an image or select one of the following choices.' });
 
 // add card to Activity.
+const reply = { type: ActivityTypes.Message };
 reply.attachments = [card];
 
 // Send hero card to the user.
 await turnContext.sendActivity(reply);
 ```
+
 ---
 
 ## Process events within rich cards
 
-To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card.
+To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card. Each card action has a _type_ and _value_.
 
-To function correctly, assign an action type to each clickable item on the card. This table lists the valid values for the type property of a card action object and describes the expected contents of the value property for each type.
+To function correctly, assign an action type to each clickable item on the card. This table lists and describes the available action types and what should be in the associated value property.
 
-| Type | Value |
-| :---- | :---- |
-| openUrl | URL to be opened in the built-in browser. Responds to Tap or Click by opening the URL. |
-| imBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). This message (from user to bot) will be visible to all conversation participants via the client application that is hosting the conversation. |
-| postBack | Text of the message to send to the bot (from the user who clicked the button or tapped the card). Some client applications may display this text in the message feed, where it will be visible to all conversation participants. |
-| call | Destination for a phone call in this format: `tel:123123123123` Responds to Tap or Click by initiating a call.|
-| playAudio | URL of audio to be played. Responds to Tap or Click by playing the audio. |
-| playVideo | URL of video to be played. Responds to Tap or Click by playing the video. |
-| showImage | URL of image to be displayed. Responds to Tap or Click by displaying the image. |
-| downloadFile | URL of file to be downloaded.  Responds to Tap or Click by downloading the file. |
-| signin | URL of OAuth flow to be initiated. Responds to Tap or Click by initiating signin. |
+| Type | Description | Value |
+| :---- | :---- | :---- |
+| openUrl | Opens a URL in the built-in browser. | The URL to open. |
+| imBack | Sends a message to the bot, and posts a visible response in the chat. | Text of the message to send. |
+| postBack | Sends a message to the bot, and may not post a visible response in the chat. | Text of the message to send. |
+| call | Initiates a phone call. | Destination for the phone call in this format: `tel:123123123123`. |
+| playAudio | Plays audio. | The URL of the audio to play. |
+| playVideo | Plays a video. | The URL of video to play. |
+| showImage | Displays an image. | The URL of the image to display. |
+| downloadFile | Downloads a file. | The URL of the file to download. |
+| signin | Initiates an OAuth signin process. | The URL of the OAuth flow to initiate. |
 
 ## Hero card using various event types
 
@@ -211,7 +215,7 @@ await context.sendActivity(hero);
 ## Send an Adaptive Card
 Adaptive Card and MessageFactory are used to send rich messages including texts, images, video, audio and files to communicate with users. However, there are some differences between them. 
 
-First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Builder SDK to automate creation steps for you, and supported by most channels. 
+First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Framework SDK to automate creation steps for you, and supported by most channels. 
 
 Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment. 
 

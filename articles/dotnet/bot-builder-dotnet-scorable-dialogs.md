@@ -1,6 +1,6 @@
 ---
 title: Global message handlers using scorables
-description: Create more flexible dialogs using scorables within the  Bot Builder SDK for .NET.
+description: Create more flexible dialogs using scorables within the  Bot Framework SDK for .NET.
 author: matthewshim-ms
 ms.author: v-shimma
 manager: kamrani

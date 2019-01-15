@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,15 +36,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MediaCard (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Connector.ThumbnailUrl image = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; media = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = null, Nullable&lt;bool&gt; shareable = null, Nullable&lt;bool&gt; autoloop = null, Nullable&lt;bool&gt; autostart = null, string aspect = null, object value = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Connector.ThumbnailUrl image, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MediaUrl&gt; media, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons, valuetype System.Nullable`1&lt;bool&gt; shareable, valuetype System.Nullable`1&lt;bool&gt; autoloop, valuetype System.Nullable`1&lt;bool&gt; autostart, string aspect, object value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As ThumbnailUrl = null, Optional media As IList(Of MediaUrl) = null, Optional buttons As IList(Of CardAction) = null, Optional shareable As Nullable(Of Boolean) = null, Optional autoloop As Nullable(Of Boolean) = null, Optional autostart As Nullable(Of Boolean) = null, Optional aspect As String = null, Optional value As Object = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.MediaCard : string * string * string * Microsoft.Bot.Connector.ThumbnailUrl * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * obj -&gt; Microsoft.Bot.Connector.MediaCard" Usage="new Microsoft.Bot.Connector.MediaCard (title, subtitle, text, image, media, buttons, shareable, autoloop, autostart, aspect, value)" />
+      <MemberSignature Language="C#" Value="public MediaCard (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Connector.ThumbnailUrl image = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; media = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = null, Nullable&lt;bool&gt; shareable = null, Nullable&lt;bool&gt; autoloop = null, Nullable&lt;bool&gt; autostart = null, string aspect = null, object value = null, string duration = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Connector.ThumbnailUrl image, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MediaUrl&gt; media, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons, valuetype System.Nullable`1&lt;bool&gt; shareable, valuetype System.Nullable`1&lt;bool&gt; autoloop, valuetype System.Nullable`1&lt;bool&gt; autostart, string aspect, object value, string duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As ThumbnailUrl = null, Optional media As IList(Of MediaUrl) = null, Optional buttons As IList(Of CardAction) = null, Optional shareable As Nullable(Of Boolean) = null, Optional autoloop As Nullable(Of Boolean) = null, Optional autostart As Nullable(Of Boolean) = null, Optional aspect As String = null, Optional value As Object = null, Optional duration As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.MediaCard : string * string * string * Microsoft.Bot.Connector.ThumbnailUrl * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * obj * string -&gt; Microsoft.Bot.Connector.MediaCard" Usage="new Microsoft.Bot.Connector.MediaCard (title, subtitle, text, image, media, buttons, shareable, autoloop, autostart, aspect, value, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -56,6 +58,7 @@
         <Parameter Name="autostart" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="aspect" Type="System.String" />
         <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="duration" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="title">To be added.</param>
@@ -69,6 +72,7 @@
         <param name="autostart">To be added.</param>
         <param name="aspect">To be added.</param>
         <param name="value">To be added.</param>
+        <param name="duration">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -108,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -133,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -158,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -166,6 +174,31 @@
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public string Duration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Duration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.MediaCard.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As String" />
+      <MemberSignature Language="F#" Value="member this.Duration : string with get, set" Usage="Microsoft.Bot.Connector.MediaCard.Duration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="duration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -183,6 +216,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -208,6 +242,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -233,6 +268,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -258,6 +294,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -283,6 +320,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -308,6 +346,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -333,6 +372,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -353,6 +393,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
+        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">

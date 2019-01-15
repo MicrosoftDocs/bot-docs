@@ -25,7 +25,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 For details about troubleshooting authentication issues with your bot, see [troubleshooting][TroubleshootingAuth] Bot Framework authentication.
 
-## I'm using the Bot Builder SDK for .NET. How can I troubleshoot issues with my bot?
+## I'm using the Bot Framework SDK for .NET. How can I troubleshoot issues with my bot?
 
 **Look for exceptions.**  
 In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**. You may also see diagnostics output in your Output window when there are thrown or unhandled exceptions.
@@ -76,7 +76,7 @@ The Bot Framework will preserve message ordering as much as possible. For exampl
 
 ## How can I intercept all messages between the user and my bot?
 
-Using the Bot Builder SDK for .NET, you can provide implementations of the `IPostToBot` and `IBotToUser` interfaces to the `Autofac` dependency injection container. Using the Bot Builder SDK for any language, you can use middleware for much the same purpose. The [BotBuilder-Azure](https://github.com/Microsoft/BotBuilder-Azure) repository contains C# and Node.js libraries that will log this data to an Azure table.
+Using the Bot Framework SDK for .NET, you can provide implementations of the `IPostToBot` and `IBotToUser` interfaces to the `Autofac` dependency injection container. Using the Bot Framework SDK for any language, you can use middleware for much the same purpose. The [BotBuilder-Azure](https://github.com/Microsoft/BotBuilder-Azure) repository contains C# and Node.js libraries that will log this data to an Azure table.
 
 ## Why are parts of my message text being dropped?
 
@@ -128,7 +128,7 @@ Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot b
 
 ::: moniker range="azure-bot-service-3.0"
 
-## What is the IDialogStack.Forward method in the Bot Builder SDK for .NET?
+## What is the IDialogStack.Forward method in the Bot Framework SDK for .NET?
 
 The primary purpose of `IDialogStack.Forward` is to reuse an existing child dialog that is often "reactive", where the child dialog (in `IDialog.StartAsync`) waits for an object `T` with some `ResumeAfter` handler. In particular, if you have a child dialog that waits for an `IMessageActivity` `T`, you can forward the incoming `IMessageActivity` (already received by some parent dialog) by using the `IDialogStack.Forward` method. For example, to forward an incoming `IMessageActivity` to a `LuisDialog`, call `IDialogStack.Forward` to push the `LuisDialog` onto the dialog stack, run the code in `LuisDialog.StartAsync` until it schedules a wait for the next message, and then immediately satisfy that wait with the forwarded `IMessageActivity`.
 
@@ -162,7 +162,7 @@ There are multiple options:
 
 Data in the user, conversation, and private conversation property bags is stored using the Connector's `IBotState` interface. Each property bag is scoped by the bot's ID. The user property bag is keyed by user ID, the conversation property bag is keyed by conversation ID, and the private conversation property bag is keyed by both user ID and conversation ID. 
 
-If you use the Bot Builder SDK for .NET or the Bot Builder SDK for Node.js to build your bot, the dialog stack and dialog data will both automatically be stored as entries in the private conversation property bag. The C# implementation uses binary serialization, and the Node.js implementation uses JSON serialization.
+If you use the Bot Framework SDK for .NET or the Bot Framework SDK for Node.js to build your bot, the dialog stack and dialog data will both automatically be stored as entries in the private conversation property bag. The C# implementation uses binary serialization, and the Node.js implementation uses JSON serialization.
 
 The `IBotState` REST interface is implemented by two services.
 
@@ -189,8 +189,8 @@ The dialog stack and state are stored in bot data bags. For example, you might s
 
 The Connector's `IBotState` service is used to store the bot data bags (i.e., the user, conversation, and private bot data bags, where the private bot data bag includes the dialog stack "control flow" state). Concurrency control in the `IBotState` service is managed by optimistic concurrency via ETags. If there is an update conflict (due to a concurrent update to a single bot data bag) during a "read-modify-write" sequence, then:
 
-* If ETags are preserved, an error with HTTP status code 412 "Precondition Failed" is thrown from the `IBotState` service. This is the default behavior in the Bot Builder SDK for .NET.
-* If ETags are not preserved (i.e., ETag is set to `\*`), then the "last write wins" policy will be in effect, which prevents the "Precondition Failed" error but risks data loss. This is the default behavior in the Bot Builder SDK for Node.js.
+* If ETags are preserved, an error with HTTP status code 412 "Precondition Failed" is thrown from the `IBotState` service. This is the default behavior in the Bot Framework SDK for .NET.
+* If ETags are not preserved (i.e., ETag is set to `\*`), then the "last write wins" policy will be in effect, which prevents the "Precondition Failed" error but risks data loss. This is the default behavior in the Bot Framework SDK for Node.js.
 
 ## How can I fix "Precondition Failed" (412) or "Conflict" (409) errors?
 
@@ -199,7 +199,7 @@ you should consider locking the conversation state to make sure messages are not
 
 ::: moniker range="azure-bot-service-3.0"
 
-The Bot Builder SDK for .NET provides a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
+The Bot Framework SDK for .NET provides a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
 pessimistically serialize the handling of a single conversations with an in-memory semaphore. You could extend this implementation to use a Redis lease, scoped by the conversation address.
 
 If your bot is not connected to external services or if processing messages in parallel from the same conversation is acceptable, you can add this code to ignore any collisions that occur in the Bot State API. This will allow the last reply to set the conversation state.
@@ -229,7 +229,7 @@ Yes, each state store (i.e., user, conversation, and private bot data bag) may c
 The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data. 
 
 * If you want to manually reset the conversation's dialog stack and state during development of your bot, you can use the ` /deleteprofile` command to delete state data. Make sure to include the leading space in this command, to prevent the channel from interpreting it.
-* After your bot has been deployed to production, you can version your bot data so that if you bump the version, the associated state data is cleared. With the Bot Builder SDK for Node.js, this can be accomplished using middleware and with the Bot Builder SDK for .NET, this can be accomplished using an `IPostToBot` implementation.
+* After your bot has been deployed to production, you can version your bot data so that if you bump the version, the associated state data is cleared. With the Bot Framework SDK for Node.js, this can be accomplished using middleware and with the Bot Framework SDK for .NET, this can be accomplished using an `IPostToBot` implementation.
 
 > [!NOTE]
 > If the dialog stack cannot be deserialized correctly, due to serialization format changes or because the code has changed too much, the conversation state will be reset.
@@ -246,11 +246,11 @@ You might consider splitting up your model and calling the LUIS service in serie
 
 ## How can I use more than one LUIS model?
 
-Both the Bot Builder SDK for Node.js and the Bot Builder SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
+Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
 
 * Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
 * Using multiple LUIS models assumes the scores from different models are comparable, to select the "best matched intent" across multiple models.
-* Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models. You can avoid selecting the "none" intent in this situation; the Bot Builder SDK for Node.js will automatically scale down the score for "none" intents to avoid this issue.
+* Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models. You can avoid selecting the "none" intent in this situation; the Bot Framework SDK for Node.js will automatically scale down the score for "none" intents to avoid this issue.
 
 ## Where can I get more help on LUIS?
 
@@ -304,7 +304,7 @@ If you are having issues migrating your bot, it might be because the bot belongs
 ## Where can I get more help?
 
 * Leverage the information in previously answered questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework), or post your own questions using the `botframework` tag. Please note that Stack Overflow has guidelines such as requiring a descriptive title, a complete and concise problem statement, and sufficient details to reproduce your issue. Feature requests or overly broad questions are off-topic; new users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) for more details.
-* Consult [BotBuilder issues](https://github.com/Microsoft/BotBuilder/issues) in GitHub for information about known issues with the Bot Builder SDK, or to report a new issue.
+* Consult [BotBuilder issues](https://github.com/Microsoft/BotBuilder/issues) in GitHub for information about known issues with the Bot Framework SDK, or to report a new issue.
 * Leverage the information in the BotBuilder community discussion on [Gitter](https://gitter.im/Microsoft/BotBuilder).
 
 

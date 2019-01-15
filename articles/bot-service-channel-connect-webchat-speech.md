@@ -61,7 +61,7 @@ To enable the speech functionality in Web Chat, you need to customize the JavaSc
 The customization allows you to add speech functionality in any of the following ways:
 
 * **Browser-provided speech** - Use speech functionality built into the web browser. At this time, this functionality is only available on the Chrome browser.
-* **Use Bing Speech service** - You can use the Bing Speech service to provide speech recognition and synthesis. This way of access speech functionality is supported by a variety of browsers. In this case, the processing is done on a server instead of on the browser.
+<!--* **Use Bing Speech service** - You can use the Bing Speech service to provide speech recognition and synthesis. This way of access speech functionality is supported by a variety of browsers. In this case, the processing is done on a server instead of on the browser.-->
 * **Create a custom speech service** - You can create your own custom speech recognition and voice synthesis components.
 
 ### Browser-provided speech
@@ -75,7 +75,7 @@ The following code instantiates speech recognizer and speech synthesis component
 
 [!code-js[Specify speech options to use in-browser speech (JavaScript)](./includes/code/bot-service-channel-connect-webchat-speech.js#BrowserSpeech)]
 
-### Bing Speech service
+<!--### Bing Speech service
 
 The following code instantiates speech recognizer and speech synthesis components that use the Bing Speech service. The recognition and generation of speech is performed on the server. This mechanism is supported in multiple browsers. 
 
@@ -91,7 +91,7 @@ You also have the option to enable Cognitive Services speech recognition using a
 The following example code shows how the token fetch is done from a secure back end to avoid exposing the API key.
 
 [!code-js[Fetch a token to use with the Bing Speech API (JavaScript)](./includes/code/bot-service-channel-connect-webchat-speech.js#FetchToken)]
-
+-->
 ### Custom Speech service
 
 You can also provide your own custom speech recognition that implements ISpeechRecognizer or speech synthesis that implements ISpeechSynthesis. 

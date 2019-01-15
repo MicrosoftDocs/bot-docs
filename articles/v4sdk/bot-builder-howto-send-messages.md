@@ -1,6 +1,6 @@
 ---
 title: Send and receive text message | Microsoft Docs
-description: Learn about how to send and receive text messages within the Bot Builder SDK.
+description: Learn about how to send and receive text messages within the Bot Framework SDK.
 keywords: sending message, message activities, simple text message, message, text message, receive message  
 author: ivorb
 ms.author: v-ivorb

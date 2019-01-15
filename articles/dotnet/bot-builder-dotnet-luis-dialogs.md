@@ -1,6 +1,6 @@
 ---
 title: Recognize intents and entities with LUIS  | Microsoft Docs
-description: Learn how to enable your bot to understand natural language by using LUIS dialogs in the Bot Builder SDK for .NET.
+description: Learn how to enable your bot to understand natural language by using LUIS dialogs in the Bot Framework SDK for .NET.
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani
@@ -384,7 +384,7 @@ From trying the bot, you can see how tasks are invoked by a LUIS intent. However
 - [Dialogs](bot-builder-dotnet-dialogs.md)
 - [Manage conversation flow with dialogs](bot-builder-dotnet-manage-conversation-flow.md)
 - <a href="https://www.luis.ai" target="_blank">LUIS</a>
-- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Builder SDK for .NET Reference</a>
+- <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
 
 [LUIS]: https://www.luis.ai/
 [NotesSample]: https://github.com/Microsoft/BotFramework-Samples/tree/master/docs-samples/CSharp/Simple-LUIS-Notes-Sample
