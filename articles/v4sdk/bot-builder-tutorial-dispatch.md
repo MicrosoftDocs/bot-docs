@@ -494,7 +494,10 @@ Once your bot is running, it is possible to improve the bot's performance by rem
 
 Either of the above two actions will reduce the number of times that your bot responds back to your users with the message, 'Couldn't find an answer.' 
 
-## Additional resources 
+## Additional resources
+
+**Update or create a new LUIS model:** This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](https://aka.ms/create-luis-model#updating-your-cognitive-models
+).
 
 **Delete resources:** This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that *any other apps or services* rely on. 
 
