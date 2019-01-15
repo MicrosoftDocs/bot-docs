@@ -42,7 +42,7 @@ To create your bot and initialize its packages
 1. If you don't already have a directory for your JavaScript bots, create one and change directories to it. (We're creating a directory for your JavaScript bots in general, even though we're only creating one bot in this tutorial.)
 
    ```bash
-   md myJsBots
+   mkdir myJsBots
    cd myJsBots
    ```
 

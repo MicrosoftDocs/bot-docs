@@ -98,7 +98,6 @@ Each [Activity][Activity] object contains properties that you will use to manage
 > [!NOTE]
 > You may use these property values as keys even if you opt to store state data in your own database, rather than using the Bot Framework state data store.
 
-
 ## Handle concurrency issues
 
 Your bot may receive an error response with HTTP status code **412 Precondition Failed** 
