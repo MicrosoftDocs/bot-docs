@@ -212,12 +212,12 @@ To use Cosmos DB in your bot, you'll need to get a few things set up before gett
 The account creation takes a few minutes. Wait for the portal to display the Congratulations! Your Azure Cosmos DB account was created page.
 
 ##### Add a collection
-1. Click **Settings > New Collection**. The **Add Collection** area is displayed on the far right, you may need to scroll right to see it.
+1. Click **Settings > New Collection**. The **Add Collection** area is displayed on the far right, you may need to scroll right to see it. Due to recent updates to Cosmos DB, be sure to add a single Partition key: _/id_. This key will avoid cross partition query errors.
 
 ![Add Cosmos DB collection](./media/add_database_collection.png)
 
 2. Your new database collection, "bot-cosmos-sql-db" with a collection id of "bot-storage." We will use these values in our coding example that follows below.
-
+ -
 ![Cosmos DB](./media/cosmos-db-sql-database.png)
 
 3. The endpoint URI and key are available within the **Keys** tab of your database settings. These values will be needed to configure your code further down in this article. 
