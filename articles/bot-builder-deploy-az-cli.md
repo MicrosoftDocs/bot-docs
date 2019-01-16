@@ -23,6 +23,7 @@ In this article, we'll show you how to deploy C# and JavaScript bots to Azure us
 
 [!INCLUDE [prerequisite snippet](~/includes/deploy/snippet-prerequisite.md)]
 
+
 ## Deploy JavaScript and C# bots using az cli
 
 You've already created and tested a bot locally, and now you want to deploy it to Azure. These steps assume that you have created the required Azure resources.
