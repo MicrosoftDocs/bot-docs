@@ -132,11 +132,11 @@ private async Task NameDialogResumeAfter(IDialogContext context, IAwaitable<stri
 
 ## Sample code 
 
-For a complete sample that shows how to manage a conversation by using dialogs in the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample</a> in GitHub.
+For a complete sample that shows how to manage a conversation by using dialogs in the Bot Framework SDK for .NET, see the [Basic Multi-Dialog sample](https://aka.ms/v3cs-MultiDialog-Sample) in GitHub.
 
 ## Additional resources
 
 - [Dialogs](bot-builder-dotnet-dialogs.md)
 - [Design and control conversation flow](../bot-service-design-conversation-flow.md)
-- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-BasicMultiDialog" target="_blank">Basic Multi-Dialog sample (GitHub)</a>
+- [Basic Multi-Dialog sample (GitHub)](https://aka.ms/v3cs-MultiDialog-Sample)
 - <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
