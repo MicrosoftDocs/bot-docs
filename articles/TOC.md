@@ -7,7 +7,8 @@
 ### [.NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ### [JavaScript](javascript/bot-builder-javascript-quickstart.md)
 # Tutorials
-## [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
+## [Create and deploy a basic bot](v4sdk/bot-builder-tutorial-basic-deploy.md)
+## [Add QnA Maker and redeploy a bot](v4sdk/bot-builder-tutorial-add-qna.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
 ## [botbuilder-samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
@@ -41,6 +42,7 @@
 ### [Get notification from bots](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
+### [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
 ### Manage conversations using the Dialogs library 
 #### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 #### [Gather user input using a dialog prompt](v4sdk/bot-builder-prompts.md)

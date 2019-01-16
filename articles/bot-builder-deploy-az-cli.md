@@ -21,61 +21,21 @@ In this article, we'll show you how to deploy C# and JavaScript bots to Azure us
 
 ## Prerequisites
 
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
-- Install the latest version of the [Azure cli tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
-- Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
-- Install latest released version of the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
-- Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
-- Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
-
-With msbot 4.3.2 and later, you need Azure CLI version 2.0.54 or later. If you installed the botservice extension, remove it with this command.
-
-```cmd
-az extension remove --name botservice
-```
+[!INCLUDE [prerequisite snippet](~/includes/deploy/snippet-prerequisite.md)]
 
 ## Deploy JavaScript and C# bots using az cli
 
 You've already created and tested a bot locally, and now you want to deploy it to Azure. These steps assume that you have created the required Azure resources.
 
-Open a command prompt to log in to the Azure portal.
-
-```cmd
-az login
-```
-
-A browser window will open, allowing you to sign in.
-
-### Set the subscription
-
-Set the default subscription to use.
-
-```cmd
-az account set --subscription "<azure-subscription>"
-```
-
-If you are not sure which subscription to use for deploying the bot, you can view the list of `subscriptions` for your account by using `az account list` command.
-
-Navigate to the bot folder.
-
-```cmd
-cd <local-bot-folder>
-```
+[!INCLUDE [az login snippet](~/includes/deploy/snippet-az-login.md)]
 
 ### Create a Web App Bot
 
 If you don't already have a resource group to which to publish your bot, create one:
 
-```cmd
-az group create --name <resource-group-name> --location <geographic-location> --verbose
-```
+[!INCLUDE [az create group snippet](~/includes/deploy/snippet-az-create-group.md)]
 
-| Option | Description |
-|:---|:---|
-| --name | A unique name for the resource group. DO NOT include spaces or underscores in the name. |
-| --location | Geographic location used to create the resource group. For example, `eastus`, `westus`, `westus2`, and so on. Use `az account list-locations` for a list of locations. |
-
-Then, create the bot resource into which you will publish your bot.
+[!INCLUDE [az create web app snippet](~/includes/deploy/snippet-create-web-app.md)]
 
 Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
 
@@ -83,88 +43,22 @@ Before proceeding, read the instructions that apply to you based on the type of 
 
 If you are using an [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the app ID and app password on the Application Registration Portal to use with `az bot create` command.
 
-1. Go to the [**Application Registration Portal**](https://apps.dev.microsoft.com/).
-1. Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.
-1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.  
-
-```cmd
-az bot create --kind webapp --name <bot-resource-name> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name> --appid "<application-id>" --password "<application-password>" --verbose
-```
-
-| Option | Description |
-|:---|:---|
-| --name | A unique name that is used to deploy the bot in Azure. It could be the same name as your local bot. DO NOT include spaces or underscores in the name. |
-| --location | Geographic location used to create the bot service resources. For example, `eastus`, `westus`, `westus2`, and so on. |
-| --lang | The language to use to create the bot: `Csharp`, or `Node`; default is `Csharp`. |
-| --resource-group | Name of resource group in which to create the bot. You can configure the default group using `az configure --defaults group=<name>`. |
-| --appid | The Microsoft account ID (MSA ID) to be used with the bot. |
-| --password | The Microsoft account (MSA) password for the bot. |
+[!INCLUDE [create bot msa snippet](~/includes/deploy/snippet-create-bot-msa.md)]
 
 #### Business or school account
 
-```cmd
-az bot create --kind webapp --name <bot-resource-name> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name>
-```
-
-| Option | Description |
-|:---|:---|
-| --name | A unique name that is used to deploy the bot in Azure. It could be the same name as your local bot. DO NOT include spaces or underscores in the name. |
-| --location | Geographic location used to create the bot service resources. For example, `eastus`, `westus`, `westus2`, and so on. |
-| --lang | The language to use to create the bot: `Csharp`, or `Node`; default is `Csharp`. |
-| --resource-group | Name of resource group in which to create the bot. You can configure the default group using `az configure --defaults group=<name>`. |
+[!INCLUDE [create bot snippet](~/includes/deploy/snippet-create-bot.md)]
 
 ### Download the bot from Azure
 
-Next, download the bot you just created. This command will create a subdirectory under the save-path; however, the specified path must already exist.
+Next, download the bot you just created. 
+[!INCLUDE [download bot snippet](~/includes/deploy/snippet-download-bot.md)]
 
-```cmd
-az bot download --name <bot-resource-name> --resource-group <resource-group-name> --save-path "<path>"
-```
-
-| Option | Description |
-|:---|:---|
-| --name | The name of the bot in Azure. |
-| --resource-group | Name of resource group the bot is in. |
-| --save-path | An existing directory to download bot code to. |
-
-### Decrypt the downloaded .bot file
+### Decrypt the downloaded .bot file and use in your project
 
 The sensitive information in the .bot file is encrypted.
 
-Get the encryption key.
-
-1. Log into the [Azure portal](http://portal.azure.com/).
-1. Open the Web App Bot resource for your bot.
-1. Open the bot's **Application Settings**.
-1. In the **Application Settings** window, scroll down to the **Application settings**.
-1. Locate the **botFileSecret** and copy its value.
-
-Decrypt the .bot file.
-
-```cmd
-msbot secret --bot <name-of-bot-file> --secret "<bot-file-secret>" --clear
-```
-
-| Option | Description |
-|:---|:---|
-| --bot | The relative path to the downloaded .bot file. |
-| --secret | The encryption key. |
-
-### Use the downloaded .bot file in your project
-
-Copy the decrypted .bot file to the directory that contains your local bot project.
-
-Update your bot to use this new .bot file.
-
-# [C#](#tab/csharp)
-
-In **appsettings.json**, update the **botFilePath** property to point to the new .bot file.
-
-# [JavaScript](#tab/javascript)
-
-In **.env**, update the **botFilePath** property to point to the new .bot file.
-
----
+[!INCLUDE [decrypt bot snippet](~/includes/deploy/snippet-decrypt-bot.md)]
 
 ### Update the .bot file
 
@@ -193,46 +87,15 @@ At this point, your bot should work the same way it did with the old .bot file. 
 
 <!-- TODO: re-encrypt your .bot file? -->
 
-Publish your local bot to Azure. This step might take a while.
-
-```cmd
-az bot publish --name <bot-resource-name> --proj-name "<project-file-name>" --resource-group <resource-group-name> --code-dir <directory-path> --verbose --version v4
-```
-
-| Option | Description |
-|:---|:---|
-| --name | The resource name of the bot in Azure. |
-| --proj-name | For C#, use the startup project file name (without the .csproj) that needs to be published. For example: `EnterpriseBot`. For Node.js, use the main entry point for the bot. For example, `index.js`. |
-| --resource-group | Name of resource group. |
-| --code-dir | The directory to upload bot code from. |
-
-Once this completes with a "Deployment successful!" message, your bot is deployed in Azure.
+[!INCLUDE [publish snippet](~/includes/deploy/snippet-publish.md)]
 
 <!-- TODO: If we tell them to re-encrypt, this step is not necessary. -->
 
-Clear the encryption key setting.
-
-1. Log into the [Azure portal](http://portal.azure.com/).
-1. Open the Web App Bot resource for your bot.
-1. Open the bot's **Application Settings**.
-1. In the **Application Settings** window, scroll down to the **Application settings**.
-1. Locate the **botFileSecret** and delete it.
+[!INCLUDE [clear encryption snippet](~/includes/deploy/snippet-clear-encryption.md)]
 
 ## Additional resources
 
-When you deploy a bot, typically these resources are created in the Azure portal:
-
-| Resources      | Description |
-|----------------|-------------|
-| Web App Bot | An Azure Bot Service bot that is deployed to an Azure App Service.|
-| [App Service](https://docs.microsoft.com/en-us/azure/app-service/)| Enables you to build and host web applications.|
-| [App Service plan](https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
-| [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)| Provides tools for collecting and analyzing telemetry.|
-| [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
-
-To see documentation on `az bot` commands, see the [reference](https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest) topic.
-
-If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology) topic.
+[!INCLUDE [additional resources snippet](~/includes/deploy/snippet-additional-resources.md)]
 
 ## Next steps
 > [!div class="nextstepaction"]

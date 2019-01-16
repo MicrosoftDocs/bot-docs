@@ -8,7 +8,7 @@ ms.topic: landing-page
 layout: LandingPage
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/27/2018
+ms.date: 01/16/2019
 ---
 ::: moniker range="azure-bot-service-3.0"
 
@@ -95,8 +95,8 @@ ms.date: 09/27/2018
 </div>
 
 <h2 style="margin-top: 36px">Step-by-Step Tutorials</h2>
-<p><a href="/bot-framework/bot-builder-tutorial-dispatch">Integrate LUIS apps and QnA services with the Dispatch tool</a></p>
-
+<p><a href="/bot-framework/bot-builder-tutorial-basic-deploy">Create and deploy a basic bot</a></p>
+<p><a href="/bot-framework/bot-builder-tutorial-add-qna">Add QnA Maker and redeploy a bot</a></p>
 <h2 style="margin-top: 36px">Reference</h2>
 <ul class="panelContent cardsD">
     <li>
