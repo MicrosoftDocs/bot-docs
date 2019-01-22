@@ -13,6 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 templateName: "Echo Bot"
 ---
 
+
 # Create a bot with the Bot Framework SDK for .NET
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
