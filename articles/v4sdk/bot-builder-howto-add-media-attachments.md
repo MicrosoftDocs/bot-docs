@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/17/2018
+ms.date: 01/16/2019
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards. 
+Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards.
 
 ## Send attachments
 
@@ -79,11 +79,11 @@ If an attachment is an image, audio, or video, the Connector service will commun
 
 ## Send a hero card
 
-Besides simple image or video attachments, you can attach a **hero card**, which allows you to combine images and buttons in one object, and send them to the user.
+Besides simple image or video attachments, you can attach a **hero card**, which allows you to combine images and buttons in one object, and send them to the user. Markdown is supported for most text fields, but support may vary by channel.
 
 # [C#](#tab/csharp)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample. 
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message. The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample.
 
 ```csharp
 using Microsoft.Bot.Builder;
@@ -358,7 +358,7 @@ await context.sendActivity(messageWithCarouselOfCards);
 
 ## Additional resources
 
-For detailed information on the card schema, see the [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema).
+For detailed information on the schema, see the [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema) and the [message activity section](https://aka.ms/botSpecs-activitySchema#message-activity) of the Bot Framework Activity schema.
 
 Sample code can be found here for
 cards: [C#](https://aka.ms/bot-cards-sample-code)/[JS](https://aka.ms/bot-cards-js-sample-code),

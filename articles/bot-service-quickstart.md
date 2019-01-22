@@ -8,11 +8,12 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 01/08/2019
+ms.date: 01/17/2019
 ---
-::: moniker range="azure-bot-service-3.0"
 
 # Create a bot with Azure Bot Service
+
+::: moniker range="azure-bot-service-3.0"
 
 [!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 
@@ -73,13 +74,14 @@ In this topic, you learned how to create a **Basic** Web App Bot/Functions Bot b
 
 ::: moniker range="azure-bot-service-4.0"
 
-# Create a bot with Azure Bot Service
-
 [!INCLUDE [pre-release-label](includes/pre-release-label.md)]
 
 Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Framework SDK v4.
 
+[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
+
 ## Prerequisites
+
 - [Azure](http://portal.azure.com) account
 
 ### Create a new bot service
