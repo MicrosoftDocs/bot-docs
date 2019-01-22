@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/08/2018
+ms.date: 01/16/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -225,6 +225,14 @@ const myBot = new MyBot(conversationState, userState);
 ```
 
 ---
+
+## About component dialogs
+
+With a component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog set that contains it.
+
+Use the _add dialog_ method to add dialogs and prompts to the component dialog.
+The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the _initial dialog_ property in the component dialog's constructor.
+When you start a component dialog, it will start its _initial dialog_.
 
 ## Define the check-in component dialog
 
@@ -599,9 +607,9 @@ class SetAlarmDialog extends ComponentDialog {
         this.initialDialogId = dialogId;
 
         // Define the prompts used in this conversation flow.
-        this.dialogs.add(new DateTimePrompt('datePrompt'));
+        this.addDialog(new DateTimePrompt('datePrompt'));
 
-        this.dialogs.add(new WaterfallDialog(dialogId, [
+        this.addDialog(new WaterfallDialog(dialogId, [
             async function (step) {
                 step.values.wakeUp = {};
                 if (step.options && step.options.roomNumber) {

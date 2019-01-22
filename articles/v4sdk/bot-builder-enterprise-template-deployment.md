@@ -76,8 +76,10 @@ Your new Bot project has a deployment recipe enabling the `msbot clone services`
 
 The README.md within your created project contains an example `msbot clone services` command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope). Ensure the LUIS authoring key retrieved on the previous step is for the region you specify below (e.g. westus for luis.ai or westeurope for eu.luis.ai). Finally, reference the folder of the language you want to use (e.g. `DeploymentScripts\en`).
 
+> **Note** In the msbot command below, YOUR-BOT-NAME is used to create an Azure Service Name. Allowable characters for Azure Service Names are lowercase letters, numbers, and dashes ("-"). Do not include underscores (“_”) and other non-alphabetic characters as part of YOUR-BOT-NAME.
+
 ```shell
-msbot clone services --name "YOUR_BOT_NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\LOCALE_FOLDER" --location "REGION"
+msbot clone services --name "YOUR-BOT-NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\LOCALE_FOLDER" --location "REGION"
 ```
 
 > There is a known issue with some users whereby you might experience the following error when running deployment `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`. In this situation, please browse to https://apps.dev.microsoft.com and manually create a new application retrieving the ApplicationID and Password/Secret. Run the above msbot clone services command but provide two new arguments `appId` and `appSecret` passing the values you've just retrieved. Ensure you wrap the secret with quotes to prevent parsing issues, e.g: `-appSecret "YOUR_SECRET"`
@@ -114,7 +116,7 @@ If there is any issues with the Bot Framework Emulator, first ensure you have th
 Testing can be performed end to end locally. When your ready to deploy your Bot to Azure for additional testing you can use the following command to publish the source code, this can be run whenever you wish to push source code updates.
 
 ```shell
-az bot publish -g YOUR_BOT_NAME -n YOUR_BOT_NAME --proj-file YOUR_BOT_NAME.csproj --sdk-version v4
+az bot publish -g YOUR-BOT-NAME -n YOUR-BOT-NAME --proj-file YOUR-BOT-NAME.csproj --sdk-version v4
 ```
 
 ## Enabling more scenarios

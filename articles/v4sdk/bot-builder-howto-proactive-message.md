@@ -33,7 +33,8 @@ An ad hoc proactive message is the simplest type of proactive message. The bot s
 To handle notifications more smoothly, consider other ways to integrate the notification into the conversation flow, such as setting a flag in the conversation state or adding the notification to a queue.
 
 ## Prerequisites
-- Understand [bot basics](bot-builder-basics.md). 
+
+- Understand [bot basics](bot-builder-basics.md) and about [managing state](bot-builder-concept-state.md).
 - A copy of the **Proactive messages sample** in either [C#](https://aka.ms/proactive-sample-cs) or [JS](https://aka.ms/proactive-sample-js). This sample is used to explain proactive messaging in this article. 
 
 ## About the sample code
@@ -43,9 +44,12 @@ The Proactive messages sample models user tasks that can take an indeterminate a
 ## Define job data and state
 
 In this scenario, we're tracking arbitrary jobs that can be created by various users in different conversations. We'll need to store information about each job, including the conversation reference and a job identifier. We'll need:
+
 - The conversation reference so we can send the proactive message to the right conversation.
 - A way to identify jobs. For this example, we use a simple timestamp.
 - To store job state independent of conversation or user state.
+
+We'll extend _bot state_ to define our own, bot-wide state management object. The bot framework uses the _storage key_ and the turn context to persist and retrieve state. See [managing state](bot-builder-concept-state.md) for more information.
 
 # [C#](#tab/csharp)
 
@@ -53,8 +57,7 @@ We need to define classes for job data and job state. We also need to register o
 
 ### Define a class for job data
 
-The `JobLog` class tracks job data, indexed by job number (the time-stamp). The `JobLog` class tracks all the outstanding jobs.  Each job is identified by a unique key. `JobData` describes 
-the state of a job and is defined as an inner class of a dictionary.
+The `JobLog` class tracks job data, indexed by job number (the time-stamp). The `JobLog` class tracks all the outstanding jobs.  Each job is identified by a unique key. `JobData` describes the state of a job and is defined as an inner class of a dictionary.
 
 ```csharp
 public class JobLog : Dictionary<long, JobLog.JobData>
@@ -73,9 +76,9 @@ public class JobLog : Dictionary<long, JobLog.JobData>
 }
 ```
 
-### Define a state middleware class
+### Define a state management class
 
-The `JobState` class manages the job state, independent of conversation or user state.
+The `JobState` class will manage the job state, independent of conversation or user state.
 
 ```csharp
 using Microsoft.Bot.Builder;
@@ -125,11 +128,10 @@ public void ConfigureServices(IServiceCollection services)
 
 # [JavaScript](#tab/javascript)
 
-A bot requires a state storage system to persist the dialog and user state between messages, which in this case is defined using in-memory storage provider. 
+A bot requires a state storage system to persist the dialog and user state between messages, which in this case is defined using in-memory storage provider.
 
 ```javascript
-// index.js 
-
+// index.js
 
 const memoryStorage = new MemoryStorage();
 const botState = new BotState(memoryStorage, () => 'proactiveBot.botState');
@@ -170,11 +172,7 @@ The bot has a few aspects:
 
 ### Declare the class
 
-Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. 
-Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
-
-Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. 
-Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
+Each interaction from the user creates an instance of the `ProactiveBot` class. The process of creating a service each time they are needed is called transient lifetime service. Objects that are expensive to construct, or have a lifetime beyond the single turn, should be carefully managed.
 
 ```csharp
 namespace Microsoft.BotBuilderSamples

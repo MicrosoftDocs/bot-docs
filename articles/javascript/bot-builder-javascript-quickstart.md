@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/30/2018
+ms.date: 01/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,6 +17,8 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
 This quickstart walks you through building a single bot by using the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript, and then testing it with the Bot Framework Emulator.
+
+[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
 
 [!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
 

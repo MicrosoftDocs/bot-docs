@@ -142,13 +142,13 @@ public void ConfigureServices(IServiceCollection services)
         }
 
         options.CredentialProvider = new SimpleCredentialProvider(endpointService.AppId, endpointService.AppPassword);
-        
+
         // ...
     });
 }
 ```
 
-Next, in the `Luis.cs` file, the bot gets this LUIS instance.
+Next, in the `LuisBot.cs` file, the bot gets this LUIS instance.
 
 ```csharp
 public class LuisBot : IBot
