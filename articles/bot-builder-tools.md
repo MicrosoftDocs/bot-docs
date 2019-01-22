@@ -58,6 +58,7 @@ Here's a form for you
 ```
 
 ### Create a transcript file from .chat file
+
 A Chatdown command looks like the following:
 
 ```bash
@@ -67,13 +68,15 @@ chatdown sample.chat > sample.transcript
 This will consume `sample.chat` and output `sample.transcript`. See [Chatdown CLI][chatdown] for more information.
 
 ## Build
+
 ### Create a LUIS application with LUDown
+
 The LUDown tool can be used to create new .json models for both LUIS and QnA.  
 You can define [intents](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-intents) and [entities](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-entities) for a LUIS application just like you would from the LUIS portal.
 
 '#\<intent-name\>' describes a new intent definition section. Each line afterwards lists the [utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-example-utterances) which describe that intent.
 
-For example, you can create multiple LUIS intents in a single .lu file as follows: 
+For example, you can create multiple LUIS intents in a single .lu file as follows:
 
 ```LUDown
 # Greeting
@@ -90,12 +93,12 @@ For example, you can create multiple LUIS intents in a single .lu file as follow
 
 ### Create QnA pairs with LUDown
 
-The .lu file format supports also QnA pairs using the following notation: 
+The .lu file format supports also QnA pairs using the following notation:
 
 ~~~LUDown
 > comment
 ### ? question ?
-  ```markdown
+  ```
     answer
   ```
 ~~~
@@ -104,7 +107,7 @@ The LUDown tool will automatically separate question and answers into a qnamaker
 
 ~~~LUDown
 ### ? How do I change the default message for QnA Maker?
-  ```markdown
+  ```
   You can change the default message if you use the QnAMakerDialog. 
   See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
   ```
@@ -115,14 +118,14 @@ You can also add multiple questions to the same answer by simply adding new line
 ~~~LUDown
 ### ? What is your name?
 - What should I call you?
-  ```markdown
+  ```
     I'm the echoBot! Nice to meet you.
   ```
 ~~~
 
 ### Generate .json models with LUDown
 
-After you've defined LUIS or QnA language components in the .lu format, you can publish out to a LUIS .json, QnA .json, or QnA .tsv file. When run, the LUDown tool will look for any .lu files within the same working directory to parse. Since the LUDown tool can target both LUIS or QnA with .lu files, we simply need to specify which language service to generate for, using the general command **ludown parse <Service> -- in <luFile>**. 
+After you've defined LUIS or QnA language components in the .lu format, you can publish out to a LUIS .json, QnA .json, or QnA .tsv file. When run, the LUDown tool will look for any .lu files within the same working directory to parse. Since the LUDown tool can target both LUIS or QnA with .lu files, we simply need to specify which language service to generate for, using the general command **ludown parse \<to-service-type> -- in \<lu-file-path>**.
 
 In our sample working directory, we have two .lu files to parse, '1.lu' to create LUIS model, and 'qna1.lu' to create a QnA knowledge base.
 
@@ -139,7 +142,7 @@ ludown parse ToLuis --in <luFile>
 Similarly, to create a QnA knowledge base, you only need to change the parse target.
 
 ```shell
-ludown parse ToQna --in <luFile> 
+ludown parse ToQna --in <luFile>
 ```
 
 The resulting JSON files can be consumed by LUIS and QnA either through their respective portals, or via the new CLI tools. See [LUdown CLI][ludown] GitHub repo to learn more.
@@ -285,10 +288,10 @@ az bot show [options] --msbot | msbot connect bot --stdin
 | --resource-group -g               | Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.  Default: build2018. |
 | --tags                            | Set of tags to add to the bot. |
 
-
 ### Configure channels
 
-You can use the Azure CLI to manage channels for your bot. 
+You can use the Azure CLI to manage channels for your bot.
+
 ```shell
 >az bot -h
 Group
@@ -316,7 +319,9 @@ Group
 ```
 
 ## Additional information
+
 - [Bot Framework Tools on GitHub][cliTools]
+- [.lu file format](https://aka.ms/ludown-file-format)
 
 <!-- Footnote links -->
 
