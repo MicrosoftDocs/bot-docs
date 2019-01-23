@@ -92,6 +92,7 @@ public async Task OnTurnAsync(ITurnContext context)
          await context.SendActivityAsync($"The list is now: {string.Join(", ", logItems.UtteranceList)}");
          
          // Create Dictionary object to hold new list of messages.
+         var changes = new Dictionary<string, object>();
          {
              changes.Add("UtteranceLog", logItems);
           };
