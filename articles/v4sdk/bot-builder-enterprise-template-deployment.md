@@ -82,7 +82,13 @@ The README.md within your created project contains an example `msbot clone servi
 msbot clone services --name "YOUR-BOT-NAME" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\LOCALE_FOLDER" --location "REGION"
 ```
 
-> There is a known issue with some users whereby you might experience the following error when running deployment `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`. In this situation, please browse to https://apps.dev.microsoft.com and manually create a new application retrieving the ApplicationID and Password/Secret. Run the above msbot clone services command but provide two new arguments `appId` and `appSecret` passing the values you've just retrieved. Ensure you wrap the secret with quotes to prevent parsing issues, e.g: `-appSecret "YOUR_SECRET"`
+> There is a known issue with some users whereby you might experience the following error when running deployment `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`. In this situation, please browse to https://apps.dev.microsoft.com and manually create a new application retrieving the ApplicationID and Password/Secret. Run the above msbot clone services command but provide two new arguments `appId` and `appSecret` passing the values you've just retrieved. You need to escape any special characters in the password that might be interpreted by the shell to be a command:
+>   - For *Windows command prompt*, enclose the appSecret in double quotes. e.g. 
+msbt clone services --name xxxx --luisAuthoringKey xxxx --location xxxx --folder bot.recipt ***--appSecret "!|%gr%"***
+>   - For *Windows PowerShell, try passing in appSecret after the --% argument. e.g. 
+msbot clone services --name xxxx --luisAuthoringKey xxxx --location xxxx --folder bot.recipt ***--% --appSecret "!|%gr%"***
+>   - For *MacOS or Linux*, enclose the appSecret in single quotes. e.g. 
+msbot clone services --name xxxx --luisAuthoringKey xxxx --location xxxx --folder bot.recipt ***--appSecret '!|%gr%'***
 
 The msbot tool will outline the deployment plan including location and SKU. Ensure you review before proceeding.
 
