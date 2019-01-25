@@ -54,7 +54,7 @@ var responseMessage = turnContext.Activity.Text;
 
 # [JavaScript](#tab/javascript)
 
-In the bot's `OnTurnAsync` method, use the following code to receive a message.
+In the bot's `onTurn` method, use the following code to receive a message.
 
 ```javascript
 let text = turnContext.activity.text;
