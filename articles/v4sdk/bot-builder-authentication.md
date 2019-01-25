@@ -62,7 +62,7 @@ The final section breaks down some of the bot code
 
 ## Create your bot and an authentication application
 
-You need to create a registration bot to which you'll publish your bot code, and you need to create an Azure AD (either v1 or v2) application to allow your bot to access Office 365.
+You need to create a registration bot where you'll set the messaging endpoint to your deployed bot's code, and you need to create an Azure AD (either v1 or v2) application to allow your bot to access Office 365.
 
 > [!NOTE]
 > These authentication features work with other types of bots. However this tutorial uses a registration only bot.
@@ -241,10 +241,13 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
     }
     ```
 
-    If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, look in the **ApplicationSettings** of the Azure app service that was provisioned for your bot on the Azure Portal.
+    If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can either create a new password as described here:
+    [bot-channels-registration-password](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0#bot-channels-registration-password)
+    Or retrieve the **Microsoft app ID** and **Microsoft app password** provisioned with the **Bot Channels Registration** from the deployement described here:
+    [find-your-azure-bots-appid-and-appsecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret)
 
     > [!NOTE]
-    > You could now publish this bot code back to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this tutorial. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
+    > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this tutorial. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
 
 ## Use the Emulator to test your bot
 
