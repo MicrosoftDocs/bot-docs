@@ -45,7 +45,8 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "dotnet",
-      "author": "dotnet-bot"
+      "author": "dotnet-bot",
+      "ms.prod": "bot-framework"
     },
     "fileMetadata": {},
     "template": [],
