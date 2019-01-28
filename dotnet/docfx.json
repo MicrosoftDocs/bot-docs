@@ -46,7 +46,8 @@
     "globalMetadata": {
       "apiPlatform": "dotnet",
       "author": "dotnet-bot",
-      "ms.prod": "bot-framework"
+      "ms.prod": "bot-framework",
+      "ms.devlang": "dotnet"
     },
     "fileMetadata": {},
     "template": [],
