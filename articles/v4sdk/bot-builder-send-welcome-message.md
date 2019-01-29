@@ -43,7 +43,7 @@ The following example watches for new *conversation update activity*, sends only
 
 ## [C#](#tab/csharp)
 
-We need to create a state object for a given user in a conversation and it's accessor.
+Within the C# sample code, Startup.cs has defined 'WelcomeUserStateAccessors' as a service/singleton and added 'UserState' to the application state. We will now use these to create a state object for a given user in a conversation and its accessor.
 
 ```csharp
 /// The state object is used to keep track of various state related to a user in a conversation.

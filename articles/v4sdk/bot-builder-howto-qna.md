@@ -30,7 +30,7 @@ In this topic we will create a knowledge base and use it in a bot.
 1. First, you'll need to create a [QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure).
 1. Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located in the CognitiveModels folder of the project. The steps to create, train, and publish your QnA Maker [knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base) are listed in the QnA Maker documentation. As you follow these steps, name your KB `qna`,  and use the `smartLightFAQ.tsv` file to populate your KB.
 
-## Obtain values to connect to your connect your bot to the knowledge base
+## Obtain values to connect your bot to the knowledge base
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
 1. With your knowledge base open, select the **Settings**. Record the value shown for _service name_ as <your_kb_name>
 1. Scroll down to find **Deployment details** and record the following values:
