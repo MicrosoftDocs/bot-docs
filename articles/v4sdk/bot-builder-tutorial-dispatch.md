@@ -183,7 +183,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 
 ```
-The following code initializes the bot's references to external services. For example, LUIS and QnaMaker services are created here. These external services are configured using the `BotConfiguration` class (based on the contents of your ".bot" file.
+The following code initializes the bot's references to external services. For example, LUIS and QnaMaker services are created here. These external services are configured using the `BotConfiguration` class (based on the contents of your `.bot` file.)
 
 ```csharp
 private static BotServices InitBotServices(BotConfiguration config)
@@ -237,7 +237,8 @@ private static BotServices InitBotServices(BotConfiguration config)
 
 # [JavaScript](#tab/javascript)
 
-The sample code uses predefined naming constants to identify the various sections of your .bot file. If you have modified any section names from the original sample namings in your _nlp-with-dispatch.bot_ file, be sure to locate the associated constant declaration in the **bot.js**, **homeAutomation.js**, **qna.js**, or **weather.js** file and change that entry to the modified name.  
+The sample code uses predefined naming constants to identify the various sections of your `.bot` file. If you have modified any section names from the original sample namings in your _nlp-with-dispatch.bot_ file, be sure to locate the associated constant declaration in the **bot.js**, **homeAutomation.js**, **qna.js**, or **weather.js** file and change that entry to the modified name.  
+
 ```javascript
 // In file bot.js
 // this is the LUIS service type entry in the .bot file.
@@ -432,8 +433,11 @@ switch (dispatchTopIntent) {
        await turnContext.sendActivity(`I do not understand that.`);
        await turnContext.sendActivity(`I can help with weather forecast, turning devices on and off and answer general questions like 'hi', 'who are you' etc.`);
  }
+ ```
+
+ In `homeAutomation.js`
  
- // In homeAutomation.js
+ ```javascript
  async onTurn(turnContext) {
     // make call to LUIS recognizer to get home automation intent + entities
     const homeAutoResults = await this.luisRecognizer.recognize(turnContext);
@@ -448,8 +452,11 @@ switch (dispatchTopIntent) {
          await turnContext.sendActivity(`HomeAutomation dialog cannot fulfill this request.`);
     }
 }
-    
-// In weather.js
+```
+
+In `weather.js`
+
+```javascript
 async onTurn(turnContext) {
    // Call weather LUIS model.
    const weatherResults = await this.luisRecognizer.recognize(turnContext);
@@ -470,8 +477,11 @@ async onTurn(turnContext) {
          wait turnContext.sendActivity(`Weather dialog cannot fulfill this request.`);
    }
 }
-    
-// In qna.js
+```
+
+In `qna.js`
+
+```javascript
 async onTurn(turnContext) {
    // Call QnA Maker and get results.
    const qnaResult = await this.qnaRecognizer.generateAnswer(turnContext.activity.text, QNA_TOP_N, QNA_CONFIDENCE_THRESHOLD);
