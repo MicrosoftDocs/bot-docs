@@ -21,7 +21,6 @@ In this article, we'll show you how to deploy a C# bot using Visual Studio and t
 
 ## Prerequisites
 - Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
-- Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
 ## Deploy your bot in App Service
