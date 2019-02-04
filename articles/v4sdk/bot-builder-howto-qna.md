@@ -22,7 +22,7 @@ In this topic we will create a knowledge base and use it in a bot.
 
 ## Prerequisites
 - [QnA Maker](https://www.qnamaker.ai/) account
-- The code in this article is based on the **QnA Maker** sample. You'll need a copy of the sample in either in [C#](https://aka.ms/cs-qna) or [JS](https://aka.ms/js-qna-sample).
+- The code in this article is based on the **QnA Maker** sample. You'll need a copy of either the [C# sample](https://aka.ms/cs-qna) or [Javascript sample](https://aka.ms/js-qna-sample).
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download)
 - Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview), and [.bot](bot-file-basics.md) file.
 
@@ -34,7 +34,7 @@ In this topic we will create a knowledge base and use it in a bot.
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
 1. With your knowledge base open, select the **Settings**. Record the value shown for _service name_ as <your_kb_name>
 1. Scroll down to find **Deployment details** and record the following values:
-   - POST /knowledgebases/<your_knowledge_base_id>/generateAnswer
+   - POST /knowledgebases/<your_knowledge_base_id>/getAnswers
    - Host: <your_hostname>/qnamaker
    - Authorization: EndpointKey <your_endpoint_key>
 
@@ -50,15 +50,14 @@ First, add the information required to access your knowledge base including host
       "name": "development",
       "endpoint": "http://localhost:3978/api/messages",
       "appId": "",
-      "appPassword": ""
-      "id": "25",
-    
+      "appPassword": "",
+      "id": "25"    
     },
     {
       "type": "qna",
       "name": "QnABot",
       "KbId": "<YOUR_KNOWLEDGE_BASE_ID>",
-      "subscriptionKey": "<Your_Azure_Subscription_Key>", // Used when creating your QnA service.
+      "subscriptionKey": "<Your_Azure_Subscription_Key>",
       "endpointKey": "<Your_Recorded_Endpoint_Key>",
       "hostname": "<Your_Recorded_Hostname>",
       "id": "117"
@@ -225,7 +224,7 @@ else
 
 # [JavaScript](#tab/js)
 
-In the **bot.js** file, we pass the user's input to the QnA Maker service's `generateAnswer` method to get answers from the knowledge base. If you are accessing your own knowledge base, change the _no answers_ and _welcome_ messages below to provide useful instructions for your users.
+In the **bot.js** file, we pass the user's input to the QnA Maker service's `getAnswers` method to get answers from the knowledge base. If you are accessing your own knowledge base, change the _no answers_ and _welcome_ messages below to provide useful instructions for your users.
 
 ```javascript
 const { ActivityTypes, TurnContext } = require('botbuilder');
@@ -253,7 +252,7 @@ class QnAMakerBot {
         // By checking the incoming Activity type, the bot only calls QnA Maker in appropriate cases.
         if (turnContext.activity.type === ActivityTypes.Message) {
             // Perform a call to the QnA Maker service to retrieve matching Question and Answer pairs.
-            const qnaResults = await this.qnaMaker.generateAnswer(turnContext.activity.text);
+            const qnaResults = await this.qnaMaker.getAnswers(turnContext.activity.text);
 
             // If an answer was received from QnA Maker, send the answer back to the user.
             if (qnaResults[0]) {

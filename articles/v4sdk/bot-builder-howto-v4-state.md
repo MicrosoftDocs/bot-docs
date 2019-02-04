@@ -210,18 +210,18 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-In the bot's constructor, the `CustomPromptBotAccessors` object is provided when ASP.NET creates the bot.
+In the bot's constructor, the `StateBotAccessors` object is provided when ASP.NET creates the bot.
 
 ```csharp
 // Defines a bot for filling a user profile.
-public class CustomPromptBot : IBot
+public class StateBot : IBot
 {
     private readonly StateBotAccessors _accessors;
 
     public StateBot(StateBotAccessors accessors, ILoggerFactory loggerFactory)
     {
         // ...
-        accessors = accessors ?? throw new System.ArgumentNullException(nameof(accessors));
+        _accessors = accessors ?? throw new System.ArgumentNullException(nameof(accessors));
     }
 
     // The bot's turn handler and other supporting code...

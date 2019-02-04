@@ -236,6 +236,7 @@ using AdaptiveCards;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
+using Newtonsoft.Json;
 
 // Creates an attachment that contains an adaptive card
 // filePath is the path to JSON file

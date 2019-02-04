@@ -23,7 +23,7 @@ For basic Application Insights support, see how to [set up Application Insights 
 
 ## Enable Application Insights on Node.js
 
-For basic Application Insights support, see how to [monitor your Node.js services and apps with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-nodejs). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
+For basic Application Insights support, see how to [monitor your Node.js services and apps with Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/nodejs-quick-start). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
 
 ## Query for exceptions
 
