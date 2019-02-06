@@ -62,7 +62,7 @@ Middleware is much like any other messaging middleware, comprising a linear set 
 In the following sections, we examine key pieces of a bot.
 
 ### Prerequisites
-- A copy of the **EchoBotWithCounter** sample in either [C#](https://aka.ms/EchoBotWithStateCSharp) or [JS](https://aka.ms/EchoBotWithStateJS). Only relevant code is shown here, but you can refer to the sample for complete source code.
+- A copy of the **EchoBotWithCounter** sample in either **[C#](https://aka.ms/EchoBotWithStateCSharp) or [JS](https://aka.ms/EchoBotWithStateJS)**. Only relevant code is shown here, but you can refer to the sample for complete source code.
 
 # [C#](#tab/cs)
 

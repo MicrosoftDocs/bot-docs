@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 1/28/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 
@@ -177,11 +177,10 @@ The search results are displayed to the user and you've successfully added Azure
 ## Samples
 
 For two complete samples that show how to support Azure Search with bots using the Bot Framework SDK for .NET, see the 
-[Real Estate bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search/RealEstateBot) or [Job Listing bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search/JobListingBot) in GitHub. 
+[Real Estate bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/demo-Search/RealEstateBot) or [Job Listing bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/demo-Search/JobListingBot) in GitHub. 
 
 ## Additional resources
 * [Azure Search][search]
 * [Dialogs overview](bot-builder-dotnet-dialogs.md)
-* [Azure Search bot samples](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search)
 
 [search]: /azure/search/search-what-is-azure-search
