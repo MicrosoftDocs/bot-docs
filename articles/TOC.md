@@ -63,6 +63,7 @@
 <!-- ### [Download and redeploy bot code](bot-service-build-download-source-code.md) -->
 ### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
 ## [Manage](manage/TOC.md)
+## [Migrate](v4sdk/migration/TOC.md)
 # Reference
 ## [.NET SDK v4](https://aka.ms/dotnetsdk4)
 ## [JavaScript SDK v4](https://aka.ms/jssdk4)
