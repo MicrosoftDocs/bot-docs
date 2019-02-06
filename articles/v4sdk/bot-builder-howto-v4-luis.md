@@ -37,7 +37,7 @@ Sign in to the LUIS portal to create your own version of the sample LUIS app. Yo
 Once your LUIS app is published, you can access it from your bot. You will need to record several values to access your LUIS app from within your bot. You can retrieve that information using the LUIS portal.
 
 #### Retrieve application information from the LUIS.ai portal
-The .bot file act as the place to bring all service references together in one place. The infomration you retrieve will be added to the .bot file in the next section. 
+The .bot file act as the place to bring all service references together in one place. The information you retrieve will be added to the .bot file in the next section. 
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
 1. Select the **Application Information** tab on the left side, record the value shown for _Application ID_ as <YOUR_APP_ID>.
