@@ -37,7 +37,7 @@ This duplicate message can be avoided by generating an initial welcome message f
 - A conversation update event has occurred.
 - A new member (user) has been added to the conversation.
 
-The following example watches for new *conversation update activity*, sends only one welcome message based on your user joining the conversation, and sets a Prompt status flag to ignore the user’s initial conversation input. 
+The code sample below watches for any new *conversation update activity* and sends only one welcome message per new user joining the conversation. Upon your bot's first _conversationUpdate_ event the bot itself is added as _Recipient_ of activity for your channel. The code the checks if an added Member == _turnContext.Activity.Recipient.Id_. If true, it has detected the initial conversation update event and skips the code that looks for newly connected users.
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
@@ -231,7 +231,7 @@ module.exports = MainDialog;
 ---
 
 ## Discard initial user input
-It is also important to consider when your user’s input may actually contain useful information, and this too can vary per channel. To ensure your user has a good experience on all possible channels, we avoid processing invalid response data by giving the initial prompt and setting up keywords to look for in the user's replies.
+It is also important to consider when your user’s input might actually contain useful information, and this too can vary per channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we avoid processing this initial user input. We instead provide the user with an initial prompt for their response. The variable _didBotWelcomeUser_ is then set to "true" and our code processes the user input from all additional message activities.
 
 ## [C#](#tab/csharpmulti)
 
