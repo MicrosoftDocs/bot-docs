@@ -53,6 +53,7 @@
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
+### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Manage bots using CLI tools](bot-builder-tools.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
