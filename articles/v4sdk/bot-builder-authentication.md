@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 10/30/2018
+ms.date: 02/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -46,7 +46,7 @@ For additional information and support, refer to [Bot Framework additional resou
 
 ## Overview
 
-This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo, and this tutorial describes how to set that up, including the bot application.
+This tutorial creates a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token, and the associated Azure AD app. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo, and this tutorial describes how to set that up, including the bot application.
 
 - **Create your bot and an authentication application**
 - **Prepare the bot sample code**

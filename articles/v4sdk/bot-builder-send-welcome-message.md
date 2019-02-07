@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/20/2018
+ms.date: 02/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
@@ -18,10 +18,12 @@ monikerRange: 'azure-bot-service-4.0'
 The primary goal when creating any bot is to engage your user in a meaningful conversation. One of the best ways to achieve this goal is to ensure that from the moment a user first connects, they understand your bot’s main purpose and capabilities, the reason your bot was created. This article provides code examples to help you welcome users to your bot.
 
 ## Prerequisites
+
 - Understand [bot basics](bot-builder-basics.md). 
 - A copy of the **Welcome user sample** in either [C#](https://aka.ms/bot-welcome-sample-cs) or [JS](https://aka.ms/bot-welcome-sample-js). The code from the sample is used to explain how to send welcome messages.
 
 ## Same welcome for different channels
+
 A welcome message should be generated whenever your users first interacts with your bot. To achieve this, you can monitor your bot’s Activity types and watch for new connections. Each new connection can generate up to two conversation update activities depending on the channel.
 
 - One when the user’s bot is connected to the conversation.
@@ -34,6 +36,7 @@ Some channels create one conversation update when a user initially connects to t
 ![Double Welcome Message](./media/double_welcome_message.png)
 
 This duplicate message can be avoided by generating an initial welcome message for only the second conversation update event. The second event can be detected when both:
+
 - A conversation update event has occurred.
 - A new member (user) has been added to the conversation.
 
@@ -144,43 +147,56 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 This JavaScript code sends a welcome message when a user is added. This is done by checking the conversation activity and verify that a new member was added to the conversation.
 
 ```javascript
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
 // Import required Bot Framework classes.
 const { ActivityTypes } = require('botbuilder');
 const { CardFactory } = require('botbuilder');
 
-// Welcomed User property name
-const WELCOMED_USER = 'DidBotWelcomeUser';
+// Adaptive Card content
+const IntroCard = require('./resources/IntroCard.json');
 
-class MainDialog {
-    constructor (userState) {
+// Welcomed User property name
+const WELCOMED_USER = 'welcomedUserProperty';
+
+class WelcomeBot {
+    /**
+     *
+     * @param {UserState} User state to persist boolean flag to indicate
+     *                    if the bot had already welcomed the user
+     */
+    constructor(userState) {
         // Creates a new user property accessor.
         // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors.
-        this.welcomedUserPropery = userState.createProperty(WELCOMED_USER);
-    }
+        this.welcomedUserProperty = userState.createProperty(WELCOMED_USER);
 
-    async onTurn(turnContext) 
-    {
+        this.userState = userState;
+    }
+    /**
+     *
+     * @param {TurnContext} context on turn context object.
+     */
+    async onTurn(turnContext) {
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
-        if (turnContext.activity.type === ActivityTypes.Message) 
-        {
-            // Read UserState. If the 'DidBotWelcomeUser' does not exist (first time ever for a user)
+        if (turnContext.activity.type === ActivityTypes.Message) {
+            // Read UserState. If the 'DidBotWelcomedUser' does not exist (first time ever for a user)
             // set the default to false.
-            let didBotWelcomeUser = await this.welcomedUserPropery.get(turnContext, false);
+            const didBotWelcomedUser = await this.welcomedUserProperty.get(turnContext, false);
 
             // Your bot should proactively send a welcome message to a personal chat the first time
             // (and only the first time) a user initiates a personal chat with your bot.
-            if (didBotWelcomeUser === false) 
-            {
+            if (didBotWelcomedUser === false) {
                 // The channel should send the user name in the 'From' object
                 let userName = turnContext.activity.from.name;
-                await turnContext.sendActivity("You are seeing this message because this was your first message ever sent to this bot.");
-                await turnContext.sendActivity(`It is a good practice to welcome the user and provdie personal greeting. For example, welcome ${userName}.`);
-                
+                await turnContext.sendActivity('You are seeing this message because this was your first message ever sent to this bot.');
+                await turnContext.sendActivity(`It is a good practice to welcome the user and provide personal greeting. For example, welcome ${ userName }.`);
+
                 // Set the flag indicating the bot handled the user's first message.
-                await this.welcomedUserPropery.set(turnContext, true);
+                await this.welcomedUserProperty.set(turnContext, true);
+            } else {
+                // ...
             }
-            . . .
-            
             // Save state changes
             await this.userState.saveChanges(turnContext);
         } else if (turnContext.activity.type === ActivityTypes.ConversationUpdate) {
@@ -191,49 +207,46 @@ class MainDialog {
             await turnContext.sendActivity(`[${ turnContext.activity.type } event detected]`);
         }
     }
-    
-    // Sends welcome messages to conversation members when they join the conversation.
-    // Messages are only sent to conversation members who aren't the bot.
+
+    /**
+     * Sends welcome messages to conversation members when they join the conversation.
+     * Messages are only sent to conversation members who aren't the bot.
+     * @param {TurnContext} turnContext
+     */
     async sendWelcomeMessage(turnContext) {
-        // If any new membmers added to the conversation
-        if (turnContext.activity && turnContext.activity.membersAdded) {
-            // Define a promise that will welcome the user
-            async function welcomeUserFunc(conversationMember) {
+        // Do we have any new members added to the conversation?
+        if (turnContext.activity.membersAdded.length !== 0) {
+            // Iterate over all new members added to the conversation
+            for (let idx in turnContext.activity.membersAdded) {
                 // Greet anyone that was not the target (recipient) of this message.
-                // The bot is the recipient of all events from the channel, including all ConversationUpdate-type activities
-                // turnContext.activity.membersAdded !== turnContext.activity.aecipient.id indicates 
-                // a user was added to the conversation 
-                if (conversationMember.id !== this.activity.recipient.id) {
-                    // Because the TurnContext was bound to this function, the bot can call
-                    // `TurnContext.sendActivity` via `this.sendActivity`;
-                    await this.sendActivity(`Welcome to the 'Welcome User' Bot. This bot will introduce you to welcoming and greeting users.`);
-                    await this.sendActivity("You are seeing this message because the bot recieved at least one 'ConversationUpdate'" + 
-                                            "event,indicating you (and possibly others) joined the conversation. If you are using the emulator, "+ 
-                                            "pressing the 'Start Over' button to trigger this event again. The specifics of the 'ConversationUpdate' "+
-                                            "event depends on the channel. You can read more information at https://aka.ms/about-botframewor-welcome-user");
-                    await this.sendActivity(`It is a good pattern to use this event to send general greeting to user, explaining what your bot can do. `+ 
+                // Since the bot is the recipient for events from the channel,
+                // context.activity.membersAdded === context.activity.recipient.Id indicates the
+                // bot was added to the conversation, and the opposite indicates this is a user.
+                if (turnContext.activity.membersAdded[idx].id !== turnContext.activity.recipient.id) {
+                    await turnContext.sendActivity(`Welcome to the 'Welcome User' Bot. This bot will introduce you to welcoming and greeting users.`);
+                    await turnContext.sendActivity("You are seeing this message because the bot received at least one 'ConversationUpdate'" +
+                                            'event,indicating you (and possibly others) joined the conversation. If you are using the emulator, ' +
+                                            "pressing the 'Start Over' button to trigger this event again. The specifics of the 'ConversationUpdate' " +
+                                            'event depends on the channel. You can read more information at https://aka.ms/about-botframework-welcome-user');
+                    await turnContext.sendActivity(`It is a good pattern to use this event to send general greeting to user, explaining what your bot can do. ` +
                                             `In this example, the bot handles 'hello', 'hi', 'help' and 'intro. ` +
                                             `Try it now, type 'hi'`);
                 }
             }
-    
-            // Prepare Promises to greet the  user.
-            // The current TurnContext is bound so `replyForReceivedAttachments` can also send replies.
-            const replyPromises = turnContext.activity.membersAdded.map(welcomeUserFunc.bind(turnContext));
-            await Promise.all(replyPromises);
         }
     }
 }
 
-module.exports = MainDialog;
+module.exports.WelcomeBot = WelcomeBot;
 ```
 
 ---
 
 ## Discard initial user input
+
 It is also important to consider when your user’s input might actually contain useful information, and this too can vary per channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we avoid processing this initial user input. We instead provide the user with an initial prompt for their response. The variable _didBotWelcomeUser_ is then set to "true" and our code processes the user input from all additional message activities.
 
-## [C#](#tab/csharpmulti)
+## [C#](#tab/csharp)
 
 ```csharp
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = new CancellationToken())
@@ -290,46 +303,44 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
 ```
 
-## [JavaScript](#tab/jsmulti)
+## [JavaScript](#tab/js)
 
 ```javascript
-class MainDialog 
-{ 
+class MainDialog
+{
     // Previous Code Sample
-    
-    async onTurn(turnContext) 
+    async onTurn(turnContext)
     {
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         if (turnContext.activity.type === ActivityTypes.Message) {
-            
             // Previous Code Sample
-            
-            if (didBotWelcomeUser === false) 
-            {
+            if (didBotWelcomeUser === false) {
                 // Previous Code Sample
-            }
-            else 
-            {
-                // This example hardcodes specific uterances. You should use LUIS or QnA for more advance language understanding.
+            } else  {
+                // This example uses an exact match on user's input utterance.
+                // Consider using LUIS or QnA for Natural Language Processing.
                 let text = turnContext.activity.text.toLowerCase();
-                switch (text) 
-                {
-                    case "hello":
-                    case "hi":
-                        await turnContext.sendActivity(`You said "${turnContext.activity.text}"`);
-                        break;
-                    case "intro":
-                    case "help":
-                    default :
-                        await turnContext.sendActivity(`This is a simple Welcome Bot sample. You can say 'intro' to 
-                                                        see the introduction card. If you are running this bot in the Bot 
+                switch (text) {
+                case 'hello':
+                case 'hi':
+                    await turnContext.sendActivity(`You said "${ turnContext.activity.text }"`);
+                    break;
+                case 'intro':
+                case 'help':
+                    await turnContext.sendActivity({
+                        text: 'Intro Adaptive Card',
+                        attachments: [CardFactory.adaptiveCard(IntroCard)]
+                    });
+                    break;
+                default :
+                    await turnContext.sendActivity(`This is a simple Welcome Bot sample. You can say 'intro' to
+                                                        see the introduction card. If you are running this bot in the Bot
                                                         Framework Emulator, press the 'Start Over' button to simulate user joining a bot or a channel`);
                 }
             }
         }
-       
        // Previous Sample Code
-    } 
+    }
 }
 ```
 
@@ -339,7 +350,7 @@ class MainDialog
 
 Another way to greeting users is using adaptive Card Greeting. You can learn more about Adaptive Card Greetings here [Send an Adaptive Card](./bot-builder-howto-add-media-attachments.md).
 
-## [C#](#tab/csharpwelcomeback)
+## [C#](#tab/csharp)
 
 ```csharp
 // Sends an adaptive card greeting.
@@ -381,8 +392,7 @@ switch (text)
 }
 ```
 
-
-## [JavaScript](#tab/jswelcomeback)
+## [JavaScript](#tab/js)
 
 First we want to add our Adaptive Card to the bot at the top of our _index.js_ right below our Imports.
 
@@ -394,7 +404,7 @@ const IntroCard = require('./Resources/IntroCard.json');
 Next we can simply use the below code in our _switch (text)_ _case "help"_ section of our bot to respond to the users prompt with the adaptive card.
 
 ```javascript
-switch (text) 
+switch (text)
 {
     case "hello":
     case "hi":
@@ -413,10 +423,14 @@ switch (text)
                                         Framework Emulator, press the 'Start Over' button to simulate user joining a bot or a channel`);
 }
 ```
+
 ---
+
 ## Test the bot
+
 Refer to the [README](https://aka.ms/bot-welcome-sample-cs) file for instructions on running and testing the bot.
 
 ## Next steps
+
 > [!div class="nextstepaction"]
 > [Gather user input](bot-builder-prompts.md)
