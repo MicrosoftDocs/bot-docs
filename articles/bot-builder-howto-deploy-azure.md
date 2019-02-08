@@ -1,4 +1,9 @@
 ---
+redirect_url: /bot-framework/bot-builder-deploy-az-cli
+---
+
+<!--
+---
 title: Deploy your C# bot using Visual Studio | Microsoft Docs
 description: Deploy your bot to the Azure cloud.
 keywords: deploy bot, azure deploy, publish bot, az deploy bot, visual studio deploy bot, msbot publish, msbot clone
@@ -8,7 +13,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/08/2018
+ms.date: 02/07/2019
 ---
 
 # Deploy your C# bot using Visual Studio
@@ -23,7 +28,16 @@ In this article, we'll show you how to deploy a C# bot using Visual Studio and t
 - Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Knowledge of [.bot](v4sdk/bot-file-basics.md) file.
 
+
+## Update .bot file properties
+
+Before starting the deployment process, update the following .bot file properties in Visual Studio:
+- **Build action: Content**
+- **Copy to Output Directory: Copy always**
+
+
 ## Deploy your bot in App Service
+
 You will first deploy the bot to Azure from Visual Studio in an App Service. Then you’ll configure your bot with the Azure Bot Service using Bot Channels Registration.
 
 **Note: If your Visual Studio project name has spaces, the deployment steps outlined below will not work.**
@@ -160,3 +174,4 @@ If you are unfamiliar with Azure resource group, see this [terminology](https://
 ## Next steps
 > [!div class="nextstepaction"]
 > [Set up continous deployment](bot-service-build-continuous-deployment.md)
+-->

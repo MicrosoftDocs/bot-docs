@@ -6,7 +6,7 @@ ms.author: darrenj
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/18/2018
+ms.date: 02/7/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Enterprise Bot Template - Customize your Bot
@@ -102,11 +102,11 @@ In scenarios where you wish to add a new LUIS model to your project you need to 
 ```
 3. Add this new LUIS model to your Dispatcher through the following command
 ```shell
-    dispatch add -t luis -id LUIS_APP_ID -bot "YOUR_BOT.bot" -secret YOURSECRET
+    dispatch add -t luis -id LUIS_APP_ID -bot "YOUR_BOT.bot" --secret YOURSECRET
 ```
 4. Refresh the dispatch model to reflect the LUIS model changes through the following command
 ```shell
-    dispatch refresh -bot "YOUR_BOT.bot" -secret YOUR_SECRET
+    dispatch refresh -bot "YOUR_BOT.bot" --secret YOUR_SECRET
 ```
 
 ### Adding an additional QnA Maker knowledge base
