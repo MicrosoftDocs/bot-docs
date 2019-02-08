@@ -596,4 +596,4 @@ And look like this from the simulated job system's perspective:
 ![Job system's emulator session](~/v4sdk/media/how-to-proactive/job-system.png)
 
 ## Additional resources
-Check out additional samples in C# and JS on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/readme.md).
+Check out additional samples in C# and JS on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).

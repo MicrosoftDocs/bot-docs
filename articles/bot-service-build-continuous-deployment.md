@@ -1,4 +1,9 @@
 ---
+redirect_url: /bot-framework/bot-builder-deploy-az-cli
+---
+
+<!--
+---
 title: Configure continuous deployment for Bot Service | Microsoft Docs
 description: Learn how to setup continuous deployment from source control for a Bot Service. 
 keywords: continuous deployment, publish, deploy, azure portal
@@ -66,3 +71,6 @@ To disable continuous deployment, do the following:
 
 ## Additional information
 - Visual Studio Team Services is now [Azure DevOps Services](https://docs.microsoft.com/en-us/azure/devops/?view=vsts)
+
+
+-->
