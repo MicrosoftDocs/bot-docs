@@ -6,7 +6,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 02/10/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Build a speech-enabled bot with Cortana skills
@@ -53,42 +53,46 @@ The **inputHint** property helps indicate to Cortana whether your bot is expecti
 |------|------|
 | **acceptingInput** | Your bot is passively ready for input but is not waiting on a response. Cortana accepts input from the user if the user holds down the microphone button.|
 | **expectingInput** | Indicates that the bot is actively expecting a response from the user. Cortana listens for the user to speak into the microphone.  |
-| **ignoringInput** | Cortana is ignoring input. Your bot may send this hint if it is actively processing a request and will ignore input from users until the request is complete.  |
-
+||NOTE: Do _not_ use **expectingInput** on headless devices (devices without a display). See the [Cortana Skills Kit FAQ](https://review.docs.microsoft.com/en-us/cortana/skills/faq).|
+| **ignoringInput** | Cortana is ignoring input. Your bot may send this hint if it is actively processing a request, and will ignore input from users until the request is complete.  |
 
 The following example shows how Cortana reads plain text or SSML:
 
 ```javascript
+
 // Have Cortana read plain text
 session.say('This is the text that Cortana displays', 'This is the text that is spoken by Cortana.');
 
 // Have Cortana read SSML
 session.say('This is the text that Cortana displays', '<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">This is the text that is spoken by Cortana.</speak>');
+
 ```
 
 This example shows how to let Cortana know that user input is expected. The microphone will be left open.
+
 ```javascript
+
 // Add an InputHint to let Cortana know to expect user input
 session.say('Hi there', 'Hi, what’s your name?', {
     inputHint: builder.InputHint.expectingInput
 });
+
 ```
 <!-- TODO: tip about time limit and batching -->
-
 
 ### Prompts
 
 In addition to using the **session.say()** method you can also pass text or SSML to built-in prompts using the **speak** and **retrySpeak** options.  
 
 ```javascript
+
 builder.Prompts.text(session, 'text based prompt', {                                    
     speak: 'Cortana reads this out initially',                                               
     retrySpeak: 'This message is repeated by Cortana after waiting a while for user input',  
     inputHint: builder.InputHint.expectingInput                                              
 });
+
 ```
-
-
 
 <!-- TODO: Link to SSML library -->
 
@@ -97,6 +101,7 @@ To present the user with a list of choices, use **Prompts.choice**. The **synony
 **Prompts.choice** supports ordinal choices. This means that the user can say "the first", "the second" or "the third" to choose an item in a list. For example, given the following prompt, if the user asked Cortana for "the second option", the prompt will return the value of 8.
 
 ```javascript
+
         var choices = [
             { value: '4', action: { title: '4 Sides' }, synonyms: 'four|for|4 sided|4 sides' },
             { value: '8', action: { title: '8 Sides' }, synonyms: 'eight|ate|8 sided|8 sides' },
@@ -106,11 +111,13 @@ To present the user with a list of choices, use **Prompts.choice**. The **synony
         builder.Prompts.choice(session, 'choose_sides', choices, { 
             speak: speak(session, 'choose_sides_ssml') // use helper function to format SSML
         });
+
 ```
 
 In the previous example, the SSML for the prompt's **speak** property is formatted by using strings stored in a localized prompts file with the following format. 
 
 ```json
+
 {
     "choose_sides": "__Number of Sides__",
     "choose_sides_ssml": [
@@ -119,8 +126,8 @@ In the previous example, the SSML for the prompt's **speak** property is formatt
         "All the standard sizes are supported."
     ]
 }
-```
 
+```
 
 A helper function then builds the required root element of a Speech Synthesis Markup Language (SSML) document. 
 
@@ -152,7 +159,7 @@ See [Card design best practices][CardDesign] to see what these cards look like i
 
 The following code demonstrates how to add the **speak** and **inputHint** properties to a message containing a Hero card.
 
-```javascript 
+```javascript
 
 bot.dialog('HelpDialog', function (session) {
     var card = new builder.HeroCard(session)
@@ -167,7 +174,6 @@ bot.dialog('HelpDialog', function (session) {
         .inputHint(builder.InputHint.acceptingInput); // Tell Cortana to accept input
     session.send(msg).endDialog();
 }).triggerAction({ matches: /help/i });
-
 
 /** This helper function builds the required root element of a Speech Synthesis Markup Language (SSML) document. */
 module.exports.speak = function (template, params, options) {
@@ -191,6 +197,7 @@ You invoke the skill by saying its [invocation name][InvocationNameGuidelines] t
 The RollerSkill sample starts by opening a card with some buttons to tell the user which options are available to them.
 
 ```javascript
+
 /**
  *   Create your bot with a default message handler that receive messages from the user.
  * - This function is be called anytime the user's utterance isn't
@@ -230,8 +237,6 @@ something like "I'd like to roll some dice". It uses a regular expression to mat
 
 
 ```javascript
-
-
 bot.dialog('CreateGameDialog', [
     function (session) {
         // Initialize game structure.
@@ -292,6 +297,7 @@ bot.dialog('CreateGameDialog', [
     /(roll|role|throw|shoot).*(dice|die|dye|bones)/i,
     /new game/i
  ]});
+
 ```
 
 ### Render results
@@ -403,6 +409,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
         session.replaceDialog('CreateGameDialog');
     }
 }).triggerAction({ matches: /(roll|role|throw|shoot) again/i });
+
 ```
 
 ## Next steps
