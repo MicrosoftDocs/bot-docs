@@ -37,12 +37,6 @@ npm install -g ludown luis-apis qnamaker botdispatch msbot chatdown
 dotnet tool install -g luisgen
 ```
 
-- Install the LUISGen tool
-
-```shell
-dotnet tool install -g luisgen
-```
-
 ## Configuration
 
 - Retrieve your LUIS Authoring Key
