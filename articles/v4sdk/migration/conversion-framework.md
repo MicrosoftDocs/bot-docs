@@ -8,27 +8,30 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 02/04/2019
+ms.date: 02/11/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Migrate a bot within the same .NET Framework project
+# Migrate a .NET SDK v3 bot to v4
+
+In this article we'll convert the v3 [ContosoHelpdeskChatBot](https://github.com/Microsoft/intelligent-apps/tree/master/ContosoHelpdeskChatBot/ContosoHelpdeskChatBot) into a v4 bot _without converting the project type_. It will remain a .NET Framework project.
+This conversion is broken down into these steps:
+
+1. Update and install NuGet packages
+1. Update your Global.asax.cs file
+1. Update your MessagesController class
+1. Convert your dialogs
+
+<!--TODO: Link to the converted bot...[ContosoHelpdeskChatBot](https://github.com/EricDahlvang/intelligent-apps/tree/v4netframework/ContosoHelpdeskChatBot).-->
 
 Bot Framework SDK v4 is based on the same underlying REST API as SDK v3. However, SDK v4 is a refactoring of the previous version of the SDK to allow developers more flexibility and control over their bots. Major changes in the SDK include:
-<!--TODO: Replace with a snippet summary of changes that includes a link to the concept topic.-->
 
 - State is managed via state management objects and property accessors.
 - Setting up turn handler and passing activities to it has changed.
 - Scoreables no longer exist. You can check for "global" commands in the turn handler, before passing control to your dialogs.
 - A new Dialogs library that is very different from the one in the previous version. You'll need to convert old dialogs to the new dialog system using component and waterfall dialogs and the community implementation of Formflow dialogs for v4.
 
-In this article we'll focus on the v3 [ContosoHelpdeskChatBot](https://github.com/Microsoft/intelligent-apps/tree/master/ContosoHelpdeskChatBot/ContosoHelpdeskChatBot) and convert it into a v4 bot. <!--TODO: Link to the converted bot...[ContosoHelpdeskChatBot](https://github.com/EricDahlvang/intelligent-apps/tree/v4netframework/ContosoHelpdeskChatBot).-->
-We convert the bot without converting the project type, so this remains a .NET Framework project. This conversion is broken down into these steps:
-
-1. Update and install NuGet packages
-1. Update your Global.asax.cs file
-1. Update your MessagesController class
-1. Convert your dialogs
+For more information about specific changes, see [differences between the v3 and v4 .NET SDK](migration-about.md).
 
 ## Update and install NuGet packages
 
@@ -340,7 +343,6 @@ Notes about the v4 code:
 - Waterfall steps have a `WaterfallStepContext` parameter, which derives from `DialogContext`.
 - All concrete dialog and prompt classes derive from the abstract `Dialog` class.
 - You assign an ID when you create a component dialog. Each dialog in a dialog set needs to be assigned an ID unique within that set.
-- We'll implement `PostAsync` and `Done` extension methods to make our converted dialogs more v3-like. You could add additional extension methods to mitigate more of the conversion process, or you could skip this to keep your migrated code more v4-like.
 
 ### Update the root dialog
 
