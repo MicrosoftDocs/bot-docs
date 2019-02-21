@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/10/2018
+ms.date: 02/08/2019
 ---
 # Connect a bot to Office 365 email
 
@@ -65,6 +65,10 @@ For more information about using `channelData`, see the [Node.js](https://github
 For more information about using `channelData`,
 see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
 ::: moniker-end
+
+## Other considerations
+
+If your bot does not return a 200 OK HTTP status code within 15 seconds in response to an incoming email message, the email channel will try to resend the message, and your bot may receive the same email message activity a few times. For more information, see the [HTTP details](v4sdk/bot-builder-basics.md#http-details) section in **How bots work** and the how to [troubleshooting timeout errors](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) article.
 
 ## Additional resources
 
