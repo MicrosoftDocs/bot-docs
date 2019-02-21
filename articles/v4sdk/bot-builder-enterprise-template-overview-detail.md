@@ -46,7 +46,7 @@ Integration of Application Insights provides significant operational/technical i
 
 Bot level telemetry is intrinsically linked to technical and operational telemetry enabling you to inspect how a given user question was answered and vice versa.
 
-A middleware component combined with a wrapper class around the QnA Maker and LuisRecognizer SDK classes provides an elegant way to collect a consistent set of events. These consistent events can then be used by the Applicatin Insights tooling along with tools like PowerBI.
+A middleware component combined with a wrapper class around the QnA Maker and LuisRecognizer SDK classes provides an elegant way to collect a consistent set of events. These consistent events can then be used by the Application Insights tooling along with tools like PowerBI.
 
 An example PowerBI dashboard is provided with each project created using the Enterprise Bot Template. See the [PowerBI](bot-builder-enterprise-template-powerbi.md) section for more information.
 

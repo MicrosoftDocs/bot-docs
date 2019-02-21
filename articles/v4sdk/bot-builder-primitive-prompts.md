@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/20/2018
+ms.date: 02/19/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -51,7 +51,7 @@ Since we don't plan to deploy this bot, we'll configure both user and conversati
 We define the following types.
 
 - A `UserProfile` class for the user information that the bot will collect.
-- A `ConversationFlow` class to tack information about where we are in the conversation.
+- A `ConversationFlow` class to track information about where we are in the conversation.
 - An inner `ConversationFlow.Question` enumeration for tracking where we are in the conversation.
 - A `CustomPromptBotAccessors` class in which to bundle the state management information.
 
@@ -79,6 +79,8 @@ If we need to fill out the user profile, we call our helper method and then save
 
 # [C#](#tab/csharp)
 
+In **CustomPromptBot.cs**, get the state property and call the helper method. (Note that the `_accessors` instance property is set in the bot's constructor.)
+
 ```csharp
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
 {
@@ -101,6 +103,8 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 ```
 
 # [JavaScript](#tab/javascript)
+
+In **bot.js**, get the state property and call the helper method. (Note that the `conversationFlow` instance property is set in the bot's constructor.)
 
 ```javascript
 // The bot's turn handler.
