@@ -10,6 +10,7 @@
 ## [Facebook](../bot-service-channel-connect-facebook.md) 
 ## [GroupMe](../bot-service-channel-connect-groupme.md) 
 ## [Kik](../bot-service-channel-connect-kik.md) 
+## [LINE](../bot-service-channel-connect-line.md)
 ## [Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots)
 ## [Skype](../bot-service-channel-connect-skype.md)
 ## [Skype for Business](../bot-service-channel-connect-skypeforbusiness.md)

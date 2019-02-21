@@ -68,7 +68,7 @@ function sendProactiveMessage(address) {
 
 ## Send a dialog-based proactive message
 
-The following code samples show how to send a dialog-based proactive message by using the Bot Framework SDK for Node.js. You can find the complete working example in the [Microsoft/BotBuilder-Samples/Node/core-proactiveMessages/startNewDialog](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog) folder.
+The following code samples show how to send a dialog-based proactive message by using the Bot Framework SDK for Node.js. You can find the complete working example in the [startNewDialog](https://aka.ms/js-startnewdialog-sample-v3) folder.
 
 To be able to send a dialog-based message to a user, the bot must first collect (and save) information from the current conversation. 
 The `session.message.address` object includes all of the information that the bot will need to send a dialog-based proactive message to the user. 
@@ -101,7 +101,7 @@ function startProactiveDialog(address) {
 ```
 
 > [!NOTE]
-> The code sample above requires a custom file, **botadapter.js**, which you can [download from GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/Node/core-proactiveMessages/startNewDialog/botadapter.js).
+> The code sample above requires a custom file, **botadapter.js**, which you can [download from GitHub](https://aka.ms/js-botadaptor-file-v3).
 
 The survey dialog controls the conversation until it finishes. 
 Then, it closes (by calling `session.endDialog()`), thereby returning control back to the previous dialog. 
@@ -121,8 +121,8 @@ bot.dialog('survey', function (session, args, next) {
 
 ## Sample code
 
-For a complete sample that shows how to send proactive messages using the Bot Framework SDK for Node.js, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages" target="_blank">Proactive Messages sample</a> in GitHub. 
-Within the Proactive Messages sample, <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/simpleSendMessage" target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-proactiveMessages/startNewDialog" target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message.
+For a complete sample that shows how to send proactive messages using the Bot Framework SDK for Node.js, see the <a href="https://aka.ms/js-proactivemessages-sample-v3" target="_blank">Proactive Messages sample</a> in GitHub. 
+Within the Proactive Messages sample, <a href="https://aka.ms/js-simplesendmessage-sample-v3" target="_blank">simpleSendMessage</a> shows how to send an ad-hoc proactive message and <a href="https://aka.ms/js-startnewdialog-sample-v3" target="_blank">startNewDialog</a> shows how to send a dialog-based proactive message.
 
 ## Additional resources
 

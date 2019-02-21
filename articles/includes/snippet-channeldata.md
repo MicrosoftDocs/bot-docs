@@ -1,5 +1,3 @@
-# Implement channel-specific functionality
-
 Some channels provide features that cannot be implemented by using only message text and attachments. To implement channel-specific functionality, you can pass native metadata to a channel in the activity object's _channel data_ property. For example, your bot can use the channel data property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
 This article describes how to use a message activity's channel data property to implement this channel-specific functionality:
@@ -389,6 +387,72 @@ This snippet shows an example of the `channelData` property for a native Kik mes
                 }
         }
     ]
+}
+```
+
+## Create a LINE message
+
+To create a message that implements LINE-specific message types (such as sticker, templates, or LINE specific action types like opening the phone camera), set the activity object's channel data property to a JSON object that specifies LINE message types and action types. 
+
+| Property | Description |
+|----|----|
+| type | The LINE action/message type name |
+
+These LINE message types are supported:
+* Sticker
+* Imagemap 
+* Template (Button, confirm, carousel) 
+* Flex 
+
+These LINE actions can be specified in the action field of the message type JSON object: 
+* Postback 
+* Message 
+* URI 
+* Datetimerpicker 
+* Camera 
+* Camera roll 
+* Location 
+
+For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/). 
+
+This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and 3 action types: camera, cameraRoll, Datetimepicker. 
+
+```json
+"channelData": { 
+    "type": "ButtonsTemplate", 
+    "altText": "This is a buttons template", 
+    "template": { 
+        "type": "buttons", 
+        "thumbnailImageUrl": "https://example.com/bot/images/image.jpg", 
+        "imageAspectRatio": "rectangle", 
+        "imageSize": "cover", 
+        "imageBackgroundColor": "#FFFFFF", 
+        "title": "Menu", 
+        "text": "Please select", 
+        "defaultAction": { 
+            "type": "uri", 
+            "label": "View detail", 
+            "uri": "http://example.com/page/123" 
+        }, 
+        "actions": [{ 
+                "type": "cameraRoll", 
+                "label": "Camera roll" 
+            }, 
+            { 
+                "type": "camera", 
+                "label": "Camera" 
+            }, 
+            { 
+                "type": "datetimepicker", 
+                "label": "Select date", 
+                "data": "storeId=12345", 
+                "mode": "datetime", 
+                "initial": "2017-12-25t00:00", 
+                "max": "2018-01-24t23:59", 
+                "min": "2017-12-25t00:00" 
+            } 
+        ] 
+    } 
 }
 ```
 
