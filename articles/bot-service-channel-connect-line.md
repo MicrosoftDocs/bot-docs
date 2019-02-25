@@ -46,6 +46,9 @@ Create a new Messaging API channel by clicking on the green square.
 
 The name cannot include "LINE" or some similar string. Fill out the required fields and confirm your channel settings.
 
+> [!IMPORTANT]
+> When you want to test the LINE channel, you need to select "Developer" Plan. If you select the "FREE" plan, the bot cannot push a message to the LINE account until changing the another plan.
+
 ![LINE screenshot channel settings](./media/channels/LINE-screenshot-4.png)
 
 ## Get necessary values from your channel settings
