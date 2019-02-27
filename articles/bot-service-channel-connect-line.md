@@ -54,7 +54,7 @@ Once you've confirmed your channel settings, you'll be directed to a page simila
 
 ![LINE screenshot channel page](./media/channels/LINE-screenshot-5.png)
 
-Click on the channel you created to access your channel settings, and scroll down to find the **Basic information > Channel secret**. Save that somewhere for a moment.
+Click on the channel you created to access your channel settings, and scroll down to find the **Basic information > Channel secret**. Save that somewhere for a moment. Verify the Available features include `PUSH_MESSAGE`.
 
 ![LINE screenshot channel secret](./media/channels/LINE-screenshot-6.png)
 
