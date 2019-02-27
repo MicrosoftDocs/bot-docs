@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/28/2018
+ms.date: 02/21/2019
 ---
 
 # Bot Framework Frequently Asked Questions
@@ -44,9 +44,11 @@ SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the re
 - Bot Framework SDK V4 offers conversational centric development experience with an SDK architecture that is modular and extensible, empowering developers to create robust and sophisticated chat applications. V4 extendable design was based on customer feedback, suggesting SDK V3 dialog models and primitives are too ridged and constraining extendibility.  
 
 ### What is the general migration strategy? I have a V3 bot, how can I migrate it to V4/ Can I migrate my V3 bot to V4?
-- At this time, migration help for bots created with SDK V3 to SDK V4 will come in the form of documentations and samples. We currently do not have plans to provide any SDK V3 compatibility layer in SDK V4 that would allow V3 build bots to work within a V4 bot. 
-- If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future. 
-- Bot Framework SDK V4 is an evolution of the very successful V3 SDK. V4 is a major version release which includes breaking changes that prevent V3 bots from running on the newer V4 SDK. 
+
+- See [Differences between the v3 and v4 .NET SDK](v4sdk/migration/migration-about.md) for information on migrating V3 bots to V4.
+- At this time, migration help for bots created with SDK V3 to SDK V4 will come in the form of documentation and samples. We currently do not have plans to provide any SDK V3 compatibility layer in SDK V4 that would allow V3 build bots to work within a V4 bot.
+- If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future.
+- Bot Framework SDK V4 is an evolution of the very successful V3 SDK. V4 is a major version release which includes breaking changes that prevent V3 bots from running on the newer V4 SDK.
 
 ### Should I build new a bot using V3 or V4?
 - For new conversational experiences, we recommend you start a new bot using Bot Framework SDK V4.
