@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 2/09/2019
+ms.date: 2/26/2019
 ---
 
 # Debug a bot
@@ -133,8 +133,10 @@ Additionally, you can view log details in the console window.
 
 ## Additional resources
 
-To learn about debugging bots in production, refer to [Debug any channel locally using ngrok](https://blog.botframework.com/2017/10/19/debug-channel-locally-using-ngrok/) blogpost.
+- See [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
+- See the how to [debug any channel locally using ngrok](https://blog.botframework.com/2017/10/19/debug-channel-locally-using-ngrok/) blog post.
 
 ## Next steps
+
 > [!div class="nextstepaction"]
-> [Debug your bot using transcript files](~/v4sdk/bot-builder-debug-transcript.md).
+> [Debug your bot using transcript files](v4sdk/bot-builder-debug-transcript.md).

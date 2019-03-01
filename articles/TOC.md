@@ -39,7 +39,7 @@
 ### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md) 
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 <!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
-### [Get notification from bots](v4sdk/bot-builder-howto-proactive-message.md)
+### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)

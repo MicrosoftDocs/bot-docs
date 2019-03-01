@@ -59,12 +59,11 @@ The source code you downloaded from the Azure portal includes an encrypted .bot 
 1. Open the bot's **Application Settings**.
 1. In the **Application Settings** window, scroll down to **Application settings**.
 1. Locate the **botFileSecret** and copy its value.
+1. Use `msbot cli` to decrypt the file.
 
-Use `msbot cli` to decrypt the file.
-
-```cmd
-msbot secret --bot <name-of-bot-file> --secret "<bot-file-secret>" --clear
-```
+    ```cmd
+    msbot secret --bot <name-of-bot-file> --secret "<bot-file-secret>" --clear
+    ```
 
 ### Update your local .bot file
 
@@ -123,18 +122,24 @@ Open the .bot file you decrypted. Copy **all** entries listed under the `service
 
 Save the file.
 
+You can use the msbot tool to generate a new secret and encrypt the .bot file before you publish. If you re-encrypt your .bot file, update the bot's **botFileSecret** in the Azure portal to contain the new secret.
+
+```cmd
+msbot secret --bot <name-of-bot-file> --new
+```
+
 ### Setup a repository
 
-To support continuous deployment, create a git repository using your favorite git source control provider. Commit your code into the repository. 
+To support continuous deployment, create a git repository using your favorite git source control provider. Commit your code into the repository.
 
 Make sure that your repository root has the correct files, as described under [prepare your repository](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment#prepare-your-repository).
 
 ### Update App Settings in Azure
-The local bot does not use an encrypted .bot file, but the Azure portal has an that you are deploying doesn't 
+The local bot does not use an encrypted .bot file, but the Azure portal is configured to use an encrypted .bot file. You can resolve this by removing the **botFileSecret** stored in the Azure bot settings.
 1. In the Azure portal, open the **Web App Bot** resource for your bot.
 1. Open the bot's **Application Settings**.
 1. In the **Application Settings** window, scroll down to **Application settings**.
-1. Locate the **botFileSecret** and delete it.
+1. Locate the **botFileSecret** and delete it. (If you re-encrypted your .bot file, make sure the **botFileSecret** contains the new secret and **do not** delete the setting.)
 1. Update the name of the bot file to match the file you checked into the repo.
 1. Save changes.
 

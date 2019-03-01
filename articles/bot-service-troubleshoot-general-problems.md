@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/26/2018
+ms.date: 02/26/2019
 ---
 
 # Troubleshooting general problems
@@ -15,11 +15,12 @@ These frequently asked questions can help you to troubleshoot common bot develop
 ## How can I troubleshoot issues with my bot?
 
 1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
-2. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
-3. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/en-us/blog/understanding-azure-troubleshooting-and-support/).
-4. Rule out [authentication][TroubleshootingAuth] as a possible issue.
-5. Test your bot on Skype. This will help you to validate the end-to-end user experience.
-6. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
+1. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
+1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/en-us/blog/understanding-azure-troubleshooting-and-support/).
+1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
+1. Test your bot on Skype. This will help you to validate the end-to-end user experience.
+1. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
+1. Review the how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
 
 ## How can I troubleshoot authentication issues?
 
