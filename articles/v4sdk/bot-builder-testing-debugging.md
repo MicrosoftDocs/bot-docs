@@ -7,7 +7,7 @@ ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/09/2018
+ms.date: 2/26/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -29,7 +29,7 @@ Testing best practice will cover different angles wherever applicable. This may 
 
 Ensuring that each small piece of your app, or in this case our bot, works exactly as it should, is the first level of testing. To achieve this, you can use mock elements for the things you’re not currently testing. For reference, this level can generally be thought of as unit and integration testing.
 
-**Use mock elements to test individual sections**
+#### Use mock elements to test individual sections
 
 Mocking as many elements as you can allows for better isolation of the piece you’re testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also be removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
 
@@ -37,7 +37,7 @@ Mocking elements can take a handful of forms, from replacing an element with a d
 
 This level should exercise individual methods and functions within your bot. Testing individual methods could be through built in unit tests, which are recommended, with your own testing app or test suite, or manually doing so within your IDE. 
 
-**Use mock elements to test larger features**
+#### Use mock elements to test larger features
 
 Once you are happy with how each method behaves, use these mock elements to test more complete features in your bot. This demonstrates how a few layers work together to converse with your user. 
 
@@ -69,11 +69,11 @@ Debugging your bot works similarly to other multi-threaded apps, with the abilit
 
 Bots follow an event driven programming paradigm, which can be hard to rationalize if you’re not familiar with it. The idea of your bot being stateless, multi-threaded, and dealing with async/await calls can result in unexpected bugs. While debugging your bot works similarly to other multi-threaded apps, we’ll cover some suggestions, tools, and resources to help.
 
-**Understanding bot activities with the emulator**
+### Understanding bot activities with the emulator
 
 Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
 
-**Saving and retrieving user interactions with transcripts**
+### Saving and retrieving user interactions with transcripts
 
 Azure blob transcript storage provides a specialized resource where you can both [store and retrieve transcripts](bot-builder-howto-v4-storage.md) containing interactions between your users and your bot.  
 
@@ -83,7 +83,7 @@ Additionally, once user input interactions have been stored, you can use Azure's
 
 This opens the stored user conversation input in JSON format. User input is preserved together with the key "_text:_."
 
-**How middleware works**
+### How middleware works
 
 [Middleware](bot-builder-concept-middleware.md) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 
 
@@ -93,27 +93,30 @@ If the `next()` delegate is not called, that’s referred to as [short circuit r
 
 Understanding when, and why, middleware short-circuits helps indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try creating your own middleware first to experiment a bit before diving into the built-in middleware.
 
+<!-- Snip: QnA was once implemented as middleware.
 For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain interactions and short-circuit the pipeline when it does, which can be confusing when first learning how to use it.
+-->
 
-**Understanding state**
+### Understanding state
 
 Keeping track of state is an important part of your bot, particularly for complex tasks. In general, best practice is to process activities as quickly as possible and let the processing complete so that state gets persisted. Activities can be sent to your bot at nearly the same time, and that can introduce very confusing bugs because of the asynchronous architecture.
 
 Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator) and [Azure Table storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
 
-**How to use activity handlers**
+### How to use activity handlers
 
-Activity handlers can introduce another layer of complexity, particularly that each activity runs on an independent thread (or web workers, depending on your language). Depending on what your handlers are doing, this can cause issues where the current state is not what you expect.
+Activity handlers can introduce another layer of complexity, particularly since each activity runs on an independent thread (or web workers, depending on your language). Depending on what your handlers are doing, this can cause issues where the current state is not what you expect.
 
-Built in state gets written at the end of a turn, however any activities generated by that turn are executing independently of the turn pipeline. Often this doesn’t impact us, but if an activity handler changes state we need the state written to contain that change. In that case, the turn pipeline can wait on the activity to finish processing before completing to make sure it records the correct state for that turn.
+Built-in state gets written at the end of a turn, however any activities generated by that turn are executing independently of the turn pipeline. Often this doesn’t impact us, but if an activity handler changes state we need the state written to contain that change. In that case, the turn pipeline can wait on the activity to finish processing before completing to make sure it records the correct state for that turn.
 
-The _send activity_ method, and its handlers, pose a unique problem if you’d like to output something to the user since simply calling _send activity_ from within that method causes an infinite forking of threads. There are ways you can work around that problem, such as by appending the debug message to the outgoing information or write out to another location like the console or a file to avoid crashing your bot.
-
+The _send activity_ method, and its handlers, pose a unique problem. Simply calling _send activity_ from within the _on send activities_ handler causes an infinite forking of threads. There are ways you can work around that problem, such as by appending additional messages to the outgoing information or writing out to another location like the console or a file to avoid crashing your bot.
 
 ## Additional resources
+
 * [Debugging in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/index)
 * [Debugging, Tracing, and Profiling](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/) for the bot framework
-* Use the [ConditionalAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code 
-* Use tools like [Fiddler](https://www.telerik.com/fiddler) to see network traffic 
+* Use the [ConditionalAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code
+* Use tools like [Fiddler](https://www.telerik.com/fiddler) to see network traffic
 * [Bot tools repo](https://github.com/Microsoft/botbuilder-tools)
 * Frameworks can help with testing, such as [Moq](https://github.com/moq/moq4)
+* [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section

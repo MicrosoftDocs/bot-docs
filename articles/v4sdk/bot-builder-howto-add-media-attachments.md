@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 01/16/2019
+ms.date: 02/27/2019
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -16,11 +16,15 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations. Refer to [design user experience](../bot-service-design-user-experience.md) for a list of available cards.
+Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations.
+
+See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
 ## Send attachments
 
 To send the user content like an image or a video, you can add an attachment or list of attachments to a message.
+
+See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
 # [C#](#tab/csharp)
 
@@ -29,7 +33,6 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
 var reply = turnContext.Activity.CreateReply();
@@ -46,7 +49,7 @@ var attachment = new Attachment
 reply.Attachments = new List<Attachment>() { attachment };
 
 // Send the activity to the user.
-await turnContext.SendActivityAsync(reply, cancellationToken);
+await turnContext.SendActivityAsync(reply, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -87,7 +90,6 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
 var reply = turnContext.Activity.CreateReply();
@@ -107,7 +109,7 @@ var card = new HeroCard
 // Add the card to our reply.
 reply.Attachments = new List<Attachment>() { card.ToAttachment() };
 
-await turnContext.SendActivityAsync(reply, cancellationToken);
+await turnContext.SendActivityAsync(reply, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -163,7 +165,6 @@ The following code shows examples using various rich card events.
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
 var reply = turnContext.Activity.CreateReply();
@@ -234,7 +235,6 @@ The source code shown here is based on the [Using Adaptive Cards](https://aka.ms
 ```csharp
 using AdaptiveCards;
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
 
@@ -256,7 +256,7 @@ var cardAttachment = CreateAdaptiveCardAttachment(adaptiveCardJsonFilePath);
 var reply = turnContext.Activity.CreateReply();
 reply.Attachments = new List<Attachment>() { cardAttachment };
 
-await turnContext.SendActivityAsync(reply, cancellationToken);
+await turnContext.SendActivityAsync(reply, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -300,7 +300,6 @@ Messages can also include multiple attachments in a carousel layout, which place
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
 // Create the activity and attach a set of Hero cards.
@@ -334,7 +333,7 @@ var activity = MessageFactory.Carousel(
     });
 
 // Send the activity as a reply to the user.
-await context.SendActivity(activity);
+await turnContext.SendActivityAsync(reply, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -358,6 +357,8 @@ await context.sendActivity(messageWithCarouselOfCards);
 <!-- TODO: Add a media card, such as video or audion. Revisit which examples we put here and link to the 06 through 08 samples. -->
 
 ## Additional resources
+
+See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
 For detailed information on the schema, see the [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema) and the [message activity section](https://aka.ms/botSpecs-activitySchema#message-activity) of the Bot Framework Activity schema.
 

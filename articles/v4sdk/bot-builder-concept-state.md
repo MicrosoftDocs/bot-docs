@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/15/2018
+ms.date: 02/25/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -114,7 +114,7 @@ The accessor methods are the primary way for your bot to interact with state. Ho
   - Accessor requests property from the state cache.
   - If the property is in the cache, return it. Otherwise, get it from the state management object.
     (If it is not yet in state, use the factory method provided in the accessors *get* call.)
--The accessor's *set* method:
+- The accessor's *set* method:
   - Update the state cache with the new property value.
 - The state management object's *save changes* method:
   - Check the changes to the property in the state cache.
