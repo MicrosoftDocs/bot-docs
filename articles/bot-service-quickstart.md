@@ -128,6 +128,7 @@ You can download the code to work on it locally.
 1. In the **Bot Management** section, click **Build**. 
 1. Click on **Download Bot source code** link in the right-pane. 
 1. Follow the prompts to download the code, and then unzip the folder.
+    1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 
 The code you downloaded uses an encrypted [.bot file](./v4sdk/bot-file-basics.md). You'll need to update `botFilePath` and `botFileSecret` entires in the appsettings.json or .env file. 
 To do that, go to the Azure portal. Select your bot in the portal, then under **App Service Settings** section, click **Application Settings**. In the **Application Settings** pane, you'll 
