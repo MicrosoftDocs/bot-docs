@@ -50,6 +50,7 @@ After creating the target Web App Bot, you need to download the bot code from th
 1. In the **Bot Management** section, click **Build**.
 1. Click on **Download Bot source code** link in the right-pane.
 1. Follow the prompts to download the code, and then unzip the folder.
+	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 
 ### Decrypt the .bot file
 
@@ -196,6 +197,8 @@ If you are using an [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email
 
 Next, download the bot you just created. 
 [!INCLUDE [download bot snippet](~/includes/deploy/snippet-download-bot.md)]
+
+[!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 
 ### Decrypt the downloaded .bot file and use in your project
 

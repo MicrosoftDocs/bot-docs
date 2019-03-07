@@ -14,8 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 > [!NOTE]
 > This topic applies to v4 version of the SDK. 
 
-## .NET
-After you have deployed and tested that the Enterprise Bot Template works end-to-end as listed in the instructions [here](bot-builder-enterprise-template-deployment.md),
+After you have deployed and tested that the Enterprise Bot Template works end-to-end as listed in the instructions [here](bot-builder-enterprise-template-getting-started.md),
 you can easily customize your bot based on your scenario and needs. The goal of the template is to provide a solid foundation upon which to build your conversational experience.
 
 ## Project Structure
@@ -76,56 +75,56 @@ There are two Cognitive Models included with the Enterprise Template by default,
 To update an existing LUIS model for the Enterprise Template, perform these steps:
 1. Make your changes to the LUIS Model in the [LUIS Portal](http://luis.ai) or using the [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) and [Luis](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS) CLI tools. 
 2. Run the following command to update your Dispatch model to reflect your changes (ensures proper message routing):
-```shell
+    ```shell
     dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
-```
+    ```
 3. Run the following command from your project root for each updated model to update their associated LuisGen classes: 
-```shell
+    ```shell
     luis export version --appId [LUIS_APP_ID] --versionId [LUIS_APP_VERSION] --authoringKey [YOUR_LUIS_AUTHORING_KEY] | luisgen --cs [CS_FILE_NAME] -o "\Dialogs\Shared\Resources"
-```
+    ```
 
 ### Updating an existing QnA Maker knowledge base
 To update an existing QnA Maker knowledge base, perform the following steps:
 1. Make changes to your QnA Maker knowledge base via the [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) and [QnA Maker](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker) CLI tools or the [QnA Maker Portal](https://qnamaker.ai).
 2. Run the following command to update your Dispatch model to reflect your changes (ensures proper message routing):
-```shell
+    ```shell
     dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
-```
+    ```
 
 ### Adding a new LUIS model
 
 In scenarios where you wish to add a new LUIS model to your project you need to update the Bot configuration and Dispatcher to ensure it is aware of the additional model. 
 1. Create your LUIS model through LuDown/LUIS CLI tools or through the LUIS portal
 2. Run the following command to connect your new LUIS app to your .bot file:
-```shell
+    ```shell
     msbot connect luis --appId [LUIS_APP_ID] --authoringKey [LUIS_AUTHORING_KEY] --subscriptionKey [LUIS_SUBSCRIPTION_KEY] 
-```
+    ```
 3. Add this new LUIS model to your Dispatcher through the following command
-```shell
+    ```shell
     dispatch add -t luis -id LUIS_APP_ID -bot "YOUR_BOT.bot" --secret YOURSECRET
-```
+    ```
 4. Refresh the dispatch model to reflect the LUIS model changes through the following command
-```shell
+    ```shell
     dispatch refresh -bot "YOUR_BOT.bot" --secret YOUR_SECRET
-```
+    ```
 
 ### Adding an additional QnA Maker knowledge base
 
 In some scenarios you may wish to add an addditional QnA Maker knowledge base to your Bot, this can be performed through the following steps.
 
 1. Create a new QnA Maker knowledge base from a JSON file using the following command executed in your assistant directory
-```shell
-qnamaker create kb --in <KB.json> --msbot | msbot connect qna --stdin --bot "YOUR_BOT.bot" --secret YOURSECRET
-```
+    ```shell
+    qnamaker create kb --in <KB.json> --msbot | msbot connect qna --stdin --bot "YOUR_BOT.bot" --secret YOURSECRET
+    ```
 2. Run the following command to update your Dispatch model to reflect your changes
-```shell
-dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
-```
+    ```shell
+    dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
+    ```
 3. Update the strongly typed Dispatch class to reflect the new QnA source
-```shell
-msbot get dispatch --bot "YOUR_BOT.bot" | luis export version --stdin > dispatch.json
-luisgen dispatch.json -cs Dispatch -o Dialogs\Shared
-```
+    ```shell
+    msbot get dispatch --bot "YOUR_BOT.bot" | luis export version --stdin > dispatch.json
+    luisgen dispatch.json -cs Dispatch -o Dialogs\Shared
+    ```
 4.  Update the `Dialogs\Main\MainDialog.cs` file to include the corresponding Dispatch intent for your new QnA source following the example provided.
 
 You should now be able to leverage multiple QnA sources as part of your Bot.
@@ -198,6 +197,3 @@ await _responder.ReplyWith(sc.Context, OnboardingResponses.ResponseIds.HaveNameM
 The final piece of Dialog infrastruture is the creation of a State class scoped to your Dialog only. Create a new class and ensure it derives from `DialogState`
 
 Once your dialog is complete, your need to add the dialog to your `MainDialog` component using `AddDialog`. To use your new Dialog, call `dc.BeginDialogAsync()` from within your `RouteAsync` method, triggering with the appropriate LUIS intent if desired.
-
-## Conversational insights using PowerBI dashboard and Application Insights
-- To get started with getting Conversational insights, continue with  [Configure conversational analytics with PowerBI dashboard](bot-builder-enterprise-template-powerbi.md).
