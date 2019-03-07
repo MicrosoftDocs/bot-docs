@@ -29,6 +29,7 @@ If you have not configured continuous deployment, you can modify your source fil
 To set up publishing from Visual Studio using the `.PublishSettings` file, perform the following steps:
 
 1. In the Azure Portal, click your Bot Service, click the **BUILD** tab, and click **Download zip file**.
+	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 3. Extract the contents of the downloaded zip file to a local folder.
 4. In Explorer, find the Visual Studio Solution (.sln) file for your bot, and double-click it.
 4. In Visual Studio, click **View**, and click **Solution Explorer**.
@@ -62,6 +63,7 @@ This section describes how to enable continuous deployment for a bot that you cr
 Follow these steps if you want to use a source control service *other than* Visual Studio Online or Github. Visual Studio Online and Github will pull the source code for your bot from Azure, so users of those two services can skip these steps.
 
 3. For a bot on an App Service plan, find your bot page on Azure, click the **BUILD** tab, find the **Download source code** section, and click **Download zip file**.
+	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 1. Create an empty repository within one of the source control systems that Azure supports.
 
     ![Source control system](~/media/continuous-integration-sourcecontrolsystem.png)

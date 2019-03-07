@@ -76,6 +76,8 @@ If you are using an [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email
 Next, download the bot you just created. 
 [!INCLUDE [download bot snippet](~/includes/deploy/snippet-download-bot.md)]
 
+[!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
+
 ### Decrypt the downloaded .bot file and use in your project
 
 The sensitive information in the .bot file is encrypted, so let's decrypt it so we can use it easily. 

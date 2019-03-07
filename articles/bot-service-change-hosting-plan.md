@@ -28,6 +28,7 @@ Follow these steps to download the source code of your existing bot:
 
 1. Within your Azure bot, click the **Settings** tab and expand the **Continuous deployment** section.  
 2. Click the blue button to download the zip file that contains the source code for your bot.  
+	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
     ![Download the bot zip file](~/media/continuous-deployment-consumption-download.png)
 3. Extract the contents of the downloaded zip file to a local folder. 
 
