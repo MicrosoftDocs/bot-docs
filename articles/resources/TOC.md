@@ -1,10 +1,7 @@
 # Enterprise template
-## [Introduction](../v4sdk/bot-builder-enterprise-template-overview.md)
-## [Overview](../v4sdk/bot-builder-enterprise-template-overview-detail.md)
-## [Create a project](../v4sdk/bot-builder-enterprise-template-create-project.md)
+## [Overview](../v4sdk/bot-builder-enterprise-template-overview.md)
+## [Get Started](../v4sdk/bot-builder-enterprise-template-getting-started.md)
 ## [Customize template](../v4sdk/bot-builder-enterprise-template-customize.md)
-## [Deploy template](../v4sdk/bot-builder-enterprise-template-deployment.md)
-## [Analytics](../v4sdk/bot-builder-enterprise-template-powerbi.md)
 # Virtual Assistant 
 ## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
 # [FAQ](../bot-service-resources-bot-framework-faq.md)
