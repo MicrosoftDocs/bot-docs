@@ -76,11 +76,12 @@ To update an existing LUIS model for the Enterprise Template, perform these step
 1. Make your changes to the LUIS Model in the [LUIS Portal](http://luis.ai) or using the [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) and [Luis](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS) CLI tools. 
 2. Run the following command to update your Dispatch model to reflect your changes (ensures proper message routing):
     ```shell
-    dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
+    dispatch refresh --bot "YOUR_BOT.bot" --secret [YOUR_SECRET] --version [YOUR_LUIS_VERSION]
     ```
-3. Run the following command from your project root for each updated model to update their associated LuisGen classes: 
+3. Run the following commands from your project root for each updated model to update their associated LuisGen classes: 
     ```shell
-    luis export version --appId [LUIS_APP_ID] --versionId [LUIS_APP_VERSION] --authoringKey [YOUR_LUIS_AUTHORING_KEY] | luisgen --cs [CS_FILE_NAME] -o "\Dialogs\Shared\Resources"
+    luis export version --appId [LUIS_APP_ID] --versionId [LUIS_APP_VERSION] --authoringKey [YOUR_LUIS_AUTHORING_KEY] > [CS_FILE_NAME].json 
+    luisgen [CS_FILE_NAME].json -cs [CS_FILE_NAME] -o ".\Dialogs\Shared\Resources"
     ```
 
 ### Updating an existing QnA Maker knowledge base
@@ -88,7 +89,7 @@ To update an existing QnA Maker knowledge base, perform the following steps:
 1. Make changes to your QnA Maker knowledge base via the [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) and [QnA Maker](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker) CLI tools or the [QnA Maker Portal](https://qnamaker.ai).
 2. Run the following command to update your Dispatch model to reflect your changes (ensures proper message routing):
     ```shell
-    dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
+    dispatch refresh --bot "YOUR_BOT.bot" --secret [YOUR_SECRET]
     ```
 
 ### Adding a new LUIS model
@@ -97,15 +98,15 @@ In scenarios where you wish to add a new LUIS model to your project you need to 
 1. Create your LUIS model through LuDown/LUIS CLI tools or through the LUIS portal
 2. Run the following command to connect your new LUIS app to your .bot file:
     ```shell
-    msbot connect luis --appId [LUIS_APP_ID] --authoringKey [LUIS_AUTHORING_KEY] --subscriptionKey [LUIS_SUBSCRIPTION_KEY] 
+    msbot connect luis --appId [LUIS_APP_ID] --authoringKey [LUIS_AUTHORING_KEY] --subscriptionKey [LUIS_SUBSCRIPTION_KEY] --secret [YOUR_SECRET] --version [YOUR_LUIS_VERSION] --name [YOUR_LUIS_NAME]
     ```
 3. Add this new LUIS model to your Dispatcher through the following command
     ```shell
-    dispatch add -t luis -id LUIS_APP_ID -bot "YOUR_BOT.bot" --secret YOURSECRET
+    dispatch add -t luis -id [LUIS_APP_ID] -bot "YOUR_BOT.bot" --secret [YOUR_SECRET]
     ```
 4. Refresh the dispatch model to reflect the LUIS model changes through the following command
     ```shell
-    dispatch refresh -bot "YOUR_BOT.bot" --secret YOUR_SECRET
+    dispatch refresh -bot "YOUR_BOT.bot" --secret [YOUR_SECRET] --version Dispatch
     ```
 
 ### Adding an additional QnA Maker knowledge base
@@ -114,11 +115,11 @@ In some scenarios you may wish to add an addditional QnA Maker knowledge base to
 
 1. Create a new QnA Maker knowledge base from a JSON file using the following command executed in your assistant directory
     ```shell
-    qnamaker create kb --in <KB.json> --msbot | msbot connect qna --stdin --bot "YOUR_BOT.bot" --secret YOURSECRET
+    qnamaker create kb --in <KB.json> --msbot | msbot connect qna --stdin --bot "YOUR_BOT.bot" --secret [YOUR_SECRET]
     ```
 2. Run the following command to update your Dispatch model to reflect your changes
     ```shell
-    dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
+    dispatch refresh --bot "YOUR_BOT.bot" --secret [YOUR_SECRET]
     ```
 3. Update the strongly typed Dispatch class to reflect the new QnA source
     ```shell
