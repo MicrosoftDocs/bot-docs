@@ -66,7 +66,7 @@ Event.*                    | :white_large_square: | :white_check_mark: | :white_
 Event.CreateConversation   | :white_large_square: | :white_large_square: | :white_large_square:   | :white_large_square: | :white_large_square:  | :white_large_square: | :white_large_square: | :white_large_square:  | :white_large_square:  | :white_large_square:  | :white_large_square:           | :white_large_square:     | :white_large_square:  
 Event.ContinueConversation | :white_large_square: | :white_large_square: | :white_large_square:   | :white_large_square: | :white_large_square:  | :white_large_square: | :white_large_square: | :white_large_square:  | :white_large_square:  | :white_large_square:  | :white_large_square:           | :white_large_square:     | :white_large_square:  
 
-- Event Activities are an extensibility mechanism in Direct Line (_aka Direct Line_).
+- Event Activities are an extensibility mechanism in Direct Line (_aka Web Chat_).
 - An application that owns both the client and server may chose to tunnel their own events through the service using this Event Activity.
 
 
@@ -80,7 +80,7 @@ Invoke.ComposeResponse     | :x:      | :x:          | :x: | :x:   | :x:       |
 
 - Along with a number of the other typed Activities, Microsoft Teams defines a few Teams specific Invoke Activities.
 - Invoke Activities are specific to an application and not something a client would define.
-- There is no general notion of Invoke only specific subtypes of the Activity.
+- There is no general notion of Invoke specific subtypes of the activity.
 - Invoke is currently the only Activity that triggers a request-reply behavior on the bot.
 
 This is very important: if using Dialogs for the OAuth Prompt to work the Invoke.TeamsVerification Activity must be forwarded to the Dialog.
