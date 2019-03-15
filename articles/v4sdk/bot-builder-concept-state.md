@@ -52,7 +52,7 @@ These state properties are lumped into scoped "buckets", which are just collecti
 
 All of these buckets are subclasses of the *bot state* class, which can be derived to define other types of buckets with different scopes.
 
-These predifined buckets are scoped to a certain visibility, depending on the bucket:
+These predefined buckets are scoped to a certain visibility, depending on the bucket:
 
 - User state is available in any turn that the bot is conversing with that user on that channel, regardless of the conversation
 - Conversation state is available in any turn in a specific conversation, regardless of user (i.e. group conversations)

@@ -153,18 +153,6 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 const { BotFrameworkAdapter, ConversationState, MemoryStorage } = require('botbuilder');
 const restify = require('restify');
 
-// Create server.
-// let server = restify.createServer();
-// server.listen(process.env.port || process.env.PORT || 3978, function () {
-//    console.log(`${server.name} listening to ${server.url}`);
-// });
-
-// Create adapter.
-// const adapter = new BotFrameworkAdapter({
-//    appId: process.env.MICROSOFT_APP_ID,
-//    appPassword: process.env.MICROSOFT_APP_PASSWORD
-//  });
-
 // Add memory storage.
 var storage = new MemoryStorage();
 

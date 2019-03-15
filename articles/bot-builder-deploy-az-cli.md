@@ -129,6 +129,9 @@ You can use the msbot tool to generate a new secret and encrypt the .bot file be
 msbot secret --bot <name-of-bot-file> --new
 ```
 
+> [!TIP]
+> In the file properties for your .bot file, inside Visual Studio, make sure the **Copy to Output Directory** is set to *Copy always*.
+
 ### Setup a repository
 
 To support continuous deployment, create a git repository using your favorite git source control provider. Commit your code into the repository.
