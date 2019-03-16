@@ -79,6 +79,11 @@ If you're using the Bot Framework SDK for .NET, set the following key values in 
 * MicrosoftAppId
 * MicrosoftAppPassword
 
+If you're using the Bot Framework SDK in .Net Core project, set the following key values (with the correct endpoint) in the *.bot file:
+
+* appId
+* appPassword
+
 ## Test the bot
 
 Now that your bot service is created, [test it in Web Chat](bot-service-manage-test-webchat.md). Enter a message and your bot should respond.
