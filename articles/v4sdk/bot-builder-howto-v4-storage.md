@@ -536,7 +536,7 @@ Send a message to your bot, and the bot will list the messages it received.
 After you have run your bot and saved your information, we can view it in under the **Storage Explorer** tab in the Azure portal.
 
 ## Blob transcript storage
-Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine when debugging of your bot's performance.
+Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine when debugging your bot's performance.
 
 ### Set up
 Azure blob transcript storage can use the same blob storage account created following the steps detailed in sections "_Create your blob storage account_" and "_Add configuration information_" above. For this discussion, we have added a new blob container, "_mybottranscripts_." 
@@ -570,7 +570,7 @@ public ConversationHistoryBot(AzureBlobTranscriptStore transcriptStore)
 ```
 
 ### Store user conversations in azure blob transcripts
-After a blob container is available to store transcripts you can begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users are interacting with your bot. The following code preserves user conversation inputs when activity.text receives the input message _!history_.
+After the TranscriptLoggerMiddleware is added, the Transcript Store will automatically begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users are interacting with your bot. The following code retrieves the transcript, then sends it to the current conversation when activity.text receives the input message _!history_. Note: the SendConversationHistoryAsync method is supported in the Direct Line, Web Chat and Emulator channels.
 
 
 ```csharp
