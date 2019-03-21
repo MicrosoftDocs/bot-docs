@@ -67,6 +67,8 @@ Composable scorable dispatch trees and composable chain dialogs, such as _defaul
 
 ## State management
 
+In v3, you can store conversation data in the Bot State Service that is part of the larger suit of services provided to you in the Bot Framework. However, the service has been retired since March 31st, 2018. Beginning with v4, the design considerations on managing state is just like any Web App and there are a number of options available. Caching it in memory and in the same process is usually the easiest but for production like apps you should store state more permanently in database, NoSQL database or even blobs.
+
 v4 doesn't use `UserData`, `ConversationData`, and `PrivateConversationData` properties and data bags to manage state.
 ​State is now managed via state management objects and property accessors as described in [managing state](../bot-builder-concept-state.md).
 
@@ -116,11 +118,13 @@ Here are some of the major changes to dialogs:
 
 ### Defining dialogs
 
+While v3 provides a flexible way to implement dialogs using the IDialog interface, it does mean that you have to implement your own code for features such as validation. In v4, there are now Prompts that will automatically validate the user input to be of certain type such as integer for example and prompt the user again until a correct type is provided. In general, this means less code to write as a developer. 
+
 You have a few options for how to define dialogs now:
 
 - A waterfall dialog, an instance of the `WaterfallDialog` class.
 
-  This is designed to work well with the prompt dialogs, which prompt for and validate various types of user input. See [prompt for input](../bot-builder-prompts.md).
+  In v3, FormFlow is what you would use when there is a set number of steps required to perform a task. WaterfallDialog now replaces FormFlow in v4. It is a class you inherit from and the steps are defined in the constructor. The order of steps executed follows exactly how you have declared it and automatically moves forward one after another. It is also designed to work well with the prompt dialogs, which prompt for and validate various types of user input. See [prompt for input](../bot-builder-prompts.md).
 
   This automates most of the process for you, but imposes a certain form to your dialog code; see [sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md). However, you can create other control flows by adding multiple dialogs to a dialog set; see [advanced conversation flow](../bot-builder-dialog-manage-complex-conversation-flow.md).
 
@@ -186,6 +190,11 @@ In v3, Formflow was part of the C# SDK, but not part of the JavaScript SDK. It i
 | NuGet package name | Community GitHub repo |
 |-|-|
 | Bot.Builder.Community.Dialogs.Formflow | [BotBuilderCommunity/botbuilder-community-dotnet/libraries/Bot.Builder.Community.Dialogs.FormFlow](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/master/libraries/Bot.Builder.Community.Dialogs.FormFlow) |
+
+## Bot Configuration
+
+In v3, the bot Id, app Id and app password are stored in the Web.config file. Beginning with v4, there is a new JSON configuration file to store bot specific settings in the .bot file. It is conceptually similar to the appsettings.json file in the ASP.NET Core project. See [bot file basics](../bot-file-basics.md).
+
 
 ## Additional resources
 
