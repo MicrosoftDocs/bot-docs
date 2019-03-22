@@ -21,7 +21,7 @@ Symbol              | Meaning
 :------------------:|:------------------------------------------------
 :white_check_mark:  |The Bot should expect to receive this Activity
 :x:                 |The Bot should **never** expect to receive this Activity
-:white_large_square:|Currenly undetermined whether the Bot can receive this
+:white_large_square:|Currently undetermined whether the Bot can receive this
 
 Activities can meaningfully be split into separate categories. For each category we have a table of possible Activities.
 
