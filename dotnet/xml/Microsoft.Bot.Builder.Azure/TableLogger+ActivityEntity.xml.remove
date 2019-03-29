@@ -1,0 +1,291 @@
+<Type Name="TableLogger+ActivityEntity" FullName="Microsoft.Bot.Builder.Azure.TableLogger+ActivityEntity">
+  <TypeSignature Language="C#" Value="public class TableLogger.ActivityEntity : Microsoft.WindowsAzure.Storage.Table.TableEntity" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit TableLogger/ActivityEntity extends Microsoft.WindowsAzure.Storage.Table.TableEntity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableLogger.ActivityEntity&#xA;Inherits TableEntity" />
+  <TypeSignature Language="F#" Value="type TableLogger.ActivityEntity = class&#xA;    inherit TableEntity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.WindowsAzure.Storage.Table.TableEntity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Activity entity for table storage.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityEntity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Empty constructor.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityEntity (Microsoft.Bot.Connector.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.#ctor(Microsoft.Bot.Connector.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (activity As IActivity)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity : Microsoft.Bot.Connector.IActivity -&gt; Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity" Usage="new Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity activity" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">
+        </param>
+        <summary>
+            Construct from an IActivity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IActivity Activity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IActivity Activity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Activity As IActivity" />
+      <MemberSignature Language="F#" Value="member this.Activity : Microsoft.Bot.Connector.IActivity with get, set" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Microsoft.WindowsAzure.Storage.Table.IgnoreProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IActivity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Logged activity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public string From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string From" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As String" />
+      <MemberSignature Language="F#" Value="member this.From : string with get, set" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.From" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Channel identifier for sender.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeneratePartitionKey">
+      <MemberSignature Language="C#" Value="public static string GeneratePartitionKey (string channelId, string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GeneratePartitionKey(string channelId, string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GeneratePartitionKey(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GeneratePartitionKey (channelId As String, conversationId As String) As String" />
+      <MemberSignature Language="F#" Value="static member GeneratePartitionKey : string * string -&gt; string" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GeneratePartitionKey (channelId, conversationId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">Channel where activity happened.</param>
+        <param name="conversationId">Conversation where activity happened.</param>
+        <summary>
+            Generate a partition key given <paramref name="channelId" /> and <paramref name="conversationId" />.
+            </summary>
+        <returns>Partition key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateRowKey">
+      <MemberSignature Language="C#" Value="public static string GenerateRowKey (DateTime timestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateRowKey(valuetype System.DateTime timestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GenerateRowKey(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateRowKey (timestamp As DateTime) As String" />
+      <MemberSignature Language="F#" Value="static member GenerateRowKey : DateTime -&gt; string" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GenerateRowKey timestamp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timestamp" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="timestamp">Timestamp of activity.</param>
+        <summary>
+            Generate row key for ascending <paramref name="timestamp" />.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateRowKey">
+      <MemberSignature Language="C#" Value="public static string GenerateRowKey (DateTimeOffset timestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateRowKey(valuetype System.DateTimeOffset timestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GenerateRowKey(System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateRowKey (timestamp As DateTimeOffset) As String" />
+      <MemberSignature Language="F#" Value="static member GenerateRowKey : DateTimeOffset -&gt; string" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GenerateRowKey timestamp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timestamp" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="timestamp">Timestamp of activity.</param>
+        <summary>
+            Generate row key for ascending <paramref name="timestamp" />.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntity">
+      <MemberSignature Language="C#" Value="public override void ReadEntity (System.Collections.Generic.IDictionary&lt;string,Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt; properties, Microsoft.WindowsAzure.Storage.OperationContext operationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadEntity(class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt; properties, class Microsoft.WindowsAzure.Storage.OperationContext operationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)" />
+      <MemberSignature Language="F#" Value="override this.ReadEntity : System.Collections.Generic.IDictionary&lt;string, Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt; * Microsoft.WindowsAzure.Storage.OperationContext -&gt; unit" Usage="activityEntity.ReadEntity (properties, operationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt;" />
+        <Parameter Name="operationContext" Type="Microsoft.WindowsAzure.Storage.OperationContext" />
+      </Parameters>
+      <Docs>
+        <param name="properties">
+        </param>
+        <param name="operationContext">
+        </param>
+        <summary>
+            Read entity with distributed activity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recipient">
+      <MemberSignature Language="C#" Value="public string Recipient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Recipient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Recipient" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recipient As String" />
+      <MemberSignature Language="F#" Value="member this.Recipient : string with get, set" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Recipient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Channel identifier for receiver.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public double Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As Double" />
+      <MemberSignature Language="F#" Value="member this.Version : double with get, set" Usage="Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Version number for the underlying activity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEntity">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IDictionary&lt;string,Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt; WriteEntity (Microsoft.WindowsAzure.Storage.OperationContext operationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt; WriteEntity(class Microsoft.WindowsAzure.Storage.OperationContext operationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)" />
+      <MemberSignature Language="F#" Value="override this.WriteEntity : Microsoft.WindowsAzure.Storage.OperationContext -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt;" Usage="activityEntity.WriteEntity operationContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationContext" Type="Microsoft.WindowsAzure.Storage.OperationContext" />
+      </Parameters>
+      <Docs>
+        <param name="operationContext">
+        </param>
+        <summary>
+            Write out entity with distributed activity.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -53,6 +55,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -75,6 +78,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -97,6 +101,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -104,6 +109,27 @@
       <Docs>
         <summary>
             TO BOT FROM GOVERNMENT CHANNEL: Token issuer
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBotFromEmulatorOpenIdMetadataUrl">
+      <MemberSignature Language="C#" Value="public const string ToBotFromEmulatorOpenIdMetadataUrl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToBotFromEmulatorOpenIdMetadataUrl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToBotFromEmulatorOpenIdMetadataUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToBotFromEmulatorOpenIdMetadataUrl As String " />
+      <MemberSignature Language="F#" Value="val mutable ToBotFromEmulatorOpenIdMetadataUrl : string" Usage="Microsoft.Bot.Connector.Authentication.GovernmentAuthenticationConstants.ToBotFromEmulatorOpenIdMetadataUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TO BOT FROM GOVERNMENT EMULATOR: OpenID metadata document for tokens coming from MSA
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,6 +145,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -141,6 +168,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

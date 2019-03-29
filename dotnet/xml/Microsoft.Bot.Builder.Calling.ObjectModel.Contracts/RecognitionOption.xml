@@ -1,0 +1,171 @@
+﻿<Type Name="RecognitionOption" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption">
+  <TypeSignature Language="C#" Value="public class RecognitionOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecognitionOption extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecognitionOption" />
+  <TypeSignature Language="F#" Value="type RecognitionOption = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is part of the "recognize" action. If the customer wants to speech/dtmf choice based recognition - this needs to be specified.
+            Ex: say "Sales" or enter 1 for Sales department
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecognitionOption ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DtmfVariation">
+      <MemberSignature Language="C#" Value="public Nullable&lt;char&gt; DtmfVariation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;char&gt; DtmfVariation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.DtmfVariation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DtmfVariation As Nullable(Of Char)" />
+      <MemberSignature Language="F#" Value="member this.DtmfVariation : Nullable&lt;char&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.DtmfVariation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dtmf variations for the choice. 
+            Ex: Name : "Yes" , DtmfVariation : {'1'}
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the choice. Once a choice matches, this name is conveyed back to the customer in the outcome.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeechVariation">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; SpeechVariation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; SpeechVariation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.SpeechVariation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeechVariation As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SpeechVariation : seq&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.SpeechVariation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Speech variations which form the grammar for the choice. 
+            Ex: Name : "Yes" , SpeechVariation : {"Yes", "yeah", "ya", "yo" }
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; unit" Usage="recognitionOption.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt; choices);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt; choices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Validate(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (choices As IEnumerable(Of RecognitionOption))" />
+      <MemberSignature Language="F#" Value="static member Validate : seq&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Validate choices" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choices" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="choices">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

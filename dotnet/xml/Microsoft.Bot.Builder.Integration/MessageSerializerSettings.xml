@@ -1,0 +1,42 @@
+﻿<Type Name="MessageSerializerSettings" FullName="Microsoft.Bot.Builder.Integration.MessageSerializerSettings">
+  <TypeSignature Language="C#" Value="public static class MessageSerializerSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MessageSerializerSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.MessageSerializerSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageSerializerSettings" />
+  <TypeSignature Language="F#" Value="type MessageSerializerSettings = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.JsonSerializerSettings Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.JsonSerializerSettings Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.MessageSerializerSettings.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As JsonSerializerSettings" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Builder.Integration.MessageSerializerSettings.Create " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

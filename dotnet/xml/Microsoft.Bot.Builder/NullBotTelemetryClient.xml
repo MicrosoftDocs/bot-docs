@@ -1,0 +1,253 @@
+﻿<Type Name="NullBotTelemetryClient" FullName="Microsoft.Bot.Builder.NullBotTelemetryClient">
+  <TypeSignature Language="C#" Value="public class NullBotTelemetryClient : Microsoft.Bot.Builder.IBotTelemetryClient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NullBotTelemetryClient extends System.Object implements class Microsoft.Bot.Builder.IBotTelemetryClient" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.NullBotTelemetryClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class NullBotTelemetryClient&#xA;Implements IBotTelemetryClient" />
+  <TypeSignature Language="F#" Value="type NullBotTelemetryClient = class&#xA;    interface IBotTelemetryClient" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IBotTelemetryClient</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NullBotTelemetryClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="nullBotTelemetryClient.Flush " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IBotTelemetryClient.Flush</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.IBotTelemetryClient Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.IBotTelemetryClient Instance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.NullBotTelemetryClient.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As IBotTelemetryClient" />
+      <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Bot.Builder.IBotTelemetryClient" Usage="Microsoft.Bot.Builder.NullBotTelemetryClient.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackAvailability">
+      <MemberSignature Language="C#" Value="public void TrackAvailability (string name, DateTimeOffset timeStamp, TimeSpan duration, string runLocation, bool success, string message = null, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = null, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackAvailability(string name, valuetype System.DateTimeOffset timeStamp, valuetype System.TimeSpan duration, string runLocation, bool success, string message, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackAvailability(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackAvailability (name As String, timeStamp As DateTimeOffset, duration As TimeSpan, runLocation As String, success As Boolean, Optional message As String = null, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="F#" Value="abstract member TrackAvailability : string * DateTimeOffset * TimeSpan * string * bool * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackAvailability : string * DateTimeOffset * TimeSpan * string * bool * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackAvailability (name, timeStamp, duration, runLocation, success, message, properties, metrics)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackAvailability(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="timeStamp" Type="System.DateTimeOffset" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="runLocation" Type="System.String" />
+        <Parameter Name="success" Type="System.Boolean" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="timeStamp">To be added.</param>
+        <param name="duration">To be added.</param>
+        <param name="runLocation">To be added.</param>
+        <param name="success">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="metrics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackDependency">
+      <MemberSignature Language="C#" Value="public void TrackDependency (string dependencyTypeName, string target, string dependencyName, string data, DateTimeOffset startTime, TimeSpan duration, string resultCode, bool success);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackDependency(string dependencyTypeName, string target, string dependencyName, string data, valuetype System.DateTimeOffset startTime, valuetype System.TimeSpan duration, string resultCode, bool success) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackDependency(System.String,System.String,System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackDependency (dependencyTypeName As String, target As String, dependencyName As String, data As String, startTime As DateTimeOffset, duration As TimeSpan, resultCode As String, success As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TrackDependency : string * string * string * string * DateTimeOffset * TimeSpan * string * bool -&gt; unit&#xA;override this.TrackDependency : string * string * string * string * DateTimeOffset * TimeSpan * string * bool -&gt; unit" Usage="nullBotTelemetryClient.TrackDependency (dependencyTypeName, target, dependencyName, data, startTime, duration, resultCode, success)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackDependency(System.String,System.String,System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyTypeName" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="dependencyName" Type="System.String" />
+        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="startTime" Type="System.DateTimeOffset" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="resultCode" Type="System.String" />
+        <Parameter Name="success" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyTypeName">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="dependencyName">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="startTime">To be added.</param>
+        <param name="duration">To be added.</param>
+        <param name="resultCode">To be added.</param>
+        <param name="success">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackEvent">
+      <MemberSignature Language="C#" Value="public void TrackEvent (string eventName, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = null, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackEvent(string eventName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackEvent (eventName As String, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="F#" Value="abstract member TrackEvent : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackEvent : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackEvent (eventName, properties, metrics)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="metrics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackException">
+      <MemberSignature Language="C#" Value="public void TrackException (Exception exception, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = null, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackException(class System.Exception exception, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <MemberSignature Language="F#" Value="abstract member TrackException : Exception * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackException : Exception * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackException (exception, properties, metrics)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="exception">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="metrics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackTrace">
+      <MemberSignature Language="C#" Value="public void TrackTrace (string message, Microsoft.Bot.Builder.Severity severityLevel, System.Collections.Generic.IDictionary&lt;string,string&gt; properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackTrace(string message, valuetype Microsoft.Bot.Builder.Severity severityLevel, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackTrace(System.String,Microsoft.Bot.Builder.Severity,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackTrace (message As String, severityLevel As Severity, properties As IDictionary(Of String, String))" />
+      <MemberSignature Language="F#" Value="abstract member TrackTrace : string * Microsoft.Bot.Builder.Severity * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit&#xA;override this.TrackTrace : string * Microsoft.Bot.Builder.Severity * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackTrace (message, severityLevel, properties)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackTrace(System.String,Microsoft.Bot.Builder.Severity,System.Collections.Generic.IDictionary{System.String,System.String})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="severityLevel" Type="Microsoft.Bot.Builder.Severity" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="severityLevel">To be added.</param>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

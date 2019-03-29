@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -69,6 +71,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -107,6 +110,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -136,6 +140,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -175,6 +180,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -211,6 +217,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -238,6 +245,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
@@ -265,6 +273,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
@@ -294,6 +303,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -330,6 +340,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -365,6 +376,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -396,6 +408,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -431,6 +444,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
@@ -460,6 +474,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Double&gt;&gt;</ReturnType>
@@ -493,6 +508,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
@@ -522,6 +538,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;System.Int64&gt;&gt;</ReturnType>
@@ -554,6 +571,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -593,6 +611,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -620,6 +639,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

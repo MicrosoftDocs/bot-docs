@@ -1,0 +1,69 @@
+﻿<Type Name="OperationOutcomeConverter" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter">
+  <TypeSignature Language="C#" Value="public class OperationOutcomeConverter : Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationOutcomeConverter extends Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class OperationOutcomeConverter&#xA;Inherits JsonCreationConverter(Of OperationOutcomeBase)" />
+  <TypeSignature Language="F#" Value="type OperationOutcomeConverter = class&#xA;    inherit JsonCreationConverter&lt;OperationOutcomeBase&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            By default Json.net doesn't know how to deserialize JSON data into Interfaces or abstract classes.
+            This custom Converter helps deserialize "operationOutcomes" specified in JSON into respective concrete "OperationOutcome" classes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OperationOutcomeConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase Create (Type objectType, Newtonsoft.Json.Linq.JObject jsonObject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase Create(class System.Type objectType, class Newtonsoft.Json.Linq.JObject jsonObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter.Create(System.Type,Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Create (objectType As Type, jsonObject As JObject) As OperationOutcomeBase" />
+      <MemberSignature Language="F#" Value="override this.Create : Type * Newtonsoft.Json.Linq.JObject -&gt; Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" Usage="operationOutcomeConverter.Create (objectType, jsonObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="jsonObject" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="objectType">To be added.</param>
+        <param name="jsonObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

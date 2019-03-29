@@ -1,0 +1,74 @@
+<Type Name="ResolveAssembly" FullName="Microsoft.Bot.Builder.Azure.ResolveAssembly">
+  <TypeSignature Language="C#" Value="public sealed class ResolveAssembly : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResolveAssembly extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.ResolveAssembly" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResolveAssembly&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ResolveAssembly = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A helper class responsible for resolving the calling assembly
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Azure.ResolveAssembly Create (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Azure.ResolveAssembly Create(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.ResolveAssembly.Create(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="static member Create : System.Reflection.Assembly -&gt; Microsoft.Bot.Builder.Azure.ResolveAssembly" Usage="Microsoft.Bot.Builder.Azure.ResolveAssembly.Create assembly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Azure.ResolveAssembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly"> The assembly</param>
+        <summary>
+            Creates an instance of ResovelCallingAssembly
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.ResolveAssembly.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

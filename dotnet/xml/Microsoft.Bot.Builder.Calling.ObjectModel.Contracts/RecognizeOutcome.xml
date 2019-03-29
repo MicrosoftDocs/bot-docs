@@ -1,0 +1,118 @@
+﻿<Type Name="RecognizeOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome">
+  <TypeSignature Language="C#" Value="public class RecognizeOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecognizeOutcome extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecognizeOutcome&#xA;Inherits OperationOutcomeBase" />
+  <TypeSignature Language="F#" Value="type RecognizeOutcome = class&#xA;    inherit OperationOutcomeBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This is the outcome of the "recognize" action. This is conveyed to the customer as POST to the customer CallBack Url.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecognizeOutcome ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceOutcome">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome ChoiceOutcome { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome ChoiceOutcome" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.ChoiceOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceOutcome As ChoiceOutcome" />
+      <MemberSignature Language="F#" Value="member this.ChoiceOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.ChoiceOutcome" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Outcome of the Choice based recognition ( if any was specified in the action )
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectDigitsOutcome">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome CollectDigitsOutcome { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome CollectDigitsOutcome" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.CollectDigitsOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollectDigitsOutcome As CollectDigitsOutcome" />
+      <MemberSignature Language="F#" Value="member this.CollectDigitsOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome with get, set" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.CollectDigitsOutcome" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Outcome of the collectDigits recognition ( if any was specified in the action )
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="recognizeOutcome.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

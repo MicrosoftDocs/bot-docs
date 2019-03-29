@@ -1,0 +1,152 @@
+﻿<Type Name="ParsedCallingRequest" FullName="Microsoft.Bot.Builder.Calling.ParsedCallingRequest">
+  <TypeSignature Language="C#" Value="public class ParsedCallingRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParsedCallingRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ParsedCallingRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParsedCallingRequest" />
+  <TypeSignature Language="F#" Value="type ParsedCallingRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The parsed calling request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParsedCallingRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalData">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; AdditionalData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; AdditionalData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.AdditionalData" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalData As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="member this.AdditionalData : System.Threading.Tasks.Task&lt;System.IO.Stream&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.ParsedCallingRequest.AdditionalData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The additional data when calling request has multipart content. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public string Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As String" />
+      <MemberSignature Language="F#" Value="member this.Content : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ParsedCallingRequest.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The calling request content.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Faulted">
+      <MemberSignature Language="C#" Value="public bool Faulted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Faulted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Public Function Faulted () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Faulted : unit -&gt; bool" Usage="parsedCallingRequest.Faulted " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Check if the parser is faulted on parsing incoming request.
+            </summary>
+        <returns> True if <see cref="T:Microsoft.Bot.Builder.Calling.CallingContext" /> is successful in processing the request; False otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseStatusCode">
+      <MemberSignature Language="C#" Value="public System.Net.HttpStatusCode ParseStatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.HttpStatusCode ParseStatusCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.ParseStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParseStatusCode As HttpStatusCode" />
+      <MemberSignature Language="F#" Value="member this.ParseStatusCode : System.Net.HttpStatusCode with get, set" Usage="Microsoft.Bot.Builder.Calling.ParsedCallingRequest.ParseStatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The status code indicating if the request parser was successful or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <see cref="F:System.Net.HttpStatusCode.OK" /> if successful.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkypeChainId">
+      <MemberSignature Language="C#" Value="public string SkypeChainId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SkypeChainId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.SkypeChainId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkypeChainId As String" />
+      <MemberSignature Language="F#" Value="member this.SkypeChainId : string with get, set" Usage="Microsoft.Bot.Builder.Calling.ParsedCallingRequest.SkypeChainId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Skype chain Id, look at the documentation X-Microsoft-Skype-Chain-ID header value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

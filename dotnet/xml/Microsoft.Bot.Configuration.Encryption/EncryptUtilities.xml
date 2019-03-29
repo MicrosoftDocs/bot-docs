@@ -1,0 +1,160 @@
+﻿<Type Name="EncryptUtilities" FullName="Microsoft.Bot.Configuration.Encryption.EncryptUtilities">
+  <TypeSignature Language="C#" Value="public static class EncryptUtilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EncryptUtilities extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.Encryption.EncryptUtilities" />
+  <TypeSignature Language="VB.NET" Value="Public Module EncryptUtilities" />
+  <TypeSignature Language="F#" Value="type EncryptUtilities = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public static string Decrypt (this string encryptedText, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decrypt(string encryptedText, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Decrypt(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Decrypt (encryptedText As String, key As String) As String" />
+      <MemberSignature Language="F#" Value="static member Decrypt : string * string -&gt; string" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Decrypt (encryptedText, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encryptedText" Type="System.String" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedText">The base64-encrypted string.</param>
+        <param name="key">The key to use for decryption.</param>
+        <summary>
+            Decrypts a string.
+            </summary>
+        <returns>The decrypted string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecryptStringFromBytes_Aes">
+      <MemberSignature Language="C#" Value="public static string DecryptStringFromBytes_Aes (byte[] cipherText, byte[] key, byte[] iv);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DecryptStringFromBytes_Aes(unsigned int8[] cipherText, unsigned int8[] key, unsigned int8[] iv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.DecryptStringFromBytes_Aes(System.Byte[],System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecryptStringFromBytes_Aes (cipherText As Byte(), key As Byte(), iv As Byte()) As String" />
+      <MemberSignature Language="F#" Value="static member DecryptStringFromBytes_Aes : byte[] * byte[] * byte[] -&gt; string" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.DecryptStringFromBytes_Aes (cipherText, key, iv)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cipherText" Type="System.Byte[]" />
+        <Parameter Name="key" Type="System.Byte[]" />
+        <Parameter Name="iv" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="cipherText">The encrypted bytes.</param>
+        <param name="key">The 32-byte encryption key to use.</param>
+        <param name="iv">A 16-byte initialization vector to use.</param>
+        <summary>
+            Decrypts a string using Advanced Encryption Standard (AES).
+            </summary>
+        <returns>The decrypted string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public static string Encrypt (this string plainText, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encrypt(string plainText, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Encrypt(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Encrypt (plainText As String, key As String) As String" />
+      <MemberSignature Language="F#" Value="static member Encrypt : string * string -&gt; string" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Encrypt (plainText, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plainText" Type="System.String" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="plainText">The string to encrypt.</param>
+        <param name="key">The key to use for encryption.</param>
+        <summary>
+            Encrypts a string.
+            </summary>
+        <returns>The base64-encrypted value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptStringToBytes_Aes">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;byte[],byte[]&gt; EncryptStringToBytes_Aes (string plainText, byte[] key, byte[] iv = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Tuple`2&lt;unsigned int8[], unsigned int8[]&gt; EncryptStringToBytes_Aes(string plainText, unsigned int8[] key, unsigned int8[] iv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.EncryptStringToBytes_Aes(System.String,System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function EncryptStringToBytes_Aes (plainText As String, key As Byte(), Optional iv As Byte() = null) As Tuple(Of Byte(), Byte())" />
+      <MemberSignature Language="F#" Value="static member EncryptStringToBytes_Aes : string * byte[] * byte[] -&gt; byte[] * byte[]" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.EncryptStringToBytes_Aes (plainText, key, iv)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.Byte[],System.Byte[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plainText" Type="System.String" />
+        <Parameter Name="key" Type="System.Byte[]" />
+        <Parameter Name="iv" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="plainText">The text to encrypt.</param>
+        <param name="key">The 32-byte encryption key to use.</param>
+        <param name="iv">A 16-byte initialization vector to use.</param>
+        <summary>
+            Encrypts a string using Advanced Encryption Standard (AES).
+            </summary>
+        <returns>The initialization vector and the encrypted bytes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public static string GenerateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.GenerateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateKey () As String" />
+      <MemberSignature Language="F#" Value="static member GenerateKey : unit -&gt; string" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.GenerateKey " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generates a key to use for encryption.
+            </summary>
+        <returns>The base64-encoded cryptokey.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

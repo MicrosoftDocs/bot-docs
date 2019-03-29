@@ -1,0 +1,161 @@
+﻿<Type Name="Serializer" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer">
+  <TypeSignature Language="C#" Value="public static class Serializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Serializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class Serializer" />
+  <TypeSignature Language="F#" Value="type Serializer = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper class for serializing/deserializing
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeserializeFromJson&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T DeserializeFromJson&lt;T&gt; (string json);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DeserializeFromJson&lt;T&gt;(string json) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJson``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeserializeFromJson(Of T) (json As String) As T" />
+      <MemberSignature Language="F#" Value="static member DeserializeFromJson : string -&gt; 'T" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJson json" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="json" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="json">To be added.</param>
+        <summary>
+            Deserialize input string to object
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeFromJToken&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T DeserializeFromJToken&lt;T&gt; (Newtonsoft.Json.Linq.JToken jToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DeserializeFromJToken&lt;T&gt;(class Newtonsoft.Json.Linq.JToken jToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJToken``1(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="F#" Value="static member DeserializeFromJToken : Newtonsoft.Json.Linq.JToken -&gt; 'T" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJToken jToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="jToken" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T"></typeparam>
+        <param name="jToken"></param>
+        <summary>
+            Deserialize from JToken
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSerializerSettings">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.JsonSerializerSettings GetSerializerSettings (Newtonsoft.Json.Formatting formatting = Newtonsoft.Json.Formatting.None);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.JsonSerializerSettings GetSerializerSettings(valuetype Newtonsoft.Json.Formatting formatting) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.GetSerializerSettings(Newtonsoft.Json.Formatting)" />
+      <MemberSignature Language="F#" Value="static member GetSerializerSettings : Newtonsoft.Json.Formatting -&gt; Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.GetSerializerSettings formatting" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatting" Type="Newtonsoft.Json.Formatting" />
+      </Parameters>
+      <Docs>
+        <param name="formatting">To be added.</param>
+        <summary>
+            Returns default serializer settings.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeToJson">
+      <MemberSignature Language="C#" Value="public static string SerializeToJson (object obj, bool forLogging = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SerializeToJson(object obj, bool forLogging) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJson(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SerializeToJson (obj As Object, Optional forLogging As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="static member SerializeToJson : obj * bool -&gt; string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJson (obj, forLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="forLogging" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="forLogging">To be added.</param>
+        <summary>
+            Serialize input object to string
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeToJToken">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.Linq.JToken SerializeToJToken (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken SerializeToJToken(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJToken(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SerializeToJToken (obj As Object) As JToken" />
+      <MemberSignature Language="F#" Value="static member SerializeToJToken : obj -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJToken obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj"></param>
+        <summary>
+            Serialize to JToken
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

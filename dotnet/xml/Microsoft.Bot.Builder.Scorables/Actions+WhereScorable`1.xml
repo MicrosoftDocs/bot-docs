@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Score" />
@@ -49,6 +50,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scorable" Type="Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score&gt;" />
@@ -72,6 +74,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Score</ReturnType>
@@ -99,6 +102,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -126,6 +130,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;+Token&gt;</ReturnType>

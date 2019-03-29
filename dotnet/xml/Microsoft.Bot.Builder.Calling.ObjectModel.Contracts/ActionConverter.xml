@@ -1,0 +1,69 @@
+﻿<Type Name="ActionConverter" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter">
+  <TypeSignature Language="C#" Value="public class ActionConverter : Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionConverter extends Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActionConverter&#xA;Inherits JsonCreationConverter(Of ActionBase)" />
+  <TypeSignature Language="F#" Value="type ActionConverter = class&#xA;    inherit JsonCreationConverter&lt;ActionBase&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            By default Json.net doesn't know how to deserialize JSON data into Interfaces or abstract classes.
+            This custom Converter helps deserialize "actions" specified in JSON into respective concrete "action" classes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase Create (Type objectType, Newtonsoft.Json.Linq.JObject jsonObject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase Create(class System.Type objectType, class Newtonsoft.Json.Linq.JObject jsonObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter.Create(System.Type,Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Create (objectType As Type, jsonObject As JObject) As ActionBase" />
+      <MemberSignature Language="F#" Value="override this.Create : Type * Newtonsoft.Json.Linq.JObject -&gt; Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" Usage="actionConverter.Create (objectType, jsonObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="jsonObject" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="objectType">To be added.</param>
+        <param name="jsonObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

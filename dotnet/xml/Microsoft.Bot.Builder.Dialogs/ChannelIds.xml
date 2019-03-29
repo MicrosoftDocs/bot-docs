@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,6 +48,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -66,6 +69,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -86,6 +90,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -106,6 +111,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -126,6 +132,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -146,6 +153,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -166,6 +174,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -186,6 +195,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -206,6 +216,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -226,6 +237,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -246,6 +258,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -266,6 +279,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -286,6 +300,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -306,6 +321,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

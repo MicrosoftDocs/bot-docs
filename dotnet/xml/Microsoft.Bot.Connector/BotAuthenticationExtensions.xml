@@ -1,0 +1,105 @@
+﻿<Type Name="BotAuthenticationExtensions" FullName="Microsoft.Bot.Connector.BotAuthenticationExtensions">
+  <TypeSignature Language="C#" Value="public static class BotAuthenticationExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotAuthenticationExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticationExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module BotAuthenticationExtensions" />
+  <TypeSignature Language="F#" Value="type BotAuthenticationExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector.AspNetCore</AssemblyName>
+    <AssemblyVersion>2.0.1.44133</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddBotAuthentication">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication (this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Bot.Connector.ICredentialProvider credentialProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication(class Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, class Microsoft.Bot.Connector.ICredentialProvider credentialProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,Microsoft.Bot.Connector.ICredentialProvider)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotAuthentication (builder As AuthenticationBuilder, credentialProvider As ICredentialProvider) As AuthenticationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddBotAuthentication : Microsoft.AspNetCore.Authentication.AuthenticationBuilder * Microsoft.Bot.Connector.ICredentialProvider -&gt; Microsoft.AspNetCore.Authentication.AuthenticationBuilder" Usage="Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication (builder, credentialProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.AspNetCore</AssemblyName>
+        <AssemblyVersion>2.0.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Authentication.AuthenticationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Authentication.AuthenticationBuilder" RefType="this" />
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.ICredentialProvider" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="credentialProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBotAuthentication">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication (this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string microsoftAppId, string microsoftAppPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication(class Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string microsoftAppId, string microsoftAppPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotAuthentication (builder As AuthenticationBuilder, microsoftAppId As String, microsoftAppPassword As String) As AuthenticationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddBotAuthentication : Microsoft.AspNetCore.Authentication.AuthenticationBuilder * string * string -&gt; Microsoft.AspNetCore.Authentication.AuthenticationBuilder" Usage="Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication (builder, microsoftAppId, microsoftAppPassword)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.AspNetCore</AssemblyName>
+        <AssemblyVersion>2.0.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Authentication.AuthenticationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Authentication.AuthenticationBuilder" RefType="this" />
+        <Parameter Name="microsoftAppId" Type="System.String" />
+        <Parameter Name="microsoftAppPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="microsoftAppId">To be added.</param>
+        <param name="microsoftAppPassword">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBotAuthentication">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication (this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Action&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt; configureOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication(class Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, class System.Action`1&lt;class Microsoft.Bot.Connector.BotAuthenticationOptions&gt; configureOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String,System.Action{Microsoft.Bot.Connector.BotAuthenticationOptions})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotAuthentication (builder As AuthenticationBuilder, authenticationScheme As String, displayName As String, configureOptions As Action(Of BotAuthenticationOptions)) As AuthenticationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddBotAuthentication : Microsoft.AspNetCore.Authentication.AuthenticationBuilder * string * string * Action&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt; -&gt; Microsoft.AspNetCore.Authentication.AuthenticationBuilder" Usage="Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication (builder, authenticationScheme, displayName, configureOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector.AspNetCore</AssemblyName>
+        <AssemblyVersion>2.0.1.44133</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Authentication.AuthenticationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Authentication.AuthenticationBuilder" RefType="this" />
+        <Parameter Name="authenticationScheme" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="configureOptions" Type="System.Action&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="authenticationScheme">To be added.</param>
+        <param name="displayName">To be added.</param>
+        <param name="configureOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

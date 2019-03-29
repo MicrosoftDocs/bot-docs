@@ -8,14 +8,21 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Represents the built-in LUIS date-time type.
+            </summary>
+    <remarks>
+            LUIS recognizes time expressions like "next monday" and converts those to a type and set of timex expressions.
+            More information on timex can be found here: http://www.timeml.org/publications/timeMLdocs/timeml_1.2.1.html#timex3.
+            More information on the library which does the recognition can be found here: https://github.com/Microsoft/Recognizers-Text.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,16 +36,22 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
         <Parameter Name="expressions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="expressions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of TIMEX expression.</param>
+        <param name="expressions">The TIMEX expression.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec" /> class.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is null or contains only white space,
+            or <paramref name="expressions" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Expressions">
@@ -52,6 +65,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -62,8 +76,12 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets Timex expressions.
+            </summary>
+        <value>
+            Timex expressions.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,6 +96,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -87,6 +106,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -100,6 +120,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -110,9 +131,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets type of expression.
+            </summary>
+        <value>
+            The type of expression.
+            </value>
+        <remarks>Example types include:
+            <list type="*"><item>time -- simple time expression like "3pm".</item><item>date -- simple date like "july 3rd".</item><item>datetime -- combination of date and time like "march 23 2pm".</item><item>timerange -- a range of time like "2pm to 4pm".</item><item>daterange -- a range of dates like "march 23rd to 24th".</item><item>datetimerang -- a range of dates and times like "july 3rd 2pm to 5th 4pm".</item><item>set -- a recurrence like "every monday".</item></list></remarks>
       </Docs>
     </Member>
   </Members>

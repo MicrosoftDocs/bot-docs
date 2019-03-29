@@ -1,0 +1,52 @@
+﻿<Type Name="ITurnContext&lt;T&gt;" FullName="Microsoft.Bot.Builder.ITurnContext&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface ITurnContext&lt;T&gt; : Microsoft.Bot.Builder.ITurnContext where T : IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITurnContext`1&lt;(class Microsoft.Bot.Schema.IActivity) T&gt; implements class Microsoft.Bot.Builder.ITurnContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ITurnContext`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITurnContext(Of T)&#xA;Implements ITurnContext" />
+  <TypeSignature Language="F#" Value="type ITurnContext&lt;'T (requires 'T :&gt; IActivity)&gt; = interface&#xA;    interface ITurnContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>Microsoft.Bot.Schema.IActivity</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.ITurnContext</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">An IActivity derived type, that is one of IMessageActivity, IConversationUpdateActivity etc.</typeparam>
+    <summary>
+            A ITurnContext where the inbound Activity property is strongly typed.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public T Activity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Activity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ITurnContext`1.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As T" />
+      <MemberSignature Language="F#" Value="member this.Activity : 'T" Usage="Microsoft.Bot.Builder.ITurnContext&lt;'T (requires 'T :&gt; Microsoft.Bot.Schema.IActivity)&gt;.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

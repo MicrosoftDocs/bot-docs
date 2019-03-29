@@ -1,0 +1,202 @@
+<Type Name="BuiltInDatetimeTypes" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes">
+  <TypeSignature Language="C#" Value="public class BuiltInDatetimeTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuiltInDatetimeTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuiltInDatetimeTypes" />
+  <TypeSignature Language="F#" Value="type BuiltInDatetimeTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Obsolete("DateTime is deprecated. It is replaced by DateTimeV2 (BuiltInDatetimeV2Types).")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            LUIS prebuilt datetime types.
+            https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities
+            </summary>
+    <remarks>To be added.</remarks>
+    <see cref="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuiltInDatetimeTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="public const string Date;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Date" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Date" />
+      <MemberSignature Language="VB.NET" Value="Public Const Date As String " />
+      <MemberSignature Language="F#" Value="val mutable Date : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Date" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateType">
+      <MemberSignature Language="C#" Value="public string DateType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DateType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.DateType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateType As String" />
+      <MemberSignature Language="F#" Value="member this.DateType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.DateType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public const string Duration;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Duration" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Const Duration As String " />
+      <MemberSignature Language="F#" Value="val mutable Duration : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Duration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurationType">
+      <MemberSignature Language="C#" Value="public string DurationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DurationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.DurationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DurationType As String" />
+      <MemberSignature Language="F#" Value="member this.DurationType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.DurationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public const string Set;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Set" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Set" />
+      <MemberSignature Language="VB.NET" Value="Public Const Set As String " />
+      <MemberSignature Language="F#" Value="val mutable Set : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Set" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetType">
+      <MemberSignature Language="C#" Value="public string SetType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SetType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.SetType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetType As String" />
+      <MemberSignature Language="F#" Value="member this.SetType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.SetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="public const string Time;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Time" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Time" />
+      <MemberSignature Language="VB.NET" Value="Public Const Time As String " />
+      <MemberSignature Language="F#" Value="val mutable Time : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.Time" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeType">
+      <MemberSignature Language="C#" Value="public string TimeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TimeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.TimeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeType As String" />
+      <MemberSignature Language="F#" Value="member this.TimeType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInDatetimeTypes.TimeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

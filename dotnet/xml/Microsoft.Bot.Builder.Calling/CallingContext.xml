@@ -1,0 +1,190 @@
+﻿<Type Name="CallingContext" FullName="Microsoft.Bot.Builder.Calling.CallingContext">
+  <TypeSignature Language="C#" Value="public class CallingContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallingContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class CallingContext" />
+  <TypeSignature Language="F#" Value="type CallingContext = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The context for this request. It is reponsible in parsing the calling request before calling into <see cref="T:Microsoft.Bot.Builder.Calling.ICallingBotService" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallingContext (System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.#ctor(System.Net.Http.HttpRequestMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (request As HttpRequestMessage)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Calling.CallingContext : System.Net.Http.HttpRequestMessage -&gt; Microsoft.Bot.Builder.Calling.CallingContext" Usage="new Microsoft.Bot.Builder.Calling.CallingContext request" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="request"> The calling request.</param>
+        <summary>
+            Creates a new instance of calling context. 
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractSkypeChainId">
+      <MemberSignature Language="C#" Value="public static string ExtractSkypeChainId (System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExtractSkypeChainId(class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.ExtractSkypeChainId(System.Net.Http.HttpRequestMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExtractSkypeChainId (request As HttpRequestMessage) As String" />
+      <MemberSignature Language="F#" Value="static member ExtractSkypeChainId : System.Net.Http.HttpRequestMessage -&gt; string" Usage="Microsoft.Bot.Builder.Calling.CallingContext.ExtractSkypeChainId request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="request"></param>
+        <summary>
+            Extracts the X-Microsoft-Skype-Chain-Id header from the request that is used for correlating logs across different services for a call
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateParsedResults">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults (System.Net.HttpStatusCode statusCode, string content = null, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; additionalData = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults(valuetype System.Net.HttpStatusCode statusCode, string content, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; additionalData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.GenerateParsedResults(System.Net.HttpStatusCode,System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateParsedResults (statusCode As HttpStatusCode, Optional content As String = null, Optional additionalData As Task(Of Stream) = null) As ParsedCallingRequest" />
+      <MemberSignature Language="F#" Value="static member GenerateParsedResults : System.Net.HttpStatusCode * string * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; Microsoft.Bot.Builder.Calling.ParsedCallingRequest" Usage="Microsoft.Bot.Builder.Calling.CallingContext.GenerateParsedResults (statusCode, content, additionalData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ParsedCallingRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statusCode" Type="System.Net.HttpStatusCode" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="additionalData" Type="System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="statusCode">Status code indicating if the parsing was successful or not</param>
+        <param name="content">Content from the request. If the request had multipart content, the first part should be json and this will contain the first json content</param>
+        <param name="additionalData">If the request had multipart content, this will contain the additional data present after the first json content</param>
+        <summary>
+            Generate the <see cref="T:Microsoft.Bot.Builder.Calling.ParsedCallingRequest" /> from the arguments
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCallingEventAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt; ProcessCallingEventAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt; ProcessCallingEventAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.ProcessCallingEventAsync" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ProcessCallingEventAsync () As Task(Of ParsedCallingRequest)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCallingEventAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;&#xA;override this.ProcessCallingEventAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;" Usage="callingContext.ProcessCallingEventAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessIncomingCallAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt; ProcessIncomingCallAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt; ProcessIncomingCallAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.ProcessIncomingCallAsync" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ProcessIncomingCallAsync () As Task(Of ParsedCallingRequest)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessIncomingCallAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;&#xA;override this.ProcessIncomingCallAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;" Usage="callingContext.ProcessIncomingCallAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequest">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt; ProcessRequest (Microsoft.Bot.Builder.Calling.CallRequestType callType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt; ProcessRequest(valuetype Microsoft.Bot.Builder.Calling.CallRequestType callType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.ProcessRequest(Microsoft.Bot.Builder.Calling.CallRequestType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessRequest (callType As CallRequestType) As Task(Of ParsedCallingRequest)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : Microsoft.Bot.Builder.Calling.CallRequestType -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;&#xA;override this.ProcessRequest : Microsoft.Bot.Builder.Calling.CallRequestType -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;" Usage="callingContext.ProcessRequest callType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Calling.ParsedCallingRequest&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callType" Type="Microsoft.Bot.Builder.Calling.CallRequestType" />
+      </Parameters>
+      <Docs>
+        <param name="callType"> The type of calling request.</param>
+        <summary>
+            Process the calling request and returns <see cref="T:Microsoft.Bot.Builder.Calling.ParsedCallingRequest" />.
+            </summary>
+        <returns> the parsed calling request.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public readonly System.Net.Http.HttpRequestMessage Request;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class System.Net.Http.HttpRequestMessage Request" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.CallingContext.Request" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Request As HttpRequestMessage " />
+      <MemberSignature Language="F#" Value="val mutable Request : System.Net.Http.HttpRequestMessage" Usage="Microsoft.Bot.Builder.Calling.CallingContext.Request" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpRequestMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The calling request.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

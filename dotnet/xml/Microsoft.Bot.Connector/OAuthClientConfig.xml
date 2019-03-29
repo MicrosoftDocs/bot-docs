@@ -1,0 +1,93 @@
+﻿<Type Name="OAuthClientConfig" FullName="Microsoft.Bot.Connector.OAuthClientConfig">
+  <TypeSignature Language="C#" Value="public static class OAuthClientConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OAuthClientConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.OAuthClientConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Class OAuthClientConfig" />
+  <TypeSignature Language="F#" Value="type OAuthClientConfig = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EmulateOAuthCards">
+      <MemberSignature Language="C#" Value="public static bool EmulateOAuthCards { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool EmulateOAuthCards" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClientConfig.EmulateOAuthCards" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EmulateOAuthCards As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EmulateOAuthCards : bool with get, set" Usage="Microsoft.Bot.Connector.OAuthClientConfig.EmulateOAuthCards" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When using the Emulator, whether to emulate the OAuthCard behavior or use connected flows
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OAuthEndpoint">
+      <MemberSignature Language="C#" Value="public static string OAuthEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string OAuthEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClientConfig.OAuthEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property OAuthEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.OAuthEndpoint : string with get, set" Usage="Microsoft.Bot.Connector.OAuthClientConfig.OAuthEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default endpoint that is used for API requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendEmulateOAuthCardsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendEmulateOAuthCardsAsync (Microsoft.Bot.Connector.OAuthClient client, bool emulateOAuthCards);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendEmulateOAuthCardsAsync(class Microsoft.Bot.Connector.OAuthClient client, bool emulateOAuthCards) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientConfig.SendEmulateOAuthCardsAsync(Microsoft.Bot.Connector.OAuthClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendEmulateOAuthCardsAsync (client As OAuthClient, emulateOAuthCards As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="static member SendEmulateOAuthCardsAsync : Microsoft.Bot.Connector.OAuthClient * bool -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Connector.OAuthClientConfig.SendEmulateOAuthCardsAsync (client, emulateOAuthCards)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Microsoft.Bot.Connector.OAuthClient" />
+        <Parameter Name="emulateOAuthCards" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="client">To be added.</param>
+        <param name="emulateOAuthCards">Indicates whether the Emulator should emulate the OAuth card.</param>
+        <summary>
+            Send a dummy OAuth card when the bot is being used on the Emulator for testing without fetching a real token.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

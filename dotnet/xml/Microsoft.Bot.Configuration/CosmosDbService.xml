@@ -1,0 +1,195 @@
+﻿<Type Name="CosmosDbService" FullName="Microsoft.Bot.Configuration.CosmosDbService">
+  <TypeSignature Language="C#" Value="public class CosmosDbService : Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbService extends Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.CosmosDbService" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbService&#xA;Inherits AzureService" />
+  <TypeSignature Language="F#" Value="type CosmosDbService = class&#xA;    inherit AzureService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Configuration.AzureService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.CosmosDbService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Configuration.CosmosDbService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collection">
+      <MemberSignature Language="C#" Value="public string Collection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Collection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.CosmosDbService.Collection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Collection As String" />
+      <MemberSignature Language="F#" Value="member this.Collection : string with get, set" Usage="Microsoft.Bot.Configuration.CosmosDbService.Collection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("collection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets collection.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Database">
+      <MemberSignature Language="C#" Value="public string Database { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Database" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.CosmosDbService.Database" />
+      <MemberSignature Language="VB.NET" Value="Public Property Database As String" />
+      <MemberSignature Language="F#" Value="member this.Database : string with get, set" Usage="Microsoft.Bot.Configuration.CosmosDbService.Database" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("database")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets database.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override void Decrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Decrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.CosmosDbService.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Decrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : string -&gt; unit" Usage="cosmosDbService.Decrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override void Encrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Encrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.CosmosDbService.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Encrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : string -&gt; unit" Usage="cosmosDbService.Encrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public string Endpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Endpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.CosmosDbService.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property Endpoint As String" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : string with get, set" Usage="Microsoft.Bot.Configuration.CosmosDbService.Endpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("endpoint")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets endpoint for CosmosDB.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public string Key { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Key" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.CosmosDbService.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Property Key As String" />
+      <MemberSignature Language="F#" Value="member this.Key : string with get, set" Usage="Microsoft.Bot.Configuration.CosmosDbService.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("key")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets key for accessing CosmosDB.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

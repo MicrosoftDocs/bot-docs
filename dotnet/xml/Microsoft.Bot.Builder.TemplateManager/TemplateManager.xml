@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -72,6 +75,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
@@ -96,6 +100,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TemplateManager.TemplateManager</ReturnType>
@@ -123,6 +128,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
@@ -156,6 +162,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -187,6 +194,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="botStates" Type="Microsoft.Bot.Builder.BotState[]">
@@ -59,6 +61,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotStateSet</ReturnType>
@@ -67,11 +70,11 @@
         <Parameter Name="botState" Type="Microsoft.Bot.Builder.BotState" />
       </Parameters>
       <Docs>
-        <param name="botState">BotState object</param>
+        <param name="botState">The bot state object to add.</param>
         <summary>
-            Add a BotState to the set.
+            Adds a bot state object to the set.
             </summary>
-        <returns>BotStateSet so you can fluently call Add() multiple times.</returns>
+        <returns>The updated <see cref="T:Microsoft.Bot.Builder.BotStateSet" />, so you can fluently call <see cref="M:Microsoft.Bot.Builder.BotStateSet.Add(Microsoft.Bot.Builder.BotState)" /> multiple times.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,6 +89,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.BotState&gt;</ReturnType>
@@ -108,6 +112,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -139,6 +144,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -1,0 +1,46 @@
+﻿<Type Name="ApplicationState" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState">
+  <TypeSignature Language="C#" Value="public static class ApplicationState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ApplicationState extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationState" />
+  <TypeSignature Language="F#" Value="type ApplicationState = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (string appState);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(string appState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState.Validate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (appState As String)" />
+      <MemberSignature Language="F#" Value="static member Validate : string -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState.Validate appState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appState" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appState"></param>
+        <summary>
+            helper method to validate appState
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

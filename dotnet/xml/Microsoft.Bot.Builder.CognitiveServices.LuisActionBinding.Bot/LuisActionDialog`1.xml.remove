@@ -1,0 +1,254 @@
+<Type Name="LuisActionDialog&lt;TResult&gt;" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public class LuisActionDialog&lt;TResult&gt; : Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisActionDialog`1&lt;TResult&gt; extends Microsoft.Bot.Builder.Dialogs.LuisDialog`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisActionDialog(Of TResult)&#xA;Inherits LuisDialog(Of TResult)" />
+  <TypeSignature Language="F#" Value="type LuisActionDialog&lt;'Result&gt; = class&#xA;    inherit LuisDialog&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;TResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">TResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The result type. Use Object.</typeparam>
+    <summary>
+            A dialog specialized to handle Action Binding using LUIS.ai.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisActionDialog (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; assemblies, params Microsoft.Bot.Builder.Luis.ILuisService[] services);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; assemblies, class Microsoft.Bot.Builder.Luis.ILuisService[] services) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},Microsoft.Bot.Builder.Luis.ILuisService[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblies As IEnumerable(Of Assembly), ParamArray services As ILuisService())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;'Result&gt; : seq&lt;System.Reflection.Assembly&gt; * Microsoft.Bot.Builder.Luis.ILuisService[] -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;'Result&gt;" Usage="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;'Result&gt; (assemblies, services)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblies" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
+        <Parameter Name="services" Type="Microsoft.Bot.Builder.Luis.ILuisService[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="assemblies">List of assemblies where to find Action Bindings Types.</param>
+        <param name="services">Instance of Microsoft.Bot.Builder.Luis.ILuisService to use for extracting intent and entities.</param>
+        <summary>
+            Construct a LuisActionDialog instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisActionDialog (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; assemblies, Action&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,object&gt; onContextCreation, params Microsoft.Bot.Builder.Luis.ILuisService[] services);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; assemblies, class System.Action`2&lt;class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction, object&gt; onContextCreation, class Microsoft.Bot.Builder.Luis.ILuisService[] services) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Action{Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.Object},Microsoft.Bot.Builder.Luis.ILuisService[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblies As IEnumerable(Of Assembly), onContextCreation As Action(Of ILuisAction, Object), ParamArray services As ILuisService())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;'Result&gt; : seq&lt;System.Reflection.Assembly&gt; * Action&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction, obj&gt; * Microsoft.Bot.Builder.Luis.ILuisService[] -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;'Result&gt;" Usage="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog&lt;'Result&gt; (assemblies, onContextCreation, services)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblies" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
+        <Parameter Name="onContextCreation" Type="System.Action&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.Object&gt;" />
+        <Parameter Name="services" Type="Microsoft.Bot.Builder.Luis.ILuisService[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="assemblies">List of assemblies where to find Action Bindings Types.</param>
+        <param name="onContextCreation">Here you can implement a callback to hydrate action contexts as per request. See LuisActions.Samples.Bot for usage sample.</param>
+        <param name="services">Instance of Microsoft.Bot.Builder.Luis.ILuisService to use for extracting intent and entities.</param>
+        <summary>
+            Construct a LuisActionDialog instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchToLuisActionActivityHandler">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task DispatchToLuisActionActivityHandler (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item, string intentName, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction luisAction);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task DispatchToLuisActionActivityHandler(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item, string intentName, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction luisAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.DispatchToLuisActionActivityHandler(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity},System.String,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function DispatchToLuisActionActivityHandler (context As IDialogContext, item As IAwaitable(Of IMessageActivity), intentName As String, luisAction As ILuisAction) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DispatchToLuisActionActivityHandler : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * string * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; System.Threading.Tasks.Task&#xA;override this.DispatchToLuisActionActivityHandler : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * string * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; System.Threading.Tasks.Task" Usage="luisActionDialog.DispatchToLuisActionActivityHandler (context, item, intentName, luisAction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+        <Parameter Name="intentName" Type="System.String" />
+        <Parameter Name="luisAction" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="intentName">To be added.</param>
+        <param name="luisAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActionHandlersByIntent">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler&gt; GetActionHandlersByIntent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler&gt; GetActionHandlersByIntent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.GetActionHandlersByIntent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetActionHandlersByIntent () As IDictionary(Of String, LuisActionActivityHandler)" />
+      <MemberSignature Language="F#" Value="abstract member GetActionHandlersByIntent : unit -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler&gt;&#xA;override this.GetActionHandlersByIntent : unit -&gt; System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler&gt;" Usage="luisActionDialog.GetActionHandlersByIntent " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisActionMissingDialogFinished">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task LuisActionMissingDialogFinished (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext&gt; executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task LuisActionMissingDialogFinished(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext&gt; executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.LuisActionMissingDialogFinished(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LuisActionMissingDialogFinished (context As IDialogContext, executionContext As IAwaitable(Of ActionExecutionContext)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LuisActionMissingDialogFinished : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.LuisActionMissingDialogFinished : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext&gt; -&gt; System.Threading.Tasks.Task" Usage="luisActionDialog.LuisActionMissingDialogFinished (context, executionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="executionContext" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="executionContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageReceived">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task MessageReceived (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task MessageReceived(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.MessageReceived(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MessageReceived (context As IDialogContext, item As IAwaitable(Of IMessageActivity)) As Task" />
+      <MemberSignature Language="F#" Value="override this.MessageReceived : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="luisActionDialog.MessageReceived (context, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoActionDetectedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task NoActionDetectedAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Connector.IMessageActivity message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task NoActionDetectedAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Connector.IMessageActivity message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.NoActionDetectedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Connector.IMessageActivity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function NoActionDetectedAsync (context As IDialogContext, message As IMessageActivity) As Task" />
+      <MemberSignature Language="F#" Value="abstract member NoActionDetectedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity -&gt; System.Threading.Tasks.Task&#xA;override this.NoActionDetectedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity -&gt; System.Threading.Tasks.Task" Usage="luisActionDialog.NoActionDetectedAsync (context, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformActionFulfillment">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;object&gt; PerformActionFulfillment (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; item, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction luisAction);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; PerformActionFulfillment(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; item, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction luisAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionDialog`1.PerformActionFulfillment(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity},Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PerformActionFulfillment (context As IDialogContext, item As IAwaitable(Of IMessageActivity), luisAction As ILuisAction) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member PerformActionFulfillment : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.PerformActionFulfillment : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="luisActionDialog.PerformActionFulfillment (context, item, luisAction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="item" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+        <Parameter Name="luisAction" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="luisAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
