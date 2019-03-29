@@ -15,9 +15,10 @@ ms.date: 12/13/2017
 
 Skype for Business Online keeps you connected with co-workers and business partners through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype for Business interface.
 
-> [!NOTE]
-> The Skype for Business Bot Framework channel is currently in developer preview.
-> It is available for Skype for Business Online and Hybrid configurations. Skype for Business Server 2015 is not supported. 
+> [!IMPORTANT]
+> **Skype for Business channel in Bot Framework is being deprecated on June 30, 2019.**
+> 
+> No new bots will be able to add Skype for Business channel after that date.  Existing bots will continue to work until October 31, 2019. Microsoft Teams is the preferred communication tool from Microsoft.  Learn how to [connect your bot to Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/bots).
 
 ## Enable the channel
 
