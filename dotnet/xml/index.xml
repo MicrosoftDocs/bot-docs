@@ -1,6 +1,103 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.19.1.44133">
+    <Assembly Name="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding" Version="1.1.7.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright ©  2017")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("1.1.7")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.Guid("abdf486d-cbf1-43a7-9044-ca46b5ab2a88")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.CognitiveServices.QnAMaker" Version="1.1.7.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright ©  2017")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("1.1.7")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyProduct("QnADialogs")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTitle("QnADialogs")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.Guid("cbfe0d35-d6c2-4b25-a498-cfc474a2c3a5")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.20.1.42">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -45,13 +142,120 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute FrameworkAlternate="">
           <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.20.1.42")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.Calling" Version="3.20.1.42">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright �  2016")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.20.1.42")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Bot.Builder.Calling")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.Calling")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.Guid("cebd91e9-cdbd-4cc2-adc1-8a5b626ce0ce")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.19.1.44133">
+    <Assembly Name="Microsoft.Bot.Builder.FormFlow.Json" Version="3.20.1.42">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright �  2016")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.20.1.42")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Bot.Builder.FormFlow.Json")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.FormFlow.Json")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.InteropServices.Guid("8674f271-4437-4178-b4e2-15f91b322e5d")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.20.1.42">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -96,13 +300,62 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6", FrameworkDisplayName=".NET Framework 4.6")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute FrameworkAlternate="">
           <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.20.1.42")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Connector.AspNetCore" Version="2.0.1.44133">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft Corporation")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright � Microsoft Corporation 2016")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.0.1.44133")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Framework")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Connector.AspNetCore")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -136,15 +389,23 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -178,18 +439,73 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyDescription("This library integrates the Microsoft Bot Builder SDK with Application Insights.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.ApplicationInsights")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.3.2.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -210,16 +526,16 @@
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Bot.Builder.Azure")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.Azure")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
           <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
@@ -250,17 +566,29 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -294,15 +622,23 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
@@ -363,19 +699,124 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.20.1.42")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.3.2.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyDescription("This library integrates the Microsoft Bot Builder SDK with Application Insights.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.Integration.ApplicationInsights.Core")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.3.2.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyDescription("This library integrates the Microsoft Bot Builder SDK with Application Insights WebAPI.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6.1", FrameworkDisplayName=".NET Framework 4.6.1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -409,15 +850,23 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -451,15 +900,23 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6.1", FrameworkDisplayName=".NET Framework 4.6.1")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -493,15 +950,70 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Connector" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Configuration" Version="4.3.2.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyDescription("Classes for loading and saving bot configuration files")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Configuration")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Bot.Connector" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute>
@@ -529,26 +1041,39 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library implements C# classes for using the Bot Framework Connector REST API.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Connector")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Connector")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.19.1.44133")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.20.1.42")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
-    <Assembly Name="Microsoft.Bot.Schema" Version="4.1.5.0">
+    <Assembly Name="Microsoft.Bot.Schema" Version="4.3.2.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -567,9 +1092,6 @@
           <AttributeName>System.Reflection.AssemblyDescription("This library implements C# schema classes for using the Bot Framework.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Framework")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
           <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Bot.Schema")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -582,12 +1104,23 @@
           <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.1.5.0")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.3.2.0")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.1.5")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.3.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Bot Builder SDK")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
         </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 b5 fc 90 e7 02 7f 67 87 1e 77 3a 8f de 89 38 c8 1d d4 02 ba 65 b9 20 1d 60 59 3e 96 c4 92 65 1e 88 9c c1 3f 14 15 eb b5 3f ac 11 31 ae 0b d3 33 c5 ee 60 21 67 2d 97 18 ea 31 a8 ae bd 0d a0 07 2f 25 d8 7d ba 6f c9 0f fd 59 8e d4 da 35 e4 4c 39 8c 45 43 07 e8 e3 3b 84 26 14 3d ae c9 f5 96 83 6f 97 c8 f7 47 50 e5 97 5c 64 e2 18 9f 45 de f4 6b 2a 2b 12 47 ad c3 65 2b f5 c3 08 05 5d a9 ]</AssemblyPublicKey>
     </Assembly>
   </Assemblies>
@@ -595,6 +1128,7 @@
   <Copyright>To be added.</Copyright>
   <Types>
     <Namespace Name="Microsoft.Bot.Builder">
+      <Type Name="ActivityHandler" Kind="Class" />
       <Type Name="AutoSaveStateMiddleware" Kind="Class" />
       <Type Name="BotAdapter" Kind="Class" />
       <Type Name="BotAssert" Kind="Class" />
@@ -606,6 +1140,7 @@
       <Type Name="ConversationState" Kind="Class" />
       <Type Name="DeleteActivityHandler" Kind="Delegate" />
       <Type Name="IBot" Kind="Interface" />
+      <Type Name="IBotTelemetryClient" Kind="Interface" />
       <Type Name="IMiddleware" Kind="Interface" />
       <Type Name="IntentScore" Kind="Class" />
       <Type Name="InvokeResponse" Kind="Class" />
@@ -619,16 +1154,20 @@
       <Type Name="ITranscriptLogger" Kind="Interface" />
       <Type Name="ITranscriptStore" Kind="Interface" />
       <Type Name="ITurnContext" Kind="Interface" />
+      <Type Name="ITurnContext`1" DisplayName="ITurnContext&lt;T&gt;" Kind="Interface" />
+      <Type Name="IUserTokenProvider" Kind="Interface" />
       <Type Name="MemoryStorage" Kind="Class" />
       <Type Name="MemoryTranscriptStore" Kind="Class" />
       <Type Name="MessageFactory" Kind="Class" />
       <Type Name="MiddlewareSet" Kind="Class" />
       <Type Name="NextDelegate" Kind="Delegate" />
+      <Type Name="NullBotTelemetryClient" Kind="Class" />
       <Type Name="PagedResult`1" DisplayName="PagedResult&lt;T&gt;" Kind="Class" />
       <Type Name="PrivateConversationState" Kind="Class" />
       <Type Name="RecognizerResult" Kind="Class" />
       <Type Name="RecognizerResultExtensions" Kind="Class" />
       <Type Name="SendActivitiesHandler" Kind="Delegate" />
+      <Type Name="Severity" Kind="Enumeration" />
       <Type Name="ShowTypingMiddleware" Kind="Class" />
       <Type Name="StorageExtensions" Kind="Class" />
       <Type Name="TraceTranscriptLogger" Kind="Class" />
@@ -665,34 +1204,19 @@
       <Type Name="QueryResult" Kind="Class" />
       <Type Name="QueryResults" Kind="Class" />
     </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.ApplicationInsights">
+      <Type Name="BotTelemetryClient" Kind="Class" />
+    </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Autofac.Base">
       <Type Name="Extensions" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Azure">
-      <Type Name="AppSettingKeys" Kind="Class" />
       <Type Name="AzureBlobStorage" Kind="Class" />
       <Type Name="AzureBlobTranscriptStore" Kind="Class" />
-      <Type Name="AzureBot" Kind="Class" />
-      <Type Name="AzureModule" Kind="Class" />
-      <Type Name="BotDataStoreBridge" Kind="Class" />
-      <Type Name="BotService" Kind="Class" />
-      <Type Name="BotServiceDelegateSurrogate" Kind="Class" />
-      <Type Name="BotServiceScope" Kind="Class" />
-      <Type Name="BotServiceSerializationBinder" Kind="Class" />
       <Type Name="CosmosDbCustomClientOptions" Kind="Class" />
       <Type Name="CosmosDbKeyEscape" Kind="Class" />
       <Type Name="CosmosDbStorage" Kind="Class" />
       <Type Name="CosmosDbStorageOptions" Kind="Class" />
-      <Type Name="DocumentDbBotDataStore" Kind="Class" />
-      <Type Name="Extensions" Kind="Class" />
-      <Type Name="ResolveAssembly" Kind="Class" />
-      <Type Name="SqlBotDataStore" Kind="Class" />
-      <Type Name="TableBotDataStore" Kind="Class" />
-      <Type Name="TableBotDataStore2" Kind="Class" />
-      <Type Name="TableLogger" Kind="Class" />
-      <Type Name="TableLogger+ActivityEntity" Kind="Class" />
-      <Type Name="TableLoggerModule" Kind="Class" />
-      <Type Name="Utils" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Base">
       <Type Name="EventQueue`1" DisplayName="EventQueue&lt;Event&gt;" Kind="Class" />
@@ -705,6 +1229,99 @@
     <Namespace Name="Microsoft.Bot.Builder.BotFramework">
       <Type Name="ConfigurationChannelProvider" Kind="Class" />
       <Type Name="ConfigurationCredentialProvider" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Calling">
+      <Type Name="CallingBotService" Kind="Class" />
+      <Type Name="CallingBotServiceSettings" Kind="Class" />
+      <Type Name="CallingContext" Kind="Class" />
+      <Type Name="CallingConversation" Kind="Class" />
+      <Type Name="CallingModule" Kind="Class" />
+      <Type Name="CallingModule_MakeBot" Kind="Class" />
+      <Type Name="CallRequestType" Kind="Enumeration" />
+      <Type Name="ICallingBot" Kind="Interface" />
+      <Type Name="ICallingBotService" Kind="Interface" />
+      <Type Name="ParsedCallingRequest" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Calling.Events">
+      <Type Name="AnswerOutcomeEvent" Kind="Class" />
+      <Type Name="HangupOutcomeEvent" Kind="Class" />
+      <Type Name="IncomingCallEvent" Kind="Class" />
+      <Type Name="OutcomeEventBase" Kind="Class" />
+      <Type Name="PlayPromptOutcomeEvent" Kind="Class" />
+      <Type Name="RecognizeOutcomeEvent" Kind="Class" />
+      <Type Name="RecordOutcomeEvent" Kind="Class" />
+      <Type Name="RejectOutcomeEvent" Kind="Class" />
+      <Type Name="WorkflowValidationOutcomeEvent" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Calling.Exceptions">
+      <Type Name="BotCallingServiceException" Kind="Class" />
+      <Type Name="BotConfigurationException" Kind="Class" />
+      <Type Name="BotException" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts">
+      <Type Name="ActionBase" Kind="Class" />
+      <Type Name="ActionConverter" Kind="Class" />
+      <Type Name="AgentContactNotification" Kind="Class" />
+      <Type Name="Answer" Kind="Class" />
+      <Type Name="AnswerOutcome" Kind="Class" />
+      <Type Name="BaseMessage" Kind="Class" />
+      <Type Name="CallbackLink" Kind="Class" />
+      <Type Name="ChoiceOutcome" Kind="Class" />
+      <Type Name="CollectDigits" Kind="Class" />
+      <Type Name="CollectDigitsOutcome" Kind="Class" />
+      <Type Name="Conversation" Kind="Class" />
+      <Type Name="ConversationBase" Kind="Class" />
+      <Type Name="ConversationResult" Kind="Class" />
+      <Type Name="Hangup" Kind="Class" />
+      <Type Name="HangupOutcome" Kind="Class" />
+      <Type Name="OperationOutcomeBase" Kind="Class" />
+      <Type Name="OperationOutcomeConverter" Kind="Class" />
+      <Type Name="Participant" Kind="Class" />
+      <Type Name="PlayPrompt" Kind="Class" />
+      <Type Name="PlayPromptOutcome" Kind="Class" />
+      <Type Name="Prompt" Kind="Class" />
+      <Type Name="RecognitionOption" Kind="Class" />
+      <Type Name="Recognize" Kind="Class" />
+      <Type Name="RecognizeOutcome" Kind="Class" />
+      <Type Name="Record" Kind="Class" />
+      <Type Name="RecordOutcome" Kind="Class" />
+      <Type Name="Reject" Kind="Class" />
+      <Type Name="RejectOutcome" Kind="Class" />
+      <Type Name="ValidActions" Kind="Class" />
+      <Type Name="ValidDtmfs" Kind="Class" />
+      <Type Name="ValidOutcomes" Kind="Class" />
+      <Type Name="Workflow" Kind="Class" />
+      <Type Name="WorkflowValidationOutcome" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc">
+      <Type Name="ApplicationState" Kind="Class" />
+      <Type Name="CallState" Kind="Enumeration" />
+      <Type Name="Culture" Kind="Enumeration" />
+      <Type Name="DigitCollectionCompletionReason" Kind="Enumeration" />
+      <Type Name="JSONConstants" Kind="Class" />
+      <Type Name="JsonCreationConverter`1" DisplayName="JsonCreationConverter&lt;T&gt;" Kind="Class" />
+      <Type Name="MaxValues" Kind="Class" />
+      <Type Name="MinValues" Kind="Class" />
+      <Type Name="ModalityType" Kind="Enumeration" />
+      <Type Name="MultiPartConstants" Kind="Class" />
+      <Type Name="Outcome" Kind="Enumeration" />
+      <Type Name="RecognitionCompletionReason" Kind="Enumeration" />
+      <Type Name="RecordingCompletionReason" Kind="Enumeration" />
+      <Type Name="RecordingFormat" Kind="Enumeration" />
+      <Type Name="ResolutionFormat" Kind="Enumeration" />
+      <Type Name="SayAs" Kind="Enumeration" />
+      <Type Name="Serializer" Kind="Class" />
+      <Type Name="StringEnumConverterWithDefault`1" DisplayName="StringEnumConverterWithDefault&lt;TEnum&gt;" Kind="Class" />
+      <Type Name="Utils" Kind="Class" />
+      <Type Name="VoiceGender" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding">
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot">
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.CognitiveServices.QnAMaker">
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource">
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.ConnectorEx">
       <Type Name="ConversationReferenceHelpers" Kind="Class" />
@@ -976,10 +1593,15 @@
       <Type Name="RecognizeNumber`1" DisplayName="RecognizeNumber&lt;T&gt;" Kind="Class" />
       <Type Name="RecognizePrimitive`1" DisplayName="RecognizePrimitive&lt;T&gt;" Kind="Class" />
       <Type Name="RecognizeString`1" DisplayName="RecognizeString&lt;T&gt;" Kind="Class" />
+      <Type Name="ScriptGlobals" Kind="Class" />
       <Type Name="SpecialValues" Kind="Enumeration" />
       <Type Name="StepDirection" Kind="Enumeration" />
       <Type Name="TemplateBaseAttribute" Kind="Class" />
       <Type Name="TermMatch" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.FormFlow.Json">
+      <Type Name="FieldJson" Kind="Class" />
+      <Type Name="FormBuilderJson" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.History">
       <Type Name="IActivityLogger" Kind="Interface" />
@@ -993,9 +1615,21 @@
       <Type Name="BotFrameworkOptions" Kind="Class" />
       <Type Name="BotFrameworkPaths" Kind="Class" />
       <Type Name="IAdapterIntegration" Kind="Interface" />
+      <Type Name="MessageSerializerSettings" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core">
+      <Type Name="ApplicationBuilderExtensions" Kind="Class" />
+      <Type Name="ServiceCollectionExtensions" Kind="Class" />
+      <Type Name="TelemetryBotIdInitializer" Kind="Class" />
+      <Type Name="TelemetrySaveBodyASPMiddleware" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi">
+      <Type Name="TelemetryBotIdInitializer" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Integration.AspNet.Core">
       <Type Name="ApplicationBuilderExtensions" Kind="Class" />
+      <Type Name="BotFrameworkHttpAdapter" Kind="Class" />
+      <Type Name="IBotFrameworkHttpAdapter" Kind="Interface" />
       <Type Name="ServiceCollectionExtensions" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Integration.AspNet.Core.Handlers">
@@ -1005,7 +1639,9 @@
     <Namespace Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi">
       <Type Name="BotFrameworkConfigurationBuilder" Kind="Class" />
       <Type Name="BotFrameworkConfigurationBuilderExtensions" Kind="Class" />
+      <Type Name="BotFrameworkHttpAdapter" Kind="Class" />
       <Type Name="HttpConfigurationExtensions" Kind="Class" />
+      <Type Name="IBotFrameworkHttpAdapter" Kind="Interface" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers">
       <Type Name="BotMessageHandler" Kind="Class" />
@@ -1104,6 +1740,7 @@
       <Type Name="EntityRecommendation" Kind="Class" />
       <Type Name="IntentRecommendation" Kind="Class" />
       <Type Name="LuisResult" Kind="Class" />
+      <Type Name="Sentiment" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Builder.Resource">
       <Type Name="Extensions" Kind="Class" />
@@ -1190,6 +1827,26 @@
     <Namespace Name="Microsoft.Bot.Builder.TraceExtensions">
       <Type Name="ITurnContextExtensions" Kind="Class" />
     </Namespace>
+    <Namespace Name="Microsoft.Bot.Configuration">
+      <Type Name="AppInsightsService" Kind="Class" />
+      <Type Name="AzureService" Kind="Class" />
+      <Type Name="BlobStorageService" Kind="Class" />
+      <Type Name="BotConfiguration" Kind="Class" />
+      <Type Name="BotConfigurationExtensions" Kind="Class" />
+      <Type Name="BotService" Kind="Class" />
+      <Type Name="ConnectedService" Kind="Class" />
+      <Type Name="CosmosDbService" Kind="Class" />
+      <Type Name="DispatchService" Kind="Class" />
+      <Type Name="EndpointService" Kind="Class" />
+      <Type Name="FileService" Kind="Class" />
+      <Type Name="GenericService" Kind="Class" />
+      <Type Name="LuisService" Kind="Class" />
+      <Type Name="QnAMakerService" Kind="Class" />
+      <Type Name="ServiceTypes" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Bot.Configuration.Encryption">
+      <Type Name="EncryptUtilities" Kind="Class" />
+    </Namespace>
     <Namespace Name="Microsoft.Bot.Connector">
       <Type Name="ActionTypes" Kind="Class" />
       <Type Name="Activity" Kind="Class" />
@@ -1207,9 +1864,14 @@
       <Type Name="AttachmentView" Kind="Class" />
       <Type Name="AudioCard" Kind="Class" />
       <Type Name="BasicCard" Kind="Class" />
+      <Type Name="BotAuthenticationExtensions" Kind="Class" />
+      <Type Name="BotAuthenticationHandler" Kind="Class" />
+      <Type Name="BotAuthenticationOptions" Kind="Class" />
       <Type Name="BotAuthenticator" Kind="Class" />
       <Type Name="BotAuthenticator+EndorsementsValidator" Kind="Delegate" />
       <Type Name="BotData" Kind="Class" />
+      <Type Name="BotSignIn" Kind="Class" />
+      <Type Name="BotSignInExtensions" Kind="Class" />
       <Type Name="BotState" Kind="Class" />
       <Type Name="BotStateData" Kind="Class" />
       <Type Name="BotStateDataResult" Kind="Class" />
@@ -1247,6 +1909,7 @@
       <Type Name="HttpClientEx" Kind="Class" />
       <Type Name="IActivity" Kind="Interface" />
       <Type Name="IAttachments" Kind="Interface" />
+      <Type Name="IBotSignIn" Kind="Interface" />
       <Type Name="IBotState" Kind="Interface" />
       <Type Name="IConnectorClient" Kind="Interface" />
       <Type Name="IContactRelationUpdateActivity" Kind="Interface" />
@@ -1273,6 +1936,7 @@
       <Type Name="ISuggestionActivity" Kind="Interface" />
       <Type Name="ITraceActivity" Kind="Interface" />
       <Type Name="ITypingActivity" Kind="Interface" />
+      <Type Name="IUserToken" Kind="Interface" />
       <Type Name="JwtConfig" Kind="Class" />
       <Type Name="JwtTokenExtractor" Kind="Class" />
       <Type Name="JwtTokenExtractor+EndorsementsValidator" Kind="Delegate" />
@@ -1288,6 +1952,8 @@
       <Type Name="OAuthApi" Kind="Class" />
       <Type Name="OAuthCard" Kind="Class" />
       <Type Name="OAuthClient" Kind="Class" />
+      <Type Name="OAuthClientConfig" Kind="Class" />
+      <Type Name="OAuthClientOld" Kind="Class" />
       <Type Name="PagedMembersResult" Kind="Class" />
       <Type Name="PaymentAddress" Kind="Class" />
       <Type Name="PaymentCurrencyAmount" Kind="Class" />
@@ -1326,9 +1992,13 @@
       <Type Name="TokenRequest" Kind="Class" />
       <Type Name="TokenResponse" Kind="Class" />
       <Type Name="Transcript" Kind="Class" />
+      <Type Name="TrustServiceUrlAttribute" Kind="Class" />
+      <Type Name="UserToken" Kind="Class" />
+      <Type Name="UserTokenExtensions" Kind="Class" />
       <Type Name="VideoCard" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Connector.Authentication">
+      <Type Name="AdalAuthenticator" Kind="Class" />
       <Type Name="AuthenticationConstants" Kind="Class" />
       <Type Name="ChannelValidation" Kind="Class" />
       <Type Name="EmulatorValidation" Kind="Class" />
@@ -1342,11 +2012,14 @@
       <Type Name="JwtTokenExtractor" Kind="Class" />
       <Type Name="JwtTokenValidation" Kind="Class" />
       <Type Name="MicrosoftAppCredentials" Kind="Class" />
-      <Type Name="MicrosoftAppCredentials+OAuthException" Kind="Class" />
-      <Type Name="MicrosoftAppCredentials+OAuthResponse" Kind="Class" />
       <Type Name="MicrosoftGovernmentAppCredentials" Kind="Class" />
+      <Type Name="OAuthConfiguration" Kind="Class" />
+      <Type Name="Retry" Kind="Class" />
+      <Type Name="RetryParams" Kind="Class" />
       <Type Name="SimpleChannelProvider" Kind="Class" />
       <Type Name="SimpleCredentialProvider" Kind="Class" />
+      <Type Name="ThrottleException" Kind="Class" />
+      <Type Name="TimeSpanExtensions" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Bot.Connector.Shared.Authentication">
       <Type Name="AdalAuthenticator" Kind="Class" />
@@ -1527,58 +2200,6 @@
             </summary>
         </Docs>
         <Link Type="Microsoft.Bot.Builder.Autofac.Base.Extensions" Member="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:System.String" />
-      </Targets>
-      <Member MemberName="Compress">
-        <MemberSignature Language="C#" Value="public static byte[] Compress (this string str);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Compress(string str) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Extensions.Compress(System.String)" />
-        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Compress (str As String) As Byte()" />
-        <MemberSignature Language="F#" Value="static member Compress : string -&gt; byte[]" Usage="Microsoft.Bot.Builder.Azure.Extensions.Compress str" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Byte[]</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="str" Type="System.String" RefType="this" />
-        </Parameters>
-        <Docs>
-          <param name="str">String to compress.</param>
-          <summary>
-            Compress a string into a byte array.
-            </summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Builder.Azure.Extensions" Member="M:Microsoft.Bot.Builder.Azure.Extensions.Compress(System.String)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:System.Byte" />
-      </Targets>
-      <Member MemberName="Decompress">
-        <MemberSignature Language="C#" Value="public static string Decompress (this byte[] bytes);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decompress(unsigned int8[] bytes) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Extensions.Decompress(System.Byte[])" />
-        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Decompress (bytes As Byte()) As String" />
-        <MemberSignature Language="F#" Value="static member Decompress : byte[] -&gt; string" Usage="Microsoft.Bot.Builder.Azure.Extensions.Decompress bytes" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.String</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="bytes" Type="System.Byte[]" RefType="this" />
-        </Parameters>
-        <Docs>
-          <param name="bytes">Compressed string.</param>
-          <summary>
-            Decompress a string from a byte array.
-            </summary>
-        </Docs>
-        <Link Type="Microsoft.Bot.Builder.Azure.Extensions" Member="M:Microsoft.Bot.Builder.Azure.Extensions.Decompress(System.Byte[])" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -3522,6 +4143,91 @@
       <Targets>
         <Target Type="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" />
       </Targets>
+      <Member MemberName="UseBotApplicationInsights">
+        <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IApplicationBuilder UseBotApplicationInsights (this Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IApplicationBuilder UseBotApplicationInsights(class Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ApplicationBuilderExtensions.UseBotApplicationInsights(Microsoft.AspNetCore.Builder.IApplicationBuilder)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseBotApplicationInsights (applicationBuilder As IApplicationBuilder) As IApplicationBuilder" />
+        <MemberSignature Language="F#" Value="static member UseBotApplicationInsights : Microsoft.AspNetCore.Builder.IApplicationBuilder -&gt; Microsoft.AspNetCore.Builder.IApplicationBuilder" Usage="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ApplicationBuilderExtensions.UseBotApplicationInsights applicationBuilder" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.AspNetCore.Builder.IApplicationBuilder</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="applicationBuilder" Type="Microsoft.AspNetCore.Builder.IApplicationBuilder" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="applicationBuilder">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" />.</param>
+          <summary>
+            Adds Telemetry ASP.Net Middleware.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ApplicationBuilderExtensions" Member="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ApplicationBuilderExtensions.UseBotApplicationInsights(Microsoft.AspNetCore.Builder.IApplicationBuilder)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />
+      </Targets>
+      <Member MemberName="AddBotApplicationInsights">
+        <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Bot.Builder.IBotTelemetryClient botTelemetryClient, string instrumentationKey = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, class Microsoft.Bot.Builder.IBotTelemetryClient botTelemetryClient, string instrumentationKey) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Bot.Builder.IBotTelemetryClient,System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotApplicationInsights (services As IServiceCollection, botTelemetryClient As IBotTelemetryClient, Optional instrumentationKey As String = null) As IServiceCollection" />
+        <MemberSignature Language="F#" Value="static member AddBotApplicationInsights : Microsoft.Extensions.DependencyInjection.IServiceCollection * Microsoft.Bot.Builder.IBotTelemetryClient * string -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights (services, botTelemetryClient, instrumentationKey)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="services" Type="Microsoft.Extensions.DependencyInjection.IServiceCollection" RefType="this" />
+          <Parameter Name="botTelemetryClient" Type="Microsoft.Bot.Builder.IBotTelemetryClient" />
+          <Parameter Name="instrumentationKey" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> which specifies the contract for a collection of service descriptors.</param>
+          <param name="botTelemetryClient">Bot Telemetry Client that logs event information.</param>
+          <param name="instrumentationKey">If Bot Telemetry Client is using Application Insights, provide the instumentation key.</param>
+          <summary>
+            Adds and configures services for Application Insights to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions" Member="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Bot.Builder.IBotTelemetryClient,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />
+      </Targets>
+      <Member MemberName="AddBotApplicationInsights">
+        <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Bot.Configuration.BotConfiguration botConfiguration, string appInsightsServiceInstanceName = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, class Microsoft.Bot.Configuration.BotConfiguration botConfiguration, string appInsightsServiceInstanceName) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Bot.Configuration.BotConfiguration,System.String)" />
+        <MemberSignature Language="F#" Value="static member AddBotApplicationInsights : Microsoft.Extensions.DependencyInjection.IServiceCollection * Microsoft.Bot.Configuration.BotConfiguration * string -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights (services, botConfiguration, appInsightsServiceInstanceName)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="services" Type="Microsoft.Extensions.DependencyInjection.IServiceCollection" RefType="this" />
+          <Parameter Name="botConfiguration" Type="Microsoft.Bot.Configuration.BotConfiguration" />
+          <Parameter Name="appInsightsServiceInstanceName" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> which specifies the contract for a collection of service descriptors.</param>
+          <param name="botConfiguration">Bot configuration that contains the Application Insights configuration information.</param>
+          <param name="appInsightsServiceInstanceName">(OPTIONAL) Specifies a Application Insights instance name in the Bot configuration.</param>
+          <summary>
+            Adds and configures services for Application Insights to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions" Member="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Bot.Configuration.BotConfiguration,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" />
+      </Targets>
       <Member MemberName="UseBotFramework">
         <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IApplicationBuilder UseBotFramework (this Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IApplicationBuilder UseBotFramework(class Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder) cil managed" />
@@ -3542,6 +4248,45 @@
             </summary>
         </Docs>
         <Link Type="Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions" Member="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions.UseBotFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />
+      </Targets>
+      <Member MemberName="AddBot&lt;TBot&gt;">
+        <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBot&lt;TBot&gt; (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, TBot bot, Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; configureAction = null) where TBot : class, Microsoft.Bot.Builder.IBot;" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBot&lt;class (class Microsoft.Bot.Builder.IBot) TBot&gt;(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, !!TBot bot, class System.Action`1&lt;class Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; configureAction) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,``0,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBot(Of TBot As {Class, IBot}) (services As IServiceCollection, bot As TBot, Optional configureAction As Action(Of BotFrameworkOptions) = null) As IServiceCollection" />
+        <MemberSignature Language="F#" Value="static member AddBot : Microsoft.Extensions.DependencyInjection.IServiceCollection * 'Bot * Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection (requires 'Bot : null and 'Bot :&gt; Microsoft.Bot.Builder.IBot)" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot (services, bot, configureAction)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="TBot">
+            <Constraints>
+              <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+              <InterfaceName>Microsoft.Bot.Builder.IBot</InterfaceName>
+            </Constraints>
+          </TypeParameter>
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="services" Type="Microsoft.Extensions.DependencyInjection.IServiceCollection" RefType="this" />
+          <Parameter Name="bot" Type="TBot" />
+          <Parameter Name="configureAction" Type="System.Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt;" />
+        </Parameters>
+        <Docs>
+          <typeparam name="TBot">A concrete type of <see cref="T:Microsoft.Bot.Builder.IBot" /> that is to be registered and exposed to the Bot Framework.</typeparam>
+          <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</param>
+          <param name="bot">The instance of the bot that will be registered as a <see cref="F:Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton" />.</param>
+          <param name="configureAction">A optional callback that, if provided, will be invoked to further configure of the bot.</param>
+          <summary>
+            Adds and optionally configures a singleton <paramref name="bot">bot</paramref> instance to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions" Member="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,``0,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -3573,12 +4318,80 @@
         <Docs>
           <typeparam name="TBot">A concrete type of <see cref="T:Microsoft.Bot.Builder.IBot" /> that is to be registered and exposed to the Bot Framework.</typeparam>
           <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</param>
-          <param name="configureAction">A callback that can further be used to configure the bot.</param>
+          <param name="configureAction">A optional callback that, if provided, will be invoked to further configure of the bot.</param>
           <summary>
-            Adds and configures services for a <typeparamref name="TBot">specified bot type</typeparamref> to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.
+            Adds and optionally configures a <typeparamref name="TBot">specified bot type</typeparamref> to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.
             </summary>
         </Docs>
         <Link Type="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions" Member="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />
+      </Targets>
+      <Member MemberName="AddBot&lt;TBot&gt;">
+        <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBot&lt;TBot&gt; (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Func&lt;IServiceProvider,TBot&gt; botFactory, Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; configureAction = null) where TBot : class, Microsoft.Bot.Builder.IBot;" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBot&lt;class (class Microsoft.Bot.Builder.IBot) TBot&gt;(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, class System.Func`2&lt;class System.IServiceProvider, !!TBot&gt; botFactory, class System.Action`1&lt;class Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; configureAction) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0},System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBot(Of TBot As {Class, IBot}) (services As IServiceCollection, botFactory As Func(Of IServiceProvider, TBot), Optional configureAction As Action(Of BotFrameworkOptions) = null) As IServiceCollection" />
+        <MemberSignature Language="F#" Value="static member AddBot : Microsoft.Extensions.DependencyInjection.IServiceCollection * Func&lt;IServiceProvider, 'Bot (requires 'Bot : null and 'Bot :&gt; Microsoft.Bot.Builder.IBot)&gt; * Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection (requires 'Bot : null and 'Bot :&gt; Microsoft.Bot.Builder.IBot)" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot (services, botFactory, configureAction)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="TBot">
+            <Constraints>
+              <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+              <InterfaceName>Microsoft.Bot.Builder.IBot</InterfaceName>
+            </Constraints>
+          </TypeParameter>
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="services" Type="Microsoft.Extensions.DependencyInjection.IServiceCollection" RefType="this" />
+          <Parameter Name="botFactory" Type="System.Func&lt;System.IServiceProvider,TBot&gt;" />
+          <Parameter Name="configureAction" Type="System.Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt;" />
+        </Parameters>
+        <Docs>
+          <typeparam name="TBot">A concrete type of <see cref="T:Microsoft.Bot.Builder.IBot" /> that is to be registered and exposed to the Bot Framework.</typeparam>
+          <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</param>
+          <param name="botFactory">A factory method that will supply an instance of the <typeparamref name="TBot" /> when invoked.</param>
+          <param name="configureAction">A optional callback that, if provided, will be invoked to further configure of the bot.</param>
+          <summary>
+            Adds and optionally configures a <typeparamref name="TBot">specified bot type</typeparamref> to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions" Member="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0},System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />
+      </Targets>
+      <Member MemberName="AddBotFrameworkAdapterIntegration">
+        <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotFrameworkAdapterIntegration (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; configureAction = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotFrameworkAdapterIntegration(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, class System.Action`1&lt;class Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; configureAction) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBotFrameworkAdapterIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotFrameworkAdapterIntegration (services As IServiceCollection, Optional configureAction As Action(Of BotFrameworkOptions) = null) As IServiceCollection" />
+        <MemberSignature Language="F#" Value="static member AddBotFrameworkAdapterIntegration : Microsoft.Extensions.DependencyInjection.IServiceCollection * Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt; -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBotFrameworkAdapterIntegration (services, configureAction)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="services" Type="Microsoft.Extensions.DependencyInjection.IServiceCollection" RefType="this" />
+          <Parameter Name="configureAction" Type="System.Action&lt;Microsoft.Bot.Builder.Integration.BotFrameworkOptions&gt;" />
+        </Parameters>
+        <Docs>
+          <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />.</param>
+          <param name="configureAction">A optional callback that, if provided, will be invoked to further configure the integration.</param>
+          <summary>
+             Adds the <see cref="T:Microsoft.Bot.Builder.BotFrameworkAdapter" /> as the <see cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" /> which will be used by the integration layer
+             for processing bot requests.
+             </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions" Member="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBotFrameworkAdapterIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -5245,6 +6058,149 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
+        <Target Type="T:Microsoft.Bot.Configuration.BotConfiguration" />
+      </Targets>
+      <Member MemberName="IsProjectNameSpaceless">
+        <MemberSignature Language="C#" Value="public static bool IsProjectNameSpaceless (this Microsoft.Bot.Configuration.BotConfiguration botConfiguration, string folder);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsProjectNameSpaceless(class Microsoft.Bot.Configuration.BotConfiguration botConfiguration, string folder) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.IsProjectNameSpaceless(Microsoft.Bot.Configuration.BotConfiguration,System.String)" />
+        <MemberSignature Language="F#" Value="static member IsProjectNameSpaceless : Microsoft.Bot.Configuration.BotConfiguration * string -&gt; bool" Usage="Microsoft.Bot.Configuration.BotConfigurationExtensions.IsProjectNameSpaceless (botConfiguration, folder)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="botConfiguration" Type="Microsoft.Bot.Configuration.BotConfiguration" RefType="this" />
+          <Parameter Name="folder" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="botConfiguration">BotConfiguration object to extend.</param>
+          <param name="folder">Folder's path to validate.</param>
+          <summary>
+            Check if the Project's Name contains white spaces.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Configuration.BotConfigurationExtensions" Member="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.IsProjectNameSpaceless(Microsoft.Bot.Configuration.BotConfiguration,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Configuration.BotConfiguration" />
+      </Targets>
+      <Member MemberName="ValidateLuisKeyExistence">
+        <MemberSignature Language="C#" Value="public static ValueTuple&lt;bool,string&gt; ValidateLuisKeyExistence (this Microsoft.Bot.Configuration.BotConfiguration botConfiguration);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`2&lt;bool, string&gt; ValidateLuisKeyExistence(class Microsoft.Bot.Configuration.BotConfiguration botConfiguration) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateLuisKeyExistence(Microsoft.Bot.Configuration.BotConfiguration)" />
+        <MemberSignature Language="F#" Value="static member ValidateLuisKeyExistence : Microsoft.Bot.Configuration.BotConfiguration -&gt; ValueTuple&lt;bool, string&gt;" Usage="Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateLuisKeyExistence botConfiguration" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.ValueTuple&lt;System.Boolean,System.String&gt;</ReturnType>
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="botConfiguration" Type="Microsoft.Bot.Configuration.BotConfiguration" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="botConfiguration">BotConfiguration object to extend.</param>
+          <summary>
+            Checks if the <see cref="T:Microsoft.Bot.Configuration.LuisService" /> has its key defined.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Configuration.BotConfigurationExtensions" Member="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateLuisKeyExistence(Microsoft.Bot.Configuration.BotConfiguration)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Configuration.BotConfiguration" />
+      </Targets>
+      <Member MemberName="ValidateQnAKeyExistence">
+        <MemberSignature Language="C#" Value="public static ValueTuple&lt;bool,string&gt; ValidateQnAKeyExistence (this Microsoft.Bot.Configuration.BotConfiguration botConfiguration);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`2&lt;bool, string&gt; ValidateQnAKeyExistence(class Microsoft.Bot.Configuration.BotConfiguration botConfiguration) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateQnAKeyExistence(Microsoft.Bot.Configuration.BotConfiguration)" />
+        <MemberSignature Language="F#" Value="static member ValidateQnAKeyExistence : Microsoft.Bot.Configuration.BotConfiguration -&gt; ValueTuple&lt;bool, string&gt;" Usage="Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateQnAKeyExistence botConfiguration" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.ValueTuple&lt;System.Boolean,System.String&gt;</ReturnType>
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="botConfiguration" Type="Microsoft.Bot.Configuration.BotConfiguration" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="botConfiguration">BotConfiguration object to extend.</param>
+          <summary>
+            Checks if the <see cref="T:Microsoft.Bot.Configuration.QnAMakerService" /> has its key defined.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Configuration.BotConfigurationExtensions" Member="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateQnAKeyExistence(Microsoft.Bot.Configuration.BotConfiguration)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="Decrypt">
+        <MemberSignature Language="C#" Value="public static string Decrypt (this string encryptedText, string key);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decrypt(string encryptedText, string key) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Decrypt(System.String,System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Decrypt (encryptedText As String, key As String) As String" />
+        <MemberSignature Language="F#" Value="static member Decrypt : string * string -&gt; string" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Decrypt (encryptedText, key)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="encryptedText" Type="System.String" RefType="this" />
+          <Parameter Name="key" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="encryptedText">The base64-encrypted string.</param>
+          <param name="key">The key to use for decryption.</param>
+          <summary>
+            Decrypts a string.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Configuration.Encryption.EncryptUtilities" Member="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Decrypt(System.String,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="Encrypt">
+        <MemberSignature Language="C#" Value="public static string Encrypt (this string plainText, string key);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encrypt(string plainText, string key) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Encrypt(System.String,System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Encrypt (plainText As String, key As String) As String" />
+        <MemberSignature Language="F#" Value="static member Encrypt : string * string -&gt; string" Usage="Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Encrypt (plainText, key)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="plainText" Type="System.String" RefType="this" />
+          <Parameter Name="key" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="plainText">The string to encrypt.</param>
+          <param name="key">The key to use for encryption.</param>
+          <summary>
+            Encrypts a string.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Configuration.Encryption.EncryptUtilities" Member="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Encrypt(System.String,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
         <Target Type="T:Microsoft.Bot.Connector.IActivity" />
       </Targets>
       <Member MemberName="CreateOAuthReplyAsync">
@@ -5842,6 +6798,153 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.AttachmentsExtensions" Member="M:Microsoft.Bot.Connector.AttachmentsExtensions.GetAttachmentStreamAsync(Microsoft.Bot.Connector.IAttachments,System.String,System.String,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.TimeSpan" />
+      </Targets>
+      <Member MemberName="WithJitter">
+        <MemberSignature Language="C#" Value="public static TimeSpan WithJitter (this TimeSpan delay, double multiplier = 0.1);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeSpan WithJitter(valuetype System.TimeSpan delay, float64 multiplier) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.TimeSpanExtensions.WithJitter(System.TimeSpan,System.Double)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithJitter (delay As TimeSpan, Optional multiplier As Double = 0.1) As TimeSpan" />
+        <MemberSignature Language="F#" Value="static member WithJitter : TimeSpan * double -&gt; TimeSpan" Usage="Microsoft.Bot.Connector.Authentication.TimeSpanExtensions.WithJitter (delay, multiplier)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.TimeSpan</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="delay" Type="System.TimeSpan" RefType="this" />
+          <Parameter Name="multiplier" Type="System.Double" />
+        </Parameters>
+        <Docs>
+          <param name="delay">To be added.</param>
+          <param name="multiplier">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.Authentication.TimeSpanExtensions" Member="M:Microsoft.Bot.Connector.Authentication.TimeSpanExtensions.WithJitter(System.TimeSpan,System.Double)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder" />
+      </Targets>
+      <Member MemberName="AddBotAuthentication">
+        <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication (this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, Microsoft.Bot.Connector.ICredentialProvider credentialProvider);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication(class Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, class Microsoft.Bot.Connector.ICredentialProvider credentialProvider) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,Microsoft.Bot.Connector.ICredentialProvider)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotAuthentication (builder As AuthenticationBuilder, credentialProvider As ICredentialProvider) As AuthenticationBuilder" />
+        <MemberSignature Language="F#" Value="static member AddBotAuthentication : Microsoft.AspNetCore.Authentication.AuthenticationBuilder * Microsoft.Bot.Connector.ICredentialProvider -&gt; Microsoft.AspNetCore.Authentication.AuthenticationBuilder" Usage="Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication (builder, credentialProvider)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.AspNetCore.Authentication.AuthenticationBuilder</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="builder" Type="Microsoft.AspNetCore.Authentication.AuthenticationBuilder" RefType="this" />
+          <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.ICredentialProvider" />
+        </Parameters>
+        <Docs>
+          <param name="builder">To be added.</param>
+          <param name="credentialProvider">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.BotAuthenticationExtensions" Member="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,Microsoft.Bot.Connector.ICredentialProvider)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder" />
+      </Targets>
+      <Member MemberName="AddBotAuthentication">
+        <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication (this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string microsoftAppId, string microsoftAppPassword);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication(class Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string microsoftAppId, string microsoftAppPassword) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotAuthentication (builder As AuthenticationBuilder, microsoftAppId As String, microsoftAppPassword As String) As AuthenticationBuilder" />
+        <MemberSignature Language="F#" Value="static member AddBotAuthentication : Microsoft.AspNetCore.Authentication.AuthenticationBuilder * string * string -&gt; Microsoft.AspNetCore.Authentication.AuthenticationBuilder" Usage="Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication (builder, microsoftAppId, microsoftAppPassword)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.AspNetCore.Authentication.AuthenticationBuilder</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="builder" Type="Microsoft.AspNetCore.Authentication.AuthenticationBuilder" RefType="this" />
+          <Parameter Name="microsoftAppId" Type="System.String" />
+          <Parameter Name="microsoftAppPassword" Type="System.String" />
+        </Parameters>
+        <Docs>
+          <param name="builder">To be added.</param>
+          <param name="microsoftAppId">To be added.</param>
+          <param name="microsoftAppPassword">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.BotAuthenticationExtensions" Member="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder" />
+      </Targets>
+      <Member MemberName="AddBotAuthentication">
+        <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication (this Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, Action&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt; configureOptions);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Authentication.AuthenticationBuilder AddBotAuthentication(class Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder, string authenticationScheme, string displayName, class System.Action`1&lt;class Microsoft.Bot.Connector.BotAuthenticationOptions&gt; configureOptions) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String,System.Action{Microsoft.Bot.Connector.BotAuthenticationOptions})" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotAuthentication (builder As AuthenticationBuilder, authenticationScheme As String, displayName As String, configureOptions As Action(Of BotAuthenticationOptions)) As AuthenticationBuilder" />
+        <MemberSignature Language="F#" Value="static member AddBotAuthentication : Microsoft.AspNetCore.Authentication.AuthenticationBuilder * string * string * Action&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt; -&gt; Microsoft.AspNetCore.Authentication.AuthenticationBuilder" Usage="Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication (builder, authenticationScheme, displayName, configureOptions)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>Microsoft.AspNetCore.Authentication.AuthenticationBuilder</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="builder" Type="Microsoft.AspNetCore.Authentication.AuthenticationBuilder" RefType="this" />
+          <Parameter Name="authenticationScheme" Type="System.String" />
+          <Parameter Name="displayName" Type="System.String" />
+          <Parameter Name="configureOptions" Type="System.Action&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt;" />
+        </Parameters>
+        <Docs>
+          <param name="builder">To be added.</param>
+          <param name="authenticationScheme">To be added.</param>
+          <param name="displayName">To be added.</param>
+          <param name="configureOptions">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.BotAuthenticationExtensions" Member="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String,System.Action{Microsoft.Bot.Connector.BotAuthenticationOptions})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IBotSignIn" />
+      </Targets>
+      <Member MemberName="GetSignInUrlAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; GetSignInUrlAsync (this Microsoft.Bot.Connector.IBotSignIn operations, string state, string codeChallenge = null, string emulatorUrl = null, string finalRedirect = null, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; GetSignInUrlAsync(class Microsoft.Bot.Connector.IBotSignIn operations, string state, string codeChallenge, string emulatorUrl, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotSignInExtensions.GetSignInUrlAsync(Microsoft.Bot.Connector.IBotSignIn,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member GetSignInUrlAsync : Microsoft.Bot.Connector.IBotSignIn * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="Microsoft.Bot.Connector.BotSignInExtensions.GetSignInUrlAsync (operations, state, codeChallenge, emulatorUrl, finalRedirect, cancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBotSignIn" RefType="this" />
+          <Parameter Name="state" Type="System.String" />
+          <Parameter Name="codeChallenge" Type="System.String" />
+          <Parameter Name="emulatorUrl" Type="System.String" />
+          <Parameter Name="finalRedirect" Type="System.String" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="operations">
+            The operations group for this extension method.
+            </param>
+          <param name="state" />
+          <param name="codeChallenge" />
+          <param name="emulatorUrl" />
+          <param name="finalRedirect" />
+          <param name="cancellationToken">
+            The cancellation token.
+            </param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.BotSignInExtensions" Member="M:Microsoft.Bot.Connector.BotSignInExtensions.GetSignInUrlAsync(Microsoft.Bot.Connector.IBotSignIn,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -8171,6 +9274,150 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions" Member="M:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions.WithRandomNoise(System.TimeSpan,System.Double)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IUserToken" />
+      </Targets>
+      <Member MemberName="GetAadTokensAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, Microsoft.Bot.Schema.AadResourceUrls aadResourceUrls, string channelId = null, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, class Microsoft.Bot.Schema.AadResourceUrls aadResourceUrls, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.GetAadTokensAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,Microsoft.Bot.Schema.AadResourceUrls,System.String,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member GetAadTokensAsync : Microsoft.Bot.Connector.IUserToken * string * string * Microsoft.Bot.Schema.AadResourceUrls * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.GetAadTokensAsync (operations, userId, connectionName, aadResourceUrls, channelId, cancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+          <Parameter Name="userId" Type="System.String" />
+          <Parameter Name="connectionName" Type="System.String" />
+          <Parameter Name="aadResourceUrls" Type="Microsoft.Bot.Schema.AadResourceUrls" />
+          <Parameter Name="channelId" Type="System.String" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="operations">
+            The operations group for this extension method.
+            </param>
+          <param name="userId" />
+          <param name="connectionName" />
+          <param name="aadResourceUrls" />
+          <param name="channelId" />
+          <param name="cancellationToken">
+            The cancellation token.
+            </param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.UserTokenExtensions" Member="M:Microsoft.Bot.Connector.UserTokenExtensions.GetAadTokensAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,Microsoft.Bot.Schema.AadResourceUrls,System.String,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IUserToken" />
+      </Targets>
+      <Member MemberName="GetTokenAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; GetTokenAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, string channelId = null, string code = null, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; GetTokenAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, string channelId, string code, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member GetTokenAsync : Microsoft.Bot.Connector.IUserToken * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.GetTokenAsync (operations, userId, connectionName, channelId, code, cancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+          <Parameter Name="userId" Type="System.String" />
+          <Parameter Name="connectionName" Type="System.String" />
+          <Parameter Name="channelId" Type="System.String" />
+          <Parameter Name="code" Type="System.String" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="operations">
+            The operations group for this extension method.
+            </param>
+          <param name="userId" />
+          <param name="connectionName" />
+          <param name="channelId" />
+          <param name="code" />
+          <param name="cancellationToken">
+            The cancellation token.
+            </param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.UserTokenExtensions" Member="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IUserToken" />
+      </Targets>
+      <Member MemberName="GetTokenStatusAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt; GetTokenStatusAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string channelId = null, string include = null, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TokenStatus&gt;&gt; GetTokenStatusAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string channelId, string include, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenStatusAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member GetTokenStatusAsync : Microsoft.Bot.Connector.IUserToken * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.GetTokenStatusAsync (operations, userId, channelId, include, cancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+          <Parameter Name="userId" Type="System.String" />
+          <Parameter Name="channelId" Type="System.String" />
+          <Parameter Name="include" Type="System.String" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="operations">
+            The operations group for this extension method.
+            </param>
+          <param name="userId" />
+          <param name="channelId" />
+          <param name="include" />
+          <param name="cancellationToken">
+            The cancellation token.
+            </param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.UserTokenExtensions" Member="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenStatusAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Bot.Connector.IUserToken" />
+      </Targets>
+      <Member MemberName="SignOutAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;object&gt; SignOutAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName = null, string channelId = null, System.Threading.CancellationToken cancellationToken = null);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;object&gt; SignOutAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.SignOutAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member SignOutAsync : Microsoft.Bot.Connector.IUserToken * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.SignOutAsync (operations, userId, connectionName, channelId, cancellationToken)" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+          <Parameter Name="userId" Type="System.String" />
+          <Parameter Name="connectionName" Type="System.String" />
+          <Parameter Name="channelId" Type="System.String" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="operations">
+            The operations group for this extension method.
+            </param>
+          <param name="userId" />
+          <param name="connectionName" />
+          <param name="channelId" />
+          <param name="cancellationToken">
+            The cancellation token.
+            </param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Bot.Connector.UserTokenExtensions" Member="M:Microsoft.Bot.Connector.UserTokenExtensions.SignOutAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>

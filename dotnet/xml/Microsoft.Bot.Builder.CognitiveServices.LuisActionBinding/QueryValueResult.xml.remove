@@ -1,0 +1,108 @@
+<Type Name="QueryValueResult" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult">
+  <TypeSignature Language="C#" Value="public class QueryValueResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit QueryValueResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryValueResult" />
+  <TypeSignature Language="F#" Value="type QueryValueResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Container used to validate if an Action Parameter was validated or a if a Context Switch should occur.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryValueResult (bool succeed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool succeed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (succeed As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult : bool -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult" Usage="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult succeed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="succeed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="succeed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewAction">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction NewAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction NewAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.NewAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewAction As ILuisAction" />
+      <MemberSignature Language="F#" Value="member this.NewAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.NewAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewIntent">
+      <MemberSignature Language="C#" Value="public string NewIntent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewIntent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.NewIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewIntent As String" />
+      <MemberSignature Language="F#" Value="member this.NewIntent : string with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.NewIntent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Succeed">
+      <MemberSignature Language="C#" Value="public bool Succeed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Succeed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.Succeed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Succeed : bool" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult.Succeed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

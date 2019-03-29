@@ -1,0 +1,256 @@
+<Type Name="QnAMakerDialog" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog">
+  <TypeSignature Language="C#" Value="public class QnAMakerDialog : Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit QnAMakerDialog extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerDialog&#xA;Implements IDialog(Of IMessageActivity)" />
+  <TypeSignature Language="F#" Value="type QnAMakerDialog = class&#xA;    interface IDialog&lt;IMessageActivity&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A dialog specialized to handle QnA response from QnA Maker.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerDialog (params Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] services);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] services) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.#ctor(Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray services As IQnAService())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog" Usage="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog services" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="services" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="services">The QnA service.</param>
+        <summary>
+            Construct the QnA Service dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultWaitNextMessageAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task DefaultWaitNextMessageAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Connector.IMessageActivity message, Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task DefaultWaitNextMessageAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Connector.IMessageActivity message, class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.DefaultWaitNextMessageAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function DefaultWaitNextMessageAsync (context As IDialogContext, message As IMessageActivity, result As QnAMakerResults) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DefaultWaitNextMessageAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; System.Threading.Tasks.Task&#xA;override this.DefaultWaitNextMessageAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; System.Threading.Tasks.Task" Usage="qnAMakerDialog.DefaultWaitNextMessageAsync (context, message, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConfidentAnswer">
+      <MemberSignature Language="C#" Value="protected virtual bool IsConfidentAnswer (Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults qnaMakerResults);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsConfidentAnswer(class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults qnaMakerResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.IsConfidentAnswer(Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults)" />
+      <MemberSignature Language="F#" Value="abstract member IsConfidentAnswer : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; bool&#xA;override this.IsConfidentAnswer : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; bool" Usage="qnAMakerDialog.IsConfidentAnswer qnaMakerResults" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qnaMakerResults" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults" />
+      </Parameters>
+      <Docs>
+        <param name="qnaMakerResults">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeServicesFromAttributes">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] MakeServicesFromAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] MakeServicesFromAttributes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.MakeServicesFromAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeServicesFromAttributes () As IQnAService()" />
+      <MemberSignature Language="F#" Value="member this.MakeServicesFromAttributes : unit -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[]" Usage="qnAMakerDialog.MakeServicesFromAttributes " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageReceivedAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task MessageReceivedAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task MessageReceivedAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;class Microsoft.Bot.Connector.IMessageActivity&gt; argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.MessageReceivedAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.Dialogs.IAwaitable{Microsoft.Bot.Connector.IMessageActivity})" />
+      <MemberSignature Language="VB.NET" Value="Public Function MessageReceivedAsync (context As IDialogContext, argument As IAwaitable(Of IMessageActivity)) As Task" />
+      <MemberSignature Language="F#" Value="member this.MessageReceivedAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt; -&gt; System.Threading.Tasks.Task" Usage="qnAMakerDialog.MessageReceivedAsync (context, argument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="argument" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="argument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;.StartAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IDialog&lt;IMessageActivity&gt;.StartAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Connector.IMessageActivity&gt;.StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.Microsoft#Bot#Builder#Dialogs#IDialog&lt;Microsoft#Bot#Connector#IMessageActivity&gt;#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Function StartAsync (context As IDialogContext) As Task Implements IDialog(Of IMessageActivity).StartAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnAFeedbackStepAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task QnAFeedbackStepAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults qnaMakerResults);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task QnAFeedbackStepAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults qnaMakerResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.QnAFeedbackStepAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults)" />
+      <MemberSignature Language="F#" Value="abstract member QnAFeedbackStepAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; System.Threading.Tasks.Task&#xA;override this.QnAFeedbackStepAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; System.Threading.Tasks.Task" Usage="qnAMakerDialog.QnAFeedbackStepAsync (context, qnaMakerResults)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="qnaMakerResults" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="qnaMakerResults">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RespondFromQnAMakerResultAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task RespondFromQnAMakerResultAsync (Microsoft.Bot.Builder.Dialogs.IDialogContext context, Microsoft.Bot.Connector.IMessageActivity message, Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task RespondFromQnAMakerResultAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, class Microsoft.Bot.Connector.IMessageActivity message, class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.RespondFromQnAMakerResultAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext,Microsoft.Bot.Connector.IMessageActivity,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function RespondFromQnAMakerResultAsync (context As IDialogContext, message As IMessageActivity, result As QnAMakerResults) As Task" />
+      <MemberSignature Language="F#" Value="abstract member RespondFromQnAMakerResultAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; System.Threading.Tasks.Task&#xA;override this.RespondFromQnAMakerResultAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext * Microsoft.Bot.Connector.IMessageActivity * Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults -&gt; System.Threading.Tasks.Task" Usage="qnAMakerDialog.RespondFromQnAMakerResultAsync (context, message, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+        <Parameter Name="message" Type="Microsoft.Bot.Connector.IMessageActivity" />
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="services">
+      <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] services;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[] services" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.services" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly services As IQnAService() " />
+      <MemberSignature Language="F#" Value="val mutable services : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[]" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerDialog.services" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

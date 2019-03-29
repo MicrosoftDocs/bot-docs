@@ -1,0 +1,157 @@
+<Type Name="BuiltInEncyclopediaTypes" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes">
+  <TypeSignature Language="C#" Value="public class BuiltInEncyclopediaTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuiltInEncyclopediaTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuiltInEncyclopediaTypes" />
+  <TypeSignature Language="F#" Value="type BuiltInEncyclopediaTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            LUIS prebuilt Encyclopedia types.
+            https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuiltInEncyclopediaTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public const string Event;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Event" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Const Event As String " />
+      <MemberSignature Language="F#" Value="val mutable Event : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.Event" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventType">
+      <MemberSignature Language="C#" Value="public string EventType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EventType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.EventType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As String" />
+      <MemberSignature Language="F#" Value="member this.EventType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.EventType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Organization">
+      <MemberSignature Language="C#" Value="public const string Organization;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Organization" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.Organization" />
+      <MemberSignature Language="VB.NET" Value="Public Const Organization As String " />
+      <MemberSignature Language="F#" Value="val mutable Organization : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.Organization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrganizationType">
+      <MemberSignature Language="C#" Value="public string OrganizationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OrganizationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.OrganizationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrganizationType As String" />
+      <MemberSignature Language="F#" Value="member this.OrganizationType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.OrganizationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Person">
+      <MemberSignature Language="C#" Value="public const string Person;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Person" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.Person" />
+      <MemberSignature Language="VB.NET" Value="Public Const Person As String " />
+      <MemberSignature Language="F#" Value="val mutable Person : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.Person" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersonType">
+      <MemberSignature Language="C#" Value="public string PersonType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PersonType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.PersonType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersonType As String" />
+      <MemberSignature Language="F#" Value="member this.PersonType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInEncyclopediaTypes.PersonType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

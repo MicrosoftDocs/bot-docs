@@ -1,0 +1,240 @@
+<Type Name="TableLogger" FullName="Microsoft.Bot.Builder.Azure.TableLogger">
+  <TypeSignature Language="C#" Value="public class TableLogger : Microsoft.Bot.Builder.History.IActivityLogger, Microsoft.Bot.Builder.History.IActivityManager, Microsoft.Bot.Builder.History.IActivitySource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableLogger extends System.Object implements class Microsoft.Bot.Builder.History.IActivityLogger, class Microsoft.Bot.Builder.History.IActivityManager, class Microsoft.Bot.Builder.History.IActivitySource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.TableLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableLogger&#xA;Implements IActivityLogger, IActivityManager, IActivitySource" />
+  <TypeSignature Language="F#" Value="type TableLogger = class&#xA;    interface IActivityLogger&#xA;    interface IActivitySource&#xA;    interface IActivityManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.History.IActivityLogger</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.History.IActivityManager</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.History.IActivitySource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Log conversation activities to Azure Table Storage.
+            </summary>
+    <remarks>
+            Activities are limited to ~1mb when converted to JSON and compressed.  If an activity is bigger than that,
+            it will be dropped.  If your activities are larger, you either need to preprocess them first or use another implementation.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableLogger (Microsoft.WindowsAzure.Storage.Table.CloudTable table);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.WindowsAzure.Storage.Table.CloudTable table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (table As CloudTable)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.TableLogger : Microsoft.WindowsAzure.Storage.Table.CloudTable -&gt; Microsoft.Bot.Builder.Azure.TableLogger" Usage="new Microsoft.Bot.Builder.Azure.TableLogger table" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="table" Type="Microsoft.WindowsAzure.Storage.Table.CloudTable" />
+      </Parameters>
+      <Docs>
+        <param name="table">Table stroage to use for storing activities.</param>
+        <summary>
+            Create a table storage logger.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.History.IActivityLogger.LogAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActivityLogger.LogAsync (Microsoft.Bot.Connector.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Function LogAsync (activity As IActivity) As Task Implements IActivityLogger.LogAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.IActivity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">Activity to log.</param>
+        <summary>
+            Log activity to table storage.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.History.IActivityManager.DeleteBeforeAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActivityManager.DeleteBeforeAsync (DateTime oldest, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivityManager.DeleteBeforeAsync(valuetype System.DateTime oldest, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityManager#DeleteBeforeAsync(System.DateTime,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function DeleteBeforeAsync (oldest As DateTime, cancel As CancellationToken) As Task Implements IActivityManager.DeleteBeforeAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivityManager.DeleteBeforeAsync(System.DateTime,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldest" Type="System.DateTime" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="oldest">Maximum timespan from now to remember.</param>
+        <param name="cancel">Cancellation token.</param>
+        <summary>
+            Delete any conversation records older than <paramref name="oldest" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.History.IActivityManager.DeleteConversationAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActivityManager.DeleteConversationAsync (string channelId, string conversationId, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivityManager.DeleteConversationAsync(string channelId, string conversationId, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityManager#DeleteConversationAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function DeleteConversationAsync (channelId As String, conversationId As String, cancel As CancellationToken) As Task Implements IActivityManager.DeleteConversationAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivityManager.DeleteConversationAsync(System.String,System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">Channel identifier.</param>
+        <param name="conversationId">Conversation identifier.</param>
+        <param name="cancel">Cancellation token.</param>
+        <summary>
+            Delete a specific conversation.
+            </summary>
+        <returns>Task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.History.IActivityManager.DeleteUserActivitiesAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActivityManager.DeleteUserActivitiesAsync (string userId, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivityManager.DeleteUserActivitiesAsync(string userId, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityManager#DeleteUserActivitiesAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function DeleteUserActivitiesAsync (userId As String, cancel As CancellationToken) As Task Implements IActivityManager.DeleteUserActivitiesAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivityManager.DeleteUserActivitiesAsync(System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.History.IActivitySource.Activities">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt; IActivitySource.Activities (string channelId, string conversationId, DateTime oldest);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; Microsoft.Bot.Builder.History.IActivitySource.Activities(string channelId, string conversationId, valuetype System.DateTime oldest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivitySource#Activities(System.String,System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Function Activities (channelId As String, conversationId As String, oldest As DateTime) As IEnumerable(Of IActivity) Implements IActivitySource.Activities" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivitySource.Activities(System.String,System.String,System.DateTime)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="oldest" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="oldest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.History.IActivitySource.WalkActivitiesAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActivitySource.WalkActivitiesAsync (Func&lt;Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task&gt; function, string channelId, string conversationId, DateTime oldest, System.Threading.CancellationToken cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivitySource.WalkActivitiesAsync(class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class System.Threading.Tasks.Task&gt; function, string channelId, string conversationId, valuetype System.DateTime oldest, valuetype System.Threading.CancellationToken cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivitySource#WalkActivitiesAsync(System.Func{Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task},System.String,System.String,System.DateTime,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function WalkActivitiesAsync (function As Func(Of IActivity, Task), channelId As String, conversationId As String, oldest As DateTime, cancel As CancellationToken) As Task Implements IActivitySource.WalkActivitiesAsync" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivitySource.WalkActivitiesAsync(System.Func{Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task},System.String,System.String,System.DateTime,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="function" Type="System.Func&lt;Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="oldest" Type="System.DateTime" />
+        <Parameter Name="cancel" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="function">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="oldest">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

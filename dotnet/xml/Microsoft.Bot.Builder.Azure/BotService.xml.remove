@@ -1,0 +1,100 @@
+<Type Name="BotService" FullName="Microsoft.Bot.Builder.Azure.BotService">
+  <TypeSignature Language="C#" Value="public static class BotService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.BotService" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotService" />
+  <TypeSignature Language="F#" Value="type BotService = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The azure bot service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AuthenticateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AuthenticateAsync (System.Net.Http.HttpRequestMessage request, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Activity&gt; activities, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AuthenticateAsync(class System.Net.Http.HttpRequestMessage request, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Activity&gt; activities, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotService.AuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Activity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AuthenticateAsync (request As HttpRequestMessage, activities As IEnumerable(Of Activity), Optional token As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="static member AuthenticateAsync : System.Net.Http.HttpRequestMessage * seq&lt;Microsoft.Bot.Connector.Activity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Azure.BotService.AuthenticateAsync (request, activities, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+        <Parameter Name="activities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Activity&gt;" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request.</param>
+        <param name="activities">The incoming activities.</param>
+        <param name="token">The cancellation token</param>
+        <summary>
+            Authenticate the request and add the service url in the activities to <see cref="F:Microsoft.Bot.Connector.MicrosoftAppCredentials.TrustedHostNames" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authenticator">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotAuthenticator Authenticator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Connector.BotAuthenticator Authenticator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.BotService.Authenticator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Authenticator As BotAuthenticator" />
+      <MemberSignature Language="F#" Value="member this.Authenticator : Microsoft.Bot.Connector.BotAuthenticator" Usage="Microsoft.Bot.Builder.Azure.BotService.Authenticator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotAuthenticator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The bot authenticator.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Azure.BotServiceScope Initialize (System.Reflection.Assembly assembly = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Azure.BotServiceScope Initialize(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotService.Initialize(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="static member Initialize : System.Reflection.Assembly -&gt; Microsoft.Bot.Builder.Azure.BotServiceScope" Usage="Microsoft.Bot.Builder.Azure.BotService.Initialize assembly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Azure.BotServiceScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly"> The assembly that should be resolved.</param>
+        <summary>
+            Initialize bot service by updating the <see cref="P:Microsoft.Bot.Builder.Dialogs.Conversation.Container" /> with <see cref="T:Microsoft.Bot.Builder.Azure.AzureModule" />.
+            </summary>
+        <returns> The <see cref="T:Microsoft.Bot.Builder.Azure.BotServiceScope" /> that should be disposed when bot service operation is done for the request.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

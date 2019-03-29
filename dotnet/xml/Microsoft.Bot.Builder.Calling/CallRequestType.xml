@@ -1,0 +1,60 @@
+﻿<Type Name="CallRequestType" FullName="Microsoft.Bot.Builder.Calling.CallRequestType">
+  <TypeSignature Language="C#" Value="public enum CallRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CallRequestType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallRequestType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CallRequestType" />
+  <TypeSignature Language="F#" Value="type CallRequestType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            The type of calling request
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CallingEvent">
+      <MemberSignature Language="C#" Value="CallingEvent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.CallRequestType CallingEvent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.CallRequestType.CallingEvent" />
+      <MemberSignature Language="VB.NET" Value="CallingEvent" />
+      <MemberSignature Language="F#" Value="CallingEvent = 1" Usage="Microsoft.Bot.Builder.Calling.CallRequestType.CallingEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.CallRequestType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncomingCall">
+      <MemberSignature Language="C#" Value="IncomingCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.CallRequestType IncomingCall = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.CallRequestType.IncomingCall" />
+      <MemberSignature Language="VB.NET" Value="IncomingCall" />
+      <MemberSignature Language="F#" Value="IncomingCall = 0" Usage="Microsoft.Bot.Builder.Calling.CallRequestType.IncomingCall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.CallRequestType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

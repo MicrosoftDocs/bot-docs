@@ -1,0 +1,105 @@
+﻿<Type Name="CallingBotServiceSettings" FullName="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings">
+  <TypeSignature Language="C#" Value="public class CallingBotServiceSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallingBotServiceSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class CallingBotServiceSettings" />
+  <TypeSignature Language="F#" Value="type CallingBotServiceSettings = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallingBotServiceSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackUrl">
+      <MemberSignature Language="C#" Value="public string CallbackUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CallbackUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.CallbackUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallbackUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CallbackUrl : string with get, set" Usage="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.CallbackUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The url where the Callingcallbacks from Skype Bot platform will be sent. Needs to match the domain name of service and the route configured in BotController.
+            For example "https://testservice.azurewebsites.net/api/calling/callback"   
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromCloudConfiguration">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Calling.CallingBotServiceSettings LoadFromCloudConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Calling.CallingBotServiceSettings LoadFromCloudConfiguration() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.LoadFromCloudConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromCloudConfiguration () As CallingBotServiceSettings" />
+      <MemberSignature Language="F#" Value="static member LoadFromCloudConfiguration : unit -&gt; Microsoft.Bot.Builder.Calling.CallingBotServiceSettings" Usage="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.LoadFromCloudConfiguration " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.CallingBotServiceSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Loads core bot library configuration from the cloud service configuration
+            </summary>
+        <returns>MessagingBotServiceSettings</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; unit" Usage="callingBotServiceSettings.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+                Validates current bot configuration and throws BotConfigurationException if the configuration is invalid
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

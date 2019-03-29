@@ -1,0 +1,294 @@
+﻿<Type Name="ICallingBotService" FullName="Microsoft.Bot.Builder.Calling.ICallingBotService">
+  <TypeSignature Language="C#" Value="public interface ICallingBotService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICallingBotService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ICallingBotService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICallingBotService" />
+  <TypeSignature Language="F#" Value="type ICallingBotService = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnAnswerCompleted">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent,System.Threading.Tasks.Task&gt; OnAnswerCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent, class System.Threading.Tasks.Task&gt; OnAnswerCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnAnswerCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnAnswerCompleted As Func(Of AnswerOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnAnswerCompleted : Func&lt;Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnAnswerCompleted : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the bot gets the outcome of Answer action. If the operation was successful the call is established
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHangupCompleted">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent,System.Threading.Tasks.Task&gt; OnHangupCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent, class System.Threading.Tasks.Task&gt; OnHangupCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnHangupCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnHangupCompleted As Func(Of HangupOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnHangupCompleted : Func&lt;Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnHangupCompleted : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the bot gets the outcome of Hangup action
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnIncomingCallReceived">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent,System.Threading.Tasks.Task&gt; OnIncomingCallReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent, class System.Threading.Tasks.Task&gt; OnIncomingCallReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnIncomingCallReceived" />
+      <MemberSignature Language="VB.NET" Value="Event OnIncomingCallReceived As Func(Of IncomingCallEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnIncomingCallReceived : Func&lt;Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnIncomingCallReceived : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when bot receives incoming call
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPlayPromptCompleted">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent,System.Threading.Tasks.Task&gt; OnPlayPromptCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent, class System.Threading.Tasks.Task&gt; OnPlayPromptCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnPlayPromptCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnPlayPromptCompleted As Func(Of PlayPromptOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnPlayPromptCompleted : Func&lt;Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnPlayPromptCompleted : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the bot gets the outcome of PlayPrompt action
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecognizeCompleted">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent,System.Threading.Tasks.Task&gt; OnRecognizeCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent, class System.Threading.Tasks.Task&gt; OnRecognizeCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnRecognizeCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnRecognizeCompleted As Func(Of RecognizeOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnRecognizeCompleted : Func&lt;Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnRecognizeCompleted : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the bot gets the outcome of Recognize action
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecordCompleted">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent,System.Threading.Tasks.Task&gt; OnRecordCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent, class System.Threading.Tasks.Task&gt; OnRecordCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnRecordCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnRecordCompleted As Func(Of RecordOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnRecordCompleted : Func&lt;Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnRecordCompleted : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the bot gets the outcome of Record action
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRejectCompleted">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent,System.Threading.Tasks.Task&gt; OnRejectCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent, class System.Threading.Tasks.Task&gt; OnRejectCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnRejectCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event OnRejectCompleted As Func(Of RejectOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnRejectCompleted : Func&lt;Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnRejectCompleted : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the bot gets the outcome of Reject action
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWorkflowValidationFailed">
+      <MemberSignature Language="C#" Value="event Func&lt;Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent,System.Threading.Tasks.Task&gt; OnWorkflowValidationFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent, class System.Threading.Tasks.Task&gt; OnWorkflowValidationFailed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnWorkflowValidationFailed" />
+      <MemberSignature Language="VB.NET" Value="Event OnWorkflowValidationFailed As Func(Of WorkflowValidationOutcomeEvent, Task) " />
+      <MemberSignature Language="F#" Value="member this.OnWorkflowValidationFailed : Func&lt;Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent, System.Threading.Tasks.Task&gt; " Usage="member this.OnWorkflowValidationFailed : System.Func&lt;Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent, System.Threading.Tasks.Task&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent,System.Threading.Tasks.Task&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when specified workflow fails to be validated by Bot platform
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCallback">
+      <MemberSignature Language="C#" Value="public string ProcessCallback (string content, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; additionalData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ProcessCallback(string content, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; additionalData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessCallback(System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessCallback (content As String, additionalData As Task(Of Stream)) As String" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCallback : string * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; string" Usage="iCallingBotService.ProcessCallback (content, additionalData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="additionalData" Type="System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content of request</param>
+        <param name="additionalData">The remaining part of request in case of multi part request</param>
+        <summary>
+            Method responsible for processing the data sent with POST request to callback URL
+            </summary>
+        <returns>Returns the response that should be sent to the sender of POST request</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCallbackAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; ProcessCallbackAsync (string content, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; additionalData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; ProcessCallbackAsync(string content, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; additionalData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessCallbackAsync(System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessCallbackAsync (content As String, additionalData As Task(Of Stream)) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCallbackAsync : string * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iCallingBotService.ProcessCallbackAsync (content, additionalData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="additionalData" Type="System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content of request</param>
+        <param name="additionalData">The remaining part of request in case of multi part request</param>
+        <summary>
+            Method responsible for processing the data sent with POST request to callback URL
+            </summary>
+        <returns>Returns the response that should be sent to the sender of POST request</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessIncomingCall">
+      <MemberSignature Language="C#" Value="public string ProcessIncomingCall (string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ProcessIncomingCall(string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessIncomingCall(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessIncomingCall (content As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member ProcessIncomingCall : string -&gt; string" Usage="iCallingBotService.ProcessIncomingCall content" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content of request</param>
+        <summary>
+            Method responsible for processing the data sent with POST request to incoming call URL
+            </summary>
+        <returns>Returns the response that should be sent to the sender of POST request</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessIncomingCallAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; ProcessIncomingCallAsync (string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; ProcessIncomingCallAsync(string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessIncomingCallAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessIncomingCallAsync (content As String) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessIncomingCallAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iCallingBotService.ProcessIncomingCallAsync content" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content of request</param>
+        <summary>
+            Method responsible for processing the data sent with POST request to incoming call URL
+            </summary>
+        <returns>Returns the response that should be sent to the sender of POST request</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

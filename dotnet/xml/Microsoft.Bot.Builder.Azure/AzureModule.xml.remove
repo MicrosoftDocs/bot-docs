@@ -1,0 +1,92 @@
+<Type Name="AzureModule" FullName="Microsoft.Bot.Builder.Azure.AzureModule">
+  <TypeSignature Language="C#" Value="public sealed class AzureModule : Autofac.Module" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AzureModule extends Autofac.Module" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.AzureModule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AzureModule&#xA;Inherits Module" />
+  <TypeSignature Language="F#" Value="type AzureModule = class&#xA;    inherit Module" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Autofac.Module</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Autofac module for azure bot components.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AzureModule (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureModule.#ctor(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.AzureModule : System.Reflection.Assembly -&gt; Microsoft.Bot.Builder.Azure.AzureModule" Usage="new Microsoft.Bot.Builder.Azure.AzureModule assembly" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">
+            The assembly used by <see cref="T:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate" /> and
+            <see cref="T:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder" /></param>
+        <summary>
+            Instantiates the azure module. 
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key_DataStore">
+      <MemberSignature Language="C#" Value="public static readonly object Key_DataStore;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object Key_DataStore" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AzureModule.Key_DataStore" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Key_DataStore As Object " />
+      <MemberSignature Language="F#" Value=" staticval mutable Key_DataStore : obj" Usage="Microsoft.Bot.Builder.Azure.AzureModule.Key_DataStore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for data store register with the container.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="protected override void Load (Autofac.ContainerBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureModule.Load(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="azureModule.Load builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder"> The container builder.</param>
+        <summary>
+            Registers dependencies with the <paramref name="builder" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

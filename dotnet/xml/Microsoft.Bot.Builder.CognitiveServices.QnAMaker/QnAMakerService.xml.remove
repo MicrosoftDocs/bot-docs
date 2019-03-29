@@ -1,0 +1,201 @@
+<Type Name="QnAMakerService" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService">
+  <TypeSignature Language="C#" Value="public sealed class QnAMakerService : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit QnAMakerService extends System.Object implements class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QnAMakerService&#xA;Implements IQnAService" />
+  <TypeSignature Language="F#" Value="type QnAMakerService = class&#xA;    interface IQnAService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Standard implementation of IQnAService
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerService (Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute qnaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute qnaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.#ctor(Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (qnaInfo As QnAMakerAttribute)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService" Usage="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService qnaInfo" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="qnaInfo" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="qnaInfo">The QnA knowledgebase information.</param>
+        <summary>
+            Construct the QnA service using the qnaInfo information.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.ActiveLearnAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;bool&gt; IQnAService.ActiveLearnAsync (Uri uri, Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody postBody, string authKey);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.ActiveLearnAsync(class System.Uri uri, class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody postBody, string authKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.Microsoft#Bot#Builder#CognitiveServices#QnAMaker#IQnAService#ActiveLearnAsync(System.Uri,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody,System.String)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.ActiveLearnAsync(System.Uri,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="postBody" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody" />
+        <Parameter Name="authKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <param name="postBody">To be added.</param>
+        <param name="authKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.BuildFeedbackRequest">
+      <MemberSignature Language="C#" Value="Uri IQnAService.BuildFeedbackRequest (string userId, string userQuery, string kbQuestion, string kbAnswer, out Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody postBody, out string authKey, out string knowledgebaseId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Uri Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.BuildFeedbackRequest(string userId, string userQuery, string kbQuestion, string kbAnswer, [out] class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody&amp; postBody, [out] string&amp; authKey, [out] string&amp; knowledgebaseId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.Microsoft#Bot#Builder#CognitiveServices#QnAMaker#IQnAService#BuildFeedbackRequest(System.String,System.String,System.String,System.String,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody@,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Function BuildFeedbackRequest (userId As String, userQuery As String, kbQuestion As String, kbAnswer As String, ByRef postBody As QnAMakerTrainingRequestBody, ByRef authKey As String, ByRef knowledgebaseId As String) As Uri Implements IQnAService.BuildFeedbackRequest" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.BuildFeedbackRequest(System.String,System.String,System.String,System.String,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody@,System.String@,System.String@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="userQuery" Type="System.String" />
+        <Parameter Name="kbQuestion" Type="System.String" />
+        <Parameter Name="kbAnswer" Type="System.String" />
+        <Parameter Name="postBody" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody" RefType="out" />
+        <Parameter Name="authKey" Type="System.String" RefType="out" />
+        <Parameter Name="knowledgebaseId" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="userId">To be added.</param>
+        <param name="userQuery">To be added.</param>
+        <param name="kbQuestion">To be added.</param>
+        <param name="kbAnswer">To be added.</param>
+        <param name="postBody">To be added.</param>
+        <param name="authKey">To be added.</param>
+        <param name="knowledgebaseId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.BuildRequest">
+      <MemberSignature Language="C#" Value="Uri IQnAService.BuildRequest (string queryText, out Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody postBody, out string authKey);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Uri Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.BuildRequest(string queryText, [out] class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody&amp; postBody, [out] string&amp; authKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.Microsoft#Bot#Builder#CognitiveServices#QnAMaker#IQnAService#BuildRequest(System.String,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Function BuildRequest (queryText As String, ByRef postBody As QnAMakerRequestBody, ByRef authKey As String) As Uri Implements IQnAService.BuildRequest" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.BuildRequest(System.String,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody@,System.String@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryText" Type="System.String" />
+        <Parameter Name="postBody" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody" RefType="out" />
+        <Parameter Name="authKey" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="queryText">To be added.</param>
+        <param name="postBody">To be added.</param>
+        <param name="authKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.QueryServiceAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt; IQnAService.QueryServiceAsync (Uri uri, Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody postBody, string authKey);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.QueryServiceAsync(class System.Uri uri, class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody postBody, string authKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.Microsoft#Bot#Builder#CognitiveServices#QnAMaker#IQnAService#QueryServiceAsync(System.Uri,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody,System.String)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService.QueryServiceAsync(System.Uri,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="postBody" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerRequestBody" />
+        <Parameter Name="authKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <param name="postBody">To be added.</param>
+        <param name="authKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriBaseV2">
+      <MemberSignature Language="C#" Value="public static readonly Uri UriBaseV2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Uri UriBaseV2" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.UriBaseV2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UriBaseV2 As Uri " />
+      <MemberSignature Language="F#" Value=" staticval mutable UriBaseV2 : Uri" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerService.UriBaseV2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The base URI for accessing QnA Service.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,142 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-3.0">
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.19.1.44133" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="3.16.3.40383" />
-    <Assembly Name="Microsoft.Bot.Builder" Version="3.19.1.44133" />
-    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.19.1.44133" />
-    <Assembly Name="Microsoft.Bot.Connector" Version="3.19.1.44133" />
+    <Assembly Name="Microsoft.Bot.Builder.Autofac" Version="3.20.1.42" />
+    <Assembly Name="Microsoft.Bot.Builder.Calling" Version="3.20.1.42" />
+    <Assembly Name="Microsoft.Bot.Builder" Version="3.20.1.42" />
+    <Assembly Name="Microsoft.Bot.Builder.FormFlow.Json" Version="3.20.1.42" />
+    <Assembly Name="Microsoft.Bot.Builder.History" Version="3.20.1.42" />
+    <Assembly Name="Microsoft.Bot.Connector.AspNetCore" Version="2.0.1.44133" />
+    <Assembly Name="Microsoft.Bot.Connector" Version="3.20.1.42" />
   </Assemblies>
   <Namespace Name="Microsoft.Bot.Builder.Autofac.Base">
     <Type Name="Microsoft.Bot.Builder.Autofac.Base.Extensions" Id="T:Microsoft.Bot.Builder.Autofac.Base.Extensions">
       <Member Id="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterAdapterChain``1(Autofac.ContainerBuilder,System.Type[])" />
       <Member Id="M:Microsoft.Bot.Builder.Autofac.Base.Extensions.RegisterKeyedType``2(Autofac.ContainerBuilder)" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Azure">
-    <Type Name="Microsoft.Bot.Builder.Azure.AppSettingKeys" Id="T:Microsoft.Bot.Builder.Azure.AppSettingKeys">
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.AppId" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.CosmosDbEndpoint" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.CosmosDbKey" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.OpenIdMetadata" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.Password" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.SqlServerConnectionString" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.StateEndpoint" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.TableStorageConnectionString" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseCosmosDbForConversationState" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseSqlServerForConversationState" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseTableStorage2ForConversationState" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseTableStorageForConversationState" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.AppSettingKeys.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.AzureBot" Id="T:Microsoft.Bot.Builder.Azure.AzureBot">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.AzureBot.Initialize" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.AzureBot.Authenticator" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.AzureModule" Id="T:Microsoft.Bot.Builder.Azure.AzureModule">
-      <Member Id="F:Microsoft.Bot.Builder.Azure.AzureModule.Key_DataStore" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.AzureModule.#ctor(System.Reflection.Assembly)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.AzureModule.Load(Autofac.ContainerBuilder)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.BotDataStoreBridge" Id="T:Microsoft.Bot.Builder.Azure.BotDataStoreBridge">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.BotService" Id="T:Microsoft.Bot.Builder.Azure.BotService">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotService.AuthenticateAsync(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Activity},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotService.Initialize(System.Reflection.Assembly)" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.BotService.Authenticator" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate" Id="T:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate">
-      <Member Id="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.BindingFlags" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameMethod" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameTarget" />
-      <Member Id="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameType" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.#ctor(System.Reflection.Assembly)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.GetMethodInfoFromCurrentAssembly(System.Reflection.MethodInfo)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.Microsoft#Bot#Builder#Internals#Fibers#Serialization#ISurrogateProvider#Handles(System.Type,System.Runtime.Serialization.StreamingContext,System.Int32@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.BotServiceScope" Id="T:Microsoft.Bot.Builder.Azure.BotServiceScope">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceScope.#ctor(System.IDisposable[])" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceScope.System#IDisposable#Dispose" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder" Id="T:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder.#ctor(System.Reflection.Assembly)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder.BindToType(System.String,System.String)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore" Id="T:Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore.#ctor(Microsoft.Azure.Documents.IDocumentClient,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore.#ctor(System.Uri,System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.DocumentDbBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.Extensions" Id="T:Microsoft.Bot.Builder.Azure.Extensions">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.Extensions.Compress(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.Extensions.Decompress(System.Byte[])" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.ResolveAssembly" Id="T:Microsoft.Bot.Builder.Azure.ResolveAssembly">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.ResolveAssembly.Create(System.Reflection.Assembly)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.ResolveAssembly.System#IDisposable#Dispose" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.SqlBotDataStore" Id="T:Microsoft.Bot.Builder.Azure.SqlBotDataStore">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.SqlBotDataStore.#ctor(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.SqlBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.SqlBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.SqlBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.TableBotDataStore" Id="T:Microsoft.Bot.Builder.Azure.TableBotDataStore">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore.#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTable)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore.#ctor(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.TableBotDataStore.Table" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.TableBotDataStore2" Id="T:Microsoft.Bot.Builder.Azure.TableBotDataStore2">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.#ctor(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Tables" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.TableLogger" Id="T:Microsoft.Bot.Builder.Azure.TableLogger">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTable)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityManager#DeleteBeforeAsync(System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityManager#DeleteConversationAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivityManager#DeleteUserActivitiesAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivitySource#Activities(System.String,System.String,System.DateTime)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.Microsoft#Bot#Builder#History#IActivitySource#WalkActivitiesAsync(System.Func{Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task},System.String,System.String,System.DateTime,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.TableLogger/ActivityEntity" Id="T:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.#ctor(Microsoft.Bot.Connector.IActivity)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GeneratePartitionKey(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GenerateRowKey(System.DateTime)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.GenerateRowKey(System.DateTimeOffset)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Activity" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.From" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Recipient" />
-      <Member Id="P:Microsoft.Bot.Builder.Azure.TableLogger.ActivityEntity.Version" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.TableLoggerModule" Id="T:Microsoft.Bot.Builder.Azure.TableLoggerModule">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLoggerModule.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.TableLoggerModule.Load(Autofac.ContainerBuilder)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Azure.Utils" Id="T:Microsoft.Bot.Builder.Azure.Utils">
-      <Member Id="M:Microsoft.Bot.Builder.Azure.Utils.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.Utils.GetAppSetting(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.Utils.GetOpenIdConfigurationUrl(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Azure.Utils.GetStateApiUrl(System.String)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Base">
@@ -160,6 +36,536 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Base.Types" Id="T:Microsoft.Bot.Builder.Base.Types">
       <Member Id="M:Microsoft.Bot.Builder.Base.Types.MethodOf(System.Linq.Expressions.Expression{System.Action})" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Calling">
+    <Type Name="Microsoft.Bot.Builder.Calling.CallingBotService" Id="T:Microsoft.Bot.Builder.Calling.CallingBotService">
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnAnswerCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnHangupCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnIncomingCallReceived" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnPlayPromptCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnRecognizeCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnRecordCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnRejectCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.CallingBotService.OnWorkflowValidationFailed" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotService.#ctor(Microsoft.Bot.Builder.Calling.CallingBotServiceSettings)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotService.ProcessCallback(System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotService.ProcessCallbackAsync(System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotService.ProcessIncomingCall(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotService.ProcessIncomingCallAsync(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings" Id="T:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.LoadFromCloudConfiguration" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings.CallbackUrl" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.CallingContext" Id="T:Microsoft.Bot.Builder.Calling.CallingContext">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.CallingContext.Request" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingContext.#ctor(System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingContext.ExtractSkypeChainId(System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingContext.GenerateParsedResults(System.Net.HttpStatusCode,System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingContext.ProcessCallingEventAsync" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingContext.ProcessIncomingCallAsync" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingContext.ProcessRequest(Microsoft.Bot.Builder.Calling.CallRequestType)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.CallingConversation" Id="T:Microsoft.Bot.Builder.Calling.CallingConversation">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.CallingConversation.Container" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingConversation.RegisterCallingBot(System.Func{Microsoft.Bot.Builder.Calling.ICallingBotService,Microsoft.Bot.Builder.Calling.ICallingBot})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingConversation.SendAsync(System.Net.Http.HttpRequestMessage,Microsoft.Bot.Builder.Calling.CallRequestType)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.CallingModule" Id="T:Microsoft.Bot.Builder.Calling.CallingModule">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.CallingModule.LifetimeScopeTag" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingModule.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingModule.BeginLifetimeScope(Autofac.ILifetimeScope,System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingModule.Load(Autofac.ContainerBuilder)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.CallingModule_MakeBot" Id="T:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.Load(Autofac.ContainerBuilder)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.Register(Autofac.ILifetimeScope,System.Func{Microsoft.Bot.Builder.Calling.ICallingBotService,Microsoft.Bot.Builder.Calling.ICallingBot})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.CallRequestType" Id="T:Microsoft.Bot.Builder.Calling.CallRequestType">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.CallRequestType.CallingEvent" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.CallRequestType.IncomingCall" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ICallingBot" Id="T:Microsoft.Bot.Builder.Calling.ICallingBot">
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ICallingBot.CallingBotService" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ICallingBotService" Id="T:Microsoft.Bot.Builder.Calling.ICallingBotService">
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnAnswerCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnHangupCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnIncomingCallReceived" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnPlayPromptCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnRecognizeCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnRecordCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnRejectCompleted" />
+      <Member Id="E:Microsoft.Bot.Builder.Calling.ICallingBotService.OnWorkflowValidationFailed" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessCallback(System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessCallbackAsync(System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessIncomingCall(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ICallingBotService.ProcessIncomingCallAsync(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ParsedCallingRequest" Id="T:Microsoft.Bot.Builder.Calling.ParsedCallingRequest">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.Faulted" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.AdditionalData" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.Content" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.ParseStatusCode" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ParsedCallingRequest.SkypeChainId" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Calling.Events">
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AnswerOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.AnswerOutcomeEvent.AnswerOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.HangupOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.HangupOutcomeEvent.HangupOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.IncomingCall" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.ResultingWorkflow" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" Id="T:Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase.ConversationResult" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase.ResultingWorkflow" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent.PlayPromptOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.RecognizeOutcomeEvent.RecognizeOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.RecordedContent" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.RecordOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RejectOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.RejectOutcomeEvent.RejectOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent" Id="T:Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent.WorkflowValidationOutcome" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Calling.Exceptions">
+    <Type Name="Microsoft.Bot.Builder.Calling.Exceptions.BotCallingServiceException" Id="T:Microsoft.Bot.Builder.Calling.Exceptions.BotCallingServiceException">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotCallingServiceException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotCallingServiceException.#ctor(System.String,System.Exception,System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException" Id="T:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException.#ctor(System.String,System.Exception,System.String,System.String,System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException.#ctor(System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException.ConfigurationItemName" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException.ConfigurationItemValue" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.Exceptions.BotException" Id="T:Microsoft.Bot.Builder.Calling.Exceptions.BotException">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotException.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.Exceptions.BotException.#ctor(System.String,System.Exception,System.Boolean)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts">
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase.#ctor(System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase.Action" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase.IsStandaloneAction" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase.OperationId" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter.Create(System.Type,Newtonsoft.Json.Linq.JObject)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ActionKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientCountryKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientUiLanguageKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientVersionKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ContactAddAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ContactRemoveAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.LcidKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.TypeName" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.UserDisplayNameKey" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ValidateInternal" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.Action" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientCountry" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientUiLanguage" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.ClientVersion" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.DisplayName" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification.Lcid" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer.DefaultAcceptModalityTypes" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer.AcceptModalityTypes" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AnswerOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AnswerOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AnswerOutcome.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.FromHeaderKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.JsonContentType" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.MessageTypeHeaderKey" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.ToHeaderKey" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.GetMessageType(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.Validate" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.ValidateInternal" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.ValidateMri(System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.VerifyPropertyExists(System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.From" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.MessageType" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage.To" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink.Callback" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink.Notification" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome.ChoiceName" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome.CompletionReason" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits.MaxNumberOfDtmfs" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits.StopTones" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.CompletionReason" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome.Digits" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.AdditionalData" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.CallState" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.IsMultiparty" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.Participants" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.PresentedModalityTypes" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.Subject" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.ThreadId" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation.ThreadMessageId" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase.AppId" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase.AppState" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase.Links" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult.CallState" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult.OperationOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Hangup" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Hangup">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Hangup.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Hangup.Validate" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.HangupOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.HangupOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.HangupOutcome.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase.FailureReason" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase.Outcome" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase.Type" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter.Create(System.Type,Newtonsoft.Json.Linq.JObject)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.Equals(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.GetHashCode" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.Validate" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.Validate(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant})" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.DisplayName" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.Identity" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.LanguageId" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant.Originator" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPrompt.Prompts" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Validate" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Validate(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt})" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Culture" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Emphasize" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.FileUri" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.SayAs" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.SilenceLengthInMilliseconds" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Value" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Voice" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Validate" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Validate(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption})" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.DtmfVariation" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.Name" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.SpeechVariation" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.BargeInAllowed" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Choices" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.CollectDigits" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Culture" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InitialSilenceTimeoutInSeconds" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InterdigitTimeoutInSeconds" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.PlayPrompt" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.ChoiceOutcome" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognizeOutcome.CollectDigitsOutcome" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.InitialSilenceTimeoutInSeconds" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.MaxDurationInSeconds" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.MaxSilenceTimeoutInSeconds" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.PlayBeep" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.PlayPrompt" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.RecordingFormat" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.StopTones" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome.Validate" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome.CompletionReason" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome.Format" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome.LengthOfRecordingInSecs" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject.Validate" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RejectOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RejectOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RejectOutcome.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.AnswerAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.HangupAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.PlayPromptAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RecognizeAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RecordAction" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RejectAction" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.Validate(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase})" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.Validate(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.ValidDtmfSet" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.Validate(System.Char)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.Validate(System.Collections.Generic.IEnumerable{System.Char})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.AnswerOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.HangupOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.PlayPromptOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RecognizeOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RecordOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RejectOutcome" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.WorkflowValidationOutcome" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Validate(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Validate(System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Outcomes" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow.Validate" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow.Validate(System.Boolean)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow.Actions" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow.AppState" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow.Links" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome.#ctor" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc">
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState.Validate(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Established" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Establishing" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Hold" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Idle" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Incoming" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Redirecting" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Terminated" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Terminating" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Transferring" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Unhold" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.CallState.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture.EnUs" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.CallTerminated" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.CompletedStopToneDetected" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.InitialSilenceTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.InterdigitTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.TemporarySystemFailure" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.DigitCollectionCompletionReason.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JSONConstants" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JSONConstants">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JSONConstants.ContentType" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1.CanConvert(System.Type)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1.Create(System.Type,Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)" />
+      <Member Id="P:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1.CanWrite" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.AppStateLength" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.FileDownloadTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.InitialSilenceTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.InterDigitTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.LengthOfTTSText" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.MaxDownloadedFileSizeBytes" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.MediaConfigurationLength" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfDtmfsExpected" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfSpeechVariations" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfStopTones" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.RecordingDuration" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.SilenceTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.SilentPromptDuration" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues.InitialSilenceTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues.InterdigitTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues.NumberOfDtmfsExpected" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues.RecordingDuration" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues.SilenceTimeout" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Audio" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Unknown" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Video" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.VideoBasedScreenSharing" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.Mp3MimeType" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.RecordingContentDispositionName" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.ResultContentDispositionName" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.WavMimeType" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.WmaMimeType" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome.Failure" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome.Success" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.CallTerminated" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.DtmfOptionMatched" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.IncorrectDtmf" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.InitialSilenceTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.InterdigitTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.SpeechOptionMatched" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.TemporarySystemFailure" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecognitionCompletionReason.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CallTerminated" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CompletedSilenceDetected" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.CompletedStopToneDetected" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.InitialSilenceTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.MaxRecordingTimeout" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.TemporarySystemFailure" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingCompletionReason.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat.Mp3" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat.Unknown" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat.Wav" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat.Wma" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Hd1080p" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Hd720p" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Sd360p" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Sd540p" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Unknown" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Cardinal" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Day" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.DayMonth" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.DayMonthYear" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Letters" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Month" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.MonthDay" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.MonthDayYear" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.MonthYear" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Name" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Ordinal" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.PhoneticName" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Telephone" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Time12" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Time24" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Unknown" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.Year" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.YearMonth" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs.YearMonthDay" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJson``1(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJToken``1(Newtonsoft.Json.Linq.JToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.GetSerializerSettings(Newtonsoft.Json.Formatting)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJson(System.Object,System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.SerializeToJToken(System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils">
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils.AssertArgument(System.Boolean,System.String,System.Object[])" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender" Id="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender">
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender.Female" />
+      <Member Id="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender.Male" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.ConnectorEx">
@@ -1665,6 +2071,15 @@
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValidInputs(System.Object)" />
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1.ValueDescription(System.Object)" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals">
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.choice" />
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.context" />
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.field" />
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.ifield" />
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.state" />
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.value" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.#ctor" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues" Id="T:Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues">
       <Member Id="F:Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues.Field" />
     </Type>
@@ -1710,6 +2125,42 @@
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.Same(Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch)" />
       <Member Id="M:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.ToString" />
       <Member Id="P:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch.End" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.FormFlow.Json">
+    <Type Name="Microsoft.Bot.Builder.FormFlow.Json.FieldJson" Id="T:Microsoft.Bot.Builder.FormFlow.Json.FieldJson">
+      <Member Id="F:Microsoft.Bot.Builder.FormFlow.Json.FieldJson._builder" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.#ctor(Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.AString(Newtonsoft.Json.Linq.JObject,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.FieldSchema(System.String,System.Boolean@)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.GetValue(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.IsUnknown(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessActive(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessAnnotations(Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessDefine(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessDescription(Newtonsoft.Json.Linq.JObject,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessEnum(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessEnum``1(Newtonsoft.Json.Linq.JToken,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessNext(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessNumeric(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessPattern(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessPrompt(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessTemplate(Newtonsoft.Json.Linq.JToken,Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessTemplates(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessValidation(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.SetUnknown(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.SetValue(Newtonsoft.Json.Linq.JObject,System.Object)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.Strings(Newtonsoft.Json.Linq.JObject,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ToType(Newtonsoft.Json.Linq.JObject)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" Id="T:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson">
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.#ctor(Newtonsoft.Json.Linq.JObject)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Build(System.Reflection.Assembly,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{Newtonsoft.Json.Linq.JObject},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{Newtonsoft.Json.Linq.JObject})" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{Newtonsoft.Json.Linq.JObject},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{Newtonsoft.Json.Linq.JObject})" />
+      <Member Id="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{Newtonsoft.Json.Linq.JObject},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{Newtonsoft.Json.Linq.JObject})" />
+      <Member Id="P:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Schema" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.History">
@@ -2290,7 +2741,14 @@
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Entities" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Intents" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Query" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.Sentiment" />
       <Member Id="P:Microsoft.Bot.Builder.Luis.Models.LuisResult.TopScoringIntent" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Luis.Models.Sentiment" Id="T:Microsoft.Bot.Builder.Luis.Models.Sentiment">
+      <Member Id="M:Microsoft.Bot.Builder.Luis.Models.Sentiment.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Luis.Models.Sentiment.#ctor(System.String,System.Nullable{System.Double})" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.Models.Sentiment.Label" />
+      <Member Id="P:Microsoft.Bot.Builder.Luis.Models.Sentiment.Score" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Resource">
@@ -3012,6 +3470,22 @@
       <Member Id="P:Microsoft.Bot.Connector.BasicCard.Tap" />
       <Member Id="P:Microsoft.Bot.Connector.BasicCard.Text" />
       <Member Id="P:Microsoft.Bot.Connector.BasicCard.Title" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.BotAuthenticationExtensions" Id="T:Microsoft.Bot.Connector.BotAuthenticationExtensions">
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,Microsoft.Bot.Connector.ICredentialProvider)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticationExtensions.AddBotAuthentication(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String,System.Action{Microsoft.Bot.Connector.BotAuthenticationOptions})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.BotAuthenticationHandler" Id="T:Microsoft.Bot.Connector.BotAuthenticationHandler">
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Bot.Connector.BotAuthenticationOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)" />
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticationHandler.HandleAuthenticateAsync" />
+      <Member Id="P:Microsoft.Bot.Connector.BotAuthenticationHandler.Events" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.BotAuthenticationOptions" Id="T:Microsoft.Bot.Connector.BotAuthenticationOptions">
+      <Member Id="M:Microsoft.Bot.Connector.BotAuthenticationOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Connector.BotAuthenticationOptions.CredentialProvider" />
+      <Member Id="P:Microsoft.Bot.Connector.BotAuthenticationOptions.DisableEmulatorTokens" />
+      <Member Id="P:Microsoft.Bot.Connector.BotAuthenticationOptions.OpenIdConfiguration" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.BotAuthenticator" Id="T:Microsoft.Bot.Connector.BotAuthenticator">
       <Member Id="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
@@ -3936,6 +4410,11 @@
       <Member Id="M:Microsoft.Bot.Connector.Transcript.#ctor" />
       <Member Id="M:Microsoft.Bot.Connector.Transcript.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Connector.Activity})" />
       <Member Id="P:Microsoft.Bot.Connector.Transcript.Activities" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.TrustServiceUrlAttribute" Id="T:Microsoft.Bot.Connector.TrustServiceUrlAttribute">
+      <Member Id="M:Microsoft.Bot.Connector.TrustServiceUrlAttribute.#ctor(Microsoft.Bot.Connector.ICredentialProvider)" />
+      <Member Id="M:Microsoft.Bot.Connector.TrustServiceUrlAttribute.GetActivities(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)" />
+      <Member Id="M:Microsoft.Bot.Connector.TrustServiceUrlAttribute.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.VideoCard" Id="T:Microsoft.Bot.Connector.VideoCard">
       <Member Id="F:Microsoft.Bot.Connector.VideoCard.ContentType" />

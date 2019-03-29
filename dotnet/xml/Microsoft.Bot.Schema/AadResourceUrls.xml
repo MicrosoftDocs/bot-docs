@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,37 +31,61 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the AadResourceUrls class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AadResourceUrls (System.Collections.Generic.IList&lt;string&gt; resourceUrls = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; resourceUrls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.AadResourceUrls.#ctor(System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional resourceUrls As IList(Of String) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.AadResourceUrls : System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Bot.Schema.AadResourceUrls" Usage="new Microsoft.Bot.Schema.AadResourceUrls resourceUrls" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceUrls" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="resourceUrls">To be added.</param>
+        <summary>
+            Initializes a new instance of the AadResourceUrls class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResourceUrls">
-      <MemberSignature Language="C#" Value="public string[] ResourceUrls { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string[] ResourceUrls" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; ResourceUrls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; ResourceUrls" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.AadResourceUrls.ResourceUrls" />
-      <MemberSignature Language="VB.NET" Value="Public Property ResourceUrls As String()" />
-      <MemberSignature Language="F#" Value="member this.ResourceUrls : string[] with get, set" Usage="Microsoft.Bot.Schema.AadResourceUrls.ResourceUrls" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceUrls As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ResourceUrls : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Schema.AadResourceUrls.ResourceUrls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>Newtonsoft.Json.JsonProperty("resourceUrls")</AttributeName>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="resourceUrls")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String[]</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            An array of resource URLs to use with Azure Active Directory
-            </summary>
+        <summary />
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
