@@ -1,0 +1,141 @@
+﻿<Type Name="BlobStorageService" FullName="Microsoft.Bot.Configuration.BlobStorageService">
+  <TypeSignature Language="C#" Value="public class BlobStorageService : Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobStorageService extends Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.BlobStorageService" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlobStorageService&#xA;Inherits AzureService" />
+  <TypeSignature Language="F#" Value="type BlobStorageService = class&#xA;    inherit AzureService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Configuration.AzureService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobStorageService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BlobStorageService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Configuration.BlobStorageService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BlobStorageService.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="Microsoft.Bot.Configuration.BlobStorageService.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("connectionString")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets connection string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Container">
+      <MemberSignature Language="C#" Value="public string Container { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Container" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BlobStorageService.Container" />
+      <MemberSignature Language="VB.NET" Value="Public Property Container As String" />
+      <MemberSignature Language="F#" Value="member this.Container : string with get, set" Usage="Microsoft.Bot.Configuration.BlobStorageService.Container" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("container")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets container.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override void Decrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Decrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BlobStorageService.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Decrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : string -&gt; unit" Usage="blobStorageService.Decrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override void Encrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Encrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BlobStorageService.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Encrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : string -&gt; unit" Usage="blobStorageService.Encrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

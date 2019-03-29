@@ -1,0 +1,189 @@
+<Type Name="QnAMakerAttribute" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute">
+  <TypeSignature Language="C#" Value="public class QnAMakerAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit QnAMakerAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type QnAMakerAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The QnA Knowledgebase information.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerAttribute (string authKey, string knowledgebaseId, string defaultMessage = null, double scoreThreshold = 0.3, int top = 1, string endpointHostName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string authKey, string knowledgebaseId, string defaultMessage, float64 scoreThreshold, int32 top, string endpointHostName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.#ctor(System.String,System.String,System.String,System.Double,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (authKey As String, knowledgebaseId As String, Optional defaultMessage As String = null, Optional scoreThreshold As Double = 0.3, Optional top As Integer = 1, Optional endpointHostName As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute : string * string * string * double * int * string -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute" Usage="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute (authKey, knowledgebaseId, defaultMessage, scoreThreshold, top, endpointHostName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="authKey" Type="System.String" />
+        <Parameter Name="knowledgebaseId" Type="System.String" />
+        <Parameter Name="defaultMessage" Type="System.String" />
+        <Parameter Name="scoreThreshold" Type="System.Double" />
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="endpointHostName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="authKey">To be added.</param>
+        <param name="knowledgebaseId">The QnA Knowledgebase ID.</param>
+        <param name="defaultMessage">The default message returned when no match found.</param>
+        <param name="scoreThreshold">The threshold for answer score.</param>
+        <param name="top">The number of answers to return.</param>
+        <param name="endpointHostName">To be added.</param>
+        <summary>
+            Construct the QnA Knowledgebase information.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthKey">
+      <MemberSignature Language="C#" Value="public readonly string AuthKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string AuthKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.AuthKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly AuthKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AuthKey : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.AuthKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Subscription Key to access the QnA Knowledge Base.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMessage">
+      <MemberSignature Language="C#" Value="public readonly string DefaultMessage;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string DefaultMessage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.DefaultMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly DefaultMessage As String " />
+      <MemberSignature Language="F#" Value="val mutable DefaultMessage : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.DefaultMessage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default message returned when no match found.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointHostName">
+      <MemberSignature Language="C#" Value="public readonly string EndpointHostName;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string EndpointHostName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.EndpointHostName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly EndpointHostName As String " />
+      <MemberSignature Language="F#" Value="val mutable EndpointHostName : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.EndpointHostName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the host to requests.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgebaseId">
+      <MemberSignature Language="C#" Value="public readonly string KnowledgebaseId;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string KnowledgebaseId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.KnowledgebaseId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly KnowledgebaseId As String " />
+      <MemberSignature Language="F#" Value="val mutable KnowledgebaseId : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.KnowledgebaseId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The QnA Knowledgebase ID.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScoreThreshold">
+      <MemberSignature Language="C#" Value="public readonly double ScoreThreshold;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly float64 ScoreThreshold" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.ScoreThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly ScoreThreshold As Double " />
+      <MemberSignature Language="F#" Value="val mutable ScoreThreshold : double" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.ScoreThreshold" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The threshold for answer score.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public readonly int Top;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly int32 Top" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.Top" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Top As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Top : int" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerAttribute.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of answers.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

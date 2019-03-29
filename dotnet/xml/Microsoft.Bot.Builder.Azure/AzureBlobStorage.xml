@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,10 +26,9 @@
             This class uses a single Azure Storage Blob Container.
             Each entity or <see cref="T:Microsoft.Bot.Builder.IStoreItem" /> is serialized into a JSON string and stored in an individual text blob.
             Each blob is named after the store item key,  which is encoded so that it conforms a valid blob name.
-            Concurrency is managed on a per-entity (that is, per-blob) basis. If an entity is an <see cref="T:Microsoft.Bot.Builder.IStoreItem" />,
-            the storage object will set the entity's <see cref="P:Microsoft.Bot.Builder.IStoreItem.ETag" /> property value to the blob's ETag upon read.
-            Afterward, an <see cref="T:Microsoft.WindowsAzure.Storage.AccessCondition" /> with the ETag value will be generated during Write.
-            New entities start with a null ETag.
+            If an entity is an <see cref="T:Microsoft.Bot.Builder.IStoreItem" />, the storage object will set the entity's <see cref="P:Microsoft.Bot.Builder.IStoreItem.ETag" />
+            property value to the blob's ETag upon read. Afterward, an <see cref="T:Microsoft.WindowsAzure.Storage.AccessCondition" /> with the ETag value
+            will be generated during Write. New entities start with a null ETag.
             </remarks>
   </Docs>
   <Members>
@@ -43,6 +43,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
@@ -68,6 +69,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dataConnectionstring" Type="System.String" />
@@ -95,6 +97,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -127,6 +130,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -159,6 +163,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

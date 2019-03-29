@@ -1,0 +1,149 @@
+<Type Name="BotDataStoreBridge" FullName="Microsoft.Bot.Builder.Azure.BotDataStoreBridge">
+  <TypeSignature Language="C#" Value="public class BotDataStoreBridge : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotDataStoreBridge extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.BotDataStoreBridge" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotDataStoreBridge&#xA;Implements IBotDataStore(Of BotData)" />
+  <TypeSignature Language="F#" Value="type BotDataStoreBridge = class&#xA;    interface IBotDataStore&lt;BotData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            This bridge class should be used during a migration of data from one BotDataStore to another
+            </summary>
+    <remarks>
+            It works by reading from both source and target stores and only writing data to the new store.
+            This allows live code to continue to work while a background job is migrating data from the source store to the target store.
+            To use: deploy your bot using this dual data store while a background job is migrating the data from the
+            source store to the target store. When the background migration job is done you can deploy your bot using the target store
+            
+            NOTE: migration job should ignore precondition failures on write, because if the record already exists in the new store it was migrated 
+            dynamically by the use of this class
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotDataStoreBridge (Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; sourceStore, Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; targetStore);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt; sourceStore, class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt; targetStore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData},Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore{Microsoft.Bot.Connector.BotData})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceStore As IBotDataStore(Of BotData), targetStore As IBotDataStore(Of BotData))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.BotDataStoreBridge : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; * Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt; -&gt; Microsoft.Bot.Builder.Azure.BotDataStoreBridge" Usage="new Microsoft.Bot.Builder.Azure.BotDataStoreBridge (sourceStore, targetStore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourceStore" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
+        <Parameter Name="targetStore" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sourceStore">
+        </param>
+        <param name="targetStore">
+        </param>
+        <summary />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; FlushAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; FlushAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member FlushAsync : Microsoft.Bot.Builder.Dialogs.IAddress * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.FlushAsync : Microsoft.Bot.Builder.Dialogs.IAddress * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="botDataStoreBridge.FlushAsync (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; LoadAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; LoadAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member LoadAsync : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;&#xA;override this.LoadAsync : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="botDataStoreBridge.LoadAsync (key, botStoreType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="botStoreType" Type="Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="botStoreType">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, Microsoft.Bot.Connector.BotData data, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, class Microsoft.Bot.Connector.BotData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotDataStoreBridge.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SaveAsync : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SaveAsync : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botDataStoreBridge.SaveAsync (key, botStoreType, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="botStoreType" Type="Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType" />
+        <Parameter Name="data" Type="Microsoft.Bot.Connector.BotData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="botStoreType">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

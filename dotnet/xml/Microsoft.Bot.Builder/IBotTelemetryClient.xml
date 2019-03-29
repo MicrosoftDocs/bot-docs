@@ -1,0 +1,209 @@
+﻿<Type Name="IBotTelemetryClient" FullName="Microsoft.Bot.Builder.IBotTelemetryClient">
+  <TypeSignature Language="C#" Value="public interface IBotTelemetryClient" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotTelemetryClient" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.IBotTelemetryClient" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBotTelemetryClient" />
+  <TypeSignature Language="F#" Value="type IBotTelemetryClient = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Logging client for Bot Telemetry.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IBotTelemetryClient.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="iBotTelemetryClient.Flush " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Flushes the in-memory buffer and any metrics being pre-aggregated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackAvailability">
+      <MemberSignature Language="C#" Value="public void TrackAvailability (string name, DateTimeOffset timeStamp, TimeSpan duration, string runLocation, bool success, string message = null, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = null, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackAvailability(string name, valuetype System.DateTimeOffset timeStamp, valuetype System.TimeSpan duration, string runLocation, bool success, string message, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackAvailability(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackAvailability (name As String, timeStamp As DateTimeOffset, duration As TimeSpan, runLocation As String, success As Boolean, Optional message As String = null, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="F#" Value="abstract member TrackAvailability : string * DateTimeOffset * TimeSpan * string * bool * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="iBotTelemetryClient.TrackAvailability (name, timeStamp, duration, runLocation, success, message, properties, metrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="timeStamp" Type="System.DateTimeOffset" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="runLocation" Type="System.String" />
+        <Parameter Name="success" Type="System.Boolean" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">Availability test name.</param>
+        <param name="timeStamp">The time when the availability was captured.</param>
+        <param name="duration">The time taken for the availability test to run.</param>
+        <param name="runLocation">Name of the location the availability test was run from.</param>
+        <param name="success">True if the availability test ran successfully.</param>
+        <param name="message">Error message on availability test run failure.</param>
+        <param name="properties">Named string values you can use to classify and search for this availability telemetry.</param>
+        <param name="metrics">Additional values associated with this availability telemetry.</param>
+        <summary>
+            Send information about availability of an application.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackDependency">
+      <MemberSignature Language="C#" Value="public void TrackDependency (string dependencyTypeName, string target, string dependencyName, string data, DateTimeOffset startTime, TimeSpan duration, string resultCode, bool success);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackDependency(string dependencyTypeName, string target, string dependencyName, string data, valuetype System.DateTimeOffset startTime, valuetype System.TimeSpan duration, string resultCode, bool success) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackDependency(System.String,System.String,System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackDependency (dependencyTypeName As String, target As String, dependencyName As String, data As String, startTime As DateTimeOffset, duration As TimeSpan, resultCode As String, success As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TrackDependency : string * string * string * string * DateTimeOffset * TimeSpan * string * bool -&gt; unit" Usage="iBotTelemetryClient.TrackDependency (dependencyTypeName, target, dependencyName, data, startTime, duration, resultCode, success)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyTypeName" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="dependencyName" Type="System.String" />
+        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="startTime" Type="System.DateTimeOffset" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="resultCode" Type="System.String" />
+        <Parameter Name="success" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyTypeName">Name of the command initiated with this dependency call. Low cardinality value.
+            Examples are SQL, Azure table, and HTTP.</param>
+        <param name="target">External dependency target.</param>
+        <param name="dependencyName">Name of the command initiated with this dependency call. Low cardinality value.
+            Examples are stored procedure name and URL path template.</param>
+        <param name="data">Command initiated by this dependency call. Examples are SQL statement and HTTP
+            URL's with all query parameters.</param>
+        <param name="startTime">The time when the dependency was called.</param>
+        <param name="duration">The time taken by the external dependency to handle the call.</param>
+        <param name="resultCode">Result code of dependency call execution.</param>
+        <param name="success">True if the dependency call was handled successfully.</param>
+        <summary>
+            Send information about an external dependency (outgoing call) in the application.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackEvent">
+      <MemberSignature Language="C#" Value="public void TrackEvent (string eventName, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = null, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackEvent(string eventName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackEvent (eventName As String, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="F#" Value="abstract member TrackEvent : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="iBotTelemetryClient.TrackEvent (eventName, properties, metrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">A name for the event.</param>
+        <param name="properties">Named string values you can use to search and classify events.</param>
+        <param name="metrics">Measurements associated with this event.</param>
+        <summary>
+            Logs custom events with extensible named fields.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackException">
+      <MemberSignature Language="C#" Value="public void TrackException (Exception exception, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = null, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackException(class System.Exception exception, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <MemberSignature Language="F#" Value="abstract member TrackException : Exception * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="iBotTelemetryClient.TrackException (exception, properties, metrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception to log.</param>
+        <param name="properties">Named string values you can use to classify and search for this exception.</param>
+        <param name="metrics">Additional values associated with this exception.</param>
+        <summary>
+            Logs a system exception.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackTrace">
+      <MemberSignature Language="C#" Value="public void TrackTrace (string message, Microsoft.Bot.Builder.Severity severityLevel, System.Collections.Generic.IDictionary&lt;string,string&gt; properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackTrace(string message, valuetype Microsoft.Bot.Builder.Severity severityLevel, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackTrace(System.String,Microsoft.Bot.Builder.Severity,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackTrace (message As String, severityLevel As Severity, properties As IDictionary(Of String, String))" />
+      <MemberSignature Language="F#" Value="abstract member TrackTrace : string * Microsoft.Bot.Builder.Severity * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit" Usage="iBotTelemetryClient.TrackTrace (message, severityLevel, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="severityLevel" Type="Microsoft.Bot.Builder.Severity" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message">Message to display.</param>
+        <param name="severityLevel">Trace severaity level <see cref="T:Microsoft.Bot.Builder.Severity" />.</param>
+        <param name="properties">Named string values you can use to search and classify events.</param>
+        <summary>
+            Send a trace message.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

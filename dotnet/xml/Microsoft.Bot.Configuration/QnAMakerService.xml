@@ -1,0 +1,195 @@
+﻿<Type Name="QnAMakerService" FullName="Microsoft.Bot.Configuration.QnAMakerService">
+  <TypeSignature Language="C#" Value="public class QnAMakerService : Microsoft.Bot.Configuration.ConnectedService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerService extends Microsoft.Bot.Configuration.ConnectedService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.QnAMakerService" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerService&#xA;Inherits ConnectedService" />
+  <TypeSignature Language="F#" Value="type QnAMakerService = class&#xA;    inherit ConnectedService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Configuration.ConnectedService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.QnAMakerService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Configuration.QnAMakerService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override void Decrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Decrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.QnAMakerService.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Decrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : string -&gt; unit" Usage="qnAMakerService.Decrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override void Encrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Encrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.QnAMakerService.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Encrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : string -&gt; unit" Usage="qnAMakerService.Encrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointKey">
+      <MemberSignature Language="C#" Value="public string EndpointKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndpointKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.QnAMakerService.EndpointKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointKey As String" />
+      <MemberSignature Language="F#" Value="member this.EndpointKey : string with get, set" Usage="Microsoft.Bot.Configuration.QnAMakerService.EndpointKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("endpointKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets endpointKey.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hostname">
+      <MemberSignature Language="C#" Value="public string Hostname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Hostname" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.QnAMakerService.Hostname" />
+      <MemberSignature Language="VB.NET" Value="Public Property Hostname As String" />
+      <MemberSignature Language="F#" Value="member this.Hostname : string with get, set" Usage="Microsoft.Bot.Configuration.QnAMakerService.Hostname" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("hostname")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets url for the deployed qnaMaker instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KbId">
+      <MemberSignature Language="C#" Value="public string KbId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KbId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.QnAMakerService.KbId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KbId As String" />
+      <MemberSignature Language="F#" Value="member this.KbId : string with get, set" Usage="Microsoft.Bot.Configuration.QnAMakerService.KbId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("kbId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets kbId.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionKey">
+      <MemberSignature Language="C#" Value="public string SubscriptionKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.QnAMakerService.SubscriptionKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubscriptionKey As String" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionKey : string with get, set" Usage="Microsoft.Bot.Configuration.QnAMakerService.SubscriptionKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("subscriptionKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets subscriptionKey.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

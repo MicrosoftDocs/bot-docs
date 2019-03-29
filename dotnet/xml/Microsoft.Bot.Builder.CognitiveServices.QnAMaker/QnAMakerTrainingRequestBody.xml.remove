@@ -1,0 +1,87 @@
+<Type Name="QnAMakerTrainingRequestBody" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody">
+  <TypeSignature Language="C#" Value="public class QnAMakerTrainingRequestBody" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerTrainingRequestBody extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerTrainingRequestBody" />
+  <TypeSignature Language="F#" Value="type QnAMakerTrainingRequestBody = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerTrainingRequestBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeedbackRecords">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.FeedbackRecord&gt; FeedbackRecords { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.FeedbackRecord&gt; FeedbackRecords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody.FeedbackRecords" />
+      <MemberSignature Language="VB.NET" Value="Public Property FeedbackRecords As List(Of FeedbackRecord)" />
+      <MemberSignature Language="F#" Value="member this.FeedbackRecords : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.FeedbackRecord&gt; with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody.FeedbackRecords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty("feedbackRecords")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.FeedbackRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeBaseId">
+      <MemberSignature Language="C#" Value="public string KnowledgeBaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KnowledgeBaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody.KnowledgeBaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KnowledgeBaseId As String" />
+      <MemberSignature Language="F#" Value="member this.KnowledgeBaseId : string with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerTrainingRequestBody.KnowledgeBaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty("knowledgeBaseId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

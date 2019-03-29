@@ -1,0 +1,581 @@
+﻿<Type Name="FieldJson" FullName="Microsoft.Bot.Builder.FormFlow.Json.FieldJson">
+  <TypeSignature Language="C#" Value="public class FieldJson : Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldJson extends Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;class Newtonsoft.Json.Linq.JObject&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Json.FieldJson" />
+  <TypeSignature Language="VB.NET" Value="Public Class FieldJson&#xA;Inherits Field(Of JObject)" />
+  <TypeSignature Language="F#" Value="type FieldJson = class&#xA;    inherit Field&lt;JObject&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Newtonsoft.Json.Linq.JObject</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            %Field defined through JSON Schema.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FieldJson (Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson builder, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson builder, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.#ctor(Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As FormBuilderJson, name As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Json.FieldJson : Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson * string -&gt; Microsoft.Bot.Builder.FormFlow.Json.FieldJson" Usage="new Microsoft.Bot.Builder.FormFlow.Json.FieldJson (builder, name)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="builder">Form builder.</param>
+        <param name="name">Name of field within schema.</param>
+        <summary>
+            Construct a field from a JSON schema.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_builder">
+      <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson _builder;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson _builder" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Json.FieldJson._builder" />
+      <MemberSignature Language="VB.NET" Value="Protected _builder As FormBuilderJson " />
+      <MemberSignature Language="F#" Value="val mutable _builder : Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" Usage="Microsoft.Bot.Builder.FormFlow.Json.FieldJson._builder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AString">
+      <MemberSignature Language="C#" Value="protected string AString (Newtonsoft.Json.Linq.JObject schema, string field);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string AString(class Newtonsoft.Json.Linq.JObject schema, string field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.AString(Newtonsoft.Json.Linq.JObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function AString (schema As JObject, field As String) As String" />
+      <MemberSignature Language="F#" Value="member this.AString : Newtonsoft.Json.Linq.JObject * string -&gt; string" Usage="fieldJson.AString (schema, field)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="field" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldSchema">
+      <MemberSignature Language="C#" Value="protected Newtonsoft.Json.Linq.JObject FieldSchema (string path, out bool optional);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Newtonsoft.Json.Linq.JObject FieldSchema(string path, [out] bool&amp; optional) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.FieldSchema(System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FieldSchema (path As String, ByRef optional As Boolean) As JObject" />
+      <MemberSignature Language="F#" Value="member this.FieldSchema : string *  -&gt; Newtonsoft.Json.Linq.JObject" Usage="fieldJson.FieldSchema (path, optional)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="optional" Type="System.Boolean" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="optional">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override object GetValue (Newtonsoft.Json.Linq.JObject state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(class Newtonsoft.Json.Linq.JObject state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.GetValue(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (state As JObject) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetValue : Newtonsoft.Json.Linq.JObject -&gt; obj" Usage="fieldJson.GetValue state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnknown">
+      <MemberSignature Language="C#" Value="public override bool IsUnknown (Newtonsoft.Json.Linq.JObject state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsUnknown(class Newtonsoft.Json.Linq.JObject state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.IsUnknown(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsUnknown (state As JObject) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsUnknown : Newtonsoft.Json.Linq.JObject -&gt; bool" Usage="fieldJson.IsUnknown state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessActive">
+      <MemberSignature Language="C#" Value="protected void ProcessActive (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessActive(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessActive(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessActive (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessActive : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessActive schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAnnotations">
+      <MemberSignature Language="C#" Value="protected void ProcessAnnotations (Newtonsoft.Json.Linq.JObject fieldSchema, Newtonsoft.Json.Linq.JObject eltSchema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessAnnotations(class Newtonsoft.Json.Linq.JObject fieldSchema, class Newtonsoft.Json.Linq.JObject eltSchema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessAnnotations(Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessAnnotations (fieldSchema As JObject, eltSchema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessAnnotations : Newtonsoft.Json.Linq.JObject * Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessAnnotations (fieldSchema, eltSchema)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldSchema" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="eltSchema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="fieldSchema">To be added.</param>
+        <param name="eltSchema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessDefine">
+      <MemberSignature Language="C#" Value="protected void ProcessDefine (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessDefine(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessDefine(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessDefine (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessDefine : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessDefine schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessDescription">
+      <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.DescribeAttribute ProcessDescription (Newtonsoft.Json.Linq.JObject schema, string defaultDesc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Bot.Builder.FormFlow.DescribeAttribute ProcessDescription(class Newtonsoft.Json.Linq.JObject schema, string defaultDesc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessDescription(Newtonsoft.Json.Linq.JObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ProcessDescription (schema As JObject, defaultDesc As String) As DescribeAttribute" />
+      <MemberSignature Language="F#" Value="member this.ProcessDescription : Newtonsoft.Json.Linq.JObject * string -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="fieldJson.ProcessDescription (schema, defaultDesc)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.DescribeAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="defaultDesc" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <param name="defaultDesc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessEnum">
+      <MemberSignature Language="C#" Value="protected void ProcessEnum (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessEnum(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessEnum(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessEnum (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessEnum : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessEnum schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessEnum&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected T ProcessEnum&lt;T&gt; (Newtonsoft.Json.Linq.JToken template, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance !!T ProcessEnum&lt;T&gt;(class Newtonsoft.Json.Linq.JToken template, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessEnum``1(Newtonsoft.Json.Linq.JToken,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ProcessEnum(Of T) (template As JToken, name As String) As T" />
+      <MemberSignature Language="F#" Value="member this.ProcessEnum : Newtonsoft.Json.Linq.JToken * string -&gt; 'T" Usage="fieldJson.ProcessEnum (template, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="template" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="template">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessNext">
+      <MemberSignature Language="C#" Value="protected void ProcessNext (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessNext(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessNext(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessNext (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessNext : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessNext schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessNumeric">
+      <MemberSignature Language="C#" Value="protected void ProcessNumeric (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessNumeric(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessNumeric(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessNumeric (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessNumeric : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessNumeric schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessPattern">
+      <MemberSignature Language="C#" Value="protected void ProcessPattern (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessPattern(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessPattern(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessPattern (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessPattern : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessPattern schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessPrompt">
+      <MemberSignature Language="C#" Value="protected void ProcessPrompt (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessPrompt(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessPrompt(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessPrompt (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessPrompt : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessPrompt schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTemplate">
+      <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute ProcessTemplate (Newtonsoft.Json.Linq.JToken template, Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute ProcessTemplate(class Newtonsoft.Json.Linq.JToken template, class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessTemplate(Newtonsoft.Json.Linq.JToken,Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ProcessTemplate (template As JToken, attribute As TemplateBaseAttribute) As TemplateBaseAttribute" />
+      <MemberSignature Language="F#" Value="member this.ProcessTemplate : Newtonsoft.Json.Linq.JToken * Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" Usage="fieldJson.ProcessTemplate (template, attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="attribute" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="template">To be added.</param>
+        <param name="attribute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTemplates">
+      <MemberSignature Language="C#" Value="protected void ProcessTemplates (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessTemplates(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessTemplates(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessTemplates (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessTemplates : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessTemplates schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessValidation">
+      <MemberSignature Language="C#" Value="protected void ProcessValidation (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessValidation(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ProcessValidation(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessValidation (schema As JObject)" />
+      <MemberSignature Language="F#" Value="member this.ProcessValidation : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.ProcessValidation schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUnknown">
+      <MemberSignature Language="C#" Value="public override void SetUnknown (Newtonsoft.Json.Linq.JObject state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetUnknown(class Newtonsoft.Json.Linq.JObject state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.SetUnknown(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetUnknown (state As JObject)" />
+      <MemberSignature Language="F#" Value="override this.SetUnknown : Newtonsoft.Json.Linq.JObject -&gt; unit" Usage="fieldJson.SetUnknown state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (Newtonsoft.Json.Linq.JObject state, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(class Newtonsoft.Json.Linq.JObject state, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.SetValue(Newtonsoft.Json.Linq.JObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (state As JObject, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : Newtonsoft.Json.Linq.JObject * obj -&gt; unit" Usage="fieldJson.SetValue (state, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Strings">
+      <MemberSignature Language="C#" Value="protected string[] Strings (Newtonsoft.Json.Linq.JObject schema, string field);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string[] Strings(class Newtonsoft.Json.Linq.JObject schema, string field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.Strings(Newtonsoft.Json.Linq.JObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Strings (schema As JObject, field As String) As String()" />
+      <MemberSignature Language="F#" Value="member this.Strings : Newtonsoft.Json.Linq.JObject * string -&gt; string[]" Usage="fieldJson.Strings (schema, field)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="field" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <param name="field">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToType">
+      <MemberSignature Language="C#" Value="protected Type ToType (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Type ToType(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.ToType(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ToType (schema As JObject) As Type" />
+      <MemberSignature Language="F#" Value="member this.ToType : Newtonsoft.Json.Linq.JObject -&gt; Type" Usage="fieldJson.ToType schema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

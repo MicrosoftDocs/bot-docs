@@ -1,0 +1,222 @@
+<Type Name="BotServiceDelegateSurrogate" FullName="Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate">
+  <TypeSignature Language="C#" Value="public class BotServiceDelegateSurrogate : Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider, System.Runtime.Serialization.ISerializationSurrogate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotServiceDelegateSurrogate extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider, class System.Runtime.Serialization.ISerializationSurrogate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotServiceDelegateSurrogate&#xA;Implements ISerializationSurrogate, Serialization.ISurrogateProvider" />
+  <TypeSignature Language="F#" Value="type BotServiceDelegateSurrogate = class&#xA;    interface Serialization.ISurrogateProvider&#xA;    interface ISerializationSurrogate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Internals.Fibers.Serialization+ISurrogateProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializationSurrogate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            This surrogate is responsible for serialization of delegates and map them to the matching delegates 
+            in the assembly passed to the constructor during deserialization.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotServiceDelegateSurrogate (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.#ctor(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate : System.Reflection.Assembly -&gt; Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate" Usage="new Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate assembly" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The assembly that will use for delegate mapping.</param>
+        <summary>
+            Constructs an instance of surrogate provider.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingFlags">
+      <MemberSignature Language="C#" Value="public static readonly System.Reflection.BindingFlags BindingFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Reflection.BindingFlags BindingFlags" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.BindingFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BindingFlags As BindingFlags " />
+      <MemberSignature Language="F#" Value=" staticval mutable BindingFlags : System.Reflection.BindingFlags" Usage="Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.BindingFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.BindingFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The binding flags used for <see cref="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMethodInfoFromCurrentAssembly">
+      <MemberSignature Language="C#" Value="protected virtual System.Reflection.MethodInfo GetMethodInfoFromCurrentAssembly (System.Reflection.MethodInfo method);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethodInfoFromCurrentAssembly(class System.Reflection.MethodInfo method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.GetMethodInfoFromCurrentAssembly(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetMethodInfoFromCurrentAssembly (method As MethodInfo) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodInfoFromCurrentAssembly : System.Reflection.MethodInfo -&gt; System.Reflection.MethodInfo&#xA;override this.GetMethodInfoFromCurrentAssembly : System.Reflection.MethodInfo -&gt; System.Reflection.MethodInfo" Usage="botServiceDelegateSurrogate.GetMethodInfoFromCurrentAssembly method" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.MethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="method">The method info.</param>
+        <summary>
+            Maps the method info to the new assembly.
+            </summary>
+        <returns>The method info for the corresponding method in the new assembly.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameMethod">
+      <MemberSignature Language="C#" Value="public const string NameMethod;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NameMethod" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Const NameMethod As String " />
+      <MemberSignature Language="F#" Value="val mutable NameMethod : string" Usage="Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameMethod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for the <see cref="T:System.Reflection.MethodInfo" /> of delegate in the SerializationInfo.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameTarget">
+      <MemberSignature Language="C#" Value="public const string NameTarget;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NameTarget" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Const NameTarget As String " />
+      <MemberSignature Language="F#" Value="val mutable NameTarget : string" Usage="Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameTarget" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for the target of delegate in the SerializationInfo.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameType">
+      <MemberSignature Language="C#" Value="public const string NameType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NameType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameType" />
+      <MemberSignature Language="VB.NET" Value="Public Const NameType As String " />
+      <MemberSignature Language="F#" Value="val mutable NameType : string" Usage="Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.NameType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for the type of delegate in the SerializationInfo.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializationSurrogate.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializationSurrogate.GetObjectData (object obj, System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(object obj, class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.System#Runtime#Serialization#ISerializationSurrogate#GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext) Implements ISerializationSurrogate.GetObjectData" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializationSurrogate.SetObjectData">
+      <MemberSignature Language="C#" Value="object ISerializationSurrogate.SetObjectData (object obj, System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context, System.Runtime.Serialization.ISurrogateSelector selector);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(object obj, class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context, class System.Runtime.Serialization.ISurrogateSelector selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceDelegateSurrogate.System#Runtime#Serialization#ISerializationSurrogate#SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+      <MemberSignature Language="VB.NET" Value="Function SetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext, selector As ISurrogateSelector) As Object Implements ISerializationSurrogate.SetObjectData" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="selector" Type="System.Runtime.Serialization.ISurrogateSelector" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="selector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

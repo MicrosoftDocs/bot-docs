@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Conversation Transcript
+            Transcript
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,12 +52,14 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="activities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt;" />
       </Parameters>
       <Docs>
-        <param name="activities">Array of conversation activities.</param>
+        <param name="activities">A collection of Activities that conforms
+            to the Transcript schema.</param>
         <summary>
             Initializes a new instance of the Transcript class.
             </summary>
@@ -73,6 +77,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -84,7 +89,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets array of conversation activities.
+            Gets or sets a collection of Activities that conforms to the
+            Transcript schema.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

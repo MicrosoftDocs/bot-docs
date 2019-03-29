@@ -1,0 +1,92 @@
+﻿<Type Name="TelemetryBotIdInitializer" FullName="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer">
+  <TypeSignature Language="C#" Value="public class TelemetryBotIdInitializer : Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryBotIdInitializer extends System.Object implements class Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TelemetryBotIdInitializer&#xA;Implements ITelemetryInitializer" />
+  <TypeSignature Language="F#" Value="type TelemetryBotIdInitializer = class&#xA;    interface ITelemetryInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Initializer that sets the user ID and session ID (in addition to other bot-specific properties such as activity ID).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TelemetryBotIdInitializer (Microsoft.AspNetCore.Http.IHttpContextAccessor httpContextAccessor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.AspNetCore.Http.IHttpContextAccessor httpContextAccessor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (httpContextAccessor As IHttpContextAccessor)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer : Microsoft.AspNetCore.Http.IHttpContextAccessor -&gt; Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer" Usage="new Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer httpContextAccessor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpContextAccessor" Type="Microsoft.AspNetCore.Http.IHttpContextAccessor" />
+      </Parameters>
+      <Docs>
+        <param name="httpContextAccessor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotActivityKey">
+      <MemberSignature Language="C#" Value="public static readonly string BotActivityKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string BotActivityKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer.BotActivityKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotActivityKey As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotActivityKey : string" Usage="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer.BotActivityKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (Microsoft.ApplicationInsights.Channel.ITelemetry telemetry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.ApplicationInsights.Channel.ITelemetry telemetry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetryBotIdInitializer.Initialize(Microsoft.ApplicationInsights.Channel.ITelemetry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (telemetry As ITelemetry)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.ApplicationInsights.Channel.ITelemetry -&gt; unit&#xA;override this.Initialize : Microsoft.ApplicationInsights.Channel.ITelemetry -&gt; unit" Usage="telemetryBotIdInitializer.Initialize telemetry" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer.Initialize(Microsoft.ApplicationInsights.Channel.ITelemetry)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="telemetry" Type="Microsoft.ApplicationInsights.Channel.ITelemetry" />
+      </Parameters>
+      <Docs>
+        <param name="telemetry">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

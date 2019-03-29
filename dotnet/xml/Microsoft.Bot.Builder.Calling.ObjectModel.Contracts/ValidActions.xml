@@ -1,0 +1,195 @@
+﻿<Type Name="ValidActions" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions">
+  <TypeSignature Language="C#" Value="public static class ValidActions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValidActions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidActions" />
+  <TypeSignature Language="F#" Value="type ValidActions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This is a helper class for validating actions specified by customers
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnswerAction">
+      <MemberSignature Language="C#" Value="public const string AnswerAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AnswerAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.AnswerAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnswerAction As String " />
+      <MemberSignature Language="F#" Value="val mutable AnswerAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.AnswerAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            AnswerAction
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangupAction">
+      <MemberSignature Language="C#" Value="public const string HangupAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string HangupAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.HangupAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const HangupAction As String " />
+      <MemberSignature Language="F#" Value="val mutable HangupAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.HangupAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            HangupAction
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayPromptAction">
+      <MemberSignature Language="C#" Value="public const string PlayPromptAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlayPromptAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.PlayPromptAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const PlayPromptAction As String " />
+      <MemberSignature Language="F#" Value="val mutable PlayPromptAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.PlayPromptAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            PlayPromptAction
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAction">
+      <MemberSignature Language="C#" Value="public const string RecognizeAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RecognizeAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RecognizeAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const RecognizeAction As String " />
+      <MemberSignature Language="F#" Value="val mutable RecognizeAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RecognizeAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RecognizeAction
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordAction">
+      <MemberSignature Language="C#" Value="public const string RecordAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RecordAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RecordAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const RecordAction As String " />
+      <MemberSignature Language="F#" Value="val mutable RecordAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RecordAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RecordAction
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectAction">
+      <MemberSignature Language="C#" Value="public const string RejectAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RejectAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RejectAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const RejectAction As String " />
+      <MemberSignature Language="F#" Value="val mutable RejectAction : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.RejectAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RejectAction
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt; actions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt; actions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.Validate(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (actions As IEnumerable(Of ActionBase))" />
+      <MemberSignature Language="F#" Value="static member Validate : seq&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.Validate actions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="actions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (string action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(string action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.Validate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (action As String)" />
+      <MemberSignature Language="F#" Value="static member Validate : string -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidActions.Validate action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

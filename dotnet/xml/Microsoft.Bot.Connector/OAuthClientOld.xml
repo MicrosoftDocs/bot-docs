@@ -1,0 +1,278 @@
+﻿<Type Name="OAuthClientOld" FullName="Microsoft.Bot.Connector.OAuthClientOld">
+  <TypeSignature Language="C#" Value="public class OAuthClientOld : Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.OAuthClientOld&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OAuthClientOld extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Bot.Connector.OAuthClientOld&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.OAuthClientOld" />
+  <TypeSignature Language="VB.NET" Value="Public Class OAuthClientOld&#xA;Inherits ServiceClient(Of OAuthClientOld)" />
+  <TypeSignature Language="F#" Value="type OAuthClientOld = class&#xA;    inherit ServiceClient&lt;OAuthClientOld&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.OAuthClientOld&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.Bot.Connector.OAuthClientOld</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Service client to handle requests to the Bot Framework API service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OAuthClientOld (Microsoft.Bot.Connector.ConnectorClient client, string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ConnectorClient client, string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.#ctor(Microsoft.Bot.Connector.ConnectorClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (client As ConnectorClient, uri As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.OAuthClientOld : Microsoft.Bot.Connector.ConnectorClient * string -&gt; Microsoft.Bot.Connector.OAuthClientOld" Usage="new Microsoft.Bot.Connector.OAuthClientOld (client, uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="client">The Bot Connector REST client to use.</param>
+        <param name="uri">The URL to use to get a token.</param>
+        <summary>
+            Initializes an new instance of the <see cref="T:Microsoft.Bot.Connector.OAuthClient" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmulateOAuthCards">
+      <MemberSignature Language="C#" Value="public static bool EmulateOAuthCards { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool EmulateOAuthCards" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClientOld.EmulateOAuthCards" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EmulateOAuthCards As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EmulateOAuthCards : bool with get, set" Usage="Microsoft.Bot.Connector.OAuthClientOld.EmulateOAuthCards" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When using the Emulator, whether to emulate the OAuthCard behavior or use connected flows
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAadTokensAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (string userId, string connectionName, string[] resourceUrls, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync(string userId, string connectionName, string[] resourceUrls, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetAadTokensAsync(System.String,System.String,System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetAadTokensAsync : string * string * string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="oAuthClientOld.GetAadTokensAsync (userId, connectionName, resourceUrls, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="resourceUrls" Type="System.String[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The user's ID.</param>
+        <param name="connectionName">Name of the auth connection to use for AAD token exchange.</param>
+        <param name="resourceUrls">The collection of resource URLs for which to get tokens</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Retrieve an Azure Active Directory token for particular AAD resources.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the response includes a collection of TokenResponse
+            objects with the resourceUrl and its corresponding TokenResponse.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSignInLinkAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetSignInLinkAsync (string state, string finalRedirect = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetSignInLinkAsync(string state, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetSignInLinkAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetSignInLinkAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="oAuthClientOld.GetSignInLinkAsync (state, finalRedirect, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.String" />
+        <Parameter Name="finalRedirect" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="state">A serialized and encoded parameter of a TokenExchangeState parameter.</param>
+        <param name="finalRedirect">The endpoint URL for the final page of a succesful login attempt.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Get the raw signin link to be sent to the user for signin for a connection name.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully and the call to the OAuth client is successful,
+            the result contains the signin link.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenStatusAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync (string userId, string includeFilter = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync(string userId, string includeFilter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetTokenStatusAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetTokenStatusAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;" Usage="oAuthClientOld.GetTokenStatusAsync (userId, includeFilter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="includeFilter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId"></param>
+        <param name="includeFilter">A comma seperated list of connections to include. If null, then all connections are returned</param>
+        <param name="cancellationToken"></param>
+        <summary>
+            Get the status of tokens for connections for this bot for a particular user
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, string magicCode, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync(string userId, string connectionName, string magicCode, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetUserTokenAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetUserTokenAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="oAuthClientOld.GetUserTokenAsync (userId, connectionName, magicCode, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="magicCode" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The user's ID.</param>
+        <param name="connectionName">Name of the auth connection to use.</param>
+        <param name="magicCode">The user entered code to validate.</param>
+        <param name="customHeaders"></param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Gets a user token for a given user and connection.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the <see cref="T:Microsoft.Bot.Schema.TokenResponse" /> contains the user token.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OAuthEndpoint">
+      <MemberSignature Language="C#" Value="public static string OAuthEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string OAuthEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClientOld.OAuthEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property OAuthEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.OAuthEndpoint : string with get, set" Usage="Microsoft.Bot.Connector.OAuthClientOld.OAuthEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default endpoint that is used for API requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendEmulateOAuthCardsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendEmulateOAuthCardsAsync (bool emulateOAuthCards);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendEmulateOAuthCardsAsync(bool emulateOAuthCards) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.SendEmulateOAuthCardsAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendEmulateOAuthCardsAsync (emulateOAuthCards As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="member this.SendEmulateOAuthCardsAsync : bool -&gt; System.Threading.Tasks.Task" Usage="oAuthClientOld.SendEmulateOAuthCardsAsync emulateOAuthCards" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="emulateOAuthCards" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="emulateOAuthCards">Indicates whether the Emulator should emulate the OAuth card.</param>
+        <summary>
+            Send a dummy OAuth card when the bot is being used on the Emulator for testing without fetching a real token.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutUserAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string userId, string connectionName = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignOutUserAsync(string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.SignOutUserAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SignOutUserAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="oAuthClientOld.SignOutUserAsync (userId, connectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The user's ID.</param>
+        <param name="connectionName">Name of the auth connection to sign out of.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Signs the user out of a connection.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the response indicates whether the call to
+            sign the user out was successful.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

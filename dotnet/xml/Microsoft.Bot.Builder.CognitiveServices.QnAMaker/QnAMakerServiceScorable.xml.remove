@@ -1,0 +1,238 @@
+<Type Name="QnAMakerServiceScorable" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable">
+  <TypeSignature Language="C#" Value="public class QnAMakerServiceScorable : Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerServiceScorable extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerServiceScorable&#xA;Implements IScorable(Of IActivity, QnAMakerResult)" />
+  <TypeSignature Language="F#" Value="type QnAMakerServiceScorable = class&#xA;    interface IScorable&lt;IActivity, QnAMakerResult&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Scorables.IScorable&lt;Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A scorable specialized to handle QnA response from QnA Maker service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerServiceScorable (Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service, Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.#ctor(Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService,Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (service As IQnAService, botToUser As IBotToUser)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService * Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable" Usage="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable (service, botToUser)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService" />
+        <Parameter Name="botToUser" Type="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="botToUser">To be added.</param>
+        <summary>
+            Construct the QnA Scorable.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="botToUser">
+      <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.botToUser" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly botToUser As IBotToUser " />
+      <MemberSignature Language="F#" Value="val mutable botToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.botToUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoneAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DoneAsync (Microsoft.Bot.Connector.IActivity item, object state, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DoneAsync(class Microsoft.Bot.Connector.IActivity item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.DoneAsync(Microsoft.Bot.Connector.IActivity,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoneAsync (item As IActivity, state As Object, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DoneAsync : Microsoft.Bot.Connector.IActivity * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DoneAsync : Microsoft.Bot.Connector.IActivity * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="qnAMakerServiceScorable.DoneAsync (item, state, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.DoneAsync(`0,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScore">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult GetScore (Microsoft.Bot.Connector.IActivity item, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult GetScore(class Microsoft.Bot.Connector.IActivity item, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.GetScore(Microsoft.Bot.Connector.IActivity,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetScore (item As IActivity, state As Object) As QnAMakerResult" />
+      <MemberSignature Language="F#" Value="abstract member GetScore : Microsoft.Bot.Connector.IActivity * obj -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&#xA;override this.GetScore : Microsoft.Bot.Connector.IActivity * obj -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult" Usage="qnAMakerServiceScorable.GetScore (item, state)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.GetScore(`0,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasScore">
+      <MemberSignature Language="C#" Value="public bool HasScore (Microsoft.Bot.Connector.IActivity item, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasScore(class Microsoft.Bot.Connector.IActivity item, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.HasScore(Microsoft.Bot.Connector.IActivity,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasScore (item As IActivity, state As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HasScore : Microsoft.Bot.Connector.IActivity * obj -&gt; bool&#xA;override this.HasScore : Microsoft.Bot.Connector.IActivity * obj -&gt; bool" Usage="qnAMakerServiceScorable.HasScore (item, state)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.HasScore(`0,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PostAsync (Microsoft.Bot.Connector.IActivity item, object state, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PostAsync(class Microsoft.Bot.Connector.IActivity item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.PostAsync(Microsoft.Bot.Connector.IActivity,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PostAsync (item As IActivity, state As Object, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member PostAsync : Microsoft.Bot.Connector.IActivity * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.PostAsync : Microsoft.Bot.Connector.IActivity * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="qnAMakerServiceScorable.PostAsync (item, state, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.PostAsync(`0,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;object&gt; PrepareAsync (Microsoft.Bot.Connector.IActivity item, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; PrepareAsync(class Microsoft.Bot.Connector.IActivity item, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.PrepareAsync(Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrepareAsync (item As IActivity, token As CancellationToken) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member PrepareAsync : Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.PrepareAsync : Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="qnAMakerServiceScorable.PrepareAsync (item, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Bot.Connector.IActivity" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="service">
+      <MemberSignature Language="C#" Value="protected readonly Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.service" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly service As IQnAService " />
+      <MemberSignature Language="F#" Value="val mutable service : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerServiceScorable.service" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

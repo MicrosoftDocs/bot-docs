@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogState" Type="Microsoft.Bot.Builder.IStatePropertyAccessor&lt;Microsoft.Bot.Builder.Dialogs.DialogState&gt;" />
@@ -51,6 +53,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogSet</ReturnType>
@@ -64,7 +67,7 @@
             Adds a new dialog to the set and returns the added dialog.
             </summary>
         <returns>The DialogSet for fluent calls to Add().</returns>
-        <remarks>To be added.</remarks>
+        <remarks>Adding a new dialog will inherit the <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> of the DialogSet.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateContextAsync">
@@ -77,6 +80,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogContext&gt;</ReturnType>
@@ -104,6 +108,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Dialog</ReturnType>
@@ -112,11 +117,34 @@
         <Parameter Name="dialogId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dialogId">ID of the dialog/prompt to lookup.</param>
+        <param name="dialogId">ID of the dialog/prompt to look up.</param>
         <summary>
-            Finds a dialog that was previously added to the set using [add()](#add).
+            Finds a dialog that was previously added to the set using <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogSet.Add(Microsoft.Bot.Builder.Dialogs.Dialog)" />.
             </summary>
-        <returns>dialog if found otherwise null.</returns>
+        <returns>The dialog if found, otherwise null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TelemetryClient">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.IBotTelemetryClient TelemetryClient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.IBotTelemetryClient TelemetryClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogSet.TelemetryClient" />
+      <MemberSignature Language="VB.NET" Value="Public Property TelemetryClient As IBotTelemetryClient" />
+      <MemberSignature Language="F#" Value="member this.TelemetryClient : Microsoft.Bot.Builder.IBotTelemetryClient with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogSet.TelemetryClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> to use.
+            When setting this property, all of the contained dialogs' TelemetryClient properties are also set.
+            </summary>
+        <value>The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> to use when logging.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

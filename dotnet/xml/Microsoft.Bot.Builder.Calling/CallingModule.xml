@@ -1,0 +1,107 @@
+﻿<Type Name="CallingModule" FullName="Microsoft.Bot.Builder.Calling.CallingModule">
+  <TypeSignature Language="C#" Value="public sealed class CallingModule : Autofac.Module" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallingModule extends Autofac.Module" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingModule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallingModule&#xA;Inherits Module" />
+  <TypeSignature Language="F#" Value="type CallingModule = class&#xA;    inherit Module" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Autofac.Module</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Autofac module for Calling components.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallingModule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingModule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLifetimeScope">
+      <MemberSignature Language="C#" Value="public static Autofac.ILifetimeScope BeginLifetimeScope (Autofac.ILifetimeScope scope, System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Autofac.ILifetimeScope BeginLifetimeScope(class Autofac.ILifetimeScope scope, class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingModule.BeginLifetimeScope(Autofac.ILifetimeScope,System.Net.Http.HttpRequestMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginLifetimeScope (scope As ILifetimeScope, request As HttpRequestMessage) As ILifetimeScope" />
+      <MemberSignature Language="F#" Value="static member BeginLifetimeScope : Autofac.ILifetimeScope * System.Net.Http.HttpRequestMessage -&gt; Autofac.ILifetimeScope" Usage="Microsoft.Bot.Builder.Calling.CallingModule.BeginLifetimeScope (scope, request)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Autofac.ILifetimeScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Autofac.ILifetimeScope" />
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="scope">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LifetimeScopeTag">
+      <MemberSignature Language="C#" Value="public static readonly object LifetimeScopeTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object LifetimeScopeTag" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.CallingModule.LifetimeScopeTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LifetimeScopeTag As Object " />
+      <MemberSignature Language="F#" Value=" staticval mutable LifetimeScopeTag : obj" Usage="Microsoft.Bot.Builder.Calling.CallingModule.LifetimeScopeTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="protected override void Load (Autofac.ContainerBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingModule.Load(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="callingModule.Load builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,86 @@
+﻿<Type Name="RecordOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent">
+  <TypeSignature Language="C#" Value="public class RecordOutcomeEvent : Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecordOutcomeEvent extends Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecordOutcomeEvent&#xA;Inherits OutcomeEventBase" />
+  <TypeSignature Language="F#" Value="type RecordOutcomeEvent = class&#xA;    inherit OutcomeEventBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecordOutcomeEvent (Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult conversationResult, Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow, Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome outcome, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; recordedContent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult conversationResult, class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow, class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome outcome, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; recordedContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult * Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow * Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent" Usage="new Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent (conversationResult, resultingWorkflow, outcome, recordedContent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conversationResult" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult" />
+        <Parameter Name="resultingWorkflow" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow" />
+        <Parameter Name="outcome" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome" />
+        <Parameter Name="recordedContent" Type="System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="conversationResult">To be added.</param>
+        <param name="resultingWorkflow">To be added.</param>
+        <param name="outcome">To be added.</param>
+        <param name="recordedContent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordedContent">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; RecordedContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; RecordedContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.RecordedContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordedContent As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="member this.RecordedContent : System.Threading.Tasks.Task&lt;System.IO.Stream&gt; with get, set" Usage="Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.RecordedContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordOutcome">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome RecordOutcome { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome RecordOutcome" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.RecordOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordOutcome As RecordOutcome" />
+      <MemberSignature Language="F#" Value="member this.RecordOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome with get, set" Usage="Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent.RecordOutcome" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

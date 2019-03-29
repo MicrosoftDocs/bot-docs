@@ -1,0 +1,144 @@
+﻿<Type Name="ResolutionFormat" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat">
+  <TypeSignature Language="C#" Value="public enum ResolutionFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResolutionFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ResolutionFormat" />
+  <TypeSignature Language="F#" Value="type ResolutionFormat = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat&gt;))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            List of supported video resolution formats
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Hd1080p">
+      <MemberSignature Language="C#" Value="Hd1080p" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat Hd1080p = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Hd1080p" />
+      <MemberSignature Language="VB.NET" Value="Hd1080p" />
+      <MemberSignature Language="F#" Value="Hd1080p = 4" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Hd1080p" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="hd1080p")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hd720p">
+      <MemberSignature Language="C#" Value="Hd720p" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat Hd720p = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Hd720p" />
+      <MemberSignature Language="VB.NET" Value="Hd720p" />
+      <MemberSignature Language="F#" Value="Hd720p = 3" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Hd720p" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="hd720p")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sd360p">
+      <MemberSignature Language="C#" Value="Sd360p" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat Sd360p = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Sd360p" />
+      <MemberSignature Language="VB.NET" Value="Sd360p" />
+      <MemberSignature Language="F#" Value="Sd360p = 1" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Sd360p" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="sd360p")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sd540p">
+      <MemberSignature Language="C#" Value="Sd540p" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat Sd540p = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Sd540p" />
+      <MemberSignature Language="VB.NET" Value="Sd540p" />
+      <MemberSignature Language="F#" Value="Sd540p = 2" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Sd540p" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.Runtime.Serialization.EnumMember(Value="sd540p")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Unknown not recognized.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            QnA Service extension methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveLearnAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; ActiveLearnAsync (this Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service, string userId, string userQuestion, string kbQuestion, string kbAnswer, string knowledgebaseId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; ActiveLearnAsync(class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service, string userId, string userQuestion, string kbQuestion, string kbAnswer, string knowledgebaseId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Extensions.ActiveLearnAsync(Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ActiveLearnAsync (service As IQnAService, userId As String, userQuestion As String, kbQuestion As String, kbAnswer As String, knowledgebaseId As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member ActiveLearnAsync : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService * string * string * string * string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Extensions.ActiveLearnAsync (service, userId, userQuestion, kbQuestion, kbAnswer, knowledgebaseId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="userQuestion" Type="System.String" />
+        <Parameter Name="kbQuestion" Type="System.String" />
+        <Parameter Name="kbAnswer" Type="System.String" />
+        <Parameter Name="knowledgebaseId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="userQuestion">To be added.</param>
+        <param name="kbQuestion">To be added.</param>
+        <param name="kbAnswer">To be added.</param>
+        <param name="knowledgebaseId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryServiceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt; QueryServiceAsync (this Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt; QueryServiceAsync(class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService service, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Extensions.QueryServiceAsync(Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function QueryServiceAsync (service As IQnAService, text As String) As Task(Of QnAMakerResults)" />
+      <MemberSignature Language="F#" Value="static member QueryServiceAsync : Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt;" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Extensions.QueryServiceAsync (service, text)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.IQnAService" RefType="this" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="service">QnA service.</param>
+        <param name="text">The query text.</param>
+        <summary>
+            Query the QnA service using this text.
+            </summary>
+        <returns>The QnA result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

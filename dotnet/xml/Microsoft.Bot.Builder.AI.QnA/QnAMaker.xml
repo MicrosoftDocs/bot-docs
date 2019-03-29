@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -56,6 +58,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
@@ -74,25 +77,26 @@
       </Docs>
     </Member>
     <Member MemberName="GetAnswersAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync (Microsoft.Bot.Builder.ITurnContext turnContext);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext) As Task(Of QueryResult())" />
-      <MemberSignature Language="F#" Value="member this.GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswersAsync turnContext" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext, Optional options As QnAMakerOptions = null) As Task(Of QueryResult())" />
+      <MemberSignature Language="F#" Value="member this.GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswersAsync (turnContext, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" />
       </Parameters>
       <Docs>
         <param name="turnContext">The Turn Context that contains the user question to be queried against your knowledge base.</param>
+        <param name="options">The options for the QnA Maker knowledge base. If null, constructor option is used for this instance.</param>
         <summary>
             Generates an answer from the knowledge base.
             </summary>
@@ -100,17 +104,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="QnAMakerMiddlewareName">
-      <MemberSignature Language="C#" Value="public const string QnAMakerMiddlewareName;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerMiddlewareName" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerMiddlewareName" />
-      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerMiddlewareName As String " />
-      <MemberSignature Language="F#" Value="val mutable QnAMakerMiddlewareName : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerMiddlewareName" />
+    <Member MemberName="QnAMakerName">
+      <MemberSignature Language="C#" Value="public const string QnAMakerName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerName" />
+      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerName As String " />
+      <MemberSignature Language="F#" Value="val mutable QnAMakerName : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -131,6 +134,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -151,6 +155,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

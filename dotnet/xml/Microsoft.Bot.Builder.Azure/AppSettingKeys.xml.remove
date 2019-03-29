@@ -1,0 +1,291 @@
+<Type Name="AppSettingKeys" FullName="Microsoft.Bot.Builder.Azure.AppSettingKeys">
+  <TypeSignature Language="C#" Value="public class AppSettingKeys" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppSettingKeys extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.AppSettingKeys" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppSettingKeys" />
+  <TypeSignature Language="F#" Value="type AppSettingKeys = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The keys for application settings.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppSettingKeys ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AppSettingKeys.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppId">
+      <MemberSignature Language="C#" Value="public const string AppId;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AppId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.AppId" />
+      <MemberSignature Language="VB.NET" Value="Public Const AppId As String " />
+      <MemberSignature Language="F#" Value="val mutable AppId : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.AppId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Microsoft app Id key.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosmosDbEndpoint">
+      <MemberSignature Language="C#" Value="public const string CosmosDbEndpoint;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CosmosDbEndpoint" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.CosmosDbEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const CosmosDbEndpoint As String " />
+      <MemberSignature Language="F#" Value="val mutable CosmosDbEndpoint : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.CosmosDbEndpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The endpoint cosmos db storage if the UseCosmosDbForConversationState flag was set
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosmosDbKey">
+      <MemberSignature Language="C#" Value="public const string CosmosDbKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CosmosDbKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.CosmosDbKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const CosmosDbKey As String " />
+      <MemberSignature Language="F#" Value="val mutable CosmosDbKey : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.CosmosDbKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key cosmos db storage if the UseCosmosDbForConversationState flag was set
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenIdMetadata">
+      <MemberSignature Language="C#" Value="public const string OpenIdMetadata;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OpenIdMetadata" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.OpenIdMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Const OpenIdMetadata As String " />
+      <MemberSignature Language="F#" Value="val mutable OpenIdMetadata : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.OpenIdMetadata" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The open id url key.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public const string Password;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Password" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Const Password As String " />
+      <MemberSignature Language="F#" Value="val mutable Password : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.Password" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Microsoft app password key.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlServerConnectionString">
+      <MemberSignature Language="C#" Value="public const string SqlServerConnectionString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SqlServerConnectionString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.SqlServerConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Const SqlServerConnectionString As String " />
+      <MemberSignature Language="F#" Value="val mutable SqlServerConnectionString : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.SqlServerConnectionString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for sql table storage connection string.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateEndpoint">
+      <MemberSignature Language="C#" Value="public const string StateEndpoint;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StateEndpoint" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.StateEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const StateEndpoint As String " />
+      <MemberSignature Language="F#" Value="val mutable StateEndpoint : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.StateEndpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The bot state endpoint key.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableStorageConnectionString">
+      <MemberSignature Language="C#" Value="public const string TableStorageConnectionString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TableStorageConnectionString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.TableStorageConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Const TableStorageConnectionString As String " />
+      <MemberSignature Language="F#" Value="val mutable TableStorageConnectionString : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.TableStorageConnectionString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The key for azure table storage connection string.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCosmosDbForConversationState">
+      <MemberSignature Language="C#" Value="public const string UseCosmosDbForConversationState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UseCosmosDbForConversationState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseCosmosDbForConversationState" />
+      <MemberSignature Language="VB.NET" Value="Public Const UseCosmosDbForConversationState As String " />
+      <MemberSignature Language="F#" Value="val mutable UseCosmosDbForConversationState : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.UseCosmosDbForConversationState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Key for the flag indicating if cosmos db should be used as bot state store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSqlServerForConversationState">
+      <MemberSignature Language="C#" Value="public const string UseSqlServerForConversationState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UseSqlServerForConversationState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseSqlServerForConversationState" />
+      <MemberSignature Language="VB.NET" Value="Public Const UseSqlServerForConversationState As String " />
+      <MemberSignature Language="F#" Value="val mutable UseSqlServerForConversationState : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.UseSqlServerForConversationState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Key for the flag indicating if sql server should be used as bot state store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseTableStorage2ForConversationState">
+      <MemberSignature Language="C#" Value="public const string UseTableStorage2ForConversationState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UseTableStorage2ForConversationState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseTableStorage2ForConversationState" />
+      <MemberSignature Language="VB.NET" Value="Public Const UseTableStorage2ForConversationState As String " />
+      <MemberSignature Language="F#" Value="val mutable UseTableStorage2ForConversationState : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.UseTableStorage2ForConversationState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Key for the flag indicating if table storage2 should be used as bot state store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseTableStorageForConversationState">
+      <MemberSignature Language="C#" Value="public const string UseTableStorageForConversationState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UseTableStorageForConversationState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.AppSettingKeys.UseTableStorageForConversationState" />
+      <MemberSignature Language="VB.NET" Value="Public Const UseTableStorageForConversationState As String " />
+      <MemberSignature Language="F#" Value="val mutable UseTableStorageForConversationState : string" Usage="Microsoft.Bot.Builder.Azure.AppSettingKeys.UseTableStorageForConversationState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Key for the flag indicating if table storage should be used as bot state store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

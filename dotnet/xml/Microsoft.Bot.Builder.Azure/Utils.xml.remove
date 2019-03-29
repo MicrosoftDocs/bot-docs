@@ -1,0 +1,117 @@
+<Type Name="Utils" FullName="Microsoft.Bot.Builder.Azure.Utils">
+  <TypeSignature Language="C#" Value="public sealed class Utils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Utils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.Utils" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Utils" />
+  <TypeSignature Language="F#" Value="type Utils = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A utility class for bots running on Azure.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Utils ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Utils.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppSetting">
+      <MemberSignature Language="C#" Value="public static string GetAppSetting (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppSetting(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Utils.GetAppSetting(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAppSetting (key As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetAppSetting : string -&gt; string" Usage="Microsoft.Bot.Builder.Azure.Utils.GetAppSetting key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <summary>
+            Get value corresponding to the key from application settings.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOpenIdConfigurationUrl">
+      <MemberSignature Language="C#" Value="public static string GetOpenIdConfigurationUrl (string key = &quot;BotOpenIdMetadata&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetOpenIdConfigurationUrl(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Utils.GetOpenIdConfigurationUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetOpenIdConfigurationUrl (Optional key As String = &quot;BotOpenIdMetadata&quot;) As String" />
+      <MemberSignature Language="F#" Value="static member GetOpenIdConfigurationUrl : string -&gt; string" Usage="Microsoft.Bot.Builder.Azure.Utils.GetOpenIdConfigurationUrl key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <summary>
+            Get the open Id configuration url from application settings.
+            </summary>
+        <returns>The open id configuration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStateApiUrl">
+      <MemberSignature Language="C#" Value="public static string GetStateApiUrl (string key = &quot;BotStateEndpoint&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStateApiUrl(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Utils.GetStateApiUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStateApiUrl (Optional key As String = &quot;BotStateEndpoint&quot;) As String" />
+      <MemberSignature Language="F#" Value="static member GetStateApiUrl : string -&gt; string" Usage="Microsoft.Bot.Builder.Azure.Utils.GetStateApiUrl key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <summary>
+            Get the state api endpoint. 
+            </summary>
+        <returns>The state api endpoint.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

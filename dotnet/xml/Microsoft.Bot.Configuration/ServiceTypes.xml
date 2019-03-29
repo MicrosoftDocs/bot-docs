@@ -1,0 +1,227 @@
+﻿<Type Name="ServiceTypes" FullName="Microsoft.Bot.Configuration.ServiceTypes">
+  <TypeSignature Language="C#" Value="public class ServiceTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.ServiceTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceTypes" />
+  <TypeSignature Language="F#" Value="type ServiceTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.ServiceTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppInsights">
+      <MemberSignature Language="C#" Value="public const string AppInsights;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AppInsights" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.AppInsights" />
+      <MemberSignature Language="VB.NET" Value="Public Const AppInsights As String " />
+      <MemberSignature Language="F#" Value="val mutable AppInsights : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.AppInsights" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlobStorage">
+      <MemberSignature Language="C#" Value="public const string BlobStorage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BlobStorage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.BlobStorage" />
+      <MemberSignature Language="VB.NET" Value="Public Const BlobStorage As String " />
+      <MemberSignature Language="F#" Value="val mutable BlobStorage : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.BlobStorage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bot">
+      <MemberSignature Language="C#" Value="public const string Bot;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Bot" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.Bot" />
+      <MemberSignature Language="VB.NET" Value="Public Const Bot As String " />
+      <MemberSignature Language="F#" Value="val mutable Bot : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.Bot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosmosDB">
+      <MemberSignature Language="C#" Value="public const string CosmosDB;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CosmosDB" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.CosmosDB" />
+      <MemberSignature Language="VB.NET" Value="Public Const CosmosDB As String " />
+      <MemberSignature Language="F#" Value="val mutable CosmosDB : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.CosmosDB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispatch">
+      <MemberSignature Language="C#" Value="public const string Dispatch;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Dispatch" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.Dispatch" />
+      <MemberSignature Language="VB.NET" Value="Public Const Dispatch As String " />
+      <MemberSignature Language="F#" Value="val mutable Dispatch : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.Dispatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public const string Endpoint;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Endpoint" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const Endpoint As String " />
+      <MemberSignature Language="F#" Value="val mutable Endpoint : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.Endpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="File">
+      <MemberSignature Language="C#" Value="public const string File;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string File" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.File" />
+      <MemberSignature Language="VB.NET" Value="Public Const File As String " />
+      <MemberSignature Language="F#" Value="val mutable File : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.File" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Generic">
+      <MemberSignature Language="C#" Value="public const string Generic;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Generic" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.Generic" />
+      <MemberSignature Language="VB.NET" Value="Public Const Generic As String " />
+      <MemberSignature Language="F#" Value="val mutable Generic : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.Generic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Luis">
+      <MemberSignature Language="C#" Value="public const string Luis;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Luis" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.Luis" />
+      <MemberSignature Language="VB.NET" Value="Public Const Luis As String " />
+      <MemberSignature Language="F#" Value="val mutable Luis : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.Luis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnA">
+      <MemberSignature Language="C#" Value="public const string QnA;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QnA" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Configuration.ServiceTypes.QnA" />
+      <MemberSignature Language="VB.NET" Value="Public Const QnA As String " />
+      <MemberSignature Language="F#" Value="val mutable QnA : string" Usage="Microsoft.Bot.Configuration.ServiceTypes.QnA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
