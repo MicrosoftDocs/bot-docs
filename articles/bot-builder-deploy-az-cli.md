@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 02/13/2019
+ms.date: 03/30/2019
 ---
 
 # Deploy your bot
@@ -34,7 +34,7 @@ The deployment process requires a target Web App Bot in Azure so that your local
 During the creation of the target Web App Bot, an app ID and password are also generated for your bot. In Azure, the app ID and password support [service authentication and authorization](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization). You will retrieve some of this information for use in your local bot code. 
 
 > [!IMPORTANT]
-> The language for the bot template for the service must match the language your bot is written in.
+> The programming language for the bot template used in the Azure portal must match the programming language your bot is written in.
 
 Creating a new Web App Bot is optional if you have already created a bot in Azure that you'd like to use.
 
@@ -45,92 +45,49 @@ Creating a new Web App Bot is optional if you have already created a bot in Azur
 1. Click **Create** to create the service and deploy the bot to the cloud. This process may take several minutes.
 
 ### Download the source code
-After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references that are in the [.bot file](./v4sdk/bot-file-basics.md). These service reference are for Web App Bot, App Service Plan, App Service, and Storage Account. 
+After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references (e.g. MicrosoftAppID, MicrosoftAppPassword, LUIS, or QnA) that are in the appsettings.json or .env file. 
 
 1. In the **Bot Management** section, click **Build**.
 1. Click on **Download Bot source code** link in the right-pane.
 1. Follow the prompts to download the code, and then unzip the folder.
 	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 
-### Decrypt the .bot file
+### Update your local appsettings.json or .env file
 
-The source code you downloaded from the Azure portal includes an encrypted .bot file. You'll need to decrypt it to copy values into your local .bot file. This step is necessary so that you can copy actual service references and not the encrypted ones.  
-
-1. In the Azure portal, open the Web App Bot resource for your bot.
-1. Open the bot's **Application Settings**.
-1. In the **Application Settings** window, scroll down to **Application settings**.
-1. Locate the **botFileSecret** and copy its value.
-1. Use `msbot cli` to decrypt the file.
-
-    ```cmd
-    msbot secret --bot <name-of-bot-file> --secret "<bot-file-secret>" --clear
-    ```
-
-### Update your local .bot file
-
-Open the .bot file you decrypted. Copy **all** entries listed under the `services` section, and add them to your local .bot file. Resolve any duplicate service entries or duplicate service IDs. Keep any additional service references your bot depends on. For example:
-
-```json
-"services": [
-    {
-        "type": "abs",
-        "tenantId": "<tenant-id>",
-        "subscriptionId": "<subscription-id>",
-        "resourceGroup": "<resource-group-name>",
-        "serviceName": "<bot-service-name>",
-        "name": "<friendly-service-name>",
-        "id": "1",
-        "appId": "<app-id>"
-    },
-    {
-        "type": "blob",
-        "connectionString": "<connection-string>",
-        "tenantId": "<tenant-id>",
-        "subscriptionId": "<subscription-id>",
-        "resourceGroup": "<resource-group-name>",
-        "serviceName": "<blob-service-name>",
-        "id": "2"
-    },
-    {
-        "type": "endpoint",
-        "appId": "",
-        "appPassword": "",
-        "endpoint": "<local-endpoint-url>",
-        "name": "development",
-        "id": "3"
-    },
-    {
-        "type": "endpoint",
-        "appId": "<app-id>",
-        "appPassword": "<app-password>",
-        "endpoint": "<hosted-endpoint-url>",
-        "name": "production",
-        "id": "4"
-    },
-    {
-        "type": "appInsights",
-        "instrumentationKey": "<instrumentation-key>",
-        "applicationId": "<appinsights-app-id>",
-        "apiKeys": {},
-        "tenantId": "<tenant-id>",
-        "subscriptionId": "<subscription-id>",
-        "resourceGroup": "<resource-group>",
-        "serviceName": "<appinsights-service-name>",
-        "id": "5"
-    }
-],
-```
+Open the appsettings.json or .env file you downloaded. Copy **all** entries listed in it and add them to your _local_ appsettings.json or .env file. Resolve any duplicate service entries or duplicate service IDs. Keep any additional service references your bot depends on.
 
 Save the file.
 
-You can use the msbot tool to generate a new secret and encrypt the .bot file before you publish. If you re-encrypt your .bot file, update the bot's **botFileSecret** in the Azure portal to contain the new secret.
+### Update local bot code
+Update the local Startup.cs or index.js file to use appsettings.json or .env file instead using the .bot file. The .bot file has been deprecated and we are working on updating VSIX templates, Yeoman generators, samples, and remaining docs to all use appsettings.json or .env file instead of the .bot file. In the meantime, you'll need to make changes to the bot code. 
 
-```cmd
-msbot secret --bot <name-of-bot-file> --new
+Update the code to read settings from appsettings.json or .env file. 
+
+# [C#](#tab/csharp)
+In the `ConfigureServices` method, use the configuration object that ASP.NET Core provides, for example: 
+
+**Startup.cs**
+```csharp
+var appId = Configuration.GetSection("MicrosoftAppId").Value;
+var appPassword = Configuration.GetSection("MicrosoftAppPassword").Value;
+options.CredentialProvider = new SimpleCredentialProvider(appId, appPassword);
 ```
 
-> [!TIP]
-> In the file properties for your .bot file, inside Visual Studio, make sure the **Copy to Output Directory** is set to *Copy always*.
+# [JS](#tab/js)
+
+In JavaScript, reference .env variables off of the `process.env` object, for example:
+   
+**index.js**
+
+```js
+const adapter = new BotFrameworkAdapter({
+    appId: process.env.MicrosoftAppId,
+    appPassword: process.env.MicrosoftAppPassword
+});
+```
+---
+
+- Save the file and test your bot.
 
 ### Setup a repository
 
@@ -139,13 +96,12 @@ To support continuous deployment, create a git repository using your favorite gi
 Make sure that your repository root has the correct files, as described under [prepare your repository](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment#prepare-your-repository).
 
 ### Update App Settings in Azure
-The local bot does not use an encrypted .bot file, but the Azure portal is configured to use an encrypted .bot file. You can resolve this by removing the **botFileSecret** stored in the Azure bot settings.
+The local bot does not use an encrypted .bot file, but _if_ the Azure portal is configured to use an encrypted .bot file. You can resolve this by removing the **botFileSecret** stored in the Azure bot settings.
 1. In the Azure portal, open the **Web App Bot** resource for your bot.
 1. Open the bot's **Application Settings**.
 1. In the **Application Settings** window, scroll down to **Application settings**.
-1. Locate the **botFileSecret** and delete it. (If you re-encrypted your .bot file, make sure the **botFileSecret** contains the new secret and **do not** delete the setting.)
-1. Update the name of the bot file to match the file you checked into the repo.
-1. Save changes.
+1. Check to see if your bot has **botFileSecret** and **botFilePath** entries. If you do, delete it.
+1. Save the changes.
 
 ## 2. Deploy using Azure Deployment Center
 
