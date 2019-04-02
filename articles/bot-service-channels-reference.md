@@ -247,3 +247,12 @@ You can modify this render pipeline to add, remove, or replace any custom render
 
 You can use Web Chat to send any activity type and payload, we neither document nor recommend this feature. 
 You should use "event" activity instead.
+
+# Action Support by Channel
+
+The following table shows Card Action and Suggested Action support by channel.
+
+ \                      | Cortana  | Direct Line | Direct Line (Web Chat) | Email | Facebook | GroupMe | Kik     | Teams | Slack | Skype | Skype Business | Telegram | Twilio  
+:---------------------- | :-----:  | :---------: | :--------------------: |:----: | :------: | :-----: | :-----: | :---: | :---: | :---: | :------------: | :------: | :----:  
+Suggested Actions       |    0     |     100     |          100           |   0   |    10    |    0    |   20    |   3   |  100  |  10   |       0        |    100   |   0     
+Card Actions            |   100    |     100     |          100           |   0   |     3    |    0    |   20    |   3   |  100  |   3   |       0        |     0    |   0     
