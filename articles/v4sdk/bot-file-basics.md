@@ -124,9 +124,11 @@ const adapter = new BotFrameworkAdapter({
     appPassword: process.env.MicrosoftAppPassword
 });
 ```
+
 ---
 
 If needed, provision resources and connect them to your bot using the appsettings.json or .env file.
+
 
 ## FAQ
 **Q:** I want to create a new V4 bot in Azure portal. How has the Azure portal experience changed with the removal of the .bot file?
