@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 03/30/2019
+ms.date: 04/02/2019
 ---
 
 # Deploy your bot
@@ -20,9 +20,8 @@ After you have created your bot and tested it locally, you can deploy it to Azur
 In this article, we'll show you how to deploy C# and JavaScript bots to Azure. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 ## Prerequisites
-
-- Install latest version of the [msbot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
-- A [CSharp](./dotnet/bot-builder-dotnet-sdk-quickstart.md) or [JavaScript](./javascript/bot-builder-javascript-quickstart.md) bot that you have developed on your local machine.
+- If you don't have an [Azure subscription](http://portal.azure.com), create a free account before you begin.
+- A [**CSharp**](./dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](./javascript/bot-builder-javascript-quickstart.md) bot that you have developed on your local machine.
 
 ## 1. Prepare for deployment
 The deployment process requires a target Web App Bot in Azure so that your local bot can be deployed into it. The target Web App Bot and the resources that are provisioned with it in Azure are used by your local bot for deployment. This is necessary because your local bot does not have all the required Azure resources provisioned. When you create a target Web App bot, the following resources are provisioned for you:
