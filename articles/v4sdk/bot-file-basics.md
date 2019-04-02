@@ -125,6 +125,8 @@ const adapter = new BotFrameworkAdapter({
 });
 ```
 
+---
+
 If needed, provision resources and connect them to your bot using the appsettings.json or .env file.
 
 
