@@ -213,9 +213,9 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
 1. Click on one of the sample links above and clone the github repository.
 1. Follow the instructions on the GitHub readme page for how to run that particular bot (C# or Node).
 1. If you are using the C# Bot-Authentication sample:
-    1. Set the `ConnectionName` variable in the `AuthenticationBot.cs` file to the value you  used when you configured your bot's OAuth 2.0 connection setting.
-    1. Set the `appId` value in the `BotConfiguration.bot` file to your bot's app ID.
-    1. Set the `appPassword` value in the `BotConfiguration.bot` file to your bot's secret.
+    1. Set the `ConnectionName` variable in the `GraphAuthenticationBot.cs` file to the value you  used when you configured your bot's OAuth 2.0 connection setting.
+    1. Set the `appId` value in the `bot-authentication-msgraph.bot` file to your bot's app ID.
+    1. Set the `appPassword` value in the `bot-authentication-msgraph.bot` file to your bot's secret.
 1. If you are using the Node/JS Bot-Authentication sample:
     1. Set the `CONNECTION_NAME` variable in the `bot.js` file to the value you  used when you configured your bot's OAuth 2.0 connection setting.
     1. Set the `appId` value in the `bot-authentication.bot` file to your bot's app ID.
