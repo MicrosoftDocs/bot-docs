@@ -66,10 +66,10 @@
 ## [Manage](manage/TOC.md)
 ## [Migrate](v4sdk/migration/TOC.md)
 # Reference
-## [.NET SDK v4](https://aka.ms/dotnetsdk4)
+## [.NET SDK v4](https://aka.ms/botframework-v4-cs-sdk)
 ## [JavaScript SDK v4](https://aka.ms/jssdk4)
 ## [REST](rest-api/TOC.md)
-## [.NET SDK v3](/dotnet/api/?view=botbuilder-dotnet-3.0)
+## [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
 ## [Node.js SDK v3](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [Entities and activity types](bot-service-activities-entities.md)
 # [Resources](resources/TOC.md)
