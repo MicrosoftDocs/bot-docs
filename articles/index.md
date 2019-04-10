@@ -46,8 +46,20 @@ ms.date: 03/28/2019
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
+                        <h3>APIs</h3>
+                        <p><a href="https://aka.ms/botconnector-rest-api">REST</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
                         <h3>Languages</h3>
-                        <p><a href="/dotnet/api/?view=botbuilder-3.12.2.4">.NET</a></p>
+                        <p><a href="https://aka.ms/botframework-v3-cs-sdk">.NET</a></p>
                         <p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">Node.js</a></p>
                     </div>
                 </div>
@@ -107,8 +119,7 @@ ms.date: 03/28/2019
                 <div class="card">
                     <div class="cardText">
                         <h3>APIs</h3>
-                        <p><a href="https://aka.ms/dotnetsdk4">.NET</a></p>
-                        <p><a href="https://aka.ms/jssdk4">JavaScript</a></p>
+                        <p><a href="https://aka.ms/botconnector-rest-api">REST</a></p>
                     </div>
                 </div>
             </div>
@@ -120,7 +131,7 @@ ms.date: 03/28/2019
                 <div class="card">
                     <div class="cardText">
                         <h3>SDKs</h3>
-                        <p><a href="https://github.com/Microsoft/botbuilder-dotnet">.NET</a></p>
+                        <p><a href="https://aka.ms/botframework-v4-cs-sdk">.NET</a></p>
                         <p><a href="https://github.com/Microsoft/botbuilder-js">JavaScript</a></p>
                     </div>
                 </div>
