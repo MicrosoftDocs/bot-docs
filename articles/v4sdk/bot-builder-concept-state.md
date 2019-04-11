@@ -42,7 +42,7 @@ For instructions on how to connect to other storage options, see [write directly
 
 ## State management
 
-*State management* automates the reading and writing of your bot's state to the underlying storage layer. State is stored as *state properties*, which are effectively key-value pairs that your bot can read and write through the state management object without worrying about the specific underlying implementation. Those state properties define how that information is stored. For example, when your retrieve a property that you defined as a specific class or object, you know how that data will be structured.
+*State management* automates the reading and writing of your bot's state to the underlying storage layer. State is stored as *state properties*, which are effectively key-value pairs that your bot can read and write through the state management object without worrying about the specific underlying implementation. Those state properties define how that information is stored. For example, when you retrieve a property that you defined as a specific class or object, you know how that data will be structured.
 
 These state properties are lumped into scoped "buckets", which are just collections to help organize those properties. The SDK includes three of these "buckets":
 

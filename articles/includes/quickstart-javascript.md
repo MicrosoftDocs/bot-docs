@@ -12,6 +12,7 @@
 > For some installations the install step for restify is giving an error related to node-gyp.
 > If this is the case you can try running this command with elevated permissions.
 > This call may also hang without exiting if python is already installed on your system:
+
 > ```bash
 > npm install -g windows-build-tools
 > ```
