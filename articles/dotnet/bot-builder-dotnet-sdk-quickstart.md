@@ -22,7 +22,6 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 [!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
 
-
 [!INCLUDE [dotnet quickstart](~/includes/quickstart-dotnet.md)]
 
 ## Additional resources

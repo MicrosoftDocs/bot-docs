@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 04/02/2019
+ms.date: 04/12/2019
 ---
 
 # Deploy your bot
@@ -22,7 +22,6 @@ In this article, we'll show you how to deploy C# and JavaScript bots to Azure. I
 ## Prerequisites
 - If you don't have an [Azure subscription](http://portal.azure.com), create a free account before you begin.
 - A [**CSharp**](./dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](./javascript/bot-builder-javascript-quickstart.md) bot that you have developed on your local machine.
-
 
 ## 1. Prepare for deployment
 The deployment process requires a target Web App Bot in Azure so that your local bot can be deployed into it. The target Web App Bot and the resources that are provisioned with it in Azure are used by your local bot for deployment. This is necessary because your local bot does not have all the required Azure resources provisioned. When you create a target Web App bot, the following resources are provisioned for you:
@@ -43,7 +42,6 @@ Creating a new Web App Bot is optional if you have already created a bot in Azur
 1. A new blade will open with information about the Web App Bot. 
 1. In the **Bot Service** blade, provide the requested information about your bot.
 1. Click **Create** to create the service and deploy the bot to the cloud. This process may take several minutes.
-
 
 ### Download the source code
 After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references (e.g. MicrosoftAppID, MicrosoftAppPassword, LUIS, or QnA) that are in the appsettings.json or .env file. 
@@ -73,7 +71,6 @@ var appId = Configuration.GetSection("MicrosoftAppId").Value;
 var appPassword = Configuration.GetSection("MicrosoftAppPassword").Value;
 options.CredentialProvider = new SimpleCredentialProvider(appId, appPassword);
 ```
-
 
 # [JS](#tab/js)
 
@@ -111,13 +108,12 @@ Now, you need to upload your bot code to Azure. Follow instructions in the [Cont
 
 Note that it is recommended to build using `App Service Kudu build server`.
 
-
 Once you've configured continuous deployment, changes you commit to your repo are published. However, if you add services to your bot, you will need to add entries for these to your .bot file.
 
 ## 3. Test your deployment
 
 Wait for a few seconds after a successful deployment and optionally restart your Web App to clear any cache. Go back to your Web App Bot blade and test using the Web Chat provided in the Azure portal.
 
-
 ## Additional resources
 - [How to investigate common issues with continuous deployment](https://github.com/projectkudu/kudu/wiki/Investigating-continuous-deployment)
+

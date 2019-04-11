@@ -22,7 +22,6 @@ This quickstart walks you through building a single bot by using the Yeoman Bot 
 
 [!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
 
-
 ## Additional resources
 
 See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
