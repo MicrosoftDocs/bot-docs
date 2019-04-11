@@ -1,0 +1,85 @@
+﻿<Type Name="CallingModule_MakeBot" FullName="Microsoft.Bot.Builder.Calling.CallingModule_MakeBot">
+  <TypeSignature Language="C#" Value="public sealed class CallingModule_MakeBot : Autofac.Module" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallingModule_MakeBot extends Autofac.Module" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallingModule_MakeBot&#xA;Inherits Module" />
+  <TypeSignature Language="F#" Value="type CallingModule_MakeBot = class&#xA;    inherit Module" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Autofac.Module</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallingModule_MakeBot ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="protected override void Load (Autofac.ContainerBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Load(class Autofac.ContainerBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.Load(Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Load (builder As ContainerBuilder)" />
+      <MemberSignature Language="F#" Value="override this.Load : Autofac.ContainerBuilder -&gt; unit" Usage="callingModule_MakeBot.Load builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Autofac.ContainerBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static void Register (Autofac.ILifetimeScope scope, Func&lt;Microsoft.Bot.Builder.Calling.ICallingBotService,Microsoft.Bot.Builder.Calling.ICallingBot&gt; MakeCallingBot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(class Autofac.ILifetimeScope scope, class System.Func`2&lt;class Microsoft.Bot.Builder.Calling.ICallingBotService, class Microsoft.Bot.Builder.Calling.ICallingBot&gt; MakeCallingBot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.Register(Autofac.ILifetimeScope,System.Func{Microsoft.Bot.Builder.Calling.ICallingBotService,Microsoft.Bot.Builder.Calling.ICallingBot})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Register (scope As ILifetimeScope, MakeCallingBot As Func(Of ICallingBotService, ICallingBot))" />
+      <MemberSignature Language="F#" Value="static member Register : Autofac.ILifetimeScope * Func&lt;Microsoft.Bot.Builder.Calling.ICallingBotService, Microsoft.Bot.Builder.Calling.ICallingBot&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.CallingModule_MakeBot.Register (scope, MakeCallingBot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Autofac.ILifetimeScope" />
+        <Parameter Name="MakeCallingBot" Type="System.Func&lt;Microsoft.Bot.Builder.Calling.ICallingBotService,Microsoft.Bot.Builder.Calling.ICallingBot&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="scope">To be added.</param>
+        <param name="MakeCallingBot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

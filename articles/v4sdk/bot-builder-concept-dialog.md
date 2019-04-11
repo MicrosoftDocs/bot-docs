@@ -116,7 +116,7 @@ You can use the dialog context to begin, continue, replace, or end a dialog. You
 
 Dialogs can be thought of as a programmatic stack, which we call the *dialog stack*, with the turn handler as the one directing it and serving as the fallback if the stack is empty. The topmost item on that stack is considered the *active dialog*, and the dialog context directs all input to the active dialog.
 
-When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down become the active dialog again. This allows for [branching and looping](#looping-and-branching), discussed below.
+When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down becomes the active dialog again. This allows for branching and looping, discussed below.
 
 ### Create the dialog context
 
@@ -126,11 +126,22 @@ The dialog set requires use of a *state property accessor* to access the dialog 
 
 ### To start a dialog
 
-To start a dialog, pass the *dialog ID* you want to start into the dialog context's *begin dialog*, *prompt*, or *replace dialog* method. The begin dialog method will push the dialog onto the top of the stack, while the replace dialog method will pop the current dialog off the stack and push the replacing dialog onto the stack.
+To start a dialog, pass the *dialog ID* you want to start into the dialog context's *begin dialog*, *prompt*, or *replace dialog* method.
+
+* The begin dialog method will push the dialog onto the top of the stack.
+* The replace dialog method will pop the current dialog off the stack and push the replacing dialog onto the stack. The replaced dialog is canceled and any information that instance contained is disposed of.
+
+Use the _options_ parameter to pass information to the new instance of the dialog.
+The options passed into the new dialog can be accessed via the step context's *options* property in any step of the dialog.
+See the [Create advanced conversation flow using branches and loops](bot-builder-dialog-manage-complex-conversation-flow.md) how-to for example code.
 
 ### To continue a dialog
 
 To continue a dialog, call the *continue dialog* method. The continue method will always continue the topmost dialog on the stack (the active dialog), if there is one. If the continued dialog ends, control is passed to the parent context which continues within the same turn.
+
+Use the step context's *values* property to persist state between turns.
+Any value added to this collection in a previous turn is available in subsequent turns.
+See the [Create advanced conversation flow using branches and loops](bot-builder-dialog-manage-complex-conversation-flow.md) how-to for example code.
 
 ### To end a dialog
 
@@ -147,10 +158,11 @@ If you want to pop all dialogs off the stack, you can clear the dialog stack by 
 
 ### Repeating a dialog
 
-To repeat a dialog, use the *replace dialog* method. The dialog context's *replace dialog* method will pop the current active dialog off the stack (without ending it the normal way) and push the replacing dialog onto the top of the stack and begin that dialog. This is a great way to handle [complex interations](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus. You can use this method to create a loop by replacing a dialog with itself.
+You can replace a dialog with itself, creating a loop.
+This is a great way to handle [complex interactions](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus.
 
 > [!NOTE]
-> If you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the *replace dialog* method, and then initialize the dialog appropriately. The options passed into the new dialog can be accessed via the step context's *options* property in any step of the dialog.
+> If you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the *replace dialog* method, and then initialize the dialog appropriately.
 
 ### Branch a conversation
 

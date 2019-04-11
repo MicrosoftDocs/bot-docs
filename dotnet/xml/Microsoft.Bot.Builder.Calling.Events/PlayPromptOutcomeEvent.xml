@@ -1,0 +1,64 @@
+﻿<Type Name="PlayPromptOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent">
+  <TypeSignature Language="C#" Value="public class PlayPromptOutcomeEvent : Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlayPromptOutcomeEvent extends Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlayPromptOutcomeEvent&#xA;Inherits OutcomeEventBase" />
+  <TypeSignature Language="F#" Value="type PlayPromptOutcomeEvent = class&#xA;    inherit OutcomeEventBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PlayPromptOutcomeEvent (Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult conversationResult, Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow, Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome outcome);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult conversationResult, class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow, class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome outcome) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult * Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow * Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome -&gt; Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent" Usage="new Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent (conversationResult, resultingWorkflow, outcome)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conversationResult" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationResult" />
+        <Parameter Name="resultingWorkflow" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow" />
+        <Parameter Name="outcome" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome" />
+      </Parameters>
+      <Docs>
+        <param name="conversationResult">To be added.</param>
+        <param name="resultingWorkflow">To be added.</param>
+        <param name="outcome">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayPromptOutcome">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome PlayPromptOutcome { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome PlayPromptOutcome" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent.PlayPromptOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlayPromptOutcome As PlayPromptOutcome" />
+      <MemberSignature Language="F#" Value="member this.PlayPromptOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome with get, set" Usage="Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent.PlayPromptOutcome" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,15 +8,16 @@ ms.topic: landing-page
 layout: LandingPage
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 01/16/2019
+ms.date: 03/28/2019
 ---
 ::: moniker range="azure-bot-service-3.0"
 
-> [!NOTE]
-> This topic applies to the **previous version of the SDK (v3)**. You can find the documentation for current version of the SDK (v4) [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0)
-
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
+    <div class="alert is-info">
+        <p class="alert-title"><span class="docon docon-status-error-outline"></span> Note</p>
+        <p>This topic applies to the <strong>previous version of the SDK (v3)</strong>. You can find the documentation for current version of the SDK (v4) <a href="https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0" data-linktype="external">here.</a></p>
+    </div>
     <div class="intro" style="min-width: 200px">
         <p>Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for .NET and Node.js. Learn how to use Bot Service with our quickstart and samples.</p>
     </div>
@@ -24,8 +25,8 @@ ms.date: 01/16/2019
 <div class="ico48Case">
     <div class="ico48Link">
         <a href="/bot-framework/bot-service-quickstart">
-            <img src="media/index/logo_bot.svg" alt="">
-            <span>Bot Service</span>
+            <img src="media/index/azure_portal.png" alt="">
+            <span>Azure portal</span>
         </a>
     </div>
 </div>
@@ -45,8 +46,20 @@ ms.date: 01/16/2019
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
+                        <h3>APIs</h3>
+                        <p><a href="https://aka.ms/botconnector-rest-api">REST</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
                         <h3>Languages</h3>
-                        <p><a href="/dotnet/api/?view=botbuilder-3.12.2.4">.NET</a></p>
+                        <p><a href="https://aka.ms/botframework-v3-cs-sdk">.NET</a></p>
                         <p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">Node.js</a></p>
                     </div>
                 </div>
@@ -61,11 +74,12 @@ ms.date: 01/16/2019
 
 ::: moniker range="azure-bot-service-4.0"
 
-> [!NOTE] 
-> This topic is for the current version of the SDK (v4). The documentation for the older version of the SDK (v3) is [here.](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-3.0)
-
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
+    <div class="alert is-info">
+        <p class="alert-title"><span class="docon docon-status-error-outline"></span> Note</p>
+        <p>This topic is for the current version of the SDK (v4). The documentation for the older version of the SDK (v3) is <a href="https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-3.0" data-linktype="external">here.</a></p>
+    </div>
     <div class="intro" style="min-width: 200px">
         <p>Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for C# and JavaScript. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
 </p>
@@ -76,8 +90,8 @@ ms.date: 01/16/2019
 <div class="ico48Case">
     <div class="ico48Link">
         <a href="/bot-framework/bot-service-quickstart">
-            <img src="v4sdk/media/logo_bot.svg" alt="">
-            <span>Azure</span>
+            <img src="media/index/azure_portal.png" alt="">
+            <span>Azure portal</span>
         </a>
     </div>
     <div class="ico48Link">
@@ -95,8 +109,8 @@ ms.date: 01/16/2019
 </div>
 
 <h2 style="margin-top: 36px">Step-by-Step Tutorials</h2>
-<p><a href="/bot-framework/bot-builder-tutorial-basic-deploy">Create and deploy a basic bot</a></p>
-<p><a href="/bot-framework/bot-builder-tutorial-add-qna">Add QnA Maker and redeploy a bot</a></p>
+<p><a href="/bot-framework/bot-builder-tutorial-basic-deploy">1. Create and deploy a basic bot</a></p>
+<p><a href="/bot-framework/bot-builder-tutorial-add-qna">2. Add QnA Maker and redeploy a bot</a></p>
 <h2 style="margin-top: 36px">Reference</h2>
 <ul class="panelContent cardsD">
     <li>
@@ -105,8 +119,7 @@ ms.date: 01/16/2019
                 <div class="card">
                     <div class="cardText">
                         <h3>APIs</h3>
-                        <p><a href="https://aka.ms/dotnetsdk4">.NET</a></p>
-                        <p><a href="https://aka.ms/jssdk4">JavaScript</a></p>
+                        <p><a href="https://aka.ms/botconnector-rest-api">REST</a></p>
                     </div>
                 </div>
             </div>
@@ -118,7 +131,7 @@ ms.date: 01/16/2019
                 <div class="card">
                     <div class="cardText">
                         <h3>SDKs</h3>
-                        <p><a href="https://github.com/Microsoft/botbuilder-dotnet">.NET</a></p>
+                        <p><a href="https://aka.ms/botframework-v4-cs-sdk">.NET</a></p>
                         <p><a href="https://github.com/Microsoft/botbuilder-js">JavaScript</a></p>
                     </div>
                 </div>

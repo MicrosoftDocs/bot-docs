@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 01/16/2019
 ---
 
 # Key concepts
@@ -45,7 +45,7 @@ The Bot Framework provides client libraries that can be used to build bots in ei
 In addition to modeling the Bot Connector service and the Bot State service, each Bot Framework SDK also provides a powerful system for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as <a href="https://www.luis.ai/" target="_blank">LUIS</a>, and more. 
 
 > [!NOTE]
-> As an alternative to using the C# SDK or Node.js SDK, you can generate your own client library in the language of your choice by using the <a href="https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json" target="_blank">Bot Connector Swagger file</a> and the <a href="https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/StateAPI.json" target="_blank">Bot State Swagger file</a>.
+> As an alternative to using the C# SDK or Node.js SDK, you can generate your own client library in the language of your choice by using the <a href="https://aka.ms/connector-swagger-file" target="_blank">Bot Connector Swagger file</a> and the <a href="https://aka.ms/state-swagger-file" target="_blank">Bot State Swagger file</a>.
 
 ## Additional resources
 

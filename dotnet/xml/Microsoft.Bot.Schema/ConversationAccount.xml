@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,23 +42,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConversationAccount (Nullable&lt;bool&gt; isGroup = null, string conversationType = null, string id = null, string name = null, string role = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string conversationType, string id, string name, string role) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional conversationType As String = null, Optional id As String = null, Optional name As String = null, Optional role As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ConversationAccount : Nullable&lt;bool&gt; * string * string * string * string -&gt; Microsoft.Bot.Schema.ConversationAccount" Usage="new Microsoft.Bot.Schema.ConversationAccount (isGroup, conversationType, id, name, role)" />
+      <MemberSignature Language="C#" Value="public ConversationAccount (Nullable&lt;bool&gt; isGroup = null, string conversationType = null, string id = null, string name = null, string aadObjectId = null, string role = null, string tenantId = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string conversationType, string id, string name, string aadObjectId, string role, string tenantId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional conversationType As String = null, Optional id As String = null, Optional name As String = null, Optional aadObjectId As String = null, Optional role As String = null, Optional tenantId As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ConversationAccount : Nullable&lt;bool&gt; * string * string * string * string * string * string -&gt; Microsoft.Bot.Schema.ConversationAccount" Usage="new Microsoft.Bot.Schema.ConversationAccount (isGroup, conversationType, id, name, aadObjectId, role, tenantId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isGroup" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="conversationType" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
+        <Parameter Name="aadObjectId" Type="System.String" />
         <Parameter Name="role" Type="System.String" />
+        <Parameter Name="tenantId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="isGroup">Indicates whether the conversation contains
@@ -68,11 +71,42 @@
         <param name="id">Channel id for the user or bot on this channel
             (Example: joe@smith.com, or @joesmith or 123456)</param>
         <param name="name">Display friendly name</param>
+        <param name="aadObjectId">This account's object ID within Azure
+            Active Directory (AAD)</param>
         <param name="role">Role of the entity behind the account (Example:
             User, Bot, etc.). Possible values include: 'user', 'bot'</param>
+        <param name="tenantId">This conversation's tenant ID</param>
         <summary>
             Initializes a new instance of the ConversationAccount class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AadObjectId">
+      <MemberSignature Language="C#" Value="public string AadObjectId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AadObjectId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.AadObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AadObjectId As String" />
+      <MemberSignature Language="F#" Value="member this.AadObjectId : string with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.AadObjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="aadObjectId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this account's object ID within Azure Active Directory
+            (AAD)
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,6 +121,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -116,6 +151,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -145,6 +181,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -174,6 +211,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -202,6 +240,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -233,6 +272,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -246,6 +286,33 @@
         <summary>
             Gets or sets role of the entity behind the account (Example: User,
             Bot, etc.). Possible values include: 'user', 'bot'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TenantId">
+      <MemberSignature Language="C#" Value="public string TenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TenantId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ConversationAccount.TenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TenantId As String" />
+      <MemberSignature Language="F#" Value="member this.TenantId : string with get, set" Usage="Microsoft.Bot.Schema.ConversationAccount.TenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tenantId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this conversation's tenant ID
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

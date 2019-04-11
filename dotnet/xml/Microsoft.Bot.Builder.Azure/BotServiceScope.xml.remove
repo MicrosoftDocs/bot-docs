@@ -1,0 +1,76 @@
+<Type Name="BotServiceScope" FullName="Microsoft.Bot.Builder.Azure.BotServiceScope">
+  <TypeSignature Language="C#" Value="public sealed class BotServiceScope : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotServiceScope extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.BotServiceScope" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BotServiceScope&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type BotServiceScope = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            The scope for the <see cref="T:Microsoft.Bot.Builder.Azure.BotService" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotServiceScope (params IDisposable[] disposables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IDisposable[] disposables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceScope.#ctor(System.IDisposable[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray disposables As IDisposable())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.BotServiceScope : IDisposable[] -&gt; Microsoft.Bot.Builder.Azure.BotServiceScope" Usage="new Microsoft.Bot.Builder.Azure.BotServiceScope disposables" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="disposables" Type="System.IDisposable[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="disposables"> The list of items that should be disposed when scope is disposed.</param>
+        <summary>
+            Creates an instance of BotServiceScope
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceScope.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

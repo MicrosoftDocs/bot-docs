@@ -1,0 +1,103 @@
+﻿<Type Name="ModalityType" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType">
+  <TypeSignature Language="C#" Value="public enum ModalityType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ModalityType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ModalityType" />
+  <TypeSignature Language="F#" Value="type ModalityType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType&gt;))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            List of supported modality types
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="Audio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType Audio = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Audio" />
+      <MemberSignature Language="VB.NET" Value="Audio" />
+      <MemberSignature Language="F#" Value="Audio = 1" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Audio" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Video">
+      <MemberSignature Language="C#" Value="Video" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType Video = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Video" />
+      <MemberSignature Language="VB.NET" Value="Video" />
+      <MemberSignature Language="F#" Value="Video = 2" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.Video" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VideoBasedScreenSharing">
+      <MemberSignature Language="C#" Value="VideoBasedScreenSharing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType VideoBasedScreenSharing = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.VideoBasedScreenSharing" />
+      <MemberSignature Language="VB.NET" Value="VideoBasedScreenSharing" />
+      <MemberSignature Language="F#" Value="VideoBasedScreenSharing = 3" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType.VideoBasedScreenSharing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ModalityType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

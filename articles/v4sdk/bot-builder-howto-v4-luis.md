@@ -20,7 +20,7 @@ The ability to understand what your user means conversationally and contextually
 ## Prerequisites
 - [luis.ai](https://www.luis.ai) account
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download)
-- The code in this article is based on the **NLP with LUIS** sample. You'll need a copy of the sample in either [C#](https://aka.ms/cs-luis-sample) or [JS](https://aka.ms/js-luis-sample). 
+- The code in this article is based on the **NLP with LUIS** sample. You'll need a copy of the sample in either [C# Sample](https://aka.ms/cs-luis-sample) or [JS Sample](https://aka.ms/js-luis-sample). 
 - Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis), and [.bot](bot-file-basics.md) file.
 
 ## Create a LUIS app in the LUIS portal
@@ -79,10 +79,14 @@ Add the information required to access your LUIS app including application id, a
 # [C#](#tab/cs)
 
 ### Configure your bot to use your LUIS app
+Be sure that the nuget package **Microsoft.Bot.Builder.AI.Luis** is installed for your project.
 
 Next, we initialize a new instance of the BotService class in `BotServices.cs`, which grabs the above information from your `.bot` file. The external service is configured using the `BotConfiguration` class.
 
 ```csharp
+using Microsoft.Bot.Builder.AI.Luis;
+using Microsoft.Bot.Configuration;
+
 public class BotServices
 {
     // Initializes a new instance of the BotServices class
@@ -126,10 +130,9 @@ public void ConfigureServices(IServiceCollection services)
     var botConfig = BotConfiguration.Load(botFilePath ?? @".\nlp-with-luis.bot", secretKey);
     services.AddSingleton(sp => botConfig ?? throw new InvalidOperationException($"The .bot config file could not be loaded. ({botConfig})"));
 
-    // Initialize Bot Connected Services clients.
+    // Initialize Bot Connected Services client.
     var connectedServices = new BotServices(botConfig);
     services.AddSingleton(sp => connectedServices);
-    services.AddSingleton(sp => botConfig);
 
     services.AddBot<LuisBot>(options =>
     {
@@ -142,13 +145,13 @@ public void ConfigureServices(IServiceCollection services)
         }
 
         options.CredentialProvider = new SimpleCredentialProvider(endpointService.AppId, endpointService.AppPassword);
-        
+
         // ...
     });
 }
 ```
 
-Next, in the `Luis.cs` file, the bot gets this LUIS instance.
+Next, in the `LuisBot.cs` file, the bot gets this LUIS instance.
 
 ```csharp
 public class LuisBot : IBot

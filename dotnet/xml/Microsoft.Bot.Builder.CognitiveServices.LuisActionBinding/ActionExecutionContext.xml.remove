@@ -1,0 +1,113 @@
+<Type Name="ActionExecutionContext" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext">
+  <TypeSignature Language="C#" Value="public class ActionExecutionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionExecutionContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActionExecutionContext" />
+  <TypeSignature Language="F#" Value="type ActionExecutionContext = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A LUIS Action Binding context.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActionExecutionContext (string intent, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string intent, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.#ctor(System.String,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (intent As String, action As ILuisAction)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext : string * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext" Usage="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext (intent, action)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="intent" Type="System.String" />
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+      </Parameters>
+      <Docs>
+        <param name="intent">The LUIS Intent name that triggered the action.</param>
+        <param name="action">The LUIS Action Binding model that was triggered.</param>
+        <summary>
+            Construct the Action Context.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.Action" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As ILuisAction" />
+      <MemberSignature Language="F#" Value="member this.Action : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current LUIS Action Binding model.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeRootSignaling">
+      <MemberSignature Language="C#" Value="public bool ChangeRootSignaling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ChangeRootSignaling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.ChangeRootSignaling" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeRootSignaling As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ChangeRootSignaling : bool with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.ChangeRootSignaling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if the action was triggered due to context switching.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intent">
+      <MemberSignature Language="C#" Value="public string Intent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Intent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.Intent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Intent As String" />
+      <MemberSignature Language="F#" Value="member this.Intent : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ActionExecutionContext.Intent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The LUIS Intent name that triggers this action.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

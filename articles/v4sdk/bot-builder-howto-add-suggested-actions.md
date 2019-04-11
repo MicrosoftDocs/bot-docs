@@ -28,7 +28,6 @@ You can access the source code used here from [GitHub](https://aka.ms/SuggestedA
 
 ```csharp
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 
 var reply = turnContext.Activity.CreateReply("What is your favorite color?");
@@ -43,7 +42,7 @@ reply.SuggestedActions = new SuggestedActions()
     },
 
 };
-await turnContext.SendActivityAsync(reply, cancellationToken);
+await turnContext.SendActivityAsync(reply, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/javascript)

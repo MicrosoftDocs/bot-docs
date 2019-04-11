@@ -97,6 +97,7 @@ cd <local-bot-folder>
 If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the appId and appSecret to use with `msbot clone services` command.
 
 - Go to the [Application Registration Portal](https://apps.dev.microsoft.com/). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**.
+> NOTE - If generated password contains the character "|" this password will be rejected by Azure. To solve this, generate another a new password.
 - Save both application id and the new password you just generated, so you that can use them with `msbot clone services` command.
 - To deploy, use the command that applies to your bot.
 

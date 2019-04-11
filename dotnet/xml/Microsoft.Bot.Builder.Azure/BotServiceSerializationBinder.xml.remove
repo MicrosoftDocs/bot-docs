@@ -1,0 +1,74 @@
+<Type Name="BotServiceSerializationBinder" FullName="Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder">
+  <TypeSignature Language="C#" Value="public sealed class BotServiceSerializationBinder : System.Runtime.Serialization.SerializationBinder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotServiceSerializationBinder extends System.Runtime.Serialization.SerializationBinder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BotServiceSerializationBinder&#xA;Inherits SerializationBinder" />
+  <TypeSignature Language="F#" Value="type BotServiceSerializationBinder = class&#xA;    inherit SerializationBinder" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Serialization.SerializationBinder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+      <see cref="T:System.Runtime.Serialization.SerializationBinder" /> responsible for mapping the matching types to the types in the assembly passed to the constructor during deserialization.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotServiceSerializationBinder (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder.#ctor(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder : System.Reflection.Assembly -&gt; Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder" Usage="new Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder assembly" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The assembly.</param>
+        <summary>
+            Constructs an instance of bot service <see cref="T:System.Runtime.Serialization.SerializationBinder" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindToType">
+      <MemberSignature Language="C#" Value="public override Type BindToType (string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type BindToType(string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.BotServiceSerializationBinder.BindToType(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BindToType (assemblyName As String, typeName As String) As Type" />
+      <MemberSignature Language="F#" Value="override this.BindToType : string * string -&gt; Type" Usage="botServiceSerializationBinder.BindToType (assemblyName, typeName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">
+        </param>
+        <param name="typeName">
+        </param>
+        <summary>
+          <see cref="M:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)" />
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

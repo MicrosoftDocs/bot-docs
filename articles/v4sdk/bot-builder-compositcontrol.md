@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/08/2018
+ms.date: 01/16/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -226,6 +226,14 @@ const myBot = new MyBot(conversationState, userState);
 
 ---
 
+## About component dialogs
+
+With a component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog set that contains it.
+
+Use the _add dialog_ method to add dialogs and prompts to the component dialog.
+The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `InitialDialogId` property in the component dialog's constructor.
+When you start a component dialog, it will start its _initial dialog_.
+
 ## Define the check-in component dialog
 
 First, we start with a simple check-in dialog that will ask the user for their name and what room they will be staying in. We create a `CheckInDialog` class that extends `ComponentDialog`. This class has a constructor that defines the name of the root dialog, which we'll define as a waterfall dialog with three steps.
@@ -250,14 +258,14 @@ using Microsoft.Bot.Builder.Dialogs;
 
 public class CheckInDialog : ComponentDialog
 {
+    private const string InitialId = "mainDialog";
     private const string GuestKey = nameof(CheckInDialog);
     private const string TextPrompt = "textPrompt";
 
-    // You can start this from the parent using the dialog's ID.
-    public CheckInDialog(string id)
-        : base(id)
+    // You can start this from the parent using the ID assigned in the parent.
+    public CheckInDialog(string id) : base(id)
     {
-        InitialDialogId = Id;
+        InitialDialogId = InitialId;
 
         // Define the prompts used in this conversation flow.
         AddDialog(new TextPrompt(TextPrompt));
@@ -269,7 +277,7 @@ public class CheckInDialog : ComponentDialog
             RoomStepAsync,
             FinalStepAsync,
         };
-        AddDialog(new WaterfallDialog(Id, waterfallSteps));
+        AddDialog(new WaterfallDialog(InitialId, waterfallSteps));
     }
 
     private static async Task<DialogTurnResult> NameStepAsync(
@@ -332,18 +340,20 @@ Throughout this dialog we can write to a local state object, accessible through 
 ```JavaScript
 const { ComponentDialog, TextPrompt, WaterfallDialog } = require('botbuilder-dialogs');
 
+const initialId = 'mainDialog';
+
 class CheckInDialog extends ComponentDialog {
-    constructor(dialogId) {
-        super(dialogId);
+    constructor(id) {
+        super(id);
 
         // ID of the child dialog that should be started anytime the component is started.
-        this.initialDialogId = dialogId;
+        this.initialDialogId = initialId;
 
         // Define the prompts used in this conversation flow.
         this.addDialog(new TextPrompt('textPrompt'));
 
         // Define the conversation flow using a waterfall model.
-        this.addDialog(new WaterfallDialog(dialogId, [
+        this.addDialog(new WaterfallDialog(initialId, [
             async function (step) {
                 // Clear the guest information and prompt for the guest's name.
                 step.values.guestInfo = {};
@@ -402,12 +412,12 @@ using Microsoft.Bot.Builder.Dialogs.Choices;
 
 public class ReserveTableDialog : ComponentDialog
 {
+    private const string InitialId = "mainDialog";
     private const string TablePrompt = "choicePrompt";
 
-    public ReserveTableDialog(string id)
-        : base(id)
+    public ReserveTableDialog(string id) : base(id)
     {
-        InitialDialogId = Id;
+        InitialDialogId = InitialId;
 
         // Define the prompts used in this conversation flow.
         AddDialog(new ChoicePrompt(TablePrompt));
@@ -418,7 +428,7 @@ public class ReserveTableDialog : ComponentDialog
                 TableStepAsync,
                 FinalStepAsync,
         };
-        AddDialog(new WaterfallDialog(Id, waterfallSteps));
+        AddDialog(new WaterfallDialog(InitialId, waterfallSteps));
     }
 
     private static async Task<DialogTurnResult> TableStepAsync(
@@ -475,12 +485,12 @@ using Microsoft.Bot.Builder.Dialogs;
 
 public class SetAlarmDialog : ComponentDialog
 {
+    private const string InitialId = "mainDialog";
     private const string AlarmPrompt = "dateTimePrompt";
 
-    public SetAlarmDialog(string id)
-        : base(id)
+    public SetAlarmDialog(string id) : base(id)
     {
-        InitialDialogId = Id;
+        InitialDialogId = InitialId;
 
         // Define the prompts used in this conversation flow.
         // Ideally, we'd add validation to this prompt.
@@ -493,7 +503,7 @@ public class SetAlarmDialog : ComponentDialog
                 FinalStepAsync,
         };
 
-        AddDialog(new WaterfallDialog(Id, waterfallSteps));
+        AddDialog(new WaterfallDialog(InitialId, waterfallSteps));
     }
 
     private static async Task<DialogTurnResult> AlarmStepAsync(
@@ -544,18 +554,20 @@ We'll get the guest's name from the options object that is passed in when the di
 ```JavaScript
 const { ComponentDialog, ChoicePrompt, WaterfallDialog } = require('botbuilder-dialogs');
 
+const initialId = 'mainDialog';
+
 class ReserveTableDialog extends ComponentDialog {
-    constructor(dialogId) {
-        super(dialogId);
+    constructor(id) {
+        super(id);
 
         // ID of the child dialog that should be started anytime the component is started.
-        this.initialDialogId = dialogId;
+        this.initialDialogId = initialId;
 
         // Define the prompts used in this conversation flow.
         this.addDialog(new ChoicePrompt('choicePrompt'));
 
         // Define the conversation flow using a waterfall model.
-        this.addDialog(new WaterfallDialog(dialogId, [
+        this.addDialog(new WaterfallDialog(initialId, [
             async function (step) {
                 // Welcome the user and ask for their table preference.
                 const greeting = step.options && step.options.userName ? `Welcome ${step.options.userName}` : `Welcome`;
@@ -591,17 +603,19 @@ We'll get the guest's room number from the options object that is passed in when
 ```JavaScript
 const { ComponentDialog, DateTimePrompt, WaterfallDialog } = require('botbuilder-dialogs');
 
+const initialId = 'mainDialog';
+
 class SetAlarmDialog extends ComponentDialog {
-    constructor(dialogId) {
-        super(dialogId);
+    constructor(id) {
+        super(id);
 
         // ID of the child dialog that should be started anytime the component is started.
-        this.initialDialogId = dialogId;
+        this.initialDialogId = initialId;
 
         // Define the prompts used in this conversation flow.
-        this.dialogs.add(new DateTimePrompt('datePrompt'));
+        this.addDialog(new DateTimePrompt('datePrompt'));
 
-        this.dialogs.add(new WaterfallDialog(dialogId, [
+        this.addDialog(new WaterfallDialog(initialId, [
             async function (step) {
                 step.values.wakeUp = {};
                 if (step.options && step.options.roomNumber) {

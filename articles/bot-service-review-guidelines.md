@@ -25,8 +25,6 @@ Your app integration and its associated metadata must:
 
 - If your app integration handles users' personal information (personal information includes all information or data that identifies or could be used to identify a person, or that is associated with such information or data. Examples of personal information include: name and address, phone number, biometric identifiers, location, contacts, photos, audio & video recordings, documents, SMS, email, or other text communication, screenshots, and in some cases, combined browsing history), you must provide a prominent link from your app integration to an applicable privacy policy, and such privacy policy must comply with all applicable laws, regulations and policy requirements. This policy should cover what data you are collecting or transmitting, what you will be doing with that data, and (if applicable) who you'll be sharing it with. If you don’t have a privacy statement, here are some third-party resources* that might be of some assistance:
 
-OECD - [Privacy Statement Generator](http://www.oecd.org/internet/ieconomy/oecdprivacystatementgenerator.htm)
-
 Future of Privacy Forum – [Application Privacy Policy Generator](http://www.applicationprivacy.org/do-tools/privacy-policy-generator/)
 
 Iubenda – [Privacy Policy Generator](http://www.iubenda.com/en)

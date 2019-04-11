@@ -1,0 +1,32 @@
+<Type Name="LuisActionActivityHandler" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task LuisActionActivityHandler(IDialogContext context, IAwaitable&lt;IMessageActivity&gt; message, object actionResult);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LuisActionActivityHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.Bot.LuisActionActivityHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function LuisActionActivityHandler(context As IDialogContext, message As IAwaitable(Of IMessageActivity), actionResult As Object) As Task " />
+  <TypeSignature Language="F#" Value="type LuisActionActivityHandler = delegate of IDialogContext * IAwaitable&lt;IMessageActivity&gt; * obj -&gt; Task" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.IDialogContext" />
+    <Parameter Name="message" Type="Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;Microsoft.Bot.Connector.IMessageActivity&gt;" />
+    <Parameter Name="actionResult" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">The dialog context.</param>
+    <param name="message">The dialog message.</param>
+    <param name="actionResult">The action's result object.</param>
+    <summary>
+            The handler for a LUIS Action Binding.
+            </summary>
+    <returns />
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

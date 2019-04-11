@@ -1,0 +1,771 @@
+﻿<Type Name="BotConfiguration" FullName="Microsoft.Bot.Configuration.BotConfiguration">
+  <TypeSignature Language="C#" Value="public class BotConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.BotConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotConfiguration" />
+  <TypeSignature Language="F#" Value="type BotConfiguration = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            BotConfiguration represents configuration information for a bot.
+            </summary>
+    <remarks>It is typically loaded from a .bot file on disk.
+            This class implements methods for encrypting and manipulating the in memory representation of the configuration.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSecret">
+      <MemberSignature Language="C#" Value="public void ClearSecret ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearSecret() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.ClearSecret" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearSecret ()" />
+      <MemberSignature Language="F#" Value="member this.ClearSecret : unit -&gt; unit" Usage="botConfiguration.ClearSecret " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clear secret.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectService">
+      <MemberSignature Language="C#" Value="public void ConnectService (Microsoft.Bot.Configuration.ConnectedService newService);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConnectService(class Microsoft.Bot.Configuration.ConnectedService newService) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.ConnectService(Microsoft.Bot.Configuration.ConnectedService)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ConnectService (newService As ConnectedService)" />
+      <MemberSignature Language="F#" Value="member this.ConnectService : Microsoft.Bot.Configuration.ConnectedService -&gt; unit" Usage="botConfiguration.ConnectService newService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newService" Type="Microsoft.Bot.Configuration.ConnectedService" />
+      </Parameters>
+      <Docs>
+        <param name="newService">
+          <see cref="T:Microsoft.Bot.Configuration.ConnectedService" /> to add.</param>
+        <summary>
+            Connect a service to the bot file.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public void Decrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : string -&gt; unit" Usage="botConfiguration.Decrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">Secret to encrypt.</param>
+        <summary>
+            Decrypt all values in the in memory config.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotConfiguration.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Bot.Configuration.BotConfiguration.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("description")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets description of the bot.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectService">
+      <MemberSignature Language="C#" Value="public void DisconnectService (string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisconnectService(string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.DisconnectService(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisconnectService (id As String)" />
+      <MemberSignature Language="F#" Value="member this.DisconnectService : string -&gt; unit" Usage="botConfiguration.DisconnectService id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The ID of the service.</param>
+        <summary>
+            Remove a service by its ID.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectServiceByNameOrId">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Configuration.ConnectedService DisconnectServiceByNameOrId (string nameOrId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Configuration.ConnectedService DisconnectServiceByNameOrId(string nameOrId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.DisconnectServiceByNameOrId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisconnectServiceByNameOrId (nameOrId As String) As ConnectedService" />
+      <MemberSignature Language="F#" Value="member this.DisconnectServiceByNameOrId : string -&gt; Microsoft.Bot.Configuration.ConnectedService" Usage="botConfiguration.DisconnectServiceByNameOrId nameOrId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Configuration.ConnectedService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameOrId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nameOrId">The name or service ID.</param>
+        <summary>
+            Remove a service by its name or ID.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Configuration.ConnectedService" /> that was found and removed.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Exception">No such service was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectServiceByNameOrId&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T DisconnectServiceByNameOrId&lt;T&gt; (string nameOrId) where T : Microsoft.Bot.Configuration.ConnectedService;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T DisconnectServiceByNameOrId&lt;(class Microsoft.Bot.Configuration.ConnectedService) T&gt;(string nameOrId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.DisconnectServiceByNameOrId``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisconnectServiceByNameOrId(Of T As ConnectedService) (nameOrId As String) As T" />
+      <MemberSignature Language="F#" Value="member this.DisconnectServiceByNameOrId : string -&gt; 'T (requires 'T :&gt; Microsoft.Bot.Configuration.ConnectedService)" Usage="botConfiguration.DisconnectServiceByNameOrId nameOrId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.Bot.Configuration.ConnectedService</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="nameOrId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The service type.</typeparam>
+        <param name="nameOrId">The name or service ID.</param>
+        <summary>
+            Remove a specific type of service by its name or ID.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Configuration.ConnectedService" /> that was found and removed.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Exception">No such service was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public void Encrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : string -&gt; unit" Usage="botConfiguration.Encrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">Secret to encrypt.</param>
+        <summary>
+            Encrypt all values in the in memory config.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindService">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Configuration.ConnectedService FindService (string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Configuration.ConnectedService FindService(string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.FindService(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindService (id As String) As ConnectedService" />
+      <MemberSignature Language="F#" Value="member this.FindService : string -&gt; Microsoft.Bot.Configuration.ConnectedService" Usage="botConfiguration.FindService id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Configuration.ConnectedService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The ID of the service to find.</param>
+        <summary>
+            Find a service by ID.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Configuration.ConnectedService" />; or null if the service isn't found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindServiceByNameOrId">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Configuration.ConnectedService FindServiceByNameOrId (string nameOrId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Configuration.ConnectedService FindServiceByNameOrId(string nameOrId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.FindServiceByNameOrId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindServiceByNameOrId (nameOrId As String) As ConnectedService" />
+      <MemberSignature Language="F#" Value="member this.FindServiceByNameOrId : string -&gt; Microsoft.Bot.Configuration.ConnectedService" Usage="botConfiguration.FindServiceByNameOrId nameOrId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Configuration.ConnectedService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameOrId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nameOrId">The name or service ID to find.</param>
+        <summary>
+            Find a service by its name or ID.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Configuration.ConnectedService" />; or null if the service isn't found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindServiceByNameOrId&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T FindServiceByNameOrId&lt;T&gt; (string nameOrId) where T : Microsoft.Bot.Configuration.ConnectedService;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T FindServiceByNameOrId&lt;(class Microsoft.Bot.Configuration.ConnectedService) T&gt;(string nameOrId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.FindServiceByNameOrId``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindServiceByNameOrId(Of T As ConnectedService) (nameOrId As String) As T" />
+      <MemberSignature Language="F#" Value="member this.FindServiceByNameOrId : string -&gt; 'T (requires 'T :&gt; Microsoft.Bot.Configuration.ConnectedService)" Usage="botConfiguration.FindServiceByNameOrId nameOrId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.Bot.Configuration.ConnectedService</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="nameOrId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The service type.</typeparam>
+        <param name="nameOrId">The name or service ID to find.</param>
+        <summary>
+            Find a specific type of service by its name or ID.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Configuration.ConnectedService" />; or null if the service isn't found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public static string GenerateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.GenerateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateKey () As String" />
+      <MemberSignature Language="F#" Value="static member GenerateKey : unit -&gt; string" Usage="Microsoft.Bot.Configuration.BotConfiguration.GenerateKey " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generate a new key suitable for encrypting.
+            </summary>
+        <returns>key to use with <see cref="M:Microsoft.Bot.Configuration.BotConfiguration.Encrypt(System.String)" /> method. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Configuration.BotConfiguration Load (string file, string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Configuration.BotConfiguration Load(string file, string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.Load(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (file As String, Optional secret As String = null) As BotConfiguration" />
+      <MemberSignature Language="F#" Value="static member Load : string * string -&gt; Microsoft.Bot.Configuration.BotConfiguration" Usage="Microsoft.Bot.Configuration.BotConfiguration.Load (file, secret)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Configuration.BotConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="file" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="file">Path to bot file. </param>
+        <param name="secret">Secret to use to decrypt the file on disk. </param>
+        <summary>
+            Load the configuration from a .bot file.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Bot.Configuration.BotConfiguration" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt; LoadAsync (string file, string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Configuration.BotConfiguration&gt; LoadAsync(string file, string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.LoadAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadAsync (file As String, Optional secret As String = null) As Task(Of BotConfiguration)" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;" Usage="Microsoft.Bot.Configuration.BotConfiguration.LoadAsync (file, secret)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="file" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="file">Path to bot file. </param>
+        <param name="secret">Secret to use to decrypt the file on disk. </param>
+        <summary>
+            Load the configuration from a .bot file.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> of <see cref="T:Microsoft.Bot.Configuration.BotConfiguration" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromFolder">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Configuration.BotConfiguration LoadFromFolder (string folder, string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Configuration.BotConfiguration LoadFromFolder(string folder, string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolder(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromFolder (folder As String, Optional secret As String = null) As BotConfiguration" />
+      <MemberSignature Language="F#" Value="static member LoadFromFolder : string * string -&gt; Microsoft.Bot.Configuration.BotConfiguration" Usage="Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolder (folder, secret)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Configuration.BotConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folder" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folder">Folder to look for bot files. </param>
+        <param name="secret">Secret to use to encrypt keys. </param>
+        <summary>
+            Load the bot configuration by looking in a folder and loading the first .bot file in the folder.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Bot.Configuration.BotConfiguration" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromFolderAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt; LoadFromFolderAsync (string folder, string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Configuration.BotConfiguration&gt; LoadFromFolderAsync(string folder, string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolderAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromFolderAsync (folder As String, Optional secret As String = null) As Task(Of BotConfiguration)" />
+      <MemberSignature Language="F#" Value="static member LoadFromFolderAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;" Usage="Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolderAsync (folder, secret)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folder" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folder">Folder to look for bot files. </param>
+        <param name="secret">Secret to use to encrypt keys. </param>
+        <summary>
+            Load the bot configuration by looking in a folder and loading the first .bot file in the folder.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> of <see cref="T:Microsoft.Bot.Configuration.BotConfiguration" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MigrateData">
+      <MemberSignature Language="C#" Value="protected virtual void MigrateData ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MigrateData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.MigrateData" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub MigrateData ()" />
+      <MemberSignature Language="F#" Value="abstract member MigrateData : unit -&gt; unit&#xA;override this.MigrateData : unit -&gt; unit" Usage="botConfiguration.MigrateData " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            migrate old records to new records.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotConfiguration.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Configuration.BotConfiguration.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets name of the bot.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padlock">
+      <MemberSignature Language="C#" Value="public string Padlock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Padlock" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotConfiguration.Padlock" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padlock As String" />
+      <MemberSignature Language="F#" Value="member this.Padlock : string with get, set" Usage="Microsoft.Bot.Configuration.BotConfiguration.Padlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("padlock")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets padlock - Used to validate that the secret is consistent for all encrypted fields.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotConfiguration.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As JObject" />
+      <MemberSignature Language="F#" Value="member this.Properties : Newtonsoft.Json.Linq.JObject with get, set" Usage="Microsoft.Bot.Configuration.BotConfiguration.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets properties that are not otherwise defined.
+            </summary>
+        <value>The extended properties for the object.</value>
+        <remarks>With this, properties not represented in the defined type are not dropped when
+            the JSON object is deserialized, but are instead stored in this property. Such properties
+            will be written to a JSON object when the instance is serialized.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (Optional secret As String = null)" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="botConfiguration.Save secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">Secret for encryption. </param>
+        <summary>
+            Save the file with secret.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAs">
+      <MemberSignature Language="C#" Value="public void SaveAs (string path, string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string path, string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAs(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (path As String, Optional secret As String = null)" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * string -&gt; unit" Usage="botConfiguration.SaveAs (path, secret)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">Path to bot file.</param>
+        <param name="secret">Secret for encrypting the file keys.</param>
+        <summary>
+            Save the configuration to a .bot file.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsAsync (string path = null, string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsAsync(string path, string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAsAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveAsAsync (Optional path As String = null, Optional secret As String = null) As Task" />
+      <MemberSignature Language="F#" Value="member this.SaveAsAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="botConfiguration.SaveAsAsync (path, secret)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">Path to bot file.</param>
+        <param name="secret">Secret for encrypting the file keys.</param>
+        <summary>
+            Save the configuration to a .bot file.
+            </summary>
+        <returns>Task. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (string secret = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveAsync (Optional secret As String = null) As Task" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : string -&gt; System.Threading.Tasks.Task" Usage="botConfiguration.SaveAsync secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">Secret for encryption. </param>
+        <summary>
+            Save the file with secret.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Services">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Configuration.ConnectedService&gt; Services { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Configuration.ConnectedService&gt; Services" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotConfiguration.Services" />
+      <MemberSignature Language="VB.NET" Value="Public Property Services As List(Of ConnectedService)" />
+      <MemberSignature Language="F#" Value="member this.Services : System.Collections.Generic.List&lt;Microsoft.Bot.Configuration.ConnectedService&gt; with get, set" Usage="Microsoft.Bot.Configuration.BotConfiguration.Services" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Configuration.BotConfiguration/BotServiceConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("services")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Configuration.ConnectedService&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets connected services.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSecret">
+      <MemberSignature Language="C#" Value="protected void ValidateSecret (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ValidateSecret(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.ValidateSecret(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ValidateSecret (secret As String)" />
+      <MemberSignature Language="F#" Value="member this.ValidateSecret : string -&gt; unit" Usage="botConfiguration.ValidateSecret secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">Secret to use.</param>
+        <summary>
+            Make sure secret is correct by decrypting the secretKey with it.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotConfiguration.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Bot.Configuration.BotConfiguration.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("version")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the version.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

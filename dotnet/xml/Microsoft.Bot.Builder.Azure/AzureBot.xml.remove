@@ -1,0 +1,74 @@
+<Type Name="AzureBot" FullName="Microsoft.Bot.Builder.Azure.AzureBot">
+  <TypeSignature Language="C#" Value="public static class AzureBot" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AzureBot extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.AzureBot" />
+  <TypeSignature Language="VB.NET" Value="Public Class AzureBot" />
+  <TypeSignature Language="F#" Value="type AzureBot = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Obsolete("This class is obsolete. Use BotService instead.", false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The azure bot utilities and helpers.
+            </summary>
+    <remarks>
+            This class is obsolete now. Use <see cref="T:Microsoft.Bot.Builder.Azure.BotService" /> instead.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authenticator">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotAuthenticator Authenticator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Connector.BotAuthenticator Authenticator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.AzureBot.Authenticator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Authenticator As BotAuthenticator" />
+      <MemberSignature Language="F#" Value="member this.Authenticator : Microsoft.Bot.Connector.BotAuthenticator" Usage="Microsoft.Bot.Builder.Azure.AzureBot.Authenticator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.BotAuthenticator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The bot authenticator.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public static void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBot.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="static member Initialize : unit -&gt; unit" Usage="Microsoft.Bot.Builder.Azure.AzureBot.Initialize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Update the <see cref="P:Microsoft.Bot.Builder.Dialogs.Conversation.Container" /> for azure bots.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

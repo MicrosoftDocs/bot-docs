@@ -1,0 +1,165 @@
+﻿<Type Name="ScriptGlobals" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals">
+  <TypeSignature Language="C#" Value="public class ScriptGlobals" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptGlobals extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptGlobals" />
+  <TypeSignature Language="F#" Value="type ScriptGlobals = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Global values to pass into scripts defined using <see cref="T:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptGlobals ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="choice">
+      <MemberSignature Language="C#" Value="public int choice;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 choice" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.choice" />
+      <MemberSignature Language="VB.NET" Value="Public choice As Integer " />
+      <MemberSignature Language="F#" Value="val mutable choice : int" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.choice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Which script to execute.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="context">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.IDialogContext context;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.Dialogs.IDialogContext context" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.context" />
+      <MemberSignature Language="VB.NET" Value="Public context As IDialogContext " />
+      <MemberSignature Language="F#" Value="val mutable context : Microsoft.Bot.Builder.Dialogs.IDialogContext" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.context" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.IDialogContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dialog context for OnCompletionAsync handlers.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="field">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt; field;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;class Newtonsoft.Json.Linq.JObject&gt; field" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.field" />
+      <MemberSignature Language="VB.NET" Value="Public field As Field(Of JObject) " />
+      <MemberSignature Language="F#" Value="val mutable field : Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.field" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Field to be dynamically defined.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ifield">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;Newtonsoft.Json.Linq.JObject&gt; ifield;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.Bot.Builder.FormFlow.Advanced.IField`1&lt;class Newtonsoft.Json.Linq.JObject&gt; ifield" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.ifield" />
+      <MemberSignature Language="VB.NET" Value="Public ifield As IField(Of JObject) " />
+      <MemberSignature Language="F#" Value="val mutable ifield : Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.ifield" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Current field if any.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="state">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject state;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Newtonsoft.Json.Linq.JObject state" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.state" />
+      <MemberSignature Language="VB.NET" Value="Public state As JObject " />
+      <MemberSignature Language="F#" Value="val mutable state : Newtonsoft.Json.Linq.JObject" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.state" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Current form state.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="value">
+      <MemberSignature Language="C#" Value="public object value;" />
+      <MemberSignature Language="ILAsm" Value=".field public object value" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.value" />
+      <MemberSignature Language="VB.NET" Value="Public value As Object " />
+      <MemberSignature Language="F#" Value="val mutable value : obj" Usage="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals.value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Value to be validated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

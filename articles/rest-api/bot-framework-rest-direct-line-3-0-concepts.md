@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/28/2018
+ms.date: 01/06/2019
 ---
 
 # Key concepts in Direct Line API 3.0
@@ -39,8 +39,6 @@ The Bot Framework provides client libraries that facilitate access to Direct Lin
 - To use the .NET client library within a Visual Studio project, install the `Microsoft.Bot.Connector.DirectLine` <a href="https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine" target="_blank">NuGet package</a>. 
 
 - To use the Node.js client library, install the `botframework-directlinejs` library using <a href="https://www.npmjs.com/package/botframework-directlinejs" target="_blank">NPM</a> (or <a href="https://github.com/Microsoft/BotFramework-DirectLineJS" target="_blank">download</a> the source).
-
-As an alternative to using the C# or Node.js client libraries, you can generate your own client library in the language of your choice by using the <a href="https://docs.botframework.com/en-us/restapi/directline3/swagger.json" target="_blank">Direct Line API 3.0 Swagger file</a>.
 
 ::: moniker range="azure-bot-service-3.0"
 

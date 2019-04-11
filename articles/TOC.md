@@ -7,8 +7,8 @@
 ### [.NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ### [JavaScript](javascript/bot-builder-javascript-quickstart.md)
 # Tutorials
-## [Create and deploy a basic bot](v4sdk/bot-builder-tutorial-basic-deploy.md)
-## [Add QnA Maker and redeploy a bot](v4sdk/bot-builder-tutorial-add-qna.md)
+## [1. Create and deploy a basic bot](v4sdk/bot-builder-tutorial-basic-deploy.md)
+## [2. Add QnA Maker and redeploy a bot](v4sdk/bot-builder-tutorial-add-qna.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
 ## [botbuilder-samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
@@ -18,7 +18,7 @@
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
 ## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
-## [Manage resources with a .bot file](v4sdk/bot-file-basics.md)
+## [Manage bot resources](v4sdk/bot-file-basics.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
@@ -39,7 +39,7 @@
 ### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md) 
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 <!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
-### [Get notification from bots](v4sdk/bot-builder-howto-proactive-message.md)
+### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
@@ -53,21 +53,23 @@
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
+### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Manage bots using CLI tools](bot-builder-tools.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
 ## [Debug](debug/TOC.md)
 ## Deploy
-### [Deploy your bot using Azure CLI](bot-builder-deploy-az-cli.md)
-### [Deploy your C# bot using Visual Studio](bot-builder-howto-deploy-azure.md)
-<!-- ### [Download and redeploy bot code](bot-service-build-download-source-code.md) -->
-### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
+### [Deploy your bot to Azure](bot-builder-deploy-az-cli.md)
+<!-- ### [Deploy your C# bot using Visual Studio](bot-builder-howto-deploy-azure.md)
+### [Download and redeploy bot code](bot-service-build-download-source-code.md) 
+### [Set up continuous deployment](bot-service-build-continuous-deployment.md) -->
 ## [Manage](manage/TOC.md)
+## [Migrate](v4sdk/migration/TOC.md)
 # Reference
-## [.NET SDK v4](https://aka.ms/dotnetsdk4)
+## [.NET SDK v4](https://aka.ms/botframework-v4-cs-sdk)
 ## [JavaScript SDK v4](https://aka.ms/jssdk4)
 ## [REST](rest-api/TOC.md)
-## [.NET SDK v3](/dotnet/api/?view=botbuilder-3.12.2.4)
+## [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
 ## [Node.js SDK v3](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html)
 ## [Entities and activity types](bot-service-activities-entities.md)
 # [Resources](resources/TOC.md)

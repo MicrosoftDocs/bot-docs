@@ -1,0 +1,236 @@
+﻿<Type Name="ValidOutcomes" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes">
+  <TypeSignature Language="C#" Value="public static class ValidOutcomes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValidOutcomes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidOutcomes" />
+  <TypeSignature Language="F#" Value="type ValidOutcomes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This is a helper class for validating outcomes. This can be used by customers or by us (before we send the outcome on the wire) 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnswerOutcome">
+      <MemberSignature Language="C#" Value="public const string AnswerOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AnswerOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.AnswerOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnswerOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable AnswerOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.AnswerOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            AnswerOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangupOutcome">
+      <MemberSignature Language="C#" Value="public const string HangupOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string HangupOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.HangupOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const HangupOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable HangupOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.HangupOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            HangupOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Outcomes">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.HashSet&lt;string&gt; Outcomes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.HashSet`1&lt;string&gt; Outcomes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Outcomes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Outcomes As HashSet(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Outcomes : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Outcomes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayPromptOutcome">
+      <MemberSignature Language="C#" Value="public const string PlayPromptOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PlayPromptOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.PlayPromptOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const PlayPromptOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable PlayPromptOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.PlayPromptOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            PlayPromptOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeOutcome">
+      <MemberSignature Language="C#" Value="public const string RecognizeOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RecognizeOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RecognizeOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const RecognizeOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable RecognizeOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RecognizeOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RecognizeOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordOutcome">
+      <MemberSignature Language="C#" Value="public const string RecordOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RecordOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RecordOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const RecordOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable RecordOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RecordOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RecordOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectOutcome">
+      <MemberSignature Language="C#" Value="public const string RejectOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RejectOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RejectOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const RejectOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable RejectOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.RejectOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RejectOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase operationOutcome);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase operationOutcome) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Validate(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (operationOutcome As OperationOutcomeBase)" />
+      <MemberSignature Language="F#" Value="static member Validate : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Validate operationOutcome" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationOutcome" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
+      </Parameters>
+      <Docs>
+        <param name="operationOutcome">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (string outcome);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(string outcome) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Validate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (outcome As String)" />
+      <MemberSignature Language="F#" Value="static member Validate : string -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.Validate outcome" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outcome" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outcome">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowValidationOutcome">
+      <MemberSignature Language="C#" Value="public const string WorkflowValidationOutcome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowValidationOutcome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.WorkflowValidationOutcome" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowValidationOutcome As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkflowValidationOutcome : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes.WorkflowValidationOutcome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            WorkflowValidationOutcome
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 2/09/2019
 ---
 
 # Reconnect to a conversation
@@ -54,6 +54,8 @@ HTTP/1.1 200 OK
 ## Reconnect to the conversation
 
 The client must use the new WebSocket stream URL to [reconnect to the conversation](bot-framework-rest-direct-line-3-0-receive-activities.md#connect-via-websocket) within 60 seconds. If the connection cannot be established during this time, the client must issue another Reconnect request to generate a new stream URL.
+
+If you have "Enhanced authentication option" enabled in the Direct Line settings, you might get a 400 "MissingProperty" error saying no user ID specified.
 
 ## Additional resources
 

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,10 +31,72 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the TokenStatus class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TokenStatus (string channelId = null, string connectionName = null, Nullable&lt;bool&gt; hasToken = null, string serviceProviderDisplayName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string channelId, string connectionName, valuetype System.Nullable`1&lt;bool&gt; hasToken, string serviceProviderDisplayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.TokenStatus.#ctor(System.String,System.String,System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional channelId As String = null, Optional connectionName As String = null, Optional hasToken As Nullable(Of Boolean) = null, Optional serviceProviderDisplayName As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.TokenStatus : string * string * Nullable&lt;bool&gt; * string -&gt; Microsoft.Bot.Schema.TokenStatus" Usage="new Microsoft.Bot.Schema.TokenStatus (channelId, connectionName, hasToken, serviceProviderDisplayName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="hasToken" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="serviceProviderDisplayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channelId of the token status pertains
+            to</param>
+        <param name="connectionName">The name of the connection the token
+            status pertains to</param>
+        <param name="hasToken">True if a token is stored for this
+            ConnectionName</param>
+        <param name="serviceProviderDisplayName">The display name of the
+            service provider for which this Token belongs to</param>
+        <summary>
+            Initializes a new instance of the TokenStatus class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelId">
+      <MemberSignature Language="C#" Value="public string ChannelId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChannelId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TokenStatus.ChannelId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelId As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelId : string with get, set" Usage="Microsoft.Bot.Schema.TokenStatus.ChannelId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the channelId of the token status pertains to
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,10 +111,11 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>Newtonsoft.Json.JsonProperty("connectionName")</AttributeName>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="connectionName")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -59,35 +123,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The name of the connection the token status pertains to
+            Gets or sets the name of the connection the token status pertains
+            to
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasToken">
-      <MemberSignature Language="C#" Value="public bool HasToken { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool HasToken" />
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HasToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HasToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.TokenStatus.HasToken" />
-      <MemberSignature Language="VB.NET" Value="Public Property HasToken As Boolean" />
-      <MemberSignature Language="F#" Value="member this.HasToken : bool with get, set" Usage="Microsoft.Bot.Schema.TokenStatus.HasToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasToken As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.HasToken : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Schema.TokenStatus.HasToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>Newtonsoft.Json.JsonProperty("hasToken")</AttributeName>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="hasToken")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Whether there is a token or not
+            Gets or sets true if a token is stored for this ConnectionName
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -104,10 +170,11 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
-          <AttributeName>Newtonsoft.Json.JsonProperty("serviceProviderDisplayName")</AttributeName>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceProviderDisplayName")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,7 +182,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The display name of the service provider for which this Token belongs to
+            Gets or sets the display name of the service provider for which
+            this Token belongs to
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

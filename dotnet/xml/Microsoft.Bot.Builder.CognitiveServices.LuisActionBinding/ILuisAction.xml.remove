@@ -1,0 +1,69 @@
+<Type Name="ILuisAction" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction">
+  <TypeSignature Language="C#" Value="public interface ILuisAction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILuisAction" />
+  <TypeSignature Language="F#" Value="type ILuisAction = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Interface of a LUIS Action Binding.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FulfillAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;object&gt; FulfillAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; FulfillAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction.FulfillAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function FulfillAsync () As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member FulfillAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="iLuisAction.FulfillAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            The method to be executed when all required parameters are filled. This method should fulfill or call any external services and return the result.
+            </summary>
+        <returns>The result of the action execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid (out System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValid([out] class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction.IsValid(System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValid (ByRef results As ICollection(Of ValidationResult)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsValid :  -&gt; bool" Usage="iLuisAction.IsValid results" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="results">To be added.</param>
+        <summary>
+            Validates if the current action's context is valid, based on the Action properties set so far and their validation attributes.
+            </summary>
+        <returns>True if context is valid, False otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

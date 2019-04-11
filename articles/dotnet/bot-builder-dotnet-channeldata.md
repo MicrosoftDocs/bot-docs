@@ -10,6 +10,9 @@ ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
+
+# Implement channel-specific functionality
+
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
 [!INCLUDE [Channel Data Content](../includes/snippet-channeldata.md)]

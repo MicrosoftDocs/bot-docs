@@ -1,0 +1,73 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Azure.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compress">
+      <MemberSignature Language="C#" Value="public static byte[] Compress (this string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Compress(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Extensions.Compress(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Compress (str As String) As Byte()" />
+      <MemberSignature Language="F#" Value="static member Compress : string -&gt; byte[]" Usage="Microsoft.Bot.Builder.Azure.Extensions.Compress str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="str">String to compress.</param>
+        <summary>
+            Compress a string into a byte array.
+            </summary>
+        <returns>Compressed byte array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decompress">
+      <MemberSignature Language="C#" Value="public static string Decompress (this byte[] bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decompress(unsigned int8[] bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Extensions.Decompress(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Decompress (bytes As Byte()) As String" />
+      <MemberSignature Language="F#" Value="static member Decompress : byte[] -&gt; string" Usage="Microsoft.Bot.Builder.Azure.Extensions.Decompress bytes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">Compressed string.</param>
+        <summary>
+            Decompress a string from a byte array.
+            </summary>
+        <returns>Uncompressed string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

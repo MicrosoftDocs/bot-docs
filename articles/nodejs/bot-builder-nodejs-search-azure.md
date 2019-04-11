@@ -148,7 +148,7 @@ function searchHitAsCard(showSave, searchHit) {
 ## Sample code
 
 For two complete samples that show how to support Azure Search with bots using the Bot Framework SDK for Node.js, see the 
-[Real Estate Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-Search/RealEstateBot) or [Job Listing Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-Search/JobListingBot) in GitHub. 
+[Real Estate Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/demo-Search/RealEstateBot) or [Job Listing Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/demo-Search/JobListingBot) in GitHub. 
 
 ## Additional resources
 

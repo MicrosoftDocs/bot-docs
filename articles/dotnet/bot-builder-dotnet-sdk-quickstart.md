@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/19/2018
+ms.date: 02/07/2019
 monikerRange: 'azure-bot-service-4.0'
 templateName: "Echo Bot"
 ---
@@ -20,6 +20,9 @@ templateName: "Echo Bot"
 
 This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator.
 
+[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
+
+
 [!INCLUDE [dotnet quickstart](~/includes/quickstart-dotnet.md)]
 
 ## Additional resources
@@ -29,4 +32,5 @@ See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How bots work](../v4sdk/bot-builder-basics.md) 
+> [Deploy your bot to Azure](../bot-builder-deploy-az-cli.md)
+

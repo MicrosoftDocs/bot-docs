@@ -1,0 +1,54 @@
+<Type Name="ILuisContextualAction&lt;T&gt;" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisContextualAction&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface ILuisContextualAction&lt;T&gt; : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction where T : ILuisAction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisContextualAction`1&lt;(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction) T&gt; implements class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisContextualAction`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILuisContextualAction(Of T)&#xA;Implements ILuisAction" />
+  <TypeSignature Language="F#" Value="type ILuisContextualAction&lt;'T (requires 'T :&gt; ILuisAction)&gt; = interface&#xA;    interface ILuisAction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The original action.</typeparam>
+    <summary>
+            Base class for implementing a LUIS Contextual Action, a sub-action that can modify the context of another action.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public T Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisContextualAction`1.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As T" />
+      <MemberSignature Language="F#" Value="member this.Context : 'T with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisContextualAction&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction)&gt;.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The original action being modified.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

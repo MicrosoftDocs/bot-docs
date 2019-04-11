@@ -1,0 +1,296 @@
+﻿<Type Name="MaxValues" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues">
+  <TypeSignature Language="C#" Value="public static class MaxValues" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MaxValues extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues" />
+  <TypeSignature Language="VB.NET" Value="Public Class MaxValues" />
+  <TypeSignature Language="F#" Value="type MaxValues = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppStateLength">
+      <MemberSignature Language="C#" Value="public static readonly uint AppStateLength;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 AppStateLength" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.AppStateLength" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AppStateLength As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable AppStateLength : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.AppStateLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum length of ApplicationState specified
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileDownloadTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan FileDownloadTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan FileDownloadTimeout" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.FileDownloadTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FileDownloadTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable FileDownloadTimeout : TimeSpan" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.FileDownloadTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Timeout downloading media file when constructing speech prompts.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialSilenceTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan InitialSilenceTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan InitialSilenceTimeout" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.InitialSilenceTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InitialSilenceTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable InitialSilenceTimeout : TimeSpan" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.InitialSilenceTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum initial silence allowed from the time we start the operation 
+            before we timeout and fail the operation. 
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterDigitTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan InterDigitTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan InterDigitTimeout" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.InterDigitTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InterDigitTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable InterDigitTimeout : TimeSpan" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.InterDigitTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Mamimum allowed time between digits if we are doing dtmf based choice recognition or CollectDigits recognition
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthOfTTSText">
+      <MemberSignature Language="C#" Value="public static readonly uint LengthOfTTSText;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 LengthOfTTSText" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.LengthOfTTSText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LengthOfTTSText As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable LengthOfTTSText : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.LengthOfTTSText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of speech variations for a choice
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDownloadedFileSizeBytes">
+      <MemberSignature Language="C#" Value="public static readonly uint MaxDownloadedFileSizeBytes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 MaxDownloadedFileSizeBytes" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.MaxDownloadedFileSizeBytes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxDownloadedFileSizeBytes As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxDownloadedFileSizeBytes : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.MaxDownloadedFileSizeBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Max size of played prompt file.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaConfigurationLength">
+      <MemberSignature Language="C#" Value="public static readonly uint MediaConfigurationLength;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 MediaConfigurationLength" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.MediaConfigurationLength" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MediaConfigurationLength As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable MediaConfigurationLength : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.MediaConfigurationLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Max size of MediaConfiguration in AnswerAppHostedMedia action.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfDtmfsExpected">
+      <MemberSignature Language="C#" Value="public static readonly uint NumberOfDtmfsExpected;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 NumberOfDtmfsExpected" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfDtmfsExpected" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumberOfDtmfsExpected As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable NumberOfDtmfsExpected : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfDtmfsExpected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of digits expected
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfSpeechVariations">
+      <MemberSignature Language="C#" Value="public static readonly uint NumberOfSpeechVariations;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 NumberOfSpeechVariations" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfSpeechVariations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumberOfSpeechVariations As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable NumberOfSpeechVariations : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfSpeechVariations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of speech variations for a choice
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfStopTones">
+      <MemberSignature Language="C#" Value="public static readonly uint NumberOfStopTones;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 NumberOfStopTones" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfStopTones" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumberOfStopTones As UInteger " />
+      <MemberSignature Language="F#" Value=" staticval mutable NumberOfStopTones : uint32" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.NumberOfStopTones" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            max number of stop tones allowed
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordingDuration">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan RecordingDuration;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan RecordingDuration" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.RecordingDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RecordingDuration As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable RecordingDuration : TimeSpan" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.RecordingDuration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Minimum max recording duration
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SilenceTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan SilenceTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan SilenceTimeout" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.SilenceTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SilenceTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable SilenceTimeout : TimeSpan" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.SilenceTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Maximum allowed silence once the user has started speaking before we conclude 
+             the user is done recording.
+             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SilentPromptDuration">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan SilentPromptDuration;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan SilentPromptDuration" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.SilentPromptDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SilentPromptDuration As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable SilentPromptDuration : TimeSpan" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues.SilentPromptDuration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            max silent prompt duration
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

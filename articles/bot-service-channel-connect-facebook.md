@@ -146,6 +146,12 @@ Please refer to the **Connect a bot to Facebook Messenger** section and [Workpla
 ### Make the App public and publish the Page
 Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
+## Setting the API version
+
+If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to 3.0.
+
+![API version upgrade](~/media/channels/facebook-version-upgrade.png)
+
 ## Sample code
 
 For further reference the <a href="https://aka.ms/facebook-events" target="_blank">Facebook-events</a> sample bot can be used to explore the bot communication with Facebook Messenger.

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -17,7 +18,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T"></typeparam>
+    <typeparam name="T">The type of items in the results.</typeparam>
     <summary>
             Page of results from an enumeration.
             </summary>
@@ -34,6 +35,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,15 +54,18 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Token used to page through multiple pages.
+            Gets or sets a token for retrieving the next page of results.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The Continuation Token to pass to get the next page of results.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,15 +80,18 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Page of items.
+            Gets or sets the page of items.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The array of items.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,126 @@
+﻿<Type Name="MultiPartConstants" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants">
+  <TypeSignature Language="C#" Value="public static class MultiPartConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MultiPartConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class MultiPartConstants" />
+  <TypeSignature Language="F#" Value="type MultiPartConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Mp3MimeType">
+      <MemberSignature Language="C#" Value="public static readonly string Mp3MimeType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Mp3MimeType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.Mp3MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Mp3MimeType As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Mp3MimeType : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.Mp3MimeType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            mime type for mp3
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordingContentDispositionName">
+      <MemberSignature Language="C#" Value="public static readonly string RecordingContentDispositionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string RecordingContentDispositionName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.RecordingContentDispositionName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RecordingContentDispositionName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable RecordingContentDispositionName : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.RecordingContentDispositionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            content disposition name to use for the binary recorded audio (in a multipart response)
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultContentDispositionName">
+      <MemberSignature Language="C#" Value="public static readonly string ResultContentDispositionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ResultContentDispositionName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.ResultContentDispositionName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResultContentDispositionName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ResultContentDispositionName : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.ResultContentDispositionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            content disposition name to use for the result object (in a multipart response)
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WavMimeType">
+      <MemberSignature Language="C#" Value="public static readonly string WavMimeType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string WavMimeType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.WavMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WavMimeType As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable WavMimeType : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.WavMimeType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            mime type for wav
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WmaMimeType">
+      <MemberSignature Language="C#" Value="public static readonly string WmaMimeType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string WmaMimeType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.WmaMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WmaMimeType As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable WmaMimeType : string" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants.WmaMimeType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            mime type for wma
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

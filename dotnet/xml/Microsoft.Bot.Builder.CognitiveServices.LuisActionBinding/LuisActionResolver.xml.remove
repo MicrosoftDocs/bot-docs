@@ -1,0 +1,401 @@
+<Type Name="LuisActionResolver" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver">
+  <TypeSignature Language="C#" Value="public class LuisActionResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisActionResolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisActionResolver" />
+  <TypeSignature Language="F#" Value="type LuisActionResolver = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Handles retrieving an Action Binding based on the matched intent from the input utterance, validates parameter based on extracted entities.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisActionResolver (params System.Reflection.Assembly[] lookupAssemblies);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly[] lookupAssemblies) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.#ctor(System.Reflection.Assembly[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray lookupAssemblies As Assembly())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver : System.Reflection.Assembly[] -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver" Usage="new Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver lookupAssemblies" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="lookupAssemblies" Type="System.Reflection.Assembly[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="lookupAssemblies">List of assemblies where to find Action Bindings Types.</param>
+        <summary>
+            Construct LuisActionResolver instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignValue">
+      <MemberSignature Language="C#" Value="public static bool AssignValue (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, string paramName, object paramValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AssignValue(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, string paramName, object paramValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.AssignValue(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AssignValue (action As ILuisAction, paramName As String, paramValue As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member AssignValue : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction * string * obj -&gt; bool" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.AssignValue (action, paramName, paramValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="paramName" Type="System.String" />
+        <Parameter Name="paramValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="action">The current action and context.</param>
+        <param name="paramName">The parameter to try to assign.</param>
+        <param name="paramValue">The parameter value to assign.</param>
+        <summary>
+            Tries to assign a value to the action's parameter.
+            This method runs the proper validation according to the action's parameter definition.
+            </summary>
+        <returns>True if validation passes and the value was assigned. False if validation or type compatibility fails.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildContextForContextualAction">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction BuildContextForContextualAction (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, out string intentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction BuildContextForContextualAction(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, [out] string&amp; intentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.BuildContextForContextualAction(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BuildContextForContextualAction (action As ILuisAction, ByRef intentName As String) As ILuisAction" />
+      <MemberSignature Language="F#" Value="static member BuildContextForContextualAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction *  -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.BuildContextForContextualAction (action, intentName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="intentName" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="action">The contextual action.</param>
+        <param name="intentName">The LUIS intent name of the parent action.</param>
+        <summary>
+            Builds the action from a contextual action.
+            </summary>
+        <returns>The parent action.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanStartWithNoContextAction">
+      <MemberSignature Language="C#" Value="public static bool CanStartWithNoContextAction (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, out Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute actionDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanStartWithNoContextAction(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, [out] class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute&amp; actionDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.CanStartWithNoContextAction(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CanStartWithNoContextAction (action As ILuisAction, ByRef actionDefinition As LuisActionBindingAttribute) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CanStartWithNoContextAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction *  -&gt; bool" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.CanStartWithNoContextAction (action, actionDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="actionDefinition" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="action">The action to validate.</param>
+        <param name="actionDefinition">The action definition.</param>
+        <summary>
+            Indicates if the action can be started, either is not a contextual action or it can create the contextual action directly.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActionDefinition">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute GetActionDefinition (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute GetActionDefinition(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.GetActionDefinition(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetActionDefinition (action As ILuisAction) As LuisActionBindingAttribute" />
+      <MemberSignature Language="F#" Value="static member GetActionDefinition : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.GetActionDefinition action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">The action instance.</param>
+        <summary>
+            Gets the Action definition from an action instance.
+            </summary>
+        <returns>The action definition.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTimeValues">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,object&gt; GetDateTimeValues (Microsoft.Bot.Builder.Luis.Models.EntityRecommendation entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, object&gt; GetDateTimeValues(class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.GetDateTimeValues(Microsoft.Bot.Builder.Luis.Models.EntityRecommendation)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDateTimeValues (entity As EntityRecommendation) As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="static member GetDateTimeValues : Microsoft.Bot.Builder.Luis.Models.EntityRecommendation -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.GetDateTimeValues entity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The EntityRecomendation</param>
+        <summary>
+            Get the first datetimeV2 resolution value.
+            </summary>
+        <returns>A Dictionary with the resolution values Or null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameterDefinition">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute GetParameterDefinition (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, string paramName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute GetParameterDefinition(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, string paramName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.GetParameterDefinition(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetParameterDefinition (action As ILuisAction, paramName As String) As LuisActionBindingParamAttribute" />
+      <MemberSignature Language="F#" Value="static member GetParameterDefinition : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction * string -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.GetParameterDefinition (action, paramName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="paramName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="action">The action instance.</param>
+        <param name="paramName">The current parameter's name.</param>
+        <summary>
+            Gets the Action Parameter definition from an action instance and parameter name.
+            </summary>
+        <returns>The action parameter definition.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContextualAction">
+      <MemberSignature Language="C#" Value="public static bool IsContextualAction (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsContextualAction(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.IsContextualAction(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsContextualAction (action As ILuisAction) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsContextualAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction -&gt; bool" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.IsContextualAction action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">The contextual action to validate.</param>
+        <summary>
+            Indicates if the action is contextual to another action.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidContextualAction">
+      <MemberSignature Language="C#" Value="public static bool IsValidContextualAction (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction context, out bool isContextual);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidContextualAction(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction context, [out] bool&amp; isContextual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.IsValidContextualAction(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidContextualAction (action As ILuisAction, context As ILuisAction, ByRef isContextual As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsValidContextualAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction *  -&gt; bool" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.IsValidContextualAction (action, context, isContextual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="isContextual" Type="System.Boolean" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="action">The contextual action to validate.</param>
+        <param name="context">The current action context.</param>
+        <param name="isContextual">Indicates if the contextual action is related to the current action.</param>
+        <summary>
+            If the action is contextual and related to the current context action, set the contextual action to the current context.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryValueFromLuisAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult&gt; QueryValueFromLuisAsync (Microsoft.Bot.Builder.Luis.ILuisService service, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, string paramName, object paramValue, System.Threading.CancellationToken token, Func&lt;System.Reflection.PropertyInfo,System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entityExtractor = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult&gt; QueryValueFromLuisAsync(class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, string paramName, object paramValue, valuetype System.Threading.CancellationToken token, class System.Func`3&lt;class System.Reflection.PropertyInfo, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;, class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entityExtractor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.QueryValueFromLuisAsync(Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.String,System.Object,System.Threading.CancellationToken,System.Func{System.Reflection.PropertyInfo,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QueryValueFromLuisAsync (service As ILuisService, action As ILuisAction, paramName As String, paramValue As Object, token As CancellationToken, Optional entityExtractor As Func(Of PropertyInfo, IEnumerable(Of EntityRecommendation), EntityRecommendation) = null) As Task(Of QueryValueResult)" />
+      <MemberSignature Language="F#" Value="static member QueryValueFromLuisAsync : Microsoft.Bot.Builder.Luis.ILuisService * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction * string * obj * System.Threading.CancellationToken * Func&lt;System.Reflection.PropertyInfo, seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;, Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult&gt;" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.QueryValueFromLuisAsync (service, action, paramName, paramValue, token, entityExtractor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.QueryValueResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.Bot.Builder.Luis.ILuisService" />
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="paramName" Type="System.String" />
+        <Parameter Name="paramValue" Type="System.Object" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+        <Parameter Name="entityExtractor" Type="System.Func&lt;System.Reflection.PropertyInfo,System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="service">Instance of Microsoft.Bot.Builder.Luis.ILuisService to use for extracting intent and entities.</param>
+        <param name="action">The current action and context.</param>
+        <param name="paramName">The parameter to try to assign.</param>
+        <param name="paramValue">The parameter value to assign.</param>
+        <param name="token">Cancellation Token.</param>
+        <param name="entityExtractor">Optional: EntityExtractor to disambiguate multiple values into a single one.</param>
+        <summary>
+            Tries to extract intent and entities from the input utterance and validates if the the current parameter should be updated or if a context switch is needed.
+            </summary>
+        <returns>Indicates if the Action Parameter was validated (and set) or a if a Context Switch should occur.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveActionFromLuisIntent">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction ResolveActionFromLuisIntent (Microsoft.Bot.Builder.Luis.Models.LuisResult luisResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction ResolveActionFromLuisIntent(class Microsoft.Bot.Builder.Luis.Models.LuisResult luisResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.ResolveActionFromLuisIntent(Microsoft.Bot.Builder.Luis.Models.LuisResult)" />
+      <MemberSignature Language="F#" Value="member this.ResolveActionFromLuisIntent : Microsoft.Bot.Builder.Luis.Models.LuisResult -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" Usage="luisActionResolver.ResolveActionFromLuisIntent luisResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="luisResult" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
+      </Parameters>
+      <Docs>
+        <param name="luisResult">The LUIS Result containing intent and extracted entities.</param>
+        <summary>
+            Returns an action based on the LUIS intent.
+            </summary>
+        <returns>The matched action plus its parameters filled with the extracted entities, or Null if no action was matched.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveActionFromLuisIntent">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction ResolveActionFromLuisIntent (Microsoft.Bot.Builder.Luis.Models.LuisResult luisResult, out string intentName, out System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; intentEntities, Func&lt;System.Reflection.PropertyInfo,System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entityExtractor = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction ResolveActionFromLuisIntent(class Microsoft.Bot.Builder.Luis.Models.LuisResult luisResult, [out] string&amp; intentName, [out] class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;&amp; intentEntities, class System.Func`3&lt;class System.Reflection.PropertyInfo, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;, class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entityExtractor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.ResolveActionFromLuisIntent(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String@,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation}@,System.Func{System.Reflection.PropertyInfo,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
+      <MemberSignature Language="F#" Value="member this.ResolveActionFromLuisIntent : Microsoft.Bot.Builder.Luis.Models.LuisResult *  *  * Func&lt;System.Reflection.PropertyInfo, seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;, Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; -&gt; Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" Usage="luisActionResolver.ResolveActionFromLuisIntent (luisResult, intentName, intentEntities, entityExtractor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="luisResult" Type="Microsoft.Bot.Builder.Luis.Models.LuisResult" />
+        <Parameter Name="intentName" Type="System.String" RefType="out" />
+        <Parameter Name="intentEntities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;" RefType="out" />
+        <Parameter Name="entityExtractor" Type="System.Func&lt;System.Reflection.PropertyInfo,System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="luisResult">The LUIS Result containing intent and extracted entities.</param>
+        <param name="intentName">The LUIS intent name.</param>
+        <param name="intentEntities">The LUIS extracted entities.</param>
+        <param name="entityExtractor">Optional: EntityExtractor to disambiguate multiple values into a single one.</param>
+        <summary>
+            Returns an action based on the LUIS intent.
+            </summary>
+        <returns>The matched action plus its parameters filled with the extracted entities, or Null if no action was matched.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIfValidContextualAction">
+      <MemberSignature Language="C#" Value="public static bool UpdateIfValidContextualAction (Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction context, out bool isContextual);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UpdateIfValidContextualAction(class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction action, class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction context, [out] bool&amp; isContextual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.UpdateIfValidContextualAction(Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UpdateIfValidContextualAction (action As ILuisAction, context As ILuisAction, ByRef isContextual As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member UpdateIfValidContextualAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction * Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction *  -&gt; bool" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionResolver.UpdateIfValidContextualAction (action, context, isContextual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+        <Parameter Name="isContextual" Type="System.Boolean" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="action">The contextual action to validate.</param>
+        <param name="context">The current action context.</param>
+        <param name="isContextual">Indicates if the contextual action is related to the current action.</param>
+        <summary>
+            If the action is contextual and related to the current context action, set the contextual action to the current context.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
