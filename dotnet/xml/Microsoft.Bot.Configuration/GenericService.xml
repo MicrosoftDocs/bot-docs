@@ -1,0 +1,139 @@
+﻿<Type Name="GenericService" FullName="Microsoft.Bot.Configuration.GenericService">
+  <TypeSignature Language="C#" Value="public class GenericService : Microsoft.Bot.Configuration.ConnectedService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericService extends Microsoft.Bot.Configuration.ConnectedService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.GenericService" />
+  <TypeSignature Language="VB.NET" Value="Public Class GenericService&#xA;Inherits ConnectedService" />
+  <TypeSignature Language="F#" Value="type GenericService = class&#xA;    inherit ConnectedService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Configuration.ConnectedService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.GenericService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configuration">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; Configuration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; Configuration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.GenericService.Configuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Configuration As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Configuration : System.Collections.Generic.Dictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Bot.Configuration.GenericService.Configuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("configuration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets configuration.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override void Decrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Decrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.GenericService.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Decrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : string -&gt; unit" Usage="genericService.Decrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override void Encrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Encrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.GenericService.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Encrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : string -&gt; unit" Usage="genericService.Encrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.GenericService.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Bot.Configuration.GenericService.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets url for deep link to service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

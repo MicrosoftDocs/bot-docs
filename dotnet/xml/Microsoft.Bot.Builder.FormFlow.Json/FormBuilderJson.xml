@@ -1,0 +1,257 @@
+﻿<Type Name="FormBuilderJson" FullName="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson">
+  <TypeSignature Language="C#" Value="public sealed class FormBuilderJson : Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormBuilderJson extends Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1&lt;class Newtonsoft.Json.Linq.JObject&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormBuilderJson&#xA;Inherits FormBuilderBase(Of JObject)" />
+  <TypeSignature Language="F#" Value="type FormBuilderJson = class&#xA;    inherit FormBuilderBase&lt;JObject&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;Newtonsoft.Json.Linq.JObject&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Newtonsoft.Json.Linq.JObject</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Build a form by specifying messages, fields and confirmations through JSON Schema or programatically.</summary>
+    <remarks>
+            Define  a form via [JSON Schema](http://json-schema.org/latest/json-schema-validation.html)
+            with optional additional annotations that correspond to the attributes provided for C#.  
+            %FormFlow makes use of a number of standard [JSON Schema](http://json-schema.org/latest/json-schema-validation.html) keywords include:
+            * `type` -- Defines the fields type.
+            * `enum` -- Defines the possible field values.
+            * `minimum` -- Defines the minimum allowed value as described in <see cref="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />.
+            * `maximum` -- Defines the maximum allowed value as described in <see cref="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />.
+            * `required` -- Defines what fields are required.
+            * `pattern` -- For string fields will be used to validate the entered pattern as described in <see cref="T:Microsoft.Bot.Builder.FormFlow.PatternAttribute" />.
+            
+            Templates and prompts use the same vocabulary as <see cref="T:Microsoft.Bot.Builder.FormFlow.TemplateAttribute" /> and <see cref="T:Microsoft.Bot.Builder.FormFlow.PromptAttribute" />.  
+            The property names are the same and the values are the same as those in the underlying C# enumeration.  
+            For example to define a template to override the <see cref="F:Microsoft.Bot.Builder.FormFlow.TemplateUsage.NotUnderstood" /> template
+            and specify a TemplateBaseAttribute.ChoiceStyle, you would put this in your schema: 
+            ~~~
+            "Templates":{ "NotUnderstood": { Patterns: ["I don't get it"], "ChoiceStyle":"Auto"}}
+            ~~~
+            
+            %Extensions defined at the root fo the schema
+            * `OnCompletion: script` -- C# script with arguments (<see cref="T:Microsoft.Bot.Builder.Dialogs.IDialogContext" /> context, JObject state) for completing form.
+            * `References: [assemblyReference, ...]` -- Define references to include in scripts.  Paths should be absolute, or relative to the current directory.  By default Microsoft.Bot.Builder.dll is included.
+            * `Imports: [import, ...]` -- Define imports to include in scripts with usings. By default these namespaces are included: Microsoft.Bot.Builder, Microsoft.Bot.Builder.Dialogs, Microsoft.Bot.Builder.FormFlow, Microsoft.Bot.Builder.FormFlow.Advanced, System.Collections.Generic, System.Linq
+            
+            %Extensions defined at the root of a schema or as a peer of the "type" property.  
+            * `Templates:{TemplateUsage: { Patterns:[string, ...], &lt;args&gt; }, ...}` -- Define templates.
+            * `Prompt: { Patterns:[string, ...] &lt;args&gt;}` -- Define a prompt.
+            
+            %Extensions that are found in a property description as peers to the "type" property of a JSON Schema.
+            * `DateTime:bool` -- Marks a field as being a DateTime field.
+            * `Describe:string` -- Description of a field as described in <see cref="T:Microsoft.Bot.Builder.FormFlow.DescribeAttribute" />.
+            * `Terms:[string,...]` -- Regular expressions for matching a field value as described in <see cref="T:Microsoft.Bot.Builder.FormFlow.TermsAttribute" />.
+            * `MaxPhrase:int` -- This will run your terms through <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)" /> to expand them.
+            * `Values:{ string: {Describe:string, Terms:[string, ...], MaxPhrase}, ...}` -- The string must be found in the types "enum" and this allows you to override the automatically generated descriptions and terms.  If MaxPhrase is specified the terms are passed through <see cref="M:Microsoft.Bot.Builder.FormFlow.Advanced.Language.GenerateTerms(System.String,System.Int32)" />.
+            * `Active:script` -- C# script with arguments (JObject state)-&gt;bool to test to see if field/message/confirm is active.
+            * `Validate:script` -- C# script with arguments (JObject state, object value)-&gt;ValidateResult for validating a field value.
+            * `Define:script` -- C# script with arguments (JObject state, Field&lt;JObject&gt; field) for dynamically defining a field.  
+            * `Before:[confirm|message, ...]` -- Messages or confirmations before the containing field.
+            * `After:[confirm|message, ...]` -- Messages or confirmations after the containing field.
+            * `{Confirm:script|[string, ...], ...templateArgs}` -- With Before/After define a confirmation through either C# script with argument (JObject state) or through a set of patterns that will be randomly selected with optional template arguments.
+            * `{Message:script|[string, ...] ...templateArgs}` -- With Before/After define a message through either C# script with argument (JObject state) or through a set of patterns that will be randomly selected with optional template arguments.
+            * `Dependencies`:[string, ...]` -- Fields that this field, message or confirm depends on.
+            
+            Scripts can be any C# code you would find in a method body.  You can add references through "References" and using through "Imports". Special global variables include:
+            * `choice` -- internal dispatch for script to execute.
+            * `state` -- JObject form state bound for all scripts.
+            * `ifield` -- <see cref="T:Microsoft.Bot.Builder.FormFlow.Advanced.IField`1" /> to allow reasoning over the current field for all scripts except %Message/Confirm prompt builders.
+            * `value` -- object value to be validated for Validate.
+            * `field` -- <see cref="T:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1" /> to allow dynamically updating a field in Define.
+            * `context` -- <see cref="T:Microsoft.Bot.Builder.Dialogs.IDialogContext" /> context to allow posting results in OnCompletion.
+            
+            %Fields defined through this class have the same ability to extend or override the definitions
+            programatically as any other field.  They can also be localized in the same way.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormBuilderJson (Newtonsoft.Json.Linq.JObject schema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Newtonsoft.Json.Linq.JObject schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.#ctor(Newtonsoft.Json.Linq.JObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schema As JObject)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson : Newtonsoft.Json.Linq.JObject -&gt; Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" Usage="new Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson schema" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+      </Parameters>
+      <Docs>
+        <param name="schema">JSON Schema that defines form.</param>
+        <summary>
+            Create a JSON form builder.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRemainingFields">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt; AddRemainingFields (System.Collections.Generic.IEnumerable&lt;string&gt; exclude = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;class Newtonsoft.Json.Linq.JObject&gt; AddRemainingFields(class System.Collections.Generic.IEnumerable`1&lt;string&gt; exclude) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AddRemainingFields (Optional exclude As IEnumerable(Of String) = null) As IFormBuilder(Of JObject)" />
+      <MemberSignature Language="F#" Value="override this.AddRemainingFields : seq&lt;string&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="formBuilderJson.AddRemainingFields exclude" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exclude" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="exclude">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IForm&lt;Newtonsoft.Json.Linq.JObject&gt; Build (System.Reflection.Assembly resourceAssembly = null, string resourceName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;class Newtonsoft.Json.Linq.JObject&gt; Build(class System.Reflection.Assembly resourceAssembly, string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Build(System.Reflection.Assembly,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Build (Optional resourceAssembly As Assembly = null, Optional resourceName As String = null) As IForm(Of JObject)" />
+      <MemberSignature Language="F#" Value="override this.Build : System.Reflection.Assembly * string -&gt; Microsoft.Bot.Builder.FormFlow.IForm&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="formBuilderJson.Build (resourceAssembly, resourceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.IForm&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceAssembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceAssembly">To be added.</param>
+        <param name="resourceName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; validate = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;class Newtonsoft.Json.Linq.JObject&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;class Newtonsoft.Json.Linq.JObject&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;class Newtonsoft.Json.Linq.JObject&gt; validate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{Newtonsoft.Json.Linq.JObject},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{Newtonsoft.Json.Linq.JObject})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, Optional active As ActiveDelegate(Of JObject) = null, Optional validate As ValidateAsyncDelegate(Of JObject) = null) As IFormBuilder(Of JObject)" />
+      <MemberSignature Language="F#" Value="override this.Field : string * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; * Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="formBuilderJson.Field (name, active, validate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="active" Type="Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+        <Parameter Name="validate" Type="Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="active">To be added.</param>
+        <param name="validate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; validate = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;class Newtonsoft.Json.Linq.JObject&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;class Newtonsoft.Json.Linq.JObject&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;class Newtonsoft.Json.Linq.JObject&gt; validate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{Newtonsoft.Json.Linq.JObject},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{Newtonsoft.Json.Linq.JObject})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As PromptAttribute, Optional active As ActiveDelegate(Of JObject) = null, Optional validate As ValidateAsyncDelegate(Of JObject) = null) As IFormBuilder(Of JObject)" />
+      <MemberSignature Language="F#" Value="override this.Field : string * Microsoft.Bot.Builder.FormFlow.PromptAttribute * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; * Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="formBuilderJson.Field (name, prompt, active, validate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="prompt" Type="Microsoft.Bot.Builder.FormFlow.PromptAttribute" />
+        <Parameter Name="active" Type="Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+        <Parameter Name="validate" Type="Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="prompt">To be added.</param>
+        <param name="active">To be added.</param>
+        <param name="validate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt; Field (string name, string prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; validate = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;class Newtonsoft.Json.Linq.JObject&gt; Field(string name, string prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;class Newtonsoft.Json.Linq.JObject&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;class Newtonsoft.Json.Linq.JObject&gt; validate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{Newtonsoft.Json.Linq.JObject},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{Newtonsoft.Json.Linq.JObject})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As String, Optional active As ActiveDelegate(Of JObject) = null, Optional validate As ValidateAsyncDelegate(Of JObject) = null) As IFormBuilder(Of JObject)" />
+      <MemberSignature Language="F#" Value="override this.Field : string * string * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; * Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;" Usage="formBuilderJson.Field (name, prompt, active, validate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;Newtonsoft.Json.Linq.JObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="prompt" Type="System.String" />
+        <Parameter Name="active" Type="Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+        <Parameter Name="validate" Type="Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;Newtonsoft.Json.Linq.JObject&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="prompt">To be added.</param>
+        <param name="active">To be added.</param>
+        <param name="validate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Schema" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As JObject" />
+      <MemberSignature Language="F#" Value="member this.Schema : Newtonsoft.Json.Linq.JObject" Usage="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

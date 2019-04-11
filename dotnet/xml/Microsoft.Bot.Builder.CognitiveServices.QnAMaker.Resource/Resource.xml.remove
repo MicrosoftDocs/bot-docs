@@ -1,0 +1,174 @@
+<Type Name="Resource" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource">
+  <TypeSignature Language="C#" Value="public class Resource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Resource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class Resource" />
+  <TypeSignature Language="F#" Value="type Resource = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="answerSelectionPrompt">
+      <MemberSignature Language="C#" Value="public static string answerSelectionPrompt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string answerSelectionPrompt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.answerSelectionPrompt" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property answerSelectionPrompt As String" />
+      <MemberSignature Language="F#" Value="member this.answerSelectionPrompt : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.answerSelectionPrompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Did you mean:.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="defaultMessage">
+      <MemberSignature Language="C#" Value="public static string defaultMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string defaultMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.defaultMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property defaultMessage As String" />
+      <MemberSignature Language="F#" Value="member this.defaultMessage : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.defaultMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to No match found!.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="noneOfTheAboveOption">
+      <MemberSignature Language="C#" Value="public static string noneOfTheAboveOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string noneOfTheAboveOption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.noneOfTheAboveOption" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property noneOfTheAboveOption As String" />
+      <MemberSignature Language="F#" Value="member this.noneOfTheAboveOption : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.noneOfTheAboveOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to None of the above..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceManager">
+      <MemberSignature Language="C#" Value="public static System.Resources.ResourceManager ResourceManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Resources.ResourceManager ResourceManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.ResourceManager" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ResourceManager As ResourceManager" />
+      <MemberSignature Language="F#" Value="member this.ResourceManager : System.Resources.ResourceManager" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.ResourceManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Resources.ResourceManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tooManyAttempts">
+      <MemberSignature Language="C#" Value="public static string tooManyAttempts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string tooManyAttempts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.tooManyAttempts" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property tooManyAttempts As String" />
+      <MemberSignature Language="F#" Value="member this.tooManyAttempts : string" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.Resource.Resource.tooManyAttempts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              Looks up a localized string similar to Sorry! Not able to match any of the options..
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

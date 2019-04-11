@@ -1,0 +1,87 @@
+<Type Name="QnAMakerResults" FullName="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults">
+  <TypeSignature Language="C#" Value="public class QnAMakerResults" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit QnAMakerResults extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerResults" />
+  <TypeSignature Language="F#" Value="type QnAMakerResults = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerResults ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerResults (System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt; qnaMakerResults);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt; qnaMakerResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (qnaMakerResults As List(Of QnAMakerResult))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt; -&gt; Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults" Usage="new Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults qnaMakerResults" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="qnaMakerResults" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="qnaMakerResults">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Answers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt; Answers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt; Answers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults.Answers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Answers As List(Of QnAMakerResult)" />
+      <MemberSignature Language="F#" Value="member this.Answers : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt; with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResults.Answers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.QnAMaker</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="answers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.CognitiveServices.QnAMaker.QnAMakerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

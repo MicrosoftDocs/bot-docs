@@ -1,0 +1,157 @@
+<Type Name="BuiltInGeographyTypes" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes">
+  <TypeSignature Language="C#" Value="public class BuiltInGeographyTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuiltInGeographyTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuiltInGeographyTypes" />
+  <TypeSignature Language="F#" Value="type BuiltInGeographyTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            LUIS prebuilt Geography types.
+            https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuiltInGeographyTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="City">
+      <MemberSignature Language="C#" Value="public const string City;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string City" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.City" />
+      <MemberSignature Language="VB.NET" Value="Public Const City As String " />
+      <MemberSignature Language="F#" Value="val mutable City : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.City" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CityType">
+      <MemberSignature Language="C#" Value="public string CityType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CityType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.CityType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CityType As String" />
+      <MemberSignature Language="F#" Value="member this.CityType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.CityType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Country">
+      <MemberSignature Language="C#" Value="public const string Country;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Country" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.Country" />
+      <MemberSignature Language="VB.NET" Value="Public Const Country As String " />
+      <MemberSignature Language="F#" Value="val mutable Country : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.Country" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountryType">
+      <MemberSignature Language="C#" Value="public string CountryType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CountryType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.CountryType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CountryType As String" />
+      <MemberSignature Language="F#" Value="member this.CountryType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.CountryType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointOfInterest">
+      <MemberSignature Language="C#" Value="public const string PointOfInterest;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PointOfInterest" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.PointOfInterest" />
+      <MemberSignature Language="VB.NET" Value="Public Const PointOfInterest As String " />
+      <MemberSignature Language="F#" Value="val mutable PointOfInterest : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.PointOfInterest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointOfInterestType">
+      <MemberSignature Language="C#" Value="public string PointOfInterestType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PointOfInterestType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.PointOfInterestType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointOfInterestType As String" />
+      <MemberSignature Language="F#" Value="member this.PointOfInterestType : string" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes.PointOfInterestType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

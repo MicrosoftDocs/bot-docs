@@ -1,0 +1,60 @@
+﻿<Type Name="BotSignInExtensions" FullName="Microsoft.Bot.Connector.BotSignInExtensions">
+  <TypeSignature Language="C#" Value="public static class BotSignInExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotSignInExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotSignInExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module BotSignInExtensions" />
+  <TypeSignature Language="F#" Value="type BotSignInExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for BotSignIn.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSignInUrlAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; GetSignInUrlAsync (this Microsoft.Bot.Connector.IBotSignIn operations, string state, string codeChallenge = null, string emulatorUrl = null, string finalRedirect = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; GetSignInUrlAsync(class Microsoft.Bot.Connector.IBotSignIn operations, string state, string codeChallenge, string emulatorUrl, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotSignInExtensions.GetSignInUrlAsync(Microsoft.Bot.Connector.IBotSignIn,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetSignInUrlAsync : Microsoft.Bot.Connector.IBotSignIn * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="Microsoft.Bot.Connector.BotSignInExtensions.GetSignInUrlAsync (operations, state, codeChallenge, emulatorUrl, finalRedirect, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IBotSignIn" RefType="this" />
+        <Parameter Name="state" Type="System.String" />
+        <Parameter Name="codeChallenge" Type="System.String" />
+        <Parameter Name="emulatorUrl" Type="System.String" />
+        <Parameter Name="finalRedirect" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="state"></param>
+        <param name="codeChallenge"></param>
+        <param name="emulatorUrl"></param>
+        <param name="finalRedirect"></param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

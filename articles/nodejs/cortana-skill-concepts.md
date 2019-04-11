@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 02/10/2019
 monikerRange: 'azure-bot-service-3.0'
 #ROBOTS: Index
 ---
@@ -37,57 +37,49 @@ The bot should "ground" the user's utterances by indicating that the user was he
 
 Users get confused if a system fails to ground their utterances. For example, the following conversation can be a bit confusing when the bot asks "What's next?":
 
-```
-Agent: Did you want to review some more of your profile?
-
-User: No.
-
-Agent: What's next?
-```
+> **Cortana**: Did you want to review some more of your profile?  
+> **User**: No.  
+> **Cortana**: What's next?
 
 If the bot adds an "Okay" as acknowledgment, it's friendlier for the user:
 
-```
-Agent: Did you want to review some more of your profile?
-
-User: No.
-
-Agent: **Okay**, what's next?
-```
-
+> **Cortana**: Did you want to review some more of your profile?  
+> **User**: No.  
+> **Cortana**: **Okay**, what's next?
 
 Degrees of grounding, from weakest to strongest:
+
 1. Continued attention
 2. Next relevant contribution
 3. Acknowledgment: Minimal response or continuer: "yeah", "uh-huh", "okay", "great"
 4. Demonstrate: Indicate understanding by reformulation, completion.
 5. Display: Repeat all or part.
 
-#### Acknowledgement and next relevant contribution
-User: ... I need to travel in May.
-Agent: **And**, what day in May did you want to travel?
-User: OK I need to be there from the 12th to the 15th?
-Agent: **And**, you're flying into what city?
+### Acknowledgement and next relevant contribution
 
-#### Grounding by demonstration
-User: ... I need to travel in May.
-Agent: And, **what day** in May did you want to travel?
-User: OK I need to be there from the 12th to the 15th?
-Agent: **And**, you're flying into what city?
+> **User**: I need to travel in May.  
+> **Cortana**: **Okay**. What day in May did you want to travel?  
+> **User**: Well, I need to be there from the 12th to the 15th?  
+> **Cortana**: **Okay**. What city are you flying into ?  
 
+### Grounding by demonstration
 
+> **User**: I need to travel in May.  
+> **Cortana**: And, **what day** in May did you want to travel?  
+> **User**: Okay, I need to be there from the 12th to the 15th?  
+> **Cortana**: **And** you're flying into what city?  
+    
 ### Closure
 
-The bot performing an action should present evidence of successful performance.
-It's also important to indicate failure or understanding. 
-* Non-speech closure: If you push an elevator button, its light turns on.
-Two step process:
-* Presentation 
-* Acceptance
+The bot performing an action should present evidence of successful performance. It's also important to indicate failure or understanding. 
 
+* Non-speech closure: If you push an elevator button, its light turns on.  
+This is awo step process:
+    * Presentation (when you press the button)
+    * Acceptance (when the button lights up)
 
-### Differences in content presentation
-When designing your speech-enabled bot, keep in mind that that the spoken dialog is often not the same as the textual messages your bot sends.
+## Differences in content presentation
+Keep in mind that Cortana is supported on a variety of devices, only some of which have screens. One of the things you need to consider when designing your speech-enabled bot is that the spoken dialogue often will not be the same as the text messages your bot displays.
 <!-- If there are differences in what the bot will say, in the text vs the speak fields of a prompt or in a waterfall, for example, discuss them here.
 
 ## Speech
@@ -116,7 +108,7 @@ The **inputHint** property can take the following values:
 * **acceptingInput**: Indicates that the bot is passively ready for input but is not waiting on a response. Cortana accepts input from the user if the user holds down the microphone button.
 * **ignoringInput**: Cortana is ignoring input. Your bot may send this hint if it is actively processing a request and will ignore input from users until the request is complete.
 
-Prompts can take a `speak:` or `retrySpeak` option.
+Prompts must use the `speak:` option.
 
 ```javascript
         builder.Prompts.choice(session, "Decision Options", choices, {
@@ -127,12 +119,9 @@ Prompts can take a `speak:` or `retrySpeak` option.
 
 Prompts.number has *ordinal support*, meaning that you can say "the last", "the first", "the next-to-last" to choose an item in a list.
 
-
-
-
 ## Using synonyms
 
-<!-- Axl Rose example -->     
+<!-- Axl Rose example -->
 ```javascript   
          var choices = [
             { 
@@ -162,13 +151,12 @@ Prompts.number has *ordinal support*, meaning that you can say "the last", "the 
         });
 ```
 
-
 ## Configuring your bot
 
 ## Prompts
 
-
 ## Additional resources
 
-[CortanaGetstarted]: /cortana/getstarted
-[SSMLRef]: https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx
+Cortana documentation: [Cortana Skills Documentation](/cortana/skills/)
+
+Cortana SSML reference: [Speech Synthesis Markup Language (SSML) reference](/cortana/skills/speech-synthesis-markup-language)

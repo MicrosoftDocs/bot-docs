@@ -1,0 +1,143 @@
+﻿<Type Name="RetryParams" FullName="Microsoft.Bot.Connector.Authentication.RetryParams">
+  <TypeSignature Language="C#" Value="public class RetryParams" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RetryParams extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.RetryParams" />
+  <TypeSignature Language="VB.NET" Value="Public Class RetryParams" />
+  <TypeSignature Language="F#" Value="type RetryParams = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RetryParams ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.RetryParams.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RetryParams (TimeSpan retryAfter, bool shouldRetry = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan retryAfter, bool shouldRetry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.RetryParams.#ctor(System.TimeSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (retryAfter As TimeSpan, Optional shouldRetry As Boolean = true)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.RetryParams : TimeSpan * bool -&gt; Microsoft.Bot.Connector.Authentication.RetryParams" Usage="new Microsoft.Bot.Connector.Authentication.RetryParams (retryAfter, shouldRetry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="retryAfter" Type="System.TimeSpan" />
+        <Parameter Name="shouldRetry" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="retryAfter">To be added.</param>
+        <param name="shouldRetry">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultBackOff">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Authentication.RetryParams DefaultBackOff (int retryCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.Authentication.RetryParams DefaultBackOff(int32 retryCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.RetryParams.DefaultBackOff(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultBackOff (retryCount As Integer) As RetryParams" />
+      <MemberSignature Language="F#" Value="static member DefaultBackOff : int -&gt; Microsoft.Bot.Connector.Authentication.RetryParams" Usage="Microsoft.Bot.Connector.Authentication.RetryParams.DefaultBackOff retryCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Authentication.RetryParams</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="retryCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="retryCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryAfter">
+      <MemberSignature Language="C#" Value="public TimeSpan RetryAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RetryAfter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.RetryParams.RetryAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetryAfter As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.RetryAfter : TimeSpan with get, set" Usage="Microsoft.Bot.Connector.Authentication.RetryParams.RetryAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldRetry">
+      <MemberSignature Language="C#" Value="public bool ShouldRetry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShouldRetry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.RetryParams.ShouldRetry" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShouldRetry As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldRetry : bool with get, set" Usage="Microsoft.Bot.Connector.Authentication.RetryParams.ShouldRetry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopRetrying">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.Authentication.RetryParams StopRetrying { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Connector.Authentication.RetryParams StopRetrying" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.RetryParams.StopRetrying" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StopRetrying As RetryParams" />
+      <MemberSignature Language="F#" Value="member this.StopRetrying : Microsoft.Bot.Connector.Authentication.RetryParams" Usage="Microsoft.Bot.Connector.Authentication.RetryParams.StopRetrying" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Authentication.RetryParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

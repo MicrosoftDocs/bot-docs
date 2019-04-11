@@ -91,14 +91,13 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-BotFramework",
       "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
-      "author": "RobStand",
-      "ms.prod": "bot-framework",
+      "author": "kaiqb",
       "brand": "azure",
       "searchScope": [
         "Azure",
         "BotService"
       ],
-      "ms.date": "12/13/2017",
+      "ms.date": "12/13/2018",
       "titleSuffix": "Bot Service",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/bot-docs"
@@ -110,11 +109,8 @@
       "manager": {
         "**/**.md": "kaiqb"
       },
-      "ms.technology": {
-        "**/**.md": "bf-bot-builder"
-      },
       "ms.date": {
-        "**/**.md": "12/13/2017"
+        "**/**.md": "12/13/2018"
       },
       "monikerRange": {
         "v4sdk/**.md": "azure-bot-service-4.0"

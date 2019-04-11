@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservices: sdk
-ms.date: 10/18/2018
+ms.date: 2/26/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -60,9 +60,10 @@ This detailed level of information allows you to follow the step-by-step interac
 Using transcript files together with the Bot Framework Emulator is just one of the many tools you can use to help you test and debug your bot's code and user interactions. To find more ways to test and debug your bot, see the additional resources listed below.
 
 ## Additional resources
+
 For additional testing and debugging information see:
+
 * [Bot testing and debugging guidelines](./bot-builder-testing-debugging.md)
 * [Debug with the bot framework emulator](../bot-service-debug-emulator.md)
+* [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
 * [Debugging in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/index)
-
-

@@ -1,0 +1,134 @@
+﻿<Type Name="BotSignIn" FullName="Microsoft.Bot.Connector.BotSignIn">
+  <TypeSignature Language="C#" Value="public class BotSignIn : Microsoft.Bot.Connector.IBotSignIn, Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.OAuthClient&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotSignIn extends System.Object implements class Microsoft.Bot.Connector.IBotSignIn, class Microsoft.Rest.IServiceOperations`1&lt;class Microsoft.Bot.Connector.OAuthClient&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotSignIn" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotSignIn&#xA;Implements IBotSignIn, IServiceOperations(Of OAuthClient)" />
+  <TypeSignature Language="F#" Value="type BotSignIn = class&#xA;    interface IServiceOperations&lt;OAuthClient&gt;&#xA;    interface IBotSignIn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IBotSignIn</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.OAuthClient&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            BotSignIn operations.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotSignIn (Microsoft.Bot.Connector.OAuthClient client);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.OAuthClient client) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotSignIn.#ctor(Microsoft.Bot.Connector.OAuthClient)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (client As OAuthClient)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotSignIn : Microsoft.Bot.Connector.OAuthClient -&gt; Microsoft.Bot.Connector.BotSignIn" Usage="new Microsoft.Bot.Connector.BotSignIn client" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="client" Type="Microsoft.Bot.Connector.OAuthClient" />
+      </Parameters>
+      <Docs>
+        <param name="client">
+            Reference to the service client.
+            </param>
+        <summary>
+            Initializes a new instance of the BotSignIn class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Client">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.OAuthClient Client { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.OAuthClient Client" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotSignIn.Client" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Client As OAuthClient" />
+      <MemberSignature Language="F#" Value="member this.Client : Microsoft.Bot.Connector.OAuthClient" Usage="Microsoft.Bot.Connector.BotSignIn.Client" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.OAuthClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a reference to the OAuthClient
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSignInUrlWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;string&gt;&gt; GetSignInUrlWithHttpMessagesAsync (string state, string codeChallenge = null, string emulatorUrl = null, string finalRedirect = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;string&gt;&gt; GetSignInUrlWithHttpMessagesAsync(string state, string codeChallenge, string emulatorUrl, string finalRedirect, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotSignIn.GetSignInUrlWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetSignInUrlWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;string&gt;&gt;&#xA;override this.GetSignInUrlWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;string&gt;&gt;" Usage="botSignIn.GetSignInUrlWithHttpMessagesAsync (state, codeChallenge, emulatorUrl, finalRedirect, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IBotSignIn.GetSignInUrlWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.String" />
+        <Parameter Name="codeChallenge" Type="System.String" />
+        <Parameter Name="emulatorUrl" Type="System.String" />
+        <Parameter Name="finalRedirect" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="state"></param>
+        <param name="codeChallenge"></param>
+        <param name="emulatorUrl"></param>
+        <param name="finalRedirect"></param>
+        <param name="customHeaders">
+            Headers that will be added to request.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+        <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        <return>
+            A response object containing the response body and response headers.
+            </return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

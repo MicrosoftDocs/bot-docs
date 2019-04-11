@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 01/17/2019
+ms.date: 02/07/2019
 monikerRange: 'azure-bot-service-4.0'
 templateName: "Echo Bot"
 ---
@@ -31,4 +31,5 @@ See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How bots work](../v4sdk/bot-builder-basics.md) 
+> [Deploy your bot to Azure](../bot-builder-deploy-az-cli.md)
+

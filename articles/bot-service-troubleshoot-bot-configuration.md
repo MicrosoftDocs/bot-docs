@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/20/2018
+ms.date: 2/26/2019
 ---
 
 # Troubleshoot bot configuration issues
@@ -82,3 +82,7 @@ Below are some additional links that can help with individual channels:
 Occasionally, some channels might have an interruption of service. Usually, such outages don't last long. However, if you suspect an outage, consult a channel web site or social media.
 
 Another way to determine if a channel has an outage is to create a test bot (such as a simple Echo Bot) and add a channel. If the test bot works with some channels but not others, that would indicate that the problem is not in your production bot.
+
+## Additional resources
+
+See how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.

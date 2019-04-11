@@ -1,4 +1,8 @@
 ---
+redirect_url: /bot-framework/bot-builder-tutorial-authentication
+---
+<!--
+---
 title: Authenticating activities using .NET Core | Microsoft Docs
 description: Learn how to authenticate bots activities using .NET Core.
 author: v-ducvo
@@ -241,3 +245,4 @@ public async Task<OkResult> Post([FromBody] Activity activity)
     return Ok();
 }
 ```
+-->

@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 03/01/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 # Intercept messages
@@ -57,9 +57,9 @@ Although this example simply prints some information about each message, you can
 
 ## Sample code 
 
-For a complete sample that shows how to intercept and log messages using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample</a> in GitHub. 
+For a complete sample that shows how to intercept and log messages using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-Middleware" target="_blank">Middleware sample</a> in GitHub. 
 
 ## Additional resources
 
 - <a href="/dotnet/api/?view=botbuilder-3.11.0" target="_blank">Bot Framework SDK for .NET Reference</a>
-- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware" target="_blank">Middleware sample (GitHub)</a>
+- <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-Middleware" target="_blank">Middleware sample (GitHub)</a>

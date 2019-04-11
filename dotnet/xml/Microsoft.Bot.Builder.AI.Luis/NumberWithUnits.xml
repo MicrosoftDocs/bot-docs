@@ -8,14 +8,19 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Strongly typed class for LUIS number and units entity recognition.
+            </summary>
+    <remarks>
+            Specific subtypes of this class are generated to match the builtin age, currency, dimension and temperature entities.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,15 +34,18 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="number" Type="System.Nullable&lt;System.Double&gt;" />
         <Parameter Name="units" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <param name="units">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="number">Number.</param>
+        <param name="units">Units for number.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,6 +60,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -62,8 +71,12 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets recognized number, or null if unit only.
+            </summary>
+        <value>
+            Recognized number, or null if unit only.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,6 +91,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -88,8 +102,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets normalized recognized unit.
+            </summary>
+        <value>
+            Normalized recognized unit.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

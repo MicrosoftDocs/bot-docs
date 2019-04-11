@@ -1,0 +1,168 @@
+﻿<Type Name="AppInsightsService" FullName="Microsoft.Bot.Configuration.AppInsightsService">
+  <TypeSignature Language="C#" Value="public class AppInsightsService : Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppInsightsService extends Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.AppInsightsService" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppInsightsService&#xA;Inherits AzureService" />
+  <TypeSignature Language="F#" Value="type AppInsightsService = class&#xA;    inherit AzureService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Configuration.AzureService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppInsightsService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.AppInsightsService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Configuration.AppInsightsService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApiKeys">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; ApiKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; ApiKeys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.AppInsightsService.ApiKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApiKeys As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.ApiKeys : System.Collections.Generic.Dictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Bot.Configuration.AppInsightsService.ApiKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("apiKeys")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets apiKeys.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationId">
+      <MemberSignature Language="C#" Value="public string ApplicationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.AppInsightsService.ApplicationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationId As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationId : string with get, set" Usage="Microsoft.Bot.Configuration.AppInsightsService.ApplicationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("applicationId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets applicationId for programatic access to appInsights.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override void Decrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Decrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.AppInsightsService.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Decrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : string -&gt; unit" Usage="appInsightsService.Decrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override void Encrypt (string secret);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Encrypt(string secret) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.AppInsightsService.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Encrypt (secret As String)" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : string -&gt; unit" Usage="appInsightsService.Encrypt secret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secret" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="secret">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="InstrumentationKey">
+      <MemberSignature Language="C#" Value="public string InstrumentationKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstrumentationKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.AppInsightsService.InstrumentationKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstrumentationKey As String" />
+      <MemberSignature Language="F#" Value="member this.InstrumentationKey : string with get, set" Usage="Microsoft.Bot.Configuration.AppInsightsService.InstrumentationKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("instrumentationKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets instrumentation Key.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

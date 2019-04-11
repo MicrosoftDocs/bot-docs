@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 01/17/2019
+ms.date: 02/07/2019
 ---
 
 # Create a bot with Azure Bot Service
@@ -128,16 +128,9 @@ You can download the code to work on it locally.
 1. In the **Bot Management** section, click **Build**. 
 1. Click on **Download Bot source code** link in the right-pane. 
 1. Follow the prompts to download the code, and then unzip the folder.
-
-The code you downloaded uses an encrypted [.bot file](./v4sdk/bot-file-basics.md). You'll need to update `botFilePath` and `botFileSecret` entires in the appsettings.json or .env file. 
-To do that, go to the Azure portal. Select your bot in the portal, then under **App Service Settings** section, click **Application Settings**. In the **Application Settings** pane, you'll 
-see `botFilePath` and `botFileSecret` values. Copy these values and update the .env or appsettings.json file. 
+    1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 
 ## Next steps
-
-In this topic, you learned how to create a **Echo** Web App Bot by using Azure Bot Service and verified the bot's functionality by using the built-in Web Chat control. Now, learn how to manage your bot and start working with its source code.
-
-> [!div class="nextstepaction"]
-> [How bots work](~/v4sdk/bot-builder-basics.md)
+After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [Setting up a repo](./bot-builder-deploy-az-cli.md#setup-a-repository) section of the deployment topic.
 
 ::: moniker-end

@@ -7,13 +7,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 6/22/2017
+ms.date: 3/22/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Migrate your bot to Azure
-
-
 
 All **Azure Bot Service (Preview)** bots created in the [Bot Framework Portal](http://dev.botframework.com) must migrate to the new Bot Service in Azure. The service was made generally available (GA) in December 2017. 
 
@@ -50,7 +48,7 @@ to `module.exports = connector.listen();`
 6.	Test your bot locally by running the Functions bot using the Bot Framework Emulator. More info on how to run the *funcpack* bot [here](https://github.com/Azure/azure-functions-pack#how-to-run). 
 7.	Upload your code back to Azure. Make sure the `.funcpack` directory is uploaded. You do not need to upload the **node_modules** directory.
 8. Test your remote bot to make sure it responds as expected.
-9. [Migrate your bot](#migrate-your-bot-to-azure) using the steps above.
+9. Migrate your bot using the steps above.
 
 ## Migration under the hood
 

@@ -16,7 +16,7 @@ Using the Direct Line 3.0 protocol, clients can receive activities via `WebSocke
 
 ## WebSocket vs HTTP GET
 
-A streaming WebSocket efficiently pushes messages to clients, whereas the GET interface enables clients to explicitly request messages. Although the WebSocket mechanism is often preferred due to its efficiency, the GET mechanism can be useful for clients that are unable to use WebSockets or for clients that want to retrieve conversation history. 
+A streaming WebSocket efficiently pushes messages to clients, whereas the GET interface enables clients to explicitly request messages. Although the WebSocket mechanism is often preferred due to its efficiency, the GET mechanism can be useful for clients that are unable to use WebSockets. 
 
 Not all [activity types](bot-framework-rest-connector-activities.md) are available both via WebSocket and via HTTP GET. The following table describes the availability of the various activity types for clients that use the Direct Line protocol.
 
@@ -94,7 +94,7 @@ The WebSocket stream contains live updates and very recent messages (since the c
 
 ## <a id="http-get"></a> Retrieve activities with HTTP GET
 
-Clients that are unable to use WebSockets or clients that want to get conversation history can retrieve activities by using `HTTP GET`.
+Clients that are unable to use WebSockets can retrieve activities by using `HTTP GET`.
 
 To retrieve messages for a specific conversation, issue a `GET` request to the `/v3/directline/conversations/{conversationId}/activities` endpoint, optionally specifying the `watermark` parameter to indicate the most recent message seen by the client. 
 
@@ -160,7 +160,7 @@ Clients that poll using `HTTP GET` should choose a polling interval that matches
 
 - Service-to-service applications often use a polling interval of 5s or 10s.
 
-- Client-facing applications often use a polling interval of 1s, and issue an additional request ~300ms after every message that the client sends (to rapidly retrieve a bot's response). This 300ms delay should be adjusted based on the bot's speed and transit time.
+- Client-facing applications often use a polling interval of 1s, and issue a single additional request shortly after every message that the client sends (to rapidly retrieve a bot's response). This delay can be as short at 300ms but should be tuned based on the bot's speed and transit time. Polling should not be more frequent than once per second for any extended period of time.
 
 ## Additional resources
 

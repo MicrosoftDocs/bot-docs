@@ -1,0 +1,90 @@
+﻿<Type Name="ValidDtmfs" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs">
+  <TypeSignature Language="C#" Value="public static class ValidDtmfs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValidDtmfs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidDtmfs" />
+  <TypeSignature Language="F#" Value="type ValidDtmfs = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This is a helper class for validating dtmfs specified in strings
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (char digit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(char digit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.Validate(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (digit As Char)" />
+      <MemberSignature Language="F#" Value="static member Validate : char -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.Validate digit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="digit" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="digit">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static void Validate (System.Collections.Generic.IEnumerable&lt;char&gt; variations);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Collections.Generic.IEnumerable`1&lt;char&gt; variations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.Validate(System.Collections.Generic.IEnumerable{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Validate (variations As IEnumerable(Of Char))" />
+      <MemberSignature Language="F#" Value="static member Validate : seq&lt;char&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.Validate variations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variations" Type="System.Collections.Generic.IEnumerable&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variations">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidDtmfSet">
+      <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.Dictionary&lt;char,int&gt; ValidDtmfSet;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.Dictionary`2&lt;char, int32&gt; ValidDtmfSet" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.ValidDtmfSet" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValidDtmfSet As Dictionary(Of Char, Integer) " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValidDtmfSet : System.Collections.Generic.Dictionary&lt;char, int&gt;" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidDtmfs.ValidDtmfSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.Char,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            list of valid dtmfs
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

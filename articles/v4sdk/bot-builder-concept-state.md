@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/15/2018
+ms.date: 02/25/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -42,7 +42,7 @@ For instructions on how to connect to other storage options, see [write directly
 
 ## State management
 
-*State management* automates the reading and writing of your bot's state to the underlying storage layer. State is stored as *state properties*, which are effectively key-value pairs that your bot can read and write through the state management object without worrying about the specific underlying implementation. Those state properties define how that information is stored. For example, when your retrieve a property that you defined as a specific class or object, you know how that data will be structured.
+*State management* automates the reading and writing of your bot's state to the underlying storage layer. State is stored as *state properties*, which are effectively key-value pairs that your bot can read and write through the state management object without worrying about the specific underlying implementation. Those state properties define how that information is stored. For example, when you retrieve a property that you defined as a specific class or object, you know how that data will be structured.
 
 These state properties are lumped into scoped "buckets", which are just collections to help organize those properties. The SDK includes three of these "buckets":
 
@@ -52,7 +52,7 @@ These state properties are lumped into scoped "buckets", which are just collecti
 
 All of these buckets are subclasses of the *bot state* class, which can be derived to define other types of buckets with different scopes.
 
-These predifined buckets are scoped to a certain visibility, depending on the bucket:
+These predefined buckets are scoped to a certain visibility, depending on the bucket:
 
 - User state is available in any turn that the bot is conversing with that user on that channel, regardless of the conversation
 - Conversation state is available in any turn in a specific conversation, regardless of user (i.e. group conversations)
@@ -114,7 +114,7 @@ The accessor methods are the primary way for your bot to interact with state. Ho
   - Accessor requests property from the state cache.
   - If the property is in the cache, return it. Otherwise, get it from the state management object.
     (If it is not yet in state, use the factory method provided in the accessors *get* call.)
--The accessor's *set* method:
+- The accessor's *set* method:
   - Update the state cache with the new property value.
 - The state management object's *save changes* method:
   - Check the changes to the property in the state cache.

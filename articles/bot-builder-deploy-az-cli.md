@@ -1,103 +1,119 @@
 ---
-title: Deploy your bot using Azure CLI | Microsoft Docs
+title: Deploy your bot | Microsoft Docs
 description: Deploy your bot to the Azure cloud.
-keywords: deploy bot, azure deploy, publish bot, az deploy bot, visual studio deploy bot, msbot publish, msbot clone
+keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 01/07/2019
+ms.date: 04/12/2019
 ---
 
-# Deploy your bot using Azure CLI
+# Deploy your bot
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
 After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
-In this article, we'll show you how to deploy C# and JavaScript bots to Azure using `az` and `msbot` cli. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+In this article, we'll show you how to deploy C# and JavaScript bots to Azure. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 ## Prerequisites
+- If you don't have an [Azure subscription](http://portal.azure.com), create a free account before you begin.
+- A [**CSharp**](./dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](./javascript/bot-builder-javascript-quickstart.md) bot that you have developed on your local machine.
 
-[!INCLUDE [prerequisite snippet](~/includes/deploy/snippet-prerequisite.md)]
+## 1. Prepare for deployment
+The deployment process requires a target Web App Bot in Azure so that your local bot can be deployed into it. The target Web App Bot and the resources that are provisioned with it in Azure are used by your local bot for deployment. This is necessary because your local bot does not have all the required Azure resources provisioned. When you create a target Web App bot, the following resources are provisioned for you:
+-	Web App Bot – you will use this bot to deploy your local bot into.
+-	App Service Plan - provides the resources that an App Service app needs to run.
+-	App Service - service for hosting web applications
+-	Storage account - contains all your Azure Storage data objects: blobs, files, queues, tables, and disks.
 
+During the creation of the target Web App Bot, an app ID and password are also generated for your bot. In Azure, the app ID and password support [service authentication and authorization](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization). You will retrieve some of this information for use in your local bot code. 
 
-## Deploy JavaScript and C# bots using az cli
+> [!IMPORTANT]
+> The programming language for the bot template used in the Azure portal must match the programming language your bot is written in.
 
-You've already created and tested a bot locally, and now you want to deploy it to Azure. These steps assume that you have created the required Azure resources.
+Creating a new Web App Bot is optional if you have already created a bot in Azure that you'd like to use.
 
-[!INCLUDE [az login snippet](~/includes/deploy/snippet-az-login.md)]
+1. Log in to the [Azure portal](https://portal.azure.com).
+1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**.
+1. A new blade will open with information about the Web App Bot. 
+1. In the **Bot Service** blade, provide the requested information about your bot.
+1. Click **Create** to create the service and deploy the bot to the cloud. This process may take several minutes.
 
-### Create a Web App Bot
+### Download the source code
+After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references (e.g. MicrosoftAppID, MicrosoftAppPassword, LUIS, or QnA) that are in the appsettings.json or .env file. 
 
-If you don't already have a resource group to which to publish your bot, create one:
+1. In the **Bot Management** section, click **Build**.
+1. Click on **Download Bot source code** link in the right-pane.
+1. Follow the prompts to download the code, and then unzip the folder.
+	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
 
-[!INCLUDE [az create group snippet](~/includes/deploy/snippet-az-create-group.md)]
+### Update your local appsettings.json or .env file
 
-[!INCLUDE [az create web app snippet](~/includes/deploy/snippet-create-web-app.md)]
+Open the appsettings.json or .env file you downloaded. Copy **all** entries listed in it and add them to your _local_ appsettings.json or .env file. Resolve any duplicate service entries or duplicate service IDs. Keep any additional service references your bot depends on.
 
-Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
+Save the file.
 
-#### MSA email account
+### Update local bot code
+Update the local Startup.cs or index.js file to use appsettings.json or .env file instead using the .bot file. The .bot file has been deprecated and we are working on updating VSIX templates, Yeoman generators, samples, and remaining docs to all use appsettings.json or .env file instead of the .bot file. In the meantime, you'll need to make changes to the bot code. 
 
-If you are using an [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the app ID and app password on the Application Registration Portal to use with `az bot create` command.
+Update the code to read settings from appsettings.json or .env file. 
 
-[!INCLUDE [create bot msa snippet](~/includes/deploy/snippet-create-bot-msa.md)]
+# [C#](#tab/csharp)
+In the `ConfigureServices` method, use the configuration object that ASP.NET Core provides, for example: 
 
-#### Business or school account
+**Startup.cs**
+```csharp
+var appId = Configuration.GetSection("MicrosoftAppId").Value;
+var appPassword = Configuration.GetSection("MicrosoftAppPassword").Value;
+options.CredentialProvider = new SimpleCredentialProvider(appId, appPassword);
+```
 
-[!INCLUDE [create bot snippet](~/includes/deploy/snippet-create-bot.md)]
+# [JS](#tab/js)
 
-### Download the bot from Azure
+In JavaScript, reference .env variables off of the `process.env` object, for example:
+   
+**index.js**
 
-Next, download the bot you just created. 
-[!INCLUDE [download bot snippet](~/includes/deploy/snippet-download-bot.md)]
+```js
+const adapter = new BotFrameworkAdapter({
+    appId: process.env.MicrosoftAppId,
+    appPassword: process.env.MicrosoftAppPassword
+});
+```
+---
 
-### Decrypt the downloaded .bot file and use in your project
+- Save the file and test your bot.
 
-The sensitive information in the .bot file is encrypted.
+### Setup a repository
 
-[!INCLUDE [decrypt bot snippet](~/includes/deploy/snippet-decrypt-bot.md)]
+To support continuous deployment, create a git repository using your favorite git source control provider. Commit your code into the repository.
 
-### Update the .bot file
+Make sure that your repository root has the correct files, as described under [prepare your repository](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment#prepare-your-repository).
 
-If your bot uses LUIS, QnA Maker, or Dispatch services, you will need to add references to them to your .bot file. Otherwise, you can skip this step.
+### Update App Settings in Azure
+The local bot does not use an encrypted .bot file, but _if_ the Azure portal is configured to use an encrypted .bot file. You can resolve this by removing the **botFileSecret** stored in the Azure bot settings.
+1. In the Azure portal, open the **Web App Bot** resource for your bot.
+1. Open the bot's **Application Settings**.
+1. In the **Application Settings** window, scroll down to **Application settings**.
+1. Check to see if your bot has **botFileSecret** and **botFilePath** entries. If you do, delete it.
+1. Save the changes.
 
-1. Open your bot in the BotFramework Emulator, using the new .bot file. The bot does not need to be running locally.
-1. In the **BOT EXPLORER** panel, expand the **SERVICES** section.
-1. To add references to LUIS apps, click the plus-sign (+) to the right of **SERVICES**.
-   1. Select **Add Language Understanding (LUIS)**.
-   1. If it prompts you to log into your Azure account, do so.
-   1. It presents a list of LUIS applications you have access to. Select the ones for your bot.
-1. To add references to a QnA Maker knowledge base, click the plus-sign (+) to the right of **SERVICES**.
-   1. Select **Add QnA Maker**.
-   1. If it prompts you to log into your Azure account, do so.
-   1. It presents a list of knowledge bases you have access to. Select the ones for your bot.
-1. To add references to Dispatch models, click the plus-sign (+) to the right of **SERVICES**.
-   1. Select **Add Dispatch**.
-   1. If it prompts you to log into your Azure account, do so.
-   1. It presents a list of Dispatch models you have access to. Select the ones for your bot.
+## 2. Deploy using Azure Deployment Center
 
-### Test your bot locally
+Now, you need to upload your bot code to Azure. Follow instructions in the [Continuous deployment to Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment) topic.
 
-At this point, your bot should work the same way it did with the old .bot file. Make sure that it works as expected with the new .bot file.
+Note that it is recommended to build using `App Service Kudu build server`.
 
-### Publish your bot to Azure
+Once you've configured continuous deployment, changes you commit to your repo are published. However, if you add services to your bot, you will need to add entries for these to your .bot file.
 
-<!-- TODO: re-encrypt your .bot file? -->
+## 3. Test your deployment
 
-[!INCLUDE [publish snippet](~/includes/deploy/snippet-publish.md)]
-
-<!-- TODO: If we tell them to re-encrypt, this step is not necessary. -->
-
-[!INCLUDE [clear encryption snippet](~/includes/deploy/snippet-clear-encryption.md)]
+Wait for a few seconds after a successful deployment and optionally restart your Web App to clear any cache. Go back to your Web App Bot blade and test using the Web Chat provided in the Azure portal.
 
 ## Additional resources
+- [How to investigate common issues with continuous deployment](https://github.com/projectkudu/kudu/wiki/Investigating-continuous-deployment)
 
-[!INCLUDE [additional resources snippet](~/includes/deploy/snippet-additional-resources.md)]
-
-## Next steps
-> [!div class="nextstepaction"]
-> [Set up continous deployment](bot-service-build-continuous-deployment.md)

@@ -1,0 +1,82 @@
+﻿<Type Name="IncomingCallEvent" FullName="Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent">
+  <TypeSignature Language="C#" Value="public class IncomingCallEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncomingCallEvent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class IncomingCallEvent" />
+  <TypeSignature Language="F#" Value="type IncomingCallEvent = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+    <AssemblyVersion>3.20.1.42</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IncomingCallEvent (Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation conversation, Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation conversation, class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation * Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow -&gt; Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" Usage="new Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent (conversation, resultingWorkflow)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conversation" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation" />
+        <Parameter Name="resultingWorkflow" Type="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow" />
+      </Parameters>
+      <Docs>
+        <param name="conversation">To be added.</param>
+        <param name="resultingWorkflow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncomingCall">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation IncomingCall { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation IncomingCall" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.IncomingCall" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncomingCall As Conversation" />
+      <MemberSignature Language="F#" Value="member this.IncomingCall : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation with get, set" Usage="Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.IncomingCall" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultingWorkflow">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow ResultingWorkflow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow ResultingWorkflow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.ResultingWorkflow" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResultingWorkflow As Workflow" />
+      <MemberSignature Language="F#" Value="member this.ResultingWorkflow : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow with get, set" Usage="Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.ResultingWorkflow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Calling</AssemblyName>
+        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

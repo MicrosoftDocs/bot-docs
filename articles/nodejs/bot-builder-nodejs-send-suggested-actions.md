@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date:  06/06/2017
+ms.date:  02/19/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 
@@ -21,9 +21,6 @@ monikerRange: 'azure-bot-service-3.0'
 > - [REST](../rest-api/bot-framework-rest-connector-add-suggested-actions.md)
 
 [!INCLUDE [Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)]
-
-> [!TIP]
-> Use the [Channel Inspector][channelInspector] to see how suggested actions look and work on various channels.
 
 ## Suggested actions example
 
@@ -39,10 +36,10 @@ Be aware that the `imBack` method will post the `value` to the chat window of th
 
 ## Additional resources
 
-* [Preview features with the Channel Inspector][inspector]
-* [IMessage][IMessage]
-* [ICardAction][ICardAction]
-* [session.send][SessionSend]
+- [Samples][samples]
+- [IMessage][IMessage]
+- [ICardAction][ICardAction]
+- [session.send][SessionSend]
 
 [IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 
@@ -50,6 +47,5 @@ Be aware that the `imBack` method will post the `value` to the chat window of th
 
 [ICardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.icardaction.html
 
-[inspector]: ../bot-service-channel-inspector.md
-
-[channelInspector]: ../bot-service-channel-inspector.md
+<!-- The inspector is no longer supported: we're redirecting to the samples for now. -->
+[samples]: https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples

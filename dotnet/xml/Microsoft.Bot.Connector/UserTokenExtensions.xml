@@ -1,0 +1,167 @@
+﻿<Type Name="UserTokenExtensions" FullName="Microsoft.Bot.Connector.UserTokenExtensions">
+  <TypeSignature Language="C#" Value="public static class UserTokenExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UserTokenExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.UserTokenExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module UserTokenExtensions" />
+  <TypeSignature Language="F#" Value="type UserTokenExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for UserToken.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAadTokensAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, Microsoft.Bot.Schema.AadResourceUrls aadResourceUrls, string channelId = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, class Microsoft.Bot.Schema.AadResourceUrls aadResourceUrls, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.GetAadTokensAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,Microsoft.Bot.Schema.AadResourceUrls,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetAadTokensAsync : Microsoft.Bot.Connector.IUserToken * string * string * Microsoft.Bot.Schema.AadResourceUrls * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.GetAadTokensAsync (operations, userId, connectionName, aadResourceUrls, channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="aadResourceUrls" Type="Microsoft.Bot.Schema.AadResourceUrls" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="userId"></param>
+        <param name="connectionName"></param>
+        <param name="aadResourceUrls"></param>
+        <param name="channelId"></param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; GetTokenAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, string channelId = null, string code = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; GetTokenAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, string channelId, string code, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetTokenAsync : Microsoft.Bot.Connector.IUserToken * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.GetTokenAsync (operations, userId, connectionName, channelId, code, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="userId"></param>
+        <param name="connectionName"></param>
+        <param name="channelId"></param>
+        <param name="code"></param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenStatusAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt; GetTokenStatusAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string channelId = null, string include = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TokenStatus&gt;&gt; GetTokenStatusAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string channelId, string include, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenStatusAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetTokenStatusAsync : Microsoft.Bot.Connector.IUserToken * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.GetTokenStatusAsync (operations, userId, channelId, include, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="include" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="userId"></param>
+        <param name="channelId"></param>
+        <param name="include"></param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;object&gt; SignOutAsync (this Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName = null, string channelId = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;object&gt; SignOutAsync(class Microsoft.Bot.Connector.IUserToken operations, string userId, string connectionName, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserTokenExtensions.SignOutAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member SignOutAsync : Microsoft.Bot.Connector.IUserToken * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="Microsoft.Bot.Connector.UserTokenExtensions.SignOutAsync (operations, userId, connectionName, channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IUserToken" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="userId"></param>
+        <param name="connectionName"></param>
+        <param name="channelId"></param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

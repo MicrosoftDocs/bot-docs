@@ -1,0 +1,191 @@
+<Type Name="TableBotDataStore2" FullName="Microsoft.Bot.Builder.Azure.TableBotDataStore2">
+  <TypeSignature Language="C#" Value="public class TableBotDataStore2 : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableBotDataStore2 extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.TableBotDataStore2" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableBotDataStore2&#xA;Implements IBotDataStore(Of BotData)" />
+  <TypeSignature Language="F#" Value="type TableBotDataStore2 = class&#xA;    interface IBotDataStore&lt;BotData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+      <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1" /> Implementation using Azure Storage Table,
+            </summary>
+    <remarks>To be added.</remarks>
+    <notes>
+            The original TableBotDataStore put all conversation data in 1 partition in 1 table which severely limited the scalability of it. 
+            The TableBotDataStore2 implementaion uses multiple tables, and the UserId or ConversationId as the PartitionKey within those tables to 
+            achieve much higher scalability charateristics.
+            
+            tableName="{BotId}{ChannelId}"
+            BotStoreType             | PartitionKey      | RowKey         |
+            ---------------------------------------------------------------
+            UserData                 | {UserId}          | "user"         |
+            ConverationData          | {ConversationId}  | "conversation" |
+            PrivateConverationData   | {ConversationId}  | {UserId}       |
+            ---------------------------------------------------------------
+            </notes>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableBotDataStore2 (Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storageAccount As CloudStorageAccount)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.TableBotDataStore2 : Microsoft.WindowsAzure.Storage.CloudStorageAccount -&gt; Microsoft.Bot.Builder.Azure.TableBotDataStore2" Usage="new Microsoft.Bot.Builder.Azure.TableBotDataStore2 storageAccount" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
+      </Parameters>
+      <Docs>
+        <param name="storageAccount">The storage account.</param>
+        <summary>
+            Creates an instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1" /> that uses the azure table storage.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableBotDataStore2 (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.TableBotDataStore2 : string -&gt; Microsoft.Bot.Builder.Azure.TableBotDataStore2" Usage="new Microsoft.Bot.Builder.Azure.TableBotDataStore2 connectionString" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The storage connection string.</param>
+        <summary>
+            Creates an instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1" /> that uses the azure table storage.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.FlushAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;bool&gt; IBotDataStore&lt;BotData&gt;.FlushAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.FlushAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.LoadAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; IBotDataStore&lt;BotData&gt;.LoadAsync (Microsoft.Bot.Builder.Dialogs.IAddress address, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.LoadAsync(class Microsoft.Bot.Builder.Dialogs.IAddress address, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="botStoreType" Type="Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="botStoreType">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.SaveAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotDataStore&lt;BotData&gt;.SaveAsync (Microsoft.Bot.Builder.Dialogs.IAddress address, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;.SaveAsync(class Microsoft.Bot.Builder.Dialogs.IAddress address, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Microsoft#Bot#Builder#Dialogs#Internals#IBotDataStore&lt;Microsoft#Bot#Connector#BotData&gt;#SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="Microsoft.Bot.Builder.Dialogs.IAddress" />
+        <Parameter Name="botStoreType" Type="Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType" />
+        <Parameter Name="botData" Type="Microsoft.Bot.Connector.BotData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="botStoreType">To be added.</param>
+        <param name="botData">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.WindowsAzure.Storage.Table.CloudTable&gt; Tables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.WindowsAzure.Storage.Table.CloudTable&gt; Tables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.TableBotDataStore2.Tables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tables As IEnumerable(Of CloudTable)" />
+      <MemberSignature Language="F#" Value="member this.Tables : seq&lt;Microsoft.WindowsAzure.Storage.Table.CloudTable&gt;" Usage="Microsoft.Bot.Builder.Azure.TableBotDataStore2.Tables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>3.16.3.40383</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.WindowsAzure.Storage.Table.CloudTable&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

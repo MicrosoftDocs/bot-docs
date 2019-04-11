@@ -1,0 +1,66 @@
+﻿<Type Name="BotService" FullName="Microsoft.Bot.Configuration.BotService">
+  <TypeSignature Language="C#" Value="public class BotService : Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotService extends Microsoft.Bot.Configuration.AzureService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Configuration.BotService" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotService&#xA;Inherits AzureService" />
+  <TypeSignature Language="F#" Value="type BotService = class&#xA;    inherit AzureService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Configuration.AzureService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Configuration.BotService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppId">
+      <MemberSignature Language="C#" Value="public string AppId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Configuration.BotService.AppId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppId As String" />
+      <MemberSignature Language="F#" Value="member this.AppId : string with get, set" Usage="Microsoft.Bot.Configuration.BotService.AppId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty("appId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets appId for the bot.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

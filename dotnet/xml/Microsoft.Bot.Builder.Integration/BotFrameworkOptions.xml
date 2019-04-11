@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,8 +16,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            Contains settings that your ASP.NET application uses to initialize the <see cref="T:Microsoft.Bot.Builder.BotAdapter" />
-            that it adds to the HTTP request pipeline.
+            Contains settings used by the .NET integration APIs to initialize the <see cref="T:Microsoft.Bot.Builder.BotFrameworkAdapter" />
+            that processes the HTTP requests coming from the Bot Framework Service.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,6 +53,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.IChannelProvider</ReturnType>
@@ -75,6 +78,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.TransientFaultHandling.RetryPolicy</ReturnType>
@@ -98,6 +102,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.ICredentialProvider</ReturnType>
@@ -122,6 +127,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
@@ -145,6 +151,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.IMiddleware&gt;</ReturnType>
@@ -169,6 +176,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;Microsoft.Bot.Builder.ITurnContext,System.Exception,System.Threading.Tasks.Task&gt;</ReturnType>
@@ -192,6 +200,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.BotFrameworkPaths</ReturnType>
@@ -216,21 +225,30 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>System.Obsolete("This property is no longer used by the framework. Please see documentation for more details.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.BotState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets a list of the <see cref="T:Microsoft.Bot.Builder.BotState" /> providers to use on each incoming activity.
-            Objects in the State list enable other components to get access to the state providers
-            during the start up process.  For example, creating state property accessors within a ASP.net Core Singleton
-            that could be passed to your IBot-derived class.
-            The providers in this list are not associated with the BotStateSet Middleware component. To clarify, state providers
-            in this list are not automatically loaded or saved during the turn process.
+            OBSOLETE: This property is no longer used by the framework.
             </summary>
         <value>The list of property state providers.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This property was used in a pattern to propagate <see cref="T:Microsoft.Bot.Builder.BotState" /> instances
+            throughout the service configuration phase, but it was never used at runtime and is
+            being retired to reduce the surface area of state APIs. As an alternative, consider
+            simply using an appropriately scoped <see cref="T:Microsoft.Bot.Builder.BotState" /> variable along with closures.
+            </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,110 @@
+<Type Name="LuisActionBindingParamAttribute" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute">
+  <TypeSignature Language="C#" Value="public class LuisActionBindingParamAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisActionBindingParamAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisActionBindingParamAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type LuisActionBindingParamAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Attribute for mapping Action Parameters to extracted LUIS entities.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisActionBindingParamAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltinType">
+      <MemberSignature Language="C#" Value="public string BuiltinType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuiltinType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.BuiltinType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuiltinType As String" />
+      <MemberSignature Language="F#" Value="member this.BuiltinType : string with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.BuiltinType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The LUIS Prebuilt entity type name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomType">
+      <MemberSignature Language="C#" Value="public string CustomType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CustomType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.CustomType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomType As String" />
+      <MemberSignature Language="F#" Value="member this.CustomType : string with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.CustomType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The LUIS Custom entity type name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.LuisActionBindingParamAttribute.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specificy order when asking user to fill-in parameter values.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

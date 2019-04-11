@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -80,6 +81,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -90,15 +92,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTimeOffset&gt; timestamp = null, Nullable&lt;DateTimeOffset&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Schema.ChannelAccount from = null, Microsoft.Bot.Schema.ConversationAccount conversation = null, Microsoft.Bot.Schema.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Schema.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, string label = null, string valueType = null, object value = null, string name = null, Microsoft.Bot.Schema.ConversationReference relatesTo = null, string code = null, Nullable&lt;DateTimeOffset&gt; expiration = null, string importance = null, string deliveryMode = null, System.Collections.Generic.IList&lt;string&gt; listenFor = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; textHighlights = null, Microsoft.Bot.Schema.SemanticAction semanticAction = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Schema.ChannelAccount from, class Microsoft.Bot.Schema.ConversationAccount conversation, class Microsoft.Bot.Schema.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Schema.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Schema.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TextHighlight&gt; textHighlights, class Microsoft.Bot.Schema.SemanticAction semanticAction) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ConversationAccount,Microsoft.Bot.Schema.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Schema.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Schema.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Schema.TextHighlight},Microsoft.Bot.Schema.SemanticAction)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ConversationAccount * Microsoft.Bot.Schema.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Schema.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Schema.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; * Microsoft.Bot.Schema.SemanticAction -&gt; Microsoft.Bot.Schema.Activity" Usage="new Microsoft.Bot.Schema.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction)" />
+      <MemberSignature Language="C#" Value="public Activity (string type = null, string id = null, Nullable&lt;DateTimeOffset&gt; timestamp = null, Nullable&lt;DateTimeOffset&gt; localTimestamp = null, string serviceUrl = null, string channelId = null, Microsoft.Bot.Schema.ChannelAccount from = null, Microsoft.Bot.Schema.ConversationAccount conversation = null, Microsoft.Bot.Schema.ChannelAccount recipient = null, string textFormat = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved = null, string topicName = null, Nullable&lt;bool&gt; historyDisclosed = null, string locale = null, string text = null, string speak = null, string inputHint = null, string summary = null, Microsoft.Bot.Schema.SuggestedActions suggestedActions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; entities = null, object channelData = null, string action = null, string replyToId = null, string label = null, string valueType = null, object value = null, string name = null, Microsoft.Bot.Schema.ConversationReference relatesTo = null, string code = null, Nullable&lt;DateTimeOffset&gt; expiration = null, string importance = null, string deliveryMode = null, System.Collections.Generic.IList&lt;string&gt; listenFor = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; textHighlights = null, Microsoft.Bot.Schema.SemanticAction semanticAction = null, string localTimezone = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Schema.ChannelAccount from, class Microsoft.Bot.Schema.ConversationAccount conversation, class Microsoft.Bot.Schema.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Schema.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Schema.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TextHighlight&gt; textHighlights, class Microsoft.Bot.Schema.SemanticAction semanticAction, string localTimezone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Schema.ChannelAccount,Microsoft.Bot.Schema.ConversationAccount,Microsoft.Bot.Schema.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Schema.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Schema.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Schema.TextHighlight},Microsoft.Bot.Schema.SemanticAction,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Schema.ChannelAccount * Microsoft.Bot.Schema.ConversationAccount * Microsoft.Bot.Schema.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Schema.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Schema.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt; * Microsoft.Bot.Schema.SemanticAction * string -&gt; Microsoft.Bot.Schema.Activity" Usage="new Microsoft.Bot.Schema.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction, localTimezone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -141,6 +142,7 @@
         <Parameter Name="listenFor" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="textHighlights" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;" />
         <Parameter Name="semanticAction" Type="Microsoft.Bot.Schema.SemanticAction" />
+        <Parameter Name="localTimezone" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="type">Contains the activity type. Possible values
@@ -228,7 +230,7 @@
             recipient.</param>
         <param name="importance">The importance of the activity. Possible
             values include: 'low', 'normal', 'high'</param>
-        <param name="deliveryMode">A delivery hint to  signal to the
+        <param name="deliveryMode">A delivery hint to signal to the
             recipient alternate delivery paths for the activity.
             The default delivery mode is "default". Possible values include:
             'normal', 'notification'</param>
@@ -238,6 +240,10 @@
             highlight when the activity contains a ReplyToId value.</param>
         <param name="semanticAction">An optional programmatic action
             accompanying this request</param>
+        <param name="localTimezone">Contains the name of the timezone in
+            which the message, in local time, expressed in IANA Time Zone
+            database format.
+            For example, America/Los_Angeles.</param>
         <summary>
             Initializes a new instance of the Activity class.
             </summary>
@@ -259,6 +265,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -292,6 +299,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -330,6 +338,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -357,6 +366,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -384,6 +394,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -411,6 +422,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -435,6 +447,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IHandoffActivity</ReturnType>
@@ -462,6 +475,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInstallationUpdateActivity</ReturnType>
@@ -489,6 +503,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -516,6 +531,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -543,6 +559,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageDeleteActivity</ReturnType>
@@ -570,6 +587,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageReactionActivity</ReturnType>
@@ -597,6 +615,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageUpdateActivity</ReturnType>
@@ -624,6 +643,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ISuggestionActivity</ReturnType>
@@ -648,6 +668,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -675,6 +696,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -702,6 +724,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -734,6 +757,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -765,6 +789,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -796,6 +821,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -828,6 +854,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -859,6 +886,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -884,6 +912,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -913,6 +942,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -937,6 +967,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -961,6 +992,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -985,6 +1017,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -1009,6 +1042,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IHandoffActivity</ReturnType>
@@ -1033,6 +1067,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -1057,6 +1092,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -1081,6 +1117,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -1111,6 +1148,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -1150,6 +1188,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -1190,6 +1229,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -1217,6 +1257,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1228,7 +1269,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a delivery hint to  signal to the recipient alternate
+            Gets or sets a delivery hint to signal to the recipient alternate
             delivery paths for the activity.
             The default delivery mode is "default". Possible values include:
             'normal', 'notification'
@@ -1251,6 +1292,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1283,6 +1325,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1315,6 +1358,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1346,6 +1390,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -1379,6 +1424,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -1407,6 +1453,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Mention[]</ReturnType>
@@ -1418,6 +1465,33 @@
             </summary>
         <returns>The array of mentions; or an empty array, if none are found.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReplyConversationReference">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.ConversationReference GetReplyConversationReference (Microsoft.Bot.Schema.ResourceResponse reply);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.ConversationReference GetReplyConversationReference(class Microsoft.Bot.Schema.ResourceResponse reply) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Activity.GetReplyConversationReference(Microsoft.Bot.Schema.ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReplyConversationReference (reply As ResourceResponse) As ConversationReference" />
+      <MemberSignature Language="F#" Value="member this.GetReplyConversationReference : Microsoft.Bot.Schema.ResourceResponse -&gt; Microsoft.Bot.Schema.ConversationReference" Usage="activity.GetReplyConversationReference reply" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reply" Type="Microsoft.Bot.Schema.ResourceResponse" />
+      </Parameters>
+      <Docs>
+        <param name="reply">ResourceResponse returned from sendActivity</param>
+        <summary>
+            Create a ConversationReference based on this Activity's Conversation info and the ResourceResponse from sending an activity.
+            </summary>
+        <returns>A ConversationReference that can be stored and used later to delete or update the activity.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="HasContent">
@@ -1434,6 +1508,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1462,6 +1537,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1494,6 +1570,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1526,6 +1603,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1558,6 +1636,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1589,6 +1668,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1619,6 +1699,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1647,6 +1728,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1679,6 +1761,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1715,6 +1798,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1734,6 +1818,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="LocalTimezone">
+      <MemberSignature Language="C#" Value="public string LocalTimezone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocalTimezone" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Activity.LocalTimezone" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalTimezone As String" />
+      <MemberSignature Language="F#" Value="member this.LocalTimezone : string with get, set" Usage="Microsoft.Bot.Schema.Activity.LocalTimezone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="localTimezone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets contains the name of the timezone in which the
+            message, in local time, expressed in IANA Time Zone database
+            format.
+            For example, America/Los_Angeles.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MembersAdded">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; MembersAdded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; MembersAdded" />
@@ -1748,6 +1862,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1779,6 +1894,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1813,6 +1929,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1842,6 +1959,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1876,6 +1994,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1907,6 +2026,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1939,6 +2059,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -1972,6 +2093,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2003,6 +2125,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2032,6 +2155,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2064,6 +2188,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2096,6 +2221,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2127,6 +2253,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2158,6 +2285,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2191,6 +2319,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2222,6 +2351,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2254,6 +2384,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2286,6 +2417,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2318,6 +2450,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2349,6 +2482,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2388,6 +2522,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2426,6 +2561,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
@@ -2457,6 +2593,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="botbuilder-dotnet-stable">

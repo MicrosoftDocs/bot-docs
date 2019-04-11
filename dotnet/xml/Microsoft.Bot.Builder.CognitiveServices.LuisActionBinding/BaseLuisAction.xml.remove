@@ -1,0 +1,103 @@
+<Type Name="BaseLuisAction" FullName="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BaseLuisAction">
+  <TypeSignature Language="C#" Value="public abstract class BaseLuisAction : Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit BaseLuisAction extends System.Object implements class Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BaseLuisAction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseLuisAction&#xA;Implements ILuisAction" />
+  <TypeSignature Language="F#" Value="type BaseLuisAction = class&#xA;    interface ILuisAction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Base class for implementing LUIS Action Bindings.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BaseLuisAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BaseLuisAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FulfillAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;object&gt; FulfillAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; FulfillAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BaseLuisAction.FulfillAsync" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FulfillAsync () As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member FulfillAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="baseLuisAction.FulfillAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction.FulfillAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            The method to be executed when all required parameters are filled. This method should fulfill or call any external services and return the result.
+            </summary>
+        <returns>The result of the action execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public virtual bool IsValid (out System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValid([out] class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; validationResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BaseLuisAction.IsValid(System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValid (ByRef validationResults As ICollection(Of ValidationResult)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsValid :  -&gt; bool&#xA;override this.IsValid :  -&gt; bool" Usage="baseLuisAction.IsValid validationResults" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.ILuisAction.IsValid(System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding</AssemblyName>
+        <AssemblyVersion>1.1.7.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationResults" Type="System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="validationResults">List of validation errors.</param>
+        <summary>
+            Validates if the current action's context is valid, based on the Action properties set so far and their validation attributes.
+            </summary>
+        <returns>True if context is valid, False otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

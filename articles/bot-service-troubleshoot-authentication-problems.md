@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/17
+ms.date: 02/26/2019
 ---
 
 # Troubleshooting Bot Framework authentication
@@ -222,6 +222,7 @@ If the bot responds appropriately to the input, you have verified that your bot 
 
 If you are still experiencing issues after completing the steps above, you can:
 
+* Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
 * [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a>.
 * Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
 * Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.

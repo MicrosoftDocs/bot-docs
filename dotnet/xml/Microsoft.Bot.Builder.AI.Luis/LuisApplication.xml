@@ -8,13 +8,16 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>4.3.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Data describing a LUIS application.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,13 +49,38 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.LuisService" />
       </Parameters>
       <Docs>
-        <param name="service">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="service">LUIS coonfiguration.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisApplication" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisApplication (string applicationEndpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string applicationEndpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisApplication.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (applicationEndpoint As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.LuisApplication : string -&gt; Microsoft.Bot.Builder.AI.Luis.LuisApplication" Usage="new Microsoft.Bot.Builder.AI.Luis.LuisApplication applicationEndpoint" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="applicationEndpoint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="applicationEndpoint">LUIS application endpoint.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisApplication" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,6 +95,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="applicationId" Type="System.String" />
@@ -73,10 +103,12 @@
         <Parameter Name="endpoint" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="applicationId">To be added.</param>
-        <param name="endpointKey">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="applicationId">LUIS application ID.</param>
+        <param name="endpointKey">LUIS subscription or endpoint key.</param>
+        <param name="endpoint">LUIS endpoint to use like https://westus.api.cognitive.microsoft.com.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisApplication" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,13 +123,18 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets lUIS application ID.
+            </summary>
+        <value>
+            LUIS application ID.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,13 +149,18 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets lUIS endpoint like https://westus.api.cognitive.microsoft.com.
+            </summary>
+        <value>
+            LUIS endpoint where application is hosted.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,13 +175,18 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets lUIS subscription or endpoint key.
+            </summary>
+        <value>
+            LUIS subscription or endpoint key.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
