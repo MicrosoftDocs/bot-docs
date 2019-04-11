@@ -2,3 +2,4 @@ Then, create the bot resource into which you will publish your bot. This will pr
 
 > [!NOTE]
 > This isn't the only way to achieve this, but it tends to be the easiest way to create all the parts you will need for deploying a functioning bot.
+
