@@ -220,9 +220,9 @@ First, only some channels support Adaptive Cards, and channels that do support i
 
 Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment. 
 
-To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/visualizer/">Adaptive Cards Visualizer</a>.
+To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/designer/">Adaptive Cards Designer</a>.
 
-To use adaptive cards, be sure to add the `Microsoft.AdaptiveCards` NuGet package. 
+To use adaptive cards, be sure to add the `AdaptiveCards` NuGet package. 
 
 
 > [!NOTE]
