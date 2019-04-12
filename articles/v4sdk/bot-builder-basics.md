@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How bots work
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot generates an *activity*. The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook, Skype, Slack, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot. 
 
