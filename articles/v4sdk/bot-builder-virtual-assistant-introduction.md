@@ -32,7 +32,7 @@ Feature | Description |
 Onboarding | An example OnBoarding flow enabling your Assistant to greet the user and collect initial information.
 Eventing Architecture | Events in the context of the Virtual Assistant enable the client application hosting the assistant (in a web-browser or on a device such as a car or speaker) to exchange information about the user or device events whilst also receiving events to perform device operations.
 Linked Accounts | In a speech-led scenario it's not practical for a user to enter their username and password for supporting systems through voice commands. Therefore a separate companion experience provides an opportunity for the user to signin and provide permission for an Virtual Assistant to retrieve tokens for later use.
-Skill Enablement | A broad set of common capabilities exist which today, which require each developer to build themselves. Our Virtual Assistant solution includes a new Skill capability enabling new capabilities to be plugged into an Virtual Assistant through configuration only and provide an authentication mechanism for Skills to request tokens for down-stream activities.
+Skill Enablement | A broad set of common capabilities exist today, which require each developer to build themselves. Our Virtual Assistant solution includes a new Skill capability enabling new capabilities to be plugged into an Virtual Assistant through configuration only and provide an authentication mechanism for Skills to request tokens for down-stream activities.
 Point of Interest Skill | The preview Point of Interest (PoI) skill provides a comprehensive language model for finding points of interest and requesting directions. The skill currently provides integration into Azure Maps.
 Calendar Skill | The preview Calendar Skill provides a comprehensive language model for common calendar related activities, The skill is currently integrated into Microsoft Graph (Office 365/Outlook.com) with support for Google APIs to follow soon..
 Email Skill | The preview Email Skill provides a comprehensive language model for common email related activities, The skill is currently integrated into Microsoft Graph (Office 365/Outlook.com) with support for Google APIs to follow soon.
@@ -44,18 +44,18 @@ Automotive Language Model | An Automotive language model covering core domains s
 
 ## Example Scenarios
 
-The Virtual Assistant extends across a broad number of industry scenarios, some example scenarios are shown below for reference purposes.
+The Virtual Assistant extends across a broad number of industry scenarios. Some example scenarios are shown below for reference purposes.
 
 - Automotive Industry: Voice enabled Personal Assistant integrated into the car providing end users the ability to perform traditional car operations (e.g. navigation, radio) along with productivity focused scenarios such as moving meetings when your running late, adding items to your task list and proactive experiences where the car can suggest tasks to complete based on events such as starting the engine, traveling home or enabling cruise control. Adaptive Cards are rendered within the Head Unit and Speech integration performed through Push-To-Talk or Wake Word interactions.
 
-- Hospitality: Voice enabled Personal Assistant integrated into a hotel-room device providing a broad range of Hospitality focused scenarios (e.g. extend your stay, request late checkout, room service) including concierge and the ability to find local restaurants and attractions. Optional linking to your Productivity accounts open up more personalised experiences such as suggested alarm calls, Weather warnings and learning of patterns across stays. An evolution of the current TV personalisation experienced in room today.
+- Hospitality: Voice enabled Personal Assistant integrated into a hotel room device providing a broad range of hospitality focused scenarios (e.g. extend your stay, request late checkout, room service) including concierge and the ability to find local restaurants and attractions. Optional linking to your productivity accounts open up more personalised experiences such as suggested alarm calls, weather warnings and learning of patterns across stays. An evolution of the current TV personalisation experienced in room today.
 
 - Enterprise: Voice and Text enabled branded Employee Assistant experiences integrated into enterprise devices and existing conversation canvases (e.g. Teams, WebChat, Slack) enabling employees to manage their calendars, find available meeting rooms, find people with specific skills or perform HR related operations.
 
 ## Virtual Assistant Principles
 
 ### Your data, your brand and your experience
-All aspects of the end user experience are owned and controlled by you. This includes the Branding, Name, Voice, Personality, Responses and Avatar. The source-code to the Virtual Assistant and supporting Skills are provided in full enabling you to adjust as required.
+All aspects of the end user experience are owned and controlled by you. This includes the branding, name, voice, personality, responses and avatar. The source-code to the Virtual Assistant and supporting Skills are provided in full, enabling you to adjust as required.
 
 Your Virtual Assistant will be deployed within your Azure subscription. Therefore all data generated by your assistant (questions asked, user behaviour, etc.) is entirely contained within your Azure subscription. See [Cognitive Services Azure Trusted Cloud](https://www.microsoft.com/en-us/trustcenter/cloudservices/cognitiveservices) and the [Azure section of the Trust Center](https://www.microsoft.com/en-us/TrustCenter/CloudServices/Azure) more specifically for more information.
 
