@@ -1,0 +1,14 @@
+{
+  "redirections": [
+    {
+      "source_path": "articles/azure-bot-service-build-options.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-online-code-editor",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/azure-bot-service-continuous-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli",
+      "redirect_document_id": true
+    }
+  ]
+}
