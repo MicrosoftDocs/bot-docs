@@ -24,7 +24,7 @@ ms.date: 03/28/2019
 <h2 style="margin-top: 18px; margin-bottom: 0px;">5-Minute Quickstarts</h2>
 <div class="ico48Case">
     <div class="ico48Link">
-        <a href="/bot-framework/bot-service-quickstart">
+        <a href="https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart?view=azure-bot-service-3.0">
             <img src="media/index/azure_portal.png" alt="">
             <span>Azure portal</span>
         </a>
