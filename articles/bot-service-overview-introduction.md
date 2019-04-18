@@ -7,72 +7,12 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 1/10/2019
+ms.date: 04/18/2019
 ---
 
-::: moniker range="azure-bot-service-3.0"
-
 # About Azure Bot Service
 
-[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
-
-Azure Bot Service provides tools to build, test, deploy, and manage intelligent bots all in one place. Through the modular and extensible framework provided by the SDK, developers can leverage templates to create bots that provide speech, language understanding, question and answer, and more.  
-
-## What is a bot?
-A bot is an app that users interact with in a conversational way using text, graphics (cards), or speech. It may be a simple question and answer dialog, or a sophisticated bot that allows people to interact with services in an intelligent manner using pattern matching, state tracking and artificial intelligence techniques well-integrated with existing business services. 
-
-## Building a bot 
-You can choose to use your favorite development environment or command line tools to create your bot in C# or Node.js. We provide tools for various stages of bot development that you can use to build your bot to get you started.    
-
-![Bot Overview](media/bot-service-overview.png) 
-
-## Plan 
-Before writing code, review the bot [design guidelines](bot-service-design-principles.md) for best practices and identify the needs for your bot. You can create a simple bot or include more sophisticated capabilities, such as speech, language understanding, QnA, or the ability to extract knowledge from different sources and provide intelligent answers.  
-
-> [!TIP]
-> Create [Azure](https://portal.azure.com) account. 
-
-## Build your bot 
-Your bot is a web service that implements a conversational interface and communicates with the Bot Service. You can create this solution in any number of environments and languages and we offer easy getting started tools for Visual Studio or Yeoman or directly within the Azure portal. Look below for some of the tools and services you can use.
-
-> [!TIP]
-> Create a bot using [Azure portal](bot-service-quickstart.md). If needed, add components, such as: 
-> - Language understanding [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home). 
-> - [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home) knowledge base to answer questions users ask.  
-
-## Test your bot 
-Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot.
-
-> [!TIP] 
-> - Test bot in [Web Chat](bot-service-manage-test-webchat.md) or test your bot locally bot with the [Emulator](bot-service-debug-emulator.md)
-
-## Publish 
-When you are ready, publish your bot to Azure or to your own web service or data center. You can set up continuous deployment that allows you to develop your bot locally and is useful if your bot is checked into a source control like GitHub or Visual Studio Team Services. As you check your changes back into your source repository, your changes will automatically be deployed to Azure.
-
-> [!Tip]
-> - [Download and redeploy code to Azure](bot-service-build-download-source-code.md)
-
-## Connect          
-Connect your bot to channels such as Facebook, Messenger, Kik, Skype, Slack, Microsoft Teams, Telegram, text/SMS, Twilio, Cortana, and Skype to increase interactions and reach more customers.  
-  
-> [!TIP]
-> - [Choose the channels to be added](bot-service-manage-channels.md)
-
-
-## Evaluate 
-Use the data collected in Azure portal to identify opportunities to improve the capabilities and performance of your bot. You can get service-level and instrumentation data like traffic, latency, and integrations. Analytics also provides conversation-level reporting on user, message, and channel data.
-
-> [!Tip]
-> - [Gather analytics](bot-service-manage-analytics.md) 
-
-
-::: moniker-end
-
-::: moniker range="azure-bot-service-4.0"
-
-# About Azure Bot Service
-
-[!INCLUDE [pre-release-label](includes/pre-release-label.md)]
+[!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
 Azure Bot Service provides tools to build, test, deploy, and manage intelligent bots all in one place. Through the use of modular and extensible framework provided by the SDK, tools, templates, and AI services developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
@@ -142,5 +82,3 @@ Use the data collected in Azure portal to identify opportunities to improve the 
 Check out these [case studies](https://azure.microsoft.com/services/bot-service/) of bots or click on the link below to create a bot.
 > [!div class="nextstepaction"]
 > [Create a bot](bot-service-quickstart.md)
-
-::: moniker-end

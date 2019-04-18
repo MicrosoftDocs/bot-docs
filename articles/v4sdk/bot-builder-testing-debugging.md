@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Testing and debugging guidelines
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected.
 

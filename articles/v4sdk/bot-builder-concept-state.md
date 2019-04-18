@@ -8,11 +8,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 02/25/2019
+ms.date: 04/18/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Managing state
+
+[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides some abstractions to make state management easier.
 

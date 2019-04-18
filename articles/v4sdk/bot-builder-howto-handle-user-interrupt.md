@@ -8,14 +8,14 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/20/2018
+ms.date: 04/18/2019
 ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Handle user interruptions
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 Handling interruptions is an important aspect of a robust bot.
 
