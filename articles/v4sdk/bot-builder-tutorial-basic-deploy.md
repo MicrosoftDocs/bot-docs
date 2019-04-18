@@ -8,13 +8,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 1/9/2019
+ms.date: 04/18/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Tutorial: Create and deploy a basic bot
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 This tutorial walks you through creating a basic bot with the Bot Framework SDK, and deploying it to Azure. If you've already created a basic bot and have it running locally, skip ahead to the [Deploy your bot](#deploy-your-bot) section.
 

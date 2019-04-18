@@ -8,13 +8,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/18/2018
+ms.date: 4/18/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Implement sequential conversation flow
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 You can manage simple and complex conversation flows using the dialogs library. In a simple interaction, the bot runs through a fixed sequence of steps, and the conversation finishes. In this article, we use a _waterfall dialog_, a few _prompts_, and a _dialog set_ to create a simple interaction that asks the user a series of questions.
 
