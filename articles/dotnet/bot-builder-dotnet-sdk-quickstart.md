@@ -8,15 +8,14 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 02/07/2019
+ms.date: 04/17/2019
 monikerRange: 'azure-bot-service-4.0'
-templateName: "Echo Bot"
 ---
 
 
 # Create a bot with the Bot Framework SDK for .NET
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator.
 

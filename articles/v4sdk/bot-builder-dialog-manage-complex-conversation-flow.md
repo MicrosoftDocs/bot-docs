@@ -8,13 +8,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 11/28/2018
+ms.date: 4/18/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Create advanced conversation flow using branches and loops
 
-[!INCLUDE [pre-release-label](~/includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 In this article, we will show you how to manage complex conversations that branch and loop. We'll also show you how to pass arguments between different parts of the dialog.
 

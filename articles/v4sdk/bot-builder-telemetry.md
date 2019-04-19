@@ -13,6 +13,9 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Add telemetry to your bot
+
+[!INCLUDE[applies-to](../includes/applies-to.md)]
+
 In version 4.2 of the Bot Framework SDK, telemetry logging was added into the product.  This enables bot applications to send event data to services such as Application Insights.
 
 This document covers how to integrate your bot with the new telemetry features.  

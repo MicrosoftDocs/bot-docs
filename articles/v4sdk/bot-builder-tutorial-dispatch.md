@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use multiple LUIS and QnA models
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 In this tutorial, we demonstrate how to use the Dispatch service to route utterances when there are multiple LUIS models and QnA maker services for different scenarios supported by a bot. In this case, we configure Dispatch with multiple LUIS models for conversations around home automation and weather information, plus QnA maker service to answer questions based on a FAQ text file as input. This sample combines the following services.
 

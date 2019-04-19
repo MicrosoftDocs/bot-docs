@@ -8,13 +8,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 09/19/2018
+ms.date: 04/19/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Persist user data
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 When the bot ask users for input, chances are that you would want to persist some of the information to storage of some form. The Bot Framework SDK allows you to store user inputs using *in-memory storage* or database storage such as *CosmosDB*. Local storage types are mainly used during testing or prototyping of your bot. However, persistent storage types, such as database storage, are best for production bots.
 

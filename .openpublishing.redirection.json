@@ -421,6 +421,16 @@
       "redirect_document_id": true 
     }, 
     {
+      "source_path": "articles/azure/azure-bot-service-quickstart.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-quickstart",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/azure/azure-bot-service-serverless-template-basic.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot",
+      "redirect_document_id": true       
+    },
+    {
       "source_path": "articles/troubleshoot-general-problems.md",
       "redirect_url": "https://docs.microsoft.com/en-us/azure/bot-service/bot-service-troubleshoot-general-problems",
       "redirect_document_id": true 
