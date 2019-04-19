@@ -269,13 +269,12 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
     }
     ```
 
-    If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can either create a new password as described here:
+If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can either create a new password as described here:
 
-    [bot-channels-registration-password](../bot-service-quickstart-registration.md#bot-channels-registration-password)
+[bot-channels-registration-password](../bot-service-quickstart-registration.md#bot-channels-registration-password)
   
-  Or retrieve the **Microsoft app ID** and **Microsoft app password** provisioned with the **Bot Channels Registration** from the deployement described here:
-
-    [find-your-azure-bots-appid-and-appsecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret)
+Or retrieve the **Microsoft app ID** and **Microsoft app password** provisioned with the **Bot Channels Registration** from the deployement described 
+here: [find-your-azure-bots-appid-and-appsecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret)
 
     > [!NOTE]
     > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this tutorial. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
