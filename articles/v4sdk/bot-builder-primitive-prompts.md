@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create your own prompts to gather user input
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 A conversation between a bot and a user often involves asking (prompting) the user for information, parsing the user's response, and then acting on that information.
 

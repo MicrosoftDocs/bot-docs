@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add authentication to your bot via Azure Bot Service
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 The Azure Bot Service and the v4 SDK include new bot authentication capabilities, providing features to make it easier to develop a bot that authenticates users to various identity providers, such as Azure AD (Azure Active Directory), GitHub, Uber, and so on. These capabilities can improve the user experience by eliminating the _magic code verification_ for some clients.
 
@@ -274,6 +274,7 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
     [bot-channels-registration-password](../bot-service-quickstart-registration.md#bot-channels-registration-password)
   
   Or retrieve the **Microsoft app ID** and **Microsoft app password** provisioned with the **Bot Channels Registration** from the deployement described here:
+
     [find-your-azure-bots-appid-and-appsecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret)
 
     > [!NOTE]

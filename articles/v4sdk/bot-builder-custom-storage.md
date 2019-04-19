@@ -8,11 +8,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 10/31/2018
+ms.date: 4/31/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Implement custom storage for your bot
+
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 A bot’s interactions fall into three areas: firstly, the exchange of Activities with the Azure Bot Service, secondly, 
 the loading and saving of dialog state with a Store and finally any other backend services the bot needs to work with 
