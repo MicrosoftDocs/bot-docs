@@ -14,6 +14,7 @@
 > This call may also hang without exiting if python is already installed on your system:
 
 > ```bash
+> # only run this command if you are on Windows. Read the above note. 
 > npm install -g windows-build-tools
 > ```
 
