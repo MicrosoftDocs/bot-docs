@@ -21,7 +21,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md) and how bots [manage state](bot-builder-concept-state.md) is required.
-- The code in this article is based on the **StateBot** sample. You'll need a copy of the sample in either [C#](https://github.com/Microsoft/BotFramework-Samples/tree/master/SDKV4-Samples/dotnet_core/StateBot) or [JS]().
+- The code in this article is based on the **StateBot** sample. You'll need a copy of the sample in either [C#](https://github.com/Microsoft/BotFramework-Samples/tree/master/SDKV4-Samples/dotnet_core/StateBot) or [JS](https://github.com/Microsoft/BotFramework-Samples/tree/master/SDKV4-Samples/js/stateBot).
 - The [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started), to test the bot locally.
 
 ## About the sample code

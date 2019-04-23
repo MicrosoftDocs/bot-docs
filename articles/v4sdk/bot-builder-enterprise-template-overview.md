@@ -18,7 +18,7 @@ The Enterprise Bot Template provides a solid foundation of the best practices an
 
 Feature      | Description |
 ------------ | -------------
-Introduction | Introduction message with an [Adaptive Card]() on conversation start
+Introduction | Introduction message with an [Adaptive Card](../conversation-designer/conversation-designer-adaptive-cards.md) on conversation start
 Typing indicators  | Automated visual typing indicators during conversations and repeat for long running operations
 Base LUIS model  | Supports common intents such as **Cancel**, **Help**, **Escalate**, etc.
 Base dialogs | Dialog flows for capturing basic user information as well as interruption logic for cancel and help intents
