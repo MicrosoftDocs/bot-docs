@@ -39,7 +39,7 @@ We use the bot's turn handler and user and conversation state properties to mana
 
 ## Define and configure state
 
-We need to configure our bot the track the following information:
+We need to configure our bot to track the following information:
 
 - The user's name, age, and chosen date, which we'll define in user state.
 - What we've just asked the user, which we'll define in conversation state.
