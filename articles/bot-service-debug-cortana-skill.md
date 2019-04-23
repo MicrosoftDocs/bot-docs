@@ -6,7 +6,7 @@ author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/01/18
+ms.date: 05/01/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
 
