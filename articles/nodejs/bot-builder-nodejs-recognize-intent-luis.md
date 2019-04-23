@@ -82,7 +82,7 @@ The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents
 
 
 3.	Click the **Train** button in the upper right to train your app.
-4.	Click **PUBLISH** in the top navigation bar to open the **Publish** page. Click the **Publish to production slot** button. After successful publish, a LUIS app is deployed to the URL displayed in the **Endpoint** column in the **Publish App** page, in the row that starts with the Resource Name Starter_Key. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?subscription-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&timezoneOffset=0&verbose=true&q=`. The app ID and subscription key in this URL are the same as LuisAppId and LuisAPIKey in ** App Service Settings > ApplicationSettings > App settings **
+4.	Click **PUBLISH** in the top navigation bar to open the **Publish** page. Click the **Publish to production slot** button. After successful publish, a LUIS app is deployed to the URL displayed in the **Endpoint** column in the **Publish App** page, in the row that starts with the Resource Name Starter_Key. The URL has a format similar to this example: `https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?subscription-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&timezoneOffset=0&verbose=true&q=`. The app ID and subscription key in this URL are the same as LuisAppId and LuisAPIKey in **App Service Settings > ApplicationSettings > App settings**
 
 
 ## Modify the bot code
