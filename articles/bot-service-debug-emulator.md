@@ -32,11 +32,11 @@ Send message to your bot and the bot should respond back. You can click on messa
 
 ## Save and load conversations with bot transcripts
 
-Activities in the emulator can be saved as transcripts. From an open live chat window, select **Save Transcript As** to the transacript file. The **Start Over** button can be used any time to clear a conversation and restart a connection to the bot.  
+Activities in the emulator can be saved as transcripts. From an open live chat window, select **Save Transcript As** to the transcript file. The **Start Over** button can be used any time to clear a conversation and restart a connection to the bot.  
 
 ![Emulator save transcripts](media/emulator-v4/emulator-live-chat.png)
 
-To load transcripts, simply select **File > Open Tranascript File** and select the transcript. A new Transcript window will open and render the message activity to the output window. 
+To load transcripts, simply select **File > Open Transcript File** and select the transcript. A new Transcript window will open and render the message activity to the output window. 
 
 ![Emulator load transcripts](media/emulator-v4/emulator-load-transcript.png)
 
