@@ -24,7 +24,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 
 ## Same welcome for different channels
 
-A welcome message should be generated whenever your users first interacts with your bot. To achieve this, you can monitor your bot’s Activity types and watch for new connections. Each new connection can generate up to two conversation update activities depending on the channel.
+A welcome message should be generated whenever your users first interact with your bot. To achieve this, you can monitor your bot’s Activity types and watch for new connections. Each new connection can generate up to two conversation update activities depending on the channel.
 
 - One when the user’s bot is connected to the conversation.
 - One when the user joins the conversation.
@@ -40,7 +40,7 @@ This duplicate message can be avoided by generating an initial welcome message f
 - A conversation update event has occurred.
 - A new member (user) has been added to the conversation.
 
-The code sample below watches for any new *conversation update activity* and sends only one welcome message per new user joining the conversation. Upon your bot's first _conversationUpdate_ event the bot itself is added as _Recipient_ of activity for your channel. The code the checks if an added Member == _turnContext.Activity.Recipient.Id_. If true, it has detected the initial conversation update event and skips the code that looks for newly connected users.
+The code sample below watches for any new *conversation update activity* and sends only one welcome message per new user joining the conversation. Upon your bot's first _conversationUpdate_ event the bot itself is added as _Recipient_ of activity for your channel. The code then checks if an added Member == _turnContext.Activity.Recipient.Id_. If true, it has detected the initial conversation update event and skips the code that looks for newly connected users.
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
@@ -49,7 +49,7 @@ The code sample below watches for any new *conversation update activity* and sen
 Within the C# sample code, **Startup.cs** has defined 'WelcomeUserStateAccessors' as a service/singleton and added 'UserState' to the application state. We will now use these to create a state object for a given user in a conversation and its accessor.
 
 ```csharp
-/// The state object is used to keep track of various state related to a user in a conversation.
+/// The state object is used to keep track of various states related to a user in a conversation.
 /// In this example, we are tracking if the bot has replied to customer first interaction.
 public class WelcomeUserState
 {
@@ -90,7 +90,7 @@ private const string InfoMessage = @"You are seeing this message because the bot
                                     read more information at:
                                         https://aka.ms/about-botframework-welcome-user";
 
-private const string PatternMessage = @"It is a good pattern to use this event to send general greeting
+private const string PatternMessage = @"It is a good pattern to use this event to send general greetings
                                         to user, explaining what your bot can do. In this example, the bot
                                         handles 'hello', 'hi', 'help' and 'intro. Try it now, type 'hi'";
 
@@ -108,7 +108,7 @@ public WelcomeUserBot(WelcomeUserStateAccessors statePropertyAccessor)
 // are sent when a user joins a conversation.
 // This bot doesn't use any dialogs; it's "single turn" processing, meaning a single
 // request and response.
-// This bot uses UserState to keep track of first message a user sends.
+// This bot uses UserState to keep track of the first message a user sends.
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = new CancellationToken())
 {
     // use state accessor to extract the didBotWelcomeUser flag
@@ -171,7 +171,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
 ## [JavaScript](#tab/js)
 
-This JavaScript code sends a welcome message when a user is added. This is done by checking the conversation activity and verify that a new member was added to the conversation.
+This JavaScript code sends a welcome message when a user is added. This is done by checking the conversation activity and verifying that a new member was added to the conversation.
 
 ```javascript
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -308,7 +308,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
 
     // Greet when users are added to the conversation.
     // Note that all channels do not send the conversation update activity.
-    // If you find that this bot works in the emulator, but does not in
+    // If you find that this bot works in the Emulator, but does not in
     // another channel the reason is most likely that the channel does not
     // send this activity.
     else if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
@@ -366,7 +366,7 @@ class MainDialog
 
 ## Using Adaptive Card Greeting
 
-Another way to greeting users is using adaptive Card Greeting. You can learn more about Adaptive Card Greetings here [Send an Adaptive Card](./bot-builder-howto-add-media-attachments.md).
+Another way to greet users is using Adaptive Card Greeting. You can learn more about Adaptive Card Greetings here [Send an Adaptive Card](./bot-builder-howto-add-media-attachments.md).
 
 ## [C#](#tab/csharp)
 
@@ -381,7 +381,7 @@ private static async Task SendIntroCardAsync(ITurnContext turnContext, Cancellat
     card.Text = @"Welcome to Welcome Users bot sample! This Introduction card
                     is a great way to introduce your Bot to the user and suggest
                     some things to get them started. We use this opportunity to
-                    recommend a few next steps for learning more creating and deploying bots.";
+                    recommend a few next steps for learning more about creating and deploying bots.";
     card.Images = new List<CardImage>() { new CardImage("https://aka.ms/bf-welcome-card-image") };
     card.Buttons = new List<CardAction>()
     {
@@ -429,7 +429,7 @@ First we want to add our Adaptive Card to the bot at the top of our _index.js_ r
 const IntroCard = require('./Resources/IntroCard.json');
 ```
 
-Next we can simply use the below code in our _switch (text)_ _case "help"_ section of our bot to respond to the users prompt with the adaptive card.
+Next we can simply use the below code in our _switch (text)_ _case "help"_ section of our bot to respond to the user's prompt with the adaptive card.
 
 ```javascript
 switch (text)
