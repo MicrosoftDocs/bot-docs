@@ -60,7 +60,7 @@ ms.date: 03/28/2019
                     <div class="cardText">
                         <h3>Languages</h3>
                         <p><a href="https://aka.ms/botframework-v3-cs-sdk">.NET</a></p>
-                        <p><a href="https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html">Node.js</a></p>
+                        <p><a href="https://aka.ms/bot-jssdk-v3">JavaScript</a></p>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ ms.date: 03/28/2019
                     <div class="cardText">
                         <h3>SDKs</h3>
                         <p><a href="https://aka.ms/botframework-v4-cs-sdk">.NET</a></p>
-                        <p><a href="https://github.com/Microsoft/botbuilder-js">JavaScript</a></p>
+                        <p><a href="https://aka.ms/bot-jssdk-v3">JavaScript</a></p>
                     </div>
                 </div>
             </div>

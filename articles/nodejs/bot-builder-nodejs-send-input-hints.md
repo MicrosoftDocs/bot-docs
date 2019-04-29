@@ -52,7 +52,3 @@ If you do not set the input hint for a message, the Bot Framework SDK will autom
 ## Additional resources
 
 - [Add speech to messages](bot-builder-nodejs-text-to-speech.md)
-- [Bot Framework SDK for Node.js Reference][SDKReference]
-
-[SDKReference]: https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html
-
