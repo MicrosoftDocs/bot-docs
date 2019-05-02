@@ -54,6 +54,7 @@
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
+### [Use Direct Line Speech in your bot](directline-speech-bot.md)
 ### [Manage bots using CLI tools](bot-builder-tools.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
