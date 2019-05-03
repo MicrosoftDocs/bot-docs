@@ -122,8 +122,9 @@ Host: <your-hostname>  // NOTE - this is a URL.
 Authorization: EndpointKey <your-endpoint-key>
 ```
 
-These values will later be used within your 'appsettings.json' file.
+The full URL string for your hostname will look like "https://< >.azure.net/qnamaker".
 
+These values will later be used within your `appsettings.json` or `.env` file.
 
 Note the LUIS app and QnA Maker knowledge base names and IDs. Also note your LUIS authoring key and your Cognitive Services subscription key. You will need all this information to complete this process.
 

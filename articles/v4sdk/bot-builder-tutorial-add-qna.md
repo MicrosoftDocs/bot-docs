@@ -97,7 +97,7 @@ QnAEndpointHostName="<your-qna-service-hostname>" // This is a URL
 |:----|:----|
 | kbId | The knowledge base ID that the QnA Maker portal generated for you. |
 | endpointKey | The endpoint key that the QnA Maker portal generated for you. |
-| hostname | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. |
+| hostname | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |
 
 Now save your edits.
 
