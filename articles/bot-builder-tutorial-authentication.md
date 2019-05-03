@@ -117,7 +117,7 @@ You now have an Azure AD v1 application configured.
 
 #### To create an Azure AD v2 application
 
-1. Go to the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com).
+1. Go to the [Microsoft Application Registration Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 1. Click **Add an app**
 1. Give your Azure AD app a name, and click **Create**.
 

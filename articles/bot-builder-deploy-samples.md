@@ -1,4 +1,14 @@
 ---
+redirect_url: /bot-framework/bot-builder-deploy-az-cli
+--- 
+
+
+
+<!--
+
+
+
+---
 title: Deploy bots from botbuilder-samples repo | Microsoft Docs
 description: Deploy your bot to the Azure cloud.
 keywords: deploy bot, azure deploy, publish bot, az deploy bot, visual studio deploy bot, msbot publish, msbot clone
@@ -37,7 +47,6 @@ It would be useful to read this article once through before following the steps,
   - You'll need [QnA Maker CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#as-a-cli) if the clone operation includes QnA Maker resources.
 - Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
-- Knowledge of [.bot](v4sdk/bot-file-basics.md) files.
 
 With msbot 4.3.2 and later, you need Azure CLI version 2.0.54 or later. If you installed the botservice extension, remove it with this command.
 
@@ -96,7 +105,7 @@ cd <local-bot-folder>
 
 If you are using a [MSA](https://en.wikipedia.org/wiki/Microsoft_account) email account, you will need to create the appId and appSecret to use with `msbot clone services` command.
 
-- Go to the [Application Registration Portal](https://apps.dev.microsoft.com/). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**.
+- Go to the [Application Registration Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade). Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**.
 > NOTE - If generated password contains the character "|" this password will be rejected by Azure. To solve this, generate another a new password.
 - Save both application id and the new password you just generated, so you that can use them with `msbot clone services` command.
 - To deploy, use the command that applies to your bot.
@@ -132,18 +141,6 @@ If your are using an email account provided to you by your business or school to
 [!INCLUDE [deployment note](./includes/deployment-note-cli.md)]
 
 ---
-
-#### Save the secret used to decrypt .bot file
-
-It is important to note that the deployment process creates a _new .bot file and encrypts it using a secret_. While the bot is being deployed, you'll see the following message in the command-line asking you to save the .bot file secret.
-
-`The secret used to decrypt myAzBot.bot is:`
-`hT6U1SIPQeXlebNgmhHYxcdseXWBZlmIc815PpK0WWA=`
-
-`NOTE: This secret is not recoverable and you should save it in a safe place according to best security practices.
-Copy this secret and use it to open the <file.bot> the first time.`
-
-Save the .bot file secret for later use. The new encrypted .bot file is used in the Azure portal with the botFileSecret. If you need to change the bot file name or secret later on, go to **App Service Settings -> Application Settings** section in the portal. Note that in the appsettings.json or .env file, the bot file name is updated with the latest bot file that was created.  
 
 ### Test your bot
 
@@ -184,3 +181,5 @@ If you are unfamiliar with Azure resource group, see this [terminology](https://
 
 > [!div class="nextstepaction"]
 > [Set up continous deployment](bot-service-build-continuous-deployment.md)
+
+-->

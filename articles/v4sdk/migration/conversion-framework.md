@@ -106,7 +106,7 @@ namespace ContosoHelpdeskChatBot
 
 ## Update your Global.asax.cs file
 
-Some of the scaffolding has changed, and we have to set up parts of the [state management](/articles/v4sdk/bot-builder-concept-state.md) infrastructure ourselves in v4. For instance, v4 uses a bot adapter to handle authentication and forward activities to your bot code, and we have declare our state properties up front.
+Some of the scaffolding has changed, and we have to set up parts of the [state management](../bot-builder-concept-state.md) infrastructure ourselves in v4. For instance, v4 uses a bot adapter to handle authentication and forward activities to your bot code, and we have declare our state properties up front.
 
 We'll create a state property for `DialogState`, which we now need for dialog support in v4. We'll use dependency injection to get necessary information to the controller and bot code.
 
@@ -241,7 +241,7 @@ This is where the turn handler occurs in v4, so this need to change a lot. Excep
         }
     }
     ```
-1. Add an **OnTurnAsync** method that contains the bot's [turn handler](/articles/v4sdk/bot-builder-basics.md#the-activity-processing-stack) code.
+1. Add an **OnTurnAsync** method that contains the bot's [turn handler](../bot-builder-basics.md#the-activity-processing-stack) code.
     > [!NOTE]
     > Scoreables do not exist as such in v4. We check for a `cancel` message from the user in the bot's turn handler, before continuing any active dialog.
     ```csharp
@@ -348,8 +348,8 @@ Notes about the v4 code:
 
 In this bot, the root dialog prompts the user for a choice from a set of options, and then starts a child dialog based on that choice. This then loops for the lifetime of the conversation.
 
-- We can set the main flow up as a waterfall dialog, which is a new concept in the v4 SDK. It will run through a fixed set of steps in order. For more information, see [Implement sequential conversation flow](/articles/v4sdk/bot-builder-dialog-manage-conversation-flow).
-- Prompting is now handled through prompt classes, which are short child dialogs that prompt for input, do some minimal processing and validation, and return a value. For more information, see [gather user input using a dialog prompt](/articles/v4sdk/bot-builder-prompts.md).
+- We can set the main flow up as a waterfall dialog, which is a new concept in the v4 SDK. It will run through a fixed set of steps in order. For more information, see [Implement sequential conversation flow](~/v4sdk/bot-builder-dialog-manage-conversation-flow.md).
+- Prompting is now handled through prompt classes, which are short child dialogs that prompt for input, do some minimal processing and validation, and return a value. For more information, see [gather user input using a dialog prompt](~/v4sdk/bot-builder-prompts.md).
 
 In the **Dialogs/RootDialog.cs** file:
 
@@ -420,7 +420,7 @@ In the **Dialogs/RootDialog.cs** file:
     }
     ```
 1. We can replace **OnOptionSelected** with the second step of our waterfall. We still start a child dialog based on the user's input.
-   - The choice prompt returns a `FoundChoice` value. This shows up in the step context's `Result` property. The dialog stack treats all return values as objects. If the return value is from one of your dialogs, then you know what type of value the object is. See [prompt types](/articles/v4sdk/bot-builder-concept-dialog.md#prompt-types) for a list what each prompt type returns.
+   - The choice prompt returns a `FoundChoice` value. This shows up in the step context's `Result` property. The dialog stack treats all return values as objects. If the return value is from one of your dialogs, then you know what type of value the object is. See [prompt types](../bot-builder-concept-dialog.md#prompt-types) for a list what each prompt type returns.
    - Since the choice prompt won't throw an exception, can remove the try-catch block.
    - We need to add a fall through so that this method always returns an appropriate value. This code should never get hit, but if it does it will allow the dialog to "fail gracefully".
     ```csharp

@@ -99,7 +99,12 @@
       "source_path": "articles/bot-builder-tools-az-cli.md",
       "redirect_url": "/azure/bot-service/index",
       "redirect_document_id": false 
-    }, 
+    },
+    {
+      "source_path": "articles/bot-builder-tutorial-persist-user-inputs.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-state",
+      "redirect_document_id": true 
+    },
     {
       "source_path": "articles/bot-design-best-practices.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-design-principles",
@@ -433,6 +438,16 @@
     {
       "source_path": "articles/troubleshoot-general-problems.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-anatomy.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-basics",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-create-middleware.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware",
       "redirect_document_id": true 
     } 
   ]

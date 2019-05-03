@@ -12,7 +12,6 @@
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
 ## [botbuilder-samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
-## [Deploy bots from botbuilder-samples repo](bot-builder-deploy-samples.md)
 # Concepts
 ## [How bots work](v4sdk/bot-builder-basics.md)
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
@@ -40,30 +39,28 @@
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 <!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
+### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
-### Manage conversations using the Dialogs library 
-#### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
-#### [Gather user input using a dialog prompt](v4sdk/bot-builder-prompts.md)
-#### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
-#### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
-#### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)
-#### [Reuse dialogs](v4sdk/bot-builder-compositcontrol.md)
+### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
+### [Reuse dialogs](v4sdk/bot-builder-compositcontrol.md)
+<!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
+### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
+<!--#### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)--TODO: redirect to write directly to storage.-->
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Use Direct Line Speech in your bot](directline-speech-bot.md)
-### [Manage bots using CLI tools](bot-builder-tools.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
 ## [Debug](debug/TOC.md)
 ## Deploy
 ### [Deploy your bot to Azure](bot-builder-deploy-az-cli.md)
 <!-- ### [Deploy your C# bot using Visual Studio](bot-builder-howto-deploy-azure.md)
-### [Download and redeploy bot code](bot-service-build-download-source-code.md) 
-### [Set up continuous deployment](bot-service-build-continuous-deployment.md) -->
+### [Download and redeploy bot code](bot-service-build-download-source-code.md) -->
+### [Set up continuous deployment](bot-service-build-continuous-deployment.md)
 ## [Manage](manage/TOC.md)
 ## [Migrate](v4sdk/migration/TOC.md)
 # Reference
