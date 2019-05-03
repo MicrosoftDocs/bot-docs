@@ -26,7 +26,7 @@ To send a simple text message, specify the string you want to send as the activi
 
 # [C#](#tab/csharp)
 
-In the bot's `OnTurnAsync` method, use the turn context object's `SendActivityAsync` method to send a single message response. You can also use the object's `SendActivitiesAsync` method to send multiple responses at once.
+In the bot's activity handlers, use the turn context object's `SendActivityAsync` method to send a single message response. You can also use the object's `SendActivitiesAsync` method to send multiple responses at once.
 
 ```cs
 await turnContext.SendActivityAsync($"Welcome!");
@@ -34,7 +34,7 @@ await turnContext.SendActivityAsync($"Welcome!");
 
 # [JavaScript](#tab/javascript)
 
-In the bot's `onTurn` handler, use the turn context object's `sendActivity` method to send a single message response. You can also use the object's `sendActivities` method to send multiple responses at once.
+In the bot's activity handlers, use the turn context object's `sendActivity` method to send a single message response. You can also use the object's `sendActivities` method to send multiple responses at once.
 
 ```javascript
 await context.sendActivity("Welcome!");
@@ -46,7 +46,7 @@ To receive a simple text message, use the *text* property of the *activity* obje
 
 # [C#](#tab/csharp)
 
-In the bot's `OnTurnAsync` method, use the `following code to receive a message. 
+In the bot's activity handlers, use the following code to receive a message. 
 
 ```cs
 var responseMessage = turnContext.Activity.Text;
@@ -54,7 +54,7 @@ var responseMessage = turnContext.Activity.Text;
 
 # [JavaScript](#tab/javascript)
 
-In the bot's `OnTurnAsync` method, use the following code to receive a message.
+In the bot's activity handlers, use the following code to receive a message.
 
 ```javascript
 let text = turnContext.activity.text;
@@ -65,5 +65,9 @@ let text = turnContext.activity.text;
 ## Additional resources
 
 - For more information about activity processing in general, see [activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack).
-- For sending richer content, see how to add [rich media](bot-builder-howto-add-media-attachments.md) attachments.
 - For more information on formatting, see the [message activity section](https://aka.ms/botSpecs-activitySchema#message-activity) of the Bot Framework Activity schema.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Add media to messages](./bot-builder-howto-add-media-attachments.md)

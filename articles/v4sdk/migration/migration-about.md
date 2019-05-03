@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 02/11/2019
+ms.date: 03/28/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,15 +20,15 @@ Version 4 of the Bot Framework SDK supports the same underlying Bot Framework Se
   - The adapter handles Bot Framework authentication.
   - The adapter manages incoming and outgoing traffic between a channel and your bot's turn handler, encapsulating the calls to the Bot Framework Connector.
   - The adapter initializes context for each turn.
-  - For more details, see [how bots work](../bot-builder-basics.md).
+  - For more details, see [how bots work][about-bots].
 - Refactored state management.
   - State data is no longer automatically available within a bot.
   - State is now managed via state management objects and property accessors.
-  - For more details, see [managing state](../bot-builder-concept-state.md).
+  - For more details, see [managing state][about-state].
 - A new Dialogs library.
   - v3 dialogs will need to be rewritten for the new dialog library.
-  - Scoreables no longer exist. You can check for "global" commands in the turn handler, before passing control to your dialogs.
-  - For more details, see [dialogs library](../bot-builder-concept-dialog.md).
+  - Scoreables no longer exist. You can check for "global" commands, before passing control to your dialogs. Depending on how you design your v4 bot, this could be in the message handler or a parent dialog. For an example, see how to [handle user interruptions][interruptions].
+  - For more details, see [dialogs library][about-dialogs].
 - Support for ASP.NET Core.
   - The templates for creating new C# bots target the ASP.NET Core framework.
   - You can still use ASP.NET for your bots, but our focus for v4 is on supporting the ASP.NET Core framework.
@@ -36,39 +36,33 @@ Version 4 of the Bot Framework SDK supports the same underlying Bot Framework Se
 
 ## Activity processing
 
-When you create the adapter for your bot, you also provide a turn handler delegate that will receive incoming activities from channels and users. The adapter creates a turn context object for each received activity. It passes the turn context object to the turn handler, and then disposes the object when the turn completes.
+When you create the adapter for your bot, you also provide a message handler delegate that will receive incoming activities from channels and users. The adapter creates a turn context object for each received activity. It passes the turn context object to the bot's turn handler, and then disposes the object when the turn completes.
 
-The turn handler can receive many types of activities. In general, you will want to forward only _message_ activities to any dialogs your bot contains. For detailed information about activity types, see the [activity schema](https://aka.ms/botSpecs-activitySchema).
+The turn handler can receive many types of activities. In general, you will want to forward only _message_ activities to any dialogs your bot contains. If you derive your bot from `ActivityHandler`, the bot's turn handler will forward all message activities to `OnMessageActivityAsync`. Override this method to add message handling logic. For detailed information about activity types, see the [activity schema][].
 
 ### Handling turns
 
-Your turn handler needs to match the signature for a `BotCallbackHandler`:
-
-```csharp
-public delegate Task BotCallbackHandler(
-    ITurnContext turnContext,
-    CancellationToken cancellationToken);
-```
-
-When handling a turn, use the turn context to get information about the incoming activity and to send activities to the user:
+When handling a message, use the turn context to get information about the incoming activity and to send activities to the user:
 
 | | |
 |-|-|
 | To get the incoming activity | Get the turn context's `Activity` property. |
-| To create and send an activity to the user | Call the turn context's `SendActivityAsync` method.<br/>For more information, see [send and receive a text message](../bot-builder-howto-send-messages.md) and [add media to messages](../bot-builder-howto-add-media-attachments.md) |
+| To create and send an activity to the user | Call the turn context's `SendActivityAsync` method.<br/>For more information, see [send and receive a text message][send-messages] and [add media to messages][send-media]. |
 
 The `MessageFactory` class provides some helper methods for creating and formating activities.
 
 ### Scorables is gone
 
-Handle these in the bot's message loop. For a description of how to do this with v4 dialogs, see how to [handle user interruptions](../bot-builder-howto-handle-user-interrupt.md).
+Handle these in the bot's message loop. For a description of how to do this with v4 dialogs, see how to [handle user interruptions][interruptions].
 
 Composable scorable dispatch trees and composable chain dialogs, such as _default exception_, are also gone. One way to reproduce this functionality, is to implement it within your bot's turn handler.
 
 ## State management
 
+In v3, you could store conversation data in the Bot State Service, part of the larger suite of services provided by the Bot Framework. However, the service has been retired since March 31st, 2018. Beginning with v4, the design considerations on managing state is just like any Web App and there are a number of options available. Caching it in memory and in the same process is usually the easiest; however, for production apps you should store state more permanently, such as in an SQL or NoSQL database or as blobs.
+
 v4 doesn't use `UserData`, `ConversationData`, and `PrivateConversationData` properties and data bags to manage state.
-​State is now managed via state management objects and property accessors as described in [managing state](../bot-builder-concept-state.md).
+​State is now managed via state management objects and property accessors as described in [managing state][about-state].
 
 v4 defines `UserState`, `ConversationState`, and `PrivateConversationState` classes that manage state data for the bot. You need to create a state property accessor for each property you want to persist, instead of just reading and writing to a predefined data bag.
 
@@ -97,8 +91,6 @@ Use the state property accessors to get and update your properties, and use the 
 | To update the current, cached value of a property | Call `IStatePropertyAccessor<T>.SetAsync`.<br/>This only updates the cache, and not the backing storage layer. |
 | To persist state changes to storage | Call `BotState.SaveChangesAsync` for any of the state management objects in which state has changed before exiting the turn handler. |
 
-See [saving state](../bot-builder-concept-state.md#saving-state) for more information.
-
 ### Managing concurrency
 
 Your bot may need to manage state concurrency. For more information, see the [saving state](../bot-builder-concept-state.md#saving-state) section of **Managing state**, and the [manage concurrency using eTags](../bot-builder-howto-v4-storage.md#manage-concurrency-using-etags) section of **Write directly to storage**.
@@ -116,25 +108,21 @@ Here are some of the major changes to dialogs:
 
 ### Defining dialogs
 
+While v3 provided a flexible way to implement dialogs using the `IDialog` interface, it meant that you had to implement your own code for features such as validation. In v4, there are now prompt classes that will automatically validate the user input for you, constrain it to a specific type (such as an integer), and prompt the user again until they provide valid input. In general, this means less code to write as a developer.
+
 You have a few options for how to define dialogs now:
 
-- A waterfall dialog, an instance of the `WaterfallDialog` class.
+| | |
+|:--|:--|
+| A component dialog, derived from the `ComponentDialog` class | Allows you to encapsulate dialog code without naming conflicts with the outer contexts. See [reuse dialogs][reuse-dialogs]. |
+| A waterfall dialog, an instance of the `WaterfallDialog` class | Designed to work well with prompt dialogs, which prompt for and validate various types of user input. A waterfall automates most of the process for you, but imposes a certain form to your dialog code; see [sequential conversation flow][sequential-flow]. |
+| A custom dialog, derived from the abstract `Dialog` class | This gives you the most flexibility in how your dialogs behave, but also requires you to know more about how the dialog stack is implemented. |
 
-  This is designed to work well with the prompt dialogs, which prompt for and validate various types of user input. See [prompt for input](../bot-builder-prompts.md).
+In v3, you used `FormFlow` to perform a set number of steps for a task. In v4, the waterfall dialog replaces FormFlow. When you create a waterfall dialog, you define the steps of the dialog in the constructor. The order of steps executed follows exactly how you have declared it and automatically moves forward one after another.
 
-  This automates most of the process for you, but imposes a certain form to your dialog code; see [sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md). However, you can create other control flows by adding multiple dialogs to a dialog set; see [advanced conversation flow](../bot-builder-dialog-manage-complex-conversation-flow.md).
+You can also create complex control flows by using multiple dialogs; see [advanced conversation flow][complex-flow].
 
-- A component dialog, derived from the `ComponentDialog` class.
-
-  This allows you to encapsulate dialog code without naming conflicts with the outer contexts. See [reuse dialogs](../bot-builder-compositcontrol.md).
-
-- A custom dialog, derived from the abstract `Dialog` class.
-
-  This gives you the most flexibility in how your dialogs behave, but also requires you to know more about how the dialog stack is implemented.
-
-To access a dialog, you need to put an instance of it in a _dialog set_ and then generate a _dialog context_ for that set.
-
-You need to provide a dialog state property accessor when you create a dialog set. This allows the framework to persist dialog state from one turn to the next. [Managing state](../bot-builder-concept-state.md) describes how state is managed in v4.
+To access a dialog, you need to put an instance of it in a _dialog set_ and then generate a _dialog context_ for that set. You need to provide a dialog state property accessor when you create a dialog set. This allows the framework to persist dialog state from one turn to the next. [Managing state][about-state] describes how state is managed in v4.
 
 ### Using dialogs
 
@@ -154,7 +142,7 @@ Here's a list of common operations in v3, and how to accomplish them within a wa
 
 Other notes about the v4 code:
 
-- The various `Prompt` derived classes in v4 implement user prompts as separate, two-step dialogs. See how to [gather user input using a dialog prompt](../bot-builder-prompts.md).
+- The various `Prompt` derived classes in v4 implement user prompts as separate, two-step dialogs. See how to [implement sequential conversation flow][sequential-flow].
 - Use `DialogSet.CreateContextAsync` to create a dialog context for the current turn.
 - From within a dialog, use the `DialogContext.Context` property to get the current turn context.
 - Waterfall steps have a `WaterfallStepContext` parameter, which derives from `DialogContext`.
@@ -190,3 +178,19 @@ In v3, Formflow was part of the C# SDK, but not part of the JavaScript SDK. It i
 ## Additional resources
 
 - [Migrate a .NET SDK v3 bot to v4](conversion-framework.md)
+
+<!-- -->
+
+[about-bots]: ../bot-builder-basics.md
+[about-state]: ../bot-builder-concept-state.md
+[about-dialogs]: ../bot-builder-concept-dialog.md
+
+[send-messages]: ../bot-builder-howto-send-messages.md
+[send-media]: ../bot-builder-howto-add-media-attachments.md
+
+[sequential-flow]: ../bot-builder-dialog-manage-conversation-flow.md
+[complex-flow]: ../bot-builder-dialog-manage-complex-conversation-flow.md
+[reuse-dialogs]: ../bot-builder-compositcontrol.md
+[interruptions]: ../bot-builder-howto-handle-user-interrupt.md
+
+[activity schema]: https://aka.ms/botSpecs-activitySchema

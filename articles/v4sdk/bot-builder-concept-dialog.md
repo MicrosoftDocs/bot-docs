@@ -28,7 +28,7 @@ The dialogs library has a few additional pieces included to make dialogs more us
 
 *Dialog sets* are, in the simplest terms, a collection of dialogs. This can be things like prompts, waterfall dialogs, or [component dialogs](#component-dialog). Each of these are implementations of a dialog, and each are added to the dialog set with a specific string ID. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that string ID to specify which dialog to use.
 
-*Dialog context* contains information pertaining to the dialog, and is used to interact with a dialog set from within your bot's turn handler. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with it's string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
+*Dialog context* contains information pertaining to the dialog, and is used to interact with a dialog set from within your bot's turn handler. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with its string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
 
 When a dialog ends, it can return a *dialog result* with some resulting information from the dialog. This is returned to let the calling method see what happened within the dialog and save the information to some persisted location, if desired.
 
@@ -89,7 +89,7 @@ The following diagram shows a sequence of waterfall steps and the stack operatio
 
 ![Dialog concept](media/bot-builder-dialog-concept.png)
 
-Within waterfall steps, the context of the waterfall dialog is stored in it's *waterfall step context*. This is similar to the dialog context as it provides access to the current turn context and state. Use the waterfall step context object to interact with a dialog set from within a waterfall step.
+Within waterfall steps, the context of the waterfall dialog is stored in its *waterfall step context*. This is similar to the dialog context as it provides access to the current turn context and state. Use the waterfall step context object to interact with a dialog set from within a waterfall step.
 
 You can handle a return value from a dialog either within a waterfall step in a dialog or from your bot's on turn handler, although you generally only need to check the status of the dialog turn result from your bot's turn logic.
 Within a waterfall step, the dialog provides the return value in the waterfall step context's _result_ property.
@@ -116,7 +116,8 @@ You can use the dialog context to begin, continue, replace, or end a dialog. You
 
 Dialogs can be thought of as a programmatic stack, which we call the *dialog stack*, with the turn handler as the one directing it and serving as the fallback if the stack is empty. The topmost item on that stack is considered the *active dialog*, and the dialog context directs all input to the active dialog.
 
-When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down becomes the active dialog again. This allows for branching and looping, discussed below.
+When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down becomes the active dialog again. This allows for [repeating a dialog](#repeating-a-dialog) or [branching a conversation](#branch-a-conversation), discussed below.
+
 
 ### Create the dialog context
 

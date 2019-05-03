@@ -57,7 +57,7 @@ As part of the Azure Bot Service, we offer additional components you can use to 
 > [!NOTE]
 > The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can manage a bot configuration file, configure LUIS apps, build a QnA knowledge base, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/botbuilder-tools-readme).
+Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to dispatch between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/botbuilder-tools-readme).
 
 You also have access to a variety of [samples](https://github.com/microsoft/botbuilder-samples) that showcase many of the capabilities available through the SDK. These are great for developers looking for a more feature rich starting point.
 

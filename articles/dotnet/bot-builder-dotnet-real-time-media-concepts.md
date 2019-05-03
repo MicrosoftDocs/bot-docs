@@ -1,4 +1,8 @@
 ---
+redirect_url: https://aka.ms/realTimeMediaCalling-repo
+---
+<!--
+---
 title: Real-time media calling with Skype | Microsoft Docs
 description: Understand key concepts in building a bot that can conduct real-time audio and video calls with Skype, using the Bot Framework SDK for .NET.
 author: ssulzer
@@ -60,3 +64,4 @@ To develop a real-time media bot, you must install these NuGet packages within y
 ### Code samples
 
 The [BotBuilder-RealTimeMediaCalling](https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling) GitHub repository contains samples that show how to build real-time media bots for Skype.
+-->

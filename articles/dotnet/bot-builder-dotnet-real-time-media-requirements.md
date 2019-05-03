@@ -1,4 +1,8 @@
 ---
+redirect_url: https://aka.ms/realTimeMediaCalling-repo
+---
+<!--
+---
 title: Requirements and considerations for real-time media bots | Microsoft Docs
 description: Understand important requirements and considerations related to creating real-time media bots for Skype, using the Bot Framework SDK for .NET.
 author: ssulzer
@@ -49,3 +53,4 @@ Not all guidance that applies to developing messaging and IVR calling bots appli
   2. The Real-Time Media Platform does not currently take advantage of any Graphics Processing Unit (GPU) available on the VM to off-load H.264 video encoding/decoding. Instead, video encode and decode are done in software on the CPU. If a GPU is available, the bot may take advantage of it for its own graphics rendering (e.g., if the bot is using a 3D graphics engine).
 
 - The VM instance hosting the real-time media bot must have at least 2 CPU cores. For Azure, a Dv2-series virtual machine is recommended. Detailed information about Azure VM types is available in the <a href="/azure/virtual-machines/windows/sizes-general" target="_blank">Azure documentation</a>. 
+-->

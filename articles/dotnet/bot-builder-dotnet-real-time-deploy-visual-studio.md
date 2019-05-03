@@ -1,4 +1,8 @@
 ---
+redirect_url: https://aka.ms/realTimeMediaCalling-repo
+---
+<!--
+---
 title: Deploy a Skype real-time media bot to Azure | Microsoft Docs
 description: Learn how to deploy a Skype real-time audio-video bot to Azure using Visual Studio's built-in publishing feature.
 author: MalarGit
@@ -79,3 +83,4 @@ You can optionally choose **Advanced Settings** and specify the Storage account 
 ![Click Advanced Settings tab](../media/real-time-media-bot-publish-advanced-settings.png)
 
 Verify the configuration in the **Summary** tab and click **Publish** to deploy the bot to Microsoft Azure.
+-->

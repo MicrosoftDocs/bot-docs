@@ -1,4 +1,8 @@
 ---
+redirect_url: https://aka.ms/realTimeMediaCalling-repo
+---
+<!--
+---
 title: Build a real-time media bot for Skype | Microsoft Docs
 description: Learn how to build a bot that conducts real-time audio/video calls with Skype, using the Bot Framework SDK for .NET and the Bot Builder-RealTimeMediaCalling SDK for .NET.
 author: MalarGit
@@ -370,3 +374,4 @@ The bot can choose to end the call by calling `EndCall` on `IRealTimeMediaCallSe
 ### Handle call clean up by the Bot Framework
 On error conditions (for example, if `AnswerAppHostedMediaOutcomeEvent` is not received within a reasonable time), the Bot Framework may terminate the call. The bot should register for `OnCallCleanup` event and dispose the media sockets.
 
+-->

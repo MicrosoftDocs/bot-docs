@@ -1,7 +1,13 @@
 ---
+redirect_url: /bot-framework/bot-builder-tools
+---
+
+<!--
+
+---
 title: Manage bots using CLI tools
 description: Bot Framework Tools allows you to manage your bot resources directly from the command line
-keywords: botbuilder templates, ludown, qna, luis, msbot, manage, cli, .bot, bot
+keywords: botbuilder templates, ludown, qna, luis, msbot, manage, cli, bot
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
@@ -147,27 +153,6 @@ ludown parse ToQna --in <luFile>
 
 The resulting JSON files can be consumed by LUIS and QnA either through their respective portals, or via the new CLI tools. See [LUdown CLI][ludown] GitHub repo to learn more.
 
-### Track service references using .bot file
-
-The new [MSBot][msbotCli] tool allows you to create a **.bot** file, which stores metadata about different services your bot consumes, all in one location. This file also enables your bot to connect to these services from the CLI. The tool is available as an npm module, to install it run:
-
-```shell
-npm install -g msbot
-```
-
-To create a bot file, from your CLI enter **msbot init** followed by the name of your bot, and the target URL endpoint, for example:
-
-```shell
-msbot init --name TestBot --endpoint http://localhost:9499/api/messages
-```
-To connect your bot to a service, in your CLI enter **msbot connect** followed by the appropriate service:
-
-```shell
-msbot connect [Service]
-```
-
-To get the list of supported services, refer to the [readme][msbotCli] file.
-
 ### Create and manage LUIS applications using LUIS CLI
 
 Included in the new tool set is a [LUIS extension][luisCli] which allows you to independently manage your LUIS resources. It is available as an npm module which you can download:
@@ -219,7 +204,7 @@ Use the Dispatch model in cases when:
 - Evaluate quality of intents classification of a single LUIS model.
 - Create a text classification model from text files.
 
-Once you have assembled your .bot file with the [LUIS applications][msbotCli-luis] and [QnA Maker knowledge bases][msbotCli-qna] your bot relies on, you can simply build a dispatch model using: 
+Once you have assembled your settings file with the LUIS applications and QnA Maker knowledge bases that your bot relies on, you can simply build a dispatch model using: 
 
 ```shell
 dispatch create -b <YOUR-BOT-FILE> | msbot connect dispatch --stdin
@@ -318,20 +303,20 @@ Group
 
 ```
 
-## Additional information
+## Additional resources
 
 - [Bot Framework Tools on GitHub][cliTools]
 - [.lu file format](https://aka.ms/ludown-file-format)
 
-<!-- Footnote links -->
+
 
 [cliTools]: https://aka.ms/botbuilder-tools-readme
 [azureCli]: https://aka.ms/botbuilder-tools-azureCli
-[msbotCli]: https://aka.ms/botbuilder-tools-msbot-readme
-[msbotCli-luis]: https://aka.ms/botbuilder-tools-msbot-readme#connecting-to-luis-application
-[msbotCli-qna]: https://aka.ms/botbuilder-tools-msbot-readme#connecting-to-qna-maker-knowledge-base
 [chatdown]: https://aka.ms/botbuilder-tools-chatdown
 [ludown]: https://aka.ms/botbuilder-ludown
 [luisCli]: https://aka.ms/botbuilder-luis-cli
 [qnaCli]: https://aka.ms/botbuilder-tools-qnaMaker
 [dispatchCli]: https://aka.ms/botbuilder-tools-dispatch
+
+
+-->

@@ -99,11 +99,10 @@ At this point your bot is deployed as a Cortana skill to your account.
 
 ## Next steps
 
-* [Cortana Skills Kit](https://aka.ms/CortanaSkillsDocs)
+* [Cortana Skills Kit](https://aka.ms/CortanaSkillsKitOverview)
 * [Enable debugging](bot-service-debug-cortana-skill.md)
 * [Publish a Cortana skill][publish]
 
 [invocation]: https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines
 [publish]: https://docs.microsoft.com/en-us/cortana/skills/publish-skill
-[connected]: https://aka.ms/CortanaSkillsBotConnectedAccount
 [CortanaEntity]: https://aka.ms/lgvcto

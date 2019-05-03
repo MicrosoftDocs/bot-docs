@@ -93,7 +93,7 @@
         {
             "path_to_root": "botbuilder-samples",
             "url": "https://github.com/Microsoft/BotBuilder-Samples",
-            "branch": "samples-work-in-progress",
+            "branch": "master",
             "branch_mapping": {}
         }
     ],
