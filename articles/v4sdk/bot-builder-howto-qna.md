@@ -58,7 +58,7 @@ Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located 
    - Host: <Your_Hostname>/qnamaker
    - Authorization: EndpointKey <Your_Endpoint_Key>
    
-These three values provide the information necessary for your app to connect to your QnA Maker knowledgebase via your Azure QnA service.  
+The full URL string for your Hostname will look like "https://< >.azure.net/qnamaker". These three values will provide the information necessary for your app to connect to your QnA Maker knowledgebase via your Azure QnA service.  
 
 ## Update the settings file
 
@@ -110,7 +110,7 @@ Be sure that the **Microsoft.Bot.Builder.AI.QnA** NuGet package is installed for
 In **QnABot.cs**, in the `OnMessageActivityAsync` method, we create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in `appsettings.json` above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **Bots/QnABot.cs**
-[!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=27-32)]
+[!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-37)]
 
 ## [JavaScript](#tab/js)
 
@@ -123,6 +123,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 **QnAMaker.js**
 [!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=19-23)]
 
+
 ---
 
 ## Calling QnA Maker from your bot
@@ -132,7 +133,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your bot code to get the appropriate answer based on the current context. If you are accessing your own knowledge base, change the _no answers found_ message below to provide useful instructions for your users.
 
 **QnABot.cs**
-[!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=36-45)]
+[!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-52)]
 
 ## [JavaScript](#tab/js)
 
