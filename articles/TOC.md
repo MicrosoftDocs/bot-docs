@@ -11,7 +11,7 @@
 ## [2. Add QnA Maker and redeploy a bot](v4sdk/bot-builder-tutorial-add-qna.md)
 ## [Add authentication to your bot](bot-builder-tutorial-authentication.md)
 # Samples
-## [botbuilder-samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
+## [Bot Framework samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
 # Concepts
 ## [How bots work](v4sdk/bot-builder-basics.md)
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
