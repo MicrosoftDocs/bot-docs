@@ -1,6 +1,7 @@
 # [Azure Bot Service Documentation](index.md)
 # Overview
 ## [About Azure Bot Service](bot-service-overview-introduction.md)
+## [What's new](what-is-new.md)
 # Quickstart
 ## [Create a bot with Azure Bot Service](~/bot-service-quickstart.md)
 ## Create a bot locally
