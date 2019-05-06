@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,7 +64,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Order=-700, PropertyName="from", Required=Newtonsoft.Json.Required.Always)</AttributeName>
         </Attribute>
       </Attributes>
@@ -151,7 +151,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Order=-900, PropertyName="type", Required=Newtonsoft.Json.Required.Always)</AttributeName>
         </Attribute>
       </Attributes>
@@ -195,7 +195,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Order=-800, PropertyName="to", Required=Newtonsoft.Json.Required.Always)</AttributeName>
         </Attribute>
       </Attributes>

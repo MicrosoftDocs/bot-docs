@@ -1,0 +1,249 @@
+﻿<Type Name="LuisTelemetryConstants" FullName="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants">
+  <TypeSignature Language="C#" Value="public static class LuisTelemetryConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LuisTelemetryConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisTelemetryConstants" />
+  <TypeSignature Language="F#" Value="type LuisTelemetryConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivityIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string ActivityIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ActivityIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.ActivityIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ActivityIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ActivityIdProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.ActivityIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string ApplicationIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ApplicationIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.ApplicationIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ApplicationIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ApplicationIdProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.ApplicationIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntitiesProperty">
+      <MemberSignature Language="C#" Value="public static readonly string EntitiesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string EntitiesProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.EntitiesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EntitiesProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable EntitiesProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.EntitiesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string FromIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string FromIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.FromIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FromIdProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.FromIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intent2Property">
+      <MemberSignature Language="C#" Value="public static readonly string Intent2Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Intent2Property" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.Intent2Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Intent2Property As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Intent2Property : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.Intent2Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntentProperty">
+      <MemberSignature Language="C#" Value="public static readonly string IntentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IntentProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.IntentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IntentProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable IntentProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.IntentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntentScore2Property">
+      <MemberSignature Language="C#" Value="public static readonly string IntentScore2Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IntentScore2Property" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.IntentScore2Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IntentScore2Property As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable IntentScore2Property : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.IntentScore2Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntentScoreProperty">
+      <MemberSignature Language="C#" Value="public static readonly string IntentScoreProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IntentScoreProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.IntentScoreProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IntentScoreProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable IntentScoreProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.IntentScoreProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisResult">
+      <MemberSignature Language="C#" Value="public static readonly string LuisResult;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string LuisResult" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.LuisResult" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LuisResult As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable LuisResult : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.LuisResult" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionProperty">
+      <MemberSignature Language="C#" Value="public static readonly string QuestionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string QuestionProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.QuestionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuestionProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable QuestionProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.QuestionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SentimentLabelProperty">
+      <MemberSignature Language="C#" Value="public static readonly string SentimentLabelProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SentimentLabelProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.SentimentLabelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SentimentLabelProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SentimentLabelProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.SentimentLabelProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SentimentScoreProperty">
+      <MemberSignature Language="C#" Value="public static readonly string SentimentScoreProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SentimentScoreProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.SentimentScoreProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SentimentScoreProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SentimentScoreProperty : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants.SentimentScoreProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -47,7 +47,7 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;Score&gt;" />
         <Parameter Name="factories" Type="Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Item,Score&gt;[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

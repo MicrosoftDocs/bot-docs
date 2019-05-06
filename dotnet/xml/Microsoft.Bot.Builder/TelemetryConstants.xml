@@ -1,0 +1,268 @@
+﻿<Type Name="TelemetryConstants" FullName="Microsoft.Bot.Builder.TelemetryConstants">
+  <TypeSignature Language="C#" Value="public static class TelemetryConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TelemetryConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TelemetryConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class TelemetryConstants" />
+  <TypeSignature Language="F#" Value="type TelemetryConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string ChannelIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ChannelIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.ChannelIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChannelIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ChannelIdProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.ChannelIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string ConversationIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ConversationIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.ConversationIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConversationIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ConversationIdProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.ConversationIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly string ConversationNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ConversationNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.ConversationNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConversationNameProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ConversationNameProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.ConversationNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string DialogIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DialogIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.DialogIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DialogIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable DialogIdProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.DialogIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string FromIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string FromIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.FromIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FromIdProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.FromIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly string FromNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string FromNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.FromNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromNameProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FromNameProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.FromNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocaleProperty">
+      <MemberSignature Language="C#" Value="public static readonly string LocaleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string LocaleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.LocaleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LocaleProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable LocaleProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.LocaleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string RecipientIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string RecipientIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.RecipientIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RecipientIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable RecipientIdProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.RecipientIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly string RecipientNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string RecipientNameProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.RecipientNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RecipientNameProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable RecipientNameProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.RecipientNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyActivityIDProperty">
+      <MemberSignature Language="C#" Value="public static readonly string ReplyActivityIDProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ReplyActivityIDProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.ReplyActivityIDProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ReplyActivityIDProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ReplyActivityIDProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.ReplyActivityIDProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakProperty">
+      <MemberSignature Language="C#" Value="public static readonly string SpeakProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SpeakProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.SpeakProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpeakProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SpeakProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.SpeakProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextProperty">
+      <MemberSignature Language="C#" Value="public static readonly string TextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string TextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.TextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.TextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly string UserIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string UserIdProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryConstants.UserIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UserIdProperty As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable UserIdProperty : string" Usage="Microsoft.Bot.Builder.TelemetryConstants.UserIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
