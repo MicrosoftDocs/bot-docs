@@ -32,10 +32,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="">
-      <AttributeName>Serializable</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>

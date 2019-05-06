@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotFrameworkAdapter</BaseTypeName>
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -42,6 +44,31 @@
       <Docs>
         <param name="credentialProvider">To be added.</param>
         <param name="channelProvider">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapter (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, System.Net.Http.HttpClient httpClient, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt; logger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class System.Net.Http.HttpClient httpClient, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt; logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * System.Net.Http.HttpClient * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt; -&gt; Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter" Usage="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter (credentialProvider, channelProvider, httpClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">To be added.</param>
+        <param name="channelProvider">To be added.</param>
+        <param name="httpClient">To be added.</param>
         <param name="logger">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -59,6 +86,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.WebApi</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

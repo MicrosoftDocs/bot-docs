@@ -1,0 +1,97 @@
+﻿<Type Name="TelemetryLoggerConstants" FullName="Microsoft.Bot.Builder.TelemetryLoggerConstants">
+  <TypeSignature Language="C#" Value="public static class TelemetryLoggerConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TelemetryLoggerConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TelemetryLoggerConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class TelemetryLoggerConstants" />
+  <TypeSignature Language="F#" Value="type TelemetryLoggerConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BotMsgDeleteEvent">
+      <MemberSignature Language="C#" Value="public static readonly string BotMsgDeleteEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string BotMsgDeleteEvent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgDeleteEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotMsgDeleteEvent As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotMsgDeleteEvent : string" Usage="Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgDeleteEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotMsgReceiveEvent">
+      <MemberSignature Language="C#" Value="public static readonly string BotMsgReceiveEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string BotMsgReceiveEvent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgReceiveEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotMsgReceiveEvent As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotMsgReceiveEvent : string" Usage="Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgReceiveEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotMsgSendEvent">
+      <MemberSignature Language="C#" Value="public static readonly string BotMsgSendEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string BotMsgSendEvent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgSendEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotMsgSendEvent As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotMsgSendEvent : string" Usage="Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgSendEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotMsgUpdateEvent">
+      <MemberSignature Language="C#" Value="public static readonly string BotMsgUpdateEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string BotMsgUpdateEvent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgUpdateEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotMsgUpdateEvent As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotMsgUpdateEvent : string" Usage="Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgUpdateEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
