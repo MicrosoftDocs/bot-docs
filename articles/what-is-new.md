@@ -157,6 +157,5 @@ A machine learning-based service to build natural language experiences. Quickly 
 ### Adaptive Cards
 [Adaptive Cards](https://adaptivecards.io) are an open standard for developers to exchange card content in a common and consistent way, and are used by Bot Framework developers to create great cross-channel conversatational experiences.
 
-
 ## Additional information
 - Visit GitHub page for more [information](https://github.com/Microsoft/botframework/blob/master/whats-new.md#whats-new).
