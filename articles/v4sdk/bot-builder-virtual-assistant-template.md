@@ -117,5 +117,6 @@ A middleware component is provided that screen texts and surfaces through a ```T
 # Next Steps
 Refer to [Getting Started](https://github.com/Microsoft/AI/tree/master/docs#tutorials) to learn how to create and deploy your Virtual Assistant. 
 
-# Resources
+# Additional resources
 Full source code for the Virtual Assistant Template can be found on [GitHub](https://github.com/Microsoft/AI/).
+
