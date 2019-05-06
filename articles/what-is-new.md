@@ -81,6 +81,7 @@ The [Bot Framework Solutions repository](https://github.com/Microsoft/AI#readme)
 
 | Name | Description |  
 |:------------|:------------| 
+
 |[**Virtual Assistant**](https://github.com/Microsoft/AI/tree/master/docs#virtual-assistant) | Customers and partners have a significant need to deliver a conversational assistant tailored to their brand, personalized to their users, and made available across a broad range of canvases and devices. <br/><br/> The Enterprise Template brings together all of the best practices and supporting components identified through building conversational experiences and greatly simplifies the creation of a new bot project including: basic conversational intents, Dispatch integration, QnA Maker, Application Insights and an automated deployment.|
 |[**Skills**](https://github.com/Microsoft/AI/blob/master/docs/overview/skills.md)| Developers can compose conversational experiences by stitching together re-usable conversational capabilities, known as Skills. Skills are themselves Bots, invoked remotely and a Skill developer template (.NET, TS) is available to facilitate creation of new Skills. 
 |[**Analytics**](https://github.com/Microsoft/AI/blob/master/docs/readme.md#analytics)| Gain key insights into your bot’s health and behavior with the Conversational AI Analytics solutions. Review available telemetry, sample Application Insights queries, and Power BI dashboards to understand the full breadth of your bot’s conversations with users. |
@@ -110,8 +111,8 @@ The [Bot Framework Emulator][60] is a  cross-platform desktop application that a
 
 <a name="Emulator-whats-new"></a>
 ### Bot Inspector (New! In preview)
-The Bot Framework Emulator has released a beta of the new Bot Inspector feature. It provides a way to debug and test your Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger, Skype, etc. As you have the conversation, messages will be mirrored to the Bot Framework Emulator where you can inspect the message data that the bot received. Additionally, a snapshot of the bot state for any given turn between the channel and the bot is rendered as well. Read more about [Bot Inspector](https://github.com/Microsoft/BotFramework-Emulator/blob/master/content/CHANNELS.md)
 
+The Bot Framework Emulator has released a beta of the new Bot Inspector feature. It provides a way to debug and test your Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger, Skype, etc. As you have the conversation, messages will be mirrored to the Bot Framework Emulator where you can inspect the message data that the bot received. Additionally, a snapshot of the bot state for any given turn between the channel and the bot is rendered as well. Read more about [Bot Inspector](https://github.com/Microsoft/BotFramework-Emulator/blob/master/content/CHANNELS.md)
 
 [60]:https://github.com/Microsoft/BotFramework-Emulator#readme
 [61]:https://github.com/Microsoft/BotFramework-Emulator/releases/latest
@@ -185,6 +186,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 [35]:https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
 
 ### Dispatch
+
 [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs) lets you build language models that allow you to dispatch between disparate components (such as QnA, LUIS and custom code).
 
 ### Speech Services
@@ -192,6 +194,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 ### Adaptive Cards
 [Adaptive Cards](https://adaptivecards.io) are an open standard for developers to exchange card content in a common and consistent way, and are used by Bot Framework developers to create great cross-channel conversatational experiences.
+
 
 ## Bot Framework SDK v3
 
