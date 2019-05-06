@@ -39,14 +39,13 @@ This article summarizes key new features and improvements in Bot Framework and A
 [111]:https://github.com/Microsoft/botbuilder-python/tree/master/samples
 
 <a name="V4-whats-new"></a>
-## Bot Framework SDK (New! v4.5 preview)
+## Bot Framework SDK (New! In preview)
 
 - [Adaptive Dialog][47] | [docs][48] | [C# samples][49]: Adaptive Dialogs enable developers to build conversations that can be dynamically changed as the conversation progresses.  Traditionally developers have mapped out the entire flow of a conversation up front, which limits the flexibility of the conversation.  Adaptive dialogs allow them to be more flexible, to respond to changes in context and insert new steps or entire sub-dialogs into the conversation as it progresses. 
 
 - [Language Generation][43] | [docs][44] | [C# samples][45]: Language Generation; which allows the developer to extract the embedded strings from their code and resource files and manage them through a Language Generation runtime and file format.  Language Generation enable customers to define multiple variations on a phrase, execute simple expressions based on context, refer to conversational memory, and over time will enable us to bring additional capabilities all leading to a more natural conversational experience.
 
 - [Common Expression Language][40] | [api][41]: Both Adaptive dialogs and Language Generation rely on and use a common expression language to power bot conversations.
-
 
 [40]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
 [41]:https://github.com/Microsoft/BotBuilder-Samples/blob/master/experimental/common-expression-language/api-reference.md
@@ -117,38 +116,6 @@ The Bot Framework Emulator has released a beta of the new Bot Inspector feature.
 [61]:https://github.com/Microsoft/BotFramework-Emulator/releases/latest
 [62]:https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0
 
-## Bot Framework Web Chat
-The Bot Framework [Web Chat][23] is a highly customizable web-based client chat control for Azure Bot Service that provides the ability for users to interact with your bot directly in a web page.
-
-- [Stable release][24] | [Docs][25]  | [Samples][26]
-
-[23]:https://github.com/Microsoft/BotFramework-WebChat#readme
-[24]:https://www.npmjs.com/package/botframework-webchat
-[25]:https://github.com/Microsoft/BotFramework-WebChat/tree/master/doc
-[26]:https://github.com/Microsoft/BotFramework-WebChat/tree/master/samples
-
-
-## Bot Framework Tools
-The Bot Framework SDK tools is an [open source](https://github.com/Microsoft/botbuilder-tools) collection of cross-platform command line tools designed to support building robust end-to-end development workflows.
-
-| Tool | Description |
-|------|--------------|
-| [Chatdown][16] | Prototype mock conversations in markdown and convert the markdown to transcripts you can load and view in the new V4 Bot Framework Emulator |
-| [LUDown][17]| Build LUIS language understanding models using markdown files|
-| [LUISGen][21] | Auto generate backing C# / Typescript classes for your LUIS intents and entities.|
-| [az bot][36] | Manage Azure Bot Service using Azure CLI|
-|[LUIS][LUISCLI] | Create and manage your [LUIS.ai](http://luis.ai) applications |
-|[QnAMaker][QNACLI] | Create and manage [QnAMaker.ai](http://qnamaker.ai) Knowledge Bases. |
-| [Dispatch][DispatchCLI] | Build language models allowing you to dispatch between disparate components (such as QnA, LUIS and custom code)|
-
-[16]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Chatdown#readme
-[17]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown#readme
-[21]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/LUISGen#readme
-[22]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/MSBot#readme
-[36]:https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest
-[LUISCLI]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/LUIS#readme
-[QNACLI]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/QnAMaker#readme
-[DispatchCLI]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch#readme
 
 ## Related Services
 
@@ -161,7 +128,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 - **New! Analytics dashboard**: LUIS is releasing a more detailed, visually-rich comprehensive analytics dashboard. Its user-friendly design highlights common issues most users face when designing applications, by providing simple explanations on how to resolve them to help users gain more insight into their models’ quality, potential data problems, and guidance to adopt best practices.
 
-[Docs][31] | [Add language understanding to your bot][32] | use [LUDown][17] and [LUIS][18] command line tools 
+[Docs][31] | [Add language understanding to your bot][32] 
 
 [18]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#readme
 [19]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#readme
@@ -178,15 +145,11 @@ A machine learning-based service to build natural language experiences. Quickly 
 - **New! Intelligence**: Contextual ranking models, active learning suggestions
 - **New! Conversation**: Multi-turn conversations in QnA Maker.
 
-[Docs][34]  | [add qnamaker to your bot][35] | use [LUDdown][17] and [QnAMaker][19] command line tools
+[Docs][34]  | [add qnamaker to your bot][35] 
 
 [33]:https://www.qnamaker.ai/
 [34]:https://aka.ms/qnamaker-docs-home
 [35]:https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
-
-### Dispatch
-
-[Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs) lets you build language models that allow you to dispatch between disparate components (such as QnA, LUIS and custom code).
 
 ### Speech Services
 [Speech Services](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/) convert audio to text, perform speech translation and text-to-speech with the unified Speech services. With the speech services, you can integrate speech into your bot, create custom wake words, and author in multiple languages.
@@ -194,24 +157,6 @@ A machine learning-based service to build natural language experiences. Quickly 
 ### Adaptive Cards
 [Adaptive Cards](https://adaptivecards.io) are an open standard for developers to exchange card content in a common and consistent way, and are used by Bot Framework developers to create great cross-channel conversatational experiences.
 
-
-## Bot Framework SDK v3
-
-> Note: While we actively maintain the v3 SDK, we are focusing out attention on the v4 of the SDK. Read more on [SDK v3 long-term support](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-3.0#bot-framework-sdk-version-3-lifetime-support).
-
-The Bot Framework SDK v3 includes SDKs that enable developers to model and build sophisticated conversation using their favorite programing language.
-
-|  | C# | JS |  
-|---|:---:|:---:|
-|Stable Release |[3.20.1][11] | [3.16.0][12] | 
-|Docs | [docs][13] |[docs][13] | 
-|Samples |[C#][14] |[Node.js][15] |
-
-[11]:https://www.nuget.org/packages/Microsoft.Bot.Builder/3.20.1
-[12]:https://www.npmjs.com/package/botbuilder/v/3.16.0
-[13]:https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-3.0
-[14]:https://github.com/Microsoft/BotBuilder-V3/tree/master/CSharp/Samples
-[15]:https://github.com/Microsoft/BotBuilder-V3/tree/master/Node/examples
 
 ## Additional information
 - Visit GitHub page for more [information](https://github.com/Microsoft/botframework/blob/master/whats-new.md#whats-new).
