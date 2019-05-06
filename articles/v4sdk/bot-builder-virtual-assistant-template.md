@@ -106,7 +106,7 @@ The Dispatcher is used at the core of each project created using the template. T
 
 Two example QnA Maker models are provided in the [LU](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md) file format within the QnA folder of CognitiveModels, one for FAQ and one for chit-chat. [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) is then used as part of the deployment script to create a QnA Maker JSON file which the [QnA Maker](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker) CLI (command line) tool then uses to publish items to the QnA Maker knowledgebase.
 
-![QnA ChitChat example](/docs/media/qnachitchatexample.png)
+![QnA ChitChat example](./media/enterprise-template/qnachitchatexample.png)
 
 ## Content Moderator
 
