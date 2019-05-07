@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Customize your Bot
 
 > [!NOTE]
-> This topic applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK.
 
 After you have deployed and tested that the Enterprise Bot Template works end-to-end as listed in the instructions [here](bot-builder-enterprise-template-getting-started.md),
 you can easily customize your bot based on your scenario and needs. The goal of the template is to provide a solid foundation upon which to build your conversational experience.
@@ -24,15 +24,15 @@ The folder structure of your Bot is shown below and represents our recommended b
     | - YourBot.bot         // The .bot file containing all of your Bot configuration including dependencies
     | - README.md           // README file containing links to documentation
     | - Program.cs          // Default Program.cs file
-    | - Startup.cs          // Core Bot Initialisation including Bot Configuration LUIS, Dispatcher, etc. 
+    | - Startup.cs          // Core Bot Initialisation including Bot Configuration LUIS, Dispatcher, etc.
     | - <BOTNAME>State.cs   // The Root State class for your Bot
     | - appsettings.json    // References above .bot file for Configuration information. App Insights key
-    | - CognitiveModels     
+    | - CognitiveModels
         | - LUIS            // .LU file containing base conversational intents (Greeting, Help, Cancel)
         | - QnA             // .LU file containing example QnA items
     | - DeploymentScripts   // msbot clone recipes for deployment
         | - de              // Deployment files for German
-        | - en              // Deployment files for English        
+        | - en              // Deployment files for English
         | - es              // Deployment files for Spanish
         | - fr              // Deployment files for French
         | - it              // Deployment files for Italian
@@ -52,7 +52,7 @@ The folder structure of your Bot is shown below and represents our recommended b
         | - Signin
     | - Middleware          // Telemetry, Content Moderator
     | - ServiceClients      // SDK libraries, example GraphClient provided for Auth example
-   
+
 ## Update Introduction Message
 
 The Introduction message makes use of an [Adaptive Card](https://www.adaptivecards.io). To customize this introduction for your bot you can find the JSON file within the Dialogs/Main/Resources folder called ```Intro.json```. Use the [Adaptive Card visualizer](http://adaptivecards.io/visualizer) to modify the Adaptive Card to suit your Bot's requirements.
@@ -65,7 +65,7 @@ You can change the responses in the Visual Studio resource editor as shown below
 
 ![Customizing Bot Responses](media/enterprise-template/EnterpriseBot-CustomisingResponses.png)
 
-This approach supports multi-lingual responses using the standard resource file localization approach. Further information can be found [here.](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1)
+This approach supports multi-lingual responses using the standard resource file localization approach. Further information can be found [here.](https://docs.microsoft.com/aspnet/core/fundamentals/localization?view=aspnetcore-2.1)
 
 ## Updating your Cognitive Models
 
@@ -73,12 +73,12 @@ There are two Cognitive Models included with the Enterprise Template by default,
 
 ### Updating an existing LUIS Model
 To update an existing LUIS model for the Enterprise Template, perform these steps:
-1. Make your changes to the LUIS Model in the [LUIS Portal](http://luis.ai) or using the [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) and [Luis](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS) CLI tools. 
+1. Make your changes to the LUIS Model in the [LUIS Portal](http://luis.ai) or using the [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) and [Luis](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS) CLI tools.
 2. Run the following command to update your Dispatch model to reflect your changes (ensures proper message routing):
     ```shell
     dispatch refresh --bot "YOUR_BOT.bot" --secret YOUR_SECRET
     ```
-3. Run the following command from your project root for each updated model to update their associated LuisGen classes: 
+3. Run the following command from your project root for each updated model to update their associated LuisGen classes:
     ```shell
     luis export version --appId [LUIS_APP_ID] --versionId [LUIS_APP_VERSION] --authoringKey [YOUR_LUIS_AUTHORING_KEY] | luisgen --cs [CS_FILE_NAME] -o "\Dialogs\Shared\Resources"
     ```
@@ -93,11 +93,11 @@ To update an existing QnA Maker knowledge base, perform the following steps:
 
 ### Adding a new LUIS model
 
-In scenarios where you wish to add a new LUIS model to your project you need to update the Bot configuration and Dispatcher to ensure it is aware of the additional model. 
+In scenarios where you wish to add a new LUIS model to your project you need to update the Bot configuration and Dispatcher to ensure it is aware of the additional model.
 1. Create your LUIS model through LuDown/LUIS CLI tools or through the LUIS portal
 2. Run the following command to connect your new LUIS app to your .bot file:
     ```shell
-    msbot connect luis --appId [LUIS_APP_ID] --authoringKey [LUIS_AUTHORING_KEY] --subscriptionKey [LUIS_SUBSCRIPTION_KEY] 
+    msbot connect luis --appId [LUIS_APP_ID] --authoringKey [LUIS_AUTHORING_KEY] --subscriptionKey [LUIS_SUBSCRIPTION_KEY]
     ```
 3. Add this new LUIS model to your Dispatcher through the following command
     ```shell
@@ -159,7 +159,7 @@ To add a new Dialog to your Bot you need to first create a new Folder under Dial
 
 Then you need to create the Template Manager to handle responses. Create a new class and derive from TemplateManager, an example is provided in the OnboardingResponses.cs file and an excerpt is shown below.
 
-```    
+```
  ["default"] = new TemplateIdMap
             {
                 { ResponseIds.EmailPrompt,
@@ -183,7 +183,7 @@ Then you need to create the Template Manager to handle responses. Create a new c
                         ssml: string.Format(OnboardingStrings.HAVE_LOCATION, data.Name, data.Location),
                         inputHint: InputHints.IgnoringInput)
                 },
-                
+
                 ...
 ```
 

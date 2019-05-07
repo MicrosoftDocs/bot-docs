@@ -49,7 +49,7 @@ We will import an existing knowledge base definition from the QnA Maker sample i
 
 1. Clone or copy the samples repo to your computer.
 1. In the QnA Maker portal, **Create a knowledge base**.
-   1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+   1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
    1. Connect your QnA service to your knowledge base.
    1. Name your knowledge base.
    1. To populate your knowledge base, use the **BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker\CognitiveModels\smartLightFAQ.tsv** file from the samples repo.
@@ -228,7 +228,7 @@ Update your initialization code to load the service information for your knowled
    ```
 
 1. Finally, add the following code to your onMessage( ) call that passes each user input to your QnA Maker knowledgebase and returns the QnA Maker response back to the user.  to query your knowledge bases for an answer.
- 
+
     **bot.js**
     ```javascript
    // send user input to QnA Maker.
@@ -237,8 +237,8 @@ Update your initialization code to load the service information for your knowled
    // If an answer was received from QnA Maker, send the answer back to the user.
    if (qnaResults[0]) {
       await turnContext.sendActivity(`QnAMaker returned response: ' ${ qnaResults[0].answer}`);
-   } 
-   else { 
+   }
+   else {
       // If no answers were returned from QnA Maker, reply with help.
       wait turnContext.sendActivity('No QnA Maker response was returned.'
            + 'This example uses a QnA Maker Knowledge Base that focuses on smart light bulbs. '

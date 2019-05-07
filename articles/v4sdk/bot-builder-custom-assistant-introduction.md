@@ -16,11 +16,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 We have seen significant need from our customers and partners to deliver a conversational assistant tailored to their brand, personalized to their customers and made available across a broad range of conversational canvases and devices. Continuing Microsoft open-sourced approach toward Bot Framework SDK, the open source Custom Personal Assistant provides full control over the end user experience built on a set of foundational capabilities. Additionally, the experience can be infused with intelligence about the end-user and any device/ecosystem information for a truly integrated and intelligent experience.
 
-We strongly believe our customers should own and enrich their customer relationships and insights. Therefore, any custom assistant provides complete control of the user experience to our customers and partners. The name, voice and personality can be changed to suit the organization’s needs. Our Custom Assistant solution simplifies creation of your own assistant enabling you to get started in minutes. 
+We strongly believe our customers should own and enrich their customer relationships and insights. Therefore, any custom assistant provides complete control of the user experience to our customers and partners. The name, voice and personality can be changed to suit the organization’s needs. Our Custom Assistant solution simplifies creation of your own assistant enabling you to get started in minutes.
 
 The scope of Custom Personal Assistant functionality is broad, typically offering end users a range of capabilities. To increase developer productivity and to enable a vibrant ecosystem of reusable conversational experiences, we are providing developers initial examples of reusable conversational skills. These skills can be added into the conversational application to light up a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
 
-At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months. 
+At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months.
 
 ![Custom Assistant Diagram](media/enterprise-template/CustomAssistantDiagram.jpg)
 
@@ -34,13 +34,13 @@ Your Custom Assistant will be deployed within your Azure subscription. Therefore
 
 ## Your Assistant, anywhere..
 
-The Custom Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) – e.g. WebChat, FaceBook Messenger, Skype, etc. In addition, through the [Direct Line](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel we can embed experiences into Desktop and Mobile Apps including devices such as Cars, Speakers, Alarm Clocks, etc.
+The Custom Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) – e.g. WebChat, FaceBook Messenger, Skype, etc. In addition, through the [Direct Line](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel we can embed experiences into Desktop and Mobile Apps including devices such as Cars, Speakers, Alarm Clocks, etc.
 
 ## Built on Enterprise grade technology
 
 The Custom Assistant solution is built on the Azure Bot Service, Language Understanding Cognitive Service, Unified Speech along with a broad set of supporting Azure components meaning that you benefit from the [Azure global infrastructure](https://azure.microsoft.com/en-gb/global-infrastructure/).
 
-In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages [listed here](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/) provides additional Machine Translation capabilities to extend the reach of your Custom Assistant even further.
+In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages [listed here](https://docs.microsoft.com/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/) provides additional Machine Translation capabilities to extend the reach of your Custom Assistant even further.
 
 ## Integrated and Context Aware
 
@@ -56,17 +56,17 @@ Our Custom Assistant architecture is flexible and can be integrated with existin
 
 ## Adaptive Cards
 
-[Adaptive Cards](https://adaptivecards.io/) provide the ability for your Custom Assistant to return User Experience elements (e.g. Cards, Images, Buttons) alongside text base responses. If the device or conversation canvas has a screen these Adaptive Cards can be rendered across a broad range of devices and platforms providing supporting User Experience where appropriate. Examples of Adaptive Cards can be found [here](https://adaptivecards.io/samples/) with information on Rendering options in the documentation [here](https://docs.microsoft.com/en-us/adaptive-cards/rendering-cards/getting-started).
+[Adaptive Cards](https://adaptivecards.io/) provide the ability for your Custom Assistant to return User Experience elements (e.g. Cards, Images, Buttons) alongside text base responses. If the device or conversation canvas has a screen these Adaptive Cards can be rendered across a broad range of devices and platforms providing supporting User Experience where appropriate. Examples of Adaptive Cards can be found [here](https://adaptivecards.io/samples/) with information on Rendering options in the documentation [here](https://docs.microsoft.com/adaptive-cards/rendering-cards/getting-started).
 
 
 ## Skills
 
 In addition to the base assistant, there exists a broad set of common capabilities which require each developer to build themselves. Productivity is a great example where each organisation would need to create Language Models (LUIS), Dialogs (Code), Integration (Code) and Language Generation (Responses) to enable common scenarios such as Point of Interest, Email, Calendar or Tasks.
 
-This is then further complicated by the need to support multiple languages and results in a large amount of work 
+This is then further complicated by the need to support multiple languages and results in a large amount of work
 required for any organisation building their own assistant.
 
-Our Custom Assistant solution includes a new Skill capability enabling new capabilities to be plugged into an custom-assistant through configuration only. 
+Our Custom Assistant solution includes a new Skill capability enabling new capabilities to be plugged into an custom-assistant through configuration only.
 
 All aspects of each Skill (Language Model, Dialogs, Integration Code and Language Generation) are completely customisable by developers as the full source code is provided on GitHub along with the Custom Assistant.
 
@@ -78,7 +78,7 @@ The Custom Assistant extends across a broad number of industry scenarios, exampl
 
 - Hospitality: Voice enabled Personal Assistant integrated into a hotel-room device providing a broad range of Hospitality focused scenarios (e.g. extend your stay, request late checkout, room service) including concierge and the ability to find local restuarants and attractions. Optional linking to your Productivity accounts open up more personalised experiences such as suggested alarm calls, Weather warnings and learning of patterns across stays. An evolution of the current TV personalisation experienced in room today.
 
-- Enterprise: Voice and Text enabled branded Employee Assistant experiences integrated into enterprise devices and existing conversation canvases (e.g. Teams, WebChat, Slack) enabling employees to manage their calendars, find available meeting rooms, find people with specific skills or perform HR related operations. 
+- Enterprise: Voice and Text enabled branded Employee Assistant experiences integrated into enterprise devices and existing conversation canvases (e.g. Teams, WebChat, Slack) enabling employees to manage their calendars, find available meeting rooms, find people with specific skills or perform HR related operations.
 
 ## Getting Started
 

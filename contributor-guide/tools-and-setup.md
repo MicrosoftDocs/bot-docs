@@ -34,25 +34,25 @@ Your profile should resemble this profile:
 
 ## Sign up for Livefyre
 
-Every published technical article supports a comment stream provided by the [Livefyre](http://web.livefyre.com/) service. 
+Every published technical article supports a comment stream provided by the [Livefyre](http://web.livefyre.com/) service.
 
-As a Microsoft employee and article author or contributor, you need to sign up for Livefyre so you can participate in the comment stream for the article. 
+As a Microsoft employee and article author or contributor, you need to sign up for Livefyre so you can participate in the comment stream for the article.
 
-1. Your Livefyre account needs to be created within docs.microsoft.com. Pick an article in docs.microsoft.com. E.g.  [https://docs.microsoft.com/en-us/active-directory/active-directory-developers-guide](https://docs.microsoft.com/en-us/active-directory/active-directory-developers-guide).
+1. Your Livefyre account needs to be created within docs.microsoft.com. Pick an article in docs.microsoft.com. E.g.  [https://docs.microsoft.com/active-directory/active-directory-developers-guide](https://docs.microsoft.com/active-directory/active-directory-developers-guide).
 
 2. At the bottom of the article, click the *Sign in* link in the comments section.
- 
+
 3. In the authentication dialog, click *Create New Account*.
-  
+
 4. Enter your profile information and click *Sign up*.
    - **Username**: your Microsoft email alias plus @MSFT, ie: *alias@MSFT*
    - **Email**: Your Microsoft.com email address.
-  
+
 ## Modify articles using the GitHub UI
 You might not need to follow all the steps in this article. It depends on the sort of content contribution you want or need to make.
 
 ### Submit a text-only change to an existing article
-If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's web-based markdown editor to submit your changes. 
+If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's web-based markdown editor to submit your changes.
 
 1. Click the Edit button on the article page you want to modify.
 
@@ -77,11 +77,11 @@ For the following sorts of work, we strongly recommend you install and learn to 
 * Creating content for a release that has to go out on a certain day at a certain time
 
 ## Private or public repo?
- 
+
  The public repository is for the community and for occasional internal Microsoft contrbutors who are not listed as authors of articles or responsible as owners of articles.
 
  If you are the author of an article and you are a Microsoft employee, you must work in the private repo. Your public repo contributions will be automatically closed by our repo automation. Request permissions to the private repo, per the instructions in the next section.
- 
+
  To easily switch from the public repo version of an article to the private repo version, just add "-pr" the URL, as shown here:
 
  - github.com/Microsoft/bot-framework-docs/blob/master/articles/batch/batch-account-create-portal.md
@@ -95,7 +95,7 @@ If you are a Microsoft PM or writer who is working on Bot Framework content as a
 
 1. Visit [https://repos.opensource.microsoft.com ](https://repos.opensource.microsoft.com) to join the Microsoft GitHub organization. Once you are a member of the Microsoft organization, you can access the private bot-framework-docs-pr repository.
 
-2. Register your GitHub account with the publishing system before you submit your first pull request. To do this, visit https://op-portal-prod.azurewebsites.net/, and click "Sign in with GitHub". The one-time sign-in is all that is needed. 
+2. Register your GitHub account with the publishing system before you submit your first pull request. To do this, visit https://op-portal-prod.azurewebsites.net/, and click "Sign in with GitHub". The one-time sign-in is all that is needed.
 
 ## Install Git for Windows
 Install Git for Windows from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, and it installs Git Bash, the command-line app that you will use to interact with your local Git repository.
@@ -119,7 +119,7 @@ After you enable 2FA, you have to enter the access token instead of your GitHub 
 
 * When you create your access token, save it in a text file to make it readily accessible when you need it.
 * Later, when you need to paste the token, know there are two ways to paste in the command line:
-  
+
   * Click the icon in the upper left corner of the command line window>Edit>Paste.
   * Right-click the icon in the upper left corner of the window and click Properties>Options>QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
 
@@ -153,7 +153,7 @@ Private repo:
 
 For example, this clone command could look something like this:
 
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/bot-framework-docs-pr.git  
+        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/bot-framework-docs-pr.git
 
 ## Set remote repository connection and configure credentials
 Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
@@ -176,23 +176,23 @@ This usually takes a while. After you do this, you won't have to fork again or e
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
 1. Start Git Bash, and switch into bot-framework-docs or bot-framework-docs-pr:
-   
+
    ````
    cd bot-framework-docs
    ````
-   
+
    or
-   
+
    ````
    cd bot-framework-docs-pr
    ````
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:
-   
+
     ````
     git config --global user.name "John Doe"
     ````
 3. Configure your email so it matches the primary email designated in your GitHub profile; if you're a MSFT employee, it should be your MSFT email address:
-   
+
     ````
     git config --global user.email "alias@example.com"
     ````

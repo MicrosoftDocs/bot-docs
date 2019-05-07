@@ -14,13 +14,13 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Cognitive Services
 
-Microsoft Cognitive Services lets you tap into a growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
+Microsoft Cognitive Services lets you tap into a growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date.
 
-Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 
+Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities.
 
 ## Language understanding
 
-The interaction between users and bots is mostly free-form, so bots need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text. 
+The interaction between users and bots is mostly free-form, so bots need to understand language naturally and contextually. The Cognitive Service Language APIs provide powerful language models to determine what users want, to identify concepts and entities in a given sentence, and ultimately to allow your bots to respond with the appropriate action. The five APIs support several text analytics capabilities, such as spell checking, sentiment detection, language modeling, and extraction of accurate and rich insights from text.
 
 Cognitive Services provides these APIs for language understanding:
 
@@ -30,7 +30,7 @@ Cognitive Services provides these APIs for language understanding:
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api" target="_blank">Bing Spell Check API</a> provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
 
-- The <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/text-analytics-module-tutorial" target ="_blank">Text Analytics Models in Azure Machine Learning Studio</a> allows you to build and operationalize text analytics models such as lemmatization and text-preprocessing. These models can help you address issues such as document classification or sentiment analysis problems.
+- The <a href="https://docs.microsoft.com/azure/machine-learning/studio/text-analytics-module-tutorial" target ="_blank">Text Analytics Models in Azure Machine Learning Studio</a> allows you to build and operationalize text analytics models such as lemmatization and text-preprocessing. These models can help you address issues such as document classification or sentiment analysis problems.
 
 Learn more about [language understanding][language] with Microsoft Cognitive Services.
 
@@ -38,9 +38,9 @@ Learn more about [language understanding][language] with Microsoft Cognitive Ser
 
 Cognitive Services provides four knowledge APIs that enable you to identify named entities or phrases in unstructured text, add personalized recommendations, provide auto-complete suggestions based on natural interpretation of user queries, and search academic papers and other research like a personalized FAQ service.
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.    
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/entity-linking-intelligence-service" target="_blank">Entity Linking Intelligence Service</a> annotates unstructured text with the relevant entities mentioned in the text. Depending on the context, the same word or phrase may refer to different things. This service understands the context of the supplied text and will identify each entity in your text.
 
-- The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.    
+- The <a href="https://www.microsoft.com/cognitive-services/en-us/knowledge-exploration-service" target="_blank">Knowledge Exploration Service</a> provides natural language interpretation of user queries and returns annotated interpretations to enable rich search and auto-completion experiences that anticipate what the user is typing. Instant query completion suggestions and predictive query refinements are based on your own data and application-specific grammars to enable your users to perform fast queries.
 
 - The  <a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "Papers by Michael Jordan about machine learning after 2010".
 
@@ -50,7 +50,7 @@ Learn more about [knowledge extraction][knowledge] with Microsoft Cognitive Serv
 
 ## Speech recognition and conversion
 
-Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy. 
+Use the Speech APIs to add advanced speech skills to your bot that leverage industry-leading algorithms for speech-to-text and text-to-speech conversion, as well as speaker recognition. The Speech APIs use built-in language and acoustic models that cover a wide range of scenarios with high accuracy.
 
 For applications that require further customization, you can use the Custom Recognition Intelligent Service (CRIS). This allows you to calibrate the language and acoustic models of the speech recognizer by tailoring it to the vocabulary of the application, or even to the speaking style of your users.
 
@@ -83,14 +83,14 @@ There are five Bing Search APIs available in Cognitive Services.
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api" target="_blank">News Search API</a> finds news articles around the world that match your search query or are currently trending on the Internet.
 
-- The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing. 
+- The  <a href="https://www.microsoft.com/cognitive-services/en-us/bing-autosuggest-api" target="_blank">Autosuggest API</a> offers instant query completion suggestions to complete your search query faster and with less typing.
 
 Learn more about [web search][search] with Microsoft Cognitive Services.
 
 ## Image and video understanding
 
-The Vision APIs bring advanced image and video understanding skills to your bots. 
-State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings. 
+The Vision APIs bring advanced image and video understanding skills to your bots.
+State-of-the-art algorithms allow you to process images or videos and get back information you can transform into actions. For example, you can use them to recognize objects, people's faces, age, gender or even feelings.
 
 The Vision APIs support a variety of image understanding features. They can identify mature or explicit content, estimate and accent colors, categorize the content of images, perform optical character recognition, and describe an image with complete English sentences. The Vision APIs also support several image and video processing capabilities, such as intelligently generating image or video thumbnails, or stabilizing the output of a video.
 
@@ -110,9 +110,9 @@ Learn more about [image and video understanding][vision] with Microsoft Cognitiv
 
 You can find comprehensive documentation of each product and their corresponding API references in the <a href="https://docs.microsoft.com/azure/cognitive-services" target="_blank">Cognitive Services documentation</a>.
 
-[language]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
-[search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/search-the-web
-[vision]: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home
-[knowledge]: https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview
-[speech]: https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home
-[location]: https://docs.microsoft.com/en-us/azure/cognitive-services/
+[language]: https://docs.microsoft.com/azure/cognitive-services/luis/home
+[search]: https://docs.microsoft.com/azure/cognitive-services/bing-web-search/search-the-web
+[vision]: https://docs.microsoft.com/azure/cognitive-services/computer-vision/home
+[knowledge]: https://docs.microsoft.com/azure/cognitive-services/kes/overview
+[speech]: https://docs.microsoft.com/azure/cognitive-services/speech/home
+[location]: https://docs.microsoft.com/azure/cognitive-services/

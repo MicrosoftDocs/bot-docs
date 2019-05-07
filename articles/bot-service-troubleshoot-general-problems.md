@@ -14,7 +14,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
 1. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
 1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/en-us/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
@@ -28,13 +28,13 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
 ## I'm using the Bot Framework SDK for .NET. How can I troubleshoot issues with my bot?
 
-**Look for exceptions.**  
+**Look for exceptions.**
 In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**. You may also see diagnostics output in your Output window when there are thrown or unhandled exceptions.
 
-**Look at the call stack.**  
+**Look at the call stack.**
 In Visual Studio, you can choose whether or you are debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not. Examining the full call stack may provide additional insight into any issues.
 
-**Ensure all dialog methods end with a plan to handle the next message.**  
+**Ensure all dialog methods end with a plan to handle the next message.**
 All dialog steps need to feed into the next step of the waterfall, or end the current dialog to pop it off the stack. If a step is not correctly handled, the conversation will not continue like you expect. Take a look at the concept article for [dialogs](v4sdk/bot-builder-concept-dialog.md) for more on dialogs.
 
 ## Why doesn't the Typing activity do anything?
@@ -46,19 +46,19 @@ The Connector library is the exposition of the REST API. The Builder library add
 
 ## What causes an error with HTTP status code 429 "Too Many Requests"?
 
-An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. One possible source for this error is [ngrok](https://ngrok.com/). If you are on a free plan and running into ngrok's limits, go to the pricing and limits page on their website for more [options](https://ngrok.com/product#pricing). 
+An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. One possible source for this error is [ngrok](https://ngrok.com/). If you are on a free plan and running into ngrok's limits, go to the pricing and limits page on their website for more [options](https://ngrok.com/product#pricing).
 
 ## Why aren't my bot messages getting received by the user?
 
-The message activity generated in response must be correctly addressed, otherwise it won’t arrive at its intended destination. In the vast majority of cases you will not need to handle this explicitly; the SDK takes care of addressing the message activity for you. 
+The message activity generated in response must be correctly addressed, otherwise it won’t arrive at its intended destination. In the vast majority of cases you will not need to handle this explicitly; the SDK takes care of addressing the message activity for you.
 
-Correctly addressing an activity means including the appropriate *conversation reference* details along with details about the sender and the recipient. In most cases, the message activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound activity. 
+Correctly addressing an activity means including the appropriate *conversation reference* details along with details about the sender and the recipient. In most cases, the message activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound activity.
 
 If you examine traces or audit logs, you can check to make sure your messages are correctly addressed. If they aren't, set a breakpoint in your bot and see where the IDs are being set for your message.
 
-## How can I run background tasks in ASP.NET? 
+## How can I run background tasks in ASP.NET?
 
-In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/en-us/library/dn636893(v=vs.110).aspx). 
+In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/en-us/library/dn636893(v=vs.110).aspx).
 
 
 ## How do user messages relate to HTTPS method calls?
@@ -83,7 +83,7 @@ Using the Bot Framework SDK for .NET, you can provide implementations of the `IP
 
 The Bot Framework and many channels interpret text as if it were formatted with [Markdown](https://en.wikipedia.org/wiki/Markdown). Check to see if your text contains characters that may be interpreted as Markdown syntax.
 
-## How can I support multiple bots at the same bot service endpoint? 
+## How can I support multiple bots at the same bot service endpoint?
 
 This [sample](https://github.com/Microsoft/BotBuilder/issues/2258#issuecomment-280506334) shows how to configure the `Conversation.Container` with the right `MicrosoftAppCredentials` and use a simple `MultiCredentialProvider` to authenticate multiple App IDs and passwords.
 
@@ -107,9 +107,9 @@ Bots in development on Kik are allowed 50 subscribers. After 50 unique users hav
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp). 
+For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp).
 
-> [!NOTE] 
+> [!NOTE]
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
 
 ## How can I limit access to my bot to a pre-determined list of users?
@@ -125,7 +125,7 @@ If your Direct Line conversation appears to start over after every message, the 
 To fix this, set the `from` property in each message that the Direct Line client sends to a stable value that uniquely represents the user who is sending the message. For example, if a user is already signed-in to a webpage or app, you might use that existing user ID as the value of the `from` property in messages that the user sends. Alternatively, you might choose to generate a random user ID on page-load or on application-load, store that ID in a cookie or device state, and use that ID as the value of the `from` property in messages that the user sends.
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
-Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there. 
+Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
 
 ::: moniker range="azure-bot-service-3.0"
 
@@ -161,7 +161,7 @@ There are multiple options:
 
 ## Where is conversation state stored?
 
-Data in the user, conversation, and private conversation property bags is stored using the Connector's `IBotState` interface. Each property bag is scoped by the bot's ID. The user property bag is keyed by user ID, the conversation property bag is keyed by conversation ID, and the private conversation property bag is keyed by both user ID and conversation ID. 
+Data in the user, conversation, and private conversation property bags is stored using the Connector's `IBotState` interface. Each property bag is scoped by the bot's ID. The user property bag is keyed by user ID, the conversation property bag is keyed by conversation ID, and the private conversation property bag is keyed by both user ID and conversation ID.
 
 If you use the Bot Framework SDK for .NET or the Bot Framework SDK for Node.js to build your bot, the dialog stack and dialog data will both automatically be stored as entries in the private conversation property bag. The C# implementation uses binary serialization, and the Node.js implementation uses JSON serialization.
 
@@ -196,7 +196,7 @@ The Connector's `IBotState` service is used to store the bot data bags (i.e., th
 ## How can I fix "Precondition Failed" (412) or "Conflict" (409) errors?
 
 These errors indicate that your bot processed multiple messages for the same conversation at once. If your bot is connected to services that require precisely ordered messages,
-you should consider locking the conversation state to make sure messages are not processed in parallel. 
+you should consider locking the conversation state to make sure messages are not processed in parallel.
 
 ::: moniker range="azure-bot-service-3.0"
 
@@ -227,7 +227,7 @@ Yes, each state store (i.e., user, conversation, and private bot data bag) may c
 > [!IMPORTANT]
 > The Bot Framework State Service API is not recommended for production environments or v4 bots, and may be fully deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the [Manage state data](v4sdk/bot-builder-howto-v4-state.md) topic.
 
-The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data. 
+The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data.
 
 * If you want to manually reset the conversation's dialog stack and state during development of your bot, you can use the ` /deleteprofile` command to delete state data. Make sure to include the leading space in this command, to prevent the channel from interpreting it.
 * After your bot has been deployed to production, you can version your bot data so that if you bump the version, the associated state data is cleared. With the Bot Framework SDK for Node.js, this can be accomplished using middleware and with the Bot Framework SDK for .NET, this can be accomplished using an `IPostToBot` implementation.
@@ -258,7 +258,7 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
 * [Advanced Learning Session for Language Understanding (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](/azure/cognitive-services/LUIS/Home)
-* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS) 
+* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS)
 
 
 ## What are some community-authored dialogs?

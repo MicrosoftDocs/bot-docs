@@ -204,7 +204,7 @@ namespace DirectLineBotSample
         }
 
         /// <summary>
-        /// Responds to the incoming message by either sending a hero card, an image, 
+        /// Responds to the incoming message by either sending a hero card, an image,
         /// or echoing the user's message.
         /// </summary>
         /// <param name="context">The context of this conversation.</param>
@@ -238,7 +238,7 @@ namespace DirectLineBotSample
                     Attachment imageAttachment = new Attachment()
                     {
                         ContentType = "image/png",
-                        ContentUrl = "https://docs.microsoft.com/en-us/bot-framework/media/how-it-works/architecture-resize.png",
+                        ContentUrl = "https://docs.microsoft.com/bot-framework/media/how-it-works/architecture-resize.png",
                     };
 
                     // Attach the image attachment to a new activity.
@@ -284,14 +284,14 @@ To verify things are in order, press **F6** to build the project. There should b
     - For Resource Group, verify you are using the correct resource group. The resource group can be found on the **Overview** blade of your bot. **Note:** An incorrect resource group is difficult to correct.
 
     - Verify you are using the correct App Service Plan.
-    
+
 1. Click the **Create** button. Visual Studio will begin deploying your bot.
 
 After your bot is published, a browser will appear with the URL endpoint of your bot.
 
 ### Create Bot Channels Registration bot on Microsoft Azure
 
-The Direct Line bot can be hosted on any platform. In this example, the bot will be hosted on Microsoft Azure. 
+The Direct Line bot can be hosted on any platform. In this example, the bot will be hosted on Microsoft Azure.
 
 To create the bot on Microsoft Azure:
 
@@ -377,13 +377,13 @@ To verify that your bot is working, check your bot in webchat:
 
 If your bot is not working, verify or reenter your Microsoft App ID and password. Even if you copied it before, check the Microsoft App ID on the settings blade of your Bot Channels Registration against the value in the **"MicrosoftAppId"** field in the appsettings.json file.
 
-Verify your password or create and use a new password: 
+Verify your password or create and use a new password:
 
 1. Click **Manage** next to the **Microsoft App ID** field on your Bot Channels Registration blade.
 
 1. Log into the Application Registration Portal.
 
-1. Verify the first three letters of your password match the **"MicrosoftAppPassword"** field in the **appsettings.json** file. 
+1. Verify the first three letters of your password match the **"MicrosoftAppPassword"** field in the **appsettings.json** file.
 
 1. If the values do not match, generate a new password and store that value in the **"MicrosoftAppPassword"** field in the **appsettings.json** file.
 
@@ -391,7 +391,7 @@ Verify your password or create and use a new password:
 
 ### Create Web App Bot on Microsoft Azure
 
-To create the bot on Microsoft Azure: 
+To create the bot on Microsoft Azure:
 
 1. On the Microsoft Azure Portal, click **Create a resource**, then search for "Web App Bot".
 
@@ -401,9 +401,9 @@ To create the bot on Microsoft Azure:
 
 1. On the Web App Bot blade, enter the **Bot name**, **Subscription**, **Resource group**, **Location**, **Pricing tier**, **App name**.
 
-1. Select the bot template you would like to use. **SDK version: SDK v4** and **SDK language: Node.js** 
+1. Select the bot template you would like to use. **SDK version: SDK v4** and **SDK language: Node.js**
 
-1. Select the basic v4 preview template. 
+1. Select the basic v4 preview template.
 
 1. Choose your **App service plan/Location**, **Azure Storage** and **Application Insights Location**.
 
@@ -417,9 +417,9 @@ To create the bot on Microsoft Azure:
 
 Now lets add some more features to the echo bot.
 
-1. On the Web App Bot blade, click Build. 
+1. On the Web App Bot blade, click Build.
 
-1. Click Download zip file. 
+1. Click Download zip file.
 
 1. Extract the .zip file to a local directory.
 
@@ -446,10 +446,10 @@ const adapter = new BotFrameworkAdapter({
     appPassword: process.env.MicrosoftAppPassword
 });
 
-// Responds to the incoming message by either sending a hero card, an image, 
+// Responds to the incoming message by either sending a hero card, an image,
 // or echoing the user's message.
 
-// Listen for incoming requests 
+// Listen for incoming requests
 server.post('/api/messages', (req, res) => {
     // Route received request to adapter for processing
     adapter.processActivity(req, res, (context) => {
@@ -469,25 +469,25 @@ server.post('/api/messages', (req, res) => {
                 case 'show me a hero card':
                     // Create the hero card.
                     const message = MessageFactory.attachment(
-                        CardFactory.heroCard(   
+                        CardFactory.heroCard(
                         'Sample Hero Card', //cards title
                         'Displayed in the DirectLine client' //cards text
                         )
                     );
                     return context.sendActivity(message);
                     break;
-                    
+
                 case 'send me a botframework image':
                     // Create the image attachment.
-                    const imageOrVideoMessage = MessageFactory.contentUrl('https://docs.microsoft.com/en-us/azure/bot-service/media/how-it-works/architecture-resize.png', 'image/png')
+                    const imageOrVideoMessage = MessageFactory.contentUrl('https://docs.microsoft.com/azure/bot-service/media/how-it-works/architecture-resize.png', 'image/png')
                     return context.sendActivity(imageOrVideoMessage);
                     break;
-                
+
                 default:
                     // No command was encountered. Echo the user's message.
                     return context.sendActivity(`You said ${context.activity.text}`);
                     break;
-                    
+
             }
         }
     });
@@ -513,7 +513,7 @@ To create the console project:
 1. Choose **Add** > **New Project**.
 
 1. In **Visual C#** > **Windows Classic Desktop*, choose **Console App (.NET Framework)**.
- 
+
     **Note:** Do not choose **Console App (.NET Core)**.
 
 1. For the name, enter **DirectLineClientSample**.
@@ -704,7 +704,7 @@ To verify things are in order, press **F6** to build the project. There should b
 
 # [JavaScript](#tab/jsclientapp)
 
-### Create a Direct Line Client 
+### Create a Direct Line Client
 
 Now that you have deployed your web app bot we can create a Direct Line Client.
 
@@ -733,7 +733,7 @@ var rp = require('request-promise');
 
 // config items
 var pollInterval = 1000;
-// Change the Direct Line Secret to your own 
+// Change the Direct Line Secret to your own
 var directLineSecret = 'your secret here';
 var directLineClientName = 'DirectLineClient';
 var directLineSpecUrl = 'https://docs.botframework.com/en-us/restapi/directline3/swagger.json';
@@ -887,7 +887,7 @@ To configure the Direct Line channel:
 
     ![The Configure Direct Line blade with both secret keys shown.](media/bot-builder-howto-direct-line/configure-direct-line.png)
 
-1. On the **Connect to Channels** blade, click the **Configure Direct Line channel** button. 
+1. On the **Connect to Channels** blade, click the **Configure Direct Line channel** button.
 
 1. If **3.0** is not checked, put a check mark in the check box.
 
@@ -917,7 +917,7 @@ Your bot is now ready to communicate with the Direct Line console client applica
 
 1. Press F5 or Start debugging.
 
-The console client app will start. To test out the app: 
+The console client app will start. To test out the app:
 
 1. Enter "Hi". The bot should display 'You said "Hi"'.
 

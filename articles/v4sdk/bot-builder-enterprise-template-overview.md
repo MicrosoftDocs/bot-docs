@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Overview
 
 > [!NOTE]
-> This topic applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK.
 
 The Enterprise Bot Template provides a solid foundation of the best practices and services needed to create a conversational experience, reducing effort and raising the quality bar. The template leverages [Bot Builder SDK v4](https://github.com/Microsoft/botbuilder) and [Bot Builder Tools](https://github.com/Microsoft/botbuilder-tools) to provide the following features:
 
@@ -23,9 +23,9 @@ Typing indicators  | Automated visual typing indicators during conversations and
 Base LUIS model  | Supports common intents such as **Cancel**, **Help**, **Escalate**, etc.
 Base dialogs | Dialog flows for capturing basic user information as well as interruption logic for cancel and help intents
 Base responses  | Text and speech responses for base intents and dialogs
-FAQ | Integration with [QnA Maker](https://www.qnamaker.ai) to answer general questions from a knowledgebase 
-Chit-chat | A professional chit-chat model to provide standard answers to common queries ([learn more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base))
-Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS or QnA Maker.
+FAQ | Integration with [QnA Maker](https://www.qnamaker.ai) to answer general questions from a knowledgebase
+Chit-chat | A professional chit-chat model to provide standard answers to common queries ([learn more](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base))
+Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS or QnA Maker.
 Language support | Available in English, French, Italian, German, Spanish and Chinese
 Transcripts | Transcripts of all conversations stored in Azure Storage
 Telemetry  | [Application Insights](https://azure.microsoft.com/en-gb/services/application-insights/) integration to collect telemetry for all conversations
@@ -60,7 +60,7 @@ Stop         |*stop*|
 
 [QnA Maker](https://www.qnamaker.ai/) provides the ability for non-developers to generate a collection of question and answer pairs for use in a bot. This knowledge can be imported from FAQ data sources and product manuals, or created manually within the QnA Maker portal.
 
-Two example QnA Maker models are provided in the template, one for FAQ and one for [Professional Chit-chat](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base). 
+Two example QnA Maker models are provided in the template, one for FAQ and one for [Professional Chit-chat](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base).
 
 ## Dispatch
 
@@ -74,10 +74,10 @@ This Dispatch tool also enables evaluation of your models which highlights overl
 
 Providing insights into bot conversations can help you understand the levels of user engagement, what features users are using, and the questions the bot is unable to handle.
 
-[Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) captures operational telemetry for your bot service as well as conversation specific events. These events can be aggregated into actionable information using tools like [Power BI](https://powerbi.microsoft.com/en-us/what-is-power-bi/). An example Power BI dashboard is available for use with the Enterprise Bot Template that demonstrates this capability.
+[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) captures operational telemetry for your bot service as well as conversation specific events. These events can be aggregated into actionable information using tools like [Power BI](https://powerbi.microsoft.com/en-us/what-is-power-bi/). An example Power BI dashboard is available for use with the Enterprise Bot Template that demonstrates this capability.
 
 # Next Steps
-Refer to [Getting Started](bot-builder-enterprise-template-getting-started.md) to learn how to create and deploy your Enterprise Bot. 
+Refer to [Getting Started](bot-builder-enterprise-template-getting-started.md) to learn how to create and deploy your Enterprise Bot.
 
 # Resources
 Full source code for the Enterprise Bot Template can be found on [GitHub](https://github.com/Microsoft/AI/tree/master/templates/Enterprise-Template).

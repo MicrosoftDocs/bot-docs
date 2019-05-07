@@ -38,7 +38,7 @@ and then testing it with the Bot Framework Emulator.
 ## Prerequisites
 1. Visual Studio [2017](https://www.visualstudio.com/).
 
-2. In Visual Studio, update all [extensions](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension) to their latest versions.
+2. In Visual Studio, update all [extensions](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-a-visual-studio-extension) to their latest versions.
 
 3. Bot template for [C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.BotBuilderV3).
 
@@ -52,13 +52,13 @@ Open Visual Studio and create a new C# project. Choose the **Simple Echo Bot App
 ![Visual Studio create project](../media/connector-getstarted-create-project.png)
 
 > [!NOTE]
-> Visual Studio might say you need to download and install [IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264). 
+> Visual Studio might say you need to download and install [IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264).
 
 Thanks to the Bot Application template, your project contains all of the code that's necessary to create the bot in this tutorial. You won't actually need to write any additional code. However, before we move on to testing your bot,
 take a quick look at some of the code that the Bot Application template provided.
 
-> [!TIP] 
-> If needed, update [NuGet packages](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
+> [!TIP]
+> If needed, update [NuGet packages](https://docs.microsoft.com/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 ## Explore the code
 

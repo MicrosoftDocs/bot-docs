@@ -1,7 +1,7 @@
 ---
 title: Send welcome message to users | Microsoft Docs
 description: Learn how to develop your bot to provide a welcoming user experience.
-keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
+keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting
 author: DanDev33
 ms.author: v-dashel
 manager: kamrani
@@ -19,7 +19,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 
 ## Prerequisites
 
-- Understand [bot basics](bot-builder-basics.md). 
+- Understand [bot basics](bot-builder-basics.md).
 - A copy of the **Welcome user sample** in either [C#](https://aka.ms/bot-welcome-sample-cs) or [JS](https://aka.ms/bot-welcome-sample-js). The code from the sample is used to explain how to send welcome messages.
 
 ## Same welcome for different channels
@@ -387,13 +387,13 @@ private static async Task SendIntroCardAsync(ITurnContext turnContext, Cancellat
     {
         new CardAction(ActionTypes.OpenUrl,
             "Get an overview", null, "Get an overview", "Get an overview",
-            "https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0"),
+            "https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0"),
         new CardAction(ActionTypes.OpenUrl,
             "Ask a question", null, "Ask a question", "Ask a question",
             "https://stackoverflow.com/questions/tagged/botframework"),
         new CardAction(ActionTypes.OpenUrl,
             "Learn how to deploy", null, "Learn how to deploy", "Learn how to deploy",
-            "https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0"),
+            "https://docs.microsoft.com/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0"),
     };
 
     response.Attachments = new List<Attachment>() { card.ToAttachment() };
@@ -446,8 +446,8 @@ switch (text)
         });
         break;
     default :
-        await turnContext.sendActivity(`This is a simple Welcome Bot sample. You can say 'intro' to 
-                                        see the introduction card. If you are running this bot in the Bot 
+        await turnContext.sendActivity(`This is a simple Welcome Bot sample. You can say 'intro' to
+                                        see the introduction card. If you are running this bot in the Bot
                                         Framework Emulator, press the 'Start Over' button to simulate user joining a bot or a channel`);
 }
 ```

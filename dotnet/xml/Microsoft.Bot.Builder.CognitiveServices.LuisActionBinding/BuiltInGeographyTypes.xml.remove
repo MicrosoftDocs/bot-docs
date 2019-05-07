@@ -15,7 +15,7 @@
   <Docs>
     <summary>
             LUIS prebuilt Geography types.
-            https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities
+            https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities
             </summary>
     <remarks>To be added.</remarks>
   </Docs>

@@ -20,7 +20,7 @@ ms.date: 12/01/2018
 Azure Bot Service allows you to download the entire source project for your bot so that you can work locally using an IDE of your choice. After you are done updating code, you can publish your changes back to the Azure portal. We'll show you how to download code using the Azure portal and `az` cli. We'll also cover redeploying your updated bot code using Visual Studio and `az` cli tool. You can choose the method that works best for you.
 
 ## Prerequisites
-- Install the latest version of the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) tool.
+- Install the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) tool.
 
 # [Azure portal](#tab/azportal)
 ### Download code using the Azure portal
@@ -63,9 +63,9 @@ Next, make changes to your sources by either editing existing source files or ad
 2. Select the profile for your project.
 3. Copy the password listed in the _publish.cmd_ file in your project.
 4. Click **Publish**.
-5. When prompted, enter the password that you copied in step 3.   
+5. When prompted, enter the password that you copied in step 3.
 
-After your project configured, your project changes will be published to Azure. 
+After your project configured, your project changes will be published to Azure.
 
 Next, we'll take a look at downloading and redeploying code using the `az` cli.
 
@@ -114,7 +114,7 @@ You will be prompted with a unique temporary auth code. To sign in, use a web br
 ### Publish code using Azure CLI
 To publish code back to Azure using `az` cli, use the following command:
 ```azcli
-az bot publish --name "my-bot-name" --resource-group "my-resource-group" --code-dir <path to directory> 
+az bot publish --name "my-bot-name" --resource-group "my-resource-group" --code-dir <path to directory>
 ```
 
 You can use the `code-dir` option to indicate which directory to use. If it is not provided, the `az bot publish` command will use the local directory to publish.

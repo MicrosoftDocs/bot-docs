@@ -19,11 +19,11 @@ monikerRange: 'azure-bot-service-4.0'
 In this article, we'll show you how to deploy C# and JavaScript samples that are in the [botbuilder-samples](https://github.com/Microsoft/BotBuilder-Samples)
 repo to Azure.
 
-Instructions to deploy sample bots is _different_ from the instructions to [deploy a bot that you might create with all the resources already provisioned in Azure](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
+Instructions to deploy sample bots is _different_ from the instructions to [deploy a bot that you might create with all the resources already provisioned in Azure](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
 
 > [!IMPORTANT]
 > Deploying a bot from the [botbuilder-samples](https://github.com/Microsoft/BotBuilder-Samples) repo to Azure will provision Azure services and will involve paying for the services you use.
-> The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+> The [billing and cost management](https://docs.microsoft.com/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
 It would be useful to read this article once through before following the steps, so that you fully understand what is involved in deploying a bot.
 
@@ -31,7 +31,7 @@ It would be useful to read this article once through before following the steps,
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install [.NET Core SDK](https://dotnet.microsoft.com/download) >= v2.2. Use `dotnet --version` to see what version you have.
-- Install the latest version of the [Azure cli tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Use `az --version` to see what version you have.
+- Install the latest version of the [Azure cli tool](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). Use `az --version` to see what version you have.
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
   - You'll need [LUIS CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#installation) if the the clone operation includes LUIS or Dispatch resources.
   - You'll need [QnA Maker CLI](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#as-a-cli) if the clone operation includes QnA Maker resources.
@@ -143,7 +143,7 @@ It is important to note that the deployment process creates a _new .bot file and
 `NOTE: This secret is not recoverable and you should save it in a safe place according to best security practices.
 Copy this secret and use it to open the <file.bot> the first time.`
 
-Save the .bot file secret for later use. The new encrypted .bot file is used in the Azure portal with the botFileSecret. If you need to change the bot file name or secret later on, go to **App Service Settings -> Application Settings** section in the portal. Note that in the appsettings.json or .env file, the bot file name is updated with the latest bot file that was created.  
+Save the .bot file secret for later use. The new encrypted .bot file is used in the Azure portal with the botFileSecret. If you need to change the bot file name or secret later on, go to **App Service Settings -> Application Settings** section in the portal. Note that in the appsettings.json or .env file, the bot file name is updated with the latest bot file that was created.
 
 ### Test your bot
 
@@ -171,14 +171,14 @@ When you deploy a bot, typically these resources are created in the Azure portal
 | Resources      | Description |
 |----------------|-------------|
 | Web App Bot | An Azure Bot Service bot that is deployed to an Azure App Service.|
-| [App Service](https://docs.microsoft.com/en-us/azure/app-service/)| Enables you to build and host web applications.|
-| [App Service plan](https://docs.microsoft.com/en-us/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
-| [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)| Provides tools for collecting and analyzing telemetry.|
-| [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
+| [App Service](https://docs.microsoft.com/azure/app-service/)| Enables you to build and host web applications.|
+| [App Service plan](https://docs.microsoft.com/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
+| [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)| Provides tools for collecting and analyzing telemetry.|
+| [Storage account](https://docs.microsoft.com/azure/storage/common/storage-introduction)| Provides cloud storage that is highly available, secure, durable, scalable, and redundant.|
 
-To see documentation on `az bot` commands, see the [reference](https://docs.microsoft.com/en-us/cli/azure/bot?view=azure-cli-latest) topic.
+To see documentation on `az bot` commands, see the [reference](https://docs.microsoft.com/cli/azure/bot?view=azure-cli-latest) topic.
 
-If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology) topic.
+If you are unfamiliar with Azure resource group, see this [terminology](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology) topic.
 
 ## Next steps
 

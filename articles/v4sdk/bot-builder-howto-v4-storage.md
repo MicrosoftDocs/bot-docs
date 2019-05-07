@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-You can read and write directly to your storage object without using middleware or context object. This can be appropriate to data that your bot uses, that comes from a source outside your bot's conversation flow. For example, let's say your bot allows the user to ask for the weather report, and your bot retrieves the weather report for a specified date, by reading it from an external database. The content of the weather database isn't dependent on user information or the conversation context, so you could just read it directly from storage instead of using the state manager. The code examples in this article show you how to read and write data to storage using **Memory Storage**, **Cosmos DB**, **Blob Storage**, and **Azure Blob Transcript Store**. 
+You can read and write directly to your storage object without using middleware or context object. This can be appropriate to data that your bot uses, that comes from a source outside your bot's conversation flow. For example, let's say your bot allows the user to ask for the weather report, and your bot retrieves the weather report for a specified date, by reading it from an external database. The content of the weather database isn't dependent on user information or the conversation context, so you could just read it directly from storage instead of using the state manager. The code examples in this article show you how to read and write data to storage using **Memory Storage**, **Cosmos DB**, **Blob Storage**, and **Azure Blob Transcript Store**.
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/en-us/free/) account before you begin.
@@ -54,7 +54,7 @@ public class UtteranceLog : IStoreItem
      // A list of things that users have said to the bot
      public List<string> UtteranceList { get; } = new List<string>();
 
-     // The number of conversational turns that have occurred        
+     // The number of conversational turns that have occurred
      public int TurnNumber { get; set; } = 0;
 
      // Create concurrency control where this is used.
@@ -63,16 +63,16 @@ public class UtteranceLog : IStoreItem
 
 // Every Conversation turn for our Bot calls this method.
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
-{     
+{
    if (turnContext.Activity.Type == ActivityTypes.Message)
    {
       // Replace the two lines of code from original MyBot code with the following:
-      
+
       // preserve user input.
-      var utterance = turnContext.Activity.Text;  
+      var utterance = turnContext.Activity.Text;
       // make empty local logitems list.
       UtteranceLog logItems = null;
-          
+
       // see if there are previous messages saved in storage.
       try
       {
@@ -84,7 +84,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
          // Inform the user an error occured.
          await turnContext.SendActivityAsync("Sorry, something went wrong reading your stored messages!");
       }
-         
+
       // If no stored messages were found, create and store a new entry.
       if (logItems is null)
       {
@@ -120,16 +120,16 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
          logItems.UtteranceList.Add(utterance);
          // increment turn counter.
          logItems.TurnNumber++;
-         
+
          // show user new list of saved messages.
          await turnContext.SendActivityAsync($"{logItems.TurnNumber}: The list is now: {string.Join(", ", logItems.UtteranceList)}");
-         
+
          // Create Dictionary object to hold new list of messages.
          var changes = new Dictionary<string, object>();
          {
             changes.Add("UtteranceLog", logItems);
          };
-         
+
          try
          {
             // Save new list to your Storage.
@@ -172,7 +172,7 @@ server.post('/api/messages', (req, res) => {
         else {
             // Just route to main dialog.
             await myBot.onTurn(context);
-        } 
+        }
     });
 });
 
@@ -230,16 +230,16 @@ Run your bot locally.
 ### Start the emulator and connect your bot
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+1. Click the **Open Bot** link in the emulator "Welcome" tab.
 2. Select the .bot file located in the directory where you created the project.
 
 ### Interact with your bot
 Send a message to your bot, and the bot will list the messages it received.
 ![Emulator running](../media/emulator-v4/emulator-running.png)
 
- 
+
 ## Using Cosmos DB
-Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs). 
+Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
 ### Set up
 To use Cosmos DB in your bot, you'll need to get a few things set up before getting into the code.
@@ -261,7 +261,7 @@ The account creation takes a few minutes. Wait for the portal to display the Con
  -
 ![Cosmos DB](./media/cosmos-db-sql-database.png)
 
-3. The endpoint URI and key are available within the **Keys** tab of your database settings. These values will be needed to configure your code further down in this article. 
+3. The endpoint URI and key are available within the **Keys** tab of your database settings. These values will be needed to configure your code further down in this article.
 
 ![Cosmos DB Keys](./media/comos-db-keys.png)
 
@@ -307,7 +307,7 @@ You can add references to botbuilder-azure in your project via npm: -->
 
 
 ```powershell
-npm install --save botbuilder-azure 
+npm install --save botbuilder-azure
 ```
 
 To use the .env configuration file, the bot needs an extra package included. First, get the dotnet package from npm:
@@ -318,7 +318,7 @@ npm install --save dotenv
 
 ---
 
-### Implementation 
+### Implementation
 
 # [C#](#tab/csharp)
 
@@ -360,10 +360,10 @@ Comment out Memory Storage, replace with reference to Cosmos DB.
 // var storage = new MemoryStorage();
 
 // Create access to Cosmos DB storage.
-//Add CosmosDB 
+//Add CosmosDB
 const storage = new CosmosDbStorage({
-    serviceEndpoint: process.env.ACTUAL_SERVICE_ENDPOINT, 
-    authKey: process.env.ACTUAL_AUTH_KEY, 
+    serviceEndpoint: process.env.ACTUAL_SERVICE_ENDPOINT,
+    authKey: process.env.ACTUAL_AUTH_KEY,
     databaseId: process.env.DATABASE,
      collectionId: process.env.COLLECTION
 })
@@ -378,7 +378,7 @@ Run your bot locally.
 ## Start the emulator and connect your bot
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+1. Click the **Open Bot** link in the emulator "Welcome" tab.
 2. Select the .bot file located in the directory where you created the project.
 
 ## Interact with your bot
@@ -387,12 +387,12 @@ Send a message to your bot, and the bot will list the messages it received.
 
 
 ### View your data
-After you have run your bot and saved your information, we can view the data stored in the Azure portal under the **Data Explorer** tab. 
+After you have run your bot and saved your information, we can view the data stored in the Azure portal under the **Data Explorer** tab.
 
 ![Data Explorer example](./media/data_explorer.PNG)
 
 ### Manage concurrency using eTags
-In our bot code example we set the `eTag` property of each `IStoreItem` to `*`. The `eTag` (entity tag) member of your store object is used within Cosmos DB to manage concurrency. The `eTag` tells your database what to do if another instance of the bot has changed the object in the same storage that your bot is writing to. 
+In our bot code example we set the `eTag` property of each `IStoreItem` to `*`. The `eTag` (entity tag) member of your store object is used within Cosmos DB to manage concurrency. The `eTag` tells your database what to do if another instance of the bot has changed the object in the same storage that your bot is writing to.
 
 <!-- define optimistic concurrency -->
 
@@ -402,7 +402,7 @@ An `eTag` property value of asterisk (`*`) indicates that the last writer wins. 
 #### Maintain concurrency and prevent overwrites
 When storing your data into Cosmos DB, use a value other than `*` for the `eTag` if you want to prevent concurrent access to a property and avoid overwriting changes from another instance of the bot. The bot receives an error response with the message `etag conflict key=` when it attempts to save state data and the `eTag` is not the same value as the `eTag` in storage. <!-- To control concurrency of data that is stored using `IStorage`, the BotBuilder SDK checks the entity tag (ETag) for `Storage.Write()` requests. -->
 
-By default, the Cosmos DB store checks the `eTag` property of a storage object for equality every time a bot writes to that item, and then updates it to a new unique value after each write. If the `eTag` property on write doesn't match the `eTag` in storage, it means another bot or thread changed the data. 
+By default, the Cosmos DB store checks the `eTag` property of a storage object for equality every time a bot writes to that item, and then updates it to a new unique value after each write. If the `eTag` property on write doesn't match the `eTag` in storage, it means another bot or thread changed the data.
 
 For example, let's say you want your bot to edit a saved note, but you don't want your bot to overwrite changes that another instance of the bot has done. If another instance of the bot has made edits, you want the user to edit the version with the latest updates.
 
@@ -464,7 +464,7 @@ async function createSampleNote(storage, context) {
         contents: "eggs",
         // If any Note file is already stored, the eTag field
         // must be set to "*" in order to allow writing without first reading the stored eTag
-        // otherwise you'll likely get an exception indicating an eTag conflict. 
+        // otherwise you'll likely get an exception indicating an eTag conflict.
         eTag: "*"
     }
 }
@@ -519,14 +519,14 @@ If the note was updated in the store before you write your changes, the call to 
 
 To maintain concurrency, always read a property from storage, then modify the property you read, so that the `eTag` is maintained. If you read user data from the store, the response will contain the eTag property. If you change the data and write updated data to the store, your request should include the eTag property that specifies the same value as you read earlier. However, writing an object with its `eTag` set to `*` will allow the write to overwrite any other changes.
 
-## Using Blob storage 
+## Using Blob storage
 Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data.
 
 ### Create your Blob storage account
 To use Blob storage in your bot, you'll need to get a few things set up before getting into the code.
 1. In a new browser window, sign in to the [Azure portal](http://portal.azure.com).
 2. Click **Create a resource > Storage > Storage account - blob, file, table, queue**
-3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** infomration.  
+3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** infomration.
 4. Then click **Create**.
 
 ![Create Blob storage](./media/create-blob-storage.png)
@@ -571,7 +571,7 @@ Run your bot locally.
 ## Start the emulator and connect your bot
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click the **Open Bot** link in the emulator "Welcome" tab. 
+1. Click the **Open Bot** link in the emulator "Welcome" tab.
 2. Select the .bot file located in the directory where you created the project.
 
 ## Interact with your bot
@@ -585,10 +585,10 @@ After you have run your bot and saved your information, we can view it in under 
 Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine when debugging your bot's performance.
 
 ### Set up
-Azure blob transcript storage can use the same blob storage account created following the steps detailed in sections "_Create your blob storage account_" and "_Add configuration information_" above. For this discussion, we have added a new blob container, "_mybottranscripts_." 
+Azure blob transcript storage can use the same blob storage account created following the steps detailed in sections "_Create your blob storage account_" and "_Add configuration information_" above. For this discussion, we have added a new blob container, "_mybottranscripts_."
 
-### Implementation 
-The following code connects transcript storage pointer "_transcriptStore_" to your new Azure blob transcript storage account. The source code to store user conversations shown here is based on the [Conversation History](https://aka.ms/bot-history-sample-code) sample. 
+### Implementation
+The following code connects transcript storage pointer "_transcriptStore_" to your new Azure blob transcript storage account. The source code to store user conversations shown here is based on the [Conversation History](https://aka.ms/bot-history-sample-code) sample.
 
 ```csharp
 // In Startup.cs
@@ -621,10 +621,10 @@ After the TranscriptLoggerMiddleware is added, the Transcript Store will automat
 
 ```csharp
 /// <summary>
-/// Every Conversation turn for our EchoBot will call this method. 
+/// Every Conversation turn for our EchoBot will call this method.
 /// </summary>
 /// <param name="turnContext">A <see cref="ITurnContext"/> containing all the data needed
-/// for processing this conversation turn. </param>        
+/// for processing this conversation turn. </param>
 public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
 {
     var activity = turnContext.Activity;
@@ -644,7 +644,7 @@ public async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancel
                   .Where(a => a.Type == ActivityTypes.Message)
                   .Select(ia => (Activity)ia)
                   .ToList();
-               
+
                var transcript = new Transcript(activities);
 
                await connectorClient.Conversations.SendConversationHistoryAsync(activity.Conversation.Id, transcript, cancellationToken: cancellationToken);
@@ -664,7 +664,7 @@ var pageSize = 0;
 do
 {
     pagedResult = await _transcriptStore.ListTranscriptsAsync("emulator", pagedResult?.ContinuationToken);
-    
+
     // transcript item contains ChannelId, Created, Id.
     // save the converasationIds (Id) found by "ListTranscriptsAsync" to a local list.
     foreach (var item in pagedResult.Items)
@@ -712,14 +712,14 @@ for (int i = 0; i < numTranscripts; i++)
    // Remove all stored transcripts except the last one found.
    if (i > 0)
    {
-       string thisConversationId = storedTranscripts[i];    
+       string thisConversationId = storedTranscripts[i];
        await _transcriptStore.DeleteTranscriptAsync("emulator", thisConversationId);
     }
 }
 ```
 
 
-This following link provides more information concerning [Azure Blob Transcript Storage](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.azure.azureblobtranscriptstore)  
+This following link provides more information concerning [Azure Blob Transcript Storage](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.azure.azureblobtranscriptstore)
 
 ## Next steps
 Now that you know how to read read and write directly from storage, lets take a look at how you can use the state manager to do that for you.

@@ -15,7 +15,7 @@
   <Docs>
     <summary>
             LUIS prebuilt datetimeV2 types.
-            https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2
+            https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2
             </summary>
     <remarks>To be added.</remarks>
   </Docs>

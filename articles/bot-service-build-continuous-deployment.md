@@ -5,7 +5,7 @@ redirect_url: /bot-framework/bot-builder-deploy-az-cli
 <!--
 ---
 title: Configure continuous deployment for Bot Service | Microsoft Docs
-description: Learn how to setup continuous deployment from source control for a Bot Service. 
+description: Learn how to setup continuous deployment from source control for a Bot Service.
 keywords: continuous deployment, publish, deploy, azure portal
 author: ivorb
 ms.author: v-ivorb
@@ -25,7 +25,7 @@ If your code is checked into **GitHub** or **Azure DevOps (formerly Visual Studi
 
 To set up continuous deployment using GitHub repository that contains the source code you want to deploy to Azure, do the following:
 
-1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App service settings** blade and click **Deployment options (Classic)**. 
+1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App service settings** blade and click **Deployment options (Classic)**.
 
 1. Click **Choose Source** and select **GitHub**.
 
@@ -43,7 +43,7 @@ Now your continuous deployment with GitHub setup is complete. Whenever you commi
 
 ## Continuous deployment using Azure DevOps
 
-1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App service settings** blade and click **Deployment options (Classic)**. 
+1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App service settings** blade and click **Deployment options (Classic)**.
 2. Click **Choose Source** and select **Visual Studio Team Services**. Please keep in mind that Visual Studio Team Services is now Azure DevOps Services.
 
    ![Choose Visual Studio Team Services](~/media/azure-bot-build/continuous-deployment-setup-vs.png)
@@ -51,7 +51,7 @@ Now your continuous deployment with GitHub setup is complete. Whenever you commi
 3. Click **Choose your account** and select an account.
 
 > [!NOTE]
-> If you do not see your account listed, you'll need to [link your account to your Azure subscription](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=vsts&tabs=new-nav). Note that only VSTS Git projects are supported.
+> If you do not see your account listed, you'll need to [link your account to your Azure subscription](https://docs.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=vsts&tabs=new-nav). Note that only VSTS Git projects are supported.
 
 4. Click **Choose project** and select a project.
 5. Click **Choose branch** and select a branch.
@@ -66,11 +66,11 @@ Now your continuous deployment with Azure DevOps setup is complete. Whenever you
 While your bot is configured for continuous deployment, you may not use the online code editor to make changes to your bot. If you want to use the online code editor, you can temporarily disable continuous deployment.
 
 To disable continuous deployment, do the following:
-1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App service settings** blade and click **Deployment options (Classic)**. 
+1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App service settings** blade and click **Deployment options (Classic)**.
 2. Click **Disconnect** to disable continuous deployment. To re-enable continuous deployment, repeat the steps from the appropriate sections above.
 
 ## Additional information
-- Visual Studio Team Services is now [Azure DevOps Services](https://docs.microsoft.com/en-us/azure/devops/?view=vsts)
+- Visual Studio Team Services is now [Azure DevOps Services](https://docs.microsoft.com/azure/devops/?view=vsts)
 
 
 -->

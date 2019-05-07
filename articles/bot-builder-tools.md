@@ -71,10 +71,10 @@ This will consume `sample.chat` and output `sample.transcript`. See [Chatdown CL
 
 ### Create a LUIS application with LUDown
 
-The LUDown tool can be used to create new .json models for both LUIS and QnA.  
-You can define [intents](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-intents) and [entities](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-entities) for a LUIS application just like you would from the LUIS portal.
+The LUDown tool can be used to create new .json models for both LUIS and QnA.
+You can define [intents](https://docs.microsoft.com/azure/cognitive-services/luis/add-intents) and [entities](https://docs.microsoft.com/azure/cognitive-services/luis/add-entities) for a LUIS application just like you would from the LUIS portal.
 
-'#\<intent-name\>' describes a new intent definition section. Each line afterwards lists the [utterances](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/add-example-utterances) which describe that intent.
+'#\<intent-name\>' describes a new intent definition section. Each line afterwards lists the [utterances](https://docs.microsoft.com/azure/cognitive-services/luis/add-example-utterances) which describe that intent.
 
 For example, you can create multiple LUIS intents in a single .lu file as follows:
 
@@ -108,7 +108,7 @@ The LUDown tool will automatically separate question and answers into a qnamaker
 ~~~LUDown
 ### ? How do I change the default message for QnA Maker?
   ```
-  You can change the default message if you use the QnAMakerDialog. 
+  You can change the default message if you use the QnAMakerDialog.
   See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
   ```
 ~~~
@@ -185,7 +185,7 @@ To connect your bot to LUIS, you will need to create a **.luisrc** file. This is
 ```shell
 luis init
 ```
-You will be prompted in the terminal to enter your LUIS authoring key, region, and appID before the tool will generate the file.  
+You will be prompted in the terminal to enter your LUIS authoring key, region, and appID before the tool will generate the file.
 
 Once this file is generated, your application will be able to consume the LUIS .json file (generated from LUDown) using the following command from the CLI.
 
@@ -219,7 +219,7 @@ Use the Dispatch model in cases when:
 - Evaluate quality of intents classification of a single LUIS model.
 - Create a text classification model from text files.
 
-Once you have assembled your .bot file with the [LUIS applications][msbotCli-luis] and [QnA Maker knowledge bases][msbotCli-qna] your bot relies on, you can simply build a dispatch model using: 
+Once you have assembled your .bot file with the [LUIS applications][msbotCli-luis] and [QnA Maker knowledge bases][msbotCli-qna] your bot relies on, you can simply build a dispatch model using:
 
 ```shell
 dispatch create -b <YOUR-BOT-FILE> | msbot connect dispatch --stdin
@@ -267,12 +267,12 @@ Then, create the bot resource into which you will publish your bot.
 az bot create [options]
 ```
 
-To create a bot and update the .bot file with the bot configuration,  
+To create a bot and update the .bot file with the bot configuration,
 ```shell
 az bot create [options] --msbot | msbot connect bot --stdin
 ```
 
-If you have an existing bot,  
+If you have an existing bot,
 ```shell
 az bot show [options] --msbot | msbot connect bot --stdin
 ```

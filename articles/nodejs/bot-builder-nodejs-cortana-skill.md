@@ -17,13 +17,13 @@ monikerRange: 'azure-bot-service-3.0'
 > - [.NET](../dotnet/bot-builder-dotnet-cortana-skill.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-cortana-skill.md)
 
-The Bot Framework SDK for Node.js enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill. 
+The Bot Framework SDK for Node.js enables you to a build speech-enabled bot by connecting it to the Cortana channel as a Cortana skill.
 Cortana skills let you provide functionality through Cortana in response to spoken input from a user.
 
 > [!TIP]
 > For more information on what a skill is, and what they can do, see [The Cortana Skills Kit][CortanaGetStarted].
 
-Creating a Cortana skill using Bot Framework requires very little Cortana-specific knowledge and primarily consists of building a bot. One of the key differences from other bots that you may have created is that Cortana has both visual and audio components. For the visual component, Cortana provides an area of the canvas for rendering content such as cards. For the audio component, you provide text or SSML in your bot's messages, which Cortana reads to the user, giving your bot a voice. 
+Creating a Cortana skill using Bot Framework requires very little Cortana-specific knowledge and primarily consists of building a bot. One of the key differences from other bots that you may have created is that Cortana has both visual and audio components. For the visual component, Cortana provides an area of the canvas for rendering content such as cards. For the audio component, you provide text or SSML in your bot's messages, which Cortana reads to the user, giving your bot a voice.
 
 > [!NOTE]
 > Cortana is available on many different devices. Some have a screen while others, like a standalone speaker, might not. You should make sure that your bot is capable of handling both scenarios. See [Cortana-specific entities][CortanaSpecificEntities] to learn how to check device information.
@@ -34,7 +34,7 @@ Spoken messages from your bot are represented as Speech Synthesis Markup Languag
 
 ### session.say
 
-Your bot uses the **session.say** method to speak to the user, in place of **session.send**. It includes optional parameters for sending SSML output, as well as attachments like cards. 
+Your bot uses the **session.say** method to speak to the user, in place of **session.send**. It includes optional parameters for sending SSML output, as well as attachments like cards.
 
 The method has this format:
 
@@ -53,7 +53,7 @@ The **inputHint** property helps indicate to Cortana whether your bot is expecti
 |------|------|
 | **acceptingInput** | Your bot is passively ready for input but is not waiting on a response. Cortana accepts input from the user if the user holds down the microphone button.|
 | **expectingInput** | Indicates that the bot is actively expecting a response from the user. Cortana listens for the user to speak into the microphone.  |
-||NOTE: Do _not_ use **expectingInput** on headless devices (devices without a display). See the [Cortana Skills Kit FAQ](https://review.docs.microsoft.com/en-us/cortana/skills/faq).|
+||NOTE: Do _not_ use **expectingInput** on headless devices (devices without a display). See the [Cortana Skills Kit FAQ](https://review.docs.microsoft.com/cortana/skills/faq).|
 | **ignoringInput** | Cortana is ignoring input. Your bot may send this hint if it is actively processing a request, and will ignore input from users until the request is complete.  |
 
 The following example shows how Cortana reads plain text or SSML:
@@ -82,14 +82,14 @@ session.say('Hi there', 'Hi, what’s your name?', {
 
 ### Prompts
 
-In addition to using the **session.say()** method you can also pass text or SSML to built-in prompts using the **speak** and **retrySpeak** options.  
+In addition to using the **session.say()** method you can also pass text or SSML to built-in prompts using the **speak** and **retrySpeak** options.
 
 ```javascript
 
-builder.Prompts.text(session, 'text based prompt', {                                    
-    speak: 'Cortana reads this out initially',                                               
-    retrySpeak: 'This message is repeated by Cortana after waiting a while for user input',  
-    inputHint: builder.InputHint.expectingInput                                              
+builder.Prompts.text(session, 'text based prompt', {
+    speak: 'Cortana reads this out initially',
+    retrySpeak: 'This message is repeated by Cortana after waiting a while for user input',
+    inputHint: builder.InputHint.expectingInput
 });
 
 ```
@@ -108,13 +108,13 @@ To present the user with a list of choices, use **Prompts.choice**. The **synony
             { value: '12', action: { title: '12 Sides' }, synonyms: 'twelve|12 sided|12 sides' },
             { value: '20', action: { title: '20 Sides' }, synonyms: 'twenty|20 sided|20 sides' },
         ];
-        builder.Prompts.choice(session, 'choose_sides', choices, { 
+        builder.Prompts.choice(session, 'choose_sides', choices, {
             speak: speak(session, 'choose_sides_ssml') // use helper function to format SSML
         });
 
 ```
 
-In the previous example, the SSML for the prompt's **speak** property is formatted by using strings stored in a localized prompts file with the following format. 
+In the previous example, the SSML for the prompt's **speak** property is formatted by using strings stored in a localized prompts file with the following format.
 
 ```json
 
@@ -129,7 +129,7 @@ In the previous example, the SSML for the prompt's **speak** property is formatt
 
 ```
 
-A helper function then builds the required root element of a Speech Synthesis Markup Language (SSML) document. 
+A helper function then builds the required root element of a Speech Synthesis Markup Language (SSML) document.
 
 ```javascript
 
@@ -155,7 +155,7 @@ In addition to spoken responses, Cortana can also display card attachments. Cort
 * [ReceiptCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html)
 * [ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html)
 
-See [Card design best practices][CardDesign] to see what these cards look like inside Cortana. For an example of how to add a rich card to a bot, see [Send rich cards](bot-builder-nodejs-send-rich-cards.md). 
+See [Card design best practices][CardDesign] to see what these cards look like inside Cortana. For an example of how to add a rich card to a bot, see [Send rich cards](bot-builder-nodejs-send-rich-cards.md).
 
 The following code demonstrates how to add the **speak** and **inputHint** properties to a message containing a Hero card.
 
@@ -227,13 +227,13 @@ bot.dialog('HelpDialog', function (session) {
 
 ### Prompt the user for input
 
-The following dialog sets up a custom game for the bot to play.  It 
+The following dialog sets up a custom game for the bot to play.  It
 asks the user how many sides they want the dice to have and then
 how many should be rolled. Once it has built the game structure
 it will pass it to a separate 'PlayGameDialog'.
 
 To start the dialog, the **triggerAction()** handler on this dialog allows a user to say
-something like "I'd like to roll some dice". It uses a regular expression to match the user's input but you could just as easily use a [LUIS intent](./bot-builder-nodejs-recognize-intent-luis.md). 
+something like "I'd like to roll some dice". It uses a regular expression to match the user's input but you could just as easily use a [LUIS intent](./bot-builder-nodejs-recognize-intent-luis.md).
 
 
 ```javascript
@@ -242,9 +242,9 @@ bot.dialog('CreateGameDialog', [
         // Initialize game structure.
         // - dialogData gives us temporary storage of this data in between
         //   turns with the user.
-        var game = session.dialogData.game = { 
-            type: 'custom', 
-            sides: null, 
+        var game = session.dialogData.game = {
+            type: 'custom',
+            sides: null,
             count: null,
             turns: 0
         };
@@ -257,8 +257,8 @@ bot.dialog('CreateGameDialog', [
             { value: '12', action: { title: '12 Sides' }, synonyms: 'twelve|12 sided|12 sides' },
             { value: '20', action: { title: '20 Sides' }, synonyms: 'twenty|20 sided|20 sides' },
         ];
-        builder.Prompts.choice(session, 'choose_sides', choices, { 
-            speak: speak(session, 'choose_sides_ssml') 
+        builder.Prompts.choice(session, 'choose_sides', choices, {
+            speak: speak(session, 'choose_sides_ssml')
         });
     },
     function (session, results) {
@@ -286,7 +286,7 @@ bot.dialog('CreateGameDialog', [
 
         /**
          * Play the game we just created.
-         * 
+         *
          * replaceDialog() ends the current dialog and start a new
          * one in its place. We can pass arguments to dialogs so we'll pass the
          * 'PlayGameDialog' the game we created.
@@ -389,7 +389,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
         var spoken = '';
         if (game.turn == 0) {
             spoken += session.gettext('start_' + game.type + '_game_ssml') + ' ';
-        } 
+        }
         spoken += session.gettext(reaction + '_roll_reaction_ssml');
         msg.speak(ssml.speak(spoken));
 
@@ -398,7 +398,7 @@ bot.dialog('PlayGameDialog', function (session, args) {
         session.conversationData.game = game;
 
         /**
-         * Send card and bot's reaction to user. 
+         * Send card and bot's reaction to user.
          */
 
         msg.inputHint(builder.InputHint.acceptingInput);

@@ -1,7 +1,7 @@
 ---
 title: Use QnA Maker to answer questions | Microsoft Docs
 description: Learn how to use QnA maker in your bot.
-keywords: question and answer, QnA, FAQs, qna maker 
+keywords: question and answer, QnA, FAQs, qna maker
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
@@ -24,25 +24,25 @@ In this topic we will create a knowledge base and use it in a bot.
 - [QnA Maker](https://www.qnamaker.ai/) account
 - The code in this article is based on the **QnA Maker** sample. You'll need a copy of either the [C# sample](https://aka.ms/cs-qna) or [Javascript sample](https://aka.ms/js-qna-sample).
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download)
-- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview), and [.bot](bot-file-basics.md) file.
+- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/overview/overview), and [.bot](bot-file-basics.md) file.
 
 ## Create a QnA Maker service and publish a knowledge base
-1. First, you'll need to create a [QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure).
-1. Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located in the CognitiveModels folder of the project. The steps to create, train, and publish your QnA Maker [knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base) are listed in the QnA Maker documentation. As you follow these steps, name your KB `qna`,  and use the `smartLightFAQ.tsv` file to populate your KB.
+1. First, you'll need to create a [QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure).
+1. Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located in the CognitiveModels folder of the project. The steps to create, train, and publish your QnA Maker [knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base) are listed in the QnA Maker documentation. As you follow these steps, name your KB `qna`,  and use the `smartLightFAQ.tsv` file to populate your KB.
 > Note. This article may also be used to access your own user developed QnA Maker knowledgebase.
 
 ## Obtain values to connect your bot to the knowledge base
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
-1. With your knowledge base open, select the **Settings**. Record the value shown for _service name_. This value is useful for finding your knowledgebase of interest when using the QnA Maker portal interface. It is not used to connect your bot app to this knowledgebase. 
+1. With your knowledge base open, select the **Settings**. Record the value shown for _service name_. This value is useful for finding your knowledgebase of interest when using the QnA Maker portal interface. It is not used to connect your bot app to this knowledgebase.
 1. Scroll down to find **Deployment details** record the following values:
    - POST /knowledgebases/<Your_Knowledge_Base_Id>/getAnswers
    - Host: <Your_Hostname>/qnamaker
    - Authorization: EndpointKey <Your_Endpoint_Key>
-   
-These three values provide the information necessary for your app to connect to your QnA Maker knowledgebase via your Azure QnA service.  
+
+These three values provide the information necessary for your app to connect to your QnA Maker knowledgebase via your Azure QnA service.
 
 ## Update the .bot file
-First, add the information required to access your knowledge base including hostname, endpoint key and knowledge base Id (kbId) into the `qnamaker.bot`. These are the values you saved from the **Settings** of your knowledge base in QnA Maker. 
+First, add the information required to access your knowledge base including hostname, endpoint key and knowledge base Id (kbId) into the `qnamaker.bot`. These are the values you saved from the **Settings** of your knowledge base in QnA Maker.
 > Note. If you are adding access to a QnA Maker knowledgebase into an existing bot application, be sure to add a "type": "qna" section like the one shown below into your .bot file. The "name" value within this section provides the key required to access this information from within your app.
 
 ```json
@@ -55,7 +55,7 @@ First, add the information required to access your knowledge base including host
       "endpoint": "http://localhost:3978/api/messages",
       "appId": "",
       "appPassword": "",
-      "id": "25"    
+      "id": "25"
     },
     {
       "type": "qna",
@@ -146,7 +146,7 @@ In the **index.js** file, we read in the configuration information to generate t
 Update the value of `QNA_CONFIGURATION` to the "name": value in your .bot file. This is the Key into your .bot file "type": "qna" section containing connection parameters to access your QnA Maker knowledgebase.
 
 ```js
-// Name of the QnA Maker service stored in "name" field of .bot file. 
+// Name of the QnA Maker service stored in "name" field of .bot file.
 const QNA_CONFIGURATION = '<SERVICE_NAME_FROM_.BOT_FILE>';
 
 // Get endpoint and QnA Maker configurations by service name.

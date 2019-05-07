@@ -25,7 +25,7 @@ The standard Bot Framework metadata section looks like this:
 
 ## Attributes and values
 
-![](./media/article-metadata/checkmark-small.png)**title**: Required; important for SEO. Title text appears in the browser tab and as the heading in a search result. Use up to 60 characters including spaces and including the site identifier *| Microsoft Docs* (typed as: space pipe space Microsoft Docs). The H1 of an article should expand on the title, not duplicate it. 
+![](./media/article-metadata/checkmark-small.png)**title**: Required; important for SEO. Title text appears in the browser tab and as the heading in a search result. Use up to 60 characters including spaces and including the site identifier *| Microsoft Docs* (typed as: space pipe space Microsoft Docs). The H1 of an article should expand on the title, not duplicate it.
 
 ![](./media/article-metadata/checkmark-small.png)**description**: Required; important for SEO (relevance) and site functionality. The description should be at least 115 characters long to 145 characters maximum including spaces. Describe the purpose of your content so customers will know whether to choose it from a list of search results. The value is:
 
@@ -46,13 +46,13 @@ The standard Bot Framework metadata section looks like this:
 
 If a page applies to multiple services, choose the service to which it most directly applies; for instance, an article that uses an app hosted on web sites to demonstrate Service Bus functionality should have the **service-bus** value, rather than **web-sites**. If a page applies to multiple services equally, choose **multiple**. If a page does not apply to any services (this will be rare), choose **NA**.
 
-The list of approved values is listed [here](https://docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-metadata?branch=master).
+The list of approved values is listed [here](https://docs.microsoft.com/help/contribute/contribute-how-to-write-metadata?branch=master).
 
 ![](./media/article-metadata/checkmark-small.png)**ms.tgt_pltfrm**: Optional. Specifies the target platform, for instance Windows, Linux, Windows Phone, iOS, Android, or special cache platforms. One value per page. This value will be **na** for most topics except mobile and virtual machines.
 
 ![](./media/article-metadata/checkmark-small.png)**ms.devlang**: Optional. Specifies the programming language that the article applies to. Single value per page.
 
-The list of approved values is listed [here](https://docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-metadata?branch=master).
+The list of approved values is listed [here](https://docs.microsoft.com/help/contribute/contribute-how-to-write-metadata?branch=master).
 
 ![](./media/article-metadata/checkmark-small.png)**ms.topic**: Required. Specifies the topic type. Most new pages created by contributors will use "article".
 

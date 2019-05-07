@@ -33,13 +33,13 @@ Ensuring that each small piece of your app, or in this case our bot, works exact
 
 Mocking as many elements as you can allows for better isolation of the piece you’re testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also be removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
 
-Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it’s not necessary, or simply force it to do nothing. 
+Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it’s not necessary, or simply force it to do nothing.
 
-This level should exercise individual methods and functions within your bot. Testing individual methods could be through built in unit tests, which are recommended, with your own testing app or test suite, or manually doing so within your IDE. 
+This level should exercise individual methods and functions within your bot. Testing individual methods could be through built in unit tests, which are recommended, with your own testing app or test suite, or manually doing so within your IDE.
 
 #### Use mock elements to test larger features
 
-Once you are happy with how each method behaves, use these mock elements to test more complete features in your bot. This demonstrates how a few layers work together to converse with your user. 
+Once you are happy with how each method behaves, use these mock elements to test more complete features in your bot. This demonstrates how a few layers work together to converse with your user.
 
 A handful of tools are provided to help with this. For example,
 the [Azure Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator) provides an emulated channel to communicate with your bot. Using the emulator gets into a more complex situation than just unit and integration testing, and therefore also spills over into the next level of testing.
@@ -55,7 +55,7 @@ Use of both the Emulator and Web Chat via Azure portal here can provide further 
 
 ### Level 3: Channel tests
 
-Once you’re confident in your bot’s independent performance, it’s important to see how it works with various channels that it will be available on. 
+Once you’re confident in your bot’s independent performance, it’s important to see how it works with various channels that it will be available on.
 
 How this is achieved can vary greatly, from individually using different channels and browsers to using a third-party tool, such as [Selenium](https://docs.seleniumhq.org/) to interact through a channel and scrape responses from your bot.
 
@@ -65,7 +65,7 @@ Different types of testing can be done in conjunction with the above levels or f
 
 ## Debugging
 
-Debugging your bot works similarly to other multi-threaded apps, with the ability to set breakpoints or use features like the immediate window. 
+Debugging your bot works similarly to other multi-threaded apps, with the ability to set breakpoints or use features like the immediate window.
 
 Bots follow an event driven programming paradigm, which can be hard to rationalize if you’re not familiar with it. The idea of your bot being stateless, multi-threaded, and dealing with async/await calls can result in unexpected bugs. While debugging your bot works similarly to other multi-threaded apps, we’ll cover some suggestions, tools, and resources to help.
 
@@ -75,7 +75,7 @@ Your bot deals with different types of [activities](bot-builder-basics.md#the-ac
 
 ### Saving and retrieving user interactions with transcripts
 
-Azure blob transcript storage provides a specialized resource where you can both [store and retrieve transcripts](bot-builder-howto-v4-storage.md) containing interactions between your users and your bot.  
+Azure blob transcript storage provides a specialized resource where you can both [store and retrieve transcripts](bot-builder-howto-v4-storage.md) containing interactions between your users and your bot.
 
 Additionally, once user input interactions have been stored, you can use Azure's "_storage explorer_" to manually view data contained in transcripts stored within your blob transcript store. The following example opens "_storage explorer_" from settings for "_mynewtestblobstorage_." To open a saved user input select:    Blob Container > ChannelId > TranscriptId > ConversationId
 
@@ -85,11 +85,11 @@ This opens the stored user conversation input in JSON format. User input is pres
 
 ### How middleware works
 
-[Middleware](bot-builder-concept-middleware.md) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic. 
+[Middleware](bot-builder-concept-middleware.md) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic.
 
 If you are using multiple pieces of middleware the delegate may pass execution to a different piece of middleware if that is how your pipeline is oriented. Details on [the bot middleware pipeline](bot-builder-concept-middleware.md#the-bot-middleware-pipeline) can help make that idea clearer.
 
-If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-middleware.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on. 
+If the `next()` delegate is not called, that’s referred to as [short circuit routing](bot-builder-concept-middleware.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it’s not necessary to pass execution on.
 
 Understanding when, and why, middleware short-circuits helps indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try creating your own middleware first to experiment a bit before diving into the built-in middleware.
 
@@ -101,7 +101,7 @@ For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain 
 
 Keeping track of state is an important part of your bot, particularly for complex tasks. In general, best practice is to process activities as quickly as possible and let the processing complete so that state gets persisted. Activities can be sent to your bot at nearly the same time, and that can introduce very confusing bugs because of the asynchronous architecture.
 
-Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator) and [Azure Table storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
+Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/local-emulator) and [Azure Table storage](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
 
 ### How to use activity handlers
 
@@ -113,9 +113,9 @@ The _send activity_ method, and its handlers, pose a unique problem. Simply call
 
 ## Additional resources
 
-* [Debugging in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/index)
-* [Debugging, Tracing, and Profiling](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/) for the bot framework
-* Use the [ConditionalAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code
+* [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/index)
+* [Debugging, Tracing, and Profiling](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/) for the bot framework
+* Use the [ConditionalAttribute](https://docs.microsoft.com/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code
 * Use tools like [Fiddler](https://www.telerik.com/fiddler) to see network traffic
 * [Bot tools repo](https://github.com/Microsoft/botbuilder-tools)
 * Frameworks can help with testing, such as [Moq](https://github.com/moq/moq4)

@@ -7,7 +7,7 @@ redirect_url: https://github.com/Microsoft/botbuilder-tools/blob/master/packages
 ---
 title: Extract typed LUIS results | Microsoft Docs
 description: Learn how to use LUIS to extract entities with the Bot Framework SDK.
-keywords: intents, entities, LUISGen, extract 
+keywords: intents, entities, LUISGen, extract
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani
@@ -21,7 +21,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, in the example of a restaurant reservation, the LUIS app might be able to extract the party size, reservation date or restaurant location from the user's message. 
+Besides recognizing intent, a LUIS app can also extract entities, which are important words for fulfilling a user's request. For example, in the example of a restaurant reservation, the LUIS app might be able to extract the party size, reservation date or restaurant location from the user's message.
 
 
 You can use the [LUISGen tool](https://aka.ms/botbuilder-tools-luisgen) to generate classes that make it easier to extract entities from LUIS in your bot's code.
@@ -47,13 +47,13 @@ This generates **cafeLUISModel.cs**, which you can add to your project. It provi
 This class has an enum for getting the intents defined in the LUIS app.
 ```cs
 public enum Intent {
-    Book_Table, 
-    Greeting, 
-    None, 
+    Book_Table,
+    Greeting,
+    None,
     Who_are_you_intent
 };
 ```
-It also has an `Entities` property. Since there can be multiple occurrences of an entity in a user's message, the `_Entities` class defines an array for each type of entity. 
+It also has an `Entities` property. Since there can be multiple occurrences of an entity in a user's message, the `_Entities` class defines an array for each type of entity.
 ```cs
 public class _Entities
 {
@@ -82,21 +82,21 @@ public _Entities Entities;
 ```
 
 > [!NOTE]
-> All the entity types are arrays, because LUIS may detect more than one entity of a specified type in a user's utterance. 
+> All the entity types are arrays, because LUIS may detect more than one entity of a specified type in a user's utterance.
 > For example, if the user says "make reservations for 5pm tomorrow and 9pm next Saturday", both "5pm tomorrow" and "9pm next Saturday" are returned in the `datetime` results.
 >
 
 |Entity | Type | Example | Notes |
 |-------|-----|------|---|
 |partySize| string[]| Party of `four`| A simple entity recognizes strings. In this example, Entities.partySize[0] is `"four"`.
-|datetime| [DateTimeSpec](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.datetimespec?view=botbuilder-4.0.0-alpha)[]| reservation for at `9pm tomorrow`| Each **DateTimeSpec** object has a timex field with the possible value of times specified in **timex** format. More information on timex can be found here: http://www.timeml.org/publications/timeMLdocs/timeml_1.2.1.html#timex3      More information on the library which does the recognition can be found here: https://github.com/Microsoft/Recognizers-Text
+|datetime| [DateTimeSpec](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.ai.luis.datetimespec?view=botbuilder-4.0.0-alpha)[]| reservation for at `9pm tomorrow`| Each **DateTimeSpec** object has a timex field with the possible value of times specified in **timex** format. More information on timex can be found here: http://www.timeml.org/publications/timeMLdocs/timeml_1.2.1.html#timex3      More information on the library which does the recognition can be found here: https://github.com/Microsoft/Recognizers-Text
 |number| double[]| Party of `four` which includes `2` children | `number` will identify all numbers, not just size of the party. <br/> In the utterance "Party of four which includes 2 children", `Entities.number[0]` is 4, and `Entities.number[1]` is 2.
 |cafelocation| string[][] | Reservation at the `Seattle` location.| cafeLocation is a list entity, which means that it contains recognized members of lists. It is an array of arrays, in case a recognized entity is a member of more than one list. For example, "reservation in Washington" could correspond to a list for Washington state and for Washington D.C.
 
-The `_Instance` property provides [InstanceData](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.instancedata?view=botbuilder-4.0.0-alpha) for more detail on each recognized entity.
+The `_Instance` property provides [InstanceData](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.ai.luis.instancedata?view=botbuilder-4.0.0-alpha) for more detail on each recognized entity.
 
 ## Check intents in your bot
-In **CafeBot.cs**, Take a look at the code within `OnTurn`. You can see where the bot calls LUIS and checks intents to decide which dialog to begin. The LUIS results from the call to [`Recognize`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.ai.luis.luisrecognizer?view=botbuilder-4.0.0-alpha#methods) are passed as an argument to the `BookTable` dialog.
+In **CafeBot.cs**, Take a look at the code within `OnTurn`. You can see where the bot calls LUIS and checks intents to decide which dialog to begin. The LUIS results from the call to [`Recognize`](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.ai.luis.luisrecognizer?view=botbuilder-4.0.0-alpha#methods) are passed as an argument to the `BookTable` dialog.
 
 
 
@@ -111,7 +111,7 @@ if(!context.Responded)
     if(lResult != null) {
         lD.Add("luisResult", lResult);
     }
-    
+
     // top level dispatch
     switch (lResult.TopIntent().intent)
     {
@@ -154,7 +154,7 @@ Now take a look at `Dialogs/BookTable.cs`. The `BookTable` dialog contains a seq
                     cafeLUISModel lResult = (cafeLUISModel)args["luisResult"];
                     updateContextWithLUIS(lResult, ref state);
                 }
-                
+
                 // prompt if we do not already have cafelocation
                 if(state.ContainsKey("cafeLocation")) {
                     state["bookingLocation"] = state["cafeLocation"];
@@ -189,13 +189,13 @@ Now take a look at `Dialogs/BookTable.cs`. The `BookTable` dialog contains a seq
                                     new PromptOptions { RetryPromptString = "We only accept reservations for the next 2 weeks and in the evenings between 4PM - 8PM" });
                 } else {
                     await next();
-                }                       
-                
+                }
+
             },
             async (dc, args, next) =>
             {
                 var state = dc.ActiveDialog.State;
-                if(!state.ContainsKey("datetime")) { 
+                if(!state.ContainsKey("datetime")) {
                     var timexResult = (TimexResult)args;
                     var timexResolution = timexResult.Resolutions.First();
                     var timexProperty = new TimexProperty(timexResolution.ToString());
@@ -225,7 +225,7 @@ Now take a look at `Dialogs/BookTable.cs`. The `BookTable` dialog contains a seq
 
                 // TODO: Verify user said yes to confirmation prompt
 
-                // TODO: book the table! 
+                // TODO: book the table!
 
                 await dc.Context.SendActivity($"Thanks, I have {dialogState["bookingGuestCount"].ToString()} guests booked for our {dialogState["bookingLocation"].ToString()} location for {dialogState["bookingDateTime"].ToString()}.");
             }
@@ -252,7 +252,7 @@ private void updateContextWithLUIS(cafeLUISModel lResult, ref IDictionary<string
 ```
 ## Run the sample
 
-Open `ContosoCafeBot.sln` in Visual Studio 2017, and run the bot. Use the [Bot Framework Emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator) to connect to the sample bot.
+Open `ContosoCafeBot.sln` in Visual Studio 2017, and run the bot. Use the [Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator) to connect to the sample bot.
 
 In the emulator, say `reserve a table` to start the reservation dialog.
 
@@ -271,11 +271,11 @@ This generates **CafeLUISModel.ts**, which you can add to your project. You can 
 
 ```typescript
 // call LUIS and get typed results
-await luisRec.recognize(context).then(async (res : any) => 
-{    
+await luisRec.recognize(context).then(async (res : any) =>
+{
     // get a typed result
-    var typedresult = res as CafeLUISModel;   
-    
+    var typedresult = res as CafeLUISModel;
+
 ```
 
 ## Pass the typed result to a dialog
@@ -283,44 +283,44 @@ await luisRec.recognize(context).then(async (res : any) =>
 Examine the code in **luisbot.ts**. In the `processActivity` handler, the bot passes the typed result to a dialog.
 
 ```typescript
-// Listen for incoming requests 
+// Listen for incoming requests
 server.post('/api/messages', (req, res) => {
     // Route received request to adapter for processing
     adapter.processActivity(req, res, async (context) => {
         const isMessage = context.activity.type === 'message';
 
-        // Create dialog context 
+        // Create dialog context
         const state = conversationState.get(context);
         const dc = dialogs.createContext(context, state);
-            
+
         if (!isMessage) {
             await context.sendActivity(`[${context.activity.type} event detected]`);
         }
 
-        // Check to see if anyone replied. 
+        // Check to see if anyone replied.
         if (!context.responded) {
             await dc.continue();
             // if the dialog didn't send a response
             if (!context.responded && isMessage) {
 
-                
-                await luisRec.recognize(context).then(async (res : any) => 
-                {    
-                    var typedresult = res as CafeLUISModel;                
-                    let topIntent = LuisRecognizer.topIntent(res);    
+
+                await luisRec.recognize(context).then(async (res : any) =>
+                {
+                    var typedresult = res as CafeLUISModel;
+                    let topIntent = LuisRecognizer.topIntent(res);
                     switch (topIntent)
                     {
                         case Intents.Book_Table: {
-                            await context.sendActivity("Top intent is Book_Table ");                          
+                            await context.sendActivity("Top intent is Book_Table ");
                             await dc.begin('reserveTable', typedresult);
                             break;
                         }
-                        
+
                         case Intents.Greeting: {
                             await context.sendActivity("Top intent is Greeting");
                             break;
                         }
-    
+
                         case Intents.Who_are_you_intent: {
                             await context.sendActivity("Top intent is Who_are_you_intent");
                             break;
@@ -330,12 +330,12 @@ server.post('/api/messages', (req, res) => {
                             break;
                         }
                     }
-    
+
                 }, (err) => {
                     // there was some error
                     console.log(err);
                 }
-                );                                
+                );
             }
         }
     });
@@ -356,9 +356,9 @@ dialogs.add('reserveTable', [
         await SaveEntities(dc, typedresult);
 
         await dc.context.sendActivity("Welcome to the reservation service.");
-        
+
         if (dc.activeDialog.state.dateTime) {
-            await next();     
+            await next();
         }
         else {
             await dc.prompt('dateTimePrompt', "Please provide a reservation date and time.");
@@ -394,18 +394,18 @@ dialogs.add('reserveTable', [
         state = dc.activeDialog.state;
 
         // TODO: Add in <br/>Location: ${state.cafeLocation}
-        var msg = `Reservation confirmed. Reservation details:             
-            <br/>Date/Time: ${state.dateTime} 
-            <br/>Party size: ${state.partySize} 
+        var msg = `Reservation confirmed. Reservation details:
+            <br/>Date/Time: ${state.dateTime}
+            <br/>Party size: ${state.partySize}
             <br/>Reservation name: ${state.Name}`;
-            
+
         await dc.context.sendActivity(msg);
         await dc.end();
     }
 ]);
 ```
 
-The `SaveEntities` helper function checks for `datetime` and `partysize` entities. The `datetime` entity is a [prebuilt entity](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2).
+The `SaveEntities` helper function checks for `datetime` and `partysize` entities. The `datetime` entity is a [prebuilt entity](https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities#builtindatetimev2).
 
 ```typescript
 // Helper function that saves any entities found in the LUIS result
@@ -422,8 +422,8 @@ async function SaveEntities( dc: DialogContext<TurnContext>, typedresult) {
             if (datetime[0].timex) {
                 timexValues = datetime[0].timex;
                 // Datetime results from LUIS are represented in timex format:
-                // http://www.timeml.org/publications/timeMLdocs/timeml_1.2.1.html#timex3                                
-                // More information on the library which does the recognition can be found here: 
+                // http://www.timeml.org/publications/timeMLdocs/timeml_1.2.1.html#timex3
+                // More information on the library which does the recognition can be found here:
                 // https://github.com/Microsoft/Recognizers-Text
 
                 if (datetime[0].type === "datetime") {
@@ -433,7 +433,7 @@ async function SaveEntities( dc: DialogContext<TurnContext>, typedresult) {
                     var resolution = Resolver.evaluate(
                         // array of timex values to evaluate. There may be more than one: "today at 6" can be 6AM or 6PM.
                         timexValues,
-                        // constrain results to times between 4pm and 8pm                        
+                        // constrain results to times between 4pm and 8pm
                         [Creator.evening]);
                     if (resolution[0]) {
                         // toNaturalLanguage takes the current date into account to create a friendly string
@@ -443,11 +443,11 @@ async function SaveEntities( dc: DialogContext<TurnContext>, typedresult) {
                         // time didn't satisfy constraint.
                         dc.activeDialog.state.dateTime = null;
                     }
-                } 
+                }
                 else  {
                     console.log(`Type ${datetime[0].type} is not yet supported. Provide both the date and the time.`);
                 }
-            }                                                
+            }
         }
         let partysize = typedresult.entities.partySize;
         if (partysize) {
@@ -462,7 +462,7 @@ async function SaveEntities( dc: DialogContext<TurnContext>, typedresult) {
             // use first cafeLocation entity that was found in utterance
             dc.activeDialog.state.cafeLocation = cafelocation[0][0];
         }
-    } 
+    }
 }
 ```
 
@@ -484,7 +484,7 @@ npm install
 
 4. Run `luisbot.js` in the `lib` directory.
 
-5. Use the [Bot Framework Emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator) to run the sample.
+5. Use the [Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator) to run the sample.
 
 6. In the emulator, say `reserve a table` to start the reservation dialog.
 

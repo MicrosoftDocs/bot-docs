@@ -116,7 +116,7 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
 > You will need to create and register the Azure AD application in a tenant to which you have admin rights.
 
 1. Open the [Azure Active Directory][azure-aad-blade] panel in the Azure portal.
-    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
+    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, click **New application registration**.
 1. Fill in the required fields and create the app registration.
@@ -272,7 +272,7 @@ Depending on the sample you've chosen, you'll be working with either C# or Node.
     If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can either create a new password as described here:
 
     [bot-channels-registration-password](../bot-service-quickstart-registration.md#bot-channels-registration-password)
-  
+
   Or retrieve the **Microsoft app ID** and **Microsoft app password** provisioned with the **Bot Channels Registration** from the deployement described here:
 
     [find-your-azure-bots-appid-and-appsecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret)

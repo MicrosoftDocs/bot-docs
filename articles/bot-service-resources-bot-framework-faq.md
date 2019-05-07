@@ -21,27 +21,27 @@ While the Conversation User Interface (CUI) is upon us, at this point few develo
 ### What is the v4 SDK?
 Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
 
-## Bot Framework SDK Version 3 Lifetime Support 
+## Bot Framework SDK Version 3 Lifetime Support
 SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the release of Bot Framework SDK V4, as with other frameworks, we continue supporting SDK V3 with security, high priority bug fixes, and connector / protocol layer updates.  Customers can expect v3 support to continue through 2019.
 
 ### What is Microsoft plan for supporting existing V3 bots? What happens to my V3 Bots? Will my V3 bots stop working?
 SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the release of Bot Framework SDK V4, as with other frameworks, we continue supporting SDK V3 with security, high priority bug fixes, and connector / protocol layer updates.  Customers can expect v3 support to continue through 2019.
-- Azure Bot Service and Bot Framework V3 are both GA products and are fully supported. The underlying Bot Framework protocol and connector libraries have not changed and are shared between both V3 and V4 SDKs.  
-- Bots created with Bot Framework (BotBuilder) V3 SDK continue to be supported through 2019. 
+- Azure Bot Service and Bot Framework V3 are both GA products and are fully supported. The underlying Bot Framework protocol and connector libraries have not changed and are shared between both V3 and V4 SDKs.
+- Bots created with Bot Framework (BotBuilder) V3 SDK continue to be supported through 2019.
 - Customers can continue creating V3 bots using Azure portal or Azure CLI tools.
 
 ### What happens to my bot written to REST & Bot Framework Protocol 3.1?
 - Azure Bot Service and Bot Framework V3 are both GA products and are fully supported.
-- The Bot Framework protocol has not changed and are shared between both V3 and V4 SDKs.  
+- The Bot Framework protocol has not changed and are shared between both V3 and V4 SDKs.
 
-### Will there be more updates, additional development for the V3 SDK or just bugfixes?  
-- We will update V3 with minor enhancements, mainly at the connector layer, and with security and high priority bug fixes.  
-- Updates to V3 will be released twice yearly and as needed, based on bug fixes and/or required protocol changes. 
+### Will there be more updates, additional development for the V3 SDK or just bugfixes?
+- We will update V3 with minor enhancements, mainly at the connector layer, and with security and high priority bug fixes.
+- Updates to V3 will be released twice yearly and as needed, based on bug fixes and/or required protocol changes.
 - Current plan is to publish minor and patch versions of V3 to NuGet and NPM for our C# and JavaScript SDKs.
 
 ### Why V4 is not backwards compatible with V3?
 - At the protocol level, communication between your conversational app (aka your bot) to different channels uses the Bot Framework Activity protocol which is identical between V3 and V4. The same underlying Azure Bot Service (AZURE BOT SERVICE) infrastructure supports both V3 and V4 bots.
-- Bot Framework SDK V4 offers conversational centric development experience with an SDK architecture that is modular and extensible, empowering developers to create robust and sophisticated chat applications. V4 extendable design was based on customer feedback, suggesting SDK V3 dialog models and primitives are too ridged and constraining extendibility.  
+- Bot Framework SDK V4 offers conversational centric development experience with an SDK architecture that is modular and extensible, empowering developers to create robust and sophisticated chat applications. V4 extendable design was based on customer feedback, suggesting SDK V3 dialog models and primitives are too ridged and constraining extendibility.
 
 ### What is the general migration strategy? I have a V3 bot, how can I migrate it to V4/ Can I migrate my V3 bot to V4?
 
@@ -54,12 +54,12 @@ SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the re
 - For new conversational experiences, we recommend you start a new bot using Bot Framework SDK V4.
 - If you are already familiar with Bot Framework SDK V3, you should take the time to learn about the new version and features offered with the new [Bot Framework SDK V4](http://aka.ms/botframeowrkoverview).
 - If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future.
-- You can create Bot Framework SDK V4 and older V3 bots via Azure portal and Azure Command Line. 
+- You can create Bot Framework SDK V4 and older V3 bots via Azure portal and Azure Command Line.
 
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
 
-We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.  
+We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.
 If you would like a specific channel added to the framework, [let us know][Support].
 
 ### I have a communication channel I’d like to be configurable with Bot Framework. Can I work with Microsoft to do that?
@@ -98,9 +98,9 @@ If you have an outbound firewall blocking traffic from your bot to the Internet,
 
 ### Can I block all traffic to my bot except traffic from the Bot Connector Service?
 No. This sort of IP Address or DNS whitelisting is impractical. The Bot Framework Connector Service is hosted in Azure datacenters world-wide and the list of Azure IPs is constantly changing. Whitelisting certain IP addresses may work one day and break the next as the Azure IP Addresses change.
- 
+
 ### What keeps my bot secure from clients impersonating the Bot Framework Connector Service?
-1. The security token accompanying every request to your bot has the ServiceUrl encoded within it, which means that even if an attacker gains access to the token, they cannot redirect the conversation to a new ServiceUrl. This is enforced by all implementations of the SDK and documented in our authentication [reference](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#bot-to-connector) materials.
+1. The security token accompanying every request to your bot has the ServiceUrl encoded within it, which means that even if an attacker gains access to the token, they cannot redirect the conversation to a new ServiceUrl. This is enforced by all implementations of the SDK and documented in our authentication [reference](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#bot-to-connector) materials.
 
 2. If the incoming token is missing or malformed, the Bot Framework SDK will not generate a token in response. This limits how much damage can be done if the bot is incorrectly configured.
 3. Inside the bot, you can manually check the ServiceUrl provided in the token. This makes the bot more fragile in the event of service topology changes so this is possible but not recommended.
@@ -113,7 +113,7 @@ Note that these are outbound connections from the bot to the Internet. There is 
 The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we’ve added rate limits (also known as throttling) to all endpoints. By enforcing a rate limit, we can restrict the frequency with which a bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period. Please note that the purpose of rate-limiting is not to cap the total volume for a bot. It is designed to prevent abuse of the conversational infrastructure that does not follow human conversation patterns.
 
 ### How will I know if I’m impacted?
-It is unlikely you’ll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages. 
+It is unlikely you’ll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages.
 
 ### How does rate limiting occur?
 It can happen if:
@@ -131,7 +131,7 @@ Both the Bot Framework and [Cognitive Services](http://www.microsoft.com/cogniti
 
 ### What is Cortana Intelligence?
 
-Cortana Intelligence is a fully managed Big Data, Advanced Analytics and Intelligence suite that transforms your data into intelligent action.  
+Cortana Intelligence is a fully managed Big Data, Advanced Analytics and Intelligence suite that transforms your data into intelligent action.
 It is a comprehensive suite that brings together technologies founded upon years of research and innovation throughout Microsoft (spanning advanced analytics, machine learning, big data storage and processing in the cloud) and:
 
 * Allows you to collect, manage and store all your data that can seamlessly and cost effectively grow over time in a scalable and secure way.
@@ -153,7 +153,7 @@ Direct Line is suitable for:
 * Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 * Service-to-service applications
 
-[DirectLineAPI]: https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
+[DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
 

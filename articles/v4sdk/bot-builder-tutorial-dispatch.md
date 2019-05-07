@@ -35,11 +35,11 @@ In this tutorial, we demonstrate how to use the Dispatch service to route uttera
 You may follow the **README** instructions for [C#](https://aka.ms/dispatch-sample-readme-cs) or [JS](https://aka.ms/dispatch-sample-readme-js) to create this bot using Command Line Interface calls, or follow the steps below to manually create your bot using the Azure, LUIS, and QnAMaker User Interfaces.
 
  ### Create your bot using service UI
- 
+
 To begin manually creating your bot, download the following 4 files located in the GitHub [BotFramework-Samples](https://aka.ms/botdispatchgitsamples) repository into a local folder:
-[home-automation.json](https://aka.ms/dispatch-home-automation-json), 
-[weather.json](https://aka.ms/dispatch-weather-json), 
-[nlp-with-dispatchDispatch.json](https://aka.ms/dispatch-dispatch-json), 
+[home-automation.json](https://aka.ms/dispatch-home-automation-json),
+[weather.json](https://aka.ms/dispatch-weather-json),
+[nlp-with-dispatchDispatch.json](https://aka.ms/dispatch-dispatch-json),
 [QnAMaker.tsv](https://aka.ms/dispatch-qnamaker-tsv)
 One method to accomplish this is to open the GitHub repository link above, click on **BotFramework-Samples**, then "Clone or download" the repository to your local machine. Note that these files are in a different repository than the sample mentioned in the prerequisites.
 
@@ -72,7 +72,7 @@ The first step to setting up a QnA Maker knowledge base is to first set up a QnA
 and select
 1. Your Azure AD account.
 1. Your Azure subscription name.
-1. The name you created for your QnA Maker service. (If your Azure QnA service does not initially appear in this pull down list, try refreshing the page.) 
+1. The name you created for your QnA Maker service. (If your Azure QnA service does not initially appear in this pull down list, try refreshing the page.)
 
 Move to Step 3
 
@@ -160,14 +160,14 @@ public void ConfigureServices(IServiceCollection services)
         ?? throw new InvalidOperationException($"The .bot config file could not be loaded. ({botConfig})"));
 
     // ...
-    
+
     var connectedServices = InitBotServices(botConfig);
     services.AddSingleton(sp => connectedServices);
-    
+
     services.AddBot<NlpDispatchBot>(options =>
     {
-          
-          // The Memory Storage used here is for local bot debugging only. 
+
+          // The Memory Storage used here is for local bot debugging only.
           // When the bot is restarted, everything stored in memory will be gone.
 
           Storage dataStore = new MemoryStorage();
@@ -237,7 +237,7 @@ private static BotServices InitBotServices(BotConfiguration config)
 
 # [JavaScript](#tab/javascript)
 
-The sample code uses predefined naming constants to identify the various sections of your `.bot` file. If you have modified any section names from the original sample namings in your _nlp-with-dispatch.bot_ file, be sure to locate the associated constant declaration in the **bot.js**, **homeAutomation.js**, **qna.js**, or **weather.js** file and change that entry to the modified name.  
+The sample code uses predefined naming constants to identify the various sections of your `.bot` file. If you have modified any section names from the original sample namings in your _nlp-with-dispatch.bot_ file, be sure to locate the associated constant declaration in the **bot.js**, **homeAutomation.js**, **qna.js**, or **weather.js** file and change that entry to the modified name.
 
 ```javascript
 // In file bot.js
@@ -436,7 +436,7 @@ switch (dispatchTopIntent) {
  ```
 
  In `homeAutomation.js`
- 
+
  ```javascript
  async onTurn(turnContext) {
     // make call to LUIS recognizer to get home automation intent + entities
@@ -502,14 +502,14 @@ Once your bot is running, it is possible to improve the bot's performance by rem
 * Remove the "None" intent from the original `Home Automation` LUIS app, and instead add the utterances from that intent to the "None" intent in the dispatcher app.
 * If you don't remove the "None" intent from the original LUIS app, you will instead need to add logic into your bot to pass the messages that match your "None" intent on to the QnA maker service.
 
-Either of the above two actions will reduce the number of times that your bot responds back to your users with the message, 'Couldn't find an answer.' 
+Either of the above two actions will reduce the number of times that your bot responds back to your users with the message, 'Couldn't find an answer.'
 
 ## Additional resources
 
 **Update or create a new LUIS model:** This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](https://aka.ms/create-luis-model#updating-your-cognitive-models
 ).
 
-**Delete resources:** This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that *any other apps or services* rely on. 
+**Delete resources:** This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that *any other apps or services* rely on.
 
 _LUIS resources_
 1. Sign in to the [luis.ai](https://www.luis.ai) portal.
@@ -525,4 +525,4 @@ _QnA Maker resources_
 1. Go to the _My knowledge bases_ page.
 1. Click the delete button for the `Sample QnA` knowledge base, and click _Delete_ to confirm.
 
-**Best practice:** To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/best-practices).
+**Best practice:** To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices).

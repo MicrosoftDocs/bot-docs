@@ -1,6 +1,6 @@
 ---
 title: Recognize intents and entities with LUIS  | Microsoft Docs
-description: Integrate a bot with LUIS to detect the user's intent and respond appropriately by triggering dialogs using the Bot Framework SDK for Node.js. 
+description: Integrate a bot with LUIS to detect the user's intent and respond appropriately by triggering dialogs using the Bot Framework SDK for Node.js.
 author: DeniseMak
 ms.author: v-demak
 manager: kamrani
@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 ---
 
-# Recognize intents and entities with LUIS 
+# Recognize intents and entities with LUIS
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
@@ -24,11 +24,11 @@ This article uses the example of a bot for taking notes, to demonstrate how Lang
 
     ![Create new resource](../media/bot-builder-nodejs-use-luis/bot-service-creation.png)
 
-2. In the search box, search for **Web App Bot**. 
+2. In the search box, search for **Web App Bot**.
 
     ![Create new resource](../media/bot-builder-nodejs-use-luis/bot-service-selection.png)
 
-3. In the **Bot Service** blade, provide the required information, and click **Create**. This creates and deploys the bot service and LUIS app to Azure. 
+3. In the **Bot Service** blade, provide the required information, and click **Create**. This creates and deploys the bot service and LUIS app to Azure.
    * Set **App name** to your bot’s name. The name is used as the subdomain when your bot is deployed to the cloud (for example, mynotesbot.azurewebsites.net). This name is also used as the name of the LUIS app associated with your bot. Copy it to use later, to find the LUIS app associated with the bot.
    * Select the subscription, [resource group](/azure/azure-resource-manager/resource-group-overview), App service plan, and [location](https://azure.microsoft.com/en-us/regions/).
    * Select the **Language understanding (Node.js)** template for the **Bot template** field.
@@ -53,11 +53,11 @@ The bot responds by saying "You have reached Greeting. You said: hello". This co
 
 ## Modify the LUIS app
 
-Log in to [https://www.luis.ai](https://www.luis.ai) using the same account you use to log in to Azure. Click on **My apps**. In the list of apps, find the app that begins with the name specified in **App name** in the **Bot Service** blade when you created the Bot Service. 
+Log in to [https://www.luis.ai](https://www.luis.ai) using the same account you use to log in to Azure. Click on **My apps**. In the list of apps, find the app that begins with the name specified in **App name** in the **Bot Service** blade when you created the Bot Service.
 
 The LUIS app starts with 4 intents: Cancel: Greeting, Help, and None. <!-- picture -->
 
-The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents: 
+The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents:
 
 1. Click on **Prebuit Domains** in the lower left of the page. Find the **Note** domain and click **Add domain**.
 
@@ -69,7 +69,7 @@ The following steps add the Note.Create, Note.ReadAloud, and Note.Delete intents
    * Note.CheckOffItem
    * Note.AddToNote
 
-   The only intents that should remain in the LUIS app are the following: 
+   The only intents that should remain in the LUIS app are the following:
    * Note.ReadAloud
    * Note.Create
    * Note.Delete
@@ -101,21 +101,21 @@ var botbuilder_azure = require("botbuilder-azure");
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
-   console.log('%s listening to %s', server.name, server.url); 
+   console.log('%s listening to %s', server.name, server.url);
 });
-  
+
 // Create chat connector for communicating with the Bot Framework Service
 var connector = new builder.ChatConnector({
     appId: process.env.MicrosoftAppId,
     appPassword: process.env.MicrosoftAppPassword,
-    openIdMetadata: process.env.BotOpenIdMetadata 
+    openIdMetadata: process.env.BotOpenIdMetadata
 });
 
-// Listen for messages from users 
+// Listen for messages from users
 server.post('/api/messages', connector.listen());
 
 /*----------------------------------------------------------------------------------------
-* Bot Storage: This is a great spot to register the private state storage for your bot. 
+* Bot Storage: This is a great spot to register the private state storage for your bot.
 * We provide adapters for Azure Table, CosmosDb, SQL Azure, or you can implement your own!
 * For samples and documentation, see: https://github.com/Microsoft/BotBuilder-Azure
 * ---------------------------------------------------------------------------------------- */
@@ -145,7 +145,7 @@ var recognizer = new builder.LuisRecognizer(LuisModelUrl);
 bot.recognizer(recognizer);
 
 // Add a dialog for each intent that the LUIS app recognizes.
-// See https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis 
+// See https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis
 bot.dialog('GreetingDialog',
     (session) => {
         session.send('You reached the Greeting intent. You said \'%s\'.', session.message.text);
@@ -176,13 +176,13 @@ bot.dialog('CancelDialog',
 ```
 
 
-> [!TIP] 
+> [!TIP]
 > You can also find the sample code described in this article in the [Notes bot sample][NotesSample].
 
 
 
 ## Edit the default message handler
-The bot has a default message handler. Edit it to match the following: 
+The bot has a default message handler. Edit it to match the following:
 ```javascript
 // Create your bot with a function to receive messages from the user.
 // This default message handler is invoked if the user's utterance doesn't
@@ -213,7 +213,7 @@ bot.dialog('CreateNote', [
         var note = session.dialogData.note = {
           title: title ? title.entity : null,
         };
-        
+
         // Prompt for title
         if (!note.title) {
             builder.Prompts.text(session, 'What would you like to call your note?');
@@ -239,7 +239,7 @@ bot.dialog('CreateNote', [
         if (results.response) {
             note.text = results.response;
         }
-        
+
         // If the object for storing notes in session.userData doesn't exist yet, initialize it
         if (!session.userData.notes) {
             session.userData.notes = {};
@@ -252,21 +252,21 @@ bot.dialog('CreateNote', [
         session.endDialog('Creating note named "%s" with text "%s"',
             note.title, note.text);
     }
-]).triggerAction({ 
+]).triggerAction({
     matches: 'Note.Create',
-    confirmPrompt: "This will cancel the creation of the note you started. Are you sure?" 
+    confirmPrompt: "This will cancel the creation of the note you started. Are you sure?"
 }).cancelAction('cancelCreateNote', "Note canceled.", {
     matches: /^(cancel|nevermind)/i,
     confirmPrompt: "Are you sure?"
 });
 ```
 
-Any entities in the utterance are passed to the dialog using the `args` parameter. The first step of the [waterfall][waterfall] calls [EntityRecognizer.findEntity][EntityRecognizer_findEntity] to get the title of the note from any `Note.Title` entities in the LUIS response. If the LUIS app didn't detect a `Note.Title` entity, the bot prompts the user for the name of the note. The second step of the waterfall prompts for the text to include in the note. Once the bot has the text of the note, the third step uses [session.userData][session_userData] to save the note in a `notes` object, using the title as the key. For more information on `session.UserData` see [Manage state data](./bot-builder-nodejs-state.md). 
+Any entities in the utterance are passed to the dialog using the `args` parameter. The first step of the [waterfall][waterfall] calls [EntityRecognizer.findEntity][EntityRecognizer_findEntity] to get the title of the note from any `Note.Title` entities in the LUIS response. If the LUIS app didn't detect a `Note.Title` entity, the bot prompts the user for the name of the note. The second step of the waterfall prompts for the text to include in the note. Once the bot has the text of the note, the third step uses [session.userData][session_userData] to save the note in a `notes` object, using the title as the key. For more information on `session.UserData` see [Manage state data](./bot-builder-nodejs-state.md).
 
 
 
 ## Handle the Note.Delete intent
-Just as for the `Note.Create` intent, the bot examines the `args` parameter for a title. If no title is detected, the bot prompts the user. The title is used to look up the note to delete from `session.userData.notes`. 
+Just as for the `Note.Create` intent, the bot examines the `args` parameter for a title. If no title is detected, the bot prompts the user. The title is used to look up the note to delete from `session.userData.notes`.
 
 
 
@@ -284,7 +284,7 @@ bot.dialog('DeleteNote', [
                 // Verify that the title is in our set of notes.
                 title = builder.EntityRecognizer.findBestMatch(session.userData.notes, entity.entity);
             }
-            
+
             // Prompt for note name
             if (!title) {
                 builder.Prompts.choice(session, 'Which note would you like to delete?', session.userData.notes);
@@ -296,7 +296,7 @@ bot.dialog('DeleteNote', [
         }
     },
     function (session, results) {
-        delete session.userData.notes[results.response.entity];        
+        delete session.userData.notes[results.response.entity];
         session.endDialog("Deleted the '%s' note.", results.response.entity);
     }
 ]).triggerAction({
@@ -306,7 +306,7 @@ bot.dialog('DeleteNote', [
 });
 ```
 
-The code that handles `Note.Delete` uses the `noteCount` function to determine whether the `notes` object contains notes. 
+The code that handles `Note.Delete` uses the `noteCount` function to determine whether the `notes` object contains notes.
 
 Paste the `noteCount` helper function at the end of `app.js`.
 
@@ -321,7 +321,7 @@ Copy the following code and paste it in `app.js` after the handler for `Note.Del
 bot.dialog('ReadNote', [
     function (session, args, next) {
         if (noteCount(session.userData.notes) > 0) {
-           
+
             // Resolve and store any Note.Title entity passed from LUIS.
             var title;
             var intent = args.intent;
@@ -330,7 +330,7 @@ bot.dialog('ReadNote', [
                 // Verify it's in our set of notes.
                 title = builder.EntityRecognizer.findBestMatch(session.userData.notes, entity.entity);
             }
-            
+
             // Prompt for note name
             if (!title) {
                 builder.Prompts.choice(session, 'Which note would you like to read?', session.userData.notes);
@@ -341,7 +341,7 @@ bot.dialog('ReadNote', [
             session.endDialog("No notes to read.");
         }
     },
-    function (session, results) {        
+    function (session, results) {
         session.endDialog("Here's the '%s' note: '%s'.", results.response.entity, session.userData.notes[results.response.entity].text);
     }
 ]).triggerAction({
@@ -364,21 +364,21 @@ var botbuilder_azure = require("botbuilder-azure");
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
-   console.log('%s listening to %s', server.name, server.url); 
+   console.log('%s listening to %s', server.name, server.url);
 });
-  
+
 // Create chat connector for communicating with the Bot Framework Service
 var connector = new builder.ChatConnector({
     appId: process.env.MicrosoftAppId,
     appPassword: process.env.MicrosoftAppPassword,
-    openIdMetadata: process.env.BotOpenIdMetadata 
+    openIdMetadata: process.env.BotOpenIdMetadata
 });
 
-// Listen for messages from users 
+// Listen for messages from users
 server.post('/api/messages', connector.listen());
 
 /*----------------------------------------------------------------------------------------
-* Bot Storage: This is a great spot to register the private state storage for your bot. 
+* Bot Storage: This is a great spot to register the private state storage for your bot.
 * We provide adapters for Azure Table, CosmosDb, SQL Azure, or you can implement your own!
 * For samples and documentation, see: https://github.com/Microsoft/BotBuilder-Azure
 * ---------------------------------------------------------------------------------------- */
@@ -423,7 +423,7 @@ bot.dialog('CreateNote', [
         var note = session.dialogData.note = {
           title: title ? title.entity : null,
         };
-        
+
         // Prompt for title
         if (!note.title) {
             builder.Prompts.text(session, 'What would you like to call your note?');
@@ -449,7 +449,7 @@ bot.dialog('CreateNote', [
         if (results.response) {
             note.text = results.response;
         }
-        
+
         // If the object for storing notes in session.userData doesn't exist yet, initialize it
         if (!session.userData.notes) {
             session.userData.notes = {};
@@ -462,9 +462,9 @@ bot.dialog('CreateNote', [
         session.endDialog('Creating note named "%s" with text "%s"',
             note.title, note.text);
     }
-]).triggerAction({ 
+]).triggerAction({
     matches: 'Note.Create',
-    confirmPrompt: "This will cancel the creation of the note you started. Are you sure?" 
+    confirmPrompt: "This will cancel the creation of the note you started. Are you sure?"
 }).cancelAction('cancelCreateNote', "Note canceled.", {
     matches: /^(cancel|nevermind)/i,
     confirmPrompt: "Are you sure?"
@@ -482,7 +482,7 @@ bot.dialog('DeleteNote', [
                 // Verify that the title is in our set of notes.
                 title = builder.EntityRecognizer.findBestMatch(session.userData.notes, entity.entity);
             }
-            
+
             // Prompt for note name
             if (!title) {
                 builder.Prompts.choice(session, 'Which note would you like to delete?', session.userData.notes);
@@ -494,7 +494,7 @@ bot.dialog('DeleteNote', [
         }
     },
     function (session, results) {
-        delete session.userData.notes[results.response.entity];        
+        delete session.userData.notes[results.response.entity];
         session.endDialog("Deleted the '%s' note.", results.response.entity);
     }
 ]).triggerAction({
@@ -508,7 +508,7 @@ bot.dialog('DeleteNote', [
 bot.dialog('ReadNote', [
     function (session, args, next) {
         if (noteCount(session.userData.notes) > 0) {
-           
+
             // Resolve and store any Note.Title entity passed from LUIS.
             var title;
             var intent = args.intent;
@@ -517,7 +517,7 @@ bot.dialog('ReadNote', [
                 // Verify it's in our set of notes.
                 title = builder.EntityRecognizer.findBestMatch(session.userData.notes, entity.entity);
             }
-            
+
             // Prompt for note name
             if (!title) {
                 builder.Prompts.choice(session, 'Which note would you like to read?', session.userData.notes);
@@ -528,7 +528,7 @@ bot.dialog('ReadNote', [
             session.endDialog("No notes to read.");
         }
     },
-    function (session, results) {        
+    function (session, results) {
         session.endDialog("Here's the '%s' note: '%s'.", results.response.entity, session.userData.notes[results.response.entity].text);
     }
 ]).triggerAction({
@@ -570,7 +570,7 @@ From trying the bot, you can see that the recognizer can trigger interruption of
 
 [intentDialog]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.intentdialog.html
 
-[intentDialog_matches]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.intentdialog.html#matches 
+[intentDialog_matches]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.intentdialog.html#matches
 
 [NotesSample]: https://github.com/Microsoft/BotFramework-Samples/tree/master/docs-samples/Node/basics-naturalLanguage
 

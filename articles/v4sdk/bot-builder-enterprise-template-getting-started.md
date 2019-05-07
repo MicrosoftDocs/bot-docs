@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Enterprise Bot Template - Getting Started
 
 > [!NOTE]
-> This topic applies to v4 version of the SDK. 
+> This topic applies to v4 version of the SDK.
 
 ## Prerequisites
 
@@ -21,8 +21,8 @@ Install the following:
 - [Enterprise Bot Template VSIX](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4enterprise)
 - [.NET Core SDK](https://www.microsoft.com/net/download) (latest version)
 - [Node Package manager](https://nodejs.org/en/)
-- [Bot Framework Emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) (latest version)
-- [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) (latest version)
+- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
 - [Azure Bot Service CLI tools](https://github.com/Microsoft/botbuilder-tools) (latest versions)
     ```shell
     npm install -g ludown luis-apis qnamaker botdispatch msbot chatdown
@@ -54,10 +54,10 @@ Enterprise Template Bots require the following Azure services for end-to-end ope
 The following steps will help you to deploy these services using the provided deployment scripts:
 
 1. Retrieve your LUIS Authoring Key.
-   - Review [this](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-regions) documentation page for the correct LUIS portal for your deployment region. Note that www.luis.ai refers to the US region and an authoring key retrieved from this portal will not work with a europe deployment.
+   - Review [this](https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-regions) documentation page for the correct LUIS portal for your deployment region. Note that www.luis.ai refers to the US region and an authoring key retrieved from this portal will not work with a europe deployment.
    - Once signed in click on your name in the top right hand corner.
    - Choose **Settings** and make a note of the Authoring Key for later use.
-    
+
     ![LUIS Authoring Key screenshot](./media/enterprise-template/luis_authoring_key.jpg)
 
 1. Open up a Command Prompt.
@@ -77,15 +77,15 @@ The following steps will help you to deploy these services using the provided de
     >- The **YOUR-BOT-NAME** parameter must be **globally unique**, and may only contain lowercase letters, numbers, and dashes ("-").
     >- Ensure the deployment region you provide in this step matches the region of your LUIS authoring key portal (e.g. westus for luis.ai or westeurope for eu.luis.ai).
     >- There is a known issue some users may experience with provisioning an MSA AppId and Password. If you recieve this error `ERROR: Unable to provision MSA id automatically. Please pass them in as parameters and try again`, please go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and manually create a new application, making note of the AppId and Password/Secret. Run the above msbot clone services command again, providing two new arguments `--appId` and `--appSecret` with the values you've just retrieved. You may need to escape any special characters in the password that might be interpreted by the shell to be a command:
-    >   - For *Windows command prompt*, enclose the appSecret in double quotes. e.g. 
+    >   - For *Windows command prompt*, enclose the appSecret in double quotes. e.g.
     `msbot clone services --name xxxx --luisAuthoringKey xxxx --location xxxx --folder bot.recipe --appSecret "YOUR_APP_SECRET"`
-    >   - For *Windows PowerShell, try passing in appSecret after the --% argument. e.g. 
+    >   - For *Windows PowerShell, try passing in appSecret after the --% argument. e.g.
     `msbot clone services --name xxxx --luisAuthoringKey xxxx --location xxxx --folder bot.recipe --% --appSecret "YOUR_APP_SECRET"`
-    >   - For *MacOS or Linux*, enclose the appSecret in single quotes. e.g. 
+    >   - For *MacOS or Linux*, enclose the appSecret in single quotes. e.g.
     `msbot clone services --name xxxx --luisAuthoringKey xxxx --location xxxx --folder bot.recipe --appSecret 'YOUR_APP_SECRET'`
 
-1. After deployment is complete, update **appsettings.json** with your bot file secret. 
-    
+1. After deployment is complete, update **appsettings.json** with your bot file secret.
+
     ```
     "botFilePath": "./YOUR_BOT_FILE.bot",
     "botFileSecret": "YOUR_BOT_SECRET",
@@ -122,7 +122,7 @@ az bot publish -g YOUR-BOT-NAME -n YOUR-BOT-NAME --proj-name YOUR-BOT-NAME.cspro
 ```
 
 ## View your bot analytics
-The Enterprise Bot Template comes with a preconfigured Power BI dashboard that connects to your Application Insights service to provide conversation analytics. Once you have tested your bot locally, you can open this dashboard to view the data. 
+The Enterprise Bot Template comes with a preconfigured Power BI dashboard that connects to your Application Insights service to provide conversation analytics. Once you have tested your bot locally, you can open this dashboard to view the data.
 
 1. Download the Power BI dashboard (.pbit file) [here](https://github.com/Microsoft/AI/blob/master/solutions/analytics/ConversationalAnalyticsSample_02132019.pbit).
 1. Open the dashboard in [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).

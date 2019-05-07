@@ -20,7 +20,7 @@
   <Docs>
     <summary>
             LUIS prebuilt datetime types.
-            https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities
+            https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities
             </summary>
     <remarks>To be added.</remarks>
     <see cref="T:Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.BuiltInGeographyTypes" />

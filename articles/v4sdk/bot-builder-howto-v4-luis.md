@@ -16,32 +16,32 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. This topic walks you through setting up a simple bot that uses LUIS to recognize a few different intents. 
+The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. This topic walks you through setting up a simple bot that uses LUIS to recognize a few different intents.
 ## Prerequisites
 - [luis.ai](https://www.luis.ai) account
 - [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download)
-- The code in this article is based on the **NLP with LUIS** sample. You'll need a copy of the sample in either [C# Sample](https://aka.ms/cs-luis-sample) or [JS Sample](https://aka.ms/js-luis-sample). 
-- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis), and [.bot](bot-file-basics.md) file.
+- The code in this article is based on the **NLP with LUIS** sample. You'll need a copy of the sample in either [C# Sample](https://aka.ms/cs-luis-sample) or [JS Sample](https://aka.ms/js-luis-sample).
+- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [.bot](bot-file-basics.md) file.
 
 ## Create a LUIS app in the LUIS portal
-Sign in to the LUIS portal to create your own version of the sample LUIS app. You can create and manage your applications on **My Apps**. 
+Sign in to the LUIS portal to create your own version of the sample LUIS app. You can create and manage your applications on **My Apps**.
 
-1. Select **Import new app**. 
-1. Click **Choose App file (JSON format)...** 
+1. Select **Import new app**.
+1. Click **Choose App file (JSON format)...**
 1. Select `reminders.json` file located in the `CognitiveModels` folder of the sample. In the **Optional Name**, enter **LuisBot**. This file contains three intents: Calendar_Add, Calendar_Find, and None. We'll use these intents to understand what the user meant when they send a message to the bot. If you want to include entities, see the [optional section](#optional---extract-entities) at the end of this article.
-1. [Train](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-train) the app.
-1. [Publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) the app to *production* environment.
+1. [Train](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-train) the app.
+1. [Publish](https://docs.microsoft.com/azure/cognitive-services/LUIS/publishapp) the app to *production* environment.
 
 ### Obtain values to connect to your LUIS app
 
 Once your LUIS app is published, you can access it from your bot. You will need to record several values to access your LUIS app from within your bot. You can retrieve that information using the LUIS portal.
 
 #### Retrieve application information from the LUIS.ai portal
-The .bot file act as the place to bring all service references together in one place. The information you retrieve will be added to the .bot file in the next section. 
+The .bot file act as the place to bring all service references together in one place. The information you retrieve will be added to the .bot file in the next section.
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
 1. Select the **Application Information** tab on the left side, record the value shown for _Application ID_ as <YOUR_APP_ID>.
-1. Select the **Keys and Endpoints** tab on the left side, record the value shown for _Authoring Key_ as <YOUR_AUTHORING_KEY>. Note that *your subscription key* is the same as *your authoring key*. 
+1. Select the **Keys and Endpoints** tab on the left side, record the value shown for _Authoring Key_ as <YOUR_AUTHORING_KEY>. Note that *your subscription key* is the same as *your authoring key*.
 1. Scroll down to the end of the page, record the value shown for _Region_ as <YOUR_REGION>.
 1. Record the value shown for _Endpoint_ as <YOUR_ENDPOINT>.
 
@@ -113,7 +113,7 @@ public class BotServices
             }
         }
 
-    // Gets the set of LUIS Services used. LuisServices is represented as a dictionary.  
+    // Gets the set of LUIS Services used. LuisServices is represented as a dictionary.
     public Dictionary<string, LuisRecognizer> LuisServices { get; } = new Dictionary<string, LuisRecognizer>();
 }
 ```
@@ -353,20 +353,20 @@ The LUIS recognizer returns information about how well the utterance matched ava
 
 1. Run the sample locally on your machine. If you need instructions, refer to the readme file for [C#](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/12.nlp-with-luis/README.md) or [JS](https://github.com/Microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/12.nlp-with-luis/README.md) sample.
 
-1. In the emulator, type a message as shown below. 
+1. In the emulator, type a message as shown below.
 
 ![test nlp sample input](./media/nlp-luis-sample-message.png)
 
-The bot will respond back with the top scoring intent, which in this case is the 'Calendar_Add' intent. Recall that the `reminders.json` file you imported in the luis.ai portal defined the intents 'Calendar_Add', 'Calendar_Find', and 'None'. 
+The bot will respond back with the top scoring intent, which in this case is the 'Calendar_Add' intent. Recall that the `reminders.json` file you imported in the luis.ai portal defined the intents 'Calendar_Add', 'Calendar_Find', and 'None'.
 
-![test nlp sample response](./media/nlp-luis-sample-response.png) 
+![test nlp sample response](./media/nlp-luis-sample-response.png)
 
-A prediction score indicates the degree of confidence LUIS has for prediction results. 
-A prediction score is between zero (0) and one (1). An example of a highly confident LUIS score is 0.99. An example of a score of low confidence is 0.01. 
+A prediction score indicates the degree of confidence LUIS has for prediction results.
+A prediction score is between zero (0) and one (1). An example of a highly confident LUIS score is 0.99. An example of a score of low confidence is 0.01.
 
 ## Optional - Extract entities
 
-Besides recognizing user intent, a LUIS app can also return entities. Entities are important words related to the intent and can sometimes be essential to fulfilling a user's request or allow your bot to behave more intelligently. 
+Besides recognizing user intent, a LUIS app can also return entities. Entities are important words related to the intent and can sometimes be essential to fulfilling a user's request or allow your bot to behave more intelligently.
 
 ### Why use entities
 
@@ -374,10 +374,10 @@ LUIS entities allow your bot to intelligently understand certain things or event
 
 ### Prerequisites
 
-To use entities with this sample, you will need to create a LUIS app that includes entities. Follow the steps in the above section for [creating your LUIS app](#create-a-luis-app-in-the-luis-portal), but instead of using the file `reminders.json`, use the [reminders-with-entities.json](https://github.com/Microsoft/BotFramework-Samples/tree/master/SDKV4-Samples/dotnet_core/nlp-with-luis) file to build your LUIS app. This file provides the same intents plus an additional three entities: Appointment, Meeting, and Schedule. These entities assist LUIS in determining the intent of your user's message. 
+To use entities with this sample, you will need to create a LUIS app that includes entities. Follow the steps in the above section for [creating your LUIS app](#create-a-luis-app-in-the-luis-portal), but instead of using the file `reminders.json`, use the [reminders-with-entities.json](https://github.com/Microsoft/BotFramework-Samples/tree/master/SDKV4-Samples/dotnet_core/nlp-with-luis) file to build your LUIS app. This file provides the same intents plus an additional three entities: Appointment, Meeting, and Schedule. These entities assist LUIS in determining the intent of your user's message.
 
 ### Extract and display entities
-The following optional code can be added to this sample app to extract and display the entity information when an entity is used by LUIS to help identify the user's intent. 
+The following optional code can be added to this sample app to extract and display the entity information when an entity is used by LUIS to help identify the user's intent.
 
 # [C#](#tab/cs)
 
@@ -409,7 +409,7 @@ private string ParseLuisForEntities(RecognizerResult recognizerResult)
               var entType = o.Appointment[0].type;
               var entScore = o.Appointment[0].score;
               result = "Entity: " + entType + ", Score: " + entScore + ".";
-              
+
               return result;
             }
         }
@@ -424,7 +424,7 @@ private string ParseLuisForEntities(RecognizerResult recognizerResult)
                 var entType = o.Meeting[0].type;
                 var entScore = o.Meeting[0].score;
                 result = "Entity: " + entType + ", Score: " + entScore + ".";
-                
+
                 return result;
             }
         }
@@ -439,7 +439,7 @@ private string ParseLuisForEntities(RecognizerResult recognizerResult)
                 var entType = o.Schedule[0].type;
                 var entScore = o.Schedule[0].score;
                 result = "Entity: " + entType + ", Score: " + entScore + ".";
-                
+
                 return result;
             }
         }
@@ -468,7 +468,7 @@ else
 ```
 # [JavaScript](#tab/js)
 
-The following code can be added to your bot to extract entity information out of the `luisRecognizer` result returned from LUIS. Within the `onTurn` processing of the code sample file bot.js add the following line just after the declaration of constant _topIntent_. This will capture any returned entity information: 
+The following code can be added to your bot to extract entity information out of the `luisRecognizer` result returned from LUIS. Within the `onTurn` processing of the code sample file bot.js add the following line just after the declaration of constant _topIntent_. This will capture any returned entity information:
 
 ```javascript
 // Since the LuisRecognizer was configured to include the raw results, get returned entity data.
@@ -501,13 +501,13 @@ This code first checks to see if LUIS returned any entity information within the
 
 1. To test your bot that includes entities, run the sample locally as explained [above](#test-the-bot).
 
-1. In the emulator, enter the message shown below. 
+1. In the emulator, enter the message shown below.
 
 ![test nlp sample input](./media/nlp-luis-sample-message.png)
 
 The bot now responds back with both the top scoring intent 'Calendar_Add' plus the 'Meetings' entity that was used by LUIS to determine user intent.
 
-![test nlp sample response](./media/nlp-luis-sample-entity-response.png) 
+![test nlp sample response](./media/nlp-luis-sample-entity-response.png)
 
 Detecting entities can help improve the overall performance of your bot. For example, detecting the "Meeting" entity (shown above) could allow your application to now call a specialized function designed to create a new meeting on the user's calendar.
 

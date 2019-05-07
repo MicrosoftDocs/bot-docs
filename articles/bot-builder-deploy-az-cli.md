@@ -15,7 +15,7 @@ ms.date: 04/12/2019
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
 In this article, we'll show you how to deploy C# and JavaScript bots to Azure. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
@@ -30,7 +30,7 @@ The deployment process requires a target Web App Bot in Azure so that your local
 -	App Service - service for hosting web applications
 -	Storage account - contains all your Azure Storage data objects: blobs, files, queues, tables, and disks.
 
-During the creation of the target Web App Bot, an app ID and password are also generated for your bot. In Azure, the app ID and password support [service authentication and authorization](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization). You will retrieve some of this information for use in your local bot code. 
+During the creation of the target Web App Bot, an app ID and password are also generated for your bot. In Azure, the app ID and password support [service authentication and authorization](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization). You will retrieve some of this information for use in your local bot code.
 
 > [!IMPORTANT]
 > The programming language for the bot template used in the Azure portal must match the programming language your bot is written in.
@@ -39,12 +39,12 @@ Creating a new Web App Bot is optional if you have already created a bot in Azur
 
 1. Log in to the [Azure portal](https://portal.azure.com).
 1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**.
-1. A new blade will open with information about the Web App Bot. 
+1. A new blade will open with information about the Web App Bot.
 1. In the **Bot Service** blade, provide the requested information about your bot.
 1. Click **Create** to create the service and deploy the bot to the cloud. This process may take several minutes.
 
 ### Download the source code
-After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references (e.g. MicrosoftAppID, MicrosoftAppPassword, LUIS, or QnA) that are in the appsettings.json or .env file. 
+After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references (e.g. MicrosoftAppID, MicrosoftAppPassword, LUIS, or QnA) that are in the appsettings.json or .env file.
 
 1. In the **Bot Management** section, click **Build**.
 1. Click on **Download Bot source code** link in the right-pane.
@@ -58,12 +58,12 @@ Open the appsettings.json or .env file you downloaded. Copy **all** entries list
 Save the file.
 
 ### Update local bot code
-Update the local Startup.cs or index.js file to use appsettings.json or .env file instead using the .bot file. The .bot file has been deprecated and we are working on updating VSIX templates, Yeoman generators, samples, and remaining docs to all use appsettings.json or .env file instead of the .bot file. In the meantime, you'll need to make changes to the bot code. 
+Update the local Startup.cs or index.js file to use appsettings.json or .env file instead using the .bot file. The .bot file has been deprecated and we are working on updating VSIX templates, Yeoman generators, samples, and remaining docs to all use appsettings.json or .env file instead of the .bot file. In the meantime, you'll need to make changes to the bot code.
 
-Update the code to read settings from appsettings.json or .env file. 
+Update the code to read settings from appsettings.json or .env file.
 
 # [C#](#tab/csharp)
-In the `ConfigureServices` method, use the configuration object that ASP.NET Core provides, for example: 
+In the `ConfigureServices` method, use the configuration object that ASP.NET Core provides, for example:
 
 **Startup.cs**
 ```csharp
@@ -75,7 +75,7 @@ options.CredentialProvider = new SimpleCredentialProvider(appId, appPassword);
 # [JS](#tab/js)
 
 In JavaScript, reference .env variables off of the `process.env` object, for example:
-   
+
 **index.js**
 
 ```js
