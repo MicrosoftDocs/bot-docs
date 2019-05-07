@@ -10,12 +10,12 @@ ms.subservice: bot-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 ms.author: travisw
-monikerRange: 'azure-bot-service-4.0'
+ms.custom: 
 ---
 
 # Connect a bot to Direct Line Speech (Preview)
 
-[!INCLUDE [applies-to-v4](includes/applies-to.md)]
+[!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
 You can configure your bot to allow client applications to communicate with it through the Direct Line Speech channel.
 
@@ -74,3 +74,15 @@ Client applications will need a channel secret to connect to your bot through th
 ## Adding protocol support to your bot
 
 With the Direct Line Speech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](https://aka.ms/botframework/addstreamingprotocolsupport) to ensure full compatibility with Direct Line Speech.
+
+## Known Issues
+
+Note that the service is in preview and subject to change, which may affect your bot development and overall performance. Here is a list of known issues: 
+
+1. The service is currently deployed to [Azure region](https://azure.microsoft.com/en-us/global-infrastructure/regions/) west US 2. We will roll out to other regions soon, so all customers will get the benefit of low-latency speech interactions with their bots.
+
+1. Minor changes to control fields, such as [serviceUrl](https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#service-url), will be coming
+
+1. [conversationUpdate](https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#conversation-update-activity) and [endOfCoversation](https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#end-of-conversation-activity) activities used to signal the start and end of conversations, commonly used in generating welcome messages, will be updated for consistency with other channels
+
+1. [SigninCard](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-4.0) is not yet supported by the channel 

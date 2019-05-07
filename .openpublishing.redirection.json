@@ -449,6 +449,21 @@
       "source_path": "articles/v4sdk/bot-builder-create-middleware.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware",
       "redirect_document_id": true 
-    } 
+    }, 
+    {
+      "source_path": "articles/v4sdk/bot-builder-enterprise-template-overview.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-virtual-assistant-introduction",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-enterprise-template-getting-started.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-skills-overview",
+      "redirect_document_id": true   
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-enterprise-template-customize.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-virtual-assistant-template",
+      "redirect_document_id": true   
+    }
   ]
 }
