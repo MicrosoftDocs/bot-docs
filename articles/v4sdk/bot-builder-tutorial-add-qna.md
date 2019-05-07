@@ -95,11 +95,11 @@ hostname="<your-qna-service-hostname>" // This is a URL
 
 ---
 
-    | Field | Value |
-    |:----|:----|
-    | kbId | The knowledge base ID that the QnA Maker portal generated for you. |
-    | endpointKey | The endpoint key that the QnA Maker portal generated for you. |
-    | hostname | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. |
+| Field | Value |
+|:----|:----|
+| kbId | The knowledge base ID that the QnA Maker portal generated for you. |
+| endpointKey | The endpoint key that the QnA Maker portal generated for you. |
+| hostname | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. |
 
 Now Save your edits.
 
