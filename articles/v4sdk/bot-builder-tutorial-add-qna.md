@@ -68,7 +68,7 @@ Add the following values to you appsetting.json file:
 
 ```json
 {
-   "MicrosoftAppId": "",
+  "MicrosoftAppId": "",
   "MicrosoftAppPassword": "",
   "ScmType": "None",
 
