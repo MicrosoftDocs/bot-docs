@@ -526,7 +526,7 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 To use Blob storage in your bot, you'll need to get a few things set up before getting into the code.
 1. In a new browser window, sign in to the [Azure portal](http://portal.azure.com).
 2. Click **Create a resource > Storage > Storage account - blob, file, table, queue**
-3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** infomration.  
+3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** information.  
 4. Then click **Create**.
 
 ![Create Blob storage](./media/create-blob-storage.png)
