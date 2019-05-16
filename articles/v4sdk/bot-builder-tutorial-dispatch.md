@@ -119,7 +119,7 @@ Once your QnA Maker app is published, select the _SETTINGS_ Tab, and scroll down
 ```text
 POST /knowledgebases/<knowledge-base-id>/generateAnswer
 Host: <your-hostname>  // NOTE - this is a URL.
-Authorization: EndpointKey <your-endpoint-key>
+Authorization: EndpointKey <qna-maker-resource-key>
 ```
 
 The full URL string for your hostname will look like "https://< >.azure.net/qnamaker".
@@ -151,7 +151,7 @@ The CLI interface for the dispatch tool creates the model for dispatching to the
     ```cmd
     dispatch add -t luis -i "<app-id-for-weather-app>" -n "<name-of-weather-app>" -v <app-version-number> -k "<your-luis-authoring-key>" --intentName l_Weather
     dispatch add -t luis -i "<app-id-for-home-automation-app>" -n "<name-of-home-automation-app>" -v <app-version-number> -k "<your-luis-authoring-key>" --intentName l_HomeAutomation
-    dispatch add -t qna -i "<knowledge-base-id>" -n "<knowledge-base-name>" -k "<your-cognitive-services-subscription-id>" --intentName q_sample-qna
+    dispatch add -t qna -i "<knowledge-base-id>" -n "<knowledge-base-name>" -k "<qna-maker-resource-key>" --intentName q_sample-qna
     ```
 
 1. Use `dispatch create` to generate a dispatch model from the .dispatch file.
@@ -202,7 +202,7 @@ For each of the entities shown below, add the values you recorded earlier in the
 "MicrosoftAppPassword": "",
   
 "QnAKnowledgebaseId": "<knowledge-base-id>",
-"QnAAuthKey": "<your-endpoint-key>",
+"QnAAuthKey": "<qna-maker-resource-key>",
 "QnAEndpointHostName": "<your-hostname>",
 
 "LuisAppId": "<app-id-for-dispatch-app>",
@@ -242,7 +242,7 @@ MicrosoftAppId=""
 MicrosoftAppPassword=""
 
 QnAKnowledgebaseId="<knowledge-base-id>"
-QnAAuthKey="<your-endpoint-key>"
+QnAAuthKey="<qna-maker-resource-key>"
 QnAEndpointHostName="<your-hostname>"
 
 LuisAppId=<app-id-for-dispatch-app>
