@@ -159,7 +159,7 @@ If you want to pop all dialogs off the stack, you can clear the dialog stack by 
 
 ### Repeating a dialog
 
-You can replace a dialog with itself, creating a loop.
+You can replace a dialog with itself, creating a loop, by using the *replace dialog* method.
 This is a great way to handle [complex interactions](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus.
 
 > [!NOTE]

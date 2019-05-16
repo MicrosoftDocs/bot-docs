@@ -57,7 +57,7 @@ Yeoman prompts you for some information with which to create your bot. For this 
 Thanks to the template, your project contains all of the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.
 
 > [!NOTE]
-> If you choose to create a `Basic` bot, you'll need a LUIS language model. You can create one on [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
+> If you choose to create a `Core` bot, you'll need a LUIS language model. You can create one on [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
 
 ## Start your bot
 

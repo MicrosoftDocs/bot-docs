@@ -112,7 +112,7 @@ In this case, we are using existing App Service Plan, but creating new a Web App
 _Note: The botId parameter should be globally unique and is used as the immutable bot ID. Also used to configure the displayName of the bot, which is mutable._
 
 ```cmd
-az group deployment create --name "<name-of-deployment>" --resource-group "<name-of-resource-group>" --template-file "template-with-preexisting-rg.json" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" newWebAppName="<name-of-web-app>" existingAppServicePlan="<name-of-app-service-plan>" appServicePlanLocation=<location>"
+az group deployment create --name "<name-of-deployment>" --resource-group "<name-of-resource-group>" --template-file "template-with-preexisting-rg.json" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" newWebAppName="<name-of-web-app>" existingAppServicePlan="<name-of-app-service-plan>" appServicePlanLocation="<location>"
 ```
 
 **Option 2: New App Service Plan** 
@@ -163,6 +163,8 @@ As such, it is important to include your built code and with all necessary depen
 > Before zipping your project files, make sure that you are _in_ the correct folder. 
 > - For C# bots, it is the folder that has the .csproj file. 
 > - For JS bots, it is the folder that has the app.js or index.js file. 
+>
+> Select all the files and zip them up while in that folder, then run the command while still in that folder.
 >
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
