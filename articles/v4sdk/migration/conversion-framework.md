@@ -996,9 +996,3 @@ v4 how-to topics:
 - [Send and receive text messages](../bot-builder-howto-send-messages.md)
 - [Save user and conversation data](../bot-builder-howto-v4-state.md)
 - [Implement sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md)
-- [Gather user input using a dialog prompt](../bot-builder-prompts.md)
-
-<!-- TODO:
-- The conceptual piece
-- The migration to a .NET Core project
--->
