@@ -308,7 +308,7 @@
     {
       "source_path": "articles/deploy-bot-overview.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-build-continuous-deployment",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     }, 
     {
       "source_path": "articles/deploy-bot-verview.md",
@@ -449,7 +449,242 @@
       "source_path": "articles/v4sdk/bot-builder-create-middleware.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware",
       "redirect_document_id": true 
-    }, 
+    },
+    {
+      "source_path": "articles/bot-builder-deploy-samples.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/bot-builder-tools.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/bot-service-activity-spec.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder/tree/master/specs/botframework-activity",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/bot-service-build-download-source-code.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/bot-service-channel-inspector.md",
+      "redirect_url": "https://github.com/microsoft/botbuilder-samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/bot-service-continuous-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-build-continuous-deployment",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/bot-service-manage-test-webchat.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-quickstart",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-core-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-quickstart.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md",
+      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md",
+      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-real-time-media-concepts.md",
+      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-real-time-media-requirements.md",
+      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-release-notes.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder/releases",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-samples.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/dotnet/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-overview",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/java/bot-builder-java-quickstart.md",
+      "redirect_url": "https://github.com/Microsoft/botbuilder-java/wiki",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-manage-conversation.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-global-handlers.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-actions",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-manage-complex-conversation.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-manage-conversation-flow.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-prompts.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-quickstart.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-recognize-intent.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-samples.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-save-user-data.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-state",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-use-default-message-handler.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-message-create",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/nodejs/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-overview",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/python/bot-builder-python-quickstart.md",
+      "redirect_url": "https://github.com/Microsoft/botbuilder-python/wiki",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-concepts.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/rest-api/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-overview",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-dialog-state.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-how-to-translation.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-cosmos-middleware.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-classic.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-direct-line.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-event-handlers.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-translation.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-v4-luisgen.md",
+      "redirect_url": "https://github.com/Microsoft/botbuilder-tools/blob/master/packages/LUISGen/src/npm/readme.md",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-prompts.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-dialog-manage-conversation-flow",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-proactive-messages.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-howto-proactive-message",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-storage-concept.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-welcome-user.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-send-welcome-message",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-concepts.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/bot-service-build-online-code-editor.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-basics",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/bot-service-change-hosting-plan.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-basics",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-add-input-hints.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-suggested-actions",
+      "redirect_document_id": false 
+    },
     {
       "source_path": "articles/v4sdk/bot-builder-enterprise-template-overview.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-virtual-assistant-introduction",

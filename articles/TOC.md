@@ -38,7 +38,6 @@
 ### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md) 
 ### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md) 
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
-<!-- ## [Add input hints to messages](v4sdk/bot-builder-howto-add-input-hints.md) -->
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
@@ -48,7 +47,6 @@
 ### [Reuse dialogs](v4sdk/bot-builder-compositcontrol.md)
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
-<!--#### [Persist user data](v4sdk/bot-builder-tutorial-persist-user-inputs.md)--TODO: redirect to write directly to storage.-->
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)

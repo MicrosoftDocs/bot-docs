@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: cognitive-services
-ms.date: 04/17/2019
+ms.date: 05/20/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -53,10 +53,10 @@ Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located 
 ## Obtain values to connect your bot to the knowledge base
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
 1. With your knowledge base open, select the **Settings**. Record the value shown for _service name_. This value is useful for finding your knowledgebase of interest when using the QnA Maker portal interface. It is not used to connect your bot app to this knowledgebase. 
-1. Scroll down to find **Deployment details** record the following values:
-   - POST /knowledgebases/<Your_Knowledge_Base_Id>/getAnswers
-   - Host: <Your_Hostname>/qnamaker
-   - Authorization: EndpointKey <Your_Endpoint_Key>
+1. Scroll down to find **Deployment details** record the following values from the Postman sample HTTP request:
+   - POST /knowledgebases/\<knowledge-base-id>/generateAnswer
+   - Host: \<your-hostname> // Full URL ending with /qnamaker
+   - Authorization: EndpointKey \<your-endpoint-key>
    
 The full URL string for your Hostname will look like "https://< >.azure.net/qnamaker". These three values will provide the information necessary for your app to connect to your QnA Maker knowledgebase via your Azure QnA service.  
 

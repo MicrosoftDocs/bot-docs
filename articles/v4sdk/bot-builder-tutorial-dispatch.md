@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 04/15/2019
+ms.date: 05/20/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -85,9 +85,25 @@ Before you can create the dispatch model, you'll need to have your LUIS apps and
 
 ### Create QnA Maker KB
 
-The first step to setting up a QnA Maker KB is to set up a QnA Maker service in Azure. To do that, follow the step-bystep instructions found [here](https://aka.ms/create-qna-maker). Now log into the [QnAMaker web portal](https://qnamaker.ai). Move down to Step 2
+The first step to setting up a QnA Maker KB is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found [here](https://aka.ms/create-qna-maker).
 
-![Create QnA Step 2](./media/tutorial-dispatch/create-qna-step-2.png)
+Once your QnA Maker Service has been created in Azure, you need to record the Cognitive Services _Key 1_ provided for your QnA Maker service. This will be used as \<azure-qna-service-key1> when adding qna to your dispatch application. The following steps provide you with this key:
+    
+![Select Cognitive Service](./media/tutorial-dispatch/select-qna-cognitive-service.png)
+
+1. From within your Azure Portal, select your QnA Maker cognitive service.
+
+![Select Cognitive Service Keys](./media/tutorial-dispatch/select-cognitive-service-keys.png)
+
+2. Select the Keys icon found under the _Resource Management_ section on the left-hand menu.
+
+![Select Cognitive Service Key1](./media/tutorial-dispatch/select-cognitive-service-key1.png)
+
+3. Copy the value of _Key 1_ to your clipboard and save this locally. this will later be used for the (-k) key value \<azure-qna-service-key1> when adding qna to your dispatch application.
+
+Now log into the [QnAMaker web portal](https://qnamaker.ai). Move down to Step 2
+
+![Create QnA Step 2](./media/tutorial-dispatch/create-qna-step-2.png) 
 
 and select
 1. Your Azure AD account.
@@ -151,7 +167,7 @@ The CLI interface for the dispatch tool creates the model for dispatching to the
     ```cmd
     dispatch add -t luis -i "<app-id-for-weather-app>" -n "<name-of-weather-app>" -v <app-version-number> -k "<your-luis-authoring-key>" --intentName l_Weather
     dispatch add -t luis -i "<app-id-for-home-automation-app>" -n "<name-of-home-automation-app>" -v <app-version-number> -k "<your-luis-authoring-key>" --intentName l_HomeAutomation
-    dispatch add -t qna -i "<knowledge-base-id>" -n "<knowledge-base-name>" -k "<qna-maker-resource-key>" --intentName q_sample-qna
+    dispatch add -t qna -i "<knowledge-base-id>" -n "<knowledge-base-name>" -k "<azure-qna-service-key1>" --intentName q_sample-qna
     ```
 
 1. Use `dispatch create` to generate a dispatch model from the .dispatch file.
