@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 04/30/2019
+ms.date: 05/20/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -56,7 +56,19 @@ We will import an existing knowledge base definition from the QnA Maker sample i
 1. **Save and train** your knowledge base.
 1. **Publish** your knowledge base.
 
-The knowledge base is now ready for your bot to use. Record the knowledge base ID, endpoint key, and hostname. You'll need these for the next step.
+Once your QnA Maker app is published, select the _SETTINGS_ Tab, and scroll down to 'Deployment details'. Record the following values from the _Postman_ Sample HTTP request.
+
+```text
+POST /knowledgebases/<knowledge-base-id>/generateAnswer
+Host: <your-hostname>  // NOTE - this is a URL ending in /qnamaker.
+Authorization: EndpointKey <qna-maker-resource-key>
+```
+
+The full URL string for your hostname will look like "https://< >.azure.net/qnamaker".
+
+These values will be used within your `appsettings.json` or `.env` file in the next step.
+
+The knowledge base is now ready for your bot to use.
 
 ## Add knowledge base information to your bot
 Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp or JavaScript bot to your knowledgebase.
@@ -71,9 +83,9 @@ Add the following values to you appsetting.json file:
   "MicrosoftAppPassword": "",
   "ScmType": "None",
   
-  "QnAKnowledgebaseId": "<your-knowledge-base-id>",
-  "QnAAuthKey": "<your-knowledge-base-endpoint-key>",
-  "QnAEndpointHostName": "<your-qna-service-hostname>" // This is a URL
+  "QnAKnowledgebaseId": "<knowledge-base-id>",
+  "QnAAuthKey": "<qna-maker-resource-key>",
+  "QnAEndpointHostName": "<your-hostname>" // This is a URL ending in /qnamaker
 }
 ```
 
@@ -86,18 +98,18 @@ MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
 
-QnAKnowledgebaseId="<your-knowledge-base-id>"
-QnAAuthKey="<your-knowledge-base-endpoint-key>"
-QnAEndpointHostName="<your-qna-service-hostname>" // This is a URL
+QnAKnowledgebaseId="<knowledge-base-id>"
+QnAAuthKey="<qna-maker-resource-key>"
+QnAEndpointHostName="<your-hostname>" // This is a URL ending in /qnamaker
 ```
 
 ---
 
 | Field | Value |
 |:----|:----|
-| kbId | The knowledge base ID that the QnA Maker portal generated for you. |
-| endpointKey | The endpoint key that the QnA Maker portal generated for you. |
-| hostname | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |
+| QnAKnowledgebaseId | The knowledge base ID that the QnA Maker portal generated for you. |
+| QnAAuthKey | The endpoint key that the QnA Maker portal generated for you. |
+| QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |
 
 Now save your edits.
 
@@ -254,6 +266,15 @@ At this point your bot should be able to answer some questions. Run the bot loca
 ## Republish your bot
 
 We can now republish your bot back to Azure.
+
+> [!IMPORTANT]
+> Before creating a zip of your project files, make sure that you are _in_ the correct folder. 
+> - For C# bots, it is the folder that has the .csproj file. 
+> - For JS bots, it is the folder that has the app.js or index.js file. 
+>
+> Select all the files and zip them up while in that folder, then run the command while still in that folder.
+>
+> If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
 ## [C#](#tab/csharp)
 ```cmd
