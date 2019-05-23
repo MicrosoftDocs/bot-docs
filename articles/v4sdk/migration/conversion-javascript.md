@@ -1,7 +1,7 @@
 ---
 title: Migrate an existing v3 JavaScript bot to a new v4 project | Microsoft Docs
 description: We take an existing v3 JavaScript bot and migrate it to the v4 SDK, using a new project.
-keywords: JavaScript, bot migration, formflow, dialogs, v3 bot
+keywords: JavaScript, bot migration, dialogs, v3 bot
 author: JonathanFingold
 ms.author: v-jofing
 manager: kamrani
