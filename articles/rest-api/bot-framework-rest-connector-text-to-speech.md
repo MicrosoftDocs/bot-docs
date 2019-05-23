@@ -46,7 +46,7 @@ Content-Type: application/json
         "name": "recipient's name"
     },
     "text": "Are you sure that you want to cancel this transaction?",
-    "speak": "Are you <emphasis level='moderate'>sure</emphasis> that you want to cancel this transaction?",
+    "speak": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\">Are you <emphasis level=\"moderate\">sure</emphasis> that you want to cancel this transaction?</speak>",
     "inputHint": "expectingInput",
     "replyToId": "5d5cdc723"
 }
