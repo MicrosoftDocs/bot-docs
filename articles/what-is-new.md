@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 05/05/2019
+ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 

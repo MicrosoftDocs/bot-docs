@@ -13,7 +13,7 @@ ms.date: 05/05/2019
 
 <div class="content">
     <h1>Azure Bot Service Documentation</h1>
-    [!INCLUDE [applies-to-v4](includes/applies-to.md)]
+    <token><strong>APPLIES TO:</strong> <img alt="yes" src="media/yes.png?view=azure-bot-service-4.0" data-linktype="relative-path"> SDK v4 <img alt="no" src="media/no.png?view=azure-bot-service-4.0" data-linktype="relative-path"> SDK v3</token>
     <div class="intro" style="min-width: 200px">
         <p>Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for C# and JavaScript. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
         </p>
