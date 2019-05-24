@@ -1,4 +1,4 @@
-# [Azure Bot Service Documentation](index.md)
+# [Azure Bot Service Documentation](index.yml)
 # Overview
 ## [About Azure Bot Service](bot-service-overview-introduction.md)
 ## [What's new](what-is-new.md)
