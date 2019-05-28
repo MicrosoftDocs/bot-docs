@@ -39,6 +39,14 @@ In the bot's `onTurn` handler, use the turn context object's `sendActivity` meth
 ```javascript
 await context.sendActivity("Welcome!");
 ```
+
+# [Python](#tab/python)
+
+In the bot's `on_turn` handler, use the turn context object's `send_activity` method to send a single message response. You can also use the object's `send_activities` method to send multiple responses at once.
+
+```python
+await context.send_activity('Welcome!')
+```
 ---
 ## Receive a text message
 
@@ -58,6 +66,13 @@ In the bot's `OnTurnAsync` method, use the following code to receive a message.
 
 ```javascript
 let text = turnContext.activity.text;
+```
+# [Python](#tab/python)
+
+To receive a simple text message, use the text property of the activity object.
+
+```javascript
+text = context.activity.text
 ```
 
 ---
