@@ -11,7 +11,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 05/23/2019
+  ms.date: 05/31/2019
   ms.author: ivorb
 abstract:
   description: Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for C# and JavaScript. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
@@ -25,6 +25,22 @@ abstract:
     href: https://mybuild.techcommunity.microsoft.com/sessions/77571?source=%7B%7B%20ctrl.source#top-anchor
     width: 250
 sections:
+- items:
+    - type: list
+      style: cards
+      className: cardsM
+      columns: 3
+      items:
+        - href: https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction
+          html: <p>Learn about Azure Bot Service.</p>
+          image:
+            src: media/index/i_overview.png
+          title: What is Azure Bot Service?
+        - href: https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics
+          html: <p>Understand how bots work.</p>
+          image:
+            src: media/index/i_guidelines.png
+          title: How bots work
 - title: 5-Minute Quickstarts
   items: 
   - type: paragraph
@@ -33,17 +49,17 @@ sections:
     style: icon48
     items:   
     - image: 
-        src: media/index/azure_portal.png
-      text: Azure Portal
-      href: https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart
-    - image: 
         src: v4sdk/media/logo_csharp.svg
       text: C#
-      href: https://docs.microsoft.com/en-us/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
+      href: https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
     - image: 
         src: v4sdk/media/logo_js.svg
       text: JavaScript
-      href: https://docs.microsoft.com/en-us/azure/bot-service/javascript/bot-builder-javascript-quickstart
+      href: https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart
+    - image: 
+        src: media/index/azure_portal.png
+      text: Azure Portal
+      href: https://docs.microsoft.com/azure/bot-service/bot-service-quickstart
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
