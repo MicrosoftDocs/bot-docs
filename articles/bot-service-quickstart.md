@@ -8,22 +8,20 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 02/07/2019
+ms.date: 05/31/2019
 ---
 
 # Create a bot with Azure Bot Service
 
 ::: moniker range="azure-bot-service-3.0"
 
-[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
+> [!NOTE]
+> **Starting June 10, 2019 you will not be able to create V3 SDK bots in the Azure portal. Customers are encouraged to create [V4 SDK](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) bots going forward. More information about the long-term support of V3 SDK is available [here](https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-3.0#bot-framework-sdk-version-3-lifetime-support)**. 
 
 Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js. In this topic, learn how to use Bot Service to create a new bot that uses the Bot Framework SDK.
 
 ## Log in to Azure
 Log in to the [Azure portal](http://portal.azure.com).
-
-> [!TIP]
-> If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>.
 
 ## Create a new bot service
 
