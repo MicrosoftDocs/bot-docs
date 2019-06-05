@@ -164,7 +164,7 @@ As such, it is important to include your built code and with all necessary depen
 > - For C# bots, it is the folder that has the .csproj file. 
 > - For JS bots, it is the folder that has the app.js or index.js file. 
 >
-> Select all the files and zip them up while in that folder, then run the command while still in that folder.
+> Select all the files and zip them up **while in that folder**, then run the command while still in that folder.
 >
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 

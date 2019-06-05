@@ -44,14 +44,14 @@ The first step in setting up state management is to define the classes that will
 
 The following code example shows creation of the definition for the UserProfile class.
 
-**UserProfile.cs**
+**UserProfile.cs**  
 [!code-csharp[UserProfile](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/UserProfile.cs?range=7-11)]
 
 ## [JavaScript](#tab/javascript)
 
 The first step is requiring the botbuilder service that includes definitions for `UserState` and `ConversationState`.
 
-**index.js**
+**index.js**  
 [!code-javascript[BotService](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=7-9)]
 
 ---
@@ -62,17 +62,17 @@ The first step is requiring the botbuilder service that includes definitions for
 
 Next, we register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. The user and conversation state objects are created at `Startup` and dependency injected into the bot constructor. Other services for a bot that are registered are: a credential provider, an adapter, and the bot implementation.
 
-**Startup.cs**
+**Startup.cs**  
 [!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=16-38)]
 
-**StateManagementBot.cs** 
+**StateManagementBot.cs**  
 [!code-csharp[StateManagement](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=15-22)]
 
 ## [JavaScript](#tab/javascript)
 
 Next, we register `MemoryStorage` that is then used to create `UserState` and `ConversationState` objects.
 
-**index.js**
+**index.js**  
 [!code-javascript[DefineMemoryStore](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=32-38)]
 
 ---
@@ -83,14 +83,14 @@ Next, we register `MemoryStorage` that is then used to create `UserState` and `C
 
 Now we create property accessors using the `CreateProperty` method that provides a handle to the `BotState` object. Each state property accessor allows you to get or set the value of the associated state property. Before we use our state properties, we use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, we call the `GetAsync` method.
 
-**StateManagementBot.cs**
+**StateManagementBot.cs**  
 [!code-csharp[StateAccessors](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=38-46)]
 
 ## [JavaScript](#tab/javascript)
 
 Now we create property accessors for `UserState` and `ConversationState`. Each state property accessor allows you to get or set the value of the associated state property. We use each accessor to load the associated property from storage and retrieve its' current state from cache.
 
-**StateManagementBot.js**.
+**StateManagementBot.js**.  
 [!code-javascript[BotService](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=6-19)]
 
 ---
@@ -103,22 +103,22 @@ The preceding section covers the initialization-time steps to add state property
 
 ## [C#](#tab/csharp)
 
-**StateManagementBot.cs**
+**StateManagementBot.cs**  
 [!code-csharp[OnMessageActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=38-85)]
 
 Before we exit the turn handler, we use the state management objects' _SaveChangesAsync()_ method to write all state changes back to storage.
 
-**StateManagementBot.cs**
+**StateManagementBot.cs**  
 [!code-csharp[OnTurnAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=24-31)]
 
 ## [JavaScript](#tab/javascript)
 
-**StateManagementBot.js**
+**StateManagementBot.js**  
 [!code-javascript[OnMessage](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=21-54)]
 
 Before we exit each dialog turn, we use the state management objects' _saveChanges()_ method to persist all changes by writing state back out to storage.
 
-**StateManagementBot.js**
+**StateManagementBot.js**  
 [!code-javascript[OnDialog](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=60-67)]
 
 ---

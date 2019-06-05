@@ -119,7 +119,7 @@ async run(turnContext, accessor) {
     }
 }
 
-// Pass conversation state management and a main dialog objects to the bot (inindex.js).
+// Pass conversation state management and a main dialog objects to the bot (in index.js).
 const bot = new MyBot(conversationState, dialog);
 
 // Inside the bot's constructor, add the dialog as a member property and define a DialogState property accessor.
