@@ -71,6 +71,8 @@ Sign in to the LUIS portal to create your own version of the sample LUIS app. Yo
 ### Why use entities
 LUIS entities allow your bot to intelligently understand certain things or events that are different than the standard intents. This enables you to gather extra information from the user, which lets your bot respond more intelligently or possibly skip certain questions where it asks the user for that information. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None' the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
 
+For information on how entity information appears in a LUIS result, see [Extract data from utterance text with intents and entities](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-data-extraction).
+
 ## Obtain values to connect to your LUIS app
 Once your LUIS app is published, you can access it from your bot. You will need to record several values to access your LUIS app from within your bot. You can retrieve that information using the LUIS portal.
 
@@ -89,7 +91,7 @@ The settings file (`appsettings.json` or `.env`) acts as the place to bring all 
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
-**appsetting.json**
+**appsetting.json**  
 [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
 
 # [JavaScript](#tab/javascript)
@@ -109,7 +111,7 @@ Be sure that the **Microsoft.Bot.Builder.AI.Luis** NuGet package is installed fo
 
 To connect to the LUIS service, the bot pulls the information you added above from the appsetting.json file. The `LuisHelper` class contains code that imports your settings from the appsetting.json file and queries the LUIS service by calling `RecognizeAsync` method. If the top intent returned is 'Book_Flight' it then checks for entities containing the booking To, From, and TravelDate information.
 
-**LuisHelper.cs**
+**LuisHelper.cs**  
 [!code-csharp[luis helper](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/LuisHelper.cs?range=15-54)]
 
 # [JavaScript](#tab/javascript)

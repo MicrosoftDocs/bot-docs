@@ -140,12 +140,12 @@ As we would like this lowest level storage piece to be pluggable, we will make s
 
 This is the resulting interface:
 
-**IStore.cs**
+**IStore.cs**  
 [!code-csharp[IStore](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/IStore.cs?range=14-19)]
 
 Implementing this against Azure Blob Storage is straight forward.
 
-**BlobStore.cs**
+**BlobStore.cs**  
 [!code-csharp[BlobStore](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/BlobStore.cs?range=18-101)]
 
 As you can see Azure Blob Storage is doing the real work here. Note the catch of specific exceptions and how that is translated across to meet what will be the expectations of the calling code. That is, on the load we want a Not Found exception to return null and the Precondition Failed exception on the Save to return bool.

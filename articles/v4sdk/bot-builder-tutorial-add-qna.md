@@ -250,7 +250,7 @@ Update your initialization code to load the service information for your knowled
    } 
    else { 
       // If no answers were returned from QnA Maker, reply with help.
-      wait turnContext.sendActivity('No QnA Maker response was returned.'
+      await turnContext.sendActivity('No QnA Maker response was returned.'
            + 'This example uses a QnA Maker Knowledge Base that focuses on smart light bulbs. '
            + `Ask the bot questions like "Why won't it turn on?" or "I need help."`);
    }

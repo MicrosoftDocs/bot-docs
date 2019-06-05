@@ -155,3 +155,7 @@ If you receive a notification from Facebook about deprecation of a certain versi
 ## Sample code
 
 For further reference the <a href="https://aka.ms/facebook-events" target="_blank">Facebook-events</a> sample bot can be used to explore the bot communication with Facebook Messenger.
+
+## Also available as an adapter
+
+This channel is also [available as an adapter](https://botkit.ai/docs/v4/platforms/facebook.html). To help you choose between an adapter and a channel, see [Currently available adapters](bot-service-channel-additional-channels.md#currently-available-adapters).

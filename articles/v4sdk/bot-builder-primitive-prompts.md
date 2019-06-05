@@ -57,10 +57,10 @@ We use the bot's message turn handler plus user and conversation state propertie
 
 The user and conversation state objects are created at startup and dependency injected into the bot constructor. 
 
-**Startup.cs**
+**Startup.cs**  
 [!code-csharp[Startup](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=27-34)]
 
-**Bots/CustomPromptBot.cs** 
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=21-28)]
 
 ## [JavaScript](#tab/javascript)
@@ -79,7 +79,7 @@ In **index.js**, create the state properties and the bot, then call the `run` bo
 
 We begin by creating property accessors that give us a handle to the `BotState` inside the `OnMessageActivityAsync` method. Then, we call the `GetAsync` method to get the properly scoped key:
 
-**Bots/CustomPromptBot.cs** 
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-37)]
 
 And finally, we save the data using the `SaveChangesAsync` method.
@@ -90,7 +90,7 @@ And finally, we save the data using the `SaveChangesAsync` method.
 
 In the constructor, we create the state property accessors and set up the state management objects (created above) for our conversation.
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=23-29)]
 
 Then, we define a second handler, `onDialog`, to run after the main message handler (explained in the next section). This second handler makes sure we save our state every turn.
@@ -105,14 +105,14 @@ Then, we define a second handler, `onDialog`, to run after the main message hand
 
 To handle message activities, we use the helper method _FillOutUserProfileAsync()_ before saving the state using _SaveChangesAsync()_. Here is the complete code.
 
-**Bots/CustomPromptBot.cs** 
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-44)]
 
 ## [JavaScript](#tab/javascript)
 
 To handle message activities, we set up our conversation and user data then use the helper method `fillOutUserProfile()`. Here's the complete code for the turn handler.
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-39)]
 ---
 
@@ -128,12 +128,12 @@ We'll start by collecting information. Each one will provide a similar interface
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs** 
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=46-103)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=52-116)]
 
 ---
@@ -156,12 +156,12 @@ We'll use the following criteria to validate input.
 
 Add the following validation methods to your bot.
 
-**Bots/CustomPromptBot.cs** 
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=105-203)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.cs**
+**bots/customPromptBot.cs**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=118-189)]
 
 ---
