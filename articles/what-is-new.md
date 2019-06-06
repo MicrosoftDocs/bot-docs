@@ -13,6 +13,9 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # What's new in Bot Framework
+
+[!INCLUDE[applies-to](includes/applies-to.md)]
+
 The Bot Framework SDK v4 is an [Open Source SDK][1a] that enable developers to model and build sophisticated conversation 
 using their favorite programming language.
 
