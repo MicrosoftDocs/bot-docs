@@ -26,7 +26,7 @@ To send the user content like an image or a video, you can add an attachment or 
 
 See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `reply` activity (that was created off the activity with `CreateReply()`) and set the `ContentType`, `ContentUrl`, and `Name` properties.
 
@@ -53,7 +53,7 @@ Lastly, an internet attachment:
 [!code-csharp[online attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=218-227)]
 
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 The source code shown here is based on the [JS Handling Attachments](https://aka.ms/bot-attachments-sample-code-js) sample.
 
@@ -90,7 +90,7 @@ If an attachment is an image, audio, or video, the Connector service will commun
 
 Besides simple image or video attachments, you can attach a **hero card**, which allows you to combine images and buttons in one object, and send them to the user. Markdown is supported for most text fields, but support may vary by channel.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 To compose a message with a hero card and button, you can attach a `HeroCard` to a message. 
 
@@ -99,7 +99,7 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 **Bots/AttachmentsBot.cs**  
 [!code-csharp[Hero card](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=39-62)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 To compose a message with a hero card and button, you can attach a `HeroCard` to a message. 
 
@@ -132,7 +132,7 @@ To function correctly, assign an action type to each clickable item on the card.
 
 The following code shows examples using various rich card events.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 For examples of all the available cards, see the [C# cards sample](https://aka.ms/bot-cards-sample-code).
 
@@ -142,7 +142,7 @@ For examples of all the available cards, see the [C# cards sample](https://aka.m
 **Cards.cs**  
 [!code-csharp[cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=91-100)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 For examples of all the available cards, see the [JS cards sample](https://aka.ms/bot-cards-js-sample-code).
 
@@ -166,7 +166,7 @@ To find the latest information on Adaptive Card channel support, see the <a href
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 To use Adaptive Cards, be sure to add the `AdaptiveCards` NuGet package.
 
@@ -175,7 +175,7 @@ The source code shown here is based on the [Using cards](https://aka.ms/bot-card
 **Cards.cs**  
 [!code-csharp[adaptive cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=13-25)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 To use Adaptive Cards, be sure to add the `adaptivecards` npm package.
 
@@ -197,7 +197,7 @@ Then, it's created with the CardFactory:
 
 Messages can also include multiple attachments in a carousel layout, which places the attachments side by side and allows the user to scroll across.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 The source code shown here is based on the [Cards sample](https://aka.ms/bot-cards-sample-code).
 
@@ -216,7 +216,7 @@ Once the attachments are added, you can send the reply just like any other.
 **Dialogs/MainDialog.cs**  
 [!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=117-118)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 The source code shown here is based on the [JS cards sample](https://aka.ms/bot-cards-js-sample-code).
 
@@ -242,6 +242,123 @@ For detailed information on the schema, see the [Bot Framework card schema](http
 | Suggested actions | [C# sample](https://aka.ms/SuggestedActionsCSharp) | [JS sample](https://aka.ms/SuggestedActionsJS) |
 
 Refer to Bot Builder Samples repo on [GitHub](https://aka.ms/bot-samples-readme) for additional samples.
+
+### Code sample for processing Adaptive Card input
+
+This sample code shows one way to use Adaptive Card inputs within a bot dialog class.
+It extends the current sample 06.using-cards by validating the input recieved in the text field from the responding client.
+We first added text input and button functionality to the existing adaptive card by adding the following code just before the final bracket of adaptiveCard.json, found in the resources folder:
+
+```json
+  ,
+  "actions": [
+    {
+      "type": "Action.ShowCard",
+      "title": "Text",
+      "card": {
+      "type": "AdaptiveCard",
+      "body": [
+        {
+          "type": "Input.Text",
+          "id": "text",
+          "isMultiline": true,
+          "placeholder": "Enter your comment"
+        }
+      ],
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "OK"
+        }
+      ]
+    }
+  }
+]
+
+```
+
+Note that the input field is labeled "text" so our adaptive card will attach comment text data as Value.[text.]
+
+### [C#](#tab/csharp)
+our validator uses Newtonsoft.json to first convert this to a JObject, 
+and then create a trimmed text string for comparison. So add:
+  ```csharp
+  using Newtonsoft.Json.Linq;
+  ```
+to MainDialog.cs and install the latest stable nuget package of Newtonsoft.Json.
+In the validator code we added the logic flow into the code comments. 
+This ChoiceValidator() code is placed into the 06.using-cards sample just after the closed brace public for declaration of MainDialog:
+
+```csharp
+private async Task ChoiceValidator(
+  PromptValidatorContext promptContext,
+  CancellationToken cancellationToken)
+  {
+    // Retrieves Adaptive Card comment text as JObject.
+    // looks for JObject field "text" and converts that input into a trimmed text string.
+    var jobject = promptContext.Context.Activity.Value as JObject;
+    var jtoken = jobject?["text"];
+    var text = jtoken?.Value().Trim();
+    // Logic: 1. if succeeded = true, just return promptContext
+    //        2. if false, see if JObject contained Adaptive Card input.
+    //               No = (bad input) return promptContext
+    //               Yes = update Value field with JObject text string, return "true".
+    if (!promptContext.Recognized.Succeeded && text != null)
+    {
+       var choice = promptContext.Options.Choices.FirstOrDefault(
+       c => c.Value.Equals(text, StringComparison.InvariantCultureIgnoreCase));
+       if (choice != null)
+       {
+           promptContext.Recognized.Value = new FoundChoice
+            {
+               Value = choice.Value,
+             };
+            return true;
+       }
+    }
+    return promptContext.Recognized.Succeeded;
+  }
+```
+
+Now above in the MainDialog declaration change:
+  ```csharp
+  // Define the main dialog and its related components.
+  AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
+  ```
+to:
+  ```csharp
+  // Define the main dialog and its related components.
+  AddDialog(new ChoicePrompt(nameof(ChoicePrompt), ChoiceValidator));
+  ```
+This will invoke your validator to look for Adaptive Card input each time a new ChoicePrompt is created.
+
+### [JavaScript](#tab/javascript)
+Open mainDialog.js and find the run method _async run(turnContext, accessor)_
+This method handles incoming activity.
+Just after the call _dialogSet.add(this);_ add the following:
+```JavaScript
+  // The following check looks for a non-existant text input
+  // plus Adaptive Card input in _activity.value.text
+  // If both conditions exist, the Activity Card text 
+  // is copied into the text input field.
+  if(turnContext._activity.text == null
+      && turnContext._activity.value.text != null)
+   {
+      this.logger.log('replacing null text with Activity Card text input');
+      turnContext._activity.text = turnContext._activity.value.text;
+   }
+```
+If this check finds a non-existent text input from the client, it looks to see if there is input from an Adaptive Card.
+If an Adaptive Card input exists at \_activity.value.text, it copies this into the normal text input field.
+
+---
+
+To test your code, once an Adaptive Card has been displayed, Click the "Text" button, Enter a valid selection such as "Hero Card" and click the "OK" button.
+
+![Test Adaptive Card](media/adaptive-card-input.png)
+
+1. The first input will be used to start a new dialog.
+2. Click the "OK" button again and this input will be used to select a new card.
 
 ## Next steps
 
