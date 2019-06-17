@@ -21,9 +21,13 @@ The Bot Framework Emulator is a desktop application that allows bot developers t
 
 ![Emulator UI](media/emulator-v4/emulator-welcome.png)
 
-To connect to a bot running locally, click **Open bot** or select you preconfigured configuration file (a .bot file). You don't need a configuration file to connect to your bot, but the emulator still works with one if your bot has one. If your bot is running with Microsoft Account (MSA) credentials, enter these credentials too.
+To connect to a bot running locally, click **Open bot** or select you preconfigured configuration file (a .bot file). You don't need a configuration file to connect to your bot, but the emulator still works with one if your bot has one. If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
 
 ![Emulator UI](media/emulator-v4/emulator-open-bot.png)
+
+### Use bot credentials
+
+When you open the bot, set the **Microsoft App ID** and **Microsoft App password** if your bot is running with credentials. If you created your bot with the Azure Bot Service, the credentials are available on the bot's App Service, under the **Settings -> Configuration** section. If you do not know the values, you can remove those from the locally running bot's configuration file, then run the bot in the Emulator. If the bot isn't running with these settings, you don't need to run the emulator with the settings either. 
 
 ## View detailed Message Activity with the Inspector
 
