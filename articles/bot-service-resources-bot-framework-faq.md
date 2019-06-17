@@ -56,6 +56,10 @@ SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the re
 - If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future.
 - You can create Bot Framework SDK V4 and older V3 bots via Azure portal and Azure Command Line. 
 
+### How can I migrate Azure Bot Service from one region to another?
+
+Azure Bot Service does not support region move. It’s a global service that is not tied to any specific region.
+
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
 
