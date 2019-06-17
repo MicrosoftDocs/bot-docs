@@ -35,23 +35,22 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets. The code below is setting up the reply for an inline attachment:
 
 **Bots/AttachmentsBot.cs**  
-[!code-csharp[inline attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=108-109)]
+[!code-csharp[inline attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=105-106)]
 
 Next, we look at the types of attachments. First is an inline attachment:
 
 **Bots/AttachmentsBot.cs**  
-[!code-csharp[inline attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=165-176)]
+[!code-csharp[inline attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=167-178)]
 
 Then, an uploaded attachment:
 
 **Bots/AttachmentsBot.cs**  
-[!code-csharp[uploaded attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=179-215)]
+[!code-csharp[uploaded attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=181-214)]
 
 Lastly, an internet attachment:
 
 **Bots/AttachmentsBot.cs**  
-[!code-csharp[online attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=218-227)]
-
+[!code-csharp[online attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=217-226)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -97,7 +96,7 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample.
 
 **Bots/AttachmentsBot.cs**  
-[!code-csharp[Hero card](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=39-62)]
+[!code-csharp[Hero card](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=39-58)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -209,7 +208,7 @@ First, create the reply and define the attachments as a list.
 Then add the attachments. Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
 
 **Dialogs/MainDialog.cs**  
-[!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=105-113)]
+[!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=104-113)]
 
 Once the attachments are added, you can send the reply just like any other.
 
