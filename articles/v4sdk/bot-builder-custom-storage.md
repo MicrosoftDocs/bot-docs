@@ -161,7 +161,7 @@ After having created the appropriate key we will attempt to Load the correspondi
 
 The resulting OnTurn implementation looks like this:
 
-**ScaleoutBot.cs**
+**ScaleoutBot.cs**  
 [!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/Bots/ScaleOutBot.cs?range=43-72)]
 
 Note that we have modeled the dialog execution as a function call. Perhaps a more sophisticated implementation would have defined an interface and made this dependency injectable but for our purposes having the dialog all sit behind a static function emphasize the functional nature of our approach. As a general statement, organizing our implementation such that the crucial parts become functional puts us in a very good place when it comes to having it work successfully on networks.
@@ -172,7 +172,7 @@ Note that we have modeled the dialog execution as a function call. Perhaps a mor
 The next requirement is that we buffer outbound Activities until a successful Save has been performed. This will require a custom BotAdapter implementation. In this code, we will implement the abstract SendActivity function to add the Activity to a list rather than sending it. The dialog we will be hosting will be non-the-wiser.
 In this particular scenario UpdateActivity and DeleteActivity operations are not supported and so will just throw Not Implemented from those methods. We also don’t care about the return value from the SendActivity. This is used by some channels in scenarios where updates to Activities need to be sent, for example, to disable buttons on cards displayed in the channel. These message exchanges can get complicated particularly when state is required, that is outside the scope of this article. The full implementation of the custom BotAdapter looks like this:
 
-**DialogHostAdapter.cs**
+**DialogHostAdapter.cs**  
 [!code-csharp[DialogHostAdapter](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/DialogHostAdapter.cs?range=19-46)]
 
 ## Integration
@@ -185,12 +185,12 @@ We are being very cautious in the layering, we are putting the JsonSerialization
 
 Here is the driver code:
 
-**DialogHost.cs**
+**DialogHost.cs**  
 [!code-csharp[DialogHost](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/DialogHost.cs?range=22-72)]
 
 And finally, the custom Accessor, we only need to implement Get because the state is by ref:
 
-**RefAccessor.cs**
+**RefAccessor.cs**  
 [!code-csharp[RefAccessor](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/RefAccessor.cs?range=22-60)]
 
 ## Additional information

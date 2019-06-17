@@ -30,6 +30,8 @@ When connecting your bot with the Cortana channel, some basic information about 
 
 ![Default settings](~/media/channels/cortana-defaultsettings.png)
 
+>!NOTE: Cortana does not currently support the use of Azure Active Directory (AAD) Account authentication. You will need to use a Microsoft Account (MSA) to successfully publish your bot to Cortana.
+
 ## General bot information
 
 Under the **Manage user identity through connected services section** press the option to enable it. Fill in the form.

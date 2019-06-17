@@ -221,7 +221,7 @@ The message handler calls the `run` helper method to manage the dialog, and we i
 
 [!code-javascript[Overrides](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogBot.js?range=30-47)]
 
-**bots/dialogWandWelcomeBot.js**
+**bots/dialogAndWelcomeBot.js**
 
 `DialogAndWelcomeBot` extends `DialogBot` above to provide a welcome message when the user joins the conversation, and is what is called by `Startup.cs`.
 
