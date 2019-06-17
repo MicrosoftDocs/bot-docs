@@ -15,10 +15,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>System.CodeDom.Compiler.GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
     </Attribute>
   </Attributes>
@@ -523,7 +523,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -985,7 +985,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>

@@ -132,3 +132,7 @@ Follow these steps to get the replacement URL.
 3. Paste this URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
+
+## Also available as an adapter
+
+This channel is also [available as an adapter](https://botkit.ai/docs/v4/platforms/slack.html). To help you choose between an adapter and a channel, see [Currently available adapters](bot-service-channel-additional-channels.md#currently-available-adapters).

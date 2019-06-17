@@ -7,14 +7,14 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/18/2019
+ms.date: 05/05/2019
 ---
 
 # About Azure Bot Service
 
 [!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
-Azure Bot Service provides tools to build, test, deploy, and manage intelligent bots all in one place. Through the use of modular and extensible framework provided by the SDK, tools, templates, and AI services developers can create bots that use speech, understand natural language, handle questions and answers, and more.
+Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots all in one place. Through the use of modular and extensible framework provided by the SDK, tools, templates, and AI services developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
 ## What is a bot?
 Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
@@ -23,7 +23,7 @@ Bots are a lot like modern web applications, living on the internet and use APIs
 
 Bots can do the same things other types of software can do - read and write files, use databases and APIs, and do the regular computational tasks. What makes bots unique is their use of mechanisms generally reserved for human-to-human communication. 
 
-Azure Bot Service offers:
+Azure Bot Service and Bot Framework offer:
 - Bot Framework SDK for developing bots
 - Bot Framework Tools to cover end-to-end bot development workflow
 - Bot Framework Service (BFS) to send and receive messages and events between bots and channels
@@ -35,7 +35,7 @@ Additionally, bots may use other Azure services, such as:
 
 ## Building a bot 
 
-Azure Bot Service offers an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot. SDKs exist for C#, JavaScript, and Typescript. (SDKs for Java and Python are under development.) We provide tools for various stages of bot development to help you design and build bots.
+Azure Bot Service and Bot Framewrk offer an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot. SDKs exist for C#, JavaScript, and Typescript. (SDKs for Java and Python are under development.) We provide tools for various stages of bot development to help you design and build bots.
 
 ![Bot Overview](media/bot-service-overview.png) 
 
@@ -43,9 +43,9 @@ Azure Bot Service offers an integrated set of tools and services to facilitate t
 As with any type of software, having a thorough understanding of the goals, processes and user needs is important to the process of creating a successful bot. Before writing code, review the bot [design guidelines](bot-service-design-principles.md) for best practices and identify the needs for your bot. You can create a simple bot or include more sophisticated capabilities such as speech, natural language understanding,and question answering.
 
 ### Build
-Your bot is a web service that implements a conversational interface and communicates with the Bot Framework Service to send and receive messages and events. Bot Framework Service is one of the components of the Azure Bot Service. You can create bots in any number of environments and languages. You can start your bot development in the [Azure portal](bot-service-quickstart.md), or use [[C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) | [JavaScript](javascript/bot-builder-javascript-quickstart.md)] templates for local development.
+Your bot is a web service that implements a conversational interface and communicates with the Bot Framework Service to send and receive messages and events. Bot Framework Service is one of the components of the Azure Bot Service and Bot Framework. You can create bots in any number of environments and languages. You can start your bot development in the [Azure portal](bot-service-quickstart.md), or use [[C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) | [JavaScript](javascript/bot-builder-javascript-quickstart.md)] templates for local development.
 
-As part of the Azure Bot Service, we offer additional components you can use to extend your bot's functionality
+As part of the Azure Bot Service and Bot Framework, we offer additional components you can use to extend your bot's functionality
 
 | Feature | Description | Link |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ As part of the Azure Bot Service, we offer additional components you can use to 
 > [!NOTE]
 > The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can manage a bot configuration file, configure LUIS apps, build a QnA knowledge base, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/botbuilder-tools-readme).
+Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to dispatch between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/botbuilder-tools-readme).
 
 You also have access to a variety of [samples](https://github.com/microsoft/botbuilder-samples) that showcase many of the capabilities available through the SDK. These are great for developers looking for a more feature rich starting point.
 

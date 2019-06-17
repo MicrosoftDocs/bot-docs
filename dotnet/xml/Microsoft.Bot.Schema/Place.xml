@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Entity</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,6 +55,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="address" Type="System.Object" />
@@ -88,9 +91,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="address")</AttributeName>
         </Attribute>
       </Attributes>
@@ -118,9 +122,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="geo")</AttributeName>
         </Attribute>
       </Attributes>
@@ -148,9 +153,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="hasMap")</AttributeName>
         </Attribute>
       </Attributes>
@@ -178,9 +184,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
         </Attribute>
       </Attributes>
@@ -207,9 +214,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
         </Attribute>
       </Attributes>

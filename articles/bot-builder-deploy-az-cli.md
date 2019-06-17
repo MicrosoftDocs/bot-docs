@@ -8,112 +8,177 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 04/12/2019
+ms.date: 05/23/2019
+monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Deploy your bot
 
-[!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
+[!INCLUDE [applies-to](./includes/applies-to.md)]
 
-After you have created your bot and tested it locally, you can deploy it to Azure to make it accessible from anywhere. Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
-
-In this article, we'll show you how to deploy C# and JavaScript bots to Azure. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+In this article, we'll show you how to deploy your bot to Azure. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 ## Prerequisites
-- If you don't have an [Azure subscription](http://portal.azure.com), create a free account before you begin.
-- A [**CSharp**](./dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](./javascript/bot-builder-javascript-quickstart.md) bot that you have developed on your local machine.
+- If you don't have an Azure subscription, create an [account](https://azure.microsoft.com/free/) before you begin.
+- A CSharp, JavaScript, or TypeScript bot that you have developed on your local machine.
+- Latest version of the [Azure cli](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest).
 
 ## 1. Prepare for deployment
-The deployment process requires a target Web App Bot in Azure so that your local bot can be deployed into it. The target Web App Bot and the resources that are provisioned with it in Azure are used by your local bot for deployment. This is necessary because your local bot does not have all the required Azure resources provisioned. When you create a target Web App bot, the following resources are provisioned for you:
--	Web App Bot – you will use this bot to deploy your local bot into.
--	App Service Plan - provides the resources that an App Service app needs to run.
--	App Service - service for hosting web applications
--	Storage account - contains all your Azure Storage data objects: blobs, files, queues, tables, and disks.
-
-During the creation of the target Web App Bot, an app ID and password are also generated for your bot. In Azure, the app ID and password support [service authentication and authorization](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization). You will retrieve some of this information for use in your local bot code. 
+When you create a bot using Visual Studio or Yeoman templates, the source code generated contains a `deploymentTemplates` folder with ARM templates. The deployment process documented here uses the ARM template to provision required resources for the bot in Azure by using the Azure CLI. 
 
 > [!IMPORTANT]
-> The programming language for the bot template used in the Azure portal must match the programming language your bot is written in.
+> With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of .bot file in favor of appsettings.json or .env file for managing resources. For information on migrating settings from the .bot file to appsettings.json or .env file, see [managing bot resources](v4sdk/bot-file-basics.md).
 
-Creating a new Web App Bot is optional if you have already created a bot in Azure that you'd like to use.
+### Login to Azure
 
-1. Log in to the [Azure portal](https://portal.azure.com).
-1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning > Web App bot**.
-1. A new blade will open with information about the Web App Bot. 
-1. In the **Bot Service** blade, provide the requested information about your bot.
-1. Click **Create** to create the service and deploy the bot to the cloud. This process may take several minutes.
+You've already created and tested a bot locally, and now you want to deploy it to Azure. Open a command prompt to log in to the Azure portal.
 
-### Download the source code
-After creating the target Web App Bot, you need to download the bot code from the Azure portal to your local machine. The reason for downloading code is to get the service references (e.g. MicrosoftAppID, MicrosoftAppPassword, LUIS, or QnA) that are in the appsettings.json or .env file. 
+```cmd
+az login
+```
+A browser window will open, allowing you to sign in.
 
-1. In the **Bot Management** section, click **Build**.
-1. Click on **Download Bot source code** link in the right-pane.
-1. Follow the prompts to download the code, and then unzip the folder.
-	1. [!INCLUDE [download keys snippet](~/includes/snippet-abs-key-download.md)]
+### Set the subscription
+Set the default subscription to use.
 
-### Update your local appsettings.json or .env file
-
-Open the appsettings.json or .env file you downloaded. Copy **all** entries listed in it and add them to your _local_ appsettings.json or .env file. Resolve any duplicate service entries or duplicate service IDs. Keep any additional service references your bot depends on.
-
-Save the file.
-
-### Update local bot code
-Update the local Startup.cs or index.js file to use appsettings.json or .env file instead using the .bot file. The .bot file has been deprecated and we are working on updating VSIX templates, Yeoman generators, samples, and remaining docs to all use appsettings.json or .env file instead of the .bot file. In the meantime, you'll need to make changes to the bot code. 
-
-Update the code to read settings from appsettings.json or .env file. 
-
-# [C#](#tab/csharp)
-In the `ConfigureServices` method, use the configuration object that ASP.NET Core provides, for example: 
-
-**Startup.cs**
-```csharp
-var appId = Configuration.GetSection("MicrosoftAppId").Value;
-var appPassword = Configuration.GetSection("MicrosoftAppPassword").Value;
-options.CredentialProvider = new SimpleCredentialProvider(appId, appPassword);
+```cmd
+az account set --subscription "<azure-subscription>"
 ```
 
-# [JS](#tab/js)
+If you are not sure which subscription to use for deploying the bot, you can view the list of subscriptions for your account by using `az account list` command. Navigate to the bot folder.
 
-In JavaScript, reference .env variables off of the `process.env` object, for example:
-   
-**index.js**
+### Create an App registration
+Registering the application means that you can use Azure AD to authenticate users and request access to user resources. Your bot requires a Registered app in Azure that provides the bot access to the Bot Framework Service for sending and receiving authenticated messages. To create register an app via the Azure CLI, perform the following command:
 
-```js
-const adapter = new BotFrameworkAdapter({
-    appId: process.env.MicrosoftAppId,
-    appPassword: process.env.MicrosoftAppPassword
-});
+```cmd
+az ad app create --display-name "displayName" --password "AtLeastSixteenCharacters_0" --available-to-other-tenants
 ```
+
+| Option   | Description |
+|:---------|:------------|
+| display-name | The display name of the application. |
+| password | App password, aka 'client secret'. The password must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, and contain at least 1 special character|
+| available-to-other-tenants| The application can be used from any Azure AD tenants. This must be `true` to enable your bot to work with the Azure Bot Service channels.|
+
+The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
+
+You can deploy your bot in a new resource group or an exising resource group. Choose the option that works best for you.
+
+# [Deploy via ARM template (with **new** Resource Group)](#tab/newrg)
+
+### Create Azure resources
+
+You'll create a new resource group in Azure and then use the ARM template to create the resources specified in it. In this case, we are provding App Service Plan, Web App, and Bot Channels Registration.
+
+```cmd
+az deployment create --name "<name-of-deployment>" --template-file "template-with-new-rg.json" --location "location-name" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" botSku=F0 newAppServicePlanName="<name-of-app-service-plan>" newWebAppName="<name-of-web-app>" groupName="<new-group-name>" groupLocation="<location>" newAppServicePlanLocation="<location>"
+```
+
+| Option   | Description |
+|:---------|:------------|
+| name | Friendly name for the deployment. |
+| template-file | The path to the ARM template. You can use `template-with-new-rg.json` file provided in the `deploymentTemplates` folder of the project. |
+| location |Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`. |
+| parameters | Provide deployment parameter values. `appId` value you got from running the `az ad app create` command. `appSecret` is the password you provided in the previous step. The `botId` parameter should be globally unique and is used as the immutable bot ID. It is also used to configure the display name of the bot, which is mutable. `botSku` is the pricing tier and can be F0 (Free) or S1 (Standard). `newAppServicePlanName` is the name of App Service Plan. `newWebAppName` is the name of the Web App you are creating. `groupName` is the name of the Azure resource group you are creating. `groupLocation` is the location of the Azure resource group. `newAppServicePlanLocation` is the location of the App Service Plan. |
+
+# [Deploy via ARM template (with **existing**  Resource Group)](#tab/erg)
+
+### Create Azure resources
+
+When using an existing resource group, you can either use an existing App Service Plan or create a new one. Steps for both options are listed below. 
+
+**Option 1: Existing App Service Plan** 
+
+In this case, we are using existing App Service Plan, but creating new a Web App and Bot Channels Registration. 
+
+_Note: The botId parameter should be globally unique and is used as the immutable bot ID. Also used to configure the displayName of the bot, which is mutable._
+
+```cmd
+az group deployment create --name "<name-of-deployment>" --resource-group "<name-of-resource-group>" --template-file "template-with-preexisting-rg.json" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" newWebAppName="<name-of-web-app>" existingAppServicePlan="<name-of-app-service-plan>" appServicePlanLocation="<location>"
+```
+
+**Option 2: New App Service Plan** 
+
+In this case, we are creating App Service Plan, Web App, and Bot Channels Registration. 
+
+```cmd
+az group deployment create --name "<name-of-deployment>" --resource-group "<name-of-resource-group>" --template-file "template-with-preexisting-rg.json" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" newWebAppName="<name-of-web-app>" newAppServicePlanName="<name-of-app-service-plan>" appServicePlanLocation="<location>"
+```
+
+| Option   | Description |
+|:---------|:------------|
+| name | Friendly name for the deployment. |
+| resource-group | Name of the azure resource group |
+| template-file | The path to the ARM template. You can use `template-with-preexisting-rg.json` file provided in the `deploymentTemplates` folder of the project. |
+| location |Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`. |
+| parameters | Provide deployment parameter values. `appId` value you got from running the `az ad app create` command. `appSecret` is the password you provided in the previous step. The `botId` parameter should be globally unique and is used as the immutable bot ID. It is also used to configure the display name of the bot, which is mutable. `newWebAppName` is the name of the Web App you are creating. `newAppServicePlanName` is the name of App Service Plan. `newAppServicePlanLocation` is the location of the App Service Plan. |
+
 ---
 
-- Save the file and test your bot.
+### Retrieve or create necessary IIS/Kudu files
 
-### Setup a repository
+**For C# bots**
 
-To support continuous deployment, create a git repository using your favorite git source control provider. Commit your code into the repository.
+```cmd
+az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.csproj"
+```
 
-Make sure that your repository root has the correct files, as described under [prepare your repository](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment#prepare-your-repository).
+You must provide the path to the .csproj file relative to --code-dir. This can be performed via the --proj-file-path argument. The command would resolve --code-dir and --proj-file-path to "./MyBot.csproj"
 
-### Update App Settings in Azure
-The local bot does not use an encrypted .bot file, but _if_ the Azure portal is configured to use an encrypted .bot file. You can resolve this by removing the **botFileSecret** stored in the Azure bot settings.
-1. In the Azure portal, open the **Web App Bot** resource for your bot.
-1. Open the bot's **Application Settings**.
-1. In the **Application Settings** window, scroll down to **Application settings**.
-1. Check to see if your bot has **botFileSecret** and **botFilePath** entries. If you do, delete it.
-1. Save the changes.
+**For JavaScript bots**
 
-## 2. Deploy using Azure Deployment Center
+```cmd
+az bot prepare-deploy --code-dir "." --lang Javascript
+```
 
-Now, you need to upload your bot code to Azure. Follow instructions in the [Continuous deployment to Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment) topic.
+This command will fetch a web.config which is needed for Node.js apps to work with IIS on Azure App Services. Make sure web.config is saved to the root of your bot.
 
-Note that it is recommended to build using `App Service Kudu build server`.
+**For TypeScript bots**
 
-Once you've configured continuous deployment, changes you commit to your repo are published. However, if you add services to your bot, you will need to add entries for these to your .bot file.
+```cmd
+az bot prepare-deploy --code-dir "." --lang Typescript
+```
 
-## 3. Test your deployment
+This command works similarly to JavaScript above, but for a Typescript bot.
 
-Wait for a few seconds after a successful deployment and optionally restart your Web App to clear any cache. Go back to your Web App Bot blade and test using the Web Chat provided in the Azure portal.
+### Zip up the code directory manually
 
-## Additional resources
-- [How to investigate common issues with continuous deployment](https://github.com/projectkudu/kudu/wiki/Investigating-continuous-deployment)
+When using the non-configured [zip deploy API](https://github.com/projectkudu/kudu/wiki/Deploying-from-a-zip-file-or-url) to deploy your bot's code, Web App/Kudu's behavior is as follows:
 
+_Kudu assumes by default that deployments from zip files are ready to run and do not require additional build steps during deployment, such as npm install or dotnet restore/dotnet publish._
+
+As such, it is important to include your built code and with all necessary dependencies in the zip file being deployed to the Web App, otherwise your bot will not work as intended.
+
+> [!IMPORTANT]
+> Before zipping your project files, make sure that you are _in_ the correct folder. 
+> - For C# bots, it is the folder that has the .csproj file. 
+> - For JS bots, it is the folder that has the app.js or index.js file. 
+>
+> Select all the files and zip them up **while in that folder**, then run the command while still in that folder.
+>
+> If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
+
+## 2. Deploy code to Azure
+At this point we are ready to deploy the code to the Azure Web App. Run the following command from the command line to perform deployment using the kudu zip push deployment for a web app.
+
+```cmd
+az webapp deployment source config-zip --resource-group "<new-group-name>" --name "<name-of-web-app>" --src "code.zip" 
+```
+
+| Option   | Description |
+|:---------|:------------|
+| resource-group | Resource group name in Azure that you created earlier. |
+| name | Name of the Web App you used earlier. |
+| src  | The path to the zipped file you created. |
+
+## 3. Test in Web Chat
+- In the Azure portal, go to your Web App bot blade.
+- In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot.
+- Wait for a few seconds after a successful deployment and optionally restart your Web App to clear any cache. Go back to your Web App Bot blade and test using the Web Chat provided in the Azure portal.
+
+## Additional information
+Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+
+## Next steps
+> [!div class="nextstepaction"]
+> [Set up continous deployment](bot-service-build-continuous-deployment.md)

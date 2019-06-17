@@ -122,7 +122,7 @@ Content-Type: application/json
                 "text": "descriptive text goes here",
                 "images": [
                     {
-                        "url": "http://aka.ms/Fo983c",
+                        "url": "https://aka.ms/DuckOnARock",
                         "alt": "picture of a duck",
                         "tap": {
                             "type": "playAudio",
@@ -139,7 +139,7 @@ Content-Type: application/json
                     {
                         "type": "openUrl",
                         "title": "Watch Video",
-                        "image": "http://aka.ms/Fo983c",
+                        "image": "https://aka.ms/DuckOnARock",
                         "value": "url goes here of the duck in flight"
                     }
                 ]

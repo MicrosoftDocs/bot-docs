@@ -182,7 +182,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;Enumerate&gt;d__7))</AttributeName>
         </Attribute>
       </Attributes>
@@ -537,7 +537,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;SortedMerge&gt;d__10`1))</AttributeName>
         </Attribute>
       </Attributes>

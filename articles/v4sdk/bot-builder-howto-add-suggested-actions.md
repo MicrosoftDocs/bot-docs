@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date:  4/18/2019
+ms.date:  05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,41 +24,23 @@ You can enable your bot to present buttons that the user can tap to provide inpu
 
 # [C#](#tab/csharp)
 
-You can access the source code used here from [GitHub](https://aka.ms/SuggestedActionsCSharp)
+The source code shown here is based on the [suggest actions sample](https://aka.ms/SuggestedActionsCSharp).
 
-```csharp
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Schema;
-
-var reply = turnContext.Activity.CreateReply("What is your favorite color?");
-
-reply.SuggestedActions = new SuggestedActions()
-{
-    Actions = new List<CardAction>()
-    {
-        new CardAction() { Title = "Red", Type = ActionTypes.ImBack, Value = "Red" },
-        new CardAction() { Title = "Yellow", Type = ActionTypes.ImBack, Value = "Yellow" },
-        new CardAction() { Title = "Blue", Type = ActionTypes.ImBack, Value = "Blue" },
-    },
-
-};
-await turnContext.SendActivityAsync(reply, cancellationToken: cancellationToken);
-```
+[!code-csharp[suggested actions](~/../botbuilder-samples/samples/csharp_dotnetcore/08.suggested-actions/Bots/SuggestedActionsBot.cs?range=87-100)]
 
 # [JavaScript](#tab/javascript)
-You can access the source code used here from [GitHub](https://aka.ms/SuggestActionsJS).
 
-```javascript
-const { ActivityTypes, MessageFactory, TurnContext } = require('botbuilder');
+The source code shown here is based on the [suggested actions sample](https://aka.ms/SuggestActionsJS).
 
-async sendSuggestedActions(turnContext) {
-    var reply = MessageFactory.suggestedActions(['Red', 'Yellow', 'Blue'], 'What is the best color?');
-    await turnContext.sendActivity(reply);
-}
-```
+[!code-javascript[suggested actions](~/../botbuilder-samples/samples/javascript_nodejs/08.suggested-actions/bots/suggestedActionsBot.js?range=61-64)]
 
 ---
 
 ## Additional resources
 
-You can access the complete source code shown here from GitHub [[C#](https://aka.ms/SuggestedActionsCSharp) | [JS](https://aka.ms/SuggestActionsJS)].
+You can access the complete source code shown here: the [CSharp sample](https://aka.ms/SuggestedActionsCSharp) or [JavaScript sample](https://aka.ms/SuggestActionsJS).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Save user and conversation data](./bot-builder-howto-v4-state.md)

@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -23,6 +24,26 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AttemptCount">
+      <MemberSignature Language="C#" Value="public int AttemptCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AttemptCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.AttemptCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttemptCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.AttemptCount : int" Usage="Microsoft.Bot.Builder.Dialogs.PromptValidatorContext&lt;'T&gt;.AttemptCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Context">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ITurnContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.ITurnContext Context" />
@@ -35,6 +56,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -57,6 +79,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptOptions</ReturnType>
@@ -79,6 +102,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;</ReturnType>
@@ -101,6 +125,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>

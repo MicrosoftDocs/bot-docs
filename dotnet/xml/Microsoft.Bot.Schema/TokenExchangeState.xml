@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,9 +53,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("botUrl")</AttributeName>
         </Attribute>
       </Attributes>
@@ -80,9 +83,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("connectionName")</AttributeName>
         </Attribute>
       </Attributes>
@@ -109,9 +113,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("conversation")</AttributeName>
         </Attribute>
       </Attributes>
@@ -138,9 +143,10 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("msAppId")</AttributeName>
         </Attribute>
       </Attributes>

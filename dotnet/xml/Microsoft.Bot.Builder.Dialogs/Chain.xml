@@ -665,7 +665,7 @@
         <Parameter Name="antecedent" Type="Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" RefType="this" />
         <Parameter Name="cases" Type="Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

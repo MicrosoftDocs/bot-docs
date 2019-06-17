@@ -6,7 +6,7 @@ ms.author: v-ducvo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/9/2018
+ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 

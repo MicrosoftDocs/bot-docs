@@ -26,7 +26,7 @@ If you are building a bot for a speech-enabled channel such as Cortana, you can 
 
 Using the Bot Framework SDK for Node.js, there are multiple ways to specify the text to be spoken by your bot on a speech-enabled channel. You can set the `IMessage.speak` property and send the message using the `session.send()` method, send the message using the `session.say()` method (passing parameters that specify display text, speech text, and options), or send the message using a built-in prompt (specifying options `speak` and `retrySpeak`).
 
-### <a id="message-speak"></a> IMessage.speak 
+### <a id="message-speak"></a> IMessage.speak
 
 If you are creating a message that will be sent using the `session.send()` method, set the `speak` property to specify the text to be spoken by your bot. The following code example creates a message that specifies text to be spoken and indicates that the bot is [accepting user input](bot-builder-nodejs-send-input-hints.md).
 
@@ -42,7 +42,7 @@ As an alternative to using `session.send()`, you can call the `session.say()` me
 |----|----|
 | `displayText` | The text to be displayed. |
 | `speechText` | The text (in plain text or <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">SSML</a> format) to be spoken. |
-| `options` | An [IMessage][IMessage] object that can contain an attachment or [input hint](bot-builder-nodejs-send-input-hints.md). |
+| `options` | An `IMessage` object that can contain an attachment or [input hint](bot-builder-nodejs-send-input-hints.md). |
 
 The following code example sends a message that specifies text to be displayed and text to be spoken and indicates that the bot is [ignoring user input](bot-builder-nodejs-send-input-hints.md).
 
@@ -73,10 +73,3 @@ For a complete sample that shows how to create a speech-enabled bot using the Bo
 
 - <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill" target="_blank">Roller sample (GitHub)</a>
-- [Bot Framework SDK for Node.js Reference][SDKReference]
-
-[SDKReference]: https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html
-
-[Message]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.message
-
-[IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage

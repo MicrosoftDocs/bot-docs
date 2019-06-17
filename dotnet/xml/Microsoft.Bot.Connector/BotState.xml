@@ -86,7 +86,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -125,7 +125,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -162,7 +162,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -201,7 +201,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -242,7 +242,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -281,7 +281,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -322,7 +322,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -365,7 +365,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Obsolete("This operation is deprecated. Please do not use it any longer.")</AttributeName>
         </Attribute>
       </Attributes>

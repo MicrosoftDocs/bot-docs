@@ -12,7 +12,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ResolutionFormat&gt;))</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,7 +35,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.EnumMember(Value="hd1080p")</AttributeName>
         </Attribute>
       </Attributes>
@@ -59,7 +59,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.EnumMember(Value="hd720p")</AttributeName>
         </Attribute>
       </Attributes>
@@ -83,7 +83,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.EnumMember(Value="sd360p")</AttributeName>
         </Attribute>
       </Attributes>
@@ -107,7 +107,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.EnumMember(Value="sd540p")</AttributeName>
         </Attribute>
       </Attributes>

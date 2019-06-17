@@ -817,7 +817,7 @@
         <Parameter Name="value" Type="System.Object" />
         <Parameter Name="terms" Type="System.String[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1597,7 +1597,7 @@
       <Parameters>
         <Parameter Name="dependencies" Type="System.String[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1683,7 +1683,7 @@
       <Parameters>
         <Parameter Name="terms" Type="System.String[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

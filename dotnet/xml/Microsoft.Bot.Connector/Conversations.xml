@@ -12,6 +12,7 @@
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -46,6 +47,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
@@ -78,6 +80,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConnectorClient</ReturnType>
@@ -109,9 +112,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="parameters">To be added.</param>
@@ -136,14 +139,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="parameters">
@@ -217,6 +221,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt;</ReturnType>
@@ -281,6 +286,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt;</ReturnType>
@@ -344,15 +350,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activityId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -409,14 +416,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -469,16 +477,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="pageSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="pageSize" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="continuationToken" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -550,14 +559,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationsResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="continuationToken" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="continuationToken">
@@ -616,11 +626,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="conversationId">To be added.</param>
@@ -647,16 +657,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activityId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -729,10 +740,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" Index="0" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
         <Parameter Name="history" Type="Microsoft.Bot.Connector.Transcript" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="conversationId">To be added.</param>
@@ -758,15 +769,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="transcript" Type="Microsoft.Bot.Schema.Transcript" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="transcript" Type="Microsoft.Bot.Schema.Transcript" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -830,10 +842,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="conversationId">To be added.</param>
@@ -859,15 +871,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -937,11 +950,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="conversationId">To be added.</param>
@@ -968,16 +981,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activityId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">
@@ -1044,10 +1058,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="conversationId">To be added.</param>
@@ -1073,15 +1087,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="conversationId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="conversationId">

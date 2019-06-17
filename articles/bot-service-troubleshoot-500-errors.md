@@ -8,14 +8,17 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/20/2018
+ms.date: 4/30/2019
 ---
 
 # Troubleshoot HTTP 500 errors
 
 The first step in troubleshooting 500 errors is enabling Application Insights.
 
-The luis-with-appinsights ([C#](https://aka.ms/cs-luis-with-appinsights-sample) / [JS](https://aka.ms/js-luis-with-appinsights-sample)) and qna-with-appinsights ([C#](https://aka.ms/qna-with-appinsights) / [JS](https://aka.ms/js-qna-with-appinsights-sample)) samples demonstrate bots that support Azure Application Insights. See [conversation analytics tememetry](https://aka.ms/botPowerBiTemplate) for information about how to add Application Insights to an existing bot.
+<!-- TODO: Add links back in once there's a fresh AppInsights sample.
+The luis-with-appinsights ([C# sample](https://aka.ms/cs-luis-with-appinsights-sample) / [JS sample](https://aka.ms/js-luis-with-appinsights-sample)) and qna-with-appinsights ([C# sample](https://aka.ms/qna-with-appinsights) / [JS sample](https://aka.ms/js-qna-with-appinsights-sample)) samples demonstrate bots that support Azure Application Insights.
+-->
+See [conversation analytics telemetry](https://aka.ms/botframeworkanalytics) for information about how to add Application Insights to an existing bot.
 
 ## Enable Application Insights on ASP.Net
 
@@ -66,7 +69,7 @@ Make sure your bot runs locally first with the emulator.
 
 ### Ensure configuration files are being copied (.NET only)
 
-Make sure your `.bot` configuration file and `appsettings.json` file are being packaged correctly during the deployment process.
+Make sure your `appsettings.json` and any other configuration files are being packaged correctly during the deployment process.
 
 #### Application assemblies
 
@@ -81,7 +84,7 @@ Ensure the Application Insights assemblies are being packaged correctly during t
 - Microsoft.AI.DependencyCollector
 - Microsoft.AI.Agent.Intercept
 
-Make sure your `.bot` configuration file and `appsettings.json` file are being packaged correctly during the deployment process.
+Make sure your `appsettings.json` and any other configuration files are being packaged correctly during the deployment process.
 
 #### appsettings.json
 
@@ -109,8 +112,6 @@ Within your `appsettings.json` file ensure the Instrumentation Key is set.
 
 ```json
 {
-    "botFilePath": "mybot.bot",
-    "botFileSecret": "<my secret>",
     "ApplicationInsights": {
         "InstrumentationKey": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     }
@@ -119,12 +120,13 @@ Within your `appsettings.json` file ensure the Instrumentation Key is set.
 
 ---
 
-### Verify .bot config file
+### Verify config file
 
-Ensure there's an Application Insights key included in your .bot file.
+Ensure there's an Application Insights key included in your config file.
 
 ```json
-    {
+{
+    "ApplicationInsights": {
         "type": "appInsights",
         "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "subscriptionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
@@ -135,7 +137,8 @@ Ensure there's an Application Insights key included in your .bot file.
         "applicationId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "apiKeys": {},
         "id": ""
-    },
+    }
+},
 ```
 
 ### Check logs
