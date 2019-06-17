@@ -163,6 +163,9 @@ Second, Adaptive Card delivers messages in the card format, and the channel dete
 
 To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/designer/">Adaptive Cards Designer</a>.
 
+To use adaptive cards, be sure to add the `AdaptiveCards` NuGet package. 
+
+
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
 
