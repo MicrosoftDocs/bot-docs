@@ -78,9 +78,9 @@ If you aren't deploying this for production, the app ID and password fields can 
   "MicrosoftAppId": "",
   "MicrosoftAppPassword": "",
   
-  "QnA-sample-qna-kbId": "<knowledge-base-id>",
-  "QnA-sample-qna-endpointKey": "<your-endpoint-key>",
-  "QnA-sample-qna-hostname": "<your-hostname>"
+  "QnAKnowledgebaseId": "<knowledge-base-id>",
+  "QnAAuthKey": "<your-endpoint-key>",
+  "QnAEndpointHostName": "<your-hostname>"
 }
 ```
 

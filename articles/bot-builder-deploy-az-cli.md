@@ -22,6 +22,7 @@ In this article, we'll show you how to deploy your bot to Azure. It would be use
 - If you don't have an Azure subscription, create an [account](https://azure.microsoft.com/free/) before you begin.
 - A CSharp, JavaScript, or TypeScript bot that you have developed on your local machine.
 - Latest version of the [Azure cli](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest).
+- Familiarity with [Azure cli and ARM templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
 
 ## 1. Prepare for deployment
 When you create a bot using Visual Studio or Yeoman templates, the source code generated contains a `deploymentTemplates` folder with ARM templates. The deployment process documented here uses the ARM template to provision required resources for the bot in Azure by using the Azure CLI. 

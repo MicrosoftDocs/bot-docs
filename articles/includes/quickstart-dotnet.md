@@ -25,7 +25,8 @@ When you click the run button, Visual Studio will build the application, deploy 
 Next, start the emulator and then connect to your bot in the emulator:
 
 1. Click the **Create a new bot configuration** link in the emulator "Welcome" tab. 
-2. Fill out the fields for your bot, then click **Save and connect**.
+2. Fill out the fields for your bot. Use your bot's welcome page address (typically http://localhost:3978) and append routing info '/api/messages' to this address.
+3. then click **Save and connect**.
 
 ## Interact with your bot
 
