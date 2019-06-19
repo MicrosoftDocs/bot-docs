@@ -73,7 +73,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-7. Still in Startup.cs, navigate to the bottom of the ConfigureServices method. Before the call app.UseMvc(); 
+7. Still in Startup.cs, navigate to the bottom of the Configure method. Before the call app.UseMvc(); 
 call (this is important as the order of Use calls matters), add app.UseWebSockets();. The end of the method should look 
 something like the below:
 

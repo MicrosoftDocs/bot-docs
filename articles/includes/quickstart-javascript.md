@@ -67,7 +67,8 @@ In a terminal or command prompt change directories to the one created for your b
 
 1. Start the Bot Framework Emulator.
 2. Click the **Create a new bot configuration** link in the emulator "Welcome" tab. 
-3. Fill out the fields for your bot, then click **Save and connect**.
+3. Fill out the fields for your bot. Use your bot's welcome page address (typically http://localhost:3978) and append routing info '/api/messages' to this address.
+4. Then click **Save and connect**.
 
 Send a message to your bot, and the bot will respond back with a message.
 ![Emulator running](../media/emulator-v4/js-quickstart.png)
