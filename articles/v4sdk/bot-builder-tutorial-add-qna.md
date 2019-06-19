@@ -120,17 +120,30 @@ Update your initialization code to load the service information for your knowled
 ## [C#](#tab/csharp)
 
 1. Add the **Microsoft.Bot.Builder.AI.QnA** NuGet package to your project.
+
+   You can do this via the NuGet Package Manager or the command line:
+
+   ```cmd
+   dotnet add package Microsoft.Bot.Builder.AI.QnA
+   ```
+
+   For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
+
 1. Add the **Microsoft.Extensions.Configuration** NuGet package to your project.
+
 1. In your **Startup.cs** file, add these namespace references.
 
    **Startup.cs**
+
    ```csharp
    using Microsoft.Bot.Builder.AI.QnA;
    using Microsoft.Extensions.Configuration;
    ```
+
 1. And, modify the _ConfigureServices_ method create a QnAMakerEndpoint that connects to the knowledge base defined in the **appsettings.json** file.
 
    **Startup.cs**
+
    ```csharp
    // Create QnAMaker endpoint as a singleton
    services.AddSingleton(new QnAMakerEndpoint
@@ -141,9 +154,11 @@ Update your initialization code to load the service information for your knowled
     });
 
    ```
+
 1. In your **EchoBot.cs** file, add these namespace references.
 
    **EchoBot.cs**
+
    ```csharp
    using System.Linq;
    using Microsoft.Bot.Builder.AI.QnA;
@@ -152,6 +167,7 @@ Update your initialization code to load the service information for your knowled
 1. Add a `EchoBotQnA` connector and initialize it in the bot's constructor.
 
    **EchoBot.cs**
+
    ```csharp
    public QnAMaker EchoBotQnA { get; private set; }
    public EchoBot(QnAMakerEndpoint endpoint)
@@ -160,9 +176,11 @@ Update your initialization code to load the service information for your knowled
       EchoBotQnA = new QnAMaker(endpoint);
    }
    ```
+
 1. Below the _OnMembersAddedAsync( )_ method create the method _AccessQnAMaker( )_ by adding the following code:
 
    **EchoBot.cs**
+
    ```csharp
    private async Task AccessQnAMaker(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
@@ -177,9 +195,11 @@ Update your initialization code to load the service information for your knowled
       }
    }
    ```
+
 1. Now within _OnMessageActivityAsync( )_ call your new method _AccessQnAMaker( )_ as follows:
 
    **EchoBot.cs**
+
    ```csharp
    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {

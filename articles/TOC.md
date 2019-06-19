@@ -18,7 +18,7 @@
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
 ## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
-## [User anthentication](v4sdk/bot-builder-concept-authentication.md)
+## [User authentication](v4sdk/bot-builder-concept-authentication.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
