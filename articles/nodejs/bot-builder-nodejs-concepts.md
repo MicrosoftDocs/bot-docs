@@ -23,7 +23,7 @@ This article introduces key concepts in the Bot Framework SDK for Node.js. For a
 
 ## Connector
 
-The Bot Framework Connector is a service that connects your bot to multiple *channels*, which are clients like Skype, Facebook, Slack, and SMS. 
+The Bot Framework Connector is a service that connects your bot to multiple *channels*, which are clients like [Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-create), Skype, Facebook, Slack, and SMS. 
 The Connector facilitates communication between bot and user by relaying messages from bot to channel and from channel to bot. 
 Your bot's logic is hosted as a web service that receives messages from users through the Connector service, and your bot's replies are sent to the Connector using HTTPS POST. 
 
