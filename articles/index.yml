@@ -51,7 +51,7 @@ sections:
   - type: paragraph
     text: 'Learn how to create your first bot:'
   - type: list
-    style: icon48
+    style: icon42
     items:   
     - image: 
         src: v4sdk/media/logo_csharp.svg
