@@ -249,7 +249,7 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 ## Where can I get more help on LUIS?
 
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-* [Advanced Learning Session for Language Understanding (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
+* [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](/azure/cognitive-services/LUIS/Home)
 * [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS) 
 
