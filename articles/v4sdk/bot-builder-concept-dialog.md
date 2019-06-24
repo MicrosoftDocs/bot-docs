@@ -54,7 +54,7 @@ Prompts, within the dialogs library, provide an easy way to ask the user for inf
 
 Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or starts from the top with a reprompt.
 
-Prompts have *prompt options* given when the prompt is called, which is where you can specify the text to prompt with, the retry prompt if validation fails, and choices to answer the prompt. In general, the prompt and retry prompt properties are activities, though there is some variation on how this is handled in different programming languages. 
+Prompts have *prompt options* given when the prompt is called, which is where you can specify the text to prompt with, the retry prompt if validation fails, and choices to answer the prompt.
 
 Additionally, you can choose to add some custom validation for your prompt when you create it. For example, say we wanted to get a party size using the number prompt, but that party size has to be more than 2 and less than 12. The prompt first checks to see if it received a valid number, then runs the custom validation if it is provided. If the custom validation fails, it will re-prompt the user as above.
 
@@ -102,38 +102,7 @@ The waterfall step context contains the following:
 * *Values*: contains information you can add to the context, and is carried forward into subsequent steps.
 * *Result*: contains the result from the previous step.
 
-You can validate a prompt response before returning the value to the next step of the waterfall. A validator function has a _prompt validator context_ parameter and returns a Boolean, indicating whether the input passes validation.
-
-The prompt validator context includes the following properties:
-
-| Property | Description |
-| :--- | :--- |
-| _Context_ | The current turn context for the bot. |
-| _Recognized_ | A _prompt recognizer result_ that contains information about the user input, as processed by the recognizer. |
-| _Options_ | Contains the _prompt options_ that were provided in the call to start the prompt. |
-
-The prompt recognizer result has the following properties:
-
-| Property | Description |
-| :--- | :--- |
-| _Succeeded_ | Indicates whether the recognizer was able to parse the input. |
-| _Value_ | The return value from the recognizer. If necessary, the validation code can modify this value. |
-
-
 Additionally, the *next* method continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
-
-#### Prompt options
-
-The second parameter of the step context's _prompt_ method takes a _prompt options_ object, which has the following properties.
-
-| Property | Description |
-| :--- | :--- |
-| _prompt_ | The initial activity to send the user, to ask for their input. |
-| _retry prompt_ | The activity to send the user if their first input did not validate. |
-| _choices_ | A list of choices for the user to choose from, for use with a choice prompt. |
-| _validations_ | Additional parameters to use with a custom validator. |
-
-You should always specify the initial prompt activity to send the user, along with rety prompts for instances when validation fails. Specifying a retry prompt is useful for when the user's input fails to validate, either because it is in a format that the prompt can not parse, such as "tomorrow" for a number prompt, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt activity to re-prompt the user for input. For a choice prompt, you should always provide the list of available choices.
 
 ### Component dialog
 
