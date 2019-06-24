@@ -76,7 +76,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -155,7 +155,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -246,7 +246,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -336,7 +336,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -439,7 +439,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -534,7 +534,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -610,7 +610,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -684,7 +684,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -765,7 +765,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -861,7 +861,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
