@@ -898,7 +898,7 @@
       "type": "object",
       "properties": {
         "viewId": {
-          "description": "content type of the attachmnet",
+          "description": "content type of the attachment",
           "type": "string"
         },
         "size": {
@@ -1282,7 +1282,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "description": "content type of the attachmnet",
+          "description": "content type of the attachment",
           "type": "string"
         },
         "name": {
