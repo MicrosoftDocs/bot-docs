@@ -277,7 +277,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "description": "The type of the activity [message|contactRelationUpdate|converationUpdate|typing]",
+          "description": "The type of the activity [message|contactRelationUpdate|conversationUpdate|typing]",
           "type": "string"
         },
         "id": {

@@ -984,7 +984,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "description": "The type of the activity [message|contactRelationUpdate|converationUpdate|typing|endOfConversation|event|invoke]",
+          "description": "The type of the activity [message|contactRelationUpdate|conversationUpdate|typing|endOfConversation|event|invoke]",
           "type": "string"
         },
         "id": {
