@@ -873,7 +873,7 @@
   },
   "definitions": {
     "AttachmentInfo": {
-      "description": "Metdata for an attachment",
+      "description": "Metadata for an attachment",
       "type": "object",
       "properties": {
         "name": {
