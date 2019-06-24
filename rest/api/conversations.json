@@ -261,7 +261,7 @@
           "Conversations"
         ],
         "summary": "SendToConversation",
-        "description": "This method allows you to send an activity to the end of a conversation.\r\n\r\nThis is slightly different from ReplyToActivity().\r\n* SendToConverstion(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
+        "description": "This method allows you to send an activity to the end of a conversation.\r\n\r\nThis is slightly different from ReplyToActivity().\r\n* SendToConversation(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
         "operationId": "Conversations_SendToConversation",
         "consumes": [
           "application/json",
@@ -452,7 +452,7 @@
           "Conversations"
         ],
         "summary": "ReplyToActivity",
-        "description": "This method allows you to reply to an activity.\r\n\r\nThis is slightly different from SendToConversation().\r\n* SendToConverstion(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
+        "description": "This method allows you to reply to an activity.\r\n\r\nThis is slightly different from SendToConversation().\r\n* SendToConversation(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
         "operationId": "Conversations_ReplyToActivity",
         "consumes": [
           "application/json",
@@ -625,7 +625,7 @@
           "Conversations"
         ],
         "summary": "GetConversationMembers",
-        "description": "Enumerate the members of a converstion. \r\n\r\nThis REST API takes a ConversationId and returns an array of ChannelAccount objects representing the members of the conversation.",
+        "description": "Enumerate the members of a conversation. \r\n\r\nThis REST API takes a ConversationId and returns an array of ChannelAccount objects representing the members of the conversation.",
         "operationId": "Conversations_GetConversationMembers",
         "consumes": [],
         "produces": [
