@@ -406,7 +406,7 @@ Edit **./dialogs/hotels.js**.
     }
     ```
 
-    The `createHotelHeroCard` creates a hero card containing information about a hotel.
+    `createHotelHeroCard` creates a hero card containing information about a hotel.
 
 1. To the class, add the waterfall steps used in the dialog.
 
@@ -484,7 +484,7 @@ In v4, bots can react to activities outside of the dialog system. The `ActivityH
 
 Rename **./bot.js** to **./bots/reservationBot.js**, and edit it.
 
-1. The file already imports the **ActivityHandler**, which provides a base implementation of a bot.
+1. The file already imports the `ActivityHandler`, which provides a base implementation of a bot.
 
     ```javascript
     const { ActivityHandler } = require('botbuilder');
@@ -629,3 +629,5 @@ v4 how-to topics:
 - [Send and receive text messages](../bot-builder-howto-send-messages.md)
 - [Save user and conversation data](../bot-builder-howto-v4-state.md)
 - [Implement sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md)
+- [Debug with the emulator](../../bot-service-debug-emulator.md)
+- [Add telemetry to your bot](../bot-builder-telemetry.md)
