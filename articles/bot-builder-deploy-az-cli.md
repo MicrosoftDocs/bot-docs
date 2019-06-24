@@ -49,6 +49,7 @@ az account set --subscription "<azure-subscription>"
 If you are not sure which subscription to use for deploying the bot, you can view the list of subscriptions for your account by using `az account list` command. Navigate to the bot folder.
 
 ### Create an App registration
+
 Registering the application means that you can use Azure AD to authenticate users and request access to user resources. Your bot requires a Registered app in Azure that provides the bot access to the Bot Framework Service for sending and receiving authenticated messages. To create register an app via the Azure CLI, perform the following command:
 
 ```cmd
@@ -63,13 +64,20 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 
 The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
 
-You can deploy your bot in a new resource group or an exising resource group. Choose the option that works best for you.
+
+> [!NOTE] If you would like to use an existing App registration, you can use the command,
+>
+> ```cmd
+> az bot create --kind webapp --resource-group "<name-of-resource-group>" --name "<name-of-web-app>" --appid "<existing-app-id>" --password "<existing-app-password>" --lang <Javascript|Csharp>;
+> ```
+
+You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
 
 # [Deploy via ARM template (with **new** Resource Group)](#tab/newrg)
 
 ### Create Azure resources
 
-You'll create a new resource group in Azure and then use the ARM template to create the resources specified in it. In this case, we are provding App Service Plan, Web App, and Bot Channels Registration.
+You'll create a new resource group in Azure and then use the ARM template to create the resources specified in it. In this case, we are providing App Service Plan, Web App, and Bot Channels Registration.
 
 ```cmd
 az deployment create --name "<name-of-deployment>" --template-file "template-with-new-rg.json" --location "location-name" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" botSku=F0 newAppServicePlanName="<name-of-app-service-plan>" newWebAppName="<name-of-web-app>" groupName="<new-group-name>" groupLocation="<location>" newAppServicePlanLocation="<location>"
@@ -182,4 +190,4 @@ Deploying your bot to Azure will involve paying for the services you use. The [b
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Set up continous deployment](bot-service-build-continuous-deployment.md)
+> [Set up continuous deployment](bot-service-build-continuous-deployment.md)
