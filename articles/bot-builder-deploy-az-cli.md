@@ -64,7 +64,6 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 
 The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
 
-
 > [!NOTE] If you would like to use an existing App registration, you can use the command,
 >
 > ```cmd
