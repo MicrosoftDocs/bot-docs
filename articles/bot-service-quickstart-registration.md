@@ -24,7 +24,7 @@ If you already have a bot hosted elsewhere and you would like to use the Bot Ser
 Log in to the [Azure portal](http://portal.azure.com).
 
 > [!TIP]
-> If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>.
+> If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
 
 ## Create a Bot Channels Registration
 You need a **Bot Channels Registration** bot service to be able to use Bot Service functionality. A registration bot lets you connect your bot to channels.
@@ -45,7 +45,7 @@ To create a **Bot Channels Registration**, do the following:
    |         <strong>Subscription</strong>          |        Your subscription        |                                                                                Select the Azure subscription you want to use.                                                                                 |
    |        <strong>Resource Group</strong>         |         myResourceGroup         |                                 You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or choose from an existing one.                                  |
    |                    Location                    |             West US             |                                                        Choose a location near where your bot is deployed or near other services your bot will access.                                                         |
-   |         <strong>Pricing tier</strong>          |               F0                |             Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/en-us/pricing/details/bot-service/).              |
+   |         <strong>Pricing tier</strong>          |               F0                |             Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-service/).              |
    |      <strong>Messaging endpoint</strong>       |               URL               |                                                                               Enter the URL for your bot's messaging endpoint.                                                                                |
    |     <strong>Application Insights</strong>      |               On                | Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) <strong>On</strong> or <strong>Off</strong>. If you select <strong>On</strong>, you must also specify a regional location. |
    | <strong>Microsoft App ID and password</strong> | Auto create App ID and password |              Use this option if you need to manually enter a Microsoft App ID and password. Otherwise, a new Microsoft App ID and password will be created for you in the bot creation process.               |

@@ -46,7 +46,7 @@ Using any of the built-in prompts, you can set the options `speak` and `retrySpe
 
 ## <a id="ssml"></a> Speech Synthesis Markup Language (SSML)
 
-To specify text to be spoken by your bot, you can give it a string that is formatted as Speech Synthesis Markup Language (SSML). SSML is an XML-based markup language (and therefore must be valid XML) that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. For details about SSML, see <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language Reference</a>.
+To specify text to be spoken by your bot, you can give it a string that is formatted as Speech Synthesis Markup Language (SSML). SSML is an XML-based markup language (and therefore must be valid XML) that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. For details about SSML, see <a href="https://msdn.microsoft.com/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language Reference</a>.
 
 When providing the SSML formatted string, the outer SSML wrapper element may be omitted.
 
@@ -62,7 +62,7 @@ For a complete sample that shows how to create a speech-enabled bot using the Bo
 
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - [Add input hints to messages](bot-builder-dotnet-add-input-hints.md)
-- <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
+- <a href="https://msdn.microsoft.com/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/demo-RollerSkill" target="_blank">Roller Skill sample (GitHub)</a>
 - <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
 - <a href="/dotnet/api/microsoft.bot.connector.imessageactivity" target="_blank">IMessageActivity interface</a>

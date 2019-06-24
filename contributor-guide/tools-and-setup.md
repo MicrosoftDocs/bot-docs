@@ -38,7 +38,7 @@ Every published technical article supports a comment stream provided by the [Liv
 
 As a Microsoft employee and article author or contributor, you need to sign up for Livefyre so you can participate in the comment stream for the article. 
 
-1. Your Livefyre account needs to be created within docs.microsoft.com. Pick an article in docs.microsoft.com. E.g.  [https://docs.microsoft.com/en-us/active-directory/active-directory-developers-guide](https://docs.microsoft.com/en-us/active-directory/active-directory-developers-guide).
+1. Your Livefyre account needs to be created within docs.microsoft.com. Pick an article in docs.microsoft.com. E.g.  [https://docs.microsoft.com/active-directory/active-directory-developers-guide](https://docs.microsoft.com/active-directory/active-directory-developers-guide).
 
 2. At the bottom of the article, click the *Sign in* link in the comments section.
  

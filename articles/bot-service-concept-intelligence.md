@@ -30,7 +30,7 @@ Cognitive Services provides these APIs for language understanding:
 
 - The <a href="https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api" target="_blank">Bing Spell Check API</a> provides powerful spell check capabilities, and is able to recognize the difference between names, brand names, and slang.
 
-- The <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/text-analytics-module-tutorial" target ="_blank">Text Analytics Models in Azure Machine Learning Studio</a> allows you to build and operationalize text analytics models such as lemmatization and text-preprocessing. These models can help you address issues such as document classification or sentiment analysis problems.
+- The <a href="https://docs.microsoft.com/azure/machine-learning/studio/text-analytics-module-tutorial" target ="_blank">Text Analytics Models in Azure Machine Learning Studio</a> allows you to build and operationalize text analytics models such as lemmatization and text-preprocessing. These models can help you address issues such as document classification or sentiment analysis problems.
 
 Learn more about [language understanding][language] with Microsoft Cognitive Services.
 
@@ -110,9 +110,9 @@ Learn more about [image and video understanding][vision] with Microsoft Cognitiv
 
 You can find comprehensive documentation of each product and their corresponding API references in the <a href="https://docs.microsoft.com/azure/cognitive-services" target="_blank">Cognitive Services documentation</a>.
 
-[language]: https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home
-[search]: https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/search-the-web
-[vision]: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home
-[knowledge]: https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview
-[speech]: https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home
-[location]: https://docs.microsoft.com/en-us/azure/cognitive-services/
+[language]: https://docs.microsoft.com/azure/cognitive-services/luis/home
+[search]: https://docs.microsoft.com/azure/cognitive-services/bing-web-search/search-the-web
+[vision]: https://docs.microsoft.com/azure/cognitive-services/computer-vision/home
+[knowledge]: https://docs.microsoft.com/azure/cognitive-services/kes/overview
+[speech]: https://docs.microsoft.com/azure/cognitive-services/speech/home
+[location]: https://docs.microsoft.com/azure/cognitive-services/

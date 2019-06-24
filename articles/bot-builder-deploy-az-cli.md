@@ -21,8 +21,8 @@ In this article, we'll show you how to deploy your bot to Azure. It would be use
 ## Prerequisites
 - If you don't have an Azure subscription, create an [account](https://azure.microsoft.com/free/) before you begin.
 - A CSharp, JavaScript, or TypeScript bot that you have developed on your local machine.
-- Latest version of the [Azure cli](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest).
-- Familiarity with [Azure cli and ARM templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
+- Latest version of the [Azure cli](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest).
+- Familiarity with [Azure cli and ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## 1. Prepare for deployment
 When you create a bot using Visual Studio or Yeoman templates, the source code generated contains a `deploymentTemplates` folder with ARM templates. The deployment process documented here uses the ARM template to provision required resources for the bot in Azure by using the Azure CLI. 
@@ -178,7 +178,7 @@ az webapp deployment source config-zip --resource-group "<new-group-name>" --nam
 - Wait for a few seconds after a successful deployment and optionally restart your Web App to clear any cache. Go back to your Web App Bot blade and test using the Web Chat provided in the Azure portal.
 
 ## Additional information
-Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/en-us/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
 
 ## Next steps
 > [!div class="nextstepaction"]

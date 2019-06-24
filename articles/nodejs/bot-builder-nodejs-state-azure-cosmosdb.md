@@ -31,7 +31,7 @@ In this article, you’ll implement Cosmos DB storage to store and manage your b
 - Must have a Node.js bot. If you do not have one, go [create a bot](bot-builder-nodejs-quickstart.md). 
 
 ## Create Azure account
-If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free account.
+If you don't have an Azure account, click [here](https://azure.microsoft.com/free/) to sign up for a free account.
 
 ## Set up the Azure Cosmos DB database
 1. After you’ve logged into the Azure portal, create a new *Azure Cosmos DB* database by clicking **New**. 

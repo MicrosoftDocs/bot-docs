@@ -25,11 +25,11 @@ Base LUIS model  | Supports common intents such as **Cancel**, **Help**, **Escal
 Base dialogs | Dialog flows for capturing basic user information as well as interruption logic for cancel and help intents
 Base responses  | Text and speech responses for base intents and dialogs
 FAQ | Integration with [QnA Maker](https://www.qnamaker.ai) to answer general questions from a knowledgebase 
-Chit-chat | A professional chit-chat model to provide standard answers to common queries ([learn more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base))
-Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS or QnA Maker.
+Chit-chat | A professional chit-chat model to provide standard answers to common queries ([learn more](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base))
+Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS or QnA Maker.
 Language support | Available in English, French, Italian, German, Spanish and Chinese
 Transcripts | Transcripts of all conversations stored in Azure Storage
-Telemetry  | [Application Insights](https://azure.microsoft.com/en-gb/services/application-insights/) integration to collect telemetry for all conversations
+Telemetry  | [Application Insights](https://azure.microsoft.com/services/application-insights/) integration to collect telemetry for all conversations
 Analytics | An example Power BI dashboard to get you started with insights into your conversational experiences.
 Automated deployment | Easy deployment of all aforementioned services using Azure ARM templates.
 
@@ -90,7 +90,7 @@ Whilst this pattern worked well there were two key scenarios where problems coul
 - If  utterances in the LUIS model and QnA Maker overlapped sometimes slightly, this could lead to strange behavior where LUIS may try to process a question when it should have been directed to QnA Maker.
 - When there were two or more LUIS models a Bot would have to invoke each one and perform some form of  intent evaluation comparison to identify where to send a given utterance. As there is no common baseline score comparison across models didn't work effectively leading to a poor user experience.
 
-The [Dispatcher](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) provides an elegant solution to this by extracting utterances from each configured LUIS model and questions from QnA Maker and creating a central dispatch LUIS model.
+The [Dispatcher](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) provides an elegant solution to this by extracting utterances from each configured LUIS model and questions from QnA Maker and creating a central dispatch LUIS model.
 
 This enables a Bot to quickly identify which LUIS model or component should handle a given utterance and ensures QnA Maker data is considered at the top level of intent processing not just the None intent as before.
 

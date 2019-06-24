@@ -34,13 +34,13 @@ Your Custom Assistant will be deployed within your Azure subscription. Therefore
 
 ## Your Assistant, anywhere..
 
-The Custom Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) – e.g. WebChat, FaceBook Messenger, Skype, etc. In addition, through the [Direct Line](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel we can embed experiences into Desktop and Mobile Apps including devices such as Cars, Speakers, Alarm Clocks, etc.
+The Custom Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) – e.g. WebChat, FaceBook Messenger, Skype, etc. In addition, through the [Direct Line](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel we can embed experiences into Desktop and Mobile Apps including devices such as Cars, Speakers, Alarm Clocks, etc.
 
 ## Built on Enterprise grade technology
 
-The Custom Assistant solution is built on the Azure Bot Service, Language Understanding Cognitive Service, Unified Speech along with a broad set of supporting Azure components meaning that you benefit from the [Azure global infrastructure](https://azure.microsoft.com/en-gb/global-infrastructure/).
+The Custom Assistant solution is built on the Azure Bot Service, Language Understanding Cognitive Service, Unified Speech along with a broad set of supporting Azure components meaning that you benefit from the [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure/).
 
-In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages [listed here](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/) provides additional Machine Translation capabilities to extend the reach of your Custom Assistant even further.
+In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages [listed here](https://docs.microsoft.com/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/services/cognitive-services/translator-text-api/) provides additional Machine Translation capabilities to extend the reach of your Custom Assistant even further.
 
 ## Integrated and Context Aware
 
@@ -56,7 +56,7 @@ Our Custom Assistant architecture is flexible and can be integrated with existin
 
 ## Adaptive Cards
 
-[Adaptive Cards](https://adaptivecards.io/) provide the ability for your Custom Assistant to return User Experience elements (e.g. Cards, Images, Buttons) alongside text base responses. If the device or conversation canvas has a screen these Adaptive Cards can be rendered across a broad range of devices and platforms providing supporting User Experience where appropriate. Examples of Adaptive Cards can be found [here](https://adaptivecards.io/samples/) with information on Rendering options in the documentation [here](https://docs.microsoft.com/en-us/adaptive-cards/rendering-cards/getting-started).
+[Adaptive Cards](https://adaptivecards.io/) provide the ability for your Custom Assistant to return User Experience elements (e.g. Cards, Images, Buttons) alongside text base responses. If the device or conversation canvas has a screen these Adaptive Cards can be rendered across a broad range of devices and platforms providing supporting User Experience where appropriate. Examples of Adaptive Cards can be found [here](https://adaptivecards.io/samples/) with information on Rendering options in the documentation [here](https://docs.microsoft.com/adaptive-cards/rendering-cards/getting-started).
 
 
 ## Skills

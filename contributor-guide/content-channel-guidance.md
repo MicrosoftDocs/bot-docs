@@ -4,7 +4,7 @@ GitHub is a relatively easy way (once you get over the Git hump) to author and p
 ## Technical content that belongs in the bot-framework-docs-pr repository
 The following types of content are authored in bot-framework-docs-pr and published to https://docs.microsoft.com/azure. 
 
-**Technical articles about using the product** belong in the bot-framework-docs and bot-framework-docs-pr repositories for publication to http://docs.microsoft.com. They should contain conceptual or procedural information required to understand and use the product. The technical content channel is for technical content showing people **how** to do something. You can talk about the "what" and "why" to help customers understand intent, but the articles should focus on the actual content telling people how to do the task or complete the scenario.
+**Technical articles about using the product** belong in the bot-framework-docs and bot-framework-docs-pr repositories for publication to https://docs.microsoft.com. They should contain conceptual or procedural information required to understand and use the product. The technical content channel is for technical content showing people **how** to do something. You can talk about the "what" and "why" to help customers understand intent, but the articles should focus on the actual content telling people how to do the task or complete the scenario.
 
 Specific guidance exists for certain types of content, such as customer stories and service limits.
 
@@ -12,7 +12,7 @@ Specific guidance exists for certain types of content, such as customer stories 
 
 * **Service limits**: Every service where subscription and service limits, quotas, and constraints apply must have an include file that documents the most important limits, quotas, or constraints. The include must be added to the all-up ["Bot Framework subscription and service limits, quotas, and constraints"](https://docs.microsoft.com/azure/azure-subscription-service-limits) article. Optionally, a service-specific limits article may also be published to the service-specific content; the include must be reused in that article. 
 
-* **Top issue troubleshooting content**: Most technical troubleshooting content should be published as KB articles at https://support.microsoft.com/. Per agreement with CSS and Apex management, each Bot Framework service may also publish a limited set of two types of troubleshooting content with their technical documentation on http://docs.microsoft.com:   up to 10 top issue troubleshooting articles per service, and up to 10 troubleshooting index articles that summarize the symptoms, causes, quick steps, and links to other content (KB articles or documentation) for top call drivers.
+* **Top issue troubleshooting content**: Most technical troubleshooting content should be published as KB articles at https://support.microsoft.com/. Per agreement with CSS and Apex management, each Bot Framework service may also publish a limited set of two types of troubleshooting content with their technical documentation on https://docs.microsoft.com:   up to 10 top issue troubleshooting articles per service, and up to 10 troubleshooting index articles that summarize the symptoms, causes, quick steps, and links to other content (KB articles or documentation) for top call drivers.
 
 ## Technical content that does not belong in the bot-framework-docs-pr repository
 The following types of content are delivered in other Bot Framework or Microsoft content channels; in some cases, certain types of content are not part of our content strategy.
@@ -33,9 +33,9 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **Future product plans**: Do not publish statements about future product plans in technical documentation. Technical documentation should describe only what is possible in the released product.
 
-* **Learning paths**: Learning paths are delivered at https://azure.microsoft.com/en-us/documentation/learning-paths/. See http://acomdocs.azurewebsites.net/articles/contributing-acom-learning-path/ for instructions.
+* **Learning paths**: Learning paths are delivered at https://azure.microsoft.com/documentation/learning-paths/. See http://acomdocs.azurewebsites.net/articles/contributing-acom-learning-path/ for instructions.
 
-* **Legal terms**: There are all-up Bot Framework legal terms: https://azure.microsoft.com/en-us/support/legal/
+* **Legal terms**: There are all-up Bot Framework legal terms: https://azure.microsoft.com/support/legal/
 
 * **Marketing content**: Content that provides a high-level feature/benefit description or that just lists at a high level the capabilities of a service is probably marketing content. It belongs in marketing areas of the site. To publish marketing content, file a work request for azure.microsoft.com.
 
@@ -45,7 +45,7 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **Pointer articles to downloads**: Instead of pointing small pages that contain nothing but a link to a download, just link to the download from the relevant technical content.
 
-* **Privacy information**: There is an all-up privacy policy for Microsoft Online Services that covers all of Azure. Privacy information specific to a service should be presented as technical content, not "privacy statements". See https://azure.microsoft.com/en-us/support/legal/.
+* **Privacy information**: There is an all-up privacy policy for Microsoft Online Services that covers all of Azure. Privacy information specific to a service should be presented as technical content, not "privacy statements". See https://azure.microsoft.com/support/legal/.
 
 * **Redirect articles**:  Do not republish an article so that the content of the article is a link to the replacement content. Convert the article into an actual redirect so the user doesn't have to click to go the replacement content.
 

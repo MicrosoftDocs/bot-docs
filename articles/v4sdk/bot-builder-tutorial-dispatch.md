@@ -399,7 +399,7 @@ To delete QnA Maker resources:
 
 ### Best practice
 
-To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/best-practices).
+To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices).
 
 
 [howto-luis]: bot-builder-howto-v4-luis.md

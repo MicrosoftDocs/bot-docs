@@ -1,4 +1,4 @@
-Before beginning the deployment, make sure you have the latest version of [Azure cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) and [dotnet cli](https://dotnet.microsoft.com/download). If you don't have dotnet cli, install it using the .Net Core Runtime option from the link provided above. 
+Before beginning the deployment, make sure you have the latest version of [Azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) and [dotnet cli](https://dotnet.microsoft.com/download). If you don't have dotnet cli, install it using the .Net Core Runtime option from the link provided above. 
 
 ### Login to Azure CLI and set your subscription
 You've already created and tested a bot locally, and now you want to deploy it to Azure. Open a command prompt to log in to the Azure portal.
