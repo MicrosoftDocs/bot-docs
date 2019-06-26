@@ -29,7 +29,7 @@ The interaction between users and bots is often free-form, and bots need to unde
 
 ## Recognize intent
 
-[LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/home) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
+[LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/home) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
 
 For example, consider the many ways a user of a travel bot can ask to book a flight.
 
@@ -47,9 +47,9 @@ Your bot uses the intent recognized by LUIS to determine the conversation topic,
 
 To save development time, LUIS provides pre-trained language models that recognize common utterances for common categories of bots. 
 
-**Prebuilt domains** are pre-trained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. Take a look at the [prebuilt domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains) that LUIS offers.
+**Prebuilt domains** are pre-trained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. Take a look at the [prebuilt domains](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains) that LUIS offers.
 
-**Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age. See [use prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize.
+**Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age. See [use prebuilt entities](https://docs.microsoft.com/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize.
 
 ## How your bot gets messages from LUIS
 
@@ -57,7 +57,7 @@ Once you have set up and connected LUIS, your bot can send the message to your L
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
-To get started using a LUIS app with your bot, check out [using LUIS for language understanding](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0).
+To get started using a LUIS app with your bot, check out [using LUIS for language understanding](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0).
 
 ## Best practices for Language Understanding
 
@@ -96,7 +96,7 @@ The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services 
 
 ## Use LUIS to improve speech recognition
 
-For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
+For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming](https://docs.microsoft.com/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
 
 ## Additional resources
-Refer to [Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/) documentation for more information.
+Refer to [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) documentation for more information.

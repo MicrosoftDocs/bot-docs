@@ -48,7 +48,7 @@ When a bot conversation first starts or when a conversation ends, the dialog sta
 Prior to Bot Framework version 3.5, a *root* dialog is defined by adding a dialog named `/`, which lead to naming conventions similar to that of URLs. This naming convention wasn't appropriate to naming dialogs. 
 
 > [!NOTE]
-> Starting with version 3.5 of the Bot Framework, the *default dialog* is registered as the second parameter in the constructor of [`UniversalBot`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html#constructor).  
+> Starting with version 3.5 of the Bot Framework, the *default dialog* is registered as the second parameter in the constructor of [`UniversalBot`](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.universalbot.html#constructor).  
 
 The following code snippet shows how to define the default dialog when creating the `UniversalBot` object.
 
@@ -66,7 +66,7 @@ The dialog handler manages the flow of a conversation. To progress through a con
 
 ## Starting and ending dialogs
 
-To start a new dialog (and push it onto the stack), use [`session.beginDialog()`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog). To end a dialog (and remove it from the stack, returning control to the calling dialog), use either [`session.endDialog()`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [`session.endDialogWithResult()`](http://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresult). 
+To start a new dialog (and push it onto the stack), use [`session.beginDialog()`](http://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#begindialog). To end a dialog (and remove it from the stack, returning control to the calling dialog), use either [`session.endDialog()`](http://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialog) or [`session.endDialogWithResult()`](http://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#enddialogwithresult). 
 
 ## Using waterfalls and prompts
 

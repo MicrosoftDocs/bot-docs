@@ -85,7 +85,7 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 [CortanaGetStarted]: /cortana/getstarted
 
 [BFPortal]: https://dev.botframework.com/
-[CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
+[CortanaDevCenter]: https://developer.microsoft.com/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
 [CortanaAuth]: https://aka.ms/vsdqcj

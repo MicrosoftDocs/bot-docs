@@ -32,7 +32,7 @@ In this article, you’ll implement Azure Table storage to store and manage your
 - [Storage Explorer](http://storageexplorer.com/).
 
 ## Create Azure account
-If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free account.
+If you don't have an Azure account, click [here](https://azure.microsoft.com/free/) to sign up for a free account.
 
 ## Set up the Azure Table storage service
 1. After you’ve logged into the Azure portal, create a new Azure Table storage service by clicking on **New**. 

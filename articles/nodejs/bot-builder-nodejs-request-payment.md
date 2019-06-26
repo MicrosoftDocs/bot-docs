@@ -38,7 +38,7 @@ Update your bot's environment variables for `MicrosoftAppId` and `MicrosoftAppPa
 
 1. <a href="https://dashboard.stripe.com/register" target="_blank">Create and activate a Stripe account if you don't have one already.</a>
 
-2. <a href="https://seller.microsoft.com/en-us/dashboard/registration/seller/?accountprogram=botframework" target="_blank">Sign in to Seller Center with your Microsoft account.</a>
+2. <a href="https://seller.microsoft.com/dashboard/registration/seller/?accountprogram=botframework" target="_blank">Sign in to Seller Center with your Microsoft account.</a>
 
 3. Within Seller Center, connect your account with Stripe.
 

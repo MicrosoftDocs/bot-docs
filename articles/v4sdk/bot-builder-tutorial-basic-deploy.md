@@ -42,7 +42,7 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 ### Prerequisites
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - The bot from above, running on your local machine.
-- Latest version of the [Azure cli](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest).
+- Latest version of the [Azure cli](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest).
 
 ### 1. Prepare for deployment
 When you create a bot using Visual Studio or Yeoman templates, the source code generated contains a `deploymentTemplates` folder with ARM templates. The deployment process documented here uses the ARM template to provision required resources for the bot in Azure by using the Azure CLI. 

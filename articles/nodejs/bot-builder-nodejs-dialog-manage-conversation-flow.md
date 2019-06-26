@@ -338,7 +338,7 @@ After the user starts a conversation and selects either `Dinner Reservation` or 
 
 In the examples above, dialogs are closed by either using `session.endDialog` or `session.endDialogWithResult`, both of which end the dialog, remove it from the stack, and return control to the calling dialog. In situations where the user has reached the end of the conversation, you should use `session.endConversation` to indicate that the conversation is finished.
 
-The [`session.endConversation`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#endconversation) method ends a conversation and optionally sends a message to the user. For example, the `orderDinner` dialog in the previous example could end the conversation by using `session.endConversation`, as shown in the following code sample.
+The [`session.endConversation`](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#endconversation) method ends a conversation and optionally sends a message to the user. For example, the `orderDinner` dialog in the previous example could end the conversation by using `session.endConversation`, as shown in the following code sample.
 
 ```javascript
 bot.dialog('orderDinner', [
@@ -354,7 +354,7 @@ bot.dialog('orderDinner', [
 ]);
 ```
 
-Calling `session.endConversation` will end the conversation by clearing the dialog stack and resetting the [`session.conversationData`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#conversationdata) storage. For more information on data storage, see [Manage state data](bot-builder-nodejs-state.md).
+Calling `session.endConversation` will end the conversation by clearing the dialog stack and resetting the [`session.conversationData`](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#conversationdata) storage. For more information on data storage, see [Manage state data](bot-builder-nodejs-state.md).
 
 Calling `session.endConversation` is a logical thing to do when the user completes the conversation flow for which the bot is designed. You may also use `session.endConversation` to end the conversation in situations where the user enters "cancel" or "goodbye" in the midst of a conversation. To do so, simply attach an `endConversationAction` to the dialog and have this trigger listen for input matching "cancel" or "goodbye".
 
