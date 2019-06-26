@@ -127,4 +127,4 @@ bot.on("event", function (event) {
 - <a href="https://aka.ms/v3-js-backchannel-sample" target="_blank">Backchannel sample</a>
 - <a href="https://github.com/ryanvolum/backChannelBot" target="_blank">Backchannel bot</a>
 
-[directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
+[directLineAPI]: https://docs.botframework.com/restapi/directline3/#navtitle

@@ -24,7 +24,7 @@ One of the basic requirements in creating your own QnA Maker service is to seed 
 
 - The code in this article is based on the QnA Maker sample. You'll need a copy of it either in **[CSharp](https://aka.ms/cs-qna) or [JavaScript](https://aka.ms/js-qna-sample)**.
 - [QnA Maker](https://www.qnamaker.ai/) account
-- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
+- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
 
@@ -44,9 +44,9 @@ For your bot to utilize QnA Maker, you'll need to first create a knowledge base 
 The user's input is sent to your knowledgebase and the best returned answer is displayed back to your user.
 
 ## Create a QnA Maker service and publish a knowledge base
-The first step is to create a QnA Maker service. Follow the steps listed in the QnA Maker [documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) to create the service in Azure.
+The first step is to create a QnA Maker service. Follow the steps listed in the QnA Maker [documentation](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) to create the service in Azure.
 
-Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located in the CognitiveModels folder of the sample project. The steps to create, train, and publish your QnA Maker [knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base) are listed in the QnA Maker documentation. As you follow these steps, name your KB `qna`,  and use the `smartLightFAQ.tsv` file to populate your KB.
+Next, you'll create a knowledge base using the `smartLightFAQ.tsv` file located in the CognitiveModels folder of the sample project. The steps to create, train, and publish your QnA Maker [knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base) are listed in the QnA Maker documentation. As you follow these steps, name your KB `qna`,  and use the `smartLightFAQ.tsv` file to populate your KB.
 
 > Note. This article may also be used to access your own user developed QnA Maker knowledgebase.
 

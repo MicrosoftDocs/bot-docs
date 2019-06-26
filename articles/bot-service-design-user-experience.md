@@ -75,7 +75,7 @@ In other cases, a user may be **typing a specific command**. For example, a DevO
 > also eliminating the need for natural language understanding capability.
 
   
-In the case of a *knowledge base* bot or *questions and answers* bot, a user may be **asking general questions**. For example, imagine a bot that can answer questions based on the contents of thousands of documents. <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> and <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> are both technologies which are designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md).
+In the case of a *knowledge base* bot or *questions and answers* bot, a user may be **asking general questions**. For example, imagine a bot that can answer questions based on the contents of thousands of documents. <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> and <a href="https://azure.microsoft.com/services/search/" target="_blank">Azure Search</a> are both technologies which are designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md).
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from 

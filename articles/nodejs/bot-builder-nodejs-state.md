@@ -124,7 +124,7 @@ session.userdata.start = startDate.toISOString();
 
 ### Saving data
 
-Data that is created in each storage container will remain in memory until the container is saved. The Bot Framework SDK for Node.js sends data to the `ChatConnector` service in batches to be saved when there are messages to be sent. To save the data that exists in the storage containers without sending any messages, you can manually call the [`save`](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#save) method. If you do not call the `save` method, the data that exists in the storage containers will be persisted as part of the batch processing.
+Data that is created in each storage container will remain in memory until the container is saved. The Bot Framework SDK for Node.js sends data to the `ChatConnector` service in batches to be saved when there are messages to be sent. To save the data that exists in the storage containers without sending any messages, you can manually call the [`save`](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#save) method. If you do not call the `save` method, the data that exists in the storage containers will be persisted as part of the batch processing.
 
 ```javascript
 session.userData.favoriteColor = "Red";
@@ -198,9 +198,9 @@ Now that you understand how to manage user state data, let's take a look at how 
 ## Additional resources
 - [Prompt user for input](bot-builder-nodejs-dialog-prompt.md)
 
-[userDataURL]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata
-[conversationDataURL]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#conversationdata
-[privateConversationDataURL]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#privateconversationdata
-[dialogDataURL]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#dialogdata
+[userDataURL]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#userdata
+[conversationDataURL]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#conversationdata
+[privateConversationDataURL]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#privateconversationdata
+[dialogDataURL]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#dialogdata
 
-[ChatConnector]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
+[ChatConnector]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html

@@ -41,7 +41,7 @@ As an alternative to using `session.send()`, you can call the `session.say()` me
 | Parameter | Description |
 |----|----|
 | `displayText` | The text to be displayed. |
-| `speechText` | The text (in plain text or <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">SSML</a> format) to be spoken. |
+| `speechText` | The text (in plain text or <a href="https://msdn.microsoft.com/library/hh378377(v=office.14).aspx" target="_blank">SSML</a> format) to be spoken. |
 | `options` | An `IMessage` object that can contain an attachment or [input hint](bot-builder-nodejs-send-input-hints.md). |
 
 The following code example sends a message that specifies text to be displayed and text to be spoken and indicates that the bot is [ignoring user input](bot-builder-nodejs-send-input-hints.md).
@@ -56,7 +56,7 @@ Using any of the built-in prompts, you can set the options `speak` and `retrySpe
 
 ## <a id="ssml"></a> Speech Synthesis Markup Language (SSML)
 
-To specify text to be spoken by your bot, you can use either a plain text string or a string that is formatted as Speech Synthesis Markup Language (SSML), an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. For details about SSML, see <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language Reference</a>.
+To specify text to be spoken by your bot, you can use either a plain text string or a string that is formatted as Speech Synthesis Markup Language (SSML), an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. For details about SSML, see <a href="https://msdn.microsoft.com/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language Reference</a>.
 
 > [!TIP]
 > Use an <a href="https://www.npmjs.com/search?q=ssml" target="_blank">SSML library</a> to create well-formatted SSML.
@@ -71,5 +71,5 @@ For a complete sample that shows how to create a speech-enabled bot using the Bo
 
 ## Additional resources
 
-- <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
+- <a href="https://msdn.microsoft.com/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a>
 - <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill" target="_blank">Roller sample (GitHub)</a>

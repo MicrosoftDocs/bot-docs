@@ -33,7 +33,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 [3]:https://github.com/Microsoft/botbuilder-python#packages
 [3a]:https://github.com/Microsoft/botbuilder-java#packages
 [4]:https://github.com/Microsoft/botbuilder-java#packages
-[5]:https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0
+[5]:https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0
 [6]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
 [7]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs
 [8]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_typescript
@@ -97,11 +97,11 @@ the Direct Line JS client can be used in your custom application. Go to [Github]
 
 <a name="ABS-whats-new"></a>
 
-* **New! Direct Line Speech Channel**: We are bringing together the Bot Framework and Microsoft's Speech Services to provide a channel that enables streamed speech and text bi-directionally from the client to the bot application.  For more information, see how to add [speech channel to your bot](https://docs.microsoft.com/en-us/azure/bot-service/directline-speech-bot?view=azure-bot-service-4.0).
+* **New! Direct Line Speech Channel**: We are bringing together the Bot Framework and Microsoft's Speech Services to provide a channel that enables streamed speech and text bi-directionally from the client to the bot application.  For more information, see how to add [speech channel to your bot](https://docs.microsoft.com/azure/bot-service/directline-speech-bot?view=azure-bot-service-4.0).
 
-[27]:https://azure.microsoft.com/en-us/services/bot-service/
-[28]:https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
-[29]:https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0
+[27]:https://azure.microsoft.com/services/bot-service/
+[28]:https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
+[29]:https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0
 [30]:https://github.com/Microsoft/BotFramework-DirectLineJS/blob/master/README.md
 
 
@@ -117,7 +117,7 @@ The Bot Framework Emulator has released a beta of the new Bot Inspector feature.
 
 [60]:https://github.com/Microsoft/BotFramework-Emulator#readme
 [61]:https://github.com/Microsoft/BotFramework-Emulator/releases/latest
-[62]:https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0
+[62]:https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0
 
 
 ## Related Services
@@ -136,8 +136,8 @@ A machine learning-based service to build natural language experiences. Quickly 
 [18]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#readme
 [19]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#readme
 [30]:https://www.luis.ai
-[31]:https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home
-[32]:https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=csharp
+[31]:https://docs.microsoft.com/azure/cognitive-services/LUIS/Home
+[32]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=csharp
 
 ### QnA Maker
 [QnA Maker][33] is a cloud-based API service that creates a conversational, question-and-answer layer over your data. With QnA Maker, you can build, train and publish a simple question and answer bot based on FAQ URLs, structured documents, product manuals or editorial content in minutes.
@@ -152,10 +152,10 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 [33]:https://www.qnamaker.ai/
 [34]:https://aka.ms/qnamaker-docs-home
-[35]:https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
+[35]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
 
 ### Speech Services
-[Speech Services](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/) convert audio to text, perform speech translation and text-to-speech with the unified Speech services. With the speech services, you can integrate speech into your bot, create custom wake words, and author in multiple languages.
+[Speech Services](https://docs.microsoft.com/azure/cognitive-services/speech-service/) convert audio to text, perform speech translation and text-to-speech with the unified Speech services. With the speech services, you can integrate speech into your bot, create custom wake words, and author in multiple languages.
 
 ### Adaptive Cards
 [Adaptive Cards](https://adaptivecards.io) are an open standard for developers to exchange card content in a common and consistent way, and are used by Bot Framework developers to create great cross-channel conversatational experiences.
