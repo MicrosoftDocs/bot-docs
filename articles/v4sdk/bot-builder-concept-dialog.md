@@ -123,6 +123,7 @@ If the user's input isn't valid, the retry prompt is sent to the user; if there 
 
 You can validate a prompt response before returning the value to the next step of the waterfall. A validator function has a _prompt validator context_ parameter and returns a Boolean, indicating whether the input passes validation.
 The prompt validator context includes the following properties:
+
 | Property | Description |
 | :--- | :--- |
 | _Context_ | The current turn context for the bot. |
