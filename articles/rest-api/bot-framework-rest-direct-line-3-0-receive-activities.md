@@ -7,16 +7,18 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 06/13/2019
 ---
 
 # Receive activities from the bot
 
-Using the Direct Line 3.0 protocol, clients can receive activities via `WebSocket` stream or retrieve activities by issuing `HTTP GET` requests. 
+Using the Direct Line 3.0 protocol, clients can receive activities via `WebSocket` stream or retrieve activities by issuing `HTTP GET` requests.
 
 ## WebSocket vs HTTP GET
 
-A streaming WebSocket efficiently pushes messages to clients, whereas the GET interface enables clients to explicitly request messages. Although the WebSocket mechanism is often preferred due to its efficiency, the GET mechanism can be useful for clients that are unable to use WebSockets. 
+A streaming WebSocket efficiently pushes messages to clients, whereas the GET interface enables clients to explicitly request messages. Although the WebSocket mechanism is often preferred due to its efficiency, the GET mechanism can be useful for clients that are unable to use WebSockets.
+
+The service allows only 1 WebSocket connection per conversation. Direct Line may close additional WebSocket connections with a reason value of `collision`.
 
 Not all [activity types](bot-framework-rest-connector-activities.md) are available both via WebSocket and via HTTP GET. The following table describes the availability of the various activity types for clients that use the Direct Line protocol.
 

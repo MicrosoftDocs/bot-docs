@@ -130,7 +130,7 @@ The bot logic processes incoming activities from one or more channels and genera
 
 # [C#](#tab/csharp)
 
-The main bot logic is defined in the bot code, here called `Bots/EchoBot.cs`. `EchoBot` derives from `AcitivityHandler`, which in turn derives from the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
+The main bot logic is defined in the bot code, here called `Bots/EchoBot.cs`. `EchoBot` derives from `ActivityHandler`, which in turn derives from the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
 
 The handlers defined in `ActivityHandler` are:
 
@@ -175,7 +175,7 @@ public class MyBot : ActivityHandler
 
 # [JavaScript](#tab/javascript)
 
-The main bot logic is defined in the bot code, here called `bots\echoBot.js`. `EchoBot` derives from `AcitivityHandler`. `ActivityHandler` defines various handlers for different types of activities, and you can modify your bot's behavior by providing additional logic, such as with `onMessage` and `onConversationUpdate` here.
+The main bot logic is defined in the bot code, here called `bots\echoBot.js`. `EchoBot` derives from `ActivityHandler`. `ActivityHandler` defines various handlers for different types of activities, and you can modify your bot's behavior by providing additional logic, such as with `onMessage` and `onConversationUpdate` here.
 
 The handlers defined in `ActivityHandler` are:
 

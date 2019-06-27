@@ -142,7 +142,7 @@ As mentioned above, some user inputs generate a _Hero Card_ in response to their
 ### [C#](#tab/csharp)
 
 **WelcomeUserBot.cs**  
-[!code-csharp[SendHeroCardGreeting](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=107-127)]
+[!code-csharp[SendHeroCardGreeting](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=107-125)]
 
 ### [JavaScript](#tab/javascript)
 

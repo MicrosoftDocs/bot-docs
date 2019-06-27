@@ -64,6 +64,6 @@ To disable continuous deployment, do the following:
 1. Click **Disconnect** to disable continuous deployment. To re-enable continuous deployment, repeat the steps from the appropriate sections above.
 
 ## Additional resources
-- To enable continuous deployment from BitBucket and Azure DevOps Services, see  [continous deployment using Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment).
+- To enable continuous deployment from BitBucket and Azure DevOps Services, see  [continous deployment using Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment).
 
 

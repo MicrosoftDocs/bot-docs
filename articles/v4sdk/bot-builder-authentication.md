@@ -7,13 +7,13 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 <!-- Related TODO:
-- Check code in [Web Chat channel](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
-- Check guidance in [DirectLine authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
+- Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
+- Check guidance in [DirectLine authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
 -->
 
 <!-- General TODO: (Feedback from CSE (Nafis))
@@ -121,10 +121,11 @@ For information about the differences between the v1 and v2 endpoints, see the [
 Use these steps to create a new Azure AD application. You can use the v1 or v2 endpoints with the app that you create.
 
 > [!TIP]
-> You will need to create and register the Azure AD application in a tenant to which you have admin rights.
+> You will need to create and register the Azure AD application in a tenant
+> in which you can consent to delegate permissions requested by an application.
 
 1. Open the [Azure Active Directory][azure-aad-blade] panel in the Azure portal.
-    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
+    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, click **New registration**.
 1. Fill in the required fields and create the app registration.

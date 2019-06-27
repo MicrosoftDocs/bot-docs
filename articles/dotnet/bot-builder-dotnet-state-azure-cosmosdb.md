@@ -23,14 +23,14 @@ In this article, you’ll implement Azure Cosmos DB to store and manage your bot
  
 ## Prerequisites
 You'll need:
- - [Microsoft Azure Account](https://azure.microsoft.com/en-us/free/)
+ - [Microsoft Azure Account](https://azure.microsoft.com/free/)
  - [Visual Studio 2015 or later](https://www.visualstudio.com/)
  - [Bot Builder Azure NuGet Package](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure/)
  - [Autofac Web Api2 NuGet Package](https://www.nuget.org/packages/Autofac.WebApi2/)
  - [Bot Framework Emulator](~/bot-service-debug-emulator.md)
  
 ## Create Azure account
-If you don't have an Azure account, click [here](https://azure.microsoft.com/en-us/free/) to sign up for a free account.
+If you don't have an Azure account, click [here](https://azure.microsoft.com/free/) to sign up for a free account.
 
 ## Set up the Azure Cosmos DB database
 1. After you’ve logged into the Azure portal, create a new *Azure Cosmos DB* database by clicking **New**. 

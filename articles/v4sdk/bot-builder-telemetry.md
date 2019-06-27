@@ -83,7 +83,7 @@ The framework will find the key for you, if correctly formatted. Formatting of y
     }
 ```
 
-For more information on adding Application Insights to an ASP.NET Core application, see [this article](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core-no-visualstudio). 
+For more information on adding Application Insights to an ASP.NET Core application, see [this article](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core-no-visualstudio). 
 
 ### Customize your telemetry client
 

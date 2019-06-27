@@ -38,7 +38,7 @@ Often information is buried in structured data stores like SQL Server that can b
 ## IoT bot scenario
 This [Internet of Things (IoT) bot](bot-service-scenario-internet-things.md) bot makes it easy for you to control devices around your home, such as a Philips Hue light using interactive chat commands.
 
-Using this simple bot, you can control your Philips Hue lights in conjunction with the free If This Then That (IFTTT) service. As an IoT device, the Philips Hue can be controlled locally via their exposed API. However, this API is not exposed for general access from outside the local network. However, IFTTT is a "[Friend of Hue](http://www2.meethue.com/en-us/friends-of-hue/ifttt/)" and thus has exposed a number of control commands that you can issue such as turning lights on and off, changing the light color, or the light intensity.
+Using this simple bot, you can control your Philips Hue lights in conjunction with the free If This Then That (IFTTT) service. As an IoT device, the Philips Hue can be controlled locally via their exposed API. However, this API is not exposed for general access from outside the local network. However, IFTTT is a "[Friend of Hue](http://www2.meethue.com/friends-of-hue/ifttt/)" and thus has exposed a number of control commands that you can issue such as turning lights on and off, changing the light color, or the light intensity.
 
 ## Next steps
 Now that you have an overview of the scenarios, dive deeper into each scenario.

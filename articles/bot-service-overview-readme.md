@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-3.0'
 Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the Bot Framework for connecting bots to channels. Bot Service provides five templates you can choose from when creating your bots with support for .NET and Node.js.
 
 > [!IMPORTANT]
-> You must have a Microsoft Azure subscription before you can use Bot Service. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>.
+> You must have a Microsoft Azure subscription before you can use Bot Service. If you do not already have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
 
 ## Hosting plans
 Bot Service provides two hosting plans for your bots. You can choose a hosting plan that suits your needs.

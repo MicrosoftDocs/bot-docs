@@ -61,7 +61,7 @@ How this is achieved can vary greatly, from individually using different channel
 
 ### Other testing
 
-Different types of testing can be done in conjunction with the above levels or from different angles, such as stress testing, performance testing, or profiling your bot’s activity. Visual studio provides methods to do this locally as well as a [suite of tools](https://azure.microsoft.com/en-us/solutions/dev-test/) for testing your app, and the [Azure portal](https://portal.azure.com) provides insight into how your bot is performing.
+Different types of testing can be done in conjunction with the above levels or from different angles, such as stress testing, performance testing, or profiling your bot’s activity. Visual studio provides methods to do this locally as well as a [suite of tools](https://azure.microsoft.com/solutions/dev-test/) for testing your app, and the [Azure portal](https://portal.azure.com) provides insight into how your bot is performing.
 
 ## Debugging
 
@@ -101,7 +101,7 @@ For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain 
 
 Keeping track of state is an important part of your bot, particularly for complex tasks. In general, best practice is to process activities as quickly as possible and let the processing complete so that state gets persisted. Activities can be sent to your bot at nearly the same time, and that can introduce very confusing bugs because of the asynchronous architecture.
 
-Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator) and [Azure Table storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
+Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/local-emulator) and [Azure Table storage](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
 
 ### How to use activity handlers
 
@@ -113,9 +113,9 @@ The _send activity_ method, and its handlers, pose a unique problem. Simply call
 
 ## Additional resources
 
-* [Debugging in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/index)
-* [Debugging, Tracing, and Profiling](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/) for the bot framework
-* Use the [ConditionalAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code
+* [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/index)
+* [Debugging, Tracing, and Profiling](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/) for the bot framework
+* Use the [ConditionalAttribute](https://docs.microsoft.com/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code
 * Use tools like [Fiddler](https://www.telerik.com/fiddler) to see network traffic
 * [Bot tools repo](https://github.com/Microsoft/botbuilder-tools)
 * Frameworks can help with testing, such as [Moq](https://github.com/moq/moq4)

@@ -21,7 +21,7 @@ The ability to understand what your user means conversationally and contextually
 ## Prerequisites
 - [LUIS](https://www.luis.ai) account
 - The code in this article is based on the **Core Bot** sample. You'll need a copy of the sample in either **[CSharp](https://aka.ms/cs-core-sample) or [JavaScript](https://aka.ms/js-core-sample)**. 
-- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
+- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
 
@@ -65,8 +65,8 @@ Sign in to the LUIS portal to create your own version of the sample LUIS app. Yo
 1. Select **Import new app**. 
 1. Click **Choose App file (JSON format)...** 
 1. Select `FlightBooking.json` file located in the `CognitiveModels` folder of the sample. In the **Optional Name**, enter **FlightBooking**. This file contains three intents: 'Book Flight', 'Cancel', and 'None'. We'll use these intents to understand what the user meant when they send a message to the bot.
-1. [Train](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-train) the app.
-1. [Publish](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/publishapp) the app to *production* environment.
+1. [Train](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-train) the app.
+1. [Publish](https://docs.microsoft.com/azure/cognitive-services/LUIS/publishapp) the app to *production* environment.
 
 ### Why use entities
 LUIS entities allow your bot to intelligently understand certain things or events that are different than the standard intents. This enables you to gather extra information from the user, which lets your bot respond more intelligently or possibly skip certain questions where it asks the user for that information. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None' the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
@@ -98,7 +98,7 @@ Add the information required to access your LUIS app including application id, a
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
-**.env**
+**.env**  
 [!code[env](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
 ---

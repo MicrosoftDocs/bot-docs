@@ -338,7 +338,7 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [BFPortal]: https://dev.botframework.com/
 
 [SSMLRef]: https://aka.ms/cortana-ssml
-[CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
+[CortanaDevCenter]: https://developer.microsoft.com/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
 [CortanaAuth]: https://aka.ms/vsdqcj

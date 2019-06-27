@@ -48,7 +48,7 @@ We will import an existing knowledge base definition from the QnA Maker sample i
 
 1. Clone or copy the samples repo to your computer.
 1. In the QnA Maker portal, **create a knowledge base**.
-   1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+   1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
    1. Connect your QnA service to your knowledge base.
    1. Name your knowledge base.
    1. To populate your knowledge base, use the **BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker\CognitiveModels\smartLightFAQ.tsv** file from the samples repo.
@@ -71,7 +71,7 @@ These values will be used within your `appsettings.json` or `.env` file in the n
 The knowledge base is now ready for your bot to use.
 
 ## Add knowledge base information to your bot
-Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp or JavaScript bot to your knowledgebase.
+Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp or JavaScript bot to your knowledge base.
 
 ## [C#](#tab/csharp)
 
@@ -120,17 +120,30 @@ Update your initialization code to load the service information for your knowled
 ## [C#](#tab/csharp)
 
 1. Add the **Microsoft.Bot.Builder.AI.QnA** NuGet package to your project.
+
+   You can do this via the NuGet Package Manager or the command line:
+
+   ```cmd
+   dotnet add package Microsoft.Bot.Builder.AI.QnA
+   ```
+
+   For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
+
 1. Add the **Microsoft.Extensions.Configuration** NuGet package to your project.
+
 1. In your **Startup.cs** file, add these namespace references.
 
    **Startup.cs**
+
    ```csharp
    using Microsoft.Bot.Builder.AI.QnA;
    using Microsoft.Extensions.Configuration;
    ```
+
 1. And, modify the _ConfigureServices_ method create a QnAMakerEndpoint that connects to the knowledge base defined in the **appsettings.json** file.
 
    **Startup.cs**
+
    ```csharp
    // Create QnAMaker endpoint as a singleton
    services.AddSingleton(new QnAMakerEndpoint
@@ -141,9 +154,11 @@ Update your initialization code to load the service information for your knowled
     });
 
    ```
+
 1. In your **EchoBot.cs** file, add these namespace references.
 
    **EchoBot.cs**
+
    ```csharp
    using System.Linq;
    using Microsoft.Bot.Builder.AI.QnA;
@@ -152,6 +167,7 @@ Update your initialization code to load the service information for your knowled
 1. Add a `EchoBotQnA` connector and initialize it in the bot's constructor.
 
    **EchoBot.cs**
+
    ```csharp
    public QnAMaker EchoBotQnA { get; private set; }
    public EchoBot(QnAMakerEndpoint endpoint)
@@ -160,9 +176,11 @@ Update your initialization code to load the service information for your knowled
       EchoBotQnA = new QnAMaker(endpoint);
    }
    ```
+
 1. Below the _OnMembersAddedAsync( )_ method create the method _AccessQnAMaker( )_ by adding the following code:
 
    **EchoBot.cs**
+
    ```csharp
    private async Task AccessQnAMaker(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
@@ -177,13 +195,15 @@ Update your initialization code to load the service information for your knowled
       }
    }
    ```
+
 1. Now within _OnMessageActivityAsync( )_ call your new method _AccessQnAMaker( )_ as follows:
 
    **EchoBot.cs**
+
    ```csharp
    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
-      // First send the user input to your QnA Maker knowledgebase
+      // First send the user input to your QnA Maker knowledge base
       await AccessQnAMaker(turnContext, cancellationToken);
       ...
    }
@@ -201,7 +221,7 @@ Update your initialization code to load the service information for your knowled
 
    **index.js**
    ```javascript
-   // Map knowledgebase endpoint values from .env file into the required format for `QnAMaker`.
+   // Map knowledge base endpoint values from .env file into the required format for `QnAMaker`.
    const configuration = {
       knowledgeBaseId: process.env.QnAKnowledgebaseId,
       endpointKey: process.env.QnAAuthKey,
@@ -237,24 +257,29 @@ Update your initialization code to load the service information for your knowled
             this.qnaMaker = new QnAMaker(configuration, qnaOptions);
    ```
 
-1. Finally, add the following code to your onMessage( ) call that passes each user input to your QnA Maker knowledgebase and returns the QnA Maker response back to the user to query your knowledge bases for an answer.
- 
-    **bot.js**
-    ```javascript
-   // send user input to QnA Maker.
-   const qnaResults = await this.qnaMaker.getAnswers(turnContext);
+1. Finally, update your your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
 
-   // If an answer was received from QnA Maker, send the answer back to the user.
-   if (qnaResults[0]) {
-      await turnContext.sendActivity(`QnAMaker returned response: ' ${ qnaResults[0].answer}`);
-   } 
-   else { 
-      // If no answers were returned from QnA Maker, reply with help.
-      await turnContext.sendActivity('No QnA Maker response was returned.'
-           + 'This example uses a QnA Maker Knowledge Base that focuses on smart light bulbs. '
-           + `Ask the bot questions like "Why won't it turn on?" or "I need help."`);
-   }
-   ```
+    **bot.js**
+
+    ```javascript
+    this.onMessage(async (context, next) => {
+        // send user input to QnA Maker.
+        const qnaResults = await this.qnaMaker.getAnswers(context);
+
+        // If an answer was received from QnA Maker, send the answer back to the user.
+        if (qnaResults[0]) {
+            await context.sendActivity(`QnAMaker returned response: ' ${ qnaResults[0].answer}`);
+        }
+        else {
+            // If no answers were returned from QnA Maker, reply with help.
+            await context.sendActivity('No QnA Maker response was returned.'
+                + 'This example uses a QnA Maker Knowledge Base that focuses on smart light bulbs. '
+                + `Ask the bot questions like "Why won't it turn on?" or "I need help."`);
+        }
+        await next();
+    });
+    ```
+
 ---
 
 ### Test the bot locally
