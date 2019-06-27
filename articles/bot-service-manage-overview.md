@@ -8,9 +8,11 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 12/13/2017
+ms.date: 4/13/2019
 ---
 # Manage a bot
+
+[!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
 This topic explains how to manage a bot using the Azure portal.
 
@@ -40,17 +42,11 @@ In the **Overview** blade, you can find high level information about your bot. F
 
 ![App Service Settings](~/media/azure-manage-a-bot/app-service-settings.png)
 
-The **Application Settings** blade contains detailed information about your bot, such as the bot's environment, debug settings, and application settings keys such as botFilePath and botFileSecret.
+The **Application Settings** blade contains detailed information about your bot, such as the bot's environment, debug settings, and application settings keys.
 
 ### MicrosoftAppID and MicrosoftAppPassword
 
-The **MicrosoftAppID** and **MicrosoftAppPassword** are kept within the bot's `.bot` file. To retrieve them, download the bot file and decrypt it, which may be necessary for you to test locally with the ID and password.
-
-### Bot file path and secret
-
-You can find the **botFilePath** and the **botFileSecret** for your bot in the **Application settings** blade.
-
-![Microsoft bot file path and secret](~/media/azure-manage-a-bot/app-settings.png)
+The **MicrosoftAppID** and **MicrosoftAppPassword** are kept within the bot's settings file(`appsettings.json` or `.env`), or Azure Key Vault. To retrieve them, either download your bot's setting or config file (for older bots, if it exists), or access Azure Key Vault. It may be necessary for you to test locally with the ID and password.
 
 > [!NOTE]
 > The **Bot Channels Registration** bot service comes with a *MicrosoftAppID* but because there is no app service associated with this type of service, there is no **Application Settings** blade for you to look up the *MicrosoftAppPassword*. To get the password, you must go generate one. To generate the password for a **Bot Channels Registration**, see [Bot Channels Registration password](bot-service-quickstart-registration.md#bot-channels-registration-password)

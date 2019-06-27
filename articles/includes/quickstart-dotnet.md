@@ -1,13 +1,13 @@
 ## Prerequisites
-- Visual Studio [2017](https://www.visualstudio.com/downloads)
-- Bot Framework SDK v4 template for [C#](https://aka.ms/bot-vsix)
-- Bot Framework [Emulator](https://aka.ms/Emulator-wiki-getting-started)
-- Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and asynchronous programming in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
+- Visual Studio [2017 or later](https://www.visualstudio.com/downloads)
+- Bot Framework SDK v4 [template for C#](https://aka.ms/bot-vsix)
+- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/index)
 
 ## Create a bot
 Install BotBuilderVSIX.vsix template that you downloaded in the prerequisites section.
 
-In Visual Studio, create a new bot project using the **Bot Framework Echo Bot** V4 template.
+In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4)** template.
 
 ![Visual Studio project](~/media/azure-bot-quickstarts/bot-builder-dotnet-project.png)
 
@@ -24,8 +24,9 @@ When you click the run button, Visual Studio will build the application, deploy 
 
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click the **Open Bot** link in the emulator "Welcome" tab. 
-2. Select the .bot file located in the directory where you created the Visual Studio solution.
+1. Click the **Create a new bot configuration** link in the emulator "Welcome" tab. 
+2. Fill out the fields for your bot. Use your bot's welcome page address (typically http://localhost:3978) and append routing info '/api/messages' to this address.
+3. then click **Save and connect**.
 
 ## Interact with your bot
 

@@ -61,3 +61,7 @@ In a separate window, return to the Bot Framework site at https://dev.botframewo
 ![Submit credentials](~/media/channels/twi-StepSubmit.png)
 
 When you have completed these steps, your bot will be successfully configured to communicate with users using Twilio.
+
+## Also available as an adapter
+
+This channel is also [available as an adapter](https://botkit.ai/docs/v4/platforms/twilio-sms.html). To help you choose between an adapter and a channel, see [Currently available adapters](bot-service-channel-additional-channels.md#currently-available-adapters).

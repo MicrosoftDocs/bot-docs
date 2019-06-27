@@ -19,13 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="">
-      <AttributeName>Serializable</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>

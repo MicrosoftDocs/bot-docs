@@ -30,6 +30,8 @@ When connecting your bot with the Cortana channel, some basic information about 
 
 ![Default settings](~/media/channels/cortana-defaultsettings.png)
 
+>!NOTE: Cortana does not currently support the use of Azure Active Directory (AAD) Account authentication. You will need to use a Microsoft Account (MSA) to successfully publish your bot to Cortana.
+
 ## General bot information
 
 Under the **Manage user identity through connected services section** press the option to enable it. Fill in the form.
@@ -99,11 +101,10 @@ At this point your bot is deployed as a Cortana skill to your account.
 
 ## Next steps
 
-* [Cortana Skills Kit](https://aka.ms/CortanaSkillsDocs)
+* [Cortana Skills Kit](https://aka.ms/CortanaSkillsKitOverview)
 * [Enable debugging](bot-service-debug-cortana-skill.md)
 * [Publish a Cortana skill][publish]
 
 [invocation]: https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines
 [publish]: https://docs.microsoft.com/en-us/cortana/skills/publish-skill
-[connected]: https://aka.ms/CortanaSkillsBotConnectedAccount
 [CortanaEntity]: https://aka.ms/lgvcto

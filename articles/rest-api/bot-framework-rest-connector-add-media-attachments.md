@@ -53,7 +53,7 @@ Content-Type: application/json
     "attachments": [
         {
             "contentType": "image/png",
-            "contentUrl": "http://aka.ms/Fo983c",
+            "contentUrl": "https://aka.ms/DuckOnARock",
             "name": "duck-on-a-rock.jpg"
         }
     ],

@@ -18,9 +18,6 @@ ms.date: 12/13/2017
 
 [!INCLUDE [Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)]
 
-> [!TIP]
-> To learn how various channels render suggested actions, see the [Channel Inspector][channelInspector].
-
 ## Send suggested actions
 
 To add suggested actions to a message, set the `suggestedActions` property of the [Activity][Activity] to specify the list of [CardAction][CardAction] objects that represent the buttons to be presented to the user. 

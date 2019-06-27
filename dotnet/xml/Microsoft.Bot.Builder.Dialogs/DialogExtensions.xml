@@ -1,0 +1,50 @@
+﻿<Type Name="DialogExtensions" FullName="Microsoft.Bot.Builder.Dialogs.DialogExtensions">
+  <TypeSignature Language="C#" Value="public static class DialogExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DialogExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DialogExtensions" />
+  <TypeSignature Language="F#" Value="type DialogExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RunAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RunAsync (this Microsoft.Bot.Builder.Dialogs.Dialog dialog, Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.IStatePropertyAccessor&lt;Microsoft.Bot.Builder.Dialogs.DialogState&gt; accessor, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RunAsync(class Microsoft.Bot.Builder.Dialogs.Dialog dialog, class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.IStatePropertyAccessor`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogState&gt; accessor, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogExtensions.RunAsync(Microsoft.Bot.Builder.Dialogs.Dialog,Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.IStatePropertyAccessor{Microsoft.Bot.Builder.Dialogs.DialogState},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member RunAsync : Microsoft.Bot.Builder.Dialogs.Dialog * Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.IStatePropertyAccessor&lt;Microsoft.Bot.Builder.Dialogs.DialogState&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.DialogExtensions.RunAsync (dialog, turnContext, accessor, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialog" Type="Microsoft.Bot.Builder.Dialogs.Dialog" RefType="this" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="accessor" Type="Microsoft.Bot.Builder.IStatePropertyAccessor&lt;Microsoft.Bot.Builder.Dialogs.DialogState&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialog">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="accessor">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

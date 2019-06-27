@@ -13,7 +13,7 @@ ms.date: 2/26/2019
 
 # Debug a bot
 
-This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md) and [JS](~/javascript/bot-builder-javascript-quickstart.md) bot created in the quickstart.
+This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C# bot](~/dotnet/bot-builder-dotnet-sdk-quickstart.md) or [Javascript bot](~/javascript/bot-builder-javascript-quickstart.md) created in the quickstart.
 
 ## Prerequisites 
 - Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
@@ -26,7 +26,7 @@ To run a JavaScript bot using the command line and testing the bot with the emul
 1. Start the bot by running the command **node app.js**.
 1. Start the emulator and connect to the bot's endpoint (e.g.: **http://localhost:3978/api/messages**). If this is the first time you are running 
 the bot then click **File > New Bot** and follow the instructions on screen. Otherwise, click **File > Open Bot** to open an existing bot. 
-Since this bot is running locally on your computer, you can leave the **MSA app ID** and **MSA app password** fileds blank. 
+Since this bot is running locally on your computer, you can leave the **MicrosoftAppId** and **MicrosoftAppPassword** fields blank. 
 For more information, see [Debug with the Emulator](bot-service-debug-emulator.md).
 1. From the emulator, send your bot a message (e.g.: send the message "Hi"). 
 1. Use the **Inspector** and **Log** panels on the right side of the emulator window to debug your bot. For example, clicking on any of the messages bubble (e.g.: the "Hi" message bubble in the screenshot below) will show you the detail of that message in the **Inspector** panel. You can use it to view requests and responses as messages are exchanged between the emulator and the bot. Alternatively, you can click on any of the linked text in the **Log** panel to view the details in the **Inspector** panel.
@@ -134,7 +134,7 @@ Additionally, you can view log details in the console window.
 ## Additional resources
 
 - See [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
-- See the how to [debug any channel locally using ngrok](https://blog.botframework.com/2017/10/19/debug-channel-locally-using-ngrok/) blog post.
+- See the how to [Debug with the Emulator](bot-service-debug-emulator.md).
 
 ## Next steps
 

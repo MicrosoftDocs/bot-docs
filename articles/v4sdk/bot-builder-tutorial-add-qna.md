@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 04/18/2019
+ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,20 +22,19 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 > * Create a QnA Maker service and knowledge base
-> * Add knowledge base information to your .bot file
+> * Add knowledge base information to your configuration file
 > * Update your bot to query the knowledge base
-> * Re-publish your bot
+> * Republish your bot
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
 * The bot created in the [previous tutorial](bot-builder-tutorial-basic-deploy.md). We will add a question-and-answer feature to the bot.
-* Some familiarity with QnA Maker is helpful. We will use the QnA Maker portal to create, train, and publish the knowledge base to use with the bot.
+* Some familiarity with [QnA Maker](https://qnamaker.ai/) is helpful. We will use the QnA Maker portal to create, train, and publish the knowledge base to use with the bot.
+* familiarity with [QnA bot creation](https://aka.ms/azure-create-qna) using Azure Bot Service.
 
-You should also already have these prerequisites for the previous tutorial:
-
-[!INCLUDE [deployment prerequisites snippet](~/includes/deploy/snippet-prerequisite.md)]
+You should also already have the prerequisites for the previous tutorial.
 
 ## Sign in to QnA Maker portal
 
@@ -48,7 +47,7 @@ Sign into to the [QnA Maker portal](https://qnamaker.ai/) with your Azure creden
 We will import an existing knowledge base definition from the QnA Maker sample in the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repo.
 
 1. Clone or copy the samples repo to your computer.
-1. In the QnA Maker portal, **Create a knowledge base**.
+1. In the QnA Maker portal, **create a knowledge base**.
    1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
    1. Connect your QnA service to your knowledge base.
    1. Name your knowledge base.
@@ -57,83 +56,109 @@ We will import an existing knowledge base definition from the QnA Maker sample i
 1. **Save and train** your knowledge base.
 1. **Publish** your knowledge base.
 
-   The knowledge base is now ready for your bot to use. Record the knowledge base ID, endpoint key, and hostname. You'll need these for the next step.
+Once your QnA Maker app is published, select the _SETTINGS_ Tab, and scroll down to 'Deployment details'. Record the following values from the _Postman_ Sample HTTP request.
+
+```text
+POST /knowledgebases/<knowledge-base-id>/generateAnswer
+Host: <your-hostname>  // NOTE - this is a URL ending in /qnamaker.
+Authorization: EndpointKey <qna-maker-resource-key>
+```
+
+The full URL string for your hostname will look like "https://< >.azure.net/qnamaker".
+
+These values will be used within your `appsettings.json` or `.env` file in the next step.
+
+The knowledge base is now ready for your bot to use.
 
 ## Add knowledge base information to your bot
-Beginning with bot framwork v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp or JavaScript bot to your knowledgebase.
+Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp or JavaScript bot to your knowledge base.
 
-## [C#](#tab/csharp)
+# [C#](#tab/csharp)
 
 Add the following values to you appsetting.json file:
 
 ```json
 {
-   "MicrosoftAppId": "",
+  "MicrosoftAppId": "",
   "MicrosoftAppPassword": "",
   "ScmType": "None",
-
-  "kbId": "<your-knowledge-base-id>",
-  "endpointKey": "<your-knowledge-base-endpoint-key>",
-  "hostname": "<your-qna-service-hostname>" // This is a URL
+  
+  "QnAKnowledgebaseId": "<knowledge-base-id>",
+  "QnAAuthKey": "<qna-maker-resource-key>",
+  "QnAEndpointHostName": "<your-hostname>" // This is a URL ending in /qnamaker
 }
 ```
 
-## [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
-Add the following values to you .env file:
+Add the following values to your .env file:
 
-```javascript
+```
 MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
 
-kbId="<your-knowledge-base-id>"
-endpointKey="<your-knowledge-base-endpoint-key>"
-hostname="<your-qna-service-hostname>" // This is a URL
-
+QnAKnowledgebaseId="<knowledge-base-id>"
+QnAAuthKey="<qna-maker-resource-key>"
+QnAEndpointHostName="<your-hostname>" // This is a URL ending in /qnamaker
 ```
 
 ---
 
-    | Field | Value |
-    |:----|:----|
-    | kbId | The knowledge base ID that the QnA Maker portal generated for you. |
-    | endpointKey | The endpoint key that the QnA Maker portal generated for you. |
-    | hostname | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. |
+| Field | Value |
+|:----|:----|
+| QnAKnowledgebaseId | The knowledge base ID that the QnA Maker portal generated for you. |
+| QnAAuthKey | The endpoint key that the QnA Maker portal generated for you. |
+| QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |
 
-Now Save your edits.
+Now save your edits.
 
 ## Update your bot to query the knowledge base
 
 Update your initialization code to load the service information for your knowledge base.
 
-## [C#](#tab/csharp)
+# [C#](#tab/csharp)
 
 1. Add the **Microsoft.Bot.Builder.AI.QnA** NuGet package to your project.
-1. Add the **Microsoft.Extensions.Configuration** NuGet package to your project.
-1. In your **startup.cs** file, add these namespace references.
 
-   **startup.cs**
-   ```csharp
-       using Microsoft.Bot.Builder.AI.QnA;
-       using Microsoft.Extensions.Configuration;
+   You can do this via the NuGet Package Manager or the command line:
+
+   ```cmd
+   dotnet add package Microsoft.Bot.Builder.AI.QnA
    ```
-1. And, modify the _ConfigureServices_ method create a QnAMkaerEndpoint that connects to the knowledge base defined in the **appsettings.json** file.
 
-   **startup.cs**
+   For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
+
+1. Add the **Microsoft.Extensions.Configuration** NuGet package to your project.
+
+1. In your **Startup.cs** file, add these namespace references.
+
+   **Startup.cs**
+
+   ```csharp
+   using Microsoft.Bot.Builder.AI.QnA;
+   using Microsoft.Extensions.Configuration;
+   ```
+
+1. And, modify the _ConfigureServices_ method create a QnAMakerEndpoint that connects to the knowledge base defined in the **appsettings.json** file.
+
+   **Startup.cs**
+
    ```csharp
    // Create QnAMaker endpoint as a singleton
    services.AddSingleton(new QnAMakerEndpoint
    {
-      KnowledgeBaseId = Configuration.GetValue<string>($"kbId"),
-      EndpointKey = Configuration.GetValue<string>($"endpointKey"),
-      Host = Configuration.GetValue<string>($"hostname")
+      KnowledgeBaseId = Configuration.GetValue<string>($"QnAKnowledgebaseId"),
+      EndpointKey = Configuration.GetValue<string>($"QnAAuthKey"),
+      Host = Configuration.GetValue<string>($"QnAEndpointHostName")
     });
 
    ```
+
 1. In your **EchoBot.cs** file, add these namespace references.
 
    **EchoBot.cs**
+
    ```csharp
    using System.Linq;
    using Microsoft.Bot.Builder.AI.QnA;
@@ -142,6 +167,7 @@ Update your initialization code to load the service information for your knowled
 1. Add a `EchoBotQnA` connector and initialize it in the bot's constructor.
 
    **EchoBot.cs**
+
    ```csharp
    public QnAMaker EchoBotQnA { get; private set; }
    public EchoBot(QnAMakerEndpoint endpoint)
@@ -153,6 +179,7 @@ Update your initialization code to load the service information for your knowled
 1. Below the _OnMembersAddedAsync( )_ method create the method _AccessQnAMaker( )_ by adding the following code:
 
    **EchoBot.cs**
+
    ```csharp
    private async Task AccessQnAMaker(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
@@ -167,19 +194,21 @@ Update your initialization code to load the service information for your knowled
       }
    }
    ```
+
 1. Now within _OnMessageActivityAsync( )_ call your new method _AccessQnAMaker( )_ as follows:
 
    **EchoBot.cs**
+
    ```csharp
    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
-      // First send the user input to your QnA Maker knowledgebase
+      // First send the user input to your QnA Maker knowledge base
       await AccessQnAMaker(turnContext, cancellationToken);
       ...
    }
    ```
 
-## [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 1. Open a terminal or command prompt to the root directory for your project.
 1. Add the **botbuilder-ai** npm package to your project.
@@ -191,21 +220,21 @@ Update your initialization code to load the service information for your knowled
 
    **index.js**
    ```javascript
-   // Map knowledgebase endpoint values from .env file into the required format for `QnAMaker`.
+   // Map knowledge base endpoint values from .env file into the required format for `QnAMaker`.
    const configuration = {
-      knowledgeBaseId: process.env.kbId,
-      endpointKey: process.env.endpointKey,
-      host: process.env.hostname
+      knowledgeBaseId: process.env.QnAKnowledgebaseId,
+      endpointKey: process.env.QnAAuthKey,
+      host: process.env.QnAEndpointHostName
    };
 
    ```
 
-1. Update the bot construction to pass in the QnA servicesconfiguration information.
+1. Update the bot construction to pass in the QnA services configuration information.
 
    **index.js**
    ```javascript
    // Create the main dialog.
-   const myBot = new MyBot(configuration, {}, logger);
+   const myBot = new MyBot(configuration, {});
    ```
 
 1. In your **bot.js** file, add this require for QnAMaker
@@ -227,24 +256,30 @@ Update your initialization code to load the service information for your knowled
             this.qnaMaker = new QnAMaker(configuration, qnaOptions);
    ```
 
-1. Finally, add the following code to your onMessage( ) call that passes each user input to your QnA Maker knowledgebase and returns the QnA Maker response back to the user.  to query your knowledge bases for an answer.
- 
-    **bot.js**
-    ```javascript
-   // send user input to QnA Maker.
-   const qnaResults = await this.qnaMaker.getAnswers(turnContext);
 
-   // If an answer was received from QnA Maker, send the answer back to the user.
-   if (qnaResults[0]) {
-      await turnContext.sendActivity(`QnAMaker returned response: ' ${ qnaResults[0].answer}`);
-   } 
-   else { 
-      // If no answers were returned from QnA Maker, reply with help.
-      wait turnContext.sendActivity('No QnA Maker response was returned.'
-           + 'This example uses a QnA Maker Knowledge Base that focuses on smart light bulbs. '
-           + `Ask the bot questions like "Why won't it turn on?" or "I need help."`);
-   }
-   ```
+1. Finally, update your your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
+
+    **bot.js**
+
+    ```javascript
+    this.onMessage(async (context, next) => {
+        // send user input to QnA Maker.
+        const qnaResults = await this.qnaMaker.getAnswers(context);
+
+        // If an answer was received from QnA Maker, send the answer back to the user.
+        if (qnaResults[0]) {
+            await context.sendActivity(`QnAMaker returned response: ' ${ qnaResults[0].answer}`);
+        }
+        else {
+            // If no answers were returned from QnA Maker, reply with help.
+            await context.sendActivity('No QnA Maker response was returned.'
+                + 'This example uses a QnA Maker Knowledge Base that focuses on smart light bulbs. '
+                + `Ask the bot questions like "Why won't it turn on?" or "I need help."`);
+        }
+        await next();
+    });
+    ```
+
 ---
 
 ### Test the bot locally
@@ -253,15 +288,25 @@ At this point your bot should be able to answer some questions. Run the bot loca
 
 ![test qna sample](./media/qna-test-bot.png)
 
-## Re-publish your bot
+## Republish your bot
 
 We can now republish your bot back to Azure.
 
-## [C#](#tab/csharp)
+> [!IMPORTANT]
+> Before creating a zip of your project files, make sure that you are _in_ the correct folder. 
+> - For C# bots, it is the folder that has the .csproj file. 
+> - For JS bots, it is the folder that has the app.js or index.js file. 
+>
+> Select all the files and zip them up while in that folder, then run the command while still in that folder.
+>
+> If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
-[!INCLUDE [publish snippet](~/includes/deploy/snippet-publish.md)]
+# [C#](#tab/csharp)
+```cmd
+az webapp deployment source config-zip --resource-group <resource-group-name> --name <bot-name-in-azure> --src "c:\bot\mybot.zip"
+```
 
-## [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 [!INCLUDE [publish snippet](~/includes/deploy/snippet-publish-js.md)]
 
@@ -271,9 +316,8 @@ We can now republish your bot back to Azure.
 
 After you publish the bot, give Azure a minute or two to update and start the bot.
 
-1. Use the Emulator to test the production endpoint for your bot, or use the Azure portal to test the bot in Web Chat.
-
-   In either case, you should see the same behavior as you did when you tested it locally.
+Use the Emulator to test the production endpoint for your bot, or use the Azure portal to test the bot in Web Chat.
+In either case, you should see the same behavior as you did when you tested it locally.
 
 ## Clean up resources
 
@@ -288,6 +332,6 @@ the associated resources with the following steps:
 
 ## Next steps
 
-For information on how to add features to your bot, see the articles in the how-to develop section.
+For information on how to add features to your bot, see the **Send and receive text message** article and the other articles in the how-to develop section.
 > [!div class="nextstepaction"]
-> [Next steps button](bot-builder-howto-send-messages.md)
+> [Send and receive text message](bot-builder-howto-send-messages.md)

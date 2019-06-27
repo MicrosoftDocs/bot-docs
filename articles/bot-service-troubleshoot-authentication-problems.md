@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/26/2019
+ms.date: 04/30/2019
 ---
 
 # Troubleshooting Bot Framework authentication
@@ -14,7 +14,7 @@ ms.date: 02/26/2019
 This guide can help you to troubleshoot authentication issues with your bot by evaluating a series of scenarios to determine where the problem exists. 
 
 > [!NOTE]
-> To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
+> To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
 
 ## <a id="PW"></a> App ID and password
 
@@ -60,15 +60,11 @@ var connector = new builder.ChatConnector({
 
 ::: moniker range="azure-bot-service-4.0"
 
-If you're using the Bot Framework SDK for .NET, edit the settings in your `.bot` file:
+If you're using the Bot Framework SDK for .NET, edit the settings in your `appsettings.json` file:
 
 ```json
-"services": [
-  {
-    "appId": "<your app ID>",
-    "appPassword": "<your app password>",
-  }
-]
+  "MicrosoftAppId": "<your app ID>",
+  "MicrosoftAppPassword": "<your app password>"
 ```
 
 If you're using the Bot Framework SDK for Node.js, edit these values (or update the corresponding environment variables):
@@ -79,8 +75,6 @@ const adapter = new BotFrameworkAdapter({
     appPassword: null
 });
 ```
-
-If using the `.bot` file for configuration, you can update the `appId` and `appPassword` to `""`.
 
 ::: moniker-end
 
@@ -143,7 +137,7 @@ At this point, you have verified that your bot is accessible and functional on l
 
 Your bot's security relies on Microsoft services, even when your bot is running only on localhost. To enable security for your bot, edit its configuration settings to populate app ID and password with the values that you verified in [Step 2](#step-2).  Additionally, make sure your packages are up to date, specifically `System.IdentityModel.Tokens.Jwt` and `Microsoft.IdentityModel.Tokens`.
 
-If you're using the Bot Framework SDK for .NET, populate these settings in your `appsettings.config` or the corresponding values in your `.bot` file:
+If you're using the Bot Framework SDK for .NET, populate these settings in your `appsettings.config` or the corresponding values in your `appsettings.json` file:
 
 ```xml
 <appSettings>
@@ -195,7 +189,7 @@ At this point, you have verified that your bot is accessible and functional on l
 The Bot Framework requires that bots be accessible from the internet, so you must deploy your bot to a cloud hosting platform such as Azure. Be sure to enable security for your bot prior to deployment, as described in [Step 3](#step-3).
 
 > [!NOTE]
-> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/en-us/free/" target="_blank">free account</a>.. 
+> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.. 
 
 If you deploy your bot to Azure, SSL will automatically be configured for your application, thereby enabling the **HTTPS** endpoint that the Bot Framework requires. If you deploy to another cloud hosting provider, be sure to verify that your application is configured for SSL so that the bot will have an **HTTPS** endpoint.
 
@@ -204,7 +198,7 @@ If you deploy your bot to Azure, SSL will automatically be configured for your a
 To test your bot in the cloud with security enabled, complete the following steps.
 
 1. Ensure that your bot has been successfully deployed and is running. 
-2. Sign in to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
+2. Sign in to the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
 3. Click **My Bots**.
 4. Select the bot that you want to test.
 5. Click **Test** to open the bot in an embedded web chat control.
@@ -223,7 +217,7 @@ If the bot responds appropriately to the input, you have verified that your bot 
 If you are still experiencing issues after completing the steps above, you can:
 
 * Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
-* [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a>.
+* [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a> tunnelling software. *ngrok is not a Microsoft product.*
 * Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
 * Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
 * Solicit help from others by using the Bot Framework [support][Support] resources. 

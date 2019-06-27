@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 04/10/2019    
 ---
 
 # Authentication
@@ -54,6 +54,26 @@ The following snippets provide an example of the Generate Token request and resp
 POST https://directline.botframework.com/v3/directline/tokens/generate
 Authorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0
 ```
+
+The request payload, which contains the token parameters, is optional but recommended. When generating a token that can be sent back to the Direct Line service, provide the following payload to make the connection more secure. By including these values, Direct Line can perform additional security validation of the user ID and name, inhibiting tampering of these values by malicious clients. Including these values also improves Direct Line's ability to send the _conversation update_ activity, allowing it to generate the conversation update immediately upon the user joining the conversation. When this information is not provided, the user must send content before Direct Line can send the conversation update.
+
+```json
+{
+  "user": {
+    "id": "string",
+    "name": "string"
+  },
+  "trustedOrigins": [
+    "string"
+  ]
+}
+```
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `user.id` | string | Optional. Channel-specific ID of the user to encode within the token. For a Direct Line user, this must begin with `dl_`. You can create a unique user ID for each conversation, and for better security, you should make this ID unguessable. |
+| `user.name` | string | Optional. The display-friendly name of the user to encode within the token. |
+| `trustedOrigins` | string array | Optional. A list of trusted domains to embed within the token. These are the domains that can host the bot's Web Chat client. This should match the list in the Direct Line configuration page for your bot. |
 
 ### Response
 

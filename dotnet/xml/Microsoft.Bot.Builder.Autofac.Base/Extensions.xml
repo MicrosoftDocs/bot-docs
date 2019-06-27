@@ -42,7 +42,7 @@
         <Parameter Name="builder" Type="Autofac.ContainerBuilder" RefType="this" />
         <Parameter Name="types" Type="System.Type[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

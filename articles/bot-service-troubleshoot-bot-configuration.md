@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 2/26/2019
+ms.date: 4/30/2019
 ---
 
 # Troubleshoot bot configuration issues
@@ -67,7 +67,7 @@ The links below provide instructions for configuring channels supported by the B
 
 ### Channel-specific behavior
 
-Implementation of some features can differ by channel. For example, not all channels support Adaptive Cards. Most channels support Buttons, but they are rendered in a channel-specific way. If you see differences in how some message types work in different channels, consult the [Channel Inspector](https://docs.botframework.com/channel-inspector/channels/Skype).
+Implementation of some features can differ by channel. For example, not all channels support Adaptive Cards. Most channels support Buttons, but they are rendered in a channel-specific way. If you see differences in how some message types work in different channels, consult the [channel reference](bot-service-channels-reference.md).
 
 Below are some additional links that can help with individual channels:
 

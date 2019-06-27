@@ -1,4 +1,4 @@
-1. Go to the [**Application Registration Portal**](https://apps.dev.microsoft.com/).
+1. Go to the [**Application Registration Portal**](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 1. Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.
 1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.  
 
