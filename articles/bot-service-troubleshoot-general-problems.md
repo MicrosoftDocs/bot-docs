@@ -222,7 +222,7 @@ builder.Update(Conversation.Container);
 
 The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data. 
 
-* If you want to manually reset the conversation's dialog stack and state during development of your bot, you can use the ` /deleteprofile` command to delete state data. Make sure to include the leading space in this command, to prevent the channel from interpreting it.
+* If you want to manually reset the conversation's dialog stack and state during development of your bot, you can use the `/deleteprofile` command to delete state data. Make sure to include the leading space in this command, to prevent the channel from interpreting it.
 * After your bot has been deployed to production, you can version your bot data so that if you bump the version, the associated state data is cleared. With the Bot Framework SDK for Node.js, this can be accomplished using middleware and with the Bot Framework SDK for .NET, this can be accomplished using an `IPostToBot` implementation.
 
 > [!NOTE]
@@ -249,7 +249,7 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 ## Where can I get more help on LUIS?
 
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-* [Advanced Learning Session for Language Understanding (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
+* [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](/azure/cognitive-services/LUIS/Home)
 * [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS) 
 

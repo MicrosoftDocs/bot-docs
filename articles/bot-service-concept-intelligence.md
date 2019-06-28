@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Cognitive Services
 
-Microsoft Cognitive Services lets you tap into a growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
+Microsoft Cognitive Services let you tap into a growing collection of powerful AI algorithms developed by experts in the fields of computer vision, speech, natural language processing, knowledge extraction, and web search. The services simplify a variety of AI-based tasks, giving you a quick way to add state-of-the-art intelligence technologies to your bots with just a few lines of code. The APIs integrate into most modern languages and platforms. The APIs are also constantly improving, learning, and getting smarter, so experiences are always up to date. 
 
 Intelligent bots respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities. 
 
@@ -44,7 +44,7 @@ Cognitive Services provides four knowledge APIs that enable you to identify name
 
 - The  <a href="https://www.microsoft.com/cognitive-services/academic-knowledge-api" target="_blank">Academic Knowledge API</a> returns academic research papers, authors, journals, conferences, topics, and universities from the <a href="https://www.microsoft.com/research/project/microsoft-academic-graph/" target="_blank">Microsoft Academic Graph</a>. Built as a domain-specific example of the Knowledge Exploration Service, the Academic Knowledge API provides a knowledge base using a graph-like dialog with search capabilities over hundreds of millions of research-related entities. Search for a topic, a professor, a university, or a conference, and the API will provide relevant publications and related entities. The grammar also supports natural queries like "Papers by Michael Jordan about machine learning after 2010".
 
-- The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is a free, easy-to-use, REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
+- The  <a href="https://qnamaker.ai" target="_blank">QnA Maker</a> is an easy-to-use REST API and web-based service that trains AI to respond to users’ questions in a natural, conversational way. With optimized machine learning logic and the ability to integrate industry-leading language processing, QnA Maker distills semi-structured data like question and answer pairs into distinct, helpful answers.
 
 Learn more about [knowledge extraction][knowledge] with Microsoft Cognitive Services.
 

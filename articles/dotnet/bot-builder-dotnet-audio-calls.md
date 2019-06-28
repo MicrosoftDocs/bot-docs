@@ -53,7 +53,7 @@ public class CallingController : ApiController
 > `MessagesController` to support messages. Providing both options allows users to interact with
 > the bot in the way that they prefer. <!-- docs on MessagesController are where? -->
 
-##  Answer the call
+## Answer the call
 
 The `ProcessIncomingCallAsync` task will execute whenever a user initiates a call to this bot from Skype.
 The constructor registers the `IVRBot` class, which has a predefined handler for the `incomingCallEvent`.
