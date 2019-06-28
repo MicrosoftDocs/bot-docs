@@ -39,19 +39,19 @@ Adaptive cards can contain input forms. In Conversation Designer, forms are inte
 
 The code snippet below shows how the **myName** entity is defined in code:
 
-``javascript
+```javascript
 {
    "type": "Input.Text",
    "id": "myName",
    "placeholder": "Last, First"
 }
-``
+```
 
 Additionally, if a field has an id of `@task` then the value of the field will be used as a task name. When this field is triggered (e.g.: a button click), then the named task will be executed. 
 
 Take this snippet code for example:
 
-``javascript
+```javascript
 {
   'type': 'Action.Submit',
   'title': 'Search',
@@ -60,7 +60,7 @@ Take this snippet code for example:
     '@task': 'Hotel Search'
   }
 }
-``
+```
 
 When this button is clicked, a submit action is triggered and the `context.sticky` will be set to `Hotel Search`. This will result in the **Hotel Search** task to execute. To use this feature, make sure the `@task` matches a task name that you have defined in Conversation Designer.
 

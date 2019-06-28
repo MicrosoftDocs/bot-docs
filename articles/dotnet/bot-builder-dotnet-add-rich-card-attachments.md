@@ -21,6 +21,7 @@ monikerRange: 'azure-bot-service-3.0'
 > - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
 A message exchange between user and bot can contain one or more rich cards rendered as a list or carousel. 
+
 The `Attachments` property of the <a href="https://docs.botframework.com/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.attachments?view=botconnector-3.12.2.4" target="_blank">Attachment</a> objects that represent the rich cards and media attachments within the message. 
 
 > [!NOTE]

@@ -5,14 +5,14 @@ URLs must be consistent, hierarchical, and as shallow as possible to perform wel
 To ensure well-structured URLs, use one of following URL patterns:
 
 
-    https://docs.microsoft.com/en-us/bot-framework/{technology}/{filename}
+    https://docs.microsoft.com/bot-framework/{technology}/{filename}
 
-    https://docs.microsoft.com/en-us/bot-framework/{technology}/{userjourney-or-secondary-category}/{filename}
+    https://docs.microsoft.com/bot-framework/{technology}/{userjourney-or-secondary-category}/{filename}
     Use this option if the content set is large and requires deeper hierarchies.
 
 >[!IMPORTANT]
 
-> The more elements (folders) in the URL path, the harder for a search engine to crawl the content. Try to limit URLs to 2-3 levels deep from the base URL https://docs.microsoft.com/en-us/
+> The more elements (folders) in the URL path, the harder for a search engine to crawl the content. Try to limit URLs to 2-3 levels deep from the base URL https://docs.microsoft.com/
 
 ##Follow guidance for friendly filenames
 The most complete guidance for friendly filenames is from Azure content. You can adapt it to fit your content set, but the basic friendly URL rules apply:
