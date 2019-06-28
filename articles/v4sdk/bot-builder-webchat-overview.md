@@ -22,7 +22,7 @@ If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migratio
 > [!NOTE]
 > For previous versions of Web Chat (v3), visit the [Web Chat v3 branch](https://github.com/Microsoft/BotFramework-WebChat/tree/v3).
 
-First, create a bot using [Azure Bot Service](https://azure.microsoft.com/en-us/services/bot-service/).
+First, create a bot using [Azure Bot Service](https://azure.microsoft.com/services/bot-service/).
 Once the bot is created, you will need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#step-1) in Azure Portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
 
 Here is how how you can add Web Chat control to your website:
@@ -274,6 +274,6 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Reporting Security Issues
 
-Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) at [secure@microsoft.com](mailto:secure@microsoft.com). You should receive a response within 24 hours. If for some reason you do not, please follow up via email to ensure we received your original message. Further information, including the [MSRC PGP](https://technet.microsoft.com/en-us/security/dn606155) key, can be found in the [Security TechCenter](https://technet.microsoft.com/en-us/security/default).
+Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) at [secure@microsoft.com](mailto:secure@microsoft.com). You should receive a response within 24 hours. If for some reason you do not, please follow up via email to ensure we received your original message. Further information, including the [MSRC PGP](https://technet.microsoft.com/security/dn606155) key, can be found in the [Security TechCenter](https://technet.microsoft.com/security/default).
 
 Copyright (c) Microsoft Corporation. All rights reserved.

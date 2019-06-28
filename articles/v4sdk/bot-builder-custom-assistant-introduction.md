@@ -38,7 +38,7 @@ The Custom Assistant leverages the Microsoft Conversational AI platform and ther
 
 ## Built on Enterprise grade technology
 
-The Custom Assistant solution is built on the Azure Bot Service, Language Understanding Cognitive Service, Unified Speech along with a broad set of supporting Azure components meaning that you benefit from the [Azure global infrastructure](https://azure.microsoft.com/en-gb/global-infrastructure/).
+The Custom Assistant solution is built on the Azure Bot Service, Language Understanding Cognitive Service, Unified Speech along with a broad set of supporting Azure components meaning that you benefit from the [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure/).
 
 In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages [listed here](https://docs.microsoft.com/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/services/cognitive-services/translator-text-api/) provides additional Machine Translation capabilities to extend the reach of your Custom Assistant even further.
 
