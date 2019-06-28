@@ -63,7 +63,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="content_type")</AttributeName>
         </Attribute>
       </Attributes>
@@ -90,7 +90,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="image_url")</AttributeName>
         </Attribute>
       </Attributes>
@@ -117,7 +117,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="payload")</AttributeName>
         </Attribute>
       </Attributes>
@@ -144,7 +144,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
         </Attribute>
       </Attributes>

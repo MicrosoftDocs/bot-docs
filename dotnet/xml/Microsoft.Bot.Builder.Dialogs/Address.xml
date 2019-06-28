@@ -22,10 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="">
-      <AttributeName>Serializable</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -50,7 +47,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
         </Attribute>
       </Attributes>

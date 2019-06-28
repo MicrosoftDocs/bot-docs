@@ -56,6 +56,10 @@ SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the re
 - If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future.
 - You can create Bot Framework SDK V4 and older V3 bots via Azure portal and Azure Command Line. 
 
+### How can I migrate Azure Bot Service from one region to another?
+
+Azure Bot Service does not support region move. It’s a global service that is not tied to any specific region.
+
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
 
@@ -66,11 +70,37 @@ If you would like a specific channel added to the framework, [let us know][Suppo
 
 We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI]. If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we’d love to hear from you][Support].
 
-### If I want to create a bot for Skype, what tools and services should I use?
+### If I want to create a bot for Microsoft Teams, what tools and services should I use?
 
-The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Skype and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Skype-specific such as rich audio and video experiences.
+The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Teams and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Teams-specific such as rich audio and video experiences.
 
-If you already have a great bot and would like to reach the Skype audience, your bot can easily be connected to Skype (or any supported channel) via the Bot Framework for REST API (provided it has an internet-accessible REST endpoint).
+If you already have a great bot and would like to reach the Teams audience, your bot can easily be connected to Teams (or any supported channel) via the Bot Framework for REST API (provided it has an internet-accessible REST endpoint).
+
+### How do I create a bot that uses the US Government data center?
+
+There are 2 major steps required to create a bot that uses a US Government data center.
+1. Add a “channel provider” setting in your appsettings.json (or the App Service Settings). This needs to be specifically set to this name/value constant: ChannelService = "https://botframework.azure.us". An example using appsetting.json is shown below.
+
+```json
+{
+  "MicrosoftAppId": "", 
+  "MicrosoftAppPassword": "",
+  "ChannelService": "https://botframework.azure.us"
+}
+```
+2. If you are using .NET core, you will need to add a ConfigurationChannelProvider in your startup.cs file. How you do this varies based on which version of the SDK you are using.
+
+- For versions 4.3 and above, in your ConfigureServices method, you need to create a ConfigurationChannelProvider instance. When using the BotFrameworkHttpAdapter class, you inject this as singleton into the service collection like this:
+
+```csharp  
+services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
+```
+- For versions prior to 4.3, in your ConfigureServices method, find the AddBot method. When setting the options, make sure you add:
+
+```csharp
+options.ChannelProvider = new ConfigurationChannelProvider();
+```
+You can find more information concerning Govenment Services [here](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
@@ -100,7 +130,7 @@ If you have an outbound firewall blocking traffic from your bot to the Internet,
 No. This sort of IP Address or DNS whitelisting is impractical. The Bot Framework Connector Service is hosted in Azure datacenters world-wide and the list of Azure IPs is constantly changing. Whitelisting certain IP addresses may work one day and break the next as the Azure IP Addresses change.
  
 ### What keeps my bot secure from clients impersonating the Bot Framework Connector Service?
-1. The security token accompanying every request to your bot has the ServiceUrl encoded within it, which means that even if an attacker gains access to the token, they cannot redirect the conversation to a new ServiceUrl. This is enforced by all implementations of the SDK and documented in our authentication [reference](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#bot-to-connector) materials.
+1. The security token accompanying every request to your bot has the ServiceUrl encoded within it, which means that even if an attacker gains access to the token, they cannot redirect the conversation to a new ServiceUrl. This is enforced by all implementations of the SDK and documented in our authentication [reference](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#bot-to-connector) materials.
 
 2. If the incoming token is missing or malformed, the Bot Framework SDK will not generate a token in response. This limits how much damage can be done if the bot is incorrectly configured.
 3. Inside the bot, you can manually check the ServiceUrl provided in the token. This makes the bot more fragile in the event of service topology changes so this is possible but not recommended.
@@ -153,7 +183,55 @@ Direct Line is suitable for:
 * Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 * Service-to-service applications
 
-[DirectLineAPI]: https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
+
+## App Registration
+
+### I need to manually create my App Registration. How do I create my own App Registration?
+
+Creating your own App Registration will be necessary for situations like the following:
+
+- You created your bot in the Bot Framework portal (such as https://dev.botframework.com/bots/new) 
+- You are unable to make app registrations in your organization and need another party to create the App ID for the bot you're building
+- You otherwise need to manually create your own App ID (and password)
+
+To create your own App ID, follow the steps below.
+
+1. Sign into your [Azure account](https://portal.azure.com). If you don't have an Azure account, you can [sign up for a free account](https://azure.microsoft.com/free/).
+2. Go to [the app registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **New registration** in the action bar at the top.
+
+    ![new registration](media/app-registration/new-registration.png)
+
+3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
+
+    > [!IMPORTANT]
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **bot creation will fail**.
+
+    ![registration details](media/app-registration/registration-details.png)
+
+4. Click **Register**
+
+    After a few moments, the newly created app registration should open a blade. Copy the *Application (client) ID* in the Overview blade and paste it in to the App ID field.
+
+    ![application id](media/app-registration/app-id.png)
+
+If you’re creating your bot through the Bot Framework portal, then you’re done setting up your app registration; the secret will be generated automatically. 
+
+If you’re making your bot in the Azure portal, you need to generate a secret for your app registration. 
+
+1. Click on **Certificates & secrets** in the left navigation column of your app registration’s blade.
+2. In that blade, click the **New client secret** button. In the dialog that pops up, enter an optional description for the secret and select **Never** from the Expires radio button group. 
+
+    ![new secret](media/app-registration/new-secret.png)
+
+3. Copy your secret’s value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation. 
+
+    > [!NOTE]
+    > The secret will only be visible while on this blade, and you won't be able to retreive it after you leave that page. Be sure to copy it somewhere safe.
+
+    ![new app id](media/app-registration/create-app-id.png)
+
+
+[DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
 

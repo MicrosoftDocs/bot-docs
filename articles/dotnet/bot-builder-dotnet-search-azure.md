@@ -19,22 +19,21 @@ monikerRange: 'azure-bot-service-3.0'
 > - [.NET](../dotnet/bot-builder-dotnet-search-azure.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-search-azure.md)
 
-You can add [Azure Search](https://azure.microsoft.com/en-us/services/search/) to a bot to help users navigate large amounts of content and create a data-driven exploration experience.
+You can add [Azure Search](https://azure.microsoft.com/services/search/) to a bot to help users navigate large amounts of content and create a data-driven exploration experience.
 
 Azure Search is an Azure service that offers keyword search, built-in linguistics, custom scoring, faceted navigation, and more. Azure Search can also index content from various sources, including Azure SQL DB, DocumentDB, Blob Storage, and Table Storage. It supports "push" indexing for other sources of data, and it can open PDFs, Office documents, and other formats containing unstructured data. Once collected, the content goes into an Azure Search index, which the bot can then query.
 
-
 ## Prerequisites
 
-Install the [Microsoft.Azure.Search](https://www.nuget.org/packages/Microsoft.Azure.Search/4.0.0-preview) Nuget package in your bot project. 
+Install the [Microsoft.Azure.Search](https://www.nuget.org/packages/Microsoft.Azure.Search/4.0.0-preview) Nuget package in your bot project.
 
-The following three C# projects are required in your bot's solution. These projects provide additional functionality for bots and Azure Search. Fork the projects from [GitHub](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search) or download the source code directly.
+The following three C# projects are required in your bot's solution. These projects provide additional functionality for bots and Azure Search. Fork the projects from [GitHub](https://aka.ms/v3-cs-search-demo) or download the source code directly.
 
-* [Search.Azure](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search/Search.Azure) defines the Azure Service call. 
-* [Search.Contracts](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search/Search.Contracts) defines generic interfaces and data models to handle data.
-* [Search.Dialogs](https://github.com/Microsoft/botBuilder-Samples/tree/master/CSharp/demo-Search/Search.Dialogs) includes various generic Bot Builder dialogs used to query Azure Search.
+- The **Search.Azure** project defines the Azure Service call.
+- The **Search.Contracts** project defines generic interfaces and data models to handle data.
+- The **Search.Dialogs** project includes various generic Bot Builder dialogs used to query Azure Search.
 
-## Configure Azure Search settings 
+## Configure Azure Search settings
 
 Configure the Azure Search settings in the **Web.config** file of the project using your own Azure Search credentials in the value fields. 
 The constructor in the `AzureSearchClient` class will use these settings to register and bind the bot to the Azure Service.
@@ -180,7 +179,8 @@ For two complete samples that show how to support Azure Search with bots using t
 [Real Estate bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/demo-Search/RealEstateBot) or [Job Listing bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/demo-Search/JobListingBot) in GitHub. 
 
 ## Additional resources
-* [Azure Search][search]
-* [Dialogs overview](bot-builder-dotnet-dialogs.md)
+
+- [Azure Search][search]
+- [Dialogs overview](bot-builder-dotnet-dialogs.md)
 
 [search]: /azure/search/search-what-is-azure-search

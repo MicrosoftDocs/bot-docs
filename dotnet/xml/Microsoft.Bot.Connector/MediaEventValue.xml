@@ -73,7 +73,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="cardValue")</AttributeName>
         </Attribute>
       </Attributes>

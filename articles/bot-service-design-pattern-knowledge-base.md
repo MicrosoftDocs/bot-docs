@@ -67,7 +67,7 @@ By processing the user's input in each step and presenting the relevant options,
 
 ### Azure Search
 
-By using <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a>, 
+By using <a href="https://azure.microsoft.com/services/search/" target="_blank">Azure Search</a>, 
 you can create an efficient search index that a bot can easily search, facet, and filter. 
 Consider a search index that is created using the Azure portal.
 
@@ -96,7 +96,7 @@ For example, you could filter the result set above to contain only items where *
 ## QnA Maker
 
 Some knowledge bots may simply aim to answer frequently asked questions (FAQs). 
-<a href="https://www.microsoft.com/cognitive-services/en-us/qnamaker" target="_blank">QnA Maker</a> 
+<a href="https://www.microsoft.com/cognitive-services/qnamaker" target="_blank">QnA Maker</a> 
 is a powerful tool that's designed specifically for this use case. 
 QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site, plus it also allows you to manually configure your own custom list of questions and answers. 
 QnA Maker has natural language processing abilities, enabling it to even provide answers to questions that are worded slightly differently than expected. 
@@ -173,7 +173,7 @@ Some knowledge bots might use QnA Maker to answer basic questions in combination
 2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, then call QnA Maker. Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent." 
 3. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS. 
 
-The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See the [Dispatch Tool Tutorial](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0) for more information.
+The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See the [Dispatch Tool Tutorial](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0) for more information.
 
 > [!TIP]
 > When implementing a combination of LUIS, QnA Maker, and/or Azure Search, 
@@ -190,4 +190,4 @@ The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enab
 - For a sample that shows how to create more complex knowledge bots using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search" target="_blank">Search-powered Bots sample</a> in GitHub.
 -->
 
-[qnamakerTemplate]: https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle
+[qnamakerTemplate]: https://docs.botframework.com/azure-bot-service/templates/qnamaker/#navtitle

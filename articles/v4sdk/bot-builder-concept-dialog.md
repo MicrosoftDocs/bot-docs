@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 04/18/2019
+ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -28,7 +28,7 @@ The dialogs library has a few additional pieces included to make dialogs more us
 
 *Dialog sets* are, in the simplest terms, a collection of dialogs. This can be things like prompts, waterfall dialogs, or [component dialogs](#component-dialog). Each of these are implementations of a dialog, and each are added to the dialog set with a specific string ID. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that string ID to specify which dialog to use.
 
-*Dialog context* contains information pertaining to the dialog, and is used to interact with a dialog set from within your bot's turn handler. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with it's string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
+*Dialog context* contains information pertaining to the dialog, and is used to interact with a dialog set from within your bot's turn handler. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with its string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
 
 When a dialog ends, it can return a *dialog result* with some resulting information from the dialog. This is returned to let the calling method see what happened within the dialog and save the information to some persisted location, if desired.
 
@@ -54,7 +54,7 @@ Prompts, within the dialogs library, provide an easy way to ask the user for inf
 
 Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or starts from the top with a reprompt.
 
-Prompts have *prompt options* given when the prompt is called, which is where you can specify the text to prompt with, the retry prompt if validation fails, and choices to answer the prompt.
+Prompts have *prompt options* given when the prompt is called, which is where you can specify the text to prompt with, the retry prompt if validation fails, and choices to answer the prompt. In general, the prompt and retry prompt properties are activities, though there is some variation on how this is handled in different programming languages.
 
 Additionally, you can choose to add some custom validation for your prompt when you create it. For example, say we wanted to get a party size using the number prompt, but that party size has to be more than 2 and less than 12. The prompt first checks to see if it received a valid number, then runs the custom validation if it is provided. If the custom validation fails, it will re-prompt the user as above.
 
@@ -89,7 +89,7 @@ The following diagram shows a sequence of waterfall steps and the stack operatio
 
 ![Dialog concept](media/bot-builder-dialog-concept.png)
 
-Within waterfall steps, the context of the waterfall dialog is stored in it's *waterfall step context*. This is similar to the dialog context as it provides access to the current turn context and state. Use the waterfall step context object to interact with a dialog set from within a waterfall step.
+Within waterfall steps, the context of the waterfall dialog is stored in its *waterfall step context*. This is similar to the dialog context as it provides access to the current turn context and state. Use the waterfall step context object to interact with a dialog set from within a waterfall step.
 
 You can handle a return value from a dialog either within a waterfall step in a dialog or from your bot's on turn handler, although you generally only need to check the status of the dialog turn result from your bot's turn logic.
 Within a waterfall step, the dialog provides the return value in the waterfall step context's _result_ property.
@@ -104,6 +104,39 @@ The waterfall step context contains the following:
 
 Additionally, the *next* method continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
 
+#### Prompt options
+
+The second parameter of the step context's _prompt_ method takes a _prompt options_ object, which has the following properties.
+
+| Property | Description |
+| :--- | :--- |
+| _prompt_ | The initial activity to send the user, to ask for their input. |
+| _retry prompt_ | The activity to send the user if their first input did not validate. |
+| _choices_ | A list of choices for the user to choose from, for use with a choice prompt. |
+| _validations_ | Additional parameters to use with a custom validator. |
+
+You should always specify the initial prompt activity to send the user, as well as a retry prompt for instances when the user's input doesn't validate. 
+
+If the user's input isn't valid, the retry prompt is sent to the user; if there was no retry specified, then the initial prompt is re-sent. However, if an activity is sent back to the user from within the validator, no retry prompt is sent. 
+
+##### Prompt validation 
+
+You can validate a prompt response before returning the value to the next step of the waterfall. A validator function has a _prompt validator context_ parameter and returns a Boolean, indicating whether the input passes validation.
+The prompt validator context includes the following properties:
+
+| Property | Description |
+| :--- | :--- |
+| _Context_ | The current turn context for the bot. |
+| _Recognized_ | A _prompt recognizer result_ that contains information about the user input, as processed by the recognizer. |
+| _Options_ | Contains the _prompt options_ that were provided in the call to start the prompt. |
+
+The prompt recognizer result has the following properties:
+
+| Property | Description |
+| :--- | :--- |
+| _Succeeded_ | Indicates whether the recognizer was able to parse the input. |
+| _Value_ | The return value from the recognizer. If necessary, the validation code can modify this value. |
+
 ### Component dialog
 
 Sometimes you want to write a reusable dialog that you want to use in different scenarios, such as an address dialog that asks the user to provide values for street, city and zip code.
@@ -116,7 +149,8 @@ You can use the dialog context to begin, continue, replace, or end a dialog. You
 
 Dialogs can be thought of as a programmatic stack, which we call the *dialog stack*, with the turn handler as the one directing it and serving as the fallback if the stack is empty. The topmost item on that stack is considered the *active dialog*, and the dialog context directs all input to the active dialog.
 
-When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down becomes the active dialog again. This allows for branching and looping, discussed below.
+When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down becomes the active dialog again. This allows for [repeating a dialog](#repeating-a-dialog) or [branching a conversation](#branch-a-conversation), discussed below.
+
 
 ### Create the dialog context
 
@@ -158,7 +192,7 @@ If you want to pop all dialogs off the stack, you can clear the dialog stack by 
 
 ### Repeating a dialog
 
-You can replace a dialog with itself, creating a loop.
+You can replace a dialog with itself, creating a loop, by using the *replace dialog* method.
 This is a great way to handle [complex interactions](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus.
 
 > [!NOTE]

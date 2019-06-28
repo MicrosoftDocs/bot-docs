@@ -76,7 +76,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -155,7 +155,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -170,7 +170,7 @@
           "Conversations"
         ],
         "summary": "CreateConversation",
-        "description": "Create a new Conversation.\r\n\r\nPOST to this method with a\r\n* Bot being the bot creating the conversation\r\n* IsGroup set to true if this is not a direct message (default is false)\r\n* Members array contining the members you want to have be in the conversation.\r\n\r\nThe return value is a ResourceResponse which contains a conversation id which is suitable for use\r\nin the message payload and REST API uris.\r\n\r\nMost channels only support the semantics of bots initiating a direct message conversation.  An example of how to do that would be:\r\n\r\n```\r\nvar resource = await connector.conversations.CreateConversation(new ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new ChannelAccount(\"user1\") } );\r\nawait connect.Conversations.SendToConversationAsync(resource.Id, new Activity() ... ) ;\r\n\r\n```",
+        "description": "Create a new Conversation.\r\n\r\nPOST to this method with a\r\n* Bot being the bot creating the conversation\r\n* IsGroup set to true if this is not a direct message (default is false)\r\n* Members array containing the members you want to have be in the conversation.\r\n\r\nThe return value is a ResourceResponse which contains a conversation id which is suitable for use\r\nin the message payload and REST API uris.\r\n\r\nMost channels only support the semantics of bots initiating a direct message conversation.  An example of how to do that would be:\r\n\r\n```\r\nvar resource = await connector.conversations.CreateConversation(new ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new ChannelAccount(\"user1\") } );\r\nawait connect.Conversations.SendToConversationAsync(resource.Id, new Activity() ... ) ;\r\n\r\n```",
         "operationId": "Conversations_CreateConversation",
         "consumes": [
           "application/json",
@@ -246,7 +246,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -261,7 +261,7 @@
           "Conversations"
         ],
         "summary": "SendToConversation",
-        "description": "This method allows you to send an activity to the end of a conversation.\r\n\r\nThis is slightly different from ReplyToActivity().\r\n* SendToConverstion(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
+        "description": "This method allows you to send an activity to the end of a conversation.\r\n\r\nThis is slightly different from ReplyToActivity().\r\n* SendToConversation(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
         "operationId": "Conversations_SendToConversation",
         "consumes": [
           "application/json",
@@ -336,7 +336,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -439,7 +439,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -452,7 +452,7 @@
           "Conversations"
         ],
         "summary": "ReplyToActivity",
-        "description": "This method allows you to reply to an activity.\r\n\r\nThis is slightly different from SendToConversation().\r\n* SendToConverstion(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
+        "description": "This method allows you to reply to an activity.\r\n\r\nThis is slightly different from SendToConversation().\r\n* SendToConversation(conversationId) - will append the activity to the end of the conversation according to the timestamp or semantics of the channel.\r\n* ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply to another activity, if the channel supports it. If the channel does not support nested replies, ReplyToActivity falls back to SendToConversation.\r\n\r\nUse ReplyToActivity when replying to a specific activity in the conversation.\r\n\r\nUse SendToConversation in all other cases.",
         "operationId": "Conversations_ReplyToActivity",
         "consumes": [
           "application/json",
@@ -534,7 +534,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -610,7 +610,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -625,7 +625,7 @@
           "Conversations"
         ],
         "summary": "GetConversationMembers",
-        "description": "Enumerate the members of a converstion. \r\n\r\nThis REST API takes a ConversationId and returns an array of ChannelAccount objects representing the members of the conversation.",
+        "description": "Enumerate the members of a conversation. \r\n\r\nThis REST API takes a ConversationId and returns an array of ChannelAccount objects representing the members of the conversation.",
         "operationId": "Conversations_GetConversationMembers",
         "consumes": [],
         "produces": [
@@ -684,7 +684,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -765,7 +765,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -861,7 +861,7 @@
             }
           },
           "503": {
-            "description": "The service you are trying to communciate with is unavailable.",
+            "description": "The service you are trying to communicate with is unavailable.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -873,7 +873,7 @@
   },
   "definitions": {
     "AttachmentInfo": {
-      "description": "Metdata for an attachment",
+      "description": "Metadata for an attachment",
       "type": "object",
       "properties": {
         "name": {
@@ -898,7 +898,7 @@
       "type": "object",
       "properties": {
         "viewId": {
-          "description": "content type of the attachmnet",
+          "description": "content type of the attachment",
           "type": "string"
         },
         "size": {
@@ -957,7 +957,7 @@
         },
         "activity": {
           "$ref": "#/definitions/Activity",
-          "description": "(Optional) When creating a new conversation, use this activity as the intial message to the conversation"
+          "description": "(Optional) When creating a new conversation, use this activity as the initial message to the conversation"
         },
         "channelData": {
           "$ref": "#/definitions/Object",
@@ -984,7 +984,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "description": "The type of the activity [message|contactRelationUpdate|converationUpdate|typing|endOfConversation|event|invoke]",
+          "description": "The type of the activity [message|contactRelationUpdate|conversationUpdate|typing|endOfConversation|event|invoke]",
           "type": "string"
         },
         "id": {
@@ -1282,7 +1282,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "description": "content type of the attachmnet",
+          "description": "content type of the attachment",
           "type": "string"
         },
         "name": {

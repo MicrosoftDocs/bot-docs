@@ -6,7 +6,7 @@ ms.author: v-demak
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/26/2019
+ms.date: 04/30/2019
 ---
 
 # Troubleshooting general problems
@@ -14,9 +14,9 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
 1. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
-1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/en-us/blog/understanding-azure-troubleshooting-and-support/).
+1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
 1. Test your bot on Skype. This will help you to validate the end-to-end user experience.
 1. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
@@ -32,7 +32,7 @@ For details about troubleshooting authentication issues with your bot, see [trou
 In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**. You may also see diagnostics output in your Output window when there are thrown or unhandled exceptions.
 
 **Look at the call stack.**  
-In Visual Studio, you can choose whether or you are debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not. Examining the full call stack may provide additional insight into any issues.
+In Visual Studio, you can choose whether or you are debugging [Just My Code](https://msdn.microsoft.com/library/dn457346.aspx) or not. Examining the full call stack may provide additional insight into any issues.
 
 **Ensure all dialog methods end with a plan to handle the next message.**  
 All dialog steps need to feed into the next step of the waterfall, or end the current dialog to pop it off the stack. If a step is not correctly handled, the conversation will not continue like you expect. Take a look at the concept article for [dialogs](v4sdk/bot-builder-concept-dialog.md) for more on dialogs.
@@ -58,7 +58,7 @@ If you examine traces or audit logs, you can check to make sure your messages ar
 
 ## How can I run background tasks in ASP.NET? 
 
-In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/en-us/library/dn636893(v=vs.110).aspx). 
+In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/library/dn636893(v=vs.110).aspx). 
 
 
 ## How do user messages relate to HTTPS method calls?
@@ -99,15 +99,15 @@ SMS and email messages will provide the raw user ID in the `from.Id` property. I
 
 ## Why are my Facebook user names not showing anymore?
 
-Did you change your Facebook password? Doing so will invalidate the access token, and you will need to update your bot's configuration settings for the Facebook Messenger channel in the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a>.
+Did you change your Facebook password? Doing so will invalidate the access token, and you will need to update your bot's configuration settings for the Facebook Messenger channel in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
 
 ## Why is my Kik bot replying "I'm sorry, I can't talk right now"?
 
-Bots in development on Kik are allowed 50 subscribers. After 50 unique users have interacted with your bot, any new user that attempts to chat with your bot will receive the message "I'm sorry, I can't talk right now." For more information, see [Kik documentation](https://botsupport.kik.com/hc/en-us/articles/225764648-How-can-I-share-my-bot-with-Kik-users-while-in-development-).
+Bots in development on Kik are allowed 50 subscribers. After 50 unique users have interacted with your bot, any new user that attempts to chat with your bot will receive the message "I'm sorry, I can't talk right now." For more information, see [Kik documentation](https://botsupport.kik.com/hc/articles/225764648-How-can-I-share-my-bot-with-Kik-users-while-in-development-).
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp). 
+For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp). 
 
 > [!NOTE] 
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
@@ -125,7 +125,7 @@ If your Direct Line conversation appears to start over after every message, the 
 To fix this, set the `from` property in each message that the Direct Line client sends to a stable value that uniquely represents the user who is sending the message. For example, if a user is already signed-in to a webpage or app, you might use that existing user ID as the value of the `from` property in messages that the user sends. Alternatively, you might choose to generate a random user ID on page-load or on application-load, store that ID in a cookie or device state, and use that ID as the value of the `from` property in messages that the user sends.
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
-Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there. 
+Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://portal.azure.com" target="_blank">Azure Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there. 
 
 ::: moniker range="azure-bot-service-3.0"
 
@@ -153,7 +153,7 @@ For examples that show how to send proactive messages, see the [C# V4 samples](h
 There are multiple options:
 
 * Resolve the dependency through `Autofac` and `FiberModule.Key_DoNotSerialize`. This is the cleanest solution.
-* Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization. This is the simplest solution.
+* Use [NonSerialized](https://msdn.microsoft.com/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization. This is the simplest solution.
 * Do not store that dependency, so that it won't be serialized. This solution, while technically feasible, is not recommended.
 * Use the reflection serialization surrogate. This solution may not be feasible in some cases and risks serializing too much.
 
@@ -214,13 +214,6 @@ builder
     .InstancePerLifetimeScope();
 builder.Update(Conversation.Container);
 ```
-::: moniker-end
-
-## Is there a limit on the amount of data I can store using the State API?
-
-Yes, each state store (i.e., user, conversation, and private bot data bag) may contain up to 64kb of data. For more information, see [Manage State data][StateAPI].
-
-::: moniker range="azure-bot-service-3.0"
 
 ## How do I version the bot data stored through the State API?
 
@@ -256,9 +249,9 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 ## Where can I get more help on LUIS?
 
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-* [Advanced Learning Session for Language Understanding (LUIS) ](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
+* [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](/azure/cognitive-services/LUIS/Home)
-* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS) 
+* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS) 
 
 
 ## What are some community-authored dialogs?

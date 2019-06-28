@@ -94,7 +94,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="aspect")</AttributeName>
         </Attribute>
       </Attributes>
@@ -121,7 +121,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="autoloop")</AttributeName>
         </Attribute>
       </Attributes>
@@ -148,7 +148,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="autostart")</AttributeName>
         </Attribute>
       </Attributes>
@@ -175,7 +175,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
         </Attribute>
       </Attributes>
@@ -201,7 +201,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="duration")</AttributeName>
         </Attribute>
       </Attributes>
@@ -228,7 +228,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="image")</AttributeName>
         </Attribute>
       </Attributes>
@@ -255,7 +255,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="media")</AttributeName>
         </Attribute>
       </Attributes>
@@ -282,7 +282,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shareable")</AttributeName>
         </Attribute>
       </Attributes>
@@ -309,7 +309,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subtitle")</AttributeName>
         </Attribute>
       </Attributes>
@@ -336,7 +336,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
         </Attribute>
       </Attributes>
@@ -363,7 +363,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
         </Attribute>
       </Attributes>
@@ -412,7 +412,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
         </Attribute>
       </Attributes>

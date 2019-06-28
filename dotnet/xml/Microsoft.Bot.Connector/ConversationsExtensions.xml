@@ -12,6 +12,7 @@
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -41,8 +42,8 @@
         <ReturnType>Microsoft.Bot.Connector.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -68,9 +69,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="parameters" Type="Microsoft.Bot.Connector.ConversationParameters" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -92,14 +93,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -157,10 +159,10 @@
         <ReturnType>Microsoft.Bot.Connector.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="user" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="user" Type="Microsoft.Bot.Connector.ChannelAccount" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -183,15 +185,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" />
-        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">The operations group for this extension method.</param>
@@ -221,10 +224,10 @@
         <ReturnType>Microsoft.Bot.Connector.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="botAddress" Type="System.String" />
-        <Parameter Name="userAddress" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="botAddress" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="userAddress" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -247,15 +250,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="botAddress" Type="System.String" />
-        <Parameter Name="userAddress" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="botAddress" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="userAddress" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">The operations group for this extension method.</param>
@@ -285,11 +289,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="user" Type="Microsoft.Bot.Connector.ChannelAccount" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Connector.ChannelAccount" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="user" Type="Microsoft.Bot.Connector.ChannelAccount" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -313,16 +317,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" />
-        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Schema.ChannelAccount" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="user" Type="Microsoft.Bot.Schema.ChannelAccount" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">The operations group for this extension method.</param>
@@ -353,11 +358,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="botAddress" Type="System.String" />
-        <Parameter Name="userAddress" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="botAddress" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="userAddress" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -381,16 +386,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="botAddress" Type="System.String" />
-        <Parameter Name="userAddress" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="botAddress" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="userAddress" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">The operations group for this extension method.</param>
@@ -422,9 +428,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -448,6 +454,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -500,9 +507,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="memberId" Type="System.String" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="memberId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -526,6 +533,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -580,9 +588,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -604,15 +612,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -657,8 +666,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -679,14 +688,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -727,10 +737,10 @@
         <ReturnType>Microsoft.Bot.Connector.PagedMembersResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="pageSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="pageSize" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="continuationToken" Type="System.String" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -753,16 +763,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="pageSize" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="pageSize" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="continuationToken" Type="System.String" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -822,8 +833,8 @@
         <ReturnType>Microsoft.Bot.Connector.ConversationsResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="continuationToken" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -844,14 +855,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="continuationToken" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="continuationToken" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -898,8 +910,8 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -920,13 +932,14 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -958,10 +971,10 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -989,9 +1002,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1013,14 +1026,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1055,11 +1069,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1083,16 +1097,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1148,8 +1163,8 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" />
-        <Parameter Name="conversationId" Type="System.String" Index="1" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
         <Parameter Name="history" Type="Microsoft.Bot.Connector.Transcript" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
@@ -1177,10 +1192,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" />
-        <Parameter Name="conversationId" Type="System.String" Index="1" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
         <Parameter Name="history" Type="Microsoft.Bot.Connector.Transcript" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1203,15 +1218,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="transcript" Type="Microsoft.Bot.Schema.Transcript" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="transcript" Type="Microsoft.Bot.Schema.Transcript" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1257,8 +1273,8 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1279,13 +1295,14 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1317,9 +1334,9 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1346,9 +1363,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1370,14 +1387,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1412,10 +1430,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1438,15 +1456,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1498,8 +1517,8 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1520,13 +1539,14 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1558,10 +1578,10 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1589,9 +1609,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1613,14 +1633,15 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1655,11 +1676,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1683,16 +1704,17 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="activityId" Type="System.String" />
-        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activityId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1742,9 +1764,9 @@
         <ReturnType>Microsoft.Bot.Connector.ResourceResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1771,10 +1793,10 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Connector.AttachmentData" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -1797,15 +1819,16 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" />
-        <Parameter Name="conversationId" Type="System.String" />
-        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IConversations" RefType="this" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="conversationId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="operations">

@@ -121,14 +121,17 @@ Use these operations to create conversations, send messages (activities), and ma
 
 | Operation | Description |
 |----|----|
-| [Create Conversation](#create-conversation) | Creates a new conversation. | 
-| [Send to Conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. | 
-| [Reply to Activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. | 
+| [Create Conversation](#create-conversation) | Creates a new conversation. |
+| [Send to Conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. |
+| [Reply to Activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. |
+| [Get Conversations](#get-conversations) | Gets a list of conversations the bot has participated in. |
 | [Get Conversation Members](#get-conversation-members) | Gets the members of the specified conversation. |
 | [Get Conversation Paged Members](#get-conversation-paged-members) | Gets the members of the specified conversation one page at a time. |
-| [Get Activity Members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. | 
-| [Update Activity](#update-activity) | Updates an existing activity. | 
-| [Delete Activity](#delete-activity) | Deletes an existing activity. | 
+| [Get Activity Members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. |
+| [Update Activity](#update-activity) | Updates an existing activity. |
+| [Delete Activity](#delete-activity) | Deletes an existing activity. |
+| [Delete Conversation Member](#delete-conversation-member) | Removes a member from a conversation. |
+| [Send Conversation History](#send-conversation-history) | Uploads a transcript of past activities to the conversation. |
 | [Upload Attachment to Channel](#upload-attachment-to-channel) | Uploads an attachment directly into a channel's blob storage. |
 
 ### Create Conversation
@@ -140,7 +143,7 @@ POST /v3/conversations
 | | |
 |----|----|
 | **Request body** | A [Conversation](#conversation-object) object |
-| **Returns** | A [ResourceResponse](#resourceresponse-object) object | 
+| **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object | 
 
 ### Send to Conversation
 Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
@@ -164,6 +167,17 @@ POST /v3/conversations/{conversationId}/activities/{activityId}
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | An [Identification](#identification-object) object | 
 
+### Get Conversations
+Gets a list of conversations the bot has participated in.
+```http
+GET /v3/conversations?continuationToken={continuationToken}
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | A [ConversationsResult](#conversationsresult-object) object | 
+
 ### Get Conversation Members
 Gets the members of the specified conversation.
 ```http
@@ -178,13 +192,13 @@ GET /v3/conversations/{conversationId}/members
 ### Get Conversation Paged Members
 Gets the members of the specified conversation one page at a time.
 ```http
-GET /v3/conversations/{conversationId}/pagedmembers
+GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continuationToken={continuationToken}
 ```
 
 | | |
 |----|----|
 | **Request body** | n/a |
-| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects and a continuation token that can be used to get more values|
+| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects and a continuation token that can be used to get more values |
 
 ### Get Activity Members
 Gets the members of the specified activity within the specified conversation.
@@ -219,8 +233,30 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 | **Request body** | n/a |
 | **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. | 
 
+### Delete Conversation Member
+Removes a member from a conversation. If that member was the last member of the conversation, the conversation will also be deleted.
+```http
+DELETE /v3/conversations/{conversationId}/members/{memberId}
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. | 
+
+### Send Conversation History
+Uploads a transcript of past activities to the conversation so that the client can render them.
+```http
+POST /v3/conversations/{conversationId}/activities/history
+```
+
+| | |
+|----|----|
+| **Request body** | A [Transcript](#transcript-object) object. |
+| **Returns** | A [ResourceResponse](#resourceresponse-object) object. | 
+
 ### Upload Attachment to Channel
-Uploads an attachment for the specified conversation directly into a channel's blob storage. This enables you to store data in a compliant store. 
+Uploads an attachment for the specified conversation directly into a channel's blob storage. This enables you to store data in a compliant store.
 ```http 
 POST /v3/conversations/{conversationId}/attachments
 ```
@@ -359,7 +395,7 @@ Schema defines the object and its properties that your bot can use to communicat
 | [Activity object](#activity-object) | Defines a message that is exchanged between bot and user. |
 | [AnimationCard object](#animationcard-object) | Defines a card that can play animated GIFs or short videos. |
 | [Attachment object](#attachment-object) | Defines additional information to include in the message. An attachment may be a media file (e.g., audio, video, image, file) or a rich card. |
-| [AttachmentData object](#attachmentdata-object) |Describes an attachment data. |
+| [AttachmentData object](#attachmentdata-object) | Describes an attachment data. |
 | [AttachmentInfo object](#attachmentinfo-object) | Describes an attachment. |
 | [AttachmentView object](#attachmentview-object) | Defines a attachment view. |
 | [AttachmentUpload object](#attachmentupload-object) | Defines an attachment to be uploaded. |
@@ -370,17 +406,19 @@ Schema defines the object and its properties that your bot can use to communicat
 | [ChannelAccount object](#channelaccount-object) | Defines a bot or user account on the channel. |
 | [Conversation object](#conversation-object) | Defines a conversation, including the bot and users that are included within the conversation. |
 | [ConversationAccount object](#conversationaccount-object) | Defines a conversation in a channel. |
+| [ConversationMembers object](#conversationmembers-object) | Defines the members of a conversation. |
 | [ConversationParameters object](#conversationparameters-object) | Define parameters for creating a new conversation |
 | [ConversationReference object](#conversationreference-object) | Defines a particular point in a conversation. |
-| [ConversationResourceResponse object](#conversationresourceresponse-object) | "A response containing a resource |
+| [ConversationResourceResponse object](#conversationresourceresponse-object) | Defines a response to [Create Conversation](#create-conversation). |
+| [ConversationsResult object](#conversationsresult-object) | Defines the result of a call to [Get Conversations](#get-conversations). |
 | [Entity object](#entity-object) | Defines an entity object. |
 | [Error object](#error-object) | Defines an error. |
 | [ErrorResponse object](#errorresponse-object) | Defines an HTTP API response. |
 | [Fact object](#fact-object) | Defines a key-value pair that contains a fact. |
-| [Geocoordinates object](#geocoordinates-object) | Defines a geographical location using World Geodetic System (WSG84) coordinates. |
+| [GeoCoordinates object](#geocoordinates-object) | Defines a geographical location using World Geodetic System (WSG84) coordinates. |
 | [HeroCard object](#herocard-object) | Defines a card with a large image, title, text, and action buttons. |
 | [Identification object](#identification-object) | Identifies a resource. |
-| [MediaEventValue object](#mediaeventvalue-object) |Supplementary parameter for media events.|
+| [MediaEventValue object](#mediaeventvalue-object) | Supplementary parameter for media events. |
 | [MediaUrl object](#mediaurl-object) | Defines the URL to a media file's source. |
 | [Mention object](#mention-object) | Defines a user or bot that was mentioned in the conversation. |
 | [MessageReaction object](#messagereaction-object) | Defines a reaction to a message. |
@@ -388,12 +426,13 @@ Schema defines the object and its properties that your bot can use to communicat
 | [ReceiptCard object](#receiptcard-object) | Defines a card that contains a receipt for a purchase. |
 | [ReceiptItem object](#receiptitem-object) | Defines a line item within a receipt. |
 | [ResourceResponse object](#resourceresponse-object) | Defines a resource. |
+| [SemanticAction object](#semanticaction-object) | Defines a reference to a programmatic action. |
 | [SignInCard object](#signincard-object) | Defines a card that lets a user sign in to a service. |
 | [SuggestedActions object](#suggestedactions-object) | Defines the options from which a user can choose. |
 | [ThumbnailCard object](#thumbnailcard-object) | Defines a card with a thumbnail image, title, text, and action buttons. |
 | [ThumbnailUrl object](#thumbnailurl-object) | Defines the URL to an image's source. |
+| [Transcript object](#transcript-object) | A collection of activities to be uploaded using [Send Conversation History](#send-conversation-history). |
 | [VideoCard object](#videocard-object) | Defines a card that can play videos. |
-| [SemanticAction object](#semanticaction-object) | Defines a reference to a programmatic action. |
 
 ### Activity object
 Defines a message that is exchanged between bot and user.<br/><br/> 
@@ -421,7 +460,7 @@ Defines a message that is exchanged between bot and user.<br/><br/>
 | **relatesTo** | [ConversationReference](#conversationreference-object) | A **ConversationReference** object that defines a particular point in a conversation. |
 | **replyToId** | string | The ID of the message to which this message replies. To reply to a message that the user sent, set this property to the ID of the user's message. Not all channels support threaded replies. In these cases, the channel will ignore this property and use time ordered semantics (timestamp) to append the message to the converasation. | 
 | **serviceUrl** | string | URL that specifies the channel's service endpoint. Set by the channel. | 
-| **speak** | string | Text to be spoken by your bot on a speech-enabled channel. To control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, and pitch, specify this property in <a href="https://msdn.microsoft.com/en-us/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a> format. |
+| **speak** | string | Text to be spoken by your bot on a speech-enabled channel. To control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, and pitch, specify this property in <a href="https://msdn.microsoft.com/library/hh378377(v=office.14).aspx" target="_blank">Speech Synthesis Markup Language (SSML)</a> format. |
 | **suggestedActions** | [SuggestedActions](#suggestedactions-object) | A **SuggestedActions** object that defines the options from which the user can choose. |
 | **summary** | string | Summary of the information that the message contains. For example, for a message that is sent on an email channel, this property may specify the first 50 characters of the email message. |
 | **text** | string | Text of the message that is sent from user to bot or bot to user. See the channel's documentation for limits imposed upon the contents of this property. |
@@ -467,7 +506,7 @@ Defines additional information to include in the message. An attachment may be a
 <a href="#objects">Back to Schema table</a>
 
 ### AttachmentData object 
-Describes an attachment data.
+Describes an attachment data.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
@@ -475,6 +514,8 @@ Describes an attachment data.
 | **originalBase64** | string | Attachment content. |
 | **thumbnailBase64** | string | Attachment thumbnail content. |
 | **type** | string | Content-type of the attachment. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### AttachmentInfo object
 Describes an attachment.<br/><br/> 
@@ -595,15 +636,25 @@ Defines a conversation in a channel.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **id** | string | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversion, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see Starting a conversation). |
+| **id** | string | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversation, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see Starting a conversation). |
 | **isGroup** | boolean | Flag to indicate whether the conversation contains more than two participants at the time the activity was generated. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
 | **name** | string | A display name that can be used to identify the conversation. |
 | **conversationType** | string | Indicates the type of the conversation in channels that distingish between conversation types (e.g.: group, personal). |
 
 <a href="#objects">Back to Schema table</a>
 
+### ConversationMembers object
+Defines the members of a conversation.<br/><br/>
+
+| Property | Type | Description |
+|----|----|----|
+| **id** | string | The conversation ID. |
+| **members** | array | An array of [ChannelAccount](#channelaccount-object) objects. |
+
+<a href="#objects">Back to Schema table</a>
+
 ### ConversationParameters object
-Define parameters for creating a new conversation
+Define parameters for creating a new conversation.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
@@ -613,6 +664,8 @@ Define parameters for creating a new conversation
 | **topicName** | string | Topic title of a conversation. This property is only used if a channel supports it. |
 | **activity** | [Activity](#activity-object) | (optional) Use this activity as the initial message to the conversation when creating a new conversation. |
 | **channelData** | object | Channel specific payload for creating the conversation. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### ConversationReference object
 Defines a particular point in a conversation.<br/><br/>
@@ -629,7 +682,7 @@ Defines a particular point in a conversation.<br/><br/>
 <a href="#objects">Back to Schema table</a>
 
 ### ConversationResourceResponse object
-Defines a response that contains a resource.
+Defines a response to [Create Conversation](#create-conversation).<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
@@ -637,8 +690,20 @@ Defines a response that contains a resource.
 | **id** | string | ID of the resource. |
 | **serviceUrl** | string | Service endpoint. |
 
+<a href="#objects">Back to Schema table</a>
+
+### ConversationsResult object
+Defines the result of [Get Conversations](#get-conversations).<br/><br/> 
+
+| Property | Type | Description |
+|----|----|----|
+| **continuationToken** | string | The continuation token that can be used in subsequent calls to [Get Conversations](#get-conversations). |
+| **conversations** | array | An array of [ConversationMembers](#conversationmembers-object) objects |
+
+<a href="#objects">Back to Schema table</a>
+
 ### Error object
-Defines an error.<br/><br/>
+Defines an error.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
@@ -648,12 +713,13 @@ Defines an error.<br/><br/>
 <a href="#objects">Back to Schema table</a>
 
 ### Entity object
-Defines an entity object.
+Defines an entity object.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
 | **type** | string | Entity type. Typically contain types from schema.org. |
 
+<a href="#objects">Back to Schema table</a>
 
 ### ErrorResponse object
 Defines an HTTP API response.<br/><br/> 
@@ -674,7 +740,7 @@ Defines a key-value pair that contains a fact.<br/><br/>
 
 <a href="#objects">Back to Schema table</a>
 
-### Geocoordinates object
+### GeoCoordinates object
 Defines a geographical location using World Geodetic System (WSG84) coordinates.<br/><br/> 
 
 | Property | Type | Description |
@@ -712,11 +778,13 @@ Identifies a resource.<br/><br/>
 <a href="#objects">Back to Schema table</a>
 
 ### MediaEventValue object 
-Supplementary parameter for media events.
+Supplementary parameter for media events.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
 | **cardValue** | object | Callback parameter specified in the **Value** field of the media card that originated this event. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### MediaUrl object
 Defines the URL to a media file's source.<br/><br/> 
@@ -742,11 +810,13 @@ Defines a user or bot that was mentioned in the conversation.<br/><br/>
 <a href="#objects">Back to Schema table</a>
 
 ### MessageReaction object
-Defines a reaction to a message.
+Defines a reaction to a message.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
 | **type** | string | Type of reaction. |
+
+<a href="#objects">Back to Schema table</a>
 
 ### Place object
 Defines a place that was mentioned in the conversation.<br/><br/> 
@@ -795,10 +865,19 @@ Defines a line item within a receipt.<br/><br/>
 ### ResourceResponse object
 Defines a response that contains a resource ID.<br/><br/>
 
-
 |      Property       |  Type  |                Description                |
 |---------------------|--------|-------------------------------------------|
 | <strong>id</strong> | string | ID that uniquely identifies the resource. |
+
+<a href="#objects">Back to Schema table</a>
+
+### SemanticAction object
+Defines a reference to a programmatic action.<br/><br/>
+
+| Property | Type | Description |
+|----|----|----|
+| **id** | string | ID of this action |
+| **entities** | [Entity](#entity-object) | Entities associated with this action |
 
 <a href="#objects">Back to Schema table</a>
 
@@ -846,6 +925,15 @@ Defines the URL to an image's source.<br/><br/>
 
 <a href="#objects">Back to Schema table</a>
 
+### Transcript object
+A collection of activities to be uploaded using [Send Conversation History](#send-conversation-history).<br/><br/> 
+
+| Property | Type | Description |
+|----|----|----|
+| **activities** | array | An array of [Activity](#activity-object) objects. They should each have a unique ID and timestamp. |
+
+<a href="#objects">Back to Schema table</a>
+
 ### VideoCard object
 Defines a card that can play videos.<br/><br/>
 
@@ -863,15 +951,5 @@ Defines a card that can play videos.<br/><br/>
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
 | **title** | string | Title of the card. |
 | **value** | object | Supplementary parameter for this card|
-
-<a href="#objects">Back to Schema table</a>
-
-### SemanticAction object
-Defines a reference to a programmatic action.<br/><br/>
-
-| Property | Type | Description |
-|----|----|----|
-| **id** | string | ID of this action |
-| **entities** | [Entity](#entity-object) | Entities associated with this action |
 
 <a href="#objects">Back to Schema table</a>

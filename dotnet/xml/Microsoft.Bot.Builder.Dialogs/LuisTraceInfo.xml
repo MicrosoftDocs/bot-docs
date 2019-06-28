@@ -53,7 +53,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("luisModel")</AttributeName>
         </Attribute>
       </Attributes>
@@ -82,7 +82,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("luisOptions")</AttributeName>
         </Attribute>
       </Attributes>
@@ -111,7 +111,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty("luisResult")</AttributeName>
         </Attribute>
       </Attributes>

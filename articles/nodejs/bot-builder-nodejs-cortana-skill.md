@@ -53,7 +53,7 @@ The **inputHint** property helps indicate to Cortana whether your bot is expecti
 |------|------|
 | **acceptingInput** | Your bot is passively ready for input but is not waiting on a response. Cortana accepts input from the user if the user holds down the microphone button.|
 | **expectingInput** | Indicates that the bot is actively expecting a response from the user. Cortana listens for the user to speak into the microphone.  |
-||NOTE: Do _not_ use **expectingInput** on headless devices (devices without a display). See the [Cortana Skills Kit FAQ](https://review.docs.microsoft.com/en-us/cortana/skills/faq).|
+||NOTE: Do _not_ use **expectingInput** on headless devices (devices without a display). See the [Cortana Skills Kit FAQ](https://review.docs.microsoft.com/cortana/skills/faq).|
 | **ignoringInput** | Cortana is ignoring input. Your bot may send this hint if it is actively processing a request, and will ignore input from users until the request is complete.  |
 
 The following example shows how Cortana reads plain text or SSML:
@@ -151,9 +151,9 @@ module.exports.speak = function (template, params, options) {
 ## Display cards in Cortana
 
 In addition to spoken responses, Cortana can also display card attachments. Cortana supports the following rich cards:
-* [HeroCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.herocard.html)
-* [ReceiptCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html)
-* [ThumbnailCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html)
+* [HeroCard](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.herocard.html)
+* [ReceiptCard](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.receiptcard.html)
+* [ThumbnailCard](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.thumbnailcard.html)
 
 See [Card design best practices][CardDesign] to see what these cards look like inside Cortana. For an example of how to add a rich card to a bot, see [Send rich cards](bot-builder-nodejs-send-rich-cards.md). 
 
@@ -431,9 +431,9 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 
 
 [SSMLRef]: https://aka.ms/cortana-ssml
-[IMessage]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage.html
-[Send]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session#send
-[CortanaDevCenter]: https://developer.microsoft.com/en-us/cortana
+[IMessage]: https://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage.html
+[Send]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#send
+[CortanaDevCenter]: https://developer.microsoft.com/cortana
 
 [CortanaSpecificEntities]: https://aka.ms/lgvcto
 [CortanaAuth]: https://aka.ms/vsdqcj
@@ -445,6 +445,5 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 [Cortana-Publish]: https://aka.ms/cortana-publish
 
 
-[CortanaTry]: https://aka.ms/try-cortana-bot
 [CortanaChannel]: https://aka.ms/bot-cortana-channel
 [Cortana-TestBestPractice]: https://aka.ms/cortana-test-best-practice

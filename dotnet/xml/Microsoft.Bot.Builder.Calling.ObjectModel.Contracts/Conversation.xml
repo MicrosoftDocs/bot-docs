@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+    <Attribute>
       <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,7 +56,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -81,7 +81,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Always)</AttributeName>
         </Attribute>
       </Attributes>
@@ -108,7 +108,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
         </Attribute>
       </Attributes>
@@ -135,7 +135,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Always)</AttributeName>
         </Attribute>
       </Attributes>
@@ -162,7 +162,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Always)</AttributeName>
         </Attribute>
       </Attributes>
@@ -189,7 +189,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
         </Attribute>
       </Attributes>
@@ -216,7 +216,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
         </Attribute>
       </Attributes>
@@ -243,7 +243,7 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
         </Attribute>
       </Attributes>

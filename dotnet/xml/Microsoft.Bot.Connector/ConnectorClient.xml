@@ -12,6 +12,7 @@
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.ConnectorClient&gt;</BaseTypeName>
@@ -74,6 +75,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
@@ -109,6 +111,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -149,6 +152,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -181,6 +185,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
@@ -220,6 +225,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -260,6 +266,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -299,6 +306,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -345,6 +353,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -391,6 +400,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -434,12 +444,13 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="3" FrameworkAlternate="botbuilder-dotnet-stable">
           <Attributes>
             <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
@@ -472,10 +483,10 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0">
           <Attributes>
             <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
               <AttributeName>System.ParamArray</AttributeName>
@@ -507,6 +518,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -557,6 +569,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -591,13 +604,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials" />
-        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="4" FrameworkAlternate="botbuilder-dotnet-stable">
           <Attributes>
             <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
@@ -630,11 +644,11 @@
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
-        <Parameter Name="httpClientHandler" Type="System.Net.Http.HttpClientHandler" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="httpClientHandler" Type="System.Net.Http.HttpClientHandler" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="4" FrameworkAlternate="botbuilder-dotnet-3.0">
           <Attributes>
             <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
               <AttributeName>System.ParamArray</AttributeName>
@@ -661,14 +675,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials" />
-        <Parameter Name="httpClientHandler" Type="System.Net.Http.HttpClientHandler" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
-        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="httpClientHandler" Type="System.Net.Http.HttpClientHandler" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="5" FrameworkAlternate="botbuilder-dotnet-stable">
           <Attributes>
             <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
               <AttributeName>System.ParamArray</AttributeName>
@@ -689,6 +704,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AddDefaultRequestHeaders">
+      <MemberSignature Language="C#" Value="public static void AddDefaultRequestHeaders (System.Net.Http.HttpClient httpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddDefaultRequestHeaders(class System.Net.Http.HttpClient httpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConnectorClient.AddDefaultRequestHeaders(System.Net.Http.HttpClient)" />
+      <MemberSignature Language="F#" Value="static member AddDefaultRequestHeaders : System.Net.Http.HttpClient -&gt; unit" Usage="Microsoft.Bot.Connector.ConnectorClient.AddDefaultRequestHeaders httpClient" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Attachments">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IAttachments Attachments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IAttachments Attachments" />
@@ -704,6 +741,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IAttachments</ReturnType>
@@ -734,6 +772,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -761,6 +800,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversations</ReturnType>
@@ -788,6 +828,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -815,6 +856,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -839,6 +881,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -862,6 +905,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -885,6 +929,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -897,7 +942,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="client" Type="T" />
+        <Parameter Name="client" Type="T" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -919,6 +964,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -945,6 +991,7 @@
         <AssemblyVersion>4.0.7.0</AssemblyVersion>
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>

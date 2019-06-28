@@ -1,9 +1,13 @@
-# Enterprise template
-## [Overview](../v4sdk/bot-builder-enterprise-template-overview.md)
-## [Get Started](../v4sdk/bot-builder-enterprise-template-getting-started.md)
-## [Customize template](../v4sdk/bot-builder-enterprise-template-customize.md)
-# Virtual Assistant 
+# Virtual Assistant
 ## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
+## [Template Introduction](../v4sdk/bot-builder-virtual-assistant-template.md)
+## [Getting Started](../v4sdk/bot-builder-virtual-assistant-gettingstarted.md)
+# Skills 
+## [Overview](../v4sdk/bot-builder-skills-overview.md)
+## [Getting Started](../v4sdk/bot-builder-skills-gettingstarted.md)
+# WebChat
+## [Overview](../v4sdk/bot-builder-webchat-overview.md)
+## [Customization](../v4sdk/bot-builder-webchat-customization.md)
 # [FAQ](../bot-service-resources-bot-framework-faq.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Channel reference](../bot-service-channels-reference.md)

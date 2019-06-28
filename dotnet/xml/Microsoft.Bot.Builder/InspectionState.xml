@@ -1,0 +1,65 @@
+﻿<Type Name="InspectionState" FullName="Microsoft.Bot.Builder.InspectionState">
+  <TypeSignature Language="C#" Value="public class InspectionState : Microsoft.Bot.Builder.BotState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InspectionState extends Microsoft.Bot.Builder.BotState" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.InspectionState" />
+  <TypeSignature Language="VB.NET" Value="Public Class InspectionState&#xA;Inherits BotState" />
+  <TypeSignature Language="F#" Value="type InspectionState = class&#xA;    inherit BotState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.BotState</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InspectionState (Microsoft.Bot.Builder.IStorage storage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.IStorage storage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionState.#ctor(Microsoft.Bot.Builder.IStorage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storage As IStorage)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.InspectionState : Microsoft.Bot.Builder.IStorage -&gt; Microsoft.Bot.Builder.InspectionState" Usage="new Microsoft.Bot.Builder.InspectionState storage" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
+      </Parameters>
+      <Docs>
+        <param name="storage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStorageKey">
+      <MemberSignature Language="C#" Value="protected override string GetStorageKey (Microsoft.Bot.Builder.ITurnContext turnContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetStorageKey(class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionState.GetStorageKey(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetStorageKey (turnContext As ITurnContext) As String" />
+      <MemberSignature Language="F#" Value="override this.GetStorageKey : Microsoft.Bot.Builder.ITurnContext -&gt; string" Usage="inspectionState.GetStorageKey turnContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

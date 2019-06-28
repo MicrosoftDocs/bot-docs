@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
 ms.date: 2/13/2018
+monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Create task automation bots
@@ -26,8 +27,6 @@ The Contoso company receives several help desk calls each day from employees who
 
 John, an experienced developer from Contoso, decides to create a bot to automate the password-reset task. 
 He begins by writing a design specification for the bot, just as he would do if he were creating a new app or website. 
-
-::: moniker range="azure-bot-service-3.0"
 
 ### Navigation model
 
@@ -93,8 +92,6 @@ Finally, the spec provides an example of a user communicating with the bot to su
 
 ![Dialog Structure](~/media/bot-service-design-pattern-task-automation/simple-task5.png)
 
-::: moniker-end 
-
 ## Bot, app, or website?
 
 You may be wondering, if a task automation bot closely resembles an app or website, why not just build an app or website instead? 
@@ -113,7 +110,6 @@ For example, a developer may choose to add natural language and speech capabilit
 or she may add support for text messages. 
 The company may setup kiosks throughout the building and embed the password-reset bot into that experience.
 
-::: moniker range="azure-bot-service-3.0"
 <!-- TODO: SimpleTaskAutomation no longer exists
 ## Sample code
 
@@ -128,6 +124,5 @@ For a complete sample that shows how to implement simple task automation using t
 - [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
 
-::: moniker-end
 
-[directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
+[directLineAPI]: https://docs.botframework.com/restapi/directline3/#navtitle

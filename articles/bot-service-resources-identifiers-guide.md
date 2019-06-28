@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 12/13/2017
+ms.date: 04/30/2019
 
 ---
 
@@ -35,16 +35,16 @@ casing, and thus bots may use ordinal comparisons to establish equivalence.
 
 ## Bot Handle
 
-Every bot that has been registered with the Bot Framework has a bot handle.
+Every bot that has been registered with the Azure Bot Service has a bot handle.
 
 Example: `FooBot`
 
-A bot handle represents a bot's registration with the online Bot Framework. This registration is associated
+A bot handle represents a bot's registration with the online Azure Bot Service. This registration is associated
 with an HTTP webhook endpoint and registrations with channels.
 
-The Bot Framework dev portal ensures uniqueness of bot handles. The portal performs a case-insensitive
+The Azure Bot Service ensures uniqueness of bot handles. The Azure portal performs a case-insensitive
 uniqueness check (meaning that case variations of bot handle are treated as a single handle) although this is
-a characteristic of the dev portal, and not necessarily the bot handle itself.
+a characteristic of the Azure portal, and not necessarily the bot handle itself.
 
 ### Rules for bot handles
 
@@ -52,7 +52,7 @@ a characteristic of the dev portal, and not necessarily the bot handle itself.
 
 ## App ID
 
-Every bot that has been registered with the Bot Framework has an App ID.
+Every bot that has been registered with the Azure Bot Service has an App ID.
 
 > [!NOTE]
 > Previously, apps were commonly referred to as "MSA Apps" or "MSA/AAD Apps." Apps are now more commonly referred to simply as "apps", but some protocol elements may refer to apps as "MSA Apps" in perpetuity.
@@ -68,8 +68,7 @@ app is associated with their bot, the Bot Framework team can do so in a small nu
 
 Bots and channels may use app IDs to uniquely identify a registered bot.
 
-App IDs are guaranteed to be GUIDs. App IDs should
-be compared without case sensitivity.
+App IDs are guaranteed to be GUIDs. App IDs should be compared without case sensitivity.
 
 ### Rules for app IDs
 
