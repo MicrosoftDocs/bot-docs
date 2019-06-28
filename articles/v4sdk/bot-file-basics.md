@@ -134,4 +134,4 @@ If needed, provision resources and connect them to your bot using the appsetting
 
 ## Additional resources
 - For steps to deploy the bot, see [deployment](../bot-builder-deploy-az-cli.md) topic.
-- Learn how to use [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-overview) to safeguard and manage cryptographic keys and secrets used by cloud applications and services.
+- Learn how to use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview) to safeguard and manage cryptographic keys and secrets used by cloud applications and services.

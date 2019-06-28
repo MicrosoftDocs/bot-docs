@@ -39,7 +39,7 @@ The bot may decide whether or not to transfer control based upon whether or not 
 Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent. 
  
 The bot analyzes the content of the user's messages 
-by using the <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="blank">Text Analytics API</a> 
+by using the <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a> 
 to infer sentiment 
 or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>. 
 
@@ -82,7 +82,7 @@ After the agent connects to the bot, the bot begins to route messages between us
 ::: moniker range="azure-bot-service-4.0"
 
 - [Dialogs](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
-- <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="blank">Text Analytics API</a>
+- <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ After the agent connects to the bot, the bot begins to route messages between us
 
 - [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
 - [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
-- <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api" target="blank">Text Analytics API</a>
+- <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
 
 
 ::: moniker-end

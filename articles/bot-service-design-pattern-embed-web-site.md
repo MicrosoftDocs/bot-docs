@@ -65,4 +65,4 @@ The <a href="https://aka.ms/BotFramework-WebChat" target="_blank">open source we
 - [Open source web chat control](https://github.com/Microsoft/BotFramework-WebChat)
 - [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
 
-[directLineAPI]: https://docs.botframework.com/en-us/restapi/directline3/#navtitle
+[directLineAPI]: https://docs.botframework.com/restapi/directline3/#navtitle

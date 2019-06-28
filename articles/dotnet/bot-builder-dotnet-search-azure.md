@@ -19,7 +19,7 @@ monikerRange: 'azure-bot-service-3.0'
 > - [.NET](../dotnet/bot-builder-dotnet-search-azure.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-search-azure.md)
 
-You can add [Azure Search](https://azure.microsoft.com/en-us/services/search/) to a bot to help users navigate large amounts of content and create a data-driven exploration experience.
+You can add [Azure Search](https://azure.microsoft.com/services/search/) to a bot to help users navigate large amounts of content and create a data-driven exploration experience.
 
 Azure Search is an Azure service that offers keyword search, built-in linguistics, custom scoring, faceted navigation, and more. Azure Search can also index content from various sources, including Azure SQL DB, DocumentDB, Blob Storage, and Table Storage. It supports "push" indexing for other sources of data, and it can open PDFs, Office documents, and other formats containing unstructured data. Once collected, the content goes into an Azure Search index, which the bot can then query.
 

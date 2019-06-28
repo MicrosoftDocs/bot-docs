@@ -41,11 +41,11 @@ Be aware that the `imBack` method will post the `value` to the chat window of th
 - [ICardAction][ICardAction]
 - [session.send][SessionSend]
 
-[IMessage]: http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
+[IMessage]: http://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.imessage
 
-[SessionSend]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#send
+[SessionSend]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#send
 
-[ICardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.icardaction.html
+[ICardAction]: https://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.icardaction.html
 
 <!-- The inspector is no longer supported: we're redirecting to the samples for now. -->
 [samples]: https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples

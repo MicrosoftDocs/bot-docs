@@ -66,15 +66,15 @@ If the **App ID** field is empty, complete these steps:
 
 V1 bots are no longer compatible. To update your bot you will need to create a new bot under V3 instead. If you want to preserve any of your old code you will have to migrate your code manually.
 
-The easiest solution is to recreate your bot with the new [SDK](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0) and deploy it. 
+The easiest solution is to recreate your bot with the new [SDK](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0) and deploy it. 
 
 If you wish to preserve your old code, follow the steps below:
 
 1. Create a new Bot application.
 2. Copy over your old code to your new Bot application.
 3. Upgrade the SDK to the latest version via the Nuget package manager.
-4. Fix any errors that appear, reference the new [SDK](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0).
-5. Deploy your bot to Azure by following these [instructions](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0)
+4. Fix any errors that appear, reference the new [SDK](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0).
+5. Deploy your bot to Azure by following these [instructions](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0)
 
 <!-- TODO: Remove outdated code 
 To update your bot code to version 3.0, complete these steps:
@@ -160,7 +160,7 @@ Bot Framework API v3 stores the authentication properties with these keys in **W
 
 ## <a id="step-3"></a> Step 3: Deploy your Update Bot to Azure.
 
-After you have upgraded your bot code to API v3 simply deploy the bot to Azure following these [instructions](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0). Since V1 is no longer supported, all bots will automatically use the V3 API when deployed to the Azure services.
+After you have upgraded your bot code to API v3 simply deploy the bot to Azure following these [instructions](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0). Since V1 is no longer supported, all bots will automatically use the V3 API when deployed to the Azure services.
 
 <!-- TODO: Documentation set for removal 
 1. Sign in to the [Bot Framework Portal](https://dev.botframework.com/).
