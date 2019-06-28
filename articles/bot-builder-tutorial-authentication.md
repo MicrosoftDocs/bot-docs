@@ -85,7 +85,7 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
 > in which you can consent to delegate permissions requested by an application.
 
 1. Open the [Azure Active Directory][azure-aad-blade] panel in the Azure portal.
-    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
+    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, click **New registration**.
 1. Fill in the required fields and create the app registration.

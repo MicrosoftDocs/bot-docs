@@ -45,7 +45,7 @@ The action precedence is important in cases where you use the same command in di
 
 ## Bind actions to dialog
 
-Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
+Either user utterances or button clicks can *trigger* an action, which is associated with a [dialog](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html).
 If *matches* is specified, the action will listen for the user to say a word or a phrase that triggers the action.  The `matches` option can take a regular expression or the name of a [recognizer][RecognizeIntent].
 To bind the action to a button click, use [CardAction.dialogAction()][CardAction] to trigger the action.
 
@@ -112,7 +112,7 @@ bot.customAction({
 
 ### Bind a beginDialogAction
 
-Binding a `beginDialogAction` to a dialog will register the action to the dialog. This method will start another dialog when it is triggered. The behavior of this action is similar to calling the [beginDialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#begindialog) method. The new dialog is pushed onto the top of the dialog stack so it does not automatically end the current task. The current task is continued once the new dialog ends. 
+Binding a `beginDialogAction` to a dialog will register the action to the dialog. This method will start another dialog when it is triggered. The behavior of this action is similar to calling the [beginDialog](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#begindialog) method. The new dialog is pushed onto the top of the dialog stack so it does not automatically end the current task. The current task is continued once the new dialog ends. 
 
 The following code snippet shows how to bind a [beginDialogAction][beginDialogAction] to a dialog.
 
@@ -138,7 +138,7 @@ bot.dialog('showDinnerCart', function(session){
 });
 ```
 
-In cases where you need to pass additional arguments into the new dialog, you can add a [`dialogArgs`](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#dialogargs) option to the action.
+In cases where you need to pass additional arguments into the new dialog, you can add a [`dialogArgs`](https://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#dialogargs) option to the action.
 
 Using the sample above, you can modify it to accept arguments passed in via the `dialogArgs`.
 
@@ -174,7 +174,7 @@ bot.dialog('showDinnerCart', function(session, args){
 
 ### Bind a reloadAction
 
-Binding a `reloadAction` to a dialog will register it to the dialog. Binding this action to a dialog causes the dialog to restart when the action is triggered. Triggering this action is similar to calling the [replaceDialog](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#replacedialog) method. This is useful for implementing logic to handle user utterances like "start over" or to create [loops](bot-builder-nodejs-dialog-replace.md#repeat-an-action).
+Binding a `reloadAction` to a dialog will register it to the dialog. Binding this action to a dialog causes the dialog to restart when the action is triggered. Triggering this action is similar to calling the [replaceDialog](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#replacedialog) method. This is useful for implementing logic to handle user utterances like "start over" or to create [loops](bot-builder-nodejs-dialog-replace.md#repeat-an-action).
 
 The following code snippet shows how to bind a [reloadAction][reloadAction] to a dialog.
 
@@ -189,7 +189,7 @@ bot.dialog('orderDinner', [
 });
 ```
 
-In cases where you need to pass additional arguments into the reloaded dialog, you can add a [`dialogArgs`](https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#dialogargs) option to the action. This option is passed into the `args` parameter. Rewriting the sample code above to receive an argument on a reload action will look something like this:
+In cases where you need to pass additional arguments into the reloaded dialog, you can add a [`dialogArgs`](https://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.idialogactionoptions#dialogargs) option to the action. This option is passed into the `args` parameter. Rewriting the sample code above to receive an argument on a reload action will look something like this:
 
 ```javascript
 // Order dinner.
@@ -232,7 +232,7 @@ bot.dialog('orderDinner', [
 
 ### Bind an endConversationAction
 
-Binding an `endConversationAction` will register it to the dialog. Once triggered, this action ends the conversation with the user. Triggering this action is similar to calling the [endConversation](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation) method. Once a conversation ends, the Bot Framework SDK for Node.js will clear the dialog stack and persisted state data. For more information on persisted state data, see [Manage state data](bot-builder-nodejs-state.md).
+Binding an `endConversationAction` will register it to the dialog. Once triggered, this action ends the conversation with the user. Triggering this action is similar to calling the [endConversation](https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html#endconversation) method. Once a conversation ends, the Bot Framework SDK for Node.js will clear the dialog stack and persisted state data. For more information on persisted state data, see [Manage state data](bot-builder-nodejs-state.md).
 
 The following code snippet shows how to bind an [endConversationAction][endConversationAction] to a dialog.
 
@@ -251,7 +251,7 @@ bot.dialog('orderDinner', [
 
 Most, if not, all of these actions interrupt the normal flow of a conversation. Many are disruptive and should be handle with care. For example, the `triggerAction`, `cancelAction`, or the `endConversationAction` will clear the dialog stack. If the user made the mistake of triggering either of these actions, they will have to start the task over again. To make sure the user really intended to trigger these actions, you can add a `confirmPrompt` option to these actions. The `confirmPrompt` will ask if the user is sure about canceling or ending the current task. It allows the user to change their minds and continue the process.
 
-The code snippet below shows a [cancelAction][cancelAction] with a [confirmPrompt](http://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#confirmprompt) to make sure the user really wants to cancel the order process.
+The code snippet below shows a [cancelAction][cancelAction] with a [confirmPrompt](http://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.itriggeractionoptions#confirmprompt) to make sure the user really wants to cancel the order process.
 
 ```javascript
 // Order dinner.
@@ -276,16 +276,16 @@ Once this action is triggered, it will ask the user "Are you sure?" The user wil
 > [Manage state data](bot-builder-nodejs-state.md)
 
 
-[triggerAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
+[triggerAction]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#triggeraction
 
-[cancelAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#cancelaction
+[cancelAction]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#cancelaction
 
-[reloadAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction
+[reloadAction]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#reloadaction
 
-[beginDialogAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#begindialogaction
+[beginDialogAction]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#begindialogaction
 
-[endConversationAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction
+[endConversationAction]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.dialog.html#endconversationaction
 
 [RecognizeIntent]: bot-builder-nodejs-recognize-intent-messages.md
 
-[CardAction]: https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction
+[CardAction]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.cardaction#dialogaction

@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-If a bot uses multiple LUIS models and QnA Maker knowledge bases (KBs), you can use Disptach tool to determince which LUIS model or QnA Maker KB best maches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the corrrect model. For more information about the Disptach, including the CLI commands, refer to the [README][dispatch-readme].
+If a bot uses multiple LUIS models and QnA Maker knowledge bases (KBs), you can use Dispatch tool to determine which LUIS model or QnA Maker KB best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about the Dispatch, including the CLI commands, refer to the [README][dispatch-readme].
 
 ## Prerequisites
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna]. 
@@ -54,7 +54,7 @@ This sample is based on a predefined set of LUIS and QnA Maker Apps.
 The handler calls the LUIS or QnA Maker service and returns the generated result back to the user.
 
 ## Create LUIS apps and QnA KB
-Before you can create the dispatch model, you'll need to have your LUIS apps and QnA KBs created and published. In this article, we'll publish the following models that are inculded with the _NLP With Dispatch_ sample in the `\CognitiveModels` folder: 
+Before you can create the dispatch model, you'll need to have your LUIS apps and QnA KBs created and published. In this article, we'll publish the following models that are included with the _NLP With Dispatch_ sample in the `\CognitiveModels` folder: 
 
 | Name | Description |
 |------|------|
@@ -399,7 +399,7 @@ To delete QnA Maker resources:
 
 ### Best practice
 
-To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/best-practices).
+To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices).
 
 
 [howto-luis]: bot-builder-howto-v4-luis.md

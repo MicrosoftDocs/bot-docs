@@ -14,9 +14,9 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
 1. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
-1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/en-us/blog/understanding-azure-troubleshooting-and-support/).
+1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
 1. Test your bot on Skype. This will help you to validate the end-to-end user experience.
 1. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
@@ -32,7 +32,7 @@ For details about troubleshooting authentication issues with your bot, see [trou
 In Visual Studio 2017, go to **Debug** > **Windows** > **Exception Settings**. In the **Exceptions Settings** window, select the **Break When Thrown** checkbox next to **Common Language Runtime Exceptions**. You may also see diagnostics output in your Output window when there are thrown or unhandled exceptions.
 
 **Look at the call stack.**  
-In Visual Studio, you can choose whether or you are debugging [Just My Code](https://msdn.microsoft.com/en-us/library/dn457346.aspx) or not. Examining the full call stack may provide additional insight into any issues.
+In Visual Studio, you can choose whether or you are debugging [Just My Code](https://msdn.microsoft.com/library/dn457346.aspx) or not. Examining the full call stack may provide additional insight into any issues.
 
 **Ensure all dialog methods end with a plan to handle the next message.**  
 All dialog steps need to feed into the next step of the waterfall, or end the current dialog to pop it off the stack. If a step is not correctly handled, the conversation will not continue like you expect. Take a look at the concept article for [dialogs](v4sdk/bot-builder-concept-dialog.md) for more on dialogs.
@@ -58,7 +58,7 @@ If you examine traces or audit logs, you can check to make sure your messages ar
 
 ## How can I run background tasks in ASP.NET? 
 
-In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/en-us/library/dn636893(v=vs.110).aspx). 
+In some cases, you may want to initiate an asynchronous task that waits for a few seconds and then executes some code to clear the user profile or reset conversation/dialog state. For details about how to achieve this, see [How to run Background Tasks in ASP.NET](https://www.hanselman.com/blog/HowToRunBackgroundTasksInASPNET.aspx). In particular, consider using [HostingEnvironment.QueueBackgroundWorkItem](https://msdn.microsoft.com/library/dn636893(v=vs.110).aspx). 
 
 
 ## How do user messages relate to HTTPS method calls?
@@ -103,11 +103,11 @@ Did you change your Facebook password? Doing so will invalidate the access token
 
 ## Why is my Kik bot replying "I'm sorry, I can't talk right now"?
 
-Bots in development on Kik are allowed 50 subscribers. After 50 unique users have interacted with your bot, any new user that attempts to chat with your bot will receive the message "I'm sorry, I can't talk right now." For more information, see [Kik documentation](https://botsupport.kik.com/hc/en-us/articles/225764648-How-can-I-share-my-bot-with-Kik-users-while-in-development-).
+Bots in development on Kik are allowed 50 subscribers. After 50 unique users have interacted with your bot, any new user that attempts to chat with your bot will receive the message "I'm sorry, I can't talk right now." For more information, see [Kik documentation](https://botsupport.kik.com/hc/articles/225764648-How-can-I-share-my-bot-with-Kik-users-while-in-development-).
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp). 
+For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp). 
 
 > [!NOTE] 
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
@@ -153,7 +153,7 @@ For examples that show how to send proactive messages, see the [C# V4 samples](h
 There are multiple options:
 
 * Resolve the dependency through `Autofac` and `FiberModule.Key_DoNotSerialize`. This is the cleanest solution.
-* Use [NonSerialized](https://msdn.microsoft.com/en-us/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization. This is the simplest solution.
+* Use [NonSerialized](https://msdn.microsoft.com/library/system.nonserializedattribute(v=vs.110).aspx) and [OnDeserialized](https://msdn.microsoft.com/library/system.runtime.serialization.ondeserializedattribute(v=vs.110).aspx) attributes to restore the dependency on deserialization. This is the simplest solution.
 * Do not store that dependency, so that it won't be serialized. This solution, while technically feasible, is not recommended.
 * Use the reflection serialization surrogate. This solution may not be feasible in some cases and risks serializing too much.
 
@@ -251,7 +251,7 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
 * [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](/azure/cognitive-services/LUIS/Home)
-* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=LUIS) 
+* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS) 
 
 
 ## What are some community-authored dialogs?
