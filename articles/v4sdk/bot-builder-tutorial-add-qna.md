@@ -83,9 +83,9 @@ Add the following values to you appsetting.json file:
   "MicrosoftAppPassword": "",
   "ScmType": "None",
   
-  "QnAKnowledgebaseId": "<knowledge-base-id>",
-  "QnAAuthKey": "<qna-maker-resource-key>",
-  "QnAEndpointHostName": "<your-hostname>" // This is a URL ending in /qnamaker
+  "QnAKnowledgebaseId": "knowledge-base-id",
+  "QnAAuthKey": "qna-maker-resource-key",
+  "QnAEndpointHostName": "your-hostname" // This is a URL ending in /qnamaker
 }
 ```
 
@@ -98,9 +98,9 @@ MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
 
-QnAKnowledgebaseId="<knowledge-base-id>"
-QnAAuthKey="<qna-maker-resource-key>"
-QnAEndpointHostName="<your-hostname>" // This is a URL ending in /qnamaker
+QnAKnowledgebaseId="knowledge-base-id"
+QnAAuthKey="qna-maker-resource-key"
+QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
 ```
 
 ---
@@ -257,7 +257,7 @@ Update your initialization code to load the service information for your knowled
             this.qnaMaker = new QnAMaker(configuration, qnaOptions);
    ```
 
-1. Finally, update your your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
+1. Finally, update your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
 
     **bot.js**
 
@@ -303,7 +303,7 @@ We can now republish your bot back to Azure.
 
 # [C#](#tab/csharp)
 ```cmd
-az webapp deployment source config-zip --resource-group <resource-group-name> --name <bot-name-in-azure> --src "c:\bot\mybot.zip"
+az webapp deployment source config-zip --resource-group "resource-group-name" --name "bot-name-in-azure" --src "c:\bot\mybot.zip"
 ```
 
 # [JavaScript](#tab/javascript)
