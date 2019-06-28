@@ -21,7 +21,8 @@ monikerRange: 'azure-bot-service-3.0'
 > - [REST](../rest-api/bot-framework-rest-connector-add-media-attachments.md)
 
 A message exchange between user and bot can contain media attachments (e.g., image, video, audio, file). 
-The `Attachments` property of the <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.attachments?view=botconnector-3.12.2.4" target="_blank">Attachment</a> objects that represent the media attachments and rich cards within to the message. 
+
+The `Attachments` property of the <a href="https://docs.botframework.com/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity</a> object contains an array of <a href="https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.attachments?view=botconnector-3.12.2.4" target="_blank">Attachment</a> objects that represent the media attachments and rich cards within to the message. 
 
 > [!NOTE]
 > [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md).
@@ -41,7 +42,7 @@ If an attachment is an image, audio, or video, the Connector service will commun
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
 - [Add rich cards to messages](bot-builder-dotnet-add-rich-card-attachments.md)
-- <a href="https://docs.botframework.com/en-us/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
+- <a href="https://docs.botframework.com/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
 - <a href="https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.attachments?view=botconnector-3.12.2.4" target="_blank">Attachment class</a>
 
 [inspector]: ../bot-service-channel-inspector.md

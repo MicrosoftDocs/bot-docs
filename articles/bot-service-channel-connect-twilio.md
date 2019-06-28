@@ -21,7 +21,7 @@ If you don't have a Twilio account, <a href="https://www.twilio.com/try-twilio" 
 
 ## Create a TwiML Application
 
-<a href="https://support.twilio.com/hc/en-us/articles/223180928-How-Do-I-Create-a-TwiML-App-" target="_blank">Create a TwiML application</a> following the instructions.
+<a href="https://support.twilio.com/hc/articles/223180928-How-Do-I-Create-a-TwiML-App-" target="_blank">Create a TwiML application</a> following the instructions.
 
 ![Create app](~/media/channels/twi-StepTwiml.png)
 
@@ -29,7 +29,7 @@ Under **Properties**, enter a **FRIENDLY NAME**. In this tutorial we use "My Twi
 
 ## Select or add a phone number
 
-Follow the instructions <a href = "https://support.twilio.com/hc/en-us/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio" target="_blank">here</a> to add a verified caller ID via the console site. After you finish, you will see your verified number in **Active Numbers** under **Manage Numbers**.
+Follow the instructions <a href = "https://support.twilio.com/hc/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio" target="_blank">here</a> to add a verified caller ID via the console site. After you finish, you will see your verified number in **Active Numbers** under **Manage Numbers**.
 
 ![Set phone number](~/media/channels/twi-StepPhone.png)
 

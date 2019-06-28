@@ -1,5 +1,5 @@
 The <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">open source web chat control</a> 
-communicates with bots by using the [Direct Line API](https://docs.botframework.com/en-us/restapi/directline3/#navtitle), 
+communicates with bots by using the [Direct Line API](https://docs.botframework.com/restapi/directline3/#navtitle), 
 which allows `activities` to be sent back and forth between client and bot. 
 The most common type of activity is `message`, but there are other types as well. 
 For example, the activity type `typing` indicates that a user is typing or that the bot is working to compile a response. 

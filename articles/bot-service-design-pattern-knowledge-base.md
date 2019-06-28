@@ -96,7 +96,7 @@ For example, you could filter the result set above to contain only items where *
 ## QnA Maker
 
 Some knowledge bots may simply aim to answer frequently asked questions (FAQs). 
-<a href="https://www.microsoft.com/cognitive-services/en-us/qnamaker" target="_blank">QnA Maker</a> 
+<a href="https://www.microsoft.com/cognitive-services/qnamaker" target="_blank">QnA Maker</a> 
 is a powerful tool that's designed specifically for this use case. 
 QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site, plus it also allows you to manually configure your own custom list of questions and answers. 
 QnA Maker has natural language processing abilities, enabling it to even provide answers to questions that are worded slightly differently than expected. 
@@ -190,4 +190,4 @@ The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enab
 - For a sample that shows how to create more complex knowledge bots using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search" target="_blank">Search-powered Bots sample</a> in GitHub.
 -->
 
-[qnamakerTemplate]: https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle
+[qnamakerTemplate]: https://docs.botframework.com/azure-bot-service/templates/qnamaker/#navtitle
