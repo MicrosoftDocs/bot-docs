@@ -29,7 +29,7 @@ Chit-chat | A professional chit-chat model to provide standard answers to common
 Dispatcher | An integrated [Dispatch](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) model to identify whether a given utterance should be processed by LUIS or QnA Maker.
 Language support | Available in English, French, Italian, German, Spanish and Chinese
 Transcripts | Transcripts of all conversations stored in Azure Storage
-Telemetry  | [Application Insights](https://azure.microsoft.com/en-gb/services/application-insights/) integration to collect telemetry for all conversations
+Telemetry  | [Application Insights](https://azure.microsoft.com/services/application-insights/) integration to collect telemetry for all conversations
 Analytics | An example Power BI dashboard to get you started with insights into your conversational experiences.
 Automated deployment | Easy deployment of all aforementioned services using Azure ARM templates.
 
