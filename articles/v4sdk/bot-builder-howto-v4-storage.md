@@ -437,7 +437,7 @@ To use Blob storage in your bot, you'll need to get a few things set up before g
 
 ![Blob storage new account page](./media/blob-storage-new-account.png)
 
-3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** infomration.  
+3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** information.  
 4. Then click **Review + Create**.
 5. Once validation has been successful, click **Create**.
 
