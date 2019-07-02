@@ -109,7 +109,7 @@ Be sure that the **Microsoft.Bot.Builder.AI.QnA** NuGet package is installed for
 
 In **QnABot.cs**, in the `OnMessageActivityAsync` method, we create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in `appsettings.json` above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
-**Bots/QnABot.cs**
+**Bots/QnABot.cs**  
 [!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-37)]
 
 ## [JavaScript](#tab/js)
@@ -132,7 +132,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your bot code to get the appropriate answer based on the current context. If you are accessing your own knowledge base, change the _no answers found_ message below to provide useful instructions for your users.
 
-**QnABot.cs**
+**QnABot.cs**  
 [!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-52)]
 
 ## [JavaScript](#tab/js)
