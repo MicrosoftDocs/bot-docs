@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 05/23/2019
+ms.date: 07/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -101,15 +101,9 @@ To use a component dialog, add an instance of it to the bot's dialog set - this 
 
 # [C#](#tab/csharp)
 
-**DialogExtensions.cs**
+**Bots\DialoBot.cs**
 
-In the sample, this is done using the `Run` extension method as shown below.
-
-[!code-csharp[Run method](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/DialogExtensions.cs?range=13-24)]
-
-**Bots\DialogBot.cs**
-
-The `Run` method is called from the bot's `OnMessageActivityAsync` method.
+In the sample, this is done using the `RunAsync` method that is called from the bot's `OnMessageActivityAsync` method.
 
 [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48)]
 

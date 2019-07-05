@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.subservice: sdk
-ms.date: 05/23/2019
+ms.date: 07/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -181,7 +181,7 @@ When we receive a message from the user:
 
 # [C#](#tab/csharp)
 
-**DialogExtensions.cs**
+<!-- **DialogExtensions.cs**
 
 In this sample, we've defined a `Run` helper method that we will use to create and access the dialog context.
 Since component dialog defines an inner dialog set, we have to create an outer dialog set that's visible to the message handler code, and use that to create a dialog context.
@@ -191,9 +191,11 @@ Since component dialog defines an inner dialog set, we have to create an outer d
 
 [!code-csharp[Run method](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/DialogExtensions.cs?range=13-24)]
 
+-->
+
 **Bots\DialogBot.cs**
 
-The message handler calls the `Run` helper method to manage the dialog, and we've overridden the turn handler to save any changes to the conversation and user state that may have happened during the turn. The base `OnTurnAsync` will call the `OnMessageActivityAsync` method, ensuring the save calls happen at the end of that turn.
+The message handler calls the `RunAsync` method to manage the dialog, and we've overridden the turn handler to save any changes to the conversation and user state that may have happened during the turn. The base `OnTurnAsync` will call the `OnMessageActivityAsync` method, ensuring the save calls happen at the end of that turn.
 
 [!code-csharp[Overrides](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Bots/DialogBot.cs?range=33-48&highlight=5-7)]
 
