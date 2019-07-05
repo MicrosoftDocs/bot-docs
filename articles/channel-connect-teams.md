@@ -25,7 +25,9 @@ After adding the Teams channel, go to the **Channels** page and click on **Get b
 
 ![Get embed code](media/teams/get-embed-code.png)
 
-Only copy the **https** part of the code. For example, `https://teams.microsoft.com/l/chat/0/0?users=28:b8a22302e-9303-4e54-b348-343232`. In the browser, paste this address. You'll be prompted to use the Microsoft Teams client app or the web version. Choose the version that you use, and after the bot is added to Teams, you should be able to see the bot listed as a contact that you can send messages to and recieves messages from. 
+- Copy the _https_ part of the code that is showin in the **Get bot embed code** dialog. For example, `https://teams.microsoft.com/l/chat/0/0?users=28:b8a22302e-9303-4e54-b348-343232`. 
+
+- In the browser, paste this address and then choose the Microsoft Teams app (client or web) that you use to add the bot to Teams. You should be able to see the bot listed as a contact that you can send messages to and recieves messages from in Microsoft Teams. 
 
 ## Additional information
-For Microsoft Teams specific information, see Microsoft Teams [documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/overview). 
+For Microsoft Teams specific information, see Teams [documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/overview). 
