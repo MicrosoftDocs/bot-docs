@@ -8,11 +8,11 @@ manager: kamrani
 ms.topic: get-started-article
 ms.service: bot-service
 ms.subservice: abs
-ms.date: 05/23/2019
+ms.date: 07/15/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-## Use Direct Line Speech in your bot 
+# Use Direct Line Speech in your bot 
 
 [!INCLUDE [applies-to-v4](includes/applies-to.md)]
 
@@ -26,12 +26,24 @@ For the Direct Line Speech Preview there are additional NuGet packages you need 
 
 2.	Go to Manage Nuget Packages under the properties for your bot project.
 
-3.	If you don’t already have it as a source, add `https://botbuilder.myget.org/F/experimental/api/v3/index.json` as a feed from the 
-NuGet feed settings in the upper right.
+3.	Add the `Microsoft.Bot.Builder.StreamingExtensions` package. You will need to check the "Include prerelease" box to see the preview packages.
 
-4.	Select this NuGet source and add one of the `Microsoft.Bot.Protocol.StreamingExtensions.NetCore` package.
+4.	Accept any prompts to finish adding the package to your project.
 
-5.	Accept any prompts to finish adding the package to your project.
+## Set the Speak field on Activities you want spoken to the user
+You must set the Speak field of any Activity sent from the bot that you want spoken to the user. 
+
+```cs
+public IActivity Speak(string message)
+{
+    var activity = MessageFactory.Text(message);
+    string body = @"<speak version='1.0' xmlns='https://www.w3.org/2001/10/synthesis' xml:lang='en-US'>
+        <voice name='Microsoft Server Speech Text to Speech Voice (en-US, JessaNeural)'>" +
+        $"{message}" + "</voice></speak>";
+    activity.Speak = body;
+    return activity;
+}
+```
 
 ## Option #1: Update your .NET Core bot code _if your bot has a BotController.cs_
 When you create a new bot from the Azure Portal using one of the templates such as EchoBot, you will get a bot that includes an ASP.NET MVC controller that exposes a single POST endpoint. These instructions explain how to expand that to also expose an endpoint to accept the WebSocket streaming endpoint which is a GET endpoint.
@@ -53,7 +65,7 @@ public async Task PostAsync()
 5.	Add a new namespace:
 
 ```cs
-using Microsoft.Bot.Protocol.StreamingExtensions.NetCore;
+using Microsoft.Bot.Builder.StreamingExtensions;
 ```
 
 6.	In the ConfigureServices method, replace the use of AdapterWithErrorHandler with WebSocketEnabledHttpAdapter in the 
