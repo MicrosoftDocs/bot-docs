@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<filter>
+  <attributeFilter apply="true">
+    <!-- Hide Newtonsoft.Json.* attributes. -->
+    <namespaceFilter name="Newtonsoft.Json">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
+  </attributeFilter>
+</filter>
