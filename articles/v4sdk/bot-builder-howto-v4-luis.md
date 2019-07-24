@@ -31,36 +31,38 @@ This core bot coding sample shows an example of an airport flight booking applic
 After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `OnMembersAddedAsync` is called when a new user is connected and displays a welcome card. 
-- `OnMessageActivityAsync` is called for each user input received. 
+- `OnMessageActivityAsync` is called for each user input received.
 
 ![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow.png)
 
-The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. That main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "Book_Flight", the helper fills out information from the user that LUIS returned, and starts the `BookingDialog`, which acquires additional information as needed from the user such as
+The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. Then the main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the nain dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
-- `Origin` the originating city.
-- `TravelDate` the date to book the flight. 
-- `Destination` the destination city.
+- `Origin` the originating city
+- `TravelDate` the date to book the flight
+- `Destination` the destination city
 
 # [JavaScript](#tab/javascript)
 After each processing of user input, `dialogBot` saves the current state of both `userState` and `conversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `onMembersAdded` is called when a new user is connected and displays a welcome card. 
-- `OnMessage` is called for each user input received. 
+- `OnMessage` is called for each user input received.
 
 ![LUIS sample javascript logic flow](./media/how-to-luis/luis-logic-flow-js.png)
 
-The `onMessage` module runs the `mainDialog` which sends the user input to LUIS. Upon receiving a response back from LUIS, `mainDialog` preserves information for the user returned by LUIS and starts `bookingDialog`. `bookingDialog` acquires additional information as needed from the user such as
+The `onMessage` module runs the `mainDialog` which gathers user input.
+Then the main dialog calls the LUIS helper `FlightBookingRecognizer` to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned.
+Upon the response back, `mainDialog` preserves information for the user returned by LUIS and starts `bookingDialog`. `bookingDialog` acquires additional information as needed from the user such as
 
 - `destination` the destination city.
 - `origin` the originating city.
-- `travelDate` the date to book the flight. 
+- `travelDate` the date to book the flight.
 
 ---
 
-For details on the other aspects of the sample like dialogs or state, see [Gather user input using a dialog prompt](bot-builder-prompts.md) or [Save user and conversation data](bot-builder-howto-v4-state.md). 
+For details on the other aspects of the sample like dialogs or state, see [Gather user input using a dialog prompt](bot-builder-prompts.md) or [Save user and conversation data](bot-builder-howto-v4-state.md).
 
 ## Create a LUIS app in the LUIS portal
-Sign in to the LUIS portal to create your own version of the sample LUIS app. You can create and manage your applications on **My Apps**. 
+Sign in to the LUIS portal to create your own version of the sample LUIS app. You can create and manage your applications on **My Apps**.
 
 1. Select **Import new app**. 
 1. Click **Choose App file (JSON format)...** 
@@ -109,22 +111,29 @@ Add the information required to access your LUIS app including application id, a
 
 Be sure that the **Microsoft.Bot.Builder.AI.Luis** NuGet package is installed for your project.
 
-To connect to the LUIS service, the bot pulls the information you added above from the appsetting.json file. The `LuisHelper` class contains code that imports your settings from the appsetting.json file and queries the LUIS service by calling `RecognizeAsync` method. If the top intent returned is 'Book_Flight' it then checks for entities containing the booking To, From, and TravelDate information.
+To connect to the LUIS service, the bot pulls the information you added above from the appsetting.json file. The `FlightBookingRecognizer` class contains code with your settings from the appsetting.json file and queries the LUIS service by calling `RecognizeAsync` method. 
 
-**LuisHelper.cs**  
-[!code-csharp[luis helper](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/LuisHelper.cs?range=15-54)]
+**FlightBookingRecognizer.cs**  
+[!code-csharp[luis helper](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-39)]
+
+The `FlightBookingEx.cs` contains the logic to extract *From*, *To* and *TravelDate*; it extends the partial class `FlightBooking.cs` used to store LUIS results when calling `FlightBookingRecognizer.RecognizeAsync<FlightBooking>` from the `MainDialog.cs`.
+
+**FlightBookingEx.cs**  
+[!code-csharp[luis helper](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
 
 # [JavaScript](#tab/javascript)
 
 To use LUIS, your project needs to install the **botbuilder-ai** npm package.
 
-To connect to the LUIS service, the bot pulls the information you added above from the `.env` file. The `LuisHelper` class contains code that imports your settings from the `.env` file and queries the LUIS service by calling `recognize()` method. If the top intent returned is 'Book_Flight' it then checks for entities containing the booking To, From, and TravelDate information.
+To connect to the LUIS service, the bot uses the information you added above from the `.env` file. The `flightBookingRecognizer.js` class contains the code that imports your settings from the `.env` file and queries the LUIS service by calling `recognize()` method. 
 
-[!code-javascript[luis helper](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/luisHelper.js?range=6-65)]
+[!code-javascript[luis helper](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-64)]
+
+The logic to extract From, To and TravelDate is implemented as helper methods inside `flightBookingRecognizer.js`. These methods are used after calling `flightBookingRecognizer.executeLuisQuery()` from `mainDialog.js`
 
 ---
 
-LUIS is now configured and connected for your bot. 
+LUIS is now configured and connected for your bot.
 
 ## Test the bot
 
