@@ -114,7 +114,8 @@ Be sure that the **Microsoft.Bot.Builder.AI.Luis** NuGet package is installed fo
 To connect to the LUIS service, the bot pulls the information you added above from the appsetting.json file. The `FlightBookingRecognizer` class contains code with your settings from the appsetting.json file and queries the LUIS service by calling `RecognizeAsync` method. 
 
 **FlightBookingRecognizer.cs**  
-[!code-csharp[luis helper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-39)]
+
+[!code-csharp[luisHelper](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-39)]
 
 The `FlightBookingEx.cs` contains the logic to extract *From*, *To* and *TravelDate*; it extends the partial class `FlightBooking.cs` used to store LUIS results when calling `FlightBookingRecognizer.RecognizeAsync<FlightBooking>` from the `MainDialog.cs`.
 
