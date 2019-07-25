@@ -558,3 +558,60 @@ services.AddSingleton(conversationState);
 ### v4
 
 [Bot.Builder.Community.Dialogs.Luis](https://www.nuget.org/packages/Bot.Builder.Community.Dialogs.Luis/) is now a Bot Builder Community library.  The source is available on the community [repository](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Dialogs.Luis).
+
+## To use QnA Maker
+
+### v3
+
+```csharp
+[Serializable]
+[QnAMaker("QnAEndpointKey", "QnAKnowledgebaseId", <ScoreThreshold>, <TotalResults>, "QnAEndpointHostName")]
+public class SimpleQnADialog : QnAMakerDialog
+{
+}
+```
+
+### v4
+
+```csharp
+public class QnABot : ActivityHandler
+{
+  private readonly IConfiguration _configuration;
+  private readonly ILogger<QnABot> _logger;
+  private readonly IHttpClientFactory _httpClientFactory;
+
+  public QnABot(IConfiguration configuration, ILogger<QnABot> logger, IHttpClientFactory httpClientFactory)
+  {
+    _configuration = configuration;
+    _logger = logger;
+    _httpClientFactory = httpClientFactory;
+  }
+
+  protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+  {
+    var httpClient = _httpClientFactory.CreateClient();
+
+    var qnaMaker = new QnAMaker(new QnAMakerEndpoint
+    {
+      KnowledgeBaseId = _configuration["QnAKnowledgebaseId"],
+      EndpointKey = _configuration["QnAEndpointKey"],
+      Host = _configuration["QnAEndpointHostName"]
+    },
+    null,
+    httpClient);
+
+    _logger.LogInformation("Calling QnA Maker");
+
+    // The actual call to the QnA Maker service.
+    var response = await qnaMaker.GetAnswersAsync(turnContext);
+    if (response != null && response.Length > 0)
+    {
+      await turnContext.SendActivityAsync(MessageFactory.Text(response[0].Answer), cancellationToken);
+    }
+    else
+    {
+      await turnContext.SendActivityAsync(MessageFactory.Text("No QnA Maker answers were found."), cancellationToken);
+    }
+  }
+}
+```

@@ -403,3 +403,28 @@ await context.sendActivity({
     attachmentLayout: AttachmentLayoutTypes.Carousel
 });
 ```
+
+## To use natural language recognition (LUIS)
+
+### v3
+
+```javascript
+// The LUIS recognizer was part of the 'botbuilder' library
+var builder = require('botbuilder');
+
+var recognizer = new builder.LuisRecognizer(LUIS_MODEL_URL);
+bot.recognizer(recognizer);
+```
+
+### v4
+
+```javascript
+// The LUIS recognizer is now part of the 'botbuilder-ai' library
+const { LuisRecognizer } = require('botbuilder-ai');
+
+const luisApp = { applicationId: LuisAppId, endpointKey: LuisAPIKey, endpoint: `https://${ LuisAPIHostName }` };
+const recognizer = new LuisRecognizer(luisApp);
+
+const recognizerResult = await recognizer.recognize(context);
+const intent = LuisRecognizer.topIntent(recognizerResult);
+```
