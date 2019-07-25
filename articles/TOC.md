@@ -3,10 +3,9 @@
 ## [About Azure Bot Service](bot-service-overview-introduction.md)
 ## [What's new](what-is-new.md)
 # Quickstart
-## [Create a bot with Azure Bot Service](~/bot-service-quickstart.md)
-## Create a bot locally
-### [.NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
-### [JavaScript](javascript/bot-builder-javascript-quickstart.md)
+## [Create a bot using .NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
+## [Create a bot using JavaScript](javascript/bot-builder-javascript-quickstart.md)
+## [Create a bot using Azure Bot Service](v4sdk/abs-quickstart.md)
 # Tutorials
 ## [1. Create and deploy a basic bot](v4sdk/bot-builder-tutorial-basic-deploy.md)
 ## [2. Add QnA Maker and redeploy a bot](v4sdk/bot-builder-tutorial-add-qna.md)
@@ -55,6 +54,8 @@
 ### [Use Direct Line Speech in your bot](directline-speech-bot.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
+## Test
+### [Unit testing bots](v4sdk/unit-test-bots.md)
 ## [Debug](debug/TOC.md)
 ## Deploy
 ### [Deploy your bot to Azure](bot-builder-deploy-az-cli.md)
