@@ -2,7 +2,7 @@
 title: Add telemetry to your bot | Microsoft Docs
 description: Learn how to integrate your bot with the new telemetry features.
 keywords: telemetry, appinsights, monitor bot
-author: ivorb
+author: WashingtonKayaker
 ms.author: v-ivorb
 manager: kamrani
 ms.topic: article
@@ -309,7 +309,7 @@ There, you'll see some default information about your bot performance and any ad
 
 ## Additional Information
 
-* [What is Application Insights?](https://aka.ms/bot-framework-emulator-appsights-docs)
+* [What is Application Insights?](https://aka.ms/appinsights-overview)
 
 * [Using Search in Application Insights](https://aka.ms/search-in-application-insights)
 
