@@ -17,7 +17,7 @@ This article describes how to debug your bot using inspection middleware, a new 
 We use a basic Echo bot built with the [Bot Framework](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/02.echo-bot) to show how to add the inspection middleware to debug your bot and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md) but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection) and [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection). 
 
 ## Prerequisites
-- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
 - Knowledge of bot [Middleware](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0)
 - knowledge of bot [Managing state](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0)
 - Download and install [ngrok](https://ngrok.com/) (if you want to debug a bot configured in Azure to use additional channels)
@@ -40,7 +40,7 @@ Then you need to update the code of your JavaScript bot as follows. You can read
 
 **index.js**
 
-Set up the inspection state and add the InspectionMiddleware to the adapter in the **index.js** file. 
+Set up the inspection state and add the inspection middleware to the adapter in the **index.js** file. 
 
 [!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/index.js?range=10-43)]
 
@@ -51,7 +51,7 @@ Update the bot class in the **bot.js** file.
 [!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-50)]
 
 # [C#](#tab/csharp)
-Set up the inspection state in the **Startup** file. Add the InspectionMiddleware to the adapter. The inspection state is provided through dependency injection. See the code update below or refer to the inspection sample here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection). 
+Set up the inspection state in the **Startup** file. Add the inspection middleware to the adapter. The inspection state is provided through dependency injection. See the code update below or refer to the inspection sample here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection). 
 
 **Startup.cs**
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
@@ -86,10 +86,10 @@ dotnet run
 
 3. Now open another emulator. This second emulator will work as a debugger. Follow the instructions as described in the previous step. Check **Open in debug mode** and then click **Connect**. 
 
-4. At this point you will see a UUID ( /INSPECT attach< identifier>) in your debugging emulator. Copy the UUID and paste it to the chat box of the first emulator. 
+4. At this point you will see a UUID (`/INSPECT attach <identifier>`) in your debugging emulator. Copy the UUID and paste it to the chat box of the first emulator. 
 
-> ![NOTE]
-> A universally unique identifier (UUID) is a unique ID for identifying information. A UUID is generated every time the emulator is launched in debug mode. The format of an UUID here looks like this: /INSPECT attach< identifier>. 
+> [!NOTE]
+> A universally unique identifier (UUID) is a unique ID for identifying information. A UUID is generated every time when the emulator is launched in debug mode after you add the inspection middleware in your bot's code. 
 
 5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will be able to see the state of your bot as follows: 
 ![bot state](./media/bot-debug-inspection-middleware/bot-debug-bot-state.png)
@@ -103,7 +103,7 @@ At this point you have updated your emulator to the latest version and added the
 To run your bot locally do the following: 
 1. Navigate to your bot's folder in a terminal and set your npm registration to use the [latest builds](https://botbuilder.myget.org/feed/botbuilder-v4-js-daily/package/npm/botbuilder-azure)
 
-2. Run your bot locally. You will see your bot expose a port number like **3978**. 
+2. Run your bot locally. You will see your bot expose a port number like 3978. 
 
 3. Open another command prompt and navigate to your bot's project folder. Run the following command:
 ```
@@ -130,9 +130,9 @@ Now that your local bot is connected to ngrok you can configure your local bot t
 
 5. Now let's enable the debugging mode in the emulator. In your emulator select **Debug** -> **Start Debugging**. Fill the ngrok IP address (don't forget to add **/api/messages**) in the **Bot URL** (for example, https://e58549b6.ngrok.io/api/messages). Fill **Microsoft App ID** with **appId** and **Microsoft App password** with **appSecret**. Make sure **Open in debug mode** is checked as well. Click **Connect**. 
 
-6. When the debugging mode is enabled a UUID will be generated in your emulator. A UUID is a unique ID generated every time you start the debugging mode in your emulator. Copy and paste the UUID to the **Test in Web Chat** chat box or your channel's chat box. You will see the message **Attached to session, all traffic is being replicated for inspection** in the chat box. 
+6. When the debugging mode is enabled a UUID will be generated in your emulator. A UUID is a unique ID generated every time you start the debugging mode in your emulator. Copy and paste the UUID to the **Test in Web Chat** chat box or your channel's chat box. You will see the message "Attached to session, all traffic is being replicated for inspection" in the chat box. 
 
- You can start debugging your bot by sending messages in the configured channel's chat box. Your local emulator will automatically update the messages with all the details for debugging. To inspect your bot's state of messages click **Bot State** and unfold the **values** in right json window. 
+ You can start debugging your bot by sending messages in the configured channel's chat box. Your local emulator will automatically update the messages with all the details for debugging. To inspect your bot's state of messages click **Bot State** and unfold the **values** in the right JSON window. 
 
  ![debug-inspection-middleware](./media/bot-debug-inspection-middleware/debug-state-inspection-channel-chat.gif)
 
