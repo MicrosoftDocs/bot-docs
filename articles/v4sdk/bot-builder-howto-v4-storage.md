@@ -387,8 +387,8 @@ Comment out Memory Storage, replace with reference to Cosmos DB.
 **bot.js**
 ```javascript
 // initialized to access values in .env file.
-var dotenv = require('dotenv');
-dotenv.load();
+const ENV_FILE = path.join(__dirname, '.env');
+require('dotenv').config({ path: ENV_FILE });
 
 // Create local Memory Storage - commented out.
 // var storage = new MemoryStorage();
@@ -520,8 +520,8 @@ If you did not add code to load your `.env` file to implement Cosmos DB storage,
 
 ```javascript
 // initialized to access values in .env file.
-var dotenv = require('dotenv');
-dotenv.load();
+const ENV_FILE = path.join(__dirname, '.env');
+require('dotenv').config({ path: ENV_FILE });
 ```
 Now update your code to point "_storage_" to your existing Blob Storage account, by commenting out previous storage definitions and adding the following.
 
