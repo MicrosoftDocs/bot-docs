@@ -64,6 +64,7 @@ In Visual Studio (VS), you can set breakpoints and run the bot in debug mode to 
    > The **EchoBot** is default to using **Table Storage**. To use Table Storage in your bot, you need the table *name* and *key*. If you do not have a Table Storage instance ready, you can create one or for testing purposes, you can comment out the code that uses **TableBotDataStore** and uncomment the line of code that uses **InMemoryDataStore**. The **InMemoryDataStore** is intended for testing and prototyping only.
 -->
    ![Set breakpoint in VS](~/media/bot-service-debug-bot/breakpoint-set-vs.png)
+
 5. Start the Bot Framework Emulator and connect to your bot as described in the section above. 
 6. From the emulator, send your bot a message (e.g.: send the message "Hi"). Execution will stop at the line where you place the breakpoint.
    ![Debug in VS](~/media/bot-service-debug-bot/breakpoint-caught-vs.png)
