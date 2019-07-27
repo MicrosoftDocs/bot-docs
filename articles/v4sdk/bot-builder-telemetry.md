@@ -222,9 +222,6 @@ That's all there is to adding telemetry to your bots dialogs, at this point if y
 
 We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  
 
-> [!TIP]
-> You can apply these same principles to other services like QnA Maker.
-
 For this sample, we just need to provide the telemetry client in a similar way to how we did for dialogs. 
 
 1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `ExecuteLuisQuery()` method in `LuisHelper.cs`:

@@ -105,9 +105,9 @@ There are a couple of important security issues to consider when you use Azure B
 
 ## Create your bot resource on Azure
 
-Create a **Bot Channels Registration** using the [Azure Portal](https://portal.azure.com/).
+Create a **Bot resource** using the [Azure Portal](https://portal.azure.com/).
 
-Record your bot's app ID and password. To gather this information, see [Manage a bot](../bot-service-manage-overview.md).
+For more information, see [Create a bot with Azure Bot Service](./abs-quickstart.md).
 
 ## Create and register an Azure AD application
 
