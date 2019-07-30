@@ -5,7 +5,7 @@ keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: bot-service
 ms.subservice: abs
 ms.date: 05/23/2019
