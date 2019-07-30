@@ -187,10 +187,7 @@ GET https://login.botframework.com/v1/.well-known/keys
 
 The response body specifies the document in the [JWK format](https://tools.ietf.org/html/rfc7517) but also includes an additional property for each key: `endorsements`. The list of keys is relatively stable and may be cached for long periods of time (by default, 5 days within the Bot Framework SDK).
 
-The `endorsements` property within each key contains one or more endorsement strings which you can use to verify that the channel ID specified in the `channelId` property within the [Activity][Activity] object of the incoming request is authentic. The list of channel IDs that require endorsements is configurable within each bot. By default, it will be the list of all published channel IDs, although bot developers may override selected channel ID values either way. If endorsement for a channel ID is required:
-
-- You should require that any [Activity][Activity] object sent to your bot with that channel ID is accompanied by a JWT token that is signed with an endorsement for that channel. 
-- If the endorsement is not present, your bot should reject the request by returning an **HTTP 403 (Forbidden)** status code.
+The `endorsements` property within each key contains one or more endorsement strings which you can use to verify that the channel ID specified in the `channelId` property within the [Activity][Activity] object of the incoming request is authentic. The list of channel IDs that require endorsements is configurable within each bot. By default, it will be the list of all published channel IDs, although bot developers may override selected channel ID values either way. 
 
 ### Step 4: Verify the JWT token
 
@@ -207,7 +204,10 @@ When parsing the token, you must configure the parsing library or write your own
 6. The token has a valid cryptographic signature, with a key listed in the OpenID keys document that was retrieved in [Step 3](#connector-to-bot-step-3), using the signing algorithm that is specified in the `id_token_signing_alg_values_supported` property of the Open ID Metadata document that was retrieved in [Step 2](#openid-metadata-document).
 7. The token contains a "serviceUrl" claim with value that matches the `servieUrl` property at the root of the [Activity][Activity] object of the incoming request. 
 
-If the token does not meet all of these requirements, your bot should reject the request by returning an **HTTP 403 (Forbidden)** status code.
+If endorsement for a channel ID is required:
+
+- You should require that any [Activity][Activity] object sent to your bot with that channel ID is accompanied by a JWT token that is signed with an endorsement for that channel. 
+- If the endorsement is not present, your bot should reject the request by returning an **HTTP 403 (Forbidden)** status code.
 
 > [!IMPORTANT]
 > All of these requirements are important, particularly requirements 4 and 6. 
