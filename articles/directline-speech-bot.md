@@ -5,7 +5,7 @@ keywords: develop driect line speech bot, speech bot
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
-ms.topic: get-started-article
+ms.topic: conceptuals
 ms.service: bot-service
 ms.subservice: abs
 ms.date: 07/15/2019

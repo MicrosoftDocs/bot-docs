@@ -5,7 +5,7 @@ keywords: Bot Framework SDK, create a bot, quickstart, .NET, getting started, C#
 author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: bot-service
 ms.subservice: sdk
 ms.date: 05/23/2019

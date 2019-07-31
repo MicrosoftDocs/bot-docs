@@ -41,7 +41,12 @@ Content-Type: application/json
 
 ### Response
 
-When the activity is delivered to the bot, the service responds with an HTTP status code that reflects the bot's status code. If the bot generates an error, an HTTP 502 response ("Bad Gateway") is returned to the client in response to its Send Activity request. If the POST is successful, the response contains a JSON payload that specifies the ID of the Activity that was sent to the bot.
+When the activity is delivered to the bot, the service responds with an HTTP status code that reflects the bot's status code. If the bot generates an error, an HTTP 502 response ("Bad Gateway") is returned to the client in response to its Send Activity request.
+
+> [!NOTE]
+> This can be caused by the fact that a correct token was not used. Only the token which was received against *start conversation* can be used to send an activity.
+
+If the POST is successful, the response contains a JSON payload that specifies the ID of the Activity that was sent to the bot.
 
 ```http
 HTTP/1.1 200 OK

@@ -25,7 +25,7 @@ Over time these offerings will be simplified.
 
 |                            | Direct Line | Direct Line App Service Extension | Direct Line Speech |
 |----------------------------|-------------|-----------------------------------|--------------------|
-| GA availability and SLA    | General availability | Private preview, no SLA  | Private preview, no SLA |
+| Availability and Licensing    | General availability | Private preview, no SLA  | Private preview, no SLA |
 | Speech recognition and text-to-speech performance | Standard | Standard | High performance |
 | Integrated OAuth           | Yes | Yes | No |
 | Integrated telemetry       | Yes | Yes | No |

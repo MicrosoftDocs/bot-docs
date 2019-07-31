@@ -5,7 +5,7 @@ keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb
 ms.author: v-ivorb
 manager: kamrani
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: bot-service
 ms.subservice: abs
 ms.date: 05/23/2019
@@ -173,9 +173,19 @@ az webapp deployment source config-zip --resource-group "<new-group-name>" --nam
 | src  | The path to the zipped file you created. |
 
 ## 3. Test in Web Chat
-- In the Azure portal, go to your Web App bot blade.
-- In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot.
-- Wait for a few seconds after a successful deployment and optionally restart your Web App to clear any cache. Go back to your Web App Bot blade and test using the Web Chat provided in the Azure portal.
+
+1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
+2. In the left panel, click **Resource groups**.
+3. In the right panel, search for your group.
+4. Click on your group name.
+5. Click the link of your Bot Channel Registration.
+6. In the *Bot Channel Registration blade*, click **Test in Web Chat**.
+Alternatively, in the right panel, click the Test box.
+
+For more information about channel registration, see [Register a bot with Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
+
+> [!NOTE]
+> A blade is the surface on which service functions or navigation elements appear when selected.
 
 ## Additional information
 Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
