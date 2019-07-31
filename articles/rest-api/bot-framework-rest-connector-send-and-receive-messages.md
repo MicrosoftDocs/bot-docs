@@ -104,7 +104,7 @@ To start a conversation, issue this request:
 POST /v3/conversations
 ```
 
-Set the body of the request to a [Conversation][Conversation] object that specifies your bot's account information and the account information of the user(s) that you want to include in the conversation.
+Set the body of the request to a [ConversationParameters][] object that specifies your bot's account information and the account information of the user(s) that you want to include in the conversation.
 
 > [!NOTE]
 > Not all channels support group conversations. Consult the channel's documentation to determine whether a channel supports group conversations and to identify the maximum number of participants that a channel allows in a conversation.
@@ -151,5 +151,5 @@ Your bot can then use this conversation ID to [send a message](#send-message) to
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [ConversationAccount]: bot-framework-rest-connector-api-reference.md#conversationaccount-object
-[Conversation]: bot-framework-rest-connector-api-reference.md#conversation-object
+[ConversationParameters]: bot-framework-rest-connector-api-reference.md#conversationparameters-object
 

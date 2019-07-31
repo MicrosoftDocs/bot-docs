@@ -135,15 +135,15 @@ Use these operations to create conversations, send messages (activities), and ma
 | [Upload Attachment to Channel](#upload-attachment-to-channel) | Uploads an attachment directly into a channel's blob storage. |
 
 ### Create Conversation
-Creates a new conversation. 
+Creates a new conversation.
 ```http 
 POST /v3/conversations
 ```
 
 | | |
 |----|----|
-| **Request body** | A [Conversation](#conversation-object) object |
-| **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object | 
+| **Request body** | A [ConversationParameters](#conversationparameters-object) object |
+| **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object |
 
 ### Send to Conversation
 Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
@@ -404,7 +404,6 @@ Schema defines the object and its properties that your bot can use to communicat
 | [CardAction object](#cardaction-object) | Defines an action to perform. |
 | [CardImage object](#cardimage-object) | Defines an image to display on a card. |
 | [ChannelAccount object](#channelaccount-object) | Defines a bot or user account on the channel. |
-| [Conversation object](#conversation-object) | Defines a conversation, including the bot and users that are included within the conversation. |
 | [ConversationAccount object](#conversationaccount-object) | Defines a conversation in a channel. |
 | [ConversationMembers object](#conversationmembers-object) | Defines the members of a conversation. |
 | [ConversationParameters object](#conversationparameters-object) | Define parameters for creating a new conversation |
@@ -612,22 +611,10 @@ Defines a bot or user account on the channel.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **id** | string | ID that uniquely identifies the bot or user on the channel. |
-| **name** | string | Name of the bot or user. |
-
-<a href="#objects">Back to Schema table</a>
-
-<!--TODO can't find-->
-### Conversation object
-Defines a conversation, including the bot and users that are included within the conversation.<br/><br/> 
-
-| Property | Type | Description |
-|----|----|----|
-| **bot** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that identifies the bot. |
-| **isGroup** | boolean | Flag to indicate whether or not this is a group conversation. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. To start a group conversation, the channel must support group conversations. |
-| **members** | [ChannelAccount](#channelaccount-object)[] | Array of **ChannelAccount** objects that identify the members of the conversation. This list must contain a single user unless **isGroup** is set to **true**. This list may include other bots. |
-| **topicName** | string | Title of the conversation. |
-| **activity** | [Activity](#activity-object) | In a [Create Conversation](#create-conversation) request, an **Activity** object that defines the first message to post to the new conversation. |
+| **id** | string | Unique ID for the user or bot on this channel. |
+| **name** | string | Display-friendly name of the bot or user. |
+| **aadObjectId** | string | This account's object ID within Azure Active Directory. |
+| **role** | string enum | Role of the entity behind the account. Either `user` or `bot`. |
 
 <a href="#objects">Back to Schema table</a>
 
@@ -654,16 +641,17 @@ Defines the members of a conversation.<br/><br/>
 <a href="#objects">Back to Schema table</a>
 
 ### ConversationParameters object
-Define parameters for creating a new conversation.<br/><br/> 
+Defines parameters for creating a new conversation.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **isGroup** | boolean | Indicates if this is a group conversation. |
-| **bot** | [ChannelAccount](#channelaccount-object) | Address of the bot in the conversation. |
-| **members** | array | List of members to add to the conversation. |
-| **topicName** | string | Topic title of a conversation. This property is only used if a channel supports it. |
-| **activity** | [Activity](#activity-object) | (optional) Use this activity as the initial message to the conversation when creating a new conversation. |
-| **channelData** | object | Channel specific payload for creating the conversation. |
+| **isGroup** | boolean | Indicates whether this is a group conversation. |
+| **bot** | [ChannelAccount](#channelaccount-object) | Channel account information needed to route a message to the bot. |
+| **members** | [ChannelAccount](#channelaccount-object) array | Channel account information needed to route a message to each user. |
+| **topicName** | string | Optional, topic of the conversation. This property is only used if a channel supports it. |
+| **tennantId** | string | Optional, the tenant ID in which the conversation should be created. |
+| **activity** | [Activity](#activity-object) | Optional, the initial message to send to the conversation when it is created. |
+| **channelData** | object | Channel-specific payload for creating the conversation. |
 
 <a href="#objects">Back to Schema table</a>
 
@@ -686,9 +674,9 @@ Defines a response to [Create Conversation](#create-conversation).<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **activityId** | string | ID of the activity. |
+| **activityId** | string | ID of the activity, if sent. |
 | **id** | string | ID of the resource. |
-| **serviceUrl** | string | Service endpoint. |
+| **serviceUrl** | string | Service endpoint where operations concerning the conversation may be performed. |
 
 <a href="#objects">Back to Schema table</a>
 
