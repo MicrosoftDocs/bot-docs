@@ -136,12 +136,18 @@ Once your QnA Maker Service has been created in Azure, you need to record the Co
 
 ## Dispatch app needs read access to existing apps
 
-The dispatch tool needs authoring access to read the existing LUIS and QnA Maker apps in order to create a new parent LUIS app that dispatches to the LUIS and QnA Maker apps. This access is provided with the app IDs and authoring keys. You need an ID and key for each of the two LUIS apps and the QnA Maker app.
+The dispatch tool needs authoring access to read the existing LUIS and QnA Maker apps in order to create a new parent LUIS app that dispatches to the LUIS and QnA Maker apps. This access is provided with the app IDs and authoring keys. 
+
+### Service authoring keys
+
+The **authoring key** is only used for creating and editing the models. You need an ID and key for each of the two LUIS apps and the QnA Maker app.
 
 |App|Location of information|
 |--|--|
-|LUIS|App ID - found in the [LUIS portal](https://www.luis.ai) for each app, Manage -> Application Information<br>Authoring Key - found in the LUIS portal, top-right corner, select your own User, then Settings.|
-|QnA Maker| App ID - found in the [QnA Maker portal](https://http://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/{APP-ID}/generateAnswer`.<br>Authoring Key - found in the Azure portal, for the QnA Maker resource, under the **Keys**. You only need one of the keys.|
+|LUIS|**App ID** - found in the [LUIS portal](https://www.luis.ai) for each app, Manage -> Application Information<br>**Authoring Key** - found in the LUIS portal, top-right corner, select your own User, then Settings.|
+|QnA Maker| **App ID** - found in the [QnA Maker portal](https://http://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/{APP-ID}/generateAnswer`.<br>**Authoring Key** - found in the Azure portal, for the QnA Maker resource, under the **Keys**. You only need one of the keys.|
+
+The authoring key is not used to get a prediction score or confidence score from the published application. You need the endpoint keys for this action. The **[endpoint keys](#service-endpoint-keys)** are found and used later in this tutorial. 
 
 ## Create the dispatch model
 
@@ -188,6 +194,8 @@ The generated LUIS app defines intents for each of the child apps and the knowle
 
 These services need to be published under the correct names for the bot to run properly. 
 The bot needs information about the published services, so that it can access those services.
+
+### Service endpoint keys
 
 The bot needs the query prediction endpoints for the three LUIS apps (dispatch, weather, and home automation) and the single QnA Maker knowledge base. Use the following table to find the endpoint keys:
 
