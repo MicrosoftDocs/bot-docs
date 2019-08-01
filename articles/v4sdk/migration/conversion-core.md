@@ -66,7 +66,7 @@ We'll create a state property for `DialogState`, which we now need for dialog su
 
 In **Startup.cs**:
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Startup.cs?range=4-13)]
 
 1. Remove this constructor:
@@ -79,7 +79,7 @@ In **Startup.cs**:
 
 1. Remove the `Configuration` property.
 
-1. Update the `ConfigureServices` method with this code:
+1. Update the `ConfigureServices` method with this code:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Startup.cs?range=19-41)]
 
 You are going to have compile time errors at this time. We'll fix them in the next steps. 
@@ -101,7 +101,7 @@ In v4, the turn handler or message loop logic is primarily in a bot file. We're 
 
 1. Update the **Bots\DialogBots.cs** file.
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=4-8)]
 
 1. Update `DialogBot` to include a generic parameter for the dialog.
@@ -183,7 +183,7 @@ In this bot, the root dialog prompts the user for a choice from a set of options
 
 In the **Dialogs/RootDialog.cs** file:
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/RootDialog.cs?range=4-10)]
 
 1. We need to convert `HelpdeskOptions` options from a list of strings to a list of choices. This will be used with a choice prompt, which will accept the choice number (in the list), the choice value, or any of the choice's synonyms as valid input.
@@ -232,7 +232,7 @@ The install app dialog performs a few logical tasks, which we'll set up as a 4-s
 
 In the **Dialogs/InstallAppDialog.cs** file:
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/InstallAppDialog.cs?range=4-11)]
 
 1. Define a constant for the key we'll use to track collected information.
@@ -325,20 +325,20 @@ You can use the same v3 models with the v4 community form flow library.
 
 We need to update `using` statements in the model classes as shown next.
 
-1. In **InstallApps.cs** change them to this:
+1. In **InstallApps.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/InstallApp.cs?range=4-5)]
 
-1. In **LocalAdmin.cs** change them to this:
+1. In **LocalAdmin.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/LocalAdmin.cs?range=4-5)]
 
-1. In **LocalAdminPrompt.cs** change them to this:
+1. In **LocalAdminPrompt.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/LocalAdminPrompt.cs?range=4)]
 
 1. In **ResetPassword.cs** change them to this:
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
     Also, delete the `using` statements inside the namespace.
 
-1. In **ResetPasswordPrompt.cs** change them to this:
+1. In **ResetPasswordPrompt.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPasswordPrompt.cs?range=4-5)]
 
 ### Additional changes
