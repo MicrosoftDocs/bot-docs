@@ -387,7 +387,6 @@ There are three main components available for your bot to log telemetry, and eac
 All components log using the `IBotTelemetryClient`  (or `BotTelemetryClient` in node.js) interface which can be overridden with a custom implementation.
 
 
-
 #### Telemetry Middleware
 
 |C#  | JavaScript |
