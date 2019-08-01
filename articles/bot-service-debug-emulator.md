@@ -59,8 +59,13 @@ To connect to a bot running locally and click **Open bot**. Add the port number 
 
 ![Emulator UI](media/bot-service-debug-emulator/open_bot_emulator.png)
 
+
 If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
 
+
+### Use bot credentials
+
+When you open the bot, set the **Microsoft App ID** and **Microsoft App password** if your bot is running with credentials. If you created your bot with the Azure Bot Service, the credentials are available on the bot's App Service, under the **Settings -> Configuration** section. If you do not know the values, you can remove those from the locally running bot's configuration file, then run the bot in the Emulator. If the bot isn't running with these settings, you don't need to run the emulator with the settings either. 
 
 ### Use bot credentials
 

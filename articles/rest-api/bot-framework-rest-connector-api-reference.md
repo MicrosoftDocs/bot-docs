@@ -142,8 +142,8 @@ POST /v3/conversations
 
 | | |
 |----|----|
-| **Request body** | A [ConversationParameters](#conversationparameters-object) object |
-| **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object |
+| **Request body** | A [Conversation](#conversation-object) object |
+| **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object | 
 
 ### Send to Conversation
 Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
@@ -635,13 +635,26 @@ Defines the members of a conversation.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
+| **id** | string | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversation, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see Starting a conversation). |
+| **isGroup** | boolean | Flag to indicate whether the conversation contains more than two participants at the time the activity was generated. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
+| **name** | string | A display name that can be used to identify the conversation. |
+| **conversationType** | string | Indicates the type of the conversation in channels that distingish between conversation types (e.g.: group, personal). |
+
+<a href="#objects">Back to Schema table</a>
+
+### ConversationMembers object
+Defines the members of a conversation.<br/><br/>
+
+| Property | Type | Description |
+|----|----|----|
 | **id** | string | The conversation ID. |
 | **members** | array | An array of [ChannelAccount](#channelaccount-object) objects. |
 
 <a href="#objects">Back to Schema table</a>
 
 ### ConversationParameters object
-Defines parameters for creating a new conversation.<br/><br/>
+
+Define parameters for creating a new conversation.<br/><br/> 
 
 | Property | Type | Description |
 |----|----|----|
@@ -652,6 +665,8 @@ Defines parameters for creating a new conversation.<br/><br/>
 | **tennantId** | string | Optional, the tenant ID in which the conversation should be created. |
 | **activity** | [Activity](#activity-object) | Optional, the initial message to send to the conversation when it is created. |
 | **channelData** | object | Channel-specific payload for creating the conversation. |
+
+<a href="#objects">Back to Schema table</a>
 
 <a href="#objects">Back to Schema table</a>
 
@@ -677,6 +692,18 @@ Defines a response to [Create Conversation](#create-conversation).<br/><br/>
 | **activityId** | string | ID of the activity, if sent. |
 | **id** | string | ID of the resource. |
 | **serviceUrl** | string | Service endpoint where operations concerning the conversation may be performed. |
+
+<a href="#objects">Back to Schema table</a>
+
+### ConversationsResult object
+Defines the result of [Get Conversations](#get-conversations).<br/><br/> 
+
+| Property | Type | Description |
+|----|----|----|
+| **continuationToken** | string | The continuation token that can be used in subsequent calls to [Get Conversations](#get-conversations). |
+| **conversations** | array | An array of [ConversationMembers](#conversationmembers-object) objects |
+
+<a href="#objects">Back to Schema table</a>
 
 <a href="#objects">Back to Schema table</a>
 
