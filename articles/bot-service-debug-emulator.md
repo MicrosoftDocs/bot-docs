@@ -59,7 +59,6 @@ To connect to a bot running locally and click **Open bot**. Add the port number 
 
 ![Emulator UI](media/bot-service-debug-emulator/open_bot_emulator.png)
 
-
 If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
 
 
