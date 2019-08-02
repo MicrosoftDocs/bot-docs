@@ -6,13 +6,12 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
 # Implement channel-specific functionality
 
-Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity][Activity] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the `Activity` object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
 This article describes how to use a message activity's `channelData` property to implement this channel-specific functionality:
 
@@ -25,12 +24,12 @@ This article describes how to use a message activity's `channelData` property to
 | Kik | Send and receive native Kik messages | 
 
 > [!NOTE]
-> The value of an [Activity][Activity] object's `channelData` property is a JSON object. 
+> The value of an `Activity` object's `channelData` property is a JSON object. 
 > The structure of the JSON object will vary according to the channel and the functionality being implemented, as described below. 
 
 ## Create a custom Email message
 
-To create an email message, set the [Activity][Activity] object's `channelData` property to a JSON object that contains these properties:
+To create an email message, set the `Activity` object's `channelData` property to a JSON object that contains these properties:
 
 [!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
 
@@ -48,7 +47,7 @@ This snippet shows an example of the `channelData` property for a custom email m
 
 ## Create a full-fidelity Slack message
 
-To create a full-fidelity Slack message, set the [Activity][Activity] object's `channelData` property to a JSON object that specifies 
+To create a full-fidelity Slack message, set the `Activity` object's `channelData` property to a JSON object that specifies 
 <a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>, <a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>. 
 
 > [!NOTE]
@@ -135,7 +134,7 @@ Your bot can reply to this message in the [normal manner](bot-framework-rest-con
 
 ## Create a Facebook notification
 
-To create a Facebook notification, set the [Activity][Activity] object's `channelData` property to a JSON object that specifies these properties: 
+To create a Facebook notification, set the `Activity` object's `channelData` property to a JSON object that specifies these properties: 
 
 | Property | Description |
 |----|----|
@@ -165,7 +164,7 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 
 To create a message that implements Telegram-specific actions, 
 such as sharing a voice memo or a sticker, 
-set the [Activity][Activity] object's `channelData` property to a JSON object that specifies these properties: 
+set the `Activity` object's `channelData` property to a JSON object that specifies these properties: 
 
 | Property | Description |
 |----|----|
@@ -241,7 +240,7 @@ This snippet shows an example of a `channelData` property that specifies an arra
 ## Create a native Kik message
 
 To create a native Kik message, 
-set the [Activity][Activity] object's `channelData` property to a JSON object that specifies this property: 
+set the `Activity` object's `channelData` property to a JSON object that specifies this property: 
 
 | Property | Description |
 |----|----|
@@ -278,6 +277,5 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 - [Activities overview](bot-framework-rest-connector-activities.md)
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
+- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 - [Preview features with the Channel Inspector](../bot-service-channel-inspector.md)
-
-[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

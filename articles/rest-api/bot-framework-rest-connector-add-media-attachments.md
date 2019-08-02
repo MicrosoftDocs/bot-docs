@@ -6,7 +6,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 10/25/2018
 ---
 
@@ -24,7 +23,7 @@ Bots and channels typically exchange text strings but some channels also support
 
 ## Add a media attachment  
 
-To add a media attachment to a message, create an [Attachment][Attachment] object, set the `name` property, set the `contentUrl` property to the URL of the media file, and set the `contentType` property to the appropriate media type (e.g., **image/png**, **audio/wav**, **video/mp4**). Then within the [Activity][Activity] object that represents your message, specify your [Attachment][Attachment] object within the `attachments` array. 
+To add a media attachment to a message, create an `Attachment` object, set the `name` property, set the `contentUrl` property to the URL of the media file, and set the `contentType` property to the appropriate media type (e.g., **image/png**, **audio/wav**, **video/mp4**). Then within the `Activity` object that represents your message, specify your `Attachment` object within the `attachments` array. 
 
 The following example shows a request that sends a message containing text and a single image attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
@@ -99,7 +98,7 @@ You can attach a video file or audio file to a message by using the same process
 
 ## Add an AudioCard attachment
 
-Adding an [AudioCard](bot-framework-rest-connector-api-reference.md#audiocard-object) or [VideoCard](bot-framework-rest-connector-api-reference.md#videocard-object) attachment is the same as adding a media attachment. For example, the following JSON shows how to add an audio card in the media attachment.
+Adding an `AudioCard` or `VideoCard` attachment is the same as adding a media attachment. For example, the following JSON shows how to add an audio card in the media attachment.
 
 ```json
 {
@@ -173,7 +172,5 @@ The media event name **media/pause** will appear in the `activity.name` field. R
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)
+- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 - [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema)
-
-[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
-[Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object
