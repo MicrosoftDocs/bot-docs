@@ -3,11 +3,10 @@ title: Send proactive notifications to users | Microsoft Docs
 description: Understand how to send notification messages
 keywords: proactive message, notification message, bot notification, 
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
