@@ -3,11 +3,10 @@ title: Deploy your bot | Microsoft Docs
 description: Deploy your bot to the Azure cloud.
 keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.subservice: abs
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -38,6 +37,10 @@ You've already created and tested a bot locally, and now you want to deploy it t
 az login
 ```
 A browser window will open, allowing you to sign in.
+
+> [!NOTE]
+> If you deploy your bot to a non-Azure cloud such as US Gov, you need to run `az cloud set --name <name-of-cloud>` before `az login`, where &lt;name-of-cloud> is the name of a registered cloud, such as `AzureUSGovernment`. If you want to go back to public cloud, you can run `az cloud set --name AzureCloud`. 
+
 
 ### Set the subscription
 Set the default subscription to use.
@@ -118,7 +121,7 @@ az group deployment create --name "<name-of-deployment>" --resource-group "<name
 
 ### Retrieve or create necessary IIS/Kudu files
 
-**For C# bots**
+### [C# bots](#tab/csharp)
 
 ```cmd
 az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.csproj"
@@ -126,7 +129,7 @@ az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.cspro
 
 You must provide the path to the .csproj file relative to --code-dir. This can be performed via the --proj-file-path argument. The command would resolve --code-dir and --proj-file-path to "./MyBot.csproj"
 
-**For JavaScript bots**
+### [JavaScript bots](#tab/javascript)
 
 ```cmd
 az bot prepare-deploy --code-dir "." --lang Javascript
@@ -134,13 +137,15 @@ az bot prepare-deploy --code-dir "." --lang Javascript
 
 This command will fetch a web.config which is needed for Node.js apps to work with IIS on Azure App Services. Make sure web.config is saved to the root of your bot.
 
-**For TypeScript bots**
+### [TypeScript bots](#tab/typescript)
 
 ```cmd
 az bot prepare-deploy --code-dir "." --lang Typescript
 ```
 
 This command works similarly to JavaScript above, but for a Typescript bot.
+
+---
 
 ### Zip up the code directory manually
 
