@@ -3,11 +3,10 @@ title: Handle user interruptions | Microsoft Docs
 description: Learn how to handle user interrupt and direct conversation flow.
 keywords: interrupt, interruptions, switching topic, break
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 04/18/2019
 ms.reviewer:
 monikerRange: 'azure-bot-service-4.0'
@@ -47,7 +46,7 @@ We begin by implementing the `CancelAndHelpDialog` class to handle user interrup
 
 [!code-csharp[Class signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=10)]
 
-In the `CancelAndHelpDialog` class the `OnBeginDialogAsync` and `OnContinueDialogAsync` methods call the `InerruptAsync` method to check if the user has interrupted the normal flow or not. If the flow is interrupted, base class methods are called; otherwise, the return value from the `InterruptAsync` is returned.
+In the `CancelAndHelpDialog` class the `OnContinueDialogAsync` method calls the `InerruptAsync` method to check if the user has interrupted the normal flow or not. If the flow is interrupted, base class methods are called; otherwise, the return value from the `InterruptAsync` is returned.
 
 [!code-csharp[Overrides](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=22-31)]
 
@@ -67,7 +66,7 @@ We begin by implementing the `CancelAndHelpDialog` class to handle user interrup
 
 [!code-javascript[Class signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=11)]
 
-In the `CancelAndHelpDialog` class the `onBeginDialog` and `onContinueDialog` methods call the `interrupt` method to check if the user has interrupted the normal flow or not. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
+In the `CancelAndHelpDialog` class the `onContinueDialog` method calls the `interrupt` method to check if the user has interrupted the normal flow or not. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
 
 [!code-javascript[Overrides](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=12-18)]
 
