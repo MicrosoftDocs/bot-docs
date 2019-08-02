@@ -7,7 +7,6 @@ ms.author: diberry
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -81,7 +80,7 @@ Before you can create the dispatch model, you'll need to have your LUIS apps and
 
 7. Once your new LUIS app has been published, select the _MANAGE_ Tab. From the 'Application Information' page, record the values `Application ID` as "_app-id-for-app_" and `Display name` as "_name-of-app_". From the 'Key and Endpoints' page, record the values `Authoring Key` as "_your-luis-authoring-key_" and `Region` as "_your-region_". These values will later be used within your 'appsetting.json' file.
 
-8. Once completed, _Train_ and _Publish_ both your LUIS weather app and your LUIS dispatch app by repeating the above steps for 'Weather.json' file.
+8. Once completed, _Train_ and _Publish_ both your LUIS **weather** app and your LUIS **dispatch** app by repeating the above steps for 'Weather.json' file.
 
 ### Create QnA Maker knowledge base
 

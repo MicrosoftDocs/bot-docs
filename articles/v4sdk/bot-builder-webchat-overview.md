@@ -3,17 +3,16 @@ title:  Web Chat overview | Microsoft Docs
 description: Learn how to configure Bot Framework Web Chat.
 keywords: bot framework, webchat, chat, samples, react, reference
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 06/07/2019
 ---
 
 # Web Chat overview
 
-This article contains details of the [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat) component. The Bot Framework Web Chat component is a highly-customizable web-based client for the Bot Framework V4 SDK. The Bot Framework SDK v4 enables developers to model conversation and build sophisticated bot applications.
+This article contains details of the [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat) component. The Bot Framework Web Chat component is a highly customizable web-based client for the Bot Framework V4 SDK. The Bot Framework SDK v4 enables developers to model conversation and build sophisticated bot applications.
 
 If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migration section](#migrating-from-web-chat-v3-to-v4).
 
@@ -25,7 +24,7 @@ If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migratio
 First, create a bot using [Azure Bot Service](https://azure.microsoft.com/services/bot-service/).
 Once the bot is created, you will need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#step-1) in Azure Portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
 
-Here is how how you can add Web Chat control to your website:
+Here is how how you can add a Web Chat control to your website:
 
 ```html
 <!DOCTYPE html>
