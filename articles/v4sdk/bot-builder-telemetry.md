@@ -3,11 +3,10 @@ title: Add telemetry to your bot | Microsoft Docs
 description: Learn how to integrate your bot with the new telemetry features.
 keywords: telemetry, appinsights, monitor bot
 author: WashingtonKayaker
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 07/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
