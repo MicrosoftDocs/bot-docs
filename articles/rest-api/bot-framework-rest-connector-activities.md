@@ -6,13 +6,12 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
 # Activities overview
 
-The Bot Connector service exchanges information between bot and channel (user) by passing an [Activity][Activity] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. 
+The Bot Connector service exchanges information between bot and channel (user) by passing an `Activity` object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. 
 
 ## Activity types in the Bot Connector service
 
@@ -67,5 +66,4 @@ A bot receives an **endOfConversation** activity to indicate that the user has e
 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
-
-[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)

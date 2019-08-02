@@ -3,11 +3,10 @@ title: Migrate an existing bot in a new .NET Core project | Microsoft Docs
 description: We take an existing .NET v3 bot and migrate it to the .NET v4 SDK, using a new .NET Core project.
 keywords: bot migration, formflow, dialogs, v3 bot
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 06/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

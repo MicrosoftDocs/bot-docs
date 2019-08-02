@@ -6,7 +6,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
@@ -42,7 +41,7 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 | 204 | The request succeeded but no content was returned. |
 | 400 | The request was malformed or otherwise incorrect. |
 | 401 | The client is not authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
-| 403 | The client is not allowed to perform the requested operation. If the request specified a token that was previously valid but has expired, the `code` property of the [Error](bot-framework-rest-connector-api-reference.md#error-object) that is returned within the [ErrorResponse](bot-framework-rest-connector-api-reference.md#errorresponse-object) object is set to `TokenExpired`. |
+| 403 | The client is not allowed to perform the requested operation. If the request specified a token that was previously valid but has expired, the `code` property of the `Error` that is returned within the `ErrorResponse` object is set to `TokenExpired`. |
 | 404 | The requested resource was not found. Typically this status code indicates an invalid request URI. |
 | 500 | An internal server error occurred within the Direct Line service. |
 | 502 | The bot is unavailable or returned an error. **This is a common error code.** |
@@ -52,7 +51,7 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 
 ### Errors
 
-Any response that specifies an HTTP status code in the 4xx range or 5xx range will include an [ErrorResponse](bot-framework-rest-connector-api-reference.md#errorresponse-object) object in the body of the response that provides information about the error. If you receive an error response in the 4xx range, inspect the **ErrorResponse** object to identify the cause of the error and resolve your issue prior to resubmitting the request.
+Any response that specifies an HTTP status code in the 4xx range or 5xx range will include an `ErrorResponse` object in the body of the response that provides information about the error. If you receive an error response in the 4xx range, inspect the **ErrorResponse** object to identify the cause of the error and resolve your issue prior to resubmitting the request.
 
 > [!NOTE]
 > HTTP status codes and values specified in the `code` property inside the **ErrorResponse** object are stable. Values specified in the `message` property inside the **ErrorResponse** object may change over time.
@@ -163,8 +162,8 @@ POST /v3/directline/conversations/{conversationId}/activities
 
 | | |
 |----|----|
-| **Request body** | An [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object |
-| **Returns** | A [ResourceResponse](bot-framework-rest-connector-api-reference.md#resourceresponse-object) that contains an `id` property which specifies the ID of the Activity that was sent to the bot. | 
+| **Request body** | An `Activity` object |
+| **Returns** | A `ResourceResponse` that contains an `id` property which specifies the ID of the Activity that was sent to the bot. | 
 
 ### <a id="upload-send-files"></a> Upload and Send File(s)
 Uploads and sends file(s) as attachment(s). Set the `userId` parameter in the request URI to specify the ID of the user that is sending the attachment(s).
@@ -174,22 +173,22 @@ POST /v3/directline/conversations/{conversationId}/upload?userId={userId}
 
 | | |
 |----|----|
-| **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object that should serve as the container for the specified attachment(s). For more information, see [Send an activity to the bot](bot-framework-rest-direct-line-3-0-send-activity.md). |
-| **Returns** | A [ResourceResponse](bot-framework-rest-connector-api-reference.md#resourceresponse-object) that contains an `id` property which specifies the ID of the Activity that was sent to the bot. | 
+| **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the `Activity` object that should serve as the container for the specified attachment(s). For more information, see [Send an activity to the bot](bot-framework-rest-direct-line-3-0-send-activity.md). |
+| **Returns** | A `ResourceResponse` that contains an `id` property which specifies the ID of the Activity that was sent to the bot. | 
 
 > [!NOTE]
 > Uploaded files are deleted after 24 hours.
 
 ## Schema
 
-Direct Line 3.0 schema includes all of the objects that are defined by the [Bot Framework v3 schema](bot-framework-rest-connector-api-reference.md#objects) as well as the `ActivitySet` object and the `Conversation` object.
+Direct Line 3.0 schema includes all of the objects that are defined by the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema) as well as the `ActivitySet` object and the `Conversation` object.
 
 ### ActivitySet object 
 Defines a set of activities.<br/><br/>
 
 | Property | Type | Description |
 |----|----|----|
-| **activities** | [Activity](bot-framework-rest-connector-api-reference.md#activity-object)[] | Array of **Activity** objects. |
+| **activities** | `Activity`[] | Array of **Activity** objects. |
 | **watermark** | string | Maximum watermark of activities within the set. A client may use the `watermark` value to indicate the most recent message it has seen either when [retrieving activities from the bot](bot-framework-rest-direct-line-3-0-receive-activities.md#http-get) or when [generating a new WebSocket stream URL](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md). |
 
 ### Conversation object
@@ -204,7 +203,7 @@ Defines a Direct Line conversation.<br/><br/>
 
 ### Activities
 
-For each [Activity](bot-framework-rest-connector-api-reference.md#activity-object) that a client receives from a bot via Direct Line:
+For each `Activity` that a client receives from a bot via Direct Line:
 
 - Attachment cards are preserved.
 - URLs for uploaded attachments are hidden with a private link.
@@ -212,7 +211,7 @@ For each [Activity](bot-framework-rest-connector-api-reference.md#activity-objec
 
 Clients may [receive](bot-framework-rest-direct-line-3-0-receive-activities.md) multiple activities from the bot as part of an [ActivitySet](#activityset-object). 
 
-When a client sends an [Activity](bot-framework-rest-connector-api-reference.md#activity-object) to a bot via Direct Line:
+When a client sends an `Activity` to a bot via Direct Line:
 
 - The `type` property specifies the type activity it is sending (typically **message**).
 - The `from` property must be populated with a user ID, chosen by the client.
@@ -221,3 +220,7 @@ When a client sends an [Activity](bot-framework-rest-connector-api-reference.md#
 - The total size of the activity, when serialized to JSON and encrypted, must not exceed 256K characters. Therefore it is recommended that activities are kept under 150K. If more data is needed consider breaking the activity into multiple and/or consider using attachments.
 
 Clients may [send](bot-framework-rest-direct-line-3-0-send-activity.md) a single activity per request. 
+
+## Additional resources
+
+- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)

@@ -6,7 +6,6 @@ services: bot-service
 author: trrwilson
 manager: nitinme
 ms.service: bot-service
-ms.subservice: bot-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 ms.author: travisw
@@ -27,7 +26,7 @@ Direct Line Speech is currently in preview and requires a quick sign-up in the [
 
 ## Add the Direct Line Speech channel
 
-1. To add the Direct Line Speech Channel, first open the bot in the [Azure Portal](https://portal.azure.com), and click on **Channels** in the configuration blade.
+1. In your browser, navigate to the [Azure Portal](https://portal.azure.com). From your resources, select your **Bot Channel Registration** resource. Click on **Channels** in the *Bot management* section of the configuration blade.
 
     ![highlight of the location for selecting channels to connect to](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-selectchannel.png "selecting channels")
 
@@ -45,19 +44,17 @@ Direct Line Speech is currently in preview and requires a quick sign-up in the [
 
 With the Direct Line Speech channel connected to your bot, you now need to enable Bot Framework Protocol Streaming Extensions support for optimal, low-latency interaction.
 
-1. If you haven't already, open the blade for your bot in the [Azure Portal](https://portal.azure.com). 
-
-1. Click on **Settings** under the **Bot Management** category (right below **Channels**). Click the checkbox for **Enable Streaming Endpoint**.
+1. In the **Bot Channel Registration** resource configuration blade, click on **Settings** under the **Bot Management** category (right below **Channels**). Click the checkbox for **Enable Streaming Endpoint**.
 
     ![enable the streaming protocol](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-enablestreamingsupport.png "enable streaming extension support")
 
 1. At the top of the page, click **Save**.
 
-1. On the same blade, under the **App Service Settings** category, click **Configuration**.
+1. From your resources, select your **App Service** resource. In the displayed blade, under the **Settings** category, click **Configuration**.
 
     ![navigate to app service settings](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-configureappservice.png "configure the app service")
 
-1. Click on `General settings` and then select the option to enable `Web socket` support.
+1. Click on `General settings` tab and then select the option to enable `Web socket` support.
 
     ![enable websockets for the app service](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-enablewebsockets.png "enable websockets")
 
@@ -67,9 +64,17 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 
 ## Manage secret keys
 
-Client applications will need a channel secret to connect to your bot through the Direct Line Speech channel. Once you've saved your channel selection, you can retrieve these secret keys from the **Configure Direct Line Speech** page in the Azure Portal.
+Client applications will need a channel secret to connect to your bot through the Direct Line Speech channel. Once you've saved your channel selection, you can retrieve these secret keys following the next steps.
 
-![getting secret keys for Direct Line Speech](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-getspeechsecretkeys.png "getting secret keys for Direct Line Speech")
+1. From your resources, select your **Bot Channel Registration** resource. Click on **Channels** in the *Bot management* section of the configuration blade.
+1. Click the **Edit** link for the Direct Line Speech.
+
+    ![getting secret keys for Direct Line Speech](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-getspeechsecretkeys1.png "getting secret keys for Direct Line Speech")
+
+    The following window is displayed.
+
+    ![getting secret keys for Direct Line Speech](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-getspeechsecretkeys.png "getting secret keys for Direct Line Speech")
+1. Show and copy the keys to use in your application.
 
 ## Adding protocol support to your bot
 
