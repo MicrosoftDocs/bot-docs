@@ -67,7 +67,8 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 
 The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
 
-_Note: If you would like to use an existing App registration, you can use the command:_
+> [!NOTE] 
+> If you would like to use an existing App registration, you can use the command:_
 
 _az bot create --kind webapp --resource-group "name-of-resource-group" --name "name-of-web-app" --appid "existing-app-id" --password "existing-app-password" --lang "Javascript | Csharp"_
 
