@@ -193,7 +193,7 @@ az webapp deployment source config-zip --resource-group "<new-group-name>" --nam
 6. In the *Bot Channel Registration blade*, click **Test in Web Chat**.
 Alternatively, in the right panel, click the Test box.
 
-For more information about channel registration, see [Register a bot with Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
+For more information about channel registration, see [Register a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
 
 > [!NOTE]
 > A blade is the surface on which service functions or navigation elements appear when selected.
