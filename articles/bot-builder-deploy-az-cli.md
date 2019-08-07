@@ -66,7 +66,8 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 
 The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
 
-> [!NOTE] If you would like to use an existing App registration, you can use the command: az bot create --kind webapp --resource-group "name-of-resource-group" --name "name-of-web-app" --appid "existing-app-id" --password "existing-app-password" --lang "Javascript | Csharp"
+> [!NOTE] 
+> If you would like to use an existing App registration, you can use the command: az bot create --kind webapp --resource-group "name-of-resource-group" --name "name-of-web-app" --appid "existing-app-id" --password "existing-app-password" --lang "Javascript | Csharp"
 
 You can deploy your bot in a new resource group or an exising resource group. Choose the option that works best for you.
 
