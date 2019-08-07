@@ -143,10 +143,12 @@ az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.cspro
 
 You must provide the path to the .csproj file relative to --code-dir. This can be performed via the --proj-file-path argument. The command would resolve --code-dir and --proj-file-path to "./MyBot.csproj"
 
+
 ### JavaScript bots
 <!--
 ### [Javascript bots](#tab/javascript)
 -->
+
 ```cmd
 az bot prepare-deploy --code-dir "." --lang Javascript
 ```
@@ -157,6 +159,7 @@ This command will fetch a web.config which is needed for Node.js apps to work wi
 <!--
 ### [Typescript bots](#tab/typescript)
 -->
+
 ```cmd
 az bot prepare-deploy --code-dir "." --lang Typescript
 ```

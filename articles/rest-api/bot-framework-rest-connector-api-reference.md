@@ -7,6 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 08/02/2019
+
 ---
 
 # API reference
