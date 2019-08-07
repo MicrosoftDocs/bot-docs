@@ -3,11 +3,10 @@ title: Tutorial to create and deploy a basic bot | Microsoft Docs
 description: Learn how to create a basic bot and then deploy it to Azure.
 keywords: echo bot, deploy, azure, tutorial
 author: Ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -82,8 +81,10 @@ The above command outputs JSON with the key `appId`, save the value of this key 
 
 You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
 
-# [Deploy via ARM template (with **new** Resource Group)](#tab/newrg)
-
+## Deploy via ARM template (with **new** Resource Group)
+<!--
+## [Deploy via ARM template (with **new**  Resource Group)](#tab/nerg)
+-->
 #### Create Azure resources
 
 You'll create a new resource group in Azure and then use the ARM template to create the resources specified in it. In this case, we are providing App Service Plan, Web App, and Bot Channels Registration.
@@ -99,7 +100,10 @@ az deployment create --name "name-of-deployment" --template-file "template-with-
 | location |Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`. |
 | parameters | Provide deployment parameter values. `appId` value you got from running the `az ad app create` command. `appSecret` is the password you provided in the previous step. The `botId` parameter should be globally unique and is used as the immutable bot ID. It is also used to configure the display name of the bot, which is mutable. `botSku` is the pricing tier and can be F0 (Free) or S1 (Standard). `newAppServicePlanName` is the name of App Service Plan. `newWebAppName` is the name of the Web App you are creating. `groupName` is the name of the Azure resource group you are creating. `groupLocation` is the location of the Azure resource group. `newAppServicePlanLocation` is the location of the App Service Plan. |
 
-# [Deploy via ARM template (with **existing**  Resource Group)](#tab/erg)
+## Deploy via ARM template (with **existing** Resource Group)
+<!--
+## [Deploy via ARM template (with **existing**  Resource Group)](#tab/erg)
+-->
 
 #### Create Azure resources
 
@@ -112,7 +116,7 @@ In this case, we are using existing App Service Plan, but creating new a Web App
 _Note: The botId parameter should be globally unique and is used as the immutable bot ID. Also used to configure the displayName of the bot, which is mutable._
 
 ```cmd
-az group deployment create --name "name-of-deployment" --resource-group "name-of-resource-group" --template-file "template-with-preexisting-rg.json" --parameters appId="msa-app-guid" appSecret="msa-app-password" botId="id-or-name-of-bot" newWebAppName="name-of-web-app" existingAppServicePlan="name-of-app-service-plan" newappServicePlanLocation="location"
+az group deployment create --name "name-of-deployment" --resource-group "name-of-resource-group" --template-file "template-with-preexisting-rg.json" --parameters appId="msa-app-guid" appSecret="msa-app-password" botId="id-or-name-of-bot" newWebAppName="name-of-web-app" existingAppServicePlan="name-of-app-service-plan" appServicePlanLocation="location"
 ```
 
 **Option 2: New App Service Plan** 
@@ -136,7 +140,9 @@ az group deployment create --name "name-of-deployment" --resource-group "name-of
 #### Retrieve or create necessary IIS/Kudu files
 
 **For C# bots**
-
+<!--
+### [C# bots](#tab/csharp)
+-->
 ```cmd
 az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.csproj"
 ```
@@ -144,7 +150,9 @@ az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.cspro
 You must provide the path to the .csproj file relative to --code-dir. This can be performed via the --proj-file-path argument. The command would resolve --code-dir and --proj-file-path to "./MyBot.csproj"
 
 **For JavaScript bots**
-
+<!--
+### [Javascript bots](#tab/javascript)
+-->
 ```cmd
 az bot prepare-deploy --code-dir "." --lang Javascript
 ```

@@ -3,11 +3,10 @@ title: Activity processing | Microsoft Docs
 description: Understand activity processing in the bot SDK.
 keywords: bot adapter, custom middleware, short circuit, fallback, event handlers
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -18,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 The bot and user interact and exchange information via activities. Each activity received by your bot application is passed to a bot adapter, which passes activity information to your bot logic and ultimately sends any responses to the user. Receiving an activity, and subsequently processing it through your bot, is called a turn; this represents one complete cycle of your bot. A turn ends when all execution is done, the activity is fully processed and all the layers of the bot have completed.
 
-Activities, particularly those that [sent from a bot](#generating-responses) during a bot turn, are handled asynchronously. It's a necessary part of building a bot; if you need to brush up on how that all works, check out [async for .NET](https://docs.microsoft.com/dotnet/csharp/async) or [async for JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function) depending on your language choice.
+Activities, particularly those that are [sent from a bot](#generating-responses) during a bot turn, are handled asynchronously. It's a necessary part of building a bot; if you need to brush up on how that all works, check out [async for .NET](https://docs.microsoft.com/dotnet/csharp/async) or [async for JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function) depending on your language choice.
 
 ## The bot adapter
 

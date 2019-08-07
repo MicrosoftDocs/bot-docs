@@ -3,11 +3,10 @@ title: Add telemetry to your bot | Microsoft Docs
 description: Learn how to integrate your bot with the new telemetry features.
 keywords: telemetry, appinsights, monitor bot
 author: WashingtonKayaker
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 07/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -382,6 +381,7 @@ There are three main components available for your bot to log telemetry, and eac
 - A  [Bot Framework Middleware component](#telemetry-middleware) (*TelemetryLoggerMiddleware*) that will log when messages are received, sent, updated or deleted. You can override for custom logging.
 - [*LuisRecognizer* class.](#telemetry-support-luis)  You can override for custom logging in two ways - per invocation (add/replace properties) or derived classes.
 - [*QnAMaker*  class.](#telemetry-qnamaker)  You can override for custom logging in two ways - per invocation (add/replace properties) or derived classes.
+
 
 All components log using the `IBotTelemetryClient`  (or `BotTelemetryClient` in node.js) interface which can be overridden with a custom implementation.
 
