@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/25/2018
+ms.date: 08/02/2019
 ---
 
 # API reference
@@ -304,83 +304,6 @@ The Microsoft Bot Framework State service is retired as of March 30, 2018. Previ
 | `Get Conversation Data` | Retrieves state data that has previously been stored for a specific conversation on a channel. |
 | `Get Private Conversation Data` | Retrieves state data that has previously been stored for a specific user within the context of a specific conversation on a channel. |
 | `Delete State For User` | Deletes state data that has previously been stored for a user. |
-
-### Set User Data
-Stores state data for the specified user on the specified channel.
-```http
-POST /v3/botstate/{channelId}/users/{userId} 
-```
-
-| | |
-|----|----|
-| **Request body** | A `BotData` object |
-| **Returns** | A `BotData` object | 
-
-### Set Conversation Data
-Stores state data for the specified conversation on the specified channel.
-```http
-POST /v3/botstate/{channelId}/conversations/{conversationId}
-```
-
-| | |
-|----|----|
-| **Request body** | A `BotData` object |
-| **Returns** | A `BotData` object | 
-
-### Set Private Conversation Data
-Stores state data for the specified user within the context of the specified conversation on the specified channel.
-```http
-POST /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId} 
-```
-
-| | |
-|----|----|
-| **Request body** | A `BotData` object |
-| **Returns** | A `BotData` object | 
-
-### Get User Data
-Retrieves state data that has previously been stored for the specified user across all conversations on the specified channel.
-```http
-GET /v3/botstate/{channelId}/users/{userId} 
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | A `BotData` object | 
-
-### Get Conversation Data
-Retrieves state data that has previously been stored for the specified conversation on the specified channel.
-```http
-GET /v3/botstate/{channelId}/conversations/{conversationId} 
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | A `BotData` object | 
-
-### Get Private Conversation Data
-Retrieves state data that has previously been stored for the specified user within the context of the specified conversation on the specified channel.
-```http
-GET /v3/botstate/{channelId}/conversations/{conversationId}/users/{userId} 
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | A [`BotData` object | 
-
-### Delete State For User
-Deletes state data that has previously been stored for the specified user on the specified channel by using either the [Set User Data](#set-user-data) operation or the [Set Private Conversation Data](#set-private-conversation-data) operation.
-```http
-DELETE /v3/botstate/{channelId}/users/{userId} 
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | An array of strings (IDs) | 
 
 ## Bot Framework Activity schema
 

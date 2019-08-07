@@ -3,11 +3,10 @@ title: Send proactive notifications to users | Microsoft Docs
 description: Understand how to send notification messages
 keywords: proactive message, notification message, bot notification, 
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -118,7 +117,7 @@ MicrosoftAppCredentials.TrustServiceUrl(serviceUrl);
 
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`. 
 
-You'll want to add the above code just prior to the the code that sends the proactive message. This sample has it near the end of `CreateCallback()` in `ProactiveBot.cs`, but it is commented out because it will not work in Emulator without an `appId` and `appPassword`.
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
 
 # [JavaScript](#tab/javascript)
 
@@ -128,7 +127,7 @@ MicrosoftAppCredentials.trustServiceUrl(serviceUrl);
 
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
 
-You'll want to add the above code just prior to the the code that sends the proactive message. This sample has it near the end of `completeJob()` in `bot.js`, but it is commented out because it will not work in Emulator without an `appId` and `appPassword`.
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
 
 ---
 
