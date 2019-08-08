@@ -1,18 +1,17 @@
 ---
 title: Develop DirectLine Speech Bot | Microsoft Docs
 description: Develop DirectLine Speech Bot
-keywords: develop driect line speech bot, speech bot
+keywords: develop Direct Line speech bot, speech bot
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
-ms.topic: conceptuals
+ms.topic: article
 ms.service: bot-service
-ms.subservice: abs
 ms.date: 07/15/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Use Direct Line Speech in your bot 
+# Use Direct Line Speech in your bot
 
 [!INCLUDE [applies-to-v4](includes/applies-to.md)]
 
@@ -167,6 +166,10 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 4.	The remainder of your bot code stays the same!
+
+## Additional information
+
+For more information on working with activities, see [how bots work](v4sdk/bot-builder-basics.md) how to [send and receive text messages](v4sdk/bot-builder-howto-send-messages.md).
 
 ## Next Steps
 > [!div class="nextstepaction"]
