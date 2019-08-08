@@ -4,9 +4,9 @@ description: Learn core concepts for building a Cortana skill in the Bot Framewo
 keywords: Bot Framework, Cortana skill, speech, Node.js, Bot Builder, SDK, key concepts, core concepts
 author: DeniseMak
 manager: kamrani
+ms.author: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 02/10/2019
 monikerRange: 'azure-bot-service-3.0'
 #ROBOTS: Index
