@@ -10,11 +10,11 @@ ms.author: kamrani
 ms.date: 07/25/2019
 ---
 
-## Use direct line app service extension within a VNET
+# Use direct line app service extension within a VNET
 
 This article describes how to use the Direct Line App Service Extension with an Azure Virtual Network (VNET).
 
-### Create an App Service Environment and other Azure resources
+## Create an App Service Environment and other Azure resources
 
 1. Direct line app service extension is available on all **Azure App Services**, including those hosted within an **Azure App Service Environment**. An Azure App Service Environment provides isolation and is ideal for working within a VNET.
     - Instructions for creating an external App Service Environment can be found in [Create an External App Service environment](https://docs.microsoft.com/en-us/azure/app-service/environment/create-external-ase) article.
@@ -25,7 +25,7 @@ This article describes how to use the Direct Line App Service Extension with an 
     - Under Region, select your App Service Environment
     - Finish creating your App Service Plan
 
-### Configure the VNET Network Security Groups (NSG)
+## Configure the VNET Network Security Groups (NSG)
 
 1. Direct Line App Service Extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment’s subnet. The rule that required is as follows:
 
@@ -33,7 +33,7 @@ This article describes how to use the Direct Line App Service Extension with an 
 |---|---|
 |Source Port|*|
 |Destination|IP Addresses|
-|Destination IP addresses|52.155.168.246, 13.83.242.172|
+|Destination IP addresses|20.38.80.64, 40.82.248.64|
 |Destination port ranges|443|
 |Protocol|Any|
 |Action|Allow|
@@ -49,7 +49,7 @@ This article describes how to use the Direct Line App Service Extension with an 
 For the preview, you will need to change how your Direct line app service extension communicates with Azure. This can be done by adding a new **App Service Application Setting** to your application using the portal, or the `applicationsettings.json` file:
 
 - Property: DirectLineExtensionABSEndpoint
-- Value: https://dlase.botframework.com/v3/extension
+- Value: https://st-directline.botframework.com/v3/extension
 
 >[!NOTE]
 > This will only be required for the preview of Direct line app service extension.

@@ -10,19 +10,19 @@ ms.author: kamrani
 ms.date: 07/25/2019
 ---
 
-## Use WebChat with the direct line app service extension
+# Use WebChat with the direct line app service extension
 
 This article describes how to use WebChat with the direct line app service extension.
 
-### Get Your Direct Line Secret
+## Get Your Direct Line Secret
 
-The first step is to find your direct line secret. You can do this by following the instructions described in [Connect a bot to Direct Line](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0) article.
+The first step is to find your direct line secret. You can do this by following the instructions described in [Connect a bot to Direct Line](bot-service-channel-connect-directline.md) article.
 
-### Get the preview version of DirectLineJS
+## Get the preview version of DirectLineJS
 The preview version of DirectLineJS can be found here:
 https://github.com/Jeffders/DirectLineAppServiceExtensionPreview/tree/master/libraries
 
-### Integrate WebChat client
+## Integrate WebChat client
 
 Generally speaking, the approach is the same as before. With the exception that a new version of **WebChat** has been created that supports two-way **WebSocket** traffic, which instead of connecting to https://directline.botframework.com/ connects directly to your hosted bot.
 The direct line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, where the `/.bot/` extension is the Direct Line **endpoint** on your App Service.
