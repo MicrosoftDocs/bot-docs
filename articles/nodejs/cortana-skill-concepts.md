@@ -74,7 +74,7 @@ Degrees of grounding, from weakest to strongest:
 The bot performing an action should present evidence of successful performance. It's also important to indicate failure or understanding. 
 
 * Non-speech closure: If you push an elevator button, its light turns on.  
-This is awo step process:
+This is two step process:
     * Presentation (when you press the button)
     * Acceptance (when the button lights up)
 
