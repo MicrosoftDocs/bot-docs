@@ -35,13 +35,13 @@ At this time we have made available the following Bot Framework Skills, powered 
 
 | Name | Description |
 | ---- | ----------- |
-|[Calendar Skill](https://github.com/Microsoft/AI/blob/master/docs/reference/skills/productivity-calendar.md)|Add calendar capabilities to your assistant. Powered by Microsoft Graph and Google.|
-|[Email Skill](https://github.com/Microsoft/AI/blob/master/docs/reference/skills/productivity-email.md)|Add email capabilities to your assistant. Powered by Microsoft Graph and Google.|
-|[To Do Skill](https://github.com/Microsoft/AI/blob/master/docs/reference/skills/productivity-todo.md)|Add task management capabilities to your assistant. Powered by Microsoft Graph.|
-|[Point of Interest Skill](https://github.com/Microsoft/AI/blob/master/docs/reference/skills/productivity-pointofinterest.md)|Find points of interest and directions. Powered by Azure Maps and FourSquare.|
-|[Automotive Skill](https://github.com/Microsoft/AI/blob/master/docs/reference/skills/automotive.md)|Industry-vertical Skill for showcasing enabling car feature control.|
-|[Experimental Skills](https://github.com/Microsoft/AI/blob/master/docs/reference/skills/experimental.md)|News, Restaurant Booking and Weather.|
+|[Calendar Skill](https://aka.ms/bfcalendarskill)|Add calendar capabilities to your assistant. Powered by Microsoft Graph and Google.|
+|[Email Skill](https://aka.ms/bfemailskill)|Add email capabilities to your assistant. Powered by Microsoft Graph and Google.|
+|[To Do Skill](https://aka.ms/bftodoskill)|Add task management capabilities to your assistant. Powered by Microsoft Graph.|
+|[Point of Interest Skill](https://aka.ms/bfpoiskill)|Find points of interest and directions. Powered by Azure Maps and FourSquare.|
+|[Automotive Skill](https://aka.ms/bfautoskill)|Industry-vertical Skill for showcasing enabling car feature control.|
+|[Experimental Skills](https://aka.ms/bfexperimentalskills)|News, Restaurant Booking and Weather.|
 
 ## Getting Started
 
-Refer to [Getting Started](https://github.com/Microsoft/AI/tree/master/docs#tutorials) to learn how to leverage existing Skills and build your own.
+Refer to the [tutorials](https://aka.ms/bfstutorials) to learn how to leverage existing skills and build your own.
