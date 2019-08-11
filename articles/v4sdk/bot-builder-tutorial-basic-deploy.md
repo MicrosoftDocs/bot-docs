@@ -45,7 +45,8 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 - Latest version of the [Azure cli](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest).
 
 ### 1. Prepare for deployment
-When you create a bot using Visual Studio or Yeoman templates, the source code generated contains a `deploymentTemplates` folder with ARM templates. The deployment process documented here uses the ARM template to provision required resources for the bot in Azure by using the Azure CLI. 
+To deploy the bot we first need to create the required resources in Azure for it to run; after this we could upload the code with the logic of our bot. For the first part, we will be using the Azure CLI to deploy the required components (in case they have not been created yet), such as a Resource Group, an App Service Plan, an App Service and a Bot Channels Registration. The creation of these resources will need a ARM template that tells Azure how to deploy them.
+When you create a bot using Visual Studio or Yeoman templates, the source code generated contains a `deploymentTemplates` folder with pre built ARM templates so you don't have to write them from scratch. The deployment process documented here uses the ARM template to provision required resources for the bot in Azure by using the Azure CLI. 
 
 #### Login to Azure
 
@@ -80,13 +81,12 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 
 The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
 
-You can deploy your bot in a new resource group or an exising resource group. Choose the option that works best for you.
+You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
 
-# [Deploy via ARM template (with **new** Resource Group)](#tab/newrg)
+##### Deploy via ARM template (with **new** Resource Group)
+###### Create Azure resources
 
-#### Create Azure resources
-
-You'll create a new resource group in Azure and then use the ARM template to create the resources specified in it. In this case, we are provding App Service Plan, Web App, and Bot Channels Registration.
+You'll create a new resource group in Azure and then use the ARM template to create the resources specified in it. In this case, we are providing App Service Plan, Web App, and Bot Channels Registration.
 
 ```cmd
 az deployment create --name "<name-of-deployment>" --template-file "template-with-new-rg.json" --location "location-name" --parameters appId="<msa-app-guid>" appSecret="<msa-app-password>" botId="<id-or-name-of-bot>" botSku=F0 newAppServicePlanName="<name-of-app-service-plan>" newWebAppName="<name-of-web-app>" groupName="<new-group-name>" groupLocation="<location>" newAppServicePlanLocation="<location>"
@@ -99,9 +99,8 @@ az deployment create --name "<name-of-deployment>" --template-file "template-wit
 | location |Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`. |
 | parameters | Provide deployment parameter values. `appId` value you got from running the `az ad app create` command. `appSecret` is the password you provided in the previous step. The `botId` parameter should be globally unique and is used as the immutable bot ID. It is also used to configure the display name of the bot, which is mutable. `botSku` is the pricing tier and can be F0 (Free) or S1 (Standard). `newAppServicePlanName` is the name of App Service Plan. `newWebAppName` is the name of the Web App you are creating. `groupName` is the name of the Azure resource group you are creating. `groupLocation` is the location of the Azure resource group. `newAppServicePlanLocation` is the location of the App Service Plan. |
 
-# [Deploy via ARM template (with **existing**  Resource Group)](#tab/erg)
-
-#### Create Azure resources
+##### Deploy via ARM template (with **existing**  Resource Group)
+###### Create Azure resources
 
 When using an existing resource group, you can either use an existing App Service Plan or create a new one. Steps for both options are listed below. 
 
@@ -132,6 +131,10 @@ az group deployment create --name "<name-of-deployment>" --resource-group "<name
 | parameters | Provide deployment parameter values. `appId` value you got from running the `az ad app create` command. `appSecret` is the password you provided in the previous step. The `botId` parameter should be globally unique and is used as the immutable bot ID. It is also used to configure the display name of the bot, which is mutable. `newWebAppName` is the name of the Web App you are creating. `newAppServicePlanName` is the name of App Service Plan. `newAppServicePlanLocation` is the location of the App Service Plan. |
 
 ---
+
+### 2. Upload the bot code
+
+Now that we have the resources required for the bot created in Azure, let's proceed to upload the code. We will need first to prepare the code to be uploaded, and the zip the code and push it to the cloud:
 
 #### Retrieve or create necessary IIS/Kudu files
 
@@ -168,7 +171,7 @@ As such, it is important to include your built code and with all necessary depen
 >
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
-### 2. Deploy code to Azure
+#### Deploy code to Azure
 At this point we are ready to deploy the code to the Azure Web App. Run the following command from the command line to perform deployment using the kudu zip push deployment for a web app.
 
 ```cmd
