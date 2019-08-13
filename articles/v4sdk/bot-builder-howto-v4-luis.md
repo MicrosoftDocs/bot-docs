@@ -25,7 +25,7 @@ The ability to understand what your user means conversationally and contextually
 
 ## About this sample
 
-This core bot coding sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the the top recognized LUIS intent. 
+This core bot coding sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent. 
 
 # [C#](#tab/csharp)
 After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
@@ -35,7 +35,7 @@ After each processing of user input, `DialogBot` saves the current state of both
 
 ![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow.png)
 
-The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. That main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "Book_Flight", the helper fills out information from the user that LUIS returned, and starts the `BookingDialog`, which acquires additional information as needed from the user such as
+The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. That main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "Book_Flight", the helper fills out information from the user that LUIS returned, and starts the `BookingDialog`, which acquires additional information as needed from the user such as
 
 - `Origin` the originating city.
 - `TravelDate` the date to book the flight. 
