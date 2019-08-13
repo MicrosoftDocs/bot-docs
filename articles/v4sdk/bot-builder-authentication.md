@@ -2,16 +2,19 @@
 title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: abs
 ms.date: 06/07/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-<!-- Related TODO:
+<!-- 
+
+ms.author: v-jofing
+
+Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
 - Check guidance in [DirectLine authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
 -->
@@ -74,8 +77,6 @@ This article describes a sample bot that connects to the Microsoft Graph using a
 - **Prepare the bot sample code**
 
 Once you finish, you will have a bot running locally that can respond to a few simple tasks against an Azure AD application, such as checking and sending an email, or displaying who you are and who your manager is. To do this, your bot will use a token from an Azure AD application against the Microsoft.Graph library. You do not need to publish your bot to test the OAuth sign-in features; however, your bot will need a valid Azure app ID and password.
-
-These authentication features work with other types of bots, too. However, this article uses a registration-only bot.
 
 ### Web Chat and Direct Line considerations
 
@@ -403,6 +404,37 @@ It's best practice to let users explicitly sign out or logout, instead of relyin
 
 ---
 
+### Adding Teams Authentication
+
+Teams behaves somewhat differently than other channels in regards to OAuth and requires a few changes to properly implement authentication. We will add code from the Teams Authentication Bot sample ([C#][cs-teams-auth-sample]/[JavaScript][js-teams-auth-sample]).
+ 
+One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity. 
+
+# [C#](#tab/csharp)
+**Bots/TeamsBot.cs**
+[!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight34)]
+
+# [JavaScript](#tab/javascript)
+**bots/teamsBot.js**
+[!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=27-31&highlight=27)]
+
+---
+
+If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file. 
+
+# [C#](#tab/csharp)
+**Bots/DialogBot.cs**
+[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=18)]
+
+# [JavaScript](#tab/javascript)
+**Bots/dialogBot.js**
+[!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=4-6)]
+
+---
+Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActivityHandler.cs` for C# bots and `teamsActivityHandler.js` for Javascript bots) at the topmost level in your bot's folder.
+
+The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
+
 ### Further reading
 
 - [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help) includes links for additional support.
@@ -426,3 +458,6 @@ It's best practice to let users explicitly sign out or logout, instead of relyin
 [js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
 [cs-msgraph-sample]: https://aka.ms/v4cs-auth-msgraph-sample
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
+[cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
+[js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
+[teams-activity-feed]:[https://aka.ms/teams-activity-feed

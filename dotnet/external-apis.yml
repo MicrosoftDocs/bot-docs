@@ -1,0 +1,113 @@
+### YamlMime:XRefMap
+hrefUpdated: true
+references:
+- uid: Autofac.Builder.ConcreteReflectionActivatorData
+  fullName: Autofac.Builder.ConcreteReflectionActivatorData
+  name: ConcreteReflectionActivatorData
+  #  href: /azure/bot-service/external-packages-nuget
+- uid: Autofac.Builder.IRegistrationBuilder`3
+  fullName: Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>
+  name: IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>
+- uid: Autofac.Builder.SimpleActivatorData
+  fullName: Autofac.Builder.SimpleActivatorData
+  name: SimpleActivatorData
+- uid: Autofac.Builder.SingleRegistrationStyle
+  fullName: Autofac.Builder.SingleRegistrationStyle
+  name: SingleRegistrationStyle
+- uid: Autofac.ContainerBuilder
+  fullName: Autofac.ContainerBuilder
+  name: ContainerBuilder
+- uid: Autofac.Core.Parameter
+  fullName: Autofac.Core.Parameter
+  name: Parameter
+- uid: Autofac.IComponentContext
+  fullName: Autofac.IComponentContext
+  name: IComponentContext
+- uid: Autofac.IContainer
+  fullName: Autofac.IContainer
+  name: IContainer
+- uid: Autofac.ILifetimeScope
+  fullName: Autofac.ILifetimeScope
+  name: ILifetimeScope
+- uid: Autofac.Module
+  fullName: Autofac.Module
+  name: Module
+
+- uid: Newtonsoft.Json.Converters.StringEnumConverter
+  fullName: Newtonsoft.Json.Converters.StringEnumConverter
+  name: StringEnumConverter
+- uid: Newtonsoft.Json.Formatting
+  fullName: Newtonsoft.Json.Formatting
+  name: Formatting
+- uid: Newtonsoft.Json.JsonConverter
+  fullName: Newtonsoft.Json.JsonConverter
+  name: JsonConverter
+- uid: Newtonsoft.Json.JsonReader
+  fullName: Newtonsoft.Json.JsonReader
+  name: JsonReader
+- uid: Newtonsoft.Json.JsonSerializer
+  fullName: Newtonsoft.Json.JsonSerializer
+  name: JsonSerializer
+- uid: Newtonsoft.Json.JsonSerializerSettings
+  fullName: Newtonsoft.Json.JsonSerializerSettings
+  name: JsonSerializerSettings
+- uid: Newtonsoft.Json.JsonWriter
+  fullName: Newtonsoft.Json.JsonWriter
+  name: JsonWriter
+- uid: Newtonsoft.Json.Linq.JObject
+  fullName: Newtonsoft.Json.Linq.JObject
+  name: JObject
+- uid: Newtonsoft.Json.Linq.JToken
+  fullName: Newtonsoft.Json.Linq.JToken
+  name: JToken
+
+- uid: MediaTypeFormatter
+  fullName: System.Net.Http.Formatting.MediaTypeFormatter
+  name: MediaTypeFormatter
+
+- uid: HttpConfiguration
+  fullName: System.Web.Http.HttpConfiguration
+  name: HttpConfiguration
+
+- uid: Microsoft.Rest.HttpOperationException
+  fullName: Microsoft.Rest.HttpOperationException
+  name: HttpOperationException
+- uid: Microsoft.Rest.HttpOperationResponse
+  fullName: Microsoft.Rest.HttpOperationResponse
+  name: HttpOperationResponse
+- uid: Microsoft.Rest.HttpOperationResponse`1
+  fullName: Microsoft.Rest.HttpOperationResponse<T>
+  name: HttpOperationResponse<T>
+- uid: Microsoft.Rest.HttpRequestMessageWrapper
+  fullName: Microsoft.Rest.HttpRequestMessageWrapper
+  name: HttpRequestMessageWrapper
+- uid: Microsoft.Rest.HttpResponseMessageWrapper
+  fullName: Microsoft.Rest.HttpResponseMessageWrapper
+  name: HttpResponseMessageWrapper
+- uid: Microsoft.Rest.IServiceOperations`1
+  fullName: Microsoft.Rest.IServiceOperations<TClient>
+  name: IServiceOperations<TClient>
+- uid: Microsoft.Rest.RestException
+  fullName: Microsoft.Rest.RestException
+  name: RestException
+- uid: Microsoft.Rest.SerializationException
+  fullName: Microsoft.Rest.SerializationException
+  name: SerializationException
+- uid: Microsoft.Rest.ServiceClient`1
+  fullName: Microsoft.Rest.ServiceClient<T>
+  name: ServiceClient<T>
+- uid: Microsoft.Rest.ServiceClientCredentials
+  fullName: Microsoft.Rest.ServiceClientCredentials
+  name: ServiceClientCredentials
+- uid: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy
+  fullName: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy
+  name: ITransientErrorDetectionStrategy
+- uid: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  fullName: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  name: IsTransient(Exception)
+- uid: Microsoft.Rest.TransientFaultHandling.RetryPolicy
+  fullName: Microsoft.Rest.TransientFaultHandling.RetryPolicy
+  name: RetryPolicy
+- uid: Microsoft.Rest.ValidationException
+  fullName: Microsoft.Rest.ValidationException
+  name: ValidationException
