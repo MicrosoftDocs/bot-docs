@@ -4,93 +4,97 @@
 
 ### [Bot Framework] dialogs library
 
-1. The dialogs library provides a few built-in features, such as
-    prompts and waterfall dialogs to make your bot conversation easier to manage.
+1. Provides a few built-in features to make your bot conversation easier to manage. For example, prompts and waterfall dialogs, component dialogs, and more in preview.
 
 ### dialog
 
-1. A conversational abstraction that encapsulates its own states. Each dialog is designed to perform a specific task and can break a conversation into smaller pieces. [example: waterfall]
+1. Abstracts a conversation and encapsulates its own states. Each dialog is designed to perform a specific task and can break a conversation into smaller pieces. [example: waterfall]
+    - A [relatively] _simple dialog_ is one that might ask a series of questions and then reply with an answer or acknowledgement, without branching or other control logic.
+    - A [relatively] _complex dialog_ is one that can progress in multiple ways, such as spawning child dialogs, and so on.
 
-    ...Dialogs are a central concept in the Bot Framework SDK, and provide a way to manage a conversation with the user. The Bot Framework V4 SDK Dialogs library offers waterfall dialogs, prompts and component dialogs as built-in constructs to model conversations via dialogs.
+    ...Dialogs are a central concept in the Bot Framework SDK, and provide a way to manage a conversation with the user.
 
     ...A dialog guides the conversation, sometimes in response user input or other stimuli. Logically, a dialog can be thought of as composed of _turns_.
 
     ...This makes things more portable making each dialog piece adhere to the single responsibility principle.
 
-    ...[In terms of a state machine]: initial state, continuation, final/accepting state.
+    ...[In terms of a <a href="https://en.wikipedia.org/wiki/Finite-state_machine" target="_blank">state machine</a>]: initial state, continuation, final/accepting state.
 
-    ...[In terms of the strategy pattern]
-
-    - simple dialog
-    - complex dialog
+    ...[In terms of the <a href="https://en.wikipedia.org/wiki/Strategy_pattern" target="_blank">strategy pattern</a>]: using a choice or a LUIS intent to trigger a dialog.
 
 ### _dialog_ class
 
-1. The _dialog_ class defines the base abstraction for a dialog, which can be used to control dialogs "from the outside" (from a dialog context) in a consistent way. Each derived class can add additional semantics that affect how the dialog proceeds "from the inside". For example, a waterfall dialog describes a linear sequence of steps, a prompt describes a way to ask the user for a specific type of information, and a composite dialog encapsulates an inner dialog set.
+1. Defines the base abstraction for a [dialog](#dialog), which can be used to control dialogs "from the outside" (from a [dialog context](#dialog-context)) in a consistent way. Each derived class can add additional semantics that affect how the dialog proceeds "from the inside".
+    - A dialog is controlled from a dialog context: begin, continue, end, resume, re-prompt.
+    - For example, a waterfall dialog describes a linear sequence of steps, a prompt describes a way to ask the user for a specific type of information, and a composite dialog encapsulates an inner dialog set.
     - Developers can derive from any of the _dialog_ classes to add their own internal semantics.
-1. A dialog is controlled from a dialog context: begin, continue, end, resume, re-prompt.
-1. At design-time, a dialog object describes the behavior of the dialog.
-1. At run time, state for the dialog stack is managed by the _DialogContext_, which maintains a _stack_ property that stores state for each dialog on the stack.
+1. At design time, a dialog object describes the behavior of the dialog.
+1. At run time, state for the [dialog stack](#dialog-stack) is managed by a [_dialog context_](#dialog-context-class) object, which maintains a _stack_ property that stores state for each dialog on the stack.
 
 ### dialog set
 
-1. A related set of dialogs that can all call each other.
+1. Contains a related set of [dialogs](#dialog) that can all call each other.
 
     ...A hub, a way of tracking dialogs as a whole and a managing associated state.
 
 ### _dialog set_ class
 
-1. Represents a collection of dialogs, such as prompts, waterfall dialogs, and other dialogs. (Each dialog in the set has a unique ID and can call each other.)
-1. Used to generate a dialog context....
+1. Represents a collection of [_dialog_](#dialog-class) objects, such as prompts, waterfall dialogs, and other dialogs. (Each dialog in the set has a unique ID and can call each other.)
+1. Used to generate a [_dialog context_](#dialog-context-class)....
 
 ### dialog state
 
-1. all state information for a specific dialog
-1. as part of the dialog stack
-1. the current state of a dialog [FSM-meaning]
+1. Represents all state information for a specific [dialog](#dialog).
+1. An entry in the [dialog stack](#dialog-stack).
+1. [In terms of a <a href="https://en.wikipedia.org/wiki/Finite-state_machine" target="_blank">state machine</a>]: The current state of a dialog.
 
 ### _dialog state_ class
 
-1. Contains state information for all dialogs for a specific dialog context.
-    - When you create a dialog set, you must provide a state property accessor that can access state for the dialog set.
-    - When you create a dialog context from a dialog state, the state accessor retrieves dialog state from the turn context.
+1. Contains state information for all [_dialogs_](#dialog-class) for a specific [_dialog context_](#dialog-context-class).
+    - When you create a [_dialog set_](#dialog-set-class), you must provide a state property accessor that can access state for the dialog set.
+    - When you create a dialog context from a dialog state, the state accessor retrieves dialog state from the turn [context](#context).
 
 ### dialog stack
 
-1. _dialog stack_ property of the _DialogState_ class (state information for all active dialogs).
-1. _stack_ property of the _DialogContext_ class.
+1. Represents state information for all "active" dialogs, similar to a <a href="https://en.wikipedia.org/wiki/Call_stack" target="_blank">call stack</a>.
+    - The _dialog stack_ property of the [_dialog state_](#dialog-state-class) class.
+    - The _stack_ property of the [_dialog context_](#dialog-context-class) class.
 
 ### context
 
-The data used by a bot that allows it to "pick up where it left off" each turn. Bots are stateless, so each turn context is reestablished.
+The data used by a bot that allows it to "pick up where it left off". Bots are stateless, so context has to be reestablished each turn. See <a href="https://en.wikipedia.org/wiki/Context_(computing)" target="_blank">context</a>.
 
 1. turn context: Includes the bot's state plus information about the incoming activity.
-1. dialog context: Includes the turn context, information about the dialog set in question, and the state of the dialog stack.
-1. waterfall step context: Includes dialog context, plus
-
-### _dialog context_ class
-
-1. The context for the current turn with respect to the dialog stack.
-1. Used to control dialogs and the dialog stack.
-
-See also:
-<a href="https://en.wikipedia.org/wiki/Context_(computing)" target="_blank">context</a>,
+1. dialog context: Includes the turn context, information about the [dialog set](#dialog-set) in question, and the state of the [dialog stack](#dialog-stack).
+1. waterfall step context: Includes dialog context, plus context established as part of being a waterfall: step index, reason, result [from previous step], options [the dialog was started with], and values ["local" to the waterfall].
 
 ### _turn context_ class
 
+1. The context for the current bot turn.
+
+### _dialog context_ class
+
+1. The context for the current [dialog] turn with respect to the dialog stack.
+1. Used to control [_dialogs_](#dialog-class) and the [dialog stack](#dialog-stack).
+
 ### _waterfall step context_ class
+
+1. The context for the current step of a waterfall dialog.
 
 ### active dialog
 
+1. The [dialog instance](#dialog-instance) on the top of the [dialog stack](#dialog-stack), that is the one that will most immediately handle a turn if the [dialog context](#dialog-context) is instructed to continue.
+1. Any dialog instance on the dialog stack. Each dialog on the stack is active, in that it will eventually handle a turn once the dialogs above it on the stack complete, unless they are all cancelled.
+
 ### dialog step
 
-1. Describes a possible processing state of the dialog.
-1. In any given dialog turn, the dialog step defines how the dialog responds to input.
+1. Describes a possible processing state of a [dialog](#dialog).
+1. In any given [dialog turn](#dialog-turn), the dialog step defines how the dialog responds to input.
 
 ### dialog turn
 
 1. The portion of a turn that is processed by a given dialog.
-1. The dialog can be thought of as performing one or more steps during any given turn.
+1. The [dialog](#dialog) can be thought of as performing one or more steps during any given turn.
 
 ### dialog instance
 
@@ -98,7 +102,11 @@ See also:
 
 ### dialog options
 
-### calling context (parent context)
+### calling context
+
+1. See [parent context](#parent-context).
+
+### parent context
 
 ### parent dialog
 
@@ -108,13 +116,14 @@ See also:
 
 ### _component dialog_ class
 
-1. Encapsulates a dialog set, defining a type of composite dialog.
+1. Encapsulates a [_dialog set_](#dialog-set-class), defining a type of composite [dialog](#dialog).
     - When a component dialog is a member of an _outer_ dialog set, it can be thought of as a subroutine...
-    - A component dialog defines an _inner_ dialog set at design-time. At run-time, this is managed as an _inner_ dialog context.
+    - At design time, a component dialog defines an _inner_ dialog set.
+    - At run time, this is managed via an _inner_ [_dialog context_](#dialog-context-class).
 
 ### _waterfall dialog_ class
 
-1. Define [at design-time] a sequence of steps and pass information along to the next step.
+1. At design time, defines a sequence of [steps](#dialog-step) and how information is passed along to the next step.
     - Are good for simple linear tasks.
     - Can be combined with prompt dialogs to ask the user for information.
     - Can be combined with other waterfalls to create more complex flow, such as branches and loops.

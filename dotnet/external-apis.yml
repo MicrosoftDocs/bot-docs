@@ -61,11 +61,11 @@ references:
   fullName: Newtonsoft.Json.Linq.JToken
   name: JToken
 
-- uid: MediaTypeFormatter
+- uid: System.Net.Http.Formatting.MediaTypeFormatter
   fullName: System.Net.Http.Formatting.MediaTypeFormatter
   name: MediaTypeFormatter
 
-- uid: HttpConfiguration
+- uid: System.Web.Http.HttpConfiguration
   fullName: System.Web.Http.HttpConfiguration
   name: HttpConfiguration
 
