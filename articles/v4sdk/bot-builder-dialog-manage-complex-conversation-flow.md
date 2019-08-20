@@ -3,11 +3,10 @@ title: Create advanced conversation flow using branches and loops | Microsoft Do
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 07/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -59,7 +58,7 @@ We register services for the bot in `Startup`. These services are available to o
 - Services for managing state: storage, user state, and conversation state.
 - The dialog the bot will use.
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=22-39)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=22-36)]
 
 # [JavaScript](#tab/javascript)
 
@@ -75,8 +74,7 @@ We create services for the bot that other parts of the code require.
 - Services for managing state: storage, user state, and conversation state.
 - The dialog the bot will use.
 
-[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=25-38)]
-[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=43-45)]
+[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=25-55)]
 
 ---
 
@@ -201,7 +199,7 @@ The message handler calls the `RunAsync` method to manage the dialog, and we've 
 
 **Bots\DialogAndWelcome.cs**
 
-`DialogAndWelcomeBot` extends `DialogBot` above to provide a welcome message when the user joins the conversation, and is what is called by `Startup.cs`.
+`DialogAndWelcomeBot` extends `DialogBot` above to provide a welcome message when the user joins the conversation, and is what is created in `Startup.cs`.
 
 [!code-csharp[On members added](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Bots/DialogAndWelcome.cs?range=21-38)]
 
@@ -221,11 +219,11 @@ Since component dialog defines an inner dialog set, we have to create an outer d
 
 The message handler calls the `run` helper method to manage the dialog, and we implement a turn handler to save any changes to the conversation and user state that may have happened during the turn. The call to `next` will let the base implementation call the `onDialog` method, ensuring the save calls happen at the end of that turn.
 
-[!code-javascript[Overrides](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogBot.js?range=30-47)]
+[!code-javascript[Overrides](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogBot.js?range=24-41)]
 
 **bots/dialogAndWelcomeBot.js**
 
-`DialogAndWelcomeBot` extends `DialogBot` above to provide a welcome message when the user joins the conversation, and is what is called by `Startup.cs`.
+`DialogAndWelcomeBot` extends `DialogBot` above to provide a welcome message when the user joins the conversation, and is what is created in `index.js`.
 
 [!code-javascript[On members added](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogAndWelcomeBot.js?range=10-21)]
 
