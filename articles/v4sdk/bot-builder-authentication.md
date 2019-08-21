@@ -1,7 +1,6 @@
 ---
 title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
-author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
@@ -269,7 +268,7 @@ You will need your bot's app ID and password to complete this process.
 
 ---
 
-If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can create a new password [as described here](../bot-service-quickstart-registration.md#bot-channels-registration-password)
+If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can create a new password [as described here](../bot-service-quickstart-registration.md#get-registration-password)
 
 > [!NOTE]
 > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
