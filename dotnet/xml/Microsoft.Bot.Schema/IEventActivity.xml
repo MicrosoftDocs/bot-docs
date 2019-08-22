@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,7 +19,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Asynchronous external event
+            Asynchronous external event.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,15 +37,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Name of the event
+            Gets or sets name of the event.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Name of the event.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +65,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Reference to another conversation or activity
+            Gets or sets reference to another conversation or activity.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Reference to another conversation or activity.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +93,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Open-ended value 
+            Gets or sets open-ended value.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Open-ended value.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

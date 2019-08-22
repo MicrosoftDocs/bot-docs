@@ -1,0 +1,80 @@
+﻿<Type Name="OrdinalV2+Anchor" FullName="Microsoft.Bot.Builder.AI.Luis.OrdinalV2+Anchor">
+  <TypeSignature Language="C#" Value="public static class OrdinalV2.Anchor" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit OrdinalV2/Anchor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor" />
+  <TypeSignature Language="VB.NET" Value="Public Class OrdinalV2.Anchor" />
+  <TypeSignature Language="F#" Value="type OrdinalV2.Anchor = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Possible anchors for offsets.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public const string Current;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Current" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Const Current As String " />
+      <MemberSignature Language="F#" Value="val mutable Current : string" Usage="Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor.Current" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public const string End;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string End" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor.End" />
+      <MemberSignature Language="VB.NET" Value="Public Const End As String " />
+      <MemberSignature Language="F#" Value="val mutable End : string" Usage="Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor.End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public const string Start;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Start" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Const Start As String " />
+      <MemberSignature Language="F#" Value="val mutable Start : string" Usage="Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor.Start" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

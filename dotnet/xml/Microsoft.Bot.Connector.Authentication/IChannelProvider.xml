@@ -10,13 +10,14 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>
             ChannelProvider interface. This interface allows Bots to provide their own
-            implementation for the configuration parameters to connect to a Bot 
-            Framework channel service
+            implementation for the configuration parameters to connect to a Bot.
+            Framework channel service.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -41,9 +43,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Gets the channel service property for this channel provider
+            Gets the channel service property for this channel provider.
             </summary>
-        <returns>The channel service property for the channel provider</returns>
+        <returns>The channel service property for the channel provider.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,6 +62,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -67,9 +70,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Gets a value of whether this provider represents a channel on Governmant Azure
+            Gets a value of whether this provider represents a channel on Government Azure.
             </summary>
-        <returns>True if this channel provider represents a channel on Government Azure</returns>
+        <returns>True if this channel provider represents a channel on Government Azure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,6 +89,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -93,9 +97,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Gets a value of whether this provider represents a channel on Public Azure
+            Gets a value of whether this provider represents a channel on Public Azure.
             </summary>
-        <returns>True if this channel provider represents a channel on Public Azure</returns>
+        <returns>True if this channel provider represents a channel on Public Azure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

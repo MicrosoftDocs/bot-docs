@@ -10,13 +10,16 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Contains methods for matching user input against a list of choices.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,6 +36,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt;</ReturnType>
@@ -43,11 +47,13 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions" />
       </Parameters>
       <Docs>
-        <param name="utterance">To be added.</param>
-        <param name="choices">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="utterance">The input.</param>
+        <param name="choices">The list of choices.</param>
+        <param name="options">Optional, options to control the recognition strategy.</param>
+        <summary>
+            Matches user input against a list of choices.
+            </summary>
+        <returns>A list of found choices, sorted by most relevant first.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,6 +70,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt;</ReturnType>
@@ -74,11 +81,13 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions" />
       </Parameters>
       <Docs>
-        <param name="utterance">To be added.</param>
-        <param name="choices">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="utterance">The input.</param>
+        <param name="choices">The list of choices.</param>
+        <param name="options">Optional, options to control the recognition strategy.</param>
+        <summary>
+            Matches user input against a list of choices.
+            </summary>
+        <returns>A list of found choices, sorted by most relevant first.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,6 +104,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundValue&gt;&gt;</ReturnType>
@@ -105,12 +115,13 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions" />
       </Parameters>
       <Docs>
-        <param name="utterance">To be added.</param>
-        <param name="values">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="utterance">The input.</param>
+        <param name="values">The values.</param>
+        <param name="options">The options for the search.</param>
+        <summary>This method is internal and should not be used.</summary>
+        <returns>A list of found values.</returns>
+        <remarks>Please use <see cref="M:Microsoft.Bot.Builder.Dialogs.Choices.Find.FindChoices(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Choices.Choice},Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions)" /> or
+            <see cref="M:Microsoft.Bot.Builder.Dialogs.Choices.Find.FindChoices(System.String,System.Collections.Generic.IList{System.String},Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions)" /> instead.</remarks>
       </Docs>
     </Member>
   </Members>

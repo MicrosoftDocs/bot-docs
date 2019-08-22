@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +18,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Names for invocable operations in the payment callback protocol
+            Names for invocable operations in the payment callback protocol.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -35,16 +36,17 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Name for the payment completion operation invocation
+            Name for the payment completion operation invocation.
             </summary>
         <remarks>
-            This operation accepts a PaymentRequestComplete object and returns a PaymentRequestResult object or an error
+            This operation accepts a PaymentRequestComplete object and returns a PaymentRequestResult object or an error.
             </remarks>
       </Docs>
     </Member>
@@ -61,16 +63,17 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Name for the Update Shipping Address operation invocation
+            Name for the Update Shipping Address operation invocation.
             </summary>
         <remarks>
-            This operation accepts a PaymentRequestUpdate object and returns a PaymentDetails object or an error
+            This operation accepts a PaymentRequestUpdate object and returns a PaymentDetails object or an error.
             </remarks>
       </Docs>
     </Member>
@@ -87,16 +90,17 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Name for the Update Shipping Option operation invocation
+            Name for the Update Shipping Option operation invocation.
             </summary>
         <remarks>
-            This operation accepts a PaymentRequestUpdate object and returns a PaymentDetails object or an error
+            This operation accepts a PaymentRequestUpdate object and returns a PaymentDetails object or an error.
             </remarks>
       </Docs>
     </Member>
