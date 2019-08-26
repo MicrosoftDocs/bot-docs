@@ -110,7 +110,8 @@ In v4, the turn handler or message loop logic is primarily in a bot file. We're 
     [!code-csharp[Fields and constructor](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=21-28)]
 
 1. Update `OnMessageActivityAsync` implementation to invoke our main dialog. (We'll define the `Run` extension method shortly.)
-    [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=38-47)]
+
+[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=38-47)]
 
 1. Update `OnTurnAsync` to save our conversation state at the end of the turn. In v4, we have to do this explicitly to write state out to the persistence layer. `ActivityHandler.OnTurnAsync` method calls specific activity handler methods, based on the type of activity received, so we save state after the call to the base method.
     [!code-csharp[OnTurnAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=30-36)]
@@ -334,7 +335,8 @@ We need to update `using` statements in the model classes as shown next.
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/LocalAdminPrompt.cs?range=4)]
 
 1. In **ResetPassword.cs** change them to this:
-    [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
+
+[!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
     Also, delete the `using` statements inside the namespace.
 
 1. In **ResetPasswordPrompt.cs** change them to this:  
@@ -343,12 +345,14 @@ We need to update `using` statements in the model classes as shown next.
 ### Additional changes
 
 In **ResetPassword.cs** change the return type of the `MobileNumber` as follows:
+
 [!code-csharp[MobileNumber](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=17)]
 
 ## Final porting steps 
 To complete the porting process, perform these steps:
 
 1. Create an `AdapterWithErrorHandler` class to define an adapter which includes an error handler that can catch exceptions in the middleware or application. The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. Use the following code to create the class:
+
  [!code-csharp[MobileNumber](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/AdapterWithErrorHandler.cs?range=4-46)]
 1. Modify the **wwwroot\default.htm** page as you see fit.
 
