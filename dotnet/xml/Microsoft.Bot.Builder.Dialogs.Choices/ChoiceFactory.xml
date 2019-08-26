@@ -10,13 +10,16 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Assists with formatting a message activity that contains a list of choices.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +35,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,6 +56,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -64,14 +69,20 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <param name="list">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="channelId">A channel ID. The <see cref="T:Microsoft.Bot.Connector.Channels" /> class contains known channel IDs.</param>
+        <param name="list">The list of choices to include.</param>
+        <param name="text">Optional, the text of the message to send.</param>
+        <param name="speak">Optional, the text to be spoken by your bot on a speech-enabled channel.</param>
+        <param name="options">Optional, the formatting options to use when rendering as a list.</param>
+        <summary>
+            Creates a message activity that includes a list of choices formatted based on the capabilities of a given channel.
+            </summary>
+        <returns>The created message activity.</returns>
+        <remarks>The algorithm prefers to format the supplied list of choices as suggested actions but can decide
+            to use a text based list if suggested actions aren't natively supported by the channel, there are too many
+            choices for the channel to display, or the title of any choice is too long.
+            <para>If the algorithm decides to use a list, for 3 or fewer choices with short titles it will use an inline
+            list; otherwise, a numbered list.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeroCard">
@@ -85,6 +96,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -116,6 +128,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -127,12 +140,14 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">The list of choices to include.</param>
+        <param name="text">Optional, the text of the message to send.</param>
+        <param name="speak">Optional, the text to be spoken by your bot on a speech-enabled channel.</param>
+        <param name="options">Optional, the formatting options to use when rendering as a list.</param>
+        <summary>
+            Creates a message activity that includes a list of choices formatted as an inline list.
+            </summary>
+        <returns>The created message activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,6 +164,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -182,6 +198,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -193,12 +210,14 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">The list of choices to include.</param>
+        <param name="text">Optional, the text of the message to send.</param>
+        <param name="speak">Optional, the text to be spoken by your bot on a speech-enabled channel.</param>
+        <param name="options">Optional, the formatting options to use when rendering as a list.</param>
+        <summary>
+            Creates a message activity that includes a list of choices formatted as a numbered or bulleted list.
+            </summary>
+        <returns>The created message activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,6 +234,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -246,6 +266,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -277,6 +298,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;</ReturnType>

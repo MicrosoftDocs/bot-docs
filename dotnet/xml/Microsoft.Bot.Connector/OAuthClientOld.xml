@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.OAuthClientOld&gt;</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
@@ -43,7 +45,7 @@
         <param name="client">The Bot Connector REST client to use.</param>
         <param name="uri">The URL to use to get a token.</param>
         <summary>
-            Initializes an new instance of the <see cref="T:Microsoft.Bot.Connector.OAuthClient" /> class.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.OAuthClientOld" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,15 +61,18 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When using the Emulator, whether to emulate the OAuthCard behavior or use connected flows
+            Gets or sets a value indicating whether when using the Emulator, whether to emulate the OAuthCard behavior or use connected flows.
             </summary>
-        <value>To be added.</value>
+        <value>
+            When using the Emulator, whether to emulate the OAuthCard behavior or use connected flows.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,6 +86,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -94,7 +100,7 @@
       <Docs>
         <param name="userId">The user's ID.</param>
         <param name="connectionName">Name of the auth connection to use for AAD token exchange.</param>
-        <param name="resourceUrls">The collection of resource URLs for which to get tokens</param>
+        <param name="resourceUrls">The collection of resource URLs for which to get tokens.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
@@ -115,6 +121,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -147,6 +154,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;</ReturnType>
@@ -157,13 +165,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userId"></param>
-        <param name="includeFilter">A comma seperated list of connections to include. If null, then all connections are returned</param>
-        <param name="cancellationToken"></param>
+        <param name="userId">User id.</param>
+        <param name="includeFilter">A comma separated list of connections to include. If null, then all connections are returned.</param>
+        <param name="cancellationToken">Cancellation Token.</param>
         <summary>
-            Get the status of tokens for connections for this bot for a particular user
+            Get the status of tokens for connections for this bot for a particular user.
             </summary>
-        <returns />
+        <returns>TokenStatus.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,6 +185,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -192,7 +201,7 @@
         <param name="userId">The user's ID.</param>
         <param name="connectionName">Name of the auth connection to use.</param>
         <param name="magicCode">The user entered code to validate.</param>
-        <param name="customHeaders"></param>
+        <param name="customHeaders">customHeaders.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
@@ -213,15 +222,18 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The default endpoint that is used for API requests.
+            Gets or sets the default endpoint that is used for API requests.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The default endpoint that is used for API requests.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,6 +248,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -262,6 +275,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>

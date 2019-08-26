@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +38,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +56,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -63,10 +66,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when a conversation update activity is received from the channel when the base behavior of
+            <see cref="!:OnTurnAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            Conversation update activities are useful when it comes to responding to users being added to or removed from the conversation.
+            For example, a bot could respond to a user being added by greeting the user.
+            By default, this method will call <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnMembersAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+            if any users have been added or <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnMembersRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+            if any users have been removed. The method checks the member ID so that it only responds to updates regarding members other than the bot itself.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,6 +92,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -89,10 +102,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when an event activity is received from the connector when the base behavior of
+            <see cref="!:OnTurnAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            Event activities can be used to communicate many different things.
+            By default, this method will call <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTokenResponseEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" /> if the
+            activity's name is <c>tokens/response</c> or <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" /> otherwise.
+            A <c>tokens/response</c> event can be triggered by an <see cref="T:Microsoft.Bot.Schema.OAuthCard" />.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,6 +127,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -115,10 +137,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when an event other than <c>tokens/response</c> is received when the base behavior of
+            <see cref="!:OnEventActivityAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            This method could optionally be overridden if the bot is meant to handle miscellaneous events.
+            By default, this method does nothing.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,6 +160,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -142,11 +171,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="membersAdded">To be added.</param>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="membersAdded">A list of all the users that have been added in the conversation update.</param>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when members other than this bot (like a user) are added to the conversation when the base behavior of
+            <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnConversationUpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" /> is used.
+            If overridden, this could potentially send a greeting message to the user instead of waiting for the user to send a message first.
+            By default, this method does nothing.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,6 +195,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -170,11 +206,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="membersRemoved">To be added.</param>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="membersRemoved">A list of all the users that have been removed in the conversation update.</param>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when members other than this bot (like a user) are removed from the conversation when the base behavior of
+            <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnConversationUpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" /> is used.
+            This method could optionally be overridden to perform actions related to users leaving a group conversation.
+            By default, this method does nothing.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,6 +230,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -197,10 +240,110 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when a message activity is received from the user when the base behavior of
+            <see cref="!:OnTurnAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            If overridden, this could potentially contain conversational logic.
+            By default, this method does nothing.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMessageReactionActivityAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnMessageReactionActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnMessageReactionActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnMessageReactionActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnMessageReactionActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnMessageReactionActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnMessageReactionActivityAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when an event activity is received from the connector when the base behavior of
+            <see cref="!:OnTurnAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            Message reactions correspond to the user adding a 'like' or 'sad' etc. (often an emoji) to a
+            previously sent activity. Message reactions are only supported by a few channels.
+            The activity that the message reaction corresponds to is indicated in the replyToId property.
+            The value of this property is the activity id of a previously sent activity given back to the
+            bot as the response from a send call.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnReactionsAddedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnReactionsAddedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnReactionsAddedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnReactionsAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnReactionsAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnReactionsAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnReactionsAddedAsync (messageReactions, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageReactions" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageReactions">The list of reactions added.</param>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when there have been Reactions added that reference a previous Activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnReactionsRemovedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnReactionsRemovedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnReactionsRemovedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnReactionsRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnReactionsRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnReactionsRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnReactionsRemovedAsync (messageReactions, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageReactions" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt;" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageReactions">The list of reactions removed.</param>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when there have been Reactions removed that reference a previous Activity.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,6 +357,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -223,10 +367,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when a <c>tokens/response</c> event is received when the base behavior of
+            <see cref="!:OnEventActivityAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            If using an <c>OAuthPrompt</c>, override this method to forward this <see cref="T:Microsoft.Bot.Schema.Activity" /> to the current dialog.
+            By default, this method does nothing.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,6 +393,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -256,7 +407,7 @@
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            The OnTurnAsync function is called by the Adapter (for example, the <see cref="!:BotFrameworkHttpAdapter" />)
+            The OnTurnAsync function is called by the Adapter (for example, the <see cref="T:Microsoft.Bot.Builder.BotFrameworkAdapter" />)
             at runtime in order to process an inbound Activity.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
@@ -273,6 +424,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -282,10 +434,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when an activity other than a message, conversation update, or event is received when the base behavior of
+            <see cref="!:OnTurnAsync(ITurnContext&lt;IConversationUpdateActivity&gt;, CancellationToken)" /> is used.
+            If overridden, this could potentially respond to any of the other activity types like
+            <see cref="F:Microsoft.Bot.Schema.ActivityTypes.ContactRelationUpdate" /> or <see cref="F:Microsoft.Bot.Schema.ActivityTypes.EndOfConversation" />.
+            By default, this method does nothing.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

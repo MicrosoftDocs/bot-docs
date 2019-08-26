@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -22,10 +23,12 @@
     <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="text">To be added.</param>
-    <param name="locale">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="text">The input text.</param>
+    <param name="locale">Optional, identifies the locale of the input text.</param>
+    <summary>
+            Represents a callback method that can break a string into its component tokens.
+            </summary>
+    <returns>The list of the found <see cref="T:Microsoft.Bot.Builder.Dialogs.Choices.Token" /> objects.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

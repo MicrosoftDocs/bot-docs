@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -42,15 +43,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates the sections of text in the referenced message to highlight.
+            Gets or Sets Indicates the sections of text in the referenced message to highlight.
             </summary>
-        <value>To be added.</value>
+        <value>TextHighlights.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
