@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 
 # Implement channel-specific functionality
 
-Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the `Activity` object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity[]] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
 This article describes how to use a message activity's `channelData` property to implement this channel-specific functionality:
 
@@ -279,3 +279,5 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 - [Preview features with the Channel Inspector](../bot-service-channel-inspector.md)
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

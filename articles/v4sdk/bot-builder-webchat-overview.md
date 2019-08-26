@@ -22,7 +22,7 @@ If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migratio
 > For previous versions of Web Chat (v3), visit the [Web Chat v3 branch](https://github.com/Microsoft/BotFramework-WebChat/tree/v3).
 
 First, create a bot using [Azure Bot Service](https://azure.microsoft.com/services/bot-service/).
-Once the bot is created, you will need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#step-1) in Azure Portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
+Once the bot is created, you will need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#get-your-bot-secret-key) in Azure Portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
 
 Here is how how you can add a Web Chat control to your website:
 

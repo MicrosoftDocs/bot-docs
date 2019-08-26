@@ -6,8 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
-ms.date: 04/10/2019    
+ms.date: 08/22/2019    
 ---
 
 # Authentication
@@ -135,7 +134,134 @@ HTTP/1.1 200 OK
 }
 ```
 
+## Azure Bot Service authentication
+
+The information presented in this section is based on the [Add authentication to your bot via Azure Bot Service](../v4sdk/bot-builder-authentication.md) article.
+
+**Azure Bot Service authentication** enables you to authenticate users to and get **access tokens** from a variety of identity providers such as *Azure Active Directory*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
+
+1. Statically configure `settings` on your bot that contains the details of your application registration with an identity provider.
+2. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
+3. Retrieve access tokens through **Azure Bot Service API**.
+
+### Security considerations
+
+<!-- Summarized from: https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/ -->
+
+When you use *Azure Bot Service authentication* with [Web Chat](../bot-service-channel-connect-webchat.md) there are some important security considerations you must keep in mind.
+
+1. **Impersonation**. Impersonation here means an attacker makes the bot thinks he is someone else. In Web Chat, an attacker can impersonate someone else by **changing the user ID** of his Web Chat instance. To prevent this, it is recommend to bot developers to make the **user ID unguessable**. 
+If you enable **enhanced authentication** options, Azure Bot Service can further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat with. Note that this feature requires the user ID starts with `dl_`
+1. **User identities**. You must be aware that your are dealing with two user identities:
+
+    1. The user’s identity in a channel.
+    1. The user’s identity in an identity provider that the bot is interested in.
+  
+    When a bot asks user A in a channel to sign-in to an identity provider P, the sign-in process must assure that user A is the one that signs into P.
+    If another user B is allowed to sign-in, then user A would have access to user B’s resource through the bot. In Web Chat we have 2 mechanisms for ensuring the right user signed in as described next.
+
+    1. At the end of sign-in, in the past, the user was presented with a randomly generated 6-digit code (aka magic code). The user must type this code in the conversation that initiated the sign-in to complete the sign-in process. This mechanism tends to result in a bad user experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
+
+    2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself. 
+    To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
+
+### Code examples
+
+The following .NET controller works with enhanced authentication options enabled and returns a Direct Line Token and user ID.
+
+```csharp
+public class HomeController : Controller
+{
+    public async Task<ActionResult> Index()
+    {
+        var secret = GetSecret();
+
+        HttpClient client = new HttpClient();
+
+        HttpRequestMessage request = new HttpRequestMessage(
+            HttpMethod.Post,
+            $"https://directline.botframework.com/v3/directline/tokens/generate");
+
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", secret);
+
+        var userId = $"dl_{Guid.NewGuid()}";
+
+        request.Content = new StringContent(
+            JsonConvert.SerializeObject(
+                new { User = new { Id = userId } }),
+                Encoding.UTF8,
+                "application/json");
+
+        var response = await client.SendAsync(request);
+        string token = String.Empty;
+
+        if (response.IsSuccessStatusCode)
+        {
+            var body = await response.Content.ReadAsStringAsync();
+            token = JsonConvert.DeserializeObject<DirectLineToken>(body).token;
+        }
+
+        var config = new ChatConfig()
+        {
+            Token = token,
+            UserId = userId  
+        };
+
+        return View(config);
+    }
+}
+
+public class DirectLineToken
+{
+    public string conversationId { get; set; }
+    public string token { get; set; }
+    public int expires_in { get; set; }
+}
+public class ChatConfig
+{
+    public string Token { get; set; }
+    public string UserId { get; set; }
+}
+
+```
+
+The following JavaScript controller works with enhanced authentication options enabled and returns a Direct Line Token and user ID.
+
+```javascript
+var router = express.Router(); // get an instance of the express Router
+
+// Get a directline configuration (accessed at GET /api/config)
+const userId = "dl_" + createUniqueId();
+
+router.get('/config', function(req, res) {
+    const options = {
+        method: 'POST',
+        uri: 'https://directline.botframework.com/v3/directline/tokens/generate',
+        headers: {
+            'Authorization': 'Bearer ' + secret
+        },
+        json: {
+            User: { Id: userId }
+        }
+    };
+
+    request.post(options, (error, response, body) => {
+        if (!error && response.statusCode < 300) {
+            res.json({ 
+                    token: body.token,
+                    userId: userId
+                });
+        }
+        else {
+            res.status(500).send('Call to retrieve token from Direct Line failed');
+        } 
+    });
+});
+
+```
+
 ## Additional resources
 
 - [Key concepts](bot-framework-rest-direct-line-3-0-concepts.md)
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
+- [Add authentication to your bot via Azure Bot Service](../bot-builder-tutorial-authentication.md)

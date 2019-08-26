@@ -186,7 +186,7 @@ GET https://login.botframework.com/v1/.well-known/keys
 
 The response body specifies the document in the [JWK format](https://tools.ietf.org/html/rfc7517) but also includes an additional property for each key: `endorsements`. The list of keys is relatively stable and may be cached for long periods of time (by default, 5 days within the Bot Framework SDK).
 
-The `endorsements` property within each key contains one or more endorsement strings which you can use to verify that the channel ID specified in the `channelId` property within the `Activity` object of the incoming request is authentic. The list of channel IDs that require endorsements is configurable within each bot. By default, it will be the list of all published channel IDs, although bot developers may override selected channel ID values either way. 
+The `endorsements` property within each key contains one or more endorsement strings which you can use to verify that the channel ID specified in the `channelId` property within the [Activity][] object of the incoming request is authentic. The list of channel IDs that require endorsements is configurable within each bot. By default, it will be the list of all published channel IDs, although bot developers may override selected channel ID values either way. 
 
 ### Step 4: Verify the JWT token
 
@@ -201,7 +201,7 @@ When parsing the token, you must configure the parsing library or write your own
 4. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
 5. The token is within its validity period. Industry-standard clock-skew is 5 minutes.
 6. The token has a valid cryptographic signature, with a key listed in the OpenID keys document that was retrieved in [Step 3](#connector-to-bot-step-3), using the signing algorithm that is specified in the `id_token_signing_alg_values_supported` property of the Open ID Metadata document that was retrieved in [Step 2](#openid-metadata-document).
-7. The token contains a "serviceUrl" claim with value that matches the `servieUrl` property at the root of the `Activity` object of the incoming request. 
+7. The token contains a "serviceUrl" claim with value that matches the `servieUrl` property at the root of the [Activity][] object of the incoming request. 
 
 If endorsement for a channel ID is required:
 
@@ -408,3 +408,5 @@ payload:
 - [JSON Web Token (JWT) draft-jones-json-web-token-07](http://openid.net/specs/draft-jones-json-web-token-07.html)
 - [JSON Web Signature (JWS) draft-jones-json-web-signature-04](https://tools.ietf.org/html/draft-jones-json-web-signature-04)
 - [JSON Web Key (JWK) RFC 7517](https://tools.ietf.org/html/rfc7517)
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
