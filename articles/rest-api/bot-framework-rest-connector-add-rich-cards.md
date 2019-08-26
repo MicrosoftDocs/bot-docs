@@ -30,13 +30,13 @@ The Bot Framework currently supports eight types of rich cards:
 | Card type | Description |
 |----|----|
 | <a href="/adaptive-cards/get-started/bots">AdaptiveCard</a> | A customizable card that can contain any combination of text, speech, images, buttons, and input fields. See [per-channel support](/adaptive-cards/get-started/bots#channel-status).  |
-| `AnimationCard` | A card that can play animated GIFs or short videos. |
-| `AudioCard` | A card that can play an audio file. |
-| `HeroCard` | A card that typically contains a single large image, one or more buttons, and text. |
-| `ThumbnailCard` | A card that typically contains a single thumbnail image, one or more buttons, and text. |
-| `ReceiptCard` | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
-| `SignInCard` | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
-| `VideoCard` | A card that can play videos. |
+| [AnimationCard][] | A card that can play animated GIFs or short videos. |
+| [AudioCard][] | A card that can play an audio file. |
+| [HeroCard][] | A card that typically contains a single large image, one or more buttons, and text. |
+| [ThumbnailCard][] | A card that typically contains a single thumbnail image, one or more buttons, and text. |
+| [ReceiptCard][] | A card that enables a bot to provide a receipt to the user. It typically contains the list of items to include on the receipt, tax and total information, and other text. |
+| [SignInCard][] | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
+| [VideoCard][] | A card that can play videos. |
 
 > [!TIP]
 > To determine the type of rich cards that a channel supports and see how the channel renders rich cards, 
@@ -45,7 +45,7 @@ The Bot Framework currently supports eight types of rich cards:
 
 ## Process events within rich cards
 
-To process events within rich cards, use `CardAction` objects to specify what should happen when the user clicks a button or taps a section of the card. Each `CardAction` object contains these properties:
+To process events within rich cards, use [CardAction][] objects to specify what should happen when the user clicks a button or taps a section of the card. Each `CardAction` object contains these properties:
 
 | Property | Type | Description | 
 |----|----|----|
@@ -77,7 +77,7 @@ This table lists the valid values for the `type` property of a `CardAction` obje
 ## Add a Hero card to a message
 
 To add a rich card attachment to a message, first create an object that corresponds to the [type of card](#types-of-cards) that you want to add to the message. 
-Then create an `Attachment` object, set its `contentType` property to the card's media type and its `content` property to the object you created to represent the card. Specify your `Attachment` object within the `attachments` array of the message.
+Then create an [Attachment][] object, set its `contentType` property to the card's media type and its `content` property to the object you created to represent the card. Specify your `Attachment` object within the `attachments` array of the message.
 
 > [!TIP]
 > Messages that contain rich card attachments typically do not specify `text`.
@@ -85,7 +85,7 @@ Then create an `Attachment` object, set its `contentType` property to the card's
 Some channels allow you to add multiple rich cards to the `attachments` array within a message. This capability can be useful in scenarios where you want to provide the user with multiple options. For example, if your bot lets users book hotel rooms, it could present the user with a list of rich cards that shows the types of available rooms. Each card could contain a picture and list of amenities corresponding to the room type and the user could select a room type by tapping a card or clicking a button.
 
 > [!TIP]
-> To display multiple rich cards in list format, set the `Activity` object's `attachmentLayout` property to "list". 
+> To display multiple rich cards in list format, set the [Activity][] object's `attachmentLayout` property to "list". 
 > To display multiple rich cards in carousel format, set the `Activity` object's `attachmentLayout` property to "carousel". 
 > If the channel does not support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
 
@@ -266,3 +266,15 @@ The resulting card contains three blocks of text, an input field (choice list), 
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 
 [ChannelInspector]: ../bot-service-channel-inspector.md
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+[Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object
+[CardAction]: bot-framework-rest-connector-api-reference.md#cardaction-object
+
+[AnnimationCard]: bot-framework-rest-connector-api-reference.md#annimationcard-object
+[AudioCard]: bot-framework-rest-connector-api-reference.md#audiocard-object
+[HeroCard]: bot-framework-rest-connector-api-reference.md#herocard-object
+[ThumbnailCard]: bot-framework-rest-connector-api-reference.md#thumbnailcard-object
+[ReceiptCard]: bot-framework-rest-connector-api-reference.md#receiptcard-object
+[SigninCard]: bot-framework-rest-connector-api-reference.md#signincard-object
+[VideoCard]: bot-framework-rest-connector-api-reference.md#videocard-object
