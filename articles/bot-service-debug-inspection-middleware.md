@@ -7,14 +7,13 @@ keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azu
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 7/9/2019
 ---
 
 # Debug a bot with inspection middleware
-This article describes how to debug your bot using inspection middleware, a new feature in the Bot Framework v4. You can use a trace message to send data to the emulator and then inspect the state of your bot in any given turn of the conversation.
+This article describes how to debug your bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot in addition to looking at the current state of the bot. You can use a trace message to send data to the emulator and then inspect the state of your bot in any given turn of the conversation. 
 
-We use a basic Echo bot built with the [Bot Framework](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/02.echo-bot) to show how to add the inspection middleware to debug your bot and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md) but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection) and [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection). 
+We use an EchoBot built locally using the Bot Framework v4 ([C#](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0) | [JavaScript](https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0)) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection) and [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection). 
 
 ## Prerequisites
 - Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
@@ -30,6 +29,18 @@ To check the version of your emulator, select **Help** -> **About** in the menu.
 ![current-version](./media/bot-debug-inspection-middleware/bot-debug-check-emulator-version.png) 
 
 ## Update your bot's code
+
+# [C#](#tab/csharp)
+Set up the inspection state in the **Startup** file. Add the inspection middleware to the adapter. The inspection state is provided through dependency injection. See the code update below or refer to the inspection sample here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection). 
+
+**Startup.cs**
+[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
+
+**AdapterWithInspection.cs**  
+[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=11-21)]
+
+**EchoBot.cs** 
+[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Bots/EchoBot.cs?range=14-43)]
 
 # [JavaScript](#tab/javascript)
 Before updating your bot's code you should update its packages to the latest versions by executing the following command in your terminal: 
@@ -50,18 +61,6 @@ Update the bot class in the **bot.js** file.
 
 [!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-50)]
 
-# [C#](#tab/csharp)
-Set up the inspection state in the **Startup** file. Add the inspection middleware to the adapter. The inspection state is provided through dependency injection. See the code update below or refer to the inspection sample here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection). 
-
-**Startup.cs**
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
-
-**AdapterWithInspection.cs**  
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=11-21)]
-
-**EchoBot.cs** 
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Bots/EchoBot.cs?range=14-43)]
-
 ---
 
 ## Test your bot locally 
@@ -69,17 +68,18 @@ After updating the code you can run your bot locally and test the debugging feat
 
 1. Navigate to your bot's directory in a terminal and execute the following command to run your bot locally: 
 
+# [C#](#tab/csharp)
+
+```cmd
+dotnet run
+```
+
 # [JavaScript](#tab/javascript)
 
 ```cmd
 npm start 
 ```
 
-# [C#](#tab/csharp)
-
-```cmd
-dotnet run
-```
 ---
 
 2. Open your emulator. Click **Open Bot**. Fill in Bot URL with http://localhost:3978/api/messages and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot you can find these values in your bot's **.env** file. If you have a C# bot you can find these values in the **appsettings.json** file. Click **Connect**. 
@@ -94,7 +94,7 @@ dotnet run
 5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will be able to see the state of your bot as follows: 
 ![bot state](./media/bot-debug-inspection-middleware/bot-debug-bot-state.png)
 
-## Inspect the state of a bot configured in Azure connected to channels 
+## Inspect the state of a bot configured in Azure 
 If you want to inspect the state of your bot configured in Azure and connected to channels (like Teams) you will need to install and run [ngrok](https://ngrok.com/).
 
 ### Run ngrok
