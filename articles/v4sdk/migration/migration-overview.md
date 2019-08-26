@@ -7,7 +7,6 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 06/11/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -89,10 +88,12 @@ The Bot Framework SDK v4 supports the same underlying Bot Framework Service as v
 
 ### Migration estimation worksheet
 
-The following worksheet can guide you in estimating your migration workload. In the **Occurrences** column replace *count* with your actual numeric value. In the **T Shirt** column enter values such as: *Small*, *Medium*, *Large* based on your estimation.
+The following worksheets can guide you in estimating your migration workload. In the **Occurrences** column replace *count* with your actual numeric value. In the **T Shirt** column enter values such as: *Small*, *Medium*, *Large* based on your estimation.
 
-Step | V3 | V4 | Occurrences | Complexity | T Shirt
--- | -- | -- | -- | -- | --
+# [C#](#tab/csharp)
+
+| Step | V3 | V4 | Occurrences | Complexity | T Shirt |
+| -- | -- | -- | -- | -- | -- |
 To get the incoming activity | IDialogContext.Activity | ITurnContext.Activity | count | Small  
 To create and send an activity to the user | activity.CreateReply(“text”) IDialogContext.PostAsync | MessageFactory.Text(“text”) ITurnContext.SendActivityAsync | count | Small |
 State management | UserData, ConversationData, and PrivateConversationData context.UserData.SetValue context.UserData.TryGetValue botDataStore.LoadAsyn | UserState, ConversationState, and PrivateConversationState  With property accessors | context.UserData.SetValue - count context.UserData.TryGetValue - count botDataStore.LoadAsyn - count | Medium to Large (See [user state management](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
@@ -106,7 +107,26 @@ Replace the current dialog with a new dialog | IDialogContext.Forward | Return a
 Signal that the current dialog has completed | IDialogContext.Done | Return await the step context's EndDialogAsync method. | count | Medium |  
 Fail out of a dialog. | IDialogContext.Fail | Throw an exception to be caught at another level of the bot, end the step with a status of Cancelled, or call the step or dialog context's CancelAllDialogsAsync. | count | Small |  
 
-### [C#](#tab/csharp)
+# [JavaScript](#tab/javascript)
+
+| Step | V3 | V4 | Occurrences | Complexity | T Shirt |
+| -- | -- | -- | -- | -- | -- |
+To get the incoming activity | IMessage | TurnContext.activity | count | Small  
+To create and send an activity to the user | Call Session.send('message') | Call TurnContext.sendActivity | count | Small |
+State management | UserState & ConversationState UserState.get(), UserState.saveChanges(), ConversationState.get(), ConversationState.saveChanges() | UserState & ConversationState with property accessors | count | Medium to Large (See [user state management](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
+Handle the start of your dialog | call session.beginDialog, passing in the id of the dialog | call DialogContext.beginDialog | count | Small |  
+Send an activity | Call Session.send | Call TurnContext.sendActivity | count | Small |  
+Wait for a user's response | call a prompt from within the waterfall step, ex: builder.Prompts.text(session, 'Please enter your destination'). Retrieve the response in the next step. | Return await TurnContext.prompt to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |  
+Handle continuation of your dialog | Automatic | Add additional steps to a waterfall dialog, or implement Dialog.continueDialog | count | Large |  
+Signal the end of processing until the user's next message | Session.endDialog | Return Dialog.EndOfTurn | count | Medium |  
+Begin a child dialog | Session.beginDialog | Return await the step context's beginDialog method. If the child dialog returns a value, that value is available in the next step of the waterfall via the step context's Result property. | count | Medium |  
+Replace the current dialog with a new dialog | Session.replaceDialog | ITurnContext.replaceDialog | count | Large |  
+Signal that the current dialog has completed | Session.endDialog | Return await the step context's endDialog method. | count | Medium |  
+Fail out of a dialog. | Session.pruneDialogStack | Throw an exception to be caught at another level of the bot, end the step with a status of Cancelled, or call the step or dialog context's cancelAllDialogs. | count | Small |  
+
+---
+
+# [C#](#tab/csharp)
 
 The Bot Framework SDK v4 is based on the same underlying REST API as v3. However, v4 is a refactoring of the previous version of the SDK to allow more flexibility and control over the bots.
 
@@ -134,7 +154,7 @@ For more information, see [Migrate a .NET v3 bot to a .NET Framework v4 bot](con
 
 For more information, see [Migrate a .NET v3 bot to a .NET Core v4 bot](conversion-core.md).
 
-### [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 The **Bot Framework JavaScript SDK v4** introduces several fundamental changes on how bots are authored. These changes affect the syntax for developing bots in Javascript, especially around creating bot objects, defining dialogs, and coding event handling logic. The Bot Framework SDK v4 is based on the same underlying REST API as v3. However, v4 is a refactoring of the previous version of the SDK to allow more flexibility and control over the bots, in particular:
 
