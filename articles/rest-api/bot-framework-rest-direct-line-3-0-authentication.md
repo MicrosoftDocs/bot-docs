@@ -21,7 +21,12 @@ Authorization: Bearer SECRET_OR_TOKEN
 
 A Direct Line **secret** is a master key that can be used to access any conversation that belongs to the associated bot. A **secret** can also be used to obtain a **token**. Secrets do not expire. 
 
-A Direct Line **token** is a key that can be used to access a single conversation. A token expires but can be refreshed. 
+A Direct Line **token** is a key that can be used to access a single conversation. A token expires but can be refreshed.
+
+Deciding when or if to use the **secret** key or a **token** must be based on security considerations.
+Exposing the secret key could be acceptable if done intentionally and with care. As matter of a fact, this is the default behavior because allows Direct Line to figure out if the client is legitimate.
+Generally speaking though, security is a concern if you're trying to persist user data.
+For more information, see section [Security considerations](#security-considerations).
 
 If you're creating a service-to-service application, specifying the **secret** in the `Authorization` header of Direct Line API requests may be simplest approach. If you're writing an application where the client runs in a web browser or mobile app, you may want to exchange your secret for a token (which only works for a single conversation and will expire unless refreshed) and specify the **token** in the `Authorization` header of Direct Line API requests. Choose the security model that works best for you.
 
@@ -164,6 +169,8 @@ If you enable **enhanced authentication** options, Azure Bot Service can further
 
     2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself. 
     To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
+
+    See also [Add authentication to your bot via Azure Bot Service](../v4sdk/bot-builder-authentication.md).
 
 ### Code examples
 
