@@ -28,7 +28,7 @@ The scope of Virtual Assistant functionality is broad, typically offering end us
 
 ## Getting Started
 
-Explore the [Virtual Assistant and Skills](https://aka.ms/bfsolutionsdocs) documentation for more detailed information.
+Explore the [Virtual Assistant and Skills](https://aka.ms/bf-solutions-docs) documentation for more detailed information.
 
 ## What's in the box 
 
@@ -101,4 +101,4 @@ All aspects of each Skill (language model, dialogs, integration code and languag
 
 ## Getting Started
 
-Refer to the [tutorials](https://aka.ms/bfstutorials) to learn how to create and deploy your Virtual Assistant.
+Refer to the [tutorials](https://aka.ms/bfs-tutorials) to learn how to create and deploy your Virtual Assistant.

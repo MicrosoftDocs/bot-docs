@@ -2,12 +2,11 @@
 title: What's new | Microsoft Docs
 description: Learn what is new in Bot Framework.
 keywords: bot framework, azure bot service
-author: ivorb
-ms.author: v-ivorb
+author: kamrani
+ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.subservice: abs
 ms.date: 07/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -149,7 +148,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 [Docs][34]  | [add qnamaker to your bot][35] 
 
 [33]:https://www.qnamaker.ai/
-[34]:https://aka.ms/qnamaker-docs-home
+[34]:https://aka.ms/what-is-qnamaker
 [35]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
 
 ### Speech Services

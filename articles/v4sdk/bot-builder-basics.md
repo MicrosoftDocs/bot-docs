@@ -325,7 +325,7 @@ The next parts set up the server and adapter that allow your bot to communicate 
 const server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, () => {
     console.log(`\n${ server.name } listening to ${ server.url }`);
-    console.log(`\nGet Bot Framework Emulator: https://aka.ms/botframework-emulator`);
+    console.log(`\nGet Bot Framework Emulator: https://aka.ms/bot-framework-www-portal-emulator`);
     console.log(`\nTo talk to your bot, open the emulator select "Open Bot"`);
 });
 

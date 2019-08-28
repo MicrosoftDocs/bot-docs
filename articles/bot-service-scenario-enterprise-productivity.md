@@ -2,7 +2,7 @@
 title: Enterprise Productivity bot scenario | Microsoft Docs
 description: Explore the Enterprise Productivity bot scenario with the Bot Framework.
 author: BrianRandell
-ms.author: v-brra
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -29,7 +29,7 @@ Here is the logic flow of an Enterprise Productivity bot:
 5. The information is returned to the employee who can filter down the data without leaving the bot.
 6. Application insights gathers runtime telemetery to help development with bot performance and usage.
 
-You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/bot/scenarios).
+You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/abs-scenarios).
 
 ## Sample bot
 Because Bots are accessible from a variety of channels, you could use it at your desk from a corporate portal or from Skype while on the go--you just need to be authenticated. With Azure AD integration your Enterprise Productivity Bot knows that that if you're able to access it, you've been authenticated by Azure AD. From there you can ask the bot to check when your next appointment is with a particular customer. The Bot gets this information by querying Office 365 via the Graph API. Then, if there's an appointment in the next seven days, the Bot queries CRM looking for any recent cases for the customer. The Bot responds with either no cases found or the number of open and closed cases. From there you can ask the Bot to list out the cases by type and drill into individual cases.

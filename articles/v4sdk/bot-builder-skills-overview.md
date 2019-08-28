@@ -35,13 +35,13 @@ At this time we have made available the following Bot Framework Skills, powered 
 
 | Name | Description |
 | ---- | ----------- |
-|[Calendar Skill](https://aka.ms/bfcalendarskill)|Add calendar capabilities to your assistant. Powered by Microsoft Graph and Google.|
-|[Email Skill](https://aka.ms/bfemailskill)|Add email capabilities to your assistant. Powered by Microsoft Graph and Google.|
-|[To Do Skill](https://aka.ms/bftodoskill)|Add task management capabilities to your assistant. Powered by Microsoft Graph.|
-|[Point of Interest Skill](https://aka.ms/bfpoiskill)|Find points of interest and directions. Powered by Azure Maps and FourSquare.|
-|[Automotive Skill](https://aka.ms/bfautoskill)|Industry-vertical Skill for showcasing enabling car feature control.|
-|[Experimental Skills](https://aka.ms/bfexperimentalskills)|News, Restaurant Booking and Weather.|
+|[Calendar Skill](https://aka.ms/bf-calendar-skill)|Add calendar capabilities to your assistant. Powered by Microsoft Graph and Google.|
+|[Email Skill](https://aka.ms/bf-email-skill)|Add email capabilities to your assistant. Powered by Microsoft Graph and Google.|
+|[To Do Skill](https://aka.ms/bf-todo-skill)|Add task management capabilities to your assistant. Powered by Microsoft Graph.|
+|[Point of Interest Skill](https://aka.ms/bf-poi-skill)|Find points of interest and directions. Powered by Azure Maps and FourSquare.|
+|[Automotive Skill](https://aka.ms/bf-autos-kill)|Industry-vertical Skill for showcasing enabling car feature control.|
+|[Experimental Skills](https://aka.ms/bf-experimental-skills)|News, Restaurant Booking and Weather.|
 
 ## Getting Started
 
-Refer to the [tutorials](https://aka.ms/bfstutorials) to learn how to leverage existing skills and build your own.
+Refer to the [tutorials](https://aka.ms/bfs-tutorials) to learn how to leverage existing skills and build your own.

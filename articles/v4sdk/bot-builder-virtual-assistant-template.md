@@ -75,7 +75,7 @@ Bot level telemetry is intrinsically linked to technical and operational telemet
 
 A middleware component combined with a wrapper class around the QnA Maker and LuisRecognizer SDK classes provides an elegant way to collect a consistent set of events. These consistent events can then be used by the Application Insights tooling along with tools like PowerBI.
 
-An example Power BI dashboard is as part of the Bot Framework Solutions github repo and works right out of the box with every Virtual Assistant template. See the [Analytics](https://aka.ms/bfsanalytics) section for more information.
+An example Power BI dashboard is as part of the Bot Framework Solutions github repo and works right out of the box with every Virtual Assistant template. See the [Analytics](https://aka.ms/bfs-analytics) section for more information.
 
 ![Analytics Example](./media/enterprise-template/powerbi-conversationanalytics-luisintents.png)
 
@@ -115,8 +115,8 @@ Content Moderator is an optional component which enables detection of potential 
 A middleware component is provided that screens text and surfaces through a ```TextModeratorResult``` on the TurnState object.
 
 ## Next Steps
-Refer to the [tutorials](https://aka.ms/bfstutorials) to learn how to create and deploy your Virtual Assistant. 
+Refer to the [tutorials](https://aka.ms/bfs-tutorials) to learn how to create and deploy your Virtual Assistant. 
 
 ## Additional resources
-Full source code for the Virtual Assistant Template can be found on [GitHub](https://aka.ms/bfsolutions).
+Full source code for the Virtual Assistant Template can be found on [GitHub](https://aka.ms/bf-solutions).
 

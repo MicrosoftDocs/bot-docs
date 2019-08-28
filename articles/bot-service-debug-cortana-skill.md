@@ -3,6 +3,7 @@ title: Test a Cortana skill | Microsoft Docs
 description: Learn how to test a Cortana bot by invoking a Cortana skill.
 keywords: Bot Framework SDK, register your bot, cortana
 author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -87,8 +88,8 @@ Once you have tested your Cortana skill and verified that it works the way you'd
 [BFPortal]: https://dev.botframework.com/
 [CortanaDevCenter]: https://developer.microsoft.com/cortana
 
-[CortanaSpecificEntities]: https://aka.ms/lgvcto
-[CortanaAuth]: https://aka.ms/vsdqcj
+[CortanaSpecificEntities]: https://aka.ms/cortana-channel-data
+[CortanaAuth]: https://aka.ms/add-auth-cortana-skill
 
 [InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines 
 
