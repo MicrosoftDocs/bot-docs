@@ -27,6 +27,7 @@ This allows you to build, connect, and manage your bot to interact with users, w
 
 1. In the left pane, click **Create a resource**.
 1. In the right pane selection box enter *bot*. And in the drop-down list, select **Bot Channels Registration** or **Web App Bot** depending on your application.
+For the **Web Bot App**, follow the steps described in the article: [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md). You will create a bot in Azure that is automatically registered with the Azure Bot Service.
 1. Click the **Create** button to start the process.
 1. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  
 
@@ -70,8 +71,6 @@ To obtain the password follow the steps described next.
     ![Create registration bot blade](media/azure-bot-quickstarts/bot-channels-registration-app-secrets-create.png)
 
     This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later.
-
-For the **Web Bot App**, follow the steps described in the article: [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md). You will create a bot in Azure that is automatically registered with the Azure Bot Service.
 
 ## Manual app registration
 

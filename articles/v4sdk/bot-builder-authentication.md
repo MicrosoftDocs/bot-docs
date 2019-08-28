@@ -433,6 +433,9 @@ Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActi
 
 The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
 
+> [!NOTE]
+> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
+
 ### Further reading
 
 - [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help) includes links for additional support.
