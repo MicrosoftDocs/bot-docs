@@ -3,11 +3,10 @@ title: Use QnA Maker to answer questions | Microsoft Docs
 description: Learn how to use QnA maker in your bot.
 keywords: question and answer, QnA, FAQs, qna maker 
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: cognitive-services
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -22,7 +21,7 @@ One of the basic requirements in creating your own QnA Maker service is to seed 
 
 ## Prerequisites
 
-- The code in this article is based on the QnA Maker sample. You'll need a copy of it either in **[CSharp](https://aka.ms/cs-qna) or [JavaScript](https://aka.ms/js-qna-sample)**.
+- The code in this article is based on the QnA Maker sample. You'll need a copy of it either in **[C#](https://aka.ms/cs-qna) or [JavaScript](https://aka.ms/js-qna-sample)**.
 - [QnA Maker](https://www.qnamaker.ai/) account
 - Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
 
