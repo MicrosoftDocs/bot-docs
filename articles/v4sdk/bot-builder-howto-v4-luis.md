@@ -14,12 +14,11 @@ monikerRange: 'azure-bot-service-4.0'
 # Add natural language understanding to your bot
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
-
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. This topic walks you through adding LUIS to a flight booking application to recognize different intents and entities contained within user input. 
 
 ## Prerequisites
 - [LUIS](https://www.luis.ai) account
-- The code in this article is based on the **Core Bot** sample. You'll need a copy of the sample in either **[CSharp](https://aka.ms/cs-core-sample) or [JavaScript](https://aka.ms/js-core-sample)**. 
+- The code in this article is based on the **Core Bot** sample. You'll need a copy of the sample in either **[C#](https://aka.ms/cs-core-sample) or [JavaScript](https://aka.ms/js-core-sample)**. 
 - Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
