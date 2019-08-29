@@ -3,11 +3,10 @@ title: Reuse dialogs | Microsoft Docs
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 07/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -21,7 +20,7 @@ With component dialogs, you can create independent dialogs to handle specific sc
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], the [dialogs library][concept-dialogs], and how to [manage conversations][simple-flow].
-- A copy of the multi-turn prompt sample in either [**CSharp**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the multi-turn prompt sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
 
 ## About the sample
 
