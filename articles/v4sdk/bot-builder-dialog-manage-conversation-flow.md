@@ -25,7 +25,7 @@ You can manage simple and complex conversation flows using the dialogs library. 
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **multi-turn prompt** sample in either [**CSharp**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the **multi-turn prompt** sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
 
 ## About this sample
 

@@ -22,7 +22,7 @@ We'll also show you how to pass arguments between different parts of the dialog.
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [implement sequential conversation flow][simple-dialog].
-- A copy of the complex dialog sample in either [**CSharp**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the complex dialog sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
 
 ## About this sample
 

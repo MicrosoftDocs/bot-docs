@@ -29,7 +29,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the proactive messages sample in either **[CSharp](https://aka.ms/proactive-sample-cs) or [JavaScript](https://aka.ms/proactive-sample-js)**. This sample is used to explain proactive messaging in this article.
+- A copy of the proactive messages sample in either **[C#](https://aka.ms/proactive-sample-cs) or [JavaScript](https://aka.ms/proactive-sample-js)**. This sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 

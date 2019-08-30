@@ -53,7 +53,7 @@ Yeoman prompts you for some information with which to create your bot. For this 
 - Enter a name for your bot. (my-chat-bot)
 - Enter a description. (Demonstrate the core capabilities of the Microsoft Bot Framework)
 - Choose the language for your bot. (JavaScript)
-- Choose the template to use. (Echo Bot - https://aka.ms/bot-template-echo)
+- Choose the template to use. (Echo Bot - https://aka.ms/generator-botbuilder-templates)
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.
 

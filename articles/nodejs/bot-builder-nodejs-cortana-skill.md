@@ -435,8 +435,8 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 [Send]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [CortanaDevCenter]: https://developer.microsoft.com/cortana
 
-[CortanaSpecificEntities]: https://aka.ms/lgvcto
-[CortanaAuth]: https://aka.ms/vsdqcj
+[CortanaSpecificEntities]: https://aka.ms/cortana-channel-data
+[CortanaAuth]: https://aka.ms/add-auth-cortana-skill
 
 [InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines
 [VoiceDesign]: https://aka.ms/cortana-design-voice
