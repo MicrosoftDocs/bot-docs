@@ -2,12 +2,11 @@
 title: What's new | Microsoft Docs
 description: Learn what is new in Bot Framework.
 keywords: bot framework, azure bot service
-author: ivorb
-ms.author: v-ivorb
+author: kamrani
+ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.subservice: abs
 ms.date: 07/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -53,7 +52,7 @@ Adaptive Dialog now allow developers to dynamically update conversation flow bas
 - [Bot Framework Python SDK (preview 2)](https://github.com/microsoft/botbuilder-python) | [samples](https://github.com/Microsoft/botbuilder-python/tree/master/samples): The Python SDK now supports OAuth, Prompts, CosmosDB, and includes all major functionality in SDK 4.5. Plus, samples to help you learn about the new features in the SDK.
 
 ## Bot Framework Testing
-- [Unit Testing](http://aka.ms/bot-test-package) | [docs](https://aka.ms/testing-framework) | [C# sample](https://aka.ms/corebot-test) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers’ and developers’ ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot. 
+- [Docs](https://aka.ms/testing-framework) | Unit testing packages ([C#](https://aka.ms/nuget-botbuilder-testing)/ [JavaScript](https://aka.ms/npm-botbuilder-testing)) | [C# sample](https://aka.ms/cs-core-test-sample) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers’ and developers’ ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot.  
 
 - [Channel Testing](https://github.com/Microsoft/BotFramework-Emulator/releases) | [docs](https://aka.ms/channel-testing): 
 
