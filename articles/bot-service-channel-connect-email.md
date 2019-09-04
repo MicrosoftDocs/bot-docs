@@ -7,7 +7,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 02/08/2019
 ---
 # Connect a bot to Office 365 email

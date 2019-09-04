@@ -11,7 +11,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 <!-- 
 
-ms.author: v-jofing
+ms.author: kamrani
 
 Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)

@@ -2,7 +2,7 @@
 title: Bot Service Frequently Asked Questions | Microsoft Docs
 description: A list of Frequently Asked Questions about elements of the Bot Framework and when new features will become available.
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

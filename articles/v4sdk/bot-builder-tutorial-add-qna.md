@@ -3,11 +3,10 @@ title: Azure Bot Service tutorial to have a bot answer questions | Microsoft Doc
 description: Tutorial to use QnA Maker in your bot to answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

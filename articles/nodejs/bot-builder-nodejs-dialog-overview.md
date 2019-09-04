@@ -2,11 +2,10 @@
 title: Dialogs overview | Microsoft Docs
 description: Learn how to use dialogs within the Bot Framework SDK for Node.js to model conversations and manage conversation flow.
 author: DucVo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
