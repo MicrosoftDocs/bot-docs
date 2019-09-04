@@ -2,11 +2,10 @@
 title: Conduct audio calls | Microsoft Docs
 description: Learn how to conduct audio calls with Skype in a bot using Node.js
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

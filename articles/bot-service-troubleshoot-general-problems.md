@@ -2,7 +2,7 @@
 title: Troubleshooting bots | Microsoft Docs
 description: Troubleshoot general problems in bot development using technical frequently asked questions.
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

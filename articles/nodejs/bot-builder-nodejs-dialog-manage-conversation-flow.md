@@ -2,11 +2,10 @@
 title: Manage a conversation flow with dialogs | Microsoft Docs
 description: Learn how to manage a conversation between a bot and a user with dialogs in the Bot Framework SDK for Node.js.
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

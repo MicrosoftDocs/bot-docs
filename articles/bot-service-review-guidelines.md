@@ -1,5 +1,7 @@
 ---
 ms.topic: conceptual
+ms.author: kamrani
+ms.service: bot-service
 title: Bot review guidelines
 ---
 

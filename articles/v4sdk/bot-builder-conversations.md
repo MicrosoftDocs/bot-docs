@@ -3,11 +3,10 @@ title: Conversations within the Bot Framework SDK | Microsoft Docs
 description: Describes what a conversation is within the Bot Framework SDK.
 keywords: conversation flow, recognize intent, single turn, multiple turn, bot conversation
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

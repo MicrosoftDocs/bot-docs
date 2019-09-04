@@ -2,11 +2,10 @@
 title: Handle user and conversation events  | Microsoft Docs
 description: Learn how to handle events such as a user joining a conversation using the Bot Framework SDK for Node.js.
 author: DucVo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

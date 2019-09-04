@@ -3,11 +3,10 @@ title: Migrate an existing bot within the same .NET Framework project | Microsof
 description: We take an existing .NET v3 bot and migrate it to the .NET v4 SDK, using the same project.
 keywords: bot migration, formflow, dialogs, v3 bot
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

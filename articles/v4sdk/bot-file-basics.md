@@ -3,11 +3,10 @@ title: Manage bot resources | Microsoft Docs
 description: Describes the purpose and use of bot file.
 keywords: bot file, .bot, .bot file, msbot, bot resources, manage bot resources
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

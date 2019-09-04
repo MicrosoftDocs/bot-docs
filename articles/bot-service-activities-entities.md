@@ -3,11 +3,10 @@ title: Entities and activity types | Microsoft Docs
 description: Entities and activity types.
 keywords: mention entities, activity types, consume entities
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 03/01/2018
 ---
 # Entities and activity types

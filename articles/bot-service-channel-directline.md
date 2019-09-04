@@ -6,10 +6,9 @@ services: bot-service
 author: ivorb
 manager: kamrani
 ms.service: bot-service
-ms.subservice: bot-service
 ms.topic: conceptual
 ms.date: 05/02/2019
-ms.author: v-ivorb
+ms.author: kamrani
 ---
 
 ## About Direct Line
