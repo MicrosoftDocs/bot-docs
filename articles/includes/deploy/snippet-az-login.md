@@ -1,23 +1,9 @@
-Open a command prompt to log in to the Azure portal.
+Once you've created and tested a bot locally, you can deploy it to Azure. Open a command prompt to log in to the Azure portal.
 
 ```cmd
 az login
 ```
-
 A browser window will open, allowing you to sign in.
 
-### Set the subscription
-
-Set the default subscription to use.
-
-```cmd
-az account set --subscription "<azure-subscription>"
-```
-
-If you are not sure which subscription to use for deploying the bot, you can view the list of `subscriptions` for your account by using `az account list` command.
-
-Navigate to the bot folder.
-
-```cmd
-cd <local-bot-folder>
-```
+> [!NOTE]
+> If you deploy your bot to a non-Azure cloud such as US Gov, you need to run `az cloud set --name <name-of-cloud>` before `az login`, where &lt;name-of-cloud> is the name of a registered cloud, such as `AzureUSGovernment`. If you want to go back to public cloud, you can run `az cloud set --name AzureCloud`. 

@@ -126,14 +126,31 @@ Ensure that the Facebook Page associated with this bot is published. Status appe
 
 ## Connect a bot to Facebook Workplace
 
+Facebook Workplace is a business-oriented version of Facebook, which allows employees to easily connect and collaborate. It contains live videos, news feeds, groups, messenger, reactions, search, and trending posts. It also supports:
+
+- Analytics and integrations. A dashboard with analytics, integration, single sign-on, and identity providers that companies use to integrate Workplace with their existing IT systems.
+- Multi-company groups. Shared spaces in which employees from different organizations can work together and collaborate.
+
 See the [Workplace Help Center](https://workplace.facebook.com/help/work/) to learn more about Facebook Workplace and [Workplace Developer Documentation](https://developers.facebook.com/docs/workplace) for guidelines about developing for Facebook Workplace.
 
-To configure a bot to communicate using Facebook Workplace, create a custom integration and connect the bot to it.
+To use Facebook Workplace with your bot, you must create a Workplace account and a custom integration to connect the bot.
 
+### Create a Workplace Premium account
 
-1. Create a Facebook Workplace Premium account. Follow the instructions [here](https://www.facebook.com/workplace) to create a Facebook Workplace Premium account and set yourself as the system administrator. Please keep in mind that only system administrator of a Workplace can create custom integrations.
+1. Submit an application to [workplace](https://www.facebook.com/workplace) on  behalf of your company.
+1. Once your application has been approved, you will receive an email inviting you to join. The response may take a while.
+1. From the e-mail invitation, click **Get Started**.
+1. Enter your profile information.
+    > [!TIP]
+    > Set yourself as the system administrator. Remember that only system administrators can create custom integrations.
+1. Click **Preview Profile** and verify the information is correct.
+1. Access *Free Trial*.
+1. Create **password**.
+1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign. They will go through a similar sign-in process as described in these steps.
 
-1. Create a [custom integration](https://developers.facebook.com/docs/workplace/custom-integrations-new) for your Workplace following the steps described next. When you create a custom integration, an app with defined permissions and a page of type 'Bot' only visible within your Workplace community are created.
+### Create a custom integration
+
+Create a [custom integration](https://developers.facebook.com/docs/workplace/custom-integrations-new) for your Workplace following the steps described below. When you create a custom integration, an app with defined permissions and a page of type 'Bot' only visible within your Workplace community are created.
 
 1. In the **Admin Panel**, open the **Integrations** tab.
 1. Click on the **Create your own custom App** button.
