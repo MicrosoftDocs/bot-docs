@@ -136,7 +136,7 @@ if (entity[0].type === "GeoCoordinates" && entity[0].latitude > 34) {
 ---
 
 ## Activity types
-
+<!-- 
 This code example show how to process an activity of type **message**:
 
 # [C#](#tab/cs)
@@ -155,9 +155,9 @@ if(context.activity.type === 'message'){
 }
 ```
 
----
+--- -->
 
-There are several activity types; activities can be of several different types past the most common **message**. Explanations and further details can be found on the [Activity schema page](https://aka.ms/botSpecs-activitySchema).
+Activities can be of several different types past the most common **message**. Explanations and further details on different activity types can be found in the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
 
 ::: moniker range="azure-bot-service-3.0"
 
