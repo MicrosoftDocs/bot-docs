@@ -50,10 +50,8 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
 
 1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio
 
-2. Add  the following NuGet packages. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs):
-    * `Microsoft.ApplicationInsights`
-    * `Microsoft.Bot.Builder.ApplicationInsights`
-    * `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core`
+2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs):
+
 
 3. Include the following statements in `Startup.cs`:
     ```csharp

@@ -29,7 +29,7 @@ The Bot Framework currently supports eight types of rich cards:
 
 | Card type | Description |
 |----|----|
-| <a href="/adaptive-cards/get-started/bots">AdaptiveCard</a> | A customizable card that can contain any combination of text, speech, images, buttons, and input fields. See [per-channel support](/adaptive-cards/get-started/bots#channel-status).  |
+| <a href="/adaptive-cards/get-started/bots">AdaptiveCard</a> | A customizable card that can contain any combination of text, speech, images, buttons, and input fields. See [per-channel support](/adaptive-cards/get-started/bots#channel-status). |
 | [AnimationCard][] | A card that can play animated GIFs or short videos. |
 | [AudioCard][] | A card that can play an audio file. |
 | [HeroCard][] | A card that typically contains a single large image, one or more buttons, and text. |
@@ -49,6 +49,9 @@ To process events within rich cards, use [CardAction][] objects to specify what 
 
 | Property | Type | Description | 
 |----|----|----|
+| channelData | string | channel-specific data associated with this action |
+| displayText | string | test to display in the chat feed if the button is clicked | 
+| text | string | text for the action | 
 | type | string | type of action (one of the values specified in the table below) |
 | title | string | title of the button |
 | image | string | image URL for the button |
@@ -266,12 +269,10 @@ The resulting card contains three blocks of text, an input field (choice list), 
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 
 [ChannelInspector]: ../bot-service-channel-inspector.md
-
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object
 [CardAction]: bot-framework-rest-connector-api-reference.md#cardaction-object
-
-[AnnimationCard]: bot-framework-rest-connector-api-reference.md#annimationcard-object
+[AnimationCard]: bot-framework-rest-connector-api-reference.md#animationcard-object
 [AudioCard]: bot-framework-rest-connector-api-reference.md#audiocard-object
 [HeroCard]: bot-framework-rest-connector-api-reference.md#herocard-object
 [ThumbnailCard]: bot-framework-rest-connector-api-reference.md#thumbnailcard-object

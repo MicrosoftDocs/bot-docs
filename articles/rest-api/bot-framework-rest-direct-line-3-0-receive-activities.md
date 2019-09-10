@@ -19,7 +19,7 @@ A streaming WebSocket efficiently pushes messages to clients, whereas the GET in
 
 The service allows only 1 WebSocket connection per conversation. Direct Line may close additional WebSocket connections with a reason value of `collision`.
 
-Not all [activity types](bot-framework-rest-connector-activities.md) are available both via WebSocket and via HTTP GET. The following table describes the availability of the various activity types for clients that use the Direct Line protocol.
+Not all [activity types](https://aka.ms/botSpecs-activitySchema) are available both via WebSocket and via HTTP GET. The following table describes the availability of the various activity types for clients that use the Direct Line protocol.
 
 | Activity type | Availability | 
 |----|----|

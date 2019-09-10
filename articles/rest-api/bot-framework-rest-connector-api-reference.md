@@ -429,7 +429,7 @@ Defines a message that is exchanged between bot and user.
 | **textHighlights** | [TextHighlight](#texthighlight-object)[] | The collection of text fragments to highlight when the activity contains a **replyToId** value. |
 | **timestamp** | string | Date and time that the message was sent in the UTC time zone, expressed in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format. |
 | **topicName** | string | Topic of the conversation to which the activity belongs. |
-| **type** | string | Type of activity. One of these values: **message**, **contactRelationUpdate**, **conversationUpdate**, **typing**, **endOfConversation**, **event**, **invoke**, **deleteUserData**, **messageUpdate**, **messageDelete**, **installationUpdate**, **messageReaction**, **suggestion**, **trace**, **handoff**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
+| **type** | string | Type of activity. One of these values: **message**, **contactRelationUpdate**, **conversationUpdate**, **typing**, **endOfConversation**, **event**, **invoke**, **deleteUserData**, **messageUpdate**, **messageDelete**, **installationUpdate**, **messageReaction**, **suggestion**, **trace**, **handoff**. For details about activity types, see [Activities overview](https://aka.ms/botSpecs-activitySchema). |
 | **value** | object | Open-ended value. |
 | **valueType** | string | The type of the activity's value object. |
 
@@ -447,7 +447,7 @@ Defines a card that can play animated GIFs or short videos.
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
 | **duration** | string | The length of the media content, in [ISO 8601 duration format](https://www.iso.org/iso-8601-date-and-time-format.html). |
 | **image** | [ThumbnailUrl](#thumbnailurl-object) | A **ThumbnailUrl** object that specifies the image to display on the card. |
-| **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects that specifies the list of animated GIFs to play. |
+| **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects. When this field contains more than one URL, each URL is an alternative format of the same content.|
 | **shareable** | boolean | Flag that indicates whether the animation may be shared with others. Set this property to **true** if the animation may be shared; otherwise, **false**. The default value is **true**. |
 | **subtitle** | string | Subtitle to display under the card's title. |
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
@@ -518,7 +518,7 @@ Defines a card that can play an audio file.
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
 | **duration** | string | The length of the media content, in [ISO 8601 duration format](https://www.iso.org/iso-8601-date-and-time-format.html). |
 | **image** | [ThumbnailUrl](#thumbnailurl-object) | A **ThumbnailUrl** object that specifies the image to display on the card. |
-| **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects that specifies the list of audio files to play. |
+| **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects.  When this field contains more than one URL, each URL is an alternative format of the same content. |
 | **shareable** | boolean | Flag that indicates whether the audio files may be shared with others. Set this property to **true** if the audio may be shared; otherwise, **false**. The default value is **true**. |
 | **subtitle** | string | Subtitle to display under the card's title. |
 | **text** | string | Description or prompt to display under the card's title or subtitle. |
@@ -936,7 +936,7 @@ Defines a card that can play videos.
 | **buttons** | [CardAction](#cardaction-object)[] | Array of **CardAction** objects that enable the user to perform one or more actions. The channel determines the number of buttons that you may specify. |
 | **duration** | string | The length of the media content, in [ISO 8601 duration format](https://www.iso.org/iso-8601-date-and-time-format.html). |
 | **image** | [ThumbnailUrl](#thumbnailurl-object) | A **ThumbnailUrl** object that specifies the image to display on the card. |
-| **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl** objects that specifies the list of videos to play. |
+| **media** | [MediaUrl](#mediaurl-object)[] | Array of **MediaUrl**.  When this field contains more than one URL, each URL is an alternative format of the same content. |
 | **shareable** | boolean | Flag that indicates whether the videos may be shared with others. Set this property to **true** if the videos may be shared; otherwise, **false**. The default value is **true**. |
 | **subtitle** | string | Subtitle to display under the card's title. |
 | **text** | string | Description or prompt to display under the card's title or subtitle. |

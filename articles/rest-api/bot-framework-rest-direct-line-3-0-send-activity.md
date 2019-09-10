@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 
 # Send an activity to the bot
 
-Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](bot-framework-rest-connector-activities.md), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
+Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](https://aka.ms/botSpecs-activitySchema), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
 
 ## Send an activity
 
