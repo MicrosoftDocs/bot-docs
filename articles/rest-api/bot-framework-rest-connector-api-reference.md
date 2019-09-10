@@ -429,7 +429,7 @@ Defines a message that is exchanged between bot and user.
 | **textHighlights** | [TextHighlight](#texthighlight-object)[] | The collection of text fragments to highlight when the activity contains a **replyToId** value. |
 | **timestamp** | string | Date and time that the message was sent in the UTC time zone, expressed in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format. |
 | **topicName** | string | Topic of the conversation to which the activity belongs. |
-| **type** | string | Type of activity. One of these values: **message**, **contactRelationUpdate**, **conversationUpdate**, **typing**, **endOfConversation**, **event**, **invoke**, **deleteUserData**, **messageUpdate**, **messageDelete**, **installationUpdate**, **messageReaction**, **suggestion**, **trace**, **handoff**. For details about activity types, see [Activities overview](bot-framework-rest-connector-activities.md). |
+| **type** | string | Type of activity. One of these values: **message**, **contactRelationUpdate**, **conversationUpdate**, **typing**, **endOfConversation**, **event**, **invoke**, **deleteUserData**, **messageUpdate**, **messageDelete**, **installationUpdate**, **messageReaction**, **suggestion**, **trace**, **handoff**. For details about activity types, see [Activities overview](https://aka.ms/botSpecs-activitySchema). |
 | **value** | object | Open-ended value. |
 | **valueType** | string | The type of the activity's value object. |
 

@@ -53,7 +53,7 @@ The `suggestedActions` property of the [Activity][] object can be used to presen
 ## Additional resources
 
 - [Preview features with the Channel Inspector][ChannelInspector]
-- [Activities overview](bot-framework-rest-connector-activities.md)
+- [Activities overview](https://aka.ms/botSpecs-activitySchema)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
 - [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)
