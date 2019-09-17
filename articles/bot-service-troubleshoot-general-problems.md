@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/30/2019
+ms.date: 09/17/2019
 ---
 
 # Troubleshooting general problems
@@ -73,7 +73,7 @@ Some hosting platforms enable you to configure your service so that it will not 
 
 ## How can I guarantee message delivery order?
 
-The Bot Framework will preserve message ordering as much as possible. For example, if you send message A and wait for the completion of that HTTP operation before you initiate another HTTP operation to send message B, the Bot Framework will automatically understand that message A should precede message B. However, in general, message delivery order cannot be guaranteed since the channel is ultimately responsible for message delivery and may reorder messages. To mitigate the risk of messages being delivered in the wrong order, you might choose to implement a time delay between messages.
+The Bot Framework will preserve message ordering as much as possible. For example, if you send message A and wait for the completion of that HTTP operation before you initiate another HTTP operation to send message B, the Bot Framework will automatically understand that message A should precede message B. However, in general, message delivery order cannot be guaranteed since the channel is ultimately responsible for message delivery and may reorder messages.
 
 ## How can I intercept all messages between the user and my bot?
 
