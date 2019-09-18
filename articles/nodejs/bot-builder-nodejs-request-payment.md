@@ -12,7 +12,9 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Request payment
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+> [!NOTE]
+> The Payment service referred to in this article will be deprecated on December 1, 2019.
+
 
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-request-payment.md)
