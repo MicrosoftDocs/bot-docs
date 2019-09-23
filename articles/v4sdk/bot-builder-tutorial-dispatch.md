@@ -7,7 +7,7 @@ ms.author: diberry
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 09/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -86,7 +86,11 @@ Before you can create the dispatch model, you'll need to have your LUIS apps and
 
 The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found [here](https://aka.ms/create-qna-maker).
 
-Once your QnA Maker Service has been created in Azure, you need to record the Cognitive Services _Key 1_ provided for your QnA Maker service. This will be used as \<azure-qna-service-key1> when adding the QnA Maker app to your dispatch application. The following steps provide you with this key:
+Once your QnA Maker Service has been created in Azure, you need to record the Cognitive Services _Key 1_ provided for your QnA Maker service. This will be used as \<azure-qna-service-key1> when adding the QnA Maker app to your dispatch application. 
+
+Learn more about the [two different types of keys](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure#types-of-keys-in-qna-maker) used with QnA Maker.
+
+The following steps provide you with this key:
     
 ![Select Cognitive Service](./media/tutorial-dispatch/select-qna-cognitive-service.png)
 
@@ -147,6 +151,8 @@ The **authoring key** is only used for creating and editing the models. You need
 |QnA Maker| **App ID** - found in the [QnA Maker portal](https://http://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/{APP-ID}/generateAnswer`.<br>**Authoring Key** - found in the Azure portal, for the QnA Maker resource, under the **Keys**. You only need one of the keys.|
 
 The authoring key is not used to get a prediction score or confidence score from the published application. You need the endpoint keys for this action. The **[endpoint keys](#service-endpoint-keys)** are found and used later in this tutorial. 
+
+Learn more about the [two different types of keys](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure#types-of-keys-in-qna-maker) used with QnA Maker.
 
 ## Create the dispatch model
 
