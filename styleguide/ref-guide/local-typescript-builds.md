@@ -2,6 +2,8 @@
 
 These instructions are distilled from the **Onboarding guide** and a variety of conversations and experiments.
 
+- Most of the command examples are for a command prompt, as opposed to PowerShell.
+
 ## Install tools
 
 We nee **typedoc**, **type2docfx**, and **docfx** for local builds:
@@ -33,51 +35,62 @@ The "current" (as of 4.5) modules are:
 
 ## Remove old temp files
 
+I've been using a **\\temp\\typeDocs** directory for my intermediate files.
+
 ```cmd
 rmdir /s /q \temp\typeDocs
 ```
 
 ## typedoc
 
-Run **typedoc** from root of your local botbuilder-js
+1. Switch to the root of your local copy of the **botbuilder-js** repo.
 
-```cmd
-cd \Users\jofingold\source\repos\botbuilder-js
-```
+    ```cmd
+    cd \Users\jofingold\source\repos\botbuilder-js
+    ```
 
-Run **typedoc** on each library to generate the intermediate JSON files.
+1. Run **typedoc** on **each** library to generate the intermediate JSON files.
 
-```cmd
-typedoc --mode file --json \temp\typeDocs\<lib-name>.json libraries\<lib-name>\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludeNotExported --excludePrivate
-```
+    ```cmd
+    typedoc --mode file --json \temp\typeDocs\<lib-name>.json libraries\<lib-name>\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludeNotExported --excludePrivate
+    ```
 
 ## type2docfx
 
-Run **type2docfx** from the directory containing the intermediate JSON files.
+1. Switch to the directory containing the intermediate JSON files.
 
-```cmd
-cd \temp\typeDocs
-```
+    ```cmd
+    cd \temp\typeDocs
+    ```
 
-Run **type2docfx** for each JSON file to generate intermediate YAML files.
+1. Run **type2docfx** for each JSON file to generate intermediate YAML files.
 
-```cmd
-type2docfx <lib-name>.json _yaml\<lib-name>
-```
+    ```cmd
+    type2docfx <lib-name>.json _yaml\<lib-name>
+    ```
 
 ## Aggregate the TOC files
 
-**type2doxfx** generates a TOC for each library. We need to combine these together. (If the list of modules changes, this command will need updating.)
+Note that **type2doxfx** generates a TOC for each library. We need to combine these together.
 
-```cmd
-cd _yaml
-type botbuilder\toc.yml botbuilder-ai\toc.yml botbuilder-applicationinsights\toc.yml botbuilder-azure\toc.yml botbuilder-core\toc.yml botbuilder-dialogs\toc.yml botbuilder-testing\toc.yml botframework-config\toc.yml botframework-connector\toc.yml botframework-schema\toc.yml > toc.yml
-```
+1. The previous set of commands generated YAML files in a set of subdirectories. Drop down to the root of the YAML files.
 
-## Option 1: local OPS build
+    ```cmd
+    cd _yaml
+    ```
+
+1. Create the combined **toc.yml** file.
+
+    > If the list of modules changes, this command will need updating.
+
+    ```cmd
+    type botbuilder\toc.yml botbuilder-ai\toc.yml botbuilder-applicationinsights\toc.yml botbuilder-azure\toc.yml botbuilder-core\toc.yml botbuilder-dialogs\toc.yml botbuilder-testing\toc.yml botframework-config\toc.yml botframework-connector\toc.yml botframework-schema\toc.yml > toc.yml
+    ```
+
+## Prepare the JS ref doc repo
 
 1. Create a branch off of **botbuilder-docs-sdk-typescript**
-1. Replace the old "autogen" files.
+1. Replace the old "autogen" files with the ones you generated locally.
 
     ```cmd
     cd \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript\docs-ref-autogen\
@@ -85,63 +98,69 @@ type botbuilder\toc.yml botbuilder-ai\toc.yml botbuilder-applicationinsights\toc
     robocopy \temp\typeDocs\_yaml .\ *.* /s
     ```
 
-1. In PowerShell, set your execution policy and run the publishing script:
+## Option 1: local OPS build
+
+1. In PowerShell, switch to the repo root and set your execution policy. Agree to **[A]ll** the policy changes.
 
     ```powershell
-	cd \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\
-	Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
-	.\.openpublishing.build.ps1
+    cd \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
     ```
 
-1. Copy the generated site files?
+1. If it already exists, delete the **_themes** directory. Agree to delete **[A]ll** items in the directory.
+
+    ```powershell
+    rmdir _themes
+    ```
+
+1. Run the publishing script:
+
+    ```powershell
+    .\.openpublishing.build.ps1
+    ```
 
 ## Option 2: local docFX build
 
-### Replace "autogen" files
+1. Run docfx (from \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript)
 
-- Delete the contents of \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript\docs-ref-autogen
-- Copy in the contents of \temp\typeDocs\_yaml
+    ```cmd
+    cd \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript
+    ```
 
-cd \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript\docs-ref-autogen\
-del /s /q *.*
-robocopy \temp\typeDocs\_yaml .\ *.* /s
+1. Clobber the old site
 
-### docfx (from \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript
+    ```cmd
+    rmdir /s /q docfx_project
+    rmdir /s /q obj
+    rmdir /s /q _site
+    ```
 
-cd \Users\jofingold\source\repos\botbuilder-docs-sdk-typescript\botbuilder-typescript
+1. Rebuild the site
 
-#### Clobber the old site
+    ```cmd
+    "C:\Program Files\docfx\docfx.exe" init -q
+    "C:\Program Files\docfx\docfx.exe"
+    ```
 
-```cmd
-rmdir /s /q docfx_project
-rmdir /s /q obj
-rmdir /s /q _site
-```
+## Use docfx to view the built site
 
-#### Rebuild the site
+1. Serve the site locally:
 
-```cmd
-"C:\Program Files\docfx\docfx.exe" init -q
-"C:\Program Files\docfx\docfx.exe"
-"C:\Program Files\docfx\docfx.exe" serve _site
-```
+    ```cmd
+    "C:\Program Files\docfx\docfx.exe" serve _site
+    ```
 
-Open the site in a browser to review the local build:
-- http://localhost:8080/botbuilder-ts-latest/api/botbuilder/
+1. Open the site in a browser to review the local build:
+   - http://localhost:8080/botbuilder-ts-latest/api/botbuilder/
+   - Note that the links in the TOC are missing a **.html** at the end of the URLs.
 
 ---
 
-Do use @remarks tags.
-Don't use [[ ]] links.
-Do use [<link-text>](xref:<link-uid>) links.
-- The UIDs are in the generated .yaml files.
-- Or, search for the target at https://docs.microsoft.com/en-us/javascript/api/
-Don't use @see tags.
+# Other notes
 
-Type alias: botbuilder-dialogs.PromptValidator
-Type alias: botbuilder-dialogs.TokenizerFunction
-Type alias: botbuilder-dialogs.WaterfallStep
- - Function: botbuilder-dialogs.defaultTokenizer
- - Function: botbuilder-dialogs.findChoices
- - Function: botbuilder-dialogs.findValues
- - Function: botbuilder-dialogs.recognizeChoices
+- Do use @remarks tags.
+- Don't use [[ ]] links.
+- Do use \[\<link-text>](xref:\<link-uid>) links.
+  - The UIDs are in the generated .yaml files.
+  - Or, search for the target at https://docs.microsoft.com/en-us/javascript/api/
+- Don't use @see tags.
