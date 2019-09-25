@@ -10,6 +10,8 @@ ms.date: 08/14/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
+<!-- This article is on hold -->
+
 # Using JavaScript v3 user state in a v4 bot
 
 This article shows an example of how a v4 bot can perform read, write, and delete operations on v3 user state information.
