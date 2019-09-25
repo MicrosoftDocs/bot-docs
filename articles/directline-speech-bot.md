@@ -23,8 +23,11 @@ and accept these WebSocket connections. These instructions explain how to do thi
 
 For the Direct Line Speech Preview there are additional NuGet packages you need to add to your bot.
 
-- **Microsoft.Bot.StreamingExtensions** 4.5.1-preview1
 - **Microsoft.Bot.Builder.StreamingExtensions** 4.5.1-preview1
+
+This will also install the following package:
+
+- **Microsoft.Bot.StreamingExtensions** 4.5.1-preview1
 
 If you do not find these at first, make sure that you are including prerelease packages in your search.
 
@@ -37,10 +40,19 @@ public IActivity Speak(string message)
 {
     var activity = MessageFactory.Text(message);
     string body = @"<speak version='1.0' xmlns='https://www.w3.org/2001/10/synthesis' xml:lang='en-US'>
-        <voice name='Microsoft Server Speech Text to Speech Voice (en-US, JessaNeural)'>" +
+        <voice name='Microsoft Server Speech Text to Speech Voice (en-US, JessaRUS)'>" +
         $"{message}" + "</voice></speak>";
     activity.Speak = body;
     return activity;
+}
+```
+
+The following snippet shows how to use the previous *Speak* function:
+
+```cs
+protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+    await turnContext.SendActivityAsync(Speak($"Echo: {turnContext.Activity.Text}"), cancellationToken);
 }
 ```
 
@@ -172,9 +184,12 @@ If you have created a bot using v4 of the Bot Builder SDK prior to version 4.3.2
 
 ## Additional information
 
-For more information on working with activities, see [how bots work](v4sdk/bot-builder-basics.md) how to [send and receive text messages](v4sdk/bot-builder-howto-send-messages.md).
+- For a complete example of creating and using a voice enabled bot, see
+[Tutorial: Voice-enable your bot using the Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
+
+- For more information on working with activities, see [how bots work](v4sdk/bot-builder-basics.md) how to [send and receive text messages](v4sdk/bot-builder-howto-send-messages.md).
 
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Connect a bot to Direct Line Speech (Preview)](./bot-service-channel-connect-directlinespeech.md)
+> [Connect a bot to Direct Line Speech](./bot-service-channel-connect-directlinespeech.md)

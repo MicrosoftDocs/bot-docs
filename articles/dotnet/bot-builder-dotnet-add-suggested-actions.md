@@ -20,9 +20,6 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)]
 
-> [!TIP]
-> Use the [Channel Inspector][channelInspector] to see how suggested actions look and work on various channels.
-
 ## Send suggested actions
 
 To add suggested actions to a message, set the `SuggestedActions` property of the activity to a list of [CardAction][cardAction] objects that represent the buttons to be presented to the user. 
@@ -35,10 +32,9 @@ When the user taps one of the suggested actions, the bot will receive a message 
 
 ## Additional resources
 
-- [Preview features with the Channel Inspector][inspector]
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
-- <a href="https://docs.botframework.com/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
+- [Activity class](https://aka.ms/ActivityClass-dotnet-API)
 - <a href="/dotnet/api/microsoft.bot.connector.imessageactivity" target="_blank">IMessageActivity interface</a>
 - <a href="/dotnet/api/microsoft.bot.connector.cardaction" target="_blank">CardAction class</a>
 - <a href="/dotnet/api/microsoft.bot.connector.suggestedactions" target="_blank">SuggestedActions class</a>
@@ -46,7 +42,5 @@ When the user taps one of the suggested actions, the bot will receive a message 
 [cardAction]: /dotnet/api/microsoft.bot.connector.cardaction
 
 [inspector]: ../bot-service-channel-inspector.md
-
-[channelInspector]: ../bot-service-channel-inspector.md
 
 

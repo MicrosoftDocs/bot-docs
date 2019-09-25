@@ -7,7 +7,8 @@ As such, it is important to include your built code and with all necessary depen
 > [!IMPORTANT]
 > Before zipping your project files, make sure that you are _in_ the project folder. 
 > - For C# bots, it is the folder that has the .csproj file. 
-> - For JS bots, it is the folder that has the app.js or index.js file. 
+> - For JavaScript bots, it is the folder that has the app.js or index.js file. 
+> - For TypeScript bots, it is the folder that includes the _src_ folder (where the bot.ts and index.ts files are). 
 >
 >**Within** the project folder, select all the files and zip them up, then run the command while still in the folder. 
 >
