@@ -29,4 +29,5 @@ This command works similarly to JavaScript above, but for a Typescript bot.
 ---
 
 > [!NOTE]
-> The `az bot prepare-depoloy` command should generate a `.deployment` file in your bot project folder.
+>  For C# bots and JavaScript bots, the `az bot prepare-depoloy` command should generate a `.deployment` file in your bot project folder.
+> For TypeScript bots, the command should generate two `web.config` files. One is in your project folder and another in the **src** folder within your project folder. 
