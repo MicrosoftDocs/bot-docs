@@ -10,9 +10,53 @@ Apparent changes:
 
 Namespaces explored:
 
+- [Microsoft.Bot.Builder.AI.TriggerTrees](#ns-ai-triggertrees)
 - [Microsoft.Bot.Builder.Dialogs](#ns-dialogs)
-- [Microsoft.Bot.Builder.Dialogs.Adaptive](#ns-dialogs-adaptive)
-- [Microsoft.Bot.Builder.Dialogs.Adaptive.Steps](#ns-dialogs-adaptive-steps)
+  - [Microsoft.Bot.Builder.Dialogs.Adaptive](#ns-dialogs-adaptive)
+    - [Microsoft.Bot.Builder.Dialogs.Adaptive.Input](#ns-dialogs-adaptive-input)
+    - [Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers](#ns-dialogs-adaptive-recognizers)
+    - [Microsoft.Bot.Builder.Dialogs.Adaptive.Rules](#ns-dialogs-adaptive-rules)
+    - [Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors](#ns-dialogs-adaptive-selectors)
+    - [Microsoft.Bot.Builder.Dialogs.Adaptive.Steps](#ns-dialogs-adaptive-steps)
+  - [Microsoft.Bot.Builder.Dialogs.Composition.Recognizers](#ns-dialogs-composition-recognizers)
+  - Microsoft.Bot.Builder.Dialogs.Debugging
+  - [Microsoft.Bot.Builder.Dialogs.Declarative](#ns-dialogs-declarative)
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Converters
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Loaders
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Parsers
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Plugins
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Resolvers
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Resources
+    - Microsoft.Bot.Builder.Dialogs.Declarative.Types
+- [Microsoft.Bot.Builder.Expressions](#ns-expressions)
+  - [Microsoft.Bot.Builder.Expressions.Parser](#ns-expressions-parser)
+
+## <a id="ns-ai-triggertrees"></a>[new] Microsoft.Bot.Builder.AI.TriggerTrees
+
+### <a id="Clause"></a>public class **Clause** : [Expression](#Expression)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+private Dictionary<string, string> anyBindings = new Dictionary<string, string>();
+internal bool Subsumed = false;
+
+internal Clause() : base(ExpressionType.And) { }
+internal Clause(Clause fromClause) : base(ExpressionType.And) {…}
+internal Clause(Expression expression) : base(ExpressionType.And, expression) { }
+internal Clause(IEnumerable<Expression> children) : base(ExpressionType.And, children.ToArray()) { }
+
+public Dictionary<string, string> AnyBindings { get => anyBindings; set => anyBindings = value; }
+
+public override string ToString() {…}
+public void ToString(StringBuilder builder, int indent = 0) {…}
+
+public RelationshipType Relationship(Clause other, Dictionary<string, IPredicateComparer> comparers) {…}
+```
+
+</details>
+
+back to [top](#top)
 
 ## <a id="ns-dialogs"></a>[updated] Microsoft.Bot.Builder.Dialogs
 
@@ -453,6 +497,23 @@ protected async Task<RecognizerResult> OnRecognize(SequenceContext sequenceConte
 
 </details>
 
+- An adaptive dialog has both a UserState dictionary and a BotState object (which has both UserState and ConversationState dictionaries). Why?
+- An adaptive dialog has a Recognizer "for processing incoming user input".
+
+back to [top](#top)
+
+### <a id="BotState"></a>public class **BotState** : [DialogState](#DialogState)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public string LastAccess { get; set; }
+```
+
+</details>
+
+- This appears to be a stub, as **LastAccess** is not referenced anywhere in the 4.6-Preview SDK.
+
 back to [top](#top)
 
 ### <a id="SequenceContext"></a>public class **SequenceContext** : [DialogContext](#DialogContext)
@@ -553,6 +614,22 @@ public Dictionary<string, object> Turn { get; set; }
 </details>
 
 back to [top](#top)
+
+## <a id="ns-dialogs-adaptive-input"></a>[new] Microsoft.Bot.Builder.Dialogs.Adaptive.Input
+
+TBD
+
+## <a id="ns-dialogs-adaptive-recognizers"></a>[new] Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers
+
+TBD
+
+## <a id="ns-dialogs-adaptive-rules"></a>[new] Microsoft.Bot.Builder.Dialogs.Adaptive.Rules
+
+TBD
+
+## <a id="ns-dialogs-adaptive-selectors"></a>[new] Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors
+
+TBD
 
 ## <a id="ns-dialogs-adaptive-steps"></a>[new] Microsoft.Bot.Builder.Dialogs.Adaptive.Steps
 
@@ -741,5 +818,295 @@ public override List<IDialog> ListDependencies() {…}
 
 - When _run_ and our dialog context is a [**SequenceContext**](#SequenceContext), queues the changes [on the sequence context] and then ends itself.
 - Not sure when these queued changes get applied.
+
+back to [top](#top)
+
+### <a id="EmitEvent"></a>public class **EmitEvent** : [DialogCommand](#DialogCommand)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public string EventName { get; set; }
+public object EventValue { get; set; }
+public bool BubbleEvent { get; set; }
+public string EventValueProperty { get {…} set {…} }
+
+public EmitEvent(string eventName = null, object eventValue = null, bool bubble = true, [CallerFilePath] string callerPath = "", [CallerLineNumber] int callerLine = 0)
+    : base() {…}
+
+protected override async Task<DialogTurnResult> OnRunCommandAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
+
+protected override string OnComputeId() {…}
+```
+
+</details>
+
+- When _run_, "emits" the event. I guess this lets a child dialog notify ancestors.
+
+back to [top](#top)
+
+### <a id="EndDialog"></a>public class **EndDialog** : [DialogCommand](#DialogCommand)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public string ResultProperty { get; set; } = "dialog.result";
+
+public EndDialog(string resultProperty = null, [CallerFilePath] string callerPath = "", [CallerLineNumber] int callerLine = 0) : base() {…}
+
+protected override async Task<DialogTurnResult> OnRunCommandAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
+
+protected override string OnComputeId() {…}
+```
+
+</details>
+
+- When _run_, ends the nearest ancestor dialog that is not a command dialog and returns whatever result is currently saved to the _dialog.result_ property.
+
+back to [top](#top)
+
+### <a id="EndTurn"></a>public class **EndTurn** : [DialogCommand](#DialogCommand)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public EndTurn([CallerFilePath] string callerPath = "", [CallerLineNumber] int callerLine = 0) : base() {…}
+
+protected override string OnComputeId() {…}
+
+protected async override Task<DialogTurnResult> OnRunCommandAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
+```
+
+</details>
+
+- When _run_, simply ends the turn without ending the dialog. Has no side effects. Equivalent to a old-school waterfall step returning **[Dialog](#Dialog).EndOfTurn**.
+
+back to [top](#top)
+
+### <a id="Foreach"></a>public class **Foreach** : [DialogCommand](#DialogCommand), [IDialogDependencies](#IDialogDependencies)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public string ListProperty { get {…} set {…} }
+public string IndexProperty { get; set; } = "dialog.index";
+public string ValueProperty { get; set; } = DialogContextState.DIALOG_VALUE;
+public List<IDialog> Steps { get; set; } = new List<IDialog>();
+
+public Foreach([CallerFilePath] string sourceFilePath = "", [CallerLineNumber] int sourceLineNumber = 0) : base() {…}
+
+protected override async Task<DialogTurnResult> OnRunCommandAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
+
+protected override string OnComputeId() {…}
+
+public override List<IDialog> ListDependencies() {…}
+
+public class ForeachOptions
+{
+    public Expression list { get; set; }
+    public int offset { get; set; }
+}
+```
+
+</details>
+
+- When _run_ and our dialog context is a [**SequenceContext**](#SequenceContext):
+  - Appears to copy the steps, add one to increment the loop offset, "queue" the steps to be added, and then end itself.
+  - Not sure where the missing logic is that makes this an actual loop or checks whether to continue.
+  - The **ListProperty** seems to contain some meaningful expression the [**ExpressionEngine**](#ExpressionEngine) can parse.
+
+back to [top](#top)
+
+### <a id="ForeachPage"></a>public class **ForeachPage** : [DialogCommand](#DialogCommand), [IDialogDependencies](#IDialogDependencies)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public string ListProperty { get {…} set {…} }
+public int PageSize { get; set; } = 10;
+public string ValueProperty { get; set; } = DialogContextState.DIALOG_VALUE;
+public List<IDialog> Steps { get; set; } = new List<IDialog>();
+
+public ForeachPage([CallerFilePath] string sourceFilePath = "", [CallerLineNumber] int sourceLineNumber = 0) : base() {…}
+
+protected override async Task<DialogTurnResult> OnRunCommandAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
+
+protected override string OnComputeId() {…}
+
+public override List<IDialog> ListDependencies() {…}
+
+public class ForeachPageOptions
+{
+    public Expression list { get; set; }
+    public int offset { get; set; }
+    public int pageSize { get; set; }
+}
+```
+
+</details>
+
+- When _run_ and our dialog context is a [**SequenceContext**](#SequenceContext):
+  - Appears to copy the steps, add **pageSize** to increment the loop offset, "queue" the steps to be added, and then end itself.
+  - Appears to work on a _page_ of values at a time?
+  - Not sure where the missing logic is that makes this an actual loop or checks whether to continue.
+  - The **ListProperty** seems to contain some meaningful expression the [**ExpressionEngine**](#ExpressionEngine) can parse.
+
+back to [top](#top)
+
+## <a id="ns-dialogs-composition-recognizers"></a>[new] Microsoft.Bot.Builder.Dialogs.Composition.Recognizers
+
+TBD
+
+## <a id="ns-dialogs-declarative"></a>[new] Microsoft.Bot.Builder.Dialogs.Declarative
+
+TBD
+
+## <a id="ns-expressions"></a>[new] Microsoft.Bot.Builder.Expressions
+
+### <a id="Expression"></a>public class **Expression**
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public Expression(string type, params Expression[] children) {…}
+public Expression(ExpressionEvaluator evaluator, params Expression[] children) {…}
+
+public string Type => Evaluator.Type;
+public ExpressionEvaluator Evaluator { get; }
+
+public Expression[] Children { get; set; }
+public ReturnType ReturnType => Evaluator.ReturnType;
+
+public static Expression MakeExpression(string type, params Expression[] children) {…}
+public static Expression MakeExpression(ExpressionEvaluator evaluator, params Expression[] children) {…}
+
+public static Expression LambaExpression(EvaluateExpressionDelegate function) => new Expression(new ExpressionEvaluator(ExpressionType.Lambda, function));
+public static Expression Lambda(Func<object, object> function) => new Expression(new ExpressionEvaluator(ExpressionType.Lambda, (expression, state) => {…}));
+public static Expression SetPathToValue(Expression property, Expression value) => Expression.MakeExpression(ExpressionType.SetPathToValue, property, value);
+public static Expression SetPathToValue(Expression property, object value) {…}
+public static Expression EqualsExpression(params Expression[] children) => Expression.MakeExpression(ExpressionType.Equal, children);
+public static Expression AndExpression(params Expression[] children) {…}
+public static Expression OrExpression(params Expression[] children) {…}
+public static Expression NotExpression(Expression child) => Expression.MakeExpression(ExpressionType.Not, child);
+public static Expression ConstantExpression(object value) => new Constant(value);
+public static Expression Accessor(string property, Expression instance = null) => …;
+
+public void Validate() => Evaluator.ValidateExpression(this);
+public void ValidateTree() {…}
+
+public (object value, string error) TryEvaluate(object state) => Evaluator.TryEvaluate(this, state);
+
+public override string ToString() {…}
+```
+
+</details>
+
+- Relies on an [**ExpressionEvaluator**](#ExpressionEvaluator) to...evaluate the expression.
+
+Derived classes:
+
+- **Microsoft.Bot.Builder.AI.TriggerTrees.[Clause](#Clause)**
+- **Microsoft.Bot.Builder.Expressions.[Constant](#Constant)**
+
+back to [top](#top)
+
+### <a id="Constant"></a>public class **Constant** : [Expression](#Expression)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+private object _value;
+
+public Constant(object value = null)
+    : base(new ExpressionEvaluator(ExpressionType.Constant, (expression, state) => ((expression as Constant).Value, null))) {…}
+
+public object Value { get {…} set {…} }
+
+public override string ToString() {…}
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="ReturnType"></a>public enum **ReturnType**
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+Boolean, Number, Object, String
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="ExpressionEvaluator"></a>public class **ExpressionEvaluator**
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+private readonly ValidateExpressionDelegate _validator;
+private readonly EvaluateExpressionDelegate _evaluator;
+
+public ExpressionEvaluator(string type, EvaluateExpressionDelegate evaluator, ReturnType returnType = ReturnType.Object, ValidateExpressionDelegate validator = null) {…}
+
+public string Type { get; }
+public ReturnType ReturnType { get; set; }
+
+public ExpressionEvaluator Negation { get {…} set {…} }
+
+public override string ToString() => $"{Type} => {ReturnType}";
+
+public (object value, string error) TryEvaluate(Expression expression, object state) => _evaluator(expression, state);
+public void ValidateExpression(Expression expression) => _validator(expression);
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="ValidateExpressionDelegate"></a>public delegate void **ValidateExpressionDelegate**([Expression](#Expression) expression)
+
+back to [top](#top)
+
+### <a id="EvaluateExpressionDelegate"></a>public delegate (object value, string error) **EvaluateExpressionDelegate**([Expression](#Expression) expression, object state)
+
+back to [top](#top)
+
+## <a id="ns-expressions-parser"></a>[new] Microsoft.Bot.Builder.Expressions.Parser
+
+### <a id="IExpressionParser"></a>public interface **IExpressionParser**
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+Expression Parse(string expression);
+```
+
+</details>
+
+Implemented by:
+
+- **Microsoft.Bot.Builder.Expressions.Parser.[ExpressionEngine](#ExpressionEngine)**
+
+back to [top](#top)
+
+### <a id="ExpressionEngine"></a>public class **ExpressionEngine** : [IExpressionParser](#IExpressionParser)
+
+<details><summary>Public and protected members</summary>
+
+```csharp
+public ExpressionEngine(EvaluatorLookup lookup = null) {…}
+
+public Expression Parse(string expression) => new ExpressionTransformer(_lookup).Transform(AntlrParse(expression));
+
+protected static IParseTree AntlrParse(string expression) {…}
+```
+
+</details>
+
+- **ExpressionTransformer** is a private inner class that encapsulates much of the parsing logic.
+- Looks like they used [ANTLR](https://www.antlr.org/) along with the **Expression.g4** file to generate the core parser.
 
 back to [top](#top)
