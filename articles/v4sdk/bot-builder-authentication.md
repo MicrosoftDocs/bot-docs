@@ -461,4 +461,4 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
 [cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
 [js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
-[teams-activity-feed]:[https://aka.ms/teams-activity-feed
+[teams-activity-feed]:https://aka.ms/teams-activity-feed
