@@ -33,13 +33,13 @@ To check the version of your emulator, select **Help** -> **About** in the menu.
 # [C#](#tab/csharp)
 Set up the inspection state in the **Startup** file. Add the inspection middleware to the adapter. The inspection state is provided through dependency injection. See the code update below or refer to the inspection sample here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection). 
 
-**Startup.cs**
+**Startup.cs**  
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
 
 **AdapterWithInspection.cs**  
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=11-21)]
 
-**EchoBot.cs** 
+**EchoBot.cs**  
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Bots/EchoBot.cs?range=14-43)]
 
 # [JavaScript](#tab/javascript)

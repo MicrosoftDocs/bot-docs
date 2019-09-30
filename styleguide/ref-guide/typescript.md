@@ -85,6 +85,7 @@ The rest of this sections covers style and wording guidance:
 - [@returns](#returns)
 - [@remarks](#remarks)
 - [Code blocks](#code-blocks)
+- [General guidance](#general-guidance)
 
 ### Symbol references
 
@@ -114,7 +115,7 @@ Every public element should have a description, including protected members of p
 > [!NOTE] If a public element is _internal_, include the following note as part of the summary:
 >
 > ```text
-> > [!NOTE] This <_element-type_> supports the framework and is not intended to be called directly for your code.
+> This <_element-type_> supports the framework and is not intended to be called directly for your code.
 > ```
 
 | Element | Wording |
@@ -227,7 +228,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 | void |  |
 | null or undefined |  |
 | never |  |
-|  |  |
+| this | For _cascading/fluent_ semantics, use:<br/>A reference to the \<_whatever_> object. |
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
@@ -250,6 +251,16 @@ Add short code examples as desireable to the @remarks section.
 - Introduce each example, even if it is just with the phrase, "For example:".
 - At the type-level (class, interface, object, enum, and so on), include a code example that will apply to the most common use cases.
 - At the method-level, consider adding code examples to the most commonly hit topics.
+
+back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
+
+### General guidance
+
+#### Event emitters and events
+
+#### Continuation functions
+
+#### Chaining semantics
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
