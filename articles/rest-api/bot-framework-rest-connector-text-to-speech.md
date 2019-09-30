@@ -19,7 +19,7 @@ If you are building a bot for a speech-enabled channel such as Cortana, you can 
 
 ## Specify text to be spoken by your bot
 
-To specify text to be spoken by your bot on a speech-enabled channel, set the `speak` property within the `Activity` object that represents your message. You can set the `speak` property to either a plain text string or a string that is formatted as <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup" target="_blank">Speech Synthesis Markup Language (SSML)</a>, an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. 
+To specify text to be spoken by your bot on a speech-enabled channel, set the `speak` property within the [Activity][Activity] object that represents your message. You can set the `speak` property to either a plain text string or a string that is formatted as <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup" target="_blank">Speech Synthesis Markup Language (SSML)</a>, an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. 
 
 The following request sends a message that specifies text to be displayed and text to be spoken and indicates that the bot is [expecting user input](bot-framework-rest-connector-add-input-hints.md). It specifies the `speak` property using  <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup" target="_blank">SSML</a> format to indicate that the word "sure" should be spoken with a moderate amount of emphasis. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
@@ -60,5 +60,6 @@ When you send a message on a speech-enabled channel, you can attempt to influenc
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md)
-- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 - <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup" target="_blank">Speech Synthesis Markup Language (SSML)</a>
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
