@@ -151,8 +151,9 @@ Note that **type2doxfx** generates a TOC for each library. We need to combine th
     ```
 
 1. Open the site in a browser to review the local build:
-   - http://localhost:8080/botbuilder-ts-latest/api/botbuilder/
-   - Note that the links in the TOC are missing a **.html** at the end of the URLs.
+   - http://localhost:8080/_site/botbuilder-typescript/botbuilder-ts-latest/api/botbuilder/
+   - **Note**: The port number might be different; check the status message from the docfx serve command.
+   - **Note**: Links in the TOC are missing a **.html** at the end of the URLs.
 
 ---
 
