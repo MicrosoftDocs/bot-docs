@@ -247,7 +247,7 @@ You can modify this render pipeline to add, remove, or replace any custom render
 You can use Web Chat to send any activity type and payload, we neither document nor recommend this feature. 
 You should use "event" activity instead.
 
-# Action Support by Channel
+## Action support by channel
 
 The following table shows Card Action and Suggested Action support by channel.
 
