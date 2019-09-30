@@ -11,11 +11,11 @@ ms.date: 12/13/2017
 
 # Send an activity to the bot
 
-Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](bot-framework-rest-connector-activities.md), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
+Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](https://aka.ms/botSpecs-activitySchema), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
 
 ## Send an activity
 
-To send an activity to the bot, the client must create an `Activity` object to define the activity and then issue a `POST` request to `https://directline.botframework.com/v3/directline/conversations/{conversationId}/activities`, specifying the Activity object in the body of the request.
+To send an activity to the bot, the client must create an [Activity][] object to define the activity and then issue a `POST` request to `https://directline.botframework.com/v3/directline/conversations/{conversationId}/activities`, specifying the Activity object in the body of the request.
 
 The following snippets provide an example of the Send Activity request and response.
 
@@ -70,11 +70,11 @@ The total time to POST a message to a Direct Line conversation is the sum of the
 
 ## Send attachment(s) to the bot
 
-In some situations, a client may need to send attachments to the bot such as images or documents. A client may send attachments to the bot either by [specifying the URL(s)](#send-by-url) of the attachment(s) within the `Activity` object that it sends using `POST /v3/directline/conversations/{conversationId}/activities` or by [uploading attachment(s)](#upload-attachments) using `POST /v3/directline/conversations/{conversationId}/upload`.
+In some situations, a client may need to send attachments to the bot such as images or documents. A client may send attachments to the bot either by [specifying the URL(s)](#send-by-url) of the attachment(s) within the [Activity][] object that it sends using `POST /v3/directline/conversations/{conversationId}/activities` or by [uploading attachment(s)](#upload-attachments) using `POST /v3/directline/conversations/{conversationId}/upload`.
 
 ## <a id="send-by-url"></a> Send attachment(s) by URL
 
-To send one or more attachments as part of the `Activity` object using `POST /v3/directline/conversations/{conversationId}/activities`, simply include one or more `Attachment` objects within the Activity object and set the `contentUrl` property of each Attachment object to specify the HTTP, HTTPS, or `data` URI of the attachment.
+To send one or more attachments as part of the [Activity][] object using `POST /v3/directline/conversations/{conversationId}/activities`, simply include one or more [Attachment][] objects within the Activity object and set the `contentUrl` property of each Attachment object to specify the HTTP, HTTPS, or `data` URI of the attachment.
 
 ## <a id="upload-attachments"></a> Send attachment(s) by upload
 
@@ -187,3 +187,6 @@ HTTP/1.1 200 OK
 - [Receive activities from the bot](bot-framework-rest-direct-line-3-0-receive-activities.md)
 - [End a conversation](bot-framework-rest-direct-line-3-0-end-conversation.md)
 - [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+[Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object

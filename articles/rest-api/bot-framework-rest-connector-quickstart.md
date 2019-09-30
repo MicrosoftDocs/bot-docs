@@ -65,7 +65,7 @@ A conversation is a series of messages exchanged between a user and your bot.
 
 ### Receive a message from the user
 
-When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an `Activity` object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
+When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an [Activity][] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
 
 ```json
 {
@@ -92,7 +92,7 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
 
 ### Reply to the user's message
 
-When your bot's endpoint receives a `POST` request that represents a message from the user (i.e., `type` = **message**), use the information in that request to create the `Activity` object for your response.
+When your bot's endpoint receives a `POST` request that represents a message from the user (i.e., `type` = **message**), use the information in that request to create the [Activity][] object for your response.
 
 1. Set the **conversation** property to the contents of the **conversation** property in the user's message.
 2. Set the **from** property to the contents of the **recipient** property in the user's message.
@@ -191,3 +191,5 @@ Content-Type: application/json
 In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user. 
 You can use the [Bot Framework Emulator](../bot-service-debug-emulator.md) to test and debug your bot. 
 If you'd like to share your bot with others, you'll need to [configure](../bot-service-manage-channels.md) it to run on one or more channels.
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

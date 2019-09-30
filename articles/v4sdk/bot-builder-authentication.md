@@ -1,17 +1,19 @@
 ---
 title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
-author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: abs
-ms.date: 06/07/2019
+ms.date: 08/22/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-<!-- Related TODO:
+<!-- 
+
+ms.author: kamrani
+
+Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
 - Check guidance in [DirectLine authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
 -->
@@ -75,21 +77,12 @@ This article describes a sample bot that connects to the Microsoft Graph using a
 
 Once you finish, you will have a bot running locally that can respond to a few simple tasks against an Azure AD application, such as checking and sending an email, or displaying who you are and who your manager is. To do this, your bot will use a token from an Azure AD application against the Microsoft.Graph library. You do not need to publish your bot to test the OAuth sign-in features; however, your bot will need a valid Azure app ID and password.
 
-These authentication features work with other types of bots, too. However, this article uses a registration-only bot.
-
 ### Web Chat and Direct Line considerations
 
 <!-- Summarized from: https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/ -->
 
-There are a couple of important security issues to consider when you use Azure Bot Service authentication with Web Chat.
-
-1. Prevent impersonation, where an attacker makes the bot think they're someone else. In Web Chat, an attacker can impersonate someone else by changing the user ID of his Web Chat instance.
-
-    To prevent this, make the user ID unguessable. When you enable enhanced authentication options in the Direct Line channel, Azure Bot Service can detect and reject any user ID change. The user ID on messages from Direct Line to your bot will always be the same as the one you initialized Web Chat with. Note that this feature requires the user ID to start with `dl_`.
-
-1. Ensure the correct user is signed in. The user has two identities: their identity in a channel and their identity with the identity provider. In Web Chat, Azure Bot Service can guarantee that the sign-in process is completed in the same browser session as Web Chat itself.
-
-    To enable this protection, start Web Chat with a Direct Line token that contains a list of trusted domains that can host the bot's Web Chat client. Then, statically specify the trusted domain (origin) list in the Direct Line configuration page.
+> [!IMPORTANT]
+> Please, keep in mind these important [Security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 
 ## Prerequisites
 
@@ -173,7 +166,7 @@ You now have an Azure AD application configured.
 
 The next step is to register with your bot the Azure AD application that you just created.
 
-# [Azure AD v1](#tab/aadv1)
+#### Azure AD v1
 
 1. Navigate to your bot's resource page on the [Azure Portal](http://portal.azure.com/).
 1. Click **Settings**.
@@ -186,7 +179,11 @@ The next step is to register with your bot the Azure AD application that you jus
     1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
     1. For **Grant Type**, enter `authorization_code`.
     1. For **Login URL**, enter `https://login.microsoftonline.com`.
-    1. For **Tenant ID**, enter the directory (tenant) ID that your recorded earlier for your Azure AD app.
+    1.For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
+
+        - When creating the AAD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
+
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
@@ -198,7 +195,7 @@ The next step is to register with your bot the Azure AD application that you jus
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
 
-# [Azure AD v2](#tab/aadv2)
+#### Azure AD v2
 
 1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](http://portal.azure.com/).
 1. Click **Settings**.
@@ -209,7 +206,11 @@ The next step is to register with your bot the Azure AD application that you jus
     1. For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
     1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
     1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
-    1. For **Tenant ID**, enter the directory (tenant) ID that your recorded earlier for your Azure AD app.
+    1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
+
+        - When creating the AAD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
+
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
@@ -223,8 +224,6 @@ The next step is to register with your bot the Azure AD application that you jus
 
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
-
----
 
 ### Test your connection
 
@@ -268,7 +267,7 @@ You will need your bot's app ID and password to complete this process.
 
 ---
 
-If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can create a new password [as described here](../bot-service-quickstart-registration.md#bot-channels-registration-password)
+If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can create a new password [as described here](../bot-service-quickstart-registration.md#get-registration-password)
 
 > [!NOTE]
 > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
@@ -338,7 +337,7 @@ Within a dialog step, use `BeginDialogAsync` to start the OAuth prompt, which as
 
 Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
 
-[!code-csharp[Get the OAuthPrompt result](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=54-58)]
+[!code-csharp[Get the OAuthPrompt result](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=54-56)]
 
 # [JavaScript](#tab/javascript)
 
@@ -348,7 +347,7 @@ Within the following dialog step, check for the presence of a token in the resul
 
 Add an OAuth prompt to **MainDialog** in its constructor. Here, the value for the connection name was retrieved from the **.env** file.
 
-[!code-javascript[Add OAuthPrompt](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=23-28)]
+[!code-javascript[Add OAuthPrompt](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=24-29)]
 
 Within a dialog step, use `beginDialog` to start the OAuth prompt, which asks the user to sign in.
 
@@ -359,7 +358,7 @@ Within a dialog step, use `beginDialog` to start the OAuth prompt, which asks th
 
 Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
 
-[!code-javascript[Get OAuthPrompt result](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=61-64)]
+[!code-javascript[Get OAuthPrompt result](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=62-63)]
 
 ---
 
@@ -381,27 +380,61 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 **AuthBot** derives from `ActivityHandler` and explicitly handles token response event activities. Here, we continue the active dialog, which allows the OAuth prompt to process the event and retrieve the token.
 
-[!code-javascript[onTokenResponseEvent](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/bots/authBot.js?range=28-33)]
+[!code-javascript[onTokenResponseEvent](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/bots/authBot.js?range=29-31)]
 
 ---
 
 ### Log the user out
 
-It's best practice to let users explicitly sign out or logout, instead of relying on the connection to time out.
+It is best practice to let users explicitly sign out or logout, instead of relying on the connection to time out.
 
 # [C#](#tab/csharp)
 
 **Dialogs\LogoutDialog.cs**
 
-[!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=20-61&highlight=35)]
+[!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
 
 # [JavaScript](#tab/javascript)
 
 **dialogs/logoutDialog.js**
 
-[!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=13-42&highlight=25)]
+[!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 ---
+
+### Adding Teams Authentication
+
+Teams behaves somewhat differently than other channels in regards to OAuth and requires a few changes to properly implement authentication. We will add code from the Teams Authentication Bot sample ([C#][cs-teams-auth-sample]/[JavaScript][js-teams-auth-sample]).
+ 
+One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity. 
+
+# [C#](#tab/csharp)
+**Bots/TeamsBot.cs**
+[!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
+
+# [JavaScript](#tab/javascript)
+**bots/teamsBot.js**
+[!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=27-32&highlight=3)]
+
+---
+
+If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file. 
+
+# [C#](#tab/csharp)
+**Bots/DialogBot.cs**
+[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=18)]
+
+# [JavaScript](#tab/javascript)
+**Bots/dialogBot.js**
+[!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=4-6)]
+
+---
+Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActivityHandler.cs` for C# bots and `teamsActivityHandler.js` for Javascript bots) at the topmost level in your bot's folder.
+
+The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
+
+> [!NOTE]
+> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
 
 ### Further reading
 
@@ -426,3 +459,6 @@ It's best practice to let users explicitly sign out or logout, instead of relyin
 [js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
 [cs-msgraph-sample]: https://aka.ms/v4cs-auth-msgraph-sample
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
+[cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
+[js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
+[teams-activity-feed]:[https://aka.ms/teams-activity-feed

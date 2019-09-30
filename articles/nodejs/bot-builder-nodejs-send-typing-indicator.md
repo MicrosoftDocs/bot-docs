@@ -2,11 +2,10 @@
 title: Send a typing indicator | Microsoft Docs
 description: Learn how to add a "please wait" indicator to tell a user a bot is processing a request using the Bot Framework SDK for Node.js
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

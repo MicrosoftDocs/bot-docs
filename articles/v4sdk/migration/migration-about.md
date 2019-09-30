@@ -3,11 +3,10 @@ title: Differences between the v3 and v4 SDK | Microsoft Docs
 description: Describes the differences between the v3 and v4 SDK.
 keywords: bot migration, formflow, dialogs, state
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

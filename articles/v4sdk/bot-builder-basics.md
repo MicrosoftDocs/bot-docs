@@ -7,7 +7,6 @@ ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -137,13 +136,16 @@ The handlers defined in `ActivityHandler` are:
 | Event | Handler | Description |
 | :-- | :-- | :-- |
 | Any activity type received | `OnTurnAsync` | Calls one of the other handlers, based on the type of activity received. |
-| Message activity received | `OnMessageActivityAsync` | Override this to handle a `Message` activity. |
-| Conversation update activity received | `OnConversationUpdateActivityAsync` | On a `ConversationUpdate` activity, calls a handler if members other than the bot joined or left the conversation. |
+| Message activity received | `OnMessageActivityAsync` | Override this to handle a `message` activity. |
+| Conversation update activity received | `OnConversationUpdateActivityAsync` | On a `conversationUpdate` activity, calls a handler if members other than the bot joined or left the conversation. |
 | Non-bot members joined the conversation | `OnMembersAddedAsync` | Override this to handle members joining a conversation. |
 | Non-bot members left the conversation | `OnMembersRemovedAsync` | Override this to handle members leaving a conversation. |
-| Event activity received | `OnEventActivityAsync` | On an `Event` activity, calls a handler specific to the event type. |
+| Event activity received | `OnEventActivityAsync` | On an `event` activity, calls a handler specific to the event type. |
 | Token-response event activity received | `OnTokenResponseEventAsync` | Override this to handle token response events. |
 | Non-token-response event activity received | `OnEventAsync` | Override this to handle other types of events. |
+| Message reaction activity received | `OnMessageReactionActivityAsync` | On a `messageReaction` activity, calls a handler if one or more reactions were added or removed from a message. |
+| Message reactions added to a message | `OnReactionsAddedAsync` | Override this to handle reactions added to a message. |
+| Message reactions removed from a message | `OnReactionsRemovedAsync` | Override this to handle reactions removed from a message. |
 | Other activity type received | `OnUnrecognizedActivityTypeAsync` | Override this to handle any activity type otherwise unhandled. |
 
 These different handlers have a `turnContext` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `OnMessageActivityAsync` will always be handled, and is generally the most common.
@@ -181,15 +183,20 @@ The handlers defined in `ActivityHandler` are:
 
 | Event | Handler | Description |
 | :-- | :-- | :-- |
-| Any activity type received | `onTurn` | Calls one of the other handlers, based on the type of activity received. |
-| Message activity received | `onMessage` | Provide a function for this to handle a `Message` activity. |
-| Conversation update activity received | `onConversationUpdate` | On a `ConversationUpdate` activity, calls a handler if members other than the bot joined or left the conversation. |
-| Non-bot members joined the conversation | `onMembersAdded` | Provide a function for this to handle members joining a conversation. |
-| Non-bot members left the conversation | `onMembersRemoved` | Provide a function for this to handle members leaving a conversation. |
-| Event activity received | `onEvent` | On an `Event` activity, calls a handler specific to the event type. |
-| Token-response event activity received | `onTokenResponseEvent` | Provide a function for this to handle token response events. |
-| Other activity type received | `onUnrecognizedActivityType` | Provide a function for this to handle any activity type otherwise unhandled. |
-| Activity handlers have completed | `onDialog` | Provide a function for this to handle any processing that should be done at the end of a turn, after the rest of your activity handlers have completed. |
+| Any activity type received | `onTurn` | Called when any activity is received. |
+| Message activity received | `onMessage` | Called when a `message` activity is received. |
+| Conversation update activity received | `onConversationUpdate` | Called when any `conversationUpdate` activity is received. |
+| Members joined the conversation | `onMembersAdded` | Called when any members joined the conversation, including the bot. |
+| Members left the conversation | `onMembersRemoved` | Called when any members left the conversation, including the bot. |
+| Message reaction activity received | `onMessageReaction` | Called when any `messageReaction` activity is received. |
+| Message reactions added to a message | `onReactionsAdded` | Called when reactions are added to a message. |
+| Message reactions removed from a message | `onReactionsRemoved` | Called when reactions are removed from a message. |
+| Event activity received | `onEvent` | Called when any `event` activity is received. |
+| Token-response event activity received | `onTokenResponseEvent` | Called when a `tokens/response` event is received. |
+| Other activity type received | `onUnrecognizedActivityType` | Called when a handler for the specific type of activity is not defined. |
+| Activity handlers have completed | `onDialog` | Called after any applicable handlers have completed. |
+
+Call the `next` function parameter from each handler to allow processing to continue. If `next` is not called, processing of the activity ends.
 
 On each turn, we first check to see if the bot has received a message. When we receive a message from the user, we echo back  the message they sent.
 
@@ -318,7 +325,7 @@ The next parts set up the server and adapter that allow your bot to communicate 
 const server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, () => {
     console.log(`\n${ server.name } listening to ${ server.url }`);
-    console.log(`\nGet Bot Framework Emulator: https://aka.ms/botframework-emulator`);
+    console.log(`\nGet Bot Framework Emulator: https://aka.ms/bot-framework-www-portal-emulator`);
     console.log(`\nTo talk to your bot, open the emulator select "Open Bot"`);
 });
 

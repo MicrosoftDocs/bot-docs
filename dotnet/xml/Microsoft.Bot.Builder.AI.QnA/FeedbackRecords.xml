@@ -1,0 +1,64 @@
+﻿<Type Name="FeedbackRecords" FullName="Microsoft.Bot.Builder.AI.QnA.FeedbackRecords">
+  <TypeSignature Language="C#" Value="public class FeedbackRecords" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FeedbackRecords extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.FeedbackRecords" />
+  <TypeSignature Language="VB.NET" Value="Public Class FeedbackRecords" />
+  <TypeSignature Language="F#" Value="type FeedbackRecords = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Active learning feedback records.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FeedbackRecords ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.FeedbackRecords.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Records">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.FeedbackRecord[] Records { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.QnA.FeedbackRecord[] Records" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.FeedbackRecords.Records" />
+      <MemberSignature Language="VB.NET" Value="Public Property Records As FeedbackRecord()" />
+      <MemberSignature Language="F#" Value="member this.Records : Microsoft.Bot.Builder.AI.QnA.FeedbackRecord[] with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.FeedbackRecords.Records" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("feedbackRecords")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.FeedbackRecord[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -3,11 +3,10 @@ title: Design and control conversation flow | Microsoft Docs
 description: Learn how to design and control conversation flow in your bot to provide a good user experience.
 keywords: design, control, conversation flow, handle interruptions, overview
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/19/2018
 ---
 

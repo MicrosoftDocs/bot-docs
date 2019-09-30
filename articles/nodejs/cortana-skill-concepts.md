@@ -4,9 +4,9 @@ description: Learn core concepts for building a Cortana skill in the Bot Framewo
 keywords: Bot Framework, Cortana skill, speech, Node.js, Bot Builder, SDK, key concepts, core concepts
 author: DeniseMak
 manager: kamrani
+ms.author: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 02/10/2019
 monikerRange: 'azure-bot-service-3.0'
 #ROBOTS: Index
@@ -74,7 +74,7 @@ Degrees of grounding, from weakest to strongest:
 The bot performing an action should present evidence of successful performance. It's also important to indicate failure or understanding. 
 
 * Non-speech closure: If you push an elevator button, its light turns on.  
-This is awo step process:
+This is two step process:
     * Presentation (when you press the button)
     * Acceptance (when the button lights up)
 

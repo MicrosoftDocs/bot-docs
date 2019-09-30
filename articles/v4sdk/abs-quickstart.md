@@ -2,13 +2,11 @@
 title: Create a bot with Bot Service | Microsoft Docs
 description: Learn how to create a bot with Bot Service, an integrated, dedicated bot development environment.
 keywords: Quickstart, create bot, bot service, web app bot
-author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: abs
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ---
 
 # Create a bot with Azure Bot Service
@@ -16,6 +14,9 @@ ms.date: 07/19/2019
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Framework SDK v4.
+
+>[!NOTE] 
+> The bot you create is automatically registered with the Azure Bot Service. If you already have a bot hosted elsewhere and you want to register it, see the article: [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
 [!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
 
@@ -52,7 +53,7 @@ Azure Bot Service provides the core components for creating bots, including the 
 
 Confirm that the bot has been deployed by checking the **Notifications**. The notifications will change from **Deployment in progress...** to **Deployment succeeded**. Click **Go to resource** button to open the bot's resources blade.
 
-Now that your bot is created, test it in Web Chat. 
+Now that your bot is created, test it in Web Chat.
 
 ## Test the bot
 In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot. 
@@ -60,6 +61,16 @@ In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service
 ![Azure Webchat test](../media/azure-bot-quickstarts/azure-webchat-test.png)
 
 Enter a message and your bot should respond.
+
+## Manual app registration
+
+A manual registration is necessary for situations like:
+
+- You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
+- You need to manually create your own app ID (and password).
+
+See [FAQ - App Registration](../bot-service-resources-bot-framework-faq.md#app-registration).
+
 
 ## Download code
 You can download the code to work on it locally. 

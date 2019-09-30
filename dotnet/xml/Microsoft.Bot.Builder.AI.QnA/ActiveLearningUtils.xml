@@ -1,0 +1,49 @@
+﻿<Type Name="ActiveLearningUtils" FullName="Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils">
+  <TypeSignature Language="C#" Value="public static class ActiveLearningUtils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActiveLearningUtils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveLearningUtils" />
+  <TypeSignature Language="F#" Value="type ActiveLearningUtils = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Active learning helper class.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLowScoreVariation">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt; GetLowScoreVariation (System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt; qnaSearchResults);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult&gt; GetLowScoreVariation(class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult&gt; qnaSearchResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils.GetLowScoreVariation(System.Collections.Generic.List{Microsoft.Bot.Builder.AI.QnA.QueryResult})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLowScoreVariation (qnaSearchResults As List(Of QueryResult)) As List(Of QueryResult)" />
+      <MemberSignature Language="F#" Value="static member GetLowScoreVariation : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt; -&gt; System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt;" Usage="Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils.GetLowScoreVariation qnaSearchResults" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qnaSearchResults" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="qnaSearchResults">List of QnaSearch results.</param>
+        <summary>
+            Returns list of qnaSearch results which have low score variation.
+            </summary>
+        <returns>List of filtered qnaSearch results.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

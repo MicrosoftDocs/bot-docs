@@ -10,14 +10,19 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            A date-time value, as recognized by the <see cref="T:Microsoft.Bot.Builder.Dialogs.DateTimePrompt" />.
+            </summary>
+    <remarks>A value can represent a date, a time, a date and time, or a range of any of these.
+            The representation of the value is determined by the locale used to parse the input.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +37,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,13 +58,17 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a human-readable represntation of the end value, for a range result.
+            </summary>
+        <value>
+            A human-readable represntation of the end value, for a range result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,13 +85,17 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a human-readable represntation of the start value, for a range result.
+            </summary>
+        <value>
+            A human-readable represntation of the start value, for a range result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,14 +112,17 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the value in TIMEX format.
+            </summary>
+        <value>A TIMEX representation of the value.</value>
+        <remarks>The TIMEX format that follows the ISO 8601 standard.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -121,13 +138,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a human-readable represntation of the value, for a non-range result.
+            </summary>
+        <value>A human-readable represntation of the value, for a non-range result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

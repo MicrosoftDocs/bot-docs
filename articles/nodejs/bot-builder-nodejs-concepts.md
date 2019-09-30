@@ -2,11 +2,10 @@
 title: Key concepts in the Bot Framework SDK for Node.js | Microsoft Docs
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Framework SDK for Node.js.
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

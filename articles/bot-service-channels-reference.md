@@ -3,11 +3,10 @@ title: Channels reference
 description: Bot Framework Channels reference
 keywords: channels reference, bot builder channels, bot framework channels
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: tools
 ms.date: 03/01/2019
 ---
 

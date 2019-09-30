@@ -3,7 +3,7 @@ title: Debugging guidelines | Microsoft Docs
 description: Understand how to debug your bot.
 keywords: debugging bots, botframework debugging
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

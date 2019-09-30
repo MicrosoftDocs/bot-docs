@@ -7,7 +7,6 @@ ms.author: mateusv
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
  
 ---
@@ -71,4 +70,4 @@ Whenever you are unsure about the right design approach for your bot, step back 
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about designing the user experience, and common patterns in the remainder of this section.
+Now that you're familiar with some basic principles of bot design, learn more about the basic principles for [designing the first interaction](~/bot-service-design-first-interaction.md) between a user and bot.

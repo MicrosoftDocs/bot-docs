@@ -2,11 +2,10 @@
 title: Global message handlers using scorables
 description: Create more flexible dialogs using scorables within the  Bot Framework SDK for .NET.
 author: matthewshim-ms
-ms.author: v-shimma
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

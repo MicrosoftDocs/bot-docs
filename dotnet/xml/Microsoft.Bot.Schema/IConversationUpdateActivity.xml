@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,7 +19,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            The referenced conversation has been updated
+            The referenced conversation has been updated.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,15 +37,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            True if prior history of the channel is disclosed
+            Gets or Sets True if prior history of the channel is disclosed.
             </summary>
-        <value>To be added.</value>
+        <value>true or false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +63,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Members added to the conversation
+            Gets or Sets Members added to the conversation.
             </summary>
-        <value>To be added.</value>
+        <value>List of ChannelAccount.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +89,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Members removed from the conversation
+            Gets or Sets Members removed from the conversation.
             </summary>
-        <value>To be added.</value>
+        <value>List of ChannelAccount.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,15 +115,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The conversation's updated topic name
+            Gets or Sets The conversation's updated topic name.
             </summary>
-        <value>To be added.</value>
+        <value>Topic Name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

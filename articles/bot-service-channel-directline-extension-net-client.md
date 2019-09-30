@@ -10,11 +10,11 @@ ms.author: kamrani
 ms.date: 07/25/2019
 ---
 
-## Create .NET client to connect to direct line app service extension
+# Create .NET Client to Connect to Direct Line App Service Extension
 
 This article describes how to create a .NET client in C# which connects to the direct line app service extension.
 
-### Gather your Direct Line Extension keys
+## Gather your Direct Line Extension keys
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
 1. In the Azure portal, locate your **Azure Bot Service** resource
@@ -24,14 +24,14 @@ This article describes how to create a .NET client in C# which connects to the d
 1. Scroll to the Sites section. There is typically a Default Site unless you have deleted or renamed it.
 1. Click on the **Show link** to reveal one of the keys, then copy its value.
 
-![App service extension keys](./media/channels/direct-line-extension-extension-keys-net-client.png)
+    ![App service extension keys](./media/channels/direct-line-extension-extension-keys-net-client.png)
 
 > [!NOTE]
 > This value is your direct line client secret used to connect to direct
 line app service extension. You can create additional sites if you’d like and use
 those secret values as well.
 
-### Add the Preview Nuget Package Source
+## Add the Preview Nuget Package Source
 
 The preview NuGet packages needed to create a C# Direct line client can be found in a NuGet feed.
 
@@ -43,7 +43,7 @@ The preview NuGet packages needed to create a C# Direct line client can be found
 1. Click on the **Update** button to save the values.
 1. Click **OK** to exit the Package Sources configuration.
 
-### Create a C# Direct Line Client
+## Create a C# Direct Line Client
 
 Interactions with the direct line app service extension happen differently than traditional Direct Line becuase most communication happens over a *WebSocket*. The updated direct line client includes helper classes for opening and closing a *WebSocket*, sending commands through the WebSocket, and receiving Activities back from the bot. This section describes how to create a simple C# client to interact with a bot.
 

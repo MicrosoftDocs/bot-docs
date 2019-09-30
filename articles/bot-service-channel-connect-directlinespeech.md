@@ -12,13 +12,16 @@ ms.author: travisw
 ms.custom: 
 ---
 
-# Connect a bot to Direct Line Speech (Preview)
+# Connect a bot to Direct Line Speech channel
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
+> [!WARNING]
+> The **Direct Line Speech channel** is in public **preview**.  
+
 You can configure your bot to allow client applications to communicate with it through the Direct Line Speech channel.
 
-Once you have built your bot, onboarding it with Direct Line Speech will enable low latency, high reliability connection with client applications using the [Speech SDK](https://aka.ms/speech/sdk). These connections are optimized for voice in, voice out conversational experiences. For more information on Direct Line Speech and how to build client applications, visit the [custom voice-first virtual assistant](https://aka.ms/bots/speech/va) page.  
+Once you have built your bot, onboarding it with Direct Line Speech will enable low latency, high reliability connection with client applications using the [Speech SDK](https://aka.ms/speech-services-docs). These connections are optimized for voice in, voice out conversational experiences. For more information on Direct Line Speech and how to build client applications, visit the [custom voice-first virtual assistant](https://aka.ms/voice-first-va) page.  
 
 ## Sign up for Direct Line Speech Preview
 
@@ -91,3 +94,8 @@ Note that the service is in preview and subject to change, which may affect your
 1. [conversationUpdate](https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#conversation-update-activity) and [endOfCoversation](https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#end-of-conversation-activity) activities used to signal the start and end of conversations, commonly used in generating welcome messages, will be updated for consistency with other channels
 
 1. [SigninCard](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-4.0) is not yet supported by the channel 
+
+## Next Steps
+
+> [!div class="nextstepaction"]
+> [Use Direct Line Speech in your bot](./directline-speech-bot.md)

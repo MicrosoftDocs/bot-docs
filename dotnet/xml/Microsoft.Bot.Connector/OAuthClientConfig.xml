@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,15 +30,18 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When using the Emulator, whether to emulate the OAuthCard behavior or use connected flows
+            Gets or sets a value indicating whether when using the Emulator, whether to emulate the OAuthCard behavior or use connected flows.
             </summary>
-        <value>To be added.</value>
+        <value>
+            When using the Emulator, whether to emulate the OAuthCard behavior or use connected flows.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,15 +56,18 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The default endpoint that is used for API requests.
+            Gets or sets the default endpoint that is used for API requests.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The default endpoint that is used for API requests.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,6 +82,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -84,7 +92,7 @@
         <Parameter Name="emulateOAuthCards" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="client">To be added.</param>
+        <param name="client">client.</param>
         <param name="emulateOAuthCards">Indicates whether the Emulator should emulate the OAuth card.</param>
         <summary>
             Send a dummy OAuth card when the bot is being used on the Emulator for testing without fetching a real token.

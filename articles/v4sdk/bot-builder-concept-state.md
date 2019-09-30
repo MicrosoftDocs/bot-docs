@@ -3,11 +3,10 @@ title: Managing State | Microsoft Docs
 description: Describes how state works within the Bot Framework SDK.
 keywords: state, bot state, conversation state, user state
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
