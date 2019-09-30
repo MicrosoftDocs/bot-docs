@@ -23,7 +23,7 @@ The ability to understand what your user means conversationally and contextually
 
 ## About this sample
 
-This core bot coding sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the the top recognized LUIS intent. 
+This core bot coding sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent. 
 
 # [C#](#tab/csharp)
 After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
