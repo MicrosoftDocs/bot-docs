@@ -79,7 +79,7 @@ If you aren't deploying this for production, the app ID and password fields can 
   "MicrosoftAppPassword": "",
   
   "QnAKnowledgebaseId": "<knowledge-base-id>",
-  "QnAAuthKey": "<your-endpoint-key>",
+  "QnAEndpointKey": "<your-endpoint-key>",
   "QnAEndpointHostName": "<your-hostname>"
 }
 ```
