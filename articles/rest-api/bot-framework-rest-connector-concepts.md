@@ -19,7 +19,7 @@ The Bot Connector service enables your bot to exchange messages with channels co
 
 ### Activity
 
-The Bot Connector service exchanges information between between bot and channel (user) by passing an [Activity][] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. For details about Activities in the Bot Connector service, see [Activities overview]https://aka.ms/botSpecs-activitySchema.
+The Bot Connector service exchanges information between between bot and channel (user) by passing an [Activity][Activity] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. For details about Activities in the Bot Connector service, see [Activities overview](https://aka.ms/botSpecs-activitySchema).
 
 ## Bot State service
 
