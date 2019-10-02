@@ -97,7 +97,9 @@ Click **Add a user profile request**, then select the user profile information y
 
 When you are done filling out the registration form for your Cortana skill, click **Deploy on Cortana** to complete the connection. This brings you back to your bot's Channels blade and you should see that it is now connected to Cortana.
 
-At this point your bot is deployed as a Cortana skill to your account.
+At this point your bot is deployed as a Cortana skill to your account.  
+
+Next, you need to enable and authorize the Bot skill to connect to your account. In your Cortana app, say or type "ask *Invocation Name*" where the "Invocation Name" is what you configured in the Cortana Channel in the Azure portal. Cortana will then prompt you to allow your Bot Skill to connect. If you choose "Yes" to allow this, the skill will now work and show up in Cortana's skill list.
 
 ## Next steps
 
