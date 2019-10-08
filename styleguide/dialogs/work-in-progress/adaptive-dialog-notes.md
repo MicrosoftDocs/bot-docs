@@ -350,9 +350,9 @@ public const string ActivityReceived = "activityReceived";
 public const string Error = "error";
 ```
 
-</details>
+public DialogManager(Dialog rootDialog = null) {…}
 
-back to [top](#top)
+public Dialog RootDialog { get {…} set {…} }
 
 ### <a id="DialogInstance"></a>[updated] public class **DialogInstance**
 
@@ -501,6 +501,23 @@ public IEnumerable<Dialog> GetDialogs() {…}
 ```
 
 </details>
+
+- An adaptive dialog has both a UserState dictionary and a BotState object (which has both UserState and ConversationState dictionaries). Why?
+- An adaptive dialog has a Recognizer "for processing incoming user input".
+
+back to [top](#top)
+
+### <a id="BotState"></a>public class **BotState** : [DialogState](#DialogState)
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public string LastAccess { get; set; }
+```
+
+</details>
+
+- This appears to be a stub, as **LastAccess** is not referenced anywhere in the 4.6-Preview SDK.
 
 back to [top](#top)
 
