@@ -1,13 +1,14 @@
-# <a id="top"></a>Changes in dialogs: botbuilder-dotnet (4-future?)
+# <a id="top"></a>Changes in dialogs: botbuilder-dotnet
+
+**Branch reviewed**: microsoft/botbuilder-dotnet **4.Future**
 
 Apparent changes:
 
-- Dialog events and event bubbling
-- Tags
-- Bindings and skills
 - Dialog containers
 - Adaptive dialogs
-- Modified memory model/access
+- Modified memory model (scoped memory, bypassing? memory management objects)
+- Dialog events and event bubbling
+- Bindings and skills
 
 Namespaces explored:
 
@@ -29,6 +30,9 @@ Namespaces explored:
     - Microsoft.Bot.Builder.Dialogs.Declarative.Resolvers
     - Microsoft.Bot.Builder.Dialogs.Declarative.Resources
     - Microsoft.Bot.Builder.Dialogs.Declarative.Types
+  - [Microsoft.Bot.Builder.Dialogs.Memory](#ns-dialogs-memory)
+    - Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers
+    - [Microsoft.Bot.Builder.Dialogs.Memory.Scopes](#ns-dialogs-memory-scopes)
 - [Microsoft.Bot.Builder.Expressions](#ns-expressions)
   - [Microsoft.Bot.Builder.Expressions.Parser](#ns-expressions-parser)
 - Microsoft.Bot.Builder.LanguageGeneration
@@ -40,6 +44,8 @@ Namespaces explored:
 ### <a id="Clause"></a>public class **Clause** : [Expression](#Expression)
 
 <details><summary>"interesting" members</summary>
+
+**Last checked**: 10/01
 
 ```csharp
 private Dictionary<string, string> anyBindings = new Dictionary<string, string>();
@@ -64,6 +70,8 @@ back to [top](#top)
 
 ### <a id="RelationshipType"></a>public enum **RelationshipType**
 
+**Last checked**: 10/01
+
 ```csharp
 { Specializes, Equal, Generalizes, Incomparable }
 ```
@@ -71,6 +79,8 @@ back to [top](#top)
 back to [top](#top)
 
 ### <a id="Trigger"></a>public class **Trigger**
+
+**Last checked**: 10/01
 
 > A trigger is a combination of a trigger expression and the corresponding action.
 
@@ -102,6 +112,8 @@ The term _Action_ evokes a sub-dialog or step sequence, but is of type **object*
 back to [top](#top)
 
 ### <a id="TriggerTree"></a>public class **TriggerTree**
+
+**Last checked**: 10/01
 
 <details><summary>"interesting" members</summary>
 
@@ -162,6 +174,10 @@ back to [top](#top)
 
 ### <a id="ComponentDialog"></a>[updated] public class **ComponentDialog** : [DialogContainer](#DialogContainer)
 
+**Last checked**: 10/01
+
+> A [**Dialog**](#Dialog) that is composed of other dialogs.
+
 <details><summary>"interesting" members</summary>
 
 ```csharp
@@ -170,7 +186,6 @@ public const string PersistedDialogState = "dialogs";
 public ComponentDialog(string dialogId = null) : base(dialogId) {…}
 
 public string InitialDialogId { get; set; }
-
 public new IBotTelemetryClient TelemetryClient { get {…} set {…} }
 
 public override async Task<DialogTurnResult> BeginDialogAsync(DialogContext outerDc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
@@ -179,30 +194,31 @@ public override async Task<DialogTurnResult> ResumeDialogAsync(DialogContext out
 public override async Task RepromptDialogAsync(ITurnContext turnContext, DialogInstance instance, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public override async Task EndDialogAsync(ITurnContext turnContext, DialogInstance instance, DialogReason reason, CancellationToken cancellationToken = default(CancellationToken)) {…}
 
+public override Dialog AddDialog(IDialog dialog) {…}
+
 protected async Task EnsureInitialized(DialogContext outerDc) {…}
 
-public override Dialog AddDialog(IDialog dialog) {…}
-public IDialog FindDialog(string dialogId) {…}
-
 public override DialogContext CreateChildContext(DialogContext dc) {…}
+private DialogContext CreateInnerDc(ITurnContext context, DialogInstance instance) {…}
 
 protected virtual Task OnInitialize(DialogContext dc) {…}
-
 protected virtual Task<DialogTurnResult> OnBeginDialogAsync(DialogContext innerDc, object options, CancellationToken cancellationToken = default(CancellationToken)) {…}
 protected virtual Task<DialogTurnResult> OnContinueDialogAsync(DialogContext innerDc, CancellationToken cancellationToken = default(CancellationToken)) {…}
 protected virtual Task OnEndDialogAsync(ITurnContext context, DialogInstance instance, DialogReason reason, CancellationToken cancellationToken = default(CancellationToken)) {…}
 protected virtual Task OnRepromptDialogAsync(ITurnContext turnContext, DialogInstance instance, CancellationToken cancellationToken = default(CancellationToken)) {…}
 
 protected virtual Task<DialogTurnResult> EndComponentAsync(DialogContext outerDc, object result, CancellationToken cancellationToken) {…}
-
-protected override string OnComputeId() {…}
 ```
 
 </details>
 
 back to [top](#top)
 
-### <a id="Dialog"></a>[updated] public abstract class **Dialog** : [IDialog](#IDialog)
+### <a id="Dialog"></a>[updated] public abstract class **Dialog**
+
+**Last checked**: 10/01
+
+> Base class for all dialogs.
 
 <details><summary>"interesting" members</summary>
 
@@ -240,67 +256,19 @@ protected void RegisterSourceLocation(string path, int lineNumber) {…}
 
 back to [top](#top)
 
-### <a id="DialogCommand"></a>[new] public abstract class **DialogCommand** : [Dialog](#Dialog), [IDialogDependencies](#IDialogDependencies)
-
-<details><summary>"interesting" members</summary>
-
-```csharp
-public override Task<DialogTurnResult> BeginDialogAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
-
-public virtual List<IDialog> ListDependencies() {…}
-
-protected abstract Task<DialogTurnResult> OnRunCommandAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken));
-
-protected async Task<DialogTurnResult> EndParentDialogAsync(DialogContext dc, object result = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
-protected async Task<DialogTurnResult> ReplaceParentDialogAsync(DialogContext dc, string dialogId, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
-protected async Task<DialogTurnResult> RepeatParentDialogAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
-protected async Task<DialogTurnResult> CancelAllParentDialogsAsync(DialogContext dc, object result = null, string eventName = "cancelDialog", object eventValue = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
-```
-
-</details>
-
-This appears to be a base class for "command-like" dialogs. Reading between the lines, these are steps that are available to the Bot Composer.
-
-Derived classes:
-
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[BaseInvokeDialog](#BaseInvokeDialog)**
-  - **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[BeginDialog](#BeginDialog)**
-  - **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[ReplaceDialog](#ReplaceDialog)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[CancelAllDialogs](#CancelAllDialogs)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[CodeStep](#CodeStep)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[DebugBreak](#DebugBreak)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[DeleteProperty](#DeleteProperty)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[EditArray](#EditArray)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[EditSteps](#EditSteps)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[EmitEvent](#EmitEvent)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[EndDialog](#EndDialog)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[EndTurn](#EndTurn)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[Foreach](#Foreach)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[ForeachPage](#ForeachPage)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[HttpRequest](#HttpRequest)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[IfCondition](#IfCondition)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[InitProperty](#InitProperty)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[LogStep](#LogStep)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[RepeatDialog](#RepeatDialog)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[SendActivity](#SendActivity)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[SetProperty](#SetProperty)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[SwitchCondition](#SwitchCondition)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[TraceActivity](#TraceActivity)**
-
-back to [top](#top)
-
 ### <a id="DialogContainer"></a>[new] public abstract class **DialogContainer** : [Dialog](#Dialog)
+
+**Last checked**: 10/01
 
 <details><summary>"interesting" members</summary>
 
 ```csharp
 protected readonly DialogSet _dialogs = new DialogSet();
 
-public DialogContainer(string dialogId = null) : base(dialogId) {…}
+public DialogContainer(string dialogId = null) : base(dialogId) { }
 
 public abstract DialogContext CreateChildContext(DialogContext dc);
 
-public virtual Dialog AddDialog(IDialog dialog) {…}
 public IDialog FindDialog(string dialogId) {…}
 ```
 
@@ -309,52 +277,45 @@ public IDialog FindDialog(string dialogId) {…}
 **DialogContainer** is now a common base class for [component](#ComponentDialog) and [adaptive](#AdaptiveDialog) dialogs.
 
 - It defines an inner dialog set.
-- I'm not sure why it doesn't override the **[Dialog](#Dialog).TelemetryClient** setter to apply the telemetry client to its child dialogs. The implementations in **ComponentDialog** and **AdaptiveDialog**, are slightly differently but logically identical.
+- I'm not sure why it doesn't override the **[Dialog](#Dialog).TelemetryClient** setter to apply the telemetry client to its child dialogs. The implementations in **ComponentDialog** and **AdaptiveDialog**, are nigh-identical ([issue 2638](https://github.com/microsoft/botbuilder-dotnet/issues/2638))
 
 back to [top](#top)
 
 ### <a id="DialogContext"></a>[updated] public class **DialogContext**
 
+**Last checked**: 10/01
+
+> Provides context for the current state of the dialog stack.
+
 <details><summary>"interesting" members</summary>
 
 ```csharp
-private List<string> activeTags = new List<string>();
+public DialogContext(DialogSet dialogs, ITurnContext turnContext, DialogState state) {…}
+public DialogContext(DialogSet dialogs, DialogContext parentDialogContext, DialogState state)
+    : this(dialogs, parentDialogContext.Context, state) {…}
 
-public DialogContext(DialogSet dialogs, DialogContext parentDialogContext, DialogState state, IDictionary<string, object> conversationState = null, IDictionary<string, object> userState = null, IDictionary<string, object> settings = null) {…}
-public DialogContext(DialogSet dialogs, ITurnContext turnContext, DialogState state, IDictionary<string, object> conversationState = null, IDictionary<string, object> userState = null, IDictionary<string, object> settings = null) {…}
-
-public DialogContext Parent { get; set; }
 public DialogSet Dialogs { get; private set; }
 public ITurnContext Context { get; private set; }
 public IList<DialogInstance> Stack { get; private set; }
-public DialogContextState State { get; private set; }
+public DialogStateManager State { get; private set; }
+public DialogContext Parent { get; set; }
 public DialogContext Child { get {…} }
 public DialogInstance ActiveDialog { get {…} }
-public List<string> ActiveTags { get {…} }
-public Dictionary<string, object> DialogState { get {…} }
 
 public async Task<DialogTurnResult> BeginDialogAsync(string dialogId, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public async Task<DialogTurnResult> PromptAsync(string dialogId, PromptOptions options, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public async Task<DialogTurnResult> ContinueDialogAsync(CancellationToken cancellationToken = default(CancellationToken)) {…}
 public async Task<DialogTurnResult> EndDialogAsync(object result = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
-public async Task<DialogTurnResult> CancelAllDialogsAsync(string eventName = DialogEvents.CancelDialog, object eventValue = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
+public async Task<DialogTurnResult> CancelAllDialogsAsync(CancellationToken cancellationToken = default(CancellationToken)) {…}
+public async Task<DialogTurnResult> CancelAllDialogsAsync(string eventName, object eventValue = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public async Task<DialogTurnResult> ReplaceDialogAsync(string dialogId, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public async Task RepromptDialogAsync(CancellationToken cancellationToken = default(CancellationToken)) {…}
 
-public IDialog FindDialog(string dialogId) {…}
+public Dialog FindDialog(string dialogId) {…}
 public async Task<bool> EmitEventAsync(string name, object value = null, bool bubble = true, bool fromLeaf = false, CancellationToken cancellationToken = default(CancellationToken)) {…}
-protected virtual bool ShouldInheritState(IDialog dialog) {…}
 private async Task EndActiveDialogAsync(DialogReason reason, object result = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
 
-public class DialogEvents
-{
-    public const string BeginDialog = "beginDialog";
-    public const string ResumeDialog = "resumeDialog";
-    public const string RepromptDialog = "repromptDialog";
-    public const string CancelDialog = "cancelDialog";
-    public const string EndDialog = "endDialog";
-    public const string ActivityReceived = "activityReceived";
-}
+private IDictionary<string, object> GetActiveDialogState(DialogContext dialogContext, IDictionary<string, object> state = null, int? stackIdx = null) {…}
 ```
 
 </details>
@@ -362,6 +323,8 @@ public class DialogEvents
 back to [top](#top)
 
 ### <a id="DialogEvent"></a>[new] public class **DialogEvent**
+
+**Last checked**: 10/01
 
 <details><summary>"interesting" members</summary>
 
@@ -373,7 +336,47 @@ public object Value { get; set; } // Optional. Event value.
 
 </details>
 
+### <a id="DialogEvents"></a>[new] public class **DialogEvents**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public const string BeginDialog = "beginDialog";
+public const string RepromptDialog = "repromptDialog";
+public const string CancelDialog = "cancelDialog";
+public const string ActivityReceived = "activityReceived";
+public const string Error = "error";
+```
+
+public DialogManager(Dialog rootDialog = null) {…}
+
+public Dialog RootDialog { get {…} set {…} }
+
+### <a id="DialogInstance"></a>[updated] public class **DialogInstance**
+
+**Last checked**: 10/01
+
+> Contains state information associated with a [**Dialog**](#Dialog) on a dialog stack.
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public string Id { get; set; } // Gets or sets the ID of the dialog.
+public IDictionary<string, object> State { get; set; } // Gets or sets the instance's persisted state.
+public int? StackIndex { get; set; } // Positive values are indexes within the current DC and negative values are indexes in the parent DC.
+```
+
+</details>
+
+- Not yet sure how the **StackIndex** property is being used.
+
+back to [top](#top)
+
 ### <a id="DialogManager"></a>[new] public class **DialogManager**
+
+**Last checked**: 10/01
 
 <details><summary>"interesting" members</summary>
 
@@ -427,6 +430,8 @@ back to [top](#top)
 
 ### <a id="DialogManagerAdapter"></a>[new] class **DialogManagerAdapter** : BotAdapter
 
+**Last checked**: 10/01
+
 <details><summary>"interesting" members</summary>
 
 ```csharp
@@ -451,19 +456,74 @@ back to [top](#top)
 
 ### <a id="DialogManagerResult"></a>[new] public class **DialogManagerResult**
 
+**Last checked**: 10/01
+
 <details><summary>"interesting" members</summary>
 
 ```csharp
 public DialogTurnResult TurnResult { get; set; }
 public Activity[] Activities { get; set; }
-public StoredBotState NewState { get; set; }
+public PersistedState NewState { get; set; }
 ```
 
 </details>
 
 back to [top](#top)
 
+### <a id="DialogPath"></a>[new] public class **DialogPath**
+
+**Last checked**: 10/01
+
+No members, doesn't appear to be used?!
+
+back to [top](#top)
+
+### <a id="DialogSet"></a>[updated] public class **DialogSet**
+
+**Last checked**: 10/01
+
+> A collection of [**Dialog**](#Dialog) objects that can all call each other.
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public DialogSet(IStatePropertyAccessor<DialogState> dialogState) {…}
+public DialogSet() {…}
+
+public IBotTelemetryClient TelemetryClient { get {…} set {…} }
+
+public DialogSet Add(Dialog dialog) {…}
+
+public async Task<DialogContext> CreateContextAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken)) {…}
+
+public Dialog Find(string dialogId) {…}
+public IEnumerable<Dialog> GetDialogs() {…}
+```
+
+</details>
+
+- An adaptive dialog has both a UserState dictionary and a BotState object (which has both UserState and ConversationState dictionaries). Why?
+- An adaptive dialog has a Recognizer "for processing incoming user input".
+
+back to [top](#top)
+
+### <a id="BotState"></a>public class **BotState** : [DialogState](#DialogState)
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public string LastAccess { get; set; }
+```
+
+</details>
+
+- This appears to be a stub, as **LastAccess** is not referenced anywhere in the 4.6-Preview SDK.
+
+back to [top](#top)
+
 ### <a id="DialogState"></a>[updated] public class **DialogState**
+
+**Last checked**: 10/01
 
 <details><summary>"interesting" members</summary>
 
@@ -482,6 +542,8 @@ public IDictionary<string, object> UserState { get; set; } = new Dictionary<stri
 
 ### <a id="DialogTurnResult"></a>[updated] public class **DialogTurnResult**
 
+**Last checked**: 10/01
+
 <details><summary>"interesting" members</summary>
 
 ```csharp
@@ -496,61 +558,169 @@ public bool ParentEnded { get; set; }
 
 back to [top](#top)
 
-### <a id="IDialog"></a>[updated] public interface **IDialog**
+### <a id="IDialogDependencies"></a>[new] public interface **IDialogDependencies**
+
+**Last checked**: 10/01
+
+> Enumerates child [**Dialog**](#Dialog) dependencies so they can be added to the container's [**DialogSet**](#DialogSet).
 
 <details><summary>"interesting" members</summary>
 
 ```csharp
-string Id { get; set; }
-IBotTelemetryClient TelemetryClient { get; set; }
-List<string> Tags { get; }
-Dictionary<string, string> InputBindings { get; }
-string OutputBinding { get; }
-
-Task<DialogTurnResult> BeginDialogAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken));
-Task<DialogTurnResult> ContinueDialogAsync(DialogContext dc, CancellationToken cancellationToken = default(CancellationToken));
-Task<DialogTurnResult> ResumeDialogAsync(DialogContext dc, DialogReason reason, object result = null, CancellationToken cancellationToken = default(CancellationToken));
-Task RepromptDialogAsync(ITurnContext turnContext, DialogInstance instance, CancellationToken cancellationToken = default(CancellationToken));
-Task EndDialogAsync(ITurnContext turnContext, DialogInstance instance, DialogReason reason, CancellationToken cancellationToken = default(CancellationToken));
-
-Task<bool> OnDialogEventAsync(DialogContext dc, DialogEvent e, CancellationToken cancellationToken);
-```
-
-</details>
-
-back to [top](#top)
-
-### <a id="IDialogDependencies"></a>public interface **IDialogDependencies**
-
-<details><summary>"interesting" members</summary>
-
-```csharp
-List<IDialog> ListDependencies();
+List<Dialog> GetDependencies();
 ```
 
 </details>
 
 Implementing classes and interfaces:
 
-- **Microsoft.Bot.Builder.Dialogs.[DialogCommand](#DialogCommand)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[EditSteps](#EditSteps)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[Foreach](#Foreach)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[ForeachPage](#ForeachPage)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[IfCondition](#IfCondition)**
-- **Microsoft.Bot.Builder.Dialogs.Adaptive.Steps.[SwitchCondition](#SwitchCondition)**
-
-Not sure why stuff that derives from **DialogCommand** explicitly implements **IDialogDependencies**. Either only the concrete classes that need it should implement it, or just the abstract base class should implement it, but not both.
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.[BaseInvokeDialog](#BaseInvokeDialog)**
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.[EditActions](#EditActions)**
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.[Foreach](#Foreach)**
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.[ForeachPage](#ForeachPage)**
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.[IfCondition](#IfCondition)**
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.[SwitchCondition](#SwitchCondition)**
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.[OnCondition](#OnCondition)**
 
 back to [top](#top)
 
-### <a id="StoredBotState"></a>[new] public class **StoredBotState**
+### <a id="IItemIdentity"></a>[new] public interface **IItemIdentity**
+
+**Last checked**: 10/01
 
 <details><summary>"interesting" members</summary>
 
 ```csharp
+string GetIdentity();
+```
+
+</details>
+
+Implementing classes:
+
+- **Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.[OnCondition](#OnCondition)**
+
+back to [top](#top)
+
+### <a id="ObjectPath"></a>[new] public static class **ObjectPath**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+private static JsonSerializerSettings cloneSettings = new JsonSerializerSettings() {…};
+private static JsonSerializerSettings expressionCaseSettings = new JsonSerializerSettings {…};
+
+public static bool HasValue(object obj, string pathExpression) {…}
+public static T GetPathValue<T>(object obj, string pathExpression) {…}
+public static T GetPathValue<T>(object obj, string path, T defaultValue) {…}
+public static bool TryGetPathValue<T>(object obj, string pathExpression, out T value) {…}
+public static void SetPathValue(object o, string pathExpression, object value, bool json = true) {…}
+public static void RemovePathValue(object o, string pathExpression) {…}
+
+public static T Clone<T>(T obj) {…}
+public static T Merge<T>(T startObject, T overlayObject) where T : class {…}
+public static T Assign<T>(object startObject, object overlayObject) where T : class {…}
+public static object Assign(object startObject, object overlayObject, Type type) {…}
+```
+
+</details>
+
+- Appears to play a part in reading from and writing to persistable state objects.
+
+back to [top](#top)
+
+### <a id="PersistedState"></a>[new] public class **PersistedState**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public PersistedState() {…}
+public PersistedState(PersistedStateKeys keys, IDictionary<string, object> data) {…}
+
 public IDictionary<string, object> UserState { get; set; }
 public IDictionary<string, object> ConversationState { get; set; }
-public IList<DialogInstance> DialogStack { get; set; }
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="PersistedStateKeys"></a>[new] public class **PersistedStateKeys** : IEnumerable<string>
+
+**Last checked**: 10/01
+
+> These are the keys which are persisted.
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public string UserState { get; set; }
+public string ConversationState { get; set; }
+
+public IEnumerator<string> GetEnumerator() {…}
+IEnumerator IEnumerable.GetEnumerator() {…}
+```
+
+</details>
+
+See also
+
+- [**DialogManager**](DialogManager): **LoadState**, **SaveState**, **GetKeys**, and **GetKeysForReference** methods.
+
+back to [top](#top)
+
+### <a id="ScopePath"></a>[new] public class **ScopePath**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public const string USER = "user";
+public const string CONVERSATION = "conversation";
+public const string DIALOG = "dialog";
+public const string THIS = "this";
+public const string SETTINGS = "settings";
+public const string TURN = "turn";
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="ThisPath"></a>[new] public class **ThisPath**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public const string OPTIONS = "this.options";
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="TurnPath"></a>[new] public class **TurnPath**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public const string LASTRESULT = "turn.lastresult";
+public const string ACTIVITY = "turn.activity";
+public const string RECOGNIZED = "turn.recognized";
+public const string TOPINTENT = "turn.recognized.intent";
+public const string TOPSCORE = "turn.recognized.score";
+public const string INTERRUPTED = "turn.interrupted";
+public const string DIALOGEVENT = "turn.dialogEvent";
+public const string REPEATEDIDS = "turn.repeatedIds";
 ```
 
 </details>
@@ -561,56 +731,69 @@ back to [top](#top)
 
 ### <a id="AdaptiveDialog"></a>public class **AdaptiveDialog** : [DialogContainer](#DialogContainer)
 
+**Last checked**: 10/01
+
+> Models conversation using events to adapt dynamically to changing conversation flow.
+
 <details><summary>"interesting" members</summary>
 
 ```csharp
+public AdaptiveDialog(string dialogId = null, [CallerFilePath] string callerPath = "", [CallerLineNumber] int callerLine = 0)
+    : base(dialogId) {…}
+
 public IStatePropertyAccessor<BotState> BotState { get; set; }
 public IStatePropertyAccessor<Dictionary<string, object>> UserState { get; set; }
 
 public IRecognizer Recognizer { get; set; }
 public ILanguageGenerator Generator { get; set; }
 
-public List<IDialog> Steps { get; set; } = new List<IDialog>();
-public virtual List<IRule> Rules { get; set; } = new List<IRule>();
+public virtual List<OnCondition> Triggers { get; set; } = new List<OnCondition>();
 public bool AutoEndDialog { get; set; } = true;
-public IRuleSelector Selector { get; set; }
-
+public ITriggerSelector Selector { get; set; }
 public string DefaultResultProperty { get; set; } = "dialog.result";
 
-public override IBotTelemetryClient TelemetryClient { get {…} set {…} }
+public DialogSet Dialogs => this._dialogs;
 
-public AdaptiveDialog(string dialogId = null, [CallerFilePath] string callerPath = "", [CallerLineNumber] int callerLine = 0) : base(dialogId) {…}
+public override IBotTelemetryClient TelemetryClient { get {…} set {…} }
 
 public override async Task<DialogTurnResult> BeginDialogAsync(DialogContext dc, object options = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public override async Task<DialogTurnResult> ContinueDialogAsync(DialogContext dc, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public override async Task<DialogTurnResult> ResumeDialogAsync(DialogContext dc, DialogReason reason, object result = null, CancellationToken cancellationToken = default(CancellationToken)) {…}
 public override async Task RepromptDialogAsync(ITurnContext turnContext, DialogInstance instance, CancellationToken cancellationToken = default(CancellationToken)) {…}
 
-protected override async Task<bool> OnPreBubbleEvent(DialogContext dc, DialogEvent dialogEvent, CancellationToken cancellationToken = default(CancellationToken)) {…}
-protected override async Task<bool> OnPostBubbleEvent(DialogContext dc, DialogEvent dialogEvent, CancellationToken cancellationToken = default(CancellationToken)) {…}
-
-protected async Task<bool> ProcessEventAsync(SequenceContext sequenceContext, DialogEvent dialogEvent, bool preBubble, CancellationToken cancellationToken = default(CancellationToken)) {…}
-
-public void AddRule(IRule rule) {…}
-public void AddRules(IEnumerable<IRule> rules) {…}
-
-public void AddDialogs(IEnumerable<IDialog> dialogs) {…}
-
-protected override string OnComputeId() {…}
-private string GetUniqueInstanceId(DialogContext dc) {…}
-
 public override DialogContext CreateChildContext(DialogContext dc) {…}
 
-protected async Task<DialogTurnResult> ContinueStepsAsync(DialogContext dc, object options, CancellationToken cancellationToken) {…}
-protected async Task<bool> EndCurrentStepAsync(SequenceContext sequenceContext, CancellationToken cancellationToken = default(CancellationToken)) {…}
-protected async Task<DialogTurnResult> OnEndOfStepsAsync(SequenceContext sequenceContext, CancellationToken cancellationToken = default(CancellationToken)) {…}
+protected override async Task<bool> OnPreBubbleEvent(DialogContext dc, DialogEvent dialogEvent, CancellationToken cancellationToken = default(CancellationToken)) {…}
+protected override async Task<bool> OnPostBubbleEvent(DialogContext dc, DialogEvent dialogEvent, CancellationToken cancellationToken = default(CancellationToken)) {…}
+protected async Task<bool> ProcessEventAsync(SequenceContext sequenceContext, DialogEvent dialogEvent, bool preBubble, CancellationToken cancellationToken = default(CancellationToken)) {…}
+
+protected override string OnComputeId() {…}
+
+protected async Task<DialogTurnResult> ContinueActionsAsync(DialogContext dc, object options, CancellationToken cancellationToken) {…}
+protected Task<bool> EndCurrentActionAsync(SequenceContext sequenceContext, CancellationToken cancellationToken = default(CancellationToken)) {…}
+protected async Task<DialogTurnResult> OnEndOfActionsAsync(SequenceContext sequenceContext, CancellationToken cancellationToken = default(CancellationToken)) {…}
 protected async Task<RecognizerResult> OnRecognize(SequenceContext sequenceContext, CancellationToken cancellationToken = default(CancellationToken)) {…}
 ```
 
 </details>
 
-- An adaptive dialog has both a UserState dictionary and a BotState object (which has both UserState and ConversationState dictionaries). Why?
-- An adaptive dialog has a Recognizer "for processing incoming user input".
+- An adaptive dialog has properties for **UserState** and **BotState** (which itself has **UserState** and **ConversationState** properties). Why?
+- An adaptive dialog has a Recognizer ([IRecognizer](#IRecognizer)) "for processing incoming user input".
+
+back to [top](#top)
+
+### <a id="AdaptiveEvents"></a>public class **AdaptiveEvents** : [DialogContext](#DialogContext).DialogEvents
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public const string RecognizedIntent = "recognizedIntent";
+public const string UnknownIntent = "unknownIntent";
+public const string SequenceStarted = "stepsStarted";
+public const string SequenceEnded = "stepsEnded";
+```
+
+</details>
 
 back to [top](#top)
 
@@ -660,39 +843,6 @@ protected override bool ShouldInheritState(IDialog dialog) {…}
 
 back to [top](#top)
 
-### <a id="AdaptiveEvents"></a>public class **AdaptiveEvents** : [DialogContext](#DialogContext).DialogEvents
-
-<details><summary>"interesting" members</summary>
-
-```csharp
-public const string RecognizedIntent = "recognizedIntent";
-public const string UnknownIntent = "unknownIntent";
-public const string SequenceStarted = "stepsStarted";
-public const string SequenceEnded = "stepsEnded";
-```
-
-</details>
-
-back to [top](#top)
-
-### <a id="StepState"></a>public class **StepState** : [DialogState](#DialogState)
-
-<details><summary>"interesting" members</summary>
-
-```csharp
-public AdaptiveDialogState() { }
-
-public dynamic Options { get; set; }
-public List<StepState> Steps { get; set; } = new List<StepState>();
-public object Result { get; set; }
-```
-
-</details>
-
-- Not sure if the use of `dynamic` here is a bug. The SDK has actively avoided the use of `dynamic` up to this point.
-
-back to [top](#top)
-
 ### <a id="StepChangeTypes"></a>public enum **StepChangeTypes**
 
 <details><summary>"interesting" members</summary>
@@ -724,6 +874,24 @@ public Dictionary<string, object> Turn { get; set; }
 ```
 
 </details>
+
+back to [top](#top)
+
+### <a id="StepState"></a>public class **StepState** : [DialogState](#DialogState)
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public AdaptiveDialogState() { }
+
+public dynamic Options { get; set; }
+public List<StepState> Steps { get; set; } = new List<StepState>();
+public object Result { get; set; }
+```
+
+</details>
+
+- Not sure if the use of `dynamic` here is a bug. The SDK has actively avoided the use of `dynamic` up to this point.
 
 back to [top](#top)
 
@@ -1048,6 +1216,148 @@ public class ForeachPageOptions
   - Appears to work on a _page_ of values at a time?
   - Not sure where the missing logic is that makes this an actual loop or checks whether to continue.
   - The **ListProperty** seems to contain some meaningful expression the [**ExpressionEngine**](#ExpressionEngine) can parse.
+
+back to [top](#top)
+
+## <a id="ns-dialogs-memory"></a>[new] Microsoft.Bot.Builder.Dialogs.Memory
+
+### <a id="DialogStateManager"></a>public class **DialogStateManager** : IDictionary<string, object>
+
+**Last checked**: 10/01
+
+> The DialogStateManager manages memory scopes and path resolvers.
+> Memory scopes are named root level objects, which can exist either in the [**Dialogcontext**](#Dialogcontext) or off of turn state.
+> Path resolvers allow for shortcut behavior for mapping things like `$foo -> dialog.foo`.
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+private readonly DialogContext dialogContext;
+
+public DialogStateManager(DialogContext dc) {…}
+
+public static List<IPathResolver> PathResolvers { get; private set; } = new List<IPathResolver>() {…};
+public static List<MemoryScope> MemoryScopes { get; private set; } = new List<MemoryScope>() {…};
+
+public ICollection<string> Keys => MemoryScopes.Select(ms => ms.Name).ToList();
+public ICollection<object> Values => MemoryScopes.Select(ms => ms.GetMemory(this.dialogContext)).ToList();
+public int Count => MemoryScopes.Count;
+public bool IsReadOnly => true;
+public object this[string key] { get {…} set {…} }
+
+public static MemoryScope GetMemoryScope(string name) {…}
+public virtual MemoryScope ResolveMemoryScope(ref string path) {…}
+
+public virtual string TransformPath(string path) {…}
+
+public bool TryGetValue<T>(string path, out T value) {…}
+public T GetValue<T>(string pathExpression, Func<T> defaultValue = null) {…}
+public int GetIntValue(string pathExpression, int defaultValue = 0) {…}
+public bool GetBoolValue(string pathExpression, bool defaultValue = false) {…}
+public void SetValue(string path, object value) {…}
+public void RemoveValue(string path) {…}
+
+public JObject GetMemorySnapshot() {…}
+
+public void Add(string key, object value) {…}
+public void Add(KeyValuePair<string, object> item) {…}
+public bool ContainsKey(string key) {…}
+public bool Contains(KeyValuePair<string, object> item) {…}
+public bool TryGetValue(string key, out object value) {…}
+public bool Remove(string key) {…}
+public bool Remove(KeyValuePair<string, object> item) {…}
+public void Clear() {…}
+public void CopyTo(KeyValuePair<string, object>[] array, int arrayIndex) {…}
+
+public IEnumerator<KeyValuePair<string, object>> GetEnumerator() {…}
+IEnumerator IEnumerable.GetEnumerator() {…}
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="IPathResolver"></a>public interface **IPathResolver**
+
+**Last checked**: 10/01
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+string TransformPath(string path);
+```
+
+</details>
+
+back to [top](#top)
+
+## <a id="ns-dialogs-memory-scopes"></a>[new] Microsoft.Bot.Builder.Dialogs.Memory.Scopes
+
+### <a id="DialogMemoryScope"></a>public class **DialogMemoryScope** : [MemoryScope](#MemoryScope)
+
+**Last checked**: 10/01
+
+> **DialogMemoryScope** maps "dialog" -> `dc.Parent?.ActiveDialog.State ?? ActiveDialog.State`.
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public DialogMemoryScope() : base(ScopePath.DIALOG) {…}
+
+public override object GetMemory(DialogContext dc) {…}
+public override void SetMemory(DialogContext dc, object memory) {…}
+```
+
+</details>
+
+back to [top](#top)
+
+### <a id="MemoryScope"></a>public class **MemoryScope**
+
+**Last checked**: 10/01
+
+> **MemoryScope** represents a named memory scope stored in turn state under "MemoryScopes".
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+private const string MEMORYSCOPESKEY = "MemoryScopes";
+
+public MemoryScope(string name) {…}
+
+public string Name { get; set; }
+
+public virtual object GetMemory(DialogContext dc) {…}
+public virtual void SetMemory(DialogContext dc, object memory) {…}
+
+internal static Dictionary<string, object> GetScopesMemory(ITurnContext context) {…}
+```
+
+</details>
+
+Derived classes:
+
+- Microsoft.Bot.Builder.Dialogs.Memory.Scopes.[DialogMemoryScope](#DialogMemoryScope)
+- Microsoft.Bot.Builder.Dialogs.Memory.Scopes.[ThisMemoryScope](#ThisMemoryScope)
+
+back to [top](#top)
+
+### <a id="ThisMemoryScope"></a>public class **ThisMemoryScope** : [MemoryScope](#MemoryScope)
+
+**Last checked**: 10/01
+
+> **ThisMemoryScope** maps "dialog" -> `dc.ActiveDialog.State`.
+
+<details><summary>"interesting" members</summary>
+
+```csharp
+public ThisMemoryScope() : base(ScopePath.THIS) {…}
+
+public override object GetMemory(DialogContext dc) {…}
+public override void SetMemory(DialogContext dc, object memory) {…}
+```
+
+</details>
 
 back to [top](#top)
 

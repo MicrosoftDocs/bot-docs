@@ -408,24 +408,24 @@ Teams behaves somewhat differently than other channels in regards to OAuth and r
  
 One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity. 
 
-# [C#](#tab/csharp)
-**Bots/TeamsBot.cs**
+# [C#](#tab/csharp)  
+**Bots/TeamsBot.cs**  
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
-# [JavaScript](#tab/javascript)
-**bots/teamsBot.js**
+# [JavaScript](#tab/javascript)  
+**bots/teamsBot.js**  
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=27-32&highlight=3)]
 
 ---
 
 If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file. 
 
-# [C#](#tab/csharp)
-**Bots/DialogBot.cs**
+# [C#](#tab/csharp)  
+**Bots/DialogBot.cs**  
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=18)]
 
-# [JavaScript](#tab/javascript)
-**Bots/dialogBot.js**
+# [JavaScript](#tab/javascript)  
+**Bots/dialogBot.js**  
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=4-6)]
 
 ---

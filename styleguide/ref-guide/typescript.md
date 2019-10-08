@@ -223,11 +223,13 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### @returns
 
+Currently, the doc build does not include a description along with the return value.
+
+However, if a value is returned, make sure to describe it in the @remarks section.
+
 | Element | Wording |
 | :--- | :--- |
-| void |  |
-| null or undefined |  |
-| never |  |
+| void, null, undefined, or never or a Promise for any of these |  |
 | this | For _cascading/fluent_ semantics, use:<br/>A reference to the \<_whatever_> object. |
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
