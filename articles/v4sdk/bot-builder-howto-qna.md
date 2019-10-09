@@ -120,6 +120,7 @@ In our sample the code for the bot logic is in a **QnABot.js** file.
 In the **QnABot.js** file, we use the connection information provided by your .env file to establish a connection to the QnA Maker service: _this.qnaMaker_.
 
 **QnAMaker.js**
+
 [!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=19-23)]
 
 
@@ -139,6 +140,7 @@ When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your 
 In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `getAnswers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message 'No QnA Maker answers were found.' 
 
 **QnABot.js**
+
 [!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=43-59)]
 
 ---
