@@ -121,7 +121,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 **QnAMaker.js**
 
-[!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=19-23)]
+[!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
 
 
 ---
