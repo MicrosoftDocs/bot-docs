@@ -44,9 +44,9 @@
 
 ### dialog state
 
-1. Represents all state information for a specific [dialog](#dialog).
-1. An entry in the [dialog stack](#dialog-stack).
-1. [In terms of a [state machine (wikipedia)](https://en.wikipedia.org/wiki/Finite-state_machine)]: The current state of a dialog.
+1. Represents all state information for a specific [dialog set](#dialog-set).
+1. Represents the [dialog stack](#dialog-stack).
+1. [In terms of a [state machine (wikipedia)](https://en.wikipedia.org/wiki/Finite-state_machine)]: The current state of a dialog [set].
 
 ### _dialog state_ class
 

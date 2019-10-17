@@ -350,9 +350,7 @@ public const string ActivityReceived = "activityReceived";
 public const string Error = "error";
 ```
 
-public DialogManager(Dialog rootDialog = null) {…}
-
-public Dialog RootDialog { get {…} set {…} }
+</details>
 
 ### <a id="DialogInstance"></a>[updated] public class **DialogInstance**
 

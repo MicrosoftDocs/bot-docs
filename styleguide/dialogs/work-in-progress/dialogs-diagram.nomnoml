@@ -9,14 +9,49 @@
 #padding: 12
 #spacing: 20
 #fill: #def; #acf
-#ranker: longest-path
+#ranker: network-simplex
 
 #.interface: italic
 #.enum: italic bold
 
-[DialogState|
-	DialogStack: List<DialogInstance>
-]
+[DialogSet |
+	_dialogState: IStatePropertyAccessor<DialogState>;
+	_dialogs: IDictionary<string,Dialog>;
+    _telemetryClient: IBotTelemetryClient |
+    Add(dialog: Dialog);
+    CreateContext(turnContext: ITurnContext): DialogContext;
+    Find(id: string): Dialog;
+    GetDialogs(): IEnumerable<Dialog>
+	]
+
+[<abstract> Dialog |
+    Id: string;
+    _telemetryClient: IBotTelemetryClient |
+    BeginDialog(dc: DialogContext, options: object): DialogTurnResult;
+    ContinueDialog(dc: DialogContext): DialogTurnResult;
+    ResumeDialog(dc: DialogContext, reason: DialogReason, result: object): DialogTurnResult;
+    RepromptDialog(turnContext: ITurnContext, instance: DialogInstance);
+    EndDialog(turnContext: ITurnContext, instance: DialogInstance);
+    OnDialogEvent(dc: DialogContext, e: DialogEvent): bool
+    ]
+
+[DialogContext |
+	Dialogs: DialogSet;
+    Context: ITurnContext;
+    Stack: List<DialogInstance>;
+    Parent: DialogContext;
+    Child: DialogContext;
+    ActiveDialog: DialogInstance |
+    BeginDialog(dialogId: string, options: object): DialogTurnResult;
+    Prompt(dialogId: string, options: PromptOptions): DialogTurnResult;
+    ContinueDialog(): DialogTurnResult;
+    EndDialog(result: object): DialogTurnResult;
+    CancelAllDialogs(): DialogTurnResult;
+    ReplaceDialog(dialogId: string, options: object): DialogTurnResult;
+    RepromptDialog();
+    EmitEvent(name: string, value: object, bubble: bool, fromLeaf: bool): bool;
+    FindDialog(dialogId: string): Dialog
+    ]
 
 [<interface> ITurnContext |
 	Adapter: BotAdapter;
@@ -25,41 +60,14 @@
     Responded: bool
     ]
 
-[DialogSet |
-	_dialogState: IStatePropertyAccessor<DialogState>;
-	_dialogs: IDictionary<string,Dialog> |
-    Add(dialog: Dialog);
-    CreateContext(turnContext: ITurnContext): DialogContext;
-    Find(id: string): Dialog
-	]
-
-[<abstract> Dialog |
-    Id: string |
-    BeginDialog(dc: DialogContext, options: object): DialogTurnResult;
-    ContinueDialog(dc: DialogContext): DialogTurnResult;
-    ResumeDialog(dc: DialogContext, reason: DialogReason, result: object): DialogTurnResult;
-    RepromptDialog(turnContext: ITurnContext, instance: DialogInstance);
-    EndDialog(turnContext: ITurnContext, instance: DialogInstance)
-    ]
-
-[DialogContext |
-	Dialogs: DialogSet;
-    Context: ITurnContext;
-    Stack: List<DialogInstance>;
-    Parent: DialogContext;
-    ActiveDialog: DialogInstance |
-    BeginDialog(dialogId: string, options: object): DialogTurnResult;
-    Prompt(dialogId: string, options: PromptOptions): DialogTurnResult;
-    ContinueDialog(): DialogTurnResult;
-    EndDialog(result: object): DialogTurnResult;
-    CancelAllDialogs(): DialogTurnResult;
-    ReplaceDialog(dialogId: string, options: object): DialogTurnResult;
-    FindDialog(dialogId: string): Dialog
-    ]
+[DialogState|
+	DialogStack: List<DialogInstance>
+]
 
 [DialogInstance |
 	Id: string;
-    State: IDictionary<string, object>
+    State: IDictionary<string, object>;
+    StackIndex: int?
     ]
 
 [<enum> DialogReason|
@@ -69,20 +77,23 @@
 
 [DialogTurnResult |
 	Status: DialogTurnStatus;
-    Result: object
+    Result: object;
+    ParentEnded: bool
     ]
 
 [<enum> DialogTurnStatus|
 	Empty;Waiting;Complete;Cancelled
 ]
 
-[DialogState]-->[ITurnContext]
-[DialogState]<-[DialogSet]
-[DialogSet]o->[Dialog]
-[DialogContext]->[ITurnContext]
-[DialogContext]-->[DialogContext]
-[DialogContext]->[DialogSet]
+[DialogReason]-->[Dialog]
+[DialogReason]-->[DialogContext]
+[DialogSet]+->[Dialog]
+[DialogSet]-[DialogContext]
+[ITurnContext]-->[DialogState]
+[DialogContext]-[ITurnContext]
 [DialogContext]o->[DialogInstance]
-[DialogContext]-->[DialogState]
-[DialogInstance]->[Dialog]
+[DialogContext]o->[DialogContext]
+[DialogContext]-->[DialogTurnResult]
+[DialogState]+->[DialogInstance]
+[DialogInstance]-->[DialogSet]
 [DialogTurnResult]->[DialogTurnStatus]
