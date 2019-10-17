@@ -18,8 +18,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 Telemetry logging was added to version 4.2 of the Bot Framework SDK.  This enables bot applications to send event data to telemetry services such as [Application Insights](https://aka.ms/appinsights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior and offers visibility into availability, performance, and usage.
 
-***Note: In version 4.6, the standard method for implementing telemetry into a bot has been updated in order to ensure telemetry is logged correctly when using a custom adapter. This article has been updated to show the updated method. The changes are backwards compatible and bots using the previous method will continue to log telemetry correctly.***
-
 
 In this article you will learn how to implement telemetry into your bot using Application Insights:
 
@@ -71,33 +69,46 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
     public void ConfigureServices(IServiceCollection services)
     {
         ...
+
         // Create the Bot Framework Adapter with error handling enabled.
         services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
 
         // Add Application Insights services into service collection
         services.AddApplicationInsightsTelemetry();
 
-        // Add the standard telemetry client
+        // Create the telemetry client.
         services.AddSingleton<IBotTelemetryClient, BotTelemetryClient>();
 
-        // Create the telemetry middleware to track conversation events
-        services.AddSingleton<TelemetryLoggerMiddleware>();
+        // Add ASP middleware to store the http body mapped with bot activity key in the httpcontext.items. This will be picked by the TelemetryBotIdInitializer
+        services.AddTransient<TelemetrySaveBodyASPMiddleware>();
 
-        // Add the telemetry initializer middleware
-        services.AddSingleton<IMiddleware, TelemetryInitializerMiddleware>();
-
-        // Add telemetry initializer that will set the correlation context for all telemetry items
+        // Add telemetry initializer that will set the correlation context for all telemetry items.
         services.AddSingleton<ITelemetryInitializer, OperationCorrelationTelemetryInitializer>();
 
-        // Add telemetry initializer that sets the user ID and session ID (in addition to other bot-specific properties, such as activity ID)
+        // Add telemetry initializer that sets the user ID and session ID (in addition to other bot-specific properties such as activity ID)
         services.AddSingleton<ITelemetryInitializer, TelemetryBotIdInitializer>();
+
+        // Create the telemetry middleware to track conversation events
+        services.AddSingleton<IMiddleware, TelemetryLoggerMiddleware>();
+
         ...
     }
     ```
     
     Note: If your following along by updating the CoreBot sample code you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists 
 
-5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter IMiddleware middleware in the constructors parameter list, and the `Use(middleware);` statement in the contructor as shown here:
+5. Add the `UseBotApplicationInsights()` method call in the `Configure()` method in `Startup.cs`. This enables your bot to store the required bot-specific properties in the HTTP context so it can be retrieved by the telemetry initializer when an event is tracked:
+
+    ```csharp
+    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        ...
+
+        app.UseBotApplicationInsights();
+    }
+    ```
+6. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter IMiddleware middleware in the constructors parameter list, and the `Use(middleware);` statement in the contructor as shown here:
     ```csharp
     public AdapterWithErrorHandler(ICredentialProvider credentialProvider, ILogger<BotFrameworkHttpAdapter> logger, IMiddleware middleware, ConversationState conversationState = null)
             : base(credentialProvider)
@@ -107,7 +118,6 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
         Use(middleware);
     }
     ```
-
 7. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
@@ -122,45 +132,6 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
     Note: Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
 At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information. 
-
-## Enabling / disabling activity event and personal information logging
-
-### Enabling or disabling Activity logging
-
-By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receieves activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disbale activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` before registering it within **Startup.cs**.
-
-```cs
-public void ConfigureServices(IServiceCollection services)
-{
-    ...
-    // Add the telemetry initializer middleware
-    services.AddSingleton<IMiddleware, TelemetryInitializerMiddleware>(sp =>
-            {
-                var httpContextAccessor = sp.GetService<IHttpContextAccessor>();
-                var loggerMiddleware = sp.GetService<TelemetryLoggerMiddleware>();
-                return new TelemetryInitializerMiddleware(httpContextAccessor, loggerMiddleware, logActivityTelemetry: false);
-            });
-    ...
-}
-```
-
-### Enable or disable logging personal information
-
-By default, if activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by making the following change to **Startup.cs** when registering the `TelemetryLoggerMiddleware`.
-
-```cs
-public void ConfigureServices(IServiceCollection services)
-{
-    ...
-    // Add the telemetry initializer middleware
-    services.AddSingleton<TelemetryLoggerMiddleware>(sp =>
-            {
-                var telemetryClient = sp.GetService<IBotTelemetryClient>();
-                return new TelemetryLoggerMiddleware(telemetryClient, logPersonalInformation: true);
-            });
-    ...
-}
-```
 
 Next we will see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
 
