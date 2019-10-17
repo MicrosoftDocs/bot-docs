@@ -317,6 +317,9 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 ---
 
+> [!NOTE]
+> By default the `includeApiResults` parameter is set to false, meaning the recognizer will only return basic information about entities / intents. If you require the full response from LUIS (such as the `ConnectedServiceResult` used later in this tutorial), then set this parameter to true. This will then add the full response from the LUIS service into the Properties collection on the `RecognizerResult`.
+
 ### Call the services from your bot
 
 For each input  from your user, the bot logic checks user input against the combined Dispatch model, finds the top returned intent, and uses that information to call the appropriate service for the input.
