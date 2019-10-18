@@ -66,7 +66,7 @@ We'll create a state property for `DialogState`, which we now need for dialog su
 
 In **Startup.cs**:
 
-1. Update the `using` statements:
+1. Update the `using` directives:
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Startup.cs?range=4-13)]
 
 1. Remove this constructor:
@@ -101,7 +101,7 @@ In v4, the turn handler or message loop logic is primarily in a bot file. We're 
 
 1. Update the **Bots\DialogBots.cs** file.
 
-1. Update the `using` statements:
+1. Update the `using` directives:
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=4-8)]
 
 1. Update `DialogBot` to include a generic parameter for the dialog.
@@ -183,7 +183,7 @@ In this bot, the root dialog prompts the user for a choice from a set of options
 
 In the **Dialogs/RootDialog.cs** file:
 
-1. Update the `using` statements:
+1. Update the `using` directives:
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/RootDialog.cs?range=4-10)]
 
 1. We need to convert `HelpdeskOptions` options from a list of strings to a list of choices. This will be used with a choice prompt, which will accept the choice number (in the list), the choice value, or any of the choice's synonyms as valid input.
@@ -232,7 +232,7 @@ The install app dialog performs a few logical tasks, which we'll set up as a 4-s
 
 In the **Dialogs/InstallAppDialog.cs** file:
 
-1. Update the `using` statements:
+1. Update the `using` directives:
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/InstallAppDialog.cs?range=4-11)]
 
 1. Define a constant for the key we'll use to track collected information.
@@ -272,7 +272,7 @@ In the **Dialogs/InstallAppDialog.cs** file:
 
 In v3, this dialog greeted the user, started the Formflow dialog, and then saved the result off to a database. This translates easily into a two-step waterfall.
 
-1. Update the `using` statements. Note that this dialog includes a v3 Formflow dialog. In v4 we can use the community Formflow library.
+1. Update the `using` directives. Note that this dialog includes a v3 Formflow dialog. In v4 we can use the community Formflow library.
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/LocalAdminDialog.cs?range=4-8)]
 
 1. We can remove the instance property for `LocalAdmin`, as the result will be available in dialog state.
@@ -293,7 +293,7 @@ In v3, this dialog greeted the user, started the Formflow dialog, and then saved
 
 In v3, this dialog greeted the user, authorized the user with a pass code, failed out or started the Formflow dialog, and then reset the password. This still translates well into a waterfall.
 
-1. Update the `using` statements. Note that this dialog includes a v3 Formflow dialog. In v4 we can use the community Formflow library.
+1. Update the `using` directives. Note that this dialog includes a v3 Formflow dialog. In v4 we can use the community Formflow library.
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/ResetPasswordDialog.cs?range=4-9)]
 
 1. Add a constructor and initialize the component's dialog set. The Formflow dialog is created in the same way. We're just adding it to the dialog set of our component in the constructor.
@@ -321,9 +321,9 @@ You can use the same v3 models with the v4 community form flow library.
     - **ResetPassword.cs**
     - **ResetPasswordPrompt.cs**
 
-### Update using statements
+### Update using directives
 
-We need to update `using` statements in the model classes as shown next.
+We need to update `using` directives in the model classes as shown next.
 
 1. In **InstallApps.cs** change them to this:
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/InstallApp.cs?range=4-5)]
