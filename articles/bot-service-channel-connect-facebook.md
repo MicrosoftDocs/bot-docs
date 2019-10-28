@@ -6,7 +6,7 @@ manager: kamrani
 ms.topic: article
 ms.author: kamrani
 ms.service: bot-service
-ms.date: 08/03/2019
+ms.date: 10/28/2019
 ---
 
 # Connect a bot to Facebook
@@ -17,6 +17,9 @@ Your bot can be connected to both Facebook Messenger and Facebook Workplace, so 
 > The Facebook UI may appear slightly different depending on which version you are using.
 
 ## Connect a bot to Facebook Messenger
+
+> [!NOTE]
+> Starting December 16, 2019, Workplace by Facebook is changing security model for custom integrations.  Current integrations built with Microsoft Bot Framework need to be updated to use Bot Framework Adapter (available in JavaScript/Node.js) and deployed using a Web App on Azure.  New Workplace bots that are developed using Microsoft Bot Framework should also use the JavaScript Facebook adapter. Learn more about [using Facebook adapter](https://aka.ms/botframework-workplace-adapter). Instructions below will work only until December 16, 2019.
 
 To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). You may wish to review Facebook's [pre-launch guidelines](https://developers.facebook.com/docs/messenger-platform/product-overview/launch#app_public), [quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start), and [setup guide](https://developers.facebook.com/docs/messenger-platform/guides/setup).
 

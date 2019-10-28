@@ -19,7 +19,7 @@
 	_dialogs: IDictionary<string,Dialog>;
     _telemetryClient: IBotTelemetryClient |
     Add(dialog: Dialog);
-    CreateContext(turnContext: ITurnContext): DialogContext;
+    CreateContext(ITurnContext): DialogContext;
     Find(id: string): Dialog;
     GetDialogs(): IEnumerable<Dialog>
 	]
@@ -27,12 +27,12 @@
 [<abstract> Dialog |
     Id: string;
     _telemetryClient: IBotTelemetryClient |
-    BeginDialog(dc: DialogContext, options: object): DialogTurnResult;
-    ContinueDialog(dc: DialogContext): DialogTurnResult;
-    ResumeDialog(dc: DialogContext, reason: DialogReason, result: object): DialogTurnResult;
-    RepromptDialog(turnContext: ITurnContext, instance: DialogInstance);
-    EndDialog(turnContext: ITurnContext, instance: DialogInstance);
-    OnDialogEvent(dc: DialogContext, e: DialogEvent): bool
+    BeginDialog(DialogContext, object): DialogTurnResult;
+    ContinueDialog(DialogContext): DialogTurnResult;
+    ResumeDialog(DialogContext, DialogReason, object): DialogTurnResult;
+    RepromptDialog(ITurnContext, DialogInstance);
+    EndDialog(ITurnContext, DialogInstance);
+    OnDialogEvent(DialogContext, DialogEvent): bool
     ]
 
 [DialogContext |
@@ -42,15 +42,15 @@
     Parent: DialogContext;
     Child: DialogContext;
     ActiveDialog: DialogInstance |
-    BeginDialog(dialogId: string, options: object): DialogTurnResult;
-    Prompt(dialogId: string, options: PromptOptions): DialogTurnResult;
+    BeginDialog(string, object): DialogTurnResult;
+    Prompt(string, PromptOptions): DialogTurnResult;
     ContinueDialog(): DialogTurnResult;
-    EndDialog(result: object): DialogTurnResult;
+    EndDialog(object): DialogTurnResult;
     CancelAllDialogs(): DialogTurnResult;
-    ReplaceDialog(dialogId: string, options: object): DialogTurnResult;
+    ReplaceDialog(string, object): DialogTurnResult;
     RepromptDialog();
-    EmitEvent(name: string, value: object, bubble: bool, fromLeaf: bool): bool;
-    FindDialog(dialogId: string): Dialog
+    EmitEvent(string, object, bool, bool): bool;
+    FindDialog(string): Dialog
     ]
 
 [<interface> ITurnContext |
