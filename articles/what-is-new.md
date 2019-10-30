@@ -158,7 +158,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 [Speech Services](https://docs.microsoft.com/azure/cognitive-services/speech-service/) convert audio to text, perform speech translation and text-to-speech with the unified Speech services. With the speech services, you can integrate speech into your bot, create custom wake words, and author in multiple languages.
 
 ### Adaptive Cards
-[Adaptive Cards](https://adaptivecards.io) are an open standard for developers to exchange card content in a common and consistent way, and are used by Bot Framework developers to create great cross-channel conversatational experiences.
+[Adaptive Cards](https://adaptivecards.io) are an open standard for developers to exchange card content in a common and consistent way, and are used by Bot Framework developers to create great cross-channel conversational experiences.
 
 ## Additional information
 - Visit GitHub page for more [information](https://github.com/Microsoft/botframework/blob/master/whats-new.md#whats-new).
