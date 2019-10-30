@@ -44,7 +44,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 <a name="V4-whats-new"></a>
 ## Bot Framework SDK (New! In preview)
 
-- [Adaptive Dialog][47] | [docs][48] | [C# samples][49]: Adaptive Dialogs enable developers to build conversations that can be dynamically changed as the conversation progresses.  Traditionally developers have mapped out the entire flow of a conversation up front, which limits the flexibility of the conversation.  Adaptive dialogs allow them to be more flexible, to respond to changes in context and insert new steps or entire sub-dialogs into the conversation as it progresses. 
+- [Adaptive Dialog][47] | [docs][48] | [C# samples][49]: Adaptive Dialogs enable developers to build conversations that can be dynamically changed as the conversation progresses.  Traditionally developers have mapped out the entire flow of a conversation upfront, which limits the flexibility of the conversation.  Adaptive dialogs allow them to be more flexible, to respond to changes in context and insert new steps or entire sub-dialogs into the conversation as it progresses. 
 
 - [Language Generation][43] | [docs][44] | [C# samples][45]: Language Generation; which allows the developer to extract the embedded strings from their code and resource files and manage them through a Language Generation runtime and file format.  Language Generation enable customers to define multiple variations on a phrase, execute simple expressions based on context, refer to conversational memory, and over time will enable us to bring additional capabilities all leading to a more natural conversational experience.
 
