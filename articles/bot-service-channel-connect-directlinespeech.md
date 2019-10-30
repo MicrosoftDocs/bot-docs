@@ -65,10 +65,6 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 
 With the Direct Line Speech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](https://aka.ms/botframework/addstreamingprotocolsupport) to ensure full compatibility with Direct Line Speech.
 
-## FAQ
-1. Can I use a single cogntiive services resources for more than 1 direct line channel registration?
-  Ans: No, there is one-to-one mapping between DLS channel registrationa and cognitive service resource so so a cognitive service account can't be used for more than 1 DLS channel registration.
-
 ## Known Issues
 
 Note that the service is in preview and subject to change, which may affect your bot development and overall performance. Here is a list of known issues: 
