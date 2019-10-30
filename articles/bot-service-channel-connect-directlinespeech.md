@@ -31,7 +31,7 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 
     ![selecting direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-connectspeechchannel.png "connecting Direct Line Speech")
 
-1. Direct line speech channel requires a Cognitive Services resource. You can either use an existing resource or create a new Cognitive Services resource following the [instructions](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account). 
+1. Direct Line Speech Channel requires a Cognitive Services resource. You can either use an existing resource or create a new Cognitive Services resource following the [instructions](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account). 
 
     ![selecting direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cogntive Services resource")
 
