@@ -144,8 +144,8 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 <a name="QnA-whats-new"></a>
 
-- **New! Extraction pipeline**: Now you can extract hierarchical information from URLs, files and sharepoint
-- **New! Intelligence**: Contextual ranking models, active learning suggestions
+- **New! Extraction pipeline**: Now you can extract hierarchical information from URLs, files and SharePoint.
+- **New! Intelligence**: Contextual ranking models, active learning suggestions.
 - **New! Conversation**: Multi-turn conversations in QnA Maker.
 
 [Docs][34]  | [add qnamaker to your bot][35] 
