@@ -18,9 +18,6 @@ Your bot can be connected to both Facebook Messenger and Facebook Workplace, so 
 
 ## Connect a bot to Facebook Messenger
 
-> [!NOTE]
-> Starting December 16, 2019, Workplace by Facebook is changing security model for custom integrations.  Current integrations built with Microsoft Bot Framework need to be updated to use Bot Framework Adapter (available in JavaScript/Node.js) and deployed using a Web App on Azure.  New Workplace bots that are developed using Microsoft Bot Framework should also use the JavaScript Facebook adapter. Learn more about [using Facebook adapter](https://aka.ms/botframework-workplace-adapter). Instructions below will work only until December 16, 2019.
-
 To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). You may wish to review Facebook's [pre-launch guidelines](https://developers.facebook.com/docs/messenger-platform/product-overview/launch#app_public), [quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start), and [setup guide](https://developers.facebook.com/docs/messenger-platform/guides/setup).
 
 To configure a bot to communicate using Facebook Messenger, enable Facebook Messenger on a Facebook page and then connect the bot.
@@ -128,6 +125,9 @@ After the review is successful, in the App Dashboard under App Review, set the a
 Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
 
 ## Connect a bot to Facebook Workplace
+
+> [!NOTE]
+> Starting December 16, 2019, Workplace by Facebook is changing security model for custom integrations.  Current integrations built using Microsoft Bot Framework v4 on JavaScript/Node.js need to be updated to use the Bot Framework [Facebook for Workplace Adapter](https://aka.ms/botframework-workplace-adapter) and deployed using Azure Web App to continue working past that date. New Microsoft Bot Framework bots that are targeting Workplace should also be developed using that adapter.
 
 Facebook Workplace is a business-oriented version of Facebook, which allows employees to easily connect and collaborate. It contains live videos, news feeds, groups, messenger, reactions, search, and trending posts. It also supports:
 

@@ -121,9 +121,9 @@ references:
 - uid: Xunit.Abstractions.IXunitSerializationInfo
   fullName: Xunit.Abstractions.IXunitSerializationInfo
   name: IXunitSerializationInfo
-- uid: Xunit.Abstractions.IXunitSerializationInfo.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
-  fullName: Xunit.Abstractions.IXunitSerializationInfo.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
-  name: IXunitSerializationInfo.Deserialize(IXunitSerializationInfo)
-- uid: Xunit.Abstractions.IXunitSerializationInfo.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
-  fullName: Xunit.Abstractions.IXunitSerializationInfo.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
-  name: IXunitSerializationInfo.Serialize(IXunitSerializationInfo)
+- uid: Xunit.Abstractions.IXunitSerializable.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
+  fullName: Xunit.Abstractions.IXunitSerializable.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
+  name: IXunitSerializable.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
+- uid: Xunit.Abstractions.IXunitSerializable.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
+  fullName: Xunit.Abstractions.IXunitSerializable.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
+  name: IXunitSerializable.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
