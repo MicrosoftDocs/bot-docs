@@ -6,11 +6,11 @@ ms.author: darrenj
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 11/01/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-## Custom Assistant Overview
+# Custom Assistant Overview
 
 ## Overview
 

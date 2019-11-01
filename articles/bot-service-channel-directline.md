@@ -7,11 +7,11 @@ author: ivorb
 manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 11/01/2019
 ms.author: kamrani
 ---
 
-## About Direct Line
+# About Direct Line
 
 The Bot Framework Direct Line channel is an easy way to integrate your bot into your mobile app, webpage, or other application.
 Direct Line is available in three forms:

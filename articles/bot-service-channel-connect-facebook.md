@@ -129,6 +129,9 @@ Ensure that the Facebook Page associated with this bot is published. Status appe
 
 ## Connect a bot to Facebook Workplace
 
+> [!NOTE]
+> Starting December 16, 2019, Workplace by Facebook is changing security model for custom integrations.  Current integrations built using Microsoft Bot Framework v4 on JavaScript/Node.js need to be updated to use the Bot Framework [Facebook for Workplace Adapter](https://aka.ms/botframework-workplace-adapter) and deployed using Azure Web App to continue working past that date. New Microsoft Bot Framework bots that are targeting Workplace should also be developed using that adapter.
+
 Facebook Workplace is a business-oriented version of Facebook, which allows employees to easily connect and collaborate. It contains live videos, news feeds, groups, messenger, reactions, search, and trending posts. It also supports:
 
 - Analytics and integrations. A dashboard with analytics, integration, single sign-on, and identity providers that companies use to integrate Workplace with their existing IT systems.
