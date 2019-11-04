@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2019
+ms.date: 11/04/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -32,7 +32,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 [2]:https://github.com/Microsoft/botbuilder-js#packages
 [3]:https://github.com/Microsoft/botbuilder-python#packages
 [3a]:https://github.com/Microsoft/botbuilder-java#packages
-[5]:https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0
+[5]:https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0
 [6]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
 [7]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs
 [8]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/typescript_nodejs
@@ -43,9 +43,13 @@ This article summarizes key new features and improvements in Bot Framework and A
 The Bot Framework SDK v4.6 release fully integrates support for building Teams bots allowing users to use them in channel or group chat conversations. By adding a bot to a team or chat, all users of the conversation can take advantage of the bot functionality right in the conversation.  [[Docs](https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams)]
 
 #### Bot Framework for Power Virtual Agent (Preview)
-Power Virtual Agent is designed to enable business users to create bots within a UI-based bot building SaaS experience, without having to code or manage specific AI services. Power Virtual Agents can be extended with the Microsoft Bot Framework, allowing developers and business users to collaborate in building bots for their organizations. [[Docs](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-virtual-agent/overview)]
 
-#### Bot Framework SDK for Skills (GA)
+Power Virtual Agent is designed to enable business users to create bots within a UI-based bot building SaaS experience, without having to code or manage specific AI services. 
+Power Virtual Agents can be extended with the Microsoft Bot Framework, allowing developers and business users to collaborate in building bots for their 
+organizations. [[Docs](https://docs.microsoft.com/dynamics365/ai/customer-service-virtual-agent/overview)]
+
+
+#### Bot Framework SDK for Skills (Preview)
 
 - **Skills for bots**: Create reusable conversational skills to add functionality to a bot. Leverage pre-built skills, such as Calendar, Email, Task, Point of Interest, Automotive, Weather and News skills. Skills include language models, dialogs, QnA, and integration code delivered to customize and extend as required. [[Docs](https://microsoft.github.io/botframework-solutions/overview/skills/)]
 

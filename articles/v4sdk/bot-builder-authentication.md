@@ -5,13 +5,11 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/22/2019
+ms.date: 11/04/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 <!-- 
-
-ms.author: kamrani
 
 Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
@@ -168,7 +166,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 #### Azure AD v1
 
-1. Navigate to your bot's resource page on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's resource page on the [Azure Portal](https://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -197,7 +195,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 #### Azure AD v2
 
-1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](https://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -434,7 +432,7 @@ Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActi
 The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
 
 > [!NOTE]
-> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
+> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
 
 ### Further reading
 
