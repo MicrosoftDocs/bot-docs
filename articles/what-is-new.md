@@ -49,7 +49,7 @@ Power Virtual Agents can be extended with the Microsoft Bot Framework, allowing 
 organizations. [[Docs](https://docs.microsoft.com/dynamics365/ai/customer-service-virtual-agent/overview)]
 
 
-#### Bot Framework SDK for Skills (GA)
+#### Bot Framework SDK for Skills (Preview)
 
 - **Skills for bots**: Create reusable conversational skills to add functionality to a bot. Leverage pre-built skills, such as Calendar, Email, Task, Point of Interest, Automotive, Weather and News skills. Skills include language models, dialogs, QnA, and integration code delivered to customize and extend as required. [[Docs](https://microsoft.github.io/botframework-solutions/overview/skills/)]
 
