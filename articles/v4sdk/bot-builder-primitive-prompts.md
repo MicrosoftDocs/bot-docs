@@ -66,9 +66,9 @@ The user and conversation state objects are created at startup and dependency in
 
 In **index.js**, create the state properties and the bot, then call the `run` bot method from within `processActivity`.
 
-[!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=32-38)]
+[!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=33-39)]
 
-[!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=55-60)]
+[!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=63-69)]
 
 ---
 
@@ -83,7 +83,7 @@ We begin by creating property accessors that give us a handle to the `BotState` 
 
 And finally, we save the data using the `SaveChangesAsync` method.
 
-[!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=42-43)]
+[!code-csharp[custom prompt bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=41-44)]
 
 ## [JavaScript](#tab/javascript)
 
