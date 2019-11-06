@@ -68,7 +68,7 @@ Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bo
   
 - [Chat for Dynamics 365](https://www.powerobjects.com/powerpacks/powerchat/): Chat for Dynamics 365 offers several capabilities to ensure the support agents and end users can interact effectively and remain highly productive. Live chat and track conversations from visitors on your website within Microsoft Dynamics 365.
 
-# What's new (May 2019)
+## What's new (May 2019)
 
 |   | C#  | JS  | Python |  Java | 
 |---|:---:|:---:|:------:|:-----:|
