@@ -270,30 +270,37 @@ If you do not know how to get your **Microsoft app ID** and **Microsoft app pass
 > [!NOTE]
 > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
 
-## Test the bot
+## Test the bot using the emulator
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
-1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages.
+If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the emulator](../bot-service-debug-emulator.md).
 
-    - You will need to provide your bot's app ID and password when you connect to your bot.
+<!-- auth config steps -->
+In order for the bot sample login to work you must configure the emulator 
+as shown in [Configure the emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
 
-        - If you needed to XML-escape the password in your bot code, you also need to do so here.
+### Testing
 
-    - Type `help` to see a list of available commands for the bot, and test the authentication features.
-    - Once you've signed in, you don't need to provide your credentials again until you sign out.
-    - To sign out, and cancel your authentication, type `logout`.
+After you have configured the authentication mechanism, you can perform the actual bot sample testing.  
+
+1. Run the bot sample locally on your machine.
+1. Start the emulator.
+1. You will need to provide your bot's app ID and password when you connect to the bot.
+    - You get the app ID and the password from the Azure app registration. These are the same values you assigned to the bot app in the `appsettings.json` or `.env` file. In the emulator, you assign these values in the configuration file or the first time you connect to the bot.
+    - If you needed to XML-escape the password in your bot code, you also need to do so here.
+1. Type `help` to see a list of available commands for the bot, and test the authentication features.
+1. Once you've signed in, you don't need to provide your credentials again until you sign out.
+1. To sign out, and cancel your authentication, type `logout`.
 
 > [!NOTE]
 > Bot authentication requires use of the Bot Connector Service. The service accesses the bot channels registration information for your bot.
 
-# [Bot authentication](#tab/bot-oauth)
+## Bot authentication example
 
 In the **Bot authentication** sample, the dialog is designed to retrieve the user token after the user is logged in.
 
 ![Sample output](media/how-to-auth/auth-bot-test.png)
 
-# [Bot authentication MSGraph](#tab/bot-msgraph-auth)
+## Bot authentication MSGraph example
 
 In the **Bot authentication MSGraph** sample, the dialog is designed to accept a limited set of commands after the user is logged in.
 
