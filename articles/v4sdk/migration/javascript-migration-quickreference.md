@@ -427,3 +427,64 @@ const recognizer = new LuisRecognizer(luisApp);
 const recognizerResult = await recognizer.recognize(context);
 const intent = LuisRecognizer.topIntent(recognizerResult);
 ```
+
+## v3 Intent Dialog and v4 Equivalent
+
+### v3
+
+```javascript
+// Create a 'greetings' RegExpRecognizer that can be turned off
+var greetings = new builder.RegExpRecognizer('Greetings', /hello|hi|hey|greetings/i)
+    .onEnabled(function (session, callback) {
+        // Check to see if this recognizer should be enabled
+        if (session.conversationData.useGreetings) {
+            callback(null, true);
+        } else {
+            callback(null, false);
+        }
+    });
+
+// Create our IntentDialog and add recognizers
+var intents = new builder.IntentDialog({ recognizers: [greetings] });
+
+bot.dialog('/', intents);
+
+// If no intent is recognized, direct user to Recognizer Menu
+intents.onDefault('RecognizerMenu');
+
+// Match our "Greetings" and "Farewell" intents with their dialogs
+intents.matches('Greetings', 'Greetings');
+
+// Add a greetings dialog
+bot.dialog('Greetings', [
+    function (session) {
+        session.endDialog('Greetings!');
+    }
+]);
+```
+
+### v4
+
+```javascript
+this.onMessage(async (context, next) => {
+
+    const recognizerResult = {
+        text: context.activity.text,
+        intents: []
+    };
+
+    const greetingRegex = RegExp(/hello|hi|hey|greetings/i);
+
+    if (greetingRegex.test(context.activity.text)) {
+      // greeting intent identified
+      recognizerResult.intents.push('Greeting');
+    }
+
+    if (recognizerResult.intents.includes('Greeting')) {
+        // Run the 'Greeting' dialog
+        await context.beginDialog(GREETING_DIALOG_ID);
+    }
+
+    await next();
+});
+```
