@@ -67,7 +67,7 @@ The **SendTraceActivityAsync** helper method defined in this sample sends except
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[SendTraceActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=17-55)]
+[!code-csharp[SendTraceActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-51&highlight=33-34)]
 
 # [JavaScript](#tab/javascript)
 
@@ -75,7 +75,7 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 **index.js**
 
-[!code-javascript[onTurnError ](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-59)]
+[!code-javascript[onTurnError ](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-57&highlight=8-14)]
 
 ---
 
