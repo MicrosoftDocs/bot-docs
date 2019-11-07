@@ -427,7 +427,7 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 
 # [C#](#tab/csharp)  
 **Bots/DialogBot.cs**  
-[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=18)]
+[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
 # [JavaScript](#tab/javascript)  
 **Bots/dialogBot.js**  
