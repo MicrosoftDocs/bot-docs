@@ -22,7 +22,7 @@ While the Conversation User Interface (CUI) is upon us, at this point few develo
 Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
 
 ## Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice
-Microsoft Bot Framework SDK V4 was released in September 2018, and since then we have shipped a few dot-release improvements. As announced previously, the V3  SDK is being retired with final long-term support ending on December 31st, 2019. Accordingly, there will be no more development in V3  repositories. **Existing V3 bot workloads will continue to run without interruption. We have no plans to disrupt any running workloads**.
+Microsoft Bot Framework SDK V4 was released in September 2018, and since then we have shipped a few dot-release improvements. As announced previously, the V3 SDK is being retired. Accordingly, there will be no more development in V3 repositories. **Existing V3 bot workloads will continue to run without interruption. We have no plans to disrupt any running workloads**.
 
 As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure Bot Service. Bot Builder SDK V3 will only be supported  for critical security bug fixes, connector, and protocol layer compatibility updates.  
 
@@ -42,8 +42,18 @@ For more information please refer to the following references:
   * [Botbuilder for JS Azure](https://github.com/Microsoft/botbuilder-js/tree/master/libraries/botbuilder-azure)
   * [Botbuilder for dotnet Azure](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.Azure)
 
+### V3 Status Summary
 
+#### ABS Service
+1.	The ABS service side will continue to support running V3 bots with no planned end of life and any running bots will not be disrupted. 
+2.	Channels will remain compatible with V3 with no disruption or end of life plan.
+3.	Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
 
+#### SDK and Tools
+
+1.	We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
+2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
+3.	We do not prevent anyone from running old tools to manage their V3 bots. 
 
 
 ### How can I migrate Azure Bot Service from one region to another?
