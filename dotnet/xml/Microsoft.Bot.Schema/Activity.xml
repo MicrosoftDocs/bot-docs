@@ -63,7 +63,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            An Activity is the basic communication type for the Bot Framework 3.0
+            An Activity is the basic communication type for the Bot Framework 4.0
             protocol.
             </summary>
     <remarks>
