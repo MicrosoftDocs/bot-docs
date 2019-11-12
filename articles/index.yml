@@ -11,7 +11,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 05/31/2019
+  ms.date: 11/11/2019
   ms.author: ivorb
 abstract:
   description: Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. Azure Bot Service leverages the Bot Framework SDK with support for C# and JavaScript. Learn how to use Bot Service with our quickstarts, tutorials, and samples.
@@ -21,8 +21,8 @@ abstract:
       height: 110
       src: media/video/satya-video.png
       width: 250  
-    title: Build 2019 keynote by Satya Nadella. (1:25:09)
-    href: https://mybuild.techcommunity.microsoft.com/sessions/77571?source=%7B%7B%20ctrl.source#top-anchor
+    title: Ignite 2019 keynote by Satya Nadella. (1:52)
+    href: https://myignite.techcommunity.microsoft.com/sessions/77831?source=sessions
     width: 250
 sections:
 - items:
