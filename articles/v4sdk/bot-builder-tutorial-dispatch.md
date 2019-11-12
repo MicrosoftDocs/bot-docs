@@ -471,6 +471,16 @@ You can use the [Dispatch][dispatch-readme] command-line tool to test and evalua
 
 This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](https://aka.ms/create-luis-model#updating-your-cognitive-models).
 
+After updating the underlying models (QnA or LUIS) run `dispatch refresh` to update your Dispatch LUIS app. `dispatch refresh` is basically the same command as `dispatch create` except no new LUIS app ID is created. 
+
+Note that utterances that were added directly in LUIS will not be retained when running `dispatch refresh`. To keep those extra utterances in the Dispatch app add those utterances in a text file (one utterance per line), and then add the file to Dispatch by running the command:
+
+```powershell
+dispatch add -t file -f <file path> --intentName <target intent name, ie l_General>
+```
+
+Once the file with extra utterances is added to Dispatch the utterances will stay with every refresh.
+
 ### To delete resources
 
 This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that *any other apps or services* rely on.
