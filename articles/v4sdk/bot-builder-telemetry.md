@@ -166,9 +166,9 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 ## Enabling telemetry in your bots Dialogs
 
-To get the built-in telemetry information about your dialogs, you need to add the telemetry client to every dialog. Follow the steps below to update your CoreBot example:
+ Follow the steps below to update your CoreBot example:
 
-1.  In `MainDialog.cs` you need to add a new TelemetryClient field to the `MainDialog` class then update the constructors parameter list to include an `IBotTelemetryClient` parameter, then pass that to each call to the `AddDialog()` method.
+1.  In `MainDialog.cs` add a new TelemetryClient field to the `MainDialog` class then update the constructor's parameter list to include an `IBotTelemetryClient` parameter, then pass that to each call to the `AddDialog()` method.
 
 
     * Add the parameter `IBotTelemetryClient telemetryClient` to the MainDialog class constructor, then assign it to the `TelemetryClient` field:
@@ -219,7 +219,7 @@ To get the built-in telemetry information about your dialogs, you need to add th
 
         ```
 
-2. In `DialogExtensions.cs` you need to set the `TelemetryClient` property of the `dialogSet` object in the `Run()` method:
+2. In `DialogExtensions.cs` set the `TelemetryClient` property of the `dialogSet` object in the `Run()` method:
 
 
     ```csharp

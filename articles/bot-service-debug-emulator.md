@@ -51,6 +51,37 @@ At this point, your bot should be running locally.
 
 ## Connect to a bot running on localhost
 
+<!-- auth config steps -->
+### Configure the emulator for authentication
+
+If a bot requires authentication, displaying a login dialog, you must configure the emulator as shown below.
+
+#### Using sign-in verification code
+
+1. Start the emulator.
+1. In the emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
+1. Check the box by **Use a sign-in verification code for OAuthCards**.
+1. Check the box by **Bypass ngrok for local address**
+1. Click the  **Save** button.
+
+When you click the login button displayed by the bot, a validation code will be generated.
+You wil enter the code in the bot input chat box for the authentication to take place.
+After that you can perform the allowed operations.
+
+Alternatively, you can perform the steps described below.
+
+#### Using authentication tokens
+
+1. Start the emulator.
+1. In the emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
+1. Check the box by **Use version1.0 authentication tokens**.
+1. Enter the local path to the **ngrok** tool. For more the tool information, see [ngrok](https://ngrok.com/).
+1. Check the box by **Run ngrok when the Emulator starts up**.
+1. Click the  **Save** button.
+
+When you click the login button displayed by the bot, you will be asked to enter your credentials. An authentication token is generated. After that you can perform the allowed operations.
+
+
 ![Emulator UI](media/emulator-v4/emulator-welcome.png)
 
 To connect to a bot running locally and click **Open bot**. Add the port number your copied earlier into the following URL and paste the updated URL in the Bot URL bar:
@@ -60,7 +91,6 @@ To connect to a bot running locally and click **Open bot**. Add the port number 
 ![Emulator UI](media/bot-service-debug-emulator/open_bot_emulator.png)
 
 If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
-
 
 ### Use bot credentials
 
