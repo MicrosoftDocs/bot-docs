@@ -50,12 +50,12 @@ We will import an existing knowledge base definition from the QnA Maker sample i
    1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
    1. Connect your QnA service to your knowledge base.
    1. Name your knowledge base.
-   1. To populate your knowledge base, use the **BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker\CognitiveModels\smartLightFAQ.tsv** file from the samples repo.
+   1. To populate your knowledge base, use the `BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker\CognitiveModels\smartLightFAQ.tsv` file from the samples repo. If you have downloaded the samples, upload the file *smartLightFAQ.tsv* from your computer.
    1. Click **Create your kb** to create the knowledge base.
 1. **Save and train** your knowledge base.
 1. **Publish** your knowledge base.
 
-Once your QnA Maker app is published, select the _SETTINGS_ Tab, and scroll down to 'Deployment details'. Record the following values from the _Postman_ Sample HTTP request.
+Once your QnA Maker app is published, select the **SETTINGS** tab, and scroll down to *Deployment details*. Copy  the following values from the *Postman* HTTP example request.
 
 ```text
 POST /knowledgebases/<knowledge-base-id>/generateAnswer
@@ -106,9 +106,9 @@ QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
 
 | Field | Value |
 |:----|:----|
-| QnAKnowledgebaseId | The knowledge base ID that the QnA Maker portal generated for you. |
-| QnAAuthKey | The endpoint key that the QnA Maker portal generated for you. |
-| QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |
+| QnAKnowledgebaseId | `knowledge-base-id` from the *Postman* HTTP example request.|
+| QnAAuthKey | `qna-maker-resource-key` from the *Postman* HTTP example request. |
+| QnAEndpointHostName | `your-hostname` from the *Postman* HTTP example request. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like `https://<your knowledge base name>.azurewebsites.net/qnamaker`. |
 
 Now save your edits.
 
@@ -202,9 +202,9 @@ Update your initialization code to load the service information for your knowled
    ```csharp
    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
-      // First send the user input to your QnA Maker knowledge base
+      await turnContext.SendActivityAsync(MessageFactory.Text($"Echo: {turnContext.Activity.Text}"), cancellationToken);
+
       await AccessQnAMaker(turnContext, cancellationToken);
-      ...
    }
    ```
 
