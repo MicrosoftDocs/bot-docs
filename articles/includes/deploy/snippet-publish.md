@@ -1,6 +1,6 @@
 Publish your local bot to Azure. This step might take a while.
 
-```cmd
+```azurecli
 az bot publish --name <bot-resource-name> --proj-file-path "<project-file-name>" --resource-group <resource-group-name> --code-dir <directory-path> --verbose --version v4
 ```
 
