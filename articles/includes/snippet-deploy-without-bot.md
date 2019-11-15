@@ -3,14 +3,14 @@ Before beginning the deployment, make sure you have the latest version of [Azure
 ### Login to Azure CLI and set your subscription
 You've already created and tested a bot locally, and now you want to deploy it to Azure. Open a command prompt to log in to the Azure portal.
 
-```cmd
+```azurecli
 az login
 ```
 ### Set the subscription
 
 Set the default subscription to use.
 
-```cmd
+```azurecli
 az account set --subscription "<azure-subscription>"
 ```
 
@@ -23,7 +23,7 @@ Navigate to the bot folder.
 
 If you don't already have a resource group to which to publish your local bot, create one:
 
-```cmd
+```azurecli
 az group create --name <resource-group-name> --location <geographic-location> --verbose
 ```
 
@@ -42,7 +42,7 @@ If you are using an MSA email account, you will need to create the app ID and ap
 1. Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.
 1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.  
 
-```cmd
+```azurecli
 az bot create --kind webapp --name <bot-name-in-azure> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name> --appid "<application-id>" --password "<application-password>" --verbose
 ```
 
@@ -56,7 +56,7 @@ az bot create --kind webapp --name <bot-name-in-azure> --location <geographic-lo
 
 #### Business or school account
 
-```cmd
+```azurecli
 az bot create --kind webapp --name <bot-name-in-azure> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name>
 ```
 | Option | Description |
