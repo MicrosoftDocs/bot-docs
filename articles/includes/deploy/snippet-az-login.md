@@ -1,6 +1,6 @@
 Open a command prompt to log in to the Azure portal.
 
-```cmd
+```azurecli
 az login
 ```
 
@@ -10,7 +10,7 @@ A browser window will open, allowing you to sign in.
 
 Set the default subscription to use.
 
-```cmd
+```azurecli
 az account set --subscription "<azure-subscription>"
 ```
 
