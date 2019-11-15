@@ -123,7 +123,7 @@ Update your initialization code to load the service information for your knowled
 
    You can do this via the NuGet Package Manager or the command line:
 
-   ```cmd
+   ```dotnetcli
    dotnet add package Microsoft.Bot.Builder.AI.QnA
    ```
 
@@ -213,6 +213,7 @@ Update your initialization code to load the service information for your knowled
 
 1. Open a terminal or command prompt to the root directory for your project.
 1. Add the **botbuilder-ai** npm package to your project.
+
    ```shell
    npm i botbuilder-ai
    ```
@@ -220,6 +221,7 @@ Update your initialization code to load the service information for your knowled
 1. In **index.js**, following the // Create Adapter section, add the following code to read your .env file configuration information needed to generate the QnA Maker services.
 
    **index.js**
+
    ```javascript
    // Map knowledge base endpoint values from .env file into the required format for `QnAMaker`.
    const configuration = {
@@ -227,12 +229,12 @@ Update your initialization code to load the service information for your knowled
       endpointKey: process.env.QnAAuthKey,
       host: process.env.QnAEndpointHostName
    };
-
    ```
 
 1. Update the bot construction to pass in the QnA services configuration information.
 
    **index.js**
+
    ```javascript
    // Create the main dialog.
    const myBot = new MyBot(configuration, {});
@@ -241,6 +243,7 @@ Update your initialization code to load the service information for your knowled
 1. In your **bot.js** file, add this require for QnAMaker
 
    **bot.js**
+
    ```javascript
    const { QnAMaker } = require('botbuilder-ai');
    ```
@@ -248,6 +251,7 @@ Update your initialization code to load the service information for your knowled
 1. Modify the constructor to now receive passed configuration parameters required to create a QnAMaker connector and throw an error if these parameters are not provided.
 
    **bot.js**
+
    ```javascript
       class MyBot extends ActivityHandler {
          constructor(configuration, qnaOptions) {
@@ -302,7 +306,8 @@ We can now republish your bot back to Azure.
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
 ## [C#](#tab/csharp)
-```cmd
+
+```azurecli
 az webapp deployment source config-zip --resource-group <resource-group-name> --name <bot-name-in-azure> --src "c:\bot\mybot.zip"
 ```
 
