@@ -2,7 +2,7 @@
 1. Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.
 1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.  
 
-```cmd
+```azurecli
 az bot create --kind webapp --name <bot-resource-name> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name> --appid "<application-id>" --password "<application-password>" --verbose
 ```
 
