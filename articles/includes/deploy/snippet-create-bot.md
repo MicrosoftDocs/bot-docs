@@ -1,4 +1,4 @@
-```cmd
+```azurecli
 az bot create --kind webapp --name <bot-resource-name> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name>
 ```
 
