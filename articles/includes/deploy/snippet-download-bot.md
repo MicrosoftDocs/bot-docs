@@ -2,7 +2,7 @@ Use a temporary directory outside of your current project directory.
 
 This command will create a subdirectory under the save-path; however, the specified path must already exist.
 
-```cmd
+```azurecli
 az bot download --name <bot-resource-name> --resource-group <resource-group-name> --save-path "<path>"
 ```
 
