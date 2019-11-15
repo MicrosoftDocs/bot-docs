@@ -4,7 +4,7 @@ Once a zip file containing all of your bot's source code has been created, open 
 
 This step might take a while.
 
-```cmd
+```azurecli
 az webapp deployment source config-zip --resource-group <resource-group-name> --name <bot-resource-name> --src <directory-path>
 ```
 
