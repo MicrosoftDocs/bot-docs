@@ -1,4 +1,4 @@
-```cmd
+```azurecli
 az group create --name <resource-group-name> --location <geographic-location> --verbose
 ```
 
