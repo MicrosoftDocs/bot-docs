@@ -50,7 +50,7 @@ Iubenda – [Privacy Policy Generator](http://www.iubenda.com/en)
 
 ### 4.	Content 
 - All content in your app integration and associated metadata must be either originally created by the publisher, appropriately licensed from the third-party rights holder, used as permitted by the rights holder, or used as otherwise permitted by law.
-- Your will not publish an app integration or content in your app integration that: 
+- You will not publish an app integration or content in your app integration that: 
   - is illegal;
   - exploits, harms, or threatens to harm children;
   - includes advertising, spam, unwanted or unsolicited or bulk communications, posts or messages;
