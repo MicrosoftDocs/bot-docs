@@ -2,11 +2,10 @@
 title: Recognize intents and entities with LUIS  | Microsoft Docs
 description: Integrate a bot with LUIS to detect the user's intent and respond appropriately by triggering dialogs using the Bot Framework SDK for Node.js. 
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 03/28/2018
 monikerRange: 'azure-bot-service-3.0'
 

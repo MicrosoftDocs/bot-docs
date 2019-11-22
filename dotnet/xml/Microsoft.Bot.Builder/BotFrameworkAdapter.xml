@@ -9,6 +9,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotAdapter</BaseTypeName>
@@ -53,6 +54,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -74,7 +76,47 @@
             using a credential provider.
             </summary>
         <remarks>Use a <see cref="T:Microsoft.Bot.Builder.MiddlewareSet" /> object to add multiple middleware
-            components in the conustructor. Use the <see cref="M:Microsoft.Bot.Builder.BotFrameworkAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" /> method to
+            components in the constructor. Use the <see cref="M:Microsoft.Bot.Builder.BotFrameworkAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" /> method to
+            add additional middleware to the adapter after construction.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="credentialProvider" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkAdapter (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = null, Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy = null, System.Net.Http.HttpClient customHttpClient = null, Microsoft.Bot.Builder.IMiddleware middleware = null, Microsoft.Extensions.Logging.ILogger logger = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Bot.Builder.IMiddleware middleware, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotFrameworkAdapter.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.HttpClient,Microsoft.Bot.Builder.IMiddleware,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = null, Optional connectorClientRetryPolicy As RetryPolicy = null, Optional customHttpClient As HttpClient = null, Optional middleware As IMiddleware = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.BotFrameworkAdapter : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Rest.TransientFaultHandling.RetryPolicy * System.Net.Http.HttpClient * Microsoft.Bot.Builder.IMiddleware * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.BotFrameworkAdapter" Usage="new Microsoft.Bot.Builder.BotFrameworkAdapter (credentialProvider, authConfig, channelProvider, connectorClientRetryPolicy, customHttpClient, middleware, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="authConfig" Type="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="connectorClientRetryPolicy" Type="Microsoft.Rest.TransientFaultHandling.RetryPolicy" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="middleware" Type="Microsoft.Bot.Builder.IMiddleware" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="authConfig">The authentication configuration.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="connectorClientRetryPolicy">Retry policy for retrying HTTP operations.</param>
+        <param name="customHttpClient">The HTTP client.</param>
+        <param name="middleware">The middleware to initially add to the adapter.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.BotFrameworkAdapter" /> class,
+            using a credential provider.
+            </summary>
+        <remarks>Use a <see cref="T:Microsoft.Bot.Builder.MiddlewareSet" /> object to add multiple middleware
+            components in the constructor. Use the <see cref="M:Microsoft.Bot.Builder.BotFrameworkAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" /> method to
             add additional middleware to the adapter after construction.
             </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -95,6 +137,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -116,10 +159,12 @@
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>Call this method to proactively send a message to a conversation.
-            Most _channels require a user to initaiate a conversation with a bot
+            Most _channels require a user to initialize a conversation with a bot
             before the bot can send activities to the user.
-            <para>This method registers the following services for the turn.<list type="bullet"><item><see cref="T:System.Security.Principal.IIdentity" /> (key = "BotIdentity"), a claims identity for the bot.</item><item><see cref="T:Microsoft.Bot.Connector.IConnectorClient" />, the channel connector client to use this turn.</item></list></para><para>
-            This overload differers from the Node implementation by requiring the BotId to be
+            <para>This method registers the following services for the turn.<list type="bullet"><item><description><see cref="T:System.Security.Principal.IIdentity" /> (key = "BotIdentity"), a claims identity for the bot.
+            </description></item><item><description><see cref="T:Microsoft.Bot.Connector.IConnectorClient" />, the channel connector client to use this turn.
+            </description></item></list></para><para>
+            This overload differs from the Node implementation by requiring the BotId to be
             passed in. The .Net code allows multiple bots to be hosted in a single adapter which
             isn't something supported by Node.
             </para></remarks>
@@ -141,6 +186,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -186,6 +232,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -235,6 +282,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.OAuthClient&gt;</ReturnType>
@@ -262,6 +310,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -295,6 +344,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -329,6 +379,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -342,7 +393,7 @@
       </Parameters>
       <Docs>
         <param name="context">Context for the current turn of conversation with the user.</param>
-        <param name="connectionName">The name of the Azure Active Direcotry connection configured with this bot.</param>
+        <param name="connectionName">The name of the Azure Active Directory connection configured with this bot.</param>
         <param name="resourceUrls">The list of resource URLs to retrieve tokens for.</param>
         <param name="userId">The user Id for which tokens are retrieved. If passing in null the userId is taken from the Activity in the ITurnContext.</param>
         <param name="cancellationToken">The async operation cancellation token.</param>
@@ -364,6 +415,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -395,6 +447,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -424,6 +477,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
@@ -462,6 +516,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
@@ -505,6 +560,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -540,6 +596,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -578,6 +635,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;</ReturnType>
@@ -591,7 +649,7 @@
       <Docs>
         <param name="context">Context for the current turn of conversation with the user.</param>
         <param name="userId">The user Id for which token status is retrieved.</param>
-        <param name="includeFilter">Optional comma seperated list of connection's to include. Blank will return token status for all configured connections.</param>
+        <param name="includeFilter">Optional comma separated list of connection's to include. Blank will return token status for all configured connections.</param>
         <param name="cancellationToken">The async operation cancellation token.</param>
         <summary>
             Retrieves the token status for each configured connection for the given user.
@@ -614,6 +672,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -629,7 +688,8 @@
         <param name="connectionName">Name of the auth connection to use.</param>
         <param name="magicCode">(Optional) Optional user entered code to validate.</param>
         <param name="cancellationToken">Cancellation token.</param>
-        <summary>Attempts to retrieve the token for a user that's in a login flow.
+        <summary>
+            Attempts to retrieve the token for a user that's in a login flow.
             </summary>
         <returns>Token Response.</returns>
         <remarks>To be added.</remarks>
@@ -646,6 +706,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -683,6 +744,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -729,6 +791,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
@@ -766,6 +829,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -800,6 +864,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -837,6 +902,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotFrameworkAdapter</ReturnType>

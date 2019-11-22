@@ -1,4 +1,9 @@
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+- A subscription to [Microsoft Azure](https://azure.microsoft.com/free/)
+- A C#, JavaScript, or TypeScript bot that you have developed on your local machine
+- Latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
+- Familiarity with [Azure CLI and ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+
+<!-- - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install the latest version of the [Azure cli tool](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
 - Install latest released version of the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
@@ -9,4 +14,4 @@ With msbot 4.3.2 and later, you need Azure CLI version 2.0.54 or later. If you i
 
 ```cmd
 az extension remove --name botservice
-```
+``` -->

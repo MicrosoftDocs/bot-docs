@@ -1,0 +1,86 @@
+﻿<Type Name="SemanticActionStates" FullName="Microsoft.Bot.Schema.SemanticActionStates">
+  <TypeSignature Language="C#" Value="public static class SemanticActionStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SemanticActionStates extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.SemanticActionStates" />
+  <TypeSignature Language="VB.NET" Value="Public Class SemanticActionStates" />
+  <TypeSignature Language="F#" Value="type SemanticActionStates = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Indicates whether the semantic action is starting, continuing, or done.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="public const string Continue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Continue" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SemanticActionStates.Continue" />
+      <MemberSignature Language="VB.NET" Value="Public Const Continue As String " />
+      <MemberSignature Language="F#" Value="val mutable Continue : string" Usage="Microsoft.Bot.Schema.SemanticActionStates.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Semantic action is continuing.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Done">
+      <MemberSignature Language="C#" Value="public const string Done;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Done" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SemanticActionStates.Done" />
+      <MemberSignature Language="VB.NET" Value="Public Const Done As String " />
+      <MemberSignature Language="F#" Value="val mutable Done : string" Usage="Microsoft.Bot.Schema.SemanticActionStates.Done" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Semantic action is done.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public const string Start;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Start" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SemanticActionStates.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Const Start As String " />
+      <MemberSignature Language="F#" Value="val mutable Start : string" Usage="Microsoft.Bot.Schema.SemanticActionStates.Start" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Semantic action is starting.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

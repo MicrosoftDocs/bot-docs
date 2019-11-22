@@ -6,7 +6,6 @@ ms.author: mateusv
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 2/13/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
@@ -110,13 +109,6 @@ For example, a developer may choose to add natural language and speech capabilit
 or she may add support for text messages. 
 The company may setup kiosks throughout the building and embed the password-reset bot into that experience.
 
-<!-- TODO: SimpleTaskAutomation no longer exists
-## Sample code
-
-For a complete sample that shows how to implement simple task automation using the Bot Framework SDK for .NET, see the <a href="https://aka.ms/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
-
-For a complete sample that shows how to implement simple task automation using the Bot Framework SDK for Node.js, see the <a href="https://aka.ms/capability-SimpleTaskAutomation" target="_blank">Simple Task Automation sample</a> in GitHub.
--->
 
 ## Additional resources
 

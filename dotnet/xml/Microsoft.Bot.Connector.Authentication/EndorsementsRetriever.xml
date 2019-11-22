@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,11 +25,11 @@
   </Interfaces>
   <Docs>
     <summary>
-            The endorsements property within each key contains one or more endorsement 
-            strings which you can use to verify that the channel ID specified in the channelId 
+            The endorsements property within each key contains one or more endorsement
+            strings which you can use to verify that the channel ID specified in the channelId
             property within the Activity object of the incoming request is authentic.
             More details at:
-                https://docs.microsoft.com/bot-framework/rest-api/bot-framework-rest-connector-authentication
+                https://docs.microsoft.com/bot-framework/rest-api/bot-framework-rest-connector-authentication.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -55,7 +57,7 @@
             of the client on each call, which may be very expensive in terms of latency, TLS connections
             and related issues.</param>
         <summary>
-            Creates an instance of the Endorsements Retriever class. 
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,6 +77,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Collections.Generic.HashSet&lt;System.String&gt;&gt;&gt;</ReturnType>
@@ -112,6 +115,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -145,6 +149,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -152,17 +157,17 @@
       <Docs>
         <summary>
             JSON Web Key Set Metadata value
-            From the OpenID Spec at 
+            From the OpenID Spec at
                 https://openid.net/specs/openid-connect-discovery-1_0.html
-                URL of the OP's JSON Web Key Set [JWK] document. This contains the signing key(s) 
-                the RP uses to validate signatures from the OP. The JWK Set MAY also contain the 
-                Server's encryption key(s), which are used by RPs to encrypt requests to the 
-                Server. When both signing and encryption keys are made available, a use (Key Use) 
-                parameter value is REQUIRED for all keys in the referenced JWK Set to indicate 
-                each key's intended usage. Although some algorithms allow the same key to be 
-                used for both signatures and encryption, doing so is NOT RECOMMENDED, as it 
-                is less secure. The JWK x5c parameter MAY be used to provide X.509 representations 
-                of keys provided. When used, the bare key values MUST still be present and MUST 
+                URL of the OP's JSON Web Key Set [JWK] document. This contains the signing key(s)
+                the RP uses to validate signatures from the OP. The JWK Set MAY also contain the
+                Server's encryption key(s), which are used by RPs to encrypt requests to the
+                Server. When both signing and encryption keys are made available, a use (Key Use)
+                parameter value is REQUIRED for all keys in the referenced JWK Set to indicate
+                each key's intended usage. Although some algorithms allow the same key to be
+                used for both signatures and encryption, doing so is NOT RECOMMENDED, as it
+                is less secure. The JWK x5c parameter MAY be used to provide X.509 representations
+                of keys provided. When used, the bare key values MUST still be present and MUST
                 match those in the certificate.
             </summary>
         <remarks>To be added.</remarks>

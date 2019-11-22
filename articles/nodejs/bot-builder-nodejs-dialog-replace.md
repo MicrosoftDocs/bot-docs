@@ -2,11 +2,10 @@
 title: Replace dialogs | Microsoft Docs
 description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Framework SDK for Node.js.
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

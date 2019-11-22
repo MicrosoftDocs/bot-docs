@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -66,6 +68,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
@@ -92,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -101,12 +105,15 @@
         <Parameter Name="logPersonalInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="httpClient">To be added.</param>
-        <param name="telemetryClient">To be added.</param>
-        <param name="logPersonalInformation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The endpoint of the knowledge base to query.</param>
+        <param name="options">The options for the QnA Maker knowledge base.</param>
+        <param name="httpClient">An alternate client with which to talk to QnAMaker.
+            If null, a default client is used for this instance.</param>
+        <param name="telemetryClient">The IBotTelemetryClient used for logging telemetry events.</param>
+        <param name="logPersonalInformation">Set to true to include personally identifiable information in telemetry events.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.QnAMaker" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,6 +126,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
@@ -128,12 +136,40 @@
         <Parameter Name="logPersonalInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="service">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="httpClient">To be added.</param>
-        <param name="telemetryClient">To be added.</param>
-        <param name="logPersonalInformation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="service">QnA service details from configuration.</param>
+        <param name="options">The options for the QnA Maker knowledge base.</param>
+        <param name="httpClient">An alternate client with which to talk to QnAMaker.
+            If null, a default client is used for this instance.</param>
+        <param name="telemetryClient">The IBotTelemetryClient used for logging telemetry events.</param>
+        <param name="logPersonalInformation">Set to true to include personally identifiable information in telemetry events.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.QnAMaker" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallTrainAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CallTrainAsync (Microsoft.Bot.Builder.AI.QnA.FeedbackRecords feedbackRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CallTrainAsync(class Microsoft.Bot.Builder.AI.QnA.FeedbackRecords feedbackRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.CallTrainAsync(Microsoft.Bot.Builder.AI.QnA.FeedbackRecords)" />
+      <MemberSignature Language="F#" Value="member this.CallTrainAsync : Microsoft.Bot.Builder.AI.QnA.FeedbackRecords -&gt; System.Threading.Tasks.Task" Usage="qnAMaker.CallTrainAsync feedbackRecords" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feedbackRecords" Type="Microsoft.Bot.Builder.AI.QnA.FeedbackRecords" />
+      </Parameters>
+      <Docs>
+        <param name="feedbackRecords">Feedback records.</param>
+        <summary>
+            Send feedback to the knowledge base.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
@@ -166,6 +203,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ValueTuple&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;,System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;&gt;&gt;</ReturnType>
@@ -183,13 +221,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="queryResults">To be added.</param>
-        <param name="turnContext">To be added.</param>
-        <param name="telemetryProperties">To be added.</param>
-        <param name="telemetryMetrics">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queryResults">QnA service results.</param>
+        <param name="turnContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="telemetryProperties">Properties to add/override for the event.</param>
+        <param name="telemetryMetrics">Metrics to add/override for the event.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Fills the event properties and metrics for the QnaMessage event for telemetry.
+            These properties are logged when the QnA GetAnswers method is called.
+            </summary>
+        <returns>A tuple of Properties and Metrics that will be sent to the IBotTelemetryClient.TrackEvent method for the QnAMessage event.  The properties and metrics returned the standard properties logged with any properties passed from the GetAnswersAsync method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,6 +245,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -235,6 +277,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -246,12 +289,40 @@
         <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="telemetryProperties">To be added.</param>
-        <param name="telemetryMetrics">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The Turn Context that contains the user question to be queried against your knowledge base.</param>
+        <param name="options">The options for the QnA Maker knowledge base. If null, constructor option is used for this instance.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the QnaMessage event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the QnaMessage event.</param>
+        <summary>
+            Generates an answer from the knowledge base.
+            </summary>
+        <returns>A list of answers for the user query, sorted in decreasing order of ranking score.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLowScoreVariation">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.QueryResult[] GetLowScoreVariation (Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.AI.QnA.QueryResult[] GetLowScoreVariation(class Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetLowScoreVariation(Microsoft.Bot.Builder.AI.QnA.QueryResult[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLowScoreVariation (queryResult As QueryResult()) As QueryResult()" />
+      <MemberSignature Language="F#" Value="member this.GetLowScoreVariation : Microsoft.Bot.Builder.AI.QnA.QueryResult[] -&gt; Microsoft.Bot.Builder.AI.QnA.QueryResult[]" Usage="qnAMaker.GetLowScoreVariation queryResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AI.QnA.QueryResult[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryResult" Type="Microsoft.Bot.Builder.AI.QnA.QueryResult[]" />
+      </Parameters>
+      <Docs>
+        <param name="queryResult">User query output.</param>
+        <summary>
+            Filters the ambiguous question for active learning.
+            </summary>
+        <returns>Filtered array of ambiguous question.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,13 +339,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether determines whether to log personal information that came from the user.
+            </summary>
+        <value>If true, will log personal information into the IBotTelemetryClient.TrackEvent method; otherwise the properties will be filtered.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,6 +361,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -310,16 +385,17 @@
       </Docs>
     </Member>
     <Member MemberName="QnAMakerName">
-      <MemberSignature Language="C#" Value="public const string QnAMakerName;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerName" />
+      <MemberSignature Language="C#" Value="public static readonly string QnAMakerName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string QnAMakerName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerName" />
-      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerName As String " />
-      <MemberSignature Language="F#" Value="val mutable QnAMakerName : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QnAMakerName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable QnAMakerName : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -330,11 +406,11 @@
       </Docs>
     </Member>
     <Member MemberName="QnAMakerTraceLabel">
-      <MemberSignature Language="C#" Value="public const string QnAMakerTraceLabel;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerTraceLabel" />
+      <MemberSignature Language="C#" Value="public static readonly string QnAMakerTraceLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string QnAMakerTraceLabel" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceLabel" />
-      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerTraceLabel As String " />
-      <MemberSignature Language="F#" Value="val mutable QnAMakerTraceLabel : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QnAMakerTraceLabel As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable QnAMakerTraceLabel : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceLabel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
@@ -342,6 +418,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -352,11 +429,11 @@
       </Docs>
     </Member>
     <Member MemberName="QnAMakerTraceType">
-      <MemberSignature Language="C#" Value="public const string QnAMakerTraceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string QnAMakerTraceType" />
+      <MemberSignature Language="C#" Value="public static readonly string QnAMakerTraceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string QnAMakerTraceType" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceType" />
-      <MemberSignature Language="VB.NET" Value="Public Const QnAMakerTraceType As String " />
-      <MemberSignature Language="F#" Value="val mutable QnAMakerTraceType : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QnAMakerTraceType As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable QnAMakerTraceType : string" Usage="Microsoft.Bot.Builder.AI.QnA.QnAMaker.QnAMakerTraceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
@@ -364,6 +441,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -386,13 +464,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the currently configured <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> that logs the QnaMessage event.
+            </summary>
+        <value>The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> being used to log events.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

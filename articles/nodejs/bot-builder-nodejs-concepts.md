@@ -2,11 +2,10 @@
 title: Key concepts in the Bot Framework SDK for Node.js | Microsoft Docs
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Framework SDK for Node.js.
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
@@ -22,8 +21,8 @@ monikerRange: 'azure-bot-service-3.0'
 This article introduces key concepts in the Bot Framework SDK for Node.js. For an introduction to Bot Framework, see [Bot Framework overview](../overview-introduction-bot-framework.md).
 
 ## Connector
-
 The Bot Framework Connector is a service that connects your bot to multiple *channels*, which are clients like [Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-create), Skype, Facebook, Slack, and SMS. 
+
 The Connector facilitates communication between bot and user by relaying messages from bot to channel and from channel to bot. 
 Your bot's logic is hosted as a web service that receives messages from users through the Connector service, and your bot's replies are sent to the Connector using HTTPS POST. 
 

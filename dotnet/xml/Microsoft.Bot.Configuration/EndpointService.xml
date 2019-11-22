@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Configuration.ConnectedService</BaseTypeName>
@@ -28,6 +29,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,6 +48,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -59,7 +62,7 @@
         <summary>
             Gets or sets appId for the bot.
             </summary>
-        <value>To be added.</value>
+        <value>The App Id.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,6 +77,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -87,7 +91,7 @@
         <summary>
             Gets or sets app password for the bot.
             </summary>
-        <value>To be added.</value>
+        <value>The App password.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,6 +106,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -115,7 +120,7 @@
         <summary>
             Gets or sets the channel service (Azure or US Government Azure) for the bot.
             </summary>
-        <value>To be added.</value>
+        <value>The Channel Service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,6 +135,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -155,6 +161,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -180,6 +187,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -193,7 +201,7 @@
         <summary>
             Gets or sets endpoint url for the bot.
             </summary>
-        <value>To be added.</value>
+        <value>The Endpoint for the Bot.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

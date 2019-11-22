@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
@@ -19,8 +20,8 @@
     <summary>
              Creates a new prompt that asks the user to sign in using the Bot Frameworks Single Sign On (SSO)
              service.
-            
-             @remarks
+             </summary>
+    <remarks>
              The prompt will attempt to retrieve the users current token and if the user isn't signed in, it
              will send them an `OAuthCard` containing a button they can press to signin. Depending on the
              channel, the user will be sent through one of two possible signin flows:
@@ -35,22 +36,25 @@
              careful of is that you don't block the `event` and `invoke` activities that the prompt might
              be waiting on.
             
-             &gt; [!NOTE]
-             &gt; You should avoid persisting the access token with your bots other state. The Bot Frameworks
-             &gt; SSO service will securely store the token on your behalf. If you store it in your bots state
-             &gt; it could expire or be revoked in between turns.
-             &gt;
-             &gt; When calling the prompt from within a waterfall step you should use the token within the step
-             &gt; following the prompt and then let the token go out of scope at the end of your function.
+             <blockquote>
+             **Note**:
+             You should avoid persisting the access token with your bots other state. The Bot Frameworks
+             SSO service will securely store the token on your behalf. If you store it in your bots state
+             it could expire or be revoked in between turns.
             
-             #### Prompt Usage
+             When calling the prompt from within a waterfall step you should use the token within the step
+             following the prompt and then let the token go out of scope at the end of your function.
+             </blockquote>
             
-             When used with your bots `DialogSet` you can simply add a new instance of the prompt as a named
-             dialog using `DialogSet.add()`. You can then start the prompt from a waterfall step using either
-             `DialogContext.begin()` or `DialogContext.prompt()`. The user will be prompted to signin as
-             needed and their access token will be passed as an argument to the callers next waterfall step.
-             </summary>
-    <remarks>To be added.</remarks>
+             ## Prompt Usage
+            
+             When used with your bot's <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogSet" /> you can simply add a new instance of the prompt as a named
+             dialog using <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogSet.Add(Microsoft.Bot.Builder.Dialogs.Dialog)" />. You can then start the prompt from a waterfall step using either
+             <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" /> or
+             <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />. The user
+             will be prompted to signin as needed and their access token will be passed as an argument to
+             the callers next waterfall step.
+             </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +70,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -73,11 +78,15 @@
         <Parameter Name="validator" Type="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;Microsoft.Bot.Schema.TokenResponse&gt;" />
       </Parameters>
       <Docs>
-        <param name="dialogId">To be added.</param>
-        <param name="settings">To be added.</param>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dialogId">The ID to assign to this prompt.</param>
+        <param name="settings">Additional OAuth settings to use with this instance of the prompt.</param>
+        <param name="validator">Optional, a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" /> that contains additional,
+            custom validation for this prompt.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.OAuthPrompt" /> class.
+            </summary>
+        <remarks>The value of <paramref name="dialogId" /> must be unique within the
+            <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogSet" /> or <see cref="T:Microsoft.Bot.Builder.Dialogs.ComponentDialog" /> to which the prompt is added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDialogAsync">
@@ -92,6 +101,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -102,12 +112,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The dialog context for the current turn of the conversation.</param>
+        <param name="options">Optional, additional information to pass to the prompt being started.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog is pushed onto the dialog stack and is being activated.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the prompt is still
+            active after the turn has been processed by the prompt.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueDialogAsync">
@@ -122,6 +136,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -131,11 +146,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The dialog context for the current turn of conversation.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog is the active dialog and the user replied with a new activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.
+            <para>The prompt generally continues to receive the user's replies until it accepts the
+            user's reply as valid input for the prompt.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUserTokenAsync">
@@ -150,6 +171,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -159,13 +181,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">Context for the current turn of the conversation with the user.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Get a token for a user signed in.
+            Attempts to get the user's token.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful and user already has a token or the user successfully signs in,
+            the result contains the user's token.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SignOutUserAsync">
@@ -180,6 +204,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -189,12 +214,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">Context for the current turn of the conversation with the user.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Sign Out the User.
+            Signs out the user.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

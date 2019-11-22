@@ -6,7 +6,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date:  02/19/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
