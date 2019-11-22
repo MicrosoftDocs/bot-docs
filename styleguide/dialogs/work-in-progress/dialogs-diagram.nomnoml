@@ -1,0 +1,99 @@
+#font: Segoe UI
+#fontSize: 9
+#leading: 1.5
+#lineWidth: 1
+#arrowSize: 1
+#bendSize:0.2
+#edges: rounded
+#edgeMargin: 2
+#padding: 12
+#spacing: 20
+#fill: #def; #acf
+#ranker: network-simplex
+
+#.interface: italic
+#.enum: italic bold
+
+[DialogSet |
+	_dialogState: IStatePropertyAccessor<DialogState>;
+	_dialogs: IDictionary<string,Dialog>;
+    _telemetryClient: IBotTelemetryClient |
+    Add(dialog: Dialog);
+    CreateContext(ITurnContext): DialogContext;
+    Find(id: string): Dialog;
+    GetDialogs(): IEnumerable<Dialog>
+	]
+
+[<abstract> Dialog |
+    Id: string;
+    _telemetryClient: IBotTelemetryClient |
+    BeginDialog(DialogContext, object): DialogTurnResult;
+    ContinueDialog(DialogContext): DialogTurnResult;
+    ResumeDialog(DialogContext, DialogReason, object): DialogTurnResult;
+    RepromptDialog(ITurnContext, DialogInstance);
+    EndDialog(ITurnContext, DialogInstance);
+    OnDialogEvent(DialogContext, DialogEvent): bool
+    ]
+
+[DialogContext |
+	Dialogs: DialogSet;
+    Context: ITurnContext;
+    Stack: List<DialogInstance>;
+    Parent: DialogContext;
+    Child: DialogContext;
+    ActiveDialog: DialogInstance |
+    BeginDialog(string, object): DialogTurnResult;
+    Prompt(string, PromptOptions): DialogTurnResult;
+    ContinueDialog(): DialogTurnResult;
+    EndDialog(object): DialogTurnResult;
+    CancelAllDialogs(): DialogTurnResult;
+    ReplaceDialog(string, object): DialogTurnResult;
+    RepromptDialog();
+    EmitEvent(string, object, bool, bool): bool;
+    FindDialog(string): Dialog
+    ]
+
+[<interface> ITurnContext |
+	Adapter: BotAdapter;
+    TurnState: TurnContextStateCollection;
+    Activity: Activity;
+    Responded: bool
+    ]
+
+[DialogState|
+	DialogStack: List<DialogInstance>
+]
+
+[DialogInstance |
+	Id: string;
+    State: IDictionary<string, object>;
+    StackIndex: int?
+    ]
+
+[<enum> DialogReason|
+	BeginCalled;ContinueCalled;EndCalled;
+    ReplaceCalled;CancelCalled;NextCalled
+]
+
+[DialogTurnResult |
+	Status: DialogTurnStatus;
+    Result: object;
+    ParentEnded: bool
+    ]
+
+[<enum> DialogTurnStatus|
+	Empty;Waiting;Complete;Cancelled
+]
+
+[DialogReason]-->[Dialog]
+[DialogReason]-->[DialogContext]
+[DialogSet]+->[Dialog]
+[DialogSet]-[DialogContext]
+[ITurnContext]-->[DialogState]
+[DialogContext]-[ITurnContext]
+[DialogContext]o->[DialogInstance]
+[DialogContext]o->[DialogContext]
+[DialogContext]-->[DialogTurnResult]
+[DialogState]+->[DialogInstance]
+[DialogInstance]-->[DialogSet]
+[DialogTurnResult]->[DialogTurnStatus]

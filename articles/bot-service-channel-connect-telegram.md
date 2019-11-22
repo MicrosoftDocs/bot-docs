@@ -7,7 +7,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
@@ -48,9 +47,17 @@ Copy the Telegram bot's access token.
 
 ## Enter the Telegram bot's access token
 
-Paste the token you copied previously into the **Access Token** field and click **Submit**.
+Go to your bot's **Channels** section in the Azure portal and click the **Telegram** button. 
 
-## Enable the bot
-Check **Enable this bot on Telegram**. Then click **I'm done configuring Telegram**.
+> [!NOTE]
+>  The Azure portal UI will look slightly different if you have already connected your bot to Telegram. 
 
-When you have completed these steps, your bot will be successfully configured to communicate with users in Telegram.
+![Select Telegram in channels](~/media/channels/tg-connectBot-Azure.png)
+
+Paste the token you copied previously into the **Access Token** field and click **Save**.
+
+![Telegram access token](~/media/channels/tg-accessToken-Azure.png)
+
+Your bot is now successfully configured to communicate with users in Telegram. 
+
+![Telegram bot enabled](~/media/channels/tg-botEnabled-Azure.png)

@@ -43,9 +43,9 @@ A simple introduction card is provided as standard which you can adapt as needed
 
 ## Basic Language Understanding (LUIS) intents
 
-Every Bot should handle a base level of conversational language understanding. Greetings for example are a basic thing every Bot should handle with ease. Typically, developers need to create these base intents and provide initial training data to get started. The Virtual Assistant template provides example LU files to get you started and avoids every project having to create these each time and ensures a base level of capability out of the box.
+Every Bot should handle a base level of conversational language understanding. Greetings for example are a basic thing every Bot should handle with ease. Typically, developers need to create these base intents and provide initial training data to get started. The Virtual Assistant template provides example .lu files to get you started and avoids every project having to create these each time and ensures a base level of capability out of the box.
 
-The LU files provide the following intents across English, Chinese, French, Italian, German, Spanish.
+The .lu files provide the following intents across English, Chinese, French, Italian, German, Spanish.
 
 Intent       | Sample Utterances |
 -------------|-------------|
@@ -63,7 +63,7 @@ ShowPrevious |*show previous*|
 StartOver    |*restart*|
 Stop         |*stop*|
 
-The [LU](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md) format is similar to MarkDown enabling easy modification and source control. The [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) tool is then used to convert .LU files into LUIS models which can then be published to your LUIS subscription either through the portal or the associated [LUIS](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS) CLI (command line) tool.
+The [.lu](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md) format is similar to Markdown, enabling easy modification and source control. The [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) tool is then used to convert .lu files into LUIS models which can then be published to your LUIS subscription either through the portal or the associated [LUIS](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS) CLI (command line) tool.
 
 ## Telemetry
 
@@ -75,7 +75,7 @@ Bot level telemetry is intrinsically linked to technical and operational telemet
 
 A middleware component combined with a wrapper class around the QnA Maker and LuisRecognizer SDK classes provides an elegant way to collect a consistent set of events. These consistent events can then be used by the Application Insights tooling along with tools like PowerBI.
 
-An example PowerBI dashboard is as part of the Bot Framework Solutions github repo and works right out of the box with every Virtual Assistant template. See the [Analytics](https://github.com/Microsoft/AI/blob/master/docs/readme.md#analytics) section for more information.
+An example Power BI dashboard is as part of the Bot Framework Solutions github repo and works right out of the box with every Virtual Assistant template. See the [Analytics](https://aka.ms/bfs-analytics) section for more information.
 
 ![Analytics Example](./media/enterprise-template/powerbi-conversationanalytics-luisintents.png)
 
@@ -83,40 +83,40 @@ An example PowerBI dashboard is as part of the Bot Framework Solutions github re
 
 A key design pattern used to good effect in the first wave of conversational experiences was to leverage Language Understanding (LUIS) and QnA Maker. LUIS would be trained with tasks that your Bot could do for an end user and QnA Maker would be trained with more general knowledge.
 
-All incoming utterances (questions) would be routed to LUIS for analysis. If the intent of a given utterance was not identified it was marked as a None intent. QnA Maker was then used to try and find an answer for the end-user.
+All incoming utterances (questions) would be routed to LUIS for analysis. If the intent of a given utterance was not identified it was marked as a *None* intent. QnA Maker was then used to try and find an answer for the end-user.
 
-Whilst this pattern worked well there were two key scenarios where problems could be experienced.
+While this pattern worked well there were two key scenarios where problems could be experienced.
 
-- If  utterances in the LUIS model and QnA Maker overlapped sometimes slightly, this could lead to strange behavior where LUIS may try to process a question when it should have been directed to QnA Maker.
-- When there were two or more LUIS models a Bot would have to invoke each one and perform some form of  intent evaluation comparison to identify where to send a given utterance. As there is no common baseline score comparison across models didn't work effectively leading to a poor user experience.
+- If  utterances in the LUIS model and QnA Maker overlapped, sometimes slightly, this could lead to strange behavior where LUIS may try to process a question when it should have been directed to QnA Maker.
+- When there were two or more LUIS models a Bot would have to invoke each one and perform some form of intent evaluation comparison to identify where to send a given utterance. As there is no common baseline score, comparison across models didn't work effectively,  leading to a poor user experience.
 
-The [Dispatcher](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) provides an elegant solution to this by extracting utterances from each configured LUIS model and questions from QnA Maker and creating a central dispatch LUIS model.
+[Dispatch](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig) provides an elegant solution to this by extracting utterances from each configured LUIS model and questions from QnA Maker and creating a central dispatch LUIS model.
 
-This enables a Bot to quickly identify which LUIS model or component should handle a given utterance and ensures QnA Maker data is considered at the top level of intent processing not just the None intent as before.
+This enables a Bot to quickly identify which LUIS model or component should handle a given utterance and ensures QnA Maker data is considered at the top level of intent processing, not just the *None* intent as before.
 
-This Dispatch tool also enables evaluation which will highlight confusion and overlap across LUIS models and QnA Maker knowledgebases highlighting issues before deployment.
+This Dispatch tool also enables evaluation which will highlight confusion, issues, and overlap across LUIS models and QnA Maker knowledge bases before deployment.
 
-The Dispatcher is used at the core of each project created using the template. The Dispatch model is used within the `MainDialog` class to identify whether the target is a LUIS model or QnA. In the case of LUIS, the secondary LUIS model is invoked returning the intent and entities as usual. Dispatcher is also used for interruption detection.
+The Dispatcher is used at the core of each project created using the template. The Dispatch model is used within the `MainDialog` class to identify whether the target is a LUIS model or QnA. In the case of LUIS, the secondary LUIS model is invoked returning the intent and entities. Dispatcher is also used for interruption detection.
 
 ![Dispatch Example](./media/enterprise-template/dispatchexample.png)
 
 ## QnA Maker
 
-[QnA Maker](https://www.qnamaker.ai/) provides the ability for non-developers to curate general knowledge in the format of question and answer pairs. This knowledge can be imported from FAQ data sources, product manuals and interactively within the QnaMaker portal.
+[QnA Maker](https://www.qnamaker.ai/) provides the ability for non-developers to curate general knowledge in the format of question and answer pairs. This knowledge can be imported from FAQ data sources, product manuals and interactively within the QnA Maker portal.
 
-Two example QnA Maker models are provided in the [LU](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md) file format within the QnA folder of CognitiveModels, one for FAQ and one for chit-chat. [LuDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) is then used as part of the deployment script to create a QnA Maker JSON file which the [QnA Maker](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker) CLI (command line) tool then uses to publish items to the QnA Maker knowledgebase.
+Two example QnA Maker models are provided in the [.lu](https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md) file format within the QnA folder of CognitiveModels, one for FAQ and one for chit-chat. [LUDown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Ludown) is then used as part of the deployment script to create a QnA Maker JSON file which the [QnA Maker](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker) CLI (command line) tool then uses to publish items to the QnA Maker knowledge base.
 
 ![QnA ChitChat example](./media/enterprise-template/qnachitchatexample.png)
 
 ## Content Moderator
 
-Content Moderator is an optional component which enables detection of potential profanity and helps check for personally identifiable information (PII). This can be helpful to integrate into Bots enabling a Bot to react to profanity or if the user shares PII information. For example, a Bot can apologise and hand-off to a human or not store telemetry records if PII information is detected.
+Content Moderator is an optional component which enables detection of potential profanity and helps check for personally identifiable information (PII). For example, a Bot can apologise and hand-off to a human in the event of profanity, or not store telemetry records if PII information is detected.
 
-A middleware component is provided that screen texts and surfaces through a ```TextModeratorResult``` on the TurnState object.
+A middleware component is provided that screens text and surfaces through a ```TextModeratorResult``` on the TurnState object.
 
-# Next Steps
-Refer to [Getting Started](https://github.com/Microsoft/AI/tree/master/docs#tutorials) to learn how to create and deploy your Virtual Assistant. 
+## Next Steps
+Refer to the [tutorials](https://aka.ms/bfs-tutorials) to learn how to create and deploy your Virtual Assistant. 
 
-# Additional resources
-Full source code for the Virtual Assistant Template can be found on [GitHub](https://github.com/Microsoft/AI/).
+## Additional resources
+Full source code for the Virtual Assistant Template can be found on [GitHub](https://aka.ms/bf-solutions).
 

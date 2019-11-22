@@ -3,11 +3,10 @@ title: .NET v3 to v4 migration quick reference | Microsoft Docs
 description: An outline of the major differences in the v3 and v4 .NET Bot Framework SDK.
 keywords: .net, bot migration, dialogs, v3 bot
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/31/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -525,19 +524,22 @@ Task WriteAsync(IDictionary<string, object> changes, CancellationToken cancellat
 ```
 
 ```csharp
-var storageOptions = new CosmosDbStorageOptions()
+var storageOptions = new CosmosDbPartitionedStorageOptions()
 {
     AuthKey = configuration["cosmosKey"],
-    CollectionId = configuration["cosmosCollection"],
-    CosmosDBEndpoint = new Uri(configuration["cosmosPath"]),
+    ContainerId = configuration["cosmosContainer"],
+    CosmosDbEndpoint = configuration["cosmosPath"],
     DatabaseId = configuration["cosmosDatabase"]
 };
 
-IStorage dataStore = new CosmosDbStorage(storageOptions);
+IStorage dataStore = new CosmosDbPartitionedStorage(storageOptions);
 var conversationState = new ConversationState(dataStore);
 services.AddSingleton(conversationState);
 
 ```
+
+> [!NOTE]
+> When using `CosmosDbPartitionedStorage`, you are responsible for creating a database and providing the Cosmos DB endpoint, authorization key and database ID as show above. You should simply specify an ID for a container - your bot will create it for you, ensuring it is configured correctly for storing bot state. If you do create the container yourself, ensure that the partition key is set to **/id** and set the `CosmosDbPartitionedStorageOptions.ContainerId` property.
 
 ## To use Form Flow
 
@@ -558,3 +560,60 @@ services.AddSingleton(conversationState);
 ### v4
 
 [Bot.Builder.Community.Dialogs.Luis](https://www.nuget.org/packages/Bot.Builder.Community.Dialogs.Luis/) is now a Bot Builder Community library.  The source is available on the community [repository](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Dialogs.Luis).
+
+## To use QnA Maker
+
+### v3
+
+```csharp
+[Serializable]
+[QnAMaker("QnAEndpointKey", "QnAKnowledgebaseId", <ScoreThreshold>, <TotalResults>, "QnAEndpointHostName")]
+public class SimpleQnADialog : QnAMakerDialog
+{
+}
+```
+
+### v4
+
+```csharp
+public class QnABot : ActivityHandler
+{
+  private readonly IConfiguration _configuration;
+  private readonly ILogger<QnABot> _logger;
+  private readonly IHttpClientFactory _httpClientFactory;
+
+  public QnABot(IConfiguration configuration, ILogger<QnABot> logger, IHttpClientFactory httpClientFactory)
+  {
+    _configuration = configuration;
+    _logger = logger;
+    _httpClientFactory = httpClientFactory;
+  }
+
+  protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+  {
+    var httpClient = _httpClientFactory.CreateClient();
+
+    var qnaMaker = new QnAMaker(new QnAMakerEndpoint
+    {
+      KnowledgeBaseId = _configuration["QnAKnowledgebaseId"],
+      EndpointKey = _configuration["QnAEndpointKey"],
+      Host = _configuration["QnAEndpointHostName"]
+    },
+    null,
+    httpClient);
+
+    _logger.LogInformation("Calling QnA Maker");
+
+    // The actual call to the QnA Maker service.
+    var response = await qnaMaker.GetAnswersAsync(turnContext);
+    if (response != null && response.Length > 0)
+    {
+      await turnContext.SendActivityAsync(MessageFactory.Text(response[0].Answer), cancellationToken);
+    }
+    else
+    {
+      await turnContext.SendActivityAsync(MessageFactory.Text("No QnA Maker answers were found."), cancellationToken);
+    }
+  }
+}
+```

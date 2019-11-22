@@ -10,11 +10,12 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>
-            Shared properties for all activities
+            Shared properties for all activities.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -42,14 +44,14 @@
       </Parameters>
       <Docs>
         <param name="reference">The conversation reference.</param>
-        <param name="isIncoming">(Optional) <c>true</c> to treat the activity as an 
+        <param name="isIncoming">(Optional) <c>true</c> to treat the activity as an
             incoming activity, where the bot is the recipient; otherwaire <c>false</c>.
             Default is <c>false</c>, and the activity will show the bot as the sender.</param>
         <summary>
-            Updates an activity with the delivery information from an existing 
+            Updates an activity with the delivery information from an existing
             conversation reference.
             </summary>
-        <returns>To be added.</returns>
+        <returns>Activity.</returns>
         <remarks>Call <see cref="M:Microsoft.Bot.Schema.IActivity.GetConversationReference" /> on an incoming
             activity to get a conversation reference that you can then use to update an
             outgoing activity with the correct delivery information.
@@ -71,6 +73,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -78,9 +81,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Return IContactRelationUpdateActivity if this is a contactRelationUpdate activity, null otherwise
+            Return IContactRelationUpdateActivity if this is a contactRelationUpdate activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IContactRelationUpdateActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,6 +100,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -104,9 +108,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Return IConversationUpdateActivity if this is a conversationUpdate activity, null otherwise
+            Return IConversationUpdateActivity if this is a conversationUpdate activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IConversationUpdateActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -130,9 +135,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Return IEndOfConversationActivity if this is an end-of-conversation activity, null otherwise
+            Return IEndOfConversationActivity if this is an end-of-conversation activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IEndOfConversationActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,6 +154,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -156,9 +162,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Returns IEventActivity if this is an event activity, null otherwise
+            Returns IEventActivity if this is an event activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IEventActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,6 +181,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInstallationUpdateActivity</ReturnType>
@@ -182,9 +189,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Return IInstallationUpdateActivity if this is a installationUpdate activity, null otherwise
+            Return IInstallationUpdateActivity if this is a installationUpdate activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IInstallationUpdateActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,6 +208,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -208,9 +216,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Returns IInvokeActivity if this is an invoke activity, null otherwise
+            Returns IInvokeActivity if this is an invoke activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IInvokeActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,6 +235,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -234,9 +243,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Return IMessageActivity if this is a message activity, null otherwise
+            Return IMessageActivity if this is a message activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IMessageActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,6 +262,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageDeleteActivity</ReturnType>
@@ -260,9 +270,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Returns IMessageDeleteActivity if this is a message delete activity, null otherwise
+            Returns IMessageDeleteActivity if this is a message delete activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IMessageDeleteActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,6 +289,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageReactionActivity</ReturnType>
@@ -286,9 +297,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Returns IMessageDeleteActivity if this is a message delete activity, null otherwise
+            Returns IMessageDeleteActivity if this is a message reaction activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IMessageReactionActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,6 +316,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageUpdateActivity</ReturnType>
@@ -312,9 +324,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Returns IMessageUpdateActivity if this is a message update activity, null otherwise
+            Returns IMessageUpdateActivity if this is a message update activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>IMessageUpdateActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,6 +343,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ISuggestionActivity</ReturnType>
@@ -338,9 +351,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Returns IMessageDeleteActivity if this is a message delete activity, null otherwise
+            Returns IMessageDeleteActivity if this is a suggestion activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>ISuggestionActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,6 +370,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -364,9 +378,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Return ITypingActivity if this is a typing activity, null otherwise
+            Return ITypingActivity if this is a typing activity, null otherwise.
             </summary>
-        <returns>To be added.</returns>
+        <returns>ITypingActivity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,28 +397,31 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Channel-specific payload
-            </summary>
-        <value>To be added.</value>
+             Gets or sets channel-specific payload.
+             </summary>
+        <value>
+             Channel-specific payload.
+             </value>
         <remarks>
-            Some channels will provide channel specific data.
+             Some channels will provide channel specific data.
             
-            For a message originating in the channel it might provide the original native schema object for the channel. 
+             For a message originating in the channel it might provide the original native schema object for the channel.
             
-            For a message coming into the channel it might accept a payload allowing you to create a "native" response for the channel.
+             For a message coming into the channel it might accept a payload allowing you to create a "native" response for the channel.
             
-            Example:
-            * Email - The Email Channel will put the original Email metadata into the ChannelData object for outgoing messages, and will accept
-            on incoming message a Subject property, and a HtmlBody which can contain Html.  
+             Example:
+             * Email - The Email Channel will put the original Email metadata into the ChannelData object for outgoing messages, and will accept
+             on incoming message a Subject property, and a HtmlBody which can contain Html.
             
-            The channel data essentially allows a bot to have access to native functionality on a per channel basis.
-            </remarks>
+             The channel data essentially allows a bot to have access to native functionality on a per channel basis.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelId">
@@ -420,15 +437,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Channel this activity is associated with
+            Gets or sets Channel this activity is associated with.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Channel this activity is associated with.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,15 +465,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationAccount</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Address for the conversation that this activity is associated with
+            Gets or sets Address for the conversation that this activity is associated with.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Address for the conversation that this activity is associated with.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,15 +493,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Collection of Entity objects, each of which contains metadata about this activity. Each Entity object is typed.
+            Gets or sets collection of Entity objects, each of which contains metadata about this activity. Each Entity object is typed.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Collection of Entity objects, each of which contains metadata about this activity. Each Entity object is typed.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,15 +521,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ChannelAccount</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Sender address
+            Gets or sets Sender address.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Sender address.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,6 +549,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -550,6 +580,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -576,15 +607,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            ID for the activity
+            Gets or sets iD for the activity.
             </summary>
-        <value>To be added.</value>
+        <value>
+            ID for the activity.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,15 +635,21 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Client time when message was sent (local time or UTC)
+            Gets or sets the local date and time of the message,
+            expressed in ISO-8601 format.
+            For example, 2016-09-23T13:07:49.4714686-07:00.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Local date and time of the message,
+            expressed in ISO-8601 format.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -626,15 +666,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ChannelAccount</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Address that received the message
+            Gets or sets address that received the message.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Address that received the message.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,15 +694,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The original ID this activity is a response to
+            Gets or sets the original ID this activity is a response to.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The original ID this activity is a response to.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -676,15 +722,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Service URL where responses to this activity should be sent
+            Gets or sets service URL where responses to this activity should be sent.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Service URL where responses to this activity should be sent.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -701,15 +750,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Timestamp when this message was sent (UTC)
+            Gets or sets timestamp when this message was sent (UTC).
             </summary>
-        <value>To be added.</value>
+        <value>
+            Timestamp when this message was sent (UTC).
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -726,6 +778,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -737,12 +790,12 @@
         <Parameter Name="instance" Type="TypeT" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TypeT"></typeparam>
-        <param name="instance"></param>
+        <typeparam name="TypeT">Type T.</typeparam>
+        <param name="instance">instance.</param>
         <summary>
-            Try to get the channeldata as a strongly typed object 
+            Try to get the channeldata as a strongly typed object.
             </summary>
-        <returns>false if there is no valid channeldata available</returns>
+        <returns>false if there is no valid channeldata available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,15 +812,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Activity type
+            Gets or sets activity type.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Activity type.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

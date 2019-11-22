@@ -2,11 +2,10 @@
 title: Create data-driven experiences with Azure Search | Microsoft Docs
 description: Learn how to create data-driven experiences with Azure Search and help users navigate large amounts of content in a bot with the Bot Framework SDK for Node.js and Azure Search.
 author: matthewshim-ms
-ms.author: v-shimma
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

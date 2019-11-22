@@ -6,19 +6,18 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
 # Send and receive messages
 
-The Bot Connector service enables a bot to communicate across multiple channels such as Skype, Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](bot-framework-rest-connector-activities.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
+The Bot Connector service enables a bot to communicate across multiple channels such as Skype, Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](https://aka.ms/botSpecs-activitySchema) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
 
 ## <a id="create-reply"></a> Reply to a message
 
 ### Create a reply 
 
-When the user sends a message to your bot, your bot will receive the message as an [Activity][Activity] object of type **message**. To create a reply to a user's message, create a new [Activity][Activity] object and start by setting these properties:
+When the user sends a message to your bot, your bot will receive the message as an [Activity][] object of type **message**. To create a reply to a user's message, create a new `Activity` object and start by setting these properties:
 
 | Property | Value |
 |----|----|
@@ -41,7 +40,7 @@ To send the reply, issue this request:
 POST /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-In this request URI, replace **{conversationId}** with the value of the `conversation` object's `id` property within your (reply) Activity and replace **{activityId}** with the value of the `replyToId` property within your (reply) Activity. Set the body of the request to the [Activity][Activity] object that you created to represent your reply.
+In this request URI, replace **{conversationId}** with the value of the `conversation` object's `id` property within your (reply) Activity and replace **{activityId}** with the value of the `replyToId` property within your (reply) Activity. Set the body of the request to the [Activity][] object that you created to represent your reply.
 
 The following example shows a request that sends a simple text-only reply to a user's message. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
@@ -83,7 +82,7 @@ POST /v3/conversations/{conversationId}/activities
 
 In this request URI, replace **{conversationId}** with the ID of the conversation. 
     
-Set the body of the request to an [Activity][Activity] object that you create to represent your reply.
+Set the body of the request to an [Activity][] object that you create to represent your reply.
 
 > [!NOTE]
 > The Bot Framework does not impose any restrictions on the number of messages that a bot may send. 
@@ -104,7 +103,7 @@ To start a conversation, issue this request:
 POST /v3/conversations
 ```
 
-Set the body of the request to a [Conversation][Conversation] object that specifies your bot's account information and the account information of the user(s) that you want to include in the conversation.
+Set the body of the request to a [ConversationParameters][] object that specifies your bot's account information and the account information of the user(s) that you want to include in the conversation.
 
 > [!NOTE]
 > Not all channels support group conversations. Consult the channel's documentation to determine whether a channel supports group conversations and to identify the maximum number of participants that a channel allows in a conversation.
@@ -146,10 +145,8 @@ Your bot can then use this conversation ID to [send a message](#send-message) to
 
 ## Additional resources
 
-- [Activities overview](bot-framework-rest-connector-activities.md)
 - [Create messages](bot-framework-rest-connector-create-messages.md)
+- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
-[ConversationAccount]: bot-framework-rest-connector-api-reference.md#conversationaccount-object
-[Conversation]: bot-framework-rest-connector-api-reference.md#conversation-object
-
+[ConversationParameters]: bot-framework-rest-connector-api-reference.md#conversationparameters-object

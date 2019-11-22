@@ -2,11 +2,10 @@
 title: Define conversation steps with waterfalls | Microsoft Docs
 description: Learn how to use waterfalls to define the steps of a conversation with the Bot Framework SDK for Node.js.
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DialogContext</BaseTypeName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -41,7 +43,9 @@
         <summary>
             Gets the index of the current waterfall step being executed.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The index of the current waterfall step being executed.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +61,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -66,13 +71,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="result">Optional result to pass to next step.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="result">(Optional) result to pass to the next step of the current waterfall dialog.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
             Used to skip to the next waterfall step.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> of <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>In the next step of the waterfall, the <see cref="P:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.Result" /> property of the
+            waterfall step context will contain the value of the <paramref name="result" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -88,6 +95,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -96,7 +104,9 @@
         <summary>
             Gets any options the waterfall dialog was called with.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Any options the waterfall dialog was called with.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,6 +123,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -121,7 +132,9 @@
         <summary>
             Gets the reason the waterfall step is being executed.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The reason the waterfall step is being executed.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,6 +151,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -146,7 +160,9 @@
         <summary>
             Gets results returned by a dialog called in the previous waterfall step.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Results returned by a dialog called in the previous waterfall step.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,6 +179,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
@@ -171,7 +188,9 @@
         <summary>
             Gets a dictionary of values which will be persisted across all waterfall steps.
             </summary>
-        <value>To be added.</value>
+        <value>
+            A dictionary of values which will be persisted across all waterfall steps.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

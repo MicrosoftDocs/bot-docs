@@ -3,12 +3,11 @@ title: Reuse dialogs | Microsoft Docs
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
-ms.date: 05/23/2019
+ms.date: 11/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,7 +20,7 @@ With component dialogs, you can create independent dialogs to handle specific sc
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], the [dialogs library][concept-dialogs], and how to [manage conversations][simple-flow].
-- A copy of the multi-turn prompt sample in either [**CSharp**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the multi-turn prompt sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
 
 ## About the sample
 
@@ -75,11 +74,11 @@ Here the `UserProfileDialog` class extends `ComponentDialog`.
 
 Within the constructor, the `AddDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `InitialDialogId` property. When you start a component dialog, it will start its _initial dialog_.
 
-[!code-javascript[Constructor](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=25-47)]
+[!code-javascript[Constructor](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=25-45)]
 
 This is the implementation of the first step of the waterfall dialog.
 
-[!code-javascript[First step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=66-73)]
+[!code-javascript[First step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=64-71)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
@@ -101,15 +100,9 @@ To use a component dialog, add an instance of it to the bot's dialog set - this 
 
 # [C#](#tab/csharp)
 
-**DialogExtensions.cs**
+**Bots\DialoBot.cs**
 
-In the sample, this is done using the `Run` extension method as shown below.
-
-[!code-csharp[Run method](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/DialogExtensions.cs?range=13-24)]
-
-**Bots\DialogBot.cs**
-
-The `Run` method is called from the bot's `OnMessageActivityAsync` method.
+In the sample, this is done using the `RunAsync` method that is called from the bot's `OnMessageActivityAsync` method.
 
 [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48)]
 
@@ -119,13 +112,13 @@ The `Run` method is called from the bot's `OnMessageActivityAsync` method.
 
 In the sample, we've added a `run` method to the user profile dialog.
 
-[!code-javascript[run method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=55-64)]
+[!code-javascript[run method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=53-62)]
 
 **bots/dialogBot.js**
 
 The `run` method is called from the bot's `onMessage` method.
 
-[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=30-37)]
+[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-31&highlight=5)]
 
 ---
 

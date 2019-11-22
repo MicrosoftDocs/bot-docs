@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -42,13 +44,47 @@
       <Docs>
         <param name="httpClient">As part of validating JWT Tokens, endorsements need to be feteched from
             sources specified by the relevant security URLs. This HttpClient is used to allow for resource
-            pooling around those retrievals. As those resources require TLS sharing the HttpClient is 
+            pooling around those retrievals. As those resources require TLS sharing the HttpClient is
             important to overall perfomance.</param>
-        <param name="tokenValidationParameters"></param>
-        <param name="metadataUrl"></param>
-        <param name="allowedSigningAlgorithms"></param>
+        <param name="tokenValidationParameters">tokenValidationParameters.</param>
+        <param name="metadataUrl">metadataUrl.</param>
+        <param name="allowedSigningAlgorithms">allowedSigningAlgorithms.</param>
         <summary>
-            Extracts relevant data from JWT Tokens
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.JwtTokenExtractor" /> class.
+            Extracts relevant data from JWT Tokens.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JwtTokenExtractor (System.Net.Http.HttpClient httpClient, Microsoft.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, System.Collections.Generic.HashSet&lt;string&gt; allowedSigningAlgorithms, Microsoft.IdentityModel.Protocols.ConfigurationManager&lt;System.Collections.Generic.IDictionary&lt;string,System.Collections.Generic.HashSet&lt;string&gt;&gt;&gt; customEndorsementsConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, class Microsoft.IdentityModel.Tokens.TokenValidationParameters tokenValidationParameters, string metadataUrl, class System.Collections.Generic.HashSet`1&lt;string&gt; allowedSigningAlgorithms, class Microsoft.IdentityModel.Protocols.ConfigurationManager`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, class System.Collections.Generic.HashSet`1&lt;string&gt;&gt;&gt; customEndorsementsConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenExtractor.#ctor(System.Net.Http.HttpClient,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String,System.Collections.Generic.HashSet{System.String},Microsoft.IdentityModel.Protocols.ConfigurationManager{System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.HashSet{System.String}}})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.JwtTokenExtractor : System.Net.Http.HttpClient * Microsoft.IdentityModel.Tokens.TokenValidationParameters * string * System.Collections.Generic.HashSet&lt;string&gt; * Microsoft.IdentityModel.Protocols.ConfigurationManager&lt;System.Collections.Generic.IDictionary&lt;string, System.Collections.Generic.HashSet&lt;string&gt;&gt;&gt; -&gt; Microsoft.Bot.Connector.Authentication.JwtTokenExtractor" Usage="new Microsoft.Bot.Connector.Authentication.JwtTokenExtractor (httpClient, tokenValidationParameters, metadataUrl, allowedSigningAlgorithms, customEndorsementsConfig)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="tokenValidationParameters" Type="Microsoft.IdentityModel.Tokens.TokenValidationParameters" />
+        <Parameter Name="metadataUrl" Type="System.String" />
+        <Parameter Name="allowedSigningAlgorithms" Type="System.Collections.Generic.HashSet&lt;System.String&gt;" />
+        <Parameter Name="customEndorsementsConfig" Type="Microsoft.IdentityModel.Protocols.ConfigurationManager&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Collections.Generic.HashSet&lt;System.String&gt;&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">As part of validating JWT Tokens, endorsements need to be feteched from
+            sources specified by the relevant security URLs. This HttpClient is used to allow for resource
+            pooling around those retrievals. As those resources require TLS sharing the HttpClient is
+            important to overall perfomance.</param>
+        <param name="tokenValidationParameters">tokenValidationParameters.</param>
+        <param name="metadataUrl">metadataUrl.</param>
+        <param name="allowedSigningAlgorithms">allowedSigningAlgorithms.</param>
+        <param name="customEndorsementsConfig">Custom endorsement configuration to be used by the JwtTokenExtractor.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.JwtTokenExtractor" /> class.
+            Extracts relevant data from JWT Tokens.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +102,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -95,6 +132,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -108,6 +146,64 @@
         <param name="scheme">To be added.</param>
         <param name="parameter">To be added.</param>
         <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIdentityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync (string authorizationHeader, string channelId, string[] requiredEndorsements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync(string authorizationHeader, string channelId, string[] requiredEndorsements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenExtractor.GetIdentityAsync(System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIdentityAsync (authorizationHeader As String, channelId As String, requiredEndorsements As String()) As Task(Of ClaimsIdentity)" />
+      <MemberSignature Language="F#" Value="member this.GetIdentityAsync : string * string * string[] -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="jwtTokenExtractor.GetIdentityAsync (authorizationHeader, channelId, requiredEndorsements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authorizationHeader" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="requiredEndorsements" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="authorizationHeader">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="requiredEndorsements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIdentityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync (string scheme, string parameter, string channelId, string[] requiredEndorsements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; GetIdentityAsync(string scheme, string parameter, string channelId, string[] requiredEndorsements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenExtractor.GetIdentityAsync(System.String,System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIdentityAsync (scheme As String, parameter As String, channelId As String, requiredEndorsements As String()) As Task(Of ClaimsIdentity)" />
+      <MemberSignature Language="F#" Value="member this.GetIdentityAsync : string * string * string * string[] -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="jwtTokenExtractor.GetIdentityAsync (scheme, parameter, channelId, requiredEndorsements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scheme" Type="System.String" />
+        <Parameter Name="parameter" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="requiredEndorsements" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="scheme">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="requiredEndorsements">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

@@ -3,9 +3,9 @@ title: Build a speech-enabled bot with Cortana skills | Microsoft Docs
 description: Learn how to build a speech-enabled bot with Cortana skills and the Bot Framework SDK for Node.js.
 author: DeniseMak
 manager: kamrani
+ms.author: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 02/10/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
@@ -435,8 +435,8 @@ If you have a bot running locally or deployed in the cloud, you can invoke it fr
 [Send]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#send
 [CortanaDevCenter]: https://developer.microsoft.com/cortana
 
-[CortanaSpecificEntities]: https://aka.ms/lgvcto
-[CortanaAuth]: https://aka.ms/vsdqcj
+[CortanaSpecificEntities]: https://aka.ms/cortana-channel-data
+[CortanaAuth]: https://aka.ms/add-auth-cortana-skill
 
 [InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines
 [VoiceDesign]: https://aka.ms/cortana-design-voice

@@ -3,11 +3,10 @@ title: Azure Bot Service tutorial to have a bot answer questions | Microsoft Doc
 description: Tutorial to use QnA Maker in your bot to answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -73,7 +72,7 @@ The knowledge base is now ready for your bot to use.
 ## Add knowledge base information to your bot
 Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp or JavaScript bot to your knowledge base.
 
-## [C#](#tab/csharp)
+# [C#](#tab/csharp)
 
 Add the following values to you appsetting.json file:
 
@@ -83,13 +82,13 @@ Add the following values to you appsetting.json file:
   "MicrosoftAppPassword": "",
   "ScmType": "None",
   
-  "QnAKnowledgebaseId": "<knowledge-base-id>",
-  "QnAAuthKey": "<qna-maker-resource-key>",
-  "QnAEndpointHostName": "<your-hostname>" // This is a URL ending in /qnamaker
+  "QnAKnowledgebaseId": "knowledge-base-id",
+  "QnAAuthKey": "qna-maker-resource-key",
+  "QnAEndpointHostName": "your-hostname" // This is a URL ending in /qnamaker
 }
 ```
 
-## [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 Add the following values to your .env file:
 
@@ -98,9 +97,9 @@ MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
 
-QnAKnowledgebaseId="<knowledge-base-id>"
-QnAAuthKey="<qna-maker-resource-key>"
-QnAEndpointHostName="<your-hostname>" // This is a URL ending in /qnamaker
+QnAKnowledgebaseId="knowledge-base-id"
+QnAAuthKey="qna-maker-resource-key"
+QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
 ```
 
 ---
@@ -117,7 +116,7 @@ Now save your edits.
 
 Update your initialization code to load the service information for your knowledge base.
 
-## [C#](#tab/csharp)
+# [C#](#tab/csharp)
 
 1. Add the **Microsoft.Bot.Builder.AI.QnA** NuGet package to your project.
 
@@ -209,7 +208,7 @@ Update your initialization code to load the service information for your knowled
    }
    ```
 
-## [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 1. Open a terminal or command prompt to the root directory for your project.
 1. Add the **botbuilder-ai** npm package to your project.
@@ -257,7 +256,7 @@ Update your initialization code to load the service information for your knowled
             this.qnaMaker = new QnAMaker(configuration, qnaOptions);
    ```
 
-1. Finally, update your your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
+1. Finally, update your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
 
     **bot.js**
 
@@ -301,12 +300,12 @@ We can now republish your bot back to Azure.
 >
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
-## [C#](#tab/csharp)
+# [C#](#tab/csharp)
 ```cmd
-az webapp deployment source config-zip --resource-group <resource-group-name> --name <bot-name-in-azure> --src "c:\bot\mybot.zip"
+az webapp deployment source config-zip --resource-group "resource-group-name" --name "bot-name-in-azure" --src "c:\bot\mybot.zip"
 ```
 
-## [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 [!INCLUDE [publish snippet](~/includes/deploy/snippet-publish-js.md)]
 

@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,10 +18,10 @@
   <Interfaces />
   <Docs>
     <summary>
-            TemplateManager manages set of ITemplateRenderer implementations
+            TemplateManager manages set of ITemplateRenderer implementations.
             </summary>
     <remarks>
-            ITemplateRenderer implements 
+            ITemplateRenderer implements.
             </remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,6 +58,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -80,6 +83,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
@@ -87,9 +91,9 @@
       <Parameters />
       <Docs>
         <summary>
-            List registered template engines
+            List registered template engines.
             </summary>
-        <returns />
+        <returns>List of rendered templates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,6 +110,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TemplateManager.TemplateManager</ReturnType>
@@ -114,11 +119,11 @@
         <Parameter Name="renderer" Type="Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer" />
       </Parameters>
       <Docs>
-        <param name="renderer"></param>
+        <param name="renderer">Data for binding templates.</param>
         <summary>
-            Add a template engine for binding templates
+            Add a template engine for binding templates.
             </summary>
-        <returns>To be added.</returns>
+        <returns>Reurns a template manager.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,6 +140,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
@@ -146,14 +152,14 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="turnContext"></param>
-        <param name="language"></param>
-        <param name="templateId"></param>
-        <param name="data"></param>
+        <param name="turnContext">Context turn.</param>
+        <param name="language">Template language.</param>
+        <param name="templateId">The id of the template.</param>
+        <param name="data">Data to render the tempplate with.</param>
         <summary>
-            Render the template
+            Render the template.
             </summary>
-        <returns />
+        <returns>Task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,6 +176,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -180,13 +187,13 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="turnContext"></param>
-        <param name="templateId"></param>
-        <param name="data"></param>
+        <param name="turnContext">The context of the turn.</param>
+        <param name="templateId">Id of the template.</param>
+        <param name="data">Data to render the template.</param>
         <summary>
-            Send a reply with the template
+            Send a reply with the template.
             </summary>
-        <returns />
+        <returns>Task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,6 +210,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

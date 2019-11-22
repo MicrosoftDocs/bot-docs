@@ -10,13 +10,16 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Methods for determining channel specific functionality.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +35,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,6 +56,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -60,9 +65,11 @@
         <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The Turn Context to retrieve the Activity's Channel Id from.</param>
+        <summary>
+            Get the Channel Id from the current Activity on the Turn Context.
+            </summary>
+        <returns>The Channel Id from the Turn Context's Activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,6 +86,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -87,9 +95,11 @@
         <Parameter Name="channelId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channelId">The Channel to check for Message Feed.</param>
+        <summary>
+            Determine if a Channel has a Message Feed.
+            </summary>
+        <returns>True if the Channel has a Message Feed, False if it does not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,6 +116,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -114,9 +125,11 @@
         <Parameter Name="channelId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channelId">The Channel to determine Maximum Action Title Length.</param>
+        <summary>
+            Maximum length allowed for Action Titles.
+            </summary>
+        <returns>The total number of characters allowed for an Action Title on a specific Channel.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,6 +146,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -142,10 +156,12 @@
         <Parameter Name="buttonCnt" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <param name="buttonCnt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channelId">The Channel to check if the Card Actions are supported in.</param>
+        <param name="buttonCnt">(Optional) The number of Card Actions to check for the Channel.</param>
+        <summary>
+            Determine if a number of Card Actions are supported by a Channel.
+            </summary>
+        <returns>True if the Channel supports the buttonCnt total Card Actions, False if the Channel does not support that number of Card Actions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,6 +178,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -171,10 +188,12 @@
         <Parameter Name="buttonCnt" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <param name="buttonCnt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channelId">The Channel to check the if Suggested Actions are supported in.</param>
+        <param name="buttonCnt">(Optional) The number of Suggested Actions to check for the Channel.</param>
+        <summary>
+            Determine if a number of Suggested Actions are supported by a Channel.
+            </summary>
+        <returns>True if the Channel supports the buttonCnt total Suggested Actions, False if the Channel does not support that number of Suggested Actions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3,11 +3,10 @@ title: Implement a greeting dialog | Microsoft Docs
 description: Use a dialog to greet a user when they join a conversation.
 keywords: greeting, dialogs, conversation flow, dialog set
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

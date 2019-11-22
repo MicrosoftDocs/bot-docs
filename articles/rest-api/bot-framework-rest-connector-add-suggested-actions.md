@@ -6,7 +6,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
@@ -20,7 +19,7 @@ ms.date: 12/13/2017
 
 ## Send suggested actions
 
-To add suggested actions to a message, set the `suggestedActions` property of the [Activity][Activity] to specify the list of [CardAction][CardAction] objects that represent the buttons to be presented to the user. 
+To add suggested actions to a message, set the `suggestedActions` property of the [Activity][] object to specify the list of [CardAction][] objects that represent the buttons to be presented to the user. 
 
 The following request sends a message that presents three suggested actions to the user. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
@@ -80,7 +79,4 @@ When the user taps one of the suggested actions, the bot will receive a message 
 [channelInspector]: ../bot-service-channel-inspector.md
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
-
 [CardAction]: bot-framework-rest-connector-api-reference.md#cardaction-object
-
-[SuggestedAction]: bot-framework-rest-connector-api-reference.md#suggestedactions-object

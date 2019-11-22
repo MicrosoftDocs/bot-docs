@@ -3,11 +3,10 @@ title: Activity processing | Microsoft Docs
 description: Understand activity processing in the bot SDK.
 keywords: bot adapter, custom middleware, short circuit, fallback, event handlers
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

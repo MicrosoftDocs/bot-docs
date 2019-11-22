@@ -3,11 +3,10 @@ title: Add media to messages | Microsoft Docs
 description: Learn how to add media to messages using the Bot Framework SDK.
 keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0' 
 ---
@@ -18,7 +17,15 @@ monikerRange: 'azure-bot-service-4.0'
 
 Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations.
 
-See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
+## Prerequisites
+- Knowledge of [bot basics](bot-builder-basics.md).
+- The code in this article is based on the following samples:
+
+  | Sample code | C# | JS |
+  | :------ | :----- | :---|
+  | Cards | [C# sample](https://aka.ms/bot-cards-sample-code) | [JS sample](https://aka.ms/bot-cards-js-sample-code) |
+  | Attachments | [C# sample](https://aka.ms/bot-attachments-sample-code) | [JS sample](https://aka.ms/bot-attachments-sample-code-js) |
+  | Suggested actions | [C# sample](https://aka.ms/SuggestedActionsCSharp) | [JS sample](https://aka.ms/SuggestedActionsJS) |
 
 ## Send attachments
 
@@ -236,14 +243,6 @@ To send a carousel of cards, send a reply with the attachments as an array and t
 See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
 For detailed information on the schema, see the [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema) and the [message activity section](https://aka.ms/botSpecs-activitySchema#message-activity) of the Bot Framework Activity schema.
-
-| Sample code | C# | JS |
-| :------ | :----- | :---|
-| Cards | [C# sample](https://aka.ms/bot-cards-sample-code) | [JS sample](https://aka.ms/bot-cards-js-sample-code) |
-| Attachments | [C# sample](https://aka.ms/bot-attachments-sample-code) | [JS sample](https://aka.ms/bot-attachments-sample-code-js) |
-| Suggested actions | [C# sample](https://aka.ms/SuggestedActionsCSharp) | [JS sample](https://aka.ms/SuggestedActionsJS) |
-
-Refer to Bot Builder Samples repo on [GitHub](https://aka.ms/bot-samples-readme) for additional samples.
 
 ### Code sample for processing Adaptive Card input
 

@@ -2,11 +2,10 @@
 title: Prompt for user input | Microsoft Docs
 description: Learn how to use prompts to collect user input with the Bot Framework SDK for Node.js.
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---

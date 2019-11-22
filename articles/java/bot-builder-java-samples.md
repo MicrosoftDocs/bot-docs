@@ -2,11 +2,10 @@
 title: Sample bots for Bot Framework SDK for Java | Microsoft Docs
 description: Explore sample bots that can help kickstart your bot development with the Bot Framework SDK for Java.
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0' 
 ---

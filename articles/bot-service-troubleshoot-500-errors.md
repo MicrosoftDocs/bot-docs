@@ -3,11 +3,10 @@ title: Troubleshoot bot HTTP 500 errors | Microsoft Docs
 description: How to troubleshoot HTTP 500 errors in a deployed bot.
 keywords: troubleshoot, HTTP 500, problems.
 author: jonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 4/30/2019
 ---
 
