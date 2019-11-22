@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -36,15 +37,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Descriptive label for the trace.
+            Gets or Sets Descriptive label for the trace.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Descriptive label for the trace.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +65,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Name of the trace activity.
+            Gets or Sets Name of the trace activity.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Name of the trace activity.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,15 +93,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Reference to another conversation or activity.
+            Gets or sets of Sets Open-ended value.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Open-ended value.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,15 +121,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Open-ended value.
+            Gets or Sets Open-ended value.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Open-ended value.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,15 +149,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Unique string which identifies the format of the value object.
+            Gets or Sets Unique string which identifies the format of the value object.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Unique string which identifies the format of the value object.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

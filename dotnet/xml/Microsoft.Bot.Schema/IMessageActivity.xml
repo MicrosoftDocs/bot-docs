@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,7 +19,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            A message in a conversation
+            A message in a conversation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,15 +37,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Hint for how to deal with multiple attachments: [list|carousel] Default:list
+            Gets or sets hint for how to deal with multiple attachments: [list|carousel] Default:list.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Hint for how to deal with multiple attachments: [list|carousel] Default:list.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +65,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Attachments
+            Gets or sets attachments.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Attachments.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,18 +93,24 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Hint to describe how this activity should be delivered.  
+            Gets or sets hint to describe how this activity should be delivered.
             null or "default" = default delivery
             "notification" = notification semantics
-            See DeliveryModes for current constants
+            See DeliveryModes for current constants.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Hint to describe how this activity should be delivered.
+            null or "default" = default delivery
+            "notification" = notification semantics
+            See DeliveryModes for current constants.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,15 +127,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            DateTime to expire the activity as ISO 8601 encoded datetime
+            Gets or sets dateTime to expire the activity as ISO 8601 encoded datetime.
             </summary>
-        <value>To be added.</value>
+        <value>
+            DateTime to expire the activity as ISO 8601 encoded datetime.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,6 +155,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Mention[]</ReturnType>
@@ -146,9 +163,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Get mentions
+            Get mentions.
             </summary>
-        <returns>To be added.</returns>
+        <returns>mentions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,6 +182,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -172,9 +190,9 @@
       <Parameters />
       <Docs>
         <summary>
-            True if this activity has text, attachments, or channelData
+            True if this activity has text, attachments, or channelData.
             </summary>
-        <returns>To be added.</returns>
+        <returns>True or false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,16 +209,20 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Importance of the activity 
-            Valid values are "low", "normal", and "high". Default value is "normal."
+            Gets or sets importance of the activity
+            Valid values are "low", "normal", and "high". Default value is "normal.".
             </summary>
-        <value>To be added.</value>
+        <value>
+            Importance of the activity
+            Valid values are "low", "normal", and "high". Default value is "normal.".
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,15 +239,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates whether the bot is accepting, expecting, or ignoring input
+            Gets or sets indicates whether the bot is accepting, expecting, or ignoring input.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Indicates whether the bot is accepting, expecting, or ignoring input.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,17 +267,20 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The language code of the Text field
+            Gets or sets the language code of the Text field.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The language code of the Text field.
+            </value>
         <remarks>
-            See https://msdn.microsoft.com/library/hh456380.aspx for a list of valid language codes
+            See https://msdn.microsoft.com/library/hh456380.aspx for a list of valid language codes.
             </remarks>
       </Docs>
     </Member>
@@ -269,15 +297,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Speak tag (SSML markup for text to speech)
+            Gets or sets speak tag (SSML markup for text to speech).
             </summary>
-        <value>To be added.</value>
+        <value>
+            Speak tag (SSML markup for text to speech).
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,15 +325,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.SuggestedActions</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            SuggestedActions are used to express actions for interacting with a card like keyboards/quickReplies
+            Gets or sets suggestedActions are used to express actions for interacting with a card like keyboards/quickReplies.
             </summary>
-        <value>To be added.</value>
+        <value>
+            SuggestedActions are used to express actions for interacting with a card like keyboards/quickReplies.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,15 +353,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Text to display if the channel cannot render cards
+            Gets or sets text to display if the channel cannot render cards.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Text to display if the channel cannot render cards.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,15 +381,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Content for the message
+            Gets or sets content for the message.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Content for the message.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,15 +409,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Format of text fields [plain|markdown] Default:markdown
+            Gets or sets format of text fields [plain|markdown] Default:markdown.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Format of text fields [plain|markdown] Default:markdown.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,15 +437,18 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Value provided with CardAction
+            Gets or sets value provided with CardAction.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Value provided with CardAction.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

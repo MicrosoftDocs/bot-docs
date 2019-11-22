@@ -3,11 +3,10 @@ title: Send and receive text message | Microsoft Docs
 description: Learn about how to send and receive text messages within the Bot Framework SDK.
 keywords: sending message, message activities, simple text message, message, text message, receive message  
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -19,6 +18,8 @@ monikerRange: 'azure-bot-service-4.0'
 The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. This article describes how to send simple text messages.
 
 Markdown is supported for most text fields, but support may vary by channel.
+
+For a running bot sending and receiving messages, follow the quickstarts at the top of the table of contents or check out the [article on how bots work](bot-builder-basics.md#bot-structure), which also links to simple samples available for you to run yourself.
 
 ## Send a text message
 

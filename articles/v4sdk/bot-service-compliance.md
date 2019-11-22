@@ -2,7 +2,7 @@
 title: Bot Service Compliance | Microsoft Docs
 description: Bot Service Complinace
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

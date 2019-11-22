@@ -1,0 +1,118 @@
+﻿<Type Name="GeographyV2+Types" FullName="Microsoft.Bot.Builder.AI.Luis.GeographyV2+Types">
+  <TypeSignature Language="C#" Value="public static class GeographyV2.Types" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit GeographyV2/Types extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types" />
+  <TypeSignature Language="VB.NET" Value="Public Class GeographyV2.Types" />
+  <TypeSignature Language="F#" Value="type GeographyV2.Types = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Different types of geographic locations.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="City">
+      <MemberSignature Language="C#" Value="public const string City;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string City" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.City" />
+      <MemberSignature Language="VB.NET" Value="Public Const City As String " />
+      <MemberSignature Language="F#" Value="val mutable City : string" Usage="Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.City" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Continent">
+      <MemberSignature Language="C#" Value="public const string Continent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Continent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.Continent" />
+      <MemberSignature Language="VB.NET" Value="Public Const Continent As String " />
+      <MemberSignature Language="F#" Value="val mutable Continent : string" Usage="Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.Continent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountryRegion">
+      <MemberSignature Language="C#" Value="public const string CountryRegion;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CountryRegion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.CountryRegion" />
+      <MemberSignature Language="VB.NET" Value="Public Const CountryRegion As String " />
+      <MemberSignature Language="F#" Value="val mutable CountryRegion : string" Usage="Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.CountryRegion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="POI">
+      <MemberSignature Language="C#" Value="public const string POI;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string POI" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.POI" />
+      <MemberSignature Language="VB.NET" Value="Public Const POI As String " />
+      <MemberSignature Language="F#" Value="val mutable POI : string" Usage="Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.POI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public const string State;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string State" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.State" />
+      <MemberSignature Language="VB.NET" Value="Public Const State As String " />
+      <MemberSignature Language="F#" Value="val mutable State : string" Usage="Microsoft.Bot.Builder.AI.Luis.GeographyV2.Types.State" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

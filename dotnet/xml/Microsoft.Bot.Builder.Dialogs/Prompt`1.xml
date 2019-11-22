@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -19,11 +20,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Prompt`1" />.</typeparam>
+    <typeparam name="T">The type of value the prompt returns.</typeparam>
     <summary>
-            Basic configuration options supported by all prompts.
+            Defines the core behavior of prompt dialogs.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>When the prompt ends, it should return a <typeparamref name="T" /> object that
+            represents the value that was prompted for.
+            Use <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogSet.Add(Microsoft.Bot.Builder.Dialogs.Dialog)" /> or <see cref="M:Microsoft.Bot.Builder.Dialogs.ComponentDialog.AddDialog(Microsoft.Bot.Builder.Dialogs.Dialog)" />
+            to add a prompt to a dialog set or component dialog, respectively.
+            Use <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" /> or
+            <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" /> to start the prompt.
+            If you start a prompt from a <see cref="T:Microsoft.Bot.Builder.Dialogs.WaterfallStep" /> in a <see cref="T:Microsoft.Bot.Builder.Dialogs.WaterfallDialog" />,
+            then the prompt result will be available in the next step of the waterfall.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,16 +48,22 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
         <Parameter Name="validator" Type="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="dialogId">To be added.</param>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dialogId">The ID to assign to this prompt.</param>
+        <param name="validator">Optional, a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" /> that contains additional,
+            custom validation for this prompt.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Prompt`1" /> class.
+            Called from constructors in derived classes to initialize the <see cref="T:Microsoft.Bot.Builder.Dialogs.Prompt`1" /> class.
+            </summary>
+        <remarks>The value of <paramref name="dialogId" /> must be unique within the
+            <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogSet" /> or <see cref="T:Microsoft.Bot.Builder.Dialogs.ComponentDialog" /> to which the prompt is added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendChoices">
@@ -63,6 +78,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -76,15 +92,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="prompt">To be added.</param>
-        <param name="channelId">To be added.</param>
-        <param name="choices">To be added.</param>
-        <param name="style">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prompt">The activity to append the choices to.</param>
+        <param name="channelId">The ID of the user's channel.</param>
+        <param name="choices">The choices to append.</param>
+        <param name="style">Indicates how the choices should be presented to the user.</param>
+        <param name="options">The formatting options to use when presenting the choices.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            When overridden in a derived class, appends choices to the activity when the user is prompted for input.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result contains the updated activity.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDialogAsync">
@@ -99,6 +118,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -109,12 +129,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The dialog context for the current turn of the conversation.</param>
+        <param name="options">Optional, additional information to pass to the prompt being started.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog is pushed onto the dialog stack and is being activated.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the prompt is still
+            active after the turn has been processed by the prompt.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueDialogAsync">
@@ -129,6 +153,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -138,11 +163,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The dialog context for the current turn of conversation.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog is the active dialog and the user replied with a new activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.
+            <para>The prompt generally continues to receive the user's replies until it accepts the
+            user's reply as valid input for the prompt.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPromptAsync">
@@ -157,6 +188,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -169,13 +201,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="isRetry">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="state">Contains state for the current instance of the prompt on the dialog stack.</param>
+        <param name="options">A prompt options object constructed from the options initially provided
+            in the call to <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />.</param>
+        <param name="isRetry">true if this is the first time this prompt dialog instance
+            on the stack is prompting the user for input; otherwise, false.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            When overridden in a derived class, prompts the user for input.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,6 +228,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;&gt;</ReturnType>
@@ -202,13 +240,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="state">Contains state for the current instance of the prompt on the dialog stack.</param>
+        <param name="options">A prompt options object constructed from the options initially provided
+            in the call to <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            When overridden in a derived class, attempts to recognize the user's input.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result describes the result of the recognition attempt.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RepromptDialogAsync">
@@ -223,6 +265,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -233,11 +276,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="instance">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="instance">The instance of the dialog on the stack.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog has been requested to re-prompt the user for input.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,6 +299,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -264,13 +311,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="result">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The dialog context for the current turn of the conversation.</param>
+        <param name="reason">An enumeration values that indicates why the dialog resumed.</param>
+        <param name="result">Optional, value returned from the previous dialog on the stack.
+            The type of the value returned is dependent on the previous dialog.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog resumes being the active dialog on the dialog stack, such as
+            when the previous active dialog on the stack completes.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.</remarks>
       </Docs>
     </Member>
   </Members>

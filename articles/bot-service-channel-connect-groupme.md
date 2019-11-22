@@ -3,11 +3,10 @@ title: Connect a bot to GroupMe | Microsoft Docs
 description: Learn how to configure a bot's connection to GroupMe.
 keywords: bot channel, GroupMe, create GroupMe, credentials
 author: RobStand
-ms.author: RobStand
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 

@@ -2,11 +2,10 @@
 title: Cortana Skills bot scenario | Microsoft Docs
 description: Explore the Cortana Skills bot scenario with the Bot Framework.
 author: BrianRandell
-ms.author: v-brra
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: cognitive-services
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
@@ -32,7 +31,7 @@ Here is the logic flow of a Cortana Skills bot for an auto shop:
 ## Sample bot
 With a Cortana Skills Bot, it's all about personal context. Using Cortana you could use your voice to ask for "Bob's Mobile Maintenance" to come work on your car based on your location. Using personal information exposed via Cortana your bot can confirm the location based on where the user is at when they're talking to the bot.
 
-You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/bot/scenarios).
+You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/abs-scenarios).
 
 ## Components you'll use
 The Cortana Bot uses the following components:

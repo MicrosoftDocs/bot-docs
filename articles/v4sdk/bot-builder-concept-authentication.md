@@ -3,11 +3,10 @@ title: User authentication in the Azure Bot Service | Microsoft Docs
 description: Learn about user authentication features in the Azure Bot Service.
 keywords: azure bot service, authentication, bot framework token service
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: abs
 ms.date: 05/31/2019
 monikerRange: 'azure-bot-service-4.0'
 ---

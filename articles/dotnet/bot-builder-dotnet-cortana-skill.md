@@ -4,9 +4,9 @@ description: Learn core concepts for building a Cortana skill in the Bot Framewo
 keywords: Bot Framework, Cortana skill, speech, .NET, SDK, key concepts, core concepts
 author: DeniseMak
 manager: kamrani
+ms.author: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 
@@ -340,8 +340,8 @@ If your bot is running locally or deployed in the cloud, you can invoke it from 
 [SSMLRef]: https://aka.ms/cortana-ssml
 [CortanaDevCenter]: https://developer.microsoft.com/cortana
 
-[CortanaSpecificEntities]: https://aka.ms/lgvcto
-[CortanaAuth]: https://aka.ms/vsdqcj
+[CortanaSpecificEntities]: https://aka.ms/cortana-channel-data
+[CortanaAuth]: https://aka.ms/add-auth-cortana-skill
 
 [InvocationNameGuidelines]: https://aka.ms/cortana-invocation-guidelines  
 [VoiceDesign]: https://aka.ms/cortana-design-voice

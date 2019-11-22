@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,11 +37,13 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
-            Creates a SimpleChannelProvider with no ChannelService which will use Public Azure
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.SimpleChannelProvider" /> class.
+            Creates a SimpleChannelProvider with no ChannelService which will use Public Azure.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +61,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="channelService" Type="System.String" />
@@ -65,7 +69,7 @@
       <Docs>
         <param name="channelService">The ChannelService to use. Null or empty strings represent Public Azure, the string 'https://botframework.us' represents US Government Azure, and other values are for private channels.</param>
         <summary>
-            Creates a SimpleChannelProvider with the specified ChannelService
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.SimpleChannelProvider" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,6 +87,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -109,6 +114,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -116,9 +122,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Gets the channel service property for this channel provider
+            Gets the channel service property for this channel provider.
             </summary>
-        <returns>The channel service property for the channel provider</returns>
+        <returns>The channel service property for the channel provider.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,6 +144,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -145,9 +152,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Gets a value of whether this provider represents a channel on US Government Azure
+            Gets a value of whether this provider represents a channel on US Government Azure.
             </summary>
-        <returns>True if this channel provider represents a channel on US Government Azure</returns>
+        <returns>True if this channel provider represents a channel on US Government Azure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,6 +174,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -174,9 +182,9 @@
       <Parameters />
       <Docs>
         <summary>
-            Gets a value of whether this provider represents a channel on Public Azure
+            Gets a value of whether this provider represents a channel on Public Azure.
             </summary>
-        <returns>True if this channel provider represents a channel on Public Azure</returns>
+        <returns>True if this channel provider represents a channel on Public Azure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

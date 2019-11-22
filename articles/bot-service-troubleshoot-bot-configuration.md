@@ -3,11 +3,10 @@ title: Troubleshoot bot configuration issues | Microsoft Docs
 description: How to troubleshoot configuration issues in a deployed bot.
 keywords: troubleshoot, configuration, web chat, problems.
 author: jonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 4/30/2019
 ---
 

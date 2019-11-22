@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/bot-service-quickstart.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/abs-quickstart",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "articles/azure-bot-service-build-options.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-build-online-code-editor",
       "redirect_document_id": true

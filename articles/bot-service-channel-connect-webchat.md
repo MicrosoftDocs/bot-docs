@@ -7,8 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
-ms.date: 12/04/2018
+ms.date: 08/22/2019
 ---
 
 # Connect a bot to Web Chat
@@ -21,7 +20,12 @@ When you [create a bot](bot-service-quickstart.md) with Bot Service, the Web Cha
 
 The Web Chat channel in the Bot Framework Portal contains everything you need to embed the web chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
 
-## <a id="step-1"></a> Get your bot secret key
+## Web Chat and Direct Line considerations
+
+> [!IMPORTANT]
+> Please, keep in mind these important [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+
+## Get your bot secret key
 
 1. Open your bot in the [Azure Portal](http://portal.azure.com) and click **Channels** blade.
 
@@ -52,7 +56,7 @@ To exchange your secret for a token and generate the embed:
 
 2. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the web chat control within an **iframe**. A token is valid for one conversation only; to start another conversation, you must generate a new token.
 
-3. Within the `iframe` **Embed code** that you copied from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#step-1) above), change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
+3. Within the `iframe` **Embed code** that you copied from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above), change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
 
 > [!NOTE]
 > Tokens will automatically be renewed before they expire. 
@@ -112,7 +116,7 @@ Use this option if you want to allow other developers to easily embed your bot i
 
 To embed your bot in your website by specifying the secret within the `iframe` tag:
 
-1. Copy the `iframe` **Embed code** from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#step-1) above).
+1. Copy the `iframe` **Embed code** from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above).
 
 2. Within that **Embed code**, replace "YOUR_SECRET_HERE" with the **Secret key** value that you copied from the same page.
 

@@ -2,7 +2,7 @@
 title: Commerce bot scenario | Microsoft Docs
 description: Explore the Commerce bot scenario with the Bot Framework.
 author: BrianRandell
-ms.author: v-brra
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -30,7 +30,7 @@ Here is the logic flow of a Commerce bot that functions as a concierge for a hot
 ## Sample bot
 The sample Commerce bot is designed around a fictitious hotel concierge service. Written in C#, customers access the Bot once they've authenticated Azure AD B2C with a hotel via the chain's member services mobile app. The chain stores reservations in a SQL Database. A customer can use natural phrase questions like "How much to rent a pool cabana for my stay". The Bot in turn has context about what hotel and the duration of the guest's stay. In addition, Language Understanding (LUIS) Service makes it easy for the bot to get context from even a simple phrase like "pool cabana". The Bot provides the answer and then can offer to book a cabana for the guest, providing choices around the number of days and type of cabana. Once the Bot has all the necessary data, it books the request. The guest can also use their voice to make the same request.
 
-You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/bot/scenarios).
+You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/abs-scenarios).
 
 ## Components you'll use
 The Commerce bot uses the following components:
