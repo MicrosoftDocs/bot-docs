@@ -1,3 +1,10 @@
+---
+ms.topic: conceptual
+ms.author: kamrani
+ms.service: bot-service
+title: Bot review guidelines
+---
+
 # Bot review guidelines
 
 We welcome you and thank you for investing your talents and time in building bot, botlets, web apps, add-ins, or skills (“app integrations”) for Microsoft channels. The following are the minimum requirements your app integration must meet before it may be published to a Microsoft channel such as Skype or Microsoft Teams. Each channel may have specific requirements in addition to the requirements detailed below. If applicable, you’ll find channel- specific terms on each channel’s configuration page, and you may be required to sign-up for a channel’s service before you can publish a bot to that channel.

@@ -1,0 +1,62 @@
+﻿<Type Name="AuthenticationConfiguration" FullName="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration">
+  <TypeSignature Language="C#" Value="public class AuthenticationConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class AuthenticationConfiguration" />
+  <TypeSignature Language="F#" Value="type AuthenticationConfiguration = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            General configuration settings for authentication.
+            </summary>
+    <remarks>
+            Note that this is explicitly a class and not an interface,
+            since interfaces don't support default values, after the initial release any change would break backwards compatibility.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AuthenticationConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredEndorsements">
+      <MemberSignature Language="C#" Value="public string[] RequiredEndorsements { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] RequiredEndorsements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.RequiredEndorsements" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequiredEndorsements As String()" />
+      <MemberSignature Language="F#" Value="member this.RequiredEndorsements : string[] with get, set" Usage="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.RequiredEndorsements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+﻿<Type Name="OrdinalV2" FullName="Microsoft.Bot.Builder.AI.Luis.OrdinalV2">
+  <TypeSignature Language="C#" Value="public class OrdinalV2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrdinalV2 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.OrdinalV2" />
+  <TypeSignature Language="VB.NET" Value="Public Class OrdinalV2" />
+  <TypeSignature Language="F#" Value="type OrdinalV2 = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Strongly typed LUIS builtin OrdinalV2.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OrdinalV2 (string relativeTo, long offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relativeTo, int64 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.#ctor(System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (relativeTo As String, offset As Long)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.OrdinalV2 : string * int64 -&gt; Microsoft.Bot.Builder.AI.Luis.OrdinalV2" Usage="new Microsoft.Bot.Builder.AI.Luis.OrdinalV2 (relativeTo, offset)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">Position that anchors offset.</param>
+        <param name="offset">Offset from <see cref="P:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.RelativeTo" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.OrdinalV2" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public long Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Offset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Long" />
+      <MemberSignature Language="F#" Value="member this.Offset : int64 with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("offset")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the offset in the sequence with respect to <see cref="P:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.RelativeTo" />.
+            </summary>
+        <value>
+            Offset in sequence relative to <see cref="P:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.RelativeTo" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeTo">
+      <MemberSignature Language="C#" Value="public string RelativeTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelativeTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.RelativeTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelativeTo As String" />
+      <MemberSignature Language="F#" Value="member this.RelativeTo : string with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.OrdinalV2.RelativeTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("relativeTo")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the anchor for the offset.
+            </summary>
+        <value>
+            The base position in a sequence one of <see cref="T:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.Anchor" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.OrdinalV2.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="ordinalV2.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

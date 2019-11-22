@@ -456,6 +456,49 @@ This snippet shows an example of a `channelData` property that specifies a chann
 }
 ```
 
+## Adding a bot to Teams
+
+Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they are `@mentioned`, so other conversations on the channel are not sent to the bot.
+For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](https://aka.ms/bots-con-channel).
+
+Because bots in a group or channel respond only when they are mentioned (`@botname`) in a message, every message received by a bot in a group channel contains its own name, and you must ensure your message parsing handles that. In addition, bots can parse out other users mentioned and mention users as part of their messages.
+
+### Check for and strip @bot mention
+
+```csharp
+
+Mention[] m = sourceMessage.GetMentions();
+var messageText = sourceMessage.Text;
+
+for (int i = 0;i < m.Length;i++)
+{
+    if (m[i].Mentioned.Id == sourceMessage.Recipient.Id)
+    {
+        //Bot is in the @mention list.
+        //The below example will strip the bot name out of the message, so you can parse it as if it wasn't included. Note that the Text object will contain the full bot name, if applicable.
+        if (m[i].Text != null)
+            messageText = messageText.Replace(m[i].Text, "");
+    }
+}
+```
+
+```javascript
+var text = message.text;
+if (message.entities) {
+    message.entities
+        .filter(entity => ((entity.type === "mention") && (entity.mentioned.id.toLowerCase() === botId)))
+        .forEach(entity => {
+            text = text.replace(entity.text, "");
+        });
+    text = text.trim();
+}
+
+```
+
+> [!IMPORTANT] 
+> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-test).
+
+
 ## Additional resources
 
 - [Entities and activity types](../bot-service-activities-entities.md)

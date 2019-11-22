@@ -7,7 +7,6 @@ ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -102,7 +101,7 @@ The waterfall step context contains the following:
 * *Values*: contains information you can add to the context, and is carried forward into subsequent steps.
 * *Result*: contains the result from the previous step.
 
-Additionally, the *next* method continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
+Additionally, the *next* method (**NextAsync** in C#, **next** in JS) continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
 
 #### Prompt options
 
@@ -110,10 +109,11 @@ The second parameter of the step context's _prompt_ method takes a _prompt optio
 
 | Property | Description |
 | :--- | :--- |
-| _prompt_ | The initial activity to send the user, to ask for their input. |
-| _retry prompt_ | The activity to send the user if their first input did not validate. |
-| _choices_ | A list of choices for the user to choose from, for use with a choice prompt. |
-| _validations_ | Additional parameters to use with a custom validator. |
+| _Prompt_ | The initial activity to send the user, to ask for their input. |
+| _Retry prompt_ | The activity to send the user if their first input did not validate. |
+| _Choices_ | A list of choices for the user to choose from, for use with a choice prompt. |
+| _Validations_ | Additional parameters to use with a custom validator. |
+| _Style_ | Defines how the choices for a choice prompt or confirm prompt will be presented to a user. | 
 
 You should always specify the initial prompt activity to send the user, as well as a retry prompt for instances when the user's input doesn't validate. 
 

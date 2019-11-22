@@ -1,6 +1,10 @@
 ---
 layout: ApiBrowserPage
 hide_bc: true
+ms.author: kamrani
+ms.service: bot-service
+ms.topic: conceptual
+ms.date: 08/15/2019
 title: .NET API Browser
 ---
 

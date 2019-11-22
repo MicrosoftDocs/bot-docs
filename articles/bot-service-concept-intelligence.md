@@ -7,7 +7,6 @@ ms.author: rstand
 manager: rstand
 ms.topic: article
 ms.service: bot-service
-ms.subservice: cognitive-services
 ms.date: 12/17/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
@@ -63,9 +62,9 @@ There are three Speech APIs available in Cognitive Services to process or synthe
 The following resources provide additional information about adding speech recognition to your bot.
 
 * [Bot Conversations for Apps video overview](https://channel9.msdn.com/events/Build/2017/P4114)
-* [Microsoft.Bot.Client library for UWP or Xamarin apps](https://aka.ms/BotClient)
-* [Bot Client Library Sample](https://aka.ms/BotClientSample)
-* [Speech-enabled WebChat Client](https://aka.ms/BFWebChat)
+* [Microsoft.Bot.Client library for UWP or Xamarin apps](https://aka.ms/bot-client)
+* [Bot Client Library Sample](https://aka.ms/trivia-bot-speech-sample)
+* [Speech-enabled WebChat Client](https://aka.ms/BotFramework-WebChat)
 
 Learn more about [speech recognition and conversion][speech] with Microsoft Cognitive Services.
 

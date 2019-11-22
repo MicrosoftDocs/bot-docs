@@ -3,11 +3,10 @@ title: Connect a bot to Skype | Microsoft Docs
 description: Learn how to configure a bot for access through the Skype interface.
 keywords: skype, bot channels, configure skype, publish, connect to channels
 author: v-ducvo
-ms.author: RobStand
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 10/11/2018
 ---
 

@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,7 +19,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Conversation is ending, or a request to end the conversation
+            Conversation is ending, or a request to end the conversation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,15 +37,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Code indicating why the conversation has ended
+            Gets or Sets Code indicating why the conversation has ended.
             </summary>
-        <value>To be added.</value>
+        <value>Code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,15 +63,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Content to display when ending the conversation
+            Gets or Sets Content to display when ending the conversation.
             </summary>
-        <value>To be added.</value>
+        <value>Text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
