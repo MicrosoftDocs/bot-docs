@@ -10,13 +10,16 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides a default tokenizer implementation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +35,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,13 +56,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the default <see cref="T:Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction" /> implementation.
+            </summary>
+        <value>The default <see cref="T:Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction" /> implementation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,6 +82,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;</ReturnType>
@@ -84,15 +92,14 @@
         <Parameter Name="locale" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">The text being tokenized.</param>
-        <param name="locale">The locale of the text.</param>
+        <param name="text">The input text.</param>
+        <param name="locale">Optional, identifies the locale of the input text.</param>
         <summary>
             Simple tokenizer that breaks on spaces and punctuation. The only normalization done is to lowercase.
-            This is an exact port of the JavaScript implementation of the algorithm except that here
-            the .NET library functions are used in place of the JavaScript string code point functions.
             </summary>
         <returns>A list of tokens.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>This is an exact port of the JavaScript implementation of the algorithm except that here
+            the .NET library functions are used in place of the JavaScript string code point functions.</remarks>
       </Docs>
     </Member>
   </Members>

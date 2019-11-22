@@ -7,7 +7,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 04/30/2018
 ---
 # Connect a bot to Cortana
@@ -107,4 +106,4 @@ At this point your bot is deployed as a Cortana skill to your account.
 
 [invocation]: https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines
 [publish]: https://docs.microsoft.com/cortana/skills/publish-skill
-[CortanaEntity]: https://aka.ms/lgvcto
+[CortanaEntity]: https://aka.ms/cortana-channel-data

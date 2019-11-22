@@ -7,31 +7,14 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
-# Connect a bot to Skype for Business
+# Connect a bot to Skype for Business (Preview)
 
 Skype for Business Online keeps you connected with co-workers and business partners through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype for Business interface.
 
 > [!IMPORTANT]
-> **Skype for Business channel in Bot Framework is being deprecated on June 30, 2019.**
+> **Skype for Business channel of Bot Framework was deprecated on June 30, 2019.**
 > 
-> No new bots will be able to add Skype for Business channel after that date.  Existing bots will continue to work until October 31, 2019. Microsoft Teams is the preferred communication tool from Microsoft.  Learn how to [connect your bot to Microsoft Teams](https://msdn.microsoft.com/microsoft-teams/bots).
-
-## Enable the channel
-
-Open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Skype for Business**. The bot is now enabled. 
-
-Connecting the bot with Skype for Business Online is performed by a **Tenant Administrator** of that Skype for Business tenant.
-
-## Next steps
-* [Skype for Business Bot Framework](https://msdn.microsoft.com/skype/Skype-For-Business-Bot-Framework/docs/overview)
-
-
-
-
-
-
-
+> Skype for Business channel stopped accepting new bots on June 30, 2019.  Existing bots continued operating through October 31, 2019.  The channel is currently being deprecated, and no production loads should be using it.  Microsoft Teams is the preferred communication tool from Microsoft.  Learn how to [connect your bot to Microsoft Teams](https://msdn.microsoft.com/microsoft-teams/bots).

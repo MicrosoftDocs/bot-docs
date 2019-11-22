@@ -3,12 +3,11 @@ title: Write directly to storage | Microsoft Docs
 description: Learn how to write directly to storage with the Bot Framework SDK for .NET.
 keywords: storage, read and write, memory storage, eTag
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
-ms.date: 05/23/2019
+ms.date: 11/01/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -200,13 +199,13 @@ async function logMessageText(storage, turnContext) {
 
             try {
                 await storage.write(storeItems)
-                turnContext.sendActivity(`${numStored}: The list is now: ${storedString}`);
+                await turnContext.sendActivity(`${numStored}: The list is now: ${storedString}`);
             } catch (err) {
-                turnContext.sendActivity(`Write failed of UtteranceLogJS: ${err}`);
+                await turnContext.sendActivity(`Write failed of UtteranceLogJS: ${err}`);
             }
         }
         else{
-            turnContext.sendActivity(`Creating and saving new utterance log`);
+            await turnContext.sendActivity(`Creating and saving new utterance log`);
             var turnNumber = 1;
             storeItems["UtteranceLogJS"] = { UtteranceList: [`${utterance}`], "eTag": "*", turnNumber }
             // Gather info for user message.
@@ -215,14 +214,14 @@ async function logMessageText(storage, turnContext) {
 
             try {
                 await storage.write(storeItems)
-                turnContext.sendActivity(`${numStored}: The list is now: ${storedString}`);
+                await turnContext.sendActivity(`${numStored}: The list is now: ${storedString}`);
             } catch (err) {
-                turnContext.sendActivity(`Write failed: ${err}`);
+                await turnContext.sendActivity(`Write failed: ${err}`);
             }
         }
     }
     catch (err){
-        turnContext.sendActivity(`Read rejected. ${err}`);
+        await turnContext.sendActivity(`Read rejected. ${err}`);
     }
 }
 
@@ -250,13 +249,13 @@ Send a message to your bot. The bot will list the messages it has received.
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs). 
 
 ### Set up
-To use Cosmos DB in your bot, you'll need to get a few things set up before getting into the code. For an in-depth description of Cosmos DB database and app creation access the documentation here for [Cosmos DB dotnet](https://aka.ms/Bot-framework-create-dotnet-cosmosdb) or [Cosmos DB nodejs](https://aka.ms/Bot-framework-create-nodejs-cosmosdb).
+To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation access the documentation here for [Cosmos DB dotnet](https://aka.ms/Bot-framework-create-dotnet-cosmosdb) or [Cosmos DB nodejs](https://aka.ms/Bot-framework-create-nodejs-cosmosdb).
 
 ### Create your database account
 
-1. In a new browser window, sign in to the [Azure portal](http://portal.azure.com).
+1. In a new browser window, sign in to the [Azure portal](https://portal.azure.com).
 
-![Create Cosmos DB database](./media/create-cosmosdb-database.png)
+![Create Cosmos DB database account](./media/create-cosmosdb-database.png)
 
 2. Click **Create a resource > Databases > Azure Cosmos DB**
 
@@ -268,22 +267,31 @@ To use Cosmos DB in your bot, you'll need to get a few things set up before gett
 
 The account creation takes a few minutes. Wait for the portal to display the Congratulations! Your Azure Cosmos DB account was created page.
 
-### Add a collection
+### Add a database
 
-![Add Cosmos DB collection](./media/add_database_collection.png)
+1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **Create Database** from the drop-down box next to the **Create Container** button. A panel will then open on the right hand side of the window, where you can enter the details for the new container. 
 
-1. Click **Settings > New Collection**. The **Add Collection** area is displayed on the far right, you may need to scroll right to see it. Due to recent updates to Cosmos DB, be sure to add a single Partition key: _/id_. This key will avoid cross partition query errors.
+![Cosmos DB](./media/create-cosmosdb-database-resource.png)
 
-![Cosmos DB](./media/cosmos-db-sql-database.png)
+2. Enter an ID for your new database and, optionally, set the throughput (you can change this later) and finally click **OK** to create your database. Make a note of this database ID for use later on when configuring your bot.
 
-2. Your new database collection, "bot-cosmos-sql-db" with a collection id of "bot-storage." We will use these values in our coding example that follows below.
+![Cosmos DB](./media/create-cosmosdb-database-resource-details.png)
+
+3. Now that you have created a Cosmos DB account and a database, you need to copy over some of the values for integrating your new database into your bot.  To retrieve these, navigate to the **Keys** tab within the database settings section of your Cosmos DB account.  From this page you will need your Cosmos DB endpoint (**URI**) and your authorization key (**PRIMARY KEY**).
 
 ![Cosmos DB Keys](./media/comos-db-keys.png)
 
-3. The endpoint URI and key are available within the **Keys** tab of your database settings. These values will be needed to configure your code further down in this article. 
+You should now have a Cosmos DB account, containing a database and have the following details ready to configure your bot.
+
+- Cosmos DB Endpoint
+- Authorization Key
+- Database ID
 
 ### Add configuration information
-Our configuration data to add Cosmos DB storage is short and simple, you can add additional configuration settings using these same methods as your bot gets more complex. This example uses the Cosmos DB database and collection names from the example above.
+Our configuration data to add Cosmos DB storage is short and simple.  Use the details you made a note of in the previous part of this article to set your endpoint, authorization key and database ID.  Finally, you should choose an appropriate name for the container that will be created within your database to store your bot state. In the example below the container will be called "bot-storage".
+
+> [!NOTE]
+> You should not create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it is configured correctly for storing bot state.
 
 ### [C#](#tab/csharp)
 
@@ -292,9 +300,9 @@ Our configuration data to add Cosmos DB storage is short and simple, you can add
 public class EchoBot : ActivityHandler
 {
    private const string CosmosServiceEndpoint = "<your-cosmos-db-URI>";
-   private const string CosmosDBKey = "<your-cosmos-db-account-key>";
-   private const string CosmosDBDatabaseName = "bot-cosmos-sql-db";
-   private const string CosmosDBCollectionName = "bot-storage";
+   private const string CosmosDBKey = "<your-authorization-key>";
+   private const string CosmosDBDatabaseId = "<your-database-id>";
+   private const string CosmosDBContainerId = "bot-storage";
    ...
    
 }
@@ -306,10 +314,10 @@ Add the following information to your `.env` file.
 
 **.env**
 ```javascript
-DB_SERVICE_ENDPOINT="<your-Cosmos-db-URI>"
-AUTH_KEY="<your-cosmos-db-account-key>"
-DATABASE="<bot-cosmos-sql-db>"
-COLLECTION="<bot-storage>"
+DB_SERVICE_ENDPOINT="<your-cosmos-db-URI>"
+AUTH_KEY="<your-authorization-key>"
+DATABASE_ID="<your-database-id>"
+CONTAINER="bot-storage"
 ```
 ---
 
@@ -340,6 +348,9 @@ npm install --save dotenv
 
 ### Implementation 
 
+> [!NOTE]
+> Version 4.6 introduced a new Cosmos DB storage provider, `CosmosDbPartitionedStorage`. Existing bots using the original `CosmosDbStorage` should continue using `CosmosDbStorage`. Bots using the older provider will continue to work as expected. New bots should use `CosmosDbPartitionedStorage` as partitioning offers increased performance.
+
 ### [C#](#tab/csharp)
 
 The following sample code runs using the same bot code as the [memory storage](#memory-storage) sample provided above.
@@ -358,12 +369,12 @@ public class EchoBot : ActivityHandler
    // private static readonly MemoryStorage _myStorage = new MemoryStorage();
 
    // Replaces Memory Storage with reference to Cosmos DB.
-   private static readonly CosmosDbStorage _myStorage = new CosmosDbStorage(new CosmosDbStorageOptions
+   private static readonly CosmosDbStorage _myStorage = new CosmosDbPartitionedStorage(new CosmosDbPartitionedStorageOptions
    {
-      AuthKey = CosmosDBKey,
-      CollectionId = CosmosDBCollectionName,
-      CosmosDBEndpoint = new Uri(CosmosServiceEndpoint),
-      DatabaseId = CosmosDBDatabaseName,
+        CosmosDbEndpoint = CosmosServiceEndpoint,
+        AuthKey = CosmosDBKey,
+        DatabaseId = CosmosDBDatabaseId,
+        ContainerId = CosmosDBContainerId,
    });
    
    ...
@@ -394,11 +405,11 @@ require('dotenv').config({ path: ENV_FILE });
 // var storage = new MemoryStorage();
 
 // Create access to CosmosDb Storage - this replaces local Memory Storage.
-var storage = new CosmosDbStorage({
-    serviceEndpoint: process.env.DB_SERVICE_ENDPOINT, 
+var storage = new CosmosDbPartitionedStorage({
+    cosmosDbEndpoint: process.env.DB_SERVICE_ENDPOINT, 
     authKey: process.env.AUTH_KEY, 
-    databaseId: process.env.DATABASE,
-    collectionId: process.env.COLLECTION
+    databaseId: process.env.DATABASE_ID,
+    containerId: process.env.CONTAINER
 })
 
 ```
@@ -429,7 +440,7 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 
 ### Create your Blob storage account
 To use Blob storage in your bot, you'll need to get a few things set up before getting into the code.
-1. In a new browser window, sign in to the [Azure portal](http://portal.azure.com).
+1. In a new browser window, sign in to the [Azure portal](https://portal.azure.com).
 
 ![Create Blob storage](./media/create-blob-storage.png)
 
@@ -437,7 +448,7 @@ To use Blob storage in your bot, you'll need to get a few things set up before g
 
 ![Blob storage new account page](./media/blob-storage-new-account.png)
 
-3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** infomration.  
+3. In the **New account page**, enter **Name** for the storage account, select **Blob storage** for **Account kind**, provide **Location**, **Resource group** and **Subscription** information.  
 4. Then click **Review + Create**.
 5. Once validation has been successful, click **Create**.
 

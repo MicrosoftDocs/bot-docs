@@ -6,17 +6,16 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
 # Send an activity to the bot
 
-Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](bot-framework-rest-connector-activities.md), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
+Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](https://aka.ms/botSpecs-activitySchema), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
 
 ## Send an activity
 
-To send an activity to the bot, the client must create an [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object to define the activity and then issue a `POST` request to `https://directline.botframework.com/v3/directline/conversations/{conversationId}/activities`, specifying the Activity object in the body of the request.
+To send an activity to the bot, the client must create an [Activity][] object to define the activity and then issue a `POST` request to `https://directline.botframework.com/v3/directline/conversations/{conversationId}/activities`, specifying the Activity object in the body of the request.
 
 The following snippets provide an example of the Send Activity request and response.
 
@@ -41,7 +40,12 @@ Content-Type: application/json
 
 ### Response
 
-When the activity is delivered to the bot, the service responds with an HTTP status code that reflects the bot's status code. If the bot generates an error, an HTTP 502 response ("Bad Gateway") is returned to the client in response to its Send Activity request. If the POST is successful, the response contains a JSON payload that specifies the ID of the Activity that was sent to the bot.
+When the activity is delivered to the bot, the service responds with an HTTP status code that reflects the bot's status code. If the bot generates an error, an HTTP 502 response ("Bad Gateway") is returned to the client in response to its Send Activity request.
+
+> [!NOTE]
+> This can be caused by the fact that a correct token was not used. Only the token which was received against *start conversation* can be used to send an activity.
+
+If the POST is successful, the response contains a JSON payload that specifies the ID of the Activity that was sent to the bot.
 
 ```http
 HTTP/1.1 200 OK
@@ -66,11 +70,11 @@ The total time to POST a message to a Direct Line conversation is the sum of the
 
 ## Send attachment(s) to the bot
 
-In some situations, a client may need to send attachments to the bot such as images or documents. A client may send attachments to the bot either by [specifying the URL(s)](#send-by-url) of the attachment(s) within the [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object that it sends using `POST /v3/directline/conversations/{conversationId}/activities` or by [uploading attachment(s)](#upload-attachments) using `POST /v3/directline/conversations/{conversationId}/upload`.
+In some situations, a client may need to send attachments to the bot such as images or documents. A client may send attachments to the bot either by [specifying the URL(s)](#send-by-url) of the attachment(s) within the [Activity][] object that it sends using `POST /v3/directline/conversations/{conversationId}/activities` or by [uploading attachment(s)](#upload-attachments) using `POST /v3/directline/conversations/{conversationId}/upload`.
 
 ## <a id="send-by-url"></a> Send attachment(s) by URL
 
-To send one or more attachments as part of the [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object using `POST /v3/directline/conversations/{conversationId}/activities`, simply include one or more [Attachment](bot-framework-rest-connector-api-reference.md#attachment-object) objects within the Activity object and set the `contentUrl` property of each Attachment object to specify the HTTP, HTTPS, or `data` URI of the attachment.
+To send one or more attachments as part of the [Activity][] object using `POST /v3/directline/conversations/{conversationId}/activities`, simply include one or more [Attachment][] objects within the Activity object and set the `contentUrl` property of each Attachment object to specify the HTTP, HTTPS, or `data` URI of the attachment.
 
 ## <a id="upload-attachments"></a> Send attachment(s) by upload
 
@@ -125,7 +129,7 @@ HTTP/1.1 200 OK
 
 To send multiple attachments by upload, `POST` a multipart request to the `/v3/directline/conversations/{conversationId}/upload` endpoint. Set the `Content-Type` header of the request to `multipart/form-data` and include the `Content-Type` header and `Content-Disposition` header for each part to specify each attachment's type and filename. In the request URI, set the `userId` parameter to the ID of the user that is sending the message. 
 
-You may include an [Activity](bot-framework-rest-connector-api-reference.md#activity-object) object within the request by adding a part that specifies the `Content-Type` header value `application/vnd.microsoft.activity`. If the request includes an Activity, the attachments that are specified by other parts of the payload are added as attachments to that Activity before it is sent. If the request does not include an Activity, an empty Activity is created to serve as the container in which the specified attachments are sent.
+You may include an `Activity` object within the request by adding a part that specifies the `Content-Type` header value `application/vnd.microsoft.activity`. If the request includes an Activity, the attachments that are specified by other parts of the payload are added as attachments to that Activity before it is sent. If the request does not include an Activity, an empty Activity is created to serve as the container in which the specified attachments are sent.
 
 The following snippets provide an example of the Send (multiple) Attachments request and response. In this example, the request sends a message that contains some text and a single image attachment. Additional parts could be added to the request to include multiple attachments in this message.
 
@@ -182,3 +186,7 @@ HTTP/1.1 200 OK
 - [Reconnect to a conversation](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md)
 - [Receive activities from the bot](bot-framework-rest-direct-line-3-0-receive-activities.md)
 - [End a conversation](bot-framework-rest-direct-line-3-0-end-conversation.md)
+- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
+[Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object

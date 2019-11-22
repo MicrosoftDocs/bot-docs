@@ -2,7 +2,7 @@
 title: Bot Service Frequently Asked Questions | Microsoft Docs
 description: A list of Frequently Asked Questions about elements of the Bot Framework and when new features will become available.
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -14,12 +14,37 @@ ms.date: 02/21/2019
 This article contains answers to some frequently asked questions about the Bot Framework.
 
 ## Background and availability
+
 ### Why did Microsoft develop the Bot Framework?
 
 While the Conversation User Interface (CUI) is upon us, at this point few developers have the expertise and tools needed to create new conversational experiences or enable existing applications and services with a conversational interface their users can enjoy. We have created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.
 
 ### What is the v4 SDK?
 Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
+
+### Running a bot offline
+
+<!-- WIP -->
+Before talking about the use of a bot offline, meaning a bot not deployed on Azure or on some other host services but on premises, let's clarify a few points.
+
+- A bot is a web service that does not have a UI, so the user must interact with it via other means, in the form of channels, which use the [Azure Connector Service](rest-api/bot-framework-rest-connector-concepts.md#bot-connector-service). The connector functions as a *proxy* to relay messages between a client and the bot.
+- The **connector** is a global application hosted on Azure nodes and spread geographically for availability and scalability. 
+- You use the [Bot Channel Registration](bot-service-quickstart-registration.md) to register the bot with the connector.
+    >[!NOTE]
+    > The bot must have its endpoint publicly reachable by the connector.
+
+You can run a bot offline with limited capabilities. For example, if you want to use a bot offline that has LUIS capability, you must build a container for the bot, and required tools, and a container for LUIS. Both connected via Docker Compose bridged network.
+
+This is a "partial" offline solution because a Cognitive Services container needs periodic online connection.
+
+> [!NOTE]
+> The QnA service is not supported in a bot running offline.
+
+For more information, see:
+
+- [Deploy the Language Understanding (LUIS) container to Azure Container Instances](https://docs.microsoft.com/azure/cognitive-services/luis/deploy-luis-on-container-instances)
+- [Container support in Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support)
+
 
 ## Bot Framework SDK Version 3 Lifetime Support 
 SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the release of Bot Framework SDK V4, as with other frameworks, we continue supporting SDK V3 with security, high priority bug fixes, and connector / protocol layer updates.  Customers can expect v3 support to continue through 2019.
@@ -52,7 +77,7 @@ SDK V3 bots continue to run and be supported by Azure Bot Service.  Since the re
 
 ### Should I build new a bot using V3 or V4?
 - For new conversational experiences, we recommend you start a new bot using Bot Framework SDK V4.
-- If you are already familiar with Bot Framework SDK V3, you should take the time to learn about the new version and features offered with the new [Bot Framework SDK V4](http://aka.ms/botframeowrkoverview).
+- If you are already familiar with Bot Framework SDK V3, you should take the time to learn about the new version and features offered with the new [Bot Framework SDK V4](https://aka.ms/botframeowrkoverview).
 - If you already have Bot Framework SDK V3 bots in production, don’t worry, they continue to work as is for the foreseeable future.
 - You can create Bot Framework SDK V4 and older V3 bots via Azure portal and Azure Command Line. 
 
@@ -100,7 +125,7 @@ services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
 ```csharp
 options.ChannelProvider = new ConfigurationChannelProvider();
 ```
-You can find more information concerning Govenment Services [here](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
+You can find more information concerning Govenment Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
@@ -157,7 +182,7 @@ We’re continuously tuning the rate limits to make them as lenient as possible 
 ## Related Services
 ### How does the Bot Framework relate to Cognitive Services?
 
-Both the Bot Framework and [Cognitive Services](http://www.microsoft.com/cognitive) are new capabilities introduced at [Microsoft Build 2016](http://build.microsoft.com) that will also be integrated into Cortana Intelligence Suite at GA. Both these services are built from years of research and use in popular Microsoft products. These capabilities combined with ‘Cortana Intelligence’ enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
+Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are new capabilities introduced at [Microsoft Build 2016](https://build.microsoft.com) that will also be integrated into Cortana Intelligence Suite at GA. Both these services are built from years of research and use in popular Microsoft products. These capabilities combined with ‘Cortana Intelligence’ enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
 
 ### What is Cortana Intelligence?
 

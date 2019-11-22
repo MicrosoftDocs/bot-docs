@@ -3,11 +3,10 @@ title: JavaScript v3 to v4 migration quick reference | Microsoft Docs
 description: An outline of the major differences in the v3 and v4 JavaScript Bot Framework SDK.
 keywords: JavaScript, bot migration, dialogs, v3 bot
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -401,5 +400,91 @@ var message = new builder.Message()
 await context.sendActivity({
     attachments: hotelHeroCards,
     attachmentLayout: AttachmentLayoutTypes.Carousel
+});
+```
+
+## To use natural language recognition (LUIS)
+
+### v3
+
+```javascript
+// The LUIS recognizer was part of the 'botbuilder' library
+var builder = require('botbuilder');
+
+var recognizer = new builder.LuisRecognizer(LUIS_MODEL_URL);
+bot.recognizer(recognizer);
+```
+
+### v4
+
+```javascript
+// The LUIS recognizer is now part of the 'botbuilder-ai' library
+const { LuisRecognizer } = require('botbuilder-ai');
+
+const luisApp = { applicationId: LuisAppId, endpointKey: LuisAPIKey, endpoint: `https://${ LuisAPIHostName }` };
+const recognizer = new LuisRecognizer(luisApp);
+
+const recognizerResult = await recognizer.recognize(context);
+const intent = LuisRecognizer.topIntent(recognizerResult);
+```
+
+## v3 Intent Dialog and v4 Equivalent
+
+### v3
+
+```javascript
+// Create a 'greetings' RegExpRecognizer that can be turned off
+var greetings = new builder.RegExpRecognizer('Greetings', /hello|hi|hey|greetings/i)
+    .onEnabled(function (session, callback) {
+        // Check to see if this recognizer should be enabled
+        if (session.conversationData.useGreetings) {
+            callback(null, true);
+        } else {
+            callback(null, false);
+        }
+    });
+
+// Create our IntentDialog and add recognizers
+var intents = new builder.IntentDialog({ recognizers: [greetings] });
+
+bot.dialog('/', intents);
+
+// If no intent is recognized, direct user to Recognizer Menu
+intents.onDefault('RecognizerMenu');
+
+// Match our "Greetings" and "Farewell" intents with their dialogs
+intents.matches('Greetings', 'Greetings');
+
+// Add a greetings dialog
+bot.dialog('Greetings', [
+    function (session) {
+        session.endDialog('Greetings!');
+    }
+]);
+```
+
+### v4
+
+```javascript
+this.onMessage(async (context, next) => {
+
+    const recognizerResult = {
+        text: context.activity.text,
+        intents: []
+    };
+
+    const greetingRegex = RegExp(/hello|hi|hey|greetings/i);
+
+    if (greetingRegex.test(context.activity.text)) {
+      // greeting intent identified
+      recognizerResult.intents.push('Greeting');
+    }
+
+    if (recognizerResult.intents.includes('Greeting')) {
+        // Run the 'Greeting' dialog
+        await context.beginDialog(GREETING_DIALOG_ID);
+    }
+
+    await next();
 });
 ```

@@ -6,7 +6,6 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 ---
 
@@ -66,7 +65,7 @@ A conversation is a series of messages exchanged between a user and your bot.
 
 ### Receive a message from the user
 
-When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an [Activity][Activity] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
+When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an [Activity][] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
 
 ```json
 {
@@ -93,7 +92,7 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
 
 ### Reply to the user's message
 
-When your bot's endpoint receives a `POST` request that represents a message from the user (i.e., `type` = **message**), use the information in that request to create the [Activity][Activity] object for your response.
+When your bot's endpoint receives a `POST` request that represents a message from the user (i.e., `type` = **message**), use the information in that request to create the [Activity][] object for your response.
 
 1. Set the **conversation** property to the contents of the **conversation** property in the user's message.
 2. Set the **from** property to the contents of the **recipient** property in the user's message.
@@ -102,7 +101,7 @@ When your bot's endpoint receives a `POST` request that represents a message fro
 
 Use the `serviceUrl` property in the incoming request to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
 
-To send the response, `POST` your [Activity][Activity] object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an [Activity][Activity] object that prompts the user to select an available appointment time.
+To send the response, `POST` your `Activity` object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an `Activity` object that prompts the user to select an available appointment time.
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
@@ -192,6 +191,5 @@ Content-Type: application/json
 In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user. 
 You can use the [Bot Framework Emulator](../bot-service-debug-emulator.md) to test and debug your bot. 
 If you'd like to share your bot with others, you'll need to [configure](../bot-service-manage-channels.md) it to run on one or more channels.
-
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

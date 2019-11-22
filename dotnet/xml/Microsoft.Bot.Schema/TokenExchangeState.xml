@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +56,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -65,9 +68,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The URL of the bot messaging endpoint
+            Gets or sets the URL of the bot messaging endpoint.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The URL of the bot messaging endpoint.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,6 +89,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -95,9 +101,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The connection name that was used
+            Gets or sets the connection name that was used.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The connection name that was used.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,6 +122,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -125,9 +134,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            A reference to the conversation
+            Gets or sets a reference to the conversation.
             </summary>
-        <value>To be added.</value>
+        <value>
+            A reference to the conversation.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,6 +155,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -155,9 +167,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The bot's registered application ID
+            Gets or sets the bot's registered application ID.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The bot's registered application ID.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

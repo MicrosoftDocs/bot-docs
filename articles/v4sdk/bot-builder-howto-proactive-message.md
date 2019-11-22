@@ -3,11 +3,10 @@ title: Send proactive notifications to users | Microsoft Docs
 description: Understand how to send notification messages
 keywords: proactive message, notification message, bot notification, 
 author: jonathanfingold
-ms.author: jonathanfingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -30,7 +29,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the proactive messages sample in either **[CSharp](https://aka.ms/proactive-sample-cs) or [JavaScript](https://aka.ms/proactive-sample-js)**. This sample is used to explain proactive messaging in this article.
+- A copy of the proactive messages sample in either **[C#](https://aka.ms/proactive-sample-cs) or [JavaScript](https://aka.ms/proactive-sample-js)**. This sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -77,7 +76,7 @@ The second controller, the _notify_ controller, is responsible for sending the p
 Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
 The controller then uses the `ContinueConversationAsync` and `BotCallback` methods to send the proactive message.
 
-[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-59&highlight=28,40-43)]
+[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-60&highlight=28,40-43)]
 
 To send a proactive message, the adapter requires an app ID for the bot. In a production environment, you can use the bot's app ID. In a local test environment, you can use any GUID. If the bot is not currently assigned an app ID, the notify controller self-generates a placeholder ID to use for the call.
 
@@ -89,7 +88,7 @@ Each time the server's `/api/notify` page is requested, the server retrieves the
 The server then uses the `continueConversation` method to send the proactive message.
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
-[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=56-62&highlight=4-5)]
+[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=68-80&highlight=4-6)]
 
 ---
 

@@ -14,7 +14,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "external-apis.yml"
         ]
       },
       {
@@ -33,7 +34,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "external-apis.yml"
         ]
       }
     ],
@@ -49,6 +51,9 @@
     },
     "fileMetadata": {},
     "template": [],
+    "xref": [
+      "external-apis.yml"
+    ],
     "dest": "bot-framework-dotnet-api",
     "lruSize": 0,
     "markdownEngineName": "markdig"

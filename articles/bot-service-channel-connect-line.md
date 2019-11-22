@@ -3,11 +3,10 @@ title: Connect a bot to LINE | Microsoft Docs
 description:  Learn how to configure a bot's connection to LINE.
 keywords: connect a bot, bot channel, LINE bot, credentials, configure, phone
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 1/7/2019
 ---
 

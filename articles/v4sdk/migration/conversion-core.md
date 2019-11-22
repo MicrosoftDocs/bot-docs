@@ -3,11 +3,10 @@ title: Migrate an existing bot in a new .NET Core project | Microsoft Docs
 description: We take an existing .NET v3 bot and migrate it to the .NET v4 SDK, using a new .NET Core project.
 keywords: bot migration, formflow, dialogs, v3 bot
 author: JonathanFingold
-ms.author: v-jofing
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 06/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -66,7 +65,7 @@ We'll create a state property for `DialogState`, which we now need for dialog su
 
 In **Startup.cs**:
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Startup.cs?range=4-13)]
 
 1. Remove this constructor:
@@ -79,7 +78,7 @@ In **Startup.cs**:
 
 1. Remove the `Configuration` property.
 
-1. Update the `ConfigureServices` method with this code:
+1. Update the `ConfigureServices` method with this code:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Startup.cs?range=19-41)]
 
 You are going to have compile time errors at this time. We'll fix them in the next steps. 
@@ -101,7 +100,7 @@ In v4, the turn handler or message loop logic is primarily in a bot file. We're 
 
 1. Update the **Bots\DialogBots.cs** file.
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=4-8)]
 
 1. Update `DialogBot` to include a generic parameter for the dialog.
@@ -111,7 +110,8 @@ In v4, the turn handler or message loop logic is primarily in a bot file. We're 
     [!code-csharp[Fields and constructor](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=21-28)]
 
 1. Update `OnMessageActivityAsync` implementation to invoke our main dialog. (We'll define the `Run` extension method shortly.)
-    [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=38-47)]
+
+[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=38-47)]
 
 1. Update `OnTurnAsync` to save our conversation state at the end of the turn. In v4, we have to do this explicitly to write state out to the persistence layer. `ActivityHandler.OnTurnAsync` method calls specific activity handler methods, based on the type of activity received, so we save state after the call to the base method.
     [!code-csharp[OnTurnAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Bots/DialogBot.cs?range=30-36)]
@@ -183,7 +183,7 @@ In this bot, the root dialog prompts the user for a choice from a set of options
 
 In the **Dialogs/RootDialog.cs** file:
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/RootDialog.cs?range=4-10)]
 
 1. We need to convert `HelpdeskOptions` options from a list of strings to a list of choices. This will be used with a choice prompt, which will accept the choice number (in the list), the choice value, or any of the choice's synonyms as valid input.
@@ -232,7 +232,7 @@ The install app dialog performs a few logical tasks, which we'll set up as a 4-s
 
 In the **Dialogs/InstallAppDialog.cs** file:
 
-1. Update the `using` statements:
+1. Update the `using` statements:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/InstallAppDialog.cs?range=4-11)]
 
 1. Define a constant for the key we'll use to track collected information.
@@ -325,31 +325,34 @@ You can use the same v3 models with the v4 community form flow library.
 
 We need to update `using` statements in the model classes as shown next.
 
-1. In **InstallApps.cs** change them to this:
+1. In **InstallApps.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/InstallApp.cs?range=4-5)]
 
-1. In **LocalAdmin.cs** change them to this:
+1. In **LocalAdmin.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/LocalAdmin.cs?range=4-5)]
 
-1. In **LocalAdminPrompt.cs** change them to this:
+1. In **LocalAdminPrompt.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/LocalAdminPrompt.cs?range=4)]
 
 1. In **ResetPassword.cs** change them to this:
-    [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
+
+[!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
     Also, delete the `using` statements inside the namespace.
 
-1. In **ResetPasswordPrompt.cs** change them to this:
+1. In **ResetPasswordPrompt.cs** change them to this:  
     [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPasswordPrompt.cs?range=4-5)]
 
 ### Additional changes
 
 In **ResetPassword.cs** change the return type of the `MobileNumber` as follows:
+
 [!code-csharp[MobileNumber](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=17)]
 
 ## Final porting steps 
 To complete the porting process, perform these steps:
 
 1. Create an `AdapterWithErrorHandler` class to define an adapter which includes an error handler that can catch exceptions in the middleware or application. The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. Use the following code to create the class:
+
  [!code-csharp[MobileNumber](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/AdapterWithErrorHandler.cs?range=4-46)]
 1. Modify the **wwwroot\default.htm** page as you see fit.
 

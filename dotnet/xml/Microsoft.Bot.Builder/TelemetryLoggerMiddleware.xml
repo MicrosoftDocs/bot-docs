@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +18,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Middleware for logging incoming, outgoing, updated or deleted Activity messages.
+            Uses the IBotTelemetryClient interface.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,15 +35,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="telemetryClient" Type="Microsoft.Bot.Builder.IBotTelemetryClient" />
         <Parameter Name="logPersonalInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="telemetryClient">To be added.</param>
-        <param name="logPersonalInformation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="telemetryClient">The IBotTelemetryClient implementation used for registering telemetry events.</param>
+        <param name="logPersonalInformation"> (Optional) TRUE to include personally identifiable information.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.TelemetryLoggerMiddleware" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,6 +60,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -62,10 +70,13 @@
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="additionalProperties">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The Activity object deleted by bot.</param>
+        <param name="additionalProperties">Additional properties to add to the event.</param>
+        <summary>
+            Fills the event properties for BotMessageDelete.
+            These properties are logged when an activity message is deleted by the Bot.
+            </summary>
+        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageDelete event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,6 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -87,10 +99,13 @@
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="additionalProperties">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Last activity sent from user.</param>
+        <param name="additionalProperties">Additional properties to add to the event.</param>
+        <summary>
+            Fills the event properties for the BotMessageReceived.
+            Adheres to the LogPersonalInformation flag to filter Name, Text and Speak properties.
+            </summary>
+        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageReceived event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -112,10 +128,13 @@
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="additionalProperties">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Last activity sent from user.</param>
+        <param name="additionalProperties">Additional properties to add to the event.</param>
+        <summary>
+            Fills the event properties for BotMessageSend.
+            These properties are logged when an activity message is sent by the Bot to the user.
+            </summary>
+        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageSend event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -137,10 +157,15 @@
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="additionalProperties">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Last activity sent from user.</param>
+        <param name="additionalProperties">Additional properties to add to the event.</param>
+        <summary>
+            Fills the event properties for BotMessageUpdate.
+            These properties are logged when an activity message is updated by the Bot.
+            For example, if a card is interacted with by the use, and the card needs to be updated to reflect
+            some interaction.
+            </summary>
+        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageUpdate event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,13 +179,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether determines whether to log personal information that came from the user.
+            </summary>
+        <value>If true, will log personal information into the IBotTelemetryClient.TrackEvent method; otherwise the properties will be filtered.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -182,10 +211,15 @@
         <Parameter Name="cancellation" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="cancellation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Current activity sent from user.</param>
+        <param name="cancellation"> cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when the bot deletes a message.
+            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
+            This event name used is "BotMessageDelete".
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,6 +232,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -207,10 +242,15 @@
         <Parameter Name="cancellation" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="cancellation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Current activity sent from user.</param>
+        <param name="cancellation"> cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when a message is received from the user.
+            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
+            This event name used is "BotMessageReceived".
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,6 +263,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -232,15 +273,20 @@
         <Parameter Name="cancellation" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="cancellation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Current activity sent from user.</param>
+        <param name="cancellation"> cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when the bot sends a message to the user.
+            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
+            This event name used is "BotMessageSend".
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTurnAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.NextDelegate nextTurn, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.NextDelegate nextTurn, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Builder.NextDelegate nextTurn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryLoggerMiddleware.OnTurnAsync (context, nextTurn, cancellationToken)" />
@@ -251,6 +297,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -261,12 +308,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="nextTurn">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The context object for this turn.</param>
+        <param name="nextTurn">The delegate to call to continue the bot middleware pipeline.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Logs events based on incoming and outgoing activities using the <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> interface.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
+        <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
       </Docs>
     </Member>
     <Member MemberName="OnUpdateActivityAsync">
@@ -278,6 +330,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -287,10 +340,15 @@
         <Parameter Name="cancellation" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="cancellation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">Current activity sent from user.</param>
+        <param name="cancellation"> cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when the bot updates a message.
+            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
+            This event name used is "BotMessageUpdate".
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,6 +362,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>

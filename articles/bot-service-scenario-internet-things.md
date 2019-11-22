@@ -2,7 +2,7 @@
 title: Internet of Things bot scenario | Microsoft Docs
 description: Explore the Internet of Things bot scenario with the Bot Framework.
 author: BrianRandell
-ms.author: v-brra
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -30,7 +30,7 @@ Here is the logic flow of an IoT bot:
 ## Sample bot
 The IoT bot will allow you to quickly use chat commands from channels like Skype or Slack to control your Hue. To facilitate remote access, you'll call IFTTT applets predefined to work with Hue.
 
-You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/bot/scenarios).
+You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/abs-scenarios).
 
 ## Components you'll use
 The Internet of Things (IoT) Bot uses the following components:
