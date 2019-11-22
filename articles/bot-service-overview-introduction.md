@@ -45,7 +45,7 @@ As with any type of software, having a thorough understanding of the goals, proc
 ### Build
 Your bot is a web service that implements a conversational interface and communicates with the Bot Framework Service to send and receive messages and events. Bot Framework Service is one of the components of the Azure Bot Service and Bot Framework. You can create bots in any number of environments and languages. You can start your bot development in the [Azure portal](bot-service-quickstart.md), or use [[C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) | [JavaScript](javascript/bot-builder-javascript-quickstart.md)] templates for local development.
 
-As part of the Azure Bot Service and Bot Framework, we offer additional components you can use to extend your bot's functionality
+As part of the Azure Bot Service and Bot Framework, we offer additional components you can use to extend your bot's functionality:
 
 | Feature | Description | Link |
 | --- | --- | --- |
