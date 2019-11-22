@@ -2,18 +2,19 @@
 title: Request payment | Microsoft Docs
 description: Learn how to send a payment request using the Bot Framework SDK for Node.js.
 author: v-ducvo
-ms.author: v-ducvo
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Request payment
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+> [!NOTE]
+> The Payment service referred to in this article will be deprecated on December 1, 2019.
+
 
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-request-payment.md)

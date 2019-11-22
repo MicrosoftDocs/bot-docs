@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -19,8 +20,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of value the prompt returns.</typeparam>
+    <summary>
+            Contains context information for a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,14 +37,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets the number of times this instance of the prompt has been executed.
+            </summary>
+        <value>A number indicating how many times the prompt was invoked (starting at 1 for the first time it was called).</value>
+        <remarks>This count is set when the prompt is added to the dialog stack.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -57,13 +63,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the <see cref="T:Microsoft.Bot.Builder.TurnContext" /> for the current turn of conversation with the user.
+            </summary>
+        <value>Context for the current turn of conversation with the user.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,13 +89,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptOptions" /> used for this recognition attempt.
+            </summary>
+        <value>The prompt options used for this recognition attempt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,13 +115,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1" /> returned from the prompt's recognition attempt.
+            </summary>
+        <value>The recognition results from the prompt's recognition attempt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,13 +141,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets state for the associated prompt instance.
+            </summary>
+        <value>State for the associated prompt instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

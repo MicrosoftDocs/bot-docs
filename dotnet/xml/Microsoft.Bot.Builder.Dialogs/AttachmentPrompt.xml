@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;</BaseTypeName>
@@ -19,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Prompts a user to upload attachments, like images.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,16 +39,21 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
         <Parameter Name="validator" Type="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="dialogId">To be added.</param>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dialogId">The ID to assign to this prompt.</param>
+        <param name="validator">Optional, a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" /> that contains additional,
+            custom validation for this prompt.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt" /> class.
+            </summary>
+        <remarks>The value of <paramref name="dialogId" /> must be unique within the
+            <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogSet" /> or <see cref="T:Microsoft.Bot.Builder.Dialogs.ComponentDialog" /> to which the prompt is added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPromptAsync">
@@ -60,6 +68,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -72,13 +81,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="isRetry">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="state">Contains state for the current instance of the prompt on the dialog stack.</param>
+        <param name="options">A prompt options object constructed from the options initially provided
+            in the call to <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />.</param>
+        <param name="isRetry">true if this is the first time this prompt dialog instance
+            on the stack is prompting the user for input; otherwise, false.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Prompts the user for input.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,6 +108,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;&gt;&gt;</ReturnType>
@@ -105,13 +120,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="state">Contains state for the current instance of the prompt on the dialog stack.</param>
+        <param name="options">A prompt options object constructed from the options initially provided
+            in the call to <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Attempts to recognize the user's input.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result describes the result of the recognition attempt.</remarks>
       </Docs>
     </Member>
   </Members>

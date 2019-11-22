@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,7 +19,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            A user has added a bot to their contact list, removed the bot from their contact list, or otherwise changed the relationship between user and bot
+            A user has added a bot to their contact list, removed the bot from their contact list, or otherwise changed the relationship between user and bot.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,15 +37,16 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            add|remove
+            Gets or Sets add|remove.
             </summary>
-        <value>To be added.</value>
+        <value>Action.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

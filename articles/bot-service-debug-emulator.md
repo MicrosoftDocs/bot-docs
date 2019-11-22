@@ -3,7 +3,7 @@ title: Test and debug bots using the Bot Framework Emulator | Microsoft Docs
 description: Learn how to inspect, test, and debug bots using the Bot Framework Emulator desktop application.
 keywords: transcript, msbot tool, language services, speech recognition
 author: DeniseMak
-ms.author: v-demak
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -15,15 +15,82 @@ ms.date: 2/26/2019
 The Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots, either locally or remotely. Using the emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the emulator. You can test your bot using the emulator even if you have not yet [created](./bot-service-quickstart.md) it with Azure Bot Service or configured it to run on any channels.
 
 ## Prerequisites
-- Install [Emulator](https://aka.ms/Emulator-wiki-getting-started)
+- Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
+
+## Run a bot locally
+Before connecting your bot to the Bot Framework Emulator, you need to run your bot locally. You can use Visual Studio or Visual Studio Code to run your bot, or use command line. 
+To run a bot using command line, do the following:
+
+
+# [C#](#tab/csharp)
+
+* Go to the command prompt and change directory to your bot project directory.
+* Start the bot by running the following command: 
+    ```
+    dotnet run
+    ```
+* Copy the port number in the line before *Application started. Press CTRL+C to shut down.*
+
+    ![C# Port Number](media/bot-service-debug-emulator/csharp_port_number.png)
+
+
+# [JavaScript](#tab/javascript)
+
+* Go to the command prompt and change directory to your bot project directory.
+* Start the bot by running the following command:
+    ```
+    node index.js
+    ```
+* Copy the port number that restify is listening on.
+
+    ![JS Port Number](media/bot-service-debug-emulator/js_port_number.png)
+---
+
+At this point, your bot should be running locally. 
+
 
 ## Connect to a bot running on localhost
 
+<!-- auth config steps -->
+### Configure the emulator for authentication
+
+If a bot requires authentication, displaying a login dialog, you must configure the emulator as shown below.
+
+#### Using sign-in verification code
+
+1. Start the emulator.
+1. In the emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
+1. Check the box by **Use a sign-in verification code for OAuthCards**.
+1. Check the box by **Bypass ngrok for local address**
+1. Click the  **Save** button.
+
+When you click the login button displayed by the bot, a validation code will be generated.
+You wil enter the code in the bot input chat box for the authentication to take place.
+After that you can perform the allowed operations.
+
+Alternatively, you can perform the steps described below.
+
+#### Using authentication tokens
+
+1. Start the emulator.
+1. In the emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
+1. Check the box by **Use version1.0 authentication tokens**.
+1. Enter the local path to the **ngrok** tool. For more the tool information, see [ngrok](https://ngrok.com/).
+1. Check the box by **Run ngrok when the Emulator starts up**.
+1. Click the  **Save** button.
+
+When you click the login button displayed by the bot, you will be asked to enter your credentials. An authentication token is generated. After that you can perform the allowed operations.
+
+
 ![Emulator UI](media/emulator-v4/emulator-welcome.png)
 
-To connect to a bot running locally, click **Open bot** or select you preconfigured configuration file (a .bot file). You don't need a configuration file to connect to your bot, but the emulator still works with one if your bot has one. If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
+To connect to a bot running locally and click **Open bot**. Add the port number your copied earlier into the following URL and paste the updated URL in the Bot URL bar:
 
-![Emulator UI](media/emulator-v4/emulator-open-bot.png)
+*http://localhost:**port number**/api/messages*
+
+![Emulator UI](media/bot-service-debug-emulator/open_bot_emulator.png)
+
+If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
 
 ### Use bot credentials
 
@@ -31,10 +98,14 @@ When you open the bot, set the **Microsoft App ID** and **Microsoft App password
 
 ## View detailed Message Activity with the Inspector
 
-Send message to your bot and the bot should respond back. You can click on message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. JSON information includes key metadata including channelID, activity type, conversation id, the text message, endpoint URL, etc. You can inspect activities sent from the user, as well as activities the bot responds with. 
+Send a message to your bot and the bot should respond back. You can click on the message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right side of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. The JSON information includes key metadata, including the channel ID, activity type, conversation ID, the text message, endpoint URL, and so on. You can inspect activities sent from the user, as well as activities the bot responds with.
 
 ![Emulator Message Activity](media/emulator-v4/emulator-view-message-activity-03.png)
 
+> [!TIP]
+> You can debug state changes in a bot connected to a channel by adding [Inspection Middleware](bot-service-debug-inspection-middleware.md) to the bot.
+
+<!--
 ## Save and load conversations with bot transcripts
 
 Activities in the emulator can be saved as transcripts. From an open live chat window, select **Save Transcript As** to the transcript file. The **Start Over** button can be used any time to clear a conversation and restart a connection to the bot.  
@@ -44,7 +115,8 @@ Activities in the emulator can be saved as transcripts. From an open live chat w
 To load transcripts, simply select **File > Open Transcript File** and select the transcript. A new Transcript window will open and render the message activity to the output window. 
 
 ![Emulator load transcripts](media/emulator-v4/emulator-load-transcript.png)
-
+--->
+<!---
 ## Add services 
 
 You can easily add a LUIS app, QnA knowledge base, or dispatch model to your bot directly from the emulator. When the bot is loaded, select the services button on the far left of the emulator window. You will see options under the **Services** menu to add LUIS, QnA Maker, and Dispatch. 
@@ -61,6 +133,8 @@ To add a service app, simply click on the **+** button and select the service yo
 When either service is connected, you can go back to a live chat window and verify that your services are connected and working. 
 
 ![QnA connected](media/emulator-v4/emulator-view-message-activity.png)
+
+--->
 
 ## Inspect services
 
@@ -83,19 +157,18 @@ Open the **Emulator Settings**, enter the path to ngrok, select whether or not t
 ![ngrok path](media/emulator-v4/emulator-ngrok-path.png)
 -->
 
-## Login to Azure
+<!---## Login to Azure
 
-You can use Emulator to login in to your Azure account. This is particularly helpful for you to add and manage services your bot depends on. See [above](#add-services) to learn more about services you can manage using the Emulator.
+You can use Emulator to login in to your Azure account. This is particularly helpful for you to add and manage services your bot depends on. 
+See [above](#add-services) to learn more about services you can manage using the Emulator.
+-->
 
-### To login
-
+### Login to Azure
+You can use Emulator to login in to your Azure account. This is particularly helpful for you to add and manage services your bot depends on. Log into Azure by following these steps:
+- Click on File -> Sign in with Azure
 ![Azure login](media/emulator-v4/emulator-azure-login.png)
-
-To login
-- You can click on File -> Sign in with Azure
 - On the welcome screen click on Sign in with your Azure account
 You can optionally have Emulator keep you signed in across Emulator application restarts.
-
 ![Azure login](media/emulator-v4/emulator-azure-login-success.png)
 
 ## Disabling data collection
@@ -124,10 +197,17 @@ For troubleshooting, see [troubleshoot general problems](bot-service-troubleshoo
 
 ## Next steps
 
+Use inspection middleware to debug a bot connected to a channel.
+
+> [!div class="nextstepaction"]
+> [Debug your bot using transcript files](bot-service-debug-inspection-middleware.md)
+
+<!--
 Saving a conversation to a transcript file allows you to quickly draft and replay a certain set of interactions for debugging.
 
 > [!div class="nextstepaction"]
 > [Debug your bot using transcript files](~/v4sdk/bot-builder-debug-transcript.md)
+-->
 
 <!-- Footnote-style URLs -->
 

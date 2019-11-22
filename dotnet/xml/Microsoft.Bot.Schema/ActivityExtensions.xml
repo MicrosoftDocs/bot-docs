@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +18,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Helper functions for Message Activities
+            Helper functions for Message Activities.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -35,6 +36,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -44,12 +46,12 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="activity"></param>
-        <param name="id">ChannelAccount.Id</param>
+        <param name="activity">activity.</param>
+        <param name="id">ChannelAccount.Id.</param>
         <summary>
-            Is there a mention of Id in the Text Property 
+            Is there a mention of Id in the Text Property.
             </summary>
-        <returns>true if this id is mentioned in the text</returns>
+        <returns>true if this id is mentioned in the text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,6 +68,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -74,11 +77,11 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.IMessageActivity" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="activity"></param>
+        <param name="activity">activity.</param>
         <summary>
-            Is there a mention of Recipient.Id in the Text Property 
+            Is there a mention of Recipient.Id in the Text Property.
             </summary>
-        <returns>true if this id is mentioned in the text</returns>
+        <returns>true if this id is mentioned in the text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,6 +98,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -104,12 +108,15 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="activity"></param>
-        <param name="id">id to match</param>
+        <param name="activity">activity.</param>
+        <param name="id">id to match.</param>
         <summary>
-            Replace any mention text for given id from Text property
+            Replace any mention text for given id from Text property. First checks for and replaces the name of the
+            recipient with the matching id and then checks for the leftover <at /> tags (this is done to handle
+            the way Skype sends mention text.
+            Use with caution because this function is altering the text on the Activity.
             </summary>
-        <returns>new .Text property value</returns>
+        <returns>new .Text property value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,6 +133,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -134,11 +142,12 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.IMessageActivity" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="activity"></param>
+        <param name="activity">.</param>
         <summary>
-            Remove recipient mention text from Text property
+            Remove recipient mention text from Text property.
+            Use with caution because this function is altering the text on the Activity.
             </summary>
-        <returns>new .Text property value</returns>
+        <returns>new .Text property value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

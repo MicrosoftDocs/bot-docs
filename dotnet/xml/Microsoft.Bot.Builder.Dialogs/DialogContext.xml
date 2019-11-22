@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,6 +21,32 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogContext (Microsoft.Bot.Builder.Dialogs.DialogSet dialogs, Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.Dialogs.DialogState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.DialogSet dialogs, class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.Dialogs.DialogState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.#ctor(Microsoft.Bot.Builder.Dialogs.DialogSet,Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogs As DialogSet, turnContext As ITurnContext, state As DialogState)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.DialogContext : Microsoft.Bot.Builder.Dialogs.DialogSet * Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.Dialogs.DialogState -&gt; Microsoft.Bot.Builder.Dialogs.DialogContext" Usage="new Microsoft.Bot.Builder.Dialogs.DialogContext (dialogs, turnContext, state)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogs" Type="Microsoft.Bot.Builder.Dialogs.DialogSet" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="state" Type="Microsoft.Bot.Builder.Dialogs.DialogState" />
+      </Parameters>
+      <Docs>
+        <param name="dialogs">Parent dialog set.</param>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="state">Current dialog state.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ActiveDialog">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogInstance ActiveDialog { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.DialogInstance ActiveDialog" />
@@ -33,6 +60,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogInstance</ReturnType>
@@ -59,6 +87,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -91,6 +120,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -120,6 +150,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -128,7 +159,9 @@
         <summary>
             Gets the context for the current turn of conversation.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The context for the current turn of conversation.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,6 +177,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -175,6 +209,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogSet</ReturnType>
@@ -183,7 +218,9 @@
         <summary>
             Gets the set of dialogs that can be called from this context.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The set of dialogs that can be called from this context.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,6 +236,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -208,7 +246,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="result"> (Optional) result to pass to the parent dialogs.</param>
+        <param name="result">(Optional) result to pass to the parent dialogs.</param>
         <param name="cancellationToken">The cancellation token.</param>
         <summary>
             Ends a dialog by popping it off the stack and returns an optional result to the dialog's
@@ -235,6 +273,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Dialog</ReturnType>
@@ -245,7 +284,7 @@
       <Docs>
         <param name="dialogId">ID of the dialog to search for.</param>
         <summary>
-            If the dialog cannot be found within the current `DialogSet`, the parent `DialogContext` 
+            If the dialog cannot be found within the current `DialogSet`, the parent `DialogContext`
             will be searched if there is one.
             </summary>
         <returns>The first Dialog found that matches the dialogId.</returns>
@@ -263,15 +302,18 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the The parent DialogContext if any. Used when searching for dialogs to start.
+            Gets or sets the parent DialogContext if any. Used when searching for dialogs to start.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The parent DialogContext if any. Used when searching for dialogs to start.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,6 +329,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -321,6 +364,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -354,6 +398,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -383,6 +428,7 @@
         <AssemblyVersion>4.1.5.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;</ReturnType>
@@ -391,7 +437,9 @@
         <summary>
             Gets the current dialog stack.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The current dialog stack.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

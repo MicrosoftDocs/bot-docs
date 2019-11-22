@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,6 +79,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -102,6 +106,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -115,7 +120,7 @@
         <summary>
             Gets or sets unique id for the service.
             </summary>
-        <value>To be added.</value>
+        <value>The Id of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,6 +135,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -143,7 +149,7 @@
         <summary>
             Gets or sets user friendly name of the service.
             </summary>
-        <value>To be added.</value>
+        <value>The name of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,6 +164,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -188,6 +195,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -201,7 +209,7 @@
         <summary>
             Gets or sets type of the service.
             </summary>
-        <value>To be added.</value>
+        <value>The type of service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

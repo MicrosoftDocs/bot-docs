@@ -3,11 +3,10 @@ title: Entities and activity types | Microsoft Docs
 description: Entities and activity types.
 keywords: mention entities, activity types, consume entities
 author: ivorb
-ms.author: v-ivorb
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.subservice: sdk
 ms.date: 03/01/2018
 ---
 # Entities and activity types
@@ -84,7 +83,7 @@ The geoCoordinates object contains these properties:
 | Type | type of the entity ("GeoCoordinates") |
 | Name | name of the place |
 | Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
-| Longitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
+| Latitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
 | Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
 
 This code example shows how to add a place entity to the entities collection:
@@ -137,7 +136,7 @@ if (entity[0].type === "GeoCoordinates" && entity[0].latitude > 34) {
 ---
 
 ## Activity types
-
+<!-- 
 This code example show how to process an activity of type **message**:
 
 # [C#](#tab/cs)
@@ -156,9 +155,9 @@ if(context.activity.type === 'message'){
 }
 ```
 
----
+--- -->
 
-There are several activity types; activities can be of several different types past the most common **message**. Explanations and further details can be found on the [Activity schema page](https://aka.ms/botSpecs-activitySchema).
+Activities can be of several different types past the most common **message**. Explanations and further details on different activity types can be found in the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
 
 ::: moniker range="azure-bot-service-3.0"
 
