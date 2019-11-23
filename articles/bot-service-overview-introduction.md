@@ -14,7 +14,7 @@ ms.date: 05/05/2019
 
 [!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
-Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots all in one place. Through the use of modular and extensible framework provided by the SDK, tools, templates, and AI services developers can create bots that use speech, understand natural language, handle questions and answers, and more.
+Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots, all in one place. Through the use of modular and extensible framework provided by the SDK, tools, templates, and AI services developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
 ## What is a bot?
 Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
@@ -40,12 +40,12 @@ Azure Bot Service and Bot Framework offer an integrated set of tools and service
 ![Bot Overview](media/bot-service-overview.png) 
 
 ### Plan
-As with any type of software, having a thorough understanding of the goals, processes and user needs is important to the process of creating a successful bot. Before writing code, review the bot [design guidelines](bot-service-design-principles.md) for best practices and identify the needs for your bot. You can create a simple bot or include more sophisticated capabilities such as speech, natural language understanding,and question answering.
+As with any type of software, having a thorough understanding of the goals, processes and user needs is important to the process of creating a successful bot. Before writing code, review the bot [design guidelines](bot-service-design-principles.md) for best practices and identify the needs for your bot. You can create a simple bot or include more sophisticated capabilities such as speech, natural language understanding, and question answering.
 
 ### Build
 Your bot is a web service that implements a conversational interface and communicates with the Bot Framework Service to send and receive messages and events. Bot Framework Service is one of the components of the Azure Bot Service and Bot Framework. You can create bots in any number of environments and languages. You can start your bot development in the [Azure portal](bot-service-quickstart.md), or use [[C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) | [JavaScript](javascript/bot-builder-javascript-quickstart.md)] templates for local development.
 
-As part of the Azure Bot Service and Bot Framework, we offer additional components you can use to extend your bot's functionality
+As part of the Azure Bot Service and Bot Framework, we offer additional components you can use to extend your bot's functionality:
 
 | Feature | Description | Link |
 | --- | --- | --- |
@@ -64,11 +64,11 @@ You also have access to a variety of [samples](https://github.com/microsoft/botb
 ### Test 
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot. We provide several ways to test bots before they are released for use:
 
-- Test your bot locally with the [emulator](bot-service-debug-emulator.md). The Bot Framework Emulator is a stand-alone app that not only provides a chat interface, but also debugging and interrogation tools to help understand how and why your bot does what it does.  The emulator can be run locally alongside your in-development bot application. 
+- Test your bot locally with the [emulator](bot-service-debug-emulator.md). The Bot Framework Emulator is a stand-alone app that not only provides a chat interface but also debugging and interrogation tools to help understand how and why your bot does what it does.  The emulator can be run locally alongside your in-development bot application. 
  
 - Test your bot on the [web](bot-service-manage-test-webchat.md). Once configured through the Azure portal your bot can also be reached through a web chat interface. The web chat interface is a great way to grant access to your bot to testers and other people who do not have direct access to the bot's running code.
 
-- [Unit Test](https://docs.microsoft.com/en-us/azure/bot-service/unit-test-bots?view=azure-bot-service-4.0) your bot with the July update of Bot Framework SDK.
+- [Unit Test](https://docs.microsoft.com/azure/bot-service/unit-test-bots?view=azure-bot-service-4.0) your bot with the July update of Bot Framework SDK.
 
 ### Publish 
 When you are ready for your bot to be available on the web, publish your bot to [Azure](bot-builder-howto-deploy-azure.md) or to your own web service or data center. Having an address on the public internet is the first step to your bot coming to life on your site, or inside chat channels.
