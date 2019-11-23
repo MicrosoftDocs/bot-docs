@@ -726,10 +726,12 @@ A full list of events logged for your bot's telemetry can be found on the [telem
 
 #### Identifiers and Custom Events
 
+
 When logging events into Application Insights, the events generated contain default properties that you won't have to fill.  For example, `user_id` and `session_id`properties are contained in each Custom Event (generated with the `TraceEvent` API).  In addition, `activitiId`, `activityType` and `channelId` are also added.
 
 > [!NOTE]
 > Custom telemetry clients will not be provided these values.
+
 
 Property |Type | Details
 --- | --- | ---

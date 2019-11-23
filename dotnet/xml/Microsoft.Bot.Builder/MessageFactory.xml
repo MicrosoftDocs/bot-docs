@@ -23,7 +23,7 @@
     <remarks>The following apply to message actions in general.
             <para>See the channel's documentation for limits imposed upon the contents of
             the text of the message to send.</para><para>To control various characteristics of your bot's speech such as voice,
-            rate, volume, pronunciation, and pitch, specify test to speak in
+            rate, volume, pronunciation, and pitch, specify text to speak in
             Speech Synthesis Markup Language (SSML) format.</para><para>
             Channels decide how each card action manifests in their user experience.
             In most cases, the cards are clickable. In others, they may be selected by speech
