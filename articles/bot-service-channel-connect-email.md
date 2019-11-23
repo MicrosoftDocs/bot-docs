@@ -8,6 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 11/15/2019
+
 ---
 # Connect a bot to Office 365 email
 

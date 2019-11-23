@@ -56,6 +56,7 @@ This diagram shows the steps for bot-to-connector authentication:
 
 ### Step 1: Request an access token from the Azure AD v2 account login service
 
+
 > [!IMPORTANT]
 > If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its AppID and password. You need the bot's App ID and password to request an access token.
 
