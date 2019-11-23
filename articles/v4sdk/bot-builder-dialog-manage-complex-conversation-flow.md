@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/05/2019
+ms.date: 11/06/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -74,7 +74,7 @@ We create services for the bot that other parts of the code require.
 - Services for managing state: storage, user state, and conversation state.
 - The dialog the bot will use.
 
-[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=25-55)]
+[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=26-65)]
 
 ---
 

@@ -55,6 +55,21 @@ rmdir /s /q \temp\typeDocs
     typedoc --mode file --json \temp\typeDocs\<lib-name>.json libraries\<lib-name>\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludeNotExported --excludePrivate
     ```
 
+    For 4.5, the set of commands looked like this:
+
+    ```cmd
+    typedoc --mode file --json \temp\typeDocs\botbuilder.json libraries\botbuilder\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botbuilder-ai.json libraries\botbuilder-ai\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botbuilder-applicationinsights.json libraries\botbuilder-applicationinsights\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botbuilder-azure.json libraries\botbuilder-azure\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botbuilder-core.json libraries\botbuilder-core\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botbuilder-dialogs.json libraries\botbuilder-dialogs\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botbuilder-testing.json libraries\botbuilder-testing\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botframework-config.json libraries\botframework-config\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botframework-connector.json libraries\botframework-connector\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    typedoc --mode file --json \temp\typeDocs\botframework-schema.json libraries\botframework-schema\src --ignoreCompilerErrors --includeDeclarations --excludeExternals --excludePrivate --excludeNotExported
+    ```
+
 ## type2docfx
 
 1. Switch to the directory containing the intermediate JSON files.
@@ -69,6 +84,21 @@ rmdir /s /q \temp\typeDocs
     type2docfx <lib-name>.json _yaml\<lib-name>
     ```
 
+    For 4.5, the set of commands looked like this:
+
+    ```cmd
+    type2docfx botbuilder.json _yaml\botbuilder
+    type2docfx botbuilder-ai.json _yaml\botbuilder-ai
+    type2docfx botbuilder-applicationinsights.json _yaml\botbuilder-applicationinsights
+    type2docfx botbuilder-azure.json _yaml\botbuilder-azure
+    type2docfx botbuilder-core.json _yaml\botbuilder-core
+    type2docfx botbuilder-dialogs.json _yaml\botbuilder-dialogs
+    type2docfx botbuilder-testing.json _yaml\botbuilder-testing
+    type2docfx botframework-config.json _yaml\botframework-config
+    type2docfx botframework-connector.json _yaml\botframework-connector
+    type2docfx botframework-schema.json _yaml\botframework-schema
+    ```
+
 ## Aggregate the TOC files
 
 Note that **type2doxfx** generates a TOC for each library. We need to combine these together.
@@ -79,9 +109,9 @@ Note that **type2doxfx** generates a TOC for each library. We need to combine th
     cd _yaml
     ```
 
-1. Create the combined **toc.yml** file.
+1. Create the combined **toc.yml** file by appending all the lower-level TOCs into a common, master TOC.
 
-    > If the list of modules changes, this command will need updating.
+    For 4.5, the command looked like this:
 
     ```cmd
     type botbuilder\toc.yml botbuilder-ai\toc.yml botbuilder-applicationinsights\toc.yml botbuilder-azure\toc.yml botbuilder-core\toc.yml botbuilder-dialogs\toc.yml botbuilder-testing\toc.yml botframework-config\toc.yml botframework-connector\toc.yml botframework-schema\toc.yml > toc.yml

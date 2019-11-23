@@ -50,12 +50,12 @@ We will import an existing knowledge base definition from the QnA Maker sample i
    1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
    1. Connect your QnA service to your knowledge base.
    1. Name your knowledge base.
-   1. To populate your knowledge base, use the **BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker\CognitiveModels\smartLightFAQ.tsv** file from the samples repo.
+   1. To populate your knowledge base, use the `BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker\CognitiveModels\smartLightFAQ.tsv` file from the samples repo. If you have downloaded the samples, upload the file *smartLightFAQ.tsv* from your computer.
    1. Click **Create your kb** to create the knowledge base.
 1. **Save and train** your knowledge base.
 1. **Publish** your knowledge base.
 
-Once your QnA Maker app is published, select the _SETTINGS_ Tab, and scroll down to 'Deployment details'. Record the following values from the _Postman_ Sample HTTP request.
+Once your QnA Maker app is published, select the **SETTINGS** tab, and scroll down to *Deployment details*. Copy  the following values from the *Postman* HTTP example request.
 
 ```text
 POST /knowledgebases/<knowledge-base-id>/generateAnswer
@@ -106,9 +106,9 @@ QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
 
 | Field | Value |
 |:----|:----|
-| QnAKnowledgebaseId | The knowledge base ID that the QnA Maker portal generated for you. |
-| QnAAuthKey | The endpoint key that the QnA Maker portal generated for you. |
-| QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |
+| QnAKnowledgebaseId | `knowledge-base-id` from the *Postman* HTTP example request.|
+| QnAAuthKey | `qna-maker-resource-key` from the *Postman* HTTP example request. |
+| QnAEndpointHostName | `your-hostname` from the *Postman* HTTP example request. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like `https://<your knowledge base name>.azurewebsites.net/qnamaker`. |
 
 Now save your edits.
 
@@ -202,9 +202,9 @@ Update your initialization code to load the service information for your knowled
    ```csharp
    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
    {
-      // First send the user input to your QnA Maker knowledge base
+      await turnContext.SendActivityAsync(MessageFactory.Text($"Echo: {turnContext.Activity.Text}"), cancellationToken);
+
       await AccessQnAMaker(turnContext, cancellationToken);
-      ...
    }
    ```
 
@@ -288,19 +288,24 @@ At this point your bot should be able to answer some questions. Run the bot loca
 ![test qna sample](./media/qna-test-bot.png)
 
 ## Republish your bot
+You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article. 
 
-We can now republish your bot back to Azure.
+### Zip your project folder 
+[!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 
-> [!IMPORTANT]
+<!-- > [!IMPORTANT]
 > Before creating a zip of your project files, make sure that you are _in_ the correct folder. 
 > - For C# bots, it is the folder that has the .csproj file. 
 > - For JS bots, it is the folder that has the app.js or index.js file. 
 >
 > Select all the files and zip them up while in that folder, then run the command while still in that folder.
 >
-> If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
+> If your root folder location is incorrect, the **bot will fail to run in the Azure portal**. -->
 
-# [C#](#tab/csharp)
+### Deploy your code to Azure
+[!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
+
+<!-- # [C#](#tab/csharp)
 ```cmd
 az webapp deployment source config-zip --resource-group "resource-group-name" --name "bot-name-in-azure" --src "c:\bot\mybot.zip"
 ```
@@ -309,7 +314,7 @@ az webapp deployment source config-zip --resource-group "resource-group-name" --
 
 [!INCLUDE [publish snippet](~/includes/deploy/snippet-publish-js.md)]
 
----
+--- -->
 
 ### Test the published bot
 
@@ -326,8 +331,8 @@ If you're not going to continue to use this application, delete
 the associated resources with the following steps:
 
 1. In the Azure portal, open the resource group for your bot.
-1. Click **Delete resource group** to delete the group and all the resources it contains.
-1. In the confirmation pane, enter the resource group name, and click **Delete**.
+2. Click **Delete resource group** to delete the group and all the resources it contains.
+3. In the confirmation pane, enter the resource group name, and click **Delete**.
 
 ## Next steps
 

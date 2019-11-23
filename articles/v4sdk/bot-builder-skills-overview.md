@@ -6,7 +6,7 @@ ms.author: darrenj
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 10/09/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -39,7 +39,7 @@ At this time we have made available the following Bot Framework Skills, powered 
 |[Email Skill](https://aka.ms/bf-email-skill)|Add email capabilities to your assistant. Powered by Microsoft Graph and Google.|
 |[To Do Skill](https://aka.ms/bf-todo-skill)|Add task management capabilities to your assistant. Powered by Microsoft Graph.|
 |[Point of Interest Skill](https://aka.ms/bf-poi-skill)|Find points of interest and directions. Powered by Azure Maps and FourSquare.|
-|[Automotive Skill](https://aka.ms/bf-autos-kill)|Industry-vertical Skill for showcasing enabling car feature control.|
+|[Automotive Skill](https://aka.ms/bf-auto-skill)|Industry-vertical Skill for showcasing enabling car feature control.|
 |[Experimental Skills](https://aka.ms/bf-experimental-skills)|News, Restaurant Booking and Weather.|
 
 ## Getting Started

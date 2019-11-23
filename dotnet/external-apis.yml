@@ -111,3 +111,19 @@ references:
 - uid: Microsoft.Rest.ValidationException
   fullName: Microsoft.Rest.ValidationException
   name: ValidationException
+
+- uid: Xunit.Abstractions.ITestOutputHelper
+  fullName: Xunit.Abstractions.ITestOutputHelper
+  name: ITestOutputHelper
+- uid: Xunit.Abstractions.IXunitSerializable
+  fullName: Xunit.Abstractions.IXunitSerializable
+  name: IXunitSerializable
+- uid: Xunit.Abstractions.IXunitSerializationInfo
+  fullName: Xunit.Abstractions.IXunitSerializationInfo
+  name: IXunitSerializationInfo
+- uid: Xunit.Abstractions.IXunitSerializable.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
+  fullName: Xunit.Abstractions.IXunitSerializable.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
+  name: IXunitSerializable.Deserialize(Xunit.Abstractions.IXunitSerializationInfo)
+- uid: Xunit.Abstractions.IXunitSerializable.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
+  fullName: Xunit.Abstractions.IXunitSerializable.Serialize(Xunit.Abstractions.IXunitSerializationInfo)
+  name: IXunitSerializable.Serialize(Xunit.Abstractions.IXunitSerializationInfo)

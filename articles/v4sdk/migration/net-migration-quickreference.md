@@ -524,19 +524,22 @@ Task WriteAsync(IDictionary<string, object> changes, CancellationToken cancellat
 ```
 
 ```csharp
-var storageOptions = new CosmosDbStorageOptions()
+var storageOptions = new CosmosDbPartitionedStorageOptions()
 {
     AuthKey = configuration["cosmosKey"],
-    CollectionId = configuration["cosmosCollection"],
-    CosmosDBEndpoint = new Uri(configuration["cosmosPath"]),
+    ContainerId = configuration["cosmosContainer"],
+    CosmosDbEndpoint = configuration["cosmosPath"],
     DatabaseId = configuration["cosmosDatabase"]
 };
 
-IStorage dataStore = new CosmosDbStorage(storageOptions);
+IStorage dataStore = new CosmosDbPartitionedStorage(storageOptions);
 var conversationState = new ConversationState(dataStore);
 services.AddSingleton(conversationState);
 
 ```
+
+> [!NOTE]
+> When using `CosmosDbPartitionedStorage`, you are responsible for creating a database and providing the Cosmos DB endpoint, authorization key and database ID as show above. You should simply specify an ID for a container - your bot will create it for you, ensuring it is configured correctly for storing bot state. If you do create the container yourself, ensure that the partition key is set to **/id** and set the `CosmosDbPartitionedStorageOptions.ContainerId` property.
 
 ## To use Form Flow
 

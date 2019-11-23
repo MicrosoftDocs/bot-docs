@@ -5,13 +5,11 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/22/2019
+ms.date: 11/04/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 <!-- 
-
-ms.author: kamrani
 
 Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
@@ -168,7 +166,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 #### Azure AD v1
 
-1. Navigate to your bot's resource page on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's resource page on the [Azure Portal](https://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -197,7 +195,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 #### Azure AD v2
 
-1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](https://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -272,30 +270,37 @@ If you do not know how to get your **Microsoft app ID** and **Microsoft app pass
 > [!NOTE]
 > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
 
-## Test the bot
+## Test the bot using the emulator
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
-1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages.
+If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the emulator](../bot-service-debug-emulator.md).
 
-    - You will need to provide your bot's app ID and password when you connect to your bot.
+<!-- auth config steps -->
+In order for the bot sample login to work you must configure the emulator 
+as shown in [Configure the emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
 
-        - If you needed to XML-escape the password in your bot code, you also need to do so here.
+### Testing
 
-    - Type `help` to see a list of available commands for the bot, and test the authentication features.
-    - Once you've signed in, you don't need to provide your credentials again until you sign out.
-    - To sign out, and cancel your authentication, type `logout`.
+After you have configured the authentication mechanism, you can perform the actual bot sample testing.  
+
+1. Run the bot sample locally on your machine.
+1. Start the emulator.
+1. You will need to provide your bot's app ID and password when you connect to the bot.
+    - You get the app ID and the password from the Azure app registration. These are the same values you assigned to the bot app in the `appsettings.json` or `.env` file. In the emulator, you assign these values in the configuration file or the first time you connect to the bot.
+    - If you needed to XML-escape the password in your bot code, you also need to do so here.
+1. Type `help` to see a list of available commands for the bot, and test the authentication features.
+1. Once you've signed in, you don't need to provide your credentials again until you sign out.
+1. To sign out, and cancel your authentication, type `logout`.
 
 > [!NOTE]
 > Bot authentication requires use of the Bot Connector Service. The service accesses the bot channels registration information for your bot.
 
-# [Bot authentication](#tab/bot-oauth)
+## Bot authentication example
 
 In the **Bot authentication** sample, the dialog is designed to retrieve the user token after the user is logged in.
 
 ![Sample output](media/how-to-auth/auth-bot-test.png)
 
-# [Bot authentication MSGraph](#tab/bot-msgraph-auth)
+## Bot authentication MSGraph example
 
 In the **Bot authentication MSGraph** sample, the dialog is designed to accept a limited set of commands after the user is logged in.
 
@@ -408,24 +413,24 @@ Teams behaves somewhat differently than other channels in regards to OAuth and r
  
 One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity. 
 
-# [C#](#tab/csharp)
-**Bots/TeamsBot.cs**
+# [C#](#tab/csharp)  
+**Bots/TeamsBot.cs**  
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
-# [JavaScript](#tab/javascript)
-**bots/teamsBot.js**
+# [JavaScript](#tab/javascript)  
+**bots/teamsBot.js**  
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=27-32&highlight=3)]
 
 ---
 
 If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file. 
 
-# [C#](#tab/csharp)
-**Bots/DialogBot.cs**
-[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=18)]
+# [C#](#tab/csharp)  
+**Bots/DialogBot.cs**  
+[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
-# [JavaScript](#tab/javascript)
-**Bots/dialogBot.js**
+# [JavaScript](#tab/javascript)  
+**Bots/dialogBot.js**  
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=4-6)]
 
 ---
@@ -434,7 +439,7 @@ Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActi
 The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
 
 > [!NOTE]
-> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
+> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
 
 ### Further reading
 

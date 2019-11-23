@@ -7,7 +7,7 @@ keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azu
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 7/9/2019
+ms.date: 11/01/2019
 ---
 
 # Debug a bot with inspection middleware
@@ -17,8 +17,8 @@ We use an EchoBot built locally using the Bot Framework v4 ([C#](https://docs.mi
 
 ## Prerequisites
 - Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
-- Knowledge of bot [Middleware](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0)
-- knowledge of bot [Managing state](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0)
+- Knowledge of bot [Middleware](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0)
+- knowledge of bot [Managing state](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0)
 - Download and install [ngrok](https://ngrok.com/) (if you want to debug a bot configured in Azure to use additional channels)
 
 ## Update your emulator to the latest version 
@@ -37,7 +37,7 @@ Set up the inspection state in the **Startup** file. Add the inspection middlewa
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
 
 **AdapterWithInspection.cs**  
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=11-21)]
+[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=11-37)]
 
 **EchoBot.cs**  
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Bots/EchoBot.cs?range=14-43)]

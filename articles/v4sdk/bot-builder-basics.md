@@ -372,3 +372,5 @@ The bot resources, such as app ID, passwords, keys or secrets for connected serv
 ## Additional resources
 
 - To understand the role of state in bots, see [managing state](bot-builder-concept-state.md).
+
+- To understand key concepts of developing bots for Microsoft Teams, see [How Microsoft Teams bots work](bot-builder-basics-teams.md)

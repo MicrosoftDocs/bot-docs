@@ -88,7 +88,7 @@ Each time the server's `/api/notify` page is requested, the server retrieves the
 The server then uses the `continueConversation` method to send the proactive message.
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
-[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=56-68&highlight=4-5)]
+[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=68-80&highlight=4-6)]
 
 ---
 
