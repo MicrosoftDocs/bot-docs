@@ -76,6 +76,5 @@ Common Expression Language allows you to evaluate the outcome of a condition-bas
 [49]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/csharp_dotnetcore
 [50]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/declarative
 
-
 ## Additional information
 - You can see previous announcements [here](what-is-new-archive.md).
