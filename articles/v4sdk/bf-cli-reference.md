@@ -373,7 +373,6 @@ _See code: [@microsoft/bf-qnamaker](https://github.com/microsoft/botframework-cl
 
 ## `bf qnamaker:alterations:replace`
 
-
 Replaces word alterations (synonyms) for the KB with the given records.
 
 ```text
