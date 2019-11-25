@@ -108,7 +108,7 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
     }
     ```
 
-7. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+6. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -246,7 +246,7 @@ That's all there is to adding telemetry to your bots dialogs, at this point if y
 
 ## Enabling telemetry to capture usage data from other services like LUIS and QnA Maker
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  
+We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](bot-builder-telemetry-QnAMaker.md)
 
 For this sample, we just need to provide the telemetry client in a similar way to how we did for dialogs. 
 
@@ -331,6 +331,8 @@ There, you'll see some default information about your bot performance and any ad
 
 
 ## Additional Information
+
+* [Add telemetry to your QnAMaker bot](bot-builder-telemetry-qnamaker.md)
 
 * [What is Application Insights?](https://aka.ms/appinsights-overview)
 
