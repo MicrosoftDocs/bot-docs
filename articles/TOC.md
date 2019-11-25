@@ -52,6 +52,7 @@
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
+### [Add telemetry to your QnA bot](v4sdk/bot-builder-telemetry-QnAMaker.md)
 ### [Use Direct Line Speech in your bot](directline-speech-bot.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)
