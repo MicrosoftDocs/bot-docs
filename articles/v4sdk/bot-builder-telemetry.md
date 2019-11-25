@@ -367,14 +367,6 @@ The easiest way to test is by creating a dashboard using [Azure portal's templat
 ```
 -->
 
-
-
-
-
-
-
-
-
 <!--
 ## Additional information
 
@@ -409,9 +401,7 @@ There are three main components available for your bot to log telemetry, and eac
 - [*LuisRecognizer* class.](#telemetry-support-luis)  You can override for custom logging in two ways - per invocation (add/replace properties) or derived classes.
 - [*QnAMaker*  class.](#telemetry-qnamaker)  You can override for custom logging in two ways - per invocation (add/replace properties) or derived classes.
 
-
 All components log using the `IBotTelemetryClient`  (or `BotTelemetryClient` in node.js) interface which can be overridden with a custom implementation.
-
 
 #### Telemetry Middleware
 
@@ -730,6 +720,7 @@ When logging events into Application Insights, the events generated contain defa
 
 > [!NOTE]
 > Custom telemetry clients will not be provided these values.
+
 
 Property |Type | Details
 --- | --- | ---
