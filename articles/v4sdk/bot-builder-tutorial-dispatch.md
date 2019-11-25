@@ -7,7 +7,7 @@ ms.author: diberry
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/06/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
