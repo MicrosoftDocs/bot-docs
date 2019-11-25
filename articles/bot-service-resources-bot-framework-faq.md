@@ -258,4 +258,3 @@ If you’re making your bot in the Azure portal, you need to generate a secret f
 [DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
-
