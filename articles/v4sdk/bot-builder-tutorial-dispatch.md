@@ -85,6 +85,7 @@ Before you can create the dispatch model, you'll need to have your LUIS apps and
 
 8. Once completed, _Train_ and _Publish_ both your LUIS **Home Automation** app and your LUIS **Weather** app by repeating the above steps for 'Weather.json' file.
 
+
 ### Create QnA Maker knowledge base
 
 The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found [here](https://aka.ms/create-qna-maker).

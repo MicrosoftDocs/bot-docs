@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/17/2019
+ms.date: 11/17/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -53,7 +53,6 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
 1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio
 
 2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs):
-
 
 3. Include the following statements in `Startup.cs`:
     ```csharp
@@ -108,7 +107,7 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
     }
     ```
 
-7. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+6. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -397,11 +396,15 @@ If using a Dialog within your Bot, every Dialog-based object (including Prompts)
 
 There are three main components available for your bot to log telemetry, and each component has customization available for logging your own events, which are discussed in this section. 
 
+
 - A  [Bot Framework Middleware component](#telemetry-middleware) (*TelemetryLoggerMiddleware*) that will log when messages are received, sent, updated or deleted. You can override for custom logging.
 - [*LuisRecognizer* class.](#telemetry-support-luis)  You can override for custom logging in two ways - per invocation (add/replace properties) or derived classes.
 - [*QnAMaker*  class.](#telemetry-qnamaker)  You can override for custom logging in two ways - per invocation (add/replace properties) or derived classes.
 
+
 All components log using the `IBotTelemetryClient`  (or `BotTelemetryClient` in node.js) interface which can be overridden with a custom implementation.
+
+
 
 #### Telemetry Middleware
 
@@ -715,6 +718,7 @@ Note: When the standard properties are not logged, it will cause the out of box 
 A full list of events logged for your bot's telemetry can be found on the [telemetry reference page](bot-builder-telemetry-reference.md).
 
 #### Identifiers and Custom Events
+
 
 When logging events into Application Insights, the events generated contain default properties that you won't have to fill.  For example, `user_id` and `session_id`properties are contained in each Custom Event (generated with the `TraceEvent` API).  In addition, `activitiId`, `activityType` and `channelId` are also added.
 
