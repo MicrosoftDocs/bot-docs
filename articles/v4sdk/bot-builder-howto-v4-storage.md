@@ -386,12 +386,12 @@ public class EchoBot : ActivityHandler
 
 The following sample code is similar to [memory storage](#memory-storage) but with some slight changes.
 
-Require `CosmosDbStorage` from `botbuilder-azure` and configure dotenv to read the `.env` file.
+Require `CosmosDbPartitionedStorage` from `botbuilder-azure` and configure dotenv to read the `.env` file.
 
 **bot.js**
 
 ```javascript
-const { CosmosDbStorage } = require("botbuilder-azure");
+const { CosmosDbPartitionedStorage } = require("botbuilder-azure");
 ```
 Comment out Memory Storage, replace with reference to Cosmos DB.
 
