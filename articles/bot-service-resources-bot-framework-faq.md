@@ -79,8 +79,7 @@ For more information please refer to the following references:
 2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
 3.	We do not prevent anyone from running old tools to manage their V3 bots. 
 
-
-### How can I migrate Azure Bot Service from one region to another?
+## How can I migrate Azure Bot Service from one region to another?
 
 Azure Bot Service does not support region move. It’s a global service that is not tied to any specific region.
 
