@@ -54,6 +54,7 @@ All new features and capabilities are developed exclusively on [Bot Framework SD
 
 We highly recommend that you start migrating your V3 bots to V4. In order to support this migration we have produced migration documentation and will provide extended support for migration initiatives (via standard channels such as Stack Overflow and Microsoft Customer Support).
 
+
 For more information please refer to the following references:
 * [Essential Migration Guidance](https://aka.ms/bfv3v4migration)
 * Primary V4 Repositories to develop Bot Framework bots
@@ -79,8 +80,7 @@ For more information please refer to the following references:
 2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
 3.	We do not prevent anyone from running old tools to manage their V3 bots. 
 
-
-### How can I migrate Azure Bot Service from one region to another?
+## How can I migrate Azure Bot Service from one region to another?
 
 Azure Bot Service does not support region move. It’s a global service that is not tied to any specific region.
 
