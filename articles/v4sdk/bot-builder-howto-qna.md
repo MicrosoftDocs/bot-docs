@@ -98,6 +98,7 @@ Be sure that the **Microsoft.Bot.Builder.AI.QnA** NuGet package is installed for
 In **QnABot.cs**, in the `OnMessageActivityAsync` method, we create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in `appsettings.json` above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **Bots/QnABot.cs**
+
 [!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
 
 ## [JavaScript](#tab/js)
@@ -109,6 +110,7 @@ In our sample the code for the bot logic is in a **QnABot.js** file.
 In the **QnABot.js** file, we use the connection information provided by your .env file to establish a connection to the QnA Maker service: _this.qnaMaker_.
 
 **bots/QnABot.js**
+
 [!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
 
 ---
@@ -120,6 +122,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your bot code to get the appropriate answer based on the current context. If you are accessing your own knowledge base, change the _no answers found_ message below to provide useful instructions for your users.
 
 **Bots/QnABot.cs**
+
 [!code-csharp[qna get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-52)]
 
 ## [JavaScript](#tab/js)
@@ -127,6 +130,7 @@ When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your 
 In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `getAnswers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message 'No QnA Maker answers were found.'
 
 **bots/QnABot.js**
+
 [!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=46-55)]
 
 ---
