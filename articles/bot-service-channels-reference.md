@@ -250,6 +250,7 @@ You should use "event" activity instead.
 ## Action support by channel
 
 The following table shows the total Card Actions and Suggested Actions supported by channel.
+Note: this does not indicate which Card Actions are supported on each channel.
 
  \                      | Cortana  | Direct Line | Direct Line (Web Chat) | Email | Facebook | GroupMe |   Kik   | Line  | Teams | Slack | Skype | Skype Business | Telegram | Twilio  
 :---------------------- | :-----:  | :---------: | :--------------------: |:----: | :------: | :-----: | :-----: | :---: | :---: | :---: | :---: | :------------: | :------: | :----:  
