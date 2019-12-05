@@ -72,21 +72,21 @@ This section describes how to enable the direct line app service extension using
 1. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
 If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
-    - **k** determines whether Direct Line App Service Extension (ASE) can read an extension key from its configuration. 
-    - **initialized** determines whether Direct Line ASE can use the extension key to download the bot metadata from Azure Bot Service
+    - **k** determines whether Direct Line App Service Extension (ASE) can read an extension key from its configuration.
+    - **initialized** determines whether Direct Line ASE can use the **App Service Extension Key** to download the bot metadata from Azure Bot Service
     - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
     - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot. 
 
 
-### Gather your Direct Line Extension keys
+### Gather your Direct Line App Service Extension keys
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
 1. In the Azure portal, locate your **Azure Bot Service** resource
 1. Click on **Channels** to configure the bot’s channels
 1. If it is not already enabled, click on the **Direct Line** channel to enable it. 
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
-1. Scroll down to the App Service Extension Keys section. 
-1. Click on the **Show link** to reveal one of the keys, then copy its value.
+1. Scroll down to the **App Service Extension Keys** section. 
+1. Click on the **Show link** to reveal one of the keys, then copy its value.  We'll use this to update the **DirectLineExtensionKey App Setting** for the **Azure App Service** which hosts the bot.
 
 ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
 
