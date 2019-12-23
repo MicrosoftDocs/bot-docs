@@ -74,10 +74,10 @@ For more information please refer to the following references:
 3.	Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
 
 #### SDK and Tools
-
 1.	We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
 2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
 3.	We do not prevent anyone from running old tools to manage their V3 bots. 
+
 
 ## How can I migrate Azure Bot Service from one region to another?
 

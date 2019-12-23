@@ -7,7 +7,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/08/2019
+ms.date: 11/28/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -164,8 +164,8 @@ Please, refer to the following resources for more details and background informa
 
 | Topic | Description |
 | :--- | :--- |
-|[Migrate a Javascript SDK v3 bot to v4](https://docs.microsoft.com/en-us/azure/bot-service/migration/conversion-javascript?view=azure-bot-service-4.0)| Porting v3 JavaScript bot to v4|
-| [What's new in Bot Framework](https://docs.microsoft.com/en-us/azure/bot-service/what-is-new?view=azure-bot-service-4.0) | Bot Framework and Azure Bot Service key features and improvements|
+|[Migrate a Javascript SDK v3 bot to v4](https://docs.microsoft.com/azure/bot-service/migration/conversion-javascript?view=azure-bot-service-4.0)| Porting v3 JavaScript bot to v4|
+| [What's new in Bot Framework](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0) | Bot Framework and Azure Bot Service key features and improvements|
 |[How bots work](../bot-builder-basics.md)|The internal mechanism of a bot|
 |[Managing state](../bot-builder-concept-state.md)|Abstractions to make state management easier|
 |[Dialogs library](../bot-builder-concept-dialog.md)| Central concepts to manage a conversation|

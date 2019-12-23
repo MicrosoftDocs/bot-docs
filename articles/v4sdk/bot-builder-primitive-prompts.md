@@ -22,7 +22,7 @@ A conversation between a bot and a user often involves asking (prompting) the us
 
 ## Prerequisites
 
-- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of either the **[C# Sample](https://aka.ms/cs-primitive-prompt-sample) or [JavaScript Sample](https://aka.ms/js-primitive-prompt-sample)**.
+- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of either the **[C# sample](https://aka.ms/cs-primitive-prompt-sample), [JavaScript sample](https://aka.ms/js-primitive-prompt-sample), or [Python sample](https://aka.ms/python-primitive-prompt-sample)**.
 - Knowledge of [managing state](bot-builder-concept-state.md) and how to [save user and conversation data](bot-builder-howto-v4-state.md).
 
 ## About the sample code
@@ -42,6 +42,13 @@ The sample bot asks the user a series of questions, validates some of their answ
 - A `userProfile` class for the user information that the bot will collect.
 - A `conversationFlow` class to control our conversation state while gathering user information.
 - An inner `conversationFlow.question` enumeration for tracking where we are in the conversation.
+
+## [Python](#tab/python)
+![custom-prompts](media/CustomPromptBotSample-Python-Overview.png)
+
+- A `UserProfile` class for the user information that the bot will collect.
+- A `ConversationFlow` class to control our conversation state while gathering user information.
+- An inner `ConversationFlow.Question` enumeration for tracking where we are in the conversation.
 
 ---
 
@@ -70,6 +77,14 @@ In **index.js**, create the state properties and the bot, then call the `run` bo
 
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=63-69)]
 
+## [Python](#tab/python)
+
+In **app.py**, create the state properties and the bot.
+
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/app.py?range=66-72)]
+
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/app.py?range=75-76)]
+
 ---
 
 ## Create property accessors
@@ -96,6 +111,16 @@ Then, we define a second handler, `onDialog`, to run after the main message hand
 
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=41-48)]
 
+## [Python](#tab/python)
+
+In the constructor, we create the state property accessors and set up the state management objects (created above) for our conversation.
+
+**bots/custom_prompt_bot.py** 
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=40-44)]
+
+Then save the data using the `save_changes()` method.
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=53-55)]
+
 ---
 
 ## The bot's message turn handler
@@ -113,6 +138,13 @@ To handle message activities, we set up our conversation and user data then use 
 
 **bots/customPromptBot.js**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-39)]
+
+## [Python](#tab/python)
+To handle message activities, we set up our conversation and user data then use the helper method `_fill_out_user_profile`. Here's the complete code for the turn handler.
+
+**bots/custom_prompt_bot.py** 
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=46-55)]
+
 ---
 
 ## Filling out the user profile
@@ -134,6 +166,11 @@ We'll start by collecting information. Each one will provide a similar interface
 
 **bots/customPromptBot.js**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=52-116)]
+
+## [Python](#tab/python)
+
+**bots/custom_prompt_bot.py** 
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=57-126)]
 
 ---
 
@@ -163,12 +200,16 @@ Add the following validation methods to your bot.
 **bots/customPromptBot.cs**  
 [!code-javascript[custom prompt bot](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=118-189)]
 
+## [Python](#tab/python)
+
+**bots/custom_prompt_bot.py**
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=127-189)]
 ---
 
 ## Test the bot locally
 Download and install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme) to test the bot locally.
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://aka.ms/cs-primitive-prompt-sample) or [JS sample](https://aka.ms/js-primitive-prompt-sample) sample.
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://aka.ms/cs-primitive-prompt-sample), [JS sample](https://aka.ms/js-primitive-prompt-sample), or the [Python sample](https://aka.ms/python-primitive-prompt-sample).
 1. Test it using the emulator as shown below.
 
 ![primitive-prompts](media/primitive-prompts.png)
