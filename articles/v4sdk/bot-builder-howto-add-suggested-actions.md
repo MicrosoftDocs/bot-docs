@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date:  05/23/2019
+ms.date:  12/10/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -33,11 +33,22 @@ The source code shown here is based on the [suggested actions sample](https://ak
 
 [!code-javascript[suggested actions](~/../botbuilder-samples/samples/javascript_nodejs/08.suggested-actions/bots/suggestedActionsBot.js?range=61-64)]
 
+
+# [Python](#tab/python)
+
+The source code shown here is based on the [suggested actions sample](https://aka.ms/SuggestActionsPython).
+
+[!code-python[suggested actions](~/../botbuilder-python/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-81)]
+
+
 ---
 
 ## Additional resources
 
-You can access the complete source code shown here: the [CSharp sample](https://aka.ms/SuggestedActionsCSharp) or [JavaScript sample](https://aka.ms/SuggestActionsJS).
+You can access the complete source code shown here:
+- [C# sample](https://aka.ms/SuggestedActionsCSharp)
+- [JavaScript sample](https://aka.ms/SuggestActionsJS)
+- [Python sample](https://aka.ms/SuggestActionsPython)
 
 ## Next steps
 

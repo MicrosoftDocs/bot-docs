@@ -18,7 +18,7 @@ The ability to understand what your user means conversationally and contextually
 
 ## Prerequisites
 - [LUIS](https://www.luis.ai) account
-- The code in this article is based on the **Core Bot** sample. You'll need a copy of the sample in either **[C#](https://aka.ms/cs-core-sample) or [JavaScript](https://aka.ms/js-core-sample)**. 
+- The code in this article is based on the **Core Bot** sample. You'll need a copy of the sample in **[C#](https://aka.ms/cs-core-sample)**, **[JavaScript](https://aka.ms/js-core-sample)**, or **[Python](https://aka.ms/python-core-sample)**. 
 - Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
@@ -33,7 +33,7 @@ After each processing of user input, `DialogBot` saves the current state of both
 
 ![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow.png)
 
-The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. Then the main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the nain dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. Then the main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
 - `Origin` the originating city
 - `TravelDate` the date to book the flight
@@ -54,6 +54,20 @@ Upon the response back, `mainDialog` preserves information for the user returned
 - `destination` the destination city.
 - `origin` the originating city.
 - `travelDate` the date to book the flight.
+
+# [Python](#tab/python)
+After each processing of user input, `DialogBot` saves the current state of both `user_state` and `conversation_state`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+
+- `on_members_added_activity` is called when a new user is connected and displays a welcome card. 
+- `on_message_activity` is called for each user input received.
+
+![LUIS sample Python logic flow](./media/how-to-luis/luis-logic-flow-python.png)
+
+The `on_message_activity` module runs the appropriate dialog through the `run_dialog` dialog extension method. Then the main dialog calls `LuisHelper` to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper function fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+
+- `destination` the destination city.
+- `origin` the originating city.
+- `travel_date` the date to book the flight.
 
 ---
 
@@ -101,6 +115,13 @@ Add the information required to access your LUIS app including application id, a
 **.env**  
 [!code[env](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
+# [Python](#tab/python)
+
+Add the information required to access your LUIS app including application id, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+
+**config.py**
+[!code-python[config.py](~/../botbuilder-python/samples/python/13.core-bot/config.py?range=14-19)]
+
 ---
 
 ## Configure your bot to use your LUIS app
@@ -133,6 +154,21 @@ To connect to the LUIS service, the bot uses the information you added above fro
 
 The logic to extract From, To and TravelDate is implemented as helper methods inside `flightBookingRecognizer.js`. These methods are used after calling `flightBookingRecognizer.executeLuisQuery()` from `mainDialog.js`
 
+# [Python](#tab/python)
+
+Be sure that the **botbuilder-ai** pypi package is installed for your project.
+
+To connect to the LUIS service, the bot uses the information you added above from the `config.py` file. The `FlightBookingRecognizer` class contains the code that imports your settings from the `config.py` file and queries the LUIS service by calling `recognize()` method.
+
+**flight_booking_recognizer.py**
+
+[!code-python[config.py](~/../botbuilder-python/samples/python/13.core-bot/flight_booking_recognizer.py?range=8-32)]
+
+The logic to extract *From*, *To* and *travel_date* is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
+
+**helpers/luis_helper.py**
+[!code-python[luis helper](~/../botbuilder-python/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
+
 ---
 
 LUIS is now configured and connected for your bot.
@@ -141,7 +177,7 @@ LUIS is now configured and connected for your bot.
 
 Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
-1. Run the sample locally on your machine. If you need instructions, refer to the readme file for either the [C# Sample](https://aka.ms/cs-core-sample) or [JS Sample](https://aka.ms/js-core-sample).
+1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://aka.ms/cs-core-sample), [JS Sample](https://aka.ms/js-core-sample) or [Python Sample](https://aka.ms/python-core-sample).
 
 1. In the emulator, type a message such as "travel to paris" or "going from paris to berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 
