@@ -33,4 +33,4 @@ After adding the Teams channel, go to the **Channels** page and click on **Get b
 
 
 ## Additional information
-For Microsoft Teams specific information, see Teams [documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/overview). 
+For Microsoft Teams specific information, see Teams [documentation](https://docs.microsoft.com/microsoftteams/platform/overview). 
