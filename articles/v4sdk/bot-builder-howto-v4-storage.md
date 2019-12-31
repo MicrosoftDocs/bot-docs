@@ -468,7 +468,7 @@ Find the Blob Storage keys you need to configure Blob Storage for your bot as sh
 
 ![Find Blob Storage Keys](./media/find-blob-storage-keys.png)
 
-We will use key1 _Connection string_ as the value "your-blob-storage-account-string" to provide access to your Blob Storage account.
+We will use **key1**'s entire _Connection string_ as the value "your-blob-storage-account-string" to provide access to your Blob Storage account.
 
 #### Installing packages
 If not previously installed to use Cosmos DB, install the following packages.
