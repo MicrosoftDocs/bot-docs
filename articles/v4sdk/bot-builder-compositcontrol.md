@@ -1,5 +1,5 @@
 ---
-title: Reuse dialogs | Microsoft Docs
+title: Add component dialogs to your bot | Microsoft Docs
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
@@ -15,7 +15,10 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it.
+With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it. Component dialogs are reusable in that they can be:
+- added to another `ComponentDialog` or `DialogSet` in your bot
+- exported as a part of a Node package
+- used within other bots 
 
 ## Prerequisites
 
@@ -174,11 +177,10 @@ If you call _cancel all dialogs_ from the outer context, the component is cancel
 Keep this in mind when managing nested component dialogs in your bot.
 
 ## Next steps
-
-You can enhance bots to react to additional input, like "help" or "cancel", that can interrupt the normal flow of the conversation.
+Learn how to create complex conversations that branch and loop.
 
 > [!div class="nextstepaction"]
-> [Handle user interruptions](bot-builder-howto-handle-user-interrupt.md)
+> [Handle user interruptions](bot-builder-dialog-manage-complex-conversation-flow.md)
 
 <!-- Footnote-style links -->
 
