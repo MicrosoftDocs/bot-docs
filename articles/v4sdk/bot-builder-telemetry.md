@@ -97,7 +97,7 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
     
     Note: If your following along by updating the CoreBot sample code you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists 
 
-5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter IMiddleware middleware in the constructors parameter list, and the `Use(middleware);` statement in the contructor as shown here:
+5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter IMiddleware middleware in the constructors parameter list, and the `Use(middleware);` statement in the constructor as shown here:
     ```csharp
     public AdapterWithErrorHandler(ICredentialProvider credentialProvider, ILogger<BotFrameworkHttpAdapter> logger, IMiddleware middleware, ConversationState conversationState = null)
             : base(credentialProvider)
@@ -127,7 +127,7 @@ At this point the preliminary work to enable telemetry using Application Insight
 
 ### Enabling or disabling Activity logging
 
-By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receieves activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disbale activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` before registering it within **Startup.cs**.
+By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receives activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disable activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` before registering it within **Startup.cs**.
 
 ```cs
 public void ConfigureServices(IServiceCollection services)
