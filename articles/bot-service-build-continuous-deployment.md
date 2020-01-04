@@ -19,7 +19,7 @@ This article shows you how to configure continuous deployment for your bot. You 
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free account](https://portal.azure.com) before you begin.
-- You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continous deployment.
+- You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continuous deployment.
 
 ## Prepare your repository
 Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the Azure App Service Kudu build server. 
