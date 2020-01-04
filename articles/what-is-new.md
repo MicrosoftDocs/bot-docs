@@ -44,7 +44,7 @@ Power Virtual Agents can be extended with the Microsoft Bot Framework, allowing 
 Adaptive Dialogs enable developers to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation. [[Docs][48] | [C# samples][49]] 
 
 #### Language Generation (Preview)
-Language Generation enables developers to separate logic used to generate bot's respones including the ability to define multiple variations on a phrase, execute simple expressions based on context, refer to conversational memory. [[Docs][44] | [C# samples][45]]
+Language Generation enables developers to separate logic used to generate bot's responses including the ability to define multiple variations on a phrase, execute simple expressions based on context, refer to conversational memory. [[Docs][44] | [C# samples][45]]
 
 #### Common Expression Language (Preview)
 Common Expression Language allows you to evaluate the outcome of a condition-based logic at runtime. Common language can be used across the Bot Framework SDK and conversational AI components, such as Adaptive Dialogs and Language Generation. [[Docs][40] | [API][41]]
