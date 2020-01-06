@@ -45,7 +45,7 @@
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
-### [Add component dialogs to your bot](v4sdk/bot-builder-compositcontrol.md)
+### [Manage dialog complexity](v4sdk/bot-builder-compositcontrol.md)
 ### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
