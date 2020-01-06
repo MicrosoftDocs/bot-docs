@@ -1,5 +1,5 @@
 ---
-title: Add component dialogs to your bot | Microsoft Docs
+title: Manage dialog complexity | Microsoft Docs
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
@@ -11,7 +11,7 @@ ms.date: 11/05/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Reuse dialogs
+# Manage dialog complexity
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
