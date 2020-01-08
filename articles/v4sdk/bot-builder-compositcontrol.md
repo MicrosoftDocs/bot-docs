@@ -100,11 +100,11 @@ To use a component dialog, add an instance of it to the bot's dialog set - this 
 
 # [C#](#tab/csharp)
 
-**Bots\DialoBot.cs**
+**Bots\DialogBot.cs**
 
 In the sample, this is done using the `RunAsync` method that is called from the bot's `OnMessageActivityAsync` method.
 
-[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48)]
+[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48&highlight=6)]
 
 # [JavaScript](#tab/javascript)
 
