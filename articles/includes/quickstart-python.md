@@ -19,7 +19,9 @@ The last package, cookiecutter, will be used to generate your bot. Verify that c
 cookiecutter https://github.com/microsoft/botbuilder-python/releases/download/Templates/echo.zip
 ```
 
-This command creates an Echo Bot based on the Python [echo template](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/python/app/templates/echo/%7B%7Bcookiecutter.bot_name%7D%7D).
+
+This command creates an Echo Bot based on the Python [echo template](https://github.com/microsoft/botbuilder-python/tree/master/generators/app/templates/echo).
+
 
 3. You will then be prompted for the *name* of the bot and a *description*. Name your bot `echo-bot` and set the description to `A bot that echoes back user response.` as shown below:
 
@@ -33,8 +35,7 @@ Copy the last for digits in the address on the last line (usually 3978) since yo
 2. Once the packages are installted run `python app.py` to start your bot. You will know your bot is ready to test when you see  the last line shown in the screenshot below:
 
 ![bot running locally](~/media/python/quickstart/bot-running-locally.png)
-<!---
-Alternatively, you can set the file in an environment variable with set `FLASK_APP=app.py` in Windows and `export FLASK_APP=app.py` in Mac OS/Linux and then run `flask run --host=127.0.0.1 --port=3978`.-->
+
 
 ## Start the Emulator and connect your bot
 1. Start the Emulator and click the **Open Bot** button.
