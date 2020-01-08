@@ -52,7 +52,6 @@ Copy the last for digits in the address on the last line (usually 3978) since yo
 
 ![bot running locally](../media/python/quickstart/bot-running-locally.png)
 
-
 ## Start the Emulator and connect your bot
 1. Start the Emulator and click the **Open Bot** button.
 
