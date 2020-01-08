@@ -81,7 +81,7 @@ Logged when bot receives new message from a user.
 When not overridden, this event is logged from `Microsoft.Bot.Builder.TelemetryLoggerMiddleware` using the `Microsoft.Bot.Builder.IBotTelemetry.TrackEvent()` method.
 
 - Session Identifier  
-  - When using Application Insights, this is logged from the `TelemetryBotIdInitializer`  as the  **session** identifier (*Telemetry.Context.Session.Id*) used within Application Insights.  
+  - When using Application Insights, this is logged from the `TelemetryBotIdInitializer`  as the  **session** identifier (*Temeletry.Context.Session.Id*) used within Application Insights.  
   - Corresponds to the [Conversation ID](https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#conversation) as defined by Bot Framework protocol..
   - The property name logged is `session_id`.
 
