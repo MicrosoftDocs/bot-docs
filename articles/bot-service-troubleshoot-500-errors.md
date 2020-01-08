@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 4/30/2019
+ms.date: 11/19/2019
 ---
 
 # Troubleshoot HTTP 500 errors
@@ -146,7 +146,7 @@ Bot ASP.Net and Node will emit logs at the server level that can be inspected.
 
 #### Set up a browser to watch your logs
 
-1. Open your bot in the [Azure Portal](http://portal.azure.com/).
+1. Open your bot in the [Azure Portal](https://portal.azure.com/).
 1. Open the **App Service Settings / All App service settings** page to see all service settings.
 1. Open the **Monitoring / Diagnostics Logs** page for the app service.
    - Ensure that **Application Logging (Filesystem)** is enabled. Be sure to click **Save** if you change this setting.

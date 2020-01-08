@@ -75,10 +75,10 @@ For more information please refer to the following references:
 3.	Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
 
 #### SDK and Tools
-
 1.	We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
 2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
 3.	We do not prevent anyone from running old tools to manage their V3 bots. 
+
 
 ## How can I migrate Azure Bot Service from one region to another?
 
@@ -228,7 +228,7 @@ To create your own App ID, follow the steps below.
 3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
     > [!IMPORTANT]
-    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **bot creation will fail**.
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
     ![registration details](media/app-registration/registration-details.png)
 

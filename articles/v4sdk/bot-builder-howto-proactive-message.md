@@ -29,7 +29,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the proactive messages sample in either **[C#](https://aka.ms/proactive-sample-cs) or [JavaScript](https://aka.ms/proactive-sample-js)**. This sample is used to explain proactive messaging in this article.
+- A copy of the proactive messages sample in [**C#**](https://aka.ms/proactive-sample-cs) or [**JavaScript**](https://aka.ms/proactive-sample-js) or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -54,6 +54,13 @@ When the emulator connects to the bot, the bot receives two conversation update 
 [!code-javascript[onConversationUpdateActivity](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/bots/proactiveBot.js?range=13-17&highlight=2)]
 
 [!code-javascript[onConversationUpdateActivity](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/bots/proactiveBot.js?range=41-44&highlight=2-3)]
+
+# [Python](#tab/python)
+
+**bots/proactive_bot.py**
+[!code-python[on_conversation_update_activity](~/../botbuilder-python/samples/python/16.proactive-messages/bots/proactive_bot.py?range=14-16&highlight=2)]
+
+[!code-python[on_conversation_update_activity](~/../botbuilder-python/samples/python/16.proactive-messages/bots/proactive_bot.py?range=35-45)]
 
 ---
 
@@ -90,6 +97,15 @@ The parameter to `continueConversation` is a function that serves as the bot's t
 
 [!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=68-80&highlight=4-6)]
 
+
+# [Python](#tab/python)
+
+Each time the bot's notify page is requested, the server retrieves the conversation references from the dictionary.
+The server then uses the `_send_proactive_message` to send the proactive message.
+
+**app.py**
+[!code-python[Notify logic](~/../botbuilder-python/samples/python/16.proactive-messages/app.py?range=104-110&highlight=3-7)]
+
 ---
 
 ## Test your bot
@@ -105,7 +121,7 @@ Besides the sample used in this article, additional samples are available in C# 
 
 ### Avoiding 401 "Unauthorized" Errors 
 
-By default, the BotBuilder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted. 
+By default, the BotBuilder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
 
 To avoid this, you must manually add the `serviceUrl` to the list of trusted host names by using: 
 
@@ -128,6 +144,16 @@ MicrosoftAppCredentials.trustServiceUrl(serviceUrl);
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
 
 You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
+
+# [Python](#tab/python)
+
+```python
+MicrosoftAppCredentials.trustServiceUrl(serviceUrl)
+```
+
+For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
+
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/bot-proactive-python-sample-code), you add it in `app.py` prior sending the *proactive hello* message.
 
 ---
 

@@ -79,6 +79,16 @@ To implement your logic for these handlers, you will override these methods in y
 
 There aren't any common situations where you will want to override the base turn handler, so be careful if you try to do so. For things such as [saving state](bot-builder-concept-state.md) that you want to do at the end of a turn, there is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and is not tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
 
+# [Python](#tab/python)
+
+For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler. 
+
+When building your bot, your bot logic for handling and responding to messages will go in this `on_message_activity` handler. Likewise, your logic for handling members being added to the conversation will go in your `on_members_added` handler, which is called whenever a member is added to the conversation.
+
+To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
+
+There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure to first call `await super().on_turn(turnContext);` to make sure the base implementation of `on_turn` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `on_message_activity`.
+
 ---
 
 ## Middleware
@@ -120,6 +130,18 @@ The **.env** file specifies the configuration information for your bot, such as 
 To use the **.env** configuration file, the template needs an extra package included.  First, get the `dotenv` package from npm:
 
 `npm install dotenv`
+
+# [Python](#tab/python)
+
+### requirements.txt
+
+**requirements.txt** specifies dependencies and their associated versions for your bot.  This is all setup by the template and your system.
+
+Dependencies should be installed using `pip install -r requirements.txt`
+
+### config.py
+
+The **config.py** file specifies the configuration information for your bot, such as the port number, app ID, and password among other things. If using certain technologies or using this bot in production, you will need to add your specific keys or URL to this configuration. For this Echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
 
 ---
 
@@ -221,6 +243,51 @@ class MyBot extends ActivityHandler {
 }
 
 module.exports.MyBot = MyBot;
+```
+
+# [Python](#tab/python)
+
+The main bot logic is defined in the bot code, here called `bots/echo_bot.py`. `EchoBot` derives from `ActivityHandler`, which in turn derives from the `Bot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `on_message_activity`, and `on_members_added`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
+
+The handlers defined in `ActivityHandler` are:
+
+| Event | Handler | Description |
+| :-- | :-- | :-- |
+| Any activity type received | `on_turn` | Calls one of the other handlers, based on the type of activity received. |
+| Message activity received | `on_message_activity` | Override this to handle a `message` activity. |
+| Conversation update activity received | `on_conversation_update_activity` | On a `conversationUpdate` activity, calls a handler if members other than the bot joined or left the conversation. |
+| Non-bot members joined the conversation | `on_members_added_activity` | Override this to handle members joining a conversation. |
+| Non-bot members left the conversation | `on_members_removed_activity` | Override this to handle members leaving a conversation. |
+| Event activity received | `on_event_activity` | On an `event` activity, calls a handler specific to the event type. |
+| Token-response event activity received | `on_token_response_event` | Override this to handle token response events. |
+| Non-token-response event activity received | `on_event_activity` | Override this to handle other types of events. |
+| Message reaction activity received | `on_message_reaction_activity` | On a `messageReaction` activity, calls a handler if one or more reactions were added or removed from a message. |
+| Message reactions added to a message | `on_reactions_added` | Override this to handle reactions added to a message. |
+| Message reactions removed from a message | `on_reactions_removed` | Override this to handle reactions removed from a message. |
+| Other activity type received | `on_unrecognized_activity_type` | Override this to handle any activity type otherwise unhandled. |
+
+These different handlers have a `turn_context` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `on_message_activity` will always be handled, and is generally the most common.
+
+As in previous 4.x versions of this framework, there is also the option to implement the public method `on_turn`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `on_turn`, it is still an option.
+
+> [!IMPORTANT]
+> If you do override the `on_turn` method, you'll need to call `super().on_turn` to get the base implementation to call all the other `on_<activity>` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
+
+In this sample, we welcome a new user or echo back the message the user sent using the `send_activity` call. The outbound activity corresponds to the outbound HTTP POST request.
+
+```py
+class MyBot(ActivityHandler):
+    async def on_members_added_activity(
+        self, members_added: [ChannelAccount], turn_context: TurnContext
+    ):
+        for member in members_added:
+            if member.id != turn_context.activity.recipient.id:
+                await turn_context.send_activity("Hello and welcome!")
+
+    async def on_message_activity(self, turn_context: TurnContext):
+        return await turn_context.send_activity(
+            f"Echo: {turn_context.activity.text}"
+        )
 ```
 
 ---
@@ -361,6 +428,98 @@ server.post('/api/messages', (req, res) => {
         await myBot.run(context);
     });
 });
+```
+
+# [Python](#tab/python)
+
+#### app.py
+
+The `app.py` sets up your bot and the hosting service that will forward activities to your bot logic.
+
+#### Required libraries
+
+At the very top of your `app.py` file you will find a series of modules or libraries that are being required. These modules will give you access to a set of functions that you may want to include in your application.
+
+```py
+from botbuilder.core import BotFrameworkAdapterSettings, TurnContext, BotFrameworkAdapter
+from botbuilder.schema import Activity, ActivityTypes
+
+from bots import MyBot
+
+# Create the loop and Flask app
+LOOP = asyncio.get_event_loop()
+app = Flask(__name__, instance_relative_config=True)
+app.config.from_object("config.DefaultConfig")
+```
+
+#### Set up services
+
+The next parts set up the server and adapter that allow your bot to communicate with the user and send responses. The server will listen on the specified port from the configuration file, or fall back to _3978_ for connection with your emulator. The adapter will act as the conductor for your bot, directing incoming and outgoing communication, authentication, and so on.
+
+```py
+# Create adapter.
+# See https://aka.ms/about-bot-adapter to learn more about how bots work.
+SETTINGS = BotFrameworkAdapterSettings(app.config["APP_ID"], app.config["APP_PASSWORD"])
+ADAPTER = BotFrameworkAdapter(SETTINGS)
+
+# Catch-all for errors.
+async def on_error(context: TurnContext, error: Exception):
+    # This check writes out errors to console log .vs. app insights.
+    # NOTE: In production environment, you should consider logging this to Azure
+    #       application insights.
+    print(f"\n [on_turn_error] unhandled error: {error}", file=sys.stderr)
+
+    # Send a message to the user
+    await context.send_activity("The bot encountered an error or bug.")
+    await context.send_activity("To continue to run this bot, please fix the bot source code.")
+    # Send a trace activity if we're talking to the Bot Framework Emulator
+    if context.activity.channel_id == 'emulator':
+        # Create a trace activity that contains the error object
+        trace_activity = Activity(
+            label="TurnError",
+            name="on_turn_error Trace",
+            timestamp=datetime.utcnow(),
+            type=ActivityTypes.trace,
+            value=f"{error}",
+            value_type="https://www.botframework.com/schemas/error"
+        )
+        # Send a trace activity, which will be displayed in Bot Framework Emulator
+        await context.send_activity(trace_activity)
+
+ADAPTER.on_turn_error = on_error
+
+# Create the Bot
+BOT = MyBot()
+```
+
+#### Forwarding requests to the bot logic
+
+The adapter's `process_activity` sends incoming activities to the bot logic.
+The third parameter within `process_activity` is a function handler that will be called to perform the bot's logic after the received [activity](#the-activity-processing-stack) has been pre-processed by the adapter and routed through any middleware. The turn context variable, passed as an argument to the function handler, can be used to provide information about the incoming activity, the sender and receiver, the channel, the conversation, etc. Activity processing is routed to the bot's `on_turn` method. `on_turn` is defined in `ActivityHandler`; it performs some error checking, and then calls the bot's event handlers based on the type of activity received.
+
+```py
+# Listen for incoming requests on /api/messages
+@app.route("/api/messages", methods=["POST"])
+def messages():
+    # Main bot message handler.
+    if "application/json" in request.headers["Content-Type"]:
+        body = request.json
+    else:
+        return Response(status=415)
+
+    activity = Activity().deserialize(body)
+    auth_header = (
+        request.headers["Authorization"] if "Authorization" in request.headers else ""
+    )
+
+    try:
+        task = LOOP.create_task(
+            ADAPTER.process_activity(activity, auth_header, BOT.on_turn)
+        )
+        LOOP.run_until_complete(task)
+        return Response(status=201)
+    except Exception as exception:
+        raise exception
 ```
 
 ---
