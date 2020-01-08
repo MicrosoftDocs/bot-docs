@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to](./includes/applies-to.md)]
 
-This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continous deployment with other source control systems, see the additional resource section at the bottom of this page.
+This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see the additional resource section at the bottom of this page.
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free account](https://portal.azure.com) before you begin.
