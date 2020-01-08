@@ -227,7 +227,7 @@ To create your own App ID, follow the steps below.
 3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
     > [!IMPORTANT]
-    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **bot creation will fail**.
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
     ![registration details](media/app-registration/registration-details.png)
 
