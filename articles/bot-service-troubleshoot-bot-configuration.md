@@ -16,7 +16,7 @@ The first step in troubleshooting a bot is to test it in Web Chat. This will all
 
 ## Test in Web Chat
 
-1. Open your bot resource in the [Azure Portal](http://portal.azure.com/).
+1. Open your bot resource in the [Azure Portal](https://portal.azure.com/).
 1. Open the **Test in Web Chat** pane.
 1. Send your bot a message.
 

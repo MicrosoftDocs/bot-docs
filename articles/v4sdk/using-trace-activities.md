@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/18/2019
+ms.date: 11/18/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -59,7 +59,7 @@ Here is a trace activity you might see if you ran the Core bot without first set
 The adapter's _on turn error_ handler catches any otherwise uncaught exception thrown from the bot during a turn.
 This is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
 
-This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://aka.ms/cs-core-sample) or [**JavaScript**](https://aka.ms/js-core-sample).
+This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://aka.ms/cs-core-sample) or [**JavaScript**](https://aka.ms/js-core-sample) or [**Python**](https://aka.ms/py-core-sample).
 
 # [C#](#tab/csharp)
 
@@ -77,6 +77,30 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 [!code-javascript[onTurnError ](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-57&highlight=8-14)]
 
+# [Python](#tab/python)
+
+The adapter's **on_error** handler creates the trace activity to include the exception information and sends it to the Emulator.
+```python
+async def on_error(context: TurnContext, error: Exception):
+...
+
+if context.activity.channel_id == "emulator":
+
+# Create a trace activity that contains the error object
+trace_activity = Activity(
+    label="TurnError",
+    name="on_turn_error Trace",
+    timestamp=datetime.utcnow(),
+    type=ActivityTypes.trace,
+    value=f"{error}",
+    value_type="https://www.botframework.com/schemas/error",
+)
+
+# Send a trace activity, which will be displayed in Bot Framework Emulator
+await context.send_activity(trace_activity)
+
+...
+```
 ---
 
 ## Additional resources
