@@ -272,7 +272,7 @@ For more information about the numbers shown in the above table, refer to channe
 |Skype|❌|✔|✔|✔|✔|✔|✔|✔|
 |Slack|🔶|✔|🌐|🌐|✔|✔|🌐|🌐|
 |Telegram|⚠🔶|✔|🌐|✔|✔|✔|✔|✔|
-|Twilio|🔶|✔|❌|✔|✔|🌐|✔|❌|
+|Twilio|🔶|🌐|❌|🌐|🌐|🌐|🌐|❌|
 |Web Chat|✔|✔|✔|✔|✔|✔|✔|✔|
 
 *Note: The Direct Line channel technically supports all cards, but it's up to the client to implement them*
