@@ -71,44 +71,45 @@ We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and a
     public void ConfigureServices(IServiceCollection services)
     {
         ...
-        // Create the Bot Framework Adapter with error handling enabled.
-        services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
+            // Create the Bot Framework Adapter with error handling enabled.
+            services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
 
-        // Add Application Insights services into service collection
-        services.AddApplicationInsightsTelemetry();
+            // Add Application Insights services into service collection
+            services.AddApplicationInsightsTelemetry();
 
-        // Add the standard telemetry client
-        services.AddSingleton<IBotTelemetryClient, BotTelemetryClient>();
+            // Create the telemetry client.
+            services.AddSingleton<IBotTelemetryClient, BotTelemetryClient>();
 
-        // Create the telemetry middleware to track conversation events
-        services.AddSingleton<TelemetryLoggerMiddleware>();
+            // Add telemetry initializer that will set the correlation context for all telemetry items.
+            services.AddSingleton<ITelemetryInitializer, OperationCorrelationTelemetryInitializer>();
 
-        // Add the telemetry initializer middleware
-        services.AddSingleton<IMiddleware, TelemetryInitializerMiddleware>();
+            // Add telemetry initializer that sets the user ID and session ID (in addition to other bot-specific properties such as activity ID)
+            services.AddSingleton<ITelemetryInitializer, TelemetryBotIdInitializer>();
 
-        // Add telemetry initializer that will set the correlation context for all telemetry items
-        services.AddSingleton<ITelemetryInitializer, OperationCorrelationTelemetryInitializer>();
+            // Create the telemetry middleware to initialize telemetry gathering
+            services.AddSingleton<TelemetryInitializerMiddleware>();
 
-        // Add telemetry initializer that sets the user ID and session ID (in addition to other bot-specific properties, such as activity ID)
-        services.AddSingleton<ITelemetryInitializer, TelemetryBotIdInitializer>();
+            // Create the telemetry middleware (used by the telemetry initializer) to track conversation events
+            services.AddSingleton<TelemetryLoggerMiddleware>();
         ...
     }
     ```
-    
+
     Note: If your following along by updating the CoreBot sample code you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists 
 
-5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter IMiddleware middleware in the constructors parameter list, and the `Use(middleware);` statement in the contructor as shown here:
+5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructors parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the contructor as shown here:
     ```csharp
-    public AdapterWithErrorHandler(ICredentialProvider credentialProvider, ILogger<BotFrameworkHttpAdapter> logger, IMiddleware middleware, ConversationState conversationState = null)
-            : base(credentialProvider)
+        public AdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, TelemetryInitializerMiddleware telemetryInitializerMiddleware, ConversationState conversationState = null)
+            : base(configuration, logger)
     {
         ...
-
-        Use(middleware);
+        Use(telemetryInitializerMiddleware);
     }
     ```
 
-6. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+6. You will also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
+
+7. Add the Application Insights instrumentation key in your `appsettings.json` file The `appsettings.json` file contains metadata about external services the Bot uses while running. For example, CosmosDB, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -127,14 +128,14 @@ At this point the preliminary work to enable telemetry using Application Insight
 
 ### Enabling or disabling Activity logging
 
-By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receieves activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disbale activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` before registering it within **Startup.cs**.
+By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receives activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disable activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` when registering it in **Startup.cs**.
 
 ```cs
 public void ConfigureServices(IServiceCollection services)
 {
     ...
     // Add the telemetry initializer middleware
-    services.AddSingleton<IMiddleware, TelemetryInitializerMiddleware>(sp =>
+    services.AddSingleton<TelemetryInitializerMiddleware>(sp =>
             {
                 var httpContextAccessor = sp.GetService<IHttpContextAccessor>();
                 var loggerMiddleware = sp.GetService<TelemetryLoggerMiddleware>();
@@ -142,6 +143,12 @@ public void ConfigureServices(IServiceCollection services)
             });
     ...
 }
+```
+
+The addition of `IHttpContextAccessor` will also require that you reference the  Microsoft ASPNetCore HTTP library, which you achieve with the addition of this using statement:
+
+```cs
+using Microsoft.AspNetCore.Http; 
 ```
 
 ### Enable or disable logging personal information
@@ -166,77 +173,21 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 ## Enabling telemetry in your bots Dialogs
 
+When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
+ 
  Follow the steps below to update your CoreBot example:
 
-1.  In `MainDialog.cs` add a new TelemetryClient field to the `MainDialog` class then update the constructor's parameter list to include an `IBotTelemetryClient` parameter, then pass that to each call to the `AddDialog()` method.
-
-
-    * Add the parameter `IBotTelemetryClient telemetryClient` to the MainDialog class constructor, then assign it to the `TelemetryClient` field:
-
-        ```csharp
-        public MainDialog(IConfiguration configuration, ILogger<MainDialog> logger, IBotTelemetryClient telemetryClient)
-            : base(nameof(MainDialog))
-        {
-            TelemetryClient = telemetryClient;
-
-            ...
-
-        }
-        ```
-
-    * When adding each dialog using the `AddDialog` method, set the `TelemetryClient` value:
-
-        ```cs
-        public MainDialog(IConfiguration configuration, ILogger<MainDialog> logger, IBotTelemetryClient telemetryClient)
-            : base(nameof(MainDialog))
-        {
-            ...
-
-            AddDialog(new TextPrompt(nameof(TextPrompt))
-            {
-                TelemetryClient = telemetryClient,
-            });
-
-            ...
-        }
-        ```
-
-    * Waterfall Dialogs generate events independently of other dialogs. Set the `TelemetryClient` property after the list of Waterfall Steps:
-
-        ```csharp
-        // The IBotTelemetryClient to the WaterfallDialog
-        AddDialog(new WaterfallDialog(
-            nameof(WaterfallDialog),
-            new WaterfallStep[]
-        {
-            IntroStepAsync,
-            ActStepAsync,
-            FinalStepAsync,
-        })
-        {
-            TelemetryClient = telemetryClient,
-        });
-
-        ```
-
-2. In `DialogExtensions.cs` set the `TelemetryClient` property of the `dialogSet` object in the `Run()` method:
-
+1.  In `MainDialog.cs`, update the constructor's parameter list to include the `IBotTelemetryClient` parameter, then set the MainDialog's TelemetryClient property to that value as shown in the following code snippet:
 
     ```csharp
-    public static async Task Run(this Dialog dialog, ITurnContext turnContext, IStatePropertyAccessor<DialogState> accessor, CancellationToken cancellationToken = default(CancellationToken))
+    public MainDialog(IConfiguration configuration, ILogger<MainDialog> logger, IBotTelemetryClient telemetryClient)
+        : base(nameof(MainDialog))
     {
+        // Set the telemetry client for this and all child dialogs.
+        this.TelemetryClient = telemetryClient;
         ...
-
-        dialogSet.TelemetryClient = dialog.TelemetryClient;
-
-        ...
-        
     }
-
-    ```
-
-3. In `BookingDialog.cs` use the same process used when updating `MainDialog.cs` to enable telemetry in the four dialogs added in this file. Don't forget to add the `TelemetryClient` field to the BookingDialog class and the `IBotTelemetryClient telemetryClient` parameter to the BookingDialog constructor.
-
+        ```
 
 > [!TIP] 
 > If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) if you run into any problems.
@@ -248,30 +199,33 @@ That's all there is to adding telemetry to your bots dialogs, at this point if y
 
 We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](bot-builder-telemetry-QnAMaker.md)
 
-For this sample, we just need to provide the telemetry client in a similar way to how we did for dialogs. 
-
-1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `ExecuteLuisQuery()` method in `LuisHelper.cs`:
+1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.cs`:
 
     ```cs
-    public static async Task<BookingDetails> ExecuteLuisQuery(IBotTelemetryClient telemetryClient, IConfiguration configuration, ILogger logger, ITurnContext turnContext, CancellationToken cancellationToken)
+    public FlightBookingRecognizer(IConfiguration configuration, IBotTelemetryClient telemetryClient)
     ```
 
-2. The `LuisPredictionOptions` Class enables you to provide optional parameters for a LUIS prediction request.  To enable telemetry, you will need to set the `TelemetryClient` parameter when creating the `luisPredictionOptions` object in `LuisHelper.cs`:
+2. Next you will need to enable the `telemetryClient` when creating your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. You do this by adding the `telemetryClient` as a new _LuisPredictionOption_:
 
     ```cs
-    var luisPredictionOptions = new LuisPredictionOptions()
+    if (luisIsConfigured)
     {
-        TelemetryClient = telemetryClient,
-    };
+        var luisApplication = new LuisApplication(
+            configuration["LuisAppId"],
+            configuration["LuisAPIKey"],
+            "https://" + configuration["LuisAPIHostName"]);
 
-    var recognizer = new LuisRecognizer(luisApplication, luisPredictionOptions);
+        // Set the recognizer options depending on which endpoint version you want to use.
+        // More details can be found in https://docs.microsoft.com/en-gb/azure/cognitive-services/luis/luis-migration-api-v3
+        var recognizerOptions = new LuisRecognizerOptionsV3(luisApplication)
+        {
+            TelemetryClient = telemetryClient,
+        };
+        _recognizer = new LuisRecognizer(recognizerOptions);
+    }
     ```
 
-3. The last step is to pass in the telemetry client to the call to `ExecuteLuisQuery` in the `ActStepAsync()` method of `MainDialog.cs`:
-
-    ```cs
-    await LuisHelper.ExecuteLuisQuery(TelemetryClient, Configuration, Logger, stepContext.Context, cancellationToken)
-    ```
+3. You will need to have your LUIS 
 
 That's it, you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages and in the next section we will review the telemetry results in Application Insights.
 
