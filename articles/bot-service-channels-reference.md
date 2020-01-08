@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/01/2019
+ms.date: 12/03/2019
 ---
 
 # Categorized activities by channel
@@ -249,9 +249,36 @@ You should use "event" activity instead.
 
 ## Action support by channel
 
-The following table shows Card Action and Suggested Action support by channel.
+The following table shows the total Card Actions and Suggested Actions supported by channel.
 
  \                      | Cortana  | Direct Line | Direct Line (Web Chat) | Email | Facebook | GroupMe |   Kik   | Line  | Teams | Slack | Skype | Skype Business | Telegram | Twilio  
 :---------------------- | :-----:  | :---------: | :--------------------: |:----: | :------: | :-----: | :-----: | :---: | :---: | :---: | :---: | :------------: | :------: | :----:  
-Suggested Actions       |    0     |     100     |          100           |   0   |    10    |    0    |   20    |  13   |   0   |  100  |  10   |       0        |    100   |   0     
-Card Actions            |   100    |     100     |          100           |   0   |     3    |    0    |   20    |  99   |   3   |  100  |   3   |       0        |     0    |   0     
+Suggested Actions       |    :x:     |     100     |          100           |   :x:   |    10    |    :x:    |   20    |  13   |   :x:   |  100  |  10   |       :x:        |    100   |   :x:     
+Card Actions            |   100    |     100     |          100           |   :x:   |     3    |    :x:    |   20    |  99   |   3   |  100  |   3   |       :x:        |     :x:    |   :x:     
+
+For more information about the numbers shown in the above table, refer to channel support code listed [here](https://aka.ms/channelactions). 
+
+## Card Support by Channel
+
+| Channel | Adaptive Card | Animation Card | Audio Card | Hero Card | Receipt Card | Signin Card | Thumbnail Card | Video Card |
+|:-------:|:-------------:|:--------------:|:----------:|:---------:|:------------:|:-----------:|:--------------:|:----------:|
+|Cortana|✔|❌|❌|❌|✔|✔|✔|❌|
+|Email|🔶|🌐|🌐|✔|✔|✔|✔|🌐|
+|Facebook|⚠🔶|✔|❌|✔|✔|✔|✔|❌|
+|GroupMe|🔶|🌐|🌐|🌐|🌐|🌐|🌐|🌐|
+|Kik|🔶|✔|✔|❌|🌐|❌|✔|🌐|
+|Line|⚠🔶|✔|🌐|✔|✔|✔|✔|🌐|
+|Microsoft Teams|✔|❌|❌|✔|✔|✔|✔|❌|
+|Skype|❌|✔|✔|✔|✔|✔|✔|✔|
+|Slack|🔶|✔|🌐|🌐|✔|✔|🌐|🌐|
+|Telegram|⚠🔶|✔|🌐|✔|✔|✔|✔|✔|
+|Twilio|🔶|🌐|❌|🌐|🌐|🌐|🌐|❌|
+|Web Chat|✔|✔|✔|✔|✔|✔|✔|✔|
+
+*Note: The Direct Line channel technically supports all cards, but it's up to the client to implement them*
+
+* ✔: Full Support
+* ⚠: Partial Support - Card May Not Send if it Contains Inputs/Buttons. Varies by Channel.
+* ❌: No Support
+* 🔶: Card is Converted to Image
+* 🌐: Card is Converted to Unformatted Text With Links and/or Images and/or Media Does Not Play in Client

@@ -32,7 +32,7 @@ To migrate your bot, do the following:
 
 After the migration process completes successfully, the **Migration status** will indicate that the bot is migrated and a **Roll back migration** button will be available for a week after the migration date in case of issues.
 
-Clicking the name of a migrated bot will open the bot in the [Azure portal](http://portal.azure.com).
+Clicking the name of a migrated bot will open the bot in the [Azure portal](https://portal.azure.com).
 
 ## Package a Functions bot with Funcpack
 

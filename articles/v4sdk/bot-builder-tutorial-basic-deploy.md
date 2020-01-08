@@ -34,6 +34,10 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 [!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
 
+# [Python](#tab/python)
+
+[!INCLUDE [python quickstart](~/includes/quickstart-python.md)]
+
 ---
 
 ## Deploy your bot
@@ -54,7 +58,12 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 [!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
 
 #### 4. Deploy via ARM template
-You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you. 
+You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
+
+> [!NOTE]
+> Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
+>
+
 ##### **Deploy via ARM template with new Resource Group**
 [!INCLUDE [ARM with new resourece group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
 

@@ -22,7 +22,7 @@ An open approach has been adopted so that the Bot Framework v4 SDK has been buil
 
 ## What happens to bots built using SDK v3
 
-The Bot Framework SDK v3 will be retired but existing V3 bot workloads will continue to run without interruption. For more information, see: [Bot Framework SDK Version 3 Lifetime Support](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#bot-framework-sdk-version-3-lifetime-support).
+The Bot Framework SDK v3 will be retired but existing V3 bot workloads will continue to run without interruption. For more information, see: [Bot Framework SDK Version 3 Lifetime Support](https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#bot-framework-sdk-version-3-lifetime-support).
 
 We highly recommend that you start migrating your V3 bots to V4. In order to support this migration we have produced related documentation and will provide extended support for migration initiatives via standard channels.
 
@@ -96,7 +96,7 @@ The following worksheets can guide you in estimating your migration workload. In
 | -- | -- | -- | -- | -- | -- |
 To get the incoming activity | IDialogContext.Activity | ITurnContext.Activity | count | Small  
 To create and send an activity to the user | activity.CreateReply(“text”) IDialogContext.PostAsync | MessageFactory.Text(“text”) ITurnContext.SendActivityAsync | count | Small |
-State management | UserData, ConversationData, and PrivateConversationData context.UserData.SetValue context.UserData.TryGetValue botDataStore.LoadAsyn | UserState, ConversationState, and PrivateConversationState  With property accessors | context.UserData.SetValue - count context.UserData.TryGetValue - count botDataStore.LoadAsyn - count | Medium to Large (See [user state management](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
+State management | UserData, ConversationData, and PrivateConversationData context.UserData.SetValue context.UserData.TryGetValue botDataStore.LoadAsyn | UserState, ConversationState, and PrivateConversationState  With property accessors | context.UserData.SetValue - count context.UserData.TryGetValue - count botDataStore.LoadAsyn - count | Medium to Large (See [user state management](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
 Handle the start of your dialog | Implement IDialog.StartAsync | Make this the first step of a waterfall dialog. | count | Small |  
 Send an activity | IDialogContext.PostAsync. | Call ITurnContext.SendActivityAsync. | count | Small |  
 Wait for a user's response | Use an IAwaitable<IMessageActivity>parameter and call IDialogContext.Wait | Return await ITurnContext.PromptAsync to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |  
@@ -113,7 +113,7 @@ Fail out of a dialog. | IDialogContext.Fail | Throw an exception to be caught at
 | -- | -- | -- | -- | -- | -- |
 To get the incoming activity | IMessage | TurnContext.activity | count | Small  
 To create and send an activity to the user | Call Session.send('message') | Call TurnContext.sendActivity | count | Small |
-State management | UserState & ConversationState UserState.get(), UserState.saveChanges(), ConversationState.get(), ConversationState.saveChanges() | UserState & ConversationState with property accessors | count | Medium to Large (See [user state management](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
+State management | UserState & ConversationState UserState.get(), UserState.saveChanges(), ConversationState.get(), ConversationState.saveChanges() | UserState & ConversationState with property accessors | count | Medium to Large (See [user state management](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
 Handle the start of your dialog | call session.beginDialog, passing in the id of the dialog | call DialogContext.beginDialog | count | Small |  
 Send an activity | Call Session.send | Call TurnContext.sendActivity | count | Small |  
 Wait for a user's response | call a prompt from within the waterfall step, ex: builder.Prompts.text(session, 'Please enter your destination'). Retrieve the response in the next step. | Return await TurnContext.prompt to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |  
@@ -218,7 +218,7 @@ The following are code samples you can use to learn the Bot Framework SDK V4 or 
 
 The following resources provide additional information and support for developing bots.
 
-[Bot Framework additional resources](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-links-help?view=azure-bot-service-4.0)
+[Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help?view=azure-bot-service-4.0)
 
 ### References
 
@@ -226,7 +226,7 @@ Please, refer to the following resources for more details and background informa
 
 | Topic | Description |
 | :--- | :--- |
-| [What's new in Bot Framework](https://docs.microsoft.com/en-us/azure/bot-service/what-is-new?view=azure-bot-service-4.0) | Bot Framework and Azure Bot Service key features and improvements|
+| [What's new in Bot Framework](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0) | Bot Framework and Azure Bot Service key features and improvements|
 |[How bots work](../bot-builder-basics.md)|The internal mechanism of a bot|
 |[Managing state](../bot-builder-concept-state.md)|Abstractions to make state management easier|
 |[Dialogs library](../bot-builder-concept-dialog.md)| Central concepts to manage a conversation|
