@@ -5,6 +5,7 @@
 # Quickstart
 ## [Create a bot using .NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ## [Create a bot using JavaScript](javascript/bot-builder-javascript-quickstart.md)
+## [Create a bot using Python](python/bot-builder-python-quickstart.md)
 ## [Create a bot using Azure Bot Service](v4sdk/abs-quickstart.md)
 # Tutorials
 ## [1. Create and deploy a basic bot](v4sdk/bot-builder-tutorial-basic-deploy.md)

@@ -21,7 +21,7 @@ If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge base
 
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
 - [Dispatch tool](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch)
-- A copy of the **NLP with Dispatch** from either the [C# Sample][cs-sample] or [JS Sample][js-sample] code repository.
+- A copy of the **NLP with Dispatch** from the [C# Sample][cs-sample], [JS Sample][js-sample], or [Python Sample][python-sample] code repository.
 - A [luis.ai](https://www.luis.ai/) account to publish LUIS apps.
 - A [QnA Maker](https://www.qnamaker.ai/) account to publish the QnA knowledge base.
 
@@ -48,6 +48,16 @@ This sample is based on a predefined set of LUIS and QnA Maker Apps.
 - `processSampleQnA` - for bot faq questions.
 - `processWeather` - for weather queries.
 - `processHomeAutomation` - for home lighting commands.
+
+## [Python](#tab/python)
+
+![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow-python.png)
+
+`on_message_activity` is called for each user input received. This module finds the top scoring user intent and passes that result on to `_dispatch_to_top_intent`. _dispatch_to_top_intent, in turn, calls the appropriate app handler
+
+- `_process_sample_qna` - for bot faq questions.
+- `_process_weather` - for weather queries.
+- `_process_home_automation` - for home lighting commands.
 
 ---
 
@@ -293,6 +303,41 @@ LuisAPIHostName=<your-dispatch-app-region>
 
 When all changes are in place, save this file.
 
+## [Python](#tab/python)
+
+### Installing packages
+
+Prior to running this app for the first time you will need to install several pypi packages.
+
+```powershell
+pip install azure
+pip install botbuilder-core
+pip install botbuilder-ai
+```
+
+### Manually update your config.py file
+Once all of your service apps are created, the information for each needs to be added into your 'config.py' file. The initial [Python Sample][python-sample] code contains an empty config.py file. 
+
+**config.py**
+
+[!code-python[config.py](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/config.py?range=10-24)]
+
+For each of the entities shown below, add the values you recorded earlier in these instructions:
+```python
+APP_ID = os.environ.get("MicrosoftAppId", "")
+APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
+
+QNA_KNOWLEDGEBASE_ID = os.environ.get("QnAKnowledgebaseId", "<knowledge-base-id>")
+QNA_ENDPOINT_KEY = os.environ.get("QnAEndpointKey", "<qna-maker-resource-key>")
+QNA_ENDPOINT_HOST = os.environ.get("QnAEndpointHostName", "<your-hostname>")
+
+LUIS_APP_ID = os.environ.get("LuisAppId", "<app-id-for-dispatch-app>")
+LUIS_API_KEY = os.environ.get("LuisAPIKey", "<your-luis-endpoint-key>")
+# LUIS endpoint host name, ie "westus.api.cognitive.microsoft.com"
+LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "<your-dispatch-app-region>")
+```
+When all changes are complete, save this file.
+
 ---
 
 ### Connect to the services from your bot
@@ -315,6 +360,13 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 [!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=11-26)]
 
+## [Python](#tab/python)
+In **dispatch_bot.py**, the information contained within configuration file _config.py_ is used to connect your dispatch bot to the _QnAMaker_ and _LuisRecognizer_ services. The constructors use the values you provided to connect to these services.
+
+**bots/dispatch_bot.py**
+
+[!code-python[ReadConfigurationInfo](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=14-30)]
+
 ---
 
 > [!NOTE]
@@ -336,9 +388,15 @@ In the **DispatchBot.cs** file whenever the `OnMessageActivityAsync` method is c
 
 In the **dispatchBot.js** `onMessage` method, we check the user input message against the Dispatch model, find the _topIntent_, then pass this on by calling _dispatchToTopIntentAsync_.
 
-**bots/dispatchBot.js**
-
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=31-44)]
+
+## [Python](#tab/python)
+
+In the **dispatch_bot.py** file whenever the `on_message_activity` method is called, we check the incoming user message against the Dispatch model. We then pass the Dispatch Model's `top_intent` and  `recognize_result` on to the correct method to call the service and return the result.
+
+**bots/dispatch_bot.py**
+
+[!code-python[on_message](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=46-54)]
 
 ---
 
@@ -364,6 +422,18 @@ When the model produces a result, it indicates which service can most appropriat
 [!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=61-77)]
 
 If method `processHomeAutomation` or `processWeather` are invoked, they are passed the results from the dispatch model within _recognizerResult.luisResult_. The specified method then provides user feedback showing the dispatch model's top intent, plus a ranked listing of all intents and entities that were detected.
+
+If method `q_sample-qna` is invoked, it uses the user input contained within the turnContext to generate an answer from the knowledge base and display that result to the user.
+
+## [Python](#tab/python)
+
+When the model produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized top _intent_ to show how to route the request on to the corresponding service.
+
+**bots\dispatch_bot.py**
+
+[!code-python[dispatch top intent](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=56-70)]
+
+If method `_process_home_automation` or `_process_weather` are invoked, they are passed the results from the dispatch model within _recognizer_result.properties["luisResult"]_. The specified method then provides user feedback showing the dispatch model top intent, plus a ranked listing of all intents and entities that were detected.
 
 If method `q_sample-qna` is invoked, it uses the user input contained within the turnContext to generate an answer from the knowledge base and display that result to the user.
 
@@ -507,11 +577,14 @@ To improve services used in this sample, refer to best practice for [LUIS](https
 
 <!-- Foot-note style links -->
 
+
+
 [howto-luis]: bot-builder-howto-v4-luis.md
 [howto-qna]: bot-builder-howto-qna.md
 
 [cs-sample]: https://aka.ms/dispatch-sample-cs
 [js-sample]: https://aka.ms/dispatch-sample-js
+[python-sample]: https://aka.ms/dispatch-sample-python
 
 [dispatch-readme]: https://aka.ms/dispatch-command-line-tool
 <!--[dispatch-evaluate]: https://aka.ms/dispatch-command-line-tool#evaluating-your-dispatch-model-->
