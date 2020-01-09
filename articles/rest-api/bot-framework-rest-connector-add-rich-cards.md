@@ -38,10 +38,7 @@ The Bot Framework currently supports eight types of rich cards:
 | [SignInCard][] | A card that enables a bot to request that a user sign-in. It typically contains text and one or more buttons that the user can click to initiate the sign-in process. |
 | [VideoCard][] | A card that can play videos. |
 
-> [!TIP]
-> To determine the type of rich cards that a channel supports and see how the channel renders rich cards, 
-> see the [Channel Inspector][ChannelInspector]. Consult the channel's documentation for information about limitations 
-> on the contents of cards (e.g., the maximum number of buttons or maximum length of title).
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Process events within rich cards
 
@@ -288,7 +285,7 @@ The resulting card contains a title, information about who created the card (the
 - [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 - [Channel Inspector][ChannelInspector]
 
-[ChannelInspector]: ../bot-service-channel-inspector.md
+[ChannelInspector]: ../bot-service-channels-reference.md
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object
 [CardAction]: bot-framework-rest-connector-api-reference.md#cardaction-object
