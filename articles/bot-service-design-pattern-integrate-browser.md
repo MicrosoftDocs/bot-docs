@@ -1,5 +1,5 @@
 ---
-title: Integrate your bot with a web browser | Microsoft Docs
+title: Integrate your bot with a web browser - Bot Service
 description: Learn how to design a smooth user transition from bot to web browser and back again.
 author: matvelloso
 ms.author: mateusv

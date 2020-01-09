@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to WeChat | Microsoft Docs
+title: Connect a bot to WeChat - Bot Service
 description: Learn how to configure a bot's connection to WeChat.
 keywords: WeChat, Tencent, bot channel, WeChat App, WeChat bot, App ID, App Secret, credentials
 author: seaen

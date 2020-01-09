@@ -1,5 +1,5 @@
 ---
-title: Create a bot with the Bot Connector service | Microsoft Docs
+title: Create a bot with the Bot Connector service - Bot Service
 description: Create a bot with the Bot Connector service. 
 author: RobStand
 ms.author: kamrani

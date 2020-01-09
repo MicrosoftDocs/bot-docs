@@ -1,5 +1,5 @@
 ---
-title: Manage state data | Microsoft Docs
+title: Manage state data - Bot Service
 description: Learn how to store and retrieve state data using the Bot State service. 
 author: RobStand
 ms.author: kamrani

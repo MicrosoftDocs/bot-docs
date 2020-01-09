@@ -1,5 +1,5 @@
 ---
-title: Debugging guidelines | Microsoft Docs
+title: Debugging guidelines - Bot Service
 description: Understand how to debug your bot.
 keywords: debugging bots, botframework debugging
 author: ivorb
