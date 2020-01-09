@@ -1,5 +1,5 @@
 ---
-title: Send welcome message to users | Microsoft Docs
+title: Send welcome message to users - Bot Service
 description: Learn how to develop your bot to provide a welcoming user experience.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
 author: DanDev33

@@ -1,5 +1,5 @@
 ---
-title: Add rich card attachments to messages | Microsoft Docs
+title: Add rich card attachments to messages (v3 C#) - Bot Service
 description: Learn how to add rich cards to messages using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

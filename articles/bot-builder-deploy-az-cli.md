@@ -1,5 +1,5 @@
 ---
-title: Deploy your bot | Microsoft Docs
+title: Deploy your bot - Bot Service
 description: Deploy your bot to the Azure cloud
 keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb

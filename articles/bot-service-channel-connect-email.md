@@ -1,5 +1,5 @@
 ---
-title:  Connect a bot to Office 365 email | Microsoft Docs
+title:  Connect a bot to Office 365 email - Bot Service
 description: Learn how to configure a bot to send and receive email with Office 365.
 keywords: Office 365, bot channels, email, email credentials, azure portal, custom email
 author: kamrani

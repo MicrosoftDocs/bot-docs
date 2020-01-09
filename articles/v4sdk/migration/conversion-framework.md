@@ -1,5 +1,5 @@
 ---
-title: Migrate an existing bot within the same .NET Framework project | Microsoft Docs
+title: Migrate a .NET v3 bot to a .NET Framework v4 bot - Bot Service
 description: We take an existing .NET v3 bot and migrate it to the .NET v4 SDK, using the same project.
 keywords: bot migration, formflow, dialogs, v3 bot
 author: JonathanFingold

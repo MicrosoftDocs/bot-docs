@@ -1,5 +1,5 @@
 ---
-title: How bots work | Microsoft Docs
+title: How bots work - Bot Service
 description: Describes how activity and http work within the Bot Framework SDK.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor

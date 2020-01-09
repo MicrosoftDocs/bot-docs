@@ -1,5 +1,5 @@
 ---
-title: Debug a bot with inspection middleware | Microsoft Docs
+title: Debug a bot with inspection middleware - Bot Service
 description: Learn how to debug a bot with inspection middleware
 author: zxyanliu
 ms.author: v-liyan

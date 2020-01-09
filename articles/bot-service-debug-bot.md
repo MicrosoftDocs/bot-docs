@@ -1,5 +1,5 @@
 ---
-title: Debug a bot | Microsoft Docs
+title: Debug a bot - Bot Service
 description: Learn how to debug a bot built using Bot Service.
 author: v-ducvo
 ms.author: kamrani

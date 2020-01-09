@@ -1,5 +1,5 @@
 ---
-title: Send proactive notifications to users | Microsoft Docs
+title: Send proactive notifications to users - Bot Service
 description: Understand how to send notification messages
 keywords: proactive message, notification message, bot notification, 
 author: jonathanfingold

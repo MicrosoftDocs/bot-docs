@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to Facebook Messenger | Microsoft Docs
+title: Connect a bot to Facebook Messenger - Bot Service
 description: Learn how to configure a bot's connection to Facebook Messenger.
 keywords: Facebook Messenger, bot channel, Facebook App, App ID, App Secret, Facebook bot, credentials
 manager: kamrani

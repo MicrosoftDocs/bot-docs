@@ -1,5 +1,5 @@
 ---
-title: Define a form using JSON schema and FormFlow | Microsoft Docs
+title: Define a form using JSON schema and FormFlow - Bot Service
 description: Learn how to define a form using JSON schema and FormFlow with the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

@@ -1,5 +1,5 @@
 ---
-title: Application Insights keys | Microsoft Docs
+title: Application Insights keys - Bot Service
 description: Learn how to get Application Insights keys to add telemetry to a bot.
 author: v-ducvo
 ms.author: kamrani

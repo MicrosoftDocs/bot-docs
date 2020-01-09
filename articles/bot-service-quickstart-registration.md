@@ -1,5 +1,5 @@
 ---
-title: Create a Bot Channels Registration with Bot Service | Microsoft Docs
+title: Create a Bot Channels Registration with Bot Service - Bot Service
 description: Learn how to register an existing bot with Bot Service.
 ms.author: kamrani
 manager: kamrani
