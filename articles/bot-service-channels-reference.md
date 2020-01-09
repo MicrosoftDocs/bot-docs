@@ -249,14 +249,18 @@ You should use "event" activity instead.
 
 ## Action support by channel
 
-The following table shows the total Card Actions and Suggested Actions supported by channel.
+The following table shows the maximum number of Suggested Actions and Card Actions that are supported in each channel.  The :x: indicates that the action is not supported at all in the specified channel.
 
- \                      | Cortana  | Direct Line | Direct Line (Web Chat) | Email | Facebook | GroupMe |   Kik   | Line  | Teams | Slack | Skype | Skype Business | Telegram | Twilio  
-:---------------------- | :-----:  | :---------: | :--------------------: |:----: | :------: | :-----: | :-----: | :---: | :---: | :---: | :---: | :------------: | :------: | :----:  
-Suggested Actions       |    :x:     |     100     |          100           |   :x:   |    10    |    :x:    |   20    |  13   |   :x:   |  100  |  10   |       :x:        |    100   |   :x:     
-Card Actions            |   100    |     100     |          100           |   :x:   |     3    |    :x:    |   20    |  99   |   3   |  100  |   3   |       :x:        |     :x:    |   :x:     
+| \                 | Cortana | Direct Line | Direct Line (Web Chat) | Email | Facebook | GroupMe |   Kik   | Line  | Teams | Slack | Skype | Skype Business | Telegram | Twilio | 
+| :---------------- | :-----: | :---------: | :--------------------: |:----: | :------: | :-----: | :-----: | :---: | :---: | :---: | :---: | :------------: | :------: | :----: |
+| Suggested Actions |   :x:   |     100     |          100           |  :x:  |    10    |   :x:   |   20    |  13   |  :x:  |  100  |  10   |      :x:       |    100   |   :x:  |  
+| Card Actions      |   100   |     100     |          100           |  :x:  |     3    |   :x:   |   20    |  99   |   3   |  100  |   3   |      :x:       |    :x:   |   :x:  |  
 
 For more information about the numbers shown in the above table, refer to channel support code listed [here](https://aka.ms/channelactions). 
+
+For more information on _Suggested Actions_, refer to the [Use button for input](https://aka.ms/howto-add-buttons) article.
+
+For more information on _Card Actions_, refer to the [Send a hero card](https://aka.ms/howto-add-media#send-a-hero-card) section of the _Add media to messages_ article.
 
 ## Card Support by Channel
 
@@ -272,7 +276,7 @@ For more information about the numbers shown in the above table, refer to channe
 |Skype|❌|✔|✔|✔|✔|✔|✔|✔|
 |Slack|🔶|✔|🌐|🌐|✔|✔|🌐|🌐|
 |Telegram|⚠🔶|✔|🌐|✔|✔|✔|✔|✔|
-|Twilio|🔶|✔|❌|✔|✔|🌐|✔|❌|
+|Twilio|🔶|🌐|❌|🌐|🌐|🌐|🌐|❌|
 |Web Chat|✔|✔|✔|✔|✔|✔|✔|✔|
 
 *Note: The Direct Line channel technically supports all cards, but it's up to the client to implement them*
