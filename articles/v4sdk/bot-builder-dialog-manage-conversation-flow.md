@@ -78,7 +78,7 @@ The user's mode of transportation, name, and age are saved in an instance of the
 
 **Dialogs\UserProfileDialog.cs**
 
-In the last step, we check the `stepContext.Result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `GetAsync` method, and then set the values of the `userProfile.Transport`, `userProfile.Name`, and `userProfile.Age` properties. Finally, we summarize the information for the user before calling `EndDialogAsync` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
+In the last step, we check the `stepContext.Result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `GetAsync` method, and then set the values of the `userProfile.Transport`, `userProfile.Name`, `userProfile.Age` and `userProfile.Picture` properties. Finally, we summarize the information for the user before calling `EndDialogAsync` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
 
 [!code-csharp[SummaryStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=137-179&highlight=5-11,41-42)]
 
@@ -116,7 +116,7 @@ The user's mode of transportation, name, and age are saved in an instance of the
 
 **dialogs/userProfileDialog.js**
 
-In the last step, we check the `step.result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `get` method, and then set the values of the `userProfile.transport`, `userProfile.name`, and `userProfile.age` properties. Finally, we summarize the information for the user before calling `endDialog` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
+In the last step, we check the `step.result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `get` method, and then set the values of the `userProfile.transport`, `userProfile.name`, `userProfile.age` and `userProfile.picture` properties. Finally, we summarize the information for the user before calling `endDialog` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
 
 [!code-javascript[summary step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=137-167&highlight=3-9,29-30)]
 
