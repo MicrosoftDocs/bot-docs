@@ -17,9 +17,7 @@ ms.date: 10/25/2018
 
 Bots and channels typically exchange text strings but some channels also support exchanging attachments, which lets your bot send richer messages to users. For example, your bot can send media attachments (e.g., images, videos, audio, files) and [rich cards](bot-framework-rest-connector-add-rich-cards.md). This article describes how to add media attachments to messages using the Bot Connector service.
 
-> [!TIP]
-> To determine the type and number of attachments that a channel supports, and how the channel renders attachments, 
-> see the [Channel Inspector][ChannelInspector].
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 ## Add a media attachment  
 
