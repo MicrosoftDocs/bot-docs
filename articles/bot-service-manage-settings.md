@@ -1,5 +1,5 @@
 ---
-title: Configure bot settings | Microsoft Docs
+title: Configure bot settings - Bot Service
 description: Learn how to configure the various options for your bot using the Azure portal.
 keywords: configure bot settings, Display Name, Icon, Application Insights, Settings blade  
 author: v-royhar

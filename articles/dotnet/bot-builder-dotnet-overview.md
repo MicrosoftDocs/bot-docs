@@ -1,5 +1,5 @@
 ---
-title: Bot Framework SDK for .NET | Microsoft Docs
+title: Bot Framework SDK for .NET - Bot Service
 description: Get started with Bot Framework SDK for .NET, a powerful, easy-to-use framework for building bots.
 author: RobStand
 ms.author: kamrani

@@ -1,5 +1,5 @@
 ---
-title: Implement global message handlers | Microsoft Docs
+title: Implement global message handlers - Bot Service
 description:  Learn how to enable your bot to listen for and handle user input containing certain keywords using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

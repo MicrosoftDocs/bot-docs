@@ -1,5 +1,5 @@
 ---
-title: Bot Framework SDK for Node.js | Microsoft Docs
+title: Bot Framework SDK for Node.js - Bot Service
 description: Explore the Bot Framework SDK for Node.js, a powerful, easy-to-use bot building framework.
 author: v-ducvo
 ms.author: kamrani

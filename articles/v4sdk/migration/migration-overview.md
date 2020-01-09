@@ -1,5 +1,5 @@
 ---
-title: Bot Framework SDK Migration overview | Microsoft Docs
+title: Bot Framework SDK Migration overview - Bot Service
 description: Provides an overview of the changes to the SDK and how to migrate from v3 to v4.
 keywords: bot migration
 author:  mmiele

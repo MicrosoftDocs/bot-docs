@@ -1,5 +1,5 @@
 ---
-title: Add trace activities to your bot | Microsoft Docs
+title: Add trace activities to your bot - Bot Service
 description: Describes what the trace activity is in the Bot Framework SDK, and how to use it.
 keywords: trace, activity, bot, Bot Framework SDK
 author: JonathanFingold

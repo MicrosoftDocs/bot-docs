@@ -1,5 +1,5 @@
 ---
-title: Add media to messages | Microsoft Docs
+title: Add media to messages - Bot Service
 description: Learn how to add media to messages using the Bot Framework SDK.
 keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
 author: ivorb

@@ -1,5 +1,5 @@
 ---
-title: Write directly to storage | Microsoft Docs
+title: Write directly to storage - Bot Service
 description: Learn how to write directly to storage with the Bot Framework SDK for .NET.
 keywords: storage, read and write, memory storage, eTag
 author: DeniseMak

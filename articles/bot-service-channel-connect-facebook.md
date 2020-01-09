@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to Facebook Messenger | Microsoft Docs
+title: Connect a bot to Facebook Messenger - Bot Service
 description: Learn how to configure a bot's connection to Facebook Messenger.
 keywords: Facebook Messenger, bot channel, Facebook App, App ID, App Secret, Facebook bot, credentials
 manager: kamrani
@@ -17,9 +17,6 @@ Your bot can be connected to both Facebook Messenger and Facebook Workplace, so 
 > The Facebook UI may appear slightly different depending on which version you are using.
 
 ## Connect a bot to Facebook Messenger
-
-> [!NOTE]
-> Starting December 16, 2019, Workplace by Facebook is changing security model for custom integrations.  Current integrations built with Microsoft Bot Framework need to be updated to use Bot Framework Adapter (available in JavaScript/Node.js) and deployed using a Web App on Azure.  New Workplace bots that are developed using Microsoft Bot Framework should also use the JavaScript Facebook adapter. Learn more about [using Facebook adapter](https://aka.ms/botframework-workplace-adapter). Instructions below will work only until December 16, 2019.
 
 To learn more about developing for Facebook Messenger, see the [Messenger platform documentation](https://developers.facebook.com/docs/messenger-platform). You may wish to review Facebook's [pre-launch guidelines](https://developers.facebook.com/docs/messenger-platform/product-overview/launch#app_public), [quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start), and [setup guide](https://developers.facebook.com/docs/messenger-platform/guides/setup).
 
@@ -130,8 +127,12 @@ Ensure that the Facebook Page associated with this bot is published. Status appe
 ## Connect a bot to Facebook Workplace
 
 > [!NOTE]
-> Starting December 16, 2019, Workplace by Facebook is changing security model for custom integrations.  Current integrations built using Microsoft Bot Framework v4 on JavaScript/Node.js need to be updated to use the Bot Framework [Facebook for Workplace Adapter](https://aka.ms/botframework-workplace-adapter) and deployed using Azure Web App to continue working past that date. New Microsoft Bot Framework bots that are targeting Workplace should also be developed using that adapter.
-
+> On December 16, 2019, Workplace by Facebook changed security model for custom integrations.  Prior integrations built using Microsoft Bot Framework v4 need to be updated to use the Bot Framework Facebook adapters per the instructions below prior to February 28, 2020.  
+>
+> Facebook will consider only integrations with limited access to Workplace data (low sensitivity permissions) eligible for continued use until December 31, 2020 if such integrations have completed and passed Security RFI and if the developer reaches out before January 15, 2020 via [Direct Support](https://my.workplace.com/work/admin/direct_support) to request continued use of the app.
+> 
+> Bot Framework adapters are available for [JavaScript/Node.js](https://aka.ms/botframework-workplace-adapter) and [C#/.NET](https://aka.ms/bf-workplace-csharp) bots.
+ 
 Facebook Workplace is a business-oriented version of Facebook, which allows employees to easily connect and collaborate. It contains live videos, news feeds, groups, messenger, reactions, search, and trending posts. It also supports:
 
 - Analytics and integrations. A dashboard with analytics, integration, single sign-on, and identity providers that companies use to integrate Workplace with their existing IT systems.
@@ -173,9 +174,13 @@ Create a [custom integration](https://developers.facebook.com/docs/workplace/cus
 
     ![Workplace page](media/channels/fb-page.png)
 
+### Update your bot code with Facebook adapter
+
+Your bot's source code needs to be updated to include an adapter to communicate with Workplace by Facebook. Adapters are available for [JavaScript/Node.js](https://aka.ms/botframework-workplace-adapter) and [C#/.NET](https://aka.ms/bf-workplace-csharp) bots.
+
 ### Provide Facebook credentials
 
-In Azure portal, paste the **Facebook App ID**, **Facebook App Secret** and **Page Access Token** values copied from the Facebook Workplace previously. Instead of a traditional pageID, use the numbers following the integrations name on its **About** page. Similar to connecting a bot to Facebook Messenger, the webhooks can be connected with the credentials shown in Azure.
+You will need to update appsettings.json of your bot with **Facebook App ID**, **Facebook App Secret** and **Page Access Token** values copied from the Facebook Workplace previously. Instead of a traditional pageID, use the numbers following the integrations name on its **About** page. Follow these instructions to update your bot source code in [JavaScript/Node.js](https://aka.ms/botframework-workplace-adapter) or [C#/.NET](https://aka.ms/bf-workplace-csharp).
 
 ### Submit for review
 Please refer to the **Connect a bot to Facebook Messenger** section and [Workplace Developer Documentation](https://developers.facebook.com/docs/workplace) for details.
@@ -183,7 +188,7 @@ Please refer to the **Connect a bot to Facebook Messenger** section and [Workpla
 ### Make the App public and publish the Page
 Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
-## Setting the API version
+### Setting the API version
 
 If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to 3.0.
 

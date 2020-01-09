@@ -1,5 +1,5 @@
 ---
-title: Reuse dialogs | Microsoft Docs
+title: Reuse dialogs - Bot Service
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo

@@ -1,5 +1,5 @@
 --- 
-title: Use multiple LUIS and QnA models | Microsoft Docs
+title: Use multiple LUIS and QnA models - Bot Service
 description: Learn how to use LUIS and QnA maker in your bot.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
 author: diberry

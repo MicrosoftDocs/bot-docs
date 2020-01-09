@@ -1,5 +1,5 @@
 ---
-title: Dialogs overview | Microsoft Docs
+title: Dialogs overview (v3 C#) - Bot Service
 description: Learn how to use dialogs within the Bot Framework SDK for .NET to model conversations and manage conversation flow.
 author: RobStand
 ms.author: kamrani

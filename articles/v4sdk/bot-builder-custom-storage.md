@@ -1,5 +1,5 @@
 ---
-title: Implement custom storage for your bot | Microsoft Docs
+title: Implement custom storage for your bot - Bot Service
 description: How to build custom storage in Bot Framework SDK v4.0
 keywords: custom, storage, state, dialog
 author: johnataylor

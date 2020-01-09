@@ -1,5 +1,5 @@
 ---
-title: Handle user interruptions | Microsoft Docs
+title: Handle user interruptions - Bot Service
 description: Learn how to handle user interrupt and direct conversation flow.
 keywords: interrupt, interruptions, switching topic, break
 author: ivorb

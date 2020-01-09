@@ -1,5 +1,5 @@
 ---
-title: Tutorial to create and deploy a basic bot | Microsoft Docs
+title: Tutorial to create and deploy a basic bot - Bot Service
 description: Learn how to create a basic bot and then deploy it to Azure.
 keywords: echo bot, deploy, azure, tutorial
 author: Ivorb

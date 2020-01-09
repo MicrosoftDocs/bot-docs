@@ -1,5 +1,5 @@
 ---
-title: Add media attachments to messages | Microsoft Docs
+title: Add media attachments to messages - Bot Service
 description: Learn how to add media attachments to messages using the Bot Connector service. 
 author: RobStand
 ms.author: kamrani
