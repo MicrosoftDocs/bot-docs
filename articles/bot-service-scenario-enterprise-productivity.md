@@ -1,5 +1,5 @@
 ---
-title: Enterprise Productivity bot scenario | Microsoft Docs
+title: Enterprise Productivity bot scenario - Bot Service
 description: Explore the Enterprise Productivity bot scenario with the Bot Framework.
 author: BrianRandell
 ms.author: kamrani

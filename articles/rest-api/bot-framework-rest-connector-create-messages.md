@@ -1,5 +1,5 @@
 ---
-title: Create messages with the Bot Connector API  | Microsoft Docs
+title: Create messages with the Bot Connector API  - Bot Service
 description: Learn about commonly-used message properties within the Bot Connector API. 
 author: RobStand
 ms.author: kamrani

@@ -1,5 +1,5 @@
 ---
-title: Reuse dialogs | Microsoft Docs
+title: Reuse dialogs - Bot Service
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
@@ -20,7 +20,7 @@ With component dialogs, you can create independent dialogs to handle specific sc
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], the [dialogs library][concept-dialogs], and how to [manage conversations][simple-flow].
-- A copy of the multi-turn prompt sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the multi-turn prompt sample in [**C#**][cs-sample], [**JavaScript**][js-sample], or [**Python**][python-sample].
 
 ## About the sample
 
@@ -50,15 +50,15 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 Here the `UserProfileDialog` class derives from the `ComponentDialog` class.
 
-[!code-csharp[Class](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=13)]
+[!code-csharp[Class](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=17)]
 
 Within the constructor, the `AddDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `InitialDialogId` property. When you start a component dialog, it will start its _initial dialog_.
 
-[!code-csharp[Constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=17-42)]
+[!code-csharp[Constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=21-48)]
 
 This is the implementation of the first step of the waterfall dialog.
 
-[!code-csharp[First step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=44-54)]
+[!code-csharp[First step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=50-60)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
@@ -79,6 +79,26 @@ Within the constructor, the `AddDialog` method adds dialogs and prompts to the c
 This is the implementation of the first step of the waterfall dialog.
 
 [!code-javascript[First step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=64-71)]
+
+For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
+
+# [Python](#tab/python)
+
+To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** pypi packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
+
+**dialogs/user_profile_dialog.py**
+
+Here the `UserProfileDialog` class extends `ComponentDialog`.
+
+[!code-python[Class](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=25)]
+
+Within the constructor, the `add_dialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `initial_dialog_id` property. When you start a component dialog, it will start its _initial dialog_.
+
+[!code-python[Constructor](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=25-57)]
+
+This is the implementation of the first step of the waterfall dialog.
+
+[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=59-71)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
@@ -120,6 +140,19 @@ The `run` method is called from the bot's `onMessage` method.
 
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-31&highlight=5)]
 
+# [Python](#tab/python)
+
+**helpers/dialog_helper.py**
+
+In the sample, we've added a `run_dialog` method to the user profile dialog.
+
+[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/helpers/dialog_helper.py?range=8-19)]
+
+The `run_dialog` method that is called from the bot's `on_message_activity` method.
+
+**bots/dialog_bot.py**
+[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=46-51)]
+
 ---
 
 ## To test the bot
@@ -159,3 +192,4 @@ You can enhance bots to react to additional input, like "help" or "cancel", that
 
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
+[python-sample]: https://aka.ms/python-multi-prompts-sample

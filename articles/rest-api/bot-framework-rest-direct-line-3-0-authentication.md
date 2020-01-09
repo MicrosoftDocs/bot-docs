@@ -1,5 +1,5 @@
 ---
-title: Authentication | Microsoft Docs
+title: Authentication - Bot Service
 description: Learn how to authenticate API requests in Direct Line API v3.0. 
 author: RobStand
 ms.author: kamrani

@@ -1,5 +1,5 @@
 ---
-title: Send welcome message to users | Microsoft Docs
+title: Send welcome message to users - Bot Service
 description: Learn how to develop your bot to provide a welcoming user experience.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
 author: DanDev33
@@ -19,7 +19,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the **Welcome user sample** in either [C# Sample](https://aka.ms/welcome-user-mvc) or [JS Sample](https://aka.ms/bot-welcome-sample-js). The code from the sample is used to explain how to send welcome messages.
+- A copy of the **Welcome user sample** in either [C# Sample](https://aka.ms/welcome-user-mvc), [JS Sample](https://aka.ms/bot-welcome-sample-js) or [Python Sample](https://aka.ms/bot-welcome-python-sample-code). The code from the sample is used to explain how to send welcome messages.
 
 ## About this sample code
 
@@ -27,7 +27,7 @@ This sample code shows how to detect and welcome new users when they are initial
 
 ### [C#](#tab/csharp)
 
-The two main events encountered by the bot are
+The two main events encountered by the bot are:
 
 - `OnMembersAddedAsync` which is called whenever a new user is connected to your bot
 - `OnMessageActivityAsync` which is called whenever a new user input is received.
@@ -39,7 +39,7 @@ When a new user input is received, WelcomeUserState is checked to see if `DidBot
 
 ### [JavaScript](#tab/javascript)
 
-The two main events encountered by the bot are
+The two main events encountered by the bot are:
 
 - `onMembersAdded` which is called whenever a new user is connected to your bot
 - `onMessage` which is called whenever a new user input is received.
@@ -48,14 +48,28 @@ The two main events encountered by the bot are
 
 Whenever a new user is connected, they are provided with a `welcomeMessage`, `infoMessage`, and `patternMessage` by the bot.
 When a new user input is received, `welcomedUserProperty` is checked to see if `didBotWelcomeUser` is set to _true_. If not, an initial welcome user message is returned to the user.
-
----
-
- If DidBotWelcomeUser is _true_, the user's input is evaluated. Based on the content of the user's input this bot will do one of the following:
+If `DidBotWelcomeUser` is _true_, the user's input is evaluated. Based on the content of the user's input this bot will do one of the following:
 
 - Echo back a greeting received from the user.
 - Display a hero card providing addition information about bots.
 - Resend the `WelcomeMessage` explaining expected inputs for this bot.
+
+### [Python](#tab/python)
+
+The two main events encountered by the bot are:
+
+- `on_members_added_activity` which is called whenever a new user is connected to your bot
+- `on_message_activity` which is called whenever a new user input is received.
+
+![welcome user logic flow](media/welcome-user-flow-python.png)
+
+Whenever a new user is connected, they are provided with a *welcome message*, *information message*, and a *pattern message* by the bot.
+When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked to see if it is set to *true*. If it is not set to *true*, an initial welcome user message is returned to the user. If it is set to *true*, based on the content of the user's input this bot will do one of the following:
+
+- Echo back a greeting received from the user. 
+- Display a hero card providing addition information about bots.
+
+---
 
 ## Create user object
 
@@ -71,11 +85,18 @@ The user state object is created at startup and dependency injected into the bot
 
 ### [JavaScript](#tab/javascript)
 
-At startup, both memory storage and user state are defined in index.js.
+At startup, both memory storage and user state are defined in `index.js`.
 
 **Index.js**  
 [!code-javascript[Import statement](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/Index.js?range=8-10)]
 [!code-javascript[Create objects](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/Index.js?range=51-55)]
+
+### [Python](#tab/python)
+
+At startup, both user state and welcome message are defined in `welcome-user-bot.py`.
+
+**welcome-user-bot.py**
+[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=23-37)]
 
 ---
 
@@ -98,6 +119,12 @@ We now create a property accessor that provides us a handle to welcomedUserPrope
 [!code-javascript[Define welcome property key](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=7-8)]
 [!code-javascript[Create welcome property accessor](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=16-22)]
 
+### [Python](#tab/python)
+
+Create a property accessor `user_state_accessor` to provide a handle to `WelcomeUserState` inside `on_message_activity`.
+
+**welcome-user-bot.py**
+[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=31)]
 ---
 
 ## Detect and greet newly connected users
@@ -117,29 +144,43 @@ This JavaScript code sends initial welcome messages when a user is added. This i
 **WelcomeBot.js**  
 [!code-javascript[Send messages](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=65-88)]
 
+### [Python](#tab/python)
+
+The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a *welcome message*, an *information message* and a *pattern message*.
+
+**welcome-user-bot.py**
+[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=55-74)]
+
 ---
 
 ## Welcome new user and discard initial input
 
 ### [C#](#tab/csharp)
 
-It is also important to consider when your user’s input might actually contain useful information, and this can vary per channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
+It is also important to consider when your user’s input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
 
 **WelcomeUserBot.cs**  
 [!code-csharp[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=68-82)]
 
 ### [JavaScript](#tab/javascript)
 
-It is also important to consider when your user’s input might actually contain useful information, and this can vary per channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it does not exist, we set  it to "false" and do not process the initial user input. We instead provide the user with an initial welcome message. The bool _didBotWelcomeUser_ is then set to "true" and our code processes the user input from all additional message activities.
+It is also important to consider when your user’s input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it does not exist, we set it to "false" and do not process the initial user input. We instead provide the user with an initial welcome message. The bool didBotWelcomeUser is then set to "true" and our code processes the user input from all additional message activities.
 
 **WelcomeBot.js**  
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-38,57-59,63)]
+
+### [Python](#tab/python)
+
+It is also important to consider when the user’s input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and does not process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
+
+**welcome-user-bot.py**
+[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=85-95)]
 
 ---
 
 ## Process additional input
 
-Once a new user has been welcomed, user input information is evaluated for each message turn and your bot provides a response based on the context of that user input. The following code shows the decision logic used to generate that response. 
+Once a new user has been welcomed, user input information is evaluated for each message turn and the bot provides a response based on the context of that user input. The following code shows the decision logic used to generate that response.
 
 ### [C#](#tab/csharp)
 
@@ -155,11 +196,18 @@ An input of 'intro' or 'help' uses CardFactory to present the user with an Intro
 **WelcomeBot.js**  
 [!code-javascript[SwitchOnUtterance](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=40-56)]
 
+### [Python](#tab/python)
+
+An user's input of *intro* or *help* causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
+
+**welcome-user-bot.py**
+[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=101-106&highlight=103-104)]
+
 ---
 
 ## Using hero card greeting
 
-As mentioned above, some user inputs generate a _Hero Card_ in response to their request. You can learn more about hero card greetings here [Send an Intro Card](./bot-builder-howto-add-media-attachments.md). Below is the code required to create this bot's hero card response.
+As mentioned above, some user inputs generate a *Hero Card* in response to their request. You can learn more about hero card greetings here [Send an Intro Card](./bot-builder-howto-add-media-attachments.md). Below is the code required to create this bot's hero card response.
 
 ### [C#](#tab/csharp)
 
@@ -170,6 +218,11 @@ As mentioned above, some user inputs generate a _Hero Card_ in response to their
 
 **WelcomeBot.js**  
 [!code-javascript[SendIntroCard](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=91-116)]
+
+### [Python](#tab/python)
+
+**welcome-user-bot.py**
+[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=108-143)]
 
 ---
 

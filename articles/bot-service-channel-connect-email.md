@@ -1,5 +1,5 @@
 ---
-title:  Connect a bot to Office 365 email | Microsoft Docs
+title:  Connect a bot to Office 365 email - Bot Service
 description: Learn how to configure a bot to send and receive email with Office 365.
 keywords: Office 365, bot channels, email, email credentials, azure portal, custom email
 author: kamrani
@@ -71,6 +71,9 @@ see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channe
 ## Other considerations
 
 If your bot does not return a 200 OK HTTP status code within 15 seconds in response to an incoming email message, the email channel will try to resend the message, and your bot may receive the same email message activity a few times. For more information, see the [HTTP details](v4sdk/bot-builder-basics.md#http-details) section in **How bots work** and the how to [troubleshooting timeout errors](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) article.
+
+> [!NOTE]
+> If you are using an Office 365 account with MFA enabled on it, make sure you disable MFA for the specified account first, then you can configure the account for the email channel. Otherwise, the connection will fail. 
 
 ## Additional resources
 

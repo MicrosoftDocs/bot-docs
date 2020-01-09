@@ -1,5 +1,5 @@
 ---
-title: Send proactive messages | Microsoft Docs
+title: Send proactive messages (v3 JS) - Bot Service
 description:  Learn how to interrupt the current conversation flow with a proactive message using the Bot Framework SDK for Node.js
 author: v-ducvo
 ms.author: kamrani

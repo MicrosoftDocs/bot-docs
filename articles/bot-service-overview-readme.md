@@ -1,5 +1,5 @@
 ---
-title: How Bot Service works | Microsoft Docs
+title: How Bot Service works - Bot Service
 description: Learn about the features and capabilities of Bot Service.
 author: RobStand
 ms.author: kamrani

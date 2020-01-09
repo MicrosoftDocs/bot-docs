@@ -1,5 +1,5 @@
 ---
-title: Intercept messages | Microsoft Docs
+title: Intercept messages (v3 JS) - Bot Service
 description: Learn how to create logs or other records by intercepting and processing information exchanges using the Bot Framework SDK for Node.js.
 author: RobStand
 ms.author: kamrani

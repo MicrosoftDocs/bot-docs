@@ -1,5 +1,5 @@
 ---
-title: Create a Bot Channels Registration with Bot Service | Microsoft Docs
+title: Create a Bot Channels Registration with Bot Service - Bot Service
 description: Learn how to register an existing bot with Bot Service.
 ms.author: kamrani
 manager: kamrani
@@ -82,7 +82,7 @@ A manual registration is necessary for situations like:
 See [FAQ - App Registration](bot-service-resources-bot-framework-faq.md#app-registration).
 
 > [!IMPORTANT]
-> In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+> In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
 ## Update the bot
 
