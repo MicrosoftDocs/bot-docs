@@ -4,7 +4,7 @@
 The standard Bot Framework metadata section looks like this:
   ```
   ---
-  title: <page title displayed in search results. Include the brand Azure> | Microsoft Docs
+  title: <page title displayed in search results. Include the brand Azure> - Bot Service
   description: <article description that is displayed in search results>
   services: <service slug assigned to your service by ACOM>
   cloud: <optional; cloud value assigned by ACOM for sovereign clouds such as Azure Government and Azure Stack>

@@ -1,12 +1,12 @@
 ---
-title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
+title: Add authentication to your bot via Azure Bot Service - Bot Service
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ROBOTS: NOINDEX
-ms.date: 10/04/2018
+ms.date: 11/14/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 
@@ -138,7 +138,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 # [Azure AD v1](#tab/aadv1)
 
-1. Navigate to your bot's resource page on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's resource page on the [Azure Portal](https://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -163,7 +163,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 # [Azure AD v2](#tab/aadv2)
 
-1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](http://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](https://portal.azure.com/).
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:

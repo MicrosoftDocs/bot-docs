@@ -1,5 +1,5 @@
 ---
-title: Additional support resources for the Bot Framework | Microsoft Docs
+title: Additional support resources for the Bot Framework - Bot Service
 description: Learn about additional support resources for the Bot Framework.
 author: RobStand
 ms.author: kamrani

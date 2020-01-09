@@ -1,12 +1,12 @@
 ---
-title: Application Insights keys | Microsoft Docs
+title: Application Insights keys - Bot Service
 description: Learn how to get Application Insights keys to add telemetry to a bot.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/19/2019
  
 ---
 
@@ -26,7 +26,7 @@ This topic will show you how to create these Application Insights keys.
 ## Instrumentation key
 
 To get the Instrumentation key, do the following:
-1. From the [Azure portal](http://portal.azure.com), under the Monitor section, create a new **Application Insights** resource (or use an existing one).
+1. From the [Azure portal](https://portal.azure.com), under the Monitor section, create a new **Application Insights** resource (or use an existing one).
 ![Portal screen capture of Application Insights listing](~/media/portal-app-insights-add-new.png)
 
 2. From the list of Application Insights resources, click the Application Insight resource you just created.

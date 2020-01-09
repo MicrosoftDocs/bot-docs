@@ -1,5 +1,5 @@
 ---
-title: Design the user experience | Microsoft Docs
+title: Design the user experience - Bot Service
 description: Learn how to design your bot to deliver an engaging user experience, by using rich user controls, natural language understanding, and speech.
 keywords: overview, design, user experience, UX, rich user control 
 author: matvelloso

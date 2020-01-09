@@ -1,5 +1,5 @@
 ---
-title: Internet of Things bot scenario | Microsoft Docs
+title: Internet of Things bot scenario - Bot Service
 description: Explore the Internet of Things bot scenario with the Bot Framework.
 author: BrianRandell
 ms.author: kamrani

@@ -1,5 +1,5 @@
 ---
-title: Send and receive attachments | Microsoft Docs
+title: Send and receive attachments - Bot Service
 description: Learn how to send and receive messages containing attachments using the Bot Framework SDK for Node.js.
 author: DeniseMak
 ms.author: kamrani
