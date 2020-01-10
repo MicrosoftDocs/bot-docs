@@ -1,5 +1,5 @@
 ---
-title: Intercept messages | Microsoft Docs
+title: Intercept messages (v3 C#) - Bot Service
 description: Learn how to intercept messages between user and bot using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

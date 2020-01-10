@@ -1,5 +1,5 @@
 ---
-title: Manage custom state data with Azure Cosmos DB | Microsoft Docs
+title: Manage custom state data with Azure Cosmos DB (v3 C#) - Bot Service
 description: Learn how to save and retrieve state data using Azure Cosmos DB with the Bot Framework SDK for .NET
 author: kamrani
 ms.author: kamrani

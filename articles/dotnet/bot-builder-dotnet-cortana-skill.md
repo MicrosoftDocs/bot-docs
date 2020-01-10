@@ -1,5 +1,5 @@
 ---
-title: Build a Cortana skill using .NET | Microsoft Docs
+title: Build a Cortana skill using .NET - Bot Service
 description: Learn core concepts for building a Cortana skill in the Bot Framework SDK for .NET.
 keywords: Bot Framework, Cortana skill, speech, .NET, SDK, key concepts, core concepts
 author: DeniseMak

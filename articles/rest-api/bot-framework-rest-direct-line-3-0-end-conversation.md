@@ -1,5 +1,5 @@
 ---
-title: End a conversation | Microsoft Docs
+title: End a conversation - Bot Service
 description: Learn how to end a conversation using Direct Line API v3.0. 
 author: RobStand
 ms.author: kamrani

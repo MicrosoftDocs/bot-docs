@@ -26,13 +26,16 @@ This section describes how to enable the direct line app service extension using
 
 ## Update .NET Bot to use Direct Line App Service Extension
 
+>!NOTE
+>`Microsoft.Bot.Builder.StreamingExtensions` are preview packages and will not be updated. The SDK v4.7 contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming) and you do not need to install the Streaming Packages separately. If you have upgraded to SDK v4.7, refer to [additional information](bot-service-channel-directline-extension-net-bot.md#additional-information) for steps that should be modified in this section to enable the feature. 
+
 1. In Visual Studio, open your bot project.
-1. Add the **Streaming Extension NuGet** package to your project:
+2. Add the **Streaming Extension NuGet** package to your project:
     1. In your project, right click on **Dependencies** and select **Manage NuGet Packages**.
-    1. Under the *Browse* tab, click **Include prerelease** to show the preview packages.
-    1. Select the package **Microsoft.Bot.Builder.StreamingExtensions**.
-    1. Click the **Install** button to install the package; read and agree to the license agreement.
-1. Allow your app to use the **Bot Framework NamedPipe**:
+    2. Under the *Browse* tab, click **Include prerelease** to show the preview packages.
+    3. Select the package **Microsoft.Bot.Builder.StreamingExtensions**.
+    4. Click the **Install** button to install the package; read and agree to the license agreement. 
+3. Allow your app to use the **Bot Framework NamedPipe**:
     - Open the `Startup.cs` file.
     - In the ``Configure`` method, add code to ``UseBotFrameworkNamedPipe``
 
@@ -61,15 +64,15 @@ This section describes how to enable the direct line app service extension using
     }
     ```
 
-1. Save the `Startup.cs` file.
-1. Open the `appsettings.json` file and enter the following values:
+4. Save the `Startup.cs` file.
+5. Open the `appsettings.json` file and enter the following values:
     1. `"MicrosoftAppId": "<secret Id>"`
-    1. `"MicrosoftAppPassword": "<secret password>"`
+    2. `"MicrosoftAppPassword": "<secret password>"`
 
     The values are the **appid** and the **appSecret** associated with the service registration group.
 
-1. **Publish** the bot to your Azure App Service.
-1. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
+6. **Publish** the bot to your Azure App Service.
+7. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
 If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
     - **k** determines whether Direct Line App Service Extension (ASE) can read an extension key from its configuration. 
@@ -103,3 +106,40 @@ If everything is correct, the page will return this JSON content: `{"k":true,"ib
 
 1. Within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
 1. Click on **Save** to save the settings. This restarts the Azure App Service.
+
+## Additional information 
+
+If you have upgraded to SDK v4.7, slightly change the instructions in the "Update .NET Bot to use Direct Line App Service Extension" section as follows: 
+- Skip **step 2** because you don't need to install the preview packages. 
+- In **step 3** do the following:  
+
+Allow your app to use the **UseNamedPipes**:
+- Open the `Startup.cs` file.
+- In the ``Configure`` method, add code to ``UseNamedPipes``
+
+    ```csharp
+
+    using Microsoft.Bot.Builder.StreamingExtensions;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+        else
+        {
+            app.UseHsts();
+        }
+
+        app.UseDefaultFiles();
+        app.UseStaticFiles();
+
+        // Allow bot to use named pipes.
+        app.UseNamedPiped();
+
+        app.UseMvc();
+    }
+
+    ```
+
