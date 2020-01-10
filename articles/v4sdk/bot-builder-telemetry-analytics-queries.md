@@ -1,5 +1,5 @@
 ---
-title: Queries to analyze the telemetry data from your bot - Bot Service
+title: Analyze the telemetry data from your bot - Bot Service
 description: Learn how to analyze bot behavior with Kusto queries.
 keywords: telemetry, appinsights, monitor bot, Kusto, queries
 author: WashingtonKayaker
@@ -7,10 +7,10 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/1/2019
+ms.date: 01/10/2020
 ---
 
-# Queries to analyze your bots telemetry data 
+# Analyze your bot's telemetry data 
 
 ## Analyzing Bot behavior
 
