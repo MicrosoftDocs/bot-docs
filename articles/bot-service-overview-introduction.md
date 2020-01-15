@@ -35,7 +35,7 @@ Additionally, bots may use other Azure services, such as:
 
 ## Building a bot 
 
-Azure Bot Service and Bot Framework offer an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot. SDKs exist for C#, JavaScript, and Typescript. (SDKs for Java and Python are under development.) We provide tools for various stages of bot development to help you design and build bots.
+Azure Bot Service and Bot Framework offer an integrated set of tools and services to facilitate this process. Choose your favorite development environment or command line tools to create your bot. SDKs exist for C#, JavaScript, Typescript, and Python. (An SDK for Java is under development.) We provide tools for various stages of bot development to help you design and build bots.
 
 ![Bot Overview](media/bot-service-overview.png) 
 
