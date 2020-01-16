@@ -33,7 +33,8 @@ The direct line app service extension is pre-installed on all instances of Azure
 
 |Name|Description|
 |---|---|
-|[Configure .NET bot for extension](bot-service-channel-directline-extension-net-bot.md)|Update a bot to work with **named pipes**, and enable the direct line app service extension in the **Azure App Service** resource where the bot is hosted.  |
+|[Configure .NET bot for extension](bot-service-channel-directline-extension-net-bot.md)|Update a .NET bot to work with **named pipes**, and enable the Direct Line App Service Extension in the **Azure App Service** resource where the bot is hosted.  |
+|[Configure Node.js bot for extension](bot-service-channel-directline-extension-node-bot.md)|Update a Node.js bot to work with **named pipes** and enable the Direct Line App Service Extension in the **Azure App Service** resource where the bot is hosted.  |
 |[Create .NET client with Extension](bot-service-channel-directline-extension-net-client.md)|Create a .NET client in C# which connects to the direct line app service extension|
 |[Use extension with WebChat](bot-service-channel-directline-extension-webchat-client.md)|Use WebChat with the direct line app service extension|
 |[Use extension within VNET](bot-service-channel-directline-extension-vnet.md)|Use the direct line app service extension with an Azure Virtual Network (VNET)|

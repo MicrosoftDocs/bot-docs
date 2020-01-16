@@ -72,14 +72,6 @@ This section describes how to enable the direct line app service extension using
     The values are the **appid** and the **appSecret** associated with the service registration group.
 
 6. **Publish** the bot to your Azure App Service.
-7. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
-If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
-
-    - **k** determines whether Direct Line App Service Extension (ASE) can read an extension key from its configuration. 
-    - **initialized** determines whether Direct Line ASE can use the extension key to download the bot metadata from Azure Bot Service
-    - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
-    - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot. 
-
 
 ### Gather your Direct Line Extension keys
 
@@ -106,6 +98,16 @@ If everything is correct, the page will return this JSON content: `{"k":true,"ib
 
 1. Within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
 1. Click on **Save** to save the settings. This restarts the Azure App Service.
+
+## Confirm Direct Line App Extension and the Bot are Initialized
+
+1. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
+If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
+
+    - **k** determines whether Direct Line App Service Extension (ASE) can read an App Service Extension Key from its configuration. 
+    - **initialized** determines whether Direct Line ASE can use the App Service Extension Key to download the bot metadata from Azure Bot Service
+    - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
+    - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot. 
 
 ## Additional information 
 
@@ -136,7 +138,7 @@ Allow your app to use the **UseNamedPipes**:
         app.UseStaticFiles();
 
         // Allow bot to use named pipes.
-        app.UseNamedPiped();
+        app.UseNamedPipes();
 
         app.UseMvc();
     }
