@@ -85,4 +85,4 @@ For a complete sample that shows how to create a cross-platform mobile app that 
 - [Direct Line API][directLineAPI]
 - <a href="https://www.microsoft.com/cognitive-services/" target="_blank">Microsoft Cognitive Services</a>
 
-[directLineAPI]: https://docs.botframework.com/restapi/directline3/#navtitle
+[directLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
