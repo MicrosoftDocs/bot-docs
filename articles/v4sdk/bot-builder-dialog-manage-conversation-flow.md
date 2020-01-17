@@ -37,7 +37,7 @@ In the multi-turn prompt sample, we use a waterfall dialog, a few prompts, and a
 | Ask the user for their name | Text prompt |
 | Ask the user if they want to provide their age | Confirm prompt |
 | If they answered yes, asks for their age | Number prompt with validation to only accept ages greater than 0 and less than 150 |
-| If they're not using Microsoft Teams, them for a profile picture | Attachment prompt with validation to allow a missing attachment |
+| If they're not using Microsoft Teams, ask them for a profile picture | Attachment prompt with validation to allow a missing attachment |
 | Asks if the collected information is "ok" | Reuse Confirm prompt |
 
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
