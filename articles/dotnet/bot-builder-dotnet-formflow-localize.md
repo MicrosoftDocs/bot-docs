@@ -1,5 +1,5 @@
 ---
-title: Localize form content | Microsoft Docs
+title: Localize form content - Bot Service
 description: Learn how to localize form content with FormFlow and the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

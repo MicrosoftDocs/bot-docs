@@ -1,5 +1,5 @@
 ---
-title: Manage bot resources | Microsoft Docs
+title: Manage bot resources - Bot Service
 description: Describes the purpose and use of bot file.
 keywords: bot file, .bot, .bot file, msbot, bot resources, manage bot resources
 author: ivorb

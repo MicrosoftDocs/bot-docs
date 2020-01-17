@@ -5,6 +5,7 @@
 # Quickstart
 ## [Create a bot using .NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
 ## [Create a bot using JavaScript](javascript/bot-builder-javascript-quickstart.md)
+## [Create a bot using Python](python/bot-builder-python-quickstart.md)
 ## [Create a bot using Azure Bot Service](v4sdk/abs-quickstart.md)
 # Tutorials
 ## [1. Create and deploy a basic bot](v4sdk/bot-builder-tutorial-basic-deploy.md)
@@ -53,6 +54,7 @@
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Add telemetry to your QnA bot](v4sdk/bot-builder-telemetry-QnAMaker.md)
+### [Analyze your bot's telemetry data](v4sdk/bot-builder-telemetry-analytics-queries.md)
 ### [Use Direct Line Speech in your bot](directline-speech-bot.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)

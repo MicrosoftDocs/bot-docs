@@ -1,5 +1,5 @@
 ---
-title: Overview of the Virtual Assistant Template | Microsoft Docs
+title: Overview of the Virtual Assistant Template - Bot Service
 description: Learn more about the Virtual Assistant Template
 author: darrenj
 ms.author: darrenj

@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot bot configuration issues | Microsoft Docs
+title: Troubleshoot bot configuration issues - Bot Service
 description: How to troubleshoot configuration issues in a deployed bot.
 keywords: troubleshoot, configuration, web chat, problems.
 author: jonathanFingold
@@ -16,7 +16,7 @@ The first step in troubleshooting a bot is to test it in Web Chat. This will all
 
 ## Test in Web Chat
 
-1. Open your bot resource in the [Azure Portal](http://portal.azure.com/).
+1. Open your bot resource in the [Azure Portal](https://portal.azure.com/).
 1. Open the **Test in Web Chat** pane.
 1. Send your bot a message.
 
@@ -41,9 +41,14 @@ If the endpoint returns an error "This site can't be reached" or "can't reach th
 
 If the bot works as expected in Web Chat but fails in some other channel, possible reasons are:
 
-- [Channel configuration issues](#channel-configuration-issues)
-- [Channel-specific behavior](#channel-specific-behavior)
-- [Channel outage](#channel-outage)
+- [Troubleshoot bot configuration issues](#troubleshoot-bot-configuration-issues)
+  - [Test in Web Chat](#test-in-web-chat)
+  - [Bot does not work in Web Chat](#bot-does-not-work-in-web-chat)
+  - [Bot works in Web Chat but not in other channels](#bot-works-in-web-chat-but-not-in-other-channels)
+    - [Channel configuration issues](#channel-configuration-issues)
+    - [Channel-specific behavior](#channel-specific-behavior)
+    - [Channel outage](#channel-outage)
+  - [Additional resources](#additional-resources)
 
 ### Channel configuration issues
 
@@ -66,7 +71,7 @@ The links below provide instructions for configuring channels supported by the B
 
 ### Channel-specific behavior
 
-Implementation of some features can differ by channel. For example, not all channels support Adaptive Cards. Most channels support Buttons, but they are rendered in a channel-specific way. If you see differences in how some message types work in different channels, consult the [channel reference](bot-service-channels-reference.md).
+Implementation of some features can differ by channel. For example, not all channels support Adaptive Cards. Most channels support Buttons, but they are rendered in a channel-specific way. If you see differences in how some message types work in different channels, consult the [channels reference](bot-service-channels-reference.md) article.
 
 Below are some additional links that can help with individual channels:
 

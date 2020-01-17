@@ -1,5 +1,5 @@
 ---
-title: Manage conversation flow with dialogs | Microsoft Docs
+title: Manage conversation flow with dialogs - Bot Service
 description: Learn how to model conversations and manage conversation flow using dialogs and the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

@@ -1,5 +1,5 @@
 ---
-title: Request payment | Microsoft Docs
+title: Request payment (v3 JS) - Bot Service
 description: Learn how to send a payment request using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani

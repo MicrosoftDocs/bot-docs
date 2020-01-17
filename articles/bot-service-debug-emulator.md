@@ -1,5 +1,5 @@
 ---
-title: Test and debug bots using the Bot Framework Emulator | Microsoft Docs
+title: Test and debug bots using the Bot Framework Emulator - Bot Service
 description: Learn how to inspect, test, and debug bots using the Bot Framework Emulator desktop application.
 keywords: transcript, msbot tool, language services, speech recognition
 author: DeniseMak
@@ -44,6 +44,17 @@ To run a bot using command line, do the following:
 * Copy the port number that restify is listening on.
 
     ![JS Port Number](media/bot-service-debug-emulator/js_port_number.png)
+
+# [Python](#tab/python)
+* Go to the command prompt and change directory to your bot project directory.
+* Start the bot by running the following command:
+    ```
+   python app.py
+    ```
+* Copy the port number that restify is listening on.
+
+    ![JS Port Number](media/bot-service-debug-emulator/js_port_number.png)
+
 ---
 
 At this point, your bot should be running locally. 

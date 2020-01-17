@@ -1,5 +1,5 @@
 ---
-title: Add rich card attachments to messages | Microsoft Docs
+title: Add rich card attachments to messages (v3 JS) - Bot Service
 description: Learn how to send interactive, engaging rich cards using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani
@@ -167,7 +167,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 ## Additional resources
 
-* [Preview features with the Channel Inspector][inspector]
+* [Channels reference][inspector]
 * <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 * [AnimationCard][animationCard]
 * [AudioCard][audioCard]
@@ -197,4 +197,4 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 [videoCard]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.videocard.html
 
-[inspector]: ../bot-service-channel-inspector.md
+[inspector]: ../bot-service-channels-reference.md

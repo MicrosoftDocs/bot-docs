@@ -1,5 +1,5 @@
 ---
-title: Implement a greeting dialog | Microsoft Docs
+title: Implement a greeting dialog - Bot Service
 description: Use a dialog to greet a user when they join a conversation.
 keywords: greeting, dialogs, conversation flow, dialog set
 author: JonathanFingold

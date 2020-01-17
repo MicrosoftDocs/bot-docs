@@ -1,5 +1,5 @@
 ---
-title: Key concepts in the Bot Framework SDK for .NET | Microsoft Docs
+title: Key concepts in the Bot Framework SDK for .NET - Bot Service
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
