@@ -1,5 +1,5 @@
 ---
-title: Create advanced conversation flow using branches and loops | Microsoft Docs
+title: Create advanced conversation flow using branches and loops - Bot Service
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
@@ -22,7 +22,7 @@ We'll also show you how to pass arguments between different parts of the dialog.
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [implement sequential conversation flow][simple-dialog].
-- A copy of the complex dialog sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the complex dialog sample in [**C#**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
 
 ## About this sample
 
@@ -68,13 +68,29 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 **index.js**
 
+We create the following services for the bot that are required:
+
+- basic services: an adapter and the bot implementation
+- state management: storage, user state, and conversation state
+- dialogs: bot uses these for managing conversations
+
+[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=26-65)]
+
+# [Python](#tab/python)
+
+![Complex bot flow](./media/complex-conversation-flow-python.png)
+
+To use dialogs, your project needs to install the **botbuilder-dialogs** pypi package by running `pip install botbuilder-dialogs`.
+
+**app.py**
+
 We create services for the bot that other parts of the code require.
 
 - Basic services for a bot: an adapter and the bot implementation.
 - Services for managing state: storage, user state, and conversation state.
 - The dialog the bot will use.
 
-[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=26-65)]
+[!code-python[ConfigureServices](~/../botbuilder-python/samples/python/43.complex-dialog/app.py?range=28-75)]
 
 ---
 
@@ -95,6 +111,13 @@ We create services for the bot that other parts of the code require.
 **userProfile.js**
 
 [!code-javascript[UserProfile class](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/userProfile.js?range=4-12)]
+
+# [Python](#tab/python)
+
+**data_models/user_profile.py**
+
+[!code-python[UserProfile class](~/../botbuilder-python/samples/python/43.complex-dialog/data_models/user_profile.py?range=7-13)]
+
 
 ---
 
@@ -164,6 +187,38 @@ In this design, the top-level dialog will always precede the review-selection di
 
 [!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/reviewSelectionDialog.js?range=33-78)]
 
+# [Python](#tab/python)
+
+**dialogs\main_dialog.py**
+
+We've defined a component dialog, `MainDialog`, that contains a couple of main steps and directs the dialogs and prompts. The initial step calls `TopLevelDialog` which is explained below.
+
+[!code-python[step implementations](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/main_dialog.py?range=29-50&highlight=4)]
+
+**dialogs\top_level_dialog.py**
+
+The initial, top-level dialog has four steps:
+
+1. Ask for the user's name.
+1. Ask for the user's age.
+1. Branch based on the user's age.
+1. Finally, thank the user for participating and return the collected information.
+
+In the first step we're clearing the user's profile, so that the dialog will start with an empty profile each time. Because the last step will return information when it ends, the `acknowledgementStep` concludes with saving it to the user state, then returning that info to the main dialog for use in the final step.
+
+[!code-python[step implementations](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/top_level_dialog.py?range=43-95&highlight=2-3,43-44,52)]
+
+**dialogs/review_selection_dialog.py**
+
+The review-selection dialog is started from the top-level dialog's `startSelectionStep`, and has two steps:
+
+1. Ask the user to choose a company to review or choose `done` to finish.
+1. Repeat this dialog or exit, as appropriate.
+
+In this design, the top-level dialog will always precede the review-selection dialog on the stack, and the review-selection dialog can be thought of as a child of the top-level dialog.
+
+[!code-python[step implementations](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/review_selection_dialog.py?range=42-99)]
+
 ---
 
 ## Implement the code to manage the dialog
@@ -227,6 +282,20 @@ The message handler calls the `run` helper method to manage the dialog, and we i
 
 [!code-javascript[On members added](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogAndWelcomeBot.js?range=10-21)]
 
+# [Python](#tab/python)
+
+**bots/dialog_bot.py**
+
+The message handler calls the `run_dialog` method to manage the dialog, and we've overridden the turn handler to save any changes to the conversation and user state that may have happened during the turn. The base `on_turn` will call the `on_message_activity` method, ensuring the save calls happen at the end of that turn.
+
+[!code-python[Overrides](~/../botbuilder-python/samples/python/43.complex-dialog/bots/dialog_bot.py?range=29-41&highlight=32-34)]
+
+**bots/dialog_and_welcome_bot.py**
+
+`DialogAndWelcomeBot` extends `DialogBot` above to provide a welcome message when the user joins the conversation, and is what is created in `config.py`.
+
+[!code-python[on_members_added](~/../botbuilder-python/samples/python/43.complex-dialog/bots/dialog_and_welcome_bot.py?range=28-39)]
+
 ---
 
 ## Branch and loop
@@ -258,6 +327,20 @@ Here is sample branch logic from a step in the _top level_ dialog:
 Here is sample looping logic from a step in the _review selection_ dialog:
 
 [!code-javascript[looping logic](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/reviewSelectionDialog.js?range=71-77)]
+
+# [Python](#tab/python)
+
+**dialogs/top_level_dialog.py**
+
+Here is sample branch logic from a step in the _top level_ dialog:
+
+[!code-python[branching logic](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/top_level_dialog.py?range=71-80)]
+
+**dialogs/review_selection_dialog.py**
+
+Here is sample looping logic from a step in the _review selection_ dialog:
+
+[!code-python[looping logic](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/review_selection_dialog.py?range=93-98)]
 
 ---
 
@@ -295,3 +378,4 @@ For more information, see [reuse dialogs][component-dialogs].
 
 [cs-sample]: https://aka.ms/cs-complex-dialog-sample
 [js-sample]: https://aka.ms/js-complex-dialog-sample
+[python-sample]: https://aka.ms/python-complex-dialog-sample

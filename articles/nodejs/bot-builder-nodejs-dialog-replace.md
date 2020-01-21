@@ -1,5 +1,5 @@
 ---
-title: Replace dialogs | Microsoft Docs
+title: Replace dialogs - Bot Service
 description: Learn how to replace dialogs to re-prompt for input and manage conversation flow using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani

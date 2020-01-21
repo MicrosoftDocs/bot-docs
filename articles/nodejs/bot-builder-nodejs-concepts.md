@@ -1,5 +1,5 @@
 ---
-title: Key concepts in the Bot Framework SDK for Node.js | Microsoft Docs
+title: Key concepts in the Bot Framework SDK for Node.js - Bot Service
 description: Understand the key concepts and tools for building and deploying conversational bots available in the Bot Framework SDK for Node.js.
 author: DeniseMak
 ms.author: kamrani
@@ -29,7 +29,9 @@ Your bot's logic is hosted as a web service that receives messages from users th
 The Bot Framework SDK for Node.js provides the [UniversalBot][UniversalBot] and [ChatConnector][ChatConnector] classes for configuring the bot to send and receive messages through the Bot Framework Connector. The `UniversalBot` class forms the brains of your bot. It's responsible for managing all the conversations your bot has with a user. The `ChatConnector` class connects your bot to the Bot Framework Connector Service.
 For an example that demonstrates using these classes, see [Create a bot with the Bot Framework SDK for Node.js](bot-builder-nodejs-quickstart.md).
 
-The Connector also normalizes the messages that the bot sends to channels so that you can develop your bot in a platform-agnostic way. Normalizing a message involves converting it from the Bot Framework’s schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the Connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the Connector may render the card as an image and include the actions as links in the message’s text. The [Channel Inspector][ChannelInspector] is a web tool that shows you how the Connector renders messages on various channels.
+The Connector also normalizes the messages that the bot sends to channels so that you can develop your bot in a platform-agnostic way. Normalizing a message involves converting it from the Bot Framework’s schema into the channel’s schema. In cases where the channel does not support all aspects of the framework’s schema, the Connector will try to convert the message to a format that the channel supports. For example, if the bot sends a message that contains a card with action buttons to the SMS channel, the Connector may render the card as an image and include the actions as links in the message’s text. 
+
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 The `ChatConnector` requires an API endpoint to be setup within your bot. With the Node.js SDK, this is usually accomplished by installing the `restify` Node.js module. Bots can also be created for the console using the [ConsoleConnector][ConsoleConnector], which does not require an API endpoint.
 
@@ -84,7 +86,7 @@ Bot Builder lets you use LUIS to add natural language understanding to your bot 
 [ChatConnector]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.chatconnector.html
 [ConsoleConnector]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.consoleconnector.html
 
-[ChannelInspector]: ../bot-service-channel-inspector.md
+[ChannelInspector]: ../bot-service-channels-reference.md
 
 [Session]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session.html
 [SessionSend]: https://docs.botframework.com/node/builder/chat-reference/classes/_botbuilder_d_.session#send

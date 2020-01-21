@@ -1,5 +1,5 @@
 ---
-title: Entities and activity types | Microsoft Docs
+title: Entities and activity types - Bot Service
 description: Entities and activity types.
 keywords: mention entities, activity types, consume entities
 author: ivorb

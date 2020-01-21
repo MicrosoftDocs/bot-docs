@@ -1,5 +1,5 @@
 ---
-title: Add rich card attachments to messages | Microsoft Docs
+title: Add rich card attachments to messages (v3 C#) - Bot Service
 description: Learn how to add rich cards to messages using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
@@ -130,7 +130,7 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 ## Additional resources
 
-- [Preview features with the Channel Inspector][inspector]
+- [Channels reference](../bot-service-channels-reference.md)
 - <a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a>
 - [Activities overview](bot-builder-dotnet-activities.md)
 - [Create messages](bot-builder-dotnet-create-messages.md)
@@ -152,4 +152,4 @@ The resulting card contains three blocks of text, an input field (choice list), 
 
 [videoCard]: /dotnet/api/microsoft.bot.connector.videocard
 
-[inspector]: ../bot-service-channel-inspector.md
+[inspector]: ../bot-service-channels-reference.md
