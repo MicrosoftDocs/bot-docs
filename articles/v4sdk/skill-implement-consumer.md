@@ -117,6 +117,7 @@ This sample reads information for each skill in the configuration file into a co
 
 [!code-javascript[skills configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/skillsConfiguration.js?range=7-33)]
 
+
 ### [Python](#tab/python)
 
 **simple-root-bot/config.py**
@@ -262,6 +263,7 @@ Of note, the root bot includes logic for handling messages from the user and `en
 
 ---
 
+
 ## On turn error handler
 
 When an error occurs, the adapter clears conversation state to reset the conversation with the user and avoid persisting an error state.
@@ -280,6 +282,7 @@ In this sample the turn error logic is split up among a few helper methods.
 
 **simple-root-bot/index.js**
 
+
 [!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-87)]
 
 ### [Python](#tab/python)
@@ -294,6 +297,7 @@ In this sample the turn error logic is split up among a few helper methods.
 
 The bot defines an endpoint that forwards incoming skill activities to the root bot's skill handler.
 
+
 ### [C#](#tab/cs)
 
 **SimpleRootBot\Controllers\SkillController.cs**
@@ -303,6 +307,7 @@ The bot defines an endpoint that forwards incoming skill activities to the root 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
+
 
 [!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=133-134)]
 
