@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/2019
+ms.date: 01/22/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -60,13 +60,13 @@ This article focuses on the root bot, which includes support logic in its bot an
 
 For information about the echo skill bot, see how to [Implement a skill](skill-implement-skill.md).
 
-## Create resources for the skill consumer
+## Resources
 
 Bot-to-bot authentication requires that each participating bot has a valid appID and password.
 
 Register both the skill and the skill consumer with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
-## Update the application configuration file
+## Application configuration
 
 1. Add the root bot's app ID and password.
 1. Add the endpoint URL to which the skills should reply to the skill consumer.
@@ -101,7 +101,7 @@ Add the root bot's app ID and password to the .env file. Also, add the app ID fo
 
 ---
 
-## Define a skill configuration object
+## Skills configuration
 
 This sample reads information for each skill in the configuration file into a collection of _skill_ objects.
 
@@ -117,16 +117,15 @@ This sample reads information for each skill in the configuration file into a co
 
 [!code-javascript[skills configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/skillsConfiguration.js?range=7-33)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
-**simple-root-bot/app.py**
+**simple-root-bot/config.py**
 
 [!code-python[skills configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/config.py?range=32-36)]
 
 ---
 
-## Add a skill conversation ID factory
+## Conversation ID factory
 
 This creates the conversation ID for use with the skill and can recover the original user conversation ID from the skill conversation ID.
 
@@ -147,7 +146,6 @@ The conversation ID factory for this sample supports a simple scenario where:
 
 [!code-javascript[Conversation ID factory](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/skillConversationIdFactory.js?range=10-29)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
 **simple-root-bot/skill_conversation_id_factory.py**
@@ -161,7 +159,7 @@ To support more complex scenarios, design your conversation ID factory so that:
 - The _create skill conversation ID_ method gets or generates the appropriate skill conversation ID.
 - The _get conversation reference_ method gets the correct user conversation.
 
-## Add a skill client and skill handler
+## Skill client and skill handler
 
 The skill consumer uses a skill client to forward activities to the skill.
 The client uses the skills configuration information and conversation ID factory to do so.
@@ -179,18 +177,17 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill client](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=75-76)]
+[!code-javascript[skill client](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=107-108)]
 
-[!code-javascript[skill handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=100)]
+[!code-javascript[skill handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=132)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
 **simple-root-bot/app.py**
 
-[!code-python[skill client](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=57)]
+[!code-python[skill client](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=58)]
 
-[!code-python[skill handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=92-93)]
+[!code-python[skill handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=120-122)]
 
 ---
 
@@ -202,7 +199,7 @@ The default skill handler:
 - Uses the conversation ID factory to translate from the consumer-skill conversation back to the root-user conversation.
 - Generates a proactive message so that the skill consumer can reestablish a root-user turn context and forward activities to the user.
 
-## Implement activity handler logic
+## Activity handler logic
 
 Of note, the skill consumer logic should:
 
@@ -244,7 +241,7 @@ This sample has a helper method for forwarding activities to a skill. It saves c
 
 Of note, the root bot includes logic for handling messages from the user and `endOfConversation` activities from the skill.
 
-[!code-javascript[age/end-of-conversation handlers](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=33-85)]
+[!code-javascript[message/end-of-conversation handlers](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=33-85)]
 
 ### [Python](#tab/python)
 
@@ -265,7 +262,7 @@ Of note, the root bot includes logic for handling messages from the user and `en
 
 ---
 
-## Implement an on turn error handler
+## On turn error handler
 
 When an error occurs, the adapter clears conversation state to reset the conversation with the user and avoid persisting an error state.
 
@@ -275,25 +272,27 @@ It is a good practice to send an _end of conversation_ activity to any active sk
 
 **SimpleRootBot\AdapterWithErrorHandler.cs**
 
+In this sample the turn error logic is split up among a few helper methods.
+
 [!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=40-120)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-<!--Issue as of 1/14: This one doesn't send the endOfConversation activity.-->
-[!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-55)]
+[!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-87)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
-[!code-python[On turn error](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=59-84)]
+**app.py**
+
+[!code-python[On turn error](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=62-115)]
 
 ---
 
-## Add an endpoint to receive activities from a skill
+## Skills endpoint
 
-The endpoint should forward incoming skill activities to the root bot's skill handler.
+The bot defines an endpoint that forwards incoming skill activities to the root bot's skill handler.
 
 ### [C#](#tab/cs)
 
@@ -305,18 +304,17 @@ The endpoint should forward incoming skill activities to the root bot's skill ha
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=101-102)]
+[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=133-134)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
 **simple-root-bot/app.py**
 
-[!code-python[skill endpoint](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=114-116)]
+[!code-python[skill endpoint](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=144)]
 
 ---
 
-## Register services
+## Service registration
 
 Include an authentication configuration object with any claims validation, plus all the additional objects.
 
@@ -332,16 +330,15 @@ Include an authentication configuration object with any claims validation, plus 
 
 [!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=27-31)]
 
-[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=60-102)]
+[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=95-134)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
 **simple-root-bot/app.py**
 
-[!code-python[services](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=43-57)]
+[!code-python[services](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=35-58)]
 
-[!code-python[services](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=90-116)]
+[!code-python[services](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=118-144)]
 
 ---
 
