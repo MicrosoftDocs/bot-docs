@@ -70,12 +70,12 @@ You need to create a registration bot where you'll set the messaging endpoint to
 
 ### Register an application in Azure AD
 
-You need an Azure AD application that your bot can use to connect to the Microsoft Graph API.
+You need an Azure AD application that your bot can use as an identity provider to connect to the Microsoft Graph API.
 
 For this bot you can use Azure AD v1 or v2 endpoints.
 For information about the differences between the v1 and v2 endpoints, see the [v1-v2 comparison](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare) and the [Azure AD v2.0 endpoint overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
-#### To create an Azure AD application
+#### Create an Azure AD identity provider application 
 
 Use these steps to create a new Azure AD application. You can use the v1 or v2 endpoints with the app that you create.
 
@@ -90,7 +90,7 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
 1. Fill in the required fields and create the app registration.
 
    1. Name your application.
-   1. Select the **Supported account types** for your application. (Any of these options will work with this sample.)
+   1. Select the **Supported account types** for your application.
    1. For the **Redirect URI**
        1. Select **Web**.
        1. Set the URL to `https://token.botframework.com/.auth/web/redirect`.
@@ -99,6 +99,10 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
       - Once it is created, Azure displays the **Overview** page for the app.
       - Record the **Application (client) ID** value. You will use this value later as the _Client id_ when you register your Azure AD application with your bot.
       - Also record the **Directory (tenant) ID** value. You will also use this to register this application with your bot.
+ 
+    > [!NOTE]
+    > When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account, the emulator would issue the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect..* 
+    > In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*.
 
 1. In the navigation pane, click **Certificates & secrets** to create a secret for your application.
 
