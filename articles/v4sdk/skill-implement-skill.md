@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/19/2019
+ms.date: 01/22/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -56,13 +56,13 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 For information about the simple root bot, see how to [Implement a skill consumer](skill-implement-consumer.md).
 
-## Create resources for the skill
+## Resources
 
 Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 
 To be able to test the skill as a user-facing bot, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
-## Update the application configuration file
+## Application configuration
 
 Add the skill's app ID and password to the skill's configuration file.
 
@@ -95,7 +95,7 @@ Add the skill's app ID and password to the config.py file.
 
 ---
 
-## Implement activity handler logic
+## Activity handler logic
 
 ### To accept input parameters
 
@@ -122,7 +122,6 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 [!code-javascript[Message handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=10-26)]
 
-<!--C# & JS snippets updated 1/14-->
 #### [Python](#tab/python)
 
 **echo-skill-bot/bots/echo_bot.py**
@@ -149,6 +148,8 @@ The logic for this skill does not change from turn to turn. If you implement a s
 
  Use the `onUnrecognizedActivityType` method to add an end-of-conversation logic. In the handler, check whether the unrecognized activity's `type` equals `endOfConversation`.
 
+[!code-javascript[End-of-conversation handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=28-35)]
+
 #### [Python](#tab/python)
 
 **echo-skill-bot/bots/echo_bot.py**
@@ -157,7 +158,7 @@ The logic for this skill does not change from turn to turn. If you implement a s
 
 ---
 
-## Implement a claims validator
+## Claims validator
 
 This sample uses an allowed callers list for claims validation. The list is defined in the skill's configuration file and is read into the validator object when it's created.
 
@@ -195,7 +196,7 @@ Define a claims validation method that throws an error to reject an incoming req
 
 ---
 
-## Implement an adapter
+## Skill adapter
 
 When an error occurs, the skill's adapter should clear conversation state for the skill, and it should also send an `endOfConversation` activity to the skill consumer. Use the _code_ property of the activity to signal that the skill ended due to an error.
 
@@ -219,7 +220,7 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 ---
 
-## Register services
+## Service registration
 
 The _Bot Framework adapter_ uses an _authentication configuration_ object (set when the adapter is created) to validate the authentication header on incoming requests.
 
@@ -242,11 +243,11 @@ This samples adds claims validation to the authentication configuration and uses
 
 **app.py**
 
-[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=22-27)]
+[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=22-34)]
 
 ---
 
-## Describe the skill in a manifest
+## Skill manifest
 
 A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints.
 The manifest contains the information you need to access the skill from another bot.
