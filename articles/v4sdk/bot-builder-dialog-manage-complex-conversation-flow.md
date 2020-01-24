@@ -90,7 +90,7 @@ We create services for the bot that other parts of the code require.
 - Services for managing state: storage, user state, and conversation state.
 - The dialog the bot will use.
 
-[!code-python[ConfigureServices](~/../botbuilder-python/samples/python/43.complex-dialog/app.py?range=29-87)]
+[!code-python[ConfigureServices](~/../botbuilder-python/samples/python/43.complex-dialog/app.py?range=29-94)]
 
 ---
 
