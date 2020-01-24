@@ -1,5 +1,5 @@
 ---
-title: Transition conversations from bot to human | Microsoft Docs
+title: Transition conversations from bot to human - Bot Service
 description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human. 
 author: matvelloso
 ms.author: mateusv

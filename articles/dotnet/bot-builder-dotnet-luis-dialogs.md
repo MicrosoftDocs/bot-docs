@@ -1,5 +1,5 @@
 ---
-title: Recognize intents and entities with LUIS  | Microsoft Docs
+title: Recognize intents and entities with LUIS (v3 C#) - Bot Service
 description: Learn how to enable your bot to understand natural language by using LUIS dialogs in the Bot Framework SDK for .NET.
 author: DeniseMak
 ms.author: kamrani

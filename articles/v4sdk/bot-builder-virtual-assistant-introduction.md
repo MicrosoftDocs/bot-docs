@@ -1,5 +1,5 @@
 ---
-title: Virtual Assistant Overview | Microsoft Docs
+title: Virtual Assistant Overview - Bot Service
 description: Learn about creating your own Virtual Assistant
 author: darrenj
 ms.author: darrenj

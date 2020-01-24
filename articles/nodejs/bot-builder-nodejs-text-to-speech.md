@@ -1,5 +1,5 @@
 ---
-title: Add speech to messages | Microsoft Docs
+title: Add speech to messages (v3 JS) - Bot Service
 description: Learn how to add speech to messages using the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani
