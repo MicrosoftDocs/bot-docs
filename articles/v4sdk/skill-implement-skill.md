@@ -245,6 +245,7 @@ This samples adds claims validation to the authentication configuration and uses
 
 [!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=22-34)]
 
+
 ---
 
 ## Skill manifest
