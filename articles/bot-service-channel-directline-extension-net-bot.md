@@ -7,7 +7,7 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.author: kamrani 
-ms.date: 07/25/2019
+ms.date: 01/16/2020
 ---
 
 # Configure .NET bot for extension
@@ -26,15 +26,15 @@ This section describes how to enable the direct line app service extension using
 
 ## Update .NET Bot to use Direct Line App Service Extension
 
->!NOTE
->`Microsoft.Bot.Builder.StreamingExtensions` are preview packages and will not be updated. The SDK v4.7 contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming) and you do not need to install the Streaming Packages separately. If you have upgraded to SDK v4.7, refer to [additional information](bot-service-channel-directline-extension-net-bot.md#additional-information) for steps that should be modified in this section to enable the feature. 
+> [!NOTE]
+> `Microsoft.Bot.Builder.StreamingExtensions` are preview packages and will not be updated. The SDK v4.7 contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming) and you do not need to install the Streaming Packages separately. If you have upgraded to SDK v4.7, refer to [additional information](bot-service-channel-directline-extension-net-bot.md#additional-information) for steps that should be modified in this section to enable the feature.
 
 1. In Visual Studio, open your bot project.
 2. Add the **Streaming Extension NuGet** package to your project:
     1. In your project, right click on **Dependencies** and select **Manage NuGet Packages**.
     2. Under the *Browse* tab, click **Include prerelease** to show the preview packages.
     3. Select the package **Microsoft.Bot.Builder.StreamingExtensions**.
-    4. Click the **Install** button to install the package; read and agree to the license agreement. 
+    4. Click the **Install** button to install the package; read and agree to the license agreement.
 3. Allow your app to use the **Bot Framework NamedPipe**:
     - Open the `Startup.cs` file.
     - In the ``Configure`` method, add code to ``UseBotFrameworkNamedPipe``
@@ -78,9 +78,9 @@ This section describes how to enable the direct line app service extension using
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
 1. In the Azure portal, locate your **Azure Bot Service** resource
 1. Click on **Channels** to configure the bot’s channels
-1. If it is not already enabled, click on the **Direct Line** channel to enable it. 
+1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
-1. Scroll down to the App Service Extension Keys section. 
+1. Scroll down to the App Service Extension Keys section.
 1. Click on the **Show link** to reveal one of the keys, then copy its value.
 
 ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
@@ -111,16 +111,15 @@ If everything is correct, the page will return this JSON content: `{"k":true,"ib
 
 ## Additional information 
 
-If you have upgraded to SDK v4.7, slightly change the instructions in the "Update .NET Bot to use Direct Line App Service Extension" section as follows: 
-- Skip **step 2** because you don't need to install the preview packages. 
+- Skip **step 2** because you don't need to install the preview packages.
 - In **step 3** do the following:  
 
 Allow your app to use the **UseNamedPipes**:
+
 - Open the `Startup.cs` file.
-- In the ``Configure`` method, add code to ``UseNamedPipes``
+- In the `Configure` method, add code to `UseNamedPipes`
 
     ```csharp
-
     using Microsoft.Bot.Builder.StreamingExtensions;
 
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -142,6 +141,4 @@ Allow your app to use the **UseNamedPipes**:
 
         app.UseMvc();
     }
-
     ```
-

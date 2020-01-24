@@ -107,6 +107,13 @@ If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-crede
 
 When you open the bot, set the **Microsoft App ID** and **Microsoft App password** if your bot is running with credentials. If you created your bot with the Azure Bot Service, the credentials are available on the bot's App Service, under the **Settings -> Configuration** section. If you do not know the values, you can remove those from the locally running bot's configuration file, then run the bot in the Emulator. If the bot isn't running with these settings, you don't need to run the emulator with the settings either. 
 
+When creating an AD identity provider application, remember the following:
+
+- When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account, the emulator would issue the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect..* 
+- In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*.
+
+For more information, see [Create an Azure AD identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application).
+
 ## View detailed Message Activity with the Inspector
 
 Send a message to your bot and the bot should respond back. You can click on the message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right side of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. The JSON information includes key metadata, including the channel ID, activity type, conversation ID, the text message, endpoint URL, and so on. You can inspect activities sent from the user, as well as activities the bot responds with.
